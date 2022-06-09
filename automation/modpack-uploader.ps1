@@ -117,9 +117,9 @@ function New-ManifestJson {
     $mods = [System.Collections.ArrayList]@()
     foreach ($addon in $minecraftInstanceJson.installedAddons) {
         $mods.Add(@{
-                required  	= $true
-                projectID 	= $addon.addonID
-                fileID    	= $addon.installedFile.id
+                required    = $true
+                projectID   = $addon.addonID
+                fileID      = $addon.installedFile.id
                 downloadUrl = $addon.installedFile.downloadUrl
             }) > $null
     }
@@ -365,7 +365,7 @@ function Update-Modlist {
     if ($ENABLE_MODLIST_CREATOR_MODULE) {
         if (-not (Test-Path $MODLIST_CREATOR_JAR) -or $ENABLE_ALWAYS_UPDATE_JARS) {
             Remove-Item $MODLIST_CREATOR_JAR -Recurse -Force -ErrorAction SilentlyContinue
-            Get-GitHubRelease -repo "MelanX/ModListCreator" -file $MODLIST_CREATOR_JAR
+            Get-GitHubRelease -repo "ModdingX/ModListCreator" -file $MODLIST_CREATOR_JAR
         }
 
         Remove-Item $MODLIST_PATH -ErrorAction SilentlyContinue
