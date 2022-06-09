@@ -176,3 +176,4 @@ config/cfm-client.toml
 config/entity_culling-client.toml
 config/terraforged/performance_internal.conf
 config/gravestone-client.toml
+github-changelog-generator.bat
