@@ -68,10 +68,10 @@ $CLIENT_RELEASE_TYPE = "alpha"
 #=====================================================================//
 
 # File name of the latest https://github.com/TheRandomLabs/ChangelogGenerator/releases
-$CHANGELOG_GENERATOR_JAR = "ChangelogGenerator-2.0.0-pre10.jar"
+$CHANGELOG_GENERATOR_JAR = "ModListCreator-4.0.1-fatjar.jar"
 
 # File name of the latest https://github.com/MelanX/ModListCreator/releases
-$MODLIST_CREATOR_JAR = "ModListCreator-2.0.1.jar"
+$MODLIST_CREATOR_JAR = "ModListCreator-4.0.1-fatjar.jar"
 
 #=====================================================================//
 #  CLIENT FILE SETTINGS
@@ -199,7 +199,7 @@ $CONTENTS_TO_ZIP = @()
 
 # Toggle twitch-export-builder (automatic building of the manifest zip) on/off
 # Default: $true
-$ENABLE_CURSE_CLIENT_MODULE = $true
+$ENABLE_CLIENT_FILE_MODULE = $true
 
 # Toggle the modpack uploader on/off
 # Setting this to $false will also disable the Server File and Changelog Generator Modules.
@@ -209,6 +209,12 @@ $ENABLE_MODPACK_UPLOADER_MODULE = $true
 # Toggle server file feature on/off
 # Default: $true
 $ENABLE_SERVER_FILE_MODULE = $true
+
+# Toggle serverstarter compatibility on/off
+# This will update the "modpackUrl" in the file found at $SERVER_SETUP_CONFIG_PATH
+# to point to your newly created client files on the CurseForge CDN.
+# Default: $false
+$ENABLE_SERVERSTARTER_MODULE = $false
 
 # Toggle automatic changelog generator on/off
 # This module requires an older modpack manifest zip to be present, 
@@ -232,7 +238,7 @@ $ENABLE_ALWAYS_UPDATE_JARS = $false
 # See below link for info:
 # https://github.com/github-changelog-generator/github-changelog-generator
 # Default: $false
-$ENABLE_GITHUB_CHANGELOG_GENERATOR_MODULE = $true	
+$ENABLE_GITHUB_RELEASE_MODULE = $true	
 
 
 # =====================================================================//

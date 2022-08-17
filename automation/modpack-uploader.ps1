@@ -6,15 +6,15 @@ $overridesFolder = "overrides"
 $secretsFile = "secrets.ps1"
 
 function Validate-SecretsFile {
-    if (!(Test-Path "$PSScriptRoot\$secretsFile")) {
+    if (!(Test-Path "$PSScriptRoot/$secretsFile")) {
         Write-Host "You need a valid CurseForge API Token in a $secretsFile file" -ForegroundColor Red
         Write-Host "Creating $secretsFile" -ForegroundColor Cyan
         New-Item -Path $PSScriptRoot -ItemType File -Name $secretsFile -Value "# To generate an API token go to: https://authors.curseforge.com/account/api-tokens `n $CURSEFORGE_TOKEN = `"your-curseforge-token-here`""
     }
 }
 
-. "$PSScriptRoot\settings.ps1"
-. "$PSScriptRoot\$secretsFile"
+. "$PSScriptRoot/settings.ps1"
+. "$PSScriptRoot/$secretsFile"
 
 
 function Get-GitHubRelease {
@@ -52,7 +52,8 @@ function Test-ForDependencies {
         throw "7zip not command available. Please follow the instructions above." 
     }
 
-    $isCurlAvailable = Get-Command curl.exe
+    $isCurlAvailable = Get-Command $curl
+
     if (-not $isCurlAvailable) {
         Clear-Host
         Write-Host 
@@ -63,12 +64,12 @@ function Test-ForDependencies {
         Write-Host 
         Write-Host "When you're done, rerun this script.`n"
 
-        throw "curl.exe command not available. Please follow the instructions above." 
+        throw "curl not available. Please follow the instructions above." 
     }
 }
 
 function New-ClientFiles {
-    if ($ENABLE_CURSE_CLIENT_MODULE) {
+    if ($ENABLE_CLIENT_FILE_MODULE) {
         Write-Host 
         Write-Host "Creating Client Files..." -ForegroundColor Cyan
         Write-Host 
@@ -124,11 +125,20 @@ function New-ManifestJson {
             }) > $null
     }
 
+    $modloaderId = $minecraftInstanceJson.baseModLoader.name
+
+    if ($MODLOADER -eq "fabric") {
+        # Example output: "fabric-0.13.3-1.18.1"
+        $splitModloaderId = $modloaderId -split "-"
+        # Only keep "fabric-0.13.3"
+        $modloaderId = $splitModloaderId[0] + "-" + $splitModloaderId[1]
+    }
+
     $jsonOutput = @{
         minecraft       = @{
             version    = $minecraftInstanceJson.baseModLoader.minecraftVersion
             modLoaders = @(@{
-                    id      = $minecraftInstanceJson.baseModLoader.name
+                    id      = $modloaderId
                     primary = $true
                 })
         }
@@ -149,7 +159,7 @@ function New-ManifestJson {
 }
 
 function Remove-BlacklistedFiles {
-    if ($ENABLE_CURSE_CLIENT_MODULE -or $ENABLE_SERVER_FILE_MODULE) {    
+    if ($ENABLE_CLIENT_FILE_MODULE -or $ENABLE_SERVER_FILE_MODULE) {    
         $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES | ForEach-Object {
             Write-Host "Removing overrides/$_"
             Remove-Item -Path "overrides/$_" -Recurse -ErrorAction SilentlyContinue
@@ -177,24 +187,19 @@ function New-Changelog {
     ) {
         if (-not (Test-Path $CHANGELOG_GENERATOR_JAR) -or $ENABLE_ALWAYS_UPDATE_JARS) {
             Remove-Item $CHANGELOG_GENERATOR_JAR -Recurse -Force -ErrorAction SilentlyContinue
-            Get-GitHubRelease -repo "TheRandomLabs/ChangelogGenerator" -file $CHANGELOG_GENERATOR_JAR
+            Get-GitHubRelease -repo "ModdingX/ModListCreator" -file $CHANGELOG_GENERATOR_JAR
         }
-        $changelogFile = "changelog.md"
-        Remove-Item $changelogFile -ErrorAction SilentlyContinue
-
         Write-Host 
         Write-Host "Generating mod changelog..." -ForegroundColor Cyan
         Write-Host 
 
-        java -jar $CHANGELOG_GENERATOR_JAR `
-            --markdown `
-            --lines=50 `
-            --entries=1 `
-            --new="$CLIENT_ZIP_NAME.zip" `
-            --old="$LAST_MODPACK_ZIP_NAME.zip"
-
         Remove-Item $CHANGELOG_PATH -ErrorAction SilentlyContinue
-        Move-Item -Path $changelogFile -Destination $CHANGELOG_PATH
+
+        java -jar $CHANGELOG_GENERATOR_JAR `
+            changelog `
+            --output $CHANGELOG_PATH `
+            --new "$CLIENT_ZIP_NAME.zip" `
+            --old "$LAST_MODPACK_ZIP_NAME.zip"
 
         Write-Host "Mod changelog generated!" -ForegroundColor Green
     }
@@ -203,12 +208,12 @@ function New-Changelog {
 function Push-ClientFiles {
     if ($ENABLE_MODPACK_UPLOADER_MODULE) {
 
-        if ($ENABLE_CURSE_CLIENT_MODULE -eq $false) {
+        if ($ENABLE_CLIENT_FILE_MODULE -eq $false) {
             Remove-BlacklistedFiles
         }
 
-        #$CLIENT_CHANGELOG = Get-Content -Path "$PSScriptRoot\..\changelogs\changelog.md"
-
+        # This ugly json seems to be a necessity, 
+        # I have yet to get @{} and ConvertTo-Json to work with the CurseForge Upload API
         $CLIENT_METADATA = 
         "{
             changelog: `'$CLIENT_CHANGELOG`',
@@ -227,7 +232,7 @@ function Push-ClientFiles {
         Write-Host "Uploading client files to https://minecraft.curseforge.com/api/projects/$CURSEFORGE_PROJECT_ID/upload-file" -ForegroundColor Green
         Write-Host
 
-        $response = curl.exe `
+        $response = & $curl `
             --url "https://minecraft.curseforge.com/api/projects/$CURSEFORGE_PROJECT_ID/upload-file" `
             --user "$CURSEFORGE_USER`:$CURSEFORGE_TOKEN" `
             -H "Accept: application/json" `
@@ -235,19 +240,22 @@ function Push-ClientFiles {
             -F metadata=$CLIENT_METADATA `
             -F file=@"$CLIENT_ZIP_NAME.zip" `
             --progress-bar | ConvertFrom-Json
+       
+
         $clientFileReturnId = $response.id
 
         if (-not $response.id) {
             Write-Host "Failed to upload client files: $response" -ForegroundColor Red
             throw "Failed to upload client files: $response"
         }
-        else {
-            Write-Host 
-            Write-Host "Uploaded modpack!" -ForegroundColor Green
-            Write-Host 
-            Write-Host "Return Id: $clientFileReturnId" -ForegroundColor Cyan
-            Write-Host
 
+        Write-Host 
+        Write-Host "Uploaded modpack!" -ForegroundColor Green
+        Write-Host 
+        Write-Host "Return Id: $clientFileReturnId" -ForegroundColor Cyan
+        Write-Host
+
+        if ($ENABLE_SERVERSTARTER_MODULE) {
             Update-FileLinkInServerFiles -ClientFileReturnId $clientFileReturnId
         }
     }
@@ -263,7 +271,9 @@ function Update-FileLinkInServerFiles {
         $idPart1 = Remove-LeadingZero -text $idPart1
         $idPart2 = $clientFileIdString.Substring(4, $clientFileIdString.length - 4)
         $idPart2 = Remove-LeadingZero -text $idPart2
-        $curseForgeCdnUrl = "https://media.forgecdn.net/files/$idPart1/$idPart2/$CLIENT_ZIP_NAME.zip"
+        # CurseForge replaces whitespace in filenames with + in their CDN urls
+        $sanitizedClientZipName = $CLIENT_ZIP_NAME.Replace(" ", "+")
+        $curseForgeCdnUrl = "https://media.forgecdn.net/files/$idPart1/$idPart2/$sanitizedClientZipName.zip"
         $content = (Get-Content -Path $SERVER_SETUP_CONFIG_PATH) -replace "https://media.forgecdn.net/files/\d+/\d+/.*.zip", $curseForgeCdnUrl 
         [System.IO.File]::WriteAllLines(($SERVER_SETUP_CONFIG_PATH | Resolve-Path), $content)
 
@@ -283,8 +293,8 @@ function New-ServerFiles {
         Write-Host 
         Write-Host "Creating server files..." -ForegroundColor Cyan
         Write-Host 
-        7z a -tzip $serverZip "$SERVER_FILES_FOLDER\*"
-        Move-Item -Path "automation\$serverZip" -Destination $serverZip -ErrorAction SilentlyContinue
+        7z a -tzip $serverZip "$SERVER_FILES_FOLDER/*"
+        Move-Item -Path "automation/$serverZip" -Destination $serverZip -ErrorAction SilentlyContinue
         Write-Host "Server files created!" -ForegroundColor Green
 
         if ($ENABLE_MODPACK_UPLOADER_MODULE) {
@@ -313,7 +323,7 @@ function Push-ServerFiles {
         Write-Host "Uploading server files..." -ForegroundColor Cyan
         Write-Host 
 
-        $serverFileResponse = curl.exe `
+        $serverFileResponse = & $curl `
             --url "https://minecraft.curseforge.com/api/projects/$CURSEFORGE_PROJECT_ID/upload-file" `
             --user "$CURSEFORGE_USER`:$CURSEFORGE_TOKEN" `
             -H "Accept: application/json" `
@@ -333,7 +343,7 @@ function Push-ServerFiles {
 }
 
 function New-GitHubRelease {
-    if ($ENABLE_GITHUB_CHANGELOG_GENERATOR_MODULE) {
+    if ($ENABLE_GITHUB_RELEASE_MODULE) {
 
         $Base64Token = [System.Convert]::ToBase64String([char[]]$GITHUB_TOKEN);
         $Uri = "https://api.github.com/repos/$GITHUB_NAME/$GITHUB_REPOSITORY/releases?access_token=$GITHUB_TOKEN"
@@ -357,7 +367,8 @@ function New-GitHubRelease {
         Write-Host 
     
         Invoke-RestMethod -Headers $Headers -Uri $Uri -Body $Body -Method Post
-        Start-Process Powershell.exe -Argument "-NoProfile -Command github_changelog_generator --since-tag $CHANGES_SINCE_VERSION"
+        
+        Start-Process Powershell.exe -Argument "-NoProfile -Command github_changelog_generator"
     }
 }
 
@@ -369,11 +380,8 @@ function Update-Modlist {
         }
 
         Remove-Item $MODLIST_PATH -ErrorAction SilentlyContinue
-        java -jar $MODLIST_CREATOR_JAR --markdown --output ".\" --detailed --manifest "$CLIENT_ZIP_NAME.zip"
-        Copy-Item -Path "MODLIST.md" -Destination $MODLIST_PATH -ErrorAction SilentlyContinue
-        Move-Item -Path "MODLIST.md" -Destination "MODLIST.md" -ErrorAction SilentlyContinue -Force
-        Copy-Item -Path "automation\MODLIST.md" -Destination $MODLIST_PATH -ErrorAction SilentlyContinue
-        Move-Item -Path "automation\MODLIST.md" -Destination "MODLIST.md" -ErrorAction SilentlyContinue -Force
+        java -jar $MODLIST_CREATOR_JAR modlist --output $MODLIST_PATH --detailed "$CLIENT_ZIP_NAME.zip"
+        Copy-Item -Path $MODLIST_PATH -Destination "$INSTANCE_ROOT/MODLIST.md"
     }
 }
 
@@ -386,6 +394,14 @@ function Remove-LeadingZero {
 
 $startLocation = Get-Location
 Set-Location $INSTANCE_ROOT
+
+if ($null -eq $IsWindows -or $IsWindows) {
+    # The script is running on Windows, use curl.exe
+    $curl = "curl.exe"
+}
+else {
+    $curl = "curl"
+}
 
 Test-ForDependencies
 Validate-SecretsFile
