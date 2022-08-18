@@ -1,0 +1,5 @@
+#This causes the deletion slot to delete items instantly, similar to Creative Mode.
+instantDeletion = false
+#Set to true if you want the delete keybindings to work in creative as well. Note: Items will be deleted permanently in creative, regardless of instantDeletion setting!
+enableDeleteKeysInCreative = true
+
