@@ -1,0 +1,15 @@
+
+[General]
+	# Determines the experience cost of applying yeti hide to an item.
+	# Default: 1
+	# Range: [0, inf]
+	hideCost = 1
+	# Determines the multiplier used to add armor per yeti hide on an item.
+	# Default: 0.01
+	# Range: [0.0, inf]
+	hideMultiplier = 0.01
+	# Determines how many yeti hides can be used to reinforce an item.
+	# Default: 5
+	# Range: [0, inf]
+	hideAmount = 5
+
