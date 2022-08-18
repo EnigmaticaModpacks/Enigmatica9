@@ -46,12 +46,16 @@ refresh_loot_tables = []
 refresh_all = false
 #overriding decay_loot_tables, decay_modids and decay_dimensions: all chests will decay after being opened for the first time
 decay_all = false
+#lootr chests cannot be destroyed by explosions
+blast_resistant = false
 #list of dimensions that loot chests should not be replaced in (default: blank, allowing all dimensions, format e.g., ["minecraft:overworld", "minecraft:the_end"])
 dimension_blacklist = []
 #prevent the destruction of Lootr chests except while sneaking in creative mode
 disable_break = false
 #whether or not mineshaft chest minecarts should be converted to standard loot chests
 convert_mineshafts = true
+#when true, comparators on Lootr containers will give an output of 1; when false, they will give an output of 0
+power_comparators = true
 #how long (in ticks) a refreshing loot containers should take to refresh their contents (default 20 minutes = 20 * 60 * 20)
 #Range: > 0
 refresh_value = 24000
