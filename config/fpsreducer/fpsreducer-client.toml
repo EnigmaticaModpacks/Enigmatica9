@@ -40,7 +40,7 @@
 	#Behavior of HUD display when a chat window opened. (0:keep to display, 1:off, 2:dodge a chat box)
 	#Range: 0 ~ 2
 	hudBehindChatBox = 2
-	#HUD information (1:FPS/CPU(long), 1:FPS/CPU(short), 3:FPS/CPU(2lines), 4:FPS only, 5:CPU only, 6:Simple)
+	#HUD information (1:FPS/CPU(long), 2:FPS/CPU(short), 3:FPS/CPU(2lines), 4:FPS only, 5:CPU only, 6:Simple)
 	#Range: 0 ~ 6
 	hudInfo = 4
 	#Profile (0:custom, 1:modest-eco, 2:eco, 3:cooling-low, 4:cooling-high)
@@ -126,6 +126,4 @@
 [debug]
 	#Enable debug log
 	debugLog = false
-	#Show event log on the game screen.
-	logInChat = false
 
