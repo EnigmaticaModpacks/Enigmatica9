@@ -52,7 +52,7 @@ skull_candles = false
 ["Uncrafting Table"]
 	#If you don't want to disable uncrafting altogether, and would rather disable certain recipes, this is for you.
 	#To add a recipe, add the mod id followed by the name of the recipe. You can check this in things like JEI.
-	#Example: "twilightforest:moonworm_queen" will disable uncrafting the moonworm queen into itself and 3 torchberries.
+	#Example: "twilightforest:firefly_particle_spawner" will disable uncrafting the particle spawner into a firefly jar, firefly, and poppy.
 	#If an item has multiple crafting recipes and you wish to disable them all, add the item to the "twilightforest:banned_uncraftables" item tag.
 	#If you have a problematic ingredient, like infested towerwood for example, add the item to the "twilightforest:banned_uncrafting_ingredients" item tag.
 	disableUncraftingRecipes = []
@@ -64,6 +64,15 @@ skull_candles = false
 	flipIdList = false
 	#Disable the uncrafting function of the uncrafting table. Recommended as a last resort if there's too many things to change about its behavior.
 	disableUncrafting = true
+	#Setting this to true will make it so you dont have to pay XP to uncraft stuff. This will only affect uncrafting.
+	#If you want to disable the xp cost for repairing and recrafting, see the below option.
+	disableUncraftingXpCost = false
+	#Setting this to true will make it so you dont have to pay XP to repair and recraft stuff in the uncrafting table. This wont affect uncrafting cost.
+	#If youre confused about what repairing and recrafting are, you can read about them here: http://benimatic.com/tfwiki/index.php?title=Uncrafting_Table
+	#If you want to disable the xp cost for uncrafting, see the above option.
+	disableRepairingXpCost = false
+	#If true, this will invert the above uncrafting recipe list from a blacklist to a whitelist.
+	flipRecipeList = false
 
 #We recommend downloading the Shield Parry mod for parrying, but these controls remain for without.
 ["Shield Parrying"]
@@ -72,4 +81,27 @@ skull_candles = false
 	#The amount of ticks after raising a shield that makes it OK to parry a projectile.
 	#Range: > 0
 	shieldParryTicksArrow = 40
+
+#Settings for all things related to the magic trees.
+["Magic Trees"]
+	#If true, prevents the Timewood Core from functioning.
+	disableTimeCore = false
+	#Defines the radius at which the Timewood Core works. Can be a number anywhere between 1 and 128.
+	#Range: 1 ~ 128
+	timeCoreRange = 16
+	#If true, prevents the Transformation Core from functioning.
+	disableTransformationCore = false
+	#Defines the radius at which the Transformation Core works. Can be a number anywhere between 1 and 128.
+	#Range: 1 ~ 128
+	transformationCoreRange = 16
+	#If true, prevents the Minewood Core from functioning.
+	disableMiningCore = false
+	#Defines the radius at which the Minewood Core works. Can be a number anywhere between 1 and 128.
+	#Range: 1 ~ 128
+	miningCoreRange = 16
+	#If true, prevents the Sortingwood Core from functioning.
+	disableSortingCore = false
+	#Defines the radius at which the Sortingwood Core works. Can be a number anywhere between 1 and 128.
+	#Range: 1 ~ 128
+	sortingCoreRange = 16
 
