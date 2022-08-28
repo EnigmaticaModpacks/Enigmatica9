@@ -172,7 +172,9 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"twilightforest-client.toml",
 	"upgrade_aquatic-client.toml",
 	"valhelsia_core-client.toml",
-	"xnet-client.toml"
+	"xnet-client.toml",
+	"defaultoptions/servers.dat",
+	"defaultoptions/extra"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "resourcepacks")
