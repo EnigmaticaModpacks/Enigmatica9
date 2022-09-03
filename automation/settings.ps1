@@ -134,7 +134,7 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"itemzoom-client.toml",
 	"jecalculation/record.json",
 	"jeed-client.toml",
-	"jei-client.toml",
+	"jei/jei-client.ini",
 	"jei/bookmarks.ini",
 	"jmi-client.toml",
 	"mcjtylib-client.toml",

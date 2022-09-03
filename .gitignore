@@ -180,3 +180,4 @@ github-changelog-generator.bat
 config/oculus.properties
 config/supplementaries-client.toml
 config/darkmodeeverywhere-client.toml
+config/jei/jei-client.ini
