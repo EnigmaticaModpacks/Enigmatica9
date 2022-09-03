@@ -99,4 +99,7 @@
 		#The burn rate increase each fuel assembly provides. Max Burn Rate = fuelAssemblies * burnPerAssembly
 		#Range: 1 ~ 1000000
 		burnPerAssembly = 1
+		#The radius of the explosion that occurs from a meltdown.
+		#Range: 1.0 ~ 500.0
+		meltdownRadius = 8.0
 

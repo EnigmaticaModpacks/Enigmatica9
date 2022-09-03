@@ -194,6 +194,11 @@
 		#Range: 0 ~ 256
 		pole_length = 16
 
+	[blocks.sugar_cube]
+		#Duration in seconts of speed effect garanted to horses that eat a sugar cube
+		#Range: 0 ~ 1000
+		horse_speed_duration = 10
+
 #Configure spawning conditions
 [spawns]
 
@@ -230,8 +235,10 @@
 
 #Vanilla tweaks
 [tweaks]
-	#Allows traders to open doors (because they couldnt aparently)
-	traders_open_doors = true
+
+	[tweaks.traders_open_doors]
+		#Allows traders to open doors (because they couldnt aparently)
+		enabled = true
 
 	[tweaks.dispenser_tweaks]
 		#Allows dispensers to use axes on blocks to strip logs and scrape off copper oxidation and wax
@@ -398,6 +405,16 @@
 		stasis_deceleration = 0.9625
 		#Allow enderman to intercept any slingshot projectile
 		unrestricted_enderman_intercept = true
+
+	[items.quiver]
+		#Allows using a quiver without being slowed down
+		use_without_slow = true
+		#Arrow stacks that can fit inside a quiver. Requires reboot
+		#Range: 1 ~ 9
+		slots = 6
+		#Increase this number to alter the probability for a Skeleton with quiver to spawn. Note that this also depends on local difficulty so you wont ever see them on easy and very rarely on normal. Similar logic to equipment
+		#Range: 0.0 ~ 1.0
+		quiver_skeleton_chance = 0.2
 
 #General settings
 [general]

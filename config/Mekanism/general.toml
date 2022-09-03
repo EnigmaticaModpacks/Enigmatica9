@@ -175,7 +175,7 @@
 	[general.security]
 		#Enable the security system for players to prevent others from accessing their machines. Does NOT affect Frequencies.
 		allowProtection = true
-		#Ops can bypass the block security restrictions if enabled.
+		#If this is enabled then players with the 'mekanism.bypass_security' permission (default ops) can bypass the block and item security restrictions.
 		opsBypassRestrictions = false
 
 	#Nutritional Paste Settings

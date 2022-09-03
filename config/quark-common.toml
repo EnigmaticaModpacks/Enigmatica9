@@ -110,6 +110,7 @@
 	"Duskbound Blocks" = true
 	"Compressed Blocks" = true
 	"Celebratory Lamps" = true
+	"Raw Metal Bricks" = true
 
 	[building.vertical_planks]
 		#This feature disables itself if any of the following mods are loaded: 
@@ -456,6 +457,8 @@
 		"Torches Burn" = true
 		#Can bones be smelted down to bone meal?
 		"Bone Meal Utility" = true
+		#Can Charcoal be crafted into Black Dye?
+		"Charcoal To Black Dye" = true
 
 	[tweaks.simple_harvest]
 		#Can players harvest crops with empty hand clicks?
@@ -1180,6 +1183,7 @@
 	[mobs.stonelings]
 		"Max Y Level" = 0
 		"Enable Diamond Heart" = true
+		#When enabled, stonelings are much more aggressive in checking for players
 		"Cautious Stonelings" = true
 		"Tamable Stonelings" = true
 		#Disabled if if Pathfinder Maps are disabled.
@@ -1356,6 +1360,8 @@
 		#So to display a carrot on a stick on a mending book, for example, you use:
 		#minecraft:mending=minecraft:carrot_on_a_stick
 		"Enchanting Additional Stacks" = []
+		"Fuel Time Tooltips" = true
+		"Fuel Time Divisor" = 200
 
 	[client.greener_grass]
 		"Affect Leaves" = true
@@ -1387,6 +1393,7 @@
 	"Game Nerfs" = false
 	"Enchantments Begone" = false
 	"Adjustable Chat" = false
+	Saw = false
 
 	[experimental.spawner_replacer]
 		#Mobs to be replaced with other mobs.
@@ -1418,6 +1425,12 @@
 	[experimental.adjustable_chat]
 		"Horizontal Shift" = 0
 		"Vertical Shift" = 0
+
+	[experimental.saw]
+
+		[experimental.saw.variants]
+			"Known Suffixes" = ["slab", "stairs", "wall", "fence", "vertical_slab"]
+			"Tested Mods" = ["quark"]
 
 [oddities]
 	"Totem Of Holding" = true

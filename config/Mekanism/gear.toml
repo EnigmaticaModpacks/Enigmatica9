@@ -257,6 +257,8 @@
 		#Knockback resistance value of the MekaSuit.
 		#Range: 0.0 ~ 3.4028234663852886E38
 		knockbackResistance = 0.10000000149011612
+		#Should the Gravitational Modulation unit give off vibrations when in use.
+		gravitationalVibrations = true
 
 		[gear.mekasuit.damage_absorption]
 			#Percent of damage taken from fall that can be absorbed by the MekaSuit when there is enough power and a full suit is equipped.

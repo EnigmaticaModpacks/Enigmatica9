@@ -59,7 +59,6 @@
 	pulley_block = true
 	fodder = true
 	crimson_lantern = true
-	magma_cream_block = true
 	daub = true
 	wattle_and_daub = true
 	timber_frame = true
@@ -83,6 +82,9 @@
 	silver_door = true
 	lead_trapdoor = true
 	lead_door = true
+	sugar_cube = true
+	crystal_display = true
+	lapis_bricks = true
 
 [items]
 	flute = true
@@ -98,4 +100,5 @@
 	rope_arrow = true
 	bomb = true
 	pancake = true
+	quiver = true
 
