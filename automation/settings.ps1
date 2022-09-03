@@ -16,7 +16,7 @@ $CURSEFORGE_USER = "NillerMedDild"
 # $CURSEFORGE_TOKEN = 
 
 # ProjectID can be found on the modpack's Curseforge Projects page, under "About This Project"
-$CURSEFORGE_PROJECT_ID = 547108
+$CURSEFORGE_PROJECT_ID = 632239
 
 # =====================================================================//
 #  MAIN MODPACK SETTINGS
@@ -58,7 +58,7 @@ $CLIENT_CHANGELOG = "The Changelog is currently being written, it should be done
 # More can be found by running GetGameVersions
 
 # can be either 9186, 9189 or 9190 for 1.19?
-$GAME_VERSIONS = @(9190)
+$GAME_VERSIONS = @(9366)
 
 # Can be "alpha", "beta" or "release"
 $CLIENT_RELEASE_TYPE = "alpha"
