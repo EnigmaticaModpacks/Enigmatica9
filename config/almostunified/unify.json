@@ -47,17 +47,24 @@
     "electrum",
     "elementium",
     "emerald",
+    "enderium",
     "fluorite",
     "gold",
     "invar",
+    "iridium",
     "iron",
     "lapis",
     "lead",
     "lumium",
+    "netherite",
     "nickel",
     "obsidian",
     "osmium",
+    "peridot",
+    "platinum",
     "potassium_nitrate",
+    "ruby",
+    "sapphire",
     "signalum",
     "silver",
     "steel",
@@ -67,7 +74,9 @@
     "zinc"
   ],
   "ignoredTags": [],
-  "ignoredRecipeTypes": [],
+  "ignoredRecipeTypes": [
+    "cucumber:shaped_tag"
+  ],
   "ignoredRecipes": [],
   "itemsHidingJeiRei": true
 }
