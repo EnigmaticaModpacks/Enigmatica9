@@ -326,7 +326,7 @@
 	# 
 	# The version of itlt that created this config file. Intended to be used for migrating
 	# config changes when you update the mod. Please don't touch this, this is for itlt itself to change.
-	configVersion = "2.1.4"
+	configVersion = "2.1.5"
 
 [ServerList]
 	# 
