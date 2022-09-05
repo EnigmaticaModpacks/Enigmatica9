@@ -1,6 +1,7 @@
 ServerEvents.tags('item', (event) => {
     var items = [
         '#forge:tools/bows',
+        '#forge:tools/tridents',
         // 'botania:flare_chakram',
         // 'botania:thorn_chakram',
         // 'gunswithoutroses:diamond_gatling',
@@ -15,13 +16,12 @@ ServerEvents.tags('item', (event) => {
         // 'meetyourfight:phantasmal_rifle',
         // 'meetyourfight:cocktail_shotgun',
         'mekanism:flamethrower',
-        'minecraft:trident',
         'pneumaticcraft:micromissiles',
         'pneumaticcraft:minigun'
     ];
     var exceptions = [];
 
-    var tags = ['forge:weapons', 'forge:weapons/ranged'];
+    var tags = ['enigmatica:weapons', 'enigmatica:weapons/ranged'];
 
     tags.forEach((tag) => {
         event.get(tag).add(items).remove(exceptions);

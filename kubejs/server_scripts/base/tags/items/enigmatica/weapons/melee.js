@@ -11,7 +11,7 @@ ServerEvents.tags('item', (event) => {
     ];
     var exceptions = [];
 
-    var tags = ['forge:weapons', 'forge:weapons/melee'];
+    var tags = ['enigmatica:weapons', 'enigmatica:weapons/melee'];
 
     tags.forEach((tag) => {
         event.get(tag).add(items).remove(exceptions);

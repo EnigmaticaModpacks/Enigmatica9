@@ -79,8 +79,18 @@ const materialsToUnify = [
     'blazing',
     'niotic',
     'spirited',
-    'nitro'
+    'nitro',
+    'falsite',
+    'ventium',
+    'horizonite',
+    'pyrope',
+    'aquite',
+    'diopside',
+    'charoite'
 ];
+
+const blueSkiesMetals = ['falsite', 'ventium', 'horizonite'];
+const blueSkiesGems = ['pyrope', 'aquite', 'diopside', 'charoite'];
 
 // Used to determine which material types to unify
 const typesToUnify = ['nugget', 'ingot', 'gem', 'storage_block', 'ore', 'dust', 'gear', 'plate', 'rod'];
