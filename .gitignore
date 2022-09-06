@@ -183,3 +183,4 @@ config/darkmodeeverywhere-client.toml
 config/jei/jei-client.ini
 config/darkmodeeverywhereshaders.json
 config/ae2/client.json
+config/explorerscompass-client.toml
