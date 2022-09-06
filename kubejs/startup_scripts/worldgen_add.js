@@ -1,4 +1,4 @@
-WorldgenEvents('add', (event) => {
+WorldgenEvents.add((event) => {
     event.addSpawn((spawn) => {
         spawn.category = 'creature';
         spawn.entity = 'minecraft:turtle';

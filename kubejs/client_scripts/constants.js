@@ -17,47 +17,49 @@ const generatableCobblestone = [
 ];
 // Items added here will get recipes for Pedestals & Cobblegen Randomizer stonegens.
 const generatableStone = [
-    'byg:black_sandstone',
-    'byg:blue_sandstone',
-    'byg:dacite',
-    'byg:purple_sandstone',
-    'byg:pink_sandstone',
-    'byg:scoria_stone',
-    'byg:white_sandstone',
-    'minecraft:red_sandstone',
-    'minecraft:sandstone',
-    'minecraft:basalt',
-    'minecraft:diorite',
-    'minecraft:granite',
-    'minecraft:andesite',
-    'minecraft:deepslate',
-    'byg:brimstone',
-    'quark:jasper',
-    'quark:limestone',
-    'quark:permafrost',
-    'create:scoria',
-    'create:limestone',
-    'quark:myalite',
-    'quark:dusky_myalite',
-    'blue_skies:turquoise_stone',
-    'blue_skies:rimestone',
-    'minecraft:dripstone_block',
-    'quark:soul_sandstone',
-    'blue_skies:midnight_sandstone',
-    'blue_skies:lunar_stone',
-    'blue_skies:crystal_sandstone',
     'blue_skies:blinding_stone',
+    'blue_skies:crystal_sandstone',
+    'blue_skies:lunar_stone',
+    'blue_skies:midnight_sandstone',
     'blue_skies:nature_stone',
     'blue_skies:poison_stone',
-    'byg:windswept_sandstone',
-    'byg:ether_stone',
+    'blue_skies:rimestone',
+    'blue_skies:turquoise_stone',
+    'byg:black_sandstone',
+    'byg:blue_sandstone',
+    'byg:brimstone',
     'byg:cryptic_stone',
+    'byg:dacite',
+    'byg:ether_stone',
+    'byg:pink_sandstone',
+    'byg:purple_sandstone',
+    'byg:scoria_stone',
+    'byg:white_sandstone',
+    'byg:windswept_sandstone',
+    // 'create:limestone',
+    // 'create:scoria',
+    'minecraft:andesite',
+    'minecraft:basalt',
+    'minecraft:deepslate',
+    'minecraft:diorite',
+    'minecraft:dripstone_block',
+    'minecraft:granite',
+    'minecraft:red_sandstone',
+    'minecraft:sandstone',
+    'quark:dusky_myalite',
+    'quark:jasper',
+    'quark:limestone',
+    'quark:myalite',
+    'quark:permafrost',
+    'quark:soul_sandstone',
     'twilightforest:mazestone'
 ];
 const generatableBasalt = [];
 
 const itemsToHide = [];
 
-const disabledItems = ['twilightforest:uncrafting_table'];
+const disabledItems = [
+    //'twilightforest:uncrafting_table'
+];
 
 const categoriesToHide = ['twilightforest:uncrafting'];

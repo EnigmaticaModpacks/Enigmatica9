@@ -1,4 +1,4 @@
-onEvent('jei.hide.items', (event) => {
+JEIEvents.hideItems((event) => {
     itemsToHide.forEach((disabledItem) => {
         if (!Item.of(disabledItem).isEmpty()) {
             event.hide(disabledItem);

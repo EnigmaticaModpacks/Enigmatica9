@@ -1,5 +1,5 @@
-onEvent('jei.information', (event) => {
-    const recipes = [
+JEIEvents.information((event) => {
+    const descriptions = [
         {
             items: ['farmersdelight:ham'],
             text: ['Obtained by killing Pigs or Hoglins with a knife.']
@@ -8,7 +8,7 @@ onEvent('jei.information', (event) => {
             items: ['buildinggadgets:construction_paste'],
             text: ['Obtained by breaking a Dense Construction Block with a Pickaxe.']
         },
-
+        /*
         {
             items: ['thermal:blizz_rod', 'thermal:blizz_spawn_egg'],
             text: ['The Blizz spawns naturally in cold biomes. Mechanical Dirt works wonders for farming them.']
@@ -23,14 +23,7 @@ onEvent('jei.information', (event) => {
                 'The Basalz spawns naturally in barren biomes, such as Badlands. Mechanical Dirt works wonders for farming them.'
             ]
         },
-        {
-            items: ['byg:warped_cactus'],
-            text: ['Obtained by tossing Cactus through a Nether Portal from the Overworld']
-        },
-        {
-            items: ['byg:warped_coral', 'byg:warped_coral_fan', 'byg:warped_coral'],
-            text: ['Obtained by tossing any coral through a Nether Portal from the Overworld']
-        },
+        */
         {
             items: [/quark:\w+_corundum$/],
             text: [
@@ -103,24 +96,8 @@ onEvent('jei.information', (event) => {
             ]
         },
         {
-            items: ['byg:leaf_pile'],
-            text: [`Gathered with Shears.`]
-        },
-        {
             items: ['immersiveengineering:furnace_heater', 'mekanism:fuelwood_heater', 'mekanism:resistive_heater'],
             text: [`May be used to provide Heat for PneumaticCraft machines.`]
-        },
-        {
-            items: ['alexsmobs:hemolymph_sac', 'alexsmobs:warped_muscle'],
-            text: [
-                `Obtained by defeating the Warped Mosco.`,
-                ` `,
-                `Warped Moscos are creatures of nightmare created when a Crimson Mosquito sucks the blood of a Mungus covered in Warped Fungus.`
-            ]
-        },
-        {
-            items: ['alexsmobs:hemolymph_sac', 'alexsmobs:warped_muscle'],
-            text: [`Crimson Mosquitos may be created by bringing a Fly into the Nether.`]
         },
         {
             items: ['bloodmagic:weak_tau'],
@@ -137,22 +114,6 @@ onEvent('jei.information', (event) => {
         {
             items: ['quark:slime_in_a_bucket'],
             text: [`Scoop up a small slime in an empty bucket.`]
-        },
-        {
-            items: ['alexsmobs:mysterious_worm'],
-            text: [
-                `Summons a Void Worm when tossed into the void in The End.`,
-                ` `,
-                `Place a Crimson Mosquito Larva inside a Capsid to obtain.`
-            ]
-        },
-        {
-            items: ['alexsmobs:capsid'],
-            text: [
-                `Dropped by Enderiophage.`,
-                ` `,
-                `Enderiophage may be found in the wild in the End Midlands biome. They may also be called forth by consuming Otherworldly Honey.`
-            ]
         },
         {
             items: ['naturesaura:gold_leaf'],
@@ -173,12 +134,6 @@ onEvent('jei.information', (event) => {
             text: [`When equipped in the belt slot, hold the sneak key while airborne to float.`]
         },
         {
-            items: ['create:chromatic_compound', 'create:refined_radiance'],
-            text: [
-                `Chromatic Compound absorbs light when dropped in the world, transforming into Refined Radiance. Charges slowly from ambient light, faster by consuming nearby light emitting blocks, and instantly when dropped onto an active beacon.`
-            ]
-        },
-        {
             items: ['naturesaura:projectile_generator'],
             text: [`Valid Projectiles:`, ``, `● Snowballs`, `● Eggs`, `● Arrows`, `● Fire Charges`, `● Spectral Arrows`]
         },
@@ -192,30 +147,31 @@ onEvent('jei.information', (event) => {
         }
     ];
 
-    recipes.forEach((recipe) => {
-        recipe.items.forEach((item) => {
-            event.add(item, recipe.text);
+    descriptions.forEach((description) => {
+        description.items.forEach((item) => {
+            console.log(item);
+            event.addItem(item, description.text);
         });
     });
 
     generatableCobblestone.forEach((cobblestone) => {
-        event.add(
+        event.addItem(
             cobblestone,
             'Can be generated in a Vanilla Cobblestone Generator. The block below where the Cobblestone generates needs to be a Block of Iron.'
         );
     });
 
     generatableStone.forEach((stone) => {
-        event.add(
+        event.addItem(
             stone,
             'Can be generated in a Vanilla Stone Generator. The block below where the Stone generates needs to be a Block of Diamond.'
         );
     });
 
     disabledItems.forEach((item) => {
-        event.add(
+        event.addItem(
             item,
-            "This item has been disabled, if you managed to obtain it please report it on Enigmatica 8's issue tracker: https://github.com/EnigmaticaModpacks/Enigmatica8/issues"
+            "This item has been disabled, if you managed to obtain it please report it on Enigmatica 9's issue tracker: https://github.com/EnigmaticaModpacks/Enigmatica9/issues"
         );
     });
 });
