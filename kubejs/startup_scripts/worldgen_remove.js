@@ -1,1 +1,1 @@
-onEvent('worldgen.remove', (event) => {});
+WorldgenEvents('remove', (event) => {});
