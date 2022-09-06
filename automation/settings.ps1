@@ -176,7 +176,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"defaultoptions/servers.dat",
 	"defaultoptions/extra",
 	"darkmodeeverywhere-client.toml",
-	"darkmodeeverywhereshaders.json"
+	"darkmodeeverywhereshaders.json",
+	"ae2/client.json"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "resourcepacks")
