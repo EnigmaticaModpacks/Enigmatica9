@@ -1,10 +1,5 @@
-onEvent('item.tags', (event) => {
-    var items = [
-        /_sword/,
-        'immersiveengineering:sword_steel'
-        // 'wstweaks:blaze_blade',
-        // 'wstweaks:lava_blade',
-    ];
+ServerEvents.tags('item', (event) => {
+    var items = [/_sword$/, 'immersiveengineering:sword_steel'];
     var exceptions = [];
 
     var tags = ['forge:tools', 'forge:swords', 'forge:tools/swords'];
