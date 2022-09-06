@@ -1,4 +1,4 @@
-onEvent('item.registry', (event) => {
+StartupEvents.registry('item', (event) => {
     const items = [
         'common_lootbox',
         'rare_lootbox',
@@ -9,14 +9,15 @@ onEvent('item.registry', (event) => {
         'farmers_delight',
         'blacksmiths_delight',
         'scavengers_delight',
-        'alchemists_delight',
-        'altered_recipe_indicator',
-        'disabled_recipe_indicator'
+        'alchemists_delight'
     ];
 
     const ritualDummies = [];
 
-    const reusableItemTextures = [];
+    const reusableItemTextures = [
+        { name: 'altered_recipe_indicator', texture: 'enigmatica_tree' },
+        { name: 'disabled_recipe_indicator', texture: 'enigmatica_tree' }
+    ];
 
     items.forEach((item) => {
         event.create(item).group('KubeJS').texture(`kubejs:item/${item}`);

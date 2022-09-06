@@ -1,4 +1,4 @@
-onEvent('fluid.registry', (event) => {
+StartupEvents.registry('fluid', (event) => {
     const fluids = [];
 
     fluids.forEach((fluid) => {

@@ -1,4 +1,4 @@
-onEvent('block.registry', (event) => {
+StartupEvents.registry('block', (event) => {
     const blocks = [];
 
     blocks.forEach((block) => {
