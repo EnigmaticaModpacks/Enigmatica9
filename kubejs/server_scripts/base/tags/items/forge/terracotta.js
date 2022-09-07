@@ -1,6 +1,5 @@
- ServerEvents.tags('item', event => {
-    for (var i = 0; i < colors.length; i++) {
-        event.get('forge:terracotta').add('minecraft:' + colors[i] + '_terracotta');
-    }
-    event.get('forge:terracotta').add('minecraft:terracotta');
+ServerEvents.tags('item', (event) => {
+    colors.forEach((color) => {
+        event.get(`forge:terracotta/${color}`).add(`minecraft:${color}_terracotta`);
+    });
 });
