@@ -1,0 +1,102 @@
+
+["Mod Compatibility Options"]
+
+	["Mod Compatibility Options"."General Compat Options"]
+		# 
+		#-----------------------------------------------------
+		#
+		# Will let you feed any item that has a Forge fluid capability attached and has 
+		#  any fluid that is tagged forge:fluid/honey inside. This works alongside the bee_feeding item tag.
+		#  An item can still be fed even if bee_feeding tag doesn't have the item as long as the 
+		# item fit the above conditions with the fluid capability and this config is set to true.
+		#
+		allowHoneyFluidTanksFeedingCompat = true
+
+	["Mod Compatibility Options"."Pokecube Options"]
+		# 
+		#-----------------------------------------------------
+		#
+		# Spawn Pokecube's bee-like pokemon in The Bumblezone and from Honey Brood Blocks.
+		#
+		spawnPokecubeBeePokemon = true
+		# 
+		#-----------------------------------------------------
+		#
+		# Chance of a Bee spawning in Bumblezone or from Honeycomb Brood Blocks being replaced by Pokecube's bee pokemon.
+		# 0 is no PC's mobs and 1 is max PC's mobs.
+		#
+		#Range: 0.0 ~ 1.0
+		spawnrateOfPokecubeBeePokemon = 0.02
+
+	["Mod Compatibility Options"."Productive Bees Options"]
+		# 
+		#-----------------------------------------------------
+		#
+		# Spawn Productive Bees in The Bumblezone and from Honey Brood Blocks
+		# alongside regular bees at a 1/15th chance when spawning regular bees.
+		#
+		spawnProductiveBeesBeesMob = true
+		# 
+		#-----------------------------------------------------
+		#
+		# Chance of a Bee spawning in Bumblezone or from Honeycomb Brood Blocks being replaced by Productive Bee's mob.
+		# 0 is no PB's mobs and 1 is max PB's mobs.
+		#
+		#Range: 0.0 ~ 1.0
+		spawnrateOfProductiveBeesMobs = 0.03
+		# 
+		#-----------------------------------------------------
+		#
+		# Spawn Productive Bees's various honeycomb variants in The Bumblezone
+		# at all kinds of heights and height bands. Start exploring to find 
+		# where they spawn!
+		# 
+		# NOTE: Will require a restart of the world to take effect. 
+		#
+		spawnProductiveBeesHoneycombVariants = true
+		# 
+		#-----------------------------------------------------
+		#
+		# Allow what Productive Bees combs should be able to spawn in Bumblezone dungeons.
+		allowedCombsForDungeons = ["productivebees:diamond", "productivebees:iron", "productivebees:coal", "productivebees:redstone", "productivebees:copper", "productivebees:lapis", "productivebees:gold", "productivebees:emerald", "productivebees:obsidian", "productivebees:experience", "productivebees:magmatic", "productivebees:amethyst", "productivebees:prismarine", "productivebees:crystalline", "productivebees:sugarbag", "productivebees:glowing", "productivebees:frosty", "productivebees:slimy", "productivebees:silky", "productivebees:blazing", "productivebees:ender", "productivebees:skeletal", "productivebees:ghostly", "productivebees:zombie"]
+		# 
+		#-----------------------------------------------------
+		#
+		# Allow what Productive Bees combs should be able to spawn in Bumblezone as ores.
+		allowedCombsAsOres = ["productivebees:iron", "productivebees:redstone", "productivebees:copper", "productivebees:gold", "productivebees:magmatic", "productivebees:crystalline", "productivebees:glowing", "productivebees:blazing", "productivebees:skeletal", "productivebees:ghostly"]
+		# 
+		#-----------------------------------------------------
+		#
+		# Allow what Productive Bees bees should be able to spawn in Bumblezone. 
+		blacklistedBees = ["productivebees:diamond", "productivebees:iron", "productivebees:coal", "productivebees:redstone", "productivebees:copper", "productivebees:lapis", "productivebees:gold", "productivebees:emerald", "productivebees:obsidian", "productivebees:experience", "productivebees:magmatic", "productivebees:amethyst", "productivebees:prismarine", "productivebees:crystalline", "productivebees:sugarbag", "productivebees:glowing", "productivebees:frosty", "productivebees:slimy", "productivebees:silky", "productivebees:blazing", "productivebees:ender", "productivebees:skeletal", "productivebees:ghostly", "productivebees:zombie"]
+		# 
+		#-----------------------------------------------------
+		#
+		# Allow Honey Treat to be able to feed bees and Honeycomb Brood Blocks.
+		#
+		allowHoneyTreatCompat = true
+		# 
+		#-----------------------------------------------------
+		#
+		# How much of Bee Dungeons is made of ore-based honeycombs.
+		# 0 is no PB's honeycombs and 1 is max PB's honeycombs.
+		#
+		#Range: 0.0 ~ 1.0
+		PBOreHoneycombSpawnRateBeeDungeon = 0.06
+		# 
+		#-----------------------------------------------------
+		#
+		# How much of Spider Infested Bee Dungeons is made of ore-based honeycombs.
+		# 0 is no PB's honeycombs and 1 is max PB's honeycombs.
+		#
+		#Range: 0.0 ~ 1.0
+		PBOreHoneycombSpawnRateSpiderBeeDungeon = 0.12
+
+	["Mod Compatibility Options"."Friends and Foes Options"]
+		# 
+		#-----------------------------------------------------
+		#
+		# Adds Bumblezone items to Friends and Foes's Beekeeper trades!
+		#
+		allowFriendsAndFoesBeekeeperTradesCompat = true
+
