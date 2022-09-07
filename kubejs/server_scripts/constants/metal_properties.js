@@ -9,7 +9,7 @@ const metalProperties = {
         meltingPoint: 800,
         oreProcessing: {
             output: {
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'nickel'
             },
             create: {
@@ -21,7 +21,7 @@ const metalProperties = {
         meltingPoint: 950,
         oreProcessing: {
             output: {
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'iron'
             },
             create: {
@@ -33,7 +33,7 @@ const metalProperties = {
         meltingPoint: 700,
         oreProcessing: {
             output: {
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'zinc'
             },
             create: {
@@ -45,7 +45,7 @@ const metalProperties = {
         meltingPoint: 500,
         oreProcessing: {
             output: {
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'gold'
             },
             create: {
@@ -57,7 +57,7 @@ const metalProperties = {
         meltingPoint: 425,
         oreProcessing: {
             output: {
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'iron'
             },
             create: {
@@ -69,7 +69,7 @@ const metalProperties = {
         meltingPoint: 330,
         oreProcessing: {
             output: {
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'silver'
             },
             create: {
@@ -81,7 +81,7 @@ const metalProperties = {
         meltingPoint: 790,
         oreProcessing: {
             output: {
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'lead'
             },
             create: {
@@ -93,7 +93,7 @@ const metalProperties = {
         meltingPoint: 830,
         oreProcessing: {
             output: {
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'lead'
             },
             create: {
@@ -105,7 +105,7 @@ const metalProperties = {
         meltingPoint: 975,
         oreProcessing: {
             output: {
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'tin'
             },
             create: {
@@ -117,7 +117,7 @@ const metalProperties = {
         meltingPoint: 225,
         oreProcessing: {
             output: {
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'osmium'
             },
             create: {
@@ -129,7 +129,7 @@ const metalProperties = {
         meltingPoint: 420,
         oreProcessing: {
             output: {
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'gold'
             },
             create: {

@@ -10,7 +10,7 @@ const gemProperties = {
         oreProcessing: {
             output: {
                 type: 'dust',
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'minecraft:redstone'
             },
             create: {
@@ -40,7 +40,7 @@ const gemProperties = {
         oreProcessing: {
             output: {
                 type: 'gem',
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'emendatusenigmatica:sulfur_dust'
             },
             create: {
@@ -71,7 +71,7 @@ const gemProperties = {
         oreProcessing: {
             output: {
                 type: 'gem',
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'minecraft:emerald'
             },
             create: {
@@ -101,7 +101,7 @@ const gemProperties = {
         oreProcessing: {
             output: {
                 type: 'gem',
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'minecraft:diamond'
             },
             create: {
@@ -131,7 +131,7 @@ const gemProperties = {
         oreProcessing: {
             output: {
                 type: 'gem',
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'emendatusenigmatica:sulfur_dust'
             },
             create: {
@@ -223,7 +223,7 @@ const gemProperties = {
         oreProcessing: {
             output: {
                 type: 'gem',
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'emendatusenigmatica:sulfur_dust'
             },
             create: {
@@ -253,7 +253,7 @@ const gemProperties = {
         oreProcessing: {
             output: {
                 type: 'gem',
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'minecraft:quartz'
             },
             create: {
@@ -283,7 +283,7 @@ const gemProperties = {
         oreProcessing: {
             output: {
                 type: 'gem',
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'rftoolsbase:dimensionalshard'
             },
             create: {
@@ -313,7 +313,7 @@ const gemProperties = {
         oreProcessing: {
             output: {
                 type: 'gem',
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'emendatusenigmatica:sulfur_dust'
             },
             create: {
@@ -343,7 +343,7 @@ const gemProperties = {
         oreProcessing: {
             output: {
                 type: 'gem',
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'emendatusenigmatica:sulfur_dust'
             },
             create: {
@@ -373,7 +373,7 @@ const gemProperties = {
         oreProcessing: {
             output: {
                 type: 'gem',
-                substrate: 'minecraft:cobblestone',
+                substrate: 'minecraft:gravel',
                 secondary: 'emendatusenigmatica:sulfur_dust'
             },
             create: {
