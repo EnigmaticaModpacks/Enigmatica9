@@ -1,0 +1,7 @@
+StartupEvents.registry('block', (event) => {
+    const blocks = [];
+
+    blocks.forEach((block) => {
+        event.create(block.name).material(block.material).hardness(block.hardness);
+    });
+});

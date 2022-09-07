@@ -1,0 +1,11 @@
+{
+    "name": "Inventory Tweaks",
+    "icon": "minecraft:chest",
+    "category": "patchouli:tweaks",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$(#ffa500)$(l)Inventory Tweaks$(reset)’ main focus is, well, your inventory. Maybe it’s most famous addition is clicking $(k:invtweaks_sort_either.desc) to $(l)sort any inventory$(reset) you’re currently navigating."
+        }
+    ]
+}

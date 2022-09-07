@@ -1,0 +1,1 @@
+WorldgenEvents.remove((event) => {});
