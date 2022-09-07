@@ -1,5 +1,7 @@
 //priority: 900
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
+    const id_prefex = 'enigmatica:base/unification/stoneworks/';
+
     generatableCobblestone.forEach((material) => {
         var type = 'cobble';
         //console.log(`Recipe for Material: ${material}, Type: ${type}`);
@@ -29,8 +31,9 @@ function pedestals_stoneworks(event, material, type) {
         recipeType = 'pedestals:pedestal_cobblegensilk';
     }
     //console.log(`Pedestals Recipe for Material: ${material}, Type: ${type}`);
-    fallback_id(
-        event.custom({
+
+    event
+        .custom({
             type: recipeType,
             ingredient: {
                 item: material
@@ -39,9 +42,8 @@ function pedestals_stoneworks(event, material, type) {
                 item: material,
                 count: 1
             }
-        }),
-        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`
-    );
+        })
+        .id(`${id_prefix}${recipeType.replace(':', '/')}${material}`);
 }
 
 function industrialforegoing_stoneworks(event, material, type) {
@@ -57,20 +59,16 @@ function industrialforegoing_stoneworks(event, material, type) {
         lavaConsume = 0;
     }
 
-    fallback_id(
-        event.custom({
-            output: {
-                item: material,
-                count: 1
-            },
+    event
+        .custom({
+            type: 'industrialforegoing:stonework_generate',
+            output: { item: material, count: 1 },
             waterNeed: 1000,
             lavaNeed: 1000,
             waterConsume: waterConsume,
-            lavaConsume: lavaConsume,
-            type: 'industrialforegoing:stonework_generate'
-        }),
-        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`
-    );
+            lavaConsume: lavaConsume
+        })
+        .id(`${id_prefix}industrialforegoing/stonework_generate${material}`);
 }
 
 function thermal_stoneworks(event, material) {
@@ -78,15 +76,14 @@ function thermal_stoneworks(event, material) {
         return;
     }
 
-    fallback_id(
-        event.custom({
+    event
+        .custom({
             type: 'thermal:rock_gen',
             adjacent: 'minecraft:water',
             below: material,
             result: {
                 item: material
             }
-        }),
-        `enigmatica:base/unification/unify_stoneworks/${arguments.callee.name}/`
-    );
+        })
+        .id(`${id_prefix}thermal/rock_gen${material}`);
 }
