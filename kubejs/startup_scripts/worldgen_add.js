@@ -1,4 +1,5 @@
 WorldgenEvents.add((event) => {
+    /*
     event.addSpawn((spawn) => {
         spawn.category = 'creature';
         spawn.entity = 'minecraft:turtle';
@@ -8,4 +9,5 @@ WorldgenEvents.add((event) => {
         spawn.biomes.blacklist = false;
         spawn.biomes.values = ['#beach', '#ocean'];
     });
+    */
 });

@@ -58,8 +58,6 @@ const generatableBasalt = [];
 
 const itemsToHide = [];
 
-const disabledItems = [
-    //'twilightforest:uncrafting_table'
-];
+const disabledItems = ['twilightforest:uncrafting_table'];
 
 const categoriesToHide = ['twilightforest:uncrafting'];
