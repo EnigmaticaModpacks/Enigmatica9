@@ -144,6 +144,10 @@ JEIEvents.information((event) => {
         {
             items: ['naturesaura:birth_spirit'],
             text: [`Obtained by manually breeding animals in high Aura areas.`]
+        },
+        {
+            items: ['explorerscompass:explorerscompass'],
+            text: [`May only be used to locate Blue Skies structures.`]
         }
     ];
 
