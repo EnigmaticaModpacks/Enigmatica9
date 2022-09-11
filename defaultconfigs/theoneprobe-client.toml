@@ -59,12 +59,12 @@ boxTopY = 5
 #Range: -1 ~ 10000
 boxBottomY = -1
 #Color of the border of the box (0 to disable)
-boxBorderColor = "ff999999"
+boxBorderColor = "0"
 #Color of the box (0 to disable)
-boxFillColor = "55006699"
+boxFillColor = "0"
 #Thickness of the border of the box (0 to disable)
 #Range: 0 ~ 20
-boxThickness = 2
+boxThickness = 0
 #How much the border should be offset (i.e. to create an 'outer' border)
 #Range: 0 ~ 20
 boxOffset = 0
