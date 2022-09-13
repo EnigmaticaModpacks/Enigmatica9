@@ -185,3 +185,4 @@ config/darkmodeeverywhereshaders.json
 config/ae2/client.json
 config/explorerscompass-client.toml
 rhino.local.properties
+config/theoneprobe-client.toml
