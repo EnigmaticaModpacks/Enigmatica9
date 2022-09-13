@@ -179,7 +179,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"darkmodeeverywhereshaders.json",
 	"ae2/client.json",
 	"explorerscompass-client.toml",
-	"theoneprobe-client.toml"
+	"theoneprobe-client.toml",
+	"sidebar_buttons.json"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "resourcepacks")
