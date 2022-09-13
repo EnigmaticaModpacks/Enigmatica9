@@ -23,7 +23,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'blue_skies:ventium_shears',
-            pattern: ['A  ', ' A '],
+            pattern: ['A ', ' A'],
             key: {
                 A: '#forge:ingots/ventium'
             },
