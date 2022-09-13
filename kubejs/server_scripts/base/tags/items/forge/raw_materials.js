@@ -6,7 +6,7 @@ ServerEvents.tags('item', (event) => {
     });
 
     blueSkiesGems.forEach((material) => {
-        if (material == 'pyrope' || material == 'diopside') {
+        if (material == 'pyrope' || material == 'diopside' || material == 'moonstone') {
             return;
         }
         event.add('forge:raw_materials', `blue_skies:raw_${material}`);
