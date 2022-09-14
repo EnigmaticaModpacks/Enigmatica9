@@ -778,6 +778,306 @@ const treeProperties = [
                     sap: 'thermal:resin',
                     rate: { living: 50, dead: 6 }
                 }
+            },
+            {
+                sapling: 'byg:zelkova_sapling',
+                logs: ['byg:zelkova_log'],
+                leaves: ['byg:zelkova_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:brown_zelkova_sapling',
+                logs: ['byg:zelkova_log'],
+                leaves: ['byg:brown_zelkova_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:redwood_sapling',
+                logs: ['byg:redwood_log'],
+                leaves: ['byg:redwood_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:pine_sapling',
+                logs: ['byg:pine_log'],
+                leaves: ['byg:pine_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:araucaria_sapling',
+                logs: ['byg:pine_log'],
+                leaves: ['byg:araucaria_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:holly_sapling',
+                logs: ['byg:holly_log'],
+                leaves: ['byg:holly_leaves', 'byg:holly_berry_leaves'],
+                fruits: ['minecraft:sweet_berries'],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:fir_sapling',
+                logs: ['byg:fir_log'],
+                leaves: ['byg:fir_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:aspen_sapling',
+                logs: ['byg:aspen_log'],
+                leaves: ['byg:aspen_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:cika_sapling',
+                logs: ['byg:cika_log'],
+                leaves: ['byg:cika_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:jacaranda_sapling',
+                logs: ['byg:jacaranda_log'],
+                leaves: ['byg:jacaranda_leaves', 'byg:flowering_jacaranda_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:indigo_jacaranda_sapling',
+                logs: ['byg:indigo_jacaranda_log'],
+                leaves: ['byg:indigo_jacaranda_leaves', 'byg:flowering_indigo_jacaranda_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:baobab_sapling',
+                logs: ['byg:baobab_log'],
+                leaves: ['byg:baobab_leaves'],
+                fruits: ['byg:baobab_fruit'],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:ebony_sapling',
+                logs: ['byg:ebony_log'],
+                leaves: ['byg:ebony_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:mahogany_sapling',
+                logs: ['byg:mahogany_log'],
+                leaves: ['byg:mahogany_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:white_mangrove_sapling',
+                logs: ['byg:white_mangrove_log'],
+                leaves: ['byg:white_mangrove_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:palm_sapling',
+                logs: ['byg:palm_log'],
+                leaves: ['byg:palm_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:palo_verde_sapling',
+                logs: ['byg:palo_verde_log'],
+                leaves: ['byg:palo_verde_leaves', 'byg:flowering_palo_verde_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:blue_enchanted_sapling',
+                logs: ['byg:blue_enchanted_log'],
+                leaves: ['byg:blue_enchanted_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:green_enchanted_sapling',
+                logs: ['byg:green_enchanted_log'],
+                leaves: ['byg:green_enchanted_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:rainbow_eucalyptus_sapling',
+                logs: ['byg:rainbow_eucalyptus_log'],
+                leaves: ['byg:rainbow_eucalyptus_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:skyris_sapling',
+                logs: ['byg:skyris_log'],
+                leaves: ['byg:skyris_leaves', 'byg:green_apple_skyris_leaves'],
+                fruits: ['byg:green_apple'],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:willow_sapling',
+                logs: ['byg:willow_log'],
+                leaves: ['byg:willow_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:witch_hazel_sapling',
+                logs: ['byg:witch_hazel_log'],
+                leaves: ['byg:witch_hazel_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:joshua_sapling',
+                logs: ['minecraft:oak_log'],
+                leaves: ['byg:joshua_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:cypress_sapling',
+                logs: ['byg:cypress_log'],
+                leaves: ['byg:cypress_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
             }
         ],
         shrooms: [
