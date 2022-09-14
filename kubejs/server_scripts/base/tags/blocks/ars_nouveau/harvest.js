@@ -3,6 +3,6 @@ ServerEvents.tags('block', (event) => {
     let stems = ['byg:white_mushroom_stem'];
     //event.add('ars_nouveau:harvest/fellable', ['twilightforest:mazestone']);
 
-    event.add('ars_nouveau:harves/foliage', foliage);
-    event.add('ars_nouveau:harves/stems', stems);
+    event.add('ars_nouveau:harvest/foliage', foliage);
+    event.add('ars_nouveau:harvest/stems', stems);
 });
