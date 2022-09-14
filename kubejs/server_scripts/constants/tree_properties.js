@@ -2,18 +2,18 @@
 
 const treeProperties = [
     {
-        trees: [
-            {
+        trees: {
+            oak: {
                 sapling: 'minecraft:oak_sapling',
-                homeDimension: 'overworld',
                 logs: ['minecraft:oak_log'],
                 leaves: ['minecraft:oak_leaves'],
-                fruit: ['minecraft:apple'],
+                fruits: ['minecraft:apple'],
+                homeDimension: 'overworld',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
                 rate: { living: 25, dead: 4 }
             }
-        ],
+        },
         shrooms: [
             {
                 sapling: 'minecraft:brown_mushroom',
