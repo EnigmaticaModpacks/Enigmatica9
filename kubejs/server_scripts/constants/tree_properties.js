@@ -42,7 +42,7 @@ const treeProperties = [
             {
                 sapling: 'minecraft:jungle_sapling',
                 logs: ['minecraft:jungle_log'],
-                leaves: ['minecraft:jungle_leaves'],
+                leaves: ['minecraft:jungle_leaves', 'minecraft:vine'],
                 fruits: [],
                 dimension: 'overworld',
                 substrate: 'dirt',
@@ -319,7 +319,7 @@ const treeProperties = [
                 sapling: 'ars_elemental:yellow_archwood_sapling',
                 logs: ['ars_elemental:yellow_archwood_log'],
                 leaves: ['ars_elemental:yellow_archwood_leaves'],
-                fruits: [],
+                fruits: ['ars_elemental:flashpine_pod'],
                 dimension: 'overworld',
                 substrate: 'dirt',
                 logProcessing: {
@@ -331,7 +331,7 @@ const treeProperties = [
                 sapling: 'ars_nouveau:blue_archwood_sapling',
                 logs: ['ars_nouveau:blue_archwood_log'],
                 leaves: ['ars_nouveau:blue_archwood_leaves'],
-                fruits: [],
+                fruits: ['ars_nouveau:frostaya_pod'],
                 dimension: 'overworld',
                 substrate: 'dirt',
                 logProcessing: {
@@ -343,7 +343,7 @@ const treeProperties = [
                 sapling: 'ars_nouveau:purple_archwood_sapling',
                 logs: ['ars_nouveau:purple_archwood_log'],
                 leaves: ['ars_nouveau:purple_archwood_leaves'],
-                fruits: [],
+                fruits: ['ars_nouveau:bastion_pod'],
                 dimension: 'overworld',
                 substrate: 'dirt',
                 logProcessing: {
@@ -355,7 +355,7 @@ const treeProperties = [
                 sapling: 'ars_nouveau:green_archwood_sapling',
                 logs: ['ars_nouveau:green_archwood_log'],
                 leaves: ['ars_nouveau:green_archwood_leaves'],
-                fruits: [],
+                fruits: ['ars_nouveau:mendosteen_pod'],
                 dimension: 'overworld',
                 substrate: 'dirt',
                 logProcessing: {
@@ -367,6 +367,410 @@ const treeProperties = [
                 sapling: 'ars_nouveau:red_archwood_sapling',
                 logs: ['ars_nouveau:red_archwood_log'],
                 leaves: ['ars_nouveau:red_archwood_leaves'],
+                fruits: ['ars_nouveau:bombegranate_pod'],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'twilightforest:twilight_oak_sapling',
+                logs: ['twilightforest:twilight_oak_log', 'twilightforest:root', 'twilightforest:liveroot_block'],
+                leaves: ['twilightforest:twilight_oak_leaves'],
+                fruits: [],
+                dimension: 'twilightforest',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'twilightforest:canopy_sapling',
+                logs: ['twilightforest:canopy_log', 'twilightforest:root', 'twilightforest:liveroot_block'],
+                leaves: ['twilightforest:canopy_leaves'],
+                fruits: [],
+                dimension: 'twilightforest',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'twilightforest:mangrove_sapling',
+                logs: [
+                    'twilightforest:mangrove_log',
+                    'twilightforest:mangrove_root',
+                    'twilightforest:root',
+                    'twilightforest:liveroot_block'
+                ],
+                leaves: ['twilightforest:mangrove_leaves', 'minecraft:vine'],
+                fruits: [],
+                dimension: 'twilightforest',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'twilightforest:darkwood_sapling',
+                logs: ['twilightforest:dark_log', 'twilightforest:root', 'twilightforest:liveroot_block'],
+                leaves: ['twilightforest:dark_leaves'],
+                fruits: [],
+                dimension: 'twilightforest',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'twilightforest:hollow_oak_sapling',
+                logs: [
+                    'twilightforest:twilight_oak_log',
+                    'twilightforest:twilight_oak_wood',
+                    'twilightforest:root',
+                    'twilightforest:liveroot_block'
+                ],
+                leaves: ['twilightforest:twilight_oak_leaves'],
+                fruits: [],
+                dimension: 'twilightforest',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'twilightforest:rainbow_oak_sapling',
+                logs: ['twilightforest:twilight_oak_log', 'twilightforest:root', 'twilightforest:liveroot_block'],
+                leaves: ['twilightforest:rainbow_oak_leaves'],
+                fruits: [],
+                dimension: 'twilightforest',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'twilightforest:time_sapling',
+                logs: [
+                    'twilightforest:time_log',
+                    'twilightforest:time_wood',
+                    'twilightforest:root',
+                    'twilightforest:liveroot_block'
+                ],
+                leaves: ['twilightforest:time_leaves'],
+                fruits: [],
+                dimension: 'twilightforest',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'twilightforest:transformation_sapling',
+                logs: ['twilightforest:transformation_log', 'twilightforest:root', 'twilightforest:liveroot_block'],
+                leaves: ['twilightforest:transformation_leaves'],
+                fruits: [],
+                dimension: 'twilightforest',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'twilightforest:mining_sapling',
+                logs: [
+                    'twilightforest:mining_log',
+                    'twilightforest:mining_wood',
+                    'twilightforest:root',
+                    'twilightforest:liveroot_block'
+                ],
+                leaves: ['twilightforest:mining_leaves'],
+                fruits: [],
+                dimension: 'twilightforest',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'twilightforest:sorting_sapling',
+                logs: ['twilightforest:sorting_log', 'twilightforest:root', 'twilightforest:liveroot_block'],
+                leaves: ['twilightforest:sorting_leaves'],
+                fruits: [],
+                dimension: 'twilightforest',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:ether_sapling',
+                logs: ['byg:ether_log'],
+                leaves: ['byg:ether_leaves'],
+                fruits: ['byg:ether_bulb'],
+                dimension: 'end',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:ether_sapling',
+                logs: ['byg:ether_log'],
+                leaves: ['byg:ether_leaves'],
+                fruits: ['byg:ether_bulb'],
+                dimension: 'end',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:lament_sapling',
+                logs: ['byg:lament_log'],
+                leaves: ['byg:lament_leaves', 'minecraft:shroomlight'],
+                fruits: [],
+                dimension: 'nether',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:nightshade_sapling',
+                logs: ['byg:nightshade_log', 'byg:imbued_nightshade_log'],
+                leaves: ['byg:nightshade_leaves', 'byg:flowering_nightshade_leaves'],
+                fruits: [],
+                dimension: 'nether',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:withering_oak_sapling',
+                logs: ['byg:withering_oak_log', 'byg:imbued_withering_oak_log'],
+                leaves: ['byg:withering_oak_leaves', 'byg:arisian_bloom_branch'],
+                fruits: [],
+                dimension: 'nether',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:pink_cherry_sapling',
+                logs: ['byg:cherry_log'],
+                leaves: ['byg:pink_cherry_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:white_cherry_sapling',
+                logs: ['byg:cherry_log'],
+                leaves: ['byg:white_cherry_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:silver_maple_sapling',
+                logs: ['byg:maple_log'],
+                leaves: ['byg:silver_maple_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:red_maple_sapling',
+                logs: ['byg:maple_log'],
+                leaves: ['byg:red_maple_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:maple_sapling',
+                logs: ['byg:maple_log'],
+                leaves: ['byg:maple_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:brown_birch_sapling',
+                logs: ['minecraft:birch_log'],
+                leaves: ['byg:brown_birch_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:orange_birch_sapling',
+                logs: ['minecraft:birch_log'],
+                leaves: ['byg:orange_birch_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:red_birch_sapling',
+                logs: ['minecraft:birch_log'],
+                leaves: ['byg:red_birch_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:yellow_birch_sapling',
+                logs: ['minecraft:birch_log'],
+                leaves: ['byg:yellow_birch_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:brown_oak_sapling',
+                logs: ['minecraft:oak_log'],
+                leaves: ['byg:brown_oak_leaves'],
+                fruits: ['minecraft:apple'],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:orange_oak_sapling',
+                logs: ['minecraft:oak_log'],
+                leaves: ['byg:orange_oak_leaves'],
+                fruits: ['minecraft:apple'],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:red_oak_sapling',
+                logs: ['minecraft:oak_log'],
+                leaves: ['byg:red_oak_leaves'],
+                fruits: ['minecraft:apple'],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:orchard_sapling',
+                logs: ['minecraft:oak_log'],
+                leaves: ['byg:orchard_leaves', 'byg:flowering_orchard_leaves', 'byg:ripe_orchard_leaves'],
+                fruits: ['minecraft:apple'],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:blue_spruce_sapling',
+                logs: ['minecraft:spruce_log'],
+                leaves: ['byg:blue_spruce_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:orange_spruce_sapling',
+                logs: ['minecraft:spruce_log'],
+                leaves: ['byg:orange_spruce_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:red_spruce_sapling',
+                logs: ['minecraft:spruce_log'],
+                leaves: ['byg:red_spruce_leaves'],
+                fruits: [],
+                dimension: 'overworld',
+                substrate: 'dirt',
+                logProcessing: {
+                    sap: 'thermal:resin',
+                    rate: { living: 50, dead: 6 }
+                }
+            },
+            {
+                sapling: 'byg:yellow_spruce_sapling',
+                logs: ['minecraft:spruce_log'],
+                leaves: ['byg:yellow_spruce_leaves'],
                 fruits: [],
                 dimension: 'overworld',
                 substrate: 'dirt',
