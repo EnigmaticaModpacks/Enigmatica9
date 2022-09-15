@@ -11,6 +11,7 @@ var wood_variants_constructor = [
     'minecraft:spruce',
     'minecraft:warped',
     'minecraft:crimson',
+    'minecraft:mangrove',
     'byg:aspen',
     'byg:baobab',
     'byg:blue_enchanted',
@@ -46,7 +47,26 @@ var wood_variants_constructor = [
     'ars_nouveau:green_archwood',
     'ars_nouveau:purple_archwood',
     'ars_nouveau:blue_archwood',
-    'ars_elemental:yellow_archwood'
+    'ars_elemental:yellow_archwood',
+    'blue_skies:bluebright',
+    'blue_skies:starlit',
+    'blue_skies:frostbright',
+    'blue_skies:lunar',
+    'blue_skies:dusk',
+    'blue_skies:maple',
+    'blue_skies:cherry',
+    'quark:azalea',
+    'quark:blossom',
+    'twilightforest:twilight_oak',
+    'twilightforest:canopy',
+    'twilightforest:mangrove',
+    'twilightforest:dark',
+    'twilightforest:time',
+    'twilightforest:transformation',
+    'twilightforest:mining',
+    'twilightforest:sorting',
+    'hexerei:mahogany',
+    'hexerei:willow'
 ];
 
 const wood_properties = [];
