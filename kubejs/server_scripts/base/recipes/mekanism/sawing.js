@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
             // Log to Stripped
             {
                 input: { ingredient: [{ item: wood_property.log.block }] },
-                mainOutput: { count: 6, item: wood_property.log.stripped },
+                mainOutput: { count: 1, item: wood_property.log.stripped },
                 secondaryChance: 1.0,
                 secondaryOutput: { item: bark },
                 id: `${id_prefix}${wood_property.log.stripped.split(':')[1]}_from_${
@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
             // Wood to Stripped
             {
                 input: { ingredient: [{ item: wood_property.wood.block }] },
-                mainOutput: { count: 6, item: wood_property.wood.stripped },
+                mainOutput: { count: 1, item: wood_property.wood.stripped },
                 secondaryChance: 1.0,
                 secondaryOutput: { item: bark },
                 id: `${id_prefix}${wood_property.wood.stripped.split(':')[1]}_from_${
@@ -29,7 +29,7 @@ ServerEvents.recipes((event) => {
             },
             // Stripped to Plank
             {
-                input: { ingredient: [{ item: wood_property.log.stripped, item: wood_property.wood.stripped }] },
+                input: { ingredient: [{ item: wood_property.log.stripped }, { item: wood_property.wood.stripped }] },
                 mainOutput: { count: 6, item: wood_property.plank.block },
                 secondaryChance: 0.25,
                 secondaryOutput: { item: sawdust },
