@@ -1,5 +1,5 @@
 ServerEvents.tags('item', (event) => {
-    treeProperties.shrooms.forEach((shroom) => {
+    tree_properties.shrooms.forEach((shroom) => {
         event.add('forge:mushrooms', shroom.sapling);
     });
 });

@@ -1,7 +1,7 @@
 //priority: 1000
 
 //List of all items used to create dyes and the dyes they create
-const dyeSources = [
+const dye_sources = [
     {
         input: 'byg:allium_flower_bush',
         type: 'small',
@@ -789,9 +789,9 @@ const dyeSources = [
 ];
 
 colors.forEach((color) => {
-    var botaniaTypes = ['petal', 'mushroom'];
-    botaniaTypes.forEach((type) => {
-        dyeSources.push({
+    var botania_types = ['petal', 'mushroom'];
+    botania_types.forEach((type) => {
+        dye_sources.push({
             input: 'botania:' + color + '_' + type,
             type: 'petal',
             primary: 'minecraft:' + color + '_dye',

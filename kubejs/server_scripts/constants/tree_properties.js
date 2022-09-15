@@ -1,6 +1,6 @@
 //priority: 1000
 
-const treeProperties = {
+const tree_properties = {
     trees: [
         {
             sapling: 'minecraft:oak_sapling',
