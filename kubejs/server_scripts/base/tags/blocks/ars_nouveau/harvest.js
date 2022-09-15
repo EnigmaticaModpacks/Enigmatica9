@@ -1,8 +1,13 @@
 ServerEvents.tags('block', (event) => {
-    let foliage = ['byg:weeping_milkcap_mushroom_block', 'byg:green_mushroom_block'];
-    let stems = ['byg:white_mushroom_stem'];
-    //event.add('ars_nouveau:harvest/fellable', ['twilightforest:mazestone']);
+    treeProperties.trees.forEach((tree) => {
+        console.log(tree);
+        event.add('ars_nouveau:harvest/foliage', tree.foliage);
+        event.add('ars_nouveau:harvest/stems', tree.stems);
+    });
 
-    event.add('ars_nouveau:harvest/foliage', foliage);
-    event.add('ars_nouveau:harvest/stems', stems);
+    treeProperties.shrooms.forEach((shroom) => {
+        console.log(shroom);
+        event.add('ars_nouveau:harvest/foliage', shroom.foliage);
+        event.add('ars_nouveau:harvest/stems', shroom.stems);
+    });
 });
