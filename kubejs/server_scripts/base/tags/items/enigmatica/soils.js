@@ -32,7 +32,7 @@ ServerEvents.tags('item', (event) => {
             'byg:sythian_nylium',
             'byg:embur_nylium'
         ],
-        end_mushroom: ['byg:imparius_phylium', 'byg:ivis_phylium'],
+        end_mushroom: ['byg:imparius_phylium', 'byg:ivis_phylium', 'byg:bulbis_phycelium', 'byg:shulkren_phylium'],
         mushroom: [
             '#enigmatica:soils/nether_mushroom',
             '#enigmatica:soils/end_mushroom',

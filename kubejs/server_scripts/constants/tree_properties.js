@@ -1099,14 +1099,14 @@ const tree_properties = {
             stems: ['minecraft:crimson_stem'],
             foliage: ['minecraft:nether_wart_block', 'minecraft:shroomlight'],
             dimension: 'nether',
-            substrate: 'crimson_nylium'
+            substrate: 'nether_mushroom'
         },
         {
             sapling: 'minecraft:warped_fungus',
             stems: ['minecraft:warped_stem'],
             foliage: ['minecraft:warped_wart_block', 'minecraft:shroomlight'],
             dimension: 'nether',
-            substrate: 'warped_nylium'
+            substrate: 'nether_mushroom'
         },
         {
             sapling: 'quark:glow_shroom',
@@ -1134,42 +1134,42 @@ const tree_properties = {
             stems: ['minecraft:mushroom_stem'],
             foliage: ['byg:death_cap_mushroom_block'],
             dimension: 'overworld',
-            substrate: 'mushroom'
+            substrate: 'nether_mushroom'
         },
         {
             sapling: 'byg:soul_shroom',
             stems: ['byg:soul_shroom_stem'],
             foliage: ['byg:soul_shroom_block'],
             dimension: 'nether',
-            substrate: 'mushroom'
+            substrate: 'nether_mushroom'
         },
         {
             sapling: 'byg:sythian_fungus',
             stems: ['byg:sythian_stem'],
             foliage: ['byg:sythian_wart_block', 'minecraft:shroomlight'],
             dimension: 'sythian_nylium',
-            substrate: 'mushroom'
+            substrate: 'nether_mushroom'
         },
         {
             sapling: 'byg:embur_wart',
             stems: ['byg:embur_pedu'],
             foliage: ['byg:embur_gel_block', 'byg:embur_gel_vines', 'byg:pollen_block', 'byg:embur_gel_branch'],
             dimension: 'embur_nylium',
-            substrate: 'mushroom'
+            substrate: 'nether_mushroom'
         },
         {
             sapling: 'byg:purple_bulbis_oddity',
             stems: ['byg:bulbis_wood'],
             foliage: ['byg:purple_bulbis_shell', 'byg:purple_shroomlight'],
             dimension: 'end',
-            substrate: 'bulbis_phycelium'
+            substrate: 'end_mushroom'
         },
         {
             sapling: 'byg:bulbis_oddity',
             stems: ['byg:bulbis_wood'],
             foliage: ['byg:bulbis_shell', 'byg:purple_shroomlight'],
             dimension: 'end',
-            substrate: 'bulbis_phycelium'
+            substrate: 'end_mushroom'
         },
         {
             sapling: 'byg:fungal_imparius',
@@ -1180,14 +1180,14 @@ const tree_properties = {
                 'byg:fungal_imparius_filament'
             ],
             dimension: 'end',
-            substrate: 'imparius_phylium'
+            substrate: 'end_mushroom'
         },
         {
             sapling: 'byg:shulkren_fungus',
             stems: ['byg:white_mushroom_stem'],
             foliage: ['byg:shulkren_wart_block', 'byg:purple_shroomlight', 'byg:shulkren_vine'],
             dimension: 'end',
-            substrate: 'shulkren_phylium'
+            substrate: 'end_mushroom'
         },
         {
             sapling: 'blue_skies:snowcap_pinhead',
