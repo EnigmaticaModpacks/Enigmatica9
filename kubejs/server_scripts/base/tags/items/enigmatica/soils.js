@@ -3,7 +3,6 @@ ServerEvents.tags('item', (event) => {
         farmland: ['minecraft:farmland', 'farmersdelight:rich_soil_farmland'],
         grass: [
             'minecraft:grass_block',
-            'minecraft:moss_block',
             // 'botania:enchanted_soil',
             // 'botania:vivid_grass',
             // 'botania:scorched_grass',
@@ -22,9 +21,10 @@ ServerEvents.tags('item', (event) => {
             'minecraft:mud',
             'byg:peat'
         ],
+        moss: ['minecraft:moss_block'],
         sand: ['#forge:sand'],
-        nether: ['#forge:netherrack'],
-        end: ['#forge:end_stones'],
+        netherrack: ['#forge:netherrack'],
+        end_stone: ['#forge:end_stones'],
         soul_sand: ['minecraft:soul_sand', 'minecraft:soul_soil'],
         nether_mushroom: [
             'minecraft:warped_nylium',
