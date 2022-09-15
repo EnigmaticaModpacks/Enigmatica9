@@ -1,11 +1,11 @@
 ServerEvents.recipes((event) => {
-    const id_prefex = 'enigmatica:base/minecraft/shapeless/';
+    const id_prefix = 'enigmatica:base/minecraft/shapeless/';
 
     const recipes = [
         {
             output: 'minecraft:crafting_table',
             inputs: ['#forge:workbench'],
-            id: `${id_prefex}crafting_table`
+            id: `${id_prefix}crafting_table`
         }
     ];
 

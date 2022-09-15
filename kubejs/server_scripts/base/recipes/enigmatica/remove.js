@@ -9,7 +9,10 @@ ServerEvents.recipes((event) => {
         // }
         { id: /mekanism:enriching\/dye/ },
         { id: /mekanism:compat\/byg\/dye/ },
-        { id: /ars_nouveau:.*_dye_/ }
+        { id: /ars_nouveau:.*_dye_/ },
+        { id: /mekanism:compat\/byg\/sawing\/log/ },
+        { id: /mekanism:sawing\/log/ },
+        { id: /almostunified:u\/immersiveengineering\/sawmill\/.*_log/ }
     ];
 
     recipes.forEach((recipe) => {

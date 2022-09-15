@@ -293,20 +293,6 @@ const dye_sources = [
     },
     // Oh the Biome's You'll Go
     {
-        input: 'byg:cattail',
-        type: 'small',
-        primary: 'minecraft:brown_dye',
-        secondary: 'minecraft:brown_dye',
-        tertiary: 'minecraft:green_dye'
-    },
-    {
-        input: 'quark:cactus_paste',
-        type: 'small',
-        primary: 'minecraft:green_dye',
-        secondary: 'minecraft:green_dye',
-        tertiary: 'minecraft:green_dye'
-    },
-    {
         input: 'byg:oddity_bush',
         type: 'small',
         primary: 'minecraft:white_dye',
@@ -340,13 +326,6 @@ const dye_sources = [
         primary: 'minecraft:white_dye',
         secondary: 'minecraft:white_dye',
         tertiary: 'minecraft:yellow_dye'
-    },
-    {
-        input: 'byg:azalea',
-        type: 'large',
-        primary: 'minecraft:light_blue_dye',
-        secondary: 'minecraft:blue_dye',
-        tertiary: 'minecraft:white_dye'
     },
     {
         input: 'byg:begonia',
@@ -510,13 +489,6 @@ const dye_sources = [
         tertiary: 'minecraft:green_dye'
     },
     {
-        input: 'byg:lolipop_flower',
-        type: 'small',
-        primary: 'minecraft:yellow_dye',
-        secondary: 'minecraft:orange_dye',
-        tertiary: 'minecraft:green_dye'
-    },
-    {
         input: 'byg:magenta_amaranth',
         type: 'small',
         primary: 'minecraft:magenta_dye',
@@ -594,13 +566,6 @@ const dye_sources = [
         tertiary: 'minecraft:white_dye'
     },
     {
-        input: 'byg:pink_orchid',
-        type: 'small',
-        primary: 'minecraft:pink_dye',
-        secondary: 'minecraft:pink_dye',
-        tertiary: 'minecraft:red_dye'
-    },
-    {
         input: 'byg:prairie_grass',
         type: 'small',
         primary: 'minecraft:yellow_dye',
@@ -629,13 +594,6 @@ const dye_sources = [
         tertiary: 'minecraft:magenta_dye'
     },
     {
-        input: 'byg:purple_orchid',
-        type: 'small',
-        primary: 'minecraft:purple_dye',
-        secondary: 'minecraft:purple_dye',
-        tertiary: 'minecraft:magenta_dye'
-    },
-    {
         input: 'byg:purple_sage',
         type: 'small',
         primary: 'minecraft:purple_dye',
@@ -648,27 +606,6 @@ const dye_sources = [
         primary: 'minecraft:purple_dye',
         secondary: 'minecraft:purple_dye',
         tertiary: 'minecraft:lime_dye'
-    },
-    {
-        input: 'byg:red_cornflower',
-        type: 'small',
-        primary: 'minecraft:red_dye',
-        secondary: 'minecraft:red_dye',
-        tertiary: 'minecraft:pink_dye'
-    },
-    {
-        input: 'byg:red_orchid',
-        type: 'small',
-        primary: 'minecraft:red_dye',
-        secondary: 'minecraft:red_dye',
-        tertiary: 'minecraft:orange_dye'
-    },
-    {
-        input: 'byg:reeds',
-        type: 'small',
-        primary: 'minecraft:brown_dye',
-        secondary: 'minecraft:brown_dye',
-        tertiary: 'minecraft:gray_dye'
     },
     {
         input: 'byg:richea',
@@ -784,7 +721,7 @@ const dye_sources = [
     },
     // Blue Skies
     {
-        input: 'blue_skies:camelia',
+        input: 'blue_skies:camellia',
         type: 'small',
         primary: 'minecraft:pink_dye',
         secondary: 'minecraft:white_dye',
@@ -869,15 +806,15 @@ const dye_sources = [
     }
 ];
 
-colors.forEach((color) => {
-    var botania_types = ['petal', 'mushroom'];
-    botania_types.forEach((type) => {
-        dye_sources.push({
-            input: 'botania:' + color + '_' + type,
-            type: 'petal',
-            primary: 'minecraft:' + color + '_dye',
-            secondary: 'minecraft:' + color + '_dye',
-            tertiary: 'minecraft:' + color + '_dye'
-        });
-    });
-});
+// colors.forEach((color) => {
+//     var botania_types = ['petal', 'mushroom'];
+//     botania_types.forEach((type) => {
+//         dye_sources.push({
+//             input: 'botania:' + color + '_' + type,
+//             type: 'petal',
+//             primary: 'minecraft:' + color + '_dye',
+//             secondary: 'minecraft:' + color + '_dye',
+//             tertiary: 'minecraft:' + color + '_dye'
+//         });
+//     });
+// });
