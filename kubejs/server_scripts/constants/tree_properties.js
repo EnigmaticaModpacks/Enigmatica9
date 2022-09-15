@@ -1144,6 +1144,20 @@ const treeProperties = {
             substrate: 'mushroom'
         },
         {
+            sapling: 'byg:sythian_fungus',
+            stems: ['byg:sythian_stem'],
+            foliage: ['byg:sythian_wart_block', 'minecraft:shroomlight'],
+            dimension: 'sythian_nylium',
+            substrate: 'mushroom'
+        },
+        {
+            sapling: 'byg:embur_wart',
+            stems: ['byg:embur_pedu'],
+            foliage: ['byg:embur_gel_block', 'byg:embur_gel_vines', 'byg:pollen_block', 'byg:embur_gel_branch'],
+            dimension: 'embur_nylium',
+            substrate: 'mushroom'
+        },
+        {
             sapling: 'byg:purple_bulbis_oddity',
             stems: ['byg:bulbis_wood'],
             foliage: ['byg:purple_bulbis_shell', 'byg:purple_shroomlight'],
