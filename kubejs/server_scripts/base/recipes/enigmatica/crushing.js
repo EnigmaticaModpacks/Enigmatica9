@@ -32,7 +32,7 @@ ServerEvents.recipes((event) => {
             input: { item: source.input },
             experience: 0.5,
             duration: 20,
-            energy: 1000,
+            energy: 256,
             ignore_occultism_multiplier: true,
             id_suffix: `${source.primary.split(':')[1]}_from_${source.input.split(':')[1]}`
         });
