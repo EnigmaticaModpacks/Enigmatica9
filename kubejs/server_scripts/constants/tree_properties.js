@@ -1174,6 +1174,13 @@ const treeProperties = {
             foliage: ['byg:shulkren_wart_block', 'byg:purple_shroomlight', 'byg:shulkren_vine'],
             dimension: 'end',
             substrate: 'shulkren_phylium'
+        },
+        {
+            sapling: 'blue_skies:shulkren_fungus',
+            stems: ['blue_skies:snowcap_mushroom_stem'],
+            foliage: ['blue_skies:snowcap_mushroom_block'],
+            dimension: 'everbright',
+            substrate: 'mushroom'
         }
     ]
 };
