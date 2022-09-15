@@ -131,14 +131,14 @@ const dye_sources = [
     {
         input: 'byg:firecracker_flower_bush',
         type: 'small',
-        primary: 'minecraft:red_dye',
-        secondary: 'minecraft:pink_dye',
-        tertiary: 'minecraft:orange_dye'
+        primary: 'minecraft:pink_dye',
+        secondary: 'minecraft:orange_dye',
+        tertiary: 'minecraft:red_dye'
     },
     {
         input: 'byg:foxglove',
         type: 'large',
-        primary: 'minecraft:purple_dye',
+        primary: 'minecraft:cyan_dye',
         secondary: 'minecraft:cyan_dye',
         tertiary: 'minecraft:light_blue_dye'
     },
@@ -166,8 +166,8 @@ const dye_sources = [
     {
         input: 'byg:incan_lily',
         type: 'small',
-        primary: 'minecraft:red_dye',
-        secondary: 'minecraft:orange_dye',
+        primary: 'minecraft:orange_dye',
+        secondary: 'minecraft:magenta_dye',
         tertiary: 'minecraft:lime_dye'
     },
     {
@@ -390,8 +390,8 @@ const dye_sources = [
     {
         input: 'byg:tall_allium',
         type: 'large',
-        primary: 'minecraft:magenta_dye',
-        secondary: 'minecraft:purple_dye',
+        primary: 'minecraft:purple_dye',
+        secondary: 'minecraft:magenta_dye',
         tertiary: 'minecraft:pink_dye'
     },
     {
