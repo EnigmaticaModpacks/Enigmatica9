@@ -1123,14 +1123,14 @@ const treeProperties = {
             substrate: 'mushroom'
         },
         {
-            sapling: 'byg:weeping_milkcap_mushroom',
+            sapling: 'byg:weeping_milkcap',
             stems: ['minecraft:mushroom_stem'],
             foliage: ['byg:weeping_milkcap_mushroom_block'],
             dimension: 'overworld',
             substrate: 'mushroom'
         },
         {
-            sapling: 'byg:death_cap_mushroom',
+            sapling: 'byg:death_cap',
             stems: ['minecraft:mushroom_stem'],
             foliage: ['byg:death_cap_mushroom_block'],
             dimension: 'overworld',
@@ -1176,7 +1176,14 @@ const treeProperties = {
             substrate: 'shulkren_phylium'
         },
         {
-            sapling: 'blue_skies:shulkren_fungus',
+            sapling: 'blue_skies:snowcap_pinhead',
+            stems: ['blue_skies:snowcap_mushroom_stem'],
+            foliage: ['blue_skies:snowcap_mushroom_block'],
+            dimension: 'everbright',
+            substrate: 'mushroom'
+        },
+        {
+            sapling: 'blue_skies:snowcap_mushroom',
             stems: ['blue_skies:snowcap_mushroom_stem'],
             foliage: ['blue_skies:snowcap_mushroom_block'],
             dimension: 'everbright',
