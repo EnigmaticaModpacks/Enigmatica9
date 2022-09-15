@@ -16,8 +16,8 @@ ServerEvents.recipes((event) => {
 
     dye_sources.forEach((source) => {
         let count = 3,
-            secondaryChance = 0.5,
-            tertiaryChance = 0.25;
+            secondaryChance = 0.33,
+            tertiaryChance = 0.15;
 
         if (source.type == 'large') {
             count = count * 2;
@@ -27,13 +27,13 @@ ServerEvents.recipes((event) => {
 
         recipes.push({
             primary_output: { item: source.primary, count: count, chance: 1.0 },
-            secondary_output: { item: source.secondary, count: 1, chance: secondaryChance },
+            secondary_output: { item: source.secondary, count: 2, chance: secondaryChance },
             tertiary_output: { item: source.tertiary, count: 1, chance: tertiaryChance },
             input: { item: source.input },
             experience: 0.5,
             duration: 20,
             energy: 256,
-            ignore_occultism_multiplier: true,
+            ignore_occultism_multiplier: false,
             id_suffix: `${source.primary.split(':')[1]}_from_${source.input.split(':')[1]}`
         });
     });
@@ -64,13 +64,13 @@ ServerEvents.recipes((event) => {
         if (recipe.secondary_output) {
             immersiveengineering_secondaries.push({
                 chance: recipe.secondary_output.chance,
-                output: { item: recipe.secondary_output.item }
+                output: { item: recipe.secondary_output.item, count: recipe.secondary_output.count }
             });
         }
         if (recipe.tertiary_output) {
             immersiveengineering_secondaries.push({
                 chance: recipe.tertiary_output.chance,
-                output: { item: recipe.tertiary_output.item }
+                output: { item: recipe.tertiary_output.item, count: recipe.tertiary_output.count }
             });
         }
         event
