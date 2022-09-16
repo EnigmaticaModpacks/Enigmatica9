@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
 
     crop_types.forEach((type) => {
         let processing = crop_properties[type].crop_processing,
-            growth_ticks = Math.floor(800 * processing.growthModifier),
+            growth_ticks = 800 * processing.growth_modifier,
             primary_count = 2,
             secondary_count = 1;
 
@@ -30,13 +30,12 @@ ServerEvents.recipes((event) => {
             if (type.includes('_crops') && crop.seed !== 'minecraft:chorus_flower') {
                 results.push({ item: crop.seed, count: secondary_count });
             }
-
             recipes.push({
                 results: results,
                 input: { item: crop.seed },
                 render: crop.render,
                 soil: { tag: `enigmatica:soils/${crop.substrate}` },
-                time: growth_ticks,
+                time: Math.trunc(growth_ticks),
                 id: `${id_prefix}${crop.plant.split(':')[1]}`
             });
         });
