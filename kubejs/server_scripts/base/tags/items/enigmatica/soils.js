@@ -27,7 +27,8 @@ ServerEvents.tags('item', (event) => {
             'blue_skies:coarse_lunar_dirt',
             'blue_skies:lunar_dirt',
             'blue_skies:coarse_turquoise_dirt',
-            'blue_skies:turquoise_dirt'
+            'blue_skies:turquoise_dirt',
+            'farmersdelight:rich_soil'
         ],
         moss: ['minecraft:moss_block'],
         sand: ['#forge:sand'],
