@@ -12,7 +12,9 @@ ServerEvents.recipes((event) => {
         { id: /ars_nouveau:.*_dye_/ },
         { id: /mekanism:compat\/byg\/sawing\/log/ },
         { id: /mekanism:sawing\/log/ },
-        { id: /almostunified:u\/immersiveengineering\/sawmill\/.*_log/ }
+        { id: /almostunified:u\/immersiveengineering\/sawmill\/.*_log/ },
+        { id: /immersiveengineering:cloche/ },
+        { id: /farmersdelight:integration\/immersiveengineering\/cloche/ }
     ];
 
     recipes.forEach((recipe) => {

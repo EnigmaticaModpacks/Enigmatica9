@@ -210,7 +210,7 @@ crop_properties.canes.crops = [
         seed: 'byg:sythian_stalk_block',
         render: { type: 'stacking', block: 'byg:sythian_stalk_block' },
         plant: 'byg:sythian_stalk_block',
-        substrate: 'nether'
+        substrate: 'netherrack'
     }
 ];
 
@@ -603,18 +603,6 @@ crop_properties.grassy.crops = [
         substrate: 'netherrack'
     },
     {
-        seed: 'byg:short_beach_grass',
-        render: { type: 'generic', block: 'byg:short_beach_grass' },
-        plant: 'byg:short_beach_grass',
-        substrate: 'grass'
-    },
-    {
-        seed: 'byg:short_grass',
-        render: { type: 'generic', block: 'byg:short_grass' },
-        plant: 'byg:short_grass',
-        substrate: 'grass'
-    },
-    {
         seed: 'byg:shulkren_moss_blanket',
         render: { type: 'generic', block: 'byg:shulkren_moss_blanket' },
         plant: 'byg:shulkren_moss_blanket',
@@ -651,34 +639,10 @@ crop_properties.grassy.crops = [
         substrate: 'soul_sand'
     },
     {
-        seed: 'byg:weed_grass',
-        render: { type: 'generic', block: 'byg:weed_grass' },
-        plant: 'byg:weed_grass',
-        substrate: 'grass'
-    },
-    {
-        seed: 'byg:whaling_grass',
-        render: { type: 'generic', block: 'byg:whaling_grass' },
-        plant: 'byg:whaling_grass',
-        substrate: 'nether'
-    },
-    {
         seed: 'byg:white_cherry_foliage',
         render: { type: 'generic', block: 'byg:white_cherry_foliage' },
         plant: 'byg:white_cherry_foliage',
         substrate: 'dirt'
-    },
-    {
-        seed: 'byg:wilted_grass',
-        render: { type: 'generic', block: 'byg:wilted_grass' },
-        plant: 'byg:wilted_grass',
-        substrate: 'grass'
-    },
-    {
-        seed: 'byg:winter_grass',
-        render: { type: 'generic', block: 'byg:winter_grass' },
-        plant: 'byg:winter_grass',
-        substrate: 'grass'
     },
     {
         seed: 'byg:cattail_sprout',
@@ -728,105 +692,105 @@ crop_properties.mushrooms.crops = [
         render: { type: 'generic', block: 'minecraft:nether_wart' },
         plant: 'minecraft:nether_wart',
         substrate: 'soul_sand'
-    },
+    }
 
     // Botania
-    {
-        seed: 'botania:black_mushroom',
-        render: { type: 'generic', block: 'botania:black_mushroom' },
-        plant: 'botania:black_mushroom',
-        substrate: 'mushroom'
-    },
-    {
-        seed: 'botania:blue_mushroom',
-        render: { type: 'generic', block: 'botania:blue_mushroom' },
-        plant: 'botania:blue_mushroom',
-        substrate: 'mushroom'
-    },
-    {
-        seed: 'botania:brown_mushroom',
-        render: { type: 'generic', block: 'botania:brown_mushroom' },
-        plant: 'botania:brown_mushroom',
-        substrate: 'mushroom'
-    },
-    {
-        seed: 'botania:cyan_mushroom',
-        render: { type: 'generic', block: 'botania:cyan_mushroom' },
-        plant: 'botania:cyan_mushroom',
-        substrate: 'mushroom'
-    },
-    {
-        seed: 'botania:gray_mushroom',
-        render: { type: 'generic', block: 'botania:gray_mushroom' },
-        plant: 'botania:gray_mushroom',
-        substrate: 'mushroom'
-    },
-    {
-        seed: 'botania:green_mushroom',
-        render: { type: 'generic', block: 'botania:green_mushroom' },
-        plant: 'botania:green_mushroom',
-        substrate: 'mushroom'
-    },
-    {
-        seed: 'botania:light_blue_mushroom',
-        render: { type: 'generic', block: 'botania:light_blue_mushroom' },
-        plant: 'botania:light_blue_mushroom',
-        substrate: 'mushroom'
-    },
-    {
-        seed: 'botania:light_gray_mushroom',
-        render: { type: 'generic', block: 'botania:light_gray_mushroom' },
-        plant: 'botania:light_gray_mushroom',
-        substrate: 'mushroom'
-    },
-    {
-        seed: 'botania:lime_mushroom',
-        render: { type: 'generic', block: 'botania:lime_mushroom' },
-        plant: 'botania:lime_mushroom',
-        substrate: 'mushroom'
-    },
-    {
-        seed: 'botania:magenta_mushroom',
-        render: { type: 'generic', block: 'botania:magenta_mushroom' },
-        plant: 'botania:magenta_mushroom',
-        substrate: 'mushroom'
-    },
-    {
-        seed: 'botania:orange_mushroom',
-        render: { type: 'generic', block: 'botania:orange_mushroom' },
-        plant: 'botania:orange_mushroom',
-        substrate: 'mushroom'
-    },
-    {
-        seed: 'botania:pink_mushroom',
-        render: { type: 'generic', block: 'botania:pink_mushroom' },
-        plant: 'botania:pink_mushroom',
-        substrate: 'mushroom'
-    },
-    {
-        seed: 'botania:purple_mushroom',
-        render: { type: 'generic', block: 'botania:purple_mushroom' },
-        plant: 'botania:purple_mushroom',
-        substrate: 'mushroom'
-    },
-    {
-        seed: 'botania:red_mushroom',
-        render: { type: 'generic', block: 'botania:red_mushroom' },
-        plant: 'botania:red_mushroom',
-        substrate: 'mushroom'
-    },
-    {
-        seed: 'botania:white_mushroom',
-        render: { type: 'generic', block: 'botania:white_mushroom' },
-        plant: 'botania:white_mushroom',
-        substrate: 'mushroom'
-    },
-    {
-        seed: 'botania:yellow_mushroom',
-        render: { type: 'generic', block: 'botania:yellow_mushroom' },
-        plant: 'botania:yellow_mushroom',
-        substrate: 'mushroom'
-    }
+    // {
+    //     seed: 'botania:black_mushroom',
+    //     render: { type: 'generic', block: 'botania:black_mushroom' },
+    //     plant: 'botania:black_mushroom',
+    //     substrate: 'mushroom'
+    // },
+    // {
+    //     seed: 'botania:blue_mushroom',
+    //     render: { type: 'generic', block: 'botania:blue_mushroom' },
+    //     plant: 'botania:blue_mushroom',
+    //     substrate: 'mushroom'
+    // },
+    // {
+    //     seed: 'botania:brown_mushroom',
+    //     render: { type: 'generic', block: 'botania:brown_mushroom' },
+    //     plant: 'botania:brown_mushroom',
+    //     substrate: 'mushroom'
+    // },
+    // {
+    //     seed: 'botania:cyan_mushroom',
+    //     render: { type: 'generic', block: 'botania:cyan_mushroom' },
+    //     plant: 'botania:cyan_mushroom',
+    //     substrate: 'mushroom'
+    // },
+    // {
+    //     seed: 'botania:gray_mushroom',
+    //     render: { type: 'generic', block: 'botania:gray_mushroom' },
+    //     plant: 'botania:gray_mushroom',
+    //     substrate: 'mushroom'
+    // },
+    // {
+    //     seed: 'botania:green_mushroom',
+    //     render: { type: 'generic', block: 'botania:green_mushroom' },
+    //     plant: 'botania:green_mushroom',
+    //     substrate: 'mushroom'
+    // },
+    // {
+    //     seed: 'botania:light_blue_mushroom',
+    //     render: { type: 'generic', block: 'botania:light_blue_mushroom' },
+    //     plant: 'botania:light_blue_mushroom',
+    //     substrate: 'mushroom'
+    // },
+    // {
+    //     seed: 'botania:light_gray_mushroom',
+    //     render: { type: 'generic', block: 'botania:light_gray_mushroom' },
+    //     plant: 'botania:light_gray_mushroom',
+    //     substrate: 'mushroom'
+    // },
+    // {
+    //     seed: 'botania:lime_mushroom',
+    //     render: { type: 'generic', block: 'botania:lime_mushroom' },
+    //     plant: 'botania:lime_mushroom',
+    //     substrate: 'mushroom'
+    // },
+    // {
+    //     seed: 'botania:magenta_mushroom',
+    //     render: { type: 'generic', block: 'botania:magenta_mushroom' },
+    //     plant: 'botania:magenta_mushroom',
+    //     substrate: 'mushroom'
+    // },
+    // {
+    //     seed: 'botania:orange_mushroom',
+    //     render: { type: 'generic', block: 'botania:orange_mushroom' },
+    //     plant: 'botania:orange_mushroom',
+    //     substrate: 'mushroom'
+    // },
+    // {
+    //     seed: 'botania:pink_mushroom',
+    //     render: { type: 'generic', block: 'botania:pink_mushroom' },
+    //     plant: 'botania:pink_mushroom',
+    //     substrate: 'mushroom'
+    // },
+    // {
+    //     seed: 'botania:purple_mushroom',
+    //     render: { type: 'generic', block: 'botania:purple_mushroom' },
+    //     plant: 'botania:purple_mushroom',
+    //     substrate: 'mushroom'
+    // },
+    // {
+    //     seed: 'botania:red_mushroom',
+    //     render: { type: 'generic', block: 'botania:red_mushroom' },
+    //     plant: 'botania:red_mushroom',
+    //     substrate: 'mushroom'
+    // },
+    // {
+    //     seed: 'botania:white_mushroom',
+    //     render: { type: 'generic', block: 'botania:white_mushroom' },
+    //     plant: 'botania:white_mushroom',
+    //     substrate: 'mushroom'
+    // },
+    // {
+    //     seed: 'botania:yellow_mushroom',
+    //     render: { type: 'generic', block: 'botania:yellow_mushroom' },
+    //     plant: 'botania:yellow_mushroom',
+    //     substrate: 'mushroom'
+    // }
 ];
 crop_properties.shrubs.crops = [
     // Minecraft
@@ -842,12 +806,6 @@ crop_properties.shrubs.crops = [
         render: { type: 'generic', block: 'byg:blueberry_bush' },
         plant: 'byg:blueberries',
         substrate: 'dirt'
-    },
-    {
-        seed: 'byg:nether_bristle',
-        render: { type: 'generic', block: 'byg:nether_bristle' },
-        plant: 'byg:nether_bristle',
-        substrate: 'netherrack'
     },
     {
         seed: 'byg:oddity_bush',
@@ -918,6 +876,12 @@ crop_properties.vines.crops = [
         render: { type: 'generic', block: 'byg:imparius_vine' },
         plant: 'byg:imparius_vine',
         substrate: 'end_mushroom'
+    },
+    {
+        seed: 'byg:nether_bristle',
+        render: { type: 'generic', block: 'byg:nether_bristle' },
+        plant: 'byg:nether_bristle',
+        substrate: 'netherrack'
     }
 ];
 crop_properties.flowers.crops = [
@@ -1027,102 +991,102 @@ crop_properties.flowers.crops = [
     },
 
     // Botania
-    {
-        seed: 'botania:black_mystical_flower',
-        render: { type: 'generic', block: 'botania:black_mystical_flower' },
-        plant: 'botania:black_mystical_flower',
-        substrate: 'grass'
-    },
-    {
-        seed: 'botania:blue_mystical_flower',
-        render: { type: 'generic', block: 'botania:blue_mystical_flower' },
-        plant: 'botania:blue_mystical_flower',
-        substrate: 'grass'
-    },
-    {
-        seed: 'botania:brown_mystical_flower',
-        render: { type: 'generic', block: 'botania:brown_mystical_flower' },
-        plant: 'botania:brown_mystical_flower',
-        substrate: 'grass'
-    },
-    {
-        seed: 'botania:cyan_mystical_flower',
-        render: { type: 'generic', block: 'botania:cyan_mystical_flower' },
-        plant: 'botania:cyan_mystical_flower',
-        substrate: 'grass'
-    },
-    {
-        seed: 'botania:gray_mystical_flower',
-        render: { type: 'generic', block: 'botania:gray_mystical_flower' },
-        plant: 'botania:gray_mystical_flower',
-        substrate: 'grass'
-    },
-    {
-        seed: 'botania:green_mystical_flower',
-        render: { type: 'generic', block: 'botania:green_mystical_flower' },
-        plant: 'botania:green_mystical_flower',
-        substrate: 'grass'
-    },
-    {
-        seed: 'botania:light_blue_mystical_flower',
-        render: { type: 'generic', block: 'botania:light_blue_mystical_flower' },
-        plant: 'botania:light_blue_mystical_flower',
-        substrate: 'grass'
-    },
-    {
-        seed: 'botania:light_gray_mystical_flower',
-        render: { type: 'generic', block: 'botania:light_gray_mystical_flower' },
-        plant: 'botania:light_gray_mystical_flower',
-        substrate: 'grass'
-    },
-    {
-        seed: 'botania:lime_mystical_flower',
-        render: { type: 'generic', block: 'botania:lime_mystical_flower' },
-        plant: 'botania:lime_mystical_flower',
-        substrate: 'grass'
-    },
-    {
-        seed: 'botania:magenta_mystical_flower',
-        render: { type: 'generic', block: 'botania:magenta_mystical_flower' },
-        plant: 'botania:magenta_mystical_flower',
-        substrate: 'grass'
-    },
-    {
-        seed: 'botania:orange_mystical_flower',
-        render: { type: 'generic', block: 'botania:orange_mystical_flower' },
-        plant: 'botania:orange_mystical_flower',
-        substrate: 'grass'
-    },
-    {
-        seed: 'botania:pink_mystical_flower',
-        render: { type: 'generic', block: 'botania:pink_mystical_flower' },
-        plant: 'botania:pink_mystical_flower',
-        substrate: 'grass'
-    },
-    {
-        seed: 'botania:purple_mystical_flower',
-        render: { type: 'generic', block: 'botania:purple_mystical_flower' },
-        plant: 'botania:purple_mystical_flower',
-        substrate: 'grass'
-    },
-    {
-        seed: 'botania:red_mystical_flower',
-        render: { type: 'generic', block: 'botania:red_mystical_flower' },
-        plant: 'botania:red_mystical_flower',
-        substrate: 'grass'
-    },
-    {
-        seed: 'botania:white_mystical_flower',
-        render: { type: 'generic', block: 'botania:white_mystical_flower' },
-        plant: 'botania:white_mystical_flower',
-        substrate: 'grass'
-    },
-    {
-        seed: 'botania:yellow_mystical_flower',
-        render: { type: 'generic', block: 'botania:yellow_mystical_flower' },
-        plant: 'botania:yellow_mystical_flower',
-        substrate: 'grass'
-    },
+    // {
+    //     seed: 'botania:black_mystical_flower',
+    //     render: { type: 'generic', block: 'botania:black_mystical_flower' },
+    //     plant: 'botania:black_mystical_flower',
+    //     substrate: 'grass'
+    // },
+    // {
+    //     seed: 'botania:blue_mystical_flower',
+    //     render: { type: 'generic', block: 'botania:blue_mystical_flower' },
+    //     plant: 'botania:blue_mystical_flower',
+    //     substrate: 'grass'
+    // },
+    // {
+    //     seed: 'botania:brown_mystical_flower',
+    //     render: { type: 'generic', block: 'botania:brown_mystical_flower' },
+    //     plant: 'botania:brown_mystical_flower',
+    //     substrate: 'grass'
+    // },
+    // {
+    //     seed: 'botania:cyan_mystical_flower',
+    //     render: { type: 'generic', block: 'botania:cyan_mystical_flower' },
+    //     plant: 'botania:cyan_mystical_flower',
+    //     substrate: 'grass'
+    // },
+    // {
+    //     seed: 'botania:gray_mystical_flower',
+    //     render: { type: 'generic', block: 'botania:gray_mystical_flower' },
+    //     plant: 'botania:gray_mystical_flower',
+    //     substrate: 'grass'
+    // },
+    // {
+    //     seed: 'botania:green_mystical_flower',
+    //     render: { type: 'generic', block: 'botania:green_mystical_flower' },
+    //     plant: 'botania:green_mystical_flower',
+    //     substrate: 'grass'
+    // },
+    // {
+    //     seed: 'botania:light_blue_mystical_flower',
+    //     render: { type: 'generic', block: 'botania:light_blue_mystical_flower' },
+    //     plant: 'botania:light_blue_mystical_flower',
+    //     substrate: 'grass'
+    // },
+    // {
+    //     seed: 'botania:light_gray_mystical_flower',
+    //     render: { type: 'generic', block: 'botania:light_gray_mystical_flower' },
+    //     plant: 'botania:light_gray_mystical_flower',
+    //     substrate: 'grass'
+    // },
+    // {
+    //     seed: 'botania:lime_mystical_flower',
+    //     render: { type: 'generic', block: 'botania:lime_mystical_flower' },
+    //     plant: 'botania:lime_mystical_flower',
+    //     substrate: 'grass'
+    // },
+    // {
+    //     seed: 'botania:magenta_mystical_flower',
+    //     render: { type: 'generic', block: 'botania:magenta_mystical_flower' },
+    //     plant: 'botania:magenta_mystical_flower',
+    //     substrate: 'grass'
+    // },
+    // {
+    //     seed: 'botania:orange_mystical_flower',
+    //     render: { type: 'generic', block: 'botania:orange_mystical_flower' },
+    //     plant: 'botania:orange_mystical_flower',
+    //     substrate: 'grass'
+    // },
+    // {
+    //     seed: 'botania:pink_mystical_flower',
+    //     render: { type: 'generic', block: 'botania:pink_mystical_flower' },
+    //     plant: 'botania:pink_mystical_flower',
+    //     substrate: 'grass'
+    // },
+    // {
+    //     seed: 'botania:purple_mystical_flower',
+    //     render: { type: 'generic', block: 'botania:purple_mystical_flower' },
+    //     plant: 'botania:purple_mystical_flower',
+    //     substrate: 'grass'
+    // },
+    // {
+    //     seed: 'botania:red_mystical_flower',
+    //     render: { type: 'generic', block: 'botania:red_mystical_flower' },
+    //     plant: 'botania:red_mystical_flower',
+    //     substrate: 'grass'
+    // },
+    // {
+    //     seed: 'botania:white_mystical_flower',
+    //     render: { type: 'generic', block: 'botania:white_mystical_flower' },
+    //     plant: 'botania:white_mystical_flower',
+    //     substrate: 'grass'
+    // },
+    // {
+    //     seed: 'botania:yellow_mystical_flower',
+    //     render: { type: 'generic', block: 'botania:yellow_mystical_flower' },
+    //     plant: 'botania:yellow_mystical_flower',
+    //     substrate: 'grass'
+    // },
 
     // Byg
     {
@@ -1147,12 +1111,6 @@ crop_properties.flowers.crops = [
         seed: 'byg:angelica',
         render: { type: 'generic', block: 'byg:angelica' },
         plant: 'byg:angelica',
-        substrate: 'grass'
-    },
-    {
-        seed: 'byg:azalea',
-        render: { type: 'generic', block: 'byg:azalea' },
-        plant: 'byg:azalea',
         substrate: 'grass'
     },
     {
@@ -1288,12 +1246,6 @@ crop_properties.flowers.crops = [
         substrate: 'grass'
     },
     {
-        seed: 'byg:lolipop_flower',
-        render: { type: 'generic', block: 'byg:lolipop_flower' },
-        plant: 'byg:lolipop_flower',
-        substrate: 'grass'
-    },
-    {
         seed: 'byg:magenta_amaranth',
         render: { type: 'generic', block: 'byg:magenta_amaranth' },
         plant: 'byg:magenta_amaranth',
@@ -1354,12 +1306,6 @@ crop_properties.flowers.crops = [
         substrate: 'grass'
     },
     {
-        seed: 'byg:pink_orchid',
-        render: { type: 'generic', block: 'byg:pink_orchid' },
-        plant: 'byg:pink_orchid',
-        substrate: 'grass'
-    },
-    {
         seed: 'byg:protea_flower',
         render: { type: 'generic', block: 'byg:protea_flower' },
         plant: 'byg:protea_flower',
@@ -1372,12 +1318,6 @@ crop_properties.flowers.crops = [
         substrate: 'grass'
     },
     {
-        seed: 'byg:purple_orchid',
-        render: { type: 'generic', block: 'byg:purple_orchid' },
-        plant: 'byg:purple_orchid',
-        substrate: 'grass'
-    },
-    {
         seed: 'byg:purple_sage',
         render: { type: 'generic', block: 'byg:purple_sage' },
         plant: 'byg:purple_sage',
@@ -1387,18 +1327,6 @@ crop_properties.flowers.crops = [
         seed: 'byg:purple_tulip',
         render: { type: 'generic', block: 'byg:purple_tulip' },
         plant: 'byg:purple_tulip',
-        substrate: 'grass'
-    },
-    {
-        seed: 'byg:red_cornflower',
-        render: { type: 'generic', block: 'byg:red_cornflower' },
-        plant: 'byg:red_cornflower',
-        substrate: 'grass'
-    },
-    {
-        seed: 'byg:red_orchid',
-        render: { type: 'generic', block: 'byg:red_orchid' },
-        plant: 'byg:red_orchid',
         substrate: 'grass'
     },
     {
