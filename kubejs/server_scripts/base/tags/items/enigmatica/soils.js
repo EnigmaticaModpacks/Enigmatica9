@@ -10,7 +10,11 @@ ServerEvents.tags('item', (event) => {
             // 'botania:golden_grass',
             // 'botania:infused_grass',
             // 'botania:mutated_grass',
-            'byg:overgrown_dacite'
+            'byg:overgrown_dacite',
+            'blue_skies:lunar_cherry_grass_block',
+            'blue_skies:turquoise_cherry_grass_block',
+            'blue_skies:lunar_grass_block',
+            'blue_skies:turquoise_grass_block'
         ],
         dirt: [
             '#enigmatica:soils/grass',
@@ -19,7 +23,11 @@ ServerEvents.tags('item', (event) => {
             'minecraft:coarse_dirt',
             'minecraft:rooted_dirt',
             'minecraft:mud',
-            'byg:peat'
+            'byg:peat',
+            'blue_skies:coarse_lunar_dirt',
+            'blue_skies:lunar_dirt',
+            'blue_skies:coarse_turquoise_dirt',
+            'blue_skies:turquoise_dirt'
         ],
         moss: ['minecraft:moss_block'],
         sand: ['#forge:sand'],
@@ -30,7 +38,8 @@ ServerEvents.tags('item', (event) => {
             'minecraft:warped_nylium',
             'minecraft:crimson_nylium',
             'byg:sythian_nylium',
-            'byg:embur_nylium'
+            'byg:embur_nylium',
+            'byg:mycelium_netherrack'
         ],
         end_mushroom: ['byg:imparius_phylium', 'byg:ivis_phylium', 'byg:bulbis_phycelium', 'byg:shulkren_phylium'],
         mushroom: [

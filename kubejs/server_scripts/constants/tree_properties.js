@@ -1130,6 +1130,13 @@ const tree_properties = {
             substrate: 'mushroom'
         },
         {
+            sapling: 'byg:wood_blewit',
+            stems: ['byg:brown_mushroom_stem'],
+            foliage: ['byg:wood_blewit_mushroom_block'],
+            dimension: 'overworld',
+            substrate: 'mushroom'
+        },
+        {
             sapling: 'byg:death_cap',
             stems: ['minecraft:mushroom_stem'],
             foliage: ['byg:death_cap_mushroom_block'],

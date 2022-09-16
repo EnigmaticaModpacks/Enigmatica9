@@ -3,6 +3,7 @@ ServerEvents.recipes((event) => {
 
     const recipes = [];
 
+    // Cloche additions from crop_properties constant
     let crop_types = Object.keys(crop_properties);
 
     crop_types.forEach((type) => {
@@ -36,7 +37,7 @@ ServerEvents.recipes((event) => {
                 render: crop.render,
                 soil: { tag: `enigmatica:soils/${crop.substrate}` },
                 time: Math.trunc(growth_ticks),
-                id: `${id_prefix}${crop.plant.split(':')[1]}`
+                id: `${id_prefix}${crop.plant.replace(':', '_')}`
             });
         });
     });

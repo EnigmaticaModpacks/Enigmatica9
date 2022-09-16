@@ -803,6 +803,36 @@ const dye_sources = [
         primary: 'minecraft:blue_dye',
         secondary: 'minecraft:light_blue_dye',
         tertiary: 'minecraft:purple_dye'
+    },
+    {
+        input: 'blue_skies:chillweed',
+        type: 'small',
+        primary: 'minecraft:light_blue_dye',
+        secondary: 'minecraft:light_blue_dye',
+        tertiary: 'minecraft:light_gray_dye'
+    },
+    {
+        input: 'blue_skies:lucentroot',
+        type: 'small',
+        primary: 'minecraft:yellow_dye',
+        secondary: 'minecraft:light_gray_dye',
+        tertiary: 'minecraft:purple_dye'
+    },
+
+    // Twilight Forest
+    {
+        input: 'twilightforest:thorn_rose',
+        type: 'small',
+        primary: 'minecraft:red_dye',
+        secondary: 'minecraft:black_dye',
+        tertiary: 'minecraft:brown_dye'
+    },
+    {
+        input: 'twilightforest:huge_water_lily',
+        type: 'large',
+        primary: 'minecraft:magenta_dye',
+        secondary: 'minecraft:pink_dye',
+        tertiary: 'minecraft:yellow_dye'
     }
 ];
 
