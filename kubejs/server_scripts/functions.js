@@ -62,3 +62,14 @@ const unificationBlacklist = [
 const playerHas = (item, player) => {
     return player.inventory.find(item) != -1;
 };
+
+const enchantRandom = (item, level, treasure) => {
+    let EnchantHelper = java('net.minecraft.world.item.enchantment.EnchantmentHelper');
+    let RandomSource = java('net.minecraft.util.RandomSource');
+    return EnchantHelper.m_220292_(RandomSource.m_216327_(), Item.of(item), level, treasure);
+    // let helmet = EnchantHelper.enchantItem(RandomSource.create(), Item.of('minecraft:netherite_helmet'), 5, true);
+};
+
+const randomIntFromInterval = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+};
