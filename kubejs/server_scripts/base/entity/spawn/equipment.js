@@ -1,6 +1,7 @@
 EntityEvents.spawned((event) => {
     let entity = event.entity;
-    if (entity.type == 'minecraft:item') {
+
+    if (entity.type.includes(entity_blacklist)) {
         return;
     }
 
@@ -8,13 +9,41 @@ EntityEvents.spawned((event) => {
 
     if (Object.keys(armored_mobs).includes(mob_type)) {
         let mob = armored_mobs[mob_type];
-        if (Math.random() >= mob.equip_chance) {
-            let random_enchant_level = randomIntFromInterval(mob.enchant_level.min, mob.enchant_level.max);
+        // Randomly select a weighted equipment set for this mob from 'armored_mobs' constant.
+        // The 'default' set is used to leave the mob's equipment unchanged
+        let equipment_set = weightedEquipment(mob.equipment);
+        if (equipment_set.default) {
+            return;
+        }
 
-            entity.headArmorItem = enchantRandom(mob.equipment.head, random_enchant_level, false);
-            entity.chestArmorItem = enchantRandom(mob.equipment.chest, random_enchant_level, true);
-            entity.legsArmorItem = enchantRandom(mob.equipment.legs, random_enchant_level, true);
-            entity.feetArmorItem = enchantRandom(mob.equipment.feet, random_enchant_level, true);
+        // Sets the enchantment level to a random integer. 0 disables enchanting.
+        let enchant_level = randomInt(equipment_set.enchant.level.min, equipment_set.enchant.level.max);
+        if (Math.random() >= equipment_set.enchant.chance) {
+            enchant_level = 0;
+        }
+
+        // Enable treasure enchants, such as Mending to appear on the equipment.
+        // Default to false if not specified in 'armored_mobs' constant
+        let use_treasure_enchants = false;
+        if (equipment_set.enchant.treasure) {
+            use_treasure_enchants = equipment_set.enchant.treasure;
+        }
+
+        // Equip any equipment defined in 'armored_mobs' constant
+        if (equipment_set.head) {
+            entity.headArmorItem = randomEnchant(equipment_set.head, enchant_level, use_treasure_enchants);
+        }
+        if (equipment_set.chest) {
+            entity.chestArmorItem = randomEnchant(equipment_set.chest, enchant_level, use_treasure_enchants);
+        }
+        if (equipment_set.legs) {
+            entity.legsArmorItem = randomEnchant(equipment_set.legs, enchant_level, use_treasure_enchants);
+        }
+        if (equipment_set.feet) {
+            entity.feetArmorItem = randomEnchant(equipment_set.feet, enchant_level, use_treasure_enchants);
+        }
+        if (equipment_set.mainhand) {
+            entity.mainHandItem = randomEnchant(equipment_set.mainhand, enchant_level, use_treasure_enchants);
         }
     }
 });
