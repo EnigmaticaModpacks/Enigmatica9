@@ -1,11 +1,9 @@
 EntityEvents.spawned((event) => {
-    let entity = event.entity;
-
-    if (entity.type.includes(entity_blacklist)) {
+    if (event.entity.type.includes(entity_blacklist)) {
         return;
     }
 
-    let mob_type = entity.type.replace(':', '_');
+    let mob_type = event.entity.type.replace(':', '_');
 
     if (Object.keys(armored_mobs).includes(mob_type)) {
         let mob = armored_mobs[mob_type];
@@ -31,19 +29,42 @@ EntityEvents.spawned((event) => {
 
         // Equip any equipment defined in 'armored_mobs' constant
         if (equipment_set.head) {
-            entity.headArmorItem = randomEnchant(equipment_set.head, enchant_level, use_treasure_enchants);
+            event.entity.headArmorItem = randomEnchant(equipment_set.head, enchant_level, use_treasure_enchants);
         }
         if (equipment_set.chest) {
-            entity.chestArmorItem = randomEnchant(equipment_set.chest, enchant_level, use_treasure_enchants);
+            event.entity.chestArmorItem = randomEnchant(equipment_set.chest, enchant_level, use_treasure_enchants);
         }
         if (equipment_set.legs) {
-            entity.legsArmorItem = randomEnchant(equipment_set.legs, enchant_level, use_treasure_enchants);
+            event.entity.legsArmorItem = randomEnchant(equipment_set.legs, enchant_level, use_treasure_enchants);
         }
         if (equipment_set.feet) {
-            entity.feetArmorItem = randomEnchant(equipment_set.feet, enchant_level, use_treasure_enchants);
+            event.entity.feetArmorItem = randomEnchant(equipment_set.feet, enchant_level, use_treasure_enchants);
         }
         if (equipment_set.mainhand) {
-            entity.mainHandItem = randomEnchant(equipment_set.mainhand, enchant_level, use_treasure_enchants);
+            event.entity.mainHandItem = randomEnchant(equipment_set.mainhand, enchant_level, use_treasure_enchants);
+        }
+        if (equipment_set.offhand) {
+            event.entity.offHandItem = randomEnchant(equipment_set.offhand, enchant_level, use_treasure_enchants);
+        }
+        if (equipment_set.custom_name) {
+            let entity_data = event.entity.fullNBT;
+            entity_data.CustomName = `{ "text" : "${equipment_set.custom_name}" }`;
+            event.entity.fullNBT = entity_data;
+        }
+
+        // Optional Potion Effects
+        // add(MobEffect mobEffect, int duration, int amplifier, boolean ambient, boolean showParticles)
+        if (equipment_set.effects)
+            equipment_set.effects.forEach((effect) => {
+                event.entity.potionEffects.add(effect.type, 9999999, effect.amplifier - 1, false, false);
+            });
+        if (equipment_set.max_health) {
+            event.entity.maxHealth = equipment_set.max_health;
+            if (event.entity.isUndead) {
+                event.entity.potionEffects.add('minecraft:instant_damage', 1, 500, false, false);
+            } else {
+                event.entity.potionEffects.add('minecraft:instant_health', 1, 500, false, false);
+            }
         }
     }
 });
