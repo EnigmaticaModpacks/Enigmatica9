@@ -1474,7 +1474,6 @@
 			y: -14.0d
 			subtitle: "And With Strange Aeons, Even Death May Die"
 			description: ["Forged in ages past in the deepest depths. Neptunium armor grants it's wearer a taste of the unimaginable power of the Abyssal Depths."]
-			dependencies: ["00000000000004B3"]
 			id: "000000000000047E"
 			tasks: [
 				{
@@ -1544,7 +1543,6 @@
 			y: -14.0d
 			subtitle: "Dig the Water"
 			description: ["Neptunium Tools offer many benefits to those who spend most of their time under water. "]
-			dependencies: ["00000000000004B3"]
 			id: "0000000000000480"
 			tasks: [{
 				id: "0000000000000481"

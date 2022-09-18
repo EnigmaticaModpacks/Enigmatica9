@@ -5,6 +5,7 @@
 	filename: "integrated_dynamics"
 	title: "Integrated Dynamics"
 	icon: "integrateddynamics:crystalized_menril_chunk"
+	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [

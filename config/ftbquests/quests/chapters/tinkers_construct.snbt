@@ -9,30 +9,30 @@
 		Count: 1b
 		tag: {
 			tic_multipliers: {
-				"tconstruct:mining_speed": 0.3f
 				"tconstruct:attack_damage": 1.25f
 				"tconstruct:durability": 5.0f
+				"tconstruct:mining_speed": 0.3f
 			}
 			tic_stats: {
 				"tconstruct:attack_speed": 0.85f
-				"tconstruct:mining_speed": 1.35f
 				"tconstruct:attack_damage": 4.6875f
-				"tconstruct:harvest_tier": "minecraft:netherite"
 				"tconstruct:durability": 2440.0f
+				"tconstruct:mining_speed": 1.35f
+				"tconstruct:harvest_tier": "minecraft:netherite"
 			}
 			tic_broken: 0b
 			tic_modifiers: [
 				{
+					level: 1s
 					name: "tconstruct:cultivated"
-					level: 1s
 				}
 				{
-					name: "tconstruct:piercing"
 					level: 2s
+					name: "tconstruct:piercing"
 				}
 				{
-					name: "tconstruct:momentum"
 					level: 1s
+					name: "tconstruct:momentum"
 				}
 			]
 			HideFlags: 3
@@ -49,6 +49,7 @@
 			}
 		}
 	}
+	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [

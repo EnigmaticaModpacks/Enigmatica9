@@ -1,10 +1,11 @@
 {
 	id: "000000000000016E"
 	group: "72A9465344128AF9"
-	order_index: 6
+	order_index: 5
 	filename: "powah"
 	title: "Powah!"
 	icon: "powah:dielectric_casing"
+	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [

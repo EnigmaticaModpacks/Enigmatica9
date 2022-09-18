@@ -964,7 +964,13 @@
 			tasks: [{
 				id: "0AD6FC05A8659F5D"
 				type: "item"
-				item: "ars_nouveau:potion_flask"
+				item: {
+					id: "ars_nouveau:potion_flask"
+					Count: 1b
+					tag: {
+						Damage: 8
+					}
+				}
 			}]
 			rewards: [{
 				id: "13A4D5D0FB6AAF30"
@@ -1361,6 +1367,7 @@
 								Id: -108b
 								Amplifier: 0b
 							}]
+							Damage: 8
 							Potion: "ars_nouveau:mana_regen_potion_long"
 						}
 					}
