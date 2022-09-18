@@ -11,7 +11,7 @@ const armored_mobs = {
                             { type: 'ars_nouveau:shielding', amplifier: 2 },
                             { type: 'minecraft:strength', amplifier: 2 },
                             { type: 'minecraft:resistance', amplifier: 2 },
-                            { type: 'minecraft:regeneration', amplifier: 2 }
+                            { type: 'minecraft:regeneration', amplifier: 1 }
                         ],
                         max_health: 200
                     }
