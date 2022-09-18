@@ -37,6 +37,81 @@ const armored_mobs = {
                 }
             ]
         },
+        evoker: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        effects: [{ type: 'ars_nouveau:shielding', amplifier: 2 }],
+                        max_health: 30,
+                        enchant: {
+                            chance: 0.5,
+                            level: { min: 10, max: 20 },
+                            treasure: false
+                        },
+                        chest: 'hexerei:witch_chestplate',
+                        feet: 'hexerei:witch_boots'
+                    }
+                }
+            ]
+        },
+        vex: {
+            equipment: [
+                {
+                    weight: 50,
+                    set: { default: true }
+                },
+                {
+                    weight: 50,
+                    set: {
+                        enchant: {
+                            chance: 0.5,
+                            level: { min: 10, max: 20 },
+                            treasure: false
+                        },
+                        mainhand: 'twilightforest:glass_sword'
+                    }
+                }
+            ]
+        },
+        vindicator: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        max_health: 30,
+                        enchant: {
+                            chance: 1.0,
+                            level: { min: 15, max: 20 },
+                            treasure: false
+                        },
+                        chest: 'minecraft:leather_chestplate',
+                        legs: 'minecraft:leather_leggings',
+                        feet: 'minecraft:leather_boots',
+                        mainhand: 'twilightforest:knightmetal_axe'
+                    }
+                }
+            ]
+        },
+        pillager: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        max_health: 30,
+                        enchant: {
+                            chance: 1.0,
+                            level: { min: 15, max: 20 },
+                            treasure: false
+                        },
+                        chest: 'minecraft:leather_chestplate',
+                        legs: 'minecraft:leather_leggings',
+                        feet: 'minecraft:leather_boots',
+                        mainhand: 'minecraft:crossbow'
+                    }
+                }
+            ]
+        },
         piglin: {
             equipment: [
                 {
