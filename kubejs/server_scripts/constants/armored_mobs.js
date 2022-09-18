@@ -2,6 +2,22 @@
 
 const armored_mobs = {
     minecraft: {
+        iron_golem: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        effects: [
+                            { type: 'ars_nouveau:shielding', amplifier: 2 },
+                            { type: 'minecraft:strength', amplifier: 2 },
+                            { type: 'minecraft:resistance', amplifier: 2 },
+                            { type: 'minecraft:regeneration', amplifier: 2 }
+                        ],
+                        max_health: 200
+                    }
+                }
+            ]
+        },
         witch: {
             equipment: [
                 {
