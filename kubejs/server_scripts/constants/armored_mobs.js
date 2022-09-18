@@ -1,7 +1,5 @@
 //priority: 1000
 
-const entity_blacklist = ['minecraft:item', 'minecraft:experience_orb', 'minecraft:player'];
-
 const armored_mobs = {
     minecraft: {
         witch: {
