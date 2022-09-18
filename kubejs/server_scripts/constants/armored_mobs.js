@@ -97,7 +97,8 @@ const armored_mobs = {
                     effects: [
                         { type: 'minecraft:strength', amplifier: 3 },
                         { type: 'minecraft:resistance', amplifier: 2 },
-                        { type: 'minecraft:regeneration', amplifier: 2 }
+                        { type: 'minecraft:absorption', amplifier: 2 },
+                        { type: 'ars_nouveau:shielding', amplifier: 2 }
                     ],
                     custom_name: 'Archdruid',
                     enchant: {
