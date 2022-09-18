@@ -3,28 +3,29 @@ EntityEvents.spawned((event) => {
         return;
     }
 
-    let mob_type = event.entity.type.replace(':', '_');
+    let mob = event.entity.type.split(':');
 
-    if (Object.keys(armored_mobs).includes(mob_type)) {
-        let mob = armored_mobs[mob_type];
+    if (Object.keys(armored_mobs[mob[0]]).includes(mob[1])) {
         // Randomly select a weighted equipment set for this mob from 'armored_mobs' constant.
         // The 'default' set is used to leave the mob's equipment unchanged
-        let equipment_set = weightedEquipment(mob.equipment);
+        let equipment_set = weightedEquipment(armored_mobs[mob[0]][mob[1]].equipment);
         if (equipment_set.default) {
             return;
         }
 
-        // Sets the enchantment level to a random integer. 0 disables enchanting.
-        let enchant_level = randomInt(equipment_set.enchant.level.min, equipment_set.enchant.level.max);
-        if (Math.random() >= equipment_set.enchant.chance) {
-            enchant_level = 0;
-        }
-
-        // Enable treasure enchants, such as Mending to appear on the equipment.
-        // Default to false if not specified in 'armored_mobs' constant
-        let use_treasure_enchants = false;
-        if (equipment_set.enchant.treasure) {
-            use_treasure_enchants = equipment_set.enchant.treasure;
+        // Enchantment handling
+        let enchant_level = 0,
+            use_treasure_enchants = false;
+        if (equipment_set.enchant) {
+            // Sets the enchantment level to a random integer. 0 disables enchanting.
+            if (Math.random() < equipment_set.enchant.chance) {
+                enchant_level = randomInt(equipment_set.enchant.level.min, equipment_set.enchant.level.max);
+            }
+            // Enable treasure enchants, such as Mending, to appear on the equipment.
+            // Default to false if not specified in 'armored_mobs' constant
+            if (equipment_set.enchant.treasure) {
+                use_treasure_enchants = equipment_set.enchant.treasure;
+            }
         }
 
         // Equip any equipment defined in 'armored_mobs' constant
