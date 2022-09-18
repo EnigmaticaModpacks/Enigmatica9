@@ -60,7 +60,6 @@ EntityEvents.spawned((event) => {
             });
         if (equipment_set.max_health) {
             event.entity.maxHealth = equipment_set.max_health;
-            console.log(event.entity.isUndead());
             if (event.entity.isUndead()) {
                 event.entity.potionEffects.add('minecraft:instant_damage', 1, 500, false, false);
             } else {
