@@ -8,6 +8,7 @@ const armored_mobs = {
             {
                 weight: 100,
                 set: {
+                    effects: [{ type: 'ars_nouveau:shielding', amplifier: 2 }],
                     max_health: 30,
                     enchant: {
                         chance: 0.5,
@@ -17,6 +18,57 @@ const armored_mobs = {
                     head: 'hexerei:witch_helmet',
                     chest: 'hexerei:witch_chestplate',
                     feet: 'hexerei:witch_boots'
+                }
+            }
+        ]
+    },
+    minecraft_piglin: {
+        equipment: [
+            {
+                weight: 50,
+                set: {
+                    max_health: 30,
+                    enchant: {
+                        chance: 0.5,
+                        level: { min: 20, max: 25 },
+                        treasure: false
+                    },
+                    chest: 'minecraft:golden_chestplate',
+                    mainhand: 'twilightforest:gold_minotaur_axe'
+                }
+            },
+            {
+                weight: 50,
+                set: {
+                    max_health: 30,
+                    enchant: {
+                        chance: 0.5,
+                        level: { min: 20, max: 25 },
+                        treasure: false
+                    },
+                    chest: 'minecraft:golden_chestplate',
+                    mainhand: 'minecraft:crossbow'
+                }
+            }
+        ]
+    },
+    minecraft_piglin_brute: {
+        equipment: [
+            {
+                weight: 100,
+                set: {
+                    effects: [{ type: 'minecraft:strength', amplifier: 3 }],
+                    max_health: 50,
+                    enchant: {
+                        chance: 1.0,
+                        level: { min: 20, max: 25 },
+                        treasure: false
+                    },
+                    head: 'minecraft:golden_helmet',
+                    chest: 'minecraft:golden_chestplate',
+                    legs: 'minecraft:golden_leggings',
+                    feet: 'minecraft:golden_boots',
+                    mainhand: 'twilightforest:gold_minotaur_axe'
                 }
             }
         ]
