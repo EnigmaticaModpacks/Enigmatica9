@@ -295,5 +295,26 @@ const armored_mobs = {
                 }
             ]
         }
+    },
+    ars_nouveau: {
+        ally_vex: {
+            equipment: [
+                {
+                    weight: 50,
+                    set: { default: true }
+                },
+                {
+                    weight: 50,
+                    set: {
+                        enchant: {
+                            chance: 1.0,
+                            level: { min: 10, max: 20 },
+                            treasure: false
+                        },
+                        mainhand: 'twilightforest:glass_sword'
+                    }
+                }
+            ]
+        }
     }
 };
