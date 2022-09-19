@@ -1,20 +1,20 @@
 //priority: 1004
-// setMode = (player) => {
-//     console.log('setting mode for player: ' + player);
-//     if (global.packmode == 'expert') {
-//         player.data.ftbquests.complete('0000000000000FEB');
-//     } else {
-//         player.data.ftbquests.reset('0000000000000FEB');
-//     }
-// };
+const setMode = (player) => {
+    console.log('setting mode for player: ' + player);
+    if (global.packmode == 'expert') {
+        // player.data.ftbquests.complete('0000000000000FEB');
+    } else {
+        // player.data.ftbquests.reset('0000000000000FEB');
+    }
+};
 
-// onEvent('server.datapack.high_priority', (event) => {
-//     if (event.server) {
-//         event.server.players.forEach((player) => {
-//             setMode(player);
-//         });
-//     }
-// });
+ServerEvents.highPriorityData((event) => {
+    if (event.server) {
+        event.server.players.forEach((player) => {
+            setMode(player);
+        });
+    }
+});
 
 const defaultConfig = {
     mode: 'normal',
