@@ -3,12 +3,14 @@ EntityEvents.spawned((event) => {
         return;
     }
 
-    let mob = event.entity.type.split(':');
-    if (Object.keys(armored_mobs).includes(mob[0])) {
-        if (Object.keys(armored_mobs[mob[0]]).includes(mob[1])) {
+    let mob_type = event.entity.type.split(':')[1];
+    let mod_id = event.entity.type.split(':')[0];
+
+    if (Object.keys(armored_mobs).includes(mod_id)) {
+        if (Object.keys(armored_mobs[mod_id]).includes(mob_type)) {
             // Randomly select a weighted equipment set for this mob from 'armored_mobs' constant.
             // The 'default' set is used to leave the mob's equipment unchanged
-            let equipment_set = weightedEquipment(armored_mobs[mob[0]][mob[1]].equipment);
+            let equipment_set = weightedEquipment(armored_mobs[mod_id][mob_type].equipment);
             if (equipment_set.default) {
                 return;
             }
