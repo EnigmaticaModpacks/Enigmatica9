@@ -22,11 +22,19 @@
 		# 
 		#-----------------------------------------------------
 		#
-		# Chance of a Bee spawning in Bumblezone or from Honeycomb Brood Blocks being replaced by Pokecube's bee pokemon.
+		# Chance of a Bee spawning from Honeycomb Brood Blocks being replaced by Pokecube's bee pokemon.
 		# 0 is no PC's mobs and 1 is max PC's mobs.
 		#
 		#Range: 0.0 ~ 1.0
 		spawnrateOfPokecubeBeePokemon = 0.02
+		# 
+		#-----------------------------------------------------
+		#
+		# Pokecube's bee-like pokemon that spawn in The Bumblezone will get
+		# Protection of the Hive effect. Attacking these pokemon in bumblezone will
+		# give you Wrath of the Hive effect and swarmed of angry bees.
+		#
+		beePokemonGetsProtectionEffect = true
 
 	["Mod Compatibility Options"."Productive Bees Options"]
 		# 
