@@ -4,7 +4,7 @@
 const blueSkiesMetals = ['falsite', 'ventium', 'horizonite'];
 
 // Properties for Metal processing
-const metalProperties = {
+const metal_properties = {
     iron: {
         meltingPoint: 800,
         oreProcessing: {

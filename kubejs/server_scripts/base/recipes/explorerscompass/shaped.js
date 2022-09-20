@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    const id_prefex = 'enigmatica:base/explorerscompass/shaped/';
+    const id_prefix = 'enigmatica:base/explorerscompass/shaped/';
 
     const recipes = [
         {

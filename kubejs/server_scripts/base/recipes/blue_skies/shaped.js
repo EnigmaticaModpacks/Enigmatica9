@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    const id_prefex = 'enigmatica:base/blue_skies/shaped/';
+    const id_prefix = 'enigmatica:base/blue_skies/shaped/';
 
     const recipes = [
         {
@@ -23,7 +23,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'blue_skies:ventium_shears',
-            pattern: ['A  ', ' A '],
+            pattern: ['A ', ' A'],
             key: {
                 A: '#forge:ingots/ventium'
             },

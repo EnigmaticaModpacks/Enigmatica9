@@ -62,3 +62,36 @@ const unificationBlacklist = [
 const playerHas = (item, player) => {
     return player.inventory.find(item) != -1;
 };
+
+const randomEnchant = (item, level, treasure) => {
+    if (level == 0) {
+        return Item.of(item);
+    }
+    let EnchantHelper = java('net.minecraft.world.item.enchantment.EnchantmentHelper');
+    let RandomSource = java('net.minecraft.util.RandomSource');
+    return EnchantHelper.m_220292_(RandomSource.m_216327_(), Item.of(item), level, treasure);
+    // let helmet = EnchantHelper.enchantItem(RandomSource.create(), Item.of('minecraft:netherite_helmet'), 5, true);
+};
+
+const randomInt = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+};
+
+function weightedEquipment(options) {
+    let i;
+    let weights = [];
+
+    for (i = 0; i < options.length; i++) {
+        weights[i] = options[i].weight + (weights[i - 1] || 0);
+    }
+
+    let random = Math.random() * weights[weights.length - 1];
+
+    for (i = 0; i < weights.length; i++) {
+        if (weights[i] > random) {
+            break;
+        }
+    }
+
+    return options[i].set;
+}
