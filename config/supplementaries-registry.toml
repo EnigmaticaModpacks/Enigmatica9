@@ -85,6 +85,8 @@
 	sugar_cube = true
 	crystal_display = true
 	lapis_bricks = true
+	relayer = true
+	candle_holder = true
 
 [items]
 	flute = true

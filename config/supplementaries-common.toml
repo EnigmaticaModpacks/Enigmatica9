@@ -139,6 +139,9 @@
 	[blocks.blackboard]
 		#Enable to draw directly on a blackboard using any dye. Gui still only works in black and white
 		colored_blackboard = false
+		#Interaction mode for blackboards
+		#Allowed Values: BOTH, GUI, MANUAL
+		interaction_mode = "BOTH"
 
 	[blocks.timber_frame]
 		#Replace a timber frame with wattle and daub block when daub is placed in it

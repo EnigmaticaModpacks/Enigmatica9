@@ -68,7 +68,7 @@ skull_candles = false
 	#If you want to disable the xp cost for repairing and recrafting, see the below option.
 	disableUncraftingXpCost = false
 	#Setting this to true will make it so you dont have to pay XP to repair and recraft stuff in the uncrafting table. This wont affect uncrafting cost.
-	#If youre confused about what repairing and recrafting are, you can read about them here: http://benimatic.com/tfwiki/index.php?title=Uncrafting_Table
+	#If you're confused about what repairing and recrafting are, you can read about them here: http://benimatic.com/tfwiki/index.php?title=Uncrafting_Table
 	#If you want to disable the xp cost for uncrafting, see the above option.
 	disableRepairingXpCost = false
 	#If true, this will invert the above uncrafting recipe list from a blacklist to a whitelist.
