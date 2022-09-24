@@ -1,3 +1,4 @@
+//priority: 900
 StartupEvents.registry('item', (event) => {
     const items = [
         'common_lootbox',
