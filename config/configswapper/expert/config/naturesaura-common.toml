@@ -16,10 +16,10 @@
 	oreExceptions = []
 	#Additional projectile types that are allowed to be consumed by the projectile generator. Each entry needs to be formatted as entity_registry_name->aura_amount
 	additionalProjectiles = [
-		"ars_nouveau:spell_proj->500",
-		"ars_nouveau:orbit->833",
-		"ars_elemental:homing_projectile->2000",
-		"ars_elemental:curved_projectile->500",
+		"ars_nouveau:spell_proj->100",
+		"ars_nouveau:orbit->1666",
+		"ars_elemental:homing_projectile->4000",
+		"ars_elemental:curved_projectile->100",
 		"minecraft:egg->0",
 		"minecraft:snowball->0",
 		"minecraft:small_fireball->0",
@@ -34,7 +34,7 @@
 	#The amount of blocks that can be between two Aura Field Creators for them to be connectable and work together
 	fieldCreatorRange = 24
 	#The Aura to RF ratio used by the RF converter, read as aura*ratio = rf
-	auraToRFRatio = 0.1
+	auraToRFRatio = 0.05
 	#The maximum amount of animals that can be around the powder of fertility before it stops working
 	maxAnimalsAroundPowder = 200
 
