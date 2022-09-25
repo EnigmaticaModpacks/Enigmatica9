@@ -1,12 +1,16 @@
 JEIEvents.hideItems((event) => {
-    jei.base.items.hidden.forEach((hiddenItem) => {
+    if (global.isExpertMode == false) {
+        return;
+    }
+    jei.expert.items.hidden.forEach((hiddenItem) => {
         if (!Item.of(hiddenItem).isEmpty()) {
             event.hide(hiddenItem);
         }
     });
 
-    jei.base.items.disabled.forEach((disabledItem) => {
+    jei.expert.items.disabled.forEach((disabledItem) => {
         if (!Item.of(disabledItem).isEmpty()) {
+            console.log(disabledItem);
             event.hide(disabledItem);
         }
     });

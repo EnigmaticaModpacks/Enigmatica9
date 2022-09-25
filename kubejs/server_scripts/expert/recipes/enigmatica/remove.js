@@ -10,7 +10,8 @@ ServerEvents.recipes((event) => {
         //     mod: 'sample',
         //     id: 'sample'
         // }
-        { id: /immersiveengineering:blastfurnace\/fuel_charcoal/ }
+        { id: /immersiveengineering:blastfurnace\/fuel_charcoal/ },
+        { id: 'naturesaura:tree_ritual/ore_spawn_powder' }
     ];
 
     recipes.forEach((recipe) => {

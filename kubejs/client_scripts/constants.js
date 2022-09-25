@@ -1,4 +1,4 @@
-//priority: 1000
+//priority: 900
 
 // Items added here will get recipes for Pedestals & Cobblegen Randomizer cobblegens.
 const generatableCobblestone = [
@@ -56,8 +56,22 @@ const generatableStone = [
 ];
 const generatableBasalt = [];
 
-const itemsToHide = [];
+const jei = {
+    base: { items: { hidden: [], disables: [] }, categories: { hidden: [] } },
+    normal: { items: { hidden: [], disables: [] }, categories: { hidden: [] } },
+    expert: { items: { hidden: [], disables: [] }, categories: { hidden: [] } }
+};
+// Base
+jei.base.items.disabled = ['twilightforest:uncrafting_table'];
+jei.base.items.hidden = [];
+jei.base.categories.hidden = ['twilightforest:uncrafting'];
 
-const disabledItems = ['twilightforest:uncrafting_table'];
+// Normal
+jei.normal.items.disabled = [];
+jei.normal.items.hidden = [];
+jei.normal.categories.hidden = [];
 
-const categoriesToHide = ['twilightforest:uncrafting'];
+// Expert
+jei.expert.items.disabled = [Item.of('naturesaura:effect_powder', '{effect:"naturesaura:ore_spawn"}')];
+jei.expert.items.hidden = [];
+jei.expert.categories.hidden = [];

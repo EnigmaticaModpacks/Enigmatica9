@@ -153,7 +153,6 @@ JEIEvents.information((event) => {
 
     descriptions.forEach((description) => {
         description.items.forEach((item) => {
-            console.log(item);
             event.addItem(item, description.text);
         });
     });
@@ -172,7 +171,7 @@ JEIEvents.information((event) => {
         );
     });
 
-    disabledItems.forEach((item) => {
+    jei.base.items.disabled.forEach((item) => {
         event.addItem(
             item,
             "This item has been disabled, if you managed to obtain it please report it on Enigmatica 9's issue tracker: https://github.com/EnigmaticaModpacks/Enigmatica9/issues"
