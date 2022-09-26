@@ -57,9 +57,9 @@ const generatableStone = [
 const generatableBasalt = [];
 
 const jei = {
-    base: { items: { hidden: [], disables: [] }, categories: { hidden: [] } },
-    normal: { items: { hidden: [], disables: [] }, categories: { hidden: [] } },
-    expert: { items: { hidden: [], disables: [] }, categories: { hidden: [] } }
+    base: { items: { hidden: [], disabled: [] }, categories: { hidden: [] } },
+    normal: { items: { hidden: [], disabled: [] }, categories: { hidden: [] } },
+    expert: { items: { hidden: [], disabled: [] }, categories: { hidden: [] } }
 };
 // Base
 jei.base.items.disabled = ['twilightforest:uncrafting_table'];
