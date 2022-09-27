@@ -3,7 +3,18 @@ JEIEvents.information((event) => {
         return;
     }
 
-    const descriptions = [];
+    const descriptions = [
+        {
+            items: ['naturesaura:projectile_generator'],
+            text: [
+                `Valid Projectiles:`,
+                ``,
+                `● Ars Nouveau Spell Projectiles`,
+                `● Ender Pearls`,
+                `● Bottles o' Enchanting`
+            ]
+        }
+    ];
 
     descriptions.forEach((description) => {
         description.items.forEach((item) => {
@@ -12,9 +23,9 @@ JEIEvents.information((event) => {
     });
 
     jei.expert.items.disabled.forEach((item) => {
-        event.addItem(
-            item,
-            "This item has been disabled, if you managed to obtain it please report it on Enigmatica 9's issue tracker: https://github.com/EnigmaticaModpacks/Enigmatica9/issues"
-        );
+        if (item !== air) {
+            console.log(`Adding description for ${item}`);
+            event.addItem(item, disabled_item_message);
+        }
     });
 });

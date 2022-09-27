@@ -3,7 +3,16 @@ JEIEvents.information((event) => {
         return;
     }
 
-    const descriptions = [];
+    const descriptions = [
+        {
+            items: ['naturesaura:projectile_generator'],
+            text: [`Valid Projectiles:`, ``, `● Snowballs`, `● Eggs`, `● Arrows`, `● Fire Charges`, `● Spectral Arrows`]
+        },
+        {
+            items: ['naturesaura:projectile_generator'],
+            text: [`● Ender Pearls`, `● Llama Spit`, `● Bottles o' Enchanting`, `● Shulker Bullets`, `● Tridents`]
+        }
+    ];
 
     descriptions.forEach((description) => {
         description.items.forEach((item) => {
@@ -12,9 +21,9 @@ JEIEvents.information((event) => {
     });
 
     jei.normal.items.disabled.forEach((item) => {
-        event.addItem(
-            item,
-            "This item has been disabled, if you managed to obtain it please report it on Enigmatica 9's issue tracker: https://github.com/EnigmaticaModpacks/Enigmatica9/issues"
-        );
+        if (item !== air) {
+            console.log(`Adding description for ${item}`);
+            event.addItem(item, disabled_item_message);
+        }
     });
 });

@@ -1,4 +1,4 @@
-//priority: 1000
+//priority: 1500
 
 // This duplicate packmode file is here to get the packmode for client scripts
 const defaultConfig = {

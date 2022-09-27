@@ -1,19 +1,21 @@
-//priority: 900
+//priority: 1000
 
 // Items added here will get recipes for Pedestals & Cobblegen Randomizer cobblegens.
 const generatableCobblestone = [
-    'byg:dacite_cobblestone',
+    'blue_skies:turquoise_cobblestone',
     'byg:cobbled_ether_stone',
+    'byg:dacite_cobblestone',
     'byg:purpur_stone',
     'byg:red_rock',
     'byg:scoria_cobblestone',
     'byg:soapstone',
     'byg:travertine',
+    'minecraft:cobbled_deepslate'
+    /*
     'undergarden:depthrock',
     'undergarden:shiverstone',
     'undergarden:tremblecrust',
-    'minecraft:cobbled_deepslate',
-    'blue_skies:turquoise_cobblestone'
+    */
 ];
 // Items added here will get recipes for Pedestals & Cobblegen Randomizer stonegens.
 const generatableStone = [
@@ -36,8 +38,15 @@ const generatableStone = [
     'byg:scoria_stone',
     'byg:white_sandstone',
     'byg:windswept_sandstone',
-    // 'create:limestone',
-    // 'create:scoria',
+    /*
+    'create:asurine',
+    'create:crimsite',
+    'create:limestone',
+    'create:ochrum',
+    'create:scorchia',
+    'create:scoria',
+    'create:veridium',
+    */
     'minecraft:andesite',
     'minecraft:basalt',
     'minecraft:deepslate',
@@ -46,6 +55,7 @@ const generatableStone = [
     'minecraft:granite',
     'minecraft:red_sandstone',
     'minecraft:sandstone',
+    'minecraft:tuff',
     'quark:dusky_myalite',
     'quark:jasper',
     'quark:limestone',
@@ -56,22 +66,41 @@ const generatableStone = [
 ];
 const generatableBasalt = [];
 
-const jei = {
-    base: { items: { hidden: [], disabled: [] }, categories: { hidden: [] } },
-    normal: { items: { hidden: [], disabled: [] }, categories: { hidden: [] } },
-    expert: { items: { hidden: [], disabled: [] }, categories: { hidden: [] } }
-};
-// Base
-jei.base.items.disabled = ['twilightforest:uncrafting_table'];
-jei.base.items.hidden = [];
-jei.base.categories.hidden = ['twilightforest:uncrafting'];
-
-// Normal
-jei.normal.items.disabled = [];
-jei.normal.items.hidden = [];
-jei.normal.categories.hidden = [];
-
-// Expert
-jei.expert.items.disabled = [Item.of('naturesaura:effect_powder', '{effect:"naturesaura:ore_spawn"}')];
-jei.expert.items.hidden = [];
-jei.expert.categories.hidden = [];
+const excludeDuplicatesCobbleGen = [
+    'blue_skies:turquoise_cobblestone',
+    'byg:dacite',
+    'byg:dacite_cobblestone',
+    'byg:ether_stone',
+    'byg:purpur_stone',
+    'byg:red_rock',
+    'byg:scoria_cobblestone',
+    'byg:scoria_stone',
+    'byg:soapstone',
+    'byg:travertine',
+    /*
+    'create:asurine',
+    'create:crimsite',
+    'create:limestone',
+    'create:ochrum',
+    'create:scorchia',
+    'create:scoria',
+    'create:veridium',
+    */
+    'minecraft:andesite',
+    'minecraft:cobbled_deepslate',
+    'minecraft:deepslate',
+    'minecraft:diorite',
+    'minecraft:dripstone_block',
+    'minecraft:granite',
+    'minecraft:tuff',
+    'quark:dusky_myalite',
+    'quark:jasper',
+    'quark:limestone',
+    'quark:myalite',
+    'quark:permafrost'
+    /*
+    'undergarden:depthrock',
+    'undergarden:shiverstone',
+    'undergarden:tremblecrust',
+    */
+];
