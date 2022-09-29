@@ -23,9 +23,11 @@ const entries = [
     }
 ];
 
+let lang_file = `kubejs/assets/enigmatica/lang/en_us.json`;
+let lang_json = JsonIO.read(lang_file);
+
 entries.forEach((entry) => {
-    let lang_file = `kubejs/assets/enigmatica/lang/en_us.json`;
-    let lang_json = JsonIO.read(lang_file);
     lang_json[entry.key] = entry.value[packMode];
-    JsonIO.write(lang_file, lang_json);
 });
+
+JsonIO.write(lang_file, lang_json);
