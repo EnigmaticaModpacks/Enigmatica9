@@ -23,7 +23,11 @@ jei.base.items.hidden = [
     'kubejs:legendary_lootbox',
     'kubejs:epic_lootbox',
     'kubejs:rare_lootbox',
-    'kubejs:common_lootbox'
+    'kubejs:common_lootbox',
+    'occultism:debug_wand',
+    'occultism:miner_debug_unspecialized',
+    'occultism:lighted_air',
+    'naturesaura:multiblock_maker'
 ];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
 
