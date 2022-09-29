@@ -136,7 +136,7 @@ ItemEvents.tooltip((event) => {
             text: [Text.of(`Arcane Apparatus: Ranged Hopper`).green()]
         },
         {
-            items: ['naturesaura:spawn_lamp'],
+            items: ['naturesaura:spawn_lamp', 'hexerei:dried_sage_bundle', 'hexerei:sage_burning_plate'],
             text: [Text.of(`Arcane Apparatus: Prevents Mob Spawns`).green()]
         },
         {
