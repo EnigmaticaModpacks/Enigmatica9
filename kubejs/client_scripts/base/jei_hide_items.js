@@ -1,13 +1,9 @@
 JEIEvents.hideItems((event) => {
-    itemsToHide.forEach((disabledItem) => {
-        if (!Item.of(disabledItem).isEmpty()) {
-            event.hide(disabledItem);
-        }
+    jei.base.items.hidden.forEach((hiddenItem) => {
+        event.hide(hiddenItem);
     });
 
-    disabledItems.forEach((disabledItem) => {
-        if (!Item.of(disabledItem).isEmpty()) {
-            event.hide(disabledItem);
-        }
+    jei.base.items.disabled.forEach((disabledItem) => {
+        event.hide(disabledItem);
     });
 });
