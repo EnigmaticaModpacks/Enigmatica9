@@ -2,10 +2,10 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/enigmatica/';
     const recipes = [
         // {
-        //     primary_output: { item: 'minecraft:magenta_dye', count: 3, chance: 1.0 },
-        //     secondary_output: { item: 'minecraft:purple_dye', count: 1, chance: 0.5 },
-        //     tertiary_output: { item: 'minecraft:pink_dye', count: 1, chance: 0.25 },
-        //     input: { item: 'byg:allium_flower_bush' },
+        //     outputs.primary: { item: 'minecraft:magenta_dye', count: 3, chance: 1.0 },
+        //     outputs.secondary: { item: 'minecraft:purple_dye', count: 1, chance: 0.5 },
+        //     outputs.tertiary: { item: 'minecraft:pink_dye', count: 1, chance: 0.25 },
+        //     input:  'byg:allium_flower_bush',
         //     experience: 0.5,
         //     duration: 20,
         //     energy: 1000,
@@ -14,105 +14,103 @@ ServerEvents.recipes((event) => {
         // }
     ];
 
-    dye_sources.forEach((source) => {
-        let count = 3,
-            secondaryChance = 0.33,
-            tertiaryChance = 0.15;
+    dye_sources.forEach((dye_source) => {
+        let base_rate = 3;
 
-        if (source.type == 'large') {
-            count = count * 2;
-            secondaryChance = secondaryChance * 2;
-            tertiaryChance = tertiaryChance * 2;
-        }
+        let count = dye_source.type == 'large' ? base_rate * 2 : base_rate;
+        let secondaryChance = dye_source.type == 'large' ? (base_rate / 9) * 2 : base_rate / 9;
+        let tertiaryChance = dye_source.type == 'large' ? (base_rate / 18) * 2 : base_rate / 18;
 
         recipes.push({
-            primary_output: { item: source.primary, count: count, chance: 1.0 },
-            secondary_output: { item: source.secondary, count: 2, chance: secondaryChance },
-            tertiary_output: { item: source.tertiary, count: 1, chance: tertiaryChance },
-            input: { item: source.input },
+            outputs: {
+                primary: { item: dye_source.primary, count: count, chance: 1.0 },
+                secondary: { item: dye_source.secondary, count: Math.ceil(count / 2), chance: secondaryChance },
+                tertiary: { item: dye_source.tertiary, count: Math.ceil(count / 3), chance: tertiaryChance }
+            },
+            input: dye_source.input,
             experience: 0.5,
             duration: 20,
             energy: 256,
             ignore_occultism_multiplier: false,
-            id_suffix: `${source.primary.split(':')[1]}_from_${source.input.split(':')[1]}`
+            id_suffix: `${dye_source.primary.split(':')[1]}_from_${dye_source.input.split(':')[1]}`
         });
     });
 
     const recipetypes_crushing = (event, recipe) => {
-        // occultism
+        // Occultism
         event
             .custom({
                 type: 'occultism:crushing',
-                ingredient: recipe.input,
-                result: { item: recipe.primary_output.item, count: recipe.primary_output.count },
+                ingredient: Item.of(recipe.input).toJson(),
+                result: Item.of(recipe.outputs.primary.item, recipe.outputs.primary.count).toJson(),
                 crushing_time: recipe.duration,
                 ignore_crushing_multiplier: recipe.ignore_occultism_multiplier
             })
-            .id(`${id_prefix}/occultism_crushing/${recipe.id_suffix}`);
+            .id(`${id_prefix}occultism_crushing/${recipe.id_suffix}`);
 
-        // mekanism
+        // Mekanism
         event
             .custom({
                 type: 'mekanism:enriching',
-                input: { ingredient: recipe.input },
-                output: { item: recipe.primary_output.item, count: recipe.primary_output.count }
+                input: { ingredient: Item.of(recipe.input).toJson() },
+                output: Item.of(recipe.outputs.primary.item, recipe.outputs.primary.count).toJson()
             })
-            .id(`${id_prefix}/mekanism_enriching/${recipe.id_suffix}`);
+            .id(`${id_prefix}mekanism_enriching/${recipe.id_suffix}`);
 
-        // immersiveengineering
+        // Immersive Engineering
         let immersiveengineering_secondaries = [];
-        if (recipe.secondary_output) {
+        if (recipe.outputs.secondary) {
             immersiveengineering_secondaries.push({
-                chance: recipe.secondary_output.chance,
-                output: { item: recipe.secondary_output.item, count: recipe.secondary_output.count }
+                chance: recipe.outputs.secondary.chance,
+                output: Item.of(recipe.outputs.secondary.item, recipe.outputs.secondary.count).toJson()
             });
         }
-        if (recipe.tertiary_output) {
+        if (recipe.outputs.tertiary) {
             immersiveengineering_secondaries.push({
-                chance: recipe.tertiary_output.chance,
-                output: { item: recipe.tertiary_output.item, count: recipe.tertiary_output.count }
+                chance: recipe.outputs.tertiary.chance,
+                output: Item.of(recipe.outputs.tertiary.item, recipe.outputs.tertiary.count).toJson()
             });
         }
         event
             .custom({
                 type: 'immersiveengineering:crusher',
                 energy: recipe.energy,
-                input: recipe.input,
-                result: { base_ingredient: { item: recipe.primary_output.item }, count: recipe.primary_output.count },
+                input: Item.of(recipe.input).toJson(),
+                result: { base_ingredient: { item: recipe.outputs.primary.item }, count: recipe.outputs.primary.count },
                 secondaries: immersiveengineering_secondaries
             })
-            .id(`${id_prefix}/immersiveengineering_crusher/${recipe.id_suffix}`);
+            .id(`${id_prefix}immersiveengineering_crusher/${recipe.id_suffix}`);
 
-        // ars_nouveau
+        // Ars Nouveau
         let ars_nouveau_outputs = [
             {
-                chance: recipe.primary_output.chance,
-                count: recipe.primary_output.count,
-                item: recipe.primary_output.item
+                chance: recipe.outputs.primary.chance,
+                count: recipe.outputs.primary.count,
+                item: recipe.outputs.primary.item
             }
         ];
-        if (recipe.secondary_output) {
+        if (recipe.outputs.secondary) {
             ars_nouveau_outputs.push({
-                chance: recipe.secondary_output.chance,
-                count: recipe.secondary_output.count,
-                item: recipe.secondary_output.item
+                chance: recipe.outputs.secondary.chance,
+                count: recipe.outputs.secondary.count,
+                item: recipe.outputs.secondary.item
             });
         }
-        if (recipe.tertiary_output) {
+        if (recipe.outputs.tertiary) {
             ars_nouveau_outputs.push({
-                chance: recipe.tertiary_output.chance,
-                count: recipe.tertiary_output.count,
-                item: recipe.tertiary_output.item
+                chance: recipe.outputs.tertiary.chance,
+                count: recipe.outputs.tertiary.count,
+                item: recipe.outputs.tertiary.item
             });
         }
 
         event
             .custom({
                 type: 'ars_nouveau:crush',
-                input: recipe.input,
+                input: Item.of(recipe.input).toJson(),
                 output: ars_nouveau_outputs
             })
-            .id(`${id_prefix}/ars_nouveau_crushing/${recipe.id_suffix}`);
+            .id(`${id_prefix}ars_nouveau_crushing/${recipe.id_suffix}`);
     };
 
     recipes.forEach((recipe) => {

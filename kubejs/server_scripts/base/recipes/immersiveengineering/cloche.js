@@ -1,7 +1,18 @@
 ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/immersiveengineering/cloche/';
 
-    const recipes = [];
+    const recipes = [
+        /*
+        {
+            outputs: [Item.of('2x minecraft:wheat'), Item.of('minecraft:wheat_seeds')],
+            input: Item.of('minecraft:wheat_seeds'),
+            render: { type: 'crop', block: 'minecraft:wheat' },
+            soil: Item.of('minecraft:dirt'),
+            time: 800,
+            id: `${id_prefix}'minecraft_wheat'`
+        }
+        */
+    ];
 
     // Cloche additions from crop_properties constant
     let crop_types = Object.keys(crop_properties);
@@ -26,16 +37,16 @@ ServerEvents.recipes((event) => {
                 return;
             }
 
-            let results = [{ item: crop.plant, count: primary_count }];
+            let outputs = [Item.of(crop.plant, primary_count)];
 
             if (type.includes('_crops') && crop.seed !== 'minecraft:chorus_flower') {
-                results.push({ item: crop.seed, count: secondary_count });
+                outputs.push(Item.of(`${secondary_count}x ${crop.seed}`));
             }
             recipes.push({
-                results: results,
-                input: { item: crop.seed },
+                outputs: outputs,
+                input: Item.of(crop.seed),
                 render: crop.render,
-                soil: { tag: `enigmatica:soils/${crop.substrate}` },
+                soil: Ingredient.of(`#enigmatica:soils/${crop.substrate}`),
                 time: Math.trunc(growth_ticks),
                 id: `${id_prefix}${crop.plant.replace(':', '_')}`
             });
@@ -44,6 +55,16 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'immersiveengineering:cloche';
+
+        // input: { item: 'minecraft:wheat_seeds' },
+        recipe.input = recipe.input.toJson();
+
+        // results: [{ count: 2, item: 'minecraft:wheat' }, { item: 'minecraft:wheat_seeds' }]
+        recipe.results = recipe.outputs.map((output) => output.toJson());
+
+        //soil: { item: 'minecraft:dirt' }
+        recipe.soil = recipe.soil.toJson();
+
         event.custom(recipe).id(recipe.id);
     });
 });

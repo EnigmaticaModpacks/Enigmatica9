@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/immersiveengineering/blastfurnace_fuel/';
     const recipes = [
         {
-            input: '#forge:nuggets/horizonite',
+            input: Ingredient.of('#forge:nuggets/horizonite'),
             time: 64 * 20,
             id: `${id_prefix}horizonite_nugget`
         }
@@ -13,7 +13,10 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'immersiveengineering:blast_furnace_fuel';
-        recipe.input = Ingredient.of(recipe.input).toJson();
+
+        // input: { tag: 'forge:coal_coke' }
+        recipe.input = recipe.input.toJson();
+
         event.custom(recipe).id(recipe.id);
     });
 });

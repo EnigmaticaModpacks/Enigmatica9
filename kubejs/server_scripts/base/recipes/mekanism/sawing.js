@@ -1,47 +1,68 @@
 ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/mekanism/sawing/';
-    const recipes = [];
+    let sawdust = 'mekanism:sawdust', //AlmostUnified.getPreferredItemForTag('#forge:sawdust')
+        bark = 'farmersdelight:tree_bark';
 
-    wood_properties.forEach((wood_property) => {
-        let sawdust = 'mekanism:sawdust',
-            bark = 'farmersdelight:tree_bark';
+    const recipes = [
+        /*
+        {
+            input: [Item.of('minecraft:oak_log')],
+            mainOutput: Item.of('6x minecraft:stripped_oak_log'),
+            secondary: { output: Item.of('farmersdelight:tree_bark'), chance: 1.0 },
+            id: `${id_prefix}stripped_oak_log_from_oak_log`
+        }
+        */
+    ];
 
-        recipes.push(
-            // Log to Stripped
-            {
-                input: { ingredient: [{ item: wood_property.log.block }] },
-                mainOutput: { count: 1, item: wood_property.log.stripped },
-                secondaryChance: 1.0,
-                secondaryOutput: { item: bark },
-                id: `${id_prefix}${wood_property.log.stripped.split(':')[1]}_from_${
-                    wood_property.log.block.split(':')[1]
-                }`
-            },
-            // Wood to Stripped
-            {
-                input: { ingredient: [{ item: wood_property.wood.block }] },
-                mainOutput: { count: 1, item: wood_property.wood.stripped },
-                secondaryChance: 1.0,
-                secondaryOutput: { item: bark },
-                id: `${id_prefix}${wood_property.wood.stripped.split(':')[1]}_from_${
-                    wood_property.wood.block.split(':')[1]
-                }`
-            },
-            // Stripped to Plank
-            {
-                input: { ingredient: [{ item: wood_property.log.stripped }, { item: wood_property.wood.stripped }] },
-                mainOutput: { count: 6, item: wood_property.plank.block },
-                secondaryChance: 0.25,
-                secondaryOutput: { item: sawdust },
-                id: `${id_prefix}${wood_property.plank.block.split(':')[1]}_from_${
-                    wood_property.log.stripped.split(':')[1]
-                }`
-            }
-        );
+    wood_properties.forEach((material) => {
+        let input = material.log.block,
+            output = material.log.stripped;
+
+        // Log to Stripped
+        recipes.push({
+            input: [Item.of(input)],
+            output: Item.of(`${output}`),
+            secondary: { output: Item.of(bark), chance: 1.0 },
+            id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
+        });
+
+        input = material.wood.block;
+        output = material.wood.stripped;
+        // Wood to Stripped
+        recipes.push({
+            input: [Item.of(input)],
+            output: Item.of(`${output}`),
+            secondary: { output: Item.of(bark), chance: 1.0 },
+            id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
+        });
+
+        input = material.log.stripped;
+        output = material.plank.block;
+
+        // Stripped to Plank
+        recipes.push({
+            input: [Item.of(input), Item.of(material.wood.stripped)],
+            output: Item.of(output, 6),
+            secondary: { output: Item.of(sawdust), chance: 0.25 },
+            id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
+        });
     });
 
     recipes.forEach((recipe) => {
         recipe.type = 'mekanism:sawing';
+
+        // input: { ingredient: [{ item: 'minecraft:oak_log' }] },
+        recipe.input = { ingredient: recipe.input.map((input) => input.toJson()) };
+
+        // mainOutput: { count: 6, item: 'minecraft:oak_planks' }
+        recipe.mainOutput = recipe.output.toJson();
+
+        // secondaryOutput: { item: 'farmersdelight:tree_bark' },
+        recipe.secondaryOutput = recipe.secondary.output.toJson();
+
+        // secondaryChance: 0.25,
+        recipe.secondaryChance = recipe.secondary.chance;
+
         event.custom(recipe).id(recipe.id);
     });
 });
