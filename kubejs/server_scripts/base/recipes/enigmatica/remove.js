@@ -7,14 +7,14 @@ ServerEvents.recipes((event) => {
         //     mod: 'sample',
         //     id: 'sample'
         // }
+        { id: /ars_nouveau:.*_dye_/ },
         { id: /mekanism:enriching\/dye/ },
         { id: /mekanism:compat\/byg\/dye/ },
-        { id: /ars_nouveau:.*_dye_/ },
         { id: /mekanism:compat\/byg\/sawing\/log/ },
         { id: /mekanism:sawing\/log/ },
-        { id: /almostunified:u\/immersiveengineering\/sawmill\/.*_log/ },
-        { id: /immersiveengineering:cloche/ },
-        { id: /farmersdelight:integration\/immersiveengineering\/cloche/ }
+        { type: 'immersiveengineering:sawmill' },
+        { type: 'create:cutting' },
+        { type: 'immersiveengineering:cloche' }
     ];
 
     recipes.forEach((recipe) => {

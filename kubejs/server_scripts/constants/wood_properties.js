@@ -1,5 +1,8 @@
 //priority: 1000
 
+const sawdust = 'mekanism:sawdust'; //AlmostUnified.getPreferredItemForTag('#forge:sawdust')
+const bark = 'farmersdelight:tree_bark';
+
 // Used to populate the wood_variants_constructor constant - Add variants here to enable compat with various cutting mechanics.
 // Be aware that you may need to specify exceptions in the loop below for this to work properly.
 var wood_variants_constructor = [

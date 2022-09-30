@@ -1,9 +1,6 @@
 ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/immersiveengineering/sawmill/';
 
-    let sawdust = 'mekanism:sawdust', //AlmostUnified.getPreferredItemForTag('#forge:sawdust')
-        bark = 'farmersdelight:tree_bark';
-
     const recipes = [
         /*
         {
