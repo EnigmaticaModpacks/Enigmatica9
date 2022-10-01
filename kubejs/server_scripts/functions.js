@@ -95,3 +95,42 @@ function weightedEquipment(options) {
 
     return options[i].set;
 }
+
+function generatePool(table, loot_table) {
+    // For help setting up conditions, functions, and non item entries: https://amaury.carrade.eu/minecraft/loot_tables
+    // Minecraft wiki also has great information on how these work
+    table.addPool((pool) => {
+        pool.rolls = pool.rolls ? loot_table.rolls : 1;
+
+        // For special conditions
+        if (loot_table.loot_conditions) {
+            loot_table.loot_conditions.forEach((loot_condition) => {
+                pool.addCondition(loot_condition);
+            });
+        }
+
+        // For special functions
+        if (loot_table.loot_functions) {
+            loot_table.loot_functions.forEach((loot_function) => {
+                pool.addFunction(loot_function);
+            });
+        }
+
+        // For external loot tables
+        if (loot_table.loot_entries) {
+            loot_table.loot_entries.forEach((loot_entry) => {
+                pool.addEntry(loot_entry);
+            });
+        }
+
+        loot_table.loot_items.forEach((loot_item) => {
+            pool.addItem(Item.of(loot_item.item), loot_item.weight);
+        });
+    });
+}
+
+function addEntityTable(event, entity, loot_table) {
+    event.modifyEntity(entity, (table) => {
+        generatePool(table, loot_table);
+    });
+}
