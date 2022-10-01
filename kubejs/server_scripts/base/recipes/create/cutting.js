@@ -1,12 +1,12 @@
 ServerEvents.recipes((event) => {
-    const id_prefix = 'enigmatica:base/mekanism/sawing/';
+    const id_prefix = 'enigmatica:base/create/cutting/';
 
     const recipes = [
         /*
         {
-            input: [Item.of('minecraft:oak_log')],
-            mainOutput: Item.of('6x minecraft:stripped_oak_log'),
-            secondary: { output: Item.of('farmersdelight:tree_bark'), chance: 1.0 },
+            input: ['minecraft:acacia_wood'],
+            outputs: ['minecraft:stripped_acacia_wood'],
+            processingTime: 50,
             id: `${id_prefix}stripped_oak_log_from_oak_log`
         }
         */
@@ -18,8 +18,8 @@ ServerEvents.recipes((event) => {
             output = material.log.stripped;
         recipes.push({
             input: [Item.of(input)],
-            output: Item.of(output),
-            secondary: { output: Item.of(bark), chance: 1.0 },
+            outputs: [Item.of(output)],
+            processingTime: 50,
             id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
         });
 
@@ -28,8 +28,8 @@ ServerEvents.recipes((event) => {
         output = material.wood.stripped;
         recipes.push({
             input: [Item.of(input)],
-            output: Item.of(output),
-            secondary: { output: Item.of(bark), chance: 1.0 },
+            outputs: [Item.of(output)],
+            processingTime: 50,
             id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
         });
 
@@ -38,26 +38,20 @@ ServerEvents.recipes((event) => {
         output = material.plank.block;
         recipes.push({
             input: [Item.of(input), Item.of(material.wood.stripped)],
-            output: Item.of(output, 6),
-            secondary: { output: Item.of(sawdust), chance: 0.25 },
+            outputs: [Item.of(output, 6)],
+            processingTime: 50,
             id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
         });
     });
 
     recipes.forEach((recipe) => {
-        recipe.type = 'mekanism:sawing';
+        recipe.type = 'create:cutting';
 
-        // input: { ingredient: [{ item: 'minecraft:oak_log' }] },
-        recipe.input = { ingredient: recipe.input.map((input) => input.toJson()) };
+        // ingredients:  [{ item: 'minecraft:oak_log' }],
+        recipe.ingredients = recipe.input.map((input) => input.toJson());
 
-        // mainOutput: { count: 6, item: 'minecraft:oak_planks' }
-        recipe.mainOutput = recipe.output.toJson();
-
-        // secondaryOutput: { item: 'farmersdelight:tree_bark' },
-        recipe.secondaryOutput = recipe.secondary.output.toJson();
-
-        // secondaryChance: 0.25,
-        recipe.secondaryChance = recipe.secondary.chance;
+        // results: [{ count: 6, item: 'minecraft:oak_planks' }]
+        recipe.results = recipe.outputs.map((output) => output.toJson());
 
         event.custom(recipe).id(recipe.id);
     });
