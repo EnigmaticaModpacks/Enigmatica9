@@ -32,6 +32,13 @@ const dye_sources = [
         tertiary: 'minecraft:light_gray_dye'
     },
     {
+        input: 'minecraft:lapis_lazuli',
+        type: 'small',
+        primary: 'minecraft:blue_dye',
+        secondary: 'minecraft:blue_dye',
+        tertiary: 'minecraft:blue_dye'
+    },
+    {
         input: 'minecraft:bone',
         type: 'small',
         primary: 'minecraft:bone_meal',
@@ -242,6 +249,14 @@ const dye_sources = [
         tertiary: 'minecraft:gray_dye'
     },
     // Farmer's Delight
+
+    {
+        input: 'farmersdelight:tree_bark',
+        type: 'small',
+        primary: 'minecraft:brown_dye',
+        secondary: 'minecraft:brown_dye',
+        tertiary: 'minecraft:black_dye'
+    },
     {
         input: 'farmersdelight:wild_beetroots',
         type: 'small',
@@ -833,6 +848,58 @@ const dye_sources = [
         primary: 'minecraft:magenta_dye',
         secondary: 'minecraft:pink_dye',
         tertiary: 'minecraft:yellow_dye'
+    },
+
+    // Book Wyrms
+
+    {
+        input: 'bookwyrms:scale_grey',
+        type: 'small',
+        primary: 'minecraft:gray_dye',
+        secondary: 'minecraft:gray_dye',
+        tertiary: 'minecraft:gray_dye'
+    },
+    {
+        input: 'bookwyrms:scale_red',
+        type: 'small',
+        primary: 'minecraft:red_dye',
+        secondary: 'minecraft:red_dye',
+        tertiary: 'minecraft:red_dye'
+    },
+    {
+        input: 'bookwyrms:scale_orange',
+        type: 'small',
+        primary: 'minecraft:orange_dye',
+        secondary: 'minecraft:orange_dye',
+        tertiary: 'minecraft:orange_dye'
+    },
+    {
+        input: 'bookwyrms:scale_green',
+        type: 'small',
+        primary: 'minecraft:green_dye',
+        secondary: 'minecraft:green_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'bookwyrms:scale_blue',
+        type: 'small',
+        primary: 'minecraft:blue_dye',
+        secondary: 'minecraft:blue_dye',
+        tertiary: 'minecraft:blue_dye'
+    },
+    {
+        input: 'bookwyrms:scale_teal',
+        type: 'small',
+        primary: 'minecraft:light_blue_dye',
+        secondary: 'minecraft:light_blue_dye',
+        tertiary: 'minecraft:light_blue_dye'
+    },
+    {
+        input: 'bookwyrms:scale_purple',
+        type: 'small',
+        primary: 'minecraft:purple_dye',
+        secondary: 'minecraft:purple_dye',
+        tertiary: 'minecraft:purple_dye'
     }
 ];
 
