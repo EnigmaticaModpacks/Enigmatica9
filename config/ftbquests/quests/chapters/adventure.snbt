@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 3
 	filename: "adventure"
-	title: "Adventure"
+	title: "Adventure [WIP]"
 	icon: {
 		id: "minecraft:filled_map"
 		Count: 2b
