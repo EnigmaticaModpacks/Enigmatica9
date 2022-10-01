@@ -4,20 +4,23 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/dye_crushing/';
 
     colors.forEach((color) => {
-        ['large', 'small'].forEach((size) => {
-            let duration = 20;
+        ['large', 'small'].forEach((input_size) => {
+            let input = `#enigmatica:${input_size}_dye_sources/${color}`;
+            if (Ingredient.of(input).stacks.isEmpty()) {
+                return;
+            }
             let output = `minecraft:${color}_dye`;
-            let input = `#enigmatica:${size}_dye_sources/${color}`;
-            let id_suffix = `${size}_${color}_dye`;
+            let duration = 20;
+            let id_suffix = `${input_size}_${color}_dye`;
 
             // Shapeless
             let base_count = 1;
-            let count = size == 'large' ? base_count * 2 : base_count;
+            let count = input_size == 'large' ? base_count * 2 : base_count;
             event.shapeless(Item.of(output, count), [input]).id(`${id_prefix}shapeless/${id_suffix}`);
 
             // Hexerei Mortar and Pestle
             base_count = 15;
-            count = size == 'large' ? base_count * 2 : base_count;
+            count = input_size == 'large' ? base_count * 2 : base_count;
             event
                 .custom({
                     type: 'hexerei:pestle_and_mortar',
@@ -35,7 +38,7 @@ ServerEvents.recipes((event) => {
 
             // Occultism Crushing
             base_count = 3;
-            count = size == 'large' ? base_count * 2 : base_count;
+            count = input_size == 'large' ? base_count * 2 : base_count;
             event
                 .custom({
                     type: 'occultism:crushing',
