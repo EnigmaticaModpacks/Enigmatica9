@@ -13,10 +13,9 @@ ServerEvents.recipes((event) => {
     ];
 
     wood_properties.forEach((material) => {
+        // Log to Stripped
         let input = material.log.block,
             output = material.log.stripped;
-
-        // Log to Stripped
         recipes.push({
             input: [Item.of(input)],
             output: Item.of(output),
@@ -24,9 +23,9 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
         });
 
+        // Wood to Stripped
         input = material.wood.block;
         output = material.wood.stripped;
-        // Wood to Stripped
         recipes.push({
             input: [Item.of(input)],
             output: Item.of(output),
@@ -34,10 +33,9 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
         });
 
+        // Stripped to Plank
         input = material.log.stripped;
         output = material.plank.block;
-
-        // Stripped to Plank
         recipes.push({
             input: [Item.of(input), Item.of(material.wood.stripped)],
             output: Item.of(output, 6),

@@ -18,10 +18,9 @@ ServerEvents.recipes((event) => {
     ];
 
     wood_properties.forEach((material) => {
+        // Log to Plank
         let output = material.plank.block,
             input = material.log.block;
-
-        // Log to Plank
         recipes.push({
             energy: 512,
             input: [Item.of(input)],
