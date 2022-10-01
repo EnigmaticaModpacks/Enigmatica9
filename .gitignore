@@ -27,6 +27,8 @@ screenshots/
 *.dll
 **/*.zip
 /docker/**
+/config/jei/world/local
+
 # Instance Sync
 **/*.jar
 !InstanceSync*.jar
