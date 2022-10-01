@@ -421,7 +421,7 @@
 					id: "000000000000061E"
 					type: "item"
 					title: "Iron Plate"
-					item: "ftbic:iron_plate"
+					item: "create:iron_sheet"
 					count: 8
 				}
 				{
@@ -817,8 +817,8 @@
 		{
 			title: "Diesel Generator"
 			icon: "immersiveengineering:diesel_generator"
-			x: -4.0d
-			y: 2.0d
+			x: -4.5d
+			y: 1.0d
 			shape: "circle"
 			description: [
 				"With Biodiesel or Diesel acquired, they can be used as a fuel for the powerful (if noisy) Diesel Generator, producing respectable amounts of FE/t."
@@ -1097,8 +1097,8 @@
 		{
 			title: "Refinery"
 			icon: "immersiveengineering:refinery"
-			x: -3.0d
-			y: 2.0d
+			x: -3.5d
+			y: 1.5d
 			description: [
 				"The final step in producing Biodiesel, the Refinery combines Ethanol and Plant Oil to make this liquid gold. "
 				""
@@ -1156,50 +1156,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
 				player_command: false
 			}]
-		}
-		{
-			title: "This section is W.I.P"
-			icon: "laserio:laser_wrench"
-			x: -4.5d
-			y: 1.0d
-			subtitle: "Immersive Petroleum"
-			description: [
-				"Here should be a few quests about Immersive petroleum, however port for 1.18.2 isn't yet published, but it was announced, so when it comes out the quests will comeback!"
-				""
-				"For now take a cat and be happy :D There is a lot of different quests to do, so what are you waiting for?!"
-			]
-			dependencies: [
-				"0000000000000013"
-				"0000000000000012"
-			]
-			id: "710BE1B415841A75"
-			tasks: [{
-				id: "792A69CE3AC430E7"
-				type: "checkmark"
-			}]
-			rewards: [
-				{
-					id: "4E27E2225BB94FEB"
-					type: "command"
-					title: "Cat!"
-					icon: {
-						id: "ftbquests:custom_icon"
-						Count: 1b
-						tag: {
-							Icon: "minecraft:textures/entity_icon/cat/calico.png"
-						}
-					}
-					command: "/execute at @p run summon cat ~ ~ ~"
-					player_command: false
-				}
-				{
-					id: "3C38990F9AB879C5"
-					type: "item"
-					item: "minecraft:cod"
-					count: 16
-					random_bonus: 48
-				}
-			]
 		}
 		{
 			title: "Assembler"
