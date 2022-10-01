@@ -25,25 +25,13 @@ JEIEvents.information((event) => {
         },
         */
         {
-            items: [/quark:\w+_corundum$/],
-            text: [
-                'Will grow up to four blocks tall if placed deep underground. Will emit particles while growing.',
-                ' ',
-                'May sprout Corundum Clusters as well.'
-            ]
-        },
-        {
-            items: [/quark:\w+_corundum_cluster/],
-            text: ['Grows occasionally on Corundum Blocks when grown underground.']
-        },
-        {
             items: ['quark:bottled_cloud'],
             text: ['Obtained by Right-Clicking a Glass Bottle in the air between Y Levels 126 and 132.']
         },
         {
             items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:overworld' })],
             text: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the Overworld or Atum. This action removes Aura from the area.',
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the Overworld, Twilight Forest, or the Everdawn. This action removes Aura from the area.',
                 ' ',
                 `Can be automated using a Dispenser.`
             ]
@@ -51,7 +39,7 @@ JEIEvents.information((event) => {
         {
             items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:end' })],
             text: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the End or The Undergarden. This action removes Aura from the area.',
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the End or The Bumblezone. This action removes Aura from the area.',
                 ' ',
                 `Can be automated using a Dispenser.`
             ]
@@ -59,7 +47,7 @@ JEIEvents.information((event) => {
         {
             items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:nether' })],
             text: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the Nether. This action removes Aura from the area.',
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the Nether or the Everbright. This action removes Aura from the area.',
                 ' ',
                 `Can be automated using a Dispenser.`
             ]
@@ -99,6 +87,7 @@ JEIEvents.information((event) => {
             items: ['immersiveengineering:furnace_heater', 'mekanism:fuelwood_heater', 'mekanism:resistive_heater'],
             text: [`May be used to provide Heat for PneumaticCraft machines.`]
         },
+        /*
         {
             items: ['bloodmagic:weak_tau'],
             text: [`Found in chests within the Demon Realm.`]
@@ -107,6 +96,7 @@ JEIEvents.information((event) => {
             items: ['bloodmagic:strong_tau'],
             text: [`Produced by growing Tau near mobs.`]
         },
+        */
         {
             items: ['quark:dragon_scale'],
             text: [`Only drops from Ender Dragons after the first one has been killed.`]
@@ -126,21 +116,14 @@ JEIEvents.information((event) => {
         {
             items: ['naturesaura:break_prevention'],
             text: [
-                `When applied to a tool in an anvil, the tool will just stop working when durability runs out, instead of being destroyed.`
+                `When applied to a tool in an anvil, the tool will stop working when durability runs out instead of being destroyed.`
             ]
         },
         {
             items: ['ars_nouveau:belt_of_levitation'],
             text: [`When equipped in the belt slot, hold the sneak key while airborne to float.`]
         },
-        {
-            items: ['naturesaura:projectile_generator'],
-            text: [`Valid Projectiles:`, ``, `● Snowballs`, `● Eggs`, `● Arrows`, `● Fire Charges`, `● Spectral Arrows`]
-        },
-        {
-            items: ['naturesaura:projectile_generator'],
-            text: [`● Ender Pearls`, `● Llama Spit`, `● Bottles o' Enchanting`, `● Shulker Bullets`, `● Tridents`]
-        },
+
         {
             items: ['naturesaura:birth_spirit'],
             text: [`Obtained by manually breeding animals in high Aura areas.`]
@@ -148,34 +131,60 @@ JEIEvents.information((event) => {
         {
             items: ['explorerscompass:explorerscompass'],
             text: [`May only be used to locate Blue Skies structures.`]
+        },
+        {
+            items: [
+                'quark:violet_corundum',
+                'quark:indigo_corundum',
+                'quark:blue_corundum',
+                'quark:green_corundum',
+                'quark:yellow_corundum',
+                'quark:orange_corundum',
+                'quark:red_corundum'
+            ],
+            text: [
+                'Will grow up to four blocks tall if placed deep underground. Will emit particles while growing.',
+                ' ',
+                'May sprout Corundum Clusters as well.'
+            ]
+        },
+        {
+            items: [
+                'quark:violet_corundum_cluster',
+                'quark:indigo_corundum_cluster',
+                'quark:blue_corundum_cluster',
+                'quark:green_corundum_cluster',
+                'quark:yellow_corundum_cluster',
+                'quark:orange_corundum_cluster',
+                'quark:red_corundum_cluster'
+            ],
+            text: ['Grows occasionally on Corundum Blocks when grown underground.']
         }
     ];
 
     descriptions.forEach((description) => {
         description.items.forEach((item) => {
-            console.log(item);
             event.addItem(item, description.text);
         });
     });
 
-    generatableCobblestone.forEach((cobblestone) => {
-        event.addItem(
-            cobblestone,
-            'Can be generated in a Vanilla Cobblestone Generator. The block below where the Cobblestone generates needs to be a Block of Iron.'
-        );
-    });
+    // generatableCobblestone.forEach((cobblestone) => {
+    //     event.addItem(
+    //         cobblestone,
+    //         'Can be generated in a Vanilla Cobblestone Generator. The block below where the Cobblestone generates needs to be a Block of Iron.'
+    //     );
+    // });
 
-    generatableStone.forEach((stone) => {
-        event.addItem(
-            stone,
-            'Can be generated in a Vanilla Stone Generator. The block below where the Stone generates needs to be a Block of Diamond.'
-        );
-    });
+    // generatableStone.forEach((stone) => {
+    //     event.addItem(
+    //         stone,
+    //         'Can be generated in a Vanilla Stone Generator. The block below where the Stone generates needs to be a Block of Diamond.'
+    //     );
+    // });
 
-    disabledItems.forEach((item) => {
-        event.addItem(
-            item,
-            "This item has been disabled, if you managed to obtain it please report it on Enigmatica 9's issue tracker: https://github.com/EnigmaticaModpacks/Enigmatica9/issues"
-        );
+    jei.base.items.disabled.forEach((item) => {
+        if (item !== air) {
+            event.addItem(item, disabled_item_message);
+        }
     });
 });

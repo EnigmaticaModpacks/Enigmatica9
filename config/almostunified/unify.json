@@ -22,7 +22,8 @@
         "forge:rods/{material}",
         "forge:storage_blocks/{material}",
         "forge:slag",
-        "forge:coal_coke"
+        "forge:coal_coke",
+        "forge:sawdust"
     ],
     "materials": [
         "aeternium",
