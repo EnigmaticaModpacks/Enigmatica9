@@ -96,13 +96,12 @@ function weightedEquipment(options) {
     return options[i].set;
 }
 
-
 function generateRandomOffset(number) {
     let min = number - 2;
     let max = number + 2;
 
     return Math.random() * (max - min + 1) + min;
- }
+}
 
 function generatePool(table, loot_table) {
     // For help setting up conditions, functions, and non item entries: https://amaury.carrade.eu/minecraft/loot_tables
@@ -141,5 +140,4 @@ function addEntityTable(event, entity, loot_table) {
     event.modifyEntity(entity, (table) => {
         generatePool(table, loot_table);
     });
-
 }
