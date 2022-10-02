@@ -24,8 +24,8 @@ ServerEvents.highPriorityData((event) => {
             }
         }
     ];
-
-    pentacles.forEach((pentacle) => {
-        event.addJson(`occultism:occultism_pentacles/${pentacle.name}.json`, pentacle);
-    });
+    // Custom Pentacles appear to be broken right now. Will revist later.
+    // pentacles.forEach((pentacle) => {
+    //     event.addJson(`occultism:occultism_pentacles/${pentacle.name}.json`, pentacle);
+    // });
 });
