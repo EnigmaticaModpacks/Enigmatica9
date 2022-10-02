@@ -6,10 +6,10 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/occultism/ritual/';
     const recipes = [
         {
-            ritual_type: 'occultism:summon',
+            ritual_type: 'occultism:craft',
             activation_item: 'minecraft:golden_apple',
             pentacle_id: 'occultism:summon_foliot',
-            duration: 30,
+            duration: 5,
             ritual_dummy: 'kubejs:summon_death_tome',
             ingredients: [
                 'minecraft:ghast_tear',

@@ -24,14 +24,7 @@ EntityEvents.spawned((event) => {
         // event.entity.item.count = 0;
         event.entity.item.m_41764_(0);
 
-        // Remove the entity.
-        // event.entity.discard();
-        //event.entity.m_146870_();
-        // event.entity.remove();
-        //event.entity.m_142687_();
-
         custom_spawns[item_type].entities.forEach((entity) => {
-            console.log(`/summon ${entity} ${randomFloat(x_coord, 2)} ${y_coord} ${randomFloat(z_coord, 2)}`);
             event.server.runCommand(
                 `/summon ${entity} ${randomFloat(x_coord, 2)} ${y_coord} ${randomFloat(z_coord, 2)}`
             );

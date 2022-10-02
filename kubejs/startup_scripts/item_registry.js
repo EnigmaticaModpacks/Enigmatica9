@@ -29,7 +29,7 @@ StartupEvents.registry('item', (event) => {
         event.create(item.name).group('KubeJS').texture(`kubejs:item/${item.texture}`);
     });
 
-    ritualDummies.forEach((item) => {
-        //event.create(item, 'occultism:ritual_dummy').group('KubeJS').texture('kubejs:item/ritual_dummy');
-    });
+    // ritualDummies.forEach((item) => {
+    //     event.create(item, 'occultism:ritual_dummy').group('KubeJS').texture('kubejs:item/ritual_dummy');
+    // });
 });
