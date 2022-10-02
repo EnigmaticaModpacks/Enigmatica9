@@ -1,0 +1,22 @@
+{
+    "pattern": [
+        "F   P P   F",
+        " PP     PP ",
+        " PWP H PWP ",
+        "  PP   PP  ",
+        "P         P",
+        "     0     ",
+        "P         P",
+        "  PP   PP  ",
+        " PWP   PWP ",
+        " PP     PP ",
+        "F   P P   F"
+    ],
+    "mapping": {
+        "0": "occultism:golden_sacrificial_bowl",
+        "P": { "block": "naturesaura:gold_powder" },
+        "W": { "block": "occultism:chalk_glyph_white" },
+        "F": { "block": "twilightforest:firefly_jar" },
+        "H": { "block": "twilightforest:naga_trophy" }
+    }
+}

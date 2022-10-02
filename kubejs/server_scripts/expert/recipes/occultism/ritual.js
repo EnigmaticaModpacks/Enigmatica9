@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
         {
             ritual_type: 'occultism:craft',
             activation_item: 'minecraft:golden_apple',
-            pentacle_id: 'occultism:summon_foliot',
+            pentacle_id: 'occultism:summon_familiar',
             duration: 5,
             ritual_dummy: 'kubejs:summon_death_tome',
             ingredients: [
