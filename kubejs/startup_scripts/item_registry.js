@@ -17,7 +17,8 @@ StartupEvents.registry('item', (event) => {
 
     const reusableItemTextures = [
         { name: 'altered_recipe_indicator', texture: 'enigmatica_tree' },
-        { name: 'disabled_recipe_indicator', texture: 'enigmatica_tree' }
+        { name: 'disabled_recipe_indicator', texture: 'enigmatica_tree' },
+        { name: 'summon_death_tome', texture: 'enigmatica_tree' }
     ];
 
     items.forEach((item) => {

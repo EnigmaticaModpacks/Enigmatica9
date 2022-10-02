@@ -95,3 +95,10 @@ function weightedEquipment(options) {
 
     return options[i].set;
 }
+
+function generateRandomOffset(number) {
+    let min = number - 2;
+    let max = number + 2;
+
+    return Math.random() * (max - min + 1) + min;
+}
