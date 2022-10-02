@@ -9,4 +9,11 @@
     "item.kubejs.blacksmiths_delight": "Blacksmith's Delight",
     "item.kubejs.scavengers_delight": "Scavenger's Delight",
     "item.kubejs.alchemists_delight": "Alchemist's Delight",
+
+    "item.kubejs.ritual_summon_death_tome": "Ritual: Summon Death Tome.",
+    "item.kubejs.ritual_summon_death_tome.tooltip": "Call forth ancient Death Tomes to retrieve the knowledge they guard.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_death_tome.started": "Started summoning Death Tomes.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_death_tome.finished": "Summoned Death Tomes successfully.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_death_tome.interrupted": "Summoning of Death Tomes interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_death_tome.conditions": "Not all requirements for this ritual are met."
 }

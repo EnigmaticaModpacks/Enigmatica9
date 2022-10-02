@@ -25,7 +25,7 @@ EntityEvents.spawned((event) => {
         event.entity.item.m_41764_(0);
 
         custom_spawns[item_type].entities.forEach((entity) => {
-            event.server.runCommand(
+            event.server.runCommandSilent(
                 `/summon ${entity} ${randomFloat(x_coord, 2)} ${y_coord} ${randomFloat(z_coord, 2)}`
             );
         });

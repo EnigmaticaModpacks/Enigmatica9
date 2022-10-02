@@ -5,20 +5,28 @@ ServerEvents.recipes((event) => {
 
     const id_prefix = 'enigmatica:expert/occultism/ritual/';
     const recipes = [
+        /*
+        Custom Summons
+        Custom Summon Rituals make use of a dummy item which, 
+        when spawned in world is immediately removed, triggering an actual summon. 
+        Define the summon in constants/custom_spawns.js
+
+        These should always use the 'occultism:craft' ritual_type
+        */
         {
-            ritual_type: 'occultism:craft',
-            activation_item: 'minecraft:golden_apple',
-            pentacle_id: 'occultism:summon_familiar',
-            duration: 5,
-            ritual_dummy: 'kubejs:summon_death_tome',
-            ingredients: [
-                'minecraft:ghast_tear',
-                'minecraft:ghast_tear',
-                'minecraft:ghast_tear',
-                'minecraft:ghast_tear'
-            ],
             result: 'kubejs:summon_death_tome',
-            id: `${id_prefix}summon_death_tome`
+            activation_item: '#forge:bookshelves',
+            ingredients: [
+                'ars_elemental:anima_essence',
+                'ars_nouveau:air_essence',
+                'ars_nouveau:air_essence',
+                'ars_elemental:anima_essence'
+            ],
+            ritual_dummy: 'kubejs:ritual_summon_death_tome',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_foliot',
+            duration: 20,
+            id: `${id_prefix}ritual_summon_death_tome`
         }
     ];
 
