@@ -8,17 +8,16 @@ ServerEvents.recipes((event) => {
         {
             ritual_type: 'occultism:summon',
             activation_item: 'minecraft:golden_apple',
-            pentacle_id: 'occultism:possess_djinni',
+            pentacle_id: 'occultism:summon_foliot',
             duration: 30,
-            entity_to_summon: 'kubejs:summon_death_tome',
-            ritual_dummy: 'kubejs:ritual_summon_death_tome',
+            ritual_dummy: 'kubejs:summon_death_tome',
             ingredients: [
                 'minecraft:ghast_tear',
                 'minecraft:ghast_tear',
                 'minecraft:ghast_tear',
                 'minecraft:ghast_tear'
             ],
-            result: 'occultism:jei_dummy/none',
+            result: 'kubejs:summon_death_tome',
             id: `${id_prefix}summon_death_tome`
         }
     ];
@@ -46,12 +45,22 @@ ServerEvents.recipes((event) => {
     recipes.forEach((recipe) => {
         recipe.type = 'occultism:ritual';
 
-        recipe.activation_item = Ingredient.of(recipe.activation_item).toJson();
+        recipe.activation_item = recipe.activation_item.startsWith('#')
+            ? Ingredient.of(recipe.activation_item).toJson()
+            : Item.of(recipe.activation_item).toJson();
+
         if (recipe.item_to_use) {
-            recipe.item_to_use = Ingredient.of(recipe.item_to_use).toJson();
+            recipe.item_to_use = recipe.item_to_use.startsWith('#')
+                ? Ingredient.of(recipe.item_to_use).toJson()
+                : Item.of(recipe.item_to_use).toJson();
         }
-        recipe.ritual_dummy = Ingredient.of(recipe.ritual_dummy).toJson();
-        recipe.ingredients = recipe.ingredients.map((input) => Ingredient.of(input).toJson());
+
+        recipe.ritual_dummy = Item.of(recipe.ritual_dummy).toJson();
+
+        recipe.ingredients = recipe.ingredients.map((input) =>
+            input.startsWith('#') ? Ingredient.of(input).toJson() : Item.of(input).toJson()
+        );
+
         recipe.result = Item.of(recipe.result).toJson();
 
         event.custom(recipe).id(recipe.id);

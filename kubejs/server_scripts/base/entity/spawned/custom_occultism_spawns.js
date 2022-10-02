@@ -11,6 +11,7 @@ EntityEvents.spawned((event) => {
         event.entity.item != null &&
         event.entity.item != undefined
     ) {
+        console.log(item_type);
         // Get Coordinates
         // let x_coord = event.entity.x;
         let x_coord = event.entity.m_20185_();
@@ -30,7 +31,8 @@ EntityEvents.spawned((event) => {
         //event.entity.m_142687_();
 
         custom_spawns[item_type].entities.forEach((entity) => {
-            event.server.runCommandSilent(
+            console.log(`/summon ${entity} ${randomFloat(x_coord, 2)} ${y_coord} ${randomFloat(z_coord, 2)}`);
+            event.server.runCommand(
                 `/summon ${entity} ${randomFloat(x_coord, 2)} ${y_coord} ${randomFloat(z_coord, 2)}`
             );
         });
