@@ -1,16 +1,11 @@
 EntityEvents.spawned((event) => {
-    if (event.entity.type !== 'minecraft:item') {
+    if (event.entity.type !== 'minecraft:item' || event.entity.item == null || event.entity.item == undefined) {
         return;
     }
 
     let item_type = event.entity.item.id.split(':')[1];
 
-    if (
-        event.entity.type == 'minecraft:item' &&
-        Object.keys(custom_spawns).includes(item_type) &&
-        event.entity.item != null &&
-        event.entity.item != undefined
-    ) {
+    if (Object.keys(custom_spawns).includes(item_type)) {
         console.log(item_type);
         // Get Coordinates
         // let x_coord = event.entity.x;
