@@ -4,7 +4,6 @@ EntityEvents.spawned((event) => {
     }
 
     let item_type = event.entity.item.id.split(':')[1];
-    console.log(item_type);
 
     if (
         event.entity.type == 'minecraft:item' &&
@@ -31,8 +30,8 @@ EntityEvents.spawned((event) => {
         //event.entity.m_142687_();
 
         custom_spawns[item_type].entities.forEach((entity) => {
-            event.server.runCommand(
-                `/summon ${entity} ${generateRandomOffset(x_coord)} ${y_coord} ${generateRandomOffset(z_coord)}`
+            event.server.runCommandSilent(
+                `/summon ${entity} ${randomFloat(x_coord, 2)} ${y_coord} ${randomFloat(z_coord, 2)}`
             );
         });
     }

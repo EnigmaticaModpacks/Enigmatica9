@@ -13,7 +13,7 @@ StartupEvents.registry('item', (event) => {
         'alchemists_delight'
     ];
 
-    const ritualDummies = [];
+    const ritualDummies = ['ritual_summon_death_tome'];
 
     const reusableItemTextures = [
         { name: 'altered_recipe_indicator', texture: 'enigmatica_tree' },
@@ -26,7 +26,7 @@ StartupEvents.registry('item', (event) => {
     });
 
     ritualDummies.forEach((item) => {
-        event.create(item).type('occultism:ritual_dummy').group('KubeJS').texture('kubejs:item/pentacle');
+        event.create(item).type('occultism:ritual_dummy').group('KubeJS').texture('kubejs:item/ritual_dummy');
     });
 
     reusableItemTextures.forEach((item) => {

@@ -96,9 +96,9 @@ function weightedEquipment(options) {
     return options[i].set;
 }
 
-function generateRandomOffset(number) {
-    let min = number - 2;
-    let max = number + 2;
+function randomFloat(number, offset) {
+    let min = number - offset;
+    let max = number + offset;
 
     return Math.random() * (max - min + 1) + min;
 }
