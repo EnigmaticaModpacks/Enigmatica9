@@ -246,7 +246,7 @@ ItemEvents.tooltip((event) => {
         },
         {
             items: ['kubejs:summon_death_tome'],
-            text: [Text.of(`Arcane Instrument: Configuration Tool`).lightPurple()]
+            text: [Text.of(`Summon a murder of Death Tomes.`).darkRed()]
         }
 
         /*

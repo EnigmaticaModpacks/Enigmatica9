@@ -19,8 +19,8 @@ ServerEvents.recipes((event) => {
             ingredients: [
                 'ars_elemental:anima_essence',
                 'ars_nouveau:air_essence',
-                'ars_nouveau:air_essence',
-                'ars_elemental:anima_essence'
+                'ars_elemental:anima_essence',
+                'ars_nouveau:air_essence'
             ],
             ritual_dummy: 'kubejs:ritual_summon_death_tome',
             ritual_type: 'occultism:craft',
