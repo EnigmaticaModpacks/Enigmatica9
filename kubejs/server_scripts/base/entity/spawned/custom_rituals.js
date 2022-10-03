@@ -40,8 +40,6 @@ EntityEvents.spawned((event) => {
                 event.server.runCommandSilent(
                     `/effect give @e[limit=${spell.limit},sort=nearest,x=${x},dx=${d},z=${z},dz=${d},y=${y},dy=${d}] ${spell.effect} ${spell.duration} ${amplifier} true`
                 );
-                // Extract the cost
-                event.server.runCommandSilent(`/naaura remove ${spell.cost}`);
             });
         }
     }

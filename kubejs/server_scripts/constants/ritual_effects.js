@@ -20,8 +20,7 @@ const ritual_effects = {
                     range: 10,
                     effect: 'minecraft:night_vision',
                     duration: 1800,
-                    level: 1,
-                    cost: 2000
+                    level: 1
                 }
             ]
         }
