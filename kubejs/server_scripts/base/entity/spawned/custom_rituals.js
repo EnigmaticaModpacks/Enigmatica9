@@ -3,9 +3,7 @@ EntityEvents.spawned((event) => {
         return;
     }
 
-    let item_type = event.entity.item.id.split(':')[1],
-        runInDim = `/execute in ${event.level.dimension} run`;
-
+    let item_type = event.entity.item.id.split(':')[1];
     if (Object.keys(ritual_effects).includes(item_type)) {
         // Get Coordinates
         // let x_coord = event.entity.x;
@@ -14,8 +12,10 @@ EntityEvents.spawned((event) => {
         let y_coord = event.entity.m_20186_();
         // let z_coord = event.entity.z;
         let z_coord = event.entity.m_20189_();
+        // Dimension to execute commands in
+        let runInDim = `/execute in ${event.level.dimension} run`;
 
-        // Set the count of the item to zero.
+        // Set the count of the item to zero, removing it.
         // event.entity.item.count = 0;
         event.entity.item.m_41764_(0);
 
