@@ -2,6 +2,18 @@ ServerEvents.highPriorityData((event) => {
     if (global.isExpertMode == false) {
         return;
     }
+    // Match blocks by Blockstate: https://klikli-dev.github.io/modonomicon/docs/multiblocks/state-matchers/blockstate-matcher/
+    // A: {
+    //     type: 'modonomicon:blockstate',
+    //     display: 'minecraft:chest[facing=east]',
+    //     block: 'minecraft:chest[facing=west]'
+    // }
+    // Match blocks by Tag: https://klikli-dev.github.io/modonomicon/docs/multiblocks/state-matchers/tag-matcher/
+    // A: {
+    //     type: 'modonomicon:tag',
+    //     tag: 'minecraft:planks'
+    // }
+
     let pentacles = [
         {
             name: 'summon_familiar',

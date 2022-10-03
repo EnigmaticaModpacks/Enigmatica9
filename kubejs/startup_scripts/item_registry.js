@@ -13,13 +13,14 @@ StartupEvents.registry('item', (event) => {
         'alchemists_delight'
     ];
 
-    const ritualDummies = ['ritual_summon_death_tome', 'ritual_spell_night_vision'];
+    const ritualDummies = ['ritual_summon_death_tome', 'ritual_spell_night_vision', 'ritual_teleport_everdawn'];
 
     const reusableItemTextures = [
         { name: 'altered_recipe_indicator', texture: 'enigmatica_tree' },
         { name: 'disabled_recipe_indicator', texture: 'enigmatica_tree' },
         { name: 'summon_death_tome', texture: 'ritual_dummy' },
-        { name: 'spell_night_vision', texture: 'ritual_dummy' }
+        { name: 'spell_night_vision', texture: 'ritual_dummy' },
+        { name: 'teleport_everdawn', texture: 'ritual_dummy' }
     ];
 
     items.forEach((item) => {

@@ -176,3 +176,11 @@ function generatePentacleEntry(ritual_name, x_placement, y_placement) {
 
     return entry;
 }
+
+function getSelectorArea(x_coord, y_coord, z_coord, diameter) {
+    let r = diameter / 2,
+        x = x_coord - r,
+        y = y_coord - r,
+        z = z_coord - r;
+    return `x=${x},dx=${diameter},z=${z},dz=${diameter},y=${y},dy=${diameter}`;
+}
