@@ -24,8 +24,8 @@ ServerEvents.recipes((event) => {
             ],
             ritual_dummy: 'kubejs:ritual_summon_death_tome',
             ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:summon_foliot',
-            duration: 20,
+            pentacle_id: 'occultism:summon_evil',
+            duration: 10,
             id: `${id_prefix}ritual_summon_death_tome`
         }
     ];

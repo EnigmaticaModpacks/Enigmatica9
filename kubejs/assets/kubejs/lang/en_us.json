@@ -10,6 +10,16 @@
     "item.kubejs.scavengers_delight": "Scavenger's Delight",
     "item.kubejs.alchemists_delight": "Alchemist's Delight",
 
+    "multiblock.occultism.summon_familiar": "Aching's Amicable Accord",
+    "book.occultism.dictionary_of_spirits.pentacles.summon_familiar.name": "Aching's Amicable Accord",
+    "book.occultism.dictionary_of_spirits.pentacles.summon_familiar.intro.title": "A Familiar Problem",
+    "book.occultism.dictionary_of_spirits.pentacles.summon_familiar.intro.text": "Summon a Familiar.",
+
+    "multiblock.occultism.summon_evil": "Birog's Baleful Binding",
+    "book.occultism.dictionary_of_spirits.pentacles.summon_evil.name": "Birog's Baleful Binding",
+    "book.occultism.dictionary_of_spirits.pentacles.summon_evil.intro.title": "A Dreadful Affair",
+    "book.occultism.dictionary_of_spirits.pentacles.summon_evil.intro.text": "Summon evil creatures.",
+
     "item.kubejs.ritual_summon_death_tome": "Ritual: Summon Death Tome.",
     "item.kubejs.ritual_summon_death_tome.tooltip": "Call forth ancient Death Tomes to retrieve the knowledge they guard.",
     "ritual.enigmatica.occultism/ritual/ritual_summon_death_tome.started": "Started summoning Death Tomes.",
