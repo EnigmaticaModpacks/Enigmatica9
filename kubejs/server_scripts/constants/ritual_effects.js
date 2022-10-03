@@ -39,7 +39,7 @@ const ritual_effects = {
             arrival: 'blue_skies:everdawn',
             // Only allow departure from these dimensions
             departure: ['blue_skies:everbright', 'twilightforest:twilight_forest'],
-            // How random the teleport destionation is
+            // How random the teleport destination is
             uncertainty: 5000,
             // Maximum number of entities to affect
             limit: 3,
