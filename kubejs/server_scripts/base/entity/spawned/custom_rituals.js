@@ -26,5 +26,23 @@ EntityEvents.spawned((event) => {
                 );
             });
         }
+
+        if (ritual_effects[item_type].potion) {
+            ritual_effects[item_type].potion.spells.forEach((spell) => {
+                let d = spell.range,
+                    r = d / 2,
+                    x = x_coord - r,
+                    y = y_coord - r,
+                    z = z_coord - r,
+                    amplifier = spell.level - 1 < 0 ? 0 : spell.level - 1;
+
+                // Apply desired spell
+                event.server.runCommandSilent(
+                    `/effect give @e[limit=${spell.limit},sort=nearest,x=${x},dx=${d},z=${z},dz=${d},y=${y},dy=${d}] ${spell.effect} ${spell.duration} ${amplifier} true`
+                );
+                // Extract the cost
+                event.server.runCommandSilent(`/naaura remove ${spell.cost}`);
+            });
+        }
     }
 });
