@@ -3,7 +3,8 @@ EntityEvents.spawned((event) => {
         return;
     }
 
-    let item_type = event.entity.item.id.split(':')[1];
+    let item_type = event.entity.item.id.split(':')[1],
+        runInDimension = `execute in ${event.level.dimension} run`;
 
     if (Object.keys(ritual_effects).includes(item_type)) {
         // Get Coordinates
@@ -21,8 +22,12 @@ EntityEvents.spawned((event) => {
         if (ritual_effects[item_type].summon) {
             let range = ritual_effects[item_type].summon.range;
             ritual_effects[item_type].summon.entities.forEach((entity) => {
+                // Summon desired entities
                 event.server.runCommandSilent(
-                    `/summon ${entity} ${randomFloat(x_coord, range)} ${y_coord} ${randomFloat(z_coord, range)}`
+                    `/${runInDimension} summon ${entity} ${randomFloat(x_coord, range)} ${y_coord} ${randomFloat(
+                        z_coord,
+                        range
+                    )}`
                 );
             });
         }
@@ -35,10 +40,9 @@ EntityEvents.spawned((event) => {
                     y = y_coord - r,
                     z = z_coord - r,
                     amplifier = spell.level - 1 < 0 ? 0 : spell.level - 1;
-
                 // Apply desired spell
                 event.server.runCommandSilent(
-                    `/effect give @e[limit=${spell.limit},sort=nearest,x=${x},dx=${d},z=${z},dz=${d},y=${y},dy=${d}] ${spell.effect} ${spell.duration} ${amplifier} true`
+                    `/${runInDimension} effect give @e[limit=${spell.limit},sort=nearest,x=${x},dx=${d},z=${z},dz=${d},y=${y},dy=${d}] ${spell.effect} ${spell.duration} ${amplifier} true`
                 );
             });
         }
