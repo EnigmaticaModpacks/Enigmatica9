@@ -5,7 +5,7 @@ EntityEvents.spawned((event) => {
 
     let item_type = event.entity.item.id.split(':')[1];
 
-    if (Object.keys(custom_spawns).includes(item_type)) {
+    if (Object.keys(ritual_effects).includes(item_type)) {
         // Get Coordinates
         // let x_coord = event.entity.x;
         let x_coord = event.entity.m_20185_();
@@ -18,10 +18,13 @@ EntityEvents.spawned((event) => {
         // event.entity.item.count = 0;
         event.entity.item.m_41764_(0);
 
-        custom_spawns[item_type].entities.forEach((entity) => {
-            event.server.runCommandSilent(
-                `/summon ${entity} ${randomFloat(x_coord, 2)} ${y_coord} ${randomFloat(z_coord, 2)}`
-            );
-        });
+        if (ritual_effects[item_type].summon) {
+            let range = ritual_effects[item_type].summon.range;
+            ritual_effects[item_type].summon.entities.forEach((entity) => {
+                event.server.runCommandSilent(
+                    `/summon ${entity} ${randomFloat(x_coord, range)} ${y_coord} ${randomFloat(z_coord, range)}`
+                );
+            });
+        }
     }
 });
