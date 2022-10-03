@@ -22,13 +22,11 @@ EntityEvents.spawned((event) => {
         if (ritual_effects[item_type].summon) {
             let range = ritual_effects[item_type].summon.range;
             ritual_effects[item_type].summon.entities.forEach((entity) => {
+                let x = randomFloat(x_coord, range),
+                    y = y_coord,
+                    z = randomFloat(z_coord, range);
                 // Summon desired entities
-                event.server.runCommandSilent(
-                    `${runInDim} summon ${entity} ${randomFloat(x_coord, range)} ${y_coord} ${randomFloat(
-                        z_coord,
-                        range
-                    )}`
-                );
+                event.server.runCommandSilent(`${runInDim} summon ${entity} ${x} ${y} ${z}`);
             });
         }
 
