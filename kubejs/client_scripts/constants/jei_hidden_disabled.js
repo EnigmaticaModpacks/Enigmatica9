@@ -24,6 +24,7 @@ jei.base.items.hidden = [
     'kubejs:epic_lootbox',
     'kubejs:rare_lootbox',
     'kubejs:common_lootbox',
+    'kubejs:summon_death_tome',
     'naturesaura:multiblock_maker',
     'sophisticatedstorage:debug_tool',
     'occultism:debug_djinni_test',

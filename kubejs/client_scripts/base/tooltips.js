@@ -243,6 +243,10 @@ ItemEvents.tooltip((event) => {
         {
             items: ['ars_nouveau:dominion_wand'],
             text: [Text.of(`Arcane Instrument: Configuration Tool`).lightPurple()]
+        },
+        {
+            items: ['kubejs:summon_death_tome'],
+            text: [Text.of(`Summon a murder of Death Tomes.`).darkRed()]
         }
 
         /*
