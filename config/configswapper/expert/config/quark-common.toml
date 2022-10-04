@@ -52,7 +52,7 @@
 	"Feeding Trough" = true
 	"Ender Watcher" = true
 	"Dispensers Place Blocks" = true
-	Chute = true
+	Chute = false
 	"Chains Connect Blocks" = true
 
 	[automation.pistons_move_tile_entities]
