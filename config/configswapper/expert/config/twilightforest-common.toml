@@ -5,7 +5,7 @@ allowPortalsInOtherDimensions = false
 #Allow portals only for admins (Operators). This severely reduces the range in which the mod usually scans for valid portal conditions, and it scans near ops only.
 adminOnlyPortals = false
 #Disable Twilight Forest portal creation entirely. Provided for server operators looking to restrict action to the dimension.
-disablePortalCreation = false
+disablePortalCreation = true
 #Determines if new portals should be pre-checked for safety. If enabled, portals will fail to form rather than redirect to a safe alternate destination.
 #Note that enabling this also reduces the rate at which portal formation checks are performed.
 checkPortalDestination = false
@@ -26,7 +26,7 @@ skull_candles = false
 #Settings that are not reversible without consequences.
 ["Dimension Settings"]
 	#If true, players spawning for the first time will spawn in the Twilight Forest.
-	newPlayersSpawnInTF = false
+	newPlayersSpawnInTF = true
 	#If true, the return portal will spawn for new players that were sent to the TF if `spawn_in_tf` is true.
 	portalForNewPlayer = false
 
