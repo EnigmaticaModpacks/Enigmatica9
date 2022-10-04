@@ -2,13 +2,14 @@ ServerEvents.loaded((event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    if (!event.server.persistentData.defaultGamerulesLoaded) {
-        event.server.persistentData.defaultGamerulesLoaded = 1;
-        let gamerules = ['tfEnforcedProgression false'];
 
-        gamerules.forEach((gamerule) => {
-            event.server.runCommandSilent(`/gamerule ${gamerule}`);
-            console.log(`Default Gamerule Applied: ${gamerule}`);
-        });
-    }
+    let gamerules = [{ rule: 'tfEnforcedProgression', value: 'false' }];
+
+    gamerules.forEach((gamerule) => {
+        if (!event.server.persistentData[gamerule.rule]) {
+            event.server.runCommandSilent(`/gamerule ${gamerule.rule}`);
+            console.log(`Default Gamerule Applied: ${gamerule.rule} = ${gamerule.value}`);
+            event.server.persistentData[gamerule.rule] = gamerule.value;
+        }
+    });
 });
