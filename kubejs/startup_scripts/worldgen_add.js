@@ -1,4 +1,5 @@
 WorldgenEvents.add((event) => {
+    // https://mods.latvian.dev/books/kubejs/page/worldgen-events
     /*
     event.addSpawn((spawn) => {
         spawn.category = 'creature';
