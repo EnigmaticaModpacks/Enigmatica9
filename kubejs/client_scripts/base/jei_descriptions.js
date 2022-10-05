@@ -159,6 +159,29 @@ JEIEvents.information((event) => {
                 'quark:red_corundum_cluster'
             ],
             text: ['Grows occasionally on Corundum Blocks when grown underground.']
+        },
+        {
+            items: ['naturesaura:infused_iron_pickaxe'],
+            text: [
+                'Right-Click Conversions:',
+                ' ',
+                'Cobblestone',
+                '⤷ Mossy Cobblestone',
+                'Stone Bricks',
+                '⤷ Mossy Stone Bricks',
+                'Cobblestone Wall',
+                '⤷ Mossy Cobblestone Wall',
+                ' ',
+                'Stone Brick Wall',
+                '⤷ Mossy Stone Brick Wall',
+                'Farmland',
+                '⤷ Rich Soil Farmland',
+                'Roots',
+                '⤷ Liveroots',
+                'Stone',
+                '⤷ Moss Block',
+                ' '
+            ]
         }
     ];
 
