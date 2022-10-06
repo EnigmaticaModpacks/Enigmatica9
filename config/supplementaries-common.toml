@@ -64,6 +64,7 @@
 		#sets velocity changed flag when pushing entities +
 		#causes pushing animation to be smooth client side but also restricts player movement when being pushed
 		velocity_changed_flag = true
+		#maximum range
 		#note that it will still only keep alive the two fire blocks closer to it
 		#Range: 0 ~ 16
 		range = 5
@@ -228,8 +229,6 @@
 		#Spawn attempts per chunk. Increases spawn frequency
 		#Range: 0 ~ 100
 		spawn_attempts = 7
-		#Biomes in which urns won't spawn
-		biome_blacklist = ["minecraft:lush_caves", "minecraft:dripstone_caves"]
 
 	[spawns.misc]
 		#slightly increase this or decrease this number to tweak the red marchant spawn chance. Won't spawn at 0 and will spawn twice as often on 2

@@ -1,3 +1,4 @@
+#General configuration
 #How much time (ms) to wait before reporting an exception again
 #Range: 1 ~ 10000000
 loggingThrowableTimeout = 20000
