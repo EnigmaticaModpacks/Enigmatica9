@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             output: 'naturesaura:infused_stone',
-            input: 'aminecraft:calcite',
+            input: 'minecraft:calcite',
             aura_type: 'naturesaura:overworld',
             aura: 7500,
             time: 40,

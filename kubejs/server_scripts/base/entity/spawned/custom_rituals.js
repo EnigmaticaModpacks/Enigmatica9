@@ -6,21 +6,24 @@ EntityEvents.spawned((event) => {
     let item_type = event.entity.item.id.split(':')[1];
     if (Object.keys(ritual_effects).includes(item_type)) {
         // Get Coordinates
-        // let x_coord = event.entity.x;
-        let x_coord = event.entity.m_20185_();
-        // let y_coord = event.entity.y;
-        let y_coord = event.entity.m_20186_();
-        // let z_coord = event.entity.z;
-        let z_coord = event.entity.m_20189_();
+        let x_coord = event.entity.x;
+        // let x_coord = event.entity.m_20185_();
+        let y_coord = event.entity.y;
+        // let y_coord = event.entity.m_20186_();
+        let z_coord = event.entity.z;
+        // let z_coord = event.entity.m_20189_();
+        // console.log(`Coordinates: ${x_coord} ${y_coord} ${z_coord}`);
+
         // Dimension ritual was executed in
-        let ritual_dimension = String(event.level.dimension);
+        let ritual_dimension = String(event.level.getDimension());
+
         // Set the count of the item to zero, removing it.
-        // event.entity.item.count = 0;
-        event.entity.item.m_41764_(0);
+        event.entity.item.count = 0;
+        // event.entity.item.m_41764_(0);
         // Get Ritual
         let ritual_effect = ritual_effects[item_type];
         // Instantiate the rest of our variables
-        let spread, x, y, z, area, amplifier, limit, effect, duration, destination;
+        let spread, x, y, z, area, amplifier, limit, effect, duration, destination, command;
 
         if (ritual_effect.summon) {
             spread = ritual_effect.summon.spread;
@@ -29,7 +32,9 @@ EntityEvents.spawned((event) => {
                 y = y_coord;
                 z = randomFloat(z_coord, spread);
                 // Summon desired entities
-                event.server.runCommandSilent(`/execute in ${ritual_dimension} run summon ${entity} ${x} ${y} ${z}`);
+                command = `/execute in ${ritual_dimension} run summon ${entity} ${x} ${y} ${z}`;
+                // console.log(command);
+                event.server.runCommandSilent(command);
             });
         }
 
@@ -43,9 +48,9 @@ EntityEvents.spawned((event) => {
                 duration = spell.duration;
 
                 // Apply desired spell
-                event.server.runCommandSilent(
-                    `/execute in ${ritual_dimension} run effect give @e[limit=${limit},sort=nearest,${area}] ${effect} ${duration} ${amplifier} true`
-                );
+                command = `/execute in ${ritual_dimension} run effect give @e[limit=${limit},sort=nearest,${area}] ${effect} ${duration} ${amplifier} true`;
+                // console.log(command);
+                event.server.runCommandSilent(command);
             });
         }
 
@@ -60,15 +65,15 @@ EntityEvents.spawned((event) => {
                 destination = ritual_effect.teleport.arrival;
 
                 // Yeet the player to the target dimension
-                event.server.runCommandSilent(
-                    `/execute in ${ritual_dimension} as @e[limit=${limit},sort=nearest,${area}] in ${destination} run tp ${x} ${y} ${z}`
-                );
+                command = `/execute in ${ritual_dimension} as @e[limit=${limit},sort=nearest,${area}] in ${destination} run tp ${x} ${y} ${z}`;
+                // console.log(command);
+                event.server.runCommandSilent(command);
             } else {
                 // Warn player this cannot be perfomed in this dimension.
                 area = getSelectorArea(x_coord, y_coord, z_coord, 10);
-                event.server.runCommandSilent(
-                    `/execute in ${ritual_dimension} run tellraw @p[${area}] "Ritual Destination unreachable from here."`
-                );
+                command = `/execute in ${ritual_dimension} run tellraw @p[${area}] "Ritual Destination unreachable from here."`;
+                // console.log(command);
+                event.server.runCommandSilent(command);
             }
         }
     }
