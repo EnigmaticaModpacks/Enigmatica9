@@ -68,10 +68,10 @@ $CLIENT_RELEASE_TYPE = "alpha"
 #=====================================================================//
 
 # File name of the latest https://github.com/TheRandomLabs/ChangelogGenerator/releases
-$CHANGELOG_GENERATOR_JAR = "ModListCreator-4.0.2-fatjar.jar"
+$CHANGELOG_GENERATOR_JAR = "ModListCreator-4.0.3-fatjar.jar"
 
 # File name of the latest https://github.com/MelanX/ModListCreator/releases
-$MODLIST_CREATOR_JAR = "ModListCreator-4.0.2-fatjar.jar"
+$MODLIST_CREATOR_JAR = "ModListCreator-4.0.3-fatjar.jar"
 
 #=====================================================================//
 #  CLIENT FILE SETTINGS
