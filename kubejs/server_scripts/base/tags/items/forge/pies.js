@@ -1,3 +1,3 @@
- ServerEvents.tags('item', event => {
+ServerEvents.tags('item', (event) => {
     event.get('forge:pies').add(/_pie$/);
 });
