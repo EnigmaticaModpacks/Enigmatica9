@@ -1,3 +1,7 @@
+param (
+   [string]$mode = "default"
+)
+
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 $manifest = "manifest.json"
@@ -12,10 +16,6 @@ function Validate-SecretsFile {
         New-Item -Path $PSScriptRoot -ItemType File -Name $secretsFile -Value "# To generate an API token go to: https://authors.curseforge.com/account/api-tokens `n $CURSEFORGE_TOKEN = `"your-curseforge-token-here`""
     }
 }
-
-. "$PSScriptRoot\settings.ps1"
-. "$PSScriptRoot\$secretsFile"
-
 
 function Get-GitHubRelease {
     param(
@@ -365,15 +365,12 @@ function Update-Modlist {
     if ($ENABLE_MODLIST_CREATOR_MODULE) {
         if (-not (Test-Path $MODLIST_CREATOR_JAR) -or $ENABLE_ALWAYS_UPDATE_JARS) {
             Remove-Item $MODLIST_CREATOR_JAR -Recurse -Force -ErrorAction SilentlyContinue
-            Get-GitHubRelease -repo "MelanX/ModListCreator" -file $MODLIST_CREATOR_JAR
+            Get-GitHubRelease -repo "ModdingX/ModListCreator" -file $MODLIST_CREATOR_JAR
         }
 
         Remove-Item $MODLIST_PATH -ErrorAction SilentlyContinue
-        java -jar $MODLIST_CREATOR_JAR --markdown --output ".\" --detailed --manifest "$CLIENT_ZIP_NAME.zip"
-        Copy-Item -Path "MODLIST.md" -Destination $MODLIST_PATH -ErrorAction SilentlyContinue
-        Move-Item -Path "MODLIST.md" -Destination "MODLIST.md" -ErrorAction SilentlyContinue -Force
-        Copy-Item -Path "automation\MODLIST.md" -Destination $MODLIST_PATH -ErrorAction SilentlyContinue
-        Move-Item -Path "automation\MODLIST.md" -Destination "MODLIST.md" -ErrorAction SilentlyContinue -Force
+        java -jar $MODLIST_CREATOR_JAR modlist --output $MODLIST_PATH --detailed "$CLIENT_ZIP_NAME.zip"
+        Copy-Item -Path $MODLIST_PATH -Destination "$INSTANCE_ROOT/MODLIST.md"
     }
 }
 
@@ -384,21 +381,35 @@ function Remove-LeadingZero {
     return [int]$text
 }
 
+. "$PSScriptRoot\settings.ps1"
+
 $startLocation = Get-Location
 Set-Location $INSTANCE_ROOT
 
-Test-ForDependencies
-Validate-SecretsFile
-New-ClientFiles
-Push-ClientFiles
-if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
-    New-ServerFiles
+switch($mode) {
+    "default" {
+        . "$PSScriptRoot\$secretsFile"
+
+        Test-ForDependencies
+        Validate-SecretsFile
+        New-ClientFiles
+        Push-ClientFiles
+        if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
+            New-ServerFiles
+        }
+        New-GitHubRelease
+        New-Changelog
+        Update-Modlist
+
+        Write-Host "Modpack Upload Complete!" -ForegroundColor Green
+        Set-Location $startLocation
+
+        pause
+        break
+    }
+    "modlist" {
+        New-ClientFiles
+        Update-Modlist
+        break
+    }
 }
-New-GitHubRelease
-New-Changelog
-Update-Modlist
-
-Write-Host "Modpack Upload Complete!" -ForegroundColor Green
-Set-Location $startLocation
-
-pause
