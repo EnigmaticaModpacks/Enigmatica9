@@ -1,4 +1,4 @@
- ServerEvents.tags('item', event => {
+ServerEvents.tags('item', (event) => {
     event.add('forge:coral_blocks', [/\w+:(?!dead)(\w+)_coral_block$/]);
     event.add('forge:dead_coral_blocks', [/dead_\w+coral_block$/]);
 

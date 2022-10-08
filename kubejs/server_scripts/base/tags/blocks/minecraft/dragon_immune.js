@@ -1,4 +1,4 @@
- ServerEvents.tags('block', event => {
+ServerEvents.tags('block', (event) => {
     const blocks = ['minecraft:skeleton_skull', 'minecraft:wither_skeleton_skull'];
     event.get('minecraft:dragon_immune').add(blocks);
 });

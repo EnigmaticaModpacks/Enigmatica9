@@ -1,4 +1,4 @@
- ServerEvents.tags('item', event => {
+ServerEvents.tags('item', (event) => {
     // stonecuttables.forEach((stoneType) => {
     //     var tag = `enigmatica:stonecuttables/${stoneType.name}`;
     //     event.add('enigmatica:stonecuttables', ['#' + tag]);

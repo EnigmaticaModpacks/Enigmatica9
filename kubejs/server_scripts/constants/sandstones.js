@@ -12,4 +12,4 @@ const sandstones = [
     'minecraft:red_sandstone',
     'minecraft:sandstone',
     'quark:soul_sandstone'
-]
+];

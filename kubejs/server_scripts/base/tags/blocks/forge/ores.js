@@ -1,4 +1,4 @@
- ServerEvents.tags('block', event => {
+ServerEvents.tags('block', (event) => {
     event.add('forge:ores', ['minecraft:ancient_debris']);
 
     event.get('forge:ores/nether/gold').add('minecraft:nether_gold_ore');
