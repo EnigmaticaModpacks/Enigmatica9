@@ -1,3 +1,7 @@
+param (
+   [string]$mode = "default"
+)
+
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 $manifest = "manifest.json"
@@ -12,10 +16,6 @@ function Validate-SecretsFile {
         New-Item -Path $PSScriptRoot -ItemType File -Name $secretsFile -Value "# To generate an API token go to: https://authors.curseforge.com/account/api-tokens `n $CURSEFORGE_TOKEN = `"your-curseforge-token-here`""
     }
 }
-
-. "$PSScriptRoot/settings.ps1"
-. "$PSScriptRoot/$secretsFile"
-
 
 function Get-GitHubRelease {
     param(
@@ -392,6 +392,8 @@ function Remove-LeadingZero {
     return [int]$text
 }
 
+. "$PSScriptRoot/settings.ps1"
+
 $startLocation = Get-Location
 Set-Location $INSTANCE_ROOT
 
@@ -404,17 +406,29 @@ else {
 }
 
 Test-ForDependencies
-Validate-SecretsFile
-New-ClientFiles
-Push-ClientFiles
-if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
-    New-ServerFiles
+
+switch($mode) {
+    "default" {
+        . "$PSScriptRoot/$secretsFile"
+        Validate-SecretsFile
+        New-ClientFiles
+        Push-ClientFiles
+        if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
+            New-ServerFiles
+        }
+        New-GitHubRelease
+        New-Changelog
+        Update-Modlist
+
+        Write-Host "Modpack Upload Complete!" -ForegroundColor Green
+        Set-Location $startLocation
+
+        pause
+        break
+    }
+    "modlist" {
+        New-ClientFiles
+        Update-Modlist
+        break
+    }
 }
-New-GitHubRelease
-New-Changelog
-Update-Modlist
-
-Write-Host "Modpack Upload Complete!" -ForegroundColor Green
-Set-Location $startLocation
-
-pause

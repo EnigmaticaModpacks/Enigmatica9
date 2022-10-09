@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/minecraft/stonecutting/';
 
     const recipes = [

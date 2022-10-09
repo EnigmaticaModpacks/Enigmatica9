@@ -1,4 +1,4 @@
- ServerEvents.tags('item', event => {
+ServerEvents.tags('item', (event) => {
     // colors.forEach((color) => {
     //     event
     //         .get(`forge:glass_panes/${color}`)

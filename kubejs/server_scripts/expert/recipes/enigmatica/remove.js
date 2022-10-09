@@ -11,7 +11,8 @@ ServerEvents.recipes((event) => {
         //     id: 'sample'
         // }
         { id: /immersiveengineering:blastfurnace\/fuel_charcoal/ },
-        { id: 'naturesaura:tree_ritual/ore_spawn_powder' }
+        { id: 'naturesaura:tree_ritual/ore_spawn_powder' },
+        { output: 'twilightforest:ironwood_ingot' }
     ];
 
     recipes.forEach((recipe) => {
