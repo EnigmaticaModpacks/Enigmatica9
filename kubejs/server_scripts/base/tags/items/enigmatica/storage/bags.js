@@ -7,9 +7,9 @@ ServerEvents.tags('item', (event) => {
         // 'industrialforegoing:infinity_backpack',
         // 'thermal:satchel',
         'occultism:satchel',
-        'hexerei:small_satchel',
-        'hexerei:medium_satchel',
-        'hexerei:large_satchel',
+        // 'hexerei:small_satchel',
+        // 'hexerei:medium_satchel',
+        // 'hexerei:large_satchel',
         '#create:toolboxes'
     ];
 

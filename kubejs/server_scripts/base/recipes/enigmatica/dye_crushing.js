@@ -19,22 +19,22 @@ ServerEvents.recipes((event) => {
             event.shapeless(Item.of(output, count), [input]).id(`${id_prefix}shapeless/${id_suffix}`);
 
             // Hexerei Mortar and Pestle
-            base_count = 15;
-            count = input_size == 'large' ? base_count * 2 : base_count;
-            event
-                .custom({
-                    type: 'hexerei:pestle_and_mortar',
-                    ingredients: [
-                        Ingredient.of(input).toJson(),
-                        Ingredient.of(input).toJson(),
-                        Ingredient.of(input).toJson(),
-                        Ingredient.of(input).toJson(),
-                        Ingredient.of(input).toJson()
-                    ],
-                    output: Item.of(output, count).toJson(),
-                    grindingTime: duration * 5
-                })
-                .id(`${id_prefix}hexerei/pestle_and_mortar/${id_suffix}`);
+            // base_count = 15;
+            // count = input_size == 'large' ? base_count * 2 : base_count;
+            // event
+            //     .custom({
+            //         type: 'hexerei:pestle_and_mortar',
+            //         ingredients: [
+            //             Ingredient.of(input).toJson(),
+            //             Ingredient.of(input).toJson(),
+            //             Ingredient.of(input).toJson(),
+            //             Ingredient.of(input).toJson(),
+            //             Ingredient.of(input).toJson()
+            //         ],
+            //         output: Item.of(output, count).toJson(),
+            //         grindingTime: duration * 5
+            //     })
+            //     .id(`${id_prefix}hexerei/pestle_and_mortar/${id_suffix}`);
 
             // Occultism Crushing
             base_count = 3;
