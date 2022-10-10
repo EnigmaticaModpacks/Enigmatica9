@@ -1,10 +1,14 @@
-### Enigmatica 9 v1.1.0
+### Enigmatica 9 v1.0.1
 
-_Using Forge-1.19.2-43.1.34_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica9/blob/master/changelogs/changelog_mods_1.1.0.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica9/blob/master/changelogs/modlist_1.1.0.md)_
+_Using Forge-1.19.2-43.1.34_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica9/blob/master/changelogs/changelog_mods_1.0.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica9/blob/master/changelogs/modlist_1.0.1.md)_
 
 **Fixed Bugs**
 
 -   Fixed players being unable to join servers
+
+**Improvements**
+
+-   Pre-loaded Eccentric Tome [\#60](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/60) ([MuteTiefling](https://github.com/MuteTiefling))
 
 **Added Mods**
 
