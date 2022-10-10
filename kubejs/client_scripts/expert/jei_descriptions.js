@@ -13,6 +13,10 @@ JEIEvents.information((event) => {
                 `● Ender Pearls`,
                 `● Bottles o' Enchanting`
             ]
+        },
+        {
+            items: ['blue_skies:turquoise_stonebrick', 'blue_skies:lunar_stonebrick'],
+            text: [`Blueskies Portals are disabled in Expert.`]
         }
     ];
 
