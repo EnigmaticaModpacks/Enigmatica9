@@ -1,3 +1,13 @@
+### Enigmatica 9 v1.0.2
+
+_Using Forge-1.19.2-43.1.34_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.0.2.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.0.2.md)_
+
+**Fixed Bugs**
+
+-   Revert Fairy Ring changes [\#61](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/61) ([MuteTiefling](https://github.com/MuteTiefling))
+
+---
+
 ### Enigmatica 9 v1.0.1
 
 _Using Forge-1.19.2-43.1.34_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.0.1.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.0.1.md)_
