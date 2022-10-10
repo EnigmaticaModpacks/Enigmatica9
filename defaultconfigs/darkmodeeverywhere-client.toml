@@ -2,7 +2,7 @@
 ["Button Position"]
 	#Pixels away from the bottom left of the GUI in the x axis
 	#Range: > 0
-	X = 28
+	X = 8
 	#Pixels away from the bottom left of the GUI in the y axis
 	#Range: > 0
 	Y = 2
