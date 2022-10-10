@@ -787,7 +787,7 @@
 	[world.fairy_rings]
 		"Forest Chance" = 0.00625
 		"Plains Chance" = 0.0025
-		Ores = []
+		Ores = ["minecraft:emerald_ore", "minecraft:diamond_ore"]
 
 		[world.fairy_rings.dimensions]
 			"Is Blacklist" = false
