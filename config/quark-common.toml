@@ -583,7 +583,7 @@
 
 	[world.fairy_rings]
 		"Forest Chance" = 0.00625
-		Ores = []
+		Ores = ["minecraft:emerald_ore", "minecraft:diamond_ore"]
 		"Plains Chance" = 0.0025
 
 		[world.fairy_rings.dimensions]
