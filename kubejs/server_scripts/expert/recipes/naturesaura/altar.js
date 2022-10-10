@@ -20,14 +20,10 @@ ServerEvents.recipes((event) => {
         recipe.type = 'naturesaura:altar';
 
         // input: { item: 'minecraft:stone' }
-        recipe.input = recipe.input.startsWith('#')
-            ? Ingredient.of(recipe.input).toJson()
-            : Item.of(recipe.input).toJson();
+        recipe.input = Ingredient.of(recipe.input).toJson();
 
         //  output: { item: 'naturesaura:infused_stone' },
-        recipe.output = recipe.output.startsWith('#')
-            ? Ingredient.of(recipe.output).toJson()
-            : Item.of(recipe.output).toJson();
+        recipe.output = Ingredient.of(recipe.output).toJson();
 
         event.custom(recipe).id(recipe.id);
     });

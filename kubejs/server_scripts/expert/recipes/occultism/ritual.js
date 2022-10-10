@@ -14,9 +14,9 @@ ServerEvents.recipes((event) => {
         These should always use the 'occultism:craft' ritual_type
         */
         {
-            result: 'kubejs:summon_death_tome',
+            output: 'kubejs:summon_death_tome',
             activation_item: '#forge:bookshelves',
-            ingredients: [
+            inputs: [
                 'ars_elemental:anima_essence',
                 'ars_nouveau:air_essence',
                 'ars_elemental:anima_essence',
@@ -32,7 +32,7 @@ ServerEvents.recipes((event) => {
 
     /*
         Ingredient Display in JEI
-            ingredients: [
+            inputs: [
                  '12 o'clock' ,
                  '3 o'clock' ,
                  '6 o'clock' ,
@@ -53,23 +53,22 @@ ServerEvents.recipes((event) => {
     recipes.forEach((recipe) => {
         recipe.type = 'occultism:ritual';
 
-        recipe.activation_item = recipe.activation_item.startsWith('#')
-            ? Ingredient.of(recipe.activation_item).toJson()
-            : Item.of(recipe.activation_item).toJson();
+        // activation_item: { item: 'occultism:book_of_binding_bound_marid' },
+        recipe.activation_item = Ingredient.of(recipe.activation_item).toJson();
 
         if (recipe.item_to_use) {
-            recipe.item_to_use = recipe.item_to_use.startsWith('#')
-                ? Ingredient.of(recipe.item_to_use).toJson()
-                : Item.of(recipe.item_to_use).toJson();
+            // item_to_use: { item: 'minecraft:egg' },
+            recipe.item_to_use = Ingredient.of(recipe.item_to_use).toJson();
         }
 
+        // ritual_dummy: { item: 'occultism:ritual_dummy/craft_stabilizer_tier4' },
         recipe.ritual_dummy = Item.of(recipe.ritual_dummy).toJson();
 
-        recipe.ingredients = recipe.ingredients.map((input) =>
-            input.startsWith('#') ? Ingredient.of(input).toJson() : Item.of(input).toJson()
-        );
+        // ingredients: [{ item: 'occultism:storage_stabilizer_tier3' }, { tag: 'forge:storage_blocks/iesnium' }],
+        recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
 
-        recipe.result = Item.of(recipe.result).toJson();
+        // result: { item: 'occultism:storage_stabilizer_tier4' }
+        recipe.result = Item.of(recipe.output).toJson();
 
         event.custom(recipe).id(recipe.id);
     });
