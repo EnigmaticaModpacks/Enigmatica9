@@ -28,9 +28,7 @@ ServerEvents.recipes((event) => {
         recipe.entity = recipe.output;
 
         //  ingredients: [{ item: 'naturesaura:birth_spirit' }, { item: 'minecraft:feather' }],
-        recipe.ingredients = recipe.inputs.map((input) =>
-            input.startsWith('#') ? Ingredient.of(input).toJson() : Item.of(input).toJson()
-        );
+        recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
 
         event.custom(recipe).id(recipe.id);
     });

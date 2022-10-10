@@ -46,9 +46,7 @@ ServerEvents.recipes((event) => {
         recipe.type = 'naturesaura:tree_ritual';
 
         // ingredients: [{ item: 'minecraft:oak_sapling' }, { tag: '#minecraft:small_flowers' }],
-        recipe.ingredients = recipe.ingredients.map((input) =>
-            input.startsWith('#') ? Ingredient.of(input).toJson() : Item.of(input).toJson()
-        );
+        recipe.ingredients = recipe.ingredients.map((input) => Ingredient.of(input).toJson());
 
         // sapling: { item: 'minecraft:oak_sapling' },
         recipe.sapling = Item.of(recipe.sapling).toJson();
