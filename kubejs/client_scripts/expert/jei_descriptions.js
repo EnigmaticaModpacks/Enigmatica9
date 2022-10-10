@@ -15,7 +15,7 @@ JEIEvents.information((event) => {
             ]
         },
         {
-            items: ['blue_skies:turquoise_stonebrick', 'blue_skies:lunar_stonebrick'],
+            items: ['blue_skies:turquoise_stonebrick', 'blue_skies:lunar_stonebrick', 'blue_skies:zeal_lighter'],
             text: [`Blueskies Portals are disabled in Expert.`]
         }
     ];
