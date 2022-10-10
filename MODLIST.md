@@ -1,4 +1,4 @@
-## Enigmatica9 - 1.0.0
+## Enigmatica9 - 1.0.1
 
   * [AEInfinityBooster-1.19.2-1.2.0+11.jar](https://www.curseforge.com/minecraft/mc-mods/aeinfinitybooster/files/3940200) (by [hexeptiondev](https://www.curseforge.com/members/hexeptiondev/projects))
   * [AI-Improvements-1.19.2-0.5.2.jar](https://www.curseforge.com/minecraft/mc-mods/ai-improvements/files/4019127) (by [QueenOfMissiles](https://www.curseforge.com/members/QueenOfMissiles/projects))
@@ -118,12 +118,10 @@
   * [polymorph-forge-0.45.0+1.19.2.jar](https://www.curseforge.com/minecraft/mc-mods/polymorph/files/3930145) (by [TheIllusiveC4](https://www.curseforge.com/members/TheIllusiveC4/projects))
   * [PuzzlesLib-v4.3.9-1.19.2-Forge.jar](https://www.curseforge.com/minecraft/mc-mods/puzzles-lib/files/4017925) (by [Fuzs_](https://www.curseforge.com/members/Fuzs_/projects))
   * [Quark-3.3-371.jar](https://www.curseforge.com/minecraft/mc-mods/quark/files/3961436) (by [Vazkii](https://www.curseforge.com/members/Vazkii/projects))
-  * [refinedstorage-1.11.0.jar](https://www.curseforge.com/minecraft/mc-mods/refined-storage/files/4012621) (by [raoulvdberge](https://www.curseforge.com/members/raoulvdberge/projects))
   * [repurposed_structures_forge-6.3.1+1.19.2.jar](https://www.curseforge.com/minecraft/mc-mods/repurposed-structures/files/4017422) (by [telepathicgrunt](https://www.curseforge.com/members/telepathicgrunt/projects))
   * [rftoolsbase-1.19.1-4.0.3.jar](https://www.curseforge.com/minecraft/mc-mods/rftools-base/files/3970757) (by [McJty](https://www.curseforge.com/members/McJty/projects))
   * [rftoolsbuilder-1.19.1-5.0.4.jar](https://www.curseforge.com/minecraft/mc-mods/rftools-builder/files/3994831) (by [McJty](https://www.curseforge.com/members/McJty/projects))
   * [rhino-forge-1902.2.1-build.242.jar](https://www.curseforge.com/minecraft/mc-mods/rhino/files/4023100) (by [LatvianModder](https://www.curseforge.com/members/LatvianModder/projects))
-  * [rsrequestify-2.3.0.jar](https://www.curseforge.com/minecraft/mc-mods/rs-requestify/files/4014076) (by [Buuz135](https://www.curseforge.com/members/Buuz135/projects))
   * [moonlight-1.19.2-2.0.32.jar](https://www.curseforge.com/minecraft/mc-mods/selene/files/4019813) (by [MehVahdJukaar](https://www.curseforge.com/members/MehVahdJukaar/projects))
   * [serverconfigupdater-2.0.jar](https://www.curseforge.com/minecraft/mc-mods/serverconfig-updater/files/3585637) (by [Darkere](https://www.curseforge.com/members/Darkere/projects))
   * [Shrink-1.19-1.3.4.jar](https://www.curseforge.com/minecraft/mc-mods/shrink_/files/3906397) (by [Gigabit101](https://www.curseforge.com/members/Gigabit101/projects))
