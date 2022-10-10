@@ -8,6 +8,9 @@ _Using Forge-1.19.2-43.1.34_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Added Mods**
 
+-   [Enigmatic Graves](https://www.curseforge.com/minecraft/mc-mods/enigmatic-graves) (by [Quarris](https://www.curseforge.com/members/Quarris/projects))
+-   [FindMe](https://www.curseforge.com/minecraft/mc-mods/findme) (by [Buuz135](https://www.curseforge.com/members/Buuz135/projects))
+
 **Removed Mods**
 
 -   Hexerei, it will be readded once it's more stable
