@@ -22,10 +22,6 @@
 		azalea = true
 		flowering_azalea = true
 
-	[leaves_type.hexerei]
-		mahogany = true
-		willow = true
-
 	[leaves_type.blue_skies]
 		bluebright = true
 		starlit = true
@@ -148,10 +144,6 @@
 	[wood_type.quark]
 		azalea = true
 		blossom = true
-
-	[wood_type.hexerei]
-		mahogany = true
-		willow = true
 
 	[wood_type.blue_skies]
 		bluebright = true
