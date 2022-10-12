@@ -5,6 +5,7 @@
 	filename: "applied_energistics_2_wip"
 	title: "Applied Energistics 2 [WIP]"
 	icon: "ae2:drive"
+	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [

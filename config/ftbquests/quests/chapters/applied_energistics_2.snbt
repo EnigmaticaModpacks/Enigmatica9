@@ -5,6 +5,7 @@
 	filename: "applied_energistics_2"
 	title: "Applied Energistics 2"
 	icon: "ae2:drive"
+	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -236,22 +237,6 @@
 				type: "item"
 				item: "ae2:fluix_glass_cable"
 				count: 8
-			}]
-		}
-		{
-			x: 0.0d
-			y: 3.0d
-			subtitle: "Better, faster, stronger. What else could it be?"
-			dependencies: [
-				"74E1FEF2E87706BD"
-				"6472158860788570"
-				"1E9F113D3DA9A188"
-			]
-			id: "1A913231F97ADE45"
-			tasks: [{
-				id: "2A6A5C88C3B03406"
-				type: "item"
-				item: "ae2things:advanced_inscriber"
 			}]
 		}
 		{
