@@ -2,13 +2,6 @@ ServerEvents.tags('item', (event) => {
     var items = [
         '#forge:chests',
         // 'aquaculture:neptunes_bounty',
-        // 'cookingforblockheads:corner',
-        // 'cookingforblockheads:counter',
-        // 'cookingforblockheads:fruit_basket',
-        // 'cookingforblockheads:hanging_corner',
-        // 'cookingforblockheads:spice_rack',
-        // 'cookingforblockheads:tool_rack',
-        // 'engineersdecor:labeled_crate',
         'farmersdelight:basket',
         'immersiveengineering:crate',
         'immersiveengineering:minecart_reinforcedcrate',
@@ -18,8 +11,7 @@ ServerEvents.tags('item', (event) => {
         'minecraft:chest_minecart',
         'minecraft:dispenser',
         'minecraft:dropper'
-        // 'rftoolsstorage:modular_storage',
-        // 'tetra:rack'
+        // 'rftoolsstorage:modular_storage'
     ];
     var exceptions = [
         // 'aquaculture:treasure_chest',

@@ -1,0 +1,60 @@
+{
+	id: "0000000000000328"
+	group: ""
+	order_index: 0
+	filename: "hidden_quests"
+	title: "Hidden_Quests"
+	icon: "minecraft:experience_bottle"
+	subtitle: ["It does not exist, you are not seeing anything here"]
+	always_invisible: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Visit The End"
+			x: -10.0d
+			y: -8.0d
+			description: ["Visit The End"]
+			id: "0000000000000329"
+			tasks: [{
+				id: "000000000000032A"
+				type: "dimension"
+				dimension: "minecraft:the_end"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -8.0d
+			id: "000000000000046C"
+			tasks: [{
+				id: "000000000000046D"
+				type: "advancement"
+				icon: "minecraft:diamond"
+				advancement: "minecraft:story/mine_diamond"
+				criterion: ""
+			}]
+		}
+		{
+			x: -7.0d
+			y: -8.0d
+			id: "000000000000046E"
+			tasks: [{
+				id: "000000000000046F"
+				type: "advancement"
+				advancement: "minecraft:story/smelt_iron"
+				criterion: ""
+			}]
+		}
+		{
+			x: -10.0d
+			y: -6.5d
+			id: "0000000000000856"
+			tasks: [{
+				id: "0000000000000857"
+				type: "advancement"
+				advancement: "tetra:spelunking/ancient_ruins"
+				criterion: ""
+			}]
+		}
+	]
+}

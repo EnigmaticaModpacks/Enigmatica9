@@ -1,0 +1,288 @@
+{
+	id: "0000000000000044"
+	group: ""
+	order_index: 1
+	filename: "getting_started"
+	title: "Getting Started"
+	icon: "minecraft:nether_star"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome!"
+			icon: "minecraft:oak_sapling"
+			x: 0.0d
+			y: -6.0d
+			description: [
+				"Welcome to Enigmatica 9, we're glad to have you :D"
+				" "
+				"Quests are divided into 3 types:"
+				""
+				"- Exploring Enigmatica"
+				"- Learning Mods"
+				"- Challenges"
+				""
+				"You can learn more about each type below."
+				""
+				"Note that we're still working on quests, and this is a port of quests from Enigmatica 6 and 8, so It is possible that some of the quests will not work, or aren't relevant to the reality, and many more will be added in the future! Please do not report issues with quests marked as [WIP]."
+				""
+				"Port of older quest lines done by: Kanzaji"
+			]
+			size: 1.5d
+			min_width: 260
+			id: "0000000000000045"
+			tasks: [{
+				id: "0000000000000046"
+				type: "checkmark"
+				icon: "minecraft:oak_sapling"
+			}]
+			rewards: [{
+				id: "0000000000000A93"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: -5.0d
+			description: [
+				"The Exploration questline's purpose is to show what's available in the pack."
+				""
+				"These chapters are a great place to start if you're new to Modded Minecraft or if you're in the need for inspiration."
+				""
+				"It currently has the following chapters:"
+				"- Tools"
+				"- Storage"
+				"- Adventure"
+				"- Automation"
+			]
+			dependencies: ["0000000000000045"]
+			id: "00000000000002AC"
+			tasks: [{
+				id: "00000000000002AD"
+				type: "checkmark"
+				title: "Exploring Enigmatica"
+				icon: "minecraft:compass"
+			}]
+			rewards: [{
+				id: "00000000000002B4"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "minecraft:writable_book"
+			x: 0.0d
+			y: -3.5d
+			description: [
+				"The Learning Mods chapters are designed to help you get started with a mod, explain how to progress, and show off some of the things you can do."
+				""
+				"The chapters do not show everything that every mod has to offer, so make sure to explore if you want to find all the cool features."
+			]
+			dependencies: ["0000000000000045"]
+			id: "00000000000002AE"
+			tasks: [{
+				id: "00000000000002AF"
+				type: "checkmark"
+				title: "Learning Mods"
+			}]
+			rewards: [{
+				id: "00000000000002B2"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Challenges"
+			icon: "minecraft:wither_skeleton_skull"
+			x: 2.0d
+			y: -5.0d
+			description: [
+				"Challenge quests are, surprisingly, challenges for the more seasoned modded Minecraft players."
+				""
+				"They are still work in progress."
+			]
+			dependencies: ["0000000000000045"]
+			id: "00000000000002B0"
+			tasks: [{
+				id: "00000000000002B1"
+				type: "checkmark"
+				title: "Challenges"
+				icon: "minecraft:wither_skeleton_skull"
+			}]
+			rewards: [{
+				id: "00000000000002B3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Modded for Dummies"
+			x: 1.5d
+			y: -7.5d
+			subtitle: "Hey, listen!"
+			description: [
+				"If you're new to modded Minecraft, it can be a bit daunting to figure out what's what."
+				""
+				"That's why we made a book, to sum up the basics and give you a solid baseline to begin your modded journey!"
+			]
+			dependencies: ["0000000000000045"]
+			id: "00000000000006E9"
+			tasks: [{
+				id: "00000000000006EA"
+				type: "checkmark"
+				title: "Hey, listen!"
+				icon: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "patchouli:modded_for_dummies"
+					}
+				}
+			}]
+			rewards: [{
+				id: "00000000000006EB"
+				type: "item"
+				title: "Modded for Dummies"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "patchouli:modded_for_dummies"
+					}
+				}
+			}]
+		}
+		{
+			title: "Book"
+			x: -1.5d
+			y: -7.5d
+			subtitle: "Don't Panic"
+			description: [
+				"A vast repository of knowledge in the palm of your hands. This tome comes pre-populated with the manuals for each mod so they’re always at the ready. "
+				""
+				"● Right click to open the menu and choose a book. Once chosen, the Eccentric Tome transforms and becomes that book, for all intents and purposes. "
+				""
+				"● Left click the air to revert it back to the Eccentric Tome."
+				""
+				"● When transformed, sneak and press your Throw key to remove a given book. "
+				""
+				"●Craft the Tome with a book to merge them once more. "
+			]
+			dependencies: ["0000000000000045"]
+			min_width: 250
+			id: "1F5D6018C2E35C3D"
+			tasks: [{
+				id: "7781E2B735D79B56"
+				type: "item"
+				item: "minecraft:book"
+			}]
+			rewards: [{
+				id: "68C0A864D96B2AC8"
+				type: "item"
+				title: "Full Eccentric Tome"
+				item: {
+					id: "eccentrictome:tome"
+					Count: 1b
+					tag: {
+						"eccentrictome:mods": {
+							powah: {
+								0: {
+									id: "powah:book"
+									Count: 1b
+								}
+							}
+							ars_nouveau: {
+								0: {
+									id: "ars_nouveau:worn_notebook"
+									Count: 1b
+								}
+							}
+							blue_skies: {
+								0: {
+									id: "blue_skies:blue_journal"
+									Count: 1b
+								}
+							}
+							pneumaticcraft: {
+								0: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "pneumaticcraft:book"
+									}
+								}
+							}
+							ftbquests: {
+								0: {
+									id: "ftbquests:book"
+									Count: 1b
+								}
+							}
+							immersiveengineering: {
+								0: {
+									id: "immersiveengineering:manual"
+									Count: 1b
+								}
+							}
+							naturesaura: {
+								0: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "naturesaura:book"
+									}
+								}
+							}
+							patchouli: {
+								0: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "patchouli:modded_for_dummies"
+									}
+								}
+							}
+							rftoolsbase: {
+								0: {
+									id: "rftoolsbase:manual"
+									Count: 1b
+								}
+							}
+							littlelogistics: {
+								0: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "littlelogistics:guide"
+									}
+								}
+							}
+							occultism: {
+								0: {
+									id: "occultism:dictionary_of_spirits"
+									Count: 1b
+									tag: {
+										"modonomicon:book_id": "occultism:dictionary_of_spirits"
+									}
+								}
+								1: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "occultism:dictionary_of_spirits"
+									}
+								}
+							}
+						}
+						"eccentrictome:version": 1
+					}
+				}
+				only_one: true
+			}]
+		}
+	]
+}
