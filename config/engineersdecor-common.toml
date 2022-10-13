@@ -1,0 +1,20 @@
+
+#Settings affecting the logical server side.
+[server]
+
+	#Opt-out settings
+	[server.optout]
+		#Opt-out any block by its registry name ('*' wildcard matching, comma separated list, whitespaces ignored. You must match the whole name, means maybe add '*' also at the begin and end. Example: '*wood*,*steel*' excludes everything that has 'wood' or 'steel' in the registry name. The matching result is also traced in the log file. 
+		pattern_excludes = "*small_lab_furnace, *small_electrical_furnace, *factory_dropper, *factory_placer, *small_block_breaker, *factory_hopper, *small_waste_incinerator, *small_mineral_smelter, *small_freezer, *small_solar_panel, *small_milking_machine, *small_tree_cutter, *straight_pipe_valve, *straight_pipe_valve_redstone, *straight_pipe_valve_redstone_analog, *fluid_barrel, *small_fluid_funnel, *test_block"
+		#Prevent blocks from being opt'ed by registry name ('*' wildcard matching, comma separated list, whitespaces ignored. Evaluated before all other opt-out checks. You must match the whole name, means maybe add '*' also at the begin and end. Example: '*wood*,*steel*' includes everything that has 'wood' or 'steel' in the registry name.The matching result is also traced in the log file.
+		pattern_includes = ""
+
+	#Miscellaneous settings
+	[server.miscellaneous]
+		#Enables experimental features. Use at own risk.
+		with_experimental = false
+		#Enable that devices are dropped as item also in creative mode, allowing  to relocate them with contents and settings.
+		with_creative_mode_device_drops = false
+		#Enable debug log messages for trouble shooting. Don't activate if not really needed, this can spam the log file.
+		with_debug_logging = false
+
