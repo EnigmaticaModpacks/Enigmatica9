@@ -3,7 +3,7 @@
 	group: "72A9465344128AF9"
 	order_index: 0
 	filename: "create"
-	title: "Create [WIP, to REDO]"
+	title: "Create"
 	icon: "create:cogwheel"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -26,6 +26,7 @@
 				"~MuteTiefling \\& Kanzaji"
 			]
 			optional: true
+			min_width: 250
 			id: "0000000000000C40"
 			tasks: [{
 				id: "0000000000000C41"
@@ -393,6 +394,7 @@
 				"A single belt can stretch up to 20 blocks and each block space could conceivably attach it to another shaft line if necessary. To attach them, simply place the two shafts and then right click each with the belt in hand."
 			]
 			dependencies: ["0000000000000CCC"]
+			min_width: 250
 			id: "0000000000000CD8"
 			tasks: [{
 				id: "0000000000000CD9"
@@ -506,6 +508,7 @@
 				"Chutes may also be used to convey items upwards. If a chute has an encased fan set up directly on top of it, it can be used to pull items off a Belt. Of course, getting that item out requires some way of extracting from the chute, such as a Funnel."
 			]
 			dependencies: ["0000000000000CD8"]
+			min_width: 250
 			id: "0000000000000CE7"
 			tasks: [{
 				id: "0000000000000CE8"
@@ -630,6 +633,7 @@
 				"Linking occurs prior to placing the Arm, simply right click it onto permitted inventory types to set it. Right click again to toggle between input and output. The arm reaches four blocks in total. "
 			]
 			dependencies: ["0000000000000CD8"]
+			min_width: 250
 			id: "0000000000000CF4"
 			tasks: [{
 				id: "0000000000000CF5"
@@ -684,6 +688,7 @@
 				"Place the wheels with a single block gap between them. Items may be either dropped in the top or inserted in a more controlled manner by funneling them into the ‘block’ space where the two wheels meet. "
 			]
 			dependencies: ["0000000000000D1A"]
+			min_width: 250
 			id: "0000000000000CFE"
 			tasks: [{
 				id: "0000000000000CFF"
@@ -806,6 +811,7 @@
 				"While over any other block, however, a redstone signal is required to make it start. "
 			]
 			dependencies: ["0000000000000CFC"]
+			min_width: 250
 			id: "0000000000000D06"
 			tasks: [{
 				id: "0000000000000D07"
@@ -1102,7 +1108,11 @@
 			y: 4.0d
 			subtitle: "Spouting Off Nonsense"
 			description: ["The spout is paired with a Depot by placing it above the Depot. It will attempt to fill any item appearing on the Depot. For example, to make buckets of water, fill potion bottles, or make delicious tea!"]
-			dependencies: ["0000000000000D0F"]
+			dependencies: [
+				"0000000000000D0F"
+				"0000000000000D12"
+			]
+			dependency_requirement: "one_completed"
 			id: "0000000000000D23"
 			tasks: [{
 				id: "0000000000000D24"
@@ -1264,6 +1274,7 @@
 				"A great example of a mine cart-based contraption would be a tunnel bore mining machine. It could be set up to lay down its own track in front of it and pull up track behind it. It could even build its own bridges to avoid ravines!"
 			]
 			dependencies: ["0000000000000D2B"]
+			min_width: 250
 			id: "0000000000000D2F"
 			tasks: [{
 				id: "0000000000000D30"
@@ -1550,7 +1561,12 @@
 				""
 				"Note, the Hose Pulley itself does not pump by itself. Lower the hose into the fluid body and use set up a Mechanical Pump to do the work for you. "
 			]
-			dependencies: ["0000000000000D17"]
+			dependencies: [
+				"0000000000000D17"
+				"0000000000000D12"
+			]
+			dependency_requirement: "one_completed"
+			min_width: 250
 			id: "0000000000000D49"
 			tasks: [{
 				id: "0000000000000D4A"
@@ -1746,7 +1762,11 @@
 				""
 				"Really useful for storing honey from your bee farm!"
 			]
-			dependencies: ["0000000000000D0F"]
+			dependencies: [
+				"0000000000000D0F"
+				"0000000000000D12"
+			]
+			dependency_requirement: "one_completed"
 			min_width: 225
 			id: "28D17B54F4DE4D86"
 			tasks: [{
@@ -1800,6 +1820,8 @@
 				"It is possible and useful though! Listen, just heat up a tank full of water with, for example, Campfires, and it could be used to generate SU or... to drive a Whistle!"
 				""
 				"Ponder the Create tank to see how to build and level up your boiler!"
+				""
+				"Dev Note: Ponder for KubeJS Isn't ported onto 1.19.2 yet, so for now, you need to experiment on your own."
 			]
 			dependencies: [
 				"0000000000000D17"
@@ -1835,22 +1857,32 @@
 			y: 5.0d
 			subtitle: "High Pressure Steam... isn't that dangerous?"
 			description: [
-				"The ultimate SU Generator in existence. The Steam Engine uses the power of high pressure steam to generate insane amounts of SU."
+				"The ultimate SU Generation in existence. The Steam Engine uses the power of high pressure steam to generate insane amounts of SU."
 				""
-				"Just place one or more of them on the boiler, a shaft with 1 block seperation, heat up your boiler and you are good to go!"
-				"The level of the Boiler will affect the final SU generation rate, and it determines how many Steam engines it can power."
+				"Just place one or more of them on the boiler and a shaft 1 block in front of it, heat up your boiler and you are good to go!"
+				"The level of the Boiler will affect the final SU generation rate and how many Steam engines it can power."
+				""
+				"For more help, check out ponder for Steam Engine."
 			]
 			dependencies: [
 				"0000000000000CBD"
 				"57475E928AA806B5"
 				"363FDD8101225BFC"
 			]
-			min_width: 300
+			min_width: 250
 			id: "5B54E008C558007F"
 			tasks: [{
 				id: "7D00F9504A3F354F"
 				type: "item"
 				item: "create:steam_engine"
+			}]
+			rewards: [{
+				id: "1B26E3707C1728A2"
+				type: "command"
+				title: "Legendary Create Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
+				player_command: false
 			}]
 		}
 		{
@@ -1858,12 +1890,71 @@
 			x: 4.0d
 			y: 6.5d
 			shape: "octagon"
+			description: [
+				"I know that setting up few of the boilers is much easier than just upgrading one to its maximum, but I challenge you to do it!"
+				""
+				"Try to automate everything required. Everything is possible with just vanilla mechanics and Create. The only external input allowed is Netherrack.Try to automate everything required. Everything is possible with just vanilla mechanics and Create. The only external input allowed is Netherrack."
+				""
+				"This will combine nearly all mechanics available in Create, making it a great way to test your Create Innovator skills!"
+				""
+				"I will leave you with 1 last challenge and wish you good luck on your journey: Try to make it look good :wink:"
+			]
 			dependencies: ["5B54E008C558007F"]
 			id: "6FD9E1729C555465"
 			tasks: [{
 				id: "0CB0F80910911E18"
 				type: "checkmark"
 				title: "Challenge: Max level Steam Engine"
+			}]
+		}
+		{
+			title: "Trains"
+			icon: "create:track"
+			x: 12.5d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "Transport system for profesionals"
+			description: [
+				"Trains are another type of a modular contraption. They use special tracks, and require at least 1 Train station to operate. You can also setup time tables to automate train routes. "
+				""
+				"However, setting them up is much more complicated than just a classic minecart contraption, but don't you worry, as Create has rather in depth Ponder on how these work."
+				""
+				"So, what are you waiting for? Create your own train network!"
+			]
+			dependencies: ["0000000000000D2B"]
+			size: 1.125d
+			min_width: 250
+			id: "62D9A1A16024C3CD"
+			tasks: [
+				{
+					id: "6EB910AAB970DD49"
+					type: "item"
+					item: "create:track"
+					count: 16L
+				}
+				{
+					id: "46ED06FFF6481B08"
+					type: "item"
+					item: "create:track_station"
+				}
+				{
+					id: "51F37EEA49A25A12"
+					type: "item"
+					item: "create:controls"
+				}
+				{
+					id: "5B5472A962BB6A24"
+					type: "item"
+					item: "create:railway_casing"
+				}
+			]
+			rewards: [{
+				id: "50DD42ECCFA5F58A"
+				type: "command"
+				title: "Legendary Create Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
+				player_command: false
 			}]
 		}
 	]
