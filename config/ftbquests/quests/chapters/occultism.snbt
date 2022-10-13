@@ -2331,13 +2331,7 @@
 		}
 		{
 			title: "Summon Bat Familiar"
-			icon: {
-				id: "ftbquests:custom_icon"
-				Count: 1b
-				tag: {
-					Icon: "enigmatica:textures/quests_icons/night_vision_goggles.png"
-				}
-			}
+			icon: "occultism:lenses"
 			x: 1.0d
 			y: 0.5d
 			shape: "hexagon"
@@ -2389,10 +2383,20 @@
 		{
 			title: "Summon Deer Familiar"
 			icon: {
-				id: "ftbquests:custom_icon"
+				id: "twilightforest:yeti_boots"
 				Count: 1b
 				tag: {
-					Icon: "enigmatica:textures/quests_icons/moose_headgear.png"
+					Damage: 0
+					Enchantments: [
+						{
+							lvl: 2s
+							id: "minecraft:protection"
+						}
+						{
+							lvl: 4s
+							id: "minecraft:feather_falling"
+						}
+					]
 				}
 			}
 			x: 7.5d
