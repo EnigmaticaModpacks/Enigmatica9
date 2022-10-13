@@ -56,52 +56,5 @@
 				criterion: ""
 			}]
 		}
-		{
-			x: -7.0d
-			y: -6.5d
-			id: "1C3893EE1E5C6AAA"
-			tasks: [{
-				id: "35713147A16CD27C"
-				type: "checkmark"
-				title: "Restart Iron jetpack quests"
-			}]
-			rewards: [
-				{
-					id: "5133B05C6AC68271"
-					type: "gamestage"
-					auto: "invisible"
-					stage: "jetpack_1"
-					remove: true
-				}
-				{
-					id: "553AE13912904C45"
-					type: "gamestage"
-					auto: "invisible"
-					stage: "jetpack_2"
-					remove: true
-				}
-				{
-					id: "2F5B8828FF355997"
-					type: "gamestage"
-					auto: "invisible"
-					stage: "jetpack_3"
-					remove: true
-				}
-				{
-					id: "5622BF542E9D568A"
-					type: "gamestage"
-					auto: "invisible"
-					stage: "jetpack_4"
-					remove: true
-				}
-				{
-					id: "71A0F71042AAA99F"
-					type: "gamestage"
-					auto: "invisible"
-					stage: "jetpack_5"
-					remove: true
-				}
-			]
-		}
 	]
 }
