@@ -1568,8 +1568,6 @@
 				"https://wiki.aidancbrady.com/wiki/Fission_Reactor"
 				""
 				"The reactor may go super-critical and explode if it overheats, the leading cause of which is that it has run out of coolant. Therefore, the circuit breaker should trigger on High Temperature. It may also be prudent to build a second circuit breaker for Excess Waste to prevent venting radiation into the surrounding environment."
-				""
-				"Warning: Enigmatica 9 has tweaked Steam Production rates, so do not assume your reactor is safe. Test rigorously!"
 			]
 			dependencies: ["0000000000000795"]
 			min_width: 255
