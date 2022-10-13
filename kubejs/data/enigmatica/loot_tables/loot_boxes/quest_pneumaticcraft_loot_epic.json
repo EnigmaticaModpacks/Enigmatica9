@@ -47,6 +47,11 @@
                             "count": 4
                         }
                     ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "pneumaticcraft:large_tank"
                 }
             ]
         }

@@ -35,6 +35,11 @@
                     "type": "minecraft:item",
                     "weight": 1,
                     "name": "pneumaticcraft:smart_chest"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1 ,
+                    "name": "pneumaticcraft:huge_tank"
                 }
             ]
         }

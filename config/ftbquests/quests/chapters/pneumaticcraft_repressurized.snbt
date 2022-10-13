@@ -305,6 +305,7 @@
 				"● Fuelwood Heater"
 			]
 			dependencies: ["00000000000000CC"]
+			min_width: 250
 			id: "00000000000000CF"
 			tasks: [{
 				id: "00000000000000D0"
@@ -969,7 +970,7 @@
 			y: -10.0d
 			subtitle: "Redstone Evolution"
 			description: [
-				"Redstone Modules are used to read and output redstone signals by transmitting them over a pipe network.This does not require air to use."
+				"Redstone Modules are used to read and output redstone signals by transmitting them over a pipe network. This does not require air to use."
 				""
 				"Install a Module Expansion Card into one to allow it to perform much more complicated operations, such as acting as a clock, a signal counter, or a toggle. "
 			]
@@ -1000,6 +1001,7 @@
 				"Consider upgrading the redstone control on your compressor using a combination of an advanced Pressure Gauge Module and some redstone modules."
 			]
 			dependencies: ["0000000000000120"]
+			min_width: 250
 			id: "0000000000000123"
 			tasks: [{
 				id: "0000000000000124"
@@ -1062,9 +1064,8 @@
 				{
 					id: "0000000000000701"
 					type: "item"
-					title: "Refined Obsidian Hoe"
 					item: {
-						id: "mekanismtools:refined_obsidian_hoe"
+						id: "minecraft:netherite_hoe"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -1277,7 +1278,11 @@
 			y: -14.5d
 			shape: "rsquare"
 			subtitle: "You Can Touch, You Can Play"
-			description: ["Cooling plastic by dumping a bucket in the world will get you started, but surely there’s a better way?"]
+			description: [
+				"Cooling plastic by dumping a bucket in the world will get you started, but surely there’s a better way?"
+				""
+				"Note: Molten Plastic quest must be completed before proceeding."
+			]
 			dependencies: [
 				"00000000000000BF"
 				"00000000000000F5"

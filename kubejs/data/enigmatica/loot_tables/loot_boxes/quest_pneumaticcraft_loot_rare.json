@@ -58,6 +58,22 @@
                             "count": 4
                         }
                     ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "pneumaticcraft:medium_tank"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "pneumaticcraft:printed_circuit_board",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
                 }
             ]
         }
