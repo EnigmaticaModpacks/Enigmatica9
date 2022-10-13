@@ -25,6 +25,7 @@
 				"~Merlo"
 			]
 			optional: true
+			min_width: 250
 			id: "000000000000016F"
 			tasks: [{
 				id: "4C763494FAB6F8A2"
@@ -60,10 +61,12 @@
 				"Everything in Powah is divided into different tiers, going from Starter to Basic, Hardened, Blazing, Niotic, Spirited and Nitro."
 				"Different tiers of the same machine have different stats, all indicated on the machine’s tooltip."
 				""
-				"For example a Starter tier Furnator will make 80 FE/t, taking 600 ticks (or 30 seconds) to burn through a piece of coal, where a Nitro tier Furnator will make 4800 FE/t, taking only half a second to produce the same amount of power."
+				"For example a Starter tier Furnator will make 20 FE/t, taking 600 ticks (or 30 seconds) to burn through a piece of coal, where a Nitro tier Furnator will make 40000 FE/t, taking only half a second to produce the same amount of power."
+				""
 				"Keep this in mind when progressing through the mod, always check the various tooltips in JEI and see what tier is right for your current situation."
 			]
 			dependencies: ["000000000000016F"]
+			min_width: 250
 			id: "0000000000000172"
 			tasks: [{
 				id: "0000000000000173"
@@ -91,6 +94,7 @@
 			]
 			dependencies: ["000000000000016F"]
 			size: 1.5d
+			min_width: 250
 			id: "0000000000000174"
 			tasks: [{
 				id: "0000000000000175"
@@ -410,21 +414,14 @@
 					}
 				}
 			}]
-			rewards: [
-				{
-					id: "00000000000001B6"
-					type: "item"
-					item: "industrialforegoing:water_condensator"
-				}
-				{
-					id: "000000000000064D"
-					type: "command"
-					title: "Powah Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
-					player_command: false
-				}
-			]
+			rewards: [{
+				id: "000000000000064D"
+				type: "command"
+				title: "Powah Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
+				player_command: false
+			}]
 		}
 		{
 			title: "Solar Panel"
@@ -516,7 +513,7 @@
 			description: [
 				"You’ve seen all the basic means Powah has to generate FE, now it’s time to step it up and get into the big boys: let’s make a reactor! "
 				""
-				"Not too fast though, you will first need some fuel, so let’s gather some Uraninite! It can be found underground as an Ore. Consider using Powah! Energizing Orb to double your Uranite yield. What are you waiting for? Go get some!"
+				"Not too fast though, you will first need some fuel, so let’s gather some Uraninite! It can be found underground as an Ore. Consider using Powah Energizing Orb to double your Uranite yield. What are you waiting for? Go get some!"
 			]
 			dependencies: ["000000000000018C"]
 			id: "0000000000000186"
@@ -552,6 +549,7 @@
 			]
 			dependencies: ["0000000000000186"]
 			size: 1.5d
+			min_width: 250
 			id: "0000000000000188"
 			tasks: [{
 				id: "0000000000000189"
@@ -648,6 +646,7 @@
 				"This is how you craft all the basic resources you will use to climb up the tiers in Powah, so let’s start going for the top!"
 			]
 			dependencies: ["000000000000016F"]
+			min_width: 250
 			id: "000000000000018C"
 			tasks: [
 				{
