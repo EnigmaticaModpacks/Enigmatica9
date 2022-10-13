@@ -73,13 +73,7 @@
 		}
 		{
 			title: "Advanced Power Generation"
-			icon: {
-				id: "ftbquests:custom_icon"
-				Count: 1b
-				tag: {
-					Icon: "emojiful:textures/26a0.png"
-				}
-			}
+			icon: "engineersdecor:sign_hotwire"
 			x: 5.5d
 			y: -1.5d
 			description: [
@@ -2203,6 +2197,12 @@
 					icon: "kubejs:legendary_lootbox"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_legendary"
 					player_command: false
+				}
+				{
+					id: "2D5DAC8993DAF769"
+					type: "item"
+					item: "engineersdecor:sign_laser"
+					count: 8
 				}
 			]
 		}
