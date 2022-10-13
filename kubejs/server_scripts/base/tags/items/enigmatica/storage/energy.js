@@ -12,7 +12,5 @@ ServerEvents.tags('item', (event) => {
             .add(/immersiveengineering:capacitor/)
             .add(/induction/)
             .add(/battery/)
-            .add(/rftoolspower:cell/)
-            .add(/rftoolspower:dimensionalcell/);
     });
 });
