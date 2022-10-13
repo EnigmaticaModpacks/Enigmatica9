@@ -3,5 +3,6 @@ ServerEvents.tags('item', (event) => {
         return;
     }
 
-    event.get('twilightforest:portal/activator').removeAll();
+    const items = ['naturesaura:infused_iron'];
+    event.add('lychee:fire_immune', items);
 });
