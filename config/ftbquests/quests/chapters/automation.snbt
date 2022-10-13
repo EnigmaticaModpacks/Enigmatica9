@@ -5,7 +5,6 @@
 	filename: "automation"
 	title: "Automation [WIP]"
 	icon: "minecraft:hopper"
-	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -311,8 +310,8 @@
 		}
 		{
 			title: "Corporea"
-			x: 8.0d
-			y: 0.5d
+			x: 2.0d
+			y: 0.0d
 			description: [
 				"Botania's Corporea network can wirelessly access the contents of inventories by placing a Corporea Spark on them."
 				""
@@ -1087,39 +1086,6 @@
 			]
 		}
 		{
-			icon: "enderstorage:ender_chest"
-			x: 7.0d
-			y: 1.0d
-			description: [
-				"Unlike vanilla ender chests, the Ender Storage version actually has a real inventory, so can be interacted with using pipes or other item transport methods. Using this, you have easy free inter-dimensional transport for items!"
-				""
-				"Ender Chests will share their inventories with other chests using the same color coded channel. The default color code when you craft the tank will be the color of wool you used in the recipe, but you can customize the code by right-clicking dye onto the three color swatches on the top."
-				""
-				"You can also craft a hand-held version, the Ender Pouch. Shift-right click an ender pouch on an ender chest, and it will match that chest's color channel. You can then access that chest from anywhere by right clicking with the pouch. Link the pouch to an ender chest that has a refined storage importer on it to have a quick way to put items away from anywhere!"
-			]
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "4345FED5C76788A6"
-			tasks: [
-				{
-					id: "5408C3E44BBB429D"
-					type: "item"
-					item: "enderstorage:ender_chest"
-				}
-				{
-					id: "424E229DB25249A8"
-					type: "item"
-					item: "enderstorage:ender_pouch"
-				}
-			]
-			rewards: [{
-				id: "5F097C1BDE9420B8"
-				type: "item"
-				item: "minecraft:bone_meal"
-				count: 16
-				random_bonus: 48
-			}]
-		}
-		{
 			x: 7.0d
 			y: 0.0d
 			description: ["Shares inventories between Ender Crates that have the same name. Set the names in an anvil while combining with an eye of ender. Consumes a small amount of aura for each inventory interaction."]
@@ -1423,23 +1389,6 @@
 		}
 		{
 			x: 2.0d
-			y: 1.0d
-			description: ["A hopper with many adjustable settings, including collection range and stack size."]
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "70B28063B4F531E0"
-			tasks: [{
-				id: "16C948B2655035E5"
-				type: "item"
-				item: "engineersdecor:factory_hopper"
-			}]
-			rewards: [{
-				id: "00368EF72093C005"
-				type: "item"
-				item: "engineersdecor:factory_hopper"
-			}]
-		}
-		{
-			x: 2.0d
 			y: 2.0d
 			description: ["Collects items dropped in the world in a 9x9 area centered on itself, with an optional filter."]
 			dependencies: ["30AA6A8DF0B65273"]
@@ -1560,26 +1509,6 @@
 					item: "create:pulse_extender"
 				}
 			]
-		}
-		{
-			x: 2.0d
-			y: 0.0d
-			description: ["A round-robin dropper with many settings, including dropped stack size, and exit velocity."]
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "65EAD75949FFD642"
-			tasks: [{
-				id: "76705057110D6381"
-				type: "item"
-				item: "engineersdecor:factory_dropper"
-			}]
-			rewards: [{
-				id: "7156087E310228A4"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
-				player_command: false
-			}]
 		}
 		{
 			x: -8.0d
@@ -1705,8 +1634,8 @@
 				Count: 1b
 				tag: { }
 			}
-			x: 8.0d
-			y: 1.5d
+			x: 7.0d
+			y: 1.0d
 			subtitle: "A Phantom's Face?"
 			description: [
 				"The Entangled Block, when bound to another block using the binding tool, offers remote access to the target block. Pipes attached to the entangled block will instead interact with the target block, from up to 1000 blocks away."

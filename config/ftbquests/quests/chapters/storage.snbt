@@ -992,31 +992,6 @@
 			}]
 		}
 		{
-			title: "Ender Tank"
-			x: -0.5d
-			y: -3.0d
-			description: [
-				"Ender Tanks will share their inventories with other tanks using the same color coded channel. The default color code when you craft the tank will be the color of wool you used in the recipe, but you can customize the code by right-clicking dye onto the three color swatches on the top."
-				""
-				"Right click the circle on the front of the tank to toggle auto-output, and right click the circle with a diamond to make the tank use private channels, linked to the player. Private channels are only accessible by other tanks on the same channel, made private with a diamond by the same player."
-			]
-			dependencies: ["568DC3ECDB943C47"]
-			id: "1E357DE462DBB1C8"
-			tasks: [{
-				id: "3CD94E8A1FADA69C"
-				type: "item"
-				item: "enderstorage:ender_tank"
-				count: 2L
-			}]
-			rewards: [{
-				id: "4461350F650F7B9F"
-				type: "item"
-				item: "minecraft:bone_meal"
-				count: 16
-				random_bonus: 48
-			}]
-		}
-		{
 			title: "Tank (RFTools)"
 			x: 2.0d
 			y: 0.5d
@@ -1492,9 +1467,10 @@
 				""
 				"Applied Energetics 2 allows you to store and transfer items and fluids, even wirelessly to you and other part of your network. Automate everything with use of Pattern providers and use ultra-fast Importers and Exporters built into ME Interface."
 				""
-				"It is, however, a bit more complicated than Refined Storage, and there isn't quest line for it (yet), so you will need to learn it by yourself."
+				"It is, however, a bit more complicated than it seems at the first look."
 			]
 			dependencies: ["00000000000003FF"]
+			min_width: 250
 			id: "6C528552302BCEDC"
 			tasks: [{
 				id: "122D1ECB8E615692"
@@ -1534,7 +1510,7 @@
 		}
 		{
 			title: "ME Fluid Storage Cell"
-			x: 0.5d
+			x: 0.0d
 			y: -3.0d
 			subtitle: "Tons of fluid in small hand-size drive."
 			description: [
@@ -1592,7 +1568,7 @@
 			}]
 		}
 		{
-			x: -1.5d
+			x: -1.0d
 			y: -3.0d
 			subtitle: "Store anything... externaly!"
 			description: [
@@ -1612,17 +1588,24 @@
 				type: "item"
 				item: "ae2:storage_bus"
 			}]
-			rewards: [{
-				id: "0A4C139AB6B9FF09"
-				type: "item"
-				item: {
-					id: "sophisticatedstorage:diamond_chest"
-					Count: 1b
-					tag: {
-						woodType: "oak"
+			rewards: [
+				{
+					id: "0A4C139AB6B9FF09"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:diamond_chest"
+						Count: 1b
+						tag: {
+							woodType: "oak"
+						}
 					}
 				}
-			}]
+				{
+					id: "38E01BE58397C8F2"
+					type: "item"
+					item: "sophisticatedbackpacks:stack_upgrade_tier_3"
+				}
+			]
 		}
 	]
 }

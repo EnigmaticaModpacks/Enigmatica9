@@ -3,7 +3,7 @@
 	group: "72A9465344128AF9"
 	order_index: 5
 	filename: "rftools_wip"
-	title: "RFTools"
+	title: "RFTools [WIP]"
 	icon: "rftoolsbase:machine_frame"
 	always_invisible: true
 	default_quest_shape: ""
