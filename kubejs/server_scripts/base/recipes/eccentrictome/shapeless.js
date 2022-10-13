@@ -17,6 +17,12 @@ ServerEvents.recipes((event) => {
                             id: 'blue_skies:blue_journal'
                         }
                     },
+                    ftbquests: {
+                        0: {
+                            Count: 1,
+                            id: 'ftbquests:book'
+                        }
+                    },
                     immersiveengineering: {
                         0: {
                             Count: 1,
@@ -63,13 +69,20 @@ ServerEvents.recipes((event) => {
                             tag: { 'patchouli:book': 'pneumaticcraft:book' }
                         }
                     },
+                    powah: {
+                        0: {
+                            Count: 1,
+                            id: 'powah:book'
+                        }
+                    },
                     rftoolsbase: {
                         0: {
                             Count: 1,
                             id: 'rftoolsbase:manual'
                         }
                     }
-                }
+                },
+                'eccentrictome:version': 1
             }),
             inputs: ['minecraft:book', '#forge:bookshelves'],
             id: 'eccentrictome:tome'

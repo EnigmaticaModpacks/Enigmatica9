@@ -189,9 +189,21 @@
 					Count: 1b
 					tag: {
 						"eccentrictome:mods": {
+							powah: {
+								0: {
+									id: "powah:book"
+									Count: 1b
+								}
+							}
 							ars_nouveau: {
 								0: {
 									id: "ars_nouveau:worn_notebook"
+									Count: 1b
+								}
+							}
+							blue_skies: {
+								0: {
+									id: "blue_skies:blue_journal"
 									Count: 1b
 								}
 							}
@@ -234,6 +246,12 @@
 									}
 								}
 							}
+							rftoolsbase: {
+								0: {
+									id: "rftoolsbase:manual"
+									Count: 1b
+								}
+							}
 							littlelogistics: {
 								0: {
 									id: "patchouli:guide_book"
@@ -247,6 +265,16 @@
 								0: {
 									id: "occultism:dictionary_of_spirits"
 									Count: 1b
+									tag: {
+										"modonomicon:book_id": "occultism:dictionary_of_spirits"
+									}
+								}
+								1: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "occultism:dictionary_of_spirits"
+									}
 								}
 							}
 						}
