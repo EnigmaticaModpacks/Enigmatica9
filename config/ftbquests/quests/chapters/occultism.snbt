@@ -598,7 +598,7 @@
 			description: [
 				"The Dimensional Storage Actuator is your gateway in to storing items in the Otherworld!"
 				""
-				"It starts off rather small, but your storage can be expanded by adding up to 6 Stabilizers(one on each side) pointing at the actuator."
+				"It starts off rather small, but your storage can be expanded by adding up to 6 Stabilizers (one on each side) pointing at the actuator."
 			]
 			dependencies: [
 				"0000000000000D9C"
@@ -726,7 +726,7 @@
 			y: 8.0d
 			shape: "hexagon"
 			subtitle: "*Slaps Roof of Stabilizer* This bad boy can fit so many things inside."
-			description: ["The final tier of stabilizer."]
+			description: ["The final tier of stabilizer :catjam:"]
 			dependencies: [
 				"0000000000000DAC"
 				"0000000000000DA0"
@@ -1023,25 +1023,9 @@
 				{
 					id: "0000000000000E2D"
 					type: "item"
-					item: {
-						id: "sushigocrafting:tobiko_salmon_cheese_california"
-						Count: 1b
-						tag: {
-							Weights: [I;
-								0
-								0
-								0
-								0
-								0
-								0
-							]
-							Spices: {
-								wasabi: 1b
-								soy_sauce: 1b
-							}
-						}
-					}
-					count: 8
+					item: { id: "farmersdelight:shepherds_pie", Count: 16b }
+					count: 16
+					random_bonus: 16
 				}
 			]
 		}
@@ -1121,6 +1105,7 @@
 			]
 		}
 		{
+			title: "Summon Possesed Skeleton"
 			icon: "minecraft:bone"
 			x: 5.0d
 			y: 1.0d
@@ -1483,15 +1468,10 @@
 					type: "xp"
 					xp: 500
 				}
-				{
-					id: "0000000000000E42"
-					type: "item"
-					title: "Umbrella"
-					item: "artifacts:umbrella"
-				}
 			]
 		}
 		{
+			title: "Summon Djinni to Make it Night time"
 			icon: "minecraft:clock"
 			x: 0.5d
 			y: 2.5d
@@ -1823,7 +1803,7 @@
 			description: [
 				"The Foliot Transporter is one of the most useful spirits!"
 				""
-				"It can transfer items one stack at a time between two inventories. You can even select which side of an inventory to pull from and deposit too!(good for transferring between machines)."
+				"It can transfer items one stack at a time between two inventories. You can even select which side of an inventory to pull from and deposit too! (good for transferring between machines)."
 				""
 				"While he is in the world, right click him set very basic filtering options."
 				""
@@ -1950,6 +1930,7 @@
 				"Tip #2: You must summon the Drikwing Familiar, the Wild Drikwing Summon will not work for this quest."
 			]
 			dependencies: ["0000000000000D9E"]
+			min_width: 250
 			id: "0000000000000F3C"
 			tasks: [
 				{
@@ -2114,6 +2095,11 @@
 						}
 					}
 				}
+				{
+					id: "5A045C3432479618"
+					type: "item"
+					item: "occultism:book_of_binding_djinni"
+				}
 			]
 			rewards: [{
 				id: "0484AA9E23B3AA18"
@@ -2222,6 +2208,7 @@
 			]
 		}
 		{
+			title: "Summon Foliot Janitor"
 			icon: "cfm:oak_kitchen_sink_light"
 			x: 8.0d
 			y: 0.5d
@@ -2234,14 +2221,40 @@
 			]
 			dependencies: ["0000000000000D9A"]
 			id: "55DC3E0B9FA8AA4F"
-			tasks: [{
-				id: "326131CF6E83F4CC"
-				type: "advancement"
-				title: "Summon Foliiot Janitor"
-				icon: "occultism:brush"
-				advancement: "occultism:summon_foliot_cleaner"
-				criterion: ""
-			}]
+			tasks: [
+				{
+					id: "3CF9BA3E3401111E"
+					type: "item"
+					title: "Any Chest"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:chests"
+						}
+					}
+				}
+				{
+					id: "6E94E2D8A355C21A"
+					type: "item"
+					item: "minecraft:dispenser"
+				}
+				{
+					id: "771EAADC022A6405"
+					type: "item"
+					item: "minecraft:hopper"
+				}
+				{
+					id: "6834363F3CB5DC01"
+					type: "item"
+					item: "occultism:brush"
+				}
+				{
+					id: "66442A4BE25D6788"
+					type: "item"
+					item: "occultism:book_of_binding_foliot"
+				}
+			]
 			rewards: [{
 				id: "63C1F20FAAC09395"
 				type: "command"
@@ -2253,7 +2266,13 @@
 		}
 		{
 			title: "Summon Greedy Familiar"
-			icon: "artifacts:universal_attractor"
+			icon: {
+				id: "twilightforest:ore_magnet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
 			x: 8.0d
 			y: 1.5d
 			shape: "hexagon"
@@ -2312,7 +2331,13 @@
 		}
 		{
 			title: "Summon Bat Familiar"
-			icon: "artifacts:night_vision_goggles"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "enigmatica:textures/quests_icons/night_vision_goggles.png"
+				}
+			}
 			x: 1.0d
 			y: 0.5d
 			shape: "hexagon"
@@ -2364,10 +2389,10 @@
 		{
 			title: "Summon Deer Familiar"
 			icon: {
-				id: "alexsmobs:moose_headgear"
+				id: "ftbquests:custom_icon"
 				Count: 1b
 				tag: {
-					Damage: 0
+					Icon: "enigmatica:textures/quests_icons/moose_headgear.png"
 				}
 			}
 			x: 7.5d
@@ -2421,7 +2446,7 @@
 		}
 		{
 			title: "Summon Cthulu Familiar"
-			icon: "artifacts:obsidian_skull"
+			icon: "minecraft:wither_skeleton_skull"
 			x: 1.0d
 			y: -1.0d
 			shape: "hexagon"
@@ -2433,6 +2458,7 @@
 				{
 					id: "614CA92897F730AC"
 					type: "item"
+					title: "8x Fish"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -2459,6 +2485,7 @@
 		}
 		{
 			title: "Summon Blacksmith Familiar"
+			icon: "minecraft:anvil"
 			x: 4.0d
 			y: 0.0d
 			shape: "hexagon"
