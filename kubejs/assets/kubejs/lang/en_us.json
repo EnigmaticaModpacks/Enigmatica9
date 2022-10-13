@@ -9,4 +9,45 @@
     "item.kubejs.blacksmiths_delight": "Blacksmith's Delight",
     "item.kubejs.scavengers_delight": "Scavenger's Delight",
     "item.kubejs.alchemists_delight": "Alchemist's Delight",
+
+    "recipes.lychee.item_inside.sunstone.condition.description": "Converts around Noon. Reverts if left out too long...",
+    "recipes.lychee.item_inside.moonstone.condition.description": "Converts around Midnight. Reverts if left out too long...",
+
+    "multiblock.occultism.summon_familiar": "Aching's Amicable Accord",
+    "book.occultism.dictionary_of_spirits.pentacles.summon_familiar.name": "Aching's Amicable Accord",
+    "book.occultism.dictionary_of_spirits.pentacles.summon_familiar.intro.title": "A Familiar Problem",
+    "book.occultism.dictionary_of_spirits.pentacles.summon_familiar.intro.text": "Summon a Familiar.",
+
+    "multiblock.occultism.summon_evil": "Birog's Baleful Binding",
+    "book.occultism.dictionary_of_spirits.pentacles.summon_evil.name": "Birog's Baleful Binding",
+    "book.occultism.dictionary_of_spirits.pentacles.summon_evil.intro.title": "A Dreadful Affair",
+    "book.occultism.dictionary_of_spirits.pentacles.summon_evil.intro.text": "Summon evil creatures.",
+
+    "item.kubejs.ritual_summon_death_tome": "Ritual: Summon a murder of Death Tomes.",
+    "item.kubejs.ritual_summon_death_tome.tooltip": "Call forth ancient Death Tomes to retrieve the knowledge they guard.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_death_tome.started": "Started summoning Death Tomes.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_death_tome.finished": "Summoned Death Tomes successfully.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_death_tome.interrupted": "Summoning of Death Tomes interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_death_tome.conditions": "Not all requirements for this ritual are met.",
+
+    "item.kubejs.ritual_spell_night_vision": "Ritual Spell: Night Vision.",
+    "item.kubejs.ritual_spell_night_vision.tooltip": "Ritually cast Night Vision on nearby entities.",
+    "ritual.enigmatica.occultism/ritual/ritual_spell_night_vision.started": "Started casting Night Vision.",
+    "ritual.enigmatica.occultism/ritual/ritual_spell_night_vision.finished": "Night Vision cast successfully.",
+    "ritual.enigmatica.occultism/ritual/ritual_spell_night_vision.interrupted": "Night Vision ritual interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_spell_night_vision.conditions": "Not all requirements for this ritual are met.",
+
+    "item.kubejs.ritual_teleport_everdawn": "Ritual: Teleport to Everdawn.",
+    "item.kubejs.ritual_teleport_everdawn.tooltip": "Launch nearby entities straight to the first moon, Everdawn.",
+    "ritual.enigmatica.occultism/ritual/ritual_teleport_everdawn.started": "Destination, Everdawn. Keep your hands and arms fully inside the ritual circle at all times.",
+    "ritual.enigmatica.occultism/ritual/ritual_teleport_everdawn.finished": "Please mind the gap.",
+    "ritual.enigmatica.occultism/ritual/ritual_teleport_everdawn.interrupted": "Service to Everdawn has been discontinued at this time.",
+    "ritual.enigmatica.occultism/ritual/ritual_teleport_everdawn.conditions": "Toll not accepted. Please provide the full cost of the ritual.",
+
+    "item.kubejs.ritual_teleport_everbright": "Ritual: Teleport to Everbright.",
+    "item.kubejs.ritual_teleport_everbright.tooltip": "Launch nearby entities straight to the first moon, Everbright.",
+    "ritual.enigmatica.occultism/ritual/ritual_teleport_everbright.started": "Destination, Everbright. Keep your hands and arms fully inside the ritual circle at all times.",
+    "ritual.enigmatica.occultism/ritual/ritual_teleport_everbright.finished": "Please mind the gap.",
+    "ritual.enigmatica.occultism/ritual/ritual_teleport_everbright.interrupted": "Service to Everbright has been discontinued at this time.",
+    "ritual.enigmatica.occultism/ritual/ritual_teleport_everbright.conditions": "Toll not accepted. Please provide the full cost of the ritual."
 }

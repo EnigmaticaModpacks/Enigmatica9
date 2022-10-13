@@ -76,14 +76,10 @@
 		blacklistIC2 = false
 		#Conversion multiplier from EU to Joules (EU * JoulePerEU = Joules)
 		JoulePerEU = "10"
-		#Conversion multiplier from Joules to EU (Joules * EUPerJoule = EU)
-		EUPerJoule = "0.1000"
 		#Disables Forge Energy (FE,RF,IF,uF,CF) power integration. Requires world restart (server-side option in SMP).
 		blacklistForge = false
 		#Conversion multiplier from Forge Energy to Joules (FE * JoulePerForgeEnergy = Joules)
 		JoulePerForgeEnergy = "2.5000"
-		#Conversion multiplier from Joules to Forge Energy (Joules * ForgeEnergyPerJoule = FE)
-		ForgeEnergyPerJoule = "0.4000"
 		#Disables Flux Networks higher throughput Forge Energy (FE,RF,IF,uF,CF) power integration. Requires world restart (server-side option in SMP). Note: Disabling Forge Energy integration also disables this.
 		blacklistFluxNetworks = false
 		#How much energy is produced per mB of Hydrogen, also affects Electrolytic Separator usage, Ethylene burn rate and Gas generator energy capacity.

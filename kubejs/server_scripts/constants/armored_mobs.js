@@ -18,25 +18,25 @@ const armored_mobs = {
                 }
             ]
         },
-        witch: {
-            equipment: [
-                {
-                    weight: 100,
-                    set: {
-                        effects: [{ type: 'ars_nouveau:shielding', amplifier: 2 }],
-                        max_health: 30,
-                        enchant: {
-                            chance: 0.5,
-                            level: { min: 10, max: 20 },
-                            treasure: false
-                        },
-                        head: 'hexerei:witch_helmet',
-                        chest: 'hexerei:witch_chestplate',
-                        feet: 'hexerei:witch_boots'
-                    }
-                }
-            ]
-        },
+        // witch: {
+        //     equipment: [
+        //         {
+        //             weight: 100,
+        //             set: {
+        //                 effects: [{ type: 'ars_nouveau:shielding', amplifier: 2 }],
+        //                 max_health: 30,
+        //                 enchant: {
+        //                     chance: 0.5,
+        //                     level: { min: 10, max: 20 },
+        //                     treasure: false
+        //                 },
+        //                 head: 'hexerei:witch_helmet',
+        //                 chest: 'hexerei:witch_chestplate',
+        //                 feet: 'hexerei:witch_boots'
+        //             }
+        //         }
+        //     ]
+        // },
         evoker: {
             equipment: [
                 {

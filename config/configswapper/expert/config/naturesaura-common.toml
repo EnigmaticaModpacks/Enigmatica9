@@ -1,7 +1,12 @@
 
 [general]
 	#Additional conversion recipes for the Botanist's Pickaxe right click function. Each entry needs to be formatted as modid:input_block[prop1=value1,...]->modid:output_block[prop1=value1,...] where block state properties are optional
-	additionalBotanistPickaxeConversions = []
+	additionalBotanistPickaxeConversions = [
+		"minecraft:farmland[moisture=0]->farmersdelight:rich_soil_farmland[moisture=0]",
+		"minecraft:farmland[moisture=7]->farmersdelight:rich_soil_farmland[moisture=7]",
+		"minecraft:stone->minecraft:moss_block",
+		"twilightforest:root->twilightforest:liveroot_block",
+	]
 	#Additional dimensions that map to Aura types that should be present in them. This is useful if you have a modpack with custom dimensions that should have Aura act similarly to an existing dimension in them. Each entry needs to be formatted as dimension_name->aura_type, where aura_type can be any of naturesaura:overworld, naturesaura:nether and naturesaura:end.
 	auraTypeOverrides = [
 		"blue_skies:everbright->naturesaura:nether",

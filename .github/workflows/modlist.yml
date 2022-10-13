@@ -1,0 +1,41 @@
+name: Modlist
+
+on:
+  push:
+    branches:
+      - 'develop'
+      - 'modlist/**'
+    paths:
+      - MODLIST.md
+      - minecraftinstance.json
+      - automation/settings.ps1
+      - automation/modpack-uploader.ps1
+      - .github/workflows/modlist.yml
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - run: ls
+      - run: tree
+      - run: pwsh automation/modpack-uploader.ps1 -mode modlist
+
+      - name: Run git commit
+        run: |
+          git config user.name "$(git log -n 1 --pretty=format:%an minecraftinstance.json)"
+          git config user.email "$(git log -n 1 --pretty=format:%ae minecraftinstance.json)"
+          
+          git diff --exit-code MODLIST.md || (git add MODLIST.md && git commit -m "Update MODLIST.md")
+          git push
+        env:
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com

@@ -1,10 +1,4 @@
 
-[gui]
-	#
-	# Skips the screen that tells you that a world uses experimental settings.
-	# Default: true
-	skip_experimental_backup_screen = true
-
 [rendering]
 	#
 	# Displays info on top of Structure Blocks and Jigsaws in world.

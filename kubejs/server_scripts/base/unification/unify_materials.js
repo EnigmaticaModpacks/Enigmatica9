@@ -1,5 +1,5 @@
 //priority: 900
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     materialsToUnify.forEach((material) => {
         /*
         let ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;

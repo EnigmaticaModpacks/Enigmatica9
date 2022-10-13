@@ -135,10 +135,10 @@ ItemEvents.tooltip((event) => {
             items: ['naturesaura:hopper_upgrade'],
             text: [Text.of(`Arcane Apparatus: Ranged Hopper`).green()]
         },
-        {
-            items: ['naturesaura:spawn_lamp', 'hexerei:dried_sage_bundle', 'hexerei:sage_burning_plate'],
-            text: [Text.of(`Arcane Apparatus: Prevents Mob Spawns`).green()]
-        },
+        // {
+        //     items: ['naturesaura:spawn_lamp', 'hexerei:dried_sage_bundle', 'hexerei:sage_burning_plate'],
+        //     text: [Text.of(`Arcane Apparatus: Prevents Mob Spawns`).green()]
+        // },
         {
             items: ['naturesaura:rf_converter'],
             text: [Text.of(`Arcane Apparatus: Generates FE From Aura`).red()]
@@ -243,6 +243,33 @@ ItemEvents.tooltip((event) => {
         {
             items: ['ars_nouveau:dominion_wand'],
             text: [Text.of(`Arcane Instrument: Configuration Tool`).lightPurple()]
+        },
+        {
+            items: ['kubejs:summon_death_tome'],
+            text: [Text.of(`Summon a murder of Death Tomes.`).darkRed()]
+        },
+        {
+            items: ['kubejs:spell_night_vision'],
+            text: [Text.of(`Grants Night Vision.`).darkRed()]
+        },
+        {
+            items: ['kubejs:teleport_everdawn'],
+            text: [Text.of(`Teleport to Everdawn.`).darkRed()]
+        },
+        {
+            items: ['kubejs:teleport_everbright'],
+            text: [Text.of(`Teleport to Everbright.`).darkRed()]
+        },
+        {
+            items: [
+                'ars_nouveau:wixie_cauldron',
+                'ars_nouveau:wixie_charm',
+                'mekanism:crafting_formula',
+                'mekanism:formulaic_assemblicator',
+                'create:mechanical_crafter',
+                'naturesaura:auto_crafter'
+            ],
+            text: [Text.of(`Auto-crafter`).green()]
         }
 
         /*
