@@ -7,6 +7,7 @@ ServerEvents.tags('item', (event) => {
         event
             .get(tag)
             .add(items)
-            .add(/chemical_tank/);
+            .add(/chemical_tank/)
+            .add(/chemical_storage_cell_/);
     });
 });

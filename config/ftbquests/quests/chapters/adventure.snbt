@@ -1,0 +1,156 @@
+{
+	id: "0000000000000097"
+	group: ""
+	order_index: 3
+	filename: "adventure"
+	title: "Adventure"
+	icon: "minecraft:recovery_compass"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Dungeoneering"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Hack 'n Slash"
+			description: [
+				"Explorers beware, for terrors await in many seemingly abandoned structures throughout the lands. "
+				""
+				"Treasure awaits the brave; death awaits the weak. "
+			]
+			id: "0000000000000C85"
+			tasks: [{
+				id: "0000000000000C86"
+				type: "checkmark"
+				title: "Dungeoneering"
+				icon: "kubejs:scavengers_delight"
+			}]
+			rewards: [{
+				id: "0000000000000C9C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Oh, The Biomes You'll Go"
+			x: -1.5d
+			y: 0.5d
+			subtitle: "It's opener out there, in the wide open air."
+			description: [
+				"Like what you see? Oh, the Biomes You’ll go adds a plethora of beautiful new biomes to spruce up your world. "
+				""
+				"Take a stroll, look around, see what you like. Maybe you’ll find a new place to call home? "
+			]
+			id: "0000000000000C89"
+			tasks: [{
+				id: "0000000000000C8A"
+				type: "checkmark"
+				title: "Oh, The Biomes You'll Go"
+				icon: "byg:pink_cherry_sapling"
+			}]
+			rewards: [{
+				id: "0000000000000C9F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.5d
+			subtitle: "We're not lost, we're right here on this very spot."
+			description: [
+				"Trouble finding your way? Need to find a new desert for some good old-fashioned sand gathering? Maybe a new place to call home, instead?"
+				""
+				"Craft a Nature’s Compass to help locate rare or unusual biomes. "
+			]
+			id: "0000000000000C97"
+			tasks: [{
+				id: "0000000000000C98"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C9E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Blue Skies"
+			icon: "blue_skies:everbright_portal"
+			x: 1.5d
+			y: 2.5d
+			description: [
+				"Travel to the Everdawn and Everbright to explore new wonders and face deadly foes."
+				""
+				"Locate a Gatekeeper in the Overworld to purchase a Zeal Lighter. This can be used to light the portal they’ll have hidden in their home. "
+			]
+			id: "1866817CD295C0B2"
+			tasks: [
+				{
+					id: "6CC661D03D43EC52"
+					type: "advancement"
+					title: "Everdawn"
+					advancement: "blue_skies:everbright/enter"
+					criterion: ""
+				}
+				{
+					id: "2905AE1D443C185B"
+					type: "advancement"
+					title: "Everbright"
+					advancement: "blue_skies:everdawn/enter"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "4C2D9629836131D3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.5d
+			description: [
+				"Travel to a world swathed in shadow, where frightful beasts call home. Fortune favors the bold! "
+				""
+				"To form the portal, make a 2x2 pool of water surrounded by grass. Place flowers on the grass blocks and toss a diamond into the water."
+			]
+			id: "33D933483F33A53D"
+			tasks: [{
+				id: "26A9364AA502ACCD"
+				type: "advancement"
+				title: "Twilight Forest"
+				advancement: "twilightforest:root"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "4288D2D3D0113D87"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "The Bumblezone"
+			x: 0.0d
+			y: 3.0d
+			description: ["The world of bees is vaster than one might imagine. Throw an Ender Pearl into a hive to see just what’s waiting on the other side. "]
+			id: "03AC8543D6A41D0D"
+			tasks: [{
+				id: "5EE8D2B8705B17FE"
+				type: "advancement"
+				advancement: "the_bumblezone:the_bumblezone/root"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "15B4A2F8F0D5B1B5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
+}
