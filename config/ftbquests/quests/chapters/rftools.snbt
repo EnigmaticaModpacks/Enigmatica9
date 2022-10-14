@@ -2,7 +2,7 @@
 	id: "0000000000000349"
 	group: "72A9465344128AF9"
 	order_index: 5
-	filename: "rftools_wip"
+	filename: "rftools"
 	title: "RFTools [WIP]"
 	icon: "rftoolsbase:machine_frame"
 	always_invisible: true
