@@ -227,7 +227,7 @@
 			}]
 		}
 		{
-			title: "Gold Storage"
+			title: "Upgraded Storage"
 			icon: {
 				id: "sophisticatedstorage:gold_chest"
 				Count: 1b
@@ -237,13 +237,8 @@
 			}
 			x: -0.5d
 			y: -12.0d
-			subtitle: "They are made out of gold or just plated?"
-			description: [
-				"Gold is second tier storage in Sophisticated Storage. Gold tier triples your storage available (I'm talking in comparison to basic one) and indeed looks really nice. Also adds additional upgrade slot!"
-				""
-				"To see all gold tier storage available, search this tag in JEI:"
-				"● $storage_gold"
-			]
+			subtitle: "Bedazzled Chests"
+			description: ["Each tier of storage offers both more upgrade slots and more storage slots. "]
 			dependencies: ["0000000000000405"]
 			id: "0000000000000951"
 			tasks: [{
@@ -251,10 +246,27 @@
 				type: "item"
 				title: "Any Gold Tier Storage"
 				item: {
-					id: "itemfilters:tag"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						value: "sophisticatedstorage:storage_gold"
+						items: [
+							{
+								id: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+								Count: 1b
+							}
+							{
+								id: "sophisticatedstorage:iron_to_gold_tier_upgrade"
+								Count: 1b
+							}
+							{
+								id: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
+								Count: 1b
+							}
+							{
+								id: "sophisticatedstorage:diamond_to_netherite_tier_upgrade"
+								Count: 1b
+							}
+						]
 					}
 				}
 			}]
@@ -273,7 +285,14 @@
 			x: -6.5d
 			y: -7.5d
 			subtitle: "Drawing a line in the sand"
-			description: ["Looking for a place to store those ten thousand Iron Ingots? Look no further. Functional Drawers has drawers that hold a very large quantity of a given item. They offer a number of useful upgrades as well to assist in both Storage and Automation endeavors. "]
+			description: [
+				"Looking for a place to store those ten thousand Iron Ingots? Look no further. Functional Drawers has drawers that hold a very large quantity of a given item. They offer a number of useful upgrades as well to assist in both Storage and Automation endeavors. "
+				""
+				"A Configuration Tool may be used to lock drawer, hide or show the stored item and quantity, or disable rendering for any installed upgrades. "
+				""
+				"● Toggle between modes by Sneak + Right Clicking in the air."
+				"● Right Click a drawer to change settings in chosen mode."
+			]
 			dependencies: ["0000000000000400"]
 			id: "0000000000000966"
 			tasks: [{
@@ -288,14 +307,27 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "0000000000000A59"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_alchemists_delight"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "0000000000000A59"
+					type: "command"
+					title: "Alchemist's Delight"
+					icon: "kubejs:alchemists_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_alchemists_delight"
+					player_command: false
+				}
+				{
+					id: "776CF888356B7AC8"
+					type: "item"
+					item: {
+						id: "functionalstorage:configuration_tool"
+						Count: 1b
+						tag: {
+							Mode: "LOCKING"
+						}
+					}
+				}
+			]
 		}
 		{
 			x: -5.5d
@@ -410,9 +442,13 @@
 			dependencies: ["0000000000000400"]
 			id: "0000000000000986"
 			tasks: [{
-				id: "0000000000000998"
-				type: "checkmark"
-				title: "Sophisticated Backpacks"
+				id: "60860FF293535D2F"
+				type: "item"
+				item: {
+					id: "sophisticatedbackpacks:backpack"
+					Count: 1b
+					tag: { }
+				}
 			}]
 			rewards: [{
 				id: "0000000000000997"
@@ -1288,33 +1324,6 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: -5.5d
-			description: [
-				"Configuration tool allows you to lock your drawer, turn off / on amount and icon of stored item, and disable rendering of upgrades on drawer."
-				""
-				"Right click a drawer to change settings in chosen mode, Right click + Shift in midair to change tool mode."
-			]
-			dependencies: ["0000000000000966"]
-			id: "40822141AA12E1AD"
-			tasks: [{
-				id: "63B78F09990F538E"
-				type: "item"
-				item: {
-					id: "functionalstorage:configuration_tool"
-					Count: 1b
-					tag: {
-						Mode: "LOCKING"
-					}
-				}
-			}]
-			rewards: [{
-				id: "656BBA65DCFBE3DC"
-				type: "xp"
-				xp: 300
-			}]
-		}
-		{
 			title: "Applied Energetics 2"
 			x: 2.0d
 			y: -6.0d
@@ -1366,6 +1375,7 @@
 		{
 			x: 6.5d
 			y: -9.0d
+			description: ["Stack upgrades allow each slot to hold more than usual, with their effect stacking with each other as well. A single Tier 1 upgrade will double a slot to 128, and another Tier 1 upgrade will double that again to 256!"]
 			dependencies: ["0000000000000986"]
 			id: "72E2F80597E42934"
 			tasks: [{
@@ -1397,10 +1407,19 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "5B1B6013E6ED0715"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: 4.5d
 			y: -9.0d
+			description: ["Add some extra features to your backpack, like the ability to smelt, craft, or use a stonecutter without leaving the interface. "]
 			dependencies: ["0000000000000986"]
 			id: "137090962A587556"
 			tasks: [{
@@ -1436,10 +1455,23 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "6D5ED9C4BB24D5EA"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: 6.5d
 			y: -6.0d
+			description: [
+				"Personal fluid storage with a variety of practical applications. "
+				""
+				"This upgrade is augmented by Stack Upgrades."
+			]
 			dependencies: ["0000000000000986"]
 			id: "38B014017412A9EA"
 			tasks: [{
@@ -1447,10 +1479,23 @@
 				type: "item"
 				item: "sophisticatedbackpacks:tank_upgrade"
 			}]
+			rewards: [{
+				id: "54D08CA9D3C99DF7"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_sorcerers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: 7.5d
 			y: -8.0d
+			description: [
+				"Keeping tools charged on the go can be quite a drain. Attach a battery to your backpack to recharge those items on the go. "
+				""
+				"This upgrade is augmented by Stack Upgrades."
+			]
 			dependencies: ["0000000000000986"]
 			id: "503B1A17248C9070"
 			tasks: [{
@@ -1458,10 +1503,23 @@
 				type: "item"
 				item: "sophisticatedbackpacks:battery_upgrade"
 			}]
+			rewards: [{
+				id: "5F17B44DFEC645FB"
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_alchemists_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: 7.5d
 			y: -6.5d
+			description: [
+				"When paired with a Tank Upgrade, pumps allow the backpack to pull fluids in from the world. Go for a dive!"
+				""
+				"The Experience Pump allows the backpack to instead store player XP, even repairing equipped tools and armor enchanted with Mending!"
+			]
 			dependencies: ["0000000000000986"]
 			id: "11A59FBD489A8212"
 			tasks: [{
@@ -1489,10 +1547,19 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "7BF2A0DA41927B29"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: 0.5d
 			y: -11.5d
+			description: ["Stack upgrades allow each slot to hold more than usual, with their effect stacking with each other as well. A single Tier 1 upgrade will double a slot to 128, and another Tier 1 upgrade will double that again to 256!"]
 			dependencies: ["0000000000000405"]
 			id: "7B0AFE310E9AD4EB"
 			tasks: [{
@@ -1524,10 +1591,19 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "0B5190854F290B9D"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: -1.5d
 			y: -11.5d
+			description: ["Add some extra features to your storage, like the ability to smelt, craft, or use a stonecutter without leaving the interface. "]
 			dependencies: ["0000000000000405"]
 			id: "3F946CAEE4DDCFD2"
 			tasks: [{
@@ -1563,10 +1639,19 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "6D9CB4B5D250FD85"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: -2.5d
 			y: -11.0d
+			description: ["Any item that comes in direct contact with the storage will be picked up automatically. "]
 			dependencies: ["0000000000000405"]
 			id: "1CFC2F757BE1EAED"
 			tasks: [{
@@ -1574,16 +1659,33 @@
 				type: "item"
 				item: "sophisticatedstorage:pickup_upgrade"
 			}]
+			rewards: [{
+				id: "677C92499FF4E2D8"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: 1.5d
 			y: -11.0d
+			description: ["Picks up items in the area, inserting them into the storage. "]
 			dependencies: ["0000000000000405"]
 			id: "5C185A0CE6459C3F"
 			tasks: [{
 				id: "12B21D7BF891349E"
 				type: "item"
 				item: "sophisticatedstorage:magnet_upgrade"
+			}]
+			rewards: [{
+				id: "53C384EC8266F233"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+				player_command: false
 			}]
 		}
 	]
