@@ -2,7 +2,7 @@
 	id: "0000000000000895"
 	group: "5A8B89F87F77CF4C"
 	order_index: 4
-	filename: "blood_magic_wip"
+	filename: "blood_magic"
 	title: "Blood Magic"
 	icon: "bloodmagic:weakbloodshard"
 	always_invisible: true
