@@ -1174,7 +1174,11 @@
 			x: -7.5d
 			y: -9.0d
 			subtitle: "Integrated Hopper in a nutshell"
-			description: ["Collector upgrade allows drawer to work like a hopper, getting items from any side chosen in GUI!"]
+			description: [
+				"A Collector Upgrade allows the drawer to pick up items from the world. "
+				""
+				"Set the pickup direction in the drawer’s GUI. "
+			]
 			dependencies: ["0000000000000966"]
 			id: "4E92570E06A632C1"
 			tasks: [{
