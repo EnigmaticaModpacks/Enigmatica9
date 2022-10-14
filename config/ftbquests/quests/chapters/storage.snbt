@@ -91,8 +91,8 @@
 		}
 		{
 			icon: "mekanism:basic_bin"
-			x: 2.0d
-			y: -9.0d
+			x: 1.5d
+			y: -8.5d
 			subtitle: "I Like Big Bins and I Cannot Lie"
 			description: ["Often overlooked, Bins are an excellent choice for dense item storage. They can even be used in your inventory crafting grid to manipulate their contents. "]
 			dependencies: ["0000000000000400"]
@@ -169,8 +169,8 @@
 		{
 			title: "Plonk"
 			icon: "create:brass_hand"
-			x: -3.0d
-			y: -6.0d
+			x: -2.5d
+			y: -6.5d
 			description: [
 				"Looking for a handy place to store your hammer at the forge? Tired of rummaging through chest after chest for that gear press? Place them in world instead!"
 				""
@@ -192,11 +192,10 @@
 			}]
 		}
 		{
-			title: "Drawer Controller"
 			x: -8.5d
 			y: -6.5d
 			description: [
-				"The Drawer Controller acts as a central hub for automation. Any linked drawers are accessible through it by things such as pipes, hoppers, or and ME Storage Bus. "
+				"The Functional Storage Controller acts as a central hub for automation. Any linked drawers are accessible through it by things such as pipes, hoppers, or an ME Storage Bus. "
 				""
 				"Drawers need not be in contact with the Controller, nor each other. They simply need to be selected and bound to the Controller by way of a Linking Tool. "
 				""
@@ -217,14 +216,28 @@
 				type: "item"
 				item: "functionalstorage:storage_controller"
 			}]
-			rewards: [{
-				id: "00000000000009AB"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_sorcerers_delight"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "00000000000009AB"
+					type: "command"
+					title: "Sorcerer's Delight"
+					icon: "kubejs:sorcerers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_sorcerers_delight"
+					player_command: false
+				}
+				{
+					id: "791D3C5F2F1F201A"
+					type: "item"
+					item: {
+						id: "functionalstorage:linking_tool"
+						Count: 1b
+						tag: {
+							Action: "ADD"
+							Mode: "SINGLE"
+						}
+					}
+				}
+			]
 		}
 		{
 			title: "Upgraded Storage"
@@ -307,27 +320,17 @@
 					}
 				}
 			}]
-			rewards: [
-				{
-					id: "0000000000000A59"
-					type: "command"
-					title: "Alchemist's Delight"
-					icon: "kubejs:alchemists_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_alchemists_delight"
-					player_command: false
-				}
-				{
-					id: "776CF888356B7AC8"
-					type: "item"
-					item: {
-						id: "functionalstorage:configuration_tool"
-						Count: 1b
-						tag: {
-							Mode: "LOCKING"
-						}
+			rewards: [{
+				id: "776CF888356B7AC8"
+				type: "item"
+				item: {
+					id: "functionalstorage:configuration_tool"
+					Count: 1b
+					tag: {
+						Mode: "LOCKING"
 					}
 				}
-			]
+			}]
 		}
 		{
 			x: -5.5d
@@ -554,7 +557,7 @@
 		}
 		{
 			x: -0.5d
-			y: -5.0d
+			y: -6.0d
 			subtitle: "Do not screw with the regulator"
 			description: [
 				"A minor recalibration and the Personal Shrinking Device can shrink one right out of sight and into the nooks and crannies of special machines. "
@@ -578,8 +581,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: -9.0d
+			x: -2.5d
+			y: -8.5d
 			subtitle: "Pym Powered"
 			description: [
 				"Smaller, but equally strong? Impossible!"
@@ -622,7 +625,7 @@
 		{
 			icon: "compactmachines:machine_tiny"
 			x: -0.5d
-			y: -4.0d
+			y: -5.0d
 			subtitle: "One, cut a hole in a box"
 			description: [
 				"Gather the materials for your first Compact Machine!"
@@ -648,7 +651,7 @@
 		}
 		{
 			x: -1.5d
-			y: -3.0d
+			y: -4.5d
 			description: ["Weighing in at 13x13x13 internal volume, the Maximum sized Compact Machine truly offers a world of automation possibilities. What will you build in yours? A mobile base of operations? Compact ore processing? Zombie-proof Villager trading hall? "]
 			dependencies: ["3787A109AABC8921"]
 			id: "0DAA452348B02827"
@@ -668,7 +671,7 @@
 		}
 		{
 			x: 0.5d
-			y: -3.0d
+			y: -4.5d
 			subtitle: "Quantum Tunneling"
 			description: [
 				"Placed on the walls inside Compact Machines, Tunnels permit a connection to the outside world. "
@@ -1238,6 +1241,7 @@
 			]
 		}
 		{
+			icon: "functionalstorage:ender_drawer"
 			x: -7.5d
 			y: -6.0d
 			subtitle: "Getting your drawers in a knot"
@@ -1248,11 +1252,25 @@
 			]
 			dependencies: ["0000000000000966"]
 			id: "47EF38C8E41B2DE8"
-			tasks: [{
-				id: "1E8ECE61CC02806E"
-				type: "item"
-				item: "functionalstorage:ender_drawer"
-			}]
+			tasks: [
+				{
+					id: "1E8ECE61CC02806E"
+					type: "item"
+					item: "functionalstorage:ender_drawer"
+				}
+				{
+					id: "4F28E77E9C804917"
+					type: "item"
+					item: {
+						id: "functionalstorage:linking_tool"
+						Count: 1b
+						tag: {
+							Action: "ADD"
+							Mode: "SINGLE"
+						}
+					}
+				}
+			]
 			rewards: [{
 				id: "70E4602ABF82C34E"
 				type: "command"
@@ -1325,8 +1343,8 @@
 		}
 		{
 			title: "Applied Energetics 2"
-			x: 2.0d
-			y: -6.0d
+			x: 1.5d
+			y: -6.5d
 			subtitle: "Digital Age for Experts"
 			description: [
 				"Far more than a simple storage solution, Applied Energetics 2 offers a full range of automation and cross dimensional transport capabilities. "
@@ -1687,6 +1705,41 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
 				player_command: false
 			}]
+		}
+		{
+			x: -0.5d
+			y: -9.0d
+			description: [
+				"The Sophisticated Storage Controller acts as a central hub for automation. Any linked drawers are accessible through it by things such as pipes, hoppers, or an ME Storage Bus."
+				""
+				"Connections are wireless but linking a block to the controller requires two things. "
+				""
+				"First, place a Storage Link against the block in question, one per storage. "
+				""
+				"Next, Sneak + Right Click the Controller with a Storage Tool to select it."
+				""
+				"Finally, Right Click one or more Storage Links to create the connection. Each successful link will render a line between the Controller and the Storage Link. "
+			]
+			dependencies: ["0000000000000405"]
+			id: "50D051B9CD6372F1"
+			tasks: [{
+				id: "649223683D1A2C0E"
+				type: "item"
+				item: "sophisticatedstorage:controller"
+			}]
+			rewards: [
+				{
+					id: "6A3A74529BC9D88E"
+					type: "item"
+					item: "sophisticatedstorage:storage_link"
+					count: 3
+				}
+				{
+					id: "2153557DF3335F11"
+					type: "item"
+					item: "sophisticatedstorage:storage_tool"
+				}
+			]
 		}
 	]
 }
