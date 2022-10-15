@@ -3,7 +3,7 @@
 	group: "5A8B89F87F77CF4C"
 	order_index: 2
 	filename: "ars_nouveau"
-	title: "Ars Nouveau [WIP]"
+	title: "Ars Nouveau"
 	icon: "ars_nouveau:source_gem"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -44,7 +44,7 @@
 			description: [
 				"The Spell Turret is an enhanced apparatus used to cast spells on a Redstone pulse. Source for the spell will be provided automatically from nearby Source Jars."
 				""
-				"To set a spell, inscribe a Spell Parchment and Right Click it on the Turret. It may use either Touch or Projectile forms in the spell. "
+				"To set a spell, inscribe a Spell Parchment and Right-Click it on the Turret. It may use either Touch or Projectile forms in the spell. "
 			]
 			dependencies: ["00000000000003D0"]
 			id: "00000000000003B2"
@@ -141,7 +141,7 @@
 				""
 				"Save some effort and imprint spells into a Rune instead. Any time an entity meets it, the spell will trigger. Source for the spell will be provided automatically from nearby Source Jars. "
 				""
-				"To use Runic Chalk, begin by Right Clicking it on the ground to draw a rune. Now Right Click the rune with a prepared Spell Parchment. Valid Spell Parchments must begin with the Touch Form."
+				"To use Runic Chalk, begin by Right-Clicking it on the ground to draw a rune. Now Right-Click the rune with a prepared Spell Parchment. Valid Spell Parchments must begin with the Touch Form."
 			]
 			dependencies: ["00000000000003D0"]
 			id: "00000000000003CE"
@@ -173,7 +173,7 @@
 			description: [
 				"With some work, common paper can be infused to be a better receptacle for magic. Once infused, these written spells can be used in a variety of ways."
 				""
-				"To prepare a Parchment with a spell, first design the spell within the Spell Book. Then place a Parchment on the Scribe's Table and Sneak Right Click the table with the Spell Book to transfer the selected spell over to the Parchment."
+				"To prepare a Parchment with a spell, first design the spell within the Spell Book. Then place a Parchment on the Scribe's Table and Sneak Right-Click the table with the Spell Book to transfer the selected spell over to the Parchment."
 				""
 				"Parchments may be re-used, though it can be useful to keep a library of scribed Parchments to be able to quickly re-apply the spell. "
 			]
@@ -187,7 +187,7 @@
 		}
 		{
 			icon: "ars_nouveau:magebloom"
-			x: 2.5d
+			x: 1.5d
 			y: -6.0d
 			subtitle: "Putting Down Roots"
 			description: [
@@ -272,13 +272,16 @@
 			icon: "ars_nouveau:amulet_of_mana_regen"
 			x: -2.5d
 			y: -3.0d
-			subtitle: "Draw Me Like Your French Girls"
+			subtitle: "Draw me like your French girls"
 			description: [
 				"Source is a fickle thing, and keeping it in one place long enough to use can be challenging at best. Aspiring practitioners may find themselves struggling to channel Source for very long. Besides magical accoutrements woven from Mana Fibers, certain other materials can be molded into useful trinkets to serve as an extension of one's own reserves."
 				""
 				"Refer to the Worn Notebook's section on Magical Equipment for recipes and to discover more useful curios."
 			]
-			dependencies: ["0C982C7F2F76D05D"]
+			dependencies: [
+				"00000000000003DC"
+				"00000000000003DB"
+			]
 			id: "00000000000003DE"
 			tasks: [
 				{
@@ -356,7 +359,7 @@
 			y: -0.5d
 			subtitle: "Boop the Snoot"
 			description: [
-				"An amicable being that's deeply attuned with Source, Bookwyrms may be summoned by Sneak Right Clicking their charm on a Lectern. Once summoned, they’ll repeatedly cast any spell they’ve been given on blocks in their area."
+				"An amicable being that's deeply attuned with Source, Bookwyrms may be summoned by Sneak Right-Clicking their charm on a Lectern. Once summoned, they’ll repeatedly cast any spell they’ve been given on blocks in their area."
 				""
 				"Refer to the Worn Notebook for an in-depth guide on using Whelps. "
 			]
@@ -775,6 +778,14 @@
 				type: "item"
 				item: "ars_nouveau:ritual_cloudshaping"
 			}]
+			rewards: [{
+				id: "55CCE0392547A82F"
+				type: "command"
+				title: "Rare Ars Nouveau Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_ars_nouveau_loot_rare"
+				player_command: false
+			}]
 		}
 		{
 			title: "Celestial Manipulation"
@@ -868,7 +879,7 @@
 		}
 		{
 			title: "Warp Portals"
-			x: 1.5d
+			x: 2.5d
 			y: -6.0d
 			subtitle: "A Wizard Did It!"
 			description: [
@@ -1028,7 +1039,7 @@
 			]
 		}
 		{
-			icon: "ars_nouveau:wilden_tribute"
+			icon: "ars_nouveau:ritual_wilden_summon"
 			x: 1.5d
 			y: 3.0d
 			subtitle: "The Beast of Caerbannog"
@@ -1051,6 +1062,14 @@
 					item: "ars_nouveau:wilden_tribute"
 				}
 			]
+			rewards: [{
+				id: "4C18E35BD71FC9C6"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_sorcerers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: -5.0d
@@ -1298,9 +1317,9 @@
 				""
 				"These activities all center around the Scribe’s Table. "
 				""
-				"New glyphs may be inscribed by Right Clicking the Scribe’s Table with a Spell Book to open the Codex of all glyphs, known or unknown. "
+				"New glyphs may be inscribed by Right-Clicking the Scribe’s Table with a Spell Book to open the Codex of all glyphs, known or unknown. "
 				""
-				"To scribe a glyph, merely locate and select it in the Codex. Follow this by throwing the required ingredients at the table to finish the craft. Finally, learn the Glyph by Right Clicking it in the air. "
+				"To scribe a glyph, merely locate and select it in the Codex. Follow this by throwing the required ingredients at the table to finish the craft. Finally, learn the Glyph by Right-Clicking it in the air. "
 				""
 				"Note: Glyphs are stored on the player, not the Spell Book. So, losing a Spell Book does not mean the loss of learned glyphs. "
 			]
@@ -1325,15 +1344,40 @@
 			}]
 		}
 		{
-			title: "Arcane Equipment"
+			icon: "ars_nouveau:blank_thread"
 			x: -2.0d
-			y: -4.0d
-			dependencies: ["0771CE9EBF17ADE2"]
+			y: -2.0d
+			subtitle: "Tailor Made"
+			description: [
+				"Threads may be woven into a Thread Slot on applicable armor by way of the Alteration Table. "
+				""
+				"The equipment is to be placed on the right-hand side, whereupon the parchment on the left will display the available slots. "
+				""
+				"To apply a Thread, Right-Click it onto the side with the parchment. Threads are applied from top to bottom. They may be removed at any time and re-applied, however, and are not lost when removed. Right-clicking with an empty hand will remove them top to bottom. "
+				""
+				"Do note that some Threads have different or stronger effects when applied in higher tier Thread Slots. Some, like the Thread of Gliding, require a specific level slot to be applied at all. Applying the same Thread more than once will generally have no effect. "
+			]
+			dependencies: ["2614A201594A632C"]
 			id: "0C982C7F2F76D05D"
-			tasks: [{
-				id: "5E8A27546CC79AC6"
-				type: "item"
-				item: "ars_nouveau:alteration_table"
+			tasks: [
+				{
+					id: "5E8A27546CC79AC6"
+					type: "item"
+					item: "ars_nouveau:alteration_table"
+				}
+				{
+					id: "4C4E4BC3125E83F7"
+					type: "item"
+					item: "ars_nouveau:blank_thread"
+				}
+			]
+			rewards: [{
+				id: "4D5943A28084DA51"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_sorcerers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1341,7 +1385,7 @@
 			y: -1.5d
 			subtitle: "Darlin' it's better, down where it's wetter"
 			description: [
-				"Though they’re often viewed with mistrust and labeled as man-eating beasts (it was just the one time, ok?), Sirens are only interested in gathering shiny things. Once befriended, a Siren will slowly collect treasures from their watery homes, tucking them away for safe keeping. The prettier their environment, the more likely they are to share those treasures with their friends. "
+				"Though they’re often viewed with mistrust and labeled as man-eating beasts (it was just the one time, ok?), Sirens are really only interested in gathering shiny things. Once befriended, a Siren will slowly collect treasures from their watery homes, tucking them away for safe keeping. The prettier their environment, the more likely they are to share those treasures with their friends. "
 				""
 				"Refer to the Worn Notebook for an in-depth guide on using Sirens. "
 				""
@@ -1353,6 +1397,14 @@
 				id: "6F4E5A968BB51BFF"
 				type: "item"
 				item: "ars_elemental:siren_charm"
+			}]
+			rewards: [{
+				id: "10635CFA99A607DE"
+				type: "command"
+				title: "Rare Ars Nouveau Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_ars_nouveau_loot_rare"
+				player_command: false
 			}]
 		}
 		{
@@ -1428,6 +1480,14 @@
 				type: "item"
 				item: "ars_nouveau:potion_diffuser"
 			}]
+			rewards: [{
+				id: "097A6D19CCF1D16F"
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_alchemists_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: -6.5d
@@ -1478,13 +1538,22 @@
 		{
 			x: 3.5d
 			y: -1.5d
-			description: ["Truly an indispensable friend to keep when exploring the depths, Sirens will grant their friends a bonus to water spells and also bestow Dolphin’s Grace upon them while swimming. "]
+			subtitle: "Flippin' your fins really will get you far"
+			description: ["Truly an indispensable companion to keep when exploring the depths, Sirens will grant their friends a bonus to water spells and also bestow Dolphin’s Grace upon them while swimming. "]
 			dependencies: ["33F9C7DCBA952F1E"]
 			id: "49AB7D1579EB428D"
 			tasks: [{
 				id: "3A36EE387B1CF4B9"
 				type: "item"
 				item: "ars_elemental:siren_familiar"
+			}]
+			rewards: [{
+				id: "49268BE6F3E1218B"
+				type: "command"
+				title: "Rare Ars Nouveau Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_ars_nouveau_loot_rare"
+				player_command: false
 			}]
 		}
 		{
@@ -1498,6 +1567,14 @@
 				id: "75E50048B128DE1D"
 				type: "item"
 				item: "ars_elemental:firenando_familiar"
+			}]
+			rewards: [{
+				id: "708695DC518FA6AA"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1516,6 +1593,14 @@
 				type: "item"
 				item: "ars_elemental:firenando_charm"
 			}]
+			rewards: [{
+				id: "20587DF83A9CDEE2"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavenger_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+				player_command: false
+			}]
 		}
 		{
 			title: "Magical Vestments"
@@ -1528,7 +1613,15 @@
 			}
 			x: -1.5d
 			y: -3.0d
-			dependencies: ["0C982C7F2F76D05D"]
+			subtitle: "I shall wear midnight"
+			description: [
+				"Ideal equipment for the dedicated Wizard, these magically enhanced vestments offer more than simple protection. "
+				""
+				"Primarily, they act as a personal battery for Source, giving the caster more to draw on in battle. However, they may also have special Threads woven into them to offer more unique and customized boons. "
+				""
+				"Each set of armor may be upgraded in the Enchantment Apparatus through three different tiers. At each tier, they gain more slots for accepting Threads. The recipe for upgrading the tier is shown in the Worn Notebook. "
+			]
+			dependencies: ["138A7CF8826F30CD"]
 			id: "2614A201594A632C"
 			tasks: [
 				{
@@ -1668,11 +1761,26 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "054C8C6E78EF9712"
+				type: "command"
+				title: "Blacksmith's Delight"
+				icon: "kubejs:blacksmiths_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_blacksmiths_delight"
+				player_command: false
+			}]
 		}
 		{
 			icon: "ars_nouveau:ritual_awakening"
 			x: 2.5d
 			y: 3.0d
+			description: [
+				"Golems have long been used by those of sorcerous ability to assist them in their work. With a Tablet of Awakening, an experienced mage may bring a form of sentience to Archwood Trees and Budding Amethyst. The resulting creatures are known as Weald Walkers and Amethyst Golems, respectively."
+				""
+				"Weald Walkers act as guardians, keeping hostile creatures at bay with their brutish strength. "
+				""
+				"Amethyst Golems, meanwhile, are more fastidious in nature, gently caring for and harvesting Amethyst from nearby Budding Amethyst. Normal Amethyst blocks in their charge may even be made to bud and grow more.    "
+			]
 			dependencies: ["5ED080DAA2A7E19A"]
 			id: "22969E8FB09F66D1"
 			tasks: [
@@ -1687,10 +1795,28 @@
 					item: "ars_nouveau:amethyst_golem_charm"
 				}
 			]
+			rewards: [{
+				id: "597B10860B9F7082"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_sorcerers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: 2.5d
 			y: 1.0d
+			subtitle: "Modern problems require modern solutions"
+			description: [
+				"Working with others can be a messy business. Wizards of old spent a great deal of time and effort trying to keep their Drygmies and Villager friends safe from harm. Containment Jars offer a modern solution to this age-old problem. "
+				""
+				"Any creature under the effect of a Ritual of Containment will be automatically drawn into a nearby empty Containment Jar. "
+				""
+				"Contained creatures may still be interacted with, however. Villagers with a job will continue to trade, Cows may be milked, and Drygmies will continue to harvest from them. "
+				""
+				"Naturally, this also makes an excellent means of transport as well, as the jars may be picked up and moved around freely. To release a creature from the Jar, simply cast Dispel upon it. "
+			]
 			dependencies: ["5ED080DAA2A7E19A"]
 			id: "3E5FAD31B6ED058C"
 			tasks: [{
@@ -1701,7 +1827,125 @@
 			rewards: [{
 				id: "2BCE50D9E8B36411"
 				type: "item"
-				item: "ars_nouveau:ritual_containment"
+				item: "ars_nouveau:mob_jar"
+				count: 4
+			}]
+		}
+		{
+			icon: "ars_nouveau:summon_focus"
+			x: -1.0d
+			y: -2.0d
+			subtitle: "Focus Pocus"
+			description: [
+				"When a wizard chooses to specialize in a particular school of magic, often they will invest in a Focus to enhance their chosen school. "
+				""
+				"Equipped in a dedicated Curio slot, each focus grants unique boons to their school which are detailed in the Worn Notebook. "
+			]
+			dependencies: [
+				"00000000000003DC"
+				"00000000000003DB"
+			]
+			id: "6A8D28FEED0CB148"
+			tasks: [{
+				id: "5913EA80944F3A87"
+				type: "item"
+				title: "Spell Focuses"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "ars_elemental:lesser_fire_focus"
+								Count: 1b
+							}
+							{
+								id: "ars_elemental:lesser_water_focus"
+								Count: 1b
+							}
+							{
+								id: "ars_elemental:lesser_air_focus"
+								Count: 1b
+							}
+							{
+								id: "ars_elemental:lesser_earth_focus"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:shapers_focus"
+								Count: 1b
+							}
+							{
+								id: "ars_elemental:fire_focus"
+								Count: 1b
+							}
+							{
+								id: "ars_elemental:water_focus"
+								Count: 1b
+							}
+							{
+								id: "ars_elemental:air_focus"
+								Count: 1b
+							}
+							{
+								id: "ars_elemental:earth_focus"
+								Count: 1b
+							}
+							{
+								id: "ars_elemental:necrotic_focus"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:summon_focus"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "5FBCFC8E2A3A9F7F"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			icon: "ars_nouveau:scryers_oculus"
+			x: -3.0d
+			y: -2.0d
+			subtitle: "You Lookin’ at Me Lookin’ at You"
+			description: [
+				"On occasion, it can be quite helpful to be able to see into an area without being there in person. Especially environments that may pose a hazard to the person. "
+				""
+				"A Scryer’s Oculus enables the wizard to perform exactly that sort of long-range monitoring. "
+				""
+				"Place a Scry Crystal in the location to be monitored, Right-Click it with a Blank Parchment to record the location and place the resulting Scryer’s Scroll on a pedestal near the Oculus. When approached, the Oculus allows the Wizard to select from any of the nearby Scrolls to view the location. "
+			]
+			dependencies: [
+				"00000000000003DC"
+				"00000000000003DB"
+			]
+			id: "4D5B41D89738D3EE"
+			tasks: [
+				{
+					id: "230D1D953C4803DD"
+					type: "item"
+					item: "ars_nouveau:scryers_oculus"
+				}
+				{
+					id: "568C6F40B6FE17D0"
+					type: "item"
+					item: "ars_nouveau:scryers_crystal"
+				}
+			]
+			rewards: [{
+				id: "522970FC21CE5DC5"
+				type: "item"
+				item: "ars_nouveau:blank_parchment"
+				count: 8
 			}]
 		}
 	]
