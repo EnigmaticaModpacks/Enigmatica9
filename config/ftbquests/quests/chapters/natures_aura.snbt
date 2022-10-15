@@ -61,7 +61,6 @@
 				""
 				"~MuteTiefling"
 			]
-			optional: true
 			min_width: 250
 			id: "000000000000009F"
 			tasks: [{
