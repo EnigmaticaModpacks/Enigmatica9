@@ -67,9 +67,9 @@ const randomEnchant = (item, level, treasure) => {
     if (level == 0) {
         return Item.of(item);
     }
-    let EnchantHelper = java('net.minecraft.world.item.enchantment.EnchantmentHelper');
-    let RandomSource = java('net.minecraft.util.RandomSource');
-    //r eturn EnchantHelper.m_220292_(RandomSource.m_216327_(), Item.of(item), level, treasure);
+    let EnchantHelper = Java.loadClass('net.minecraft.world.item.enchantment.EnchantmentHelper');
+    let RandomSource = Java.loadClass('net.minecraft.util.RandomSource');
+    // return EnchantHelper.m_220292_(RandomSource.m_216327_(), Item.of(item), level, treasure);
     return EnchantHelper.enchantItem(RandomSource.create(), Item.of(item), level, treasure);
 };
 
