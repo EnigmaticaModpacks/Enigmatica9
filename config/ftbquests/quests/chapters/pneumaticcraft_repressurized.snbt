@@ -20,7 +20,6 @@
 				""
 				"~MuteTiefling"
 			]
-			optional: true
 			id: "00000000000000AF"
 			tasks: [{
 				id: "7B56DD5D9F4BBB68"
@@ -53,7 +52,6 @@
 				""
 				"Note: Take caution when building your Pressure Chamber and try to keep the structure within a single chunk. F3+G will display chunk boundaries."
 			]
-			dependencies: ["00000000000000AF"]
 			id: "00000000000000B3"
 			tasks: [
 				{
@@ -259,7 +257,6 @@
 			shape: "rsquare"
 			subtitle: "First one, then the other"
 			description: ["Where pressurized air is your primary power supply, heat is a secondary but just as vital mechanic. Advanced Compressors and other machines rely on either heating them up or cooling them down to run properly."]
-			dependencies: ["00000000000000AF"]
 			id: "00000000000000CC"
 			tasks: [{
 				id: "00000000000000CD"
@@ -431,7 +428,6 @@
 			y: -13.5d
 			shape: "rsquare"
 			description: ["Go scoop up a bucket of oil like some filthy mongrel. You’ll find it commonly above ground and it’s easily spotted by watching your minimap."]
-			dependencies: ["00000000000000AF"]
 			id: "00000000000000E0"
 			tasks: [{
 				id: "00000000000000E1"
@@ -934,7 +930,6 @@
 				""
 				"When used over a pressure tube network, it allows for instantaneous movement of large amounts of items and fluids through the same line simultaneously."
 			]
-			dependencies: ["00000000000000AF"]
 			id: "000000000000011D"
 			tasks: [{
 				id: "000000000000011E"
@@ -1286,7 +1281,6 @@
 			dependencies: [
 				"00000000000000BF"
 				"00000000000000F5"
-				"00000000000000AF"
 			]
 			id: "0000000000000145"
 			tasks: [{
