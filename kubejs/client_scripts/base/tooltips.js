@@ -72,6 +72,10 @@ ItemEvents.tooltip((event) => {
             text: [Text.of(`Arcane Apparatus: Aura Generator`).green()]
         },
         {
+            items: ['naturesaura:snow_creator'],
+            text: [Text.of(`Arcane Apparatus: Snow and Ice Maker`).green()]
+        },
+        {
             items: ['naturesaura:light_staff', 'ars_nouveau:jar_of_light'],
             text: [Text.of(`Arcane Instrument: Creates Light Sources`).gold()]
         },
