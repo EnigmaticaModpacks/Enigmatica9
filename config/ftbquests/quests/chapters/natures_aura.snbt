@@ -442,11 +442,11 @@
 			}]
 			rewards: [{
 				id: "000000000000032D"
-type: "command"
-title: "Rare Nature's Aura Loot Box"
-icon: "kubejs:rare_lootbox"
-command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_natures_aura_loot_rare"
-player_command: false
+				type: "command"
+				title: "Rare Nature's Aura Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_natures_aura_loot_rare"
+				player_command: false
 			}]
 		}
 		{
@@ -557,11 +557,11 @@ player_command: false
 				}
 				{
 					id: "3EF0E6B29460EC10"
-type: "command"
-title: "Rare Nature's Aura Loot Box"
-icon: "kubejs:rare_lootbox"
-command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_natures_aura_loot_rare"
-player_command: false
+					type: "command"
+					title: "Rare Nature's Aura Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_natures_aura_loot_rare"
+					player_command: false
 				}
 			]
 		}
@@ -794,11 +794,11 @@ player_command: false
 				}
 				{
 					id: "1FF5A00AF41D494F"
-type: "command"
-title: "Rare Nature's Aura Loot Box"
-icon: "kubejs:rare_lootbox"
-command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_natures_aura_loot_rare"
-player_command: false
+					type: "command"
+					title: "Rare Nature's Aura Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_natures_aura_loot_rare"
+					player_command: false
 				}
 			]
 		}
@@ -984,11 +984,11 @@ player_command: false
 			}]
 			rewards: [{
 				id: "5685824F755FD107"
-type: "command"
-title: "Epic Nature's Aura Loot Box"
-icon: "kubejs:epic_lootbox"
-command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_natures_aura_loot_epic"
-player_command: false
+				type: "command"
+				title: "Epic Nature's Aura Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_natures_aura_loot_epic"
+				player_command: false
 			}]
 		}
 		{
@@ -1033,11 +1033,11 @@ player_command: false
 			}]
 			rewards: [{
 				id: "726807EBB03D8BE4"
-type: "command"
-title: "Rare Nature's Aura Loot Box"
-icon: "kubejs:rare_lootbox"
-command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_natures_aura_loot_rare"
-player_command: false
+				type: "command"
+				title: "Rare Nature's Aura Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_natures_aura_loot_rare"
+				player_command: false
 			}]
 		}
 		{
@@ -1059,11 +1059,11 @@ player_command: false
 			}]
 			rewards: [{
 				id: "435589B2E3400026"
-type: "command"
-title: "Rare Nature's Aura Loot Box"
-icon: "kubejs:rare_lootbox"
-command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_natures_aura_loot_rare"
-player_command: false
+				type: "command"
+				title: "Rare Nature's Aura Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_natures_aura_loot_rare"
+				player_command: false
 			}]
 		}
 		{
@@ -1083,11 +1083,11 @@ player_command: false
 			}]
 			rewards: [{
 				id: "2078B2E2903D871C"
-type: "command"
-title: "Scavenger's Delight"
-icon: "kubejs:scavenger_delight"
-command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
-player_command: false
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1107,11 +1107,11 @@ player_command: false
 			}]
 			rewards: [{
 				id: "398C537F585E06BA"
-type: "command"
-title: "Scavenger's Delight"
-icon: "kubejs:scavenger_delight"
-command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
-player_command: false
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1127,11 +1127,11 @@ player_command: false
 			}]
 			rewards: [{
 				id: "64FB7A460234CA2F"
-type: "command"
-title: "Farmer's Delight"
-icon: "kubejs:farmers_delight"
-command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
-player_command: false
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1147,11 +1147,11 @@ player_command: false
 			}]
 			rewards: [{
 				id: "3DBA5D25A0607A73"
-type: "command"
-title: "Blacksmith's Delight"
-icon: "kubejs:blacksmiths_delight"
-command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_blacksmiths_delight"
-player_command: false
+				type: "command"
+				title: "Blacksmith's Delight"
+				icon: "kubejs:blacksmiths_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_blacksmiths_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1167,11 +1167,11 @@ player_command: false
 			}]
 			rewards: [{
 				id: "108A5AC2A7832A0B"
-type: "command"
-title: "Alchemist's Delight"
-icon: "kubejs:alchemists_delight"
-command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_alchemists_delight"
-player_command: false
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_alchemists_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1297,11 +1297,11 @@ player_command: false
 			]
 			rewards: [{
 				id: "22036BC2088D50A5"
-type: "command"
-title: "Rare Nature's Aura Loot Box"
-icon: "kubejs:rare_lootbox"
-command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_natures_aura_loot_rare"
-player_command: false
+				type: "command"
+				title: "Rare Nature's Aura Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_natures_aura_loot_rare"
+				player_command: false
 			}]
 		}
 		{
@@ -1427,11 +1427,11 @@ player_command: false
 			]
 			rewards: [{
 				id: "2C1BEB25E59B8F06"
-type: "command"
-title: "Epic Nature's Aura Loot Box"
-icon: "kubejs:epic_lootbox"
-command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_natures_aura_loot_epic"
-player_command: false
+				type: "command"
+				title: "Epic Nature's Aura Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_natures_aura_loot_epic"
+				player_command: false
 			}]
 		}
 		{
@@ -1471,11 +1471,11 @@ player_command: false
 			}]
 			rewards: [{
 				id: "49FD9AE13A2A9FA3"
-type: "command"
-title: "Scavenger's Delight"
-icon: "kubejs:scavenger_delight"
-command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
-player_command: false
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -1525,11 +1525,11 @@ player_command: false
 			}]
 			rewards: [{
 				id: "790B02389C97D92B"
-type: "command"
-title: "Farmer's Delight"
-icon: "kubejs:farmers_delight"
-command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
-player_command: false
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
+				player_command: false
 			}]
 		}
 	]
