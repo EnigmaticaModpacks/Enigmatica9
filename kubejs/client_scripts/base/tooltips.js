@@ -139,10 +139,14 @@ ItemEvents.tooltip((event) => {
             items: ['naturesaura:hopper_upgrade'],
             text: [Text.of(`Arcane Apparatus: Ranged Hopper`).green()]
         },
-        // {
-        //     items: ['naturesaura:spawn_lamp', 'hexerei:dried_sage_bundle', 'hexerei:sage_burning_plate'],
-        //     text: [Text.of(`Arcane Apparatus: Prevents Mob Spawns`).green()]
-        // },
+        {
+            items: [
+                // 'hexerei:dried_sage_bundle',
+                // 'hexerei:sage_burning_plate',
+                'naturesaura:spawn_lamp'
+            ],
+            text: [Text.of(`Arcane Apparatus: Prevents Mob Spawns`).green()]
+        },
         {
             items: ['naturesaura:rf_converter'],
             text: [Text.of(`Arcane Apparatus: Generates FE From Aura`).red()]
