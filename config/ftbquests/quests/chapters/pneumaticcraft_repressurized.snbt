@@ -10,8 +10,8 @@
 	quests: [
 		{
 			icon: "pneumaticcraft:ingot_iron_compressed"
-			x: -8.5d
-			y: -16.0d
+			x: -18.5d
+			y: -16.5d
 			shape: "gear"
 			description: [
 				"PneumaticCraft: Repressurized is all about logistics, automation, and generally blowing things up for profit. Mastering pressurized air and heat will be the beginning of your journey. "
@@ -42,16 +42,25 @@
 		{
 			title: "Ethically Sourced"
 			icon: "pneumaticcraft:pressure_chamber_wall"
-			x: -16.5d
-			y: -14.5d
-			shape: "rsquare"
+			x: -18.5d
+			y: -13.0d
 			description: [
-				"To begin your journey with PNC:R, you’ll need to obtain some Compressed Iron. The process for making this is quite dangerous without a pressure chamber. Be sure to stand well back!"
+				"Central to any Pressure Mechanic’s workshop is the Pressure Chamber, which serves as both a functional machine for crafting and a battery of Air to even out usage spikes in a system. It is built as a hollow cube, either 3x3x3, 4x4x4, or 5x5x5. Starting with a small chamber is recommended as larger ones will take far longer to fill at the start."
 				""
-				"Once you’ve acquired the materials, build a 3x3x3 pressure chamber. The PNC:R Manual will show you how."
+				"Pressurized Air will be input through the Valve, while items for crafting will be input through an Interface. Items may not be inserted into the Interface manually. Instead, they’ll be input via hopper or pipe. An amount of Air is used for each item transferred, meaning a stack will require 64x more air to transfer. If an item stack doesn’t want to transfer in, consider adding more Volume Upgrades."
 				""
-				"Note: Take caution when building your Pressure Chamber and try to keep the structure within a single chunk. F3+G will display chunk boundaries."
+				"================================================================="
+				""
+				"Pressurized Air generally works in similar ways to real life, with Air wanting to flow from high to low pressure to form an equilibrium. This means that Air can flow both ways on a tube network, and the total air in a system is available for use by everything that’s connected. Of course, if one machine is draining all the Air, that may mean others won’t have enough to run. "
+				""
+				"Air using recipes will show the minimum Pressure they need to run. This is measured in bar. This will be displayed as a green zone on the pressure display in the recipe. Having pressure anywhere in this range is acceptable. "
+				""
+				"The more volume a system has, the more Air is required to reach the same pressure. Adding Volume Upgrades to machines, or simply including more machines on a line, will raise total Air a system may hold. This may temporarily lower pressure, at least until a compressor can fill it back up. "
+				""
+				"Note: Care must be taken when building a Pressure Chamber and the entire structure should avoid crossing chunk boundaries. F3+G will display chunk boundaries."
 			]
+			dependencies: ["00000000000000BD"]
+			min_width: 400
 			id: "00000000000000B3"
 			tasks: [
 				{
@@ -92,17 +101,20 @@
 			]
 		}
 		{
-			title: "Air Compressor"
+			title: "Getting Started: Pressure Management"
 			icon: "pneumaticcraft:air_compressor"
-			x: -16.5d
-			y: -13.0d
+			x: -18.5d
+			y: -14.0d
 			subtitle: "Under Pressure"
 			description: [
-				"While it won’t have you being visited by danger noodles from space or irradiating the countryside for the next millennium, Pressurized Air can be dangerous in its own right and going over pressure can cause that block to burst and be lost."
+				"While it won’t have you being visited by danger noodles from space or irradiating the countryside for the next millennium, Pressurized Air can be dangerous in its own right as going over pressure can cause that block to burst and be lost."
 				""
-				"A simple redstone cut-off can be built for your new Air Compressor with a bit of Redstone and a Repeater."
+				"A simple Redstone cut-off can be built to control Air Compressors, and doing so will not only prevent accidental explosions, but it also helps with fuel efficiency. "
+				""
+				"Place a Pressure Gauge Tube Module on the first Pressure Tube out of the compressor, then run a loop of exactly nine Redstone Dust back to a repeater pointing into the Compressor itself. Finally, set the Compressor to run on Low Signal in its Redstone Behaviour panel. The end result is a Compressor that will turn off at about 4.5 bar. "
 			]
-			dependencies: ["00000000000000B3"]
+			dependencies: ["7B56DD5D9F4BBB68"]
+			min_width: 300
 			id: "00000000000000BD"
 			tasks: [
 				{
@@ -113,8 +125,7 @@
 				{
 					id: "00000000000000BF"
 					type: "item"
-					title: "Air Compressor"
-					icon: "pneumaticcraft:air_compressor"
+					title: "Air Compressors"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
@@ -126,6 +137,26 @@
 								}
 								{
 									id: "pneumaticcraft:liquid_compressor"
+									Count: 1b
+								}
+								{
+									id: "pneumaticcraft:thermal_compressor"
+									Count: 1b
+								}
+								{
+									id: "pneumaticcraft:advanced_air_compressor"
+									Count: 1b
+								}
+								{
+									id: "pneumaticcraft:advanced_liquid_compressor"
+									Count: 1b
+								}
+								{
+									id: "pneumaticcraft:electrostatic_compressor"
+									Count: 1b
+								}
+								{
+									id: "pneumaticcraft:flux_compressor"
 									Count: 1b
 								}
 							]
@@ -158,9 +189,13 @@
 		{
 			title: "Security Upgrades"
 			x: -17.5d
-			y: -12.5d
+			y: -12.0d
 			subtitle: "Cautiously Optimistic"
-			description: ["Even the best laid plans can be brought to ruin by unexpected events. Install security upgrades in your compressor and pressure chamber to prevent rapid unscheduled disassembly."]
+			description: [
+				"Even the best laid plans can be brought to ruin by unexpected events. Install security upgrades in machines to prevent rapid unscheduled disassembly."
+				""
+				"It should be stressed that Security Upgrades should be treated as backup security. A properly Redstone controlled Compressor should be the number one priority."
+			]
 			dependencies: ["00000000000000B3"]
 			id: "00000000000000C3"
 			tasks: [{
@@ -180,15 +215,14 @@
 		}
 		{
 			icon: "pneumaticcraft:liquid_compressor"
-			x: -15.5d
-			y: -12.5d
+			x: -21.5d
+			y: -15.0d
 			subtitle: "A Cleaner Burn"
 			description: [
 				"Solid fuels can be potent, but they lack finesse as they’ll continue to generate pressure until the entire piece of fuel has burned, even if the compressor is disabled by redstone. Consider upgrading to a safer fuel source."
 				""
 				"Note: Liquid Compressors can burn many types of fuel, all listed within the GUI, however some notable renewable fuels include biodiesel, liquid hydrogen, and liquid ethylene."
 			]
-			dependencies: ["00000000000000B3"]
 			id: "00000000000000C7"
 			tasks: [
 				{
@@ -218,11 +252,10 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: -10.0d
+			x: 5.5d
+			y: -12.5d
 			subtitle: "The Night is Dark..."
 			description: ["Despite its name, the Kerosene Lamp is capable of using all of the same fuels as the Liquid Compressor and can light an area up to 30 blocks in radius. Perfect for keeping the terrors at bay. Try using a few to safely light up your base."]
-			dependencies: ["00000000000000EA"]
 			id: "00000000000000CA"
 			tasks: [{
 				id: "00000000000000CB"
@@ -252,8 +285,8 @@
 		{
 			title: "-173 Fahrenheit or Celsius?"
 			icon: "minecraft:packed_ice"
-			x: -12.5d
-			y: -13.5d
+			x: -14.0d
+			y: -14.0d
 			shape: "rsquare"
 			subtitle: "First one, then the other"
 			description: ["Where pressurized air is your primary power supply, heat is a secondary but just as vital mechanic. Advanced Compressors and other machines rely on either heating them up or cooling them down to run properly."]
@@ -287,8 +320,8 @@
 			]
 		}
 		{
-			x: -12.5d
-			y: -12.0d
+			x: -14.0d
+			y: -12.5d
 			subtitle: "Whirling Dervishes"
 			description: [
 				"Built on the principle of swirling high pressure air in a special chamber to create a temperature differential, the Vortex Tube allows you to finely control the amount of heating or cooling it does by controlling the pressure."
@@ -319,8 +352,8 @@
 		}
 		{
 			title: "Heat Pipe"
-			x: -13.0d
-			y: -11.0d
+			x: -14.5d
+			y: -11.5d
 			subtitle: "The Cold Never Bothered Me Anyway"
 			description: [
 				"Heat Pipe is useful for transmitting heat between blocks quickly and without loss to the environment. Use it to move heat from a Vortex Tube to one or more machines. Heat can also be used to directly power a Furnace."
@@ -345,8 +378,8 @@
 			}]
 		}
 		{
-			x: -13.5d
-			y: -12.5d
+			x: -15.0d
+			y: -13.0d
 			description: [
 				"You may have noted by now that the Vortex Tube uses a lot of air and does not respond to redstone. In order to turn it off, the air supply must be cut. A Regulator Tube Module allows you to do just that."
 				""
@@ -369,8 +402,8 @@
 			}]
 		}
 		{
-			x: -14.0d
-			y: -10.0d
+			x: -15.5d
+			y: -10.5d
 			subtitle: "Freeze Frame"
 			description: [
 				"The Heat Frame is placed on any inventory and allows the inventory to make use of heat or cold to perform crafting operations. When heated, it smelts items as a furnace would. When cooled, it can make a variety of useful items."
@@ -392,15 +425,14 @@
 			}]
 		}
 		{
-			x: -13.0d
-			y: -10.0d
+			x: 4.5d
+			y: -11.0d
 			subtitle: "Under the Radar"
 			description: [
 				"The Universal Sensor is a powerful block that will output a redstone signal based on various conditions, such as detecting a nearby player, when a player right clicks a block, the presence of blocks, light level, or even the current heat of a block."
 				""
 				"When reading heat, try aiming it at a heat pipe or a PNC:R machine, rather than at an inventory with a heat frame."
 			]
-			dependencies: ["00000000000000D2"]
 			id: "00000000000000DC"
 			tasks: [{
 				id: "00000000000000DD"
@@ -455,15 +487,14 @@
 		}
 		{
 			icon: "pneumaticcraft:gas_lift"
-			x: -5.5d
-			y: -12.5d
+			x: 4.5d
+			y: -14.0d
 			subtitle: "Hands Off!"
 			description: [
 				"The Gas Lift can be used to pump up fluids from the world. Place it above a source block of any fluid, insert drill pipes, and provide air. The pipes will extend down to a source and the lift will attempt to pull all nearby connected source blocks."
 				""
 				"Note: Sneak + Right click any PNC:R block with a Pneumatic Wrench to instantly pick it up while retaining the stored air and upgrades. This also works on Pressure Chamber Valves."
 			]
-			dependencies: ["00000000000000E0"]
 			id: "00000000000000E2"
 			tasks: [
 				{
@@ -556,101 +587,10 @@
 			]
 		}
 		{
-			title: "Lubricant"
-			x: -5.0d
-			y: -9.5d
-			subtitle: "Slippery Slope"
-			description: ["Extremely valuable for creating Speed Upgrades."]
-			dependencies: ["00000000000000F8"]
-			id: "00000000000000EE"
-			tasks: [{
-				id: "00000000000000EF"
-				type: "item"
-				item: "pneumaticcraft:lubricant_bucket"
-			}]
-			rewards: [{
-				id: "00000000000000F0"
-				type: "item"
-				title: "Speed Upgrade"
-				item: "pneumaticcraft:speed_upgrade"
-				count: 2
-			}]
-		}
-		{
-			title: "LPG"
-			x: -3.0d
-			y: -10.5d
-			subtitle: "Out of Phase"
-			description: ["Need more? Consider converting some of your other fuels."]
-			dependencies: ["00000000000000EA"]
-			id: "00000000000000F1"
-			tasks: [{
-				id: "00000000000000F2"
-				type: "item"
-				item: "pneumaticcraft:lpg_bucket"
-			}]
-			rewards: [{
-				id: "00000000000000F3"
-				type: "command"
-				title: "Rare PNC:R Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_rare"
-				player_command: false
-			}]
-		}
-		{
-			title: "Molten Plastic"
-			x: -3.0d
-			y: -9.5d
-			subtitle: "White Gold"
-			description: ["A drop in the sea to come."]
-			dependencies: ["00000000000000F1"]
-			id: "00000000000000F4"
-			tasks: [{
-				id: "00000000000000F5"
-				type: "item"
-				item: "pneumaticcraft:plastic_bucket"
-			}]
-			rewards: [{
-				id: "00000000000000F7"
-				type: "command"
-				title: "Epic PNC:R Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			title: "Diesel"
-			x: -5.0d
-			y: -10.5d
-			subtitle: "To Burn, or Not To Burn"
-			description: ["It's a decent fuel... but perhaps a little transformation is in order."]
-			dependencies: ["00000000000000EA"]
-			id: "00000000000000F8"
-			tasks: [{
-				id: "00000000000000F9"
-				type: "item"
-				item: "pneumaticcraft:diesel_bucket"
-			}]
-			rewards: [{
-				id: "00000000000000FA"
-				type: "command"
-				title: "Rare PNC:R Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_rare"
-				player_command: false
-			}]
-		}
-		{
 			x: -4.0d
 			y: -9.0d
 			subtitle: "Mixin’ It Up"
 			description: ["The Fluid Mixer is primarily used as the final step in the Biodiesel processing chain. It also creates a very useful byproduct, Glycerol."]
-			dependencies: [
-				"00000000000000F4"
-				"00000000000000EE"
-			]
 			id: "00000000000000FB"
 			tasks: [{
 				id: "00000000000000FC"
@@ -699,95 +639,6 @@
 				icon: "kubejs:epic_lootbox"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
 				player_command: false
-			}]
-		}
-		{
-			title: "Ethanol"
-			x: -5.0d
-			y: -7.0d
-			subtitle: "What a Corny Joke"
-			description: ["Ethanol could be burned on its own, but it could be refined, which is definitely worth doing!"]
-			dependencies: ["00000000000000FD"]
-			id: "0000000000000100"
-			tasks: [{
-				id: "0000000000000101"
-				type: "item"
-				item: "pneumaticcraft:ethanol_bucket"
-			}]
-			rewards: [{
-				id: "0000000000000102"
-				type: "command"
-				title: "Epic PNC:R Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			title: "Vegetable Oil"
-			x: -3.0d
-			y: -7.0d
-			subtitle: "Give Peas a Chance"
-			description: ["Or any seed, for that matter."]
-			dependencies: ["00000000000000FD"]
-			id: "0000000000000103"
-			tasks: [{
-				id: "0000000000000104"
-				type: "item"
-				item: "pneumaticcraft:vegetable_oil_bucket"
-			}]
-			rewards: [{
-				id: "000000000000022A"
-				type: "command"
-				title: "Epic PNC:R Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			title: "Biodiesel"
-			x: -4.0d
-			y: -6.5d
-			subtitle: "Slow Burn"
-			description: ["A sustainable way forward."]
-			dependencies: [
-				"0000000000000103"
-				"0000000000000100"
-			]
-			id: "0000000000000107"
-			tasks: [{
-				id: "0000000000000108"
-				type: "item"
-				item: "pneumaticcraft:biodiesel_bucket"
-			}]
-			rewards: [{
-				id: "0000000000000379"
-				type: "command"
-				title: "Legendary PNC:R Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_legendary"
-				player_command: false
-			}]
-		}
-		{
-			x: -4.0d
-			y: -5.0d
-			shape: "octagon"
-			description: ["Find a way to fully automate the creation of plastic sheets and speed upgrades from biodiesel with only PNC:R and vanilla mechanics. Consider the use of drones for farming and logistics."]
-			dependencies: ["0000000000000107"]
-			id: "0000000000000109"
-			tasks: [{
-				id: "000000000000010A"
-				type: "checkmark"
-				title: "Sustainability Challenge"
-				icon: {
-					id: "pneumaticcraft:logistics_drone"
-					Count: 1b
-					tag: {
-						"pneumaticcraft:air": 120000
-					}
-				}
 			}]
 		}
 		{
@@ -921,7 +772,7 @@
 			}]
 		}
 		{
-			title: "The Logical Path Forward"
+			title: "Logistics and Programming"
 			x: -8.5d
 			y: -13.5d
 			shape: "rsquare"
@@ -1014,24 +865,59 @@
 		}
 		{
 			x: -8.5d
-			y: -10.5d
+			y: -6.5d
 			subtitle: "Flying Circus"
 			description: ["Logistics Drones are handy little helpers in places where you don’t want to run a full air infrastructure. Experiment with some logistics frames and deploy a logistics drone to move the items for you."]
-			dependencies: ["000000000000010B"]
 			id: "0000000000000126"
 			tasks: [{
 				id: "0000000000000127"
 				type: "item"
-				item: "pneumaticcraft:logistics_drone"
+				title: "Drones"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "pneumaticcraft:drone"
+								Count: 1b
+							}
+							{
+								id: "pneumaticcraft:logistics_drone"
+								Count: 1b
+							}
+							{
+								id: "pneumaticcraft:harvesting_drone"
+								Count: 1b
+							}
+							{
+								id: "pneumaticcraft:guard_drone"
+								Count: 1b
+							}
+							{
+								id: "pneumaticcraft:collector_drone"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
-			rewards: [{
-				id: "0000000000000128"
-				type: "command"
-				title: "Epic PNC:R Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "0000000000000128"
+					type: "command"
+					title: "Epic PNC:R Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
+					player_command: false
+				}
+				{
+					id: "67E6ED078E250807"
+					type: "item"
+					item: "pneumaticcraft:inventory_upgrade"
+					count: 4
+				}
+			]
 		}
 		{
 			x: -8.5d
@@ -1042,7 +928,6 @@
 				""
 				"Refer to the PNC Manual or the item tooltips for instructions on how they work."
 			]
-			dependencies: ["0000000000000126"]
 			id: "0000000000000129"
 			tasks: [{
 				id: "000000000000012A"
@@ -1070,17 +955,20 @@
 			]
 		}
 		{
-			x: -8.5d
-			y: -7.5d
+			x: -19.5d
+			y: -12.0d
 			subtitle: "In-Flight Refueling"
 			description: [
-				"The charging station is vital for keeping drones charged automatically. Place one down and insert a Dispenser Upgrade into it to allow it to charge entities above it. Nearby drones will automatically seek out available charging stations when needed."
+				"The Charging Station is the primary way of charging Pneumatic items such as the Pneumatic Wrench, Jackhammer or Armor. It serves double duty as the means of inserting upgrades into those items as well."
 				""
-				"Standing on such a Charging Station will also charge items in your inventory."
+				"By inserting a Dispenser Upgrade in the Charging Station, it will charge entities above it, recharging Drones or any equipment on a player. "
+				""
+				"Nearby drones will automatically seek out such a Charging Station when they’re low on Air. "
 				""
 				"Note: The Charging Station is the POI for Pressure Mechanics. Maybe go make a friend and see what they have to offer."
 			]
-			dependencies: ["0000000000000129"]
+			dependencies: ["00000000000000B3"]
+			min_width: 300
 			id: "000000000000012C"
 			tasks: [{
 				id: "000000000000012D"
@@ -1105,10 +993,10 @@
 		}
 		{
 			x: -7.5d
-			y: -7.0d
+			y: -6.5d
 			subtitle: "In Her Time of Need"
 			description: ["Install one or more Item Life Upgrades in your drones to help them stay in working order. They can occasionally take damage from environmental hazards and these upgrades will cause them to self repair."]
-			dependencies: ["000000000000012C"]
+			dependencies: ["0000000000000126"]
 			id: "000000000000012F"
 			tasks: [{
 				id: "0000000000000130"
@@ -1125,11 +1013,11 @@
 			}]
 		}
 		{
-			x: -8.5d
-			y: -6.5d
+			x: -8.0d
+			y: -5.5d
 			subtitle: "She's All Alone, All Alone"
 			description: ["Install a Standby Upgrade in a drone to conserve a little air."]
-			dependencies: ["000000000000012C"]
+			dependencies: ["0000000000000126"]
 			id: "0000000000000132"
 			tasks: [{
 				id: "0000000000000133"
@@ -1146,33 +1034,11 @@
 			}]
 		}
 		{
-			title: "Inventory Upgrade"
-			x: -7.5d
-			y: -8.0d
-			subtitle: "This Bad Boy Can Fit So Many Blocks In It!"
-			description: ["Install some Inventory Upgrades in your Collector Drone."]
-			dependencies: ["000000000000012C"]
-			id: "0000000000000135"
-			tasks: [{
-				id: "0000000000000136"
-				type: "item"
-				item: "pneumaticcraft:inventory_upgrade"
-				count: 4L
-			}]
-			rewards: [{
-				id: "0000000000000137"
-				type: "item"
-				title: "Inventory Upgrade"
-				item: "pneumaticcraft:inventory_upgrade"
-				count: 8
-			}]
-		}
-		{
 			x: -9.5d
-			y: -8.0d
+			y: -6.5d
 			subtitle: "He's Going the Distance"
 			description: ["Install a few Range Upgrades in your Collector Drone."]
-			dependencies: ["000000000000012C"]
+			dependencies: ["0000000000000126"]
 			id: "0000000000000138"
 			tasks: [{
 				id: "0000000000000139"
@@ -1188,11 +1054,11 @@
 			}]
 		}
 		{
-			x: -9.5d
-			y: -7.0d
+			x: -9.0d
+			y: -5.5d
 			subtitle: "He's Going for Speed"
 			description: ["Speed things up with a few of these in your Drones, or many other blocks."]
-			dependencies: ["000000000000012C"]
+			dependencies: ["0000000000000126"]
 			id: "000000000000013B"
 			tasks: [{
 				id: "000000000000013C"
@@ -1278,10 +1144,6 @@
 				""
 				"Note: Molten Plastic quest must be completed before proceeding."
 			]
-			dependencies: [
-				"00000000000000BF"
-				"00000000000000F5"
-			]
 			id: "0000000000000145"
 			tasks: [{
 				id: "0000000000000146"
@@ -1302,7 +1164,6 @@
 			x: 0.0d
 			y: -13.0d
 			description: ["The pinnacle of stay-at-home shopping. Click a button and your order is there before you know it. "]
-			dependencies: ["0000000000000145"]
 			id: "0000000000000148"
 			tasks: [{
 				id: "0000000000000149"
@@ -1581,16 +1442,36 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: -9.5d
+			icon: "pneumaticcraft:advanced_air_compressor"
+			x: -13.0d
+			y: -13.0d
 			subtitle: "Super Laminar Flow"
 			description: ["With advanced machining methods, stronger pressure tubes may be made and higher pressure attained. Advanced Compressors must be kept cool, and therefore are not always the best option for a given task. Some machines will only begin to work, however, at the pressures made by an advanced compressor."]
-			dependencies: ["0000000000000168"]
 			id: "0000000000000415"
 			tasks: [{
 				id: "0000000000000416"
 				type: "item"
-				item: "pneumaticcraft:advanced_liquid_compressor"
+				title: "Advanced Compressors"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "pneumaticcraft:advanced_air_compressor"
+								Count: 1b
+							}
+							{
+								id: "pneumaticcraft:advanced_liquid_compressor"
+								Count: 1b
+							}
+							{
+								id: "pneumaticcraft:flux_compressor"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "000000000000063D"
@@ -1602,20 +1483,19 @@
 			}]
 		}
 		{
-			x: -16.5d
-			y: -11.5d
+			x: -18.5d
+			y: -11.0d
 			subtitle: "Full Reverse!"
 			description: [
-				"Keeping things under pressure is only one side of the coin. Creating a vacuum can be very beneficial as well."
+				"Though most things will require high pressure to operate, some machines will require a vacuum to do what they do. The Vacuum Pump may be used for just this purpose. "
 				""
-				"Tip: A Pressure Chamber in Vacuum can be used to extract enchants from items."
+				"Run pressure into the side of the machine with a green plus sign, then run a Tube out of the side with the red minus sign. Anything down the line will be put under vacuum."
+				""
+				"Tip: Having a second Pressure Chamber under permanent vacuum can be enormously helpful as the Vacuum Chamber can be used to transfer Enchantments from items to books. Likewise, the books may be re-applied to items in a regular Pressure Chamber for a minor expenditure of Air."
 			]
-			dependencies: [
-				"00000000000000BD"
-				"00000000000000C7"
-				"00000000000000C3"
-			]
+			dependencies: ["00000000000000B3"]
 			dependency_requirement: "one_completed"
+			min_width: 300
 			id: "0000000000000417"
 			tasks: [{
 				id: "0000000000000418"
@@ -1630,8 +1510,8 @@
 			}]
 		}
 		{
-			x: -17.5d
-			y: -10.5d
+			x: 4.5d
+			y: -13.0d
 			subtitle: "Helter Skelter"
 			description: [
 				"Recent advancements in Pneumatic technology now allow for the forced removal of the magical core of Spawners found throughout the world. Once extracted, they can be empowered to run more quickly by inserting them in a modified spawner and spinning them up with air."
@@ -1650,7 +1530,6 @@
 				""
 				"Note: When the process has finished, sneak + right-click the Extractor with a Pneumatic Wrench to avoid the need to charge from scratch the next time. An extractor with some volume upgrades should be able to extract cores from several spawners before needing to be re-charged. "
 			]
-			dependencies: ["0000000000000417"]
 			min_width: 300
 			id: "0000000000000419"
 			tasks: [{
@@ -1669,8 +1548,8 @@
 		}
 		{
 			icon: "pneumaticcraft:vacuum_trap"
-			x: -15.5d
-			y: -10.5d
+			x: 5.0d
+			y: -10.0d
 			subtitle: "Who Ya Gonna Call?"
 			description: [
 				"Your gateway to custom spawning."
@@ -1687,7 +1566,6 @@
 				""
 				"Random mobs may be released from a core by Sneak + Right Clicking it on the ground, allowing easier transportation of mobs even before the Pressurized Spawner is available. "
 			]
-			dependencies: ["000000000000041F"]
 			min_width: 250
 			id: "000000000000041B"
 			tasks: [
@@ -1712,15 +1590,14 @@
 			}]
 		}
 		{
-			x: -16.5d
-			y: -9.5d
+			x: 4.5d
+			y: -12.0d
 			subtitle: "Spinning in Their Graves"
 			description: [
 				"Once the Extraction process has finished, be sure to break the empty spawner (any pick will do) and take it with you. It's required for crafting a Pressurized Spawner."
 				""
 				"Note: Consider keeping a spare empty spawner at your base. The Spawner Extractor can be placed atop it to simplify recharging it for future projects."
 			]
-			dependencies: ["0000000000000419"]
 			id: "000000000000041F"
 			tasks: [{
 				id: "0000000000000420"
@@ -1738,8 +1615,8 @@
 		}
 		{
 			title: "Thermal Lagging"
-			x: -12.0d
-			y: -10.0d
+			x: -13.5d
+			y: -10.5d
 			subtitle: "The Prison for Heat"
 			description: ["Thermal Laggings are insulating covers for machines to help with keeping heat. They greatly reduce heat loss, and you can interact with machines through them!"]
 			dependencies: ["00000000000000D2"]
@@ -1758,6 +1635,39 @@
 				icon: "kubejs:epic_lootbox"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_epic"
 				player_command: false
+			}]
+		}
+		{
+			title: "Getting Started: Heat Management"
+			x: -14.0d
+			y: -15.0d
+			id: "2814362348D93122"
+			tasks: [{
+				id: "3020427F8A820530"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			title: "Tools and Utility"
+			x: 4.5d
+			y: -15.5d
+			id: "5E79C1011FABC4AF"
+			tasks: [{
+				id: "60939968644821BA"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			title: "Machines"
+			x: -6.0d
+			y: -14.5d
+			id: "53980B8C13DAFC68"
+			tasks: [{
+				id: "66A34FAC2CE0D4A9"
+				type: "item"
+				item: "minecraft:stone"
 			}]
 		}
 	]
