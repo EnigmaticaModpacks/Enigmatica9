@@ -632,7 +632,7 @@
 			x: -13.5d
 			y: -5.5d
 			subtitle: "Weird Flex, Bro"
-			description: ["Filterable and fast, PNC Hoppers can be oriented however you like and accept multiple useful upgrades. Check their GUI for more info."]
+			description: ["Filterable and fast, PNC:R Hoppers can be oriented however you like and accept multiple useful upgrades. Check their GUI for more info."]
 			dependencies: ["00000000000000D3"]
 			id: "0000000000000119"
 			tasks: [
@@ -980,9 +980,9 @@
 			}]
 		}
 		{
-			title: "Prime Delivery"
 			x: -11.5d
 			y: -7.0d
+			subtitle: "Prime Delivery"
 			description: [
 				"The pinnacle of stay-at-home shopping. Click a button and your order is there before you know it."
 				""
@@ -1342,6 +1342,7 @@
 			x: -11.5d
 			y: -8.5d
 			subtitle: "You Can Touch, You Can Play"
+			description: ["Beyond machines and logistics, PNC:R offers a number of very useful tools, armor, and utility devices. "]
 			dependencies: ["00000000000000BF"]
 			id: "5E79C1011FABC4AF"
 			tasks: [{
@@ -1572,7 +1573,11 @@
 			x: -11.0d
 			y: -3.5d
 			subtitle: "Leveling the Playing Field"
-			description: ["A modern solution to monster slaying. Pet friendly too!"]
+			description: [
+				"A modern solution to monster slaying. Pet friendly too!"
+				""
+				"Add a Security Upgrade to prevent it from harming tamed creatures and fellow players."
+			]
 			dependencies: ["00000000000000D3"]
 			id: "7DBC7707618B7B45"
 			tasks: [{
@@ -1710,6 +1715,7 @@
 		{
 			x: -21.0d
 			y: -7.0d
+			description: ["When placed on the side of an inventory or a tank, the Transfer Gadget facilitates the transfer of items and fluids into any adjacent tank. It is a bit slow, but has the benefit of not requiring a block space. "]
 			dependencies: ["000000000000011D"]
 			id: "32629D82E446D70B"
 			tasks: [{
