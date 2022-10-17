@@ -56,5 +56,15 @@
 				criterion: ""
 			}]
 		}
+		{
+			x: -8.5d
+			y: -6.5d
+			id: "5D72347C524CBAE9"
+			tasks: [{
+				id: "2AECF726E9E2D41B"
+				type: "item"
+				item: "minecraft:bedrock"
+			}]
+		}
 	]
 }
