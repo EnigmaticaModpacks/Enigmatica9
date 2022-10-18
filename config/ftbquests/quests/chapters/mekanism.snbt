@@ -1687,8 +1687,13 @@
 				"When in any of the ‘Configurate’ modes, a Right-Click on a section of pipe will toggle Redstone Sensitivity, allowing the pipe to be disabled with a Redstone signal, while a Sneak + Right-Click will toggle the pipe’s mode, either Push, Pull, or None (disabled)."
 				""
 				"Logistics Pipes are the exception to this rule, however, as they cannot be made Redstone Sensitive. A Sneak + Right Click will instead toggle the color filter of a section of pipes, which assists in filtering where items are sent by Mekanism machines. "
+				""
+				"Note: All these pipes may be upgraded in-world by Right-Clicking them with the appropriate tier of Alloy. This will upgrade the nearest 8 pipe segments on the same network. "
+				""
+				"Clicking repeatedly in the same spot is a good way to get a long network fully upgraded without needing to tear everything up and re-configure the pipes. "
 			]
 			dependencies: ["00000000000006A2"]
+			min_width: 300
 			id: "169A1D98A59A0961"
 			tasks: [
 				{
