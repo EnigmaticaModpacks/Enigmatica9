@@ -12,6 +12,8 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:compat\/byg\/dye/ },
         { id: /mekanism:compat\/byg\/sawing\/log/ },
         { id: /mekanism:sawing\/log/ },
+        { id: 'mekanism:processing/netherite/dust_to_ancient_debris' },
+        { type: 'mekanism:combining', id: /ore/ },
         { id: 'quark:tweaks/smelting/bone_meal_utility' },
         { type: 'immersiveengineering:sawmill' },
         { type: 'create:cutting' },
