@@ -10,7 +10,7 @@
 	quests: [
 		{
 			title: "Mekanism"
-			x: -2.0d
+			x: 1.5d
 			y: -3.0d
 			shape: "gear"
 			description: [
@@ -39,10 +39,10 @@
 			}]
 		}
 		{
-			title: "Material Processing"
+			title: "Getting Started: Material Processing"
 			icon: "mekanism:alloy_infused"
 			x: 1.5d
-			y: -1.5d
+			y: -1.0d
 			description: [
 				"As noted, Mekanism maintains a strong focus on efficiencies throughout the mod. As machines are upgraded and more systems put in place, they become more efficient, more productive, and cheaper to run. "
 				""
@@ -51,8 +51,11 @@
 			dependencies: ["00000000000006A2"]
 			id: "00000000000006A5"
 			tasks: [{
-				id: "00000000000006A6"
-				type: "checkmark"
+				id: "5CB3E59893073F9E"
+				type: "item"
+				title: "Material Processing"
+				item: "minecraft:redstone"
+				count: 16L
 			}]
 		}
 		{
@@ -85,8 +88,8 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: -1.0d
+			x: -2.0d
+			y: -1.5d
 			subtitle: "Argent Crucible"
 			description: [
 				"The Heat Generator is a multi-function device that will be useful early on as a source of power."
@@ -122,8 +125,8 @@
 			]
 		}
 		{
-			x: -5.0d
-			y: 0.0d
+			x: -2.0d
+			y: -0.5d
 			subtitle: "100% Cancer-Free"
 			description: [
 				"Lava has a tendency to set things on fire, which some would deem undesirable. As a step up from the Heat Generator, there's the Wind Generator. "
@@ -156,8 +159,8 @@
 			]
 		}
 		{
-			x: -5.0d
-			y: 1.0d
+			x: -2.0d
+			y: 0.5d
 			subtitle: "Frightening Efficiency"
 			description: ["The Gas-Burning Generator primarily burns Ethylene to produce energy, however it can also be used to burn excess Hydrogen. Hydrogen itself produces no net gain in power, instead serving as a useful energy storage medium."]
 			dependencies: ["00000000000006B1"]
@@ -233,16 +236,23 @@
 			]
 		}
 		{
-			title: "Basic Power Generation"
+			title: "Getting Started: Power Generation"
 			icon: "mekanism:advanced_energy_cube"
-			x: -5.0d
-			y: -2.0d
-			description: ["It is possible to bootstrap power production by feeding redstone dust directly into the power slot in Mekanism machines, but this would be wasteful and inefficient. The following quests will assist in getting a basic power infrastructure up and running to keep your base producing."]
+			x: -2.0d
+			y: -2.5d
+			description: [
+				"It is possible to bootstrap power production by feeding Redstone dust directly into the power slot in Mekanism machines. "
+				""
+				"This would be wasteful and inefficient, however. There are far more efficient ways to proceed."
+			]
 			dependencies: ["00000000000006A2"]
 			id: "00000000000006BA"
 			tasks: [{
-				id: "00000000000006BB"
-				type: "checkmark"
+				id: "44FDF3C32E3A98CF"
+				type: "item"
+				title: "Power Generation"
+				item: "minecraft:redstone"
+				count: 16L
 			}]
 			rewards: [{
 				id: "00000000000006CC"
@@ -267,9 +277,13 @@
 			y: 0.0d
 			subtitle: "Advanced Metallurgy"
 			description: [
-				"Once some basic power infrastructure is settled, the next most important machine will be the Metallurgic Infuser. With this, Steel and all of the other various alloys used throughout the mod can be created. "
+				"Once some basic power infrastructure is settled, the next most important machine will be the Metallurgic Infuser. "
 				""
-				"Consider building multiple Infusers, one per type. Automatic a single infuser for all types is quite possible, but requires a fair amount more effort while being slower than independent processing lines. "
+				"Take notice of the color coding in Mekanism GUIs, as they’ll indicate where materials go. The Yellow box on the left is where the infusion matter goes. It’ll be absorbed into an internal buffer and then consumed during the actual craft. "
+				""
+				"These colors also correspond to the colors in the Side Config panel. By default, this machine expects the infusion material to be inserted from the bottom of the machine. That’s all configurable, however, so set them however they’re most convenient."
+				""
+				"Automation Note: Since the two required input materials use two different channels, red and yellow, there’s no way to feed both items in from the same face. As a result, it’s often easiest to make multiple machines, each dedicated to their own infusion material."
 			]
 			dependencies: ["00000000000006A5"]
 			id: "00000000000006BD"
@@ -325,17 +339,16 @@
 		}
 		{
 			x: 1.5d
-			y: 1.5d
+			y: 1.0d
 			subtitle: "Put One In The Chamber"
 			description: [
-				"Alloys will be needed commonly for further progression and without a little extra effort, they can become quite costly to make. Enter the Enrichment Chamber. "
+				"Alloys will be needed commonly for more advanced machinery. They can be quite costly to make, however, as infusion materials don’t go very far. "
 				""
-				"Running Raw Ores through the Enrichment Chamber will increase the yield by 33 percent, while running Full Ore Blocks will double the output."
+				"They can be stretched quite a bit further by enriching them in an Enrichment Chamber, however."
 				""
-				"Furthermore, running things like Redstone and Coal will produce their Enriched variants which are worth more when using them in the Metallurgic Infuser. "
-				""
-				"For example, a single Redstone will make a single Infused Alloy, however a single Enriched Redstone will make eight Alloys. It is therefore well worth the effort to enrich these items. "
+				"For example, a single Redstone will make a single Infused Alloy, however a single Enriched Redstone will make eight Alloys. It is therefore well worth the effort to enrich these items.  "
 			]
+			dependencies: ["00000000000006BD"]
 			id: "00000000000006BF"
 			tasks: [{
 				id: "00000000000006C0"
@@ -397,9 +410,14 @@
 		}
 		{
 			x: 0.0d
-			y: 1.5d
+			y: 3.5d
 			subtitle: "Follow Me, Don't Follow Me"
-			description: ["The crusher is an integral machine to advanced ore processing methods, but it can also be used to mash up organics to make Bio Fuel, which can be further refined into Ethylene. "]
+			description: [
+				"Smashing things is an age-old method of getting one thing out of another. We’re well beyond the days of just smashing things with a rock, but the results are similar."
+				""
+				"A variety of crushed materials are used throughout Mekanism, so a Crusher will be invaluable moving forward. "
+			]
+			dependencies: ["5CB3E59893073F9E"]
 			id: "00000000000006C1"
 			tasks: [{
 				id: "00000000000006C2"
@@ -444,8 +462,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 2.5d
+			x: 6.0d
+			y: 4.0d
 			subtitle: "Pushing Down On Me, Pressing Down On You"
 			description: ["Certain chemical reactions only occur at greater pressures. The PRC can be used to facilitate these reactions. Of particular interest at this time is to combine the Hydrogen and Bio Fuel made in the prior steps in order to produce Ethylene for an upgraded and renewable fuel source."]
 			id: "00000000000006C3"
@@ -465,9 +483,10 @@
 		}
 		{
 			x: 3.0d
-			y: 1.5d
+			y: 2.5d
 			subtitle: "Organic Blend"
 			description: ["Obsidian and Glowstone by themselves are brittle materials, despite their interesting properties. By refining them and bonding them with a substrate such as Osmium, they create alloys that are easier to work with while maintaining their unique nature. "]
+			dependencies: ["5CB3E59893073F9E"]
 			id: "00000000000006C5"
 			tasks: [{
 				id: "00000000000006C6"
@@ -497,14 +516,6 @@
 							}
 							{
 								id: "mekanism:ultimate_compressing_factory"
-								Count: 1b
-							}
-							{
-								id: "mekanism:ingot_refined_glowstone"
-								Count: 1b
-							}
-							{
-								id: "mekanism:ingot_refined_obsidian"
 								Count: 1b
 							}
 						]
@@ -590,14 +601,15 @@
 			]
 		}
 		{
-			x: 0.5d
-			y: 2.5d
+			x: 3.0d
+			y: 1.5d
 			subtitle: "Keep 'Em Separated"
 			description: [
 				"Electrolysis is most commonly used to separate Water into its component parts of Hydrogen and Oxygen, though it does find itself in use in many other industrial processes. Here the Hydrogen will be useful for combining with Bio Fuel to make Ethylene. "
 				""
 				"Note that while Energy and Speed upgrades have no impact on the amount of Hydrogen is produced for a given amount of FE, they do still speed up the machine and both are required to run this machine at its fastest. "
 			]
+			dependencies: ["5CB3E59893073F9E"]
 			id: "00000000000006CE"
 			tasks: [{
 				id: "00000000000006CF"
@@ -1508,16 +1520,18 @@
 			}]
 		}
 		{
-			x: 9.0d
-			y: -1.0d
+			x: 2.5d
+			y: 0.5d
 			subtitle: "Better Than a Stick in the Eye"
 			description: [
 				"It’s bound to happen. With pipes and cables running everywhere, who knows what’s going to get into that machine when it’s plonked down. Water? Hydrogen? And once things are in, often times it’s not clear how to get them out. "
 				""
-				"This is where the Gauge Dropper comes in. This small tool will help extract unwanted inputs from various machines. Clicking on an input inside the GUI of a machine with the Dropper will extract a small amount of the input, allowing it to be easily transported to another machine. Sneak + Left Click will instead void the material. "
+				"This is where the Gauge Dropper comes in. This small tool will help extract unwanted inputs from various machines. Clicking on an input inside the GUI of a machine with the Dropper will extract a small amount of the input, allowing it to be easily transported to another machine. Sneak + Left-Click will instead void the material."
 				""
-				"Similarly, Sneak + Right Clicking the air with the gauge dropper will void whatever is currently stored. "
+				"Similarly, Sneak + Right-Clicking the air with the gauge dropper will void whatever is currently stored."
 			]
+			dependencies: ["5CB3E59893073F9E"]
+			min_width: 300
 			id: "1100DDF4FA8D31C3"
 			tasks: [{
 				id: "590FDCF2C714EE6B"
@@ -1534,14 +1548,18 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 0.0d
+			x: 0.5d
+			y: 0.5d
 			subtitle: "Yo Dawg, Heard You Liked Machines... "
 			description: [
-				"There are limits to the number of speed upgrades that can go in machines. After that expanding sideways is the only option to speeding things up. Thankfully, Tier Installers make this somewhat cheaper than simply tossing down nine more machines full of upgrades. Remember, it’s all about being efficient!"
+				"There are limits to the number of speed upgrades that can go in machines. After that, expanding sideways is the only option to speeding things up. Thankfully, Tier Installers make this somewhat easier than simply tossing down nine more machines full of upgrades. Remember, it’s all about being efficient!"
 				""
-				"To apply a Tier installer, simply Sneak Right-Click on a machine place in-world. Progression through each tier is required."
+				"Each Tier Installer will add a number of input and output slots to the machine, allowing it to run that many items in parallel. Each slot shares the other Upgrades in the machine, reducing the number of Upgrades that would need to be crafted. "
+				""
+				"To apply a Tier Installer, simply Sneak + Right-Click on a machine place in-world. Tiers must be installed in order, no skipping tiers!"
 			]
+			dependencies: ["5CB3E59893073F9E"]
+			min_width: 300
 			id: "6AA3DA7395582D75"
 			tasks: [{
 				id: "487EEDB965838B35"
@@ -1594,10 +1612,11 @@
 					}
 				}
 			}
-			x: 0.5d
-			y: 0.5d
+			x: 0.0d
+			y: 2.5d
 			subtitle: "Your Arm's Off!"
 			description: ["Making planks with hand tools is so last century, and incredibly wasteful. Obtain more for the effort and recover some of the loss by finding uses for the leftover saw dust. "]
+			dependencies: ["5CB3E59893073F9E"]
 			id: "46314C0EADF8EBAA"
 			tasks: [{
 				id: "02D13AC31BDBC8A2"
@@ -1639,7 +1658,7 @@
 			}]
 		}
 		{
-			x: 2.5d
+			x: 7.0d
 			y: 2.5d
 			subtitle: "Guests are reminded that Platform One forbids the use of weapons, teleportation, and religion."
 			description: [
@@ -1674,9 +1693,9 @@
 			}]
 		}
 		{
-			title: "Logistics"
-			x: -5.0d
-			y: 4.5d
+			title: "Getting Started: Logistics"
+			x: 4.5d
+			y: -2.5d
 			description: [
 				"Mekanism deals in Energy, Fluid, Gas, Item, and Heat transfer, and has a matching pipe to assist in the transfer of each. "
 				""
@@ -1860,10 +1879,10 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: 5.5d
+			x: 4.5d
+			y: -1.5d
 			description: ["While Logistical Transporters themselves may not be configured to be Redstone sensitive, that doesn’t mean the option is completely gone. Replace a section of pipe with a Diversion Transporter, which allows each face to be individually configured for Redstone control. "]
-			dependencies: ["169A1D98A59A0961"]
+			dependencies: ["56975D231ED73ECF"]
 			id: "79F3C54ACC550AB9"
 			tasks: [{
 				id: "6B6252E342220039"
@@ -1872,8 +1891,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: 6.5d
+			x: 4.5d
+			y: -0.5d
 			description: [
 				"A Logistical Transporter can be set to pull from any inventory, but this will effectively route items in a Nearest-First order. To get a little fancier, the Logistical Sorter may be used. "
 				""
@@ -1887,7 +1906,7 @@
 				""
 				"The system is far more complicated than can truly be covered here, but with a little patience it isn’t difficult to figure out."
 			]
-			dependencies: ["79F3C54ACC550AB9"]
+			dependencies: ["56975D231ED73ECF"]
 			min_width: 300
 			id: "42499C7047322203"
 			tasks: [{
@@ -1897,8 +1916,8 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: 5.5d
+			x: 4.5d
+			y: 0.5d
 			description: [
 				"It isn’t always convenient to lay out pipes for hundreds of blocks, especially since the rules of Minecraft dictate that all those blocks would need to be loaded to transport items."
 				""
@@ -1908,13 +1927,192 @@
 				""
 				"Entangloporters have no range limitations and work across dimensions. They can be given an Anchor upgrade as well to force load the chunk they are in. "
 			]
-			dependencies: ["169A1D98A59A0961"]
+			dependencies: ["01F336239CD80942"]
 			min_width: 300
 			id: "057131CE0FEF6C3C"
 			tasks: [{
 				id: "728E0C2398630A7E"
 				type: "item"
 				item: "mekanism:quantum_entangloporter"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			dependencies: ["5CB3E59893073F9E"]
+			id: "4D94A20FD60D258C"
+			tasks: [{
+				id: "151C2E80078EB874"
+				type: "item"
+				title: "Energized Smelter"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:energized_smelter"
+								Count: 1b
+							}
+							{
+								id: "mekanism:basic_smelting_factory"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_smelting_factory"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_smelting_factory"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_smelting_factory"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.0d
+			description: [
+				"Advanced machinery that uses Oxygen to purify materials, the Purification Chamber is frequently used in parts of larger processing chains. "
+				""
+				"Be sure to install Gas Upgrades in these machines to reduce their overall Oxygen use, or it may be difficult to keep up with demands. "
+			]
+			dependencies: ["5CB3E59893073F9E"]
+			id: "0AAE998A924CC85E"
+			tasks: [{
+				id: "077E0368259A7010"
+				type: "item"
+				title: "Purification Chamber"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:purification_chamber"
+								Count: 1b
+							}
+							{
+								id: "mekanism:basic_purifying_factory"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_purifying_factory"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_purifying_factory"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_purifying_factory"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "1AC83B7507948A4A"
+				type: "item"
+				item: "mekanism:upgrade_gas"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			description: [
+				"By placing objects under great pressure, they may be infused with other materials. "
+				""
+				"The Chemical Injection Chamber, while often found as a step in larger processing chains, is also a very handy tool for automating more tedious tasks, such as setting concrete or getting those Copper Stairs to just the right level of oxidation before using them in a roof."
+				""
+				"Remember to install Gas Upgrades to make the gas inputs more efficient!"
+			]
+			dependencies: ["5CB3E59893073F9E"]
+			id: "5ED5EC51312D76E6"
+			tasks: [{
+				id: "302C94E049A0A2DD"
+				type: "item"
+				title: "Chemical Injection Chamber"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:chemical_injection_chamber"
+								Count: 1b
+							}
+							{
+								id: "mekanism:basic_injecting_factory"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_injecting_factory"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_injecting_factory"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_injecting_factory"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "3188D43672C84C51"
+				type: "item"
+				item: "mekanism:upgrade_gas"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.5d
+			description: ["Unsurprisingly, smashing things together to make new things is also an age-old tradition. The Combiner may be used to simply obtaining a number of decorative blocks. "]
+			dependencies: ["5CB3E59893073F9E"]
+			id: "4D4A40BDD24C8F14"
+			tasks: [{
+				id: "2AED570FCC485887"
+				type: "item"
+				title: "Combiner"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:combiner"
+								Count: 1b
+							}
+							{
+								id: "mekanism:basic_combining_factory"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_combining_factory"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_combining_factory"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_combining_factory"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 		}
 	]
