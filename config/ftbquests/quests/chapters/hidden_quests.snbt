@@ -57,8 +57,13 @@
 			}]
 		}
 		{
+			title: "Impossible"
 			x: -8.5d
 			y: -6.5d
+			description: [
+				"Just used for hiding existing quests for items in mods that haven't ported yet"
+				""
+			]
 			id: "5D72347C524CBAE9"
 			tasks: [{
 				id: "2AECF726E9E2D41B"
