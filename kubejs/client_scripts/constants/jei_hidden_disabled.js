@@ -28,7 +28,11 @@ jei.base.items.disabled = [
     'engineersdecor:straight_pipe_valve',
     'engineersdecor:straight_pipe_valve_redstone',
     'engineersdecor:straight_pipe_valve_redstone_analog',
-    'engineersdecor:test_block'
+    'engineersdecor:test_block',
+    'mekanism:ultimate_bin',
+    'mekanism:elite_bin',
+    'mekanism:advanced_bin',
+    'mekanism:basic_bin'
 ];
 jei.base.items.hidden = [
     'kubejs:altered_recipe_indicator',

@@ -88,7 +88,7 @@
 			}]
 		}
 		{
-			x: -2.0d
+			x: -2.5d
 			y: -1.5d
 			subtitle: "Argent Crucible"
 			description: [
@@ -125,7 +125,7 @@
 			]
 		}
 		{
-			x: -2.0d
+			x: -2.5d
 			y: -0.5d
 			subtitle: "100% Cancer-Free"
 			description: [
@@ -159,7 +159,7 @@
 			]
 		}
 		{
-			x: -2.0d
+			x: -2.5d
 			y: 0.5d
 			subtitle: "Frightening Efficiency"
 			description: ["The Gas-Burning Generator primarily burns Ethylene to produce energy, however it can also be used to burn excess Hydrogen. Hydrogen itself produces no net gain in power, instead serving as a useful energy storage medium."]
@@ -181,17 +181,23 @@
 		{
 			title: "Induction Matrix"
 			icon: "mekanism:basic_induction_cell"
-			x: 11.5d
-			y: 0.5d
+			x: 7.0d
+			y: -0.5d
 			subtitle: "There Is No Spoon"
 			description: [
-				"Energy Cubes do a respectable job at storing energy but they're far too limited when it comes to dealing with the output of a Fission Reactor. The Induction Matrix offers higher energy density and greater throughput. Building a buffer of energy for the steps to come may also be a prudent idea."
+				"For times when more extensive energy storage is required, the Induction Matrix is the answer. "
 				""
-				"The Induction Matrix is a roughly free-form multiblock that can be any rectangular prism from 3x3x4 up to 18x18x18."
+				"This modular multiblock structure can hold truly astonishing amounts of energy at its largest size of 18x18x18. Even a small one, however, will outperform an equivalent number of Energy Cubes. "
 				""
-				"It consists of Induction Providers, Induction Cells, Induction Casing, and Induction Ports. The sides may be made of Structural Glass as well, though the edges must be made of Induction Casing. The interior need not be filled either, so a larger casing may be built to accommodate for future expansion. "
+				"The structure must be a rectangular prism with walls built of Induction Casing or Structural Glass. Induction Providers and Cells can be placed in any configuration desired. Empty spaces are fine, and different tiers may be mixed. "
+				""
+				"Providers only affect the I/O speed. Typically, not many are required. Cells, on the other hand, provide the storage capacity of the Matrix, and will typically make up the bulk of the insides. "
+				""
+				"At least two Induction Ports will be required to make full use of the Matrix, one configured for Input and the other for Output. Sneak + Right-Click with a Configurator to change the mode."
+				""
+				"It’s worth noting that the current fill level of an Induction Matrix may be read with a Comparator on an Induction Port; very useful for turning power production down or off when it is nearly full. "
 			]
-			dependencies: ["0000000000000709"]
+			dependencies: ["2FB7EAFFAE541168"]
 			min_width: 250
 			id: "00000000000006B5"
 			tasks: [
@@ -199,46 +205,84 @@
 					id: "00000000000006B6"
 					type: "item"
 					item: "mekanism:induction_casing"
-					count: 40L
 				}
 				{
 					id: "00000000000006B7"
 					type: "item"
 					item: "mekanism:induction_port"
-					count: 2L
 				}
 				{
 					id: "0000000000000707"
 					type: "item"
-					item: "mekanism:advanced_induction_cell"
+					title: "Induction Cells"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "mekanism:basic_induction_cell"
+									Count: 1b
+								}
+								{
+									id: "mekanism:advanced_induction_cell"
+									Count: 1b
+								}
+								{
+									id: "mekanism:elite_induction_cell"
+									Count: 1b
+								}
+								{
+									id: "mekanism:ultimate_induction_cell"
+									Count: 1b
+								}
+							]
+						}
+					}
 				}
 				{
 					id: "0000000000000708"
 					type: "item"
-					item: "mekanism:advanced_induction_provider"
+					title: "Induction Providers"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "mekanism:basic_induction_provider"
+									Count: 1b
+								}
+								{
+									id: "mekanism:advanced_induction_provider"
+									Count: 1b
+								}
+								{
+									id: "mekanism:elite_induction_provider"
+									Count: 1b
+								}
+								{
+									id: "mekanism:ultimate_induction_provider"
+									Count: 1b
+								}
+							]
+						}
+					}
 				}
 			]
-			rewards: [
-				{
-					id: "0000000000000705"
-					type: "item"
-					title: "Advanced Induction Cell"
-					item: "mekanism:advanced_induction_cell"
-				}
-				{
-					id: "000000000000086B"
-					type: "command"
-					title: "Epic Mekanism Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_epic"
-					player_command: false
-				}
-			]
+			rewards: [{
+				id: "000000000000086B"
+				type: "command"
+				title: "Epic Mekanism Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_epic"
+				player_command: false
+			}]
 		}
 		{
 			title: "Getting Started: Power Generation"
 			icon: "mekanism:advanced_energy_cube"
-			x: -2.0d
+			x: -2.5d
 			y: -2.5d
 			description: [
 				"It is possible to bootstrap power production by feeding Redstone dust directly into the power slot in Mekanism machines. "
@@ -831,17 +875,17 @@
 			]
 		}
 		{
-			x: 13.0d
-			y: 3.0d
+			x: 7.0d
+			y: -2.5d
 			subtitle: "HLW Disposal"
 			description: [
 				"Burning Fissile Fuel naturally creates waste. Proper handling and storage of this waste is critical. Waste may only be transported via Mekanism's Pressurized Tubes and can only be stored in Radioactive Waste Barrels, or machines that accept waste for reprocessing. "
 				""
 				"Furthermore, breaking or picking up any machine or Waste Barrel containing waste will automatically dump the radiation into the environment, so some care must be taken to avoid incidents."
 				""
-				"Lastly, waste stored in such barrels will slowly and safely dissipate. So if the intent is to process it further, the safest course of action is to simple pipe it straight into machines. "
+				"Lastly, waste stored in such barrels will slowly and safely dissipate. So if the intent is to process it further, the safest course of action is to simply pipe it straight into machines. "
 			]
-			dependencies: ["0000000000000793"]
+			dependencies: ["35157B8043AA3B0E"]
 			min_width: 250
 			id: "00000000000007A5"
 			tasks: [{
@@ -908,7 +952,6 @@
 			y: 4.5d
 			subtitle: "The Fat Man"
 			description: ["Waste may be reprocessed into Plutonium, either for use in building advanced structures, or as a way to recycle fuel to run back through the Fission Reactor. "]
-			dependencies: ["00000000000007A5"]
 			id: "00000000000007A7"
 			tasks: [
 				{
@@ -948,7 +991,6 @@
 				""
 				"Thankfully, it can be processed down to be somewhat safe to handle."
 			]
-			dependencies: ["00000000000007A5"]
 			id: "00000000000007A9"
 			tasks: [
 				{
@@ -1247,31 +1289,79 @@
 			}]
 		}
 		{
-			x: 11.5d
-			y: 6.0d
+			icon: "mekanism:qio_drive_array"
+			x: 8.0d
+			y: 0.5d
+			shape: "circle"
 			subtitle: "Bigger on the Inside"
-			description: ["The heart and soul of any QIO Network. Insert drives and set a channel to begin. "]
-			dependencies: ["00000000000007A9"]
+			description: [
+				"QIO Storage is an extra-dimensional, high-capacity storage medium. The system allows for remote access through a handheld terminal as well as wireless import, export, and Redstone Capabilities."
+				""
+				"It’s also fully compatible with Applied Energistics 2. Simply place a configured QIO Dashboard on an ME Storage Bus to grant AE2 full access to the entire contents of the QIO system."
+			]
+			dependencies: ["6515A1D74E64D5AF"]
 			id: "00000000000007C7"
-			tasks: [{
-				id: "00000000000007C8"
-				type: "item"
-				item: "mekanism:qio_drive_array"
-			}]
-			rewards: [{
-				id: "0000000000000827"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_legendary"
-				player_command: false
-			}]
+			tasks: [
+				{
+					id: "00000000000007C8"
+					type: "item"
+					item: "mekanism:qio_drive_array"
+				}
+				{
+					id: "6ABB9611FDA72067"
+					type: "item"
+					title: "QIO Drives"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "mekanism:qio_drive_base"
+									Count: 1b
+								}
+								{
+									id: "mekanism:qio_drive_hyper_dense"
+									Count: 1b
+								}
+								{
+									id: "mekanism:qio_drive_time_dilating"
+									Count: 1b
+								}
+								{
+									id: "mekanism:qio_drive_supermassive"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "0000000000000827"
+					type: "command"
+					title: "Legendary Mekanism Loot Box"
+					icon: "kubejs:legendary_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_legendary"
+					player_command: false
+				}
+				{
+					id: "483792623A2AA624"
+					type: "item"
+					item: "mekanism:portable_qio_dashboard"
+				}
+			]
 		}
 		{
-			x: 10.5d
-			y: 5.0d
+			x: 7.0d
+			y: 0.5d
 			subtitle: "Remote Viewing"
-			description: ["Dashboards may be placed anywhere and allow for manual insertion into and extraction from the network."]
+			description: [
+				"Dashboards may be placed anywhere and allow for manual insertion into and extraction from the network."
+				""
+				"As previously mentioned, they can also be used to grant AE2 access to a QIO Network via an attached ME Storage Bus."
+			]
 			dependencies: ["00000000000007C7"]
 			id: "00000000000007C9"
 			tasks: [{
@@ -1290,10 +1380,16 @@
 		}
 		{
 			title: "QIO Importing and Exporting"
-			x: 10.5d
-			y: 7.0d
+			x: 8.0d
+			y: -0.5d
 			subtitle: "Garbage In, Garbage Out"
-			description: ["Storing items in a QIO Drive Array is rather daft if there's no way of actually getting things in or out automatically. The QIO Importers and Exporters facilitate this, allowing the system to work as a wireless item transfer and storage system."]
+			description: [
+				"Storing items in a QIO Drive Array would be rather daft if there were no way of getting things in or out automatically. "
+				""
+				"The QIO Importers and Exporters facilitate this, allowing the system to work as a wireless item transfer and storage system."
+				""
+				"The Redstone Adapter simply outputs a signal when a certain threshold of an item has been reached within the QIO drive space, allowing a simple way of disabling machinery that no longer needs to run."
+			]
 			dependencies: ["00000000000007C7"]
 			id: "00000000000007CB"
 			tasks: [
@@ -1307,51 +1403,14 @@
 					type: "item"
 					item: "mekanism:qio_exporter"
 				}
+				{
+					id: "72E060758E23C083"
+					type: "item"
+					item: "mekanism:qio_redstone_adapter"
+				}
 			]
 			rewards: [{
 				id: "0000000000000826"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_legendary"
-				player_command: false
-			}]
-		}
-		{
-			x: 9.5d
-			y: 5.5d
-			subtitle: "Better than Bins"
-			description: ["QIO Drives provide the same deep storage as Bins but with centralized access and a smaller footprint. "]
-			dependencies: ["00000000000007C7"]
-			id: "00000000000007CE"
-			tasks: [{
-				id: "00000000000007CF"
-				type: "item"
-				item: "mekanism:qio_drive_base"
-			}]
-			rewards: [{
-				id: "0000000000000824"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_legendary"
-				player_command: false
-			}]
-		}
-		{
-			x: 9.5d
-			y: 6.5d
-			subtitle: "Make it Stop!"
-			description: ["The Redstone Adapter simply outputs a signal when a certain threshold of an item has been reached within the QIO drive space, allowing a simple way of disabling machinery that no longer needs to run."]
-			dependencies: ["00000000000007C7"]
-			id: "00000000000007D0"
-			tasks: [{
-				id: "00000000000007D1"
-				type: "item"
-				item: "mekanism:qio_redstone_adapter"
-			}]
-			rewards: [{
-				id: "0000000000000825"
 				type: "command"
 				title: "Legendary Mekanism Loot Box"
 				icon: "kubejs:legendary_lootbox"
@@ -1659,7 +1718,7 @@
 			}]
 		}
 		{
-			x: 1.5d
+			x: 7.5d
 			y: 6.0d
 			subtitle: "Guests are reminded that Platform One forbids the use of weapons, teleportation, and religion."
 			description: [
@@ -1694,9 +1753,9 @@
 			}]
 		}
 		{
-			title: "Getting Started: Logistics"
-			x: 4.5d
-			y: -2.5d
+			title: "Getting Started: Logistics and Storage"
+			x: 4.0d
+			y: -1.5d
 			description: [
 				"Mekanism deals in Energy, Fluid, Gas, Item, and Heat transfer, and has a matching pipe to assist in the transfer of each. "
 				""
@@ -1715,185 +1774,37 @@
 			dependencies: ["00000000000006A2"]
 			min_width: 300
 			id: "169A1D98A59A0961"
-			tasks: [
-				{
-					id: "01F336239CD80942"
-					type: "item"
-					title: "Power Cables"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "mekanism:basic_universal_cable"
-									Count: 1b
-								}
-								{
-									id: "mekanism:advanced_universal_cable"
-									Count: 1b
-								}
-								{
-									id: "mekanism:elite_universal_cable"
-									Count: 1b
-								}
-								{
-									id: "mekanism:ultimate_universal_cable"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-				{
-					id: "5424DD0A400C5EE2"
-					type: "item"
-					title: "Fluid Pipes"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "mekanism:basic_mechanical_pipe"
-									Count: 1b
-								}
-								{
-									id: "mekanism:advanced_mechanical_pipe"
-									Count: 1b
-								}
-								{
-									id: "mekanism:elite_mechanical_pipe"
-									Count: 1b
-								}
-								{
-									id: "mekanism:ultimate_mechanical_pipe"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-				{
-					id: "62730513A4692A77"
-					type: "item"
-					title: "Gas Pipes"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "mekanism:basic_pressurized_tube"
-									Count: 1b
-								}
-								{
-									id: "mekanism:advanced_pressurized_tube"
-									Count: 1b
-								}
-								{
-									id: "mekanism:elite_pressurized_tube"
-									Count: 1b
-								}
-								{
-									id: "mekanism:ultimate_pressurized_tube"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-				{
-					id: "56975D231ED73ECF"
-					type: "item"
-					title: "Item Pipes"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "mekanism:basic_logistical_transporter"
-									Count: 1b
-								}
-								{
-									id: "mekanism:advanced_logistical_transporter"
-									Count: 1b
-								}
-								{
-									id: "mekanism:elite_logistical_transporter"
-									Count: 1b
-								}
-								{
-									id: "mekanism:ultimate_logistical_transporter"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-				{
-					id: "42C3C4EFB204C193"
-					type: "item"
-					title: "Heat Pipes"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "mekanism:basic_thermodynamic_conductor"
-									Count: 1b
-								}
-								{
-									id: "mekanism:advanced_thermodynamic_conductor"
-									Count: 1b
-								}
-								{
-									id: "mekanism:elite_thermodynamic_conductor"
-									Count: 1b
-								}
-								{
-									id: "mekanism:ultimate_thermodynamic_conductor"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "6515A1D74E64D5AF"
+				type: "item"
+				item: "mekanism:configurator"
+			}]
 			rewards: [{
 				id: "5401843104659A31"
 				type: "item"
-				item: {
-					id: "mekanism:configurator"
-					Count: 1b
-					tag: {
-						mekData: {
-							EnergyContainers: [{
-								Container: 0b
-								stored: "60000"
-							}]
-						}
-					}
-				}
+				item: "minecraft:stone"
 			}]
 		}
 		{
-			x: 4.5d
-			y: -1.5d
+			x: 6.0d
+			y: -3.5d
 			description: ["While Logistical Transporters themselves may not be configured to be Redstone sensitive, that doesn’t mean the option is completely gone. Replace a section of pipe with a Diversion Transporter, which allows each face to be individually configured for Redstone control. "]
-			dependencies: ["56975D231ED73ECF"]
+			dependencies: ["45321E07EDDEBB33"]
 			id: "79F3C54ACC550AB9"
 			tasks: [{
 				id: "6B6252E342220039"
 				type: "item"
 				item: "mekanism:diversion_transporter"
 			}]
+			rewards: [{
+				id: "4D7EBE6F46745564"
+				type: "item"
+				item: "minecraft:stone"
+			}]
 		}
 		{
-			x: 4.5d
-			y: -0.5d
+			x: 7.0d
+			y: -3.5d
 			description: [
 				"A Logistical Transporter can be set to pull from any inventory, but this will effectively route items in a Nearest-First order. To get a little fancier, the Logistical Sorter may be used. "
 				""
@@ -1907,7 +1818,7 @@
 				""
 				"The system is far more complicated than can truly be covered here, but with a little patience it isn’t difficult to figure out."
 			]
-			dependencies: ["56975D231ED73ECF"]
+			dependencies: ["45321E07EDDEBB33"]
 			min_width: 300
 			id: "42499C7047322203"
 			tasks: [{
@@ -1915,10 +1826,15 @@
 				type: "item"
 				item: "mekanism:logistical_sorter"
 			}]
+			rewards: [{
+				id: "72D2A9208D24A98B"
+				type: "item"
+				item: "minecraft:stone"
+			}]
 		}
 		{
-			x: 4.5d
-			y: 0.5d
+			x: 8.0d
+			y: -1.5d
 			description: [
 				"It isn’t always convenient to lay out pipes for hundreds of blocks, especially since the rules of Minecraft dictate that all those blocks would need to be loaded to transport items."
 				""
@@ -1928,7 +1844,7 @@
 				""
 				"Entangloporters have no range limitations and work across dimensions. They can be given an Anchor upgrade as well to force load the chunk they are in. "
 			]
-			dependencies: ["01F336239CD80942"]
+			dependencies: ["6515A1D74E64D5AF"]
 			min_width: 300
 			id: "057131CE0FEF6C3C"
 			tasks: [{
@@ -2217,6 +2133,408 @@
 					icon: "kubejs:legendary_lootbox"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_legendary"
 					player_command: false
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: -0.5d
+			description: [
+				"Energy Cubes act as basic energy storage and may be placed in line with power cables to provide a larger buffer for peak usage. "
+				""
+				"All Mekanism machines will also accept them in their energy slot to power a machine off grid. "
+				""
+				"Finally, Energy Cubes themselves have slots for the purpose of charging most energy using items, or even discharging other batteries."
+			]
+			dependencies: ["2FB7EAFFAE541168"]
+			id: "2549907DF3DC48C1"
+			tasks: [{
+				id: "4D55580B1857B046"
+				type: "item"
+				title: "Energy Cubes"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_energy_cube"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_energy_cube"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_energy_cube"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_energy_cube"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.5d
+			dependencies: ["169A1D98A59A0961"]
+			id: "2436E4AA07F927D7"
+			tasks: [{
+				id: "32BD0869C95DDC88"
+				type: "item"
+				title: "Heat Pipes"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_thermodynamic_conductor"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_thermodynamic_conductor"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_thermodynamic_conductor"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_thermodynamic_conductor"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "5762E181CAFC83C3"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.5d
+			dependencies: ["169A1D98A59A0961"]
+			id: "51ABA98A9755702F"
+			tasks: [{
+				id: "45321E07EDDEBB33"
+				type: "item"
+				title: "Item Pipes"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_logistical_transporter"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_logistical_transporter"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_logistical_transporter"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_logistical_transporter"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "573E399EC0F34972"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.5d
+			dependencies: ["169A1D98A59A0961"]
+			id: "6A35E77009D40D37"
+			tasks: [{
+				id: "35157B8043AA3B0E"
+				type: "item"
+				title: "Gas Pipes"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_pressurized_tube"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_pressurized_tube"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_pressurized_tube"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_pressurized_tube"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "0948EA5E17CDDD00"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.5d
+			dependencies: ["169A1D98A59A0961"]
+			id: "5B2E979C2A919EDD"
+			tasks: [{
+				id: "7D8995B10891FFAD"
+				type: "item"
+				title: "Fluid Pipes"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_mechanical_pipe"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_mechanical_pipe"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_mechanical_pipe"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_mechanical_pipe"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "32FD23AB3F8DF34F"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -0.5d
+			dependencies: ["169A1D98A59A0961"]
+			id: "3AA57306A4EAE317"
+			tasks: [{
+				id: "2FB7EAFFAE541168"
+				type: "item"
+				title: "Energy Pipes"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_universal_cable"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_universal_cable"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_universal_cable"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_universal_cable"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "77C3F132A13834B7"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			icon: "mekanism:personal_barrel"
+			x: 8.0d
+			y: -3.5d
+			description: [
+				"Personal storage blocks retain their inventories when picked up, and store as much as a double chest, making them a handy tool to have around. They can also be made Private or given Trusted access in a Security Desk."
+				""
+				"Right-Click to access the contents without placing it."
+				""
+				"Sneak + Right-Click to place it."
+			]
+			dependencies: ["45321E07EDDEBB33"]
+			id: "677289CC4EC5DF90"
+			tasks: [{
+				id: "50D4669D7DF380D1"
+				type: "item"
+				title: "Personal Storage"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "mekanism:personal_storage"
+					}
+				}
+			}]
+			rewards: [{
+				id: "1B885AE7C2D76799"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -2.5d
+			description: [
+				"Basic Chemical storage, these will hold any non-radioactive gas, slurry, infusion type, or pigment. "
+				""
+				"They can be directly inserted into machines to provide their materials or be configured to auto output to adjacent machines. "
+				""
+				"They’ll also function as an over-flow trash by setting them to “Dump Excess”. "
+			]
+			dependencies: ["35157B8043AA3B0E"]
+			id: "1C706FC1DE9D7340"
+			tasks: [{
+				id: "03BA3EABF4DE35AA"
+				type: "item"
+				title: "Chemical Tanks"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_chemical_tank"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_chemical_tank"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_chemical_tank"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_chemical_tank"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "018B8A4B7056741C"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -1.5d
+			description: ["Basic Fluid storage, these can auto-output to the bottom by Sneak + Right-Clicking the bottom face with a Configurator. "]
+			dependencies: ["7D8995B10891FFAD"]
+			id: "6D4F858265B370F8"
+			tasks: [{
+				id: "10D939E75E0AB632"
+				type: "item"
+				title: "Fluid Tanks"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_fluid_tank"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_fluid_tank"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_fluid_tank"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_fluid_tank"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "6AD9F503A4FAA0DE"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			icon: "mekanism:formulaic_assemblicator"
+			x: 6.5d
+			y: 6.0d
+			id: "664CD2AFAFB4812A"
+			tasks: [
+				{
+					id: "237F8D53233F4CD2"
+					type: "item"
+					item: "mekanism:formulaic_assemblicator"
+				}
+				{
+					id: "761E3469715ACD71"
+					type: "item"
+					item: "mekanism:crafting_formula"
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -1.5d
+			description: ["Large scale Gas or Fluid storage, Dynamic Tanks may be any size from 3x3x3 to 18x18x18. Structural Glass may be used in place of Dynamic Tank blocks anywhere but the edges and corners. "]
+			dependencies: [
+				"35157B8043AA3B0E"
+				"7D8995B10891FFAD"
+			]
+			dependency_requirement: "one_completed"
+			id: "5387D366A4862FB1"
+			tasks: [
+				{
+					id: "34FEED07266703F2"
+					type: "item"
+					item: "mekanism:dynamic_tank"
+				}
+				{
+					id: "64F64A51060C2119"
+					type: "item"
+					item: "mekanism:dynamic_valve"
 				}
 			]
 		}

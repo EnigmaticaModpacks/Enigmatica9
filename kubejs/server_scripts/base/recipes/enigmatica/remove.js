@@ -16,6 +16,7 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:processing\/.*\/ore\/.*from_raw/ },
         { id: /mekanism:processing\/.*\/.*_ore/ },
         { id: /mekanism:compat\/byg\/combining\/.*_ore_/ },
+        { id: /mekanism:bin\/.*/ },
         { id: 'quark:tweaks/smelting/bone_meal_utility' },
         { type: 'immersiveengineering:sawmill' },
         { type: 'create:cutting' },
