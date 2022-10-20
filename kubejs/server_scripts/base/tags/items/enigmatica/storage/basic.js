@@ -1,14 +1,12 @@
+//priority: 900
 ServerEvents.tags('item', (event) => {
     var items = [
         '#forge:chests',
         // 'aquaculture:neptunes_bounty',
         'farmersdelight:basket',
         'immersiveengineering:crate',
-        'immersiveengineering:minecart_reinforcedcrate',
-        'immersiveengineering:minecart_woodencrate',
         'immersiveengineering:reinforced_crate',
         'minecraft:barrel',
-        'minecraft:chest_minecart',
         'minecraft:dispenser',
         'minecraft:dropper'
         // 'rftoolsstorage:modular_storage'

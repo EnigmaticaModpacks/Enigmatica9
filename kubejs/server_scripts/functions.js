@@ -184,3 +184,17 @@ function getSelectorArea(x_coord, y_coord, z_coord, diameter) {
         z = z_coord - r;
     return `x=${x},dx=${diameter},z=${z},dz=${diameter},y=${y},dy=${diameter}`;
 }
+
+function getItemsInTag(tag) {
+    let out_items = [];
+
+    Ingredient.of(tag).itemIds.forEach((entry) => {
+        if (entry.startsWith('#')) {
+            out_items.concat(getItemsInTag(entry));
+        } else {
+            out_items.push(entry);
+        }
+    });
+
+    return out_items;
+}
