@@ -61,16 +61,14 @@
 		{
 			title: "Advanced Power Generation"
 			icon: "engineersdecor:sign_hotwire"
-			x: 16.5d
-			y: 2.0d
+			x: -3.5d
+			y: 4.0d
 			description: [
 				"That little Gas-Burning Generator is probably doing OK up to this point. One could be excused for thinking it's enough. "
 				""
 				"Certain high-tier crafts will require substances currently out of our reach, and obtaining them is going to require extreme amounts of energy. "
 				""
 				"The quests that follow will guide you through the process of building a Fission Reactor, harnessing its power with an Industrial Turbine, and finally treating and converting the waste into something far more useful."
-				""
-				"Note: The Gas-Burning Generator quest must be completed before proceeding."
 			]
 			dependencies: ["00000000000006B4"]
 			min_width: 250
@@ -519,7 +517,7 @@
 		}
 		{
 			x: 5.5d
-			y: 4.5d
+			y: 4.0d
 			subtitle: "Pushing Down On Me, Pressing Down On You"
 			description: ["Certain chemical reactions only occur at greater pressures and the PRC can be used to facilitate them. "]
 			dependencies: ["5CB3E59893073F9E"]
@@ -540,7 +538,7 @@
 		}
 		{
 			x: 5.5d
-			y: 3.5d
+			y: 3.0d
 			subtitle: "Organic Blend"
 			description: ["Obsidian and Glowstone by themselves are brittle materials, despite their interesting properties. By refining them and bonding them with a substrate such as Osmium, they create alloys that are easier to work with while maintaining their unique nature. "]
 			dependencies: ["5CB3E59893073F9E"]
@@ -591,8 +589,8 @@
 		{
 			title: "Thermal Evaporation Plant"
 			icon: "mekanism:thermal_evaporation_controller"
-			x: 15.5d
-			y: 2.0d
+			x: 6.0d
+			y: 6.0d
 			subtitle: "Reduce By Half, Simmer Gently"
 			description: [
 				"Before getting too deep into nuclear physics, a little ground-work will be needed. The Thermal Evaporation Plant will feature heavily in the coming processes so understanding it is going to be vital."
@@ -605,7 +603,7 @@
 				""
 				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 9 instance folder to assist with this multiblock."
 			]
-			dependencies: ["00000000000006A7"]
+			dependencies: ["5CB3E59893073F9E"]
 			min_width: 300
 			id: "00000000000006C7"
 			tasks: [
@@ -651,7 +649,7 @@
 		}
 		{
 			x: 5.5d
-			y: 2.5d
+			y: 2.0d
 			subtitle: "Keep 'Em Separated"
 			description: [
 				"Electrolysis is most commonly used to separate Water into its component parts of Hydrogen and Oxygen, though it does find itself in use in many other industrial processes. "
@@ -698,50 +696,10 @@
 			]
 		}
 		{
-			title: "Lithium"
-			icon: "mekanism:dust_lithium"
-			x: 14.5d
-			y: 2.0d
-			subtitle: "I've Found My Friends, They're In My Head"
-			description: [
-				"Before moving on, that Brine will need to be run through a second Evaporation Tower to form Liquid Lithium. "
-				""
-				"Next step is to turn the liquid Lithium into Lithium gas using the Rotary Condensentrator."
-				""
-				"This may then be processed in a Chemical Crystallizer to produce a solid form of the element."
-			]
-			dependencies: ["00000000000006C7"]
-			id: "0000000000000709"
-			tasks: [
-				{
-					id: "000000000000070A"
-					type: "item"
-					item: "mekanism:chemical_crystallizer"
-				}
-				{
-					id: "0A65673DD920A57E"
-					type: "item"
-					item: "mekanism:rotary_condensentrator"
-				}
-				{
-					id: "65ABA5E4FB3C53C2"
-					type: "item"
-					item: "mekanism:dust_lithium"
-				}
-			]
-			rewards: [{
-				id: "000000000000070C"
-				type: "item"
-				title: "Lithium Dust"
-				item: "mekanism:dust_lithium"
-				count: 16
-			}]
-		}
-		{
 			title: "Fuel Rod Assembly"
 			icon: "mekanismgenerators:control_rod_assembly"
-			x: 15.5d
-			y: 4.0d
+			x: -4.0d
+			y: 7.0d
 			subtitle: "Nuclear Launch Detected"
 			description: [
 				"The Fuel Rod Assembly is what actually holds the fissile material during the reaction. Having more allows the reactor to burn fuel faster. "
@@ -784,8 +742,8 @@
 		{
 			title: "Fission Reactor Casing"
 			icon: "mekanismgenerators:fission_reactor_casing"
-			x: 16.5d
-			y: 3.0d
+			x: -4.0d
+			y: 5.0d
 			subtitle: "Limiting Exposure"
 			description: [
 				"The first step in actually constructing a fission reactor is building a safe place to put it. Something that keeps all that radiation at bay."
@@ -830,8 +788,8 @@
 		}
 		{
 			title: "Safety Precautions"
-			x: 16.5d
-			y: 4.0d
+			x: -4.5d
+			y: 6.0d
 			subtitle: "Getting Out In Front"
 			description: [
 				"History has shown us time and time again that a Safety-First approach is the only sane way to work with something as dangerous as nuclear physics. Three Mile Island may have been a disaster, but the fact that nobody died is a testament to the importance of safety protocols. "
@@ -950,83 +908,9 @@
 			]
 		}
 		{
-			title: "Plutonium Processing"
-			icon: "mekanism:pellet_plutonium"
-			x: 16.5d
-			y: 6.0d
-			subtitle: "The Fat Man"
-			description: ["Waste may be reprocessed into Plutonium, either for use in building advanced structures, or as a way to recycle fuel to run back through the Fission Reactor. "]
-			id: "00000000000007A7"
-			tasks: [
-				{
-					id: "00000000000007A8"
-					type: "item"
-					item: "mekanism:isotopic_centrifuge"
-				}
-				{
-					id: "00000000000007B0"
-					type: "item"
-					item: "mekanism:pressurized_reaction_chamber"
-				}
-				{
-					id: "000000000000081C"
-					type: "item"
-					item: "mekanism:pellet_plutonium"
-					count: 4L
-				}
-			]
-			rewards: [{
-				id: "0000000000000820"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			title: "Polonium Processing"
-			icon: "mekanism:pellet_polonium"
-			x: 15.5d
-			y: 5.0d
-			subtitle: "Litvenenko's Demise"
-			description: [
-				"Polonium is a particularly nasty substance that is nonetheless useful in a variety of applications. "
-				""
-				"Thankfully, it can be processed down to be somewhat safe to handle."
-			]
-			id: "00000000000007A9"
-			tasks: [
-				{
-					id: "00000000000007AA"
-					type: "item"
-					item: "mekanism:solar_neutron_activator"
-				}
-				{
-					id: "00000000000007AF"
-					type: "item"
-					item: "mekanism:pressurized_reaction_chamber"
-				}
-				{
-					id: "000000000000081D"
-					type: "item"
-					item: "mekanism:pellet_polonium"
-					count: 4L
-				}
-			]
-			rewards: [{
-				id: "000000000000081E"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_epic"
-				player_command: false
-			}]
-		}
-		{
 			title: "Supercritical Phase Shifter"
 			icon: "mekanism:sps_casing"
-			x: 15.5d
+			x: 7.0d
 			y: 6.0d
 			subtitle: "I've Giv'n Her All We've Got, Captain"
 			description: [
@@ -1038,10 +922,7 @@
 				""
 				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 9 instance folder to assist with this multiblock."
 			]
-			dependencies: [
-				"00000000000007A7"
-				"00000000000007A9"
-			]
+			dependencies: ["5CB3E59893073F9E"]
 			min_width: 275
 			id: "00000000000007B1"
 			tasks: [
@@ -1091,7 +972,7 @@
 		{
 			title: "Fusion Reactor"
 			icon: "mekanismgenerators:fusion_reactor_controller"
-			x: 14.5d
+			x: -3.0d
 			y: 5.0d
 			subtitle: "Star in a Box"
 			description: [
@@ -1111,7 +992,7 @@
 				""
 				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 9 instance folder to assist with this multiblock."
 			]
-			dependencies: ["00000000000007A9"]
+			dependencies: ["00000000000006A7"]
 			min_width: 300
 			id: "00000000000007B6"
 			tasks: [
@@ -1156,8 +1037,8 @@
 		{
 			title: "Industrial Turbine"
 			icon: "mekanismgenerators:turbine_blade"
-			x: 14.5d
-			y: 4.0d
+			x: -3.0d
+			y: 7.0d
 			subtitle: "Bursting at the Seams"
 			description: [
 				"The Fission Reactor doesn't produce useful energy on its own. Rather, the steam it generates must be run through an Industrial Turbine in order to generate FE. The Turbine is also critical for recycling steam into water to return to the Fission Reactor for cooling. Without this reprocessing loop, it is exceptionally difficult to provide enough coolant to keep the Reactor running. "
@@ -1173,7 +1054,11 @@
 				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 9 instance folder to assist with this multiblock. It will not place the blades for you but does come configured to sit nicely next to the Fission Reactor Schematic."
 				""
 			]
-			dependencies: ["0000000000000793"]
+			dependencies: [
+				"0000000000000793"
+				"00000000000007DC"
+			]
+			dependency_requirement: "one_completed"
 			min_width: 300
 			id: "00000000000007B8"
 			tasks: [
@@ -1247,36 +1132,15 @@
 			}]
 		}
 		{
-			x: 14.5d
-			y: 6.0d
-			subtitle: "Inverse Wave Function"
-			description: ["Once believed impossible to generate in any meaningful quantity, Antimatter opens up possibilities that some might consider magical. "]
-			dependencies: ["00000000000007B1"]
-			id: "00000000000007C3"
-			tasks: [{
-				id: "00000000000007C4"
-				type: "item"
-				item: "mekanism:pellet_antimatter"
-			}]
-			rewards: [{
-				id: "000000000000081F"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_legendary"
-				player_command: false
-			}]
-		}
-		{
-			x: 13.5d
-			y: 6.0d
+			x: 6.5d
+			y: 7.0d
 			subtitle: "Indistinguishable from Magic"
 			description: [
 				"Alchemists of yore were correct in believing that elemental substances could be transmuted. "
 				""
 				"What they failed to understand was the vast amount of energy that would be required to do so. "
 			]
-			dependencies: ["00000000000007C3"]
+			dependencies: ["5CB3E59893073F9E"]
 			id: "00000000000007C5"
 			tasks: [{
 				id: "00000000000007C6"
@@ -1425,8 +1289,8 @@
 		{
 			title: "Laser Amplification"
 			icon: "mekanism:laser_amplifier"
-			x: 13.5d
-			y: 5.0d
+			x: -2.5d
+			y: 6.0d
 			subtitle: "This One Goes to Eleven"
 			description: [
 				"In order to actually kickstart a Fusion Reactor, a highly focused and energetic burst of energy is required. "
@@ -1480,8 +1344,8 @@
 		{
 			title: "Don't Panic"
 			icon: "minecraft:cod"
-			x: 15.5d
-			y: 3.0d
+			x: -3.5d
+			y: 6.0d
 			subtitle: "There's a Frood Who Really Knows Where His Towel Is"
 			description: [
 				"Accidents happen. "
@@ -1490,7 +1354,7 @@
 				""
 				"Redeemable once only. "
 			]
-			dependencies: ["0000000000000793"]
+			dependencies: ["00000000000006A8"]
 			optional: true
 			id: "00000000000007E4"
 			tasks: [
@@ -1518,8 +1382,8 @@
 		{
 			title: "Thermoelectric Boiler"
 			icon: "mekanism:superheating_element"
-			x: 13.5d
-			y: 4.0d
+			x: -3.5d
+			y: 8.0d
 			subtitle: "It's Gettin' Hot In Here"
 			description: [
 				"Water Cooling is a great place to start, but it has its limits. Sodium may be used instead to dissipate even more heat, allowing the reactor to run at higher burn rates. "

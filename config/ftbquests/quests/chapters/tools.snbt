@@ -86,7 +86,6 @@
 				"● Teleportation Unit"
 				"● Farming Unit"
 			]
-			dependencies: ["00000000000007A9"]
 			id: "0000000000000451"
 			tasks: [{
 				id: "0000000000000452"
@@ -113,7 +112,6 @@
 			y: -7.5d
 			subtitle: "Be the Change"
 			description: ["Used for applying all upgrades to the MekaTool and MekaSuit pieces."]
-			dependencies: ["00000000000007A9"]
 			id: "0000000000000453"
 			tasks: [{
 				id: "0000000000000454"
