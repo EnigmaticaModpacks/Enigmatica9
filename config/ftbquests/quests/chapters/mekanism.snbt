@@ -67,8 +67,6 @@
 				"That little Gas-Burning Generator is probably doing OK up to this point. One could be excused for thinking it's enough. "
 				""
 				"Certain high-tier crafts will require substances currently out of our reach, and obtaining them is going to require extreme amounts of energy. "
-				""
-				"The quests that follow will guide you through the process of building a Fission Reactor, harnessing its power with an Industrial Turbine, and finally treating and converting the waste into something far more useful."
 			]
 			dependencies: ["00000000000006B4"]
 			min_width: 250
@@ -340,6 +338,7 @@
 				"Automation Note: Since the two required input materials use two different channels, red and yellow, there’s no way to feed both items in from the same face. As a result, it’s often easiest to make multiple machines, each dedicated to their own infusion material."
 			]
 			dependencies: ["00000000000006A5"]
+			min_width: 300
 			id: "00000000000006BD"
 			tasks: [{
 				id: "00000000000006BE"
@@ -1764,6 +1763,7 @@
 		{
 			x: 7.5d
 			y: 2.0d
+			description: ["WIP"]
 			dependencies: ["5CB3E59893073F9E"]
 			id: "4D94A20FD60D258C"
 			tasks: [{
@@ -2483,6 +2483,7 @@
 			icon: "mekanism:formulaic_assemblicator"
 			x: 0.0d
 			y: 6.5d
+			description: ["WIP"]
 			dependencies: ["2D5AA83E1CE08228"]
 			id: "664CD2AFAFB4812A"
 			tasks: [
@@ -2605,6 +2606,7 @@
 			icon: "mekanism:pigment_mixer"
 			x: 3.0d
 			y: 7.5d
+			description: ["WIP"]
 			dependencies: ["40A424BE284D16B2"]
 			id: "74513A3EFCA4513E"
 			tasks: [
@@ -2636,6 +2638,7 @@
 		{
 			x: 1.5d
 			y: 5.0d
+			description: ["WIP"]
 			dependencies: ["00000000000006A2"]
 			id: "3B10CD56D31A441C"
 			tasks: [{
@@ -2648,6 +2651,7 @@
 		{
 			x: 1.5d
 			y: 8.0d
+			description: ["WIP"]
 			dependencies: ["2D5AA83E1CE08228"]
 			id: "189E8DFFF26C7510"
 			tasks: [{
@@ -2679,6 +2683,7 @@
 			}
 			x: 1.5d
 			y: 6.0d
+			description: ["WIP"]
 			dependencies: ["2D5AA83E1CE08228"]
 			id: "26D4C85F78385393"
 			tasks: [{
