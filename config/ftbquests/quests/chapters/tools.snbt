@@ -15,420 +15,6 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -1.0d
-			y: -10.5d
-			subtitle: "The Only Thing They Fear... Is You."
-			description: [
-				"Notable Upgrades"
-				""
-				"● Auto Feeding"
-				"● Night Vision"
-				"● Solar Charging"
-				"● Underwater Breathing"
-				"● Magic Damage Protection"
-				"● Status Effect Protection"
-				"● Radiation Protection"
-				"● Energy Shielding"
-			]
-			dependencies: ["00000000000007A9"]
-			id: "0000000000000435"
-			tasks: [{
-				id: "0000000000000436"
-				type: "item"
-				item: {
-					id: "mekanism:mekasuit_helmet"
-					Count: 1b
-					tag: {
-						HideFlags: 2
-					}
-				}
-			}]
-			rewards: [{
-				id: "0000000000000836"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_legendary"
-				player_command: false
-			}]
-		}
-		{
-			x: -1.0d
-			y: -9.5d
-			subtitle: "Stand Strong Against Their Legions"
-			description: [
-				"Notable Upgrades"
-				""
-				"● Creative Flight"
-				"● Radiation Tracking"
-				"● Energy Distribution"
-				"● Radiation Protection"
-				"● Energy Shielding"
-			]
-			dependencies: ["00000000000007A9"]
-			id: "0000000000000437"
-			tasks: [{
-				id: "0000000000000438"
-				type: "item"
-				item: {
-					id: "mekanism:mekasuit_bodyarmor"
-					Count: 1b
-					tag: {
-						HideFlags: 2
-					}
-				}
-			}]
-			rewards: [{
-				id: "0000000000000835"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_legendary"
-				player_command: false
-			}]
-		}
-		{
-			x: -1.0d
-			y: -7.5d
-			subtitle: "They Are Rage, Brutal, Without Mercy"
-			description: [
-				"Notable Upgrades"
-				""
-				"● Run Speed Enhancement"
-				"● Radiation Protection"
-				"● Energy Shielding"
-			]
-			dependencies: ["00000000000007A9"]
-			id: "0000000000000439"
-			tasks: [{
-				id: "000000000000043A"
-				type: "item"
-				item: {
-					id: "mekanism:mekasuit_pants"
-					Count: 1b
-					tag: {
-						HideFlags: 2
-					}
-				}
-			}]
-			rewards: [{
-				id: "0000000000000834"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_legendary"
-				player_command: false
-			}]
-		}
-		{
-			x: -1.0d
-			y: -6.5d
-			subtitle: "But You, You Will Be Worse"
-			description: [
-				"Notable Upgrades"
-				""
-				"● Jump Height Enhancement"
-				"● Magnet Upgrade"
-				"● Radiation Protection"
-				"● Energy Shielding"
-			]
-			dependencies: ["00000000000007A9"]
-			id: "000000000000043B"
-			tasks: [{
-				id: "000000000000043C"
-				type: "item"
-				item: {
-					id: "mekanism:mekasuit_boots"
-					Count: 1b
-					tag: {
-						HideFlags: 2
-					}
-				}
-			}]
-			rewards: [{
-				id: "0000000000000833"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_legendary"
-				player_command: false
-			}]
-		}
-		{
-			icon: "mekanism:canteen"
-			x: 0.0d
-			y: -8.0d
-			subtitle: "Soylent Green"
-			description: ["All your essential vitamins, minerals, and amino acids, neatly condensed into a convenient chewy paste. Yum."]
-			dependencies: ["00000000000006A5"]
-			id: "000000000000043D"
-			tasks: [
-				{
-					id: "000000000000043E"
-					type: "item"
-					item: "mekanism:canteen"
-				}
-				{
-					id: "00000000000004B5"
-					type: "item"
-					item: "mekanism:nutritional_liquifier"
-				}
-			]
-			rewards: [{
-				id: "000000000000083D"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			x: 0.0d
-			y: -10.0d
-			dependencies: ["0000000000000435"]
-			id: "000000000000043F"
-			tasks: [{
-				id: "0000000000000440"
-				type: "item"
-				item: "mekanism:module_vision_enhancement_unit"
-			}]
-			rewards: [{
-				id: "000000000000083B"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			x: -2.0d
-			y: -10.0d
-			dependencies: ["0000000000000435"]
-			id: "0000000000000441"
-			tasks: [{
-				id: "0000000000000442"
-				type: "item"
-				item: "mekanism:module_electrolytic_breathing_unit"
-			}]
-			rewards: [{
-				id: "000000000000083A"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			x: -2.0d
-			y: -7.0d
-			dependencies: ["000000000000043B"]
-			id: "0000000000000443"
-			tasks: [{
-				id: "0000000000000444"
-				type: "item"
-				item: "mekanism:module_hydraulic_propulsion_unit"
-			}]
-			rewards: [{
-				id: "0000000000000839"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			x: 0.0d
-			y: -7.0d
-			dependencies: ["000000000000043B"]
-			id: "0000000000000445"
-			tasks: [{
-				id: "0000000000000446"
-				type: "item"
-				item: "mekanism:module_magnetic_attraction_unit"
-			}]
-			rewards: [{
-				id: "000000000000083E"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			x: -2.0d
-			y: -9.0d
-			dependencies: ["0000000000000437"]
-			id: "0000000000000447"
-			tasks: [{
-				id: "0000000000000448"
-				type: "item"
-				item: "mekanism:module_charge_distribution_unit"
-			}]
-			rewards: [{
-				id: "0000000000000837"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			x: -1.0d
-			y: -8.5d
-			subtitle: "The Cost Of Progress"
-			description: [""]
-			dependencies: [
-				"0000000000000437"
-				"000000000000043B"
-				"0000000000000435"
-				"0000000000000439"
-			]
-			id: "0000000000000449"
-			tasks: [{
-				id: "000000000000044A"
-				type: "item"
-				item: "mekanism:module_energy_unit"
-			}]
-			rewards: [{
-				id: "000000000000083F"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			x: 0.0d
-			y: -9.0d
-			dependencies: ["0000000000000437"]
-			id: "000000000000044B"
-			tasks: [{
-				id: "000000000000044C"
-				type: "item"
-				item: "mekanism:module_jetpack_unit"
-			}]
-			rewards: [{
-				id: "000000000000083C"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			x: -2.0d
-			y: -8.0d
-			dependencies: ["0000000000000439"]
-			id: "000000000000044D"
-			tasks: [{
-				id: "000000000000044E"
-				type: "item"
-				item: "mekanism:module_locomotive_boosting_unit"
-			}]
-			rewards: [{
-				id: "0000000000000838"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			x: -3.5d
-			y: -8.5d
-			subtitle: "Don't Leave That Plasma Cutter Running"
-			description: ["A basic multi-tool with built in vein mining and excellent attack damage."]
-			dependencies: ["00000000000006C5"]
-			id: "000000000000044F"
-			tasks: [{
-				id: "0000000000000450"
-				type: "item"
-				item: {
-					id: "mekanism:atomic_disassembler"
-					Count: 1b
-					tag: {
-						HideFlags: 2
-					}
-				}
-			}]
-			rewards: [{
-				id: "0000000000000831"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			x: -3.5d
-			y: -6.5d
-			subtitle: "Rip and Tear"
-			description: [
-				"A powerful all in one tool capable of accepting several upgrades. "
-				""
-				"Notable Upgrades"
-				""
-				"● Attack Amplification Unit"
-				"● Excavation Escalation Unit"
-				"● Vein Mining Unit"
-				"● Silk Touch Unit"
-				"● Teleportation Unit"
-				"● Farming Unit"
-			]
-			dependencies: ["00000000000007A9"]
-			id: "0000000000000451"
-			tasks: [{
-				id: "0000000000000452"
-				type: "item"
-				item: {
-					id: "mekanism:meka_tool"
-					Count: 1b
-					tag: {
-						HideFlags: 2
-					}
-				}
-			}]
-			rewards: [{
-				id: "0000000000000832"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_legendary"
-				player_command: false
-			}]
-		}
-		{
-			x: -3.5d
-			y: -7.5d
-			subtitle: "Be the Change"
-			description: ["Used for applying all upgrades to the MekaTool and MekaSuit pieces."]
-			dependencies: ["00000000000007A9"]
-			id: "0000000000000453"
-			tasks: [{
-				id: "0000000000000454"
-				type: "item"
-				item: "mekanism:modification_station"
-			}]
-			rewards: [{
-				id: "0000000000000830"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_mekanism_loot_epic"
-				player_command: false
-			}]
-		}
-		{
 			title: "Tools and Armor"
 			x: -5.5d
 			y: -7.5d
@@ -636,7 +222,7 @@
 		}
 		{
 			x: -6.0d
-			y: -5.5d
+			y: -12.0d
 			subtitle: "Guaranteed to Satisfy"
 			description: [
 				"A powered drill that makes short work of any digging task. Use a Tinker's Workbench to install various upgrades:"
@@ -678,7 +264,7 @@
 		}
 		{
 			x: -5.0d
-			y: -5.5d
+			y: -12.0d
 			subtitle: "You Try to Hold Me But I Bust Through"
 			description: [
 				"A powered saw that makes short work of any arboreal task. Use a Tinker's Workbench to install various upgrades:"
@@ -728,7 +314,7 @@
 				}
 			}
 			x: -6.5d
-			y: -4.5d
+			y: -11.0d
 			subtitle: "So Dangerous, You'll Have to Sign a Waiver"
 			description: ["Sturdy protection against many of the world's hazards, such as fire and very sharp booshes."]
 			hide_dependency_lines: true
@@ -803,7 +389,7 @@
 				}
 			}
 			x: -4.5d
-			y: -4.5d
+			y: -11.0d
 			subtitle: "You'll Think You're Looking at Aquaman"
 			description: ["A technological marvel that allows the wearer to remain productive for longer under water."]
 			hide_dependency_lines: true
@@ -870,7 +456,7 @@
 		}
 		{
 			x: -5.5d
-			y: -3.5d
+			y: -10.0d
 			description: [
 				"A powered magnet, perfect for keeping your precious items from falling into lava. Use a Tinker's Workbench to install various upgrades:"
 				""
@@ -1060,7 +646,7 @@
 		}
 		{
 			x: -5.5d
-			y: -4.5d
+			y: -11.0d
 			description: [
 				"When installed in Flux Tools, the Radial Enhancement allows them to work on larger areas. Drillin or Sawing a 3x3, 5x5, or 7x7 area. "
 				""
@@ -1103,7 +689,7 @@
 		}
 		{
 			x: -4.0d
-			y: -2.0d
+			y: -5.5d
 			subtitle: "Goes Brrr"
 			description: [
 				"A handheld saw perfect for chopping down trees or chopping through zombies. "
@@ -1165,7 +751,7 @@
 		}
 		{
 			x: -1.0d
-			y: -5.0d
+			y: -10.5d
 			subtitle: "First comes smiles, then lies. Last is gunfire."
 			description: [
 				"A trusty side-arm suitable for any Gunslinger."
@@ -1208,7 +794,7 @@
 		}
 		{
 			x: -7.0d
-			y: -2.0d
+			y: -5.5d
 			subtitle: "Workin' in a coal mine. Oops, about to slip down."
 			description: [
 				"A handheld tunnel bore capable of quickly digging through the toughest rocks. "
@@ -1263,8 +849,8 @@
 			]
 		}
 		{
-			x: -10.0d
-			y: -5.0d
+			x: -1.0d
+			y: -8.0d
 			subtitle: "See the TURTLE, ain't he keen?"
 			description: [
 				"Capable of launching projectiles at immense velocities and ripping through targets with impunity, the Railgun is a fierce weapon. "
@@ -1309,7 +895,7 @@
 		}
 		{
 			x: 0.0d
-			y: -4.0d
+			y: -10.0d
 			subtitle: "When the shooting starts, we kill what moves."
 			description: [
 				"The Speedloader will automatically reload the Revolver when it runs out of ammo, making it a great way to continue the fight. "
@@ -1343,7 +929,7 @@
 		}
 		{
 			x: -2.0d
-			y: -4.0d
+			y: -10.0d
 			subtitle: "The man in black fled across the desert..."
 			description: ["For those times when the beasts get too close, or your ammo runs dry. "]
 			dependencies: ["52DFEA36FFFBCDD5"]
@@ -1363,8 +949,8 @@
 			}]
 		}
 		{
-			x: -9.0d
-			y: -4.0d
+			x: 0.0d
+			y: -7.5d
 			subtitle: "The wheel turns and the world moves on."
 			description: ["Heatsinks allow the Railgun to recharge faster for more rapid-fire destruction. "]
 			dependencies: ["69C4E9422B0C695A"]
@@ -1384,8 +970,8 @@
 			}]
 		}
 		{
-			x: -11.0d
-			y: -4.0d
+			x: -2.0d
+			y: -7.5d
 			subtitle: "All things serve the beam."
 			description: ["The Middle Mouse button will enable the scope when installed and scrolling will adjust the magnification level. Great for picking off a target at a distance. "]
 			dependencies: ["69C4E9422B0C695A"]
@@ -1405,11 +991,11 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: -3.5d
+			x: -1.0d
+			y: -7.0d
 			subtitle: "Pain is a tool, after all. Sometimes it's the best tool."
 			description: [
-				"The Railgun, mighty as it is, holds relatively little FE. A Capacitor Backpack is an excellent way to extend the battery life."
+				"The Railgun, mighty as it is, holds relatively little energy. A Capacitor Backpack is an excellent way to extend the battery life."
 				""
 				"While it can go in a Curios slot, the Capacitor Backpack is perhaps better combined with a chest armor in a crafting grid."
 			]
@@ -1430,7 +1016,7 @@
 		{
 			title: "Ammo Cartridges"
 			x: -1.0d
-			y: -3.5d
+			y: -9.5d
 			subtitle: "...and the gunslinger followed."
 			description: [
 				"Casull Cartridges are the cheapest, most basic ammo; however, they still pack quite a punch. "
@@ -1512,7 +1098,7 @@
 		}
 		{
 			x: -3.0d
-			y: -1.5d
+			y: -5.0d
 			subtitle: "A Clean Job"
 			description: ["An exceptional cutting implement that can cleanly carve out blocks of Stone, Ice, or Glass, effectively acting as a tool with Silk Touch. "]
 			dependencies: ["1487479CFA348530"]
@@ -1539,7 +1125,7 @@
 		}
 		{
 			x: -7.0d
-			y: -1.0d
+			y: -4.5d
 			subtitle: "Don't Burst It"
 			description: ["The Mining Drill’s engine is not normally capable of operating under water. However, with the addition of a Pressurized Air Tank it can be kept running at full speed."]
 			dependencies: ["0A476C6332EB6477"]
@@ -1560,7 +1146,7 @@
 		}
 		{
 			x: -8.0d
-			y: -1.5d
+			y: -5.0d
 			subtitle: "Diggy Diggy Hole"
 			description: [
 				"Drill heads do wear out over time, though they can be removed from the drill and repaired in an Anvil. "
@@ -1585,7 +1171,7 @@
 		}
 		{
 			x: -5.5d
-			y: 0.5d
+			y: -3.0d
 			description: ["Adding some lubricant to a Drill or Saw destined for rugged digging and cutting tough material can greatly extend the lifetime of the tool. "]
 			dependencies: [
 				"5B3CC19ED97DFA26"
@@ -1609,7 +1195,7 @@
 		}
 		{
 			x: -5.5d
-			y: -0.5d
+			y: -4.0d
 			description: ["An extended Fuel tank that works in the Mining Drill, Buzzsaw, and even the Chemical Thrower. Well worth the cost."]
 			dependencies: [
 				"716019716B2915F9"
@@ -1634,7 +1220,7 @@
 		}
 		{
 			x: -8.0d
-			y: -0.5d
+			y: -4.0d
 			description: ["Up to three of these Additional Augers may be added to a drill, each one speeding up the mining speed and even improving the damage dealt to anything unlucky enough to be standing in front of it. "]
 			dependencies: ["0A476C6332EB6477"]
 			id: "1A0053922B30B033"
@@ -1654,9 +1240,9 @@
 		}
 		{
 			x: -4.0d
-			y: -1.0d
+			y: -4.5d
 			subtitle: "So Wait, Instead of Arrows..."
-			description: ["The Blade Quiver may be attached to the Buzzsaw in the Engineer’s Workbench, holds additional blades, and allows you to spot between them on-the-fly in the field. Sneak + Scroll Wheel to change blades. "]
+			description: ["The Blade Quiver may be attached to the Buzzsaw in the Engineer’s Workbench, holds additional blades, and allows you to swap between them on-the-fly in the field. Sneak + Scroll Wheel to change blades. "]
 			dependencies: ["1487479CFA348530"]
 			id: "283516E560D1D20E"
 			tasks: [{
@@ -1675,7 +1261,7 @@
 		}
 		{
 			x: -5.5d
-			y: -1.5d
+			y: -5.0d
 			subtitle: "So anyway, I started blasting."
 			description: [
 				"Ever wanted a flame thrower? Now’s your chance. Fill this with any flammable fuel, ignite the pilot light with Sneak + Right Click, and start spraying. "
@@ -1844,7 +1430,8 @@
 		}
 		{
 			x: -5.5d
-			y: -11.0d
+			y: -8.5d
+			description: ["used to hide all broken quests in this chapter. "]
 			dependencies: ["2AECF726E9E2D41B"]
 			hide: true
 			id: "344C70665D93192C"

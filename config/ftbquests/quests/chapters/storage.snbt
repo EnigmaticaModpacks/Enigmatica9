@@ -90,62 +90,6 @@
 			]
 		}
 		{
-			icon: "mekanism:basic_bin"
-			x: 1.5d
-			y: -8.5d
-			subtitle: "I Like Big Bins and I Cannot Lie"
-			description: ["Often overlooked, Bins are an excellent choice for dense item storage. They can even be used in your inventory crafting grid to manipulate their contents. "]
-			dependencies: ["0000000000000400"]
-			id: "0000000000000407"
-			tasks: [{
-				id: "3635395991201030"
-				type: "item"
-				title: "Bins"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "mekanism:basic_bin"
-								Count: 1b
-							}
-							{
-								id: "mekanism:advanced_bin"
-								Count: 1b
-							}
-							{
-								id: "mekanism:elite_bin"
-								Count: 1b
-							}
-							{
-								id: "mekanism:ultimate_bin"
-								Count: 1b
-							}
-						]
-					}
-				}
-			}]
-			rewards: [
-				{
-					id: "0000000000000A5C"
-					type: "command"
-					title: "Farmer's Delight"
-					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
-					player_command: false
-				}
-				{
-					id: "0000000000000A6C"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
-					player_command: false
-				}
-			]
-		}
-		{
 			title: "Find Me"
 			icon: "naturesaura:range_visualizer"
 			x: -3.0d
@@ -581,8 +525,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -8.5d
+			x: -0.5d
+			y: -3.5d
 			subtitle: "Pym Powered"
 			description: [
 				"Smaller, but equally strong? Impossible!"

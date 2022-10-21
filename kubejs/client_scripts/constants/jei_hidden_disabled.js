@@ -9,7 +9,31 @@ const jei = {
     expert: { items: { hidden: [], disabled: [] }, categories: { hidden: [] } }
 };
 // Base
-jei.base.items.disabled = ['twilightforest:uncrafting_table'];
+jei.base.items.disabled = [
+    'twilightforest:uncrafting_table',
+    'engineersdecor:factory_dropper',
+    'engineersdecor:factory_hopper',
+    'engineersdecor:factory_placer',
+    'engineersdecor:fluid_barrel',
+    'engineersdecor:small_block_breaker',
+    'engineersdecor:small_electrical_furnace',
+    'engineersdecor:small_fluid_funnel',
+    'engineersdecor:small_freezer',
+    'engineersdecor:small_lab_furnace',
+    'engineersdecor:small_milking_machine',
+    'engineersdecor:small_mineral_smelter',
+    'engineersdecor:small_solar_panel',
+    'engineersdecor:small_tree_cutter',
+    'engineersdecor:small_waste_incinerator',
+    'engineersdecor:straight_pipe_valve',
+    'engineersdecor:straight_pipe_valve_redstone',
+    'engineersdecor:straight_pipe_valve_redstone_analog',
+    'engineersdecor:test_block',
+    'mekanism:ultimate_bin',
+    'mekanism:elite_bin',
+    'mekanism:advanced_bin',
+    'mekanism:basic_bin'
+];
 jei.base.items.hidden = [
     'kubejs:altered_recipe_indicator',
     'kubejs:disabled_recipe_indicator',

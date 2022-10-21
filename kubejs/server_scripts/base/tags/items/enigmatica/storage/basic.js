@@ -4,11 +4,8 @@ ServerEvents.tags('item', (event) => {
         // 'aquaculture:neptunes_bounty',
         'farmersdelight:basket',
         'immersiveengineering:crate',
-        'immersiveengineering:minecart_reinforcedcrate',
-        'immersiveengineering:minecart_woodencrate',
         'immersiveengineering:reinforced_crate',
         'minecraft:barrel',
-        'minecraft:chest_minecart',
         'minecraft:dispenser',
         'minecraft:dropper'
         // 'rftoolsstorage:modular_storage'
