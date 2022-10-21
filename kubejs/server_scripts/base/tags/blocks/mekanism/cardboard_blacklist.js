@@ -1,13 +1,7 @@
-//priority: 500
 ServerEvents.tags('block', (event) => {
-    let cardboard_whitelist = [];
+    let cardboard_whitelist = [/(chest|drawer|cooler|crate|cabinet|barrel|basket)$/];
+    var exceptions = [/sophisticated.*:/, /mekanism:/, /functionalstorage:/];
 
-    let basic_containers = getItemsInTag('#enigmatica:containers/basic');
-
-    event
-        .get('mekanism:cardboard_blacklist')
-        .add(/.*/)
-        .remove(cardboard_whitelist)
-        .remove(basic_containers)
-        .add(/sophisticatedstorage:.*/); // RE-remove sophisticated storage, as those don't like Cardboard Boxes
+    event.get('mekanism:cardboard_blacklist').add(/.*/).remove(cardboard_whitelist).add(exceptions);
+    event.get('mekanism:cardboard_whitelist').add(cardboard_whitelist).remove(exceptions);
 });

@@ -1,4 +1,3 @@
-//priority: 900
 ServerEvents.tags('item', (event) => {
     var items = [
         '#forge:chests',
