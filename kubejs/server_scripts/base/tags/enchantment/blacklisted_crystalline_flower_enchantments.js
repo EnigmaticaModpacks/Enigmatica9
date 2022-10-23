@@ -1,5 +1,5 @@
 ServerEvents.tags('enchantment', (event) => {
-    let enchantments = [
+    const enchantments = [
         'apotheosis:earths_boon',
         'apotheosis:infusion',
         'apotheosis:rebounding',
@@ -7,7 +7,6 @@ ServerEvents.tags('enchantment', (event) => {
         'ars_elemental:mirror_shield',
         'ars_nouveau:reactive',
         'minecraft:binding_curse',
-        'minecraft:respiration',
         'minecraft:soul_speed',
         'minecraft:swift_sneak',
         'minecraft:vanishing_curse',
