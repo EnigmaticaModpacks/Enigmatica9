@@ -1591,7 +1591,7 @@
 				""
 				"Teleporter Frames are Optional."
 			]
-			dependencies: ["40A424BE284D16B2"]
+			dependencies: ["2D5AA83E1CE08228"]
 			id: "25956D039907CBDA"
 			tasks: [{
 				id: "5E962E033F464A5C"
@@ -2621,7 +2621,7 @@
 			x: 3.0d
 			y: 7.5d
 			description: ["This suite of blocks allows for high-efficiency production and application of dyes. "]
-			dependencies: ["40A424BE284D16B2"]
+			dependencies: ["2D5AA83E1CE08228"]
 			id: "74513A3EFCA4513E"
 			tasks: [
 				{
