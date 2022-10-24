@@ -61,13 +61,11 @@ EntityEvents.spawned((event) => {
                 equipment_set.effects.forEach((effect) => {
                     event.entity.potionEffects.add(effect.type, 9999999, effect.amplifier - 1, false, false);
                 });
+
+            // Optional Health Boost
             if (equipment_set.max_health) {
                 event.entity.maxHealth = equipment_set.max_health;
-                if (event.entity.isUndead()) {
-                    event.entity.potionEffects.add('minecraft:instant_damage', 1, 500, false, false);
-                } else {
-                    event.entity.potionEffects.add('minecraft:instant_health', 1, 500, false, false);
-                }
+                event.entity.health = equipment_set.max_health;
             }
         }
     }
