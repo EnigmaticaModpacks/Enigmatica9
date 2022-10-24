@@ -5,8 +5,8 @@
 	Foxhound = true
 	Forgotten = true
 	Shiba = true
-	Wraith = false
-	Toretoise = false
+	Wraith = true
+	Toretoise = true
 
 	[mobs.toretoise]
 		"Max Y Level" = 0
@@ -215,7 +215,7 @@
 	"Interpret Shulker Box Like Blocks" = true
 
 [automation]
-	Chute = false
+	Chute = true
 	"Iron Rod" = true
 	"Ender Watcher" = true
 	"Jukebox Automation" = true
@@ -1190,11 +1190,11 @@
 	"Zombie Villagers On Normal" = false
 	"Adjustable Chat" = false
 	Saw = false
-	"Game Nerfs" = true
+	"Game Nerfs" = false
 	"Spawner Replacer" = false
 	"Narrator Readout" = false
 	"Overlay Shader" = false
-	"Enchantments Begone" = true
+	"Enchantments Begone" = false
 
 	[experimental.saw]
 
@@ -1208,18 +1208,18 @@
 		"Replace Mobs" = []
 
 	[experimental.enchantments_begone]
-		"Enchantments To Begone" = ["apotheosis:earths_boon", "apotheosis:infusion", "apotheosis:rebounding", "apotheosis:spearfishing", "minecraft:respiration", "minecraft:binding_curse", "minecraft:vanishing_curse", "supplementaries:stasis"]
+		"Enchantments To Begone" = []
 
 	[experimental.game_nerfs]
 		#Makes Mending act like the Unmending mod
 		#https://www.curseforge.com/minecraft/mc-mods/unmending
-		"Nerf Mending" = false
+		"Nerf Mending" = true
 		#Makes Iron Golems not drop Iron Ingots
 		"Disable Iron Farms" = true
 		#Makes Sheep not drop Wool when killed
 		"Disable Wool Drops" = true
 		#Makes Boats not glide on ice
-		"Disable Ice Roads" = false
+		"Disable Ice Roads" = true
 		#Resets all villager discounts when zombified to prevent reducing prices to ridiculous levels
 		"Nerf Villager Discount" = true
 
@@ -1246,7 +1246,7 @@
 	Client = true
 
 [tools]
-	Pickarang = false
+	Pickarang = true
 	"Ambient Discs" = true
 	"Seed Pouch" = false
 	"Pathfinder Maps" = false

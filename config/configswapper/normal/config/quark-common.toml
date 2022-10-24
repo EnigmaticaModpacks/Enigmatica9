@@ -1306,7 +1306,7 @@
 	"Overlay Shader" = false
 	"Narrator Readout" = false
 	"Game Nerfs" = false
-	"Enchantments Begone" = true
+	"Enchantments Begone" = false
 	"Adjustable Chat" = false
 	Saw = false
 
@@ -1335,14 +1335,7 @@
 		"Disable Wool Drops" = true
 
 	[experimental.enchantments_begone]
-		"Enchantments To Begone" = [
-			"apotheosis:earths_boon",
-			"apotheosis:rebounding",
-			"apotheosis:spearfishing",
-			"minecraft:binding_curse",
-			"minecraft:vanishing_curse",
-			"supplementaries:stasis"
-		]
+		"Enchantments To Begone" = []
 
 	[experimental.adjustable_chat]
 		"Horizontal Shift" = 0
