@@ -2,10 +2,17 @@ EntityEvents.spawned((event) => {
     if (!event.entity.isLiving()) {
         return;
     }
+    // Ignore Apotheosis bosses
+    let entity_data = event.entity.fullNBT;
+    if (entity_data.hasOwnProperty('ForgeData')) {
+        if (entity_data.ForgeData.hasOwnProperty('apoth.boss')) {
+            console.log('Apotheosis Boss!');
+            return;
+        }
+    }
 
     let mob_type = event.entity.type.split(':')[1];
     let mod_id = event.entity.type.split(':')[0];
-
     if (Object.keys(armored_mobs).includes(mod_id)) {
         if (Object.keys(armored_mobs[mod_id]).includes(mob_type)) {
             // Randomly select a weighted equipment set for this mob from 'armored_mobs' constant.
@@ -61,13 +68,11 @@ EntityEvents.spawned((event) => {
                 equipment_set.effects.forEach((effect) => {
                     event.entity.potionEffects.add(effect.type, 9999999, effect.amplifier - 1, false, false);
                 });
+
+            // Optional Health Boost
             if (equipment_set.max_health) {
                 event.entity.maxHealth = equipment_set.max_health;
-                if (event.entity.isUndead()) {
-                    event.entity.potionEffects.add('minecraft:instant_damage', 1, 500, false, false);
-                } else {
-                    event.entity.potionEffects.add('minecraft:instant_health', 1, 500, false, false);
-                }
+                event.entity.health = equipment_set.max_health;
             }
         }
     }
