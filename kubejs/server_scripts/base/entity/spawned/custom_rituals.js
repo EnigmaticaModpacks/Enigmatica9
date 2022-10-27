@@ -76,5 +76,17 @@ EntityEvents.spawned((event) => {
                 event.server.runCommandSilent(command);
             }
         }
+
+        // Gateway Pearl Handling
+        if (ritual_effect.gateway) {
+            let gateway_type = event.entity.item.nbt.gateway;
+            x = x_coord;
+            y = y_coord + 1;
+            z = z_coord;
+
+            command = `/execute in ${ritual_dimension} run open_gateway ${x} ${y} ${z} ${gateway_type}`;
+            // console.log(command);
+            event.server.runCommandSilent(command);
+        }
     }
 });
