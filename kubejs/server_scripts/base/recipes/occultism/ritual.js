@@ -40,7 +40,7 @@ ServerEvents.recipes((event) => {
         { type: 'skeleton', input: 'minecraft:bone' },
         { type: 'slime', input: 'minecraft:slime_ball' },
         { type: 'spider', input: 'minecraft:spider_eye' },
-        { type: 'witch', input: 'minecraft:glowstone_dust' },
+        { type: 'witch', input: 'minecraft:golden_carrot' },
         { type: 'zombie', input: 'minecraft:rotten_flesh' }
     ];
 

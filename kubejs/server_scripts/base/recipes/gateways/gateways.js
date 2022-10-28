@@ -60,7 +60,7 @@ ServerEvents.highPriorityData((event) => {
             entries: {
                 common: { entity: 'minecraft:witch', nbt: '{}' },
                 uncommon: { entity: 'minecraft:witch', nbt: '{}' },
-                rare: { entity: 'minecraft:witch', nbt: '{}' }
+                rare: { entity: 'minecraft:rabbit', nbt: '{"RabbitType":99}' }
             }
         },
         {

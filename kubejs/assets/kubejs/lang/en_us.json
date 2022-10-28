@@ -192,5 +192,18 @@
     "ritual.enigmatica.occultism/ritual/zombie_gate_large.started": "Started Opening Large Zombie Gateway",
     "ritual.enigmatica.occultism/ritual/zombie_gate_large.finished": "Large Zombie Gateway Opened",
     "ritual.enigmatica.occultism/ritual/zombie_gate_large.interrupted": "Large Zombie Gateway Interrupted",
-    "ritual.enigmatica.occultism/ritual/zombie_gate_large.conditions": "Not all requirements for this ritual are met."
+    "ritual.enigmatica.occultism/ritual/zombie_gate_large.conditions": "Not all requirements for this ritual are met.",
+
+    "ritual.enigmatica.occultism/ritual/killer_bunny_gate_small.started": "Started Opening Small Killer Bunny Gateway",
+    "ritual.enigmatica.occultism/ritual/killer_bunny_gate_small.finished": "Small Killer Bunny Gateway Opened",
+    "ritual.enigmatica.occultism/ritual/killer_bunny_gate_small.interrupted": "Small Killer Bunny Gateway Interrupted",
+    "ritual.enigmatica.occultism/ritual/killer_bunny_gate_small.conditions": "Not all requirements for this ritual are met.",
+    "ritual.enigmatica.occultism/ritual/killer_bunny_gate.started": "Started Opening Killer Bunny Gateway",
+    "ritual.enigmatica.occultism/ritual/killer_bunny_gate.finished": "Killer Bunny Gateway Opened",
+    "ritual.enigmatica.occultism/ritual/killer_bunny_gate.interrupted": "Killer Bunny Gateway Interrupted",
+    "ritual.enigmatica.occultism/ritual/killer_bunny_gate.conditions": "Not all requirements for this ritual are met.",
+    "ritual.enigmatica.occultism/ritual/killer_bunny_gate_large.started": "Started Opening Large Killer Bunny Gateway",
+    "ritual.enigmatica.occultism/ritual/killer_bunny_gate_large.finished": "Large Killer Bunny Gateway Opened",
+    "ritual.enigmatica.occultism/ritual/killer_bunny_gate_large.interrupted": "Large Killer Bunny Gateway Interrupted",
+    "ritual.enigmatica.occultism/ritual/killer_bunny_gate_large.conditions": "Not all requirements for this ritual are met."
 }
