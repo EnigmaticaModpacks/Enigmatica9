@@ -122,7 +122,7 @@ ServerEvents.highPriorityData((event) => {
             let loot_multiplier = 1,
                 completion_xp = 250,
                 spawn_range = 5,
-                return_item = 'minecraft:ender_pearl',
+                primary_reward = { type: 'apotheosis:affix', rarity: 'common' },
                 wave_properties = [
                     { common: 2, uncommon: 0, rare: 0, modifier: 'none' },
                     { common: 2, uncommon: 0, rare: 0, modifier: gateways_wave_modifiers.wave_two },
@@ -136,7 +136,7 @@ ServerEvents.highPriorityData((event) => {
                 loot_multiplier = 2;
                 completion_xp = completion_xp * 2;
                 spawn_range = spawn_range + 2;
-                return_item = 'minecraft:ender_eye';
+                primary_reward = { type: 'apotheosis:affix', rarity: 'uncommon' };
                 wave_properties = [
                     { common: 2, uncommon: 1, rare: 0, modifier: 'none' },
                     { common: 2, uncommon: 1, rare: 0, modifier: gateways_wave_modifiers.wave_two },
@@ -151,7 +151,7 @@ ServerEvents.highPriorityData((event) => {
                 loot_multiplier = 4;
                 completion_xp = completion_xp * 5;
                 spawn_range = spawn_range + 4;
-                return_item = 'minecraft:nether_star';
+                primary_reward = { type: 'apotheosis:affix', rarity: 'rare' };
                 wave_properties = [
                     { common: 3, uncommon: 3, rare: 0, modifier: 'none' },
                     { common: 3, uncommon: 3, rare: 0, modifier: gateways_wave_modifiers.wave_two },
@@ -168,29 +168,28 @@ ServerEvents.highPriorityData((event) => {
                 leash_range: 64,
                 waves: [],
                 completion_xp: completion_xp,
-                completion_rewards: {
-                    common: 15 * loot_multiplier,
-                    uncommon: 10 * loot_multiplier,
-                    rare: 5 * loot_multiplier
-                },
+                rewards: [primary_reward],
                 spawn_range: spawn_range,
                 id: id
             };
 
+            let extra_rewards = {
+                common: 15 * loot_multiplier,
+                uncommon: 10 * loot_multiplier,
+                rare: 5 * loot_multiplier
+            };
             // Rewards for completion of the entire gateway. Each wave also has rewards.
-            recipe.rewards = [{ type: 'stack', stack: { item: return_item } }];
-
             let rarities = Object.keys(gateway.entries);
             rarities.forEach((rarity) => {
                 let index = recipe.rewards.findIndex((reward) => reward.entity === gateway.entries[rarity].entity);
                 // increment existing entries or create if new
                 if (index >= 0) {
-                    recipe.rewards[index].rolls = recipe.rewards[index].rolls + recipe.completion_rewards[rarity];
+                    recipe.rewards[index].rolls = recipe.rewards[index].rolls + extra_rewards[rarity];
                 } else {
                     recipe.rewards.push({
                         type: 'entity_loot',
                         entity: gateway.entries[rarity].entity,
-                        rolls: recipe.completion_rewards[rarity]
+                        rolls: extra_rewards[rarity]
                     });
                 }
             });
