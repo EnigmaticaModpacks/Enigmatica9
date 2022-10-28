@@ -218,10 +218,17 @@ function generateGatewayWave(entries, loot_per_mob, modifiers, max_wave_time, se
         wave.entities.push({ entity: entry.entity, nbt: entry.nbt });
 
         let index = wave.rewards.findIndex((reward) => reward.entity === entry.entity);
-        // increment existing entries or create if new
+        // Increment existing entries or create if new
         if (index >= 0) {
             wave.rewards[index].rolls = wave.rewards[index].rolls + loot_per_mob;
         } else {
+            // Slimes and Magma Cubes need special NBT to drop loots.
+            if (entry.entity == 'minecraft:slime') {
+                entry.nbt = '{"Size": 0}';
+            }
+            if (entry.entity == 'minecraft:magma_cube') {
+                entry.nbt = '{"Size": 1}';
+            }
             wave.rewards.push({ type: 'entity_loot', entity: entry.entity, nbt: entry.nbt, rolls: loot_per_mob });
         }
     });

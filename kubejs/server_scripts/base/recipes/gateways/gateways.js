@@ -6,6 +6,8 @@ ServerEvents.highPriorityData((event) => {
 
     // Setup generic gateways for mobs.
     // This uses a standard layout to generate a small, medium, and large gate for each mob type.
+    // Three rarities are required, but can all be the same mob.
+    // NBT data may be specified as well, such as to charge creepers.
     // More unique entries should appear directly in recipes above.
     // Refer to constants/gateways_wave_modifiers for the standardized mob buffs at each wave.
     let generic_gateways = [
@@ -88,6 +90,24 @@ ServerEvents.highPriorityData((event) => {
                 common: { entity: 'minecraft:enderman', nbt: '{}' },
                 uncommon: { entity: 'minecraft:enderman', nbt: '{}' },
                 rare: { entity: 'minecraft:enderman', nbt: '{}' }
+            }
+        },
+        {
+            type: 'magma_cube_gate',
+            color: '#CB3D07',
+            entries: {
+                common: { entity: 'minecraft:magma_cube', nbt: '{}' },
+                uncommon: { entity: 'minecraft:magma_cube', nbt: '{}' },
+                rare: { entity: 'minecraft:magma_cube', nbt: '{}' }
+            }
+        },
+        {
+            type: 'slime_gate',
+            color: '#7EBF6E',
+            entries: {
+                common: { entity: 'minecraft:slime', nbt: '{}' },
+                uncommon: { entity: 'minecraft:slime', nbt: '{}' },
+                rare: { entity: 'minecraft:slime', nbt: '{}' }
             }
         }
     ];
