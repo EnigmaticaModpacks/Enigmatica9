@@ -204,3 +204,26 @@ function toTitleCase(str) {
         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
     });
 }
+
+function generateGatewayWave(entries, loot_per_mob, modifiers, max_wave_time, setup_time) {
+    let wave = { entities: [], rewards: [], max_wave_time: max_wave_time, setup_time: setup_time };
+
+    // Set modifiers if present
+    if (modifiers !== 'none') {
+        wave.modifiers = modifiers;
+    }
+
+    // build entities and rewards arrays
+    entries.forEach((entry) => {
+        wave.entities.push({ entity: entry.entity, nbt: entry.nbt });
+
+        let index = wave.rewards.findIndex((reward) => reward.entity === entry.entity);
+        // increment existing entries or create if new
+        if (index >= 0) {
+            wave.rewards[index].rolls = wave.rewards[index].rolls + loot_per_mob;
+        } else {
+            wave.rewards.push({ type: 'entity_loot', entity: entry.entity, nbt: entry.nbt, rolls: loot_per_mob });
+        }
+    });
+    return wave;
+}

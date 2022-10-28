@@ -471,6 +471,26 @@ const armored_mobs = {
                     }
                 }
             ]
+        },
+        drowned: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        effects: [{ type: 'minecraft:resistance', amplifier: 1 }],
+                        max_health: 40,
+                        enchant: {
+                            chance: 0.5,
+                            level: { min: 10, max: 20 },
+                            treasure: false
+                        },
+                        mainhand: Item.of(
+                            'minecraft:trident',
+                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
+                        )
+                    }
+                }
+            ]
         }
     },
     twilightforest: {
