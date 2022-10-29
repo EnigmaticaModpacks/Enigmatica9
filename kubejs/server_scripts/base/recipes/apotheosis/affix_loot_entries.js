@@ -78,6 +78,46 @@ ServerEvents.highPriorityData((event) => {
                 type: 'ARMOR',
                 dimensions: ['minecraft:overworld'],
                 max_rarity: 'mythic'
+            },
+            {
+                weight: 55,
+                quality: 3.5,
+                stack: { item: 'create:diving_helmet', count: 1, nbt: default_nbt },
+                type: 'ARMOR',
+                dimensions: ['minecraft:overworld'],
+                max_rarity: 'mythic'
+            },
+            {
+                weight: 85,
+                quality: 4.0,
+                stack: { item: 'naturesaura:infused_iron_sword', count: 1, nbt: default_nbt },
+                type: 'SWORD',
+                dimensions: ['minecraft:overworld'],
+                max_rarity: 'rare'
+            },
+            {
+                weight: 85,
+                quality: 4.0,
+                stack: { item: 'naturesaura:infused_iron_axe', count: 1, nbt: default_nbt },
+                type: 'HEAVY_WEAPON',
+                dimensions: ['minecraft:overworld'],
+                max_rarity: 'rare'
+            },
+            {
+                weight: 85,
+                quality: 4.0,
+                stack: { item: 'naturesaura:infused_iron_pickaxe', count: 1, nbt: default_nbt },
+                type: 'BREAKER',
+                dimensions: ['minecraft:overworld'],
+                max_rarity: 'rare'
+            },
+            {
+                weight: 85,
+                quality: 4.0,
+                stack: { item: 'naturesaura:infused_iron_shovel', count: 1, nbt: default_nbt },
+                type: 'BREAKER',
+                dimensions: ['minecraft:overworld'],
+                max_rarity: 'rare'
             }
         ],
         the_end: [],
@@ -108,6 +148,53 @@ ServerEvents.highPriorityData((event) => {
                     { item: 'minecraft:iron_chestplate', count: 1, nbt: default_nbt },
                     { item: 'minecraft:iron_leggings', count: 1, nbt: default_nbt },
                     { item: 'minecraft:iron_boots', count: 1, nbt: default_nbt }
+                ],
+                attributes: {
+                    weight: 70,
+                    quality: 5.0,
+                    type: 'ARMOR',
+                    dimensions: ['minecraft:overworld'],
+                    max_rarity: 'rare'
+                }
+            },
+            {
+                stacks: [
+                    { item: 'pneumaticcraft:compressed_iron_helmet', count: 1, nbt: default_nbt },
+                    { item: 'pneumaticcraft:compressed_iron_chestplate', count: 1, nbt: default_nbt },
+                    { item: 'pneumaticcraft:compressed_iron_leggings', count: 1, nbt: default_nbt },
+                    { item: 'pneumaticcraft:compressed_iron_boots', count: 1, nbt: default_nbt }
+                ],
+                attributes: {
+                    weight: 50,
+                    quality: 10.0,
+                    type: 'ARMOR',
+                    dimensions: ['minecraft:overworld'],
+                    min_rarity: 'rare',
+                    max_rarity: 'mythic'
+                }
+            },
+            {
+                stacks: [
+                    { item: 'immersiveengineering:armor_steel_head', count: 1, nbt: default_nbt },
+                    { item: 'immersiveengineering:armor_steel_chest', count: 1, nbt: default_nbt },
+                    { item: 'immersiveengineering:armor_steel_legs', count: 1, nbt: default_nbt },
+                    { item: 'immersiveengineering:armor_steel_feet', count: 1, nbt: default_nbt }
+                ],
+                attributes: {
+                    weight: 30,
+                    quality: 10.0,
+                    type: 'ARMOR',
+                    dimensions: ['minecraft:overworld'],
+                    min_rarity: 'rare',
+                    max_rarity: 'mythic'
+                }
+            },
+            {
+                stacks: [
+                    { item: 'naturesaura:infused_iron_helmet', count: 1, nbt: default_nbt },
+                    { item: 'naturesaura:infused_iron_chest', count: 1, nbt: default_nbt },
+                    { item: 'naturesaura:infused_iron_pants', count: 1, nbt: default_nbt },
+                    { item: 'naturesaura:infused_iron_shoes', count: 1, nbt: default_nbt }
                 ],
                 attributes: {
                     weight: 70,
