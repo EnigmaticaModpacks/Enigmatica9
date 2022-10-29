@@ -1,6 +1,6 @@
 /// High Priority required or Apotheosis over-writes these.
 ServerEvents.highPriorityData((event) => {
-    let recipes = {
+    const recipes = {
         overworld: [
             {
                 name: 'chain',

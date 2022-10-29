@@ -8,7 +8,7 @@ enchantment_levels: [50, 30, 120, 40],
 
 */
 ServerEvents.highPriorityData((event) => {
-    let recipes = {
+    const recipes = {
         overworld: [
             {
                 entity: 'minecraft:bee'
