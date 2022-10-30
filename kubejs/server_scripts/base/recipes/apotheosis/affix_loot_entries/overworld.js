@@ -165,7 +165,6 @@ ServerEvents.highPriorityData((event) => {
     });
 
     recipes.forEach((recipe) => {
-        console.log(recipe);
         event.addJson(`${id_prefix}${recipe.stack.item.split(':')[1]}.json`, recipe);
     });
 });

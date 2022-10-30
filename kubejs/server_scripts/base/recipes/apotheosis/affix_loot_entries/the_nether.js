@@ -1,6 +1,6 @@
 /// High Priority required or Apotheosis over-writes these.
 ServerEvents.highPriorityData((event) => {
-    const id_prefix = 'apotheosis:affix_loot_entries/overworld/';
+    const id_prefix = 'apotheosis:affix_loot_entries/the_nether/';
     const recipes = [
         {
             weight: 50,
