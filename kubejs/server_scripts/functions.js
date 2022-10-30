@@ -130,14 +130,40 @@ function generatePool(table, loot_table) {
             });
         }
 
-        loot_table.loot_items.forEach((loot_item) => {
-            pool.addItem(Item.of(loot_item.item), loot_item.weight);
-        });
+        if (loot_table.loot_items) {
+            loot_table.loot_items.forEach((loot_item) => {
+                pool.addItem(Item.of(loot_item.item), loot_item.weight);
+            });
+        }
+
+        if (loot_table.generic_entries) {
+            loot_table.generic_entries.forEach((generic_entry) => {
+                pool.addEntry(generic_entry);
+            });
+        }
     });
 }
 
-function addEntityTable(event, entity, loot_table) {
+function addEntityLootTable(event, entity, loot_table) {
+    event.addEntity(entity, (table) => {
+        generatePool(table, loot_table);
+    });
+}
+
+function modifyEntityLootTable(event, entity, loot_table) {
     event.modifyEntity(entity, (table) => {
+        generatePool(table, loot_table);
+    });
+}
+
+function modifyLootTable(event, loot_id, loot_table) {
+    event.modify(loot_id, (table) => {
+        generatePool(table, loot_table);
+    });
+}
+
+function addLootTable(event, loot_id, loot_table) {
+    event.add(loot_id, (table) => {
         generatePool(table, loot_table);
     });
 }

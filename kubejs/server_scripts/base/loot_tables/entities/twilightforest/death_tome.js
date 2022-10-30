@@ -50,6 +50,6 @@ ServerEvents.entityLootTables((event) => {
     ];
 
     tables.forEach((table) => {
-        addEntityTable(event, 'twilightforest:death_tome', table);
+        modifyEntityLootTable(event, 'twilightforest:death_tome', table);
     });
 });

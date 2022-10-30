@@ -144,7 +144,7 @@ ServerEvents.highPriorityData((event) => {
             },
             {
                 stacks: [
-                    { item: 'minecraft:iron_helmet', count: 1, nbt: default_nbt },
+                    // { item: 'minecraft:iron_helmet', count: 1, nbt: default_nbt },
                     { item: 'minecraft:iron_chestplate', count: 1, nbt: default_nbt },
                     { item: 'minecraft:iron_leggings', count: 1, nbt: default_nbt },
                     { item: 'minecraft:iron_boots', count: 1, nbt: default_nbt }
@@ -170,7 +170,7 @@ ServerEvents.highPriorityData((event) => {
                     type: 'ARMOR',
                     dimensions: ['minecraft:overworld'],
                     min_rarity: 'rare',
-                    max_rarity: 'mythic'
+                    max_rarity: 'epic'
                 }
             },
             {
@@ -186,7 +186,7 @@ ServerEvents.highPriorityData((event) => {
                     type: 'ARMOR',
                     dimensions: ['minecraft:overworld'],
                     min_rarity: 'rare',
-                    max_rarity: 'mythic'
+                    max_rarity: 'epic'
                 }
             },
             {
@@ -214,7 +214,8 @@ ServerEvents.highPriorityData((event) => {
                     { item: 'minecraft:stone_axe' },
                     { item: 'minecraft:stone_pickaxe' },
                     { item: 'minecraft:stone_shovel' },
-                    { item: 'minecraft:stone_sword' }
+                    { item: 'minecraft:stone_sword' },
+                    { item: 'minecraft:iron_helmet' }
                 ],
                 attributes: { conditions: [{ type: 'forge:false' }] }
             }
@@ -235,7 +236,7 @@ ServerEvents.highPriorityData((event) => {
 
     Object.keys(recipes).forEach((dimension) => {
         recipes[dimension].forEach((recipe) => {
-            console.log(`Entry for ${dimension}: ${JSON.stringify(recipe)}`);
+            // console.log(`Entry for ${dimension}: ${JSON.stringify(recipe)}`);
             event.addJson(`apotheosis:affix_loot_entries/${dimension}/${recipe.stack.item.split(':')[1]}.json`, recipe);
         });
     });
