@@ -11,4 +11,6 @@ useShiftForQuickLookup = false
 #Set how text overflow should be coped with: overflow the text off the page, truncate overflowed text, or resize everything to fit. Relogin after changing.
 #Allowed Values: OVERFLOW, TRUNCATE, RESIZE
 textOverflowMode = "RESIZE"
+#How long in ticks the quick lookup key needs to be pressed before the book opens
+quickLookupTime = 10
 
