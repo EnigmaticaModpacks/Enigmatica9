@@ -11,8 +11,8 @@ ServerEvents.highPriorityData((event) => {
     const recipes = {
         overworld: [
             {
-                entity: 'minecraft:bee'
-                // Disable Default Entry
+                entity: 'minecraft:bee',
+                conditions: [{ type: 'forge:false' }]
             },
             {
                 entity: 'minecraft:goat',
@@ -1124,8 +1124,8 @@ ServerEvents.highPriorityData((event) => {
         ],
         twilight: [
             {
-                entity: 'twilightforest:knight_phantom'
-                // Disable Default Entry
+                entity: 'twilightforest:knight_phantom',
+                conditions: [{ type: 'forge:false' }]
             },
             {
                 entity: 'twilightforest:carminite_golem',
@@ -1483,6 +1483,47 @@ ServerEvents.highPriorityData((event) => {
                                 value: { min: 0.25, steps: 30, step: 0.01 }
                             },
                             { attribute: 'minecraft:generic.knockback_resistance', operation: 'ADDITION', value: 0.4 }
+                        ]
+                    }
+                }
+            }
+        ],
+        blueskies: [
+            {
+                entity: 'minecraft:goat',
+                weight: 1,
+                quality: 5,
+                size: { width: 1.4, height: 1.4 },
+                valid_gear_sets: ['#overworld'],
+                dimensions: ['blue_skies:everbright', 'blue_skies:everdawn'],
+                min_rarity: 'mythic',
+                max_rarity: 'mythic',
+                stats: {
+                    mythic: {
+                        enchant_chance: 0.75,
+                        enchantment_levels: [25, 20, 50, 40],
+                        effects: [
+                            { effect: 'minecraft:fire_resistance', chance: 1 },
+                            { effect: 'minecraft:jump_boost', amplifier: { min: 3, max: 3 }, chance: 1 }
+                        ],
+                        attribute_modifiers: [
+                            {
+                                attribute: 'minecraft:generic.max_health',
+                                operation: 'ADDITION',
+                                value: { min: 600, steps: 100, step: 5 }
+                            },
+                            {
+                                attribute: 'minecraft:generic.movement_speed',
+                                operation: 'MULTIPLY_BASE',
+                                value: { min: 0.25, steps: 10, step: 0.01 }
+                            },
+                            { attribute: 'minecraft:generic.attack_knockback', operation: 'ADDITION', value: 5 },
+                            {
+                                attribute: 'minecraft:generic.attack_damage',
+                                operation: 'ADDITION',
+                                value: { min: 40, steps: 20, step: 2 }
+                            },
+                            { attribute: 'minecraft:generic.knockback_resistance', operation: 'ADDITION', value: 1 }
                         ]
                     }
                 }
