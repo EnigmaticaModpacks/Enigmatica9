@@ -5,7 +5,7 @@ ServerEvents.highPriorityData((event) => {
         {
             weight: 50,
             quality: 2.5,
-            stack: { item: 'minecraft:bow', count: 1, nbt: default_nbt },
+            stack: { item: 'minecraft:bow', nbt: default_nbt },
             type: 'BOW',
             min_rarity: 'common',
             max_rarity: 'rare',
@@ -14,48 +14,17 @@ ServerEvents.highPriorityData((event) => {
         {
             weight: 50,
             quality: 2.5,
-            stack: { item: 'minecraft:crossbow', count: 1, nbt: default_nbt },
+            stack: { item: 'minecraft:crossbow', nbt: default_nbt },
             type: 'CROSSBOW',
             min_rarity: 'common',
             max_rarity: 'rare',
             dimensions: ['minecraft:overworld']
         },
-        {
-            weight: 85,
-            quality: 4.0,
-            stack: { item: 'minecraft:iron_sword', count: 1, nbt: default_nbt },
-            type: 'SWORD',
-            dimensions: ['minecraft:overworld'],
-            max_rarity: 'rare'
-        },
-        {
-            weight: 85,
-            quality: 4.0,
-            stack: { item: 'minecraft:iron_axe', count: 1, nbt: default_nbt },
-            type: 'HEAVY_WEAPON',
-            dimensions: ['minecraft:overworld'],
-            max_rarity: 'rare'
-        },
-        {
-            weight: 85,
-            quality: 4.0,
-            stack: { item: 'minecraft:iron_pickaxe', count: 1, nbt: default_nbt },
-            type: 'BREAKER',
-            dimensions: ['minecraft:overworld'],
-            max_rarity: 'rare'
-        },
-        {
-            weight: 85,
-            quality: 4.0,
-            stack: { item: 'minecraft:iron_shovel', count: 1, nbt: default_nbt },
-            type: 'BREAKER',
-            dimensions: ['minecraft:overworld'],
-            max_rarity: 'rare'
-        },
+
         {
             weight: 50,
             quality: 2.5,
-            stack: { item: 'minecraft:shield', count: 1, nbt: default_nbt },
+            stack: { item: 'minecraft:shield', nbt: default_nbt },
             type: 'SHIELD',
             min_rarity: 'common',
             max_rarity: 'rare',
@@ -64,104 +33,73 @@ ServerEvents.highPriorityData((event) => {
         {
             weight: 50,
             quality: 2.5,
-            stack: { item: 'minecraft:trident', count: 1, nbt: default_nbt },
+            stack: { item: 'minecraft:trident', nbt: default_nbt },
             type: 'TRIDENT',
             min_rarity: 'common',
             max_rarity: 'rare',
             dimensions: ['minecraft:overworld']
         },
         {
-            weight: 55,
+            weight: 50,
             quality: 3.5,
-            stack: { item: 'minecraft:turtle_helmet', count: 1, nbt: default_nbt },
+            stack: { item: 'minecraft:turtle_helmet', nbt: default_nbt },
             type: 'ARMOR',
             dimensions: ['minecraft:overworld'],
             max_rarity: 'mythic'
         },
         {
-            weight: 55,
+            weight: 50,
             quality: 3.5,
-            stack: { item: 'create:diving_helmet', count: 1, nbt: default_nbt },
+            stack: { item: 'create:diving_helmet', nbt: default_nbt },
             type: 'ARMOR',
             dimensions: ['minecraft:overworld'],
             max_rarity: 'mythic'
-        },
-        {
-            weight: 85,
-            quality: 4.0,
-            stack: { item: 'naturesaura:infused_iron_sword', count: 1, nbt: default_nbt },
-            type: 'SWORD',
-            dimensions: ['minecraft:overworld'],
-            max_rarity: 'rare'
-        },
-        {
-            weight: 85,
-            quality: 4.0,
-            stack: { item: 'naturesaura:infused_iron_axe', count: 1, nbt: default_nbt },
-            type: 'HEAVY_WEAPON',
-            dimensions: ['minecraft:overworld'],
-            max_rarity: 'rare'
-        },
-        {
-            weight: 85,
-            quality: 4.0,
-            stack: { item: 'naturesaura:infused_iron_pickaxe', count: 1, nbt: default_nbt },
-            type: 'BREAKER',
-            dimensions: ['minecraft:overworld'],
-            max_rarity: 'rare'
-        },
-        {
-            weight: 85,
-            quality: 4.0,
-            stack: { item: 'naturesaura:infused_iron_shovel', count: 1, nbt: default_nbt },
-            type: 'BREAKER',
-            dimensions: ['minecraft:overworld'],
-            max_rarity: 'rare'
         }
     ];
 
     const equip_sets = [
         {
             stacks: [
-                { item: 'minecraft:chainmail_helmet', count: 1, nbt: default_nbt },
-                { item: 'minecraft:chainmail_chestplate', count: 1, nbt: default_nbt },
-                { item: 'minecraft:chainmail_leggings', count: 1, nbt: default_nbt },
-                { item: 'minecraft:chainmail_boots', count: 1, nbt: default_nbt }
+                { type: 'ARMOR', item: 'minecraft:chainmail_helmet', nbt: default_nbt },
+                { type: 'ARMOR', item: 'minecraft:chainmail_chestplate', nbt: default_nbt },
+                { type: 'ARMOR', item: 'minecraft:chainmail_leggings', nbt: default_nbt },
+                { type: 'ARMOR', item: 'minecraft:chainmail_boots', nbt: default_nbt }
             ],
             attributes: {
                 weight: 85,
                 quality: 3.0,
-                type: 'ARMOR',
                 dimensions: ['minecraft:overworld'],
                 max_rarity: 'uncommon'
             }
         },
         {
             stacks: [
-                { item: 'minecraft:iron_helmet', count: 1, nbt: default_nbt },
-                { item: 'minecraft:iron_chestplate', count: 1, nbt: default_nbt },
-                { item: 'minecraft:iron_leggings', count: 1, nbt: default_nbt },
-                { item: 'minecraft:iron_boots', count: 1, nbt: default_nbt }
+                { type: 'ARMOR', item: 'minecraft:iron_helmet', nbt: default_nbt },
+                { type: 'ARMOR', item: 'minecraft:iron_chestplate', nbt: default_nbt },
+                { type: 'ARMOR', item: 'minecraft:iron_leggings', nbt: default_nbt },
+                { type: 'ARMOR', item: 'minecraft:iron_boots', nbt: default_nbt },
+                { type: 'SWORD', item: 'minecraft:iron_sword', nbt: default_nbt },
+                { type: 'BREAKER', item: 'minecraft:iron_pickaxe', nbt: default_nbt },
+                { type: 'BREAKER', item: 'minecraft:iron_shovel', nbt: default_nbt },
+                { type: 'HEAVY_WEAPON', item: 'minecraft:iron_axe', nbt: default_nbt }
             ],
             attributes: {
                 weight: 70,
-                quality: 5.0,
-                type: 'ARMOR',
+                quality: 4.0,
                 dimensions: ['minecraft:overworld'],
                 max_rarity: 'rare'
             }
         },
         {
             stacks: [
-                { item: 'pneumaticcraft:compressed_iron_helmet', count: 1, nbt: default_nbt },
-                { item: 'pneumaticcraft:compressed_iron_chestplate', count: 1, nbt: default_nbt },
-                { item: 'pneumaticcraft:compressed_iron_leggings', count: 1, nbt: default_nbt },
-                { item: 'pneumaticcraft:compressed_iron_boots', count: 1, nbt: default_nbt }
+                { type: 'ARMOR', item: 'pneumaticcraft:compressed_iron_helmet', nbt: default_nbt },
+                { type: 'ARMOR', item: 'pneumaticcraft:compressed_iron_chestplate', nbt: default_nbt },
+                { type: 'ARMOR', item: 'pneumaticcraft:compressed_iron_leggings', nbt: default_nbt },
+                { type: 'ARMOR', item: 'pneumaticcraft:compressed_iron_boots', nbt: default_nbt }
             ],
             attributes: {
                 weight: 50,
                 quality: 10.0,
-                type: 'ARMOR',
                 dimensions: ['minecraft:overworld'],
                 min_rarity: 'rare',
                 max_rarity: 'epic'
@@ -169,15 +107,14 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             stacks: [
-                { item: 'immersiveengineering:armor_steel_head', count: 1, nbt: default_nbt },
-                { item: 'immersiveengineering:armor_steel_chest', count: 1, nbt: default_nbt },
-                { item: 'immersiveengineering:armor_steel_legs', count: 1, nbt: default_nbt },
-                { item: 'immersiveengineering:armor_steel_feet', count: 1, nbt: default_nbt }
+                { type: 'ARMOR', item: 'immersiveengineering:armor_steel_head', nbt: default_nbt },
+                { type: 'ARMOR', item: 'immersiveengineering:armor_steel_chest', nbt: default_nbt },
+                { type: 'ARMOR', item: 'immersiveengineering:armor_steel_legs', nbt: default_nbt },
+                { type: 'ARMOR', item: 'immersiveengineering:armor_steel_feet', nbt: default_nbt }
             ],
             attributes: {
                 weight: 30,
                 quality: 10.0,
-                type: 'ARMOR',
                 dimensions: ['minecraft:overworld'],
                 min_rarity: 'rare',
                 max_rarity: 'epic'
@@ -185,15 +122,18 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             stacks: [
-                { item: 'naturesaura:infused_iron_helmet', count: 1, nbt: default_nbt },
-                { item: 'naturesaura:infused_iron_chest', count: 1, nbt: default_nbt },
-                { item: 'naturesaura:infused_iron_pants', count: 1, nbt: default_nbt },
-                { item: 'naturesaura:infused_iron_shoes', count: 1, nbt: default_nbt }
+                { type: 'ARMOR', item: 'naturesaura:infused_iron_helmet', nbt: default_nbt },
+                { type: 'ARMOR', item: 'naturesaura:infused_iron_chest', nbt: default_nbt },
+                { type: 'ARMOR', item: 'naturesaura:infused_iron_pants', nbt: default_nbt },
+                { type: 'ARMOR', item: 'naturesaura:infused_iron_shoes', nbt: default_nbt },
+                { type: 'SWORD', item: 'naturesaura:infused_iron_sword', nbt: default_nbt },
+                { type: 'BREAKER', item: 'naturesaura:infused_iron_pickaxe', nbt: default_nbt },
+                { type: 'BREAKER', item: 'naturesaura:infused_iron_shovel', nbt: default_nbt },
+                { type: 'HEAVY_WEAPON', item: 'naturesaura:infused_iron_axe', nbt: default_nbt }
             ],
             attributes: {
                 weight: 70,
-                quality: 5.0,
-                type: 'ARMOR',
+                quality: 6.0,
                 dimensions: ['minecraft:overworld'],
                 max_rarity: 'rare'
             }
@@ -217,6 +157,9 @@ ServerEvents.highPriorityData((event) => {
     equip_sets.forEach((equip_set) => {
         equip_set.stacks.forEach((stack) => {
             let recipe = Object.assign({}, { stack: stack }, equip_set.attributes);
+            if (recipe.stack.type) {
+                recipe.type = recipe.stack.type;
+            }
             recipes.push(recipe);
         });
     });

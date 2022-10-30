@@ -5,7 +5,7 @@ ServerEvents.highPriorityData((event) => {
         {
             weight: 50,
             quality: 2.5,
-            stack: { item: 'minecraft:bow', count: 1, nbt: default_nbt },
+            stack: { item: 'minecraft:bow', nbt: default_nbt },
             type: 'BOW',
             min_rarity: 'rare',
             max_rarity: 'mythic',
@@ -14,61 +14,16 @@ ServerEvents.highPriorityData((event) => {
         {
             weight: 50,
             quality: 2.5,
-            stack: { item: 'minecraft:crossbow', count: 1, nbt: default_nbt },
+            stack: { item: 'minecraft:crossbow', nbt: default_nbt },
             type: 'CROSSBOW',
             min_rarity: 'rare',
             max_rarity: 'mythic',
             dimensions: ['minecraft:the_end']
         },
         {
-            weight: 100,
-            quality: 5.0,
-            stack: { item: 'naturesaura:sky_axe', count: 1, nbt: default_nbt },
-            type: 'HEAVY_WEAPON',
-            dimensions: ['minecraft:the_end'],
-            min_rarity: 'rare',
-            max_rarity: 'mythic'
-        },
-        {
-            weight: 100,
-            quality: 5.0,
-            stack: { item: 'naturesaura:sky_pickaxe', count: 1, nbt: default_nbt },
-            type: 'BREAKER',
-            dimensions: ['minecraft:the_end'],
-            min_rarity: 'rare',
-            max_rarity: 'mythic'
-        },
-        {
-            weight: 100,
-            quality: 5.0,
-            stack: { item: 'naturesaura:sky_shovel', count: 1, nbt: default_nbt },
-            type: 'BREAKER',
-            dimensions: ['minecraft:the_end'],
-            min_rarity: 'rare',
-            max_rarity: 'mythic'
-        },
-        {
-            weight: 100,
-            quality: 5.0,
-            stack: { item: 'naturesaura:sky_sword', count: 1, nbt: default_nbt },
-            type: 'SWORD',
-            dimensions: ['minecraft:the_end'],
-            min_rarity: 'rare',
-            max_rarity: 'mythic'
-        },
-        {
-            weight: 70,
-            quality: 10.0,
-            stack: { item: 'ars_nouveau:enchanters_sword', count: 1, nbt: default_nbt },
-            type: 'SWORD',
-            dimensions: ['minecraft:the_end'],
-            min_rarity: 'rare',
-            max_rarity: 'mythic'
-        },
-        {
             weight: 50,
             quality: 2.5,
-            stack: { item: 'minecraft:shield', count: 1, nbt: default_nbt },
+            stack: { item: 'minecraft:shield', nbt: default_nbt },
             type: 'SHIELD',
             min_rarity: 'rare',
             max_rarity: 'mythic',
@@ -77,7 +32,7 @@ ServerEvents.highPriorityData((event) => {
         {
             weight: 50,
             quality: 2.5,
-            stack: { item: 'minecraft:trident', count: 1, nbt: default_nbt },
+            stack: { item: 'minecraft:trident', nbt: default_nbt },
             type: 'TRIDENT',
             min_rarity: 'rare',
             max_rarity: 'mythic',
@@ -87,15 +42,18 @@ ServerEvents.highPriorityData((event) => {
     const equip_sets = [
         {
             stacks: [
-                { item: 'naturesaura:sky_helmet', count: 1, nbt: default_nbt },
-                { item: 'naturesaura:sky_chest', count: 1, nbt: default_nbt },
-                { item: 'naturesaura:sky_pants', count: 1, nbt: default_nbt },
-                { item: 'naturesaura:sky_shoes', count: 1, nbt: default_nbt }
+                { type: 'ARMOR', item: 'naturesaura:sky_helmet', nbt: default_nbt },
+                { type: 'ARMOR', item: 'naturesaura:sky_chest', nbt: default_nbt },
+                { type: 'ARMOR', item: 'naturesaura:sky_pants', nbt: default_nbt },
+                { type: 'ARMOR', item: 'naturesaura:sky_shoes', nbt: default_nbt },
+                { type: 'SWORD', item: 'naturesaura:sky_sword', nbt: default_nbt },
+                { type: 'BREAKER', item: 'naturesaura:sky_shovel', nbt: default_nbt },
+                { type: 'BREAKER', item: 'naturesaura:sky_pickaxe', nbt: default_nbt },
+                { type: 'HEAVY_WEAPON', item: 'naturesaura:sky_axe', nbt: default_nbt }
             ],
             attributes: {
                 weight: 100,
                 quality: 5.0,
-                type: 'ARMOR',
                 dimensions: ['minecraft:the_end'],
                 min_rarity: 'rare',
                 max_rarity: 'mythic'
@@ -103,15 +61,15 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             stacks: [
-                { item: 'ars_elemental:air_hat', count: 1, nbt: default_nbt },
-                { item: 'ars_elemental:air_robes', count: 1, nbt: default_nbt },
-                { item: 'ars_elemental:air_leggings', count: 1, nbt: default_nbt },
-                { item: 'ars_elemental:air_boots', count: 1, nbt: default_nbt }
+                { type: 'ARMOR', item: 'ars_elemental:air_hat', nbt: default_nbt },
+                { type: 'ARMOR', item: 'ars_elemental:air_robes', nbt: default_nbt },
+                { type: 'ARMOR', item: 'ars_elemental:air_leggings', nbt: default_nbt },
+                { type: 'ARMOR', item: 'ars_elemental:air_boots', nbt: default_nbt },
+                { type: 'SWORD', item: 'ars_nouveau:enchanters_sword', nbt: default_nbt }
             ],
             attributes: {
                 weight: 70,
                 quality: 10.0,
-                type: 'ARMOR',
                 dimensions: ['minecraft:the_end'],
                 min_rarity: 'rare',
                 max_rarity: 'mythic'
@@ -144,6 +102,9 @@ ServerEvents.highPriorityData((event) => {
     equip_sets.forEach((equip_set) => {
         equip_set.stacks.forEach((stack) => {
             let recipe = Object.assign({}, { stack: stack }, equip_set.attributes);
+            if (recipe.stack.type) {
+                recipe.type = recipe.stack.type;
+            }
             recipes.push(recipe);
         });
     });
