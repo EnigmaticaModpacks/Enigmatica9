@@ -42,17 +42,33 @@ ServerEvents.highPriorityData((event) => {
     const equip_sets = [
         {
             stacks: [
-                { type: 'ARMOR', item: 'minecraft:netherite_helmet', nbt: default_nbt },
-                { type: 'ARMOR', item: 'minecraft:netherite_chestplate', nbt: default_nbt },
-                { type: 'ARMOR', item: 'minecraft:netherite_leggings', nbt: default_nbt },
-                { type: 'ARMOR', item: 'minecraft:netherite_boots', nbt: default_nbt },
-                { type: 'BREAKER', item: 'minecraft:netherite_sword', nbt: default_nbt },
-                { type: 'BREAKER', item: 'minecraft:netherite_shovel', nbt: default_nbt },
-                { type: 'SWORD', item: 'minecraft:netherite_pickaxe', nbt: default_nbt },
-                { type: 'HEAVY_WEAPON', item: 'minecraft:netherite_axe', nbt: default_nbt }
+                { type: 'ARMOR', item: 'minecraft:golden_helmet', nbt: default_nbt },
+                { type: 'ARMOR', item: 'minecraft:golden_chestplate', nbt: default_nbt },
+                { type: 'ARMOR', item: 'minecraft:golden_leggings', nbt: default_nbt },
+                { type: 'ARMOR', item: 'minecraft:golden_boots', nbt: default_nbt },
+                { type: 'SWORD', item: 'minecraft:golden_sword', nbt: default_nbt },
+                { type: 'BREAKER', item: 'minecraft:golden_shovel', nbt: default_nbt },
+                { type: 'BREAKER', item: 'minecraft:golden_pickaxe', nbt: default_nbt },
+                { type: 'HEAVY_WEAPON', item: 'minecraft:golden_axe', nbt: default_nbt }
             ],
             attributes: {
-                weight: 25,
+                weight: 100,
+                quality: 3.0,
+                dimensions: ['minecraft:the_nether'],
+                min_rarity: 'uncommon',
+                max_rarity: 'epic'
+            }
+        },
+        {
+            stacks: [
+                { type: 'ARMOR', item: 'ars_elemental:fire_hat', nbt: default_nbt },
+                { type: 'ARMOR', item: 'ars_elemental:fire_robes', nbt: default_nbt },
+                { type: 'ARMOR', item: 'ars_elemental:fire_leggings', nbt: default_nbt },
+                { type: 'ARMOR', item: 'ars_elemental:fire_boots', nbt: default_nbt },
+                { type: 'SWORD', item: 'ars_nouveau:enchanters_sword', nbt: default_nbt }
+            ],
+            attributes: {
+                weight: 40,
                 quality: 5.0,
                 dimensions: ['minecraft:the_nether'],
                 min_rarity: 'uncommon',
@@ -61,18 +77,18 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             stacks: [
-                { type: 'ARMOR', item: 'minecraft:golden_helmet', nbt: default_nbt },
-                { type: 'ARMOR', item: 'minecraft:golden_chestplate', nbt: default_nbt },
-                { type: 'ARMOR', item: 'minecraft:golden_leggings', nbt: default_nbt },
-                { type: 'ARMOR', item: 'minecraft:golden_boots', nbt: default_nbt },
-                { type: 'BREAKER', item: 'minecraft:golden_sword', nbt: default_nbt },
-                { type: 'BREAKER', item: 'minecraft:golden_shovel', nbt: default_nbt },
-                { type: 'SWORD', item: 'minecraft:golden_pickaxe', nbt: default_nbt },
-                { type: 'HEAVY_WEAPON', item: 'minecraft:golden_axe', nbt: default_nbt }
+                { type: 'ARMOR', item: 'minecraft:netherite_helmet', nbt: default_nbt },
+                { type: 'ARMOR', item: 'minecraft:netherite_chestplate', nbt: default_nbt },
+                { type: 'ARMOR', item: 'minecraft:netherite_leggings', nbt: default_nbt },
+                { type: 'ARMOR', item: 'minecraft:netherite_boots', nbt: default_nbt },
+                { type: 'SWORD', item: 'minecraft:netherite_sword', nbt: default_nbt },
+                { type: 'BREAKER', item: 'minecraft:netherite_shovel', nbt: default_nbt },
+                { type: 'BREAKER', item: 'minecraft:netherite_pickaxe', nbt: default_nbt },
+                { type: 'HEAVY_WEAPON', item: 'minecraft:netherite_axe', nbt: default_nbt }
             ],
             attributes: {
-                weight: 100,
-                quality: 3.0,
+                weight: 25,
+                quality: 7.0,
                 dimensions: ['minecraft:the_nether'],
                 min_rarity: 'uncommon',
                 max_rarity: 'epic'

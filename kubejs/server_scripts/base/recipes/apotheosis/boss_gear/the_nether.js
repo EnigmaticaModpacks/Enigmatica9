@@ -1,0 +1,127 @@
+ServerEvents.highPriorityData((event) => {
+    const id_prefix = 'apotheosis:boss_gear/the_nether/';
+    const recipes = [
+        {
+            name: 'gold',
+            weight: 120,
+            mainhands: [
+                { weight: 3, stack: { item: 'minecraft:golden_sword', nbt: default_nbt } },
+                { weight: 3, stack: { item: 'minecraft:golden_axe', nbt: default_nbt } },
+                { weight: 2, stack: { item: 'minecraft:golden_pickaxe', nbt: default_nbt } },
+                { weight: 2, stack: { item: 'minecraft:golden_shovel', nbt: default_nbt } }
+            ],
+            offhands: [{ weight: 1, stack: { item: 'minecraft:shield' } }],
+            boots: [{ weight: 1, stack: { item: 'minecraft:golden_boots', nbt: default_nbt } }],
+            leggings: [{ weight: 1, stack: { item: 'minecraft:golden_leggings', nbt: default_nbt } }],
+            chestplates: [{ weight: 1, stack: { item: 'minecraft:golden_chestplate', nbt: default_nbt } }],
+            helmets: [{ weight: 1, stack: { item: 'minecraft:golden_helmet', nbt: default_nbt } }],
+            tags: ['the_nether']
+        },
+        {
+            name: 'gold_bow',
+            weight: 120,
+            mainhands: [{ weight: 3, stack: { item: 'minecraft:bow' } }],
+            offhands: [
+                {
+                    weight: 25,
+                    stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"ars_nouveau:blasting_potion_strong"}' }
+                },
+                {
+                    weight: 25,
+                    stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"ars_nouveau:freezing_potion_strong"}' }
+                },
+                { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"minecraft:long_weakness"}' } },
+                { weight: 15, stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"minecraft:strong_sundering"}' } },
+                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"minecraft:strong_poison"}' } }
+            ],
+            boots: [{ weight: 1, stack: { item: 'minecraft:golden_boots', nbt: default_nbt } }],
+            leggings: [{ weight: 1, stack: { item: 'minecraft:golden_leggings', nbt: default_nbt } }],
+            chestplates: [{ weight: 1, stack: { item: 'minecraft:golden_chestplate', nbt: default_nbt } }],
+            helmets: [{ weight: 1, stack: { item: 'minecraft:golden_helmet', nbt: default_nbt } }],
+            tags: ['the_nether_bow']
+        },
+        {
+            name: 'fire',
+            weight: 40,
+            mainhands: [{ weight: 3, stack: { item: 'ars_nouveau:enchanters_sword', nbt: default_nbt } }],
+            offhands: [{ weight: 1, stack: { item: 'minecraft:totem_of_undying' } }],
+            boots: [{ weight: 1, stack: { item: 'ars_elemental:fire_boots', nbt: default_nbt } }],
+            leggings: [{ weight: 1, stack: { item: 'ars_elemental:fire_leggings', nbt: default_nbt } }],
+            chestplates: [{ weight: 1, stack: { item: 'ars_elemental:fire_robes', nbt: default_nbt } }],
+            helmets: [{ weight: 1, stack: { item: 'ars_elemental:fire_hat', nbt: default_nbt } }],
+            tags: ['the_nether']
+        },
+        {
+            name: 'fire_bow',
+            weight: 40,
+            mainhands: [{ weight: 3, stack: { item: 'minecraft:bow', nbt: default_nbt } }],
+            offhands: [
+                {
+                    weight: 25,
+                    stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"ars_nouveau:blasting_potion_strong"}' }
+                },
+                {
+                    weight: 25,
+                    stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"ars_nouveau:freezing_potion_strong"}' }
+                },
+                { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"minecraft:long_weakness"}' } },
+                { weight: 15, stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"minecraft:strong_sundering"}' } },
+                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"minecraft:strong_poison"}' } }
+            ],
+            boots: [{ weight: 1, stack: { item: 'ars_elemental:fire_boots', nbt: default_nbt } }],
+            leggings: [{ weight: 1, stack: { item: 'ars_elemental:fire_leggings', nbt: default_nbt } }],
+            chestplates: [{ weight: 1, stack: { item: 'ars_elemental:fire_robes', nbt: default_nbt } }],
+            helmets: [{ weight: 1, stack: { item: 'ars_elemental:fire_hat', nbt: default_nbt } }],
+            tags: ['the_nether_bow']
+        },
+        {
+            name: 'netherite',
+            weight: 20,
+            mainhands: [
+                { weight: 3, stack: { item: 'minecraft:netherite_sword', nbt: default_nbt } },
+                { weight: 3, stack: { item: 'minecraft:netherite_axe', nbt: default_nbt } },
+                { weight: 2, stack: { item: 'minecraft:netherite_pickaxe', nbt: default_nbt } },
+                { weight: 2, stack: { item: 'minecraft:netherite_shovel', nbt: default_nbt } }
+            ],
+            offhands: [{ weight: 1, stack: { item: 'minecraft:shield' } }],
+            boots: [{ weight: 1, stack: { item: 'minecraft:netherite_boots', nbt: default_nbt } }],
+            leggings: [{ weight: 1, stack: { item: 'minecraft:netherite_leggings', nbt: default_nbt } }],
+            chestplates: [{ weight: 1, stack: { item: 'minecraft:netherite_chestplate', nbt: default_nbt } }],
+            helmets: [{ weight: 1, stack: { item: 'minecraft:netherite_helmet', nbt: default_nbt } }],
+            tags: ['the_nether']
+        },
+        {
+            name: 'netherite_bow',
+            weight: 20,
+            mainhands: [{ weight: 3, stack: { item: 'minecraft:bow', nbt: default_nbt } }],
+            offhands: [
+                {
+                    weight: 25,
+                    stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"ars_nouveau:blasting_potion_strong"}' }
+                },
+                {
+                    weight: 25,
+                    stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"ars_nouveau:freezing_potion_strong"}' }
+                },
+                { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"minecraft:long_weakness"}' } },
+                { weight: 15, stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"minecraft:strong_sundering"}' } },
+                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"minecraft:strong_poison"}' } }
+            ],
+            boots: [{ weight: 1, stack: { item: 'minecraft:netherite_boots', nbt: default_nbt } }],
+            leggings: [{ weight: 1, stack: { item: 'minecraft:netherite_leggings', nbt: default_nbt } }],
+            chestplates: [{ weight: 1, stack: { item: 'minecraft:netherite_chestplate', nbt: default_nbt } }],
+            helmets: [{ weight: 1, stack: { item: 'minecraft:netherite_helmet', nbt: default_nbt } }],
+            tags: ['the_nether_bow']
+        }
+    ];
+
+    const disabled_recipes = [{ name: 'diamond' }, { name: 'diamond_bow' }];
+
+    disabled_recipes.forEach((recipe) => {
+        recipes.push({ name: recipe.name, conditions: [{ type: 'forge:false' }] });
+    });
+
+    recipes.forEach((recipe) => {
+        event.addJson(`${id_prefix}${recipe.name}.json`, recipe);
+    });
+});
