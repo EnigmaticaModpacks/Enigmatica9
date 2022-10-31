@@ -22,5 +22,7 @@ const tipped_arrow_nbt = {
     sundering_strong: '{Potion:"apotheosis:strong_sundering"}',
     poison: '{Potion:"minecraft:poison"}',
     poison_long: '{Potion:"minecraft:long_poison"}',
-    poison_strong: '{Potion:"minecraft:strong_poison"}'
+    poison_strong: '{Potion:"minecraft:strong_poison"}',
+    shock: '{Potion:"ars_elemental:shock_potion"}',
+    shock_long: '{Potion:"ars_elemental:shock_potion_long"}'
 };

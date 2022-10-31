@@ -26,7 +26,8 @@ ServerEvents.highPriorityData((event) => {
                 { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.freezing_strong } },
                 { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.weakness_long } },
                 { weight: 15, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.sundering_strong } },
-                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.poison_strong } }
+                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.poison_strong } },
+                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.shock_long } }
             ],
             boots: [{ weight: 1, stack: { item: 'blue_skies:pyrope_boots', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'blue_skies:pyrope_leggings', nbt: default_nbt } }],
@@ -59,7 +60,8 @@ ServerEvents.highPriorityData((event) => {
                 { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.freezing_strong } },
                 { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.weakness_long } },
                 { weight: 15, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.sundering_strong } },
-                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.poison_strong } }
+                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.poison_strong } },
+                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.shock_long } }
             ],
             boots: [{ weight: 1, stack: { item: 'blue_skies:aquite_boots', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'blue_skies:aquite_leggings', nbt: default_nbt } }],
@@ -92,7 +94,8 @@ ServerEvents.highPriorityData((event) => {
                 { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.freezing_strong } },
                 { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.weakness_long } },
                 { weight: 15, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.sundering_strong } },
-                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.poison_strong } }
+                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.poison_strong } },
+                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.shock_long } }
             ],
             boots: [{ weight: 1, stack: { item: 'blue_skies:diopside_boots', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'blue_skies:diopside_leggings', nbt: default_nbt } }],
@@ -125,12 +128,41 @@ ServerEvents.highPriorityData((event) => {
                 { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.freezing_strong } },
                 { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.weakness_long } },
                 { weight: 15, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.sundering_strong } },
-                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.poison_strong } }
+                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.poison_strong } },
+                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.shock_long } }
             ],
             boots: [{ weight: 1, stack: { item: 'blue_skies:charoite_boots', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'blue_skies:charoite_leggings', nbt: default_nbt } }],
             chestplates: [{ weight: 1, stack: { item: 'blue_skies:charoite_chestplate', nbt: default_nbt } }],
             helmets: [{ weight: 1, stack: { item: 'blue_skies:charoite_helmet', nbt: default_nbt } }],
+            tags: ['blue_skies_bow']
+        },
+        {
+            name: 'aqua',
+            weight: 40,
+            mainhands: [{ weight: 3, stack: { item: 'ars_nouveau:enchanters_sword', nbt: default_nbt } }],
+            offhands: [{ weight: 1, stack: { item: 'minecraft:totem_of_undying' } }],
+            boots: [{ weight: 1, stack: { item: 'ars_elemental:aqua_boots', nbt: default_nbt } }],
+            leggings: [{ weight: 1, stack: { item: 'ars_elemental:aqua_leggings', nbt: default_nbt } }],
+            chestplates: [{ weight: 1, stack: { item: 'ars_elemental:aqua_robes', nbt: default_nbt } }],
+            helmets: [{ weight: 1, stack: { item: 'ars_elemental:aqua_hat', nbt: default_nbt } }],
+            tags: ['blue_skies', 'blue_skies_mage']
+        },
+        {
+            name: 'aqua_bow',
+            weight: 40,
+            mainhands: [{ weight: 3, stack: { item: 'minecraft:bow', nbt: default_nbt } }],
+            offhands: [
+                { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.blasting_strong } },
+                { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.freezing_strong } },
+                { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.weakness_long } },
+                { weight: 15, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.sundering_strong } },
+                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.shock_long } }
+            ],
+            boots: [{ weight: 1, stack: { item: 'ars_elemental:aqua_boots', nbt: default_nbt } }],
+            leggings: [{ weight: 1, stack: { item: 'ars_elemental:aqua_leggings', nbt: default_nbt } }],
+            chestplates: [{ weight: 1, stack: { item: 'ars_elemental:aqua_robes', nbt: default_nbt } }],
+            helmets: [{ weight: 1, stack: { item: 'ars_elemental:aqua_hat', nbt: default_nbt } }],
             tags: ['blue_skies_bow']
         }
     ];

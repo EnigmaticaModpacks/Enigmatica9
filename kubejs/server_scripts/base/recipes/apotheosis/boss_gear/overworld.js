@@ -69,7 +69,7 @@ ServerEvents.highPriorityData((event) => {
                 { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.freezing_strong } },
                 { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.weakness_long } },
                 { weight: 15, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.sundering_strong } },
-                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.poison_strong } }
+                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.shock_long } }
             ],
             boots: [{ weight: 1, stack: { item: 'immersiveengineering:armor_steel_feet', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'immersiveengineering:armor_steel_legs', nbt: default_nbt } }],

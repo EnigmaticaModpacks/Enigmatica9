@@ -43,7 +43,7 @@ ServerEvents.highPriorityData((event) => {
             leggings: [{ weight: 1, stack: { item: 'ars_elemental:air_leggings', nbt: default_nbt } }],
             chestplates: [{ weight: 1, stack: { item: 'ars_elemental:air_robes', nbt: default_nbt } }],
             helmets: [{ weight: 1, stack: { item: 'ars_elemental:air_hat', nbt: default_nbt } }],
-            tags: ['the_end']
+            tags: ['the_end', 'the_end_mage']
         },
         {
             name: 'air_bow',
@@ -54,7 +54,7 @@ ServerEvents.highPriorityData((event) => {
                 { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.freezing_strong } },
                 { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.weakness_long } },
                 { weight: 15, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.sundering_strong } },
-                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.poison_strong } }
+                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.shock_long } }
             ],
             boots: [{ weight: 1, stack: { item: 'ars_elemental:air_boots', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'ars_elemental:air_leggings', nbt: default_nbt } }],

@@ -51,7 +51,7 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             entity: 'minecraft:husk',
-            weight: 75,
+            weight: 150,
             quality: 2,
             size: { width: 1, height: 2 },
             valid_gear_sets: ['#overworld'],
@@ -109,7 +109,7 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             entity: 'minecraft:skeleton',
-            weight: 100,
+            weight: 200,
             quality: 0,
             size: { width: 1, height: 2 },
             valid_gear_sets: ['#overworld_bow'],
@@ -167,7 +167,7 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             entity: 'minecraft:stray',
-            weight: 75,
+            weight: 150,
             quality: 2,
             size: { width: 1, height: 2 },
             valid_gear_sets: ['#overworld_bow'],
@@ -225,7 +225,7 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             entity: 'minecraft:vindicator',
-            weight: 45,
+            weight: 100,
             quality: 4,
             size: { width: 1, height: 2 },
             valid_gear_sets: ['#overworld'],
@@ -285,7 +285,7 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             entity: 'minecraft:witch',
-            weight: 45,
+            weight: 100,
             quality: 4,
             size: { width: 1, height: 2 },
             valid_gear_sets: ['#overworld'],
@@ -345,7 +345,7 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             entity: 'minecraft:zombie',
-            weight: 100,
+            weight: 200,
             quality: 0,
             size: { width: 1, height: 2 },
             valid_gear_sets: ['#overworld'],
@@ -403,28 +403,28 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             entity: 'ars_nouveau:wilden_hunter',
-            weight: 75,
+            weight: 33,
             quality: 2,
             size: { width: 1, height: 2 },
             valid_gear_sets: ['#overworld'],
             dimensions: ['minecraft:overworld'],
-            min_rarity: 'uncommon',
+            min_rarity: 'rare',
             max_rarity: 'rare',
             stats: {
-                uncommon: {
-                    enchant_chance: 0.25,
-                    enchantment_levels: [12, 8, 20, 14],
+                rare: {
+                    enchant_chance: 0.35,
+                    enchantment_levels: [15, 10, 23, 17],
                     effects: [{ effect: 'minecraft:fire_resistance', chance: 1 }],
                     attribute_modifiers: [
                         {
                             attribute: 'minecraft:generic.max_health',
                             operation: 'ADDITION',
-                            value: { min: 20, steps: 20, step: 2 }
+                            value: { min: 40, steps: 30, step: 2 }
                         },
                         {
                             attribute: 'minecraft:generic.movement_speed',
                             operation: 'MULTIPLY_BASE',
-                            value: { min: 0.05, steps: 5, step: 0.01 }
+                            value: { min: 0.1, steps: 8, step: 0.01 }
                         },
                         {
                             attribute: 'minecraft:generic.flying_speed',
@@ -434,11 +434,63 @@ ServerEvents.highPriorityData((event) => {
                         {
                             attribute: 'minecraft:generic.attack_damage',
                             operation: 'MULTIPLY_BASE',
-                            value: { min: 0.2, steps: 20, step: 0.01 }
+                            value: { min: 0.25, steps: 25, step: 0.01 }
                         },
-                        { attribute: 'minecraft:generic.knockback_resistance', operation: 'ADDITION', value: 0.3 }
+                        { attribute: 'minecraft:generic.knockback_resistance', operation: 'ADDITION', value: 0.4 }
                     ]
-                },
+                }
+            }
+        },
+        {
+            entity: 'ars_nouveau:wilden_guardian',
+            weight: 33,
+            quality: 2,
+            size: { width: 1, height: 2 },
+            valid_gear_sets: ['#overworld'],
+            dimensions: ['minecraft:overworld'],
+            min_rarity: 'rare',
+            max_rarity: 'rare',
+            stats: {
+                rare: {
+                    enchant_chance: 0.35,
+                    enchantment_levels: [15, 10, 23, 17],
+                    effects: [{ effect: 'minecraft:fire_resistance', chance: 1 }],
+                    attribute_modifiers: [
+                        {
+                            attribute: 'minecraft:generic.max_health',
+                            operation: 'ADDITION',
+                            value: { min: 40, steps: 30, step: 2 }
+                        },
+                        {
+                            attribute: 'minecraft:generic.movement_speed',
+                            operation: 'MULTIPLY_BASE',
+                            value: { min: 0.1, steps: 8, step: 0.01 }
+                        },
+                        {
+                            attribute: 'minecraft:generic.flying_speed',
+                            operation: 'MULTIPLY_BASE',
+                            value: { min: 0.45, steps: 10, step: 0.01 }
+                        },
+                        {
+                            attribute: 'minecraft:generic.attack_damage',
+                            operation: 'MULTIPLY_BASE',
+                            value: { min: 0.25, steps: 25, step: 0.01 }
+                        },
+                        { attribute: 'minecraft:generic.knockback_resistance', operation: 'ADDITION', value: 0.4 }
+                    ]
+                }
+            }
+        },
+        {
+            entity: 'ars_nouveau:wilden_stalker',
+            weight: 33,
+            quality: 2,
+            size: { width: 1, height: 2 },
+            valid_gear_sets: ['#overworld'],
+            dimensions: ['minecraft:overworld'],
+            min_rarity: 'rare',
+            max_rarity: 'rare',
+            stats: {
                 rare: {
                     enchant_chance: 0.35,
                     enchantment_levels: [15, 10, 23, 17],
@@ -476,6 +528,8 @@ ServerEvents.highPriorityData((event) => {
     disabled_recipes.forEach((recipe) => {
         recipes.push({ entity: recipe.entity, conditions: [{ type: 'forge:false' }] });
     });
+
+    printSpawnChances(recipes, 'overworld');
 
     recipes.forEach((recipe) => {
         event.addJson(`${id_prefix}${recipe.entity.split(':')[1]}.json`, recipe);

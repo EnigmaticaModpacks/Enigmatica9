@@ -260,3 +260,32 @@ function generateGatewayWave(entries, loot_per_mob, modifiers, max_wave_time, se
     });
     return wave;
 }
+
+function printSpawnChances(recipes, caller) {
+    // For use with Apotheosis Bosses scripts for checking spawn rates.
+    console.log(`==========${caller}==========`);
+    var spawn_total = [];
+    recipes.forEach((recipe) => {
+        if (recipe.weight) {
+            recipe.dimensions.forEach((dimension) => {
+                if (spawn_total[dimension]) {
+                    spawn_total[dimension] = spawn_total[dimension] + recipe.weight;
+                } else {
+                    spawn_total[dimension] = recipe.weight;
+                }
+            });
+        }
+    });
+
+    recipes.forEach((recipe) => {
+        if (recipe.weight) {
+            recipe.dimensions.forEach((dimension) => {
+                console.log(
+                    `Entity: ${recipe.entity.split(':')[1]}, Dimension: ${dimension.split(':')[1]}, Weight: ${
+                        recipe.weight
+                    }, Spawn Chance: ${100 * (recipe.weight / spawn_total[dimension])}%`
+                );
+            });
+        }
+    });
+}
