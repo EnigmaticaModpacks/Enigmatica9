@@ -2,7 +2,7 @@ ServerEvents.highPriorityData((event) => {
     const id_prefix = 'apotheosis:boss_gear/the_bumblezone/';
     const recipes = [
         {
-            name: 'pyrope',
+            name: 'bee',
             weight: 100,
             mainhands: [
                 { weight: 3, stack: { item: 'minecraft:gold_sword', nbt: default_nbt } },
@@ -32,7 +32,7 @@ ServerEvents.highPriorityData((event) => {
             tags: ['the_bumblezone']
         },
         {
-            name: 'pyrope_bow',
+            name: 'bee_bow',
             weight: 100,
             mainhands: [{ weight: 3, stack: { item: 'minecraft:bow', nbt: default_nbt } }],
             offhands: [
