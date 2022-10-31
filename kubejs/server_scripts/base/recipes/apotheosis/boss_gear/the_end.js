@@ -22,17 +22,11 @@ ServerEvents.highPriorityData((event) => {
             weight: 70,
             mainhands: [{ weight: 3, stack: { item: 'minecraft:bow', nbt: default_nbt } }],
             offhands: [
-                {
-                    weight: 25,
-                    stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"ars_nouveau:blasting_potion_strong"}' }
-                },
-                {
-                    weight: 25,
-                    stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"ars_nouveau:freezing_potion_strong"}' }
-                },
-                { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"minecraft:long_weakness"}' } },
-                { weight: 15, stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"minecraft:strong_sundering"}' } },
-                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"minecraft:strong_poison"}' } }
+                { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.blasting_strong } },
+                { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.freezing_strong } },
+                { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.weakness_long } },
+                { weight: 15, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.sundering_strong } },
+                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.poison_strong } }
             ],
             boots: [{ weight: 1, stack: { item: 'naturesaura:sky_shoes', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'naturesaura:sky_pants', nbt: default_nbt } }],
@@ -56,17 +50,11 @@ ServerEvents.highPriorityData((event) => {
             weight: 40,
             mainhands: [{ weight: 3, stack: { item: 'minecraft:bow', nbt: default_nbt } }],
             offhands: [
-                {
-                    weight: 25,
-                    stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"ars_nouveau:blasting_potion_strong"}' }
-                },
-                {
-                    weight: 25,
-                    stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"ars_nouveau:freezing_potion_strong"}' }
-                },
-                { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"minecraft:long_weakness"}' } },
-                { weight: 15, stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"minecraft:strong_sundering"}' } },
-                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: '{Potion:"minecraft:strong_poison"}' } }
+                { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.blasting_strong } },
+                { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.freezing_strong } },
+                { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.weakness_long } },
+                { weight: 15, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.sundering_strong } },
+                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.poison_strong } }
             ],
             boots: [{ weight: 1, stack: { item: 'ars_elemental:air_boots', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'ars_elemental:air_leggings', nbt: default_nbt } }],

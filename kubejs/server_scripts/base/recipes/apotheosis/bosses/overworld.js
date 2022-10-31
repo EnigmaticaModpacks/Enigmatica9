@@ -474,7 +474,7 @@ ServerEvents.highPriorityData((event) => {
     const disabled_recipes = [{ entity: 'minecraft:bee' }];
 
     disabled_recipes.forEach((recipe) => {
-        recipes.push({ name: recipe.entity, conditions: [{ type: 'forge:false' }] });
+        recipes.push({ entity: recipe.entity, conditions: [{ type: 'forge:false' }] });
     });
 
     recipes.forEach((recipe) => {
