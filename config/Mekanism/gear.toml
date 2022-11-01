@@ -17,16 +17,19 @@
 		fastMode = true
 		#Enable the 'Vein Mining' mode for the Atomic Disassembler.
 		veinMining = false
-		#The amount of damage the Atomic Disassembler does when it is out of power. (Value is in number of half hearts)
+		#The bonus attack damage of the Atomic Disassembler when it is out of power. (Value is in number of half hearts)
 		#Range: 0 ~ 1000
 		minDamage = 4
-		#The amount of damage the Atomic Disassembler does when it has at least energyUsageWeapon power stored. (Value is in number of half hearts)
+		#The bonus attack damage of the Atomic Disassembler when it has at least energyUsageWeapon power stored. (Value is in number of half hearts)
 		#Range: 1 ~ 10000
 		maxDamage = 20
 		#Maximum amount (joules) of energy the Atomic Disassembler can contain.
 		maxEnergy = "1000000"
 		#Amount (joules) of energy the Atomic Disassembler can accept per tick.
 		chargeRate = "5000"
+		#Attack speed of the Atomic Disassembler.
+		#Range: -4.0 ~ 100.0
+		attackSpeed = -2.4
 
 	#Configurator Settings
 	[gear.configurator]
@@ -172,7 +175,7 @@
 		#Maximum distance a player can teleport with the Meka-Tool.
 		#Range: 2 ~ 1024
 		maxTeleportReach = 100
-		#Base damage applied by the Meka-Tool without using any energy.
+		#Base bonus damage applied by the Meka-Tool without using any energy.
 		#Range: 0 ~ 100000
 		baseDamage = 4
 		#Efficiency of the Meka-Tool with energy but without any upgrades.
@@ -192,6 +195,9 @@
 		energyUsageShearEntity = "10"
 		#Enable the 'Extended Vein Mining' mode for the Meka-Tool. (Allows vein mining everything not just ores/logs)
 		extendedMining = true
+		#Attack speed of the Meka-Tool.
+		#Range: -4.0 ~ 100.0
+		attackSpeed = -2.4
 
 	#MekaSuit Settings
 	[gear.mekasuit]
