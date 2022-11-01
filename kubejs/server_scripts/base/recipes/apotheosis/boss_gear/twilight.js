@@ -9,7 +9,7 @@ ServerEvents.highPriorityData((event) => {
                 { weight: 3, stack: { item: 'twilightforest:knightmetal_axe', nbt: default_nbt } },
                 { weight: 2, stack: { item: 'twilightforest:knightmetal_pickaxe', nbt: default_nbt } }
             ],
-            offhands: [{ weight: 1, stack: { item: 'minecraft:shield' } }],
+            offhands: all_shield_designs,
             boots: [{ weight: 1, stack: { item: 'twilightforest:arctic_boots', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'twilightforest:arctic_leggings', nbt: default_nbt } }],
             chestplates: [{ weight: 1, stack: { item: 'twilightforest:arctic_chestplate', nbt: default_nbt } }],
@@ -41,7 +41,7 @@ ServerEvents.highPriorityData((event) => {
                 { weight: 3, stack: { item: 'twilightforest:fiery_sword', nbt: default_nbt } },
                 { weight: 2, stack: { item: 'twilightforest:fiery_pickaxe', nbt: default_nbt } }
             ],
-            offhands: [{ weight: 1, stack: { item: 'minecraft:shield' } }],
+            offhands: all_shield_designs,
             boots: [{ weight: 1, stack: { item: 'twilightforest:fiery_boots', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'twilightforest:fiery_leggings', nbt: default_nbt } }],
             chestplates: [{ weight: 1, stack: { item: 'twilightforest:fiery_chestplate', nbt: default_nbt } }],
@@ -75,7 +75,7 @@ ServerEvents.highPriorityData((event) => {
                 { weight: 2, stack: { item: 'twilightforest:ironwood_pickaxe', nbt: default_nbt } },
                 { weight: 2, stack: { item: 'twilightforest:ironwood_shovel', nbt: default_nbt } }
             ],
-            offhands: [{ weight: 1, stack: { item: 'minecraft:shield' } }],
+            offhands: all_shield_designs,
             boots: [{ weight: 1, stack: { item: 'twilightforest:ironwood_boots', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'twilightforest:ironwood_leggings', nbt: default_nbt } }],
             chestplates: [{ weight: 1, stack: { item: 'twilightforest:ironwood_chestplate', nbt: default_nbt } }],
@@ -142,7 +142,7 @@ ServerEvents.highPriorityData((event) => {
                 { weight: 2, stack: { item: 'twilightforest:steeleaf_pickaxe', nbt: default_nbt } },
                 { weight: 2, stack: { item: 'twilightforest:steeleaf_shovel', nbt: default_nbt } }
             ],
-            offhands: [{ weight: 1, stack: { item: 'minecraft:shield' } }],
+            offhands: all_shield_designs,
             boots: [{ weight: 1, stack: { item: 'twilightforest:steeleaf_boots', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'twilightforest:steeleaf_leggings', nbt: default_nbt } }],
             chestplates: [{ weight: 1, stack: { item: 'twilightforest:steeleaf_chestplate', nbt: default_nbt } }],

@@ -11,7 +11,7 @@ ServerEvents.highPriorityData((event) => {
                 { weight: 2, stack: { item: 'minecraft:iron_pickaxe', nbt: default_nbt } },
                 { weight: 2, stack: { item: 'minecraft:iron_shovel', nbt: default_nbt } }
             ],
-            offhands: [{ weight: 1, stack: { item: 'minecraft:shield', nbt: shield_nbt.dark_knight } }],
+            offhands: all_shield_designs,
             boots: [{ weight: 1, stack: { item: 'minecraft:chainmail_boots', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'minecraft:chainmail_leggings', nbt: default_nbt } }],
             chestplates: [{ weight: 1, stack: { item: 'minecraft:chainmail_chestplate', nbt: default_nbt } }],

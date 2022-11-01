@@ -10,7 +10,7 @@ ServerEvents.highPriorityData((event) => {
                 { weight: 2, stack: { item: 'minecraft:golden_pickaxe', nbt: default_nbt } },
                 { weight: 2, stack: { item: 'minecraft:golden_shovel', nbt: default_nbt } }
             ],
-            offhands: [{ weight: 1, stack: { item: 'minecraft:shield' } }],
+            offhands: all_shield_designs,
             boots: [{ weight: 1, stack: { item: 'minecraft:golden_boots', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'minecraft:golden_leggings', nbt: default_nbt } }],
             chestplates: [{ weight: 1, stack: { item: 'minecraft:golden_chestplate', nbt: default_nbt } }],
@@ -73,7 +73,7 @@ ServerEvents.highPriorityData((event) => {
                 { weight: 2, stack: { item: 'minecraft:netherite_pickaxe', nbt: default_nbt } },
                 { weight: 2, stack: { item: 'minecraft:netherite_shovel', nbt: default_nbt } }
             ],
-            offhands: [{ weight: 1, stack: { item: 'minecraft:shield' } }],
+            offhands: all_shield_designs,
             boots: [{ weight: 1, stack: { item: 'minecraft:netherite_boots', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'minecraft:netherite_leggings', nbt: default_nbt } }],
             chestplates: [{ weight: 1, stack: { item: 'minecraft:netherite_chestplate', nbt: default_nbt } }],

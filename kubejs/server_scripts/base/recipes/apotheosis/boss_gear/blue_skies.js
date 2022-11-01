@@ -10,7 +10,7 @@ ServerEvents.highPriorityData((event) => {
                 { weight: 2, stack: { item: 'blue_skies:pyrope_pickaxe', nbt: default_nbt } },
                 { weight: 2, stack: { item: 'blue_skies:pyrope_shovel', nbt: default_nbt } }
             ],
-            offhands: [{ weight: 1, stack: { item: 'minecraft:shield' } }],
+            offhands: all_shield_designs,
             boots: [{ weight: 1, stack: { item: 'blue_skies:pyrope_boots', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'blue_skies:pyrope_leggings', nbt: default_nbt } }],
             chestplates: [{ weight: 1, stack: { item: 'blue_skies:pyrope_chestplate', nbt: default_nbt } }],
@@ -44,7 +44,7 @@ ServerEvents.highPriorityData((event) => {
                 { weight: 2, stack: { item: 'blue_skies:aquite_pickaxe', nbt: default_nbt } },
                 { weight: 2, stack: { item: 'blue_skies:aquite_shovel', nbt: default_nbt } }
             ],
-            offhands: [{ weight: 1, stack: { item: 'minecraft:shield' } }],
+            offhands: all_shield_designs,
             boots: [{ weight: 1, stack: { item: 'blue_skies:aquite_boots', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'blue_skies:aquite_leggings', nbt: default_nbt } }],
             chestplates: [{ weight: 1, stack: { item: 'blue_skies:aquite_chestplate', nbt: default_nbt } }],
@@ -78,7 +78,7 @@ ServerEvents.highPriorityData((event) => {
                 { weight: 2, stack: { item: 'blue_skies:diopside_pickaxe', nbt: default_nbt } },
                 { weight: 2, stack: { item: 'blue_skies:diopside_shovel', nbt: default_nbt } }
             ],
-            offhands: [{ weight: 1, stack: { item: 'minecraft:shield' } }],
+            offhands: all_shield_designs,
             boots: [{ weight: 1, stack: { item: 'blue_skies:diopside_boots', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'blue_skies:diopside_leggings', nbt: default_nbt } }],
             chestplates: [{ weight: 1, stack: { item: 'blue_skies:diopside_chestplate', nbt: default_nbt } }],
@@ -112,7 +112,7 @@ ServerEvents.highPriorityData((event) => {
                 { weight: 2, stack: { item: 'blue_skies:charoite_pickaxe', nbt: default_nbt } },
                 { weight: 2, stack: { item: 'blue_skies:charoite_shovel', nbt: default_nbt } }
             ],
-            offhands: [{ weight: 1, stack: { item: 'minecraft:shield' } }],
+            offhands: all_shield_designs,
             boots: [{ weight: 1, stack: { item: 'blue_skies:charoite_boots', nbt: default_nbt } }],
             leggings: [{ weight: 1, stack: { item: 'blue_skies:charoite_leggings', nbt: default_nbt } }],
             chestplates: [{ weight: 1, stack: { item: 'blue_skies:charoite_chestplate', nbt: default_nbt } }],
