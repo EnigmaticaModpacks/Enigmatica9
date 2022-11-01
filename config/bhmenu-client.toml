@@ -4,7 +4,7 @@ title = "Need a server?"
 description = "Click me to get your own server!"
 #The id of this modpack.
 #(This is BH internal pack id; Find the id here: https://www.bisecthosting.com/partners/console.php)
-pack_id = "17658"
+pack_id = "18267"
 #Set this to true to use specific language translation keys.
 #This requires a custom mod that adds resource files, such as OpenLoader.
 #Use 'server_entry.title' key for the Title;

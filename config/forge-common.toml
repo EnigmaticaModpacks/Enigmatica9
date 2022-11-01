@@ -1,10 +1,10 @@
 
-#General configuration settings
+#[DEPRECATED / NO EFFECT]: General configuration settings
 [general]
-	#Set this to true to cache resource listings in resource and data packs
+	#[DEPRECATED / NO EFFECT] [NOW IN RESOURCE-CACHING CONFIG]: Set this to true to cache resource listings in resource and data packs
 	cachePackAccess = true
-	#Set this to true to index vanilla resource and data packs on thread
+	#[DEPRECATED / NO EFFECT] [NOW IN RESOURCE-CACHING CONFIG]: Set this to true to index vanilla resource and data packs on thread
 	indexVanillaPackCachesOnThread = false
-	#Set this to true to index mod resource and data packs on thread
+	#[DEPRECATED / NO EFFECT] [NOW IN RESOURCE-CACHING CONFIG]: Set this to true to index mod resource and data packs on thread
 	indexModPackCachesOnThread = false
 

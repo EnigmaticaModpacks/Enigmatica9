@@ -108,3 +108,11 @@
 		#
 		allowFriendsAndFoesBeekeeperTradesCompat = true
 
+	["Mod Compatibility Options"."Quark Options"]
+		# 
+		#-----------------------------------------------------
+		#
+		# Adds Bumblezone items symbols to Quark's enchantment tooltips!
+		#
+		injectBzItemsIntoQuarkEnchantmentTooltipsCompat = true
+
