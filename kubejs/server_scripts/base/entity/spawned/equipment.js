@@ -2,9 +2,23 @@ EntityEvents.spawned((event) => {
     if (!event.entity.isLiving()) {
         return;
     }
+    // Ignore Apotheosis bosses
+    let entity_data = event.entity.fullNBT;
+    if (entity_data.hasOwnProperty('ForgeData')) {
+        if (entity_data.ForgeData.hasOwnProperty('apoth.boss')) {
+            // console.log('Apotheosis Boss!');
+            return;
+        }
+    }
 
     let mob_type = event.entity.type.split(':')[1];
     let mod_id = event.entity.type.split(':')[0];
+    // Get Dimension
+    let mob_dimension = String(event.level.getDimension());
+    // Get Coordinates
+    let x_coord = event.entity.x;
+    let y_coord = event.entity.y;
+    let z_coord = event.entity.z;
 
     if (Object.keys(armored_mobs).includes(mod_id)) {
         if (Object.keys(armored_mobs[mod_id]).includes(mob_type)) {
@@ -66,6 +80,27 @@ EntityEvents.spawned((event) => {
             if (equipment_set.max_health) {
                 event.entity.maxHealth = equipment_set.max_health;
                 event.entity.health = equipment_set.max_health;
+            }
+
+            // Optional Extra Spawns
+            if (equipment_set.summons) {
+                equipment_set.summons.forEach((summon) => {
+                    let spawn_count = randomInt(summon.count.min, summon.count.max);
+                    let spread = summon.spread;
+
+                    // Summon desired number of entities
+                    for (let i = 0; i < spawn_count; i++) {
+                        let x = randomFloat(x_coord, spread);
+                        let y = y_coord;
+                        let z = randomFloat(z_coord, spread);
+                        let command = `/execute in ${mob_dimension} run summon ${summon.mob} ${x} ${y} ${z}`;
+                        // console.log(command);
+                        event.server.runCommandSilent(command);
+                        event.server.runCommandSilent(
+                            `/execute in ${mob_dimension} run particle minecraft:explosion_emitter ${x} ${y} ${z}`
+                        );
+                    }
+                });
             }
         }
     }

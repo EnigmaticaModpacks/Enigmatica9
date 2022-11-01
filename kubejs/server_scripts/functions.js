@@ -130,14 +130,40 @@ function generatePool(table, loot_table) {
             });
         }
 
-        loot_table.loot_items.forEach((loot_item) => {
-            pool.addItem(Item.of(loot_item.item), loot_item.weight);
-        });
+        if (loot_table.loot_items) {
+            loot_table.loot_items.forEach((loot_item) => {
+                pool.addItem(Item.of(loot_item.item), loot_item.weight);
+            });
+        }
+
+        if (loot_table.generic_entries) {
+            loot_table.generic_entries.forEach((generic_entry) => {
+                pool.addEntry(generic_entry);
+            });
+        }
     });
 }
 
-function addEntityTable(event, entity, loot_table) {
+function addEntityLootTable(event, entity, loot_table) {
+    event.addEntity(entity, (table) => {
+        generatePool(table, loot_table);
+    });
+}
+
+function modifyEntityLootTable(event, entity, loot_table) {
     event.modifyEntity(entity, (table) => {
+        generatePool(table, loot_table);
+    });
+}
+
+function modifyLootTable(event, loot_id, loot_table) {
+    event.modify(loot_id, (table) => {
+        generatePool(table, loot_table);
+    });
+}
+
+function addLootTable(event, loot_id, loot_table) {
+    event.add(loot_id, (table) => {
         generatePool(table, loot_table);
     });
 }
@@ -197,4 +223,69 @@ function getItemsInTag(tag) {
     });
 
     return out_items;
+}
+
+function toTitleCase(str) {
+    return str.replace(/\w\S*/g, function (txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+}
+
+function generateGatewayWave(entries, loot_per_mob, modifiers, max_wave_time, setup_time) {
+    let wave = { entities: [], rewards: [], max_wave_time: max_wave_time, setup_time: setup_time };
+
+    // Set modifiers if present
+    if (modifiers !== 'none') {
+        wave.modifiers = modifiers;
+    }
+
+    // build entities and rewards arrays
+    entries.forEach((entry) => {
+        wave.entities.push({ entity: entry.entity, nbt: entry.nbt });
+
+        let index = wave.rewards.findIndex((reward) => reward.entity === entry.entity);
+        // Increment existing entries or create if new
+        if (index >= 0) {
+            wave.rewards[index].rolls = wave.rewards[index].rolls + loot_per_mob;
+        } else {
+            // Slimes and Magma Cubes need special NBT to drop loots.
+            if (entry.entity == 'minecraft:slime') {
+                entry.nbt = '{"Size": 0}';
+            }
+            if (entry.entity == 'minecraft:magma_cube') {
+                entry.nbt = '{"Size": 1}';
+            }
+            wave.rewards.push({ type: 'entity_loot', entity: entry.entity, nbt: entry.nbt, rolls: loot_per_mob });
+        }
+    });
+    return wave;
+}
+
+function printSpawnChances(recipes, caller) {
+    // For use with Apotheosis Bosses scripts for checking spawn rates.
+    console.log(`==========${caller}==========`);
+    var spawn_total = [];
+    recipes.forEach((recipe) => {
+        if (recipe.weight) {
+            recipe.dimensions.forEach((dimension) => {
+                if (spawn_total[dimension]) {
+                    spawn_total[dimension] = spawn_total[dimension] + recipe.weight;
+                } else {
+                    spawn_total[dimension] = recipe.weight;
+                }
+            });
+        }
+    });
+
+    recipes.forEach((recipe) => {
+        if (recipe.weight) {
+            recipe.dimensions.forEach((dimension) => {
+                console.log(
+                    `Entity: ${recipe.entity.split(':')[1]}, Dimension: ${dimension.split(':')[1]}, Weight: ${
+                        recipe.weight
+                    }, Spawn Chance: ${100 * (recipe.weight / spawn_total[dimension])}%`
+                );
+            });
+        }
+    });
 }

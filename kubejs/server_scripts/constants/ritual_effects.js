@@ -92,5 +92,8 @@ const ritual_effects = {
                 }
             ]
         }
+    },
+    gate_pearl: {
+        gateway: true
     }
 };

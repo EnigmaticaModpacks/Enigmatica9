@@ -20,7 +20,8 @@ ServerEvents.recipes((event) => {
         { id: 'quark:tweaks/smelting/bone_meal_utility' },
         { type: 'immersiveengineering:sawmill' },
         { type: 'create:cutting' },
-        { type: 'immersiveengineering:cloche' }
+        { type: 'immersiveengineering:cloche' },
+        { mod: 'gateways' }
     ];
 
     colors.forEach((color) => {
