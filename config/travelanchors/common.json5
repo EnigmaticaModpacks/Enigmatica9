@@ -1,9 +1,13 @@
 {
-    // The maximum angle you can look at the Travel Anchor to teleport.
-    // Minimum: 1.0
-    max_angle: 5.0,
-
-    // The maximum distance you are allowed to teleport.
-    // Minimum: 1.0
-    max_distance: 100
+  // The maximum angle you can look at the Travel Anchor to teleport.
+  // Minimum: 1.0
+  "max_angle": 5,
+  
+  // The maximum distance you are allowed to teleport.
+  // Minimum: 1.0
+  "max_distance": 100,
+  
+  // The maximum distance you can short-range teleport with shift-click.
+  // Range: 2.0 - 15.0
+  "max_short_tp_distance": 7
 }
