@@ -69,10 +69,7 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
-                        mainhand: Item.of(
-                            'twilightforest:glass_sword',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        )
+                        mainhand: Item.of('twilightforest:glass_sword', default_nbt)
                     }
                 }
             ]
@@ -90,20 +87,11 @@ const armored_mobs = {
                         },
                         chest: Item.of(
                             'minecraft:leather_chestplate',
-                            '{display:{color:1908001},"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
+                            `{display:{color:1908001},${enchant_glint.blank}}`
                         ),
-                        legs: Item.of(
-                            'minecraft:leather_leggings',
-                            '{display:{color:1908001},"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        feet: Item.of(
-                            'minecraft:leather_boots',
-                            '{display:{color:1908001},"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        mainhand: Item.of(
-                            'twilightforest:knightmetal_axe',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        )
+                        legs: Item.of('minecraft:leather_leggings', `{display:{color:1908001},${enchant_glint.blank}}`),
+                        feet: Item.of('minecraft:leather_boots', `{display:{color:1908001},${enchant_glint.blank}}`),
+                        mainhand: Item.of('twilightforest:knightmetal_axe', default_nbt)
                     }
                 }
             ]
@@ -121,20 +109,11 @@ const armored_mobs = {
                         },
                         chest: Item.of(
                             'minecraft:leather_chestplate',
-                            '{display:{color:1908001},"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
+                            `{display:{color:1908001},${enchant_glint.blank}}`
                         ),
-                        legs: Item.of(
-                            'minecraft:leather_leggings',
-                            '{display:{color:1908001},"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        feet: Item.of(
-                            'minecraft:leather_boots',
-                            '{display:{color:1908001},"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        mainhand: Item.of(
-                            'minecraft:crossbow',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ).enchant('minecraft:multishot', 1)
+                        legs: Item.of('minecraft:leather_leggings', `{display:{color:1908001},${enchant_glint.blank}}`),
+                        feet: Item.of('minecraft:leather_boots', `{display:{color:1908001},${enchant_glint.blank}}`),
+                        mainhand: Item.of('minecraft:crossbow', default_nbt).enchant('minecraft:multishot', 1)
                     }
                 }
             ]
@@ -150,14 +129,8 @@ const armored_mobs = {
                             level: { min: 20, max: 25 },
                             treasure: false
                         },
-                        chest: Item.of(
-                            'minecraft:golden_chestplate',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        mainhand: Item.of(
-                            'twilightforest:gold_minotaur_axe',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        )
+                        chest: Item.of('minecraft:golden_chestplate', default_nbt),
+                        mainhand: Item.of('twilightforest:gold_minotaur_axe', default_nbt)
                     }
                 },
                 {
@@ -169,14 +142,8 @@ const armored_mobs = {
                             level: { min: 20, max: 25 },
                             treasure: false
                         },
-                        chest: Item.of(
-                            'minecraft:golden_chestplate',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        mainhand: Item.of(
-                            'minecraft:crossbow',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ).enchant('minecraft:multishot', 1)
+                        chest: Item.of('minecraft:golden_chestplate', default_nbt),
+                        mainhand: Item.of('minecraft:crossbow', default_nbt).enchant('minecraft:multishot', 1)
                     }
                 }
             ]
@@ -193,26 +160,11 @@ const armored_mobs = {
                             level: { min: 20, max: 25 },
                             treasure: false
                         },
-                        head: Item.of(
-                            'minecraft:golden_helmet',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        chest: Item.of(
-                            'minecraft:golden_chestplate',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        legs: Item.of(
-                            'minecraft:golden_leggings',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        feet: Item.of(
-                            'minecraft:golden_boots',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        mainhand: Item.of(
-                            'twilightforest:gold_minotaur_axe',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        )
+                        head: Item.of('minecraft:golden_helmet', default_nbt),
+                        chest: Item.of('minecraft:golden_chestplate', default_nbt),
+                        legs: Item.of('minecraft:golden_leggings', default_nbt),
+                        feet: Item.of('minecraft:golden_boots', default_nbt),
+                        mainhand: Item.of('twilightforest:gold_minotaur_axe', default_nbt)
                     }
                 }
             ]
@@ -237,30 +189,12 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
-                        head: Item.of(
-                            'twilightforest:knightmetal_helmet',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        chest: Item.of(
-                            'twilightforest:knightmetal_chestplate',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        legs: Item.of(
-                            'twilightforest:knightmetal_leggings',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        feet: Item.of(
-                            'twilightforest:knightmetal_boots',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        mainhand: Item.of(
-                            'twilightforest:knightmetal_sword',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        offhand: Item.of(
-                            'twilightforest:knightmetal_shield',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        )
+                        head: Item.of('twilightforest:knightmetal_helmet', default_nbt),
+                        chest: Item.of('twilightforest:knightmetal_chestplate', default_nbt),
+                        legs: Item.of('twilightforest:knightmetal_leggings', default_nbt),
+                        feet: Item.of('twilightforest:knightmetal_boots', default_nbt),
+                        mainhand: Item.of('twilightforest:knightmetal_sword', default_nbt),
+                        offhand: Item.of('twilightforest:knightmetal_shield', default_nbt)
                     }
                 },
                 {
@@ -273,11 +207,8 @@ const armored_mobs = {
                             level: { min: 10, max: 30 },
                             treasure: false
                         },
-                        mainhand: Item.of(
-                            'minecraft:bow',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        offhand: Item.of('minecraft:tipped_arrow', '{Potion:"minecraft:harming"}')
+                        mainhand: Item.of('minecraft:bow', default_nbt),
+                        offhand: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.harming)
                     }
                 },
                 {
@@ -290,11 +221,8 @@ const armored_mobs = {
                             level: { min: 10, max: 30 },
                             treasure: false
                         },
-                        mainhand: Item.of(
-                            'minecraft:bow',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        offhand: Item.of('minecraft:tipped_arrow', '{Potion:"ars_nouveau:blasting_potion"}')
+                        mainhand: Item.of('minecraft:bow', default_nbt),
+                        offhand: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.blasting)
                     }
                 },
                 {
@@ -307,11 +235,8 @@ const armored_mobs = {
                             level: { min: 10, max: 30 },
                             treasure: false
                         },
-                        mainhand: Item.of(
-                            'minecraft:bow',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        offhand: Item.of('minecraft:tipped_arrow', '{Potion:"apotheosis:sundering"}')
+                        mainhand: Item.of('minecraft:bow', default_nbt),
+                        offhand: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.sundering)
                     }
                 }
             ]
@@ -326,10 +251,7 @@ const armored_mobs = {
                             level: { min: 10, max: 30 },
                             treasure: false
                         },
-                        mainhand: Item.of(
-                            'immersiveengineering:sword_steel',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        )
+                        mainhand: Item.of('immersiveengineering:sword_steel', default_nbt)
                     }
                 },
                 {
@@ -347,30 +269,12 @@ const armored_mobs = {
                             level: { min: 20, max: 30 },
                             treasure: false
                         },
-                        head: Item.of(
-                            'pneumaticcraft:compressed_iron_helmet',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        chest: Item.of(
-                            'pneumaticcraft:compressed_iron_chestplate',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        legs: Item.of(
-                            'pneumaticcraft:compressed_iron_leggings',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        feet: Item.of(
-                            'pneumaticcraft:compressed_iron_boots',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        mainhand: Item.of(
-                            'twilightforest:fiery_sword',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        offhand: Item.of(
-                            'blue_skies:spike_shield',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        )
+                        head: Item.of('pneumaticcraft:compressed_iron_helmet', default_nbt),
+                        chest: Item.of('pneumaticcraft:compressed_iron_chestplate', default_nbt),
+                        legs: Item.of('pneumaticcraft:compressed_iron_leggings', default_nbt),
+                        feet: Item.of('pneumaticcraft:compressed_iron_boots', default_nbt),
+                        mainhand: Item.of('twilightforest:fiery_sword', default_nbt),
+                        offhand: Item.of('blue_skies:spike_shield', default_nbt)
                     }
                 },
                 {
@@ -383,26 +287,14 @@ const armored_mobs = {
                             level: { min: 10, max: 30 },
                             treasure: false
                         },
-                        head: Item.of(
-                            'minecraft:leather_helmet',
-                            '{display:{color:1908001},"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
+                        head: Item.of('minecraft:leather_helmet', `{display:{color:1908001},${enchant_glint.blank}}`),
                         chest: Item.of(
                             'minecraft:leather_chestplate',
-                            '{display:{color:1908001},"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
+                            `{display:{color:1908001},${enchant_glint.blank}}`
                         ),
-                        legs: Item.of(
-                            'minecraft:leather_leggings',
-                            '{display:{color:1908001},"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        feet: Item.of(
-                            'minecraft:leather_boots',
-                            '{display:{color:1908001},"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        mainhand: Item.of(
-                            'minecraft:bow',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
+                        legs: Item.of('minecraft:leather_leggings', `{display:{color:1908001},${enchant_glint.blank}}`),
+                        feet: Item.of('minecraft:leather_boots', `{display:{color:1908001},${enchant_glint.blank}}`),
+                        mainhand: Item.of('minecraft:bow', default_nbt),
                         offhand: Item.of('minecraft:tipped_arrow', '{Potion:"apotheosis:long_wither"}')
                     }
                 }
@@ -413,7 +305,7 @@ const armored_mobs = {
                 {
                     weight: 40,
                     set: {
-                        offhand: Item.of('minecraft:tipped_arrow', '{Potion:"ars_nouveau:freezing_potion"}')
+                        offhand: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.freezing)
                     }
                 },
                 {
@@ -430,27 +322,12 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
-                        head: Item.of(
-                            'twilightforest:yeti_helmet',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:blue_rune"}}'
-                        ),
-                        chest: Item.of(
-                            'twilightforest:yeti_chestplate',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:blue_rune"}}'
-                        ),
-                        legs: Item.of(
-                            'twilightforest:yeti_leggings',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:blue_rune"}}'
-                        ),
-                        feet: Item.of(
-                            'twilightforest:yeti_boots',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:blue_rune"}}'
-                        ),
-                        mainhand: Item.of(
-                            'minecraft:bow',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:blue_rune"}}'
-                        ).enchant('minecraft:punch', 3),
-                        offhand: Item.of('minecraft:tipped_arrow', '{Potion:"ars_nouveau:freezing_potion_strong"}')
+                        head: Item.of('twilightforest:yeti_helmet', `{${enchant_glint.blue}}`),
+                        chest: Item.of('twilightforest:yeti_chestplate', `{${enchant_glint.blue}}`),
+                        legs: Item.of('twilightforest:yeti_leggings', `{${enchant_glint.blue}}`),
+                        feet: Item.of('twilightforest:yeti_boots', `{${enchant_glint.blue}}`),
+                        mainhand: Item.of('minecraft:bow', `{${enchant_glint.blue}}`).enchant('minecraft:punch', 3),
+                        offhand: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.freezing_strong)
                     }
                 },
                 {
@@ -463,11 +340,8 @@ const armored_mobs = {
                             level: { min: 10, max: 30 },
                             treasure: false
                         },
-                        mainhand: Item.of(
-                            'minecraft:bow',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        offhand: Item.of('minecraft:tipped_arrow', '{Potion:"ars_nouveau:freezing_potion"}')
+                        mainhand: Item.of('minecraft:bow', default_nbt),
+                        offhand: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.freezing)
                     }
                 }
             ]
@@ -484,10 +358,11 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
-                        mainhand: Item.of(
-                            'minecraft:trident',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        )
+                        chest: Item.of(
+                            'minecraft:leather_chestplate',
+                            `{display:{color:4357207},${reactive.drown},${enchant_glint.blank}}`
+                        ).enchant('ars_nouveau:reactive', 1),
+                        mainhand: Item.of('minecraft:trident', default_nbt)
                     }
                 }
             ]
@@ -508,26 +383,11 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
-                        head: Item.of(
-                            'twilightforest:ironwood_helmet',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        chest: Item.of(
-                            'twilightforest:ironwood_chestplate',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        legs: Item.of(
-                            'twilightforest:ironwood_leggings',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        feet: Item.of(
-                            'twilightforest:ironwood_boots',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        mainhand: Item.of(
-                            'twilightforest:ironwood_hoe',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        )
+                        head: Item.of('twilightforest:ironwood_helmet', default_nbt),
+                        chest: Item.of('twilightforest:ironwood_chestplate', default_nbt),
+                        legs: Item.of('twilightforest:ironwood_leggings', default_nbt),
+                        feet: Item.of('twilightforest:ironwood_boots', default_nbt),
+                        mainhand: Item.of('twilightforest:ironwood_hoe', default_nbt)
                     }
                 },
                 {
@@ -543,26 +403,11 @@ const armored_mobs = {
                             level: { min: 15, max: 25 },
                             treasure: false
                         },
-                        head: Item.of(
-                            'twilightforest:steeleaf_helmet',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        chest: Item.of(
-                            'twilightforest:steeleaf_chestplate',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        legs: Item.of(
-                            'twilightforest:steeleaf_leggings',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        feet: Item.of(
-                            'twilightforest:steeleaf_boots',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        mainhand: Item.of(
-                            'twilightforest:steeleaf_hoe',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
+                        head: Item.of('twilightforest:steeleaf_helmet', default_nbt),
+                        chest: Item.of('twilightforest:steeleaf_chestplate', default_nbt),
+                        legs: Item.of('twilightforest:steeleaf_leggings', default_nbt),
+                        feet: Item.of('twilightforest:steeleaf_boots', default_nbt),
+                        mainhand: Item.of('twilightforest:steeleaf_hoe', default_nbt),
                         summons: [{ mob: 'twilightforest:hostile_wolf', count: { min: 1, max: 2 }, spread: 5 }]
                     }
                 },
@@ -581,27 +426,15 @@ const armored_mobs = {
                             level: { min: 20, max: 25 },
                             treasure: false
                         },
-                        head: Item.of(
-                            'twilightforest:steeleaf_helmet',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:green_rune"}}'
-                        ),
+                        head: Item.of('twilightforest:steeleaf_helmet', `{${enchant_glint.green}}`),
                         chest: Item.of(
                             'twilightforest:steeleaf_chestplate',
-                            '{"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"Poison Globule",recipe:{part0:"ars_elemental:glyph_curved_projectile",part1:"ars_nouveau:glyph_pierce",part2:"ars_nouveau:glyph_pierce",part3:"ars_nouveau:glyph_linger",part4:"ars_nouveau:glyph_harm",part5:"ars_nouveau:glyph_extend_time",part6:"ars_nouveau:glyph_hex",part7:"ars_elemental:glyph_poison_spores",part8:"ars_nouveau:glyph_extend_time",part9:"ars_nouveau:glyph_amplify",size:10},sound:{pitch:1.0f,soundTag:{id:"ars_nouveau:fire_family"},volume:1.0f},spellColor:{b:25,g:255,r:25}}}},"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:green_rune"}}'
+                            `{${reactive.poison_bounce},${enchant_glint.green}}`
                         ).enchant('ars_nouveau:reactive', 3),
-                        legs: Item.of(
-                            'twilightforest:steeleaf_leggings',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:green_rune"}}'
-                        ),
-                        feet: Item.of(
-                            'twilightforest:steeleaf_boots',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:green_rune"}}'
-                        ),
-                        mainhand: Item.of(
-                            'minecraft:bow',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        offhand: Item.of('minecraft:tipped_arrow', '{Potion:"apotheosis:strong_wither"}'),
+                        legs: Item.of('twilightforest:steeleaf_leggings', `{${enchant_glint.green}}`),
+                        feet: Item.of('twilightforest:steeleaf_boots', `{${enchant_glint.green}}`),
+                        mainhand: Item.of('minecraft:bow', default_nbt),
+                        offhand: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.wither_strong),
                         summons: [{ mob: 'twilightforest:hedge_spider', count: { min: 5, max: 10 }, spread: 5 }]
                     }
                 }
@@ -617,26 +450,14 @@ const armored_mobs = {
                             level: { min: 5, max: 10 },
                             treasure: false
                         },
-                        head: Item.of(
-                            'minecraft:leather_helmet',
-                            '{display:{color:10826026},"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
+                        head: Item.of('minecraft:leather_helmet', `{display:{color:10826026},${enchant_glint.blank}}`),
                         chest: Item.of(
                             'minecraft:leather_chestplate',
-                            '{display:{color:6968645},"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
+                            `{display:{color:6968645},${enchant_glint.blank}}`
                         ),
-                        legs: Item.of(
-                            'minecraft:leather_leggings',
-                            '{display:{color:5465909},"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        feet: Item.of(
-                            'twilightforest:ironwood_boots',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        mainhand: Item.of(
-                            'twilightforest:ironwood_pickaxe',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
+                        legs: Item.of('minecraft:leather_leggings', `{display:{color:5465909},${enchant_glint.blank}}`),
+                        feet: Item.of('twilightforest:ironwood_boots', default_nbt),
+                        mainhand: Item.of('twilightforest:ironwood_pickaxe', default_nbt),
                         offhand: 'supplementaries:bomb'
                     }
                 }
@@ -652,14 +473,8 @@ const armored_mobs = {
                             level: { min: 5, max: 10 },
                             treasure: false
                         },
-                        feet: Item.of(
-                            'twilightforest:ironwood_boots',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        mainhand: Item.of(
-                            'twilightforest:ironwood_pickaxe',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
+                        feet: Item.of('twilightforest:ironwood_boots', default_nbt),
+                        mainhand: Item.of('twilightforest:ironwood_pickaxe', default_nbt),
                         offhand: 'supplementaries:bomb'
                     }
                 }
@@ -675,10 +490,7 @@ const armored_mobs = {
                             level: { min: 5, max: 10 },
                             treasure: false
                         },
-                        mainhand: Item.of(
-                            'farmersdelight:flint_knife',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        )
+                        mainhand: Item.of('farmersdelight:flint_knife', default_nbt)
                     }
                 }
             ]
@@ -696,26 +508,11 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
-                        head: Item.of(
-                            'blue_skies:aquite_helmet',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        chest: Item.of(
-                            'blue_skies:aquite_chestplate',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        legs: Item.of(
-                            'blue_skies:aquite_leggings',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        feet: Item.of(
-                            'blue_skies:aquite_boots',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        ),
-                        mainhand: Item.of(
-                            'blue_skies:aquite_axe',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        )
+                        head: Item.of('blue_skies:aquite_helmet', default_nbt),
+                        chest: Item.of('blue_skies:aquite_chestplate', default_nbt),
+                        legs: Item.of('blue_skies:aquite_leggings', default_nbt),
+                        feet: Item.of('blue_skies:aquite_boots', default_nbt),
+                        mainhand: Item.of('blue_skies:aquite_axe', default_nbt)
                     }
                 }
             ]
@@ -750,10 +547,7 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
-                        mainhand: Item.of(
-                            'twilightforest:glass_sword',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
-                        )
+                        mainhand: Item.of('twilightforest:glass_sword', default_nbt)
                     }
                 }
             ]
