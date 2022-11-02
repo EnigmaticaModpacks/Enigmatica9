@@ -533,6 +533,7 @@ const armored_mobs = {
                 {
                     weight: 25,
                     set: {
+                        max_health: 40,
                         effects: [
                             { type: 'minecraft:strength', amplifier: 2 },
                             { type: 'minecraft:resistance', amplifier: 1 }
@@ -568,8 +569,8 @@ const armored_mobs = {
                 {
                     weight: 10,
                     set: {
+                        max_health: 50,
                         effects: [
-                            { type: 'minecraft:strength', amplifier: 3 },
                             { type: 'minecraft:resistance', amplifier: 2 },
                             { type: 'minecraft:absorption', amplifier: 2 },
                             { type: 'ars_nouveau:shielding', amplifier: 2 }
