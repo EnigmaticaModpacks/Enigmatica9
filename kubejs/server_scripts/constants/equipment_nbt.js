@@ -1,54 +1,53 @@
-//priority: 1000
+//priority: 1100
 // Used for Apotheosis and Armored Mobs scripts
-const default_nbt = '{Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}';
+
+const enchant_glint = {
+    blank: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:blank_rune"}`,
+    white: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:white_rune"}`,
+    orange: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:orange_rune"}`,
+    magenta: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:magenta_rune"}`,
+    light_blue: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:light_blue_rune"}`,
+    yellow: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:yellow_rune"}`,
+    lime: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:lime_rune"}`,
+    pink: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:pink_rune"}`,
+    gray: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:gray_rune"}`,
+    light_gray: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:light_gray_rune"}`,
+    cyan: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:cyan_rune"}`,
+    purple: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:purple_rune"}`,
+    blue: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:blue_rune"}`,
+    green: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:green_rune"}`,
+    red: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:red_rune"}`,
+    black: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}`,
+    rainbow: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:rainbow_rune"}`
+};
+
+const default_nbt = `{Damage:0,${enchant_glint.blank}}`;
 
 const shield_nbt = {
-    tree: '{BlockEntityTag:{Base:15,Patterns:[{Color:12,Pattern:"sc"},{Color:12,Pattern:"bts"},{Color:13,Pattern:"cbo"},{Color:15,Pattern:"ls"},{Color:15,Pattern:"rs"},{Color:15,Pattern:"tt"},{Color:13,Pattern:"flo"},{Color:5,Pattern:"mc"},{Color:13,Pattern:"glb"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    dark_knight:
-        '{BlockEntityTag:{Base:15,Patterns:[{Color:8,Pattern:"ms"},{Color:8,Pattern:"cs"},{Color:0,Pattern:"sc"},{Color:15,Pattern:"gra"},{Color:15,Pattern:"gru"},{Color:15,Pattern:"flo"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    bi_pride:
-        '{BlockEntityTag:{Base:11,Patterns:[{Color:2,Pattern:"vh"},{Color:10,Pattern:"cs"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    trans_pride:
-        '{BlockEntityTag:{Base:6,Patterns:[{Color:3,Pattern:"bo"},{Color:0,Pattern:"cs"},{Color:0,Pattern:"cs"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    gay_pride:
-        '{BlockEntityTag:{Base:0,Patterns:[{Color:1,Pattern:"hh"},{Color:5,Pattern:"hhb"},{Color:14,Pattern:"ts"},{Color:4,Pattern:"ms"},{Color:9,Pattern:"bs"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    lesbian_pride:
-        '{BlockEntityTag:{Base:0,Patterns:[{Color:6,Pattern:"ls"},{Color:6,Pattern:"rs"},{Color:14,Pattern:"bo"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    sunset: '{BlockEntityTag:{Base:9,Patterns:[{Color:1,Pattern:"gra"},{Color:4,Pattern:"flo"},{Color:4,Pattern:"mc"},{Color:9,Pattern:"bs"},{Color:12,Pattern:"bts"},{Color:13,Pattern:"bts"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    ender_eye:
-        '{BlockEntityTag:{Base:10,Patterns:[{Color:7,Pattern:"gra"},{Color:5,Pattern:"mc"},{Color:15,Pattern:"cr"},{Color:15,Pattern:"tts"},{Color:15,Pattern:"bts"},{Color:7,Pattern:"bo"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    dragon_eye:
-        '{BlockEntityTag:{Base:0,Patterns:[{Color:15,Pattern:"ts"},{Color:15,Pattern:"bs"},{Color:3,Pattern:"flo"},{Color:15,Pattern:"cbo"},{Color:14,Pattern:"mc"},{Color:15,Pattern:"cr"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    orange_starburst:
-        '{BlockEntityTag:{Base:0,Patterns:[{Color:15,Pattern:"drs"},{Color:15,Pattern:"dls"},{Color:14,Pattern:"cr"},{Color:1,Pattern:"flo"},{Color:7,Pattern:"bo"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    dark_creeper:
-        '{BlockEntityTag:{Base:0,Patterns:[{Color:15,Pattern:"cbo"},{Color:11,Pattern:"sc"},{Color:15,Pattern:"gru"},{Color:15,Pattern:"gra"},{Color:7,Pattern:"mc"},{Color:0,Pattern:"cre"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    pale_fire:
-        '{BlockEntityTag:{Base:1,Patterns:[{Color:4,Pattern:"flo"},{Color:1,Pattern:"bri"},{Color:4,Pattern:"bt"},{Color:1,Pattern:"cr"},{Color:4,Pattern:"bts"},{Color:4,Pattern:"gru"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    dark_fire:
-        '{BlockEntityTag:{Base:15,Patterns:[{Color:14,Pattern:"moj"},{Color:1,Pattern:"bt"},{Color:15,Pattern:"mr"},{Color:1,Pattern:"gru"},{Color:4,Pattern:"bts"},{Color:15,Pattern:"gra"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    ender_swirl:
-        '{BlockEntityTag:{Base:15,Patterns:[{Color:0,Pattern:"dls"},{Color:10,Pattern:"mr"},{Color:15,Pattern:"dls"},{Color:2,Pattern:"mc"},{Color:15,Pattern:"flo"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    grey_knight:
-        '{BlockEntityTag:{Base:12,Patterns:[{Color:15,Pattern:"bri"},{Color:12,Pattern:"gra"},{Color:12,Pattern:"gru"},{Color:8,Pattern:"sc"},{Color:8,Pattern:"mc"},{Color:7,Pattern:"flo"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    blue_burst:
-        '{BlockEntityTag:{Base:0,Patterns:[{Color:8,Pattern:"cbo"},{Color:11,Pattern:"cs"},{Color:0,Pattern:"sc"},{Color:9,Pattern:"mr"},{Color:11,Pattern:"gru"},{Color:3,Pattern:"gra"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    blue_panel:
-        '{BlockEntityTag:{Base:4,Patterns:[{Color:9,Pattern:"gra"},{Color:3,Pattern:"gru"},{Color:11,Pattern:"sc"},{Color:3,Pattern:"mc"},{Color:11,Pattern:"bo"},{Color:11,Pattern:"flo"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    dark_cross:
-        '{BlockEntityTag:{Base:11,Patterns:[{Color:15,Pattern:"cbo"},{Color:3,Pattern:"cs"},{Color:3,Pattern:"ms"},{Color:14,Pattern:"mc"},{Color:15,Pattern:"flo"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    red_ornamental:
-        '{BlockEntityTag:{Base:15,Patterns:[{Color:14,Pattern:"tts"},{Color:14,Pattern:"mr"},{Color:15,Pattern:"flo"},{Color:14,Pattern:"bts"},{Color:15,Pattern:"cbo"},{Color:14,Pattern:"bo"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    orange_burst:
-        '{BlockEntityTag:{Base:1,Patterns:[{Color:14,Pattern:"ss"},{Color:14,Pattern:"gru"},{Color:1,Pattern:"gra"},{Color:15,Pattern:"mr"},{Color:1,Pattern:"mc"},{Color:14,Pattern:"flo"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    warden_eye:
-        '{BlockEntityTag:{Base:9,Patterns:[{Color:15,Pattern:"gra"},{Color:15,Pattern:"gru"},{Color:15,Pattern:"dls"},{Color:15,Pattern:"drs"},{Color:9,Pattern:"mr"},{Color:15,Pattern:"flo"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    warden_visage:
-        '{BlockEntityTag:{Base:9,Patterns:[{Color:15,Pattern:"gra"},{Color:15,Pattern:"gru"},{Color:15,Pattern:"dls"},{Color:15,Pattern:"drs"},{Color:9,Pattern:"mr"},{Color:15,Pattern:"flo"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    sea_scape:
-        '{BlockEntityTag:{Base:15,Patterns:[{Color:3,Pattern:"gra"},{Color:15,Pattern:"tts"},{Color:15,Pattern:"bts"},{Color:3,Pattern:"mc"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}',
-    dark_blue_cross:
-        '{BlockEntityTag:{Base:15,Patterns:[{Color:3,Pattern:"gra"},{Color:15,Pattern:"tts"},{Color:15,Pattern:"bts"},{Color:3,Pattern:"mc"}]},Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}'
+    tree: `{BlockEntityTag:{Base:15,Patterns:[{Color:12,Pattern:"sc"},{Color:12,Pattern:"bts"},{Color:13,Pattern:"cbo"},{Color:15,Pattern:"ls"},{Color:15,Pattern:"rs"},{Color:15,Pattern:"tt"},{Color:13,Pattern:"flo"},{Color:5,Pattern:"mc"},{Color:13,Pattern:"glb"}]},Damage:0,${enchant_glint.blank}}`,
+    dark_knight: `{BlockEntityTag:{Base:15,Patterns:[{Color:8,Pattern:"ms"},{Color:8,Pattern:"cs"},{Color:0,Pattern:"sc"},{Color:15,Pattern:"gra"},{Color:15,Pattern:"gru"},{Color:15,Pattern:"flo"}]},Damage:0,${enchant_glint.blank}}`,
+    bi_pride: `{BlockEntityTag:{Base:11,Patterns:[{Color:2,Pattern:"vh"},{Color:10,Pattern:"cs"}]},Damage:0,${enchant_glint.blank}}`,
+    trans_pride: `{BlockEntityTag:{Base:6,Patterns:[{Color:3,Pattern:"bo"},{Color:0,Pattern:"cs"},{Color:0,Pattern:"cs"}]},Damage:0,${enchant_glint.blank}}`,
+    gay_pride: `{BlockEntityTag:{Base:0,Patterns:[{Color:1,Pattern:"hh"},{Color:5,Pattern:"hhb"},{Color:14,Pattern:"ts"},{Color:4,Pattern:"ms"},{Color:9,Pattern:"bs"}]},Damage:0,${enchant_glint.blank}}`,
+    lesbian_pride: `{BlockEntityTag:{Base:0,Patterns:[{Color:6,Pattern:"ls"},{Color:6,Pattern:"rs"},{Color:14,Pattern:"bo"}]},Damage:0,${enchant_glint.blank}}`,
+    sunset: `{BlockEntityTag:{Base:9,Patterns:[{Color:1,Pattern:"gra"},{Color:4,Pattern:"flo"},{Color:4,Pattern:"mc"},{Color:9,Pattern:"bs"},{Color:12,Pattern:"bts"},{Color:13,Pattern:"bts"}]},Damage:0,${enchant_glint.blank}}`,
+    ender_eye: `{BlockEntityTag:{Base:10,Patterns:[{Color:7,Pattern:"gra"},{Color:5,Pattern:"mc"},{Color:15,Pattern:"cr"},{Color:15,Pattern:"tts"},{Color:15,Pattern:"bts"},{Color:7,Pattern:"bo"}]},Damage:0,${enchant_glint.blank}}`,
+    dragon_eye: `{BlockEntityTag:{Base:0,Patterns:[{Color:15,Pattern:"ts"},{Color:15,Pattern:"bs"},{Color:3,Pattern:"flo"},{Color:15,Pattern:"cbo"},{Color:14,Pattern:"mc"},{Color:15,Pattern:"cr"}]},Damage:0,${enchant_glint.blank}}`,
+    orange_starburst: `{BlockEntityTag:{Base:0,Patterns:[{Color:15,Pattern:"drs"},{Color:15,Pattern:"dls"},{Color:14,Pattern:"cr"},{Color:1,Pattern:"flo"},{Color:7,Pattern:"bo"}]},Damage:0,${enchant_glint.blank}}`,
+    dark_creeper: `{BlockEntityTag:{Base:0,Patterns:[{Color:15,Pattern:"cbo"},{Color:11,Pattern:"sc"},{Color:15,Pattern:"gru"},{Color:15,Pattern:"gra"},{Color:7,Pattern:"mc"},{Color:0,Pattern:"cre"}]},Damage:0,${enchant_glint.blank}}`,
+    pale_fire: `{BlockEntityTag:{Base:1,Patterns:[{Color:4,Pattern:"flo"},{Color:1,Pattern:"bri"},{Color:4,Pattern:"bt"},{Color:1,Pattern:"cr"},{Color:4,Pattern:"bts"},{Color:4,Pattern:"gru"}]},Damage:0,${enchant_glint.blank}}`,
+    dark_fire: `{BlockEntityTag:{Base:15,Patterns:[{Color:14,Pattern:"moj"},{Color:1,Pattern:"bt"},{Color:15,Pattern:"mr"},{Color:1,Pattern:"gru"},{Color:4,Pattern:"bts"},{Color:15,Pattern:"gra"}]},Damage:0,${enchant_glint.blank}}`,
+    ender_swirl: `{BlockEntityTag:{Base:15,Patterns:[{Color:0,Pattern:"dls"},{Color:10,Pattern:"mr"},{Color:15,Pattern:"dls"},{Color:2,Pattern:"mc"},{Color:15,Pattern:"flo"}]},Damage:0,${enchant_glint.blank}}`,
+    grey_knight: `{BlockEntityTag:{Base:12,Patterns:[{Color:15,Pattern:"bri"},{Color:12,Pattern:"gra"},{Color:12,Pattern:"gru"},{Color:8,Pattern:"sc"},{Color:8,Pattern:"mc"},{Color:7,Pattern:"flo"}]},Damage:0,${enchant_glint.blank}}`,
+    blue_burst: `{BlockEntityTag:{Base:0,Patterns:[{Color:8,Pattern:"cbo"},{Color:11,Pattern:"cs"},{Color:0,Pattern:"sc"},{Color:9,Pattern:"mr"},{Color:11,Pattern:"gru"},{Color:3,Pattern:"gra"}]},Damage:0,${enchant_glint.blank}}`,
+    blue_panel: `{BlockEntityTag:{Base:4,Patterns:[{Color:9,Pattern:"gra"},{Color:3,Pattern:"gru"},{Color:11,Pattern:"sc"},{Color:3,Pattern:"mc"},{Color:11,Pattern:"bo"},{Color:11,Pattern:"flo"}]},Damage:0,${enchant_glint.blank}}`,
+    dark_cross: `{BlockEntityTag:{Base:11,Patterns:[{Color:15,Pattern:"cbo"},{Color:3,Pattern:"cs"},{Color:3,Pattern:"ms"},{Color:14,Pattern:"mc"},{Color:15,Pattern:"flo"}]},Damage:0,${enchant_glint.blank}}`,
+    red_ornamental: `{BlockEntityTag:{Base:15,Patterns:[{Color:14,Pattern:"tts"},{Color:14,Pattern:"mr"},{Color:15,Pattern:"flo"},{Color:14,Pattern:"bts"},{Color:15,Pattern:"cbo"},{Color:14,Pattern:"bo"}]},Damage:0,${enchant_glint.blank}}`,
+    orange_burst: `{BlockEntityTag:{Base:1,Patterns:[{Color:14,Pattern:"ss"},{Color:14,Pattern:"gru"},{Color:1,Pattern:"gra"},{Color:15,Pattern:"mr"},{Color:1,Pattern:"mc"},{Color:14,Pattern:"flo"}]},Damage:0,${enchant_glint.blank}}`,
+    warden_eye: `{BlockEntityTag:{Base:9,Patterns:[{Color:15,Pattern:"gra"},{Color:15,Pattern:"gru"},{Color:15,Pattern:"dls"},{Color:15,Pattern:"drs"},{Color:9,Pattern:"mr"},{Color:15,Pattern:"flo"}]},Damage:0,${enchant_glint.blank}}`,
+    warden_visage: `{BlockEntityTag:{Base:9,Patterns:[{Color:15,Pattern:"gra"},{Color:15,Pattern:"gru"},{Color:15,Pattern:"dls"},{Color:15,Pattern:"drs"},{Color:9,Pattern:"mr"},{Color:15,Pattern:"flo"}]},Damage:0,${enchant_glint.blank}}`,
+    sea_scape: `{BlockEntityTag:{Base:15,Patterns:[{Color:3,Pattern:"gra"},{Color:15,Pattern:"tts"},{Color:15,Pattern:"bts"},{Color:3,Pattern:"mc"}]},Damage:0,${enchant_glint.blank}}`,
+    dark_blue_cross: `{BlockEntityTag:{Base:15,Patterns:[{Color:3,Pattern:"gra"},{Color:15,Pattern:"tts"},{Color:15,Pattern:"bts"},{Color:3,Pattern:"mc"}]},Damage:0,${enchant_glint.blank}}`
 };
 
 const all_shield_designs = [];
@@ -104,5 +103,18 @@ const tipped_arrow_nbt = {
     poison_long: '{Potion:"minecraft:long_poison"}',
     poison_strong: '{Potion:"minecraft:strong_poison"}',
     shock: '{Potion:"ars_elemental:shock_potion"}',
-    shock_long: '{Potion:"ars_elemental:shock_potion_long"}'
+    shock_long: '{Potion:"ars_elemental:shock_potion_long"}',
+    harming: '{Potion:"minecraft:harming"}',
+    harming_strong: '{Potion:"minecraft:strong_harming"}',
+    wither: '{Potion:"apotheosis:wither"}',
+    wither_long: '{Potion:"apotheosis:long_wither"}',
+    wither_strong: '{Potion:"apotheosis:strong_sundering"}'
+};
+
+const reactive = {
+    poison_bounce: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"Poison Globule",recipe:{part0:"ars_elemental:glyph_curved_projectile",part1:"ars_nouveau:glyph_pierce",part2:"ars_nouveau:glyph_pierce",part3:"ars_nouveau:glyph_linger",part4:"ars_nouveau:glyph_harm",part5:"ars_nouveau:glyph_extend_time",part6:"ars_nouveau:glyph_hex",part7:"ars_elemental:glyph_poison_spores",part8:"ars_nouveau:glyph_extend_time",part9:"ars_nouveau:glyph_amplify",size:10},sound:{pitch:1.0f,soundTag:{id:"ars_nouveau:fire_family"},volume:1.0f},spellColor:{b:25,g:255,r:25}}}}`,
+    wind_shear: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"Wind Shear",recipe:{part0:"ars_nouveau:glyph_touch",part1:"ars_nouveau:glyph_launch",part2:"ars_nouveau:glyph_launch",part3:"ars_nouveau:glyph_delay",part4:"ars_nouveau:glyph_extend_time",part5:"ars_nouveau:glyph_wind_shear",size:6},sound:{pitch:1.0f,soundTag:{id:"ars_nouveau:fire_family"},volume:1.0f},spellColor:{b:255,g:255,r:255}}}}`,
+    burning_aura: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"Burning Aura",recipe:{part0:"ars_nouveau:glyph_orbit",part1:"ars_nouveau:glyph_split",part2:"ars_nouveau:glyph_split",part3:"ars_nouveau:glyph_split",part4:"ars_nouveau:glyph_ignite",part5:"ars_nouveau:glyph_flare",part6:"ars_nouveau:glyph_amplify",part7:"ars_nouveau:glyph_amplify",part8:"ars_nouveau:glyph_amplify",part9:"ars_nouveau:glyph_amplify",size:10},sound:{pitch:1.0f,soundTag:{id:"ars_nouveau:fire_family"},volume:1.0f},spellColor:{b:1,g:90,r:255}}}}`,
+    freezing_aura: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"Freezing Aura",recipe:{part0:"ars_nouveau:glyph_orbit",part1:"ars_nouveau:glyph_split",part2:"ars_nouveau:glyph_split",part3:"ars_nouveau:glyph_split",part4:"ars_nouveau:glyph_freeze",part5:"ars_nouveau:glyph_cold_snap",part6:"ars_nouveau:glyph_cold_snap",part7:"ars_nouveau:glyph_amplify",part8:"ars_nouveau:glyph_amplify",part9:"ars_nouveau:glyph_amplify",size:10},sound:{pitch:1.0f,soundTag:{id:"ars_nouveau:fire_family"},volume:1.0f},spellColor:{b:255,g:25,r:30}}}}`,
+    drown: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"Drown",recipe:{part0:"ars_nouveau:glyph_touch",part1:"ars_elemental:glyph_watery_grave",part2:"ars_elemental:glyph_watery_grave",part3:"ars_nouveau:glyph_extend_time",part4:"ars_nouveau:glyph_amplify",part5:"ars_nouveau:glyph_extend_time",size:6},sound:{pitch:1.0f,soundTag:{id:"ars_nouveau:fire_family"},volume:1.0f},spellColor:{b:255,g:255,r:25}}}}`
 };
