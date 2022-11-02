@@ -1,5 +1,5 @@
 //priority: 1000
-// Used for Apotheosis configs
+// Used for Apotheosis and Armored Mobs scripts
 const default_nbt = '{Damage:0,"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}}';
 
 const shield_nbt = {
