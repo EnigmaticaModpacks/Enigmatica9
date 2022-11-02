@@ -533,6 +533,7 @@ const armored_mobs = {
                 {
                     weight: 25,
                     set: {
+                        max_health: 40,
                         effects: [
                             { type: 'minecraft:strength', amplifier: 2 },
                             { type: 'minecraft:resistance', amplifier: 1 }
@@ -568,8 +569,8 @@ const armored_mobs = {
                 {
                     weight: 10,
                     set: {
+                        max_health: 50,
                         effects: [
-                            { type: 'minecraft:strength', amplifier: 3 },
                             { type: 'minecraft:resistance', amplifier: 2 },
                             { type: 'minecraft:absorption', amplifier: 2 },
                             { type: 'ars_nouveau:shielding', amplifier: 2 }
@@ -586,8 +587,8 @@ const armored_mobs = {
                         ),
                         chest: Item.of(
                             'twilightforest:steeleaf_chestplate',
-                            '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:green_rune"}}'
-                        ),
+                            '{"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"Poison Globule",recipe:{part0:"ars_elemental:glyph_curved_projectile",part1:"ars_nouveau:glyph_pierce",part2:"ars_nouveau:glyph_pierce",part3:"ars_nouveau:glyph_linger",part4:"ars_nouveau:glyph_harm",part5:"ars_nouveau:glyph_extend_time",part6:"ars_nouveau:glyph_hex",part7:"ars_elemental:glyph_poison_spores",part8:"ars_nouveau:glyph_extend_time",part9:"ars_nouveau:glyph_amplify",size:10},sound:{pitch:1.0f,soundTag:{id:"ars_nouveau:fire_family"},volume:1.0f},spellColor:{b:25,g:255,r:25}}}},"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:green_rune"}}'
+                        ).enchant('ars_nouveau:reactive', 3),
                         legs: Item.of(
                             'twilightforest:steeleaf_leggings',
                             '{"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:green_rune"}}'

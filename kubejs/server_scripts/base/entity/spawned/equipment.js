@@ -2,14 +2,27 @@ EntityEvents.spawned((event) => {
     if (!event.entity.isLiving()) {
         return;
     }
-    // Ignore Apotheosis bosses
-    let entity_data = event.entity.fullNBT;
-    if (entity_data.hasOwnProperty('ForgeData')) {
-        if (entity_data.ForgeData.hasOwnProperty('apoth.boss')) {
-            // console.log('Apotheosis Boss!');
-            return;
-        }
+    let entity_data;
+
+    if (!event.entity.fullNBT.hasOwnProperty('ForgeData')) {
+        entity_data = event.entity.fullNBT;
+        entity_data.ForgeData = {};
+        event.entity.fullNBT = entity_data;
     }
+
+    if (event.entity.fullNBT.ForgeData.hasOwnProperty('apoth.boss')) {
+        console.log(event.entity.fullNBT);
+        return;
+    }
+
+    // Check to prevent re-applying buffs to mobs 'spawned' by releasing from a soul gem.
+    if (event.entity.fullNBT.ForgeData.hasOwnProperty('enigmatica_equipment')) {
+        return;
+    }
+
+    entity_data = event.entity.fullNBT;
+    entity_data.ForgeData.enigmatica_equipment = true;
+    event.entity.fullNBT = entity_data;
 
     let mob_type = event.entity.type.split(':')[1];
     let mod_id = event.entity.type.split(':')[0];
@@ -64,7 +77,7 @@ EntityEvents.spawned((event) => {
                 event.entity.offHandItem = randomEnchant(equipment_set.offhand, enchant_level, use_treasure_enchants);
             }
             if (equipment_set.custom_name) {
-                let entity_data = event.entity.fullNBT;
+                entity_data = event.entity.fullNBT;
                 entity_data.CustomName = `{ "text" : "${equipment_set.custom_name}" }`;
                 event.entity.fullNBT = entity_data;
             }
