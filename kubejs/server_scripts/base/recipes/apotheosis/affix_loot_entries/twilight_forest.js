@@ -1,6 +1,6 @@
 /// High Priority required or Apotheosis over-writes these.
 ServerEvents.highPriorityData((event) => {
-    const id_prefix = 'apotheosis:affix_loot_entries/twilight/';
+    const id_prefix = 'apotheosis:affix_loot_entries/twilight_forest/';
     const recipes = [
         {
             weight: 50,
@@ -145,5 +145,50 @@ ServerEvents.highPriorityData((event) => {
 
     recipes.forEach((recipe) => {
         event.addJson(`${id_prefix}${recipe.stack.item.split(':')[1]}.json`, recipe);
+    });
+
+    // Disable 'twilight' versions. Everything moved to 'twilight_forest' namespace above.
+    const disabled_recipes = [
+        'ender_bow',
+        'fiery_boots',
+        'fiery_chestplate',
+        'fiery_helmet',
+        'fiery_leggings',
+        'fiery_pickaxe',
+        'fiery_sword',
+        'ice_bow',
+        'ironwood_axe',
+        'ironwood_boots',
+        'ironwood_chestplate',
+        'ironwood_helmet',
+        'ironwood_leggings',
+        'ironwood_pickaxe',
+        'ironwood_shovel',
+        'ironwood_sword',
+        'knightmetal_axe',
+        'knightmetal_boots',
+        'knightmetal_chestplate',
+        'knightmetal_helmet',
+        'knightmetal_leggings',
+        'knightmetal_pickaxe',
+        'knightmetal_sword',
+        'seeker_bow',
+        'shield',
+        'steeleaf_axe',
+        'steeleaf_boots',
+        'steeleaf_chestplate',
+        'steeleaf_helmet',
+        'steeleaf_leggings',
+        'steeleaf_pickaxe',
+        'steeleaf_shovel',
+        'steeleaf_sword',
+        'trident',
+        'triple_bow'
+    ];
+
+    disabled_recipes.forEach((recipe) => {
+        event.addJson(`apotheosis:affix_loot_entries/twilight/${recipe}.json`, {
+            conditions: [{ type: 'forge:false' }]
+        });
     });
 });

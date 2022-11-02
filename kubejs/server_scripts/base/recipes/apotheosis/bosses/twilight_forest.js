@@ -8,7 +8,7 @@ enchantment_levels: [50, 30, 120, 40],
 
 */
 ServerEvents.highPriorityData((event) => {
-    const id_prefix = 'apotheosis:bosses/twilight/';
+    const id_prefix = 'apotheosis:bosses/twilight_forest/';
     const recipes = [
         {
             entity: 'twilightforest:carminite_golem',
@@ -413,15 +413,27 @@ ServerEvents.highPriorityData((event) => {
         }
     ];
 
-    const disabled_recipes = [{ entity: 'twilightforest:knight_phantom' }];
-
-    disabled_recipes.forEach((recipe) => {
-        recipes.push({ entity: recipe.entity, conditions: [{ type: 'forge:false' }] });
-    });
-
     printSpawnChances(recipes, 'twilight');
 
     recipes.forEach((recipe) => {
         event.addJson(`${id_prefix}${recipe.entity.split(':')[1]}.json`, recipe);
+    });
+
+    // Disable 'twilight' versions. Everything moved to 'twilight_forest' namespace above.
+    const disabled_recipes = [
+        'carminite_golem',
+        'goblin_knight',
+        'helmet_crab',
+        'knight_phantom',
+        'kobold',
+        'redcap_sapper',
+        'skeleton',
+        'skeleton_druid'
+    ];
+
+    disabled_recipes.forEach((recipe) => {
+        event.addJson(`apotheosis:bosses/twilight/${recipe}.json`, {
+            conditions: [{ type: 'forge:false' }]
+        });
     });
 });

@@ -1,5 +1,5 @@
 ServerEvents.highPriorityData((event) => {
-    const id_prefix = 'apotheosis:boss_gear/twilight/';
+    const id_prefix = 'apotheosis:boss_gear/twilight_forest/';
     const recipes = [
         {
             name: 'arctic',
@@ -231,13 +231,29 @@ ServerEvents.highPriorityData((event) => {
         }
     ];
 
-    const disabled_recipes = [];
-
-    disabled_recipes.forEach((recipe) => {
-        recipes.push({ name: recipe.name, conditions: [{ type: 'forge:false' }] });
-    });
-
     recipes.forEach((recipe) => {
         event.addJson(`${id_prefix}${recipe.name}.json`, recipe);
+    });
+
+    // Disable 'twilight' versions. Everything moved to 'twilight_forest' namespace above.
+    const disabled_recipes = [
+        'arctic',
+        'arctic_bow',
+        'fiery',
+        'fiery_bow',
+        'ironwood',
+        'ironwood_bow',
+        'knightmetal',
+        'knightmetal_bow',
+        'steeleaf',
+        'steeleaf_bow',
+        'yeti',
+        'yeti_bow'
+    ];
+
+    disabled_recipes.forEach((recipe) => {
+        event.addJson(`apotheosis:boss_gear/twilight/${recipe}.json`, {
+            conditions: [{ type: 'forge:false' }]
+        });
     });
 });
