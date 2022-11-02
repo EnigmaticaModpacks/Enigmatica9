@@ -1194,7 +1194,7 @@
 	"Spawner Replacer" = false
 	"Narrator Readout" = false
 	"Overlay Shader" = false
-	"Enchantments Begone" = false
+	"Enchantments Begone" = true
 
 	[experimental.saw]
 
@@ -1208,7 +1208,7 @@
 		"Replace Mobs" = []
 
 	[experimental.enchantments_begone]
-		"Enchantments To Begone" = []
+		"Enchantments To Begone" = ["apotheosis:earths_boon", "apotheosis:rebounding", "apotheosis:spearfishing", "minecraft:binding_curse", "minecraft:vanishing_curse", "supplementaries:stasis"]
 
 	[experimental.game_nerfs]
 		#Makes Mending act like the Unmending mod
