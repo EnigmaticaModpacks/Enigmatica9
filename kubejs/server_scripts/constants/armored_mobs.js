@@ -29,6 +29,13 @@ const armored_mobs = {
                             chance: 0.5,
                             level: { min: 10, max: 20 },
                             treasure: false
+                        },
+                        chest: {
+                            item: Item.of(
+                                'minecraft:leather_chestplate',
+                                `{display:{color:2624321},${reactive.life_link},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 3),
+                            drop_rate: 0.085
                         }
                         // head: 'hexerei:witch_helmet',
                         // chest: 'hexerei:witch_chestplate',
@@ -49,10 +56,13 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
-                        chest: Item.of(
-                            'minecraft:leather_chestplate',
-                            `{display:{color:2624321},${reactive.life_link},${enchant_glint.blank}}`
-                        ).enchant('ars_nouveau:reactive', 3)
+                        chest: {
+                            item: Item.of(
+                                'minecraft:leather_chestplate',
+                                `{display:{color:2624321},${reactive.life_link},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 3),
+                            drop_rate: 0.085
+                        }
                         // chest: 'hexerei:witch_chestplate',
                         // feet: 'hexerei:witch_boots'
                     }
@@ -73,7 +83,10 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
-                        mainhand: Item.of('twilightforest:glass_sword', default_nbt)
+                        mainhand: {
+                            item: Item.of('twilightforest:glass_sword', default_nbt),
+                            drop_rate: 0.0
+                        }
                     }
                 }
             ]
@@ -89,13 +102,31 @@ const armored_mobs = {
                             level: { min: 15, max: 20 },
                             treasure: false
                         },
-                        chest: Item.of(
-                            'minecraft:leather_chestplate',
-                            `{display:{color:1908001},${enchant_glint.blank}}`
-                        ),
-                        legs: Item.of('minecraft:leather_leggings', `{display:{color:1908001},${enchant_glint.blank}}`),
-                        feet: Item.of('minecraft:leather_boots', `{display:{color:1908001},${enchant_glint.blank}}`),
-                        mainhand: Item.of('twilightforest:knightmetal_axe', default_nbt)
+                        chest: {
+                            item: Item.of(
+                                'minecraft:leather_chestplate',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        legs: {
+                            item: Item.of(
+                                'minecraft:leather_leggings',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        feet: {
+                            item: Item.of(
+                                'minecraft:leather_boots',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        mainhand: {
+                            item: Item.of('twilightforest:knightmetal_axe', default_nbt),
+                            drop_rate: 0.085
+                        }
                     }
                 }
             ]
@@ -111,13 +142,31 @@ const armored_mobs = {
                             level: { min: 15, max: 20 },
                             treasure: false
                         },
-                        chest: Item.of(
-                            'minecraft:leather_chestplate',
-                            `{display:{color:1908001},${enchant_glint.blank}}`
-                        ),
-                        legs: Item.of('minecraft:leather_leggings', `{display:{color:1908001},${enchant_glint.blank}}`),
-                        feet: Item.of('minecraft:leather_boots', `{display:{color:1908001},${enchant_glint.blank}}`),
-                        mainhand: Item.of('minecraft:crossbow', default_nbt).enchant('minecraft:multishot', 1)
+                        chest: {
+                            item: Item.of(
+                                'minecraft:leather_chestplate',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        legs: {
+                            item: Item.of(
+                                'minecraft:leather_leggings',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        feet: {
+                            item: Item.of(
+                                'minecraft:leather_boots',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        mainhand: {
+                            item: Item.of('minecraft:crossbow', default_nbt).enchant('minecraft:multishot', 1),
+                            drop_rate: 0.085
+                        }
                     }
                 }
             ]
@@ -133,8 +182,14 @@ const armored_mobs = {
                             level: { min: 20, max: 25 },
                             treasure: false
                         },
-                        chest: Item.of('minecraft:golden_chestplate', default_nbt),
-                        mainhand: Item.of('twilightforest:gold_minotaur_axe', default_nbt)
+                        chest: {
+                            item: Item.of('minecraft:golden_chestplate', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        mainhand: {
+                            item: Item.of('twilightforest:gold_minotaur_axe', default_nbt),
+                            drop_rate: 0.085
+                        }
                     }
                 },
                 {
@@ -146,8 +201,14 @@ const armored_mobs = {
                             level: { min: 20, max: 25 },
                             treasure: false
                         },
-                        chest: Item.of('minecraft:golden_chestplate', default_nbt),
-                        mainhand: Item.of('minecraft:crossbow', default_nbt).enchant('minecraft:multishot', 1)
+                        chest: {
+                            item: Item.of('minecraft:golden_chestplate', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        mainhand: {
+                            item: Item.of('minecraft:crossbow', default_nbt).enchant('minecraft:multishot', 1),
+                            drop_rate: 0.085
+                        }
                     }
                 }
             ]
@@ -164,11 +225,26 @@ const armored_mobs = {
                             level: { min: 20, max: 25 },
                             treasure: false
                         },
-                        head: Item.of('minecraft:golden_helmet', default_nbt),
-                        chest: Item.of('minecraft:golden_chestplate', default_nbt),
-                        legs: Item.of('minecraft:golden_leggings', default_nbt),
-                        feet: Item.of('minecraft:golden_boots', default_nbt),
-                        mainhand: Item.of('twilightforest:gold_minotaur_axe', default_nbt)
+                        head: {
+                            item: Item.of('minecraft:golden_helmet', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        chest: {
+                            item: Item.of('minecraft:golden_chestplate', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        legs: {
+                            item: Item.of('minecraft:golden_leggings', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        feet: {
+                            item: Item.of('minecraft:golden_boots', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        mainhand: {
+                            item: Item.of('twilightforest:gold_minotaur_axe', default_nbt),
+                            drop_rate: 0.085
+                        }
                     }
                 }
             ]
@@ -193,12 +269,30 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
-                        head: Item.of('twilightforest:knightmetal_helmet', default_nbt),
-                        chest: Item.of('twilightforest:knightmetal_chestplate', default_nbt),
-                        legs: Item.of('twilightforest:knightmetal_leggings', default_nbt),
-                        feet: Item.of('twilightforest:knightmetal_boots', default_nbt),
-                        mainhand: Item.of('twilightforest:knightmetal_sword', default_nbt),
-                        offhand: Item.of('twilightforest:knightmetal_shield', default_nbt)
+                        head: {
+                            item: Item.of('twilightforest:knightmetal_helmet', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        chest: {
+                            item: Item.of('twilightforest:knightmetal_chestplate', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        legs: {
+                            item: Item.of('twilightforest:knightmetal_leggings', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        feet: {
+                            item: Item.of('twilightforest:knightmetal_boots', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        mainhand: {
+                            item: Item.of('twilightforest:knightmetal_sword', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('twilightforest:knightmetal_shield', default_nbt),
+                            drop_rate: 0.085
+                        }
                     }
                 },
                 {
@@ -211,8 +305,14 @@ const armored_mobs = {
                             level: { min: 10, max: 30 },
                             treasure: false
                         },
-                        mainhand: Item.of('minecraft:bow', default_nbt),
-                        offhand: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.harming)
+                        mainhand: {
+                            item: Item.of('minecraft:bow', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.harming),
+                            drop_rate: 0.085
+                        }
                     }
                 },
                 {
@@ -225,8 +325,14 @@ const armored_mobs = {
                             level: { min: 10, max: 30 },
                             treasure: false
                         },
-                        mainhand: Item.of('minecraft:bow', default_nbt),
-                        offhand: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.blasting)
+                        mainhand: {
+                            item: Item.of('minecraft:bow', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.blasting),
+                            drop_rate: 0.085
+                        }
                     }
                 },
                 {
@@ -239,8 +345,14 @@ const armored_mobs = {
                             level: { min: 10, max: 30 },
                             treasure: false
                         },
-                        mainhand: Item.of('minecraft:bow', default_nbt),
-                        offhand: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.sundering)
+                        mainhand: {
+                            item: Item.of('minecraft:bow', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.sundering),
+                            drop_rate: 0.085
+                        }
                     }
                 }
             ]
@@ -255,7 +367,10 @@ const armored_mobs = {
                             level: { min: 10, max: 30 },
                             treasure: false
                         },
-                        mainhand: Item.of('immersiveengineering:sword_steel', default_nbt)
+                        mainhand: {
+                            item: Item.of('immersiveengineering:sword_steel', default_nbt),
+                            drop_rate: 0.085
+                        }
                     }
                 },
                 {
@@ -273,12 +388,30 @@ const armored_mobs = {
                             level: { min: 20, max: 30 },
                             treasure: false
                         },
-                        head: Item.of('pneumaticcraft:compressed_iron_helmet', default_nbt),
-                        chest: Item.of('pneumaticcraft:compressed_iron_chestplate', default_nbt),
-                        legs: Item.of('pneumaticcraft:compressed_iron_leggings', default_nbt),
-                        feet: Item.of('pneumaticcraft:compressed_iron_boots', default_nbt),
-                        mainhand: Item.of('twilightforest:fiery_sword', default_nbt),
-                        offhand: Item.of('blue_skies:spike_shield', default_nbt)
+                        head: {
+                            item: Item.of('pneumaticcraft:compressed_iron_helmet', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        chest: {
+                            item: Item.of('pneumaticcraft:compressed_iron_chestplate', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        legs: {
+                            item: Item.of('pneumaticcraft:compressed_iron_leggings', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        feet: {
+                            item: Item.of('pneumaticcraft:compressed_iron_boots', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        mainhand: {
+                            item: Item.of('twilightforest:fiery_sword', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('blue_skies:spike_shield', default_nbt),
+                            drop_rate: 0.085
+                        }
                     }
                 },
                 {
@@ -291,15 +424,42 @@ const armored_mobs = {
                             level: { min: 10, max: 30 },
                             treasure: false
                         },
-                        head: Item.of('minecraft:leather_helmet', `{display:{color:1908001},${enchant_glint.blank}}`),
-                        chest: Item.of(
-                            'minecraft:leather_chestplate',
-                            `{display:{color:1908001},${enchant_glint.blank}}`
-                        ),
-                        legs: Item.of('minecraft:leather_leggings', `{display:{color:1908001},${enchant_glint.blank}}`),
-                        feet: Item.of('minecraft:leather_boots', `{display:{color:1908001},${enchant_glint.blank}}`),
-                        mainhand: Item.of('minecraft:bow', default_nbt),
-                        offhand: Item.of('minecraft:tipped_arrow', '{Potion:"apotheosis:long_wither"}')
+                        head: {
+                            item: Item.of(
+                                'minecraft:leather_helmet',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        chest: {
+                            item: Item.of(
+                                'minecraft:leather_chestplate',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        legs: {
+                            item: Item.of(
+                                'minecraft:leather_leggings',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        feet: {
+                            item: Item.of(
+                                'minecraft:leather_boots',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        mainhand: {
+                            item: Item.of('minecraft:bow', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:tipped_arrow', '{Potion:"apotheosis:long_wither"}'),
+                            drop_rate: 0.085
+                        }
                     }
                 }
             ]
@@ -309,7 +469,10 @@ const armored_mobs = {
                 {
                     weight: 40,
                     set: {
-                        offhand: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.freezing)
+                        offhand: {
+                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.freezing),
+                            drop_rate: 0.085
+                        }
                     }
                 },
                 {
@@ -326,12 +489,30 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
-                        head: Item.of('twilightforest:yeti_helmet', `{${enchant_glint.blue}}`),
-                        chest: Item.of('twilightforest:yeti_chestplate', `{${enchant_glint.blue}}`),
-                        legs: Item.of('twilightforest:yeti_leggings', `{${enchant_glint.blue}}`),
-                        feet: Item.of('twilightforest:yeti_boots', `{${enchant_glint.blue}}`),
-                        mainhand: Item.of('minecraft:bow', `{${enchant_glint.blue}}`).enchant('minecraft:punch', 3),
-                        offhand: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.freezing_strong)
+                        head: {
+                            item: Item.of('twilightforest:yeti_helmet', `{${enchant_glint.blue}}`),
+                            drop_rate: 0.085
+                        },
+                        chest: {
+                            item: Item.of('twilightforest:yeti_chestplate', `{${enchant_glint.blue}}`),
+                            drop_rate: 0.085
+                        },
+                        legs: {
+                            item: Item.of('twilightforest:yeti_leggings', `{${enchant_glint.blue}}`),
+                            drop_rate: 0.085
+                        },
+                        feet: {
+                            item: Item.of('twilightforest:yeti_boots', `{${enchant_glint.blue}}`),
+                            drop_rate: 0.085
+                        },
+                        mainhand: {
+                            item: Item.of('minecraft:bow', `{${enchant_glint.blue}}`).enchant('minecraft:punch', 3),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.freezing_strong),
+                            drop_rate: 0.085
+                        }
                     }
                 },
                 {
@@ -344,8 +525,14 @@ const armored_mobs = {
                             level: { min: 10, max: 30 },
                             treasure: false
                         },
-                        mainhand: Item.of('minecraft:bow', default_nbt),
-                        offhand: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.freezing)
+                        mainhand: {
+                            item: Item.of('minecraft:bow', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.freezing),
+                            drop_rate: 0.085
+                        }
                     }
                 }
             ]
@@ -362,11 +549,17 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
-                        chest: Item.of(
-                            'minecraft:leather_chestplate',
-                            `{display:{color:4357207},${reactive.drown},${enchant_glint.blank}}`
-                        ).enchant('ars_nouveau:reactive', 1),
-                        mainhand: Item.of('minecraft:trident', default_nbt)
+                        chest: {
+                            item: Item.of(
+                                'minecraft:leather_chestplate',
+                                `{display:{color:4357207},${reactive.drown},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 1),
+                            drop_rate: 0.085
+                        },
+                        mainhand: {
+                            item: Item.of('minecraft:trident', default_nbt),
+                            drop_rate: 0.085
+                        }
                     }
                 }
             ]
@@ -382,14 +575,17 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
-                        chest: Item.of(
-                            'minecraft:leather_chestplate',
-                            `{display:{color:2624321},${reactive.come_here},${enchant_glint.blank}}`
-                        ).enchant('ars_nouveau:reactive', 3)
+                        chest: {
+                            item: Item.of(
+                                'minecraft:leather_chestplate',
+                                `{display:{color:2624321},${reactive.come_here},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 3),
+                            drop_rate: 0.0
+                        }
                     }
                 },
                 {
-                    weight: 50000,
+                    weight: 50,
                     set: {
                         max_health: 60,
                         enchant: {
@@ -397,10 +593,13 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
-                        chest: Item.of(
-                            'minecraft:leather_chestplate',
-                            `{display:{color:2624321},${reactive.vanish},${enchant_glint.blank}}`
-                        ).enchant('ars_nouveau:reactive', 3)
+                        chest: {
+                            item: Item.of(
+                                'minecraft:leather_chestplate',
+                                `{display:{color:2624321},${reactive.vanish},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 3),
+                            drop_rate: 0.0
+                        }
                     }
                 }
             ]
@@ -421,11 +620,26 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
-                        head: Item.of('twilightforest:ironwood_helmet', default_nbt),
-                        chest: Item.of('twilightforest:ironwood_chestplate', default_nbt),
-                        legs: Item.of('twilightforest:ironwood_leggings', default_nbt),
-                        feet: Item.of('twilightforest:ironwood_boots', default_nbt),
-                        mainhand: Item.of('twilightforest:ironwood_hoe', default_nbt)
+                        head: {
+                            item: Item.of('twilightforest:ironwood_helmet', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        chest: {
+                            item: Item.of('twilightforest:ironwood_chestplate', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        legs: {
+                            item: Item.of('twilightforest:ironwood_leggings', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        feet: {
+                            item: Item.of('twilightforest:ironwood_boots', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        mainhand: {
+                            item: Item.of('twilightforest:ironwood_hoe', default_nbt),
+                            drop_rate: 0.085
+                        }
                     }
                 },
                 {
@@ -441,11 +655,26 @@ const armored_mobs = {
                             level: { min: 15, max: 25 },
                             treasure: false
                         },
-                        head: Item.of('twilightforest:steeleaf_helmet', default_nbt),
-                        chest: Item.of('twilightforest:steeleaf_chestplate', default_nbt),
-                        legs: Item.of('twilightforest:steeleaf_leggings', default_nbt),
-                        feet: Item.of('twilightforest:steeleaf_boots', default_nbt),
-                        mainhand: Item.of('twilightforest:steeleaf_hoe', default_nbt),
+                        head: {
+                            item: Item.of('twilightforest:steeleaf_helmet', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        chest: {
+                            item: Item.of('twilightforest:steeleaf_chestplate', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        legs: {
+                            item: Item.of('twilightforest:steeleaf_leggings', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        feet: {
+                            item: Item.of('twilightforest:steeleaf_boots', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        mainhand: {
+                            item: Item.of('twilightforest:steeleaf_hoe', default_nbt),
+                            drop_rate: 0.085
+                        },
                         summons: [{ mob: 'twilightforest:hostile_wolf', count: { min: 1, max: 2 }, spread: 5 }]
                     }
                 },
@@ -464,15 +693,33 @@ const armored_mobs = {
                             level: { min: 20, max: 25 },
                             treasure: false
                         },
-                        head: Item.of('twilightforest:steeleaf_helmet', `{${enchant_glint.green}}`),
-                        chest: Item.of(
-                            'twilightforest:steeleaf_chestplate',
-                            `{${reactive.poison_bounce},${enchant_glint.green}}`
-                        ).enchant('ars_nouveau:reactive', 3),
-                        legs: Item.of('twilightforest:steeleaf_leggings', `{${enchant_glint.green}}`),
-                        feet: Item.of('twilightforest:steeleaf_boots', `{${enchant_glint.green}}`),
-                        mainhand: Item.of('minecraft:bow', default_nbt),
-                        offhand: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.wither_strong),
+                        head: {
+                            item: Item.of('twilightforest:steeleaf_helmet', `{${enchant_glint.green}}`),
+                            drop_rate: 0.085
+                        },
+                        chest: {
+                            item: Item.of(
+                                'twilightforest:steeleaf_chestplate',
+                                `{${reactive.poison_bounce},${enchant_glint.green}}`
+                            ).enchant('ars_nouveau:reactive', 3),
+                            drop_rate: 0.0
+                        },
+                        legs: {
+                            item: Item.of('twilightforest:steeleaf_leggings', `{${enchant_glint.green}}`),
+                            drop_rate: 0.085
+                        },
+                        feet: {
+                            item: Item.of('twilightforest:steeleaf_boots', `{${enchant_glint.green}}`),
+                            drop_rate: 0.085
+                        },
+                        mainhand: {
+                            item: Item.of('minecraft:bow', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.wither_strong),
+                            drop_rate: 0.085
+                        },
                         summons: [{ mob: 'twilightforest:hedge_spider', count: { min: 5, max: 10 }, spread: 5 }]
                     }
                 }
@@ -488,15 +735,30 @@ const armored_mobs = {
                             level: { min: 5, max: 10 },
                             treasure: false
                         },
-                        head: Item.of('minecraft:leather_helmet', `{display:{color:10826026},${enchant_glint.blank}}`),
-                        chest: Item.of(
-                            'minecraft:leather_chestplate',
-                            `{display:{color:6968645},${enchant_glint.blank}}`
-                        ),
-                        legs: Item.of('minecraft:leather_leggings', `{display:{color:5465909},${enchant_glint.blank}}`),
-                        feet: Item.of('twilightforest:ironwood_boots', default_nbt),
-                        mainhand: Item.of('twilightforest:ironwood_pickaxe', default_nbt),
-                        offhand: 'supplementaries:bomb'
+                        head: {
+                            item: Item.of(
+                                'minecraft:leather_helmet',
+                                `{display:{color:10826026},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        chest: {
+                            item: Item.of(
+                                'minecraft:leather_chestplate',
+                                `{display:{color:6968645},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        legs: {
+                            item: Item.of(
+                                'minecraft:leather_leggings',
+                                `{display:{color:5465909},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        feet: { item: Item.of('twilightforest:ironwood_boots', default_nbt), drop_rate: 0.085 },
+                        mainhand: { item: Item.of('twilightforest:ironwood_pickaxe', default_nbt), drop_rate: 0.085 },
+                        offhand: { item: 'supplementaries:bomb', drop_rate: 0.05 }
                     }
                 }
             ]
@@ -511,9 +773,18 @@ const armored_mobs = {
                             level: { min: 5, max: 10 },
                             treasure: false
                         },
-                        feet: Item.of('twilightforest:ironwood_boots', default_nbt),
-                        mainhand: Item.of('twilightforest:ironwood_pickaxe', default_nbt),
-                        offhand: 'supplementaries:bomb'
+                        feet: {
+                            item: Item.of('twilightforest:ironwood_boots', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        mainhand: {
+                            item: Item.of('twilightforest:ironwood_pickaxe', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: 'supplementaries:bomb',
+                            drop_rate: 0.05
+                        }
                     }
                 }
             ]
@@ -528,7 +799,10 @@ const armored_mobs = {
                             level: { min: 5, max: 10 },
                             treasure: false
                         },
-                        mainhand: Item.of('farmersdelight:flint_knife', default_nbt)
+                        mainhand: {
+                            item: Item.of('farmersdelight:flint_knife', default_nbt),
+                            drop_rate: 0.085
+                        }
                     }
                 }
             ]
@@ -538,10 +812,13 @@ const armored_mobs = {
                 {
                     weight: 100,
                     set: {
-                        chest: Item.of(
-                            'minecraft:golden_chestplate',
-                            `{${reactive.life_link},${enchant_glint.blank}}`
-                        ).enchant('ars_nouveau:reactive', 4)
+                        chest: {
+                            item: Item.of(
+                                'minecraft:golden_chestplate',
+                                `{${reactive.life_link},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 4),
+                            drop_rate: 0.0
+                        }
                     }
                 }
             ]
@@ -557,13 +834,25 @@ const armored_mobs = {
                             level: { min: 10, max: 30 },
                             treasure: false
                         },
-                        head: Item.of('blue_skies:aquite_helmet', default_nbt),
-                        chest: Item.of('blue_skies:aquite_chestplate', default_nbt).enchant(
-                            'twilightforest:chill_aura',
-                            5
-                        ),
-                        legs: Item.of('blue_skies:aquite_leggings', default_nbt),
-                        feet: Item.of('blue_skies:aquite_boots', default_nbt)
+                        head: {
+                            item: Item.of('blue_skies:aquite_helmet', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        chest: {
+                            item: Item.of('blue_skies:aquite_chestplate', default_nbt).enchant(
+                                'twilightforest:chill_aura',
+                                5
+                            ),
+                            drop_rate: 0.085
+                        },
+                        legs: {
+                            item: Item.of('blue_skies:aquite_leggings', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        feet: {
+                            item: Item.of('blue_skies:aquite_boots', default_nbt),
+                            drop_rate: 0.085
+                        }
                     }
                 }
             ]
@@ -581,11 +870,26 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
-                        head: Item.of('blue_skies:aquite_helmet', default_nbt),
-                        chest: Item.of('blue_skies:aquite_chestplate', default_nbt),
-                        legs: Item.of('blue_skies:aquite_leggings', default_nbt),
-                        feet: Item.of('blue_skies:aquite_boots', default_nbt),
-                        mainhand: Item.of('blue_skies:aquite_axe', default_nbt)
+                        head: {
+                            item: Item.of('blue_skies:aquite_helmet', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        chest: {
+                            item: Item.of('blue_skies:aquite_chestplate', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        legs: {
+                            item: Item.of('blue_skies:aquite_leggings', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        feet: {
+                            item: Item.of('blue_skies:aquite_boots', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        mainhand: {
+                            item: Item.of('blue_skies:aquite_axe', default_nbt),
+                            drop_rate: 0.085
+                        }
                     }
                 }
             ]
@@ -620,7 +924,10 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
-                        mainhand: Item.of('twilightforest:glass_sword', default_nbt)
+                        mainhand: {
+                            item: Item.of('twilightforest:glass_sword', default_nbt),
+                            drop_rate: 0.0
+                        }
                     }
                 }
             ]
@@ -632,23 +939,32 @@ const armored_mobs = {
                 {
                     weight: 75,
                     set: {
-                        head: Item.of(
-                            'minecraft:glow_lichen',
-                            `{${reactive.restoration},${enchant_glint.blank}}`
-                        ).enchant('ars_nouveau:reactive', 2)
+                        head: {
+                            item: Item.of(
+                                'minecraft:glow_lichen',
+                                `{${reactive.restoration},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 2),
+                            drop_rate: 0.0
+                        }
                     }
                 },
                 {
                     weight: 25,
                     set: {
-                        head: Item.of('minecraft:glow_lichen', `{${reactive.hex_zone},${enchant_glint.blank}}`).enchant(
-                            'ars_nouveau:reactive',
-                            2
-                        ),
-                        chest: Item.of(
-                            'minecraft:glow_lichen',
-                            `{${reactive.poison_touch},${enchant_glint.blank}}`
-                        ).enchant('ars_nouveau:reactive', 4)
+                        head: {
+                            item: Item.of(
+                                'minecraft:glow_lichen',
+                                `{${reactive.hex_zone},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 2),
+                            drop_rate: 0.0
+                        },
+                        chest: {
+                            item: Item.of(
+                                'minecraft:glow_lichen',
+                                `{${reactive.poison_touch},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 4)
+                        },
+                        drop_rate: 0.0
                     }
                 }
             ]

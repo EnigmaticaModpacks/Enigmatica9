@@ -20,6 +20,10 @@ EntityEvents.spawned((event) => {
         return;
     }
 
+    // Don't apply buffs to Spirit spawner mobs
+    if (event.entity.fullNBT.hasOwnProperty('Corrupted')) {
+        return;
+    }
     entity_data = event.entity.fullNBT;
     entity_data.ForgeData.enigmatica_equipment = true;
     event.entity.fullNBT = entity_data;
@@ -59,22 +63,52 @@ EntityEvents.spawned((event) => {
 
             // Equip any equipment defined in 'armored_mobs' constant
             if (equipment_set.head) {
-                event.entity.headArmorItem = randomEnchant(equipment_set.head, enchant_level, use_treasure_enchants);
+                event.entity.headArmorItem = randomEnchant(
+                    equipment_set.head.item,
+                    enchant_level,
+                    use_treasure_enchants
+                );
+                event.entity.setDropChance('head', equipment_set.head.drop_rate);
             }
             if (equipment_set.chest) {
-                event.entity.chestArmorItem = randomEnchant(equipment_set.chest, enchant_level, use_treasure_enchants);
+                event.entity.chestArmorItem = randomEnchant(
+                    equipment_set.chest.item,
+                    enchant_level,
+                    use_treasure_enchants
+                );
+                event.entity.setDropChance('chest', equipment_set.chest.drop_rate);
             }
             if (equipment_set.legs) {
-                event.entity.legsArmorItem = randomEnchant(equipment_set.legs, enchant_level, use_treasure_enchants);
+                event.entity.legsArmorItem = randomEnchant(
+                    equipment_set.legs.item,
+                    enchant_level,
+                    use_treasure_enchants
+                );
+                event.entity.setDropChance('legs', equipment_set.legs.drop_rate);
             }
             if (equipment_set.feet) {
-                event.entity.feetArmorItem = randomEnchant(equipment_set.feet, enchant_level, use_treasure_enchants);
+                event.entity.feetArmorItem = randomEnchant(
+                    equipment_set.feet.item,
+                    enchant_level,
+                    use_treasure_enchants
+                );
+                event.entity.setDropChance('feet', equipment_set.feet.drop_rate);
             }
             if (equipment_set.mainhand) {
-                event.entity.mainHandItem = randomEnchant(equipment_set.mainhand, enchant_level, use_treasure_enchants);
+                event.entity.mainHandItem = randomEnchant(
+                    equipment_set.mainhand.item,
+                    enchant_level,
+                    use_treasure_enchants
+                );
+                event.entity.setDropChance('mainhand', equipment_set.mainhand.drop_rate);
             }
             if (equipment_set.offhand) {
-                event.entity.offHandItem = randomEnchant(equipment_set.offhand, enchant_level, use_treasure_enchants);
+                event.entity.offHandItem = randomEnchant(
+                    equipment_set.offhand.item,
+                    enchant_level,
+                    use_treasure_enchants
+                );
+                event.entity.setDropChance('offhand', equipment_set.offhand.drop_rate);
             }
             if (equipment_set.custom_name) {
                 entity_data = event.entity.fullNBT;
@@ -115,16 +149,8 @@ EntityEvents.spawned((event) => {
                     }
                 });
             }
-
-            // Optional Disable Equipment Drops
-            if (equipment_set.disable_drops) {
-                entity_data = event.entity.fullNBT;
-                entity_data.ArmorDropChances = `[0.0f, 0.0f, 0.0f, 0.0f]`;
-                event.entity.fullNBT = entity_data;
-
-                // entity_data = event.entity.fullNBT;
-                // console.log(entity_data);
-            }
+            console.log(mob_type);
+            console.log(event.entity.fullNBT);
         }
     }
 });
