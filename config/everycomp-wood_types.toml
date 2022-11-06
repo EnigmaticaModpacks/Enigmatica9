@@ -1,17 +1,6 @@
 
 [wood_type]
 
-	[wood_type.minecraft]
-		oak = true
-		spruce = true
-		birch = true
-		jungle = true
-		acacia = true
-		dark_oak = true
-		mangrove = true
-		crimson = true
-		warped = true
-
 	[wood_type.quark]
 		azalea = true
 		blossom = true
@@ -69,17 +58,6 @@
 		sythian = true
 
 [leaves_type]
-
-	[leaves_type.minecraft]
-		oak = true
-		spruce = true
-		birch = true
-		jungle = true
-		acacia = true
-		dark_oak = true
-		mangrove = true
-		azalea = true
-		flowering_azalea = true
 
 	[leaves_type.blue_skies]
 		bluebright = true
