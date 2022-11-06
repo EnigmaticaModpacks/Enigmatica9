@@ -1,3 +1,13 @@
+### Enigmatica 9 v1.1.1
+
+_Using Forge-1.19.2-43.1.47_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.1.1.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.1.1.md)_
+
+**Fixed Bugs**
+
+-   Server files seem to be missing PolyLib [\#121](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/121)
+
+---
+
 ### Enigmatica 9 v1.1.0
 
 _Using Forge-1.19.2-43.1.47_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.1.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.1.0.md)_
