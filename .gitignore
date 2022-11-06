@@ -139,7 +139,6 @@ config/extremesoundmuffler-client.toml
 config/mininggadgets-client.toml
 config/pneumaticcraft/ArmorFeatureStatus.cfg
 config/pneumaticcraft/PneumaticArmorHUDLayout.cfg
-config/jei-client.toml
 config/refinedstorage-client.toml
 config/mcjtylib-client.toml
 config/rare-ice.properties
@@ -182,7 +181,6 @@ github-changelog-generator.bat
 config/oculus.properties
 config/supplementaries-client.toml
 config/darkmodeeverywhere-client.toml
-config/jei/jei-client.ini
 config/darkmodeeverywhereshaders.json
 config/ae2/client.json
 config/explorerscompass-client.toml
