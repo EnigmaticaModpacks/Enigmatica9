@@ -115,6 +115,16 @@ EntityEvents.spawned((event) => {
                     }
                 });
             }
+
+            // Optional Disable Equipment Drops
+            if (equipment_set.disable_drops) {
+                entity_data = event.entity.fullNBT;
+                entity_data.ArmorDropChances = `[0.0f, 0.0f, 0.0f, 0.0f]`;
+                event.entity.fullNBT = entity_data;
+
+                // entity_data = event.entity.fullNBT;
+                // console.log(entity_data);
+            }
         }
     }
 });

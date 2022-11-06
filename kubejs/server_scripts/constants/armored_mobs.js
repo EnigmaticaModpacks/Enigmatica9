@@ -48,7 +48,11 @@ const armored_mobs = {
                             chance: 0.5,
                             level: { min: 10, max: 20 },
                             treasure: false
-                        }
+                        },
+                        chest: Item.of(
+                            'minecraft:leather_chestplate',
+                            `{display:{color:2624321},${reactive.life_link},${enchant_glint.blank}}`
+                        ).enchant('ars_nouveau:reactive', 3)
                         // chest: 'hexerei:witch_chestplate',
                         // feet: 'hexerei:witch_boots'
                     }
@@ -366,6 +370,40 @@ const armored_mobs = {
                     }
                 }
             ]
+        },
+        enderman: {
+            equipment: [
+                {
+                    weight: 50,
+                    set: {
+                        max_health: 60,
+                        enchant: {
+                            chance: 0.5,
+                            level: { min: 10, max: 20 },
+                            treasure: false
+                        },
+                        chest: Item.of(
+                            'minecraft:leather_chestplate',
+                            `{display:{color:2624321},${reactive.come_here},${enchant_glint.blank}}`
+                        ).enchant('ars_nouveau:reactive', 3)
+                    }
+                },
+                {
+                    weight: 50000,
+                    set: {
+                        max_health: 60,
+                        enchant: {
+                            chance: 0.5,
+                            level: { min: 10, max: 20 },
+                            treasure: false
+                        },
+                        chest: Item.of(
+                            'minecraft:leather_chestplate',
+                            `{display:{color:2624321},${reactive.vanish},${enchant_glint.blank}}`
+                        ).enchant('ars_nouveau:reactive', 3)
+                    }
+                }
+            ]
         }
     },
     twilightforest: {
@@ -494,6 +532,41 @@ const armored_mobs = {
                     }
                 }
             ]
+        },
+        lich: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        chest: Item.of(
+                            'minecraft:golden_chestplate',
+                            `{${reactive.life_link},${enchant_glint.blank}}`
+                        ).enchant('ars_nouveau:reactive', 4)
+                    }
+                }
+            ]
+        },
+        snow_queen: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        max_health: 300,
+                        enchant: {
+                            chance: 1.0,
+                            level: { min: 10, max: 30 },
+                            treasure: false
+                        },
+                        head: Item.of('blue_skies:aquite_helmet', default_nbt),
+                        chest: Item.of('blue_skies:aquite_chestplate', default_nbt).enchant(
+                            'twilightforest:chill_aura',
+                            5
+                        ),
+                        legs: Item.of('blue_skies:aquite_leggings', default_nbt),
+                        feet: Item.of('blue_skies:aquite_boots', default_nbt)
+                    }
+                }
+            ]
         }
     },
     blue_skies: {
@@ -548,6 +621,34 @@ const armored_mobs = {
                             treasure: false
                         },
                         mainhand: Item.of('twilightforest:glass_sword', default_nbt)
+                    }
+                }
+            ]
+        }
+    },
+    cnb: {
+        sporeling: {
+            equipment: [
+                {
+                    weight: 75,
+                    set: {
+                        head: Item.of(
+                            'minecraft:glow_lichen',
+                            `{${reactive.restoration},${enchant_glint.blank}}`
+                        ).enchant('ars_nouveau:reactive', 2)
+                    }
+                },
+                {
+                    weight: 25,
+                    set: {
+                        head: Item.of('minecraft:glow_lichen', `{${reactive.hex_zone},${enchant_glint.blank}}`).enchant(
+                            'ars_nouveau:reactive',
+                            2
+                        ),
+                        chest: Item.of(
+                            'minecraft:glow_lichen',
+                            `{${reactive.poison_touch},${enchant_glint.blank}}`
+                        ).enchant('ars_nouveau:reactive', 4)
                     }
                 }
             ]
