@@ -2,26 +2,25 @@ EntityEvents.spawned((event) => {
     if (!event.entity.isLiving()) {
         return;
     }
-    let entity_data;
 
+    // Don't apply buffs to Spirit spawner mobs
+    if (event.entity.fullNBT.hasOwnProperty('Corrupted')) {
+        return;
+    }
+
+    // Don't apply buffs to Apotheosis bosses
+    let entity_data;
     if (!event.entity.fullNBT.hasOwnProperty('ForgeData')) {
         entity_data = event.entity.fullNBT;
         entity_data.ForgeData = {};
         event.entity.fullNBT = entity_data;
     }
-
     if (event.entity.fullNBT.ForgeData.hasOwnProperty('apoth.boss')) {
-        console.log(event.entity.fullNBT);
         return;
     }
 
-    // Check to prevent re-applying buffs to mobs 'spawned' by releasing from a soul gem.
+    // Don't re-apply buffs to already checked mobs
     if (event.entity.fullNBT.ForgeData.hasOwnProperty('enigmatica_equipment')) {
-        return;
-    }
-
-    // Don't apply buffs to Spirit spawner mobs
-    if (event.entity.fullNBT.hasOwnProperty('Corrupted')) {
         return;
     }
     entity_data = event.entity.fullNBT;
@@ -141,7 +140,7 @@ EntityEvents.spawned((event) => {
                         let y = y_coord;
                         let z = randomFloat(z_coord, spread);
                         let command = `/execute in ${mob_dimension} run summon ${summon.mob} ${x} ${y} ${z}`;
-                        // console.log(command);
+
                         event.server.runCommandSilent(command);
                         event.server.runCommandSilent(
                             `/execute in ${mob_dimension} run particle minecraft:explosion_emitter ${x} ${y} ${z}`
@@ -149,23 +148,6 @@ EntityEvents.spawned((event) => {
                     }
                 });
             }
-            console.log(mob_type);
-            console.log(event.entity.fullNBT);
         }
     }
 });
-
-// Get the full NBT of the mob.
-// let entity_data = event.entity.fullNBT;
-
-// console.log(Object.keys(event));
-// console.log(Object.keys(event.entity));
-// // Set up some equipment
-// let head = { Count: 1, id: 'minecraft:netherite_helmet' };
-// let chest = { Count: 1, id: 'minecraft:netherite_chestplate' };
-// let legs = { Count: 1, id: 'minecraft:netherite_leggings' };
-// let feet = { Count: 1, id: 'minecraft:netherite_boots' };
-// entity_data.ArmorItems = [feet, legs, chest, head];
-
-// // Set the new NBT.
-// event.entity.fullNBT = entity_data;
