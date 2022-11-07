@@ -2,24 +2,27 @@ EntityEvents.spawned((event) => {
     if (!event.entity.isLiving()) {
         return;
     }
-    let entity_data;
 
+    // Don't apply buffs to Spirit spawner mobs
+    if (event.entity.fullNBT.hasOwnProperty('Corrupted')) {
+        return;
+    }
+
+    // Don't apply buffs to Apotheosis bosses
+    let entity_data;
     if (!event.entity.fullNBT.hasOwnProperty('ForgeData')) {
         entity_data = event.entity.fullNBT;
         entity_data.ForgeData = {};
         event.entity.fullNBT = entity_data;
     }
-
     if (event.entity.fullNBT.ForgeData.hasOwnProperty('apoth.boss')) {
-        console.log(event.entity.fullNBT);
         return;
     }
 
-    // Check to prevent re-applying buffs to mobs 'spawned' by releasing from a soul gem.
+    // Don't re-apply buffs to already checked mobs
     if (event.entity.fullNBT.ForgeData.hasOwnProperty('enigmatica_equipment')) {
         return;
     }
-
     entity_data = event.entity.fullNBT;
     entity_data.ForgeData.enigmatica_equipment = true;
     event.entity.fullNBT = entity_data;
@@ -59,22 +62,52 @@ EntityEvents.spawned((event) => {
 
             // Equip any equipment defined in 'armored_mobs' constant
             if (equipment_set.head) {
-                event.entity.headArmorItem = randomEnchant(equipment_set.head, enchant_level, use_treasure_enchants);
+                event.entity.headArmorItem = randomEnchant(
+                    equipment_set.head.item,
+                    enchant_level,
+                    use_treasure_enchants
+                );
+                event.entity.setDropChance('head', equipment_set.head.drop_rate);
             }
             if (equipment_set.chest) {
-                event.entity.chestArmorItem = randomEnchant(equipment_set.chest, enchant_level, use_treasure_enchants);
+                event.entity.chestArmorItem = randomEnchant(
+                    equipment_set.chest.item,
+                    enchant_level,
+                    use_treasure_enchants
+                );
+                event.entity.setDropChance('chest', equipment_set.chest.drop_rate);
             }
             if (equipment_set.legs) {
-                event.entity.legsArmorItem = randomEnchant(equipment_set.legs, enchant_level, use_treasure_enchants);
+                event.entity.legsArmorItem = randomEnchant(
+                    equipment_set.legs.item,
+                    enchant_level,
+                    use_treasure_enchants
+                );
+                event.entity.setDropChance('legs', equipment_set.legs.drop_rate);
             }
             if (equipment_set.feet) {
-                event.entity.feetArmorItem = randomEnchant(equipment_set.feet, enchant_level, use_treasure_enchants);
+                event.entity.feetArmorItem = randomEnchant(
+                    equipment_set.feet.item,
+                    enchant_level,
+                    use_treasure_enchants
+                );
+                event.entity.setDropChance('feet', equipment_set.feet.drop_rate);
             }
             if (equipment_set.mainhand) {
-                event.entity.mainHandItem = randomEnchant(equipment_set.mainhand, enchant_level, use_treasure_enchants);
+                event.entity.mainHandItem = randomEnchant(
+                    equipment_set.mainhand.item,
+                    enchant_level,
+                    use_treasure_enchants
+                );
+                event.entity.setDropChance('mainhand', equipment_set.mainhand.drop_rate);
             }
             if (equipment_set.offhand) {
-                event.entity.offHandItem = randomEnchant(equipment_set.offhand, enchant_level, use_treasure_enchants);
+                event.entity.offHandItem = randomEnchant(
+                    equipment_set.offhand.item,
+                    enchant_level,
+                    use_treasure_enchants
+                );
+                event.entity.setDropChance('offhand', equipment_set.offhand.drop_rate);
             }
             if (equipment_set.custom_name) {
                 entity_data = event.entity.fullNBT;
@@ -107,7 +140,7 @@ EntityEvents.spawned((event) => {
                         let y = y_coord;
                         let z = randomFloat(z_coord, spread);
                         let command = `/execute in ${mob_dimension} run summon ${summon.mob} ${x} ${y} ${z}`;
-                        // console.log(command);
+
                         event.server.runCommandSilent(command);
                         event.server.runCommandSilent(
                             `/execute in ${mob_dimension} run particle minecraft:explosion_emitter ${x} ${y} ${z}`
@@ -118,18 +151,3 @@ EntityEvents.spawned((event) => {
         }
     }
 });
-
-// Get the full NBT of the mob.
-// let entity_data = event.entity.fullNBT;
-
-// console.log(Object.keys(event));
-// console.log(Object.keys(event.entity));
-// // Set up some equipment
-// let head = { Count: 1, id: 'minecraft:netherite_helmet' };
-// let chest = { Count: 1, id: 'minecraft:netherite_chestplate' };
-// let legs = { Count: 1, id: 'minecraft:netherite_leggings' };
-// let feet = { Count: 1, id: 'minecraft:netherite_boots' };
-// entity_data.ArmorItems = [feet, legs, chest, head];
-
-// // Set the new NBT.
-// event.entity.fullNBT = entity_data;
