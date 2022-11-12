@@ -66,11 +66,11 @@ const playerHas = (item, player) => {
 const randomEnchant = (item, level, treasure) => {
     if (level == 0) {
         return Item.of(item);
+    } else {
+        let EnchantHelper = Java.loadClass('net.minecraft.world.item.enchantment.EnchantmentHelper');
+        let RandomSource = Java.loadClass('net.minecraft.util.RandomSource');
+        return EnchantHelper.enchantItem(RandomSource.create(), Item.of(item), level, treasure);
     }
-    let EnchantHelper = Java.loadClass('net.minecraft.world.item.enchantment.EnchantmentHelper');
-    let RandomSource = Java.loadClass('net.minecraft.util.RandomSource');
-    // return EnchantHelper.m_220292_(RandomSource.m_216327_(), Item.of(item), level, treasure);
-    return EnchantHelper.enchantItem(RandomSource.create(), Item.of(item), level, treasure);
 };
 
 const randomInt = (min, max) => {
@@ -101,71 +101,6 @@ function randomFloat(number, offset) {
     let max = number + offset;
 
     return Math.random() * (max - min + 1) + min;
-}
-
-function generatePool(table, loot_table) {
-    // For help setting up conditions, functions, and non item entries: https://amaury.carrade.eu/minecraft/loot_tables
-    // Minecraft wiki also has great information on how these work
-    table.addPool((pool) => {
-        pool.rolls = pool.rolls ? loot_table.rolls : 1;
-
-        // For special conditions
-        if (loot_table.loot_conditions) {
-            loot_table.loot_conditions.forEach((loot_condition) => {
-                pool.addCondition(loot_condition);
-            });
-        }
-
-        // For special functions
-        if (loot_table.loot_functions) {
-            loot_table.loot_functions.forEach((loot_function) => {
-                pool.addFunction(loot_function);
-            });
-        }
-
-        // For external loot tables
-        if (loot_table.loot_entries) {
-            loot_table.loot_entries.forEach((loot_entry) => {
-                pool.addEntry(loot_entry);
-            });
-        }
-
-        if (loot_table.loot_items) {
-            loot_table.loot_items.forEach((loot_item) => {
-                pool.addItem(Item.of(loot_item.item), loot_item.weight);
-            });
-        }
-
-        if (loot_table.generic_entries) {
-            loot_table.generic_entries.forEach((generic_entry) => {
-                pool.addEntry(generic_entry);
-            });
-        }
-    });
-}
-
-function addEntityLootTable(event, entity, loot_table) {
-    event.addEntity(entity, (table) => {
-        generatePool(table, loot_table);
-    });
-}
-
-function modifyEntityLootTable(event, entity, loot_table) {
-    event.modifyEntity(entity, (table) => {
-        generatePool(table, loot_table);
-    });
-}
-
-function modifyLootTable(event, loot_id, loot_table) {
-    event.modify(loot_id, (table) => {
-        generatePool(table, loot_table);
-    });
-}
-
-function addLootTable(event, loot_id, loot_table) {
-    event.add(loot_id, (table) => {
-        generatePool(table, loot_table);
-    });
 }
 
 function generatePentacleEntry(ritual_name, x_placement, y_placement) {
