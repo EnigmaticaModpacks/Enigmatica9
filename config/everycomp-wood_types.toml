@@ -1,167 +1,297 @@
 
-[wood_type]
+[types]
 
-	[wood_type.quark]
-		azalea = true
-		blossom = true
+	[types.wood_type]
 
-	[wood_type.blue_skies]
-		bluebright = true
-		starlit = true
-		frostbright = true
-		lunar = true
-		dusk = true
-		maple = true
-		cherry = true
+		[types.wood_type.quark]
+			azalea = true
+			blossom = true
 
-	[wood_type.twilightforest]
-		twilight_oak = true
-		canopy = true
-		mangrove = true
-		dark = true
-		time = true
-		transformation = true
-		mining = true
-		sorting = true
+		[types.wood_type.blue_skies]
+			bluebright = true
+			starlit = true
+			frostbright = true
+			lunar = true
+			dusk = true
+			maple = true
+			cherry = true
 
-	[wood_type.naturesaura]
-		ancient = true
+		[types.wood_type.twilightforest]
+			twilight_oak = true
+			canopy = true
+			mangrove = true
+			dark = true
+			time = true
+			transformation = true
+			mining = true
+			sorting = true
 
-	[wood_type.byg]
-		aspen = true
-		baobab = true
-		blue_enchanted = true
-		bulbis = true
-		cherry = true
-		cika = true
-		cypress = true
-		ebony = true
-		ether = true
-		fir = true
-		green_enchanted = true
-		holly = true
-		imparius = true
-		lament = true
-		jacaranda = true
-		mahogany = true
-		white_mangrove = true
-		maple = true
-		nightshade = true
-		palm = true
-		pine = true
-		rainbow_eucalyptus = true
-		redwood = true
-		skyris = true
-		willow = true
-		witch_hazel = true
-		zelkova = true
-		sythian = true
+		[types.wood_type.naturesaura]
+			ancient = true
 
-[leaves_type]
+		[types.wood_type.byg]
+			aspen = true
+			baobab = true
+			blue_enchanted = true
+			bulbis = true
+			cherry = true
+			cika = true
+			cypress = true
+			ebony = true
+			ether = true
+			fir = true
+			green_enchanted = true
+			holly = true
+			imparius = true
+			lament = true
+			jacaranda = true
+			mahogany = true
+			white_mangrove = true
+			maple = true
+			nightshade = true
+			palm = true
+			pine = true
+			rainbow_eucalyptus = true
+			redwood = true
+			skyris = true
+			willow = true
+			witch_hazel = true
+			zelkova = true
+			sythian = true
 
-	[leaves_type.blue_skies]
-		bluebright = true
-		starlit = true
-		frostbright = true
-		lunar = true
-		dusk = true
-		maple = true
-		cherry = true
-		crescent_fruit = true
+	[types.leaves_type]
 
-	[leaves_type.twilightforest]
-		thorn = true
-		beanstalk = true
-		twilight_oak = true
-		canopy = true
-		mangrove = true
-		dark = true
-		rainbow_oak = true
-		time = true
-		transformation = true
-		mining = true
-		sorting = true
+		[types.leaves_type.blue_skies]
+			bluebright = true
+			starlit = true
+			frostbright = true
+			lunar = true
+			dusk = true
+			maple = true
+			cherry = true
+			crescent_fruit = true
 
-	[leaves_type.naturesaura]
-		ancient = true
-		golden = true
+		[types.leaves_type.twilightforest]
+			thorn = true
+			beanstalk = true
+			twilight_oak = true
+			canopy = true
+			mangrove = true
+			dark = true
+			rainbow_oak = true
+			time = true
+			transformation = true
+			mining = true
+			sorting = true
 
-	[leaves_type.ars_nouveau]
-		blue_archwood = true
-		red_archwood = true
-		green_archwood = true
-		purple_archwood = true
+		[types.leaves_type.naturesaura]
+			ancient = true
+			golden = true
 
-	[leaves_type.quark]
-		blue_blossom = true
-		lavender_blossom = true
-		orange_blossom = true
-		pink_blossom = true
-		yellow_blossom = true
-		red_blossom = true
+		[types.leaves_type.ars_nouveau]
+			blue_archwood = true
+			red_archwood = true
+			green_archwood = true
+			purple_archwood = true
 
-	[leaves_type.ars_elemental]
-		yellow_archwood = true
+		[types.leaves_type.quark]
+			blue_blossom = true
+			lavender_blossom = true
+			orange_blossom = true
+			pink_blossom = true
+			yellow_blossom = true
+			red_blossom = true
 
-	[leaves_type.occultism]
-		otherworld = true
+		[types.leaves_type.ars_elemental]
+			yellow_archwood = true
 
-	[leaves_type.byg]
-		araucaria = true
-		blue_spruce = true
-		blooming_witch_hazel = true
-		brown_birch = true
-		brown_oak = true
-		brown_zelkova = true
-		flowering_orchard = true
-		flowering_palo_verde = true
-		holly_berry = true
-		indigo_jacaranda = true
-		flowering_jacaranda = true
-		flowering_indigo_jacaranda = true
-		joshua = true
-		ripe_joshua = true
-		orange_birch = true
-		orange_oak = true
-		orange_spruce = true
-		orchard = true
-		palo_verde = true
-		pink_cherry = true
-		red_birch = true
-		red_maple = true
-		red_oak = true
-		red_spruce = true
-		ripe_orchard = true
-		silver_maple = true
-		green_apple_skyris = true
-		white_cherry = true
-		yellow_birch = true
-		yellow_spruce = true
-		withering_oak = true
-		flowering_nightshade = true
-		firecracker = true
-		aspen = true
-		baobab = true
-		blue_enchanted = true
-		cika = true
-		cypress = true
-		ebony = true
-		ether = true
-		fir = true
-		green_enchanted = true
-		holly = true
-		lament = true
-		jacaranda = true
-		mahogany = true
-		white_mangrove = true
-		maple = true
-		nightshade = true
-		palm = true
-		pine = true
-		rainbow_eucalyptus = true
-		redwood = true
-		skyris = true
-		willow = true
-		witch_hazel = true
-		zelkova = true
+		[types.leaves_type.occultism]
+			otherworld = true
+
+		[types.leaves_type.byg]
+			araucaria = true
+			blue_spruce = true
+			blooming_witch_hazel = true
+			brown_birch = true
+			brown_oak = true
+			brown_zelkova = true
+			flowering_orchard = true
+			flowering_palo_verde = true
+			holly_berry = true
+			indigo_jacaranda = true
+			flowering_jacaranda = true
+			flowering_indigo_jacaranda = true
+			joshua = true
+			ripe_joshua = true
+			orange_birch = true
+			orange_oak = true
+			orange_spruce = true
+			orchard = true
+			palo_verde = true
+			pink_cherry = true
+			red_birch = true
+			red_maple = true
+			red_oak = true
+			red_spruce = true
+			ripe_orchard = true
+			silver_maple = true
+			green_apple_skyris = true
+			white_cherry = true
+			yellow_birch = true
+			yellow_spruce = true
+			withering_oak = true
+			flowering_nightshade = true
+			firecracker = true
+			aspen = true
+			baobab = true
+			blue_enchanted = true
+			cika = true
+			cypress = true
+			ebony = true
+			ether = true
+			fir = true
+			green_enchanted = true
+			holly = true
+			lament = true
+			jacaranda = true
+			mahogany = true
+			white_mangrove = true
+			maple = true
+			nightshade = true
+			palm = true
+			pine = true
+			rainbow_eucalyptus = true
+			redwood = true
+			skyris = true
+			willow = true
+			witch_hazel = true
+			zelkova = true
+
+[entries]
+
+	[entries.wood_type]
+
+		[entries.wood_type.cfm]
+			stripped_kitchen_sink_light = true
+			table = true
+			coffee_table = true
+			park_bench = true
+			stripped_kitchen_counter = true
+			stripped_cabinet = true
+			kitchen_drawer = true
+			desk = true
+			stripped_bedside_cabinet = true
+			desk_cabinet = true
+			stripped_kitchen_drawer = true
+			upgraded_fence = true
+			kitchen_sink_dark = true
+			stripped_desk_cabinet = true
+			kitchen_counter = true
+			upgraded_gate = true
+			stripped_park_bench = true
+			cabinet = true
+			stripped_table = true
+			mail_box = true
+			blinds = true
+			stripped_chair = true
+			crate = true
+			chair = true
+			stripped_mail_box = true
+			stripped_blinds = true
+			stripped_kitchen_sink_dark = true
+			bedside_cabinet = true
+			stripped_desk = true
+			kitchen_sink_light = true
+			stripped_coffee_table = true
+			stripped_crate = true
+
+		[entries.wood_type.mcwdoors]
+			nether_door = true
+			stable_head_door = true
+			japanese2_door = true
+			tropical_door = true
+			barn_glass_door = true
+			cottage_door = true
+			four_panel_door = true
+			western_door = true
+			paper_door = true
+			glass_door = true
+			beach_door = true
+			barn_door = true
+			mystic_door = true
+			japanese_door = true
+			bark_glass_door = true
+			classic_door = true
+			stable_door = true
+			modern_door = true
+
+		[entries.wood_type.decorative_blocks]
+			beam = true
+			support = true
+			seat = true
+			palisade = true
+
+		[entries.wood_type.mcwlights]
+			soul_tiki_torch = true
+			tiki_torch = true
+
+		[entries.wood_type.mcwtrpdoors]
+			classic_trapdoor = true
+			beach_trapdoor = true
+			barn_trapdoor = true
+			four_panel_trapdoor = true
+			glass_trapdoor = true
+			barred_trapdoor = true
+			tropical_trapdoor = true
+			cottage_trapdoor = true
+			paper_trapdoor = true
+			bark_trapdoor = true
+			mystic_trapdoor = true
+
+		[entries.wood_type.mcwfences]
+			highley_gate = true
+			picket_fence = true
+			horse_fence = true
+			pyramid_gate = true
+			stockade_fence = true
+			wired_fence = true
+
+		[entries.wood_type.mcwbridges]
+			bridge_pier = true
+			rope_bridge_stair = true
+			log_bridge_stair = true
+			rail_bridge = true
+			rope_bridge = true
+			log_bridge_middle = true
+
+		[entries.wood_type.create]
+			window_pane = true
+			window = true
+
+		[entries.wood_type.quark]
+			vertical_planks = true
+			chest = true
+			ladder = true
+			post = true
+			trapped_chest = true
+			bookshelf = true
+			stripped_post = true
+
+		[entries.wood_type.twilightforest]
+			banister = true
+			hollow_log_climbable = true
+			hollow_log_horizontal = true
+			hollow_log_vertical = true
+
+		[entries.wood_type.farmersdelight]
+			cabinet = true
+
+	[entries.leaves_type]
+
+		[entries.leaves_type.quark]
+			hedge = true
+			leaf_carpet = true
+
+		[entries.leaves_type.cfm]
+			hedge = true
 

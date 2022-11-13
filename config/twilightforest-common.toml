@@ -30,24 +30,6 @@ skull_candles = false
 	#If true, the return portal will spawn for new players that were sent to the TF if `spawn_in_tf` is true.
 	portalForNewPlayer = false
 
-#Defines custom stalactites generated in hollow hills.
-#Format is "modid:block size maxLength minHeight weight", where the properties are:
-#Size - the maximum length of the stalactite relative to the space between hill floor and ceiling,
-#Max length - maximum length of a stalactite in blocks,
-#Min height - minimum space between the hill floor and the stalactite to let it generate,
-#Weight - how often it generates.
-#
-#For example: "minecraft:iron_ore 0.7 8 1 24" would add a stalactite equal to the default iron ore stalactite.
-["Custom Hollow Hill Stalactites"]
-	#Blocks generating as stalactites in large hills only
-	largeHill = []
-	#Blocks generating as stalactites in medium and large hills
-	mediumHill = []
-	#Blocks generating as stalactites in all hills
-	smallHill = []
-	#If true, default stalactites and stalactites defined by other mods will not be used.
-	useConfigOnly = false
-
 #Settings for all things related to the uncrafting table.
 ["Uncrafting Table"]
 	#If you don't want to disable uncrafting altogether, and would rather disable certain recipes, this is for you.

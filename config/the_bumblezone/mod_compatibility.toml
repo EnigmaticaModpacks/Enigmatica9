@@ -99,6 +99,13 @@
 		#
 		#Range: 0.0 ~ 1.0
 		PBOreHoneycombSpawnRateSpiderBeeDungeon = 0.12
+		# 
+		#-----------------------------------------------------
+		#
+		# Whether thrown Enderpearls hitting the top hitbox portion of mobs wearing
+		# Productive Bees's Bee Nest Helmets will teleport the thrower to Bumblezone dimension. 
+		#
+		allowEnderpearledBeeNestHelmetTeleporation = true
 
 	["Mod Compatibility Options"."Friends and Foes Options"]
 		# 
@@ -115,4 +122,22 @@
 		# Adds Bumblezone items symbols to Quark's enchantment tooltips!
 		#
 		injectBzItemsIntoQuarkEnchantmentTooltipsCompat = true
+
+	["Mod Compatibility Options"."Dreamland Biomes Options"]
+		# 
+		#-----------------------------------------------------
+		#
+		# Whether thrown Enderpearls hitting the top portion of Dreamland biome's Bumble Beast hitbox
+		# will teleport the thrower to Bumblezone dimension. 
+		#
+		allowEnderpearledBumbleBeastTeleporation = true
+
+	["Mod Compatibility Options"."Buzzier Bees Options"]
+		# 
+		#-----------------------------------------------------
+		#
+		# Allow Bee Bottle to turn Empty Honeycomb Brood blocks into 
+		# a regular Honeycomb Brood Block with a larva inside! 
+		#
+		allowBeeBottleRevivingEmptyBroodBlock = true
 

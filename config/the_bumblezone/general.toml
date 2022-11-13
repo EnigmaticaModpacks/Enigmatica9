@@ -109,4 +109,20 @@
 	#
 	#Range: -5 ~ 5
 	crystallineFlowerExtraTierCost = 0
+	# 
+	#-----------------------------------------------------
+	#
+	# How long in seconds this music disc will be playing music.
+	# This is used for the server to know when to make Allays stop dancing when Jukebox plays this music disc.
+	#
+	#Range: 0 ~ 1000000
+	musicDiscTimeLengthBeeLaxingWithTheHomBees = 300
+	# 
+	#-----------------------------------------------------
+	#
+	# How long in seconds this music disc will be playing music.
+	# This is used for the server to know when to make Allays stop dancing when Jukebox plays this music disc.
+	#
+	#Range: 0 ~ 1000000
+	musicDiscTimeLengthLaBeeDaLoca = 176
 

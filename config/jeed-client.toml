@@ -4,6 +4,4 @@ effect_box = true
 hidden_effects = [""]
 #Show effect colors in tooltip
 effect_color = true
-#Show ingredients list along with an effect description
-ingredients_list = true
 

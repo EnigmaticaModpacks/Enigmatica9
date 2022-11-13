@@ -5,6 +5,8 @@
 	[blocks.bamboo_spikes]
 		#Alternative mode for bamboo spikes. Allows only harmful effects to be applied on them and they obtain infinite durability
 		alternative_mode = true
+		#Allows entities killed by spikes to drop loot as if they were killed by a player
+		player_loot = false
 
 	[blocks.planter]
 		#Makes so saplings that grow in a planter will break it turning into rooted dirt
@@ -202,6 +204,11 @@
 		#Duration in seconts of speed effect garanted to horses that eat a sugar cube
 		#Range: 0 ~ 1000
 		horse_speed_duration = 10
+
+	[blocks.urn]
+		#Chance for an urn to spawn a critter from the urn_spawn tag
+		#Range: 0.0 ~ 1.0
+		critter_spawn_chance = 0.009999999776482582
 
 #Configure spawning conditions
 [spawns]
