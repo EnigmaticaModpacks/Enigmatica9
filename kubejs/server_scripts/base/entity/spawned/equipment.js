@@ -56,6 +56,7 @@ EntityEvents.spawned((event) => {
         if (Math.random() < equipment_set.enchant.chance) {
             enchant_level = randomInt(equipment_set.enchant.level.min, equipment_set.enchant.level.max);
         }
+
         // Allow treasure enchants, such as Mending, to appear on the equipment
         // Default to false if not specified in 'armored_mobs' constant
         if (equipment_set.enchant.treasure) {

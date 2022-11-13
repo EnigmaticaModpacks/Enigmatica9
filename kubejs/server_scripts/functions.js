@@ -63,19 +63,36 @@ const playerHas = (item, player) => {
     return player.inventory.find(item) != -1;
 };
 
-const randomEnchant = (item, level, treasure) => {
+const RandomSource = Java.loadClass('net.minecraft.util.RandomSource');
+const RealEnchantHelper = Java.loadClass('shadows.apotheosis.ench.table.RealEnchantmentHelper');
+
+function randomEnchant(item, level, treasure) {
     if (level == 0) {
         return Item.of(item);
-    } else {
-        let EnchantHelper = Java.loadClass('net.minecraft.world.item.enchantment.EnchantmentHelper');
-        let RandomSource = Java.loadClass('net.minecraft.util.RandomSource');
-        return EnchantHelper.enchantItem(RandomSource.create(), Item.of(item), level, treasure);
     }
-};
 
-const randomInt = (min, max) => {
+    // shadows.apotheosis.ench.table.RealEnchantmentHelper.selectEnchantment(RandomSource rand, ItemStack stack, int level, float quanta, float arcana, float rectification, boolean treasure)
+    let enchants = RealEnchantHelper.selectEnchantment(
+        RandomSource.create(),
+        Item.of(item),
+        level,
+        30.0,
+        0.0,
+        0.0,
+        treasure
+    );
+
+    let enchantedItem = Item.of(item);
+    enchants.forEach((enchant) => {
+        enchantedItem.enchant(enchant.enchantment, enchant.level);
+    });
+
+    return enchantedItem;
+}
+
+function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
-};
+}
 
 function weightedEquipment(options) {
     let i;
