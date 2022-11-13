@@ -84,7 +84,7 @@ function randomEnchant(item, level, treasure) {
 
     let enchantedItem = Item.of(item);
     enchants.forEach((enchant) => {
-        enchantedItem.enchant(enchant.enchantment, enchant.level);
+        enchantedItem = Item.of(enchantedItem).enchant(enchant.enchantment, enchant.level);
     });
 
     return enchantedItem;

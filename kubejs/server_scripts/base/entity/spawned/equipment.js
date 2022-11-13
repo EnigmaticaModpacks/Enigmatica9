@@ -53,6 +53,7 @@ EntityEvents.spawned((event) => {
     let use_treasure_enchants = false;
     if (equipment_set.enchant) {
         // Sets the enchantment level to a random integer between two values. Defaults to 0 (disabled) if not specified in 'armored_mobs' constant
+
         if (Math.random() < equipment_set.enchant.chance) {
             enchant_level = randomInt(equipment_set.enchant.level.min, equipment_set.enchant.level.max);
         }
