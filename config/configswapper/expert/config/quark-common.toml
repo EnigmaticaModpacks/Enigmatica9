@@ -1328,11 +1328,11 @@
 		#Resets all villager discounts when zombified to prevent reducing prices to ridiculous levels
 		"Nerf Villager Discount" = true
 		#Makes Iron Golems not drop Iron Ingots
-		"Disable Iron Farms" = true
+		"Disable Iron Farms" = false
 		#Makes Boats not glide on ice
 		"Disable Ice Roads" = false
 		#Makes Sheep not drop Wool when killed
-		"Disable Wool Drops" = true
+		"Disable Wool Drops" = false
 
 	[experimental.enchantments_begone]
 		"Enchantments To Begone" = [
@@ -1342,7 +1342,8 @@
 			"minecraft:respiration",
 			"minecraft:binding_curse",
 			"minecraft:vanishing_curse",
-			"supplementaries:stasis"
+			"supplementaries:stasis",
+			"minecraft:mending"
 		]
 
 	[experimental.adjustable_chat]

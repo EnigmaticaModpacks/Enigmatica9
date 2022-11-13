@@ -545,7 +545,7 @@ const armored_mobs = {
                         effects: [{ type: 'minecraft:resistance', amplifier: 1 }],
                         max_health: 40,
                         enchant: {
-                            chance: 0.5,
+                            chance: 1.0,
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
