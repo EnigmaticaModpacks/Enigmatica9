@@ -1,0 +1,6 @@
+
+["General Options"]
+	#
+	#Change the Creeper Overhaul creepers to destroy blocks or not.
+	destroyBlocks = true
+
