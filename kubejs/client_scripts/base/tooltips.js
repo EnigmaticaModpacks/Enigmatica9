@@ -278,9 +278,7 @@ ItemEvents.tooltip((event) => {
                 'naturesaura:auto_crafter'
             ],
             text: [Text.of(`Auto-crafter`).green()]
-        }
-
-        /*
+        },
         {
             items: [
                 'engineersdecor:rebar_concrete_tile_stairs',
@@ -290,14 +288,12 @@ ItemEvents.tooltip((event) => {
                 'engineersdecor:rebar_concrete_stairs',
                 'engineersdecor:rebar_concrete_slab',
                 'engineersdecor:rebar_concrete',
-                'thermal:enderium_glass',
-                'thermal:lumium_glass',
-                'thermal:signalum_glass',
-                'thermal:obsidian_glass',
-                'engineersdecor:panzerglass_block'
+                'engineersdecor:panzerglass_block',
+                'engineersdecor:panzerglass_slab'
             ],
             text: [Text.of('Immune to the Wither').color('#4F0D75')]
-        },  
+        }
+        /* 
         {
             items: ['clockout:clockout_block'],
             text: [Text.of(`Outputs redstone when the player is online.`).aqua()]
@@ -307,5 +303,9 @@ ItemEvents.tooltip((event) => {
 
     recipes.forEach((recipe) => {
         event.add(recipe.items, recipe.text);
+    });
+
+    jei.base.items.disabled.forEach((item) => {
+        event.add(item, [Text.of(disabled_item_tooltip).red()]);
     });
 });

@@ -3,6 +3,8 @@
 const disabled_item_message =
     "This item has been disabled, if you managed to obtain it please report it on Enigmatica 9's issue tracker: https://github.com/EnigmaticaModpacks/Enigmatica9/issues";
 
+const disabled_item_tooltip = 'This item has been disabled.';
+
 const jei = {
     base: { items: { hidden: [], disabled: [] }, categories: { hidden: [] } },
     normal: { items: { hidden: [], disabled: [] }, categories: { hidden: [] } },

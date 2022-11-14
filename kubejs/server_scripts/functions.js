@@ -120,7 +120,7 @@ function randomFloat(number, offset) {
     return Math.random() * (max - min + 1) + min;
 }
 
-function generatePentacleEntry(ritual_name, x_placement, y_placement) {
+function generatePentacleEntry(ritual_name, x_placement, y_placement, parents) {
     let entry = {
         name: ritual_name,
         background_u_index: 0,
@@ -148,6 +148,7 @@ function generatePentacleEntry(ritual_name, x_placement, y_placement) {
                 text: ''
             }
         ],
+        parents: parents,
         x: x_placement,
         y: y_placement
     };
