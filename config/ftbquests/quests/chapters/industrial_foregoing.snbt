@@ -5,7 +5,6 @@
 	filename: "industrial_foregoing"
 	title: "Industrial Foregoing"
 	icon: "industrialforegoing:latex_processing_unit"
-	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -14,13 +13,8 @@
 			icon: "industrialforegoing:plastic"
 			x: 1.5d
 			y: -9.0d
-			description: [
-				"This mod provides a wide range of machines to automate various tasks. This questline introduces some key machines (but not ALL the machines, as there are quite a few)."
-				""
-				"There are currently four (craftable) tiers of IF machine frame. Right now, you can only make the lowest-tier version."
-			]
-			size: 1.5d
-			optional: true
+			shape: "hexagon"
+			description: ["Industrial Foregoing provides a wide range of machines to automate various farming related tasks. From growing plants and breeding animals, to duplicating mobs and drilling for resources."]
 			id: "000000000000004A"
 			tasks: [{
 				id: "452B662F54BEAD8D"
@@ -44,9 +38,10 @@
 			]
 		}
 		{
-			x: -1.0d
-			y: -5.5d
-			description: ["The Fluid Extractor, shockingly, extracts fluid. Place one facing a log block, and it will slowly break down the log while producing Latex. Power is optional, but speeds up the process by a factor of 2.5. Acacia logs give the best yield."]
+			x: -1.5d
+			y: -6.0d
+			description: ["The Fluid Extractor slowly drains the fluids from blocks placed in front of it, such as logs. Power is optional but will speed up the machine dramatically. This is the primary source of Latex used to make Rubber, a vital resource used throughout the mod. "]
+			dependencies: ["1ABAC3F1FBB01AA9"]
 			id: "000000000000004B"
 			tasks: [{
 				id: "000000000000004C"
@@ -69,26 +64,17 @@
 					}
 				}
 			}]
-			rewards: [
-				{
-					id: "0000000000000628"
-					type: "item"
-					title: "Acacia Log"
-					item: "minecraft:acacia_log"
-					count: 32
-				}
-				{
-					id: "0000000000000CAB"
-					type: "item"
-					title: "Acacia Sapling"
-					item: "minecraft:acacia_sapling"
-					count: 8
-				}
-			]
+			rewards: [{
+				id: "0000000000000628"
+				type: "item"
+				title: "Acacia Log"
+				item: "minecraft:acacia_log"
+				count: 32
+			}]
 		}
 		{
-			x: -1.0d
-			y: -4.5d
+			x: -1.5d
+			y: -5.0d
 			description: ["The Latex Processing Unit takes latex, water, and power as inputs to produce Tiny Dry Rubber. This can be crafted into Dry Rubber, which in turn is smelted into Plastic, a critical resource."]
 			dependencies: ["000000000000004B"]
 			id: "000000000000004F"
@@ -108,31 +94,15 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: 4.5d
 			y: -6.0d
 			description: ["The Mob Slaughter Factory kills mobs and animals in its area of effect. Entities slain in this way do not drop anything, but are converted to Liquid Meat and Pink Slime, liquids that can be piped out of the block."]
+			dependencies: ["4217AB14E65F5524"]
 			id: "0000000000000053"
 			tasks: [{
 				id: "0000000000000054"
 				type: "item"
-				title: "Mob Slaughter Factory"
-				icon: "industrialforegoing:mob_slaughter_factory"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "industrialforegoing:pink_slime_bucket"
-								Count: 1b
-							}
-							{
-								id: "industrialforegoing:mob_slaughter_factory"
-								Count: 1b
-							}
-						]
-					}
-				}
+				item: "industrialforegoing:mob_slaughter_factory"
 			}]
 			rewards: [{
 				id: "0000000000000626"
@@ -142,9 +112,9 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -3.5d
-			description: ["The Dissolution Chamber requires power and recipe-dependent items/fluids to craft various items."]
+			x: -1.5d
+			y: -4.0d
+			description: ["By providing water, latex, and some energy, the Latex Processing Unit is able to reduce liquid latex down into Tiny Dry Rubber, which may then be processed further int Plastic. "]
 			dependencies: [
 				"000000000000004C"
 				"000000000000004F"
@@ -175,19 +145,42 @@
 					}
 				}
 			}
-			x: 11.0d
-			y: -0.5d
-			description: ["Addons can increase the range, speed, or efficiency of most machines. As default operating areas are usually quite small, addons are important!"]
+			x: -2.5d
+			y: -3.0d
+			description: [
+				"Machine Addons break down into four categories: speed, efficiency, processing, and range."
+				""
+				"Speed: Increases the operating speed of the machine"
+				""
+				"Efficiency: Reduces the energy requirements of the machine"
+				""
+				"Processing: Allows the machine to perform multiple operations per process"
+				""
+				"Range: Increases the working area of the machine"
+				""
+				"Not all machines can accept all addons. "
+			]
+			dependencies: ["0000000000000057"]
+			min_width: 300
 			id: "0000000000000076"
 			tasks: [{
 				id: "35428F7A336EE4A1"
 				type: "item"
 				title: "Any Addon"
-				item: {
-					id: "itemfilters:tag"
+				icon: {
+					id: "industrialforegoing:range_addon11"
 					Count: 1b
 					tag: {
-						value: "industrialforegoing:addons"
+						TitaniumAugment: {
+							Range: 11.0f
+						}
+					}
+				}
+				item: {
+					id: "itemfilters:id_regex"
+					Count: 1b
+					tag: {
+						value: "industrialforegoing:.*_addon"
 					}
 				}
 			}]
@@ -201,9 +194,10 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: 4.5d
 			y: -4.0d
 			description: ["The Mob Crusher kills mobs, producing Essence and normal mob drops."]
+			dependencies: ["68F315FF23CD8A22"]
 			id: "000000000000007A"
 			tasks: [{
 				id: "000000000000007B"
@@ -220,8 +214,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: -3.0d
+			x: 7.5d
+			y: -4.5d
 			description: ["These machines, when provided with power and Essence, will act like several enchanting related machines. Essence can be generated by using the Resourceful Furnace or Mob Crusher."]
 			dependencies: ["000000000000007A"]
 			id: "000000000000007C"
@@ -284,8 +278,8 @@
 			]
 		}
 		{
-			x: 8.0d
-			y: -4.0d
+			x: 9.0d
+			y: -5.0d
 			description: ["This machine is a one-stop shop for cobblestone processing. It can generate cobblestone from lava/water, then perform up to three sequential operations to craft products like stone bricks or sand."]
 			id: "000000000000007E"
 			tasks: [{
@@ -303,8 +297,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: -5.0d
+			x: 15.0d
+			y: 0.0d
 			description: ["The Bioreactor can process up to nine different types of plant-based items at once to make Biofuel; the more slots that are filled, the higher the efficiency. Biofuel can be used to make power with the Biofuel Generator, or to run Infinity tools."]
 			id: "0000000000000080"
 			tasks: [{
@@ -337,8 +331,8 @@
 			]
 		}
 		{
-			x: 2.0d
-			y: 1.0d
+			x: 16.0d
+			y: 0.5d
 			description: ["The Infinity Drill is powered by Biofuel and can mine increasingly large areas depending on its RF charge level."]
 			id: "0000000000000082"
 			tasks: [{
@@ -391,9 +385,10 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: -6.0d
-			description: ["The Plant Fertilizer automatically fertilizes plants (believe it or not) with Bonemeal or Industrial Fertilizer."]
+			x: 2.5d
+			y: -4.0d
+			description: ["By automatically applying Fertilizer or Bone Meal, the Plant Fertilizer drastically speeds up crop growth in its working area. "]
+			dependencies: ["18A9325E49C29061"]
 			id: "0000000000000086"
 			tasks: [{
 				id: "0000000000000087"
@@ -409,16 +404,29 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: -1.5d
+			icon: "industrialforegoing:conveyor"
+			x: 11.0d
+			y: 0.0d
 			description: ["IF conveyor belts move entities (not items, unlike IE belts). Several types of conveyor belt upgrades are available; see JEI."]
-			dependencies: ["000000000000004C"]
+			dependencies: ["3CEEDE960279FE48"]
 			id: "0000000000000088"
-			tasks: [{
-				id: "0000000000000089"
-				type: "item"
-				item: "industrialforegoing:conveyor"
-			}]
+			tasks: [
+				{
+					id: "0000000000000089"
+					type: "item"
+					item: "industrialforegoing:conveyor"
+				}
+				{
+					id: "01B09FD0EDFB2B22"
+					type: "item"
+					item: "industrialforegoing:conveyor_insertion_upgrade"
+				}
+				{
+					id: "01365E67BE6AB26F"
+					type: "item"
+					item: "industrialforegoing:conveyor_extraction_upgrade"
+				}
+			]
 			rewards: [{
 				id: "000000000000062B"
 				type: "command"
@@ -659,8 +667,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 0.0d
+			x: 15.0d
+			y: 1.0d
 			description: ["The Infinity Backpack is powered by Biofuel and can hold big amounts of items depending on its RF charge level. It can feed you with meat and it is also used as a magnet."]
 			id: "0000000000000F05"
 			tasks: [{
@@ -709,8 +717,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 1.0d
+			x: 14.0d
+			y: 1.5d
 			description: ["The Infinity Trident is powered by Biofuel and it's a more powerful trident."]
 			id: "0000000000000F07"
 			tasks: [{
@@ -766,8 +774,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 1.0d
+			x: 14.0d
+			y: 0.5d
 			description: ["The Infinity Saw is powered by Biofuel and can chop increasingly large areas depending on its RF charge level."]
 			id: "0000000000000F09"
 			tasks: [{
@@ -820,8 +828,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 1.0d
+			x: 16.0d
+			y: 1.5d
 			description: ["The Infinity Hammer is powered by Biofuel and will damage entities in a large areas depending on its RF charge level. It also has Beheading."]
 			id: "0000000000000F0B"
 			tasks: [{
@@ -875,11 +883,10 @@
 			}]
 		}
 		{
-			x: 10.0d
-			y: 0.5d
+			x: 9.0d
+			y: 0.0d
 			description: ["A block capable of storing big amounts of an item, you can insert or extract items by interacting with the front."]
-			hide_dependency_lines: true
-			dependencies: ["000000000000004A"]
+			dependencies: ["3CEEDE960279FE48"]
 			id: "0000000000000F10"
 			tasks: [{
 				id: "0000000000000F11"
@@ -922,11 +929,10 @@
 			}]
 		}
 		{
-			x: 12.0d
-			y: 0.5d
+			x: 9.0d
+			y: 1.0d
 			description: ["A block capable of storing big amounts of a fluid."]
-			hide_dependency_lines: true
-			dependencies: ["000000000000004A"]
+			dependencies: ["3CEEDE960279FE48"]
 			id: "0000000000000F1A"
 			tasks: [{
 				id: "0000000000000F1B"
@@ -969,10 +975,10 @@
 			}]
 		}
 		{
-			x: 11.0d
-			y: 0.5d
+			x: 10.0d
+			y: 2.0d
 			description: ["This block will store up to 16 black hole units or tanks and will make their contents accessible externally."]
-			hide_dependency_lines: true
+			dependencies: ["3CEEDE960279FE48"]
 			id: "0000000000000F24"
 			tasks: [{
 				id: "0000000000000F25"
@@ -986,9 +992,10 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: 4.5d
 			y: -5.0d
 			description: ["Mechanical Dirt is used to convert FE and Liquid Meat into Mob Spawns. It respects light requirements and will spawn based on the biome it is in. It will also distribute Power and Liquid Meat to adjacent Mechanical Dirt blocks."]
+			dependencies: ["0000000000000053"]
 			id: "68F315FF23CD8A22"
 			tasks: [{
 				id: "3991AE48C18012EC"
@@ -1027,7 +1034,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 5.5d
 			y: -3.0d
 			description: ["The Mob Duplicator will convert FE and Essence into Mobs. Capture the mob you would like to duplicate in a Mob Imprisonment Tool, put it in the Mob Duplicator, and enjoy an endless supply of your mobs."]
 			dependencies: ["000000000000007A"]
@@ -1046,42 +1053,236 @@
 		}
 		{
 			title: "Getting Started: Latex Processing"
-			x: -1.0d
+			icon: "industrialforegoing:dryrubber"
+			x: -1.5d
 			y: -7.0d
+			description: ["Plastic is a critical resource for many endeavors in Industrial Foregoing. Processing it down from Latex will take some time, however, so setting up some basic automation is going to be helpful in the long run. "]
+			dependencies: ["452B662F54BEAD8D"]
 			id: "1ABAC3F1FBB01AA9"
 			tasks: [{
-				id: "38CA93152A67A3A1"
+				id: "6EBED7E976CA0FB3"
 				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+			rewards: [{
+				id: "09CE215EADB18D6A"
+				type: "item"
+				item: "minecraft:acacia_sapling"
+				count: 8
 			}]
 		}
 		{
 			title: "Getting Started: Mob Processing"
-			x: 4.0d
+			icon: "industrialforegoing:mob_imprisonment_tool"
+			x: 4.5d
 			y: -7.0d
+			dependencies: ["452B662F54BEAD8D"]
 			id: "4217AB14E65F5524"
 			tasks: [{
-				id: "2411752A3BD74859"
+				id: "12AE3A01DCDEF828"
 				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
 			}]
 		}
 		{
 			title: "Getting Started: Farm Management"
+			icon: "minecraft:wheat"
 			x: 1.5d
 			y: -7.0d
+			description: ["Industrial Foregoing comes with a variety of machines to help simplify crop farming. "]
+			dependencies: ["452B662F54BEAD8D"]
 			id: "16D2CB00189CDD9E"
 			tasks: [{
-				id: "080881035FF2D4BB"
+				id: "134B21E7ADB38C4D"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+			rewards: [{
+				id: "39966E85E0E9E299"
+				type: "item"
+				item: "minecraft:wheat_seeds"
+				count: 8
+			}]
+		}
+		{
+			icon: "industrialforegoing:straw"
+			x: 10.0d
+			y: -1.0d
+			description: ["While it focuses more on mob and material processing, Industrial Foregoing also offers a number of tools for storing and moving items and fluids. "]
+			dependencies: ["452B662F54BEAD8D"]
+			id: "13E239759123405E"
+			tasks: [{
+				id: "3CEEDE960279FE48"
+				type: "checkmark"
+				title: "IF Storage and Logistics"
+			}]
+		}
+		{
+			title: "Tools and Utility"
+			x: 15.0d
+			y: -1.0d
+			id: "2E7ED909FEF6DD65"
+			tasks: [{
+				id: "69566D2DE7D9DEA7"
 				type: "item"
 			}]
 		}
 		{
-			title: "Logistics"
-			x: 1.5d
-			y: -2.5d
-			id: "13E239759123405E"
+			title: "Transporters"
+			x: 11.0d
+			y: 1.0d
+			description: [
+				"Transporters are small modules that can be used to, well, transport items or fluids between adjacent inventories. Their range is limited, but they can be very fast. And since more than one can go in a single block space, they can be used for easily splitting and sorting machine outputs to other inventories. "
+				""
+				"Speed Addons will make Transporters operatate more quickly, while Efficiency Addons will allow them to move more per operation."
+			]
+			dependencies: ["3CEEDE960279FE48"]
+			id: "0C2C4BCB834F0FF6"
 			tasks: [{
-				id: "1AD7F4F015A5B5DF"
+				id: "486BA7F39E15AFF4"
 				type: "item"
+				title: "Transporters"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "industrialforegoing:item_transporter_type"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:fluid_transporter_type"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:world_transporter_type"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "39D92F4F432AB139"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -6.0d
+			description: [
+				"An excellent addition to any passive animal farm, the Sewer will slowly generate liquid Sewage from the animals in its working area. "
+				""
+				"The Sewer may also gather XP orbs and will convert them directly into Essence. "
+			]
+			dependencies: ["16D2CB00189CDD9E"]
+			id: "138CCC5EC604EBEF"
+			tasks: [{
+				id: "1D2EDA085C10C48D"
+				type: "item"
+				item: "industrialforegoing:sewer"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -5.0d
+			description: ["A simple device for making that Sewage into something a little more useful: Fertilizer."]
+			dependencies: ["138CCC5EC604EBEF"]
+			id: "18A9325E49C29061"
+			tasks: [{
+				id: "401D06401D348995"
+				type: "item"
+				item: "industrialforegoing:sewage_composter"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -5.0d
+			description: [
+				"The Plant Gatherer will rapidly harvest all crops in its working area, extending out in front of the machine. When harvesting, it will remove the entire crop, so coupling it with a Plant Sower is key. "
+				""
+				"As it harvests crops, it will also produce a small amount of Sludge which will need to be processed."
+				""
+				"Providing it with a small amount of Ether Gas will allow it to replant on harvest automatically."
+			]
+			dependencies: ["05CD61331BAB25E3"]
+			id: "2AADE3F99579563F"
+			tasks: [{
+				id: "31EED7D7CDC417D1"
+				type: "item"
+				item: "industrialforegoing:plant_gatherer"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -6.0d
+			description: [
+				"A handy device for replanting crops in an area. It plants seeds in an area above it, allowing it to be hidden out of sight underground. "
+				""
+				"Each input slot may be locked to a specific seed type by first placing a seed in the slot, then clicking the lock button. Each slot then corresponds to one of the colored slots on the left of the interface and to the colored dots on the top of the machine. This indicates in which area the seeds will be placed, with a single Sower easily handling up to nine unique crop plots. "
+			]
+			dependencies: ["16D2CB00189CDD9E"]
+			id: "05CD61331BAB25E3"
+			tasks: [{
+				id: "509B5025C6D86A2A"
+				type: "item"
+				item: "industrialforegoing:plant_sower"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.5d
+			description: [
+				"Hydroponics have been used to facilitate the growth of a variety of plants since their inception, growing stronger more nutrient rich foods."
+				""
+				"The Hydroponic Bed acts as any farmland, allowing most crops to be planted atop it. However, with a bit of power and water, it will speed up the crop growth dramatically. "
+				""
+				"By providing a small amount of Ether Gas, it will even automatically harvest the crop its growing. "
+			]
+			dependencies: ["134B21E7ADB38C4D"]
+			id: "12F279A5A93AAD43"
+			tasks: [{
+				id: "43FC4B011ABB08C9"
+				type: "item"
+				item: "industrialforegoing:hydroponic_bed"
+			}]
+			rewards: [{
+				id: "2E9F2ABF8D261788"
+				type: "command"
+				title: "Epic Industrial Foregoing Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_industrial_foregoing_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.5d
+			description: [
+				"It’s well known that growing mushrooms can be a tricky affair as maintaining proper growing conditions requires a fair amount of effort. "
+				""
+				"The Spores Recreator assists by maintaining those conditions internally, providing optimal growing conditions for mushrooms of all types. A small amount of Water is required for normal mushrooms, while some Lava is required for mushrooms native to the Nether. "
+			]
+			dependencies: ["134B21E7ADB38C4D"]
+			id: "63956867B89A6AF0"
+			tasks: [{
+				id: "595E4F56544EC927"
+				type: "item"
+				item: "industrialforegoing:spores_recreator"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.0d
+			description: ["By refining Sludge produced by a Plant Gatherer, a number of blocks may be produced, such as Clay, Sand, and Soul Sand. "]
+			dependencies: ["2AADE3F99579563F"]
+			id: "218D2F91FD769BEE"
+			tasks: [{
+				id: "10D08B53CA796681"
+				type: "item"
+				item: "industrialforegoing:sludge_refiner"
 			}]
 		}
 	]
