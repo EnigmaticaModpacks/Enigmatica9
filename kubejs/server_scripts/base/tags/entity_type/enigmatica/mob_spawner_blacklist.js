@@ -15,6 +15,7 @@ ServerEvents.tags('entity_type', (event) => {
         'twilightforest:carminite_golem',
         'minecraft:wither',
         'minecraft:ender_dragon',
+        'minecraft:iron_golem',
         'blue_skies:alchemist',
         'blue_skies:summoner',
         'blue_skies:arachnarch',
