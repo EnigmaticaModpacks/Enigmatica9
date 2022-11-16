@@ -276,6 +276,7 @@
 			trapped_chest = true
 			bookshelf = true
 			stripped_post = true
+			vertical_slab = true
 
 		[entries.wood_type.twilightforest]
 			banister = true
