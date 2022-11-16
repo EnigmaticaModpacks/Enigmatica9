@@ -292,6 +292,10 @@ ItemEvents.tooltip((event) => {
                 'engineersdecor:panzerglass_slab'
             ],
             text: [Text.of('Immune to the Wither').color('#4F0D75')]
+        },
+        {
+            items: ['industrialforegoing:mob_duplicator', 'spirit:soul_cage', 'pneumaticcraft:pressurized_spawner'],
+            text: [Text.of('Mob Spawner').green()]
         }
         /* 
         {

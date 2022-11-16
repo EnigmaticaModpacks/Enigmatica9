@@ -285,6 +285,7 @@
 			x: 1.5d
 			y: -0.5d
 			description: ["This machine is a one-stop shop for cobblestone processing. It can generate cobblestone from lava/water, then perform up to three sequential operations to craft products like stone bricks or sand."]
+			dependencies: ["19EC4F3DB2126BBB"]
 			id: "000000000000007E"
 			tasks: [{
 				id: "000000000000007F"
@@ -1132,6 +1133,7 @@
 				""
 				"Once Washed in Meat, the resulting concoction is passed through a Fermentation Station and finally a Sieving Machine that helps remove the metals from the rest."
 			]
+			dependencies: ["19EC4F3DB2126BBB"]
 			id: "42D497134B15C45A"
 			tasks: [
 				{
@@ -1156,6 +1158,7 @@
 			icon: "industrialforegoing:fluid_laser_base"
 			x: 2.5d
 			y: -1.0d
+			dependencies: ["19EC4F3DB2126BBB"]
 			id: "16168AFBB631AC8A"
 			tasks: [
 				{
