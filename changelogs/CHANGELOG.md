@@ -1,3 +1,23 @@
+### Enigmatica 9 v1.2.0
+
+_Using Forge-1.19.2-43.1.52_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.2.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.2.0.md)_
+
+**New Mods**
+
+-   [CC: Tweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked) (by [SquidDev](https://www.curseforge.com/members/SquidDev/projects))
+-   [Creeper Overhaul](https://www.curseforge.com/minecraft/mc-mods/creeper-overhaul) (by [joosh_7889](https://www.curseforge.com/members/joosh_7889/projects))
+-   [Industrial Foregoing](https://www.curseforge.com/minecraft/mc-mods/industrial-foregoing) (by [Buuz135](https://www.curseforge.com/members/Buuz135/projects))
+
+**Improvements**
+
+-   JEI QoL change -\> Increase limit of columns and rows for ingredient list and bookmarks. [\#123](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/123) ([Kanzaji](https://github.com/Kanzaji))
+
+**Fixed Bugs**
+
+-   upgrade from 1.0.2 server to 1.1.1 server breaks purification chamber in mekanism for ore trippling [\#129](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/129)
+-   Fix missing Ore Processing options [\#125](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/125) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Occultism Old Edition book duping [\#89](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/89)
+
 ### Enigmatica 9 v1.1.1
 
 _Using Forge-1.19.2-43.1.47_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.1.1.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.1.1.md)_
