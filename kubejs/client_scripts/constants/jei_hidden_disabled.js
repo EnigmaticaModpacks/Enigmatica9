@@ -3,6 +3,8 @@
 const disabled_item_message =
     "This item has been disabled, if you managed to obtain it please report it on Enigmatica 9's issue tracker: https://github.com/EnigmaticaModpacks/Enigmatica9/issues";
 
+const disabled_item_tooltip = 'This item has been disabled.';
+
 const jei = {
     base: { items: { hidden: [], disabled: [] }, categories: { hidden: [] } },
     normal: { items: { hidden: [], disabled: [] }, categories: { hidden: [] } },
@@ -62,7 +64,15 @@ jei.base.items.hidden = [
     'occultism:debug_foliot_lumberjack',
     'occultism:debug_wand',
     'occultism:miner_debug_unspecialized',
-    'occultism:lighted_air'
+    'occultism:lighted_air',
+    'twilightforest:naga_boss_spawner',
+    'twilightforest:final_boss_boss_spawner',
+    'twilightforest:snow_queen_boss_spawner',
+    'twilightforest:alpha_yeti_boss_spawner',
+    'twilightforest:ur_ghast_boss_spawner',
+    'twilightforest:knight_phantom_boss_spawner',
+    'twilightforest:minoshroom_boss_spawner',
+    'twilightforest:lich_boss_spawner'
 ];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
 

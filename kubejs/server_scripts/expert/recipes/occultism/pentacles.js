@@ -17,8 +17,8 @@ ServerEvents.highPriorityData((event) => {
     let pentacles = [
         {
             name: 'summon_familiar',
-            x_placement: 2,
-            y_placement: -3,
+            x_placement: -9,
+            y_placement: 7,
             mapping: {
                 0: { type: 'modonomicon:block', block: 'occultism:golden_sacrificial_bowl' },
                 P: { type: 'modonomicon:block', block: 'naturesaura:gold_powder' },
@@ -40,12 +40,20 @@ ServerEvents.highPriorityData((event) => {
                     '_PP_____PP_',
                     'F___P_P___F'
                 ]
+            ],
+            parents: [
+                {
+                    entry: 'occultism:pentacles/pentacles_overview',
+                    draw_arrow: true,
+                    line_enabled: true,
+                    line_reversed: false
+                }
             ]
         },
         {
             name: 'summon_evil',
-            x_placement: -2,
-            y_placement: -3,
+            x_placement: -5,
+            y_placement: 7,
             mapping: {
                 0: { type: 'modonomicon:block', block: 'occultism:golden_sacrificial_bowl' },
                 P: { type: 'modonomicon:block', block: 'naturesaura:gold_powder' },
@@ -67,6 +75,14 @@ ServerEvents.highPriorityData((event) => {
                     '__PW___WP__',
                     'F___PSP___F'
                 ]
+            ],
+            parents: [
+                {
+                    entry: 'occultism:pentacles/summon_familiar',
+                    draw_arrow: true,
+                    line_enabled: true,
+                    line_reversed: false
+                }
             ]
         }
     ];
@@ -85,7 +101,7 @@ ServerEvents.highPriorityData((event) => {
         // x and y placement refer to the entry location within the modonomicon
         event.addJson(
             `occultism:modonomicons/dictionary_of_spirits/entries/pentacles/${pentacle.name}.json`,
-            generatePentacleEntry(pentacle.name, pentacle.x_placement, pentacle.y_placement)
+            generatePentacleEntry(pentacle.name, pentacle.x_placement, pentacle.y_placement, pentacle.parents)
         );
     });
 });

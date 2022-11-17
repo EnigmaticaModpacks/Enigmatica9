@@ -1,7 +1,7 @@
 {
 	id: "00000000000000AE"
 	group: "72A9465344128AF9"
-	order_index: 3
+	order_index: 4
 	filename: "pneumaticcraft_repressurized"
 	title: "PneumaticCraft: Repressurized"
 	icon: "pneumaticcraft:pressure_gauge_module"
@@ -710,7 +710,7 @@
 			}]
 		}
 		{
-			x: -20.0d
+			x: -19.5d
 			y: -7.0d
 			subtitle: "Raspberry Pi"
 			description: [
@@ -1713,8 +1713,8 @@
 			}]
 		}
 		{
-			x: -21.0d
-			y: -7.0d
+			x: -20.5d
+			y: -6.5d
 			description: ["When placed on the side of an inventory or a tank, the Transfer Gadget facilitates the transfer of items and fluids into any adjacent tank. It is a bit slow, but has the benefit of not requiring a block space. "]
 			dependencies: ["000000000000011D"]
 			id: "32629D82E446D70B"
@@ -1758,6 +1758,54 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_pneumaticcraft_loot_legendary"
 				player_command: false
 			}]
+		}
+		{
+			title: "Filters"
+			icon: {
+				id: "pneumaticcraft:classify_filter"
+				Count: 1b
+				tag: {
+					Filter: {
+						MatchAll: 0b
+						Conditions: [ ]
+					}
+				}
+			}
+			x: -21.5d
+			y: -7.0d
+			description: [
+				"Frames themselves have robust filtering options built in, but they don’t cover all use cases. "
+				""
+				"In order to filter by tags, a Tag Filter must be created in a Tag Workbench and inserted into the filter in place of an item. Place an item in the left-hand slot and some paper into the slot to the left of the Book icon. A list of tags will appear under the item which may be selected and sent to the right-hand side. "
+				""
+				"Once the Book icon Is pressed, all tags on the right will be encoded into the Tag Filter. A single Tag Filter may contain tags from multiple item types. "
+				""
+				"A Classify Filter may also be used for filtering broad categories of items. For instance, all furnace fuel, all unstackable items, all enchanted items, or anything that may be cooked in a furnace."
+			]
+			dependencies: ["000000000000010B"]
+			min_width: 300
+			id: "5927D60D8AC86FAA"
+			tasks: [
+				{
+					id: "42A5A2FDB26083E5"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:classify_filter"
+						Count: 1b
+						tag: {
+							Filter: {
+								MatchAll: 0b
+								Conditions: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "4765C6F27CD262A1"
+					type: "item"
+					item: "pneumaticcraft:tag_workbench"
+				}
+			]
 		}
 	]
 }
