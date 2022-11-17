@@ -50,6 +50,10 @@ ItemEvents.tooltip((event) => {
             text: [Text.of('Building Tool: Random Block Placement').gold()]
         },
         {
+            items: ['quark:slime_in_a_bucket'],
+            text: [Text.of('Locates Slime Chunks').gold()]
+        },
+        {
             items: ['quark:iron_button'],
             text: [Text.of('Redstone Device: Long Pulse').darkRed()]
         },
@@ -296,7 +300,40 @@ ItemEvents.tooltip((event) => {
         {
             items: ['industrialforegoing:mob_duplicator', 'spirit:soul_cage', 'pneumaticcraft:pressurized_spawner'],
             text: [Text.of('Mob Spawner').green()]
+        },
+        {
+            items: ['supplementaries:cog_block'],
+            text: [Text.of('Redstone Device: Transmits Redstone Signals').darkRed()]
+        },
+        {
+            items: ['supplementaries:wind_vane'],
+            text: [Text.of('Redstone Device: Weather Detector').darkRed()]
+        },
+        {
+            items: ['supplementaries:crystal_display'],
+            text: [Text.of('Redstone Device: Displays Redstone Signals').darkRed()]
+        },
+        {
+            items: ['supplementaries:relayer'],
+            text: [Text.of('Redstone Device: Losslessly Transmits Redstone Signals').darkRed()]
+        },
+        {
+            items: ['supplementaries:spring_launcher'],
+            text: [Text.of('Redstone Device: Entity Yeeter').darkRed()]
+        },
+        {
+            items: ['supplementaries:speaker_block'],
+            text: [Text.of('Redstone Device: Sends Messages to Nearby Players').darkRed()]
+        },
+        {
+            items: ['supplementaries:turn_table'],
+            text: [Text.of('Redstone Device: Rotates Blocks and Entities').darkRed()]
+        },
+        {
+            items: ['supplementaries:pulley_block'],
+            text: [Text.of('Redstone Device: Raises or Lowers Chains and Ropes When Rotated').darkRed()]
         }
+
         /* 
         {
             items: ['clockout:clockout_block'],

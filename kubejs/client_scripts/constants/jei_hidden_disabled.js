@@ -64,7 +64,15 @@ jei.base.items.hidden = [
     'occultism:debug_foliot_lumberjack',
     'occultism:debug_wand',
     'occultism:miner_debug_unspecialized',
-    'occultism:lighted_air'
+    'occultism:lighted_air',
+    'twilightforest:naga_boss_spawner',
+    'twilightforest:final_boss_boss_spawner',
+    'twilightforest:snow_queen_boss_spawner',
+    'twilightforest:alpha_yeti_boss_spawner',
+    'twilightforest:ur_ghast_boss_spawner',
+    'twilightforest:knight_phantom_boss_spawner',
+    'twilightforest:minoshroom_boss_spawner',
+    'twilightforest:lich_boss_spawner'
 ];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
 
