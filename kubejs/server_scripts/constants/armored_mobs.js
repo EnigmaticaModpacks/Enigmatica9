@@ -252,7 +252,7 @@ const armored_mobs = {
         skeleton: {
             equipment: [
                 {
-                    weight: 40,
+                    weight: 10,
                     set: { default: true }
                 },
                 {
@@ -296,7 +296,7 @@ const armored_mobs = {
                     }
                 },
                 {
-                    weight: 15,
+                    weight: 25,
                     set: {
                         max_health: 50,
                         effects: [{ type: 'minecraft:speed', amplifier: 2 }],
@@ -316,7 +316,7 @@ const armored_mobs = {
                     }
                 },
                 {
-                    weight: 15,
+                    weight: 25,
                     set: {
                         max_health: 50,
                         effects: [{ type: 'minecraft:speed', amplifier: 2 }],
@@ -336,7 +336,7 @@ const armored_mobs = {
                     }
                 },
                 {
-                    weight: 15,
+                    weight: 25,
                     set: {
                         max_health: 50,
                         effects: [{ type: 'minecraft:speed', amplifier: 2 }],
