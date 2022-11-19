@@ -43,8 +43,8 @@
 		{
 			title: "Rotational Force"
 			icon: "create:goggles"
-			x: 4.0d
-			y: 2.0d
+			x: 10.0d
+			y: 9.5d
 			subtitle: "Some Assembly Required"
 			description: [
 				"As with many systems, power is required. For Create, this generally means making something spin. There are, of course, multiple ways to do this, but let’s go over some basics briefly. "
@@ -59,7 +59,6 @@
 				""
 				"As a final note, while Create has no in game guidebook, each component does have very detailed information in the tooltip to help guide you. Read them carefully."
 			]
-			dependencies: ["0000000000000C40"]
 			min_width: 300
 			id: "0000000000000CBA"
 			tasks: [{
@@ -77,8 +76,8 @@
 		{
 			title: "Windmill"
 			icon: "create:white_sail"
-			x: 4.0d
-			y: 3.5d
+			x: 9.0d
+			y: 10.0d
 			subtitle: "Batteries Not Included"
 			description: [
 				"Perhaps the first multi part contraption to be made is the Windmill. This is a High SU generator capable of operating at high RPMs. Generating more SU and higher speed is merely a function of adding more Sails or Wool Blocks to the structure."
@@ -137,8 +136,8 @@
 			]
 		}
 		{
-			x: 5.5d
-			y: 2.5d
+			x: 11.0d
+			y: 10.0d
 			subtitle: "Like A Record, Baby"
 			description: [
 				"The Water Wheel, while considerably simpler to set up than a Windmill, also produces far fewer SU and operates at a much lower speed. "
@@ -165,29 +164,19 @@
 		}
 		{
 			icon: "create:propeller"
-			x: 5.5d
-			y: 4.0d
-			subtitle: "Renewable Energy? I'm a Big Fan"
+			x: 7.0d
+			y: 3.0d
+			subtitle: "I'm a Big Fan"
 			description: [
-				"More compact still than water, an Encased fan can serve to create small amounts of Rotational Force, in addition to its other functions. More on those later."
+				"An integral part of any factory, the Encased Fan may be used both for Crafting operations and for moving items or mobs. "
 				""
-				"To use it to generate Rotational Force, it must be facing down over top of some hot block, like lava or magma blocks. Do be mindful not to burn the place down."
-				""
-				"Apply a redstone signal to the fan begin producing power."
-				""
-				"-------------------------------------------------"
-				""
-				"To use the fan for crafting, it must be set up to blow through Lava, Water, or Fire. Items dropped in the stream of air on the far side will be Smelted, Washed, or Smoked, respectively."
+				"To use the fan for crafting, it must be set up to blow through Lava, Water, Fire, or Soul Fire. Items dropped in the stream of air on the far side will be Smelted, Washed, Smoked, or Haunted, respectively."
 				""
 				"The air stream can pass through certain blocks like Iron Bars and Trap Doors, allowing safe containment of your Lava and Water. "
 				""
 				"Of special note, the Fan can be used to process items directly on a Depot or Belt, however the items on a belt do not stop moving while they are being processed. "
 				""
 				"To make efficient use of a fan and belt setup, make it blow across the length of the belt. Faster spin speeds mean the air stream blows farther. This also allows the fan to process multiple stacks at once. "
-			]
-			dependencies: [
-				"0000000000000CBD"
-				"0000000000000CFC"
 			]
 			min_width: 300
 			id: "0000000000000CC4"
@@ -214,15 +203,14 @@
 		}
 		{
 			title: "Shaft"
-			x: 1.5d
-			y: 2.0d
+			x: 10.0d
+			y: 10.5d
 			subtitle: "Shut Yo Mouth"
 			description: [
 				"Making a pretty windmill is probably not the only reason you’re here. Most likely, you’d like this thing to actually do something useful, but it’s way up there and we’re way down here… "
 				""
 				"As it happens, conveying rotational force is quite simple. Shafts can be used to convey power linearly while cogs may be used to change direction and speed. "
 			]
-			dependencies: ["0000000000000CBA"]
 			id: "0000000000000CCC"
 			tasks: [{
 				id: "0000000000000CCD"
@@ -249,9 +237,9 @@
 			]
 		}
 		{
-			title: "Andesite Casings"
-			x: 1.0d
-			y: 1.0d
+			title: "Casings"
+			x: 15.0d
+			y: 9.0d
 			subtitle: "That Was Below the Belt"
 			description: [
 				"Tired of unsightly holes in your base? Shivering from drafty shaft seals? Look no further. "
@@ -260,12 +248,26 @@
 				""
 				"They also look great under Mechanical Belts."
 			]
-			dependencies: ["0000000000000CCC"]
 			id: "0000000000000CCE"
 			tasks: [{
 				id: "0000000000000CCF"
 				type: "item"
-				item: "create:andesite_casing"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "create:brass_casing"
+								Count: 1b
+							}
+							{
+								id: "create:andesite_casing"
+								Count: 1b
+							}
+						]
+					}
+				}
 				count: 4L
 			}]
 			rewards: [{
@@ -279,15 +281,14 @@
 		}
 		{
 			title: "Brackets"
-			x: 2.0d
-			y: 1.0d
+			x: 15.0d
+			y: 10.0d
 			subtitle: "Brace Yourselves"
 			description: [
 				"That’s a long run of shaft you’ve got there. Seems a little unsupported, no?"
 				""
 				"Brackets are entirely decorative but can make your shaft network look much nicer."
 			]
-			dependencies: ["0000000000000CCC"]
 			id: "0000000000000CD0"
 			tasks: [
 				{
@@ -313,8 +314,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 1.0d
+			x: 9.0d
+			y: 12.5d
 			subtitle: "Let's Try a Change in Tack"
 			description: [
 				"Slightly more costly than a pair of cogs, Gear Boxes serve the same purpose as perpendicular cogs, to change the direction of a shaft line. "
@@ -339,8 +340,8 @@
 		}
 		{
 			title: "Cogwheels"
-			x: -1.0d
-			y: 2.0d
+			x: 10.0d
+			y: 11.5d
 			subtitle: "Spacely's Sprockets"
 			description: [
 				"Just because our windmill is running a little slowly doesn’t mean everything else needs to. The rotational speed of a system can be stepped up (or down) by way of simple gear ratios. "
@@ -381,8 +382,8 @@
 		}
 		{
 			title: "Mechanical Belts"
-			x: 1.5d
-			y: 3.0d
+			x: 0.0d
+			y: 8.5d
 			subtitle: "You're On a Roll Now"
 			description: [
 				"As with many things in Create, the Mechanical Belt is a multi-purpose item."
@@ -393,7 +394,6 @@
 				""
 				"A single belt can stretch up to 20 blocks and each block space could conceivably attach it to another shaft line if necessary. To attach them, simply place the two shafts and then right click each with the belt in hand."
 			]
-			dependencies: ["0000000000000CCC"]
 			min_width: 250
 			id: "0000000000000CD8"
 			tasks: [{
@@ -412,15 +412,14 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: 3.0d
+			x: 11.0d
+			y: 14.0d
 			subtitle: "Working on the Chain Gang"
 			description: [
 				"Encased Chain Drives may be used much like belts, connecting perpendicular shafts together."
 				""
 				"They may also be used to change the direction of power by placing multiple of them in-line and rotating them 90-degrees from one another. "
 			]
-			dependencies: ["0000000000000CD8"]
 			id: "0000000000000CE0"
 			tasks: [{
 				id: "0000000000000CE1"
@@ -438,8 +437,8 @@
 		}
 		{
 			icon: "create:rotation_speed_controller"
-			x: -4.0d
-			y: 2.0d
+			x: 10.0d
+			y: 15.0d
 			subtitle: "Kick It Into Overdrive"
 			description: [
 				"It is not always practical to chain hundreds of cogs to achieve the exact right speed. Enter, the Rotation Speed Controller. Place a Large Cogwheel in the top slot and power it. "
@@ -471,21 +470,27 @@
 			]
 		}
 		{
-			x: 0.5d
-			y: 4.5d
+			x: 1.0d
+			y: 9.0d
 			subtitle: "Bit of a Slippery Slope"
 			description: [
 				"Funnels serve both to push into and pull from inventories. "
 				""
 				"A funnel attached to a chest, for instance, can extract from the chest and dump onto an adjacent Belt line. Similarly, a belt feeding into a funnel will push items into the attached inventory."
 			]
-			dependencies: ["0000000000000CD8"]
 			id: "0000000000000CE5"
-			tasks: [{
-				id: "0000000000000CE6"
-				type: "item"
-				item: "create:andesite_funnel"
-			}]
+			tasks: [
+				{
+					id: "0000000000000CE6"
+					type: "item"
+					item: "create:andesite_funnel"
+				}
+				{
+					id: "5BE1CD3E55579812"
+					type: "item"
+					item: "create:brass_funnel"
+				}
+			]
 			rewards: [{
 				id: "0000000000000D7C"
 				type: "command"
@@ -497,8 +502,8 @@
 		}
 		{
 			title: "Chutes"
-			x: 1.5d
-			y: 4.0d
+			x: 0.0d
+			y: 9.5d
 			subtitle: "Learning To Take Things in Slide"
 			description: [
 				" The chute is a simple yet fast way to convey items downwards. Simply drop them in the top and they’ll come out the bottom. "
@@ -507,7 +512,6 @@
 				""
 				"Chutes may also be used to convey items upwards. If a chute has an encased fan set up directly on top of it, it can be used to pull items off a Belt. Of course, getting that item out requires some way of extracting from the chute, such as a Funnel."
 			]
-			dependencies: ["0000000000000CD8"]
 			min_width: 250
 			id: "0000000000000CE7"
 			tasks: [{
@@ -524,21 +528,31 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 4.5d
+			x: 1.0d
+			y: 10.0d
 			subtitle: "Double Slit Experiment"
 			description: [
 				"Far from simple covers for your Mechanical Belts, Tunnels serve a useful purpose in splitting items. "
 				""
-				"As a stack of items passes through an Andesite Tunnel, it will automatically take 1 item from the stack and place it onto adjacent belts or depots. "
+				"As a stack of items passes through an Andesite Tunnel, it will automatically take one item from the stack and place it onto adjacent belts or depots. "
+				""
+				"Brass Tunnels work a bit differently than Andesite Tunnels. Rather than splitting onto adjacent belts, a line of Tunnels can be formed along multiple parallel belts."
+				""
+				"As items pass into one tunnel, they’ll be evenly split among all connected tunnels on the other side."
 			]
-			dependencies: ["0000000000000CD8"]
 			id: "0000000000000CE9"
-			tasks: [{
-				id: "0000000000000CEA"
-				type: "item"
-				item: "create:andesite_tunnel"
-			}]
+			tasks: [
+				{
+					id: "0000000000000CEA"
+					type: "item"
+					item: "create:andesite_tunnel"
+				}
+				{
+					id: "6390D6D6C12B0373"
+					type: "item"
+					item: "create:brass_tunnel"
+				}
+			]
 			rewards: [{
 				id: "0000000000000D7D"
 				type: "command"
@@ -549,63 +563,14 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: 5.5d
-			subtitle: "Pimp My Slide"
-			description: ["Brass Funnels function similarly to Andesite Funnels, although they can accept a filter, either in the form of a single item clicked into the filter slot, or a configured filter item."]
-			dependencies: ["0000000000000CE5"]
-			id: "0000000000000CED"
-			tasks: [{
-				id: "0000000000000CEE"
-				type: "item"
-				item: "create:brass_funnel"
-			}]
-			rewards: [{
-				id: "0000000000000D59"
-				type: "command"
-				title: "Legendary Create Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
-				player_command: false
-			}]
-		}
-		{
-			x: 2.5d
-			y: 5.5d
-			subtitle: "Wave Function Collapse"
-			description: [
-				"Brass Tunnels work a bit differently than Andesite Tunnels. Rather than splitting onto adjacent belts, a line of Tunnels can be formed along multiple parallel belts. "
-				""
-				"As items pass into one tunnel, they’ll be evenly split among all connected tunnels on the other side. "
-				""
-				"Filters are respected during these split operations, so a sorting system can be made that takes a lot of mixed inputs and sorts them out onto individual belts. "
-			]
-			dependencies: ["0000000000000CE9"]
-			id: "0000000000000CEF"
-			tasks: [{
-				id: "0000000000000CF0"
-				type: "item"
-				item: "create:brass_tunnel"
-			}]
-			rewards: [{
-				id: "0000000000000D57"
-				type: "command"
-				title: "Legendary Create Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
-				player_command: false
-			}]
-		}
-		{
-			x: 1.5d
-			y: 5.0d
+			x: 0.0d
+			y: 10.5d
 			subtitle: "Buffer Allocation Failed"
 			description: [
 				"A simple item buffer. "
 				""
 				"Depots will hold a single stack of items, but they will also interact with Encased Fan Washing, Blasting, and Smoking recipes, as well as the Plate Press. "
 			]
-			dependencies: ["0000000000000CD8"]
 			id: "0000000000000CF2"
 			tasks: [{
 				id: "0000000000000CF3"
@@ -623,16 +588,15 @@
 		}
 		{
 			x: 1.5d
-			y: 6.0d
+			y: 7.5d
 			subtitle: "Number 5 is Alive"
 			description: [
-				"Mechanical Arms serve as advanced short range item transport. They may be linked to multiple points at once for both extraction and insertion."
+				"Mechanical Arms serve as advanced short range item transport. They may be linked to multiple points at once for both extraction and insertion operations"
 				""
-				"For instance, an Arm could be configured to pull sand from funnel and place it on a depot where an overhead Encased Fan smelts it to glass. That same Arm can then take the glass and insert it into another filtered Funnel to send it on its way.  "
+				"Linking is done prior to placing the Arm, simply Right-Click it onto permitted inventory types, such as Depots, Funnels, or Belts. Right-Click again to toggle between input and output modes."
 				""
-				"Linking occurs prior to placing the Arm, simply right click it onto permitted inventory types to set it. Right click again to toggle between input and output. The arm reaches four blocks in total. "
+				"The Mechanical Arm can reach up to four blocks away in total. "
 			]
-			dependencies: ["0000000000000CD8"]
 			min_width: 250
 			id: "0000000000000CF4"
 			tasks: [{
@@ -650,15 +614,14 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 3.5d
+			x: 8.0d
+			y: 4.0d
 			subtitle: "You Know What Really Grinds My Gears?"
 			description: [
 				"Millstones have been used for ages, representing some of our oldest technology still in use. They’re far more efficient than grinding things by hand."
 				""
 				"Create’s Millstone is an excellent early way to stretch your ores a little further. Be sure to wash the resulting Crushed Ore pieces to further enhance the yield! "
 			]
-			dependencies: ["0000000000000D04"]
 			id: "0000000000000CFC"
 			tasks: [{
 				id: "0000000000000CFD"
@@ -676,8 +639,8 @@
 		}
 		{
 			title: "Crushing Wheels"
-			x: 9.0d
-			y: 5.5d
+			x: 8.0d
+			y: 5.0d
 			subtitle: "It's Crunch Time"
 			description: [
 				"Crushing Wheels are the big brother to the Millstone you have used until now. In general, they do a better job, allowing you to get more for your inputs than you would in the Millstone. "
@@ -687,7 +650,6 @@
 				""
 				"Place the wheels with a single block gap between them. Items may be either dropped in the top or inserted in a more controlled manner by funneling them into the ‘block’ space where the two wheels meet. "
 			]
-			dependencies: ["0000000000000D1A"]
 			min_width: 250
 			id: "0000000000000CFE"
 			tasks: [{
@@ -707,8 +669,8 @@
 		}
 		{
 			icon: "create:brass_hand"
-			x: 8.0d
-			y: 5.0d
+			x: 6.0d
+			y: 6.0d
 			subtitle: "Getting Down to Brass Tacks"
 			description: [
 				"A Deployer while useful for many things, is the primary means of automating Polished Rose quartz. "
@@ -717,7 +679,6 @@
 				""
 				"To polish quartz, it is simply a matter of dropping the quartz in the path of the moving deployer hand."
 			]
-			dependencies: ["0000000000000D02"]
 			id: "0000000000000D00"
 			tasks: [
 				{
@@ -747,8 +708,8 @@
 			}]
 		}
 		{
-			x: 8.0d
-			y: 3.5d
+			x: 21.0d
+			y: 4.5d
 			subtitle: "Ohm the Humanity"
 			description: [
 				"Electron Tubes are used to craft the most advanced machinery in Create and they pose a bit of an automation challenge in the form of Polished Rose Quartz."
@@ -757,7 +718,6 @@
 				""
 				"But what’s this you say? Can this not be automated with all these fancy gears and whistles? Of course! But the machines to do so need Electron tubes themselves!"
 			]
-			dependencies: ["0000000000000D04"]
 			id: "0000000000000D02"
 			tasks: [{
 				id: "0000000000000D03"
@@ -782,9 +742,9 @@
 			dependencies: ["0000000000000C40"]
 			id: "0000000000000D04"
 			tasks: [{
-				id: "0000000000000D05"
-				type: "checkmark"
-				title: "Crafting"
+				id: "74699E3BBDD7CF8B"
+				type: "item"
+				item: "create:andesite_casing"
 			}]
 			rewards: [{
 				id: "0000000000000D68"
@@ -796,8 +756,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 4.5d
+			x: 6.0d
+			y: 4.0d
 			subtitle: "Boil 'em, Mash 'em, Stick 'em in a Stew"
 			description: [
 				"The Mechanical Press is a great way to transform your ingots into plates for more advanced crafting. It will also compact your materials when combined with a basin, making ingots from nuggets.  "
@@ -810,7 +770,6 @@
 				""
 				"While over any other block, however, a redstone signal is required to make it start. "
 			]
-			dependencies: ["0000000000000CFC"]
 			min_width: 250
 			id: "0000000000000D06"
 			tasks: [{
@@ -829,15 +788,14 @@
 		}
 		{
 			icon: "create:mechanical_mixer"
-			x: 7.0d
-			y: 5.5d
+			x: 6.0d
+			y: 5.0d
 			subtitle: "There's Been a Mix-Up, Officer"
 			description: [
 				"The Mechanical Mixer helps blend both solids and liquids into more useful forms, from brewing potions, making tea, or making advanced alloys, the mixer does it all. A basin below the mixer is required."
 				""
 				"Note that some recipes require heat, this is provided by way of a Blaze Burner. More on that next."
 			]
-			dependencies: ["0000000000000D06"]
 			id: "0000000000000D08"
 			tasks: [
 				{
@@ -861,8 +819,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 6.5d
+			x: 5.0d
+			y: 11.0d
 			subtitle: "Dat Ash Tho"
 			description: [
 				"When high temperatures are required, there’s nothing quite like the scorching heat of the Nether. Why not bring it home with you too?"
@@ -871,7 +829,6 @@
 				""
 				"Feed them coal or other burnable material to get them riled up again if they cool down."
 			]
-			dependencies: ["0000000000000D08"]
 			id: "0000000000000D0B"
 			tasks: [{
 				id: "0000000000000D0C"
@@ -888,8 +845,8 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: 7.5d
+			x: 5.5d
+			y: 12.0d
 			subtitle: "Forbidden Snacks"
 			description: [
 				"What do you mean that’s not hot enough? Well, let them eat cake!"
@@ -913,8 +870,9 @@
 			}]
 		}
 		{
+			icon: "create:mechanical_pump"
 			x: -2.0d
-			y: 3.0d
+			y: 8.5d
 			subtitle: "Archimedean Screw"
 			description: [
 				"Just as moving items isn’t free, so to does it require some rotational force to pump and work with fluids."
@@ -923,13 +881,19 @@
 				""
 				"The block has a handy little directional indicator to help visualize the flow. A single pump can pressurize a large section of pipe, so be sure to spread them out. "
 			]
-			dependencies: ["0000000000000D11"]
 			id: "0000000000000D0F"
-			tasks: [{
-				id: "0000000000000D10"
-				type: "item"
-				item: "create:mechanical_pump"
-			}]
+			tasks: [
+				{
+					id: "0000000000000D10"
+					type: "item"
+					item: "create:mechanical_pump"
+				}
+				{
+					id: "4AA6E10AD83F435A"
+					type: "item"
+					item: "create:fluid_pipe"
+				}
+			]
 			rewards: [{
 				id: "0000000000000D84"
 				type: "command"
@@ -940,35 +904,11 @@
 			}]
 		}
 		{
-			title: "Fluid Pipes"
-			x: -1.0d
-			y: 3.0d
-			subtitle: "Clear the Channel"
-			description: ["Pipes are the primary means of conveying fluids. Fluid goes in, fluid goes out. Simple!"]
-			dependencies: ["0000000000000CD6"]
-			id: "0000000000000D11"
-			tasks: [{
-				id: "0000000000000D12"
-				type: "item"
-				item: "create:fluid_pipe"
-				count: 16L
-			}]
-			rewards: [{
-				id: "0000000000000D85"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
-				player_command: false
-			}]
-		}
-		{
 			icon: "create:fluid_valve"
-			x: -1.5d
-			y: 4.0d
+			x: -3.0d
+			y: 9.0d
 			subtitle: "Shut The Front Door"
 			description: ["Fluid valves may be opened and closed by applying some rotational force, for example with a Valve Handle. "]
-			dependencies: ["0000000000000D11"]
 			id: "0000000000000D13"
 			tasks: [
 				{
@@ -992,11 +932,10 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 5.0d
+			x: -3.0d
+			y: 10.0d
 			subtitle: "Reverse Osmosis Filter"
 			description: ["Doing the impossible is just another Tuesday in modded. Smart Fluid Pipes act as a fluid filter, either controlling what is allowed to be pulled from a connected tank, or what is allowed to continue down the line. "]
-			dependencies: ["0000000000000D11"]
 			id: "0000000000000D15"
 			tasks: [{
 				id: "0000000000000D16"
@@ -1015,7 +954,7 @@
 		{
 			title: "Fluid Tanks"
 			x: -3.0d
-			y: 3.0d
+			y: 11.0d
 			subtitle: "Unfathomably Deep"
 			description: [
 				"Fluid Tanks are a thematic multi-block tank for all your fluid storing needs. "
@@ -1023,7 +962,6 @@
 				"While they can't be interacted with by the player directly, needing pipes to insert and extract fluids, they merge with adjacent tanks to form large multi-blocks for bulk storage."
 				"They can have a 1x1, 2x2, or 3x3 base and extend as high as you like. "
 			]
-			dependencies: ["0000000000000D11"]
 			id: "0000000000000D17"
 			tasks: [{
 				id: "0000000000000D18"
@@ -1042,8 +980,8 @@
 		}
 		{
 			icon: "create:mechanical_crafter"
-			x: 9.0d
-			y: 4.5d
+			x: 7.5d
+			y: 8.0d
 			description: [
 				"For those times when a simple 3x3 grid simply isn’t good enough, there’s the Mechanical Crafter. Or, Crafters, to be precise. These interlocking blocks connect to form a large crafting interface. Each block accepting a single item for the craft."
 				""
@@ -1057,7 +995,6 @@
 				""
 				"Items may be inserted with hoppers, belts and funnels, mechanical arms and more. Experiment to see what you can come up with!"
 			]
-			dependencies: ["0000000000000D02"]
 			min_width: 250
 			id: "0000000000000D1A"
 			tasks: [
@@ -1082,37 +1019,10 @@
 			}]
 		}
 		{
-			icon: "create:polished_rose_quartz"
-			x: 8.0d
-			y: 6.5d
-			shape: "octagon"
-			description: [
-				"All the pieces are there. Can you put them together? Create a fully automatic Polished Rose Quartz factory. The only outside input allowed is the quartz and redstone itself."
-				""
-				"Make Sand by crushing cobble from a cobble generator. Grow and harvest Sugar Cane to automate paper production. Put them together and feed the sandpaper to your Deployer to polish the Rose Quartz."
-				""
-				"Naturally, crafting the Rose Quartz itself should also be done within this factory. Use only Create and Vanilla Mechanics for this challenge! "
-				""
-				"Good Luck!"
-			]
-			dependencies: ["0000000000000D00"]
-			id: "0000000000000D1F"
-			tasks: [{
-				id: "0000000000000D20"
-				type: "checkmark"
-				title: "Challenge: Rose Quartz Automation"
-			}]
-		}
-		{
-			x: -2.5d
-			y: 4.0d
+			x: 5.0d
+			y: 4.5d
 			subtitle: "Spouting Off Nonsense"
 			description: ["The spout is paired with a Depot by placing it above the Depot. It will attempt to fill any item appearing on the Depot. For example, to make buckets of water, fill potion bottles, or make delicious tea!"]
-			dependencies: [
-				"0000000000000D0F"
-				"0000000000000D12"
-			]
-			dependency_requirement: "one_completed"
 			id: "0000000000000D23"
 			tasks: [{
 				id: "0000000000000D24"
@@ -1187,7 +1097,7 @@
 					display: { }
 				}
 			}
-			x: 10.0d
+			x: 13.5d
 			y: 2.0d
 			description: [
 				"Modular Contraptions are build-it-yourself multiblock structures with nearly endless possibilities. "
@@ -1196,7 +1106,6 @@
 				""
 				"The following are some of the specialized blocks that may be used for these contraptions."
 			]
-			dependencies: ["0000000000000C40"]
 			id: "0000000000000D2B"
 			tasks: [{
 				id: "0000000000000D2C"
@@ -1211,7 +1120,7 @@
 		}
 		{
 			icon: "create:mechanical_piston"
-			x: 10.5d
+			x: 12.0d
 			y: 3.0d
 			subtitle: "Engineering Outreach Program"
 			description: [
@@ -1261,8 +1170,8 @@
 			]
 		}
 		{
-			x: 11.0d
-			y: 4.0d
+			x: 13.0d
+			y: 3.0d
 			subtitle: "Putting the Cart Before the Horse"
 			description: [
 				"Cart Assemblers are used to build a contraption destined to ride a mine cart. "
@@ -1291,8 +1200,8 @@
 			}]
 		}
 		{
-			x: 11.5d
-			y: 5.0d
+			x: 14.0d
+			y: 3.0d
 			subtitle: "Getting Out of an Unbearable Situation"
 			description: [
 				"Similar to Windmill Bearings, Mechanical Bearings may be used to build rotating contraptions. "
@@ -1317,7 +1226,7 @@
 		}
 		{
 			title: "Chassis"
-			x: 12.5d
+			x: 13.5d
 			y: 4.0d
 			description: [
 				"Chassis blocks serve to form a base for larger creations. "
@@ -1366,8 +1275,8 @@
 			}]
 		}
 		{
-			x: 14.5d
-			y: 4.0d
+			x: 12.0d
+			y: 5.0d
 			subtitle: "Outstanding In Its Field"
 			description: ["A smart harvester that gently harvests only mature crops. "]
 			dependencies: ["0000000000000D33"]
@@ -1387,7 +1296,7 @@
 			}]
 		}
 		{
-			x: 14.5d
+			x: 15.0d
 			y: 5.0d
 			subtitle: "Nothing to See Here, Just a Boring Machine"
 			description: ["Mobile or Stationary, the Mechanical Drill serves as a capable mining apparatus. "]
@@ -1408,8 +1317,8 @@
 			}]
 		}
 		{
-			x: 13.5d
-			y: 7.0d
+			x: 13.0d
+			y: 5.0d
 			subtitle: "A Groundbreaking Innovation"
 			description: [
 				"Ploughing Fields is hard work. Make a machine to do it for you!"
@@ -1434,7 +1343,7 @@
 		}
 		{
 			x: 14.0d
-			y: 6.0d
+			y: 5.0d
 			subtitle: "Cutting Edge Technology"
 			description: [
 				"From Chopping Trees to Carving Stone, this Saw has seen it all. "
@@ -1461,8 +1370,8 @@
 		}
 		{
 			title: "Portable Interfaces"
-			x: 14.5d
-			y: 3.0d
+			x: 13.5d
+			y: 6.0d
 			subtitle: "Plug and Play"
 			description: [
 				"In many cases, the tools that can be attached to a moving contraption will also automatically pick up the items they’re harvesting, so long as there is ample storage on the device. "
@@ -1499,8 +1408,8 @@
 			}]
 		}
 		{
-			x: 12.0d
-			y: 6.0d
+			x: 15.0d
+			y: 3.0d
 			subtitle: "It Has It's Ups and Downs"
 			description: [
 				"Need a Lift? "
@@ -1526,8 +1435,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: 2.0d
+			x: 10.0d
+			y: 13.0d
 			subtitle: "Shifting Into Higher Gear"
 			description: [
 				"Slightly finer control than messing with gear ratios, an Adjustable Chain Gearshift uses a Redstone signal to set the variable speed, up to twice the input speed. "
@@ -1551,8 +1460,8 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: 4.0d
+			x: -2.0d
+			y: 9.5d
 			subtitle: "Well, There's an Upside and a Downside"
 			description: [
 				"With a Hose Pulley, fluids may be pumped into or out of the world. Create massive lakes or drain them dry to let your factory grow!"
@@ -1560,10 +1469,6 @@
 				"Very large bodies, such as oceans or massive lava lakes in the Nether will be considered infinite, so If you wish to drain something like an Ocean Monument, it may still be necessary to build some retaining walls to break things up. "
 				""
 				"Note, the Hose Pulley itself does not pump by itself. Lower the hose into the fluid body and use set up a Mechanical Pump to do the work for you. "
-			]
-			dependencies: [
-				"0000000000000D17"
-				"0000000000000D12"
 			]
 			dependency_requirement: "one_completed"
 			min_width: 250
@@ -1583,8 +1488,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 1.0d
+			x: 11.0d
+			y: 12.5d
 			subtitle: "Time to Switch Things Up"
 			description: [
 				"Need to reverse direction? Then the Gearshift is what you’re looking for. "
@@ -1608,8 +1513,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 0.0d
+			x: 10.0d
+			y: 14.0d
 			subtitle: "Going to Have to Stop You Right There"
 			description: [
 				"Quite the simple device, really. A Clutch disengages power on a shaft line, making for a simple on/off switch. "
@@ -1633,8 +1538,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 7.5d
+			x: 4.5d
+			y: 12.0d
 			subtitle: "Hello Brew-TEA-Full!"
 			description: [
 				"Stayed out too late par-tea-ing like it's 1773? Need a little more tranquili-tea in your life?"
@@ -1659,8 +1564,8 @@
 		}
 		{
 			title: "Saving Schematics"
-			x: 4.0d
-			y: -0.5d
+			x: 19.0d
+			y: 8.5d
 			subtitle: "Archetecture 101"
 			description: [
 				"Create has a set of tools dedicated to saving schematics of structures and replicating them."
@@ -1673,7 +1578,6 @@
 				""
 				"The Create GitHub has a wiki page with examples of saving schematics: https://github.com/Creators-of-Create/Create/wiki/Saving-a-Schematic"
 			]
-			dependencies: ["0000000000000C40"]
 			min_width: 250
 			id: "5A581A8DF6CCC352"
 			tasks: [{
@@ -1692,8 +1596,8 @@
 		}
 		{
 			title: "Placing Schematics"
-			x: 2.5d
-			y: -0.5d
+			x: 19.0d
+			y: 9.5d
 			subtitle: "Filing for Building Permits"
 			description: [
 				"In order to place your saved structures, you need to create a Schematic - this is done on the Schematic Table."
@@ -1723,8 +1627,8 @@
 		}
 		{
 			title: "Printing Schematics"
-			x: 1.0d
-			y: -0.5d
+			x: 19.0d
+			y: 10.5d
 			subtitle: "Constructive Detonation"
 			description: [
 				"The Schematicannon is how you're going to build your structures. It uses gunpowder as a propellent, and will take blocks from adjacent inventories."
@@ -1754,17 +1658,13 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: 5.0d
+			x: -2.0d
+			y: 10.5d
 			subtitle: "Draining everything you want... if it's a fluid of course."
 			description: [
 				"The Item drain is useful for draining fluids from any fluid-containing items, like buckets or bottles. It has small internal tank, from which fluids can be accessed by pipes."
 				""
 				"Really useful for storing honey from your bee farm!"
-			]
-			dependencies: [
-				"0000000000000D0F"
-				"0000000000000D12"
 			]
 			dependency_requirement: "one_completed"
 			min_width: 225
@@ -1784,35 +1684,10 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: 4.0d
-			subtitle: "*Phweeeeeeeeee* Train is coming!"
-			description: [
-				"The Steam Whistle uses steam generated by the Boiler to, you guessed it, whistle! Provide a Redstone signal to activate it, at the cost of a bit of steam."
-				""
-				"Additional whistles can be placed on top of the first one to control the octave. Also, the pitch can be controlled by using a wrench on the whistle!"
-			]
-			dependencies: ["0216A883C7992FD4"]
-			id: "1BF01EC920CAFAA9"
-			tasks: [{
-				id: "01A62AEA390FB14D"
-				type: "item"
-				item: "create:steam_whistle"
-			}]
-			rewards: [{
-				id: "2202F48443F8CB93"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
-				player_command: false
-			}]
-		}
-		{
 			title: "Boiler and Steam production"
 			icon: "create:blaze_burner"
-			x: -4.0d
-			y: 3.0d
+			x: 7.0d
+			y: 10.0d
 			subtitle: "Oh boy it's getting HOT!"
 			description: [
 				"Did you ever thought it would be cool to generate some steam? Uh... no?"
@@ -1823,10 +1698,7 @@
 				""
 				"Dev Note: Ponder for KubeJS Isn't ported onto 1.19.2 yet, so for now, you need to experiment on your own."
 			]
-			dependencies: [
-				"0000000000000D17"
-				"0000000000000D0C"
-			]
+			dependencies: ["0000000000000D0C"]
 			min_width: 225
 			id: "0216A883C7992FD4"
 			tasks: [
@@ -1853,8 +1725,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 5.0d
+			x: 8.0d
+			y: 9.5d
 			subtitle: "High Pressure Steam... isn't that dangerous?"
 			description: [
 				"The ultimate SU Generation in existence. The Steam Engine uses the power of high pressure steam to generate insane amounts of SU."
@@ -1886,32 +1758,10 @@
 			}]
 		}
 		{
-			icon: "create:fluid_tank"
-			x: 4.0d
-			y: 6.5d
-			shape: "octagon"
-			description: [
-				"I know that setting up few of the boilers is much easier than just upgrading one to its maximum, but I challenge you to do it!"
-				""
-				"Try to automate everything required. Everything is possible with just vanilla mechanics and Create. The only external input allowed is Netherrack.Try to automate everything required. Everything is possible with just vanilla mechanics and Create. The only external input allowed is Netherrack."
-				""
-				"This will combine nearly all mechanics available in Create, making it a great way to test your Create Innovator skills!"
-				""
-				"I will leave you with 1 last challenge and wish you good luck on your journey: Try to make it look good :wink:"
-			]
-			dependencies: ["5B54E008C558007F"]
-			id: "6FD9E1729C555465"
-			tasks: [{
-				id: "0CB0F80910911E18"
-				type: "checkmark"
-				title: "Challenge: Max level Steam Engine"
-			}]
-		}
-		{
 			title: "Trains"
 			icon: "create:track"
-			x: 12.5d
-			y: 1.5d
+			x: 15.1875d
+			y: 1.125d
 			shape: "gear"
 			subtitle: "Transport system for profesionals"
 			description: [
@@ -1955,6 +1805,38 @@
 				icon: "kubejs:legendary_lootbox"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
 				player_command: false
+			}]
+		}
+		{
+			title: "Getting Started: Logistics and Storage"
+			x: -1.0d
+			y: 7.5d
+			id: "45CBD91076EAD50D"
+			tasks: [{
+				id: "4C69D9C9883B2747"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			title: "Getting Started: Rotational Power"
+			x: 10.0d
+			y: 8.5d
+			id: "4D94C06F9C8BCB64"
+			tasks: [{
+				id: "43B800625887BD80"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 11.0d
+			id: "0FEC8B6C5EBF0D99"
+			tasks: [{
+				id: "6EC36FA1B3FEB0D3"
+				type: "item"
+				item: "create:item_vault"
 			}]
 		}
 	]
