@@ -3,7 +3,7 @@ ServerEvents.chestLootTables((event) => {
     event.addChest('apotheosis:spawner_swarm', (table) => {
         table.addPool((pool) => {
             pool.rolls = [5, 6];
-            // pool.bonusRolls = [1, 4];
+            pool.bonusRolls = [1, 4];
             pool.addEntry({
                 type: 'placebo:stack_entry',
                 weight: 3,
