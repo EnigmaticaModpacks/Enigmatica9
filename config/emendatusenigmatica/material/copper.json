@@ -1,0 +1,57 @@
+{
+    "id": "copper",
+    "source": "vanilla",
+    "localizedName": "Copper",
+    "processedTypes": [
+        "storage_block",
+        "ore",
+        "raw",
+        "crushed_ore",
+        "ingot",
+        "nugget",
+        "dust",
+        "plate",
+        "slurry",
+        "crystal",
+        "shard",
+        "clump",
+        "dirty_dust"
+    ],
+    "properties": {
+        "materialType": "metal",
+        "harvestLevel": 0
+    },
+    "colors": {
+        "materialColor": "b87333"
+    },
+    "compat": {
+        "create": {
+            "crushing": {
+                "firstOutputCount": 2,
+                "secondOutputCount": 1,
+                "secondOutputChance": 0.35
+            },
+            "splashing": {
+                "secondOutput": "",
+                "secondOutputCount": 1.75,
+                "secondOutputChance": 0.3
+            }
+        },
+        "thermal": {
+            "pulverizer": {
+                "firstOutputCount": 2,
+                "firstOutputChance": 1,
+                "secondOutput": "",
+                "secondOutputCount": 1,
+                "secondOutputChance": 0.20
+            },
+            "induction": {
+                "firstOutputCount": 2,
+                "firstOutputChance": 1,
+                "secondOutput": "",
+                "secondOutputCount": 1,
+                "secondOutputChance": 0.15
+            }
+        }
+    }
+}
