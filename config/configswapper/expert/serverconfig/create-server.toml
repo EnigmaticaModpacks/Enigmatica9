@@ -78,7 +78,7 @@
 	#Maximum allowed speed of a configurable motor.
 	#[@cui:RequiresReload:both]
 	#Range: > 64
-	maxMotorSpeed = 96
+	maxMotorSpeed = 128
 	#.
 	#[in Revolutions per Minute]
 	#Added rotation speed by a water wheel when at least one flow is present.
@@ -93,7 +93,7 @@
 	#[in Revolutions per Minute]
 	#Maximum allowed rotation speed for any Kinetic Tile.
 	#Range: > 64
-	maxRotationSpeed = 96
+	maxRotationSpeed = 128
 	#.
 	#Select what mobs should ignore Deployers when attacked by them.
 	#Allowed Values: ALL, CREEPERS, NONE
@@ -142,7 +142,7 @@
 		#[in Revolutions per Minute]
 		#Rotation speed at which the maximum stats of fans are reached.
 		#Range: > 64
-		fanRotationArgmax = 256
+		fanRotationArgmax = 128
 		#.
 		#Game ticks required for a Fan-based processing recipe to take effect.
 		#Range: > 0
@@ -224,34 +224,37 @@
 				encased_fan = 2.0
 				adjustable_chain_gearshift = 0.0
 				mechanical_pump = 4.0
-				crushing_wheel = 8.0
+				crushing_wheel = 16.0
 				mechanical_mixer = 4.0
 				gantry_shaft = 0.0
 				rope_pulley = 4.0
 				rotation_speed_controller = 0.0
 				mechanical_arm = 2.0
-				andesite_encased_shaft = 0.0
-				mechanical_press = 8.0
-				large_cogwheel = 0.0
+				mechanical_press = 16.0
 				mechanical_drill = 4.0
-				andesite_encased_large_cogwheel = 0.0
-				brass_encased_large_cogwheel = 0.0
 				mysterious_cuckoo_clock = 1.0
 				stressometer = 0.0
-				shaft = 0.0
-				brass_encased_shaft = 0.0
 				gearshift = 0.0
 				turntable = 4.0
 				sticky_mechanical_piston = 4.0
 				sequenced_gearshift = 0.0
 				weighted_ejector = 2.0
-				cogwheel = 0.0
-				andesite_encased_cogwheel = 0.0
 				belt = 0.0
-				brass_encased_cogwheel = 0.0
 				gearbox = 0.0
 				hose_pulley = 4.0
 				mechanical_crafter = 2.0
+
+				shaft = 0.05
+				andesite_encased_shaft = 0.0
+				brass_encased_shaft = 0.0
+
+				cogwheel = 0.1
+				andesite_encased_cogwheel = 0.0
+				brass_encased_cogwheel = 0.0
+
+				large_cogwheel = 0.1
+				andesite_encased_large_cogwheel = 0.0
+				brass_encased_large_cogwheel = 0.0
 
 			#.
 			#[in Stress Units]
@@ -260,25 +263,25 @@
 				blue_valve_handle = 8.0
 				copper_valve_handle = 8.0
 				pink_valve_handle = 8.0
-				hand_crank = 8.0
 				black_valve_handle = 8.0
 				magenta_valve_handle = 8.0
 				white_valve_handle = 8.0
 				yellow_valve_handle = 8.0
 				brown_valve_handle = 8.0
 				cyan_valve_handle = 8.0
-				windmill_bearing = 512.0
 				light_blue_valve_handle = 8.0
 				lime_valve_handle = 8.0
 				purple_valve_handle = 8.0
 				red_valve_handle = 8.0
-				steam_engine = 1024.0
-				creative_motor = 16384.0
 				gray_valve_handle = 8.0
-				water_wheel = 16.0
 				orange_valve_handle = 8.0
 				light_gray_valve_handle = 8.0
 				green_valve_handle = 8.0
+				hand_crank = 8.0
+				water_wheel = 16.0
+				windmill_bearing = 512.0
+				steam_engine = 1024.0
+				creative_motor = 16384.0
 
 		#.
 		#Configure speed/capacity levels for requirements and indicators.
@@ -287,12 +290,12 @@
 			#[in Revolutions per Minute]
 			#Minimum speed of rotation to be considered 'medium'
 			#Range: 0.0 ~ 4096.0
-			mediumSpeed = 30.0
+			mediumSpeed = 15.0
 			#.
 			#[in Revolutions per Minute]
 			#Minimum speed of rotation to be considered 'fast'
 			#Range: 0.0 ~ 65535.0
-			fastSpeed = 100.0
+			fastSpeed = 50.0
 			#.
 			#[in Stress Units]
 			#Minimum stress impact to be considered 'medium'
