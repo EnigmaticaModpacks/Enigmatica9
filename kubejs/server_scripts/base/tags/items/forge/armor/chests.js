@@ -1,5 +1,6 @@
 ServerEvents.tags('item', (event) => {
-    var items = [
+    const items = [
+        /_chestplate/,
         'ars_nouveau:apprentice_robes',
         'ars_nouveau:archmage_robes',
         'ars_nouveau:novice_robes',
@@ -13,15 +14,11 @@ ServerEvents.tags('item', (event) => {
         'naturesaura:sky_chest'
     ];
 
-    var exceptions = ['pneumaticcraft:jet_boots_upgrade_1'];
+    const exceptions = ['pneumaticcraft:jet_boots_upgrade_1'];
 
-    var tags = ['forge:armors', 'forge:armors/chestplates'];
+    const tagGroups = ['forge:armors', 'forge:armors/chestplates'];
 
-    tags.forEach((tag) => {
-        event
-            .get(tag)
-            .add(items)
-            .add(/_chestplate/)
-            .remove(exceptions);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items).remove(exceptions);
     });
 });

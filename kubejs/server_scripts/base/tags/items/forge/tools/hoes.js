@@ -1,10 +1,10 @@
 ServerEvents.tags('item', (event) => {
-    var items = [/_hoe/, /_aiot/, 'immersiveengineering:hoe_steel'];
-    var exceptions = [];
+    const items = [/_hoe/, /_aiot/, 'immersiveengineering:hoe_steel'];
+    const exceptions = [];
 
-    var tags = ['forge:tools', 'forge:hoes', 'forge:tools/hoes'];
+    const tagGroups = ['forge:tools', 'forge:hoes', 'forge:tools/hoes'];
 
-    tags.forEach((tag) => {
-        event.get(tag).add(items).remove(exceptions);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items).remove(exceptions);
     });
 });

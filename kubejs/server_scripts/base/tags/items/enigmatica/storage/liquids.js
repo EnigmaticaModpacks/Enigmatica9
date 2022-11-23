@@ -1,12 +1,16 @@
 ServerEvents.tags('item', (event) => {
-    var items = [
+    const items = [
+        /_tank/,
+        /fluid_storage/,
+        /extrastorage:.*_fluid/,
+        /ae2:fluid_storage_cell_/,
         //'chiselsandbits:bit_storage',
         //'rftoolsutility:tank',
         //'thermal:fluid_cell',
         //'industrialforegoing:black_hole_controller',
         'mekanism:dynamic_valve'
     ];
-    var exceptions = [
+    const exceptions = [
         'pneumaticcraft:etching_tank',
         'mekanism:scuba_tank',
         'mekanism:basic_chemical_tank',
@@ -15,16 +19,9 @@ ServerEvents.tags('item', (event) => {
         'mekanism:ultimate_chemical_tank',
         'mekanism:creative_chemical_tank'
     ];
-    var tags = ['enigmatica:containers', 'enigmatica:containers/liquid', 'enigmatica:containers/fluid'];
+    const tagGroups = ['enigmatica:containers', 'enigmatica:containers/liquid', 'enigmatica:containers/fluid'];
 
-    tags.forEach((tag) => {
-        event
-            .get(tag)
-            .add(items)
-            .add(/_tank/)
-            .add(/fluid_storage/)
-            .add(/extrastorage:\w+_fluid/)
-            .add(/ae2:fluid_storage_cell_/)
-            .remove(exceptions);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items).remove(exceptions);
     });
 });

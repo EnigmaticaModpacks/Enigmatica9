@@ -1,5 +1,5 @@
 ServerEvents.tags('item', (event) => {
-    var items = [
+    const items = [
         '#forge:tools/swords',
         '#forge:tools/axes',
         '#forge:tools/multi_tools',
@@ -13,11 +13,11 @@ ServerEvents.tags('item', (event) => {
         // 'bloodmagic:soulsword',
         // 'bloodmagic:soulscythe'
     ];
-    var exceptions = [];
+    const exceptions = [];
 
-    var tags = ['enigmatica:weapons', 'enigmatica:weapons/melee'];
+    const tagGroups = ['enigmatica:weapons', 'enigmatica:weapons/melee'];
 
-    tags.forEach((tag) => {
-        event.get(tag).add(items).remove(exceptions);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items).remove(exceptions);
     });
 });

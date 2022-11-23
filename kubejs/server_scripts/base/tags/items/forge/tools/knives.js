@@ -1,11 +1,11 @@
 ServerEvents.tags('item', (event) => {
-    var items = [/_knife$/];
+    const items = [/_knife$/];
 
-    var exceptions = [];
+    const exceptions = [];
 
-    var tags = ['forge:tools', 'forge:knives', 'farmersdelight:tools/knives', 'farmersdelight:straw_harvesters'];
+    const tagGroups = ['forge:tools', 'forge:knives', 'farmersdelight:tools/knives', 'farmersdelight:straw_harvesters'];
 
-    tags.forEach((tag) => {
-        event.get(tag).add(items).remove(exceptions);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items).remove(exceptions);
     });
 });

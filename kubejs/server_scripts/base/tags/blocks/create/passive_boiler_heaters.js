@@ -1,5 +1,5 @@
 ServerEvents.tags('block', (event) => {
-    let items = [
+    const items = [
         /campfire/,
         /magma/,
         'decorative_blocks:brazier',

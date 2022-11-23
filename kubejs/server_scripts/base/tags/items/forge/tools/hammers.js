@@ -1,11 +1,11 @@
 ServerEvents.tags('item', (event) => {
-    var items = [/_hammer$/, /jackhammer/, /warhammer/];
+    const items = [/_hammer$/, /jackhammer/, /warhammer/];
 
-    var exceptions = ['immersiveengineering:gunpart_hammer', 'immersiveengineering:bannerpattern_hammer'];
+    const exceptions = ['immersiveengineering:gunpart_hammer', 'immersiveengineering:bannerpattern_hammer'];
 
-    var tags = ['forge:tools', 'forge:hammers', 'forge:tools/hammers'];
+    const tagGroups = ['forge:tools', 'forge:hammers', 'forge:tools/hammers'];
 
-    tags.forEach((tag) => {
-        event.get(tag).add(items).remove(exceptions);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items).remove(exceptions);
     });
 });

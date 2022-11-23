@@ -1,11 +1,11 @@
 ServerEvents.tags('item', (event) => {
-    var items = [/fishing_rod$/];
+    const items = [/fishing_rod$/];
 
-    var exceptions = [];
+    const exceptions = [];
 
-    var tags = ['forge:tools', 'forge:fishing_rods', 'forge:tools/fishing_rods'];
+    const tagGroups = ['forge:tools', 'forge:fishing_rods', 'forge:tools/fishing_rods'];
 
-    tags.forEach((tag) => {
-        event.get(tag).add(items).remove(exceptions);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items).remove(exceptions);
     });
 });

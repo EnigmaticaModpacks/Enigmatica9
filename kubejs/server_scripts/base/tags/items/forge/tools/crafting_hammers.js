@@ -1,10 +1,10 @@
 ServerEvents.tags('item', (event) => {
-    var items = ['immersiveengineering:hammer'];
-    var exceptions = [];
+    const items = ['immersiveengineering:hammer'];
+    const exceptions = [];
 
-    var tags = ['forge:tools', 'forge:tools/crafting_hammers'];
+    const tagGroups = ['forge:tools', 'forge:tools/crafting_hammers'];
 
-    tags.forEach((tag) => {
-        event.get(tag).add(items).remove(exceptions);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items).remove(exceptions);
     });
 });
