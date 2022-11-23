@@ -1,5 +1,5 @@
 ServerEvents.tags('item', (event) => {
-    let types = ['swords', 'pickaxes', 'axes', 'hoes', 'shovels'];
+    const types = ['swords', 'pickaxes', 'axes', 'hoes', 'shovels'];
 
     event.removeAll('blue_skies:tools');
 

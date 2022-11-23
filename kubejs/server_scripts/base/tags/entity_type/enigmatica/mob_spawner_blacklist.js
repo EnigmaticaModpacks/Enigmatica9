@@ -1,5 +1,5 @@
 ServerEvents.tags('entity_type', (event) => {
-    let entities = [
+    const entities = [
         /occultism/,
         /ars_nouveau:familiar_.*/,
         /ars_elemental:.*_familiar/,

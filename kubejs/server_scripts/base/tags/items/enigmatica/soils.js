@@ -1,5 +1,5 @@
 ServerEvents.tags('item', (event) => {
-    var soils = {
+    const soils = {
         farmland: ['minecraft:farmland', 'farmersdelight:rich_soil_farmland'],
         grass: [
             'minecraft:grass_block',
@@ -52,7 +52,7 @@ ServerEvents.tags('item', (event) => {
         ]
     };
 
-    let soil_types = Object.keys(soils);
+    const soil_types = Object.keys(soils);
 
     soil_types.forEach((soil_type) => {
         event.get(`enigmatica:soils/${soil_type}`).add(soils[soil_type]);

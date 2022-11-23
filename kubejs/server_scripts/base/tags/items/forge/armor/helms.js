@@ -1,5 +1,6 @@
 ServerEvents.tags('item', (event) => {
-    var items = [
+    const items = [
+        /_helmet/,
         'ars_nouveau:apprentice_hood',
         'ars_nouveau:archmage_hood',
         'ars_nouveau:novice_hood',
@@ -9,15 +10,11 @@ ServerEvents.tags('item', (event) => {
         'mekanism:scuba_mask'
     ];
 
-    var exceptions = [];
+    const exceptions = [];
 
-    var tags = ['forge:armors', 'forge:armors/helmets'];
+    const tagGroups = ['forge:armors', 'forge:armors/helmets'];
 
-    tags.forEach((tag) => {
-        event
-            .get(tag)
-            .add(items)
-            .add(/_helmet/)
-            .remove(exceptions);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items).remove(exceptions);
     });
 });

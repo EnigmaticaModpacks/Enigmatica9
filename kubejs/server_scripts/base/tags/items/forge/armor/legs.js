@@ -1,5 +1,6 @@
 ServerEvents.tags('item', (event) => {
-    var items = [
+    const items = [
+        /_leggings/,
         'immersiveengineering:armor_faraday_legs',
         'immersiveengineering:armor_steel_legs',
         'mekanism:hazmat_pants',
@@ -8,15 +9,11 @@ ServerEvents.tags('item', (event) => {
         'naturesaura:sky_pants'
     ];
 
-    var exceptions = [];
+    const exceptions = [];
 
-    var tags = ['forge:armors', 'forge:armors/leggings'];
+    const tagGroups = ['forge:armors', 'forge:armors/leggings'];
 
-    tags.forEach((tag) => {
-        event
-            .get(tag)
-            .add(items)
-            .add(/_leggings/)
-            .remove(exceptions);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items).remove(exceptions);
     });
 });

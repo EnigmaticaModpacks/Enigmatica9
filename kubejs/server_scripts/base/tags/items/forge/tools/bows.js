@@ -1,10 +1,10 @@
 ServerEvents.tags('item', (event) => {
-    var items = [/_bow$/];
-    var exceptions = [];
+    const items = [/_bow$/];
+    const exceptions = [];
 
-    var tags = ['forge:tools', 'forge:bows', 'forge:tools/bows'];
+    const tagGroups = ['forge:tools', 'forge:bows', 'forge:tools/bows'];
 
-    tags.forEach((tag) => {
-        event.get(tag).add(items).remove(exceptions);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items).remove(exceptions);
     });
 });

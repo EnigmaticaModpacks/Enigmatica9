@@ -1,13 +1,9 @@
 ServerEvents.tags('item', (event) => {
-    var items = ['mekanism:dynamic_tank', 'mekanism:dynamic_valve'];
+    const items = [/chemical_tank/, /chemical_storage_cell/, 'mekanism:dynamic_tank', 'mekanism:dynamic_valve'];
 
-    var tags = ['enigmatica:containers', 'enigmatica:containers/gas'];
+    const tagGroups = ['enigmatica:containers', 'enigmatica:containers/gas'];
 
-    tags.forEach((tag) => {
-        event
-            .get(tag)
-            .add(items)
-            .add(/chemical_tank/)
-            .add(/chemical_storage_cell_/);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items);
     });
 });
