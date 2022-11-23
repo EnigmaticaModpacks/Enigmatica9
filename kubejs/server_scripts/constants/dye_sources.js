@@ -39,6 +39,20 @@ const dye_sources = [
         tertiary: 'minecraft:blue_dye'
     },
     {
+        input: 'minecraft:ink_sac',
+        type: 'small',
+        primary: 'minecraft:black_dye',
+        secondary: 'minecraft:black_dye',
+        tertiary: 'minecraft:black_dye'
+    },
+    {
+        input: 'minecraft:charcoal',
+        type: 'small',
+        primary: 'minecraft:black_dye',
+        secondary: 'minecraft:black_dye',
+        tertiary: 'minecraft:black_dye'
+    },
+    {
         input: 'minecraft:bone',
         type: 'small',
         primary: 'minecraft:bone_meal',
@@ -896,6 +910,23 @@ const dye_sources = [
     },
     {
         input: 'bookwyrms:scale_purple',
+        type: 'small',
+        primary: 'minecraft:purple_dye',
+        secondary: 'minecraft:purple_dye',
+        tertiary: 'minecraft:purple_dye'
+    },
+
+    // Ars Nouveau
+
+    {
+        input: 'ars_nouveau:magebloom',
+        type: 'small',
+        primary: 'minecraft:pink_dye',
+        secondary: 'minecraft:cyan_dye',
+        tertiary: 'minecraft:magenta_dye'
+    },
+    {
+        input: 'ars_nouveau:source_berry',
         type: 'small',
         primary: 'minecraft:purple_dye',
         secondary: 'minecraft:purple_dye',
