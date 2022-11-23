@@ -1,8 +1,7 @@
 ServerEvents.tags('item', (event) => {
     const items = [
-        /pneumaticcraft:(reinforced_)?air_canister/, // 10 & 20 bar canisters
-        /pneumaticcraft:(\w+_)?drone$/, // all 5 craftable drones
-
+        /pneumaticcraft:(reinforced_)?air_canister/,
+        /pneumaticcraft:.*drone$/,
         /pneumaticcraft:pneumatic_(wrench|helmet|chestplate|leggings|boots)/,
 
         'pneumaticcraft:vortex_cannon',
@@ -14,9 +13,12 @@ ServerEvents.tags('item', (event) => {
         'pneumaticcraft:jackhammer'
     ];
 
-    const tags = ['enigmatica:containers', 'enigmatica:containers/air'];
+    // const tagGroups = ['enigmatica:containers', 'enigmatica:containers/air'];
 
-    tags.forEach((tag) => {
-        event.get(tag).add(items);
-    });
+    // tagGroups.forEach((tagGroup) => {
+    //     event.get(tagGroup).add(items);
+    // });
+
+    event.get('enigmatica:containers').add(items);
+    event.get('enigmatica:containers/air').add(items);
 });

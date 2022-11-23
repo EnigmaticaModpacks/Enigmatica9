@@ -1,12 +1,13 @@
 ServerEvents.tags('item', (event) => {
-    var items = [
+    const items = [
+        /_boots/,
         'immersiveengineering:armor_faraday_feet',
         'immersiveengineering:armor_steel_feet',
         'mekanism:free_runners',
         'naturesaura:infused_iron_shoes',
         'naturesaura:sky_shoes'
     ];
-    var exceptions = [
+    const exceptions = [
         'pneumaticcraft:jet_boots_upgrade_1',
         'pneumaticcraft:jet_boots_upgrade_2',
         'pneumaticcraft:jet_boots_upgrade_3',
@@ -14,13 +15,9 @@ ServerEvents.tags('item', (event) => {
         'pneumaticcraft:jet_boots_upgrade_5'
     ];
 
-    var tags = ['forge:armors', 'forge:armors/boots'];
+    const tagGroups = ['forge:armors', 'forge:armors/boots'];
 
-    tags.forEach((tag) => {
-        event
-            .get(tag)
-            .add(items)
-            .add(/_boots/)
-            .remove(exceptions);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items).remove(exceptions);
     });
 });

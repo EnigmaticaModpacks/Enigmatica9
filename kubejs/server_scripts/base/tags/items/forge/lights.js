@@ -1,5 +1,5 @@
 ServerEvents.tags('item', (event) => {
-    let items = [
+    const items = [
         'minecraft:beacon',
         'minecraft:end_rod',
         'minecraft:glowstone',

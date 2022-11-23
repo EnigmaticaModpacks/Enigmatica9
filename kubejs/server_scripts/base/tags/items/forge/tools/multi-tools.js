@@ -1,5 +1,5 @@
 ServerEvents.tags('item', (event) => {
-    var items = [
+    const items = [
         /_paxel/,
         /_aiot/,
         'immersiveengineering:buzzsaw',
@@ -14,11 +14,11 @@ ServerEvents.tags('item', (event) => {
         // 'thermal:flux_saw'
     ];
 
-    var exceptions = [];
+    const exceptions = [];
 
-    var tags = ['forge:tools', 'forge:multi_tools', 'forge:tools/multi_tools'];
+    const tagGroups = ['forge:tools', 'forge:multi_tools', 'forge:tools/multi_tools'];
 
-    tags.forEach((tag) => {
-        event.get(tag).add(items).remove(exceptions);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items).remove(exceptions);
     });
 });

@@ -1,10 +1,10 @@
 ServerEvents.tags('item', (event) => {
-    var items = [/_shovel$/, /_aiot/, /_paxel/, /_excavator/, 'immersiveengineering:shovel_steel'];
-    var exceptions = [];
+    const items = [/_shovel$/, /_aiot/, /_paxel/, /_excavator/, 'immersiveengineering:shovel_steel'];
+    const exceptions = [];
 
-    var tags = ['forge:tools', 'forge:shovels', 'forge:tools/shovels'];
+    const tagGroups = ['forge:tools', 'forge:shovels', 'forge:tools/shovels'];
 
-    tags.forEach((tag) => {
-        event.get(tag).add(items).remove(exceptions);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items).remove(exceptions);
     });
 });

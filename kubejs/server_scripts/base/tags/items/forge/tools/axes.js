@@ -1,10 +1,10 @@
 ServerEvents.tags('item', (event) => {
-    var items = [/_axe$/, /_paxel/, /_aiot/, 'immersiveengineering:axe_steel'];
-    var exceptions = [];
+    const items = [/_axe$/, /_paxel/, /_aiot/, 'immersiveengineering:axe_steel'];
+    const exceptions = [];
 
-    var tags = ['forge:tools', 'forge:axes', 'forge:tools/axes'];
+    const tagGroups = ['forge:tools', 'forge:axes', 'forge:tools/axes'];
 
-    tags.forEach((tag) => {
-        event.get(tag).add(items).remove(exceptions);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items).remove(exceptions);
     });
 });
