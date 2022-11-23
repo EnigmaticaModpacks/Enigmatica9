@@ -3,6 +3,7 @@
     "source": "vanilla",
     "localizedName": "Copper",
     "processedTypes": [
+        "storage_block",
         "ore",
         "raw",
         "crushed_ore",
@@ -22,19 +23,5 @@
     },
     "colors": {
         "materialColor": "c87456"
-    },
-    "compat": {
-        "create": {
-            "crushing": {
-                "firstOutputCount": 2,
-                "secondOutputCount": 1,
-                "secondOutputChance": 0.35
-            },
-            "splashing": {
-                "secondOutput": "emendatusenigmatica:copper_nugget",
-                "secondOutputCount": 9,
-                "secondOutputChance": 0.3
-            }
-        }
     }
 }
