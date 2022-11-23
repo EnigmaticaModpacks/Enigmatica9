@@ -15,11 +15,6 @@ const metal_properties = {
             create: {
                 processingTime: 400
             }
-        },
-        special: {
-            create: {
-                hasCrushedOre: true
-            }
         }
     },
     nickel: {
@@ -31,11 +26,6 @@ const metal_properties = {
             },
             create: {
                 processingTime: 350
-            }
-        },
-        special: {
-            create: {
-                hasCrushedOre: true
             }
         }
     },
@@ -49,11 +39,6 @@ const metal_properties = {
             create: {
                 processingTime: 300
             }
-        },
-        special: {
-            create: {
-                hasCrushedOre: true
-            }
         }
     },
     copper: {
@@ -65,11 +50,6 @@ const metal_properties = {
             },
             create: {
                 processingTime: 350
-            }
-        },
-        special: {
-            create: {
-                hasCrushedOre: true
             }
         }
     },
@@ -83,11 +63,6 @@ const metal_properties = {
             create: {
                 processingTime: 300
             }
-        },
-        special: {
-            create: {
-                hasCrushedOre: true
-            }
         }
     },
     lead: {
@@ -99,11 +74,6 @@ const metal_properties = {
             },
             create: {
                 processingTime: 300
-            }
-        },
-        special: {
-            create: {
-                hasCrushedOre: true
             }
         }
     },
@@ -117,11 +87,6 @@ const metal_properties = {
             create: {
                 processingTime: 300
             }
-        },
-        special: {
-            create: {
-                hasCrushedOre: true
-            }
         }
     },
     uranium: {
@@ -133,11 +98,6 @@ const metal_properties = {
             },
             create: {
                 processingTime: 400
-            }
-        },
-        special: {
-            create: {
-                hasCrushedOre: true
             }
         }
     },
@@ -151,11 +111,6 @@ const metal_properties = {
             create: {
                 processingTime: 400
             }
-        },
-        special: {
-            create: {
-                hasCrushedOre: true
-            }
         }
     },
     tin: {
@@ -168,11 +123,6 @@ const metal_properties = {
             create: {
                 processingTime: 350
             }
-        },
-        special: {
-            create: {
-                hasCrushedOre: true
-            }
         }
     },
     zinc: {
@@ -184,11 +134,6 @@ const metal_properties = {
             },
             create: {
                 processingTime: 350
-            }
-        },
-        special: {
-            create: {
-                hasCrushedOre: true
             }
         }
     },
