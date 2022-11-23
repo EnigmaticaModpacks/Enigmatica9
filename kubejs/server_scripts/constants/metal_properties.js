@@ -83,6 +83,11 @@ const metal_properties = {
             create: {
                 processingTime: 300
             }
+        },
+        special: {
+            create: {
+                hasCrushedOre: true
+            }
         }
     },
     lead: {
@@ -196,11 +201,6 @@ const metal_properties = {
             },
             create: {
                 processingTime: 400
-            }
-        },
-        special: {
-            create: {
-                hasCrushedOre: true
             }
         }
     },
