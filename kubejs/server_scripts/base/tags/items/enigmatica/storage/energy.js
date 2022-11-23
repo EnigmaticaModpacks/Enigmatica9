@@ -14,7 +14,7 @@ ServerEvents.tags('item', (event) => {
     // tagGroups.forEach((tagGroup) => {
     //     event.get(tagGroup).add(items);
     // });
-    
+
     event.get('enigmatica:containers').add(items);
     event.get('enigmatica:containers/energy').add(items);
 });
