@@ -19,9 +19,13 @@ ServerEvents.tags('item', (event) => {
         'mekanism:ultimate_chemical_tank',
         'mekanism:creative_chemical_tank'
     ];
-    const tagGroups = ['enigmatica:containers', 'enigmatica:containers/liquid', 'enigmatica:containers/fluid'];
+    // const tagGroups = ['enigmatica:containers', 'enigmatica:containers/liquid', 'enigmatica:containers/fluid'];
 
-    tagGroups.forEach((tagGroup) => {
-        event.get(tagGroup).add(items).remove(exceptions);
-    });
+    // tagGroups.forEach((tagGroup) => {
+    //     event.get(tagGroup).add(items).remove(exceptions);
+    // });
+
+    event.get('enigmatica:containers').add(items).remove(exceptions);
+    event.get('enigmatica:containers/liquid').add(items).remove(exceptions);
+    event.get('enigmatica:containers/fluid').add(items).remove(exceptions);
 });

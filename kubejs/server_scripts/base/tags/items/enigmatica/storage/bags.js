@@ -15,9 +15,12 @@ ServerEvents.tags('item', (event) => {
         '#create:toolboxes'
     ];
 
-    const tagGroups = ['enigmatica:containers', 'enigmatica:containers/bag'];
+    // const tagGroups = ['enigmatica:containers', 'enigmatica:containers/bag'];
 
-    tagGroups.forEach((tagGroup) => {
-        event.get(tagGroup).add(items);
-    });
+    // tagGroups.forEach((tagGroup) => {
+    //     event.get(tagGroup).add(items);
+    // });
+
+    event.get('enigmatica:containers').add(items);
+    event.get('enigmatica:containers/bags').add(items);
 });
