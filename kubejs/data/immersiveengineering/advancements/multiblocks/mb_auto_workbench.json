@@ -1,0 +1,24 @@
+{
+    "parent": "immersiveengineering:multiblocks/multiblocks_root",
+    "criteria": {
+        "form_multiblock": {
+            "conditions": {
+                "item": { "items": ["immersiveengineering:hammer"] },
+                "multiblock": "immersiveengineering:multiblocks/auto_workbench"
+            },
+            "trigger": "immersiveengineering:multiblock_formed"
+        }
+    },
+    "display": {
+        "announce_to_chat": false,
+        "description": {
+            "translate": "advancement.immersiveengineering.mb_auto_workbench.desc"
+        },
+        "frame": "task",
+        "hidden": true,
+        "icon": { "item": "immersiveengineering:auto_workbench" },
+        "show_toast": false,
+        "title": { "translate": "advancement.immersiveengineering.mb_auto_workbench" }
+    },
+    "requirements": [["form_multiblock"]]
+}
