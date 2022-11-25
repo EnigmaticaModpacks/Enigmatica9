@@ -9,5 +9,8 @@
     "advancement.immersiveengineering.mb_assembler.desc": "Form the Assembler Multiblock",
 
     "advancement.immersiveengineering.mb_lightning_rod": "Lightning Rod",
-    "advancement.immersiveengineering.mb_lightning_rod.desc": "Form the Lightning Rod Multiblock"
+    "advancement.immersiveengineering.mb_lightning_rod.desc": "Form the Lightning Rod Multiblock",
+
+    "advancement.immersiveengineering.mb_bottling_machine": "Bottling Machine",
+    "advancement.immersiveengineering.mb_bottling_machine.desc": "Form the Bottling Machine Multiblock"
 }

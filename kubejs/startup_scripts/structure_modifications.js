@@ -139,6 +139,26 @@ const structures = [
             normal: 'immersiveengineering:rs_engineering',
             expert: 'minecraft:stone'
         }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
+        name: 'blast_furnace',
+        index: 0,
+        block: {
+            normal: 'kubejs:disabled_structure_indicator',
+            expert: 'kubejs:disabled_structure_indicator'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
+        name: 'alloy_smelter',
+        index: 0,
+        block: {
+            normal: 'kubejs:disabled_structure_indicator',
+            expert: 'kubejs:disabled_structure_indicator'
+        }
     }
 ];
 

@@ -18,6 +18,8 @@ ServerEvents.recipes((event) => {
         { type: 'create:cutting' },
         { type: 'immersiveengineering:sawmill' },
         { type: 'immersiveengineering:cloche' },
+        { type: 'immersiveengineering:generated_list' },
+        { type: 'immersiveengineering:alloy' },
         { mod: 'gateways' }
     ];
 

@@ -34,7 +34,9 @@ jei.base.items.disabled = [
     'mekanism:ultimate_bin',
     'mekanism:elite_bin',
     'mekanism:advanced_bin',
-    'mekanism:basic_bin'
+    'mekanism:basic_bin',
+    'immersiveengineering:blast_furnace',
+    'immersiveengineering:alloy_smelter'
 ];
 jei.base.items.hidden = [
     'kubejs:altered_recipe_indicator',

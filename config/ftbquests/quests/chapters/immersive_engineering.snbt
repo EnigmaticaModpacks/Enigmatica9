@@ -41,8 +41,8 @@
 		}
 		{
 			title: "Getting Started: Logistics and Storage"
-			x: 6.0d
-			y: -8.0d
+			x: -3.5d
+			y: -6.0d
 			description: [
 				"Your trusty Engineer's Hammer is used primarily to form multiblocks and rotate certain blocks. You can also use it to craft plates in a pinch."
 				""
@@ -110,9 +110,18 @@
 		{
 			title: "Coke Oven"
 			icon: "immersiveengineering:coke_oven"
-			x: -3.5d
+			x: 0.5d
 			y: -5.0d
-			description: ["The Coke Oven is the first important multiblock in IE, made with a 3x3x3 cube of Coke Bricks. This structure can turn coal into coke and wood into charcoal; either operation produces creosote, an important byproduct used for Treated Wood."]
+			description: [
+				"Critical to the creation of Steel, the Coke Oven is primarily used for processing Coal into Coal Coke and Creosote, two materials that will be used extensively throughout Immersive Engineering."
+				""
+				"Items and fluids may be piped in and out automatically."
+				""
+				""
+				"The Engineer’s Manual shows how this structure is constructed. Right-Click the block highlighted in Red in the manual with an Engineer’s Hammer to form the structure. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["2E14B84D1594EBE0"]
 			id: "0000000000000009"
 			tasks: [{
 				id: "7AEAEA5C633940CF"
@@ -130,8 +139,8 @@
 		}
 		{
 			icon: "immersiveengineering:windmill"
-			x: -13.0d
-			y: -4.0d
+			x: -8.0d
+			y: -5.0d
 			description: ["Windmills can be used as an early power source. They must be connected to a Kinetic Dynamo and placed in a high, unobstructed area."]
 			hide_dependency_lines: true
 			dependencies: ["0C5F307C84EECADF"]
@@ -159,8 +168,8 @@
 		{
 			title: "Basic Wiring"
 			icon: "immersiveengineering:wirecoil_copper"
-			x: 7.5d
-			y: -6.5d
+			x: -2.5d
+			y: -5.0d
 			description: [
 				"Wires are used to transmit FE and come in three different tiers, each providing different input and output rates, as well as maximum transfer rates. Refer to the Engineer’s Manual for exact rates of each tier."
 				""
@@ -259,31 +268,10 @@
 			}]
 		}
 		{
-			title: "Blast Furnace"
-			icon: "immersiveengineering:blast_furnace"
-			x: -4.5d
-			y: -4.0d
-			description: ["The Blast Furnace is used to process iron into steel, using coke or charcoal. This is a critically important structure... unless you get steel another way, anyway."]
-			id: "0000000000000012"
-			tasks: [{
-				id: "236C5FF333BDCDA7"
-				type: "advancement"
-				advancement: "immersiveengineering:main/mb_blastfurnace"
-				criterion: ""
-			}]
-			rewards: [{
-				id: "0000000000000613"
-				type: "item"
-				title: "Steel Ingot"
-				item: "immersiveengineering:ingot_steel"
-				count: 8
-			}]
-		}
-		{
 			title: "Insulated Wiring"
 			icon: "immersiveengineering:wirecoil_copper_ins"
-			x: 7.5d
-			y: -5.5d
+			x: -2.5d
+			y: -4.0d
 			description: [
 				"Note: Wires will transmit power through unloaded chunks so long as the start and end points are loaded, making them very useful for long distance power runs. "
 				""
@@ -333,8 +321,8 @@
 			]
 		}
 		{
-			x: 7.5d
-			y: -3.5d
+			x: -2.5d
+			y: -2.0d
 			description: [
 				"Accumulators act as power storage on a network. "
 				""
@@ -379,9 +367,15 @@
 		}
 		{
 			icon: "immersiveengineering:workbench"
-			x: -6.5d
+			x: 0.5d
 			y: -4.0d
-			description: ["The Engineer's Workbench is needed to craft certain parts with the use of blueprints. You can also use it to modify certain tools later on."]
+			description: [
+				"Engineers will spend a good deal of time at their workbenches, tinkering with tools and carefully forming delicate parts. "
+				""
+				"The Engineer’s Workbench provides a space for modifying tools from the mod, and doubles as a crafting bench for items that require an Engineer’s Blueprint. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["2E14B84D1594EBE0"]
 			id: "0000000000000019"
 			tasks: [
 				{
@@ -410,8 +404,8 @@
 		}
 		{
 			icon: "immersiveengineering:watermill"
-			x: -12.0d
-			y: -4.0d
+			x: -7.0d
+			y: -5.0d
 			description: ["Water Wheels need to have water flowing over them. Up to three can be placed against a Kinetic Dynamo to produce power."]
 			hide_dependency_lines: true
 			dependencies: ["0C5F307C84EECADF"]
@@ -437,8 +431,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: -6.5d
+			x: -4.5d
+			y: -5.0d
 			description: ["Conveyor belts can be used to automate item transport. Items on conveyor belts will automatically be inserted into inventories on the receiving side. You can also craft extracting or vertical conveyor belts."]
 			dependencies: ["0000000000000007"]
 			id: "000000000000001E"
@@ -459,9 +453,11 @@
 		{
 			title: "Crusher"
 			icon: "immersiveengineering:crusher"
-			x: -1.5d
-			y: -3.0d
+			x: 0.5d
+			y: 0.5d
 			description: ["The Crusher can be used to crush ores into dusts, which can then be smelted for a total of two ingots per ore. Certain other items can also be ground down in this way - see JEI."]
+			hide_dependency_lines: true
+			dependencies: ["7215DE7DCCEA0835"]
 			id: "0000000000000020"
 			tasks: [{
 				id: "73A3A0763A628DCA"
@@ -481,9 +477,11 @@
 		{
 			title: "Metal Press"
 			icon: "immersiveengineering:metal_press"
-			x: -1.5d
-			y: -4.0d
+			x: -0.5d
+			y: 0.5d
 			description: ["The Metal Press, when supplied with a mold and power, provides a more material-efficient way to craft plates, wires, and more."]
+			hide_dependency_lines: true
+			dependencies: ["7215DE7DCCEA0835"]
 			id: "0000000000000022"
 			tasks: [{
 				id: "68D5D441C57AF2A7"
@@ -512,10 +510,19 @@
 		{
 			title: "Improved Blast Furnace"
 			icon: "immersiveengineering:advanced_blast_furnace"
-			x: -4.5d
+			x: 0.5d
 			y: -3.0d
-			description: ["The Improved Blast Furnace makes it easier to automate input/output. You can also make it run much more quickly by attaching one or two powered Blast Furnace Preheaters on either side."]
-			dependencies: ["0000000000000012"]
+			description: [
+				"A powerful furnace that helps maintain the specific heat requirements for smelting Steel. "
+				""
+				"Both fuel and input items go into the top, while the results come out the front and back. It may be sped up significantly by adding Blast Furnace Preheaters to the sides and powering them."
+				""
+				"Outputs will be automatically inserted into adjacent inventories or onto adjacent Conveyor Belts."
+				""
+				"Note: The Crude Blast Furnace is disabled for Enigmatica 9. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["2E14B84D1594EBE0"]
 			id: "0000000000000024"
 			tasks: [{
 				id: "40B68AA204AA3B9B"
@@ -523,46 +530,34 @@
 				advancement: "immersiveengineering:multiblocks/mb_improvedblastfurnace"
 				criterion: ""
 			}]
-			rewards: [{
-				id: "0000000000000620"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			title: "Alloy Kiln"
-			icon: "immersiveengineering:alloy_smelter"
-			x: -3.5d
-			y: -4.0d
-			description: ["The Alloy Kiln is a simple 2x2x2 structure that can smelt different types of metal together to form alloys."]
-			id: "0000000000000026"
-			tasks: [{
-				id: "0000000000000027"
-				type: "item"
-				item: "immersiveengineering:alloybrick"
-				count: 8L
-			}]
-			rewards: [{
-				id: "0000000000000608"
-				type: "item"
-				title: "Copper Ingot"
-				item: "minecraft:copper_ingot"
-				count: 8
-			}]
+			rewards: [
+				{
+					id: "0000000000000620"
+					type: "command"
+					title: "Epic Immersive Engineering Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
+					player_command: false
+				}
+				{
+					id: "455E2E578760B634"
+					type: "item"
+					item: "mekanism:ingot_steel"
+				}
+			]
 		}
 		{
 			title: "Arc Furnace"
 			icon: "immersiveengineering:arc_furnace"
-			x: -3.5d
-			y: -3.0d
+			x: 0.5d
+			y: 4.5d
 			description: [
 				"The Arc Furnace is a large, power-intensive machine that can smelt ores into ingots at a 1:2 ratio, but can also be used to quickly make alloys."
 				""
 				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 8 instance folder to assist with this multiblock."
 			]
+			hide_dependency_lines: true
+			dependencies: ["7215DE7DCCEA0835"]
 			dependency_requirement: "one_completed"
 			id: "0000000000000032"
 			tasks: [{
@@ -591,9 +586,11 @@
 			]
 		}
 		{
-			x: 8.5d
-			y: 4.0d
+			x: -8.5d
+			y: 0.5d
 			description: ["The External Heater is a simple machine that, when powered, will heat adjacent furnaces. This allows the furnaces to smelt more quickly, without using fuel."]
+			hide_dependency_lines: true
+			dependencies: ["687C9701A98F050B"]
 			id: "0000000000000034"
 			tasks: [{
 				id: "0000000000000035"
@@ -610,8 +607,8 @@
 			}]
 		}
 		{
-			x: -12.5d
-			y: -3.0d
+			x: -7.5d
+			y: -4.0d
 			description: ["Thermoelectric Generators are another straightforward power option. When surrounded with hot and cold blocks, this block generates power based on the difference in temperature (see manual)."]
 			hide_dependency_lines: true
 			dependencies: ["0C5F307C84EECADF"]
@@ -641,9 +638,11 @@
 		{
 			title: "Sawmill"
 			icon: "immersiveengineering:sawmill"
-			x: -1.5d
-			y: -2.0d
+			x: 1.5d
+			y: 0.5d
 			description: ["The Sawmill operates in two stages. Without a sawblade, it strips logs; with a sawblade, it cuts stripped logs into six planks each. See the Engineer's Manual for more info, as usual."]
+			hide_dependency_lines: true
+			dependencies: ["7215DE7DCCEA0835"]
 			dependency_requirement: "one_completed"
 			id: "0000000000000038"
 			tasks: [
@@ -677,9 +676,11 @@
 		{
 			title: "Industrial Squeezer"
 			icon: "immersiveengineering:squeezer"
-			x: -4.5d
-			y: -1.5d
+			x: -0.5d
+			y: 2.5d
 			description: ["The Squeezer can make plant oil from seeds (ideally hemp) and is also necessary to make HOP Graphite for the Arc Furnace. "]
+			hide_dependency_lines: true
+			dependencies: ["7215DE7DCCEA0835"]
 			id: "000000000000003A"
 			tasks: [{
 				id: "3432F8205B18C255"
@@ -708,8 +709,8 @@
 		{
 			title: "Diesel Generator"
 			icon: "immersiveengineering:diesel_generator"
-			x: -12.5d
-			y: -2.0d
+			x: -7.5d
+			y: -3.0d
 			shape: "circle"
 			description: ["With Biodiesel or Diesel acquired, they can be used as a fuel for the powerful (if noisy) Diesel Generator, producing respectable amounts of FE/t."]
 			hide_dependency_lines: true
@@ -734,8 +735,8 @@
 		{
 			title: "Excavator"
 			icon: "immersiveengineering:bucket_wheel"
-			x: 8.5d
-			y: 3.0d
+			x: -7.5d
+			y: 2.5d
 			description: [
 				"Once you've determined an appropriate spot to excavate, you can build this machine there. Be warned that the Excavator requires a rather hefty amount of energy to run."
 				""
@@ -761,9 +762,11 @@
 		{
 			title: "Mineral Veins"
 			icon: "immersiveengineering:sample_drill"
-			x: 8.5d
-			y: 2.0d
+			x: -7.5d
+			y: 1.5d
 			description: ["As described in the \"Minerals\" section of the manual, certain IE machines can detect and mine massive veins of otherwise unobtainable ore. The first step toward this is to use Survey Tools and a Core Sample Drill to find what veins are in a chunk."]
+			hide_dependency_lines: true
+			dependencies: ["687C9701A98F050B"]
 			id: "0000000000000061"
 			tasks: [{
 				id: "0000000000000062"
@@ -794,10 +797,12 @@
 			]
 		}
 		{
-			x: 9.5d
-			y: 2.0d
+			x: -6.5d
+			y: 0.5d
 			subtitle: "Getting Clocher"
 			description: ["The Garden Cloche takes power, water, and optionally fertilizer to grow plants at an accelerated rate."]
+			hide_dependency_lines: true
+			dependencies: ["687C9701A98F050B"]
 			id: "0000000000000241"
 			tasks: [{
 				id: "0000000000000242"
@@ -816,13 +821,15 @@
 		{
 			title: "Engineered Lighting"
 			icon: "immersiveengineering:electric_lantern"
-			x: 8.5d
-			y: 5.0d
+			x: -7.5d
+			y: 0.5d
 			description: [
 				"The Powered Lantern, when provided with a tiny amount of power via wire, will suppress mob spawns in a 32-block radius (in addition to, y'know, providing light)."
 				""
 				"The Floodlight can be used to light up a large cone in front of itself."
 			]
+			hide_dependency_lines: true
+			dependencies: ["687C9701A98F050B"]
 			id: "0000000000000243"
 			tasks: [
 				{
@@ -847,9 +854,11 @@
 		{
 			title: "Workbench Automation"
 			icon: "immersiveengineering:auto_workbench"
-			x: -6.0d
-			y: -3.0d
+			x: 0.0d
+			y: 1.5d
 			description: ["The Automated Workbench is a powered multiblock that can automatically process a given type of Engineer's Workbench recipe, when supplied with a blueprint. Handy!"]
+			hide_dependency_lines: true
+			dependencies: ["7215DE7DCCEA0835"]
 			id: "0000000000000246"
 			tasks: [{
 				id: "3FAF24D1DCC07BB6"
@@ -869,9 +878,11 @@
 		{
 			title: "Refinery"
 			icon: "immersiveengineering:refinery"
-			x: -4.5d
-			y: 0.5d
+			x: 1.5d
+			y: 2.5d
 			description: ["The final step in producing Biodiesel, the Refinery combines Ethanol and Plant Oil to make this liquid gold. "]
+			hide_dependency_lines: true
+			dependencies: ["7215DE7DCCEA0835"]
 			id: "09AEE48CED288DD1"
 			tasks: [{
 				id: "5D798D395DAC8BEA"
@@ -891,13 +902,15 @@
 		{
 			title: "Assembler"
 			icon: "immersiveengineering:assembler"
-			x: -7.0d
-			y: -3.0d
+			x: 1.0d
+			y: 1.5d
 			description: [
 				"Assembler is used to craft items like a player would in crafting bench. It has 3 slots for recipes you can set, and output of one can be used as input of another recipe set. It also has 3 fluid tanks, which can be used to replace buckets with raw fluid."
 				""
 				"To assemble it, right click one of the belts. This will be your input, and second one will be output."
 			]
+			hide_dependency_lines: true
+			dependencies: ["7215DE7DCCEA0835"]
 			id: "3B3D37BAC8E40971"
 			tasks: [{
 				id: "7FC67309F04DF281"
@@ -917,9 +930,11 @@
 		{
 			title: "Mixer"
 			icon: "immersiveengineering:mixer"
-			x: -2.5d
-			y: 0.5d
+			x: 0.0d
+			y: 3.5d
 			description: ["The Mixer dissolves solids into fluids, mixing them together. It's mostly used to create Liquid concrete, but it can also do potions."]
+			hide_dependency_lines: true
+			dependencies: ["7215DE7DCCEA0835"]
 			id: "37F3086A687795FB"
 			tasks: [{
 				id: "16DEFFC91A0B7748"
@@ -939,8 +954,8 @@
 		{
 			title: "Bottling Machine"
 			icon: "immersiveengineering:bottling_machine"
-			x: -1.5d
-			y: 0.5d
+			x: 1.0d
+			y: 3.5d
 			description: ["The Bottling Machine fills fluid containers with provided liquid. Anything that can contain liquid will work! Mekanism tank, glass bottle, a bucket."]
 			dependencies: ["37F3086A687795FB"]
 			dependency_requirement: "one_completed"
@@ -982,6 +997,12 @@
 					item: "immersiveengineering:fluid_pump"
 					count: 2L
 				}
+				{
+					id: "6B414E90192B3B2A"
+					type: "advancement"
+					advancement: "minecraft:story/root"
+					criterion: ""
+				}
 			]
 			rewards: [{
 				id: "19DF31EC00072D95"
@@ -993,8 +1014,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: -4.5d
+			x: -4.5d
+			y: -3.0d
 			description: [
 				"Item batcher is an advanced filter block made specifically for use with conveyor belts and creating batches of items for machines."
 				""
@@ -1025,8 +1046,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: -5.5d
+			x: -4.5d
+			y: -4.0d
 			description: [
 				"The Item Router is an advanced item sorter made to work with conveyor belts."
 				""
@@ -1063,8 +1084,8 @@
 		{
 			title: "Item Silo"
 			icon: "immersiveengineering:silo"
-			x: 4.5d
-			y: -3.5d
+			x: -4.5d
+			y: -2.0d
 			description: [
 				"Simple bulk item storage. Items are input through the top and extracted through the bottom."
 				""
@@ -1083,8 +1104,8 @@
 		{
 			title: "Fluid Tank"
 			icon: "immersiveengineering:tank"
-			x: 6.0d
-			y: -2.5d
+			x: -3.5d
+			y: -1.0d
 			description: [
 				"Simple bulk fluid storage. Fluids are input through the top and extracted through the bottom."
 				""
@@ -1102,8 +1123,10 @@
 		}
 		{
 			title: "Fermenter"
-			x: -4.5d
-			y: -0.5d
+			x: 0.5d
+			y: 2.5d
+			hide_dependency_lines: true
+			dependencies: ["7215DE7DCCEA0835"]
 			id: "6D185DB13F466B7C"
 			tasks: [{
 				id: "5B25806696BE0AF3"
@@ -1113,8 +1136,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: -6.5d
+			x: -3.5d
+			y: -5.0d
 			dependencies: ["0000000000000007"]
 			id: "1848E59BC6D42342"
 			tasks: [{
@@ -1124,8 +1147,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: -4.5d
+			x: -3.5d
+			y: -3.0d
 			hide_dependency_lines: true
 			dependencies: ["1848E59BC6D42342"]
 			id: "78D19FEABD21BC6F"
@@ -1136,8 +1159,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: -5.5d
+			x: -3.5d
+			y: -4.0d
 			hide_dependency_lines: true
 			dependencies: ["1848E59BC6D42342"]
 			id: "6FF4F047D8267A50"
@@ -1148,8 +1171,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 2.0d
+			x: -8.5d
+			y: 3.5d
 			subtitle: "Goes Brrr"
 			description: [
 				"A handheld saw perfect for chopping down trees or chopping through zombies. "
@@ -1211,8 +1234,8 @@
 			]
 		}
 		{
-			x: 6.0d
-			y: 4.5d
+			x: -5.0d
+			y: 2.0d
 			subtitle: "First comes smiles, then lies. Last is gunfire."
 			description: [
 				"A trusty side-arm suitable for any Gunslinger."
@@ -1255,8 +1278,8 @@
 			]
 		}
 		{
-			x: 5.5d
-			y: 2.0d
+			x: -6.5d
+			y: 3.5d
 			subtitle: "Workin' in a coal mine. Oops, about to slip down."
 			description: [
 				"A handheld tunnel bore capable of quickly digging through the toughest rocks. "
@@ -1312,8 +1335,8 @@
 			]
 		}
 		{
-			x: 3.0d
-			y: 4.5d
+			x: -10.0d
+			y: 2.0d
 			subtitle: "See the TURTLE, ain't he keen?"
 			description: [
 				"Capable of launching projectiles at immense velocities and ripping through targets with impunity, the Railgun is a fierce weapon. "
@@ -1358,8 +1381,8 @@
 			]
 		}
 		{
-			x: 6.5d
-			y: 5.5d
+			x: -4.5d
+			y: 3.0d
 			shape: "diamond"
 			subtitle: "When the shooting starts, we kill what moves."
 			description: [
@@ -1393,8 +1416,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 5.5d
+			x: -5.5d
+			y: 3.0d
 			shape: "diamond"
 			subtitle: "The man in black fled across the desert..."
 			description: ["For those times when the beasts get too close, or the ammo runs dry. "]
@@ -1415,8 +1438,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 5.5d
+			x: -9.5d
+			y: 3.0d
 			shape: "diamond"
 			subtitle: "The wheel turns and the world moves on."
 			description: ["Heatsinks allow the Railgun to recharge faster for more rapid-fire destruction. "]
@@ -1437,8 +1460,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 5.5d
+			x: -10.5d
+			y: 3.0d
 			shape: "diamond"
 			subtitle: "All things serve the beam."
 			description: ["The Middle Mouse button will enable the scope when installed and scrolling will adjust the magnification level. Great for picking off a target at a distance. "]
@@ -1459,8 +1482,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 6.0d
+			x: -10.0d
+			y: 3.5d
 			shape: "diamond"
 			subtitle: "Pain is a tool, after all. Sometimes it's the best tool."
 			description: [
@@ -1484,8 +1507,8 @@
 		}
 		{
 			title: "Ammo Cartridges"
-			x: 6.0d
-			y: 6.0d
+			x: -5.0d
+			y: 3.5d
 			shape: "diamond"
 			subtitle: "...and the gunslinger followed."
 			description: [
@@ -1567,8 +1590,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 3.0d
+			x: -9.0d
+			y: 4.5d
 			shape: "diamond"
 			subtitle: "A Clean Job"
 			description: ["An exceptional cutting implement that can cleanly carve out blocks of Stone, Ice, or Glass, effectively acting as a tool with Silk Touch. "]
@@ -1595,8 +1618,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 3.5d
+			x: -6.5d
+			y: 5.0d
 			shape: "diamond"
 			subtitle: "Don't Burst It"
 			description: ["The Mining Drill’s engine is not normally capable of operating under water. However, with the addition of a Pressurized Air Tank it can be kept running at full speed."]
@@ -1618,8 +1641,8 @@
 		}
 		{
 			icon: "immersiveengineering:drillhead_steel"
-			x: 6.0d
-			y: 3.0d
+			x: -6.0d
+			y: 4.5d
 			shape: "diamond"
 			subtitle: "Diggy Diggy Hole"
 			description: [
@@ -1653,8 +1676,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 2.5d
+			x: -7.5d
+			y: 4.0d
 			shape: "diamond"
 			description: ["Adding some lubricant to a Drill or Saw destined for rugged digging and cutting tough material can greatly extend the lifetime of the tool. "]
 			dependencies: [
@@ -1678,8 +1701,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 3.5d
+			x: -8.5d
+			y: 5.0d
 			shape: "diamond"
 			subtitle: "So Wait, Instead of Arrows..."
 			description: ["The Blade Quiver may be attached to the Buzzsaw in the Engineer’s Workbench, holds additional blades, and allows you to swap between them on-the-fly in the field. Sneak + Scroll Wheel to change blades. "]
@@ -1700,8 +1723,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: -3.5d
+			x: -3.5d
+			y: -2.0d
 			hide_dependency_lines: true
 			dependencies: ["1848E59BC6D42342"]
 			id: "6DCD6C7A346D65C1"
@@ -1712,8 +1735,8 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: -4.5d
+			x: -2.5d
+			y: -3.0d
 			description: [
 				"Transformers allow stepping down from a higher tier to a lower tier. "
 				""
@@ -1745,8 +1768,8 @@
 		}
 		{
 			title: "Lightning Rod"
-			x: -12.5d
-			y: -1.0d
+			x: -7.5d
+			y: -2.0d
 			hide_dependency_lines: true
 			dependencies: ["0C5F307C84EECADF"]
 			id: "1217074CE717781D"
@@ -1759,8 +1782,10 @@
 		}
 		{
 			title: "Getting Started: Material Processing"
-			x: -3.5d
+			x: 0.5d
 			y: -6.0d
+			hide_dependency_lines: true
+			dependencies: ["0000000000000004"]
 			id: "2E14B84D1594EBE0"
 			tasks: [{
 				id: "4199938FA3695A5E"
@@ -1771,8 +1796,8 @@
 		{
 			title: "Getting Started: Power Generation"
 			icon: "immersiveengineering:voltmeter"
-			x: -12.5d
-			y: -5.0d
+			x: -7.5d
+			y: -6.0d
 			hide_dependency_lines: true
 			dependencies: ["0000000000000004"]
 			id: "0C5F307C84EECADF"
@@ -1784,8 +1809,8 @@
 		}
 		{
 			title: "Tools and Utility"
-			x: 4.5d
-			y: 0.5d
+			x: -7.5d
+			y: -0.5d
 			hide_dependency_lines: true
 			dependencies: ["0000000000000004"]
 			id: "687C9701A98F050B"
@@ -1802,8 +1827,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 3.5d
+			x: -7.5d
+			y: 5.0d
 			shape: "diamond"
 			description: ["An extended Fuel Tank that works in the Mining Drill and Buzzsaw. Well worth the cost."]
 			hide_dependency_lines: true
@@ -1816,6 +1841,27 @@
 				id: "49D43A2B61EA6055"
 				type: "item"
 				item: "immersiveengineering:toolupgrade_drill_capacity"
+			}]
+		}
+		{
+			title: "Heavy Machinery"
+			icon: "immersiveengineering:storage_steel"
+			x: 0.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["0000000000000004"]
+			id: "7215DE7DCCEA0835"
+			tasks: [{
+				id: "7A8C5D02C715AB12"
+				type: "item"
+				title: "Steel"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/steel"
+					}
+				}
 			}]
 		}
 	]

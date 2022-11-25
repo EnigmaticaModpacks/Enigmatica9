@@ -26,7 +26,7 @@ ItemEvents.tooltip((event) => {
             text: [Text.of('Recipe altered for Enigmatica 9: Expert. Refer to JEI.').gold()]
         },
         {
-            items: ['kubejs:disabled_recipe_indicator'],
+            items: ['kubejs:disabled_recipe_indicator', 'kubejs:disabled_structure_indicator'],
             text: [Text.of('Recipe disabled for Enigmatica 9').gold()]
         },
         {
