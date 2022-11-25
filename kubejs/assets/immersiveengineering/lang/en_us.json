@@ -6,5 +6,8 @@
     "advancement.immersiveengineering.mb_sawmill.desc": "Form the Sawmill Multiblock",
 
     "advancement.immersiveengineering.mb_assembler": "Assembler",
-    "advancement.immersiveengineering.mb_assembler.desc": "Form the Assembler Multiblock"
+    "advancement.immersiveengineering.mb_assembler.desc": "Form the Assembler Multiblock",
+
+    "advancement.immersiveengineering.mb_lightning_rod": "Lightning Rod",
+    "advancement.immersiveengineering.mb_lightning_rod.desc": "Form the Lightning Rod Multiblock"
 }
