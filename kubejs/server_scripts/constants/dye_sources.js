@@ -39,6 +39,27 @@ const dye_sources = [
         tertiary: 'minecraft:blue_dye'
     },
     {
+        input: 'minecraft:ink_sac',
+        type: 'small',
+        primary: 'minecraft:black_dye',
+        secondary: 'minecraft:black_dye',
+        tertiary: 'minecraft:black_dye'
+    },
+    {
+        input: 'minecraft:glow_ink_sac',
+        type: 'small',
+        primary: 'minecraft:cyan_dye',
+        secondary: 'minecraft:green_dye',
+        tertiary: 'minecraft:glowstone_dust'
+    },
+    {
+        input: 'minecraft:charcoal',
+        type: 'small',
+        primary: 'minecraft:black_dye',
+        secondary: 'minecraft:black_dye',
+        tertiary: 'minecraft:black_dye'
+    },
+    {
         input: 'minecraft:bone',
         type: 'small',
         primary: 'minecraft:bone_meal',
@@ -247,6 +268,20 @@ const dye_sources = [
         primary: 'minecraft:black_dye',
         secondary: 'minecraft:black_dye',
         tertiary: 'minecraft:gray_dye'
+    },
+    {
+        input: 'minecraft:sweet_berries',
+        type: 'small',
+        primary: 'minecraft:red_dye',
+        secondary: 'minecraft:red_dye',
+        tertiary: 'minecraft:red_dye'
+    },
+    {
+        input: 'minecraft:glow_berries',
+        type: 'small',
+        primary: 'minecraft:orange_dye',
+        secondary: 'minecraft:orange_dye',
+        tertiary: 'minecraft:yellow_dye'
     },
     // Farmer's Delight
 
@@ -734,6 +769,20 @@ const dye_sources = [
         secondary: 'minecraft:yellow_dye',
         tertiary: 'minecraft:lime_dye'
     },
+    {
+        input: 'byg:nightshade_berries',
+        type: 'small',
+        primary: 'minecraft:yellow_dye',
+        secondary: 'minecraft:yellow_dye',
+        tertiary: 'minecraft:yellow_dye'
+    },
+    {
+        input: 'byg:crimson_berries',
+        type: 'small',
+        primary: 'minecraft:red_dye',
+        secondary: 'minecraft:red_dye',
+        tertiary: 'minecraft:orange_dye'
+    },
     // Blue Skies
     {
         input: 'blue_skies:camellia',
@@ -833,6 +882,27 @@ const dye_sources = [
         secondary: 'minecraft:light_gray_dye',
         tertiary: 'minecraft:purple_dye'
     },
+    {
+        input: 'blue_skies:brewberry',
+        type: 'small',
+        primary: 'minecraft:red_dye',
+        secondary: 'minecraft:red_dye',
+        tertiary: 'minecraft:red_dye'
+    },
+    {
+        input: 'blue_skies:pink_brewberry',
+        type: 'small',
+        primary: 'minecraft:pink_dye',
+        secondary: 'minecraft:pink_dye',
+        tertiary: 'minecraft:pink_dye'
+    },
+    {
+        input: 'blue_skies:black_brewberry',
+        type: 'small',
+        primary: 'minecraft:black_dye',
+        secondary: 'minecraft:black_dye',
+        tertiary: 'minecraft:purple_dye'
+    },
 
     // Twilight Forest
     {
@@ -849,7 +919,13 @@ const dye_sources = [
         secondary: 'minecraft:pink_dye',
         tertiary: 'minecraft:yellow_dye'
     },
-
+    {
+        input: 'twilightforest:torchberries',
+        type: 'small',
+        primary: 'minecraft:yellow_dye',
+        secondary: 'minecraft:yellow_dye',
+        tertiary: 'minecraft:glowstone_dust'
+    },
     // Book Wyrms
 
     {
@@ -896,6 +972,23 @@ const dye_sources = [
     },
     {
         input: 'bookwyrms:scale_purple',
+        type: 'small',
+        primary: 'minecraft:purple_dye',
+        secondary: 'minecraft:purple_dye',
+        tertiary: 'minecraft:purple_dye'
+    },
+
+    // Ars Nouveau
+
+    {
+        input: 'ars_nouveau:magebloom',
+        type: 'small',
+        primary: 'minecraft:pink_dye',
+        secondary: 'minecraft:cyan_dye',
+        tertiary: 'minecraft:magenta_dye'
+    },
+    {
+        input: 'ars_nouveau:source_berry',
         type: 'small',
         primary: 'minecraft:purple_dye',
         secondary: 'minecraft:purple_dye',

@@ -1,7 +1,15 @@
 ServerEvents.tags('item', (event) => {
-    var items = [
+    const items = [
+        /chest$/,
+        /sophisticatedstorage:.*barrel/,
+        /cabinet/,
+        /shulker_box/,
+        /rftoolsstorage:storage_module/,
+        /cfm:.*_cabinet/,
+        /cfm:.*_drawer/,
+        /cfm:.*_cooler/,
+        /cfm:.*_crate/,
         '#forge:chests',
-        // 'aquaculture:neptunes_bounty',
         'farmersdelight:basket',
         'immersiveengineering:crate',
         'immersiveengineering:reinforced_crate',
@@ -10,29 +18,16 @@ ServerEvents.tags('item', (event) => {
         'minecraft:dropper'
         // 'rftoolsstorage:modular_storage'
     ];
-    var exceptions = [
-        // 'aquaculture:treasure_chest',
+    const exceptions = [
         'naturesaura:sky_chest',
         'naturesaura:infused_iron_chest',
         'immersiveengineering:armor_steel_chest',
         'immersiveengineering:armor_faraday_chest'
     ];
 
-    var tags = ['enigmatica:containers', 'enigmatica:containers/basic'];
+    const tagGroups = ['enigmatica:containers', 'enigmatica:containers/basic'];
 
-    tags.forEach((tag) => {
-        event
-            .get(tag)
-            .add(items)
-            .add(/chest$/)
-            .add(/sophisticatedstorage:\w+barrel/)
-            .add(/cabinet/)
-            .add(/shulker_box/)
-            .add(/rftoolsstorage:storage_module/)
-            .add(/cfm:\w+_cabinet/)
-            .add(/cfm:\w+_drawer/)
-            .add(/cfm:\w+_cooler/)
-            .add(/cfm:\w+_crate/)
-            .remove(exceptions);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items).remove(exceptions);
     });
 });

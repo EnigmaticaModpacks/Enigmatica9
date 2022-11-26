@@ -1,4 +1,4 @@
 ServerEvents.tags('item', (event) => {
-    let items = [/candle/];
+    const items = [/candle/];
     event.get('minecraft:candles').add(items);
 });

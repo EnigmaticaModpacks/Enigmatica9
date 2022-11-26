@@ -1,5 +1,5 @@
 ServerEvents.tags('item', (event) => {
-    var items = [
+    const items = [
         '#forge:tools/bows',
         '#forge:tools/tridents',
         // 'botania:flare_chakram',
@@ -19,11 +19,11 @@ ServerEvents.tags('item', (event) => {
         'pneumaticcraft:micromissiles',
         'pneumaticcraft:minigun'
     ];
-    var exceptions = [];
+    const exceptions = [];
 
-    var tags = ['enigmatica:weapons', 'enigmatica:weapons/ranged'];
+    const tagGroups = ['enigmatica:weapons', 'enigmatica:weapons/ranged'];
 
-    tags.forEach((tag) => {
-        event.get(tag).add(items).remove(exceptions);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items).remove(exceptions);
     });
 });

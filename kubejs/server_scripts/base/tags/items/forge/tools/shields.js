@@ -1,5 +1,5 @@
 ServerEvents.tags('item', (event) => {
-    var items = [
+    const items = [
         /_shield$/,
         // 'mekanismtools:steel_shield',
         // 'mekanismtools:refined_obsidian_shield',
@@ -10,11 +10,11 @@ ServerEvents.tags('item', (event) => {
         'immersiveengineering:shield'
     ];
 
-    var exceptions = ['twilightforest:stronghold_shield'];
+    const exceptions = ['twilightforest:stronghold_shield'];
 
-    var tags = ['forge:tools', 'forge:shields', 'forge:tools/shields'];
+    const tagGroups = ['forge:tools', 'forge:shields', 'forge:tools/shields'];
 
-    tags.forEach((tag) => {
-        event.get(tag).add(items).remove(exceptions);
+    tagGroups.forEach((tagGroup) => {
+        event.get(tagGroup).add(items).remove(exceptions);
     });
 });

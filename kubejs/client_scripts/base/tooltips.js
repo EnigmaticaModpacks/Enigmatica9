@@ -50,6 +50,10 @@ ItemEvents.tooltip((event) => {
             text: [Text.of('Building Tool: Random Block Placement').gold()]
         },
         {
+            items: ['quark:slime_in_a_bucket'],
+            text: [Text.of('Locates Slime Chunks').gold()]
+        },
+        {
             items: ['quark:iron_button'],
             text: [Text.of('Redstone Device: Long Pulse').darkRed()]
         },
@@ -278,9 +282,7 @@ ItemEvents.tooltip((event) => {
                 'naturesaura:auto_crafter'
             ],
             text: [Text.of(`Auto-crafter`).green()]
-        }
-
-        /*
+        },
         {
             items: [
                 'engineersdecor:rebar_concrete_tile_stairs',
@@ -290,14 +292,49 @@ ItemEvents.tooltip((event) => {
                 'engineersdecor:rebar_concrete_stairs',
                 'engineersdecor:rebar_concrete_slab',
                 'engineersdecor:rebar_concrete',
-                'thermal:enderium_glass',
-                'thermal:lumium_glass',
-                'thermal:signalum_glass',
-                'thermal:obsidian_glass',
-                'engineersdecor:panzerglass_block'
+                'engineersdecor:panzerglass_block',
+                'engineersdecor:panzerglass_slab'
             ],
             text: [Text.of('Immune to the Wither').color('#4F0D75')]
-        },  
+        },
+        {
+            items: ['industrialforegoing:mob_duplicator', 'spirit:soul_cage', 'pneumaticcraft:pressurized_spawner'],
+            text: [Text.of('Mob Spawner').green()]
+        },
+        {
+            items: ['supplementaries:cog_block'],
+            text: [Text.of('Redstone Device: Transmits Redstone Signals').darkRed()]
+        },
+        {
+            items: ['supplementaries:wind_vane'],
+            text: [Text.of('Redstone Device: Weather Detector').darkRed()]
+        },
+        {
+            items: ['supplementaries:crystal_display'],
+            text: [Text.of('Redstone Device: Displays Redstone Signals').darkRed()]
+        },
+        {
+            items: ['supplementaries:relayer'],
+            text: [Text.of('Redstone Device: Losslessly Transmits Redstone Signals').darkRed()]
+        },
+        {
+            items: ['supplementaries:spring_launcher'],
+            text: [Text.of('Redstone Device: Entity Yeeter').darkRed()]
+        },
+        {
+            items: ['supplementaries:speaker_block'],
+            text: [Text.of('Redstone Device: Sends Messages to Nearby Players').darkRed()]
+        },
+        {
+            items: ['supplementaries:turn_table'],
+            text: [Text.of('Redstone Device: Rotates Blocks and Entities').darkRed()]
+        },
+        {
+            items: ['supplementaries:pulley_block'],
+            text: [Text.of('Redstone Device: Raises or Lowers Chains and Ropes When Rotated').darkRed()]
+        }
+
+        /* 
         {
             items: ['clockout:clockout_block'],
             text: [Text.of(`Outputs redstone when the player is online.`).aqua()]
@@ -307,5 +344,9 @@ ItemEvents.tooltip((event) => {
 
     recipes.forEach((recipe) => {
         event.add(recipe.items, recipe.text);
+    });
+
+    jei.base.items.disabled.forEach((item) => {
+        event.add(item, [Text.of(disabled_item_tooltip).red()]);
     });
 });

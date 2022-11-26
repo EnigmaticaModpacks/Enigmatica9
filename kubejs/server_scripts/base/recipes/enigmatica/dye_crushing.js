@@ -6,7 +6,8 @@ ServerEvents.recipes((event) => {
     colors.forEach((color) => {
         ['large', 'small'].forEach((input_size) => {
             let input = `#enigmatica:${input_size}_dye_sources/${color}`;
-            if (Ingredient.of(input).stacks.isEmpty()) {
+
+            if (getItemsInTag(input).includes('minecraft:barrier')) {
                 return;
             }
             let output = `minecraft:${color}_dye`;
