@@ -16,7 +16,7 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:bin\/.*/ },
         { id: /mekanism:processing\/.*\/crystal\/from_slurry/},
         { id: /mekanism:processing\/.*\/slurry\/clean/},
-        { id: /mekanism:processing\/.*\/slurry\/dirty\/from_ore/},
+        { id: /mekanism:processing\/.*\/slurry\/dirty/},
         { id: 'quark:tweaks/smelting/bone_meal_utility' },
         { type: 'immersiveengineering:sawmill' },
         { type: 'create:cutting' },
