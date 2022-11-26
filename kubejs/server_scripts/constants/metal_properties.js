@@ -15,9 +15,6 @@ const metal_properties = {
             create: {
                 processingTime: 400
             }
-        },
-        create: {
-            crushedOre: true
         }
     },
     nickel: {
@@ -30,9 +27,6 @@ const metal_properties = {
             create: {
                 processingTime: 350
             }
-        },
-        create: {
-            crushedOre: true
         }
     },
     gold: {
@@ -45,9 +39,6 @@ const metal_properties = {
             create: {
                 processingTime: 300
             }
-        },
-        create: {
-            crushedOre: true
         }
     },
     copper: {
@@ -60,9 +51,6 @@ const metal_properties = {
             create: {
                 processingTime: 350
             }
-        },
-        create: {
-            crushedOre: true
         }
     },
     aluminum: {
@@ -75,9 +63,6 @@ const metal_properties = {
             create: {
                 processingTime: 300
             }
-        },
-        create: {
-            crushedOre: true
         }
     },
     lead: {
@@ -90,9 +75,6 @@ const metal_properties = {
             create: {
                 processingTime: 300
             }
-        },
-        create: {
-            crushedOre: true
         }
     },
     silver: {
@@ -105,9 +87,6 @@ const metal_properties = {
             create: {
                 processingTime: 300
             }
-        },
-        create: {
-            crushedOre: true
         }
     },
     uranium: {
@@ -120,9 +99,6 @@ const metal_properties = {
             create: {
                 processingTime: 400
             }
-        },
-        create: {
-            crushedOre: true
         }
     },
     osmium: {
@@ -135,9 +111,6 @@ const metal_properties = {
             create: {
                 processingTime: 400
             }
-        },
-        create: {
-            crushedOre: true
         }
     },
     tin: {
@@ -150,9 +123,6 @@ const metal_properties = {
             create: {
                 processingTime: 350
             }
-        },
-        create: {
-            crushedOre: true
         }
     },
     zinc: {
@@ -165,9 +135,6 @@ const metal_properties = {
             create: {
                 processingTime: 350
             }
-        },
-        create: {
-            crushedOre: true
         }
     },
     // cobalt: {
