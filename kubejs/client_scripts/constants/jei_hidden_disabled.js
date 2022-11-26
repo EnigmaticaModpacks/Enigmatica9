@@ -72,7 +72,9 @@ jei.base.items.hidden = [
     'twilightforest:ur_ghast_boss_spawner',
     'twilightforest:knight_phantom_boss_spawner',
     'twilightforest:minoshroom_boss_spawner',
-    'twilightforest:lich_boss_spawner'
+    'twilightforest:lich_boss_spawner',
+    'mekanism:creative_fluid_tank',
+    'mekanism:creative_chemical_tank'
 ];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
 
