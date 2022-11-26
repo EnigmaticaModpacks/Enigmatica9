@@ -41,6 +41,16 @@
 		}
 		{
 			title: "Getting Started: Logistics and Storage"
+			icon: {
+				id: "immersiveengineering:toolbox"
+				Count: 1b
+				ForgeCaps: {
+					Parent: {
+						Size: 23
+						Items: [ ]
+					}
+				}
+			}
 			x: -3.5d
 			y: -6.0d
 			description: [
@@ -71,11 +81,6 @@
 							Damage: 0
 						}
 					}
-				}
-				{
-					id: "49501ECA376AF301"
-					type: "item"
-					item: "immersiveengineering:screwdriver"
 				}
 				{
 					id: "7C8E589C206AE047"
@@ -111,6 +116,11 @@
 							}
 						}
 					}
+				}
+				{
+					id: "2384EACCE2F58FDD"
+					type: "item"
+					item: "immersiveengineering:screwdriver"
 				}
 			]
 		}
@@ -439,36 +449,47 @@
 			}]
 		}
 		{
+			icon: "immersiveengineering:conveyor_basic"
 			x: -5.0d
 			y: -5.0d
-			description: ["Conveyor belts can be used to automate item transport. Items on conveyor belts will automatically be inserted into inventories on the receiving side. You can also craft extracting or vertical conveyor belts."]
+			description: [
+				"Getting items from processing to storage need not be a manual task and Conveyor Belts will handle the task quite adequately. "
+				""
+				"Much like Rails, Conveyor Belts may slope up or down. They may even be waterlogged if necessary, and Right-Clicking them with a dye will change the color of the wall. "
+				""
+				"They come in multiple varieties, such as the decorative ‘covered’ belts, but also the more practical:"
+				""
+				"Dropping Conveyors will insert into inventories below them, or simply drop items on the ground beneath them. They may be disabled with a Redstone signal."
+				""
+				"Vertical Conveyors allow for compact vertical movement of items without having to climb up a sloped run of normal Conveyor Belts."
+				""
+				"Splitting Conveyors will simply alternate sending each stack they receive to one side or the other. They will not split a stack of items on the belt."
+				""
+				"Extracting Conveyors will pull from the attached inventory. They may have their extraction rate adjusted with a Screwdriver and the Extraction point may be adjusted with a Hammer, allowing input from the side of the belt, rather than in line with the flow of the belt. They’re also Redstone sensitive, with a high signal disabling them entirely."
+			]
 			dependencies: ["0000000000000007"]
+			min_width: 300
 			id: "000000000000001E"
-			tasks: [{
-				id: "000000000000001F"
-				type: "item"
-				item: "immersiveengineering:conveyor_basic"
-			}]
-			rewards: [
+			tasks: [
 				{
-					id: "000000000000060E"
-					type: "command"
-					title: "Rare Immersive Engineering Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
-					player_command: false
+					id: "000000000000001F"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
 				}
 				{
-					id: "5EB654FB732F16DC"
+					id: "3568588D632F654C"
 					type: "item"
 					item: "immersiveengineering:conveyor_extract"
 				}
-				{
-					id: "4A0B41F0580D660D"
-					type: "item"
-					item: "immersiveengineering:conveyor_splitter"
-				}
 			]
+			rewards: [{
+				id: "000000000000060E"
+				type: "command"
+				title: "Rare Immersive Engineering Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
 		}
 		{
 			title: "Crusher"
@@ -1089,9 +1110,11 @@
 			x: -5.0d
 			y: -4.0d
 			description: [
-				"The Item Router is an advanced item sorter made to work with conveyor belts."
+				"The Item Router is an advanced item sorter made to work with Conveyor Belts."
 				""
-				"It can in- and output items on every side. However items can't be outputted to the same side as they were inserted from. If an item doesn't match any filter, it will be redirected to a non-filtered side."
+				"Items inserted on a side will be output into any inventory or belt on the side matching the filter. If an item doesn't match any filter, it will be redirected to a non-filtered side."
+				""
+				"Item Routers support filtering by item type as well as by NBT, Damage, and Tag."
 			]
 			hide_dependency_lines: true
 			dependencies: ["000000000000001E"]
@@ -1174,15 +1197,23 @@
 			}]
 		}
 		{
+			icon: "immersiveengineering:fluid_pipe"
 			x: -4.0d
 			y: -5.0d
 			dependencies: ["0000000000000007"]
 			id: "1848E59BC6D42342"
-			tasks: [{
-				id: "32483092ACA5790F"
-				type: "item"
-				item: "immersiveengineering:fluid_pipe"
-			}]
+			tasks: [
+				{
+					id: "32483092ACA5790F"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+				}
+				{
+					id: "18DFE3F19EC99FA1"
+					type: "item"
+					item: "immersiveengineering:fluid_pump"
+				}
+			]
 		}
 		{
 			x: -4.0d
@@ -1199,6 +1230,11 @@
 		{
 			x: -4.0d
 			y: -4.0d
+			description: [
+				"The Fluid Router is an advanced item sorter made to work with Fluid Pipes."
+				""
+				"Fluids inserted on a side will be output into any tank or Fluid Pipe on the side matching the filter. If a fluid doesn't match any filter, it will be redirected to a non-filtered side."
+			]
 			hide_dependency_lines: true
 			dependencies: ["1848E59BC6D42342"]
 			id: "6FF4F047D8267A50"
