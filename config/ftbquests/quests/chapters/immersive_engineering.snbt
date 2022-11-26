@@ -44,14 +44,21 @@
 			x: -3.5d
 			y: -6.0d
 			description: [
-				"Your trusty Engineer's Hammer is used primarily to form multiblocks and rotate certain blocks. You can also use it to craft plates in a pinch."
+				"Factory building wouldn’t be complete without proper logistics to route items, fluid, and power to the machines that need them. As such, Immersive Engineering offers a robust suite of tools to assist in the effort. "
 				""
-				"Wire Cutters are a useful tool for early wire crafting, as well as quickly disconnecting live hanging wires safely."
+				"Before delving too deep, however, a few tools need introduction, as they’ll be required going forward."
 				""
-				"The Screwdriver is handy for making precise changes to redstone connectors among other things."
+				"The trusty Engineer's Hammer is used primarily to form multiblock machines and rotate applicable blocks. They’re also useful for banging out metal plates in a pinch."
+				""
+				"Engineer’s Wire Cutters are essential to several crafts but are perhaps most useful for quickly disconnecting live hanging wires safely."
+				""
+				"The Engineer’s Screwdriver is handy for making precise changes to Redstone connectors among other things."
+				""
+				"All these tools and more can be stored for easy access in an Engineer’s Toolbox. "
 			]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000004"]
+			min_width: 300
 			id: "0000000000000007"
 			tasks: [
 				{
@@ -168,7 +175,7 @@
 		{
 			title: "Basic Wiring"
 			icon: "immersiveengineering:wirecoil_copper"
-			x: -2.5d
+			x: -3.0d
 			y: -5.0d
 			description: [
 				"Wires are used to transmit FE and come in three different tiers, each providing different input and output rates, as well as maximum transfer rates. Refer to the Engineer’s Manual for exact rates of each tier."
@@ -270,7 +277,7 @@
 		{
 			title: "Insulated Wiring"
 			icon: "immersiveengineering:wirecoil_copper_ins"
-			x: -2.5d
+			x: -3.0d
 			y: -4.0d
 			description: [
 				"Note: Wires will transmit power through unloaded chunks so long as the start and end points are loaded, making them very useful for long distance power runs. "
@@ -321,13 +328,14 @@
 			]
 		}
 		{
-			x: -2.5d
+			x: -3.0d
 			y: -2.0d
 			description: [
 				"Accumulators act as power storage on a network. "
 				""
 				"Right-Click a side with an Engineer’s Hammer to toggle between Input (blue), Output (orange), and off. "
 			]
+			hide_dependency_lines: true
 			dependencies: ["000000000000000F"]
 			id: "0000000000000017"
 			tasks: [{
@@ -431,7 +439,7 @@
 			}]
 		}
 		{
-			x: -4.5d
+			x: -5.0d
 			y: -5.0d
 			description: ["Conveyor belts can be used to automate item transport. Items on conveyor belts will automatically be inserted into inventories on the receiving side. You can also craft extracting or vertical conveyor belts."]
 			dependencies: ["0000000000000007"]
@@ -441,23 +449,43 @@
 				type: "item"
 				item: "immersiveengineering:conveyor_basic"
 			}]
-			rewards: [{
-				id: "000000000000060E"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "000000000000060E"
+					type: "command"
+					title: "Rare Immersive Engineering Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+					player_command: false
+				}
+				{
+					id: "5EB654FB732F16DC"
+					type: "item"
+					item: "immersiveengineering:conveyor_extract"
+				}
+				{
+					id: "4A0B41F0580D660D"
+					type: "item"
+					item: "immersiveengineering:conveyor_splitter"
+				}
+			]
 		}
 		{
 			title: "Crusher"
 			icon: "immersiveengineering:crusher"
-			x: 0.5d
-			y: 0.5d
-			description: ["The Crusher can be used to crush ores into dusts, which can then be smelted for a total of two ingots per ore. Certain other items can also be ground down in this way - see JEI."]
+			x: -0.5d
+			y: -1.5d
+			description: [
+				"An all-purpose crushing machine commonly used for processing ores and other bulk items."
+				""
+				"Items may be dropped into the open top, where they’ll be absorbed and processed in the order they were received. They may also be piped into the top to avoid dropping items in the world, however briefly."
+				""
+				"When complete, it will automatically output items to a belt or inventory in front of the machine."
+				""
+				"Beware, the grinding blades can do a lot of damage, easily killing mobs and quickly destroying any items that fall in that don’t have a recipe. "
+			]
 			hide_dependency_lines: true
-			dependencies: ["7215DE7DCCEA0835"]
+			dependencies: ["2E14B84D1594EBE0"]
 			id: "0000000000000020"
 			tasks: [{
 				id: "73A3A0763A628DCA"
@@ -477,11 +505,17 @@
 		{
 			title: "Metal Press"
 			icon: "immersiveengineering:metal_press"
-			x: -0.5d
-			y: 0.5d
-			description: ["The Metal Press, when supplied with a mold and power, provides a more material-efficient way to craft plates, wires, and more."]
+			x: 0.5d
+			y: -2.0d
+			description: [
+				"A staple of any machine room, the Metal Press may be used to efficiently produce plates, gears, wires, and other stamped products. "
+				""
+				"Right-Click an appropriate Mold onto the central piston to set up the machine. Molds may be swapped out at any time, though it’s often more convenient to build multiple presses that are each dedicated to a type. "
+				""
+				"Items are fed into the mill via the built-in conveyor belts and the resulting items will carry on along the belt. "
+			]
 			hide_dependency_lines: true
-			dependencies: ["7215DE7DCCEA0835"]
+			dependencies: ["2E14B84D1594EBE0"]
 			id: "0000000000000022"
 			tasks: [{
 				id: "68D5D441C57AF2A7"
@@ -550,7 +584,7 @@
 			title: "Arc Furnace"
 			icon: "immersiveengineering:arc_furnace"
 			x: 0.5d
-			y: 4.5d
+			y: 3.5d
 			description: [
 				"The Arc Furnace is a large, power-intensive machine that can smelt ores into ingots at a 1:2 ratio, but can also be used to quickly make alloys."
 				""
@@ -639,10 +673,16 @@
 			title: "Sawmill"
 			icon: "immersiveengineering:sawmill"
 			x: 1.5d
-			y: 0.5d
-			description: ["The Sawmill operates in two stages. Without a sawblade, it strips logs; with a sawblade, it cuts stripped logs into six planks each. See the Engineer's Manual for more info, as usual."]
+			y: -1.5d
+			description: [
+				"A large mill for efficiently processing logs into planks. Without a blade installed, it will only strip bark from logs. However, with a blade installed it will also cut those stripped logs down into planks."
+				""
+				"Items are fed into the mill via the built-in conveyor belts and the resulting blocks will carry on along the belt, while any by-products such as sawdust will be inserted into a conveyor or inventory in the front."
+				""
+				"Sawblades have limited durability and must be periodically replaced. A new blade may be installed by Right-Clicking it anywhere on the machine.  "
+			]
 			hide_dependency_lines: true
-			dependencies: ["7215DE7DCCEA0835"]
+			dependencies: ["2E14B84D1594EBE0"]
 			dependency_requirement: "one_completed"
 			id: "0000000000000038"
 			tasks: [
@@ -677,7 +717,7 @@
 			title: "Industrial Squeezer"
 			icon: "immersiveengineering:squeezer"
 			x: -0.5d
-			y: 2.5d
+			y: 1.5d
 			description: ["The Squeezer can make plant oil from seeds (ideally hemp) and is also necessary to make HOP Graphite for the Arc Furnace. "]
 			hide_dependency_lines: true
 			dependencies: ["7215DE7DCCEA0835"]
@@ -855,7 +895,7 @@
 			title: "Workbench Automation"
 			icon: "immersiveengineering:auto_workbench"
 			x: 0.0d
-			y: 1.5d
+			y: 0.5d
 			description: ["The Automated Workbench is a powered multiblock that can automatically process a given type of Engineer's Workbench recipe, when supplied with a blueprint. Handy!"]
 			hide_dependency_lines: true
 			dependencies: ["7215DE7DCCEA0835"]
@@ -879,7 +919,7 @@
 			title: "Refinery"
 			icon: "immersiveengineering:refinery"
 			x: 1.5d
-			y: 2.5d
+			y: 1.5d
 			description: ["The final step in producing Biodiesel, the Refinery combines Ethanol and Plant Oil to make this liquid gold. "]
 			hide_dependency_lines: true
 			dependencies: ["7215DE7DCCEA0835"]
@@ -903,7 +943,7 @@
 			title: "Assembler"
 			icon: "immersiveengineering:assembler"
 			x: 1.0d
-			y: 1.5d
+			y: 0.5d
 			description: [
 				"Assembler is used to craft items like a player would in crafting bench. It has 3 slots for recipes you can set, and output of one can be used as input of another recipe set. It also has 3 fluid tanks, which can be used to replace buckets with raw fluid."
 				""
@@ -931,7 +971,7 @@
 			title: "Mixer"
 			icon: "immersiveengineering:mixer"
 			x: 0.0d
-			y: 3.5d
+			y: 2.5d
 			description: ["The Mixer dissolves solids into fluids, mixing them together. It's mostly used to create Liquid concrete, but it can also do potions."]
 			hide_dependency_lines: true
 			dependencies: ["7215DE7DCCEA0835"]
@@ -955,7 +995,7 @@
 			title: "Bottling Machine"
 			icon: "immersiveengineering:bottling_machine"
 			x: 1.0d
-			y: 3.5d
+			y: 2.5d
 			description: ["The Bottling Machine fills fluid containers with provided liquid. Anything that can contain liquid will work! Mekanism tank, glass bottle, a bucket."]
 			dependencies: ["37F3086A687795FB"]
 			dependency_requirement: "one_completed"
@@ -1014,7 +1054,7 @@
 			}]
 		}
 		{
-			x: -4.5d
+			x: -5.0d
 			y: -3.0d
 			description: [
 				"Item batcher is an advanced filter block made specifically for use with conveyor belts and creating batches of items for machines."
@@ -1046,14 +1086,12 @@
 			}]
 		}
 		{
-			x: -4.5d
+			x: -5.0d
 			y: -4.0d
 			description: [
 				"The Item Router is an advanced item sorter made to work with conveyor belts."
 				""
 				"It can in- and output items on every side. However items can't be outputted to the same side as they were inserted from. If an item doesn't match any filter, it will be redirected to a non-filtered side."
-				""
-				"There is also a fluid alternative that works similarly! Check out the Engineer's Manual for more information about both of them."
 			]
 			hide_dependency_lines: true
 			dependencies: ["000000000000001E"]
@@ -1084,7 +1122,7 @@
 		{
 			title: "Item Silo"
 			icon: "immersiveengineering:silo"
-			x: -4.5d
+			x: -5.0d
 			y: -2.0d
 			description: [
 				"Simple bulk item storage. Items are input through the top and extracted through the bottom."
@@ -1104,8 +1142,8 @@
 		{
 			title: "Fluid Tank"
 			icon: "immersiveengineering:tank"
-			x: -3.5d
-			y: -1.0d
+			x: -4.0d
+			y: -2.0d
 			description: [
 				"Simple bulk fluid storage. Fluids are input through the top and extracted through the bottom."
 				""
@@ -1124,7 +1162,7 @@
 		{
 			title: "Fermenter"
 			x: 0.5d
-			y: 2.5d
+			y: 1.5d
 			hide_dependency_lines: true
 			dependencies: ["7215DE7DCCEA0835"]
 			id: "6D185DB13F466B7C"
@@ -1136,7 +1174,7 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -4.0d
 			y: -5.0d
 			dependencies: ["0000000000000007"]
 			id: "1848E59BC6D42342"
@@ -1147,7 +1185,7 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -4.0d
 			y: -3.0d
 			hide_dependency_lines: true
 			dependencies: ["1848E59BC6D42342"]
@@ -1159,7 +1197,7 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -4.0d
 			y: -4.0d
 			hide_dependency_lines: true
 			dependencies: ["1848E59BC6D42342"]
@@ -1172,7 +1210,7 @@
 		}
 		{
 			x: -8.5d
-			y: 3.5d
+			y: 3.0d
 			subtitle: "Goes Brrr"
 			description: [
 				"A handheld saw perfect for chopping down trees or chopping through zombies. "
@@ -1234,7 +1272,7 @@
 			]
 		}
 		{
-			x: -5.0d
+			x: -6.5d
 			y: 2.0d
 			subtitle: "First comes smiles, then lies. Last is gunfire."
 			description: [
@@ -1279,7 +1317,7 @@
 		}
 		{
 			x: -6.5d
-			y: 3.5d
+			y: 3.0d
 			subtitle: "Workin' in a coal mine. Oops, about to slip down."
 			description: [
 				"A handheld tunnel bore capable of quickly digging through the toughest rocks. "
@@ -1335,7 +1373,7 @@
 			]
 		}
 		{
-			x: -10.0d
+			x: -8.5d
 			y: 2.0d
 			subtitle: "See the TURTLE, ain't he keen?"
 			description: [
@@ -1381,8 +1419,8 @@
 			]
 		}
 		{
-			x: -4.5d
-			y: 3.0d
+			x: -5.5d
+			y: 1.5d
 			shape: "diamond"
 			subtitle: "When the shooting starts, we kill what moves."
 			description: [
@@ -1417,7 +1455,7 @@
 		}
 		{
 			x: -5.5d
-			y: 3.0d
+			y: 2.5d
 			shape: "diamond"
 			subtitle: "The man in black fled across the desert..."
 			description: ["For those times when the beasts get too close, or the ammo runs dry. "]
@@ -1439,7 +1477,7 @@
 		}
 		{
 			x: -9.5d
-			y: 3.0d
+			y: 2.5d
 			shape: "diamond"
 			subtitle: "The wheel turns and the world moves on."
 			description: ["Heatsinks allow the Railgun to recharge faster for more rapid-fire destruction. "]
@@ -1460,8 +1498,8 @@
 			}]
 		}
 		{
-			x: -10.5d
-			y: 3.0d
+			x: -9.5d
+			y: 1.5d
 			shape: "diamond"
 			subtitle: "All things serve the beam."
 			description: ["The Middle Mouse button will enable the scope when installed and scrolling will adjust the magnification level. Great for picking off a target at a distance. "]
@@ -1483,7 +1521,7 @@
 		}
 		{
 			x: -10.0d
-			y: 3.5d
+			y: 2.0d
 			shape: "diamond"
 			subtitle: "Pain is a tool, after all. Sometimes it's the best tool."
 			description: [
@@ -1508,7 +1546,7 @@
 		{
 			title: "Ammo Cartridges"
 			x: -5.0d
-			y: 3.5d
+			y: 2.0d
 			shape: "diamond"
 			subtitle: "...and the gunslinger followed."
 			description: [
@@ -1591,7 +1629,7 @@
 		}
 		{
 			x: -9.0d
-			y: 4.5d
+			y: 4.0d
 			shape: "diamond"
 			subtitle: "A Clean Job"
 			description: ["An exceptional cutting implement that can cleanly carve out blocks of Stone, Ice, or Glass, effectively acting as a tool with Silk Touch. "]
@@ -1619,7 +1657,7 @@
 		}
 		{
 			x: -6.5d
-			y: 5.0d
+			y: 4.5d
 			shape: "diamond"
 			subtitle: "Don't Burst It"
 			description: ["The Mining Drill’s engine is not normally capable of operating under water. However, with the addition of a Pressurized Air Tank it can be kept running at full speed."]
@@ -1642,7 +1680,7 @@
 		{
 			icon: "immersiveengineering:drillhead_steel"
 			x: -6.0d
-			y: 4.5d
+			y: 4.0d
 			shape: "diamond"
 			subtitle: "Diggy Diggy Hole"
 			description: [
@@ -1702,7 +1740,7 @@
 		}
 		{
 			x: -8.5d
-			y: 5.0d
+			y: 4.5d
 			shape: "diamond"
 			subtitle: "So Wait, Instead of Arrows..."
 			description: ["The Blade Quiver may be attached to the Buzzsaw in the Engineer’s Workbench, holds additional blades, and allows you to swap between them on-the-fly in the field. Sneak + Scroll Wheel to change blades. "]
@@ -1723,19 +1761,7 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: -2.0d
-			hide_dependency_lines: true
-			dependencies: ["1848E59BC6D42342"]
-			id: "6DCD6C7A346D65C1"
-			tasks: [{
-				id: "6C9EC09E6C02AD5B"
-				type: "item"
-				item: "immersiveengineering:fluid_pump"
-			}]
-		}
-		{
-			x: -2.5d
+			x: -3.0d
 			y: -3.0d
 			description: [
 				"Transformers allow stepping down from a higher tier to a lower tier. "
@@ -1784,6 +1810,7 @@
 			title: "Getting Started: Material Processing"
 			x: 0.5d
 			y: -6.0d
+			description: ["Bricks, Treated Wood, and Steel; these are what an Immersive Factory is built from, and the focus of early efforts in the mod. "]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000004"]
 			id: "2E14B84D1594EBE0"
@@ -1862,6 +1889,99 @@
 						value: "forge:ingots/steel"
 					}
 				}
+			}]
+		}
+		{
+			title: "Redstone Wiring"
+			icon: "immersiveengineering:wirecoil_redstone"
+			x: -2.0d
+			y: -5.0d
+			description: [
+				"Redstone Wiring represents an advancement in Redstone technology, allowing a dedicated Engineer to build complex logic circuits that are less prone to the failings of traditional Redstone Dust. A color-coded channel system also allows a single small network to interact with multiple independent machines. "
+				""
+				"Redstone Wires may be stretched between Redstone Wire Connectors, Probe Connectors, or Interface Connectors. These carry the Redstone signal without the signal decaying. "
+				""
+				"Redstone Wire Connectors act as Input and Output points for a signal and may be placed directly on a block. They must have their mode and color channel set by using a Screwdriver on them."
+				""
+				"Redstone Probe Connectors act very much like Comparators with a few extra built-in features. Most Immersive Engineering machines will output special comparator signals that may also be read by this Connector. Refer to the Engineer’s Manual for specifics about each machine."
+				""
+				"Redstone Interface Connectors are used in conjunction with special blocks like Item Batchers and Logic Units, allowing the signals used by those blocks to be read."
+			]
+			dependencies: ["0000000000000007"]
+			id: "0E74E2DD26D0CED0"
+			tasks: [
+				{
+					id: "331513BCEF9DB266"
+					type: "item"
+					item: "immersiveengineering:wirecoil_redstone"
+				}
+				{
+					id: "5B720046B5C4804C"
+					type: "item"
+					item: "immersiveengineering:connector_redstone"
+				}
+				{
+					id: "4156BFD406536986"
+					type: "item"
+					item: "immersiveengineering:connector_probe"
+				}
+				{
+					id: "52E953FB8E657C76"
+					type: "item"
+					item: "immersiveengineering:connector_bundled"
+				}
+			]
+		}
+		{
+			icon: "immersiveengineering:logic_circuit"
+			x: -2.0d
+			y: -3.0d
+			description: [
+				"Logic Circuits themselves are crafted in the Engineer’s Circuit Table. "
+				""
+				"This workbench requires power, which is input from the back, as well as some quantity of Circuit Backplanes, Lead Wire, and Vacuum Tubes. Different logic operations will require different quantities. "
+				""
+				"Circuits are programmed with an operator as well as Input and Output colors. When ready, the completed circuit is withdrawn from the right side of the GUI. Circuits may have their Inputs and Outputs reprogrammed by placing them back in the upper slot, but the operator is locked in upon first creation. "
+			]
+			dependencies: ["3B554ECB7BEADD2E"]
+			id: "450E3698E39CC0A1"
+			tasks: [
+				{
+					id: "76EDD0FD849B8FCF"
+					type: "item"
+					item: "immersiveengineering:circuit_table"
+				}
+				{
+					id: "5292A3A2D527E4D6"
+					type: "item"
+					item: "immersiveengineering:circuit_board"
+				}
+				{
+					id: "69C8769558674D0D"
+					type: "item"
+					item: "immersiveengineering:wire_lead"
+				}
+				{
+					id: "347CE2E6F0E7E6C5"
+					type: "item"
+					item: "immersiveengineering:electron_tube"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			description: [
+				"The Logic Unit represents a compact and potentially very complex Redstone Logic computer. Up to ten Logic Circuits must be programmed and placed within and a Redstone Interface Connector attached to the outside. "
+				""
+				"Whenever the inbound signal changes, the Unit will cycle through each of the installed circuits once, performing each operation, allowing multiple logic gates to be applied to a signal, or even multiple color codes to be used as Input and Output signals. "
+			]
+			dependencies: ["0E74E2DD26D0CED0"]
+			id: "3B554ECB7BEADD2E"
+			tasks: [{
+				id: "4347610AA3797AF1"
+				type: "item"
+				item: "immersiveengineering:logic_unit"
 			}]
 		}
 	]
