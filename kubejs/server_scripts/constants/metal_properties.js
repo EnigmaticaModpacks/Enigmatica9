@@ -15,6 +15,9 @@ const metal_properties = {
             create: {
                 processingTime: 400
             }
+        },
+        create: {
+            crushedOre: true
         }
     },
     nickel: {
@@ -27,6 +30,9 @@ const metal_properties = {
             create: {
                 processingTime: 350
             }
+        },
+        create: {
+            crushedOre: true
         }
     },
     gold: {
@@ -39,6 +45,9 @@ const metal_properties = {
             create: {
                 processingTime: 300
             }
+        },
+        create: {
+            crushedOre: true
         }
     },
     copper: {
@@ -51,6 +60,9 @@ const metal_properties = {
             create: {
                 processingTime: 350
             }
+        },
+        create: {
+            crushedOre: true
         }
     },
     aluminum: {
@@ -63,6 +75,9 @@ const metal_properties = {
             create: {
                 processingTime: 300
             }
+        },
+        create: {
+            crushedOre: true
         }
     },
     lead: {
@@ -75,6 +90,9 @@ const metal_properties = {
             create: {
                 processingTime: 300
             }
+        },
+        create: {
+            crushedOre: true
         }
     },
     silver: {
@@ -87,6 +105,9 @@ const metal_properties = {
             create: {
                 processingTime: 300
             }
+        },
+        create: {
+            crushedOre: true
         }
     },
     uranium: {
@@ -99,6 +120,9 @@ const metal_properties = {
             create: {
                 processingTime: 400
             }
+        },
+        create: {
+            crushedOre: true
         }
     },
     osmium: {
@@ -111,6 +135,9 @@ const metal_properties = {
             create: {
                 processingTime: 400
             }
+        },
+        create: {
+            crushedOre: true
         }
     },
     tin: {
@@ -123,6 +150,9 @@ const metal_properties = {
             create: {
                 processingTime: 350
             }
+        },
+        create: {
+            crushedOre: true
         }
     },
     zinc: {
@@ -135,20 +165,23 @@ const metal_properties = {
             create: {
                 processingTime: 350
             }
+        },
+        create: {
+            crushedOre: true
         }
     },
-    cobalt: {
-        meltingPoint: 950,
-        oreProcessing: {
-            output: {
-                substrate: 'minecraft:netherrack',
-                secondary: 'iron'
-            },
-            create: {
-                processingTime: 400
-            }
-        }
-    },
+    // cobalt: {
+    //     meltingPoint: 950,
+    //     oreProcessing: {
+    //         output: {
+    //             substrate: 'minecraft:netherrack',
+    //             secondary: 'iron'
+    //         },
+    //         create: {
+    //             processingTime: 400
+    //         }
+    //     }
+    // },
     iesnium: {
         meltingPoint: 850,
         oreProcessing: {
@@ -161,33 +194,33 @@ const metal_properties = {
             }
         }
     },
-    elementium: {
-        meltingPoint: 875
-    },
-    enderium: {
-        meltingPoint: 1450
-    },
-    signalum: {
-        meltingPoint: 1272
-    },
-    lumium: {
-        meltingPoint: 1354
-    },
-    manasteel: {
-        meltingPoint: 900
-    },
-    terrasteel: {
-        meltingPoint: 1350
-    },
-    gaia_spirit: {
-        meltingPoint: 975
-    },
+    // elementium: {
+    //     meltingPoint: 875
+    // },
+    // enderium: {
+    //     meltingPoint: 1450
+    // },
+    // signalum: {
+    //     meltingPoint: 1272
+    // },
+    // lumium: {
+    //     meltingPoint: 1354
+    // },
+    // manasteel: {
+    //     meltingPoint: 900
+    // },
+    // terrasteel: {
+    //     meltingPoint: 1350
+    // },
+    // gaia_spirit: {
+    //     meltingPoint: 975
+    // },
     infused_iron: {
         meltingPoint: 850
     },
-    sky_metal: {
-        meltingPoint: 950
-    },
+    // sky_metal: {
+    //     meltingPoint: 950
+    // },
     energized_steel: {
         meltingPoint: 875
     }
