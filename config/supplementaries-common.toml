@@ -35,7 +35,8 @@
 
 	[blocks.pedestal]
 		#If enabled end crystals placed on a pedestals will provide an enchantment power bonus equivalent to 3 bookshelves
-		crystal_enchanting = true
+		#Range: 0 ~ 100
+		crystal_enchanting = 3
 
 	[blocks.globe]
 		#how many globe trades to give to the wandering trader. This will effectively increase the chance of him having a globe trader. Increase this if you have other mods that add stuff to that trader
