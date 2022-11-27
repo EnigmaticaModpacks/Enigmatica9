@@ -16,9 +16,13 @@ ServerEvents.tags('item', (event) => {
 
     const exceptions = [];
 
-    const tagGroups = ['forge:tools', 'forge:multi_tools', 'forge:tools/multi_tools'];
+    // const tagGroups = ['forge:tools', 'forge:multi_tools', 'forge:tools/multi_tools'];
 
-    tagGroups.forEach((tagGroup) => {
-        event.get(tagGroup).add(items).remove(exceptions);
-    });
+    // tagGroups.forEach((tagGroup) => {
+    //     event.get(tagGroup).add(items).remove(exceptions);
+    // });
+
+    event.get('forge:tools').add(items).remove(exceptions);
+    event.get('forge:tools/multi_tools').add(items).remove(exceptions);
+    event.get('forge:multi_tools').add(items).remove(exceptions);
 });

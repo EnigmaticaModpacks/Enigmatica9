@@ -12,9 +12,13 @@ ServerEvents.tags('item', (event) => {
 
     const exceptions = ['twilightforest:stronghold_shield'];
 
-    const tagGroups = ['forge:tools', 'forge:shields', 'forge:tools/shields'];
+    // const tagGroups = ['forge:tools', 'forge:shields', 'forge:tools/shields'];
 
-    tagGroups.forEach((tagGroup) => {
-        event.get(tagGroup).add(items).remove(exceptions);
-    });
+    // tagGroups.forEach((tagGroup) => {
+    //     event.get(tagGroup).add(items).remove(exceptions);
+    // });
+
+    event.get('forge:tools').add(items).remove(exceptions);
+    event.get('forge:tools/shields').add(items).remove(exceptions);
+    event.get('forge:shields').add(items).remove(exceptions);
 });

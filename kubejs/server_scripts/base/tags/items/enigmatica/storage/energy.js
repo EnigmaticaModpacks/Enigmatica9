@@ -9,9 +9,12 @@ ServerEvents.tags('item', (event) => {
         'mekanism:energy_tablet'
     ];
 
-    const tagGroups = ['enigmatica:containers', 'enigmatica:containers/energy'];
+    // const tagGroups = ['enigmatica:containers', 'enigmatica:containers/energy'];
 
-    tagGroups.forEach((tagGroup) => {
-        event.get(tagGroup).add(items);
-    });
+    // tagGroups.forEach((tagGroup) => {
+    //     event.get(tagGroup).add(items);
+    // });
+
+    event.get('enigmatica:containers').add(items);
+    event.get('enigmatica:containers/energy').add(items);
 });

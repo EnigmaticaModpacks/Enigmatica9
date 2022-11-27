@@ -12,9 +12,12 @@ ServerEvents.tags('item', (event) => {
 
     const exceptions = [];
 
-    const tagGroups = ['forge:armors', 'forge:armors/helmets'];
+    // const tagGroups = ['forge:armors', 'forge:armors/helmets'];
 
-    tagGroups.forEach((tagGroup) => {
-        event.get(tagGroup).add(items).remove(exceptions);
-    });
+    // tagGroups.forEach((tagGroup) => {
+    //     event.get(tagGroup).add(items).remove(exceptions);
+    // });
+
+    event.get('forge:armors').add(items).remove(exceptions);
+    event.get('forge:armors/helmets').add(items).remove(exceptions);
 });
