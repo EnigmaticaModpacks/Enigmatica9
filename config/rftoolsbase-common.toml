@@ -6,7 +6,7 @@
 	[worldgen.dimensions]
 		#Number of times to try generate the ore (set to 0 to disable)
 		#Range: 0 ~ 256
-		oreChances = 6
+		oreChances = 0
 		#Max size of veins
 		#Range: 1 ~ 256
 		oreVeinsize = 10
@@ -21,7 +21,7 @@
 	[worldgen.overworld]
 		#Number of times to try generate the ore (set to 0 to disable)
 		#Range: 0 ~ 256
-		oreChances = 2
+		oreChances = 0
 		#Max size of veins
 		#Range: 1 ~ 256
 		oreVeinsize = 5
@@ -36,7 +36,7 @@
 	[worldgen.nether]
 		#Number of times to try generate the ore (set to 0 to disable)
 		#Range: 0 ~ 256
-		oreChances = 8
+		oreChances = 0
 		#Max size of veins
 		#Range: 1 ~ 256
 		oreVeinsize = 8
@@ -51,7 +51,7 @@
 	[worldgen.end]
 		#Number of times to try generate the ore (set to 0 to disable)
 		#Range: 0 ~ 256
-		oreChances = 8
+		oreChances = 0
 		#Max size of veins
 		#Range: 1 ~ 256
 		oreVeinsize = 10
