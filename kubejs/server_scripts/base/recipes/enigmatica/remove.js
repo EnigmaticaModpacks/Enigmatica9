@@ -14,6 +14,7 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:sawing\/log/ },
         { id: /mekanism:compat\/byg\/combining\/.*_ore_/ },
         { id: /mekanism:bin\/.*/ },
+        { id: /mekanism:processing\/.*\/to_ore/ },
         { id: /mekanism:processing\/.*\/crystal\/from_slurry/},
         { id: /mekanism:processing\/.*\/slurry\/clean/},
         { id: /mekanism:processing\/.*\/slurry\/dirty/},
