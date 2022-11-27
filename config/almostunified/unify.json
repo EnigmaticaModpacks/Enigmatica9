@@ -36,7 +36,8 @@
     "mekanism:shards/{material}",
     "mekanism:clumps/{material}",
     "mekanism:dirty_dusts/{material}",
-    "mekanism:shards/{material}"
+    "mekanism:shards/{material}",
+    "create:crushed_ores/{material}"
   ],
   "materials": [
     "aeternium",
