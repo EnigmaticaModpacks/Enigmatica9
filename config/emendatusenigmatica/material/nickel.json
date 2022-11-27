@@ -1,8 +1,7 @@
 {
-    "id": "iron",
-    "source": "vanilla",
-    "localizedName": "Iron",
-    "disableDefaultOre": true,
+    "id": "nickel",
+    "source": "modded",
+    "localizedName": "Nickel",
     "processedTypes": [
         "storage_block",
         "ore",
@@ -12,8 +11,6 @@
         "nugget",
         "dust",
         "plate",
-        "rod",
-        "gear",
         "slurry",
         "crystal",
         "shard",
@@ -22,14 +19,14 @@
     ],
     "properties": {
         "materialType": "metal",
-        "harvestLevel": 1
+        "harvestLevel": 2
     },
     "colors": {
-        "materialColor": "a8a8a8",
-        "fluidColor": "a8a8a8"
+        "materialColor": "bec4b1",
+        "fluidColor": "bec4b1"
     },
     "oreDrop": {
-        "drop": "emendatusenigmatica:raw_iron",
+        "drop": "emendatusenigmatica:raw_nickel",
         "min": 1,
         "max": 1
     }

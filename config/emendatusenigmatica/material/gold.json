@@ -1,7 +1,7 @@
 {
-    "id": "iron",
+    "id": "gold",
     "source": "vanilla",
-    "localizedName": "Iron",
+    "localizedName": "Gold",
     "disableDefaultOre": true,
     "processedTypes": [
         "storage_block",
@@ -12,7 +12,6 @@
         "nugget",
         "dust",
         "plate",
-        "rod",
         "gear",
         "slurry",
         "crystal",
@@ -22,14 +21,14 @@
     ],
     "properties": {
         "materialType": "metal",
-        "harvestLevel": 1
+        "harvestLevel": 2
     },
     "colors": {
-        "materialColor": "a8a8a8",
-        "fluidColor": "a8a8a8"
+        "materialColor": "fad64a",
+        "fluidColor": "fad64a"
     },
     "oreDrop": {
-        "drop": "emendatusenigmatica:raw_iron",
+        "drop": "emendatusenigmatica:raw_gold",
         "min": 1,
         "max": 1
     }

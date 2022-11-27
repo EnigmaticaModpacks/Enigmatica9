@@ -1,8 +1,7 @@
 {
-    "id": "iron",
-    "source": "vanilla",
-    "localizedName": "Iron",
-    "disableDefaultOre": true,
+    "id": "aluminium",
+    "source": "modded",
+    "localizedName": "Aluminium",
     "processedTypes": [
         "storage_block",
         "ore",
@@ -13,7 +12,6 @@
         "dust",
         "plate",
         "rod",
-        "gear",
         "slurry",
         "crystal",
         "shard",
@@ -22,14 +20,14 @@
     ],
     "properties": {
         "materialType": "metal",
-        "harvestLevel": 1
+        "harvestLevel": 2
     },
     "colors": {
-        "materialColor": "a8a8a8",
-        "fluidColor": "a8a8a8"
+        "materialColor": "a2a8ab",
+        "fluidColor": "a2a8ab"
     },
     "oreDrop": {
-        "drop": "emendatusenigmatica:raw_iron",
+        "drop": "emendatusenigmatica:raw_aluminium",
         "min": 1,
         "max": 1
     }

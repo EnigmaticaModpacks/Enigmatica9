@@ -1,8 +1,7 @@
 {
-    "id": "iron",
-    "source": "vanilla",
-    "localizedName": "Iron",
-    "disableDefaultOre": true,
+    "id": "tin",
+    "source": "modded",
+    "localizedName": "Tin",
     "processedTypes": [
         "storage_block",
         "ore",
@@ -11,9 +10,6 @@
         "ingot",
         "nugget",
         "dust",
-        "plate",
-        "rod",
-        "gear",
         "slurry",
         "crystal",
         "shard",
@@ -25,11 +21,11 @@
         "harvestLevel": 1
     },
     "colors": {
-        "materialColor": "a8a8a8",
-        "fluidColor": "a8a8a8"
+        "materialColor": "ececec",
+        "fluidColor": "ececec"
     },
     "oreDrop": {
-        "drop": "emendatusenigmatica:raw_iron",
+        "drop": "emendatusenigmatica:raw_tin",
         "min": 1,
         "max": 1
     }
