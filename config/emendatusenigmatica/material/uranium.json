@@ -22,8 +22,8 @@
         "harvestLevel": 2
     },
     "colors": {
-        "materialColor": "98dc95",
-        "fluidColor": "98dc95"
+        "materialColor": "63d459",
+        "fluidColor": "63d459"
     },
     "oreDrop": {
         "drop": "emendatusenigmatica:raw_uranium",

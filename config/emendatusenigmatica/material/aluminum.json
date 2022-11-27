@@ -1,5 +1,5 @@
 {
-    "id": "aluminium",
+    "id": "aluminum",
     "source": "modded",
     "localizedName": "Aluminium",
     "processedTypes": [
@@ -27,7 +27,7 @@
         "fluidColor": "a2a8ab"
     },
     "oreDrop": {
-        "drop": "emendatusenigmatica:raw_aluminium",
+        "drop": "emendatusenigmatica:raw_aluminum",
         "min": 1,
         "max": 1
     }
