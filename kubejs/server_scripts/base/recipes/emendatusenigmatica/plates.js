@@ -8,12 +8,12 @@ ServerEvents.recipes((event) => {
     ]
 
     let props = Object.keys(metal_properties);
-    
+
     props.forEach((metal) => {
         if (Item.exists(`emendatusenigmatica:${metal}_plate`)) {
             recipes.push({
                 output: `emendatusenigmatica:${metal}_plate`,
-                inputs: [`#forge:plates/${metal}`, '#forge:tools/crafting_hammers'],
+                inputs: [`#forge:ingots/${metal}`, '#forge:tools/crafting_hammers'],
                 id: `emendatusenigmatica:plate/from_ingot/${metal}`
             })
             // Remove other recipes
