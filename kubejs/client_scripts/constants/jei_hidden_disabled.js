@@ -6,9 +6,24 @@ const disabled_item_message =
 const disabled_item_tooltip = 'This item has been disabled.';
 
 const jei = {
-    base:   { items: { hidden: [], disabled: [] }, categories: { hidden: [] }, fluids: { hidden: [] }, gases: { hidden: [] }},
-    normal: { items: { hidden: [], disabled: [] }, categories: { hidden: [] }, fluids: { hidden: [] }, gases: { hidden: [] }},
-    expert: { items: { hidden: [], disabled: [] }, categories: { hidden: [] }, fluids: { hidden: [] }, gases: { hidden: [] }}
+    base: {
+        items: { hidden: [], disabled: [] },
+        categories: { hidden: [] },
+        fluids: { hidden: [] },
+        gases: { hidden: [] }
+    },
+    normal: {
+        items: { hidden: [], disabled: [] },
+        categories: { hidden: [] },
+        fluids: { hidden: [] },
+        gases: { hidden: [] }
+    },
+    expert: {
+        items: { hidden: [], disabled: [] },
+        categories: { hidden: [] },
+        fluids: { hidden: [] },
+        gases: { hidden: [] }
+    }
 };
 // Base
 jei.base.items.disabled = [
@@ -78,8 +93,8 @@ jei.base.items.hidden = [
 ];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
 
-jei.base.fluids.hidden = []
-jei.base.gases.hidden = []
+jei.base.fluids.hidden = [];
+jei.base.gases.hidden = [];
 
 // Normal
 jei.normal.items.disabled = [];

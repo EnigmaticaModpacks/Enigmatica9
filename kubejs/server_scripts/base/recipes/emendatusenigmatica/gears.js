@@ -1,10 +1,10 @@
 ServerEvents.recipes((event) => {
     const recipes = [];
 
-    const recipes_to_remove = []
+    const recipes_to_remove = [];
 
     let props = Object.keys(metal_properties);
-    
+
     props.forEach((metal) => {
         if (Item.exists(`emendatusenigmatica:${metal}_gear`)) {
             // Remove other recipes
@@ -13,16 +13,16 @@ ServerEvents.recipes((event) => {
             if (Item.exists(`industrialforegoing:${metal}_gear`)) {
                 recipes_to_remove.push({
                     id: `industrialforegoing:${metal}_gear`
-                })
+                });
             }
         }
-    })
+    });
 
     recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 
     recipes_to_remove.forEach((recipe) => {
-        event.remove(recipe)
-    })
+        event.remove(recipe);
+    });
 });
