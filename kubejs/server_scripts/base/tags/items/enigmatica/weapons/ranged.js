@@ -21,9 +21,12 @@ ServerEvents.tags('item', (event) => {
     ];
     const exceptions = [];
 
-    const tagGroups = ['enigmatica:weapons', 'enigmatica:weapons/ranged'];
+    // const tagGroups = ['enigmatica:weapons', 'enigmatica:weapons/ranged'];
 
-    tagGroups.forEach((tagGroup) => {
-        event.get(tagGroup).add(items).remove(exceptions);
-    });
+    // tagGroups.forEach((tagGroup) => {
+    //     event.get(tagGroup).add(items).remove(exceptions);
+    // });
+
+    event.get('enigmatica:weapons').add(items).remove(exceptions);
+    event.get('enigmatica:weapons/ranged').add(items).remove(exceptions);
 });

@@ -11,9 +11,12 @@ ServerEvents.tags('item', (event) => {
         //'botania:black_hole_talisman'
     ];
 
-    const tagGroups = ['enigmatica:containers', 'enigmatica:containers/bulk'];
+    // const tagGroups = ['enigmatica:containers', 'enigmatica:containers/bulk'];
 
-    tagGroups.forEach((tagGroup) => {
-        event.get(tagGroup).add(items);
-    });
+    // tagGroups.forEach((tagGroup) => {
+    //     event.get(tagGroup).add(items);
+    // });
+
+    event.get('enigmatica:containers').add(items);
+    event.get('enigmatica:containers/bulk').add(items);
 });
