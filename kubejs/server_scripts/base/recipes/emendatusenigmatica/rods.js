@@ -1,27 +1,10 @@
 ServerEvents.recipes((event) => {
-    const recipes = [
-        // {
-        //     output: 'minecraft:diamond',
-        //     pattern: ['ABA', 'B B', 'ABA'],
-        //     key: {
-        //         A: '#forge:storage_blocks/coal',
-        //         B: '#forge:gems/coal'
-        //     },
-        //     id: `enigmatica:diamond_from_coal`
-        // }
-    ];
+    const recipes = [];
 
-    const recipes_to_remove = [
-        // {
-        //     input: 'sample',
-        //     output: 'sample',
-        //     type: 'sample',
-        //     mod: 'sample',
-        //     id: 'sample'
-        // }
-    ]
+    const recipes_to_remove = []
 
     let props = Object.keys(metal_properties);
+    
     props.forEach((metal) => {
         if (Item.exists(`emendatusenigmatica:${metal}_rod`)) {
             recipes.push(
