@@ -147,9 +147,10 @@ ItemEvents.tooltip((event) => {
             items: [
                 // 'hexerei:dried_sage_bundle',
                 // 'hexerei:sage_burning_plate',
-                'naturesaura:spawn_lamp'
+                'naturesaura:spawn_lamp',
+                'immersiveengineering:electric_lantern'
             ],
-            text: [Text.of(`Arcane Apparatus: Prevents Mob Spawns`).green()]
+            text: [Text.of(`Prevents Mob Spawns`).green()]
         },
         {
             items: ['naturesaura:rf_converter'],
