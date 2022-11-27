@@ -6,24 +6,9 @@ const disabled_item_message =
 const disabled_item_tooltip = 'This item has been disabled.';
 
 const jei = {
-    base: {
-        items: { hidden: [], disabled: [] },
-        categories: { hidden: [] },
-        fluids: { hidden: [] },
-        gases: { hidden: [] }
-    },
-    normal: {
-        items: { hidden: [], disabled: [] },
-        categories: { hidden: [] },
-        fluids: { hidden: [] },
-        gases: { hidden: [] }
-    },
-    expert: {
-        items: { hidden: [], disabled: [] },
-        categories: { hidden: [] },
-        fluids: { hidden: [] },
-        gases: { hidden: [] }
-    }
+    base: { items: { hidden: [], disabled: [] }, categories: { hidden: [] } },
+    normal: { items: { hidden: [], disabled: [] }, categories: { hidden: [] } },
+    expert: { items: { hidden: [], disabled: [] }, categories: { hidden: [] } }
 };
 // Base
 jei.base.items.disabled = [
@@ -87,25 +72,16 @@ jei.base.items.hidden = [
     'twilightforest:ur_ghast_boss_spawner',
     'twilightforest:knight_phantom_boss_spawner',
     'twilightforest:minoshroom_boss_spawner',
-    'twilightforest:lich_boss_spawner',
-    'mekanism:creative_fluid_tank',
-    'mekanism:creative_chemical_tank'
+    'twilightforest:lich_boss_spawner'
 ];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
-
-jei.base.fluids.hidden = [];
-jei.base.gases.hidden = [];
 
 // Normal
 jei.normal.items.disabled = [];
 jei.normal.items.hidden = [];
 jei.normal.categories.hidden = [];
-jei.normal.fluids.hidden = [];
-jei.normal.gases.hidden = [];
 
 // Expert
 jei.expert.items.disabled = [];
 jei.expert.items.hidden = [];
 jei.expert.categories.hidden = [];
-jei.expert.fluids.hidden = [];
-jei.expert.gases.hidden = [];

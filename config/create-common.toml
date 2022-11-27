@@ -7,7 +7,7 @@
 		#.
 		#.
 		#Prevents all worldgen added by Create from taking effect
-		disableWorldGen = true
+		disableWorldGen = false
 
 		[worldgen.v2.striated_ores_nether]
 			#.
