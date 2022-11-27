@@ -1,7 +1,7 @@
 {
-    "id": "copper",
+    "id": "iron",
     "source": "vanilla",
-    "localizedName": "Copper",
+    "localizedName": "Iron",
     "disableDefaultOre": true,
     "processedTypes": [
         "storage_block",
@@ -12,6 +12,8 @@
         "nugget",
         "dust",
         "plate",
+        "rod",
+        "gear",
         "slurry",
         "crystal",
         "shard",
@@ -23,11 +25,11 @@
         "harvestLevel": 1
     },
     "colors": {
-        "materialColor": "c87456",
-        "fluidColor": "c87456"
+        "materialColor": "d8d8d8",
+        "fluidColor": "d8d8d8"
     },
     "oreDrop": {
-        "drop": "emendatusenigmatica:raw_copper",
+        "drop": "emendatusenigmatica:raw_iron",
         "min": 1,
         "max": 1
     }
