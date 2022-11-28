@@ -25,9 +25,12 @@ ServerEvents.tags('item', (event) => {
         'immersiveengineering:armor_faraday_chest'
     ];
 
-    const tagGroups = ['enigmatica:containers', 'enigmatica:containers/basic'];
+    // const tagGroups = ['enigmatica:containers', 'enigmatica:containers/basic'];
 
-    tagGroups.forEach((tagGroup) => {
-        event.get(tagGroup).add(items).remove(exceptions);
-    });
+    // tagGroups.forEach((tagGroup) => {
+    //     event.get(tagGroup).add(items).remove(exceptions);
+    // });
+
+    event.get('enigmatica:containers').add(items).remove(exceptions);
+    event.get('enigmatica:containers/basic').add(items).remove(exceptions);
 });

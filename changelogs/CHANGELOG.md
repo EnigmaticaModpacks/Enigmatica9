@@ -1,3 +1,15 @@
+### Enigmatica 9 v1.3.0
+
+_Using Forge-1.19.2-43.1.57_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.3.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.3.0.md)_
+
+**New Mods**
+
+**Improvements**
+
+**Fixed Bugs**
+
+---
+
 ### Enigmatica 9 v1.2.0
 
 _Using Forge-1.19.2-43.1.52_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.2.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.2.0.md)_

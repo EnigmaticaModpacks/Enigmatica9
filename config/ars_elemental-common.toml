@@ -9,7 +9,7 @@
 	"Air Focus buff" = 1.0
 	"Earth Focus buff" = 1.0
 
-#Adjust these values to balance how much an elemental spell gets dampened by a not-matching spell focus
+#Adjust these values to balance how much an elemental spell gets dampened by a not-matching lesser spell focus
 ["Elemental Spell Foci - Dampening"]
 	"Fire Focus debuff" = -1.0
 	"Water Focus debuff" = -1.0
@@ -18,8 +18,8 @@
 
 #Enable or disable the passive bonus of the foci
 ["Elemental Spell Foci - Abilities"]
-	"Enable glyph empowering (ignite & freeze)" = true
 	"Enable regen bonus under special conditions" = true
+	"Enable glyph empowering" = true
 
 ["Mermaid Fishing"]
 	#How much source mermaids consume per generation

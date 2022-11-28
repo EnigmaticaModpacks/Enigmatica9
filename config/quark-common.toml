@@ -213,6 +213,8 @@
 	"Enable Worldgen Watchdog" = false
 	#Should Quark treat anything with 'shulker_box' in its item identifier as a shulker box?
 	"Interpret Shulker Box Like Blocks" = true
+	#Used for terrablender integration
+	"Terrablender Region Weight" = 1
 
 [automation]
 	Chute = true
@@ -856,6 +858,9 @@
 	"More Banner Layers" = true
 	"Grab Chickens" = false
 	"Better Elytra Rocket" = true
+	"Zombie Villagers On Normal" = true
+	"Safe Rabbits" = true
+	"Renewable Spore Blossoms" = true
 
 	[tweaks.sign_editing]
 		"Requires Empty Hand" = false
@@ -993,6 +998,13 @@
 	[tweaks.campfires_boost_elytra]
 		"Boost Strength" = 0.5
 		"Max Speed" = 1.0
+
+	[tweaks.safe_rabbits]
+		#How many blocks should be subtracted from the rabbit fall height when calculating fall damage. 5 is the same value as vanilla frogs
+		"Height Reduction" = 5.0
+
+	[tweaks.renewable_spore_blossoms]
+		"Bone Meal Chance" = 0.2
 
 [client]
 	"Greener Grass" = true
@@ -1185,9 +1197,9 @@
 		#How long it takes for an item to cross a pipe. Bigger = slower.
 		"Pipe Speed" = 5
 		"Enable Encased Pipes" = true
+		"Render Pipe Items" = true
 
 [experimental]
-	"Zombie Villagers On Normal" = false
 	"Adjustable Chat" = false
 	Saw = false
 	"Game Nerfs" = false

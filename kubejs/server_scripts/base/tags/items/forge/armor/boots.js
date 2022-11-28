@@ -15,9 +15,12 @@ ServerEvents.tags('item', (event) => {
         'pneumaticcraft:jet_boots_upgrade_5'
     ];
 
-    const tagGroups = ['forge:armors', 'forge:armors/boots'];
+    // const tagGroups = ['forge:armors', 'forge:armors/boots'];
 
-    tagGroups.forEach((tagGroup) => {
-        event.get(tagGroup).add(items).remove(exceptions);
-    });
+    // tagGroups.forEach((tagGroup) => {
+    //     event.get(tagGroup).add(items).remove(exceptions);
+    // });
+
+    event.get('forge:armors').add(items).remove(exceptions);
+    event.get('forge:armors/boots').add(items).remove(exceptions);
 });

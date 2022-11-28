@@ -15,9 +15,12 @@ ServerEvents.tags('item', (event) => {
     ];
     const exceptions = [];
 
-    const tagGroups = ['enigmatica:weapons', 'enigmatica:weapons/melee'];
+    // const tagGroups = ['enigmatica:weapons', 'enigmatica:weapons/melee'];
 
-    tagGroups.forEach((tagGroup) => {
-        event.get(tagGroup).add(items).remove(exceptions);
-    });
+    // tagGroups.forEach((tagGroup) => {
+    //     event.get(tagGroup).add(items).remove(exceptions);
+    // });
+
+    event.get('enigmatica:weapons').add(items).remove(exceptions);
+    event.get('enigmatica:weapons/melee').add(items).remove(exceptions);
 });
