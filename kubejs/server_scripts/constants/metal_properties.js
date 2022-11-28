@@ -164,15 +164,15 @@ const metal_properties = {
     // elementium: {
     //     meltingPoint: 875
     // },
-    // enderium: {
-    //     meltingPoint: 1450
-    // },
-    // signalum: {
-    //     meltingPoint: 1272
-    // },
-    // lumium: {
-    //     meltingPoint: 1354
-    // },
+    enderium: {
+        meltingPoint: 1450
+    },
+    signalum: {
+        meltingPoint: 1272
+    },
+    lumium: {
+        meltingPoint: 1354
+    },
     // manasteel: {
     //     meltingPoint: 900
     // },
@@ -185,11 +185,10 @@ const metal_properties = {
     infused_iron: {
         meltingPoint: 850
     },
-    // sky_metal: {
-    //     meltingPoint: 950
-    // },
+    sky_metal: {
+        meltingPoint: 950
+    },
     energized_steel: {
         meltingPoint: 875
-    },
-    brass: {}
+    }
 };
