@@ -190,5 +190,6 @@ const metal_properties = {
     // },
     energized_steel: {
         meltingPoint: 875
-    }
+    },
+    brass: {}
 };
