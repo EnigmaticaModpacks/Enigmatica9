@@ -518,6 +518,8 @@
 		phial = 2.0
 
 	[tools.chemthrower]
+		#Set this to false to disable the use of Sneak+Scroll to switch Chemthrower tanks.
+		scroll = true
 		#The mb of fluid the Chemical Thrower will consume per tick of usage
 		#Range: > 1
 		consumption = 2
