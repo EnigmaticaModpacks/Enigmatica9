@@ -38,6 +38,8 @@ ServerEvents.recipes((event) => {
         { type: 'immersiveengineering:cloche' },
         { type: 'immersiveengineering:generated_list' },
         { type: 'immersiveengineering:alloy' },
+        { type: 'thermal:sawmill' },
+        { type: 'thermal:pulverizer_recycle' },
         { mod: 'gateways' }
     ];
 

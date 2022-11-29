@@ -19,7 +19,5 @@ ServerEvents.recipes((event) => {
         recipe.result = recipe.outputs.map((output) => output.toJson());
 
         event.custom(recipe).id(recipe.id);
-
-        // event.recipes.thermal.press(recipe.outputs, recipe.inputs).energy(recipe.energy).id(recipe.id);
     });
 });

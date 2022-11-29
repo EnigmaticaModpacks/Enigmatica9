@@ -52,19 +52,7 @@ ServerEvents.recipes((event) => {
         // "ingredients": [{ "tag": "forge:ingots/copper" }, { "item": "thermal:press_coin_die" }]
         recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
         recipe.ingredients.push(recipe.fluid.toJson());
-
         recipe.result = recipe.outputs.map((output) => output.toJson());
-
         event.custom(recipe).id(recipe.id);
-
-        // event.recipes.thermal.press(recipe.outputs, recipe.inputs).energy(recipe.energy).id(recipe.id);
     });
 });
-
-/* 
-{
-    type: 'thermal:crystallizer',
-    ingredients: [{ fluid: 'minecraft:water', amount: 2000 }, { item: 'minecraft:amethyst_shard' }],
-    result: [{ item: 'minecraft:amethyst_cluster' }]
-}
-*/

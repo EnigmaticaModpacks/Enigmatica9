@@ -19,16 +19,3 @@ ServerEvents.recipes((event) => {
         event.custom(recipe).id(recipe.id);
     });
 });
-
-/*
-{
-    "type": "ae2:transform",
-    "circumstance": { "type": "fluid", "tag": "minecraft:water" },
-    "ingredients": [
-        { "item": "ae2:charged_certus_quartz_crystal" },
-        { "item": "minecraft:redstone" },
-        { "item": "minecraft:quartz" }
-    ],
-    "result": { "count": 2, "item": "ae2:fluix_crystal" }
-}
-*/
