@@ -97,6 +97,16 @@ ServerEvents.recipes((event) => {
             })
             .id(`${id_prefix}ars_nouveau_crushing/${id_suffix}`);
 
+        // Thermal
+        event
+            .custom({
+                type: 'thermal:centrifuge',
+                ingredient: Item.of(input).toJson(),
+                result: [outputs.primary, outputs.secondary, outputs.tertiary],
+                energy: energy
+            })
+            .id(`${id_prefix}thermal_centrifuge/${id_suffix}`);
+
         // Immersive Engineering
         event
             .custom({
