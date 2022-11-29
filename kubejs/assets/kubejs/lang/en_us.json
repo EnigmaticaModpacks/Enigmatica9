@@ -10,6 +10,8 @@
     "item.kubejs.scavengers_delight": "Scavenger's Delight",
     "item.kubejs.alchemists_delight": "Alchemist's Delight",
 
+    "item.kubejs.amethyst_dust": "Amethyst Dust",
+
     "recipes.lychee.item_inside.sunstone.condition.description": "Converts around Noon. Reverts if left out too long...",
     "recipes.lychee.item_inside.moonstone.condition.description": "Converts around Midnight. Reverts if left out too long...",
 

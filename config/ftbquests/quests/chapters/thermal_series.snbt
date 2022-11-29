@@ -10,7 +10,7 @@
 	quests: [
 		{
 			x: 2.0d
-			y: 0.5d
+			y: -1.0d
 			shape: "gear"
 			description: [
 				"The Thermal Series is a suite of mods that has been a staple of Modded Minecraft for years. Time has brought many changes to it, but it's kept its overall theme of slightly magical tech throughout. "
@@ -37,8 +37,8 @@
 		}
 		{
 			icon: "thermal:dynamo_stirling"
-			x: 0.0d
-			y: 1.0d
+			x: -5.5d
+			y: 0.0d
 			subtitle: "Power, From the Top"
 			description: [
 				"You can't get something for nothing; doing work means using energy and the search for energy drives all things. Our first step, therefore will be to generate some power to begin working with Thermal machines."
@@ -47,7 +47,6 @@
 				""
 				"Check the Thermalpedia for information on relevant upgrades."
 			]
-			dependencies: ["00000000000003A2"]
 			id: "00000000000004A3"
 			tasks: [
 				{
@@ -95,7 +94,7 @@
 		}
 		{
 			x: -2.0d
-			y: 1.5d
+			y: 5.0d
 			subtitle: "Trickle-Down Economics"
 			description: [
 				"While nothing is without cost, the source of energy isn't always immediately obvious. The Arboreal Extractor uses a combination of gravity and the trees own capillary action to collect the fluids available in the tree. "
@@ -104,7 +103,6 @@
 				""
 				"Check the Thermalpedia for information on relevant upgrades as well as a list of what fluids can be extracted from each tree."
 			]
-			dependencies: ["00000000000004A3"]
 			id: "00000000000004A5"
 			tasks: [{
 				id: "00000000000004A6"
@@ -139,15 +137,14 @@
 		}
 		{
 			icon: "thermal:machine_refinery"
-			x: -1.5d
-			y: 3.5d
+			x: 5.0d
+			y: 4.5d
 			subtitle: "Not Your Ordinary Moonshine"
 			description: [
 				"With a little bit of energy input, the Fractionating Still can refine Resin into Tree Oil, a fine renewable fuel that burns more efficiently than coal."
 				""
 				"Check the Thermalpedia for information on relevant upgrades."
 			]
-			dependencies: ["00000000000004BB"]
 			id: "00000000000004A7"
 			tasks: [
 				{
@@ -181,7 +178,7 @@
 		}
 		{
 			x: 6.0d
-			y: 1.5d
+			y: 0.5d
 			subtitle: "Between a Rock and a Hard Place"
 			description: [
 				"Some materials are more abundant than they seem at first glance, they're simply locked up in different forms that require a touch more work to release."
@@ -190,7 +187,6 @@
 				""
 				"Check the Thermalpedia for information on relevant upgrades."
 			]
-			dependencies: ["00000000000004C2"]
 			id: "00000000000004AB"
 			tasks: [{
 				id: "00000000000004AC"
@@ -208,8 +204,8 @@
 		}
 		{
 			title: "Invar"
-			x: 6.0d
-			y: 2.5d
+			x: 13.5d
+			y: -3.0d
 			subtitle: "Bootstrapping Technology"
 			description: [
 				"An ordinary Furnace will need a helping hand to produce advanced alloys. "
@@ -218,7 +214,6 @@
 				""
 				"Pulverize some iron and nickel, combine it by hand, and smelt the result to progress."
 			]
-			dependencies: ["00000000000004AB"]
 			id: "00000000000004AD"
 			tasks: [{
 				id: "00000000000004AE"
@@ -235,15 +230,14 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 3.5d
+			x: 5.0d
+			y: 1.5d
 			subtitle: "Support the Resistance!"
 			description: [
 				"An advanced furnace used for making alloys directly, as well as many other useful materials, such as hardened glass."
 				""
 				"Check the Thermalpedia for information on relevant upgrades."
 			]
-			dependencies: ["00000000000004AD"]
 			id: "00000000000004AF"
 			tasks: [{
 				id: "00000000000004B0"
@@ -260,42 +254,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 2.5d
-			subtitle: "A Sticky Mess"
-			description: [
-				"Though some may still be seeking the sweetest taste, others are just trying to keep the lights on. "
-				""
-				"Resin can be extracted from many different trees and with a little work can be made into an excellent fuel source."
-			]
-			dependencies: ["00000000000004A5"]
-			id: "00000000000004BB"
-			tasks: [{
-				id: "00000000000004BC"
-				type: "item"
-				item: "thermal:resin_bucket"
-			}]
-			rewards: [
-				{
-					id: "00000000000004ED"
-					type: "item"
-					title: "Sweet Berries"
-					item: "minecraft:sweet_berries"
-					count: 16
-				}
-				{
-					id: "000000000000063B"
-					type: "command"
-					title: "Rare Thermal Series Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_rare"
-					player_command: false
-				}
-			]
-		}
-		{
-			x: -1.5d
-			y: 4.5d
+			x: -5.5d
+			y: 1.0d
 			subtitle: "ICE, ICE, Baby"
 			description: [
 				"With better fuel in hand, start up a Compression Dynamo for some simple renewable energy. "
@@ -304,7 +264,6 @@
 				""
 				"Check the Thermalpedia for information on relevant upgrades."
 			]
-			dependencies: ["00000000000004A7"]
 			id: "00000000000004BF"
 			tasks: [{
 				id: "00000000000004C0"
@@ -321,15 +280,14 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 1.0d
+			x: 5.0d
+			y: 0.5d
 			subtitle: "Capissen 38 Mark II"
 			description: [
 				"A simple furnace, like a standard coal burning furnace except faster and more efficient."
 				""
 				"Check the Thermalpedia for information on relevant upgrades."
 			]
-			dependencies: ["00000000000003A2"]
 			id: "00000000000004C2"
 			tasks: [{
 				id: "00000000000004C3"
@@ -356,15 +314,14 @@
 			]
 		}
 		{
-			x: 4.5d
-			y: 4.0d
+			x: 6.0d
+			y: 1.5d
 			subtitle: "Bop It, Pull It, Twist It"
 			description: [
 				"Precision machining typically means greater efficiencies, either in terms of time spent doing a task or materials used. The MultiServo Press is one such machine that makes pressing plates faster and gears cheaper, as well as opening the door to other processing techniques."
 				""
 				"Check the Thermalpedia for information on relevant upgrades."
 			]
-			dependencies: ["00000000000004AF"]
 			id: "00000000000004C4"
 			tasks: [{
 				id: "00000000000004C5"
@@ -389,8 +346,8 @@
 			]
 		}
 		{
-			x: 7.5d
-			y: 4.0d
+			x: 6.5d
+			y: 7.0d
 			subtitle: "Between the Wasteland and Sky..."
 			description: [
 				"Nature does an excellent job of growing plants. It's been at it for a while, after all. But when space is at a premium a Phytogenic Insolator is an excellent alternative to the natural approach. "
@@ -399,7 +356,6 @@
 				""
 				"Check the Thermalpedia for information on relevant upgrades."
 			]
-			dependencies: ["00000000000004AF"]
 			id: "00000000000004C6"
 			tasks: [{
 				id: "00000000000004C7"
@@ -416,8 +372,8 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: 4.5d
+			x: 4.5d
+			y: 7.0d
 			subtitle: "Insert Tab A Into Slot B"
 			description: [
 				"A precision machine that can quickly assemble components, simplifying automation. It features an internal fluid tank as well which can automatically provide liquids to crafts that need them. "
@@ -426,7 +382,6 @@
 				""
 				"Check the Thermalpedia for information on relevant upgrades."
 			]
-			dependencies: ["00000000000004AF"]
 			id: "00000000000004C8"
 			tasks: [{
 				id: "00000000000004C9"
@@ -443,10 +398,9 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: -0.5d
+			x: 13.0d
+			y: 7.0d
 			description: ["A handheld 'explosive' that releases the charged energy of elemental Blitz, causing lightning to strike spontaneously."]
-			dependencies: ["00000000000004DD"]
 			dependency_requirement: "one_started"
 			id: "00000000000004CA"
 			tasks: [{
@@ -464,10 +418,9 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -0.5d
+			x: 12.0d
+			y: 7.0d
 			description: ["A handheld 'explosive' that releases the chilling power of elemental Blizz, freezing water and blanketing the area in snow."]
-			dependencies: ["00000000000004DD"]
 			dependency_requirement: "one_started"
 			id: "00000000000004CC"
 			tasks: [{
@@ -485,10 +438,9 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 0.0d
+			x: 14.0d
+			y: 7.0d
 			description: ["A handheld 'explosive' that releases the latent power of elemental Basalz, causing the earth to shift and crack."]
-			dependencies: ["00000000000004DD"]
 			dependency_requirement: "one_started"
 			id: "00000000000004CE"
 			tasks: [{
@@ -506,10 +458,9 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 0.0d
+			x: 11.0d
+			y: 7.0d
 			description: ["A handheld 'explosive' that releases the smoldering energy of elemental Blaze, lighting the surroundings on fire."]
-			dependencies: ["00000000000004DD"]
 			id: "00000000000004D7"
 			tasks: [{
 				id: "00000000000004D9"
@@ -527,11 +478,10 @@
 		}
 		{
 			title: "Exotic Elements"
-			x: 2.0d
-			y: -1.0d
+			x: 12.5d
+			y: 6.0d
 			subtitle: "Everything changed when the Fire Elementals attacked"
 			description: ["Simple metallurgy can only go so far. At a certain point, more exotic materials are required. Seek out the elemental creatures that make their homes in the world's most extreme environments."]
-			dependencies: ["00000000000003A2"]
 			id: "00000000000004DD"
 			tasks: [
 				{
@@ -566,14 +516,13 @@
 		}
 		{
 			title: "RF Capacity and Transfer Augments"
-			x: 3.0d
-			y: 2.5d
+			x: 11.5d
+			y: 2.0d
 			description: [
 				"Better storage or faster discharge? "
 				""
 				"Consider the application carefully when choosing between these augments. "
 			]
-			dependencies: ["00000000000003A2"]
 			id: "00000000000004E2"
 			tasks: [{
 				id: "0000000000000F56"
@@ -611,8 +560,8 @@
 		}
 		{
 			title: "Integral Components"
-			x: 2.0d
-			y: 3.0d
+			x: 13.0d
+			y: 1.0d
 			description: [
 				"Integral Components generally upgrade all stats of the machine or tool they are installed in. "
 				""
@@ -620,7 +569,6 @@
 				""
 				"More advanced versions will require more exotic materials."
 			]
-			dependencies: ["00000000000003A2"]
 			id: "00000000000004E6"
 			tasks: [{
 				id: "0000000000000F8D"
@@ -638,14 +586,13 @@
 		}
 		{
 			title: "Dynamo Augments"
-			x: 1.0d
-			y: 2.5d
+			x: 11.5d
+			y: 4.0d
 			description: [
 				"Industrial Engineers often face a trade-off when designing a system, speed versus efficiency. Consider the needs of the application when choosing between these. "
 				""
 				"Efficiency pays off when energy can be stored for future use, but sometimes a loss is required to keep up with a steady demand. "
 			]
-			dependencies: ["00000000000003A2"]
 			id: "0000000000000F52"
 			tasks: [{
 				id: "0000000000000F59"
@@ -678,83 +625,8 @@
 			}]
 		}
 		{
-			x: -2.5d
+			x: 7.5d
 			y: 2.5d
-			subtitle: "That's Mistress Nature To You"
-			description: [
-				"The natural world tends to work the kinks out as it goes, rarely submitting unless something comes along to really dominate the scene. Shall we switch things up a bit? See what it can be made to do?"
-				""
-				"Tap a Jungle Tree and begin extracting raw latex. There are no hard limits here. "
-			]
-			dependencies: ["00000000000004A5"]
-			id: "0000000000000F67"
-			tasks: [{
-				id: "0000000000000F68"
-				type: "item"
-				item: "industrialforegoing:latex_bucket"
-			}]
-			rewards: [{
-				id: "0000000000000F8A"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_rare"
-				player_command: false
-			}]
-		}
-		{
-			x: -2.5d
-			y: 3.5d
-			subtitle: "Vulcanizing Bond"
-			description: ["Once smooth and supple, latex toughens through a process of vulcanization that makes it suitable for more industrial purposes. "]
-			dependencies: ["0000000000000F67"]
-			id: "0000000000000F69"
-			tasks: [{
-				id: "0000000000000F6A"
-				type: "item"
-				item: "thermal:cured_rubber"
-				count: 8L
-			}]
-			rewards: [{
-				id: "0000000000000F8B"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_rare"
-				player_command: false
-			}]
-		}
-		{
-			x: -0.5d
-			y: 4.0d
-			description: [
-				"Found mostly in shallow pools and deep beneath bedrock."
-				""
-				"Gather some up and begin processing it through a Fractionating Still. With a bit of refining, it can be converted into an excellent fuel source."
-			]
-			dependencies: [
-				"00000000000004A8"
-				"00000000000004A7"
-			]
-			id: "0000000000000F6B"
-			tasks: [{
-				id: "0000000000000F6C"
-				type: "item"
-				title: "Crude Oil"
-				item: "pneumaticcraft:oil_bucket"
-			}]
-			rewards: [{
-				id: "124C10AC728F1A8C"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_rare"
-				player_command: false
-			}]
-		}
-		{
-			x: 5.5d
-			y: 4.5d
 			subtitle: "Up Against a Wall"
 			description: [
 				"Based on the ancient art of spinning things until they fly apart, Centrifuges are a vital part of industry, allowing for efficient separation of materials. "
@@ -762,7 +634,6 @@
 				"Useful for a variety of purposes, its also the first step in creating a versatile and energy dense liquid fuel."
 			]
 			hide_dependency_lines: false
-			dependencies: ["00000000000004AF"]
 			id: "0000000000000F78"
 			tasks: [{
 				id: "0000000000000F79"
@@ -779,11 +650,10 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -7.5d
 			y: 4.0d
 			subtitle: "Can't Help But Feeling a Bit Sloshed"
 			description: ["Expandable, upgradable, portable. An excellent first choice for gathering liquids in the field.  "]
-			dependencies: ["0000000000000F69"]
 			id: "0000000000000F83"
 			tasks: [{
 				id: "0000000000000F84"
@@ -811,14 +681,13 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: 4.5d
+			x: -6.5d
+			y: 4.0d
 			subtitle: "Feeling Energetic and Quite Positive"
 			description: [
 				""
 				"Expandable, upgradable, portable. Perfect for a quick charge just about anywhere. "
 			]
-			dependencies: ["0000000000000F69"]
 			id: "0000000000000F85"
 			tasks: [{
 				id: "0000000000000F86"
@@ -853,14 +722,13 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 2.0d
+			x: 11.5d
+			y: 5.0d
 			description: [
 				"A lot of material can be lost in a system that would otherwise be recovered by slowing down to check again. "
 				""
 				"The Auxiliary Process Sieve trades speed for extra materials in applicable machines."
 			]
-			dependencies: ["00000000000003A2"]
 			id: "0000000000000F90"
 			tasks: [{
 				id: "0000000000000F91"
@@ -877,14 +745,13 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 2.0d
+			x: 11.5d
+			y: 3.0d
 			description: [
 				"Sometimes a job just needs to get done now and damn the costs. "
 				""
 				"Flux Linkage Amplifiers greatly enhance the speed of machines though they reduce energy efficiency in turn."
 			]
-			dependencies: ["00000000000003A2"]
 			id: "0000000000000F9D"
 			tasks: [{
 				id: "0000000000000F9E"
@@ -901,15 +768,14 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 4.5d
+			x: 1.0d
+			y: 4.0d
 			subtitle: "Sick of Tea? That's like being sick of breathing. "
 			description: [
 				"Feeling a bit peckish? How ‘bout a nice cold one, fresh from the tap?"
 				""
 				"Place water sources on each side to produce infinite water that can be extracted by any fluid pipe. Perfect for automation!"
 			]
-			dependencies: ["00000000000003A2"]
 			id: "3D23E5D7FA0F0A3E"
 			tasks: [{
 				id: "6EC90AFC954E42C8"
@@ -926,15 +792,14 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 6.0d
+			x: 0.0d
+			y: 4.0d
 			subtitle: "Flameo, Hotman!"
 			description: [
 				"A bit of lava, a bit of water. Boom, box of rocks. "
 				""
 				"The type of stone output by the Igneous Extruder is controlled by the block placed beneath it. "
 			]
-			dependencies: ["00000000000003A2"]
 			id: "724E414250F20D9C"
 			tasks: [{
 				id: "2395D1B3DDEB3FB6"
@@ -951,11 +816,10 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 5.5d
+			x: 0.0d
+			y: 3.0d
 			subtitle: "I laugh at gravity all the time. Hahaha, gravity!"
 			description: ["A handy device for picking up that mess those zombies left. Such inconsiderate house-guests. "]
-			dependencies: ["00000000000003A2"]
 			id: "505A3C679D3EDD3B"
 			tasks: [{
 				id: "66FA40C40EA10DE7"
@@ -972,11 +836,10 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 5.5d
+			x: 5.5d
+			y: 7.0d
 			subtitle: "Why is it that every time you play with magic water, I get soaked?"
 			description: ["A multi purpose cooling chamber, equally suited to making a highball or a fully formed ingot. "]
-			dependencies: ["00000000000003A2"]
 			id: "47B80FE2B94D5548"
 			tasks: [{
 				id: "7DFFBA48694F1143"
@@ -990,6 +853,278 @@
 				icon: "kubejs:epic_lootbox"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_epic"
 				player_command: false
+			}]
+		}
+		{
+			title: "Machine and Device Augments"
+			x: 13.0d
+			y: 2.0d
+			id: "138666C494585D15"
+			tasks: [{
+				id: "5B6A69F85A9B18D6"
+				type: "checkmark"
+				title: "Machine Upgrades"
+			}]
+		}
+		{
+			title: "Dynamo Augments"
+			x: 13.0d
+			y: 3.0d
+			id: "39E10D0DEF889419"
+			tasks: [{
+				id: "174D51107C5E923D"
+				type: "checkmark"
+				title: "Dynamo Upgrades"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 2.0d
+			id: "29637DF48860637C"
+			tasks: [{
+				id: "5BFF1E64A8744F89"
+				type: "item"
+				item: "thermal:dynamo_disenchantment"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 7.0d
+			id: "5A7E9219F1820D1A"
+			tasks: [{
+				id: "60049A54B1DAE026"
+				type: "item"
+				item: "thermal:charge_bench"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 5.5d
+			id: "764E43AA55120A7A"
+			tasks: [{
+				id: "66855E39EA18AAD5"
+				type: "item"
+				item: "thermal:tinker_bench"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 6.5d
+			id: "49C64DB0F676B3DA"
+			tasks: [{
+				id: "1493E993E8AC87A3"
+				type: "item"
+				item: {
+					id: "thermal:flux_drill"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: 7.0d
+			id: "18584987861519CB"
+			tasks: [{
+				id: "267ECBFB7151DB70"
+				type: "item"
+				item: {
+					id: "thermal:flux_saw"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: 7.5d
+			id: "6E218E197B088454"
+			tasks: [{
+				id: "7C112556C0F170B1"
+				type: "item"
+				item: {
+					id: "thermal:flux_magnet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -4.5d
+			y: 8.0d
+			id: "5A0A1924E22E9299"
+			tasks: [{
+				id: "16E7C818198AF6D8"
+				type: "item"
+				item: {
+					id: "thermal:flux_capacitor"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -7.0d
+			y: 8.0d
+			id: "0C751E33BF3958F9"
+			tasks: [{
+				id: "6A5B21FE50C9EC58"
+				type: "item"
+				item: {
+					id: "thermal:potion_infuser"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: 8.5d
+			id: "38AFEC74D75B77E1"
+			tasks: [{
+				id: "4EAC78DFF361E10D"
+				type: "item"
+				item: {
+					id: "thermal:watering_can"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: 9.5d
+			id: "72BF0B79DA526AAF"
+			tasks: [{
+				id: "1E1DB5F39B35E740"
+				type: "item"
+				item: {
+					id: "thermal:fluid_reservoir"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: 9.0d
+			id: "516732A608638811"
+			tasks: [{
+				id: "2B6DD1A8261C16D8"
+				type: "item"
+				item: {
+					id: "thermal:potion_quiver"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Getting Started: Power Generation"
+			x: -5.5d
+			y: -1.5d
+			id: "4630066EE7196046"
+			tasks: [{
+				id: "46744F3739AFC13C"
+				type: "checkmark"
+				title: "Getting Started: Power Generation"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 4.0d
+			id: "7F59A2F3992F2C7B"
+			tasks: [{
+				id: "260F1B94EA793EA6"
+				type: "item"
+				item: "thermal:device_composter"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.0d
+			id: "0D1FA94AE9C3C72B"
+			tasks: [
+				{
+					id: "595BD69922F34429"
+					type: "item"
+					item: "thermal:device_soil_infuser"
+				}
+				{
+					id: "07A832EBB87F9CC3"
+					type: "item"
+					item: "thermal:phytosoil"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			id: "53737BA8B4B7F62A"
+			tasks: [{
+				id: "39731B708C69C512"
+				type: "item"
+				item: "thermal:device_fisher"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.0d
+			id: "73CB4F8500D722DD"
+			tasks: [{
+				id: "6FEAD34600F3F341"
+				type: "item"
+				item: "thermal:device_hive_extractor"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.0d
+			id: "4C5E54FE7E2F99A5"
+			tasks: [{
+				id: "73E6C7FF732DE831"
+				type: "item"
+				item: "thermal:device_nullifier"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 4.5d
+			id: "257D1F8ADDF06DD0"
+			tasks: [{
+				id: "04832D155B5F6938"
+				type: "item"
+				item: "thermal:machine_crystallizer"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 1.5d
+			id: "3C1D8B65C1480521"
+			tasks: [{
+				id: "04EB0441CD04D2CA"
+				type: "item"
+				item: "thermal:machine_sawmill"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.5d
+			id: "246FD88197689BB9"
+			tasks: [{
+				id: "5E391C4F92E7C628"
+				type: "item"
+				item: "thermal:machine_pyrolyzer"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 5.0d
+			id: "68E694C68B4E8B86"
+			tasks: [{
+				id: "2F26335043FCA2EF"
+				type: "item"
+				item: "thermal:device_potion_diffuser"
 			}]
 		}
 	]
