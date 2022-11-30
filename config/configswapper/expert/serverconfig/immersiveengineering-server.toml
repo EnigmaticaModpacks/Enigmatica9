@@ -512,23 +512,23 @@
 		wolfpack_part = 10.0
 		#The amount of damage a silver bullet inflicts
 		#Range: 0.0 ~ 1.7976931348623157E308
-		silver = 10.0
+		silver = 12.0
 		#The amount of base damage a phial cartridge inflicts
 		#Range: 0.0 ~ 1.7976931348623157E308
-		phial = 1.0
+		phial = 2.0
 
 	[tools.chemthrower]
 		#The mb of fluid the Chemical Thrower will consume per tick of usage
 		#Range: > 1
-		consumption = 10
+		consumption = 2
 		#Set this to false to disable the use of Sneak+Scroll to switch Chemthrower tanks.
 		scroll = true
 
 	[tools.railgun]
 		#The base amount of Flux consumed per shot by the Railgun
 		#Range: > 1
-		consumption = 800
+		consumption = 600
 		#A modifier for the damage of all projectiles fired by the Railgun
 		#Range: 0.0 ~ 1.7976931348623157E308
-		damage_modifier = 1.0
+		damage_modifier = 4.0
 
