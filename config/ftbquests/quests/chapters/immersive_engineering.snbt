@@ -501,7 +501,7 @@
 			x: -5.0d
 			y: -5.0d
 			description: [
-				"Getting items from processing to storage need not be a manual task and Conveyor Belts will handle the task quite adequately. "
+				"Getting items from processing to storage need not be a manual effort and Conveyor Belts will handle the task quite adequately. "
 				""
 				"Much like Rails, Conveyor Belts may slope up or down. They may even be waterlogged if necessary, and Right-Clicking them with a dye will change the color of the wall. "
 				""

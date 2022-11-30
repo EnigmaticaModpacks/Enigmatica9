@@ -2,6 +2,24 @@
 
 const armored_mobs = {
     minecraft: {
+        blaze: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        effects: [{ type: 'minecraft:strength', amplifier: 1 }],
+                        max_health: 40,
+                        chest: {
+                            item: Item.of(
+                                'twilightforest:fiery_chestplate',
+                                `{${reactive.homing_flare},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 1),
+                            drop_rate: 0.0
+                        }
+                    }
+                }
+            ]
+        },
         iron_golem: {
             equipment: [
                 {
@@ -856,6 +874,22 @@ const armored_mobs = {
                     }
                 }
             ]
+        },
+        carminite_golem: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        effects: [
+                            { type: 'ars_nouveau:shielding', amplifier: 2 },
+                            { type: 'minecraft:strength', amplifier: 2 },
+                            { type: 'minecraft:resistance', amplifier: 2 },
+                            { type: 'minecraft:regeneration', amplifier: 1 }
+                        ],
+                        max_health: 200
+                    }
+                }
+            ]
         }
     },
     blue_skies: {
@@ -965,6 +999,65 @@ const armored_mobs = {
                             ).enchant('ars_nouveau:reactive', 4)
                         },
                         drop_rate: 0.0
+                    }
+                }
+            ]
+        }
+    },
+    thermal: {
+        blizz: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        effects: [{ type: 'immersiveengineering:conductive', amplifier: 1 }],
+                        max_health: 40,
+                        chest: {
+                            item: Item.of(
+                                'twilightforest:yeti_chesplate',
+                                `{${reactive.bounce_freeze},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 1),
+                            drop_rate: 0.0
+                        }
+                    }
+                }
+            ]
+        },
+        basalz: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        effects: [{ type: 'cofh_core:explosion_resistance', amplifier: 1 }],
+                        max_health: 40,
+                        chest: {
+                            item: Item.of(
+                                'pneumaticcraft:compressed_iron_chestplate',
+                                `{${reactive.earth_snare},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 1),
+                            drop_rate: 0.0
+                        }
+                    }
+                }
+            ]
+        },
+        blitz: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        effects: [
+                            { type: 'minecraft:speed', amplifier: 1 },
+                            { type: 'cofh_core:lightning_resistance', amplifier: 1 }
+                        ],
+                        max_health: 40,
+                        chest: {
+                            item: Item.of(
+                                'minecraft:chainmail_chestplate',
+                                `{${reactive.orbit_lightning},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 3),
+                            drop_rate: 0.0
+                        }
                     }
                 }
             ]
