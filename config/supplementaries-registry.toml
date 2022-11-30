@@ -87,6 +87,7 @@
 	lapis_bricks = true
 	relayer = true
 	candle_holder = true
+	enderman_head = true
 
 [items]
 	flute = true

@@ -687,7 +687,7 @@
 				""
 				"This requires no air and signals do not degrade over distance. "
 				""
-				"By installing a Module Expansion card into a Module in Receiving mode, it may be set to behave exactly like a vanilla Comparator, getting a signal from blocks that emit special values for Comparators, like the Refinery."
+				"Installing a Module Expansion card into a Module in Receiving mode, it may be set to behave exactly like a vanilla Comparator, getting a signal from blocks that emit special values for Comparators, like the Refinery."
 				""
 				"By installing such a card into a Module in Emitting mode, several features become available. For example, by making use of the color channels, it can function as an AND gate, OR gate, compare against another channel or against a constant value, and much more. By chaining them together, some truly compact Redstone logic can be made."
 			]

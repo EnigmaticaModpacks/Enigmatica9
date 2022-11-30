@@ -9,7 +9,12 @@ StartupEvents.registry('block', (event) => {
     ];
 
     blocks.forEach((block) => {
-        const block_event = event.create(block.name).material(block.material).hardness(block.hardness);
+        const block_event = event
+            .create(block.name)
+            .material(block.material)
+            .hardness(block.hardness)
+            .textureAll(`kubejs:block/${block.name}`)
+            .model(`kubejs:block/${block.name}`);
 
         if (block.leaves) {
             block_event
