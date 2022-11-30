@@ -1010,7 +1010,7 @@ const armored_mobs = {
                 {
                     weight: 100,
                     set: {
-                        effects: [{ type: 'immersiveengineering:conductive', amplifier: 1 }],
+                        effects: [{ type: 'cofh_core:panacea', amplifier: 1 }],
                         max_health: 40,
                         chest: {
                             item: Item.of(
