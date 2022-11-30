@@ -132,8 +132,8 @@
 		}
 		{
 			icon: "thermal:machine_refinery"
-			x: 15.5d
-			y: 1.5d
+			x: 6.5d
+			y: 7.0d
 			subtitle: "Not Your Ordinary Moonshine"
 			description: [
 				"With a little bit of energy input, the Fractionating Still can refine Resin into Tree Oil, a fine renewable fuel that burns more efficiently than coal."
@@ -318,8 +318,8 @@
 			]
 		}
 		{
-			x: 13.5d
-			y: 4.5d
+			x: 6.5d
+			y: 9.0d
 			subtitle: "Between the Wasteland and Sky..."
 			description: [
 				"Nature does an excellent job of growing plants. It's been at it for a while, after all. But when space is at a premium a Phytogenic Insolator is an excellent alternative to the natural approach. "
@@ -344,8 +344,8 @@
 			}]
 		}
 		{
-			x: 15.0d
-			y: 4.0d
+			x: 6.0d
+			y: 8.0d
 			subtitle: "Insert Tab A Into Slot B"
 			description: [
 				"A precision machine that can quickly assemble components, simplifying automation. It features an internal fluid tank as well which can automatically provide liquids to crafts that need them. "
@@ -453,7 +453,22 @@
 			x: 12.5d
 			y: 6.0d
 			subtitle: "Everything changed when the Fire Elementals attacked"
-			description: ["Simple metallurgy can only go so far. At a certain point, more exotic materials are required. Seek out the elemental creatures that make their homes in the world's most extreme environments."]
+			description: [
+				"Simple metallurgy can only go so far. At a certain point, more exotic materials are required. Seek out the elemental creatures that make their homes in the world's most extreme environments."
+				""
+				"Blaze may be found naturally just about anywhere in the Nether, though Nether Fortresses are certainly a hot spot for them."
+				""
+				"Basalz may similarly be found in the Nether such as in Basalt Deltas. They’ll appear in the Overworld as well in Barren or Mountainous Biomes."
+				""
+				"Blitz may be found in Warm and Dry biomes such as Deserts, Savannas, or Badlands; places with no rainfall."
+				""
+				"Blizz may be found in Cold biomes; anywhere that might see snow fall. "
+				""
+				"A Nature’s Compass is useful for locating Biomes by their properties. Use the Temperature or Tag sorting options to display a list of Biomes and their Tags. For instance, Frozen Peaks count as a Cold Biome and will spawn Blizz. "
+				""
+				"If these mobs prove difficult to find, they may be summoned via the Elemental Gate Pearls. Watch out, they’ll come in droves."
+			]
+			min_width: 300
 			id: "00000000000004DD"
 			tasks: [
 				{
@@ -610,8 +625,8 @@
 			}]
 		}
 		{
-			x: 10.5d
-			y: 4.0d
+			x: 6.5d
+			y: 10.0d
 			subtitle: "Can't Help But Feeling a Bit Sloshed"
 			description: ["Expandable, upgradable, portable. An excellent first choice for gathering liquids in the field.  "]
 			id: "0000000000000F83"
@@ -743,7 +758,7 @@
 			}]
 		}
 		{
-			x: 7.5d
+			x: 3.0d
 			y: 10.5d
 			subtitle: "Sick of Tea? That's like being sick of breathing. "
 			description: [
@@ -769,7 +784,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 1.0d
 			y: 10.5d
 			subtitle: "Flameo, Hotman!"
 			description: [
@@ -795,7 +810,7 @@
 			}]
 		}
 		{
-			x: 5.0d
+			x: 0.5d
 			y: 9.5d
 			subtitle: "I laugh at gravity all the time. Hahaha, gravity!"
 			description: ["A handy device for picking up that mess those zombies left. Such inconsiderate house-guests. "]
@@ -817,8 +832,8 @@
 			}]
 		}
 		{
-			x: 16.0d
-			y: 4.0d
+			x: 7.5d
+			y: 9.0d
 			subtitle: "Why is it that every time you play with magic water, I get soaked?"
 			description: [
 				"A multi purpose cooling chamber, equally suited to making a highball or hardened Obsidian. "
@@ -946,7 +961,7 @@
 		}
 		{
 			title: "Tools and Utility"
-			x: 6.5d
+			x: 2.0d
 			y: 6.5d
 			hide_dependency_lines: true
 			dependencies: ["00000000000003A2"]
@@ -958,7 +973,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 1.0d
 			y: 7.0d
 			shape: "diamond"
 			hide_dependency_lines: true
@@ -975,7 +990,7 @@
 			}]
 		}
 		{
-			x: 7.0d
+			x: 2.5d
 			y: 7.5d
 			shape: "diamond"
 			hide_dependency_lines: true
@@ -992,7 +1007,7 @@
 			}]
 		}
 		{
-			x: 7.5d
+			x: 3.0d
 			y: 8.0d
 			shape: "diamond"
 			hide_dependency_lines: true
@@ -1009,7 +1024,7 @@
 			}]
 		}
 		{
-			x: 7.5d
+			x: 3.0d
 			y: 7.0d
 			shape: "diamond"
 			hide_dependency_lines: true
@@ -1026,7 +1041,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: 3.5d
 			y: 7.5d
 			shape: "diamond"
 			hide_dependency_lines: true
@@ -1137,7 +1152,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: 3.5d
 			y: 9.5d
 			hide_dependency_lines: true
 			dependencies: ["764E43AA55120A7A"]
@@ -1149,8 +1164,8 @@
 			}]
 		}
 		{
-			x: 16.0d
-			y: 2.5d
+			x: 5.5d
+			y: 9.0d
 			id: "257D1F8ADDF06DD0"
 			tasks: [{
 				id: "04832D155B5F6938"
@@ -1171,8 +1186,8 @@
 			}]
 		}
 		{
-			x: 16.5d
-			y: 1.5d
+			x: 7.0d
+			y: 8.0d
 			id: "246FD88197689BB9"
 			tasks: [{
 				id: "5E391C4F92E7C628"
@@ -1181,7 +1196,7 @@
 			}]
 		}
 		{
-			x: 6.5d
+			x: 2.0d
 			y: 11.0d
 			hide_dependency_lines: true
 			dependencies: ["764E43AA55120A7A"]
@@ -1214,7 +1229,7 @@
 			}]
 		}
 		{
-			x: 6.0d
+			x: 1.5d
 			y: 7.5d
 			shape: "diamond"
 			subtitle: "Guaranteed to Satisfy"
@@ -1253,7 +1268,7 @@
 			]
 		}
 		{
-			x: 5.0d
+			x: 0.5d
 			y: 7.5d
 			shape: "diamond"
 			subtitle: "You Try to Hold Me But I Bust Through"
@@ -1300,7 +1315,7 @@
 					Damage: 0
 				}
 			}
-			x: 6.5d
+			x: 2.0d
 			y: 8.5d
 			shape: "diamond"
 			subtitle: "So Dangerous, You'll Have to Sign a Waiver"
@@ -1372,7 +1387,7 @@
 					Damage: 0
 				}
 			}
-			x: 7.0d
+			x: 2.5d
 			y: 9.0d
 			shape: "diamond"
 			subtitle: "You'll Think You're Looking at Aquaman"
@@ -1436,7 +1451,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 1.0d
 			y: 8.0d
 			shape: "diamond"
 			description: [
@@ -1524,7 +1539,7 @@
 					Damage: 0
 				}
 			}
-			x: 6.0d
+			x: 1.5d
 			y: 9.0d
 			shape: "diamond"
 			subtitle: "You Realized It's Not My Fault Not a Moment Too Soon"

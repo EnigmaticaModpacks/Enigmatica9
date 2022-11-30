@@ -1259,7 +1259,15 @@
 			icon: "immersiveengineering:fluid_pipe"
 			x: -4.0d
 			y: -5.0d
+			description: [
+				"Simple Fluid Pipes to get fluids moving around the factory. These pipes do not pull from attached inventories on their own. For anything that doesn’t automatically push fluid outputs, a Fluid Pump will be required."
+				""
+				"Even for those times when a pump isn’t required, using one greatly increases the flow rate of Fluid Pipes. Power is required and an Engineer’s Hammer will be needed to set sides to Input (blue) or Output (orange). It also requires a Redstone signal to turn on.  "
+				""
+				"The pipes themselves may be covered with Steel or Treated Wood Scaffolding blocks, as well as dyed by Right-Clicking with a dye piece. Dyed pipes will not connect to pipes of another color. "
+			]
 			dependencies: ["0000000000000007"]
+			min_width: 300
 			id: "1848E59BC6D42342"
 			tasks: [
 				{
@@ -1285,6 +1293,7 @@
 		{
 			x: -4.0d
 			y: -3.0d
+			description: ["When an area needs to be flooded, large or small, a Fluid Outlet makes the perfect tool for the job. Simply place it and pipe fluids into it via any means; it will begin placing that fluid in the area below it, filling from bottom to top. "]
 			hide_dependency_lines: true
 			dependencies: ["1848E59BC6D42342"]
 			id: "78D19FEABD21BC6F"

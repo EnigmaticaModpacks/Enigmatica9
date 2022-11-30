@@ -112,7 +112,7 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             type: 'basalz_gate',
-            color: '#312433',
+            color: '#9537a3',
             entries: {
                 common: { entity: 'thermal:basalz', nbt: '{}' },
                 uncommon: { entity: 'twilightforest:troll', nbt: '{}' },
