@@ -51,7 +51,7 @@ jei.base.items.disabled = [
     'mekanism:advanced_bin',
     'mekanism:basic_bin',
     'immersiveengineering:blast_furnace',
-    'immersiveengineering:alloy_smelter'
+    'immersiveengineering:alloy_smelter',
     /byg:.*pendorite.*/,
     /byg:.*ametrine.*/
 ];
