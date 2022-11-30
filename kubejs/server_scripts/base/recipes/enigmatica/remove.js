@@ -14,13 +14,25 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:sawing\/log/ },
         { id: /mekanism:compat\/byg\/combining\/.*_ore_/ },
         { id: /mekanism:bin\/.*/ },
+        { id: /mekanism:processing\/.*\/to.*_ore/ },
+        { id: /mekanism:processing\/.*\/ore\/.*from_raw/ },
+        { id: /mekanism:processing\/.*\/crystal\/from_slurry/ },
+        { id: /mekanism:processing\/.*\/slurry\/clean/ },
+        { id: /mekanism:processing\/.*\/slurry\/dirty/ },
+        { id: 'mekanism:processing/netherite/dust_to_ancient_debris' },
         { id: 'quark:tweaks/smelting/bone_meal_utility' },
-        { type: 'create:cutting' },
         { type: 'immersiveengineering:sawmill' },
+        { type: 'create:cutting' },
         { type: 'immersiveengineering:cloche' },
         { type: 'immersiveengineering:generated_list' },
         { type: 'immersiveengineering:alloy' },
-        { mod: 'gateways' }
+        { mod: 'gateways' },
+        // Emendatus Enigmatica Related stuff
+        { id: /immersiveengineering:crafting\/raw_hammercrushing_/}, // Dusts.js related
+        { id: /immersiveengineering:crafting\/hammercrushing_/},
+        { id: /industrialforegoing:.*_gear/ }, // Gears
+        { id: /immersiveengineering:crafting\/plate_.*_hammering/ }, // plates.js related
+        { id: /immersiveengineering:crafting\/stick_/ } // rods.js related
     ];
 
     colors.forEach((color) => {

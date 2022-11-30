@@ -1,5 +1,5 @@
 ServerEvents.tags('item', (event) => {
-    const items = ['immersiveengineering:hammer'];
+    const items = ['immersiveengineering:hammer', 'emendatusenigmatica:enigmatic_hammer'];
     const exceptions = [];
 
     // const tagGroups = ['forge:tools', 'forge:tools/crafting_hammers'];

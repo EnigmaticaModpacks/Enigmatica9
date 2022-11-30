@@ -137,18 +137,18 @@ const metal_properties = {
             }
         }
     },
-    cobalt: {
-        meltingPoint: 950,
-        oreProcessing: {
-            output: {
-                substrate: 'minecraft:netherrack',
-                secondary: 'iron'
-            },
-            create: {
-                processingTime: 400
-            }
-        }
-    },
+    // cobalt: {
+    //     meltingPoint: 950,
+    //     oreProcessing: {
+    //         output: {
+    //             substrate: 'minecraft:netherrack',
+    //             secondary: 'iron'
+    //         },
+    //         create: {
+    //             processingTime: 400
+    //         }
+    //     }
+    // },
     iesnium: {
         meltingPoint: 850,
         oreProcessing: {
@@ -161,9 +161,9 @@ const metal_properties = {
             }
         }
     },
-    elementium: {
-        meltingPoint: 875
-    },
+    // elementium: {
+    //     meltingPoint: 875
+    // },
     enderium: {
         meltingPoint: 1450
     },
@@ -173,15 +173,15 @@ const metal_properties = {
     lumium: {
         meltingPoint: 1354
     },
-    manasteel: {
-        meltingPoint: 900
-    },
-    terrasteel: {
-        meltingPoint: 1350
-    },
-    gaia_spirit: {
-        meltingPoint: 975
-    },
+    // manasteel: {
+    //     meltingPoint: 900
+    // },
+    // terrasteel: {
+    //     meltingPoint: 1350
+    // },
+    // gaia_spirit: {
+    //     meltingPoint: 975
+    // },
     infused_iron: {
         meltingPoint: 850
     },
