@@ -19,12 +19,12 @@
 	[Dynamos.Numismatic]
 		#This sets the base power generation (RF/t) for the Numismatic Dynamo.
 		#Range: 10 ~ 200
-		"Base Power" = 120
+		"Base Power" = 160
 
 	[Dynamos.Lapidary]
 		#This sets the base power generation (RF/t) for the Lapidary Dynamo.
 		#Range: 10 ~ 200
-		"Base Power" = 120
+		"Base Power" = 160
 
 	[Dynamos.Disenchantment]
 		#This sets the base power generation (RF/t) for the Disenchantment Dynamo.
@@ -34,7 +34,7 @@
 	[Dynamos.Gourmand]
 		#This sets the base power generation (RF/t) for the Gourmand Dynamo.
 		#Range: 10 ~ 200
-		"Base Power" = 20
+		"Base Power" = 100
 
 
 
