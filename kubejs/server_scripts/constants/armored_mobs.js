@@ -12,7 +12,7 @@ const armored_mobs = {
                         chest: {
                             item: Item.of(
                                 'twilightforest:fiery_chestplate',
-                                `{${reactive.homing_flare},${enchant_glint.blank}}`
+                                `{${reactive.burning_aura},${enchant_glint.blank}}`
                             ).enchant('ars_nouveau:reactive', 1),
                             drop_rate: 0.0
                         }

@@ -196,9 +196,6 @@
     "ritual.enigmatica.occultism/ritual/killer_bunny_gate_large.interrupted": "Large Killer Bunny Gateway Interrupted",
     "ritual.enigmatica.occultism/ritual/killer_bunny_gate_large.conditions": "Not all requirements for this ritual are met.",
 
-    "gateways.blaze_gate": "Fire Elemental Gate",
-    "gateways.blaze_gate_small": "Small Fire Elemental Gate",
-    "gateways.blaze_gate_large": "Large Fire Elemental Gate",
     "ritual.enigmatica.occultism/ritual/blaze_gate_small.started": "Started Opening Small Fire Elemental Gateway",
     "ritual.enigmatica.occultism/ritual/blaze_gate_small.finished": "Small Fire Elemental Gateway Opened",
     "ritual.enigmatica.occultism/ritual/blaze_gate_small.interrupted": "Small Fire Elemental Gateway Interrupted",
