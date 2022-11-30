@@ -1,6 +1,6 @@
 //priority: 1000
 
-const sawdust = AlmostUnified.getPreferredItemForTag('forge:dusts/wood').getId();
+const sawdust = 'thermal:sawdust';
 const bark = 'farmersdelight:tree_bark';
 
 // Used to populate the wood_variants_constructor constant - Add variants here to enable compat with various cutting mechanics.
