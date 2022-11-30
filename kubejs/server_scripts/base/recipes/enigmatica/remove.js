@@ -28,8 +28,8 @@ ServerEvents.recipes((event) => {
         { type: 'immersiveengineering:alloy' },
         { mod: 'gateways' },
         // Emendatus Enigmatica Related stuff
-        { id: /immersiveengineering:crafting\/raw_hammercrushing_/}, // Dusts.js related
-        { id: /immersiveengineering:crafting\/hammercrushing_/},
+        { id: /immersiveengineering:crafting\/raw_hammercrushing_/ }, // Dusts.js related
+        { id: /immersiveengineering:crafting\/hammercrushing_/ },
         { id: /industrialforegoing:.*_gear/ }, // Gears
         { id: /immersiveengineering:crafting\/plate_.*_hammering/ }, // plates.js related
         { id: /immersiveengineering:crafting\/stick_/ } // rods.js related
