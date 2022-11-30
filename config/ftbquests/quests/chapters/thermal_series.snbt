@@ -15,11 +15,10 @@
 			description: [
 				"The Thermal Series is a suite of mods that has been a staple of Modded Minecraft for years. Time has brought many changes to it, but it's kept its overall theme of slightly magical tech throughout. "
 				""
-				"The Thermalpedia provided goes into greater detail on many of the tools and machines in the Thermal Series. Refer to it often to learn more. "
+				"The Thermalpedia goes into greater detail on many of the tools and machines in the Thermal Series. Refer to it often to learn more. "
 				""
 				"~MuteTiefling"
 			]
-			optional: true
 			id: "00000000000003A2"
 			tasks: [{
 				id: "6F8140DE19FABFDA"
@@ -37,14 +36,15 @@
 		}
 		{
 			icon: "thermal:dynamo_stirling"
-			x: -5.5d
-			y: 0.0d
+			x: -3.0d
+			y: 3.0d
 			subtitle: "Power, From the Top"
 			description: [
-				"A Stirling Dynamo burns fuel to create a heat differential, thus allowing the engine to spin and generate energy in an easily stored and transferable form."
+				"A Stirling Dynamo burns solid fuel to create a heat differential, allowing the engine to spin and generate energy in an easily stored and transferable form."
 				""
-				"Check the Thermalpedia for information on relevant upgrades."
+				"It’s a very basic form of power, but sufficient to get things going. "
 			]
+			hide_dependency_lines: true
 			dependencies: ["4630066EE7196046"]
 			id: "00000000000004A3"
 			tasks: [
@@ -76,22 +76,6 @@
 					count: 8
 				}
 				{
-					id: "000000000000063A"
-					type: "item"
-					item: {
-						id: "thermal:energy_cell"
-						Count: 1b
-						tag: {
-							BlockEntityTag: {
-								EnergyMax: 1000000
-								EnergySend: 1000
-								Energy: 0
-								EnergyRecv: 1000
-							}
-						}
-					}
-				}
-				{
 					id: "0000000000000A7E"
 					type: "command"
 					title: "Farmer's Delight"
@@ -102,7 +86,7 @@
 			]
 		}
 		{
-			x: -2.0d
+			x: 5.5d
 			y: 5.0d
 			subtitle: "Trickle-Down Economics"
 			description: [
@@ -267,14 +251,11 @@
 			}]
 		}
 		{
-			x: -5.5d
-			y: 1.0d
+			x: -1.0d
+			y: 3.0d
 			subtitle: "ICE, ICE, Baby"
-			description: [
-				"With better fuel in hand, start up a Compression Dynamo for some simple renewable energy. "
-				""
-				"Check the Thermalpedia for information on relevant upgrades."
-			]
+			description: ["For a quick early boost in power, consider switching to liquid fuels. Compression Dynamos will output a bit more power per tick compared to Stirling, even without augments."]
+			hide_dependency_lines: true
 			dependencies: ["4630066EE7196046"]
 			id: "00000000000004BF"
 			tasks: [{
@@ -576,55 +557,36 @@
 		}
 		{
 			title: "Integral Components"
-			x: 13.0d
-			y: 1.0d
+			icon: "thermal:upgrade_augment_1"
+			x: 2.0d
+			y: 5.0d
 			description: [
-				"Integral Components generally upgrade all stats of the machine or tool they are installed in. "
+				"A generic upgrade that may be installed in any upgradable Thermal Series machine, device, or dynamo. They offer a straight multiplier of most stats, applied after other augments, so they’re always worth using. "
 				""
-				"Only the highest tier counts, so only install one at a time. "
-				""
-				"More advanced versions will require more exotic materials."
+				"Only one may be used at a time and only the highest tier counts, so be sure to spread them around. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["356D43146EB57E78"]
 			id: "00000000000004E6"
 			tasks: [{
 				id: "0000000000000F8D"
 				type: "item"
-				item: "thermal:upgrade_augment_1"
-			}]
-			rewards: [{
-				id: "00000000000004F8"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_rare"
-				player_command: false
-			}]
-		}
-		{
-			title: "Dynamo Augments"
-			x: 11.5d
-			y: 4.0d
-			description: [
-				"Industrial Engineers often face a trade-off when designing a system, speed versus efficiency. Consider the needs of the application when choosing between these. "
-				""
-				"Efficiency pays off when energy can be stored for future use, but sometimes a loss is required to keep up with a steady demand. "
-			]
-			id: "0000000000000F52"
-			tasks: [{
-				id: "0000000000000F59"
-				type: "item"
-				title: "Dynamo Augments"
+				title: "Integral Components"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
 					tag: {
 						items: [
 							{
-								id: "thermal:dynamo_output_augment"
+								id: "thermal:upgrade_augment_1"
 								Count: 1b
 							}
 							{
-								id: "thermal:dynamo_fuel_augment"
+								id: "thermal:upgrade_augment_2"
+								Count: 1b
+							}
+							{
+								id: "thermal:upgrade_augment_3"
 								Count: 1b
 							}
 						]
@@ -632,7 +594,7 @@
 				}
 			}]
 			rewards: [{
-				id: "0000000000000F9F"
+				id: "00000000000004F8"
 				type: "command"
 				title: "Rare Thermal Series Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -700,13 +662,16 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: 4.0d
+			x: -2.0d
+			y: 4.5d
 			subtitle: "Feeling Energetic and Quite Positive"
 			description: [
+				"Expandable, upgradable, portable. Perfect for a quick charge just about anywhere."
 				""
-				"Expandable, upgradable, portable. Perfect for a quick charge just about anywhere. "
+				"Thermal Series offers no form of power cable currently. While piping Flux Capacitors or Flux Cells around certainly works, consider using some Universal Cables from Mekanism instead. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["4630066EE7196046"]
 			id: "0000000000000F85"
 			tasks: [{
 				id: "0000000000000F86"
@@ -724,21 +689,29 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "0000000000000F88"
-				type: "item"
-				title: "Holding IV"
-				item: {
-					id: "minecraft:enchanted_book"
-					Count: 1b
-					tag: {
-						StoredEnchantments: [{
-							lvl: 4s
-							id: "cofh_core:holding"
-						}]
+			rewards: [
+				{
+					id: "0000000000000F88"
+					type: "item"
+					title: "Holding IV"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 4s
+								id: "cofh_core:holding"
+							}]
+						}
 					}
 				}
-			}]
+				{
+					id: "7A2EEDADE9E418F2"
+					type: "item"
+					item: "mekanism:basic_universal_cable"
+					count: 8
+				}
+			]
 		}
 		{
 			x: 11.5d
@@ -891,18 +864,64 @@
 		}
 		{
 			title: "Dynamo Augments"
-			x: 13.0d
-			y: 3.0d
+			x: -2.0d
+			y: 2.5d
+			description: [
+				"Industrial Engineers often face a trade-off when designing a system, speed versus efficiency. Consider the needs of the application when choosing between these."
+				""
+				"Efficiency pays off when energy can be stored for future use. In such a case, installing a few Multi-Cycle Injectors would be wise. "
+				""
+				"However, sometimes a loss is required to keep up with a steady demand. Auxiliary Reaction Chambers will increase output, but fuel will burn less efficiently. "
+				""
+				"Dynamos will produce less energy per tick as their internal buffer fills, but they will continue to burn fuel slowly unless turned off. With an Excitation Field Limiter installed, they’ll turn off on their own when full. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["4630066EE7196046"]
+			min_width: 300
 			id: "39E10D0DEF889419"
-			tasks: [{
-				id: "174D51107C5E923D"
-				type: "checkmark"
-				title: "Dynamo Upgrades"
-			}]
+			tasks: [
+				{
+					id: "0F119B9B7B6A53C0"
+					type: "item"
+					item: "thermal:dynamo_output_augment"
+				}
+				{
+					id: "0728A84A6ECA375B"
+					type: "item"
+					item: "thermal:dynamo_fuel_augment"
+				}
+				{
+					id: "28DC2EB5ED678F2E"
+					type: "item"
+					item: "thermal:dynamo_throttle_augment"
+				}
+			]
+			rewards: [
+				{
+					id: "0326C69AA6313AB5"
+					type: "command"
+					title: "Rare Thermal Series Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_rare"
+					player_command: false
+				}
+				{
+					id: "50134643DB3E90BF"
+					type: "item"
+					item: "thermal:upgrade_augment_1"
+				}
+			]
 		}
 		{
-			x: -5.5d
-			y: 2.0d
+			x: -2.0d
+			y: 3.5d
+			subtitle: "A Remnant from Another Age"
+			description: [
+				"For the ultimate power source from Thermal, things will need to get a little arcane. "
+				""
+				"The Disenchantment Dynamo burns enchanted books as fuel, converting the powerful magics on these books into more readily used energy. "
+			]
+			hide_dependency_lines: true
 			dependencies: ["4630066EE7196046"]
 			id: "29637DF48860637C"
 			tasks: [{
@@ -910,14 +929,24 @@
 				type: "item"
 				item: "thermal:dynamo_disenchantment"
 			}]
-			rewards: [{
-				id: "74DFC2269FC7821A"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_sorcerers_delight"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "74DFC2269FC7821A"
+					type: "command"
+					title: "Sorcerer's Delight"
+					icon: "kubejs:sorcerers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_sorcerers_delight"
+					player_command: false
+				}
+				{
+					id: "77BECFF6AF60992F"
+					type: "command"
+					title: "Epic Thermal Series Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_epic"
+					player_command: false
+				}
+			]
 		}
 		{
 			x: -7.5d
@@ -1053,9 +1082,10 @@
 		}
 		{
 			title: "Getting Started: Power Generation"
-			x: -5.5d
-			y: -1.5d
+			x: -2.0d
+			y: 1.5d
 			description: ["There’s no such thing as a free lunch, as the saying goes; doing work means using energy and the search for energy drives all things. Our first step, therefore, will be to generate some power to begin working with Thermal machines."]
+			hide_dependency_lines: true
 			dependencies: ["00000000000003A2"]
 			id: "4630066EE7196046"
 			tasks: [{
@@ -1065,7 +1095,7 @@
 			}]
 		}
 		{
-			x: -2.5d
+			x: 5.0d
 			y: 4.0d
 			id: "7F59A2F3992F2C7B"
 			tasks: [{
@@ -1096,7 +1126,7 @@
 		}
 		{
 			icon: "thermal:device_soil_infuser"
-			x: -2.5d
+			x: 5.0d
 			y: 3.0d
 			id: "0D1FA94AE9C3C72B"
 			tasks: [{
@@ -1112,7 +1142,7 @@
 			}]
 		}
 		{
-			x: -1.5d
+			x: 6.0d
 			y: 3.0d
 			id: "53737BA8B4B7F62A"
 			tasks: [{
@@ -1127,7 +1157,7 @@
 			}]
 		}
 		{
-			x: -1.5d
+			x: 6.0d
 			y: 4.0d
 			id: "73CB4F8500D722DD"
 			tasks: [{
@@ -1191,6 +1221,7 @@
 		{
 			x: 2.0d
 			y: 1.5d
+			description: ["Better materials are critical to any industrial endeavor but getting them will require a bit of setup and equipment first. "]
 			hide_dependency_lines: true
 			dependencies: ["00000000000003A2"]
 			id: "356D43146EB57E78"

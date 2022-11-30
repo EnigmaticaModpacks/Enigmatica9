@@ -33,6 +33,8 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:machines/centrifuge/centrifuge_sunflower' },
         { id: 'thermal:machines/centrifuge/centrifuge_white_tulip' },
         { id: 'thermal:machines/centrifuge/centrifuge_wither_rose' },
+        { id: 'thermal:rockwool/white_rockwool_from_smelting' },
+        { id: 'thermal:machines/smelter/smelter_gravel' },
         { type: 'create:cutting' },
         { type: 'immersiveengineering:sawmill' },
         { type: 'immersiveengineering:cloche' },
