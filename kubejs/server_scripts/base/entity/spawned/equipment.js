@@ -14,10 +14,12 @@ EntityEvents.spawned((event) => {
     // Don't apply buffs to Spirit spawner mobs
     // Don't apply buffs to Apotheosis bosses
     // Don't re-apply buffs to already checked mobs
+    // Creeper Overhaul entities don't give the correct `type` output. This appears to be the only way to ignore them...
     if (
         event.entity.fullNBT.hasOwnProperty('Corrupted') ||
         event.entity.fullNBT.ForgeData.hasOwnProperty('apoth.boss') ||
-        event.entity.fullNBT.ForgeData.hasOwnProperty('enigmatica_equipment')
+        event.entity.fullNBT.ForgeData.hasOwnProperty('enigmatica_equipment') ||
+        event.entity.type.texture
     ) {
         return;
     }
