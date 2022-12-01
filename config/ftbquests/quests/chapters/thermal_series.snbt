@@ -9,6 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "Thermal Series"
 			x: 2.0d
 			y: -1.0d
 			shape: "gear"
@@ -132,7 +133,7 @@
 			icon: "thermal:machine_refinery"
 			x: 5.5d
 			y: 8.0d
-			subtitle: "Not Your Ordinary Moonshine"
+			subtitle: "Whiskey Business"
 			description: ["With a little bit of energy input, the Fractionating Still can refine Resin into Tree Oil, a fine renewable fuel that burns more efficiently than coal."]
 			hide_dependency_lines: true
 			dependencies: ["0E97D80734FAA130"]
@@ -308,14 +309,24 @@
 				type: "item"
 				item: "thermal:machine_insolator"
 			}]
-			rewards: [{
-				id: "00000000000004F5"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_epic"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "00000000000004F5"
+					type: "command"
+					title: "Epic Thermal Series Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_epic"
+					player_command: false
+				}
+				{
+					id: "0F80388DC7F3BBE7"
+					type: "command"
+					title: "Farmer's Delight"
+					icon: "kubejs:farmers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
+					player_command: false
+				}
+			]
 		}
 		{
 			x: 2.0d
@@ -696,6 +707,14 @@
 					item: "mekanism:basic_universal_cable"
 					count: 8
 				}
+				{
+					id: "26D4E44D620105C3"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+					player_command: false
+				}
 			]
 		}
 		{
@@ -783,14 +802,24 @@
 				type: "item"
 				item: "thermal:device_water_gen"
 			}]
-			rewards: [{
-				id: "052C23B5160E5C9A"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_rare"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "052C23B5160E5C9A"
+					type: "command"
+					title: "Rare Thermal Series Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_rare"
+					player_command: false
+				}
+				{
+					id: "4D495373F92BBBDE"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+					player_command: false
+				}
+			]
 		}
 		{
 			x: 1.0d
@@ -831,14 +860,24 @@
 				type: "item"
 				item: "thermal:device_collector"
 			}]
-			rewards: [{
-				id: "7AE5586CD4CAE2A9"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_rare"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "7AE5586CD4CAE2A9"
+					type: "command"
+					title: "Rare Thermal Series Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_rare"
+					player_command: false
+				}
+				{
+					id: "3BF41840DB95F7F2"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+					player_command: false
+				}
+			]
 		}
 		{
 			title: "Dynamo Augments"
@@ -1190,7 +1229,7 @@
 		{
 			x: 5.5d
 			y: 3.0d
-			description: ["PLACEHOLDER"]
+			description: ["Good soil can be hard to come by, but with modern composting methods, waste food can be easily converted into compost. From there, a little mixing with other substrates results in some fine soil for planting."]
 			hide_dependency_lines: true
 			dependencies: ["33BF0DD5543C6AB9"]
 			id: "7F59A2F3992F2C7B"
@@ -1218,13 +1257,25 @@
 					item: "minecraft:beetroot"
 					count: 16
 				}
+				{
+					id: "0BB4B9721715099A"
+					type: "command"
+					title: "Farmer's Delight"
+					icon: "kubejs:farmers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
+					player_command: false
+				}
 			]
 		}
 		{
 			icon: "thermal:device_soil_infuser"
 			x: 5.5d
 			y: 4.0d
-			description: ["PLACEHOLDER"]
+			description: [
+				"Phyto-Soil is already a marvel of modern farming techniques, but it can be activated with a gentle energetic field to further enhance its growing potential. "
+				""
+				"The Phyto-Soil Infuser does just this, supplying energy to Phyto-Soil at the same level as the device, as well as to soil one block above or below. The radius of effect may be expanded with Radial Enhancement Augments. "
+			]
 			hide_dependency_lines: true
 			dependencies: ["33BF0DD5543C6AB9"]
 			id: "0D1FA94AE9C3C72B"
@@ -1248,14 +1299,33 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_rare"
 					player_command: false
 				}
+				{
+					id: "531F94AF73146444"
+					type: "command"
+					title: "Farmer's Delight"
+					icon: "kubejs:farmers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
+					player_command: false
+				}
 			]
 		}
 		{
 			x: 7.5d
 			y: 4.0d
-			description: ["PLACEHOLDER"]
+			description: [
+				"While many find fishing to be a calm, relaxing pastime, others find it well… tedious. To those, the Aquatic Entangler is the answer to obtaining fish and other goodies from the seas. "
+				""
+				"Place the device facing a pool of water, its working area is out in front of it. Bait isn’t a requirement, but it will certainly help. By default, it captures fish from the Fishing loot table, without the Treasure or Junk tables. "
+				""
+				"● Junk Nets will capture loot from the standard Junk fishing table, things like Leather Boots, String, and Leather."
+				""
+				"● Aqua-Chow will simply increase the rates of catching standard drops from the Fishing table."
+				""
+				"● Benthic Aqua-Chow, on the other hand, will capture special treasures, such as Sponge, Prismarine, elusive Nautilus Shells, and even Tridents. Obtaining the best loot requires placing it in Ocean and Deep Ocean biomes. "
+			]
 			hide_dependency_lines: true
 			dependencies: ["33BF0DD5543C6AB9"]
+			min_width: 300
 			id: "53737BA8B4B7F62A"
 			tasks: [{
 				id: "39731B708C69C512"
@@ -1287,7 +1357,14 @@
 		{
 			x: 7.5d
 			y: 3.0d
-			description: ["PLACEHOLDER"]
+			subtitle: "Don't Worry, Bee Happy!"
+			description: [
+				"Bees really don’t care much for the more traditional methods of harvesting honey from their hives as it has a tendency towards being somewhat disruptive. "
+				""
+				"Flow Hives are a more recent invention that allows easy harvesting of honey without disturbing the bees, ensuring they remain healthy and happy, while still being able to enjoy their golden goodness."
+				""
+				"Simply place the Hive Hopper below a Beehive to begin!"
+			]
 			hide_dependency_lines: true
 			dependencies: ["33BF0DD5543C6AB9"]
 			id: "73CB4F8500D722DD"
@@ -1296,14 +1373,22 @@
 				type: "item"
 				item: "thermal:device_hive_extractor"
 			}]
-			rewards: [{
-				id: "4F38DB2711B0BD4F"
-				type: "command"
-				title: "Rare Thermal Series Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_rare"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "4F38DB2711B0BD4F"
+					type: "command"
+					title: "Rare Thermal Series Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_rare"
+					player_command: false
+				}
+				{
+					id: "7DE532DA7E4BC523"
+					type: "item"
+					item: "minecraft:honeycomb"
+					count: 16
+				}
+			]
 		}
 		{
 			x: 3.5d
@@ -1334,7 +1419,12 @@
 		{
 			x: 6.5d
 			y: 9.5d
-			description: ["PLACEHOLDER"]
+			subtitle: "You Rock, Let's Facet!"
+			description: [
+				"Growing crystals is typically just a matter of getting all the right ingredients into the right environment. Like making a cake, forget one ingredient and the whole thing is ruined. "
+				""
+				"The Crystallizer handles the majority of this, just give it the raw materials and I’ll get thing growing in no time. "
+			]
 			hide_dependency_lines: true
 			dependencies: ["0E97D80734FAA130"]
 			id: "257D1F8ADDF06DD0"
@@ -1355,7 +1445,7 @@
 		{
 			x: 3.0d
 			y: 4.0d
-			description: ["PLACEHOLDER"]
+			description: ["With a blade guaranteed for life, this Sawmill will get any cutting job done in no time. "]
 			hide_dependency_lines: true
 			dependencies: ["356D43146EB57E78"]
 			id: "3C1D8B65C1480521"
@@ -1376,7 +1466,12 @@
 		{
 			x: 7.5d
 			y: 8.0d
-			description: ["PLACEHOLDER"]
+			subtitle: "We Flame to Please"
+			description: [
+				"Burning or heating things to change their characteristics is nothing new, of course, but how one goes about it is just as important as the heat itself. In the case of pyrolysis, objects are heated in the absence of oxygen, resulting in an entirely different sort of reaction as compared to simply burning it. "
+				""
+				"Mostly used for obtaining Coal Coke, the byproducts of its use can also be quite useful. "
+			]
 			hide_dependency_lines: true
 			dependencies: ["0E97D80734FAA130"]
 			id: "246FD88197689BB9"
@@ -1406,7 +1501,11 @@
 			x: 2.0d
 			y: 10.5d
 			subtitle: "Sharing tea with a fascinating stranger is one of life's true delights."
-			description: ["PLACEHOLDER"]
+			description: [
+				"When provided Liquid Potions (as made in an Alchemical Imbuer) the Decoctive Diffuser will fill the air with a gentle mist, applying the potion effect to any entities nearby. "
+				""
+				"If there are no entities nearby, nothing happens, and no potion is spent."
+			]
 			hide_dependency_lines: true
 			dependencies: ["764E43AA55120A7A"]
 			id: "68E694C68B4E8B86"
@@ -1415,14 +1514,24 @@
 				type: "item"
 				item: "thermal:device_potion_diffuser"
 			}]
-			rewards: [{
-				id: "577A44EBFEF00B0D"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_epic"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "577A44EBFEF00B0D"
+					type: "command"
+					title: "Epic Thermal Series Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_epic"
+					player_command: false
+				}
+				{
+					id: "253ABFC880CD582B"
+					type: "command"
+					title: "Alchemist's Delight"
+					icon: "kubejs:alchemists_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_alchemists_delight"
+					player_command: false
+				}
+			]
 		}
 		{
 			x: 2.0d
@@ -1749,7 +1858,7 @@
 			tasks: [{
 				id: "5D5E8315CB668294"
 				type: "item"
-				title: "Any #forge:sapling"
+				title: "Any Sapling"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -1883,7 +1992,13 @@
 			x: 7.5d
 			y: 9.0d
 			subtitle: "Why is it that every time you play with magic water, I get soaked?"
-			description: ["PLACEHOLDER"]
+			description: [
+				"An upgrade to the antiquated Brewing Stand, with better heating and larger storage. "
+				""
+				"Liquid Potions may be used in several devices, such Alchemical Quivers or Decoctive Diffusers. "
+				""
+				"The fluid may also be bottled in a Fluid Encapsulator if needed. "
+			]
 			hide_dependency_lines: true
 			dependencies: ["0E97D80734FAA130"]
 			id: "1FAA5C561C2D9F0F"
