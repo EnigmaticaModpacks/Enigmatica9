@@ -4,6 +4,9 @@
     "localizedName": "Falsite",
     "processedTypes": [
         "storage_block",
+        "ore",
+        "raw",
+        "crushed_ore",
         "ingot",
         "nugget"
     ],
