@@ -24,8 +24,8 @@
         "harvestLevel": 2
     },
     "colors": {
-        "materialColor": "f7cd40",
-        "fluidColor": "f7cd40"
+        "materialColor": "fef978",
+        "fluidColor": "fef978"
     },
     "oreDrop": {
         "drop": "emendatusenigmatica:raw_gold",
