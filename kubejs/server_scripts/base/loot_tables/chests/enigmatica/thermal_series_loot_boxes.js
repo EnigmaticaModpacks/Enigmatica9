@@ -27,11 +27,11 @@ ServerEvents.genericLootTables((event) => {
     event.addGeneric('enigmatica:loot_boxes/thermal_series/epic', (table) => {
         table.addPool((pool) => {
             pool.rolls = 2.0;
-            pool.addItem('thermal:rf_coil_xfer_augment', 1, 1);
-            pool.addItem('thermal:machine_speed_augment', 1, 1);
-            pool.addItem('thermal:machine_output_augment', 1, 1);
-            pool.addItem('thermal:dynamo_output_augment', 1, 1);
-            pool.addItem('thermal:dynamo_fuel_augment', 1, 1);
+            pool.addItem('thermal:rf_coil_xfer_augment', 1, [1, 2]);
+            pool.addItem('thermal:machine_speed_augment', 1, [1, 2]);
+            pool.addItem('thermal:machine_output_augment', 1, [1, 2]);
+            pool.addItem('thermal:dynamo_output_augment', 1, [1, 2]);
+            pool.addItem('thermal:dynamo_fuel_augment', 1, [1, 2]);
             pool.addItem('thermal:upgrade_augment_3', 1, 1);
         });
 
