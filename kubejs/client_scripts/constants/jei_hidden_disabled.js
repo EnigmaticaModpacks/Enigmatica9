@@ -93,7 +93,8 @@ jei.base.items.hidden = [
     'twilightforest:minoshroom_boss_spawner',
     'twilightforest:lich_boss_spawner',
     'mekanism:creative_fluid_tank',
-    'mekanism:creative_chemical_tank'
+    'mekanism:creative_chemical_tank',
+    /powah:.*uraninite_ore.*/
 ];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
 
