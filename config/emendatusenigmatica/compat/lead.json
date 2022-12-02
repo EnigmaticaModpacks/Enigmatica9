@@ -1,5 +1,5 @@
 {
-  "id": "copper",
+  "id": "lead",
   "recipes" : [
 	{
 	  "mod": "thermal",
@@ -27,31 +27,31 @@
 		{
 		  "type": "ore",
 		  "output": [
-			{ "item": "emendatusenigmatica:copper_plate", "count": 1, "chance": 0.25 }
+			{ "item": "emendatusenigmatica:lead_plate", "count": 1, "chance": 0.25 }
 		  ]
 		}
 	  ]
 	},
 	{
 	  "mod": "create",
-	  "machine": "crushing",
+	  "machine": "crushing_wheels",
 	  "values": [
 		{
 		  "type": "ore",
 		  "output": [
-			{ "item": "emendatusenigmatica:crushed_copper_ore", "count": 6, "chance": 0.25 }
+			{ "item": "emendatusenigmatica:crushed_lead_ore", "count": 6, "chance": 0.25 }
 		  ]
 		}
 	  ]
 	},
 	{
 	  "mod": "create",
-	  "machine": "splashing",
+	  "machine": "fan_washing",
 	  "values": [
 		{
 		  "type": "crushed_ore",
 		  "output": [
-			{ "item": "emendatusenigmatica:copper_nugget", "count": 3, "chance": 0.65 }
+			{ "item": "emendatusenigmatica:lead_nugget", "count": 3, "chance": 0.65 }
 		  ]
 		}
 	  ]
