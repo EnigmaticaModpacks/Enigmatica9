@@ -181,7 +181,7 @@
 				type: "command"
 				title: "Common Tinkers Loot"
 				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_common"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/common"
 				player_command: false
 			}]
 		}
@@ -205,7 +205,7 @@
 				type: "command"
 				title: "Epic Tinkers Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/epic"
 				player_command: false
 			}]
 		}
@@ -225,7 +225,7 @@
 				type: "command"
 				title: "Legendary Tinkers Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/legendary"
 				player_command: false
 			}]
 		}
@@ -310,7 +310,7 @@
 				type: "command"
 				title: "Common Tinkers Loot"
 				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_common"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/common"
 				player_command: false
 			}]
 		}
@@ -336,7 +336,7 @@
 				type: "command"
 				title: "Common Tinkers Loot"
 				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_common"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/common"
 				player_command: false
 			}]
 		}
@@ -368,7 +368,7 @@
 				type: "command"
 				title: "Common Tinkers Loot"
 				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_common"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/common"
 				player_command: false
 			}]
 		}
@@ -388,7 +388,7 @@
 				type: "command"
 				title: "Common Tinkers Loot"
 				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_common"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/common"
 				player_command: false
 			}]
 		}
@@ -408,7 +408,7 @@
 				type: "command"
 				title: "Common Tinkers Loot"
 				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_common"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/common"
 				player_command: false
 			}]
 		}
@@ -437,7 +437,7 @@
 					type: "command"
 					title: "Rare Tinkers Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/rare"
 					player_command: false
 				}
 			]
@@ -504,7 +504,7 @@
 				type: "command"
 				title: "Rare Tinkers Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/rare"
 				player_command: false
 			}]
 		}
@@ -594,7 +594,7 @@
 					type: "command"
 					title: "Rare Tinkers Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/rare"
 					player_command: false
 				}
 			]
@@ -620,7 +620,7 @@
 				type: "command"
 				title: "Rare Tinkers Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/rare"
 				player_command: false
 			}]
 		}
@@ -661,7 +661,7 @@
 					type: "command"
 					title: "Rare Tinkers Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/rare"
 					player_command: false
 				}
 			]
@@ -682,7 +682,7 @@
 				type: "command"
 				title: "Rare Tinkers Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/rare"
 				player_command: false
 			}]
 		}
@@ -731,7 +731,7 @@
 				type: "command"
 				title: "Tinkers Epic Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/epic"
 				player_command: false
 			}]
 		}
@@ -770,7 +770,7 @@
 				type: "command"
 				title: "Epic Tinkers Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/epic"
 				player_command: false
 			}]
 		}
@@ -930,7 +930,7 @@
 				type: "command"
 				title: "Epic Tinkers Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/epic"
 				player_command: false
 			}]
 		}
@@ -1076,7 +1076,7 @@
 				type: "command"
 				title: "Epic Tinkers Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/epic"
 				player_command: false
 			}]
 		}
@@ -1230,7 +1230,7 @@
 				type: "command"
 				title: "Epic Tinkers Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/epic"
 				player_command: false
 			}]
 		}
@@ -1390,7 +1390,7 @@
 				type: "command"
 				title: "Epic Tinkers Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/epic"
 				player_command: false
 			}]
 		}
@@ -1562,7 +1562,7 @@
 				type: "command"
 				title: "Epic Tinkers Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/epic"
 				player_command: false
 			}]
 		}
@@ -1706,7 +1706,7 @@
 				type: "command"
 				title: "Epic Tinkers Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/epic"
 				player_command: false
 			}]
 		}
@@ -1858,7 +1858,7 @@
 				type: "command"
 				title: "Common Tinkers Loot"
 				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_common"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/common"
 				player_command: false
 			}]
 		}
@@ -1999,7 +1999,7 @@
 				type: "command"
 				title: "Common Tinkers Loot"
 				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_common"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/common"
 				player_command: false
 			}]
 		}
@@ -2150,7 +2150,7 @@
 				type: "command"
 				title: "Common Tinkers Loot"
 				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_common"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/common"
 				player_command: false
 			}]
 		}
@@ -2285,7 +2285,7 @@
 				type: "command"
 				title: "Common Tinkers Loot"
 				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_common"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/common"
 				player_command: false
 			}]
 		}
@@ -2436,7 +2436,7 @@
 				type: "command"
 				title: "Common Tinkers Loot"
 				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_common"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/common"
 				player_command: false
 			}]
 		}
@@ -2583,7 +2583,7 @@
 				type: "command"
 				title: "Common Tinkers Loot"
 				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_common"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/common"
 				player_command: false
 			}]
 		}
@@ -2618,7 +2618,7 @@
 				type: "command"
 				title: "Common Tinkers Loot"
 				icon: "kubejs:common_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_common"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/common"
 				player_command: false
 			}]
 		}
@@ -2750,7 +2750,7 @@
 				type: "command"
 				title: "Epic Tinkers Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/epic"
 				player_command: false
 			}]
 		}
@@ -2773,7 +2773,7 @@
 				type: "command"
 				title: "Rare Tinkers Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/rare"
 				player_command: false
 			}]
 		}
@@ -2796,7 +2796,7 @@
 				type: "command"
 				title: "Rare Tinkers Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/rare"
 				player_command: false
 			}]
 		}
@@ -2819,7 +2819,7 @@
 				type: "command"
 				title: "Epic Tinkers Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/epic"
 				player_command: false
 			}]
 		}
@@ -2842,7 +2842,7 @@
 				type: "command"
 				title: "Epic Tinkers Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/epic"
 				player_command: false
 			}]
 		}
@@ -2863,7 +2863,7 @@
 				type: "command"
 				title: "Rare Tinkers Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/rare"
 				player_command: false
 			}]
 		}
@@ -2929,7 +2929,7 @@
 				type: "command"
 				title: "Legendary Tinkers Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/legendary"
 				player_command: false
 			}]
 		}
@@ -2977,7 +2977,7 @@
 				type: "command"
 				title: "Legendary Tinkers Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/legendary"
 				player_command: false
 			}]
 		}
@@ -3020,7 +3020,7 @@
 				type: "command"
 				title: "Legendary Tinkers Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/legendary"
 				player_command: false
 			}]
 		}
@@ -3048,7 +3048,7 @@
 				type: "command"
 				title: "Epic Tinkers Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/epic"
 				player_command: false
 			}]
 		}
@@ -3069,7 +3069,7 @@
 				type: "command"
 				title: "Epic Tinkers Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/epic"
 				player_command: false
 			}]
 		}
@@ -3090,7 +3090,7 @@
 				type: "command"
 				title: "Epic Tinkers Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/epic"
 				player_command: false
 			}]
 		}
@@ -3139,7 +3139,7 @@
 				type: "command"
 				title: "Legendary Tinkers Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/legendary"
 				player_command: false
 			}]
 		}
@@ -3161,7 +3161,7 @@
 				type: "command"
 				title: "Legendary Tinkers Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/legendary"
 				player_command: false
 			}]
 		}
@@ -3183,7 +3183,7 @@
 				type: "command"
 				title: "Legendary Tinkers Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/legendary"
 				player_command: false
 			}]
 		}
@@ -3233,7 +3233,7 @@
 				type: "command"
 				title: "Epic Tinkers Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/epic"
 				player_command: false
 			}]
 		}
@@ -3262,7 +3262,7 @@
 				type: "command"
 				title: "Epic Tinkers Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/epic"
 				player_command: false
 			}]
 		}
@@ -3302,7 +3302,7 @@
 				type: "command"
 				title: "Legendary Tinkers Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/legendary"
 				player_command: false
 			}]
 		}
@@ -3332,7 +3332,7 @@
 					type: "command"
 					title: "Legendary Tinkers Loot Box"
 					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_legendary"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/legendary"
 					player_command: false
 				}
 			]
@@ -3385,7 +3385,7 @@
 				type: "command"
 				title: "Legendary Tinkers Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/legendary"
 				player_command: false
 			}]
 		}
@@ -3411,7 +3411,7 @@
 				type: "command"
 				title: "Legendary Tinkers Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/legendary"
 				player_command: false
 			}]
 		}
@@ -3438,7 +3438,7 @@
 				type: "command"
 				title: "Rare Tinkers Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/rare"
 				player_command: false
 			}]
 		}
@@ -3479,7 +3479,7 @@
 				type: "command"
 				title: "Rare Tinkers Loot Chest"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/rare"
 				player_command: false
 			}]
 		}
@@ -3512,7 +3512,7 @@
 				type: "command"
 				title: "Epic Tinkers Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/epic"
 				player_command: false
 			}]
 		}
@@ -3550,7 +3550,7 @@
 				type: "command"
 				title: "Rare Tinkers Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/rare"
 				player_command: false
 			}]
 		}
@@ -3572,7 +3572,7 @@
 				type: "command"
 				title: "Rare Tinkers Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/rare"
 				player_command: false
 			}]
 		}
@@ -3594,7 +3594,7 @@
 				type: "command"
 				title: "Legendary Tinkers Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_tinkers_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/tinkers/legendary"
 				player_command: false
 			}]
 		}
