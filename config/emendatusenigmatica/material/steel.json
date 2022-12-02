@@ -1,0 +1,22 @@
+{
+    "id": "steel",
+    "source": "modded",
+    "localizedName": "Steel",
+    "processedTypes": [
+        "storage_block",
+        "ingot",
+        "nugget",
+        "dust",
+        "plate",
+        "rod",
+        "gear"
+    ],
+    "properties": {
+        "materialType": "alloy",
+        "harvestLevel": 2
+    },
+    "colors": {
+        "materialColor": "a2a8ab",
+        "fluidColor": "a2a8ab"
+    }
+}

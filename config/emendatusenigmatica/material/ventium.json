@@ -1,0 +1,18 @@
+{
+    "id": "ventium",
+    "source": "modded",
+    "localizedName": "Ventium",
+    "processedTypes": [
+        "storage_block",
+        "ingot",
+        "nugget"
+    ],
+    "properties": {
+        "materialType": "alloy",
+        "harvestLevel": 2
+    },
+    "colors": {
+        "materialColor": "a2a8ab",
+        "fluidColor": "a2a8ab"
+    }
+}
