@@ -8,7 +8,7 @@
         "nugget"
     ],
     "properties": {
-        "materialType": "alloy",
+        "materialType": "metal",
         "harvestLevel": 2
     },
     "colors": {
