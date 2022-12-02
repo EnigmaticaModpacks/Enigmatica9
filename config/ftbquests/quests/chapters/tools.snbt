@@ -3,7 +3,7 @@
 	group: "74B3CF67FCEAB20F"
 	order_index: 0
 	filename: "tools"
-	title: "Tools and Armor"
+	title: "Miscellaneous Equipment"
 	icon: {
 		id: "minecraft:netherite_pickaxe"
 		Count: 1b
@@ -16,8 +16,8 @@
 	quests: [
 		{
 			title: "Tools and Armor"
-			x: -5.5d
-			y: -7.5d
+			x: -10.0d
+			y: -12.5d
 			shape: "gear"
 			description: [
 				"Many mods add a variety of very useful tools that can be easy to overlook. These quests won't cover everything, but will serve to highlight some of the more notable mentions."
@@ -353,8 +353,8 @@
 			]
 		}
 		{
-			x: -5.5d
-			y: -13.0d
+			x: -10.0d
+			y: -14.0d
 			shape: "gear"
 			description: [
 				"Always searching for the right tool for the job? Is this one in Metric? Imperial? And where did that flat head screwdriver get off to anyways?"
@@ -387,8 +387,8 @@
 			}]
 		}
 		{
-			x: -5.5d
-			y: -8.5d
+			x: -10.0d
+			y: -15.0d
 			description: ["used to hide all broken quests in this chapter. "]
 			dependencies: ["2AECF726E9E2D41B"]
 			hide: true
