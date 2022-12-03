@@ -65,6 +65,10 @@ ServerEvents.recipes((event) => {
 
         { id: 'thermal:fuels/gourmand/gourmand_tomato_block' },
         { id: 'thermal:fuels/gourmand/gourmand_onion_block' },
+        { id: 'thermal:smelting/cured_rubber_from_smelting' },
+        { id: 'thermal:rubber_3' },
+        { id: 'thermal:rubber_from_vine' },
+        { id: 'thermal:rubber_from_dandelion' },
 
         { type: 'create:cutting' },
 
