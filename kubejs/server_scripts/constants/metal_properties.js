@@ -1,8 +1,5 @@
 //priority: 1010
 
-// Used for correcting tags for Blue Skies materials
-const blueSkiesMetals = ['falsite', 'ventium', 'horizonite'];
-
 // Properties for Metal processing
 const metal_properties = {
     iron: {
