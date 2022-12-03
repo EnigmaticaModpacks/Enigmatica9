@@ -52,7 +52,13 @@ jei.base.items.disabled = [
     'thermal:tomato',
     'thermal:tomato_block',
     'thermal:tomato_seeds',
-    'industrialforegoing:dryrubber'
+    'industrialforegoing:dryrubber',
+    'thermal:latex_bucket',
+    'thermal:creosote_bucket',
+    'thermal:crude_oil_bucket',
+    'thermal:heavy_oil_bucket',
+    'thermal:light_oil_bucket',
+    'thermal:refined_fuel_bucket'
 ];
 jei.base.items.hidden = [
     'kubejs:altered_recipe_indicator',
@@ -92,7 +98,14 @@ jei.base.items.hidden = [
     'twilightforest:minoshroom_boss_spawner',
     'twilightforest:lich_boss_spawner'
 ];
-jei.base.fluids.hidden = ['thermal:creosote', 'thermal:crude_oil', 'thermal:latex'];
+jei.base.fluids.hidden = [
+    'thermal:latex',
+    'thermal:creosote',
+    'thermal:crude_oil',
+    'thermal:heavy_oil',
+    'thermal:light_oil',
+    'thermal:refined_fuel'
+];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
 
 // Normal

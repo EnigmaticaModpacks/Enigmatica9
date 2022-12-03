@@ -50,25 +50,26 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:storage/rice_from_block' },
         { id: 'thermal:storage/onion_from_block' },
         { id: 'thermal:storage/hops_from_block' },
-
         { id: 'thermal:machines/press/press_tomato_packing' },
         { id: 'thermal:machines/press/press_flax_packing' },
         { id: 'thermal:machines/press/press_rice_packing' },
         { id: 'thermal:machines/press/press_onion_packing' },
         { id: 'thermal:machines/press/press_hops_packing' },
-
         { id: 'thermal:machines/press/press_tomato_unpacking' },
         { id: 'thermal:machines/press/press_flax_unpacking' },
         { id: 'thermal:machines/press/press_rice_unpacking' },
         { id: 'thermal:machines/press/press_onion_unpacking' },
         { id: 'thermal:machines/press/press_hops_unpacking' },
-
         { id: 'thermal:fuels/gourmand/gourmand_tomato_block' },
         { id: 'thermal:fuels/gourmand/gourmand_onion_block' },
         { id: 'thermal:smelting/cured_rubber_from_smelting' },
         { id: 'thermal:rubber_3' },
         { id: 'thermal:rubber_from_vine' },
         { id: 'thermal:rubber_from_dandelion' },
+        { id: 'thermal:machines/refinery/refinery_crude_oil' },
+        { id: 'thermal:machines/refinery/refinery_heavy_oil' },
+        { id: 'thermal:machines/refinery/refinery_light_oil' },
+        { id: 'thermal:machines/pyrolyzer/pyrolyzer_bitumen' },
 
         { type: 'create:cutting' },
 
@@ -80,6 +81,7 @@ ServerEvents.recipes((event) => {
         { type: 'thermal:sawmill' },
         { type: 'thermal:pulverizer_recycle' },
         { type: 'thermal:insolator' },
+        { type: 'thermal:compression_fuel' },
 
         { mod: 'gateways' }
     ];

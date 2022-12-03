@@ -105,14 +105,6 @@
 			}]
 			rewards: [
 				{
-					id: "00000000000004BA"
-					type: "item"
-					title: "Jungle Sapling"
-					auto: "disabled"
-					item: "minecraft:jungle_sapling"
-					count: 4
-				}
-				{
 					id: "00000000000004F0"
 					type: "command"
 					title: "Rare Thermal Series Loot Box"
@@ -125,6 +117,12 @@
 					type: "item"
 					title: "Acacia Sapling"
 					item: "minecraft:acacia_sapling"
+					count: 4
+				}
+				{
+					id: "5BEC1C619BA5005F"
+					type: "item"
+					item: "minecraft:jungle_sapling"
 					count: 4
 				}
 			]

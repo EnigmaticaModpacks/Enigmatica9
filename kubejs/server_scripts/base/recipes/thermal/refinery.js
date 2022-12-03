@@ -3,7 +3,6 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            type: 'thermal:refinery',
             input: { fluid: 'industrialforegoing:latex', amount: 900 },
             outputs: [
                 { fluid: 'minecraft:water', amount: 100 },
@@ -11,6 +10,33 @@ ServerEvents.recipes((event) => {
             ],
             energy: 6000,
             id: `${id_prefix}rubber`
+        },
+        {
+            input: { fluid: 'pneumaticcraft:oil', amount: 100 },
+            outputs: [
+                { fluid: 'pneumaticcraft:diesel', amount: 50 },
+                { fluid: 'pneumaticcraft:gasoline', amount: 30 }
+            ],
+            energy: 7000,
+            id: `${id_prefix}oil_to_diesel_and_lpg`
+        },
+        {
+            input: { fluid: 'pneumaticcraft:diesel', amount: 100 },
+            outputs: [{ fluid: 'pneumaticcraft:kerosene', amount: 80 }],
+            energy: 7000,
+            id: `${id_prefix}diesel_to_kerosene`
+        },
+        {
+            input: { fluid: 'pneumaticcraft:kerosene', amount: 100 },
+            outputs: [{ fluid: 'pneumaticcraft:gasoline', amount: 80 }],
+            energy: 7000,
+            id: `${id_prefix}kerosene_to_gasoline`
+        },
+        {
+            input: { fluid: 'pneumaticcraft:gasoline', amount: 100 },
+            outputs: [{ fluid: 'pneumaticcraft:lpg', amount: 80 }],
+            energy: 7000,
+            id: `${id_prefix}gasoline_to_lpg`
         }
     ];
 

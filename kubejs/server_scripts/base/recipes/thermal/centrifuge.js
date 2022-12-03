@@ -31,6 +31,24 @@ ServerEvents.recipes((event) => {
             ],
             energy: 20000,
             id: 'thermal:machines/centrifuge/centrifuge_oil_sand'
+        },
+        {
+            input: Ingredient.of('#forge:bitumen'),
+            outputs: [
+                { item: 'thermal:tar', chance: 0.5 },
+                { fluid: 'pneumaticcraft:oil', amount: 50 }
+            ],
+            energy: 20000,
+            id: `${id_prefix}oil_from_bitumen`
+        },
+        {
+            input: Ingredient.of('#forge:fuels/bio'),
+            outputs: [
+                { item: 'thermal:compost', chance: 0.5 },
+                { fluid: 'mekanismgenerators:bioethanol', amount: 200 }
+            ],
+            energy: 1600,
+            id: `${id_prefix}bioethanol`
         }
     ];
 
