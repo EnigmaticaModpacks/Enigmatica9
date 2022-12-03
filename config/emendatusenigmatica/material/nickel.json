@@ -22,8 +22,8 @@
         "harvestLevel": 2
     },
     "colors": {
-        "materialColor": "bec4b1",
-        "fluidColor": "bec4b1"
+        "materialColor": "b0a075",
+        "fluidColor": "b0a075"
     },
     "oreDrop": {
         "drop": "emendatusenigmatica:raw_nickel",
