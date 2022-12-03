@@ -1,7 +1,7 @@
 {
     "id": "tainted_gold",
     "source": "modded",
-    "localizedName": "Tainted",
+    "localizedName": "Tainted Gold",
     "processedTypes": [
         "storage_block",
         "ingot"
