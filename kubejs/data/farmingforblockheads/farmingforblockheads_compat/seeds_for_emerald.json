@@ -15,18 +15,13 @@
         { "output": "thermal:bell_pepper_seeds" },
         { "output": "thermal:corn_seeds" },
         { "output": "thermal:eggplant_seeds" },
-        { "output": "thermal:flax_seeds" },
         { "output": "thermal:frost_melon_seeds" },
         { "output": "thermal:green_bean_seeds" },
-        { "output": "thermal:hops_seeds" },
-        { "output": "thermal:onion_seeds" },
         { "output": "thermal:peanut_seeds" },
         { "output": "thermal:radish_seeds" },
-        { "output": "thermal:rice_seeds" },
         { "output": "thermal:sadiroot_seeds" },
         { "output": "thermal:spinach_seeds" },
         { "output": "thermal:strawberry_seeds" },
-        { "output": "thermal:tea_seeds" },
-        { "output": "thermal:tomato_seeds" }
+        { "output": "thermal:tea_seeds" }
     ]
 }

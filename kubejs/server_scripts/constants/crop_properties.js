@@ -379,14 +379,14 @@ crop_properties.fiber_crops.crops = [
         render: { type: 'crop', block: 'supplementaries:flax' },
         plant: 'supplementaries:flax',
         substrate: 'dirt'
-    },
-    // Thermal Series
-    {
-        seed: 'thermal:flax_seeds',
-        render: { type: 'crop', block: 'thermal:flax' },
-        plant: 'thermal:flax',
-        substrate: 'dirt'
     }
+    // Thermal Series
+    // {
+    //     seed: 'thermal:flax_seeds',
+    //     render: { type: 'crop', block: 'thermal:flax' },
+    //     plant: 'thermal:flax',
+    //     substrate: 'dirt'
+    // }
 ];
 
 crop_properties.fruit_crops.crops = [
@@ -479,13 +479,13 @@ crop_properties.grain_crops.crops = [
         render: { type: 'crop', block: 'thermal:corn' },
         plant: 'thermal:corn',
         substrate: 'dirt'
-    },
-    {
-        seed: 'thermal:rice_seeds',
-        render: { type: 'crop', block: 'thermal:rice' },
-        plant: 'thermal:rice',
-        substrate: 'dirt'
     }
+    // {
+    //     seed: 'thermal:rice_seeds',
+    //     render: { type: 'crop', block: 'thermal:rice' },
+    //     plant: 'thermal:rice',
+    //     substrate: 'dirt'
+    // }
 ];
 crop_properties.leafy_crops.crops = [
     // Farmer's Delight
@@ -582,12 +582,12 @@ crop_properties.root_crops.crops = [
         plant: 'thermal:peanut',
         substrate: 'dirt'
     },
-    {
-        seed: 'thermal:onion_seeds',
-        render: { type: 'crop', block: 'thermal:onion' },
-        plant: 'thermal:onion',
-        substrate: 'dirt'
-    },
+    // {
+    //     seed: 'thermal:onion_seeds',
+    //     render: { type: 'crop', block: 'thermal:onion' },
+    //     plant: 'thermal:onion',
+    //     substrate: 'dirt'
+    // },
     {
         seed: 'thermal:radish_seeds',
         render: { type: 'crop', block: 'thermal:radish' },
@@ -611,12 +611,12 @@ crop_properties.vine_crops.crops = [
         substrate: 'dirt'
     },
     // Thermal Series
-    {
-        seed: 'thermal:tomato_seeds',
-        render: { type: 'crop', block: 'thermal:tomato' },
-        plant: 'thermal:tomato',
-        substrate: 'dirt'
-    },
+    // {
+    //     seed: 'thermal:tomato_seeds',
+    //     render: { type: 'crop', block: 'thermal:tomato' },
+    //     plant: 'thermal:tomato',
+    //     substrate: 'dirt'
+    // },
     {
         seed: 'thermal:bell_pepper_seeds',
         render: { type: 'crop', block: 'thermal:bell_pepper' },

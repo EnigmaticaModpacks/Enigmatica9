@@ -36,7 +36,22 @@ jei.base.items.disabled = [
     'mekanism:advanced_bin',
     'mekanism:basic_bin',
     'immersiveengineering:blast_furnace',
-    'immersiveengineering:alloy_smelter'
+    'immersiveengineering:alloy_smelter',
+    'thermal:flax',
+    'thermal:flax_block',
+    'thermal:flax_seeds',
+    'thermal:hops',
+    'thermal:hops_block',
+    'thermal:hops_seeds',
+    'thermal:onion',
+    'thermal:onion_block',
+    'thermal:onion_seeds',
+    'thermal:rice',
+    'thermal:rice_block',
+    'thermal:rice_seeds',
+    'thermal:tomato',
+    'thermal:tomato_block',
+    'thermal:tomato_seeds'
 ];
 jei.base.items.hidden = [
     'kubejs:altered_recipe_indicator',

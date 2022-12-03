@@ -8,14 +8,18 @@ ServerEvents.recipes((event) => {
         //     id: 'sample'
         // }
         { id: /ars_nouveau:.*_dye/ },
+
         { id: /mekanism:enriching\/dye/ },
         { id: /mekanism:compat\/byg\/dye/ },
         { id: /mekanism:compat\/byg\/sawing\/log/ },
         { id: /mekanism:sawing\/log/ },
         { id: /mekanism:compat\/byg\/combining\/.*_ore_/ },
         { id: /mekanism:bin\/.*/ },
+
         { id: 'quark:tweaks/smelting/bone_meal_utility' },
+
         { id: 'create:compat/ae2/mixing/fluix_crystal' },
+
         { id: 'thermal:machines/centrifuge/centrifuge_allium' },
         { id: 'thermal:machines/centrifuge/centrifuge_azure_bluet' },
         { id: 'thermal:machines/centrifuge/centrifuge_blue_orchid' },
@@ -35,14 +39,44 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:machines/centrifuge/centrifuge_wither_rose' },
         { id: 'thermal:rockwool/white_rockwool_from_smelting' },
         { id: 'thermal:machines/smelter/smelter_gravel' },
+        { id: 'thermal:storage/tomato_block' },
+        { id: 'thermal:storage/flax_block' },
+        { id: 'thermal:storage/rice_block' },
+        { id: 'thermal:storage/onion_block' },
+        { id: 'thermal:storage/hops_block' },
+
+        { id: 'thermal:storage/tomato_from_block' },
+        { id: 'thermal:storage/flax_from_block' },
+        { id: 'thermal:storage/rice_from_block' },
+        { id: 'thermal:storage/onion_from_block' },
+        { id: 'thermal:storage/hops_from_block' },
+
+        { id: 'thermal:machines/press/press_tomato_packing' },
+        { id: 'thermal:machines/press/press_flax_packing' },
+        { id: 'thermal:machines/press/press_rice_packing' },
+        { id: 'thermal:machines/press/press_onion_packing' },
+        { id: 'thermal:machines/press/press_hops_packing' },
+
+        { id: 'thermal:machines/press/press_tomato_unpacking' },
+        { id: 'thermal:machines/press/press_flax_unpacking' },
+        { id: 'thermal:machines/press/press_rice_unpacking' },
+        { id: 'thermal:machines/press/press_onion_unpacking' },
+        { id: 'thermal:machines/press/press_hops_unpacking' },
+
+        { id: 'thermal:fuels/gourmand/gourmand_tomato_block' },
+        { id: 'thermal:fuels/gourmand/gourmand_onion_block' },
+
         { type: 'create:cutting' },
+
         { type: 'immersiveengineering:sawmill' },
         { type: 'immersiveengineering:cloche' },
         { type: 'immersiveengineering:generated_list' },
         { type: 'immersiveengineering:alloy' },
+
         { type: 'thermal:sawmill' },
         { type: 'thermal:pulverizer_recycle' },
         { type: 'thermal:insolator' },
+
         { mod: 'gateways' }
     ];
 
