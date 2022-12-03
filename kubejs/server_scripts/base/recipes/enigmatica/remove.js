@@ -42,6 +42,7 @@ ServerEvents.recipes((event) => {
         { type: 'immersiveengineering:alloy' },
         { type: 'thermal:sawmill' },
         { type: 'thermal:pulverizer_recycle' },
+        { type: 'thermal:insolator' },
         { mod: 'gateways' }
     ];
 
