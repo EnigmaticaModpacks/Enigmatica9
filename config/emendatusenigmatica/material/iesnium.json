@@ -1,0 +1,21 @@
+{
+    "id": "iesnium",
+    "source": "modded",
+    "localizedName": "Iesnium",
+    "processedTypes": [
+        "storage_block",
+        "raw",
+        "crushed_ore",
+        "ingot",
+        "nugget",
+        "dust"
+    ],
+    "properties": {
+        "materialType": "metal",
+        "harvestLevel": 2
+    },
+    "colors": {
+        "materialColor": "56a7b9",
+        "fluidColor": "56a7b9"
+    }
+}
