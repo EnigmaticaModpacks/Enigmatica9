@@ -23,8 +23,8 @@
         "harvestLevel": 2
     },
     "colors": {
-        "materialColor": "b6bcbf",
-        "fluidColor": "b6bcbf"
+        "materialColor": "a2a8ab",
+        "fluidColor": "a2a8ab"
     },
     "oreDrop": {
         "drop": "emendatusenigmatica:raw_aluminum",
