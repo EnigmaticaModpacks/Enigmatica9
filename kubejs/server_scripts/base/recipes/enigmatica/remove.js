@@ -20,7 +20,8 @@ ServerEvents.recipes((event) => {
         { type: 'immersiveengineering:cloche' },
         { type: 'immersiveengineering:generated_list' },
         { type: 'immersiveengineering:alloy' },
-        { mod: 'gateways' }
+        { mod: 'gateways' },
+        { id: "create:compat/byg/crushing/lignite_ore"},
     ];
 
     colors.forEach((color) => {
