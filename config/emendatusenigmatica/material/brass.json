@@ -7,7 +7,9 @@
         "ingot",
         "nugget",
         "dust",
-        "plate"
+        "plate",
+        "rod",
+        "gear"
     ],
     "properties": {
         "materialType": "alloy",
