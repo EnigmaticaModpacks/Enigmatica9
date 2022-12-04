@@ -19,6 +19,7 @@ ServerEvents.recipes((event) => {
         { id: 'quark:tweaks/smelting/bone_meal_utility' },
 
         { id: 'create:compat/ae2/mixing/fluix_crystal' },
+        { id: "create:compat/byg/crushing/lignite_ore"},
 
         { id: 'thermal:machines/centrifuge/centrifuge_allium' },
         { id: 'thermal:machines/centrifuge/centrifuge_azure_bluet' },
@@ -77,12 +78,12 @@ ServerEvents.recipes((event) => {
         { type: 'immersiveengineering:cloche' },
         { type: 'immersiveengineering:generated_list' },
         { type: 'immersiveengineering:alloy' },
+
         { type: 'thermal:sawmill' },
         { type: 'thermal:pulverizer_recycle' },
         { type: 'thermal:insolator' },
         { type: 'thermal:compression_fuel' },
         { mod: 'gateways' },
-        { id: "create:compat/byg/crushing/lignite_ore"},
     ];
 
     colors.forEach((color) => {
