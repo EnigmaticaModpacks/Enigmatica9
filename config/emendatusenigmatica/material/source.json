@@ -1,0 +1,17 @@
+{
+    "id": "source",
+    "source": "modded",
+    "localizedName": "Source",
+    "processedTypes": [
+      "storage_block",
+      "gem"
+    ],
+    "properties": {
+      "materialType": "gem",
+      "harvestLevel": 2,
+      "blockRecipeType": 4
+    },
+    "colors": {
+      "materialColor": "dd7ee0"
+    }
+  }
