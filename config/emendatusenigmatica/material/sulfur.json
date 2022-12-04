@@ -1,0 +1,19 @@
+{
+    "id": "sulfur",
+    "source": "modded",
+    "localizedName": "Sulfur",
+    "processedTypes": [
+        "ore",
+        "storage_block",
+        "gem",
+        "dust"
+    ],
+    "properties": {
+        "materialType": "gem",
+        "harvestLevel": 2,
+        "blockRecipeType": 9
+    },
+    "colors": {
+        "materialColor": "ffea47"
+    }
+}

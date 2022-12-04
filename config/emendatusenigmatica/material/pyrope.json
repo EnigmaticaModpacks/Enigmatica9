@@ -1,0 +1,18 @@
+{
+    "id": "pyrope",
+    "source": "modded",
+    "localizedName": "Pyrope",
+    "processedTypes": [
+        "ore",
+        "storage_block",
+        "gem"
+    ],
+    "properties": {
+        "materialType": "gem",
+        "harvestLevel": 2,
+        "blockRecipeType": 9
+    },
+    "colors": {
+        "materialColor": "b31c34"
+    }
+}

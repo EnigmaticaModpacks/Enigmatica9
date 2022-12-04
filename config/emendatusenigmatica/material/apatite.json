@@ -10,7 +10,7 @@
     ],
     "properties": {
       "materialType": "gem",
-      "harvestLevel": 0,
+      "harvestLevel": 1,
       "blockRecipeType": 9
     },
     "oreDrop": {
@@ -21,4 +21,4 @@
     "colors": {
       "materialColor": "27abbd"
     }
-  }
+}
