@@ -98,9 +98,12 @@
     "uranium",
     "ventium",
     "wood",
-    "zinc"
+    "zinc",
+    "quartz"
   ],
-  "priorityOverrides": {},
+  "priorityOverrides": {
+    "forge:dusts/redstone": "minecraft"
+  },
   "ignoredTags": [],
   "ignoredItems": [],
   "ignoredRecipeTypes": [
