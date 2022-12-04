@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: '#blue_skies:vines',
-                B: '#blue_skies:gems/moonstone',
+                B: '#forge:gems/moonstone',
                 C: '#forge:compasses'
             },
             id: `explorerscompass:explorers_compass`
