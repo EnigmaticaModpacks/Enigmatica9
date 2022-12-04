@@ -4,9 +4,29 @@ _Using Forge-1.19.2-43.1.57_ | _[Mod Updates](https://github.com/EnigmaticaModpa
 
 **New Mods**
 
+-   [CoFH Core](https://www.curseforge.com/minecraft/mc-mods/cofh-core) (by [TeamCoFH](https://www.curseforge.com/members/TeamCoFH/projects))
+-   [Thermal Cultivation](https://www.curseforge.com/minecraft/mc-mods/thermal-cultivation) (by [TeamCoFH](https://www.curseforge.com/members/TeamCoFH/projects))
+-   [Thermal Expansion](https://www.curseforge.com/minecraft/mc-mods/thermal-expansion) (by [TeamCoFH](https://www.curseforge.com/members/TeamCoFH/projects))
+-   [Thermal Foundation](https://www.curseforge.com/minecraft/mc-mods/thermal-foundation) (by [TeamCoFH](https://www.curseforge.com/members/TeamCoFH/projects))
+-   [Thermal Innovation](https://www.curseforge.com/minecraft/mc-mods/thermal-innovation) (by [TeamCoFH](https://www.curseforge.com/members/TeamCoFH/projects))
+-   [Thermal Integration](https://www.curseforge.com/minecraft/mc-mods/thermal-integration) (by [TeamCoFH](https://www.curseforge.com/members/TeamCoFH/projects))
+-   [Thermal Locomotion](https://www.curseforge.com/minecraft/mc-mods/thermal-locomotion) (by [TeamCoFH](https://www.curseforge.com/members/TeamCoFH/projects))
+
 **Improvements**
 
+-   ... maybe fix the tag scripts breaking? [\#140](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/140) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Reinstate Dye Mixing Recipes [\#139](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/139) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Create Quest update [\#137](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/137) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Apotheosis - reduce drop rates [\#134](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/134) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Make Forsaken Knights slightly less common [\#133](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/133) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Adjust Cave Creeper and Stoneling Loot Tables [\#132](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/132) ([MuteTiefling](https://github.com/MuteTiefling))
+
 **Fixed Bugs**
+
+-   upgrade from 1.0.2 server to 1.1.1 server breaks purification chamber in mekanism for ore trippling [\#129](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/129)
+-   Occultism Old Edition book duping [\#89](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/89)
+-   Kubejs script error [\#147](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/147)
+-   Cyan dye missing vanilla recipe [\#138](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/138)
 
 ---
 
