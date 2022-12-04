@@ -3,7 +3,7 @@
 	group: "74B3CF67FCEAB20F"
 	order_index: 0
 	filename: "tools"
-	title: "Tools and Armor"
+	title: "Miscellaneous Equipment"
 	icon: {
 		id: "minecraft:netherite_pickaxe"
 		Count: 1b
@@ -16,8 +16,8 @@
 	quests: [
 		{
 			title: "Tools and Armor"
-			x: -5.5d
-			y: -7.5d
+			x: -10.0d
+			y: -12.5d
 			shape: "gear"
 			description: [
 				"Many mods add a variety of very useful tools that can be easy to overlook. These quests won't cover everything, but will serve to highlight some of the more notable mentions."
@@ -127,7 +127,7 @@
 					type: "command"
 					title: "Scavenger's Delight"
 					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					player_command: false
 				}
 			]
@@ -148,7 +148,7 @@
 				type: "command"
 				title: "Miner's Delight"
 				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
 				player_command: false
 			}]
 		}
@@ -175,7 +175,7 @@
 					type: "command"
 					title: "Scavenger's Delight"
 					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					player_command: false
 				}
 			]
@@ -196,7 +196,7 @@
 				type: "command"
 				title: "Miner's Delight"
 				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
 				player_command: false
 			}]
 		}
@@ -216,272 +216,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
-			x: -6.0d
-			y: -12.0d
-			subtitle: "Guaranteed to Satisfy"
-			description: [
-				"A powered drill that makes short work of any digging task. Use a Tinker's Workbench to install various upgrades:"
-				""
-				"● Integral Component "
-				"● RF Coil"
-				"● Radial Enhancement"
-			]
-			hide_dependency_lines: true
-			dependencies: [
-				"00000000000004A3"
-				"344C70665D93192C"
-			]
-			hide: true
-			id: "0000000000000490"
-			tasks: [{
-				id: "0000000000000491"
-				type: "item"
-				item: "thermal:flux_drill"
-			}]
-			rewards: [
-				{
-					id: "0000000000000657"
-					type: "command"
-					title: "Epic Thermal Series Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_epic"
-					player_command: false
-				}
-				{
-					id: "0000000000000865"
-					type: "command"
-					title: "Miner's Delight"
-					icon: "kubejs:miners_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_miners_delight"
-					player_command: false
-				}
-			]
-		}
-		{
-			x: -5.0d
-			y: -12.0d
-			subtitle: "You Try to Hold Me But I Bust Through"
-			description: [
-				"A powered saw that makes short work of any arboreal task. Use a Tinker's Workbench to install various upgrades:"
-				""
-				"● Integral Component "
-				"● RF Coil"
-				"● Radial Enhancement"
-			]
-			hide_dependency_lines: true
-			dependencies: [
-				"00000000000004A3"
-				"344C70665D93192C"
-			]
-			hide: true
-			id: "0000000000000492"
-			tasks: [{
-				id: "0000000000000493"
-				type: "item"
-				item: "thermal:flux_saw"
-			}]
-			rewards: [
-				{
-					id: "0000000000000656"
-					type: "command"
-					title: "Epic Thermal Series Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_epic"
-					player_command: false
-				}
-				{
-					id: "0000000000000866"
-					type: "command"
-					title: "Miner's Delight"
-					icon: "kubejs:miners_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_miners_delight"
-					player_command: false
-				}
-			]
-		}
-		{
-			title: "Hazmat Suit"
-			icon: {
-				id: "thermal:hazmat_helmet"
-				Count: 1b
-				tag: {
-					Damage: 0
-				}
-			}
-			x: -6.5d
-			y: -11.0d
-			subtitle: "So Dangerous, You'll Have to Sign a Waiver"
-			description: ["Sturdy protection against many of the world's hazards, such as fire and very sharp booshes."]
-			hide_dependency_lines: true
-			dependencies: [
-				"00000000000004A6"
-				"344C70665D93192C"
-			]
-			hide: true
-			id: "0000000000000494"
-			tasks: [
-				{
-					id: "0000000000000495"
-					type: "item"
-					item: {
-						id: "thermal:hazmat_helmet"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "000000000000049A"
-					type: "item"
-					item: {
-						id: "thermal:hazmat_chestplate"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "000000000000049B"
-					type: "item"
-					item: {
-						id: "thermal:hazmat_leggings"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "000000000000049C"
-					type: "item"
-					item: {
-						id: "thermal:hazmat_boots"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
-			rewards: [{
-				id: "0000000000000659"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			title: "Diving Suit"
-			icon: {
-				id: "thermal:diving_helmet"
-				Count: 1b
-				tag: {
-					Damage: 0
-				}
-			}
-			x: -4.5d
-			y: -11.0d
-			subtitle: "You'll Think You're Looking at Aquaman"
-			description: ["A technological marvel that allows the wearer to remain productive for longer under water."]
-			hide_dependency_lines: true
-			dependencies: [
-				"00000000000003A2"
-				"344C70665D93192C"
-			]
-			hide: true
-			id: "0000000000000496"
-			tasks: [
-				{
-					id: "0000000000000497"
-					type: "item"
-					item: {
-						id: "thermal:diving_helmet"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "000000000000049D"
-					type: "item"
-					item: {
-						id: "thermal:diving_chestplate"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "000000000000049E"
-					type: "item"
-					item: {
-						id: "thermal:diving_leggings"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "000000000000049F"
-					type: "item"
-					item: {
-						id: "thermal:diving_boots"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
-			rewards: [{
-				id: "0000000000000658"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			x: -5.5d
-			y: -10.0d
-			description: [
-				"A powered magnet, perfect for keeping your precious items from falling into lava. Use a Tinker's Workbench to install various upgrades:"
-				""
-				"● Integral Component "
-				"● RF Coil"
-				"● Radial Enhancement"
-			]
-			hide_dependency_lines: true
-			dependencies: [
-				"00000000000004A3"
-				"344C70665D93192C"
-			]
-			hide: true
-			id: "0000000000000498"
-			tasks: [{
-				id: "0000000000000499"
-				type: "item"
-				item: "thermal:flux_magnet"
-			}]
-			rewards: [{
-				id: "000000000000065A"
-				type: "command"
-				title: "Epic Thermal Series Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -510,182 +245,9 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				player_command: false
 			}]
-		}
-		{
-			x: -6.0d
-			y: -15.0d
-			subtitle: "Cannot dig beyond bedrock"
-			description: ["The Infinity Drill will allow you mine big areas when using biofuel. It can be upgraded by charging it."]
-			hide_dependency_lines: true
-			dependencies: [
-				"0000000000000082"
-				"344C70665D93192C"
-			]
-			hide: true
-			id: "0000000000000F5F"
-			tasks: [{
-				id: "0000000000000F60"
-				type: "item"
-				item: {
-					id: "industrialforegoing:infinity_drill"
-					Count: 1b
-					tag: {
-						CanCharge: 1b
-						Special: 0b
-						Selected: "POOR"
-						Energy: 0L
-						Fluid: {
-							FluidName: "biofuel"
-							Amount: 0
-						}
-					}
-				}
-			}]
-		}
-		{
-			x: -4.0d
-			y: -14.5d
-			subtitle: "Beat that, buzzsaw"
-			description: ["The Infinity Saw will allow you chop big forests when using biofuel. It can be upgraded by charging it."]
-			hide_dependency_lines: true
-			dependencies: [
-				"0000000000000F09"
-				"344C70665D93192C"
-			]
-			hide: true
-			hide_text_until_complete: true
-			id: "0000000000000F61"
-			tasks: [{
-				id: "0000000000000F62"
-				type: "item"
-				item: {
-					id: "industrialforegoing:infinity_saw"
-					Count: 1b
-					tag: {
-						CanCharge: 1b
-						Special: 0b
-						Selected: "POOR"
-						Energy: 0L
-						Fluid: {
-							FluidName: "biofuel"
-							Amount: 0
-						}
-					}
-				}
-			}]
-		}
-		{
-			x: -5.0d
-			y: -15.0d
-			subtitle: "Trident * ♾"
-			description: ["The Infinity Trident is an upgraded version of the Minecraft Trident, most of the enchantments can be unlocked by upgrading it. It can be upgraded by charging it."]
-			hide_dependency_lines: true
-			dependencies: [
-				"0000000000000F07"
-				"344C70665D93192C"
-			]
-			hide: true
-			hide_text_until_complete: true
-			id: "0000000000000F63"
-			tasks: [{
-				id: "0000000000000F64"
-				type: "item"
-				item: {
-					id: "industrialforegoing:infinity_trident"
-					Count: 1b
-					tag: {
-						CanCharge: 1b
-						Riptide: 0
-						Channeling: 0b
-						Energy: 0L
-						Fluid: {
-							FluidName: "biofuel"
-							Amount: 0
-						}
-						Special: 0b
-						Selected: "POOR"
-						Loyalty: 0
-					}
-				}
-			}]
-		}
-		{
-			x: -7.0d
-			y: -14.5d
-			subtitle: "Sadly Cannot Make Multiblocks"
-			description: ["The Infinity Hammer will allow you attack enemies in big areas when using biofuel. It can be upgraded by charging it."]
-			hide_dependency_lines: true
-			dependencies: [
-				"0000000000000F0B"
-				"344C70665D93192C"
-			]
-			hide: true
-			id: "0000000000000F65"
-			tasks: [{
-				id: "0000000000000F66"
-				type: "item"
-				item: {
-					id: "industrialforegoing:infinity_hammer"
-					Count: 1b
-					tag: {
-						CanCharge: 1b
-						Energy: 0L
-						Fluid: {
-							FluidName: "biofuel"
-							Amount: 0
-						}
-						Special: 0b
-						Selected: "POOR"
-						Beheading: 0
-					}
-				}
-			}]
-		}
-		{
-			x: -5.5d
-			y: -11.0d
-			description: [
-				"When installed in Flux Tools, the Radial Enhancement allows them to work on larger areas. Drillin or Sawing a 3x3, 5x5, or 7x7 area. "
-				""
-				"Likewise, it increase the pickup range for a FluxoMagnet."
-			]
-			hide_dependency_lines: true
-			dependencies: [
-				"00000000000004A4"
-				"0000000000000490"
-				"0000000000000492"
-				"0000000000000498"
-				"344C70665D93192C"
-			]
-			hide: true
-			dependency_requirement: "one_completed"
-			id: "0000000000000F98"
-			tasks: [{
-				id: "0000000000000F99"
-				type: "item"
-				item: "thermal:area_radius_augment"
-			}]
-			rewards: [
-				{
-					id: "0000000000000F9A"
-					type: "command"
-					title: "Epic Thermal Series Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_thermal_series_loot_epic"
-					player_command: false
-				}
-				{
-					id: "0000000000000F9B"
-					type: "command"
-					title: "Scavenger's Delight"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
-					player_command: false
-				}
-			]
 		}
 		{
 			x: -9.5d
@@ -709,7 +271,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -738,7 +300,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -785,14 +347,14 @@
 					type: "command"
 					title: "Scavenger's Delight"
 					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					player_command: false
 				}
 			]
 		}
 		{
-			x: -5.5d
-			y: -13.0d
+			x: -10.0d
+			y: -14.0d
 			shape: "gear"
 			description: [
 				"Always searching for the right tool for the job? Is this one in Metric? Imperial? And where did that flat head screwdriver get off to anyways?"
@@ -820,13 +382,13 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				player_command: false
 			}]
 		}
 		{
-			x: -5.5d
-			y: -8.5d
+			x: -10.0d
+			y: -15.0d
 			description: ["used to hide all broken quests in this chapter. "]
 			dependencies: ["2AECF726E9E2D41B"]
 			hide: true

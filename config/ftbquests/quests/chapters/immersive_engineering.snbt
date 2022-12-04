@@ -100,7 +100,7 @@
 					type: "command"
 					title: "Rare Immersive Engineering Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 					player_command: false
 				}
 				{
@@ -191,7 +191,7 @@
 					type: "command"
 					title: "Rare Immersive Engineering Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 					player_command: false
 				}
 			]
@@ -303,7 +303,7 @@
 					type: "command"
 					title: "Rare Immersive Engineering Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 					player_command: false
 				}
 			]
@@ -356,7 +356,7 @@
 					type: "command"
 					title: "Rare Immersive Engineering Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 					player_command: false
 				}
 			]
@@ -403,7 +403,7 @@
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
 				auto: "disabled"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -449,7 +449,7 @@
 					type: "command"
 					title: "Rare Immersive Engineering Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 					player_command: false
 				}
 			]
@@ -491,7 +491,7 @@
 					type: "command"
 					title: "Rare Immersive Engineering Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 					player_command: false
 				}
 			]
@@ -501,7 +501,7 @@
 			x: -5.0d
 			y: -5.0d
 			description: [
-				"Getting items from processing to storage need not be a manual task and Conveyor Belts will handle the task quite adequately. "
+				"Getting items from processing to storage need not be a manual effort and Conveyor Belts will handle the task quite adequately. "
 				""
 				"Much like Rails, Conveyor Belts may slope up or down. They may even be waterlogged if necessary, and Right-Clicking them with a dye will change the color of the wall. "
 				""
@@ -535,7 +535,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -567,7 +567,7 @@
 				type: "command"
 				title: "Epic Immersive Engineering Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
 				player_command: false
 			}]
 		}
@@ -613,7 +613,7 @@
 					type: "command"
 					title: "Rare Immersive Engineering Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 					player_command: false
 				}
 			]
@@ -647,7 +647,7 @@
 					type: "command"
 					title: "Epic Immersive Engineering Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
 					player_command: false
 				}
 				{
@@ -685,7 +685,7 @@
 					type: "command"
 					title: "Epic Immersive Engineering Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
 					player_command: false
 				}
 				{
@@ -693,7 +693,7 @@
 					type: "command"
 					title: "Epic Immersive Engineering Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
 					player_command: false
 				}
 			]
@@ -715,7 +715,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -788,7 +788,7 @@
 				type: "command"
 				title: "Epic Immersive Engineering Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
 				player_command: false
 			}]
 		}
@@ -820,7 +820,7 @@
 					type: "command"
 					title: "Epic Immersive Engineering Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
 					player_command: false
 				}
 			]
@@ -853,7 +853,7 @@
 				type: "command"
 				title: "Epic Immersive Engineering Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
 				player_command: false
 			}]
 		}
@@ -880,7 +880,7 @@
 				type: "command"
 				title: "Epic Immersive Engineering Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
 				player_command: false
 			}]
 		}
@@ -922,7 +922,7 @@
 					type: "command"
 					title: "Miner's Delight"
 					icon: "kubejs:miners_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_miners_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
 					player_command: false
 				}
 			]
@@ -945,7 +945,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1007,7 +1007,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1031,7 +1031,7 @@
 				type: "command"
 				title: "Epic Immersive Engineering Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
 				player_command: false
 			}]
 		}
@@ -1055,7 +1055,7 @@
 				type: "command"
 				title: "Epic Immersive Engineering Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
 				player_command: false
 			}]
 		}
@@ -1079,7 +1079,7 @@
 				type: "command"
 				title: "Epic Immersive Engineering Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
 				player_command: false
 			}]
 		}
@@ -1104,7 +1104,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1136,7 +1136,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1200,7 +1200,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1228,7 +1228,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1251,7 +1251,7 @@
 				type: "command"
 				title: "Epic Immersive Engineering Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
 				player_command: false
 			}]
 		}
@@ -1259,7 +1259,15 @@
 			icon: "immersiveengineering:fluid_pipe"
 			x: -4.0d
 			y: -5.0d
+			description: [
+				"Simple Fluid Pipes to get fluids moving around the factory. These pipes do not pull from attached inventories on their own. For anything that doesn’t automatically push fluid outputs, a Fluid Pump will be required."
+				""
+				"Even for those times when a pump isn’t required, using one greatly increases the flow rate of Fluid Pipes. Power is required and an Engineer’s Hammer will be needed to set sides to Input (blue) or Output (orange). It also requires a Redstone signal to turn on.  "
+				""
+				"The pipes themselves may be covered with Steel or Treated Wood Scaffolding blocks, as well as dyed by Right-Clicking with a dye piece. Dyed pipes will not connect to pipes of another color. "
+			]
 			dependencies: ["0000000000000007"]
+			min_width: 300
 			id: "1848E59BC6D42342"
 			tasks: [
 				{
@@ -1278,13 +1286,14 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
 		{
 			x: -4.0d
 			y: -3.0d
+			description: ["When an area needs to be flooded, large or small, a Fluid Outlet makes the perfect tool for the job. Simply place it and pipe fluids into it via any means; it will begin placing that fluid in the area below it, filling from bottom to top. "]
 			hide_dependency_lines: true
 			dependencies: ["1848E59BC6D42342"]
 			id: "78D19FEABD21BC6F"
@@ -1298,7 +1307,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1323,7 +1332,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1422,7 +1431,7 @@
 					type: "command"
 					title: "Rare Immersive Engineering Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 					player_command: false
 				}
 				{
@@ -1525,7 +1534,7 @@
 					type: "command"
 					title: "Rare Immersive Engineering Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 					player_command: false
 				}
 				{
@@ -1568,7 +1577,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1590,7 +1599,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1612,7 +1621,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1634,7 +1643,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1666,7 +1675,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1750,7 +1759,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1778,7 +1787,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1800,7 +1809,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1836,7 +1845,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1861,7 +1870,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1883,7 +1892,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1923,7 +1932,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1953,7 +1962,7 @@
 				type: "command"
 				title: "Epic Immersive Engineering Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
 				player_command: false
 			}]
 		}
@@ -1975,7 +1984,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -1998,7 +2007,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -2026,7 +2035,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -2051,7 +2060,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -2081,7 +2090,7 @@
 				type: "command"
 				title: "Epic Immersive Engineering Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
 				player_command: false
 			}]
 		}
@@ -2131,7 +2140,7 @@
 				type: "command"
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
 				player_command: false
 			}]
 		}
@@ -2175,7 +2184,7 @@
 				type: "command"
 				title: "Epic Immersive Engineering Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
 				player_command: false
 			}]
 		}
@@ -2199,7 +2208,7 @@
 				type: "command"
 				title: "Epic Immersive Engineering Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_immersive_engineering_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
 				player_command: false
 			}]
 		}

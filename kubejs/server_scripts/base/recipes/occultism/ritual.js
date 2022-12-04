@@ -31,17 +31,138 @@ ServerEvents.recipes((event) => {
             ],
     */
     let gateways = [
-        { type: 'blaze', input: 'minecraft:blaze_rod' },
-        { type: 'creeper', input: 'minecraft:gunpowder' },
-        { type: 'enderman', input: 'minecraft:ender_pearl' },
-        { type: 'ghast', input: 'minecraft:ghast_tear' },
-        { type: 'magma_cube', input: 'minecraft:magma_cream' },
-        { type: 'shulker', input: 'minecraft:shulker_shell' },
-        { type: 'skeleton', input: 'minecraft:bone' },
-        { type: 'slime', input: 'minecraft:slime_ball' },
-        { type: 'spider', input: 'minecraft:spider_eye' },
-        { type: 'witch', input: 'minecraft:golden_carrot' },
-        { type: 'zombie', input: 'minecraft:rotten_flesh' }
+        {
+            type: 'creeper',
+            inputs: [
+                'ars_nouveau:conjuration_essence',
+                'thermal:gunpowder_block',
+                'thermal:gunpowder_block',
+                'thermal:gunpowder_block'
+            ]
+        },
+        {
+            type: 'enderman',
+            inputs: [
+                'ars_nouveau:conjuration_essence',
+                'minecraft:ender_pearl',
+                'minecraft:ender_pearl',
+                'minecraft:ender_pearl'
+            ]
+        },
+        {
+            type: 'ghast',
+            inputs: [
+                'ars_nouveau:conjuration_essence',
+                'minecraft:ghast_tear',
+                'thermal:gunpowder_block',
+                'minecraft:ghast_tear'
+            ]
+        },
+        {
+            type: 'magma_cube',
+            inputs: [
+                'ars_nouveau:conjuration_essence',
+                'minecraft:magma_block',
+                'minecraft:magma_block',
+                'minecraft:magma_block'
+            ]
+        },
+        {
+            type: 'shulker',
+            inputs: [
+                'ars_nouveau:conjuration_essence',
+                'minecraft:shulker_shell',
+                'minecraft:shulker_shell',
+                'minecraft:shulker_shell'
+            ]
+        },
+        {
+            type: 'skeleton',
+            inputs: [
+                'ars_nouveau:conjuration_essence',
+                'minecraft:bone_block',
+                'minecraft:bone_block',
+                'minecraft:bone_block'
+            ]
+        },
+        {
+            type: 'slime',
+            inputs: [
+                'ars_nouveau:conjuration_essence',
+                'minecraft:slime_block',
+                'minecraft:slime_block',
+                'minecraft:slime_block'
+            ]
+        },
+        {
+            type: 'spider',
+            inputs: [
+                'ars_nouveau:conjuration_essence',
+                'minecraft:spider_eye',
+                'minecraft:fermented_spider_eye',
+                'minecraft:spider_eye'
+            ]
+        },
+        {
+            type: 'witch',
+            inputs: [
+                'ars_nouveau:conjuration_essence',
+                'minecraft:redstone_block',
+                'minecraft:glowstone',
+                'thermal:gunpowder_block',
+                'minecraft:redstone_block',
+                'minecraft:redstone_block',
+                'minecraft:glowstone',
+                'minecraft:glowstone',
+                'thermal:gunpowder_block',
+                'thermal:gunpowder_block'
+            ]
+        },
+        {
+            type: 'zombie',
+            inputs: [
+                'ars_nouveau:conjuration_essence',
+                'minecraft:rotten_flesh',
+                'minecraft:rotten_flesh',
+                'minecraft:rotten_flesh'
+            ]
+        },
+        {
+            type: 'blaze',
+            inputs: [
+                'ars_nouveau:conjuration_essence',
+                'ars_nouveau:fire_essence',
+                'ars_nouveau:fire_essence',
+                'ars_nouveau:fire_essence'
+            ]
+        },
+        {
+            type: 'basalz',
+            inputs: [
+                'ars_nouveau:conjuration_essence',
+                'ars_nouveau:earth_essence',
+                'ars_nouveau:earth_essence',
+                'ars_nouveau:earth_essence'
+            ]
+        },
+        {
+            type: 'blizz',
+            inputs: [
+                'ars_nouveau:conjuration_essence',
+                'ars_nouveau:water_essence',
+                'ars_nouveau:water_essence',
+                'ars_nouveau:water_essence'
+            ]
+        },
+        {
+            type: 'blitz',
+            inputs: [
+                'ars_nouveau:conjuration_essence',
+                'ars_nouveau:air_essence',
+                'ars_nouveau:air_essence',
+                'ars_nouveau:air_essence'
+            ]
+        }
     ];
 
     // Helper for generating lang entries. Leave disabled normally.
@@ -79,7 +200,7 @@ ServerEvents.recipes((event) => {
             {
                 output: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate_small"}`),
                 activation_item: 'minecraft:ender_pearl',
-                inputs: [gateway.input, gateway.input, gateway.input, gateway.input],
+                inputs: gateway.inputs,
                 ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate_small"}`),
                 ritual_type: 'occultism:craft',
                 pentacle_id: 'occultism:possess_foliot',
@@ -89,16 +210,7 @@ ServerEvents.recipes((event) => {
             {
                 output: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate"}`),
                 activation_item: 'minecraft:ender_eye',
-                inputs: [
-                    gateway.input,
-                    gateway.input,
-                    gateway.input,
-                    gateway.input,
-                    gateway.input,
-                    gateway.input,
-                    gateway.input,
-                    gateway.input
-                ],
+                inputs: gateway.inputs,
                 ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate"}`),
                 ritual_type: 'occultism:craft',
                 pentacle_id: 'occultism:summon_wild_greater_spirit',
@@ -108,20 +220,7 @@ ServerEvents.recipes((event) => {
             {
                 output: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate_large"}`),
                 activation_item: 'minecraft:nether_star',
-                inputs: [
-                    gateway.input,
-                    gateway.input,
-                    gateway.input,
-                    gateway.input,
-                    gateway.input,
-                    gateway.input,
-                    gateway.input,
-                    gateway.input,
-                    gateway.input,
-                    gateway.input,
-                    gateway.input,
-                    gateway.input
-                ],
+                inputs: gateway.inputs,
                 ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate_large"}`),
                 ritual_type: 'occultism:craft',
                 pentacle_id: 'occultism:summon_wild_afrit',

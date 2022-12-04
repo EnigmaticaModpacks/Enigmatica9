@@ -1,8 +1,5 @@
 //priority: 1010
 
-// Used for correcting tags for Blue Skies materials
-const blueSkiesGems = ['pyrope', 'aquite', 'diopside', 'charoite', 'moonstone'];
-
 // Properties for Gem processing
 const gemProperties = {
     redstone: {

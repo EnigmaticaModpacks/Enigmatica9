@@ -1,0 +1,4 @@
+{
+    "type": "occultism:add_item",
+    "conditions": [{ "condition": "forge:false" }]
+}
