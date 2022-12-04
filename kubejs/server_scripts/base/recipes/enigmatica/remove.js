@@ -32,7 +32,9 @@ ServerEvents.recipes((event) => {
         { id: /immersiveengineering:crafting\/hammercrushing_/ },
         { id: /industrialforegoing:.*_gear/ }, // Gears
         { id: /immersiveengineering:crafting\/plate_.*_hammering/ }, // plates.js related
-        { id: /immersiveengineering:crafting\/stick_/ } // rods.js related
+        { id: /immersiveengineering:crafting\/stick_/ }, // rods.js related
+        { id: /emendatusenigmatica:ingot\/from_dust.*\/refined_obsidian/}, // Removes smelting recipes dust -> ingot for Refined Obsidian and Glowstone
+        { id: /emendatusenigmatica:ingot\/from_dust.*\/refined_glowstone/}
     ];
 
     colors.forEach((color) => {
