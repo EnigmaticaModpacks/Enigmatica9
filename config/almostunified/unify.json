@@ -82,6 +82,7 @@
     "platinum",
     "potassium_nitrate",
     "pyrope",
+    "redstone",
     "refined_glowstone",
     "refined_obsidian",
     "rose_gold",
@@ -101,9 +102,7 @@
     "zinc",
     "quartz"
   ],
-  "priorityOverrides": {
-    "forge:dusts/redstone": "minecraft"
-  },
+  "priorityOverrides": {},
   "ignoredTags": [],
   "ignoredItems": [],
   "ignoredRecipeTypes": [
