@@ -1,9 +1,8 @@
 ServerEvents.tags('item', (event) => {
-    const types = ['swords', 'pickaxes', 'axes', 'hoes', 'shovels'];
-
     event.removeAll('blue_skies:tools');
-
-    types.forEach((type) => {
-        event.removeAll(`blue_skies:tools/${type}`);
-    });
+    event.removeAll(`blue_skies:tools/swords`);
+    event.removeAll(`blue_skies:tools/pickaxes`);
+    event.removeAll(`blue_skies:tools/axes`);
+    event.removeAll(`blue_skies:tools/hoes`);
+    event.removeAll(`blue_skies:tools/shovels`);
 });

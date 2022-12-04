@@ -26,7 +26,7 @@ ItemEvents.tooltip((event) => {
             text: [Text.of('Recipe altered for Enigmatica 9: Expert. Refer to JEI.').gold()]
         },
         {
-            items: ['kubejs:disabled_recipe_indicator'],
+            items: ['kubejs:disabled_recipe_indicator', 'kubejs:disabled_structure_indicator'],
             text: [Text.of('Recipe disabled for Enigmatica 9').gold()]
         },
         {
@@ -147,9 +147,10 @@ ItemEvents.tooltip((event) => {
             items: [
                 // 'hexerei:dried_sage_bundle',
                 // 'hexerei:sage_burning_plate',
-                'naturesaura:spawn_lamp'
+                'naturesaura:spawn_lamp',
+                'immersiveengineering:electric_lantern'
             ],
-            text: [Text.of(`Arcane Apparatus: Prevents Mob Spawns`).green()]
+            text: [Text.of(`Prevents Mob Spawns`).green()]
         },
         {
             items: ['naturesaura:rf_converter'],
