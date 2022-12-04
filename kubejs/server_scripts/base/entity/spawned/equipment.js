@@ -28,8 +28,8 @@ EntityEvents.spawned((event) => {
     event.entity.fullNBT = entity_data;
 
     // End if mob isn't in 'armored_mobs' constant
-    let mob_type = event.entity.type.split(':')[1];
-    let mod_id = event.entity.type.split(':')[0];
+    let mob_type = String(event.entity.entityType).split('.')[2];
+    let mod_id = String(event.entity.entityType).split('.')[1];
     if (!Object.keys(armored_mobs).includes(mod_id) || !Object.keys(armored_mobs[mod_id]).includes(mob_type)) {
         return;
     }

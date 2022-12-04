@@ -2,14 +2,29 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/mekanism/sawing/';
 
     const recipes = [
-        /*
         {
-            input: [Item.of('minecraft:oak_log')],
-            mainOutput: Item.of('6x minecraft:stripped_oak_log'),
-            secondary: { output: Item.of('farmersdelight:tree_bark'), chance: 1.0 },
-            id: `${id_prefix}stripped_oak_log_from_oak_log`
+            input: [Ingredient.of('#minecraft:wooden_stairs')],
+            output: Item.of('minecraft:stick', 9),
+            secondary: { output: Item.of(sawdust), chance: 0.38 },
+            id: `mekanism:sawing/stairs`
+        },
+        {
+            input: [Ingredient.of('#minecraft:wooden_slabs')],
+            output: Item.of('minecraft:stick', 3),
+            secondary: { output: Item.of(sawdust), chance: 0.13 },
+            id: `mekanism:sawing/slabs`
+        },
+        {
+            input: [Ingredient.of('#forge:rods/wooden')],
+            output: Item.of(sawdust),
+            id: `mekanism:sawing/stick`
+        },
+        {
+            input: [Ingredient.of('#minecraft:planks')],
+            output: Item.of('minecraft:stick', 6),
+            secondary: { output: Item.of(sawdust), chance: 0.25 },
+            id: `mekanism:sawing/planks`
         }
-        */
     ];
 
     wood_properties.forEach((material) => {
@@ -46,19 +61,20 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'mekanism:sawing';
-
         // input: { ingredient: [{ item: 'minecraft:oak_log' }] },
         recipe.input = { ingredient: recipe.input.map((input) => input.toJson()) };
-
         // mainOutput: { count: 6, item: 'minecraft:oak_planks' }
         recipe.mainOutput = recipe.output.toJson();
-
-        // secondaryOutput: { item: 'farmersdelight:tree_bark' },
-        recipe.secondaryOutput = recipe.secondary.output.toJson();
-
-        // secondaryChance: 0.25,
-        recipe.secondaryChance = recipe.secondary.chance;
-
+        if (recipe.secondary) {
+            if (recipe.secondary.output) {
+                // secondaryOutput: { item: 'farmersdelight:tree_bark' },
+                recipe.secondaryOutput = recipe.secondary.output.toJson();
+            }
+            if (recipe.secondary.chance) {
+                // secondaryChance: 0.25,
+                recipe.secondaryChance = recipe.secondary.chance;
+            }
+        }
         event.custom(recipe).id(recipe.id);
     });
 });

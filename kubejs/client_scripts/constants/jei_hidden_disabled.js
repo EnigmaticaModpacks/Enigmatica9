@@ -6,9 +6,9 @@ const disabled_item_message =
 const disabled_item_tooltip = 'This item has been disabled.';
 
 const jei = {
-    base: { items: { hidden: [], disabled: [] }, categories: { hidden: [] } },
-    normal: { items: { hidden: [], disabled: [] }, categories: { hidden: [] } },
-    expert: { items: { hidden: [], disabled: [] }, categories: { hidden: [] } }
+    base: { items: { hidden: [], disabled: [] }, fluids: { hidden: [] }, categories: { hidden: [] } },
+    normal: { items: { hidden: [], disabled: [] }, fluids: { hidden: [] }, categories: { hidden: [] } },
+    expert: { items: { hidden: [], disabled: [] }, fluids: { hidden: [] }, categories: { hidden: [] } }
 };
 // Base
 jei.base.items.disabled = [
@@ -36,7 +36,29 @@ jei.base.items.disabled = [
     'mekanism:advanced_bin',
     'mekanism:basic_bin',
     'immersiveengineering:blast_furnace',
-    'immersiveengineering:alloy_smelter'
+    'immersiveengineering:alloy_smelter',
+    'thermal:flax',
+    'thermal:flax_block',
+    'thermal:flax_seeds',
+    'thermal:hops',
+    'thermal:hops_block',
+    'thermal:hops_seeds',
+    'thermal:onion',
+    'thermal:onion_block',
+    'thermal:onion_seeds',
+    'thermal:rice',
+    'thermal:rice_block',
+    'thermal:rice_seeds',
+    'thermal:tomato',
+    'thermal:tomato_block',
+    'thermal:tomato_seeds',
+    'industrialforegoing:dryrubber',
+    'thermal:latex_bucket',
+    'thermal:creosote_bucket',
+    'thermal:crude_oil_bucket',
+    'thermal:heavy_oil_bucket',
+    'thermal:light_oil_bucket',
+    'thermal:refined_fuel_bucket'
 ];
 jei.base.items.hidden = [
     'kubejs:altered_recipe_indicator',
@@ -76,14 +98,24 @@ jei.base.items.hidden = [
     'twilightforest:minoshroom_boss_spawner',
     'twilightforest:lich_boss_spawner'
 ];
+jei.base.fluids.hidden = [
+    'thermal:latex',
+    'thermal:creosote',
+    'thermal:crude_oil',
+    'thermal:heavy_oil',
+    'thermal:light_oil',
+    'thermal:refined_fuel'
+];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
 
 // Normal
 jei.normal.items.disabled = [];
 jei.normal.items.hidden = [];
+jei.normal.fluids.hidden = [];
 jei.normal.categories.hidden = [];
 
 // Expert
 jei.expert.items.disabled = [];
 jei.expert.items.hidden = [];
+jei.expert.fluids.hidden = [];
 jei.expert.categories.hidden = [];
