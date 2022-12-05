@@ -3,7 +3,5 @@ ServerEvents.tags('item', (event) => {
         event.add('forge:mushrooms', shroom.sapling);
     });
 
-    const items = ['twilightforest:mushgloom'];
-
-    event.add('forge:mushrooms', items);
+    event.add('forge:mushrooms', ['twilightforest:mushgloom']);
 });
