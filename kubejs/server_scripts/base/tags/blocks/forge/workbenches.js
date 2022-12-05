@@ -1,5 +1,3 @@
 ServerEvents.tags('block', (event) => {
-    const items = ['minecraft:crafting_table'];
-
-    event.add('forge:workbenches', items);
+    event.add('forge:workbenches', ['minecraft:crafting_table']);
 });

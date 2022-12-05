@@ -1,5 +1,5 @@
 ServerEvents.tags('item', (event) => {
-    const items = [
+    event.get('enigmatica:containers/bulk').add([
         /black_hole_unit/,
         /black_hole_controller/,
         /qio_drive/,
@@ -9,14 +9,5 @@ ServerEvents.tags('item', (event) => {
         /ae2things:disk_drive_/,
         '#functionalstorage:drawer'
         //'botania:black_hole_talisman'
-    ];
-
-    // const tagGroups = ['enigmatica:containers', 'enigmatica:containers/bulk'];
-
-    // tagGroups.forEach((tagGroup) => {
-    //     event.get(tagGroup).add(items);
-    // });
-
-    event.get('enigmatica:containers').add(items);
-    event.get('enigmatica:containers/bulk').add(items);
+    ]);
 });

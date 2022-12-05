@@ -1,5 +1,5 @@
 ServerEvents.tags('item', (event) => {
     colors.forEach((color) => {
-        event.get('forge:carpet').add('minecraft:' + color + '_carpet');
+        event.get('forge:carpet').add(`minecraft:${color}_carpet`);
     });
 });

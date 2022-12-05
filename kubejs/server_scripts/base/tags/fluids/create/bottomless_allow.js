@@ -1,4 +1,3 @@
 ServerEvents.tags('fluid', (event) => {
-    const fluids = ['minecraft:lava', 'minecraft:water', 'pneumaticcraft:oil'];
-    event.get('create:bottomless/allow').add(fluids);
+    event.get('create:bottomless/allow').add(['minecraft:lava', 'minecraft:water', 'pneumaticcraft:oil']);
 });
