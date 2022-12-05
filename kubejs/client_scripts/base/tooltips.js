@@ -207,9 +207,26 @@ ItemEvents.tooltip((event) => {
                 'naturesaura:ender_crate',
                 'naturesaura:ender_access',
                 'minecraft:ender_chest',
-                'functionalstorage:ender_drawer'
+                'functionalstorage:ender_drawer',
+                'occultism:stable_wormhole',
+                'occultism:storage_controller',
+                'mekanism:qio_dashboard',
+                'mekanism:qio_drive_array',
+                'mekanism:portable_qio_dashboard',
+                'occultism:storage_remote'
             ],
-            text: [Text.of(`Arcane Apparatus: Cross-Dimensional Item Transportation`).darkPurple()]
+            text: [Text.of(`Cross-Dimensional Storage`).darkPurple()]
+        },
+        {
+            items: [
+                'mekanism:quantum_entangloporter',
+                'mekanism:qio_redstone_adapter',
+                'mekanism:qio_exporter',
+                'mekanism:qio_importer',
+                'ae2:quantum_link',
+                'ae2:quantum_ring'
+            ],
+            text: [Text.of(`Cross-Dimensional Logistics`).darkPurple()]
         },
         {
             items: ['ars_nouveau:enchanters_mirror'],
