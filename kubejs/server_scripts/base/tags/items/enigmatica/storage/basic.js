@@ -24,6 +24,7 @@ ServerEvents.tags('item', (event) => {
             'naturesaura:sky_chest',
             'naturesaura:infused_iron_chest',
             'immersiveengineering:armor_steel_chest',
-            'immersiveengineering:armor_faraday_chest'
+            'immersiveengineering:armor_faraday_chest',
+            'functionalstorage:armory_cabinet'
         ]);
 });

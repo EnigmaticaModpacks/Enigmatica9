@@ -1370,6 +1370,8 @@
 				"Heat Sinks will passively increase the rate at which Heat is transferred into the air, helping to cool things back down to ambient temperatures quickly and efficiently."
 				""
 				"Heat Sinks in the area of effect of an active Air Grate will operate even faster. This is one of the most efficient ways to cool machines, when the Air Grates are regulated down to just enough pressure to operate. "
+				""
+				"When connected to a pressure line in a vacuum, the Air Grate also doubles as an item collector, pulling items and other entities towards it. Items pulled all the way to it will be inserted into any adjacent inventories. "
 			]
 			dependencies: ["00000000000000D2"]
 			id: "7F474543CD3E2742"
