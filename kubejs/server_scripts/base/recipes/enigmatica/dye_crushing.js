@@ -63,12 +63,11 @@ ServerEvents.recipes((event) => {
     });
 */
     dye_sources.forEach((dye_source) => {
-        let base_count = 1;
+        let base_count = 3;
         let count = dye_source.type == 'large' ? base_count * 2 : base_count;
         let secondary_chance = dye_source.type == 'large' ? (base_count / 9) * 2 : base_count / 9;
         let tertiary_chance = dye_source.type == 'large' ? (base_count / 18) * 2 : base_count / 18;
 
-        let output = dye_source.primary;
         let outputs = {
             primary: { item: dye_source.primary, count: count, chance: 1.0 },
             secondary: { item: dye_source.secondary, count: Math.ceil(count / 2), chance: secondary_chance },
@@ -79,31 +78,6 @@ ServerEvents.recipes((event) => {
         let duration = 20;
         let energy = 256;
         let id_suffix = `${dye_source.primary.split(':')[1]}_from_${dye_source.input.split(':')[1]}`;
-
-        // Shapeless
-        event.shapeless(Item.of(output, count), [input]).id(`${id_prefix}shapeless/${id_suffix}`);
-
-        base_count = 3;
-
-        // Occultism Crushing
-        event
-            .custom({
-                type: 'occultism:crushing',
-                ingredient: Ingredient.of(input).toJson(),
-                result: Item.of(output, count).toJson(),
-                crushing_time: duration,
-                ignore_crushing_multiplier: false
-            })
-            .id(`${id_prefix}occultism_crushing/${id_suffix}`);
-
-        // Mekanism Enriching
-        event
-            .custom({
-                type: 'mekanism:enriching',
-                input: { ingredient: Ingredient.of(input).toJson() },
-                output: Item.of(output, count).toJson()
-            })
-            .id(`${id_prefix}mekanism_enriching/${id_suffix}`);
 
         // Create
         event
@@ -153,5 +127,31 @@ ServerEvents.recipes((event) => {
                 ]
             })
             .id(`${id_prefix}immersiveengineering_crusher/${id_suffix}`);
+
+        outputs = dye_source.primary;
+        // Occultism Crushing
+        event
+            .custom({
+                type: 'occultism:crushing',
+                ingredient: Ingredient.of(input).toJson(),
+                result: Item.of(outputs, count).toJson(),
+                crushing_time: duration,
+                ignore_crushing_multiplier: false
+            })
+            .id(`${id_prefix}occultism_crushing/${id_suffix}`);
+
+        // Mekanism Enriching
+        event
+            .custom({
+                type: 'mekanism:enriching',
+                input: { ingredient: Ingredient.of(input).toJson() },
+                output: Item.of(outputs, count).toJson()
+            })
+            .id(`${id_prefix}mekanism_enriching/${id_suffix}`);
+
+        // Shapeless
+        base_count = 1;
+        count = dye_source.type == 'large' ? base_count * 2 : base_count;
+        event.shapeless(Item.of(outputs, count), [input]).id(`${id_prefix}shapeless/${id_suffix}`);
     });
 });
