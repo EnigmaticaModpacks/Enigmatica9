@@ -336,7 +336,7 @@ ItemEvents.tooltip((event) => {
                 'thermal:obsidian_glass',
                 'thermal:enderium_glass'
             ],
-            text: [Text.of('Wither Immune').color('#4F0D75')]
+            text: [Text.of('Wither Immune').color('#9a1be3')]
         },
         {
             items: ['industrialforegoing:mob_duplicator', 'spirit:soul_cage', 'pneumaticcraft:pressurized_spawner'],
