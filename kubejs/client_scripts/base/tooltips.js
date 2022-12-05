@@ -140,8 +140,22 @@ ItemEvents.tooltip((event) => {
             text: [Text.of(`Arcane Apparatus: Filtered Hopper`).green()]
         },
         {
-            items: ['naturesaura:hopper_upgrade'],
-            text: [Text.of(`Arcane Apparatus: Ranged Hopper`).green()]
+            items: [
+                'ars_nouveau:glyph_pickup',
+                'functionalstorage:collector_upgrade',
+                'naturesaura:hopper_upgrade',
+                'pneumaticcraft:magnet_upgrade',
+                'sophisticatedbackpacks:advanced_magnet_upgrade',
+                'sophisticatedbackpacks:advanced_pickup_upgrade',
+                'sophisticatedbackpacks:magnet_upgrade',
+                'sophisticatedbackpacks:pickup_upgrade',
+                'sophisticatedstorage:advanced_magnet_upgrade',
+                'sophisticatedstorage:advanced_pickup_upgrade',
+                'sophisticatedstorage:magnet_upgrade',
+                'sophisticatedstorage:pickup_upgrade',
+                'thermal:device_collector'
+            ],
+            text: [Text.of(`Item Collector`).green()]
         },
         {
             items: [
@@ -280,9 +294,14 @@ ItemEvents.tooltip((event) => {
                 'mekanism:crafting_formula',
                 'mekanism:formulaic_assemblicator',
                 'create:mechanical_crafter',
-                'naturesaura:auto_crafter'
+                'naturesaura:auto_crafter',
+                'thermal:machine_crafter'
             ],
             text: [Text.of(`Auto-crafter`).green()]
+        },
+        {
+            items: ['functionalstorage:armory_cabinet'],
+            text: [Text.of(`Bulk Unstackable Storage`).green()]
         },
         {
             items: [
@@ -294,9 +313,13 @@ ItemEvents.tooltip((event) => {
                 'engineersdecor:rebar_concrete_slab',
                 'engineersdecor:rebar_concrete',
                 'engineersdecor:panzerglass_block',
-                'engineersdecor:panzerglass_slab'
+                'engineersdecor:panzerglass_slab',
+                'thermal:lumium_glass',
+                'thermal:signalum_glass',
+                'thermal:obsidian_glass',
+                'thermal:enderium_glass'
             ],
-            text: [Text.of('Immune to the Wither').color('#4F0D75')]
+            text: [Text.of('Wither Immune').color('#4F0D75')]
         },
         {
             items: ['industrialforegoing:mob_duplicator', 'spirit:soul_cage', 'pneumaticcraft:pressurized_spawner'],

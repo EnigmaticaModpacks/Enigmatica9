@@ -7,7 +7,8 @@ ServerEvents.tags('item', (event) => {
         /ae2:cell_component_/,
         /ae2:item_storage_cell_/,
         /ae2things:disk_drive_/,
-        '#functionalstorage:drawer'
+        '#functionalstorage:drawer',
+        'functionalstorage:armory_cabinet'
         //'botania:black_hole_talisman'
     ]);
 });
