@@ -1,15 +1,16 @@
-//priority: 900
-
 ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/dye_crushing/';
-
+    /*
     colors.forEach((color) => {
         ['large', 'small'].forEach((input_size) => {
             let input = `#enigmatica:${input_size}_dye_sources/${color}`;
 
+            console.log(String(getItemsInTag(input)));
             if (getItemsInTag(input).includes('minecraft:barrier')) {
+                console.log('yeet');
                 return;
             }
+
             let output = `minecraft:${color}_dye`;
             let duration = 20;
             let id_suffix = `${input_size}_${color}_dye`;
@@ -60,13 +61,14 @@ ServerEvents.recipes((event) => {
                 .id(`${id_prefix}mekanism_enriching/${id_suffix}`);
         });
     });
-
+*/
     dye_sources.forEach((dye_source) => {
-        let base_count = 3;
+        let base_count = 1;
         let count = dye_source.type == 'large' ? base_count * 2 : base_count;
         let secondary_chance = dye_source.type == 'large' ? (base_count / 9) * 2 : base_count / 9;
         let tertiary_chance = dye_source.type == 'large' ? (base_count / 18) * 2 : base_count / 18;
 
+        let output = dye_source.primary;
         let outputs = {
             primary: { item: dye_source.primary, count: count, chance: 1.0 },
             secondary: { item: dye_source.secondary, count: Math.ceil(count / 2), chance: secondary_chance },
@@ -77,6 +79,31 @@ ServerEvents.recipes((event) => {
         let duration = 20;
         let energy = 256;
         let id_suffix = `${dye_source.primary.split(':')[1]}_from_${dye_source.input.split(':')[1]}`;
+
+        // Shapeless
+        event.shapeless(Item.of(output, count), [input]).id(`${id_prefix}shapeless/${id_suffix}`);
+
+        base_count = 3;
+
+        // Occultism Crushing
+        event
+            .custom({
+                type: 'occultism:crushing',
+                ingredient: Ingredient.of(input).toJson(),
+                result: Item.of(output, count).toJson(),
+                crushing_time: duration,
+                ignore_crushing_multiplier: false
+            })
+            .id(`${id_prefix}occultism_crushing/${id_suffix}`);
+
+        // Mekanism Enriching
+        event
+            .custom({
+                type: 'mekanism:enriching',
+                input: { ingredient: Ingredient.of(input).toJson() },
+                output: Item.of(output, count).toJson()
+            })
+            .id(`${id_prefix}mekanism_enriching/${id_suffix}`);
 
         // Create
         event
