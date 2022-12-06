@@ -1,15 +1,16 @@
-//priority: 900
-
 ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/dye_crushing/';
-
+    /*
     colors.forEach((color) => {
         ['large', 'small'].forEach((input_size) => {
             let input = `#enigmatica:${input_size}_dye_sources/${color}`;
 
+            console.log(String(getItemsInTag(input)));
             if (getItemsInTag(input).includes('minecraft:barrier')) {
+                console.log('yeet');
                 return;
             }
+
             let output = `minecraft:${color}_dye`;
             let duration = 20;
             let id_suffix = `${input_size}_${color}_dye`;
@@ -60,7 +61,7 @@ ServerEvents.recipes((event) => {
                 .id(`${id_prefix}mekanism_enriching/${id_suffix}`);
         });
     });
-
+*/
     dye_sources.forEach((dye_source) => {
         let base_count = 3;
         let count = dye_source.type == 'large' ? base_count * 2 : base_count;
@@ -126,5 +127,31 @@ ServerEvents.recipes((event) => {
                 ]
             })
             .id(`${id_prefix}immersiveengineering_crusher/${id_suffix}`);
+
+        outputs = dye_source.primary;
+        // Occultism Crushing
+        event
+            .custom({
+                type: 'occultism:crushing',
+                ingredient: Ingredient.of(input).toJson(),
+                result: Item.of(outputs, count).toJson(),
+                crushing_time: duration,
+                ignore_crushing_multiplier: false
+            })
+            .id(`${id_prefix}occultism_crushing/${id_suffix}`);
+
+        // Mekanism Enriching
+        event
+            .custom({
+                type: 'mekanism:enriching',
+                input: { ingredient: Ingredient.of(input).toJson() },
+                output: Item.of(outputs, count).toJson()
+            })
+            .id(`${id_prefix}mekanism_enriching/${id_suffix}`);
+
+        // Shapeless
+        base_count = 1;
+        count = dye_source.type == 'large' ? base_count * 2 : base_count;
+        event.shapeless(Item.of(outputs, count), [input]).id(`${id_prefix}shapeless/${id_suffix}`);
     });
 });
