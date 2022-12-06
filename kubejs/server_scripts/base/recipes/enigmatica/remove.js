@@ -15,6 +15,7 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:sawing\/log/ },
         { id: /mekanism:compat\/byg\/combining\/.*_ore_/ },
         { id: /mekanism:bin\/.*/ },
+        { id: /mekanism:crushing\/biofuel/ },
 
         { id: 'quark:tweaks/smelting/bone_meal_utility' },
 
