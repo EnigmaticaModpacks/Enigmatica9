@@ -174,7 +174,7 @@
 					type: "command"
 					title: "Powah Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
 					player_command: false
 				}
 			]
@@ -303,7 +303,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
 				player_command: false
 			}]
 		}
@@ -419,7 +419,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
 				player_command: false
 			}]
 		}
@@ -477,7 +477,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
 				player_command: false
 			}]
 		}
@@ -501,7 +501,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
 				player_command: false
 			}]
 		}
@@ -757,7 +757,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
 				player_command: false
 			}]
 		}
@@ -888,7 +888,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
 				player_command: false
 			}]
 		}
@@ -971,7 +971,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
 				player_command: false
 			}]
 		}
@@ -1108,7 +1108,7 @@
 					type: "command"
 					title: "Powah Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
 					player_command: false
 				}
 			]
@@ -1138,7 +1138,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
 				player_command: false
 			}]
 		}
@@ -1163,7 +1163,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
 				player_command: false
 			}]
 		}
@@ -1188,7 +1188,7 @@
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
 				player_command: false
 			}]
 		}
@@ -1249,7 +1249,7 @@
 					type: "command"
 					title: "Powah Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
 					player_command: false
 				}
 			]
@@ -1353,7 +1353,7 @@
 					type: "command"
 					title: "Powah Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_powah_loot"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
 					player_command: false
 				}
 			]

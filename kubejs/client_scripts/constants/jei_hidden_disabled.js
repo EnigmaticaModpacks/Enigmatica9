@@ -25,6 +25,7 @@ const jei = {
         gases: { hidden: [] }
     }
 };
+
 // Base
 jei.base.items.disabled = [
     'twilightforest:uncrafting_table',
@@ -52,6 +53,28 @@ jei.base.items.disabled = [
     'mekanism:basic_bin',
     'immersiveengineering:blast_furnace',
     'immersiveengineering:alloy_smelter',
+    'thermal:flax',
+    'thermal:flax_block',
+    'thermal:flax_seeds',
+    'thermal:hops',
+    'thermal:hops_block',
+    'thermal:hops_seeds',
+    'thermal:onion',
+    'thermal:onion_block',
+    'thermal:onion_seeds',
+    'thermal:rice',
+    'thermal:rice_block',
+    'thermal:rice_seeds',
+    'thermal:tomato',
+    'thermal:tomato_block',
+    'thermal:tomato_seeds',
+    'industrialforegoing:dryrubber',
+    'thermal:latex_bucket',
+    'thermal:creosote_bucket',
+    'thermal:crude_oil_bucket',
+    'thermal:heavy_oil_bucket',
+    'thermal:light_oil_bucket',
+    'thermal:refined_fuel_bucket'
     /byg:.*pendorite.*/,
     /byg:.*ametrine.*/
 ];
@@ -96,6 +119,14 @@ jei.base.items.hidden = [
     'mekanism:creative_chemical_tank',
     /powah:.*uraninite_ore.*/
 ];
+jei.base.fluids.hidden = [
+    'thermal:latex',
+    'thermal:creosote',
+    'thermal:crude_oil',
+    'thermal:heavy_oil',
+    'thermal:light_oil',
+    'thermal:refined_fuel'
+];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
 
 jei.base.fluids.hidden = [];
@@ -104,6 +135,7 @@ jei.base.gases.hidden = [];
 // Normal
 jei.normal.items.disabled = [];
 jei.normal.items.hidden = [];
+jei.normal.fluids.hidden = [];
 jei.normal.categories.hidden = [];
 jei.normal.fluids.hidden = [];
 jei.normal.gases.hidden = [];
@@ -111,6 +143,7 @@ jei.normal.gases.hidden = [];
 // Expert
 jei.expert.items.disabled = [];
 jei.expert.items.hidden = [];
+jei.expert.fluids.hidden = [];
 jei.expert.categories.hidden = [];
 jei.expert.fluids.hidden = [];
 jei.expert.gases.hidden = [];

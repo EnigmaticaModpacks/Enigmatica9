@@ -2,16 +2,27 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/enigmatica/';
     const recipes = [
         // {
-        //     outputs.primary: { item: 'minecraft:magenta_dye', count: 3, chance: 1.0 },
-        //     outputs.secondary: { item: 'minecraft:purple_dye', count: 1, chance: 0.5 },
-        //     outputs.tertiary: { item: 'minecraft:pink_dye', count: 1, chance: 0.25 },
-        //     input:  'byg:allium_flower_bush',
+        //     outputs: {
+        //         primary: { item: 'minecraft:magenta_dye', count: 3, chance: 1.0 },
+        //         secondary: { item: 'minecraft:purple_dye', count: 1, chance: 0.5 },
+        //         tertiary: { item: 'minecraft:pink_dye', count: 1, chance: 0.25 }
+        //     },
+        //     input: 'byg:allium_flower_bush',
         //     experience: 0.5,
         //     duration: 20,
         //     energy: 1000,
         //     ignore_occultism_multiplier: true,
         //     id_suffix: `magenta_dye_from_allium_flower_bush`
         // }
+        {
+            outputs: { primary: { item: 'kubejs:amethyst_dust', count: 1, chance: 1.0 } },
+            input: '#forge:gems/amethyst',
+            experience: 0.2,
+            duration: 20,
+            energy: 1000,
+            ignore_occultism_multiplier: true,
+            id_suffix: `amethyst_dust_from_amethyst`
+        }
     ];
 
     const recipetypes_crushing = (event, recipe) => {
@@ -19,7 +30,7 @@ ServerEvents.recipes((event) => {
         event
             .custom({
                 type: 'occultism:crushing',
-                ingredient: Item.of(recipe.input).toJson(),
+                ingredient: Ingredient.of(recipe.input).toJson(),
                 result: Item.of(recipe.outputs.primary.item, recipe.outputs.primary.count).toJson(),
                 crushing_time: recipe.duration,
                 ignore_crushing_multiplier: recipe.ignore_occultism_multiplier
@@ -30,7 +41,7 @@ ServerEvents.recipes((event) => {
         event
             .custom({
                 type: 'mekanism:enriching',
-                input: { ingredient: Item.of(recipe.input).toJson() },
+                input: { ingredient: Ingredient.of(recipe.input).toJson() },
                 output: Item.of(recipe.outputs.primary.item, recipe.outputs.primary.count).toJson()
             })
             .id(`${id_prefix}mekanism_enriching/${recipe.id_suffix}`);
@@ -53,7 +64,7 @@ ServerEvents.recipes((event) => {
             .custom({
                 type: 'immersiveengineering:crusher',
                 energy: recipe.energy,
-                input: Item.of(recipe.input).toJson(),
+                input: Ingredient.of(recipe.input).toJson(),
                 result: { base_ingredient: { item: recipe.outputs.primary.item }, count: recipe.outputs.primary.count },
                 secondaries: immersiveengineering_secondaries
             })
@@ -73,7 +84,7 @@ ServerEvents.recipes((event) => {
         event
             .custom({
                 type: 'ars_nouveau:crush',
-                input: Item.of(recipe.input).toJson(),
+                input: Ingredient.of(recipe.input).toJson(),
                 output: outputs
             })
             .id(`${id_prefix}ars_nouveau_crushing/${recipe.id_suffix}`);
@@ -82,11 +93,19 @@ ServerEvents.recipes((event) => {
         event
             .custom({
                 type: 'create:milling',
-                ingredients: [Item.of(recipe.input).toJson()],
+                ingredients: [Ingredient.of(recipe.input).toJson()],
                 results: outputs,
                 processingTime: 50
             })
             .id(`${id_prefix}create_milling/${recipe.id_suffix}`);
+
+        // Thermal
+        event.custom({
+            type: 'thermal:pulverizer',
+            ingredient: Ingredient.of(recipe.input).toJson(),
+            result: outputs,
+            experience: recipe.experience
+        });
     };
 
     recipes.forEach((recipe) => {

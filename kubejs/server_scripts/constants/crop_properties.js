@@ -6,7 +6,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 1.5,
             water_modifier: 0.1,
-            energy_modifier: 4.0
+            energy_modifier: 4.0,
+            primary_chance: 2.0,
+            secondary_chance: 1.1
         },
         crops: []
     },
@@ -14,7 +16,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 1.0,
             water_modifier: 3.0,
-            energy_modifier: 2.0
+            energy_modifier: 2.0,
+            primary_chance: 2.0,
+            secondary_chance: 1.1
         },
         crops: []
     },
@@ -22,7 +26,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 2.0,
             water_modifier: 2.0,
-            energy_modifier: 4.0
+            energy_modifier: 4.0,
+            primary_chance: 2.0,
+            secondary_chance: 1.1
         },
         crops: []
     },
@@ -30,7 +36,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 1.0,
             water_modifier: 1.0,
-            energy_modifier: 1.0
+            energy_modifier: 1.0,
+            primary_chance: 2.0,
+            secondary_chance: 1.1
         },
         crops: []
     },
@@ -38,7 +46,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 1.0,
             water_modifier: 1.0,
-            energy_modifier: 1.0
+            energy_modifier: 1.0,
+            primary_chance: 2.5,
+            secondary_chance: 1.1
         },
         crops: []
     },
@@ -46,7 +56,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 1.5,
             water_modifier: 2.0,
-            energy_modifier: 1.5
+            energy_modifier: 2.0,
+            primary_chance: 2.0,
+            secondary_chance: 1.1
         },
         crops: []
     },
@@ -54,7 +66,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 0.8,
             water_modifier: 1.0,
-            energy_modifier: 1.0
+            energy_modifier: 1.0,
+            primary_chance: 2.5,
+            secondary_chance: 1.1
         },
         crops: []
     },
@@ -62,7 +76,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 0.6,
             water_modifier: 1.0,
-            energy_modifier: 1.0
+            energy_modifier: 1.0,
+            primary_chance: 2.5,
+            secondary_chance: 1.1
         },
         crops: []
     },
@@ -70,7 +86,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 0.7,
             water_modifier: 1.0,
-            energy_modifier: 1.0
+            energy_modifier: 1.0,
+            primary_chance: 2.0,
+            secondary_chance: 1.1
         },
         crops: []
     },
@@ -78,7 +96,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 1.5,
             water_modifier: 2.0,
-            energy_modifier: 1.5
+            energy_modifier: 2.0,
+            primary_chance: 2.0,
+            secondary_chance: 1.1
         },
         crops: []
     },
@@ -86,7 +106,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 1.0,
             water_modifier: 1.0,
-            energy_modifier: 1.0
+            energy_modifier: 1.0,
+            primary_chance: 2.0,
+            secondary_chance: 1.1
         },
         crops: []
     },
@@ -94,7 +116,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 1.0,
             water_modifier: 1.0,
-            energy_modifier: 1.0
+            energy_modifier: 1.0,
+            primary_chance: 2.0,
+            secondary_chance: 1.1
         },
         crops: []
     },
@@ -102,7 +126,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 0.7,
             water_modifier: 1.0,
-            energy_modifier: 1.0
+            energy_modifier: 1.1,
+            primary_chance: 2.0,
+            secondary_chance: 1.1
         },
         crops: []
     },
@@ -110,7 +136,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 0.5,
             water_modifier: 1.5,
-            energy_modifier: 1.0
+            energy_modifier: 1.0,
+            primary_chance: 3.0,
+            secondary_chance: 1.1
         },
         crops: []
     },
@@ -118,7 +146,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 1.0,
             water_modifier: 3.0,
-            energy_modifier: 0.5
+            energy_modifier: 0.5,
+            primary_chance: 2.0,
+            secondary_chance: 1.1
         },
         crops: []
     },
@@ -126,7 +156,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 0.7,
             water_modifier: 1.5,
-            energy_modifier: 0.5
+            energy_modifier: 1.5,
+            primary_chance: 2.0,
+            secondary_chance: 1.1
         },
         crops: []
     },
@@ -134,7 +166,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 1.0,
             water_modifier: 1.0,
-            energy_modifier: 1.0
+            energy_modifier: 1.0,
+            primary_chance: 2.0,
+            secondary_chance: 1.1
         },
         crops: []
     },
@@ -142,7 +176,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 1.0,
             water_modifier: 1.0,
-            energy_modifier: 1.0
+            energy_modifier: 1.0,
+            primary_chance: 2.0,
+            secondary_chance: 1.1
         },
         crops: []
     },
@@ -150,7 +186,9 @@ const crop_properties = {
         crop_processing: {
             growth_modifier: 0.5,
             water_modifier: 1.5,
-            energy_modifier: 1.0
+            energy_modifier: 1.0,
+            primary_chance: 2.0,
+            secondary_chance: 1.1
         },
         crops: []
     }
@@ -342,6 +380,13 @@ crop_properties.fiber_crops.crops = [
         plant: 'supplementaries:flax',
         substrate: 'dirt'
     }
+    // Thermal Series
+    // {
+    //     seed: 'thermal:flax_seeds',
+    //     render: { type: 'crop', block: 'thermal:flax' },
+    //     plant: 'thermal:flax',
+    //     substrate: 'dirt'
+    // }
 ];
 
 crop_properties.fruit_crops.crops = [
@@ -363,6 +408,19 @@ crop_properties.fruit_crops.crops = [
         seed: 'occultism:datura_seeds',
         render: { type: 'crop', block: 'occultism:datura' },
         plant: 'occultism:datura',
+        substrate: 'dirt'
+    },
+    // Thermal Series
+    {
+        seed: 'thermal:strawberry_seeds',
+        render: { type: 'crop', block: 'thermal:strawberry' },
+        plant: 'thermal:strawberry',
+        substrate: 'dirt'
+    },
+    {
+        seed: 'thermal:coffee_seeds',
+        render: { type: 'crop', block: 'thermal:coffee' },
+        plant: 'thermal:coffee',
         substrate: 'dirt'
     }
 ];
@@ -402,7 +460,32 @@ crop_properties.grain_crops.crops = [
         render: { type: 'crop', block: 'blue_skies:scalefruits' },
         plant: 'blue_skies:scalefruit',
         substrate: 'dirt'
+    },
+    // Thermal Series
+    {
+        seed: 'thermal:amaranth_seeds',
+        render: { type: 'crop', block: 'thermal:amaranth' },
+        plant: 'thermal:amaranth',
+        substrate: 'dirt'
+    },
+    {
+        seed: 'thermal:barley_seeds',
+        render: { type: 'crop', block: 'thermal:barley' },
+        plant: 'thermal:barley',
+        substrate: 'dirt'
+    },
+    {
+        seed: 'thermal:corn_seeds',
+        render: { type: 'crop', block: 'thermal:corn' },
+        plant: 'thermal:corn',
+        substrate: 'dirt'
     }
+    // {
+    //     seed: 'thermal:rice_seeds',
+    //     render: { type: 'crop', block: 'thermal:rice' },
+    //     plant: 'thermal:rice',
+    //     substrate: 'dirt'
+    // }
 ];
 crop_properties.leafy_crops.crops = [
     // Farmer's Delight
@@ -418,6 +501,19 @@ crop_properties.leafy_crops.crops = [
         render: { type: 'crop', block: 'blue_skies:winter_leaves' },
         plant: 'blue_skies:winter_leaves',
         substrate: 'dirt'
+    },
+    // Thermal Series
+    {
+        seed: 'thermal:spinach_seeds',
+        render: { type: 'crop', block: 'thermal:spinach' },
+        plant: 'thermal:spinach',
+        substrate: 'dirt'
+    },
+    {
+        seed: 'thermal:tea_seeds',
+        render: { type: 'crop', block: 'thermal:tea' },
+        plant: 'thermal:tea',
+        substrate: 'dirt'
     }
 ];
 crop_properties.legume_crops.crops = [
@@ -427,6 +523,13 @@ crop_properties.legume_crops.crops = [
         render: { type: 'crop', block: 'blue_skies:fiery_beans' },
         plant: 'blue_skies:fiery_beans',
         substrate: 'dirt'
+    },
+    // Thermal Series
+    {
+        seed: 'thermal:green_bean_seeds',
+        render: { type: 'crop', block: 'thermal:green_bean' },
+        plant: 'thermal:green_bean',
+        substrate: 'dirt'
     }
 ];
 crop_properties.melon_crops.crops = [
@@ -435,6 +538,13 @@ crop_properties.melon_crops.crops = [
         seed: 'minecraft:melon_seeds',
         render: { type: 'stem', block: 'minecraft:melon' },
         plant: 'minecraft:melon',
+        substrate: 'dirt'
+    },
+    // Thermal Series
+    {
+        seed: 'thermal:frost_melon_seeds',
+        render: { type: 'stem', block: 'thermal:frost_melon' },
+        plant: 'thermal:frost_melon',
         substrate: 'dirt'
     }
 ];
@@ -464,6 +574,31 @@ crop_properties.root_crops.crops = [
         render: { type: 'crop', block: 'farmersdelight:onions' },
         plant: 'farmersdelight:onion',
         substrate: 'dirt'
+    },
+    // Thermal Series
+    {
+        seed: 'thermal:peanut_seeds',
+        render: { type: 'crop', block: 'thermal:peanut' },
+        plant: 'thermal:peanut',
+        substrate: 'dirt'
+    },
+    // {
+    //     seed: 'thermal:onion_seeds',
+    //     render: { type: 'crop', block: 'thermal:onion' },
+    //     plant: 'thermal:onion',
+    //     substrate: 'dirt'
+    // },
+    {
+        seed: 'thermal:radish_seeds',
+        render: { type: 'crop', block: 'thermal:radish' },
+        plant: 'thermal:radish',
+        substrate: 'dirt'
+    },
+    {
+        seed: 'thermal:sadiroot_seeds',
+        render: { type: 'crop', block: 'thermal:sadiroot' },
+        plant: 'thermal:sadiroot',
+        substrate: 'dirt'
     }
 ];
 crop_properties.seed_crops.crops = [];
@@ -473,6 +608,25 @@ crop_properties.vine_crops.crops = [
         seed: 'farmersdelight:tomato_seeds',
         render: { type: 'crop', block: 'farmersdelight:tomatoes' },
         plant: 'farmersdelight:tomato',
+        substrate: 'dirt'
+    },
+    // Thermal Series
+    // {
+    //     seed: 'thermal:tomato_seeds',
+    //     render: { type: 'crop', block: 'thermal:tomato' },
+    //     plant: 'thermal:tomato',
+    //     substrate: 'dirt'
+    // },
+    {
+        seed: 'thermal:bell_pepper_seeds',
+        render: { type: 'crop', block: 'thermal:bell_pepper' },
+        plant: 'thermal:bell_pepper',
+        substrate: 'dirt'
+    },
+    {
+        seed: 'thermal:eggplant_seeds',
+        render: { type: 'crop', block: 'thermal:eggplant' },
+        plant: 'thermal:eggplant',
         substrate: 'dirt'
     }
 ];
@@ -946,6 +1100,31 @@ crop_properties.mushrooms.crops = [
         render: { type: 'generic', block: 'blue_skies:snowcap_pinhead' },
         plant: 'blue_skies:snowcap_pinhead',
         substrate: 'mushroom'
+    },
+    // Thermal Series
+    {
+        seed: 'thermal:redstone_mushroom_spores',
+        render: { type: 'generic', block: 'thermal:redstone_mushroom' },
+        plant: 'thermal:redstone_mushroom_spores',
+        substrate: 'mushroom'
+    },
+    {
+        seed: 'thermal:glowstone_mushroom_spores',
+        render: { type: 'generic', block: 'thermal:glowstone_mushroom' },
+        plant: 'thermal:glowstone_mushroom_spores',
+        substrate: 'mushroom'
+    },
+    {
+        seed: 'thermal:gunpowder_mushroom_spores',
+        render: { type: 'generic', block: 'thermal:gunpowder_mushroom' },
+        plant: 'thermal:gunpowder_mushroom_spores',
+        substrate: 'mushroom'
+    },
+    {
+        seed: 'thermal:slime_mushroom_spores',
+        render: { type: 'generic', block: 'thermal:slime_mushroom' },
+        plant: 'thermal:slime_mushroom_spores',
+        substrate: 'mushroom'
     }
     // Botania
     // {
@@ -1119,9 +1298,9 @@ crop_properties.vines.crops = [
         substrate: 'nether_mushroom'
     },
     {
-        seed: 'byg:whaling_vine',
-        render: { type: 'generic', block: 'byg:whaling_vine' },
-        plant: 'byg:whaling_vine',
+        seed: 'byg:wailing_vine',
+        render: { type: 'generic', block: 'byg:wailing_vine' },
+        plant: 'byg:wailing_vine',
         substrate: 'end_stone'
     },
     {

@@ -43,8 +43,8 @@ ServerEvents.highPriorityData((event) => {
             color: '#D3D3D3',
             entries: {
                 common: { entity: 'minecraft:skeleton', nbt: '{}' },
-                uncommon: { entity: 'minecraft:skeleton', nbt: '{}' },
-                rare: { entity: 'minecraft:stray', nbt: '{}' }
+                uncommon: { entity: 'minecraft:stray', nbt: '{}' },
+                rare: { entity: 'twilightforest:skeleton_druid', nbt: '{}' }
             }
         },
         {
@@ -66,21 +66,12 @@ ServerEvents.highPriorityData((event) => {
             }
         },
         {
-            type: 'blaze_gate',
-            color: '#FFFF84',
-            entries: {
-                common: { entity: 'minecraft:blaze', nbt: '{}' },
-                uncommon: { entity: 'minecraft:blaze', nbt: '{}' },
-                rare: { entity: 'minecraft:blaze', nbt: '{}' }
-            }
-        },
-        {
             type: 'creeper_gate',
             color: '#83DE71',
             entries: {
                 common: { entity: 'minecraft:creeper', nbt: '{}' },
-                uncommon: { entity: 'minecraft:creeper', nbt: '{}' },
-                rare: { entity: 'minecraft:creeper', nbt: '{"powered": true}' }
+                uncommon: { entity: 'creeperoverhaul:jungle_creeper', nbt: '{}' },
+                rare: { entity: 'creeperoverhaul:swamp_creeper', nbt: '{"powered": true}' }
             }
         },
         {
@@ -108,6 +99,42 @@ ServerEvents.highPriorityData((event) => {
                 common: { entity: 'minecraft:slime', nbt: '{}' },
                 uncommon: { entity: 'minecraft:slime', nbt: '{}' },
                 rare: { entity: 'minecraft:slime', nbt: '{}' }
+            }
+        },
+        {
+            type: 'blaze_gate',
+            color: '#f55607',
+            entries: {
+                common: { entity: 'minecraft:blaze', nbt: '{}' },
+                uncommon: { entity: 'twilightforest:fire_beetle', nbt: '{}' },
+                rare: { entity: 'thermal:basalz', nbt: '{}' }
+            }
+        },
+        {
+            type: 'basalz_gate',
+            color: '#9537a3',
+            entries: {
+                common: { entity: 'thermal:basalz', nbt: '{}' },
+                uncommon: { entity: 'twilightforest:troll', nbt: '{}' },
+                rare: { entity: 'minecraft:blaze', nbt: '{}' }
+            }
+        },
+        {
+            type: 'blizz_gate',
+            color: '#0a79f0',
+            entries: {
+                common: { entity: 'thermal:blizz', nbt: '{}' },
+                uncommon: { entity: 'twilightforest:stable_ice_core', nbt: '{}' },
+                rare: { entity: 'thermal:blitz', nbt: '{}' }
+            }
+        },
+        {
+            type: 'blitz_gate',
+            color: '#FFFF84',
+            entries: {
+                common: { entity: 'thermal:blitz', nbt: '{}' },
+                uncommon: { entity: 'twilightforest:mist_wolf', nbt: '{}' },
+                rare: { entity: 'thermal:blizz', nbt: '{}' }
             }
         }
     ];

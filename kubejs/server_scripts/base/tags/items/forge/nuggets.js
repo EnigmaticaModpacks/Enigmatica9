@@ -1,7 +1,10 @@
 ServerEvents.tags('item', (event) => {
-    blueSkiesMetals.forEach((material) => {
-        event.add('forge:nuggets', `blue_skies:${material}_nugget`);
-        event.add(`forge:nuggets/${material}`, `blue_skies:${material}_nugget`);
-        event.removeAll(`blue_skies:nuggets/${material}`);
-    });
+    event.add('forge:nuggets', [
+        `blue_skies:falsite_nugget`,
+        `blue_skies:ventium_nugget`,
+        `blue_skies:horizonite_nugget`
+    ]);
+    event.add(`forge:nuggets/falsite`, `blue_skies:falsite_nugget`);
+    event.add(`forge:nuggets/ventium`, `blue_skies:ventium_nugget`);
+    event.add(`forge:nuggets/horizonite`, `blue_skies:horizonite_nugget`);
 });

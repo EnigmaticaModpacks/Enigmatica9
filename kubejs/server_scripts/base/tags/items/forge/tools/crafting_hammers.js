@@ -1,13 +1,4 @@
 ServerEvents.tags('item', (event) => {
-    const items = ['immersiveengineering:hammer', 'emendatusenigmatica:enigmatic_hammer'];
-    const exceptions = [];
-
-    // const tagGroups = ['forge:tools', 'forge:tools/crafting_hammers'];
-
-    // tagGroups.forEach((tagGroup) => {
-    //     event.get(tagGroup).add(items).remove(exceptions);
-    // });
-
-    event.get('forge:tools').add(items).remove(exceptions);
-    event.get('forge:tools/crafting_hammers').add(items).remove(exceptions);
+    event.get('forge:tools').add(['immersiveengineering:hammer', 'emendatusenigmatica:enigmatic_hammer']);
+    event.get('forge:tools/crafting_hammers').add(['immersiveengineering:hammer', 'emendatusenigmatica:enigmatic_hammer']);
 });

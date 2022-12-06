@@ -1,16 +1,15 @@
 ServerEvents.tags('item', (event) => {
-    blueSkiesMetals.forEach((material) => {
-        event.add('forge:raw_materials', `blue_skies:raw_${material}`);
-        event.add(`forge:raw_materials/${material}`, `blue_skies:raw_${material}`);
-        event.removeAll(`blue_skies:raw_materials/${material}`);
-    });
+    event.add('forge:raw_materials', [
+        `blue_skies:raw_falsite`,
+        `blue_skies:raw_ventium`,
+        `blue_skies:raw_horizonite`,
+        `blue_skies:raw_aquite`,
+        `blue_skies:raw_charoite`
+    ]);
+    event.add(`forge:raw_materials/falsite`, `blue_skies:raw_falsite`);
+    event.add(`forge:raw_materials/ventium`, `blue_skies:raw_ventium`);
+    event.add(`forge:raw_materials/horizonite`, `blue_skies:raw_horizonite`);
 
-    blueSkiesGems.forEach((material) => {
-        if (material == 'pyrope' || material == 'diopside' || material == 'moonstone') {
-            return;
-        }
-        event.add('forge:raw_materials', `blue_skies:raw_${material}`);
-        event.add(`forge:raw_materials/${material}`, `blue_skies:raw_${material}`);
-        event.removeAll(`blue_skies:raw_materials/${material}`);
-    });
+    event.add(`forge:raw_materials/aquite`, `blue_skies:raw_aquite`);
+    event.add(`forge:raw_materials/charoite`, `blue_skies:raw_charoite`);
 });

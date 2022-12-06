@@ -17,7 +17,7 @@
 	meanAvgTickTime = 45
 	#The update frequency of average server tick time checks to update view distances. Default: 30sec
 	#Range: 1 ~ 1000
-	viewDistanceUpdateRate = 60
+	viewDistanceUpdateRate = 30
 	#Whether to adjust the simulation distance aswell, default: true.
 	adjustSimulationDistance = true
 	#Whether to output log messages for actions done. This can be helpful to balance the other settings nicely.
