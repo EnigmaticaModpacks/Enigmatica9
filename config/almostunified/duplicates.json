@@ -12,7 +12,8 @@
       "cookingtime": "HigherRule",
       "energy": "HigherRule",
       "experience": "HigherRule"
-    }
+    },
+    "shouldSanitize": false
   },
   "overrideDuplicateRules": {
     "minecraft:crafting_shaped": {
@@ -22,7 +23,18 @@
         "key",
         "group"
       ],
-      "rules": {}
+      "rules": {},
+      "shouldSanitize": false
+    },
+    "create:crushing": {
+      "ignoredFields": [
+        "conditions",
+        "group"
+      ],
+      "rules": {
+        "processingTime": "LowerRule"
+      },
+      "shouldSanitize": true
     }
   },
   "strictMode": false
