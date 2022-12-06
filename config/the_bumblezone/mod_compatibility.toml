@@ -191,3 +191,12 @@
 		#
 		spawnResourcefulBeesHoneycombVeins = true
 
+	["Mod Compatibility Options"."Potion of Bees Options"]
+		# 
+		#-----------------------------------------------------
+		#
+		# Allow Potion of Bees to turn Empty Honeycomb Brood blocks into 
+		# a regular Honeycomb Brood Block with a larva inside! 
+		#
+		allowPotionOfBeesRevivingEmptyBroodBlock = true
+
