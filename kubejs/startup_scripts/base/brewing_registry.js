@@ -114,7 +114,7 @@ MoreJSEvents.registerPotionBrewing((event) => {
             output: 'minecraft:invisibility'
         },
         {
-            reagent: 'hexerei:dried_mugwort_leaves',
+            reagent: 'blue_skies:lunar_vine',
             input: 'minecraft:awkward',
             output: 'minecraft:slow_falling'
         }
