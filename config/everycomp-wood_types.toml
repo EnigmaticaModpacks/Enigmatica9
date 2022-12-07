@@ -59,6 +59,10 @@
 			zelkova = true
 			sythian = true
 
+		[types.wood_type.hexerei]
+			mahogany = true
+			willow = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.blue_skies]
@@ -167,6 +171,10 @@
 			witch_hazel = true
 			zelkova = true
 
+		[types.leaves_type.hexerei]
+			mahogany = true
+			willow = true
+
 [entries]
 
 	[entries.wood_type]
@@ -224,6 +232,7 @@
 			classic_door = true
 			stable_door = true
 			modern_door = true
+			swamp_door = true
 
 		[entries.wood_type.decorative_blocks]
 			beam = true
@@ -247,6 +256,8 @@
 			paper_trapdoor = true
 			bark_trapdoor = true
 			mystic_trapdoor = true
+			ranch_trapdoor = true
+			swamp_trapdoor = true
 
 		[entries.wood_type.mcwfences]
 			highley_gate = true
@@ -286,6 +297,22 @@
 
 		[entries.wood_type.farmersdelight]
 			cabinet = true
+
+		[entries.wood_type.mcwroofs]
+			planks_upper_steep_roof = true
+			top_roof = true
+			lower_roof = true
+			planks_roof = true
+			upper_steep_roof = true
+			steep_roof = true
+			upper_lower_roof = true
+			attic_roof = true
+			planks_upper_lower_roof = true
+			roof = true
+			planks_attic_roof = true
+			planks_top_roof = true
+			planks_steep_roof = true
+			planks_lower_roof = true
 
 	[entries.leaves_type]
 
