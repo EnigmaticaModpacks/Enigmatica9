@@ -88,6 +88,23 @@ ServerEvents.recipes((event) => {
             speed: 0.75,
             temperature: { min_temp: 473 },
             id: `${id_prefix}experience_nugget_to_liquid`
+        },
+        {
+            fluid_output: { amount: 60, fluid: 'sophisticatedcore:xp_still' },
+            item_input: [{ item: 'ars_nouveau:experience_gem' }],
+            exothermic: true,
+            speed: 0.75,
+            temperature: { min_temp: 473 },
+            id: `${id_prefix}experience_gem_to_liquid`
+        }
+        ,
+        {
+            fluid_output: { amount: 240, fluid: 'sophisticatedcore:xp_still' },
+            item_input: [{ item: 'ars_nouveau:greater_experience_gem' }],
+            exothermic: true,
+            speed: 0.75,
+            temperature: { min_temp: 473 },
+            id: `${id_prefix}greater_experience_gem_to_liquid`
         }
     ];
 

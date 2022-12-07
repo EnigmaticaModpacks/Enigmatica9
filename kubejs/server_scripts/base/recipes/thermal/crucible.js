@@ -10,7 +10,25 @@ ServerEvents.recipes((event) => {
             },
             energy: 5000,
             id: `${id_prefix}experience_nugget_to_liquid`
-        }
+        },
+        {
+            input: 'ars_nouveau:experience_gem',
+            output: {
+                fluid: 'sophisticatedcore:xp_still',
+                amount: 60
+            },
+            energy: 5000,
+            id: `${id_prefix}experience_gem_to_liquid`
+        },
+        {
+            input: 'ars_nouveau:greater_experience_gem',
+            output: {
+                fluid: 'sophisticatedcore:xp_still',
+                amount: 240
+            },
+            energy: 5000,
+            id: `${id_prefix}greater_experience_gem_to_liquid`
+        } 
     ];
 
     recipes.forEach((recipe) => {
