@@ -112,6 +112,11 @@ MoreJSEvents.registerPotionBrewing((event) => {
             reagent: 'byg:ether_bulbs',
             input: 'minecraft:awkward',
             output: 'minecraft:invisibility'
+        },
+        {
+            reagent: 'hexerei:dried_mugwort_leaves',
+            input: 'minecraft:awkward',
+            output: 'minecraft:slow_falling'
         }
     ];
 
