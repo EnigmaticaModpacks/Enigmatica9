@@ -46,6 +46,12 @@ ServerEvents.recipes((event) => {
             outputs: [{ amount: 500, fluid: 'create:tea' }],
             heatRequirement: 'heated',
             id: `create:mixing/tea`
+        },
+        {
+            inputs: [Ingredient.of('create:experience_nugget').toJson()],
+            outputs: [{ amount: 60, fluid: 'sophisticatedcore:xp_still' }],
+            heatRequirement: 'heated',
+            id: `${id_prefix}experience_nugget_to_liquid`
         }
     ];
 
