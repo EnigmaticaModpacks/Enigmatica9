@@ -539,6 +539,13 @@ const dye_sources = [
         tertiary: 'minecraft:green_dye'
     },
     {
+        input: 'byg:lollipop_flower',
+        type: 'small',
+        primary: 'minecraft:yellow_dye',
+        secondary: 'minecraft:orange_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
         input: 'byg:magenta_amaranth',
         type: 'small',
         primary: 'minecraft:magenta_dye',

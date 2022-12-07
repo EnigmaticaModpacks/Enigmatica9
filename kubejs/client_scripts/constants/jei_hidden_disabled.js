@@ -53,6 +53,9 @@ jei.base.items.disabled = [
     'mekanism:basic_bin',
     'immersiveengineering:blast_furnace',
     'immersiveengineering:alloy_smelter',
+    'immersiveengineering:plantoil_bucket',
+    'immersiveengineering:ethanol_bucket',
+    'immersiveengineering:biodiesel_bucket',
     'thermal:flax',
     'thermal:flax_block',
     'thermal:flax_seeds',
@@ -74,7 +77,7 @@ jei.base.items.disabled = [
     'thermal:crude_oil_bucket',
     'thermal:heavy_oil_bucket',
     'thermal:light_oil_bucket',
-    'thermal:refined_fuel_bucket'
+    'thermal:refined_fuel_bucket',
     /byg:.*pendorite.*/,
     /byg:.*ametrine.*/
 ];
@@ -125,7 +128,10 @@ jei.base.fluids.hidden = [
     'thermal:crude_oil',
     'thermal:heavy_oil',
     'thermal:light_oil',
-    'thermal:refined_fuel'
+    'thermal:refined_fuel',
+    'immersiveengineering:plantoil',
+    'immersiveengineering:ethanol',
+    'immersiveengineering:biodiesel'
 ];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
 

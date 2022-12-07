@@ -211,6 +211,13 @@
 		#Range: 0.0 ~ 1.0
 		critter_spawn_chance = 0.009999999776482582
 
+	[blocks.enderman_head]
+		#Time to increase 1 power level when being looked at
+		#Range: 0 ~ 10000
+		ticks_to_increase_power = 15
+		#do enderman heads work when looked from any side?
+		work_from_any_side = false
+
 #Configure spawning conditions
 [spawns]
 

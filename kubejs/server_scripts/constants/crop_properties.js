@@ -599,6 +599,13 @@ crop_properties.root_crops.crops = [
         render: { type: 'crop', block: 'thermal:sadiroot' },
         plant: 'thermal:sadiroot',
         substrate: 'dirt'
+    },
+    // Blue Skies
+    {
+        seed: 'blue_skies:solnut',
+        render: { type: 'crop', block: 'blue_skies:solnuts' },
+        plant: 'blue_skies:solnut',
+        substrate: 'dirt'
     }
 ];
 crop_properties.seed_crops.crops = [];
@@ -917,11 +924,29 @@ crop_properties.aquatic.crops = [
         plant: 'minecraft:kelp',
         substrate: 'water'
     },
+    {
+        seed: 'minecraft:big_dripleaf',
+        render: { type: 'generic', block: 'minecraft:big_dripleaf' },
+        plant: 'minecraft:big_dripleaf',
+        substrate: 'water'
+    },
+    {
+        seed: 'minecraft:small_dripleaf',
+        render: { type: 'generic', block: 'minecraft:small_dripleaf' },
+        plant: 'minecraft:small_dripleaf',
+        substrate: 'water'
+    },
     // Byg
     {
         seed: 'byg:tiny_lilypads',
         render: { type: 'generic', block: 'byg:tiny_lilypads' },
         plant: 'byg:tiny_lilypads',
+        substrate: 'water'
+    },
+    {
+        seed: 'byg:flowering_tiny_lily_pads',
+        render: { type: 'generic', block: 'byg:flowering_tiny_lily_pads' },
+        plant: 'byg:flowering_tiny_lily_pads',
         substrate: 'water'
     },
     {
@@ -1715,6 +1740,12 @@ crop_properties.flowers.crops = [
         substrate: 'grass'
     },
     {
+        seed: 'byg:lollipop_flower',
+        render: { type: 'generic', block: 'byg:lollipop_flower' },
+        plant: 'byg:lollipop_flower',
+        substrate: 'grass'
+    },
+    {
         seed: 'byg:magenta_amaranth',
         render: { type: 'generic', block: 'byg:magenta_amaranth' },
         plant: 'byg:magenta_amaranth',
@@ -1832,6 +1863,12 @@ crop_properties.flowers.crops = [
         seed: 'byg:tall_pink_allium',
         render: { type: 'generic', block: 'byg:tall_pink_allium' },
         plant: 'byg:tall_pink_allium',
+        substrate: 'grass'
+    },
+    {
+        seed: 'byg:thereal_bellflower',
+        render: { type: 'generic', block: 'byg:thereal_bellflower' },
+        plant: 'byg:thereal_bellflower',
         substrate: 'grass'
     },
     {

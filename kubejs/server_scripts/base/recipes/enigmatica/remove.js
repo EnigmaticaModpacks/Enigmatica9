@@ -21,6 +21,7 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:processing\/.*\/slurry\/clean/ },
         { id: /mekanism:processing\/.*\/slurry\/dirty/ },
         { id: 'mekanism:processing/netherite/dust_to_ancient_debris' },
+        { id: /mekanism:crushing\/biofuel/ },
 
         { id: 'quark:tweaks/smelting/bone_meal_utility' },
 
@@ -76,6 +77,11 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:machines/refinery/refinery_heavy_oil' },
         { id: 'thermal:machines/refinery/refinery_light_oil' },
         { id: 'thermal:machines/pyrolyzer/pyrolyzer_bitumen' },
+        { id: 'thermal:compat/immersiveengineering/press_ie_hemp_to_plantoil' },
+        { id: 'thermal:storage/sugar_cane_block' },
+
+        { id: /pneumaticcraft:thermo_plant\/vegetable_oil_from_/ },
+        { id: /pneumaticcraft:thermo_plant\/ethanol_from_/ },
 
         { type: 'create:cutting' },
 
@@ -83,6 +89,9 @@ ServerEvents.recipes((event) => {
         { type: 'immersiveengineering:cloche' },
         { type: 'immersiveengineering:generated_list' },
         { type: 'immersiveengineering:alloy' },
+        { type: 'immersiveengineering:squeezer' },
+        { type: 'immersiveengineering:fermenter' },
+
         { type: 'thermal:sawmill' },
         { type: 'thermal:pulverizer_recycle' },
         { type: 'thermal:insolator' },
