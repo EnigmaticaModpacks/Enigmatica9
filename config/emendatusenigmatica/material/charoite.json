@@ -1,0 +1,20 @@
+{
+    "id": "charoite",
+    "source": "modded",
+    "localizedName": "Charoite",
+    "processedTypes": [
+        "ore",
+        "raw",
+        "crushed_ore",
+        "storage_block",
+        "gem"
+    ],
+    "properties": {
+        "materialType": "gem",
+        "harvestLevel": 2,
+        "blockRecipeType": 9
+    },
+    "colors": {
+        "materialColor": "c987d6"
+    }
+}
