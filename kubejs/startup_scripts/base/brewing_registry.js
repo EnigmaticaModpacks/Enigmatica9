@@ -9,6 +9,11 @@ MoreJSEvents.registerPotionBrewing((event) => {
             output: 'minecraft:awkward'
         },
         {
+            reagent: 'pneumaticcraft:glycerol',
+            input: 'minecraft:water',
+            output: 'minecraft:awkward'
+        },
+        {
             reagent: 'twilightforest:torchberries',
             input: 'minecraft:awkward',
             output: 'minecraft:night_vision'
@@ -84,7 +89,7 @@ MoreJSEvents.registerPotionBrewing((event) => {
             output: 'minecraft:swiftness'
         },
         {
-            reagent: 'minecraft:frogspawn',
+            reagent: 'blue_skies:crescent_fruit',
             input: 'minecraft:awkward',
             output: 'minecraft:leaping'
         },
@@ -92,6 +97,21 @@ MoreJSEvents.registerPotionBrewing((event) => {
             reagent: 'byg:death_cap',
             input: 'minecraft:awkward',
             output: 'minecraft:harming'
+        },
+        {
+            reagent: 'ars_nouveau:experience_gem',
+            input: 'minecraft:awkward',
+            output: 'apotheosis:knowledge'
+        },
+        {
+            reagent: 'ars_nouveau:greater_experience_gem',
+            input: 'minecraft:awkward',
+            output: 'apotheosis:strong_knowledge'
+        },
+        {
+            reagent: 'byg:ether_bulbs',
+            input: 'minecraft:awkward',
+            output: 'minecraft:invisibility'
         }
     ];
 
