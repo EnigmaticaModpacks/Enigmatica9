@@ -599,6 +599,13 @@ crop_properties.root_crops.crops = [
         render: { type: 'crop', block: 'thermal:sadiroot' },
         plant: 'thermal:sadiroot',
         substrate: 'dirt'
+    },
+    // Blue Skies
+    {
+        seed: 'blue_skies:solnut',
+        render: { type: 'crop', block: 'blue_skies:solnuts' },
+        plant: 'blue_skies:solnut',
+        substrate: 'dirt'
     }
 ];
 crop_properties.seed_crops.crops = [];
@@ -937,9 +944,9 @@ crop_properties.aquatic.crops = [
         substrate: 'water'
     },
     {
-        seed: 'byg:flowering_tiny_lilypads',
-        render: { type: 'generic', block: 'byg:flowering_tiny_lilypads' },
-        plant: 'byg:flowering_tiny_lilypads',
+        seed: 'byg:flowering_tiny_lily_pads',
+        render: { type: 'generic', block: 'byg:flowering_tiny_lily_pads' },
+        plant: 'byg:flowering_tiny_lily_pads',
         substrate: 'water'
     },
     {

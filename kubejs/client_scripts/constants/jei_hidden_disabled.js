@@ -58,7 +58,10 @@ jei.base.items.disabled = [
     'thermal:crude_oil_bucket',
     'thermal:heavy_oil_bucket',
     'thermal:light_oil_bucket',
-    'thermal:refined_fuel_bucket'
+    'thermal:refined_fuel_bucket',
+    'immersiveengineering:plantoil_bucket',
+    'immersiveengineering:ethanol_bucket',
+    'immersiveengineering:biodiesel_bucket'
 ];
 jei.base.items.hidden = [
     'kubejs:altered_recipe_indicator',
@@ -104,7 +107,10 @@ jei.base.fluids.hidden = [
     'thermal:crude_oil',
     'thermal:heavy_oil',
     'thermal:light_oil',
-    'thermal:refined_fuel'
+    'thermal:refined_fuel',
+    'immersiveengineering:plantoil',
+    'immersiveengineering:ethanol',
+    'immersiveengineering:biodiesel'
 ];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
 
