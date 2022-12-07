@@ -1,0 +1,5 @@
+
+["Patreon Reward"]
+	#Whether the Patreon Reward should appear floating over the player's head
+	showReward = true
+
