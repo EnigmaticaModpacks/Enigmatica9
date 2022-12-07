@@ -10,6 +10,7 @@
         { "output": "blue_skies:fiery_bean_seeds" },
         { "output": "blue_skies:pine_fruit_seeds" },
         { "output": "blue_skies:scalefruit_seeds" },
-        { "output": "blue_skies:winter_leaf_seeds" }
+        { "output": "blue_skies:winter_leaf_seeds" },
+        { "output": "blue_skies:solnut" }
     ]
 }
