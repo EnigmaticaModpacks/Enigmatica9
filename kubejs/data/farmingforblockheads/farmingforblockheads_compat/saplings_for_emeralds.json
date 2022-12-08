@@ -63,6 +63,8 @@
         { "output": "ars_nouveau:purple_archwood_sapling" },
         { "output": "ars_nouveau:blue_archwood_sapling" },
         { "output": "ars_elemental:yellow_archwood_sapling" },
-        { "output": "minecraft:mangrove_propagule" }
+        { "output": "minecraft:mangrove_propagule" },
+        { "output": "hexerei:willow_sapling" },
+        { "output": "hexerei:mahogany_sapling" }
     ]
 }

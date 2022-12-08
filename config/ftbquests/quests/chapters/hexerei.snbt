@@ -107,23 +107,15 @@
 			}]
 		}
 		{
-			x: 3.0d
+			x: 2.5d
 			y: -1.5d
-			dependencies: ["54FB7C791B5492DF"]
-			id: "1315E52DCEC5FC89"
-			tasks: [{
-				id: "22997BD0A1E9B3D7"
-				type: "item"
-				item: {
-					id: "hexerei:herb_jar"
-					Count: 1b
-					tag: { }
-				}
-			}]
-		}
-		{
-			x: 2.0d
-			y: -1.5d
+			description: [
+				"With a fine selection of herbs in hand, and a small garden prepared, the real magic of Witchcraft may begin. "
+				""
+				"When it comes to Herbs and cooking, fresh is most certainly best. But sometimes certain properties only manifest once a plant has been dried. Hang a Drying Rack or two around to get started. "
+				""
+				"Items may be hung manually with a Right-Click and removed again with a Sneak Right-Click. They may also be inserted via Hopper or other automation and the Drying Rack will conveniently prevent them from being pulled off before the process has finished. Each Rack holds up to nine items at a time."
+			]
 			dependencies: ["54FB7C791B5492DF"]
 			id: "6834E2403EA77413"
 			tasks: [{
@@ -131,34 +123,41 @@
 				type: "item"
 				item: "hexerei:herb_drying_rack"
 			}]
+			rewards: [{
+				id: "4B92E1A0497F65C8"
+				type: "item"
+				item: {
+					id: "hexerei:herb_jar"
+					Count: 1b
+					tag: { }
+				}
+				count: 5
+			}]
 		}
 		{
-			x: 2.0d
+			icon: "hexerei:sage"
+			x: 2.5d
 			y: -0.5d
 			dependencies: ["6834E2403EA77413"]
 			id: "69E94721C3668CCE"
-			tasks: [{
-				id: "631BBC361863C126"
-				type: "item"
-				item: {
-					id: "hexerei:dried_sage_bundle"
-					Count: 1b
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "631BBC361863C126"
+					type: "item"
+					item: {
+						id: "hexerei:dried_sage_bundle"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
 					}
 				}
-			}]
-		}
-		{
-			x: 2.0d
-			y: 0.5d
-			dependencies: ["69E94721C3668CCE"]
-			id: "17BF40B6E6814296"
-			tasks: [{
-				id: "0A195C2D205A123A"
-				type: "item"
-				item: "hexerei:sage_burning_plate"
-			}]
+				{
+					id: "1DA45AE07AED2CDF"
+					type: "item"
+					item: "hexerei:sage_burning_plate"
+				}
+			]
 		}
 		{
 			x: 7.0d
@@ -264,16 +263,78 @@
 		}
 		{
 			title: "Getting Started: Herb Lore"
+			icon: "hexerei:herb_drying_rack_full"
 			x: 2.5d
 			y: -2.5d
+			description: [
+				"The wise witch knows the properties of every plant in their domain, and there are none more knowledgeable than those who call the Swamps their home. Locate a swamp and attempt to forage up some samples for a personal herb garden. "
+				""
+				"The ancient practice of Dowsing has been used for everything from finding ground water and gems to gravesites and malign spirits. Hexerei’s Dowsing Rod is perfectly attuned to lead the bearer to nearby Swamps and Jungles, with the leaves changing from vibrant green when pointed the correct way, to dull brown when facing away from the target. "
+				""
+				"A Nature’s Compass is also a viable tool for locating Swamps. And for the less adventurous witches, a stop a nearby Market Stall is likely sufficient. "
+			]
 			hide_dependency_lines: true
 			dependencies: ["68D1B646B4C5921A"]
+			min_width: 300
 			id: "54FB7C791B5492DF"
-			tasks: [{
-				id: "76F69D63F72B8401"
-				type: "item"
-				item: "hexerei:belladonna_flowers"
-			}]
+			tasks: [
+				{
+					id: "6BE2D12FBBC4BD5E"
+					type: "item"
+					title: "Locate a Swamp"
+					icon: "hexerei:dowsing_rod"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "hexerei:dowsing_rod"
+									Count: 1b
+								}
+								{
+									id: "naturescompass:naturescompass"
+									Count: 1b
+									tag: { }
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "3EADCEE6A534FEB9"
+					type: "item"
+					title: "Herbs"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "hexerei:sage_seed"
+									Count: 1b
+								}
+								{
+									id: "hexerei:mandrake_flower"
+									Count: 1b
+								}
+								{
+									id: "hexerei:mugwort_bush"
+									Count: 1b
+								}
+								{
+									id: "hexerei:yellow_dock_bush"
+									Count: 1b
+								}
+								{
+									id: "hexerei:belladonna_flower"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
 		}
 		{
 			x: 9.5d
