@@ -22,6 +22,8 @@ ServerEvents.recipes((event) => {
         { id: 'create:compat/ae2/mixing/fluix_crystal' },
         { id: 'create:compat/byg/crushing/lignite_ore' },
 
+        { id: 'hexerei:black_dye_from_pestle_and_mortar' },
+
         { id: 'thermal:machines/centrifuge/centrifuge_allium' },
         { id: 'thermal:machines/centrifuge/centrifuge_azure_bluet' },
         { id: 'thermal:machines/centrifuge/centrifuge_blue_orchid' },

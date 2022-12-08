@@ -514,6 +514,37 @@ crop_properties.leafy_crops.crops = [
         render: { type: 'crop', block: 'thermal:tea' },
         plant: 'thermal:tea',
         substrate: 'dirt'
+    },
+    // Hexerei
+    {
+        seed: 'hexerei:sage_seed',
+        render: { type: 'generic', block: 'hexerei:sage_crop' },
+        plant: 'hexerei:sage',
+        substrate: 'dirt'
+    },
+    {
+        seed: 'hexerei:belladonna_flowers',
+        render: { type: 'generic', block: 'hexerei:belladonna_flower' },
+        plant: 'hexerei:belladonna_berries',
+        substrate: 'dirt'
+    },
+    {
+        seed: 'hexerei:mandrake_flowers',
+        render: { type: 'generic', block: 'hexerei:mandrake_flower' },
+        plant: 'hexerei:mandrake_root',
+        substrate: 'dirt'
+    },
+    {
+        seed: 'hexerei:mugwort_flowers',
+        render: { type: 'generic', block: 'hexerei:mugwort_bush' },
+        plant: 'hexerei:mugwort_leaves',
+        substrate: 'dirt'
+    },
+    {
+        seed: 'hexerei:yellow_dock_flowers',
+        render: { type: 'generic', block: 'hexerei:yellow_dock_bush' },
+        plant: 'hexerei:yellow_dock_leaves',
+        substrate: 'dirt'
     }
 ];
 crop_properties.legume_crops.crops = [
@@ -991,6 +1022,13 @@ crop_properties.aquatic.crops = [
         seed: 'blue_skies:brumble_vine_top',
         render: { type: 'generic', block: 'blue_skies:brumble_vine_top' },
         plant: 'blue_skies:brumble_vine_top',
+        substrate: 'water'
+    },
+    // Hexerei
+    {
+        seed: 'hexerei:flowering_lily_pad',
+        render: { type: 'generic', block: 'hexerei:flowering_lily_pad' },
+        plant: 'hexerei:flowering_lily_pad',
         substrate: 'water'
     }
 ];
