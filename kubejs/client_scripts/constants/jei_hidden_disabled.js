@@ -99,7 +99,15 @@ jei.base.items.hidden = [
     'twilightforest:ur_ghast_boss_spawner',
     'twilightforest:knight_phantom_boss_spawner',
     'twilightforest:minoshroom_boss_spawner',
-    'twilightforest:lich_boss_spawner'
+    'twilightforest:lich_boss_spawner',
+    'hexerei:small_selenite_bud',
+    'hexerei:medium_selenite_bud',
+    'hexerei:large_selenite_bud',
+    'hexerei:selenite_cluster',
+    'hexerei:budding_selenite',
+    'hexerei:selenite_block',
+    'hexerei:creative_waxing_kit',
+    'hexerei:selenite_shard'
 ];
 jei.base.fluids.hidden = [
     'thermal:latex',
