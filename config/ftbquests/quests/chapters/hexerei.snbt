@@ -7,5 +7,347 @@
 	icon: "hexerei:crow_ankh_amulet"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			icon: {
+				id: "hexerei:witch_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 8.5d
+			y: -1.5d
+			dependencies: ["5CBE4B1409CA3DB1"]
+			id: "135494AEBA82B7A7"
+			tasks: [
+				{
+					id: "4FF2360FE475822C"
+					type: "item"
+					item: {
+						id: "hexerei:witch_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6603E2C062B26E0B"
+					type: "item"
+					item: {
+						id: "hexerei:witch_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "714A3AD5F90F9916"
+					type: "item"
+					item: {
+						id: "hexerei:witch_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Getting Started: Cauldron Crafting"
+			x: 6.0d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["68D1B646B4C5921A"]
+			id: "48627087020E059F"
+			tasks: [{
+				id: "714B5D15806E5AE1"
+				type: "item"
+				item: "hexerei:mixing_cauldron"
+			}]
+		}
+		{
+			title: "Hexerei"
+			icon: "hexerei:belladonna_flowers"
+			x: 6.0d
+			y: -4.0d
+			shape: "hexagon"
+			id: "68D1B646B4C5921A"
+			tasks: [{
+				id: "4A53F18E742B9636"
+				type: "item"
+				title: "Herbs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "hexerei:herbs"
+					}
+				}
+			}]
+		}
+		{
+			x: 10.5d
+			y: -1.5d
+			dependencies: ["5CBE4B1409CA3DB1"]
+			id: "39BB530B6057DA94"
+			tasks: [{
+				id: "5B64EBF3D22DECD9"
+				type: "item"
+				item: {
+					id: "hexerei:warhammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.5d
+			dependencies: ["54FB7C791B5492DF"]
+			id: "1315E52DCEC5FC89"
+			tasks: [{
+				id: "22997BD0A1E9B3D7"
+				type: "item"
+				item: {
+					id: "hexerei:herb_jar"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			dependencies: ["54FB7C791B5492DF"]
+			id: "6834E2403EA77413"
+			tasks: [{
+				id: "1BA14B4A6E3CE766"
+				type: "item"
+				item: "hexerei:herb_drying_rack"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			dependencies: ["6834E2403EA77413"]
+			id: "69E94721C3668CCE"
+			tasks: [{
+				id: "631BBC361863C126"
+				type: "item"
+				item: {
+					id: "hexerei:dried_sage_bundle"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.5d
+			dependencies: ["69E94721C3668CCE"]
+			id: "17BF40B6E6814296"
+			tasks: [{
+				id: "0A195C2D205A123A"
+				type: "item"
+				item: "hexerei:sage_burning_plate"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -0.5d
+			dependencies: ["753F45812A0A4754"]
+			id: "3659D0540E05DE94"
+			tasks: [{
+				id: "699E1CF96C5EEB0F"
+				type: "item"
+				item: "hexerei:candle"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -1.5d
+			dependencies: ["48627087020E059F"]
+			id: "753F45812A0A4754"
+			tasks: [{
+				id: "317445E703CFA8A5"
+				type: "item"
+				item: "hexerei:candle_dipper"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -0.5d
+			dependencies: ["5CBE4B1409CA3DB1"]
+			id: "2427E2062E71E3C7"
+			tasks: [{
+				id: "3A2C7E4DF750C249"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "hexerei:mahogany_broom"
+								Count: 1b
+								tag: { }
+							}
+							{
+								id: "hexerei:willow_broom"
+								Count: 1b
+								tag: { }
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: 0.5d
+			dependencies: ["2427E2062E71E3C7"]
+			id: "3D0BF6FF68EE43FC"
+			tasks: [{
+				id: "7ED27F05A6087868"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "hexerei:small_satchel"
+								Count: 1b
+							}
+							{
+								id: "hexerei:medium_satchel"
+								Count: 1b
+							}
+							{
+								id: "hexerei:large_satchel"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 10.5d
+			y: 0.5d
+			dependencies: ["2427E2062E71E3C7"]
+			id: "2AE5ED341C735EB0"
+			tasks: [{
+				id: "122338C63082ED70"
+				type: "item"
+				item: "hexerei:ender_satchel"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 0.5d
+			dependencies: ["2427E2062E71E3C7"]
+			id: "39893761085CE2A3"
+			tasks: [{
+				id: "696814E3084CCD5E"
+				type: "item"
+				item: "hexerei:replacer_satchel"
+			}]
+		}
+		{
+			title: "Getting Started: Herb Lore"
+			x: 2.5d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["68D1B646B4C5921A"]
+			id: "54FB7C791B5492DF"
+			tasks: [{
+				id: "76F69D63F72B8401"
+				type: "item"
+				item: "hexerei:belladonna_flowers"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["68D1B646B4C5921A"]
+			id: "5CBE4B1409CA3DB1"
+			tasks: [{
+				id: "2774E784A561544E"
+				type: "checkmark"
+				title: "Equipment"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.5d
+			dependencies: ["48627087020E059F"]
+			id: "596DF36CE2F66524"
+			tasks: [{
+				id: "45454E94DC5517DF"
+				type: "item"
+				item: "hexerei:blood_sigil"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -0.5d
+			dependencies: ["596DF36CE2F66524"]
+			id: "2FB0944C179C93AB"
+			tasks: [{
+				id: "184FC2DAEE1D2020"
+				type: "item"
+				item: "hexerei:blood_bottle"
+				count: 7L
+			}]
+		}
+		{
+			title: "Crows"
+			x: 6.0d
+			y: 2.0d
+			dependencies: ["59ACE37EED9E8CF5"]
+			id: "02339F3C9A699876"
+			tasks: [{
+				id: "28B0B140426D4A56"
+				type: "item"
+				item: "hexerei:seed_mixture"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["68D1B646B4C5921A"]
+			id: "59ACE37EED9E8CF5"
+			tasks: [{
+				id: "79AC6121D2D26A35"
+				type: "item"
+				item: "hexerei:pestle_and_mortar"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			dependencies: ["02339F3C9A699876"]
+			id: "5C2021524CEC2DB4"
+			tasks: [{
+				id: "2FAB9325EE7E79AF"
+				type: "item"
+				item: {
+					id: "hexerei:coffer"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+	]
 }
