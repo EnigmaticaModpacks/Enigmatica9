@@ -117,6 +117,111 @@ MoreJSEvents.registerPotionBrewing((event) => {
             reagent: 'blue_skies:lunar_vine',
             input: 'minecraft:awkward',
             output: 'minecraft:slow_falling'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'apotheosis:haste',
+            output: 'apotheosis:fatigue'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'minecraft:water',
+            output: 'minecraft:weakness'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'minecraft:poison',
+            output: 'minecraft:harming'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'minecraft:long_poison',
+            output: 'minecraft:harming'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'minecraft:strong_poison',
+            output: 'minecraft:strong_harming'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'minecraft:night_vision',
+            output: 'minecraft:invisibility'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'minecraft:long_night_vision',
+            output: 'minecraft:long_invisibility'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'minecraft:leaping',
+            output: 'minecraft:slowness'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'minecraft:long_leaping',
+            output: 'minecraft:long_slowness'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'minecraft:strong_leaping',
+            output: 'minecraft:strong_slowness'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'minecraft:swiftness',
+            output: 'minecraft:slowness'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'minecraft:long_swiftness',
+            output: 'minecraft:long_slowness'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'minecraft:strong_swiftness',
+            output: 'minecraft:strong_slowness'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'minecraft:healing',
+            output: 'minecraft:harming'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'minecraft:strong_healing',
+            output: 'minecraft:strong_harming'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'apotheosis:resistance',
+            output: 'apotheosis:sundering'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'apotheosis:long_resistance',
+            output: 'apotheosis:long_sundering'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'apotheosis:strong_resistance',
+            output: 'apotheosis:strong_sundering'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'apotheosis:haste',
+            output: 'apotheosis:fatigue'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'apotheosis:long_haste',
+            output: 'apotheosis:long_fatigue'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'apotheosis:strong_haste',
+            output: 'apotheosis:strong_fatigue'
         }
     ];
 
