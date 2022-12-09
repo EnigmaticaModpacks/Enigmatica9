@@ -1062,5 +1062,17 @@ const armored_mobs = {
                 }
             ]
         }
+    },
+    hexerei: {
+        crow: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        max_health: 20
+                    }
+                }
+            ]
+        }
     }
 };
