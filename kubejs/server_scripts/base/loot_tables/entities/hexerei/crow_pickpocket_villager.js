@@ -178,9 +178,9 @@ ServerEvents.genericLootTables((event) => {
             profession = isProfession('immersiveengineering:machinist');
             // console.log(profession);
             pool.addItem('immersiveengineering:toolbox', 5).addCondition(profession);
-            pool.addItem('immersiveengineering:component_iron', 0).addCondition(profession);
-            pool.addItem('immersiveengineering:drillhead_iron', 0).addCondition(profession);
-            pool.addItem(Item.of('immersiveengineering:blueprint', '{blueprint:"electrode"}'), 0).addCondition(
+            pool.addItem('immersiveengineering:component_iron', 50).addCondition(profession);
+            pool.addItem('immersiveengineering:drillhead_iron', 5).addCondition(profession);
+            pool.addItem(Item.of('immersiveengineering:blueprint', '{blueprint:"electrode"}'), 1).addCondition(
                 profession
             );
 
