@@ -46,6 +46,22 @@ ServerEvents.recipes((event) => {
             outputs: [{ amount: 500, fluid: 'create:tea' }],
             heatRequirement: 'heated',
             id: `create:mixing/tea`
+        },
+        {
+            inputs: [
+                Ingredient.of('#hexerei:tallow_meltable').toJson(),
+                Ingredient.of('#hexerei:tallow_meltable').toJson(),
+                Ingredient.of('#hexerei:tallow_meltable').toJson(),
+                Ingredient.of('#hexerei:tallow_meltable').toJson(),
+                Ingredient.of('#hexerei:tallow_meltable').toJson(),
+                Ingredient.of('#hexerei:tallow_meltable').toJson(),
+                Ingredient.of('#hexerei:tallow_meltable').toJson(),
+                Ingredient.of('#hexerei:tallow_meltable').toJson(),
+                { fluid: 'minecraft:water', amount: 2000, nbt: {} }
+            ],
+            outputs: [{ amount: 2000, fluid: 'hexerei:tallow_fluid' }],
+            heatRequirement: 'heated',
+            id: `${id_prefix}tallow_fluid`
         }
     ];
 

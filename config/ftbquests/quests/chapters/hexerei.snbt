@@ -16,8 +16,8 @@
 					Damage: 0
 				}
 			}
-			x: 8.5d
-			y: -1.5d
+			x: 5.5d
+			y: 2.0d
 			dependencies: ["5CBE4B1409CA3DB1"]
 			id: "135494AEBA82B7A7"
 			tasks: [
@@ -60,6 +60,13 @@
 			title: "Getting Started: Cauldron Crafting"
 			x: 6.0d
 			y: -2.5d
+			description: [
+				"The Cauldron itself is a time-honored tradition among Witches, used for general cooking, potion making, and more advanced magics alike, it is a versatile tool for any practitioner. "
+				""
+				"Fluids may be piped in through any form of pipe or delivered by hand with buckets or bottles. Similarly, they may be piped out, though in the case of potions it is likely easiest to remove them manually by Right-Clicking with a bottle. "
+				""
+				"Items may also be piped in through any sort of automation, as well as dropped in from above. "
+			]
 			hide_dependency_lines: true
 			dependencies: ["68D1B646B4C5921A"]
 			id: "48627087020E059F"
@@ -90,8 +97,8 @@
 			}]
 		}
 		{
-			x: 10.5d
-			y: -1.5d
+			x: 6.5d
+			y: 2.0d
 			dependencies: ["5CBE4B1409CA3DB1"]
 			id: "39BB530B6057DA94"
 			tasks: [{
@@ -138,6 +145,13 @@
 			icon: "hexerei:sage"
 			x: 2.5d
 			y: -0.5d
+			description: [
+				"Dried Sage has a number of curative properties, but perhaps more surprising is its ability to ward an area against monster incursions. Perfect for the Witch looking to relax and make a few brews at home without being bothered. "
+				""
+				"Place Dried Sage on the Plate and light it with a Flint and Steel. The area will be filled with gentle smoke that will prevent mobs from spawning. Right-Clicking the Plate with an empty hand will toggle through its various modes, allowing one to disable the cloud visuals entirely if desired."
+				""
+				"Dried Sage may be inserted via Hopper or other automation, and the plate may be lit by a Deployer, allowing the Sage Burning Plate to be fully automated. "
+			]
 			dependencies: ["6834E2403EA77413"]
 			id: "69E94721C3668CCE"
 			tasks: [
@@ -160,8 +174,15 @@
 			]
 		}
 		{
-			x: 7.0d
+			x: 6.0d
 			y: -0.5d
+			description: [
+				"Far beyond simple light sources, a true Witch knows how to infuse Candles with potent magic, causing nearby plants to Grow rapidly, turn the weather from stormy to clear skies, or even imbue nearby monsters with effects such as Poison or Slowness. "
+				""
+				"Candles have a limited duration and must be periodically replaced. Up to four candles may be placed in a single block space, however, and each one lit individually. "
+				""
+				"Finally, Candles may be dyed by combining them with dyes in a Crafting Table. "
+			]
 			dependencies: ["753F45812A0A4754"]
 			id: "3659D0540E05DE94"
 			tasks: [{
@@ -173,6 +194,13 @@
 		{
 			x: 7.0d
 			y: -1.5d
+			description: [
+				"The Dipper is an apparatus that sits atop the Cauldron. With the Cauldron filled with Tallow and up to three String placed in the Dipper, it will set about dipping the string to make Candles all on its own."
+				""
+				"String may be fed into the Dipper by way of Hopper or other automation. Some form of filter will need to be used to prevent extracting the string too early, however."
+				""
+				"Note: When melting items for Tallow, the Cauldron must have water in it. "
+			]
 			dependencies: ["48627087020E059F"]
 			id: "753F45812A0A4754"
 			tasks: [{
@@ -182,13 +210,14 @@
 			}]
 		}
 		{
-			x: 9.5d
-			y: -0.5d
+			x: 6.0d
+			y: 3.0d
 			dependencies: ["5CBE4B1409CA3DB1"]
 			id: "2427E2062E71E3C7"
 			tasks: [{
 				id: "3A2C7E4DF750C249"
 				type: "item"
+				title: "Witch's Broom"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
@@ -210,13 +239,14 @@
 			}]
 		}
 		{
-			x: 9.5d
-			y: 0.5d
+			x: 6.0d
+			y: 5.0d
 			dependencies: ["2427E2062E71E3C7"]
 			id: "3D0BF6FF68EE43FC"
 			tasks: [{
 				id: "7ED27F05A6087868"
 				type: "item"
+				title: "Satchels"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
@@ -240,8 +270,8 @@
 			}]
 		}
 		{
-			x: 10.5d
-			y: 0.5d
+			x: 6.5d
+			y: 4.0d
 			dependencies: ["2427E2062E71E3C7"]
 			id: "2AE5ED341C735EB0"
 			tasks: [{
@@ -251,8 +281,8 @@
 			}]
 		}
 		{
-			x: 8.5d
-			y: 0.5d
+			x: 5.5d
+			y: 4.0d
 			dependencies: ["2427E2062E71E3C7"]
 			id: "39893761085CE2A3"
 			tasks: [{
@@ -337,55 +367,70 @@
 			]
 		}
 		{
-			x: 9.5d
-			y: -2.5d
+			title: "Tools and Utility"
+			x: 6.0d
+			y: 1.0d
 			hide_dependency_lines: true
 			dependencies: ["68D1B646B4C5921A"]
 			id: "5CBE4B1409CA3DB1"
 			tasks: [{
-				id: "2774E784A561544E"
-				type: "checkmark"
-				title: "Equipment"
+				id: "60016AD4BEE7351E"
+				type: "item"
+				item: "hexerei:sage"
 			}]
 		}
 		{
+			icon: "hexerei:blood_sigil"
 			x: 5.0d
 			y: -1.5d
+			description: [
+				"Blood is a powerful magical reagent, and a wise Witch is careful of allowing another magic user access to theirs. "
+				""
+				"To obtain Blood for the purpose of crafting, place a Blood Sigil within the upper left slot of the Cauldron, then hop on in. Each jump will result in a small amount of blood entering the Cauldron. "
+				""
+				"Of course, nowhere is it stated that the blood must be one’s own. Try dropping a villager in to see what happens. Better still, see if the process can be automated…"
+			]
 			dependencies: ["48627087020E059F"]
 			id: "596DF36CE2F66524"
-			tasks: [{
-				id: "45454E94DC5517DF"
-				type: "item"
-				item: "hexerei:blood_sigil"
-			}]
-		}
-		{
-			x: 5.0d
-			y: -0.5d
-			dependencies: ["596DF36CE2F66524"]
-			id: "2FB0944C179C93AB"
-			tasks: [{
-				id: "184FC2DAEE1D2020"
-				type: "item"
-				item: "hexerei:blood_bottle"
-				count: 7L
-			}]
+			tasks: [
+				{
+					id: "45454E94DC5517DF"
+					type: "item"
+					item: "hexerei:blood_sigil"
+				}
+				{
+					id: "1876BF29217CE460"
+					type: "item"
+					item: "hexerei:blood_bottle"
+				}
+			]
 		}
 		{
 			title: "Crows"
-			x: 6.0d
-			y: 2.0d
+			x: 9.5d
+			y: -1.5d
 			dependencies: ["59ACE37EED9E8CF5"]
 			id: "02339F3C9A699876"
-			tasks: [{
-				id: "28B0B140426D4A56"
-				type: "item"
-				item: "hexerei:seed_mixture"
-			}]
+			tasks: [
+				{
+					id: "28B0B140426D4A56"
+					type: "item"
+					item: "hexerei:seed_mixture"
+				}
+				{
+					id: "37FB97479875B6C1"
+					type: "item"
+					item: {
+						id: "hexerei:crow_flute"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
 		}
 		{
-			x: 6.0d
-			y: 1.0d
+			x: 9.5d
+			y: -2.5d
 			hide_dependency_lines: true
 			dependencies: ["68D1B646B4C5921A"]
 			id: "59ACE37EED9E8CF5"
@@ -396,8 +441,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 3.0d
+			x: 9.5d
+			y: -0.5d
 			dependencies: ["02339F3C9A699876"]
 			id: "5C2021524CEC2DB4"
 			tasks: [{
