@@ -12,7 +12,6 @@ ServerEvents.genericLootTables((event) => {
 
             // Farmer Trades
             let profession = isProfession('minecraft:farmer');
-            // console.log(profession);
             pool.addItem('minecraft:golden_carrot', 15).addCondition(profession);
             pool.addItem('minecraft:apple', 50).addCondition(profession);
             pool.addItem('minecraft:bread', 50).addCondition(profession);
@@ -24,7 +23,6 @@ ServerEvents.genericLootTables((event) => {
 
             // Leatherworker Trades
             profession = isProfession('minecraft:leatherworker');
-            // console.log(profession);
             pool.addItem('minecraft:leather', 50).addCondition(profession);
             pool.addItem('minecraft:rabbit_hide', 50).addCondition(profession);
             pool.addItem('minecraft:saddle', 5).addCondition(profession);
@@ -35,7 +33,6 @@ ServerEvents.genericLootTables((event) => {
 
             // Butcher Trades
             profession = isProfession('minecraft:butcher');
-            // console.log(profession);
             pool.addItem('minecraft:chicken', 50).addCondition(profession);
             pool.addItem('minecraft:cooked_chicken', 50).addCondition(profession);
             pool.addItem('minecraft:beef', 50).addCondition(profession);
@@ -46,14 +43,12 @@ ServerEvents.genericLootTables((event) => {
 
             // Cartographer Trades
             profession = isProfession('minecraft:cartographer');
-            // console.log(profession);
             pool.addItem('minecraft:paper', 50).addCondition(profession);
             pool.addItem('minecraft:map', 15).addCondition(profession);
             pool.addItem('minecraft:compass', 5).addCondition(profession);
 
             // Shepherd Trades
             profession = isProfession('minecraft:shepherd');
-            // console.log(profession);
             pool.addItem('minecraft:shears', 15).addCondition(profession);
             pool.addItem('minecraft:string', 50).addCondition(profession);
             pool.addItem('minecraft:white_wool', 50).addCondition(profession);
@@ -75,7 +70,6 @@ ServerEvents.genericLootTables((event) => {
 
             // Fisherman Trades
             profession = isProfession('minecraft:fisherman');
-            // console.log(profession);
             pool.addItem('minecraft:cod', 50).addCondition(profession);
             pool.addItem('minecraft:cooked_cod', 50).addCondition(profession);
             pool.addItem('minecraft:salmon', 50).addCondition(profession);
@@ -86,7 +80,6 @@ ServerEvents.genericLootTables((event) => {
 
             // Weaponsmith Trades
             profession = isProfession('minecraft:weaponsmith');
-            // console.log(profession);
             pool.addItem('minecraft:coal', 50).addCondition(profession);
             pool.addItem('minecraft:diamond', 1).addCondition(profession);
             pool.addItem('minecraft:iron_ingot', 20).addCondition(profession);
@@ -96,7 +89,6 @@ ServerEvents.genericLootTables((event) => {
 
             // Mason Trades
             profession = isProfession('minecraft:mason');
-            // console.log(profession);
             pool.addItem('minecraft:clay_ball', 50).addCondition(profession);
             pool.addItem('minecraft:bricks', 50).addCondition(profession);
             pool.addItem('engineersdecor:clinker_brick_block', 50).addCondition(profession);
@@ -106,7 +98,6 @@ ServerEvents.genericLootTables((event) => {
 
             // Fletcher Trades
             profession = isProfession('minecraft:fletcher');
-            // console.log(profession);
             pool.addItem('minecraft:stick', 50).addCondition(profession);
             pool.addItem('minecraft:arrow', 50).addCondition(profession);
             pool.addItem('minecraft:bow', 5).addCondition(profession);
@@ -115,7 +106,6 @@ ServerEvents.genericLootTables((event) => {
 
             // Armorer Trades
             profession = isProfession('minecraft:armorer');
-            // console.log(profession);
             pool.addItem('minecraft:diamond_helmet', 1).addCondition(profession);
             pool.addItem('minecraft:coal', 50).addCondition(profession);
             pool.addItem('minecraft:iron_helmet', 5).addCondition(profession);
@@ -129,7 +119,6 @@ ServerEvents.genericLootTables((event) => {
 
             // Toolsmith Trades
             profession = isProfession('minecraft:toolsmith');
-            // console.log(profession);
             pool.addItem('minecraft:charcoal', 50).addCondition(profession);
             pool.addItem('minecraft:iron_hoe', 25).addCondition(profession);
             pool.addItem('minecraft:iron_pickaxe', 25).addCondition(profession);
@@ -140,7 +129,6 @@ ServerEvents.genericLootTables((event) => {
 
             // Librarian Trades
             profession = isProfession('minecraft:librarian');
-            // console.log(profession);
             pool.addItem('minecraft:paper', 50).addCondition(profession);
             pool.addItem('minecraft:book', 50).addCondition(profession);
             pool.addItem('minecraft:lantern', 50).addCondition(profession);
@@ -151,7 +139,6 @@ ServerEvents.genericLootTables((event) => {
 
             // Cleric Trades
             profession = isProfession('minecraft:cleric');
-            // console.log(profession);
             pool.addItem('minecraft:redstone', 10).addCondition(profession);
             pool.addItem('minecraft:lapis_lazuli', 10).addCondition(profession);
             pool.addItem('minecraft:glowstone_dust', 10).addCondition(profession);
@@ -159,7 +146,6 @@ ServerEvents.genericLootTables((event) => {
 
             // Pressure Mechanic Trades (Charging Station)
             profession = isProfession('pneumaticcraft:mechanic');
-            // console.log(profession);
             pool.addItem('pneumaticcraft:pressure_tube', 50).addCondition(profession);
             pool.addItem('pneumaticcraft:programming_puzzle', 50).addCondition(profession);
             pool.addItem('pneumaticcraft:gun_ammo', 50).addCondition(profession);
@@ -168,7 +154,6 @@ ServerEvents.genericLootTables((event) => {
 
             // Immersive Engineering Structural Engineer (Engineer's Crafting Table)
             profession = isProfession('immersiveengineering:engineer');
-            // console.log(profession);
             pool.addItem('immersiveengineering:treated_wood_horizontal', 50).addCondition(profession);
             pool.addItem('immersiveengineering:alu_scaffolding_standard', 50).addCondition(profession);
             pool.addItem('immersiveengineering:balloon', 50).addCondition(profession);
@@ -176,7 +161,6 @@ ServerEvents.genericLootTables((event) => {
 
             // Immersive Engineering Machinist (Anvil)
             profession = isProfession('immersiveengineering:machinist');
-            // console.log(profession);
             pool.addItem('immersiveengineering:toolbox', 5).addCondition(profession);
             pool.addItem('immersiveengineering:component_iron', 50).addCondition(profession);
             pool.addItem('immersiveengineering:drillhead_iron', 5).addCondition(profession);
@@ -186,7 +170,6 @@ ServerEvents.genericLootTables((event) => {
 
             // Immersive Engineering Electrician (Engineer's Circuit Table)
             profession = isProfession('immersiveengineering:electrician');
-            // console.log(profession);
             pool.addItem('immersiveengineering:wirecoil_copper', 50).addCondition(profession);
             pool.addItem('immersiveengineering:armor_faraday_head', 15).addCondition(profession);
             pool.addItem('immersiveengineering:armor_faraday_chest', 15).addCondition(profession);
@@ -196,14 +179,12 @@ ServerEvents.genericLootTables((event) => {
 
             // Immersive Engineering Outfitter (Banner with Shader Applied by Right-Click)
             profession = isProfession('immersiveengineering:outfitter');
-            // console.log(profession);
             pool.addItem('immersiveengineering:shader_bag_common', 50).addCondition(profession);
             pool.addItem('immersiveengineering:shader_bag_uncommon', 50).addCondition(profession);
             pool.addItem('immersiveengineering:shader_bag_rare', 50).addCondition(profession);
 
             // Immersive Engineering Gunsmith (Engineer's Workbench)
             profession = isProfession('immersiveengineering:gunsmith');
-            // console.log(profession);
             pool.addItem('immersiveengineering:buckshot', 50).addCondition(profession);
             pool.addItem('immersiveengineering:silver', 50).addCondition(profession);
             pool.addItem('immersiveengineering:casull', 50).addCondition(profession);
