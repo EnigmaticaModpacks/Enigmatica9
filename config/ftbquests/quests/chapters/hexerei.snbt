@@ -443,19 +443,29 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "1C912EEB2ADBC94C"
-				type: "command"
-				title: "Epic Hexerei Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "126BDC3ABFDCB2E8"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					player_command: false
+				}
+				{
+					id: "1C912EEB2ADBC94C"
+					type: "command"
+					title: "Epic Hexerei Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					player_command: false
+				}
+			]
 		}
 		{
 			x: 6.5d
 			y: 3.5d
-			subtitle: "For Better or Warts"
+			subtitle: "For Better or For Warts"
 			description: ["A magical pouch bound to one’s Ender Chest, making it the perfect addition for any forgetful Witches who commonly lose their brooms. At least they won’t lose the contents!"]
 			dependencies: ["3D0BF6FF68EE43FC"]
 			id: "2AE5ED341C735EB0"
@@ -464,14 +474,24 @@
 				type: "item"
 				item: "hexerei:ender_satchel"
 			}]
-			rewards: [{
-				id: "5AE710FB7FB5283B"
-				type: "command"
-				title: "Epic Hexerei Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "102164B44FAAE49A"
+					type: "command"
+					title: "Sorcerer's Delight"
+					icon: "kubejs:sorcerers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					player_command: false
+				}
+				{
+					id: "5AE710FB7FB5283B"
+					type: "command"
+					title: "Epic Hexerei Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					player_command: false
+				}
+			]
 		}
 		{
 			x: 5.5d
@@ -485,14 +505,24 @@
 				type: "item"
 				item: "hexerei:replacer_satchel"
 			}]
-			rewards: [{
-				id: "4D9EACBE361B48B3"
-				type: "command"
-				title: "Epic Hexerei Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "6A715E8A2FF7A4F5"
+					type: "command"
+					title: "Sorcerer's Delight"
+					icon: "kubejs:sorcerers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					player_command: false
+				}
+				{
+					id: "4D9EACBE361B48B3"
+					type: "command"
+					title: "Epic Hexerei Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					player_command: false
+				}
+			]
 		}
 		{
 			title: "Getting Started: Herb Lore"
@@ -598,7 +628,11 @@
 			x: 6.0d
 			y: -0.5d
 			subtitle: "Witch Upon a Star"
-			description: ["Dressing for the part is optional, of course, but style should never be overlooked. Follow along to discover some of the very useful tools in a Witch’s arsenal."]
+			description: [
+				"Dressing for the part is optional, of course, but style should never be overlooked. "
+				""
+				"Follow along to discover some of the very useful tools in a Witch’s arsenal."
+			]
 			hide_dependency_lines: true
 			dependencies: ["48627087020E059F"]
 			id: "5CBE4B1409CA3DB1"
@@ -742,6 +776,7 @@
 		{
 			x: 9.0d
 			y: -1.5d
+			subtitle: "Keeping It Grounded"
 			description: [
 				"A common sight in apothecaries and kitchens of old, the humble Pestle and Mortar have been used for ages to grind and mix ingredients. "
 				""
@@ -778,7 +813,7 @@
 		{
 			x: 9.0d
 			y: 0.5d
-			subtitle: "Do You Beleaf in Magic?"
+			subtitle: "Do You Be-leaf in Magic?"
 			description: [
 				"While it also serves as an easily crafted Shulker Box, the Coffer primarily adds utility to Crows in Harvest mode. Depending on how the Crow button in the GUI is toggled, the Crow will either deposit everything it finds, or only deposit items that already exist in the Coffer, allowing it to act as a filter. "
 				""
