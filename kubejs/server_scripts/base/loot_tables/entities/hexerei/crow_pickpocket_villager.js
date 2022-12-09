@@ -1,10 +1,5 @@
 ServerEvents.genericLootTables((event) => {
-    if (global.isExpertMode == false) {
-        return;
-    }
-
-    // Override Stoneling Carry Loot Table
-    event.addGeneric('quark:entities/crow_pickpocket_villager', (table) => {
+    event.addGeneric('hexerei:entities/crow_pickpocket_villager', (table) => {
         table.addPool((pool) => {
             pool.rolls = 1.0;
 
@@ -16,151 +11,218 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('minecraft:torch', 25);
 
             // Farmer Trades
-            pool.addItem('minecraft:golden_carrot', 15).addCondition(isProfession('minecraft:farmer'));
-            pool.addItem('minecraft:apple', 50).addCondition(isProfession('minecraft:farmer'));
-            pool.addItem('minecraft:bread', 50).addCondition(isProfession('minecraft:farmer'));
-            pool.addItem('minecraft:carrot', 50).addCondition(isProfession('minecraft:farmer'));
-            pool.addItem('minecraft:potato', 50).addCondition(isProfession('minecraft:farmer'));
-            pool.addItem('minecraft:wheat', 50).addCondition(isProfession('minecraft:farmer'));
-            pool.addItem('minecraft:pumpkin_pie', 25).addCondition(isProfession('minecraft:farmer'));
-            pool.addItem('minecraft:cake', 2).addCondition(isProfession('minecraft:farmer'));
+            let profession = isProfession('minecraft:farmer');
+            // console.log(profession);
+            pool.addItem('minecraft:golden_carrot', 15).addCondition(profession);
+            pool.addItem('minecraft:apple', 50).addCondition(profession);
+            pool.addItem('minecraft:bread', 50).addCondition(profession);
+            pool.addItem('minecraft:carrot', 50).addCondition(profession);
+            pool.addItem('minecraft:potato', 50).addCondition(profession);
+            pool.addItem('minecraft:wheat', 50).addCondition(profession);
+            pool.addItem('minecraft:pumpkin_pie', 25).addCondition(profession);
+            pool.addItem('minecraft:cake', 2).addCondition(profession);
 
             // Leatherworker Trades
-            pool.addItem('minecraft:leather', 50).addCondition(isProfession('minecraft:leatherworker'));
-            pool.addItem('minecraft:rabbit_hide', 50).addCondition(isProfession('minecraft:leatherworker'));
-            pool.addItem('minecraft:saddle', 5).addCondition(isProfession('minecraft:leatherworker'));
-            pool.addItem('minecraft:leather_helmet', 5).addCondition(isProfession('minecraft:leatherworker'));
-            pool.addItem('minecraft:leather_chestplate', 5).addCondition(isProfession('minecraft:leatherworker'));
-            pool.addItem('minecraft:leather_leggings', 5).addCondition(isProfession('minecraft:leatherworker'));
-            pool.addItem('minecraft:leather_boots', 5).addCondition(isProfession('minecraft:leatherworker'));
+            profession = isProfession('minecraft:leatherworker');
+            // console.log(profession);
+            pool.addItem('minecraft:leather', 50).addCondition(profession);
+            pool.addItem('minecraft:rabbit_hide', 50).addCondition(profession);
+            pool.addItem('minecraft:saddle', 5).addCondition(profession);
+            pool.addItem('minecraft:leather_helmet', 5).addCondition(profession);
+            pool.addItem('minecraft:leather_chestplate', 5).addCondition(profession);
+            pool.addItem('minecraft:leather_leggings', 5).addCondition(profession);
+            pool.addItem('minecraft:leather_boots', 5).addCondition(profession);
 
             // Butcher Trades
-            pool.addItem('minecraft:chicken', 50).addCondition(isProfession('minecraft:butcher'));
-            pool.addItem('minecraft:cooked_chicken', 50).addCondition(isProfession('minecraft:butcher'));
-            pool.addItem('minecraft:beef', 50).addCondition(isProfession('minecraft:butcher'));
-            pool.addItem('minecraft:cooked_beef', 50).addCondition(isProfession('minecraft:butcher'));
-            pool.addItem('minecraft:porkchop', 50).addCondition(isProfession('minecraft:butcher'));
-            pool.addItem('minecraft:cooked_porkchop', 50).addCondition(isProfession('minecraft:butcher'));
-            pool.addItem('minecraft:rabbit_stew', 50).addCondition(isProfession('minecraft:butcher'));
+            profession = isProfession('minecraft:butcher');
+            // console.log(profession);
+            pool.addItem('minecraft:chicken', 50).addCondition(profession);
+            pool.addItem('minecraft:cooked_chicken', 50).addCondition(profession);
+            pool.addItem('minecraft:beef', 50).addCondition(profession);
+            pool.addItem('minecraft:cooked_beef', 50).addCondition(profession);
+            pool.addItem('minecraft:porkchop', 50).addCondition(profession);
+            pool.addItem('minecraft:cooked_porkchop', 50).addCondition(profession);
+            pool.addItem('minecraft:rabbit_stew', 50).addCondition(profession);
 
             // Cartographer Trades
-            pool.addItem('minecraft:paper', 50).addCondition(isProfession('minecraft:cartographer'));
-            pool.addItem('minecraft:map', 15).addCondition(isProfession('minecraft:cartographer'));
-            pool.addItem('minecraft:compass', 5).addCondition(isProfession('minecraft:cartographer'));
+            profession = isProfession('minecraft:cartographer');
+            // console.log(profession);
+            pool.addItem('minecraft:paper', 50).addCondition(profession);
+            pool.addItem('minecraft:map', 15).addCondition(profession);
+            pool.addItem('minecraft:compass', 5).addCondition(profession);
 
             // Shepherd Trades
-            pool.addItem('minecraft:shears', 15).addCondition(isProfession('minecraft:shepherd'));
-            pool.addItem('minecraft:string', 50).addCondition(isProfession('minecraft:shepherd'));
-            pool.addItem('minecraft:white_wool', 50).addCondition(isProfession('minecraft:shepherd'));
-            pool.addItem('minecraft:orange_wool', 50).addCondition(isProfession('minecraft:shepherd'));
-            pool.addItem('minecraft:magenta_wool', 50).addCondition(isProfession('minecraft:shepherd'));
-            pool.addItem('minecraft:light_blue_wool', 50).addCondition(isProfession('minecraft:shepherd'));
-            pool.addItem('minecraft:yellow_wool', 50).addCondition(isProfession('minecraft:shepherd'));
-            pool.addItem('minecraft:lime_wool', 50).addCondition(isProfession('minecraft:shepherd'));
-            pool.addItem('minecraft:pink_wool', 50).addCondition(isProfession('minecraft:shepherd'));
-            pool.addItem('minecraft:gray_wool', 50).addCondition(isProfession('minecraft:shepherd'));
-            pool.addItem('minecraft:light_gray_wool', 50).addCondition(isProfession('minecraft:shepherd'));
-            pool.addItem('minecraft:cyan_wool', 50).addCondition(isProfession('minecraft:shepherd'));
-            pool.addItem('minecraft:purple_wool', 50).addCondition(isProfession('minecraft:shepherd'));
-            pool.addItem('minecraft:blue_wool', 50).addCondition(isProfession('minecraft:shepherd'));
-            pool.addItem('minecraft:brown_wool', 50).addCondition(isProfession('minecraft:shepherd'));
-            pool.addItem('minecraft:green_wool', 50).addCondition(isProfession('minecraft:shepherd'));
-            pool.addItem('minecraft:red_wool', 50).addCondition(isProfession('minecraft:shepherd'));
-            pool.addItem('minecraft:black_wool', 50).addCondition(isProfession('minecraft:shepherd'));
+            profession = isProfession('minecraft:shepherd');
+            // console.log(profession);
+            pool.addItem('minecraft:shears', 15).addCondition(profession);
+            pool.addItem('minecraft:string', 50).addCondition(profession);
+            pool.addItem('minecraft:white_wool', 50).addCondition(profession);
+            pool.addItem('minecraft:orange_wool', 50).addCondition(profession);
+            pool.addItem('minecraft:magenta_wool', 50).addCondition(profession);
+            pool.addItem('minecraft:light_blue_wool', 50).addCondition(profession);
+            pool.addItem('minecraft:yellow_wool', 50).addCondition(profession);
+            pool.addItem('minecraft:lime_wool', 50).addCondition(profession);
+            pool.addItem('minecraft:pink_wool', 50).addCondition(profession);
+            pool.addItem('minecraft:gray_wool', 50).addCondition(profession);
+            pool.addItem('minecraft:light_gray_wool', 50).addCondition(profession);
+            pool.addItem('minecraft:cyan_wool', 50).addCondition(profession);
+            pool.addItem('minecraft:purple_wool', 50).addCondition(profession);
+            pool.addItem('minecraft:blue_wool', 50).addCondition(profession);
+            pool.addItem('minecraft:brown_wool', 50).addCondition(profession);
+            pool.addItem('minecraft:green_wool', 50).addCondition(profession);
+            pool.addItem('minecraft:red_wool', 50).addCondition(profession);
+            pool.addItem('minecraft:black_wool', 50).addCondition(profession);
 
             // Fisherman Trades
-            pool.addItem('minecraft:cod', 50).addCondition(isProfession('minecraft:fisherman'));
-            pool.addItem('minecraft:cooked_cod', 50).addCondition(isProfession('minecraft:fisherman'));
-            pool.addItem('minecraft:salmon', 50).addCondition(isProfession('minecraft:fisherman'));
-            pool.addItem('minecraft:cooked_salmon', 50).addCondition(isProfession('minecraft:fisherman'));
-            pool.addItem('minecraft:string', 25).addCondition(isProfession('minecraft:fisherman'));
-            pool.addItem('thermal:aquachow', 50).addCondition(isProfession('minecraft:fisherman'));
-            pool.addItem('thermal:deep_aquachow', 25).addCondition(isProfession('minecraft:fisherman'));
+            profession = isProfession('minecraft:fisherman');
+            // console.log(profession);
+            pool.addItem('minecraft:cod', 50).addCondition(profession);
+            pool.addItem('minecraft:cooked_cod', 50).addCondition(profession);
+            pool.addItem('minecraft:salmon', 50).addCondition(profession);
+            pool.addItem('minecraft:cooked_salmon', 50).addCondition(profession);
+            pool.addItem('minecraft:string', 25).addCondition(profession);
+            pool.addItem('thermal:aquachow', 50).addCondition(profession);
+            pool.addItem('thermal:deep_aquachow', 25).addCondition(profession);
 
             // Weaponsmith Trades
-            pool.addItem('minecraft:coal', 50).addCondition(isProfession('minecraft:weaponsmith'));
-            pool.addItem('minecraft:diamond', 1).addCondition(isProfession('minecraft:weaponsmith'));
-            pool.addItem('minecraft:iron_ingot', 20).addCondition(isProfession('minecraft:weaponsmith'));
-            pool.addItem('minecraft:iron_sword', 15).addCondition(isProfession('minecraft:weaponsmith'));
-            pool.addItem('minecraft:iron_axe', 15).addCondition(isProfession('minecraft:weaponsmith'));
-            pool.addItem('minecraft:diamond_sword', 1).addCondition(isProfession('minecraft:weaponsmith'));
+            profession = isProfession('minecraft:weaponsmith');
+            // console.log(profession);
+            pool.addItem('minecraft:coal', 50).addCondition(profession);
+            pool.addItem('minecraft:diamond', 1).addCondition(profession);
+            pool.addItem('minecraft:iron_ingot', 20).addCondition(profession);
+            pool.addItem('minecraft:iron_sword', 15).addCondition(profession);
+            pool.addItem('minecraft:iron_axe', 15).addCondition(profession);
+            pool.addItem('minecraft:diamond_sword', 1).addCondition(profession);
 
             // Mason Trades
-            pool.addItem('minecraft:clay_ball', 50).addCondition(isProfession('minecraft:mason'));
-            pool.addItem('minecraft:bricks', 50).addCondition(isProfession('minecraft:mason'));
-            pool.addItem('engineersdecor:clinker_brick_block', 50).addCondition(isProfession('minecraft:mason'));
-            pool.addItem('engineersdecor:slag_brick_block', 50).addCondition(isProfession('minecraft:mason'));
-            pool.addItem('minecraft:stone_bricks', 50).addCondition(isProfession('minecraft:mason'));
-            pool.addItem('minecraft:terracotta', 50).addCondition(isProfession('minecraft:mason'));
+            profession = isProfession('minecraft:mason');
+            // console.log(profession);
+            pool.addItem('minecraft:clay_ball', 50).addCondition(profession);
+            pool.addItem('minecraft:bricks', 50).addCondition(profession);
+            pool.addItem('engineersdecor:clinker_brick_block', 50).addCondition(profession);
+            pool.addItem('engineersdecor:slag_brick_block', 50).addCondition(profession);
+            pool.addItem('minecraft:stone_bricks', 50).addCondition(profession);
+            pool.addItem('minecraft:terracotta', 50).addCondition(profession);
 
             // Fletcher Trades
-            pool.addItem('minecraft:stick', 50).addCondition(isProfession('minecraft:fletcher'));
-            pool.addItem('minecraft:arrow', 50).addCondition(isProfession('minecraft:fletcher'));
-            pool.addItem('minecraft:bow', 5).addCondition(isProfession('minecraft:fletcher'));
-            pool.addItem('minecraft:feather', 50).addCondition(isProfession('minecraft:fletcher'));
-            pool.addItem('minecraft:flint', 50).addCondition(isProfession('minecraft:fletcher'));
+            profession = isProfession('minecraft:fletcher');
+            // console.log(profession);
+            pool.addItem('minecraft:stick', 50).addCondition(profession);
+            pool.addItem('minecraft:arrow', 50).addCondition(profession);
+            pool.addItem('minecraft:bow', 5).addCondition(profession);
+            pool.addItem('minecraft:feather', 50).addCondition(profession);
+            pool.addItem('minecraft:flint', 50).addCondition(profession);
 
             // Armorer Trades
-            pool.addItem('minecraft:diamond_helmet', 1).addCondition(isProfession('minecraft:armorer'));
-            pool.addItem('minecraft:coal', 50).addCondition(isProfession('minecraft:armorer'));
-            pool.addItem('minecraft:iron_helmet', 5).addCondition(isProfession('minecraft:armorer'));
-            pool.addItem('minecraft:iron_chestplate', 5).addCondition(isProfession('minecraft:armorer'));
-            pool.addItem('minecraft:iron_leggings', 5).addCondition(isProfession('minecraft:armorer'));
-            pool.addItem('minecraft:iron_boots', 5).addCondition(isProfession('minecraft:armorer'));
-            pool.addItem('minecraft:chainmail_helmet', 15).addCondition(isProfession('minecraft:armorer'));
-            pool.addItem('minecraft:chainmail_chestplate', 15).addCondition(isProfession('minecraft:armorer'));
-            pool.addItem('minecraft:chainmail_leggings', 15).addCondition(isProfession('minecraft:armorer'));
-            pool.addItem('minecraft:chainmail_boots', 15).addCondition(isProfession('minecraft:armorer'));
+            profession = isProfession('minecraft:armorer');
+            // console.log(profession);
+            pool.addItem('minecraft:diamond_helmet', 1).addCondition(profession);
+            pool.addItem('minecraft:coal', 50).addCondition(profession);
+            pool.addItem('minecraft:iron_helmet', 5).addCondition(profession);
+            pool.addItem('minecraft:iron_chestplate', 5).addCondition(profession);
+            pool.addItem('minecraft:iron_leggings', 5).addCondition(profession);
+            pool.addItem('minecraft:iron_boots', 5).addCondition(profession);
+            pool.addItem('minecraft:chainmail_helmet', 15).addCondition(profession);
+            pool.addItem('minecraft:chainmail_chestplate', 15).addCondition(profession);
+            pool.addItem('minecraft:chainmail_leggings', 15).addCondition(profession);
+            pool.addItem('minecraft:chainmail_boots', 15).addCondition(profession);
 
             // Toolsmith Trades
-            pool.addItem('minecraft:charcoal', 50).addCondition(isProfession('minecraft:toolsmith'));
-            pool.addItem('minecraft:iron_hoe', 25).addCondition(isProfession('minecraft:toolsmith'));
-            pool.addItem('minecraft:iron_pickaxe', 25).addCondition(isProfession('minecraft:toolsmith'));
-            pool.addItem('minecraft:iron_axe', 25).addCondition(isProfession('minecraft:toolsmith'));
-            pool.addItem('minecraft:iron_shovel', 25).addCondition(isProfession('minecraft:toolsmith'));
-            pool.addItem('minecraft:diamond_hoe', 5).addCondition(isProfession('minecraft:toolsmith'));
-            pool.addItem('minecraft:diamond_pickaxe', 5).addCondition(isProfession('minecraft:toolsmith'));
+            profession = isProfession('minecraft:toolsmith');
+            // console.log(profession);
+            pool.addItem('minecraft:charcoal', 50).addCondition(profession);
+            pool.addItem('minecraft:iron_hoe', 25).addCondition(profession);
+            pool.addItem('minecraft:iron_pickaxe', 25).addCondition(profession);
+            pool.addItem('minecraft:iron_axe', 25).addCondition(profession);
+            pool.addItem('minecraft:iron_shovel', 25).addCondition(profession);
+            pool.addItem('minecraft:diamond_hoe', 5).addCondition(profession);
+            pool.addItem('minecraft:diamond_pickaxe', 5).addCondition(profession);
 
             // Librarian Trades
-            pool.addItem('minecraft:paper', 50).addCondition(isProfession('minecraft:librarian'));
-            pool.addItem('minecraft:book', 50).addCondition(isProfession('minecraft:librarian'));
-            pool.addItem('minecraft:lantern', 50).addCondition(isProfession('minecraft:librarian'));
-            pool.addItem('minecraft:name_tag', 50).addCondition(isProfession('minecraft:librarian'));
+            profession = isProfession('minecraft:librarian');
+            // console.log(profession);
+            pool.addItem('minecraft:paper', 50).addCondition(profession);
+            pool.addItem('minecraft:book', 50).addCondition(profession);
+            pool.addItem('minecraft:lantern', 50).addCondition(profession);
+            pool.addItem('minecraft:name_tag', 50).addCondition(profession);
             pool.addItem('minecraft:book', 1)
-                .addCondition(isProfession('minecraft:librarian'))
+                .addCondition(profession)
                 .addFunction({ function: 'minecraft:enchant_with_levels', levels: { min: 1, max: 10 } });
 
             // Cleric Trades
-            pool.addItem('minecraft:redstone', 5).addCondition(isProfession('minecraft:cleric'));
-            pool.addItem('minecraft:lapis_lazuli', 10).addCondition(isProfession('minecraft:cleric'));
-            pool.addItem('minecraft:glowstone_dust', 10).addCondition(isProfession('minecraft:cleric'));
-            pool.addItem('minecraft:experience_bottle', 5).addCondition(isProfession('minecraft:cleric'));
+            profession = isProfession('minecraft:cleric');
+            // console.log(profession);
+            pool.addItem('minecraft:redstone', 10).addCondition(profession);
+            pool.addItem('minecraft:lapis_lazuli', 10).addCondition(profession);
+            pool.addItem('minecraft:glowstone_dust', 10).addCondition(profession);
+            pool.addItem('minecraft:experience_bottle', 5).addCondition(profession);
 
             // Pressure Mechanic Trades (Charging Station)
-            pool.addItem('minecraft:redstone', 5).addCondition(isProfession('pneumaticcraft:mechanic'));
+            profession = isProfession('pneumaticcraft:mechanic');
+            // console.log(profession);
+            pool.addItem('pneumaticcraft:pressure_tube', 50).addCondition(profession);
+            pool.addItem('pneumaticcraft:programming_puzzle', 50).addCondition(profession);
+            pool.addItem('pneumaticcraft:gun_ammo', 50).addCondition(profession);
+            pool.addItem('pneumaticcraft:gun_ammo_incendiary', 50).addCondition(profession);
+            pool.addItem('pneumaticcraft:gun_ammo_ap', 50).addCondition(profession);
 
             // Immersive Engineering Structural Engineer (Engineer's Crafting Table)
-            pool.addItem('minecraft:redstone', 5).addCondition(isProfession('immersiveengineering:engineer'));
+            profession = isProfession('immersiveengineering:engineer');
+            // console.log(profession);
+            pool.addItem('immersiveengineering:treated_wood_horizontal', 50).addCondition(profession);
+            pool.addItem('immersiveengineering:alu_scaffolding_standard', 50).addCondition(profession);
+            pool.addItem('immersiveengineering:balloon', 50).addCondition(profession);
+            pool.addItem('immersiveengineering:concrete', 50).addCondition(profession);
 
             // Immersive Engineering Machinist (Anvil)
-            pool.addItem('minecraft:redstone', 5).addCondition(isProfession('immersiveengineering:machinist'));
+            profession = isProfession('immersiveengineering:machinist');
+            // console.log(profession);
+            pool.addItem('immersiveengineering:toolbox', 5).addCondition(profession);
+            pool.addItem('immersiveengineering:component_iron', 0).addCondition(profession);
+            pool.addItem('immersiveengineering:drillhead_iron', 0).addCondition(profession);
+            pool.addItem(Item.of('immersiveengineering:blueprint', '{blueprint:"electrode"}'), 0).addCondition(
+                profession
+            );
 
             // Immersive Engineering Electrician (Engineer's Circuit Table)
-            pool.addItem('minecraft:redstone', 5).addCondition(isProfession('immersiveengineering:electrician'));
+            profession = isProfession('immersiveengineering:electrician');
+            // console.log(profession);
+            pool.addItem('immersiveengineering:wirecoil_copper', 50).addCondition(profession);
+            pool.addItem('immersiveengineering:armor_faraday_head', 15).addCondition(profession);
+            pool.addItem('immersiveengineering:armor_faraday_chest', 15).addCondition(profession);
+            pool.addItem('immersiveengineering:armor_faraday_legs', 15).addCondition(profession);
+            pool.addItem('immersiveengineering:armor_faraday_feet', 15).addCondition(profession);
+            pool.addItem('immersiveengineering:fluorescent_tube', 25).addCondition(profession);
 
             // Immersive Engineering Outfitter (Banner with Shader Applied by Right-Click)
-            pool.addItem('minecraft:redstone', 5).addCondition(isProfession('immersiveengineering:outfitter'));
+            profession = isProfession('immersiveengineering:outfitter');
+            // console.log(profession);
+            pool.addItem('immersiveengineering:shader_bag_common', 50).addCondition(profession);
+            pool.addItem('immersiveengineering:shader_bag_uncommon', 50).addCondition(profession);
+            pool.addItem('immersiveengineering:shader_bag_rare', 50).addCondition(profession);
 
             // Immersive Engineering Gunsmith (Engineer's Workbench)
-            pool.addItem('minecraft:redstone', 5).addCondition(isProfession('immersiveengineering:gunsmith'));
+            profession = isProfession('immersiveengineering:gunsmith');
+            // console.log(profession);
+            pool.addItem('immersiveengineering:buckshot', 50).addCondition(profession);
+            pool.addItem('immersiveengineering:silver', 50).addCondition(profession);
+            pool.addItem('immersiveengineering:casull', 50).addCondition(profession);
+            pool.addItem('immersiveengineering:armor_piercing', 50).addCondition(profession);
+            pool.addItem('immersiveengineering:wolfpack', 50).addCondition(profession);
+            pool.addItem(Item.of('immersiveengineering:blueprint', '{blueprint:"bullet"}'), 1).addCondition(profession);
+            pool.addItem(Item.of('immersiveengineering:blueprint', '{blueprint:"specialBullet"}'), 1).addCondition(
+                profession
+            );
         });
     });
 });
 
 function isProfession(profession) {
-    return {
+    let condition = {
         condition: 'entity_properties',
         predicate: { nbt: `{VillagerData:{profession:"${profession}"}}` },
         entity: 'this'
     };
+
+    return condition;
 }
