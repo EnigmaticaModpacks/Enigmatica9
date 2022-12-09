@@ -17,7 +17,7 @@
 				}
 			}
 			x: 5.5d
-			y: 2.0d
+			y: 0.5d
 			description: ["The vestments of a Witch go beyond mere mundane protection. Wearing them sends a message to other Witches to stand down while also offering hefty protection against the dark arts. "]
 			dependencies: ["5CBE4B1409CA3DB1"]
 			id: "135494AEBA82B7A7"
@@ -56,10 +56,28 @@
 					}
 				}
 			]
+			rewards: [
+				{
+					id: "1E0DFFC73941A14F"
+					type: "command"
+					title: "Sorcerer's Delight"
+					icon: "kubejs:sorcerers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					player_command: false
+				}
+				{
+					id: "4FB8BBEE3A960D17"
+					type: "command"
+					title: "Epic Hexerei Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					player_command: false
+				}
+			]
 		}
 		{
 			title: "Getting Started: Cauldron Crafting"
-			x: 6.0d
+			x: 4.0d
 			y: -2.5d
 			description: [
 				"The Cauldron itself is a time-honored tradition among Witches, used for general cooking, potion making, and more advanced magics alike, it is a versatile tool for any practitioner. "
@@ -76,12 +94,30 @@
 				type: "item"
 				item: "hexerei:mixing_cauldron"
 			}]
+			rewards: [
+				{
+					id: "039ACBE8A55777ED"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					player_command: false
+				}
+				{
+					id: "3218C1F002704552"
+					type: "command"
+					title: "Rare Hexerei Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					player_command: false
+				}
+			]
 		}
 		{
 			title: "Hexerei"
 			icon: "hexerei:belladonna_flowers"
 			x: 6.0d
-			y: -4.0d
+			y: -2.5d
 			shape: "hexagon"
 			description: ["Learn the arts of Witchcraft as you explore what Hexerei has to offer, from cute friends to flying broomsticks, this mod will leave you feeling like a true Witch."]
 			id: "68D1B646B4C5921A"
@@ -97,10 +133,18 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "5F87C71456C2B384"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: 6.5d
-			y: 2.0d
+			y: 0.5d
 			description: ["Sharing a home with trolls will teach a Witch a thing or two, like the value of a heavy object to smash some heads in. Works great for tenderizing steaks too!"]
 			dependencies: ["5CBE4B1409CA3DB1"]
 			id: "39BB530B6057DA94"
@@ -115,9 +159,27 @@
 					}
 				}
 			}]
+			rewards: [
+				{
+					id: "17FBE554BB08FC90"
+					type: "command"
+					title: "Miner's Delight"
+					icon: "kubejs:miners_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+					player_command: false
+				}
+				{
+					id: "3D780F0BB9395E99"
+					type: "command"
+					title: "Epic Hexerei Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					player_command: false
+				}
+			]
 		}
 		{
-			x: 2.5d
+			x: 8.0d
 			y: -1.5d
 			description: [
 				"With a fine selection of herbs in hand, and a small garden prepared, the real magic of Witchcraft may begin. "
@@ -133,20 +195,30 @@
 				type: "item"
 				item: "hexerei:herb_drying_rack"
 			}]
-			rewards: [{
-				id: "4B92E1A0497F65C8"
-				type: "item"
-				item: {
-					id: "hexerei:herb_jar"
-					Count: 1b
-					tag: { }
+			rewards: [
+				{
+					id: "4B92E1A0497F65C8"
+					type: "item"
+					item: {
+						id: "hexerei:herb_jar"
+						Count: 1b
+						tag: { }
+					}
+					count: 5
 				}
-				count: 5
-			}]
+				{
+					id: "7C4A5CEF72FA19B0"
+					type: "command"
+					title: "Rare Hexerei Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					player_command: false
+				}
+			]
 		}
 		{
 			icon: "hexerei:sage"
-			x: 2.5d
+			x: 8.0d
 			y: -0.5d
 			description: [
 				"Dried Sage has a number of curative properties, but perhaps more surprising is its ability to ward an area against monster incursions. Perfect for the Witch looking to relax and make a few brews at home without being bothered. "
@@ -175,9 +247,27 @@
 					item: "hexerei:sage_burning_plate"
 				}
 			]
+			rewards: [
+				{
+					id: "0BA444C12A4208F7"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					player_command: false
+				}
+				{
+					id: "6066E7AA064A4A84"
+					type: "command"
+					title: "Epic Hexerei Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					player_command: false
+				}
+			]
 		}
 		{
-			x: 6.0d
+			x: 3.0d
 			y: -0.5d
 			description: [
 				"Far beyond simple light sources, a true Witch knows how to infuse Candles with potent magic, causing nearby plants to Grow rapidly, turn the weather from stormy to clear skies, or even imbue nearby monsters with effects such as Poison or Slowness. "
@@ -193,9 +283,27 @@
 				type: "item"
 				item: "hexerei:candle"
 			}]
+			rewards: [
+				{
+					id: "66F8B950553302ED"
+					type: "command"
+					title: "Alchemist's Delight"
+					icon: "kubejs:alchemists_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					player_command: false
+				}
+				{
+					id: "6E805DAF31BF8B2F"
+					type: "command"
+					title: "Epic Hexerei Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					player_command: false
+				}
+			]
 		}
 		{
-			x: 7.0d
+			x: 3.0d
 			y: -1.5d
 			description: [
 				"The Dipper is an apparatus that sits atop the Cauldron. With the Cauldron filled with Tallow and up to three String placed in the Dipper, it will set about dipping the string to make Candles all on its own."
@@ -211,10 +319,28 @@
 				type: "item"
 				item: "hexerei:candle_dipper"
 			}]
+			rewards: [
+				{
+					id: "6046E95DF2F2CE3C"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					player_command: false
+				}
+				{
+					id: "084995A471301D0B"
+					type: "command"
+					title: "Rare Hexerei Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					player_command: false
+				}
+			]
 		}
 		{
 			x: 6.0d
-			y: 3.0d
+			y: 1.5d
 			description: [
 				"Easily the most important tool in any Witch’s arsenal, the Broom allows for both fast and precise flight to avoid critters while out harvesting herbs or to simply get up on that roof to safely fix the smoldering hole left by that lightning bolt. "
 				""
@@ -254,21 +380,31 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "1008549AFC5BA985"
-				type: "item"
-				item: {
-					id: "hexerei:broom_whistle"
-					Count: 1b
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "1008549AFC5BA985"
+					type: "item"
+					item: {
+						id: "hexerei:broom_whistle"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
 					}
 				}
-			}]
+				{
+					id: "17B9E2556914F03E"
+					type: "command"
+					title: "Epic Hexerei Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					player_command: false
+				}
+			]
 		}
 		{
 			x: 6.0d
-			y: 4.0d
+			y: 2.5d
 			description: ["Brooms may also be equipped with Satchels that come in various sizes and are the perfect place to store spare parts, potions, or anything one might need for longer excursions."]
 			dependencies: ["2427E2062E71E3C7"]
 			id: "3D0BF6FF68EE43FC"
@@ -297,10 +433,18 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "1C912EEB2ADBC94C"
+				type: "command"
+				title: "Epic Hexerei Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+				player_command: false
+			}]
 		}
 		{
 			x: 6.5d
-			y: 5.0d
+			y: 3.5d
 			description: ["A magical pouch bound to one’s Ender Chest, making it the perfect addition for any forgetful Witches who commonly lose their brooms. At least they won’t lose the contents!"]
 			dependencies: ["3D0BF6FF68EE43FC"]
 			id: "2AE5ED341C735EB0"
@@ -309,10 +453,18 @@
 				type: "item"
 				item: "hexerei:ender_satchel"
 			}]
+			rewards: [{
+				id: "5AE710FB7FB5283B"
+				type: "command"
+				title: "Epic Hexerei Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+				player_command: false
+			}]
 		}
 		{
 			x: 5.5d
-			y: 5.0d
+			y: 3.5d
 			description: ["No simple storage bag, the Replacer Satchel will automatically swap out Brushes as they wear out, allowing one to fly for longer without interruption."]
 			dependencies: ["3D0BF6FF68EE43FC"]
 			id: "39893761085CE2A3"
@@ -321,11 +473,19 @@
 				type: "item"
 				item: "hexerei:replacer_satchel"
 			}]
+			rewards: [{
+				id: "4D9EACBE361B48B3"
+				type: "command"
+				title: "Epic Hexerei Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+				player_command: false
+			}]
 		}
 		{
 			title: "Getting Started: Herb Lore"
 			icon: "hexerei:herb_drying_rack_full"
-			x: 2.5d
+			x: 8.0d
 			y: -2.5d
 			description: [
 				"The wise witch knows the properties of every plant in their domain, and there are none more knowledgeable than those who call the Swamps their home. Locate a swamp and attempt to forage up some samples for a personal herb garden. "
@@ -396,23 +556,81 @@
 					}
 				}
 			]
+			rewards: [
+				{
+					id: "6CF6DDE26468F7CA"
+					type: "command"
+					title: "Farmer's Delight"
+					icon: "kubejs:farmers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					player_command: false
+				}
+				{
+					id: "0B6657C33AECA812"
+					type: "command"
+					title: "Rare Hexerei Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					player_command: false
+				}
+			]
 		}
 		{
 			title: "Tools and Utility"
+			icon: {
+				id: "hexerei:crow_blank_amulet"
+				Count: 1b
+				tag: { }
+			}
 			x: 6.0d
-			y: 1.0d
+			y: -0.5d
+			description: ["Dressing for the part is optional, of course, but style should never be overlooked. Follow along to discover some of the very useful tools in a Witch’s arsenal."]
 			hide_dependency_lines: true
-			dependencies: ["68D1B646B4C5921A"]
+			dependencies: ["48627087020E059F"]
 			id: "5CBE4B1409CA3DB1"
 			tasks: [{
 				id: "60016AD4BEE7351E"
 				type: "item"
-				item: "hexerei:sage"
+				title: "Witchy Woods"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "hexerei:mahogany_log"
+								Count: 1b
+							}
+							{
+								id: "hexerei:willow_log"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
+			rewards: [
+				{
+					id: "1DAEF5BD5864A7A6"
+					type: "command"
+					title: "Sorcerer's Delight"
+					icon: "kubejs:sorcerers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					player_command: false
+				}
+				{
+					id: "01A521B4A99F153C"
+					type: "command"
+					title: "Epic Hexerei Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					player_command: false
+				}
+			]
 		}
 		{
 			icon: "hexerei:blood_sigil"
-			x: 5.0d
+			x: 4.0d
 			y: -1.5d
 			description: [
 				"Blood is a powerful magical reagent, and a wise Witch is careful of allowing another magic user access to theirs. "
@@ -435,11 +653,29 @@
 					item: "hexerei:blood_bottle"
 				}
 			]
+			rewards: [
+				{
+					id: "7F63F43AC11BCF99"
+					type: "command"
+					title: "Alchemist's Delight"
+					icon: "kubejs:alchemists_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					player_command: false
+				}
+				{
+					id: "5EA1F6B798CC3A78"
+					type: "command"
+					title: "Epic Hexerei Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					player_command: false
+				}
+			]
 		}
 		{
 			title: "Crows"
-			x: 9.5d
-			y: -1.5d
+			x: 9.0d
+			y: -0.5d
 			description: [
 				"Witches are often depicted as befriending animals, from cats and mice to snakes and lizards. The Witches of these swamps, however, have a special affinity for the native Crows. "
 				""
@@ -448,6 +684,8 @@
 				"Crows are very social critters, and as such will have no issues with having more of their kind around, tame as many as desired!"
 				""
 				"Once tamed, Sneak Right-Click on them to open a menu where they may be set to a task or equipped with trinkets, hats, or weapons such as a Warhammer!"
+				""
+				"================================================="
 				""
 				"When commanding a murder of crows, a Crow Flute becomes an indispensable tool. Sneak Right-Click the Flute to access the menu. To begin, click the Select button and then proceed by Right-Clicking each Crow to be commanded by the Flute. Consider crafting a new Flute for every set of Crows to be commanded to prevent mix-ups with commands."
 				""
@@ -465,19 +703,29 @@
 				type: "item"
 				item: "hexerei:seed_mixture"
 			}]
-			rewards: [{
-				id: "1A3B0AA55642D5F1"
-				type: "item"
-				item: {
-					id: "hexerei:crow_flute"
-					Count: 1b
-					tag: { }
+			rewards: [
+				{
+					id: "1A3B0AA55642D5F1"
+					type: "item"
+					item: {
+						id: "hexerei:crow_flute"
+						Count: 1b
+						tag: { }
+					}
 				}
-			}]
+				{
+					id: "4AB4040559B83C3E"
+					type: "command"
+					title: "Epic Hexerei Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					player_command: false
+				}
+			]
 		}
 		{
-			x: 9.5d
-			y: -2.5d
+			x: 9.0d
+			y: -1.5d
 			description: [
 				"A common sight in apothecaries and kitchens of old, the humble Pestle and Mortar have been used for ages to grind and mix ingredients. "
 				""
@@ -485,18 +733,40 @@
 				""
 				"In addition, items may be piped in via automation and the Pestle and Mortar will hold onto them until finished, only allowing the final product to be extracted."
 			]
-			hide_dependency_lines: true
-			dependencies: ["68D1B646B4C5921A"]
+			dependencies: ["54FB7C791B5492DF"]
 			id: "59ACE37EED9E8CF5"
 			tasks: [{
 				id: "79AC6121D2D26A35"
 				type: "item"
 				item: "hexerei:pestle_and_mortar"
 			}]
+			rewards: [
+				{
+					id: "1C75F799457CB9FE"
+					type: "command"
+					title: "Epic Hexerei Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					player_command: false
+				}
+				{
+					id: "32CDF56407E67438"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					player_command: false
+				}
+			]
 		}
 		{
-			x: 9.5d
-			y: -0.5d
+			x: 9.0d
+			y: 0.5d
+			description: [
+				"While it also serves as an easily crafted Shulker Box, the Coffer primarily adds utility to Crows in Harvest mode. Depending on how the Crow button in the GUI is toggled, the Crow will either deposit everything it finds, or only deposit items that already exist in the Coffer, allowing it to act as a filter. "
+				""
+				"A Coffer may be quickly picked up with a single Left-Click."
+			]
 			dependencies: ["02339F3C9A699876"]
 			id: "5C2021524CEC2DB4"
 			tasks: [{
@@ -508,6 +778,24 @@
 					tag: { }
 				}
 			}]
+			rewards: [
+				{
+					id: "7F24002EAAA4E329"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					player_command: false
+				}
+				{
+					id: "7C6758B634970F76"
+					type: "command"
+					title: "Epic Hexerei Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					player_command: false
+				}
+			]
 		}
 	]
 }

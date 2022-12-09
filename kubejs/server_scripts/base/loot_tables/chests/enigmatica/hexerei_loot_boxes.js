@@ -132,12 +132,13 @@ ServerEvents.genericLootTables((event) => {
 
     event.addGeneric('enigmatica:loot_boxes/hexerei/epic', (table) => {
         table.addPool((pool) => {
-            pool.rolls = 1.0;
+            pool.rolls = 2.0;
             pool.addItem(Item.of('hexerei:herb_enhanced_broom_brush').enchant('minecraft:unbreaking', 5), 1, 1);
+            pool.addItem(Item.of('hexerei:crow_ankh_amulet').enchant('minecraft:unbreaking', 5), 1, 1);
         });
 
         table.addPool((pool) => {
-            pool.rolls = 1.0;
+            pool.rolls = 2.0;
             pool.addEntry({ type: 'loot_table', weight: 1, name: 'enigmatica:loot_boxes/hexerei/rare' });
         });
     });
