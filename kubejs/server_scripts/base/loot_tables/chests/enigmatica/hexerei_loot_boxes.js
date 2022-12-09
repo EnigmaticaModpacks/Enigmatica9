@@ -134,7 +134,7 @@ ServerEvents.genericLootTables((event) => {
         table.addPool((pool) => {
             pool.rolls = 2.0;
             pool.addItem(Item.of('hexerei:herb_enhanced_broom_brush').enchant('minecraft:unbreaking', 5), 1, 1);
-            pool.addItem(Item.of('hexerei:crow_ankh_amulet').enchant('minecraft:unbreaking', 5), 1, 1);
+            pool.addItem('hexerei:crow_ankh_amulet', 1, 1);
         });
 
         table.addPool((pool) => {

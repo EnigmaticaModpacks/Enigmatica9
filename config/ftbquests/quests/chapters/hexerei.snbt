@@ -9,6 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "Witch's Vestments"
 			icon: {
 				id: "hexerei:witch_helmet"
 				Count: 1b
@@ -18,6 +19,7 @@
 			}
 			x: 5.5d
 			y: 0.5d
+			subtitle: "Rags to Witches"
 			description: ["The vestments of a Witch go beyond mere mundane protection. Wearing them sends a message to other Witches to stand down while also offering hefty protection against the dark arts. "]
 			dependencies: ["5CBE4B1409CA3DB1"]
 			id: "135494AEBA82B7A7"
@@ -70,7 +72,7 @@
 					type: "command"
 					title: "Epic Hexerei Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					player_command: false
 				}
 			]
@@ -79,6 +81,7 @@
 			title: "Getting Started: Cauldron Crafting"
 			x: 4.0d
 			y: -2.5d
+			subtitle: "What a Brew-tiful Sight"
 			description: [
 				"The Cauldron itself is a time-honored tradition among Witches, used for general cooking, potion making, and more advanced magics alike, it is a versatile tool for any practitioner. "
 				""
@@ -108,7 +111,7 @@
 					type: "command"
 					title: "Rare Hexerei Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/rare"
 					player_command: false
 				}
 			]
@@ -145,6 +148,7 @@
 		{
 			x: 6.5d
 			y: 0.5d
+			subtitle: "Payback's a Witch"
 			description: ["Sharing a home with trolls will teach a Witch a thing or two, like the value of a heavy object to smash some heads in. Works great for tenderizing steaks too!"]
 			dependencies: ["5CBE4B1409CA3DB1"]
 			id: "39BB530B6057DA94"
@@ -173,7 +177,7 @@
 					type: "command"
 					title: "Epic Hexerei Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					player_command: false
 				}
 			]
@@ -181,6 +185,7 @@
 		{
 			x: 8.0d
 			y: -1.5d
+			subtitle: "High and Dry"
 			description: [
 				"With a fine selection of herbs in hand, and a small garden prepared, the real magic of Witchcraft may begin. "
 				""
@@ -211,7 +216,7 @@
 					type: "command"
 					title: "Rare Hexerei Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/rare"
 					player_command: false
 				}
 			]
@@ -220,6 +225,7 @@
 			icon: "hexerei:sage"
 			x: 8.0d
 			y: -0.5d
+			subtitle: "Turning Over a New Leaf"
 			description: [
 				"Dried Sage has a number of curative properties, but perhaps more surprising is its ability to ward an area against monster incursions. Perfect for the Witch looking to relax and make a few brews at home without being bothered. "
 				""
@@ -261,7 +267,7 @@
 					type: "command"
 					title: "Epic Hexerei Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					player_command: false
 				}
 			]
@@ -269,6 +275,7 @@
 		{
 			x: 3.0d
 			y: -0.5d
+			subtitle: "... And Now You're Mine"
 			description: [
 				"Far beyond simple light sources, a true Witch knows how to infuse Candles with potent magic, causing nearby plants to Grow rapidly, turn the weather from stormy to clear skies, or even imbue nearby monsters with effects such as Poison or Slowness. "
 				""
@@ -297,7 +304,7 @@
 					type: "command"
 					title: "Epic Hexerei Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					player_command: false
 				}
 			]
@@ -305,6 +312,7 @@
 		{
 			x: 3.0d
 			y: -1.5d
+			subtitle: "I Put a Spell On You ..."
 			description: [
 				"The Dipper is an apparatus that sits atop the Cauldron. With the Cauldron filled with Tallow and up to three String placed in the Dipper, it will set about dipping the string to make Candles all on its own."
 				""
@@ -333,7 +341,7 @@
 					type: "command"
 					title: "Rare Hexerei Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/rare"
 					player_command: false
 				}
 			]
@@ -341,6 +349,7 @@
 		{
 			x: 6.0d
 			y: 1.5d
+			subtitle: "Gonna Take My Broom to the Old Swamp Road"
 			description: [
 				"Easily the most important tool in any Witch’s arsenal, the Broom allows for both fast and precise flight to avoid critters while out harvesting herbs or to simply get up on that roof to safely fix the smoldering hole left by that lightning bolt. "
 				""
@@ -397,7 +406,7 @@
 					type: "command"
 					title: "Epic Hexerei Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					player_command: false
 				}
 			]
@@ -405,6 +414,7 @@
 		{
 			x: 6.0d
 			y: 2.5d
+			subtitle: "Gonna Fly Till I Can't No More"
 			description: ["Brooms may also be equipped with Satchels that come in various sizes and are the perfect place to store spare parts, potions, or anything one might need for longer excursions."]
 			dependencies: ["2427E2062E71E3C7"]
 			id: "3D0BF6FF68EE43FC"
@@ -438,13 +448,14 @@
 				type: "command"
 				title: "Epic Hexerei Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 				player_command: false
 			}]
 		}
 		{
 			x: 6.5d
 			y: 3.5d
+			subtitle: "For Better or Warts"
 			description: ["A magical pouch bound to one’s Ender Chest, making it the perfect addition for any forgetful Witches who commonly lose their brooms. At least they won’t lose the contents!"]
 			dependencies: ["3D0BF6FF68EE43FC"]
 			id: "2AE5ED341C735EB0"
@@ -458,13 +469,14 @@
 				type: "command"
 				title: "Epic Hexerei Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 				player_command: false
 			}]
 		}
 		{
 			x: 5.5d
 			y: 3.5d
+			subtitle: "No Rest for the Wicca'd"
 			description: ["No simple storage bag, the Replacer Satchel will automatically swap out Brushes as they wear out, allowing one to fly for longer without interruption."]
 			dependencies: ["3D0BF6FF68EE43FC"]
 			id: "39893761085CE2A3"
@@ -478,7 +490,7 @@
 				type: "command"
 				title: "Epic Hexerei Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 				player_command: false
 			}]
 		}
@@ -487,12 +499,13 @@
 			icon: "hexerei:herb_drying_rack_full"
 			x: 8.0d
 			y: -2.5d
+			subtitle: "Sage Advice"
 			description: [
-				"The wise witch knows the properties of every plant in their domain, and there are none more knowledgeable than those who call the Swamps their home. Locate a swamp and attempt to forage up some samples for a personal herb garden. "
+				"The wise Witch knows the properties of every plant in their domain, and there are none more knowledgeable than those who call the Swamps their home. Locate a swamp and attempt to forage up some samples for a personal herb garden. "
 				""
 				"The ancient practice of Dowsing has been used for everything from finding ground water and gems to gravesites and malign spirits. Hexerei’s Dowsing Rod is perfectly attuned to lead the bearer to nearby Swamps and Jungles, with the leaves changing from vibrant green when pointed the correct way, to dull brown when facing away from the target. "
 				""
-				"A Nature’s Compass is also a viable tool for locating Swamps. And for the less adventurous witches, a stop a nearby Market Stall is likely sufficient. "
+				"A Nature’s Compass is also a viable tool for locating Swamps. And for the less adventurous Witches, a stop a nearby Market Stall is likely sufficient. "
 			]
 			hide_dependency_lines: true
 			dependencies: ["68D1B646B4C5921A"]
@@ -570,7 +583,7 @@
 					type: "command"
 					title: "Rare Hexerei Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/rare"
 					player_command: false
 				}
 			]
@@ -584,6 +597,7 @@
 			}
 			x: 6.0d
 			y: -0.5d
+			subtitle: "Witch Upon a Star"
 			description: ["Dressing for the part is optional, of course, but style should never be overlooked. Follow along to discover some of the very useful tools in a Witch’s arsenal."]
 			hide_dependency_lines: true
 			dependencies: ["48627087020E059F"]
@@ -623,7 +637,7 @@
 					type: "command"
 					title: "Epic Hexerei Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					player_command: false
 				}
 			]
@@ -632,6 +646,7 @@
 			icon: "hexerei:blood_sigil"
 			x: 4.0d
 			y: -1.5d
+			subtitle: "Life's a Witch and Then You Die"
 			description: [
 				"Blood is a powerful magical reagent, and a wise Witch is careful of allowing another magic user access to theirs. "
 				""
@@ -667,7 +682,7 @@
 					type: "command"
 					title: "Epic Hexerei Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					player_command: false
 				}
 			]
@@ -676,6 +691,7 @@
 			title: "Crows"
 			x: 9.0d
 			y: -0.5d
+			subtitle: "For the Birds"
 			description: [
 				"Witches are often depicted as befriending animals, from cats and mice to snakes and lizards. The Witches of these swamps, however, have a special affinity for the native Crows. "
 				""
@@ -718,7 +734,7 @@
 					type: "command"
 					title: "Epic Hexerei Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					player_command: false
 				}
 			]
@@ -746,7 +762,7 @@
 					type: "command"
 					title: "Epic Hexerei Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					player_command: false
 				}
 				{
@@ -762,6 +778,7 @@
 		{
 			x: 9.0d
 			y: 0.5d
+			subtitle: "Do You Beleaf in Magic?"
 			description: [
 				"While it also serves as an easily crafted Shulker Box, the Coffer primarily adds utility to Crows in Harvest mode. Depending on how the Crow button in the GUI is toggled, the Crow will either deposit everything it finds, or only deposit items that already exist in the Coffer, allowing it to act as a filter. "
 				""
@@ -792,7 +809,7 @@
 					type: "command"
 					title: "Epic Hexerei Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					player_command: false
 				}
 			]
