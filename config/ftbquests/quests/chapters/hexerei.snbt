@@ -18,6 +18,7 @@
 			}
 			x: 5.5d
 			y: 2.0d
+			description: ["The vestments of a Witch go beyond mere mundane protection. Wearing them sends a message to other Witches to stand down while also offering hefty protection against the dark arts. "]
 			dependencies: ["5CBE4B1409CA3DB1"]
 			id: "135494AEBA82B7A7"
 			tasks: [
@@ -82,6 +83,7 @@
 			x: 6.0d
 			y: -4.0d
 			shape: "hexagon"
+			description: ["Learn the arts of Witchcraft as you explore what Hexerei has to offer, from cute friends to flying broomsticks, this mod will leave you feeling like a true Witch."]
 			id: "68D1B646B4C5921A"
 			tasks: [{
 				id: "4A53F18E742B9636"
@@ -99,6 +101,7 @@
 		{
 			x: 6.5d
 			y: 2.0d
+			description: ["Sharing a home with trolls will teach a Witch a thing or two, like the value of a heavy object to smash some heads in. Works great for tenderizing steaks too!"]
 			dependencies: ["5CBE4B1409CA3DB1"]
 			id: "39BB530B6057DA94"
 			tasks: [{
@@ -212,7 +215,21 @@
 		{
 			x: 6.0d
 			y: 3.0d
+			description: [
+				"Easily the most important tool in any Witch’s arsenal, the Broom allows for both fast and precise flight to avoid critters while out harvesting herbs or to simply get up on that roof to safely fix the smoldering hole left by that lightning bolt. "
+				""
+				"Some care and maintenance are required when working with Brooms, as their Brushes will not endure forever. Though, they may be enchanted with Unbreaking to help them last a bit longer. "
+				""
+				"To ride the Broom, Right-Click to place it in the world, then again to hop on. It controls similarly to a boat, though it can change altitude as well. "
+				""
+				"When not riding it, Sneak Right-Click the Broom to access its menu, where upgrades may be installed, or Brushes swapped out.  "
+				""
+				"At the tip, the Broom may be adorned with simple decorations by hanging them from a Broom Chain, or with more functional Tips that allow the Broom to pass through Lava or Water safely. "
+				""
+				"Link the Broom to a Broom Whistle to be able to recall the Broom more easily. The Broom must be relatively nearby for this to work. "
+			]
 			dependencies: ["5CBE4B1409CA3DB1"]
+			min_width: 300
 			id: "2427E2062E71E3C7"
 			tasks: [{
 				id: "3A2C7E4DF750C249"
@@ -237,10 +254,22 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "1008549AFC5BA985"
+				type: "item"
+				item: {
+					id: "hexerei:broom_whistle"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
 		}
 		{
 			x: 6.0d
-			y: 5.0d
+			y: 4.0d
+			description: ["Brooms may also be equipped with Satchels that come in various sizes and are the perfect place to store spare parts, potions, or anything one might need for longer excursions."]
 			dependencies: ["2427E2062E71E3C7"]
 			id: "3D0BF6FF68EE43FC"
 			tasks: [{
@@ -271,8 +300,9 @@
 		}
 		{
 			x: 6.5d
-			y: 4.0d
-			dependencies: ["2427E2062E71E3C7"]
+			y: 5.0d
+			description: ["A magical pouch bound to one’s Ender Chest, making it the perfect addition for any forgetful Witches who commonly lose their brooms. At least they won’t lose the contents!"]
+			dependencies: ["3D0BF6FF68EE43FC"]
 			id: "2AE5ED341C735EB0"
 			tasks: [{
 				id: "122338C63082ED70"
@@ -282,8 +312,9 @@
 		}
 		{
 			x: 5.5d
-			y: 4.0d
-			dependencies: ["2427E2062E71E3C7"]
+			y: 5.0d
+			description: ["No simple storage bag, the Replacer Satchel will automatically swap out Brushes as they wear out, allowing one to fly for longer without interruption."]
+			dependencies: ["3D0BF6FF68EE43FC"]
 			id: "39893761085CE2A3"
 			tasks: [{
 				id: "696814E3084CCD5E"
