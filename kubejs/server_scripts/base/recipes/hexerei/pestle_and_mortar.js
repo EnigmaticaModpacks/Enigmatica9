@@ -15,6 +15,28 @@ ServerEvents.recipes((event) => {
             grindingTime: 300
         }
         */
+        {
+            inputs: [
+                Item.of('minecraft:wheat'),
+                Item.of('minecraft:wheat'),
+                Item.of('minecraft:wheat'),
+                Item.of('minecraft:wheat'),
+                Item.of('minecraft:wheat')
+            ],
+            output: Item.of('create:wheat_flour', 6),
+            grindingTime: 300
+        },
+        {
+            inputs: [
+                Item.of('minecraft:netherrack'),
+                Item.of('minecraft:netherrack'),
+                Item.of('minecraft:netherrack'),
+                Item.of('minecraft:netherrack'),
+                Item.of('minecraft:netherrack')
+            ],
+            output: Item.of('create:cinder_flour', 8),
+            grindingTime: 300
+        }
     ];
 
     recipes.forEach((recipe) => {

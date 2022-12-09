@@ -440,28 +440,51 @@
 			title: "Crows"
 			x: 9.5d
 			y: -1.5d
-			dependencies: ["59ACE37EED9E8CF5"]
-			id: "02339F3C9A699876"
-			tasks: [
-				{
-					id: "28B0B140426D4A56"
-					type: "item"
-					item: "hexerei:seed_mixture"
-				}
-				{
-					id: "37FB97479875B6C1"
-					type: "item"
-					item: {
-						id: "hexerei:crow_flute"
-						Count: 1b
-						tag: { }
-					}
-				}
+			description: [
+				"Witches are often depicted as befriending animals, from cats and mice to snakes and lizards. The Witches of these swamps, however, have a special affinity for the native Crows. "
+				""
+				"Being a particularly intelligent species of bird, Crows are capable of handling numerous tasks on behalf of their Witch friends. Mix up some of their favorite seeds to offer as a gift to befriend. Either toss the Seed Mixture on the ground nearby or offer the seeds by hand. "
+				""
+				"Crows are very social critters, and as such will have no issues with having more of their kind around, tame as many as desired!"
+				""
+				"Once tamed, Sneak Right-Click on them to open a menu where they may be set to a task or equipped with trinkets, hats, or weapons such as a Warhammer!"
+				""
+				"When commanding a murder of crows, a Crow Flute becomes an indispensable tool. Sneak Right-Click the Flute to access the menu. To begin, click the Select button and then proceed by Right-Clicking each Crow to be commanded by the Flute. Consider crafting a new Flute for every set of Crows to be commanded to prevent mix-ups with commands."
+				""
+				"With a Flute, multiple Crows may be selected and commanded to perform their actions, either Harvesting nearby crops, Gathering nearby items, or Pickpocketing nearby Villagers. "
+				""
+				"Flutes are also the only way to direct a Crow to Perch at a specific location. Perching on a Coffer, for instance, allows a Gathering Crow to automatically deposit its items into the Coffer. "
+				""
+				"A note on Pickpocketing: Crows have a fixed list of items they’ll choose from any given profession, and the list is not based on the available trades of that villager. "
 			]
+			dependencies: ["59ACE37EED9E8CF5"]
+			min_width: 300
+			id: "02339F3C9A699876"
+			tasks: [{
+				id: "28B0B140426D4A56"
+				type: "item"
+				item: "hexerei:seed_mixture"
+			}]
+			rewards: [{
+				id: "1A3B0AA55642D5F1"
+				type: "item"
+				item: {
+					id: "hexerei:crow_flute"
+					Count: 1b
+					tag: { }
+				}
+			}]
 		}
 		{
 			x: 9.5d
 			y: -2.5d
+			description: [
+				"A common sight in apothecaries and kitchens of old, the humble Pestle and Mortar have been used for ages to grind and mix ingredients. "
+				""
+				"Items may be placed in the Pestle and Mortar by hand via Right-Click, and the finished product may be retrieved similarly."
+				""
+				"In addition, items may be piped in via automation and the Pestle and Mortar will hold onto them until finished, only allowing the final product to be extracted."
+			]
 			hide_dependency_lines: true
 			dependencies: ["68D1B646B4C5921A"]
 			id: "59ACE37EED9E8CF5"
