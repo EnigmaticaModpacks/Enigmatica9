@@ -213,7 +213,8 @@ ItemEvents.tooltip((event) => {
                 'mekanism:qio_dashboard',
                 'mekanism:qio_drive_array',
                 'mekanism:portable_qio_dashboard',
-                'occultism:storage_remote'
+                'occultism:storage_remote',
+                'hexerei:ender_satchel'
             ],
             text: [Text.of(`Cross-Dimensional Storage`).darkPurple()]
         },
