@@ -158,6 +158,42 @@ const metal_properties = {
             }
         }
     },
+    horizonite: {
+        // meltingPoint: 0,
+        oreProcessing: {
+            output: {
+                substrate: 'minecraft:gravel',
+                secondary: 'ventium'
+            },
+            create: {
+                processingTime: 450
+            }
+        }
+    },
+    ventium: {
+        // meltingPoint: 0,
+        oreProcessing: {
+            output: {
+                substrate: 'minecraft:gravel',
+                secondary: 'falsite'
+            },
+            create: {
+                processingTime: 450
+            }
+        }
+    },
+    falsite: {
+        // meltingPoint: 0,
+        oreProcessing: {
+            output: {
+                substrate: 'minecraft:gravel',
+                secondary: 'horizonite'
+            },
+            create: {
+                processingTime: 450
+            }
+        }
+    },
     // elementium: {
     //     meltingPoint: 875
     // },
@@ -196,9 +232,6 @@ const metal_properties = {
 //     brass: {},
 //     refined_glowstone: {},
 //     refined_obsidian: {},
-//     horiznoite: {},
-//     ventium: {},
-//     falsite: {},
 //     infused_iron: {},
 //     sky_ingot: {},
 //     tainted_gold: {},
