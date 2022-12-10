@@ -5,7 +5,6 @@
     "processedTypes": [
         "ore",
         "raw",
-        "crushed_ore",
         "storage_block",
         "gem"
     ],

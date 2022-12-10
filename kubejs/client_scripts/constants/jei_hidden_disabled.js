@@ -79,7 +79,8 @@ jei.base.items.disabled = [
     'thermal:light_oil_bucket',
     'thermal:refined_fuel_bucket',
     /byg:.*pendorite.*/,
-    /byg:.*ametrine.*/
+    /byg:.*ametrine.*/,
+    'minecraft:nether_gold_ore'
 ];
 jei.base.items.hidden = [
     'kubejs:altered_recipe_indicator',

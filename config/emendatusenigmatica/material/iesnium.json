@@ -8,7 +8,12 @@
         "crushed_ore",
         "ingot",
         "nugget",
-        "dust"
+        "dust",
+        "slurry",
+        "crystal",
+        "shard",
+        "clump",
+        "dirty_dust"
     ],
     "properties": {
         "materialType": "metal",

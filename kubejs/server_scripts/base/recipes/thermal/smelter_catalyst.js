@@ -13,11 +13,11 @@ ServerEvents.recipes((event) => {
         },
         {
             ingredient: [{ item: 'ars_nouveau:air_essence' }],
-            primary_mod: 6.0,
-            secondary_mod: 0.001,
-            energy_mod: 4.5,
-            min_chance: 0.85,
-            use_chance: 0.85,
+            primary_mod: 5.0,
+            secondary_mod: 0.005,
+            energy_mod: 4.25,
+            min_chance: 0.8,
+            use_chance: 0.8,
             id: `${id_prefix}air_essence`
         }
     ];

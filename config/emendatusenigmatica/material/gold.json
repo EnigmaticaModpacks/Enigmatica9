@@ -34,8 +34,6 @@
         "max": 1
     },
     "compat": {
-      "thermal": true,
-      "create": true,
-      "ars_nouveau": true
+        "mekanism": false
     }
 }

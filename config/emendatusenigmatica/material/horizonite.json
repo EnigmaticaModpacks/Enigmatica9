@@ -8,7 +8,13 @@
         "raw",
         "crushed_ore",
         "ingot",
-        "nugget"
+        "dust",
+        "nugget",
+        "slurry",
+        "crystal",
+        "shard",
+        "clump",
+        "dirty_dust"
     ],
     "properties": {
         "materialType": "metal",
@@ -17,5 +23,8 @@
     "colors": {
         "materialColor": "c94627",
         "fluidColor": "c94627"
+    },
+    "compat": {
+        "mekanism": false
     }
 }

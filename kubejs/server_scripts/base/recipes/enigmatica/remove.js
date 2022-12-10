@@ -15,11 +15,6 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:sawing\/log/ },
         { id: /mekanism:compat\/byg\/combining\/.*_ore_/ },
         { id: /mekanism:bin\/.*/ },
-        { id: /mekanism:processing\/.*\/to.*_ore/ },
-        { id: /mekanism:processing\/.*\/ore\/.*from_raw/ },
-        { id: /mekanism:processing\/.*\/crystal\/from_slurry/ },
-        { id: /mekanism:processing\/.*\/slurry\/clean/ },
-        { id: /mekanism:processing\/.*\/slurry\/dirty/ },
         { id: 'mekanism:processing/netherite/dust_to_ancient_debris' },
         { id: /mekanism:crushing\/biofuel/ },
 
@@ -98,14 +93,36 @@ ServerEvents.recipes((event) => {
         { type: 'thermal:compression_fuel' },
 
         { mod: 'gateways' },
-        // Emendatus Enigmatica Related stuff
-        { id: /immersiveengineering:crafting\/raw_hammercrushing_/ }, // Dusts.js related
+
+        //// Emendatus Enigmatica Related stuff
+
+        { id: /immersiveengineering:crafting\/raw_hammercrushing_/ },       // Dusts.js related
         { id: /immersiveengineering:crafting\/hammercrushing_/ },
-        { id: /industrialforegoing:.*_gear/ }, // Gears
-        { id: /immersiveengineering:crafting\/plate_.*_hammering/ }, // plates.js related
-        { id: /immersiveengineering:crafting\/stick_/ }, // rods.js related
-        { id: /emendatusenigmatica:ingot\/from_dust.*\/refined_obsidian/}, // Removes smelting recipes dust -> ingot for Refined Obsidian and Glowstone
-        { id: /emendatusenigmatica:ingot\/from_dust.*\/refined_glowstone/}
+        { id: /industrialforegoing:.*_gear/ },                              // Gears
+        { id: /immersiveengineering:crafting\/plate_.*_hammering/ },        // plates.js related
+        { id: /immersiveengineering:crafting\/stick_/ },                    // rods.js related
+        { id: /emendatusenigmatica:ingot\/from_dust.*\/refined_obsidian/ }, // Removes smelting recipes dust -> ingot for Refined Obsidian and Glowstone
+        { id: /emendatusenigmatica:ingot\/from_dust.*\/refined_glowstone/ },
+        { id: /mekanism:processing\/.*\/to.*_ore/ },                        // Replaced manually.
+        { id: /mekanism:processing\/.*\/ore\/.*from_raw/ },
+        { id: /mekanism:processing\/.*\/crystal\/from_slurry/ },
+        { id: /mekanism:processing\/.*\/slurry\/clean/ },
+        { id: /mekanism:processing\/.*\/slurry\/dirty/ },
+
+        // Ore Processing Rework Related
+
+        { id: /create:crushing\/.*_ore/ },
+        { id: /create:compat\/.*_ore/ },
+        { id: /create:splashing\/crushed/ },
+        { id: /emendatusenigmatica:slurry\/dirt/ },
+        { id: /thermal:machines\/smelter\/smelter.*_ore/ },
+        { id: /thermal:machines\/smelter\/smelter.*_raw/ },
+        { id: /thermal:compat\/.*_ore/, type: "thermal:smelter"},
+        { id: /thermal:compat\/.*_raw_/, type: "thermal:smelter"},
+        { id: /thermal:machines\/pulverizer\/pulverizer.*_ore/ },
+        { id: /thermal:machines\/pulverizer\/pulverizer.*_raw/ },
+        { id: /thermal:compat\/.*_ore/, type: "thermal:pulverizer"},
+        { id: /thermal:compat\/.*_raw_/, type: "thermal:pulverizer"}
     ];
 
     colors.forEach((color) => {
