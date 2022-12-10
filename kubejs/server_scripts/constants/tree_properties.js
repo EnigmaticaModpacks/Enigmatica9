@@ -182,30 +182,30 @@ const tree_properties = {
                 rate: { living: 50, dead: 6 }
             }
         },
-        //{
-        //     sapling: 'hexerei:mahogany_sapling',
-        //     stems: ['hexerei:mahogany_log'],
-        //     foliage: ['hexerei:mahogany_leaves'],
-        //     fruits: [],
-        //     dimension: 'overworld',
-        //     substrate: 'dirt',
-        //     logProcessing: {
-        //         sap: 'thermal:resin',
-        //         rate: { living: 50, dead: 6 }
-        //     }
-        // },
-        // {
-        //     sapling: 'hexerei:willow_sapling',
-        //     stems: ['hexerei:willow_log'],
-        //     foliage: ['hexerei:willow_leaves', 'hexerei:willow_vines'],
-        //     fruits: [],
-        //     dimension: 'overworld',
-        //     substrate: 'dirt',
-        //     logProcessing: {
-        //         sap: 'thermal:resin',
-        //         rate: { living: 50, dead: 6 }
-        //     }
-        // },
+        {
+            sapling: 'hexerei:mahogany_sapling',
+            stems: ['hexerei:mahogany_log'],
+            foliage: ['hexerei:mahogany_leaves'],
+            fruits: [],
+            dimension: 'overworld',
+            substrate: 'dirt',
+            logProcessing: {
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
+            }
+        },
+        {
+            sapling: 'hexerei:willow_sapling',
+            stems: ['hexerei:willow_log'],
+            foliage: ['hexerei:willow_leaves', 'hexerei:willow_vines'],
+            fruits: [],
+            dimension: 'overworld',
+            substrate: 'dirt',
+            logProcessing: {
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
+            }
+        },
         {
             sapling: 'occultism:otherworld_sapling',
             stems: ['occultism:otherworld_log'],

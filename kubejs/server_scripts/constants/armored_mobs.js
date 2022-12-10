@@ -48,16 +48,15 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
+                        head: { item: 'hexerei:witch_helmet', drop_rate: 0.085 },
                         chest: {
                             item: Item.of(
-                                'minecraft:leather_chestplate',
+                                'hexerei:witch_chestplate',
                                 `{display:{color:2624321},${reactive.life_link},${enchant_glint.blank}}`
                             ).enchant('ars_nouveau:reactive', 3),
                             drop_rate: 0.085
-                        }
-                        // head: 'hexerei:witch_helmet',
-                        // chest: 'hexerei:witch_chestplate',
-                        // feet: 'hexerei:witch_boots'
+                        },
+                        feet: { item: 'hexerei:witch_boots', drop_rate: 0.085 }
                     }
                 }
             ]
@@ -76,13 +75,12 @@ const armored_mobs = {
                         },
                         chest: {
                             item: Item.of(
-                                'minecraft:leather_chestplate',
+                                'hexerei:witch_chestplate',
                                 `{display:{color:2624321},${reactive.life_link},${enchant_glint.blank}}`
                             ).enchant('ars_nouveau:reactive', 3),
                             drop_rate: 0.085
-                        }
-                        // chest: 'hexerei:witch_chestplate',
-                        // feet: 'hexerei:witch_boots'
+                        },
+                        feet: { item: 'hexerei:witch_boots', drop_rate: 0.085 }
                     }
                 }
             ]

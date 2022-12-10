@@ -153,5 +153,23 @@ ServerEvents.recipes((event) => {
         base_count = 1;
         count = dye_source.type == 'large' ? base_count * 2 : base_count;
         event.shapeless(Item.of(outputs, count), [input]).id(`${id_prefix}shapeless/${id_suffix}`);
+
+        // Hexerei Mortar and Pestle
+        base_count = 15;
+        count = dye_source.type == 'large' ? base_count * 2 : base_count;
+        event
+            .custom({
+                type: 'hexerei:pestle_and_mortar',
+                ingredients: [
+                    Ingredient.of(input).toJson(),
+                    Ingredient.of(input).toJson(),
+                    Ingredient.of(input).toJson(),
+                    Ingredient.of(input).toJson(),
+                    Ingredient.of(input).toJson()
+                ],
+                output: Item.of(outputs, count).toJson(),
+                grindingTime: duration * 5
+            })
+            .id(`${id_prefix}hexerei/pestle_and_mortar/${id_suffix}`);
     });
 });

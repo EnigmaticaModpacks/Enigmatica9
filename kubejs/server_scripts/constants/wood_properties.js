@@ -67,9 +67,9 @@ var wood_variants_constructor = [
     'twilightforest:time',
     'twilightforest:transformation',
     'twilightforest:mining',
-    'twilightforest:sorting'
-    // 'hexerei:mahogany',
-    // 'hexerei:willow'
+    'twilightforest:sorting',
+    'hexerei:mahogany',
+    'hexerei:willow'
 ];
 
 const wood_properties = [];
