@@ -305,7 +305,7 @@ const gemProperties = {
             }
         }
     },
-    potassium_nitrate: {
+    niter: {
         meltingPoint: 334,
         oreProcessing: {
             output: {
@@ -393,6 +393,130 @@ const gemProperties = {
 
             mekanism: {
                 primaryCount: 4
+            }
+        }
+    },
+    aquite: {
+        // meltingPoint: 0,
+        oreProcessing: {
+            output: {
+                type: 'gem',
+                substrate: 'minecraft:gravel',
+                secondary: 'emendatusenigmatica:diopside_gem'
+            },
+            create: {
+                primaryCount: 6,
+                secondaryCount: 2,
+                secondaryChance: 0.4,
+                processingTime: 250
+            },
+            thermal: {
+                primaryCount: 6,
+                secondaryCount: 2,
+                secondaryChance: 0.4
+            },
+            immersiveengineering: {
+                primaryCount: 5
+            },
+            occultism: {
+                primaryCount: 5
+            },
+
+            mekanism: {
+                primaryCount: 6
+            }
+        }
+    },
+    diopside: {
+        // meltingPoint: 0,
+        oreProcessing: {
+            output: {
+                type: 'gem',
+                substrate: 'minecraft:gravel',
+                secondary: 'emendatusenigmatica:pyrope_gem'
+            },
+            create: {
+                primaryCount: 6,
+                secondaryCount: 2,
+                secondaryChance: 0.4,
+                processingTime: 250
+            },
+            thermal: {
+                primaryCount: 6,
+                secondaryCount: 2,
+                secondaryChance: 0.4
+            },
+            immersiveengineering: {
+                primaryCount: 5
+            },
+            occultism: {
+                primaryCount: 5
+            },
+
+            mekanism: {
+                primaryCount: 6
+            }
+        }
+    },
+    pyrope: {
+        // meltingPoint: 0,
+        oreProcessing: {
+            output: {
+                type: 'gem',
+                substrate: 'minecraft:gravel',
+                secondary: 'emendatusenigmatica:charoite_gem'
+            },
+            create: {
+                primaryCount: 6,
+                secondaryCount: 2,
+                secondaryChance: 0.4,
+                processingTime: 250
+            },
+            thermal: {
+                primaryCount: 6,
+                secondaryCount: 2,
+                secondaryChance: 0.4
+            },
+            immersiveengineering: {
+                primaryCount: 5
+            },
+            occultism: {
+                primaryCount: 5
+            },
+
+            mekanism: {
+                primaryCount: 6
+            }
+        }
+    },
+    charoite: {
+        // meltingPoint: 0,
+        oreProcessing: {
+            output: {
+                type: 'gem',
+                substrate: 'minecraft:gravel',
+                secondary: 'emendatusenigmatica:aquite_gem'
+            },
+            create: {
+                primaryCount: 6,
+                secondaryCount: 2,
+                secondaryChance: 0.4,
+                processingTime: 250
+            },
+            thermal: {
+                primaryCount: 6,
+                secondaryCount: 2,
+                secondaryChance: 0.4
+            },
+            immersiveengineering: {
+                primaryCount: 5
+            },
+            occultism: {
+                primaryCount: 5
+            },
+
+            mekanism: {
+                primaryCount: 6
             }
         }
     },
