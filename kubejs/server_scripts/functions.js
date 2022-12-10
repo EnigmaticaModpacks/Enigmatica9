@@ -25,10 +25,10 @@ const tagIsEmpty = (tag) => {
 //     return pref;
 // };
 
-const getPreferredItemInTag = (tag) => {
-    let pref = AlmostUnified.getPreferredItemForTag(tag);
-    return pref;
-};
+// const getPreferredItemInTag = (tag) => {
+//     let pref = AlmostUnified.getPreferredItemForTag(tag);
+//     return pref;
+// };
 
 // const compareIndices = (a, b, tag) => {
 //     if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
