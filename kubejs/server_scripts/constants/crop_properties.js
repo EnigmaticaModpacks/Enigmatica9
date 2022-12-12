@@ -1167,25 +1167,25 @@ crop_properties.mushrooms.crops = [
     // Thermal Series
     {
         seed: 'thermal:redstone_mushroom_spores',
-        render: { type: 'generic', block: 'thermal:redstone_mushroom' },
+        render: { type: 'crop', block: 'thermal:redstone_mushroom' },
         plant: 'thermal:redstone_mushroom_spores',
         substrate: 'mushroom'
     },
     {
         seed: 'thermal:glowstone_mushroom_spores',
-        render: { type: 'generic', block: 'thermal:glowstone_mushroom' },
+        render: { type: 'crop', block: 'thermal:glowstone_mushroom' },
         plant: 'thermal:glowstone_mushroom_spores',
         substrate: 'mushroom'
     },
     {
         seed: 'thermal:gunpowder_mushroom_spores',
-        render: { type: 'generic', block: 'thermal:gunpowder_mushroom' },
+        render: { type: 'crop', block: 'thermal:gunpowder_mushroom' },
         plant: 'thermal:gunpowder_mushroom_spores',
         substrate: 'mushroom'
     },
     {
         seed: 'thermal:slime_mushroom_spores',
-        render: { type: 'generic', block: 'thermal:slime_mushroom' },
+        render: { type: 'crop', block: 'thermal:slime_mushroom' },
         plant: 'thermal:slime_mushroom_spores',
         substrate: 'mushroom'
     }
