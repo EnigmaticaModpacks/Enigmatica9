@@ -112,9 +112,12 @@ ServerEvents.recipes((event) => {
         // Ore Processing Rework Related
 
         { id: /create:crushing\/.*_ore/ },
+        { id: /create:crushing\/raw_.*_block/},
         { id: /create:compat\/.*_ore/ },
         { id: /create:splashing\/crushed/ },
         { id: /emendatusenigmatica:slurry\/dirt/ },
+        { id: /immersiveengineering:crushing\/raw_.*/},
+        { id: /immersiveengineering:crushing\/ore_.*/},
         { id: /thermal:machines\/smelter\/smelter.*_ore/ },
         { id: /thermal:machines\/smelter\/smelter.*_raw/ },
         { id: /thermal:compat\/.*_ore/, type: "thermal:smelter"},
