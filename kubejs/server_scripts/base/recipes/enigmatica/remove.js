@@ -116,8 +116,11 @@ ServerEvents.recipes((event) => {
         { id: /create:compat\/.*_ore/ },
         { id: /create:splashing\/crushed/ },
         { id: /emendatusenigmatica:slurry\/dirt/ },
-        { id: /immersiveengineering:crushing\/raw_.*/},
-        { id: /immersiveengineering:crushing\/ore_.*/},
+        { id: /emendatusenigmatica:dust\/from_ore_crusher_spirit/ },
+        { id: /emendatusenigmatica:dust\/from_ore_crush_spell/ },
+        { id: /immersiveengineering:crusher\/raw_.*/},
+        { id: /immersiveengineering:crusher\/ore_.*/},
+        { id: /immersiveengineering:arcfurnace\/ore/ },
         { id: /thermal:machines\/smelter\/smelter.*_ore/ },
         { id: /thermal:machines\/smelter\/smelter.*_raw/ },
         { id: /thermal:compat\/.*_ore/, type: "thermal:smelter"},
@@ -125,7 +128,8 @@ ServerEvents.recipes((event) => {
         { id: /thermal:machines\/pulverizer\/pulverizer.*_ore/ },
         { id: /thermal:machines\/pulverizer\/pulverizer.*_raw/ },
         { id: /thermal:compat\/.*_ore/, type: "thermal:pulverizer"},
-        { id: /thermal:compat\/.*_raw_/, type: "thermal:pulverizer"}
+        { id: /thermal:compat\/.*_raw_/, type: "thermal:pulverizer"},
+        { id: /mekanism:processing\/.*\/dust\/from_raw_block/ }
     ];
 
     colors.forEach((color) => {
