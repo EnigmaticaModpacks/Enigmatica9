@@ -96,7 +96,7 @@ function auto_fortune(material, properties, event) {
         result: { base_ingredient: { item: output_itemStack.getId() }, count: 1 },
         secondaries: [
             {
-                chance: 0.33,
+                chance: 0.5,
                 output: Item.of(output_itemStack, 1).toJson()
             }
         ]
@@ -114,10 +114,36 @@ function auto_fortune(material, properties, event) {
                 item: output_itemStack.getId()
             },
             {
-                chance: 0.33,
+                chance: 0.5,
                 count: 1,
                 item: output_itemStack.getId()
             }
         ]
     }).id(`${id_prefix}ars_nouveau_crushing/auto_fortune_for_${material}`);
+}
+
+function metal_ore_processing(material, properties, event) {
+    if (!properties[material].oreProcessing) {
+        return
+    }
+    // Ore processsing for Metals
+    let raw_itemStack = AlmostUnified.getPreferredItemForTag(`forge:raw_materials/${material}`)
+    let raw_block_itemStack = AlmostUnified.getPreferredItemForTag(`forge:storage_blocks/raw_${material}`)
+    let crushed_ore_itemStack = AlmostUnified.getPreferredItemForTag(`create:crushed_ores/${material}`)
+    let ingot_itemStack = AlmostUnified.getPreferredItemForTag(`forge:ingots/${material}`)
+    let nugget_itemStack = AlmostUnified.getPreferredItemForTag(`forge:nuggets/${material}`)
+
+    if (properties[material].oreProcessing.output.secondary) {
+        let secondary = properties[material].oreProcessing.output.secondary
+        let secondaries = {
+            raw_itemStack: AlmostUnified.getPreferredItemForTag(`forge:raw_materials/${secondary}`),
+            raw_block_itemStack: AlmostUnified.getPreferredItemForTag(`forge:storage_blocks/raw_${secondary}`),
+            crushed_ore_itemStack: AlmostUnified.getPreferredItemForTag(`create:crushed_ores/${secondary}`),
+            ingot_itemStack: AlmostUnified.getPreferredItemForTag(`forge:ingots/${secondary}`),
+            nugget_itemStack: AlmostUnified.getPreferredItemForTag(`forge:nuggets/${secondary}`)
+        }
+    }
+
+    // Create
+
 }

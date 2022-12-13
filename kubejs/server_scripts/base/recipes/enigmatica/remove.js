@@ -112,12 +112,15 @@ ServerEvents.recipes((event) => {
         // Ore Processing Rework Related
 
         { id: /create:crushing\/.*_ore/ },
-        { id: /create:crushing\/raw_.*_block/},
+        { id: /create:crushing\/.*raw_.*_block/},
+        { id: /create:crushing\/.*raw_/},
         { id: /create:compat\/.*_ore/ },
         { id: /create:splashing\/crushed/ },
         { id: /emendatusenigmatica:slurry\/dirt/ },
         { id: /emendatusenigmatica:dust\/from_ore_crusher_spirit/ },
         { id: /emendatusenigmatica:dust\/from_ore_crush_spell/ },
+        { id: /emendatusenigmatica:crushed\/from_raw_block_crushing/ },
+        { id: /emendatusenigmatica:crushed\/from_raw_crushing/ },
         { id: /immersiveengineering:crusher\/raw_.*/},
         { id: /immersiveengineering:crusher\/ore_.*/},
         { id: /immersiveengineering:arcfurnace\/ore/ },
@@ -129,7 +132,12 @@ ServerEvents.recipes((event) => {
         { id: /thermal:machines\/pulverizer\/pulverizer.*_raw/ },
         { id: /thermal:compat\/.*_ore/, type: "thermal:pulverizer"},
         { id: /thermal:compat\/.*_raw_/, type: "thermal:pulverizer"},
-        { id: /mekanism:processing\/.*\/dust\/from_raw_block/ }
+        { id: /mekanism:processing\/.*\/dust\/from_raw_block/ },
+        { id: 'occultism:crushing/iesnium_dust' }, // There is a lot of different recipes with really similar ids (occultism:crushing/copper_dust_from_raw), so regex would delete all of those, what we don't want ^^"
+        { id: 'occultism:crushing/copper_dust' }, 
+        { id: 'occultism:crushing/gold_dust' },
+        { id: 'occultism:crushing/silver_dust' },
+        { id: 'occultism:crushing/iron_dust' }
     ];
 
     colors.forEach((color) => {
