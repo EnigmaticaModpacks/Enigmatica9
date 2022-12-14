@@ -114,7 +114,7 @@
 			]
 		}
 		{
-			title: "Getting Started: Spirit Fire Purification"
+			title: "Getting Started: Ritual Magic"
 			icon: "occultism:spirit_fire"
 			x: 13.0d
 			y: 1.0d
@@ -277,9 +277,10 @@
 		}
 		{
 			title: "Candles"
-			x: 13.0d
-			y: 6.0d
-			subtitle: "Like Pigs to Slaughter"
+			icon: "minecraft:purple_candle"
+			x: 12.0d
+			y: 5.5d
+			subtitle: "Mood Lighting"
 			description: [
 				"Candles are another item used in most ritual pentacles. They are made from the tallow you get by slaughtering pigs, cows, or sheep with a Butcher Knife."
 				""
@@ -443,7 +444,7 @@
 			x: 11.0d
 			y: 3.0d
 			subtitle: "Feels So Clean!!"
-			description: ["Now that you have cleaned your chalk of impurities, all you need are some candles and some sacrificial bowls and you are ready to perform your first rituals!"]
+			description: ["While found in most known pentacles, White Chalk alone only has limited binding power. Still, it may be used for basic rituals until additional materials may be secured. "]
 			dependencies: ["0000000000000D96"]
 			id: "0000000000000D9A"
 			tasks: [{
@@ -483,11 +484,7 @@
 			x: 12.0d
 			y: 3.5d
 			subtitle: "Oooooooh Shiney!!"
-			description: [
-				"Golden Chalk is perhaps the most useful chalk type in the occultist's arsenal."
-				""
-				"When used in a ritual, it has the effect of binding a spirit to an item. In this way you will be able to make all sorts of useful items to help you on your journey!"
-			]
+			description: ["Including rare and expensive materials into the Chalk allows it to create a stronger connection with the Otherworld, allowing Spirits to be bound directly into items to enhance them."]
 			dependencies: ["0000000000000D96"]
 			id: "0000000000000D9C"
 			tasks: [{
@@ -510,8 +507,12 @@
 		{
 			x: 14.0d
 			y: 3.5d
-			subtitle: "Start Drawing Purple For Me Now!!!"
-			description: ["Purple Chalk is another chalk color in the occultist's arsenal. It allows you to bind more powerful spirits such as the Djinni."]
+			subtitle: "... And The Moon Went With Him"
+			description: [
+				"With a strong extra-planar component, Purple Chalk helps bind increasingly powerful Spirits. "
+				""
+				"Rituals that make use of Purple Chalk are not without risk, however, and some caution would be wise when dealing with some of these Spirits; not all are so amicable to being called to this realm. "
+			]
 			dependencies: ["0000000000000D96"]
 			id: "0000000000000D9E"
 			tasks: [{
@@ -544,11 +545,7 @@
 		{
 			x: 15.0d
 			y: 3.0d
-			description: [
-				"In order to use your Afrit Essence in a ritual, you will first need to infuse it in to chalk creating Red Chalk."
-				""
-				"Using this chalk in your pentacles will allow you to call on more powerful spirits such as the Marid."
-			]
+			description: ["Infused with the very essence of powerful spirits, Red Chalk is used as a final layer of protection in the most powerful of summoning circles. "]
 			dependencies: ["0000000000000D96"]
 			id: "0000000000000DA0"
 			tasks: [{
@@ -1318,35 +1315,38 @@
 			}]
 		}
 		{
-			x: 12.0d
-			y: 5.5d
-			description: ["Sacrificial Bowls are used to place sacrificial items on to preform your rituals. They can be placed anywhere touching the pentacle in whatever quantity you need."]
-			dependencies: ["0000000000000DD8"]
-			id: "0000000000000DD6"
-			tasks: [{
-				id: "0000000000000DD7"
-				type: "item"
-				item: "occultism:sacrificial_bowl"
-			}]
-			rewards: [{
-				id: "0000000000000DFA"
-				type: "xp"
-				xp: 300
-			}]
-		}
-		{
-			title: "Getting Started: Ritual Summoning"
+			title: "Sacrificial Bowls"
+			icon: "occultism:golden_sacrificial_bowl"
 			x: 13.0d
 			y: 4.5d
-			description: ["This is a special Sacrificial Bowl that normally lies in the middle of your pentacle. It is used to activate the ritual."]
+			description: [
+				"It is common for young practitioners to believe they’re commanding the Spirits, bending them to their will. This is misguided, however. In truth, the Spirits are long lived creatures whose very perception of time differs wildly from our own, short lived as we are. "
+				""
+				"Better to think of these interactions as trade. Giving something rare from our world in exchange for a drop from the sea of their time. Even a long-lived practitioner will, after all, perish long before the Spirits they’ve bonded with. "
+				""
+				"Therefore, when performing these rituals, something of value must be exchanged. The items should be laid out in Sacrificial Bowls prior to the start of the Ritual. Ordinary Sacrificial Bowls may be placed anywhere within eight blocks of the Golden Sacrificial Bowl, even outside the Pentacle. Likewise, the items may be placed into any bowl, the order does not matter. "
+				""
+				"The item for the Golden Sacrificial Bowl must be placed last; this will trigger the ritual if everything else is correctly placed. If the ritual demands the sacrifice of a creature or use of an item, these actions are to be performed after the ritual is activated and must be performed within eight blocks of the Golden Sacrificial Bowl. "
+			]
 			hide_dependency_lines: true
-			dependencies: ["0000000000000CB1"]
+			dependencies: [
+				"0000000000000CB1"
+				"0000000000000D9A"
+			]
+			min_width: 300
 			id: "0000000000000DD8"
-			tasks: [{
-				id: "0000000000000DD9"
-				type: "item"
-				item: "occultism:golden_sacrificial_bowl"
-			}]
+			tasks: [
+				{
+					id: "0000000000000DD9"
+					type: "item"
+					item: "occultism:golden_sacrificial_bowl"
+				}
+				{
+					id: "5746C491E6AD9B90"
+					type: "item"
+					item: "occultism:sacrificial_bowl"
+				}
+			]
 			rewards: [
 				{
 					id: "0000000000000DFC"
@@ -1499,8 +1499,8 @@
 		}
 		{
 			icon: "occultism:afrit_essence"
-			x: 10.0d
-			y: 9.0d
+			x: 18.5d
+			y: 5.0d
 			shape: "hexagon"
 			description: [
 				"In order to summon more powerful spirits, you will need Afrit Essence."
