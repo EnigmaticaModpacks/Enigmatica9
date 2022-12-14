@@ -1047,17 +1047,18 @@
 		{
 			title: "Summon Possessed Endermite"
 			icon: "minecraft:end_stone"
-			x: 4.5d
-			y: -0.5d
+			x: 11.0d
+			y: 7.0d
 			shape: "hexagon"
 			description: ["This possessed Endermite is a bit stronger, and a bit more annoying... It drops End Stone however."]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000DD8"]
 			id: "0000000000000DC4"
 			tasks: [{
-				id: "0000000000000E11"
-				type: "kill"
-				icon: "minecraft:end_stone"
-				entity: "occultism:possessed_endermite"
-				value: 1L
+				id: "309ABA5DBFCE9FAE"
+				type: "advancement"
+				advancement: "occultism:occultism/possess_endermite"
+				criterion: ""
 			}]
 			rewards: [
 				{
@@ -1080,20 +1081,22 @@
 		{
 			title: "Summon Possesed Skeleton"
 			icon: "minecraft:bone"
-			x: 3.5d
-			y: -0.5d
+			x: 14.0d
+			y: 7.5d
 			shape: "hexagon"
 			description: [
 				"Through rituals, you have the ability to possess certain mobs with spirits."
 				""
 				"These possessed mobs are a bit stronger, but they also have a chance at dropping a bit more items when killed."
 			]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000DD8"]
 			id: "0000000000000DC6"
 			tasks: [{
-				id: "0000000000000E0F"
-				type: "kill"
-				entity: "occultism:possessed_skeleton"
-				value: 1L
+				id: "682D362422C35932"
+				type: "advancement"
+				advancement: "occultism:occultism/possess_skeleton"
+				criterion: ""
 			}]
 			rewards: [
 				{
@@ -1116,17 +1119,18 @@
 		{
 			title: "Summon Possessed Enderman"
 			icon: "minecraft:ender_pearl"
-			x: 2.5d
-			y: -0.5d
+			x: 15.0d
+			y: 7.0d
 			shape: "hexagon"
 			description: ["The possessed Enderman is a bit stronger than a normal one, but it is guaranteed to drop an Ender Pearl!"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000DD8"]
 			id: "0000000000000DC8"
 			tasks: [{
-				id: "0000000000000E13"
-				type: "kill"
-				icon: "minecraft:ender_pearl"
-				entity: "occultism:possessed_enderman"
-				value: 1L
+				id: "2AECCA110B58A591"
+				type: "advancement"
+				advancement: "occultism:occultism/possess_enderman"
+				criterion: ""
 			}]
 			rewards: [
 				{
@@ -1499,8 +1503,8 @@
 		}
 		{
 			icon: "occultism:afrit_essence"
-			x: 18.5d
-			y: 5.0d
+			x: 5.5d
+			y: 2.5d
 			shape: "hexagon"
 			description: [
 				"In order to summon more powerful spirits, you will need Afrit Essence."
@@ -1546,8 +1550,8 @@
 		{
 			title: "The Wild Hunt"
 			icon: "minecraft:wither_skeleton_skull"
-			x: 5.5d
-			y: -0.5d
+			x: 13.0d
+			y: 8.0d
 			shape: "hexagon"
 			description: [
 				"Wither Skulls can be a chore to get sometimes."
@@ -1558,12 +1562,14 @@
 				""
 				"These Wither Skeletons also have a chance of dropping some extra loot!!!"
 			]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000DD8"]
 			id: "0000000000000DE4"
 			tasks: [{
-				id: "1EB92C8E21ECEA72"
-				type: "kill"
-				entity: "occultism:wild_hunt_wither_skeleton"
-				value: 2L
+				id: "306528255ABDBFC7"
+				type: "advancement"
+				advancement: "occultism:occultism/summon_wild_hunt"
+				criterion: ""
 			}]
 			rewards: [
 				{
@@ -2442,6 +2448,22 @@
 				type: "item"
 				item: "occultism:book_of_binding_djinni"
 				count: 3
+			}]
+		}
+		{
+			title: "Summon Possesed Ghast"
+			icon: "minecraft:ghast_tear"
+			x: 12.0d
+			y: 7.5d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["0000000000000DD8"]
+			id: "23C8CBCFFA809AF6"
+			tasks: [{
+				id: "7942A6C316DB60B5"
+				type: "advancement"
+				advancement: "occultism:occultism/possess_ghast"
+				criterion: ""
 			}]
 		}
 	]

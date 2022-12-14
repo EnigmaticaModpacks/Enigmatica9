@@ -1072,5 +1072,106 @@ const armored_mobs = {
                 }
             ]
         }
+    },
+    occultism: {
+        wild_hunt_wither_skeleton: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        max_health: 100,
+                        effects: [
+                            { type: 'minecraft:strength', amplifier: 2 },
+                            { type: 'minecraft:resistance', amplifier: 2 },
+                            { type: 'minecraft:speed', amplifier: 2 }
+                        ],
+                        enchant: {
+                            chance: 1.0,
+                            level: { min: 20, max: 30 },
+                            treasure: false
+                        },
+                        head: {
+                            item: Item.of('pneumaticcraft:compressed_iron_helmet', default_nbt),
+                            drop_rate: 0.05
+                        },
+                        chest: {
+                            item: Item.of('pneumaticcraft:compressed_iron_chestplate', default_nbt),
+                            drop_rate: 0.05
+                        },
+                        legs: {
+                            item: Item.of('pneumaticcraft:compressed_iron_leggings', default_nbt),
+                            drop_rate: 0.05
+                        },
+                        feet: {
+                            item: Item.of('pneumaticcraft:compressed_iron_boots', default_nbt),
+                            drop_rate: 0.05
+                        },
+                        mainhand: {
+                            item: Item.of(
+                                'ars_nouveau:enchanters_sword',
+                                `{${enchanters_sword.hex_blade},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.0
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:shield', shield_nbt.dragon_eye),
+                            drop_rate: 0.0
+                        }
+                    }
+                }
+            ]
+        },
+        wild_hunt_skeleton: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        max_health: 75,
+                        effects: [{ type: 'minecraft:speed', amplifier: 2 }],
+                        enchant: {
+                            chance: 1.0,
+                            level: { min: 10, max: 30 },
+                            treasure: false
+                        },
+                        head: {
+                            item: Item.of(
+                                'minecraft:leather_helmet',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.05
+                        },
+                        chest: {
+                            item: Item.of(
+                                'minecraft:leather_chestplate',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.05
+                        },
+                        legs: {
+                            item: Item.of(
+                                'minecraft:leather_leggings',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.05
+                        },
+                        feet: {
+                            item: Item.of(
+                                'minecraft:leather_boots',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.05
+                        },
+                        mainhand: {
+                            item: Item.of('minecraft:bow', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:tipped_arrow', '{Potion:"apotheosis:long_wither"}'),
+                            drop_rate: 0.085
+                        }
+                    }
+                }
+            ]
+        }
     }
 };
