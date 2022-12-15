@@ -1290,47 +1290,47 @@ const armored_mobs = {
                             { type: 'minecraft:speed', amplifier: 2 },
                             { type: 'cofh_core:explosion_resistance', amplifier: 1 },
                             { type: 'minecraft:fire_resistance', amplifier: 1 }
-                        ]
-                        // enchant: {
-                        //     chance: 1.0,
-                        //     level: { min: 40, max: 50 },
-                        //     treasure: false
-                        // }
-                        // head: {
-                        //     item: Item.of(
-                        //         'twilightforest:fiery_helmet',
-                        //         `{${reactive.burning_aura},${enchant_glint.blank}}`
-                        //     ).enchant('ars_nouveau:reactive', 1),
-                        //     drop_rate: 0.0
-                        // },
-                        // chest: {
-                        //     item: Item.of(
-                        //         'twilightforest:fiery_chestplate',
-                        //         `{${reactive.bounce_lightning},${enchant_glint.blank}}`
-                        //     ).enchant('ars_nouveau:reactive', 1),
-                        //     drop_rate: 0.0
-                        // },
-                        // legs: {
-                        //     item: Item.of(
-                        //         'twilightforest:fiery_leggings',
-                        //         `{${reactive.poison_bounce},${enchant_glint.blank}}`
-                        //     ).enchant('ars_nouveau:reactive', 1),
-                        //     drop_rate: 0.0
-                        // },
-                        // feet: {
-                        //     item: Item.of(
-                        //         'twilightforest:fiery_boots',
-                        //         `{${reactive.hex_zone},${enchant_glint.blank}}`
-                        //     ).enchant('ars_nouveau:reactive', 1),
-                        //     drop_rate: 0.0
-                        // },
-                        // mainhand: {
-                        //     item: Item.of(
-                        //         'ars_nouveau:enchanters_sword',
-                        //         `{${enchanters_sword.hex_blade},${enchant_glint.blank}}`
-                        //     ).enchant('minecraft:knockback', 2),
-                        //     drop_rate: 0.0
-                        // }
+                        ],
+                        enchant: {
+                            chance: 1.0,
+                            level: { min: 40, max: 50 },
+                            treasure: false
+                        },
+                        head: {
+                            item: Item.of(
+                                'twilightforest:fiery_helmet',
+                                `{${reactive.burning_aura},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 1),
+                            drop_rate: 0.0
+                        },
+                        chest: {
+                            item: Item.of(
+                                'twilightforest:fiery_chestplate',
+                                `{${reactive.bounce_lightning},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 1),
+                            drop_rate: 0.0
+                        },
+                        legs: {
+                            item: Item.of(
+                                'twilightforest:fiery_leggings',
+                                `{${reactive.poison_bounce},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 1),
+                            drop_rate: 0.0
+                        },
+                        feet: {
+                            item: Item.of(
+                                'twilightforest:fiery_boots',
+                                `{${reactive.hex_zone},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 1),
+                            drop_rate: 0.0
+                        },
+                        mainhand: {
+                            item: Item.of(
+                                'ars_nouveau:enchanters_sword',
+                                `{${enchanters_sword.hex_blade},${enchant_glint.blank}}`
+                            ).enchant('minecraft:knockback', 2),
+                            drop_rate: 0.0
+                        }
                     }
                 }
             ]
