@@ -10,19 +10,22 @@ ServerEvents.genericLootTables((event) => {
 
         table.addPool((pool) => {
             pool.rolls = 1.0;
-            pool.addItem(Item.of('gateways:gate_pearl', '{gateway:"gateways:enderman_gate_small"}'), 100, 1);
+            pool.addEntry({ type: 'empty', weight: 15 });
+            pool.addItem(Item.of('gateways:gate_pearl', '{gateway:"gateways:enderman_gate_small"}'), 45, 1);
+            pool.addItem(Item.of('gateways:gate_pearl', '{gateway:"gateways:enderman_gate"}'), 25, 1);
+            pool.addItem(Item.of('gateways:gate_pearl', '{gateway:"gateways:enderman_gate_large"}'), 15, 1);
         });
 
         table.addPool((pool) => {
             pool.rolls = 1.0;
-            pool.addCondition({ condition: 'killed_by_player' });
+            pool.killedByPlayer();
             pool.addItem('supplementaries:enderman_head', 100, 1);
         });
 
         table.addPool((pool) => {
             pool.rolls = 1.0;
             pool.bonusRolls = [0, 1];
-            pool.addCondition({ condition: 'killed_by_player' });
+            pool.killedByPlayer();
             pool.addEntry({ type: 'loot_table', weight: 100, name: 'minecraft:chests/end_city_treasure' });
         });
     });
