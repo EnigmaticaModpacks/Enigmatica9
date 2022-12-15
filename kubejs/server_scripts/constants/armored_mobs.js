@@ -1327,7 +1327,7 @@ const armored_mobs = {
                         // mainhand: {
                         //     item: Item.of(
                         //         'ars_nouveau:enchanters_sword',
-                        //         `{${enchanters_sword.dispel},${enchant_glint.blank}}`
+                        //         `{${enchanters_sword.hex_blade},${enchant_glint.blank}}`
                         //     ).enchant('minecraft:knockback', 2),
                         //     drop_rate: 0.0
                         // }
