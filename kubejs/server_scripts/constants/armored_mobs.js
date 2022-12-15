@@ -823,6 +823,19 @@ const armored_mobs = {
                 }
             ]
         },
+        mist_wolf: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        effects: [
+                            { type: 'ars_nouveau:shielding', amplifier: 2 },
+                            { type: 'minecraft:strength', amplifier: 1 }
+                        ]
+                    }
+                }
+            ]
+        },
         lich: {
             equipment: [
                 {
@@ -1127,7 +1140,10 @@ const armored_mobs = {
                     weight: 100,
                     set: {
                         max_health: 75,
-                        effects: [{ type: 'minecraft:speed', amplifier: 2 }],
+                        effects: [
+                            { type: 'minecraft:speed', amplifier: 2 },
+                            { type: 'minecraft:fire_resistance', amplifier: 1 }
+                        ],
                         enchant: {
                             chance: 1.0,
                             level: { min: 10, max: 30 },
@@ -1168,7 +1184,50 @@ const armored_mobs = {
                         offhand: {
                             item: Item.of('minecraft:tipped_arrow', '{Potion:"apotheosis:long_wither"}'),
                             drop_rate: 0.085
-                        }
+                        },
+                        summons: [{ mob: 'twilightforest:mist_wolf', count: { min: 1, max: 2 }, spread: 5 }]
+                    }
+                }
+            ]
+        },
+        possessed_enderman: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        max_health: 80,
+                        enchant: {
+                            chance: 1.0,
+                            level: { min: 20, max: 30 },
+                            treasure: false
+                        },
+                        head: {
+                            item: Item.of('blue_skies:charoite_helmet', `{${enchant_glint.blank}}`),
+                            drop_rate: 0.0
+                        },
+                        chest: {
+                            item: Item.of(
+                                'blue_skies:charoite_chestplate',
+                                `{${reactive.vanish},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 3),
+                            drop_rate: 0.0
+                        },
+                        legs: {
+                            item: Item.of('blue_skies:charoite_leggings', `{${enchant_glint.blank}}`),
+                            drop_rate: 0.0
+                        },
+                        feet: {
+                            item: Item.of('blue_skies:charoite_boots', `{${enchant_glint.blank}}`),
+                            drop_rate: 0.0
+                        },
+                        mainhand: {
+                            item: Item.of(
+                                'ars_nouveau:enchanters_sword',
+                                `{${enchanters_sword.dispel},${enchant_glint.blank}}`
+                            ).enchant('minecraft:knockback', 2),
+                            drop_rate: 0.0
+                        },
+                        summons: [{ mob: 'minecraft:enderman', count: { min: 5, max: 10 }, spread: 5 }]
                     }
                 }
             ]
