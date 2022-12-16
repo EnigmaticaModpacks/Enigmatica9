@@ -1,0 +1,4 @@
+{
+    "type": "hexerei:animal_fat_drops",
+    "conditions": [{ "condition": "forge:false" }]
+}

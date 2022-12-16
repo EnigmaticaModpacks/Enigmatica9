@@ -61,7 +61,8 @@ jei.base.items.disabled = [
     'thermal:refined_fuel_bucket',
     'immersiveengineering:plantoil_bucket',
     'immersiveengineering:ethanol_bucket',
-    'immersiveengineering:biodiesel_bucket'
+    'immersiveengineering:biodiesel_bucket',
+    'occultism:butcher_knife'
 ];
 jei.base.items.hidden = [
     'kubejs:altered_recipe_indicator',
