@@ -8,7 +8,6 @@ JEIEvents.information((event) => {
             items: ['buildinggadgets:construction_paste'],
             text: ['Obtained by breaking a Dense Construction Block with a Pickaxe.']
         },
-        /*
         {
             items: ['thermal:blizz_rod', 'thermal:blizz_spawn_egg'],
             text: ['The Blizz spawns naturally in cold biomes. Mechanical Dirt works wonders for farming them.']
@@ -23,7 +22,6 @@ JEIEvents.information((event) => {
                 'The Basalz spawns naturally in barren biomes, such as Badlands. Mechanical Dirt works wonders for farming them.'
             ]
         },
-        */
         {
             items: ['quark:bottled_cloud'],
             text: ['Obtained by Right-Clicking a Glass Bottle in the air between Y Levels 126 and 132.']
@@ -87,16 +85,6 @@ JEIEvents.information((event) => {
             items: ['immersiveengineering:furnace_heater', 'mekanism:fuelwood_heater', 'mekanism:resistive_heater'],
             text: [`May be used to provide Heat for PneumaticCraft machines.`]
         },
-        /*
-        {
-            items: ['bloodmagic:weak_tau'],
-            text: [`Found in chests within the Demon Realm.`]
-        },
-        {
-            items: ['bloodmagic:strong_tau'],
-            text: [`Produced by growing Tau near mobs.`]
-        },
-        */
         {
             items: ['quark:dragon_scale'],
             text: [`Only drops from Ender Dragons after the first one has been killed.`]
@@ -182,6 +170,14 @@ JEIEvents.information((event) => {
                 '⤷ Moss Block',
                 ' '
             ]
+        },
+        {
+            items: ['occultism:tallow'],
+            text: [`The Butcher's Knife has been disabled. Craft tallow instead.`]
+        },
+        {
+            items: ['hexerei:animal_fat'],
+            text: [`Drops from most large animals.`]
         }
     ];
 
