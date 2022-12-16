@@ -9,12 +9,11 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Now you're playing with Powah!"
+			title: "Powah!"
 			icon: "powah:book"
-			x: 1.5d
-			y: -1.5d
+			x: 10.5d
+			y: -2.0d
 			shape: "gear"
-			subtitle: "The Powah is PowahFul!"
 			description: [
 				"Welcome to Powah! In this chapter you will learn all about one of Minecraft’s newest power generation, storage and transportation mods. "
 				"We will cover most of what the mod has to offer: from the very basics of power generation to multiblock reactors and wireless power! "
@@ -24,7 +23,6 @@
 				""
 				"~Merlo"
 			]
-			optional: true
 			min_width: 250
 			id: "000000000000016F"
 			tasks: [{
@@ -65,7 +63,6 @@
 				""
 				"Keep this in mind when progressing through the mod, always check the various tooltips in JEI and see what tier is right for your current situation."
 			]
-			dependencies: ["000000000000016F"]
 			min_width: 250
 			id: "0000000000000172"
 			tasks: [{
@@ -92,7 +89,6 @@
 				"Automating it, keeping a Lava tank somewhere or a Blaze farm could be very useful! You can immediately see how it’s used to make some of Powah’s most basic components, like dielectric rods, that are themselves used to craft up a dielectric casing. "
 				"This is what you will use to get started making most of the different machines we will see in the chapter, so let’s make a few!"
 			]
-			dependencies: ["000000000000016F"]
 			size: 1.5d
 			min_width: 250
 			id: "0000000000000174"
@@ -507,8 +503,8 @@
 		}
 		{
 			title: "Uraninite"
-			x: 3.0d
-			y: -1.5d
+			x: 10.5d
+			y: 0.5d
 			subtitle: "I'm Radioactive!"
 			description: [
 				"You’ve seen all the basic means Powah has to generate FE, now it’s time to step it up and get into the big boys: let’s make a reactor! "
@@ -547,7 +543,6 @@
 				""
 				"Note: The FE/t values displayed in JEI are only the baseline. These reactors are heavily influenced by the auxiliary materials added to them such as Carbon and Redstone. Liquid and Solid Coolants also play an important role in fuel efficiency. "
 			]
-			dependencies: ["0000000000000186"]
 			size: 1.5d
 			min_width: 250
 			id: "0000000000000188"
@@ -632,11 +627,10 @@
 			}]
 		}
 		{
-			title: "Energizing Setup"
+			title: "Getting Started: Energizing"
 			icon: "powah:energizing_orb"
-			x: 3.0d
-			y: 0.0d
-			shape: "rsquare"
+			x: 10.5d
+			y: 2.0d
 			subtitle: "No, not an energy drink!"
 			description: [
 				"Now that you’ve made some basic resources and power it’s time to ramp up and open the gate to all the next tiers of Powah items. Introducing the Energizing Orb and Rods!"
@@ -645,6 +639,7 @@
 				"The Rods will now start charging up the orb (faster depending on the rods’ tier and how many you have) and infuse power into the items you place in the orb."
 				"This is how you craft all the basic resources you will use to climb up the tiers in Powah, so let’s start going for the top!"
 			]
+			hide_dependency_lines: true
 			dependencies: ["000000000000016F"]
 			min_width: 250
 			id: "000000000000018C"
@@ -977,8 +972,8 @@
 		}
 		{
 			title: "Energized Steel"
-			x: 4.5d
-			y: 0.0d
+			x: 10.5d
+			y: 3.5d
 			subtitle: "Glows in the dark!"
 			description: ["Energized steel is the basic material for all items in tier 3 (Hardened). Bring out your gold and iron and start alloying!"]
 			dependencies: ["000000000000018C"]
@@ -1000,11 +995,11 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 0.0d
+			x: 9.5d
+			y: 3.0d
 			subtitle: "Crystal Clear!"
 			description: ["First of many Crystals, the Blazing Crystal is the basic material for all items in tier 4 (Blazed). Better start hitting up the Nether!"]
-			dependencies: ["000000000000019A"]
+			dependencies: ["000000000000018C"]
 			id: "000000000000019C"
 			tasks: [{
 				id: "000000000000019D"
@@ -1020,15 +1015,15 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: 0.0d
+			x: 11.5d
+			y: 3.0d
 			subtitle: "Where do these names even come from?"
 			description: [
 				"Next up is the Niotic Crystal, which is the basic material for all items in tier 4 (Niotic). I hope you have been mining for the blue shinies!"
 				""
 				"If you see the energizing orb take a really long time from now on when crafting crystals, it might be a good idea to add a rod or two."
 			]
-			dependencies: ["000000000000019C"]
+			dependencies: ["000000000000018C"]
 			id: "000000000000019E"
 			tasks: [{
 				id: "000000000000019F"
@@ -1045,10 +1040,10 @@
 		}
 		{
 			x: 9.0d
-			y: 0.0d
+			y: 2.0d
 			subtitle: "Spirited Away!"
 			description: ["We’re almost at the top! Spirited Crystals are basic material for all items in tier 5 (Spirited). Go make some friends among the Villagers!"]
-			dependencies: ["000000000000019E"]
+			dependencies: ["000000000000018C"]
 			id: "00000000000001A0"
 			tasks: [{
 				id: "00000000000001A1"
@@ -1080,16 +1075,14 @@
 			]
 		}
 		{
-			x: 10.5d
-			y: 0.0d
-			shape: "hexagon"
+			x: 12.0d
+			y: 2.0d
 			subtitle: "Discord Nitro?"
 			description: [
 				"No, you don’t need to get Discord Nitro and boost our server (even though you totally should)."
 				"It’s just a Nitro Crystal, the basic material for all items in tier 6 (Nitro)! You’re now at the top of the chain, so expect something really expensive and powerful. Bring out the big guns!"
 			]
-			dependencies: ["00000000000001A0"]
-			size: 1.5d
+			dependencies: ["000000000000018C"]
 			id: "00000000000001A2"
 			tasks: [{
 				id: "00000000000001A3"
@@ -1105,251 +1098,6 @@
 				}
 				{
 					id: "0000000000000294"
-					type: "command"
-					title: "Powah Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
-					player_command: false
-				}
-			]
-		}
-		{
-			title: "Hardened Challenge!"
-			x: 4.5d
-			y: -1.5d
-			shape: "diamond"
-			subtitle: "You'll need them anyways..."
-			description: [
-				"Here is the capacitor you will need for all the items in the hardened tier. Get ready to make a bunch!"
-				""
-				"Note that all capacitor quests from now on will be optional \"challenges\". You will need to make some to progress, so you might want to start automating!"
-			]
-			dependencies: ["000000000000019A"]
-			optional: true
-			id: "00000000000001A4"
-			tasks: [{
-				id: "00000000000001A5"
-				type: "item"
-				item: "powah:capacitor_hardened"
-				count: 16L
-			}]
-			rewards: [{
-				id: "0000000000000291"
-				type: "command"
-				title: "Powah Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
-				player_command: false
-			}]
-		}
-		{
-			title: "Blazing Challenge!"
-			x: 6.0d
-			y: -1.5d
-			shape: "diamond"
-			subtitle: "It's lit!"
-			description: ["Here is the capacitor you will need for all the items in the blazing tier. Can you make this many?"]
-			dependencies: ["000000000000019C"]
-			optional: true
-			id: "00000000000001A6"
-			tasks: [{
-				id: "00000000000001A7"
-				type: "item"
-				item: "powah:capacitor_blazing"
-				count: 24L
-			}]
-			rewards: [{
-				id: "0000000000000292"
-				type: "command"
-				title: "Powah Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
-				player_command: false
-			}]
-		}
-		{
-			title: "Niotic Challenge!"
-			x: 7.5d
-			y: -1.5d
-			shape: "diamond"
-			subtitle: "How do I even pronounce Niotic?"
-			description: ["Here is the capacitor you will need for all the items in the niotic tier. It’s starting to get interesting huh?"]
-			dependencies: ["000000000000019E"]
-			optional: true
-			id: "00000000000001A8"
-			tasks: [{
-				id: "00000000000001A9"
-				type: "item"
-				item: "powah:capacitor_niotic"
-				count: 32L
-			}]
-			rewards: [{
-				id: "0000000000000293"
-				type: "command"
-				title: "Powah Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
-				player_command: false
-			}]
-		}
-		{
-			title: "Spirited Challenge!"
-			x: 9.0d
-			y: -1.5d
-			shape: "diamond"
-			subtitle: "Things are ramping up..."
-			description: ["Here is the capacitor you will need for all the items in the spirited tier. These challenges are starting to get a bit hard huh?"]
-			dependencies: ["00000000000001A0"]
-			optional: true
-			id: "00000000000001AA"
-			tasks: [{
-				id: "00000000000001AB"
-				type: "item"
-				item: "powah:capacitor_spirited"
-				count: 48L
-			}]
-			rewards: [{
-				id: "000000000000021E"
-				type: "xp_levels"
-				xp_levels: 50
-			}]
-		}
-		{
-			title: "The Final Challenge!"
-			x: 10.5d
-			y: -1.5d
-			shape: "diamond"
-			subtitle: "Just like that song! I think..."
-			description: ["Welcome to our Powah ultimate challenge! Can you automate the orb and grind out all the resources needed to complete this? Best of luck and remember: automation is key!"]
-			dependencies: ["00000000000001A2"]
-			optional: true
-			id: "00000000000001AC"
-			tasks: [{
-				id: "00000000000001AD"
-				type: "item"
-				item: "powah:capacitor_nitro"
-				count: 64L
-			}]
-			rewards: [
-				{
-					id: "0000000000000221"
-					type: "xp_levels"
-					xp_levels: 100
-				}
-				{
-					id: "0000000000000223"
-					type: "command"
-					title: "Show off your progress!"
-					icon: "powah:ender_core"
-					command: "/say @p has completed Powah's final crafting challenge! I bet you can't!"
-					player_command: false
-				}
-				{
-					id: "0000000000000295"
-					type: "command"
-					title: "Powah Loot Box"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
-					player_command: false
-				}
-			]
-		}
-		{
-			title: "Ultimate Powah!"
-			icon: {
-				id: "powah:battery_nitro"
-				Count: 1b
-				tag: { }
-			}
-			x: 4.5d
-			y: -3.0d
-			shape: "hexagon"
-			subtitle: "One billion? With a B?"
-			description: [
-				"Welcome to the ultimate Powah Energy challenge!"
-				"Can you create a sustainable and efficient reactor setup to make all this power?"
-				""
-				"Don't cheat - I know you want to use Mekanism. I challenge you to only generate this billion using Powah alone for energy generation."
-				"You can do it! Good luck!"
-				""
-				"Fill the Basic Induction Cell by putting it in an Induction Cell multiblock and then feeding it power."
-			]
-			dependencies: ["0000000000000188"]
-			hide: true
-			optional: true
-			id: "00000000000001AE"
-			tasks: [{
-				id: "4D1EA493FB926104"
-				type: "item"
-				title: "Fully Charged Basic Induction Cell"
-				icon: {
-					id: "mekanism:basic_induction_cell"
-					Count: 1b
-					tag: {
-						mekData: {
-							EnergyContainers: [{
-								Container: 0b
-								stored: "8000000000"
-							}]
-						}
-					}
-				}
-				item: {
-					id: "itemfilters:and"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "mekanism:basic_induction_cell"
-								Count: 1b
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "8000000000"
-										}]
-									}
-								}
-							}
-							{
-								id: "itemfilters:strong_nbt"
-								Count: 1b
-								tag: {
-									value: {
-										mekData: {
-											EnergyContainers: [{
-												Container: 0b
-												stored: "8000000000"
-											}]
-										}
-									}
-								}
-							}
-						]
-					}
-				}
-			}]
-			rewards: [
-				{
-					id: "00000000000001C0"
-					type: "xp_levels"
-					xp_levels: 100
-				}
-				{
-					id: "00000000000001C1"
-					type: "command"
-					title: "Flex your achievement!"
-					icon: {
-						id: "powah:battery_nitro"
-						Count: 1b
-						tag: { }
-					}
-					auto: "enabled"
-					command: "/say @p completed Powah's Ultimate Power Quest! Woot!"
-					player_command: false
-				}
-				{
-					id: "000000000000064B"
 					type: "command"
 					title: "Powah Loot Box"
 					icon: "kubejs:epic_lootbox"
