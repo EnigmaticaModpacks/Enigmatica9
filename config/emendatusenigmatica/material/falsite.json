@@ -23,8 +23,5 @@
     "colors": {
         "materialColor": "4e3abd",
         "fluidColor": "4e3abd"
-    },
-    "compat": {
-        "mekanism": false
     }
 }

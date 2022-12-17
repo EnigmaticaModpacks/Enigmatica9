@@ -31,8 +31,5 @@
         "drop": "emendatusenigmatica:raw_osmium",
         "min": 1,
         "max": 1
-    },
-    "compat": {
-        "mekanism": false
     }
 }
