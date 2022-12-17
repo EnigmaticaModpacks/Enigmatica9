@@ -82,6 +82,9 @@ ServerEvents.recipes((event) => {
         { id: /pneumaticcraft:thermo_plant\/vegetable_oil_from_/ },
         { id: /pneumaticcraft:thermo_plant\/ethanol_from_/ },
 
+        { id: /powah:smelting/ },
+        { id: /powah:energizing\/.*uraninite/ },
+
         { type: 'create:cutting' },
 
         { type: 'immersiveengineering:sawmill' },
