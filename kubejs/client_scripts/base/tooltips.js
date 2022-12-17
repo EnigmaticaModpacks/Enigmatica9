@@ -374,6 +374,16 @@ ItemEvents.tooltip((event) => {
         {
             items: ['supplementaries:pulley_block'],
             text: [Text.of('Redstone Device: Raises or Lowers Chains and Ropes When Rotated').darkRed()]
+        },
+        {
+            items: [
+                'chimes:amethyst_chimes',
+                'chimes:copper_chimes',
+                'chimes:carved_bamboo_chimes',
+                'chimes:iron_chimes',
+                'chimes:bamboo_chimes'
+            ],
+            text: [Text.of('The gentle sounds keep Phantoms at bay.').aqua()]
         }
 
         /* 
