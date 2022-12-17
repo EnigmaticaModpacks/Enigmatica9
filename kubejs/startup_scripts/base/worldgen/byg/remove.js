@@ -17,9 +17,9 @@ WorldgenEvents.remove((event) => {
 
     event.removeFeatureById('underground_ores', 
         [
-            'occultism:underground_grove',
-            'occultism:silver_ore_deepslate',
-            'occultism:silver_ore'
+            'byg:pendorite_ore',
+            'byg:ametrine_ore',
+            'byg:budding_ametrine_ore'
         ]
     );
 });

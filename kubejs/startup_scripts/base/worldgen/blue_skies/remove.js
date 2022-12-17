@@ -17,9 +17,9 @@ WorldgenEvents.remove((event) => {
 
     event.removeFeatureById('underground_ores', 
         [
-            'occultism:underground_grove',
-            'occultism:silver_ore_deepslate',
-            'occultism:silver_ore'
+            'blue_skies:horizonite_ore',
+            'blue_skies:ventium_ore',
+            'blue_skies:falsite_ore'
         ]
     );
 });
