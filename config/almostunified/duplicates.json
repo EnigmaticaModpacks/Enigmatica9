@@ -35,6 +35,26 @@
         "processingTime": "LowerRule"
       },
       "shouldSanitize": true
+    },
+    "thermal:smelter": {
+      "ignoredFields": [
+        "conditions",
+        "group"
+      ],
+      "rules": {
+        "processingTime": "LowerRule"
+      },
+      "shouldSanitize": true
+    },
+    "thermal:pulverizer": {
+      "ignoredFields": [
+        "conditions",
+        "group"
+      ],
+      "rules": {
+        "processingTime": "LowerRule"
+      },
+      "shouldSanitize": true
     }
   },
   "strictMode": false
