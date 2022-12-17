@@ -1000,6 +1000,16 @@ const dye_sources = [
         primary: 'minecraft:purple_dye',
         secondary: 'minecraft:purple_dye',
         tertiary: 'minecraft:purple_dye'
+    },
+
+    // Hexerei
+
+    {
+        input: 'hexerei:belladonna_berries',
+        type: 'small',
+        primary: 'minecraft:black_dye',
+        secondary: 'minecraft:black_dye',
+        tertiary: 'minecraft:purple_dye'
     }
 ];
 

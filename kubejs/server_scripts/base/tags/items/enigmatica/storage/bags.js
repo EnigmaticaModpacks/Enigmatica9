@@ -7,11 +7,11 @@ ServerEvents.tags('item', (event) => {
         // 'botania:flower_bag',
         'sophisticatedbackpacks:backpack',
         'industrialforegoing:infinity_backpack',
-        // 'thermal:satchel',
+        'thermal:satchel',
         'occultism:satchel',
-        // 'hexerei:small_satchel',
-        // 'hexerei:medium_satchel',
-        // 'hexerei:large_satchel',
+        'hexerei:small_satchel',
+        'hexerei:medium_satchel',
+        'hexerei:large_satchel',
         '#create:toolboxes'
     ]);
 });

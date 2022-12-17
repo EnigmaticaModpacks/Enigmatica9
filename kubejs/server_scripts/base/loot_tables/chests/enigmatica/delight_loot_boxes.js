@@ -67,6 +67,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('ars_nouveau:drygmy_shard', 1, 1);
             pool.addItem('ars_elemental:siren_shards', 1, 1);
             pool.addItem('twilightforest:raven_feather', 1, 1);
+            pool.addItem('naturesaura:pet_reviver', 1, 1);
         });
     });
 

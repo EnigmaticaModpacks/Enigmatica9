@@ -159,8 +159,8 @@ ItemEvents.tooltip((event) => {
         },
         {
             items: [
-                // 'hexerei:dried_sage_bundle',
-                // 'hexerei:sage_burning_plate',
+                'hexerei:dried_sage_bundle',
+                'hexerei:sage_burning_plate',
                 'naturesaura:spawn_lamp',
                 'immersiveengineering:electric_lantern'
             ],
@@ -213,7 +213,8 @@ ItemEvents.tooltip((event) => {
                 'mekanism:qio_dashboard',
                 'mekanism:qio_drive_array',
                 'mekanism:portable_qio_dashboard',
-                'occultism:storage_remote'
+                'occultism:storage_remote',
+                'hexerei:ender_satchel'
             ],
             text: [Text.of(`Cross-Dimensional Storage`).darkPurple()]
         },

@@ -1,7 +1,4 @@
 ServerEvents.genericLootTables((event) => {
-    if (global.isExpertMode == false) {
-        return;
-    }
     // Override Stoneling Carry Loot Table
     event.addGeneric('quark:entities/stoneling_carry', (table) => {
         table.addPool((pool) => {

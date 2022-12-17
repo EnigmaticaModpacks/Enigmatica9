@@ -22,6 +22,11 @@
         { "output": "thermal:sadiroot_seeds" },
         { "output": "thermal:spinach_seeds" },
         { "output": "thermal:strawberry_seeds" },
-        { "output": "thermal:tea_seeds" }
+        { "output": "thermal:tea_seeds" },
+        { "output": "hexerei:sage_seed" },
+        { "output": "hexerei:yellow_dock_bush" },
+        { "output": "hexerei:mugwort_bush" },
+        { "output": "hexerei:mandrake_flower" },
+        { "output": "hexerei:belladonna_flower" }
     ]
 }
