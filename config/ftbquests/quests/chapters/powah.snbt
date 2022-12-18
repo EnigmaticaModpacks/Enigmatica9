@@ -11,8 +11,8 @@
 		{
 			title: "Powah!"
 			icon: "powah:book"
-			x: 10.5d
-			y: -2.0d
+			x: 1.0d
+			y: -4.5d
 			shape: "gear"
 			description: [
 				"Welcome to Powah! In this chapter you will learn all about one of Minecraft’s newest power generation, storage and transportation mods. "
@@ -51,16 +51,13 @@
 					PowahWrenchNBT: { }
 				}
 			}
-			x: 0.5d
-			y: -2.0d
-			shape: "diamond"
-			subtitle: "No, wait, I meant... Stop crying!"
+			x: -1.0d
+			y: 0.5d
 			description: [
-				"Everything in Powah is divided into different tiers, going from Starter to Basic, Hardened, Blazing, Niotic, Spirited and Nitro."
-				"Different tiers of the same machine have different stats, all indicated on the machine’s tooltip."
+				"Everything in Powah is divided into tiers; Basic, Hardened, Blazing, Niotic, Spirited and Nitro."
 				""
-				"For example a Starter tier Furnator will make 20 FE/t, taking 600 ticks (or 30 seconds) to burn through a piece of coal, where a Nitro tier Furnator will make 40000 FE/t, taking only half a second to produce the same amount of power."
-				""
+				"Each tier of machine has different stats, all indicated on the machine’s tooltip."
+				""				
 				"Keep this in mind when progressing through the mod, always check the various tooltips in JEI and see what tier is right for your current situation."
 			]
 			min_width: 250
@@ -79,17 +76,14 @@
 		{
 			title: "Basic Resources"
 			icon: "powah:dielectric_casing"
-			x: 1.5d
-			y: 0.0d
-			shape: "hexagon"
-			subtitle: "Dielectric all the things!"
+			x: 3.0d
+			y: 0.5d
 			description: [
 				"Before we get into the various cool blocks and items Powah offers, let’s familiarize with some of the basic resources the mod will ask you to craft. Dielectric Paste is needed for most basic crafting components, so get used to seeing it a lot. "
 				""
 				"Automating it, keeping a Lava tank somewhere or a Blaze farm could be very useful! You can immediately see how it’s used to make some of Powah’s most basic components, like dielectric rods, that are themselves used to craft up a dielectric casing. "
 				"This is what you will use to get started making most of the different machines we will see in the chapter, so let’s make a few!"
 			]
-			size: 1.5d
 			min_width: 250
 			id: "0000000000000174"
 			tasks: [{
@@ -107,18 +101,15 @@
 		}
 		{
 			title: "Furnator"
-			icon: "powah:furnator_basic"
-			x: 1.5d
+			icon: "powah:furnator_nitro"
+			x: 0.0d
 			y: 1.5d
-			shape: "rsquare"
-			subtitle: "Now everyone can see me burnin'"
 			description: [
 				"Let’s generate some power! You’ll notice Powah has various generators that can make FE for you, the most basic being a Furnator. "
 				""
 				"The name should be pretty self explanatory, it’s the equivalent of a furnace, but it will burn fuel to generate some power!"
 				"Make one and try it out, any tier will do. If you’re just starting out, you can try checking out the Starter or even the Basic tier."
 			]
-			dependencies: ["0000000000000174"]
 			id: "0000000000000176"
 			tasks: [{
 				id: "0000000000000177"
@@ -177,32 +168,25 @@
 		}
 		{
 			title: "Energy Cables"
-			x: 0.0d
-			y: 1.5d
-			subtitle: "Found out my charger cable was broken. I was shocked."
+			x: 2.0d
+			y: 5.0d
 			description: [
 				"With all this power generating everywhere we need a way to move it around and take it where we want it to be."
 				"Powah cables are great at that! They can transfer a lot of power at the higher tiers and help keep setups neat, since you can walk through them even after setting them down, helping with maintenance."
 				""
 				"Let’s try them out!"
 			]
-			dependencies: ["0000000000000174"]
-			optional: true
 			id: "000000000000017C"
 			tasks: [{
 				id: "000000000000017D"
 				type: "item"
-				title: "Energy Cable (Any Tier)"
-				icon: "powah:energy_cable_basic"
+				title: "Energy Cables"
+				icon: "powah:energy_cable_nitro"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
 					tag: {
 						items: [
-							{
-								id: "powah:energy_cable_starter"
-								Count: 1b
-							}
 							{
 								id: "powah:energy_cable_basic"
 								Count: 1b
@@ -228,67 +212,28 @@
 								Count: 1b
 							}
 							{
-								id: "powah:ender_gate_starter"
-								Count: 1b
-								tag: {
-									lollipoptile_stack_nbt: {
-										energy_stored_main_energy: 0L
-									}
-								}
-							}
-							{
 								id: "powah:ender_gate_basic"
-								Count: 1b
-								tag: {
-									lollipoptile_stack_nbt: {
-										energy_stored_main_energy: 0L
-									}
-								}
+								Count: 1b				
 							}
 							{
 								id: "powah:ender_gate_hardened"
 								Count: 1b
-								tag: {
-									lollipoptile_stack_nbt: {
-										energy_stored_main_energy: 0L
-									}
-								}
 							}
 							{
 								id: "powah:ender_gate_blazing"
 								Count: 1b
-								tag: {
-									lollipoptile_stack_nbt: {
-										energy_stored_main_energy: 0L
-									}
-								}
 							}
 							{
 								id: "powah:ender_gate_niotic"
 								Count: 1b
-								tag: {
-									lollipoptile_stack_nbt: {
-										energy_stored_main_energy: 0L
-									}
-								}
 							}
 							{
 								id: "powah:ender_gate_spirited"
 								Count: 1b
-								tag: {
-									lollipoptile_stack_nbt: {
-										energy_stored_main_energy: 0L
-									}
-								}
 							}
 							{
 								id: "powah:ender_gate_nitro"
 								Count: 1b
-								tag: {
-									lollipoptile_stack_nbt: {
-										energy_stored_main_energy: 0L
-									}
-								}
 							}
 						]
 					}
@@ -305,13 +250,10 @@
 		}
 		{
 			title: "Magmator"
-			icon: "powah:magmator_basic"
-			x: 1.5d
-			y: 3.0d
-			subtitle: "Wasn't that a Pokèmon?"
+			icon: "powah:magmator_nitro"
+			x: 1.0d
+			y: 1.5d
 			description: ["Another option you have to generate power is a Magmator, which also speaks for itself. Just give the bad boy some lava and watch it burn! One bucket of lava will generate a bit less than two coal pieces would in a Furnator."]
-			dependencies: ["0000000000000176"]
-			optional: true
 			id: "000000000000017E"
 			tasks: [{
 				id: "000000000000017F"
@@ -359,10 +301,9 @@
 		}
 		{
 			title: "Thermo Generator"
-			icon: "powah:thermo_generator_basic"
-			x: 0.0d
-			y: 3.0d
-			subtitle: "Super. Hot."
+			icon: "powah:thermo_generator_nitro"
+			x: 2.0d
+			y: 1.5d
 			description: [
 				"Ever wondered if you could use lava as a renewable, self sufficient power source? Well the Thermo Generator is for you!"
 				""
@@ -370,8 +311,6 @@
 				""
 				"Note: The FE/t values displayed in JEI are only the baseline. Liquid Coolants play an important role in energy production. "
 			]
-			dependencies: ["0000000000000176"]
-			optional: true
 			id: "0000000000000180"
 			tasks: [{
 				id: "0000000000000181"
@@ -421,15 +360,12 @@
 		}
 		{
 			title: "Solar Panel"
-			x: 3.0d
-			y: 3.0d
-			subtitle: "Fridays for the Future!"
+			x: -1.0d
+			y: 1.5d
 			description: [
 				"This one comes as no surprise, every respectable power generating mod needs to have solar panels! They will passively generate FE as long as it’s daytime and they can see the sky."
 				"Very handy for passive power generation!"
 			]
-			dependencies: ["0000000000000176"]
-			optional: true
 			id: "0000000000000182"
 			tasks: [{
 				id: "0000000000000183"
@@ -479,13 +415,10 @@
 		}
 		{
 			title: "Lens of Ender"
-			x: 3.0d
-			y: 4.5d
-			shape: "diamond"
-			subtitle: "X-Ray Mode!"
+			x: -1.0d
+			y: 2.5d
 			description: ["The Lens of Ender is a nifty upgrade for any Powah Solar Panel. Just right click it on and it will be able to generate energy even without direct access to the sky!"]
 			dependencies: ["0000000000000182"]
-			optional: true
 			id: "0000000000000184"
 			tasks: [{
 				id: "0000000000000185"
@@ -503,9 +436,8 @@
 		}
 		{
 			title: "Uraninite"
-			x: 10.5d
-			y: 0.5d
-			subtitle: "I'm Radioactive!"
+			x: 1.0d
+			y: -3.0d
 			description: [
 				"You’ve seen all the basic means Powah has to generate FE, now it’s time to step it up and get into the big boys: let’s make a reactor! "
 				""
@@ -529,11 +461,9 @@
 		}
 		{
 			title: "Reactor"
-			icon: "powah:reactor_basic"
+			icon: "powah:reactor_nitro"
 			x: 3.0d
-			y: -3.0d
-			shape: "hexagon"
-			subtitle: "It's a big one!"
+			y: 1.5d
 			description: [
 				"Reactors are Powah’s best way of energy generation and will require a big multiblock and some more advanced maintenance."
 				"Simply make 36 reactor blocks of any tier (all of the same tier) and place one on the ground to automatically build the 3x4 structure. "
@@ -543,7 +473,6 @@
 				""
 				"Note: The FE/t values displayed in JEI are only the baseline. These reactors are heavily influenced by the auxiliary materials added to them such as Carbon and Redstone. Liquid and Solid Coolants also play an important role in fuel efficiency. "
 			]
-			size: 1.5d
 			min_width: 250
 			id: "0000000000000188"
 			tasks: [{
@@ -604,13 +533,10 @@
 			]
 		}
 		{
-			x: 1.5d
-			y: -3.0d
-			shape: "diamond"
-			subtitle: "Quite a dry sense of humor!"
+			x: 3.0d
+			y: 2.5d
 			description: ["Isn’t your reactor so cool huh? Uh… it isn’t? Well you better hurry up and go cool it! Any kind of ice will do, but Dry Ice, a new material from Powah is the best of them. Go get some, quick!"]
 			dependencies: ["0000000000000188"]
-			optional: true
 			id: "000000000000018A"
 			tasks: [{
 				id: "000000000000018B"
@@ -629,9 +555,8 @@
 		{
 			title: "Getting Started: Energizing"
 			icon: "powah:energizing_orb"
-			x: 10.5d
-			y: 2.0d
-			subtitle: "No, not an energy drink!"
+			x: 1.0d
+			y: -1.5d
 			description: [
 				"Now that you’ve made some basic resources and power it’s time to ramp up and open the gate to all the next tiers of Powah items. Introducing the Energizing Orb and Rods!"
 				""
@@ -698,22 +623,20 @@
 		}
 		{
 			title: "Energy Cell"
-			icon: "powah:energy_cell_basic"
-			x: 3.0d
-			y: 1.5d
-			subtitle: "Gotta store that power somewhere..."
+			icon: "powah:energy_cell_nitro"
+			x: 2.0d
+			y: 4.0d
 			description: [
 				"With all this power going around, you’re going to need somewhere to store it all. Introducing Energy Cells!"
 				"These handy blocks can store power for you and act as a big buffer, which will only get bigger the higher your cell’s tier is."
 				""
 				"If you want to know detailed stats about each tier, please check the Powah Manual."
 			]
-			dependencies: ["0000000000000174"]
 			id: "000000000000018E"
 			tasks: [{
 				id: "000000000000018F"
 				type: "item"
-				title: "Energy Cell (Any Tier)"
+				title: "Energy Cells"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
@@ -758,10 +681,9 @@
 		}
 		{
 			title: "Ender Cell"
-			icon: "powah:ender_cell_basic"
-			x: 4.5d
-			y: 1.5d
-			subtitle: "Almost like Wi-Fi!"
+			icon: "powah:ender_cell_nitro"
+			x: 1.0d
+			y: 4.0d
 			description: [
 				"Ender Cells are Powah’s way to transfer power wirelessly and are one of the mod’s best features. Using them isn’t too intuitive at first, but gets easy once you understand them better."
 				""
@@ -772,7 +694,6 @@
 				""
 				"You can keep stacking these cells and keep upgrading your channel. Once you store energy in that channel, you will be able to use it wherever you have an Ender Cell, making it easy to move power across very long distances."
 			]
-			dependencies: ["000000000000018E"]
 			min_width: 300
 			id: "0000000000000190"
 			tasks: [{
@@ -821,10 +742,9 @@
 		}
 		{
 			title: "Player Transmitter"
-			icon: "powah:player_transmitter_basic"
-			x: 4.5d
-			y: 3.0d
-			subtitle: "Keeps you charged up!"
+			icon: "powah:player_transmitter_nitro"
+			x: 0.0d
+			y: 4.0d
 			description: [
 				"You probably have a lot of items on you that are recharged with power. Isn’t it super tedious to remember to always keep them charged though?"
 				"Don’t you wish there was something that could tap into your energy supply and wirelessly charge anything into your inventory? Well you’re in luck!"
@@ -832,7 +752,6 @@
 				"Make a binding card and right click it to bind it to yourself, then craft a player transmitter and put the card in."
 				"As long as the transmitter receives power, it will keep all your items charged!"
 			]
-			dependencies: ["000000000000018E"]
 			id: "0000000000000192"
 			tasks: [
 				{
@@ -889,17 +808,14 @@
 		}
 		{
 			title: "Ender Gate"
-			icon: "powah:ender_gate_basic"
-			x: 6.0d
-			y: 1.5d
-			shape: "diamond"
-			subtitle: "Super compact!"
+			icon: "powah:ender_gate_nitro"
+			x: 1.0d
+			y: 5.0d
 			description: [
 				"Ender Gates are smaller, more convenient variants for Ender Cells. They can be placed on a Powah Energy Cable directly and they will occupy one blockspace."
 				"This comes at a disadvantage however: you won’t be able to upgrade your channels from an Ender Gate, so you will always need to keep at least one Ender Cell somewhere."
 			]
 			dependencies: ["0000000000000190"]
-			optional: true
 			id: "0000000000000194"
 			tasks: [{
 				id: "0000000000000195"
@@ -948,13 +864,10 @@
 		}
 		{
 			title: "Dimensional Binding Card"
-			x: 4.5d
-			y: 4.5d
-			shape: "diamond"
-			subtitle: "It can find you anywhere..."
+			x: 0.0d
+			y: 5.0d
 			description: ["The Dimensional Binding Card is a great update to a standard card. Right click a Binding Card on an Enderman and upgrade it: now it will be able to charge your inventory in any dimension and not just the one the Transmitter is in. Neat!"]
 			dependencies: ["0000000000000192"]
-			optional: true
 			id: "0000000000000198"
 			tasks: [{
 				id: "0000000000000199"
@@ -972,9 +885,8 @@
 		}
 		{
 			title: "Energized Steel"
-			x: 10.5d
-			y: 3.5d
-			subtitle: "Glows in the dark!"
+			x: 1.0d
+			y: 0.0d
 			description: ["Energized steel is the basic material for all items in tier 3 (Hardened). Bring out your gold and iron and start alloying!"]
 			dependencies: ["000000000000018C"]
 			id: "000000000000019A"
@@ -995,9 +907,8 @@
 			}]
 		}
 		{
-			x: 9.5d
-			y: 3.0d
-			subtitle: "Crystal Clear!"
+			x: 0.0d
+			y: -0.5d
 			description: ["First of many Crystals, the Blazing Crystal is the basic material for all items in tier 4 (Blazed). Better start hitting up the Nether!"]
 			dependencies: ["000000000000018C"]
 			id: "000000000000019C"
@@ -1015,9 +926,8 @@
 			}]
 		}
 		{
-			x: 11.5d
-			y: 3.0d
-			subtitle: "Where do these names even come from?"
+			x: 2.0d
+			y: -0.5d
 			description: [
 				"Next up is the Niotic Crystal, which is the basic material for all items in tier 4 (Niotic). I hope you have been mining for the blue shinies!"
 				""
@@ -1039,9 +949,8 @@
 			}]
 		}
 		{
-			x: 9.0d
-			y: 2.0d
-			subtitle: "Spirited Away!"
+			x: -0.5d
+			y: -1.5d
 			description: ["We’re almost at the top! Spirited Crystals are basic material for all items in tier 5 (Spirited). Go make some friends among the Villagers!"]
 			dependencies: ["000000000000018C"]
 			id: "00000000000001A0"
@@ -1075,9 +984,8 @@
 			]
 		}
 		{
-			x: 12.0d
-			y: 2.0d
-			subtitle: "Discord Nitro?"
+			x: 2.5d
+			y: -1.5d
 			description: [
 				"No, you don’t need to get Discord Nitro and boost our server (even though you totally should)."
 				"It’s just a Nitro Crystal, the basic material for all items in tier 6 (Nitro)! You’re now at the top of the chain, so expect something really expensive and powerful. Bring out the big guns!"
@@ -1105,6 +1013,50 @@
 					player_command: false
 				}
 			]
+		}
+		{
+			title: "Energy Hoppers"
+			icon: "powah:energy_hopper_nitro"
+			x: 5.0d
+			y: 3.0d
+			id: "414387508B9644C8"
+			tasks: [{
+				id: "0993F0AC43F031C2"
+				type: "item"
+				title: "Energy Hoppers"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "powah:energy_hopper_basic"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_hopper_hardened"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_hopper_blazing"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_hopper_niotic"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_hopper_spirited"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_hopper_nitro"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
 		}
 	]
 }

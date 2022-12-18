@@ -18,7 +18,8 @@
         lens_of_ender: false,
         // List of fluids used in the Magmator.
         magmatic_fluids: {
-            'minecraft:lava': 10000
+            'minecraft:lava': 5000,
+            'thermal:glowstone': 8000
         },
         // List of coolant fluids used in the Reactor and the Thermo Generator.
         coolant_fluids: {
@@ -27,12 +28,11 @@
         // List of heat source blocks used under Thermo Generator.
         heat_blocks: {
             'minecraft:magma_block': 800,
-            'powah:blazing_crystal_block': 2800,
             'minecraft:lava': 1000
         },
         // Energy produced per fuel tick in the Furnator.
-        energy_per_fuel_tick: 30,
-        energizing_range: 4,
+        energy_per_fuel_tick: 15,
+        energizing_range: 6,
         /* Multiplier to the required energy applied after an energizing recipe is read.
 		   Use this to adjust the cost of ALL energizing recipes.
 		*/
@@ -60,13 +60,13 @@
                 nitro: 160000
             },
             generation_rates: {
-                starter: 20,
-                basic: 80,
-                hardened: 200,
-                blazing: 800,
-                niotic: 2000,
-                spirited: 8000,
-                nitro: 40000
+                starter: 8,
+                basic: 20,
+                hardened: 80,
+                blazing: 200,
+                niotic: 800,
+                spirited: 2000,
+                nitro: 8000
             }
         },
         magmators: {
@@ -89,13 +89,13 @@
                 nitro: 160000
             },
             generation_rates: {
-                starter: 20,
-                basic: 80,
+                starter: 8,
+                basic: 20,
                 hardened: 200,
-                blazing: 800,
-                niotic: 2000,
-                spirited: 8000,
-                nitro: 40000
+                blazing: 200,
+                niotic: 800,
+                spirited: 2000,
+                nitro: 8000
             }
         },
         reactors: {
@@ -176,13 +176,13 @@
                 nitro: 160000
             },
             generation_rates: {
-                starter: 20,
-                basic: 60,
-                hardened: 100,
-                blazing: 200,
-                niotic: 400,
-                spirited: 800,
-                nitro: 2000
+                starter: 10,
+                basic: 25,
+                hardened: 50,
+                blazing: 100,
+                niotic: 200,
+                spirited: 400,
+                nitro: 800
             }
         }
     },
