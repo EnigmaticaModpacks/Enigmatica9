@@ -84,6 +84,7 @@ ServerEvents.recipes((event) => {
 
         { id: /powah:smelting/ },
         { id: /powah:energizing\/.*uraninite/ },
+        { id: 'powah:energizing/blazing_crystal_2' },
 
         { type: 'create:cutting' },
 

@@ -123,7 +123,7 @@
                 blazing: 10000,
                 niotic: 25000,
                 spirited: 100000,
-                nitro: 500000
+                nitro: 250000
             }
         },
         solar_panels: {
@@ -175,13 +175,13 @@
                 nitro: 160000
             },
             generation_rates: {
-                starter: 10,
-                basic: 25,
-                hardened: 50,
-                blazing: 100,
-                niotic: 200,
-                spirited: 400,
-                nitro: 800
+                starter: 50,
+                basic: 100,
+                hardened: 200,
+                blazing: 400,
+                niotic: 800,
+                spirited: 1600,
+                nitro: 3200
             }
         }
     },

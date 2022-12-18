@@ -39,16 +39,10 @@
 			icon: "powah:dielectric_casing"
 			x: 9.5d
 			y: 1.0d
-			description: [
-				"Everything in Powah is divided into tiers; Basic, Hardened, Blazing, Niotic, Spirited and Nitro."
-				""
-				"Each tier of machine has different stats, all indicated on the machine’s tooltip."
-				""
-				"Keep this in mind when progressing through the mod, always check the various tooltips in JEI and see what tier is right for your current situation."
-			]
+			description: ["An energy generating mod would hardly be complete without some ways to transmit and store it. Powah comes with everything from personal batteries to charge held items to cables and in world storage cells. "]
 			hide_dependency_lines: true
 			dependencies: ["000000000000016F"]
-			min_width: 250
+			min_width: 300
 			id: "0000000000000172"
 			tasks: [{
 				id: "112F2336BA13572A"
@@ -114,6 +108,11 @@
 			title: "Energy Cables"
 			x: 10.5d
 			y: 2.5d
+			description: [
+				"Simple cables to get energy from one place to another without fuss. "
+				""
+				"The portion of a cable that connects to a machine may be Right-Clicked to adjust it or make it Redstone sensitive. "
+			]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000172"]
 			id: "000000000000017C"
@@ -373,6 +372,7 @@
 			title: "Uraninite"
 			x: 4.5d
 			y: 2.0d
+			description: ["Powerful fuel for use in Reactors, it is not found anywhere in the ground and must be crafted. "]
 			dependencies: ["000000000000018C"]
 			id: "0000000000000186"
 			tasks: [{
@@ -443,6 +443,17 @@
 			icon: "powah:energizing_orb"
 			x: 4.5d
 			y: 1.0d
+			description: [
+				"Powah introduces just a few types of machines, but multiple tiers of each. Obtaining higher tiers requires more powerful materials which are made with the Energizing Orb."
+				""
+				"The Orb may be operated by hand or via automation, accepting items from any sort of pipe or conveyance. Once items are inserted, they may not be removed via automation until the craft completes, simplifying automated crafting considerably. Items may be removed by hand at any time, however."
+				""
+				"Energy for the craft requires Energizing Rods placed around the Orb. These must be placed on some form of energy cable or battery. The rods themselves may be up to six blocks from the Orb and do not require line of sight; they’ll happily shoot their lasers through any block. "
+				""
+				"Rods will automatically link to the nearest Orb when placed but may be re-linked to another Orb manually with a Wrench. Sneak Right-Click the Wrench in the air to change it to Link mode."
+				""
+				"As energy costs increase for higher tier materials, higher tier Rods are recommended to increase the energy delivery rate, though it’s also viable to simply add more Rods. "
+			]
 			hide_dependency_lines: true
 			dependencies: ["000000000000016F"]
 			min_width: 250

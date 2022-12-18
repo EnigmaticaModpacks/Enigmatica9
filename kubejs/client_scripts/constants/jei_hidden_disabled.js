@@ -62,7 +62,14 @@ jei.base.items.disabled = [
     'immersiveengineering:plantoil_bucket',
     'immersiveengineering:ethanol_bucket',
     'immersiveengineering:biodiesel_bucket',
-    'occultism:butcher_knife'
+    'occultism:butcher_knife',
+    'powah:uraninite_ore_dense',
+    'powah:uraninite_ore',
+    'powah:uraninite_ore_poor',
+    'powah:deepslate_uraninite_ore_dense',
+    'powah:deepslate_uraninite_ore',
+    'powah:deepslate_uraninite_ore_poor',
+    'powah:uraninite_raw'
 ];
 jei.base.items.hidden = [
     'kubejs:altered_recipe_indicator',
