@@ -57,7 +57,7 @@
 				"Everything in Powah is divided into tiers; Basic, Hardened, Blazing, Niotic, Spirited and Nitro."
 				""
 				"Each tier of machine has different stats, all indicated on the machine’s tooltip."
-				""				
+				""
 				"Keep this in mind when progressing through the mod, always check the various tooltips in JEI and see what tier is right for your current situation."
 			]
 			min_width: 250
@@ -114,7 +114,7 @@
 			tasks: [{
 				id: "0000000000000177"
 				type: "item"
-				title: "Furnator (Any Tier)"
+				title: "Furnators"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
@@ -213,7 +213,7 @@
 							}
 							{
 								id: "powah:ender_gate_basic"
-								Count: 1b				
+								Count: 1b
 							}
 							{
 								id: "powah:ender_gate_hardened"
@@ -258,7 +258,7 @@
 			tasks: [{
 				id: "000000000000017F"
 				type: "item"
-				title: "Magmator (Any Tier)"
+				title: "Magmators"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
@@ -315,7 +315,7 @@
 			tasks: [{
 				id: "0000000000000181"
 				type: "item"
-				title: "Thermo Generator (Any Tier)"
+				title: "Thermo Generators"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
@@ -370,7 +370,7 @@
 			tasks: [{
 				id: "0000000000000183"
 				type: "item"
-				title: "Solar Panel (Any Tier)"
+				title: "Solar Panels"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
@@ -478,7 +478,7 @@
 			tasks: [{
 				id: "0000000000000189"
 				type: "item"
-				title: "Reactor (Any Tier)"
+				title: "Reactors"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
@@ -577,7 +577,7 @@
 				{
 					id: "00000000000001C3"
 					type: "item"
-					title: "Energizing Rod (Any Tier)"
+					title: "Energizing Rods"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
@@ -699,7 +699,7 @@
 			tasks: [{
 				id: "0000000000000191"
 				type: "item"
-				title: "Ender Cell (Any Tier)"
+				title: "Ender Cells"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
@@ -820,7 +820,7 @@
 			tasks: [{
 				id: "0000000000000195"
 				type: "item"
-				title: "Ender Gate (Any Tier)"
+				title: "Ender Gates"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
@@ -1051,6 +1051,49 @@
 							}
 							{
 								id: "powah:energy_hopper_nitro"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Energy Discharger"
+			icon: "powah:energy_discharger_nitro"
+			x: 6.0d
+			y: 3.0d
+			id: "0DADA0DB59C7F1B3"
+			tasks: [{
+				id: "5C293198033B6C0D"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "powah:energy_discharger_basic"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_discharger_hardened"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_discharger_blazing"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_discharger_niotic"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_discharger_spirited"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_discharger_nitro"
 								Count: 1b
 							}
 						]
