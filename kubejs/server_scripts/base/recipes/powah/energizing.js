@@ -48,6 +48,18 @@ ServerEvents.recipes((event) => {
             energy: '20000000',
             output: Item.of('powah:crystal_nitro', 4),
             id: `powah:energizing/nitro_crystal`
+        },
+        {
+            inputs: [
+                'powah:capacitor_basic_large',
+                '#forge:gears/enderium',
+                'minecraft:ender_eye',
+                '#forge:gears/enderium',
+                'powah:capacitor_basic_large'
+            ],
+            energy: '100000',
+            output: Item.of('powah:ender_core', 1),
+            id: `powah:energizing/ender_core`
         }
     ];
 

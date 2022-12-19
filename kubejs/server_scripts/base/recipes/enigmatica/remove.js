@@ -84,7 +84,12 @@ ServerEvents.recipes((event) => {
 
         { id: /powah:smelting/ },
         { id: /powah:energizing\/.*uraninite/ },
+        { id: /powah:crafting\/.*_starter/ },
         { id: 'powah:energizing/blazing_crystal_2' },
+        { id: 'powah:crafting/energy_cell_basic_2' },
+        { id: 'powah:crafting/cable_basic_2' },
+        { id: 'powah:crafting/capacitor_basic' },
+        { id: 'powah:crafting/capacitor_basic_tiny' },
 
         { type: 'create:cutting' },
 
