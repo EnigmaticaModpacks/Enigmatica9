@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
     const recipes = [
         { fluid: 'minecraft:lava', temp: 5000 },
-        { fluid: 'thermal:glowstone', temp: 8000 }
+        { fluid: 'thermal:glowstone', temp: 24000 }
     ];
 
     recipes.forEach((recipe) => {
