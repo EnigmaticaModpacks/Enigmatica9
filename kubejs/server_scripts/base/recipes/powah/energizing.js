@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
                 '#forge:yellow_cake_uranium',
                 '#forge:gems/fluorite'
             ],
-            energy: '200000000',
+            energy: '150000000',
             output: Item.of('powah:uraninite', 2),
             id: `${id_prefix}uraninite`
         },

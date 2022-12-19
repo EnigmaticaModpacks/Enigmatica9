@@ -108,22 +108,22 @@
                 nitro: 500000000
             },
             transfer_rates: {
-                starter: 50000,
-                basic: 150000,
-                hardened: 250000,
-                blazing: 500000,
-                niotic: 1000000,
-                spirited: 1500000,
-                nitro: 2500000
+                starter: 1000,
+                basic: 4000,
+                hardened: 10000,
+                blazing: 40000,
+                niotic: 100000,
+                spirited: 400000,
+                nitro: 2000000
             },
             generation_rates: {
-                starter: 5000,
-                basic: 15000,
-                hardened: 25000,
-                blazing: 50000,
-                niotic: 100000,
-                spirited: 150000,
-                nitro: 250000
+                starter: 250,
+                basic: 1000,
+                hardened: 2500,
+                blazing: 10000,
+                niotic: 25000,
+                spirited: 100000,
+                nitro: 500000
             }
         },
         solar_panels: {

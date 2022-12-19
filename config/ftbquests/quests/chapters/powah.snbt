@@ -391,14 +391,20 @@
 			title: "Uraninite"
 			x: 4.5d
 			y: 2.0d
-			description: ["Powerful fuel for use in Reactors, though its high cost to craft means lower tier Reactors will be operating at a net loss. "]
+			description: ["Powerful fuel for use in Reactors, though its high cost to craft means lower tier Reactors may operate at a net loss. "]
 			dependencies: ["000000000000018C"]
 			id: "0000000000000186"
 			tasks: [{
 				id: "0000000000000187"
 				type: "item"
 				item: "powah:uraninite"
-				count: 32L
+				count: 16L
+			}]
+			rewards: [{
+				id: "2F952BDC96B6C978"
+				type: "item"
+				item: "powah:uraninite"
+				count: 16
 			}]
 		}
 		{
@@ -407,7 +413,7 @@
 			x: 1.5d
 			y: 3.5d
 			description: [
-				"Reactors are large multiblock generators that consume multiple inputs to operate. "
+				"Reactors are large multiblock generators that consume multiple inputs to operate efficiently. "
 				""
 				"First, and most importantly is the actual fuel, Uraninite. Each piece represents 100mb in the fuel gauge and the Reactor performs best when the fuel gauge is full. Dropping a single piece of fuel in, versus filling the gauge will result in dramatically lower output per fuel, so try to keep it full while running."
 				""
@@ -860,7 +866,7 @@
 		{
 			x: 4.5d
 			y: 3.5d
-			description: ["Though energy intensive to craft, Niotic tier is where Reactors become self-sustaining. "]
+			description: ["As costs increase, so to do the rewards, with Niotic tier machines operating much more quickly."]
 			dependencies: ["000000000000018C"]
 			id: "000000000000019E"
 			tasks: [{
