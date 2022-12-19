@@ -76,7 +76,7 @@ function auto_fortune(material, properties, event) {
         type: 'thermal:pulverizer',
         ingredient: input_ingredient.toJson(),
         result: [{ item: output_itemStack.getId(), chance: 1.25 }],
-        energy: 150000
+        energy: 10000
     }).id(`${id_prefix}thermal/pulverizer/auto_fortune_for_${material}`);
 
     // Occultism (1 -> 1)
@@ -234,7 +234,7 @@ function metal_ore_processing(material, properties, event) {
                 chance: 0.75
             }
         ],
-        energy: 20000,
+        energy: 10000,
         id: `${id_prefix}thermal/centrifuge/crushed_${material}`
     }
     if (secondaries.nugget_itemStack) {
@@ -254,7 +254,7 @@ function metal_ore_processing(material, properties, event) {
         type: 'thermal:pulverizer',
         ingredient: Item.of(raw_itemStack, 1).toJson(),
         result: [ { item: dust_itemStack.getId(), chance: 1.75 } ],
-        energy: 20000,
+        energy: 10000,
         id: `${id_prefix}thermal/pulverizer/raw_${material}`
     }
     if (secondaries.dust_itemStack) {
@@ -267,7 +267,7 @@ function metal_ore_processing(material, properties, event) {
         type: 'thermal:smelter',
         ingredients: [ Item.of(raw_itemStack, 1).toJson() ],
         result: [ { item: ingot_itemStack.getId(), chance: 1.25} ],
-        energy: 20000,
+        energy: 10000,
         id: `${id_prefix}thermal/smelter/raw_${material}`
     }
     if (secondaries.ingot_itemStack) {
@@ -394,29 +394,29 @@ function metal_ore_processing(material, properties, event) {
     recipes.push(recipe)
     
     // Arc Furnace
-    recipe = {
-        type:"immersiveengineering:arc_furnace",
-        additives: [],
-        energy: 51200,
-        input: Item.of(raw_itemStack, 1).toJson(),
-        results: [ { base_ingredient: { item: ingot_itemStack.getId() }, count: 2 }],
-        secondaries: [
-            {
-                chance: 0.75,
-                output: Item.of(ingot_itemStack, 1).toJson()
-            }
-        ],
-        time: 60,
-        slag: AlmostUnified.getPreferredItemForTag('forge:slag').toJson(),
-        id: `${id_prefix}ie/arc_furnace/raw_${material}`
-    }
-    if (secondaries.ingot_itemStack) {
-        recipe.secondaries.push({
-            chance: 0.75,
-            output: Item.of(secondaries.ingot_itemStack, 1).toJson()
-        })
-    }
-    recipes.push(recipe)
+    // recipe = {
+    //     type: "immersiveengineering:arc_furnace",
+    //     additives: [],
+    //     energy: 51200,
+    //     input: { item: raw_itemStack.getId() },
+    //     results: [ { base_ingredient: { item: ingot_itemStack.getId() }, count: 2 }],
+    //     secondaries: [
+    //         {
+    //             chance: 0.75,
+    //             output: { item: ingot_itemStack.getId() }
+    //         }
+    //     ],
+    //     slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
+    //     time: 60,
+    //     id: `${id_prefix}ie/arc_furnace/raw_${material}`
+    // }
+    // if (secondaries.ingot_itemStack) {
+    //     recipe.secondaries.push({
+    //         chance: 0.75,
+    //         output: { item: secondaries.ingot_itemStack.getId() }
+    //     })
+    // }
+    // recipes.push(recipe)
 
     // Ars Noveau
     // Crushing spell

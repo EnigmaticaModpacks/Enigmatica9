@@ -113,7 +113,7 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:processing\/.*\/slurry\/clean/ },
         { id: /mekanism:processing\/.*\/slurry\/dirty/ },
 
-        // Ore Processing Rework Related
+        // Ore Processing Rework Related stuff
 
         { id: /create:crushing\/.*_ore/ },
         { id: /create:crushing\/.*raw_.*_block/},
