@@ -60,6 +60,24 @@ ServerEvents.recipes((event) => {
             energy: '100000',
             output: Item.of('powah:ender_core', 1),
             id: `powah:energizing/ender_core`
+        },
+        {
+            inputs: ['ae2:printed_silicon', '#forge:dusts/redstone', 'ae2:printed_logic_processor'],
+            energy: '5000',
+            output: Item.of('ae2:logic_processor'),
+            id: `${id_prefix}logic_processor`
+        },
+        {
+            inputs: ['ae2:printed_silicon', '#forge:dusts/redstone', 'ae2:printed_engineering_processor'],
+            energy: '5000',
+            output: Item.of('ae2:engineering_processor'),
+            id: `${id_prefix}engineering_processor`
+        },
+        {
+            inputs: ['ae2:printed_silicon', '#forge:dusts/redstone', 'ae2:printed_calculation_processor'],
+            energy: '5000',
+            output: Item.of('ae2:calculation_processor'),
+            id: `${id_prefix}calculation_processor`
         }
     ];
 
