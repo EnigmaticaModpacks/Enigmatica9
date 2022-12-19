@@ -99,31 +99,31 @@
         },
         reactors: {
             capacities: {
-                starter: 250000,
-                basic: 1000000,
-                hardened: 2500000,
-                blazing: 10000000,
-                niotic: 25000000,
-                spirited: 100000000,
-                nitro: 500000000
+                starter: 100000,
+                basic: 600000,
+                hardened: 1100000,
+                blazing: 1600000,
+                niotic: 2100000,
+                spirited: 2600000,
+                nitro: 3100000
             },
             transfer_rates: {
-                starter: 1000,
-                basic: 4000,
-                hardened: 10000,
-                blazing: 40000,
-                niotic: 100000,
-                spirited: 400000,
-                nitro: 2000000
+                starter: 10000,
+                basic: 60000,
+                hardened: 110000,
+                blazing: 160000,
+                niotic: 210000,
+                spirited: 260000,
+                nitro: 310000
             },
             generation_rates: {
-                starter: 250,
-                basic: 1000,
-                hardened: 2500,
-                blazing: 10000,
-                niotic: 25000,
-                spirited: 100000,
-                nitro: 500000
+                starter: 5000,
+                basic: 30000,
+                hardened: 55000,
+                blazing: 80000,
+                niotic: 105000,
+                spirited: 130000,
+                nitro: 150000
             }
         },
         solar_panels: {
