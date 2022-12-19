@@ -55,6 +55,11 @@
 			icon: "powah:furnator_nitro"
 			x: -1.0d
 			y: 2.5d
+			description: [
+				"Operating on all sorts of basic Furnace fuel, Furnators generate respectable energy starting out and are a great way to obtain a little extra power from materials that might otherwise be considered waste. "
+				""
+				"Each tier of Furnator will generate the same amount of energy per fuel, they’ll just do so quicker. So, while a Nitro Furnator can generate some decent energy, it will consume fuel very quickly to do so. "
+			]
 			hide_dependency_lines: true
 			dependencies: ["146BB956A5575B4D"]
 			id: "0000000000000176"
@@ -192,6 +197,11 @@
 			icon: "powah:magmator_nitro"
 			x: -1.5d
 			y: 3.5d
+			description: [
+				"A sort of geothermal generator, the Magmator generates energy from hot fluids such as Lava. "
+				""
+				"Each tier of Magmator will generate the same amount of energy per bucket of fuel, they’ll just do so quicker. So, while a Nitro Magmator can generate some decent energy, it will consume fuel very quickly to do so."
+			]
 			hide_dependency_lines: true
 			dependencies: ["146BB956A5575B4D"]
 			id: "000000000000017E"
@@ -246,6 +256,13 @@
 			icon: "powah:thermo_generator_nitro"
 			x: 1.0d
 			y: 2.5d
+			description: [
+				"A thermoelectric generator that requires a heat differential to generate energy. The Thermo Generator should be placed on a hot block of some sort and coolant should be piped into it. "
+				""
+				"The heat source itself will never be consumed, but the coolant is used up slowly over time. "
+				""
+				"Check Uses on the Thermo Generator in JEI to see all available heat sources and coolants. "
+			]
 			hide_dependency_lines: true
 			dependencies: ["146BB956A5575B4D"]
 			id: "0000000000000180"
@@ -299,6 +316,7 @@
 			title: "Solar Panel"
 			x: 0.0d
 			y: 2.5d
+			description: ["Only operating half of the day, Solar Panels still make an excellent power source for certain applications"]
 			hide_dependency_lines: true
 			dependencies: ["146BB956A5575B4D"]
 			id: "0000000000000182"
@@ -352,6 +370,7 @@
 			title: "Lens of Ender"
 			x: 0.0d
 			y: 3.5d
+			description: ["When applied to a Solar Panel, a Lens of Ender will allow it to see the sun even while deep underground. It still won’t operate at night, but at least it can be brought inside or hidden. "]
 			dependencies: ["0000000000000182"]
 			id: "0000000000000184"
 			tasks: [{
@@ -372,7 +391,7 @@
 			title: "Uraninite"
 			x: 4.5d
 			y: 2.0d
-			description: ["Powerful fuel for use in Reactors, it is not found anywhere in the ground and must be crafted. "]
+			description: ["Powerful fuel for use in Reactors, though its high cost to craft means lower tier Reactors will be operating at a net loss. "]
 			dependencies: ["000000000000018C"]
 			id: "0000000000000186"
 			tasks: [{
@@ -387,9 +406,22 @@
 			icon: "powah:reactor_nitro"
 			x: 1.5d
 			y: 3.5d
+			description: [
+				"Reactors are large multiblock generators that consume multiple inputs to operate. "
+				""
+				"First, and most importantly is the actual fuel, Uraninite. Each piece represents 100mb in the fuel gauge and the Reactor performs best when the fuel gauge is full. Dropping a single piece of fuel in, versus filling the gauge will result in dramatically lower output per fuel, so try to keep it full while running."
+				""
+				"Next comes coolant. Running the reactor generates heat that must be dissipated. To do this, the reactor needs both Solid and Liquid coolants. Checking Uses on a Reactor Block in JEI will show what counts for each. The Liquid Coolants are not consumed, but the Solid Coolants are. "
+				""
+				"Finally, the Reactor accepts two regulator materials, Carbon which helps the Reactor run more efficiently, and Redstone which will allow it to produce more energy per tick, though less efficiently."
+				""
+				"The Carbon gauge accepts the same inputs as a Furnace or Furnator; Charcoal is likely the easiest to supply endlessly. "
+				""
+				"Building a Reactor is as simple as holding a stack of 36 blocks and placing one. The rest of them will place automatically."
+			]
 			hide_dependency_lines: true
 			dependencies: ["146BB956A5575B4D"]
-			min_width: 250
+			min_width: 300
 			id: "0000000000000188"
 			tasks: [{
 				id: "0000000000000189"
@@ -429,14 +461,22 @@
 				}
 				count: 36L
 			}]
-			rewards: [{
-				id: "2D695290477D3526"
-				type: "command"
-				title: "Powah Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "2D695290477D3526"
+					type: "command"
+					title: "Powah Loot Box"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+					player_command: false
+				}
+				{
+					id: "3171C436450BF2F4"
+					type: "item"
+					item: "powah:dry_ice"
+					count: 16
+				}
+			]
 		}
 		{
 			title: "Getting Started: Energizing"
@@ -516,6 +556,11 @@
 			icon: "powah:energy_cell_nitro"
 			x: 8.5d
 			y: 2.5d
+			description: [
+				"Simple tiered energy storage that doubles as an item charger. "
+				""
+				"Each side may be configured separately and the whole Cell may be made Redstone sensitive. "
+			]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000172"]
 			id: "000000000000018E"
@@ -570,6 +615,13 @@
 			icon: "powah:ender_cell_nitro"
 			x: 8.0d
 			y: 3.5d
+			description: [
+				"Ender Cells are the basis for cross dimensional and wireless power transfer. "
+				""
+				"Each Cell may be linked to one of up to twelve channels per player, with each channel having separate storage capacities. When first initialized, a channel will have no energy capacity of its own and Batteries or Energy Cells must be added to it. With the Interface open, Shift Right-Click Cells or Batteries to add them to the selected Channel. Each will add its full capacity as well as transfer any stored energy into the Channel. "
+				""
+				"This is a perfect way to recycle and condense any extra energy storage lying around. "
+			]
 			dependencies: ["000000000000018E"]
 			min_width: 300
 			id: "0000000000000190"
@@ -622,6 +674,11 @@
 			icon: "powah:player_transmitter_nitro"
 			x: 9.5d
 			y: 2.5d
+			description: [
+				"Carrying around a battery is an excellent way to keep powered equipment charged on the go, but what if we could regain that inventory slot? The Player Transmitter allows precisely that by remotely charging any items in the owner’s inventory. "
+				""
+				"To set the owner, craft a Binding Card and Right-Click the card in the air. Doing so will bind the card to that player. The card may then be inserted into the Player Transmitter to configure it."
+			]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000172"]
 			id: "0000000000000192"
@@ -683,6 +740,13 @@
 			icon: "powah:ender_gate_nitro"
 			x: 8.5d
 			y: 4.5d
+			description: [
+				"Only one Ender Cell is truly required per channel. More can certainly be used, but they’re considerably more expensive than the alternative, Ender Gates. "
+				""
+				"Like Ender Cells, Ender Gates may be linked to a Channel in their interface. They can be used both for input and output to and from the Ender Network. "
+				""
+				"Unlike an Ender Cell, however, more storage may not be added to the Ender Network from a Gate. This may only be done at a Cell. "
+			]
 			dependencies: ["0000000000000190"]
 			id: "0000000000000194"
 			tasks: [{
@@ -735,7 +799,7 @@
 			title: "Dimensional Binding Card"
 			x: 9.5d
 			y: 3.5d
-			description: ["The Dimensional Binding Card is a great update to a standard card. Right click a Binding Card on an Enderman and upgrade it: now it will be able to charge your inventory in any dimension and not just the one the Transmitter is in. Neat!"]
+			description: ["An ordinary Binding Card will only work within the same dimension as the Player Transmitter. By upgrading it to a Dimensional Card, however, the Player can enjoy wireless charging from anywhere. "]
 			dependencies: ["0000000000000192"]
 			id: "0000000000000198"
 			tasks: [{
@@ -754,8 +818,9 @@
 		}
 		{
 			title: "Energized Steel"
-			x: 4.5d
-			y: 3.5d
+			x: 3.0d
+			y: 2.0d
+			description: ["After the Basic tier comes Hardened, the first tier requiring energized materials. "]
 			dependencies: ["000000000000018C"]
 			id: "000000000000019A"
 			tasks: [{
@@ -775,6 +840,7 @@
 		{
 			x: 3.5d
 			y: 3.0d
+			description: ["The first of several crystalline materials required by Powah, Blazing Crystals retain enormous heat and double as a decent heat source for Thermo Generators. "]
 			dependencies: ["000000000000018C"]
 			id: "000000000000019C"
 			tasks: [{
@@ -792,8 +858,9 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 3.0d
+			x: 4.5d
+			y: 3.5d
+			description: ["Though energy intensive to craft, Niotic tier is where Reactors become self-sustaining. "]
 			dependencies: ["000000000000018C"]
 			id: "000000000000019E"
 			tasks: [{
@@ -811,8 +878,9 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 2.0d
+			x: 5.5d
+			y: 3.0d
+			description: ["The penultimate tier of materials, Spirited is quite powerful in its own right. But with the right materials we can go further still. "]
 			dependencies: ["000000000000018C"]
 			id: "00000000000001A0"
 			tasks: [{
@@ -832,6 +900,7 @@
 		{
 			x: 6.0d
 			y: 2.0d
+			description: ["Using incredibly rare materials to craft, Nitro represents the highest tier of Powah."]
 			dependencies: ["000000000000018C"]
 			id: "00000000000001A2"
 			tasks: [{
@@ -853,6 +922,7 @@
 			icon: "powah:energy_hopper_nitro"
 			x: 10.5d
 			y: 4.5d
+			description: ["Energy Hoppers effectively convert a simple chest into a mass charging inventory. Simply place it against a chest or other inventory; any powered items inside will be charged up in short order. "]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000172"]
 			id: "414387508B9644C8"
@@ -907,6 +977,7 @@
 			icon: "powah:energy_discharger_nitro"
 			x: 11.0d
 			y: 3.5d
+			description: ["Energy Dischargers will rapidly drain the energy stored in Batteries, allowing it to be fed into machines. While perhaps less useful when compared to Ender Cells, they still allow for long range and rapid transport of energy by shipping Batteries around. "]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000172"]
 			id: "0DADA0DB59C7F1B3"
@@ -959,6 +1030,7 @@
 			title: "Getting Started: Power Generation"
 			x: 0.0d
 			y: 1.0d
+			description: ["Powah offers five different generators, each situationally useful. Consider the application wisely when choosing which to use. "]
 			hide_dependency_lines: true
 			dependencies: ["000000000000016F"]
 			id: "146BB956A5575B4D"
