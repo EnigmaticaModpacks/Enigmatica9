@@ -13,7 +13,7 @@
 			icon: "powah:book"
 			x: 4.5d
 			y: -0.5d
-			shape: "gear"
+			shape: "hexagon"
 			min_width: 250
 			id: "000000000000016F"
 			tasks: [{
