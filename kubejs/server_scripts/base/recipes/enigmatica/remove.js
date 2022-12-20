@@ -143,6 +143,7 @@ ServerEvents.recipes((event) => {
         { id: /thermal:compat\/.*_raw_/, type: "thermal:pulverizer"},
         { id: /thermal:compat\/create.*\/centrifuge_create.*_crushed/ },
         { id: /mekanism:processing\/.*\/dust\/from_raw_block/ },
+        { id: /mekanism:processing\/.*\/from_ore/ },
         { id: 'occultism:crushing/iesnium_dust' }, // There is a lot of different recipes with really similar ids (occultism:crushing/copper_dust_from_raw), so regex would delete all of those, what we don't want ^^"
         { id: 'occultism:crushing/copper_dust' }, 
         { id: 'occultism:crushing/gold_dust' },
