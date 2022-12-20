@@ -88,12 +88,12 @@
                 nitro: 160000
             },
             generation_rates: {
-                starter: 8,
-                basic: 20,
-                hardened: 200,
-                blazing: 200,
-                niotic: 800,
-                spirited: 2000,
+                starter: 125,
+                basic: 250,
+                hardened: 500,
+                blazing: 1000,
+                niotic: 2000,
+                spirited: 4000,
                 nitro: 8000
             }
         },
