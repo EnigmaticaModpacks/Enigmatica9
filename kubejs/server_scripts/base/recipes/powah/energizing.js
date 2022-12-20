@@ -3,14 +3,15 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             inputs: [
-                '#forge:gems/fluorite',
+                '#forge:dusts/fluorite',
                 '#forge:yellow_cake_uranium',
-                '#forge:gems/fluorite',
+                '#forge:dusts/fluorite',
                 '#forge:yellow_cake_uranium',
-                '#forge:gems/fluorite'
+                '#forge:dusts/fluorite',
+                '#forge:yellow_cake_uranium'
             ],
-            energy: '150000000',
-            output: Item.of('powah:uraninite', 2),
+            energy: '60000000',
+            output: Item.of('powah:uraninite', 6),
             id: `${id_prefix}uraninite`
         },
         {
@@ -20,34 +21,33 @@ ServerEvents.recipes((event) => {
             id: `powah:energizing/energized_steel`
         },
         {
-            inputs: ['#forge:ingots/horizonite', 'ars_nouveau:fire_essence', '#forge:ingots/horizonite'],
+            inputs: ['ars_nouveau:fire_essence', '#forge:nuggets/horizonite', '#forge:nuggets/horizonite'],
             energy: '120000',
-            output: Item.of('powah:crystal_blazing', 2),
-            id: `powah:energizing/blazing_crystal`
+            output: Item.of('powah:crystal_blazing', 4),
+            id: `${id_prefix}crystal_blazing`
         },
         {
-            inputs: ['#forge:gems/aquite', 'ars_nouveau:water_essence', '#forge:gems/aquite'],
+            inputs: ['ars_nouveau:water_essence', '#forge:gems/aquite'],
             energy: '300000',
-            output: Item.of('powah:crystal_niotic', 2),
-            id: `powah:energizing/niotic_crystal`
+            output: Item.of('powah:crystal_niotic', 3),
+            id: `${id_prefix}crystal_niotic`
         },
         {
-            inputs: ['#forge:gems/diopside', 'ars_nouveau:earth_essence', '#forge:gems/diopside'],
+            inputs: ['ars_nouveau:earth_essence', '#forge:gems/diopside'],
             energy: '1000000',
-            output: Item.of('powah:crystal_spirited', 2),
-            id: `powah:energizing/spirited_crystal`
+            output: Item.of('powah:crystal_spirited', 3),
+            id: `${id_prefix}crystal_spirited`
         },
         {
             inputs: [
-                'powah:crystal_blazing',
-                '#forge:gems/pyrope',
                 'occultism:afrit_essence',
-                '#forge:gems/pyrope',
-                'powah:crystal_blazing'
+                '#forge:storage_blocks/pyrope',
+                '#forge:storage_blocks/pyrope',
+                'powah:blazing_crystal_block'
             ],
             energy: '20000000',
-            output: Item.of('powah:crystal_nitro', 4),
-            id: `powah:energizing/nitro_crystal`
+            output: Item.of('powah:crystal_nitro', 27),
+            id: `${id_prefix}crystal_nitro`
         },
         {
             inputs: [
