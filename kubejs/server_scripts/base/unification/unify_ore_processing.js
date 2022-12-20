@@ -631,7 +631,7 @@ function gem_ore_processing(material, properties, event) {
         recipes.push(recipe)
     }
 
-    // Ars Noveau Crushing Spell (1,5x)
+    // Ars Noveau Crushing Spell
     if (gem_properties.ars_nouveau) {
         recipe = {
             type: 'ars_nouveau:crush',
