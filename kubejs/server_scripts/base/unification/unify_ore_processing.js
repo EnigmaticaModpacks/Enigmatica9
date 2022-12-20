@@ -4,7 +4,7 @@
 // It uses Almost Unified getPreferredItemForTag function to get all items, but because of how it works, it can sometimes return empty itemstack. If that happends, it tries to use any item present in that tag!
 // This is not a problem for materials that return only one thing, however for materials that have 2 or more items returned in provided tag, it is, and it should be added to AU for unification.
 // Variable "localDebug" determines if any debugging information, like what material uses fallback output, or printing of recipes, is being executed, use with caution!
-let localDebug = true 
+let localDebug = false 
 
 // Main Part
 ServerEvents.recipes((event) => {
@@ -132,6 +132,11 @@ function auto_fortune(material, properties, event) {
                 chance: 0.5,
                 count: 1,
                 item: output_itemStack.getId()
+            },
+            {
+                chance: 0.75,
+                count: 1,
+                item: 'ars_nouveau:experience_gem'
             }
         ],
         id: `${id_prefix}ars_nouveau/crushing/auto_fortune_for_${material}`
@@ -139,7 +144,7 @@ function auto_fortune(material, properties, event) {
 
     // Recipe Decoding
     recipes.forEach((recipe) => {
-        if (localDebug) console.log("// Ore Processing Rework // Recipe with id: " + recipe.id + "\n" + recipe)
+        if (localDebug) {console.log("// Ore Processing Rework // Recipe for Auto-Fortune with id: " + recipe.id + "\n"); console.log(recipe)}
         event.custom(recipe).id(recipe.id)
     }) 
 }
@@ -456,6 +461,11 @@ function metal_ore_processing(material, properties, event) {
                 chance: 0.5,
                 count: 1,
                 item: dust_itemStack.getId()
+            },
+            {
+                chance: 0.75,
+                count: 1,
+                item: 'ars_nouveau:experience_gem'
             }
         ],
         id: `${id_prefix}ars_nouveau/crushing/raw_${material}`
@@ -471,7 +481,7 @@ function metal_ore_processing(material, properties, event) {
 
     // Recipe decoding
     recipes.forEach((recipe) => {
-        if (localDebug) console.log("// Ore Processing Rework // Recipe for Metal Processing with id: " + recipe.id + "\n" + recipe)
+        if (localDebug) {console.log("// Ore Processing Rework // Recipe for Metal Processing with id: " + recipe.id + "\n"); console.log(recipe)}
         event.custom(recipe).id(recipe.id)
     })
 }
@@ -622,32 +632,33 @@ function gem_ore_processing(material, properties, event) {
     }
 
     // Ars Noveau Crushing Spell (1,5x)
-    if (gem_properties.ars_noveau) {
+    if (gem_properties.ars_nouveau) {
         recipe = {
             type: 'ars_nouveau:crush',
             input: ore_ingredient.toJson(),
             output: [
                 {
                     chance: 1,
-                    count: gem_properties.ars_noveau.primaryCount,
+                    count: gem_properties.ars_nouveau.primaryCount,
                     item: output_itemStack.getId()
                 }
             ],
             id: `${id_prefix}ars_nouveau/crushing/gem/${material}_ore`
         }
-        if (gem_properties.output.secondary && gem_properties.ars_noveau.secondaryCount) {
+        if (gem_properties.output.secondary && gem_properties.ars_nouveau.secondaryCount) {
             recipe.output.push({
-                chance: gem_properties.ars_noveau.secondaryChance,
-                count: gem_properties.ars_noveau.secondaryCount,
+                chance: gem_properties.ars_nouveau.secondaryChance,
+                count: gem_properties.ars_nouveau.secondaryCount,
                 item: gem_properties.output.secondary
             })
         }
+        recipe.output.push({ chance: 0.75, count: 1, item: 'ars_nouveau:experience_gem' })
         recipes.push(recipe)
     }
 
     // Recipe decoding
     recipes.forEach((recipe) => {
-        if (localDebug) console.log("// Ore Processing Rework // Recipe for Gem Processing with id: " + recipe.id + "\n" + recipe)
+        if (localDebug) {console.log("// Ore Processing Rework // Recipe for Gem Processing with id: " + recipe.id + "\n"); console.log(recipe)}
         event.custom(recipe).id(recipe.id)
     })
 }

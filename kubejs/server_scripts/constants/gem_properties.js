@@ -29,7 +29,7 @@
 //             secondaryCount: 6,
 //             secondaryChance: 0.25
 //         },
-//         ars_noveau: {
+//         ars_nouveau: {
 //             primaryCount: 6,
 //             secondaryCount: 6,
 //             secondaryChance: 0.25
@@ -84,7 +84,7 @@ const gemProperties = {
                 secondaryCount: 6,
                 secondaryChance: 0.25
             },
-            ars_noveau: {
+            ars_nouveau: {
                 primaryCount: 8,
                 secondaryCount: 6,
                 secondaryChance: 0.25
@@ -131,7 +131,7 @@ const gemProperties = {
                 secondaryCount: 2,
                 secondaryChance: 0.5
             },
-            ars_noveau: {
+            ars_nouveau: {
                 primaryCount: 2,
                 secondaryCount: 2,
                 secondaryChance: 0.5
@@ -173,7 +173,7 @@ const gemProperties = {
                 secondaryCount: 2,
                 secondaryChance: 0.5
             },
-            ars_noveau: {
+            ars_nouveau: {
                 primaryCount: 2,
                 secondaryCount: 2,
                 secondaryChance: 0.5
@@ -215,7 +215,7 @@ const gemProperties = {
                 secondaryCount: 2,
                 secondaryChance: 0.5
             },
-            ars_noveau: {
+            ars_nouveau: {
                 primaryCount: 2,
                 secondaryCount: 2,
                 secondaryChance: 0.5
@@ -257,7 +257,7 @@ const gemProperties = {
                 secondaryCount: 4,
                 secondaryChance: 0.5
             },
-            ars_noveau: {
+            ars_nouveau: {
                 primaryCount: 8,
                 secondaryCount: 4,
                 secondaryChance: 0.5
@@ -299,7 +299,7 @@ const gemProperties = {
                 secondaryCount: 4,
                 secondaryChance: 0.5
             },
-            ars_noveau: {
+            ars_nouveau: {
                 primaryCount: 2,
                 secondaryCount: 4,
                 secondaryChance: 0.5
@@ -336,7 +336,7 @@ const gemProperties = {
                 secondaryCount: 3,
                 secondaryChance: 0.25
             },
-            ars_noveau: {
+            ars_nouveau: {
                 primaryCount: 8,
                 secondaryCount: 3,
                 secondaryChance: 0.25
@@ -383,7 +383,7 @@ const gemProperties = {
                 secondaryCount: 4,
                 secondaryChance: 0.25
             },
-            ars_noveau: {
+            ars_nouveau: {
                 primaryCount: 8,
                 secondaryCount: 4,
                 secondaryChance: 0.25
@@ -425,7 +425,7 @@ const gemProperties = {
                 secondaryCount: 3,
                 secondaryChance: 0.25
             },
-            ars_noveau: {
+            ars_nouveau: {
                 primaryCount: 8,
                 secondaryCount: 3,
                 secondaryChance: 0.25
@@ -472,7 +472,7 @@ const gemProperties = {
                 secondaryCount: 3,
                 secondaryChance: 0.25
             },
-            ars_noveau: {
+            ars_nouveau: {
                 primaryCount: 6,
                 secondaryCount: 3,
                 secondaryChance: 0.25
@@ -509,7 +509,7 @@ const gemProperties = {
                 secondaryCount: 2,
                 secondaryChance: 0.25
             },
-            ars_noveau: {
+            ars_nouveau: {
                 primaryCount: 2,
                 secondaryCount: 2,
                 secondaryChance: 0.25
@@ -546,7 +546,7 @@ const gemProperties = {
                 secondaryCount: 2,
                 secondaryChance: 0.5
             },
-            ars_noveau: {
+            ars_nouveau: {
                 primaryCount: 2,
                 secondaryCount: 2,
                 secondaryChance: 0.5
@@ -583,7 +583,7 @@ const gemProperties = {
                 secondaryCount: 2,
                 secondaryChance: 0.4
             },
-            ars_noveau: {
+            ars_nouveau: {
                 primaryCount: 6,
                 secondaryCount: 2,
                 secondaryChance: 0.4
@@ -625,7 +625,7 @@ const gemProperties = {
                 secondaryCount: 2,
                 secondaryChance: 0.4
             },
-            ars_noveau: {
+            ars_nouveau: {
                 primaryCount: 6,
                 secondaryCount: 2,
                 secondaryChance: 0.4
@@ -667,7 +667,7 @@ const gemProperties = {
                 secondaryCount: 2,
                 secondaryChance: 0.4
             },
-            ars_noveau: {
+            ars_nouveau: {
                 primaryCount: 6,
                 secondaryCount: 2,
                 secondaryChance: 0.4
@@ -709,7 +709,7 @@ const gemProperties = {
                 secondaryCount: 2,
                 secondaryChance: 0.4
             },
-            ars_noveau: {
+            ars_nouveau: {
                 primaryCount: 6,
                 secondaryCount: 2,
                 secondaryChance: 0.4
