@@ -461,11 +461,6 @@ function metal_ore_processing(material, properties, event) {
                 chance: 0.5,
                 count: 1,
                 item: dust_itemStack.getId()
-            },
-            {
-                chance: 0.75,
-                count: 1,
-                item: 'ars_nouveau:experience_gem'
             }
         ],
         id: `${id_prefix}ars_nouveau/crushing/raw_${material}`
@@ -476,6 +471,8 @@ function metal_ore_processing(material, properties, event) {
             count: 1,
             item: secondaries.dust_itemStack.getId()
         })
+    } else {
+        recipe.output.push({chance: 0.75, count: 1, item: 'ars_nouveau:experience_gem' })
     }
     recipes.push(recipe)
 
