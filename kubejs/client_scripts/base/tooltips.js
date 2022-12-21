@@ -171,7 +171,7 @@ ItemEvents.tooltip((event) => {
             text: [Text.of(`Arcane Apparatus: Generates FE From Aura`).red()]
         },
         {
-            items: ['naturesaura:spring'],
+            items: ['naturesaura:spring', 'ars_elemental:everfull_urn'],
             text: [Text.of(`Arcane Apparatus: Endless Water Source`).green()]
         },
         {
