@@ -12,7 +12,7 @@
 			icon: "immersiveengineering:manual"
 			x: -3.5d
 			y: -8.0d
-			shape: "gear"
+			shape: "hexagon"
 			description: [
 				"Immersive Engineering is a versatile tech mod with a focus on large multiblock structures and logistics, all while looking like it came out of a 19th century factory. "
 				""
