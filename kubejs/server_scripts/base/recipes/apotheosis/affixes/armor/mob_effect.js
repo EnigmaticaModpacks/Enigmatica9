@@ -21,9 +21,9 @@ ServerEvents.highPriorityData((event) => {
             target: 'HURT_SELF',
             cooldown: 1200,
             values: {
-                epic: { duration: { min: 10, steps: 1, step: 10 }, amplifier: { min: 0, steps: 1, step: 1 } },
-                mythic: { duration: { min: 10, steps: 3, step: 10 }, amplifier: { min: 0, steps: 1, step: 1 } },
-                ancient: { duration: { min: 10, steps: 7, step: 40 }, amplifier: { min: 1, steps: 2, step: 1 } }
+                epic: { duration: { min: 20, steps: 1, step: 20 }, amplifier: { min: 0, steps: 1, step: 1 } },
+                mythic: { duration: { min: 20, steps: 3, step: 20 }, amplifier: { min: 0, steps: 1, step: 1 } },
+                ancient: { duration: { min: 40, steps: 7, step: 40 }, amplifier: { min: 1, steps: 2, step: 1 } }
             },
             types: ['ARMOR']
         },
