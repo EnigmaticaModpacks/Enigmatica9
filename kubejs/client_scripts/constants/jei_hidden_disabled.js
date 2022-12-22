@@ -85,7 +85,10 @@ jei.base.items.disabled = [
     'powah:energy_cell_starter',
     'powah:battery_starter',
     'powah:capacitor_basic',
-    'powah:capacitor_basic_tiny'
+    'powah:capacitor_basic_tiny',
+    'superiorshields:manasteel_shield',
+    'superiorshields:terrasteel_shield',
+    'superiorshields:elementium_shield'
 ];
 jei.base.items.hidden = [
     'kubejs:altered_recipe_indicator',
