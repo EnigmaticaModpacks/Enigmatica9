@@ -4,7 +4,7 @@ ServerEvents.recipes((event) => {
     let props = Object.keys(metal_properties);
 
     props.forEach((metal) => {
-        if (Item.exists(`emendatusenigmatica:raw_${metal}`)) {
+        if (Item.exists(`emendatusenigmatica:raw_${metal}` && Item.exists(`emendatusenigmatica:${metal}_dust`))) {
             recipes.push(
                 {
                     output: `emendatusenigmatica:${metal}_dust`,
