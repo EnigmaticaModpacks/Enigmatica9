@@ -8,24 +8,22 @@ let localDebug = false
 
 // Main Part
 ServerEvents.recipes((event) => {
+    const id_prefix = 'enigmatica:unification/ore_processing/'
     let metals = Object.keys(metal_properties)
     let gems = Object.keys(gemProperties)
     
     metals.forEach((metal) => {
-        auto_fortune(metal, metal_properties, event)
-        metal_ore_processing(metal, metal_properties, event)
+        auto_fortune(metal, metal_properties, event, id_prefix)
+        metal_ore_processing(metal, metal_properties, event, id_prefix)
     })
 
     gems.forEach((gem) => {
-        gem_ore_processing(gem, gemProperties, event)
+        gem_ore_processing(gem, gemProperties, event, id_prefix)
     })
 })
 
-
 // Functions
-const id_prefix = 'enigmatica:unification/ore_processing/'
-
-function auto_fortune(material, properties, event) {
+function auto_fortune(material, properties, event, id_prefix) {
     if (!properties[material].oreProcessing) {
         return
     }
@@ -149,7 +147,7 @@ function auto_fortune(material, properties, event) {
     }) 
 }
 
-function metal_ore_processing(material, properties, event) {
+function metal_ore_processing(material, properties, event, id_prefix) {
     if (!properties[material].oreProcessing) {
         return
     }
@@ -481,7 +479,7 @@ function metal_ore_processing(material, properties, event) {
     })
 }
 
-function gem_ore_processing(material, properties, event) {
+function gem_ore_processing(material, properties, event, id_prefix) {
     if (!properties[material].oreProcessing) {
         return
     }
