@@ -223,17 +223,19 @@ const metal_properties = {
     },
     energized_steel: {
         meltingPoint: 875
-    } // TODO, Add  melting Points for those metals:
-//     bronze :{},
-//     steel: {},
-//     constantan: {},
-//     electrum: {},
-//     invar: {},
-//     brass: {},
-//     refined_glowstone: {},
-//     refined_obsidian: {},
-//     infused_iron: {},
-//     sky_ingot: {},
-//     tainted_gold: {},
-//     soul_steel: {}
+    }, 
+    // TODO, Add  melting Points for those metals:
+    brass: {},
+    bronze :{},
+    constantan: {},
+    electrum: {},
+    infused_iron: {},
+    invar: {},
+    refined_glowstone: {},
+    refined_obsidian: {},
+    rose_gold: {},
+    sky_ingot: {},
+    soul_steel: {},
+    steel: {},
+    tainted_gold: {}
 };
