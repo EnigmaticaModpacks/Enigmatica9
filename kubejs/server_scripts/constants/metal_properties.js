@@ -2,6 +2,18 @@
 
 // Properties for Metal processing
 const metal_properties = {
+    copper: {
+        meltingPoint: 500,
+        oreProcessing: {
+            output: {
+                substrate: 'minecraft:gravel',
+                secondary: 'gold'
+            },
+            create: {
+                processingTime: 350
+            }
+        }
+    },
     iron: {
         meltingPoint: 800,
         oreProcessing: {
@@ -11,18 +23,6 @@ const metal_properties = {
             },
             create: {
                 processingTime: 400
-            }
-        }
-    },
-    nickel: {
-        meltingPoint: 950,
-        oreProcessing: {
-            output: {
-                substrate: 'minecraft:gravel',
-                secondary: 'iron'
-            },
-            create: {
-                processingTime: 350
             }
         }
     },
@@ -38,27 +38,39 @@ const metal_properties = {
             }
         }
     },
-    copper: {
-        meltingPoint: 500,
+    tin: {
+        meltingPoint: 225,
         oreProcessing: {
             output: {
                 substrate: 'minecraft:gravel',
-                secondary: 'gold'
+                secondary: 'osmium'
             },
             create: {
                 processingTime: 350
             }
         }
     },
-    aluminum: {
-        meltingPoint: 425,
+    osmium: {
+        meltingPoint: 975,
         oreProcessing: {
             output: {
                 substrate: 'minecraft:gravel',
-                secondary: 'iron'
+                secondary: 'tin'
             },
             create: {
-                processingTime: 300
+                processingTime: 400
+            }
+        }
+    },
+    uranium: {
+        meltingPoint: 830,
+        oreProcessing: {
+            output: {
+                substrate: 'minecraft:gravel',
+                secondary: 'lead'
+            },
+            create: {
+                processingTime: 400
             }
         }
     },
@@ -86,39 +98,27 @@ const metal_properties = {
             }
         }
     },
-    uranium: {
-        meltingPoint: 830,
+    nickel: {
+        meltingPoint: 950,
         oreProcessing: {
             output: {
                 substrate: 'minecraft:gravel',
-                secondary: 'lead'
-            },
-            create: {
-                processingTime: 400
-            }
-        }
-    },
-    osmium: {
-        meltingPoint: 975,
-        oreProcessing: {
-            output: {
-                substrate: 'minecraft:gravel',
-                secondary: 'tin'
-            },
-            create: {
-                processingTime: 400
-            }
-        }
-    },
-    tin: {
-        meltingPoint: 225,
-        oreProcessing: {
-            output: {
-                substrate: 'minecraft:gravel',
-                secondary: 'osmium'
+                secondary: 'iron'
             },
             create: {
                 processingTime: 350
+            }
+        }
+    },
+    aluminum: {
+        meltingPoint: 425,
+        oreProcessing: {
+            output: {
+                substrate: 'minecraft:gravel',
+                secondary: 'iron'
+            },
+            create: {
+                processingTime: 300
             }
         }
     },
@@ -134,18 +134,18 @@ const metal_properties = {
             }
         }
     },
-    cobalt: {
-        meltingPoint: 950,
-        oreProcessing: {
-            output: {
-                substrate: 'minecraft:netherrack',
-                secondary: 'iron'
-            },
-            create: {
-                processingTime: 400
-            }
-        }
-    },
+    // cobalt: {
+    //     meltingPoint: 950,
+    //     oreProcessing: {
+    //         output: {
+    //             substrate: 'minecraft:netherrack',
+    //             secondary: 'iron'
+    //         },
+    //         create: {
+    //             processingTime: 400
+    //         }
+    //     }
+    // },
     iesnium: {
         meltingPoint: 850,
         oreProcessing: {
@@ -158,9 +158,45 @@ const metal_properties = {
             }
         }
     },
-    elementium: {
-        meltingPoint: 875
+    horizonite: {
+        // meltingPoint: 0,
+        oreProcessing: {
+            output: {
+                substrate: 'minecraft:gravel',
+                secondary: 'ventium'
+            },
+            create: {
+                processingTime: 450
+            }
+        }
     },
+    ventium: {
+        // meltingPoint: 0,
+        oreProcessing: {
+            output: {
+                substrate: 'minecraft:gravel',
+                secondary: 'falsite'
+            },
+            create: {
+                processingTime: 450
+            }
+        }
+    },
+    falsite: {
+        // meltingPoint: 0,
+        oreProcessing: {
+            output: {
+                substrate: 'minecraft:gravel',
+                secondary: 'horizonite'
+            },
+            create: {
+                processingTime: 450
+            }
+        }
+    },
+    // elementium: {
+    //     meltingPoint: 875
+    // },
     enderium: {
         meltingPoint: 1450
     },
@@ -170,15 +206,15 @@ const metal_properties = {
     lumium: {
         meltingPoint: 1354
     },
-    manasteel: {
-        meltingPoint: 900
-    },
-    terrasteel: {
-        meltingPoint: 1350
-    },
-    gaia_spirit: {
-        meltingPoint: 975
-    },
+    // manasteel: {
+    //     meltingPoint: 900
+    // },
+    // terrasteel: {
+    //     meltingPoint: 1350
+    // },
+    // gaia_spirit: {
+    //     meltingPoint: 975
+    // },
     infused_iron: {
         meltingPoint: 850
     },
@@ -187,5 +223,17 @@ const metal_properties = {
     },
     energized_steel: {
         meltingPoint: 875
-    }
+    } // TODO, Add  melting Points for those metals:
+//     bronze :{},
+//     steel: {},
+//     constantan: {},
+//     electrum: {},
+//     invar: {},
+//     brass: {},
+//     refined_glowstone: {},
+//     refined_obsidian: {},
+//     infused_iron: {},
+//     sky_ingot: {},
+//     tainted_gold: {},
+//     soul_steel: {}
 };

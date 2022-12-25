@@ -15,5 +15,11 @@ WorldgenEvents.remove((event) => {
     'surface_structures'
     */
 
-    event.removeFeatureById('underground_ores', 'occultism:underground_grove');
+    event.removeFeatureById('underground_ores', 
+        [
+            'occultism:underground_grove',
+            'occultism:silver_ore_deepslate',
+            'occultism:silver_ore'
+        ]
+    );
 });

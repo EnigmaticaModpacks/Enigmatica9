@@ -1,0 +1,17 @@
+{
+    "id": "tainted_gold",
+    "source": "modded",
+    "localizedName": "Tainted Gold",
+    "processedTypes": [
+        "storage_block",
+        "ingot"
+    ],
+    "properties": {
+        "materialType": "metal",
+        "harvestLevel": 2
+    },
+    "colors": {
+        "materialColor": "a85e1e",
+        "fluidColor": "a85e1e"
+    }
+}

@@ -25,6 +25,26 @@
       ],
       "rules": {},
       "shouldSanitize": false
+    },
+    "create:crushing": {
+      "ignoredFields": [
+        "conditions",
+        "group"
+      ],
+      "rules": {
+        "processingTime": "LowerRule"
+      },
+      "shouldSanitize": true
+    },
+    "thermal:smelter": {
+      "ignoredFields": [
+        "conditions",
+        "group"
+      ],
+      "rules": {
+        "processingTime": "LowerRule"
+      },
+      "shouldSanitize": true
     }
   },
   "strictMode": false

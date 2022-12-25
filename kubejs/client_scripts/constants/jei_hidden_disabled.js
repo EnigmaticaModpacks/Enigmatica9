@@ -6,10 +6,26 @@ const disabled_item_message =
 const disabled_item_tooltip = 'This item has been disabled.';
 
 const jei = {
-    base: { items: { hidden: [], disabled: [] }, fluids: { hidden: [] }, categories: { hidden: [] } },
-    normal: { items: { hidden: [], disabled: [] }, fluids: { hidden: [] }, categories: { hidden: [] } },
-    expert: { items: { hidden: [], disabled: [] }, fluids: { hidden: [] }, categories: { hidden: [] } }
+    base: {
+        items: { hidden: [], disabled: [] },
+        categories: { hidden: [] },
+        fluids: { hidden: [] },
+        gases: { hidden: [] }
+    },
+    normal: {
+        items: { hidden: [], disabled: [] },
+        categories: { hidden: [] },
+        fluids: { hidden: [] },
+        gases: { hidden: [] }
+    },
+    expert: {
+        items: { hidden: [], disabled: [] },
+        categories: { hidden: [] },
+        fluids: { hidden: [] },
+        gases: { hidden: [] }
+    }
 };
+
 // Base
 jei.base.items.disabled = [
     'twilightforest:uncrafting_table',
@@ -37,6 +53,9 @@ jei.base.items.disabled = [
     'mekanism:basic_bin',
     'immersiveengineering:blast_furnace',
     'immersiveengineering:alloy_smelter',
+    'immersiveengineering:plantoil_bucket',
+    'immersiveengineering:ethanol_bucket',
+    'immersiveengineering:biodiesel_bucket',
     'thermal:flax',
     'thermal:flax_block',
     'thermal:flax_seeds',
@@ -85,7 +104,10 @@ jei.base.items.disabled = [
     'powah:energy_cell_starter',
     'powah:battery_starter',
     'powah:capacitor_basic',
-    'powah:capacitor_basic_tiny'
+    'powah:capacitor_basic_tiny',
+    /byg:.*pendorite.*/,
+    /byg:.*ametrine.*/,
+    'minecraft:nether_gold_ore'
 ];
 jei.base.items.hidden = [
     'kubejs:altered_recipe_indicator',
@@ -131,7 +153,10 @@ jei.base.items.hidden = [
     'hexerei:budding_selenite',
     'hexerei:selenite_block',
     'hexerei:creative_waxing_kit',
-    'hexerei:selenite_shard'
+    'hexerei:selenite_shard',
+    'mekanism:creative_fluid_tank',
+    'mekanism:creative_chemical_tank',
+    /powah:.*uraninite_ore.*/
 ];
 jei.base.fluids.hidden = [
     'thermal:latex',
@@ -146,14 +171,21 @@ jei.base.fluids.hidden = [
 ];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
 
+jei.base.fluids.hidden = [];
+jei.base.gases.hidden = [];
+
 // Normal
 jei.normal.items.disabled = [];
 jei.normal.items.hidden = [];
 jei.normal.fluids.hidden = [];
 jei.normal.categories.hidden = [];
+jei.normal.fluids.hidden = [];
+jei.normal.gases.hidden = [];
 
 // Expert
 jei.expert.items.disabled = [];
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];
 jei.expert.categories.hidden = [];
+jei.expert.fluids.hidden = [];
+jei.expert.gases.hidden = [];

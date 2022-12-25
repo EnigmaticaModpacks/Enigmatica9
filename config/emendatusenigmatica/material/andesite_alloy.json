@@ -1,0 +1,16 @@
+{
+    "id": "andesite",
+    "source": "modded",
+    "localizedName": "Andesite Alloy",
+    "processedTypes": [
+        "ingot"
+    ],
+    "properties": {
+        "materialType": "alloy",
+        "harvestLevel": 2
+    },
+    "colors": {
+        "materialColor": "6d7d73",
+        "fluidColor": "6d7d73"
+    }
+}

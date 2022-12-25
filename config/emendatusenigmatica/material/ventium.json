@@ -1,0 +1,27 @@
+{
+    "id": "ventium",
+    "source": "modded",
+    "localizedName": "Ventium",
+    "processedTypes": [
+        "storage_block",
+        "ore",
+        "raw",
+        "crushed_ore",
+        "ingot",
+        "dust",
+        "nugget",
+        "slurry",
+        "crystal",
+        "shard",
+        "clump",
+        "dirty_dust"
+    ],
+    "properties": {
+        "materialType": "metal",
+        "harvestLevel": 2
+    },
+    "colors": {
+        "materialColor": "d12533",
+        "fluidColor": "d12533"
+    }
+}

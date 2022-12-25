@@ -1,0 +1,22 @@
+{
+    "id": "bronze",
+    "source": "modded",
+    "localizedName": "Bronze",
+    "processedTypes": [
+        "storage_block",
+        "ingot",
+        "nugget",
+        "dust",
+        "plate",
+        "rod",
+        "gear"
+    ],
+    "properties": {
+        "materialType": "alloy",
+        "harvestLevel": 2
+    },
+    "colors": {
+        "materialColor": "ce6e26",
+        "fluidColor": "ce6e26"
+    }
+}

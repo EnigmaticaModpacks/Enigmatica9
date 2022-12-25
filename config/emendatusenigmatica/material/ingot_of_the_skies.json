@@ -1,0 +1,16 @@
+{
+    "id": "sky",
+    "source": "modded",
+    "localizedName": "Ingot of the Skies",
+    "processedTypes": [
+        "ingot"
+    ],
+    "properties": {
+        "materialType": "metal",
+        "harvestLevel": 2
+    },
+    "colors": {
+        "materialColor": "88d8fe",
+        "fluidColor": "88d8fe"
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "lapis",
+  "source": "vanilla",
+  "localizedName": "Lapis Lazuli",
+  "disableDefaultOre": true,
+  "processedTypes": [
+    "ore",
+    "storage_block",
+    "dust",
+    "gear"
+  ],
+  "properties": {
+    "materialType": "gem",
+    "harvestLevel": 2,
+    "hasParticles": true,
+    "blockRecipeType": 9
+  },
+  "oreDrop": {
+    "drop": "minecraft:lapis_lazuli",
+    "min": 2,
+    "max": 5
+  },
+  "colors": {
+    "materialColor": "173782"
+  }
+}

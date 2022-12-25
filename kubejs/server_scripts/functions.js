@@ -17,32 +17,32 @@ const entryIsBlacklisted = (material, type) => {
 const tagIsEmpty = (tag) => {
     return getPreferredItemInTag(Ingredient.of(tag)).id == air;
 };
-/*
-const getPreferredItemInTag = (tag) => {
-    let pref =
-        Utils.listOf(tag.stacks)
-            .toArray()
-            .sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || Item.of(air);
-    return pref;
-};
 
-const getPreferredItemInTag = (tag) => {
-    let pref = AlmostUnified.getPreferredItemForTag(tag);
-    return pref;
-};
+// const getPreferredItemInTag = (tag) => {
+//     let pref =
+//         Utils.listOf(tag.stacks)
+//             .toArray()
+//             .sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || Item.of(air);
+//     return pref;
+// };
 
-const compareIndices = (a, b, tag) => {
-    if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
+// const getPreferredItemInTag = (tag) => {
+//     let pref = AlmostUnified.getPreferredItemForTag(tag);
+//     return pref;
+// };
 
-    for (let mod of modPriorities) {
-        if (mod == a) return -1; // if a comes before b, then idx(a) < idx(b), so -1
-        if (mod == b) return 1; // if a comes after b, then idx(a) > idx(b), so 1
-    }
+// const compareIndices = (a, b, tag) => {
+//     if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
 
-    console.error('[' + a + ', ' + b + '] were both unaccounted for in mod unification' + (tag ? ' for ' + tag : '!'));
-    return 0;
-};
-*/
+//     for (let mod of modPriorities) {
+//         if (mod == a) return -1; // if a comes before b, then idx(a) < idx(b), so -1
+//         if (mod == b) return 1; // if a comes after b, then idx(a) > idx(b), so 1
+//     }
+
+//     console.error('[' + a + ', ' + b + '] were both unaccounted for in mod unification' + (tag ? ' for ' + tag : '!'));
+//     return 0;
+// };
+
 const getStrippedLogFrom = (logBlock) => {
     let result = air;
     buildWoodVariants.find((wood) => {

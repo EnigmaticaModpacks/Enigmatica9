@@ -1,0 +1,661 @@
+// Ore processing Unification script
+// This script uses metal_properties and gemProperties defined in metal_properties.js and gem_properties.js, which can be found in kubejs/constants folder
+// It takes a list of material and their properties, checks if it has "Ore Processing" field, and if so, creates recipes based on the properties provided.
+// It uses Almost Unified getPreferredItemForTag function to get all items, but because of how it works, it can sometimes return empty itemstack. If that happends, it tries to use any item present in that tag!
+// This is not a problem for materials that return only one thing, however for materials that have 2 or more items returned in provided tag, it is, and it should be added to AU for unification.
+// Variable "localDebug" determines if any debugging information, like what material uses fallback output, or printing of recipes, is being executed, use with caution!
+let localDebug = false 
+
+// Main Part
+ServerEvents.recipes((event) => {
+    let metals = Object.keys(metal_properties)
+    let gems = Object.keys(gemProperties)
+    
+    metals.forEach((metal) => {
+        auto_fortune(metal, metal_properties, event)
+        metal_ore_processing(metal, metal_properties, event)
+    })
+
+    gems.forEach((gem) => {
+        gem_ore_processing(gem, gemProperties, event)
+    })
+})
+
+
+// Functions
+const id_prefix = 'enigmatica:unification/ore_processing/'
+
+function auto_fortune(material, properties, event) {
+    if (!properties[material].oreProcessing) {
+        return
+    }
+    // Auto Fortune for Metals
+    let input_ingredient = Ingredient.of(`#forge:ores/${material}`)
+    let output_itemStack = AlmostUnified.getPreferredItemForTag(`forge:raw_materials/${material}`)
+    if (output_itemStack.isEmpty()) {
+        output_itemStack = Item.of(Ingredient.of(`#forge:raw_materials/${material}`).getItemIds()[0])
+        if (localDebug) console.warn(" // Ore Processing Rework // Material \"" + material + "\" uses fallback output item for metal Auto-Fortune!")
+    }
+
+    let recipes = []
+
+    // Create Crushing Wheels (1,33x)
+    recipes.push({
+        type: 'create:crushing',
+        ingredients: [input_ingredient.toJson()],
+        processingTime: properties[material].oreProcessing.create.processingTime,
+        results: [
+            output_itemStack.toJson(),
+            {
+                item: output_itemStack.getId(),
+                chance: 0.33
+            },
+            {
+                item: 'create:experience_nugget',
+                chance: 0.75
+            }
+        ],
+        id: `${id_prefix}create/crushing_wheels/auto_fortune_for_${material}`
+    })
+
+    // Mekanism Enrichment (1.25x)
+    recipes.push({
+        type: 'mekanism:enriching',
+        input: { ingredient: input_ingredient.toJson(), amount: 4 },
+        output: Item.of(output_itemStack, 5).toJson(),
+        id: `${id_prefix}mekanism/enriching/auto_fortune_for_${material}`
+    })
+
+    // Mekanism Purification Chamber (1,5x)
+    recipes.push({
+        type: 'mekanism:purifying',
+        chemicalInput: { amount: 1, gas: 'mekanism:oxygen' },
+        itemInput: { amount: 2, ingredient: input_ingredient.toJson() },
+        output: Item.of(output_itemStack, 3).toJson(),
+        id: `${id_prefix}mekanism/purifying/auto_fortune_for_${material}`
+    })
+
+    // Mekanism Chemical Injection (2x)
+    recipes.push({
+        type: 'mekanism:injecting',
+        chemicalInput: { amount: 1, gas: 'mekanism:hydrofluoric_acid' },
+        itemInput: { ingredient: input_ingredient.toJson() },
+        output: Item.of(output_itemStack, 2).toJson(),
+        id: `${id_prefix}mekanism/chemical_injecting/auto_fortune_for_${material}`
+    })
+
+    // Thermal Pulverizer (1,25x)
+    recipes.push({
+        type: 'thermal:pulverizer',
+        ingredient: input_ingredient.toJson(),
+        result: [{ item: output_itemStack.getId(), chance: 1.25 }],
+        energy: 10000,
+        id: `${id_prefix}thermal/pulverizer/auto_fortune_for_${material}`
+    })
+
+    // Occultism (1 -> 1)
+    recipes.push({
+        type: 'occultism:crushing',
+        ingredient: input_ingredient.toJson(),
+        result: Item.of(output_itemStack, 1).toJson(),
+        crushing_time: 60,
+        ignore_crushing_multiplier: true,
+        id: `${id_prefix}occultism/crushing/auto_fortune_for_${material}`
+    })
+
+    // Immersive Engineering Crusher (1,5x)
+    recipes.push({
+        type: 'immersiveengineering:crusher',
+        energy: 20000,
+        input: input_ingredient.toJson(),
+        result: { base_ingredient: { item: output_itemStack.getId() }, count: 1 },
+        secondaries: [
+            {
+                chance: 0.5,
+                output: Item.of(output_itemStack, 1).toJson()
+            }
+        ],
+        id: `${id_prefix}ie/crusher/auto_fortune_for_${material}`
+    })
+
+    // Ars Noveau Crushing Spell (1,5x)
+    recipes.push({
+        type: 'ars_nouveau:crush',
+        input: input_ingredient.toJson(),
+        output: [
+            {
+                chance: 1,
+                count: 1,
+                item: output_itemStack.getId()
+            },
+            {
+                chance: 0.5,
+                count: 1,
+                item: output_itemStack.getId()
+            },
+            {
+                chance: 0.75,
+                count: 1,
+                item: 'ars_nouveau:experience_gem'
+            }
+        ],
+        id: `${id_prefix}ars_nouveau/crushing/auto_fortune_for_${material}`
+    })
+
+    // Recipe Decoding
+    recipes.forEach((recipe) => {
+        if (localDebug) {console.log("// Ore Processing Rework // Recipe for Auto-Fortune with id: " + recipe.id + "\n"); console.log(recipe)}
+        event.custom(recipe).id(recipe.id)
+    }) 
+}
+
+function metal_ore_processing(material, properties, event) {
+    if (!properties[material].oreProcessing) {
+        return
+    }
+    // Ore processsing for Metals
+    let raw_itemStack = AlmostUnified.getPreferredItemForTag(`forge:raw_materials/${material}`)
+    let raw_block_itemStack = AlmostUnified.getPreferredItemForTag(`forge:storage_blocks/raw_${material}`)
+    let crushed_ore_itemStack = AlmostUnified.getPreferredItemForTag(`create:crushed_ores/${material}`)
+    let ingot_itemStack = AlmostUnified.getPreferredItemForTag(`forge:ingots/${material}`)
+    let nugget_itemStack = AlmostUnified.getPreferredItemForTag(`forge:nuggets/${material}`)
+    let dust_itemStack = AlmostUnified.getPreferredItemForTag(`forge:dusts/${material}`)
+    let shard_itemStack = AlmostUnified.getPreferredItemForTag(`mekanism:shards/${material}`)
+    let clump_itemStack = AlmostUnified.getPreferredItemForTag(`mekanism:clumps/${material}`)
+    let secondaries = {}
+    if (properties[material].oreProcessing.output.secondary) {
+        let secondary = properties[material].oreProcessing.output.secondary
+        secondaries = {
+            raw_itemStack: AlmostUnified.getPreferredItemForTag(`forge:raw_materials/${secondary}`),
+            raw_block_itemStack: AlmostUnified.getPreferredItemForTag(`forge:storage_blocks/raw_${secondary}`),
+            crushed_ore_itemStack: AlmostUnified.getPreferredItemForTag(`create:crushed_ores/${secondary}`),
+            ingot_itemStack: AlmostUnified.getPreferredItemForTag(`forge:ingots/${secondary}`),
+            nugget_itemStack: AlmostUnified.getPreferredItemForTag(`forge:nuggets/${secondary}`),
+            dust_itemStack: AlmostUnified.getPreferredItemForTag(`forge:dusts/${secondary}`)
+        }
+    }
+
+    let recipes = []
+    let recipe = {}
+
+    // Create
+    // Raw Ore crushing
+    recipe = {
+        type: 'create:crushing',
+        ingredients: [ Item.of(raw_itemStack, 1).toJson() ],
+        processingTime: properties[material].oreProcessing.create.processingTime,
+        results: [ Item.of(crushed_ore_itemStack).toJson() ],
+        id: `${id_prefix}create/crushing_wheels/raw_${material}`
+    }
+    if (secondaries.crushed_ore_itemStack) {
+        recipe.results.push(
+            {
+                item: secondaries.crushed_ore_itemStack.getId(),
+                chance: 0.75
+            }
+        )
+    }
+    recipe.results.push(
+        {
+            item: 'create:experience_nugget',
+            chance: 0.75
+        }
+    )
+    recipes.push(recipe)
+
+    // Raw Ore Block crushing
+    recipe = {
+        type: 'create:crushing',
+        ingredients: [ Item.of(raw_block_itemStack, 1).toJson() ],
+        processingTime: properties[material].oreProcessing.create.processingTime,
+        results: [ Item.of(crushed_ore_itemStack, 9).toJson() ],
+        id: `${id_prefix}create/crushing_wheels/raw_${material}_block`
+    }
+    if (secondaries.crushed_ore_itemStack) {
+        recipe.results.push(
+            {
+                item: secondaries.crushed_ore_itemStack.getId(),
+                count: 9,
+                chance: 0.75
+            }
+        )
+    }
+    recipe.results.push(
+        {
+            item: 'create:experience_nugget',
+            count: 9,
+            chance: 0.75
+        }
+    )
+    recipes.push(recipe)
+
+    // Crushed Ore Washing
+    // Create Fan Washing
+    recipes.push(
+        {
+            type: "create:splashing",
+            ingredients: [ Item.of(crushed_ore_itemStack, 1).toJson() ],
+            results: [
+                Item.of(nugget_itemStack, 9).toJson(),
+                {
+                    chance: 0.75,
+                    count: 6,
+                    item: nugget_itemStack.getId()
+                }
+            ],
+            id: `${id_prefix}create/splashing/${material}`
+        }
+    )
+
+    // Thermal Centrifugal Separator
+    recipe = {
+        type: 'thermal:centrifuge',
+        ingredient: Item.of(crushed_ore_itemStack, 1).toJson(),
+        result: [
+            {
+                item: nugget_itemStack.getId(),
+                count: 9
+            },
+            {
+                item: nugget_itemStack.getId(),
+                count: 6,
+                chance: 0.75
+            }
+        ],
+        energy: 10000,
+        id: `${id_prefix}thermal/centrifuge/crushed_${material}`
+    }
+    if (secondaries.nugget_itemStack) {
+        recipe.result.push(
+            {
+                item: secondaries.nugget_itemStack.getId(),
+                count: 3,
+                chance: 0.25
+            }
+        )
+    }
+    recipes.push(recipe)
+
+    // Thermal Ore Processing
+    // Pulverizer
+    recipe = {
+        type: 'thermal:pulverizer',
+        ingredient: Item.of(raw_itemStack, 1).toJson(),
+        result: [ { item: dust_itemStack.getId(), chance: 1.75 } ],
+        energy: 10000,
+        id: `${id_prefix}thermal/pulverizer/raw_${material}`
+    }
+    if (secondaries.dust_itemStack) {
+        recipe.result.push({ item: secondaries.dust_itemStack.getId(), chance: 0.25 })
+    }
+    recipes.push(recipe)
+
+    // Induction Smelter
+    recipe = {
+        type: 'thermal:smelter',
+        ingredients: [ Item.of(raw_itemStack, 1).toJson() ],
+        result: [ { item: ingot_itemStack.getId(), chance: 1.25} ],
+        energy: 10000,
+        id: `${id_prefix}thermal/smelter/raw_${material}`
+    }
+    if (secondaries.ingot_itemStack) {
+        recipe.result.push({ item: secondaries.ingot_itemStack.getId(), chance: 0.75 })
+    }
+    recipes.push(recipe)
+
+    // Mekanism
+    // Slurry recipes
+    // Raw Ore
+    recipes.push({
+        type: 'mekanism:dissolution',
+        gasInput: { amount: 1, gas: "mekanism:sulfuric_acid" },
+        itemInput: { amount: 1, ingredient: Item.of(raw_itemStack, 1).toJson() },
+        output: {
+            amount: 1000,
+            chemicalType: "slurry",
+            slurry: `emendatusenigmatica:dirty_${material}`
+        },
+        id: `${id_prefix}mekanism/dissolution/raw_${material}`
+    })
+    recipes.push({
+        type: 'mekanism:dissolution',
+        gasInput: { amount: 2, gas: "mekanism:sulfuric_acid" },
+        itemInput: { amount: 1, ingredient: Item.of(raw_block_itemStack, 1).toJson() },
+        output: {
+            amount: 9000,
+            chemicalType: "slurry",
+            slurry: `emendatusenigmatica:dirty_${material}`
+        },
+        id: `${id_prefix}mekanism/dissolution/raw_${material}_block`
+    })
+
+    // Shards
+    recipes.push({
+        type: 'mekanism:injecting',
+        chemicalInput: { amount: 1, gas: 'mekanism:hydrogen_chloride' },
+        itemInput: { ingredient: Item.of(raw_itemStack, 1).toJson() },
+        output: Item.of(shard_itemStack, 4).toJson(),
+        id: `${id_prefix}mekanism/chemical_injecting/raw_${material}`
+    })
+    recipes.push({
+        type: 'mekanism:injecting',
+        chemicalInput: { amount: 2, gas: 'mekanism:hydrogen_chloride' },
+        itemInput: { ingredient: Item.of(raw_block_itemStack, 1).toJson() },
+        output: Item.of(shard_itemStack, 36).toJson(),
+        id: `${id_prefix}mekanism/chemical_injecting/raw_${material}_block`
+    })
+
+    // Clumps
+    recipes.push({
+        type: 'mekanism:purifying',
+        chemicalInput: { amount: 1, gas: 'mekanism:oxygen' },
+        itemInput: { ingredient: Item.of(raw_itemStack, 1).toJson() },
+        output: Item.of(clump_itemStack, 3).toJson(),
+        id: `${id_prefix}mekanism/purifying/raw_${material}`
+    })
+    recipes.push({
+        type: 'mekanism:purifying',
+        chemicalInput: { amount: 2, gas: 'mekanism:oxygen' },
+        itemInput: { ingredient: Item.of(raw_block_itemStack, 1).toJson() },
+        output: Item.of(clump_itemStack, 27).toJson(),
+        id: `${id_prefix}mekanism/purifying/raw_${material}_block`
+    })
+
+    // Enriching
+    recipes.push({
+        type: 'mekanism:enriching',
+        input: { ingredient: Item.of(raw_itemStack, 1).toJson() },
+        output: Item.of(dust_itemStack, 2).toJson(),
+        id: `${id_prefix}mekanism/enriching/raw_${material}`
+    })
+    recipes.push({
+        type: 'mekanism:enriching',
+        input: { ingredient: Item.of(raw_block_itemStack, 1).toJson() },
+        output: Item.of(dust_itemStack, 18).toJson(),
+        id: `${id_prefix}mekanism/enriching/raw_${material}_block`
+    })
+
+    // Immersive Engineering
+    // Crusher
+    // Raw Ore
+    recipe = {
+        type: 'immersiveengineering:crusher',
+        energy: 50000,
+        input: Item.of(raw_itemStack, 1).toJson(),
+        result: { base_ingredient: { item: dust_itemStack.getId() }, count: 2 },
+        secondaries: [
+            {
+                chance: 0.75,
+                output: Item.of(dust_itemStack, 1).toJson()
+            }
+        ],
+        id: `${id_prefix}ie/crusher/raw_${material}`
+    }
+    if (secondaries.dust_itemStack) {
+        recipe.secondaries.push({
+            chance: 0.25,
+            output: Item.of(secondaries.dust_itemStack, 1).toJson()
+        })
+    }
+    recipes.push(recipe)
+
+    // Raw Ore Block
+    recipe = {
+        type: 'immersiveengineering:crusher',
+        energy: 75000,
+        input: Item.of(raw_block_itemStack, 1).toJson(),
+        result: { base_ingredient: { item: dust_itemStack.getId() }, count: 18 },
+        secondaries: [
+            {
+                chance: 0.75,
+                output: Item.of(dust_itemStack, 9).toJson()
+            }
+        ],
+        id: `${id_prefix}ie/crusher/raw_${material}_block`
+    }
+    if (secondaries.dust_itemStack) {
+        recipe.secondaries.push({
+            chance: 0.25,
+            output: Item.of(secondaries.dust_itemStack, 9).toJson()
+        })
+    }
+    recipes.push(recipe)
+    
+    // Arc Furnace
+    // recipe = {
+    //     type: "immersiveengineering:arc_furnace",
+    //     additives: [],
+    //     energy: 51200,
+    //     input: { item: raw_itemStack.getId() },
+    //     results: [ { base_ingredient: { item: ingot_itemStack.getId() }, count: 2 }],
+    //     secondaries: [
+    //         {
+    //             chance: 0.75,
+    //             output: { item: ingot_itemStack.getId() }
+    //         }
+    //     ],
+    //     slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
+    //     time: 60,
+    //     id: `${id_prefix}ie/arc_furnace/raw_${material}`
+    // }
+    // if (secondaries.ingot_itemStack) {
+    //     recipe.secondaries.push({
+    //         chance: 0.75,
+    //         output: { item: secondaries.ingot_itemStack.getId() }
+    //     })
+    // }
+    // recipes.push(recipe)
+
+    // Ars Noveau
+    // Crushing spell
+    recipe = {
+        type: 'ars_nouveau:crush',
+        input: Item.of(raw_itemStack, 1).toJson(),
+        output: [
+            {
+                chance: 1,
+                count: 2,
+                item: dust_itemStack.getId()
+            },
+            {
+                chance: 0.5,
+                count: 1,
+                item: dust_itemStack.getId()
+            }
+        ],
+        id: `${id_prefix}ars_nouveau/crushing/raw_${material}`
+    }
+    if (secondaries.dust_itemStack) {
+        recipe.output.push({
+            chance: 0.5,
+            count: 1,
+            item: secondaries.dust_itemStack.getId()
+        })
+    } else {
+        recipe.output.push({chance: 0.75, count: 1, item: 'ars_nouveau:experience_gem' })
+    }
+    recipes.push(recipe)
+
+    // Recipe decoding
+    recipes.forEach((recipe) => {
+        if (localDebug) {console.log("// Ore Processing Rework // Recipe for Metal Processing with id: " + recipe.id + "\n"); console.log(recipe)}
+        event.custom(recipe).id(recipe.id)
+    })
+}
+
+function gem_ore_processing(material, properties, event) {
+    if (!properties[material].oreProcessing) {
+        return
+    }
+    // Gem Ore Processing
+    let gem_properties = properties[material].oreProcessing
+    let ore_ingredient = Ingredient.of(`#forge:ores/${material}`)
+    let recipes = []
+    let recipe = {}
+    let output_itemStack
+
+    switch(gem_properties.output.type) {
+        case("dust"):
+        output_itemStack = AlmostUnified.getPreferredItemForTag(`forge:dusts/${material}`)
+        if (output_itemStack.isEmpty()) {
+            output_itemStack = Item.of(Ingredient.of(`#forge:dusts/${material}`).getItemIds()[0])
+            if (localDebug) console.warn(" // Ore Processing Rework // Material \"" + material + "\" uses fallback output item for gem processing! Type: Dust")
+        }
+        break
+        case("gem"):
+        output_itemStack = AlmostUnified.getPreferredItemForTag(`forge:gems/${material}`)
+        if (output_itemStack.isEmpty()) {
+            output_itemStack = Item.of(Ingredient.of(`#forge:gems/${material}`).getItemIds()[0])
+            if (localDebug) console.warn(" // Ore Processing Rework // Material \"" + material + "\" uses fallback output item for gem processing! Type: Gem")
+        }
+        break
+    }
+
+    // Create Crushing Wheels
+    if (gem_properties.create) {
+        recipe = {
+            type: 'create:crushing',
+            ingredients: [ore_ingredient.toJson()],
+            processingTime: gem_properties.create.processingTime,
+            results: [ Item.of(output_itemStack, gem_properties.create.primaryCount).toJson() ],
+            id: `${id_prefix}create/crushing_wheels/gem/${material}_ore`
+        }
+        if (gem_properties.output.secondary && gem_properties.create.secondaryCount) {
+            recipe.results.push(
+                { 
+                    item: gem_properties.output.secondary, 
+                    chance: gem_properties.create.secondaryChance, 
+                    count: gem_properties.create.secondaryCount
+                }
+            )
+        }
+        if (gem_properties.output.substrate) {
+            recipe.results.push({ item: gem_properties.output.substrate, chance: 0.125 })
+        }
+        recipe.results.push({ item: 'create:experience_nugget', chance: 0.50 })
+        recipes.push(recipe)
+    }
+
+    // Mekanism
+    if (gem_properties.mekanism) {
+        // Mekanism Enrichment Chamber
+        if (gem_properties.mekanism.enrichmentCount) {
+            recipes.push({
+                type: 'mekanism:enriching',
+                input: { ingredient: ore_ingredient.toJson() },
+                output: Item.of(output_itemStack, gem_properties.mekanism.enrichmentCount).toJson(),
+                id: `${id_prefix}mekanism/enriching/gem/${material}_ore`
+            })
+        }
+        
+        // Mekanism Purification Chamber
+        if (gem_properties.mekanism.purificationCount && gem_properties.mekanism.purificationGas) {
+            recipes.push({
+                type: 'mekanism:purifying',
+                chemicalInput: gem_properties.mekanism.purificationGas,
+                itemInput: { ingredient: ore_ingredient.toJson() },
+                output: Item.of(output_itemStack, gem_properties.mekanism.purificationCount).toJson(),
+                id: `${id_prefix}mekanism/purifying/gem/${material}_ore`
+            })
+        }
+
+        // Mekanism Chemical Injection
+        if (gem_properties.mekanism.injectionCount && gem_properties.mekanism.injectionGas) {
+            recipes.push({
+                type: 'mekanism:injecting',
+                chemicalInput: gem_properties.mekanism.injectionGas,
+                itemInput: { ingredient: ore_ingredient.toJson() },
+                output: Item.of(output_itemStack, gem_properties.mekanism.injectionCount).toJson(),
+                id: `${id_prefix}mekanism/chemical_injecting/gem/${material}_ore`
+            })
+        }
+    }
+    
+    // Thermal Pulverizer
+    if (gem_properties.thermal) {
+        recipe = {
+            type: 'thermal:pulverizer',
+            ingredient: ore_ingredient.toJson(),
+            result: [{ item: output_itemStack.getId(), count: gem_properties.thermal.primaryCount, chance: 1}],
+            energy: 10000,
+            id: `${id_prefix}thermal/pulverizer/gem/${material}_ore`
+        }
+        if (gem_properties.output.secondary && gem_properties.thermal.secondaryCount) {
+            recipe.result.push({
+                item: gem_properties.output.secondary,
+                count: gem_properties.thermal.secondaryCount,
+                chance: gem_properties.thermal.secondaryChance
+            })
+        }
+        if (gem_properties.output.substrate) {
+            recipe.result.push({ item: gem_properties.output.substrate, chance: 0.125 })
+        }
+        recipes.push(recipe)
+    }
+
+    // Occultism
+    if (gem_properties.occultism) {
+        recipes.push({
+            type: 'occultism:crushing',
+            ingredient: ore_ingredient.toJson(),
+            result: Item.of(output_itemStack, gem_properties.occultism.primaryCount).toJson(),
+            crushing_time: 60,
+            id: `${id_prefix}occultism/crushing/gem/${material}_ore`
+        })
+    }
+
+    // Immersive Engineering Crusher
+    if (gem_properties.immersiveengineering) {
+        recipe = {
+            type: 'immersiveengineering:crusher',
+            energy: 20000,
+            input: ore_ingredient.toJson(),
+            result: { base_ingredient: { item: output_itemStack.getId() }, count: gem_properties.immersiveengineering.primaryCount },
+            id: `${id_prefix}ie/crusher/gem/${material}_ore`
+        }
+        if (gem_properties.output.secondary || gem_properties.output.substrate) {
+            recipe.secondaries = []
+            if (gem_properties.output.secondary && gem_properties.immersiveengineering.secondaryCount) {
+                recipe.secondaries.push({
+                        output: Item.of(gem_properties.output.secondary, gem_properties.immersiveengineering.secondaryCount).toJson(),
+                        chance: gem_properties.immersiveengineering.secondaryChance
+                })
+            }
+            if (gem_properties.output.substrate) {
+                recipe.secondaries.push({ output: Item.of(gem_properties.output.substrate, 1).toJson(), chance: 0.125 })
+            }
+        }
+        recipes.push(recipe)
+    }
+
+    // Ars Noveau Crushing Spell
+    if (gem_properties.ars_nouveau) {
+        recipe = {
+            type: 'ars_nouveau:crush',
+            input: ore_ingredient.toJson(),
+            output: [
+                {
+                    chance: 1,
+                    count: gem_properties.ars_nouveau.primaryCount,
+                    item: output_itemStack.getId()
+                }
+            ],
+            id: `${id_prefix}ars_nouveau/crushing/gem/${material}_ore`
+        }
+        if (gem_properties.output.secondary && gem_properties.ars_nouveau.secondaryCount) {
+            recipe.output.push({
+                chance: gem_properties.ars_nouveau.secondaryChance,
+                count: gem_properties.ars_nouveau.secondaryCount,
+                item: gem_properties.output.secondary
+            })
+        }
+        recipe.output.push({ chance: 0.75, count: 1, item: 'ars_nouveau:experience_gem' })
+        recipes.push(recipe)
+    }
+
+    // Recipe decoding
+    recipes.forEach((recipe) => {
+        if (localDebug) {console.log("// Ore Processing Rework // Recipe for Gem Processing with id: " + recipe.id + "\n"); console.log(recipe)}
+        event.custom(recipe).id(recipe.id)
+    })
+}
