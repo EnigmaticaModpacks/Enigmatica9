@@ -178,7 +178,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     // Raw Ore crushing
     recipe = {
         type: 'create:crushing',
-        ingredients: [ Item.of(raw_ingredient, 1).toJson() ],
+        ingredients: [ Ingredient.of(raw_ingredient, 1).toJson() ],
         processingTime: properties[material].oreProcessing.create.processingTime,
         results: [ Item.of(crushed_ore_itemStack).toJson() ],
         id: `${id_prefix}create/crushing_wheels/raw_${material}`
@@ -202,7 +202,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     // Raw Ore Block crushing
     recipe = {
         type: 'create:crushing',
-        ingredients: [ Item.of(raw_block_ingredient, 1).toJson() ],
+        ingredients: [ Ingredient.of(raw_block_ingredient, 1).toJson() ],
         processingTime: properties[material].oreProcessing.create.processingTime,
         results: [ Item.of(crushed_ore_itemStack, 9).toJson() ],
         id: `${id_prefix}create/crushing_wheels/raw_${material}_block`
@@ -276,7 +276,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     // Pulverizer
     recipe = {
         type: 'thermal:pulverizer',
-        ingredient: Item.of(raw_ingredient, 1).toJson(),
+        ingredient: Ingredient.of(raw_ingredient, 1).toJson(),
         result: [ { item: dust_itemStack.getId(), chance: 1.75 } ],
         energy: 10000,
         id: `${id_prefix}thermal/pulverizer/raw_${material}`
@@ -289,7 +289,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     // Induction Smelter
     recipe = {
         type: 'thermal:smelter',
-        ingredients: [ Item.of(raw_ingredient, 1).toJson() ],
+        ingredients: [ Ingredient.of(raw_ingredient, 1).toJson() ],
         result: [ { item: ingot_itemStack.getId(), chance: 1.25} ],
         energy: 10000,
         id: `${id_prefix}thermal/smelter/raw_${material}`
@@ -305,7 +305,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     recipes.push({
         type: 'mekanism:dissolution',
         gasInput: { amount: 1, gas: "mekanism:sulfuric_acid" },
-        itemInput: { amount: 1, ingredient: Item.of(raw_ingredient, 1).toJson() },
+        itemInput: { amount: 1, ingredient: Ingredient.of(raw_ingredient, 1).toJson() },
         output: {
             amount: 1000,
             chemicalType: "slurry",
@@ -316,7 +316,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     recipes.push({
         type: 'mekanism:dissolution',
         gasInput: { amount: 2, gas: "mekanism:sulfuric_acid" },
-        itemInput: { amount: 1, ingredient: Item.of(raw_block_ingredient, 1).toJson() },
+        itemInput: { amount: 1, ingredient: Ingredient.of(raw_block_ingredient, 1).toJson() },
         output: {
             amount: 9000,
             chemicalType: "slurry",
@@ -329,14 +329,14 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     recipes.push({
         type: 'mekanism:injecting',
         chemicalInput: { amount: 1, gas: 'mekanism:hydrogen_chloride' },
-        itemInput: { ingredient: Item.of(raw_ingredient, 1).toJson() },
+        itemInput: { ingredient: Ingredient.of(raw_ingredient, 1).toJson() },
         output: Item.of(shard_itemStack, 4).toJson(),
         id: `${id_prefix}mekanism/chemical_injecting/raw_${material}`
     })
     recipes.push({
         type: 'mekanism:injecting',
         chemicalInput: { amount: 2, gas: 'mekanism:hydrogen_chloride' },
-        itemInput: { ingredient: Item.of(raw_block_ingredient, 1).toJson() },
+        itemInput: { ingredient: Ingredient.of(raw_block_ingredient, 1).toJson() },
         output: Item.of(shard_itemStack, 36).toJson(),
         id: `${id_prefix}mekanism/chemical_injecting/raw_${material}_block`
     })
@@ -345,14 +345,14 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     recipes.push({
         type: 'mekanism:purifying',
         chemicalInput: { amount: 1, gas: 'mekanism:oxygen' },
-        itemInput: { ingredient: Item.of(raw_ingredient, 1).toJson() },
+        itemInput: { ingredient: Ingredient.of(raw_ingredient, 1).toJson() },
         output: Item.of(clump_itemStack, 3).toJson(),
         id: `${id_prefix}mekanism/purifying/raw_${material}`
     })
     recipes.push({
         type: 'mekanism:purifying',
         chemicalInput: { amount: 2, gas: 'mekanism:oxygen' },
-        itemInput: { ingredient: Item.of(raw_block_ingredient, 1).toJson() },
+        itemInput: { ingredient: Ingredient.of(raw_block_ingredient, 1).toJson() },
         output: Item.of(clump_itemStack, 27).toJson(),
         id: `${id_prefix}mekanism/purifying/raw_${material}_block`
     })
@@ -360,13 +360,13 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     // Enriching
     recipes.push({
         type: 'mekanism:enriching',
-        input: { ingredient: Item.of(raw_ingredient, 1).toJson() },
+        input: { ingredient: Ingredient.of(raw_ingredient, 1).toJson() },
         output: Item.of(dust_itemStack, 2).toJson(),
         id: `${id_prefix}mekanism/enriching/raw_${material}`
     })
     recipes.push({
         type: 'mekanism:enriching',
-        input: { ingredient: Item.of(raw_block_ingredient, 1).toJson() },
+        input: { ingredient: Ingredient.of(raw_block_ingredient, 1).toJson() },
         output: Item.of(dust_itemStack, 18).toJson(),
         id: `${id_prefix}mekanism/enriching/raw_${material}_block`
     })
@@ -377,7 +377,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     recipe = {
         type: 'immersiveengineering:crusher',
         energy: 50000,
-        input: Item.of(raw_ingredient, 1).toJson(),
+        input: Ingredient.of(raw_ingredient, 1).toJson(),
         result: { base_ingredient: { item: dust_itemStack.getId() }, count: 2 },
         secondaries: [
             {
@@ -399,7 +399,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     recipe = {
         type: 'immersiveengineering:crusher',
         energy: 75000,
-        input: Item.of(raw_block_ingredient, 1).toJson(),
+        input: Ingredient.of(raw_block_ingredient, 1).toJson(),
         result: { base_ingredient: { item: dust_itemStack.getId() }, count: 18 },
         secondaries: [
             {
@@ -422,7 +422,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     //     type: "immersiveengineering:arc_furnace",
     //     additives: [],
     //     energy: 51200,
-    //     input: { item: raw_ingredient.getId() },
+    //     input: raw_ingredient.toJson(),
     //     results: [ { base_ingredient: { item: ingot_itemStack.getId() }, count: 2 }],
     //     secondaries: [
     //         {
@@ -446,7 +446,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     // Crushing spell
     recipe = {
         type: 'ars_nouveau:crush',
-        input: Item.of(raw_ingredient, 1).toJson(),
+        input: Ingredient.of(raw_ingredient, 1).toJson(),
         output: [
             {
                 chance: 1,
