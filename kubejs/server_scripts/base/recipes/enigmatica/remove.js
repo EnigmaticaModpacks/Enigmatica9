@@ -115,7 +115,6 @@ ServerEvents.recipes((event) => {
         { id: /immersiveengineering:crafting\/plate_.*_hammering/ },        // plates.js related
         { id: /immersiveengineering:crafting\/stick_/ },                    // rods.js related
         { id: /emendatusenigmatica:ingot\/from_dust.*\/refined_obsidian/ }, // Removes smelting recipes dust -> ingot for Refined Obsidian and Glowstone
-        { id: /emendatusenigmatica:ingot\/from_dust.*\/refined_glowstone/ },
         { id: /mekanism:processing\/.*\/to.*_ore/ },                        // Replaced manually.
         { id: /mekanism:processing\/.*\/ore\/.*from_raw/ },
         { id: /mekanism:processing\/.*\/crystal\/from_slurry/ },

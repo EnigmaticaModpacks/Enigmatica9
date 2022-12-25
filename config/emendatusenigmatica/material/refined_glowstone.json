@@ -5,8 +5,7 @@
     "processedTypes": [
         "storage_block",
         "ingot",
-        "nugget",
-        "dust"
+        "nugget"
     ],
     "properties": {
         "materialType": "metal",
