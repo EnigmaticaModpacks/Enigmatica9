@@ -1,29 +1,27 @@
 ServerEvents.tags('item', (event) => {
-    const items = [
-        'minecraft:beacon',
-        'minecraft:end_rod',
-        'minecraft:glowstone',
-        'minecraft:lava_bucket',
-        'minecraft:magma_block',
-        'minecraft:shroomlight'
-    ];
-
     event
         .get('forge:lights')
-        .add(items)
-        .add(/_lantern/)
-        .add(/_lamp/)
-        .add(/torch/)
-        .add(/fire_pit/)
-        .add(/shiny_flower/)
-        .add(/floating_flower/)
-        .add(/candle/)
-        .add(/campfire/)
-        .add(/_glowcane/)
-        .add(/illumin/)
-        .add(/sconce/)
-        .add(/candelabra/)
-        .add(/chandelier/)
-        .add(/brazier/)
-        .add(/neon_light/);
+        .add([
+            /_lantern/,
+            /_lamp/,
+            /torch/,
+            /fire_pit/,
+            /shiny_flower/,
+            /floating_flower/,
+            /candle/,
+            /campfire/,
+            /_glowcane/,
+            /illumin/,
+            /sconce/,
+            /candelabra/,
+            /chandelier/,
+            /brazier/,
+            /neon_light/,
+            'minecraft:beacon',
+            'minecraft:end_rod',
+            'minecraft:glowstone',
+            'minecraft:lava_bucket',
+            'minecraft:magma_block',
+            'minecraft:shroomlight'
+        ]);
 });

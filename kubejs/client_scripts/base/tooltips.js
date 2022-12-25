@@ -26,7 +26,7 @@ ItemEvents.tooltip((event) => {
             text: [Text.of('Recipe altered for Enigmatica 9: Expert. Refer to JEI.').gold()]
         },
         {
-            items: ['kubejs:disabled_recipe_indicator'],
+            items: ['kubejs:disabled_recipe_indicator', 'kubejs:disabled_structure_indicator'],
             text: [Text.of('Recipe disabled for Enigmatica 9').gold()]
         },
         {
@@ -140,23 +140,38 @@ ItemEvents.tooltip((event) => {
             text: [Text.of(`Arcane Apparatus: Filtered Hopper`).green()]
         },
         {
-            items: ['naturesaura:hopper_upgrade'],
-            text: [Text.of(`Arcane Apparatus: Ranged Hopper`).green()]
+            items: [
+                'ars_nouveau:glyph_pickup',
+                'functionalstorage:collector_upgrade',
+                'naturesaura:hopper_upgrade',
+                'pneumaticcraft:magnet_upgrade',
+                'sophisticatedbackpacks:advanced_magnet_upgrade',
+                'sophisticatedbackpacks:advanced_pickup_upgrade',
+                'sophisticatedbackpacks:magnet_upgrade',
+                'sophisticatedbackpacks:pickup_upgrade',
+                'sophisticatedstorage:advanced_magnet_upgrade',
+                'sophisticatedstorage:advanced_pickup_upgrade',
+                'sophisticatedstorage:magnet_upgrade',
+                'sophisticatedstorage:pickup_upgrade',
+                'thermal:device_collector'
+            ],
+            text: [Text.of(`Item Collector`).green()]
         },
         {
             items: [
-                // 'hexerei:dried_sage_bundle',
-                // 'hexerei:sage_burning_plate',
-                'naturesaura:spawn_lamp'
+                'hexerei:dried_sage_bundle',
+                'hexerei:sage_burning_plate',
+                'naturesaura:spawn_lamp',
+                'immersiveengineering:electric_lantern'
             ],
-            text: [Text.of(`Arcane Apparatus: Prevents Mob Spawns`).green()]
+            text: [Text.of(`Prevents Mob Spawns`).green()]
         },
         {
             items: ['naturesaura:rf_converter'],
             text: [Text.of(`Arcane Apparatus: Generates FE From Aura`).red()]
         },
         {
-            items: ['naturesaura:spring'],
+            items: ['naturesaura:spring', 'ars_elemental:everfull_urn'],
             text: [Text.of(`Arcane Apparatus: Endless Water Source`).green()]
         },
         {
@@ -192,9 +207,27 @@ ItemEvents.tooltip((event) => {
                 'naturesaura:ender_crate',
                 'naturesaura:ender_access',
                 'minecraft:ender_chest',
-                'functionalstorage:ender_drawer'
+                'functionalstorage:ender_drawer',
+                'occultism:stable_wormhole',
+                'occultism:storage_controller',
+                'mekanism:qio_dashboard',
+                'mekanism:qio_drive_array',
+                'mekanism:portable_qio_dashboard',
+                'occultism:storage_remote',
+                'hexerei:ender_satchel'
             ],
-            text: [Text.of(`Arcane Apparatus: Cross-Dimensional Item Transportation`).darkPurple()]
+            text: [Text.of(`Cross-Dimensional Storage`).darkPurple()]
+        },
+        {
+            items: [
+                'mekanism:quantum_entangloporter',
+                'mekanism:qio_redstone_adapter',
+                'mekanism:qio_exporter',
+                'mekanism:qio_importer',
+                'ae2:quantum_link',
+                'ae2:quantum_ring'
+            ],
+            text: [Text.of(`Cross-Dimensional Logistics`).darkPurple()]
         },
         {
             items: ['ars_nouveau:enchanters_mirror'],
@@ -279,9 +312,14 @@ ItemEvents.tooltip((event) => {
                 'mekanism:crafting_formula',
                 'mekanism:formulaic_assemblicator',
                 'create:mechanical_crafter',
-                'naturesaura:auto_crafter'
+                'naturesaura:auto_crafter',
+                'thermal:machine_crafter'
             ],
             text: [Text.of(`Auto-crafter`).green()]
+        },
+        {
+            items: ['functionalstorage:armory_cabinet'],
+            text: [Text.of(`Bulk Unstackable Storage`).green()]
         },
         {
             items: [
@@ -293,9 +331,13 @@ ItemEvents.tooltip((event) => {
                 'engineersdecor:rebar_concrete_slab',
                 'engineersdecor:rebar_concrete',
                 'engineersdecor:panzerglass_block',
-                'engineersdecor:panzerglass_slab'
+                'engineersdecor:panzerglass_slab',
+                'thermal:lumium_glass',
+                'thermal:signalum_glass',
+                'thermal:obsidian_glass',
+                'thermal:enderium_glass'
             ],
-            text: [Text.of('Immune to the Wither').color('#4F0D75')]
+            text: [Text.of('Wither Immune').color('#9a1be3')]
         },
         {
             items: ['industrialforegoing:mob_duplicator', 'spirit:soul_cage', 'pneumaticcraft:pressurized_spawner'],
@@ -332,6 +374,16 @@ ItemEvents.tooltip((event) => {
         {
             items: ['supplementaries:pulley_block'],
             text: [Text.of('Redstone Device: Raises or Lowers Chains and Ropes When Rotated').darkRed()]
+        },
+        {
+            items: [
+                'chimes:amethyst_chimes',
+                'chimes:copper_chimes',
+                'chimes:carved_bamboo_chimes',
+                'chimes:iron_chimes',
+                'chimes:bamboo_chimes'
+            ],
+            text: [Text.of('The gentle sounds keep Phantoms at bay.').aqua()]
         }
 
         /* 

@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 2
 	filename: "building"
-	title: "Building [WIP]"
+	title: "Building"
 	icon: "minecraft:scaffolding"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -73,10 +73,11 @@
 		{
 			title: "Windows and Blinds"
 			icon: "mcwwindows:oak_window2"
-			x: 1.5d
-			y: -3.5d
+			x: 0.0d
+			y: -5.0d
 			description: ["A selection of windows to spruce up both interiors and exteriors."]
 			dependencies: ["3834BBF4818E4ABE"]
+			invisible: true
 			id: "69264C279D819443"
 			tasks: [{
 				id: "420B50F1422D8783"
@@ -99,8 +100,8 @@
 		{
 			title: "Roofs, Tiles, and Gutters"
 			icon: "mcwroofs:oak_roof"
-			x: 0.5d
-			y: -4.0d
+			x: 1.5d
+			y: -3.5d
 			description: ["A selection of blocks for building complex roof shapes."]
 			dependencies: ["3834BBF4818E4ABE"]
 			id: "294FF399D036000C"
@@ -125,7 +126,7 @@
 		{
 			title: "Trapdoors"
 			icon: "mcwtrpdoors:oak_cottage_trapdoor"
-			x: -0.5d
+			x: 0.0d
 			y: -4.0d
 			description: ["A selection of fancy trapdoors to suit any occasion."]
 			dependencies: ["3834BBF4818E4ABE"]
@@ -271,7 +272,7 @@
 				type: "command"
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				player_command: false
 			}]
 		}
@@ -301,14 +302,14 @@
 				type: "command"
 				title: "Alchemist's Delight"
 				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 				player_command: false
 			}]
 		}
 		{
 			title: "Simply Light"
 			icon: "simplylight:illuminant_block_on"
-			x: 0.5d
+			x: 0.0d
 			y: 2.5d
 			subtitle: "Let there be light"
 			description: [
@@ -336,7 +337,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -436,7 +437,7 @@
 			title: "Chipped"
 			icon: "chipped:mason_table"
 			x: 0.0d
-			y: 3.5d
+			y: 4.5d
 			subtitle: "Nothing a little wood filler won't fix"
 			description: [
 				"Chipped offers a massive collection of carved Vanilla blocks, whether it is decorative glass, quilted wool for nice carpet design, or even an ominous chisled gilded blackstone. Chipped has got you covered."
@@ -444,6 +445,7 @@
 				"To start, build one of the carving stations available which function in a similar way to the Vanilla Stonecutter. Place the apprioriate block in it and select a different output that suits your building needs."
 			]
 			dependencies: ["058D3BEB64C74E27"]
+			invisible: true
 			id: "1EAFB4FB2CF09F26"
 			tasks: [{
 				id: "5B597B1689F6662F"
@@ -491,7 +493,7 @@
 				type: "command"
 				title: "Miner's Delight"
 				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
 				player_command: false
 			}]
 		}
@@ -525,8 +527,8 @@
 		{
 			title: "'Dustrial Decor"
 			icon: "dustrial_decor:sheet_metal_treading"
-			x: -0.5d
-			y: 2.5d
+			x: 0.0d
+			y: 3.5d
 			subtitle: "Safty Helmet must be worn at all times!"
 			description: [
 				"Are you building a Factory to house all your loud machinery? Does that power station building feel open to wandering wild life and hostile mobs? Do you wish you could put up a chain fence to stop those pesky illagers from interupting you? Well then ..."
@@ -534,6 +536,7 @@
 				"'Dustrial Decor offers all the above, and more. This mod offers a decent range of decorative blocks with industrial theme in mind."
 			]
 			dependencies: ["058D3BEB64C74E27"]
+			invisible: true
 			id: "201E7950E17180BD"
 			tasks: [
 				{
@@ -616,8 +619,8 @@
 		{
 			title: "General Building Tools"
 			icon: "framedblocks:framed_hammer"
-			x: 6.0d
-			y: 2.5d
+			x: 6.5d
+			y: 0.0d
 			shape: "gear"
 			subtitle: "The right tools for the job"
 			description: [
@@ -643,8 +646,8 @@
 		{
 			title: "Portable Stonecutter"
 			icon: "minecraft:stonecutter"
-			x: 5.0d
-			y: 1.5d
+			x: 7.5d
+			y: -0.5d
 			subtitle: "It's like the Chisel, but fatter"
 			description: [
 				"It cuts, it grinds, it chisels, polishes and even cooks and cleans!"
@@ -683,7 +686,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -696,8 +699,8 @@
 					Damage: 0
 				}
 			}
-			x: 7.0d
-			y: 1.5d
+			x: 6.5d
+			y: -1.0d
 			subtitle: "It's nothing like the Chisel or the Portable Stonecutter"
 			description: [
 				"Chisels from this mod allow you to chip away pieces of the block down to a single pixel, or bit, at a time."
@@ -705,6 +708,7 @@
 				"This mod gives you almost complete control on the shapes you can build and combine, including fluids."
 			]
 			dependencies: ["5411C8D2344CC2F1"]
+			invisible: true
 			id: "468BEE8C31DA8DF9"
 			tasks: [{
 				id: "45C52AC34FB4858B"
@@ -798,7 +802,7 @@
 				}
 			}
 			x: 5.0d
-			y: 3.5d
+			y: 0.5d
 			subtitle: "It builds stuff"
 			description: [
 				"An advanced building device with several modes allowing for the quick construction of walls, stairs, and platforms. "
@@ -846,7 +850,7 @@
 				}
 			}
 			x: 6.0d
-			y: 4.0d
+			y: 1.0d
 			subtitle: "It exchanges stuff"
 			description: [
 				"Quickly swap blocks in an area without having to break and manually place each one. Enchant with Silk Touch to work with delicate blocks such as glass."
@@ -894,7 +898,7 @@
 				}
 			}
 			x: 7.0d
-			y: 3.5d
+			y: 1.0d
 			subtitle: "It copies and pastes stuff"
 			description: [
 				"A powerful tool that allows copying large areas and rebuilding them instantly elsewhere, making short work of repeating large sections of a build, such as a repeating wall pattern, or sprucing up an area with a few different prefab homes."
@@ -938,8 +942,8 @@
 					fuzzy: 1b
 				}
 			}
-			x: 7.5d
-			y: 2.5d
+			x: 8.0d
+			y: 0.5d
 			subtitle: "Guess what it does .."
 			description: [
 				"For those times when you simply want to clear a hole to build in, and don’t really care what happens to the blocks that were there."
@@ -978,8 +982,8 @@
 					Damage: 0
 				}
 			}
-			x: 4.5d
-			y: 2.5d
+			x: 5.5d
+			y: -0.5d
 			subtitle: "Accio"
 			description: [
 				"A modded classic, the Construction Wand simply extends the blocks that are already placed in the world. This can make it easy to build a wall by first laying the foundation, then building up with the wand. "
@@ -1051,8 +1055,8 @@
 					"botania:elven_unlock": 1b
 				}
 			}
-			x: 6.0d
-			y: -2.5d
+			x: -6.0d
+			y: 4.0d
 			shape: "gear"
 			subtitle: "Magical building technologies "
 			description: [
@@ -1062,6 +1066,7 @@
 				""
 				"The connected quests will have a brief description of what each rod does. However, for more detailed information please refer back to your Lexica Botania."
 			]
+			invisible: true
 			id: "3F1801BBAF8A29FD"
 			tasks: [{
 				id: "363364A832F21FEC"
@@ -1083,8 +1088,8 @@
 				Count: 1b
 				tag: { }
 			}
-			x: 7.0d
-			y: -3.5d
+			x: -5.0d
+			y: 3.0d
 			subtitle: "Built upon solid foundations"
 			description: [
 				"This rods allows you to swap any block in the world with the selected block at the cost of Mana."
@@ -1107,15 +1112,15 @@
 				type: "command"
 				title: "Rare Botania Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/botania/rare"
 				player_command: false
 			}]
 		}
 		{
 			title: "Rod of the Depths"
 			icon: "botania:cobble_rod"
-			x: 5.0d
-			y: -3.5d
+			x: -7.0d
+			y: 3.0d
 			subtitle: "Off to a rocky start"
 			description: ["Places Cobblestone Blocks at the cost of some Mana"]
 			dependencies: ["3F1801BBAF8A29FD"]
@@ -1130,15 +1135,15 @@
 				type: "command"
 				title: "Rare Botania Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/botania/rare"
 				player_command: false
 			}]
 		}
 		{
 			title: "Rod of the Lands"
 			icon: "botania:dirt_rod"
-			x: 7.5d
-			y: -2.5d
+			x: -4.5d
+			y: 4.0d
 			subtitle: "Quit mucking about"
 			description: ["Places Dirt Blocks at the cost of some Mana"]
 			dependencies: ["3F1801BBAF8A29FD"]
@@ -1153,15 +1158,15 @@
 				type: "command"
 				title: "Rare Botania Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/botania/rare"
 				player_command: false
 			}]
 		}
 		{
 			title: "Rod of the Terra Firma"
 			icon: "botania:terraform_rod"
-			x: 7.0d
-			y: -1.5d
+			x: -5.0d
+			y: 5.0d
 			subtitle: "We can move mountains"
 			description: ["With a bit of practice, the Rod of the Terra Firma can help to quickly transform a landscape. When activated, dirt is formed below you to raise the ground up to your feet, while land above you is lowered to your level, making mountains or levelling an area in moments. "]
 			dependencies: ["3F1801BBAF8A29FD"]
@@ -1176,7 +1181,7 @@
 				type: "command"
 				title: "Legendary Botania Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/botania/legendary"
 				player_command: false
 			}]
 		}
@@ -1243,7 +1248,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/create/rare"
 				player_command: false
 			}]
 		}
@@ -1272,7 +1277,7 @@
 				type: "command"
 				title: "Legendary Create Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/create/legendary"
 				player_command: false
 			}]
 		}
@@ -1322,8 +1327,8 @@
 		{
 			title: "Rod of the Highlands"
 			icon: "botania:skydirt_rod"
-			x: 4.5d
-			y: -2.5d
+			x: -7.5d
+			y: 4.0d
 			subtitle: "Nerdpole not included"
 			description: ["Places blocks of Dirt in the air, which makes it the perfect tool for floating builds without needing to pillar up from the ground."]
 			dependencies: ["3F1801BBAF8A29FD"]
@@ -1338,7 +1343,7 @@
 				type: "command"
 				title: "Legendary Botania Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/botania/legendary"
 				player_command: false
 			}]
 		}
@@ -1349,8 +1354,8 @@
 				Count: 1b
 				tag: { }
 			}
-			x: 5.0d
-			y: -1.5d
+			x: -7.0d
+			y: 5.0d
 			subtitle: "So anyway, I started blasting"
 			description: [
 				"A versatile tool in its own right, when paired with an Entropic Lens the Mana Blaster becomes something akin to a long-range sculpting tool, blasting away blocks to help form natural looking shapes. "
@@ -1384,14 +1389,14 @@
 				type: "command"
 				title: "Legendary Botania Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/botania/legendary"
 				player_command: false
 			}]
 		}
 		{
 			icon: "botania:sextant"
-			x: 6.0d
-			y: -1.0d
+			x: -6.0d
+			y: 5.5d
 			subtitle: "What did you call me?!"
 			description: ["Renders a ghostly circle of whatever radius is desired, making it an excellent tool to plot out rounded builds. "]
 			dependencies: ["3F1801BBAF8A29FD"]
@@ -1406,7 +1411,7 @@
 				type: "command"
 				title: "Rare Botania Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/botania/rare"
 				player_command: false
 			}]
 		}
@@ -1417,8 +1422,8 @@
 				Count: 1b
 				tag: { }
 			}
-			x: 6.0d
-			y: -4.0d
+			x: -6.0d
+			y: 2.5d
 			subtitle: "Be there, or be Square"
 			description: [
 				"Excellent for rapid building, the Worldshaper’s Astrolabe can be used to place blocks in a 3x3 up to an 11x11 square, either vertically or horizontally. "
@@ -1441,7 +1446,7 @@
 				type: "command"
 				title: "Legendary Botania Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/botania/legendary"
 				player_command: false
 			}]
 		}

@@ -1,0 +1,22 @@
+{
+    "parent": "immersiveengineering:main/mb_cokeoven",
+    "criteria": {
+        "form_multiblock": {
+            "conditions": {
+                "item": { "items": ["immersiveengineering:hammer"] },
+                "multiblock": "immersiveengineering:multiblocks/improved_blast_furnace"
+            },
+            "trigger": "immersiveengineering:multiblock_formed"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": { "translate": "advancement.immersiveengineering.mb_blastfurnace.desc" },
+        "frame": "task",
+        "hidden": false,
+        "icon": { "item": "immersiveengineering:advanced_blast_furnace" },
+        "show_toast": true,
+        "title": { "translate": "advancement.immersiveengineering.mb_blastfurnace" }
+    },
+    "requirements": [["form_multiblock"]]
+}

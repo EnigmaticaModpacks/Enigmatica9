@@ -2,6 +2,24 @@
 
 const armored_mobs = {
     minecraft: {
+        blaze: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        effects: [{ type: 'minecraft:strength', amplifier: 1 }],
+                        max_health: 40,
+                        chest: {
+                            item: Item.of(
+                                'twilightforest:fiery_chestplate',
+                                `{${reactive.burning_aura},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 1),
+                            drop_rate: 0.0
+                        }
+                    }
+                }
+            ]
+        },
         iron_golem: {
             equipment: [
                 {
@@ -30,16 +48,15 @@ const armored_mobs = {
                             level: { min: 10, max: 20 },
                             treasure: false
                         },
+                        head: { item: 'hexerei:witch_helmet', drop_rate: 0.085 },
                         chest: {
                             item: Item.of(
-                                'minecraft:leather_chestplate',
+                                'hexerei:witch_chestplate',
                                 `{display:{color:2624321},${reactive.life_link},${enchant_glint.blank}}`
                             ).enchant('ars_nouveau:reactive', 3),
                             drop_rate: 0.085
-                        }
-                        // head: 'hexerei:witch_helmet',
-                        // chest: 'hexerei:witch_chestplate',
-                        // feet: 'hexerei:witch_boots'
+                        },
+                        feet: { item: 'hexerei:witch_boots', drop_rate: 0.085 }
                     }
                 }
             ]
@@ -58,13 +75,12 @@ const armored_mobs = {
                         },
                         chest: {
                             item: Item.of(
-                                'minecraft:leather_chestplate',
+                                'hexerei:witch_chestplate',
                                 `{display:{color:2624321},${reactive.life_link},${enchant_glint.blank}}`
                             ).enchant('ars_nouveau:reactive', 3),
                             drop_rate: 0.085
-                        }
-                        // chest: 'hexerei:witch_chestplate',
-                        // feet: 'hexerei:witch_boots'
+                        },
+                        feet: { item: 'hexerei:witch_boots', drop_rate: 0.085 }
                     }
                 }
             ]
@@ -457,7 +473,7 @@ const armored_mobs = {
                             drop_rate: 0.085
                         },
                         offhand: {
-                            item: Item.of('minecraft:tipped_arrow', '{Potion:"apotheosis:long_wither"}'),
+                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.wither_long),
                             drop_rate: 0.085
                         }
                     }
@@ -807,6 +823,19 @@ const armored_mobs = {
                 }
             ]
         },
+        mist_wolf: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        effects: [
+                            { type: 'ars_nouveau:shielding', amplifier: 2 },
+                            { type: 'minecraft:strength', amplifier: 1 }
+                        ]
+                    }
+                }
+            ]
+        },
         lich: {
             equipment: [
                 {
@@ -853,6 +882,22 @@ const armored_mobs = {
                             item: Item.of('blue_skies:aquite_boots', default_nbt),
                             drop_rate: 0.085
                         }
+                    }
+                }
+            ]
+        },
+        carminite_golem: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        effects: [
+                            { type: 'ars_nouveau:shielding', amplifier: 2 },
+                            { type: 'minecraft:strength', amplifier: 2 },
+                            { type: 'minecraft:resistance', amplifier: 2 },
+                            { type: 'minecraft:regeneration', amplifier: 1 }
+                        ],
+                        max_health: 200
                     }
                 }
             ]
@@ -965,6 +1010,327 @@ const armored_mobs = {
                             ).enchant('ars_nouveau:reactive', 4)
                         },
                         drop_rate: 0.0
+                    }
+                }
+            ]
+        }
+    },
+    thermal: {
+        blizz: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        effects: [{ type: 'cofh_core:panacea', amplifier: 1 }],
+                        max_health: 40,
+                        chest: {
+                            item: Item.of(
+                                'twilightforest:yeti_chesplate',
+                                `{${reactive.bounce_freeze},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 1),
+                            drop_rate: 0.0
+                        }
+                    }
+                }
+            ]
+        },
+        basalz: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        effects: [{ type: 'cofh_core:explosion_resistance', amplifier: 1 }],
+                        max_health: 40,
+                        chest: {
+                            item: Item.of(
+                                'pneumaticcraft:compressed_iron_chestplate',
+                                `{${reactive.earth_snare},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 1),
+                            drop_rate: 0.0
+                        }
+                    }
+                }
+            ]
+        },
+        blitz: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        effects: [
+                            { type: 'minecraft:speed', amplifier: 1 },
+                            { type: 'cofh_core:lightning_resistance', amplifier: 1 }
+                        ],
+                        max_health: 40,
+                        chest: {
+                            item: Item.of(
+                                'minecraft:chainmail_chestplate',
+                                `{${reactive.orbit_lightning},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 3),
+                            drop_rate: 0.0
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    hexerei: {
+        crow: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        max_health: 20
+                    }
+                }
+            ]
+        }
+    },
+    occultism: {
+        wild_hunt_wither_skeleton: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        max_health: 100,
+                        effects: [
+                            { type: 'minecraft:strength', amplifier: 2 },
+                            { type: 'minecraft:resistance', amplifier: 2 },
+                            { type: 'minecraft:speed', amplifier: 2 }
+                        ],
+                        enchant: {
+                            chance: 1.0,
+                            level: { min: 20, max: 30 },
+                            treasure: false
+                        },
+                        head: {
+                            item: Item.of('pneumaticcraft:compressed_iron_helmet', default_nbt),
+                            drop_rate: 0.05
+                        },
+                        chest: {
+                            item: Item.of('pneumaticcraft:compressed_iron_chestplate', default_nbt),
+                            drop_rate: 0.05
+                        },
+                        legs: {
+                            item: Item.of('pneumaticcraft:compressed_iron_leggings', default_nbt),
+                            drop_rate: 0.05
+                        },
+                        feet: {
+                            item: Item.of('pneumaticcraft:compressed_iron_boots', default_nbt),
+                            drop_rate: 0.05
+                        },
+                        mainhand: {
+                            item: Item.of(
+                                'ars_nouveau:enchanters_sword',
+                                `{${enchanters_sword.hex_blade},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.0
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:shield', shield_nbt.dragon_eye),
+                            drop_rate: 0.0
+                        }
+                    }
+                }
+            ]
+        },
+        wild_hunt_skeleton: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        max_health: 75,
+                        effects: [
+                            { type: 'minecraft:speed', amplifier: 2 },
+                            { type: 'minecraft:fire_resistance', amplifier: 1 }
+                        ],
+                        enchant: {
+                            chance: 1.0,
+                            level: { min: 10, max: 30 },
+                            treasure: false
+                        },
+                        head: {
+                            item: Item.of(
+                                'minecraft:leather_helmet',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.005
+                        },
+                        chest: {
+                            item: Item.of(
+                                'minecraft:leather_chestplate',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.005
+                        },
+                        legs: {
+                            item: Item.of(
+                                'minecraft:leather_leggings',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.005
+                        },
+                        feet: {
+                            item: Item.of(
+                                'minecraft:leather_boots',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.005
+                        },
+                        mainhand: {
+                            item: Item.of('minecraft:bow', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.wither_long),
+                            drop_rate: 0.085
+                        },
+                        summons: [{ mob: 'twilightforest:mist_wolf', count: { min: 1, max: 2 }, spread: 5 }]
+                    }
+                }
+            ]
+        },
+        possessed_enderman: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        max_health: 80,
+                        enchant: {
+                            chance: 1.0,
+                            level: { min: 20, max: 30 },
+                            treasure: false
+                        },
+                        head: {
+                            item: Item.of('blue_skies:charoite_helmet', `{${enchant_glint.blank}}`),
+                            drop_rate: 0.0
+                        },
+                        chest: {
+                            item: Item.of(
+                                'blue_skies:charoite_chestplate',
+                                `{${reactive.vanish},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 3),
+                            drop_rate: 0.0
+                        },
+                        legs: {
+                            item: Item.of('blue_skies:charoite_leggings', `{${enchant_glint.blank}}`),
+                            drop_rate: 0.0
+                        },
+                        feet: {
+                            item: Item.of('blue_skies:charoite_boots', `{${enchant_glint.blank}}`),
+                            drop_rate: 0.0
+                        },
+                        mainhand: {
+                            item: Item.of(
+                                'ars_nouveau:enchanters_sword',
+                                `{${enchanters_sword.dispel},${enchant_glint.blank}}`
+                            ).enchant('minecraft:knockback', 2),
+                            drop_rate: 0.0
+                        },
+                        summons: [{ mob: 'minecraft:enderman', count: { min: 5, max: 10 }, spread: 5 }]
+                    }
+                }
+            ]
+        },
+        possessed_skeleton: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        max_health: 75,
+                        effects: [
+                            { type: 'minecraft:speed', amplifier: 2 },
+                            { type: 'cofh_core:explosion_resistance', amplifier: 1 }
+                        ],
+                        enchant: {
+                            chance: 1.0,
+                            level: { min: 10, max: 20 },
+                            treasure: false
+                        },
+                        chest: {
+                            item: Item.of(
+                                'minecraft:leather_chestplate',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.005
+                        },
+                        legs: {
+                            item: Item.of(
+                                'minecraft:leather_leggings',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.005
+                        },
+                        feet: {
+                            item: Item.of(
+                                'minecraft:leather_boots',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.005
+                        },
+                        mainhand: {
+                            item: Item.of('minecraft:bow', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.blasting),
+                            drop_rate: 0.085
+                        }
+                    }
+                }
+            ]
+        },
+        afrit_wild: {
+            equipment: [
+                {
+                    weight: 100,
+                    set: {
+                        max_health: 200,
+                        effects: [
+                            { type: 'minecraft:speed', amplifier: 2 },
+                            { type: 'cofh_core:explosion_resistance', amplifier: 1 },
+                            { type: 'minecraft:fire_resistance', amplifier: 1 }
+                        ],
+                        enchant: {
+                            chance: 1.0,
+                            level: { min: 40, max: 50 },
+                            treasure: false
+                        },
+                        head: {
+                            item: Item.of(
+                                'twilightforest:fiery_helmet',
+                                `{${reactive.burning_aura},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 1),
+                            drop_rate: 0.0
+                        },
+                        chest: {
+                            item: Item.of(
+                                'twilightforest:fiery_chestplate',
+                                `{${reactive.bounce_lightning},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 1),
+                            drop_rate: 0.0
+                        },
+                        legs: {
+                            item: Item.of(
+                                'twilightforest:fiery_leggings',
+                                `{${reactive.poison_bounce},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 1),
+                            drop_rate: 0.0
+                        },
+                        feet: {
+                            item: Item.of(
+                                'twilightforest:fiery_boots',
+                                `{${reactive.hex_zone},${enchant_glint.blank}}`
+                            ).enchant('ars_nouveau:reactive', 1),
+                            drop_rate: 0.0
+                        },
+                        mainhand: {
+                            item: Item.of(
+                                'ars_nouveau:enchanters_sword',
+                                `{${enchanters_sword.hex_blade},${enchant_glint.blank}}`
+                            ).enchant('minecraft:knockback', 2),
+                            drop_rate: 0.0
+                        }
                     }
                 }
             ]

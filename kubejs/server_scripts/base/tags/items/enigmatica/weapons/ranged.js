@@ -1,5 +1,5 @@
 ServerEvents.tags('item', (event) => {
-    const items = [
+    event.get('enigmatica:weapons/ranged').add([
         '#forge:tools/bows',
         '#forge:tools/tridents',
         // 'botania:flare_chakram',
@@ -12,21 +12,11 @@ ServerEvents.tags('item', (event) => {
         'immersiveengineering:chemthrower',
         'immersiveengineering:railgun',
         'immersiveengineering:revolver',
-        // 'industrialforegoing:infinity_trident',
+        'industrialforegoing:infinity_trident',
         // 'meetyourfight:phantasmal_rifle',
         // 'meetyourfight:cocktail_shotgun',
         'mekanism:flamethrower',
         'pneumaticcraft:micromissiles',
         'pneumaticcraft:minigun'
-    ];
-    const exceptions = [];
-
-    // const tagGroups = ['enigmatica:weapons', 'enigmatica:weapons/ranged'];
-
-    // tagGroups.forEach((tagGroup) => {
-    //     event.get(tagGroup).add(items).remove(exceptions);
-    // });
-
-    event.get('enigmatica:weapons').add(items).remove(exceptions);
-    event.get('enigmatica:weapons/ranged').add(items).remove(exceptions);
+    ]);
 });

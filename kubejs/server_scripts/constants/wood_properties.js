@@ -1,6 +1,6 @@
 //priority: 1000
 
-const sawdust = 'mekanism:sawdust'; //AlmostUnified.getPreferredItemForTag('#forge:sawdust')
+const sawdust = 'thermal:sawdust';
 const bark = 'farmersdelight:tree_bark';
 
 // Used to populate the wood_variants_constructor constant - Add variants here to enable compat with various cutting mechanics.
@@ -67,9 +67,9 @@ var wood_variants_constructor = [
     'twilightforest:time',
     'twilightforest:transformation',
     'twilightforest:mining',
-    'twilightforest:sorting'
-    // 'hexerei:mahogany',
-    // 'hexerei:willow'
+    'twilightforest:sorting',
+    'hexerei:mahogany',
+    'hexerei:willow'
 ];
 
 const wood_properties = [];

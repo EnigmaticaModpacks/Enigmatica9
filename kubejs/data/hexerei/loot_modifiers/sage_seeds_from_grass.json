@@ -1,0 +1,4 @@
+{
+    "type": "hexerei:sage_seeds_from_grass",
+    "conditions": [{ "condition": "forge:false" }]
+}

@@ -1,5 +1,5 @@
 ServerEvents.tags('item', (event) => {
-    const items = [
+    event.get('enigmatica:containers/bags').add([
         /bit_bag/,
         /sophisticatedbackpacks:.*backpack/,
         // 'botania:bauble_box',
@@ -7,20 +7,11 @@ ServerEvents.tags('item', (event) => {
         // 'botania:flower_bag',
         'sophisticatedbackpacks:backpack',
         'industrialforegoing:infinity_backpack',
-        // 'thermal:satchel',
+        'thermal:satchel',
         'occultism:satchel',
-        // 'hexerei:small_satchel',
-        // 'hexerei:medium_satchel',
-        // 'hexerei:large_satchel',
+        'hexerei:small_satchel',
+        'hexerei:medium_satchel',
+        'hexerei:large_satchel',
         '#create:toolboxes'
-    ];
-
-    // const tagGroups = ['enigmatica:containers', 'enigmatica:containers/bag'];
-
-    // tagGroups.forEach((tagGroup) => {
-    //     event.get(tagGroup).add(items);
-    // });
-
-    event.get('enigmatica:containers').add(items);
-    event.get('enigmatica:containers/bags').add(items);
+    ]);
 });

@@ -13,7 +13,7 @@
 			icon: "create:wrench"
 			x: 7.0d
 			y: 0.0d
-			shape: "gear"
+			shape: "hexagon"
 			description: [
 				"Welcome to Create! At its core, Create follows the same primary purpose as Vanilla Redstone: Give the player items to enable fanciful creations. "
 				""
@@ -25,7 +25,6 @@
 				""
 				"~MuteTiefling \\& Kanzaji"
 			]
-			optional: true
 			min_width: 250
 			id: "0000000000000C40"
 			tasks: [{
@@ -151,7 +150,7 @@
 					type: "command"
 					title: "Epic Create Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 					player_command: false
 				}
 			]
@@ -179,7 +178,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -247,7 +246,7 @@
 					type: "command"
 					title: "Rare Create Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 					player_command: false
 				}
 				{
@@ -300,7 +299,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				player_command: false
 			}]
 		}
@@ -335,7 +334,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				player_command: false
 			}]
 		}
@@ -360,7 +359,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				player_command: false
 			}]
 		}
@@ -402,7 +401,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				player_command: false
 			}]
 		}
@@ -436,7 +435,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				player_command: false
 			}]
 		}
@@ -461,7 +460,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				player_command: false
 			}]
 		}
@@ -494,7 +493,7 @@
 					type: "command"
 					title: "Legendary Create Loot Box"
 					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
 					player_command: false
 				}
 			]
@@ -527,7 +526,7 @@
 				type: "command"
 				title: "Epic Create Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				player_command: false
 			}]
 		}
@@ -591,7 +590,7 @@
 				type: "command"
 				title: "Epic Create Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				player_command: false
 			}]
 		}
@@ -616,7 +615,7 @@
 				type: "command"
 				title: "Epic Create Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				player_command: false
 			}]
 		}
@@ -644,7 +643,7 @@
 				type: "command"
 				title: "Legendary Create Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
 				player_command: false
 			}]
 		}
@@ -669,7 +668,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				player_command: false
 			}]
 		}
@@ -703,7 +702,7 @@
 				type: "command"
 				title: "Legendary Create Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
 				player_command: false
 			}]
 		}
@@ -744,7 +743,7 @@
 				type: "command"
 				title: "Epic Create Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				player_command: false
 			}]
 		}
@@ -786,7 +785,7 @@
 				type: "command"
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				player_command: false
 			}]
 		}
@@ -818,7 +817,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				player_command: false
 			}]
 		}
@@ -853,7 +852,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				player_command: false
 			}]
 		}
@@ -880,7 +879,7 @@
 				type: "command"
 				title: "Epic Create Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				player_command: false
 			}]
 		}
@@ -907,7 +906,7 @@
 				type: "command"
 				title: "Legendary Create Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
 				player_command: false
 			}]
 		}
@@ -942,7 +941,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				player_command: false
 			}]
 		}
@@ -971,7 +970,7 @@
 				type: "command"
 				title: "Epic Create Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				player_command: false
 			}]
 		}
@@ -992,7 +991,7 @@
 				type: "command"
 				title: "Legendary Create Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
 				player_command: false
 			}]
 		}
@@ -1020,7 +1019,7 @@
 				type: "command"
 				title: "Epic Create Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				player_command: false
 			}]
 		}
@@ -1061,7 +1060,7 @@
 				type: "command"
 				title: "Epic Create Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				player_command: false
 			}]
 		}
@@ -1082,7 +1081,7 @@
 				type: "command"
 				title: "Epic Create Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				player_command: false
 			}]
 		}
@@ -1206,7 +1205,7 @@
 					type: "command"
 					title: "Rare Create Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 					player_command: false
 				}
 				{
@@ -1244,7 +1243,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				player_command: false
 			}]
 		}
@@ -1269,7 +1268,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				player_command: false
 			}]
 		}
@@ -1320,7 +1319,7 @@
 				type: "command"
 				title: "Epic Create Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				player_command: false
 			}]
 		}
@@ -1341,7 +1340,7 @@
 				type: "command"
 				title: "Epic Create Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				player_command: false
 			}]
 		}
@@ -1362,7 +1361,7 @@
 				type: "command"
 				title: "Epic Create Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				player_command: false
 			}]
 		}
@@ -1387,7 +1386,7 @@
 				type: "command"
 				title: "Epic Create Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				player_command: false
 			}]
 		}
@@ -1414,7 +1413,7 @@
 				type: "command"
 				title: "Epic Create Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				player_command: false
 			}]
 		}
@@ -1453,7 +1452,7 @@
 				type: "command"
 				title: "Epic Create Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				player_command: false
 			}]
 		}
@@ -1480,7 +1479,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				player_command: false
 			}]
 		}
@@ -1505,7 +1504,7 @@
 				type: "command"
 				title: "Legendary Create Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
 				player_command: false
 			}]
 		}
@@ -1534,7 +1533,7 @@
 				type: "command"
 				title: "Epic Create Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				player_command: false
 			}]
 		}
@@ -1559,7 +1558,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				player_command: false
 			}]
 		}
@@ -1584,7 +1583,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				player_command: false
 			}]
 		}
@@ -1609,7 +1608,7 @@
 				type: "command"
 				title: "Legendary Create Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
 				player_command: false
 			}]
 		}
@@ -1642,7 +1641,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				player_command: false
 			}]
 		}
@@ -1732,7 +1731,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				player_command: false
 			}]
 		}
@@ -1770,7 +1769,7 @@
 					type: "command"
 					title: "Legendary Create Loot Box"
 					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
 					player_command: false
 				}
 				{
@@ -1824,7 +1823,7 @@
 				type: "command"
 				title: "Legendary Create Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
 				player_command: false
 			}]
 		}
@@ -1882,7 +1881,7 @@
 				type: "command"
 				title: "Epic Create Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_create_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				player_command: false
 			}]
 		}

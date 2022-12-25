@@ -539,6 +539,13 @@ const dye_sources = [
         tertiary: 'minecraft:green_dye'
     },
     {
+        input: 'byg:lollipop_flower',
+        type: 'small',
+        primary: 'minecraft:yellow_dye',
+        secondary: 'minecraft:orange_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
         input: 'byg:magenta_amaranth',
         type: 'small',
         primary: 'minecraft:magenta_dye',
@@ -992,6 +999,16 @@ const dye_sources = [
         type: 'small',
         primary: 'minecraft:purple_dye',
         secondary: 'minecraft:purple_dye',
+        tertiary: 'minecraft:purple_dye'
+    },
+
+    // Hexerei
+
+    {
+        input: 'hexerei:belladonna_berries',
+        type: 'small',
+        primary: 'minecraft:black_dye',
+        secondary: 'minecraft:black_dye',
         tertiary: 'minecraft:purple_dye'
     }
 ];
