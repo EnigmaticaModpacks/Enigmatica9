@@ -20,7 +20,7 @@
 			icon: "occultism:dictionary_of_spirits"
 			x: 13.0d
 			y: -0.5d
-			shape: "gear"
+			shape: "hexagon"
 			description: [
 				"With Occultism, the Otherworld and its denizens are at your beck and call. From the simple Familiars to grant a variety of combat bonuses, to Ore Crushing Spirits for early ore processing and powerful Djinni Miners to gather valuable materials at your behest, Occultism has something for everyone. "
 				""

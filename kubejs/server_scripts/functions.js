@@ -1,4 +1,5 @@
 //priority: 1005
+const PowahAPI = Java.loadClass('owmii.powah.api.PowahAPI');
 
 const unificationBlacklistEntry = (material, type) => {
     return { material: material, type: type };

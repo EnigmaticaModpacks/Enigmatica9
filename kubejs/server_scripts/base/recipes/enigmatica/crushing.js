@@ -40,11 +40,11 @@ ServerEvents.recipes((event) => {
         // Mekanism
         event
             .custom({
-                type: 'mekanism:enriching',
+                type: 'mekanism:crushing',
                 input: { ingredient: Ingredient.of(recipe.input).toJson() },
                 output: Item.of(recipe.outputs.primary.item, recipe.outputs.primary.count).toJson()
             })
-            .id(`${id_prefix}mekanism_enriching/${recipe.id_suffix}`);
+            .id(`${id_prefix}mekanism_crushing/${recipe.id_suffix}`);
 
         // Immersive Engineering
         let immersiveengineering_secondaries = [];
@@ -100,12 +100,14 @@ ServerEvents.recipes((event) => {
             .id(`${id_prefix}create_milling/${recipe.id_suffix}`);
 
         // Thermal
-        event.custom({
-            type: 'thermal:pulverizer',
-            ingredient: Ingredient.of(recipe.input).toJson(),
-            result: outputs,
-            experience: recipe.experience
-        });
+        event
+            .custom({
+                type: 'thermal:pulverizer',
+                ingredient: Ingredient.of(recipe.input).toJson(),
+                result: outputs,
+                experience: recipe.experience
+            })
+            .id(`${id_prefix}thermal_pulverizer/${recipe.id_suffix}`);
     };
 
     recipes.forEach((recipe) => {

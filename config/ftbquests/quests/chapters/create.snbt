@@ -13,7 +13,7 @@
 			icon: "create:wrench"
 			x: 7.0d
 			y: 0.0d
-			shape: "gear"
+			shape: "hexagon"
 			description: [
 				"Welcome to Create! At its core, Create follows the same primary purpose as Vanilla Redstone: Give the player items to enable fanciful creations. "
 				""
@@ -25,7 +25,6 @@
 				""
 				"~MuteTiefling \\& Kanzaji"
 			]
-			optional: true
 			min_width: 250
 			id: "0000000000000C40"
 			tasks: [{
