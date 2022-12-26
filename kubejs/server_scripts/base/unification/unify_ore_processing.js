@@ -28,10 +28,10 @@ function auto_fortune(material, properties, event, id_prefix) {
         return
     }
     // Auto Fortune for Metals
-    let input_ingredient = Ingredient.of(`#forge:ores/${material}`)
-    let output_itemStack = AlmostUnified.getPreferredItemForTag(`forge:raw_materials/${material}`)
-    if (output_itemStack.isEmpty()) {
-        output_itemStack = Item.of(Ingredient.of(`#forge:raw_materials/${material}`).getItemIds()[0])
+    let ore_ingredient = Ingredient.of(`#forge:ores/${material}`)
+    let raw_itemStack = AlmostUnified.getPreferredItemForTag(`forge:raw_materials/${material}`)
+    if (raw_itemStack.isEmpty()) {
+        raw_itemStack = Item.of(Ingredient.of(`#forge:raw_materials/${material}`).getItemIds()[0])
         if (localDebug) console.warn(" // Ore Processing Rework // Material \"" + material + "\" uses fallback output item for metal Auto-Fortune!")
     }
 
@@ -40,12 +40,12 @@ function auto_fortune(material, properties, event, id_prefix) {
     // Create Crushing Wheels (1,33x)
     recipes.push({
         type: 'create:crushing',
-        ingredients: [input_ingredient.toJson()],
+        ingredients: [ore_ingredient.toJson()],
         processingTime: properties[material].oreProcessing.create.processingTime,
         results: [
-            output_itemStack.toJson(),
+            raw_itemStack.toJson(),
             {
-                item: output_itemStack.getId(),
+                item: raw_itemStack.getId(),
                 chance: 0.33
             },
             {
@@ -59,8 +59,8 @@ function auto_fortune(material, properties, event, id_prefix) {
     // Mekanism Enrichment (1.25x)
     recipes.push({
         type: 'mekanism:enriching',
-        input: { ingredient: input_ingredient.toJson(), amount: 4 },
-        output: Item.of(output_itemStack, 5).toJson(),
+        input: { ingredient: ore_ingredient.toJson(), amount: 4 },
+        output: Item.of(raw_itemStack, 5).toJson(),
         id: `${id_prefix}mekanism/enriching/auto_fortune_for_${material}`
     })
 
@@ -68,8 +68,8 @@ function auto_fortune(material, properties, event, id_prefix) {
     recipes.push({
         type: 'mekanism:purifying',
         chemicalInput: { amount: 1, gas: 'mekanism:oxygen' },
-        itemInput: { amount: 2, ingredient: input_ingredient.toJson() },
-        output: Item.of(output_itemStack, 3).toJson(),
+        itemInput: { amount: 2, ingredient: ore_ingredient.toJson() },
+        output: Item.of(raw_itemStack, 3).toJson(),
         id: `${id_prefix}mekanism/purifying/auto_fortune_for_${material}`
     })
 
@@ -77,16 +77,16 @@ function auto_fortune(material, properties, event, id_prefix) {
     recipes.push({
         type: 'mekanism:injecting',
         chemicalInput: { amount: 1, gas: 'mekanism:hydrofluoric_acid' },
-        itemInput: { ingredient: input_ingredient.toJson() },
-        output: Item.of(output_itemStack, 2).toJson(),
+        itemInput: { ingredient: ore_ingredient.toJson() },
+        output: Item.of(raw_itemStack, 2).toJson(),
         id: `${id_prefix}mekanism/chemical_injecting/auto_fortune_for_${material}`
     })
 
     // Thermal Pulverizer (1,25x)
     recipes.push({
         type: 'thermal:pulverizer',
-        ingredient: input_ingredient.toJson(),
-        result: [{ item: output_itemStack.getId(), chance: 1.25 }],
+        ingredient: ore_ingredient.toJson(),
+        result: [{ item: raw_itemStack.getId(), chance: 1.25 }],
         energy: 10000,
         id: `${id_prefix}thermal/pulverizer/auto_fortune_for_${material}`
     })
@@ -94,8 +94,8 @@ function auto_fortune(material, properties, event, id_prefix) {
     // Occultism (1 -> 1)
     recipes.push({
         type: 'occultism:crushing',
-        ingredient: input_ingredient.toJson(),
-        result: Item.of(output_itemStack, 1).toJson(),
+        ingredient: ore_ingredient.toJson(),
+        result: Item.of(raw_itemStack, 1).toJson(),
         crushing_time: 60,
         ignore_crushing_multiplier: true,
         id: `${id_prefix}occultism/crushing/auto_fortune_for_${material}`
@@ -105,12 +105,12 @@ function auto_fortune(material, properties, event, id_prefix) {
     recipes.push({
         type: 'immersiveengineering:crusher',
         energy: 20000,
-        input: input_ingredient.toJson(),
-        result: { base_ingredient: { item: output_itemStack.getId() }, count: 1 },
+        input: ore_ingredient.toJson(),
+        result: { base_ingredient: { item: raw_itemStack.getId() }, count: 1 },
         secondaries: [
             {
                 chance: 0.5,
-                output: Item.of(output_itemStack, 1).toJson()
+                output: Item.of(raw_itemStack, 1).toJson()
             }
         ],
         id: `${id_prefix}ie/crusher/auto_fortune_for_${material}`
@@ -119,17 +119,17 @@ function auto_fortune(material, properties, event, id_prefix) {
     // Ars Noveau Crushing Spell (1,5x)
     recipes.push({
         type: 'ars_nouveau:crush',
-        input: input_ingredient.toJson(),
+        input: ore_ingredient.toJson(),
         output: [
             {
                 chance: 1,
                 count: 1,
-                item: output_itemStack.getId()
+                item: raw_itemStack.getId()
             },
             {
                 chance: 0.5,
                 count: 1,
-                item: output_itemStack.getId()
+                item: raw_itemStack.getId()
             },
             {
                 chance: 0.75,
