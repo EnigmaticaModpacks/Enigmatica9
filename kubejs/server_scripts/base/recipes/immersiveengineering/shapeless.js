@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    const id_prefix = 'immersiveengineering:base/shapeless/';
+    const id_prefix = 'enigmatica:base/immersiveengineering/shapeless/';
 
     const recipes = [
         {
