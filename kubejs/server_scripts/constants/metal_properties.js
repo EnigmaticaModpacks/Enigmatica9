@@ -225,17 +225,43 @@ const metal_properties = {
         meltingPoint: 875
     }, 
     // TODO, Add  melting Points for those metals:
-    brass: {},
-    bronze :{},
-    constantan: {},
-    electrum: {},
-    infused_iron: {},
-    invar: {},
-    refined_glowstone: {},
-    refined_obsidian: {},
-    rose_gold: {},
-    sky_ingot: {},
-    soul_steel: {},
-    steel: {},
-    tainted_gold: {}
+    brass: {
+        // meltingPoint: 1000
+    },
+    bronze :{
+        // meltingPoint: 1000
+    },
+    constantan: {
+        // meltingPoint: 1000
+    },
+    electrum: {
+        // meltingPoint: 1000
+    },
+    infused_iron: {
+        // meltingPoint: 1000
+    },
+    invar: {
+        // meltingPoint: 1000
+    },
+    refined_glowstone: {
+        // meltingPoint: 1000
+    },
+    refined_obsidian: {
+        // meltingPoint: 1000
+    },
+    rose_gold: {
+        // meltingPoint: 1000
+    },
+    sky_ingot: {
+        // meltingPoint: 1000
+    },
+    soul_steel: {
+        // meltingPoint: 1000
+    },
+    steel: {
+        // meltingPoint: 1000
+    },
+    tainted_gold: {
+        // meltingPoint: 1000
+    }
 };
