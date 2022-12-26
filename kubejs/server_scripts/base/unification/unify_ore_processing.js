@@ -1,10 +1,9 @@
 // Ore processing Unification script
-// This script uses metal_properties and gemProperties defined in metal_properties.js and gem_properties.js, which can be found in kubejs/constants folder
-// It takes a list of material and their properties, checks if it has "Ore Processing" field, and if so, creates recipes based on the properties provided.
-// It uses Almost Unified getPreferredItemForTag function to get all items, but because of how it works, it can sometimes return empty itemstack. If that happends, it tries to use any item present in that tag!
+// This script uses metal_properties and gemProperties defined in metal_properties.js and gem_properties.js, which can be found in kubejs/constants folder, to create all recipes required for processing raw and block versions of an Ore.
+// It uses Almost Unified getPreferredItemForTag() function to get output items, but because it only works for materials unified by AU, it can return empty itemstack for non-unified materials. If that happends, it tries to use any item present in provided tag.
 // This is not a problem for materials that return only one thing, however for materials that have 2 or more items returned in provided tag, it is, and it should be added to AU for unification.
 // Variable "localDebug" determines if any debugging information, like what material uses fallback output, or printing of recipes, is being executed, use with caution!
-let localDebug = false 
+let localDebug = false
 
 // Main Part
 ServerEvents.recipes((event) => {
@@ -170,6 +169,51 @@ function metal_ore_processing(material, properties, event, id_prefix) {
             dust_itemStack: AlmostUnified.getPreferredItemForTag(`forge:dusts/${secondary}`)
         }
     }
+    
+    // Fallback output checks:
+    if (crushed_ore_itemStack.isEmpty()) {
+        crushed_ore_itemStack = Item.of(Ingredient.of(`#create:crushed_ores/${material}`).getItemIds()[0])
+        if (localDebug) console.warn(" // Ore Processing Rework // Material \"" + material + "\" uses fallback output item (Crushed Ore) for metal processing!")
+    }
+    if (ingot_itemStack.isEmpty()) {
+        ingot_itemStack = Item.of(Ingredient.of(`#forge:ingots/${material}`).getItemIds()[0])
+        if (localDebug) console.warn(" // Ore Processing Rework // Material \"" + material + "\" uses fallback output item (Ingot) for metal processing!")
+    }
+    if (nugget_itemStack.isEmpty()) {
+        nugget_itemStack = Item.of(Ingredient.of(`#forge:nuggets/${material}`).getItemIds()[0])
+        if (localDebug) console.warn(" // Ore Processing Rework // Material \"" + material + "\" uses fallback output item (Nugget) for metal processing!")
+    }
+    if (dust_itemStack.isEmpty()) {
+        dust_itemStack = Item.of(Ingredient.of(`#forge:dusts/${material}`).getItemIds()[0])
+        if (localDebug) console.warn(" // Ore Processing Rework // Material \"" + material + "\" uses fallback output item (Dust) for metal processing!")
+    }
+    if (shard_itemStack.isEmpty()) {
+        shard_itemStack = Item.of(Ingredient.of(`#mekanism:shards${material}`).getItemIds()[0])
+        if (localDebug) console.warn(" // Ore Processing Rework // Material \"" + material + "\" uses fallback output item (Shard) for metal processing!")
+    }
+    if (clump_itemStack.isEmpty()) {
+        clump_itemStack = Item.of(Ingredient.of(`#mekanism:clumps/${material}`).getItemIds()[0])
+        if (localDebug) console.warn(" // Ore Processing Rework // Material \"" + material + "\" uses fallback output item (Clump) for metal processing!")
+    }
+    Object.keys(secondaries).forEach((secondary) => {
+        if (secondaries[secondary].isEmpty()) {
+            switch (secondary) {
+                case 'crushed_ore_itemStack':
+                    secondaries[secondary] = Item.of(Ingredient.of(`#create:crushed_ores/${secondary}`).getItemIds()[0])
+                    break
+                case 'ingot_itemStack':
+                    secondaries[secondary] = Item.of(Ingredient.of(`#forge:ingots/${secondary}`).getItemIds()[0])
+                    break
+                case 'nugget_itemStack':
+                    secondaries[secondary] = Item.of(Ingredient.of(`#forge:nuggets/${secondary}`).getItemIds()[0])
+                    break
+                case 'dust_itemStack':
+                    secondaries[secondary] = Item.of(Ingredient.of(`#forge:dusts/${secondary}`).getItemIds()[0])
+                    break
+            }
+            if (localDebug) console.warn(`// Ore Processing Rework // Material "${material}" uses fallback output for its secondary "${properties[material].oreProcessing.output.secondary}" (${secondary}) for metal processing!`)
+        }
+    })
 
     let recipes = []
     let recipe = {}
