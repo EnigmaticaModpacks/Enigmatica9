@@ -540,6 +540,11 @@ function gem_ore_processing(material, properties, event, id_prefix) {
         if (output_itemStack.isEmpty()) {
             output_itemStack = Item.of(Ingredient.of(`#forge:dusts/${material}`).getItemIds()[0])
             if (localDebug) console.warn(" // Ore Processing Rework // Material \"" + material + "\" uses fallback output item for gem processing! Type: Dust")
+            // OVERRIDE -> Ingredient.of('#tag').getItemIds() returns nothing at first launch at the time of writing this script, so for now, this "safety feature" doesn't exactly work...
+            // This is here to fix the issues with one problematic material -> Dimensional Shard, as it uses this fallback output as only material now.
+            if (material == 'dimensional') {
+                output_itemStack = Item.of('rftoolsbase:dimensionalshard')
+            }
         }
         break
         case("gem"):
