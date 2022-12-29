@@ -1,11 +1,6 @@
 ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/lychee/block_interacting/';
 
-    // Todo: Add sound effects to these with https://lycheetweaker.readthedocs.io/en/latest/post-action/#execute-command-execute
-    // https://www.digminecraft.com/game_commands/playsound_command.php
-
-    // Stone sound: block.stone.place
-    // certus sound:
     const recipes = [
         {
             item_in: { item: 'naturesaura:infused_iron_pickaxe' },
@@ -14,7 +9,12 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_cobblestone' },
                 { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 2 }
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
+                    hide: true
+                }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_cobblestone`
         },
@@ -25,7 +25,12 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'farmersdelight:rich_soil_farmland' },
                 { type: 'damage_item', damage: 25 },
-                { type: 'add_item_cooldown', s: 2 }
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.grass.place block @p ~ ~ ~',
+                    hide: true
+                }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/rich_soil_farmland`
         },
@@ -36,7 +41,12 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:moss_block' },
                 { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 2 }
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
+                    hide: true
+                }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/moss_block`
         },
@@ -47,7 +57,12 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'twilightforest:liveroot_block' },
                 { type: 'damage_item', damage: 125 },
-                { type: 'add_item_cooldown', s: 2 }
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.grass.place block @p ~ ~ ~',
+                    hide: true
+                }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/liveroot_block`
         },
@@ -58,7 +73,12 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_stone_bricks' },
                 { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 2 }
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
+                    hide: true
+                }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_stone_bricks`
         },
@@ -69,7 +89,12 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_stone_brick_wall' },
                 { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 2 }
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
+                    hide: true
+                }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_stone_brick_wall`
         },
@@ -80,7 +105,12 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_stone_brick_stairs' },
                 { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 2 }
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
+                    hide: true
+                }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_stone_brick_stairs`
         },
@@ -91,7 +121,12 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_cobblestone_stairs' },
                 { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 2 }
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
+                    hide: true
+                }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_cobblestone_stairs`
         },
@@ -102,7 +137,12 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_cobblestone_slab' },
                 { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 2 }
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
+                    hide: true
+                }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_cobblestone_slab`
         },
@@ -113,7 +153,12 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_cobblestone_wall' },
                 { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 2 }
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
+                    hide: true
+                }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_cobblestone_wall`
         },
@@ -124,7 +169,12 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'ae2:damaged_budding_quartz' },
                 { type: 'damage_item', damage: 200 },
-                { type: 'add_item_cooldown', s: 2 }
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
+                    hide: true
+                }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/damaged_budding_quartz`
         },
@@ -135,7 +185,12 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'ae2:chipped_budding_quartz' },
                 { type: 'damage_item', damage: 200 },
-                { type: 'add_item_cooldown', s: 2 }
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
+                    hide: true
+                }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/chipped_budding_quartz`
         },
@@ -146,7 +201,12 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'ae2:flawed_budding_quartz' },
                 { type: 'damage_item', damage: 200 },
-                { type: 'add_item_cooldown', s: 2 }
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
+                    hide: true
+                }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/flawed_budding_quartz`
         },
@@ -157,7 +217,12 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'ae2:flawless_budding_quartz' },
                 { type: 'damage_item', damage: 200 },
-                { type: 'add_item_cooldown', s: 2 }
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
+                    hide: true
+                }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/flawless_budding_quartz`
         }
