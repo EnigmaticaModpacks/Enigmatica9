@@ -1,5 +1,7 @@
 ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/lychee/block_interacting/';
+
+    // Todo: Add sound effects to these with https://lycheetweaker.readthedocs.io/en/latest/post-action/#execute-command-execute
     const recipes = [
         {
             item_in: { item: 'naturesaura:infused_iron_pickaxe' },
