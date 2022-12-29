@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
             post: [
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_cobblestone' },
-                { type: 'damage_item', damage: 100 }
+                { type: 'damage_item', damage: 50 }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_cobblestone`
         },
@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
             post: [
                 { type: 'prevent_default' },
                 { type: 'place', block: 'farmersdelight:rich_soil_farmland' },
-                { type: 'damage_item', damage: 100 }
+                { type: 'damage_item', damage: 25 }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/rich_soil_farmland`
         },
@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
             post: [
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:moss_block' },
-                { type: 'damage_item', damage: 100 }
+                { type: 'damage_item', damage: 50 }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/moss_block`
         },
@@ -37,7 +37,7 @@ ServerEvents.recipes((event) => {
             post: [
                 { type: 'prevent_default' },
                 { type: 'place', block: 'twilightforest:liveroot_block' },
-                { type: 'damage_item', damage: 100 }
+                { type: 'damage_item', damage: 125 }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/liveroot_block`
         },
@@ -47,7 +47,7 @@ ServerEvents.recipes((event) => {
             post: [
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_stone_bricks' },
-                { type: 'damage_item', damage: 100 }
+                { type: 'damage_item', damage: 50 }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_stone_bricks`
         },
@@ -57,7 +57,7 @@ ServerEvents.recipes((event) => {
             post: [
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_stone_brick_wall' },
-                { type: 'damage_item', damage: 100 }
+                { type: 'damage_item', damage: 50 }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_stone_brick_wall`
         },
@@ -67,7 +67,7 @@ ServerEvents.recipes((event) => {
             post: [
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_stone_brick_stairs' },
-                { type: 'damage_item', damage: 100 }
+                { type: 'damage_item', damage: 50 }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_stone_brick_stairs`
         },
@@ -77,7 +77,7 @@ ServerEvents.recipes((event) => {
             post: [
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_cobblestone_stairs' },
-                { type: 'damage_item', damage: 100 }
+                { type: 'damage_item', damage: 50 }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_cobblestone_stairs`
         },
@@ -87,7 +87,7 @@ ServerEvents.recipes((event) => {
             post: [
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_cobblestone_slab' },
-                { type: 'damage_item', damage: 100 }
+                { type: 'damage_item', damage: 50 }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_cobblestone_slab`
         },
@@ -97,7 +97,7 @@ ServerEvents.recipes((event) => {
             post: [
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_cobblestone_wall' },
-                { type: 'damage_item', damage: 100 }
+                { type: 'damage_item', damage: 50 }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_cobblestone_wall`
         },
@@ -107,7 +107,7 @@ ServerEvents.recipes((event) => {
             post: [
                 { type: 'prevent_default' },
                 { type: 'place', block: 'ae2:damaged_budding_quartz' },
-                { type: 'damage_item', damage: 100 }
+                { type: 'damage_item', damage: 200 }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/damaged_budding_quartz`
         },
@@ -117,7 +117,7 @@ ServerEvents.recipes((event) => {
             post: [
                 { type: 'prevent_default' },
                 { type: 'place', block: 'ae2:chipped_budding_quartz' },
-                { type: 'damage_item', damage: 100 }
+                { type: 'damage_item', damage: 200 }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/chipped_budding_quartz`
         },
@@ -127,7 +127,7 @@ ServerEvents.recipes((event) => {
             post: [
                 { type: 'prevent_default' },
                 { type: 'place', block: 'ae2:flawed_budding_quartz' },
-                { type: 'damage_item', damage: 100 }
+                { type: 'damage_item', damage: 200 }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/flawed_budding_quartz`
         },
@@ -137,7 +137,7 @@ ServerEvents.recipes((event) => {
             post: [
                 { type: 'prevent_default' },
                 { type: 'place', block: 'ae2:flawless_budding_quartz' },
-                { type: 'damage_item', damage: 100 }
+                { type: 'damage_item', damage: 200 }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/flawless_budding_quartz`
         }
