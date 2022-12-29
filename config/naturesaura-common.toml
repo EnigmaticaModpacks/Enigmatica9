@@ -1,7 +1,7 @@
 
 [general]
 	#Additional conversion recipes for the Botanist's Pickaxe right click function. Each entry needs to be formatted as modid:input_block[prop1=value1,...]->modid:output_block[prop1=value1,...] where block state properties are optional
-	additionalBotanistPickaxeConversions = ["minecraft:farmland[moisture=0]->farmersdelight:rich_soil_farmland[moisture=0]", "minecraft:farmland[moisture=7]->farmersdelight:rich_soil_farmland[moisture=7]", "minecraft:stone->minecraft:moss_block", "twilightforest:root->twilightforest:liveroot_block"]
+	additionalBotanistPickaxeConversions = []
 	#Additional projectile types that are allowed to be consumed by the projectile generator. Each entry needs to be formatted as entity_registry_name->aura_amount
 	additionalProjectiles = []
 	#The Aura to RF ratio used by the RF converter, read as aura*ratio = rf
