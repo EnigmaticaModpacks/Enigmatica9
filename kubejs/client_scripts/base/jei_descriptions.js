@@ -155,6 +155,10 @@ JEIEvents.information((event) => {
         {
             items: ['hexerei:animal_fat'],
             text: [`Drops from most large animals.`]
+        },
+        {
+            items: ['emendatusenigmatica:source_gem'],
+            text: ['Obtained by placing Lapis or Amethyst in an Imbuement Chamber.']
         }
     ];
 

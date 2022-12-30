@@ -61,7 +61,7 @@
 			}]
 		}
 		{
-			icon: "ars_nouveau:source_gem"
+			icon: "emendatusenigmatica:source_gem"
 			x: -5.5d
 			y: -6.0d
 			subtitle: "Source Preserves"
@@ -841,7 +841,7 @@
 			rewards: [{
 				id: "203CECCC321A0C3D"
 				type: "item"
-				item: "minecraft:emerald_block"
+				item: "emendatusenigmatica:emerald_block"
 			}]
 		}
 		{
@@ -1292,7 +1292,15 @@
 				{
 					id: "7278A14A3C304E2C"
 					type: "item"
-					item: "ars_nouveau:source_gem"
+					title: "Source Gem"
+					icon: "emendatusenigmatica:source_gem"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:gems/source"
+						}
+					}
 				}
 			]
 			rewards: [{
@@ -1597,7 +1605,13 @@
 				id: "20587DF83A9CDEE2"
 				type: "command"
 				title: "Scavenger's Delight"
-				icon: "kubejs:scavenger_delight"
+				icon: {
+					id: "ftbquests:custom_icon"
+					Count: 1b
+					tag: {
+						Icon: "kubejs:textures/item/scavengers_delight.png"
+					}
+				}
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				player_command: false
 			}]

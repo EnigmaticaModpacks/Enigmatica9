@@ -110,7 +110,7 @@
 		}
 		{
 			title: "Summon Foliot Crusher"
-			icon: "minecraft:iron_ore"
+			icon: "emendatusenigmatica:iron_ore"
 			x: 16.5d
 			y: 11.0d
 			shape: "hexagon"

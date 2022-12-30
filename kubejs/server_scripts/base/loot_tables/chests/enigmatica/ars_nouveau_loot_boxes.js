@@ -2,7 +2,7 @@ ServerEvents.genericLootTables((event) => {
     event.addGeneric('enigmatica:loot_boxes/ars_nouveau/rare', (table) => {
         table.addPool((pool) => {
             pool.rolls = 2.0;
-            pool.addItem('ars_nouveau:source_gem', 1, 16);
+            pool.addItem('emendatusenigmatica:source_gem', 1, 16);
             pool.addItem('ars_nouveau:source_jar', 1, 2);
             pool.addItem('ars_nouveau:relay', 1, 2);
             pool.addItem('ars_nouveau:relay_splitter', 1, 2);

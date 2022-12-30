@@ -34,7 +34,7 @@
 				id: "7B54B7BEEA99667F"
 				type: "item"
 				title: "Copper Chunk"
-				item: "minecraft:raw_copper"
+				item: "emendatusenigmatica:raw_copper"
 				count: 3
 				random_bonus: 5
 			}]
@@ -150,7 +150,7 @@
 				id: "000000000000060A"
 				type: "item"
 				title: "Coal Coke"
-				item: "immersiveengineering:coal_coke"
+				item: "emendatusenigmatica:coal_coke_gem"
 				count: 8
 			}]
 		}
@@ -597,7 +597,7 @@
 					id: "000000000000061E"
 					type: "item"
 					title: "Iron Plate"
-					item: "create:iron_sheet"
+					item: "emendatusenigmatica:iron_plate"
 					count: 8
 				}
 				{
@@ -605,7 +605,7 @@
 					type: "item"
 					title: "Steel Plate"
 					auto: "enabled"
-					item: "immersiveengineering:plate_steel"
+					item: "emendatusenigmatica:steel_plate"
 					count: 4
 				}
 				{
@@ -653,7 +653,7 @@
 				{
 					id: "455E2E578760B634"
 					type: "item"
-					item: "mekanism:ingot_steel"
+					item: "emendatusenigmatica:steel_ingot"
 				}
 			]
 		}
@@ -1541,7 +1541,7 @@
 					id: "6BCA8B2194807B4D"
 					type: "item"
 					title: "Iron Rod"
-					item: "immersiveengineering:stick_iron"
+					item: "emendatusenigmatica:iron_rod"
 					count: 16
 				}
 			]
@@ -1977,7 +1977,15 @@
 			tasks: [{
 				id: "4199938FA3695A5E"
 				type: "item"
-				item: "minecraft:raw_iron"
+				title: "Raw Iron"
+				icon: "emendatusenigmatica:raw_iron"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:raw_materials/iron"
+					}
+				}
 			}]
 			rewards: [{
 				id: "1316D0601A8173BA"
@@ -2000,7 +2008,15 @@
 			tasks: [{
 				id: "60A1A0E33224F1CA"
 				type: "item"
-				item: "minecraft:raw_copper"
+				title: "Raw Copper"
+				icon: "emendatusenigmatica:raw_copper"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:raw_materials/copper"
+					}
+				}
 			}]
 			rewards: [{
 				id: "5290F7C5440ABBF7"
@@ -2077,6 +2093,7 @@
 				id: "7A8C5D02C715AB12"
 				type: "item"
 				title: "Steel"
+				icon: "emendatusenigmatica:steel_ingot"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b

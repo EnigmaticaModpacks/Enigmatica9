@@ -949,7 +949,7 @@
 					id: "00000000000007D9"
 					type: "item"
 					title: "Uranium Ore"
-					item: "mekanism:raw_uranium"
+					item: "emendatusenigmatica:raw_uranium"
 					count: 64
 				}
 				{

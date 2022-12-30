@@ -30,7 +30,7 @@
 				id: "4623F41B74F1829E"
 				type: "item"
 				title: "Iron Chunk"
-				item: "minecraft:raw_iron"
+				item: "emendatusenigmatica:raw_iron"
 				count: 4
 				random_bonus: 8
 			}]
@@ -1532,6 +1532,7 @@
 			]
 		}
 		{
+			title: "Getting Started: Material Processing"
 			x: 2.0d
 			y: 1.5d
 			description: ["Better materials are critical to any industrial endeavor but getting them will require a bit of setup and equipment first. "]
@@ -1541,8 +1542,8 @@
 			tasks: [{
 				id: "170EFDBE75844058"
 				type: "item"
-				title: "Getting Started: Material Processing"
-				icon: "thermal:raw_nickel"
+				title: "Raw Nickel"
+				icon: "emendatusenigmatica:raw_nickel"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
