@@ -20,7 +20,7 @@
 			y: -14.0d
 			shape: "gear"
 			description: [
-				"Many mods add a variety of very useful tools that can be easy to overlook. These quests won't cover everything, but will serve to highlight some of the more notable mentions."
+				"Many mods add a variety of very useful tools that can be easy to overlook. These quests won't cover everything, but will serve to highlight some of the more notable options not otherwise covered in other quest chapters."
 				""
 				"Note: Most tools and armor have been Tagged for easier search in JEI. Search for the following categories to discover more:"
 				""
@@ -193,8 +193,8 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: -16.0d
+			x: -11.5d
+			y: -15.5d
 			subtitle: "Pym Powered"
 			description: [
 				"Smaller, but equally strong? Impossible!"
@@ -210,7 +210,6 @@
 				""
 				"Keep a villager in your pocket for good luck!"
 			]
-			dependencies: ["00000000000003FF"]
 			min_width: 300
 			id: "43DB35C6C62A177D"
 			tasks: [{
@@ -241,6 +240,7 @@
 			]
 		}
 		{
+			title: "Vein Miner?"
 			icon: {
 				id: "minecraft:diamond_pickaxe"
 				Count: 1b
@@ -257,9 +257,16 @@
 			]
 			id: "358FAB3D482C463A"
 			tasks: [{
-				id: "2EB00492C49B6AA7"
-				type: "checkmark"
-				title: "Vein Miner?"
+				id: "0CD75EE826F64FBA"
+				type: "item"
+				title: "Craft Any Tool"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:tools"
+					}
+				}
 			}]
 			rewards: [{
 				id: "014468D2F53971A4"
@@ -1128,6 +1135,75 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				player_command: false
 			}]
+		}
+		{
+			x: -8.5d
+			y: -15.5d
+			description: [
+				"Creeping Creepers got you down? Zealous Zombies getting all up in your face? Salacious Skeletons just won’t let you mine in peace?"
+				""
+				"Get a shield! But not just any shield, Superior Shields are worn in Curio slots and protect their wearer automatically, even from dastardly attacks from behind. "
+				""
+				"Superior Shields have three important stats that determine how well they protect:"
+				""
+				"● Hit Points"
+				"The number of hearts of damage they’re capable of blocking before needing to recharge."
+				""
+				"● Recharge Rate"
+				"The number of seconds it takes to recharge half a shield. "
+				""
+				"● Recharge Delay"
+				"Time in seconds without taking damage before the shield begins to recharge."
+				""
+				"All together, these stats mean that a shield will only be effective in situations where the bearer is not under constant assault, once the Hit Points are diminished, the bearer needs to move away from danger to allow them to recharge. So, they’re excellent for those unexpected attacks, but won’t keep you alive forever. "
+				""
+				"In addition to their basic stats, they may also be enchanted with a number of interesting effects, such as curing the bearer of all potion effects when the shield is depleted or applying Poison to anything that damages the shield. "
+			]
+			min_width: 300
+			id: "2C96F74E20442E7A"
+			tasks: [{
+				id: "0A580EBE0BEE52D0"
+				type: "item"
+				title: "Superior Shields"
+				icon: {
+					id: "superiorshields:netherite_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "superiorshields:shield"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "7F9E5B553D8A3A92"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 3s
+								id: "superiorshields:quickened"
+							}]
+						}
+					}
+				}
+				{
+					id: "58C2D15E139FF54E"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					player_command: false
+				}
+			]
 		}
 	]
 }
