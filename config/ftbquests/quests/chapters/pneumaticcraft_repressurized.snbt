@@ -1690,8 +1690,11 @@
 			]
 			rewards: [{
 				id: "7593EC8DA1751738"
-				type: "item"
-				item: "minecraft:granite"
+				type: "command"
+				title: "Epic PNC:R Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+				player_command: false
 			}]
 		}
 		{
@@ -1810,4 +1813,5 @@
 			]
 		}
 	]
+	quest_links: [ ]
 }
