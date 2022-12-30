@@ -95,12 +95,12 @@ ServerEvents.highPriorityData((event) => {
         pentacle.pattern.push(pentacle.pattern[0].map((pattern) => pattern.replace(/./g, '9')));
         pentacle.mapping['9'] = { type: 'modonomicon:display', display: 'occultism:otherstone' };
 
-        event.addJson(`occultism:modonomicon_multiblocks/${pentacle.name}.json`, pentacle);
+        event.addJson(`occultism:modonomicon/multiblocks/${pentacle.name}.json`, pentacle);
 
         // Remember to set lang entries for all new pentacles in en_us.json
         // x and y placement refer to the entry location within the modonomicon
         event.addJson(
-            `occultism:modonomicons/dictionary_of_spirits/entries/pentacles/${pentacle.name}.json`,
+            `occultism:modonomicon/books/dictionary_of_spirits/entries/pentacles/${pentacle.name}.json`,
             generatePentacleEntry(pentacle.name, pentacle.x_placement, pentacle.y_placement, pentacle.parents)
         );
     });

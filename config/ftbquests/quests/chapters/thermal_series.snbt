@@ -11,8 +11,8 @@
 		{
 			title: "Thermal Series"
 			x: 2.0d
-			y: -1.0d
-			shape: "gear"
+			y: 0.0d
+			shape: "hexagon"
 			description: [
 				"The Thermal Series is a suite of mods that has been a staple of Modded Minecraft for years. Time has brought many changes to it, but it's kept its overall theme of slightly magical tech throughout. "
 				""
@@ -822,7 +822,7 @@
 		{
 			x: 1.0d
 			y: 10.5d
-			subtitle: "Through the mountain! Secret tunnel!"
+			subtitle: "Igneous is Bliss"
 			description: [
 				"A bit of lava, a bit of water. Boom, box of rocks. "
 				""

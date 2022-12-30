@@ -171,7 +171,7 @@ ItemEvents.tooltip((event) => {
             text: [Text.of(`Arcane Apparatus: Generates FE From Aura`).red()]
         },
         {
-            items: ['naturesaura:spring'],
+            items: ['naturesaura:spring', 'ars_elemental:everfull_urn'],
             text: [Text.of(`Arcane Apparatus: Endless Water Source`).green()]
         },
         {
@@ -286,8 +286,43 @@ ItemEvents.tooltip((event) => {
             text: [Text.of(`Arcane Instrument: Increases Personal Mana Regen Rate`).lightPurple()]
         },
         {
-            items: ['ars_nouveau:dominion_wand'],
-            text: [Text.of(`Arcane Instrument: Configuration Tool`).lightPurple()]
+            items: [
+                'ae2:memory_card_red',
+                'ae2:memory_card_black',
+                'ae2:memory_card',
+                'ae2:memory_card_green',
+                'ae2:memory_card_brown',
+                'ae2:memory_card_blue',
+                'ae2:memory_card_purple',
+                'ae2:memory_card_cyan',
+                'ae2:memory_card_light_gray',
+                'ae2:memory_card_gray',
+                'ae2:memory_card_pink',
+                'ae2:memory_card_lime',
+                'ae2:memory_card_yellow',
+                'ae2:memory_card_light_blue',
+                'ae2:memory_card_magenta',
+                'ae2:memory_card_orange',
+                'ae2:memory_card_white',
+                'pneumaticcraft:camo_applicator',
+                'mekanism:configuration_card',
+                'functionalstorage:configuration_tool',
+                'pneumaticcraft:logistics_configurator',
+                'ars_nouveau:dominion_wand',
+                'mekanism:configurator',
+                'thermal:wrench',
+                'powah:wrench',
+                'supplementaries:wrench',
+                'rftoolsbase:smartwrench_select',
+                'rftoolsbase:smartwrench',
+                'pneumaticcraft:pneumatic_wrench',
+                'littlelogistics:conductors_wrench',
+                'framedblocks:framed_wrench',
+                'create:wrench',
+                'ae2:nether_quartz_wrench',
+                'ae2:certus_quartz_wrench'
+            ],
+            text: [Text.of(`Configuration Tool`).gold()]
         },
         {
             items: ['kubejs:summon_death_tome'],
@@ -374,6 +409,16 @@ ItemEvents.tooltip((event) => {
         {
             items: ['supplementaries:pulley_block'],
             text: [Text.of('Redstone Device: Raises or Lowers Chains and Ropes When Rotated').darkRed()]
+        },
+        {
+            items: [
+                'chimes:amethyst_chimes',
+                'chimes:copper_chimes',
+                'chimes:carved_bamboo_chimes',
+                'chimes:iron_chimes',
+                'chimes:bamboo_chimes'
+            ],
+            text: [Text.of('The gentle sounds keep Phantoms at bay.').aqua()]
         }
 
         /* 
