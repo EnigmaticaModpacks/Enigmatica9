@@ -250,6 +250,15 @@
 		#Range: 0.0 ~ 10.0
 		red_merchant_spawn_multiplier = 1.0
 
+	[spawns.basalt_ash]
+		enabled = true
+		#Attempts at every patch to spawn 1 block. Increases average patch size
+		#Range: 1 ~ 1000
+		attempts_per_patch = 36
+		#Spawn attempts per chunk. Increases spawn frequency
+		#Range: 0 ~ 100
+		spawn_attempts = 15
+
 #Vanilla tweaks
 [tweaks]
 
@@ -432,6 +441,10 @@
 		#Increase this number to alter the probability for a Skeleton with quiver to spawn. Note that this also depends on local difficulty so you wont ever see them on easy and very rarely on normal. Similar logic to equipment
 		#Range: 0.0 ~ 1.0
 		quiver_skeleton_chance = 0.2
+
+	[items.soap]
+		#Dyed Bock types that cannot be cleaned with soap
+		clean_blacklist = ["minecraft:glazed_terracotta"]
 
 #General settings
 [general]

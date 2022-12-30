@@ -253,6 +253,8 @@
 		#The maximum amount of animals allowed around the trough's range for an animal to enter love mode
 		"Max Animals" = 32
 		Range = 10.0
+		#Set to false to make it so animals look for a nearby trough every time they want to eat instead of remembering the last one. Can affect performance if false.
+		"Enable Trough Caching" = true
 
 [world]
 	"Blossom Trees" = true
@@ -822,6 +824,7 @@
 		"Enable Shulker Box Interaction" = true
 		"Enable Armor Interaction" = true
 		"Enable Lava Interaction" = true
+		"Allow Opening Shulker Boxes" = true
 
 	[management.easy_transfering]
 		"Enable Shift Lock" = true
@@ -924,6 +927,10 @@
 		"Enable Minecarts" = true
 		#Does Dragon Breath return a bottle when used as a reagent or material?
 		"Effective Dragon Breath" = true
+		#Can two Logs be used instead of a Chest to make a Hopper?
+		"Easy Hopper" = true
+		#Can two Logs be used to craft 16 sticks?
+		"Easy Sticks" = true
 
 	[tweaks.reacharound_placing]
 		#Allowed values: [0,1]
@@ -1018,6 +1025,8 @@
 	"Microcrafting Helper" = true
 	"Chest Searching" = true
 	"Auto Walk Keybind" = true
+	"Long Range Pick Block" = true
+	"Elytra Indicator" = true
 
 	[client.uses_for_curses]
 		"Bind Armor Stands With Player Heads" = true
@@ -1027,11 +1036,17 @@
 		"Leaves List" = ["minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:oak_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:dark_oak_leaves", "atmospheric:rosewood_leaves", "atmospheric:morado_leaves", "atmospheric:yucca_leaves", "autumnity:maple_leaves", "environmental:willow_leaves", "environmental:hanging_willow_leaves", "minecraft:vine"]
 		"Block List" = ["minecraft:large_fern", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:fern", "minecraft:grass", "minecraft:potted_fern", "minecraft:sugar_cane", "environmental:giant_tall_grass", "valhelsia_structures:grass_block"]
 		"Affect Leaves" = true
+		"Affect Water" = false
 
 		[client.greener_grass.color_matrix]
 			R = [0.89, 0.0, 0.0]
 			B = [0.0, 0.0, 0.89]
 			G = [0.0, 1.11, 0.0]
+
+		[client.greener_grass.water_matrix]
+			R = [0.86, 0.0, 0.0]
+			G = [0.0, 1.0, 0.22]
+			B = [0.0, 0.0, 1.22]
 
 	[client.chest_searching]
 
@@ -1198,6 +1213,7 @@
 		"Pipe Speed" = 5
 		"Enable Encased Pipes" = true
 		"Render Pipe Items" = true
+		"Emit Vibrations" = true
 
 [experimental]
 	"Adjustable Chat" = false
@@ -1398,6 +1414,9 @@
 			Durability = 1040
 			#How much damage the Pickarang deals when swung as an item
 			"Attack Damage" = 3
+
+	[tools.beacon_redirection]
+		"Horizontal Move Limit" = 64
 
 [building]
 	"Duskbound Blocks" = true
