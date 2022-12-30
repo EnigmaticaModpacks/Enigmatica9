@@ -105,6 +105,9 @@ jei.base.items.disabled = [
     'powah:battery_starter',
     'powah:capacitor_basic',
     'powah:capacitor_basic_tiny',
+    'superiorshields:manasteel_shield',
+    'superiorshields:terrasteel_shield',
+    'superiorshields:elementium_shield',
     /byg:.*pendorite.*/,
     /byg:.*ametrine.*/,
     'minecraft:nether_gold_ore'
