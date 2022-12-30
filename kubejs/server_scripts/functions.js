@@ -1,6 +1,8 @@
 //priority: 1005
 const PowahAPI = Java.loadClass('owmii.powah.api.PowahAPI');
 
+const unificationBlacklist = [];
+
 const unificationBlacklistEntry = (material, type) => {
     return { material: material, type: type };
 };
@@ -54,11 +56,6 @@ const getStrippedLogFrom = (logBlock) => {
     return result;
 };
 
-const unificationBlacklist = [
-    // Botania adds several quartz-types, which is why we don't unify these tags.
-    unificationBlacklistEntry('quartz', 'gem'),
-    unificationBlacklistEntry('quartz', 'storage_block')
-];
 
 const playerHas = (item, player) => {
     return player.inventory.find(item) != -1;

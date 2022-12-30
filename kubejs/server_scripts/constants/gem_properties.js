@@ -56,7 +56,7 @@
 // },
 
 function getItemFromTag(tag) {
-    return AlmostUnified.getPreferredItemForTag(`forge:gems/${tag}`).getId()
+    return AlmostUnified.getPreferredItemForTag(tag).getId()
 }
 
 const gemProperties = {

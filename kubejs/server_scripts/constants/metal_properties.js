@@ -263,5 +263,8 @@ const metal_properties = {
     },
     tainted_gold: {
         // meltingPoint: 1000
+    },
+    andesite: {
+        // meltingPoint: 1000
     }
 };
