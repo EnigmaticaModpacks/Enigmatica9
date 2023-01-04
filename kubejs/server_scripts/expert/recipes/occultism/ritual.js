@@ -30,7 +30,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: Item.of('kubejs:aura_leaf', { aura_amount: 20000, aura_max: 1000000 }),
-            activation_item: 'kubejs:aura_leaf',
+            activation_item: 'naturesaura:gold_leaf',
             inputs: [
                 'ars_nouveau:conjuration_essence',
                 'ars_nouveau:conjuration_essence',

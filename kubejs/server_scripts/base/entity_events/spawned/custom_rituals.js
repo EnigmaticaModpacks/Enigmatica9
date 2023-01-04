@@ -91,12 +91,21 @@ EntityEvents.spawned((event) => {
 
         // Aura Generation
         if (ritual_effect.aura) {
-            let aura_amount = event.entity.item.nbt.aura_amount;
-            let aura_max = event.entity.item.nbt.aura_max;
-            let particle_count = randomInt(25, 50);
             x = x_coord;
             y = y_coord + 1;
             z = z_coord;
+
+            let duration = 5 * 20,
+                num_revolutions = 5,
+                num_particles = 100 * num_revolutions,
+                height = 3,
+                upper_radius = 8,
+                lower_radius = 1,
+                angle_step = (2 * 3.14159 * num_revolutions) / num_particles,
+                delay = duration / num_particles,
+                aura_amount = Math.floor(event.entity.item.nbt.aura_amount / num_particles),
+                aura_max = event.entity.item.nbt.aura_max,
+                particle = 'twilightforest:fallen_leaf';
 
             // Sunny Aura - Green
             let color = '11 227 44';
@@ -109,13 +118,25 @@ EntityEvents.spawned((event) => {
                 color = '209 26 237';
             }
 
-            // Generate aura up to cap
-            command = `/execute in ${ritual_dimension} positioned ${x} ${y} ${z} run eu aura ${aura_amount} ${aura_max}`;
-            event.server.runCommandSilent(command);
+            for (let i = 0; i < num_particles; i++) {
+                let angle = i * angle_step,
+                    radius = lower_radius + (upper_radius - lower_radius) * (i / num_particles),
+                    dx = radius * Math.cos(angle),
+                    dz = radius * Math.sin(angle),
+                    dy = height * (i / num_particles);
 
-            // Sprinkle some leaves
-            command = `/execute in ${ritual_dimension} run particle twilightforest:fallen_leaf ${color} ${x} ${y} ${z} 1 1 1 0.1 ${particle_count}`;
-            event.server.runCommandSilent(command);
+                event.server.scheduleInTicks(i * delay, (c) => {
+                    // Generate some aura
+                    command = `/execute in ${ritual_dimension} positioned ${x} ${y} ${z} run eu aura ${aura_amount} ${aura_max}`;
+                    event.server.runCommandSilent(command);
+
+                    // Sprinkle some leaves
+                    command = `/execute in ${ritual_dimension} run particle ${particle} ${color} ${x + dx} ${y + dy} ${
+                        z + dz
+                    } 1 1 1 0.1 1`;
+                    event.server.runCommandSilent(command);
+                });
+            }
         }
     }
 });
