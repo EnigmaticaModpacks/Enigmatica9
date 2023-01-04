@@ -96,7 +96,7 @@ EntityEvents.spawned((event) => {
             z = z_coord;
 
             let duration = 3 * 20,
-                num_revolutions = 3,
+                num_revolutions = 9,
                 num_particles = 100 * num_revolutions,
                 height = 3,
                 upper_radius = 8,
