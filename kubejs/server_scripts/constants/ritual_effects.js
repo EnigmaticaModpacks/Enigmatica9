@@ -95,5 +95,8 @@ const ritual_effects = {
     },
     gate_pearl: {
         gateway: true
+    },
+    aura_leaf: {
+        aura: true
     }
 };

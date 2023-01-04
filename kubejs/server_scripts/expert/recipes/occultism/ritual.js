@@ -27,6 +27,21 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:summon_evil',
             duration: 10,
             id: `${id_prefix}ritual_summon_death_tome`
+        },
+        {
+            output: Item.of('kubejs:aura_leaf', { aura_amount: 20000, aura_max: 1000000 }),
+            activation_item: 'kubejs:aura_leaf',
+            inputs: [
+                'ars_nouveau:conjuration_essence',
+                'ars_nouveau:conjuration_essence',
+                'ars_nouveau:conjuration_essence',
+                'ars_nouveau:conjuration_essence'
+            ],
+            ritual_dummy: Item.of('kubejs:aura_leaf'),
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:possess_foliot',
+            duration: 10,
+            id: `${id_prefix}aura_ritual`
         }
     ];
 

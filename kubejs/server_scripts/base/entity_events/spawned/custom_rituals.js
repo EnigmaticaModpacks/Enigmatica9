@@ -88,5 +88,34 @@ EntityEvents.spawned((event) => {
             // console.log(command);
             event.server.runCommandSilent(command);
         }
+
+        // Aura Generation
+        if (ritual_effect.aura) {
+            let aura_amount = event.entity.item.nbt.aura_amount;
+            let aura_max = event.entity.item.nbt.aura_max;
+            let particle_count = randomInt(25, 50);
+            x = x_coord;
+            y = y_coord + 1;
+            z = z_coord;
+
+            // Sunny Aura - Green
+            let color = '11 227 44';
+            if (ritual_dimension == 'minecraft:the_nether' || ritual_dimension == 'blue_skies:everbright') {
+                // Ghosts Aura - Red
+                color = '201 11 8';
+            }
+            if (ritual_dimension == 'minecraft:the_end' || ritual_dimension == 'the_bumblezone:the_bumblezone') {
+                // Darkness Aura - Purple
+                color = '209 26 237';
+            }
+
+            // Generate aura up to cap
+            command = `/execute in ${ritual_dimension} positioned ${x} ${y} ${z} run eu aura ${aura_amount} ${aura_max}`;
+            event.server.runCommandSilent(command);
+
+            // Sprinkle some leaves
+            command = `/execute in ${ritual_dimension} run particle twilightforest:fallen_leaf ${color} ${x} ${y} ${z} 1 1 1 0.1 ${particle_count}`;
+            event.server.runCommandSilent(command);
+        }
     }
 });
