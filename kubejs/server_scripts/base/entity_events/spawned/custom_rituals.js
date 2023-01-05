@@ -23,7 +23,21 @@ EntityEvents.spawned((event) => {
         // Get Ritual
         let ritual_effect = ritual_effects[item_type];
         // Instantiate the rest of our variables
-        let spread, x, y, z, area, amplifier, limit, effect, duration, destination, command, coordinates, delay;
+        let spread,
+            x,
+            y,
+            z,
+            area,
+            amplifier,
+            limit,
+            effect,
+            duration,
+            destination,
+            command,
+            coordinates,
+            delay,
+            color,
+            secondary_particle;
 
         if (ritual_effect.summon) {
             spread = ritual_effect.summon.spread;
@@ -83,11 +97,11 @@ EntityEvents.spawned((event) => {
             y = y_coord - 0.5;
             z = z_coord;
 
-            let gateway_type = event.entity.item.nbt.gateway,
-                radius = event.entity.item.nbt.radius,
-                density = 5,
-                num_points = 5,
-                duration = 2 * 20;
+            let gateway_type = event.entity.item.nbt.gateway;
+            let radius = event.entity.item.nbt.radius;
+            let num_points = 5;
+            duration = 2 * 20;
+            density = 5;
 
             // Draw the Circle
             coordinates = getCircleCoordinates(x, y, z, radius, density);
@@ -100,14 +114,15 @@ EntityEvents.spawned((event) => {
                 });
             });
 
-            delay = duration + 20;
+            // Draw the full Pentagram together instantly
             coordinates = coordinates.concat(getStarCoordinates(x, y, z, radius, num_points, density));
+            delay = duration + 20;
             event.server.scheduleInTicks(delay, (c) => {
                 coordinates.forEach((coord) => {
                     command = `/execute in ${ritual_dimension} run particle minecraft:soul_fire_flame ${coord.x} ${coord.y} ${coord.z}`;
                     event.server.runCommandSilent(command);
 
-                    command = `/execute in ${ritual_dimension} run particle minecraft:enchant ${coord.x} ${
+                    command = `/execute in ${ritual_dimension} run particle twilightforest:leaf_rune ${coord.x} ${
                         coord.y + 0.5
                     } ${coord.z}`;
                     event.server.runCommandSilent(command);
@@ -130,25 +145,27 @@ EntityEvents.spawned((event) => {
             y = y_coord + 1;
             z = z_coord;
 
-            let duration = 3 * 20,
-                revolutions = 9,
-                height = 3,
-                upper_radius = 8,
-                lower_radius = 5,
-                density = 100,
-                aura_amount = event.entity.item.nbt.aura_amount,
-                aura_max = event.entity.item.nbt.aura_max,
-                color;
+            let revolutions = 9;
+            let height = 3;
+            let upper_radius = 8;
+            let lower_radius = 5;
+            let density = 10;
+            let aura_amount = event.entity.item.nbt.aura_amount;
+            let aura_max = event.entity.item.nbt.aura_max;
+            duration = 3 * 20;
 
             if (ritual_dimension == 'minecraft:the_nether' || ritual_dimension == 'blue_skies:everbright') {
                 // Ghosts Aura - Red
                 color = '201 11 8';
+                secondary_particle = 'minecraft:soul';
             } else if (ritual_dimension == 'minecraft:the_end' || ritual_dimension == 'the_bumblezone:the_bumblezone') {
                 // Darkness Aura - Purple
                 color = '209 26 237';
+                secondary_particle = 'minecraft:dragon_breath';
             } else {
                 // Sunny Aura - Green
                 color = '11 227 44';
+                secondary_particle = 'twilightforest:fallen_leaf';
             }
 
             // Draw the Spiral
@@ -163,84 +180,14 @@ EntityEvents.spawned((event) => {
                     event.server.runCommandSilent(command);
 
                     // Sprinkle some leaves
-                    command = `/execute in ${ritual_dimension} run particle twilightforest:fallen_leaf ${color} ${coord.x} ${coord.y} ${coord.z} 1 1 1 0.1 1`;
+                    command = `/execute in ${ritual_dimension} run particle twilightforest:fallen_leaf ${color} ${coord.x} ${coord.y} ${coord.z} 1 1 1 0.1 2`;
+                    event.server.runCommandSilent(command);
+
+                    // Sprinkle secondary particle
+                    command = `/execute in ${ritual_dimension} run particle ${secondary_particle} ${coord.x} ${coord.y} ${coord.z} 1 1 1 0.1 1`;
                     event.server.runCommandSilent(command);
                 });
             });
         }
     }
 });
-
-function getLineCoordinates(x1, y1, z1, x2, y2, z2, density) {
-    let dx = x2 - x1;
-    let dy = y2 - y1;
-    let dz = z2 - z1;
-    let distance = Math.sqrt(dx * dx + dy * dy + dz * dz);
-    let num_points = Math.floor(distance * density); // points per block
-    let stepX = dx / num_points;
-    let stepY = dy / num_points;
-    let stepZ = dz / num_points;
-
-    let coordinates = [];
-    for (let i = 0; i < num_points; i++) {
-        let x = x1 + i * stepX;
-        let y = y1 + i * stepY;
-        let z = z1 + i * stepZ;
-
-        coordinates.push({ x: x, y: y, z: z });
-    }
-    return coordinates;
-}
-
-function getStarCoordinates(x, y, z, radius, num_points, density) {
-    let angle_step = (2 * 3.14159) / num_points;
-
-    let coordinates = [];
-    for (let i = 0; i < num_points; i++) {
-        let angle1 = i * angle_step;
-        let angle2 = (i + 2) * angle_step;
-
-        let dx1 = radius * Math.cos(angle1);
-        let dz1 = radius * Math.sin(angle1);
-
-        let dx2 = radius * Math.cos(angle2);
-        let dz2 = radius * Math.sin(angle2);
-
-        let line_coordinates = getLineCoordinates(x + dx1, y, z + dz1, x + dx2, y, z + dz2, density);
-        coordinates = coordinates.concat(line_coordinates);
-    }
-    return coordinates;
-}
-
-function getCircleCoordinates(x, y, z, radius, density) {
-    let circumference = 2 * 3.14159 * radius;
-    let num_points = Math.floor(circumference * density);
-    let angle_step = (2 * 3.14159) / num_points;
-
-    let coordinates = [];
-    for (let i = 0; i < num_points; i++) {
-        let angle = i * angle_step;
-        let dx = radius * Math.cos(angle);
-        let dz = radius * Math.sin(angle);
-
-        coordinates.push({ x: x + dx, y: y, z: z + dz });
-    }
-    return coordinates;
-}
-
-function getSpiralCoordinates(x, y, z, revolutions, height, upper_radius, lower_radius, density) {
-    let num_particles = density * revolutions,
-        angle_step = (2 * 3.14159 * revolutions) / num_particles;
-
-    let coordinates = [];
-    for (let i = 0; i < num_particles; i++) {
-        let angle = i * angle_step,
-            radius = lower_radius + (upper_radius - lower_radius) * (i / num_particles),
-            dx = radius * Math.cos(angle),
-            dz = radius * Math.sin(angle),
-            dy = height * (i / num_particles);
-
-        coordinates.push({ x: x + dx, y: y + dy, z: z + dz });
-    }
-    return coordinates;
-}
