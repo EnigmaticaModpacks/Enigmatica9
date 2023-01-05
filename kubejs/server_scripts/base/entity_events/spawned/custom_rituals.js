@@ -94,18 +94,20 @@ EntityEvents.spawned((event) => {
                         });
                     });
 
-                delay = duration;
                 // Flash at the end of the spiral
+                delay = duration;
+
                 event.server.scheduleInTicks(delay, (c) => {
                     command = `/execute in ${ritual_dimension} run particle minecraft:flash ${x_coord} ${y_coord} ${z_coord} 0 0 0 0.1 1`;
                     event.server.runCommandSilent(command);
                 });
 
+                // Yeet the player to the target dimension after delay
                 delay = duration + 20;
                 x = randomFloat(x_coord, ritual_effect.teleport.uncertainty);
                 y = y_coord + 200;
                 z = randomFloat(z_coord, ritual_effect.teleport.uncertainty);
-                // Yeet the player to the target dimension after delay
+
                 event.server.scheduleInTicks(delay, (c) => {
                     command = `/execute in ${ritual_dimension} as @e[limit=${limit},sort=nearest,${area}] in ${destination} run tp ${x} ${y} ${z}`;
                     event.server.runCommandSilent(command);
