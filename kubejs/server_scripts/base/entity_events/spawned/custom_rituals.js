@@ -139,6 +139,7 @@ EntityEvents.spawned((event) => {
             y = y_coord + 1;
             z = z_coord;
             duration = 3 * 20;
+
             let revolutions = 9;
             let height = 3;
             let upper_radius = 8;
