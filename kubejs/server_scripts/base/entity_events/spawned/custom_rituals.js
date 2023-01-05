@@ -80,7 +80,7 @@ EntityEvents.spawned((event) => {
             } else {
                 // Warn player this cannot be perfomed in this dimension.
                 area = getSelectorArea(x_coord, y_coord, z_coord, 10);
-                command = `/execute in ${ritual_dimension} run tellraw @p[${area}] "Ritual Destination unreachable from here."`;
+                command = `/execute in ${ritual_dimension} run tellraw @p[${area}] "Ritual destination unreachable from here."`;
                 // console.log(command);
                 event.server.runCommandSilent(command);
             }
