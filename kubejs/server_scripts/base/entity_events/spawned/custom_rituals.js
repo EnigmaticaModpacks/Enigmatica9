@@ -98,10 +98,9 @@ EntityEvents.spawned((event) => {
             duration = 2 * 20;
             density = 5;
 
-            // Draw the Circle
+            // Draw a slow circle
             coordinates = getCircleCoordinates(x, y, z, radius, density);
             delay = duration / coordinates.length;
-
             coordinates.forEach((coord, index) => {
                 event.server.scheduleInTicks(index * delay, (c) => {
                     command = `/execute in ${ritual_dimension} run particle minecraft:soul_fire_flame ${coord.x} ${coord.y} ${coord.z}`;
@@ -109,7 +108,7 @@ EntityEvents.spawned((event) => {
                 });
             });
 
-            // Draw the full Pentagram together instantly
+            // Draw the full Pentagram in one go after the slow circle
             coordinates = coordinates.concat(getStarCoordinates(x, y, z, radius, num_points, density));
             delay = duration + 20;
             event.server.scheduleInTicks(delay, (c) => {
