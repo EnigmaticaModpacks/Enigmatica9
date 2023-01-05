@@ -165,7 +165,7 @@ EntityEvents.spawned((event) => {
             } else {
                 // Sunny Aura - Green
                 color = '11 227 44';
-                secondary_particle = 'twilightforest:fallen_leaf';
+                secondary_particle = 'twilightforest:jar_wandering_firefly';
             }
 
             // Draw the Spiral
