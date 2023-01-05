@@ -198,30 +198,36 @@ ServerEvents.recipes((event) => {
     gateways.forEach((gateway) => {
         recipes.push(
             {
-                output: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate_small"}`),
+                output: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate_small", radius:5}`),
                 activation_item: 'minecraft:ender_pearl',
                 inputs: gateway.inputs,
-                ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate_small"}`),
+                ritual_dummy: Item.of(
+                    'gateways:gate_pearl',
+                    `{gateway:"gateways:${gateway.type}_gate_small", radius:5}`
+                ),
                 ritual_type: 'occultism:craft',
                 pentacle_id: 'occultism:possess_foliot',
                 duration: 10,
                 id: `${id_prefix}${gateway.type}_gate_small`
             },
             {
-                output: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate"}`),
+                output: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate", radius:5}`),
                 activation_item: 'minecraft:ender_eye',
                 inputs: gateway.inputs,
-                ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate"}`),
+                ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate", radius:5}`),
                 ritual_type: 'occultism:craft',
                 pentacle_id: 'occultism:summon_wild_greater_spirit',
                 duration: 10,
                 id: `${id_prefix}${gateway.type}_gate`
             },
             {
-                output: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate_large"}`),
+                output: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate_large", radius:5}`),
                 activation_item: 'minecraft:nether_star',
                 inputs: gateway.inputs,
-                ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate_large"}`),
+                ritual_dummy: Item.of(
+                    'gateways:gate_pearl',
+                    `{gateway:"gateways:${gateway.type}_gate_large", radius:5}`
+                ),
                 ritual_type: 'occultism:craft',
                 pentacle_id: 'occultism:summon_wild_afrit',
                 duration: 10,
