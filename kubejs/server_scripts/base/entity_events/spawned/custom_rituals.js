@@ -73,10 +73,39 @@ EntityEvents.spawned((event) => {
                 z = randomFloat(z_coord, ritual_effect.teleport.uncertainty);
                 destination = ritual_effect.teleport.arrival;
 
-                // Yeet the player to the target dimension
-                command = `/execute in ${ritual_dimension} as @e[limit=${limit},sort=nearest,${area}] in ${destination} run tp ${x} ${y} ${z}`;
-                // console.log(command);
-                event.server.runCommandSilent(command);
+                let revolutions = 9;
+                let height = 1;
+                let upper_radius = 8;
+                let lower_radius = 1;
+                let density = 10;
+                let duration = 3 * 20;
+
+                // Slowly draw a spiral in reverse
+                coordinates = getSpiralCoordinates(x, y, z, revolutions, height, upper_radius, lower_radius, density);
+                delay = duration / coordinates.length;
+
+                coordinates
+                    .slice()
+                    .reverse()
+                    .forEach((coord, index) => {
+                        event.server.scheduleInTicks(index * delay, (c) => {
+                            // Sprinkle some leaves
+                            command = `/execute in ${ritual_dimension} run particle twilightforest:fallen_leaf ${color} ${coord.x} ${coord.y} ${coord.z} 1 1 1 0.1 2`;
+                            event.server.runCommandSilent(command);
+
+                            // Sprinkle secondary particle
+                            command = `/execute in ${ritual_dimension} run particle ${secondary_particle} ${coord.x} ${coord.y} ${coord.z} 1 1 1 0.1 1`;
+                            event.server.runCommandSilent(command);
+                        });
+                    });
+
+                // Yeet the player to the target dimension after delay
+                delay = duration + 20;
+                event.server.scheduleInTicks(delay, (c) => {
+                    command = `/execute in ${ritual_dimension} as @e[limit=${limit},sort=nearest,${area}] in ${destination} run tp ${x} ${y} ${z}`;
+                    // console.log(command);
+                    event.server.runCommandSilent(command);
+                });
             } else {
                 // Warn player this cannot be perfomed in this dimension.
                 area = getSelectorArea(x_coord, y_coord, z_coord, 10);
