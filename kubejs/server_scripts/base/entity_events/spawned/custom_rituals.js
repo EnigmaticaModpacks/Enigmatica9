@@ -49,6 +49,7 @@ EntityEvents.spawned((event) => {
                 y: abs.y + 200,
                 z: randomFloat(abs.z, ritual_effect.teleport.uncertainty)
             };
+            let area = getSelectorArea(abs.x, abs.y, abs.z, 16);
             let limit = ritual_effect.teleport.limit;
             let revolutions = 9;
             let height = 0.1;
@@ -80,7 +81,7 @@ EntityEvents.spawned((event) => {
                         event.server.runCommandSilent(command);
 
                         // spiral of dragon_breath
-                        command = `/execute in ${ritual_dimension} run particle minecraft:dragon_breath ${coord.x} ${coord.y} ${coord.z} 0.5 0.5 0.5 0.1 3`;
+                        command = `/execute in ${ritual_dimension} run particle minecraft:dragon_breath ${coord.x} ${coord.y} ${coord.z} 0.5 0.5 0.5 0.1 9`;
                         event.server.runCommandSilent(command);
 
                         // spiral shockwave
@@ -90,6 +91,18 @@ EntityEvents.spawned((event) => {
                         event.server.runCommandSilent(command);
 
                         // TODO: Add Sounds
+                        if (index % 10 === 0) {
+                            command = `/execute in ${ritual_dimension} run playsound minecraft:ambient.cave block @p ${coord.x} ${coord.y} ${coord.z} 1 0.5`;
+                            event.server.runCommandSilent(command);
+                        }
+
+                        if (index % 3 === 0) {
+                            command = `/execute in ${ritual_dimension} run playsound minecraft:block.rooted_dirt.step block @p ${coord.x} ${coord.y} ${coord.z} 1 0.1`;
+                            event.server.runCommandSilent(command);
+
+                            command = `/execute in ${ritual_dimension} run playsound minecraft:block.soul_sand.step block @p ${coord.x} ${coord.y} ${coord.z} 1 0.1`;
+                            event.server.runCommandSilent(command);
+                        }
                     });
                 });
 
@@ -98,6 +111,12 @@ EntityEvents.spawned((event) => {
             event.server.scheduleInTicks(delay, (c) => {
                 command = `/execute in ${ritual_dimension} run particle minecraft:flash ${abs.x} ${abs.y} ${abs.z} 0 0 0 0.1 1`;
                 event.server.runCommandSilent(command);
+
+                command = `/execute in ${ritual_dimension} run playsound minecraft:block.end_portal.spawn block @p ${abs.x} ${abs.y} ${abs.z} 10 1`;
+                event.server.runCommandSilent(command);
+
+                command = `/execute in ${ritual_dimension} run effect give @e[limit=${limit},sort=nearest,${area}] minecraft:darkness 10 0 true`;
+                event.server.runCommandSilent(command);
             });
 
             delay = duration + 20;
@@ -105,12 +124,26 @@ EntityEvents.spawned((event) => {
                 if (ritual_effect.teleport.departure.includes(ritual_dimension)) {
                     // Yeet the player to the target dimension after delay
                     let area = getSelectorArea(abs.x, abs.y, abs.z, ritual_effect.teleport.range);
+
+                    command = `/execute in ${ritual_dimension} run title @p[${area}] subtitle {"text":"Mind the Gap","color":"#D3D3D3"}`;
+                    event.server.runCommandSilent(command);
+                    command = `/execute in ${ritual_dimension} run title @p[${area}] title {"text":"Teleportation Ritual","underlined":true,"color":"#EF0AEF"}`;
+                    event.server.runCommandSilent(command);
+
+                    command = `/execute in ${ritual_dimension} run playsound minecraft:entity.enderman.teleport block @p ${abs.x} ${abs.y} ${abs.z} 10 1`;
+                    event.server.runCommandSilent(command);
+
                     command = `/execute in ${ritual_dimension} as @e[limit=${limit},sort=nearest,${area}] in ${destination} run tp ${dest.x} ${dest.y} ${dest.z}`;
                     event.server.runCommandSilent(command);
                 } else {
                     // Warn player this cannot be perfomed in this dimension.
                     let area = getSelectorArea(abs.x, abs.y, abs.z, 10);
-                    command = `/execute in ${ritual_dimension} run tellraw @p[${area}] "Ritual destination unreachable from here."`;
+                    command = `/execute in ${ritual_dimension} run title @p[${area}] subtitle {"text":"Destination Unreachable","color":"#D3D3D3"}`;
+                    event.server.runCommandSilent(command);
+                    command = `/execute in ${ritual_dimension} run title @p[${area}] title {"text":"Teleportation Ritual","underlined":true,"color":"#EF0AEF"}`;
+                    event.server.runCommandSilent(command);
+
+                    command = `/execute in ${ritual_dimension} run playsound minecraft:entity.warden.dig block @p ${abs.x} ${abs.y} ${abs.z} 10 1`;
                     event.server.runCommandSilent(command);
                 }
             });
