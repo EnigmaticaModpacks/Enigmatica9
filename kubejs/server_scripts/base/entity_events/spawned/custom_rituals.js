@@ -51,11 +51,11 @@ EntityEvents.spawned((event) => {
             };
             let limit = ritual_effect.teleport.limit;
             let revolutions = 9;
-            let height = 1;
+            let height = 0.1;
             let upper_radius = 16;
             let lower_radius = 1;
             let density = 50;
-            let duration = 6 * 20;
+            let duration = 18 * 20;
             let delay;
 
             // Slowly draw a spiral in reverse
@@ -77,6 +77,16 @@ EntityEvents.spawned((event) => {
                     event.server.scheduleInTicks(index * delay, (c) => {
                         // spiral of swirlies
                         command = `/execute in ${ritual_dimension} run particle minecraft:entity_effect ${coord.x} ${coord.y} ${coord.z} 0.44 0.07 0.89 1 0`;
+                        event.server.runCommandSilent(command);
+
+                        // spiral of smoke
+                        command = `/execute in ${ritual_dimension} run particle minecraft:dust 0.35 0.02 0.52 1 ${coord.x} ${coord.y} ${coord.z} 0 0 0 0.1 0`;
+                        event.server.runCommandSilent(command);
+
+                        // spiral shockwave
+                        command = `/execute in ${ritual_dimension} run particle cofh_core:shockwave 3 3 3 0.5 ${
+                            coord.x
+                        } ${coord.y - 1} ${coord.z} 0.2 0.2 0.2 0.1 10`;
                         event.server.runCommandSilent(command);
                     });
                 });
