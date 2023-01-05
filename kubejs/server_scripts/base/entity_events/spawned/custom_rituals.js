@@ -79,8 +79,12 @@ EntityEvents.spawned((event) => {
                         command = `/execute in ${ritual_dimension} run particle minecraft:entity_effect ${coord.x} ${coord.y} ${coord.z} 0.44 0.07 0.89 1 0`;
                         event.server.runCommandSilent(command);
 
-                        // spiral of smoke
-                        command = `/execute in ${ritual_dimension} run particle minecraft:dust 0.35 0.02 0.52 1 ${coord.x} ${coord.y} ${coord.z} 0 0 0 0.1 0`;
+                        // // spiral of smoke
+                        // command = `/execute in ${ritual_dimension} run particle minecraft:dust 0.35 0.02 0.52 1 ${coord.x} ${coord.y} ${coord.z} 0 0 0 0.1 0`;
+                        // event.server.runCommandSilent(command);
+
+                        // spiral of dragon_breath
+                        command = `/execute in ${ritual_dimension} run particle minecraft:dragon_breath ${coord.x} ${coord.y} ${coord.z} 0.5 0.5 0.5 0.1 3`;
                         event.server.runCommandSilent(command);
 
                         // spiral shockwave
