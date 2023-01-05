@@ -7,36 +7,31 @@ EntityEvents.spawned((event) => {
     if (Object.keys(ritual_effects).includes(item_type)) {
         // Get Coordinates
         let x_coord = event.entity.x;
-        // let x_coord = event.entity.m_20185_();
         let y_coord = event.entity.y;
-        // let y_coord = event.entity.m_20186_();
         let z_coord = event.entity.z;
-        // let z_coord = event.entity.m_20189_();
-        // console.log(`Coordinates: ${x_coord} ${y_coord} ${z_coord}`);
 
         // Dimension ritual was executed in
         let ritual_dimension = String(event.level.getDimension());
 
         // Set the count of the item to zero, removing it.
         event.entity.item.count = 0;
-        // event.entity.item.m_41764_(0);
         // Get Ritual
         let ritual_effect = ritual_effects[item_type];
         // Instantiate the rest of our variables
-        let spread,
-            x,
+        let x,
             y,
             z,
             area,
-            amplifier,
-            limit,
-            effect,
-            duration,
-            destination,
-            command,
-            coordinates,
             delay,
             color,
+            limit,
+            effect,
+            spread,
+            command,
+            duration,
+            amplifier,
+            coordinates,
+            destination,
             secondary_particle;
 
         if (ritual_effect.summon) {
