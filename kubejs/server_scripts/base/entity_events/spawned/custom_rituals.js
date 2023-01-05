@@ -162,7 +162,7 @@ EntityEvents.spawned((event) => {
             let lower_radius = 5;
             let density = 10;
             let duration = 3 * 20;
-            let aura_per_step = Math.floor(aura_amount / coordinates.length);
+            let aura_per_step;
             let delay;
 
             if (ritual_dimension == 'minecraft:the_nether' || ritual_dimension == 'blue_skies:everbright') {
@@ -190,6 +190,7 @@ EntityEvents.spawned((event) => {
                 lower_radius,
                 density
             );
+            aura_per_step = Math.floor(aura_amount / coordinates.length);
             delay = duration / coordinates.length;
             coordinates.forEach((coord, index) => {
                 event.server.scheduleInTicks(index * delay, (c) => {
