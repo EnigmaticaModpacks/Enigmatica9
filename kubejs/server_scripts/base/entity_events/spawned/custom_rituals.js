@@ -5,23 +5,20 @@ EntityEvents.spawned((event) => {
 
     let item_type = event.entity.item.id.split(':')[1];
     if (Object.keys(ritual_effects).includes(item_type)) {
-        // Get Coordinates
-        let x_coord = event.entity.x;
-        let y_coord = event.entity.y;
-        let z_coord = event.entity.z;
+        // Get absolute Coordinates. these should not change throughout the script
+        let abs = { x: event.entity.x, y: event.entity.y, z: event.entity.z };
 
         // Dimension ritual was executed in
         let ritual_dimension = String(event.level.getDimension());
 
         // Set the count of the item to zero, removing it.
         event.entity.item.count = 0;
+
         // Get Ritual
         let ritual_effect = ritual_effects[item_type];
         // Instantiate the rest of our variables
-        let x,
-            y,
-            z,
-            area,
+
+        let area,
             delay,
             color,
             limit,
@@ -37,11 +34,9 @@ EntityEvents.spawned((event) => {
         if (ritual_effect.summon) {
             spread = ritual_effect.summon.spread;
             ritual_effect.summon.entities.forEach((entity) => {
-                x = randomFloat(x_coord, spread);
-                y = y_coord;
-                z = randomFloat(z_coord, spread);
+                let cur = { x: randomFloat(abs.x, spread), y: abs.y, z: randomFloat(abs.z, spread) };
                 // Summon desired entities
-                command = `/execute in ${ritual_dimension} run summon ${entity} ${x} ${y} ${z}`;
+                command = `/execute in ${ritual_dimension} run summon ${entity} ${cur.x} ${cur.y} ${cur.z}`;
                 // console.log(command);
                 event.server.runCommandSilent(command);
             });
@@ -50,7 +45,7 @@ EntityEvents.spawned((event) => {
         // Runs after summon, allowing summoned mobs to get buffs
         if (ritual_effect.potion) {
             ritual_effect.potion.spells.forEach((spell) => {
-                area = getSelectorArea(x_coord, y_coord, z_coord, spell.range);
+                area = getSelectorArea(abs.x, abs.y, abs.z, spell.range);
                 amplifier = spell.level - 1 < 0 ? 0 : spell.level - 1;
                 limit = spell.limit;
                 effect = spell.effect;
@@ -65,22 +60,25 @@ EntityEvents.spawned((event) => {
         // Runs after potion effects, allowing the application of protective buffs (like slowfall) before teleportation.
         if (ritual_effect.teleport) {
             if (ritual_effect.teleport.departure.includes(ritual_dimension)) {
-                area = getSelectorArea(x_coord, y_coord, z_coord, ritual_effect.teleport.range);
-                destination = ritual_effect.teleport.arrival;
-                limit = ritual_effect.teleport.limit;
-
                 let revolutions = 9;
                 let height = 1;
                 let upper_radius = 16;
                 let lower_radius = 1;
                 let density = 50;
                 let duration = 6 * 20;
-                x = x_coord;
-                y = y_coord - 0.5;
-                z = z_coord;
 
+                let cur = { x: abs.x, y: abs.y - 0.5, z: abs.z };
                 // Slowly draw a spiral in reverse
-                coordinates = getSpiralCoordinates(x, y, z, revolutions, height, upper_radius, lower_radius, density);
+                coordinates = getSpiralCoordinates(
+                    cur.x,
+                    cur.y,
+                    cur.z,
+                    revolutions,
+                    height,
+                    upper_radius,
+                    lower_radius,
+                    density
+                );
                 delay = duration / coordinates.length;
 
                 coordinates
@@ -98,23 +96,28 @@ EntityEvents.spawned((event) => {
                 delay = duration;
 
                 event.server.scheduleInTicks(delay, (c) => {
-                    command = `/execute in ${ritual_dimension} run particle minecraft:flash ${x_coord} ${y_coord} ${z_coord} 0 0 0 0.1 1`;
+                    command = `/execute in ${ritual_dimension} run particle minecraft:flash ${abs.x} ${abs.y} ${abs.z} 0 0 0 0.1 1`;
                     event.server.runCommandSilent(command);
                 });
 
                 // Yeet the player to the target dimension after delay
+                let dest = {
+                    x: randomFloat(abs.x, ritual_effect.teleport.uncertainty),
+                    y: abs.y + 200,
+                    z: randomFloat(abs.z, ritual_effect.teleport.uncertainty)
+                };
+                area = getSelectorArea(abs.x, abs.y, abs.z, ritual_effect.teleport.range);
+                destination = ritual_effect.teleport.arrival;
+                limit = ritual_effect.teleport.limit;
                 delay = duration + 20;
-                x = randomFloat(x_coord, ritual_effect.teleport.uncertainty);
-                y = y_coord + 200;
-                z = randomFloat(z_coord, ritual_effect.teleport.uncertainty);
 
                 event.server.scheduleInTicks(delay, (c) => {
-                    command = `/execute in ${ritual_dimension} as @e[limit=${limit},sort=nearest,${area}] in ${destination} run tp ${x} ${y} ${z}`;
+                    command = `/execute in ${ritual_dimension} as @e[limit=${limit},sort=nearest,${area}] in ${destination} run tp ${dest.x} ${dest.y} ${dest.z}`;
                     event.server.runCommandSilent(command);
                 });
             } else {
                 // Warn player this cannot be perfomed in this dimension.
-                area = getSelectorArea(x_coord, y_coord, z_coord, 10);
+                area = getSelectorArea(abs.x, abs.y, abs.z, 10);
                 command = `/execute in ${ritual_dimension} run tellraw @p[${area}] "Ritual destination unreachable from here."`;
                 // console.log(command);
                 event.server.runCommandSilent(command);
@@ -123,10 +126,8 @@ EntityEvents.spawned((event) => {
 
         // Gateway Pearl Handling
         if (ritual_effect.gateway) {
-            x = x_coord;
-            y = y_coord - 0.5;
-            z = z_coord;
-
+            let cur = { x: abs.x, y: abs.y - 0.5, z: abs.z };
+            let gate = { x: abs.x, y: abs.y + 1, z: abs.z };
             let gateway_type = event.entity.item.nbt.gateway;
             let radius = event.entity.item.nbt.radius;
             let num_points = 5;
@@ -134,8 +135,9 @@ EntityEvents.spawned((event) => {
             density = 5;
 
             // Draw a slow circle
-            coordinates = getCircleCoordinates(x, y, z, radius, density);
+            coordinates = getCircleCoordinates(cur.x, cur.y, cur.z, radius, density);
             delay = duration / coordinates.length;
+
             coordinates.forEach((coord, index) => {
                 event.server.scheduleInTicks(index * delay, (c) => {
                     command = `/execute in ${ritual_dimension} run particle minecraft:soul_fire_flame ${coord.x} ${coord.y} ${coord.z}`;
@@ -144,8 +146,9 @@ EntityEvents.spawned((event) => {
             });
 
             // Draw the full Pentagram in one go after the slow circle
-            coordinates = coordinates.concat(getStarCoordinates(x, y, z, radius, num_points, density));
+            coordinates = coordinates.concat(getStarCoordinates(cur.x, cur.y, cur.z, radius, num_points, density));
             delay = duration + 20;
+
             event.server.scheduleInTicks(delay, (c) => {
                 coordinates.forEach((coord) => {
                     command = `/execute in ${ritual_dimension} run particle minecraft:soul_fire_flame ${coord.x} ${coord.y} ${coord.z}`;
@@ -163,18 +166,14 @@ EntityEvents.spawned((event) => {
                 });
 
                 // Open the Gateway
-                command = `/execute in ${ritual_dimension} run open_gateway ${x} ${y + 1.5} ${z} ${gateway_type}`;
+                command = `/execute in ${ritual_dimension} run open_gateway ${gate.x} ${gate.y} ${gate.z} ${gateway_type}`;
                 event.server.runCommandSilent(command);
             });
         }
 
         // Aura Generation
         if (ritual_effect.aura) {
-            x = x_coord;
-            y = y_coord + 1;
-            z = z_coord;
-            duration = 3 * 20;
-
+            let cur = { x: abs.x, y: abs.y + 1, z: abs.z };
             let revolutions = 9;
             let height = 3;
             let upper_radius = 8;
@@ -198,7 +197,17 @@ EntityEvents.spawned((event) => {
             }
 
             // Draw the Spiral
-            coordinates = getSpiralCoordinates(x, y, z, revolutions, height, upper_radius, lower_radius, density);
+            coordinates = getSpiralCoordinates(
+                cur.x,
+                cur.y,
+                cur.z,
+                revolutions,
+                height,
+                upper_radius,
+                lower_radius,
+                density
+            );
+            duration = 3 * 20;
             delay = duration / coordinates.length;
             let aura_per_step = Math.floor(aura_amount / coordinates.length);
 
