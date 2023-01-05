@@ -9,7 +9,7 @@ EntityEvents.spawned((event) => {
         let ritual_dimension = String(event.level.getDimension());
         let ritual_effect = ritual_effects[item_type];
         event.entity.item.count = 0; // Set the count of the item to zero, removing it.
-        let color, command, coordinates, secondary_particle;
+        let command, coordinates;
 
         // Summon Entity Handling
         if (ritual_effect.summon) {
@@ -42,67 +42,66 @@ EntityEvents.spawned((event) => {
         // Teleportation Handling
         // Runs after potion effects, allowing the application of protective buffs (like slowfall) before teleportation.
         if (ritual_effect.teleport) {
-            if (ritual_effect.teleport.departure.includes(ritual_dimension)) {
-                let area = getSelectorArea(abs.x, abs.y, abs.z, ritual_effect.teleport.range);
-                let destination = ritual_effect.teleport.arrival;
-                let cur = { x: abs.x, y: abs.y - 0.5, z: abs.z };
-                let dest = {
-                    x: randomFloat(abs.x, ritual_effect.teleport.uncertainty),
-                    y: abs.y + 200,
-                    z: randomFloat(abs.z, ritual_effect.teleport.uncertainty)
-                };
-                let limit = ritual_effect.teleport.limit;
-                let revolutions = 9;
-                let height = 1;
-                let upper_radius = 16;
-                let lower_radius = 1;
-                let density = 50;
-                let duration = 6 * 20;
-                let delay;
+            let destination = ritual_effect.teleport.arrival;
+            let cur = { x: abs.x, y: abs.y - 0.5, z: abs.z };
+            let dest = {
+                x: randomFloat(abs.x, ritual_effect.teleport.uncertainty),
+                y: abs.y + 200,
+                z: randomFloat(abs.z, ritual_effect.teleport.uncertainty)
+            };
+            let limit = ritual_effect.teleport.limit;
+            let revolutions = 9;
+            let height = 1;
+            let upper_radius = 16;
+            let lower_radius = 1;
+            let density = 50;
+            let duration = 6 * 20;
+            let delay;
 
-                // Slowly draw a spiral in reverse
-                coordinates = getSpiralCoordinates(
-                    cur.x,
-                    cur.y,
-                    cur.z,
-                    revolutions,
-                    height,
-                    upper_radius,
-                    lower_radius,
-                    density
-                );
-                delay = duration / coordinates.length;
-                coordinates
-                    .slice()
-                    .reverse()
-                    .forEach((coord, index) => {
-                        event.server.scheduleInTicks(index * delay, (c) => {
-                            // spiral of swirlies
-                            command = `/execute in ${ritual_dimension} run particle minecraft:entity_effect ${coord.x} ${coord.y} ${coord.z} 0.44 0.07 0.89 1 0`;
-                            event.server.runCommandSilent(command);
-                        });
+            // Slowly draw a spiral in reverse
+            coordinates = getSpiralCoordinates(
+                cur.x,
+                cur.y,
+                cur.z,
+                revolutions,
+                height,
+                upper_radius,
+                lower_radius,
+                density
+            );
+            delay = duration / coordinates.length;
+            coordinates
+                .slice()
+                .reverse()
+                .forEach((coord, index) => {
+                    event.server.scheduleInTicks(index * delay, (c) => {
+                        // spiral of swirlies
+                        command = `/execute in ${ritual_dimension} run particle minecraft:entity_effect ${coord.x} ${coord.y} ${coord.z} 0.44 0.07 0.89 1 0`;
+                        event.server.runCommandSilent(command);
                     });
-
-                // Flash at the end of the spiral
-                delay = duration;
-                event.server.scheduleInTicks(delay, (c) => {
-                    command = `/execute in ${ritual_dimension} run particle minecraft:flash ${abs.x} ${abs.y} ${abs.z} 0 0 0 0.1 1`;
-                    event.server.runCommandSilent(command);
                 });
 
-                // Yeet the player to the target dimension after delay
-                delay = duration + 20;
-                event.server.scheduleInTicks(delay, (c) => {
+            // Flash at the end of the spiral
+            delay = duration;
+            event.server.scheduleInTicks(delay, (c) => {
+                command = `/execute in ${ritual_dimension} run particle minecraft:flash ${abs.x} ${abs.y} ${abs.z} 0 0 0 0.1 1`;
+                event.server.runCommandSilent(command);
+            });
+
+            delay = duration + 20;
+            event.server.scheduleInTicks(delay, (c) => {
+                if (ritual_effect.teleport.departure.includes(ritual_dimension)) {
+                    // Yeet the player to the target dimension after delay
+                    let area = getSelectorArea(abs.x, abs.y, abs.z, ritual_effect.teleport.range);
                     command = `/execute in ${ritual_dimension} as @e[limit=${limit},sort=nearest,${area}] in ${destination} run tp ${dest.x} ${dest.y} ${dest.z}`;
                     event.server.runCommandSilent(command);
-                });
-            } else {
-                // Warn player this cannot be perfomed in this dimension.
-                let area = getSelectorArea(abs.x, abs.y, abs.z, 10);
-                command = `/execute in ${ritual_dimension} run tellraw @p[${area}] "Ritual destination unreachable from here."`;
-                // console.log(command);
-                event.server.runCommandSilent(command);
-            }
+                } else {
+                    // Warn player this cannot be perfomed in this dimension.
+                    let area = getSelectorArea(abs.x, abs.y, abs.z, 10);
+                    command = `/execute in ${ritual_dimension} run tellraw @p[${area}] "Ritual destination unreachable from here."`;
+                    event.server.runCommandSilent(command);
+                }
+            });
         }
 
         // Gateway Pearl Handling
@@ -164,6 +163,8 @@ EntityEvents.spawned((event) => {
             let duration = 3 * 20;
             let aura_per_step;
             let delay;
+            let color;
+            let secondary_particle;
 
             if (ritual_dimension == 'minecraft:the_nether' || ritual_dimension == 'blue_skies:everbright') {
                 // Ghosts Aura - Red
