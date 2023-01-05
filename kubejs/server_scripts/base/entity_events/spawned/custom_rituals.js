@@ -138,7 +138,7 @@ EntityEvents.spawned((event) => {
             x = x_coord;
             y = y_coord + 1;
             z = z_coord;
-
+            duration = 3 * 20;
             let revolutions = 9;
             let height = 3;
             let upper_radius = 8;
@@ -146,7 +146,6 @@ EntityEvents.spawned((event) => {
             let density = 10;
             let aura_amount = event.entity.item.nbt.aura_amount;
             let aura_max = event.entity.item.nbt.aura_max;
-            duration = 3 * 20;
 
             if (ritual_dimension == 'minecraft:the_nether' || ritual_dimension == 'blue_skies:everbright') {
                 // Ghosts Aura - Red
