@@ -58,7 +58,6 @@ EntityEvents.spawned((event) => {
 
                 // Apply desired spell
                 command = `/execute in ${ritual_dimension} run effect give @e[limit=${limit},sort=nearest,${area}] ${effect} ${duration} ${amplifier} true`;
-                // console.log(command);
                 event.server.runCommandSilent(command);
             });
         }
@@ -67,18 +66,18 @@ EntityEvents.spawned((event) => {
         if (ritual_effect.teleport) {
             if (ritual_effect.teleport.departure.includes(ritual_dimension)) {
                 area = getSelectorArea(x_coord, y_coord, z_coord, ritual_effect.teleport.range);
-                limit = ritual_effect.teleport.limit;
-                x = randomFloat(x_coord, ritual_effect.teleport.uncertainty);
-                y = y_coord + 200;
-                z = randomFloat(z_coord, ritual_effect.teleport.uncertainty);
                 destination = ritual_effect.teleport.arrival;
+                limit = ritual_effect.teleport.limit;
 
                 let revolutions = 9;
                 let height = 1;
-                let upper_radius = 8;
+                let upper_radius = 16;
                 let lower_radius = 1;
-                let density = 10;
-                let duration = 3 * 20;
+                let density = 50;
+                let duration = 6 * 20;
+                x = x_coord;
+                y = y_coord - 0.5;
+                z = z_coord;
 
                 // Slowly draw a spiral in reverse
                 coordinates = getSpiralCoordinates(x, y, z, revolutions, height, upper_radius, lower_radius, density);
@@ -89,21 +88,26 @@ EntityEvents.spawned((event) => {
                     .reverse()
                     .forEach((coord, index) => {
                         event.server.scheduleInTicks(index * delay, (c) => {
-                            // Sprinkle some leaves
-                            command = `/execute in ${ritual_dimension} run particle twilightforest:fallen_leaf ${color} ${coord.x} ${coord.y} ${coord.z} 1 1 1 0.1 2`;
-                            event.server.runCommandSilent(command);
-
-                            // Sprinkle secondary particle
-                            command = `/execute in ${ritual_dimension} run particle ${secondary_particle} ${coord.x} ${coord.y} ${coord.z} 1 1 1 0.1 1`;
+                            // spiral of swirlies
+                            command = `/execute in ${ritual_dimension} run particle minecraft:entity_effect ${coord.x} ${coord.y} ${coord.z} 0.44 0.07 0.89 1 0`;
                             event.server.runCommandSilent(command);
                         });
                     });
 
-                // Yeet the player to the target dimension after delay
+                delay = duration;
+                // Flash at the end of the spiral
+                event.server.scheduleInTicks(delay, (c) => {
+                    command = `/execute in ${ritual_dimension} run particle minecraft:flash ${x_coord} ${y_coord} ${z_coord} 0 0 0 0.1 1`;
+                    event.server.runCommandSilent(command);
+                });
+
                 delay = duration + 20;
+                x = randomFloat(x_coord, ritual_effect.teleport.uncertainty);
+                y = y_coord + 200;
+                z = randomFloat(z_coord, ritual_effect.teleport.uncertainty);
+                // Yeet the player to the target dimension after delay
                 event.server.scheduleInTicks(delay, (c) => {
                     command = `/execute in ${ritual_dimension} as @e[limit=${limit},sort=nearest,${area}] in ${destination} run tp ${x} ${y} ${z}`;
-                    // console.log(command);
                     event.server.runCommandSilent(command);
                 });
             } else {
