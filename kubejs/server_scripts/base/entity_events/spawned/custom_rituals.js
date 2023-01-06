@@ -211,7 +211,7 @@ EntityEvents.spawned((event) => {
 
                 // Open the Gateway
                 command = `/execute in ${ritual_dimension} run open_gateway ${gate.x} ${gate.y} ${gate.z} ${gateway_type}`;
-                // event.server.runCommandSilent(command);
+                event.server.runCommandSilent(command);
             });
         }
 
