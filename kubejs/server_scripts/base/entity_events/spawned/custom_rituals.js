@@ -90,7 +90,6 @@ EntityEvents.spawned((event) => {
                         } ${coord.y - 1} ${coord.z} 0.2 0.2 0.2 0.1 10`;
                         event.server.runCommandSilent(command);
 
-                        // TODO: Add Sounds
                         if (index % 10 === 0) {
                             command = `/execute in ${ritual_dimension} run playsound minecraft:ambient.cave block @p ${coord.x} ${coord.y} ${coord.z} 1 0.5`;
                             event.server.runCommandSilent(command);
@@ -119,9 +118,9 @@ EntityEvents.spawned((event) => {
                 event.server.runCommandSilent(command);
             });
 
-            delay = duration + 20;
-            event.server.scheduleInTicks(delay, (c) => {
-                if (ritual_effect.teleport.departure.includes(ritual_dimension)) {
+            if (ritual_effect.teleport.departure.includes(ritual_dimension)) {
+                let delay = duration + 20;
+                event.server.scheduleInTicks(delay, (c) => {
                     // Yeet the player to the target dimension after delay
                     let area = getSelectorArea(abs.x, abs.y, abs.z, ritual_effect.teleport.range);
 
@@ -130,12 +129,17 @@ EntityEvents.spawned((event) => {
                     command = `/execute in ${ritual_dimension} run title @p[${area}] title {"text":"Teleportation Ritual","underlined":true,"color":"#EF0AEF"}`;
                     event.server.runCommandSilent(command);
 
-                    command = `/execute in ${ritual_dimension} run playsound minecraft:entity.enderman.teleport block @p ${abs.x} ${abs.y} ${abs.z} 10 1`;
+                    command = `/execute in ${ritual_dimension} run playsound minecraft:block.respawn_anchor.set_spawn block @p ${abs.x} ${abs.y} ${abs.z} 10 1`;
                     event.server.runCommandSilent(command);
-
+                });
+                delay = duration + 100;
+                event.server.scheduleInTicks(delay, (c) => {
                     command = `/execute in ${ritual_dimension} as @e[limit=${limit},sort=nearest,${area}] in ${destination} run tp ${dest.x} ${dest.y} ${dest.z}`;
                     event.server.runCommandSilent(command);
-                } else {
+                });
+            } else {
+                let delay = duration + 20;
+                event.server.scheduleInTicks(delay, (c) => {
                     // Warn player this cannot be perfomed in this dimension.
                     let area = getSelectorArea(abs.x, abs.y, abs.z, 10);
                     command = `/execute in ${ritual_dimension} run title @p[${area}] subtitle {"text":"Destination Unreachable","color":"#D3D3D3"}`;
@@ -143,10 +147,10 @@ EntityEvents.spawned((event) => {
                     command = `/execute in ${ritual_dimension} run title @p[${area}] title {"text":"Teleportation Ritual","underlined":true,"color":"#EF0AEF"}`;
                     event.server.runCommandSilent(command);
 
-                    command = `/execute in ${ritual_dimension} run playsound minecraft:entity.warden.dig block @p ${abs.x} ${abs.y} ${abs.z} 10 1`;
+                    command = `/execute in ${ritual_dimension} run playsound minecraft:block.respawn_anchor.deplete block @p ${abs.x} ${abs.y} ${abs.z} 10 1`;
                     event.server.runCommandSilent(command);
-                }
-            });
+                });
+            }
         }
 
         // Gateway Pearl Handling
@@ -168,13 +172,21 @@ EntityEvents.spawned((event) => {
                     command = `/execute in ${ritual_dimension} run particle minecraft:soul_fire_flame ${coord.x} ${coord.y} ${coord.z}`;
                     event.server.runCommandSilent(command);
 
-                    // TODO: Add Sounds
+                    if (index % 5 === 0) {
+                        command = `/execute in ${ritual_dimension} run playsound minecraft:particle.soul_escape block @p ${coord.x} ${coord.y} ${coord.z} 0.5 1`;
+                        event.server.runCommandSilent(command);
+                    }
+
+                    if (index % Math.floor(coordinates.length / num_points) === 0) {
+                        command = `/execute in ${ritual_dimension} run playsound blue_skies:entity.armored_frost_spirit.hurt block @p ${coord.x} ${coord.y} ${coord.z} 2 1`;
+                        event.server.runCommandSilent(command);
+                    }
                 });
             });
 
             // Draw the full Pentagram in one go after the slow circle
             coordinates = coordinates.concat(getStarCoordinates(cur.x, cur.y, cur.z, radius, num_points, density));
-            delay = duration + 20;
+            delay = duration + 40;
             event.server.scheduleInTicks(delay, (c) => {
                 coordinates.forEach((coord) => {
                     command = `/execute in ${ritual_dimension} run particle minecraft:soul_fire_flame ${coord.x} ${coord.y} ${coord.z}`;
@@ -189,13 +201,17 @@ EntityEvents.spawned((event) => {
                         coord.y - 0.5
                     } ${coord.z}`;
                     event.server.runCommandSilent(command);
-
-                    // TODO: Add Sounds
                 });
+
+                command = `/execute in ${ritual_dimension} run playsound supplementaries:block.bellows.retract block @p ${gate.x} ${gate.y} ${gate.z} 20 1`;
+                event.server.runCommandSilent(command);
+
+                command = `/execute in ${ritual_dimension} run playsound minecraft:block.sculk_shrieker.shriek block @p ${gate.x} ${gate.y} ${gate.z} 10 0.5`;
+                event.server.runCommandSilent(command);
 
                 // Open the Gateway
                 command = `/execute in ${ritual_dimension} run open_gateway ${gate.x} ${gate.y} ${gate.z} ${gateway_type}`;
-                event.server.runCommandSilent(command);
+                // event.server.runCommandSilent(command);
             });
         }
 
@@ -256,8 +272,23 @@ EntityEvents.spawned((event) => {
                     command = `/execute in ${ritual_dimension} run particle ${secondary_particle} ${coord.x} ${coord.y} ${coord.z} 1 1 1 0.1 1`;
                     event.server.runCommandSilent(command);
 
-                    // TODO: Add Sounds
+                    if (index % 5 === 0) {
+                        command = `/execute in ${ritual_dimension} run playsound mekanismgenerators:tile.generator.wind block @p ${coord.x} ${coord.y} ${coord.z} 0.5 1`;
+                        event.server.runCommandSilent(command);
+
+                        command = `/execute in ${ritual_dimension} run playsound chimes:block.bamboo.chiming block @p ${coord.x} ${coord.y} ${coord.z} 1 1`;
+                        event.server.runCommandSilent(command);
+                    }
                 });
+            });
+
+            delay = duration;
+            event.server.scheduleInTicks(delay, (c) => {
+                command = `/execute in ${ritual_dimension} run playsound twilightforest:block.twilightforest.beanstalk.grow block @p ${cur.x} ${cur.y} ${cur.z} 1 1`;
+                event.server.runCommandSilent(command);
+
+                command = `/execute in ${ritual_dimension} run playsound chimes:block.copper.chime block @p ${cur.x} ${cur.y} ${cur.z} 10 1`;
+                event.server.runCommandSilent(command);
             });
         }
     }
