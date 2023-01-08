@@ -56,7 +56,7 @@ const ritual_effects = {
                     // Effect to apply
                     effect: 'minecraft:slow_falling',
                     // Effect Duration in seconds
-                    duration: 60,
+                    duration: 10,
                     // Effect level. 1 means 1
                     level: 1
                 }
@@ -86,7 +86,7 @@ const ritual_effects = {
                     // Effect to apply
                     effect: 'minecraft:slow_falling',
                     // Effect Duration in seconds
-                    duration: 60,
+                    duration: 10,
                     // Effect level. 1 means 1
                     level: 1
                 }
@@ -95,5 +95,8 @@ const ritual_effects = {
     },
     gate_pearl: {
         gateway: true
+    },
+    aura_leaf: {
+        aura: true
     }
 };

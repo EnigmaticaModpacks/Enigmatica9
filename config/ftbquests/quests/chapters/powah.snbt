@@ -14,6 +14,11 @@
 			x: 4.5d
 			y: -0.5d
 			shape: "hexagon"
+			description: [
+				"As the name implies, Powah! is all about generating, storing, and transmitting power through various means. "
+				""
+				"In addition, it offers a few unique mechanics and a variety of new materials to go along with its various tiers. Read along to discover more. "
+			]
 			min_width: 250
 			id: "000000000000016F"
 			tasks: [{
@@ -1047,4 +1052,5 @@
 			}]
 		}
 	]
+	quest_links: [ ]
 }
