@@ -1,4 +1,4 @@
-ServerEvents.tags('item', (event) => {
+ServerEvents.tags('block', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
