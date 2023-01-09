@@ -12,10 +12,7 @@ ServerEvents.recipes((event) => {
         // }
         { id: /immersiveengineering:blastfurnace\/fuel_charcoal/ },
         { id: 'naturesaura:tree_ritual/ore_spawn_powder' },
-        { output: 'twilightforest:ironwood_ingot' },
-        { id: 'mekanism:processing/netherite/dust_to_ancient_debris' },
-        { id: /mekanism:processing\/.*\/ore\/.*from_raw/ },
-        { id: /mekanism:processing\/.*\/.*_ore/ }
+        { output: 'twilightforest:ironwood_ingot' }
     ];
 
     recipes.forEach((recipe) => {

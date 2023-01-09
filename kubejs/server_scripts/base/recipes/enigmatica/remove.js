@@ -7,6 +7,8 @@ ServerEvents.recipes((event) => {
         //     mod: 'sample',
         //     id: 'sample'
         // }
+        { mod: 'gateways' },
+
         { id: /ars_nouveau:.*_dye/ },
 
         { id: /mekanism:enriching\/dye/ },
@@ -16,6 +18,10 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:compat\/byg\/combining\/.*_ore_/ },
         { id: /mekanism:bin\/.*/ },
         { id: /mekanism:crushing\/biofuel/ },
+        { id: 'mekanism:processing/netherite/dust_to_ancient_debris' },
+        { id: /mekanism:processing\/.*\/ore\/.*from_raw$/ },
+        { id: /mekanism:processing\/.*\/to_ore$/ },
+        { id: /mekanism:processing\/.*\/to_deepslate_ore$/ },
 
         { id: 'quark:tweaks/smelting/bone_meal_utility' },
 
@@ -103,8 +109,7 @@ ServerEvents.recipes((event) => {
         { type: 'thermal:sawmill' },
         { type: 'thermal:pulverizer_recycle' },
         { type: 'thermal:insolator' },
-        { type: 'thermal:compression_fuel' },
-        { mod: 'gateways' }
+        { type: 'thermal:compression_fuel' }
     ];
 
     colors.forEach((color) => {
