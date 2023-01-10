@@ -5,10 +5,10 @@ ServerEvents.highPriorityData((event) => {
             name: 'bee',
             weight: 100,
             mainhands: [
-                { weight: 3, stack: { item: 'minecraft:gold_sword', nbt: default_nbt } },
-                { weight: 3, stack: { item: 'minecraft:gold_axe', nbt: default_nbt } },
-                { weight: 2, stack: { item: 'minecraft:gold_pickaxe', nbt: default_nbt } },
-                { weight: 2, stack: { item: 'minecraft:gold_shovel', nbt: default_nbt } }
+                { weight: 3, stack: { item: 'minecraft:golden_sword', nbt: default_nbt } },
+                { weight: 3, stack: { item: 'minecraft:golden_axe', nbt: default_nbt } },
+                { weight: 2, stack: { item: 'minecraft:golden_pickaxe', nbt: default_nbt } },
+                { weight: 2, stack: { item: 'minecraft:golden_shovel', nbt: default_nbt } }
             ],
             offhands: [{ weight: 1, stack: { item: 'the_bumblezone:honey_crystal_shield' } }],
             boots: [
