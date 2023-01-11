@@ -13,7 +13,8 @@ ServerEvents.tags('item', (event) => {
         `blue_skies:raw_ventium_block`,
         `blue_skies:raw_horizonite_block`,
         `blue_skies:raw_aquite_block`,
-        `blue_skies:raw_charoite_block`
+        `blue_skies:raw_charoite_block`,
+        `occultism:iesnium_block`
     ]);
     event.add(`forge:storage_blocks/glowstone`, 'minecraft:glowstone');
 
