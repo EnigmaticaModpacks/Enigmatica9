@@ -32,6 +32,8 @@
 		block_side_attachment = false
 		#Makes sliding down ropes as fast as free falling, still negating fall damage
 		slide_on_fall = true
+		#In case you want to disable supplementaries ropes you can specify here another mod rope and they will be used for rope arrows and in mineshafts instead
+		rope_override = "supplementaries:rope"
 
 	[blocks.pedestal]
 		#If enabled end crystals placed on a pedestals will provide an enchantment power bonus equivalent to 3 bookshelves
@@ -384,8 +386,6 @@
 		bypass_when_on = "MAIN_HAND"
 
 	[items.rope_arrow]
-		#In case you want to disable supplementaries ropes you can specify here another mod rope and they will be used for rope arrows instead
-		rope_override = "supplementaries:rope"
 		#Max number of robe items allowed to be stored inside a rope arrow
 		#Range: 1 ~ 256
 		capacity = 32
@@ -441,6 +441,8 @@
 		#Increase this number to alter the probability for a Skeleton with quiver to spawn. Note that this also depends on local difficulty so you wont ever see them on easy and very rarely on normal. Similar logic to equipment
 		#Range: 0.0 ~ 1.0
 		quiver_skeleton_chance = 0.2
+		#Allows quiver to only be used when in offhand or in curio slot
+		only_works_in_curio = false
 
 	[items.soap]
 		#Dyed Bock types that cannot be cleaned with soap

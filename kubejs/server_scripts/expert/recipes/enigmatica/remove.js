@@ -32,6 +32,9 @@ ServerEvents.recipes((event) => {
         { type: 'minecraft:smelting', output: '#forge:gems' },
         { type: 'minecraft:smelting', output: '#forge:dusts' },
 
+        // { type: 'minecraft:blasting', input: '#forge:ores' },
+        // { type: 'minecraft:blasting', input: '#forge:raw_materials' },
+
         { type: 'minecraft:blasting', output: '#forge:nuggets' },
         { type: 'minecraft:blasting', output: '#forge:ingots' },
         { type: 'minecraft:blasting', output: '#forge:gems' },
