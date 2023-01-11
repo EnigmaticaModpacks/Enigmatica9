@@ -7,7 +7,11 @@ let localDebug = false
 
 // Main Part
 ServerEvents.recipes((event) => {
-    const id_prefix = 'enigmatica:unification/ore_processing/'
+    if (global.isNormalMode == false) {
+        return;
+    }
+
+    const id_prefix = 'enigmatica:normal/unification/ore_processing/'
     let metals = Object.keys(metal_properties)
     let gems = Object.keys(gemProperties)
     

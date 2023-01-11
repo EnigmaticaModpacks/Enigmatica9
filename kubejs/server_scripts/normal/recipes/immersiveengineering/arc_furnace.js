@@ -1,5 +1,9 @@
 ServerEvents.recipes((event) => {
-    const id_prefix = 'enigmatica:base/immersiveengineering/arc_furnace/';
+    if (global.isNormalMode == false) {
+        return;
+    }
+    
+    const id_prefix = 'enigmatica:normal/immersiveengineering/arc_furnace/';
 
     // Note: Arc Furnace recipe handler is damaged by the time of writing this script (26.12.2022) -> Do not use secondaries field!
     // Note 2: For "Ease of use", use an object {item: "id:here", count: 2} for input and additives, those will be used with Ingredient.of() later on! Tag can also be used in place of "id:here"

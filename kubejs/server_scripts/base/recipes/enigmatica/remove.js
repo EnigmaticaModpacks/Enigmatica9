@@ -7,7 +7,6 @@ ServerEvents.recipes((event) => {
         //     mod: 'sample',
         //     id: 'sample'
         // }
-        { mod: 'gateways' },
 
         { id: /ars_nouveau:.*_dye/ },
 
@@ -19,10 +18,6 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:bin\/.*/ },
         { id: 'mekanism:processing/netherite/dust_to_ancient_debris' },
         { id: /mekanism:crushing\/biofuel/ },
-        { id: 'mekanism:processing/netherite/dust_to_ancient_debris' },
-        { id: /mekanism:processing\/.*\/ore\/.*from_raw$/ },
-        { id: /mekanism:processing\/.*\/to_ore$/ },
-        { id: /mekanism:processing\/.*\/to_deepslate_ore$/ },
 
         { id: 'quark:tweaks/smelting/bone_meal_utility' },
 
@@ -115,61 +110,46 @@ ServerEvents.recipes((event) => {
 
         //// Emendatus Enigmatica Related stuff
 
-        { id: /immersiveengineering:crafting\/raw_hammercrushing_/ },       // Dusts.js related
-        { id: /immersiveengineering:crafting\/hammercrushing_/ },
         { id: /industrialforegoing:.*_gear/ },                              // Gears
+        { id: /hammercrushing/, mod: 'immersiveengineering' },              // Dusts.js related
         { id: /immersiveengineering:crafting\/plate_.*_hammering/ },        // plates.js related
         { id: /immersiveengineering:crafting\/stick_/ },                    // rods.js related
-        { id: /emendatusenigmatica:ingot\/from_dust.*\/refined_obsidian/ }, // Removes smelting recipes dust -> ingot for Refined Obsidian and Glowstone
-        { id: /mekanism:processing\/.*\/to.*_ore/ },                        // Replaced manually.
-        { id: /mekanism:processing\/.*\/ore\/.*from_raw/ },
+        { id: /emendatusenigmatica:ingot\/from_dust.*\/refined_obsidian/ }, // Removes smelting recipes dust -> ingot for Refined Obsidian
+        
+        // Ore Processing Related
+
+        // Slurries
+        { id: /mekanism:processing\/.*\/slurry/ },
         { id: /mekanism:processing\/.*\/crystal\/from_slurry/ },
-        { id: /mekanism:processing\/.*\/slurry\/clean/ },
-        { id: /mekanism:processing\/.*\/slurry\/dirty/ },
 
-        // Ore Processing Rework Related stuff
+        // Ore -> Shards etc
+        { id: /mekanism:processing\/.*\/from_raw_block/ }, 
+        { id: /mekanism:processing\/.*\/from_raw_ore/ },
+        { id: /mekanism:processing\/.*\/from_ore/ },
 
-        { id: /create:crushing\/.*_ore/ },
-        { id: /create:crushing\/.*raw_.*_block/},
-        { id: /create:crushing\/.*raw_/},
-        { id: /create:compat\/.*_ore/ },
-        { id: /create:splashing\/.*crushed_.*_ore/ },
-        { id: /emendatusenigmatica:slurry\/dirt/ },
-        { id: /emendatusenigmatica:dust\/from_ore_crusher_spirit/ },
-        { id: /emendatusenigmatica:dust\/from_ore_crush_spell/ },
-        { id: /emendatusenigmatica:crushed\/from_raw_block_crushing/ },
-        { id: /emendatusenigmatica:shard\/from_ore/ },
-        { id: /emendatusenigmatica:shard\/from_raw/ },
-        { id: /emendatusenigmatica:clump\/from_ore/ },
-        { id: /emendatusenigmatica:clump\/from_raw/ },
-        { id: /immersiveengineering:crusher\/raw_.*/},
-        { id: /immersiveengineering:crusher\/ore_.*/},
-        { id: /immersiveengineering:arcfurnace\/ore/ },
-        { id: /immersiveengineering:arcfurnace\/raw_ore/ },
-        { id: /immersiveengineering:arcfurnace\/raw_block/ },
-        { id: /thermal:machines\/smelter\/smelter.*_ore/ },
-        { id: /thermal:machines\/smelter\/smelter.*_raw/ },
+        // Combiner
+        { id: /mekanism:processing\/.*\/ore\/.*from_raw$/ }, 
+        { id: /mekanism:processing\/.*\/to_ore$/ },
+        { id: /mekanism:processing\/.*\/to_deepslate_ore$/ },
+
+        { type: 'create:crushing', id: /_ore$/ },
+        { type: 'create:crushing', id: /_recycling$/ },
+        { type: 'create:crushing', id: /raw_/ },
+        { type: 'create:splashing', id: /_ore$/ },
+
+        { type: 'immersiveengineering:crusher', id: /raw_block/ },
+        { type: 'immersiveengineering:crusher', id: /raw_ore/ },
+        { type: 'immersiveengineering:crusher', id: /ore_/ },
+
+        { type: 'thermal:pulverizer', id: /ingot_to_dust/ },
+        { type: 'thermal:pulverizer', id: /pulverizer_raw/ },
+        { type: 'thermal:pulverizer', id: /pulverizer_.*_ore/ },
+        { type: 'thermal:centrifuge', id: /crushed_.*_ore/ },
+
         { id: 'thermal:machines/pulverizer/pulverizer_apatite'},
         { id: 'thermal:machines/pulverizer/pulverizer_cinnabar'},
         { id: 'thermal:machines/pulverizer/pulverizer_niter'},
         { id: 'thermal:machines/pulverizer/pulverizer_sulfur'},
-        { id: /thermal:machines\/pulverizer\/pulverizer_.*_ingot_to_dust/},
-        { id: /thermal:compat\/.*\/pulverizer_.*_ingot_to_dust/},
-        { id: /thermal:compat\/.*_ore/, type: "thermal:smelter"},
-        { id: /thermal:compat\/.*_raw_/, type: "thermal:smelter"},
-        { id: /thermal:machines\/pulverizer\/pulverizer.*_ore/ },
-        { id: /thermal:machines\/pulverizer\/pulverizer.*_raw/ },
-        { id: /thermal:compat\/.*_ore/, type: "thermal:pulverizer"},
-        { id: /thermal:compat\/.*_raw_/, type: "thermal:pulverizer"},
-        { id: /thermal:compat\/create.*\/centrifuge_create.*_crushed/ },
-        { id: /mekanism:processing\/.*\/from_raw_block/ },
-        { id: /mekanism:processing\/.*\/from_raw_ore/ },
-        { id: /mekanism:processing\/.*\/from_ore/ },
-        { id: 'occultism:crushing/iesnium_dust' }, // There is a lot of different recipes with really similar ids (occultism:crushing/copper_dust_from_raw), so regex would delete all of those, what we don't want ^^"
-        { id: 'occultism:crushing/copper_dust' }, 
-        { id: /occultism:crushing\/gold_dust/ },
-        { id: 'occultism:crushing/silver_dust' },
-        { id: 'occultism:crushing/iron_dust' }
     ];
 
     colors.forEach((color) => {

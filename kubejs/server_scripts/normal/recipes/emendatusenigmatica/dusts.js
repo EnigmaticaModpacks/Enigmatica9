@@ -1,4 +1,8 @@
 ServerEvents.recipes((event) => {
+    if (global.isNormalMode == false) {
+        return;
+    }
+
     const recipes = [];
 
     let metals = Object.keys(metal_properties);
