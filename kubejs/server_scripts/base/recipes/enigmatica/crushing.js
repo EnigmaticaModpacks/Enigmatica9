@@ -100,12 +100,14 @@ ServerEvents.recipes((event) => {
             .id(`${id_prefix}create_milling/${recipe.id_suffix}`);
 
         // Thermal
-        event.custom({
-            type: 'thermal:pulverizer',
-            ingredient: Ingredient.of(recipe.input).toJson(),
-            result: outputs,
-            experience: recipe.experience
-        });
+        event
+            .custom({
+                type: 'thermal:pulverizer',
+                ingredient: Ingredient.of(recipe.input).toJson(),
+                result: outputs,
+                experience: recipe.experience
+            })
+            .id(`${id_prefix}thermal_pulverizer/${recipe.id_suffix}`);
     };
 
     recipes.forEach((recipe) => {

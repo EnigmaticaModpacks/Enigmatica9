@@ -11,7 +11,8 @@ StartupEvents.registry('item', (event) => {
         'blacksmiths_delight',
         'scavengers_delight',
         'alchemists_delight',
-        'amethyst_dust'
+        'amethyst_dust',
+        'aura_leaf'
     ];
 
     const ritualDummies = [

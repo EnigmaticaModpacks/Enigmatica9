@@ -418,7 +418,11 @@ ItemEvents.tooltip((event) => {
                 'chimes:iron_chimes',
                 'chimes:bamboo_chimes'
             ],
-            text: [Text.of('The gentle sounds keep Phantoms at bay.').aqua()]
+            text: [Text.of('The gentle sounds keep Phantoms at bay').aqua()]
+        },
+        {
+            items: ['kubejs:aura_leaf'],
+            text: [Text.of('Generate a quantity of Aura').gold()]
         }
 
         /* 
