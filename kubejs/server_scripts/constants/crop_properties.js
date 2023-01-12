@@ -561,6 +561,13 @@ crop_properties.legume_crops.crops = [
         render: { type: 'crop', block: 'thermal:green_bean' },
         plant: 'thermal:green_bean',
         substrate: 'dirt'
+    },
+    // SushiGo Crafting
+    {
+        seed: 'sushigocrafting:soy_seeds',
+        render: { type: 'crop', block: 'sushigocrafting:soy_crop' },
+        plant: 'sushigocrafting:soy_bean',
+        substrate: 'dirt'
     }
 ];
 crop_properties.melon_crops.crops = [
@@ -637,6 +644,13 @@ crop_properties.root_crops.crops = [
         render: { type: 'crop', block: 'blue_skies:solnuts' },
         plant: 'blue_skies:solnut',
         substrate: 'dirt'
+    },
+    // SushiGo Crafting
+    {
+        seed: 'sushigocrafting:wasabi_seeds',
+        render: { type: 'crop', block: 'sushigocrafting:wasabi_crop' },
+        plant: 'sushigocrafting:wasabi_root',
+        substrate: 'dirt'
     }
 ];
 crop_properties.seed_crops.crops = [];
@@ -665,6 +679,13 @@ crop_properties.vine_crops.crops = [
         seed: 'thermal:eggplant_seeds',
         render: { type: 'crop', block: 'thermal:eggplant' },
         plant: 'thermal:eggplant',
+        substrate: 'dirt'
+    },
+    // SushiGo Crafting
+    {
+        seed: 'sushigocrafting:cucumber_seeds',
+        render: { type: 'crop', block: 'sushigocrafting:cucumber_crop' },
+        plant: 'sushigocrafting:cucumber',
         substrate: 'dirt'
     }
 ];

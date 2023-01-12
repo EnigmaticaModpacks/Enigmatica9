@@ -88,7 +88,9 @@ jei.base.items.disabled = [
     'powah:capacitor_basic_tiny',
     'superiorshields:manasteel_shield',
     'superiorshields:terrasteel_shield',
-    'superiorshields:elementium_shield'
+    'superiorshields:elementium_shield',
+    'sushigocrafting:rice_seeds',
+    'sushigocrafting:rice'
 ];
 jei.base.items.hidden = [
     'kubejs:altered_recipe_indicator',

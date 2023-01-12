@@ -97,6 +97,12 @@ ServerEvents.recipes((event) => {
             outputs: [{ item: 'ae2:silicon_press' }],
             energy: 4000,
             id: `${id_prefix}silicon_press`
+        },
+        {
+            inputs: ['sushigocrafting:dried_seaweed_block'],
+            outputs: [{ item: 'sushigocrafting:nori_sheets', count: 6 }],
+            energy: 2000,
+            id: `${id_prefix}nori_sheets`
         }
     ];
 

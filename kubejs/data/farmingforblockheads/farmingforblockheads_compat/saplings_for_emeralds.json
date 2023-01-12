@@ -1,5 +1,5 @@
 {
-    "modId": "minecraft",
+    "modId": "enigmatica",
     "group": {
         "name": "Generic Saplings",
         "enabledByDefault": true,
@@ -65,6 +65,7 @@
         { "output": "ars_elemental:yellow_archwood_sapling" },
         { "output": "minecraft:mangrove_propagule" },
         { "output": "hexerei:willow_sapling" },
-        { "output": "hexerei:mahogany_sapling" }
+        { "output": "hexerei:mahogany_sapling" },
+        { "output": "sushigocrafting:avocado_sapling" }
     ]
 }
