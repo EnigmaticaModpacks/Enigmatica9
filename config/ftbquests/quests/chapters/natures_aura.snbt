@@ -992,8 +992,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 1.0d
+			x: 0.0d
+			y: 0.5d
 			subtitle: "The eyes have it"
 			description: [
 				"Just as Ender Eyes may assist in the location of Strongholds, these assist in the location of other important structures."
@@ -1135,8 +1135,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 1.5d
+			x: -1.0d
+			y: 1.0d
 			description: ["A true marvel for anyone who’s spent any time toiling in the earth to extract resources. With Eir’s Token attached to a tool, it will simply stop working rather than break at low durability. "]
 			dependencies: ["00000000000002CE"]
 			id: "4A5FA8B49626B99C"
@@ -1155,8 +1155,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: 1.5d
+			x: -3.0d
+			y: 1.0d
 			description: ["When held anywhere in one’s inventory, the Ring of Last Chance prevents a killing blow, shattering itself rather than allow its bearer to slip off this mortal coil. "]
 			dependencies: ["00000000000002CE"]
 			id: "242E5ADFA0884661"
@@ -1435,8 +1435,8 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: 1.0d
+			x: -4.0d
+			y: 0.5d
 			description: ["Drawing Aura from a worn Cache or Trove, these staves aid in locating various objects; they can be quite useful both at home and while adventuring abroad. "]
 			dependencies: ["00000000000002CE"]
 			id: "62B50A6A3764AF7A"
@@ -1529,6 +1529,82 @@
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Energy Conversion"
+			x: -2.0d
+			y: 1.5d
+			description: [
+				"Once thought to be entirely separate, the magical energies know as Source, Aura, and FE are in fact all facets of the same energy. By making use of special crystals, it becomes possible to convert between them with ease. "
+				""
+				"Pulsating Crystals work by absorbing Source from nearby Source Jars and converting it into usable FE. Should the area contain sufficient Aura, it will also be consumed, greatly enhancing the FE generated. "
+				""
+				"Resonating Crystals, on the other hand, set up an internal resonance with FE, converting it back into Source or Aura. If a Source Jar is near enough, it will send it there. If there is no jar, or if it is 100% full, the Resonating Crystal will instead convert the incoming FE to Aura and diffuse it into the atmosphere. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["00000000000002B5"]
+			min_width: 300
+			id: "3B584D6A33A0D8A4"
+			tasks: [
+				{
+					id: "576EF68AC9677774"
+					type: "item"
+					title: "Pulsating Crystals"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "enigmaticunity:dim_source_generator"
+									Count: 1b
+								}
+								{
+									id: "enigmaticunity:bright_source_generator"
+									Count: 1b
+								}
+								{
+									id: "enigmaticunity:iridescent_source_generator"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "420D02A1E0F76E08"
+					type: "item"
+					title: "Resonating Crystals"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "enigmaticunity:dim_source_producer"
+									Count: 1b
+								}
+								{
+									id: "enigmaticunity:bright_source_producer"
+									Count: 1b
+								}
+								{
+									id: "enigmaticunity:iridescent_source_producer"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "6A253E63ACD97A02"
+				type: "command"
+				title: "Epic Nature's Aura Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
 				player_command: false
 			}]
 		}

@@ -423,6 +423,22 @@ ItemEvents.tooltip((event) => {
         {
             items: ['kubejs:aura_leaf'],
             text: [Text.of('Generate a quantity of Aura').gold()]
+        },
+        {
+            items: [
+                'enigmaticunity:iridescent_source_producer',
+                'enigmaticunity:bright_source_producer',
+                'enigmaticunity:dim_source_producer'
+            ],
+            text: [Text.of('Arcane Apparatus: Energy to Source and Aura').green()]
+        },
+        {
+            items: [
+                'enigmaticunity:iridescent_source_generator',
+                'enigmaticunity:bright_source_generator',
+                'enigmaticunity:dim_source_generator'
+            ],
+            text: [Text.of('Arcane Apparatus: Source and Aura to Energy').green()]
         }
 
         /* 
