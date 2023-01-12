@@ -44,7 +44,7 @@ function isOceanHasWaterWithChance(chance) {
             type: 'and',
             contextual: [
                 { type: 'location', predicate: { 'lychee:biome_tag': 'is_ocean' } },
-                { type: 'location', predicate: { position: { y: { min: 0, max: 62 } } } },
+                { type: 'location', predicate: { position: { y: { min: 0, max: 63 } } } },
                 { type: 'chance', chance: chance },
                 {
                     type: 'location',
