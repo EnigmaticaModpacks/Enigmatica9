@@ -14,6 +14,7 @@
 
     "recipes.lychee.item_inside.sunstone.condition.description": "Converts around Noon. Reverts if left out too long...",
     "recipes.lychee.item_inside.moonstone.condition.description": "Converts around Midnight. Reverts if left out too long...",
+    "recipes.lychee.item_inside.filter_filling.condition.description": "Place a Filter in an Ocean Biome between Y0 and Y62. The Filter must have Water blocks each of the cardinal direction and will fill slowly over time.",
 
     "advancements.occultism.possess_enderman.title": "Ritual: Possess Enderman",
     "advancements.occultism.possess_endermite.title": "Ritual: Possess Endermite",
