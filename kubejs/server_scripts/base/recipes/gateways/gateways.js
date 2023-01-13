@@ -2,7 +2,121 @@ ServerEvents.highPriorityData((event) => {
     // JSON Schema: https://gist.github.com/Shadows-of-Fire/a45a2742b7a0842c50738d3df3ce8148
     // Examples: https://github.com/Shadows-of-Fire/GatewaysToEternity/blob/master/src/main/resources/data/gateways/gateways
 
-    let recipes = [];
+    let recipes = [
+        {
+            size: 'small',
+            color: '#0b9e32',
+            rewards: [
+                {
+                    type: 'stack',
+                    stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                }
+            ],
+            completion_xp: 250,
+            spawn_range: 1,
+            waves: [
+                {
+                    entities: [
+                        { entity: 'minecraft:husk' },
+                        { entity: 'minecraft:husk' },
+                        { entity: 'minecraft:husk' },
+                        { entity: 'minecraft:husk' },
+                        { entity: 'minecraft:stray' },
+                        { entity: 'minecraft:stray' },
+                        { entity: 'blue_skies:armored_frost_spirit' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 750,
+                    setup_time: 150
+                },
+                {
+                    entities: [
+                        { entity: 'blue_skies:nyctofly' },
+                        { entity: 'blue_skies:nyctofly' },
+                        { entity: 'blue_skies:nyctofly' },
+                        { entity: 'minecraft:cave_spider' },
+                        { entity: 'minecraft:cave_spider' },
+                        { entity: 'blue_skies:emberback' },
+                        { entity: 'twilightforest:fire_beetle' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 750,
+                    setup_time: 150
+                },
+                {
+                    entities: [
+                        { entity: 'twilightforest:death_tome' },
+                        { entity: 'twilightforest:death_tome' },
+                        { entity: 'twilightforest:death_tome' },
+                        { entity: 'twilightforest:death_tome' },
+                        { entity: 'twilightforest:death_tome' },
+                        { entity: 'twilightforest:snow_guardian' },
+                        { entity: 'twilightforest:snow_guardian' },
+                        { entity: 'twilightforest:carminite_golem' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 750,
+                    setup_time: 150
+                },
+                {
+                    entities: [
+                        { entity: 'minecraft:blaze' },
+                        { entity: 'minecraft:blaze' },
+                        { entity: 'thermal:basalz' },
+                        { entity: 'thermal:basalz' },
+                        { entity: 'thermal:blitz' },
+                        { entity: 'thermal:blitz' },
+                        { entity: 'thermal:blizz' },
+                        { entity: 'thermal:blizz' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 750,
+                    setup_time: 150
+                },
+                {
+                    entities: [
+                        { entity: 'minecraft:pillager' },
+                        { entity: 'minecraft:pillager' },
+                        { entity: 'minecraft:pillager' },
+                        { entity: 'minecraft:vindicator' },
+                        { entity: 'minecraft:vindicator' },
+                        { entity: 'minecraft:evoker' },
+                        { entity: 'minecraft:witch' },
+                        { entity: 'minecraft:illusioner' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 750,
+                    setup_time: 150
+                }
+            ],
+            id: 'spawner_rift'
+        }
+    ];
 
     // Setup generic gateways for mobs.
     // This uses a standard layout to generate a small, medium, and large gate for each mob type.

@@ -144,6 +144,7 @@ EntityEvents.spawned((event) => {
                     let area = getSelectorArea(abs.x, abs.y, abs.z, 10);
                     command = `/execute in ${ritual_dimension} run title @p[${area}] subtitle {"text":"Destination Unreachable","color":"#D3D3D3"}`;
                     event.server.runCommandSilent(command);
+
                     command = `/execute in ${ritual_dimension} run title @p[${area}] title {"text":"Teleportation Ritual","underlined":true,"color":"#EF0AEF"}`;
                     event.server.runCommandSilent(command);
 
@@ -156,7 +157,7 @@ EntityEvents.spawned((event) => {
         // Gateway Pearl Handling
         if (ritual_effect.gateway) {
             let cur = { x: abs.x, y: abs.y - 0.5, z: abs.z };
-            let gate = { x: abs.x, y: abs.y + 1, z: abs.z };
+            let gate = { x: abs.x, y: abs.y + 0.5, z: abs.z };
             let gateway_type = event.entity.item.nbt.gateway;
             let radius = event.entity.item.nbt.radius;
             let num_points = 5;

@@ -280,5 +280,7 @@
     "ritual.enigmatica.occultism/ritual/blitz_gate_large.started": "Started Opening Large Air Elemental Gateway",
     "ritual.enigmatica.occultism/ritual/blitz_gate_large.finished": "Large Air Elemental Gateway Opened",
     "ritual.enigmatica.occultism/ritual/blitz_gate_large.interrupted": "Large Air Elemental Gateway Interrupted",
-    "ritual.enigmatica.occultism/ritual/blitz_gate_large.conditions": "Not all requirements for this ritual are met."
+    "ritual.enigmatica.occultism/ritual/blitz_gate_large.conditions": "Not all requirements for this ritual are met.",
+
+    "gateways.spawner_rift": "Spawner Rift"
 }
