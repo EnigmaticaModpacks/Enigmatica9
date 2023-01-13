@@ -32,7 +32,7 @@ ServerEvents.highPriorityData((event) => {
                         }
                     ],
                     max_wave_time: 750,
-                    setup_time: 150
+                    setup_time: 50
                 },
                 {
                     entities: [
@@ -51,7 +51,7 @@ ServerEvents.highPriorityData((event) => {
                         }
                     ],
                     max_wave_time: 750,
-                    setup_time: 150
+                    setup_time: 50
                 },
                 {
                     entities: [
@@ -71,7 +71,7 @@ ServerEvents.highPriorityData((event) => {
                         }
                     ],
                     max_wave_time: 750,
-                    setup_time: 150
+                    setup_time: 50
                 },
                 {
                     entities: [
@@ -91,7 +91,7 @@ ServerEvents.highPriorityData((event) => {
                         }
                     ],
                     max_wave_time: 750,
-                    setup_time: 150
+                    setup_time: 50
                 },
                 {
                     entities: [
@@ -111,7 +111,7 @@ ServerEvents.highPriorityData((event) => {
                         }
                     ],
                     max_wave_time: 750,
-                    setup_time: 150
+                    setup_time: 50
                 }
             ],
             id: 'spawner_rift'

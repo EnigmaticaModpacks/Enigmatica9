@@ -156,7 +156,7 @@ EntityEvents.spawned((event) => {
 
         // Gateway Pearl Handling
         if (ritual_effect.gateway) {
-            let cur = { x: abs.x, y: abs.y - 0.5, z: abs.z };
+            let cur = { x: abs.x, y: abs.y, z: abs.z };
             let gate = { x: abs.x, y: abs.y + 0.5, z: abs.z };
             let gateway_type = event.entity.item.nbt.gateway;
             let radius = event.entity.item.nbt.radius;
