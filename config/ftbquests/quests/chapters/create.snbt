@@ -2008,15 +2008,6 @@
 				player_command: false
 			}]
 		}
-		{
-			x: 10.0d
-			y: 8.5d
-			id: "60EAE74E8D3F5B5A"
-			tasks: [{
-				id: "54D9400D6445A598"
-				type: "item"
-			}]
-		}
 	]
 	quest_links: [ ]
 }
