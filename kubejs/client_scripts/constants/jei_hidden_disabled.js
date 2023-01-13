@@ -90,7 +90,21 @@ jei.base.items.disabled = [
     'superiorshields:terrasteel_shield',
     'superiorshields:elementium_shield',
     'sushigocrafting:rice_seeds',
-    'sushigocrafting:rice'
+    'sushigocrafting:rice',
+    'createaddition:copper_spool',
+    'createaddition:spool',
+    'createaddition:festive_spool',
+    'createaddition:gold_spool',
+    'createaddition:connector',
+    'createaddition:accumulator',
+    'createaddition:redstone_relay',
+    'createaddition:gold_wire',
+    'createaddition:iron_wire',
+    'createaddition:copper_wire',
+    'createaddition:barbed_wire',
+    'createaddition:biomass',
+    'createaddition:bioethanol_bucket',
+    'createaddition:seed_oil_bucket'
 ];
 jei.base.items.hidden = [
     'kubejs:altered_recipe_indicator',
@@ -147,7 +161,9 @@ jei.base.fluids.hidden = [
     'thermal:refined_fuel',
     'immersiveengineering:plantoil',
     'immersiveengineering:ethanol',
-    'immersiveengineering:biodiesel'
+    'immersiveengineering:biodiesel',
+    'createaddition:seed_oil',
+    'createaddition:bioethanol'
 ];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
 
