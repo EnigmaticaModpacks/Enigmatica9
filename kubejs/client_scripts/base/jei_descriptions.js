@@ -182,7 +182,7 @@ JEIEvents.information((event) => {
         },
         {
             items: ['starbunclemania:fluid_sourcelink'],
-            text: [`Valid Fluids:`, ` `, `Ether Gas`, `Liquefied Source`, `Bio Diesel`, `Sludge`]
+            text: [`Valid Fluids:`, ` `, `Potions`, `Ether Gas`, `Liquefied Source`, `Bio Diesel`, `Sludge`]
         }
     ];
 
