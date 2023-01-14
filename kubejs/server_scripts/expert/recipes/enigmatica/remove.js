@@ -53,8 +53,8 @@ ServerEvents.recipes((event) => {
 
         { type: 'thermal:smelter' },
         { type: 'thermal:centrifuge', id: /centrifuge_.*_dust/ },
+        { type: 'thermal:pulverizer', id: /ingot_to_dust/ },
         // { type: 'thermal:centrifuge', id: /crushed_.*_ore/ },
-        // { type: 'thermal:pulverizer', id: /ingot_to_dust/ },
         // { type: 'thermal:pulverizer', id: /pulverizer_raw/ },
         // { type: 'thermal:pulverizer', id: /pulverizer_.*_ore/ },
 

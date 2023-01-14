@@ -18,5 +18,8 @@
     "colors": {
         "materialColor": "f8f796",
         "fluidColor": "f8f796"
+    },
+    "compat": {
+        "thermal": false
     }
 }

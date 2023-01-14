@@ -141,7 +141,6 @@ ServerEvents.recipes((event) => {
         { type: 'immersiveengineering:crusher', id: /raw_ore/ },
         { type: 'immersiveengineering:crusher', id: /ore_/ },
 
-        { type: 'thermal:pulverizer', id: /ingot_to_dust/ },
         { type: 'thermal:pulverizer', id: /pulverizer_raw/ },
         { type: 'thermal:pulverizer', id: /pulverizer_.*_ore/ },
         { type: 'thermal:centrifuge', id: /crushed_.*_ore/ },
