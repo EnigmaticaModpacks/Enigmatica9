@@ -466,29 +466,32 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     recipes.push(recipe)
     
     // Arc Furnace
-    // recipe = {
-    //     type: "immersiveengineering:arc_furnace",
-    //     additives: [],
-    //     energy: 51200,
-    //     input: raw_ingredient.toJson(),
-    //     results: [ { base_ingredient: { item: ingot_itemStack.getId() }, count: 3 }],
-    //     secondaries: [
-    //         {
-    //             chance: 0.25,
-    //             output: { item: ingot_itemStack.getId() }
-    //         }
-    //     ],
-    //     slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
-    //     time: 60,
-    //     id: `${id_prefix}ie/arc_furnace/raw_${material}`
-    // }
+    // Secondaries field is disabled due to bug in IE Arc Furnace Recipe Handler, check ImmersiveEngineering/#5506 (https://github.com/BluSunrize/ImmersiveEngineering/issues/5506) for more details.
+    recipe = {
+        type: "immersiveengineering:arc_furnace",
+        additives: [],
+        energy: 51200,
+        input: raw_ingredient.toJson(),
+        results: [ { base_ingredient: { item: ingot_itemStack.getId() }, count: 3 }],
+        // secondaries: [
+        //     {
+        //         chance: 0.25,
+        //         // output: { item: ingot_itemStack.getId() }
+        //         output: { tag: `forge:ingots/${material}` }
+        //     }
+        // ],
+        slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
+        time: 60,
+        id: `${id_prefix}ie/arc_furnace/raw_${material}`
+    }
     // if (secondaries.ingot_itemStack) {
     //     recipe.secondaries.push({
     //         chance: 0.75,
-    //         output: { item: secondaries.ingot_itemStack.getId() }
+    //         // output: { item: secondaries.ingot_itemStack.getId() }
+    //         output: { tag: `forge:ingots/${properties[material].oreProcessing.output.secondary}` }
     //     })
     // }
-    // recipes.push(recipe)
+    recipes.push(recipe)
 
     // Ars Noveau
     // Crushing spell
