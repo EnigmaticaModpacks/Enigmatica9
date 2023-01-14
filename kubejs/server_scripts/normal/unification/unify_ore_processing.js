@@ -471,10 +471,10 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     //     additives: [],
     //     energy: 51200,
     //     input: raw_ingredient.toJson(),
-    //     results: [ { base_ingredient: { item: ingot_itemStack.getId() }, count: 2 }],
+    //     results: [ { base_ingredient: { item: ingot_itemStack.getId() }, count: 3 }],
     //     secondaries: [
     //         {
-    //             chance: 0.75,
+    //             chance: 0.25,
     //             output: { item: ingot_itemStack.getId() }
     //         }
     //     ],
