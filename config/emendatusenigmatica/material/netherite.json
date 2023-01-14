@@ -1,0 +1,19 @@
+{
+    "id": "netherite",
+    "source": "vanilla",
+    "localizedName": "Netherite",
+    "processedTypes": [
+        "storage_block",
+        "ingot",
+        "nugget",
+        "crushed_ore",
+        "dust",
+        "plate",
+        "rod",
+        "gear"
+    ],
+    "properties": {
+        "materialType": "metal",
+        "harvestLevel": 3
+    }
+}

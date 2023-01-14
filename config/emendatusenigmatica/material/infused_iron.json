@@ -9,9 +9,5 @@
     "properties": {
         "materialType": "metal",
         "harvestLevel": 2
-    },
-    "colors": {
-        "materialColor": "2a9c31",
-        "fluidColor": "2a9c31"
     }
 }

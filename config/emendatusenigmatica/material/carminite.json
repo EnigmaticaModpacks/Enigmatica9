@@ -10,8 +10,5 @@
         "materialType": "gem",
         "harvestLevel": 2,
         "blockRecipeType": 9
-    },
-    "colors": {
-        "materialColor": "be1200"
     }
 }

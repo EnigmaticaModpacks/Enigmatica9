@@ -15,10 +15,6 @@
         "materialType": "alloy",
         "harvestLevel": 2
     },
-    "colors": {
-        "materialColor": "ce6e26",
-        "fluidColor": "ce6e26"
-    },
     "compat": {
         "thermal": false
     }

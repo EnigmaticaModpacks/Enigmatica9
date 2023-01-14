@@ -4,6 +4,7 @@
     "localizedName": "Copper",
     "disableDefaultOre": true,
     "processedTypes": [
+        "storage_block",
         "ore",
         "raw",
         "crushed_ore",
@@ -24,7 +25,6 @@
         "harvestLevel": 1
     },
     "colors": {
-        "materialColor": "d78767",
         "fluidColor": "d78767"
     },
     "oreDrop": {

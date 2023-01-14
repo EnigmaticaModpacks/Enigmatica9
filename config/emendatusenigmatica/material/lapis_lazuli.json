@@ -5,7 +5,6 @@
   "disableDefaultOre": true,
   "processedTypes": [
     "ore",
-    "storage_block",
     "dust",
     "gear"
   ],
@@ -19,8 +18,5 @@
     "drop": "minecraft:lapis_lazuli",
     "min": 2,
     "max": 5
-  },
-  "colors": {
-    "materialColor": "173782"
   }
 }

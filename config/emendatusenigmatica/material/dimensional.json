@@ -15,8 +15,5 @@
         "drop": "rftoolsbase:dimensionalshard",
         "min": 4,
         "max": 5
-      },
-    "colors": {
-        "materialColor": "ffffff"
     }
 }

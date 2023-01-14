@@ -11,9 +11,5 @@
     "properties": {
         "materialType": "metal",
         "harvestLevel": 2
-    },
-    "colors": {
-        "materialColor": "64518b",
-        "fluidColor": "64518b"
     }
 }

@@ -4,7 +4,6 @@
     "localizedName": "Charoite",
     "processedTypes": [
         "ore",
-        "raw",
         "storage_block",
         "gem"
     ],
@@ -12,8 +11,5 @@
         "materialType": "gem",
         "harvestLevel": 2,
         "blockRecipeType": 9
-    },
-    "colors": {
-        "materialColor": "c987d6"
     }
 }
