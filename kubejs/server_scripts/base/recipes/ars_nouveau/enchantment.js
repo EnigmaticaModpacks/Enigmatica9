@@ -2,79 +2,6 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/ars_nouveau/enchantment/';
     const recipes = [
         {
-            enchantment: 'cofh_core:holding',
-            level: 1,
-            pedestalItems: [
-                { item: { tag: 'forge:storage_blocks/lapis' } },
-                { item: { item: 'thermal:rf_coil_augment' } },
-                { item: { item: 'thermal:fluid_tank_augment' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { tag: 'forge:storage_blocks/source' } }
-            ],
-            sourceCost: 2000
-        },
-        {
-            enchantment: 'cofh_core:holding',
-            level: 2,
-            pedestalItems: [
-                { item: { tag: 'forge:storage_blocks/lapis' } },
-                { item: { item: 'thermal:rf_coil_augment' } },
-                { item: { item: 'thermal:fluid_tank_augment' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { tag: 'forge:storage_blocks/source' } }
-            ]
-        },
-        {
-            enchantment: 'cofh_core:holding',
-            level: 3,
-            pedestalItems: [
-                { item: { tag: 'forge:storage_blocks/lapis' } },
-                { item: { item: 'thermal:rf_coil_augment' } },
-                { item: { item: 'thermal:fluid_tank_augment' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { tag: 'forge:storage_blocks/source' } }
-            ]
-        },
-        {
-            enchantment: 'cofh_core:holding',
-            level: 4,
-            pedestalItems: [
-                { item: { tag: 'forge:storage_blocks/lapis' } },
-                { item: { item: 'thermal:rf_coil_augment' } },
-                { item: { item: 'thermal:fluid_tank_augment' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { tag: 'forge:storage_blocks/source' } }
-            ]
-        },
-        {
-            enchantment: 'cofh_core:holding',
-            level: 5,
-            pedestalItems: [
-                { item: { tag: 'forge:storage_blocks/lapis' } },
-                { item: { item: 'thermal:rf_coil_augment' } },
-                { item: { item: 'thermal:fluid_tank_augment' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { tag: 'forge:storage_blocks/source' } }
-            ]
-        },
-        {
-            enchantment: 'cofh_core:holding',
-            level: 6,
-            pedestalItems: [
-                { item: { tag: 'forge:storage_blocks/lapis' } },
-                { item: { item: 'thermal:rf_coil_augment' } },
-                { item: { item: 'thermal:fluid_tank_augment' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { tag: 'forge:storage_blocks/source' } }
-            ]
-        },
-        {
             enchantment: 'apotheosis:chromatic',
             level: 1,
             pedestalItems: [
@@ -1459,9 +1386,29 @@ ServerEvents.recipes((event) => {
         }
     ];
 
+    for (let i = 1; i <= 6; i++) {
+        recipes.push({
+            enchantment: 'cofh_core:holding',
+            level: i,
+            pedestalItems: [
+                { item: { item: 'thermal:rf_coil_augment' } },
+                { item: { item: 'thermal:fluid_tank_augment' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/lapis' } }
+            ]
+        });
+    }
+
     recipes.forEach((recipe) => {
         recipe.type = 'ars_nouveau:enchantment';
-        recipe.sourceCost = 1800 * recipe.level;
+        if (!recipe.sourceCost) {
+            recipe.sourceCost = 1800 * recipe.level;
+        }
+        if (recipe.sourceCost > 10000) {
+            recipe.sourceCost = 10000;
+        }
         recipe.id = `${id_prefix}${recipe.enchantment.split(':')[1]}_${recipe.level}`;
         event.custom(recipe).id(recipe.id);
     });
