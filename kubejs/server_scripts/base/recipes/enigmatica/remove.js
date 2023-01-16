@@ -123,6 +123,8 @@ ServerEvents.recipes((event) => {
         { type: 'immersiveengineering:squeezer' },
         { type: 'immersiveengineering:fermenter' },
 
+        { type: 'pneumaticcraft:fuel_quality' },
+
         { type: 'thermal:sawmill' },
         { type: 'thermal:pulverizer_recycle' },
         { type: 'thermal:insolator' },
