@@ -5,9 +5,11 @@ ServerEvents.recipes((event) => {
             enchantment: 'cofh_core:holding',
             level: 1,
             pedestalItems: [
-                { item: { tag: 'forge:gears/lapis' } },
+                { item: { tag: 'forge:storage_blocks/lapis' } },
                 { item: { item: 'thermal:rf_coil_augment' } },
                 { item: { item: 'thermal:fluid_tank_augment' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ],
             sourceCost: 2000
@@ -16,9 +18,10 @@ ServerEvents.recipes((event) => {
             enchantment: 'cofh_core:holding',
             level: 2,
             pedestalItems: [
-                { item: { tag: 'forge:gears/quartz' } },
+                { item: { tag: 'forge:storage_blocks/lapis' } },
                 { item: { item: 'thermal:rf_coil_augment' } },
                 { item: { item: 'thermal:fluid_tank_augment' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
@@ -27,7 +30,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'cofh_core:holding',
             level: 3,
             pedestalItems: [
-                { item: { tag: 'forge:gears/gold' } },
+                { item: { tag: 'forge:storage_blocks/lapis' } },
                 { item: { item: 'thermal:rf_coil_augment' } },
                 { item: { item: 'thermal:fluid_tank_augment' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
@@ -39,10 +42,9 @@ ServerEvents.recipes((event) => {
             enchantment: 'cofh_core:holding',
             level: 4,
             pedestalItems: [
-                { item: { tag: 'forge:gears/diamond' } },
+                { item: { tag: 'forge:storage_blocks/lapis' } },
                 { item: { item: 'thermal:rf_coil_augment' } },
                 { item: { item: 'thermal:fluid_tank_augment' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -52,11 +54,21 @@ ServerEvents.recipes((event) => {
             enchantment: 'cofh_core:holding',
             level: 5,
             pedestalItems: [
-                { item: { tag: 'forge:gears/netherite' } },
+                { item: { tag: 'forge:storage_blocks/lapis' } },
                 { item: { item: 'thermal:rf_coil_augment' } },
                 { item: { item: 'thermal:fluid_tank_augment' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/source' } }
+            ]
+        },
+        {
+            enchantment: 'cofh_core:holding',
+            level: 6,
+            pedestalItems: [
+                { item: { tag: 'forge:storage_blocks/lapis' } },
+                { item: { item: 'thermal:rf_coil_augment' } },
+                { item: { item: 'thermal:fluid_tank_augment' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
