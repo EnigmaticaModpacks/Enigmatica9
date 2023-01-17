@@ -837,10 +837,15 @@
 				"Well, in a manner of speaking, anyway. "
 				""
 				"Diesel Generators are notoriously loud, what with all that internal combustion happening, but they’re also reliable, effective, and don’t care too much about what’s burning inside them. "
+				""
+				"The Diesel Generator accepts all the same fuels as the Thermal Compression Dynamo at roughly the same rates."
+				""
+				"It does not always burn clean, however, and it is possible to have an unburnable amount of fuel remaining inside the tank, preventing a different fuel from entering and working. It is therefore recommended to either dedicate the generator to a single fuel or break and re-form the multi-block whenever the fuel changes. "
 			]
 			hide_dependency_lines: true
 			dependencies: ["0C5F307C84EECADF"]
 			dependency_requirement: "one_completed"
+			min_width: 300
 			id: "000000000000003C"
 			tasks: [{
 				id: "65D6B7BEBDB3E283"
@@ -1949,7 +1954,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["0C5F307C84EECADF"]
-			invisible_until_tasks: 300
+			min_width: 300
 			id: "1217074CE717781D"
 			tasks: [{
 				id: "3F6EDEBB4A1E6F0F"

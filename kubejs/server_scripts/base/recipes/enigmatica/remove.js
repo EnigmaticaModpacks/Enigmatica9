@@ -122,6 +122,7 @@ ServerEvents.recipes((event) => {
         { type: 'immersiveengineering:alloy' },
         { type: 'immersiveengineering:squeezer' },
         { type: 'immersiveengineering:fermenter' },
+        { type: 'immersiveengineering:generator_fuel' },
 
         { type: 'pneumaticcraft:fuel_quality' },
 
