@@ -3,6 +3,6 @@ globalTooltip = false
 noMicrosoftTelemetry = true
 
 [debug]
-tagsTooltip = true
-debugTooltipMsg = true
-NBTTooltip = true
+tagsTooltip = false
+debugTooltipMsg = false
+NBTTooltip = false
