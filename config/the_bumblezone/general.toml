@@ -125,4 +125,33 @@
 	#
 	#Range: 0 ~ 1000000
 	musicDiscTimeLengthLaBeeDaLoca = 176
+	# 
+	#-----------------------------------------------------
+	#
+	# Multiplies the trade reward by this much for super trades! 0 or 1 set here disables super trades.
+	#
+	#Range: 0 ~ 256
+	beeQueenSuperTradeRewardMultiplier = 3
+	# 
+	#-----------------------------------------------------
+	#
+	# How long in ticks that super trades will last for before the Bee Queen asks for a new item.
+	# Setting this to 0 disables super trades. Anything less than a minute (1200) will not broadcast request message to players
+	#
+	#Range: 0 ~ 2000000
+	beeQueenSuperTradeDurationInTicks = 24000
+	# 
+	#-----------------------------------------------------
+	#
+	# How many boosted trades are allowed until the super trade is depleted until the queen requests a new item
+	# Setting this to 0 disables super trades.
+	#
+	#Range: 0 ~ 1000000
+	beeQueenSuperTradeAmountTillSatified = 24
+	# 
+	#-----------------------------------------------------
+	#
+	# Allows lit Super Candles/Incense Candle to burn mobs in its flame.
+	#
+	superCandlesBurnsMobs = true
 
