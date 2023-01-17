@@ -75,7 +75,7 @@
 	pneumatic_pump_efficiency = 80
 	#Speed multiplier per speed upgrade: speed mult = speedUpgradeSpeedMultiplier ^ num_of_speed_upgrades
 	#Range: 1.0 ~ 2.0
-	speed_upgrade_speed_multiplier = 1.5059658546149
+	speed_upgrade_speed_multiplier = 1.5157165665104
 	#Fuel usage / heat gen multiplier per speed upgrade: usage mult = speedUpgradeUsageMultiplier ^ num_of_speed_upgrades
 	#Range: 1.0 ~ 2.0
 	speed_upgrade_usage_multiplier = 1.5499189875483
@@ -102,7 +102,7 @@
 	repair_air_usage = 100
 	#Air usage for Magnet Upgrade, in mL per item or XP orb attracted
 	#Range: > 0
-	magnet_air_usage = 20
+	magnet_air_usage = 10
 	#Air used per point of 'player air' restored by the Scuba Upgrade
 	#Range: > 1
 	scuba_multiplier = 8
@@ -139,79 +139,84 @@
 	missile_pod_size = 100
 
 ["Minigun Properties"]
-	#Armor Piercing Ammo damage multiplier (relative to standard ammo)
-	#Range: 0.0 ~ 1.7976931348623157E308
-	ap_ammo_damage_multiplier = 1.25
-	#Armor Piercing Ammo percentage chance to ignore target's armor
-	#Range: 1 ~ 100
-	ap_ammo_ignore_armor_chance = 100
-	#Armor Piercing Ammo cartridge size
+	#Standard Ammo cartridge size
 	#Range: 1 ~ 30000
-	armor_piercing_ammo_cartridge_size = 250
+	standard_ammo_cartridge_size = 1000
 	#Base bullet damage of the Sentry Gun, Handheld Minigun, and Drone Minigun, before ammo bonuses are considered
 	#Range: 0.0 ~ 1.7976931348623157E308
 	base_damage = 4.0
 	#Base range of Minigun, before Range Upgrades are considered
 	#Range: 5 ~ 100
 	base_range = 50
+	#Show particles when a block is hit by minigun fire? Looks good, but consumes some network bandwidth.
+	block_hit_particles = true
+	#Percentage chance per shot of potion-tipped ammo proc'ing the potion effect, before Dispenser Upgrades are considered
+	#Range: 1 ~ 100
+	potion_proc_chance = 7	
+
+	#Armor Piercing Ammo cartridge size
+	#Range: 1 ~ 30000
+	armor_piercing_ammo_cartridge_size = 750
+	#Armor Piercing Ammo damage multiplier (relative to standard ammo)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	ap_ammo_damage_multiplier = 1.25
+	#Armor Piercing Ammo percentage chance to ignore target's armor
+	#Range: 1 ~ 100
+	ap_ammo_ignore_armor_chance = 100	
+	
 	#Explosive Ammo cartridge size
 	#Range: 1 ~ 30000
-	explosive_ammo_cartridge_size = 125
+	explosive_ammo_cartridge_size = 500
 	#Minigun Explosive Ammo damage multiplier (relative to standard ammo)
 	#Range: 0.0 ~ 1.7976931348623157E308
 	explosive_ammo_damage_multiplier = 0.2
 	#Explosive Ammo base percentage chance to cause an explosion
 	#Range: > 0
-	explosive_ammo_explosion_chance = 50
+	explosive_ammo_explosion_chance = 50	
 	#Minigun Explosive Ammo explosion power (ref: 2 = creeper, 4 = TNT
 	#Range: 0.0 ~ 1.7976931348623157E308
 	explosive_ammo_explosion_power = 1.5
 	#Does Minigun Explosive Ammo damage terrain?
 	explosive_ammo_terrain_damage = false
-	#Freezing Ammo base percentage chance to form ice or snow on blocks which have been hit
-	#Range: 0 ~ 100
-	freezing_ammo_block_ice_chance = 10
+	
 	#Freezing Ammo cartridge size
 	#Range: > 0
 	freezing_ammo_cartridge_size = 500
-	#Freezing Ammo base percentage chance to form ice on entities which have been hit
-	#Range: 0 ~ 100
-	freezing_ammo_entity_ice_chance = 20
 	#Damage done to entities within the fake 'ice' blocks cause by freezing ammo
 	#Range: 0.0 ~ 1.7976931348623157E308
 	freezing_ammo_fake_ice_damage = 1.0
-	#Incendiary ammo base percentage chance to ignite blocks
-	#Range: 1 ~ 100
-	incendiary_ammo_block_ignite_chance = 20
+	#Freezing Ammo base percentage chance to form ice or snow on blocks which have been hit
+	#Range: 0 ~ 100
+	freezing_ammo_block_ice_chance = 10
+	#Freezing Ammo base percentage chance to form ice on entities which have been hit
+	#Range: 0 ~ 100
+	freezing_ammo_entity_ice_chance = 20
+	
 	#Incendiary Ammo cartridge size
 	#Range: 1 ~ 30000
 	incendiary_ammo_cartridge_size = 500
+	#Incendiary ammo base percentage chance to ignite blocks
+	#Range: 1 ~ 100
+	incendiary_ammo_block_ignite_chance = 20
 	#Incendiary ammo base percentage chance to ignite entities
 	#Range: 1 ~ 100
 	incendiary_ammo_entity_ignite_chance = 100
 	#Incendiary ammo fire duration on target entities (seconds)
 	#Range: > 0
 	incendiary_ammo_fire_duration = 8
-	#Percentage chance per shot of potion-tipped ammo proc'ing the potion effect, before Dispenser Upgrades are considered
-	#Range: 1 ~ 100
-	potion_proc_chance = 7
-	#Standard Ammo cartridge size
-	#Range: 1 ~ 30000
-	standard_ammo_cartridge_size = 1000
-	#Weighted Ammo air usage multiplier (relative to standard ammo)
-	#Range: 0.0 ~ 1.7976931348623157E308
-	weighted_ammo_air_usage_multiplier = 8.0
+		
 	#Weighted Ammo cartridge size
 	#Range: 1 ~ 30000
-	weighted_ammo_cartridge_size = 250
+	weighted_ammo_cartridge_size = 500
 	#Weighted Ammo damage multiplier (relative to standard ammo)
 	#Range: 0.0 ~ 1.7976931348623157E308
 	weighted_ammo_damage_multiplier = 2.5
+	#Weighted Ammo air usage multiplier (relative to standard ammo)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	weighted_ammo_air_usage_multiplier = 8.0	
 	#Weighted Ammo range multiplier (relative to standard ammo)
 	#Range: 0.0 ~ 1.7976931348623157E308
 	weighted_ammo_range_multiplier = 0.2
-	#Show particles when a block is hit by minigun fire? Looks good, but consumes some network bandwidth.
-	block_hit_particles = true
 
 [Integration]
 	#Immersive Engineering: External Heater heat/FE.  The amount of PneumaticCraft heat added by using 1 FE in the heater.
@@ -285,10 +290,10 @@
 [Logistics]
 	#Logistics Module air usage per item per block distance
 	#Range: 0.0 ~ 1.7976931348623157E308
-	item_transport_cost = 1.0
+	item_transport_cost = 0.5
 	#Logistics Module air usage per mB of fluid per block distance
 	#Range: 0.0 ~ 1.7976931348623157E308
-	fluid_transport_cost = 0.02
+	fluid_transport_cost = 0.01
 	#Minimum pressure for a Logistics Module to function
 	#Range: 0.0 ~ 20.0
 	min_pressure = 3.0
