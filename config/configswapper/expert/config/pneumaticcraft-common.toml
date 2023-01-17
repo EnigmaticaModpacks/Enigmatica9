@@ -52,18 +52,20 @@
 	omni_hopper_dispenser = true
 	#Are players in Creative mode exempt from Security Station block protection? If false, only server ops are exempt (command permission >= 2)
 	security_station_creative_players_exempt = false
-	#The amount of air produced by using 100 MJ (Minecraft Joules) in the flux compressor
-	#Range: > 0
-	kinetic_compressor_efficiency = 80
+
 	#The amount of air produced by using 100 FE (Forge Energy) in the flux compressor
 	#Range: > 0
 	flux_compressor_efficiency = 80
-	#Changing this value will alter the pressurized air production of the Electric Compressor. The input, EU, will stay the same
-	#Range: > 0
-	electric_compressor_efficiency = 80
 	#The amount of FE (Forge Energy) produced by using 100mL of air in the Pneumatic Dynamo
 	#Range: > 0
 	pneumatic_dynamo_efficiency = 80
+
+	#The amount of air produced by using 100 MJ (Minecraft Joules) in the flux compressor
+	#Range: > 0
+	kinetic_compressor_efficiency = 80	
+	#Changing this value will alter the pressurized air production of the Electric Compressor. The input, EU, will stay the same
+	#Range: > 0
+	electric_compressor_efficiency = 80	
 	#The amount of MJ (Minecraft Joules) produced by using 100mL of air in the Pneumatic Dynamo
 	#Range: > 0
 	pneumatic_engine_efficiency = 80
@@ -73,6 +75,7 @@
 	#Changing this value will alter the hydraulic bar production of the Pneumatic Pump. The input, air, will stay the same
 	#Range: > 0
 	pneumatic_pump_efficiency = 80
+
 	#Speed multiplier per speed upgrade: speed mult = speedUpgradeSpeedMultiplier ^ num_of_speed_upgrades
 	#Range: 1.0 ~ 2.0
 	speed_upgrade_speed_multiplier = 1.5157165665104
