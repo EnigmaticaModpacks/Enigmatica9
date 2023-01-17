@@ -221,7 +221,7 @@
 	[Devices.Composter]
 		#This sets the base time constant (in ticks) for the Batch Composter.
 		#Range: 20 ~ 72000
-		"Time Constant" = 128
+		"Time Constant" = 96
 		#If TRUE, the Batch Composter will have particle effects when operating.
 		Particles = true
 
