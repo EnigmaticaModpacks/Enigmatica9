@@ -183,6 +183,46 @@ JEIEvents.information((event) => {
         {
             items: ['starbunclemania:fluid_sourcelink'],
             text: [`Valid Fluids:`, ` `, `Potions`, `Ether Gas`, `Liquefied Source`, `Bio Diesel`, `Sludge`]
+        },
+        {
+            items: ['ars_nouveau:mendosteen_pod'],
+            text: [
+                `Found only on naturally occuring Flourishing Archwood Trees.`,
+                ` `,
+                `May be grown like Cocoa Beans on Flourishing Archwood Logs.`
+            ]
+        },
+        {
+            items: ['ars_nouveau:frostaya_pod'],
+            text: [
+                `Found only on naturally occuring Cascading Archwood Trees.`,
+                ` `,
+                `May be grown like Cocoa Beans on Cascading Archwood Logs.`
+            ]
+        },
+        {
+            items: ['ars_nouveau:bombegranate_pod'],
+            text: [
+                `Found only on naturally occuring Blazing Archwood Trees.`,
+                ` `,
+                `May be grown like Cocoa Beans on Blazing Archwood Logs.`
+            ]
+        },
+        {
+            items: ['ars_nouveau:bastion_pod'],
+            text: [
+                `Found only on naturally occuring Vexing Archwood Trees.`,
+                ` `,
+                `May be grown like Cocoa Beans on Vexing Archwood Logs.`
+            ]
+        },
+        {
+            items: ['ars_elemental:flashpine_pod'],
+            text: [
+                `Found only on naturally occuring Flashing Archwood Trees.`,
+                ` `,
+                `May be grown like Cocoa Beans on Flashing Archwood Logs.`
+            ]
         }
     ];
 
