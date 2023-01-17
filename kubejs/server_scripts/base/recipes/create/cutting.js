@@ -37,7 +37,15 @@ ServerEvents.recipes((event) => {
         input = material.log.stripped;
         output = material.plank.block;
         recipes.push({
-            input: [Item.of(input), Item.of(material.wood.stripped)],
+            input: [Item.of(input)],
+            outputs: [Item.of(output, 6)],
+            processingTime: 50,
+            id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
+        });
+
+        input = material.wood.stripped;
+        recipes.push({
+            input: [Item.of(input)],
             outputs: [Item.of(output, 6)],
             processingTime: 50,
             id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`

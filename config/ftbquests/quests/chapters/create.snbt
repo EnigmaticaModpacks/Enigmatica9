@@ -22,8 +22,6 @@
 				"Your imagination is the limit. "
 				""
 				"Naturally, with so much ground to cover, these quests will not be exhaustive. Instead, the goal will be to introduce basic concepts of Create to give you a solid footing to begin experimenting on your own. "
-				""
-				"~MuteTiefling \\& Kanzaji"
 			]
 			min_width: 250
 			id: "0000000000000C40"
@@ -96,7 +94,7 @@
 		{
 			title: "Windmill"
 			icon: "create:white_sail"
-			x: 6.0d
+			x: 5.5d
 			y: 3.0d
 			subtitle: "Batteries Not Included"
 			description: [
@@ -156,7 +154,7 @@
 			]
 		}
 		{
-			x: 8.0d
+			x: 8.5d
 			y: 3.0d
 			subtitle: "Like A Record, Baby"
 			description: [
@@ -648,8 +646,8 @@
 			}]
 		}
 		{
-			x: 13.5d
-			y: 4.0d
+			x: 14.5d
+			y: 3.5d
 			subtitle: "You Know What Really Grinds My Gears?"
 			description: [
 				"Millstones have been used for ages, representing some of our oldest technology still in use. They’re far more efficient than grinding things by hand."
@@ -861,9 +859,9 @@
 			y: 6.0d
 			subtitle: "Dat Ash Tho"
 			description: [
-				"When high temperatures are required, there’s nothing quite like the scorching heat of the Nether. Why not bring it home with you too?"
+				"When high temperatures are required, there’s nothing quite like the scorching heat of the Nether. Why not bring it home with you?"
 				""
-				"Blaze Burners are created by right clicking an empty burner on either a Blaze (consumes the mob) or a Blaze Spawner (does not consume the spawner). They’ll burn hot, but not forever. "
+				"Blaze Burners are created by Right-Clicking an empty burner on either a Blaze (consumes the mob) or a Blaze Spawner (does not consume the spawner). They’ll burn hot, but not forever."
 				""
 				"Feed them coal or other burnable material to get them riled up again if they cool down."
 			]
@@ -884,8 +882,8 @@
 			}]
 		}
 		{
-			x: 13.0d
-			y: 7.0d
+			x: 13.5d
+			y: 6.5d
 			subtitle: "Forbidden Snacks"
 			description: [
 				"What do you mean that’s not hot enough? Well, let them eat cake!"
@@ -997,7 +995,7 @@
 		}
 		{
 			title: "Fluid Tanks"
-			x: 0.0d
+			x: 0.5d
 			y: 6.5d
 			subtitle: "Unfathomably Deep"
 			description: [
@@ -1025,7 +1023,7 @@
 		}
 		{
 			icon: "create:mechanical_crafter"
-			x: 12.5d
+			x: 14.5d
 			y: 4.5d
 			description: [
 				"For those times when a simple 3x3 grid simply isn’t good enough, there’s the Mechanical Crafter. Or, Crafters, to be precise. These interlocking blocks connect to form a large crafting interface. Each block accepting a single item for the craft."
@@ -1065,8 +1063,8 @@
 			}]
 		}
 		{
-			x: 12.5d
-			y: 3.5d
+			x: 13.5d
+			y: 4.0d
 			subtitle: "Spouting Off Nonsense"
 			description: ["The spout is paired with a Depot by placing it above the Depot. It will attempt to fill any item appearing on the Depot. For example, to make buckets of water, fill potion bottles, or make delicious tea!"]
 			dependencies: ["74699E3BBDD7CF8B"]
@@ -1077,12 +1075,10 @@
 				item: "create:spout"
 			}]
 			rewards: [{
-				id: "0000000000000D87"
-				type: "command"
-				title: "Epic Create Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
-				player_command: false
+				id: "61DC715A5922317C"
+				type: "item"
+				title: "Rare Create Loot Box"
+				icon: "kubejs:rare_lootbox"
 			}]
 		}
 		{
@@ -1588,8 +1584,8 @@
 			}]
 		}
 		{
-			x: 12.0d
-			y: 7.0d
+			x: 11.5d
+			y: 6.5d
 			subtitle: "Hello Brew-TEA-Full!"
 			description: [
 				"Stayed out too late par-tea-ing like it's 1773? Need a little more tranquili-tea in your life?"
@@ -1737,7 +1733,7 @@
 		}
 		{
 			icon: "create:steam_engine"
-			x: 7.0d
+			x: 6.5d
 			y: 3.5d
 			subtitle: "A Newcomen on the Block"
 			description: [
@@ -1861,7 +1857,7 @@
 			}]
 		}
 		{
-			x: 3.0d
+			x: 2.5d
 			y: 6.5d
 			subtitle: "Hoarder's Dream"
 			description: [
@@ -1882,6 +1878,133 @@
 				title: "Epic Create Loot Box"
 				icon: "kubejs:epic_lootbox"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 7.5d
+			y: 3.5d
+			subtitle: "Getting Wired Up"
+			description: [
+				"These simple electric motors make an excellent and compact source of SU. "
+				""
+				"Provide power from any source of FE to get them spun up and set their operating speed on the back. Spinning faster allows them to provide more SU, but at an increasing FE cost. For high SU, low speed applications, be sure to pair them with a Rotation Speed Controller."
+			]
+			dependencies: ["0000000000000CBA"]
+			id: "6A689A7721191B5F"
+			tasks: [{
+				id: "1C58028FCB2E6601"
+				type: "item"
+				item: "createaddition:electric_motor"
+			}]
+			rewards: [{
+				id: "06E0FA67CB6CC271"
+				type: "command"
+				title: "Legendary Create Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: 12.5d
+			y: 7.0d
+			subtitle: "A Quantum of Solace "
+			description: [
+				"Who knew a Blaze could get thirsty? They’re certainly not interested in Water, but other combustible fluids seem to hit the spot just fine. "
+				""
+				"Giving the Blaze a Straw allows them to accept liquid fuels instead. These will never burn as hot as a Blaze Cake, but they can make an excellent alternative to Coal for regular heating operations."
+			]
+			dependencies: ["0000000000000D0B"]
+			id: "37476D4C70355E26"
+			tasks: [{
+				id: "775FCD3643073FEC"
+				type: "item"
+				item: "createaddition:straw"
+			}]
+			rewards: [{
+				id: "618ED2BF01169851"
+				type: "command"
+				title: "Epic Create Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 10.5d
+			y: 3.5d
+			subtitle: "Keep them ingots rollin'"
+			description: ["The Rolling Mill is well suited for rolling out some clean rods or extruding wires suitable for electronics use. These may be used manually, or inline with conveyor belts as part of a larger factory.  "]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000D04"]
+			id: "286B9D8843E3B768"
+			tasks: [{
+				id: "4F39C95F04932DE3"
+				type: "item"
+				item: "createaddition:rolling_mill"
+			}]
+			rewards: [{
+				id: "613E951A3993ECB9"
+				type: "command"
+				title: "Rare Create Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 10.5d
+			y: 4.5d
+			subtitle: "Assault and Battery"
+			description: [
+				"A high-powered electrical device capable of charging objects wirelessly by induced currents, the Tesla Coil can be quite useful in any factory."
+				""
+				"When placed above a Belt or Depot and provided sufficient power, the Tesla coil will impart a charge into items on the Belt or Depot. This works not only with crafting recipes, but also for charging equipment like tools and batteries. "
+				""
+				"The Coil may be deployed for more destructive purposes as well by placing it and providing a Redstone Signal in addition to the power. In this mode, it will damage nearby entities"
+			]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000D04"]
+			min_width: 300
+			id: "467D1EB30C521A20"
+			tasks: [{
+				id: "352DB990B46388DA"
+				type: "item"
+				item: "createaddition:tesla_coil"
+			}]
+			rewards: [{
+				id: "3A6CBAD9FE3C2776"
+				type: "command"
+				title: "Legendary Create Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: 1.5d
+			y: 7.0d
+			subtitle: "Spin Me Right Round"
+			description: [
+				"Working on the same principles as Electric Motors, Alternators effectively just operate in reverse. By spinning the shaft, a current is induced in the coils which may be used to power devices. "
+				""
+				"The faster these are spun, the more SU they’ll use and FE they’ll produce. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["45CBD91076EAD50D"]
+			id: "4693EAC2CFBB6FB1"
+			tasks: [{
+				id: "06AFE505EFF7F9BB"
+				type: "item"
+				item: "createaddition:alternator"
+			}]
+			rewards: [{
+				id: "18498D3FE01276FC"
+				type: "command"
+				title: "Legendary Create Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
 				player_command: false
 			}]
 		}

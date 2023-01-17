@@ -155,6 +155,74 @@ JEIEvents.information((event) => {
         {
             items: ['hexerei:animal_fat'],
             text: [`Drops from most large animals.`]
+        },
+        {
+            items: [
+                'enigmaticunity:iridescent_source_producer',
+                'enigmaticunity:bright_source_producer',
+                'enigmaticunity:dim_source_producer'
+            ],
+            text: [
+                `Any FE fed into this device will be converted and sent to nearby Source Jars.`,
+                ` `,
+                `If no Source Jars are available, or they are completely full, then the FE will instead be converted into Aura.`
+            ]
+        },
+        {
+            items: [
+                'enigmaticunity:iridescent_source_generator',
+                'enigmaticunity:bright_source_generator',
+                'enigmaticunity:dim_source_generator'
+            ],
+            text: [
+                `Source from nearby Source Jars will be pulled into this device and converted to FE.`,
+                ` `,
+                `If sufficient Aura is available in the area, it will be consumed as well, dramatically increasing the FE produced.`
+            ]
+        },
+        {
+            items: ['starbunclemania:fluid_sourcelink'],
+            text: [`Valid Fluids:`, ` `, `Potions`, `Ether Gas`, `Liquefied Source`, `Bio Diesel`, `Sludge`]
+        },
+        {
+            items: ['ars_nouveau:mendosteen_pod'],
+            text: [
+                `Found only on naturally occuring Flourishing Archwood Trees.`,
+                ` `,
+                `May be grown like Cocoa Beans on Flourishing Archwood Logs.`
+            ]
+        },
+        {
+            items: ['ars_nouveau:frostaya_pod'],
+            text: [
+                `Found only on naturally occuring Cascading Archwood Trees.`,
+                ` `,
+                `May be grown like Cocoa Beans on Cascading Archwood Logs.`
+            ]
+        },
+        {
+            items: ['ars_nouveau:bombegranate_pod'],
+            text: [
+                `Found only on naturally occuring Blazing Archwood Trees.`,
+                ` `,
+                `May be grown like Cocoa Beans on Blazing Archwood Logs.`
+            ]
+        },
+        {
+            items: ['ars_nouveau:bastion_pod'],
+            text: [
+                `Found only on naturally occuring Vexing Archwood Trees.`,
+                ` `,
+                `May be grown like Cocoa Beans on Vexing Archwood Logs.`
+            ]
+        },
+        {
+            items: ['ars_elemental:flashpine_pod'],
+            text: [
+                `Found only on naturally occuring Flashing Archwood Trees.`,
+                ` `,
+                `May be grown like Cocoa Beans on Flashing Archwood Logs.`
+            ]
         }
     ];
 

@@ -1077,6 +1077,18 @@ const tree_properties = {
                 sap: 'thermal:resin',
                 rate: { living: 50, dead: 6 }
             }
+        },
+        {
+            sapling: 'sushigocrafting:avocado_sapling',
+            stems: ['sushigocrafting:avocado_log'],
+            foliage: ['sushigocrafting:avocado_leaves'],
+            fruits: ['sushigocrafting:avocado'],
+            dimension: 'overworld',
+            substrate: 'dirt',
+            logProcessing: {
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
+            }
         }
     ],
     shrooms: [
