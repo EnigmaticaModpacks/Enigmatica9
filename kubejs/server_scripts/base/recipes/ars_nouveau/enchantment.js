@@ -670,7 +670,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'superiorshields:frost_nova',
             level: 1,
             pedestalItems: [
-                { item: { item: 'minecraft:firwork_star' } },
+                { item: { item: 'minecraft:firework_star' } },
                 { item: { item: 'ars_nouveau:air_essence' } },
                 { item: { item: 'ars_nouveau:water_essence' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -680,7 +680,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'superiorshields:frost_nova',
             level: 2,
             pedestalItems: [
-                { item: { item: 'minecraft:firwork_star' } },
+                { item: { item: 'minecraft:firework_star' } },
                 { item: { item: 'ars_nouveau:air_essence' } },
                 { item: { item: 'ars_nouveau:water_essence' } },
                 { item: { item: 'ars_nouveau:water_essence' } },
@@ -692,7 +692,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'superiorshields:frost_nova',
             level: 3,
             pedestalItems: [
-                { item: { item: 'minecraft:firwork_star' } },
+                { item: { item: 'minecraft:firework_star' } },
                 { item: { item: 'ars_nouveau:air_essence' } },
                 { item: { item: 'ars_nouveau:water_essence' } },
                 { item: { item: 'ars_nouveau:water_essence' } },
@@ -707,7 +707,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'superiorshields:fire_nova',
             level: 1,
             pedestalItems: [
-                { item: { item: 'minecraft:firwork_star' } },
+                { item: { item: 'minecraft:firework_star' } },
                 { item: { item: 'ars_nouveau:air_essence' } },
                 { item: { item: 'ars_nouveau:fire_essence' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -717,7 +717,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'superiorshields:fire_nova',
             level: 2,
             pedestalItems: [
-                { item: { item: 'minecraft:firwork_star' } },
+                { item: { item: 'minecraft:firework_star' } },
                 { item: { item: 'ars_nouveau:air_essence' } },
                 { item: { item: 'ars_nouveau:fire_essence' } },
                 { item: { item: 'ars_nouveau:fire_essence' } },
@@ -729,7 +729,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'superiorshields:fire_nova',
             level: 3,
             pedestalItems: [
-                { item: { item: 'minecraft:firwork_star' } },
+                { item: { item: 'minecraft:firework_star' } },
                 { item: { item: 'ars_nouveau:air_essence' } },
                 { item: { item: 'ars_nouveau:fire_essence' } },
                 { item: { item: 'ars_nouveau:fire_essence' } },
@@ -744,7 +744,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'superiorshields:shulking_nova',
             level: 1,
             pedestalItems: [
-                { item: { item: 'minecraft:firwork_star' } },
+                { item: { item: 'minecraft:firework_star' } },
                 { item: { item: 'minecraft:chorus_fruit' } },
                 { item: { item: 'ars_nouveau:air_essence' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -754,7 +754,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'superiorshields:shulking_nova',
             level: 2,
             pedestalItems: [
-                { item: { item: 'minecraft:firwork_star' } },
+                { item: { item: 'minecraft:firework_star' } },
                 { item: { item: 'minecraft:chorus_fruit' } },
                 { item: { item: 'ars_nouveau:air_essence' } },
                 { item: { item: 'ars_nouveau:air_essence' } },
@@ -766,7 +766,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'superiorshields:shulking_nova',
             level: 3,
             pedestalItems: [
-                { item: { item: 'minecraft:firwork_star' } },
+                { item: { item: 'minecraft:firework_star' } },
                 { item: { item: 'minecraft:chorus_fruit' } },
                 { item: { item: 'ars_nouveau:air_essence' } },
                 { item: { item: 'ars_nouveau:air_essence' } },
