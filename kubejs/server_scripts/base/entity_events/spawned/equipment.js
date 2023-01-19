@@ -11,6 +11,13 @@ EntityEvents.spawned((event) => {
         event.entity.fullNBT = entity_data;
     }
 
+    // Make PNC spawners create Corrupted mobs (from Spirit)
+    if (event.entity.fullNBT.ForgeData.hasOwnProperty('pneumaticcraft:pressurized_spawner')) {
+        entity_data = event.entity.fullNBT;
+        entity_data.Corrupted = true;
+        event.entity.fullNBT = entity_data;
+    }
+
     // Don't apply buffs to Spirit spawner mobs
     // Don't apply buffs to Apotheosis bosses
     // Don't re-apply buffs to already checked mobs
