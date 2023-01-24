@@ -5,16 +5,30 @@ ServerEvents.recipes((event) => {
         {
             output: Item.of('eccentrictome:tome', {
                 'eccentrictome:mods': {
+                    ae2: {
+                        0: {
+                            Count: 1,
+                            id: 'ae2:guide'
+                        }
+                    },
+                    apotheosis: {
+                        0: {
+                            Count: 1,
+                            id: 'patchouli:guide_book',
+                            tag: { 'patchouli:book': 'apotheosis:apoth_chronicle' }
+                        }
+                    },
                     ars_nouveau: {
                         0: {
                             Count: 1,
                             id: 'ars_nouveau:worn_notebook'
                         }
                     },
-                    blue_skies: {
+                    engineersdecor: {
                         0: {
                             Count: 1,
-                            id: 'blue_skies:blue_journal'
+                            id: 'patchouli:guide_book',
+                            tag: { 'patchouli:book': 'engineersdecor:engineersdecor_manual' }
                         }
                     },
                     ftbquests: {
@@ -29,11 +43,32 @@ ServerEvents.recipes((event) => {
                             id: 'immersiveengineering:manual'
                         }
                     },
+                    industrialforegoing: {
+                        0: {
+                            Count: 1,
+                            id: 'patchouli:guide_book',
+                            tag: { 'patchouli:book': 'industrialforegoing:industrial_foregoing' }
+                        }
+                    },
                     littlelogistics: {
                         0: {
                             Count: 1,
                             id: 'patchouli:guide_book',
                             tag: { 'patchouli:book': 'littlelogistics:guide' }
+                        }
+                    },
+                    modonomicon: {
+                        0: {
+                            Count: 1,
+                            id: 'modonomicon:modonomicon',
+                            tag: { 'modonomicon:book_id': 'theurgy:the_hermetica' }
+                        }
+                    },
+                    modularrouters: {
+                        0: {
+                            Count: 1,
+                            id: 'patchouli:guide_book',
+                            tag: { 'patchouli:book': 'modularrouters:book' }
                         }
                     },
                     naturesaura: {
@@ -48,18 +83,6 @@ ServerEvents.recipes((event) => {
                             Count: 1,
                             id: 'occultism:dictionary_of_spirits',
                             tag: { 'modonomicon:book_id': 'occultism:dictionary_of_spirits' }
-                        },
-                        1: {
-                            Count: 1,
-                            id: 'patchouli:guide_book',
-                            tag: { 'patchouli:book': 'occultism:dictionary_of_spirits' }
-                        }
-                    },
-                    patchouli: {
-                        0: {
-                            Count: 1,
-                            id: 'patchouli:guide_book',
-                            tag: { 'patchouli:book': 'patchouli:modded_for_dummies' }
                         }
                     },
                     pneumaticcraft: {
@@ -80,9 +103,23 @@ ServerEvents.recipes((event) => {
                             Count: 1,
                             id: 'rftoolsbase:manual'
                         }
+                    },
+                    sushigocrafting: {
+                        0: {
+                            Count: 1,
+                            id: 'patchouli:guide_book',
+                            tag: { 'patchouli:book': 'sushigocrafting:sushigocrafting' }
+                        }
+                    },
+                    thermal: {
+                        0: {
+                            Count: 1,
+                            id: 'patchouli:guide_book',
+                            tag: { 'patchouli:book': 'thermal:guidebook' }
+                        }
                     }
                 },
-                'eccentrictome:version': 1
+                'eccentrictome:version': 1.0
             }),
             inputs: ['minecraft:book', '#forge:bookshelves'],
             id: 'eccentrictome:tome'
