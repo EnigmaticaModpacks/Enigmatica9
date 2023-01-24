@@ -15,7 +15,7 @@ ServerEvents.recipes((event) => {
                 { item: { item: 'ars_nouveau:fire_essence' } },
                 { item: { item: 'ars_nouveau:fire_essence' } }
             ],
-            source: 1000,
+            source: 600,
             id: `${id_prefix}iron_from_pig_iron`
         }
     ];
