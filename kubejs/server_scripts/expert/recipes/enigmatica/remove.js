@@ -28,6 +28,10 @@ ServerEvents.recipes((event) => {
 
         { id: 'immersiveengineering:blastfurnace/steel' },
 
+        { id: 'industrialforegoing:washing_factory' },
+        { id: 'industrialforegoing:fermentation_station' },
+        { id: 'industrialforegoing:fluid_sieving_machine' },
+
         // Disable Ore Processing
         { type: 'minecraft:smelting', output: '#forge:nuggets' },
         { type: 'minecraft:smelting', output: '#forge:ingots' },

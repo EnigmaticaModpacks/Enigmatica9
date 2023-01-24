@@ -175,7 +175,11 @@ jei.normal.fluids.hidden = [];
 jei.normal.categories.hidden = [];
 
 // Expert
-jei.expert.items.disabled = [];
+jei.expert.items.disabled = [
+    'industrialforegoing:washing_factory',
+    'industrialforegoing:fermentation_station',
+    'industrialforegoing:fluid_sieving_machine'
+];
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];
 jei.expert.categories.hidden = [];
