@@ -26,6 +26,8 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:invar_dust_3' },
         { id: 'thermal:bronze_dust_4' },
 
+        { id: 'immersiveengineering:blastfurnace/steel' },
+
         // Disable Ore Processing
         { type: 'minecraft:smelting', output: '#forge:nuggets' },
         { type: 'minecraft:smelting', output: '#forge:ingots' },
