@@ -17,6 +17,13 @@ ServerEvents.recipes((event) => {
             slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
             time: 30 * 20,
             id: `${id_prefix}pig_iron_from_iron_dirty_dust`
+        },
+        {
+            input: { tag: 'mekanism:crystals/iron' },
+            result: { item: 'kubejs:pig_iron_ingot' },
+            slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
+            time: 10 * 20,
+            id: `${id_prefix}pig_iron_from_iron_crystal`
         }
     ];
 
