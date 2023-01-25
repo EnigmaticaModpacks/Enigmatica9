@@ -200,3 +200,11 @@
 		#
 		allowPotionOfBeesRevivingEmptyBroodBlock = true
 
+	["Mod Compatibility Options"."Beekeeper Options"]
+		# 
+		#-----------------------------------------------------
+		#
+		# Adds Bumblezone items to Beekeeper mod's Beekeeper trades!
+		#
+		allowBeekeeperTradesCompat = true
+
