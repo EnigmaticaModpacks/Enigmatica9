@@ -124,6 +124,7 @@ jei.base.items.hidden = [
     'kubejs:spell_night_vision',
     'kubejs:teleport_everdawn',
     'kubejs:teleport_everbright',
+    'kubejs:pig_iron_ingot',
     'naturesaura:multiblock_maker',
     'sophisticatedstorage:debug_tool',
     'occultism:debug_djinni_test',
@@ -174,7 +175,11 @@ jei.normal.fluids.hidden = [];
 jei.normal.categories.hidden = [];
 
 // Expert
-jei.expert.items.disabled = [];
+jei.expert.items.disabled = [
+    'industrialforegoing:washing_factory',
+    'industrialforegoing:fermentation_station',
+    'industrialforegoing:fluid_sieving_machine'
+];
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];
 jei.expert.categories.hidden = [];
