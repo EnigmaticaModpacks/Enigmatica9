@@ -1,5 +1,5 @@
 {
-    "modId": "minecraft",
+    "modId": "enigmatica",
     "group": {
         "name": "Generic Seeds",
         "enabledByDefault": true,
@@ -27,6 +27,10 @@
         { "output": "hexerei:yellow_dock_bush" },
         { "output": "hexerei:mugwort_bush" },
         { "output": "hexerei:mandrake_flower" },
-        { "output": "hexerei:belladonna_flower" }
+        { "output": "hexerei:belladonna_flower" },
+        { "output": "sushigocrafting:sesame_seeds" },
+        { "output": "sushigocrafting:wasabi_seeds" },
+        { "output": "sushigocrafting:soy_seeds" },
+        { "output": "sushigocrafting:cucumber_seeds" }
     ]
 }

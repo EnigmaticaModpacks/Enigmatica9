@@ -16,11 +16,10 @@
 			description: [
 				"Welcome to Enigmatica 9, we're glad to have you :D"
 				" "
-				"Quests are divided into 3 types:"
+				"Quests are divided into two types:"
 				""
-				"- Exploring Enigmatica"
-				"- Learning Mods"
-				"- Challenges"
+				"● Exploring Enigmatica"
+				"● Learning Mods"
 				""
 				"You can learn more about each type below."
 				""
@@ -54,10 +53,11 @@
 				"These chapters are a great place to start if you're new to Modded Minecraft or if you're in the need for inspiration."
 				""
 				"It currently has the following chapters:"
-				"- Tools"
-				"- Storage"
-				"- Adventure"
-				"- Automation"
+				""
+				"● Tools"
+				"● Storage"
+				"● Adventure"
+				"● Automation"
 			]
 			dependencies: ["0000000000000045"]
 			id: "00000000000002AC"
@@ -75,8 +75,8 @@
 		}
 		{
 			icon: "minecraft:writable_book"
-			x: 0.0d
-			y: -3.5d
+			x: 2.0d
+			y: -5.0d
 			description: [
 				"The Learning Mods chapters are designed to help you get started with a mod, explain how to progress, and show off some of the things you can do."
 				""
@@ -91,30 +91,6 @@
 			}]
 			rewards: [{
 				id: "00000000000002B2"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			title: "Challenges"
-			icon: "minecraft:wither_skeleton_skull"
-			x: 2.0d
-			y: -5.0d
-			description: [
-				"Challenge quests are, surprisingly, challenges for the more seasoned modded Minecraft players."
-				""
-				"They are still work in progress."
-			]
-			dependencies: ["0000000000000045"]
-			id: "00000000000002B0"
-			tasks: [{
-				id: "00000000000002B1"
-				type: "checkmark"
-				title: "Challenges"
-				icon: "minecraft:wither_skeleton_skull"
-			}]
-			rewards: [{
-				id: "00000000000002B3"
 				type: "xp"
 				xp: 100
 			}]
@@ -157,20 +133,24 @@
 			}]
 		}
 		{
-			title: "Book"
+			title: "Eccentric Tome"
 			x: -1.5d
 			y: -7.5d
 			subtitle: "Don't Panic"
 			description: [
 				"A vast repository of knowledge in the palm of your hands. This tome comes pre-populated with the manuals for each mod so they’re always at the ready. "
 				""
-				"● Right click to open the menu and choose a book. Once chosen, the Eccentric Tome transforms and becomes that book, for all intents and purposes. "
+				"● Right-Click to open the menu and choose a book. Once chosen, the Eccentric Tome transforms and becomes that book, for all intents and purposes. "
 				""
-				"● Left click the air to revert it back to the Eccentric Tome."
+				"● Left-Click the air to revert it back to the Eccentric Tome."
 				""
-				"● When transformed, sneak and press your Throw key to remove a given book. "
+				"● When transformed, Sneak and press Throw to remove a given book. "
 				""
-				"●Craft the Tome with a book to merge them once more. "
+				"● Craft the Tome with a book to merge them once more. "
+				""
+				"Note: If ever this tome is lost, a new pre-filled one may be crafted at any time."
+				""
+				"Warning: The Blue Skies book is left out of the Eccentric Tome as it gets consumed on use, getting added to the Inventory screen instead."
 			]
 			dependencies: ["0000000000000045"]
 			min_width: 250
@@ -180,109 +160,163 @@
 				type: "item"
 				item: "minecraft:book"
 			}]
-			rewards: [{
-				id: "68C0A864D96B2AC8"
-				type: "item"
-				title: "Full Eccentric Tome"
-				item: {
-					id: "eccentrictome:tome"
-					Count: 1b
-					tag: {
-						"eccentrictome:mods": {
-							powah: {
-								0: {
-									id: "powah:book"
-									Count: 1b
+			rewards: [
+				{
+					id: "68C0A864D96B2AC8"
+					type: "item"
+					title: "Full Eccentric Tome"
+					item: {
+						id: "eccentrictome:tome"
+						Count: 1b
+						tag: {
+							"eccentrictome:mods": {
+								industrialforegoing: {
+									0: {
+										Count: 1.0d
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "industrialforegoing:industrial_foregoing"
+										}
+									}
 								}
-							}
-							ars_nouveau: {
-								0: {
-									id: "ars_nouveau:worn_notebook"
-									Count: 1b
+								powah: {
+									0: {
+										Count: 1.0d
+										id: "powah:book"
+									}
 								}
-							}
-							blue_skies: {
-								0: {
-									id: "blue_skies:blue_journal"
-									Count: 1b
+								ftbquests: {
+									0: {
+										Count: 1.0d
+										id: "ftbquests:book"
+									}
 								}
-							}
-							pneumaticcraft: {
-								0: {
-									id: "patchouli:guide_book"
-									Count: 1b
-									tag: {
-										"patchouli:book": "pneumaticcraft:book"
+								modonomicon: {
+									0: {
+										Count: 1.0d
+										id: "modonomicon:modonomicon"
+										tag: {
+											"modonomicon:book_id": "theurgy:the_hermetica"
+										}
+									}
+								}
+								pneumaticcraft: {
+									0: {
+										Count: 1.0d
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "pneumaticcraft:book"
+										}
+									}
+								}
+								immersiveengineering: {
+									0: {
+										Count: 1.0d
+										id: "immersiveengineering:manual"
+									}
+								}
+								naturesaura: {
+									0: {
+										Count: 1.0d
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "naturesaura:book"
+										}
+									}
+								}
+								apotheosis: {
+									0: {
+										Count: 1.0d
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "apotheosis:apoth_chronicle"
+										}
+									}
+								}
+								littlelogistics: {
+									0: {
+										Count: 1.0d
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "littlelogistics:guide"
+										}
+									}
+								}
+								engineersdecor: {
+									0: {
+										Count: 1.0d
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "engineersdecor:engineersdecor_manual"
+										}
+									}
+								}
+								occultism: {
+									0: {
+										Count: 1.0d
+										id: "occultism:dictionary_of_spirits"
+										tag: {
+											"modonomicon:book_id": "occultism:dictionary_of_spirits"
+										}
+									}
+								}
+								ae2: {
+									0: {
+										Count: 1.0d
+										id: "ae2:guide"
+									}
+								}
+								modularrouters: {
+									0: {
+										Count: 1.0d
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "modularrouters:book"
+										}
+									}
+								}
+								ars_nouveau: {
+									0: {
+										Count: 1.0d
+										id: "ars_nouveau:worn_notebook"
+									}
+								}
+								sushigocrafting: {
+									0: {
+										Count: 1.0d
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "sushigocrafting:sushigocrafting"
+										}
+									}
+								}
+								thermal: {
+									0: {
+										Count: 1.0d
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "thermal:guidebook"
+										}
+									}
+								}
+								rftoolsbase: {
+									0: {
+										Count: 1.0d
+										id: "rftoolsbase:manual"
 									}
 								}
 							}
-							ftbquests: {
-								0: {
-									id: "ftbquests:book"
-									Count: 1b
-								}
-							}
-							immersiveengineering: {
-								0: {
-									id: "immersiveengineering:manual"
-									Count: 1b
-								}
-							}
-							naturesaura: {
-								0: {
-									id: "patchouli:guide_book"
-									Count: 1b
-									tag: {
-										"patchouli:book": "naturesaura:book"
-									}
-								}
-							}
-							patchouli: {
-								0: {
-									id: "patchouli:guide_book"
-									Count: 1b
-									tag: {
-										"patchouli:book": "patchouli:modded_for_dummies"
-									}
-								}
-							}
-							rftoolsbase: {
-								0: {
-									id: "rftoolsbase:manual"
-									Count: 1b
-								}
-							}
-							littlelogistics: {
-								0: {
-									id: "patchouli:guide_book"
-									Count: 1b
-									tag: {
-										"patchouli:book": "littlelogistics:guide"
-									}
-								}
-							}
-							occultism: {
-								0: {
-									id: "occultism:dictionary_of_spirits"
-									Count: 1b
-									tag: {
-										"modonomicon:book_id": "occultism:dictionary_of_spirits"
-									}
-								}
-								1: {
-									id: "patchouli:guide_book"
-									Count: 1b
-									tag: {
-										"patchouli:book": "occultism:dictionary_of_spirits"
-									}
-								}
-							}
+							"eccentrictome:version": 1.0d
 						}
-						"eccentrictome:version": 1
 					}
+					only_one: true
 				}
-				only_one: true
-			}]
+				{
+					id: "064330E16B6BBC5F"
+					type: "item"
+					item: "blue_skies:blue_journal"
+				}
+			]
 		}
 	]
 	quest_links: [ ]

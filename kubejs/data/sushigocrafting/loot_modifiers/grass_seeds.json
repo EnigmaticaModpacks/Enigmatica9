@@ -1,0 +1,4 @@
+{
+    "type": "sushigocrafting:grass_seeds",
+    "conditions": [{ "condition": "forge:false" }]
+}

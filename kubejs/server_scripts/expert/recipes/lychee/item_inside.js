@@ -105,43 +105,6 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}sunstone_block_to_pearl`
-        },
-        {
-            input: 'blue_skies:pearl',
-            block_in: {
-                blocks: ['minecraft:water']
-            },
-            // Dummy Recipe to show how things work.
-            ghost: true,
-            post: [
-                // If around noon, convert to sunstone
-                {
-                    type: 'drop_item',
-                    item: 'blue_skies:sunstone_block',
-                    contextual: [
-                        {
-                            type: 'time',
-                            value: { min: 4000, max: 8000 },
-                            period: 24000,
-                            description: 'recipes.lychee.item_inside.sunstone.condition.description'
-                        }
-                    ]
-                },
-                // If around midnight, convert to moonstone
-                {
-                    type: 'drop_item',
-                    item: 'blue_skies:moonstone_block',
-                    contextual: [
-                        {
-                            type: 'time',
-                            value: { min: 16000, max: 20000 },
-                            period: 24000,
-                            description: 'recipes.lychee.item_inside.moonstone.condition.description'
-                        }
-                    ]
-                }
-            ],
-            id: `${id_prefix}pearl_to_moonstone_sunstone`
         }
     ];
 

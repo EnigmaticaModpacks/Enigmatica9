@@ -79,6 +79,8 @@
 				"● Vitalic absorbs the life-force of creatures dying nearby. "
 				""
 				"● Volcanic consumes most burnables from adjacent Pedestals. Coal, long fossilized trees, produces a small amount while Blazing Archwood logs produce more sizeable quantities. "
+				""
+				"● Fluid absorbs certain liquids from tanks placed below it, converting it into Source at different rates. "
 			]
 			dependencies: ["4D0CB5D53030494C"]
 			min_width: 300
@@ -93,15 +95,15 @@
 					tag: {
 						items: [
 							{
-								id: "ars_nouveau:alchemical_sourcelink"
-								Count: 1b
-							}
-							{
 								id: "ars_nouveau:agronomic_sourcelink"
 								Count: 1b
 							}
 							{
-								id: "ars_nouveau:mycelial_sourcelink"
+								id: "ars_nouveau:volcanic_sourcelink"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:alchemical_sourcelink"
 								Count: 1b
 							}
 							{
@@ -109,7 +111,11 @@
 								Count: 1b
 							}
 							{
-								id: "ars_nouveau:volcanic_sourcelink"
+								id: "ars_nouveau:mycelial_sourcelink"
+								Count: 1b
+							}
+							{
+								id: "starbunclemania:fluid_sourcelink"
 								Count: 1b
 							}
 						]
@@ -403,14 +409,18 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "495069A420D248C5"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "64CA76A752005B44"
+					type: "item"
+					item: "starbunclemania:star_saddle"
+				}
+				{
+					id: "1C13B3BD5E9A90CD"
+					type: "item"
+					item: "starbunclemania:star_bin"
+				}
+			]
 		}
 		{
 			x: -7.0d
@@ -647,8 +657,8 @@
 			]
 		}
 		{
-			x: -6.0d
-			y: 2.0d
+			x: -6.5d
+			y: 2.5d
 			description: [
 				"Multiple doses all bottled up and ready to go in an eco-friendly re-usable package. "
 				""
@@ -1416,8 +1426,8 @@
 			}]
 		}
 		{
-			x: -5.5d
-			y: 3.0d
+			x: -6.0d
+			y: 3.5d
 			description: [
 				"The Splash Flask Cannon is a simple device designed to further weaponize harmful potions. Any potion fed into it may be thrown as if it had been brewed into a Splash Potion. "
 				""
@@ -1498,8 +1508,8 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: 3.0d
+			x: -7.0d
+			y: 3.5d
 			description: [
 				"A wizard in battle has no time to worry about such trivialities as quaffing a potion. The Alchemist’s Crown handles that for them. "
 				""
@@ -1960,6 +1970,216 @@
 				type: "item"
 				item: "ars_nouveau:blank_parchment"
 				count: 8
+			}]
+		}
+		{
+			title: "Starbuncle Logistics"
+			x: -2.0d
+			y: -0.5d
+			description: [
+				"In addition to transporting items and looking stylish, Starbuncles may be given a few additional accessories to further enhance their abilities. "
+				""
+				"Configuring their pickup and drop off locations remains the same as with Items; by using a Dominion Wand after equipping them with the appropriate accessory. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["00000000000003F2"]
+			id: "355D6EAEA6130932"
+			tasks: [{
+				id: "01C1E69E6C4CCEB7"
+				type: "item"
+				item: "ars_nouveau:starbuncle_shards"
+			}]
+			rewards: [{
+				id: "554D391BC7B04832"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.0d
+			subtitle: "Watt is love? Baby don't hertz me, n-ohm-ore"
+			description: ["A tiny little backpack for transporting FE from place to place. "]
+			dependencies: ["355D6EAEA6130932"]
+			id: "2C2F387B685BACBF"
+			tasks: [{
+				id: "20A1A2ACEC44F67B"
+				type: "item"
+				item: "starbunclemania:star_battery"
+			}]
+			rewards: [{
+				id: "25797A58CD3FB9E7"
+				type: "command"
+				title: "Rare Ars Nouveau Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.5d
+			subtitle: "Looking a little sloshed"
+			description: ["Sealed to prevent spillages, the Starbucket allows the Starbuncle to transport any fluid. "]
+			dependencies: ["355D6EAEA6130932"]
+			id: "58E16327E88CA425"
+			tasks: [{
+				id: "5E0EAB7D7348A4EA"
+				type: "item"
+				item: "starbunclemania:star_bucket"
+			}]
+			rewards: [{
+				id: "6AB5D94A72FBBE3B"
+				type: "command"
+				title: "Rare Ars Nouveau Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.5d
+			subtitle: "Let's not get carried away"
+			description: ["With a Starballon in tow, a Starbuncle may transport Mekanism gasses from place to place. "]
+			dependencies: ["355D6EAEA6130932"]
+			id: "1F46F472B7FB88D5"
+			tasks: [{
+				id: "31155BF4A36825BD"
+				type: "item"
+				item: "starbunclemania:star_balloon"
+			}]
+			rewards: [{
+				id: "71EE3CB169F23535"
+				type: "command"
+				title: "Rare Ars Nouveau Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -5.5d
+			y: 2.5d
+			description: [
+				"Though suitable for any fluid, Fluid Containment Jars are particularly useful for working with Potions. "
+				""
+				"When fluid potions made by other mods such as Create, Hexerei, Thermal, or Immersive Engineering are stored in a Containment Jar, they’ll automatically be deposited into a Potion Jar placed atop it. Meaning any potion may be easily converted for use in devices such as Potion Melders or other alchemical tools offered by Ars Nouveau."
+			]
+			dependencies: ["4DC7DC466B1F2D0B"]
+			id: "0F76D6C074F7AEE1"
+			tasks: [{
+				id: "2B5E1A2D4929EA45"
+				type: "item"
+				item: "starbunclemania:fluid_jar"
+			}]
+			rewards: [{
+				id: "74DC74F14E5469F2"
+				type: "command"
+				title: "Rare Ars Nouveau Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -4.5d
+			y: -5.0d
+			subtitle: "Source Reserves"
+			description: ["A simple device used for converting Source in its natural form to a more… fluid state, allowing it to be moved around by way of pipes or other conveyances. "]
+			dependencies: ["00000000000003B6"]
+			id: "4CD2D0DB2782D7B8"
+			tasks: [{
+				id: "20AEA58BC06C38B1"
+				type: "item"
+				item: "starbunclemania:source_condenser"
+			}]
+			rewards: [{
+				id: "7AC95168237AF555"
+				type: "command"
+				title: "Rare Ars Nouveau Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Energy Conversion"
+			x: -2.0d
+			y: 2.5d
+			description: [
+				"Once thought to be entirely separate, the magical energies know as Source, Aura, and FE are in fact all facets of the same energy. By making use of special crystals, it becomes possible to convert between them with ease. "
+				""
+				"Pulsating Crystals work by absorbing Source from nearby Source Jars and converting it into usable FE. Should the area contain sufficient Aura, it will also be consumed, greatly enhancing the FE generated. "
+				""
+				"Resonating Crystals, on the other hand, set up an internal resonance with FE, converting it back into Source or Aura. If a Source Jar is near enough, it will send it there. If there is no jar, or if it is 100% full, the Resonating Crystal will instead convert the incoming FE to Aura and diffuse it into the atmosphere. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["00000000000003B6"]
+			min_width: 300
+			id: "24D38853A31F4AA6"
+			tasks: [
+				{
+					id: "17973FDD702DDDC8"
+					type: "item"
+					title: "Pulsating Crystals"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "enigmaticunity:dim_source_generator"
+									Count: 1b
+								}
+								{
+									id: "enigmaticunity:bright_source_generator"
+									Count: 1b
+								}
+								{
+									id: "enigmaticunity:iridescent_source_generator"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "63B60CDE0259A851"
+					type: "item"
+					title: "Resonating Crystals"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "enigmaticunity:dim_source_producer"
+									Count: 1b
+								}
+								{
+									id: "enigmaticunity:bright_source_producer"
+									Count: 1b
+								}
+								{
+									id: "enigmaticunity:iridescent_source_producer"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "7CE9FDA5D58E4515"
+				type: "command"
+				title: "Rare Ars Nouveau Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				player_command: false
 			}]
 		}
 	]

@@ -10,6 +10,22 @@ ServerEvents.recipes((event) => {
 
         { id: /ars_nouveau:.*_dye/ },
 
+        { id: /createaddition:mixing\/biomass/ },
+        { id: /createaddition:crafting\/.*spool/ },
+        { id: 'createaddition:crafting/barbed_wire' },
+        { id: 'createaddition:crafting/redstone_relay' },
+        { id: 'createaddition:crafting/connector' },
+        { id: 'createaddition:compacting/seed_oil' },
+        { id: 'createaddition:mixing/bioethanol' },
+        { id: 'createaddition:mechanical_crafting/accumulator' },
+        { id: 'createaddition:rolling/copper_plate' },
+        { id: 'createaddition:rolling/iron_plate' },
+        { id: 'createaddition:metalpress/wire_iron' },
+        { id: 'createaddition:rolling/gold_plate' },
+        { id: 'createaddition:metalpress/wire_gold' },
+        { id: 'createaddition:rolling/straw' },
+        { id: 'createaddition:compat/ae2/charged_certus_quartz' },
+
         { id: /mekanism:enriching\/dye/ },
         { id: /mekanism:compat\/byg\/dye/ },
         { id: /mekanism:compat\/byg\/sawing\/log/ },
@@ -93,6 +109,7 @@ ServerEvents.recipes((event) => {
         { id: 'powah:crafting/capacitor_basic_tiny' },
 
         { type: 'create:cutting' },
+        { type: 'createaddition:liquid_burning' },
 
         { type: 'immersiveengineering:sawmill' },
         { type: 'immersiveengineering:cloche' },
@@ -100,7 +117,11 @@ ServerEvents.recipes((event) => {
         { type: 'immersiveengineering:alloy' },
         { type: 'immersiveengineering:squeezer' },
         { type: 'immersiveengineering:fermenter' },
+        { type: 'immersiveengineering:generator_fuel' },
 
+        { type: 'pneumaticcraft:fuel_quality' },
+
+        { type: 'thermal:lapidary_fuel' },
         { type: 'thermal:sawmill' },
         { type: 'thermal:pulverizer_recycle' },
         { type: 'thermal:insolator' },

@@ -108,6 +108,23 @@ jei.base.items.disabled = [
     'superiorshields:manasteel_shield',
     'superiorshields:terrasteel_shield',
     'superiorshields:elementium_shield',
+    'sushigocrafting:rice_seeds',
+    'sushigocrafting:rice',
+    'createaddition:copper_spool',
+    'createaddition:spool',
+    'createaddition:festive_spool',
+    'createaddition:gold_spool',
+    'createaddition:connector',
+    'createaddition:accumulator',
+    'createaddition:redstone_relay',
+    'createaddition:gold_wire',
+    'createaddition:iron_wire',
+    'createaddition:copper_wire',
+    'createaddition:barbed_wire',
+    'createaddition:biomass',
+    'createaddition:bioethanol_bucket',
+    'createaddition:seed_oil_bucket'
+    'superiorshields:elementium_shield',
     /byg:.*pendorite.*/,
     /byg:.*ametrine.*/,
     'minecraft:nether_gold_ore'
@@ -130,6 +147,7 @@ jei.base.items.hidden = [
     'kubejs:spell_night_vision',
     'kubejs:teleport_everdawn',
     'kubejs:teleport_everbright',
+    'kubejs:pig_iron_ingot',
     'naturesaura:multiblock_maker',
     'sophisticatedstorage:debug_tool',
     'occultism:debug_djinni_test',
@@ -170,7 +188,9 @@ jei.base.fluids.hidden = [
     'thermal:refined_fuel',
     'immersiveengineering:plantoil',
     'immersiveengineering:ethanol',
-    'immersiveengineering:biodiesel'
+    'immersiveengineering:biodiesel',
+    'createaddition:seed_oil',
+    'createaddition:bioethanol'
 ];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
 
@@ -186,7 +206,11 @@ jei.normal.fluids.hidden = [];
 jei.normal.gases.hidden = [];
 
 // Expert
-jei.expert.items.disabled = [];
+jei.expert.items.disabled = [
+    'industrialforegoing:washing_factory',
+    'industrialforegoing:fermentation_station',
+    'industrialforegoing:fluid_sieving_machine'
+];
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];
 jei.expert.categories.hidden = [];
