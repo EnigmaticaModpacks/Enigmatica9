@@ -19,7 +19,7 @@
 			#  <1 to make it a chance.
 			#  0 to disable.
 			#Range: 0.0 ~ 512.0
-			frequency = 0
+			frequency = 0.05
 			#.
 			#Range: > -2147483648
 			minHeight = 40
@@ -37,7 +37,7 @@
 			#  <1 to make it a chance.
 			#  0 to disable.
 			#Range: 0.0 ~ 512.0
-			frequency = 0
+			frequency = 0.05
 			#.
 			#Range: > -2147483648
 			minHeight = -30
