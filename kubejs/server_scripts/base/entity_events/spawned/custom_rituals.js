@@ -76,12 +76,8 @@ EntityEvents.spawned((event) => {
                 .reverse()
                 .forEach((coord, index) => {
                     event.server.scheduleInTicks(index * delay, (schedule) => {
-                        // spiral of swirlies
-                        command = `/execute in ${ritual_dimension} run particle minecraft:entity_effect ${coord.x} ${coord.y} ${coord.z} 0.44 0.07 0.89 1 0`;
-                        schedule.server.runCommandSilent(command);
-
-                        // spiral of dragon_breath
-                        command = `/execute in ${ritual_dimension} run particle minecraft:dragon_breath ${coord.x} ${coord.y} ${coord.z} 0.5 0.5 0.5 0.1 9`;
+                        // spiral of spooky particles
+                        command = `/execute in ${ritual_dimension} run particle twilightforest:annihilate ${coord.x} ${coord.y} ${coord.z} 0.5 0.5 0.5 0.1 9`;
                         schedule.server.runCommandSilent(command);
 
                         // spiral shockwave
@@ -103,6 +99,19 @@ EntityEvents.spawned((event) => {
                             command = `/execute in ${ritual_dimension} run playsound minecraft:block.soul_sand.step block @p ${coord.x} ${coord.y} ${coord.z} 1 0.1`;
                             schedule.server.runCommandSilent(command);
                         }
+                    });
+
+                    // extra particles, trailing behind
+                    event.server.scheduleInTicks(index * delay + 10, (schedule) => {
+                        // spiral of dragon_breath
+                        command = `/execute in ${ritual_dimension} run particle minecraft:dragon_breath ${coord.x} ${coord.y} ${coord.z} 0.5 0.5 0.5 0.1 9`;
+                        schedule.server.runCommandSilent(command);
+                    });
+
+                    event.server.scheduleInTicks(index * delay + 5, (schedule) => {
+                        // spiral of swirlies
+                        command = `/execute in ${ritual_dimension} run particle minecraft:entity_effect ${coord.x} ${coord.y} ${coord.z} 0.44 0.07 0.89 1 0`;
+                        schedule.server.runCommandSilent(command);
                     });
                 });
 
