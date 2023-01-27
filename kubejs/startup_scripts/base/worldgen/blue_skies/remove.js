@@ -15,11 +15,24 @@ WorldgenEvents.remove((event) => {
     'surface_structures'
     */
 
-    event.removeFeatureById('underground_ores', 
-        [
+    event.removeOres((props) => {
+        props.worldgenLayer = 'underground_ores';
+        props.blocks = [
             'blue_skies:horizonite_ore',
             'blue_skies:ventium_ore',
-            'blue_skies:falsite_ore'
-        ]
-    );
+            'blue_skies:falsite_ore',
+            'blue_skies:everdawn_moonstone_ore',
+            'blue_skies:everdawn_pyrope_ore',
+            'blue_skies:everdawn_aquite_ore',
+            'blue_skies:everdawn_emerald_ore',
+            'blue_skies:everdawn_diopside_ore',
+            'blue_skies:everdawn_charoite_ore',
+            'blue_skies:everbright_moonstone_ore',
+            'blue_skies:everbright_pyrope_ore',
+            'blue_skies:everbright_aquite_ore',
+            'blue_skies:everbright_emerald_ore',
+            'blue_skies:everbright_diopside_ore',
+            'blue_skies:everbright_charoite_ore'
+        ];
+    });
 });
