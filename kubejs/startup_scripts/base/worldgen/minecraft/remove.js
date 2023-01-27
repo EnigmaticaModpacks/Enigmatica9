@@ -25,10 +25,4 @@ WorldgenEvents.remove((event) => {
             'minecraft:coal_ore'
         ]
     });
-
-    event.removeFeatureById('underground_ores', 
-        [
-            'minecraft:ore_quartz'
-        ]
-    );
 });
