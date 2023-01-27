@@ -3,6 +3,7 @@
     "source": "modded",
     "localizedName": "Coal Coke",
     "processedTypes": [
+        "storage_block",
         "gem",
         "dust"
     ],
@@ -12,8 +13,5 @@
         "isBurnable": true,
         "burnTime": 3200,
         "blockRecipeType": 9
-    },
-    "colors": {
-        "materialColor": "1f1f23"
     }
 }
