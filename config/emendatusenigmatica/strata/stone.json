@@ -3,5 +3,9 @@
     "baseTexture": "minecraft:block/stone",
     "suffix": "stone",
     "fillerType": "minecraft:stone",
-    "localizedName": "Stone"
-  }
+    "localizedName": "Stone",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 6,
+    "sampleStrata": false
+}

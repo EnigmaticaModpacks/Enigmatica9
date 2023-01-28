@@ -1,0 +1,11 @@
+{
+    "id": "byg_scoria_stone",
+    "baseTexture": "byg:block/scoria_stone",
+    "suffix": "scoria_stone",
+    "fillerType": "byg:scoria_stone",
+    "localizedName": "Scoria Stone",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 6,
+    "sampleStrata": false
+}

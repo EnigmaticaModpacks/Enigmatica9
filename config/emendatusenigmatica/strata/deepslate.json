@@ -3,5 +3,9 @@
     "baseTexture": "minecraft:block/deepslate",
     "suffix": "deepslate",
     "fillerType": "minecraft:deepslate",
-    "localizedName": "Deepslate"
-  }
+    "localizedName": "Deepslate",
+    "harvestTool": "pickaxe",
+    "hardness": 3,
+    "resistance": 6,
+    "sampleStrata": false
+}

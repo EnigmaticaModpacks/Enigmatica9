@@ -1,0 +1,11 @@
+{
+    "id": "minecraft_honeycomb_block",
+    "baseTexture": "minecraft:block/honeycomb_block",
+    "suffix": "honeycomb_block",
+    "fillerType": "minecraft:honeycomb_block",
+    "localizedName": "Honeycomb Block",
+    "harvestTool": "pickaxe",
+    "hardness": 0.6,
+    "resistance": 2,
+    "sampleStrata": false
+}

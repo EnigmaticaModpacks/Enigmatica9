@@ -1,0 +1,11 @@
+{
+    "id": "blue_skies_lunar_cobblestone",
+    "baseTexture": "blue_skies:block/stone/lunar_cobblestone",
+    "suffix": "lunar_cobblestone",
+    "fillerType": "blue_skies:lunar_cobblestone",
+    "localizedName": "Lunar Cobblestone",
+    "harvestTool": "pickaxe",
+    "hardness": 2,
+    "resistance": 8,
+    "sampleStrata": false
+}

@@ -1,0 +1,11 @@
+{
+    "id": "blue_skies_midnight_sandstone",
+    "baseTexture": "blue_skies:block/stone/midnight_sandstone",
+    "suffix": "midnight_sandstone",
+    "fillerType": "blue_skies:midnight_sandstone",
+    "localizedName": "Midnight Sandstone",
+    "harvestTool": "pickaxe",
+    "hardness": 0.8,
+    "resistance": 0.8,
+    "sampleStrata": false
+}

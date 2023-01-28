@@ -1,0 +1,11 @@
+{
+    "id": "byg_soapstone",
+    "baseTexture": "byg:block/soapstone",
+    "suffix": "soapstone",
+    "fillerType": "byg:soapstone",
+    "localizedName": "Soapstone",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 4,
+    "sampleStrata": false
+}

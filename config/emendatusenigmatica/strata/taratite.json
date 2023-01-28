@@ -1,0 +1,11 @@
+{
+    "id": "blue_skies_taratite",
+    "baseTexture": "blue_skies:block/stone/taratite",
+    "suffix": "taratite",
+    "fillerType": "blue_skies:taratite",
+    "localizedName": "Taratite",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 6,
+    "sampleStrata": false
+}

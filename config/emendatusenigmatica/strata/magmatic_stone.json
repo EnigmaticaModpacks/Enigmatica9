@@ -1,0 +1,11 @@
+{
+    "id": "byg_magmatic_stone",
+    "baseTexture": "byg:block/magmatic_stone",
+    "suffix": "magmatic_stone",
+    "fillerType": "byg:magmatic_stone",
+    "localizedName": "Magmatic Stone",
+    "harvestTool": "pickaxe",
+    "hardness": 0.4,
+    "resistance": 0.4,
+    "sampleStrata": false
+}

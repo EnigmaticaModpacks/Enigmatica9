@@ -1,0 +1,11 @@
+{
+    "id": "blue_skies_mossy_lunar_cobblestone",
+    "baseTexture": "blue_skies:block/stone/mossy_lunar_cobblestone",
+    "suffix": "mossy_lunar_cobblestone",
+    "fillerType": "blue_skies:mossy_lunar_cobblestone",
+    "localizedName": "Mossy Lunar Cobblestone",
+    "harvestTool": "pickaxe",
+    "hardness": 2,
+    "resistance": 8,
+    "sampleStrata": false
+}

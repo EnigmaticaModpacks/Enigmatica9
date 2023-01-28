@@ -1,0 +1,11 @@
+{
+    "id": "byg_white_sandstone",
+    "baseTexture": "byg:block/white_sandstone",
+    "suffix": "white_sandstone",
+    "fillerType": "byg:white_sandstone",
+    "localizedName": "White Sandstone",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 2,
+    "sampleStrata": false
+}
