@@ -306,5 +306,73 @@ EntityEvents.spawned((event) => {
                 schedule.server.runCommandSilent(command);
             });
         }
+
+        // Remove Custom Structure Handling
+        if (ritual_effect.structure.remove) {
+            let structure = NBTIO.read(ritual_effect.structure.remove);
+            let delay;
+            let cur = {
+                x: Math.floor(abs.x + ritual_effect.offset.x - Math.floor(structure.size[0] / 2)),
+                y: Math.floor(abs.y + ritual_effect.offset.y),
+                z: Math.floor(abs.z + ritual_effect.offset.z - Math.floor(structure.size[2] / 2))
+            };
+
+            structure.blocks.forEach((block) => {
+                let palette = structure.palette[block.state];
+
+                let coord = {
+                    x: Math.floor(cur.x + block.pos[0]),
+                    y: Math.floor(cur.y + block.pos[1]),
+                    z: Math.floor(cur.z + block.pos[2])
+                };
+
+                delay = 0.5 * block.pos[1];
+                event.server.scheduleInTicks(delay, (schedule) => {
+                    command = `/execute in ${ritual_dimension} run particle minecraft:large_smoke ${coord.x} ${coord.y} ${coord.z}`;
+                    schedule.server.runCommandSilent(command);
+
+                    command = `/execute in ${ritual_dimension} run fill ${coord.x} ${coord.y} ${coord.z} ${coord.x} ${coord.y} ${coord.z} air replace ${palette.Name}`;
+                    schedule.server.runCommandSilent(command);
+                });
+            });
+        }
+
+        // Summon Custom Structure Handling
+        if (ritual_effect.structure.add) {
+            let structure = NBTIO.read(ritual_effect.structure.add);
+            let delay;
+            let cur = {
+                x: Math.floor(abs.x + ritual_effect.offset.x - Math.floor(structure.size[0] / 2)),
+                y: Math.floor(abs.y + ritual_effect.offset.y),
+                z: Math.floor(abs.z + ritual_effect.offset.z - Math.floor(structure.size[2] / 2))
+            };
+
+            structure.blocks.forEach((block) => {
+                let palette = structure.palette[block.state];
+                let block_properties = '';
+
+                if (palette.Properties) {
+                    Object.keys(palette.Properties).forEach((prop) => {
+                        block_properties += `${prop}=${palette.Properties[prop]},`;
+                    });
+                    block_properties = block_properties.slice(0, -1);
+                }
+
+                let coord = {
+                    x: Math.floor(cur.x + block.pos[0]),
+                    y: Math.floor(cur.y + block.pos[1]),
+                    z: Math.floor(cur.z + block.pos[2])
+                };
+
+                delay = 0.75 * block.pos[1];
+                event.server.scheduleInTicks(delay, (schedule) => {
+                    command = `/execute in ${ritual_dimension} run particle minecraft:large_smoke ${coord.x} ${coord.y} ${coord.z}`;
+                    schedule.server.runCommandSilent(command);
+
+                    command = `/execute in ${ritual_dimension} run setblock ${coord.x} ${coord.y} ${coord.z} ${palette.Name}[${block_properties}] replace`;
+                    schedule.server.runCommandSilent(command);
+                });
+            });
+        }
     }
 });

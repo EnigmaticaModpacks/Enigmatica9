@@ -29,7 +29,12 @@ StartupEvents.registry('item', (event) => {
         { name: 'summon_death_tome', texture: 'ritual_dummy' },
         { name: 'spell_night_vision', texture: 'ritual_dummy' },
         { name: 'teleport_everdawn', texture: 'ritual_dummy' },
-        { name: 'teleport_everbright', texture: 'ritual_dummy' }
+        { name: 'teleport_everbright', texture: 'ritual_dummy' },
+        { name: 'tree_of_life_1', texture: 'enigmatica_tree' },
+        { name: 'tree_of_life_2', texture: 'enigmatica_tree' },
+        { name: 'tree_of_life_3', texture: 'enigmatica_tree' },
+        { name: 'tree_of_life_4', texture: 'enigmatica_tree' },
+        { name: 'tree_of_life_5', texture: 'enigmatica_tree' }
     ];
 
     items.forEach((item) => {
