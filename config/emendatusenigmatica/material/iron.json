@@ -30,6 +30,6 @@
         "max": 1
     },
     "colors": {
-        "fluidColor": "a8a8a8"
+        "gasColor": "a8a8a8"
     }
 }

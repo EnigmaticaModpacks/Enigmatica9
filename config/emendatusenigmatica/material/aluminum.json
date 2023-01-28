@@ -23,9 +23,6 @@
         "materialType": "metal",
         "harvestLevel": 2
     },
-    "colors": {
-        "fluidColor": "a2a8ab"
-    },
     "oreDrop": {
         "drop": "emendatusenigmatica:raw_aluminum",
         "min": 1,
@@ -33,5 +30,8 @@
     },
     "compat": {
         "thermal": false
+    },
+    "colors": {
+        "gasColor": "a2a8ab"
     }
 }

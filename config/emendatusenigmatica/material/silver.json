@@ -24,7 +24,7 @@
         "harvestLevel": 2
     },
     "colors": {
-        "fluidColor": "c9d3dc"
+        "gasColor": "c9d3dc"
     },
     "oreDrop": {
         "drop": "emendatusenigmatica:raw_silver",

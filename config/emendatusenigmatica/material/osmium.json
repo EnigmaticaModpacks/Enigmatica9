@@ -24,7 +24,7 @@
         "harvestLevel": 2
     },
     "colors": {
-        "fluidColor": "a4b3cf"
+        "gasColor": "a4b3cf"
     },
     "oreDrop": {
         "drop": "emendatusenigmatica:raw_osmium",
