@@ -326,7 +326,7 @@ EntityEvents.spawned((event) => {
                     z: Math.floor(cur.z + block.pos[2])
                 };
 
-                delay = 0.5 * block.pos[1];
+                delay = 0.75 * block.pos[1];
                 event.server.scheduleInTicks(delay, (schedule) => {
                     command = `/execute in ${ritual_dimension} run particle minecraft:large_smoke ${coord.x} ${coord.y} ${coord.z}`;
                     schedule.server.runCommandSilent(command);
