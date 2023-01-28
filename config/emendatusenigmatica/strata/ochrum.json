@@ -1,6 +1,6 @@
 {
     "id": "create_ochrum",
-    "baseTexture": "create:block/ochrum",
+    "baseTexture": "create:block/palettes/stone_types/ochrum",
     "suffix": "ochrum",
     "fillerType": "create:ochrum",
     "localizedName": "Ochrum",

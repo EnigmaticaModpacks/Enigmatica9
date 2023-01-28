@@ -1,6 +1,6 @@
 {
     "id": "create_veridium",
-    "baseTexture": "create:block/veridium",
+    "baseTexture": "create:block/palettes/stone_types/veridium",
     "suffix": "veridium",
     "fillerType": "create:veridium",
     "localizedName": "Veridium",

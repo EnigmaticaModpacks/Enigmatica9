@@ -1,6 +1,6 @@
 {
     "id": "create_limestone",
-    "baseTexture": "create:block/limestone",
+    "baseTexture": "create:block/palettes/stone_types/limestone",
     "suffix": "limestone",
     "fillerType": "create:limestone",
     "localizedName": "Limestone",

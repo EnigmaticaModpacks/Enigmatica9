@@ -1,6 +1,6 @@
 {
     "id": "create_scoria",
-    "baseTexture": "create:block/scoria",
+    "baseTexture": "create:block/palettes/stone_types/scoria",
     "suffix": "scoria",
     "fillerType": "create:scoria",
     "localizedName": "Scoria",

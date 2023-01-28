@@ -1,6 +1,6 @@
 {
     "id": "create_scorchia",
-    "baseTexture": "create:block/scorchia",
+    "baseTexture": "create:block/palettes/stone_types/scorchia",
     "suffix": "scorchia",
     "fillerType": "create:scorchia",
     "localizedName": "Scorchia",
