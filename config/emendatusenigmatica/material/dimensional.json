@@ -9,7 +9,8 @@
     "properties": {
         "materialType": "gem",
         "harvestLevel": 1,
-        "blockRecipeType": 9
+        "blockRecipeType": 9,
+        "isEmissive": true
     },
     "oreDrop": {
         "drop": "rftoolsbase:dimensionalshard",

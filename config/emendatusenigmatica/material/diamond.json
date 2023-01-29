@@ -12,7 +12,8 @@
     "properties": {
       "materialType": "gem",
       "harvestLevel": 2,
-      "blockRecipeType": 9
+      "blockRecipeType": 9,
+      "isEmissive": true
     },
     "oreDrop": {
       "drop": "minecraft:diamond",

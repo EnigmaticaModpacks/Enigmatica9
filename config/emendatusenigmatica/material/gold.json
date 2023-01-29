@@ -22,7 +22,8 @@
     ],
     "properties": {
         "materialType": "metal",
-        "harvestLevel": 2
+        "harvestLevel": 2,
+        "isEmissive": true
     },
     "colors": {
         "gasColor": "f5c938"

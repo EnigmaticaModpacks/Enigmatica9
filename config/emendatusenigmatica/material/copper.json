@@ -22,7 +22,8 @@
     ],
     "properties": {
         "materialType": "metal",
-        "harvestLevel": 1
+        "harvestLevel": 1,
+        "hasOxidation": true
     },
     "oreDrop": {
         "drop": "emendatusenigmatica:raw_copper",

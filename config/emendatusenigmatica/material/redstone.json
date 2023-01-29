@@ -10,7 +10,8 @@
     "materialType": "gem",
     "harvestLevel": 2,
     "hasParticles": true,
-    "blockRecipeType": 9
+    "blockRecipeType": 9,
+    "isEmissive": true
   },
   "oreDrop": {
     "drop": "minecraft:redstone",
