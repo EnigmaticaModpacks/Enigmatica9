@@ -97,22 +97,24 @@ const ritual_effects = {
         gateway: true
     },
     aura_leaf: {
-        aura: true
+        aura: { y_offset: 1 }
     },
     tree_of_life_1: {
-        aura: true,
+        aura: { y_offset: 4 },
         structure: {
             add: `kubejs/data/kubejs/structures/tree_of_life_1.nbt`,
-            title: `title {"text":"The tree grows...","color":"dark_green"}`
+            title: `title {"text":"The tree takes root...","color":"dark_green"}`,
+            start_delay: 160
         },
         offset: { x: 0, y: -4, z: 0 }
     },
     tree_of_life_2: {
-        aura: true,
+        aura: { y_offset: 5 },
         structure: {
             add: `kubejs/data/kubejs/structures/tree_of_life_2.nbt`,
             remove: `kubejs/data/kubejs/structures/tree_of_life_1.nbt`,
             title: `title {"text":"The tree grows stronger...","color":"dark_green"}`,
+            start_delay: 160,
             soft_blocks: [
                 'occultism:candle_white',
                 'occultism:spirit_attuned_crystal',
@@ -123,11 +125,12 @@ const ritual_effects = {
         offset: { x: 0, y: -3, z: 0 }
     },
     tree_of_life_3: {
-        aura: true,
+        aura: { y_offset: 5 },
         structure: {
             add: `kubejs/data/kubejs/structures/tree_of_life_3.nbt`,
             remove: `kubejs/data/kubejs/structures/tree_of_life_2.nbt`,
             title: `title {"text":"The tree grows stronger...","color":"dark_green"}`,
+            start_delay: 160,
             soft_blocks: [
                 'occultism:candle_white',
                 'occultism:spirit_attuned_crystal',
@@ -138,11 +141,12 @@ const ritual_effects = {
         offset: { x: 0, y: -3, z: 0 }
     },
     tree_of_life_4: {
-        aura: true,
+        aura: { y_offset: 5 },
         structure: {
             add: `kubejs/data/kubejs/structures/tree_of_life_4.nbt`,
             remove: `kubejs/data/kubejs/structures/tree_of_life_3.nbt`,
             title: `title {"text":"The tree grows stronger...","color":"dark_green"}`,
+            start_delay: 160,
             soft_blocks: [
                 'occultism:candle_white',
                 'occultism:spirit_attuned_crystal',

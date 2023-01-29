@@ -234,7 +234,7 @@ EntityEvents.spawned((event) => {
         if (ritual_effect.aura) {
             let aura_amount = event.entity.item.nbt.aura_amount;
             let aura_max = event.entity.item.nbt.aura_max;
-            let cur = { x: abs.x, y: abs.y + 1, z: abs.z };
+            let cur = { x: abs.x, y: abs.y + ritual_effect.aura.y_offset, z: abs.z };
             let revolutions = 9;
             let height = 3;
             let upper_radius = 8;
@@ -307,9 +307,10 @@ EntityEvents.spawned((event) => {
             });
         }
 
-        // Remove Custom Structure Handling
+        // Remove Previous Tree of Life Handling
         if (ritual_effect.structure.remove) {
             let structure = NBTIO.read(ritual_effect.structure.remove);
+            let start_delay = ritual_effect.structure.start_delay;
             let delay;
             let cur = {
                 x: Math.floor(abs.x + ritual_effect.offset.x - Math.floor(structure.size[0] / 2)),
@@ -327,12 +328,18 @@ EntityEvents.spawned((event) => {
                 };
 
                 // Remove any blocks that can't exist without something under them first to avoid them getting duplicated
-                if (ritual_effect.structure.soft_blocks && ritual_effect.structure.soft_blocks.includes(palette.Name)) {
-                    command = `/execute in ${ritual_dimension} run fill ${coord.x} ${coord.y} ${coord.z} ${coord.x} ${coord.y} ${coord.z} air replace ${palette.Name}`;
-                    event.server.runCommandSilent(command);
-                }
+                delay = start_delay;
+                event.server.scheduleInTicks(delay, (schedule) => {
+                    if (
+                        ritual_effect.structure.soft_blocks &&
+                        ritual_effect.structure.soft_blocks.includes(palette.Name)
+                    ) {
+                        command = `/execute in ${ritual_dimension} run fill ${coord.x} ${coord.y} ${coord.z} ${coord.x} ${coord.y} ${coord.z} air replace ${palette.Name}`;
+                        schedule.server.runCommandSilent(command);
+                    }
+                });
 
-                delay = 0.1;
+                delay = start_delay + 0.5 * block.pos[1];
                 event.server.scheduleInTicks(delay, (schedule) => {
                     command = `/execute in ${ritual_dimension} run fill ${coord.x} ${coord.y} ${coord.z} ${coord.x} ${coord.y} ${coord.z} air replace ${palette.Name}`;
                     schedule.server.runCommandSilent(command);
@@ -340,9 +347,10 @@ EntityEvents.spawned((event) => {
             });
         }
 
-        // Summon Custom Structure Handling
+        // Summon Tree of Life Handling
         if (ritual_effect.structure.add) {
             let structure = NBTIO.read(ritual_effect.structure.add);
+            let start_delay = ritual_effect.structure.start_delay;
             let delay;
             let cur = {
                 x: Math.floor(abs.x + ritual_effect.offset.x - Math.floor(structure.size[0] / 2)),
@@ -367,16 +375,30 @@ EntityEvents.spawned((event) => {
                     z: Math.floor(cur.z + block.pos[2])
                 };
 
-                delay = 0.1;
+                delay = start_delay + 0.5 * block.pos[1];
                 event.server.scheduleInTicks(delay, (schedule) => {
+                    if (palette.Name !== 'minecraft:air') {
+                        command = `/execute in ${ritual_dimension} run particle blue_skies:frose_snow ${coord.x} ${coord.y} ${coord.z} 0.5 0.5 0.5 0.1 1`;
+                        schedule.server.runCommandSilent(command);
+
+                        command = `/execute in ${ritual_dimension} run particle blue_skies:dusk_smoke ${coord.x} ${coord.y} ${coord.z} 0.5 0.5 0.5 0.1 10`;
+                        schedule.server.runCommandSilent(command);
+                    }
+
                     command = `/execute in ${ritual_dimension} run setblock ${coord.x} ${coord.y} ${coord.z} ${palette.Name}[${block_properties}] replace`;
                     schedule.server.runCommandSilent(command);
                 });
 
                 delay = 20;
                 event.server.scheduleInTicks(delay, (schedule) => {
-                    let area = getSelectorArea(abs.x, abs.y, abs.z, 8);
+                    let area = getSelectorArea(abs.x, abs.y, abs.z, 32);
                     command = `/execute in ${ritual_dimension} run title @p[${area}] ${ritual_effect.structure.title}`;
+                    schedule.server.runCommandSilent(command);
+                });
+
+                delay = start_delay + 100;
+                event.server.scheduleInTicks(delay, (schedule) => {
+                    command = `/execute in ${ritual_dimension} run playsound twilightforest:music_disc.twilightforest.findings record @p ${abs.x} ${abs.y} ${abs.z} 0.5 0.5`;
                     schedule.server.runCommandSilent(command);
                 });
             });

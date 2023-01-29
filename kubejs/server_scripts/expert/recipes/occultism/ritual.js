@@ -47,10 +47,10 @@ ServerEvents.recipes((event) => {
             output: Item.of('kubejs:tree_of_life_1', { aura_amount: 100000, aura_max: 1000000 }),
             activation_item: 'twilightforest:rainbow_oak_sapling',
             inputs: [
-                '#forge:storage_blocks/silver',
-                '#forge:storage_blocks/silver',
-                '#forge:storage_blocks/silver',
-                '#forge:storage_blocks/silver'
+                '#forge:storage_blocks/copper',
+                '#forge:storage_blocks/copper',
+                '#forge:storage_blocks/copper',
+                '#forge:storage_blocks/copper'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_1',
             ritual_type: 'occultism:craft',
@@ -77,10 +77,10 @@ ServerEvents.recipes((event) => {
             output: Item.of('kubejs:tree_of_life_3', { aura_amount: 500000, aura_max: 1500000 }),
             activation_item: 'twilightforest:rainbow_oak_sapling',
             inputs: [
-                '#forge:storage_blocks/silver',
-                '#forge:storage_blocks/silver',
-                '#forge:storage_blocks/silver',
-                '#forge:storage_blocks/silver'
+                '#forge:storage_blocks/gold',
+                '#forge:storage_blocks/gold',
+                '#forge:storage_blocks/gold',
+                '#forge:storage_blocks/gold'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_3',
             ritual_type: 'occultism:craft',
@@ -92,10 +92,10 @@ ServerEvents.recipes((event) => {
             output: Item.of('kubejs:tree_of_life_4', { aura_amount: 4000000, aura_max: 4000000 }),
             activation_item: 'twilightforest:rainbow_oak_sapling',
             inputs: [
-                '#forge:storage_blocks/silver',
-                '#forge:storage_blocks/silver',
-                '#forge:storage_blocks/silver',
-                '#forge:storage_blocks/silver'
+                '#forge:storage_blocks/emerald',
+                '#forge:storage_blocks/emerald',
+                '#forge:storage_blocks/emerald',
+                '#forge:storage_blocks/emerald'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_4',
             ritual_type: 'occultism:craft',
