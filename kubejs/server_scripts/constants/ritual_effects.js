@@ -100,16 +100,56 @@ const ritual_effects = {
         aura: true
     },
     tree_of_life_1: {
+        aura: true,
         structure: {
-            add: `kubejs/data/kubejs/structures/tree_of_life_1.nbt`
+            add: `kubejs/data/kubejs/structures/tree_of_life_1.nbt`,
+            title: `title {"text":"The tree grows...","color":"dark_green"}`
         },
-        offset: { x: 0, y: 1, z: 0 }
+        offset: { x: 0, y: -4, z: 0 }
     },
     tree_of_life_2: {
+        aura: true,
         structure: {
             add: `kubejs/data/kubejs/structures/tree_of_life_2.nbt`,
-            remove: `kubejs/data/kubejs/structures/tree_of_life_1.nbt`
+            remove: `kubejs/data/kubejs/structures/tree_of_life_1.nbt`,
+            title: `title {"text":"The tree grows stronger...","color":"dark_green"}`,
+            soft_blocks: [
+                'occultism:candle_white',
+                'occultism:spirit_attuned_crystal',
+                'quark:yellow_blossom_leaf_carpet',
+                'twilightforest:mushgloom'
+            ]
         },
-        offset: { x: 0, y: 1, z: 0 }
+        offset: { x: 0, y: -3, z: 0 }
+    },
+    tree_of_life_3: {
+        aura: true,
+        structure: {
+            add: `kubejs/data/kubejs/structures/tree_of_life_3.nbt`,
+            remove: `kubejs/data/kubejs/structures/tree_of_life_2.nbt`,
+            title: `title {"text":"The tree grows stronger...","color":"dark_green"}`,
+            soft_blocks: [
+                'occultism:candle_white',
+                'occultism:spirit_attuned_crystal',
+                'quark:yellow_blossom_leaf_carpet',
+                'twilightforest:mushgloom'
+            ]
+        },
+        offset: { x: 0, y: -3, z: 0 }
+    },
+    tree_of_life_4: {
+        aura: true,
+        structure: {
+            add: `kubejs/data/kubejs/structures/tree_of_life_4.nbt`,
+            remove: `kubejs/data/kubejs/structures/tree_of_life_3.nbt`,
+            title: `title {"text":"The tree grows stronger...","color":"dark_green"}`,
+            soft_blocks: [
+                'occultism:candle_white',
+                'occultism:spirit_attuned_crystal',
+                'quark:yellow_blossom_leaf_carpet',
+                'twilightforest:mushgloom'
+            ]
+        },
+        offset: { x: 0, y: -3, z: 0 }
     }
 };

@@ -326,11 +326,14 @@ EntityEvents.spawned((event) => {
                     z: Math.floor(cur.z + block.pos[2])
                 };
 
-                delay = 0.75 * block.pos[1];
-                event.server.scheduleInTicks(delay, (schedule) => {
-                    command = `/execute in ${ritual_dimension} run particle minecraft:large_smoke ${coord.x} ${coord.y} ${coord.z}`;
-                    schedule.server.runCommandSilent(command);
+                // Remove any blocks that can't exist without something under them first to avoid them getting duplicated
+                if (ritual_effect.structure.soft_blocks && ritual_effect.structure.soft_blocks.includes(palette.Name)) {
+                    command = `/execute in ${ritual_dimension} run fill ${coord.x} ${coord.y} ${coord.z} ${coord.x} ${coord.y} ${coord.z} air replace ${palette.Name}`;
+                    event.server.runCommandSilent(command);
+                }
 
+                delay = 0.1;
+                event.server.scheduleInTicks(delay, (schedule) => {
                     command = `/execute in ${ritual_dimension} run fill ${coord.x} ${coord.y} ${coord.z} ${coord.x} ${coord.y} ${coord.z} air replace ${palette.Name}`;
                     schedule.server.runCommandSilent(command);
                 });
@@ -364,12 +367,16 @@ EntityEvents.spawned((event) => {
                     z: Math.floor(cur.z + block.pos[2])
                 };
 
-                delay = 0.75 * block.pos[1];
+                delay = 0.1;
                 event.server.scheduleInTicks(delay, (schedule) => {
-                    command = `/execute in ${ritual_dimension} run particle minecraft:large_smoke ${coord.x} ${coord.y} ${coord.z}`;
-                    schedule.server.runCommandSilent(command);
-
                     command = `/execute in ${ritual_dimension} run setblock ${coord.x} ${coord.y} ${coord.z} ${palette.Name}[${block_properties}] replace`;
+                    schedule.server.runCommandSilent(command);
+                });
+
+                delay = 20;
+                event.server.scheduleInTicks(delay, (schedule) => {
+                    let area = getSelectorArea(abs.x, abs.y, abs.z, 8);
+                    command = `/execute in ${ritual_dimension} run title @p[${area}] ${ritual_effect.structure.title}`;
                     schedule.server.runCommandSilent(command);
                 });
             });

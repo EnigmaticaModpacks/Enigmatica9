@@ -44,19 +44,64 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}aura_ritual`
         },
         {
-            output: Item.of('kubejs:tree_of_life_1'),
+            output: Item.of('kubejs:tree_of_life_1', { aura_amount: 100000, aura_max: 1000000 }),
             activation_item: 'twilightforest:rainbow_oak_sapling',
             inputs: [
-                'forge:storage_blocks/silver',
-                'forge:storage_blocks/silver',
-                'forge:storage_blocks/silver',
-                'forge:storage_blocks/silver'
+                '#forge:storage_blocks/silver',
+                '#forge:storage_blocks/silver',
+                '#forge:storage_blocks/silver',
+                '#forge:storage_blocks/silver'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_1',
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:craft_djinni',
             duration: 60,
             id: `${id_prefix}tree_of_life_1`
+        },
+        {
+            output: Item.of('kubejs:tree_of_life_2', { aura_amount: 200000, aura_max: 1000000 }),
+            activation_item: 'twilightforest:rainbow_oak_sapling',
+            inputs: [
+                '#forge:storage_blocks/silver',
+                '#forge:storage_blocks/silver',
+                '#forge:storage_blocks/silver',
+                '#forge:storage_blocks/silver'
+            ],
+            ritual_dummy: 'kubejs:ritual_tree_of_life_2',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 60,
+            id: `${id_prefix}tree_of_life_2`
+        },
+        {
+            output: Item.of('kubejs:tree_of_life_3', { aura_amount: 500000, aura_max: 1500000 }),
+            activation_item: 'twilightforest:rainbow_oak_sapling',
+            inputs: [
+                '#forge:storage_blocks/silver',
+                '#forge:storage_blocks/silver',
+                '#forge:storage_blocks/silver',
+                '#forge:storage_blocks/silver'
+            ],
+            ritual_dummy: 'kubejs:ritual_tree_of_life_3',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 60,
+            id: `${id_prefix}tree_of_life_3`
+        },
+        {
+            output: Item.of('kubejs:tree_of_life_4', { aura_amount: 4000000, aura_max: 4000000 }),
+            activation_item: 'twilightforest:rainbow_oak_sapling',
+            inputs: [
+                '#forge:storage_blocks/silver',
+                '#forge:storage_blocks/silver',
+                '#forge:storage_blocks/silver',
+                '#forge:storage_blocks/silver'
+            ],
+            ritual_dummy: 'kubejs:ritual_tree_of_life_4',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 60,
+            id: `${id_prefix}tree_of_life_4`
         }
     ];
 
