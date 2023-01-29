@@ -123,11 +123,13 @@ jei.base.items.disabled = [
     'createaddition:barbed_wire',
     'createaddition:biomass',
     'createaddition:bioethanol_bucket',
-    'createaddition:seed_oil_bucket'
+    'createaddition:seed_oil_bucket',
     'superiorshields:elementium_shield',
     /byg:.*pendorite.*/,
     /byg:.*ametrine.*/,
-    'minecraft:nether_gold_ore'
+    'minecraft:nether_gold_ore',
+    /blue_skies:raw_charoite/,
+    /blue_skies:raw_aquite/
 ];
 jei.base.items.hidden = [
     'kubejs:altered_recipe_indicator',
