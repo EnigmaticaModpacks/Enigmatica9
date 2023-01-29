@@ -101,14 +101,14 @@ const ritual_effects = {
     },
     tree_of_life_1: {
         structure: {
-            add: `kubejs/data/kubejs/structures/blue_tree_test.nbt`
+            add: `kubejs/data/kubejs/structures/tree_of_life_1.nbt`
         },
         offset: { x: 0, y: 1, z: 0 }
     },
     tree_of_life_2: {
         structure: {
-            add: `kubejs/data/kubejs/structures/red_tree_test.nbt`,
-            remove: `kubejs/data/kubejs/structures/blue_tree_test.nbt`
+            add: `kubejs/data/kubejs/structures/tree_of_life_2.nbt`,
+            remove: `kubejs/data/kubejs/structures/tree_of_life_1.nbt`
         },
         offset: { x: 0, y: 1, z: 0 }
     }

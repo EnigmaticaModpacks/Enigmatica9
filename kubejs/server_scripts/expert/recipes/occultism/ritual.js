@@ -37,11 +37,26 @@ ServerEvents.recipes((event) => {
                 'ars_nouveau:conjuration_essence',
                 'ars_nouveau:conjuration_essence'
             ],
-            ritual_dummy: Item.of('kubejs:aura_leaf'),
+            ritual_dummy: 'kubejs:aura_leaf',
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:possess_foliot',
             duration: 10,
             id: `${id_prefix}aura_ritual`
+        },
+        {
+            output: Item.of('kubejs:tree_of_life_1'),
+            activation_item: 'twilightforest:rainbow_oak_sapling',
+            inputs: [
+                'forge:storage_blocks/silver',
+                'forge:storage_blocks/silver',
+                'forge:storage_blocks/silver',
+                'forge:storage_blocks/silver'
+            ],
+            ritual_dummy: 'kubejs:ritual_tree_of_life_1',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 60,
+            id: `${id_prefix}tree_of_life_1`
         }
     ];
 
@@ -68,21 +83,12 @@ ServerEvents.recipes((event) => {
     recipes.forEach((recipe) => {
         recipe.type = 'occultism:ritual';
 
-        // activation_item: { item: 'occultism:book_of_binding_bound_marid' },
         recipe.activation_item = Ingredient.of(recipe.activation_item).toJson();
-
         if (recipe.item_to_use) {
-            // item_to_use: { item: 'minecraft:egg' },
             recipe.item_to_use = Ingredient.of(recipe.item_to_use).toJson();
         }
-
-        // ritual_dummy: { item: 'occultism:ritual_dummy/craft_stabilizer_tier4' },
         recipe.ritual_dummy = Item.of(recipe.ritual_dummy).toJson();
-
-        // ingredients: [{ item: 'occultism:storage_stabilizer_tier3' }, { tag: 'forge:storage_blocks/iesnium' }],
         recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
-
-        // result: { item: 'occultism:storage_stabilizer_tier4' }
         recipe.result = Item.of(recipe.output).toJson();
 
         event.custom(recipe).id(recipe.id);

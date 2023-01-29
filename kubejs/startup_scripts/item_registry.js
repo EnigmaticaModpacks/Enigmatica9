@@ -20,7 +20,12 @@ StartupEvents.registry('item', (event) => {
         'ritual_summon_death_tome',
         'ritual_spell_night_vision',
         'ritual_teleport_everdawn',
-        'ritual_teleport_everbright'
+        'ritual_teleport_everbright',
+        'ritual_tree_of_life_1',
+        'ritual_tree_of_life_2',
+        'ritual_tree_of_life_3',
+        'ritual_tree_of_life_4',
+        'ritual_tree_of_life_5'
     ];
 
     const reusableItemTextures = [
