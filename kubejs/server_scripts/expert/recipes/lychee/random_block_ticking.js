@@ -29,6 +29,195 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}filter_filling`
+        },
+        {
+            block_in: { blocks: ['twilightforest:liveroot_block'] },
+            post: [
+                // Release Aura once per day around noon
+                {
+                    type: 'execute',
+                    command: `summon item ~ ~2 ~ {Item:{id:"kubejs:aura_leaf",Count:1b,tag:{aura_amount:40000,aura_max:1000000}}}`,
+                    contextual: {
+                        type: 'and',
+                        contextual: [
+                            { type: 'time', value: { min: 4000, max: 8000 }, period: 24000 },
+                            {
+                                type: 'location',
+                                offsetY: 1,
+                                predicate: { block: { blocks: ['kubejs:heartwood_stage_1'] } }
+                            }
+                        ]
+                    }
+                },
+                {
+                    type: 'execute',
+                    command: `summon item ~ ~2 ~ {Item:{id:"kubejs:aura_leaf",Count:1b,tag:{aura_amount:80000,aura_max:1500000}}}`,
+                    contextual: {
+                        type: 'and',
+                        contextual: [
+                            { type: 'time', value: { min: 4000, max: 8000 }, period: 24000 },
+                            {
+                                type: 'location',
+                                offsetY: 1,
+                                predicate: { block: { blocks: ['kubejs:heartwood_stage_2'] } }
+                            }
+                        ]
+                    }
+                },
+                {
+                    type: 'execute',
+                    command: `summon item ~ ~2 ~ {Item:{id:"kubejs:aura_leaf",Count:1b,tag:{aura_amount:120000,aura_max:2000000}}}`,
+                    contextual: {
+                        type: 'and',
+                        contextual: [
+                            { type: 'time', value: { min: 4000, max: 8000 }, period: 24000 },
+                            {
+                                type: 'location',
+                                offsetY: 1,
+                                predicate: { block: { blocks: ['kubejs:heartwood_stage_3'] } }
+                            }
+                        ]
+                    }
+                },
+                {
+                    type: 'execute',
+                    command: `summon item ~ ~2 ~ {Item:{id:"kubejs:aura_leaf",Count:1b,tag:{aura_amount:500000,aura_max:2500000}}}`,
+                    contextual: {
+                        type: 'and',
+                        contextual: [
+                            { type: 'time', value: { min: 4000, max: 8000 }, period: 24000 },
+                            {
+                                type: 'location',
+                                offsetY: 1,
+                                predicate: { block: { blocks: ['kubejs:heartwood_stage_4'] } }
+                            }
+                        ]
+                    }
+                },
+                // Disable by changing to inactive heartwood
+                {
+                    type: 'execute',
+                    command: `setblock ~ ~1 ~ kubejs:heartwood_stage_1_inactive`,
+                    contextual: {
+                        type: 'and',
+                        contextual: [
+                            { type: 'time', value: { min: 4000, max: 8000 }, period: 24000 },
+                            {
+                                type: 'location',
+                                offsetY: 1,
+                                predicate: { block: { blocks: ['kubejs:heartwood_stage_1'] } }
+                            }
+                        ]
+                    }
+                },
+                {
+                    type: 'execute',
+                    command: `setblock ~ ~1 ~ kubejs:heartwood_stage_2_inactive`,
+                    contextual: {
+                        type: 'and',
+                        contextual: [
+                            { type: 'time', value: { min: 4000, max: 8000 }, period: 24000 },
+                            {
+                                type: 'location',
+                                offsetY: 1,
+                                predicate: { block: { blocks: ['kubejs:heartwood_stage_2'] } }
+                            }
+                        ]
+                    }
+                },
+                {
+                    type: 'execute',
+                    command: `setblock ~ ~1 ~ kubejs:heartwood_stage_3_inactive`,
+                    contextual: {
+                        type: 'and',
+                        contextual: [
+                            { type: 'time', value: { min: 4000, max: 8000 }, period: 24000 },
+                            {
+                                type: 'location',
+                                offsetY: 1,
+                                predicate: { block: { blocks: ['kubejs:heartwood_stage_3'] } }
+                            }
+                        ]
+                    }
+                },
+                {
+                    type: 'execute',
+                    command: `setblock ~ ~1 ~ kubejs:heartwood_stage_4_inactive`,
+                    contextual: {
+                        type: 'and',
+                        contextual: [
+                            { type: 'time', value: { min: 4000, max: 8000 }, period: 24000 },
+                            {
+                                type: 'location',
+                                offsetY: 1,
+                                predicate: { block: { blocks: ['kubejs:heartwood_stage_4'] } }
+                            }
+                        ]
+                    }
+                },
+                // Recharge around midnight
+                {
+                    type: 'execute',
+                    command: `setblock ~ ~1 ~ kubejs:heartwood_stage_1`,
+                    contextual: {
+                        type: 'and',
+                        contextual: [
+                            { type: 'time', value: { min: 16000, max: 20000 }, period: 24000 },
+                            {
+                                type: 'location',
+                                offsetY: 1,
+                                predicate: { block: { blocks: ['kubejs:heartwood_stage_1_inactive'] } }
+                            }
+                        ]
+                    }
+                },
+                {
+                    type: 'execute',
+                    command: `setblock ~ ~1 ~ kubejs:heartwood_stage_2`,
+                    contextual: {
+                        type: 'and',
+                        contextual: [
+                            { type: 'time', value: { min: 16000, max: 20000 }, period: 24000 },
+                            {
+                                type: 'location',
+                                offsetY: 1,
+                                predicate: { block: { blocks: ['kubejs:heartwood_stage_2_inactive'] } }
+                            }
+                        ]
+                    }
+                },
+                {
+                    type: 'execute',
+                    command: `setblock ~ ~1 ~ kubejs:heartwood_stage_3`,
+                    contextual: {
+                        type: 'and',
+                        contextual: [
+                            { type: 'time', value: { min: 16000, max: 20000 }, period: 24000 },
+                            {
+                                type: 'location',
+                                offsetY: 1,
+                                predicate: { block: { blocks: ['kubejs:heartwood_stage_3_inactive'] } }
+                            }
+                        ]
+                    }
+                },
+                {
+                    type: 'execute',
+                    command: `setblock ~ ~1 ~ kubejs:heartwood_stage_4`,
+                    contextual: {
+                        type: 'and',
+                        contextual: [
+                            { type: 'time', value: { min: 16000, max: 20000 }, period: 24000 },
+                            {
+                                type: 'location',
+                                offsetY: 1,
+                                predicate: { block: { blocks: ['kubejs:heartwood_stage_4_inactive'] } }
+                            }
+                        ]
+                    }
+                }
+            ],
+            id: `${id_prefix}summon_whirlisprig`
         }
     ];
 

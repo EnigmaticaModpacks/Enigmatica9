@@ -50,6 +50,30 @@
     "book.occultism.dictionary_of_spirits.pentacles.summon_evil.intro.title": "A Dreadful Affair",
     "book.occultism.dictionary_of_spirits.pentacles.summon_evil.intro.text": "Summon evil creatures.",
 
+    "item.kubejs.ritual_tree_of_life_1.tooltip": "Grow the Tree of Life with the magical powers attained so far.",
+    "multiblock.occultism.tree_of_life_stage_1": "Tree of Life - Stage 1",
+    "book.occultism.dictionary_of_spirits.pentacles.tree_of_life_stage_1.name": "Tree of Life - Stage 1",
+    "book.occultism.dictionary_of_spirits.pentacles.tree_of_life_stage_1.intro.title": "Reach deep, the vivifying waters await",
+    "book.occultism.dictionary_of_spirits.pentacles.tree_of_life_stage_1.intro.text": "The [#](FFAA00)Tree of Life[#](), strong, vibrant, eternal.\n\\\n\\\nThis pentacle will form when this stage of the tree is grown. If it gets damaged, use this as a guide to repair it.\n\\\n\\\nHowever, the Heartwood block [#](AA0000)cannot be moved or replaced[#](). If broken, the tree must be grown anew.\n",
+
+    "item.kubejs.ritual_tree_of_life_2.tooltip": "Grow the Tree of Life with the magical powers attained so far.",
+    "multiblock.occultism.tree_of_life_stage_2": "Tree of Life - Stage 2",
+    "book.occultism.dictionary_of_spirits.pentacles.tree_of_life_stage_2.name": "Tree of Life - Stage 2",
+    "book.occultism.dictionary_of_spirits.pentacles.tree_of_life_stage_2.intro.title": "Grow tall towards the kiss of the sun",
+    "book.occultism.dictionary_of_spirits.pentacles.tree_of_life_stage_2.intro.text": "The [#](FFAA00)Tree of Life[#](), strong, vibrant, eternal.\n\\\n\\\nThis pentacle will form when this stage of the tree is grown. If it gets damaged, use this as a guide to repair it.\n\\\n\\\nHowever, the Heartwood block [#](AA0000)cannot be moved or replaced[#](). If broken, the tree must be grown anew.\n",
+
+    "item.kubejs.ritual_tree_of_life_3.tooltip": "Grow the Tree of Life with the magical powers attained so far.",
+    "multiblock.occultism.tree_of_life_stage_3": "Tree of Life - Stage 3",
+    "book.occultism.dictionary_of_spirits.pentacles.tree_of_life_stage_3.name": "Tree of Life - Stage 3",
+    "book.occultism.dictionary_of_spirits.pentacles.tree_of_life_stage_3.intro.title": "Stretch into the wind's gentle embrace",
+    "book.occultism.dictionary_of_spirits.pentacles.tree_of_life_stage_3.intro.text": "The [#](FFAA00)Tree of Life[#](), strong, vibrant, eternal.\n\\\n\\\nThis pentacle will form when this stage of the tree is grown. If it gets damaged, use this as a guide to repair it.\n\\\n\\\nHowever, the Heartwood block [#](AA0000)cannot be moved or replaced[#](). If broken, the tree must be grown anew.\n",
+
+    "item.kubejs.ritual_tree_of_life_4.tooltip": "Grow the Tree of Life with the magical powers attained so far.",
+    "multiblock.occultism.tree_of_life_stage_4": "Tree of Life - Stage 4",
+    "book.occultism.dictionary_of_spirits.pentacles.tree_of_life_stage_4.name": "Tree of Life - Stage 4",
+    "book.occultism.dictionary_of_spirits.pentacles.tree_of_life_stage_4.intro.title": "Rock to dust, dust to loam",
+    "book.occultism.dictionary_of_spirits.pentacles.tree_of_life_stage_4.intro.text": "The [#](FFAA00)Tree of Life[#](), strong, vibrant, eternal.\n\\\n\\\nThis pentacle will form when this stage of the tree is grown. If it gets damaged, use this as a guide to repair it.\n\\\n\\\nHowever, the Heartwood block [#](AA0000)cannot be moved or replaced[#](). If broken, the tree must be grown anew.\n",
+
     "item.kubejs.ritual_summon_death_tome": "Ritual: Summon a murder of Death Tomes.",
     "item.kubejs.ritual_summon_death_tome.tooltip": "Call forth ancient Death Tomes to retrieve the knowledge they guard.",
     "ritual.enigmatica.occultism/ritual/ritual_summon_death_tome.started": "Started summoning Death Tomes.",
@@ -77,6 +101,31 @@
     "ritual.enigmatica.occultism/ritual/ritual_teleport_everbright.finished": "Please mind the gap.",
     "ritual.enigmatica.occultism/ritual/ritual_teleport_everbright.interrupted": "Service to Everbright has been discontinued at this time.",
     "ritual.enigmatica.occultism/ritual/ritual_teleport_everbright.conditions": "Toll not accepted. Please provide the full cost of the ritual.",
+
+    "ritual.enigmatica.occultism/ritual/ritual_aura_generation.started": "Ritual of Aura started.",
+    "ritual.enigmatica.occultism/ritual/ritual_aura_generation.finished": "Ritual of Aura completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_aura_generation.interrupted": "Ritual of Aura interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_aura_generation.conditions": "Not all requirements for this ritual are met.",
+
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_1.started": "Ritual of Growth started.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_1.finished": "Ritual of Growth completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_1.interrupted": "Ritual of Growth interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_1.conditions": "Not all requirements for this ritual are met.",
+
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_2.started": "Ritual of Growth started.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_2.finished": "Ritual of Growth completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_2.interrupted": "Ritual of Growth interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_2.conditions": "Not all requirements for this ritual are met.",
+
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_3.started": "Ritual of Growth started.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_3.finished": "Ritual of Growth completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_3.interrupted": "Ritual of Growth interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_3.conditions": "Not all requirements for this ritual are met.",
+
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_4.started": "Ritual of Growth started.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_4.finished": "Ritual of Growth completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_4.interrupted": "Ritual of Growth interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_4.conditions": "Not all requirements for this ritual are met.",
 
     "ritual.enigmatica.occultism/ritual/creeper_gate_small.started": "Started Opening Small Creeper Gateway",
     "ritual.enigmatica.occultism/ritual/creeper_gate_small.finished": "Small Creeper Gateway Opened",

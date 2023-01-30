@@ -20,7 +20,11 @@ StartupEvents.registry('item', (event) => {
         'ritual_summon_death_tome',
         'ritual_spell_night_vision',
         'ritual_teleport_everdawn',
-        'ritual_teleport_everbright'
+        'ritual_teleport_everbright',
+        'ritual_tree_of_life_1',
+        'ritual_tree_of_life_2',
+        'ritual_tree_of_life_3',
+        'ritual_tree_of_life_4'
     ];
 
     const reusableItemTextures = [
@@ -29,7 +33,11 @@ StartupEvents.registry('item', (event) => {
         { name: 'summon_death_tome', texture: 'ritual_dummy' },
         { name: 'spell_night_vision', texture: 'ritual_dummy' },
         { name: 'teleport_everdawn', texture: 'ritual_dummy' },
-        { name: 'teleport_everbright', texture: 'ritual_dummy' }
+        { name: 'teleport_everbright', texture: 'ritual_dummy' },
+        { name: 'tree_of_life_1', texture: 'enigmatica_tree' },
+        { name: 'tree_of_life_2', texture: 'enigmatica_tree' },
+        { name: 'tree_of_life_3', texture: 'enigmatica_tree' },
+        { name: 'tree_of_life_4', texture: 'enigmatica_tree' }
     ];
 
     items.forEach((item) => {

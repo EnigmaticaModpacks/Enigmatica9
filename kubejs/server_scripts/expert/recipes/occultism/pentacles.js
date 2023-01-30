@@ -52,7 +52,7 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             name: 'summon_evil',
-            x_placement: -5,
+            x_placement: -7,
             y_placement: 7,
             mapping: {
                 0: { type: 'modonomicon:block', block: 'occultism:golden_sacrificial_bowl' },
@@ -79,6 +79,326 @@ ServerEvents.highPriorityData((event) => {
             parents: [
                 {
                     entry: 'occultism:pentacles/summon_familiar',
+                    draw_arrow: true,
+                    line_enabled: true,
+                    line_reversed: false
+                }
+            ]
+        },
+        {
+            name: 'tree_of_life_stage_1',
+            x_placement: -9,
+            y_placement: 9,
+            mapping: {
+                0: { type: 'modonomicon:block', block: 'occultism:golden_sacrificial_bowl' },
+                O: { type: 'modonomicon:block', block: 'naturesaura:gold_powder' },
+                W: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_white' },
+                G: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_gold' },
+                P: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_purple' },
+                S: { type: 'modonomicon:block', block: 'supplementaries:pedestal' },
+                B: { type: 'modonomicon:block', block: 'occultism:sacrificial_bowl' },
+                A: { type: 'modonomicon:tag', tag: 'enigmatica:heartwoods/stage_1' }
+            },
+            pattern: [
+                [
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '____A____',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________'
+                ],
+                [
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________'
+                ],
+                [
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________'
+                ],
+                [
+                    '__B___B__',
+                    '_B_____B_',
+                    'B_______B',
+                    '_________',
+                    '_________',
+                    '_________',
+                    'B_______B',
+                    '_B_____B_',
+                    '__B___B__'
+                ],
+                [
+                    '__SOGOS__',
+                    '_SOW_WOS_',
+                    'SOP_W_POS',
+                    'OW__W__WO',
+                    'G_WW0WW_G',
+                    'OW__W__WO',
+                    'SOP_W_POS',
+                    '_SOW_WOS_',
+                    '__SOGOS__'
+                ]
+            ],
+            parents: [
+                {
+                    entry: 'occultism:pentacles/summon_familiar',
+                    draw_arrow: true,
+                    line_enabled: true,
+                    line_reversed: false
+                }
+            ]
+        },
+        {
+            name: 'tree_of_life_stage_2',
+            x_placement: -7,
+            y_placement: 9,
+            mapping: {
+                0: { type: 'modonomicon:block', block: 'occultism:golden_sacrificial_bowl' },
+                O: { type: 'modonomicon:block', block: 'naturesaura:gold_powder' },
+                W: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_white' },
+                G: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_gold' },
+                P: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_purple' },
+                S: { type: 'modonomicon:block', block: 'supplementaries:pedestal' },
+                B: { type: 'modonomicon:block', block: 'occultism:sacrificial_bowl' },
+                A: { type: 'modonomicon:tag', tag: 'enigmatica:heartwoods/stage_2' }
+            },
+            pattern: [
+                [
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '____A____',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________'
+                ],
+                [
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________'
+                ],
+                [
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________'
+                ],
+                [
+                    '__B___B__',
+                    '_B_____B_',
+                    'B_______B',
+                    '_________',
+                    '_________',
+                    '_________',
+                    'B_______B',
+                    '_B_____B_',
+                    '__B___B__'
+                ],
+                [
+                    '__SOGOS__',
+                    '_SOW_WOS_',
+                    'SOP_W_POS',
+                    'OW__W__WO',
+                    'G_WW0WW_G',
+                    'OW__W__WO',
+                    'SOP_W_POS',
+                    '_SOW_WOS_',
+                    '__SOGOS__'
+                ]
+            ],
+            parents: [
+                {
+                    entry: 'occultism:pentacles/tree_of_life_stage_1',
+                    draw_arrow: true,
+                    line_enabled: true,
+                    line_reversed: false
+                }
+            ]
+        },
+        {
+            name: 'tree_of_life_stage_3',
+            x_placement: -5,
+            y_placement: 9,
+            mapping: {
+                0: { type: 'modonomicon:block', block: 'occultism:golden_sacrificial_bowl' },
+                O: { type: 'modonomicon:block', block: 'naturesaura:gold_powder' },
+                W: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_white' },
+                G: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_gold' },
+                P: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_purple' },
+                S: { type: 'modonomicon:block', block: 'supplementaries:pedestal' },
+                B: { type: 'modonomicon:block', block: 'occultism:sacrificial_bowl' },
+                A: { type: 'modonomicon:tag', tag: 'enigmatica:heartwoods/stage_3' }
+            },
+            pattern: [
+                [
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '____A____',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________'
+                ],
+                [
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________'
+                ],
+                [
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________'
+                ],
+                [
+                    '__B___B__',
+                    '_B_____B_',
+                    'B_______B',
+                    '_________',
+                    '_________',
+                    '_________',
+                    'B_______B',
+                    '_B_____B_',
+                    '__B___B__'
+                ],
+                [
+                    '__SOGOS__',
+                    '_SOW_WOS_',
+                    'SOP_W_POS',
+                    'OW__W__WO',
+                    'G_WW0WW_G',
+                    'OW__W__WO',
+                    'SOP_W_POS',
+                    '_SOW_WOS_',
+                    '__SOGOS__'
+                ]
+            ],
+            parents: [
+                {
+                    entry: 'occultism:pentacles/tree_of_life_stage_2',
+                    draw_arrow: true,
+                    line_enabled: true,
+                    line_reversed: false
+                }
+            ]
+        },
+        {
+            name: 'tree_of_life_stage_4',
+            x_placement: -3,
+            y_placement: 9,
+            mapping: {
+                0: { type: 'modonomicon:block', block: 'occultism:golden_sacrificial_bowl' },
+                O: { type: 'modonomicon:block', block: 'naturesaura:gold_powder' },
+                W: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_white' },
+                G: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_gold' },
+                P: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_purple' },
+                S: { type: 'modonomicon:block', block: 'supplementaries:pedestal' },
+                B: { type: 'modonomicon:block', block: 'occultism:sacrificial_bowl' },
+                A: { type: 'modonomicon:tag', tag: 'enigmatica:heartwoods/stage_4' }
+            },
+            pattern: [
+                [
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '____A____',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________'
+                ],
+                [
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________'
+                ],
+                [
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________',
+                    '_________'
+                ],
+                [
+                    '__B___B__',
+                    '_B_____B_',
+                    'B_______B',
+                    '_________',
+                    '_________',
+                    '_________',
+                    'B_______B',
+                    '_B_____B_',
+                    '__B___B__'
+                ],
+                [
+                    '__SOGOS__',
+                    '_SOW_WOS_',
+                    'SOP_W_POS',
+                    'OW__W__WO',
+                    'G_WW0WW_G',
+                    'OW__W__WO',
+                    'SOP_W_POS',
+                    '_SOW_WOS_',
+                    '__SOGOS__'
+                ]
+            ],
+            parents: [
+                {
+                    entry: 'occultism:pentacles/tree_of_life_stage_3',
                     draw_arrow: true,
                     line_enabled: true,
                     line_reversed: false
