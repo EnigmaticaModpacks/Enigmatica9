@@ -308,7 +308,7 @@ EntityEvents.spawned((event) => {
         }
 
         // Remove Previous Tree of Life Handling
-        if (ritual_effect.structure.remove) {
+        if (ritual_effect.structure && ritual_effect.structure.remove) {
             let structure = NBTIO.read(ritual_effect.structure.remove);
             let start_delay = ritual_effect.structure.start_delay;
             let delay;
@@ -348,7 +348,7 @@ EntityEvents.spawned((event) => {
         }
 
         // Summon Tree of Life Handling
-        if (ritual_effect.structure.add) {
+        if (ritual_effect.structure && ritual_effect.structure.add) {
             let structure = NBTIO.read(ritual_effect.structure.add);
             let start_delay = ritual_effect.structure.start_delay;
             let delay;

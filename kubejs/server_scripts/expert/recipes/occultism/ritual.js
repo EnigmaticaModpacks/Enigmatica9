@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:possess_foliot',
             duration: 10,
-            id: `${id_prefix}aura_ritual`
+            id: `${id_prefix}ritual_aura_generation`
         },
         {
             output: Item.of('kubejs:tree_of_life_1', { aura_amount: 100000, aura_max: 1000000 }),
@@ -56,7 +56,7 @@ ServerEvents.recipes((event) => {
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:craft_djinni',
             duration: 60,
-            id: `${id_prefix}tree_of_life_1`
+            id: `${id_prefix}ritual_tree_of_life_1`
         },
         {
             output: Item.of('kubejs:tree_of_life_2', { aura_amount: 200000, aura_max: 1000000 }),
@@ -71,7 +71,7 @@ ServerEvents.recipes((event) => {
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:craft_djinni',
             duration: 60,
-            id: `${id_prefix}tree_of_life_2`
+            id: `${id_prefix}ritual_tree_of_life_2`
         },
         {
             output: Item.of('kubejs:tree_of_life_3', { aura_amount: 500000, aura_max: 1500000 }),
@@ -86,7 +86,7 @@ ServerEvents.recipes((event) => {
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:craft_djinni',
             duration: 60,
-            id: `${id_prefix}tree_of_life_3`
+            id: `${id_prefix}ritual_tree_of_life_3`
         },
         {
             output: Item.of('kubejs:tree_of_life_4', { aura_amount: 4000000, aura_max: 4000000 }),
@@ -101,7 +101,7 @@ ServerEvents.recipes((event) => {
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:craft_djinni',
             duration: 60,
-            id: `${id_prefix}tree_of_life_4`
+            id: `${id_prefix}ritual_tree_of_life_4`
         }
     ];
 

@@ -78,6 +78,31 @@
     "ritual.enigmatica.occultism/ritual/ritual_teleport_everbright.interrupted": "Service to Everbright has been discontinued at this time.",
     "ritual.enigmatica.occultism/ritual/ritual_teleport_everbright.conditions": "Toll not accepted. Please provide the full cost of the ritual.",
 
+    "ritual.enigmatica.occultism/ritual/ritual_aura_generation.started": "Ritual of Aura started.",
+    "ritual.enigmatica.occultism/ritual/ritual_aura_generation.finished": "Ritual of Aura completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_aura_generation.interrupted": "Ritual of Aura interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_aura_generation.conditions": "Not all requirements for this ritual are met.",
+
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_1.started": "Ritual of Growth started.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_1.finished": "Ritual of Growth completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_1.interrupted": "Ritual of Growth interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_1.conditions": "Not all requirements for this ritual are met.",
+
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_2.started": "Ritual of Growth started.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_2.finished": "Ritual of Growth completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_2.interrupted": "Ritual of Growth interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_2.conditions": "Not all requirements for this ritual are met.",
+
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_3.started": "Ritual of Growth started.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_3.finished": "Ritual of Growth completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_3.interrupted": "Ritual of Growth interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_3.conditions": "Not all requirements for this ritual are met.",
+
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_4.started": "Ritual of Growth started.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_4.finished": "Ritual of Growth completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_4.interrupted": "Ritual of Growth interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_4.conditions": "Not all requirements for this ritual are met.",
+
     "ritual.enigmatica.occultism/ritual/creeper_gate_small.started": "Started Opening Small Creeper Gateway",
     "ritual.enigmatica.occultism/ritual/creeper_gate_small.finished": "Small Creeper Gateway Opened",
     "ritual.enigmatica.occultism/ritual/creeper_gate_small.interrupted": "Small Creeper Gateway Interrupted",

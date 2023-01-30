@@ -5,6 +5,26 @@ StartupEvents.registry('block', (event) => {
             name: 'disabled_structure_indicator',
             material: 'rock',
             hardness: 2.0
+        },
+        {
+            name: 'heartwood_1',
+            material: 'wood',
+            hardness: 100.0
+        },
+        {
+            name: 'heartwood_2',
+            material: 'wood',
+            hardness: 100.0
+        },
+        {
+            name: 'heartwood_3',
+            material: 'wood',
+            hardness: 100.0
+        },
+        {
+            name: 'heartwood_4',
+            material: 'wood',
+            hardness: 100.0
         }
     ];
 

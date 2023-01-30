@@ -29,6 +29,24 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}filter_filling`
+        },
+        {
+            block_in: { blocks: ['twilightforest:liveroot_block'] },
+            post: [
+                {
+                    type: 'execute',
+                    command: `summon item ~ ~2 ~ {Item:{id:"kubejs:aura_leaf",Count:1b,tag:{aura_amount:2000,aura_max:1000000}}}`,
+                    contextual: {
+                        type: 'and',
+                        contextual: [
+                            { type: 'chance', chance: 0.25 },
+                            { type: 'time', value: { min: 4000, max: 8000 }, period: 24000 },
+                            { type: 'location', offsetY: 1, predicate: { block: { blocks: ['kubejs:heartwood_1'] } } }
+                        ]
+                    }
+                }
+            ],
+            id: `${id_prefix}summon_whirlisprig`
         }
     ];
 
