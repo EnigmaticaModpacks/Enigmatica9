@@ -69,7 +69,7 @@ ServerEvents.recipes((event) => {
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_2',
             ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:craft_djinni',
+            pentacle_id: 'occultism:tree_of_life_stage_1',
             duration: 60,
             id: `${id_prefix}ritual_tree_of_life_2`
         },
@@ -84,7 +84,7 @@ ServerEvents.recipes((event) => {
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_3',
             ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:craft_djinni',
+            pentacle_id: 'occultism:tree_of_life_stage_2',
             duration: 60,
             id: `${id_prefix}ritual_tree_of_life_3`
         },
@@ -99,7 +99,7 @@ ServerEvents.recipes((event) => {
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_4',
             ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:craft_djinni',
+            pentacle_id: 'occultism:tree_of_life_stage_3',
             duration: 60,
             id: `${id_prefix}ritual_tree_of_life_4`
         }

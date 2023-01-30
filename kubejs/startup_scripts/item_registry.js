@@ -24,8 +24,7 @@ StartupEvents.registry('item', (event) => {
         'ritual_tree_of_life_1',
         'ritual_tree_of_life_2',
         'ritual_tree_of_life_3',
-        'ritual_tree_of_life_4',
-        'ritual_tree_of_life_5'
+        'ritual_tree_of_life_4'
     ];
 
     const reusableItemTextures = [
@@ -38,8 +37,7 @@ StartupEvents.registry('item', (event) => {
         { name: 'tree_of_life_1', texture: 'enigmatica_tree' },
         { name: 'tree_of_life_2', texture: 'enigmatica_tree' },
         { name: 'tree_of_life_3', texture: 'enigmatica_tree' },
-        { name: 'tree_of_life_4', texture: 'enigmatica_tree' },
-        { name: 'tree_of_life_5', texture: 'enigmatica_tree' }
+        { name: 'tree_of_life_4', texture: 'enigmatica_tree' }
     ];
 
     items.forEach((item) => {

@@ -239,7 +239,7 @@ EntityEvents.spawned((event) => {
             let height = 3;
             let upper_radius = 8;
             let lower_radius = 5;
-            let density = 10;
+            let density = 250 * (aura_amount / aura_max);
             let duration = 3 * 20;
             let aura_per_step;
             let delay;
