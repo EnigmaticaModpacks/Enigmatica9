@@ -126,7 +126,31 @@
 				{
 					id: "0000000000000CC1"
 					type: "item"
-					item: "create:white_sail"
+					title: "Sails"
+					icon: "create:white_sail"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "create:white_sail"
+									Count: 1b
+								}
+								{
+									id: "create:sail_frame"
+									Count: 1b
+								}
+								{
+									id: "itemfilters:tag"
+									Count: 1b
+									tag: {
+										value: "forge:wool"
+									}
+								}
+							]
+						}
+					}
 					count: 32L
 				}
 			]
