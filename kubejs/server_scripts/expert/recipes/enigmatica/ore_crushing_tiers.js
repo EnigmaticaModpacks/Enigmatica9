@@ -13,12 +13,24 @@ ServerEvents.recipes((event) => {
             experience: 0.2,
             duration: 200,
             energy: 6000,
-            crushing_tier: 3,
+            crushing_tier: 2,
             id_suffix: `iron_clump_from_raw_ore`
         }
     ];
 
     const recipetypes_crushing = (event, recipe) => {
+        // Occultism
+        event
+            .custom({
+                type: 'occultism:crushing',
+                ingredient: Ingredient.of(recipe.input).toJson(),
+                result: { item: recipe.outputs.primary, count: 2 },
+                min_tier: recipe.crushing_tier,
+                crushing_time: recipe.duration,
+                ignore_crushing_multiplier: false
+            })
+            .id(`${id_prefix}occultism_crushing/${recipe.id_suffix}`);
+
         if (recipe.crushing_tier <= 1) {
             let multiplier = 2;
 
@@ -40,20 +52,6 @@ ServerEvents.recipes((event) => {
                     grindingTime: recipe.duration * 5
                 })
                 .id(`${id_prefix}hexerei_pestle_and_mortar/${recipe.id_suffix}`);
-
-            // Occultism
-            event
-                .custom({
-                    type: 'occultism:crushing',
-                    ingredient: Ingredient.of(recipe.input).toJson(),
-                    result: {
-                        item: recipe.outputs.primary,
-                        count: multiplier
-                    },
-                    crushing_time: recipe.duration,
-                    ignore_crushing_multiplier: true
-                })
-                .id(`${id_prefix}occultism_crushing/${recipe.id_suffix}`);
         }
 
         if (recipe.crushing_tier <= 2) {
