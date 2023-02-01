@@ -14,20 +14,29 @@ ServerEvents.recipes((event) => {
             duration: 200,
             energy: 6000,
             crushing_tier: 2,
+            occultism_multiplier: true,
             id_suffix: `iron_clump_from_raw_ore`
         }
     ];
 
     const recipetypes_crushing = (event, recipe) => {
         // Occultism
+        // console.log({
+        //     type: 'occultism:crushing',
+        //     ingredient: Ingredient.of(recipe.input).toJson(),
+        //     result: { item: recipe.outputs.primary, count: 2 },
+        //     min_tier: recipe.crushing_tier.toString(),
+        //     crushing_time: recipe.duration,
+        //     ignore_crushing_multiplier: recipe.occultism_multiplier
+        // });
         event
             .custom({
                 type: 'occultism:crushing',
                 ingredient: Ingredient.of(recipe.input).toJson(),
                 result: { item: recipe.outputs.primary, count: 2 },
-                min_tier: recipe.crushing_tier,
+                min_tier: recipe.crushing_tier.toString(),
                 crushing_time: recipe.duration,
-                ignore_crushing_multiplier: false
+                ignore_crushing_multiplier: recipe.occultism_multiplier
             })
             .id(`${id_prefix}occultism_crushing/${recipe.id_suffix}`);
 
