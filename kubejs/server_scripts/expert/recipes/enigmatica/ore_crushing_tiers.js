@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
             experience: 0.2,
             duration: 200,
             energy: 6000,
-            crushing_tier: 2,
+            crushing_tier: 3,
             occultism_multiplier: true,
             id_suffix: `iron_clump_from_raw_ore`
         }
