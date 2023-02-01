@@ -21,24 +21,17 @@ ServerEvents.recipes((event) => {
 
     const recipetypes_crushing = (event, recipe) => {
         // Occultism
-        // console.log({
-        //     type: 'occultism:crushing',
-        //     ingredient: Ingredient.of(recipe.input).toJson(),
-        //     result: { item: recipe.outputs.primary, count: 2 },
-        //     min_tier: recipe.crushing_tier.toString(),
-        //     crushing_time: recipe.duration,
-        //     ignore_crushing_multiplier: recipe.occultism_multiplier
-        // });
-        event
-            .custom({
-                type: 'occultism:crushing',
-                ingredient: Ingredient.of(recipe.input).toJson(),
-                result: { item: recipe.outputs.primary, count: 2 },
-                min_tier: recipe.crushing_tier.toString(),
-                crushing_time: recipe.duration,
-                ignore_crushing_multiplier: recipe.occultism_multiplier
-            })
-            .id(`${id_prefix}occultism_crushing/${recipe.id_suffix}`);
+        let json = {
+            type: 'occultism:crushing',
+            ingredient: Ingredient.of(recipe.input).toJson(),
+            result: { item: recipe.outputs.primary, count: 2 },
+            min_tier: Math.trunc(recipe.crushing_tier),
+            crushing_time: recipe.duration,
+            ignore_crushing_multiplier: recipe.occultism_multiplier
+        };
+
+        console.log(json);
+        event.custom(json).id(`${id_prefix}occultism_crushing/${recipe.id_suffix}`);
 
         if (recipe.crushing_tier <= 1) {
             let multiplier = 2;
