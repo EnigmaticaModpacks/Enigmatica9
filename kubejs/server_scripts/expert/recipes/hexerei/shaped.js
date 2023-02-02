@@ -14,6 +14,16 @@ ServerEvents.recipes((event) => {
                 C: 'minecraft:cauldron'
             },
             id: `hexerei:mixing_cauldron`
+        },
+        {
+            output: 'hexerei:pestle_and_mortar',
+            pattern: ['  A', 'BCB', 'BBB'],
+            key: {
+                A: '#forge:bones',
+                B: 'minecraft:andesite',
+                C: 'twilightforest:liveroot'
+            },
+            id: `${id_prefix}pestle_and_mortar`
         }
     ];
 

@@ -9,9 +9,18 @@ ServerEvents.recipes((event) => {
             output: 'minecraft:cauldron',
             pattern: ['A A', 'A A', 'AAA'],
             key: {
-                A: '#forge:plates/copper'
+                A: '#forge:ingots/copper'
             },
             id: `minecraft:cauldron`
+        },
+        {
+            output: 'minecraft:furnace',
+            pattern: ['AAA', 'A A', 'ABA'],
+            key: {
+                A: 'minecraft:andesite',
+                B: 'minecraft:bricks'
+            },
+            id: `${id_prefix}furnace`
         }
     ];
 

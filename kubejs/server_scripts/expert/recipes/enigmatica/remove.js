@@ -19,6 +19,8 @@ ServerEvents.recipes((event) => {
         { id: /immersiveengineering:crafting\/.*_mix/ },
 
         { id: 'naturesaura:tree_ritual/ore_spawn_powder' },
+        { id: 'naturesaura:gold_fiber' },
+        { id: 'naturesaura:wood_stand' },
 
         { id: 'thermal:enderium_dust_2' },
         { id: 'thermal:lumium_dust_4' },
@@ -26,17 +28,22 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:invar_dust_3' },
         { id: 'thermal:bronze_dust_4' },
 
+        { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
+
         { id: 'immersiveengineering:blastfurnace/steel' },
 
         { id: 'industrialforegoing:washing_factory' },
         { id: 'industrialforegoing:fermentation_station' },
         { id: 'industrialforegoing:fluid_sieving_machine' },
 
+        { output: 'minecraft:furnace' },
+
         // Disable Ore Processing
         { type: 'minecraft:smelting', output: '#forge:nuggets' },
         { type: 'minecraft:smelting', output: '#forge:ingots' },
         { type: 'minecraft:smelting', output: '#forge:gems' },
         { type: 'minecraft:smelting', output: '#forge:dusts' },
+        { type: 'minecraft:smelting', output: /ingot_from_crushed/ },
 
         // { type: 'minecraft:blasting', input: '#forge:ores' },
         // { type: 'minecraft:blasting', input: '#forge:raw_materials' },
@@ -45,6 +52,7 @@ ServerEvents.recipes((event) => {
         { type: 'minecraft:blasting', output: '#forge:ingots' },
         { type: 'minecraft:blasting', output: '#forge:gems' },
         { type: 'minecraft:blasting', output: '#forge:dusts' },
+        { type: 'minecraft:blasting', output: /ingot_from_crushed/ },
 
         { type: 'create:crushing', id: /_ore$/ },
         { type: 'create:crushing', id: /_recycling$/ },

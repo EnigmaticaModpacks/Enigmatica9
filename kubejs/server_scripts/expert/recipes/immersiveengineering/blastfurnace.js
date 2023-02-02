@@ -5,13 +5,6 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/immersiveengineering/blasfurnace/';
     const recipes = [
         {
-            input: { tag: 'mekanism:clumps/iron' },
-            result: { item: 'kubejs:pig_iron_ingot' },
-            slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
-            time: 60 * 20,
-            id: `${id_prefix}pig_iron_from_iron_clump`
-        },
-        {
             input: { tag: 'mekanism:dirty_dusts/iron' },
             result: { item: 'kubejs:pig_iron_ingot' },
             slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
@@ -22,7 +15,7 @@ ServerEvents.recipes((event) => {
             input: { tag: 'mekanism:crystals/iron' },
             result: { item: 'kubejs:pig_iron_ingot' },
             slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
-            time: 10 * 20,
+            time: 5 * 20,
             id: `${id_prefix}pig_iron_from_iron_crystal`
         }
     ];

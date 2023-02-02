@@ -8,31 +8,18 @@ ServerEvents.recipes((event) => {
     const recipes = [
         // Placeholder recipe. Iron will have different secondary. Almost Unified functions will be used for outputs.
         {
-            outputs: { primary: 'mekanism:clump_iron', secondary: 'mekanism:clump_tin' },
+            outputs: { primary: 'create:crushed_iron_ore', secondary: 'create:crushed_tin_ore' },
             input: '#forge:raw_ores/iron',
             experience: 0.2,
             duration: 200,
             energy: 6000,
             crushing_tier: 3,
             occultism_multiplier: true,
-            id_suffix: `iron_clump_from_raw_ore`
+            id_suffix: `crushed_iron_from_raw_ore`
         }
     ];
 
     const recipetypes_crushing = (event, recipe) => {
-        // Occultism
-        let json = {
-            type: 'occultism:crushing',
-            ingredient: Ingredient.of(recipe.input).toJson(),
-            result: { item: recipe.outputs.primary, count: 2 },
-            min_tier: Math.trunc(recipe.crushing_tier),
-            crushing_time: recipe.duration,
-            ignore_crushing_multiplier: recipe.occultism_multiplier
-        };
-
-        console.log(json);
-        event.custom(json).id(`${id_prefix}occultism_crushing/${recipe.id_suffix}`);
-
         if (recipe.crushing_tier <= 1) {
             let multiplier = 2;
 
@@ -111,6 +98,18 @@ ServerEvents.recipes((event) => {
                     processingTime: recipe.duration
                 })
                 .id(`${id_prefix}create_crushing/${recipe.id_suffix}`);
+
+            // Occultism
+            event
+                .custom({
+                    type: 'occultism:crushing',
+                    ingredient: Ingredient.of(recipe.input).toJson(),
+                    result: { item: recipe.outputs.primary, count: 2 },
+                    min_tier: recipe.crushing_tier,
+                    crushing_time: recipe.duration,
+                    ignore_crushing_multiplier: recipe.occultism_multiplier
+                })
+                .id(`${id_prefix}occultism_crushing/${recipe.id_suffix}`);
         }
 
         if (recipe.crushing_tier <= 4) {
@@ -171,6 +170,18 @@ ServerEvents.recipes((event) => {
                     experience: recipe.experience
                 })
                 .id(`${id_prefix}thermal_pulverizer/${recipe.id_suffix}`);
+
+            // Occultism
+            event
+                .custom({
+                    type: 'occultism:crushing',
+                    ingredient: Ingredient.of(recipe.input).toJson(),
+                    result: { item: recipe.outputs.primary, count: 2 },
+                    min_tier: 4,
+                    crushing_time: recipe.duration,
+                    ignore_crushing_multiplier: recipe.occultism_multiplier
+                })
+                .id(`${id_prefix}occultism_crushing/${recipe.id_suffix}`);
         }
     };
 
