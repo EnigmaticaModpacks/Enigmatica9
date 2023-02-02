@@ -4,7 +4,7 @@ ServerEvents.recipes((event) => {
     }
 
     const id_prefix = 'enigmatica:expert/enigmatica/';
-
+    // Tiers range from 1-5, with 5 being the highest
     const recipes = [
         // Placeholder recipe. Iron will have different secondary. Almost Unified functions will be used for outputs.
         {
@@ -14,14 +14,50 @@ ServerEvents.recipes((event) => {
             duration: 200,
             energy: 6000,
             crushing_tier: 3,
-            occultism_multiplier: true,
-            id_suffix: `crushed_iron_from_raw_ore`
+            ignore_multiplier: false,
+            id_suffix: `iron_crushed_ore_from_raw_ore`
+        },
+        {
+            outputs: { primary: 'create:crushed_copper_ore', secondary: 'create:crushed_nickel_ore' },
+            input: '#forge:raw_ores/copper',
+            experience: 0.2,
+            duration: 100,
+            energy: 3000,
+            crushing_tier: 1,
+            ignore_multiplier: false,
+            id_suffix: `copper_crushed_ore_from_raw_ore`
+        },
+        {
+            outputs: { primary: 'mekanism:dirty_dust_copper' },
+            input: '#mekanism:clumps/copper',
+            experience: 0.2,
+            duration: 100,
+            energy: 3000,
+            crushing_tier: 1,
+            ignore_multiplier: true,
+            id_suffix: `copper_clump_from_dirty_dust`
         }
     ];
 
+    // Todo: Update Metal and Gem properties to include crushing tier, make loop for all of this based on that. Pending completion of EE setup by Kanz
+
     const recipetypes_crushing = (event, recipe) => {
+        // Occultism
+        if (recipe.crushing_tier <= 3 || recipe.crushing_tier == 5) {
+            event
+                .custom({
+                    type: 'occultism:crushing',
+                    ingredient: Ingredient.of(recipe.input).toJson(),
+                    result: { item: recipe.outputs.primary, count: 2 },
+                    min_tier: recipe.crushing_tier > 4 ? 4 : recipe.crushing_tier,
+                    crushing_time: recipe.duration,
+                    ignore_crushing_multiplier: recipe.ignore_multiplier
+                })
+                .id(`${id_prefix}occultism_crushing/${recipe.id_suffix}`);
+        }
+
         if (recipe.crushing_tier <= 1) {
-            let multiplier = 2;
+            let multiplier = recipe.ignore_multiplier ? 1 : 2;
 
             // Hexerei
             event
@@ -44,7 +80,7 @@ ServerEvents.recipes((event) => {
         }
 
         if (recipe.crushing_tier <= 2) {
-            let multiplier = 3;
+            let multiplier = recipe.ignore_multiplier ? 1 : 3;
             let outputs = [
                 {
                     item: recipe.outputs.primary,
@@ -72,7 +108,7 @@ ServerEvents.recipes((event) => {
         }
 
         if (recipe.crushing_tier <= 3) {
-            let multiplier = 3;
+            let multiplier = recipe.ignore_multiplier ? 1 : 3;
             let outputs = [
                 {
                     item: recipe.outputs.primary,
@@ -98,22 +134,10 @@ ServerEvents.recipes((event) => {
                     processingTime: recipe.duration
                 })
                 .id(`${id_prefix}create_crushing/${recipe.id_suffix}`);
-
-            // Occultism
-            event
-                .custom({
-                    type: 'occultism:crushing',
-                    ingredient: Ingredient.of(recipe.input).toJson(),
-                    result: { item: recipe.outputs.primary, count: 2 },
-                    min_tier: recipe.crushing_tier,
-                    crushing_time: recipe.duration,
-                    ignore_crushing_multiplier: recipe.occultism_multiplier
-                })
-                .id(`${id_prefix}occultism_crushing/${recipe.id_suffix}`);
         }
 
         if (recipe.crushing_tier <= 4) {
-            let multiplier = 4;
+            let multiplier = recipe.ignore_multiplier ? 1 : 4;
 
             let secondary_outputs = [];
 
@@ -143,7 +167,7 @@ ServerEvents.recipes((event) => {
         }
 
         if (recipe.crushing_tier <= 5) {
-            let multiplier = 2.25; // Pulverizer has massive catalysts, this does about 5x with the best
+            let multiplier = recipe.ignore_multiplier ? 1 : 2.25; // Pulverizer has massive catalysts, this does about 5x with the best
             let outputs = [
                 {
                     item: recipe.outputs.primary,
@@ -170,18 +194,6 @@ ServerEvents.recipes((event) => {
                     experience: recipe.experience
                 })
                 .id(`${id_prefix}thermal_pulverizer/${recipe.id_suffix}`);
-
-            // Occultism
-            event
-                .custom({
-                    type: 'occultism:crushing',
-                    ingredient: Ingredient.of(recipe.input).toJson(),
-                    result: { item: recipe.outputs.primary, count: 2 },
-                    min_tier: 4,
-                    crushing_time: recipe.duration,
-                    ignore_crushing_multiplier: recipe.occultism_multiplier
-                })
-                .id(`${id_prefix}occultism_crushing/${recipe.id_suffix}`);
         }
     };
 

@@ -11,7 +11,9 @@ ServerEvents.recipes((event) => {
         //     id: 'sample'
         // }
 
+        { mod: 'computercraft' },
         { output: 'twilightforest:ironwood_ingot' },
+        { output: 'minecraft:blast_furnace' },
 
         { type: 'thermal:smelter_recycle' },
 
@@ -87,6 +89,7 @@ ServerEvents.recipes((event) => {
         { id: 'create:splashing/red_sand' },
 
         { id: /hammercrushing/, mod: 'immersiveengineering' },
+        { id: /block_blast/, mod: 'quark' },
 
         { id: /mekanism:processing\/.*\/slurry/ },
         { id: /mekanism:processing\/.*\/crystal/ },

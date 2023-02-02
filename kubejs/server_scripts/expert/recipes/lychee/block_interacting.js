@@ -8,7 +8,6 @@ ServerEvents.recipes((event) => {
             item_in: { item: 'naturesaura:gold_leaf' },
             block_in: { tag: 'minecraft:logs' },
             post: [
-                { type: 'prevent_default' },
                 { type: 'place', block: 'naturesaura:wood_stand' },
                 {
                     type: 'execute',

@@ -15,12 +15,23 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'minecraft:furnace',
-            pattern: ['AAA', 'A A', 'ABA'],
+            pattern: ['AAA', 'A A', 'BBB'],
             key: {
                 A: 'minecraft:andesite',
-                B: 'minecraft:bricks'
+                B: 'minecraft:polished_andesite'
             },
             id: `${id_prefix}furnace`
+        },
+        {
+            output: 'minecraft:blast_furnace',
+            pattern: ['AAA', 'ACA', 'BDB'],
+            key: {
+                A: 'minecraft:andesite',
+                B: 'minecraft:smooth_stone',
+                C: 'minecraft:furnace',
+                D: 'minecraft:bricks'
+            },
+            id: `${id_prefix}blast_furnace`
         }
     ];
 
