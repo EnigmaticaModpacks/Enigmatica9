@@ -8,6 +8,9 @@ ServerEvents.recipes((event) => {
         //     id: 'sample'
         // }
         { mod: 'gateways' },
+        { output: /pendorite/ },
+        { output: /emeraldite/ },
+        { output: /ametrine/ },
 
         { id: /ars_nouveau:.*_dye/ },
 

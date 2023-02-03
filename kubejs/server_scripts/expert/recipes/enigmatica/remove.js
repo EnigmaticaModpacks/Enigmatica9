@@ -14,6 +14,7 @@ ServerEvents.recipes((event) => {
         { mod: 'computercraft' },
         { output: 'twilightforest:ironwood_ingot' },
         { output: 'minecraft:blast_furnace' },
+        { output: 'minecraft:furnace' },
 
         { type: 'thermal:smelter_recycle' },
 
@@ -38,9 +39,8 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:fermentation_station' },
         { id: 'industrialforegoing:fluid_sieving_machine' },
 
-        { output: 'minecraft:furnace' },
-
         // Disable Ore Processing
+
         { type: 'minecraft:smelting', output: '#forge:nuggets' },
         { type: 'minecraft:smelting', output: '#forge:ingots' },
         { type: 'minecraft:smelting', output: '#forge:gems' },
