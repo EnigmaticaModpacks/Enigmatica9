@@ -31,6 +31,7 @@ ServerEvents.recipes((event) => {
         {
             item_in: { item: 'twilightforest:naga_scale' },
             block_in: 'minecraft:cauldron',
+            hide_in_viewer: true,
             post: [
                 { type: 'place', block: 'hexerei:mixing_cauldron' },
                 {
