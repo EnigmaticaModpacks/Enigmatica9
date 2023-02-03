@@ -97,9 +97,7 @@ jei.base.items.hidden = [
 jei.base.fluids.hidden = [
     'thermal:latex',
     'thermal:creosote',
-    'thermal:crude_oil',
-    'thermal:heavy_oil',
-    'thermal:light_oil',
+    /thermal:.*_oil/,
     'thermal:refined_fuel',
     'immersiveengineering:plantoil',
     'immersiveengineering:ethanol',
@@ -111,7 +109,7 @@ jei.base.categories.hidden = ['twilightforest:uncrafting'];
 
 // Normal
 jei.normal.items.disabled = [];
-jei.normal.items.hidden = ['tree_of_life_1', 'tree_of_life_2', 'tree_of_life_3', 'tree_of_life_4', 'tree_of_life_5'];
+jei.normal.items.hidden = [/kubejs:tree_of_life_/];
 jei.normal.fluids.hidden = [];
 jei.normal.categories.hidden = [];
 
