@@ -5,6 +5,47 @@ ServerEvents.recipes((event) => {
 
     const id_prefix = 'enigmatica:expert/occultism/ritual/';
     const recipes = [
+        {
+            output: 'ars_nouveau:wixie_charm',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: [
+                'hexerei:witch_helmet',
+                'twilightforest:torchberries',
+                'twilightforest:raven_feather',
+                'twilightforest:torchberries'
+            ],
+            ritual_dummy: 'kubejs:ritual_summon_wixie',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_wixie`
+        },
+        {
+            output: 'ars_nouveau:amethyst_golem_charm',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: ['#forge:gems/amethyst', '#forge:gems/carminite', '#forge:gems/amethyst', '#forge:gems/carminite'],
+            ritual_dummy: 'kubejs:ritual_summon_amethyst_golem',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_amethyst_golem`
+        },
+        {
+            output: 'ars_nouveau:starbuncle_charm',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: [
+                '#forge:raw_materials/gold',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf'
+            ],
+            ritual_dummy: 'kubejs:ritual_summon_starbuncle',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_starbuncle`
+        },
+
         /*
         Custom Summons
         Custom Summon Rituals make use of a dummy item which, 

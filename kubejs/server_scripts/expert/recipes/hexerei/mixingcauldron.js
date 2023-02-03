@@ -5,24 +5,24 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/hexerei/mixingcauldron/';
 
     const recipes = [
-        // {
-        //     liquid: { fluid: 'minecraft:lava' },
-        //     inputs: [
-        //         'twilightforest:firefly',
-        //         '#forge:string',
-        //         '#forge:string',
-        //         '#forge:string',
-        //         '#forge:dusts/gold',
-        //         '#forge:string',
-        //         '#forge:string',
-        //         '#forge:string'
-        //     ],
-        //     output: Item.of('naturesaura:gold_fiber', 6),
-        //     liquidOutput: { fluid: 'minecraft:lava' },
-        //     fluidLevelsConsumed: 1000,
-        //     heatRequirement: 'heated',
-        //     id: `${id_prefix}gold_fiber`
-        // }
+        {
+            liquid: { fluid: 'minecraft:water' },
+            inputs: [
+                'ars_nouveau:manipulation_essence',
+                'naturesaura:gold_powder',
+                '#forge:raw_ores/iron',
+                'twilightforest:liveroot',
+                '#forge:raw_ores/iron',
+                'twilightforest:liveroot',
+                '#forge:raw_ores/iron',
+                'naturesaura:gold_powder'
+            ],
+            output: Item.of('twilightforest:raw_ironwood', 3),
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 1000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}raw_ironwood`
+        }
     ];
 
     recipes.forEach((recipe) => {

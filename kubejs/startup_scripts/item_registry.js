@@ -24,7 +24,10 @@ StartupEvents.registry('item', (event) => {
         'ritual_tree_of_life_1',
         'ritual_tree_of_life_2',
         'ritual_tree_of_life_3',
-        'ritual_tree_of_life_4'
+        'ritual_tree_of_life_4',
+        'ritual_summon_wixie',
+        'ritual_summon_amethyst_golem',
+        'ritual_summon_starbuncle'
     ];
 
     const reusableItemTextures = [
