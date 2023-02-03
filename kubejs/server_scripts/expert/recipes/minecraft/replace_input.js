@@ -8,6 +8,11 @@ ServerEvents.recipes((event) => {
             filter: { output: 'minecraft:hopper' },
             to_replace: '#forge:ingots/iron',
             replace_with: '#forge:plates/tin'
+        },
+        {
+            filter: { output: 'minecraft:bucket' },
+            to_replace: '#forge:ingots/iron',
+            replace_with: '#forge:plates/tin'
         }
     ];
 

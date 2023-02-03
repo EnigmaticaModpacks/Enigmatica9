@@ -22,6 +22,24 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 1000,
             heatRequirement: 'heated',
             id: `${id_prefix}raw_ironwood`
+        },
+        {
+            liquid: { fluid: 'minecraft:water' },
+            inputs: [
+                'minecraft:calcite',
+                'hexerei:dried_mugwort_leaves',
+                'hexerei:dried_sage',
+                'hexerei:dried_sage',
+                'minecraft:calcite',
+                'hexerei:dried_sage',
+                'hexerei:dried_sage',
+                'hexerei:dried_mugwort_leaves'
+            ],
+            output: Item.of('occultism:chalk_white_impure', 4),
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 1000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}chalk_white_impure`
         }
     ];
 

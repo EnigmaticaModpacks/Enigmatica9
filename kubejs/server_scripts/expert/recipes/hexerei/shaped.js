@@ -5,16 +5,16 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/hexerei/shaped/';
 
     const recipes = [
-        {
-            output: 'hexerei:mixing_cauldron',
-            pattern: ['BAB', 'ACA', ' A '],
-            key: {
-                A: 'twilightforest:naga_scale',
-                B: '#forge:bones',
-                C: 'minecraft:cauldron'
-            },
-            id: `hexerei:mixing_cauldron`
-        },
+        // {
+        //     output: 'hexerei:mixing_cauldron',
+        //     pattern: ['BAB', 'ACA', ' A '],
+        //     key: {
+        //         A: 'twilightforest:naga_scale',
+        //         B: '#forge:bones',
+        //         C: 'minecraft:cauldron'
+        //     },
+        //     id: `${id_prefix}mixing_cauldron`
+        // },
         {
             output: 'hexerei:pestle_and_mortar',
             pattern: ['  A', 'BCB', 'BBB'],

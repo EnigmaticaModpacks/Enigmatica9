@@ -22,6 +22,8 @@ ServerEvents.recipes((event) => {
         { id: /immersiveengineering:blastfurnace\/fuel_charcoal/ },
         { id: /immersiveengineering:crafting\/.*_mix/ },
 
+        { id: 'ars_nouveau:imbuement_chamber' },
+
         { id: 'naturesaura:tree_ritual/ore_spawn_powder' },
         { id: 'naturesaura:gold_fiber' },
         { id: 'naturesaura:wood_stand' },
@@ -33,12 +35,15 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:bronze_dust_4' },
 
         { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
+        { id: 'hexerei:mixing_cauldron' },
 
         { id: 'immersiveengineering:blastfurnace/steel' },
 
         { id: 'industrialforegoing:washing_factory' },
         { id: 'industrialforegoing:fermentation_station' },
         { id: 'industrialforegoing:fluid_sieving_machine' },
+
+        { id: 'occultism:crafting/chalk_white_impure' },
 
         // Disable Ore Processing
 

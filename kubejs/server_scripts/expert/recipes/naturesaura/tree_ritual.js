@@ -3,8 +3,8 @@ ServerEvents.recipes((event) => {
         return;
     }
 
-    const time_multiplier = 10,
-        id_prefix = 'enigmatica:expert/naturesaura/tree_ritual/';
+    const time_multiplier = 10;
+    const id_prefix = 'enigmatica:expert/naturesaura/tree_ritual/';
 
     const recipes = [
         {
@@ -22,6 +22,66 @@ ServerEvents.recipes((event) => {
             time: 5 * time_multiplier,
             sapling: 'quark:red_blossom_sapling',
             id: `${id_prefix}ironwood_ingot`
+        },
+        {
+            output: 'ars_nouveau:blue_archwood_sapling',
+            ingredients: [
+                'twilightforest:torchberries',
+                'twilightforest:liveroot',
+                'minecraft:water_bucket',
+                'minecraft:water_bucket'
+            ],
+            time: 5 * time_multiplier,
+            sapling: 'twilightforest:canopy_sapling',
+            id: `${id_prefix}blue_archwood_sapling`
+        },
+        {
+            output: 'ars_nouveau:purple_archwood_sapling',
+            ingredients: [
+                'twilightforest:torchberries',
+                'twilightforest:liveroot',
+                'twilightforest:raven_feather',
+                'twilightforest:raven_feather'
+            ],
+            time: 5 * time_multiplier,
+            sapling: 'twilightforest:canopy_sapling',
+            id: `${id_prefix}purple_archwood_sapling`
+        },
+        {
+            output: 'ars_nouveau:green_archwood_sapling',
+            ingredients: [
+                'twilightforest:torchberries',
+                'twilightforest:liveroot',
+                'twilightforest:cicada',
+                'twilightforest:cicada'
+            ],
+            time: 5 * time_multiplier,
+            sapling: 'twilightforest:canopy_sapling',
+            id: `${id_prefix}green_archwood_sapling`
+        },
+        {
+            output: 'ars_nouveau:red_archwood_sapling',
+            ingredients: [
+                'twilightforest:torchberries',
+                'twilightforest:liveroot',
+                'minecraft:lava_bucket',
+                'minecraft:lava_bucket'
+            ],
+            time: 5 * time_multiplier,
+            sapling: 'twilightforest:canopy_sapling',
+            id: `${id_prefix}red_archwood_sapling`
+        },
+        {
+            output: 'ars_elemental:yellow_archwood_sapling',
+            ingredients: [
+                'twilightforest:torchberries',
+                'twilightforest:liveroot',
+                'twilightforest:firefly',
+                'twilightforest:firefly'
+            ],
+            time: 5 * time_multiplier,
+            sapling: 'twilightforest:canopy_sapling',
+            id: `${id_prefix}yellow_archwood_sapling`
         }
         /*
             ,
