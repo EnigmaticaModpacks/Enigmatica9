@@ -17,6 +17,18 @@ ServerEvents.recipes((event) => {
             ],
             source: 600,
             id: `${id_prefix}iron_from_pig_iron`
+        },
+        {
+            count: 1,
+            input: { tag: 'forge:gems/source' },
+            output: 'ars_nouveau:fire_essence',
+            pedestalItems: [
+                { item: { tag: 'twilightforest:fiery_vial' } },
+                { item: { item: 'twilightforest:firefly' } },
+                { item: { item: 'twilightforest:torchberries' } }
+            ],
+            source: 2000,
+            id: 'ars_nouveau:imbuement_fire_essence'
         }
     ];
 
