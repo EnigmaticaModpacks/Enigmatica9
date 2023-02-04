@@ -7,9 +7,9 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            count: 1,
             input: { tag: 'forge:ingots/pig_iron' },
             output: 'minecraft:iron_ingot',
+            count: 1,
             pedestalItems: [
                 { item: { item: 'ars_nouveau:air_essence' } },
                 { item: { item: 'ars_nouveau:fire_essence' } },
@@ -19,9 +19,9 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}iron_from_pig_iron`
         },
         {
-            count: 1,
             input: { tag: 'forge:gems/source' },
             output: 'ars_nouveau:fire_essence',
+            count: 1,
             pedestalItems: [
                 { item: { tag: 'twilightforest:fiery_vial' } },
                 { item: { item: 'twilightforest:firefly' } },
@@ -29,6 +29,18 @@ ServerEvents.recipes((event) => {
             ],
             source: 2000,
             id: 'ars_nouveau:imbuement_fire_essence'
+        },
+        {
+            input: { tag: 'forge:gems/source' },
+            output: 'ars_nouveau:abjuration_essence',
+            count: 1,
+            pedestalItems: [
+                { item: { tag: 'forge:ingots/ironwood' } },
+                { item: { item: 'twilightforest:cicada' } },
+                { item: { item: 'twilightforest:naga_scale' } }
+            ],
+            source: 2000,
+            id: 'ars_nouveau:imbuement_abjuration_essence'
         }
     ];
 

@@ -14,4 +14,7 @@
 	#Limits the number of times a given augment may be applied to a given effect
 	#Example entry: "glyph_amplify=5"
 	augment_limits = []
+	#The tier of the glyph
+	#Range: 1 ~ 99
+	glyph_tier = 2
 

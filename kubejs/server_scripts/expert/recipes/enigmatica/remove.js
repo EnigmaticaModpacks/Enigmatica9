@@ -23,6 +23,8 @@ ServerEvents.recipes((event) => {
         { id: /immersiveengineering:crafting\/.*_mix/ },
 
         { id: 'ars_nouveau:imbuement_chamber' },
+        { id: 'ars_nouveau:wixie_charm' },
+        { id: 'ars_nouveau:starbuncle_charm' },
 
         { id: 'naturesaura:tree_ritual/ore_spawn_powder' },
         { id: 'naturesaura:gold_fiber' },

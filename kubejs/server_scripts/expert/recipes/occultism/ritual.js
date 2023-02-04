@@ -21,6 +21,16 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_summon_wixie`
         },
         {
+            output: 'ars_nouveau:wixie_charm',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: ['ars_nouveau:wixie_shards'],
+            ritual_dummy: 'kubejs:ritual_summon_wixie',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_wixie_from_shards`
+        },
+        {
             output: 'ars_nouveau:amethyst_golem_charm',
             activation_item: 'ars_nouveau:conjuration_essence',
             inputs: ['#forge:gems/amethyst', '#forge:gems/carminite', '#forge:gems/amethyst', '#forge:gems/carminite'],
@@ -44,6 +54,16 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:summon_familiar',
             duration: 10,
             id: `${id_prefix}ritual_summon_starbuncle`
+        },
+        {
+            output: 'ars_nouveau:starbuncle_charm',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: ['ars_nouveau:starbuncle_shards'],
+            ritual_dummy: 'kubejs:ritual_summon_starbuncle',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_starbuncle_from_shards`
         },
 
         /*
