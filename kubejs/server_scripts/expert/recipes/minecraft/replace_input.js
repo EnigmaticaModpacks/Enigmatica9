@@ -30,6 +30,11 @@ ServerEvents.recipes((event) => {
             replace_with: '#pneumaticcraft:compressed_stone'
         },
         {
+            filter: { mod: 'compressedcreativity' },
+            to_replace: 'create:andesite_alloy',
+            replace_with: '#pneumaticcraft:compressed_stone'
+        },
+        {
             filter: { mod: 'create' },
             to_replace: 'minecraft:dried_kelp',
             replace_with: '#forge:leather'

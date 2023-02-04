@@ -16,6 +16,7 @@ ServerEvents.recipes((event) => {
         { output: 'twilightforest:raw_ironwood' },
         { output: 'minecraft:blast_furnace' },
         { output: 'minecraft:furnace' },
+        { output: 'create:andesite_alloy' },
 
         { type: 'thermal:smelter_recycle' },
 
