@@ -1,3 +1,3 @@
 ServerEvents.tags('item', (event) => {
-    event.add('forge:stone', stones);
+    event.get('forge:stone').add(stones).remove('#pneumaticcraft:compressed_stone');
 });

@@ -13,6 +13,26 @@ ServerEvents.recipes((event) => {
             filter: { output: 'minecraft:bucket' },
             to_replace: '#forge:ingots/iron',
             replace_with: '#forge:plates/tin'
+        },
+        {
+            filter: { mod: 'create' },
+            to_replace: 'create:andesite_alloy',
+            replace_with: '#pneumaticcraft:compressed_stone'
+        },
+        {
+            filter: { mod: 'createaddition' },
+            to_replace: 'create:andesite_alloy',
+            replace_with: '#pneumaticcraft:compressed_stone'
+        },
+        {
+            filter: { mod: 'littlecontraptions' },
+            to_replace: 'create:andesite_alloy',
+            replace_with: '#pneumaticcraft:compressed_stone'
+        },
+        {
+            filter: { mod: 'create' },
+            to_replace: 'minecraft:dried_kelp',
+            replace_with: '#forge:leather'
         }
     ];
 

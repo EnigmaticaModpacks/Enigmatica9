@@ -12,20 +12,47 @@ ServerEvents.recipes((event) => {
             post: [
                 {
                     type: 'place',
-                    block: 'thermal:lime_rockwool',
-                    contextual: isOceanHasWaterWithChance(0.1)
+                    block: 'thermal:lime_rockwool'
                 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.water.ambient ambient @p ~ ~ ~',
-                    hide: true,
-                    contextual: isOceanHasWaterWithChance(0.1)
+                    hide: true
                 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.wool.place block @p ~ ~ ~ 0.3 0.1',
-                    hide: true,
-                    contextual: isOceanHasWaterWithChance(0.1)
+                    hide: true
+                }
+            ],
+            contextual: [
+                {
+                    type: 'and',
+                    contextual: [
+                        { type: 'location', predicate: { 'lychee:biome_tag': 'is_ocean' } },
+                        { type: 'location', predicate: { position: { y: { min: 0, max: 63 } } } },
+                        { type: 'chance', chance: 0.1 },
+                        {
+                            type: 'location',
+                            offsetX: -1,
+                            predicate: { block: { blocks: ['minecraft:water'] } }
+                        },
+                        {
+                            type: 'location',
+                            offsetX: 1,
+                            predicate: { block: { blocks: ['minecraft:water'] } }
+                        },
+                        {
+                            type: 'location',
+                            offsetZ: -1,
+                            predicate: { block: { blocks: ['minecraft:water'] } }
+                        },
+                        {
+                            type: 'location',
+                            offsetZ: 1,
+                            predicate: { block: { blocks: ['minecraft:water'] } }
+                        }
+                    ]
                 }
             ],
             id: `${id_prefix}filter_filling`
@@ -217,7 +244,7 @@ ServerEvents.recipes((event) => {
                     }
                 }
             ],
-            id: `${id_prefix}summon_whirlisprig`
+            id: `${id_prefix}generate_aura_at_tree_of_life`
         }
     ];
 
@@ -226,37 +253,3 @@ ServerEvents.recipes((event) => {
         event.custom(recipe).id(recipe.id);
     });
 });
-
-function isOceanHasWaterWithChance(chance) {
-    let condition = [
-        {
-            type: 'and',
-            contextual: [
-                { type: 'location', predicate: { 'lychee:biome_tag': 'is_ocean' } },
-                { type: 'location', predicate: { position: { y: { min: 0, max: 63 } } } },
-                { type: 'chance', chance: chance },
-                {
-                    type: 'location',
-                    offsetX: -1,
-                    predicate: { block: { blocks: ['minecraft:water'] } }
-                },
-                {
-                    type: 'location',
-                    offsetX: 1,
-                    predicate: { block: { blocks: ['minecraft:water'] } }
-                },
-                {
-                    type: 'location',
-                    offsetZ: -1,
-                    predicate: { block: { blocks: ['minecraft:water'] } }
-                },
-                {
-                    type: 'location',
-                    offsetZ: 1,
-                    predicate: { block: { blocks: ['minecraft:water'] } }
-                }
-            ]
-        }
-    ];
-    return condition;
-}

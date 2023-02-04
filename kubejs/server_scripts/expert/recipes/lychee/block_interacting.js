@@ -74,6 +74,85 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}imbuement_chamber`
+        },
+        {
+            item_in: {
+                type: 'forge:nbt',
+                item: 'naturesaura:aura_bottle',
+                nbt: '{stored_type:"naturesaura:overworld"}'
+            },
+            block_in: 'twilightforest:ironwood_block',
+            post: [
+                {
+                    type: 'place',
+                    block: { blocks: ['naturesaura:nature_altar'], state: { nether: 'false' } }
+                },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.respawn_anchor.set_spawn block @p ~ ~ ~',
+                    hide: true
+                },
+                {
+                    type: 'execute',
+                    command: 'particle minecraft:explosion ~ ~ ~',
+                    hide: true
+                },
+                {
+                    type: 'execute',
+                    command: 'particle twilightforest:firefly ~ ~ ~ 1 1 1 1 15',
+                    hide: true
+                }
+            ],
+            contextual: [
+                {
+                    type: 'or',
+                    contextual: [
+                        { type: 'location', predicate: { dimension: 'minecraft:overworld' } },
+                        { type: 'location', predicate: { dimension: 'blue_skies:everdawn' } },
+                        { type: 'location', predicate: { dimension: 'twilightforest:twilight_forest' } }
+                    ]
+                }
+            ],
+            id: `${id_prefix}nature_altar_from_sunlight`
+        },
+        {
+            item_in: {
+                type: 'forge:nbt',
+                item: 'naturesaura:aura_bottle',
+                nbt: '{stored_type:"naturesaura:nether"}'
+            },
+            block_in: 'twilightforest:ironwood_block',
+            post: [
+                {
+                    type: 'place',
+                    block: { blocks: ['naturesaura:nature_altar'], state: { nether: 'true' } }
+                },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.respawn_anchor.set_spawn block @p ~ ~ ~',
+                    hide: true
+                },
+                {
+                    type: 'execute',
+                    command: 'particle minecraft:explosion ~ ~ ~',
+                    hide: true
+                },
+                {
+                    type: 'execute',
+                    command: 'particle twilightforest:firefly ~ ~ ~ 1 1 1 1 15',
+                    hide: true
+                }
+            ],
+            contextual: [
+                {
+                    type: 'or',
+                    contextual: [
+                        { type: 'location', predicate: { dimension: 'minecraft:the_nether' } },
+                        { type: 'location', predicate: { dimension: 'blue_skies:everbright' } }
+                    ]
+                }
+            ],
+            id: `${id_prefix}nature_altar_from_ghosts`
         }
     ];
 

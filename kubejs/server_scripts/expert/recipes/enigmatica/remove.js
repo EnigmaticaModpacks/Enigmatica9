@@ -27,8 +27,11 @@ ServerEvents.recipes((event) => {
         { id: 'ars_nouveau:starbuncle_charm' },
 
         { id: 'naturesaura:tree_ritual/ore_spawn_powder' },
+        { id: 'naturesaura:tree_ritual/nature_altar' },
         { id: 'naturesaura:gold_fiber' },
         { id: 'naturesaura:wood_stand' },
+
+        { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },
 
         { id: 'thermal:enderium_dust_2' },
         { id: 'thermal:lumium_dust_4' },
