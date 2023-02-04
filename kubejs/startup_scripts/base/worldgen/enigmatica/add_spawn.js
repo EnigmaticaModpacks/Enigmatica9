@@ -45,8 +45,6 @@ WorldgenEvents.add((event) => {
     ];
 
     spawns.forEach((spawn) => {
-        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-
         event.addSpawn((properties) => {
             properties.category = spawn.category;
             properties.entity = spawn.entity;
