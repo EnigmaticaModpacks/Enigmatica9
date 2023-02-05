@@ -245,6 +245,31 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}generate_aura_at_tree_of_life`
+        },
+        // Remove a small amount of Aura randomly while a Dimensional Mineshaft is running.
+        {
+            block_in: { blocks: ['occultism:dimensional_mineshaft'] },
+            post: [
+                {
+                    type: 'execute',
+                    command:
+                        'execute if block ~ ~ ~ occultism:dimensional_mineshaft{inputHandler:{Items:[{Slot:0}]}} run particle minecraft:soul_fire_flame ~ ~ ~ 0.1 0.1 0.1 0.1 5',
+                    hide: true
+                },
+                {
+                    type: 'execute',
+                    command:
+                        'execute if block ~ ~ ~ occultism:dimensional_mineshaft{inputHandler:{Items:[{Slot:0}]}} run naaura remove 10000',
+                    hide: true
+                },
+                {
+                    type: 'execute',
+                    command:
+                        'execute if block ~ ~ ~ occultism:dimensional_mineshaft{inputHandler:{Items:[{Slot:0}]}} run playsound minecraft:block.amethyst_cluster.break block @p ~ ~ ~',
+                    hide: true
+                }
+            ],
+            id: `${id_prefix}dimensional_mineshaft_aura_drain`
         }
     ];
 
