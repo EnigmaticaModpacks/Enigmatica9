@@ -117,7 +117,15 @@ jei.normal.categories.hidden = [];
 jei.expert.items.disabled = [
     'industrialforegoing:washing_factory',
     'industrialforegoing:fermentation_station',
-    'industrialforegoing:fluid_sieving_machine'
+    'industrialforegoing:fluid_sieving_machine',
+    'naturesaura:token_grief',
+    'naturesaura:token_rage',
+    'naturesaura:token_terror',
+    'naturesaura:token_euphoria',
+    'naturesaura:token_sorrow',
+    'naturesaura:token_anger',
+    'naturesaura:token_fear',
+    'naturesaura:token_joy'
 ];
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];

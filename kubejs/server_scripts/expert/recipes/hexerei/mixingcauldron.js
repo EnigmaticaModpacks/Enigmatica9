@@ -9,15 +9,15 @@ ServerEvents.recipes((event) => {
             liquid: { fluid: 'minecraft:water' },
             inputs: [
                 'ars_nouveau:manipulation_essence',
+                'twilightforest:liveroot',
+                'twilightforest:liveroot',
+                'twilightforest:liveroot',
+                '#forge:raw_ores/iron',
                 'naturesaura:gold_powder',
-                '#forge:raw_ores/iron',
-                'twilightforest:liveroot',
-                '#forge:raw_ores/iron',
-                'twilightforest:liveroot',
-                '#forge:raw_ores/iron',
+                'naturesaura:gold_powder',
                 'naturesaura:gold_powder'
             ],
-            output: Item.of('twilightforest:raw_ironwood', 3),
+            output: 'twilightforest:raw_ironwood',
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 1000,
             heatRequirement: 'heated',
@@ -27,19 +27,37 @@ ServerEvents.recipes((event) => {
             liquid: { fluid: 'minecraft:water' },
             inputs: [
                 'minecraft:calcite',
-                'hexerei:dried_mugwort_leaves',
                 'hexerei:dried_sage',
+                'hexerei:dried_mugwort_leaves',
                 'hexerei:dried_sage',
                 'minecraft:calcite',
                 'hexerei:dried_sage',
-                'hexerei:dried_sage',
-                'hexerei:dried_mugwort_leaves'
+                'hexerei:dried_mugwort_leaves',
+                'hexerei:dried_sage'
             ],
-            output: Item.of('occultism:chalk_white_impure', 4),
+            output: 'occultism:chalk_white',
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 1000,
             heatRequirement: 'heated',
-            id: `${id_prefix}chalk_white_impure`
+            id: `${id_prefix}chalk_white`
+        },
+        {
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:knowledge' } },
+            inputs: [
+                'minecraft:calcite',
+                'naturesaura:gold_powder',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_powder',
+                'minecraft:calcite',
+                'naturesaura:gold_powder',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_powder'
+            ],
+            output: 'occultism:chalk_gold',
+            liquidOutput: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:knowledge' } },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}chalk_gold`
         }
     ];
 

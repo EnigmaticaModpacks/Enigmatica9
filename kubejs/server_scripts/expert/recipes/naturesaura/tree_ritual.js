@@ -8,20 +8,20 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            output: '8x twilightforest:ironwood_ingot',
+            output: 'naturesaura:offering_table',
             ingredients: [
-                'twilightforest:raw_ironwood',
-                'twilightforest:raw_ironwood',
-                'twilightforest:raw_ironwood',
-                'twilightforest:raw_ironwood',
-                'ars_nouveau:earth_essence',
-                'ars_nouveau:fire_essence',
-                'ars_nouveau:earth_essence',
-                'ars_nouveau:fire_essence'
+                'naturesaura:infused_stone',
+                'create:andesite_casing',
+                '#forge:gems/source',
+                '#forge:gems/source',
+                'naturesaura:infused_stone',
+                'create:andesite_casing',
+                'naturesaura:infused_stone',
+                'create:andesite_casing'
             ],
             time: 5 * time_multiplier,
-            sapling: 'quark:red_blossom_sapling',
-            id: `${id_prefix}ironwood_ingot`
+            sapling: 'ars_nouveau:purple_archwood_sapling',
+            id: `${id_prefix}offering_table`
         },
         {
             output: 'ars_nouveau:blue_archwood_sapling',
@@ -32,7 +32,7 @@ ServerEvents.recipes((event) => {
                 'minecraft:water_bucket'
             ],
             time: 5 * time_multiplier,
-            sapling: 'twilightforest:canopy_sapling',
+            sapling: 'quark:blue_blossom_sapling',
             id: `${id_prefix}blue_archwood_sapling`
         },
         {
@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
                 'twilightforest:raven_feather'
             ],
             time: 5 * time_multiplier,
-            sapling: 'twilightforest:canopy_sapling',
+            sapling: 'quark:lavender_blossom_sapling',
             id: `${id_prefix}purple_archwood_sapling`
         },
         {
@@ -56,7 +56,7 @@ ServerEvents.recipes((event) => {
                 'twilightforest:cicada'
             ],
             time: 5 * time_multiplier,
-            sapling: 'twilightforest:canopy_sapling',
+            sapling: 'quark:yellow_blossom_sapling',
             id: `${id_prefix}green_archwood_sapling`
         },
         {
@@ -68,7 +68,7 @@ ServerEvents.recipes((event) => {
                 'minecraft:lava_bucket'
             ],
             time: 5 * time_multiplier,
-            sapling: 'twilightforest:canopy_sapling',
+            sapling: 'quark:red_blossom_sapling',
             id: `${id_prefix}red_archwood_sapling`
         },
         {
@@ -80,7 +80,7 @@ ServerEvents.recipes((event) => {
                 'twilightforest:firefly'
             ],
             time: 5 * time_multiplier,
-            sapling: 'twilightforest:canopy_sapling',
+            sapling: 'quark:orange_blossom_sapling',
             id: `${id_prefix}yellow_archwood_sapling`
         }
         /*

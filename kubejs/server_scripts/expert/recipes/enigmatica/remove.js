@@ -27,10 +27,14 @@ ServerEvents.recipes((event) => {
         { id: 'ars_nouveau:wixie_charm' },
         { id: 'ars_nouveau:starbuncle_charm' },
 
+        { id: 'create:crafting/kinetics/white_sail' },
+
         { id: 'naturesaura:tree_ritual/ore_spawn_powder' },
         { id: 'naturesaura:tree_ritual/nature_altar' },
+        { id: 'naturesaura:altar/infused_stone' },
         { id: 'naturesaura:gold_fiber' },
         { id: 'naturesaura:wood_stand' },
+        { id: 'naturesaura:offering_table' },
 
         { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },
 
@@ -49,7 +53,8 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:fermentation_station' },
         { id: 'industrialforegoing:fluid_sieving_machine' },
 
-        { id: 'occultism:crafting/chalk_white_impure' },
+        { id: /chalk/, mod: 'occultism' },
+        { id: /token_/, mod: 'naturesaura' },
 
         // Disable Ore Processing
 

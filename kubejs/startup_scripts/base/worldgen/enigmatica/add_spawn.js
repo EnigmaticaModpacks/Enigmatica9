@@ -36,6 +36,20 @@ WorldgenEvents.add((event) => {
         },
         {
             category: 'creature',
+            entity: 'cnb:sporeling',
+            biomes: [
+                'twilightforest:spooky_forest',
+                'twilightforest:swamp',
+                'twilightforest:mushroom_forest',
+                'twilightforest:dense_mushroom_forest',
+                'twilightforest:enchanted_forest'
+            ],
+            minCount: 2,
+            maxCount: 4,
+            weight: 5
+        },
+        {
+            category: 'creature',
             entity: 'minecraft:turtle',
             biomes: ['#minecraft:is_beach', '#minecraft:is_ocean'],
             minCount: 1,
