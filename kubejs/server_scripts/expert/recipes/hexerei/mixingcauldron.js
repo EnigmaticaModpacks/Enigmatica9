@@ -58,6 +58,24 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: `${id_prefix}chalk_gold`
+        },
+        {
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:harming' } },
+            inputs: [
+                'minecraft:flint',
+                'ars_nouveau:sourcestone',
+                'minecraft:flint',
+                'ars_nouveau:sourcestone',
+                'minecraft:flint',
+                'ars_nouveau:sourcestone',
+                'minecraft:flint',
+                'ars_nouveau:sourcestone'
+            ],
+            output: 'hexerei:blood_sigil',
+            liquidOutput: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:harming' } },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}blood_sigil`
         }
     ];
 

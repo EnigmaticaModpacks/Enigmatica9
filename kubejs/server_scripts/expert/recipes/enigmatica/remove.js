@@ -45,8 +45,9 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:bronze_dust_4' },
 
         { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
-        { id: 'hexerei:mixing_cauldron' },
         { id: 'hexerei:willow_broom_from_mixing_cauldron' },
+        { id: 'hexerei:blood_sigil_from_mixing_cauldron' },
+        { id: 'hexerei:mixing_cauldron' },
 
         { id: 'immersiveengineering:blastfurnace/steel' },
 
