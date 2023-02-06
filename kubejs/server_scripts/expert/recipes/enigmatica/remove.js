@@ -19,9 +19,13 @@ ServerEvents.recipes((event) => {
         { output: 'create:andesite_alloy' },
 
         { type: 'thermal:smelter_recycle' },
+        { type: 'ae2:charger' },
 
         { id: /immersiveengineering:blastfurnace\/fuel_charcoal/ },
         { id: /immersiveengineering:crafting\/.*_mix/ },
+
+        { id: 'ae2:network/blocks/crystal_processing_charger' },
+        { id: 'ae2:network/blocks/energy_vibration_chamber' },
 
         { id: 'ars_nouveau:imbuement_chamber' },
         { id: 'ars_nouveau:wixie_charm' },
@@ -54,6 +58,9 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:washing_factory' },
         { id: 'industrialforegoing:fermentation_station' },
         { id: 'industrialforegoing:fluid_sieving_machine' },
+
+        { id: 'pneumaticcraft:pressure_chamber_valve' },
+        { id: 'pneumaticcraft:pressure_chamber_glass' },
 
         { id: /chalk/, mod: 'occultism' },
         { id: /token_/, mod: 'naturesaura' },

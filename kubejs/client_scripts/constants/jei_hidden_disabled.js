@@ -125,7 +125,9 @@ jei.expert.items.disabled = [
     'naturesaura:token_sorrow',
     'naturesaura:token_anger',
     'naturesaura:token_fear',
-    'naturesaura:token_joy'
+    'naturesaura:token_joy',
+    'ae2:charger',
+    'ae2:vibration_chamber'
 ];
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];
