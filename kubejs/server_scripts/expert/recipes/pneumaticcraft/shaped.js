@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
                 A: '#forge:ingots/bronze',
                 B: 'pneumaticcraft:compressed_stone_slab'
             },
-            id: `pneumaticcraft:pressure_chamber_wall`
+            id: `pneumaticcraft:pressure_gauge`
         }
     ];
 
