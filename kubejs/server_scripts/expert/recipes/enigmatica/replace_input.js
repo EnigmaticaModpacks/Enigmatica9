@@ -33,6 +33,11 @@ ServerEvents.recipes((event) => {
             filter: { mod: 'create' },
             to_replace: 'minecraft:dried_kelp',
             replace_with: '#forge:leather'
+        },
+        {
+            filter: { id: 'twilightforest:carminite_reactor' },
+            to_replace: '#forge:ores/redstone',
+            replace_with: '#forge:storage_blocks/redstone'
         }
     ];
 
