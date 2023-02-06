@@ -46,6 +46,7 @@ ServerEvents.recipes((event) => {
 
         { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
         { id: 'hexerei:mixing_cauldron' },
+        { id: 'hexerei:willow_broom_from_mixing_cauldron' },
 
         { id: 'immersiveengineering:blastfurnace/steel' },
 

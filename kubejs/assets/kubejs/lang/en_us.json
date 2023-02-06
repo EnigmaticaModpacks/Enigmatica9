@@ -16,6 +16,8 @@
     "recipes.lychee.item_inside.moonstone.condition.description": "Converts around Midnight. Reverts if left out too long...",
     "recipes.lychee.item_inside.filter_filling.condition.description": "Place a Filter in an Ocean Biome under Y63 and above Y0. The Filter must have Water blocks at each of the cardinal direction and will fill slowly over time.",
 
+    "ritual.occultism.sacrifice.ravens": "Raven",
+
     "advancements.occultism.possess_enderman.title": "Ritual: Possess Enderman",
     "advancements.occultism.possess_endermite.title": "Ritual: Possess Endermite",
     "advancements.occultism.possess_ghast.title": "Ritual: Possess Ghast",
@@ -126,6 +128,48 @@
     "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_4.finished": "Ritual of Growth completed.",
     "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_4.interrupted": "Ritual of Growth interrupted.",
     "ritual.enigmatica.occultism/ritual/ritual_tree_of_life_4.conditions": "Not all requirements for this ritual are met.",
+
+    "item.kubejs.ritual_summon_wixie": "Ritual: Summon Wixie",
+    "item.kubejs.ritual_summon_wixie.tooltip": "Call a Wixie from the Coven to assist.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_wixie.started": "Ritual of Calling started.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_wixie.finished": "Ritual of Calling completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_wixie.interrupted": "Ritual of Calling interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_wixie.conditions": "Not all requirements for this ritual are met.",
+
+    "item.kubejs.ritual_summon_wixie_from_shards": "Ritual: Summon Wixie",
+    "item.kubejs.ritual_summon_wixie_from_shards.tooltip": "Call a Wixie from the Coven to assist.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_wixie_from_shards.started": "Ritual of Calling started.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_wixie_from_shards.finished": "Ritual of Calling completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_wixie_from_shards.interrupted": "Ritual of Calling interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_wixie_from_shards.conditions": "Not all requirements for this ritual are met.",
+
+    "item.kubejs.ritual_summon_amethyst_golem": "Ritual: Summon Amethyst Golem",
+    "item.kubejs.ritual_summon_amethyst_golem.tooltip": "Summon a Amethyst Golem.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_amethyst_golem.started": "Ritual of Calling started.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_amethyst_golem.finished": "Ritual of Calling completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_amethyst_golem.interrupted": "Ritual of Calling interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_amethyst_golem.conditions": "Not all requirements for this ritual are met.",
+
+    "item.kubejs.ritual_summon_starbuncle": "Ritual: Summon Starbuncle",
+    "item.kubejs.ritual_summon_starbuncle.tooltip": "Summon a Starbuncle to assist.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_starbuncle.started": "Ritual of Calling started.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_starbuncle.finished": "Ritual of Calling completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_starbuncle.interrupted": "Ritual of Calling interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_starbuncle.conditions": "Not all requirements for this ritual are met.",
+
+    "item.kubejs.ritual_summon_starbuncle_from_shards": "Ritual: Summon Starbuncle",
+    "item.kubejs.ritual_summon_starbuncle_from_shards.tooltip": "Summon a Starbuncle to assist.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_starbuncle_from_shards.started": "Ritual of Calling started.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_starbuncle_from_shards.finished": "Ritual of Calling completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_starbuncle_from_shards.interrupted": "Ritual of Calling interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_starbuncle_from_shards.conditions": "Not all requirements for this ritual are met.",
+
+    "item.kubejs.ritual_craft_willow_broom": "Ritual: Craft Willow Broom",
+    "item.kubejs.ritual_craft_willow_broom.tooltip": "Bind a Raven to obtain the power of flight.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_willow_broom.started": "Ritual of Binding started.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_willow_broom.finished": "Ritual of Binding completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_willow_broom.interrupted": "Ritual of Binding interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_willow_broom.conditions": "Not all requirements for this ritual are met.",
 
     "ritual.enigmatica.occultism/ritual/creeper_gate_small.started": "Started Opening Small Creeper Gateway",
     "ritual.enigmatica.occultism/ritual/creeper_gate_small.finished": "Small Creeper Gateway Opened",

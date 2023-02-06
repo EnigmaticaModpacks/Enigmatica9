@@ -24,7 +24,7 @@ ServerEvents.recipes((event) => {
             output: 'ars_nouveau:wixie_charm',
             activation_item: 'ars_nouveau:conjuration_essence',
             inputs: ['ars_nouveau:wixie_shards'],
-            ritual_dummy: 'kubejs:ritual_summon_wixie',
+            ritual_dummy: 'kubejs:ritual_summon_wixie_from_shards',
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:summon_familiar',
             duration: 10,
@@ -59,11 +59,35 @@ ServerEvents.recipes((event) => {
             output: 'ars_nouveau:starbuncle_charm',
             activation_item: 'ars_nouveau:conjuration_essence',
             inputs: ['ars_nouveau:starbuncle_shards'],
-            ritual_dummy: 'kubejs:ritual_summon_starbuncle',
+            ritual_dummy: 'kubejs:ritual_summon_starbuncle_from_shards',
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:summon_familiar',
             duration: 10,
             id: `${id_prefix}ritual_summon_starbuncle_from_shards`
+        },
+        {
+            output: Item.of(
+                'hexerei:willow_broom',
+                '{Inventory:{Items:[{Count:1b,Slot:0,id:"hexerei:gold_rings"},{Count:1b,Slot:1,id:"hexerei:small_satchel"},{Count:1b,Slot:2,id:"hexerei:broom_brush",tag:{Damage:0}}],Size:30}}'
+            ),
+            activation_item: 'hexerei:blood_bottle',
+            inputs: [
+                'hexerei:gold_rings',
+                'hexerei:broom_brush',
+                'ars_nouveau:air_essence',
+                'hexerei:small_satchel',
+                'hexerei:willow_log',
+                'hexerei:willow_log'
+            ],
+            ritual_dummy: 'kubejs:ritual_craft_willow_broom',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:ravens',
+                display_name: 'ritual.occultism.sacrifice.ravens'
+            },
+            id: `${id_prefix}ritual_craft_willow_broom`
         },
 
         /*
