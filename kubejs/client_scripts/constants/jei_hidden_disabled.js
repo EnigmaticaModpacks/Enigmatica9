@@ -201,7 +201,7 @@ jei.base.gases.hidden = [];
 
 // Normal
 jei.normal.items.disabled = [];
-jei.normal.items.hidden = [];
+jei.normal.items.hidden = ['tree_of_life_1', 'tree_of_life_2', 'tree_of_life_3', 'tree_of_life_4', 'tree_of_life_5'];
 jei.normal.fluids.hidden = [];
 jei.normal.categories.hidden = [];
 jei.normal.fluids.hidden = [];
