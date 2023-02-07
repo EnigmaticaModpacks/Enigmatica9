@@ -61,6 +61,12 @@ ServerEvents.recipes((event) => {
 
         { id: 'pneumaticcraft:pressure_chamber_valve' },
         { id: 'pneumaticcraft:pressure_chamber_glass' },
+        { id: 'pneumaticcraft:thermal_compressor' },
+        { id: 'pneumaticcraft:advanced_air_compressor' },
+        { id: 'pneumaticcraft:advanced_liquid_compressor' },
+        { id: 'pneumaticcraft:liquid_compressor' },
+        { id: 'pneumaticcraft:solar_compressor' },
+        { id: 'pneumaticcraft:manual_compressor' },
 
         { id: /chalk/, mod: 'occultism' },
         { id: /token_/, mod: 'naturesaura' },

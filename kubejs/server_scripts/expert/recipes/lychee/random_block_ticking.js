@@ -249,32 +249,76 @@ ServerEvents.recipes((event) => {
         // Remove a small amount of Aura randomly while a Dimensional Mineshaft is running.
         {
             block_in: { blocks: ['occultism:dimensional_mineshaft'] },
-            post: [
-                {
-                    type: 'execute',
-                    command:
-                        'execute if block ~ ~ ~ occultism:dimensional_mineshaft{inputHandler:{Items:[{Slot:0}]}} run particle minecraft:soul_fire_flame ~ ~ ~ 0.1 0.1 0.1 0.1 5',
-                    hide: true
-                },
-                {
-                    type: 'execute',
-                    command:
-                        'execute if block ~ ~ ~ occultism:dimensional_mineshaft{inputHandler:{Items:[{Slot:0}]}} run naaura remove 10000',
-                    hide: true
-                },
-                {
-                    type: 'execute',
-                    command:
-                        'execute if block ~ ~ ~ occultism:dimensional_mineshaft{inputHandler:{Items:[{Slot:0}]}} run playsound minecraft:block.amethyst_cluster.break block @p ~ ~ ~',
-                    hide: true
+            post: subtractAura(10000),
+            contextual: {
+                type: 'location',
+                predicate: {
+                    block: { blocks: ['occultism:dimensional_mineshaft'], nbt: '{inputHandler:{Items:[{Slot:0}]}}' }
                 }
-            ],
+            },
             id: `${id_prefix}dimensional_mineshaft_aura_drain`
         }
     ];
+
+    for (let i = 0; i <= 10; i++) {
+        if (i == 0) {
+            //contextual: checkBlockState(' pneumaticcraft:air_compressor', '[on=true]'),
+            recipes.push({
+                block_in: { blocks: ['pneumaticcraft:air_compressor'] },
+                post: subtractAura(10000),
+                contextual: {
+                    type: 'location',
+                    predicate: { block: { blocks: ['pneumaticcraft:air_compressor'], state: { on: true } } }
+                },
+                id: `${id_prefix}air_compressor_aura_drain`
+            });
+        } else {
+            recipes.push({
+                block_in: { blocks: ['pneumaticcraft:air_compressor'] },
+                post: subtractAura(10000 * i),
+                contextual: {
+                    type: 'location',
+                    predicate: {
+                        block: {
+                            blocks: ['pneumaticcraft:air_compressor'],
+                            state: { on: true },
+                            nbt: `{UpgradeInventory:{Items:[{id:"pneumaticcraft:speed_upgrade", Count:${i}b}]}}`
+                        }
+                    }
+                },
+                id: `${id_prefix}air_compressor_aura_drain_speed_${i}`
+            });
+        }
+    }
 
     recipes.forEach((recipe) => {
         recipe.type = 'lychee:random_block_ticking';
         event.custom(recipe).id(recipe.id);
     });
 });
+
+function subtractAura(amount) {
+    let post = [
+        {
+            type: 'execute',
+            command: `particle minecraft:soul_fire_flame ~ ~ ~ 0.1 0.1 0.1 0.1 5`,
+            hide: true
+        },
+        {
+            type: 'execute',
+            command: `naaura remove ${amount}`,
+            hide: true
+        },
+        {
+            type: 'execute',
+            command: `playsound minecraft:block.amethyst_cluster.break block @p ~ ~ ~`,
+            hide: true
+        }
+    ];
+    return post;
+}
+
+// checkBlockState(
+//     'pneumaticcraft:air_compressor',
+//     `[on=true]{UpgradeInventory:{Items:[{id:"pneumaticcraft:speed_upgrade", Count:${i}b}]}}`
+// )

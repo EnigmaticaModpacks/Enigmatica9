@@ -127,7 +127,13 @@ jei.expert.items.disabled = [
     'naturesaura:token_fear',
     'naturesaura:token_joy',
     'ae2:charger',
-    'ae2:vibration_chamber'
+    'ae2:vibration_chamber',
+    'pneumaticcraft:thermal_compressor',
+    'pneumaticcraft:advanced_air_compressor',
+    'pneumaticcraft:advanced_liquid_compressor',
+    'pneumaticcraft:liquid_compressor',
+    'pneumaticcraft:solar_compressor',
+    'pneumaticcraft:manual_compressor'
 ];
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];
