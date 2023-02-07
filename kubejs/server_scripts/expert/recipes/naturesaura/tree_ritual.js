@@ -84,7 +84,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}yellow_archwood_sapling`
         },
         {
-            output: 'naturesaura:ancient_sapling',
+            output: '2x naturesaura:ancient_sapling',
             ingredients: [
                 'quark:red_blossom_sapling',
                 'twilightforest:liveroot',
@@ -98,7 +98,7 @@ ServerEvents.recipes((event) => {
             id: `naturesaura:tree_ritual/ancient_sapling`
         },
         {
-            output: 'quark:ancient_sapling',
+            output: '2x quark:ancient_sapling',
             ingredients: [
                 'quark:yellow_blossom_sapling',
                 'twilightforest:liveroot',
