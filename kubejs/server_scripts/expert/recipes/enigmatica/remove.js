@@ -31,6 +31,7 @@ ServerEvents.recipes((event) => {
         { id: 'ars_nouveau:imbuement_chamber' },
         { id: 'ars_nouveau:wixie_charm' },
         { id: 'ars_nouveau:starbuncle_charm' },
+        { id: 'ars_nouveau:magebloom_crop' },
 
         { id: 'create:crafting/kinetics/white_sail' },
 

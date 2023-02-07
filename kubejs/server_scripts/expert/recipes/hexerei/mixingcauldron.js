@@ -76,6 +76,24 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: `${id_prefix}blood_sigil`
+        },
+        {
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:knowledge' } },
+            inputs: [
+                'immersiveengineering:seed',
+                '#forge:gems/source',
+                'hexerei:belladonna_berries',
+                '#forge:gems/source',
+                'hexerei:mandrake_root',
+                '#forge:gems/source',
+                'hexerei:belladonna_berries',
+                '#forge:gems/source'
+            ],
+            output: 'ars_nouveau:magebloom_crop',
+            liquidOutput: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:knowledge' } },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}magebloom_crop`
         }
     ];
 

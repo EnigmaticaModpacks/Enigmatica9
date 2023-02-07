@@ -32,6 +32,15 @@ ServerEvents.recipes((event) => {
                 D: 'minecraft:bricks'
             },
             id: `${id_prefix}blast_furnace`
+        },
+        {
+            output: 'minecraft:compass',
+            pattern: [' A ', 'ABA', ' A '],
+            key: {
+                A: '#forge:ingots/tin',
+                B: '#forge:dusts/redstone'
+            },
+            id: `minecraft:compass`
         }
     ];
 

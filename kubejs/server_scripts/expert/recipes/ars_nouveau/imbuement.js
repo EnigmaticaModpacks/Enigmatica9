@@ -97,6 +97,30 @@ ServerEvents.recipes((event) => {
             ],
             source: 500,
             id: `${id_prefix}logistics_core`
+        },
+        {
+            input: { tag: 'forge:gems/source' },
+            output: 'ars_nouveau:conjuration_essence',
+            count: 1,
+            pedestalItems: [
+                { item: { tag: 'forge:ingots/silver' } },
+                { item: { item: 'ars_nouveau:magebloom_block' } },
+                { item: { item: 'minecraft:compass' } }
+            ],
+            source: 2000,
+            id: `ars_nouveau:imbuement_conjuration_essence`
+        },
+        {
+            input: { tag: 'forge:gems/source' },
+            output: 'ars_nouveau:manipulation_essence',
+            count: 1,
+            pedestalItems: [
+                { item: { tag: 'forge:ingots/copper' } },
+                { item: { item: 'minecraft:redstone_lamp' } },
+                { item: { item: 'minecraft:clock' } }
+            ],
+            source: 2000,
+            id: `ars_nouveau:imbuement_manipulation_essence`
         }
     ];
 

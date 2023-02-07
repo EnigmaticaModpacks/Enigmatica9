@@ -82,6 +82,34 @@ ServerEvents.recipes((event) => {
             time: 5 * time_multiplier,
             sapling: 'quark:orange_blossom_sapling',
             id: `${id_prefix}yellow_archwood_sapling`
+        },
+        {
+            output: 'naturesaura:ancient_sapling',
+            ingredients: [
+                'quark:red_blossom_sapling',
+                'twilightforest:liveroot',
+                'hexerei:belladonna_flowers',
+                'hexerei:sage',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf'
+            ],
+            time: 5 * time_multiplier,
+            sapling: 'quark:red_blossom_sapling',
+            id: `naturesaura:tree_ritual/ancient_sapling`
+        },
+        {
+            output: 'quark:ancient_sapling',
+            ingredients: [
+                'quark:yellow_blossom_sapling',
+                'twilightforest:liveroot',
+                'hexerei:belladonna_flowers',
+                'hexerei:sage',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf'
+            ],
+            time: 5 * time_multiplier,
+            sapling: 'quark:yellow_blossom_sapling',
+            id: `${id_prefix}ancient_sapling`
         }
         /*
             ,

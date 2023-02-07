@@ -53,19 +53,6 @@
 	netherite_trapdoor = true
 	lock_block = true
 	flax = true
-	#Before disabling because other mods dont have such easy configs let me remind you that my ropes can:
-	#- be pulled up and down
-	#- be placed horizontally and walked upon
-	#- be tied to fences, walls and posts, horizontals too
-	#- be found in new mineshaft structures and chests
-	#- have custom break slide and step sound
-	#- negate all fall damage while not slowing your fall
-	#- rope arrows and pulleys
-	#- you can ring attached bells
-	#- mod integration (FD tomatoes)
-	#- can pull the last block attached to them
-	#- walking on one will wobble your screen
-	rope = true
 	pulley_block = true
 	fodder = true
 	crimson_lantern = true
@@ -88,16 +75,29 @@
 	blackstone_tile = true
 	globe_sepia = true
 	present = true
+	silver_trapdoor = true
+	silver_door = true
+	lead_trapdoor = true
+	lead_door = true
 	sugar_cube = true
 	crystal_display = true
 	lapis_bricks = true
 	relayer = true
 	candle_holder = true
 	enderman_head = true
-	silver_trapdoor = true
-	silver_door = true
-	lead_trapdoor = true
-	lead_door = true
+	#Before disabling because other mods dont have such easy configs let me remind you that my ropes can:
+	#- be pulled up and down
+	#- be placed horizontally and walked upon
+	#- be tied to fences, walls and posts, horizontals too
+	#- be found in new mineshaft structures and chests
+	#- have custom break slide and step sound
+	#- negate all fall damage while not slowing your fall
+	#- rope arrows and pulleys
+	#- you can ring attached bells
+	#- mod integration (FD tomatoes)
+	#- can pull the last block attached to them
+	#- walking on one will wobble your screen
+	rope = true
 
 [items]
 	flute = true
@@ -109,9 +109,9 @@
 	shulker_shell = true
 	candy = true
 	wrench = true
-	quiver = true
 	slingshot = true
 	rope_arrow = true
 	bomb = true
 	pancake = true
+	quiver = true
 
