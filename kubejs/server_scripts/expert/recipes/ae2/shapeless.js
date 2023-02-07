@@ -19,6 +19,11 @@ ServerEvents.recipes((event) => {
             output: 'ae2:crafting_terminal',
             inputs: ['pneumaticcraft:logistics_core', '#ae2:illuminated_panel', '#forge:workbenches'],
             id: `${id_prefix}crafting_terminal`
+        },
+        {
+            output: 'ae2:storage_bus',
+            inputs: ['naturesaura:item_distributor', '#ae2:interface'],
+            id: `ae2:network/parts/storage_bus`
         }
     ];
 

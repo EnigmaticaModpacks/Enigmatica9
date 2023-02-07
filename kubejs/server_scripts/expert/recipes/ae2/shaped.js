@@ -36,6 +36,16 @@ ServerEvents.recipes((event) => {
                 D: 'naturesaura:infused_stone'
             },
             id: `ae2:network/parts/panels_semi_dark_monitor`
+        },
+        {
+            output: Item.of('ae2:interface'),
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'ae2:quartz_glass',
+                B: 'naturesaura:infused_stone',
+                C: 'pneumaticcraft:logistics_core'
+            },
+            id: `ae2:network/blocks/interfaces_interface`
         }
     ];
 
