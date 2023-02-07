@@ -134,7 +134,17 @@ jei.expert.items.disabled = [
     'pneumaticcraft:advanced_liquid_compressor',
     'pneumaticcraft:liquid_compressor',
     'pneumaticcraft:solar_compressor',
-    'pneumaticcraft:manual_compressor'
+    'pneumaticcraft:manual_compressor',
+    'ars_nouveau:mycelial_sourcelink',
+    'ars_nouveau:vitalic_sourcelink',
+    'ars_nouveau:volcanic_sourcelink',
+    'ars_nouveau:agronomic_sourcelink',
+    'naturesaura:flower_generator',
+    'naturesaura:oak_generator',
+    'naturesaura:slime_split_generator',
+    'naturesaura:animal_generator',
+    'naturesaura:chorus_generator',
+    'naturesaura:moss_generator'
 ];
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];

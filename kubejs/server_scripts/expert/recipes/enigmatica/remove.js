@@ -32,6 +32,10 @@ ServerEvents.recipes((event) => {
         { id: 'ars_nouveau:wixie_charm' },
         { id: 'ars_nouveau:starbuncle_charm' },
         { id: 'ars_nouveau:magebloom_crop' },
+        { id: 'ars_nouveau:mycelial_sourcelink' },
+        { id: 'ars_nouveau:vitalic_sourcelink' },
+        { id: 'ars_nouveau:volcanic_sourcelink' },
+        { id: 'ars_nouveau:agronomic_sourcelink' },
 
         { id: 'create:crafting/kinetics/white_sail' },
 
@@ -41,6 +45,13 @@ ServerEvents.recipes((event) => {
         { id: 'naturesaura:gold_fiber' },
         { id: 'naturesaura:wood_stand' },
         { id: 'naturesaura:offering_table' },
+
+        { id: 'naturesaura:flower_generator' },
+        { id: 'naturesaura:oak_generator' },
+        { id: 'naturesaura:slime_split_generator' },
+        { id: 'naturesaura:animal_generator' },
+        { id: 'naturesaura:chorus_generator' },
+        { id: 'naturesaura:moss_generator' },
 
         { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },
 

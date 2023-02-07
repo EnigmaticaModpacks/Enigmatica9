@@ -14,6 +14,17 @@ ServerEvents.recipes((event) => {
                 C: 'twilightforest:carminite_reactor'
             },
             id: `naturesaura:rf_converter`
+        },
+        {
+            output: Item.of('naturesaura:potion_generator'),
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'minecraft:nether_bricks',
+                B: '#forge:ingots/electrum',
+                C: 'naturesaura:infused_iron',
+                D: '#forge:storage_blocks/source'
+            },
+            id: `naturesaura:potion_generator`
         }
     ];
 
