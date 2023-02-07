@@ -3,6 +3,6 @@ ServerEvents.tags('item', (event) => {
         return;
     }
 
-    const items = ['naturesaura:infused_iron'];
+    const items = [];
     event.add('lychee:fire_immune', items);
 });
