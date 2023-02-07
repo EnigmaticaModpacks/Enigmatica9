@@ -262,7 +262,6 @@ ServerEvents.recipes((event) => {
 
     for (let i = 0; i <= 10; i++) {
         if (i == 0) {
-            //contextual: checkBlockState(' pneumaticcraft:air_compressor', '[on=true]'),
             recipes.push({
                 block_in: { blocks: ['pneumaticcraft:air_compressor'] },
                 post: subtractAura(10000),
@@ -317,8 +316,3 @@ function subtractAura(amount) {
     ];
     return post;
 }
-
-// checkBlockState(
-//     'pneumaticcraft:air_compressor',
-//     `[on=true]{UpgradeInventory:{Items:[{id:"pneumaticcraft:speed_upgrade", Count:${i}b}]}}`
-// )
