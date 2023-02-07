@@ -62,7 +62,7 @@ ServerEvents.recipes((event) => {
                 Ingredient.of('#forge:string'),
                 Ingredient.of('#forge:string')
             ],
-            output: Item.of('naturesaura:gold_fiber', 4),
+            output: Item.of('naturesaura:gold_fiber', 8),
             grindingTime: 2 * 20,
             id: `${id_prefix}gold_fiber`
         }
