@@ -38,6 +38,16 @@ ServerEvents.recipes((event) => {
             filter: { id: 'twilightforest:carminite_reactor' },
             to_replace: '#forge:ores/redstone',
             replace_with: '#forge:storage_blocks/redstone'
+        },
+        {
+            filter: { mod: 'pneumaticcraft' },
+            to_replace: '#c:glass_blocks',
+            replace_with: 'ae2:quartz_glass'
+        },
+        {
+            filter: { mod: 'pneumaticcraft', id: /wall_lamp/ },
+            to_replace: '#forge:ingots/compressed_iron',
+            replace_with: 'pneumaticcraft:compressed_brick_tile'
         }
     ];
 

@@ -26,6 +26,7 @@ ServerEvents.recipes((event) => {
 
         { id: 'ae2:network/blocks/crystal_processing_charger' },
         { id: 'ae2:network/blocks/energy_vibration_chamber' },
+        { id: 'ae2:network/parts/quartz_fiber_part' },
 
         { id: 'ars_nouveau:imbuement_chamber' },
         { id: 'ars_nouveau:wixie_charm' },
@@ -67,6 +68,7 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:liquid_compressor' },
         { id: 'pneumaticcraft:solar_compressor' },
         { id: 'pneumaticcraft:manual_compressor' },
+        { id: 'pneumaticcraft:logistics_core' },
 
         { id: /chalk/, mod: 'occultism' },
         { id: /token_/, mod: 'naturesaura' },
