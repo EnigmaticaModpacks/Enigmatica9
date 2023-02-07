@@ -115,6 +115,7 @@ jei.normal.categories.hidden = [];
 
 // Expert
 jei.expert.items.disabled = [
+    /computercraft/,
     'industrialforegoing:washing_factory',
     'industrialforegoing:fermentation_station',
     'industrialforegoing:fluid_sieving_machine',
