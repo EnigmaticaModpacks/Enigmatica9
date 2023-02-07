@@ -6,14 +6,22 @@ ServerEvents.recipes((event) => {
     // Altar's Max Fill rate is 300 aura per tick. If a recipe draws faster than this, it'll still work, but will slow the craft down to that rate if a large enough batch goes through.
     const id_prefix = 'enigmatica:expert/naturesaura/altar/';
     const recipes = [
-        // {
-        //     output: 'naturesaura:infused_stone',
-        //     input: 'minecraft:calcite',
-        //     aura_type: 'naturesaura:overworld',
-        //     aura: 7500,
-        //     time: 40,
-        //     id: 'naturesaura:altar/infused_stone'
-        // }
+        {
+            output: 'naturesaura:infused_iron',
+            input: '#forge:ingots/ironwood',
+            aura_type: 'naturesaura:overworld',
+            aura: 15000,
+            time: 80,
+            id: 'naturesaura:altar/infused_iron'
+        },
+        {
+            output: 'naturesaura:infused_iron_block',
+            input: '#forge:storage_blocks/ironwood',
+            aura_type: 'naturesaura:overworld',
+            aura: 135000,
+            time: 700,
+            id: 'naturesaura:altar/infused_iron_block'
+        }
     ];
 
     recipes.forEach((recipe) => {

@@ -37,7 +37,7 @@ ServerEvents.recipes((event) => {
         {
             filter: { id: 'twilightforest:carminite_reactor' },
             to_replace: '#forge:ores/redstone',
-            replace_with: '#forge:storage_blocks/redstone'
+            replace_with: '#forge:storage_blocks/source'
         },
         {
             filter: { mod: 'pneumaticcraft' },

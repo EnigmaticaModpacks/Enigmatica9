@@ -5,14 +5,6 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/lychee/lightning_channeling/';
     const recipes = [
         {
-            item_in: [{ tag: 'forge:ingots/ironwood' }, { item: 'ars_nouveau:earth_essence' }],
-            post: [
-                { type: 'drop_item', item: 'naturesaura:infused_iron', count: 4 },
-                { type: 'drop_xp', xp: 100 }
-            ],
-            id: `${id_prefix}ironwood_ingot`
-        },
-        {
             item_in: [{ tag: 'mekanism:dirty_dusts/iron' }],
             post: [
                 { type: 'drop_item', item: 'mekanism:shard_iron', count: 6 },
