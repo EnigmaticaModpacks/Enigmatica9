@@ -7,9 +7,9 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            ingredients: [{ item: 'minecraft:nether_bricks' }],
-            results: [{ item: 'minecraft:red_nether_bricks' }],
-            id: `${id_prefix}red_nether_bricks`
+            ingredients: [{ item: 'minecraft:nether_brick' }],
+            results: [{ item: 'kubejs:red_nether_brick' }],
+            id: `${id_prefix}red_nether_brick`
         }
     ];
 

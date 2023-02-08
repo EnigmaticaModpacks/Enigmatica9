@@ -13,7 +13,8 @@ StartupEvents.registry('item', (event) => {
         'alchemists_delight',
         'amethyst_dust',
         'aura_leaf',
-        'pig_iron_ingot'
+        'pig_iron_ingot',
+        'red_nether_brick'
     ];
 
     const ritualDummies = [
