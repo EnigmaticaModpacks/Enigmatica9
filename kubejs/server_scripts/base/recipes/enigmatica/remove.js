@@ -121,7 +121,7 @@ ServerEvents.recipes((event) => {
 
         { type: 'immersiveengineering:sawmill' },
         { type: 'immersiveengineering:cloche' },
-        { type: 'immersiveengineering:generated_list' },
+        // { type: 'immersiveengineering:generated_list' },
         { type: 'immersiveengineering:alloy' },
         { type: 'immersiveengineering:squeezer' },
         { type: 'immersiveengineering:fermenter' },
