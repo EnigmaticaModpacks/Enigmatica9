@@ -75,7 +75,7 @@
 		#Shields made from materials often present in a variety of mods
 		[shields.metal.tin_shield]
 			#The amount of health the shield has. One point is half a shield icon (same as hearts.)
-			capacity = 3.0
+			capacity = 4.0
 			#The amount of ticks between each attempt to recharge the shield bar.
 			recharge_rate = 40
 			#The amount of ticks without taking damage before the shield begins to recharge.
@@ -91,7 +91,7 @@
 
 		[shields.metal.silver_shield]
 			#The amount of health the shield has. One point is half a shield icon (same as hearts.)
-			capacity = 4.0
+			capacity = 3.0
 			#The amount of ticks between each attempt to recharge the shield bar.
 			recharge_rate = 20
 			#The amount of ticks without taking damage before the shield begins to recharge.
