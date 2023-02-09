@@ -457,18 +457,18 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_summon_death_tome`
         },
         {
-            output: Item.of('kubejs:aura_leaf', { aura_amount: 20000, aura_max: 1000000 }),
-            activation_item: 'naturesaura:gold_leaf',
+            output: Item.of('kubejs:aura_leaf', { aura_amount: 500000, aura_max: 1250000 }),
+            activation_item: '#twilightforest:trophies',
             inputs: [
-                'ars_nouveau:conjuration_essence',
-                'ars_nouveau:conjuration_essence',
-                'ars_nouveau:conjuration_essence',
-                'ars_nouveau:conjuration_essence'
+                '#forge:ingots/ironwood',
+                '#forge:ingots/ironwood',
+                '#forge:ingots/ironwood',
+                '#forge:ingots/ironwood'
             ],
             ritual_dummy: 'kubejs:aura_leaf',
             ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:possess_foliot',
-            duration: 10,
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 180,
             id: `${id_prefix}ritual_aura_generation`
         },
         {
