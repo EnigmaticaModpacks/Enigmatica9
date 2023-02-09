@@ -32,11 +32,11 @@
 		#Shields made from materials present in Vanilla
 		[shields.vanilla.copper_shield]
 			#The amount of health the shield has. One point is half a shield icon (same as hearts.)
-			capacity = 3.0
+			capacity = 7.0
 			#The amount of ticks between each attempt to recharge the shield bar.
-			recharge_rate = 80
+			recharge_rate = 60
 			#The amount of ticks without taking damage before the shield begins to recharge.
-			recharge_delay = 40
+			recharge_delay = 80
 
 		[shields.vanilla.iron_shield]
 			#The amount of health the shield has. One point is half a shield icon (same as hearts.)
@@ -56,9 +56,9 @@
 
 		[shields.vanilla.diamond_shield]
 			#The amount of health the shield has. One point is half a shield icon (same as hearts.)
-			capacity = 7.0
+			capacity = 6.0
 			#The amount of ticks between each attempt to recharge the shield bar.
-			recharge_rate = 60
+			recharge_rate = 40
 			#The amount of ticks without taking damage before the shield begins to recharge.
 			recharge_delay = 40
 
@@ -79,23 +79,23 @@
 			#The amount of ticks between each attempt to recharge the shield bar.
 			recharge_rate = 40
 			#The amount of ticks without taking damage before the shield begins to recharge.
-			recharge_delay = 40
+			recharge_delay = 60
 
 		[shields.metal.lead_shield]
 			#The amount of health the shield has. One point is half a shield icon (same as hearts.)
-			capacity = 7.0
+			capacity = 5.0
 			#The amount of ticks between each attempt to recharge the shield bar.
-			recharge_rate = 40
+			recharge_rate = 60
 			#The amount of ticks without taking damage before the shield begins to recharge.
-			recharge_delay = 80
+			recharge_delay = 100
 
 		[shields.metal.silver_shield]
 			#The amount of health the shield has. One point is half a shield icon (same as hearts.)
 			capacity = 4.0
 			#The amount of ticks between each attempt to recharge the shield bar.
-			recharge_rate = 40
+			recharge_rate = 20
 			#The amount of ticks without taking damage before the shield begins to recharge.
-			recharge_delay = 20
+			recharge_delay = 30
 
 		[shields.metal.nickel_shield]
 			#The amount of health the shield has. One point is half a shield icon (same as hearts.)
@@ -107,19 +107,19 @@
 
 		[shields.metal.bronze_shield]
 			#The amount of health the shield has. One point is half a shield icon (same as hearts.)
-			capacity = 7.0
+			capacity = 8.0
 			#The amount of ticks between each attempt to recharge the shield bar.
-			recharge_rate = 80
+			recharge_rate = 40
 			#The amount of ticks without taking damage before the shield begins to recharge.
-			recharge_delay = 40
+			recharge_delay = 20
 
 		[shields.metal.electrum_shield]
 			#The amount of health the shield has. One point is half a shield icon (same as hearts.)
-			capacity = 6.0
+			capacity = 5.0
 			#The amount of ticks between each attempt to recharge the shield bar.
 			recharge_rate = 20
 			#The amount of ticks without taking damage before the shield begins to recharge.
-			recharge_delay = 10
+			recharge_delay = 20
 
 		[shields.metal.invar_shield]
 			#The amount of health the shield has. One point is half a shield icon (same as hearts.)
@@ -131,22 +131,22 @@
 
 		[shields.metal.constantan_shield]
 			#The amount of health the shield has. One point is half a shield icon (same as hearts.)
-			capacity = 5.0
+			capacity = 6.0
 			#The amount of ticks between each attempt to recharge the shield bar.
-			recharge_rate = 60
+			recharge_rate = 40
 			#The amount of ticks without taking damage before the shield begins to recharge.
-			recharge_delay = 20
+			recharge_delay = 40
 
 	[shields.mekanism_metals]
 
 		#Shields made from materials present in Mekanism
 		[shields.mekanism_metals.lapis_shield]
 			#The amount of health the shield has. One point is half a shield icon (same as hearts.)
-			capacity = 3.0
+			capacity = 5.0
 			#The amount of ticks between each attempt to recharge the shield bar.
-			recharge_rate = 20
+			recharge_rate = 60
 			#The amount of ticks without taking damage before the shield begins to recharge.
-			recharge_delay = 40
+			recharge_delay = 100
 
 		[shields.mekanism_metals.osmium_shield]
 			#The amount of health the shield has. One point is half a shield icon (same as hearts.)
@@ -250,11 +250,11 @@
 		#Shields made from materials present in the Twilight Forest
 		[shields.twilight_forest.ironwood_shield]
 			#The amount of health the shield has. One point is half a shield icon (same as hearts.)
-			capacity = 5.0
+			capacity = 8.0
 			#The amount of ticks between each attempt to recharge the shield bar.
 			recharge_rate = 40
 			#The amount of ticks without taking damage before the shield begins to recharge.
-			recharge_delay = 40
+			recharge_delay = 20
 
 		[shields.twilight_forest.knightmetal_shield]
 			#The amount of health the shield has. One point is half a shield icon (same as hearts.)
@@ -266,11 +266,11 @@
 
 		[shields.twilight_forest.steeleaf_shield]
 			#The amount of health the shield has. One point is half a shield icon (same as hearts.)
-			capacity = 6.0
+			capacity = 7.0
 			#The amount of ticks between each attempt to recharge the shield bar.
-			recharge_rate = 40
+			recharge_rate = 20
 			#The amount of ticks without taking damage before the shield begins to recharge.
-			recharge_delay = 40
+			recharge_delay = 10
 
 		[shields.twilight_forest.firey_shield]
 			#The amount of health the shield has. One point is half a shield icon (same as hearts.)
