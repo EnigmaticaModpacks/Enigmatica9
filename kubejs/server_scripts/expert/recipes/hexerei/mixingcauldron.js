@@ -94,6 +94,78 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: `${id_prefix}magebloom_crop`
+        },
+        {
+            liquid: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
+            },
+            inputs: [
+                '#forge:storage_blocks/source',
+                '#forge:ingots/ironwood',
+                'twilightforest:torchberries',
+                '#forge:ingots/ironwood',
+                'ars_nouveau:ring_of_potential',
+                '#forge:ingots/ironwood',
+                'twilightforest:torchberries',
+                '#forge:ingots/ironwood'
+            ],
+            output: 'superiorshields:ironwood_shield',
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}ironwood_shield`
+        },
+        {
+            liquid: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
+            },
+            inputs: [
+                '#forge:storage_blocks/source',
+                '#forge:ingots/steeleaf',
+                'twilightforest:firefly',
+                '#forge:ingots/steeleaf',
+                'ars_nouveau:ring_of_potential',
+                '#forge:ingots/steeleaf',
+                'twilightforest:firefly',
+                '#forge:ingots/steeleaf'
+            ],
+            output: 'superiorshields:steeleaf_shield',
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}steeleaf_shield`
+        },
+        {
+            liquid: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
+            },
+            inputs: [
+                '#forge:storage_blocks/source',
+                '#forge:ingots/knightmetal',
+                'twilightforest:knightmetal_ring',
+                '#forge:ingots/knightmetal',
+                'ars_nouveau:ring_of_potential',
+                '#forge:ingots/knightmetal',
+                'twilightforest:knightmetal_ring',
+                '#forge:ingots/knightmetal'
+            ],
+            output: 'superiorshields:knightmetal_shield',
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}knightmetal_shield`
         }
     ];
 

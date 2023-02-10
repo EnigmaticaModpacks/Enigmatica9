@@ -144,7 +144,25 @@ jei.expert.items.disabled = [
     'naturesaura:slime_split_generator',
     'naturesaura:animal_generator',
     'naturesaura:chorus_generator',
-    'naturesaura:moss_generator'
+    'naturesaura:moss_generator',
+    'superiorshields:engineers_shield',
+    'superiorshields:electric_shield',
+    'superiorshields:fiery_shield',
+    'superiorshields:netherite_shield',
+    'superiorshields:diamond_shield',
+    'superiorshields:lapis_shield',
+    'superiorshields:refined_obsidian_shield',
+    'superiorshields:refined_glowstone_shield',
+    'superiorshields:osmium_shield',
+    'superiorshields:nickel_shield',
+    'superiorshields:silver_shield',
+    'superiorshields:lead_shield',
+    'superiorshields:tin_shield',
+    'superiorshields:golden_shield',
+    'superiorshields:copper_shield',
+    'superiorshields:iron_shield',
+    'superiorshields:steel_shield',
+    'superiorshields:invar_shield'
 ];
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];

@@ -12,6 +12,7 @@ ServerEvents.recipes((event) => {
         // }
 
         { mod: 'computercraft' },
+        { mod: 'superiorshields' },
         { output: 'twilightforest:ironwood_ingot' },
         { output: 'twilightforest:raw_ironwood' },
         { output: 'minecraft:blast_furnace' },
