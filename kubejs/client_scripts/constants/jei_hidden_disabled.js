@@ -162,7 +162,9 @@ jei.expert.items.disabled = [
     'superiorshields:copper_shield',
     'superiorshields:iron_shield',
     'superiorshields:steel_shield',
-    'superiorshields:invar_shield'
+    'superiorshields:invar_shield',
+    'constructionwand:stone_wand',
+    'constructionwand:iron_wand'
 ];
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];

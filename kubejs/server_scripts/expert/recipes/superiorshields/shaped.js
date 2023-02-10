@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/hexerei/shaped/';
+    const id_prefix = 'enigmatica:expert/superiorshields/shaped/';
 
     const recipes = [
         {

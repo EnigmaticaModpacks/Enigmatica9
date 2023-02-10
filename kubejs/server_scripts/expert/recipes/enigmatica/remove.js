@@ -38,7 +38,11 @@ ServerEvents.recipes((event) => {
         { id: 'ars_nouveau:volcanic_sourcelink' },
         { id: 'ars_nouveau:agronomic_sourcelink' },
 
+        { id: 'constructionwand:stone_wand' },
+        { id: 'constructionwand:iron_wand' },
+
         { id: 'create:crafting/kinetics/white_sail' },
+        { id: 'create:mechanical_crafting/wand_of_symmetry' },
 
         { id: 'naturesaura:tree_ritual/ore_spawn_powder' },
         { id: 'naturesaura:tree_ritual/nature_altar' },
