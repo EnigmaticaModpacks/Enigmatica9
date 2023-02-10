@@ -54,5 +54,3 @@ ServerEvents.genericLootTables((event) => {
         });
     });
 });
-
-// Item.of('minecraft:bundle', '{Items:[{Count:3b,id:"occultism:datura_seeds"},{Count:3b,id:"minecraft:pumpkin_seeds"},{Count:3b,id:"minecraft:beetroot_seeds"},{Count:3b,id:"minecraft:wheat_seeds"},{Count:3b,id:"minecraft:melon_seeds"},{Count:3b,id:"immersiveengineering:seed"},{Count:3b,id:"hexerei:sage_seed"},{Count:3b,id:"hexerei:mandrake_flower"},{Count:3b,id:"hexerei:yellow_dock_bush"},{Count:3b,id:"hexerei:mugwort_bush"},{Count:3b,id:"hexerei:belladonna_flower"},{Count:3b,id:"hexerei:willow_sapling"},{Count:3b,id:"hexerei:mahogany_sapling"},{Count:3b,id:"quark:blue_blossom_sapling"},{Count:3b,id:"quark:lavender_blossom_sapling"},{Count:3b,id:"quark:orange_blossom_sapling"},{Count:3b,id:"quark:pink_blossom_sapling"},{Count:3b,id:"quark:yellow_blossom_sapling"},{Count:3b,id:"quark:red_blossom_sapling"}],display:{Lore:[\'{"text":"It seems whoever summoned this Naga didn\\\'t survive the process...","color":"dark_red"}\'],Name:\'{"text":"Druid\\\'s Herb Pouch","color":"dark_green"}\'}}')
