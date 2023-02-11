@@ -5,6 +5,434 @@ ServerEvents.recipes((event) => {
 
     const id_prefix = 'enigmatica:expert/occultism/ritual/';
     const recipes = [
+        {
+            output: 'ars_nouveau:wixie_charm',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: [
+                'hexerei:witch_helmet',
+                'twilightforest:torchberries',
+                'twilightforest:raven_feather',
+                'twilightforest:torchberries'
+            ],
+            ritual_dummy: 'kubejs:ritual_summon_wixie',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_wixie`
+        },
+        {
+            output: 'ars_nouveau:wixie_charm',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: ['ars_nouveau:wixie_shards'],
+            ritual_dummy: 'kubejs:ritual_summon_wixie_from_shards',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_wixie_from_shards`
+        },
+        {
+            output: 'ars_nouveau:amethyst_golem_charm',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: ['#forge:gems/amethyst', '#forge:gems/carminite', '#forge:gems/amethyst', '#forge:gems/carminite'],
+            ritual_dummy: 'kubejs:ritual_summon_amethyst_golem',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_amethyst_golem`
+        },
+        {
+            output: 'ars_nouveau:starbuncle_charm',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: [
+                '#forge:raw_materials/gold',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf'
+            ],
+            ritual_dummy: 'kubejs:ritual_summon_starbuncle',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_starbuncle`
+        },
+        {
+            output: 'ars_nouveau:starbuncle_charm',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: ['ars_nouveau:starbuncle_shards'],
+            ritual_dummy: 'kubejs:ritual_summon_starbuncle_from_shards',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_starbuncle_from_shards`
+        },
+        {
+            output: Item.of(
+                'hexerei:willow_broom',
+                '{Inventory:{Items:[{Count:1b,Slot:0,id:"hexerei:gold_rings"},{Count:1b,Slot:1,id:"hexerei:small_satchel"},{Count:1b,Slot:2,id:"hexerei:broom_brush",tag:{Damage:0}}],Size:30}}'
+            ),
+            activation_item: 'hexerei:blood_bottle',
+            inputs: [
+                'hexerei:gold_rings',
+                'hexerei:broom_brush',
+                'ars_nouveau:air_essence',
+                'hexerei:small_satchel',
+                'hexerei:willow_log',
+                'hexerei:willow_log'
+            ],
+            ritual_dummy: 'kubejs:ritual_craft_willow_broom',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            entity_to_sacrifice: {
+                tag: 'enigmatica:ravens',
+                display_name: 'ritual.occultism.sacrifice.ravens'
+            },
+            duration: 10,
+            id: `${id_prefix}ritual_craft_willow_broom`
+        },
+        {
+            // Water Breathing
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                '#minecraft:fishes',
+                '#minecraft:fishes',
+                '#minecraft:fishes',
+                '#minecraft:fishes'
+            ],
+            pentacle_id: 'occultism:summon_familiar',
+            entity_to_summon: 'occultism:cthulhu_familiar',
+            ritual_type: 'occultism:familiar',
+            ritual_dummy: 'occultism:ritual_dummy/familiar_cthulhu',
+            duration: 10,
+            id: `occultism:ritual/familiar_cthulhu`
+        },
+        {
+            // Jump Boost
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'minecraft:apple',
+                'minecraft:apple',
+                'minecraft:apple',
+                'minecraft:apple'
+            ],
+            pentacle_id: 'occultism:summon_familiar',
+            entity_to_summon: 'occultism:deer_familiar',
+            ritual_type: 'occultism:familiar',
+            ritual_dummy: 'occultism:ritual_dummy/familiar_deer',
+            duration: 10,
+            id: `occultism:ritual/familiar_deer`
+        },
+        {
+            // Fire Resistance, Attacks Enemies
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'ars_nouveau:fire_essence',
+                'ars_nouveau:fire_essence',
+                'ars_nouveau:fire_essence',
+                'ars_nouveau:fire_essence'
+            ],
+            pentacle_id: 'occultism:summon_familiar',
+            entity_to_summon: 'occultism:devil_familiar',
+            ritual_type: 'occultism:familiar',
+            ritual_dummy: 'occultism:ritual_dummy/familiar_devil',
+            duration: 10,
+            id: `occultism:ritual/familiar_devil`
+        },
+        {
+            // Increases XP gains
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                '#forge:storage_blocks/diamond',
+                '#forge:storage_blocks/gold',
+                '#forge:storage_blocks/emerald',
+                'ars_nouveau:fire_essence'
+            ],
+            pentacle_id: 'occultism:summon_familiar',
+            entity_to_summon: 'occultism:dragon_familiar',
+            ritual_type: 'occultism:familiar',
+            ritual_dummy: 'occultism:ritual_dummy/familiar_dragon',
+            duration: 10,
+            id: `occultism:ritual/familiar_dragon`
+        },
+        {
+            // Prevents other Familiars from dying and heals the Player
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            pentacle_id: 'occultism:summon_familiar',
+            entity_to_summon: 'occultism:fairy_familiar',
+            ritual_type: 'occultism:familiar',
+            ritual_dummy: 'occultism:ritual_dummy/familiar_fairy',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                '#minecraft:small_flowers',
+                '#minecraft:small_flowers',
+                '#minecraft:small_flowers',
+                '#minecraft:small_flowers',
+                'ars_nouveau:fire_essence',
+                'ars_nouveau:water_essence',
+                'ars_nouveau:earth_essence',
+                'ars_nouveau:air_essence'
+            ],
+            duration: 10,
+            id: `occultism:ritual/familiar_fairy`
+        },
+        {
+            // Item Magnet
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            pentacle_id: 'occultism:summon_familiar',
+            entity_to_summon: 'occultism:greedy_familiar',
+            ritual_type: 'occultism:familiar',
+            ritual_dummy: 'occultism:ritual_dummy/familiar_greedy',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                '#forge:ingots/copper',
+                '#forge:ingots/copper',
+                'ars_nouveau:earth_essence',
+                'ars_nouveau:earth_essence'
+            ],
+            duration: 10,
+            id: `occultism:ritual/familiar_greedy`
+        },
+        {
+            // Prevents Player Death, losing a limb for each death prevented.
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            pentacle_id: 'occultism:summon_familiar',
+            entity_to_summon: 'occultism:guardian_familiar',
+            ritual_type: 'occultism:familiar',
+            ritual_dummy: 'occultism:ritual_dummy/familiar_guardian',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                'ars_nouveau:earth_essence',
+                'ars_nouveau:earth_essence'
+            ],
+            duration: 10,
+            id: `occultism:ritual/familiar_guardian`
+        },
+        {
+            // Grants damage buffs against recently killed mobs
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            pentacle_id: 'occultism:summon_familiar',
+            entity_to_summon: 'occultism:headless_familiar',
+            ritual_type: 'occultism:familiar',
+            ritual_dummy: 'occultism:ritual_dummy/familiar_headless',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                '#forge:crops/wheat',
+                'minecraft:hay_block',
+                '#forge:rods/wooden',
+                'minecraft:carved_pumpkin'
+            ],
+            duration: 10,
+            id: `occultism:ritual/familiar_headless`
+        },
+        {
+            // Fights for the Player, grants Dodge effect
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            pentacle_id: 'occultism:summon_familiar',
+            entity_to_summon: 'occultism:mummy_familiar',
+            ritual_type: 'occultism:familiar',
+            ritual_dummy: 'occultism:ritual_dummy/familiar_mummy',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'immersiveengineering:hemp_fabric',
+                'immersiveengineering:hemp_fabric',
+                'immersiveengineering:hemp_fabric',
+                'immersiveengineering:hemp_fabric'
+            ],
+            duration: 10,
+            id: `occultism:ritual/familiar_mummy`
+        },
+        {
+            // Multi-Jump, Jump Boost, Slow Fall
+            output: 'occultism:jei_dummy/none',
+            ritual_type: 'occultism:summon_tamed',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            pentacle_id: 'occultism:summon_familiar',
+            entity_to_summon: 'occultism:otherworld_bird',
+            ritual_type: 'occultism:familiar',
+            ritual_dummy: 'occultism:ritual_dummy/familiar_otherworld_bird',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                '#forge:feathers',
+                '#forge:feathers',
+                'ars_nouveau:air_essence',
+                'ars_nouveau:air_essence'
+            ],
+            duration: 10,
+            id: `occultism:ritual/familiar_otherworld_bird`
+        },
+        {
+            // Just a pet
+            output: 'occultism:jei_dummy/none',
+            ritual_type: 'occultism:summon_with_chance_of_chicken_tamed',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            pentacle_id: 'occultism:summon_familiar',
+            entity_to_summon: 'minecraft:parrot',
+            ritual_type: 'occultism:familiar',
+            ritual_dummy: 'occultism:ritual_dummy/familiar_parrot',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                '#forge:dyes/green',
+                '#forge:dyes/yellow',
+                '#forge:dyes/red',
+                '#forge:dyes/blue',
+                '#forge:feathers'
+            ],
+            duration: 10,
+            id: `occultism:ritual/familiar_parrot`
+        },
+        {
+            // Night Vision
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            pentacle_id: 'occultism:summon_familiar',
+            entity_to_summon: 'occultism:bat_familiar',
+            ritual_type: 'occultism:familiar',
+            ritual_dummy: 'occultism:ritual_dummy/familiar_bat',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'minecraft:golden_carrot',
+                'minecraft:golden_carrot',
+                'minecraft:golden_carrot',
+                'minecraft:golden_carrot'
+            ],
+            duration: 10,
+            id: `occultism:ritual/bat_familiar`
+        },
+        {
+            // Increases wood breaking speed
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            pentacle_id: 'occultism:summon_familiar',
+            entity_to_summon: 'occultism:beaver_familiar',
+            ritual_type: 'occultism:familiar',
+            ritual_dummy: 'occultism:ritual_dummy/familiar_beaver',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                '#minecraft:logs',
+                '#minecraft:logs',
+                '#minecraft:logs',
+                '#minecraft:logs'
+            ],
+            duration: 10,
+            id: `occultism:ritual/beaver_familiar`
+        },
+        {
+            // Attacks enemies and makes them glow
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            pentacle_id: 'occultism:summon_familiar',
+            entity_to_summon: 'occultism:beholder_familiar',
+            ritual_type: 'occultism:familiar',
+            ritual_dummy: 'occultism:ritual_dummy/familiar_beholder',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'minecraft:spider_eye',
+                'minecraft:spider_eye',
+                'minecraft:spider_eye',
+                'minecraft:spider_eye'
+            ],
+            duration: 10,
+            id: `occultism:ritual/beholder_familiar`
+        },
+        {
+            // Repairs Equipmet and upgrades other familiars.
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            pentacle_id: 'occultism:summon_familiar',
+            entity_to_summon: 'occultism:blacksmith_familiar',
+            ritual_type: 'occultism:familiar',
+            ritual_dummy: 'occultism:ritual_dummy/familiar_blacksmith',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'minecraft:anvil',
+                'simplytools:iron_hammer',
+                'minecraft:blast_furnace',
+                'ars_nouveau:fire_essence'
+            ],
+            duration: 10,
+            id: `occultism:ritual/blacksmith_familiar`
+        },
+        {
+            // Rideable Mount
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            pentacle_id: 'occultism:summon_familiar',
+            entity_to_summon: 'occultism:chimera_familiar',
+            ritual_type: 'occultism:familiar',
+            ritual_dummy: 'occultism:ritual_dummy/familiar_chimera',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                '#forge:leather',
+                '#forge:feathers',
+                '#minecraft:wool',
+                '#forge:bones'
+            ],
+            duration: 10,
+            id: `occultism:ritual/chimera_familiar`
+        },
+
         /*
         Custom Summons
         Custom Summon Rituals make use of a dummy item which, 
@@ -29,18 +457,18 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_summon_death_tome`
         },
         {
-            output: Item.of('kubejs:aura_leaf', { aura_amount: 20000, aura_max: 1000000 }),
-            activation_item: 'naturesaura:gold_leaf',
+            output: Item.of('kubejs:aura_leaf', { aura_amount: 500000, aura_max: 1250000 }),
+            activation_item: '#twilightforest:trophies',
             inputs: [
-                'ars_nouveau:conjuration_essence',
-                'ars_nouveau:conjuration_essence',
-                'ars_nouveau:conjuration_essence',
-                'ars_nouveau:conjuration_essence'
+                '#forge:ingots/ironwood',
+                '#forge:ingots/ironwood',
+                '#forge:ingots/ironwood',
+                '#forge:ingots/ironwood'
             ],
             ritual_dummy: 'kubejs:aura_leaf',
             ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:possess_foliot',
-            duration: 10,
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 180,
             id: `${id_prefix}ritual_aura_generation`
         },
         {

@@ -12,20 +12,47 @@ ServerEvents.recipes((event) => {
             post: [
                 {
                     type: 'place',
-                    block: 'thermal:lime_rockwool',
-                    contextual: isOceanHasWaterWithChance(0.1)
+                    block: 'thermal:lime_rockwool'
                 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.water.ambient ambient @p ~ ~ ~',
-                    hide: true,
-                    contextual: isOceanHasWaterWithChance(0.1)
+                    hide: true
                 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.wool.place block @p ~ ~ ~ 0.3 0.1',
-                    hide: true,
-                    contextual: isOceanHasWaterWithChance(0.1)
+                    hide: true
+                }
+            ],
+            contextual: [
+                {
+                    type: 'and',
+                    contextual: [
+                        { type: 'location', predicate: { 'lychee:biome_tag': 'is_ocean' } },
+                        { type: 'location', predicate: { position: { y: { min: 0, max: 63 } } } },
+                        { type: 'chance', chance: 0.1 },
+                        {
+                            type: 'location',
+                            offsetX: -1,
+                            predicate: { block: { blocks: ['minecraft:water'] } }
+                        },
+                        {
+                            type: 'location',
+                            offsetX: 1,
+                            predicate: { block: { blocks: ['minecraft:water'] } }
+                        },
+                        {
+                            type: 'location',
+                            offsetZ: -1,
+                            predicate: { block: { blocks: ['minecraft:water'] } }
+                        },
+                        {
+                            type: 'location',
+                            offsetZ: 1,
+                            predicate: { block: { blocks: ['minecraft:water'] } }
+                        }
+                    ]
                 }
             ],
             id: `${id_prefix}filter_filling`
@@ -217,9 +244,51 @@ ServerEvents.recipes((event) => {
                     }
                 }
             ],
-            id: `${id_prefix}summon_whirlisprig`
+            id: `${id_prefix}generate_aura_at_tree_of_life`
+        },
+        // Remove a small amount of Aura randomly while a Dimensional Mineshaft is running.
+        {
+            block_in: { blocks: ['occultism:dimensional_mineshaft'] },
+            post: subtractAura(10000),
+            contextual: {
+                type: 'location',
+                predicate: {
+                    block: { blocks: ['occultism:dimensional_mineshaft'], nbt: '{inputHandler:{Items:[{Slot:0}]}}' }
+                }
+            },
+            id: `${id_prefix}dimensional_mineshaft_aura_drain`
         }
     ];
+
+    for (let i = 0; i <= 10; i++) {
+        if (i == 0) {
+            recipes.push({
+                block_in: { blocks: ['pneumaticcraft:air_compressor'] },
+                post: subtractAura(10000),
+                contextual: {
+                    type: 'location',
+                    predicate: { block: { blocks: ['pneumaticcraft:air_compressor'], state: { on: true } } }
+                },
+                id: `${id_prefix}air_compressor_aura_drain`
+            });
+        } else {
+            recipes.push({
+                block_in: { blocks: ['pneumaticcraft:air_compressor'] },
+                post: subtractAura(10000 * i),
+                contextual: {
+                    type: 'location',
+                    predicate: {
+                        block: {
+                            blocks: ['pneumaticcraft:air_compressor'],
+                            state: { on: true },
+                            nbt: `{UpgradeInventory:{Items:[{id:"pneumaticcraft:speed_upgrade", Count:${i}b}]}}`
+                        }
+                    }
+                },
+                id: `${id_prefix}air_compressor_aura_drain_speed_${i}`
+            });
+        }
+    }
 
     recipes.forEach((recipe) => {
         recipe.type = 'lychee:random_block_ticking';
@@ -227,36 +296,23 @@ ServerEvents.recipes((event) => {
     });
 });
 
-function isOceanHasWaterWithChance(chance) {
-    let condition = [
+function subtractAura(amount) {
+    let post = [
         {
-            type: 'and',
-            contextual: [
-                { type: 'location', predicate: { 'lychee:biome_tag': 'is_ocean' } },
-                { type: 'location', predicate: { position: { y: { min: 0, max: 63 } } } },
-                { type: 'chance', chance: chance },
-                {
-                    type: 'location',
-                    offsetX: -1,
-                    predicate: { block: { blocks: ['minecraft:water'] } }
-                },
-                {
-                    type: 'location',
-                    offsetX: 1,
-                    predicate: { block: { blocks: ['minecraft:water'] } }
-                },
-                {
-                    type: 'location',
-                    offsetZ: -1,
-                    predicate: { block: { blocks: ['minecraft:water'] } }
-                },
-                {
-                    type: 'location',
-                    offsetZ: 1,
-                    predicate: { block: { blocks: ['minecraft:water'] } }
-                }
-            ]
+            type: 'execute',
+            command: `particle minecraft:soul_fire_flame ~ ~ ~ 0.1 0.1 0.1 0.1 5`,
+            hide: true
+        },
+        {
+            type: 'execute',
+            command: `naaura remove ${amount}`,
+            hide: true
+        },
+        {
+            type: 'execute',
+            command: `playsound minecraft:block.amethyst_cluster.break block @p ~ ~ ~`,
+            hide: true
         }
     ];
-    return condition;
+    return post;
 }

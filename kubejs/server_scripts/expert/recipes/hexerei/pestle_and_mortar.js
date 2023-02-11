@@ -53,6 +53,18 @@ ServerEvents.recipes((event) => {
             output: Item.of(AlmostUnified.getPreferredItemForTag('forge:dusts/constantan'), 4),
             grindingTime: 10 * 20,
             id: `${id_prefix}constantan_dust`
+        },
+        {
+            inputs: [
+                Ingredient.of('#forge:string'),
+                Ingredient.of('#forge:string'),
+                Ingredient.of('twilightforest:firefly'),
+                Ingredient.of('#forge:string'),
+                Ingredient.of('#forge:string')
+            ],
+            output: Item.of('naturesaura:gold_fiber', 8),
+            grindingTime: 2 * 20,
+            id: `${id_prefix}gold_fiber`
         }
     ];
 

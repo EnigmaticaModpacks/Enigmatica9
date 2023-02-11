@@ -225,6 +225,57 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/flawless_budding_quartz`
+        },
+        {
+            hide_in_viewer: true,
+            item_in: { tag: 'forge:tools/knives' },
+            block_in: 'minecraft:pumpkin',
+            post: [
+                { type: 'prevent_default' },
+                {
+                    type: 'place',
+                    block: { blocks: ['minecraft:carved_pumpkin'], state: { facing: 'north' } },
+                    contextual: { type: 'direction', direction: 'north' }
+                },
+                {
+                    type: 'place',
+                    block: { blocks: ['minecraft:carved_pumpkin'], state: { facing: 'south' } },
+                    contextual: { type: 'direction', direction: 'south' }
+                },
+                {
+                    type: 'place',
+                    block: { blocks: ['minecraft:carved_pumpkin'], state: { facing: 'east' } },
+                    contextual: { type: 'direction', direction: 'east' }
+                },
+                {
+                    type: 'place',
+                    block: { blocks: ['minecraft:carved_pumpkin'], state: { facing: 'west' } },
+                    contextual: { type: 'direction', direction: 'west' }
+                },
+                {
+                    type: 'place',
+                    block: { blocks: ['minecraft:carved_pumpkin'], state: { facing: 'north' } },
+                    contextual: { type: 'direction', direction: 'up' }
+                },
+                {
+                    type: 'place',
+                    block: { blocks: ['minecraft:carved_pumpkin'], state: { facing: 'south' } },
+                    contextual: { type: 'direction', direction: 'down' }
+                },
+                { type: 'damage_item', damage: 1 },
+                { type: 'add_item_cooldown', s: 1 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.pumpkin.carve block @p ~ ~ ~',
+                    hide: true
+                },
+                {
+                    type: 'drop_item',
+                    item: 'minecraft:pumpkin_seeds',
+                    count: 4
+                }
+            ],
+            id: `${id_prefix}carved_pumpkin`
         }
     ];
 

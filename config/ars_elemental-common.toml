@@ -41,13 +41,6 @@
 	#Range: 0 ~ 300
 	mermaidQuantityCap = 5
 
-["Spawn and Worldgen"]
-	#How often mages spawn
-	#Range: 0 ~ 200
-	magesSpawnWeight = 0
-	#If true, the wandering mages will target players too, unless they wear the focus of the same school.
-	magesAggro = true
-
 [Misc]
 	#If enabled, flarecannons will simply die and drop the charm, instead of deactivating, if killed by their owner
 	flarecannon_owner_kill = false
@@ -56,4 +49,24 @@
 	#Define the refresh rate of the Squirrel Ritual buff, in ticks.
 	#Range: > 1
 	squirrelRefreshRate = 600
+	#Set to false to disable the lightning crashing often on flashing archwood biome(s).
+	always_thunder = true
+
+["Source cost"]
+	#How much source does the water urn consume.
+	#Range: 0 ~ 10000
+	waterUrnCost = 100
+	#How much source does the slipstream elevator consume.
+	#Range: 0 ~ 1000
+	airElevatorCost = 10
+	#How much source does the bubble elevator consume.
+	#Range: 0 ~ 1000
+	waterElevatorCost = 0
+	#How much source does the magmatic elevator consume.
+	#Range: 0 ~ 1000
+	lavaElevatorCost = 0
+
+[Mobs-Disabled]
+	#If true, the wandering mages will target players too, unless they wear the focus of the same school.
+	magesAggro = true
 

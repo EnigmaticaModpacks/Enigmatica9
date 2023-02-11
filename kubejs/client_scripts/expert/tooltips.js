@@ -24,10 +24,10 @@ ItemEvents.tooltip((event) => {
     .color('#808080') //any hex color
     */
     const recipes = [
-        // {
-        //     items: ['kubejs:altered_recipe_indicator'],
-        //     text: [Text.of('Recipe altered for Enigmatica 9: Expert. Refer to JEI.').gold()]
-        // }
+        {
+            items: ['pneumaticcraft:air_compressor', 'occultism:dimensional_mineshaft'],
+            text: [Text.of('Consumes Aura while in operation.').red()]
+        }
     ];
 
     recipes.forEach((recipe) => {

@@ -65,6 +65,15 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}filter_filling`
+        },
+        // Dummy recipe for block_interacting/mixing_cauldron
+        {
+            type: 'lychee:block_interacting',
+            item_in: { item: 'twilightforest:naga_scale' },
+            block_in: 'minecraft:cauldron',
+            ghost: true,
+            post: [{ type: 'place', block: { blocks: ['hexerei:mixing_cauldron'], state: { gui_render: 'true' } } }],
+            id: `${id_prefix}mixing_cauldron`
         }
     ];
 

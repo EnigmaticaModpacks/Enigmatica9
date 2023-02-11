@@ -13,7 +13,8 @@ StartupEvents.registry('item', (event) => {
         'alchemists_delight',
         'amethyst_dust',
         'aura_leaf',
-        'pig_iron_ingot'
+        'pig_iron_ingot',
+        'red_nether_brick'
     ];
 
     const ritualDummies = [
@@ -24,7 +25,13 @@ StartupEvents.registry('item', (event) => {
         'ritual_tree_of_life_1',
         'ritual_tree_of_life_2',
         'ritual_tree_of_life_3',
-        'ritual_tree_of_life_4'
+        'ritual_tree_of_life_4',
+        'ritual_summon_wixie',
+        'ritual_summon_wixie_from_shards',
+        'ritual_summon_amethyst_golem',
+        'ritual_summon_starbuncle',
+        'ritual_summon_starbuncle_from_shards',
+        'ritual_craft_willow_broom'
     ];
 
     const reusableItemTextures = [

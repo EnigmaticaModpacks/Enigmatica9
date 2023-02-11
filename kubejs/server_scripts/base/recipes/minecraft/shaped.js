@@ -10,6 +10,14 @@ ServerEvents.recipes((event) => {
                 I: '#forge:ingots/iron'
             },
             id: `minecraft:chain`
+        },
+        {
+            output: 'minecraft:red_nether_bricks',
+            pattern: ['AA', 'AA'],
+            key: {
+                A: 'kubejs:red_nether_brick'
+            },
+            id: `${id_prefix}red_nether_bricks`
         }
     ];
 

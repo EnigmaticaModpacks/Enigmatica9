@@ -84,9 +84,6 @@
 		blacklistFluxNetworks = false
 		#How much energy is produced per mB of Hydrogen, also affects Electrolytic Separator usage, Ethylene burn rate and Gas generator energy capacity.
 		HydrogenEnergyDensity = "200"
-		#Burn time for Ethylene (1mB hydrogen + 2*bioFuel/tick*200ticks/100mB * 20x efficiency bonus).
-		#Range: > 1
-		EthyleneBurnTime = 40
 		#Maximum Joules per mB of Steam. Also affects Thermoelectric Boiler.
 		maxEnergyPerSteam = "10"
 
@@ -197,12 +194,36 @@
 		#Heat capacity of Thermal Evaporation Tower layers (increases amount of energy needed to increase temperature).
 		#Range: 1.0 ~ 1000000.0
 		heatCapacity = 100.0
+		#Amount of fluid (mB) that each block of the evaporation plant contributes to the input tank capacity. Max = volume * fluidPerTank
+		#Range: 1 ~ 29826161
+		fluidPerTank = 64000
+		#Amount of output fluid (mB) that the evaporation plant can store.
+		#Range: > 1
+		outputTankCapacity = 10000
 
 	#SPS Settings
 	[general.sps]
-		#How much input gas (polonium) in mB must be processed to make 1 mB of antimatter.
+		#How much input gas (polonium) in mB must be processed to make 1 mB of antimatter. Input tank capacity is 2x this value.
 		#Range: > 1
 		inputPerAntimatter = 1000
 		#Energy needed to process 1 mB of input (inputPerAntimatter * energyPerInput = energy to produce 1 mB of antimatter).
 		energyPerInput = "1000000"
+		#Amount of output gas (mB, antimatter) that the SPS can store.
+		#Range: 1 ~ 9223372036854775807
+		outputTankCapacity = 1000
+
+	#Boiler Settings
+	[general.boiler]
+		#Amount of fluid (mB) that each block of the boiler's water portion contributes to the volume. Max = volume * waterPerTank
+		#Range: 1 ~ 368224
+		waterPerTank = 16000
+		#Amount of steam (mB) that each block of the boiler's steam portion contributes to the volume. Max = volume * steamPerTank
+		#Range: 10 ~ 1581510980256305
+		steamPerTank = 160000
+		#Amount of steam (mB) that each block of the boiler's heated coolant portion contributes to the volume. Max = volume * heatedCoolantPerTank
+		#Range: 1 ~ 1581510980256305
+		heatedCoolantPerTank = 256000
+		#Amount of steam (mB) that each block of the boiler's cooled coolant portion contributes to the volume. Max = volume * cooledCoolantPerTank
+		#Range: 1 ~ 1581510980256305
+		cooledCoolantPerTank = 256000
 

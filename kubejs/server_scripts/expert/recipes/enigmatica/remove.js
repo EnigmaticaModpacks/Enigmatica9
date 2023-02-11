@@ -11,14 +11,54 @@ ServerEvents.recipes((event) => {
         //     id: 'sample'
         // }
 
+        { mod: 'computercraft' },
+        { mod: 'superiorshields' },
         { output: 'twilightforest:ironwood_ingot' },
+        { output: 'twilightforest:raw_ironwood' },
+        { output: 'minecraft:blast_furnace' },
+        { output: 'minecraft:furnace' },
+        { output: 'create:andesite_alloy' },
 
         { type: 'thermal:smelter_recycle' },
+        { type: 'ae2:charger' },
 
         { id: /immersiveengineering:blastfurnace\/fuel_charcoal/ },
         { id: /immersiveengineering:crafting\/.*_mix/ },
 
+        { id: 'ae2:network/blocks/crystal_processing_charger' },
+        { id: 'ae2:network/blocks/energy_vibration_chamber' },
+        { id: 'ae2:network/parts/quartz_fiber_part' },
+
+        { id: 'ars_nouveau:imbuement_chamber' },
+        { id: 'ars_nouveau:wixie_charm' },
+        { id: 'ars_nouveau:starbuncle_charm' },
+        { id: 'ars_nouveau:magebloom_crop' },
+        { id: 'ars_nouveau:mycelial_sourcelink' },
+        { id: 'ars_nouveau:vitalic_sourcelink' },
+        { id: 'ars_nouveau:volcanic_sourcelink' },
+        { id: 'ars_nouveau:agronomic_sourcelink' },
+
+        { id: 'constructionwand:stone_wand' },
+        { id: 'constructionwand:iron_wand' },
+
+        { id: 'create:crafting/kinetics/white_sail' },
+        { id: 'create:mechanical_crafting/wand_of_symmetry' },
+
         { id: 'naturesaura:tree_ritual/ore_spawn_powder' },
+        { id: 'naturesaura:tree_ritual/nature_altar' },
+        { id: 'naturesaura:altar/infused_stone' },
+        { id: 'naturesaura:gold_fiber' },
+        { id: 'naturesaura:wood_stand' },
+        { id: 'naturesaura:offering_table' },
+
+        { id: 'naturesaura:flower_generator' },
+        { id: 'naturesaura:oak_generator' },
+        { id: 'naturesaura:slime_split_generator' },
+        { id: 'naturesaura:animal_generator' },
+        { id: 'naturesaura:chorus_generator' },
+        { id: 'naturesaura:moss_generator' },
+
+        { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },
 
         { id: 'thermal:enderium_dust_2' },
         { id: 'thermal:lumium_dust_4' },
@@ -26,17 +66,37 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:invar_dust_3' },
         { id: 'thermal:bronze_dust_4' },
 
+        { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
+        { id: 'hexerei:willow_broom_from_mixing_cauldron' },
+        { id: 'hexerei:blood_sigil_from_mixing_cauldron' },
+        { id: 'hexerei:mixing_cauldron' },
+
         { id: 'immersiveengineering:blastfurnace/steel' },
 
         { id: 'industrialforegoing:washing_factory' },
         { id: 'industrialforegoing:fermentation_station' },
         { id: 'industrialforegoing:fluid_sieving_machine' },
 
+        { id: 'pneumaticcraft:pressure_chamber_valve' },
+        { id: 'pneumaticcraft:pressure_chamber_glass' },
+        { id: 'pneumaticcraft:thermal_compressor' },
+        { id: 'pneumaticcraft:advanced_air_compressor' },
+        { id: 'pneumaticcraft:advanced_liquid_compressor' },
+        { id: 'pneumaticcraft:liquid_compressor' },
+        { id: 'pneumaticcraft:solar_compressor' },
+        { id: 'pneumaticcraft:manual_compressor' },
+        { id: 'pneumaticcraft:logistics_core' },
+
+        { id: /chalk/, mod: 'occultism' },
+        { id: /token_/, mod: 'naturesaura' },
+
         // Disable Ore Processing
+
         { type: 'minecraft:smelting', output: '#forge:nuggets' },
         { type: 'minecraft:smelting', output: '#forge:ingots' },
         { type: 'minecraft:smelting', output: '#forge:gems' },
         { type: 'minecraft:smelting', output: '#forge:dusts' },
+        { type: 'minecraft:smelting', output: /ingot_from_crushed/ },
 
         // { type: 'minecraft:blasting', input: '#forge:ores' },
         // { type: 'minecraft:blasting', input: '#forge:raw_materials' },
@@ -45,6 +105,7 @@ ServerEvents.recipes((event) => {
         { type: 'minecraft:blasting', output: '#forge:ingots' },
         { type: 'minecraft:blasting', output: '#forge:gems' },
         { type: 'minecraft:blasting', output: '#forge:dusts' },
+        { type: 'minecraft:blasting', output: /ingot_from_crushed/ },
 
         { type: 'create:crushing', id: /_ore$/ },
         { type: 'create:crushing', id: /_recycling$/ },
@@ -79,6 +140,7 @@ ServerEvents.recipes((event) => {
         { id: 'create:splashing/red_sand' },
 
         { id: /hammercrushing/, mod: 'immersiveengineering' },
+        { id: /block_blast/, mod: 'quark' },
 
         { id: /mekanism:processing\/.*\/slurry/ },
         { id: /mekanism:processing\/.*\/crystal/ },

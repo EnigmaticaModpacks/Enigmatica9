@@ -8,6 +8,9 @@ ServerEvents.recipes((event) => {
         //     id: 'sample'
         // }
         { mod: 'gateways' },
+        { output: /pendorite/ },
+        { output: /emeraldite/ },
+        { output: /ametrine/ },
 
         { id: /ars_nouveau:.*_dye/ },
 
@@ -118,7 +121,6 @@ ServerEvents.recipes((event) => {
 
         { type: 'immersiveengineering:sawmill' },
         { type: 'immersiveengineering:cloche' },
-        { type: 'immersiveengineering:generated_list' },
         { type: 'immersiveengineering:alloy' },
         { type: 'immersiveengineering:squeezer' },
         { type: 'immersiveengineering:fermenter' },

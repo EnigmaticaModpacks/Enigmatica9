@@ -32,11 +32,11 @@ ServerEvents.recipes((event) => {
                 'thermal:slime_mushroom_spores',
                 'thermal:slime_mushroom_spores'
             ],
-            output: Item.of('minecraft:slime_ball', 12),
+            output: 'minecraft:slime_block',
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 50,
             heatRequirement: 'heated',
-            id: `${id_prefix}slime_ball_from_spore`
+            id: `${id_prefix}slime_from_spore`
         },
         {
             liquid: { fluid: 'minecraft:water' },
@@ -50,7 +50,7 @@ ServerEvents.recipes((event) => {
                 'thermal:gunpowder_mushroom_spores',
                 'thermal:gunpowder_mushroom_spores'
             ],
-            output: Item.of('minecraft:gunpowder', 12),
+            output: 'thermal:gunpowder_block',
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 50,
             heatRequirement: 'heated',
@@ -68,11 +68,11 @@ ServerEvents.recipes((event) => {
                 'thermal:glowstone_mushroom_spores',
                 'thermal:glowstone_mushroom_spores'
             ],
-            output: Item.of('minecraft:glowstone_dust', 12),
+            output: 'minecraft:glowstone',
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 50,
             heatRequirement: 'heated',
-            id: `${id_prefix}glowstone_dust_from_spore`
+            id: `${id_prefix}glowstone_from_spore`
         },
         {
             liquid: { fluid: 'minecraft:water' },
@@ -86,7 +86,7 @@ ServerEvents.recipes((event) => {
                 'thermal:redstone_mushroom_spores',
                 'thermal:redstone_mushroom_spores'
             ],
-            output: Item.of('minecraft:redstone', 12),
+            output: 'minecraft:redstone_block',
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 50,
             heatRequirement: 'heated',
@@ -104,7 +104,7 @@ ServerEvents.recipes((event) => {
                 '#forge:dusts/niter',
                 '#forge:dusts/niter'
             ],
-            output: Item.of('minecraft:gunpowder', 10),
+            output: 'thermal:gunpowder_block',
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 50,
             heatRequirement: 'heated',
