@@ -16,6 +16,8 @@
 	maxAnimalsAroundPowder = 200
 	#The amount of blocks that can be between two Aura Field Creators for them to be connectable and work together
 	fieldCreatorRange = 24
+	#Blocks that are exept from being fertilized by the plant boost effect. Each entry needs to be formatted as modid:block
+	plantBoostExceptions = []
 
 [features]
 	#If the Aura Imbalance effect of ores spawning in the area if Aura levels are too high should occur

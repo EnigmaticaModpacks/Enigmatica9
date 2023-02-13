@@ -20,6 +20,10 @@
 	#Archwood forest spawn weight
 	#Range: > 0
 	archwoodForest = 2
+	#Inform the player of Dynamic lights once.
+	informLights = true
+	#Should the Wilden Chimera dive bomb destroy blocks?
+	destructiveDiveBomb = true
 
 [drygmy_production]
 	#How much source drygmys consume per generation
