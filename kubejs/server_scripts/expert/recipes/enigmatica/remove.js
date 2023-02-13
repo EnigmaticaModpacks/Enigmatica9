@@ -69,6 +69,7 @@ ServerEvents.recipes((event) => {
         { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
         { id: 'hexerei:willow_broom_from_mixing_cauldron' },
         { id: 'hexerei:blood_sigil_from_mixing_cauldron' },
+        { id: 'hexerei:herb_jar_from_mixing_cauldron' },
         { id: 'hexerei:mixing_cauldron' },
 
         { id: 'immersiveengineering:blastfurnace/steel' },
@@ -86,6 +87,10 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:solar_compressor' },
         { id: 'pneumaticcraft:manual_compressor' },
         { id: 'pneumaticcraft:logistics_core' },
+
+        { id: 'supplementaries:jar' },
+
+        { id: 'thermal:jar_4' },
 
         { id: /chalk/, mod: 'occultism' },
         { id: /token_/, mod: 'naturesaura' },

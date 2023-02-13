@@ -119,6 +119,9 @@ ServerEvents.recipes((event) => {
         { type: 'create:cutting' },
         { type: 'createaddition:liquid_burning' },
 
+        { type: 'farmersdelight:cutting', id: /wood/ },
+        { type: 'farmersdelight:cutting', id: /log/ },
+
         { type: 'immersiveengineering:sawmill' },
         { type: 'immersiveengineering:cloche' },
         { type: 'immersiveengineering:alloy' },
