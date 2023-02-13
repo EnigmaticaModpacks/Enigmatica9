@@ -192,6 +192,7 @@ jei.expert.items.disabled = [
     'mekanismgenerators:reactor_glass',
     'mekanismgenerators:rotational_complex',
     'mekanismgenerators:saturating_condenser',
+    'mekanismgenerators:solar_generator',
     'mekanismgenerators:turbine_casing',
     'mekanismgenerators:turbine_rotor',
     'mekanismgenerators:turbine_valve',
