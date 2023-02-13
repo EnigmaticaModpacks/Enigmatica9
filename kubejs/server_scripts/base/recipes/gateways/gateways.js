@@ -17,6 +17,26 @@ ServerEvents.highPriorityData((event) => {
             waves: [
                 {
                     entities: [
+                        { entity: 'minecraft:blaze' },
+                        { entity: 'minecraft:blaze' },
+                        { entity: 'thermal:basalz' },
+                        { entity: 'thermal:basalz' },
+                        { entity: 'thermal:blitz' },
+                        { entity: 'thermal:blitz' },
+                        { entity: 'thermal:blizz' },
+                        { entity: 'thermal:blizz' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 750,
+                    setup_time: 50
+                },
+                {
+                    entities: [
                         { entity: 'minecraft:husk' },
                         { entity: 'minecraft:husk' },
                         { entity: 'minecraft:husk' },
@@ -63,26 +83,6 @@ ServerEvents.highPriorityData((event) => {
                         { entity: 'twilightforest:snow_guardian' },
                         { entity: 'twilightforest:snow_guardian' },
                         { entity: 'twilightforest:carminite_golem' }
-                    ],
-                    rewards: [
-                        {
-                            type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
-                        }
-                    ],
-                    max_wave_time: 750,
-                    setup_time: 50
-                },
-                {
-                    entities: [
-                        { entity: 'minecraft:blaze' },
-                        { entity: 'minecraft:blaze' },
-                        { entity: 'thermal:basalz' },
-                        { entity: 'thermal:basalz' },
-                        { entity: 'thermal:blitz' },
-                        { entity: 'thermal:blitz' },
-                        { entity: 'thermal:blizz' },
-                        { entity: 'thermal:blizz' }
                     ],
                     rewards: [
                         {

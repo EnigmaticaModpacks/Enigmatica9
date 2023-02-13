@@ -897,7 +897,9 @@
 				""
 				"Bring some supplies along before setting out, as having a quick way back and forth can be very handy. "
 				""
-				"A portal may be built using any type of Sourcestone in a rectangular shape.  Place a filled Source Jar nearby and toss a bound Warp Scroll through the frame to ignite it, linking it to the coordinates from the scroll. Items, mobs, even spells may pass through these portals, though they are incapable of crossing between dimensions. "
+				"A Warp Scroll may be bound to a location via Right-Click and then used again later to return the player to that exact spot. The Scroll is consumed on use, however."
+				""
+				"Alternatively, a portal may be built using any type of Sourcestone in a rectangular shape.  Place a filled Source Jar nearby and toss a bound Warp Scroll through the frame to ignite it, linking it to the coordinates from the scroll. Items, mobs, even spells may pass through these portals, though they are incapable of crossing between dimensions. "
 			]
 			dependencies: ["00000000000003D5"]
 			id: "19C9AC76B4E2B19D"

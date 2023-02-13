@@ -1,0 +1,13 @@
+{
+	"block.create.andesite_belt_funnel": "Andesite Belt Funnel",
+	"block.create.andesite_casing": "Andesite Casing",
+	"block.create.andesite_encased_cogwheel": "Andesite Encased Cogwheel",
+	"block.create.andesite_encased_large_cogwheel": "Andesite Encased Large Cogwheel",
+	"block.create.andesite_encased_shaft": "Andesite Encased Shaft",
+	"block.create.andesite_funnel": "Andesite Funnel",
+	"block.create.andesite_ladder": "Andesite Ladder",
+	"block.create.andesite_tunnel": "Andesite Tunnel",
+	"advancement.create.andesite_alloy.desc": "Obtain some Andesite Alloy, Create's most important resource",
+	"advancement.create.andesite_casing": "The Andesite Age",
+	"advancement.create.andesite_casing.desc": "Apply Andesite Alloy to stripped wood, creating a basic casing for your machines"
+}

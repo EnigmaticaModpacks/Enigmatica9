@@ -7,24 +7,27 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/naturesaura/altar/';
     const recipes = [
         {
-            output: 'naturesaura:infused_stone',
-            input: 'minecraft:calcite',
+            output: 'naturesaura:infused_iron',
+            input: '#forge:ingots/ironwood',
             aura_type: 'naturesaura:overworld',
-            aura: 7500,
-            time: 40,
-            id: 'naturesaura:altar/infused_stone'
+            aura: 15000,
+            time: 80,
+            id: 'naturesaura:altar/infused_iron'
+        },
+        {
+            output: 'naturesaura:infused_iron_block',
+            input: '#forge:storage_blocks/ironwood',
+            aura_type: 'naturesaura:overworld',
+            aura: 135000,
+            time: 700,
+            id: 'naturesaura:altar/infused_iron_block'
         }
     ];
 
     recipes.forEach((recipe) => {
         recipe.type = 'naturesaura:altar';
-
-        // input: { item: 'minecraft:stone' }
         recipe.input = Ingredient.of(recipe.input).toJson();
-
-        //  output: { item: 'naturesaura:infused_stone' },
         recipe.output = Ingredient.of(recipe.output).toJson();
-
         event.custom(recipe).id(recipe.id);
     });
 });

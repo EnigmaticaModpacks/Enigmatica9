@@ -104,6 +104,11 @@ MoreJSEvents.registerPotionBrewing((event) => {
             output: 'apotheosis:knowledge'
         },
         {
+            reagent: 'quark:ancient_fruit',
+            input: 'minecraft:awkward',
+            output: 'apotheosis:knowledge'
+        },
+        {
             reagent: 'ars_nouveau:greater_experience_gem',
             input: 'minecraft:awkward',
             output: 'apotheosis:strong_knowledge'

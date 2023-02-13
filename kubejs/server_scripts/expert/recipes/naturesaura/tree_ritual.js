@@ -3,25 +3,113 @@ ServerEvents.recipes((event) => {
         return;
     }
 
-    const time_multiplier = 10,
-        id_prefix = 'enigmatica:expert/naturesaura/tree_ritual/';
+    const time_multiplier = 10;
+    const id_prefix = 'enigmatica:expert/naturesaura/tree_ritual/';
 
     const recipes = [
         {
-            output: '8x twilightforest:ironwood_ingot',
+            output: 'naturesaura:offering_table',
             ingredients: [
-                'twilightforest:raw_ironwood',
-                'twilightforest:raw_ironwood',
-                'twilightforest:raw_ironwood',
-                'twilightforest:raw_ironwood',
-                'ars_nouveau:earth_essence',
-                'ars_nouveau:fire_essence',
-                'ars_nouveau:earth_essence',
-                'ars_nouveau:fire_essence'
+                'naturesaura:infused_stone',
+                'create:andesite_casing',
+                '#forge:gems/source',
+                '#forge:gems/source',
+                'naturesaura:infused_stone',
+                'create:andesite_casing',
+                'naturesaura:infused_stone',
+                'create:andesite_casing'
+            ],
+            time: 5 * time_multiplier,
+            sapling: 'ars_nouveau:purple_archwood_sapling',
+            id: `${id_prefix}offering_table`
+        },
+        {
+            output: 'ars_nouveau:blue_archwood_sapling',
+            ingredients: [
+                'twilightforest:torchberries',
+                'twilightforest:liveroot',
+                'minecraft:water_bucket',
+                'minecraft:water_bucket'
+            ],
+            time: 5 * time_multiplier,
+            sapling: 'quark:blue_blossom_sapling',
+            id: `${id_prefix}blue_archwood_sapling`
+        },
+        {
+            output: 'ars_nouveau:purple_archwood_sapling',
+            ingredients: [
+                'twilightforest:torchberries',
+                'twilightforest:liveroot',
+                'twilightforest:raven_feather',
+                'twilightforest:raven_feather'
+            ],
+            time: 5 * time_multiplier,
+            sapling: 'quark:lavender_blossom_sapling',
+            id: `${id_prefix}purple_archwood_sapling`
+        },
+        {
+            output: 'ars_nouveau:green_archwood_sapling',
+            ingredients: [
+                'twilightforest:torchberries',
+                'twilightforest:liveroot',
+                'twilightforest:cicada',
+                'twilightforest:cicada'
+            ],
+            time: 5 * time_multiplier,
+            sapling: 'quark:yellow_blossom_sapling',
+            id: `${id_prefix}green_archwood_sapling`
+        },
+        {
+            output: 'ars_nouveau:red_archwood_sapling',
+            ingredients: [
+                'twilightforest:torchberries',
+                'twilightforest:liveroot',
+                'minecraft:lava_bucket',
+                'minecraft:lava_bucket'
             ],
             time: 5 * time_multiplier,
             sapling: 'quark:red_blossom_sapling',
-            id: `${id_prefix}ironwood_ingot`
+            id: `${id_prefix}red_archwood_sapling`
+        },
+        {
+            output: 'ars_elemental:yellow_archwood_sapling',
+            ingredients: [
+                'twilightforest:torchberries',
+                'twilightforest:liveroot',
+                'twilightforest:firefly',
+                'twilightforest:firefly'
+            ],
+            time: 5 * time_multiplier,
+            sapling: 'quark:orange_blossom_sapling',
+            id: `${id_prefix}yellow_archwood_sapling`
+        },
+        {
+            output: '2x naturesaura:ancient_sapling',
+            ingredients: [
+                'quark:red_blossom_sapling',
+                'twilightforest:liveroot',
+                'hexerei:belladonna_flowers',
+                'hexerei:sage',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf'
+            ],
+            time: 5 * time_multiplier,
+            sapling: 'quark:red_blossom_sapling',
+            id: `naturesaura:tree_ritual/ancient_sapling`
+        },
+        {
+            output: '2x quark:ancient_sapling',
+            ingredients: [
+                'quark:yellow_blossom_sapling',
+                'twilightforest:liveroot',
+                'hexerei:belladonna_flowers',
+                'hexerei:sage',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf'
+            ],
+            time: 5 * time_multiplier,
+            sapling: 'quark:yellow_blossom_sapling',
+            id: `${id_prefix}ancient_sapling`
         }
         /*
             ,
