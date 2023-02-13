@@ -26,7 +26,6 @@ ServerEvents.recipes((event) => {
         { id: /immersiveengineering:crafting\/.*_mix/ },
 
         { id: 'ae2:network/blocks/crystal_processing_charger' },
-        { id: 'ae2:network/blocks/energy_vibration_chamber' },
         { id: 'ae2:network/parts/quartz_fiber_part' },
 
         { id: 'ars_nouveau:imbuement_chamber' },
@@ -89,6 +88,39 @@ ServerEvents.recipes((event) => {
 
         { id: /chalk/, mod: 'occultism' },
         { id: /token_/, mod: 'naturesaura' },
+
+        // Disable Power Generation
+
+        { id: 'ae2:network/blocks/energy_vibration_chamber' },
+        { id: 'createaddition:mechanical_crafting/alternator' },
+        { id: 'immersiveengineering:crafting/electric_lantern' },
+        { id: 'immersiveengineering:crafting/transformer' },
+        { id: 'immersiveengineering:crafting/thermoelectric_generator' },
+        { id: 'immersiveengineering:crafting/dynamo' },
+        { id: 'mekanismgenerators:rotational_complex' },
+        { id: 'mekanismgenerators:reactor/glass' },
+        { id: 'mekanismgenerators:saturating_condenser' },
+        { id: 'mekanismgenerators:control_rod_assembly' },
+        { id: 'mekanismgenerators:hohlraum' },
+        { id: 'pneumaticcraft:pneumatic_dynamo' },
+
+        { mod: 'immersiveengineering', id: /capacitor/ },
+        { mod: 'immersiveengineering', id: /_lv/ },
+        { mod: 'immersiveengineering', id: /_mv/ },
+        { mod: 'immersiveengineering', id: /_hv/ },
+        { mod: 'industrialforegoing', id: /mycelial/ },
+        { mod: 'industrialforegoing', id: /generator/ },
+        { mod: 'mekanism', id: /induction/ },
+        { mod: 'mekanism', id: /energy_cube/ },
+        { mod: 'mekanismgenerators', id: /generator\/(?!gas_burning$)/ },
+        { mod: 'mekanismgenerators', id: /turbine/ },
+        { mod: 'mekanismgenerators', id: /fission/ },
+        { mod: 'mekanismgenerators', id: /reactor/ },
+        { mod: 'powah', id: /solar_panel/ },
+        { mod: 'powah', id: /thermo_generator/ },
+        { mod: 'powah', id: /magmator/ },
+        { mod: 'powah', id: /furnator/ },
+        { mod: 'thermal', id: /dynamo/ },
 
         // Disable Ore Processing
 

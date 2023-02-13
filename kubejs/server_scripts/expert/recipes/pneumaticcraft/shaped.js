@@ -42,6 +42,16 @@ ServerEvents.recipes((event) => {
                 B: 'pneumaticcraft:compressed_stone_slab'
             },
             id: `pneumaticcraft:pressure_gauge`
+        },
+        {
+            output: Item.of('pneumaticcraft:thermopneumatic_processing_plant'),
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: 'pneumaticcraft:compressed_stone_slab',
+                B: 'thermal:fluid_cell_frame',
+                C: 'pneumaticcraft:pressure_tube'
+            },
+            id: `pneumaticcraft:thermopneumatic_processing_plant`
         }
     ];
 
