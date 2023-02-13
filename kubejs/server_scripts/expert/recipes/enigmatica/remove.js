@@ -98,16 +98,21 @@ ServerEvents.recipes((event) => {
         // Disable Power Generation
 
         { id: 'ae2:network/blocks/energy_vibration_chamber' },
+
         { id: 'createaddition:mechanical_crafting/alternator' },
+
         { id: 'immersiveengineering:crafting/electric_lantern' },
         { id: 'immersiveengineering:crafting/transformer' },
         { id: 'immersiveengineering:crafting/thermoelectric_generator' },
         { id: 'immersiveengineering:crafting/dynamo' },
+
         { id: 'mekanismgenerators:rotational_complex' },
         { id: 'mekanismgenerators:reactor/glass' },
         { id: 'mekanismgenerators:saturating_condenser' },
         { id: 'mekanismgenerators:control_rod_assembly' },
         { id: 'mekanismgenerators:hohlraum' },
+        { id: 'mekanismgenerators:laser_focus_matrix' },
+
         { id: 'pneumaticcraft:pneumatic_dynamo' },
 
         { mod: 'immersiveengineering', id: /capacitor/ },

@@ -188,6 +188,7 @@ jei.expert.items.disabled = [
     'mekanismgenerators:fusion_reactor_port',
     'mekanismgenerators:heat_generator',
     'mekanismgenerators:hohlraum',
+    'mekanismgenerators:laser_focus_matrix',
     'mekanismgenerators:reactor_glass',
     'mekanismgenerators:rotational_complex',
     'mekanismgenerators:saturating_condenser',
