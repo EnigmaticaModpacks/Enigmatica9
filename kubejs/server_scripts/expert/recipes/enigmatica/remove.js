@@ -24,6 +24,7 @@ ServerEvents.recipes((event) => {
 
         { id: /immersiveengineering:blastfurnace\/fuel_charcoal/ },
         { id: /immersiveengineering:crafting\/.*_mix/ },
+        { id: 'immersiveengineering:crafting/treated_wood_horizontal' },
 
         { id: 'ae2:network/blocks/crystal_processing_charger' },
         { id: 'ae2:network/parts/quartz_fiber_part' },
