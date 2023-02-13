@@ -14,6 +14,24 @@ ServerEvents.recipes((event) => {
                 C: '#forge:rods/wooden'
             },
             id: `immersiveengineering:crafting/hammer`
+        },
+        {
+            output: 'immersiveengineering:watermill',
+            pattern: [' A ', 'ABA', ' A '],
+            key: {
+                A: 'immersiveengineering:waterwheel_segment',
+                B: 'create:shaft'
+            },
+            id: `immersiveengineering:crafting/watermill`
+        },
+        {
+            output: 'immersiveengineering:windmill',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'immersiveengineering:windmill_blade',
+                B: 'create:shaft'
+            },
+            id: `immersiveengineering:crafting/windmill`
         }
     ];
 
