@@ -43,6 +43,20 @@ ServerEvents.recipes((event) => {
 
         { id: 'create:crafting/kinetics/white_sail' },
         { id: 'create:mechanical_crafting/wand_of_symmetry' },
+        { id: 'create:crafting/kinetics/empty_blaze_burner' },
+        { id: 'create:conversion_0' },
+
+        { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
+        { id: 'hexerei:willow_broom_from_mixing_cauldron' },
+        { id: 'hexerei:blood_sigil_from_mixing_cauldron' },
+        { id: 'hexerei:herb_jar_from_mixing_cauldron' },
+        { id: 'hexerei:mixing_cauldron' },
+
+        { id: 'immersiveengineering:blastfurnace/steel' },
+
+        { id: 'industrialforegoing:washing_factory' },
+        { id: 'industrialforegoing:fermentation_station' },
+        { id: 'industrialforegoing:fluid_sieving_machine' },
 
         { id: 'naturesaura:tree_ritual/ore_spawn_powder' },
         { id: 'naturesaura:tree_ritual/nature_altar' },
@@ -59,25 +73,6 @@ ServerEvents.recipes((event) => {
         { id: 'naturesaura:moss_generator' },
 
         { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },
-
-        { id: 'thermal:enderium_dust_2' },
-        { id: 'thermal:lumium_dust_4' },
-        { id: 'thermal:signalum_dust_4' },
-        { id: 'thermal:invar_dust_3' },
-        { id: 'thermal:bronze_dust_4' },
-
-        { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
-        { id: 'hexerei:willow_broom_from_mixing_cauldron' },
-        { id: 'hexerei:blood_sigil_from_mixing_cauldron' },
-        { id: 'hexerei:herb_jar_from_mixing_cauldron' },
-        { id: 'hexerei:mixing_cauldron' },
-
-        { id: 'immersiveengineering:blastfurnace/steel' },
-
-        { id: 'industrialforegoing:washing_factory' },
-        { id: 'industrialforegoing:fermentation_station' },
-        { id: 'industrialforegoing:fluid_sieving_machine' },
-
         { id: 'pneumaticcraft:pressure_chamber_valve' },
         { id: 'pneumaticcraft:pressure_chamber_glass' },
         { id: 'pneumaticcraft:thermal_compressor' },
@@ -90,7 +85,16 @@ ServerEvents.recipes((event) => {
 
         { id: 'supplementaries:jar' },
 
+        { id: 'thermal:enderium_dust_2' },
+        { id: 'thermal:lumium_dust_4' },
+        { id: 'thermal:signalum_dust_4' },
+        { id: 'thermal:invar_dust_3' },
+        { id: 'thermal:bronze_dust_4' },
         { id: 'thermal:jar_4' },
+
+        { id: 'twilightforest:equipment/fiery_ingot_craftin' },
+        { id: 'twilightforest:material/fiery_iron_ingot' },
+        { id: 'twilightforest:material/fiery_iron_ingot_reversed' },
 
         { id: /chalk/, mod: 'occultism' },
         { id: /token_/, mod: 'naturesaura' },

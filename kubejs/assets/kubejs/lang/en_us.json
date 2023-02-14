@@ -17,6 +17,7 @@
     "recipes.lychee.item_inside.filter_filling.condition.description": "Place a Filter in an Ocean Biome under Y63 and above Y0. The Filter must have Water blocks at each of the cardinal direction and will fill slowly over time.",
 
     "ritual.occultism.sacrifice.ravens": "Raven",
+    "ritual.occultism.sacrifice.fire_elementals": "Blaze",
 
     "advancements.occultism.possess_enderman.title": "Ritual: Possess Enderman",
     "advancements.occultism.possess_endermite.title": "Ritual: Possess Endermite",

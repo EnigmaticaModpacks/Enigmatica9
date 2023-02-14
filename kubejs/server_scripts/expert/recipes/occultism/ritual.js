@@ -432,6 +432,29 @@ ServerEvents.recipes((event) => {
             duration: 10,
             id: `occultism:ritual/chimera_familiar`
         },
+        {
+            output: 'create:blaze_burner',
+            activation_item: 'minecraft:nether_bricks',
+            inputs: [
+                '#forge:ingots/fiery',
+                '#forge:ingots/fiery',
+                '#forge:ingots/fiery',
+                '#forge:ingots/fiery',
+                'pneumaticcraft:compressed_brick_tile',
+                'pneumaticcraft:compressed_brick_tile',
+                'pneumaticcraft:compressed_brick_tile',
+                'pneumaticcraft:compressed_brick_tile'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/fire',
+                display_name: 'ritual.occultism.sacrifice.fire_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_blaze_burner',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_blaze_burner`
+        },
 
         /*
         Custom Summons

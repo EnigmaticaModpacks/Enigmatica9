@@ -124,6 +124,7 @@ jei.expert.items.disabled = [
     'ars_nouveau:volcanic_sourcelink',
     'constructionwand:iron_wand',
     'constructionwand:stone_wand',
+    'create:empty_blaze_burner',
     'createaddition:alternator',
     'createaddition:modular_accumulator',
     'immersiveengineering:capacitor_hv',
