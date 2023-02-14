@@ -190,6 +190,24 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: 'tiab:time_in_a_bottle'
+        },
+        {
+            liquid: { fluid: 'minecraft:lava' },
+            inputs: [
+                'ars_nouveau:fire_essence',
+                'hexerei:dried_yellow_dock_flowers',
+                '#forge:dusts/constantan',
+                'hexerei:dried_yellow_dock_flowers',
+                '#forge:storage_blocks/source',
+                'hexerei:dried_yellow_dock_flowers',
+                '#forge:dusts/constantan',
+                'hexerei:dried_yellow_dock_flowers'
+            ],
+            output: 'twilightforest:fiery_block',
+            liquidOutput: { fluid: 'minecraft:lava' },
+            fluidLevelsConsumed: 1000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}fiery_block`
         }
     ];
 

@@ -18,11 +18,11 @@ ServerEvents.recipes((event) => {
             output: 'thermal:fluid_cell_frame',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
-                A: '#forge:ingots/bronze',
+                A: 'thermal:cured_rubber',
                 B: 'ae2:quartz_glass',
-                C: 'thermal:cured_rubber'
+                C: '#forge:gears/bronze'
             },
-            id: `${id_prefix}fluid_cell_frame`
+            id: 'thermal:fluid_cell_frame'
         },
         {
             output: 'thermal:device_tree_extractor',
