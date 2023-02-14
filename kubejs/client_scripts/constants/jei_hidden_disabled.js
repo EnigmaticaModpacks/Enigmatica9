@@ -221,6 +221,7 @@ jei.expert.items.disabled = [
     'pneumaticcraft:pneumatic_dynamo',
     'pneumaticcraft:solar_compressor',
     'pneumaticcraft:thermal_compressor',
+    'pneumaticcraft:spawner_agitator',
     'powah:furnator_basic',
     'powah:furnator_blazing',
     'powah:furnator_hardened',

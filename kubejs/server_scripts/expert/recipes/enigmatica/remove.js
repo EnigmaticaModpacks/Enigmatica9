@@ -82,6 +82,7 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:solar_compressor' },
         { id: 'pneumaticcraft:manual_compressor' },
         { id: 'pneumaticcraft:logistics_core' },
+        { id: 'pneumaticcraft:spawner_agitator' },
 
         { id: 'supplementaries:jar' },
 
@@ -92,7 +93,7 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:bronze_dust_4' },
         { id: 'thermal:jar_4' },
 
-        { id: 'twilightforest:equipment/fiery_ingot_craftin' },
+        { id: 'twilightforest:equipment/fiery_ingot_crafting' },
         { id: 'twilightforest:material/fiery_iron_ingot' },
         { id: 'twilightforest:material/fiery_iron_ingot_reversed' },
 
