@@ -13,6 +13,16 @@ ServerEvents.recipes((event) => {
                 B: '#forge:glass/colorless'
             },
             id: `${id_prefix}jar`
+        },
+        {
+            output: 'thermal:fluid_cell_frame',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:ingots/bronze',
+                B: 'ae2:quartz_glass',
+                C: 'thermal:cured_rubber'
+            },
+            id: `${id_prefix}jar`
         }
     ];
 

@@ -47,6 +47,11 @@
     "book.occultism.dictionary_of_spirits.pentacles.summon_familiar.intro.title": "A Familiar Problem",
     "book.occultism.dictionary_of_spirits.pentacles.summon_familiar.intro.text": "Summon a Familiar.",
 
+    "multiblock.occultism.lesser_binding": "Gythia's Perpetual Geas",
+    "book.occultism.dictionary_of_spirits.pentacles.lesser_binding.name": "Gythia's Perpetual Geas",
+    "book.occultism.dictionary_of_spirits.pentacles.lesser_binding.intro.title": "Getting Even",
+    "book.occultism.dictionary_of_spirits.pentacles.lesser_binding.intro.text": "When you break rules, break 'em good and hard.",
+
     "multiblock.occultism.summon_evil": "Birog's Baleful Binding",
     "book.occultism.dictionary_of_spirits.pentacles.summon_evil.name": "Birog's Baleful Binding",
     "book.occultism.dictionary_of_spirits.pentacles.summon_evil.intro.title": "A Dreadful Affair",
