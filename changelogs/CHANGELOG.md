@@ -1,3 +1,68 @@
+### Enigmatica 9 v1.4.0
+
+_Using Forge-1.19.2-43.2.4_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.4.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.4.0.md)_
+
+**Breaking Changes**
+
+Due to an issue between EveryComp and Macaw's mods and MrCrayfish's Furniture Mod, we've unfortunately had to remove Macaw's and MrCrayfish's mods. We did not want to remove any of those mods, but the modpack would be virtually unplayable with less than 16GB allocated if we hadn't.
+
+**New Mods**
+
+-   [Ars Creo](https://www.curseforge.com/minecraft/mc-mods/ars-creo) (by [baileyholl2](https://www.curseforge.com/members/baileyholl2/projects))
+-   [Better Compatibility Checker](https://www.curseforge.com/minecraft/mc-mods/better-compatibility-checker) (by [Gaz\_](https://www.curseforge.com/members/Gaz_/projects))
+-   [Create Crafts & Additions](https://www.curseforge.com/minecraft/mc-mods/createaddition) (by [MRHminer](https://www.curseforge.com/members/MRHminer/projects))
+-   [Enigmatic Unity](https://www.curseforge.com/minecraft/mc-mods/enigmatic-unity) (by [Darkere](https://www.curseforge.com/members/Darkere/projects))
+-   [ForgeBrainLib](https://www.curseforge.com/minecraft/mc-mods/forgebrainlib) (by [kli_kli](https://www.curseforge.com/members/kli_kli/projects))
+-   [Health Overlay (Forge)](https://www.curseforge.com/minecraft/mc-mods/health-overlay) (by [Terrails](https://www.curseforge.com/members/Terrails/projects))
+-   [Hexerei](https://www.curseforge.com/minecraft/mc-mods/hexerei) (by [JoeFoxe](https://www.curseforge.com/members/JoeFoxe/projects))
+-   [Kiwi 🥝 (Forge)](https://www.curseforge.com/minecraft/mc-mods/kiwi) (by [Snownee\_](https://www.curseforge.com/members/Snownee_/projects))
+-   [Little Contraptions](https://www.curseforge.com/minecraft/mc-mods/little-contraptions) (by [EDToaster](https://www.curseforge.com/members/EDToaster/projects))
+-   [Modular Routers](https://www.curseforge.com/minecraft/mc-mods/modular-routers) (by [desht_08](https://www.curseforge.com/members/desht_08/projects))
+-   [MoreJS](https://www.curseforge.com/minecraft/mc-mods/morejs) (by [Lytho\_](https://www.curseforge.com/members/Lytho_/projects))
+-   [Nomadic Tents](https://www.curseforge.com/minecraft/mc-mods/nomadic-tents) (by [skyjay1](https://www.curseforge.com/members/skyjay1/projects))
+-   [SmartBrainLib (Forge/Fabric/Quilt)](https://www.curseforge.com/minecraft/mc-mods/smartbrainlib) (by [Scimiguy](https://www.curseforge.com/members/Scimiguy/projects))
+-   [StarbuncleMania](https://www.curseforge.com/minecraft/mc-mods/starbunclemania) (by [Alexth99](https://www.curseforge.com/members/Alexth99/projects))
+-   [Sushi Go Crafting](https://www.curseforge.com/minecraft/mc-mods/sushigocrafting) (by [Buuz135](https://www.curseforge.com/members/Buuz135/projects))
+-   [Theurgy](https://www.curseforge.com/minecraft/mc-mods/theurgy) (by [kli_kli](https://www.curseforge.com/members/kli_kli/projects))
+-   [Tool Belt](https://www.curseforge.com/minecraft/mc-mods/tool-belt) (by [gigaherz](https://www.curseforge.com/members/gigaherz/projects))
+-   [Vertical Slabs Compat](https://www.curseforge.com/minecraft/mc-mods/vertical-slabs-compat) (by [MehVahdJukaar](https://www.curseforge.com/members/MehVahdJukaar/projects))
+-   [YUNG's API (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-api) (by [YUNGNICKYOUNG](https://www.curseforge.com/members/YUNGNICKYOUNG/projects))
+-   [YUNG's Better Desert Temples (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-desert-temples) (by [YUNGNICKYOUNG](https://www.curseforge.com/members/YUNGNICKYOUNG/projects))
+-   [YUNG's Better Dungeons (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-dungeons) (by [YUNGNICKYOUNG](https://www.curseforge.com/members/YUNGNICKYOUNG/projects))
+-   [YUNG's Better Mineshafts (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-mineshafts-forge) (by [YUNGNICKYOUNG](https://www.curseforge.com/members/YUNGNICKYOUNG/projects))
+-   [YUNG's Better Ocean Monuments (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-ocean-monuments) (by [YUNGNICKYOUNG](https://www.curseforge.com/members/YUNGNICKYOUNG/projects))
+-   [YUNG's Better Strongholds (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-strongholds) (by [YUNGNICKYOUNG](https://www.curseforge.com/members/YUNGNICKYOUNG/projects))
+-   [YUNG's Better Witch Huts (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts) (by [YUNGNICKYOUNG](https://www.curseforge.com/members/YUNGNICKYOUNG/projects))
+-   [YUNG's Bridges (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-bridges) (by [YUNGNICKYOUNG](https://www.curseforge.com/members/YUNGNICKYOUNG/projects))
+-   [YUNG's Extras (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-extras) (by [YUNGNICKYOUNG](https://www.curseforge.com/members/YUNGNICKYOUNG/projects))
+
+**Removed Mods**
+
+-   [Citadel](https://www.curseforge.com/minecraft/mc-mods/citadel) (by [sbom_xela](https://www.curseforge.com/members/sbom_xela/projects))
+-   [Limited Chunkloading[Forge/Fabric]](https://www.curseforge.com/minecraft/mc-mods/limited-chunkloading) (by [someaddon](https://www.curseforge.com/members/someaddon/projects)) [\#205](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/205)
+-   [Macaw's Bridges](https://www.curseforge.com/minecraft/mc-mods/macaws-bridges) (by [sketch_macaw](https://www.curseforge.com/members/sketch_macaw/projects))
+-   [Macaw's Doors](https://www.curseforge.com/minecraft/mc-mods/macaws-doors) (by [sketch_macaw](https://www.curseforge.com/members/sketch_macaw/projects))
+-   [Macaw's Fences and Walls](https://www.curseforge.com/minecraft/mc-mods/macaws-fences-and-walls) (by [sketch_macaw](https://www.curseforge.com/members/sketch_macaw/projects))
+-   [Macaw's Lights and Lamps](https://www.curseforge.com/minecraft/mc-mods/macaws-lights-and-lamps) (by [sketch_macaw](https://www.curseforge.com/members/sketch_macaw/projects))
+-   [Macaw's Paintings](https://www.curseforge.com/minecraft/mc-mods/macaws-paintings) (by [sketch_macaw](https://www.curseforge.com/members/sketch_macaw/projects))
+-   [Macaw's Roofs](https://www.curseforge.com/minecraft/mc-mods/macaws-roofs) (by [sketch_macaw](https://www.curseforge.com/members/sketch_macaw/projects))
+-   [Macaw's Trapdoors](https://www.curseforge.com/minecraft/mc-mods/macaws-trapdoors) (by [sketch_macaw](https://www.curseforge.com/members/sketch_macaw/projects))
+-   [MrCrayfish's Furniture Mod](https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod) (by [MrCrayfish](https://www.curseforge.com/members/MrCrayfish/projects))
+
+**Improvements**
+
+-   Eccentric Tome should not have the Blue Skies Book [\#212](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/212)
+-   Add a Create-Torque-to-Power Transformer [\#206](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/206)
+
+**Fixed Bugs**
+
+-   Chunk loading doesn't work properly, `limitedchunks` seems to be to blame. [\#205](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/205)
+-   Witch Hazel slabs not craftable [\#180](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/180)
+-   Ancient slabs not craftable [\#173](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/173)
+-   Vanilla crafting recipes for dyes missing [\#153](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/153)
+
+---
+
 ### Enigmatica 9 v1.3.0
 
 _Using Forge-1.19.2-43.1.57_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.3.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.3.0.md)_
