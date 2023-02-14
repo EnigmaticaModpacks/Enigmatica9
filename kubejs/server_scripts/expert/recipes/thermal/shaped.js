@@ -22,7 +22,18 @@ ServerEvents.recipes((event) => {
                 B: 'ae2:quartz_glass',
                 C: 'thermal:cured_rubber'
             },
-            id: `${id_prefix}jar`
+            id: `${id_prefix}fluid_cell_frame`
+        },
+        {
+            output: 'thermal:device_tree_extractor',
+            pattern: [' A ', 'BCB', ' D '],
+            key: {
+                A: 'supplementaries:faucet',
+                B: 'ars_nouveau:earth_essence',
+                C: 'create:andesite_casing',
+                D: 'thermal:jar'
+            },
+            id: 'thermal:device_tree_extractor'
         }
     ];
 
