@@ -1,138 +1,4 @@
 
-#Vanilla tweaks
-[tweaks]
-
-	[tweaks.traders_open_doors]
-		#Allows traders to open doors (because they couldnt aparently)
-		enabled = true
-
-	[tweaks.dispenser_tweaks]
-		#Allows dispensers to use axes on blocks to strip logs and scrape off copper oxidation and wax
-		axe_strip = true
-		#Enables shooting ender pearls with dispensers
-		shoot_ender_pearls = true
-
-	[tweaks.cake_tweaks]
-		#Allows you to place a cake on top of another
-		double_cake = true
-		#Allows eating a cake from every side
-		directional_cake = true
-
-	[tweaks.mob_head_tweaks]
-		#Allows you to place two mob heads on top of each other
-		skull_piles = true
-		#Allows candles to be placed on top of skulls
-		skull_candles = true
-		#Allows placing more than one candle ontop of each skull
-		multiple_candles = true
-
-	[tweaks.hanging_flower_pots]
-		#allows you to place hanging flower pots. Works with any modded pot too
-		enabled = true
-
-	[tweaks.throwable_bricks]
-		#Throw bricks at your foes! Might break glass blocks
-		enabled = true
-
-	[tweaks.lantern_tweaks]
-		#Allow wall lanterns placement
-		enabled = true
-		#Gives high priority to wall lantern placement. Enable to override other wall lanterns placements, disable if it causes issues with other mods that use lower priority block click events
-		high_priority = true
-		#Mod ids of mods that have lantern block that extend the base lantern class but don't look like one
-		mod_blacklist = ["extlights", "betterendforge", "tconstruct", "enigmaticlegacy"]
-		#Allows ceiling lanterns to fall if their support is broken.Additionally if they fall from high enough they will break creating a fire where they land
-		#Allowed Values: ON, OFF, NO_FIRE
-		fallin_lanterns = "ON"
-
-	[tweaks.bells_tweaks]
-		#Ring a bell by clicking on a chain that's connected to it
-		chain_ringing = true
-		#Max chain length that allows a bell to ring
-		#Range: 0 ~ 256
-		chain_length = 16
-
-	[tweaks.placeable_sticks]
-		#Allow placeable sticks
-		sticks = true
-		#Allow placeable blaze rods
-		blaze_rods = true
-
-	[tweaks.placeable_gunpowder]
-		#Allow placeable gunpowder
-		enabled = true
-		#Number of ticks it takes for gunpowder to burn 1 stage (out of 8). Increase to slow it down
-		#Range: 0 ~ 20
-		speed = 2
-		#Age at which it spread to the next gunpowder block. Also affects speed
-		#Range: 0 ~ 8
-		spread_age = 2
-
-	[tweaks.raked_gravel]
-		#allow gravel to be raked with a hoe
-		enabled = true
-
-	[tweaks.bottle_xp]
-		#Allow bottling up xp by using a bottle on an enchanting table
-		enabled = false
-		#bottling health cost
-		#Range: 0 ~ 20
-		cost = 2
-
-	[tweaks.map_tweaks]
-		#Cartographers will sell 'adventurer maps' that will lead to a random vanilla structure (choosen from a thought out preset list).
-		#Best kept disabled if you are adding custom adventurer maps with datapack (check the wiki for more)
-		random_adventurer_maps = true
-		#enables beacons, lodestones, respawn anchors, beds, conduits, portals to be displayed on maps by clicking one of them with a map
-		block_map_markers = true
-
-	[tweaks.ceiling_banners]
-		#Allow banners to be placed on ceilings
-		enabled = true
-
-	[tweaks.placeable_books]
-		#Allow books and enchanted books to be placed on the ground
-		enabled = true
-		#Enchantment power bonus given by normal book piles with 4 books. Piles with less books will have their respective fraction of this total. For reference a vanilla bookshelf provides 1
-		#Range: 0.0 ~ 5.0
-		book_power = 1.0
-		#Enchantment power bonus given by normal book piles with 4 books. Piles with less books will have their respective fraction of this total. For reference a vanilla bookshelf provides 1
-		#Range: 0.0 ~ 5.0
-		enchanted_book_power = 1.334
-		#Allow all books to be placed both vertically and horizontally
-		mixed_books = false
-
-	[tweaks.zombie_horse]
-		#Feed a stack of rotten flesh to a skeleton horse to buff him up to a zombie horse
-		zombie_horse_conversion = true
-		#Amount of rotten flesh needed
-		#Range: 1 ~ 1000
-		rotten_flesh = 64
-		#Allows zombie horses to be ridden underwater
-		rideable_underwater = true
-		#Convert a zombie horse back by feeding it a golden carrot
-		zombie_horse_inverse_conversion = true
-
-	[tweaks.shulker_helmet]
-		#Allows wearing shulker shells
-		enabled = true
-
-#General settings
-[general]
-	#Turn this on to disable any interaction on blocks placed by other players. This affects item shelves, signs, flower pots, and boards. Useful for protected servers. Note that it will affect only blocks placed after this is turned on and such blocks will keep being protected after this option is disabled
-	server_protection = false
-	#Enable Creative Tab
-	creative_tab = false
-	#Set to false to disable custom dispenser behaviors (i.e: filling jars) if for some reason they are causing trouble
-	dispensers = true
-	#Creates a creative tab full of filled jars
-	jar_tab = false
-	#Save generated resources to disk in a 'debug' folder in your game directory. Mainly for debug purposes but can be used to generate assets in all wood types for your mods :0
-	debug_save_dynamic_pack = false
-	#slightly increase this or decrease this number to tweak the red marchant spawn chance. Won't spawn at 0 and will spawn twice as often on 2
-	#Range: 0.0 ~ 10.0
-	red_merchant_spawn_multiplier = 1.0
-
 [redstone]
 	wind_vane = true
 	clock_block = true
@@ -555,4 +421,138 @@
 		stasis_deceleration = 0.9625
 		#Allow enderman to intercept any slingshot projectile
 		unrestricted_enderman_intercept = true
+
+#General settings
+[general]
+	#Enable Creative Tab
+	creative_tab = false
+	#Set to false to disable custom dispenser behaviors (i.e: filling jars) if for some reason they are causing trouble
+	dispensers = true
+	#Creates a creative tab full of filled jars
+	jar_tab = false
+	#Save generated resources to disk in a 'debug' folder in your game directory. Mainly for debug purposes but can be used to generate assets in all wood types for your mods :0
+	debug_save_dynamic_pack = false
+	#Turn this on to disable any interaction on blocks placed by other players. This affects item shelves, signs, flower pots, and boards. Useful for protected servers. Note that it will affect only blocks placed after this is turned on and such blocks will keep being protected after this option is disabled
+	server_protection = false
+	#slightly increase this or decrease this number to tweak the red marchant spawn chance. Won't spawn at 0 and will spawn twice as often on 2
+	#Range: 0.0 ~ 10.0
+	red_merchant_spawn_multiplier = 1.0
+
+#Vanilla tweaks
+[tweaks]
+
+	[tweaks.shulker_helmet]
+		#Allows wearing shulker shells
+		enabled = true
+
+	[tweaks.traders_open_doors]
+		#Allows traders to open doors (because they couldnt aparently)
+		enabled = true
+
+	[tweaks.dispenser_tweaks]
+		#Allows dispensers to use axes on blocks to strip logs and scrape off copper oxidation and wax
+		axe_strip = true
+		#Enables shooting ender pearls with dispensers
+		shoot_ender_pearls = true
+
+	[tweaks.cake_tweaks]
+		#Allows you to place a cake on top of another
+		double_cake = true
+		#Allows eating a cake from every side
+		directional_cake = true
+
+	[tweaks.mob_head_tweaks]
+		#Allows you to place two mob heads on top of each other
+		skull_piles = true
+		#Allows candles to be placed on top of skulls
+		skull_candles = true
+		#Allows placing more than one candle ontop of each skull
+		multiple_candles = true
+
+	[tweaks.hanging_flower_pots]
+		#allows you to place hanging flower pots. Works with any modded pot too
+		enabled = true
+
+	[tweaks.throwable_bricks]
+		#Throw bricks at your foes! Might break glass blocks
+		enabled = true
+
+	[tweaks.lantern_tweaks]
+		#Allow wall lanterns placement
+		enabled = true
+		#Gives high priority to wall lantern placement. Enable to override other wall lanterns placements, disable if it causes issues with other mods that use lower priority block click events
+		high_priority = true
+		#Mod ids of mods that have lantern block that extend the base lantern class but don't look like one
+		mod_blacklist = ["extlights", "betterendforge", "tconstruct", "enigmaticlegacy"]
+		#Allows ceiling lanterns to fall if their support is broken.Additionally if they fall from high enough they will break creating a fire where they land
+		#Allowed Values: ON, OFF, NO_FIRE
+		fallin_lanterns = "ON"
+
+	[tweaks.bells_tweaks]
+		#Ring a bell by clicking on a chain that's connected to it
+		chain_ringing = true
+		#Max chain length that allows a bell to ring
+		#Range: 0 ~ 256
+		chain_length = 16
+
+	[tweaks.placeable_sticks]
+		#Allow placeable sticks
+		sticks = true
+		#Allow placeable blaze rods
+		blaze_rods = true
+
+	[tweaks.placeable_gunpowder]
+		#Allow placeable gunpowder
+		enabled = true
+		#Number of ticks it takes for gunpowder to burn 1 stage (out of 8). Increase to slow it down
+		#Range: 0 ~ 20
+		speed = 2
+		#Age at which it spread to the next gunpowder block. Also affects speed
+		#Range: 0 ~ 8
+		spread_age = 2
+
+	[tweaks.raked_gravel]
+		#allow gravel to be raked with a hoe
+		enabled = true
+
+	[tweaks.bottle_xp]
+		#Allow bottling up xp by using a bottle on an enchanting table
+		enabled = false
+		#bottling health cost
+		#Range: 0 ~ 20
+		cost = 2
+
+	[tweaks.map_tweaks]
+		#Cartographers will sell 'adventurer maps' that will lead to a random vanilla structure (choosen from a thought out preset list).
+		#Best kept disabled if you are adding custom adventurer maps with datapack (check the wiki for more)
+		random_adventurer_maps = true
+		#enables beacons, lodestones, respawn anchors, beds, conduits, portals to be displayed on maps by clicking one of them with a map
+		block_map_markers = true
+
+	[tweaks.ceiling_banners]
+		#Allow banners to be placed on ceilings
+		enabled = true
+
+	[tweaks.placeable_books]
+		#Allow books and enchanted books to be placed on the ground
+		enabled = true
+		#Enchantment power bonus given by normal book piles with 4 books. Piles with less books will have their respective fraction of this total. For reference a vanilla bookshelf provides 1
+		#Range: 0.0 ~ 5.0
+		book_power = 1.0
+		#Enchantment power bonus given by normal book piles with 4 books. Piles with less books will have their respective fraction of this total. For reference a vanilla bookshelf provides 1
+		#Range: 0.0 ~ 5.0
+		enchanted_book_power = 1.334
+		#Allow all books to be placed both vertically and horizontally
+		mixed_books = false
+
+	[tweaks.zombie_horse]
+		#Feed a stack of rotten flesh to a skeleton horse to buff him up to a zombie horse
+		zombie_horse_conversion = true
+		#Amount of rotten flesh needed
+		#Range: 1 ~ 1000
+		rotten_flesh = 64
+		#Allows zombie horses to be ridden underwater
+		rideable_underwater = true
+		#Convert a zombie horse back by feeding it a golden carrot
+		zombie_horse_inverse_conversion = true
 
