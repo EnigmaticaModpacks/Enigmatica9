@@ -166,6 +166,30 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: `${id_prefix}knightmetal_shield`
+        },
+        {
+            liquid: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:strong_swiftness' }
+            },
+            inputs: [
+                'blue_skies:soul_fragment',
+                'blue_skies:soul_fragment',
+                'ars_nouveau:water_essence',
+                'ars_nouveau:fire_essence',
+                'ars_nouveau:manipulation_essence',
+                'ars_nouveau:earth_essence',
+                'ars_nouveau:air_essence',
+                'blue_skies:soul_fragment'
+            ],
+            output: 'tiab:time_in_a_bottle',
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:strong_swiftness' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: 'tiab:time_in_a_bottle'
         }
     ];
 

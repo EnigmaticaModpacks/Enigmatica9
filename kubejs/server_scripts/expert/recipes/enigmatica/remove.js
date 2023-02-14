@@ -100,6 +100,7 @@ ServerEvents.recipes((event) => {
         { id: 'ae2:network/blocks/energy_vibration_chamber' },
 
         { id: 'createaddition:mechanical_crafting/alternator' },
+        { id: 'createaddition:crafting/modular_accumulator' },
 
         { id: 'immersiveengineering:crafting/electric_lantern' },
         { id: 'immersiveengineering:crafting/transformer' },

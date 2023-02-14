@@ -125,6 +125,7 @@ jei.expert.items.disabled = [
     'constructionwand:iron_wand',
     'constructionwand:stone_wand',
     'createaddition:alternator',
+    'createaddition:modular_accumulator',
     'immersiveengineering:capacitor_hv',
     'immersiveengineering:capacitor_lv',
     'immersiveengineering:capacitor_mv',

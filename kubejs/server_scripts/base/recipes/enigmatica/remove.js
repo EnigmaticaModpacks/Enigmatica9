@@ -29,6 +29,7 @@ ServerEvents.recipes((event) => {
         { id: 'createaddition:metalpress/wire_gold' },
         { id: 'createaddition:rolling/straw' },
         { id: 'createaddition:compat/ae2/charged_certus_quartz' },
+        { id: 'createaddition:crafting/accumulator_conversion' },
 
         { id: /mekanism:enriching\/dye/ },
         { id: /mekanism:compat\/byg\/dye/ },

@@ -142,6 +142,96 @@ ServerEvents.recipes((event) => {
                 C: 'ars_nouveau:water_essence'
             },
             id: `create:crafting/kinetics/whisk`
+        },
+        {
+            output: 'create:rope_pulley',
+            pattern: ['AB ', 'CCC', 'CCC'],
+            key: {
+                A: 'create:shaft',
+                B: 'create:andesite_casing',
+                C: '#forge:rope'
+            },
+            id: `create:crafting/kinetics/rope_pulley`
+        },
+        {
+            output: 'create:mechanical_drill',
+            pattern: ['BA'],
+            key: {
+                A: 'thermal:drill_head',
+                B: 'create:andesite_casing'
+            },
+            id: `create:crafting/kinetics/mechanical_drill`
+        },
+        {
+            output: 'create:mechanical_saw',
+            pattern: ['BA'],
+            key: {
+                A: 'thermal:saw_blade',
+                B: 'create:andesite_casing'
+            },
+            id: `create:crafting/kinetics/mechanical_saw`
+        },
+        {
+            output: '2x create:item_vault',
+            pattern: [' A ', 'ABA', ' A '],
+            key: {
+                A: 'immersiveengineering:sheetmetal_colored_blue',
+                B: 'minecraft:barrel'
+            },
+            id: `create:crafting/kinetics/item_vault`
+        },
+        {
+            output: '2x create:redstone_contact',
+            pattern: ['A', 'B', 'C'],
+            key: {
+                A: '#forge:plates/copper',
+                B: '#forge:dusts/redstone',
+                C: 'create:andesite_casing'
+            },
+            id: `create:crafting/logistics/redstone_contact`
+        },
+        {
+            output: 'create:powered_toggle_latch',
+            pattern: [' A ', ' B ', 'CCC'],
+            key: {
+                A: 'minecraft:redstone_torch',
+                B: 'minecraft:lever',
+                C: 'pneumaticcraft:compressed_stone_slab'
+            },
+            id: `create:crafting/logistics/powered_toggle_latch`
+        },
+        {
+            output: 'create:powered_latch',
+            pattern: [' A ', 'DBD', 'CCC'],
+            key: {
+                A: 'minecraft:redstone_torch',
+                B: 'minecraft:lever',
+                C: 'pneumaticcraft:compressed_stone_slab',
+                D: '#forge:dusts/redstone'
+            },
+            id: `create:crafting/logistics/powered_latch`
+        },
+        {
+            output: 'create:pulse_extender',
+            pattern: ['  A', 'DBA', 'CCC'],
+            key: {
+                A: 'minecraft:redstone_torch',
+                B: '#forge:plates/electrum',
+                C: 'pneumaticcraft:compressed_stone_slab',
+                D: '#forge:dusts/redstone'
+            },
+            id: `create:crafting/logistics/pulse_extender`
+        },
+        {
+            output: 'create:pulse_repeater',
+            pattern: ['DBA', 'CCC'],
+            key: {
+                A: 'minecraft:redstone_torch',
+                B: '#forge:plates/electrum',
+                C: 'pneumaticcraft:compressed_stone_slab',
+                D: '#forge:dusts/redstone'
+            },
+            id: `create:crafting/logistics/pulse_repeater`
         }
     ];
 
