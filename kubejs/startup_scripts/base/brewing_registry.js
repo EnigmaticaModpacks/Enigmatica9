@@ -231,7 +231,7 @@ MoreJSEvents.registerPotionBrewing((event) => {
     ];
 
     recipes.forEach((recipe) => {
-        // console.log(`Registering ${recipe.output} from ${recipe.reagent}`);
+        console.log(`Registering ${recipe.output} from ${recipe.reagent}`);
         event.addPotionBrewing(recipe.reagent, recipe.input, recipe.output);
     });
 });
