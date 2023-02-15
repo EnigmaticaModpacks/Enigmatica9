@@ -110,6 +110,7 @@
 			pink_blossom = true
 			yellow_blossom = true
 			red_blossom = true
+			ancient = true
 
 		[types.leaves_type.ars_elemental]
 			yellow_archwood = true
@@ -132,6 +133,8 @@
 		[types.wood_type.quark]
 			azalea = true
 			blossom = true
+			bamboo = true
+			ancient = true
 
 		[types.wood_type.naturesaura]
 			ancient = true
@@ -191,13 +194,6 @@
 		[types.cut_block_type.naturesaura]
 			ancient = true
 			infused_brick = true
-
-		[types.cut_block_type.mcwroofs]
-			white_roof = true
-			light_gray_roof = true
-			gray_roof = true
-			black_roof = true
-			base_roof = true
 
 		[types.cut_block_type.pneumaticcraft]
 			reinforced_brick = true
@@ -547,6 +543,8 @@
 			duskbound_block = true
 			permafrost = true
 			permafrost_bricks = true
+			ancient_planks = true
+			bamboo_planks = true
 
 [entries]
 
@@ -556,112 +554,7 @@
 			hedge = true
 			leaf_carpet = true
 
-		[entries.leaves_type.cfm]
-			hedge = true
-
 	[entries.wood_type]
-
-		[entries.wood_type.cfm]
-			stripped_kitchen_sink_light = true
-			table = true
-			coffee_table = true
-			park_bench = true
-			stripped_kitchen_counter = true
-			stripped_bedside_cabinet = true
-			desk_cabinet = true
-			upgraded_fence = true
-			kitchen_counter = true
-			upgraded_gate = true
-			stripped_park_bench = true
-			cabinet = true
-			mail_box = true
-			crate = true
-			chair = true
-			stripped_mail_box = true
-			stripped_blinds = true
-			bedside_cabinet = true
-			stripped_cabinet = true
-			kitchen_drawer = true
-			desk = true
-			stripped_kitchen_drawer = true
-			kitchen_sink_dark = true
-			stripped_desk_cabinet = true
-			stripped_table = true
-			blinds = true
-			stripped_chair = true
-			stripped_kitchen_sink_dark = true
-			stripped_desk = true
-			kitchen_sink_light = true
-			stripped_coffee_table = true
-			stripped_crate = true
-
-		[entries.wood_type.mcwroofs]
-			planks_upper_steep_roof = true
-			top_roof = true
-			lower_roof = true
-			planks_roof = true
-			upper_steep_roof = true
-			steep_roof = true
-			upper_lower_roof = true
-			attic_roof = true
-			planks_upper_lower_roof = true
-			roof = true
-			planks_attic_roof = true
-			planks_top_roof = true
-			planks_steep_roof = true
-			planks_lower_roof = true
-
-		[entries.wood_type.mcwtrpdoors]
-			ranch_trapdoor = true
-			beach_trapdoor = true
-			swamp_trapdoor = true
-			glass_trapdoor = true
-			tropical_trapdoor = true
-			cottage_trapdoor = true
-			paper_trapdoor = true
-			bark_trapdoor = true
-			classic_trapdoor = true
-			barn_trapdoor = true
-			four_panel_trapdoor = true
-			barred_trapdoor = true
-			mystic_trapdoor = true
-
-		[entries.wood_type.mcwdoors]
-			japanese2_door = true
-			tropical_door = true
-			barn_glass_door = true
-			four_panel_door = true
-			beach_door = true
-			japanese_door = true
-			stable_door = true
-			modern_door = true
-			nether_door = true
-			stable_head_door = true
-			cottage_door = true
-			western_door = true
-			paper_door = true
-			swamp_door = true
-			glass_door = true
-			barn_door = true
-			mystic_door = true
-			bark_glass_door = true
-			classic_door = true
-
-		[entries.wood_type.mcwfences]
-			highley_gate = true
-			picket_fence = true
-			stockade_fence = true
-			wired_fence = true
-			horse_fence = true
-			pyramid_gate = true
-
-		[entries.wood_type.mcwbridges]
-			bridge_pier = true
-			rope_bridge = true
-			log_bridge_middle = true
-			rope_bridge_stair = true
-			log_bridge_stair = true
-			rail_bridge = true
 
 		[entries.wood_type.quark]
 			vertical_planks = true
@@ -686,10 +579,6 @@
 
 		[entries.wood_type.farmersdelight]
 			cabinet = true
-
-		[entries.wood_type.mcwlights]
-			tiki_torch = true
-			soul_tiki_torch = true
 
 		[entries.wood_type.create]
 			window_pane = true

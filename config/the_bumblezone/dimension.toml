@@ -15,17 +15,17 @@
 	# 
 	#-----------------------------------------------------
 	#
-	# How much to reduce the thickness of the fog in Bumblezone. 
-	# 1 is for Nether fog thickness. 10 for much farther fog.
-	#
-	#Range: 0.0 ~ 100.0
-	fogReducer = 4.0
-	# 
-	#-----------------------------------------------------
-	#
 	# Whether Bumblezone dimension has thick fog or not.
 	#
 	enableDimensionFog = true
+	# 
+	#-----------------------------------------------------
+	#
+	# How thick the fog in Bumblezone is.
+	# 2 is a little bit of fog and 50 is super thick fog. Decimal values are allowed.
+	#
+	#Range: 0.0 ~ 100.0
+	fogThickness = 4.0
 
 ["The Bumblezone Teleportation Options"]
 	# 

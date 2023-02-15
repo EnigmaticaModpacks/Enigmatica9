@@ -22,57 +22,40 @@
 [general]
 	#Forge Energy conversion rate (in FE/t at 256 RPM).
 	#Range: > 0
-	fe_conversion = 240
+	fe_conversion = 960
 	#Max stress for the Alternator and Electric Motor (in SU at 256 RPM).
 	#Range: 0 ~ 16383
-	baseline_stress = 8192
+	baseline_stress = 16000
 
 #Electric Motor
 [electric_motor]
 	#Electric Motor internal capacity in FE.
 	#Range: > 0
-	motor_capacity = 2048
+	motor_capacity = 8192
 	#Electric Motor minimum required energy consumption in FE/t.
 	#Range: > 0
 	motor_min_consumption = 8
 	#Electric Motor max input in FE (Energy transfer not consumption).
 	#Range: > 0
-	motor_max_input = 256
+	motor_max_input = 1024
 	#Electric Motor min/max RPM.
 	#Range: > 1
 	motor_rpm_range = 256
-
-#Heater
-[heater]
-	#Enable Induction Heater when attached to a Furnace Engine.
-	heater_furnace_engine_enable = false
-	#Induction Heater internal capacity in FE.
-	#Range: > 0
-	heater_capacity = 2048
-	#Induction Heater max input in FE (Energy transfer, not consumption).
-	#Range: > 0
-	heater_max_input = 256
-	#Induction Heater normal consumption rate in FE/t.
-	#Range: > 0
-	heater_normal_consumption = 96
-	#Induction Heater when attached to a Furnace Engine consumption rate in FE/t.
-	#Range: > 0
-	heater_furnace_engine_consumption = 1024
 
 #Tesla Coil
 [tesla_coil]
 	#Tesla Coil charge rate in FE/t.
 	#Range: > 0
-	tesla_coil_charge_rate = 4096
+	tesla_coil_charge_rate = 16384
 	#Tesla Coil fire interval (in ticks).
 	#Range: > 0
 	tesla_coil_fire_cooldown = 20
 	#Hurt range (in blocks/meters).
 	#Range: > 0
 	tesla_coil_hurt_range = 3
-	#Charger internal capacity in FE.
+	#Tesla Coil internal capacity in FE.
 	#Range: > 0
-	tesla_coil_capacity = 32000
+	tesla_coil_capacity = 65536
 	#Energy consumed when Tesla Coil is fired (in FE).
 	#Range: > 0
 	tesla_coil_hurt_energy_required = 1024
@@ -87,7 +70,7 @@
 	tesla_coil_max_input = 8192
 	#Tesla Coil charge rate in FE/t for recipes.
 	#Range: > 0
-	tesla_coil_recipe_charge_rate = 1024
+	tesla_coil_recipe_charge_rate = 8192
 	#Damaged dealt to mobs when Tesla Coil is fired (in half hearts).
 	#Range: > 0
 	tesla_coil_hurt_mob = 3
@@ -102,14 +85,14 @@
 	generator_efficiency = 0.75
 	#Alternator internal capacity in FE.
 	#Range: > 0
-	generator_capacity = 2048
+	generator_capacity = 8192
 	#Alternator max input in FE (Energy transfer, not generation).
 	#Range: > 0
-	generator_max_output = 256
+	generator_max_output = 1024
 
 #Accumulator
 [accumulator]
-	#Accumulator internal capacity in FE.
+	#Accumulator internal capacity per block in FE.
 	#Range: > 0
 	accumulator_capacity = 4196000
 	#Accumulator max output in FE/t (Energy transfer).
@@ -118,6 +101,12 @@
 	#Accumulator max input in FE/t (Energy transfer).
 	#Range: > 0
 	accumulator_max_input = 512
+	#Accumulator max multiblock height.
+	#Range: 1 ~ 8
+	accumulator_max_height = 5
+	#Accumulator max multiblock width.
+	#Range: 1 ~ 8
+	accumulator_max_width = 3
 
 #Rolling Mill
 [rolling_mill]
