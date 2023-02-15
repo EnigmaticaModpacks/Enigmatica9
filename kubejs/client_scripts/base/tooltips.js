@@ -439,6 +439,17 @@ ItemEvents.tooltip((event) => {
                 'enigmaticunity:dim_source_generator'
             ],
             text: [Text.of('Arcane Apparatus: Source and Aura to Energy').green()]
+        },
+        {
+            items: [
+                'create:mechanical_pump',
+                'industrialforegoing:water_condensator',
+                'thermal:device_water_gen',
+                'mekanism:electric_pump',
+                'immersiveengineering:fluid_pump',
+                'pneumaticcraft:gas_lift'
+            ],
+            text: [Text.of(`Fluid Pump`).gold()]
         }
 
         /* 
