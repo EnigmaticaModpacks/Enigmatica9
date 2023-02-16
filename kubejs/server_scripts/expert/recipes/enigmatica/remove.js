@@ -59,6 +59,8 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:fluid_sieving_machine' },
 
         { id: 'naturesaura:tree_ritual/ore_spawn_powder' },
+        { id: 'naturesaura:tree_ritual/crushing_catalyst' },
+        { id: 'naturesaura:tree_ritual/conversion_catalyst' },
         { id: 'naturesaura:tree_ritual/nature_altar' },
         { id: 'naturesaura:altar/infused_stone' },
         { id: 'naturesaura:gold_fiber' },

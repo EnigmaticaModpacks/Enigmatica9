@@ -14,7 +14,10 @@ StartupEvents.registry('item', (event) => {
         'amethyst_dust',
         'aura_leaf',
         'pig_iron_ingot',
-        'red_nether_brick'
+        'red_nether_brick',
+        'kaolin_clay',
+        'calcined_kaolin_pearls',
+        'kaolin_powder'
     ];
 
     const ritualDummies = [
