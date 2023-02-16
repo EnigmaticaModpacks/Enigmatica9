@@ -1,0 +1,51 @@
+
+[dimension]
+	#The dimension in which players will respawn from the tent dimension as needed
+	overworld = "minecraft:overworld"
+	#The number of ticks before an entity can use a tent door again
+	#Range: 1 ~ 300
+	portal_cooldown = 60
+	#When true, players can not teleport inside a tent
+	restrict_teleport = true
+	#When true, players in a tent can only sleep through the night if overworld players are sleeping too
+	sleeping_strict = true
+	#Dimensions in which tents cannot be used.
+	#Accepts dimension id or mod id with wildcard.
+	#Example: ["minecraft:the_nether", "rftoolsdim:*"]
+	dimension_blacklist = []
+
+[permissions]
+	#When true, only the player who placed the tent can enter it
+	owner_only_enter = false
+	#When true, only the player who placed the tent can remove it
+	owner_only_pickup = false
+	#When true, players can enter the tent by walking through the door
+	players_enter_on_collide = true
+	#When true, non-player entities can enter the tent by walking through the door
+	nonplayers_enter_on_collide = true
+	#When true, only Creative mode players can duplicate a tent item
+	#(Note: this is done by clicking a tent door with any item that has NBT tag 'TentCopyTool' set to true)
+	copy_creative_only = true
+	#When true, players can only enter tents when there are no nearby monsters
+	enter_when_safe = false
+	#When true, players can only remove tents when there are no nearby monsters
+	pickup_when_safe = false
+
+[other]
+	#When true, tents have decorations when first built
+	tent_decor_build = true
+	#When true, tents have decorations when upgraded
+	tent_decor_upgrade = false
+	#When true, the tent item will not be destroyed if it is burned
+	tent_fireproof = false
+	#Percentage chance that a plain tepee block will randomly have a design
+	#Range: 0 ~ 100
+	tepee_design_chance = 35
+	#Block used for harvestable layer of all tent floors
+	tent_floor = "minecraft:dirt"
+	#When true, tents will be the same size on the outside and inside
+	use_actual_size = false
+	#The number of progress stages added by one use of the tent mallet
+	#Range: 1 ~ 7
+	mallet_effectiveness = 2
+
