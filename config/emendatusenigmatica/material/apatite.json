@@ -14,7 +14,7 @@
       "blockRecipeType": 9
     },
     "oreDrop": {
-      "drop": "emendatusenigmatica:apatite",
+      "drop": "emendatusenigmatica:apatite_gem",
       "min": 1,
       "max": 1
     }

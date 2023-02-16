@@ -4,7 +4,8 @@
     "localizedName": "Dimensional Shard",
     "processedTypes": [
         "ore",
-        "storage_block"
+        "storage_block",
+        "cluster"
     ],
     "properties": {
         "materialType": "gem",

@@ -6,7 +6,8 @@
         "ore",
         "storage_block",
         "gem",
-        "dust"
+        "dust",
+        "cluster"
     ],
     "properties": {
         "materialType": "gem",

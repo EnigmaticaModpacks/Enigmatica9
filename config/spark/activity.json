@@ -1,0 +1,41 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Kanzaji",
+      "uniqueId": "52629b46-ea3b-4622-92b4-590451f0ca84"
+    },
+    "time": 1676553718133,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/EmjTDeHCLr"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Kanzaji",
+      "uniqueId": "52629b46-ea3b-4622-92b4-590451f0ca84"
+    },
+    "time": 1676553220328,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/DtvvB74JLA"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Kanzaji",
+      "uniqueId": "52629b46-ea3b-4622-92b4-590451f0ca84"
+    },
+    "time": 1676553066373,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/ZUQdrnxvsI"
+    }
+  }
+]

@@ -4,7 +4,8 @@
   "localizedName": "Source",
   "processedTypes": [
     "storage_block",
-    "gem"
+    "gem",
+    "ore"
   ],
   "properties": {
     "materialType": "gem",
