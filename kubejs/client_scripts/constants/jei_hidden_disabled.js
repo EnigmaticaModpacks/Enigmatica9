@@ -55,7 +55,9 @@ jei.base.items.disabled = [
     /thermal:onion/,
     /thermal:rice/,
     /thermal:tomato/,
-    /thermal:.*_oil_bucket/,
+    'thermal:crude_oil_bucket',
+    'thermal:heavy_oil_bucket',
+    'thermal:light_oil_bucket',
     'thermal:latex_bucket',
     'thermal:creosote_bucket',
     'thermal:refined_fuel_bucket',
@@ -92,7 +94,15 @@ jei.base.items.hidden = [
     'occultism:lighted_air',
     /twilightforest:.*boss_spawner/,
     /hexerei:.*selenite/,
-    'hexerei:creative_waxing_kit'
+    'hexerei:creative_waxing_kit',
+    /nomadictents:.*_shamiyana_wall/,
+    /nomadictents:.*_tepee_wall/,
+    'nomadictents:indlu_wall',
+    'nomadictents:bedouin_roof',
+    'nomadictents:bedouin_wall',
+    'nomadictents:yurt_roof',
+    'nomadictents:yurt_wall',
+    'nomadictents:rigid_dirt'
 ];
 jei.base.fluids.hidden = [
     'thermal:latex',
@@ -264,6 +274,8 @@ jei.expert.items.disabled = [
     'superiorshields:silver_shield',
     'superiorshields:steel_shield',
     'superiorshields:tin_shield',
+    'superiorshields:spirit_hunter_shield',
+    'superiorshields:soul_stained_steel_shield',
     'thermal:dynamo_compression',
     'thermal:dynamo_gourmand',
     'thermal:dynamo_lapidary',

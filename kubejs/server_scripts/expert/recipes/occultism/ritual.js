@@ -433,6 +433,126 @@ ServerEvents.recipes((event) => {
             id: `occultism:ritual/chimera_familiar`
         },
         {
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'hexerei:seed_mixture',
+                'hexerei:seed_mixture',
+                'hexerei:seed_mixture',
+                'hexerei:seed_mixture'
+            ],
+            entity_to_summon: 'hexerei:crow',
+            ritual_dummy: 'kubejs:ritual_summon_crow',
+            ritual_type: 'occultism:summon_tamed',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_crow`
+        },
+        {
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: [
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'ars_nouveau:fire_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:fire_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:fire_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:fire_essence'
+            ],
+            entity_to_summon: 'minecraft:blaze',
+            entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b}',
+            ritual_dummy: 'kubejs:ritual_summon_bound_blaze',
+            ritual_type: 'occultism:summon',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_bound_blaze`
+        },
+        {
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: [
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'ars_nouveau:air_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:air_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:air_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:air_essence'
+            ],
+            entity_to_summon: 'thermal:blitz',
+            entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b}',
+            ritual_dummy: 'kubejs:ritual_summon_bound_blitz',
+            ritual_type: 'occultism:summon',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_bound_blitz`
+        },
+        {
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: [
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'ars_nouveau:earth_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:earth_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:earth_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:earth_essence'
+            ],
+            entity_to_summon: 'thermal:basalz',
+            entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b}',
+            ritual_dummy: 'kubejs:ritual_summon_bound_basalz',
+            ritual_type: 'occultism:summon',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_bound_basalz`
+        },
+        {
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: [
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'ars_nouveau:water_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:water_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:water_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:water_essence'
+            ],
+            entity_to_summon: 'thermal:blizz',
+            entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b}',
+            ritual_dummy: 'kubejs:ritual_summon_bound_blizz',
+            ritual_type: 'occultism:summon',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_bound_blizz`
+        },
+        {
             output: 'create:blaze_burner',
             activation_item: 'minecraft:nether_bricks',
             inputs: [
@@ -454,6 +574,29 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:lesser_binding',
             duration: 10,
             id: `${id_prefix}ritual_craft_blaze_burner`
+        },
+        {
+            output: '4x pneumaticcraft:module_expansion_card',
+            activation_item: 'immersiveengineering:coil_mv',
+            inputs: [
+                'pneumaticcraft:compressed_stone_slab',
+                'pneumaticcraft:compressed_stone_slab',
+                'pneumaticcraft:compressed_stone_slab',
+                'pneumaticcraft:compressed_stone_slab',
+                '#forge:gems/certus_quartz',
+                '#forge:gems/certus_quartz',
+                '#forge:gems/certus_quartz',
+                '#forge:gems/certus_quartz'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/air',
+                display_name: 'ritual.occultism.sacrifice.air_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_module_expansion_card',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_module_expansion_card`
         },
 
         /*

@@ -31,8 +31,14 @@ StartupEvents.registry('item', (event) => {
         'ritual_summon_amethyst_golem',
         'ritual_summon_starbuncle',
         'ritual_summon_starbuncle_from_shards',
+        'ritual_summon_crow',
+        'ritual_summon_bound_blaze',
+        'ritual_summon_bound_blitz',
+        'ritual_summon_bound_basalz',
+        'ritual_summon_bound_blizz',
         'ritual_craft_willow_broom',
-        'ritual_craft_blaze_burner'
+        'ritual_craft_blaze_burner',
+        'ritual_craft_module_expansion_card'
     ];
 
     const reusableItemTextures = [

@@ -83,6 +83,7 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:manual_compressor' },
         { id: 'pneumaticcraft:logistics_core' },
         { id: 'pneumaticcraft:spawner_agitator' },
+        { id: 'pneumaticcraft:module_expansion_card' },
 
         { id: 'supplementaries:jar' },
 
