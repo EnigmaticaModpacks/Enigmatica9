@@ -3,7 +3,6 @@
     "source": "modded",
     "localizedName": "Cinnabar",
     "processedTypes": [
-        "ore",
         "storage_block",
         "gem",
         "dust"
