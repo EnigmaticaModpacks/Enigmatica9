@@ -313,7 +313,12 @@ jei.expert.recipes.hidden = [
             'naturesaura:slime_split_generator',
             'naturesaura:animal_generator',
             'naturesaura:chorus_generator',
-            'naturesaura:moss_generator'
+            'naturesaura:moss_generator',
+            'naturesaura:loot_finder',
+            'naturesaura:light_staff',
+            'naturesaura:cave_finder',
+            'naturesaura:pet_reviver',
+            'naturesaura:shockwave_creator'
         ]
     },
     {

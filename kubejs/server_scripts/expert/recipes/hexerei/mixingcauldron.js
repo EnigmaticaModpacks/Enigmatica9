@@ -3,7 +3,6 @@ ServerEvents.recipes((event) => {
         return;
     }
     const id_prefix = 'enigmatica:expert/hexerei/mixingcauldron/';
-
     const recipes = [
         {
             liquid: { fluid: 'minecraft:water' },
@@ -208,6 +207,108 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 1000,
             heatRequirement: 'heated',
             id: `${id_prefix}fiery_block`
+        },
+        {
+            liquid: { fluid: 'minecraft:water' },
+            inputs: [
+                '#forge:gems/emerald',
+                '#forge:nuggets/gold',
+                'hexerei:dried_sage',
+                'naturesaura:ancient_planks',
+                'naturesaura:ancient_planks',
+                'naturesaura:ancient_planks',
+                'hexerei:dried_sage',
+                '#forge:nuggets/gold'
+            ],
+            output: 'naturesaura:loot_finder',
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 1000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}loot_finder`
+        },
+        {
+            liquid: { fluid: 'minecraft:water' },
+            inputs: [
+                'twilightforest:torchberries',
+                '#forge:nuggets/gold',
+                'hexerei:dried_yellow_dock_flowers',
+                'naturesaura:ancient_planks',
+                'naturesaura:ancient_planks',
+                'naturesaura:ancient_planks',
+                'hexerei:dried_yellow_dock_flowers',
+                '#forge:nuggets/gold'
+            ],
+            output: 'naturesaura:light_staff',
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 1000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}light_staff`
+        },
+        {
+            liquid: { fluid: 'minecraft:water' },
+            inputs: [
+                'twilightforest:liveroot',
+                '#forge:nuggets/gold',
+                'hexerei:dried_belladonna_flowers',
+                'naturesaura:ancient_planks',
+                'naturesaura:ancient_planks',
+                'naturesaura:ancient_planks',
+                'hexerei:dried_belladonna_flowers',
+                '#forge:nuggets/gold'
+            ],
+            output: 'naturesaura:cave_finder',
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 1000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}cave_finder`
+        },
+        {
+            liquid: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' }
+            },
+            inputs: [
+                '#forge:string',
+                'hexerei:dried_yellow_dock_leaves',
+                'twilightforest:torchberries',
+                'hexerei:dried_mugwort_flowers',
+                '#forge:plates/gold',
+                'hexerei:dried_yellow_dock_flowers',
+                'twilightforest:torchberries',
+                'hexerei:dried_mugwort_leaves'
+            ],
+            output: 'naturesaura:pet_reviver',
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' }
+            },
+            fluidLevelsConsumed: 333,
+            heatRequirement: 'heated',
+            id: `${id_prefix}pet_reviver`
+        },
+        {
+            liquid: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:leaping' }
+            },
+            inputs: [
+                '#forge:string',
+                'hexerei:dried_mandrake_flowers',
+                '#forge:plates/lead',
+                'hexerei:belladonna_berries',
+                'ars_nouveau:earth_essence',
+                'hexerei:belladonna_berries',
+                '#forge:plates/lead',
+                'hexerei:dried_mandrake_flowers'
+            ],
+            output: 'naturesaura:shockwave_creator',
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:leaping' }
+            },
+            fluidLevelsConsumed: 333,
+            heatRequirement: 'heated',
+            id: `${id_prefix}shockwave_creator`
         }
     ];
 

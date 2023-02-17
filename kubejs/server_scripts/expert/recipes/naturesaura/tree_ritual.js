@@ -110,6 +110,22 @@ ServerEvents.recipes((event) => {
             time: 5 * time_multiplier,
             sapling: 'quark:yellow_blossom_sapling',
             id: `${id_prefix}ancient_sapling`
+        },
+        {
+            output: 'naturesaura:furnace_heater',
+            ingredients: [
+                'twilightforest:torchberries',
+                'naturesaura:infused_stone',
+                '#forge:gems/source',
+                '#forge:gems/source',
+                'naturesaura:gold_leaf',
+                'minecraft:flint',
+                'naturesaura:gold_leaf',
+                'minecraft:flint'
+            ],
+            time: 5 * time_multiplier,
+            sapling: 'quark:red_blossom_sapling',
+            id: 'naturesaura:tree_ritual/furnace_heater'
         }
         /*
             ,

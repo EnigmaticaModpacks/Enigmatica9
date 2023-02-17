@@ -1,4 +1,7 @@
 ServerEvents.recipes((event) => {
+    if (global.isExpertMode == false) {
+        return;
+    }
     const patchouli_safe_removals = {
         shaped: [
             { id: 'naturesaura:gold_fiber', output: 'naturesaura:gold_fiber' },
@@ -9,7 +12,12 @@ ServerEvents.recipes((event) => {
             { id: 'naturesaura:slime_split_generator', output: 'naturesaura:slime_split_generator' },
             { id: 'naturesaura:animal_generator', output: 'naturesaura:animal_generator' },
             { id: 'naturesaura:chorus_generator', output: 'naturesaura:chorus_generator' },
-            { id: 'naturesaura:moss_generator', output: 'naturesaura:moss_generator' }
+            { id: 'naturesaura:moss_generator', output: 'naturesaura:moss_generator' },
+            { id: 'naturesaura:loot_finder', output: 'naturesaura:loot_finder' },
+            { id: 'naturesaura:light_staff', output: 'naturesaura:light_staff' },
+            { id: 'naturesaura:cave_finder', output: 'naturesaura:cave_finder' },
+            { id: 'naturesaura:pet_reviver', output: 'naturesaura:pet_reviver' },
+            { id: 'naturesaura:shockwave_creator', output: 'naturesaura:shockwave_creator' }
         ],
         altar: [{ id: 'naturesaura:altar/infused_stone', output: 'naturesaura:infused_stone' }],
         tree_ritual: [
