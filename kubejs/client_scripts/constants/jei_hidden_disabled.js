@@ -28,6 +28,8 @@ const jei = {
 
 // Base
 jei.base.items.disabled = [
+    /emendatusenigmatica:.*_cluster_shard\b/,
+
     /pendorite/,
     /emeraldite/,
     /ametrine/,

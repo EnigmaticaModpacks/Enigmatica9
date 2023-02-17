@@ -134,6 +134,8 @@ ServerEvents.recipes((event) => {
 
         //// Emendatus Enigmatica Related stuff
 
+        { id: /emendatusenigmatica:tinted_glass\/from_shard/},              // Cluster Compat, it is disabled for purpose we have, but if the future you want to enable it back, this should be modified!
+        { id: /emendatusenigmatica:spyglass\/from_shard/},                  // Cluster Compat, it is disabled for purpose we have, but if the future you want to enable it back, this should be modified!
         { id: /industrialforegoing:.*_gear/ },                              // Gears
         { id: /hammercrushing/, mod: 'immersiveengineering' },              // Dusts.js related
         { id: /immersiveengineering:crafting\/plate_.*_hammering/ },        // plates.js related

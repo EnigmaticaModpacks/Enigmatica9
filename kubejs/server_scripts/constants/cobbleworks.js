@@ -38,7 +38,6 @@ const generatableStone = [
     'byg:scoria_stone',
     'byg:white_sandstone',
     'byg:windswept_sandstone',
-    /*
     'create:asurine',
     'create:crimsite',
     'create:limestone',
@@ -46,7 +45,6 @@ const generatableStone = [
     'create:scorchia',
     'create:scoria',
     'create:veridium',
-    */
     'minecraft:andesite',
     'minecraft:basalt',
     'minecraft:deepslate',
@@ -77,7 +75,6 @@ const excludeDuplicatesCobbleGen = [
     'byg:scoria_stone',
     'byg:soapstone',
     'byg:travertine',
-    /*
     'create:asurine',
     'create:crimsite',
     'create:limestone',
@@ -85,7 +82,6 @@ const excludeDuplicatesCobbleGen = [
     'create:scorchia',
     'create:scoria',
     'create:veridium',
-    */
     'minecraft:andesite',
     'minecraft:cobbled_deepslate',
     'minecraft:deepslate',
