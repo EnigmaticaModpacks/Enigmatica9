@@ -1,49 +1,61 @@
 {
-    "type": "minecraft:block",
-    "pools": [
-      {
-        "bonus_rolls": 0.0,
-        "entries": [
-          {
-            "type": "minecraft:alternatives",
-            "children": [
-              {
-                "type": "minecraft:item",
-                "conditions": [
-                  {
-                    "condition": "minecraft:match_tool",
-                    "predicate": {
-                      "enchantments": [
-                        {
-                          "enchantment": "minecraft:silk_touch",
-                          "levels": {
-                            "min": 1
-                          }
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
                         }
-                      ]
-                    }
+                      }
+                    ]
                   }
-                ],
-                "name": "emendatusenigmatica:fluorite_cluster"
-              },
-              {
-                "type": "minecraft:item",
-                "functions": [
-                  {
-                    "enchantment": "minecraft:fortune",
-                    "formula": "minecraft:ore_drops",
-                    "function": "minecraft:apply_bonus"
+                }
+              ],
+              "name": "emendatusenigmatica:fluorite_cluster"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "add": false,
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 3.0,
+                    "min": 2.0
                   },
-                  {
-                    "function": "minecraft:explosion_decay"
+                  "function": "minecraft:set_count"
+                },
+                {
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:uniform_bonus_count",
+                  "function": "minecraft:apply_bonus",
+                  "parameters": {
+                    "bonusMultiplier": 1
                   }
-                ],
-                "name": "emendatusenigmatica:fluorite_gem"
-              }
-            ]
-          }
-        ],
-        "rolls": 1.0
-      }
-    ]
-  }
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                }
+              ],
+              "name": "emendatusenigmatica:fluorite_gem"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}
