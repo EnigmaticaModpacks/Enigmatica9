@@ -37,7 +37,8 @@ ServerEvents.recipes((event) => {
             { id: 'naturesaura:offering/token_grief', output: 'naturesaura:token_grief' },
             { id: 'naturesaura:offering/token_rage', output: 'naturesaura:token_rage' },
             { id: 'naturesaura:offering/token_terror', output: 'naturesaura:token_terror' },
-            { id: 'naturesaura:offering/token_euphoria', output: 'naturesaura:token_euphoria' }
+            { id: 'naturesaura:offering/token_euphoria', output: 'naturesaura:token_euphoria' },
+            { id: 'naturesaura:offering/sky_ingot_from_gold', output: 'naturesaura:sky_ingot' }
         ]
     };
 

@@ -56,6 +56,18 @@ ServerEvents.recipes((event) => {
                 B: 'ae2:charged_certus_quartz_crystal'
             },
             id: `naturesaura:field_creator`
+        },
+        {
+            output: Item.of('4x naturesaura:calling_spirit'),
+            pattern: [' A ', 'BEC', ' D '],
+            key: {
+                A: 'ars_nouveau:air_essence',
+                B: 'ars_nouveau:fire_essence',
+                C: 'ars_nouveau:water_essence',
+                D: 'ars_nouveau:earth_essence',
+                E: '#forge:gems/moonstone'
+            },
+            id: `naturesaura:calling_spirit`
         }
     ];
 

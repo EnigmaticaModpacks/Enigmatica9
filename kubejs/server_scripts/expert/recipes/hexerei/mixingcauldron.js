@@ -8,13 +8,13 @@ ServerEvents.recipes((event) => {
             liquid: { fluid: 'minecraft:water' },
             inputs: [
                 'ars_nouveau:manipulation_essence',
-                'twilightforest:liveroot',
-                'twilightforest:liveroot',
-                'twilightforest:liveroot',
+                'hexerei:belladonna_berries',
+                'naturesaura:gold_leaf',
+                'hexerei:dried_yellow_dock_flowers',
                 '#forge:raw_ores/iron',
-                'naturesaura:gold_powder',
-                'naturesaura:gold_powder',
-                'naturesaura:gold_powder'
+                'hexerei:dried_yellow_dock_flowers',
+                'twilightforest:liveroot',
+                'hexerei:belladonna_berries'
             ],
             output: 'twilightforest:raw_ironwood',
             liquidOutput: { fluid: 'minecraft:water' },

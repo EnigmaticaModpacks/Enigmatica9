@@ -344,7 +344,8 @@ jei.expert.recipes.hidden = [
             'naturesaura:offering/token_grief',
             'naturesaura:offering/token_rage',
             'naturesaura:offering/token_terror',
-            'naturesaura:offering/token_euphoria'
+            'naturesaura:offering/token_euphoria',
+            'naturesaura:offering/sky_ingot_from_gold'
         ]
     }
 ];

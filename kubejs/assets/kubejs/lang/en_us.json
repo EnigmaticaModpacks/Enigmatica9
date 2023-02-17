@@ -107,7 +107,7 @@
     "ritual.enigmatica.occultism/ritual/ritual_teleport_everdawn.conditions": "Toll not accepted. Please provide the full cost of the ritual.",
 
     "item.kubejs.ritual_teleport_everbright": "Ritual: Teleport to Everbright.",
-    "item.kubejs.ritual_teleport_everbright.tooltip": "Launch nearby entities straight to the first moon, Everbright.",
+    "item.kubejs.ritual_teleport_everbright.tooltip": "Launch nearby entities straight to the second moon, Everbright.",
     "ritual.enigmatica.occultism/ritual/ritual_teleport_everbright.started": "Destination, Everbright. Keep your hands and arms fully inside the ritual circle at all times.",
     "ritual.enigmatica.occultism/ritual/ritual_teleport_everbright.finished": "Please mind the gap.",
     "ritual.enigmatica.occultism/ritual/ritual_teleport_everbright.interrupted": "Service to Everbright has been discontinued at this time.",
