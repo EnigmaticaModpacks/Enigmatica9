@@ -6,9 +6,24 @@ const disabled_item_message =
 const disabled_item_tooltip = 'This item has been disabled.';
 
 const jei = {
-    base: { items: { hidden: [], disabled: [] }, fluids: { hidden: [] }, categories: { hidden: [] } },
-    normal: { items: { hidden: [], disabled: [] }, fluids: { hidden: [] }, categories: { hidden: [] } },
-    expert: { items: { hidden: [], disabled: [] }, fluids: { hidden: [] }, categories: { hidden: [] } }
+    base: {
+        items: { hidden: [], disabled: [] },
+        fluids: { hidden: [] },
+        categories: { hidden: [] },
+        recipes: { hidden: [] }
+    },
+    normal: {
+        items: { hidden: [], disabled: [] },
+        fluids: { hidden: [] },
+        categories: { hidden: [] },
+        recipes: { hidden: [] }
+    },
+    expert: {
+        items: { hidden: [], disabled: [] },
+        fluids: { hidden: [] },
+        categories: { hidden: [] },
+        recipes: { hidden: [] }
+    }
 };
 // Base
 jei.base.items.disabled = [
@@ -286,3 +301,45 @@ jei.expert.items.disabled = [
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];
 jei.expert.categories.hidden = [];
+jei.expert.recipes.hidden = [
+    {
+        category: 'minecraft:crafting',
+        recipes_by_id: [
+            'naturesaura:gold_fiber',
+            'naturesaura:wood_stand',
+            'naturesaura:offering_table',
+            'naturesaura:flower_generator',
+            'naturesaura:oak_generator',
+            'naturesaura:slime_split_generator',
+            'naturesaura:animal_generator',
+            'naturesaura:chorus_generator',
+            'naturesaura:moss_generator'
+        ]
+    },
+    {
+        category: 'naturesaura:altar',
+        recipes_by_id: ['naturesaura:altar/infused_stone']
+    },
+    {
+        category: 'naturesaura:tree_ritual',
+        recipes_by_id: [
+            'naturesaura:tree_ritual/ore_spawn_powder',
+            'naturesaura:tree_ritual/crushing_catalyst',
+            'naturesaura:tree_ritual/conversion_catalyst',
+            'naturesaura:tree_ritual/nature_altar',
+            'naturesaura:tree_ritual/token_sorrow',
+            'naturesaura:tree_ritual/token_anger',
+            'naturesaura:tree_ritual/token_fear',
+            'naturesaura:tree_ritual/token_joy'
+        ]
+    },
+    {
+        category: 'naturesaura:offering',
+        recipes_by_id: [
+            'naturesaura:offering/token_grief',
+            'naturesaura:offering/token_rage',
+            'naturesaura:offering/token_terror',
+            'naturesaura:offering/token_euphoria'
+        ]
+    }
+];

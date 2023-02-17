@@ -58,22 +58,6 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:fermentation_station' },
         { id: 'industrialforegoing:fluid_sieving_machine' },
 
-        { id: 'naturesaura:tree_ritual/ore_spawn_powder' },
-        { id: 'naturesaura:tree_ritual/crushing_catalyst' },
-        { id: 'naturesaura:tree_ritual/conversion_catalyst' },
-        { id: 'naturesaura:tree_ritual/nature_altar' },
-        { id: 'naturesaura:altar/infused_stone' },
-        { id: 'naturesaura:gold_fiber' },
-        { id: 'naturesaura:wood_stand' },
-        { id: 'naturesaura:offering_table' },
-
-        { id: 'naturesaura:flower_generator' },
-        { id: 'naturesaura:oak_generator' },
-        { id: 'naturesaura:slime_split_generator' },
-        { id: 'naturesaura:animal_generator' },
-        { id: 'naturesaura:chorus_generator' },
-        { id: 'naturesaura:moss_generator' },
-
         { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },
         { id: 'pneumaticcraft:pressure_chamber_valve' },
         { id: 'pneumaticcraft:pressure_chamber_glass' },
@@ -101,7 +85,6 @@ ServerEvents.recipes((event) => {
         { id: 'twilightforest:material/fiery_iron_ingot_reversed' },
 
         { id: /chalk/, mod: 'occultism' },
-        { id: /token_/, mod: 'naturesaura' },
 
         // Disable Power Generation
 
