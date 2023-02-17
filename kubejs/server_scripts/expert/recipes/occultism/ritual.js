@@ -682,7 +682,7 @@ ServerEvents.recipes((event) => {
             ritual_dummy: 'kubejs:ritual_teleport_everdawn',
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:tree_of_life_stage_1',
-            duration: 60,
+            duration: 10,
             id: `${id_prefix}ritual_teleport_everdawn`
         },
         {
