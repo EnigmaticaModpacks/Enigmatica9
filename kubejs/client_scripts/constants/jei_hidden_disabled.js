@@ -98,11 +98,6 @@ jei.base.items.hidden = [
     /kubejs:.*indicator/,
     /kubejs:.*delight/,
     /kubejs:.*lootbox/,
-    'kubejs:summon_death_tome',
-    'kubejs:spell_night_vision',
-    'kubejs:teleport_everdawn',
-    'kubejs:teleport_everbright',
-    'kubejs:pig_iron_ingot',
     'naturesaura:multiblock_maker',
     'sophisticatedstorage:debug_tool',
     /occultism:.*debug/,
@@ -134,7 +129,13 @@ jei.base.categories.hidden = ['twilightforest:uncrafting'];
 
 // Normal
 jei.normal.items.disabled = [];
-jei.normal.items.hidden = [/kubejs:tree_of_life_/];
+jei.normal.items.hidden = [
+    /kubejs:tree_of_life_/,
+    'kubejs:summon_death_tome',
+    'kubejs:teleport_everdawn',
+    'kubejs:teleport_everbright',
+    'kubejs:pig_iron_ingot'
+];
 jei.normal.fluids.hidden = [];
 jei.normal.categories.hidden = [];
 
