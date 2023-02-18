@@ -470,7 +470,7 @@ ServerEvents.recipes((event) => {
                 'ars_nouveau:fire_essence'
             ],
             entity_to_summon: 'minecraft:blaze',
-            entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b}',
+            entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b,DeathLootTable:"minecraft:entities/bat"}',
             ritual_dummy: 'kubejs:ritual_summon_bound_blaze',
             ritual_type: 'occultism:summon',
             pentacle_id: 'occultism:lesser_binding',
@@ -495,7 +495,7 @@ ServerEvents.recipes((event) => {
                 'ars_nouveau:air_essence'
             ],
             entity_to_summon: 'thermal:blitz',
-            entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b}',
+            entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b,DeathLootTable:"minecraft:entities/bat"}',
             ritual_dummy: 'kubejs:ritual_summon_bound_blitz',
             ritual_type: 'occultism:summon',
             pentacle_id: 'occultism:lesser_binding',
@@ -520,7 +520,7 @@ ServerEvents.recipes((event) => {
                 'ars_nouveau:earth_essence'
             ],
             entity_to_summon: 'thermal:basalz',
-            entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b}',
+            entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b,DeathLootTable:"minecraft:entities/bat"}',
             ritual_dummy: 'kubejs:ritual_summon_bound_basalz',
             ritual_type: 'occultism:summon',
             pentacle_id: 'occultism:lesser_binding',
@@ -545,7 +545,7 @@ ServerEvents.recipes((event) => {
                 'ars_nouveau:water_essence'
             ],
             entity_to_summon: 'thermal:blizz',
-            entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b}',
+            entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b,DeathLootTable:"minecraft:entities/bat"}',
             ritual_dummy: 'kubejs:ritual_summon_bound_blizz',
             ritual_type: 'occultism:summon',
             pentacle_id: 'occultism:lesser_binding',
