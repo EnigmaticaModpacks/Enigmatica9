@@ -1,4 +1,4 @@
-## Enigmatica9 - 1.4.1
+## Enigmatica9 - 1.4.2
 
   * [AEInfinityBooster-1.19.2-1.2.0+11.jar](https://www.curseforge.com/minecraft/mc-mods/aeinfinitybooster/files/3940200) (by [hexeptiondev](https://www.curseforge.com/members/hexeptiondev/projects))
   * [AI-Improvements-1.19.2-0.5.2.jar](https://www.curseforge.com/minecraft/mc-mods/ai-improvements/files/4019127) (by [QueenOfMissiles](https://www.curseforge.com/members/QueenOfMissiles/projects))
