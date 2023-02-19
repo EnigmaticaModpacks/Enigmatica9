@@ -21,6 +21,9 @@
 	#Transfer rate of the fluid starbuncles
 	#Range: > 1
 	starbucket_ratio = 16000
+	#Source cost to make a bucket of liquid source.
+	#Range: > 1
+	source_condense_cost = 1000
 
 ["Mekanism Compat"]
 	#How much energy is produced per mB of Gaseous Source
