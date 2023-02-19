@@ -1,16 +1,16 @@
 {
-    "modId": "blue_skies",
-    "group": {
-        "name": "Blue Skies Seeds",
-        "enabledByDefault": true,
-        "defaultPayment": { "item": "blue_skies:moonstone" },
-        "defaultCategory": "farmingforblockheads:seeds"
-    },
-    "customEntries": [
-        { "output": "blue_skies:fiery_bean_seeds" },
-        { "output": "blue_skies:pine_fruit_seeds" },
-        { "output": "blue_skies:scalefruit_seeds" },
-        { "output": "blue_skies:winter_leaf_seeds" },
-        { "output": "blue_skies:solnut" }
-    ]
+  "modId": "farmingforblockheads",
+  "group": {
+    "name": "Blue Skies Seeds",
+    "enabledByDefault": true,
+    "defaultPayment": { "item": "blue_skies:moonstone" },
+    "defaultCategory": "farmingforblockheads:seeds"
+  },
+  "customEntries": [
+    { "output": "blue_skies:fiery_bean_seeds" },
+    { "output": "blue_skies:pine_fruit_seeds" },
+    { "output": "blue_skies:scalefruit_seeds" },
+    { "output": "blue_skies:winter_leaf_seeds" },
+    { "output": "blue_skies:solnut" }
+  ]
 }
