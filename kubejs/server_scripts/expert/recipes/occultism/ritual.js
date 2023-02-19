@@ -9,9 +9,9 @@ ServerEvents.recipes((event) => {
             output: 'ars_nouveau:wixie_charm',
             activation_item: 'ars_nouveau:conjuration_essence',
             inputs: [
-                'hexerei:witch_helmet',
+                'hexerei:mindful_trance_blend',
                 'twilightforest:torchberries',
-                'twilightforest:raven_feather',
+                'hexerei:witch_helmet',
                 'twilightforest:torchberries'
             ],
             ritual_dummy: 'kubejs:ritual_summon_wixie',
@@ -33,7 +33,12 @@ ServerEvents.recipes((event) => {
         {
             output: 'ars_nouveau:amethyst_golem_charm',
             activation_item: 'ars_nouveau:conjuration_essence',
-            inputs: ['#forge:gems/amethyst', '#forge:gems/carminite', '#forge:gems/amethyst', '#forge:gems/carminite'],
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                '#forge:gems/amethyst',
+                '#forge:gems/carminite',
+                '#forge:gems/amethyst'
+            ],
             ritual_dummy: 'kubejs:ritual_summon_amethyst_golem',
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:summon_familiar',
@@ -44,9 +49,9 @@ ServerEvents.recipes((event) => {
             output: 'ars_nouveau:starbuncle_charm',
             activation_item: 'ars_nouveau:conjuration_essence',
             inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
                 '#forge:raw_materials/gold',
-                'naturesaura:gold_leaf',
-                'naturesaura:gold_leaf',
                 'naturesaura:gold_leaf'
             ],
             ritual_dummy: 'kubejs:ritual_summon_starbuncle',
