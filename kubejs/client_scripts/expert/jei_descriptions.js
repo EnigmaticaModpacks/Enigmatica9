@@ -28,7 +28,7 @@ JEIEvents.information((event) => {
 
     jei.expert.items.disabled.forEach((item) => {
         if (item !== air) {
-            console.log(`Adding description for ${item}`);
+            // console.log(`Adding description for ${item}`);
             event.addItem(item, disabled_item_message);
         }
     });

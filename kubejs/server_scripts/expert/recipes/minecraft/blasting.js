@@ -15,6 +15,12 @@ ServerEvents.recipes((event) => {
             output: 'minecraft:copper_ingot',
             xp: 0.5,
             id: `${id_prefix}copper_ingot_from_dirty_dust`
+        },
+        {
+            input: '#forge:ores/ironwood',
+            output: '2x twilightforest:ironwood_ingot',
+            xp: 0.5,
+            id: `${id_prefix}ironwood_ingot`
         }
     ];
     recipes.forEach((recipe) => {

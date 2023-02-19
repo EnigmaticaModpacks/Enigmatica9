@@ -14,6 +14,15 @@ ServerEvents.recipes((event) => {
                 C: '#forge:storage_blocks/source'
             },
             id: 'twilightforest:carminite_reactor'
+        },
+        {
+            output: '8x twilightforest:fiery_blood',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'hexerei:blood_bottle',
+                B: 'ars_nouveau:fire_essence'
+            },
+            id: `${id_prefix}fiery_blood`
         }
     ];
 

@@ -51,8 +51,43 @@ ServerEvents.highPriorityData((event) => {
             ]
         },
         {
-            name: 'summon_evil',
+            name: 'lesser_binding',
             x_placement: -7,
+            y_placement: 7,
+            mapping: {
+                0: { type: 'modonomicon:block', block: 'occultism:golden_sacrificial_bowl' },
+                P: { type: 'modonomicon:block', block: 'naturesaura:gold_powder' },
+                W: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_white' },
+                G: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_gold' },
+                C: { type: 'modonomicon:tag', display: 'occultism:candle_white', tag: '#minecraft:candles' }
+            },
+            pattern: [
+                [
+                    '___C_WGC___',
+                    '__P_WG__P__',
+                    '_P_WG____P_',
+                    '___WG_WWW__',
+                    'G__WPWPGGW_',
+                    'WG__W0W__GW',
+                    '_WGGPWPW__G',
+                    '__WWW_GW___',
+                    '_P____GW_P_',
+                    '__P__GW_P__',
+                    '___CGW_C___'
+                ]
+            ],
+            parents: [
+                {
+                    entry: 'occultism:pentacles/summon_familiar',
+                    draw_arrow: true,
+                    line_enabled: true,
+                    line_reversed: false
+                }
+            ]
+        },
+        {
+            name: 'summon_evil',
+            x_placement: -5,
             y_placement: 7,
             mapping: {
                 0: { type: 'modonomicon:block', block: 'occultism:golden_sacrificial_bowl' },
@@ -78,7 +113,7 @@ ServerEvents.highPriorityData((event) => {
             ],
             parents: [
                 {
-                    entry: 'occultism:pentacles/summon_familiar',
+                    entry: 'occultism:pentacles/lesser_binding',
                     draw_arrow: true,
                     line_enabled: true,
                     line_reversed: false
