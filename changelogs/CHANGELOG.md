@@ -1,3 +1,16 @@
+### Enigmatica 9 v1.4.1
+
+_Using Forge-1.19.2-43.2.4_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.4.1.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.4.1.md)_
+
+**Please read the changelog for v1.4.0, this is update is just a small hotfix.**
+
+**Fixed Bugs**
+
+-   Market is Missing Necessary Seeds \(1.4.0\) [\#230](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/230)
+-   Cannot connect to server on version 1.4.0 [\#229](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/229)
+
+---
+
 ### Enigmatica 9 v1.4.0
 
 _Using Forge-1.19.2-43.2.4_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.4.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.4.0.md)_
