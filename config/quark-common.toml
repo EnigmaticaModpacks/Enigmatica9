@@ -886,7 +886,7 @@
 	"Vexes Die With Their Masters" = true
 	"Pig Litters" = true
 	"Double Door Opening" = true
-	"Automatic Recipe Unlock" = true
+	"Automatic Recipe Unlock" = false
 	"Poison Potato Usage" = true
 	"Utility Recipes" = true
 	Emotes = true
