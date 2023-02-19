@@ -195,68 +195,44 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: -2.5d
-			description: [
-				"Obtain a feather from a Raven found throughout the Twilight Forest."
-				""
-				"Blitz are not native to this land, but a rift may occasionally open when breaking Spawners, unleashing elementals and other fearful creatures. "
-			]
-			dependencies: ["4830632A0E6E9651"]
-			id: "6B69280CE1D6D1C2"
-			tasks: [{
-				id: "2DECC7179594A568"
-				type: "item"
-				item: "ars_nouveau:air_essence"
-			}]
-		}
-		{
-			x: -7.0d
-			y: -2.5d
-			description: [
-				"Locate the Trolls who make their homes beneath the Highlands. Find a spot marked by Uberous Soil, dig down to find them, and return with their Magic Beans."
-				""
-				"Basalz are not native to this land, but a rift may occasionally open when breaking Spawners, unleashing elementals and other fearful creatures. "
-			]
-			dependencies: ["4830632A0E6E9651"]
-			id: "5A78078B81975870"
-			tasks: [{
-				id: "14D1952EFF48F2FC"
-				type: "item"
-				item: "ars_nouveau:earth_essence"
-			}]
-		}
-		{
-			x: -6.0d
-			y: -2.5d
-			description: [
-				"Defeat the Hydra in the Fire Swamp and return with a sample of its blood. "
-				""
-				"Blaze are not native to this land, but a rift may occasionally open when breaking Spawners, unleashing elementals and other fearful creatures. "
-			]
-			dependencies: ["4830632A0E6E9651"]
-			id: "2BEBFB8C79677E66"
-			tasks: [{
-				id: "0364D068F5037CA6"
-				type: "item"
-				item: "ars_nouveau:fire_essence"
-			}]
-		}
-		{
+			title: "Elemental Essences"
 			x: -5.0d
-			y: -2.5d
+			y: -2.0d
 			description: [
-				"Brave the frigid caves where Yeti make their homes and return with a sample of their fur. "
+				"Air: Obtain a feather from a Raven found throughout the Twilight Forest."
 				""
-				"Blizz are not native to this land, but a rift may occasionally open when breaking Spawners, unleashing elementals and other fearful creatures. "
+				"Fire: Defeat the Hydra in the Fire Swamp and return with a sample of its blood."
+				""
+				"Water: Brave the frigid caves where Yeti make their homes and return with a sample of their fur."
+				""
+				"Earth: Find a spot marked by Uberous Soil in the Highlands, dig down to find a Troll den, and return with their Magic Beans."
+				""
+				"The elementals required for these Essences are not native to this land, but a rift may occasionally open when breaking Spawners, unleashing elementals and other fearful creatures. "
 			]
 			dependencies: ["4830632A0E6E9651"]
 			id: "667698AAEFEDB15D"
-			tasks: [{
-				id: "2BEDFD34E8B577CB"
-				type: "item"
-				item: "ars_nouveau:water_essence"
-			}]
+			tasks: [
+				{
+					id: "2BEDFD34E8B577CB"
+					type: "item"
+					item: "ars_nouveau:water_essence"
+				}
+				{
+					id: "5C539027F1000F6F"
+					type: "item"
+					item: "ars_nouveau:fire_essence"
+				}
+				{
+					id: "7C61C59DD57BCDEE"
+					type: "item"
+					item: "ars_nouveau:earth_essence"
+				}
+				{
+					id: "1AEA3A87BA3E2144"
+					type: "item"
+					item: "ars_nouveau:air_essence"
+				}
+			]
 		}
 		{
 			x: -3.5d
@@ -302,8 +278,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: -1.5d
+			x: -2.0d
+			y: -0.5d
 			description: ["Obtain a bottle of Sunlight and Right-Click a block of Ironwood to convert it to a Natural Altar. Be sure to build the rest of the required structure as well."]
 			dependencies: ["6DBB9A9F698FA7B9"]
 			id: "4B874AA448FF4C7A"
@@ -380,7 +356,7 @@
 		{
 			title: "Simple Storage"
 			x: 1.0d
-			y: 0.5d
+			y: -0.5d
 			description: ["It’s time we start putting some of this magic to use getting organized. With the Aura Forge we can channel our magical energies into these crystalline networks, allowing us to craft and sort more readily. "]
 			dependencies: [
 				"75C38D71F1A04EB4"
@@ -408,7 +384,7 @@
 		{
 			title: "Familiar Friends"
 			x: 1.0d
-			y: -2.0d
+			y: -3.0d
 			description: [
 				"With the death of the Naga, the fae are willing to grant their aid. They may be summoned forth to occupy many different forms, each of which will grant very useful boons."
 				""
@@ -448,7 +424,7 @@
 		}
 		{
 			x: 1.0d
-			y: -1.0d
+			y: -2.0d
 			description: [
 				"What is a witch without her broom?"
 				""
@@ -468,7 +444,7 @@
 		}
 		{
 			x: 1.0d
-			y: -3.0d
+			y: -4.0d
 			description: ["A wise witch will use every tool at her disposal, and Superior Shields offer a potent source of protection when exploring these lands. "]
 			dependencies: ["058A00E7A69F684A"]
 			id: "7C58B3E61A83C628"
@@ -597,12 +573,54 @@
 		{
 			x: 4.0d
 			y: 1.0d
+			description: [
+				"A Blaze will need to be summoned and bound into appropriate materials to create this device. Luckily, with control of the elements, summoning forth a single Blaze should prove to be a trivial task."
+				""
+				"Each type of elemental may be summoned using Gythia’s Perpetual Geas. Look up Summon Bound Elemental in JEI to see their recipe. These elementals will be summoned with their AI and loot disabled."
+				""
+				"Tip: Look up the recipe for Block of Fiery Metal."
+			]
 			dependencies: ["126F4A37A0A21921"]
 			id: "5038FC4A51F51F31"
 			tasks: [{
 				id: "377114D7550BC0D8"
 				type: "item"
 				item: "create:blaze_burner"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			description: ["The strange process of making Aluminum will begin with Clay converted to Kaolin Clay. Discover the rest of the process through JEI. "]
+			dependencies: ["75C38D71F1A04EB4"]
+			id: "345CBD118EAA0C09"
+			tasks: [{
+				id: "29BB4507855ECBB7"
+				type: "item"
+				title: "Aluminum"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/aluminum"
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			description: [
+				"Use the Spirit of Calling to grow the Tree of Life somewhere in the Twilight Forest. Choose your spot carefully, as this same tree will be upgraded as your progress through the pack. "
+				""
+				"Once the tree has been grown, it is possible to teleport to the Everdawn. Obtain a Moonstone from the Ice Queen to key in the ritual of teleportation. "
+			]
+			dependencies: ["345CBD118EAA0C09"]
+			id: "668B76A0085B4054"
+			tasks: [{
+				id: "156E6D2ED289EC8F"
+				type: "item"
+				item: "naturesaura:calling_spirit"
 			}]
 		}
 	]
