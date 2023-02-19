@@ -13,6 +13,12 @@ ServerEvents.recipes((event) => {
             ],
             pressure: 2.0,
             id: `${id_prefix}quartz_fiber`
+        },
+        {
+            results: [{ item: 'kubejs:kaolin_powder', count: 2 }],
+            inputs: [{ item: 'kubejs:calcined_kaolin_pearls' }],
+            pressure: 4.0,
+            id: `${id_prefix}kaolin_powder`
         }
     ];
 

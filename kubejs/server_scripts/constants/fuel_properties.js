@@ -16,5 +16,6 @@ const fuelProperties = [
     { fuel: 'forge:biofuel', energy: 640000 * fuel_multiplier, rate: 0.8 },
     { fuel: 'forge:creosote', energy: 50000 * fuel_multiplier, rate: 0.25 },
     { fuel: 'forge:refined_fuel', energy: 1500000 * fuel_multiplier, rate: 1.5 },
-    { fuel: 'forge:tree_oil', energy: 100000 * fuel_multiplier, rate: 1.0 }
+    { fuel: 'forge:tree_oil', energy: 100000 * fuel_multiplier, rate: 1.0 },
+    { fuel: 'forge:source', energy: 1100000 * fuel_multiplier, rate: 1.0 }
 ];

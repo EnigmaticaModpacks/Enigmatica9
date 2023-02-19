@@ -13,7 +13,6 @@ ServerEvents.recipes((event) => {
 
         { mod: 'computercraft' },
         { mod: 'superiorshields' },
-        { output: 'twilightforest:ironwood_ingot' },
         { output: 'twilightforest:raw_ironwood' },
         { output: 'minecraft:blast_furnace' },
         { output: 'minecraft:furnace' },
@@ -24,9 +23,9 @@ ServerEvents.recipes((event) => {
 
         { id: /immersiveengineering:blastfurnace\/fuel_charcoal/ },
         { id: /immersiveengineering:crafting\/.*_mix/ },
+        { id: 'immersiveengineering:crafting/treated_wood_horizontal' },
 
         { id: 'ae2:network/blocks/crystal_processing_charger' },
-        { id: 'ae2:network/blocks/energy_vibration_chamber' },
         { id: 'ae2:network/parts/quartz_fiber_part' },
 
         { id: 'ars_nouveau:imbuement_chamber' },
@@ -43,32 +42,13 @@ ServerEvents.recipes((event) => {
 
         { id: 'create:crafting/kinetics/white_sail' },
         { id: 'create:mechanical_crafting/wand_of_symmetry' },
-
-        { id: 'naturesaura:tree_ritual/ore_spawn_powder' },
-        { id: 'naturesaura:tree_ritual/nature_altar' },
-        { id: 'naturesaura:altar/infused_stone' },
-        { id: 'naturesaura:gold_fiber' },
-        { id: 'naturesaura:wood_stand' },
-        { id: 'naturesaura:offering_table' },
-
-        { id: 'naturesaura:flower_generator' },
-        { id: 'naturesaura:oak_generator' },
-        { id: 'naturesaura:slime_split_generator' },
-        { id: 'naturesaura:animal_generator' },
-        { id: 'naturesaura:chorus_generator' },
-        { id: 'naturesaura:moss_generator' },
-
-        { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },
-
-        { id: 'thermal:enderium_dust_2' },
-        { id: 'thermal:lumium_dust_4' },
-        { id: 'thermal:signalum_dust_4' },
-        { id: 'thermal:invar_dust_3' },
-        { id: 'thermal:bronze_dust_4' },
+        { id: 'create:crafting/kinetics/empty_blaze_burner' },
+        { id: 'create:conversion_0' },
 
         { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
         { id: 'hexerei:willow_broom_from_mixing_cauldron' },
         { id: 'hexerei:blood_sigil_from_mixing_cauldron' },
+        { id: 'hexerei:herb_jar_from_mixing_cauldron' },
         { id: 'hexerei:mixing_cauldron' },
 
         { id: 'immersiveengineering:blastfurnace/steel' },
@@ -77,6 +57,7 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:fermentation_station' },
         { id: 'industrialforegoing:fluid_sieving_machine' },
 
+        { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },
         { id: 'pneumaticcraft:pressure_chamber_valve' },
         { id: 'pneumaticcraft:pressure_chamber_glass' },
         { id: 'pneumaticcraft:thermal_compressor' },
@@ -86,9 +67,62 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:solar_compressor' },
         { id: 'pneumaticcraft:manual_compressor' },
         { id: 'pneumaticcraft:logistics_core' },
+        { id: 'pneumaticcraft:spawner_agitator' },
+        { id: 'pneumaticcraft:module_expansion_card' },
+
+        { id: 'supplementaries:jar' },
+
+        { id: 'thermal:enderium_dust_2' },
+        { id: 'thermal:lumium_dust_4' },
+        { id: 'thermal:signalum_dust_4' },
+        { id: 'thermal:invar_dust_3' },
+        { id: 'thermal:bronze_dust_4' },
+        { id: 'thermal:jar_4' },
+
+        { id: 'twilightforest:equipment/fiery_ingot_crafting' },
+        { id: 'twilightforest:material/fiery_iron_ingot' },
+        { id: 'twilightforest:material/fiery_iron_ingot_reversed' },
 
         { id: /chalk/, mod: 'occultism' },
-        { id: /token_/, mod: 'naturesaura' },
+
+        // Disable Power Generation
+
+        { id: 'ae2:network/blocks/energy_vibration_chamber' },
+
+        { id: 'createaddition:mechanical_crafting/alternator' },
+        { id: 'createaddition:crafting/modular_accumulator' },
+
+        { id: 'immersiveengineering:crafting/electric_lantern' },
+        { id: 'immersiveengineering:crafting/transformer' },
+        { id: 'immersiveengineering:crafting/thermoelectric_generator' },
+        { id: 'immersiveengineering:crafting/dynamo' },
+
+        { id: 'mekanismgenerators:rotational_complex' },
+        { id: 'mekanismgenerators:reactor/glass' },
+        { id: 'mekanismgenerators:saturating_condenser' },
+        { id: 'mekanismgenerators:control_rod_assembly' },
+        { id: 'mekanismgenerators:hohlraum' },
+        { id: 'mekanismgenerators:laser_focus_matrix' },
+
+        { id: 'pneumaticcraft:pneumatic_dynamo' },
+
+        { mod: 'immersiveengineering', id: /capacitor/ },
+        { mod: 'immersiveengineering', id: /_lv/ },
+        { mod: 'immersiveengineering', id: /_mv/ },
+        { mod: 'immersiveengineering', id: /_hv/ },
+        { mod: 'industrialforegoing', id: /mycelial/ },
+        { mod: 'industrialforegoing', id: /generator/ },
+        { mod: 'mekanism', id: /induction/ },
+        { mod: 'mekanism', id: /energy_cube/ },
+        { mod: 'mekanismgenerators', id: /generator\/(?!gas_burning$)/ },
+        { mod: 'mekanismgenerators', id: /turbine/ },
+        { mod: 'mekanismgenerators', id: /fission/ },
+        { mod: 'mekanismgenerators', id: /reactor/ },
+        { mod: 'powah', id: /solar_panel/ },
+        { mod: 'powah', id: /thermo_generator/ },
+        { mod: 'powah', id: /magmator/ },
+        { mod: 'powah', id: /furnator/ },
+        { mod: 'thermal', id: /dynamo/ },
 
         // Disable Ore Processing
 

@@ -9,9 +9,9 @@ ServerEvents.recipes((event) => {
             output: 'ars_nouveau:wixie_charm',
             activation_item: 'ars_nouveau:conjuration_essence',
             inputs: [
-                'hexerei:witch_helmet',
+                'hexerei:mindful_trance_blend',
                 'twilightforest:torchberries',
-                'twilightforest:raven_feather',
+                'hexerei:witch_helmet',
                 'twilightforest:torchberries'
             ],
             ritual_dummy: 'kubejs:ritual_summon_wixie',
@@ -33,7 +33,12 @@ ServerEvents.recipes((event) => {
         {
             output: 'ars_nouveau:amethyst_golem_charm',
             activation_item: 'ars_nouveau:conjuration_essence',
-            inputs: ['#forge:gems/amethyst', '#forge:gems/carminite', '#forge:gems/amethyst', '#forge:gems/carminite'],
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                '#forge:gems/amethyst',
+                '#forge:gems/carminite',
+                '#forge:gems/amethyst'
+            ],
             ritual_dummy: 'kubejs:ritual_summon_amethyst_golem',
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:summon_familiar',
@@ -44,9 +49,9 @@ ServerEvents.recipes((event) => {
             output: 'ars_nouveau:starbuncle_charm',
             activation_item: 'ars_nouveau:conjuration_essence',
             inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
                 '#forge:raw_materials/gold',
-                'naturesaura:gold_leaf',
-                'naturesaura:gold_leaf',
                 'naturesaura:gold_leaf'
             ],
             ritual_dummy: 'kubejs:ritual_summon_starbuncle',
@@ -432,6 +437,172 @@ ServerEvents.recipes((event) => {
             duration: 10,
             id: `occultism:ritual/chimera_familiar`
         },
+        {
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'hexerei:seed_mixture',
+                'hexerei:seed_mixture',
+                'hexerei:seed_mixture',
+                'hexerei:seed_mixture'
+            ],
+            entity_to_summon: 'hexerei:crow',
+            ritual_dummy: 'kubejs:ritual_summon_crow',
+            ritual_type: 'occultism:summon_tamed',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_crow`
+        },
+        {
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: [
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'ars_nouveau:fire_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:fire_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:fire_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:fire_essence'
+            ],
+            entity_to_summon: 'minecraft:blaze',
+            entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b,DeathLootTable:"minecraft:entities/bat"}',
+            ritual_dummy: 'kubejs:ritual_summon_bound_blaze',
+            ritual_type: 'occultism:summon',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_bound_blaze`
+        },
+        {
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: [
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'ars_nouveau:air_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:air_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:air_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:air_essence'
+            ],
+            entity_to_summon: 'thermal:blitz',
+            entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b,DeathLootTable:"minecraft:entities/bat"}',
+            ritual_dummy: 'kubejs:ritual_summon_bound_blitz',
+            ritual_type: 'occultism:summon',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_bound_blitz`
+        },
+        {
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: [
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'ars_nouveau:earth_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:earth_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:earth_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:earth_essence'
+            ],
+            entity_to_summon: 'thermal:basalz',
+            entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b,DeathLootTable:"minecraft:entities/bat"}',
+            ritual_dummy: 'kubejs:ritual_summon_bound_basalz',
+            ritual_type: 'occultism:summon',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_bound_basalz`
+        },
+        {
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'ars_nouveau:conjuration_essence',
+            inputs: [
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'quark:gold_bars',
+                'ars_nouveau:water_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:water_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:water_essence',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:water_essence'
+            ],
+            entity_to_summon: 'thermal:blizz',
+            entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b,DeathLootTable:"minecraft:entities/bat"}',
+            ritual_dummy: 'kubejs:ritual_summon_bound_blizz',
+            ritual_type: 'occultism:summon',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_bound_blizz`
+        },
+        {
+            output: 'create:blaze_burner',
+            activation_item: 'minecraft:nether_bricks',
+            inputs: [
+                '#forge:ingots/fiery',
+                '#forge:ingots/fiery',
+                '#forge:ingots/fiery',
+                '#forge:ingots/fiery',
+                'pneumaticcraft:compressed_brick_tile',
+                'pneumaticcraft:compressed_brick_tile',
+                'pneumaticcraft:compressed_brick_tile',
+                'pneumaticcraft:compressed_brick_tile'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/fire',
+                display_name: 'ritual.occultism.sacrifice.fire_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_blaze_burner',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_blaze_burner`
+        },
+        {
+            output: '4x pneumaticcraft:module_expansion_card',
+            activation_item: 'immersiveengineering:coil_mv',
+            inputs: [
+                'pneumaticcraft:compressed_stone_slab',
+                'pneumaticcraft:compressed_stone_slab',
+                'pneumaticcraft:compressed_stone_slab',
+                'pneumaticcraft:compressed_stone_slab',
+                '#forge:gems/certus_quartz',
+                '#forge:gems/certus_quartz',
+                '#forge:gems/certus_quartz',
+                '#forge:gems/certus_quartz'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/air',
+                display_name: 'ritual.occultism.sacrifice.air_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_module_expansion_card',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_module_expansion_card`
+        },
 
         /*
         Custom Summons
@@ -473,27 +644,60 @@ ServerEvents.recipes((event) => {
         },
         {
             output: Item.of('kubejs:tree_of_life_1', { aura_amount: 100000, aura_max: 1000000 }),
-            activation_item: 'twilightforest:rainbow_oak_sapling',
+            activation_item: 'quark:ancient_sapling',
             inputs: [
-                '#forge:storage_blocks/copper',
-                '#forge:storage_blocks/copper',
-                '#forge:storage_blocks/copper',
-                '#forge:storage_blocks/copper'
+                'naturesaura:calling_spirit',
+                'naturesaura:calling_spirit',
+                'naturesaura:calling_spirit',
+                'naturesaura:calling_spirit',
+                'naturesaura:sky_ingot',
+                'ae2:sky_dust',
+                'naturesaura:sky_ingot',
+                'ae2:sky_dust',
+                'ae2:sky_dust',
+                'naturesaura:sky_ingot',
+                'ae2:sky_dust',
+                'naturesaura:sky_ingot'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_1',
             ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:craft_djinni',
+            pentacle_id: 'occultism:summon_foliot',
             duration: 60,
             id: `${id_prefix}ritual_tree_of_life_1`
+        },
+        {
+            output: 'kubejs:teleport_everdawn',
+            activation_item: '#forge:gems/moonstone',
+            inputs: [
+                'naturesaura:sky_ingot',
+                'naturesaura:gold_leaf',
+                'ars_nouveau:air_essence',
+                'naturesaura:gold_leaf',
+
+                'ae2:sky_dust',
+                'ae2:sky_dust',
+                'ae2:sky_dust',
+                'ae2:sky_dust',
+
+                'ae2:sky_dust',
+                'ae2:sky_dust',
+                'ae2:sky_dust',
+                'ae2:sky_dust'
+            ],
+            ritual_dummy: 'kubejs:ritual_teleport_everdawn',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:tree_of_life_stage_1',
+            duration: 10,
+            id: `${id_prefix}ritual_teleport_everdawn`
         },
         {
             output: Item.of('kubejs:tree_of_life_2', { aura_amount: 200000, aura_max: 1000000 }),
             activation_item: 'twilightforest:rainbow_oak_sapling',
             inputs: [
-                '#forge:storage_blocks/silver',
-                '#forge:storage_blocks/silver',
-                '#forge:storage_blocks/silver',
-                '#forge:storage_blocks/silver'
+                '#forge:storage_blocks/iesnium',
+                '#forge:storage_blocks/iesnium',
+                '#forge:storage_blocks/iesnium',
+                '#forge:storage_blocks/iesnium'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_2',
             ritual_type: 'occultism:craft',
@@ -505,10 +709,10 @@ ServerEvents.recipes((event) => {
             output: Item.of('kubejs:tree_of_life_3', { aura_amount: 500000, aura_max: 1500000 }),
             activation_item: 'twilightforest:rainbow_oak_sapling',
             inputs: [
-                '#forge:storage_blocks/gold',
-                '#forge:storage_blocks/gold',
-                '#forge:storage_blocks/gold',
-                '#forge:storage_blocks/gold'
+                '#forge:storage_blocks/iesnium',
+                '#forge:storage_blocks/iesnium',
+                '#forge:storage_blocks/iesnium',
+                '#forge:storage_blocks/iesnium'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_3',
             ritual_type: 'occultism:craft',
@@ -520,10 +724,10 @@ ServerEvents.recipes((event) => {
             output: Item.of('kubejs:tree_of_life_4', { aura_amount: 4000000, aura_max: 4000000 }),
             activation_item: 'twilightforest:rainbow_oak_sapling',
             inputs: [
-                '#forge:storage_blocks/emerald',
-                '#forge:storage_blocks/emerald',
-                '#forge:storage_blocks/emerald',
-                '#forge:storage_blocks/emerald'
+                '#forge:storage_blocks/iesnium',
+                '#forge:storage_blocks/iesnium',
+                '#forge:storage_blocks/iesnium',
+                '#forge:storage_blocks/iesnium'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_4',
             ritual_type: 'occultism:craft',

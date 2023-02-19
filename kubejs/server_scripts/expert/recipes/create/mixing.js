@@ -27,6 +27,25 @@ ServerEvents.recipes((event) => {
             ],
             heatRequirement: 'heated',
             id: `${id_prefix}iron_dust_from_redstone_acid`
+        },
+        {
+            ingredients: [{ amount: 900, fluidTag: 'forge:latex' }],
+            results: [{ amount: 100, fluid: 'minecraft:water' }, { item: 'thermal:rubber' }],
+            heatRequirement: 'heated',
+            id: `${id_prefix}rubber`
+        },
+        {
+            ingredients: [
+                { item: 'thermal:rubber' },
+                { item: 'thermal:rubber' },
+                { item: 'thermal:rubber' },
+                { item: 'thermal:rubber' },
+                { item: 'ars_nouveau:fire_essence' },
+                { amount: 1000, fluid: 'minecraft:water' }
+            ],
+            results: [{ item: 'thermal:cured_rubber', count: 4 }],
+            heatRequirement: 'heated',
+            id: `${id_prefix}cured_rubber`
         }
     ];
 
