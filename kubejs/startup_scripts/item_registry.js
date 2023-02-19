@@ -17,7 +17,8 @@ StartupEvents.registry('item', (event) => {
         'red_nether_brick',
         'kaolin_clay',
         'calcined_kaolin_pearls',
-        'kaolin_powder'
+        'kaolin_powder',
+        'mystery_mash'
     ];
 
     const ritualDummies = [

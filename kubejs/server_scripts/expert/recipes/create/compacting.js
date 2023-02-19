@@ -1,4 +1,7 @@
 ServerEvents.recipes((event) => {
+    if (global.isExpertMode == false) {
+        return;
+    }
     const id_prefix = 'enigmatica:expert/create/compacting/';
     const recipes = [
         {
@@ -20,6 +23,21 @@ ServerEvents.recipes((event) => {
             ],
             results: [{ fluid: 'industrialforegoing:latex', amount: 200 }],
             id: `${id_prefix}latex_from_vine`
+        },
+        {
+            ingredients: [
+                [{ tag: 'forge:foods/meat/raw' }, { item: 'minecraft:rotten_flesh' }],
+                [{ tag: 'forge:foods/meat/raw' }, { item: 'minecraft:rotten_flesh' }],
+                [{ tag: 'forge:foods/meat/raw' }, { item: 'minecraft:rotten_flesh' }],
+                [{ tag: 'forge:foods/meat/raw' }, { item: 'minecraft:rotten_flesh' }],
+                [{ item: 'minecraft:spider_eye' }, { item: 'blue_skies:bug_guts' }],
+                [{ item: 'minecraft:spider_eye' }, { item: 'blue_skies:bug_guts' }]
+            ],
+            results: [
+                { fluid: 'hexerei:blood_fluid', amount: 250 },
+                { item: 'kubejs:mystery_mash', count: 2 }
+            ],
+            id: `${id_prefix}mystery_mash`
         }
     ];
 

@@ -134,7 +134,8 @@ jei.normal.items.hidden = [
     'kubejs:summon_death_tome',
     'kubejs:teleport_everdawn',
     'kubejs:teleport_everbright',
-    'kubejs:pig_iron_ingot'
+    'kubejs:pig_iron_ingot',
+    'kubejs:mystery_mash'
 ];
 jei.normal.fluids.hidden = [];
 jei.normal.categories.hidden = [];

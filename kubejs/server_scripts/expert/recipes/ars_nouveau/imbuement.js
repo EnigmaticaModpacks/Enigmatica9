@@ -127,9 +127,9 @@ ServerEvents.recipes((event) => {
             output: 'ars_elemental:anima_essence',
             count: 1,
             pedestalItems: [
+                { item: { item: 'twilightforest:charm_of_life_2' } },
                 { item: { tag: 'forge:ingots/lead' } },
-                { item: { item: 'hexerei:blood_bottle' } },
-                { item: { item: 'twilightforest:charm_of_life_2' } }
+                { item: { item: 'hexerei:blood_bottle' } }
             ],
             source: 2000,
             id: `ars_elemental:imbuement_anima_essence`

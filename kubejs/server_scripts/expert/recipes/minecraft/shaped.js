@@ -41,6 +41,15 @@ ServerEvents.recipes((event) => {
                 B: '#forge:dusts/redstone'
             },
             id: `minecraft:compass`
+        },
+        {
+            output: '8x minecraft:dragon_breath',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'twilightforest:fiery_blood',
+                B: 'ars_nouveau:air_essence'
+            },
+            id: `${id_prefix}dragon_breath`
         }
     ];
 
