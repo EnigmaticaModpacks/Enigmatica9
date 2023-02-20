@@ -21,8 +21,6 @@
 				"Beyond these quests, there is no in game guide to Mekanism. However a very thorough official wiki can be found here: "
 				""
 				"https://wiki.aidancbrady.com"
-				""
-				"~MuteTiefling"
 			]
 			optional: true
 			id: "00000000000006A1"
@@ -1156,7 +1154,11 @@
 				""
 				"It’s also fully compatible with Applied Energistics 2. Simply place a configured QIO Dashboard on an ME Storage Bus to grant AE2 full access to the entire contents of the QIO system."
 			]
-			dependencies: ["6515A1D74E64D5AF"]
+			dependencies: [
+				"6515A1D74E64D5AF"
+				"530BB11487524556"
+			]
+			dependency_requirement: "one_completed"
 			id: "00000000000007C7"
 			tasks: [
 				{

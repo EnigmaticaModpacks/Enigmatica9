@@ -431,10 +431,16 @@
 				""
 				"Though it starts out rather small, its capacity may be greatly expanded by adding Stabilizers. Up to six Stabilizers may be added; place them so they are facing the crystal atop the Actuator itself."
 				""
-				"Storage Actuators may be picked up and moved without concern over their contents; everything will be right where it was left when the Storage Actuator is placed back down. Anything linked to the Actuator, such as Wormholes, will need to be rebound, however. "
+				"The Actuator is accessible manually and via automation such as pipes, hoppers, or an ME Storage Bus."
+				""
+				"They may be picked up and moved without concern for their contents; everything will be right where it was left when the Storage Actuator is placed back down. Anything linked to the Actuator, such as Wormholes, will need to be rebound, however. "
 			]
-			hide_dependency_lines: true
-			dependencies: ["6A1D5A9B037CB379"]
+			dependencies: [
+				"6A1D5A9B037CB379"
+				"530BB11487524556"
+			]
+			dependency_requirement: "one_completed"
+			min_width: 300
 			id: "0000000000000DA4"
 			tasks: [{
 				id: "0000000000000DA5"
@@ -594,7 +600,6 @@
 				""
 				"Right-Click a creature to store it, and Right-Click again on a block to release it. "
 			]
-			hide_dependency_lines: true
 			dependencies: ["4F87CE318651EBA0"]
 			id: "0000000000000DBC"
 			tasks: [{

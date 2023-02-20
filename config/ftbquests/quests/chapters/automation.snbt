@@ -1,7 +1,7 @@
 {
 	id: "00000000000002AB"
 	group: "0856CF7F5CBEB20A"
-	order_index: 1
+	order_index: 2
 	filename: "automation"
 	title: "Automation [WIP]"
 	icon: "minecraft:hopper"

@@ -152,7 +152,11 @@
 				""
 				"Once in the desired mode, simply Right Click the target drawer to bind or unbind it. If in Multiple Linking Mode, Right Click a Start and End drawer. Every drawer in the selected area will be linked at once. Every drawer linked to the selected Controller will be highlighted as well while the Linking Tool is in hand. "
 			]
-			dependencies: ["0000000000000966"]
+			dependencies: [
+				"0000000000000966"
+				"530BB11487524556"
+			]
+			dependency_requirement: "one_completed"
 			min_width: 300
 			id: "000000000000040F"
 			tasks: [{
@@ -727,9 +731,12 @@
 			description: [
 				"Got more gadgets and gizmos than one cavern can hold? More whozits and whatzits than you know what to do with? Then its time to shove it in another dimension and hire someone to sort it for you. Just read the fine print of any contracts you sign."
 				""
-				"Occultism offers extensive storage capabilities with cross-dimensional access both manually and via automation. Check out the Occultism chapter for more details on the process. "
+				"Occultism offers extensive storage capabilities with cross-dimensional access both manually and via automation such as pipes, hoppers, or an ME Storage Bus."
+				""
+				"Check out the Occultism chapter for more details on the process."
 			]
 			dependencies: ["0000000000000400"]
+			min_width: 300
 			id: "662DA1135F00D6B6"
 			tasks: [{
 				id: "0B58FB5EED4BBC33"
@@ -1330,7 +1337,12 @@
 				""
 				"Finally, Right Click one or more Storage Links to create the connection. Each successful link will render a line between the Controller and the Storage Link. "
 			]
-			dependencies: ["0000000000000405"]
+			dependencies: [
+				"0000000000000405"
+				"530BB11487524556"
+			]
+			dependency_requirement: "one_completed"
+			min_width: 300
 			id: "50D051B9CD6372F1"
 			tasks: [{
 				id: "649223683D1A2C0E"
