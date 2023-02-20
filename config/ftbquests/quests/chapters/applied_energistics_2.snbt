@@ -37,7 +37,7 @@
 		{
 			title: "Inscribers Presses"
 			icon: "ae2:mysterious_cube"
-			x: 0.5d
+			x: 1.0d
 			y: 5.5d
 			dependencies: ["029656A1597547F9"]
 			id: "0F2195611D84F112"
@@ -67,26 +67,19 @@
 		{
 			title: "ME Networks"
 			x: 0.0d
-			y: 8.5d
+			y: 6.0d
 			shape: "hexagon"
 			hide_dependency_lines: true
-			dependencies: ["029656A1597547F9"]
+			dependencies: [
+				"029656A1597547F9"
+				"0F2195611D84F112"
+			]
 			min_width: 300
 			id: "4D7FF267C7EC2845"
 			tasks: [{
 				id: "5C31D902CE28DDCA"
 				type: "item"
 				item: "ae2:controller"
-			}]
-		}
-		{
-			x: 0.5d
-			y: 7.0d
-			id: "2DD0595900C6DB50"
-			tasks: [{
-				id: "6472158860788570"
-				type: "item"
-				item: "ae2:inscriber"
 			}]
 		}
 		{
@@ -106,8 +99,7 @@
 		{
 			title: "Data Access"
 			x: -4.0d
-			y: 6.0d
-			size: 1.25d
+			y: 3.5d
 			id: "76F892354A1D506E"
 			tasks: [{
 				id: "4945C5BE4399BBBC"
@@ -184,8 +176,8 @@
 		}
 		{
 			title: "Making Connections"
-			x: -9.375d
-			y: 10.0d
+			x: 1.5d
+			y: 7.0d
 			id: "66057A9358B600A9"
 			tasks: [{
 				id: "03067EF23D3A38BA"
@@ -194,79 +186,77 @@
 			}]
 		}
 		{
-			x: -9.5d
-			y: 11.5d
+			x: 2.0d
+			y: 8.0d
 			dependencies: ["66057A9358B600A9"]
 			id: "7CCBE728C0D5090E"
 			tasks: [{
-				id: "0F20551AB190A2C8"
+				id: "2D997A56E5002CDC"
 				type: "item"
-				item: "ae2:fluix_covered_cable"
-			}]
-		}
-		{
-			x: -10.5d
-			y: 13.0d
-			dependencies: ["7CCBE728C0D5090E"]
-			id: "75D5781C38BED7C1"
-			tasks: [{
-				id: "3DE2DF0A2FB2522B"
-				type: "item"
-				item: "ae2:fluix_smart_cable"
-			}]
-		}
-		{
-			x: -8.5d
-			y: 13.0d
-			dependencies: ["7CCBE728C0D5090E"]
-			id: "58A23953FB5FBE57"
-			tasks: [{
-				id: "090BB2AAC68C4B2E"
-				type: "item"
-				item: "ae2:fluix_smart_dense_cable"
-			}]
-		}
-		{
-			x: -6.0d
-			y: 5.0d
-			subtitle: "Basic access to your items."
-			dependencies: ["76F892354A1D506E"]
-			id: "445236A56FB608A0"
-			tasks: [{
-				id: "3D28C64FB246F1D2"
-				type: "item"
-				item: "ae2:terminal"
+				title: "Fluix Cables"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "ae2:fluix_covered_cable"
+								Count: 1b
+							}
+							{
+								id: "ae2:fluix_covered_dense_cable"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 		}
 		{
 			title: "Autocrafting"
-			icon: "ae2:molecular_assembler"
-			x: -4.375d
-			y: 10.625d
+			x: -0.5d
+			y: 7.0d
+			dependencies: ["4D7FF267C7EC2845"]
 			id: "2FC3BF03747E40DB"
 			tasks: [{
-				id: "02E89EA21A09379A"
-				type: "checkmark"
-				title: "Got it!"
+				id: "33D2FF53122B1461"
+				type: "item"
+				item: "minecraft:crafting_table"
 			}]
 		}
 		{
-			x: -6.5d
-			y: 6.0d
-			subtitle: "ME Terminal, but better!"
-			dependencies: ["76F892354A1D506E"]
+			title: "System Access"
+			x: 3.5d
+			y: 7.0d
+			hide_dependency_lines: true
+			dependencies: ["0F2195611D84F112"]
 			id: "6C9905294D4D45A5"
 			tasks: [{
-				id: "6CF5407A092B3E2B"
+				id: "0BB7E1F714963E4B"
 				type: "item"
-				item: "ae2:crafting_terminal"
+				title: "Terminals"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "ae2:crafting_terminal"
+								Count: 1b
+							}
+							{
+								id: "ae2:terminal"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 		}
 		{
-			x: -6.0d
-			y: 7.0d
-			subtitle: "Autocrafting recipe Encoder 2000"
-			dependencies: ["76F892354A1D506E"]
+			x: -1.0d
+			y: 8.0d
+			dependencies: ["2FC3BF03747E40DB"]
 			id: "7AF744A523A2B515"
 			tasks: [{
 				id: "3B63A2A1BC35B3C2"
@@ -275,107 +265,40 @@
 			}]
 		}
 		{
-			x: 9.5d
-			y: 10.5d
+			title: "ME P2P Tunnels"
+			icon: "ae2:me_p2p_tunnel"
+			x: -1.5d
+			y: 6.0d
+			dependencies: ["4D7FF267C7EC2845"]
 			id: "2A5E79640AB4BDA5"
-			tasks: [{
-				id: "50035793446D9D61"
-				type: "item"
-				item: "ae2:me_p2p_tunnel"
-			}]
-		}
-		{
-			x: 8.5d
-			y: 12.0d
-			dependencies: ["2A5E79640AB4BDA5"]
-			id: "134AAAFB2F6D0BED"
-			tasks: [{
-				id: "63E4100F99784F63"
-				type: "item"
-				item: "ae2:redstone_p2p_tunnel"
-			}]
-		}
-		{
-			x: 9.5d
-			y: 12.0d
-			dependencies: ["2A5E79640AB4BDA5"]
-			id: "099A09D29367D7E6"
-			tasks: [{
-				id: "3787855A633EEC70"
-				type: "item"
-				item: "ae2:item_p2p_tunnel"
-			}]
-		}
-		{
-			x: 10.5d
-			y: 12.0d
-			dependencies: ["2A5E79640AB4BDA5"]
-			id: "26F87545CC848BFE"
-			tasks: [{
-				id: "7DF909B91FB6AC63"
-				type: "item"
-				item: "ae2:fluid_p2p_tunnel"
-			}]
-		}
-		{
-			x: 8.5d
-			y: 13.0d
-			dependencies: [
-				"134AAAFB2F6D0BED"
-				"50035793446D9D61"
-			]
-			dependency_requirement: "one_completed"
-			id: "423AC17A44D89338"
-			tasks: [{
-				id: "14B702CEE5EBF73B"
-				type: "item"
-				item: "ae2:fe_p2p_tunnel"
-			}]
-		}
-		{
-			x: 9.5d
-			y: 13.0d
-			dependencies: ["2A5E79640AB4BDA5"]
-			id: "1A9226D2D5A6AA54"
-			tasks: [{
-				id: "46E08FEF8AD0DA38"
-				type: "item"
-				item: "ae2:light_p2p_tunnel"
-			}]
-		}
-		{
-			x: 10.5d
-			y: 13.0d
-			dependencies: [
-				"26F87545CC848BFE"
-				"50035793446D9D61"
-			]
-			dependency_requirement: "one_completed"
-			id: "03008FAF72AAB636"
-			tasks: [{
-				id: "30CB5E1FAE7947D1"
-				type: "item"
-				item: "appmek:chemical_p2p_tunnel"
-			}]
-		}
-		{
-			x: 11.0d
-			y: 11.0d
-			dependencies: ["2A5E79640AB4BDA5"]
-			id: "675D023FFB0A8C1A"
-			tasks: [{
-				id: "7F40B3E88D37A108"
-				type: "item"
-				item: {
-					id: "ae2:memory_card_white"
-					Count: 1b
-					tag: { }
+			tasks: [
+				{
+					id: "50035793446D9D61"
+					type: "item"
+					item: "ae2:me_p2p_tunnel"
 				}
-			}]
+				{
+					id: "427D3687B5F51674"
+					type: "item"
+					title: "Memory Cards"
+					icon: {
+						id: "ae2:memory_card"
+						Count: 1b
+						tag: { }
+					}
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "ae2:memory_cards"
+						}
+					}
+				}
+			]
 		}
 		{
-			x: -5.5d
-			y: 12.0d
+			x: 0.0d
+			y: 9.0d
 			dependencies: ["2FC3BF03747E40DB"]
 			id: "22640DCB27BB1DE8"
 			tasks: [{
@@ -385,19 +308,8 @@
 			}]
 		}
 		{
-			title: "I/O And others"
 			x: 0.0d
-			y: 10.5d
-			id: "7D87DA985E8B4EB0"
-			tasks: [{
-				id: "1F13477AE575D37B"
-				type: "item"
-				item: "ae2:interface"
-			}]
-		}
-		{
-			x: -4.5d
-			y: 12.0d
+			y: 8.0d
 			dependencies: ["2FC3BF03747E40DB"]
 			id: "3B2DA9A2923AC61E"
 			tasks: [{
@@ -407,9 +319,9 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: 12.0d
-			dependencies: ["2FC3BF03747E40DB"]
+			x: 3.0d
+			y: 8.0d
+			dependencies: ["6C9905294D4D45A5"]
 			id: "0E5806537154F593"
 			tasks: [{
 				id: "4521A27E2919EA8B"
@@ -419,9 +331,9 @@
 		}
 		{
 			title: "ME Import/Export bus"
-			x: -1.0d
-			y: 12.0d
-			dependencies: ["7D87DA985E8B4EB0"]
+			x: 4.0d
+			y: 8.0d
+			dependencies: ["6C9905294D4D45A5"]
 			id: "7DBCBBB2A18DDDA0"
 			tasks: [
 				{
@@ -437,9 +349,9 @@
 			]
 		}
 		{
-			x: 0.0d
-			y: 12.0d
-			dependencies: ["7D87DA985E8B4EB0"]
+			x: 3.0d
+			y: 9.0d
+			dependencies: ["6C9905294D4D45A5"]
 			id: "3E08D8EF1B87C547"
 			tasks: [{
 				id: "3A86D6762EA204DB"
@@ -448,9 +360,9 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 12.0d
-			dependencies: ["7D87DA985E8B4EB0"]
+			x: 4.0d
+			y: 9.0d
+			dependencies: ["6C9905294D4D45A5"]
 			id: "444829B39E4D1BAA"
 			tasks: [{
 				id: "4853E968B5FAADDB"
@@ -459,8 +371,8 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: 4.5d
+			x: -4.5d
+			y: 5.5d
 			dependencies: ["76F892354A1D506E"]
 			id: "4E537D57D8775F31"
 			tasks: [{
@@ -470,9 +382,9 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: 7.5d
-			dependencies: ["76F892354A1D506E"]
+			x: -1.0d
+			y: 9.0d
+			dependencies: ["2FC3BF03747E40DB"]
 			id: "158C1E5F495210A8"
 			tasks: [{
 				id: "7DE1A12F377BD86A"
@@ -549,10 +461,13 @@
 		{
 			title: "Ad Hoc Networks"
 			x: 3.0d
-			y: 8.5d
+			y: 6.0d
 			shape: "hexagon"
 			hide_dependency_lines: true
-			dependencies: ["029656A1597547F9"]
+			dependencies: [
+				"029656A1597547F9"
+				"63F29EE4BDECADC5"
+			]
 			id: "79315557F8BB1F99"
 			tasks: [{
 				id: "577B6CFE4EE21CB6"
@@ -561,7 +476,7 @@
 			}]
 		}
 		{
-			x: 2.5d
+			x: 2.0d
 			y: 5.5d
 			dependencies: ["029656A1597547F9"]
 			id: "63F29EE4BDECADC5"
@@ -569,6 +484,31 @@
 				id: "4535F6ED34F0C681"
 				type: "item"
 				item: "ae2:certus_quartz_crystal"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 8.0d
+			id: "687BAD603A1C2360"
+			tasks: [{
+				id: "7A14B98C53180A0E"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "ae2:fluix_smart_cable"
+								Count: 1b
+							}
+							{
+								id: "ae2:fluix_smart_dense_cable"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 		}
 	]
