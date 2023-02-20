@@ -39,8 +39,8 @@
         "clusters": [],
         "chance": 5,
         "crackChance": 0.15,
-        "minYLevel": 10,
-        "maxYLevel": 40,
+        "minYLevel": 20,
+        "maxYLevel": 75,
         "generateSamples": true,
         "sampleBlocks": [
             { "material": "emerald", "weight": 10, "strata": "minecraft_dripstone"}

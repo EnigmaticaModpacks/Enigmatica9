@@ -25,7 +25,7 @@
         "fillBlocks": [{"block": "minecraft:water", "weight": 10}],
         "chance": 1,
         "crackChance": 0,
-        "minYLevel": -30,
+        "minYLevel": -50,
         "maxYLevel": 30,
         "generateSamples": true,
         "sampleBlocks": [

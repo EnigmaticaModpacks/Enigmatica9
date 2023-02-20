@@ -25,7 +25,7 @@
         "fillBlocks": [{"block": "minecraft:air", "weight": 10}],
         "chance": 1,
         "crackChance": 0.15,
-        "minYLevel": -30,
+        "minYLevel": -50,
         "maxYLevel": 30,
         "generateSamples": false,
         "sampleBlocks": [],
