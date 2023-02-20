@@ -251,9 +251,11 @@
 			x: -10.0d
 			y: -9.5d
 			description: [
-				"Enigmatica 9 does not contain any form of dedicated Vein Miner mod, such as the FTB Ultimine or Ore Excavation mods."
+				"There is no dedicated vein miner mod in Enigmatica 9 since we’ve got a variety of very cool tools that offer the same features and more."
 				""
-				"Why? Well, because we’ve got some fancy tools that perform various AoE mining tasks, and we’d like to showcase them instead."
+				"AoE Mining? Vein Mining? Spooky Mining at a Distance? Yeah, we’ve got that. "
+				""
+				"The following quests will help highlight some of the more notable options. Enjoy!"
 			]
 			id: "358FAB3D482C463A"
 			tasks: [{

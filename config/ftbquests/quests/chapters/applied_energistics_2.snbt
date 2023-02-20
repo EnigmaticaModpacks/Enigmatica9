@@ -11,43 +11,34 @@
 	quests: [
 		{
 			title: "Applied Energistics 2"
-			icon: "ae2:network_tool"
-			x: 0.0d
-			y: 0.0d
-			shape: "gear"
-			subtitle: "Advanced, unknown technology about Matter and Energy."
-			description: [
-				"Mysterious meteors are falling into our world, destroying everything near their drop area. Inside could be found mysterious materials with unknown use..."
-				""
-				"Applied Energistics 2 is a mod about Matter and Energy, gathered up for you from unknown location in space. Go find some meteors and lets get started! A Meteor Compass will assist you on your journey."
-				""
-				"~~Kanzaji"
-			]
-			size: 2.0d
-			optional: true
+			x: 1.5d
+			y: 4.0d
+			shape: "hexagon"
 			min_width: 250
 			id: "029656A1597547F9"
-			tasks: [{
-				id: "36C5E69A78A3237E"
-				type: "checkmark"
-				title: "Got it!"
-			}]
+			tasks: [
+				{
+					id: "34690026FC214351"
+					type: "item"
+					item: "ae2:charger"
+				}
+				{
+					id: "15965A8AF7CCE96E"
+					type: "item"
+					item: "ae2:meteorite_compass"
+				}
+			]
 			rewards: [{
-				id: "489D15693FC9DD62"
+				id: "7FFEDF9D76A8D048"
 				type: "item"
-				item: "ae2:sky_compass"
+				item: "ae2:certus_quartz_wrench"
 			}]
 		}
 		{
 			title: "Inscribers Presses"
-			x: -2.5d
-			y: 1.0d
-			subtitle: "Beware of falling meteors!"
-			description: [
-				"The dark stone that meteors are made of, was called by people `Sky Stone`. It's also known that some researchers found weird, mysterious looking plates inside, what those could be used for?"
-				""
-				"So what, you are just staying still and looking at it? Prepare a decent pick, and take a look inside!"
-			]
+			icon: "ae2:mysterious_cube"
+			x: 0.5d
+			y: 5.5d
 			dependencies: ["029656A1597547F9"]
 			id: "0F2195611D84F112"
 			tasks: [
@@ -72,30 +63,14 @@
 					item: "ae2:calculation_processor_press"
 				}
 			]
-			rewards: [{
-				id: "2E982F1051C138FF"
-				type: "custom"
-				title: "[WIP] AE2 Loot box"
-			}]
 		}
 		{
-			title: "ME Controller"
+			title: "ME Networks"
 			x: 0.0d
-			y: 6.0d
-			shape: "diamond"
-			subtitle: "Mystical brain of your network... with flashy lights!"
-			description: [
-				"ME Controller is necessary part of every AE2 network. It acts like a brain of it, handling entire logic required for system to work properly."
-				""
-				"Every AE2 machine requires connection (direct or by other machines) to the controller, using one channel for that. Each side of ME Controller can handle up to 32 channels, but that doesn't mean you are limited by any means."
-				""
-				"Even though you can't have more than one ME Controller in your network, placing second ME Controller next to yours will chain them together, adding additional sides for your connections!"
-			]
-			dependencies: [
-				"6329EECEEC9FF19B"
-				"7E0FBBF1F9978508"
-			]
-			size: 2.5d
+			y: 8.5d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["029656A1597547F9"]
 			min_width: 300
 			id: "4D7FF267C7EC2845"
 			tasks: [{
@@ -103,17 +78,10 @@
 				type: "item"
 				item: "ae2:controller"
 			}]
-			rewards: [{
-				id: "18704D22FFA6C1D4"
-				type: "item"
-				item: "ae2:controller"
-			}]
 		}
 		{
-			x: -1.0d
-			y: 2.5d
-			subtitle: "Ryzen 9 7900x Production Line"
-			dependencies: ["74E1FEF2E87706BD"]
+			x: 0.5d
+			y: 7.0d
 			id: "2DD0595900C6DB50"
 			tasks: [{
 				id: "6472158860788570"
@@ -122,142 +90,23 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 1.0d
-			dependencies: ["029656A1597547F9"]
-			id: "5E579D8F17574996"
-			tasks: [{
-				id: "162F98B704F506F3"
-				type: "item"
-				item: "ae2:certus_quartz_crystal"
-			}]
-		}
-		{
-			x: 2.5d
-			y: 4.0d
-			subtitle: "Mysterious crystal radiating some kind of energy."
-			dependencies: ["17C83BD54C7C48F7"]
-			id: "7E0FBBF1F9978508"
-			tasks: [{
-				id: "3EEF055623B7452E"
-				type: "item"
-				item: "ae2:fluix_crystal"
-			}]
-		}
-		{
-			x: 1.0d
-			y: 2.5d
-			subtitle: "But, it can charge my Smartphone right?"
-			dependencies: ["74E1FEF2E87706BD"]
-			id: "6FD9F084D7AD482C"
-			tasks: [{
-				id: "32C3B4C9E870A245"
-				type: "item"
-				item: "ae2:charger"
-			}]
-		}
-		{
-			x: 2.5d
-			y: 2.5d
-			subtitle: "Shocking."
-			dependencies: [
-				"5E579D8F17574996"
-				"6FD9F084D7AD482C"
-			]
-			id: "17C83BD54C7C48F7"
-			tasks: [{
-				id: "5F9647C3051440DF"
-				type: "item"
-				item: "ae2:charged_certus_quartz_crystal"
-			}]
-		}
-		{
-			title: "Computing Processors"
-			x: -2.5d
-			y: 4.0d
-			subtitle: "Are those AMD, Intel or Nvidia?"
-			dependencies: [
-				"2DD0595900C6DB50"
-				"0F2195611D84F112"
-			]
-			id: "6329EECEEC9FF19B"
-			tasks: [
-				{
-					id: "3FA114D411E72C0A"
-					type: "item"
-					item: "ae2:logic_processor"
-				}
-				{
-					id: "309D5ABEC6F96C73"
-					type: "item"
-					item: "ae2:calculation_processor"
-				}
-				{
-					id: "1E9F113D3DA9A188"
-					type: "item"
-					item: "ae2:engineering_processor"
-				}
-				{
-					id: "1032E2CCDB5ACA96"
-					type: "item"
-					item: "ae2:printed_silicon"
-				}
-			]
-		}
-		{
-			title: "Power Generation"
-			x: 0.0d
-			y: 2.0d
-			subtitle: "Using vibration to generate energy."
-			dependencies: ["029656A1597547F9"]
-			id: "74E1FEF2E87706BD"
-			tasks: [{
-				id: "26FCB66DD39B762C"
-				type: "item"
-				title: "Any Energy Generator"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "ae2:vibration_chamber"
-								Count: 1b
-							}
-							{
-								id: "ae2:energy_acceptor"
-								Count: 1b
-							}
-						]
-					}
-				}
-			}]
-			rewards: [{
-				id: "1D4F82A74E569910"
-				type: "item"
-				item: "ae2:fluix_glass_cable"
-				count: 8
-			}]
-		}
-		{
 			title: "Storage"
-			icon: "ae2:drive"
-			x: 4.0d
-			y: 6.0d
-			dependencies: ["4D7FF267C7EC2845"]
-			size: 1.25d
+			icon: "minecraft:barrel"
+			x: 10.5d
+			y: 2.5d
+			hide_dependency_lines: true
+			dependencies: ["029656A1597547F9"]
 			id: "67C91F3187348C8E"
 			tasks: [{
-				id: "36E9521C381DD207"
-				type: "checkmark"
-				title: "Got it!"
+				id: "2D62B05AECEFC2E8"
+				type: "item"
+				item: "ae2:certus_quartz_wrench"
 			}]
 		}
 		{
 			title: "Data Access"
 			x: -4.0d
 			y: 6.0d
-			dependencies: ["4D7FF267C7EC2845"]
 			size: 1.25d
 			id: "76F892354A1D506E"
 			tasks: [{
@@ -267,8 +116,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 4.5d
+			x: 12.0d
+			y: 3.5d
 			dependencies: ["67C91F3187348C8E"]
 			id: "2288AA73FE626BFB"
 			tasks: [{
@@ -278,7 +127,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: 12.0d
 			y: 4.5d
 			dependencies: ["2288AA73FE626BFB"]
 			id: "211D0FAA0B023EF0"
@@ -293,8 +142,8 @@
 			}]
 		}
 		{
-			x: 8.0d
-			y: 3.5d
+			x: 11.0d
+			y: 4.5d
 			dependencies: ["2288AA73FE626BFB"]
 			id: "6B9F725AE5A94531"
 			tasks: [{
@@ -308,8 +157,8 @@
 			}]
 		}
 		{
-			x: 8.0d
-			y: 5.5d
+			x: 13.0d
+			y: 4.5d
 			dependencies: ["2288AA73FE626BFB"]
 			id: "22AB44AE329F9EA8"
 			tasks: [{
@@ -323,8 +172,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 6.0d
+			x: 9.0d
+			y: 3.5d
 			dependencies: ["67C91F3187348C8E"]
 			id: "530BB11487524556"
 			tasks: [{
@@ -334,49 +183,9 @@
 			}]
 		}
 		{
-			x: 10.0d
-			y: 4.5d
-			dependencies: [
-				"6B9F725AE5A94531"
-				"211D0FAA0B023EF0"
-				"22AB44AE329F9EA8"
-			]
-			id: "069227FAEB39A704"
-			tasks: [
-				{
-					id: "503FDEBDBF268840"
-					type: "item"
-					item: {
-						id: "ae2:item_storage_cell_256k"
-						Count: 1b
-						tag: { }
-					}
-				}
-				{
-					id: "40D88B0A5A13DFCD"
-					type: "item"
-					item: {
-						id: "ae2:fluid_storage_cell_256k"
-						Count: 1b
-						tag: { }
-					}
-				}
-				{
-					id: "16F83D5D2EAC6AB0"
-					type: "item"
-					item: {
-						id: "appmek:chemical_storage_cell_256k"
-						Count: 1b
-						tag: { }
-					}
-				}
-			]
-		}
-		{
-			x: 0.0d
+			title: "Making Connections"
+			x: -9.375d
 			y: 10.0d
-			dependencies: ["4D7FF267C7EC2845"]
-			size: 1.25d
 			id: "66057A9358B600A9"
 			tasks: [{
 				id: "03067EF23D3A38BA"
@@ -385,7 +194,7 @@
 			}]
 		}
 		{
-			x: -2.0d
+			x: -9.5d
 			y: 11.5d
 			dependencies: ["66057A9358B600A9"]
 			id: "7CCBE728C0D5090E"
@@ -396,7 +205,7 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -10.5d
 			y: 13.0d
 			dependencies: ["7CCBE728C0D5090E"]
 			id: "75D5781C38BED7C1"
@@ -407,7 +216,7 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: -8.5d
 			y: 13.0d
 			dependencies: ["7CCBE728C0D5090E"]
 			id: "58A23953FB5FBE57"
@@ -432,26 +241,13 @@
 		{
 			title: "Autocrafting"
 			icon: "ae2:molecular_assembler"
-			x: -2.5d
-			y: 8.5d
-			dependencies: ["4D7FF267C7EC2845"]
-			size: 1.25d
+			x: -4.375d
+			y: 10.625d
 			id: "2FC3BF03747E40DB"
 			tasks: [{
 				id: "02E89EA21A09379A"
 				type: "checkmark"
 				title: "Got it!"
-			}]
-		}
-		{
-			x: 6.0d
-			y: 7.5d
-			dependencies: ["67C91F3187348C8E"]
-			id: "1B99592879C57785"
-			tasks: [{
-				id: "45C6F82BF774BEAB"
-				type: "item"
-				item: "ae2:spatial_storage_cell_2"
 			}]
 		}
 		{
@@ -479,9 +275,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 11.5d
-			dependencies: ["66057A9358B600A9"]
+			x: 9.5d
+			y: 10.5d
 			id: "2A5E79640AB4BDA5"
 			tasks: [{
 				id: "50035793446D9D61"
@@ -490,8 +285,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 13.0d
+			x: 8.5d
+			y: 12.0d
 			dependencies: ["2A5E79640AB4BDA5"]
 			id: "134AAAFB2F6D0BED"
 			tasks: [{
@@ -501,8 +296,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 13.0d
+			x: 9.5d
+			y: 12.0d
 			dependencies: ["2A5E79640AB4BDA5"]
 			id: "099A09D29367D7E6"
 			tasks: [{
@@ -512,8 +307,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 13.0d
+			x: 10.5d
+			y: 12.0d
 			dependencies: ["2A5E79640AB4BDA5"]
 			id: "26F87545CC848BFE"
 			tasks: [{
@@ -523,8 +318,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 14.0d
+			x: 8.5d
+			y: 13.0d
 			dependencies: [
 				"134AAAFB2F6D0BED"
 				"50035793446D9D61"
@@ -538,8 +333,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 14.0d
+			x: 9.5d
+			y: 13.0d
 			dependencies: ["2A5E79640AB4BDA5"]
 			id: "1A9226D2D5A6AA54"
 			tasks: [{
@@ -549,8 +344,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 14.0d
+			x: 10.5d
+			y: 13.0d
 			dependencies: [
 				"26F87545CC848BFE"
 				"50035793446D9D61"
@@ -564,8 +359,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 12.0d
+			x: 11.0d
+			y: 11.0d
 			dependencies: ["2A5E79640AB4BDA5"]
 			id: "675D023FFB0A8C1A"
 			tasks: [{
@@ -579,8 +374,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: 8.5d
+			x: -5.5d
+			y: 12.0d
 			dependencies: ["2FC3BF03747E40DB"]
 			id: "22640DCB27BB1DE8"
 			tasks: [{
@@ -591,10 +386,8 @@
 		}
 		{
 			title: "I/O And others"
-			x: 2.5d
-			y: 8.5d
-			dependencies: ["4D7FF267C7EC2845"]
-			size: 1.25d
+			x: 0.0d
+			y: 10.5d
 			id: "7D87DA985E8B4EB0"
 			tasks: [{
 				id: "1F13477AE575D37B"
@@ -603,8 +396,8 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: 9.5d
+			x: -4.5d
+			y: 12.0d
 			dependencies: ["2FC3BF03747E40DB"]
 			id: "3B2DA9A2923AC61E"
 			tasks: [{
@@ -614,8 +407,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: 10.0d
+			x: -3.5d
+			y: 12.0d
 			dependencies: ["2FC3BF03747E40DB"]
 			id: "0E5806537154F593"
 			tasks: [{
@@ -626,8 +419,8 @@
 		}
 		{
 			title: "ME Import/Export bus"
-			x: 3.0d
-			y: 10.0d
+			x: -1.0d
+			y: 12.0d
 			dependencies: ["7D87DA985E8B4EB0"]
 			id: "7DBCBBB2A18DDDA0"
 			tasks: [
@@ -644,8 +437,8 @@
 			]
 		}
 		{
-			x: 4.0d
-			y: 9.5d
+			x: 0.0d
+			y: 12.0d
 			dependencies: ["7D87DA985E8B4EB0"]
 			id: "3E08D8EF1B87C547"
 			tasks: [{
@@ -655,8 +448,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 8.5d
+			x: 1.0d
+			y: 12.0d
 			dependencies: ["7D87DA985E8B4EB0"]
 			id: "444829B39E4D1BAA"
 			tasks: [{
@@ -688,74 +481,94 @@
 			}]
 		}
 		{
-			title: "ME Disk Drives"
-			x: 6.0d
-			y: 2.5d
-			subtitle: "Enough of Type limitation?"
-			dependencies: ["2288AA73FE626BFB"]
-			id: "727D7DBCAF69209F"
-			tasks: [{
-				id: "69601821F62AD38F"
-				type: "item"
-				item: {
-					id: "ae2things:disk_drive_1k"
-					Count: 1b
-					tag: { }
+			icon: "sophisticatedstorage:controller"
+			x: 10.0d
+			y: 4.5d
+			dependencies: ["530BB11487524556"]
+			id: "1A4A051EA531B125"
+			tasks: [
+				{
+					id: "66D46760A7FD6B61"
+					type: "item"
+					item: "sophisticatedstorage:controller"
 				}
+				{
+					id: "7A33C5ADA2E6CFFE"
+					type: "item"
+					item: "sophisticatedstorage:storage_link"
+				}
+				{
+					id: "3E6A553EB66B0EE5"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:storage_tool"
+						Count: 1b
+						tag: {
+							controllerPos: 113249697140799L
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "functionalstorage:storage_controller"
+			x: 8.0d
+			y: 4.5d
+			dependencies: ["530BB11487524556"]
+			id: "618304002FBA0261"
+			tasks: [
+				{
+					id: "0F77E6A7BF933781"
+					type: "item"
+					item: "functionalstorage:storage_controller"
+				}
+				{
+					id: "72D773E72C3ACCDB"
+					type: "item"
+					item: {
+						id: "functionalstorage:configuration_tool"
+						Count: 1b
+						tag: {
+							Mode: "LOCKING"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 9.0d
+			y: 4.5d
+			dependencies: ["530BB11487524556"]
+			id: "76569488244A0715"
+			tasks: [{
+				id: "6BF1B5024CC7207A"
+				type: "item"
+				item: "occultism:storage_controller"
 			}]
 		}
 		{
-			x: 0.0d
-			y: 12.0d
-			dependencies: ["66057A9358B600A9"]
-			id: "32336FC074AA6DB2"
+			title: "Ad Hoc Networks"
+			x: 3.0d
+			y: 8.5d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["029656A1597547F9"]
+			id: "79315557F8BB1F99"
 			tasks: [{
-				id: "0E0F6B6A325366C8"
+				id: "577B6CFE4EE21CB6"
 				type: "item"
-				title: "Any Colored Cable"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "itemfilters:tag"
-								Count: 1b
-								tag: {
-									value: "ae2:covered_cable"
-								}
-							}
-							{
-								id: "itemfilters:tag"
-								Count: 1b
-								tag: {
-									value: "ae2:covered_dense_cable"
-								}
-							}
-							{
-								id: "itemfilters:tag"
-								Count: 1b
-								tag: {
-									value: "ae2:glass_cable"
-								}
-							}
-							{
-								id: "itemfilters:tag"
-								Count: 1b
-								tag: {
-									value: "ae2:smart_cable"
-								}
-							}
-							{
-								id: "itemfilters:tag"
-								Count: 1b
-								tag: {
-									value: "ae2:smart_dense_cable"
-								}
-							}
-						]
-					}
-				}
+				item: "ae2:energy_acceptor"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 5.5d
+			dependencies: ["029656A1597547F9"]
+			id: "63F29EE4BDECADC5"
+			tasks: [{
+				id: "4535F6ED34F0C681"
+				type: "item"
+				item: "ae2:certus_quartz_crystal"
 			}]
 		}
 	]
