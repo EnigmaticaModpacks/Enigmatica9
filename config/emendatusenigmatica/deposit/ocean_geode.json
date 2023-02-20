@@ -31,7 +31,7 @@
         ],
         "fillBlocks": [{"block": "minecraft:water", "weight": 10}],
         "clusters": [],
-        "chance": 10,
+        "chance": 15,
         "crackChance": 0.35,
         "minYLevel": -10,
         "maxYLevel": 90,
