@@ -1,19 +1,19 @@
 {
-    "modId": "blue_skies",
-    "group": {
-        "name": "Blue Skies Saplings",
-        "enabledByDefault": true,
-        "defaultPayment": { "item": "blue_skies:moonstone" },
-        "defaultCategory": "farmingforblockheads:saplings"
-    },
-    "customEntries": [
-        { "output": "blue_skies:crescent_fruit_sapling" },
-        { "output": "blue_skies:cherry_sapling" },
-        { "output": "blue_skies:maple_sapling" },
-        { "output": "blue_skies:dusk_sapling" },
-        { "output": "blue_skies:lunar_sapling" },
-        { "output": "blue_skies:frostbright_sapling" },
-        { "output": "blue_skies:starlit_sapling" },
-        { "output": "blue_skies:bluebright_sapling" }
-    ]
+  "modId": "farmingforblockheads",
+  "group": {
+    "name": "Blue Skies Saplings",
+    "enabledByDefault": true,
+    "defaultPayment": { "item": "blue_skies:moonstone" },
+    "defaultCategory": "farmingforblockheads:saplings"
+  },
+  "customEntries": [
+    { "output": "blue_skies:crescent_fruit_sapling" },
+    { "output": "blue_skies:cherry_sapling" },
+    { "output": "blue_skies:maple_sapling" },
+    { "output": "blue_skies:dusk_sapling" },
+    { "output": "blue_skies:lunar_sapling" },
+    { "output": "blue_skies:frostbright_sapling" },
+    { "output": "blue_skies:starlit_sapling" },
+    { "output": "blue_skies:bluebright_sapling" }
+  ]
 }

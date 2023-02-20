@@ -57,7 +57,17 @@ const structures = [
         index: 4,
         block: {
             normal: 'immersiveengineering:rs_engineering',
-            expert: 'minecraft:stone'
+            expert: 'kubejs:disabled_structure_indicator'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
+        name: 'lightning_rod',
+        index: 8,
+        block: {
+            normal: 'immersiveengineering:capacitor_hv',
+            expert: 'kubejs:disabled_structure_indicator'
         }
     },
     {

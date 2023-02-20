@@ -116,16 +116,15 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}nature_altar_from_sunlight`
         },
         {
-            item_in: {
-                type: 'forge:nbt',
-                item: 'naturesaura:aura_bottle',
-                nbt: '{stored_type:"naturesaura:nether"}'
-            },
-            block_in: 'twilightforest:ironwood_block',
+            item_in: { item: 'ars_nouveau:fire_essence' },
+            block_in: 'naturesaura:gold_brick',
             post: [
                 {
                     type: 'place',
-                    block: { blocks: ['naturesaura:nature_altar'], state: { nether: 'true' } }
+                    block: { blocks: ['naturesaura:conversion_catalyst'] },
+                    contextual: [
+                        { type: 'is_sneaking', description: 'Must be sneaking. Consumes a large amount of Aura.' }
+                    ]
                 },
                 {
                     type: 'execute',
@@ -141,18 +140,51 @@ ServerEvents.recipes((event) => {
                     type: 'execute',
                     command: 'particle twilightforest:firefly ~ ~ ~ 1 1 1 1 15',
                     hide: true
-                }
-            ],
-            contextual: [
+                },
                 {
-                    type: 'or',
-                    contextual: [
-                        { type: 'location', predicate: { dimension: 'minecraft:the_nether' } },
-                        { type: 'location', predicate: { dimension: 'blue_skies:everbright' } }
-                    ]
+                    type: 'execute',
+                    command: 'naaura remove 500000',
+                    hide: true
                 }
             ],
-            id: `${id_prefix}nature_altar_from_ghosts`
+            contextual: [{ type: 'is_sneaking', description: 'Must be sneaking. Consumes a large amount of Aura.' }],
+            id: `${id_prefix}conversion_catalyst`
+        },
+        {
+            item_in: { item: 'ars_nouveau:water_essence' },
+            block_in: 'naturesaura:gold_brick',
+            post: [
+                {
+                    type: 'place',
+                    block: { blocks: ['naturesaura:crushing_catalyst'] },
+                    description: 'Must be sneaking. Consumes a moderate amount of Aura.',
+                    contextual: [
+                        { type: 'is_sneaking', description: 'Must be sneaking. Consumes a moderate amount of Aura.' }
+                    ]
+                },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.respawn_anchor.set_spawn block @p ~ ~ ~',
+                    hide: true
+                },
+                {
+                    type: 'execute',
+                    command: 'particle minecraft:explosion ~ ~ ~',
+                    hide: true
+                },
+                {
+                    type: 'execute',
+                    command: 'particle twilightforest:firefly ~ ~ ~ 1 1 1 1 15',
+                    hide: true
+                },
+                {
+                    type: 'execute',
+                    command: 'naaura remove 100000',
+                    hide: true
+                }
+            ],
+            contextual: [{ type: 'is_sneaking', description: 'Must be sneaking. Consumes a moderate amount of Aura.' }],
+            id: `${id_prefix}crushing_catalyst`
         }
     ];
 

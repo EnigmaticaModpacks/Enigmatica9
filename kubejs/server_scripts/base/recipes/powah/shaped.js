@@ -64,61 +64,6 @@ ServerEvents.recipes((event) => {
             id: `powah:crafting/energizing_rod_basic`
         },
         {
-            output: 'powah:furnator_basic',
-            pattern: ['AAA', 'BCB', 'ADA'],
-            key: {
-                A: '#forge:plates/invar',
-                B: 'powah:capacitor_basic_large',
-                C: 'powah:dielectric_casing',
-                D: 'minecraft:blast_furnace'
-            },
-            id: `powah:crafting/furnator_basic`
-        },
-        {
-            output: 'powah:magmator_basic',
-            pattern: ['AAA', 'BCB', 'ADA'],
-            key: {
-                A: '#forge:plates/invar',
-                B: 'powah:capacitor_basic_large',
-                C: 'powah:dielectric_casing',
-                D: 'thermal:fluid_cell_frame'
-            },
-            id: `powah:crafting/magmator_basic`
-        },
-        {
-            output: 'powah:thermo_generator_basic',
-            pattern: ['ABA', 'CDC', 'EEE'],
-            key: {
-                A: 'powah:dielectric_paste',
-                B: '#forge:plates/invar',
-                C: 'powah:capacitor_basic_large',
-                D: 'powah:dielectric_casing',
-                E: 'powah:thermoelectric_plate'
-            },
-            id: `powah:crafting/thermo_generator_basic`
-        },
-        {
-            output: 'powah:solar_panel_basic',
-            pattern: ['AAA', 'BCB', 'DDD'],
-            key: {
-                A: 'powah:photoelectric_pane',
-                B: 'powah:capacitor_basic_large',
-                C: 'powah:dielectric_casing',
-                D: '#forge:plates/invar'
-            },
-            id: `powah:crafting/solar_panel_basic`
-        },
-        {
-            output: 'powah:reactor_basic',
-            pattern: ['ABA', 'BCB', 'ABA'],
-            key: {
-                A: 'twilightforest:carminite',
-                B: 'powah:capacitor_basic_large',
-                C: 'powah:dielectric_casing'
-            },
-            id: `powah:crafting/reactor_basic`
-        },
-        {
             output: 'powah:player_transmitter_basic',
             pattern: [' A ', 'BCB', ' D '],
             key: {
@@ -149,6 +94,16 @@ ServerEvents.recipes((event) => {
                 C: 'powah:dielectric_casing'
             },
             id: `powah:crafting/energy_discharger_basic`
+        },
+        {
+            output: 'powah:reactor_basic',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'twilightforest:carminite',
+                B: 'powah:capacitor_basic_large',
+                C: 'powah:dielectric_casing'
+            },
+            id: `powah:crafting/reactor_basic`
         }
     ];
 

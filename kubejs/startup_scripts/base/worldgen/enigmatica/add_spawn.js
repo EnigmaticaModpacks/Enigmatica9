@@ -36,6 +36,14 @@ WorldgenEvents.add((event) => {
         },
         {
             category: 'creature',
+            entity: 'bookwyrms:book_wyrm',
+            biomes: ['#twilightforest:in_twilight_forest', '#blue_skies:everbright', '#blue_skies:everdawn'],
+            minCount: 1,
+            maxCount: 2,
+            weight: 10
+        },
+        {
+            category: 'creature',
             entity: 'cnb:sporeling',
             biomes: [
                 'twilightforest:spooky_forest',

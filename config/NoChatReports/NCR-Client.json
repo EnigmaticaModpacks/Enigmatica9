@@ -13,7 +13,7 @@
   "showNCRButton": true,
   "enableMod": true,
   "skipRealmsWarning": false,
-  "verifiedIconOffsetX": 0,
+  "verifiedIconOffsetX": -14,
   "verifiedIconOffsetY": 0,
   "reconnectAwaitSeconds": 4,
   "postDisconnectAwaitSeconds": 10,

@@ -18,18 +18,6 @@ ServerEvents.recipes((event) => {
             id: `createaddition:mechanical_crafting/electric_motor`
         },
         {
-            pattern: ['  A  ', ' ISI ', 'ISRSI', ' ICI '],
-            key: {
-                C: { item: 'createaddition:capacitor' },
-                I: { tag: 'forge:plates/iron' },
-                R: { tag: 'forge:rods/iron' },
-                S: { item: 'immersiveengineering:coil_lv' },
-                A: { tag: 'pneumaticcraft:compressed_stone' }
-            },
-            result: { item: 'createaddition:alternator' },
-            id: `createaddition:mechanical_crafting/alternator`
-        },
-        {
             pattern: ['SSS', ' A ', 'CBC', 'PEP'],
             key: {
                 A: { tag: 'pneumaticcraft:compressed_stone' },
