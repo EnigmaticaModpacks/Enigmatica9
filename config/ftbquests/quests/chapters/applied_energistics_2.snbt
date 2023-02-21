@@ -18,25 +18,30 @@
 			dependencies: ["7039D20D06BEAFC2"]
 			min_width: 250
 			id: "029656A1597547F9"
-			tasks: [
-				{
-					id: "34690026FC214351"
-					type: "item"
-					item: "ae2:charger"
-				}
-				{
-					id: "15965A8AF7CCE96E"
-					type: "item"
-					item: "ae2:meteorite_compass"
-				}
-			]
+			tasks: [{
+				id: "15965A8AF7CCE96E"
+				type: "item"
+				item: "ae2:meteorite_compass"
+			}]
+			rewards: [{
+				id: "16C28EC18C21F2F9"
+				type: "command"
+				title: "Miner's Delight"
+				icon: "kubejs:miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+				player_command: false
+			}]
 		}
 		{
 			title: "Inscribers Presses"
 			icon: "ae2:mysterious_cube"
 			x: -1.0d
 			y: -5.5d
-			description: ["Deep in the heart of the meteorites located by the Meteorite Compass lays a Mysterious Cube. Break it to obtain one of each Inscriber Press."]
+			description: [
+				"Deep in the heart of the meteorites located by the Meteorite Compass lays a Mysterious Cube. Break it to obtain one of each Inscriber Press."
+				""
+				"Obtaining these Presses and building an Inscriber to use them in will allow the creation of more advanced machinery."
+			]
 			dependencies: ["029656A1597547F9"]
 			id: "0F2195611D84F112"
 			tasks: [
@@ -60,7 +65,20 @@
 					type: "item"
 					item: "ae2:calculation_processor_press"
 				}
+				{
+					id: "6EF250D132B567C4"
+					type: "item"
+					item: "ae2:inscriber"
+				}
 			]
+			rewards: [{
+				id: "4D335664F4D4ED3D"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				player_command: false
+			}]
 		}
 		{
 			title: "ME Controller Networks"
@@ -93,6 +111,14 @@
 				type: "item"
 				item: "ae2:controller"
 			}]
+			rewards: [{
+				id: "2688B8B2145804A6"
+				type: "command"
+				title: "Epic Applied Energistics Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				player_command: false
+			}]
 		}
 		{
 			title: "Storage"
@@ -107,6 +133,14 @@
 				id: "2D62B05AECEFC2E8"
 				type: "item"
 				item: "ae2:certus_quartz_wrench"
+			}]
+			rewards: [{
+				id: "0F35EC2C40562447"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -135,6 +169,14 @@
 					item: "ae2:cell_workbench"
 				}
 			]
+			rewards: [{
+				id: "337B225FE339F43B"
+				type: "command"
+				title: "Epic Applied Energistics Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				player_command: false
+			}]
 		}
 		{
 			x: 1.5d
@@ -154,6 +196,14 @@
 					Count: 1b
 					tag: { }
 				}
+			}]
+			rewards: [{
+				id: "573D3073F3908571"
+				type: "command"
+				title: "Epic Applied Energistics Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				player_command: false
 			}]
 		}
 		{
@@ -175,6 +225,14 @@
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "0DD466F9E4C971CA"
+				type: "command"
+				title: "Epic Applied Energistics Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				player_command: false
+			}]
 		}
 		{
 			x: 2.5d
@@ -195,6 +253,14 @@
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "01F67F64BFB7E5B9"
+				type: "command"
+				title: "Epic Applied Energistics Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				player_command: false
+			}]
 		}
 		{
 			title: "External Storage"
@@ -207,6 +273,14 @@
 				id: "208948F592EBBC4D"
 				type: "item"
 				item: "ae2:storage_bus"
+			}]
+			rewards: [{
+				id: "158A6753A48CF984"
+				type: "command"
+				title: "Rare Applied Energistics Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+				player_command: false
 			}]
 		}
 		{
@@ -236,6 +310,14 @@
 						value: "ae2:glass_cable"
 					}
 				}
+			}]
+			rewards: [{
+				id: "34D5FB644519CBF0"
+				type: "command"
+				title: "Rare Applied Energistics Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+				player_command: false
 			}]
 		}
 		{
@@ -271,6 +353,14 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "2A5FF8DDEF6001FE"
+				type: "command"
+				title: "Rare Applied Energistics Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+				player_command: false
+			}]
 		}
 		{
 			title: "Autocrafting"
@@ -283,6 +373,14 @@
 				id: "33D2FF53122B1461"
 				type: "item"
 				item: "minecraft:crafting_table"
+			}]
+			rewards: [{
+				id: "1F0EE9EF2D994337"
+				type: "command"
+				title: "Epic Applied Energistics Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				player_command: false
 			}]
 		}
 		{
@@ -318,6 +416,14 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "4B4A7A5379592E0F"
+				type: "command"
+				title: "Rare Applied Energistics Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+				player_command: false
+			}]
 		}
 		{
 			title: "Encoding Patterns"
@@ -334,6 +440,14 @@
 				id: "3B63A2A1BC35B3C2"
 				type: "item"
 				item: "ae2:pattern_encoding_terminal"
+			}]
+			rewards: [{
+				id: "712F6C181EE8F2A6"
+				type: "command"
+				title: "Epic Applied Energistics Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				player_command: false
 			}]
 		}
 		{
@@ -385,6 +499,14 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "1CB7078D2013A45D"
+				type: "command"
+				title: "Epic Applied Energistics Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				player_command: false
+			}]
 		}
 		{
 			x: -1.5d
@@ -445,6 +567,14 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "37DEEE5854DDC9C3"
+				type: "command"
+				title: "Epic Applied Energistics Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				player_command: false
+			}]
 		}
 		{
 			title: "Crafting"
@@ -477,6 +607,14 @@
 					item: "ae2:pattern_provider"
 				}
 			]
+			rewards: [{
+				id: "2FD4EE828E4E5D5A"
+				type: "command"
+				title: "Epic Applied Energistics Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				player_command: false
+			}]
 		}
 		{
 			x: 1.5d
@@ -503,6 +641,14 @@
 					item: "ae2:formation_plane"
 				}
 			]
+			rewards: [{
+				id: "744F2422F54D69DA"
+				type: "command"
+				title: "Epic Applied Energistics Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				player_command: false
+			}]
 		}
 		{
 			title: "ME Import/Export bus"
@@ -523,6 +669,14 @@
 					item: "ae2:export_bus"
 				}
 			]
+			rewards: [{
+				id: "72F01E6C29DAF100"
+				type: "command"
+				title: "Rare Applied Energistics Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+				player_command: false
+			}]
 		}
 		{
 			x: 1.5d
@@ -535,6 +689,14 @@
 				type: "item"
 				item: "ae2:interface"
 			}]
+			rewards: [{
+				id: "3246307964E6DCA5"
+				type: "command"
+				title: "Rare Applied Energistics Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+				player_command: false
+			}]
 		}
 		{
 			title: "Quantum Network Bridge"
@@ -544,7 +706,7 @@
 			description: [
 				"The Quantum Network Bridge is a multiblock allowing a network to be extended wirelessly and across dimensions. It consists of a ring of eight ME Quantum Ring blocks surrounding a central ME Quantum Link Chamber and may be built both vertically and horizontally."
 				""
-				"Two such structures are required for the multiblock to function, and a pair of Quantum Entangled Singularities must be placed into each end. The remote side will also need to be provided with power to jumpstart it. "
+				"Two such structures are required for the multiblock to function, and a pair of Quantum Entangled Singularities must be placed into each end. The remote side will also need to be provided with power to jumpstart it."
 				""
 				"Once built, the two sides of the network are seen as the same. Be sure to chunk load both sides, however."
 			]
@@ -570,6 +732,14 @@
 					count: 2L
 				}
 			]
+			rewards: [{
+				id: "6578D4689D6017B3"
+				type: "command"
+				title: "Epic Applied Energistics Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				player_command: false
+			}]
 		}
 		{
 			x: 0.0d
@@ -602,6 +772,14 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "03BA42DAD3DB4772"
+				type: "command"
+				title: "Rare Applied Energistics Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+				player_command: false
+			}]
 		}
 		{
 			x: -2.5d
@@ -619,6 +797,14 @@
 				id: "7DE1A12F377BD86A"
 				type: "item"
 				item: "ae2:pattern_access_terminal"
+			}]
+			rewards: [{
+				id: "60910F5984D9A60E"
+				type: "command"
+				title: "Epic Applied Energistics Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				player_command: false
 			}]
 		}
 		{
@@ -643,6 +829,14 @@
 				type: "item"
 				item: "ae2:energy_acceptor"
 			}]
+			rewards: [{
+				id: "5BDD792D8C64CDF3"
+				type: "command"
+				title: "Rare Applied Energistics Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+				player_command: false
+			}]
 		}
 		{
 			x: 1.0d
@@ -650,7 +844,7 @@
 			description: [
 				"The Flawless Budding Certus Quartz found in meteorites is not easily moved, and breaking it by hand will result in a Flawed Budding Certus Quartz which, when used to grow more Certus, will degrade further over time. "
 				""
-				"There are ways to move them safely, however, namely Spatial I/O. However, there are some ways to craft the block as well. "
+				"There are ways to move them safely, however, namely Spatial I/O. And there are some ways to craft the block as well, for those inclined to do so. "
 				""
 				"Automating the collection of Certus Quartz, be it remotely or at home, will be one of the primary challenges to getting into AE2 as Certus Quartz will be in high demand. Several options exist for automated harvesting, including Amethyst Golems from Ars Nouveau. "
 			]
@@ -660,6 +854,14 @@
 				id: "4535F6ED34F0C681"
 				type: "item"
 				item: "ae2:certus_quartz_crystal"
+			}]
+			rewards: [{
+				id: "2F0C078854BD0C27"
+				type: "command"
+				title: "Miner's Delight"
+				icon: "kubejs:miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+				player_command: false
 			}]
 		}
 		{
@@ -692,6 +894,14 @@
 						]
 					}
 				}
+			}]
+			rewards: [{
+				id: "33D8C58732E28B40"
+				type: "command"
+				title: "Rare Applied Energistics Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+				player_command: false
 			}]
 		}
 		{
@@ -750,6 +960,14 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "7E47FD3643956FCE"
+				type: "command"
+				title: "Epic Applied Energistics Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				player_command: false
+			}]
 		}
 		{
 			icon: "ae2:singularity"
@@ -765,7 +983,15 @@
 			tasks: [{
 				id: "695BE08F1A558DCA"
 				type: "item"
-				item: "minecraft:raw_copper"
+				title: "Any Raw Materials"
+				icon: "minecraft:raw_copper"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:raw_materials"
+					}
+				}
 			}]
 			rewards: [{
 				id: "3DEBA95074DB1BBD"
