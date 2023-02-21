@@ -1,9 +1,9 @@
 {
 	id: "0000000000000093"
-	group: "74B3CF67FCEAB20F"
-	order_index: 0
+	group: "0856CF7F5CBEB20A"
+	order_index: 2
 	filename: "tools"
-	title: "Miscellaneous Equipment"
+	title: "Equipment"
 	icon: {
 		id: "minecraft:netherite_pickaxe"
 		Count: 1b

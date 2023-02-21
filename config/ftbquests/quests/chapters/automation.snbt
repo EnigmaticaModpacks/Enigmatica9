@@ -1,18 +1,17 @@
 {
 	id: "00000000000002AB"
 	group: "0856CF7F5CBEB20A"
-	order_index: 1
+	order_index: 3
 	filename: "automation"
 	title: "Redstone and Logic"
 	icon: "minecraft:hopper"
-	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Item Router"
-			x: -0.5d
-			y: -4.0d
+			x: -10.0d
+			y: -2.5d
 			subtitle: "Have you tried turning it off and on again?"
 			description: [
 				"Modular Routers are very powerful tools for automation. They're a single block that can be augmented to do many things, like breaking blocks, sorting items, pushing items into remote inventories, or all of the above at once, and more!"
@@ -22,6 +21,8 @@
 				""
 				"There is also a mod guidebook \"Modular Routers Manual\", which will have details on everything."
 			]
+			hide_dependency_lines: true
+			dependencies: ["3468E652B4FE85FA"]
 			id: "15E49A6B00BE744C"
 			tasks: [{
 				id: "366C08F8F32D7E4B"
@@ -40,13 +41,19 @@
 		{
 			title: "XNet Controller"
 			icon: "xnet:controller"
-			x: -5.0d
+			x: -10.0d
 			y: -4.0d
 			description: [
-				"XNet can intelligently transfer items and does it instantly too. No more items filling up pipes or bouncing because the destination is full."
+				"xNet acts as a programmable logistics interface which can adapt to external conditions based on programmed logic. It can transfer Items, Fluids, Gases, and Power rapidly and in precise amounts in addition to its logic capabilities."
 				""
-				"Requires connection to cables via a connector. Connectors are also used to access other blocks to interact with."
+				"To get started, all that is required is a Controller, some Cables, and some Connectors of the same color. The Controller itself needs a small amount of power to operate as well. "
+				""
+				"Place Connectors against machines or Redstone devices, then use regular cables to connect them back to the Controller. Another Connector is required at the Controller as well. "
+				""
+				"All programming is performed within the Controller itself by first creating channels and then selecting connectors in the GUI to program what they will do. Watching a few videos on this is highly recommended, as it is not something that’s easily learned without visual guides. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["3468E652B4FE85FA"]
 			id: "559D7D60CDDE5596"
 			tasks: [
 				{
@@ -126,8 +133,8 @@
 		{
 			title: "Redstone and Logic"
 			icon: "minecraft:comparator"
-			x: -7.5d
-			y: -0.5d
+			x: -10.0d
+			y: -9.0d
 			shape: "hexagon"
 			description: ["Mods bring a lot to the table when it comes to using redstone. From cable that can transmit 16 different signals at once, compact one-block timers or latches, or just wireless inter-dimensional connections, there's bound to be a solution to your redstone needs. "]
 			id: "3468E652B4FE85FA"
@@ -142,9 +149,10 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: -2.5d
+			x: -10.0d
+			y: -1.5d
 			description: ["Modules represent the Router’s basic programming; at least one is required for the Router to do anything at all. Up to nine Modules may be installed in a single Router and each will activate in order from left to right whenever the Router activates. "]
+			hide_dependency_lines: true
 			dependencies: ["15E49A6B00BE744C"]
 			id: "21B266F6556271EB"
 			tasks: [{
@@ -160,8 +168,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -0.5d
+			x: -11.0d
+			y: 0.5d
 			description: [
 				"Distributor Modules function much like MK2 Senders and Pullers and are bound to a block in the same way. However, the Distributor may be bound to as many as eight different sides or blocks. "
 				""
@@ -192,13 +200,9 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -0.5d
-			description: [
-				"Breaks the block in front of it, also sucking the broken block into the router."
-				""
-				"When crafting the module you can use any vanilla pick, and the resultant module will have the same mining level as the pick used in the recipe. If the pick was enchanted, that is also transferred to the module, though basically only silk touch or fortune will affect the module's behavior. "
-			]
+			x: -9.0d
+			y: 0.5d
+			description: ["The Breaker Module breaks blocks adjacent to the Router. It uses the properties of the Pickaxe used to craft it, including enchantments, break level, and other special features, so be sure to craft the Module with an appropriate Pickaxe."]
 			dependencies: ["21B266F6556271EB"]
 			id: "108E174F5672BF48"
 			tasks: [{
@@ -233,9 +237,13 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 0.5d
-			description: ["Can right-click or attack with the item in the router, though attacking will use power from the router, requiring the energy upgrade."]
+			x: -10.5d
+			y: 1.5d
+			description: [
+				"Activator Modules will attempt to Right-Click blocks or entities with the item in their buffer. "
+				""
+				"They may also be used to attack entities if given a weapon and set to Attack mode. "
+			]
 			dependencies: ["21B266F6556271EB"]
 			id: "27C9B26FB5FF10E1"
 			tasks: [{
@@ -262,9 +270,13 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -1.5d
-			description: ["Collects items dropped nearby. Can be augmented to have more range, to collect faster or with a delay, or to collect XP orbs."]
+			x: -8.5d
+			y: -0.5d
+			description: [
+				"Vacuum Modules are powerful automation tools that allow picking up items from the ground based on complex filters. "
+				""
+				"If Augmented with an XP Vacuum, they can even be used to collect XP orbs and convert it to compatible XP fluids or Bottles O’ Enchanting."
+			]
 			dependencies: ["21B266F6556271EB"]
 			id: "322583CAAD093EE4"
 			tasks: [{
@@ -291,12 +303,16 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -1.5d
+			x: -11.5d
+			y: -0.5d
 			description: [
-				"Works as both a puller or sender module, but for fluids. Requires a fluid tank placed in the router's item slot to function, then can interact with other tanks, or source blocks in the world. Mk2 adds ranged capability."
+				"Fluid Modules work as either a Puller or a Sender, transferring fluids into or out of the router. Note that the Router has no built-in fluid tank to store anything, so one must be provided. A bucket or most modded tanks will work fine, simply place it in the Router’s buffer. "
 				""
-				"To set the target block for the ranged module, shift-right click the module onto the target, and the block should be highlighted if done correctly."
+				"It will either interact with a tank or with fluid in the world, allowing it to place and collect fluid in a block space if desired. "
+				""
+				"The MK1 variant may only interact with a block space directly adjacent to the router. The direction may be set in the modules GUI. "
+				""
+				"The MK2 variant must be linked to a block space by Sneak Right-Clicking the module on the desired block. "
 			]
 			dependencies: ["21B266F6556271EB"]
 			id: "56234AA9ED3E8324"
@@ -354,8 +370,8 @@
 					Damage: 0
 				}
 			}
-			x: -5.0d
-			y: 1.0d
+			x: -7.5d
+			y: -7.5d
 			description: [
 				"The Redstone Pen and Quill can \"draw\" redstone dust on any side of a block, with full manual control of connections. Just right click to start drawing! Just having a charged path running over a block won't power the block, but you can choose to do so by right clicking in the center of the redtone path with the pen."
 				""
@@ -396,8 +412,8 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: 2.0d
+			x: -10.5d
+			y: -6.5d
 			description: [
 				"Cheap wireless redstone, with unlimited channels, and good but not unlimited range."
 				""
@@ -419,8 +435,8 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: 3.0d
+			x: -10.5d
+			y: -5.5d
 			description: [
 				"Can remotly activate connected Redstone Links."
 				""
@@ -440,8 +456,8 @@
 			}]
 		}
 		{
-			x: -9.0d
-			y: 1.5d
+			x: -11.5d
+			y: -7.0d
 			description: [
 				"Set the output with a signal at the back, and reset the output with a signal from the side. Perfect for toggling your power generation automatically."
 				""
@@ -463,15 +479,35 @@
 		}
 		{
 			title: "Redstone Proxy (Update)"
-			x: -5.0d
-			y: -5.0d
-			description: ["Used when you want to emit a redstone signal with XNet directly, and triggers a block update when updated. Useful for integrating XNet automation into external systems. Can also read redstone from external sources powering the proxy."]
+			x: -11.0d
+			y: -4.0d
+			description: [
+				"When attempting to read Redstone signals from non-vanilla sources, a Proxy block is often required. These should be placed so that the Redstone source points into the Proxy, and then the xNet Connector is placed against the Proxy itself. "
+				""
+				"In some cases, a block update is also required. For those, use the Redstone Proxy (update) block instead."
+			]
 			dependencies: ["559D7D60CDDE5596"]
 			id: "34D8561D229A3122"
 			tasks: [{
-				id: "52CC0A821DCFE9D5"
+				id: "7A89EF5C6B8A8132"
 				type: "item"
-				item: "xnet:redstone_proxy_upd"
+				title: "Redstone Proxies"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "xnet:redstone_proxy"
+								Count: 1b
+							}
+							{
+								id: "xnet:redstone_proxy_upd"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "6A693F43E60B3E3B"
@@ -480,8 +516,8 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: 1.0d
+			x: -10.5d
+			y: -7.5d
 			description: ["Acts like redstone dust, but in solid block form. Easy vertical transmission!"]
 			hide_dependency_lines: true
 			dependencies: ["3468E652B4FE85FA"]
@@ -501,8 +537,8 @@
 		{
 			title: "RS Pen Relays"
 			icon: "redstonepen:inverted_relay"
-			x: -5.0d
-			y: 2.0d
+			x: -7.5d
+			y: -6.5d
 			description: [
 				"Simple relays that can be placed on any side of a block. The tooltips explain how each one works."
 				""
@@ -551,9 +587,10 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -4.0d
-			description: ["Upgrades upgrade the router as a whole, instead of individual modules."]
+			x: -6.0d
+			y: -1.5d
+			description: ["Upgrades are installed in the Router itself and augment how it operates, such as speeding it up or making it immune to blast damage."]
+			hide_dependency_lines: true
 			dependencies: ["15E49A6B00BE744C"]
 			id: "7CD587747CC14268"
 			tasks: [{
@@ -569,9 +606,10 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -4.0d
-			description: ["Augments are applied to modules, instead of the router itself, to change how they operate"]
+			x: -14.0d
+			y: -1.5d
+			description: ["Augments are installed within individual Modules and apply only to that module, changing how it operates. "]
+			hide_dependency_lines: true
 			dependencies: ["15E49A6B00BE744C"]
 			id: "7CA354074FCF8447"
 			tasks: [{
@@ -587,8 +625,8 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: 1.0d
+			x: -12.5d
+			y: -7.5d
 			description: [
 				"Sends a pulse a set amount of time after receiving a signal"
 				""
@@ -609,8 +647,8 @@
 			}]
 		}
 		{
-			x: -9.0d
-			y: 2.5d
+			x: -11.5d
+			y: -6.0d
 			description: [
 				"Uses an input pulse to toggle the output. Use a repeater to send a pulse from the output back to the input, with a delay, to make a pulse lengthener."
 				""
@@ -637,9 +675,13 @@
 			]
 		}
 		{
-			x: -5.0d
-			y: -3.0d
-			description: ["The RF Tools filter is compatible with XNet, and is required for tag filtering (the default tag option in XNet is bugged). Insert the filter into one of the 4 slots at the top of the UI, and choose which filter a connector uses with the 'filter index' button on the right."]
+			x: -9.0d
+			y: -4.0d
+			description: [
+				"The RF Tools filter is compatible with xNet and is required for tag filtering. "
+				""
+				"Insert the filter into one of the 4 slots at the top of the UI and choose which filter a connector uses with the 'filter index' button on the right."
+			]
 			dependencies: ["559D7D60CDDE5596"]
 			id: "0597A437596EABC1"
 			tasks: [{
@@ -662,10 +704,13 @@
 		}
 		{
 			title: "The Regulator Augment"
-			x: -3.5d
-			y: -4.0d
-			subtitle: "Come with me and walk the longest mile"
-			description: ["Regulator Augments allow any item pushing or pulling module to be aware of the target inventory, and stop moving items if the target inventory's item is above or below a threshold."]
+			x: -15.0d
+			y: -0.5d
+			description: [
+				"Regulator Augments act differently based on what Module they’re installed in. In general, they put a condition on when the module can act. For a Sender, they’ll only send if the target inventory has fewer items than the limit. "
+				""
+				"Check the entry in the Modular Routers Manual for details on how it changes each module. "
+			]
 			dependencies: ["7CA354074FCF8447"]
 			id: "0163571DC8F997F5"
 			tasks: [{
@@ -683,50 +728,50 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: -5.0d
-			description: ["When applied to the vacuum module, enables collection of XP orbs. The absorbed orbs can then be converted to XP bottles, stored in a tank in the router's inventory, or pushed to an adjacent tank. You can pick between PNC or IF liquid XP."]
-			dependencies: ["7CA354074FCF8447"]
-			id: "77458390B359EB6C"
-			tasks: [{
-				id: "76BE11C2D660721D"
-				type: "item"
-				item: "modularrouters:xp_vacuum_augment"
-			}]
-			rewards: [{
-				id: "04C695D215824999"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
-			x: 2.5d
-			y: -4.0d
-			description: ["Increases amount of items moved at once. Add larger stacks of upgrades to increase the effect."]
+			x: -7.0d
+			y: 0.5d
+			description: [
+				"Speed and Stack Upgrades help to control how quickly the Router operates. "
+				""
+				"Install more Speed upgrades to get the Router to run through its program more frequently."
+				""
+				"Stack Upgrades, on the other hand, allow the Router to move more items per operation. For example, moving a full stack of items every few seconds is generally more efficient than one item every tick. "
+				""
+				"Both may be combined, of course, to achieve the desired goal. "
+			]
 			dependencies: ["7CD587747CC14268"]
 			id: "3D7E621374741748"
-			tasks: [{
-				id: "7CABBEFEA29A5692"
-				type: "item"
-				item: "modularrouters:stack_upgrade"
-			}]
-			rewards: [{
-				id: "1BAB8612F63CCCC9"
-				type: "item"
-				item: "modularrouters:stack_upgrade"
-			}]
+			tasks: [
+				{
+					id: "7CABBEFEA29A5692"
+					type: "item"
+					item: "modularrouters:stack_upgrade"
+				}
+				{
+					id: "797528A2459D22B8"
+					type: "item"
+					item: "modularrouters:speed_upgrade"
+				}
+			]
+			rewards: [
+				{
+					id: "1BAB8612F63CCCC9"
+					type: "item"
+					item: "modularrouters:stack_upgrade"
+					count: 3
+				}
+				{
+					id: "38A7373CD75CD65E"
+					type: "item"
+					item: "modularrouters:speed_upgrade"
+					count: 3
+				}
+			]
 		}
 		{
-			x: 2.0d
-			y: -5.0d
-			description: [
-				"Makes the router fully blastproof, including against withers."
-				""
-				"Why would you want a witherproof router, or 7 of them for that matter? That's up to you!"
-			]
+			x: -5.0d
+			y: 0.5d
+			description: ["Makes the router fully blast proof, making them immune to both TnT and Withers, making them a valuable upgrade for working with explosions or building Withers. "]
 			dependencies: ["7CD587747CC14268"]
 			id: "27F2EAA313795208"
 			tasks: [{
@@ -741,8 +786,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -1.5d
+			x: -10.5d
+			y: -0.5d
 			description: [
 				"Sender and Puller Modules send items to or pull items from remote inventories, respectively. "
 				""
@@ -873,9 +918,15 @@
 					}
 				}
 			}
-			x: 0.0d
-			y: -1.5d
-			description: ["The Energy Distributor module allows the router to send power up to 8 nearby blocks wirelessly. It draws RF from the held item, or the router itself if it's upgraded to have RF capacity."]
+			x: -9.5d
+			y: -0.5d
+			description: [
+				"The Energy Output and Energy Distribution Modules allow the Router to supply power to nearby blocks. "
+				""
+				"Where the Energy Output Module may only output to adjacent blocks, the Distribution Module may send to up to eight remote blocks within range. "
+				""
+				"In either case, some source of power is required. This can be in the form of an energy containing item in the Router’s Buffer, or from the Router’s internal energy buffer if Energy Upgrades are installed. "
+			]
 			dependencies: ["21B266F6556271EB"]
 			id: "2AB330A73BD6447C"
 			tasks: [
@@ -894,62 +945,16 @@
 					}
 				}
 				{
-					id: "36A2B364AA9213B8"
+					id: "5D322C9809E07CCA"
 					type: "item"
-					title: "Any compatible energy storage"
 					item: {
-						id: "itemfilters:or"
+						id: "modularrouters:energy_output_module"
 						Count: 1b
 						tag: {
-							items: [
-								{
-									id: "powah:battery_basic"
-									Count: 1b
-									tag: { }
-								}
-								{
-									id: "powah:battery_hardened"
-									Count: 1b
-									tag: { }
-								}
-								{
-									id: "powah:battery_blazing"
-									Count: 1b
-									tag: { }
-								}
-								{
-									id: "powah:battery_niotic"
-									Count: 1b
-									tag: { }
-								}
-								{
-									id: "powah:battery_spirited"
-									Count: 1b
-									tag: { }
-								}
-								{
-									id: "powah:battery_nitro"
-									Count: 1b
-									tag: { }
-								}
-								{
-									id: "thermal:flux_capacitor"
-									Count: 1b
-									tag: { }
-								}
-								{
-									id: "mekanism:energy_tablet"
-									Count: 1b
-								}
-								{
-									id: "mekanism:basic_energy_cube"
-									Count: 1b
-								}
-								{
-									id: "powah:energy_cell_basic"
-									Count: 1b
-								}
-							]
+							modularrouters: {
+								ModuleFilter: { }
+								Direction: "NONE"
+							}
 						}
 					}
 				}
@@ -964,9 +969,9 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: -3.0d
-			description: ["Allows the router to store RF, which can be used by certain modules without needing to use the router's item slot for a battery, freeing it up for the router to do other things."]
+			x: -5.0d
+			y: -0.5d
+			description: ["Grants the Router some amount of energy storage, allowing the router to handle both Item and Energy transfer at once. "]
 			dependencies: ["7CD587747CC14268"]
 			id: "5A7512AA919309E5"
 			tasks: [{
@@ -984,15 +989,31 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: -3.0d
-			description: ["Can be applied to modules that have range, such as puller mk2, sender mk1 and 2, fluid mk2, extruders, and item or power distributors."]
+			x: -13.0d
+			y: -0.5d
+			description: ["When installed in Modules that work at range, these will adjust the working area. A Vacuum Module, for example, could have its range reduced to prevent picking up items for some other automation, or a Sender could have the range increased to reach further inventories."]
 			dependencies: ["7CA354074FCF8447"]
 			id: "5769B2F6C1C41BF9"
 			tasks: [{
 				id: "4E92C9FC29427BD1"
 				type: "item"
-				item: "modularrouters:range_up_augment"
+				title: "Range Augments"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "modularrouters:range_down_augment"
+								Count: 1b
+							}
+							{
+								id: "modularrouters:range_up_augment"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "16F20BC236C77741"
@@ -1004,10 +1025,9 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: -3.0d
-			subtitle: "Must have been the wind..."
-			description: ["Makes the router look like another block, to hide your automation! To set the block to camouflage as, just right click the upgrade onto the block."]
+			x: -7.0d
+			y: -0.5d
+			description: ["Sneak Right-Click these on another block and then install it in a Router to upgrade its look and feel. Make the Router look like practically anything at all, even flowers!"]
 			dependencies: ["7CD587747CC14268"]
 			id: "58F3471ACCC0F86A"
 			tasks: [{
@@ -1018,18 +1038,26 @@
 			rewards: [{
 				id: "54186C7FFD7F0FE0"
 				type: "item"
-				item: "mekanism:cardboard_box"
+				item: "minecraft:allium"
 			}]
 		}
 		{
-			x: 0.0d
-			y: -0.5d
+			x: -9.5d
+			y: 1.5d
 			description: [
-				"The Extruder module Mk1 will, on high redstone signal, place a line of blocks in front of itself from the router's inventory, and retract them again when the redstone signal is disabled. The stats of the breaker module used to craft the extruder will be inherited."
+				"Whether for automation, retractable drawbridges, or fancy doors, the Extruder Module may be of use in many situations."
 				""
-				"The Mk2 variant works a little differently; it will follow a pattern of blocks set in the module's configuration screen, and when extruding, it places fake versions of the blocks which drop nothing when broken. So this can be used to make fancier pattered doors, and doesn't need to worry about harvest levels or item management."
+				"The MK1 variant will place blocks from the Router’s buffer on a high Redstone signal and then retract them again on a low signal. Bear in mind that the Breaker module used to craft it must have been crafted with a sufficiently high tier Pickaxe to break whatever blocks are being retrieved. "
 				""
-				"When using multiple extruders together, the Sync Upgrade can help control the exact timing, so all routers can extend or retract in time with each other."
+				"When combined with some external logic, these can be great for collecting blocks from in-world transformations, such as oxidized copper."
+				""
+				"The MK2 variant is mostly just for aesthetic uses such as bridges or doors. All the blocks it places are ‘ghost’ blocks and will allow a player to walk on them or prevent them from passing through. "
+				""
+				"With a Mimic Augment installed, the blocks retain some of the target block’s properties, such as light level and hardness."
+				""
+				"With a Pushing Augment installed, the Extruder will push entities as blocks are extruded."
+				""
+				"When using multiple Extruders together, the Sync Upgrade can help ensure that they all run simultaneously."
 			]
 			dependencies: ["21B266F6556271EB"]
 			id: "3CB129682BA3399A"
@@ -1078,9 +1106,9 @@
 		{
 			title: "More Filtering"
 			icon: "modularrouters:bulk_item_filter"
-			x: -0.5d
-			y: -10.0d
-			description: ["If you run out of room in a module's filter, or want filtering more complex than just item matching, you can use one of these. Just configure it, then place in one of the filter slots of the module."]
+			x: -10.0d
+			y: 2.5d
+			description: ["Need more advanced filters? Or just a bigger filter? Modular Routers has a variety of filter items that may be used in the filter slots of all Modules, enabling some truly advanced capabilities. "]
 			dependencies: ["21B266F6556271EB"]
 			id: "795B13C31D41A45D"
 			tasks: [{
@@ -1119,8 +1147,8 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: 2.0d
+			x: -12.5d
+			y: -6.5d
 			description: [
 				"Holds redstone signal specified amount of time after initial signal was removed."
 				""
@@ -1139,36 +1167,216 @@
 				item: "create:pulse_extender"
 			}]
 		}
+		{
+			x: -6.0d
+			y: 0.5d
+			description: ["Fluid Transfer Upgrades act a bit like Stack upgrades for Fluids, allowing the Router to handle more fluid per activation. Rates will still need to be set in the Fluid Module."]
+			dependencies: ["7CD587747CC14268"]
+			id: "41C71AEDF8E9A5C7"
+			tasks: [{
+				id: "69CAF3EA62DE4B0E"
+				type: "item"
+				item: "modularrouters:fluid_upgrade"
+			}]
+			rewards: [{
+				id: "4A8892A8E8CEC447"
+				type: "item"
+				item: "modularrouters:fluid_upgrade"
+				count: 3
+			}]
+		}
+		{
+			x: -15.0d
+			y: 0.5d
+			description: ["Filter Round Robin Augments change the nature of a Modules filter, turning it into a round robin list instead. Each time the Module activates, it will cycle to the next item in the filter and only act on that. This can be very useful for times when the Router should pick up a different item each time it activates. "]
+			dependencies: ["7CA354074FCF8447"]
+			id: "43D0BB5727B18AB3"
+			tasks: [{
+				id: "4B21087E1243B4B2"
+				type: "item"
+				item: "modularrouters:filter_round_robin_augment"
+			}]
+			rewards: [{
+				id: "08DE601136922190"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -13.0d
+			y: 0.5d
+			description: ["Used in Flingers and Droppers, Pickup Delay Augments prevent the dropped or flung item from being immediately picked up by a player. Each one adds a ten second delay."]
+			dependencies: ["7CA354074FCF8447"]
+			id: "64E9FD4632B92843"
+			tasks: [{
+				id: "6832B2DCB3C58AAF"
+				type: "item"
+				item: "modularrouters:pickup_delay_augment"
+			}]
+			rewards: [{
+				id: "2243774A0B86BB25"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -14.0d
+			y: -0.5d
+			description: ["Fast Pickup Augments are used in Vacuum Modules and force the Module to ignore any pickup delay on the item, picking it up as soon as possible. "]
+			dependencies: ["7CA354074FCF8447"]
+			id: "460F55C357B8DF7F"
+			tasks: [{
+				id: "56F47D4A4F411979"
+				type: "item"
+				item: "modularrouters:fast_pickup_augment"
+			}]
+			rewards: [{
+				id: "2AD1A7E7FBED5577"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -14.0d
+			y: 0.5d
+			description: [
+				"The Redstone Augment allows a single Module to be disabled or enabled based on the Redstone signal the Router is receiving. "
+				""
+				"The Router still needs to run for this to work, however. So, it should be set to Redstone Mode: Always while this is installed in a module, allowing specific Modules to be disabled or enabled."
+			]
+			dependencies: ["7CA354074FCF8447"]
+			id: "6C80F938921271DC"
+			tasks: [{
+				id: "25EBD2A311AC0930"
+				type: "item"
+				item: "modularrouters:redstone_augment"
+			}]
+			rewards: [{
+				id: "27427773186BCFB8"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -14.0d
+			y: 1.5d
+			description: [
+				"Stack Augments simply increase the stack size for a given Module independent of other Modules."
+				""
+				"For example, a Puller could be given two Stack Augments to allow it to pull four items at a time, then four Senders could be used to distribute those four items evenly to four different inventories. "
+			]
+			dependencies: ["7CA354074FCF8447"]
+			id: "189E11ADA3E5BF23"
+			tasks: [{
+				id: "735E20DC0126C844"
+				type: "item"
+				item: "modularrouters:stack_augment"
+			}]
+			rewards: [{
+				id: "5DA8602DB0ED0DF3"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -10.0d
+			y: 0.5d
+			description: [
+				"Flingers and Droppers are a great way to get items into the world. "
+				""
+				"While Droppers will simply drop the item straight down, Flingers can impart some velocity like a Vanilla Dispenser. The speed and direction are configurable, however. "
+				""
+				"When setting the Speed, start small and experiment; the Flinger is quite powerful. A Speed of 1.0 and Pitch of 45.0 can launch items about 18 blocks. At max speed, the items may never be seen again."
+			]
+			dependencies: ["21B266F6556271EB"]
+			id: "67591F9B9E23D5C3"
+			tasks: [
+				{
+					id: "41C41E19ECBFFA03"
+					type: "item"
+					item: {
+						id: "modularrouters:flinger_module"
+						Count: 1b
+						tag: {
+							modularrouters: {
+								Pitch: 0.0f
+								Speed: 0.0f
+								ModuleFilter: { }
+								Direction: "NONE"
+								Yaw: 0.0f
+							}
+						}
+					}
+				}
+				{
+					id: "29E5F81F70524360"
+					type: "item"
+					item: {
+						id: "modularrouters:dropper_module"
+						Count: 1b
+						tag: {
+							modularrouters: {
+								ModuleFilter: { }
+								Direction: "NONE"
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "36E4235895E38D38"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				player_command: false
+			}]
+		}
 	]
 	quest_links: [
 		{
 			linked_quest: "0E74E2DD26D0CED0"
-			x: -7.0d
-			y: 1.0d
+			x: -9.5d
+			y: -7.5d
 			id: "5523D55508151A28"
 		}
 		{
 			linked_quest: "3B554ECB7BEADD2E"
-			x: -7.0d
-			y: 2.0d
+			x: -9.5d
+			y: -6.5d
 			id: "1022A1D5FDA65DEB"
 		}
 		{
 			linked_quest: "450E3698E39CC0A1"
-			x: -7.0d
-			y: 3.0d
+			x: -9.5d
+			y: -5.5d
 			id: "0FCDB9F838648F57"
 		}
 		{
 			linked_quest: "00000000000000DC"
-			x: -6.0d
-			y: 2.5d
+			x: -8.5d
+			y: -6.0d
 			id: "65E40D119E9AC5CC"
 		}
 		{
 			linked_quest: "0000000000000120"
-			x: -6.0d
-			y: 1.5d
+			x: -8.5d
+			y: -7.0d
 			id: "23A3FE53CB6AA04A"
 		}
 	]
