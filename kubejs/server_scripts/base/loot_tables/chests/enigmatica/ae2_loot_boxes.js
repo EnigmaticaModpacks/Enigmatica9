@@ -37,6 +37,9 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('ae2:speed_card', 1, [1, 2]);
             pool.addItem('ars_nouveau:amethyst_golem_charm', 1, 1);
             pool.addItem('ae2:interface', 1, 1);
+            pool.addItem('ae2:logic_processor', 1, [1, 3]);
+            pool.addItem('ae2:calculation_processor', 1, [1, 3]);
+            pool.addItem('ae2:engineering_processor', 1, [1, 3]);
         });
 
         table.addPool((pool) => {

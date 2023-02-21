@@ -598,6 +598,8 @@
 			y: -7.5d
 			subtitle: "Who Says You Can't Take It With You?"
 			description: ["A blast resistant chest that retains its contents when broken."]
+			hide_dependency_lines: true
+			dependencies: ["5E79C1011FABC4AF"]
 			id: "0000000000000110"
 			tasks: [{
 				id: "0000000000000111"

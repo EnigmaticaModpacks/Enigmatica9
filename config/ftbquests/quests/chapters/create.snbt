@@ -1173,11 +1173,16 @@
 				""
 				"The following are some of the specialized blocks that may be used for these contraptions."
 			]
-			dependencies: ["5A269EA65E5B42CE"]
+			hide_dependency_lines: true
+			dependencies: [
+				"5A269EA65E5B42CE"
+				"0000000000000C40"
+			]
 			id: "0000000000000D2B"
 			tasks: [{
-				id: "0000000000000D2C"
-				type: "checkmark"
+				id: "10A1593A5F3B4532"
+				type: "item"
+				item: "create:wrench"
 			}]
 			rewards: [{
 				id: "0000000000000D65"

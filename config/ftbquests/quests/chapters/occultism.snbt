@@ -1385,7 +1385,7 @@
 		}
 		{
 			title: "Summon Foliot Janitor"
-			icon: "cfm:warped_kitchen_sink_dark"
+			icon: "occultism:brush"
 			x: 5.5d
 			y: 10.5d
 			shape: "hexagon"
