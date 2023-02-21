@@ -1651,7 +1651,9 @@
 				"2) Point at a face of the selected area and ctrl-scroll to adjust that side."
 				"3) Right-click to name and save the schematic."
 				""
-				"The Create GitHub has a wiki page with examples of saving schematics: https://github.com/Creators-of-Create/Create/wiki/Saving-a-Schematic"
+				"The Create GitHub has a wiki page with examples of saving schematics:"
+				""
+				"{\"text\":\"Saving a Schematic\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Creators-of-Create/Create/wiki/Saving-a-Schematic\"}}"
 			]
 			dependencies: ["5A269EA65E5B42CE"]
 			min_width: 250
@@ -1684,7 +1686,9 @@
 				""
 				"Note: Schematics for common multiblocks are included by default. You can use the \"Open Folder\" button to relocate any schematics you aren’t using and then refresh the list."
 				""
-				"The Create GitHub has a wiki with examples of loading schematics: https://github.com/Creators-of-Create/Create/wiki/Loading-a-Schematic"
+				"The Create GitHub has a wiki with examples of loading schematics:"
+				""
+				"{\"text\":\"Loading a Schematic\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Creators-of-Create/Create/wiki/Loading-a-Schematic\"}}"
 			]
 			dependencies: ["5A581A8DF6CCC352"]
 			min_width: 300
@@ -1715,7 +1719,9 @@
 				""
 				"Note: The cannon isn't very fast, but it's possible to split the workload between multiple cannons, and Time in a Bottle works wonders on it!"
 				""
-				"The Create GitHub has a wiki with examples of printing schematics: https://github.com/Creators-of-Create/Create/wiki/Printing-a-Schematic"
+				"The Create GitHub has a wiki with examples of printing schematics:"
+				""
+				"{\"text\":\"Printing a Schematic\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Creators-of-Create/Create/wiki/Printing-a-Schematic\"}}"
 			]
 			dependencies: ["3542632905883686"]
 			min_width: 300

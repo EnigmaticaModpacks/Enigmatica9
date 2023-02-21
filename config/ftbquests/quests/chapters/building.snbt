@@ -9,10 +9,10 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Building"
+			title: "Decoration"
 			icon: "minecraft:scaffolding"
 			x: 0.0d
-			y: 0.0d
+			y: 9.5d
 			shape: "gear"
 			subtitle: "Dirt Hut No More"
 			description: [
@@ -47,8 +47,8 @@
 		{
 			title: "Connected Glass"
 			icon: "connectedglass:clear_glass"
-			x: 1.5d
-			y: 2.0d
+			x: 0.5d
+			y: 11.0d
 			subtitle: "I can see all obstacles in my way"
 			description: ["Connected Glass adds additional glass blocks and panes with connected textures. This of course covers the clear glass, and all 16 dyed glass types from Vanilla."]
 			dependencies: ["058D3BEB64C74E27"]
@@ -77,8 +77,8 @@
 		{
 			title: "Simply Light"
 			icon: "simplylight:illuminant_block_on"
-			x: -1.5d
-			y: 2.0d
+			x: -0.5d
+			y: 11.0d
 			subtitle: "Let there be light"
 			description: [
 				"The mod name really says it all. It's simply that, a lights mod."
@@ -112,8 +112,8 @@
 		{
 			title: "Framed Blocks"
 			icon: "framedblocks:framed_cube"
-			x: 2.25d
-			y: 1.25d
+			x: 1.5d
+			y: 10.0d
 			subtitle: "Sky is the limit"
 			description: [
 				"Are you looking for Glass Stairs? or maybe a Netherite door? How about an Endstone Sign? Well, look no further."
@@ -146,9 +146,9 @@
 		{
 			title: "Framed Drawers"
 			icon: "functionalstorage:framed_1"
-			x: -2.5d
-			y: 0.0d
-			subtitle: "Build-a-Bear, but with Drawers"
+			x: -1.5d
+			y: 9.0d
+			subtitle: "Build-a-Drawer"
 			description: [
 				"Are you fed up with that Oak Drawer that is sticking out like a sore thumb in the middle of your build, completely mismatching your building palette?"
 				""
@@ -204,13 +204,13 @@
 		{
 			title: "Engineer's Decor"
 			icon: "engineersdecor:steel_catwalk_stairs"
-			x: -2.0d
-			y: 1.0d
+			x: -1.5d
+			y: 10.0d
 			subtitle: "Immersive Decorating"
 			description: [
 				"If you love the industrial look of Immersive Engineering, then you will probably love Engineer's Decor."
 				""
-				"This mod adds a handful of both functional and decorative blocks that should feel right at home in your Immersive Engineering base. Whether it is a DANGER! sign, or an industrial looking Crafting Station, Engineer's Decor has got you covered."
+				"This mod adds a handful of decorative blocks that should feel right at home in your Immersive Engineering base. Whether it is a DANGER! sign, or an industrial platforms and support beams, Engineer's Decor has got you covered."
 			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "68E143E444AF44C2"
@@ -231,8 +231,8 @@
 		{
 			title: "Decorative Blocks"
 			icon: "decorative_blocks:oak_support"
-			x: 2.5d
-			y: 0.0d
+			x: 1.5d
+			y: 9.0d
 			subtitle: "Stay a while and listen..."
 			description: [
 				"If you are into your medieval or rustic builds, whether it is a castle on a cliff, a cabin in the woods, or a hearty tavern for a weary traveler, Decorative Blocks will have some blocks that fits your style."
@@ -275,7 +275,7 @@
 			title: "General Building Tools"
 			icon: "framedblocks:framed_hammer"
 			x: 0.0d
-			y: -2.5d
+			y: 5.0d
 			shape: "gear"
 			subtitle: "The right tools for the job"
 			description: [
@@ -301,8 +301,8 @@
 		{
 			title: "Portable Stonecutter"
 			icon: "minecraft:stonecutter"
-			x: 1.0d
-			y: -3.0d
+			x: 0.5d
+			y: 6.0d
 			subtitle: "It's like the Chisel, but fatter"
 			description: [
 				"It cuts, it grinds, it chisels, polishes and even cooks and cleans!"
@@ -361,13 +361,14 @@
 				}
 			}
 			x: -1.5d
-			y: -2.0d
+			y: 4.0d
 			subtitle: "It builds stuff"
 			description: [
 				"An advanced building device with several modes allowing for the quick construction of walls, stairs, and platforms. "
 				""
 				"Sneak Right Click on a block to set the block it’ll build with. Use the Building Gadgets Settings Menu key [default: g] to access advanced features. "
 			]
+			hide_dependency_lines: true
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "0F06CA2A45323C4C"
 			tasks: [{
@@ -408,14 +409,15 @@
 					}
 				}
 			}
-			x: -0.5d
-			y: -1.5d
+			x: -1.5d
+			y: 5.0d
 			subtitle: "It exchanges stuff"
 			description: [
 				"Quickly swap blocks in an area without having to break and manually place each one. Enchant with Silk Touch to work with delicate blocks such as glass."
 				""
 				"Sneak Right Click on a block to set the block it’ll build with. Use the Building Gadgets Settings Menu key [default: g] to access advanced features. "
 			]
+			hide_dependency_lines: true
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "25E1DB1C3F184D4C"
 			tasks: [{
@@ -456,8 +458,8 @@
 					]
 				}
 			}
-			x: 0.5d
-			y: -1.5d
+			x: -1.5d
+			y: 6.0d
 			subtitle: "It copies and pastes stuff"
 			description: [
 				"A powerful tool that allows copying large areas and rebuilding them instantly elsewhere, making short work of repeating large sections of a build, such as a repeating wall pattern, or sprucing up an area with a few different prefab homes."
@@ -466,6 +468,7 @@
 				""
 				"Sneak Right Click on a block to set the block it’ll build with. Use the Building Gadgets Settings Menu key [default: g] to access advanced features. "
 			]
+			hide_dependency_lines: true
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "2E5F1C7B4B293531"
 			tasks: [{
@@ -501,8 +504,8 @@
 					fuzzy: 1b
 				}
 			}
-			x: 1.5d
-			y: -2.0d
+			x: -1.5d
+			y: 7.0d
 			subtitle: "Guess what it does .."
 			description: [
 				"For those times when you simply want to clear a hole to build in, and don’t really care what happens to the blocks that were there."
@@ -511,6 +514,7 @@
 				""
 				"Sneak Right Click in the air to configure the area to void. Use the Building Gadgets Settings Menu key [default: g] to access advanced features. "
 			]
+			hide_dependency_lines: true
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "095108AB50598C04"
 			tasks: [{
@@ -541,8 +545,8 @@
 					Damage: 0
 				}
 			}
-			x: -1.0d
-			y: -3.0d
+			x: -0.5d
+			y: 4.0d
 			subtitle: "Accio"
 			description: [
 				"A modded classic, the Construction Wand simply extends the blocks that are already placed in the world. This can make it easy to build a wall by first laying the foundation, then building up with the wand. "
@@ -606,32 +610,6 @@
 			}]
 		}
 		{
-			title: "Create Building Tools"
-			icon: "create:mechanical_arm"
-			x: 0.0d
-			y: 5.0d
-			shape: "gear"
-			subtitle: "Let's get mechanical, mechanical"
-			description: [
-				"Create offers two ultility based building tools, the Extendo Grip and the Wand of Symmetry. "
-				""
-				"While these tools are somewhat costly, they are worth the effort as they offer some unique functionalities."
-			]
-			id: "1E318BCAC2C6FA09"
-			tasks: [{
-				id: "14B0FAF2081449BD"
-				type: "item"
-				item: "emendatusenigmatica:brass_ingot"
-			}]
-			rewards: [{
-				id: "618B214EB41EEE48"
-				type: "item"
-				item: "create:builders_tea"
-				count: 4
-				random_bonus: 4
-			}]
-		}
-		{
 			title: "Extendo Grip"
 			icon: {
 				id: "create:extendo_grip"
@@ -640,8 +618,8 @@
 					Damage: 0
 				}
 			}
-			x: 1.5d
-			y: 5.0d
+			x: 0.5d
+			y: 4.0d
 			subtitle: "BOING! BOING!"
 			description: [
 				"The Extendo Grip increases your reach distance, thus allowing you to place and break blocks at a larger distance."
@@ -650,7 +628,7 @@
 				""
 				"While wearing a Copper Tank, the Extendo Grip loses no Durability and instead uses some of the air pressure you have stored in your tank."
 			]
-			dependencies: ["1E318BCAC2C6FA09"]
+			dependencies: ["5411C8D2344CC2F1"]
 			id: "34F00196E2D0B4B0"
 			tasks: [{
 				id: "36A419607017EA31"
@@ -675,8 +653,8 @@
 		{
 			title: "Wand of Symmetry"
 			icon: "create:wand_of_symmetry"
-			x: -1.5d
-			y: 5.0d
+			x: 1.5d
+			y: 7.0d
 			subtitle: "Lay your weary OCD to rest"
 			description: [
 				"With a hefty crafting recipe, the Wand of Symmetry does not disappoint those that loves a little symmetry in their life."
@@ -685,7 +663,8 @@
 				""
 				"To start, Right Click a block on the ground to place your place. Once placed, you can Sneak Right Click to open the configuration GUI where you can select the plane type, and the mirroring axis."
 			]
-			dependencies: ["1E318BCAC2C6FA09"]
+			hide_dependency_lines: true
+			dependencies: ["5411C8D2344CC2F1"]
 			id: "147B701C5BCF2424"
 			tasks: [{
 				id: "0A989C0C09502289"
@@ -704,8 +683,8 @@
 		{
 			title: "The Mighty Architect"
 			icon: "create:crafting_blueprint"
-			x: 0.0d
-			y: 3.5d
+			x: 1.5d
+			y: 2.5d
 			shape: "square"
 			subtitle: "I love it when a plan comes together"
 			description: [
@@ -714,7 +693,8 @@
 				"The Mighty Architect allows you to plot down a dynamic design where you get to select how big or small the build is, how many floors, roof style, building materials, etc. Once your design is complete, it will save it as a schematic for you which can then be used in a Create Shematicannon to build it automatically."
 				""
 				"If the above introduction intrigues you, and you would like to learn more, or even see this mod in action, this short two minute video by the Mod Dev will show you the ins and outs of this wonderful mod."
-				"Link: https://youtu.be/VdoKmdYubBM"
+				""
+				"{\"text\":\"The Mighty Architect Mod Highlight\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtu.be/VdoKmdYubBM\"}}"
 			]
 			id: "4407C59E32585B96"
 			tasks: [{
@@ -745,34 +725,6 @@
 			]
 		}
 		{
-			title: "Cosmetic Armor Stand"
-			icon: "minecraft:armor_stand"
-			x: -1.5d
-			y: 3.5d
-			shape: "square"
-			subtitle: "Cosmetic Wonder"
-			description: [
-				"Did you know that you can use Armor Stands to display your curios and baubles? "
-				""
-				"I didn't either, but you can in fact use Vanilla Armor Stands to display a set of your curios and artifacts found in your travels to bring a little flare to your living space, or build in general, whether it is for storage purposes, or purely decorative."
-			]
-			id: "48D7E182886BF82F"
-			tasks: [{
-				id: "2FBD22F2EC040B18"
-				type: "checkmark"
-				title: "Cosmetic Armor Stands?"
-			}]
-			rewards: [{
-				id: "41939B3A4FB225D7"
-				type: "item"
-				item: {
-					id: "botania:cosmetic_googly_eyes"
-					Count: 1b
-					tag: { }
-				}
-			}]
-		}
-		{
 			title: "Quark"
 			icon: {
 				id: "quark:trowel"
@@ -781,8 +733,8 @@
 					Damage: 0
 				}
 			}
-			x: 1.5d
-			y: 3.5d
+			x: -1.5d
+			y: 2.5d
 			shape: "square"
 			subtitle: "Jack of all Trades"
 			description: [
@@ -797,7 +749,8 @@
 				"- Pickarang: Breaks blocks at an extreme range, and brings them back to you."
 				""
 				"For more information on what else does Quark has to offer you as a builder, visit their official website."
-				"Link: https://quarkmod.net/#features"
+				""
+				"{\"text\":\"Quark Wiki\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://quarkmod.net/#features\"}}"
 			]
 			id: "73696B8EC7BB92C7"
 			tasks: [{
@@ -824,6 +777,45 @@
 				}
 			]
 		}
+		{
+			x: -0.5d
+			y: 6.0d
+			description: ["Need a measuring tape? Well, how about an Abacus instead. This little guy will quickly tally up the number of blocks between point A and point B, perfect for planning large builds. Just Right-Click the ground at the start and walk to the end point. "]
+			dependencies: ["5411C8D2344CC2F1"]
+			id: "45A99E75C9AFCFC5"
+			tasks: [{
+				id: "2F6A3A84B2EBFABD"
+				type: "item"
+				item: "quark:abacus"
+			}]
+			rewards: [{
+				id: "0A09BABD778C97C2"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				player_command: false
+			}]
+		}
 	]
-	quest_links: [ ]
+	quest_links: [
+		{
+			linked_quest: "5A581A8DF6CCC352"
+			x: 1.5d
+			y: 4.0d
+			id: "1AF381BF18122BDE"
+		}
+		{
+			linked_quest: "3542632905883686"
+			x: 1.5d
+			y: 5.0d
+			id: "5691FC6E26AEA49D"
+		}
+		{
+			linked_quest: "6305EF196599FC7C"
+			x: 1.5d
+			y: 6.0d
+			id: "3CFD52C6E987D8D2"
+		}
+	]
 }

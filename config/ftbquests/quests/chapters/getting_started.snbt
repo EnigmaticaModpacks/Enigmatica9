@@ -14,7 +14,7 @@
 			x: 0.0d
 			y: -6.0d
 			description: [
-				"Welcome to Enigmatica 9, we're glad to have you :D"
+				"Welcome to Enigmatica 9, we're glad to have you! :D"
 				" "
 				"Quests are divided into two types:"
 				""
@@ -23,9 +23,6 @@
 				""
 				"You can learn more about each type below."
 				""
-				"Note that we're still working on quests, and this is a port of quests from Enigmatica 6 and 8, so It is possible that some of the quests will not work, or aren't relevant to the reality, and many more will be added in the future! Please do not report issues with quests marked as [WIP]."
-				""
-				"Port of older quest lines done by: Kanzaji"
 			]
 			size: 1.5d
 			min_width: 260
@@ -45,8 +42,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -5.0d
+			x: -0.5d
+			y: -4.5d
 			description: [
 				"The Exploration questline's purpose is to show what's available in the pack."
 				""
@@ -54,10 +51,11 @@
 				""
 				"It currently has the following chapters:"
 				""
-				"● Tools"
-				"● Storage"
 				"● Adventure"
-				"● Automation"
+				"● Building"
+				"● Equipment"
+				"● Redstone and Logic"
+				"● Storage"
 			]
 			dependencies: ["0000000000000045"]
 			id: "00000000000002AC"
@@ -75,12 +73,12 @@
 		}
 		{
 			icon: "minecraft:writable_book"
-			x: 2.0d
-			y: -5.0d
+			x: 0.5d
+			y: -4.5d
 			description: [
-				"The Learning Mods chapters are designed to help you get started with a mod, explain how to progress, and show off some of the things you can do."
+				"The Learning Mods chapters are designed to help you get started with large content mods and are broken up into Tech and Magic sections. They will explain roughly how to progress and how to work with the blocks and concepts present in the mod. "
 				""
-				"The chapters do not show everything that every mod has to offer, so make sure to explore if you want to find all the cool features."
+				"These chapters cover a lot of ground, but the don’t cover everything. So, be sure to explore the manuals for those mods that have them."
 			]
 			dependencies: ["0000000000000045"]
 			id: "00000000000002AE"
@@ -98,7 +96,7 @@
 		{
 			title: "Modded for Dummies"
 			x: 1.5d
-			y: -7.5d
+			y: -6.0d
 			subtitle: "Hey, listen!"
 			description: [
 				"If you're new to modded Minecraft, it can be a bit daunting to figure out what's what."
@@ -134,8 +132,15 @@
 		}
 		{
 			title: "Eccentric Tome"
+			icon: {
+				id: "eccentrictome:tome"
+				Count: 1b
+				tag: {
+					"eccentrictome:mods": { }
+				}
+			}
 			x: -1.5d
-			y: -7.5d
+			y: -6.0d
 			subtitle: "Don't Panic"
 			description: [
 				"A vast repository of knowledge in the palm of your hands. This tome comes pre-populated with the manuals for each mod so they’re always at the ready. "
@@ -151,6 +156,8 @@
 				"Note: If ever this tome is lost, a new pre-filled one may be crafted at any time."
 				""
 				"Warning: The Blue Skies book is left out of the Eccentric Tome as it gets consumed on use, getting added to the Inventory screen instead."
+				""
+				"Lost your book? Just craft a new one, it’ll come pre-filled with manuals."
 			]
 			dependencies: ["0000000000000045"]
 			min_width: 250

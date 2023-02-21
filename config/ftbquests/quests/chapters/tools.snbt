@@ -17,7 +17,7 @@
 		{
 			title: "Tools and Armor"
 			x: -10.0d
-			y: -14.0d
+			y: -14.5d
 			shape: "gear"
 			description: [
 				"Many mods add a variety of very useful tools that can be easy to overlook. These quests won't cover everything, but will serve to highlight some of the more notable options not otherwise covered in other quest chapters."
@@ -138,7 +138,7 @@
 			]
 		}
 		{
-			x: -7.5d
+			x: -8.0d
 			y: -13.5d
 			subtitle: "Head in the Clouds"
 			description: [
@@ -164,7 +164,7 @@
 			}]
 		}
 		{
-			x: -12.5d
+			x: -12.0d
 			y: -13.5d
 			subtitle: "Just to Spend it With You..."
 			description: [
@@ -1206,6 +1206,37 @@
 					player_command: false
 				}
 			]
+		}
+		{
+			icon: {
+				id: "toolbelt:belt"
+				Count: 1b
+				tag: { }
+			}
+			x: -10.0d
+			y: -13.0d
+			description: [
+				"Need help juggling all those tools? Craft a Tool Belt!"
+				""
+				"The Tool Belt holds two tools by default but may be expanded to up to nine slots by adding Belt Pouches in an Anvil. "
+				""
+				"While worn in a curio slot, the belt allows quick swapping between any of the tools stored in it. Check the Key Binds menu for options. By default, opening the tool swap menu is on R and opening the belt’s inventory to add or remove tools is on V."
+			]
+			id: "50F144C6D2460D67"
+			tasks: [{
+				id: "2CE411031C66252D"
+				type: "item"
+				item: {
+					id: "toolbelt:belt"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "001AC8DB65AAC4B4"
+				type: "item"
+				item: "toolbelt:pouch"
+			}]
 		}
 	]
 	quest_links: [ ]
