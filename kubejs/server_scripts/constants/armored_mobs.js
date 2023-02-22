@@ -1131,9 +1131,9 @@ const armored_mobs = {
                             item: Item.of(
                                 'minecraft:glow_lichen',
                                 `{${reactive.poison_touch},${enchant_glint.blank}}`
-                            ).enchant('ars_nouveau:reactive', 4)
-                        },
-                        drop_rate: 0.0
+                            ).enchant('ars_nouveau:reactive', 4),
+                            drop_rate: 0.0
+                        }
                     }
                 }
             ]
