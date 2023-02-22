@@ -8,7 +8,7 @@ enablePowerRequirements = true
 #Range: 0.0 ~ 100.0
 maxSize = 10.0
 #Set the min size a player can shrink too
-#Range: 0.21 ~ 100.0
+#Range: 0.0 ~ 100.0
 minSize = 0.21
 #Set the amount of power the personal shrinking device can store
 setShrinkingDeviceCapacity = 100000
