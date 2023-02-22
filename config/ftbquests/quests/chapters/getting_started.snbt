@@ -62,7 +62,7 @@
 			tasks: [{
 				id: "00000000000002AD"
 				type: "checkmark"
-				title: "Exploring Enigmatica"
+				title: "Discovering Enigmatica"
 				icon: "minecraft:compass"
 			}]
 			rewards: [{
