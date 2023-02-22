@@ -45,7 +45,7 @@ ServerEvents.recipes((event) => {
             catalyst: 'naturesaura:conversion_catalyst',
             aura: 600,
             time: 20,
-            id: `${id_prefix}kaolin_clay_from_clay`
+            id: `${id_prefix}bamboo`
         }
     ];
 
