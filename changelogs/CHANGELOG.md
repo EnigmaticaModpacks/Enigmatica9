@@ -1,4 +1,4 @@
-### Enigmatica 9 v1.4.1
+### Enigmatica 9 v1.4.1 + v1.4.2
 
 _Using Forge-1.19.2-43.2.4_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.4.1.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.4.1.md)_
 
@@ -6,6 +6,8 @@ _Using Forge-1.19.2-43.2.4_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 
 **Fixed Bugs**
 
+-   Disabled Quark automatic recipe unlock to decrease world load times in some cases.
+-   Set Better Compat Check version correctly.
 -   Market is Missing Necessary Seeds \(1.4.0\) [\#230](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/230)
 -   Cannot connect to server on version 1.4.0 [\#229](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/229)
 
