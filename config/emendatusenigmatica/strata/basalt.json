@@ -7,5 +7,5 @@
     "harvestTool": "pickaxe",
     "hardness": 1.25,
     "resistance": 5,
-    "sampleStrata": false
+    "sampleStrata": true
 }
