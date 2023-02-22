@@ -279,8 +279,6 @@ ServerEvents.recipes((event) => {
         }
     ];
 
-    const ae2_types = ['1k', '4k', '16k', '64k', '256k'];
-
     const ae2_conversions = [
         { item: `ae2:engineering_processor`, block: `ae2:crafting_accelerator` },
         { item: `ae2:storage_monitor`, block: `ae2:crafting_monitor` },
