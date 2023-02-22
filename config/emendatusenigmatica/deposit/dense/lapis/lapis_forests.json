@@ -4,12 +4,12 @@
     "biomes": [
         "minecraft:forest"
     ],
-    "registryName": "lapis_forests",
+    "registryName": "dense_lapis_forests",
     "config": {
         "blocks": [
             {"material": "lapis", "weight": 100}
         ],
-        "chance": 10,
+        "chance": 90,
         "size": 45,
         "minYLevel": -40,
         "maxYLevel": 10,

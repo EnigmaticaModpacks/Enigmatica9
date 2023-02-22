@@ -2,15 +2,15 @@
     "type": "emendatusenigmatica:dense_deposit",
     "dimension": "minecraft:overworld",
     "biomes": [],
-    "registryName": "osmium_dense_high",
+    "registryName": "dense_osmium_high",
     "config": {
         "blocks": [
             {"material": "osmium", "weight": 100}
         ],
-        "chance": 5,
-        "size": 45,
-        "minYLevel": 10,
-        "maxYLevel": 30,
+        "chance": 65,
+        "size": 37,
+        "minYLevel": 40,
+        "maxYLevel": 75,
         "generateSamples": false,
         "sampleBlocks": [],
         "fillerTypes": [

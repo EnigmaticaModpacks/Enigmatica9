@@ -2,18 +2,18 @@
     "type": "emendatusenigmatica:dense_deposit",
     "dimension": "minecraft:overworld",
     "biomes": [],
-    "registryName": "tin_quartz_dense",
+    "registryName": "dense_tin_quartz",
     "config": {
         "blocks": [
             {"material": "tin", "weight": 55},
             {"material": "quartz", "weight": 45}
         ],
-        "chance": 15,
+        "chance": 65,
         "size": 38,
         "minYLevel": -60,
         "maxYLevel": -25,
-        "generateSamples": false,
-        "sampleBlocks": [],
+        "generateSamples": true,
+        "sampleBlocks": [{"material": "quartz", "weight": 10, "strata": "minecraft_basalt"}],
         "fillerTypes": [
             "minecraft_deepslate",
             "minecraft_tuff",

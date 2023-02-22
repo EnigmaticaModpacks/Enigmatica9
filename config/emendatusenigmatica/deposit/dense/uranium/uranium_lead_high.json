@@ -2,16 +2,16 @@
     "type": "emendatusenigmatica:dense_deposit",
     "dimension": "minecraft:overworld",
     "biomes": [],
-    "registryName": "uranium_lead_dense_high",
+    "registryName": "dense_uranium_lead_high",
     "config": {
         "blocks": [
             {"material": "uranium", "weight": 60},
             {"material": "lead", "weight": 20},
             {"block": "minecraft:deepslate", "weight": 20}
         ],
-        "chance": 5,
-        "size": 20,
-        "minYLevel": 40,
+        "chance": 75,
+        "size": 40,
+        "minYLevel": 20,
         "maxYLevel": 60,
         "generateSamples": false,
         "sampleBlocks": [],

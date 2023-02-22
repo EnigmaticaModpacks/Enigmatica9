@@ -2,14 +2,14 @@
     "type": "emendatusenigmatica:dense_deposit",
     "dimension": "minecraft:overworld",
     "biomes": [],
-    "registryName": "aluminum_tin_dense",
+    "registryName": "dense_aluminum_tin",
     "config": {
         "blocks": [
-            {"material": "aluminum", "weight": 50},
+            {"material": "aluminum", "weight": 60},
             {"material": "tin", "weight": 30},
             {"block": "minecraft:deepslate", "weight": 10}
         ],
-        "chance": 8,
+        "chance": 80,
         "size": 48,
         "minYLevel": -60,
         "maxYLevel": -20,

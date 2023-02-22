@@ -15,15 +15,15 @@
         "byg:dacite_ridges", 
         "byg:howling_peaks"
     ],
-    "registryName": "coal_dense_hills",
+    "registryName": "dense_coal_hills",
     "config": {
         "blocks": [
             {"material": "coal", "weight": 100}
         ],
-        "chance": 20,
-        "size": 23,
-        "minYLevel": 75,
-        "maxYLevel": 255,
+        "chance": 85,
+        "size": 36,
+        "minYLevel": 70,
+        "maxYLevel": 320,
         "generateSamples": false,
         "sampleBlocks": [],
         "fillerTypes": [

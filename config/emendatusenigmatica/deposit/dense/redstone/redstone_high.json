@@ -2,12 +2,12 @@
     "type": "emendatusenigmatica:dense_deposit",
     "dimension": "minecraft:overworld",
     "biomes": [],
-    "registryName": "redstone_high",
+    "registryName": "dense_redstone_high",
     "config": {
         "blocks": [
             {"material": "redstone", "weight": 100}
         ],
-        "chance": 5,
+        "chance": 65,
         "size": 35,
         "minYLevel": 10,
         "maxYLevel": 30,

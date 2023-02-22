@@ -2,17 +2,17 @@
     "type": "emendatusenigmatica:dense_deposit",
     "dimension": "minecraft:overworld",
     "biomes": [],
-    "registryName": "copper_zinc_silver_dense",
+    "registryName": "dense_copper_zinc_silver",
     "config": {
         "blocks": [
             {"material": "copper", "weight": 35},
             {"material": "zinc", "weight": 35},
             {"material": "silver", "weight": 30}
         ],
-        "chance": 20,
+        "chance": 95,
         "size": 40,
         "minYLevel": -25,
-        "maxYLevel": 25,
+        "maxYLevel": 30,
         "generateSamples": false,
         "sampleBlocks": [],
         "fillerTypes": [

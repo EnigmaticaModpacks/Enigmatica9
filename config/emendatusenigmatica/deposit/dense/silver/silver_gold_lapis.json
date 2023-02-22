@@ -2,17 +2,17 @@
     "type": "emendatusenigmatica:dense_deposit",
     "dimension": "minecraft:overworld",
     "biomes": [],
-    "registryName": "silver_gold_lapis_dense",
+    "registryName": "dense_silver_gold_lapis",
     "config": {
         "blocks": [
             {"material": "silver", "weight": 40},
             {"material": "gold", "weight": 30},
             {"material": "lapis", "weight": 30}
         ],
-        "chance": 25,
-        "size": 35,
-        "minYLevel": -60,
-        "maxYLevel": 0,
+        "chance": 97,
+        "size": 38,
+        "minYLevel": -25,
+        "maxYLevel": 25,
         "generateSamples": false,
         "sampleBlocks": [],
         "fillerTypes": [

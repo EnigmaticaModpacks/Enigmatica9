@@ -22,15 +22,15 @@
         "byg:dead_sea",
         "byg:lush_stacks"
     ],
-    "registryName": "bitumen_sandstone_dense",
+    "registryName": "dense_bitumen_sandstone",
     "config": {
         "blocks": [
             {"material": "bitumen", "weight": 100}
         ],
-        "chance": 25,
+        "chance": 95,
         "size": 20,
-        "minYLevel": 50,
-        "maxYLevel": 255,
+        "minYLevel": 40,
+        "maxYLevel": 90,
         "generateSamples": false,
         "sampleBlocks": [],
         "fillerTypes": [

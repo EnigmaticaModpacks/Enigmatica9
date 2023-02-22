@@ -2,17 +2,17 @@
     "type": "emendatusenigmatica:dense_deposit",
     "dimension": "minecraft:overworld",
     "biomes": [],
-    "registryName": "aluminum_clay_iron_dense",
+    "registryName": "dense_aluminum_clay_iron",
     "config": {
         "blocks": [
             {"material": "aluminum", "weight": 45},
             {"material": "iron", "weight": 20},
             {"block": "minecraft:clay", "weight": 35}
         ],
-        "chance": 10,
-        "size": 35,
-        "minYLevel": 35,
-        "maxYLevel": 255,
+        "chance": 90,
+        "size": 45,
+        "minYLevel": 20,
+        "maxYLevel": 80,
         "generateSamples": false,
         "sampleBlocks": [],
         "fillerTypes": [

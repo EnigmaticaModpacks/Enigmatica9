@@ -1,0 +1,50 @@
+{
+    "type": "emendatusenigmatica:dense_deposit",
+    "dimension": "minecraft:overworld",
+    "biomes": [
+        "minecraft:windswept_hills",
+        "minecraft:windswept_forest",
+        "minecraft:windswept_gravelly_hills",
+        "minecraft:meadow",
+        "minecraft:frozen_peaks",
+        "minecraft:jagged_peaks",
+        "minecraft:stony_peaks",
+        "minecraft:snowy_slopes",
+        "byg:canadian_shield", 
+        "byg:crag_gardens", 
+        "byg:dacite_ridges", 
+        "byg:howling_peaks"
+    ],
+    "registryName": "dense_apatite_tin_hills_high",
+    "config": {
+        "blocks": [
+            {"material": "tin", "weight": 35},
+            {"material": "apatite", "weight": 65}
+        ],
+        "chance": 80,
+        "size": 36,
+        "minYLevel": 50,
+        "maxYLevel": 100,
+        "generateSamples": false,
+        "sampleBlocks": [],
+        "fillerTypes": [
+            "minecraft_deepslate",
+            "minecraft_tuff",
+            "minecraft_stone",
+            "minecraft_andesite",
+            "minecraft_granite",
+            "minecraft_diorite",
+            "create_limestone",
+            "create_ochrum",
+            "create_scoria",
+            "create_crimsite",
+            "create_asurine",
+            "create_veridium",
+            "byg_soapstone",
+            "byg_scoria_stone",
+            "byg_dacite",
+            "quark_jasper",
+            "quark_shale"
+        ]
+    }
+}

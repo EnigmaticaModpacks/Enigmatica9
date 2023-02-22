@@ -21,17 +21,17 @@
         "byg:dead_sea",
         "byg:lush_stacks"
     ],
-    "registryName": "aluminum_clay_iron_dense_swamp",
+    "registryName": "dense_aluminum_clay_iron_swamp",
     "config": {
         "blocks": [
             {"material": "aluminum", "weight": 45},
             {"material": "iron", "weight": 20},
             {"block": "minecraft:clay", "weight": 35}
         ],
-        "chance": 25,
+        "chance": 60,
         "size": 35,
-        "minYLevel": 35,
-        "maxYLevel": 255,
+        "minYLevel": 20,
+        "maxYLevel": 320,
         "generateSamples": false,
         "sampleBlocks": [],
         "fillerTypes": [

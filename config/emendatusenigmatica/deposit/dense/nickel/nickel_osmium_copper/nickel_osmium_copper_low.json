@@ -1,0 +1,38 @@
+{
+    "type": "emendatusenigmatica:dense_deposit",
+    "dimension": "minecraft:overworld",
+    "biomes": [],
+    "registryName": "dense_nickel_osmium_copper_low",
+    "config": {
+        "blocks": [
+            {"material": "nickel", "weight": 44},
+            {"material": "osmium", "weight": 34},
+            {"material": "copper", "weight": 22}
+        ],
+        "chance": 80,
+        "size": 40,
+        "minYLevel": -40,
+        "maxYLevel": -10,
+        "generateSamples": false,
+        "sampleBlocks": [],
+        "fillerTypes": [
+            "minecraft_deepslate",
+            "minecraft_tuff",
+            "minecraft_stone",
+            "minecraft_andesite",
+            "minecraft_granite",
+            "minecraft_diorite",
+            "create_limestone",
+            "create_ochrum",
+            "create_scoria",
+            "create_crimsite",
+            "create_asurine",
+            "create_veridium",
+            "byg_soapstone",
+            "byg_scoria_stone",
+            "byg_dacite",
+            "quark_jasper",
+            "quark_shale"
+        ]
+    }
+}

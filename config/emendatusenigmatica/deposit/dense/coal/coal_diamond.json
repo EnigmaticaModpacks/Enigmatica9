@@ -2,15 +2,15 @@
     "type": "emendatusenigmatica:dense_deposit",
     "dimension": "minecraft:overworld",
     "biomes": [],
-    "registryName": "coal_diamond_dense",
+    "registryName": "dense_coal_diamond",
     "config": {
         "blocks": [
             {"material": "diamond", "weight": 25},
             {"material": "coal", "weight": 50},
             {"block": "minecraft:deepslate", "weight": 25}
         ],
-        "chance": 10,
-        "size": 32,
+        "chance": 100,
+        "size": 34,
         "minYLevel": -60,
         "maxYLevel": -10,
         "generateSamples": false,
