@@ -333,6 +333,17 @@ ServerEvents.recipes((event) => {
                     type: 'place',
                     block: { blocks: [conversion.block], nbt: `{forward:"WEST"}` },
                     contextual: { type: 'direction', direction: 'west' }
+                },
+                {
+                    type: 'place',
+                    block: { blocks: [conversion.block], nbt: `{forward:"UP"}` },
+                    contextual: { type: 'direction', direction: 'up' }
+                },
+
+                {
+                    type: 'place',
+                    block: { blocks: [conversion.block], nbt: `{forward:"DOWN"}` },
+                    contextual: { type: 'direction', direction: 'down' }
                 }
             );
         } else {
