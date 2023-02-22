@@ -184,8 +184,8 @@ const armored_mobs = {
                             drop_rate: 0.085
                         },
                         offhand: {
-                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.sundering),
-                            drop_rate: 0.085
+                            item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.sundering),
+                            drop_rate: 1.0
                         }
                     }
                 },
@@ -224,8 +224,8 @@ const armored_mobs = {
                             drop_rate: 0.085
                         },
                         offhand: {
-                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.blasting),
-                            drop_rate: 0.085
+                            item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.blasting),
+                            drop_rate: 1.0
                         }
                     }
                 },
@@ -264,8 +264,8 @@ const armored_mobs = {
                             drop_rate: 0.085
                         },
                         offhand: {
-                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.harming),
-                            drop_rate: 0.085
+                            item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.harming),
+                            drop_rate: 1.0
                         }
                     }
                 },
@@ -304,8 +304,8 @@ const armored_mobs = {
                             drop_rate: 0.085
                         },
                         offhand: {
-                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.poison),
-                            drop_rate: 0.085
+                            item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.poison),
+                            drop_rate: 1.0
                         }
                     }
                 }
@@ -450,8 +450,8 @@ const armored_mobs = {
                             drop_rate: 0.085
                         },
                         offhand: {
-                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.harming),
-                            drop_rate: 0.085
+                            item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.harming),
+                            drop_rate: 1.0
                         }
                     }
                 },
@@ -470,8 +470,8 @@ const armored_mobs = {
                             drop_rate: 0.085
                         },
                         offhand: {
-                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.blasting),
-                            drop_rate: 0.085
+                            item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.blasting),
+                            drop_rate: 1.0
                         }
                     }
                 },
@@ -490,8 +490,8 @@ const armored_mobs = {
                             drop_rate: 0.085
                         },
                         offhand: {
-                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.sundering),
-                            drop_rate: 0.085
+                            item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.sundering),
+                            drop_rate: 1.0
                         }
                     }
                 }
@@ -597,8 +597,8 @@ const armored_mobs = {
                             drop_rate: 0.085
                         },
                         offhand: {
-                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.wither_long),
-                            drop_rate: 0.085
+                            item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.wither_long),
+                            drop_rate: 1.0
                         }
                     }
                 }
@@ -610,8 +610,8 @@ const armored_mobs = {
                     weight: 40,
                     set: {
                         offhand: {
-                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.freezing),
-                            drop_rate: 0.085
+                            item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.freezing),
+                            drop_rate: 1.0
                         }
                     }
                 },
@@ -650,8 +650,8 @@ const armored_mobs = {
                             drop_rate: 0.085
                         },
                         offhand: {
-                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.freezing_strong),
-                            drop_rate: 0.085
+                            item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.freezing_strong),
+                            drop_rate: 1.0
                         }
                     }
                 },
@@ -670,8 +670,8 @@ const armored_mobs = {
                             drop_rate: 0.085
                         },
                         offhand: {
-                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.freezing),
-                            drop_rate: 0.085
+                            item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.freezing),
+                            drop_rate: 1.0
                         }
                     }
                 }
@@ -857,8 +857,8 @@ const armored_mobs = {
                             drop_rate: 0.085
                         },
                         offhand: {
-                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.wither_strong),
-                            drop_rate: 0.085
+                            item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.wither_strong),
+                            drop_rate: 1.0
                         },
                         summons: [{ mob: 'twilightforest:hedge_spider', count: { min: 5, max: 10 }, spread: 5 }]
                     }
@@ -1306,8 +1306,8 @@ const armored_mobs = {
                             drop_rate: 0.085
                         },
                         offhand: {
-                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.wither_long),
-                            drop_rate: 0.085
+                            item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.wither_long),
+                            drop_rate: 1.0
                         },
                         summons: [{ mob: 'twilightforest:mist_wolf', count: { min: 1, max: 2 }, spread: 5 }]
                     }
@@ -1397,8 +1397,8 @@ const armored_mobs = {
                             drop_rate: 0.085
                         },
                         offhand: {
-                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.blasting),
-                            drop_rate: 0.085
+                            item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.blasting),
+                            drop_rate: 1.0
                         }
                     }
                 }
