@@ -1,7 +1,7 @@
 {
 	id: "00000000000000AE"
 	group: "72A9465344128AF9"
-	order_index: 4
+	order_index: 5
 	filename: "pneumaticcraft_repressurized"
 	title: "PneumaticCraft: Repressurized"
 	icon: "pneumaticcraft:pressure_gauge_module"
@@ -24,7 +24,24 @@
 			tasks: [{
 				id: "7B56DD5D9F4BBB68"
 				type: "item"
-				item: "pneumaticcraft:ingot_iron_compressed"
+				title: "Compressed Iron"
+				icon: "pneumaticcraft:ingot_iron_compressed"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "pneumaticcraft:ingot_iron_compressed"
+								Count: 1b
+							}
+							{
+								id: "pneumaticcraft:compressed_stone"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "00000000000000B1"
@@ -581,7 +598,8 @@
 			y: -7.5d
 			subtitle: "Who Says You Can't Take It With You?"
 			description: ["A blast resistant chest that retains its contents when broken."]
-			dependencies: ["40A424BE284D16B2"]
+			hide_dependency_lines: true
+			dependencies: ["5E79C1011FABC4AF"]
 			id: "0000000000000110"
 			tasks: [{
 				id: "0000000000000111"
@@ -664,9 +682,30 @@
 			dependencies: ["00000000000000BF"]
 			id: "000000000000011D"
 			tasks: [{
-				id: "5325A3A8E4FF8A24"
-				type: "checkmark"
+				id: "7572CC9E6585AC4F"
+				type: "item"
 				title: "Logistics and Programming"
+				icon: "pneumaticcraft:pressure_tube"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "pneumaticcraft:pressure_tube"
+								Count: 1b
+							}
+							{
+								id: "pneumaticcraft:reinforced_pressure_tube"
+								Count: 1b
+							}
+							{
+								id: "pneumaticcraft:advanced_pressure_tube"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "0000000000000A7A"
@@ -748,7 +787,8 @@
 			y: -5.5d
 			subtitle: "Flying Circus"
 			description: ["Logistics Drones are handy little helpers in places where you don’t want to run a full air infrastructure. Experiment with some logistics frames and deploy a logistics drone to move the items for you."]
-			dependencies: ["5325A3A8E4FF8A24"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000000BD"]
 			id: "0000000000000126"
 			tasks: [{
 				id: "0000000000000127"
@@ -1346,9 +1386,30 @@
 			dependencies: ["00000000000000BF"]
 			id: "5E79C1011FABC4AF"
 			tasks: [{
-				id: "40A424BE284D16B2"
-				type: "checkmark"
+				id: "38BA4E657128DF03"
+				type: "item"
 				title: "Tools and Utility"
+				icon: "pneumaticcraft:pressure_tube"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "pneumaticcraft:pressure_tube"
+								Count: 1b
+							}
+							{
+								id: "pneumaticcraft:reinforced_pressure_tube"
+								Count: 1b
+							}
+							{
+								id: "pneumaticcraft:advanced_pressure_tube"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "0935B424D541C0A9"

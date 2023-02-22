@@ -1,9 +1,9 @@
 {
 	id: "0000000000000093"
-	group: "74B3CF67FCEAB20F"
-	order_index: 0
+	group: "0856CF7F5CBEB20A"
+	order_index: 2
 	filename: "tools"
-	title: "Miscellaneous Equipment"
+	title: "Equipment"
 	icon: {
 		id: "minecraft:netherite_pickaxe"
 		Count: 1b
@@ -17,7 +17,7 @@
 		{
 			title: "Tools and Armor"
 			x: -10.0d
-			y: -14.0d
+			y: -14.5d
 			shape: "gear"
 			description: [
 				"Many mods add a variety of very useful tools that can be easy to overlook. These quests won't cover everything, but will serve to highlight some of the more notable options not otherwise covered in other quest chapters."
@@ -138,7 +138,7 @@
 			]
 		}
 		{
-			x: -7.5d
+			x: -8.0d
 			y: -13.5d
 			subtitle: "Head in the Clouds"
 			description: [
@@ -164,7 +164,7 @@
 			}]
 		}
 		{
-			x: -12.5d
+			x: -12.0d
 			y: -13.5d
 			subtitle: "Just to Spend it With You..."
 			description: [
@@ -251,9 +251,11 @@
 			x: -10.0d
 			y: -9.5d
 			description: [
-				"Enigmatica 9 does not contain any form of dedicated Vein Miner mod, such as the FTB Ultimine or Ore Excavation mods."
+				"There is no dedicated vein miner mod in Enigmatica 9 since we’ve got a variety of very cool tools that offer the same features and more."
 				""
-				"Why? Well, because we’ve got some fancy tools that perform various AoE mining tasks, and we’d like to showcase them instead."
+				"AoE Mining? Vein Mining? Spooky Mining at a Distance? Yeah, we’ve got that. "
+				""
+				"The following quests will help highlight some of the more notable options. Enjoy!"
 			]
 			id: "358FAB3D482C463A"
 			tasks: [{
@@ -1204,6 +1206,37 @@
 					player_command: false
 				}
 			]
+		}
+		{
+			icon: {
+				id: "toolbelt:belt"
+				Count: 1b
+				tag: { }
+			}
+			x: -10.0d
+			y: -13.0d
+			description: [
+				"Need help juggling all those tools? Craft a Tool Belt!"
+				""
+				"The Tool Belt holds two tools by default but may be expanded to up to nine slots by adding Belt Pouches in an Anvil. "
+				""
+				"While worn in a curio slot, the belt allows quick swapping between any of the tools stored in it. Check the Key Binds menu for options. By default, opening the tool swap menu is on R and opening the belt’s inventory to add or remove tools is on V."
+			]
+			id: "50F144C6D2460D67"
+			tasks: [{
+				id: "2CE411031C66252D"
+				type: "item"
+				item: {
+					id: "toolbelt:belt"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "001AC8DB65AAC4B4"
+				type: "item"
+				item: "toolbelt:pouch"
+			}]
 		}
 	]
 	quest_links: [ ]

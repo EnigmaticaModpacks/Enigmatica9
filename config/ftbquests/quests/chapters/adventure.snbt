@@ -1,7 +1,7 @@
 {
 	id: "0000000000000097"
-	group: ""
-	order_index: 3
+	group: "0856CF7F5CBEB20A"
+	order_index: 0
 	filename: "adventure"
 	title: "Adventure"
 	icon: "minecraft:recovery_compass"
@@ -143,7 +143,8 @@
 			tasks: [{
 				id: "5EE8D2B8705B17FE"
 				type: "advancement"
-				advancement: "the_bumblezone:the_bumblezone/root"
+				icon: "the_bumblezone:beehive_beeswax"
+				advancement: "the_bumblezone:the_bumblezone/teleportation/teleport_to_bumblezone_pearl"
 				criterion: ""
 			}]
 			rewards: [{
