@@ -969,7 +969,6 @@
 			]
 			dependencies: ["0000000000000400"]
 			min_width: 250
-			invisible: true
 			id: "6C528552302BCEDC"
 			tasks: [{
 				id: "122D1ECB8E615692"
