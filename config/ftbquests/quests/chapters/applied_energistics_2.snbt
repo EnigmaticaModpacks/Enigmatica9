@@ -13,7 +13,7 @@
 			icon: "ae2:meteorite_compass"
 			x: 0.0d
 			y: -3.0d
-			description: ["Crafting a Meteorite Compass will be crucial to finding Certus Quartz, though it is very possible to stumble upon the meteorites visible above ground. Be sure to bring a decent pickaxe to break through the tough outer shell of the meteorite!"]
+			description: ["Crafting a Meteorite Compass will be crucial to finding Certus Quartz, though it is very possible to stumble upon the meteorites above ground. Be sure to bring a decent pickaxe to break through the tough outer shell of the meteorite!"]
 			hide_dependency_lines: true
 			dependencies: ["7039D20D06BEAFC2"]
 			min_width: 250
@@ -125,7 +125,7 @@
 			icon: "ae2:chest"
 			x: 0.0d
 			y: 3.0d
-			description: ["The primary purpose of any ME network, whether Ad Hoc or Controller based, is storage and logistics. In terms of storage, the ME Network has two interfaces, the ME Storage Bus and the ME Drive."]
+			description: ["The primary purpose of any ME network, whether Ad Hoc or Controller based, is storage and logistics. In terms of storage, the ME Network has two options, the ME Storage Bus and the ME Drive."]
 			hide_dependency_lines: true
 			dependencies: ["029656A1597547F9"]
 			id: "67C91F3187348C8E"

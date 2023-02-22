@@ -143,7 +143,7 @@
 				""
 				"Drawers need not be in contact with the Controller, nor each other. They simply need to be selected and bound to the Controller by way of a Linking Tool. "
 				""
-				"To begin, select a Drawer Controller by Right-Clicking it with a Linking Tool. The selected Controller be highlighted while the Linking Tool is in hand. "
+				"To begin, select a Drawer Controller by Right-Clicking it with a Linking Tool. The selected Controller is highlighted while the Linking Tool is in hand. "
 				""
 				"The tool itself has several linking modes and linking actions that may be swapped at any time:"
 				""
