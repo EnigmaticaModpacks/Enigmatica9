@@ -12,7 +12,7 @@
 			title: "Applied Energistics 2"
 			icon: "ae2:meteorite_compass"
 			x: 0.0d
-			y: -6.0d
+			y: -3.0d
 			description: ["Crafting a Meteorite Compass will be crucial to finding Certus Quartz, though it is very possible to stumble upon the meteorites visible above ground. Be sure to bring a decent pickaxe to break through the tough outer shell of the meteorite!"]
 			hide_dependency_lines: true
 			dependencies: ["7039D20D06BEAFC2"]
@@ -36,7 +36,7 @@
 			title: "Inscribers Presses"
 			icon: "ae2:mysterious_cube"
 			x: -1.0d
-			y: -5.5d
+			y: -2.5d
 			description: [
 				"Deep in the heart of the meteorites located by the Meteorite Compass lays a Mysterious Cube. Break it to obtain one of each Inscriber Press."
 				""
@@ -83,7 +83,7 @@
 		{
 			title: "ME Controller Networks"
 			x: -1.5d
-			y: -4.0d
+			y: -1.0d
 			shape: "hexagon"
 			description: [
 				"ME Controller Networks consist of an ME Controller multiblock, some amount of cable, and a number of channels depending on the size of the Controller multiblock. In this configuration, channels are distributed in a nearest first manner, so if more than eight devices are connected to a length of Glass Cable, only the eight nearest the controller will be operational. "
@@ -124,7 +124,7 @@
 			title: "Storage"
 			icon: "ae2:chest"
 			x: 0.0d
-			y: 0.0d
+			y: 3.0d
 			description: ["The primary purpose of any ME network, whether Ad Hoc or Controller based, is storage and logistics. In terms of storage, the ME Network has two interfaces, the ME Storage Bus and the ME Drive."]
 			hide_dependency_lines: true
 			dependencies: ["029656A1597547F9"]
@@ -147,7 +147,7 @@
 			title: "Digital Storage"
 			icon: "ae2:drive"
 			x: 1.5d
-			y: 1.0d
+			y: 4.0d
 			description: [
 				"Capable of holding up to ten Storage Cells, the ME Drive is the heart of AE2’s digital storage system. "
 				""
@@ -180,7 +180,7 @@
 		}
 		{
 			x: 1.5d
-			y: 3.0d
+			y: 6.0d
 			description: [
 				"Basic Item storage capable of holding up to 63 types of items, such as Stone or Ores. Beware that items with different NBT data on them will be seen as separate types, so dumping all that enchanted armor from your mob farm into storage will very quickly fill the cells. "
 				""
@@ -210,7 +210,7 @@
 		}
 		{
 			x: 0.5d
-			y: 2.0d
+			y: 5.0d
 			description: [
 				"Basic Fluid storage capable of holding up to five types of fluid, such as Lava or Water."
 				""
@@ -240,7 +240,7 @@
 		}
 		{
 			x: 2.5d
-			y: 2.0d
+			y: 5.0d
 			description: [
 				"Basic Chemical storage capable of holding up to five types of chemical, such as Sodium or Sulfuric Acid. Radioactive chemicals are not allowed in the system."
 				""
@@ -271,7 +271,7 @@
 		{
 			title: "External Storage"
 			x: -1.5d
-			y: 1.0d
+			y: 4.0d
 			description: ["ME Storage Buses act as an interface between most external storage blocks and the ME Network. This can be as simple as a connection to a single Chest or a Fluid Tank; or may be used to connect much larger storage networks to the Network."]
 			dependencies: ["67C91F3187348C8E"]
 			id: "530BB11487524556"
@@ -292,7 +292,7 @@
 		{
 			title: "Making Connections"
 			x: 0.0d
-			y: -3.0d
+			y: 0.0d
 			description: [
 				"The standard workhorse cable, Glass cables can transmit up to eight channels and come in seventeen total colors. "
 				""
@@ -328,7 +328,7 @@
 		}
 		{
 			x: 0.5d
-			y: -2.0d
+			y: 1.0d
 			description: [
 				"Covered Cables are functionally equivalent to Glass Cables, merely offering a cleaner aesthetic. "
 				""
@@ -371,7 +371,7 @@
 		{
 			title: "Autocrafting"
 			x: -2.0d
-			y: -3.0d
+			y: 0.0d
 			description: ["Auto Crafting consists of three parts: the Crafting CPU, Pattern Providers, and the Patterns themselves. All three work in concert to run any Auto Crafting request. "]
 			dependencies: ["4D7FF267C7EC2845"]
 			id: "2FC3BF03747E40DB"
@@ -392,7 +392,7 @@
 		{
 			title: "System Access"
 			x: 2.0d
-			y: -3.0d
+			y: 0.0d
 			description: [
 				"Terminals allow manual insertion and extraction from the network, while Crafting Terminals add a built in Crafting Table, allowing quick crafting with materials in the system. "
 				""
@@ -434,7 +434,7 @@
 		{
 			title: "Encoding Patterns"
 			x: -2.5d
-			y: -2.0d
+			y: 1.0d
 			description: [
 				"When it comes to actually telling the system how to craft something, a Pattern must be encoded within the Pattern Encoding Terminal. Recipes may be easily encoded by searching them in JEI and clicking the plus (+) button to transfer the items into the Pattern Encoder. It is not necessary to have the ingredients on hand. "
 				""
@@ -460,7 +460,7 @@
 			title: "ME P2P Tunnels"
 			icon: "ae2:me_p2p_tunnel"
 			x: -3.0d
-			y: -4.0d
+			y: -1.0d
 			description: [
 				"P2P or Point to Point, is a concept of using a single channel to transmit up to 32. Setting up a P2P connection can certainly be daunting for players who are new to AE2, but the basics are fairly accessible. "
 				""
@@ -516,7 +516,7 @@
 		}
 		{
 			x: -1.5d
-			y: -2.0d
+			y: 1.0d
 			description: [
 				"The Crafting CPU itself is a cuboid multiblock consisting of Crafting Units, Crafting Storage, and optionally Crafting Co-Processing Units."
 				""
@@ -586,7 +586,7 @@
 			title: "Crafting"
 			icon: "ae2:molecular_assembler"
 			x: -1.5d
-			y: -1.0d
+			y: 2.0d
 			description: [
 				"While the Crafting CPU manages the craft, Pattern Providers are responsible for dispensing items and returning the results back to the system. "
 				""
@@ -624,7 +624,7 @@
 		}
 		{
 			x: 1.5d
-			y: -1.0d
+			y: 2.0d
 			description: [
 				"Exceptionally useful for automation tasks, the Formation and Annihilation Planes allow Placing and Breaking of blocks, respectively. They may also be configured to drop or pick up items."
 				""
@@ -659,7 +659,7 @@
 		{
 			title: "ME Import/Export bus"
 			x: 2.5d
-			y: -2.0d
+			y: 1.0d
 			description: ["Where an Interface passively accepts or provides materials, Import and Export Buses actively push and pull them. Set an Export Bus against a tank and configure it to export Water to keep the tank filled, or set an Import bus against a tank of Hydrogen to import it into storage. "]
 			dependencies: ["6C9905294D4D45A5"]
 			id: "7DBCBBB2A18DDDA0"
@@ -686,7 +686,7 @@
 		}
 		{
 			x: 1.5d
-			y: -2.0d
+			y: 1.0d
 			description: ["The ME Interface allows for both insertion and extraction of material from the ME system in a single block. Any material inserted into the Interface is instantly transferred into available storage on the Network. It may optionally be configured to supply up to nine materials, making them accessible for pipes from other mods to extract them from the system. "]
 			dependencies: ["6C9905294D4D45A5"]
 			id: "3E08D8EF1B87C547"
@@ -708,7 +708,7 @@
 			title: "Quantum Network Bridge"
 			icon: "ae2:quantum_entangled_singularity"
 			x: 2.5d
-			y: -1.0d
+			y: 2.0d
 			description: [
 				"The Quantum Network Bridge is a multiblock allowing a network to be extended wirelessly and across dimensions. It consists of a ring of eight ME Quantum Ring blocks surrounding a central ME Quantum Link Chamber and may be built both vertically and horizontally."
 				""
@@ -749,7 +749,7 @@
 		}
 		{
 			x: 0.0d
-			y: 1.0d
+			y: 4.0d
 			description: [
 				"Storage Monitors allow a window into the Network, displaying the total amount of a given item. "
 				""
@@ -789,7 +789,7 @@
 		}
 		{
 			x: -2.5d
-			y: -1.0d
+			y: 2.0d
 			description: [
 				"Pattern Providers can occasionally end up tucked away in hard-to-reach places. The Pattern Access Terminal grants remote access to every Provider on the network, allowing new Patterns to be easily installed from one location. "
 				""
@@ -816,7 +816,7 @@
 		{
 			title: "Ad Hoc Networks"
 			x: 1.5d
-			y: -4.0d
+			y: -1.0d
 			shape: "hexagon"
 			description: [
 				"Ad Hoc Networks consist of an Energy Acceptor, some amount of cable, and up to eight channels. If more than eight channels are used, the entire network will shut down."
@@ -846,7 +846,7 @@
 		}
 		{
 			x: 1.0d
-			y: -5.5d
+			y: -2.5d
 			description: [
 				"The Flawless Budding Certus Quartz found in meteorites is not easily moved, and breaking it by hand will result in a Flawed Budding Certus Quartz which, when used to grow more Certus, will degrade further over time. "
 				""
@@ -872,7 +872,7 @@
 		}
 		{
 			x: -0.5d
-			y: -2.0d
+			y: 1.0d
 			description: [
 				"Smart Cables and Dense Smart Cables function in an identical manner to their Covered Cable counterparts with one addition; they display the number of channels in use on their side. "
 				""
@@ -912,7 +912,7 @@
 		}
 		{
 			x: -3.5d
-			y: -3.0d
+			y: 0.0d
 			description: [
 				"P2P may be used for more than transmitting channels, however, allowing long range transportation of many materials over the network that will soon be crisscrossing your base. "
 				""
@@ -978,7 +978,7 @@
 		{
 			icon: "ae2:singularity"
 			x: 0.0d
-			y: -7.0d
+			y: -4.0d
 			shape: "hexagon"
 			description: [
 				"Applied Energistics takes storage and logistics to the next level. On its own, it is capable of automating many crafts while also providing deep storage solutions and capabilities to bridge many mods. "
@@ -1010,25 +1010,25 @@
 		{
 			linked_quest: "000000000000040F"
 			x: -2.5d
-			y: 2.0d
+			y: 5.0d
 			id: "1F17C7DD8768ACE1"
 		}
 		{
 			linked_quest: "50D051B9CD6372F1"
 			x: -0.5d
-			y: 2.0d
+			y: 5.0d
 			id: "4E4222E0605AFC72"
 		}
 		{
 			linked_quest: "00000000000007C7"
 			x: -1.0d
-			y: 3.0d
+			y: 6.0d
 			id: "01EA6A7A1507A775"
 		}
 		{
 			linked_quest: "0000000000000DA4"
 			x: -2.0d
-			y: 3.0d
+			y: 6.0d
 			id: "52D83208CBBFD592"
 		}
 	]
