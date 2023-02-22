@@ -294,7 +294,7 @@ ServerEvents.recipes((event) => {
         let post = [
             {
                 type: 'execute',
-                command: 'playsound minecraft:block.wooden_button.click_on block @p ~ ~ ~ 1 0.6',
+                command: 'playsound minecraft:block.amethyst_block.hit block @p ~ ~ ~ 1 0.6',
                 hide: true
             }
         ];
