@@ -185,6 +185,8 @@
 				"Basic Item storage capable of holding up to 63 types of items, such as Stone or Ores. Beware that items with different NBT data on them will be seen as separate types, so dumping all that enchanted armor from your mob farm into storage will very quickly fill the cells. "
 				""
 				"While the math behind what a Byte is, exactly, can be a little complicated, know that Storage Cells will hold more total if they are limited to a single type than if they’re allowed to store multiple types."
+				""
+				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
 			]
 			dependencies: ["2288AA73FE626BFB"]
 			id: "211D0FAA0B023EF0"
@@ -213,6 +215,8 @@
 				"Basic Fluid storage capable of holding up to five types of fluid, such as Lava or Water."
 				""
 				"While the math behind what a Byte is, exactly, can be a little complicated, know that Storage Cells will hold more total if they are limited to a single type than if they’re allowed to store multiple types."
+				""
+				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
 			]
 			dependencies: ["2288AA73FE626BFB"]
 			id: "6B9F725AE5A94531"
@@ -241,6 +245,8 @@
 				"Basic Chemical storage capable of holding up to five types of chemical, such as Sodium or Sulfuric Acid. Radioactive chemicals are not allowed in the system."
 				""
 				"While the math behind what a Byte is, exactly, can be a little complicated, know that Storage Cells will hold more total if they are limited to a single type than if they’re allowed to store multiple types."
+				""
+				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
 			]
 			dependencies: ["2288AA73FE626BFB"]
 			id: "22AB44AE329F9EA8"

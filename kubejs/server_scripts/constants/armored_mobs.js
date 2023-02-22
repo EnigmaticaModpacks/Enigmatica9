@@ -150,7 +150,7 @@ const armored_mobs = {
         pillager: {
             equipment: [
                 {
-                    weight: 100,
+                    weight: 50,
                     set: {
                         max_health: 30,
                         enchant: {
@@ -181,6 +181,130 @@ const armored_mobs = {
                         },
                         mainhand: {
                             item: Item.of('minecraft:crossbow', default_nbt).enchant('minecraft:multishot', 1),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.sundering),
+                            drop_rate: 0.085
+                        }
+                    }
+                },
+                {
+                    weight: 10,
+                    set: {
+                        max_health: 30,
+                        enchant: {
+                            chance: 1.0,
+                            level: { min: 15, max: 20 },
+                            treasure: false
+                        },
+                        chest: {
+                            item: Item.of(
+                                'minecraft:leather_chestplate',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        legs: {
+                            item: Item.of(
+                                'minecraft:leather_leggings',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        feet: {
+                            item: Item.of(
+                                'minecraft:leather_boots',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        mainhand: {
+                            item: Item.of('minecraft:crossbow', default_nbt).enchant('minecraft:multishot', 1),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.blasting),
+                            drop_rate: 0.085
+                        }
+                    }
+                },
+                {
+                    weight: 20,
+                    set: {
+                        max_health: 30,
+                        enchant: {
+                            chance: 1.0,
+                            level: { min: 15, max: 20 },
+                            treasure: false
+                        },
+                        chest: {
+                            item: Item.of(
+                                'minecraft:leather_chestplate',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        legs: {
+                            item: Item.of(
+                                'minecraft:leather_leggings',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        feet: {
+                            item: Item.of(
+                                'minecraft:leather_boots',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        mainhand: {
+                            item: Item.of('minecraft:crossbow', default_nbt).enchant('minecraft:multishot', 1),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.harming),
+                            drop_rate: 0.085
+                        }
+                    }
+                },
+                {
+                    weight: 20,
+                    set: {
+                        max_health: 30,
+                        enchant: {
+                            chance: 1.0,
+                            level: { min: 15, max: 20 },
+                            treasure: false
+                        },
+                        chest: {
+                            item: Item.of(
+                                'minecraft:leather_chestplate',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        legs: {
+                            item: Item.of(
+                                'minecraft:leather_leggings',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        feet: {
+                            item: Item.of(
+                                'minecraft:leather_boots',
+                                `{display:{color:1908001},${enchant_glint.blank}}`
+                            ),
+                            drop_rate: 0.085
+                        },
+                        mainhand: {
+                            item: Item.of('minecraft:crossbow', default_nbt).enchant('minecraft:multishot', 1),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:tipped_arrow', tipped_arrow_nbt.poison),
                             drop_rate: 0.085
                         }
                     }
@@ -268,7 +392,7 @@ const armored_mobs = {
         skeleton: {
             equipment: [
                 {
-                    weight: 10,
+                    weight: 30,
                     set: { default: true }
                 },
                 {
@@ -332,7 +456,7 @@ const armored_mobs = {
                     }
                 },
                 {
-                    weight: 25,
+                    weight: 5,
                     set: {
                         max_health: 50,
                         effects: [{ type: 'minecraft:speed', amplifier: 2 }],
