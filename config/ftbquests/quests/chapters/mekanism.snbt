@@ -1,7 +1,7 @@
 {
 	id: "00000000000000A5"
 	group: "72A9465344128AF9"
-	order_index: 3
+	order_index: 4
 	filename: "mekanism"
 	title: "Mekanism"
 	icon: "mekanism:alloy_atomic"
@@ -20,9 +20,7 @@
 				""
 				"Beyond these quests, there is no in game guide to Mekanism. However a very thorough official wiki can be found here: "
 				""
-				"https://wiki.aidancbrady.com"
-				""
-				"~MuteTiefling"
+				"{\"text\":\"Mekanism Wiki\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com\"}}"
 			]
 			optional: true
 			id: "00000000000006A1"
@@ -707,6 +705,8 @@
 				""
 				"Tip: Place an Input Valve near the top of the structure, in line with the vents for the turbine, to allow for simpler routing of Mechanical Pipes."
 				"Similarly, the Coolant Output is best placed lower in the structure, again in line with the Turbine's Input Valve, to simplify routing of Pressurized Tubes."
+				""
+				"{\"text\":\"Mekanism Wiki: Fission Reactor\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com/wiki/Fission_Reactor\"}}"
 			]
 			dependencies: ["000000000000079A"]
 			min_width: 250
@@ -791,7 +791,7 @@
 				""
 				"With that said, it's worth the effort to build some safety systems into a Mekanism fission reactor as well. The wiki has an excellent entry on circuit breakers here: "
 				""
-				"https://wiki.aidancbrady.com/wiki/Fission_Reactor"
+				"{\"text\":\"Mekanism Wiki: Circuit Breaker\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com/wiki/Fission_Reactor#:~:text=for%20sodium%20cooling.-,Circuit%20Breaker,-Every%20reactor%20should\"}}"
 				""
 				"The reactor may go super-critical and explode if it overheats, the leading cause of which is that it has run out of coolant. Therefore, the circuit breaker should trigger on High Temperature. It may also be prudent to build a second circuit breaker for Excess Waste to prevent venting radiation into the surrounding environment."
 			]
@@ -982,6 +982,8 @@
 				"● Piping in D-T Fuel in addition to the direct Deuterium and Tritium feeds will drastically increase the heat of the reactor, causing it to generate steam far more quickly."
 				""
 				"● Connecting the Fusion Reactor to a Thermoelectric Boiler is another great way of boosting the total steam production, and therefore power production."
+				""
+				"{\"text\":\"Mekanism Wiki: Fusion Reactor\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com/wiki/Fusion_Reactor\"}}"
 			]
 			dependencies: ["00000000000006A7"]
 			min_width: 300
@@ -1042,6 +1044,7 @@
 				""
 				"WARNING: If the Turbine's power buffer fills up it will stop running, steam and water flow will halt, and the attached Reactor's heat will rapidly rise to dangerous levels resulting in a potential meltdown situation."
 				""
+				"{\"text\":\"Mekanism Wiki: Industrial Turbine\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com/wiki/Industrial_Turbine\"}}"
 			]
 			dependencies: [
 				"0000000000000793"
@@ -1156,7 +1159,11 @@
 				""
 				"It’s also fully compatible with Applied Energistics 2. Simply place a configured QIO Dashboard on an ME Storage Bus to grant AE2 full access to the entire contents of the QIO system."
 			]
-			dependencies: ["6515A1D74E64D5AF"]
+			dependencies: [
+				"6515A1D74E64D5AF"
+				"530BB11487524556"
+			]
+			dependency_requirement: "one_completed"
 			id: "00000000000007C7"
 			tasks: [
 				{
@@ -1389,6 +1396,7 @@
 				""
 				"The Boiler itself may be nearly any size, up to 18x18x18, however a small one is very capable of dissipating a lot of heat. The quest requires materials for a 5x9x5 boiler. When scaling up, it’s more likely that the Turbine will need to be expanded than the Boiler."
 				""
+				"{\"text\":\"Mekanism Wiki: Thermoelectric Boiler\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com/wiki/Thermoelectric_Boiler\"}}"
 			]
 			dependencies: ["00000000000007B8"]
 			min_width: 250

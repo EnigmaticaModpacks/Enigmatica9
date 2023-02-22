@@ -37,6 +37,15 @@ ServerEvents.recipes((event) => {
             aura: 5000,
             time: 60,
             id: `naturesaura:altar/blaze`
+        },
+        {
+            output: 'minecraft:bamboo',
+            input: 'minecraft:stick',
+            aura_type: 'naturesaura:overworld',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 600,
+            time: 20,
+            id: `${id_prefix}bamboo`
         }
     ];
 
