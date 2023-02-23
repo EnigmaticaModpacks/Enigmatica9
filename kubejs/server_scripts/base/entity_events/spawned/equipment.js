@@ -2,6 +2,13 @@ EntityEvents.spawned((event) => {
     if (!event.entity.isLiving()) {
         return;
     }
+    let mob_type = String(event.entity.entityType).split('.')[2];
+    let mod_id = String(event.entity.entityType).split('.')[1];
+
+    if (mod_id == 'pneumaticcraft') {
+        // Fixes timing issue with Drones loading their programs. Following segments that add NBT data are overwritting the program data somehow.
+        return;
+    }
 
     let entity_data;
     // Set up ForgeData persistent data if not already present
@@ -35,8 +42,6 @@ EntityEvents.spawned((event) => {
     event.entity.fullNBT = entity_data;
 
     // End if mob isn't in 'armored_mobs' constant
-    let mob_type = String(event.entity.entityType).split('.')[2];
-    let mod_id = String(event.entity.entityType).split('.')[1];
     if (!Object.keys(armored_mobs).includes(mod_id) || !Object.keys(armored_mobs[mod_id]).includes(mob_type)) {
         return;
     }
