@@ -3,12 +3,12 @@ ServerEvents.genericLootTables((event) => {
         table.addPool((pool) => {
             pool.rolls = 2.0;
             pool.addItem('create:super_glue', 1, 1);
-            pool.addItem('create:powered_toggle_latch', 1, 1);
-            pool.addItem('create:powered_latch', 1, 1);
-            pool.addItem('create:shaft', 1, 8);
-            pool.addItem('create:analog_lever', 1, 1);
-            pool.addItem('create:andesite_casing', 1, 8);
-            pool.addItem('create:belt_connector', 1, 4);
+            pool.addItem('create:powered_toggle_latch', 3, 1);
+            pool.addItem('create:powered_latch', 3, 1);
+            pool.addItem('create:shaft', 3, 8);
+            pool.addItem('create:analog_lever', 3, 1);
+            pool.addItem('create:andesite_casing', 3, 8);
+            pool.addItem('create:belt_connector', 3, 4);
         });
 
         table.addPool((pool) => {
