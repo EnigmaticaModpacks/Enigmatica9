@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
                 P: { tag: 'forge:plates/electrum' },
                 B: { item: 'create:brass_casing' },
                 S: { item: 'immersiveengineering:coil_lv' },
-                E: { item: 'ars_nouveau:air_essence' }
+                E: { item: 'powah:energy_cable_basic' }
             },
             result: { item: 'createaddition:tesla_coil' },
             id: `createaddition:mechanical_crafting/tesla_coil`
