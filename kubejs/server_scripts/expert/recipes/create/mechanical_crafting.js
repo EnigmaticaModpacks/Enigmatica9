@@ -34,8 +34,8 @@ ServerEvents.recipes((event) => {
             pattern: [' AAA ', 'AAPAA', 'APSPA', 'AAPAA', ' AAA '],
             key: {
                 A: { tag: 'pneumaticcraft:compressed_stone' },
-                P: { tag: 'minecraft:planks' },
-                S: { tag: 'forge:stone' }
+                P: { tag: 'forge:treated_wood' },
+                S: { item: 'create:encased_chain_drive' }
             },
             result: { item: 'create:crushing_wheel', count: 2 },
             acceptMirrored: false,

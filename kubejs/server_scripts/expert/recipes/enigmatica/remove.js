@@ -70,6 +70,10 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:spawner_agitator' },
         { id: 'pneumaticcraft:module_expansion_card' },
 
+        { id: 'powah:crafting/dielectric_rod_h' },
+        { id: 'powah:crafting/dielectric_paste' },
+        { id: 'powah:crafting/dielectric_paste_2' },
+
         { id: 'supplementaries:jar' },
 
         { id: 'thermal:enderium_dust_2' },

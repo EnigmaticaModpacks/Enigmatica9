@@ -46,6 +46,22 @@ ServerEvents.recipes((event) => {
             results: [{ item: 'thermal:cured_rubber', count: 4 }],
             heatRequirement: 'heated',
             id: `${id_prefix}cured_rubber`
+        },
+        {
+            ingredients: [
+                { tag: 'forge:silicon' },
+                { tag: 'forge:silicon' },
+                { tag: 'forge:silicon' },
+                { tag: 'forge:silicon' },
+                { tag: 'forge:silicon' },
+                { amount: 1000, fluidTag: 'forge:latex' }
+            ],
+            results: [
+                { item: 'powah:dielectric_paste', count: 32 },
+                { item: 'powah:dielectric_paste', count: 8, chance: 0.15 }
+            ],
+            heatRequirement: 'heated',
+            id: `${id_prefix}dielectric_paste`
         }
     ];
 

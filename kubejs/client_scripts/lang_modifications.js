@@ -81,6 +81,41 @@ const entries = {
             }
         },
         {
+            key: 'block.create.mechanical_crafter',
+            value: {
+                normal: 'Mechancical Crafter',
+                expert: 'Enchanted Crafter'
+            }
+        },
+        {
+            key: 'block.create.brass_casing',
+            value: {
+                normal: 'Brass Casing',
+                expert: 'Enchanted Casing'
+            }
+        },
+        {
+            key: 'block.create.brass_funnel',
+            value: {
+                normal: 'Brass Funnel',
+                expert: 'Enchanted Funnel'
+            }
+        },
+        {
+            key: 'block.create.brass_tunnel',
+            value: {
+                normal: 'Brass Tunnel',
+                expert: 'Enchanted Tunnel'
+            }
+        },
+        {
+            key: 'item.create.brass_hand',
+            value: {
+                normal: 'Brass Hand',
+                expert: 'Enchanted Hand'
+            }
+        },
+        {
             key: 'advancement.create.andesite_alloy.desc',
             value: {
                 normal: "Obtain some Andesite Alloy, Create's most important resource",

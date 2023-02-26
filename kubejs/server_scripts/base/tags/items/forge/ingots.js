@@ -5,7 +5,8 @@ ServerEvents.tags('item', (event) => {
         `blue_skies:horizonite_ingot`,
         'occultism:iesnium_ingot',
         'kubejs:pig_iron_ingot',
-        'kubejs:red_nether_brick'
+        'kubejs:red_nether_brick',
+        `powah:steel_energized`
     ]);
 
     event.add(`forge:ingots/falsite`, `blue_skies:falsite_ingot`);
@@ -13,4 +14,5 @@ ServerEvents.tags('item', (event) => {
     event.add(`forge:ingots/horizonite`, `blue_skies:horizonite_ingot`);
     event.add(`forge:ingots/pig_iron`, 'kubejs:pig_iron_ingot');
     event.add(`forge:ingots/brick`, 'kubejs:red_nether_brick');
+    event.add(`forge:ingots/energized_steel`, 'powah:steel_energized');
 });

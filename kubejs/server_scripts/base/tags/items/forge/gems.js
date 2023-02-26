@@ -6,7 +6,11 @@ ServerEvents.tags('item', (event) => {
         `blue_skies:aquite`,
         `blue_skies:diopside_gem`,
         `blue_skies:charoite`,
-        `blue_skies:moonstone`
+        `blue_skies:moonstone`,
+        `powah:crystal_blazing`,
+        `powah:crystal_niotic`,
+        `powah:crystal_spirited`,
+        `powah:crystal_nitro`
     ]);
     event.add('forge:gems/ender', 'minecraft:ender_pearl');
     event.add('forge:gems/coal', 'minecraft:coal');
@@ -17,4 +21,9 @@ ServerEvents.tags('item', (event) => {
     event.add(`forge:gems/diopside`, `blue_skies:diopside_gem`);
     event.add(`forge:gems/charoite`, `blue_skies:charoite`);
     event.add(`forge:gems/moonstone`, `blue_skies:moonstone`);
+
+    event.add(`forge:gems/blazing`, `powah:crystal_blazing`);
+    event.add(`forge:gems/niotic`, `powah:crystal_niotic`);
+    event.add(`forge:gems/spirited`, `powah:crystal_spirited`);
+    event.add(`forge:gems/nitro`, `powah:crystal_nitro`);
 });
