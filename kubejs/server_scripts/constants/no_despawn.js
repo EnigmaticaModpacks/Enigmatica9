@@ -12,4 +12,8 @@ no_despawn.base = [
     'ars_elemental:siren_charm'
 ];
 
-no_despawn.expert = ['blue_skies:pearl', 'blue_skies:sunstone_block', 'blue_skies:moonstone_block'];
+no_despawn.expert = [
+    // 'blue_skies:pearl',
+    // 'blue_skies:sunstone_block',
+    // 'blue_skies:moonstone_block'
+];

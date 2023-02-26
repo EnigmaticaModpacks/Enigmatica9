@@ -223,6 +223,30 @@ JEIEvents.information((event) => {
                 ` `,
                 `May be grown like Cocoa Beans on Flashing Archwood Logs.`
             ]
+        },
+        {
+            items: ['blue_skies:moonstone_crystal'],
+            text: [
+                `Will grow on Blocks of Moonstone if placed in water.`,
+                ` `,
+                `May be boosted with Crystal Growth Accelerators.`
+            ]
+        },
+        {
+            items: ['blue_skies:sunstone_crystal'],
+            text: [
+                `Will grow on Blocks of Sunstone if placed in water.`,
+                ` `,
+                `May be boosted with Crystal Growth Accelerators.`
+            ]
+        },
+        {
+            items: ['blue_skies:sunstone_block', 'blue_skies:moonstone_block'],
+            text: [
+                `Place in Water to begin growing crystals on the sides. `,
+                ` `,
+                `May be boosted with Crystal Growth Accelerators.`
+            ]
         }
     ];
 
