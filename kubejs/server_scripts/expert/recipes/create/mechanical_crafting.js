@@ -21,11 +21,11 @@ ServerEvents.recipes((event) => {
             pattern: ['SSS', ' A ', 'CBC', 'PEP'],
             key: {
                 A: { tag: 'pneumaticcraft:compressed_stone' },
-                C: { item: 'createaddition:capacitor' },
-                P: { tag: 'forge:plates/brass' },
+                C: { item: 'powah:capacitor_basic_large' },
+                P: { tag: 'forge:plates/electrum' },
                 B: { item: 'create:brass_casing' },
                 S: { item: 'immersiveengineering:coil_lv' },
-                E: { item: 'create:electron_tube' }
+                E: { item: 'ars_nouveau:air_essence' }
             },
             result: { item: 'createaddition:tesla_coil' },
             id: `createaddition:mechanical_crafting/tesla_coil`
