@@ -24,6 +24,34 @@ ServerEvents.recipes((event) => {
             output: 'ae2:storage_bus',
             inputs: ['naturesaura:item_distributor', '#ae2:interface'],
             id: `ae2:network/parts/storage_bus`
+        },
+        {
+            output: '12x ae2:fluix_covered_cable',
+            inputs: [
+                'ae2:fluix_glass_cable',
+                'ae2:fluix_glass_cable',
+                'ae2:fluix_glass_cable',
+                'ae2:fluix_glass_cable',
+                'ae2:fluix_glass_cable',
+                'ae2:fluix_glass_cable',
+                'powah:dielectric_paste',
+                'thermal:beekeeper_fabric'
+            ],
+            id: `ae2:network/cables/covered_fluix`
+        },
+        ,
+        {
+            output: '12x ae2:fluix_covered_cable',
+            inputs: [
+                'powah:dielectric_rod',
+                'powah:dielectric_rod',
+                'powah:dielectric_rod',
+                'powah:dielectric_rod',
+                'powah:dielectric_rod',
+                'powah:dielectric_rod',
+                'thermal:beekeeper_fabric'
+            ],
+            id: `${id_prefix}fluix_covered_cable`
         }
     ];
 

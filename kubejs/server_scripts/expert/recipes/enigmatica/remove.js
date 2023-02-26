@@ -27,6 +27,7 @@ ServerEvents.recipes((event) => {
 
         { id: 'ae2:network/blocks/crystal_processing_charger' },
         { id: 'ae2:network/parts/quartz_fiber_part' },
+        { id: 'ae2:transform/fluix_crystals' },
 
         { id: 'ars_nouveau:imbuement_chamber' },
         { id: 'ars_nouveau:wixie_charm' },
@@ -43,6 +44,9 @@ ServerEvents.recipes((event) => {
         { id: 'create:crafting/kinetics/white_sail' },
         { id: 'create:mechanical_crafting/wand_of_symmetry' },
         { id: 'create:crafting/kinetics/empty_blaze_burner' },
+        { id: 'create:crafting/kinetics/mechanical_crafter' },
+        { id: 'create:item_application/brass_casing_from_wood' },
+        { id: 'create:item_application/brass_casing_from_log' },
         { id: 'create:conversion_0' },
 
         { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
@@ -52,6 +56,7 @@ ServerEvents.recipes((event) => {
         { id: 'hexerei:mixing_cauldron' },
 
         { id: 'immersiveengineering:blastfurnace/steel' },
+        { id: 'immersiveengineering:crafting/blastbrick' },
 
         { id: 'industrialforegoing:washing_factory' },
         { id: 'industrialforegoing:fermentation_station' },
@@ -73,8 +78,10 @@ ServerEvents.recipes((event) => {
         { id: 'powah:crafting/dielectric_rod_h' },
         { id: 'powah:crafting/dielectric_paste' },
         { id: 'powah:crafting/dielectric_paste_2' },
+        { id: 'powah:energizing/blazing_crystal' },
 
         { id: 'supplementaries:jar' },
+        { id: 'supplementaries:soap' },
 
         { id: 'thermal:enderium_dust_2' },
         { id: 'thermal:lumium_dust_4' },
@@ -82,6 +89,9 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:invar_dust_3' },
         { id: 'thermal:bronze_dust_4' },
         { id: 'thermal:jar_4' },
+        { id: 'thermal:beekeeper_fabric' },
+        { id: 'thermal:diving_fabric' },
+        { id: 'thermal:hazmat_fabric' },
 
         { id: 'twilightforest:equipment/fiery_ingot_crafting' },
         { id: 'twilightforest:material/fiery_iron_ingot' },

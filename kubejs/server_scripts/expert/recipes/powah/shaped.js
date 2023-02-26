@@ -29,21 +29,40 @@ ServerEvents.recipes((event) => {
             output: Item.of('powah:capacitor_basic_large', 2),
             pattern: [' AB', 'ACA', 'BA '],
             key: {
-                A: '#forge:plates/invar',
+                A: '#forge:dusts/fluix',
                 B: 'powah:dielectric_paste',
-                C: '#forge:plates/signalum'
+                C: '#forge:gems/source'
             },
             id: `powah:crafting/capacitor_basic_large`
         },
         {
             output: Item.of('powah:energy_cable_basic', 12),
-            pattern: ['AAA', 'BCB', 'AAA'],
+            pattern: ['AAA', 'BBB', 'AAA'],
             key: {
                 A: 'powah:dielectric_rod_horizontal',
-                B: '#forge:nuggets/signalum',
-                C: 'powah:capacitor_basic_large'
+                B: 'powah:capacitor_basic_large'
             },
             id: `powah:crafting/cable_basic`
+        },
+        {
+            output: 'powah:energizing_rod_basic',
+            pattern: ['A', 'B', 'C'],
+            key: {
+                A: '#forge:gems/moonstone',
+                B: 'powah:dielectric_rod',
+                C: 'powah:capacitor_basic_large'
+            },
+            id: `powah:crafting/energizing_rod_basic`
+        },
+        {
+            output: 'powah:energizing_orb',
+            pattern: ['AAA', 'ACA', 'BBB'],
+            key: {
+                A: 'pneumaticcraft:pressure_chamber_glass',
+                B: 'pneumaticcraft:pressure_chamber_wall',
+                C: 'ars_nouveau:fire_essence'
+            },
+            id: `powah:crafting/energizing_orb`
         }
     ];
 

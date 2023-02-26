@@ -7,18 +7,6 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            ingredients: [
-                { item: 'create:crushed_iron_ore' },
-                { amount: 100, fluidTag: 'pneumaticcraft:etching_acid' }
-            ],
-            results: [
-                { item: 'mekanism:dirty_dust_iron', count: 1 },
-                { item: 'mekanism:dirty_dust_tin', count: 1, chance: 0.1 }
-            ],
-            heatRequirement: 'heated',
-            id: `${id_prefix}iron_dust_from_etching_acid`
-        },
-        {
             ingredients: [{ item: 'create:crushed_iron_ore' }, { amount: 100, fluidTag: 'forge:redstone_acid' }],
             results: [
                 { item: 'mekanism:dirty_dust_iron', count: 2 },
@@ -62,6 +50,32 @@ ServerEvents.recipes((event) => {
             ],
             heatRequirement: 'heated',
             id: `${id_prefix}dielectric_paste`
+        },
+        {
+            ingredients: [
+                { tag: 'forge:dusts/ash' },
+                { tag: 'forge:dusts/ash' },
+                { tag: 'forge:dusts/ash' },
+                { tag: 'forge:dusts/ash' },
+                { tag: 'forge:tallow' },
+                { amount: 1000, fluidTag: 'forge:water' }
+            ],
+            results: [{ item: 'supplementaries:soap', count: 6 }],
+            heatRequirement: 'heated',
+            id: `${id_prefix}soap`
+        },
+        {
+            ingredients: [
+                { item: 'minecraft:blaze_powder' },
+                { item: 'minecraft:blaze_powder' },
+                { item: 'minecraft:blaze_powder' },
+                { item: 'minecraft:blaze_powder' },
+                { tag: 'forge:gems/source' },
+                { amount: 1000, fluidTag: 'forge:blood' }
+            ],
+            results: [{ item: 'powah:crystal_blazing', count: 4 }],
+            heatRequirement: 'heated',
+            id: `${id_prefix}crystal_blazing`
         }
     ];
 

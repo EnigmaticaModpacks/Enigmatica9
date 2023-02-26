@@ -22,14 +22,9 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}andesite_casing_from_treated_wood`
         },
         {
-            ingredients: [{ item: 'twilightforest:stripped_canopy_log' }, { tag: 'forge:ingots/energized_steel' }],
+            ingredients: [{ tag: 'forge:treated_wood' }, { tag: 'forge:ingots/energized_steel' }],
             results: [{ item: 'create:brass_casing' }],
-            id: 'create:item_application/brass_casing_from_log'
-        },
-        {
-            ingredients: [{ item: 'twilightforest:stripped_canopy_wood' }, { tag: 'forge:ingots/energized_steel' }],
-            results: [{ item: 'create:brass_casing' }],
-            id: 'create:item_application/brass_casing_from_wood'
+            id: `${id_prefix}brass_casing_from_treated_wood`
         }
     ];
 

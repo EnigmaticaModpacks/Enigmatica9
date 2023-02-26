@@ -48,6 +48,17 @@ ServerEvents.recipes((event) => {
                 D: '#forge:plates/invar'
             },
             id: `powah:crafting/solar_panel_basic`
+        },
+        {
+            output: 'powah:energizing_rod_basic',
+            pattern: [' A ', 'BCB', ' D '],
+            key: {
+                A: '#forge:gems/certus_quartz',
+                B: 'powah:capacitor_basic_large',
+                C: 'powah:dielectric_casing',
+                D: 'powah:dielectric_rod'
+            },
+            id: `powah:crafting/energizing_rod_basic`
         }
     ];
 

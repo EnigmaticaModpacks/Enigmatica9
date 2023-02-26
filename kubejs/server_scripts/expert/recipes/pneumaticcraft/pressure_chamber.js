@@ -19,6 +19,42 @@ ServerEvents.recipes((event) => {
             inputs: [{ item: 'kubejs:calcined_kaolin_pearls' }],
             pressure: 4.0,
             id: `${id_prefix}kaolin_powder`
+        },
+        {
+            results: [{ item: 'thermal:beekeeper_fabric', count: 8 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'minecraft:white_wool', count: 8 },
+                { item: 'ars_nouveau:air_essence' }
+            ],
+            pressure: 2.0,
+            id: `${id_prefix}beekeeper_fabric`
+        },
+        {
+            results: [{ item: 'thermal:diving_fabric', count: 8 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'minecraft:lime_wool', count: 8 },
+                { item: 'ars_nouveau:water_essence' }
+            ],
+            pressure: 2.0,
+            id: `${id_prefix}diving_fabric`
+        },
+        {
+            results: [{ item: 'thermal:hazmat_fabric', count: 8 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'minecraft:red_wool', count: 8 },
+                { item: 'ars_nouveau:earth_essence' }
+            ],
+            pressure: 2.0,
+            id: `${id_prefix}hazmat_fabric`
+        },
+        {
+            results: [{ item: 'immersiveengineering:blastbrick', count: 8 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'pneumaticcraft:compressed_bricks', count: 8 },
+                { tag: 'forge:gems/blazing' }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}blastbrick`
         }
     ];
 

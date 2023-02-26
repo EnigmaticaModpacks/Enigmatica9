@@ -55,6 +55,26 @@ ServerEvents.recipes((event) => {
                 C: 'ars_nouveau:manipulation_essence'
             },
             id: `ars_nouveau:void_jar`
+        },
+        {
+            output: 'ars_nouveau:arcane_core',
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: 'ars_nouveau:sourcestone',
+                B: '#forge:ingots/energized_steel',
+                C: '#forge:gems/source'
+            },
+            id: `ars_nouveau:arcane_core`
+        },
+        {
+            output: 'ars_nouveau:enchanting_apparatus',
+            pattern: ['BAB', ' C ', 'BAB'],
+            key: {
+                A: 'ars_nouveau:sourcestone',
+                B: '#forge:ingots/energized_steel',
+                C: '#forge:gems/fluix'
+            },
+            id: `ars_nouveau:enchanting_apparatus`
         }
     ];
 

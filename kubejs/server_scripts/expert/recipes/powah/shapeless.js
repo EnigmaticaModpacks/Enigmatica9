@@ -6,14 +6,14 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            output: 'minecraft:crafting_table',
+            output: '6x powah:dielectric_rod',
             inputs: [
-                '#ae2:glass_cable',
-                '#ae2:glass_cable',
-                '#ae2:glass_cable',
-                '#ae2:glass_cable',
-                '#ae2:glass_cable',
-                '#ae2:glass_cable',
+                'ae2:fluix_glass_cable',
+                'ae2:fluix_glass_cable',
+                'ae2:fluix_glass_cable',
+                'ae2:fluix_glass_cable',
+                'ae2:fluix_glass_cable',
+                'ae2:fluix_glass_cable',
                 'powah:dielectric_paste'
             ],
             id: `powah:crafting/dielectric_rod`
