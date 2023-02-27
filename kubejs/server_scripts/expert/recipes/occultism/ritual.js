@@ -667,7 +667,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'kubejs:teleport_everdawn',
-            activation_item: '#forge:gems/moonstone',
+            activation_item: '#forge:gems/sunstone_crystal',
             inputs: [
                 'naturesaura:sky_ingot',
                 'naturesaura:gold_leaf',
@@ -689,6 +689,31 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:tree_of_life_stage_1',
             duration: 10,
             id: `${id_prefix}ritual_teleport_everdawn`
+        },
+        {
+            output: 'kubejs:teleport_everbright',
+            activation_item: '#forge:gems/moonstone_crystal',
+            inputs: [
+                'naturesaura:sky_ingot',
+                'naturesaura:gold_leaf',
+                'ars_nouveau:air_essence',
+                'naturesaura:gold_leaf',
+
+                'ae2:sky_dust',
+                'ae2:sky_dust',
+                'ae2:sky_dust',
+                'ae2:sky_dust',
+
+                'ae2:sky_dust',
+                'ae2:sky_dust',
+                'ae2:sky_dust',
+                'ae2:sky_dust'
+            ],
+            ritual_dummy: 'kubejs:ritual_teleport_everbright',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:tree_of_life_stage_1',
+            duration: 10,
+            id: `${id_prefix}ritual_teleport_everbright`
         },
         {
             output: Item.of('kubejs:tree_of_life_2', { aura_amount: 200000, aura_max: 1000000 }),

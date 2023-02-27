@@ -34,6 +34,33 @@ ServerEvents.recipes((event) => {
                 D: 'thermal:jar'
             },
             id: 'thermal:device_tree_extractor'
+        },
+        {
+            output: '4x thermal:earth_charge',
+            pattern: [' B ', 'BAB', ' B '],
+            key: {
+                A: 'ars_nouveau:earth_essence',
+                B: 'ae2:tiny_tnt'
+            },
+            id: `${id_prefix}earth_charge`
+        },
+        {
+            output: '4x thermal:lightning_charge',
+            pattern: [' B ', 'BAB', ' B '],
+            key: {
+                A: 'ars_nouveau:air_essence',
+                B: 'ae2:tiny_tnt'
+            },
+            id: `${id_prefix}lightning_charge`
+        },
+        {
+            output: '4x thermal:ice_charge',
+            pattern: [' B ', 'BAB', ' B '],
+            key: {
+                A: 'ars_nouveau:water_essence',
+                B: 'ae2:tiny_tnt'
+            },
+            id: `${id_prefix}ice_charge`
         }
     ];
 

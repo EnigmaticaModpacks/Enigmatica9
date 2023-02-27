@@ -18,6 +18,11 @@ ServerEvents.recipes((event) => {
         { output: 'minecraft:furnace' },
         { output: 'create:andesite_alloy' },
 
+        { output: 'thermal:ice_charge' },
+        { output: 'thermal:lightning_charge' },
+        { output: 'thermal:earth_charge' },
+        { output: 'minecraft:fire_charge' },
+
         { type: 'thermal:smelter_recycle' },
         { type: 'ae2:charger' },
 
@@ -37,6 +42,7 @@ ServerEvents.recipes((event) => {
         { id: 'ars_nouveau:vitalic_sourcelink' },
         { id: 'ars_nouveau:volcanic_sourcelink' },
         { id: 'ars_nouveau:agronomic_sourcelink' },
+        { id: 'ars_nouveau:conjuration_essence_to_soul_sand' },
 
         { id: 'constructionwand:stone_wand' },
         { id: 'constructionwand:iron_wand' },

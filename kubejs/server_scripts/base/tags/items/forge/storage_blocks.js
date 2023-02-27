@@ -9,6 +9,7 @@ ServerEvents.tags('item', (event) => {
         `blue_skies:diopside_block`,
         `blue_skies:charoite_block`,
         `blue_skies:moonstone_block`,
+        `blue_skies:sunstone_block`,
         `blue_skies:raw_falsite_block`,
         `blue_skies:raw_ventium_block`,
         `blue_skies:raw_horizonite_block`,
@@ -32,6 +33,7 @@ ServerEvents.tags('item', (event) => {
     event.add(`forge:storage_blocks/diopside`, `blue_skies:diopside_block`);
     event.add(`forge:storage_blocks/charoite`, `blue_skies:charoite_block`);
     event.add(`forge:storage_blocks/moonstone`, `blue_skies:moonstone_block`);
+    event.add(`forge:storage_blocks/sunstone`, `blue_skies:sunstone_block`);
 
     event.add(`forge:storage_blocks/raw_falsite`, `blue_skies:raw_falsite_block`);
     event.add(`forge:storage_blocks/raw_ventium`, `blue_skies:raw_ventium_block`);

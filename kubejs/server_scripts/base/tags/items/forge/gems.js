@@ -7,6 +7,8 @@ ServerEvents.tags('item', (event) => {
         `blue_skies:diopside_gem`,
         `blue_skies:charoite`,
         `blue_skies:moonstone`,
+        `blue_skies:moonstone_crystal`,
+        `blue_skies:sunstone_crystal`,
         `powah:crystal_blazing`,
         `powah:crystal_niotic`,
         `powah:crystal_spirited`,
@@ -21,6 +23,8 @@ ServerEvents.tags('item', (event) => {
     event.add(`forge:gems/diopside`, `blue_skies:diopside_gem`);
     event.add(`forge:gems/charoite`, `blue_skies:charoite`);
     event.add(`forge:gems/moonstone`, `blue_skies:moonstone`);
+    event.add(`forge:gems/moonstone_crystal`, `blue_skies:moonstone_crystal`);
+    event.add(`forge:gems/sunstone_crystal`, `blue_skies:sunstone_crystal`);
 
     event.add(`forge:gems/blazing`, `powah:crystal_blazing`);
     event.add(`forge:gems/niotic`, `powah:crystal_niotic`);

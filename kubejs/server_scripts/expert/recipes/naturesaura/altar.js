@@ -47,6 +47,22 @@ ServerEvents.recipes((event) => {
             aura: 15000,
             time: 80,
             id: `${id_prefix}steeleaf_ingot`
+        },
+        {
+            output: 'blue_skies:sunstone_block',
+            input: 'blue_skies:moonstone_block',
+            aura_type: 'naturesaura:overworld',
+            aura: 100000,
+            time: 600,
+            id: `${id_prefix}sunstone_block`
+        },
+        {
+            output: 'blue_skies:moonstone_block',
+            input: 'blue_skies:sunstone_block',
+            aura_type: 'naturesaura:nether',
+            aura: 100000,
+            time: 600,
+            id: `${id_prefix}moonstone_block`
         }
     ];
 
