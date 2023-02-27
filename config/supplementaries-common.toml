@@ -67,141 +67,6 @@
 		#can rotate entities standing on it?
 		rotate_entities = true
 
-[utilities]
-	fodder = true
-	present = true
-
-	[utilities.rope]
-		enabled = true
-		#Allows ropes to be supported & attached to solid block sides
-		block_side_attachment = true
-		#Makes sliding down ropes as fast as free falling, still negating fall damage
-		slide_on_fall = true
-		#In case you want to disable supplementaries ropes you can specify here another mod rope and they will be used for rope arrows and in mineshafts instead
-		rope_override = "supplementaries:rope"
-
-	[utilities.jar]
-		enabled = true
-		#Jar liquid capacity: leave at 12 for pixel accuracy
-		#Range: 0 ~ 1024
-		capacity = 12
-		#Allow right click to instantly eat or drink food or potions inside a placed jar.
-		#Disable if you think this ability is op (honey for example). Cookies are excluded
-		drink_from_jar = false
-		#Allows the player to directly drink from jar items
-		drink_from_jar_item = false
-		#Dynamically allows all small mobs inside jars depending on their hitbox size. Tinted jars can accept hostile mbos too
-		jar_auto_detect = false
-		#Allow Jars to capture small mobs
-		jar_capture = true
-		#Allow Jars to hold cookies
-		jar_cookies = true
-		#Allow Jars to hold liquids from bottles, buckets and bowls
-		jar_liquids = true
-
-	[utilities.hourglass]
-		enabled = true
-		#Time in ticks for sugar
-		#Range: 0 ~ 10000
-		sugar_time = 40
-		#Time in ticks for sand blocks
-		#Range: 0 ~ 10000
-		sand_time = 70
-		#Time in ticks for concrete blocks
-		#Range: 0 ~ 10000
-		concrete_time = 105
-		#Time in ticks for generic dust
-		#Range: 0 ~ 10000
-		dust_time = 150
-		#Time in ticks for glowstone dust
-		#Range: 0 ~ 10000
-		glowstone_time = 190
-		#Time in ticks for blaze powder
-		#Range: 0 ~ 10000
-		blaze_powder_time = 277
-		#Time in ticks for redstone dust
-		#Range: 0 ~ 10000
-		redstone_time = 400
-		#Time in ticks for slime balls
-		#Range: 0 ~ 10000
-		slime_time = 1750
-		#Time in ticks for honey
-		#Range: 0 ~ 10000
-		honey_time = 2000
-
-	[utilities.cage]
-		enabled = true
-		#Allows all entities to be captured by cages and jars. Not meant for survival
-		allow_all_mobs = false
-		#Allows all baby mobs to be captured by cages
-		cage_allow_all_babies = false
-		#Dynamically allows all small mobs inside cages depending on their hitbox size
-		cage_auto_detect = false
-		#Makes it so all (hostile) mobs captured by cages and jars will be set to persistent so they won't despawn when released
-		persistent_mobs = false
-		#Health percentage under which mobs will be allowed to be captured by cages and jars. Leave at 100 to accept any health level
-		#Range: 1 ~ 100
-		health_threshold = 100
-
-	[utilities.safe]
-		enabled = true
-		#Makes safes only breakable by their owner or by a player in creative
-		prevent_breaking = false
-		#Make safes simpler so they do not require keys:
-		#they will be bound to the first person that opens one and only that person will be able to interact with them
-		simple_safes = false
-
-	[utilities.sack]
-		enabled = true
-		#Penalize the player with slowness effect when carrying too many sacks
-		sack_penalty = true
-		#Maximum number of sacks after which the overencumbered effect will be applied. Each multiple of this number will increase the effect strength by one
-		#Range: 0 ~ 50
-		sack_increment = 2
-		#How many slots should a sack have
-		#Range: 1 ~ 27
-		slots = 9
-
-	[utilities.bamboo_spikes]
-		enabled = true
-		tipped_spikes = true
-		#Allows entities killed by spikes to drop loot as if they were killed by a player
-		player_loot = false
-		#Alternative mode for bamboo spikes. Allows only harmful effects to be applied on them and they obtain infinite durability
-		alternative_mode = true
-
-	[utilities.urn]
-		enabled = true
-		#Chance for an urn to spawn a critter from the urn_spawn tag
-		#Range: 0.0 ~ 1.0
-		critter_spawn_chance = 0.009999999776482582
-
-		[utilities.urn.cave_urns]
-			enabled = true
-			#Attempts at every patch to spawn 1 block. Increases average patch size
-			#Range: 1 ~ 100
-			attempts_per_patch = 4
-			#Spawn attempts per chunk. Increases spawn frequency
-			#Range: 0 ~ 100
-			spawn_attempts = 7
-
-	[utilities.soap]
-		enabled = true
-		#Dyed Bock types that cannot be cleaned with soap
-		clean_blacklist = ["minecraft:glazed_terracotta"]
-
-	[utilities.flax]
-		enabled = true
-
-		[utilities.flax.wild_flax]
-			enabled = true
-			#Spawn wild flax on average every 'x' chunks. Increases spawn frequency
-			#Range: 1 ~ 100
-			rarity = 6
-			#Attempts at every patch to spawn 1 block. Increases average patch size
-			#Range: 1 ~ 100
-			attempts_per_patch = 35
-
 [building]
 	daub = true
 	ash_brick = true
@@ -555,4 +420,139 @@
 		rideable_underwater = true
 		#Convert a zombie horse back by feeding it a golden carrot
 		zombie_horse_inverse_conversion = true
+
+[functional]
+	fodder = true
+	present = true
+
+	[functional.rope]
+		enabled = true
+		#Allows ropes to be supported & attached to solid block sides
+		block_side_attachment = true
+		#Makes sliding down ropes as fast as free falling, still negating fall damage
+		slide_on_fall = true
+		#In case you want to disable supplementaries ropes you can specify here another mod rope and they will be used for rope arrows and in mineshafts instead
+		rope_override = "supplementaries:rope"
+
+	[functional.jar]
+		enabled = true
+		#Jar liquid capacity: leave at 12 for pixel accuracy
+		#Range: 0 ~ 1024
+		capacity = 12
+		#Allow right click to instantly eat or drink food or potions inside a placed jar.
+		#Disable if you think this ability is op (honey for example). Cookies are excluded
+		drink_from_jar = false
+		#Allows the player to directly drink from jar items
+		drink_from_jar_item = false
+		#Dynamically allows all small mobs inside jars depending on their hitbox size. Tinted jars can accept hostile mbos too
+		jar_auto_detect = false
+		#Allow Jars to capture small mobs
+		jar_capture = true
+		#Allow Jars to hold cookies
+		jar_cookies = true
+		#Allow Jars to hold liquids from bottles, buckets and bowls
+		jar_liquids = true
+
+	[functional.hourglass]
+		enabled = true
+		#Time in ticks for sugar
+		#Range: 0 ~ 10000
+		sugar_time = 40
+		#Time in ticks for sand blocks
+		#Range: 0 ~ 10000
+		sand_time = 70
+		#Time in ticks for concrete blocks
+		#Range: 0 ~ 10000
+		concrete_time = 105
+		#Time in ticks for generic dust
+		#Range: 0 ~ 10000
+		dust_time = 150
+		#Time in ticks for glowstone dust
+		#Range: 0 ~ 10000
+		glowstone_time = 190
+		#Time in ticks for blaze powder
+		#Range: 0 ~ 10000
+		blaze_powder_time = 277
+		#Time in ticks for redstone dust
+		#Range: 0 ~ 10000
+		redstone_time = 400
+		#Time in ticks for slime balls
+		#Range: 0 ~ 10000
+		slime_time = 1750
+		#Time in ticks for honey
+		#Range: 0 ~ 10000
+		honey_time = 2000
+
+	[functional.cage]
+		enabled = true
+		#Allows all entities to be captured by cages and jars. Not meant for survival
+		allow_all_mobs = false
+		#Allows all baby mobs to be captured by cages
+		cage_allow_all_babies = false
+		#Dynamically allows all small mobs inside cages depending on their hitbox size
+		cage_auto_detect = false
+		#Makes it so all (hostile) mobs captured by cages and jars will be set to persistent so they won't despawn when released
+		persistent_mobs = false
+		#Health percentage under which mobs will be allowed to be captured by cages and jars. Leave at 100 to accept any health level
+		#Range: 1 ~ 100
+		health_threshold = 100
+
+	[functional.safe]
+		enabled = true
+		#Makes safes only breakable by their owner or by a player in creative
+		prevent_breaking = false
+		#Make safes simpler so they do not require keys:
+		#they will be bound to the first person that opens one and only that person will be able to interact with them
+		simple_safes = false
+
+	[functional.sack]
+		enabled = true
+		#Penalize the player with slowness effect when carrying too many sacks
+		sack_penalty = true
+		#Maximum number of sacks after which the overencumbered effect will be applied. Each multiple of this number will increase the effect strength by one
+		#Range: 0 ~ 50
+		sack_increment = 2
+		#How many slots should a sack have
+		#Range: 1 ~ 27
+		slots = 9
+
+	[functional.bamboo_spikes]
+		enabled = true
+		tipped_spikes = true
+		#Allows entities killed by spikes to drop loot as if they were killed by a player
+		player_loot = false
+		#Alternative mode for bamboo spikes. Allows only harmful effects to be applied on them and they obtain infinite durability
+		alternative_mode = true
+
+	[functional.urn]
+		enabled = true
+		#Chance for an urn to spawn a critter from the urn_spawn tag
+		#Range: 0.0 ~ 1.0
+		critter_spawn_chance = 0.009999999776482582
+
+		[functional.urn.cave_urns]
+			enabled = true
+			#Attempts at every patch to spawn 1 block. Increases average patch size
+			#Range: 1 ~ 100
+			attempts_per_patch = 4
+			#Spawn attempts per chunk. Increases spawn frequency
+			#Range: 0 ~ 100
+			spawn_attempts = 7
+
+	[functional.soap]
+		enabled = true
+		#Dyed Bock types that cannot be cleaned with soap
+		clean_blacklist = ["minecraft:glazed_terracotta"]
+
+	[functional.flax]
+		enabled = true
+
+		[functional.flax.wild_flax]
+			enabled = true
+			#Spawn wild flax on average every 'x' chunks. Increases spawn frequency
+			#Range: 1 ~ 100
+			rarity = 6
+			#Attempts at every patch to spawn 1 block. Increases average patch size
+			#Range: 1 ~ 100
+			attempts_per_patch = 35
 
