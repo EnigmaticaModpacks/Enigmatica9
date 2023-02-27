@@ -634,7 +634,7 @@
 			description: [
 				"The moon known as the Everbright is a chill place of ice, snow, and roaming spirits. "
 				""
-				"Be certain to attune a Stabilized Warp Scroll upon arrival to facilitate travel back and forth, as these rituals are imperfect and prone to drift."
+				"Be certain to attune a Stabilized Warp Scroll to the Twilight Forest before departing and another upon arrival to facilitate travel back and forth, as these rituals are imperfect and prone to drift."
 			]
 			dependencies: ["668B76A0085B4054"]
 			id: "7276D9139B1BA355"
@@ -653,7 +653,7 @@
 			description: [
 				"The moon known as the Everdawn is a place of warmth and dangerous insects."
 				""
-				"Be certain to attune a Stabilized Warp Scroll upon arrival to facilitate travel back and forth, as these rituals are imperfect and prone to drift."
+				"Be certain to attune a Stabilized Warp Scroll to the Twilight Forest before departing and another upon arrival to facilitate travel back and forth, as these rituals are imperfect and prone to drift."
 			]
 			dependencies: ["668B76A0085B4054"]
 			id: "163E0DFCB52AF4AB"

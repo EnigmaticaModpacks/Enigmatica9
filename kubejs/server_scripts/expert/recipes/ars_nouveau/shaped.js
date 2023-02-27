@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
                 B: 'thermal:jar',
                 C: 'ars_nouveau:air_essence'
             },
-            id: `ars_nouveau:jar_of_light`
+            id: `${id_prefix}jar_of_light`
         },
         {
             output: 'ars_nouveau:void_jar',
@@ -54,7 +54,7 @@ ServerEvents.recipes((event) => {
                 B: 'thermal:jar',
                 C: 'ars_nouveau:manipulation_essence'
             },
-            id: `ars_nouveau:void_jar`
+            id: `${id_prefix}void_jar`
         },
         {
             output: 'ars_nouveau:arcane_core',

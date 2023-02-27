@@ -34,16 +34,6 @@ ServerEvents.recipes((event) => {
         { id: 'ae2:network/parts/quartz_fiber_part' },
         { id: 'ae2:transform/fluix_crystals' },
 
-        { id: 'ars_nouveau:imbuement_chamber' },
-        { id: 'ars_nouveau:wixie_charm' },
-        { id: 'ars_nouveau:starbuncle_charm' },
-        { id: 'ars_nouveau:magebloom_crop' },
-        { id: 'ars_nouveau:mycelial_sourcelink' },
-        { id: 'ars_nouveau:vitalic_sourcelink' },
-        { id: 'ars_nouveau:volcanic_sourcelink' },
-        { id: 'ars_nouveau:agronomic_sourcelink' },
-        { id: 'ars_nouveau:conjuration_essence_to_soul_sand' },
-
         { id: 'constructionwand:stone_wand' },
         { id: 'constructionwand:iron_wand' },
 
