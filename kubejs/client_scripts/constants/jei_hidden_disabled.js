@@ -249,30 +249,11 @@ jei.expert.items.disabled = [
     'pneumaticcraft:solar_compressor',
     'pneumaticcraft:thermal_compressor',
     'pneumaticcraft:spawner_agitator',
-    'powah:furnator_basic',
-    'powah:furnator_blazing',
-    'powah:furnator_hardened',
-    'powah:furnator_niotic',
-    'powah:furnator_nitro',
-    'powah:furnator_spirited',
-    'powah:magmator_basic',
-    'powah:magmator_blazing',
-    'powah:magmator_hardened',
-    'powah:magmator_niotic',
-    'powah:magmator_nitro',
-    'powah:magmator_spirited',
-    'powah:solar_panel_basic',
-    'powah:solar_panel_blazing',
-    'powah:solar_panel_hardened',
-    'powah:solar_panel_niotic',
-    'powah:solar_panel_nitro',
-    'powah:solar_panel_spirited',
-    'powah:thermo_generator_basic',
-    'powah:thermo_generator_blazing',
-    'powah:thermo_generator_hardened',
-    'powah:thermo_generator_niotic',
-    'powah:thermo_generator_nitro',
-    'powah:thermo_generator_spirited',
+    /powah:furnator/,
+    /powah:magmator/,
+    /powah:solar_panel/,
+    /powah:thermo_generator/,
+    /powah:(capacitor|reactor|energ.*|.*_cell|battery|player.*|ender.*)_(blazing|hardened)/,
     'superiorshields:copper_shield',
     'superiorshields:diamond_shield',
     'superiorshields:electric_shield',
@@ -320,7 +301,13 @@ jei.expert.recipes.hidden = [
             'naturesaura:light_staff',
             'naturesaura:cave_finder',
             'naturesaura:pet_reviver',
-            'naturesaura:shockwave_creator'
+            'naturesaura:shockwave_creator',
+            'ars_nouveau:imbuement_chamber',
+            'ars_nouveau:mycelial_sourcelink',
+            'ars_nouveau:vitalic_sourcelink',
+            'ars_nouveau:volcanic_sourcelink',
+            'ars_nouveau:agronomic_sourcelink',
+            'ars_nouveau:conjuration_essence_to_soul_sand'
         ]
     },
     {
@@ -348,6 +335,20 @@ jei.expert.recipes.hidden = [
             'naturesaura:offering/token_terror',
             'naturesaura:offering/token_euphoria',
             'naturesaura:offering/sky_ingot_from_gold'
+        ]
+    },
+    {
+        category: 'ars_nouveau:imbuement',
+        recipes_by_id: []
+    },
+    {
+        category: 'ars_nouveau:enchanting_apparatus',
+        recipes_by_id: [
+            'ars_nouveau:wixie_charm',
+            'ars_nouveau:starbuncle_charm',
+            'ars_nouveau:magebloom_crop',
+            'ars_nouveau:void_jar',
+            'ars_nouveau:jar_of_light'
         ]
     }
 ];

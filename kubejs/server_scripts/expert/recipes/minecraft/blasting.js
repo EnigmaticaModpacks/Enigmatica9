@@ -21,6 +21,12 @@ ServerEvents.recipes((event) => {
             output: '2x twilightforest:ironwood_ingot',
             xp: 0.5,
             id: `${id_prefix}ironwood_ingot`
+        },
+        {
+            input: 'occultism:otherstone',
+            output: 'occultism:burnt_otherstone',
+            xp: 0.5,
+            id: `${id_prefix}burnt_otherstone`
         }
     ];
     recipes.forEach((recipe) => {

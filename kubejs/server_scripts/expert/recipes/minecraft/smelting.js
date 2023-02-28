@@ -22,6 +22,12 @@ ServerEvents.recipes((event) => {
             output: 'immersiveengineering:ingot_aluminum',
             xp: 0.5,
             id: `${id_prefix}aluminum_ingot_from_dust`
+        },
+        {
+            input: 'occultism:otherstone',
+            output: 'occultism:burnt_otherstone',
+            xp: 0.5,
+            id: `${id_prefix}burnt_otherstone`
         }
     ];
 

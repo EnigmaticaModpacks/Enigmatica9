@@ -37,11 +37,11 @@ ServerEvents.recipes((event) => {
         },
         {
             ingredients: [
-                { tag: 'forge:silicon' },
-                { tag: 'forge:silicon' },
-                { tag: 'forge:silicon' },
-                { tag: 'forge:silicon' },
-                { tag: 'forge:silicon' },
+                { item: 'occultism:burnt_otherstone' },
+                { item: 'occultism:burnt_otherstone' },
+                { item: 'occultism:burnt_otherstone' },
+                { item: 'occultism:burnt_otherstone' },
+                { item: 'occultism:burnt_otherstone' },
                 { amount: 1000, fluidTag: 'forge:latex' }
             ],
             results: [
@@ -70,7 +70,7 @@ ServerEvents.recipes((event) => {
                 { item: 'minecraft:blaze_powder' },
                 { item: 'minecraft:blaze_powder' },
                 { item: 'minecraft:blaze_powder' },
-                { tag: 'forge:gems/source' },
+                { tag: 'forge:gems/sunstone_crystal' },
                 { amount: 1000, fluidTag: 'forge:blood' }
             ],
             results: [{ item: 'powah:crystal_blazing', count: 4 }],

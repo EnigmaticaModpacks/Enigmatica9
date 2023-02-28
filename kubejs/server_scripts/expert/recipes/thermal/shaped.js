@@ -61,6 +61,25 @@ ServerEvents.recipes((event) => {
                 B: 'ae2:tiny_tnt'
             },
             id: `${id_prefix}ice_charge`
+        },
+        {
+            output: '2x thermal:machine_frame',
+            pattern: ['ABA', 'B B', 'ABA'],
+            key: {
+                A: '#forge:rods/aluminum',
+                B: '#forge:plates/aluminum'
+            },
+            id: `thermal:machine_frame`
+        },
+        {
+            output: 'thermal:energy_cell_frame',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'ae2:quartz_glass',
+                B: 'immersiveengineering:wirecoil_electrum',
+                C: 'thermal:machine_frame'
+            },
+            id: `thermal:energy_cell_frame`
         }
     ];
 

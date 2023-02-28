@@ -9,19 +9,20 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'CDC', 'ACA'],
             key: {
                 A: 'powah:dielectric_paste',
-                B: '#forge:plates/invar',
+                B: '#forge:gems/moonstone',
                 C: 'powah:capacitor_basic_large',
-                D: '#forge:plates/signalum'
+                D: 'ae2:fluix_block'
             },
             id: `powah:crafting/battery_basic`
         },
         {
             output: 'powah:energy_cell_basic',
-            pattern: ['ABA', 'BCB', 'ABA'],
+            pattern: ['ABA', 'DCD', 'ABA'],
             key: {
-                A: '#forge:plates/invar',
+                A: '#forge:gems/moonstone',
                 B: 'powah:capacitor_basic_large',
-                C: 'powah:dielectric_casing'
+                C: 'thermal:energy_cell_frame',
+                D: 'ae2:fluix_block'
             },
             id: `powah:crafting/energy_cell_basic`
         },
@@ -31,7 +32,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: '#forge:dusts/fluix',
                 B: 'powah:dielectric_paste',
-                C: '#forge:gems/source'
+                C: '#forge:gems/moonstone'
             },
             id: `powah:crafting/capacitor_basic_large`
         },
@@ -52,7 +53,7 @@ ServerEvents.recipes((event) => {
                 B: 'powah:dielectric_rod',
                 C: 'powah:capacitor_basic_large'
             },
-            id: `powah:crafting/energizing_rod_basic`
+            id: `${id_prefix}energizing_rod/basic`
         },
         {
             output: 'powah:energizing_orb',
@@ -63,6 +64,53 @@ ServerEvents.recipes((event) => {
                 C: 'ars_nouveau:fire_essence'
             },
             id: `powah:crafting/energizing_orb`
+        },
+        {
+            output: 'powah:energy_hopper_basic',
+            pattern: ['A A', 'BCB', ' B '],
+            key: {
+                A: 'powah:dielectric_rod',
+                B: 'powah:capacitor_basic_large',
+                C: 'thermal:energy_cell_frame'
+            },
+            id: `powah:crafting/energy_hopper_basic`
+        },
+        {
+            output: 'powah:energy_hopper_niotic',
+            pattern: ['ABA', ' A '],
+            key: {
+                A: 'powah:capacitor_niotic',
+                B: 'powah:energy_hopper_basic'
+            },
+            id: `powah:crafting/energy_hopper_niotic`
+        },
+        {
+            output: 'powah:energy_hopper_spirited',
+            pattern: ['ABA', ' A '],
+            key: {
+                A: 'powah:capacitor_spirited',
+                B: 'powah:energy_hopper_niotic'
+            },
+            id: `powah:crafting/energy_hopper_spirited`
+        },
+        {
+            output: 'powah:energy_hopper_nitro',
+            pattern: ['ABA', ' A '],
+            key: {
+                A: 'powah:capacitor_nitro',
+                B: 'powah:energy_hopper_spirited'
+            },
+            id: `powah:crafting/energy_hopper_nitro`
+        },
+        {
+            output: 'powah:ender_cell_basic',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:obsidian',
+                B: '#forge:gems/moonstone',
+                C: 'occultism:stable_wormhole'
+            },
+            id: `powah:crafting/ender_cell_basic`
         }
     ];
 

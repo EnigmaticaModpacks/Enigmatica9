@@ -55,6 +55,15 @@ ServerEvents.recipes((event) => {
             ],
             pressure: 4.0,
             id: `${id_prefix}blastbrick`
+        },
+        {
+            results: [{ item: 'quark:blank_rune', count: 4 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:dusts/fluix', count: 4 },
+                { item: 'ae2:sky_dust' }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}blank_rune`
         }
     ];
 

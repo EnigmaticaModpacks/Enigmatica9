@@ -17,6 +17,7 @@ ServerEvents.recipes((event) => {
         { output: 'minecraft:blast_furnace' },
         { output: 'minecraft:furnace' },
         { output: 'create:andesite_alloy' },
+        { output: 'ae2:silicon' },
 
         { output: 'thermal:ice_charge' },
         { output: 'thermal:lightning_charge' },
@@ -33,6 +34,7 @@ ServerEvents.recipes((event) => {
         { id: 'ae2:network/blocks/crystal_processing_charger' },
         { id: 'ae2:network/parts/quartz_fiber_part' },
         { id: 'ae2:transform/fluix_crystals' },
+        { id: 'ae2:network/blocks/controller' },
 
         { id: 'constructionwand:stone_wand' },
         { id: 'constructionwand:iron_wand' },
@@ -58,6 +60,8 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:fermentation_station' },
         { id: 'industrialforegoing:fluid_sieving_machine' },
 
+        { id: 'mekanism:teleportation_core' },
+
         { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },
         { id: 'pneumaticcraft:pressure_chamber_valve' },
         { id: 'pneumaticcraft:pressure_chamber_glass' },
@@ -75,6 +79,10 @@ ServerEvents.recipes((event) => {
         { id: 'powah:crafting/dielectric_paste' },
         { id: 'powah:crafting/dielectric_paste_2' },
         { id: 'powah:energizing/blazing_crystal' },
+        { id: /powah:crafting\/energizing_rod_/ },
+        { id: /powah:crafting\/(cable|capacitor|reactor|energ.*|.*_cell|battery|player.*|ender.*)_(blazing|hardened)/ },
+
+        { id: 'quark:tools/crafting/runes/rainbow_rune' },
 
         { id: 'supplementaries:jar' },
         { id: 'supplementaries:soap' },
@@ -94,6 +102,8 @@ ServerEvents.recipes((event) => {
         { id: 'twilightforest:material/fiery_iron_ingot_reversed' },
 
         { id: /chalk/, mod: 'occultism' },
+        { id: /rune_from_corundum/, mod: 'quark' },
+        { id: /_machine_frame/, mod: 'industrialforegoing' },
 
         // Disable Power Generation
 

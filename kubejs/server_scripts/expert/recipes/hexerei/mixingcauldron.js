@@ -59,6 +59,30 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}chalk_gold`
         },
         {
+            liquid: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
+            },
+            inputs: [
+                'minecraft:calcite',
+                '#forge:dusts/fluix',
+                'occultism:spirit_attuned_gem',
+                '#forge:dusts/fluix',
+                'minecraft:calcite',
+                '#forge:dusts/fluix',
+                'occultism:spirit_attuned_gem',
+                '#forge:dusts/fluix'
+            ],
+            output: 'occultism:chalk_purple',
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}chalk_purple`
+        },
+        {
             liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:harming' } },
             inputs: [
                 'minecraft:flint',

@@ -18,7 +18,8 @@ StartupEvents.registry('item', (event) => {
         'kaolin_clay',
         'calcined_kaolin_pearls',
         'kaolin_powder',
-        'mystery_mash'
+        'mystery_mash',
+        'energetic_transference_matrix'
     ];
 
     const ritualDummies = [
@@ -41,7 +42,8 @@ StartupEvents.registry('item', (event) => {
         'ritual_summon_bound_blizz',
         'ritual_craft_willow_broom',
         'ritual_craft_blaze_burner',
-        'ritual_craft_module_expansion_card'
+        'ritual_craft_module_expansion_card',
+        'ritual_craft_energetic_transference_matrix'
     ];
 
     const reusableItemTextures = [

@@ -9,6 +9,11 @@ ServerEvents.recipes((event) => {
             result: { item: 'occultism:otherstone' },
             ingredient: { item: 'blue_skies:lunar_stone' },
             id: 'occultism:spirit_fire/otherstone'
+        },
+        {
+            result: { item: 'occultism:spirit_attuned_gem' },
+            ingredient: { tag: 'forge:gems/moonstone' },
+            id: 'occultism:spirit_fire/spirit_attuned_gem'
         }
     ];
 

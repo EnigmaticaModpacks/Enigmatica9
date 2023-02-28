@@ -20,6 +20,29 @@ ServerEvents.recipes((event) => {
             reagent: [{ item: 'minecraft:crafting_table' }],
             sourceCost: 500,
             id: `${id_prefix}mechanical_crafter`
+        },
+        {
+            output: { item: 'ae2:controller', count: 1 },
+            pedestalItems: [
+                { item: { item: 'quark:rainbow_rune' } },
+                { item: { item: 'quark:rainbow_rune' } },
+                { item: { item: 'quark:rainbow_rune' } },
+                { item: { item: 'quark:rainbow_rune' } }
+            ],
+            reagent: [{ tag: 'industrialforegoing:machine_frame/simple' }],
+            sourceCost: 5000,
+            id: `${id_prefix}controller`
+        },
+        {
+            output: { item: 'mekanism:teleportation_core', count: 2 },
+            pedestalItems: [
+                { item: { item: 'ars_nouveau:conjuration_essence' } },
+                { item: { item: 'quark:rainbow_rune' } },
+                { item: { item: 'quark:rainbow_rune' } }
+            ],
+            reagent: [{ item: 'occultism:spirit_attuned_gem' }],
+            sourceCost: 500,
+            id: `${id_prefix}teleportation_core`
         }
     ];
 

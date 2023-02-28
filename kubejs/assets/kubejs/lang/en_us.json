@@ -222,6 +222,13 @@
     "ritual.enigmatica.occultism/ritual/ritual_summon_bound_blizz.interrupted": "Ritual of Binding interrupted.",
     "ritual.enigmatica.occultism/ritual/ritual_summon_bound_blizz.conditions": "Not all requirements for this ritual are met.",
 
+    "item.kubejs.ritual_craft_energetic_transference_matrix": "Ritual: Craft Energetic Transference Matrix",
+    "item.kubejs.ritual_craft_energetic_transference_matrix.tooltip": "Craft Energetic Transference Matrix",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_energetic_transference_matrix.started": "Crafting Ritual started.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_energetic_transference_matrix.finished": "Crafting Ritual completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_energetic_transference_matrix.interrupted": "Crafting Ritual interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_energetic_transference_matrix.conditions": "Not all requirements for this ritual are met.",
+
     "ritual.enigmatica.occultism/ritual/creeper_gate_small.started": "Started Opening Small Creeper Gateway",
     "ritual.enigmatica.occultism/ritual/creeper_gate_small.finished": "Small Creeper Gateway Opened",
     "ritual.enigmatica.occultism/ritual/creeper_gate_small.interrupted": "Small Creeper Gateway Interrupted",

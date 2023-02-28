@@ -759,6 +759,29 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:tree_of_life_stage_3',
             duration: 60,
             id: `${id_prefix}ritual_tree_of_life_4`
+        },
+        {
+            output: Item.of('kubejs:energetic_transference_matrix', 4),
+            activation_item: 'occultism:book_of_binding_bound_djinni',
+            inputs: [
+                'pneumaticcraft:logistics_core',
+                'pneumaticcraft:logistics_core',
+                'pneumaticcraft:logistics_core',
+                'pneumaticcraft:logistics_core',
+                'mekanism:teleportation_core',
+                '#forge:gems/blazing',
+                'mekanism:teleportation_core',
+                '#forge:gems/blazing',
+                '#forge:gems/blazing',
+                'mekanism:teleportation_core',
+                '#forge:gems/blazing',
+                'mekanism:teleportation_core'
+            ],
+            ritual_dummy: 'kubejs:ritual_craft_energetic_transference_matrix',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_energetic_transference_matrix`
         }
     ];
 
