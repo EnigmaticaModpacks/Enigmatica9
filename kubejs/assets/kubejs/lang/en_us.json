@@ -229,6 +229,13 @@
     "ritual.enigmatica.occultism/ritual/ritual_craft_energetic_transference_matrix.interrupted": "Crafting Ritual interrupted.",
     "ritual.enigmatica.occultism/ritual/ritual_craft_energetic_transference_matrix.conditions": "Not all requirements for this ritual are met.",
 
+    "item.kubejs.ritual_craft_controller": "Ritual: Craft ME Controller",
+    "item.kubejs.ritual_craft_controller.tooltip": "Bind a Water Elemental to to control the flow of Source.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_controller.started": "Ritual of Binding started.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_controller.finished": "Ritual of Binding completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_controller.interrupted": "Ritual of Binding interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_controller.conditions": "Not all requirements for this ritual are met.",
+
     "ritual.enigmatica.occultism/ritual/creeper_gate_small.started": "Started Opening Small Creeper Gateway",
     "ritual.enigmatica.occultism/ritual/creeper_gate_small.finished": "Small Creeper Gateway Opened",
     "ritual.enigmatica.occultism/ritual/creeper_gate_small.interrupted": "Small Creeper Gateway Interrupted",

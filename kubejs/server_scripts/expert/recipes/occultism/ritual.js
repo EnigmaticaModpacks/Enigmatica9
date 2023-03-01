@@ -603,6 +603,56 @@ ServerEvents.recipes((event) => {
             duration: 10,
             id: `${id_prefix}ritual_craft_module_expansion_card`
         },
+        {
+            output: '4x ae2:controller',
+            activation_item: 'pneumaticcraft:logistics_core',
+            inputs: [
+                'naturesaura:infused_stone',
+                'naturesaura:infused_stone',
+                'naturesaura:infused_stone',
+                'naturesaura:infused_stone',
+                'quark:rainbow_rune',
+                'powah:energy_cable_niotic',
+                'quark:rainbow_rune',
+                'powah:energy_cable_niotic',
+                'powah:energy_cable_niotic',
+                'quark:rainbow_rune',
+                'powah:energy_cable_niotic',
+                'quark:rainbow_rune'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/water',
+                display_name: 'ritual.occultism.sacrifice.water_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_controller',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_controller`
+        },
+        {
+            output: '4x kubejs:energetic_transference_matrix',
+            activation_item: 'occultism:book_of_binding_bound_djinni',
+            inputs: [
+                'pneumaticcraft:logistics_core',
+                'pneumaticcraft:logistics_core',
+                'pneumaticcraft:logistics_core',
+                'pneumaticcraft:logistics_core',
+                'mekanism:teleportation_core',
+                '#forge:gems/blazing',
+                'mekanism:teleportation_core',
+                '#forge:gems/blazing',
+                '#forge:gems/blazing',
+                'mekanism:teleportation_core',
+                '#forge:gems/blazing',
+                'mekanism:teleportation_core'
+            ],
+            ritual_dummy: 'kubejs:ritual_craft_energetic_transference_matrix',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_energetic_transference_matrix`
+        },
 
         /*
         Custom Summons
@@ -759,29 +809,6 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:tree_of_life_stage_3',
             duration: 60,
             id: `${id_prefix}ritual_tree_of_life_4`
-        },
-        {
-            output: Item.of('kubejs:energetic_transference_matrix', 4),
-            activation_item: 'occultism:book_of_binding_bound_djinni',
-            inputs: [
-                'pneumaticcraft:logistics_core',
-                'pneumaticcraft:logistics_core',
-                'pneumaticcraft:logistics_core',
-                'pneumaticcraft:logistics_core',
-                'mekanism:teleportation_core',
-                '#forge:gems/blazing',
-                'mekanism:teleportation_core',
-                '#forge:gems/blazing',
-                '#forge:gems/blazing',
-                'mekanism:teleportation_core',
-                '#forge:gems/blazing',
-                'mekanism:teleportation_core'
-            ],
-            ritual_dummy: 'kubejs:ritual_craft_energetic_transference_matrix',
-            ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:craft_djinni',
-            duration: 10,
-            id: `${id_prefix}ritual_craft_energetic_transference_matrix`
         }
     ];
 

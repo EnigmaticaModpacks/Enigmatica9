@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
         {
             output: Item.of('powah:steel_energized', 4),
             inputs: ['#forge:dusts/aluminum', '#forge:dusts/aluminum', '#forge:dusts/copper', '#forge:gems/moonstone'],
-            energy: '120000',
+            energy: '100000',
             id: `powah:energizing/energized_steel`
         },
         {
@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
                 'blue_skies:soul_fragment',
                 'ars_nouveau:water_essence'
             ],
-            energy: '300000',
+            energy: '100000',
             id: `powah:energizing/niotic_crystal`
         }
     ];
