@@ -39,7 +39,6 @@ ServerEvents.recipes((event) => {
             ],
             id: `ae2:network/cables/covered_fluix`
         },
-        ,
         {
             output: '12x ae2:fluix_covered_cable',
             inputs: [
@@ -52,6 +51,11 @@ ServerEvents.recipes((event) => {
                 'thermal:beekeeper_fabric'
             ],
             id: `${id_prefix}fluix_covered_cable`
+        },
+        {
+            output: 'ae2:conversion_monitor',
+            inputs: ['ae2:storage_monitor', 'pneumaticcraft:logistics_core'],
+            id: `ae2:network/parts/monitors_conversion`
         }
     ];
 

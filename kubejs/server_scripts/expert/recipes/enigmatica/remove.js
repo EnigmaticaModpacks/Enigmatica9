@@ -13,16 +13,18 @@ ServerEvents.recipes((event) => {
 
         { mod: 'computercraft' },
         { mod: 'superiorshields' },
-        { output: 'twilightforest:raw_ironwood' },
+
+        { output: 'ae2:silicon' },
+        { output: 'ae2:formation_plane' },
+        { output: 'ae2:annihilation_plane' },
+        { output: 'create:andesite_alloy' },
         { output: 'minecraft:blast_furnace' },
         { output: 'minecraft:furnace' },
-        { output: 'create:andesite_alloy' },
-        { output: 'ae2:silicon' },
-
+        { output: 'minecraft:fire_charge' },
         { output: 'thermal:ice_charge' },
         { output: 'thermal:lightning_charge' },
         { output: 'thermal:earth_charge' },
-        { output: 'minecraft:fire_charge' },
+        { output: 'twilightforest:raw_ironwood' },
 
         { type: 'thermal:smelter_recycle' },
         { type: 'ae2:charger' },
@@ -35,6 +37,7 @@ ServerEvents.recipes((event) => {
         { id: 'ae2:network/parts/quartz_fiber_part' },
         { id: 'ae2:transform/fluix_crystals' },
         { id: 'ae2:network/blocks/controller' },
+        { id: 'ae2:misc/fluixpearl' },
 
         { id: 'constructionwand:stone_wand' },
         { id: 'constructionwand:iron_wand' },
@@ -62,6 +65,10 @@ ServerEvents.recipes((event) => {
 
         { id: 'mekanism:teleportation_core' },
 
+        { id: 'occultism:ritual/craft_dimensional_matrix' },
+        { id: 'occultism:ritual/craft_storage_controller_base' },
+        { id: 'occultism:ritual/craft_stable_wormhole' },
+
         { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },
         { id: 'pneumaticcraft:pressure_chamber_valve' },
         { id: 'pneumaticcraft:pressure_chamber_glass' },
@@ -74,6 +81,10 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:logistics_core' },
         { id: 'pneumaticcraft:spawner_agitator' },
         { id: 'pneumaticcraft:module_expansion_card' },
+        { id: 'pneumaticcraft:explosion_crafting/compressed_iron_ingot' },
+        { id: 'pneumaticcraft:explosion_crafting/compressed_iron_block' },
+        { id: 'pneumaticcraft:pressure_chamber/compressed_iron_ingot' },
+        { id: 'pneumaticcraft:pressure_chamber/compressed_iron_block' },
 
         { id: 'powah:crafting/dielectric_rod_h' },
         { id: 'powah:crafting/dielectric_paste' },
@@ -83,6 +94,8 @@ ServerEvents.recipes((event) => {
         { id: /powah:crafting\/(cable|capacitor|reactor|energ.*|.*_cell|battery|player.*|ender.*)_(blazing|hardened)/ },
 
         { id: 'quark:tools/crafting/runes/rainbow_rune' },
+
+        { id: 'rftoolsbase:dimensionalshard' },
 
         { id: 'supplementaries:jar' },
         { id: 'supplementaries:soap' },

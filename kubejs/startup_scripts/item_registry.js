@@ -19,7 +19,8 @@ StartupEvents.registry('item', (event) => {
         'calcined_kaolin_pearls',
         'kaolin_powder',
         'mystery_mash',
-        'energetic_transference_matrix'
+        'energetic_transference_matrix',
+        'dimensional_storage_crystal'
     ];
 
     const ritualDummies = [

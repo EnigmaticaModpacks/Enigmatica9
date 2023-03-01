@@ -106,12 +106,24 @@ ServerEvents.recipes((event) => {
         //         }
         //     ],
         //     id: `${id_prefix}sunstone_block_to_pearl`
-        // }
+        // },
+
+        {
+            item_in: [
+                { tag: 'forge:gems/moonstone' },
+                { tag: 'forge:dusts/fluix' },
+                { tag: 'forge:dusts/fluix' },
+                { tag: 'forge:dusts/fluix' },
+                { tag: 'forge:dusts/fluix' }
+            ],
+            block_in: { blocks: ['minecraft:water'] },
+            post: [{ type: 'drop_item', item: 'ae2:fluix_pearl' }],
+            id: `${id_prefix}fluix_pearl`
+        }
     ];
 
     recipes.forEach((recipe) => {
         recipe.type = 'lychee:item_inside';
-        recipe.item_in = Item.of(recipe.input).toJson();
 
         event.custom(recipe).id(recipe.id);
     });

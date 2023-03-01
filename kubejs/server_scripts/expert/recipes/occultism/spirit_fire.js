@@ -12,7 +12,7 @@ ServerEvents.recipes((event) => {
         },
         {
             result: { item: 'occultism:spirit_attuned_gem' },
-            ingredient: { tag: 'forge:gems/moonstone' },
+            ingredient: { item: 'ae2:fluix_pearl' },
             id: 'occultism:spirit_fire/spirit_attuned_gem'
         }
     ];

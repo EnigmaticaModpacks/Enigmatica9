@@ -63,6 +63,15 @@ ServerEvents.recipes((event) => {
             aura: 100000,
             time: 600,
             id: `${id_prefix}moonstone_block`
+        },
+        {
+            output: 'rftoolsbase:dimensionalshard',
+            input: 'ae2:charged_certus_quartz_crystal',
+            aura_type: 'naturesaura:nether',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 6000,
+            time: 20,
+            id: `${id_prefix}dimensionalshard`
         }
     ];
 
