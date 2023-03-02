@@ -1,14 +1,14 @@
 {
-	"block.pneumaticcraft.compressed_iron_block": "Block of Compressed Invar",
-	"block.pneumaticcraft.creative_compressed_iron_block": "Creative Compressed Invar Block",
-	"gui.tooltip.block.pneumaticcraft.heat_pipe": "An insulated core of compressed iron which can transfer heat without losing any to adjacent air or fluid blocks. A more compact alternative to Compressed Invar Blocks. This block can be camouflaged with the Camouflage Applicator tool.",
-	"gui.tooltip.block.pneumaticcraft.pressure_chamber_valve": "This multi-block structure can be used as air storage. Its primary usage, however, is to compress various materials into other materials. Like Invar into Compressed Invar. Or Coal into Diamonds.",
-	"gui.tooltip.item.pneumaticcraft.drill_bit_diamond": "Faster than Compressed Invar${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs)",
-	"item.pneumaticcraft.compressed_iron_boots": "Compressed Invar Boots",
-	"item.pneumaticcraft.compressed_iron_chestplate": "Compressed Invar Chestplate",
-	"item.pneumaticcraft.compressed_iron_helmet": "Compressed Invar Helmet",
-	"item.pneumaticcraft.compressed_iron_gear": "Compressed Invar Gear",
-	"item.pneumaticcraft.compressed_iron_leggings": "Compressed Invar Leggings",
-	"item.pneumaticcraft.drill_bit_compressed_iron": "Compressed Invar Drill Bit",
-	"item.pneumaticcraft.ingot_iron_compressed": "Compressed Invar Ingot"
+	"block.pneumaticcraft.compressed_iron_block": "Block of Compressed Iron",
+	"block.pneumaticcraft.creative_compressed_iron_block": "Creative Compressed Iron Block",
+	"gui.tooltip.block.pneumaticcraft.heat_pipe": "An insulated core of compressed iron which can transfer heat without losing any to adjacent air or fluid blocks. A more compact alternative to Compressed Iron Blocks. This block can be camouflaged with the Camouflage Applicator tool.",
+	"gui.tooltip.block.pneumaticcraft.pressure_chamber_valve": "This multi-block structure can be used as air storage. Its primary usage, however, is to compress various materials into other materials. Like Iron into Compressed Iron. Or Coal into Diamonds.",
+	"gui.tooltip.item.pneumaticcraft.drill_bit_diamond": "Faster than Compressed Iron${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs)",
+	"item.pneumaticcraft.compressed_iron_boots": "Compressed Iron Boots",
+	"item.pneumaticcraft.compressed_iron_chestplate": "Compressed Iron Chestplate",
+	"item.pneumaticcraft.compressed_iron_helmet": "Compressed Iron Helmet",
+	"item.pneumaticcraft.compressed_iron_gear": "Compressed Iron Gear",
+	"item.pneumaticcraft.compressed_iron_leggings": "Compressed Iron Leggings",
+	"item.pneumaticcraft.drill_bit_compressed_iron": "Compressed Iron Drill Bit",
+	"item.pneumaticcraft.ingot_iron_compressed": "Compressed Iron Ingot"
 }
