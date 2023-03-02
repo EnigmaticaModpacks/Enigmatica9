@@ -75,6 +75,15 @@ ServerEvents.recipes((event) => {
                 C: '#forge:gems/fluix'
             },
             id: `ars_nouveau:enchanting_apparatus`
+        },
+        {
+            output: 'ars_nouveau:ring_of_potential',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: '#forge:nuggets/silver',
+                B: '#forge:gems/source'
+            },
+            id: `ars_nouveau:ring_of_potential`
         }
     ];
 

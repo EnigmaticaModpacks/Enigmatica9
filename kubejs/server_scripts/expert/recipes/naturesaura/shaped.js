@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            output: Item.of('naturesaura:rf_converter'),
+            output: 'naturesaura:rf_converter',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: '#forge:gems/carminite',
@@ -16,7 +16,7 @@ ServerEvents.recipes((event) => {
             id: `naturesaura:rf_converter`
         },
         {
-            output: Item.of('naturesaura:potion_generator'),
+            output: 'naturesaura:potion_generator',
             pattern: ['ABA', 'CDC', 'ABA'],
             key: {
                 A: 'minecraft:nether_bricks',
@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
             id: `naturesaura:potion_generator`
         },
         {
-            output: Item.of('naturesaura:color_changer'),
+            output: 'naturesaura:color_changer',
             pattern: ['ABC', 'DED', ' D '],
             key: {
                 A: '#forge:dyes/red',
@@ -39,7 +39,7 @@ ServerEvents.recipes((event) => {
             id: `naturesaura:color_changer`
         },
         {
-            output: Item.of('naturesaura:spring'),
+            output: 'naturesaura:spring',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: 'minecraft:stone_bricks',
@@ -49,7 +49,7 @@ ServerEvents.recipes((event) => {
             id: `naturesaura:spring`
         },
         {
-            output: Item.of('2x naturesaura:field_creator'),
+            output: '2x naturesaura:field_creator',
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'ae2:quartz_glass',
@@ -58,7 +58,7 @@ ServerEvents.recipes((event) => {
             id: `naturesaura:field_creator`
         },
         {
-            output: Item.of('4x naturesaura:calling_spirit'),
+            output: '4x naturesaura:calling_spirit',
             pattern: [' A ', 'BEC', ' D '],
             key: {
                 A: 'ars_nouveau:air_essence',
@@ -68,6 +68,89 @@ ServerEvents.recipes((event) => {
                 E: '#forge:gems/moonstone'
             },
             id: `naturesaura:calling_spirit`
+        },
+        {
+            output: 'naturesaura:projectile_generator',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: 'naturesaura:infused_stone',
+                B: 'naturesaura:infused_iron',
+                C: '#forge:gems/nitro',
+                D: '#forge:storage_blocks/source',
+                E: 'quark:ender_watcher'
+            },
+            id: `naturesaura:projectile_generator`
+        },
+        {
+            output: 'naturesaura:firework_generator',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: 'naturesaura:infused_stone',
+                B: 'naturesaura:infused_iron',
+                C: '#forge:gems/nitro',
+                D: '#forge:storage_blocks/source',
+                E: 'minecraft:sculk_sensor'
+            },
+            id: `naturesaura:firework_generator`
+        },
+        {
+            output: 'naturesaura:generator_limit_remover',
+            pattern: ['ABA', 'DCE', 'AFA'],
+            key: {
+                A: 'naturesaura:infused_stone',
+                B: 'ars_nouveau:air_essence',
+                C: '#forge:gems/nitro',
+                D: 'ars_nouveau:earth_essence',
+                E: 'ars_nouveau:fire_essence',
+                F: 'ars_nouveau:water_essence'
+            },
+            id: `naturesaura:generator_limit_remover`
+        },
+        {
+            output: 'naturesaura:spawn_lamp',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'ae2:sky_stone_block',
+                B: 'naturesaura:infused_iron',
+                C: 'ae2:quartz_vibrant_glass',
+                D: 'twilightforest:firefly_jar'
+            },
+            id: `naturesaura:spawn_lamp`
+        },
+        {
+            output: 'naturesaura:powder_placer',
+            pattern: ['ABA', 'CCC'],
+            key: {
+                A: 'naturesaura:gold_powder',
+                B: 'ars_nouveau:manipulation_essence',
+                C: 'naturesaura:infused_slab'
+            },
+            id: `naturesaura:powder_placer`
+        },
+        {
+            output: 'naturesaura:weather_changer',
+            pattern: ['ABA', 'CDE', 'AFA'],
+            key: {
+                A: 'naturesaura:infused_brick',
+                B: 'minecraft:fire_charge',
+                C: 'minecraft:dark_prismarine',
+                D: 'quark:bottled_cloud',
+                E: 'minecraft:sunflower',
+                F: 'ars_nouveau:manipulation_essence'
+            },
+            id: `naturesaura:weather_changer`
+        },
+        {
+            output: 'naturesaura:time_changer',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: 'naturesaura:infused_brick',
+                B: '#forge:storage_blocks/sunstone',
+                C: 'naturesaura:infused_iron',
+                D: 'ars_nouveau:manipulation_essence',
+                E: '#forge:storage_blocks/moonstone'
+            },
+            id: `naturesaura:time_changer`
         }
     ];
 

@@ -83,6 +83,18 @@ ServerEvents.recipes((event) => {
             reagent: [{ item: 'ars_nouveau:wixie_charm' }],
             sourceCost: 5000,
             id: `${id_prefix}crafting_unit`
+        },
+        {
+            output: { item: 'naturesaura:animal_spawner' },
+            pedestalItems: [
+                { item: { item: 'ars_nouveau:conjuration_essence' } },
+                { item: { item: 'minecraft:golden_carrot' } },
+                { item: { item: 'minecraft:hay_block' } },
+                { item: { item: 'minecraft:golden_apple' } }
+            ],
+            reagent: [{ item: 'spirit:broken_spawner' }],
+            sourceCost: 9000,
+            id: `${id_prefix}animal_spawner`
         }
     ];
 

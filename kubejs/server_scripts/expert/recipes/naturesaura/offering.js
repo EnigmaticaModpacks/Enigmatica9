@@ -22,6 +22,12 @@ ServerEvents.recipes((event) => {
             input: { tag: 'forge:ingots/aluminum' },
             start_item: { item: 'naturesaura:calling_spirit' },
             id: `naturesaura:offering/sky_ingot`
+        },
+        {
+            output: { item: 'naturesaura:clock_hand' },
+            input: { item: 'ars_nouveau:manipulation_essence' },
+            start_item: { item: 'naturesaura:calling_spirit' },
+            id: `naturesaura:offering/clock_hand`
         }
     ];
 

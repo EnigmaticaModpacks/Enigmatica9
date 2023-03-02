@@ -69,6 +69,8 @@ ServerEvents.recipes((event) => {
         { id: 'occultism:ritual/craft_dimensional_matrix' },
         { id: 'occultism:ritual/craft_storage_controller_base' },
         { id: 'occultism:ritual/craft_stable_wormhole' },
+        { id: 'occultism:ritual/craft_soul_gem' },
+        { id: 'occultism:ritual/craft_familiar_ring' },
 
         { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },
         { id: 'pneumaticcraft:pressure_chamber_valve' },
