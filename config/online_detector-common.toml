@@ -1,0 +1,9 @@
+
+# Common Settings for Online Detector
+[Frequency]
+	# How often the Online Detector Block should check if the assigned player is online,
+	# this value is measured in ticks (20 ticks are 1 second), it is not recommended to
+	# set this value bellow 20
+	#Range: 1 ~ 1200
+	onlineCheckFrequency = 200
+
