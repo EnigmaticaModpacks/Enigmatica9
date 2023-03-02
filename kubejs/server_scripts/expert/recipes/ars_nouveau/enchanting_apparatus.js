@@ -67,6 +67,22 @@ ServerEvents.recipes((event) => {
             reagent: [{ item: 'occultism:wormhole_frame' }],
             sourceCost: 2000,
             id: `${id_prefix}stable_wormhole`
+        },
+        {
+            output: { item: 'ae2:crafting_unit', count: 2 },
+            pedestalItems: [
+                { item: { item: 'pneumaticcraft:logistics_core' } },
+                { item: { item: 'naturesaura:infused_stone' } },
+                { item: { item: 'powah:energy_cable_niotic' } },
+                { item: { item: 'naturesaura:infused_stone' } },
+                { item: { item: 'pneumaticcraft:logistics_core' } },
+                { item: { item: 'naturesaura:infused_stone' } },
+                { item: { item: 'powah:energy_cable_niotic' } },
+                { item: { item: 'naturesaura:infused_stone' } }
+            ],
+            reagent: [{ item: 'ars_nouveau:wixie_charm' }],
+            sourceCost: 5000,
+            id: `${id_prefix}crafting_unit`
         }
     ];
 

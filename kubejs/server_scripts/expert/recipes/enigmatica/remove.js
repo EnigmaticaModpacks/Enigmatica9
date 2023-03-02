@@ -38,6 +38,7 @@ ServerEvents.recipes((event) => {
         { id: 'ae2:transform/fluix_crystals' },
         { id: 'ae2:network/blocks/controller' },
         { id: 'ae2:misc/fluixpearl' },
+        { id: `ae2:network/crafting/cpu_crafting_unit` },
 
         { id: 'constructionwand:stone_wand' },
         { id: 'constructionwand:iron_wand' },

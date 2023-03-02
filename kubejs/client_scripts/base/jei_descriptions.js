@@ -247,6 +247,14 @@ JEIEvents.information((event) => {
                 ` `,
                 `May be boosted with Crystal Growth Accelerators.`
             ]
+        },
+        {
+            items: ['ae2:name_press'],
+            text: [
+                `Used to automatically rename items in an Inscriber.`,
+                ` `,
+                `To obtain, Right-Click a Quartz Knife in the air then insert a valid ingot and provide the desired name.`
+            ]
         }
     ];
 

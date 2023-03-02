@@ -61,6 +61,11 @@ ServerEvents.recipes((event) => {
             output: '18x kubejs:dimensional_storage_crystal',
             inputs: ['occultism:dimensional_matrix', '#ae2:knife'],
             id: `${id_prefix}dimensional_storage_crystal`
+        },
+        {
+            output: 'ae2:crafting_accelerator',
+            inputs: ['ae2:crafting_unit', 'ars_nouveau:wixie_charm'],
+            id: `ae2:network/crafting/cpu_crafting_accelerator`
         }
     ];
 

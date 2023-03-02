@@ -238,17 +238,6 @@ ServerEvents.recipes((event) => {
                 D: 'naturesaura:sky_ingot'
             },
             id: `ae2:network/cells/item_storage_components_cell_256k_part`
-        },
-        {
-            output: '2x ae2:crafting_unit',
-            pattern: ['ABA', 'CDC', 'ABA'],
-            key: {
-                A: '#forge:ingots/compressed_iron',
-                B: 'thermal:machine_frame',
-                C: 'powah:energy_cable_niotic',
-                D: 'pneumaticcraft:logistics_core'
-            },
-            id: `ae2:network/crafting/cpu_crafting_unit`
         }
     ];
 
