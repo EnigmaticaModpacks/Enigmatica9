@@ -184,6 +184,71 @@ ServerEvents.recipes((event) => {
                 B: 'ae2:quartz_fixture'
             },
             id: `ae2:network/parts/energy_level_emitter`
+        },
+        {
+            output: 'ae2:cell_component_1k',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'ae2:sky_dust',
+                B: 'kubejs:dimensional_storage_crystal',
+                C: 'naturesaura:sky_ingot'
+            },
+            id: `ae2:network/cells/item_storage_components_cell_1k_part`
+        },
+        {
+            output: 'ae2:cell_component_4k',
+            pattern: ['ABC', 'BDB', 'CBA'],
+            key: {
+                A: 'ae2:sky_dust',
+                B: 'kubejs:dimensional_storage_crystal',
+                C: 'ae2:cell_component_1k',
+                D: 'naturesaura:sky_ingot'
+            },
+            id: `ae2:network/cells/item_storage_components_cell_4k_part`
+        },
+        {
+            output: 'ae2:cell_component_16k',
+            pattern: ['ABC', 'BDB', 'CBA'],
+            key: {
+                A: 'ae2:sky_dust',
+                B: 'kubejs:dimensional_storage_crystal',
+                C: 'ae2:cell_component_4k',
+                D: 'naturesaura:sky_ingot'
+            },
+            id: `ae2:network/cells/item_storage_components_cell_16k_part`
+        },
+        {
+            output: 'ae2:cell_component_64k',
+            pattern: ['ABC', 'BDB', 'CBA'],
+            key: {
+                A: 'ae2:sky_dust',
+                B: 'kubejs:dimensional_storage_crystal',
+                C: 'ae2:cell_component_16k',
+                D: 'naturesaura:sky_ingot'
+            },
+            id: `ae2:network/cells/item_storage_components_cell_64k_part`
+        },
+        {
+            output: 'ae2:cell_component_256k',
+            pattern: ['ABC', 'BDB', 'CBA'],
+            key: {
+                A: 'ae2:sky_dust',
+                B: 'kubejs:dimensional_storage_crystal',
+                C: 'ae2:cell_component_64k',
+                D: 'naturesaura:sky_ingot'
+            },
+            id: `ae2:network/cells/item_storage_components_cell_256k_part`
+        },
+        {
+            output: '2x ae2:crafting_unit',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:ingots/compressed_iron',
+                B: 'thermal:machine_frame',
+                C: 'powah:energy_cable_niotic',
+                D: 'pneumaticcraft:logistics_core'
+            },
+            id: `ae2:network/crafting/cpu_crafting_unit`
         }
     ];
 

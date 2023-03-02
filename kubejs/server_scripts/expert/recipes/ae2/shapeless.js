@@ -56,6 +56,11 @@ ServerEvents.recipes((event) => {
             output: 'ae2:conversion_monitor',
             inputs: ['ae2:storage_monitor', 'pneumaticcraft:logistics_core'],
             id: `ae2:network/parts/monitors_conversion`
+        },
+        {
+            output: '18x kubejs:dimensional_storage_crystal',
+            inputs: ['occultism:dimensional_matrix', '#ae2:knife'],
+            id: `${id_prefix}dimensional_storage_crystal`
         }
     ];
 
