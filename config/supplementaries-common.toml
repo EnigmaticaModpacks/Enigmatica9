@@ -120,7 +120,7 @@
 		enabled = true
 		#Allows two iron gates to be opened simultaneously when on top of the other
 		double_opening = true
-		#Makes iron (ang gold) gates behave like their door counterpart so for example iron gates will only be openeable by redstone
+		#Makes iron (ang gold) gates behave like their door counterpart so for example iron gates will only be openable by redstone
 		door-like_gates = false
 
 	[building.item_shelf]
@@ -452,36 +452,6 @@
 		jar_cookies = true
 		#Allow Jars to hold liquids from bottles, buckets and bowls
 		jar_liquids = true
-
-	[functional.hourglass]
-		enabled = true
-		#Time in ticks for sugar
-		#Range: 0 ~ 10000
-		sugar_time = 40
-		#Time in ticks for sand blocks
-		#Range: 0 ~ 10000
-		sand_time = 70
-		#Time in ticks for concrete blocks
-		#Range: 0 ~ 10000
-		concrete_time = 105
-		#Time in ticks for generic dust
-		#Range: 0 ~ 10000
-		dust_time = 150
-		#Time in ticks for glowstone dust
-		#Range: 0 ~ 10000
-		glowstone_time = 190
-		#Time in ticks for blaze powder
-		#Range: 0 ~ 10000
-		blaze_powder_time = 277
-		#Time in ticks for redstone dust
-		#Range: 0 ~ 10000
-		redstone_time = 400
-		#Time in ticks for slime balls
-		#Range: 0 ~ 10000
-		slime_time = 1750
-		#Time in ticks for honey
-		#Range: 0 ~ 10000
-		honey_time = 2000
 
 	[functional.cage]
 		enabled = true

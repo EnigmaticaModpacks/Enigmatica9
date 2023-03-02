@@ -43,3 +43,7 @@
 	#Range: > 0
 	codexCost = 10
 
+[warp_portals]
+	#Enable warp portals?
+	enableWarpPortals = true
+
