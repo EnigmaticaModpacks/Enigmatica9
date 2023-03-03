@@ -98,6 +98,10 @@
 			willow = true
 			witch_hazel = true
 			zelkova = true
+			flowering_baobab = true
+			ripe_baobab = true
+			flowering_joshua = true
+			flowering_skyris = true
 
 		[types.leaves_type.hexerei]
 			mahogany = true

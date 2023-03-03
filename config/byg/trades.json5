@@ -10,6 +10,62 @@ to make editing this file much easier.
 {
 	// Trades for a given villager profession. Trade levels are in the range of 1-5
 	"trades_by_profession": {
+		"ae2:fluix_researcher": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		},
+		"ars_nouveau:shady_wizard": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		},
+		"blue_skies:alchemist": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		},
+		"blue_skies:nightwatcher": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		},
+		"blue_skies:shoveler": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		},
+		"blue_skies:stargazer": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		},
+		"blue_skies:summoner": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		},
+		"blue_skies:wrangler": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		},
 		"byg:forager": {
 			"1": [
 				{
@@ -19,7 +75,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				},
 				{
 					"config": {
@@ -28,7 +84,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				},
 				{
 					"config": {
@@ -37,7 +93,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				}
 			],
 			"2": [
@@ -48,7 +104,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 3
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				},
 				{
 					"config": {
@@ -57,7 +113,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 3
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				}
 			],
 			"3": [
@@ -69,7 +125,7 @@ to make editing this file much easier.
 						"number_of_items": 5,
 						"villager_xp": 2
 					},
-					"type": "byg:items_for_emeralds"
+					"type": "corgilib:items_for_emeralds"
 				},
 				{
 					"config": {
@@ -78,7 +134,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				},
 				{
 					"config": {
@@ -87,7 +143,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				},
 				{
 					"config": {
@@ -96,7 +152,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				}
 			],
 			"4": [
@@ -108,7 +164,7 @@ to make editing this file much easier.
 						"number_of_items": 9,
 						"villager_xp": 3
 					},
-					"type": "byg:items_for_emeralds"
+					"type": "corgilib:items_for_emeralds"
 				},
 				{
 					"config": {
@@ -118,7 +174,7 @@ to make editing this file much easier.
 						"number_of_items": 1,
 						"villager_xp": 3
 					},
-					"type": "byg:items_for_emeralds"
+					"type": "corgilib:items_for_emeralds"
 				}
 			],
 			"5": [
@@ -129,7 +185,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				},
 				{
 					"config": {
@@ -138,7 +194,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				},
 				{
 					"config": {
@@ -147,9 +203,44 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				}
 			]
+		},
+		"immersiveengineering:electrician": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		},
+		"immersiveengineering:engineer": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		},
+		"immersiveengineering:gunsmith": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		},
+		"immersiveengineering:machinist": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		},
+		"immersiveengineering:outfitter": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
 		},
 		"minecraft:armorer": {
 			"1": [],
@@ -164,7 +255,7 @@ to make editing this file much easier.
 						"number_of_items": 7,
 						"villager_xp": 2
 					},
-					"type": "byg:items_for_emeralds"
+					"type": "corgilib:items_for_emeralds"
 				}
 			],
 			"5": []
@@ -179,7 +270,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				}
 			],
 			"3": [],
@@ -188,7 +279,19 @@ to make editing this file much easier.
 		},
 		"minecraft:cartographer": {
 			"1": [],
-			"2": [],
+			"2": [
+				{
+					"config": {
+						"destination": "#minecraft:on_woodland_explorer_maps",
+						"destination_type": "MONUMENT",
+						"display_name": "filled_map.ancient_sequoia",
+						"emerald_cost": 14,
+						"max_uses": 12,
+						"villager_xp": 10
+					},
+					"type": "corgilib:treasure_map_for_emeralds"
+				}
+			],
 			"3": [],
 			"4": [],
 			"5": []
@@ -209,7 +312,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				}
 			],
 			"2": [
@@ -220,7 +323,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				},
 				{
 					"config": {
@@ -229,7 +332,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				},
 				{
 					"config": {
@@ -238,7 +341,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				}
 			],
 			"3": [
@@ -249,7 +352,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				}
 			],
 			"4": [
@@ -263,7 +366,7 @@ to make editing this file much easier.
 						"to_item": "byg:lush_dirt",
 						"villager_xp": 4
 					},
-					"type": "byg:items_and_emeralds_to_items"
+					"type": "corgilib:items_and_emeralds_to_items"
 				}
 			],
 			"5": []
@@ -308,7 +411,7 @@ to make editing this file much easier.
 						"number_of_items": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:items_for_emeralds"
+					"type": "corgilib:items_for_emeralds"
 				},
 				{
 					"config": {
@@ -317,7 +420,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 12
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				},
 				{
 					"config": {
@@ -327,7 +430,7 @@ to make editing this file much easier.
 						"number_of_items": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:items_for_emeralds"
+					"type": "corgilib:items_for_emeralds"
 				},
 				{
 					"config": {
@@ -336,7 +439,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 12
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				}
 			],
 			"4": [
@@ -348,7 +451,7 @@ to make editing this file much easier.
 						"number_of_items": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:items_for_emeralds"
+					"type": "corgilib:items_for_emeralds"
 				},
 				{
 					"config": {
@@ -357,7 +460,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 12
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				},
 				{
 					"config": {
@@ -367,7 +470,7 @@ to make editing this file much easier.
 						"number_of_items": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:items_for_emeralds"
+					"type": "corgilib:items_for_emeralds"
 				},
 				{
 					"config": {
@@ -376,7 +479,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 12
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				},
 				{
 					"config": {
@@ -386,7 +489,7 @@ to make editing this file much easier.
 						"number_of_items": 12,
 						"villager_xp": 2
 					},
-					"type": "byg:items_for_emeralds"
+					"type": "corgilib:items_for_emeralds"
 				},
 				{
 					"config": {
@@ -395,7 +498,7 @@ to make editing this file much easier.
 						"max_uses": 12,
 						"villager_xp": 12
 					},
-					"type": "byg:emerald_for_items"
+					"type": "corgilib:emerald_for_items"
 				}
 			],
 			"5": []
@@ -420,6 +523,13 @@ to make editing this file much easier.
 			"3": [],
 			"4": [],
 			"5": []
+		},
+		"pneumaticcraft:mechanic": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
 		}
 	},
 	// Whether this file appends villager/wandering trader trades.
@@ -436,7 +546,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -446,7 +556,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -456,7 +566,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -466,7 +576,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -476,7 +586,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -486,7 +596,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -496,7 +606,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -506,7 +616,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -516,7 +626,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -526,7 +636,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -536,7 +646,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -546,7 +656,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -556,7 +666,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -566,7 +676,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -576,7 +686,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -586,7 +696,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -596,7 +706,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -606,7 +716,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -616,7 +726,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -626,7 +736,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -636,7 +746,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -646,7 +756,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -656,7 +766,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -666,7 +776,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -676,7 +786,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -686,7 +796,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -696,7 +806,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -706,7 +816,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -716,7 +826,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -726,7 +836,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -736,7 +846,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -746,7 +856,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -756,7 +866,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -766,7 +876,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -776,7 +886,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -786,7 +896,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -796,7 +906,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -806,7 +916,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -816,7 +926,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -826,7 +936,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -836,7 +946,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -846,7 +956,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -856,7 +966,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -866,7 +976,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -876,7 +986,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -886,7 +996,7 @@ to make editing this file much easier.
 					"number_of_items": 1,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -896,7 +1006,7 @@ to make editing this file much easier.
 					"number_of_items": 2,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			},
 			{
 				"config": {
@@ -906,7 +1016,7 @@ to make editing this file much easier.
 					"number_of_items": 2,
 					"villager_xp": 2
 				},
-				"type": "byg:items_for_emeralds"
+				"type": "corgilib:items_for_emeralds"
 			}
 		],
 		// Trades listed here are "rare" and only one(not only from these listed here but from other mods/vanilla also) is picked when a wandering trader spawns.

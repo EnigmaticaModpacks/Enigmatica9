@@ -829,11 +829,11 @@
 [management]
 	"Expanded Item Interactions" = true
 	"Inventory Sorting" = true
-	"Automatic Took Restock" = true
 	"Quick Armor Swapping" = true
 	"Item Sharing" = true
 	"Hotbar Changer" = true
 	"Easy Transfering" = true
+	"Automatic Tool Restock" = true
 
 	[management.inventory_sorting]
 		#Play a click when sorting inventories using keybindings
@@ -857,19 +857,19 @@
 	[management.item_sharing]
 		"Render Items In Chat" = true
 
-	[management.automatic_took_restock]
+	[management.automatic_tool_restock]
 		#This feature disables itself if any of the following mods are loaded: 
 		# - inventorytweaks
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
-		"Unstackables Only" = false
 		#Enchantments deemed important enough to have special priority when finding a replacement
 		"Important Enchantments" = ["minecraft:silk_touch", "minecraft:fortune", "minecraft:infinity", "minecraft:luck_of_the_sea", "minecraft:looting"]
 		#Enable replacing your tools with tools of the same type but not the same item
 		"Enable Loose Matching" = true
 		#Enable comparing enchantments to find a replacement
 		"Enable Enchant Matching" = true
+		"Unstackables Only" = false
 
 [tweaks]
 	"Zombie Villagers On Normal" = false
@@ -1401,6 +1401,8 @@
 		#Master Librarians will offer to exchange Ancient Tomes, provided you give them a max-level Enchanted Book of the Tome's enchantment too.
 		"Librarians Exchange Ancient Tomes" = true
 		"Overleveled Books Glow Rainbow" = true
+		#Also applies a random curse along each book
+		"Curse Gear" = false
 
 	[tools.torch_arrow]
 		"Extinguish On Miss" = false
