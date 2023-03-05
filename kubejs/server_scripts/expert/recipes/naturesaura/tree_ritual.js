@@ -145,7 +145,27 @@ ServerEvents.recipes((event) => {
             time: 5,
             sapling: 'quark:lavender_blossom_sapling',
             id: `${id_prefix}soul_gem`
+        },
+        {
+            output: 'naturesaura:eye',
+            ingredients: [
+                'hexerei:mindful_trance_blend',
+                '#forge:ingots/silver',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf'
+            ],
+            time: 25,
+            sapling: 'hexerei:mahogany_sapling',
+            id: 'naturesaura:tree_ritual/eye'
+        },
+        {
+            output: 'naturesaura:eye_improved',
+            ingredients: ['naturesaura:eye', 'naturesaura:sky_ingot', 'naturesaura:gold_leaf', 'naturesaura:gold_leaf'],
+            time: 25,
+            sapling: 'hexerei:mahogany_sapling',
+            id: 'naturesaura:tree_ritual/eye_improved'
         }
+
         /*
             ,
             {
