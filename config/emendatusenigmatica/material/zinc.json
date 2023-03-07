@@ -22,7 +22,7 @@
     ],
     "properties": {
         "materialType": "metal",
-        "harvestLevel": 1
+        "harvestLevel": 2
     },
     "oreDrop": {
         "drop": "emendatusenigmatica:raw_zinc",

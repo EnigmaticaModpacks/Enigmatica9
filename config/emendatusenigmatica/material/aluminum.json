@@ -21,7 +21,7 @@
     ],
     "properties": {
         "materialType": "metal",
-        "harvestLevel": 2
+        "harvestLevel": 1
     },
     "oreDrop": {
         "drop": "emendatusenigmatica:raw_aluminum",

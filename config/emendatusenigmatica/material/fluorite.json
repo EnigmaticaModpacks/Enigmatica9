@@ -11,7 +11,7 @@
   ],
   "properties": {
     "materialType": "gem",
-    "harvestLevel": 2,
+    "harvestLevel": 1,
     "blockRecipeType": 9
   },
   "oreDrop": {

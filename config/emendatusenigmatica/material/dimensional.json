@@ -10,7 +10,7 @@
     ],
     "properties": {
         "materialType": "gem",
-        "harvestLevel": 1,
+        "harvestLevel": 2,
         "blockRecipeType": 9,
         "isEmissive": true
     },
