@@ -168,6 +168,37 @@ ServerEvents.recipes((event) => {
                 D: 'thermal:fluid_cell_frame'
             },
             id: `pneumaticcraft:kerosene_lamp`
+        },
+        {
+            output: 'pneumaticcraft:turbine_rotor',
+            pattern: [' A ', ' B ', 'A A'],
+            key: {
+                A: 'pneumaticcraft:turbine_blade',
+                B: '#forge:ingots/skies'
+            },
+            id: `pneumaticcraft:turbine_rotor`
+        },
+        {
+            output: 'pneumaticcraft:flux_compressor',
+            pattern: ['AB ', 'CDE', 'AB '],
+            key: {
+                A: 'pneumaticcraft:turbine_rotor',
+                B: 'ars_nouveau:air_essence',
+                C: '#forge:gears/compressed_iron',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: 'pneumaticcraft:reinforced_pressure_tube'
+            },
+            id: `pneumaticcraft:flux_compressor`
+        },
+        {
+            output: '4x pneumaticcraft:reinforced_pressure_tube',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'pneumaticcraft:pressure_tube',
+                B: 'thermal:hazmat_fabric',
+                C: 'thermal:cured_rubber'
+            },
+            id: `${id_prefix}reinforced_pressure_tube`
         }
     ];
 

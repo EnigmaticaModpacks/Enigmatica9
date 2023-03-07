@@ -64,6 +64,16 @@ ServerEvents.recipes((event) => {
             ],
             pressure: 4.0,
             id: `${id_prefix}blank_rune`
+        },
+        {
+            results: [{ item: 'pneumaticcraft:turbine_blade', count: 3 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:plates/aluminum', count: 3 },
+                { item: 'ae2:sky_dust' },
+                { item: 'thermal:redstone_servo' }
+            ],
+            pressure: 1.0,
+            id: 'pneumaticcraft:pressure_chamber/turbine_blade'
         }
     ];
 

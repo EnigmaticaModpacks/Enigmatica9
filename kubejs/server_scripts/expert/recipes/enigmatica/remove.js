@@ -59,10 +59,12 @@ ServerEvents.recipes((event) => {
 
         { id: 'immersiveengineering:blastfurnace/steel' },
         { id: 'immersiveengineering:crafting/blastbrick' },
+        { id: /immersiveengineering:crafting\/wire_/ },
 
         { id: 'industrialforegoing:washing_factory' },
         { id: 'industrialforegoing:fermentation_station' },
         { id: 'industrialforegoing:fluid_sieving_machine' },
+        { id: /industrialforegoing:laser_drill_ore/ },
 
         { id: 'mekanism:teleportation_core' },
 
@@ -72,7 +74,6 @@ ServerEvents.recipes((event) => {
         { id: 'occultism:ritual/craft_soul_gem' },
         { id: 'occultism:ritual/craft_familiar_ring' },
 
-        { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },
         { id: 'pneumaticcraft:pressure_chamber_valve' },
         { id: 'pneumaticcraft:pressure_chamber_glass' },
         { id: 'pneumaticcraft:thermal_compressor' },
@@ -84,10 +85,13 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:logistics_core' },
         { id: 'pneumaticcraft:spawner_agitator' },
         { id: 'pneumaticcraft:module_expansion_card' },
+        { id: 'pneumaticcraft:compressed_iron_gear' },
         { id: 'pneumaticcraft:explosion_crafting/compressed_iron_ingot' },
         { id: 'pneumaticcraft:explosion_crafting/compressed_iron_block' },
+        { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },
         { id: 'pneumaticcraft:pressure_chamber/compressed_iron_ingot' },
         { id: 'pneumaticcraft:pressure_chamber/compressed_iron_block' },
+        { id: 'pneumaticcraft:thermo_plant/reinforced_pressure_tube' },
 
         { id: 'powah:crafting/dielectric_rod_h' },
         { id: 'powah:crafting/dielectric_paste' },

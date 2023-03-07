@@ -80,6 +80,16 @@ ServerEvents.recipes((event) => {
                 C: 'thermal:machine_frame'
             },
             id: `thermal:energy_cell_frame`
+        },
+        {
+            output: '4x thermal:redstone_servo',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'immersiveengineering:wirecoil_redstone',
+                B: 'immersiveengineering:wirecoil_copper',
+                C: '#forge:ingots/aluminum'
+            },
+            id: `thermal:redstone_servo`
         }
     ];
 

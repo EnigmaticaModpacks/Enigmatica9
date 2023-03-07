@@ -20,6 +20,11 @@ ServerEvents.recipes((event) => {
             input: { tag: 'forge:storage_blocks/invar' },
             output: [{ chance: 1.0, count: 1, item: 'pneumaticcraft:compressed_iron_block' }],
             id: `${id_prefix}compressed_iron_block`
+        },
+        {
+            input: { tag: 'forge:gears/invar' },
+            output: [{ chance: 1.0, count: 1, item: 'pneumaticcraft:compressed_iron_gear' }],
+            id: `${id_prefix}compressed_iron_gear`
         }
     ];
 
