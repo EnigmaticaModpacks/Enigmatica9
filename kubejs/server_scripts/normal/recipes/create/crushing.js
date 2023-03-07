@@ -4,7 +4,7 @@ ServerEvents.recipes((event) => {
     let recipes = [
         {
             ingredients: [ Ingredient.of(`#forge:ores/netherite`, 1) ],
-            processingTime: 240,
+            processingTime: 480,
             results: [
                 AlmostUnified.getPreferredItemForTag(`create:crushed_ores/netherite`),
                 {

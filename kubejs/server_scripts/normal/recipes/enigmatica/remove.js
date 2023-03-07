@@ -15,6 +15,8 @@ ServerEvents.recipes((event) => {
         { id: /emendatusenigmatica:shard\/from_raw/ },
         { id: /emendatusenigmatica:clump\/from_ore/ },
         { id: /emendatusenigmatica:clump\/from_raw/ },
+        { id: "emendatusenigmatica:ingot/from_crushed_ore/smelting/netherite"},
+        { id: "emendatusenigmatica:ingot/from_crushed_ore/blasting/netherite"},
 
         { id: /immersiveengineering:arcfurnace\/ore/ },
         { id: /immersiveengineering:arcfurnace\/raw_ore/ },

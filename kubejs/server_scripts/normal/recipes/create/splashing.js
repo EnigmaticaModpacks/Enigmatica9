@@ -5,9 +5,14 @@ ServerEvents.recipes((event) => {
         {
             ingredients: [ Ingredient.of('#create:crushed_ores/netherite', 1) ],
             results: [
-                Item.of(AlmostUnified.getPreferredItemForTag('forge:nuggets/netherite'), 6).toJson(),
+                Item.of(AlmostUnified.getPreferredItemForTag('forge:nuggets/netherite'), 3).toJson(),
                 {
                     chance: 0.66,
+                    count: 3,
+                    item: AlmostUnified.getPreferredItemForTag('forge:nuggets/netherite').getId()
+                },
+                {
+                    chance: 0.33,
                     count: 3,
                     item: AlmostUnified.getPreferredItemForTag('forge:nuggets/netherite').getId()
                 }
