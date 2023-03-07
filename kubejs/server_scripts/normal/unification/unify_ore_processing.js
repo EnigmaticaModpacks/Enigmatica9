@@ -485,8 +485,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     if (secondaries.ingot_itemStack) {
         recipe.secondaries.push({
             chance: 0.75,
-            // output: { item: secondaries.ingot_itemStack.getId() }
-            output: { tag: `forge:ingots/${properties[material].oreProcessing.output.secondary}` }
+            output: { item: secondaries.ingot_itemStack.getId() } // NOTE: If Arc Furnace Recipes crash the game, this is to blame!
         })
     }
     recipes.push(recipe)
