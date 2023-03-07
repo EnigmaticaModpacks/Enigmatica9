@@ -15,8 +15,8 @@ ServerEvents.recipes((event) => {
                 },
                 multiblock: {
                     pattern: [
-                        [, 'C C', ' @ ', 'C C'],
-                        [, 'SGS', 'G&G', 'SGS']
+                        ['C C', ' @ ', 'C C'],
+                        ['SGS', 'G&G', 'SGS']
                     ],
                     keys: {
                         S: { block: 'powah:energized_steel_block' },
@@ -38,8 +38,8 @@ ServerEvents.recipes((event) => {
                 },
                 multiblock: {
                     pattern: [
-                        [, 'C C', ' @ ', 'C C'],
-                        [, 'SGS', 'G&G', 'SGS']
+                        ['C C', ' @ ', 'C C'],
+                        ['SGS', 'G&G', 'SGS']
                     ],
                     keys: {
                         S: { block: 'powah:energized_steel_block' },

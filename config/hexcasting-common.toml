@@ -1,0 +1,15 @@
+
+["Media Amounts"]
+	#How much media a single Amethyst Dust item is worth
+	#Range: > 0
+	dustMediaAmount = 10000
+	#How much media a single Amethyst Shard item is worth
+	#Range: > 0
+	shardMediaAmount = 50000
+	#How much media a single Charged Amethyst Crystal item is worth
+	#Range: > 0
+	chargedCrystalMediaAmount = 100000
+	#How many points of media a half-heart is worth when casting from HP
+	#Range: 0.0 ~ Infinity
+	mediaToHealthRate = 10000.0
+
