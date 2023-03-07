@@ -85,7 +85,10 @@ ServerEvents.recipes((event) => {
             post: [
                 {
                     type: 'place',
-                    block: { blocks: ['naturesaura:nature_altar'], state: { nether: 'false' } }
+                    block: { blocks: ['naturesaura:nature_altar'] },
+                    contextual: [
+                        { type: 'is_sneaking', description: 'Must be sneaking. Consumes a small amount of Aura.' }
+                    ]
                 },
                 {
                     type: 'execute',
@@ -101,18 +104,14 @@ ServerEvents.recipes((event) => {
                     type: 'execute',
                     command: 'particle twilightforest:firefly ~ ~ ~ 1 1 1 1 15',
                     hide: true
-                }
-            ],
-            contextual: [
+                },
                 {
-                    type: 'or',
-                    contextual: [
-                        { type: 'location', predicate: { dimension: 'minecraft:overworld' } },
-                        { type: 'location', predicate: { dimension: 'blue_skies:everdawn' } },
-                        { type: 'location', predicate: { dimension: 'twilightforest:twilight_forest' } }
-                    ]
+                    type: 'execute',
+                    command: 'naaura remove 5000',
+                    hide: true
                 }
             ],
+            contextual: [{ type: 'is_sneaking', description: 'Must be sneaking. Consumes a small amount of Aura.' }],
             id: `${id_prefix}nature_altar_from_sunlight`
         },
         {

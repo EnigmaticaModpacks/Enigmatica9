@@ -420,32 +420,16 @@
 		}
 		{
 			title: "Chainsaw"
+			icon: "thermal:saw_blade"
 			x: -11.0d
 			y: -8.0d
-			description: ["When applied to an Axe, Chainsaw will cause it to fell entire trees, rather than a single block at a time. "]
+			description: ["When applied to an Axe, the Chainsaw enchantment will cause the axe to fell entire trees, rather than a single block at a time. "]
 			dependencies: ["358FAB3D482C463A"]
 			id: "5864F8263845E294"
 			tasks: [{
-				id: "70C63294BE9D1A64"
-				type: "item"
-				item: {
-					id: "minecraft:enchanted_book"
-					Count: 1b
-					tag: {
-						StoredEnchantments: [{
-							lvl: 1s
-							id: "apotheosis:chainsaw"
-						}]
-					}
-				}
-			}]
-			rewards: [{
-				id: "1CDA5D733D056848"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
+				id: "5814B6BA778CE9C1"
+				type: "checkmark"
+				title: "Chainsaw Enchantment"
 			}]
 		}
 		{
