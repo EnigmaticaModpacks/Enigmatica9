@@ -15,6 +15,16 @@ ServerEvents.recipes((event) => {
                 D: 'kubejs:energetic_transference_matrix'
             },
             id: `${id_prefix}machine_frame_simple`
+        },
+        {
+            output: 'industrialforegoing:laser_drill',
+            pattern: ['A', 'B', 'C'],
+            key: {
+                A: 'powah:energizing_rod_niotic',
+                B: 'mekanism:teleportation_core',
+                C: '#industrialforegoing:machine_frame/simple'
+            },
+            id: 'industrialforegoing:laser_drill'
         }
     ];
 

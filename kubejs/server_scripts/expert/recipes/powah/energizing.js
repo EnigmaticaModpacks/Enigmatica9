@@ -21,6 +21,12 @@ ServerEvents.recipes((event) => {
             ],
             energy: '100000',
             id: `powah:energizing/niotic_crystal`
+        },
+        {
+            output: Item.of('spirit:soul_steel_ingot', 2),
+            inputs: ['#forge:ingots/invar', 'blue_skies:soul_fragment', '#forge:ingots/silver'],
+            energy: '100000',
+            id: `${id_prefix}soul_steel_ingot`
         }
     ];
 

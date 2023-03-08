@@ -631,6 +631,52 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_craft_controller`
         },
         {
+            output: 'industrialforegoing:ore_laser_base',
+            activation_item: 'thermal:machine_frame',
+            inputs: [
+                'spirit:soul_glass',
+                'spirit:soul_glass',
+                'spirit:soul_glass',
+                'spirit:soul_glass',
+                '#forge:ingots/compressed_iron',
+                '#forge:ingots/compressed_iron',
+                '#forge:ingots/compressed_iron',
+                '#forge:ingots/compressed_iron'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/earth',
+                display_name: 'ritual.occultism.sacrifice.earth_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_ore_laser_base',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_ore_laser_base`
+        },
+        {
+            output: 'industrialforegoing:fluid_laser_base',
+            activation_item: 'thermal:machine_frame',
+            inputs: [
+                'spirit:soul_glass',
+                'spirit:soul_glass',
+                'spirit:soul_glass',
+                'spirit:soul_glass',
+                '#forge:gems/niotic',
+                '#forge:gems/niotic',
+                '#forge:gems/niotic',
+                '#forge:gems/niotic'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/water',
+                display_name: 'ritual.occultism.sacrifice.water_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_fluid_laser_base',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_fluid_laser_base`
+        },
+        {
             output: '4x kubejs:energetic_transference_matrix',
             activation_item: 'occultism:book_of_binding_bound_djinni',
             inputs: [

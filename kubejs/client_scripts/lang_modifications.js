@@ -231,6 +231,15 @@ const entries = {
                 expert: 'The Universe is under no obligation to make sense to you.'
             }
         }
+    ],
+    industrialforegoing: [
+        {
+            key: 'block.industrialforegoing.ore_laser_base',
+            value: {
+                normal: 'Ore Laser Base',
+                expert: 'Material Laser Base'
+            }
+        }
     ]
 };
 

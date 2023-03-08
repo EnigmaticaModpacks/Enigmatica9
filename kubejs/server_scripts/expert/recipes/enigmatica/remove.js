@@ -64,6 +64,8 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:washing_factory' },
         { id: 'industrialforegoing:fermentation_station' },
         { id: 'industrialforegoing:fluid_sieving_machine' },
+        { id: 'industrialforegoing:ore_laser_base' },
+        { id: 'industrialforegoing:fluid_laser_base' },
         { id: /industrialforegoing:laser_drill_ore/ },
 
         { id: 'mekanism:teleportation_core' },
@@ -103,6 +105,12 @@ ServerEvents.recipes((event) => {
         { id: 'quark:tools/crafting/runes/rainbow_rune' },
 
         { id: 'rftoolsbase:dimensionalshard' },
+
+        { id: `spirit:soul_engulfing/soul_powder` },
+        { id: `spirit:soul_engulfing/soul_powder_block` },
+        { id: `spirit:soul_engulfing/soul_slate` },
+        { id: `spirit:soul_engulfing/soul_steel` },
+        { id: `spirit:soul_engulfing/soul_steel_block` },
 
         { id: 'supplementaries:jar' },
         { id: 'supplementaries:soap' },
