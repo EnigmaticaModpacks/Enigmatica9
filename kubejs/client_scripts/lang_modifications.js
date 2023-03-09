@@ -142,84 +142,84 @@ const entries = {
             key: 'block.pneumaticcraft.compressed_iron_block',
             value: {
                 normal: 'Block of Compressed Iron',
-                expert: 'Block of Compressed Invar'
+                expert: 'Block of Spellbound Invar'
             }
         },
         {
             key: 'block.pneumaticcraft.creative_compressed_iron_block',
             value: {
                 normal: 'Creative Compressed Iron Block',
-                expert: 'Creative Compressed Invar Block'
+                expert: 'Creative Spellbound Invar Block'
             }
         },
         {
             key: 'gui.tooltip.block.pneumaticcraft.heat_pipe',
             value: {
                 normal: 'An insulated core of compressed iron which can transfer heat without losing any to adjacent air or fluid blocks. A more compact alternative to Compressed Iron Blocks. This block can be camouflaged with the Camouflage Applicator tool.',
-                expert: 'An insulated core of compressed iron which can transfer heat without losing any to adjacent air or fluid blocks. A more compact alternative to Compressed Invar Blocks. This block can be camouflaged with the Camouflage Applicator tool.'
+                expert: 'An insulated core of compressed iron which can transfer heat without losing any to adjacent air or fluid blocks. A more compact alternative to Spellbound Invar Blocks. This block can be camouflaged with the Camouflage Applicator tool.'
             }
         },
         {
             key: 'gui.tooltip.block.pneumaticcraft.pressure_chamber_valve',
             value: {
                 normal: 'This multi-block structure can be used as air storage. Its primary usage, however, is to compress various materials into other materials. Like Iron into Compressed Iron. Or Coal into Diamonds.',
-                expert: 'This multi-block structure can be used as air storage. Its primary usage, however, is to compress various materials into other materials. Like Invar into Compressed Invar. Or Coal into Diamonds.'
+                expert: 'This multi-block structure can be used as air storage. Its primary usage, however, is to compress various materials into other materials. Like Invar into Spellbound Invar. Or Coal into Diamonds.'
             }
         },
         {
             key: 'gui.tooltip.item.pneumaticcraft.drill_bit_diamond',
             value: {
                 normal: 'Faster than Compressed Iron${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs)',
-                expert: 'Faster than Compressed Invar${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs)'
+                expert: 'Faster than Spellbound Invar${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs)'
             }
         },
         {
             key: 'item.pneumaticcraft.compressed_iron_boots',
             value: {
                 normal: 'Compressed Iron Boots',
-                expert: 'Compressed Invar Boots'
+                expert: 'Spellbound Invar Boots'
             }
         },
         {
             key: 'item.pneumaticcraft.compressed_iron_chestplate',
             value: {
                 normal: 'Compressed Iron Chestplate',
-                expert: 'Compressed Invar Chestplate'
+                expert: 'Spellbound Invar Chestplate'
             }
         },
         {
             key: 'item.pneumaticcraft.compressed_iron_helmet',
             value: {
                 normal: 'Compressed Iron Helmet',
-                expert: 'Compressed Invar Helmet'
+                expert: 'Spellbound Invar Helmet'
             }
         },
         {
             key: 'item.pneumaticcraft.compressed_iron_gear',
             value: {
                 normal: 'Compressed Iron Gear',
-                expert: 'Compressed Invar Gear'
+                expert: 'Spellbound Invar Gear'
             }
         },
         {
             key: 'item.pneumaticcraft.compressed_iron_leggings',
             value: {
                 normal: 'Compressed Iron Leggings',
-                expert: 'Compressed Invar Leggings'
+                expert: 'Spellbound Invar Leggings'
             }
         },
         {
             key: 'item.pneumaticcraft.drill_bit_compressed_iron',
             value: {
                 normal: 'Compressed Iron Drill Bit',
-                expert: 'Compressed Invar Drill Bit'
+                expert: 'Spellbound Invar Drill Bit'
             }
         },
         {
             key: 'item.pneumaticcraft.ingot_iron_compressed',
             value: {
                 normal: 'Compressed Iron Ingot',
-                expert: 'Compressed Invar Ingot'
+                expert: 'Spellbound Invar Ingot'
             }
         }
     ],
@@ -256,6 +256,14 @@ const entries = {
                 expert: 'Reinforced Post'
             }
         },
+        {
+            key: 'block.immersiveengineering.steel_wallmount',
+            value: {
+                normal: 'Steel Wallmount',
+                expert: 'Reinforced Wallmount'
+            }
+        },
+        ,
         {
             key: 'block.immersiveengineering.steel_slope',
             value: {
