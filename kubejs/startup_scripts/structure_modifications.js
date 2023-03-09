@@ -23,6 +23,16 @@ const structures = [
     {
         mod: 'immersiveengineering',
         type: 'multiblocks',
+        name: 'assembler',
+        index: 3,
+        block: {
+            normal: 'immersiveengineering:sheetmetal_iron',
+            expert: 'immersiveengineering:sheetmetal_colored_white'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
         name: 'auto_workbench',
         index: 2,
         block: {
@@ -38,6 +48,16 @@ const structures = [
         block: {
             normal: 'immersiveengineering:rs_engineering',
             expert: 'minecraft:stone'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
+        name: 'bottling_machine',
+        index: 0,
+        block: {
+            normal: 'immersiveengineering:sheetmetal_iron',
+            expert: 'immersiveengineering:sheetmetal_colored_black'
         }
     },
     {
@@ -103,6 +123,16 @@ const structures = [
     {
         mod: 'immersiveengineering',
         type: 'multiblocks',
+        name: 'fermenter',
+        index: 5,
+        block: {
+            normal: 'immersiveengineering:sheetmetal_iron',
+            expert: 'immersiveengineering:sheetmetal_colored_black'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
         name: 'metal_press',
         index: 2,
         block: {
@@ -123,6 +153,16 @@ const structures = [
     {
         mod: 'immersiveengineering',
         type: 'multiblocks',
+        name: 'mixer',
+        index: 3,
+        block: {
+            normal: 'immersiveengineering:sheetmetal_iron',
+            expert: 'immersiveengineering:sheetmetal_colored_black'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
         name: 'refinery',
         index: 5,
         block: {
@@ -133,11 +173,31 @@ const structures = [
     {
         mod: 'immersiveengineering',
         type: 'multiblocks',
+        name: 'refinery',
+        index: 3,
+        block: {
+            normal: 'immersiveengineering:sheetmetal_iron',
+            expert: 'immersiveengineering:sheetmetal_colored_black'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
         name: 'sawmill',
         index: 5,
         block: {
             normal: 'immersiveengineering:rs_engineering',
             expert: 'minecraft:stone'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
+        name: 'sawmill',
+        index: 2,
+        block: {
+            normal: 'immersiveengineering:sheetmetal_iron',
+            expert: 'immersiveengineering:sheetmetal_colored_black'
         }
     },
     {
@@ -168,6 +228,26 @@ const structures = [
         block: {
             normal: 'kubejs:disabled_structure_indicator',
             expert: 'kubejs:disabled_structure_indicator'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
+        name: 'silo',
+        index: 2,
+        block: {
+            normal: 'immersiveengineering:sheetmetal_iron',
+            expert: 'immersiveengineering:sheetmetal_colored_black'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
+        name: 'sheetmetal_tank',
+        index: 2,
+        block: {
+            normal: 'immersiveengineering:sheetmetal_iron',
+            expert: 'immersiveengineering:sheetmetal_colored_black'
         }
     }
 ];

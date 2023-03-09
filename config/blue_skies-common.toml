@@ -26,7 +26,7 @@
 			# Percent chance of generating in an allowed chunk.
 			# Default: 75
 			#Range: 0 ~ 100
-			probability = 75
+			probability = 0
 
 ["Holiday Content"]
 	#

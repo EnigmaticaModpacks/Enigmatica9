@@ -59,6 +59,9 @@ jei.base.items.disabled = [
 
     'immersiveengineering:blast_furnace',
     'immersiveengineering:alloy_smelter',
+    'immersiveengineering:lightning_rod',
+    'immersiveengineering:arc_furnace',
+    'immersiveengineering:diesel_generator',
     'immersiveengineering:plantoil_bucket',
     'immersiveengineering:ethanol_bucket',
     'immersiveengineering:biodiesel_bucket',
