@@ -239,6 +239,41 @@ const entries = {
                 normal: 'Ore Laser Base',
                 expert: 'Material Laser Base'
             }
+        },
+        {
+            key: 'fluid_type.industrialforegoing.biofuel',
+            value: {
+                normal: 'Biofuel',
+                expert: 'Enriched Source'
+            }
+        },
+        {
+            key: 'block.biofuel',
+            value: {
+                normal: 'Biofuel',
+                expert: 'Enriched Source'
+            }
+        },
+        {
+            key: 'item.industrialforegoing.biofuel_bucket',
+            value: {
+                normal: 'Biofuel Bucket',
+                expert: 'Enriched Source Bucket'
+            }
+        },
+        {
+            key: 'tooltip.titanium.facing_handler.biofuel',
+            value: {
+                normal: 'Biofuel',
+                expert: 'Enriched Source'
+            }
+        },
+        {
+            key: 'tooltip.titanium.facing_handler.biofuel_tank',
+            value: {
+                normal: 'Biofuel Tank',
+                expert: 'Enriched Source Tank'
+            }
         }
     ],
     immersiveengineering: [

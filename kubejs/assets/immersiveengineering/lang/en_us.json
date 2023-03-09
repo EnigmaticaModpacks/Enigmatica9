@@ -9,6 +9,7 @@
 	"advancement.immersiveengineering.mb_lightning_rod.desc": "Form the Lightning Rod Multiblock",
 	"advancement.immersiveengineering.mb_bottling_machine": "Bottling Machine",
 	"advancement.immersiveengineering.mb_bottling_machine.desc": "Form the Bottling Machine Multiblock",
+	"desc.immersiveengineering.flavour.toolupgrade_drill_fortune": "Increases the ore yields when digging with the Mining Drill",
 	"block.immersiveengineering.steel_fence": "Steel Fence",
 	"block.immersiveengineering.steel_post": "Steel Post",
 	"block.immersiveengineering.steel_wallmount": "Steel Wallmount",
