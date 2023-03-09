@@ -6,57 +6,57 @@ ServerEvents.recipes((event) => {
 
     const id_prefix = 'enigmatica:expert/lychee/random_block_ticking/';
     const recipes = [
-        // Sample recipe for uranium filtering. Adjust chance to speed up or slow down.
-        {
-            block_in: { blocks: ['thermal:white_rockwool'] },
-            post: [
-                {
-                    type: 'place',
-                    block: 'thermal:lime_rockwool'
-                },
-                {
-                    type: 'execute',
-                    command: 'playsound minecraft:block.water.ambient ambient @p ~ ~ ~',
-                    hide: true
-                },
-                {
-                    type: 'execute',
-                    command: 'playsound minecraft:block.wool.place block @p ~ ~ ~ 0.3 0.1',
-                    hide: true
-                }
-            ],
-            contextual: [
-                {
-                    type: 'and',
-                    contextual: [
-                        { type: 'location', predicate: { 'lychee:biome_tag': 'is_ocean' } },
-                        { type: 'location', predicate: { position: { y: { min: 0, max: 63 } } } },
-                        { type: 'chance', chance: 0.1 },
-                        {
-                            type: 'location',
-                            offsetX: -1,
-                            predicate: { block: { blocks: ['minecraft:water'] } }
-                        },
-                        {
-                            type: 'location',
-                            offsetX: 1,
-                            predicate: { block: { blocks: ['minecraft:water'] } }
-                        },
-                        {
-                            type: 'location',
-                            offsetZ: -1,
-                            predicate: { block: { blocks: ['minecraft:water'] } }
-                        },
-                        {
-                            type: 'location',
-                            offsetZ: 1,
-                            predicate: { block: { blocks: ['minecraft:water'] } }
-                        }
-                    ]
-                }
-            ],
-            id: `${id_prefix}filter_filling`
-        },
+        // // Sample recipe for uranium filtering. Adjust chance to speed up or slow down.
+        // {
+        //     block_in: { blocks: ['thermal:white_rockwool'] },
+        //     post: [
+        //         {
+        //             type: 'place',
+        //             block: 'thermal:lime_rockwool'
+        //         },
+        //         {
+        //             type: 'execute',
+        //             command: 'playsound minecraft:block.water.ambient ambient @p ~ ~ ~',
+        //             hide: true
+        //         },
+        //         {
+        //             type: 'execute',
+        //             command: 'playsound minecraft:block.wool.place block @p ~ ~ ~ 0.3 0.1',
+        //             hide: true
+        //         }
+        //     ],
+        //     contextual: [
+        //         {
+        //             type: 'and',
+        //             contextual: [
+        //                 { type: 'location', predicate: { 'lychee:biome_tag': 'is_ocean' } },
+        //                 { type: 'location', predicate: { position: { y: { min: 0, max: 63 } } } },
+        //                 { type: 'chance', chance: 0.1 },
+        //                 {
+        //                     type: 'location',
+        //                     offsetX: -1,
+        //                     predicate: { block: { blocks: ['minecraft:water'] } }
+        //                 },
+        //                 {
+        //                     type: 'location',
+        //                     offsetX: 1,
+        //                     predicate: { block: { blocks: ['minecraft:water'] } }
+        //                 },
+        //                 {
+        //                     type: 'location',
+        //                     offsetZ: -1,
+        //                     predicate: { block: { blocks: ['minecraft:water'] } }
+        //                 },
+        //                 {
+        //                     type: 'location',
+        //                     offsetZ: 1,
+        //                     predicate: { block: { blocks: ['minecraft:water'] } }
+        //                 }
+        //             ]
+        //         }
+        //     ],
+        //     id: `${id_prefix}filter_filling`
+        // },
         {
             block_in: { blocks: ['twilightforest:liveroot_block'] },
             post: [

@@ -206,5 +206,27 @@ const biomes = {
         'byg:wailing_garth',
         'byg:warped_desert',
         'byg:weeping_mire'
+    ],
+    in_ocean: [
+        'minecraft:frozen_ocean',
+        'minecraft:ocean',
+        'minecraft:cold_ocean',
+        'minecraft:lukewarm_ocean',
+        'minecraft:warm_ocean',
+        'byg:dead_sea',
+        'byg:lush_stacks',
+        'blue_skies:peeking_ocean',
+        'minecraft:deep_frozen_ocean',
+        'minecraft:deep_cold_ocean',
+        'minecraft:deep_ocean',
+        'minecraft:deep_lukewarm_ocean',
+        'blue_skies:deep_peeking_ocean'
+    ],
+    in_deep_ocean: [
+        'minecraft:deep_frozen_ocean',
+        'minecraft:deep_cold_ocean',
+        'minecraft:deep_ocean',
+        'minecraft:deep_lukewarm_ocean',
+        'blue_skies:deep_peeking_ocean'
     ]
 };
