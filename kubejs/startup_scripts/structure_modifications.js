@@ -237,7 +237,7 @@ const structures = [
         index: 2,
         block: {
             normal: 'immersiveengineering:sheetmetal_iron',
-            expert: 'immersiveengineering:sheetmetal_colored_black'
+            expert: 'immersiveengineering:sheetmetal_colored_white'
         }
     },
     {
@@ -247,7 +247,7 @@ const structures = [
         index: 2,
         block: {
             normal: 'immersiveengineering:sheetmetal_iron',
-            expert: 'immersiveengineering:sheetmetal_colored_black'
+            expert: 'immersiveengineering:sheetmetal_colored_white'
         }
     }
 ];
