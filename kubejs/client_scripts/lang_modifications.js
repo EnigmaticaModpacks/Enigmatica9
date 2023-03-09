@@ -240,6 +240,92 @@ const entries = {
                 expert: 'Material Laser Base'
             }
         }
+    ],
+    immersiveengineering: [
+        {
+            key: 'block.immersiveengineering.steel_fence',
+            value: {
+                normal: 'Steel Fence',
+                expert: 'Reinforced Fence'
+            }
+        },
+        {
+            key: 'block.immersiveengineering.steel_post',
+            value: {
+                normal: 'Steel Post',
+                expert: 'Reinforced Post'
+            }
+        },
+        {
+            key: 'block.immersiveengineering.steel_slope',
+            value: {
+                normal: 'Steel Structural Arm',
+                expert: 'Reinforced Structural Arm'
+            }
+        },
+        {
+            key: 'block.immersiveengineering.steel_scaffolding_standard',
+            value: {
+                normal: 'Steel Scaffolding',
+                expert: 'Reinforced Scaffolding'
+            }
+        },
+        {
+            key: 'block.immersiveengineering.steel_scaffolding_grate_top',
+            value: {
+                normal: 'Steel Scaffolding',
+                expert: 'Reinforced Scaffolding'
+            }
+        },
+        {
+            key: 'block.immersiveengineering.steel_scaffolding_wooden_top',
+            value: {
+                normal: 'Steel Scaffolding',
+                expert: 'Reinforced Scaffolding'
+            }
+        },
+        {
+            key: 'block.immersiveengineering.slab_steel_scaffolding_standard',
+            value: {
+                normal: 'Steel Scaffolding Slab',
+                expert: 'Reinforced Scaffolding Slab'
+            }
+        },
+        {
+            key: 'block.immersiveengineering.slab_steel_scaffolding_grate_top',
+            value: {
+                normal: 'Steel Scaffolding Slab',
+                expert: 'Reinforced Scaffolding Slab'
+            }
+        },
+        {
+            key: 'block.immersiveengineering.slab_steel_scaffolding_wooden_top',
+            value: {
+                normal: 'Steel Scaffolding Slab',
+                expert: 'Reinforced Scaffolding Slab'
+            }
+        },
+        {
+            key: 'block.immersiveengineering.stairs_steel_scaffolding_standard',
+            value: {
+                normal: 'Steel Scaffolding Stairs',
+                expert: 'Reinforced Scaffolding Stairs'
+            }
+        },
+        {
+            key: 'block.immersiveengineering.stairs_steel_scaffolding_grate_top',
+            value: {
+                normal: 'Steel Scaffolding Stairs',
+                expert: 'Reinforced Scaffolding Stairs'
+            }
+        },
+        {
+            key: 'block.immersiveengineering.stairs_steel_scaffolding_wooden_top',
+            value: {
+                normal: 'Steel Scaffolding Stairs',
+                expert: 'Reinforced Scaffolding Stairs'
+            }
+        }
     ]
 };
 
