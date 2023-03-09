@@ -33,6 +33,16 @@ const structures = [
     {
         mod: 'immersiveengineering',
         type: 'multiblocks',
+        name: 'assembler',
+        index: 4,
+        block: {
+            normal: 'immersiveengineering:slab_sheetmetal_iron',
+            expert: 'immersiveengineering:slab_sheetmetal_colored_white'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
         name: 'auto_workbench',
         index: 2,
         block: {
