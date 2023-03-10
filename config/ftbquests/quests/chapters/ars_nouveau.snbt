@@ -183,7 +183,11 @@
 				""
 				"Parchments may be re-used, though it can be useful to keep a library of scribed Parchments to be able to quickly re-apply the spell. "
 			]
-			dependencies: ["00000000000003D5"]
+			hide_dependency_lines: true
+			dependencies: [
+				"5D01DE4C7D24440C"
+				"00000000000003D5"
+			]
 			id: "00000000000003D0"
 			tasks: [{
 				id: "00000000000003D3"
@@ -205,7 +209,8 @@
 				""
 				"Second, they can be woven into a fabric that when worn close serves as a personal battery for Source."
 			]
-			dependencies: ["5D01DE4C7D24440C"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000003AC"]
 			id: "00000000000003D5"
 			tasks: [
 				{
@@ -1343,7 +1348,8 @@
 				""
 				"Note: Glyphs are stored on the player, not the Spell Book. So, losing a Spell Book does not mean the loss of learned glyphs. "
 			]
-			dependencies: ["0771CE9EBF17ADE2"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000003AC"]
 			id: "5D01DE4C7D24440C"
 			tasks: [
 				{

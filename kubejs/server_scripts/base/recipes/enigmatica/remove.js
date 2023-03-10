@@ -14,6 +14,9 @@ ServerEvents.recipes((event) => {
 
         { id: /ars_nouveau:.*_dye/ },
 
+        { id: 'create:compat/ae2/mixing/fluix_crystal' },
+        { id: 'create:compat/byg/crushing/lignite_ore' },
+
         { id: /createaddition:mixing\/biomass/ },
         { id: /createaddition:crafting\/.*spool/ },
         { id: 'createaddition:crafting/barbed_wire' },
@@ -31,6 +34,8 @@ ServerEvents.recipes((event) => {
         { id: 'createaddition:compat/ae2/charged_certus_quartz' },
         { id: 'createaddition:crafting/accumulator_conversion' },
 
+        { id: 'hexerei:black_dye_from_pestle_and_mortar' },
+
         { id: /mekanism:enriching\/dye/ },
         { id: /mekanism:compat\/byg\/dye/ },
         { id: /mekanism:compat\/byg\/sawing\/log/ },
@@ -40,14 +45,23 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:processing/netherite/dust_to_ancient_debris' },
         { id: /mekanism:crushing\/biofuel/ },
 
-        { id: 'quark:tweaks/smelting/bone_meal_utility' },
-
-        { id: 'create:compat/ae2/mixing/fluix_crystal' },
-        { id: 'create:compat/byg/crushing/lignite_ore' },
-
-        { id: 'hexerei:black_dye_from_pestle_and_mortar' },
+        { id: 'minecraft:bone_meal' },
 
         { id: 'occultism:crafting/butcher_knife' },
+
+        { id: /pneumaticcraft:thermo_plant\/vegetable_oil_from_/ },
+        { id: /pneumaticcraft:thermo_plant\/ethanol_from_/ },
+
+        { id: /powah:smelting/ },
+        { id: /powah:energizing\/.*uraninite/ },
+        { id: /powah:crafting\/.*_starter/ },
+        { id: 'powah:energizing/blazing_crystal_2' },
+        { id: 'powah:crafting/energy_cell_basic_2' },
+        { id: 'powah:crafting/cable_basic_2' },
+        { id: 'powah:crafting/capacitor_basic' },
+        { id: 'powah:crafting/capacitor_basic_tiny' },
+
+        { id: 'quark:tweaks/smelting/bone_meal_utility' },
 
         { id: 'thermal:machines/centrifuge/centrifuge_allium' },
         { id: 'thermal:machines/centrifuge/centrifuge_azure_bluet' },
@@ -101,19 +115,8 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:compat/immersiveengineering/press_ie_hemp_to_plantoil' },
         { id: 'thermal:storage/sugar_cane_block' },
 
-        { id: /pneumaticcraft:thermo_plant\/vegetable_oil_from_/ },
-        { id: /pneumaticcraft:thermo_plant\/ethanol_from_/ },
-
-        { id: /powah:smelting/ },
-        { id: /powah:energizing\/.*uraninite/ },
-        { id: /powah:crafting\/.*_starter/ },
-        { id: 'powah:energizing/blazing_crystal_2' },
-        { id: 'powah:crafting/energy_cell_basic_2' },
-        { id: 'powah:crafting/cable_basic_2' },
-        { id: 'powah:crafting/capacitor_basic' },
-        { id: 'powah:crafting/capacitor_basic_tiny' },
-
         { type: 'create:cutting' },
+
         { type: 'createaddition:liquid_burning' },
 
         { type: 'farmersdelight:cutting', id: /wood/ },

@@ -1,3 +1,29 @@
+### Enigmatica 9 v1.5.0
+
+_Using Forge-1.19.2-43.2.4_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.5.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.5.0.md)_
+
+**Please read the changelog for [v1.4.0](#enigmatica-9-v141--v142), it has breaking changes.**
+
+**New Mods**
+
+-   [Mob Despawn Timers](https://www.curseforge.com/minecraft/mc-mods/mob-despawn-timers) (by [Shadows_of_Fire](https://www.curseforge.com/members/Shadows_of_Fire/projects))
+
+**Improvements**
+
+-   Significantly reduce the rate of super glue in Create loot rewards [\#239](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/239) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Remove invalid bone meal recipe [\#238](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/238) ([MuteTiefling](https://github.com/MuteTiefling))
+-   fix PNC drones not working [\#237](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/237) ([MuteTiefling](https://github.com/MuteTiefling))
+-   AE2 Quests and more [\#234](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/234) ([MuteTiefling](https://github.com/MuteTiefling))
+
+**Fixed Bugs**
+
+-   Crimson altar fails to convert gold to tainted gold [\#240](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/240)
+-   Can't Parse Loot Table [\#233](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/233)
+-   CTOV Desert Village causes a crash on desert biomes! [\#232](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/232)
+-   Kubejs errors [\#154](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/154)
+
+---
+
 ### Enigmatica 9 v1.4.1 + v1.4.2
 
 _Using Forge-1.19.2-43.2.4_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.4.1.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.4.1.md)_
