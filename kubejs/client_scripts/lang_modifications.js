@@ -169,22 +169,22 @@ const entries = {
         {
             key: 'gui.tooltip.item.pneumaticcraft.drill_bit_compressed_iron',
             value: {
-                normal: 'Faster than Iron${br}Dig Modes: 1x1, 1x2, 1x3',
-                expert: 'Faster than Compressed Stone${br}Dig Modes: 1x1, 1x2, 1x3'
+                normal: 'Faster than Iron Drill Bit${br}Dig Modes: 1x1, 1x2, 1x3',
+                expert: 'Faster than Compressed Stone Drill Bit${br}Dig Modes: 1x1, 1x2, 1x3'
             }
         },
         {
             key: 'gui.tooltip.item.pneumaticcraft.drill_bit_diamond',
             value: {
-                normal: 'Faster than Compressed Iron${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs)',
-                expert: "Faster than Botanist's${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs)"
+                normal: 'Faster than Compressed Iron Drill Bit${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs)',
+                expert: "Faster than Botanist's Drill Bit${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs)"
             }
         },
         {
             key: 'gui.tooltip.item.pneumaticcraft.drill_bit_netherite',
             value: {
-                normal: 'Faster than Diamond${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs), 3x3(full), vein(all blocks)',
-                expert: "Faster than Skyseeker's${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs), 3x3(full), vein(all blocks)"
+                normal: 'Faster than Diamond Drill Bit${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs), 3x3(full), vein(all blocks)',
+                expert: "Faster than Skyseeker's Drill Bit${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs), 3x3(full), vein(all blocks)"
             }
         },
         {
@@ -255,6 +255,20 @@ const entries = {
             value: {
                 normal: 'Diamond Drill Bit',
                 expert: "Soulstrider's Drill Bit"
+            }
+        },
+        {
+            key: 'block.pneumaticcraft.flux_compressor',
+            value: {
+                normal: 'Flux Compressor',
+                expert: 'Arcane Compressor'
+            }
+        },
+        {
+            key: 'pneumaticcraft.advancement.flux_compressor.desc',
+            value: {
+                normal: 'Make a Flux Compressor so you can use Forge Energy from other mods for your compression needs.',
+                expert: 'Make a Arcane Compressor so you can use Forge Energy from other mods for your compression needs.'
             }
         }
     ],
@@ -402,6 +416,13 @@ const entries = {
             value: {
                 normal: 'Steel Scaffolding Stairs',
                 expert: 'Reinforced Scaffolding Stairs'
+            }
+        },
+        {
+            key: 'item.immersiveengineering.drillhead_steel',
+            value: {
+                normal: 'Steel Drill Head',
+                expert: 'Reinforced Drill Head'
             }
         }
     ]
