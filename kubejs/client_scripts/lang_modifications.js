@@ -167,10 +167,24 @@ const entries = {
             }
         },
         {
+            key: 'gui.tooltip.item.pneumaticcraft.drill_bit_compressed_iron',
+            value: {
+                normal: 'Faster than Iron${br}Dig Modes: 1x1, 1x2, 1x3',
+                expert: 'Faster than Compressed Stone${br}Dig Modes: 1x1, 1x2, 1x3'
+            }
+        },
+        {
             key: 'gui.tooltip.item.pneumaticcraft.drill_bit_diamond',
             value: {
                 normal: 'Faster than Compressed Iron${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs)',
-                expert: 'Faster than Spellbound Invar${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs)'
+                expert: "Faster than Botanist's${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs)"
+            }
+        },
+        {
+            key: 'gui.tooltip.item.pneumaticcraft.drill_bit_netherite',
+            value: {
+                normal: 'Faster than Diamond${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs), 3x3(full), vein(all blocks)',
+                expert: "Faster than Skyseeker's${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs), 3x3(full), vein(all blocks)"
             }
         },
         {
@@ -209,10 +223,31 @@ const entries = {
             }
         },
         {
+            key: 'item.pneumaticcraft.drill_bit_iron',
+            value: {
+                normal: 'Iron Drill Bit',
+                expert: 'Compressed Stone Drill Bit'
+            }
+        },
+        {
             key: 'item.pneumaticcraft.drill_bit_compressed_iron',
             value: {
                 normal: 'Compressed Iron Drill Bit',
-                expert: 'Spellbound Invar Drill Bit'
+                expert: "Botanist's Drill Bit"
+            }
+        },
+        {
+            key: 'item.pneumaticcraft.drill_bit_diamond',
+            value: {
+                normal: 'Diamond Drill Bit',
+                expert: "Skyseeker's Drill Bit"
+            }
+        },
+        {
+            key: 'item.pneumaticcraft.drill_bit_netherite',
+            value: {
+                normal: 'Diamond Drill Bit',
+                expert: 'Depths Drill Bit'
             }
         },
         {

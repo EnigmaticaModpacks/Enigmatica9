@@ -199,6 +199,19 @@ ServerEvents.recipes((event) => {
                 C: 'thermal:cured_rubber'
             },
             id: `${id_prefix}reinforced_pressure_tube`
+        },
+        {
+            output: 'pneumaticcraft:jackhammer',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:wooden_grip',
+                B: 'create:andesite_casing',
+                C: '#forge:ingots/infused_iron',
+                D: 'pneumaticcraft:pressure_tube',
+                E: 'naturesaura:gold_leaf',
+                F: 'ars_nouveau:earth_essence'
+            },
+            id: `pneumaticcraft:jackhammer`
         }
     ];
 
