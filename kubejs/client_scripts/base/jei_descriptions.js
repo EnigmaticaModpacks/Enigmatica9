@@ -27,25 +27,33 @@ JEIEvents.information((event) => {
             text: ['Obtained by Right-Clicking a Glass Bottle in the air between Y Levels 192 and 196.']
         },
         {
-            items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:overworld' })],
+            items: ['naturesaura:aura_bottle'],
             text: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the Overworld, Twilight Forest, or the Everdawn. This action removes Aura from the area.',
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the appropriate dimension. This action removes Aura from the area.',
+                ' ',
+                `Bottled Sunlight: The Overworld, Twilight Forest, or the Everdawn`,
+                `Bottled Ghosts: Nether or Everbright`,
+                `Bottled Darkness: The End or The Bumblezone`,
                 ' ',
                 `Can be automated using a Dispenser.`
             ]
         },
         {
-            items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:end' })],
+            items: ['naturesaura:bottle_two_the_rebottling'],
             text: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the End or The Bumblezone. This action removes Aura from the area.',
+                'Right-Click in the air in the appropriate dimension to obtained bottled Aura types. This action removes Aura from the area.',
+                ' ',
+                `Bottled Sunlight: The Overworld, Twilight Forest, or the Everdawn`,
+                `Bottled Ghosts: Nether or Everbright`,
+                `Bottled Darkness: The End or The Bumblezone`,
                 ' ',
                 `Can be automated using a Dispenser.`
             ]
         },
         {
-            items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:nether' })],
+            items: ['naturesaura:vacuum_bottle'],
             text: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the Nether or the Everbright. This action removes Aura from the area.',
+                'Obtained by Right-Clicking a Bottle and Cork in the air in an area devoid of Aura.',
                 ' ',
                 `Can be automated using a Dispenser.`
             ]

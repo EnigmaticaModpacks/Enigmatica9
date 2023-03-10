@@ -604,6 +604,25 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_craft_module_expansion_card`
         },
         {
+            output: 'pneumaticcraft:flux_compressor',
+            activation_item: '#industrialforegoing:machine_frame/simple',
+            inputs: [
+                'pneumaticcraft:reinforced_pressure_tube',
+                '#forge:gears/compressed_iron',
+                'pneumaticcraft:turbine_rotor',
+                'pneumaticcraft:turbine_rotor'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/air',
+                display_name: 'ritual.occultism.sacrifice.air_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_flux_compressor',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_flux_compressor`
+        },
+        {
             output: '4x ae2:controller',
             activation_item: 'pneumaticcraft:logistics_core',
             inputs: [

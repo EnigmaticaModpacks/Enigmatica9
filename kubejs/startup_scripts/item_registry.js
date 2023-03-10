@@ -49,7 +49,8 @@ StartupEvents.registry('item', (event) => {
         'ritual_craft_energetic_transference_matrix',
         'ritual_craft_controller',
         'ritual_craft_ore_laser_base',
-        'ritual_craft_fluid_laser_base'
+        'ritual_craft_fluid_laser_base',
+        'ritual_craft_flux_compressor'
     ];
 
     const reusableItemTextures = [

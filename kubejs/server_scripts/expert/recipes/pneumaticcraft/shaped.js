@@ -23,7 +23,7 @@ ServerEvents.recipes((event) => {
                 C: 'pneumaticcraft:pressure_tube',
                 D: 'minecraft:blast_furnace'
             },
-            id: `pneumaticcraft:air_compressor`
+            id: `${id_prefix}air_compressor`
         },
         {
             output: Item.of('16x pneumaticcraft:pressure_chamber_wall'),
@@ -179,18 +179,6 @@ ServerEvents.recipes((event) => {
             id: `pneumaticcraft:turbine_rotor`
         },
         {
-            output: 'pneumaticcraft:flux_compressor',
-            pattern: ['AB ', 'CDE', 'AB '],
-            key: {
-                A: 'pneumaticcraft:turbine_rotor',
-                B: 'ars_nouveau:air_essence',
-                C: '#forge:gears/compressed_iron',
-                D: '#industrialforegoing:machine_frame/simple',
-                E: 'pneumaticcraft:reinforced_pressure_tube'
-            },
-            id: `pneumaticcraft:flux_compressor`
-        },
-        {
             output: '4x pneumaticcraft:reinforced_pressure_tube',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
@@ -202,14 +190,13 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'pneumaticcraft:jackhammer',
-            pattern: ['ABA', 'CDC', 'EFE'],
+            pattern: ['ABA', 'CDC', ' E '],
             key: {
                 A: '#forge:wooden_grip',
                 B: 'create:andesite_casing',
-                C: '#forge:ingots/infused_iron',
+                C: 'naturesaura:gold_leaf',
                 D: 'pneumaticcraft:pressure_tube',
-                E: 'naturesaura:gold_leaf',
-                F: 'ars_nouveau:earth_essence'
+                E: 'ars_nouveau:earth_essence'
             },
             id: `pneumaticcraft:jackhammer`
         }
