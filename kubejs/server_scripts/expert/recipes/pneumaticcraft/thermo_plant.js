@@ -54,6 +54,29 @@ ServerEvents.recipes((event) => {
             air_use_multiplier: 5.0,
             speed: 1.0,
             id: `${id_prefix}redstone_acid`
+        },
+        {
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 8000, fluid: 'kubejs:abyssal_seawater' },
+            fluid_output: { amount: 800, fluid: 'mekanism:brine' },
+            item_input: [{ item: 'kubejs:magebloom_filter' }],
+            item_output: { item: 'kubejs:saturated_magebloom_filter' },
+            exothermic: true,
+            temperature: { max_temp: 273 },
+            pressure: 9.5,
+            air_use_multiplier: 20.0,
+            speed: 0.5,
+            id: `${id_prefix}saturated_magebloom_filter`
+        },
+        {
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 4000, fluid: 'starbunclemania:source_fluid' },
+            fluid_output: { amount: 4000, fluid: 'industrialforegoing:biofuel' },
+            item_input: [{ item: 'kubejs:saturated_magebloom_filter' }],
+            exothermic: false,
+            temperature: { min_temp: 1273 },
+            pressure: 7.0,
+            air_use_multiplier: 1.0,
+            speed: 2.0,
+            id: `${id_prefix}biofuel`
         }
     ];
 

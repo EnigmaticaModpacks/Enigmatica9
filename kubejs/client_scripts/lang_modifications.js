@@ -244,35 +244,35 @@ const entries = {
             key: 'fluid_type.industrialforegoing.biofuel',
             value: {
                 normal: 'Biofuel',
-                expert: 'Enriched Source'
+                expert: 'Abyssaline'
             }
         },
         {
             key: 'block.biofuel',
             value: {
                 normal: 'Biofuel',
-                expert: 'Enriched Source'
+                expert: 'Abyssaline'
             }
         },
         {
             key: 'item.industrialforegoing.biofuel_bucket',
             value: {
                 normal: 'Biofuel Bucket',
-                expert: 'Enriched Source Bucket'
+                expert: 'Abyssaline Bucket'
             }
         },
         {
             key: 'tooltip.titanium.facing_handler.biofuel',
             value: {
                 normal: 'Biofuel',
-                expert: 'Enriched Source'
+                expert: 'Abyssaline'
             }
         },
         {
             key: 'tooltip.titanium.facing_handler.biofuel_tank',
             value: {
                 normal: 'Biofuel Tank',
-                expert: 'Enriched Source Tank'
+                expert: 'Abyssaline Tank'
             }
         }
     ],

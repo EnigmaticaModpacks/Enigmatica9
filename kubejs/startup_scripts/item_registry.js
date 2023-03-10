@@ -20,7 +20,9 @@ StartupEvents.registry('item', (event) => {
         'kaolin_powder',
         'mystery_mash',
         'energetic_transference_matrix',
-        'dimensional_storage_crystal'
+        'dimensional_storage_crystal',
+        'magebloom_filter',
+        'saturated_magebloom_filter'
     ];
 
     const ritualDummies = [
