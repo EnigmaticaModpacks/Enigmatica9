@@ -223,6 +223,13 @@ const entries = {
             }
         },
         {
+            key: 'item.pneumaticcraft.ingot_iron_compressed',
+            value: {
+                normal: 'Compressed Iron Ingot',
+                expert: 'Spellbound Invar Ingot'
+            }
+        },
+        {
             key: 'item.pneumaticcraft.drill_bit_iron',
             value: {
                 normal: 'Iron Drill Bit',
@@ -247,14 +254,7 @@ const entries = {
             key: 'item.pneumaticcraft.drill_bit_netherite',
             value: {
                 normal: 'Diamond Drill Bit',
-                expert: 'Depths Drill Bit'
-            }
-        },
-        {
-            key: 'item.pneumaticcraft.ingot_iron_compressed',
-            value: {
-                normal: 'Compressed Iron Ingot',
-                expert: 'Spellbound Invar Ingot'
+                expert: "Soulstrider's Drill Bit"
             }
         }
     ],
