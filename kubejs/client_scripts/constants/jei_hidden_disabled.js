@@ -59,9 +59,6 @@ jei.base.items.disabled = [
 
     'immersiveengineering:blast_furnace',
     'immersiveengineering:alloy_smelter',
-    'immersiveengineering:lightning_rod',
-    'immersiveengineering:arc_furnace',
-    'immersiveengineering:diesel_generator',
     'immersiveengineering:plantoil_bucket',
     'immersiveengineering:ethanol_bucket',
     'immersiveengineering:biodiesel_bucket',
@@ -171,6 +168,14 @@ jei.expert.items.disabled = [
     'immersiveengineering:thermoelectric_generator',
     'immersiveengineering:transformer',
     'immersiveengineering:transformer_hv',
+    'immersiveengineering:lightning_rod',
+    'immersiveengineering:arc_furnace',
+    'immersiveengineering:diesel_generator',
+    'immersiveengineering:auto_workbench',
+    'immersiveengineering:excavator',
+    'immersiveengineering:bucket_wheel',
+    'immersiveengineering:excavator_full',
+    'immersiveengineering:toolupgrade_drill_lube',
     'industrialforegoing:biofuel_generator',
     'industrialforegoing:fermentation_station',
     'industrialforegoing:fluid_sieving_machine',
@@ -287,7 +292,11 @@ jei.expert.items.disabled = [
     'thermal:dynamo_lapidary',
     'thermal:dynamo_magmatic',
     'thermal:dynamo_numismatic',
-    'thermal:dynamo_stirling'
+    'thermal:dynamo_stirling',
+    'thermal:flux_saw',
+    'thermal:flux_drill',
+    'thermal:drill_head',
+    'thermal:saw_blade'
 ];
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];

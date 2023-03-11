@@ -164,6 +164,18 @@ ServerEvents.recipes((event) => {
             time: 25,
             sapling: 'hexerei:mahogany_sapling',
             id: 'naturesaura:tree_ritual/eye_improved'
+        },
+        {
+            output: 'pneumaticcraft:drill_bit_compressed_iron',
+            ingredients: [
+                '#forge:ingots/infused_iron',
+                'ars_nouveau:abjuration_essence',
+                'ars_nouveau:earth_essence',
+                'ars_nouveau:earth_essence'
+            ],
+            time: 5,
+            sapling: 'quark:yellow_blossom_sapling',
+            id: `${id_prefix}drill_bit_compressed_iron`
         }
 
         /*

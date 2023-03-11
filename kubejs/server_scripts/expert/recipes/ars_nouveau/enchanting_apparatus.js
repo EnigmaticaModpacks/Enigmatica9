@@ -95,6 +95,13 @@ ServerEvents.recipes((event) => {
             reagent: [{ item: 'spirit:broken_spawner' }],
             sourceCost: 9000,
             id: `${id_prefix}animal_spawner`
+        },
+        {
+            output: { item: 'pneumaticcraft:drill_bit_diamond' },
+            pedestalItems: [{ item: { tag: 'forge:ingots/skies' } }, { item: { item: 'ars_nouveau:glyph_aoe' } }],
+            reagent: [{ item: 'pneumaticcraft:drill_bit_compressed_iron' }],
+            sourceCost: 3000,
+            id: `${id_prefix}drill_bit_diamond`
         }
     ];
 

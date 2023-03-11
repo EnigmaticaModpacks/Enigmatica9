@@ -608,8 +608,8 @@ ServerEvents.recipes((event) => {
             activation_item: '#industrialforegoing:machine_frame/simple',
             inputs: [
                 'pneumaticcraft:reinforced_pressure_tube',
-                '#forge:gears/compressed_iron',
                 'pneumaticcraft:turbine_rotor',
+                '#forge:gears/compressed_iron',
                 'pneumaticcraft:turbine_rotor'
             ],
             entity_to_sacrifice: {

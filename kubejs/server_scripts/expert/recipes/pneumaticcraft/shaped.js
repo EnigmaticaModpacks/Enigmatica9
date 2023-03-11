@@ -196,7 +196,7 @@ ServerEvents.recipes((event) => {
                 B: 'create:andesite_casing',
                 C: 'naturesaura:gold_leaf',
                 D: 'pneumaticcraft:pressure_tube',
-                E: 'ars_nouveau:earth_essence'
+                E: 'ars_nouveau:air_essence'
             },
             id: `pneumaticcraft:jackhammer`
         }

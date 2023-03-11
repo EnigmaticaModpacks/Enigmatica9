@@ -59,6 +59,7 @@ ServerEvents.recipes((event) => {
 
         { id: 'immersiveengineering:blastfurnace/steel' },
         { id: 'immersiveengineering:crafting/blastbrick' },
+        { id: 'immersiveengineering:crafting/toolupgrade_drill_lube' },
         { id: /immersiveengineering:crafting\/wire_/ },
 
         { id: 'industrialforegoing:washing_factory' },
@@ -89,6 +90,7 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:pressure_chamber/compressed_iron_ingot' },
         { id: 'pneumaticcraft:pressure_chamber/compressed_iron_block' },
         { id: 'pneumaticcraft:thermo_plant/reinforced_pressure_tube' },
+        { id: /pneumaticcraft:thermo_plant\/.*_drill_bit/ },
 
         { id: 'powah:crafting/dielectric_rod_h' },
         { id: 'powah:crafting/dielectric_paste' },
@@ -119,6 +121,10 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:beekeeper_fabric' },
         { id: 'thermal:diving_fabric' },
         { id: 'thermal:hazmat_fabric' },
+        { id: 'thermal:flux_saw' },
+        { id: 'thermal:flux_drill' },
+        { id: 'thermal:drill_head' },
+        { id: 'thermal:saw_blade' },
 
         { id: 'twilightforest:equipment/fiery_ingot_crafting' },
         { id: 'twilightforest:material/fiery_iron_ingot' },

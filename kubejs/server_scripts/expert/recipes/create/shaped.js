@@ -157,7 +157,7 @@ ServerEvents.recipes((event) => {
             output: 'create:mechanical_drill',
             pattern: ['BA'],
             key: {
-                A: 'thermal:drill_head',
+                A: 'immersiveengineering:drillhead_steel',
                 B: 'create:andesite_casing'
             },
             id: `create:crafting/kinetics/mechanical_drill`
@@ -166,7 +166,7 @@ ServerEvents.recipes((event) => {
             output: 'create:mechanical_saw',
             pattern: ['BA'],
             key: {
-                A: 'thermal:saw_blade',
+                A: '#forge:sawblades',
                 B: 'create:andesite_casing'
             },
             id: `create:crafting/kinetics/mechanical_saw`

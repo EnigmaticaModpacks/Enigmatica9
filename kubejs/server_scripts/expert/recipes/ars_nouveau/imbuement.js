@@ -133,6 +133,18 @@ ServerEvents.recipes((event) => {
             ],
             source: 2000,
             id: `ars_elemental:imbuement_anima_essence`
+        },
+        {
+            input: { item: 'pneumaticcraft:compressed_stone' },
+            output: 'pneumaticcraft:drill_bit_iron',
+            count: 1,
+            pedestalItems: [
+                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { item: 'ars_nouveau:earth_essence' } }
+            ],
+            source: 600,
+            id: `${id_prefix}drill_bit_iron`
         }
     ];
 
