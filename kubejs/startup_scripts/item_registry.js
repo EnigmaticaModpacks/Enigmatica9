@@ -22,7 +22,8 @@ StartupEvents.registry('item', (event) => {
         'energetic_transference_matrix',
         'dimensional_storage_crystal',
         'magebloom_filter',
-        'saturated_magebloom_filter'
+        'saturated_magebloom_filter',
+        'umbral_pearl'
     ];
 
     const ritualDummies = [
