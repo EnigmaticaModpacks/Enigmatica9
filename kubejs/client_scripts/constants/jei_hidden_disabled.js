@@ -254,6 +254,7 @@ jei.expert.items.disabled = [
     'naturesaura:dimension_rail_end',
     'naturesaura:dimension_rail_nether',
     'naturesaura:dimension_rail_overworld',
+    /occultism:chalk_.*_impure/,
     'pneumaticcraft:advanced_air_compressor',
     'pneumaticcraft:advanced_liquid_compressor',
     'pneumaticcraft:liquid_compressor',
