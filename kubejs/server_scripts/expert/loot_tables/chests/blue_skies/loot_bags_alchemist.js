@@ -1,4 +1,4 @@
-ServerEvents.chestLootTables((event) => {
+ServerEvents.genericLootTables((event) => {
     if (global.isExpertMode == false) {
         return;
     }
@@ -9,7 +9,7 @@ ServerEvents.chestLootTables((event) => {
         event.modify(`blue_skies:loot_bags/alchemist/${rarity}`, (table) => {
             table.addPool((pool) => {
                 pool.rolls = 1.0;
-                pool.addItem('kubejs:umbral_pearl', 1, 1);
+                pool.addItem('kubejs:dream_stone', 1, 1);
             });
         });
     });

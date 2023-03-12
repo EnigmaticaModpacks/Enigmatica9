@@ -1,4 +1,4 @@
-ServerEvents.chestLootTables((event) => {
+ServerEvents.genericLootTables((event) => {
     if (global.isExpertMode == false) {
         return;
     }

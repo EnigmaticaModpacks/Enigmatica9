@@ -23,7 +23,7 @@ StartupEvents.registry('item', (event) => {
         'dimensional_storage_crystal',
         'magebloom_filter',
         'saturated_magebloom_filter',
-        'umbral_pearl'
+        'dream_stone'
     ];
 
     const ritualDummies = [
