@@ -1,0 +1,15 @@
+{
+	"block.thermal.lumium_block": "Block of Celestial Gold",
+	"block.thermal.lumium_glass": "Celestial Glass",
+	"item.thermal.lumium_coin": "Celestial Gold Coin",
+	"item.thermal.lumium_dust": "Celestial Gold Dust",
+	"item.thermal.lumium_gear": "Celestial Gold Gear",
+	"item.thermal.lumium_ingot": "Celestial Gold Ingot",
+	"item.thermal.lumium_nugget": "Celestial Gold Nugget",
+	"item.thermal.lumium_plate": "Celestial Gold Plate",
+	"block.thermal.lumium_activator_rail": "Celestial Activator Rail",
+	"block.thermal.lumium_crossover_rail": "Celestial Crossover Rail",
+	"block.thermal.lumium_detector_rail": "Celestial Detector Rail",
+	"block.thermal.lumium_powered_rail": "Powered Celestial Rail",
+	"block.thermal.lumium_rail": "Celestial Rail"
+}

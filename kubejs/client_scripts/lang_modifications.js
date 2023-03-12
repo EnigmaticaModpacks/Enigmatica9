@@ -432,6 +432,101 @@ const entries = {
                 expert: 'Reinforced Drill Head'
             }
         }
+    ],
+    thermal: [
+        {
+            key: 'block.thermal.lumium_block',
+            value: {
+                normal: 'Block of Lumium',
+                expert: 'Block of Celestial Gold'
+            }
+        },
+        {
+            key: 'block.thermal.lumium_glass',
+            value: {
+                normal: 'Lumium Glass',
+                expert: 'Celestial Glass'
+            }
+        },
+
+        {
+            key: 'item.thermal.lumium_coin',
+            value: {
+                normal: 'Lumium Coin',
+                expert: 'Celestial Gold Coin'
+            }
+        },
+        {
+            key: 'item.thermal.lumium_dust',
+            value: {
+                normal: 'Lumium Blend',
+                expert: 'Celestial Gold Dust'
+            }
+        },
+        {
+            key: 'item.thermal.lumium_gear',
+            value: {
+                normal: 'Lumium Gear',
+                expert: 'Celestial Gold Gear'
+            }
+        },
+        {
+            key: 'item.thermal.lumium_ingot',
+            value: {
+                normal: 'Lumium Ingot',
+                expert: 'Celestial Gold Ingot'
+            }
+        },
+        {
+            key: 'item.thermal.lumium_nugget',
+            value: {
+                normal: 'Lumium Nugget',
+                expert: 'Celestial Gold Nugget'
+            }
+        },
+        {
+            key: 'item.thermal.lumium_plate',
+            value: {
+                normal: 'Lumium Plate',
+                expert: 'Celestial Gold Plate'
+            }
+        },
+
+        {
+            key: 'block.thermal.lumium_activator_rail',
+            value: {
+                normal: 'Lumium Activator Rail',
+                expert: 'Celestial Activator Rail'
+            }
+        },
+        {
+            key: 'block.thermal.lumium_crossover_rail',
+            value: {
+                normal: 'Lumium Crossover Rail',
+                expert: 'Celestial Crossover Rail'
+            }
+        },
+        {
+            key: 'block.thermal.lumium_detector_rail',
+            value: {
+                normal: 'Lumium Detector Rail',
+                expert: 'Celestial Detector Rail'
+            }
+        },
+        {
+            key: 'block.thermal.lumium_powered_rail',
+            value: {
+                normal: 'Powered Lumium Rail',
+                expert: 'Powered Celestial Rail'
+            }
+        },
+        {
+            key: 'block.thermal.lumium_rail',
+            value: {
+                normal: 'Lumium Rail',
+                expert: 'Celestial Rail'
+            }
+        }
     ]
 };
 
