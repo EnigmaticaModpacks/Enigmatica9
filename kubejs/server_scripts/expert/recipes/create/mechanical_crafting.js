@@ -6,31 +6,6 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            pattern: ['  A  ', ' BSB ', 'BSRSB', ' BCB '],
-            key: {
-                A: { tag: 'pneumaticcraft:compressed_stone' },
-                C: { item: 'createaddition:capacitor' },
-                B: { tag: 'forge:plates/brass' },
-                R: { tag: 'forge:rods/iron' },
-                S: { item: 'immersiveengineering:coil_lv' }
-            },
-            result: { item: 'createaddition:electric_motor' },
-            id: `createaddition:mechanical_crafting/electric_motor`
-        },
-        {
-            pattern: ['SSS', ' A ', 'CBC', 'PEP'],
-            key: {
-                A: { tag: 'pneumaticcraft:compressed_stone' },
-                C: { item: 'powah:capacitor_basic_large' },
-                P: { tag: 'forge:plates/electrum' },
-                B: { item: 'create:brass_casing' },
-                S: { item: 'immersiveengineering:coil_lv' },
-                E: { item: 'powah:energy_cable_basic' }
-            },
-            result: { item: 'createaddition:tesla_coil' },
-            id: `createaddition:mechanical_crafting/tesla_coil`
-        },
-        {
             pattern: [' AAA ', 'AAPAA', 'APSPA', 'AAPAA', ' AAA '],
             key: {
                 A: { tag: 'pneumaticcraft:compressed_stone' },

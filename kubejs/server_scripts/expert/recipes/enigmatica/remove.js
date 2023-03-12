@@ -47,9 +47,13 @@ ServerEvents.recipes((event) => {
         { id: 'create:mechanical_crafting/wand_of_symmetry' },
         { id: 'create:crafting/kinetics/empty_blaze_burner' },
         { id: 'create:crafting/kinetics/mechanical_crafter' },
+        { id: 'create:crafting/kinetics/brass_hand' },
         { id: 'create:item_application/brass_casing_from_wood' },
         { id: 'create:item_application/brass_casing_from_log' },
         { id: 'create:conversion_0' },
+
+        { id: 'createaddition:mechanical_crafting/tesla_coil' },
+        { id: 'createaddition:mechanical_crafting/electric_motor' },
 
         { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
         { id: 'hexerei:willow_broom_from_mixing_cauldron' },

@@ -58,7 +58,7 @@ ServerEvents.recipes((event) => {
             output: '3x create:brass_tunnel',
             pattern: [' A ', 'BBB', 'CCC'],
             key: {
-                A: 'create:electron_tube',
+                A: 'pneumaticcraft:logistics_core',
                 B: 'create:brass_casing',
                 C: 'immersiveengineering:strip_curtain'
             },
@@ -78,7 +78,7 @@ ServerEvents.recipes((event) => {
             output: '2x create:brass_funnel',
             pattern: [' A ', 'CBC'],
             key: {
-                A: 'create:electron_tube',
+                A: 'pneumaticcraft:logistics_core',
                 B: 'create:brass_casing',
                 C: 'immersiveengineering:strip_curtain'
             },
@@ -232,6 +232,28 @@ ServerEvents.recipes((event) => {
                 D: '#forge:dusts/redstone'
             },
             id: `create:crafting/logistics/pulse_repeater`
+        },
+        {
+            output: 'create:deployer',
+            pattern: ['A', 'B', 'C'],
+            key: {
+                A: 'pneumaticcraft:logistics_core',
+                B: 'create:andesite_casing',
+                C: 'create:brass_hand'
+            },
+            id: `create:crafting/kinetics/deployer`
+        },
+        {
+            output: 'create:mechanical_arm',
+            pattern: ['AA', 'BC', 'DE'],
+            key: {
+                A: '#forge:ingots/constantan',
+                B: '#forge:gears/constantan',
+                C: 'create:brass_hand',
+                D: 'create:brass_casing',
+                E: 'pneumaticcraft:logistics_core'
+            },
+            id: `create:crafting/kinetics/mechanical_arm`
         }
     ];
 

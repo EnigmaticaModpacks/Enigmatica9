@@ -102,6 +102,18 @@ ServerEvents.recipes((event) => {
             reagent: [{ item: 'pneumaticcraft:drill_bit_compressed_iron' }],
             sourceCost: 3000,
             id: `${id_prefix}drill_bit_diamond`
+        },
+        {
+            output: { item: 'create:brass_hand' },
+            pedestalItems: [
+                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { tag: 'forge:leather' } },
+                { item: { tag: 'forge:leather' } },
+                { item: { tag: 'forge:leather' } }
+            ],
+            reagent: [{ tag: 'forge:ingots/energized_steel' }],
+            sourceCost: 1000,
+            id: `${id_prefix}brass_hand`
         }
     ];
 

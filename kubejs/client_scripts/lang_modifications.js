@@ -116,6 +116,13 @@ const entries = {
             }
         },
         {
+            key: 'item.create.mechanical_arm',
+            value: {
+                normal: 'Mehcanical Arm',
+                expert: 'Enchanted Arm'
+            }
+        },
+        {
             key: 'advancement.create.andesite_alloy.desc',
             value: {
                 normal: "Obtain some Andesite Alloy, Create's most important resource",

@@ -581,7 +581,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_craft_blaze_burner`
         },
         {
-            output: '4x pneumaticcraft:module_expansion_card',
+            output: '8x pneumaticcraft:module_expansion_card',
             activation_item: 'immersiveengineering:coil_mv',
             inputs: [
                 'pneumaticcraft:compressed_stone_slab',
@@ -671,6 +671,29 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:lesser_binding',
             duration: 10,
             id: `${id_prefix}ritual_craft_ore_laser_base`
+        },
+        {
+            output: '2x createaddition:electric_motor',
+            activation_item: 'create:brass_casing',
+            inputs: [
+                'create:shaft',
+                'powah:capacitor_basic_large',
+                'create:shaft',
+                'powah:capacitor_basic_large',
+                'immersiveengineering:coil_mv',
+                'immersiveengineering:coil_mv',
+                'immersiveengineering:coil_mv',
+                'immersiveengineering:coil_mv'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/earth',
+                display_name: 'ritual.occultism.sacrifice.earth_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_electric_motor',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_electric_motor`
         },
         {
             output: 'industrialforegoing:fluid_laser_base',
