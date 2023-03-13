@@ -1,0 +1,15 @@
+#Minimum rails to use during pathing.
+#Range: 5 ~ 100
+minimumRailsToUseInPath = 5
+#Maximum amount of nodes used during a pathing calculation.
+#Range: 5000 ~ 10000
+maxPathFindingNodes = 2500
+#Logging verbosity. Lower is more information.
+#Range: 0 ~ 6
+pathFindingLogVerbosity = 5
+#Amount of threads to use for PathFinding.
+#Range: 1 ~ 256
+pathFindingThreadCount = 5
+#Enables the vanilla compatibility layer. Replaces Vanillas on thread pathfinding calculation.
+isVanillaReplacementEnabled = true
+
