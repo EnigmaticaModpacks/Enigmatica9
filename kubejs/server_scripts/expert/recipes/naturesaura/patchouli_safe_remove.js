@@ -26,7 +26,10 @@ ServerEvents.recipes((event) => {
             { id: 'naturesaura:dimension_rail_overworld', output: 'naturesaura:dimension_rail_overworld' },
             { id: 'naturesaura:animal_spawner', output: 'naturesaura:animal_spawner' }
         ],
-        altar: [{ id: 'naturesaura:altar/infused_stone', output: 'naturesaura:infused_stone' }],
+        altar: [
+            { id: 'naturesaura:altar/infused_stone', output: 'naturesaura:infused_stone' },
+            { id: 'naturesaura:altar/tainted_gold', output: 'naturesaura:tainted_gold' }
+        ],
         tree_ritual: [
             {
                 id: 'naturesaura:tree_ritual/ore_spawn_powder',

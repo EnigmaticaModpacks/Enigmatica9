@@ -106,6 +106,13 @@
     "ritual.enigmatica.occultism/ritual/ritual_teleport_everbright.interrupted": "Service to Everbright has been discontinued at this time.",
     "ritual.enigmatica.occultism/ritual/ritual_teleport_everbright.conditions": "Toll not accepted. Please provide the full cost of the ritual.",
 
+    "item.kubejs.teleport_nether": "Ritual: Teleport to The Nether.",
+    "item.kubejs.teleport_nether.tooltip": "Use the incredible power of Celstial Gold to jump planes.",
+    "ritual.enigmatica.occultism/ritual/teleport_nether.started": "Destination, The Nether. Keep your hands and arms fully inside the ritual circle at all times.",
+    "ritual.enigmatica.occultism/ritual/teleport_nether.finished": "Please mind the gap.",
+    "ritual.enigmatica.occultism/ritual/teleport_nether.interrupted": "Service to The Nether has been discontinued at this time.",
+    "ritual.enigmatica.occultism/ritual/teleport_nether.conditions": "Toll not accepted. Please provide the full cost of the ritual.",
+
     "ritual.enigmatica.occultism/ritual/ritual_aura_generation.started": "Ritual of Aura started.",
     "ritual.enigmatica.occultism/ritual/ritual_aura_generation.finished": "Ritual of Aura completed.",
     "ritual.enigmatica.occultism/ritual/ritual_aura_generation.interrupted": "Ritual of Aura interrupted.",

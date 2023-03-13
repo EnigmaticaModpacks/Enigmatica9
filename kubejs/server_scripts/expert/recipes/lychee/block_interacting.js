@@ -150,7 +150,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}conversion_catalyst`
         },
         {
-            item_in: { item: 'ars_nouveau:water_essence' },
+            item_in: { item: 'kubejs:water_essence' },
             block_in: 'naturesaura:gold_brick',
             post: [
                 {
@@ -184,6 +184,43 @@ ServerEvents.recipes((event) => {
             ],
             contextual: [{ type: 'is_sneaking', description: 'Must be sneaking. Consumes a moderate amount of Aura.' }],
             id: `${id_prefix}crushing_catalyst`
+        },
+        {
+            item_in: { item: 'kubejs:dream_stone' },
+            block_in: 'naturesaura:gold_brick',
+            post: [
+                {
+                    type: 'place',
+                    block: { blocks: ['kubejs:gloaming_catalyst'] },
+                    contextual: [
+                        { type: 'is_sneaking', description: 'Must be sneaking. Consumes an incredible amount of Aura.' }
+                    ]
+                },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.respawn_anchor.set_spawn block @p ~ ~ ~',
+                    hide: true
+                },
+                {
+                    type: 'execute',
+                    command: 'particle minecraft:explosion ~ ~ ~',
+                    hide: true
+                },
+                {
+                    type: 'execute',
+                    command: 'particle twilightforest:firefly ~ ~ ~ 1 1 1 1 15',
+                    hide: true
+                },
+                {
+                    type: 'execute',
+                    command: 'naaura remove 2000000',
+                    hide: true
+                }
+            ],
+            contextual: [
+                { type: 'is_sneaking', description: 'Must be sneaking. Consumes an incredible amount of Aura.' }
+            ],
+            id: `${id_prefix}gloaming_catalyst`
         }
     ];
 

@@ -30,6 +30,7 @@ StartupEvents.registry('item', (event) => {
         'ritual_summon_death_tome',
         'ritual_teleport_everdawn',
         'ritual_teleport_everbright',
+        'ritual_teleport_nether',
         'ritual_tree_of_life_1',
         'ritual_tree_of_life_2',
         'ritual_tree_of_life_3',
@@ -62,6 +63,7 @@ StartupEvents.registry('item', (event) => {
         { name: 'spell_night_vision', texture: 'ritual_dummy' },
         { name: 'teleport_everdawn', texture: 'ritual_dummy' },
         { name: 'teleport_everbright', texture: 'ritual_dummy' },
+        { name: 'teleport_nether', texture: 'ritual_dummy' },
         { name: 'tree_of_life_1', texture: 'enigmatica_tree' },
         { name: 'tree_of_life_2', texture: 'enigmatica_tree' },
         { name: 'tree_of_life_3', texture: 'enigmatica_tree' },
@@ -79,4 +81,7 @@ StartupEvents.registry('item', (event) => {
     ritualDummies.forEach((item) => {
         event.create(item, 'occultism:ritual_dummy').group('KubeJS').texture('kubejs:item/ritual_dummy');
     });
+
+    // Special Items
+    event.create('spirit_of_devotion').group('KubeJS').texture(`kubejs:item/spirit_of_devotion`).glow(true);
 });

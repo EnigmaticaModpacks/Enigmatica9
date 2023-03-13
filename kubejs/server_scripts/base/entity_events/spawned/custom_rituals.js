@@ -59,6 +59,12 @@ EntityEvents.spawned((event) => {
             let duration = 18 * 20;
             let delay;
 
+            if (destination == 'minecraft:the_nether') {
+                dest.y = 64;
+                dest.x = dest.x / 8;
+                dest.z = dest.z / 8;
+            }
+
             // Slowly draw a spiral in reverse
             coordinates = getSpiralCoordinates(
                 cur.x,

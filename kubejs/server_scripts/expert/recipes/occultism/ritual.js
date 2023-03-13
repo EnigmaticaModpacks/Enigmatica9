@@ -788,14 +788,14 @@ ServerEvents.recipes((event) => {
                 'naturesaura:calling_spirit',
                 'naturesaura:calling_spirit',
                 'naturesaura:calling_spirit',
-                'naturesaura:sky_ingot',
+                '#forge:ingots/skies',
                 'ae2:sky_dust',
-                'naturesaura:sky_ingot',
+                '#forge:ingots/skies',
                 'ae2:sky_dust',
                 'ae2:sky_dust',
-                'naturesaura:sky_ingot',
+                '#forge:ingots/skies',
                 'ae2:sky_dust',
-                'naturesaura:sky_ingot'
+                '#forge:ingots/skies'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_1',
             ritual_type: 'occultism:craft',
@@ -807,7 +807,7 @@ ServerEvents.recipes((event) => {
             output: 'kubejs:teleport_everdawn',
             activation_item: '#forge:gems/sunstone_crystal',
             inputs: [
-                'naturesaura:sky_ingot',
+                '#forge:ingots/skies',
                 'naturesaura:gold_leaf',
                 'ars_nouveau:air_essence',
                 'naturesaura:gold_leaf',
@@ -832,7 +832,7 @@ ServerEvents.recipes((event) => {
             output: 'kubejs:teleport_everbright',
             activation_item: '#forge:gems/moonstone_crystal',
             inputs: [
-                'naturesaura:sky_ingot',
+                '#forge:ingots/skies',
                 'naturesaura:gold_leaf',
                 'ars_nouveau:air_essence',
                 'naturesaura:gold_leaf',
@@ -854,13 +854,46 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_teleport_everbright`
         },
         {
-            output: Item.of('kubejs:tree_of_life_2', { aura_amount: 200000, aura_max: 1000000 }),
-            activation_item: 'twilightforest:rainbow_oak_sapling',
+            output: 'kubejs:teleport_nether',
+            activation_item: '#forge:gems/carminite',
             inputs: [
-                '#forge:storage_blocks/iesnium',
-                '#forge:storage_blocks/iesnium',
-                '#forge:storage_blocks/iesnium',
-                '#forge:storage_blocks/iesnium'
+                '#forge:ingots/tainted_gold',
+                'naturesaura:gold_leaf',
+                'ars_nouveau:fire_essence',
+                'naturesaura:gold_leaf',
+
+                'create:cinder_flour',
+                'create:cinder_flour',
+                'create:cinder_flour',
+                'create:cinder_flour',
+
+                'create:cinder_flour',
+                'create:cinder_flour',
+                'create:cinder_flour',
+                'create:cinder_flour'
+            ],
+            ritual_dummy: 'kubejs:ritual_teleport_nether',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:tree_of_life_stage_2',
+            duration: 10,
+            id: `${id_prefix}ritual_teleport_nether`
+        },
+        {
+            output: Item.of('kubejs:tree_of_life_2', { aura_amount: 200000, aura_max: 1000000 }),
+            activation_item: 'quark:ancient_fruit',
+            inputs: [
+                'kubejs:spirit_of_devotion',
+                'kubejs:spirit_of_devotion',
+                'kubejs:spirit_of_devotion',
+                'kubejs:spirit_of_devotion',
+                '#forge:ingots/tainted_gold',
+                'thermal:phytogro',
+                '#forge:ingots/tainted_gold',
+                'thermal:phytogro',
+                'thermal:phytogro',
+                '#forge:ingots/tainted_gold',
+                'thermal:phytogro',
+                '#forge:ingots/tainted_gold'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_2',
             ritual_type: 'occultism:craft',

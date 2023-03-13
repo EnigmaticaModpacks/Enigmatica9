@@ -337,7 +337,7 @@ jei.expert.recipes.hidden = [
     },
     {
         category: 'naturesaura:altar',
-        recipes_by_id: ['naturesaura:altar/infused_stone']
+        recipes_by_id: ['naturesaura:altar/infused_stone', 'naturesaura:altar/tainted_gold']
     },
     {
         category: 'naturesaura:tree_ritual',

@@ -114,6 +114,18 @@ ServerEvents.recipes((event) => {
             reagent: [{ tag: 'forge:ingots/energized_steel' }],
             sourceCost: 1000,
             id: `${id_prefix}brass_hand`
+        },
+        {
+            output: { item: 'minecraft:netherite_ingot', count: 4 },
+            pedestalItems: [
+                { item: { tag: 'forge:ingots/electrum' } },
+                { item: { tag: 'forge:ingots/electrum' } },
+                { item: { tag: 'forge:ingots/electrum' } },
+                { item: { tag: 'forge:ingots/electrum' } }
+            ],
+            reagent: [{ item: 'minecraft:netherite_scrap' }],
+            sourceCost: 5000,
+            id: `${id_prefix}netherite_ingot`
         }
     ];
 

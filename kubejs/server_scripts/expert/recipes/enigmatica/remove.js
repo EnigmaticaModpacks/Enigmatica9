@@ -75,6 +75,8 @@ ServerEvents.recipes((event) => {
 
         { id: 'mekanism:teleportation_core' },
 
+        { id: 'minecraft:netherite_ingot' },
+
         { id: 'occultism:ritual/craft_dimensional_matrix' },
         { id: 'occultism:ritual/craft_storage_controller_base' },
         { id: 'occultism:ritual/craft_stable_wormhole' },
@@ -106,6 +108,7 @@ ServerEvents.recipes((event) => {
         { id: 'quark:tools/crafting/runes/rainbow_rune' },
 
         { id: 'rftoolsbase:dimensionalshard' },
+        { id: 'rftoolsbase:infused_diamond' },
 
         { id: `spirit:soul_engulfing/soul_powder` },
         { id: `spirit:soul_engulfing/soul_powder_block` },

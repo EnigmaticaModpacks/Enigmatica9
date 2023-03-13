@@ -61,9 +61,17 @@ ServerEvents.recipes((event) => {
             output: 'rftoolsbase:dimensionalshard',
             input: 'ae2:charged_certus_quartz_crystal',
             catalyst: 'naturesaura:conversion_catalyst',
-            aura: 6000,
-            time: 20,
+            aura: 3000,
+            time: 10,
             id: `${id_prefix}dimensionalshard`
+        },
+        {
+            output: '4x kubejs:spirit_of_devotion',
+            input: 'rftoolsbase:infused_diamond',
+            catalyst: 'kubejs:gloaming_catalyst',
+            aura: 600,
+            time: 10,
+            id: `${id_prefix}spirit_of_devotion`
         }
     ];
 
