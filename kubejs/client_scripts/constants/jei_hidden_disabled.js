@@ -130,12 +130,29 @@ jei.base.categories.hidden = ['twilightforest:uncrafting'];
 // Normal
 jei.normal.items.disabled = [];
 jei.normal.items.hidden = [
-    /kubejs:tree_of_life_/,
+    /kubejs:.*tree_of_life_/,
+    /kubejs:ritual_craft_/,
+    /kubejs:ritual_summon_/,
+    /kubejs:heartwood_/,
     'kubejs:summon_death_tome',
     'kubejs:teleport_everdawn',
+    'kubejs:ritual_teleport_everdawn',
     'kubejs:teleport_everbright',
+    'kubejs:ritual_teleport_everbright',
+    'kubejs:teleport_nether',
+    'kubejs:ritual_teleport_nether',
     'kubejs:pig_iron_ingot',
-    'kubejs:mystery_mash'
+    'kubejs:mystery_mash',
+    'kubejs:dream_stone',
+    'kubejs:saturated_magebloom_filter',
+    'kubejs:magebloom_filter',
+    'kubejs:dimensional_storage_crystal',
+    'kubejs:energetic_transference_matrix',
+    'kubejs:kaolin_powder',
+    'kubejs:calcined_kaolin_pearls',
+    'kubejs:kaolin_clay',
+    'kubejs:aura_leaf',
+    'kubejs:spirit_of_devotion'
 ];
 jei.normal.fluids.hidden = [];
 jei.normal.categories.hidden = [];

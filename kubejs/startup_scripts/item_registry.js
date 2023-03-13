@@ -60,7 +60,6 @@ StartupEvents.registry('item', (event) => {
         { name: 'altered_recipe_indicator', texture: 'enigmatica_tree' },
         { name: 'disabled_recipe_indicator', texture: 'enigmatica_tree' },
         { name: 'summon_death_tome', texture: 'ritual_dummy' },
-        { name: 'spell_night_vision', texture: 'ritual_dummy' },
         { name: 'teleport_everdawn', texture: 'ritual_dummy' },
         { name: 'teleport_everbright', texture: 'ritual_dummy' },
         { name: 'teleport_nether', texture: 'ritual_dummy' },
