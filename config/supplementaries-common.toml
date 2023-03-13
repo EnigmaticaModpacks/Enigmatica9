@@ -12,7 +12,12 @@
 	dispenser_minecart = true
 	crystal_display = true
 	relayer = true
-	pulley_block = true
+
+	[redstone.pulley_block]
+		enabled = true
+		#Chance for a new mineshaft elevator piece to spawn
+		#Range: 0.0 ~ 1.0
+		mineshaft_elevator = 0.02
 
 	[redstone.speaker_block]
 		enabled = true
