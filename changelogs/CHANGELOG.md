@@ -14,9 +14,9 @@ _Using Forge-1.19.2-43.2.6_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 -  Many tags have been updated for blocks, gems, and ingots
 
 **Fixed Bugs**
--  Remove disabled items from Occultism quests #258
--  Remove refrences to non existant schematics in Natures Aura quests #259
--  Clarify Tools quests #255
+-  Remove disabled items from Occultism quests [\#258](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/258) ([MuteTiefling](https://github.com/MuteTiefling))
+-  Remove refrences to non existant schematics in Natures Aura quests [\#259](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/259) ([MuteTiefling](https://github.com/MuteTiefling))
+-  Clarify Tools quests [\#255](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/255) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
