@@ -25,7 +25,7 @@ ServerEvents.highPriorityData((event) => {
                 mythic: { duration: { min: 180, steps: 10, step: 20 }, amplifier: { min: 0, steps: 2, step: 1 } },
                 ancient: { duration: { min: 240, steps: 10, step: 40 }, amplifier: { min: 2, steps: 3, step: 1 } }
             },
-            types: ['SWORD', 'HEAVY_WEAPON', 'TRIDENT']
+            types: ['sword', 'trident', 'heavy_weapon']
         },
         {
             name: 'bleeding',
@@ -38,7 +38,7 @@ ServerEvents.highPriorityData((event) => {
                 mythic: { duration: { min: 180, steps: 10, step: 20 }, amplifier: { min: 0, steps: 1, step: 1 } },
                 ancient: { duration: { min: 240, steps: 10, step: 40 }, amplifier: { min: 2, steps: 3, step: 1 } }
             },
-            types: ['SWORD', 'HEAVY_WEAPON', 'TRIDENT']
+            types: ['sword', 'trident', 'heavy_weapon']
         },
         {
             name: 'paralysis',
@@ -49,7 +49,7 @@ ServerEvents.highPriorityData((event) => {
                 mythic: { duration: { min: 20, steps: 10, step: 20 }, amplifier: { min: 0, steps: 1, step: 1 } },
                 ancient: { duration: { min: 240, steps: 10, step: 40 }, amplifier: { min: 2, steps: 3, step: 1 } }
             },
-            types: ['SWORD', 'HEAVY_WEAPON', 'TRIDENT']
+            types: ['sword', 'trident', 'heavy_weapon']
         },
         {
             name: 'blasting',
@@ -61,7 +61,7 @@ ServerEvents.highPriorityData((event) => {
                 mythic: { duration: { min: 20, steps: 4, step: 20 }, amplifier: { min: 0, steps: 2, step: 1 } },
                 ancient: { duration: { min: 10, steps: 2, step: 20 }, amplifier: { min: 1, steps: 3, step: 1 } }
             },
-            types: ['SWORD', 'HEAVY_WEAPON', 'TRIDENT']
+            types: ['sword', 'trident', 'heavy_weapon']
         }
     ];
 
