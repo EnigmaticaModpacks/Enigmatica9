@@ -44,14 +44,14 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}steeleaf_ingot`
         },
         {
-            output: 'blue_skies:sunstone_block',
+            output: '4x blue_skies:sunstone_crystal',
             input: 'blue_skies:moonstone_block',
             aura: 100000,
             time: 600,
             id: `${id_prefix}sunstone_block`
         },
         {
-            output: 'blue_skies:moonstone_block',
+            output: '4x blue_skies:moonstone_crystal',
             input: 'blue_skies:sunstone_block',
             aura: 100000,
             time: 600,
