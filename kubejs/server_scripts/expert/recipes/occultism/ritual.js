@@ -581,7 +581,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_craft_blaze_burner`
         },
         {
-            output: '4x pneumaticcraft:module_expansion_card',
+            output: '8x pneumaticcraft:module_expansion_card',
             activation_item: 'immersiveengineering:coil_mv',
             inputs: [
                 'pneumaticcraft:compressed_stone_slab',
@@ -602,6 +602,144 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:lesser_binding',
             duration: 10,
             id: `${id_prefix}ritual_craft_module_expansion_card`
+        },
+        {
+            output: 'pneumaticcraft:flux_compressor',
+            activation_item: '#industrialforegoing:machine_frame/simple',
+            inputs: [
+                'pneumaticcraft:reinforced_pressure_tube',
+                'pneumaticcraft:turbine_rotor',
+                '#forge:gears/compressed_iron',
+                'pneumaticcraft:turbine_rotor'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/air',
+                display_name: 'ritual.occultism.sacrifice.air_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_flux_compressor',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_flux_compressor`
+        },
+        {
+            output: '4x ae2:controller',
+            activation_item: 'pneumaticcraft:logistics_core',
+            inputs: [
+                'naturesaura:infused_stone',
+                'naturesaura:infused_stone',
+                'naturesaura:infused_stone',
+                'naturesaura:infused_stone',
+                'quark:rainbow_rune',
+                'powah:energy_cable_niotic',
+                'quark:rainbow_rune',
+                'powah:energy_cable_niotic',
+                'powah:energy_cable_niotic',
+                'quark:rainbow_rune',
+                'powah:energy_cable_niotic',
+                'quark:rainbow_rune'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/water',
+                display_name: 'ritual.occultism.sacrifice.water_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_controller',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_controller`
+        },
+        {
+            output: 'industrialforegoing:ore_laser_base',
+            activation_item: 'thermal:machine_frame',
+            inputs: [
+                'spirit:soul_glass',
+                'spirit:soul_glass',
+                'spirit:soul_glass',
+                'spirit:soul_glass',
+                '#forge:ingots/compressed_iron',
+                '#forge:ingots/compressed_iron',
+                '#forge:ingots/compressed_iron',
+                '#forge:ingots/compressed_iron'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/earth',
+                display_name: 'ritual.occultism.sacrifice.earth_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_ore_laser_base',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_ore_laser_base`
+        },
+        {
+            output: '2x createaddition:electric_motor',
+            activation_item: 'create:brass_casing',
+            inputs: [
+                'create:shaft',
+                'powah:capacitor_basic_large',
+                'create:shaft',
+                'powah:capacitor_basic_large',
+                'immersiveengineering:coil_mv',
+                'immersiveengineering:coil_mv',
+                'immersiveengineering:coil_mv',
+                'immersiveengineering:coil_mv'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/earth',
+                display_name: 'ritual.occultism.sacrifice.earth_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_electric_motor',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_electric_motor`
+        },
+        {
+            output: 'industrialforegoing:fluid_laser_base',
+            activation_item: 'thermal:machine_frame',
+            inputs: [
+                'spirit:soul_glass',
+                'spirit:soul_glass',
+                'spirit:soul_glass',
+                'spirit:soul_glass',
+                '#forge:gems/niotic',
+                '#forge:gems/niotic',
+                '#forge:gems/niotic',
+                '#forge:gems/niotic'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/water',
+                display_name: 'ritual.occultism.sacrifice.water_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_fluid_laser_base',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_fluid_laser_base`
+        },
+        {
+            output: '4x kubejs:energetic_transference_matrix',
+            activation_item: 'occultism:book_of_binding_bound_djinni',
+            inputs: [
+                'pneumaticcraft:logistics_core',
+                'pneumaticcraft:logistics_core',
+                'pneumaticcraft:logistics_core',
+                'pneumaticcraft:logistics_core',
+                'mekanism:teleportation_core',
+                '#forge:gems/blazing',
+                'mekanism:teleportation_core',
+                '#forge:gems/blazing',
+                '#forge:gems/blazing',
+                'mekanism:teleportation_core',
+                '#forge:gems/blazing',
+                'mekanism:teleportation_core'
+            ],
+            ritual_dummy: 'kubejs:ritual_craft_energetic_transference_matrix',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_energetic_transference_matrix`
         },
 
         /*
@@ -650,14 +788,14 @@ ServerEvents.recipes((event) => {
                 'naturesaura:calling_spirit',
                 'naturesaura:calling_spirit',
                 'naturesaura:calling_spirit',
-                'naturesaura:sky_ingot',
+                '#forge:ingots/skies',
                 'ae2:sky_dust',
-                'naturesaura:sky_ingot',
+                '#forge:ingots/skies',
                 'ae2:sky_dust',
                 'ae2:sky_dust',
-                'naturesaura:sky_ingot',
+                '#forge:ingots/skies',
                 'ae2:sky_dust',
-                'naturesaura:sky_ingot'
+                '#forge:ingots/skies'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_1',
             ritual_type: 'occultism:craft',
@@ -667,9 +805,9 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'kubejs:teleport_everdawn',
-            activation_item: '#forge:gems/moonstone',
+            activation_item: '#forge:gems/sunstone_crystal',
             inputs: [
-                'naturesaura:sky_ingot',
+                '#forge:ingots/skies',
                 'naturesaura:gold_leaf',
                 'ars_nouveau:air_essence',
                 'naturesaura:gold_leaf',
@@ -691,13 +829,71 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_teleport_everdawn`
         },
         {
-            output: Item.of('kubejs:tree_of_life_2', { aura_amount: 200000, aura_max: 1000000 }),
-            activation_item: 'twilightforest:rainbow_oak_sapling',
+            output: 'kubejs:teleport_everbright',
+            activation_item: '#forge:gems/moonstone_crystal',
             inputs: [
-                '#forge:storage_blocks/iesnium',
-                '#forge:storage_blocks/iesnium',
-                '#forge:storage_blocks/iesnium',
-                '#forge:storage_blocks/iesnium'
+                '#forge:ingots/skies',
+                'naturesaura:gold_leaf',
+                'ars_nouveau:air_essence',
+                'naturesaura:gold_leaf',
+
+                'ae2:sky_dust',
+                'ae2:sky_dust',
+                'ae2:sky_dust',
+                'ae2:sky_dust',
+
+                'ae2:sky_dust',
+                'ae2:sky_dust',
+                'ae2:sky_dust',
+                'ae2:sky_dust'
+            ],
+            ritual_dummy: 'kubejs:ritual_teleport_everbright',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:tree_of_life_stage_1',
+            duration: 10,
+            id: `${id_prefix}ritual_teleport_everbright`
+        },
+        {
+            output: 'kubejs:teleport_nether',
+            activation_item: '#forge:gems/carminite',
+            inputs: [
+                '#forge:ingots/tainted_gold',
+                'naturesaura:gold_leaf',
+                'ars_nouveau:fire_essence',
+                'naturesaura:gold_leaf',
+
+                'create:cinder_flour',
+                'create:cinder_flour',
+                'create:cinder_flour',
+                'create:cinder_flour',
+
+                'create:cinder_flour',
+                'create:cinder_flour',
+                'create:cinder_flour',
+                'create:cinder_flour'
+            ],
+            ritual_dummy: 'kubejs:ritual_teleport_nether',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:tree_of_life_stage_2',
+            duration: 10,
+            id: `${id_prefix}ritual_teleport_nether`
+        },
+        {
+            output: Item.of('kubejs:tree_of_life_2', { aura_amount: 200000, aura_max: 1000000 }),
+            activation_item: 'quark:ancient_fruit',
+            inputs: [
+                'kubejs:spirit_of_devotion',
+                'kubejs:spirit_of_devotion',
+                'kubejs:spirit_of_devotion',
+                'kubejs:spirit_of_devotion',
+                '#forge:ingots/tainted_gold',
+                'thermal:phytogro',
+                '#forge:ingots/tainted_gold',
+                'thermal:phytogro',
+                'thermal:phytogro',
+                '#forge:ingots/tainted_gold',
+                'thermal:phytogro',
+                '#forge:ingots/tainted_gold'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_2',
             ritual_type: 'occultism:craft',

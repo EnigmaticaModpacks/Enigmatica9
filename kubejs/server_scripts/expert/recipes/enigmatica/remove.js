@@ -13,10 +13,18 @@ ServerEvents.recipes((event) => {
 
         { mod: 'computercraft' },
         { mod: 'superiorshields' },
-        { output: 'twilightforest:raw_ironwood' },
+
+        { output: 'ae2:silicon' },
+        { output: 'ae2:formation_plane' },
+        { output: 'ae2:annihilation_plane' },
+        { output: 'create:andesite_alloy' },
         { output: 'minecraft:blast_furnace' },
         { output: 'minecraft:furnace' },
-        { output: 'create:andesite_alloy' },
+        { output: 'minecraft:fire_charge' },
+        { output: 'thermal:ice_charge' },
+        { output: 'thermal:lightning_charge' },
+        { output: 'thermal:earth_charge' },
+        { output: 'twilightforest:raw_ironwood' },
 
         { type: 'thermal:smelter_recycle' },
         { type: 'ae2:charger' },
@@ -27,15 +35,10 @@ ServerEvents.recipes((event) => {
 
         { id: 'ae2:network/blocks/crystal_processing_charger' },
         { id: 'ae2:network/parts/quartz_fiber_part' },
-
-        { id: 'ars_nouveau:imbuement_chamber' },
-        { id: 'ars_nouveau:wixie_charm' },
-        { id: 'ars_nouveau:starbuncle_charm' },
-        { id: 'ars_nouveau:magebloom_crop' },
-        { id: 'ars_nouveau:mycelial_sourcelink' },
-        { id: 'ars_nouveau:vitalic_sourcelink' },
-        { id: 'ars_nouveau:volcanic_sourcelink' },
-        { id: 'ars_nouveau:agronomic_sourcelink' },
+        { id: 'ae2:transform/fluix_crystals' },
+        { id: 'ae2:network/blocks/controller' },
+        { id: 'ae2:misc/fluixpearl' },
+        { id: `ae2:network/crafting/cpu_crafting_unit` },
 
         { id: 'constructionwand:stone_wand' },
         { id: 'constructionwand:iron_wand' },
@@ -43,7 +46,14 @@ ServerEvents.recipes((event) => {
         { id: 'create:crafting/kinetics/white_sail' },
         { id: 'create:mechanical_crafting/wand_of_symmetry' },
         { id: 'create:crafting/kinetics/empty_blaze_burner' },
+        { id: 'create:crafting/kinetics/mechanical_crafter' },
+        { id: 'create:crafting/kinetics/brass_hand' },
+        { id: 'create:item_application/brass_casing_from_wood' },
+        { id: 'create:item_application/brass_casing_from_log' },
         { id: 'create:conversion_0' },
+
+        { id: 'createaddition:mechanical_crafting/tesla_coil' },
+        { id: 'createaddition:mechanical_crafting/electric_motor' },
 
         { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
         { id: 'hexerei:willow_broom_from_mixing_cauldron' },
@@ -52,25 +62,62 @@ ServerEvents.recipes((event) => {
         { id: 'hexerei:mixing_cauldron' },
 
         { id: 'immersiveengineering:blastfurnace/steel' },
+        { id: 'immersiveengineering:crafting/blastbrick' },
+        { id: 'immersiveengineering:crafting/toolupgrade_drill_lube' },
+        { id: /immersiveengineering:crafting\/wire_/ },
 
         { id: 'industrialforegoing:washing_factory' },
         { id: 'industrialforegoing:fermentation_station' },
         { id: 'industrialforegoing:fluid_sieving_machine' },
+        { id: 'industrialforegoing:ore_laser_base' },
+        { id: 'industrialforegoing:fluid_laser_base' },
+        { id: /industrialforegoing:laser_drill_ore/ },
 
-        { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },
+        { id: 'mekanism:teleportation_core' },
+
+        { id: 'minecraft:netherite_ingot' },
+
+        { id: 'occultism:ritual/craft_dimensional_matrix' },
+        { id: 'occultism:ritual/craft_storage_controller_base' },
+        { id: 'occultism:ritual/craft_stable_wormhole' },
+        { id: 'occultism:ritual/craft_soul_gem' },
+        { id: 'occultism:ritual/craft_familiar_ring' },
+
         { id: 'pneumaticcraft:pressure_chamber_valve' },
         { id: 'pneumaticcraft:pressure_chamber_glass' },
-        { id: 'pneumaticcraft:thermal_compressor' },
-        { id: 'pneumaticcraft:advanced_air_compressor' },
-        { id: 'pneumaticcraft:advanced_liquid_compressor' },
-        { id: 'pneumaticcraft:liquid_compressor' },
-        { id: 'pneumaticcraft:solar_compressor' },
-        { id: 'pneumaticcraft:manual_compressor' },
+        { id: /pneumaticcraft:.*_compressor/ },
         { id: 'pneumaticcraft:logistics_core' },
         { id: 'pneumaticcraft:spawner_agitator' },
         { id: 'pneumaticcraft:module_expansion_card' },
+        { id: 'pneumaticcraft:compressed_iron_gear' },
+        { id: 'pneumaticcraft:explosion_crafting/compressed_iron_ingot' },
+        { id: 'pneumaticcraft:explosion_crafting/compressed_iron_block' },
+        { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },
+        { id: 'pneumaticcraft:pressure_chamber/compressed_iron_ingot' },
+        { id: 'pneumaticcraft:pressure_chamber/compressed_iron_block' },
+        { id: 'pneumaticcraft:thermo_plant/reinforced_pressure_tube' },
+        { id: /pneumaticcraft:thermo_plant\/.*_drill_bit/ },
+
+        { id: 'powah:crafting/dielectric_rod_h' },
+        { id: 'powah:crafting/dielectric_paste' },
+        { id: 'powah:crafting/dielectric_paste_2' },
+        { id: 'powah:energizing/blazing_crystal' },
+        { id: /powah:crafting\/energizing_rod_/ },
+        { id: /powah:crafting\/(cable|capacitor|reactor|energ.*|.*_cell|battery|player.*|ender.*)_(blazing|hardened)/ },
+
+        { id: 'quark:tools/crafting/runes/rainbow_rune' },
+
+        { id: 'rftoolsbase:dimensionalshard' },
+        { id: 'rftoolsbase:infused_diamond' },
+
+        { id: `spirit:soul_engulfing/soul_powder` },
+        { id: `spirit:soul_engulfing/soul_powder_block` },
+        { id: `spirit:soul_engulfing/soul_slate` },
+        { id: `spirit:soul_engulfing/soul_steel` },
+        { id: `spirit:soul_engulfing/soul_steel_block` },
 
         { id: 'supplementaries:jar' },
+        { id: 'supplementaries:soap' },
 
         { id: 'thermal:enderium_dust_2' },
         { id: 'thermal:lumium_dust_4' },
@@ -78,12 +125,21 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:invar_dust_3' },
         { id: 'thermal:bronze_dust_4' },
         { id: 'thermal:jar_4' },
+        { id: 'thermal:beekeeper_fabric' },
+        { id: 'thermal:diving_fabric' },
+        { id: 'thermal:hazmat_fabric' },
+        { id: 'thermal:flux_saw' },
+        { id: 'thermal:flux_drill' },
+        { id: 'thermal:drill_head' },
+        { id: 'thermal:saw_blade' },
 
         { id: 'twilightforest:equipment/fiery_ingot_crafting' },
         { id: 'twilightforest:material/fiery_iron_ingot' },
         { id: 'twilightforest:material/fiery_iron_ingot_reversed' },
 
         { id: /chalk/, mod: 'occultism' },
+        { id: /rune_from_corundum/, mod: 'quark' },
+        { id: /_machine_frame/, mod: 'industrialforegoing' },
 
         // Disable Power Generation
 

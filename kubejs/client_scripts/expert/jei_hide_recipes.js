@@ -3,8 +3,8 @@ JEIEvents.removeRecipes((event) => {
         return;
     }
 
-    //console.log('JEI RECIPE CATEGORIES: ' + event.getCategoryIds());
-    //console.log('Valid Keys: ' + Object.keys(event));
+    // console.log('JEI RECIPE CATEGORIES: ' + event.getCategoryIds());
+    // console.log('Valid Keys: ' + Object.keys(event));
     jei.expert.recipes.hidden.forEach((recipe) => {
         recipe.recipes_by_id.forEach((id) => {
             if (recipe.category == 'minecraft:crafting') {

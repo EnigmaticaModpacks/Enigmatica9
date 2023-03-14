@@ -4,8 +4,8 @@ ServerEvents.genericLootTables((event) => {
     }
     event.modify('twilightforest:entities/snow_queen', (table) => {
         table.addPool((pool) => {
-            pool.rolls = [20, 35];
-            pool.addItem(Item.of('blue_skies:moonstone'), 1);
+            pool.rolls = [4, 8];
+            pool.addItem(Item.of('blue_skies:moonstone_block'), 1);
         });
 
         table.addPool((pool) => {

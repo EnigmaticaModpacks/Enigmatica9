@@ -210,8 +210,6 @@
 				"Recipes displaying a green aura bottle will be crafted on the altar built in the Overworld, while those with a red aura bottle must be performed on the Nether counterpart."
 				""
 				"Refer to the Book of Natural Aura's section on the Natural Altar and the Crimson Altar for a preview of the required structure."
-				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 9 instance folder to assist with this multiblock."
 			]
 			dependencies: ["5DCF7175B494CD02"]
 			dependency_requirement: "all_started"
