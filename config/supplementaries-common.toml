@@ -323,7 +323,7 @@
 		#Allows dispensers to use axes on blocks to strip logs and scrape off copper oxidation and wax
 		axe_strip = true
 		#Enables shooting ender pearls with dispensers
-		shoot_ender_pearls = true
+		shoot_ender_pearls = false
 
 	[tweaks.cake_tweaks]
 		#Allows you to place a cake on top of another
