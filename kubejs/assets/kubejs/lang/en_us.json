@@ -12,6 +12,8 @@
 
     "item.kubejs.amethyst_dust": "Amethyst Dust",
 
+    "entity.minecraft.villager.byg.forager": "Forager",
+
     "recipes.lychee.item_inside.sunstone.condition.description": "Converts around Noon. Reverts if left out too long...",
     "recipes.lychee.item_inside.moonstone.condition.description": "Converts around Midnight. Reverts if left out too long...",
     "recipes.lychee.item_inside.filter_filling.condition.description": "Place a Filter in an Ocean Biome under Y63 and above Y0. The Filter must have Water blocks at each of the cardinal direction and will fill slowly over time.",
