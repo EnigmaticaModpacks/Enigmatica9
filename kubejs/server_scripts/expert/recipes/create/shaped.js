@@ -254,6 +254,73 @@ ServerEvents.recipes((event) => {
                 E: 'pneumaticcraft:logistics_core'
             },
             id: `create:crafting/kinetics/mechanical_arm`
+        },
+        {
+            output: 'create:peculiar_bell',
+            pattern: ['A', 'B'],
+            key: {
+                A: '#forge:storage_blocks/energized_steel',
+                B: '#forge:ingots/energized_steel'
+            },
+            id: `create:crafting/curiosities/peculiar_bell`
+        },
+        {
+            output: 'create:crafter_slot_cover',
+            pattern: ['ABA'],
+            key: {
+                A: '#forge:nuggets/gold',
+                B: '#forge:plates/nickel'
+            },
+            id: `create:crafting/kinetics/crafter_slot_cover`
+        },
+        {
+            output: 'create:attribute_filter',
+            pattern: ['ABA'],
+            key: {
+                A: '#forge:nuggets/electrum',
+                B: 'thermal:beekeeper_fabric'
+            },
+            id: `create:crafting/kinetics/attribute_filter`
+        },
+        {
+            output: 'create:filter',
+            pattern: ['ABA'],
+            key: {
+                A: '#forge:nuggets/tin',
+                B: 'thermal:beekeeper_fabric'
+            },
+            id: `create:crafting/kinetics/filter`
+        },
+        {
+            output: 'create:extendo_grip',
+            pattern: [' A ', 'BAC', 'DA '],
+            key: {
+                A: 'naturesaura:ancient_stick',
+                B: '#forge:gears/compressed_iron',
+                C: 'create:brass_hand',
+                D: '#forge:wooden_grip'
+            },
+            id: `${id_prefix}extendo_grip`
+        },
+        {
+            output: 'create:rotation_speed_controller',
+            pattern: ['A', 'B', 'C'],
+            key: {
+                A: 'pneumaticcraft:module_expansion_card',
+                B: 'create:brass_casing',
+                C: '#forge:gears/compressed_iron'
+            },
+            id: `create:crafting/kinetics/rotation_speed_controller`
+        },
+        {
+            output: 'create:controls',
+            pattern: ['A', 'B', 'C'],
+            key: {
+                A: 'pneumaticcraft:module_expansion_card',
+                B: 'create:railway_casing',
+                C: '#forge:gears/compressed_iron'
+            },
+            id: `create:crafting/kinetics/controls`
         }
     ];
 

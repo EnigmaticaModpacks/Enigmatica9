@@ -45,6 +45,7 @@ ServerEvents.recipes((event) => {
 
         { id: 'create:crafting/kinetics/white_sail' },
         { id: 'create:mechanical_crafting/wand_of_symmetry' },
+        { id: 'create:mechanical_crafting/extendo_grip' },
         { id: 'create:crafting/kinetics/empty_blaze_burner' },
         { id: 'create:crafting/kinetics/mechanical_crafter' },
         { id: 'create:crafting/kinetics/brass_hand' },

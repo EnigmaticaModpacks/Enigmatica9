@@ -130,7 +130,7 @@ const entries = {
             }
         },
         {
-            key: 'item.create.mechanical_arm',
+            key: 'block.create.mechanical_arm',
             value: {
                 normal: 'Mehcanical Arm',
                 expert: 'Enchanted Arm'
@@ -290,6 +290,13 @@ const entries = {
             value: {
                 normal: 'Make a Flux Compressor so you can use Forge Energy from other mods for your compression needs.',
                 expert: 'Make a Arcane Compressor so you can use Forge Energy from other mods for your compression needs.'
+            }
+        },
+        {
+            key: 'item.pneumaticcraft.module_expansion_card',
+            value: {
+                normal: 'Module Expansion Card',
+                expert: 'Module Expansion Crystal'
             }
         }
     ],
