@@ -446,9 +446,33 @@ const entries = {
                 expert: 'Reinforced Drill Head'
             }
         }
+    ],
+    powah: [
+        {
+            key: 'block.powah.energized_steel_block',
+            value: {
+                normal: 'Block Of Energized Steel',
+                expert: 'Block of Orichalcum'
+            }
+        },
+        {
+            key: 'item.powah.steel_energized',
+            value: {
+                normal: 'Energized Steel',
+                expert: 'Orichalcum Ingot'
+            }
+        }
+    ],
+    supplementaries: [
+        {
+            key: 'block.supplementaries.brass_lantern',
+            value: {
+                normal: 'Brass Lantern',
+                expert: 'Gold Lantern'
+            }
+        }
     ]
 };
-
 Object.keys(entries).forEach((mod) => {
     let lang_file = `kubejs/assets/${mod}/lang/en_us.json`;
     let lang_json = JsonIO.read(lang_file);

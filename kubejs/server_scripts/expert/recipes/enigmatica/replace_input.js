@@ -83,6 +83,26 @@ ServerEvents.recipes((event) => {
             filter: { mod: 'powah' },
             to_replace: 'powah:ender_core',
             replace_with: 'occultism:stable_wormhole'
+        },
+        {
+            filter: {},
+            to_replace: '#forge:nuggets/brass',
+            replace_with: '#forge:nuggets/gold'
+        },
+        {
+            filter: {},
+            to_replace: '#forge:plates/brass',
+            replace_with: '#forge:plates/gold'
+        },
+        {
+            filter: {},
+            to_replace: '#forge:ingots/brass',
+            replace_with: '#forge:ingots/energized_steel'
+        },
+        {
+            filter: {},
+            to_replace: '#forge:storage_blocks/brass',
+            replace_with: '#forge:storage_blocks/energized_steel'
         }
     ];
 
