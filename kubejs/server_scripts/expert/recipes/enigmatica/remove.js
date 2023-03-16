@@ -159,6 +159,7 @@ ServerEvents.recipes((event) => {
         { id: 'mekanismgenerators:control_rod_assembly' },
         { id: 'mekanismgenerators:hohlraum' },
         { id: 'mekanismgenerators:laser_focus_matrix' },
+        { id: 'mekanismgenerators:gas_burning_generator' },
 
         { id: 'pneumaticcraft:pneumatic_dynamo' },
 

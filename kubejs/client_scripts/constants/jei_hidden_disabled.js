@@ -229,6 +229,7 @@ jei.expert.items.disabled = [
     'mekanism:ultimate_energy_cube',
     'mekanism:ultimate_induction_cell',
     'mekanism:ultimate_induction_provider',
+    'mekanismgenerators:gas_burning_generator',
     'mekanismgenerators:advanced_solar_generator',
     'mekanismgenerators:bio_generator',
     'mekanismgenerators:control_rod_assembly',
