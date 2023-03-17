@@ -66,6 +66,12 @@ ServerEvents.recipes((event) => {
         { id: 'immersiveengineering:crafting/blastbrick' },
         { id: 'immersiveengineering:crafting/toolupgrade_drill_lube' },
         { id: /immersiveengineering:crafting\/wire_/ },
+        { id: 'immersiveengineering:blueprint/electron_tube' },
+        { id: 'immersiveengineering:blueprint/light_bulb' },
+        { id: /immersiveengineering:blueprint\/bullet_.*/ },
+        { id: /immersiveengineering:metalpress\/bullet_.*/ },
+        { id: /empty_shell/, mod: 'immersiveengineering' },
+        { id: /empty_casing/, mod: 'immersiveengineering' },
 
         { id: 'industrialforegoing:washing_factory' },
         { id: 'industrialforegoing:fermentation_station' },

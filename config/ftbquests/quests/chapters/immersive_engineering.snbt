@@ -1559,7 +1559,7 @@
 			description: [
 				"The Speedloader will automatically reload the Revolver when it runs out of ammo, making it a great way to continue the fight. "
 				""
-				"To refill it on the go, simply right click and place your cartridges in it. However, it can also be filled in a 3x3 crafting grid by surrounding it with ammo. Combined with some automation and a Player Module, this could mean never running out of ammo again."
+				"To refill it on the go, simply right click and place your cartridges in it. However, it can also be filled in a 3x3 crafting grid by surrounding it with ammo. "
 			]
 			dependencies: ["52DFEA36FFFBCDD5"]
 			id: "3FC9C9BA6C4B9597"

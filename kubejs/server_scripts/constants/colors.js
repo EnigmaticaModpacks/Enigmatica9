@@ -18,3 +18,22 @@ const colors = [
     'gray',
     'light_gray'
 ];
+
+const flare_colors = {
+    white: 16383741,
+    orange: 16351261,
+    magenta: 13061821,
+    light_blue: 3847130,
+    yellow: 16701501,
+    lime: 8439583,
+    pink: 15961002,
+    gray: 4673362,
+    light_gray: 10329495,
+    cyan: 1481884,
+    purple: 8991416,
+    blue: 3949738,
+    brown: 8606770,
+    green: 6192150,
+    red: 11546150,
+    black: 1908001
+};

@@ -321,6 +321,33 @@ ServerEvents.recipes((event) => {
                 C: '#forge:gears/compressed_iron'
             },
             id: `create:crafting/kinetics/controls`
+        },
+        {
+            output: '3x create:train_door',
+            pattern: ['AA', 'BB', 'AA'],
+            key: {
+                A: '#forge:plates/obsidian',
+                B: '#forge:plates/gold'
+            },
+            id: `create:crafting/kinetics/train_door`
+        },
+        {
+            output: '6x create:train_trapdoor',
+            pattern: ['ABA', 'ABA'],
+            key: {
+                A: '#forge:plates/obsidian',
+                B: '#forge:plates/gold'
+            },
+            id: `create:crafting/kinetics/train_trapdoor`
+        },
+        {
+            output: '4x create:nixie_tube',
+            pattern: ['AA', 'BB'],
+            key: {
+                A: 'immersiveengineering:electron_tube',
+                B: '#forge:treated_wood_slab'
+            },
+            id: `create:crafting/kinetics/nixie_tube`
         }
     ];
 

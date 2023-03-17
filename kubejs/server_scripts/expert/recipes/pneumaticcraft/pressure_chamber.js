@@ -74,6 +74,138 @@ ServerEvents.recipes((event) => {
             ],
             pressure: 1.0,
             id: 'pneumaticcraft:pressure_chamber/turbine_blade'
+        },
+        {
+            results: [{ item: 'immersiveengineering:electron_tube', count: 4 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:wires/copper', count: 4 },
+                { type: 'pneumaticcraft:stacked_item', item: 'minecraft:glass_bottle', count: 4 },
+                { item: 'create:polished_rose_quartz' },
+                { tag: 'forge:plates/nickel' }
+            ],
+            pressure: -0.5,
+            id: `${id_prefix}electron_tube`
+        },
+        {
+            results: [{ item: 'immersiveengineering:light_bulb', count: 4 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:wires/copper', count: 4 },
+                { type: 'pneumaticcraft:stacked_item', item: 'minecraft:glass_bottle', count: 4 },
+                { type: 'pneumaticcraft:stacked_item', item: 'minecraft:string', count: 4 },
+                { item: 'ars_nouveau:fire_essence' }
+            ],
+            pressure: -0.5,
+            id: `${id_prefix}light_bulb`
+        },
+        {
+            results: [{ item: 'immersiveengineering:empty_casing', count: 64 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/steeleaf', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'naturesaura:gold_powder', count: 8 },
+                { item: 'ars_nouveau:manipulation_essence' }
+            ],
+            pressure: 1.0,
+            id: `${id_prefix}empty_casing`
+        },
+        {
+            results: [{ item: 'immersiveengineering:casull', count: 64 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:empty_casing', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'pneumaticcraft:compressed_stone', count: 8 },
+                { item: 'ars_nouveau:fire_essence' }
+            ],
+            pressure: 1.0,
+            id: `${id_prefix}bullet_casull`
+        },
+        {
+            results: [{ item: 'immersiveengineering:silver', count: 64 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { item: 'ars_elemental:anima_essence' },
+                { item: 'ars_nouveau:manipulation_essence' }
+            ],
+            pressure: 1.0,
+            id: `${id_prefix}bullet_silver`
+        },
+        {
+            results: [{ item: 'immersiveengineering:homing', count: 64 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { item: 'ars_nouveau:air_essence' },
+                { item: 'ars_nouveau:manipulation_essence' }
+            ],
+            pressure: 1.0,
+            id: `${id_prefix}bullet_homing`
+        },
+        {
+            results: [{ item: 'immersiveengineering:armor_piercing', count: 64 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { item: 'ars_nouveau:earth_essence' },
+                { item: 'ars_nouveau:manipulation_essence' }
+            ],
+            pressure: 1.0,
+            id: `${id_prefix}bullet_armor_piercing`
+        },
+        {
+            results: [{ item: 'immersiveengineering:he', count: 64 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { item: 'ars_nouveau:fire_essence' },
+                { item: 'ars_nouveau:manipulation_essence' }
+            ],
+            pressure: 1.0,
+            id: `${id_prefix}bullet_he`
+        },
+        {
+            results: [{ item: 'immersiveengineering:potion', count: 64 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { item: 'ars_nouveau:water_essence' },
+                { item: 'ars_nouveau:manipulation_essence' }
+            ],
+            pressure: 1.0,
+            id: `${id_prefix}bullet_potion`
+        },
+        {
+            results: [{ item: 'immersiveengineering:wolfpack', count: 64 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:homing', count: 64 },
+                { item: 'ars_nouveau:conjuration_essence' },
+                { item: 'ars_nouveau:manipulation_essence' }
+            ],
+            pressure: 1.0,
+            id: `${id_prefix}bullet_wolfpack`
+        },
+        {
+            results: [{ item: 'immersiveengineering:empty_shell', count: 64 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/steeleaf', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'minecraft:paper', count: 8 },
+                { item: 'ars_nouveau:manipulation_essence' }
+            ],
+            pressure: 1.0,
+            id: `${id_prefix}empty_shell`
+        },
+        {
+            results: [{ item: 'immersiveengineering:buckshot', count: 64 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:empty_shell', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'occultism:burnt_otherstone', count: 8 },
+                { item: 'ars_nouveau:fire_essence' }
+            ],
+            pressure: 1.0,
+            id: `${id_prefix}bullet_buckshot`
+        },
+        {
+            results: [{ item: 'immersiveengineering:dragons_breath', count: 64 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:buckshot', count: 64 },
+                { item: 'minecraft:dragon_breath' },
+                { item: 'ars_nouveau:manipulation_essence' }
+            ],
+            pressure: 1.0,
+            id: `${id_prefix}bullet_dragons_breath`
         }
     ];
 
