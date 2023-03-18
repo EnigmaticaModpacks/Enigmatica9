@@ -129,6 +129,70 @@ ServerEvents.recipes((event) => {
         }
     ];
 
+    const gunparts = ['barrel', 'hammer', 'drum'];
+
+    gunparts.forEach((gunpart) => {
+        recipes.push(
+            {
+                output: {
+                    item: `immersiveengineering:gunpart_${gunpart}`,
+                    nbt: '{generatePerks:1b,perks:{luck:0.50d}}'
+                },
+                pedestalItems: [
+                    { item: { item: 'ars_nouveau:earth_essence' } },
+                    { item: { item: 'ars_nouveau:earth_essence' } },
+                    { item: { item: 'ars_nouveau:earth_essence' } },
+                    { item: { tag: 'forge:storage_blocks/diamond' } },
+                    { item: { tag: 'forge:storage_blocks/lapis' } },
+                    { item: { tag: 'forge:storage_blocks/lapis' } },
+                    { item: { tag: 'forge:storage_blocks/source' } },
+                    { item: { tag: 'forge:storage_blocks/source' } }
+                ],
+                reagent: [{ item: `immersiveengineering:gunpart_${gunpart}` }],
+                sourceCost: 0,
+                id: `${id_prefix}${gunpart}_luck`
+            },
+            {
+                output: {
+                    item: `immersiveengineering:gunpart_${gunpart}`,
+                    nbt: '{generatePerks:1b,perks:{cooldown:0.85d}}'
+                },
+                pedestalItems: [
+                    { item: { item: 'ars_nouveau:air_essence' } },
+                    { item: { item: 'ars_nouveau:air_essence' } },
+                    { item: { item: 'ars_nouveau:air_essence' } },
+                    { item: { tag: 'forge:storage_blocks/diamond' } },
+                    { item: { tag: 'forge:storage_blocks/lapis' } },
+                    { item: { tag: 'forge:storage_blocks/lapis' } },
+                    { item: { tag: 'forge:storage_blocks/source' } },
+                    { item: { tag: 'forge:storage_blocks/source' } }
+                ],
+                reagent: [{ item: `immersiveengineering:gunpart_${gunpart}` }],
+                sourceCost: 0,
+                id: `${id_prefix}${gunpart}_cooldown`
+            },
+            {
+                output: {
+                    item: `immersiveengineering:gunpart_${gunpart}`,
+                    nbt: '{generatePerks:1b,perks:{noise:0.50d}}'
+                },
+                pedestalItems: [
+                    { item: { item: 'ars_nouveau:water_essence' } },
+                    { item: { item: 'ars_nouveau:water_essence' } },
+                    { item: { item: 'ars_nouveau:water_essence' } },
+                    { item: { tag: 'forge:wool' } },
+                    { item: { tag: 'forge:storage_blocks/lapis' } },
+                    { item: { tag: 'forge:storage_blocks/lapis' } },
+                    { item: { tag: 'forge:storage_blocks/source' } },
+                    { item: { tag: 'forge:storage_blocks/source' } }
+                ],
+                reagent: [{ item: `immersiveengineering:gunpart_${gunpart}` }],
+                sourceCost: 0,
+                id: `${id_prefix}${gunpart}_noise`
+            }
+        );
+    });
+
     recipes.forEach((recipe) => {
         recipe.type = 'ars_nouveau:enchanting_apparatus';
         event.custom(recipe).id(recipe.id);

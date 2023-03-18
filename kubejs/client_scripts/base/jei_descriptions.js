@@ -263,11 +263,53 @@ JEIEvents.information((event) => {
                 ` `,
                 `To obtain, Right-Click a Quartz Knife in the air then insert a valid ingot and provide the desired name.`
             ]
+        },
+        {
+            items: [
+                'immersiveengineering:alloy_smelter',
+                'immersiveengineering:arc_furnace',
+                'immersiveengineering:assembler',
+                'immersiveengineering:auto_workbench',
+                'immersiveengineering:blast_furnace',
+                'immersiveengineering:bottling_machine',
+                'immersiveengineering:coke_oven',
+                'immersiveengineering:crusher',
+                'immersiveengineering:diesel_generator',
+                'immersiveengineering:excavator',
+                'immersiveengineering:fermenter',
+                'immersiveengineering:advanced_blast_furnace',
+                'immersiveengineering:lightning_rod',
+                'immersiveengineering:metal_press',
+                'immersiveengineering:mixer',
+                'immersiveengineering:refinery',
+                'immersiveengineering:sawmill',
+                'immersiveengineering:silo',
+                'immersiveengineering:squeezer',
+                'immersiveengineering:tank'
+            ],
+            text: [`This is a multi-block structure. Refer to the Engineer's Manual for instructions on building it.`]
+        },
+        {
+            items: ['immersiveengineering:excavator'],
+            text: [
+                `Digs up materials from deposits deep in the ground. Refer to the Engineer's Manual for a full listing of deposits and how to locate them.`
+            ]
+        },
+        {
+            items: ['immersiveengineering:diesel_generator'],
+            text: [`Generates FE by burning liquid fuels. Accepts the same fuels as the Thermal Compression Dynamo.`]
+        },
+        {
+            items: ['immersiveengineering:lightning_rod'],
+            text: [
+                `Generates FE randomly during rainy or stormy weather. A fake lightning bolt will strike the Lightning Rod to indicate that this has happened. The chances of generating FE may be increased by building a larger Lightning Rod on this base.`
+            ]
         }
     ];
 
     descriptions.forEach((description) => {
         description.items.forEach((item) => {
+            // console.log(`Descriptions: ${item}`);
             event.addItem(item, description.text);
         });
     });
@@ -288,6 +330,7 @@ JEIEvents.information((event) => {
 
     jei.base.items.disabled.forEach((item) => {
         if (item !== air) {
+            // console.log(`Disabled: ${item}`);
             event.addItem(item, disabled_item_message);
         }
     });

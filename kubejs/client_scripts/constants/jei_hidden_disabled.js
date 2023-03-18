@@ -190,8 +190,6 @@ jei.expert.items.disabled = [
     'immersiveengineering:diesel_generator',
     'immersiveengineering:auto_workbench',
     'immersiveengineering:excavator',
-    'immersiveengineering:bucket_wheel',
-    'immersiveengineering:excavator_full',
     'immersiveengineering:toolupgrade_drill_lube',
     'industrialforegoing:biofuel_generator',
     'industrialforegoing:fermentation_station',

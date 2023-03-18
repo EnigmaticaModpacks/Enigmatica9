@@ -452,6 +452,13 @@ const entries = {
                 normal: 'Steel Drill Head',
                 expert: 'Reinforced Drill Head'
             }
+        },
+        {
+            key: 'item.immersiveengineering.revolver',
+            value: {
+                normal: 'Revolver',
+                expert: 'Spellbound Revolver'
+            }
         }
     ],
     powah: [

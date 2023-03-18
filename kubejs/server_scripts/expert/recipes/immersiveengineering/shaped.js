@@ -253,6 +253,36 @@ ServerEvents.recipes((event) => {
                 C: 'immersiveengineering:redstone_acid_bucket'
             },
             id: `immersiveengineering:crafting/toolupgrade_drill_fortune`
+        },
+        {
+            output: 'immersiveengineering:gunpart_drum',
+            pattern: [' AB', 'ACA', ' A '],
+            key: {
+                A: '#forge:ingots/compressed_iron',
+                B: 'ars_nouveau:earth_essence',
+                C: '#forge:rods/aluminum'
+            },
+            id: `immersiveengineering:crafting/gunpart_drum`
+        },
+        {
+            output: 'immersiveengineering:gunpart_barrel',
+            pattern: ['  B', ' C ', 'A  '],
+            key: {
+                A: '#forge:ingots/compressed_iron',
+                B: 'ars_nouveau:air_essence',
+                C: '#forge:rods/aluminum'
+            },
+            id: `immersiveengineering:crafting/gunpart_barrel`
+        },
+        {
+            output: 'immersiveengineering:gunpart_hammer',
+            pattern: ['  B', 'AA ', ' C '],
+            key: {
+                A: '#forge:ingots/compressed_iron',
+                B: 'ars_nouveau:fire_essence',
+                C: '#forge:rods/aluminum'
+            },
+            id: `immersiveengineering:crafting/gunpart_hammer`
         }
     ];
 
