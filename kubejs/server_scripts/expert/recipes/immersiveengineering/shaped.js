@@ -388,7 +388,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'immersiveengineering:toolupgrade_revolver_bayonet',
-            pattern: ['  A', 'BA ', 'CB '],
+            pattern: ['BA', 'CB'],
             key: {
                 A: '#forge:ingots/compressed_iron',
                 B: '#forge:nuggets/bronze',
