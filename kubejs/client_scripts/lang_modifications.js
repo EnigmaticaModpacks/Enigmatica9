@@ -156,6 +156,22 @@ const entries = {
                 normal: 'Apply Andesite Alloy to stripped wood, creating a basic casing for your machines',
                 expert: 'Apply Compressed Stone to stripped wood, creating a basic casing for your machines'
             }
+        },
+        {
+            key: 'block.create.brass_ladder',
+            value: {
+                normal: 'Brass Ladder',
+                expert: 'Fancy Ladder'
+            }
+        }
+    ],
+    createaddition: [
+        {
+            key: 'block.createaddition.electric_motor',
+            value: {
+                normal: 'Electric Motor',
+                expert: 'Eldritch Engine'
+            }
         }
     ],
     pneumaticcraft: [

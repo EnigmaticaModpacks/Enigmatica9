@@ -76,18 +76,17 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: 'ae2:quartz_glass',
-                B: 'immersiveengineering:wirecoil_electrum',
+                B: '#forge:wires/electrum',
                 C: 'thermal:machine_frame'
             },
             id: `thermal:energy_cell_frame`
         },
         {
             output: '4x thermal:redstone_servo',
-            pattern: ['ABA', 'BCB', 'ABA'],
+            pattern: [' A ', 'ABA', ' A '],
             key: {
                 A: 'immersiveengineering:wirecoil_redstone',
-                B: 'immersiveengineering:wirecoil_copper',
-                C: '#forge:ingots/aluminum'
+                B: '#forge:ingots/aluminum'
             },
             id: `thermal:redstone_servo`
         }
