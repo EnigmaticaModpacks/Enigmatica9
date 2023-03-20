@@ -55,6 +55,8 @@ ServerEvents.recipes((event) => {
 
         { id: 'createaddition:mechanical_crafting/tesla_coil' },
         { id: 'createaddition:mechanical_crafting/electric_motor' },
+        { id: /createaddition:crafting\/capacitor/ },
+        { id: 'createaddition:crafting/portable_energy_interface' },
 
         { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
         { id: 'hexerei:willow_broom_from_mixing_cauldron' },

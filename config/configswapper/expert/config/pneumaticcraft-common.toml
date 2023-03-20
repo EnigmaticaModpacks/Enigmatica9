@@ -144,10 +144,10 @@
 ["Minigun Properties"]
 	#Standard Ammo cartridge size
 	#Range: 1 ~ 30000
-	standard_ammo_cartridge_size = 1000
+	standard_ammo_cartridge_size = 5000
 	#Base bullet damage of the Sentry Gun, Handheld Minigun, and Drone Minigun, before ammo bonuses are considered
 	#Range: 0.0 ~ 1.7976931348623157E308
-	base_damage = 4.0
+	base_damage = 10.0
 	#Base range of Minigun, before Range Upgrades are considered
 	#Range: 5 ~ 100
 	base_range = 50
@@ -159,20 +159,20 @@
 
 	#Armor Piercing Ammo cartridge size
 	#Range: 1 ~ 30000
-	armor_piercing_ammo_cartridge_size = 750
+	armor_piercing_ammo_cartridge_size = 5000
 	#Armor Piercing Ammo damage multiplier (relative to standard ammo)
 	#Range: 0.0 ~ 1.7976931348623157E308
-	ap_ammo_damage_multiplier = 1.25
+	ap_ammo_damage_multiplier = 1.50
 	#Armor Piercing Ammo percentage chance to ignore target's armor
 	#Range: 1 ~ 100
 	ap_ammo_ignore_armor_chance = 100	
 	
 	#Explosive Ammo cartridge size
 	#Range: 1 ~ 30000
-	explosive_ammo_cartridge_size = 500
+	explosive_ammo_cartridge_size = 5000
 	#Minigun Explosive Ammo damage multiplier (relative to standard ammo)
 	#Range: 0.0 ~ 1.7976931348623157E308
-	explosive_ammo_damage_multiplier = 0.2
+	explosive_ammo_damage_multiplier = 1.0
 	#Explosive Ammo base percentage chance to cause an explosion
 	#Range: > 0
 	explosive_ammo_explosion_chance = 50	
@@ -184,7 +184,7 @@
 	
 	#Freezing Ammo cartridge size
 	#Range: > 0
-	freezing_ammo_cartridge_size = 500
+	freezing_ammo_cartridge_size = 5000
 	#Damage done to entities within the fake 'ice' blocks cause by freezing ammo
 	#Range: 0.0 ~ 1.7976931348623157E308
 	freezing_ammo_fake_ice_damage = 1.0
@@ -197,10 +197,10 @@
 	
 	#Incendiary Ammo cartridge size
 	#Range: 1 ~ 30000
-	incendiary_ammo_cartridge_size = 500
+	incendiary_ammo_cartridge_size = 5000
 	#Incendiary ammo base percentage chance to ignite blocks
 	#Range: 1 ~ 100
-	incendiary_ammo_block_ignite_chance = 20
+	incendiary_ammo_block_ignite_chance = 10
 	#Incendiary ammo base percentage chance to ignite entities
 	#Range: 1 ~ 100
 	incendiary_ammo_entity_ignite_chance = 100
@@ -210,7 +210,7 @@
 		
 	#Weighted Ammo cartridge size
 	#Range: 1 ~ 30000
-	weighted_ammo_cartridge_size = 500
+	weighted_ammo_cartridge_size = 5000
 	#Weighted Ammo damage multiplier (relative to standard ammo)
 	#Range: 0.0 ~ 1.7976931348623157E308
 	weighted_ammo_damage_multiplier = 2.5

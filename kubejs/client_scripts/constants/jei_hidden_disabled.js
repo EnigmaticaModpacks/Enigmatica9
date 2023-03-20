@@ -171,6 +171,8 @@ jei.expert.items.disabled = [
     'create:empty_blaze_burner',
     'createaddition:alternator',
     'createaddition:modular_accumulator',
+    'createaddition:capacitor',
+    'createaddition:portable_energy_interface',
     'immersiveengineering:capacitor_hv',
     'immersiveengineering:capacitor_lv',
     'immersiveengineering:capacitor_mv',

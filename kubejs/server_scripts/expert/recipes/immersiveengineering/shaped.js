@@ -417,6 +417,64 @@ ServerEvents.recipes((event) => {
                 C: '#forge:rods/treated_wood'
             },
             id: `immersiveengineering:crafting/wirecoil_redstone`
+        },
+        {
+            output: 'immersiveengineering:railgun',
+            pattern: [' EA', 'BAC', 'DC '],
+            key: {
+                A: '#forge:rods/aluminum',
+                B: 'immersiveengineering:component_electronic',
+                C: 'powah:capacitor_spirited',
+                D: '#forge:wooden_grip',
+                E: 'ars_nouveau:manipulation_essence'
+            },
+            id: `immersiveengineering:crafting/railgun`
+        },
+        {
+            output: 'immersiveengineering:toolupgrade_railgun_scope',
+            pattern: ['ABC', 'B B', 'CBA'],
+            key: {
+                A: '#forge:nuggets/bronze',
+                B: '#forge:rods/aluminum',
+                C: 'occultism:spirit_attuned_gem'
+            },
+            id: `immersiveengineering:crafting/toolupgrade_railgun_scope`
+        },
+        {
+            output: 'immersiveengineering:turret_chem',
+            pattern: [' A ', ' BC', 'DEF'],
+            key: {
+                A: 'immersiveengineering:toolupgrade_railgun_scope',
+                B: 'immersiveengineering:chemthrower',
+                C: 'immersiveengineering:component_electronic',
+                D: 'thermal:fluid_cell_frame',
+                E: 'immersiveengineering:turntable',
+                F: 'immersiveengineering:rs_engineering'
+            },
+            id: `immersiveengineering:crafting/turret_chem`
+        },
+        {
+            output: 'immersiveengineering:turret_gun',
+            pattern: [' A ', ' BC', 'DEF'],
+            key: {
+                A: 'immersiveengineering:toolupgrade_railgun_scope',
+                B: 'immersiveengineering:revolver',
+                C: 'immersiveengineering:component_electronic',
+                D: 'immersiveengineering:toolupgrade_revolver_magazine',
+                E: 'immersiveengineering:turntable',
+                F: 'immersiveengineering:rs_engineering'
+            },
+            id: `immersiveengineering:crafting/turret_gun`
+        },
+        {
+            output: 'immersiveengineering:toolupgrade_railgun_capacitors',
+            pattern: ['A C', 'BA ', ' BA'],
+            key: {
+                A: '#forge:plates/constantan',
+                B: '#forge:ingots/compressed_iron',
+                C: 'ars_nouveau:air_essence'
+            },
+            id: `immersiveengineering:crafting/toolupgrade_railgun_capacitors`
         }
     ];
 

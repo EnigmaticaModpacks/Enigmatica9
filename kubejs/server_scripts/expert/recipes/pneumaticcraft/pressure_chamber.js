@@ -206,6 +206,102 @@ ServerEvents.recipes((event) => {
             ],
             pressure: 1.0,
             id: `${id_prefix}bullet_dragons_breath`
+        },
+        {
+            results: [{ item: 'pneumaticcraft:gun_ammo', count: 1 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'ars_nouveau:conjuration_essence', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', item: 'thermal:blitz_powder', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/compressed_iron', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 }
+            ],
+            pressure: 4.0,
+            id: 'pneumaticcraft:gun_ammo'
+        },
+        {
+            results: [{ item: 'pneumaticcraft:gun_ammo_ap', count: 1 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'ars_nouveau:conjuration_essence', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', item: 'thermal:basalz_powder', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/compressed_iron', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:armor_piercing', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:armor_piercing', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:armor_piercing', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:armor_piercing', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:armor_piercing', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:armor_piercing', count: 64 }
+            ],
+            pressure: 4.0,
+            id: 'pneumaticcraft:gun_ammo_ap'
+        },
+        {
+            results: [{ item: 'pneumaticcraft:gun_ammo_freezing', count: 1 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'ars_nouveau:conjuration_essence', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', item: 'thermal:blizz_powder', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/compressed_iron', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 }
+            ],
+            pressure: 4.0,
+            id: 'pneumaticcraft:gun_ammo_freezing'
+        },
+        {
+            results: [{ item: 'pneumaticcraft:gun_ammo_explosive', count: 1 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'ars_nouveau:conjuration_essence', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', item: 'minecraft:blaze_powder', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/compressed_iron', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:he', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:he', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:he', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:he', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:he', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:he', count: 64 }
+            ],
+            pressure: 4.0,
+            id: 'pneumaticcraft:gun_ammo_explosive'
+        },
+        {
+            results: [{ item: 'pneumaticcraft:gun_ammo_incendiary', count: 1 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'ars_nouveau:conjuration_essence', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', item: 'minecraft:blaze_powder', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/compressed_iron', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 }
+            ],
+            pressure: 4.0,
+            id: 'pneumaticcraft:gun_ammo_incendiary'
+        },
+        {
+            results: [{ item: 'pneumaticcraft:gun_ammo_weighted', count: 1 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'ars_nouveau:conjuration_essence', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', item: 'thermal:basalz_powder', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/compressed_iron', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 }
+            ],
+            pressure: 4.0,
+            id: 'pneumaticcraft:gun_ammo_weighted'
         }
     ];
 

@@ -480,7 +480,7 @@ const entries = {
             key: 'item.immersiveengineering.component_electronic',
             value: {
                 normal: 'Electronic Component',
-                expert: 'Logic Control Crystal'
+                expert: 'Runic Control Crystal'
             }
         }
     ],
