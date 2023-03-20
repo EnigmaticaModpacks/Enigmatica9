@@ -1560,6 +1560,8 @@
 				"The Speedloader will automatically reload the Revolver when it runs out of ammo, making it a great way to continue the fight. "
 				""
 				"To refill it on the go, simply right click and place your cartridges in it. However, it can also be filled in a 3x3 crafting grid by surrounding it with ammo. "
+				""
+				"It is possible to automate refilling Speed Loaders inside of an Immersive Engineering Assembler. With a little ingenuity, it’s more than possible to automatically pull empty Speedloaders from one’s inventory, fill them, and send them back. "
 			]
 			dependencies: ["52DFEA36FFFBCDD5"]
 			id: "3FC9C9BA6C4B9597"
