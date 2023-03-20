@@ -306,7 +306,7 @@ ServerEvents.recipes((event) => {
             output: 'create:rotation_speed_controller',
             pattern: ['A', 'B', 'C'],
             key: {
-                A: 'pneumaticcraft:module_expansion_card',
+                A: 'immersiveengineering:component_electronic',
                 B: 'create:brass_casing',
                 C: '#forge:gears/compressed_iron'
             },
@@ -316,7 +316,7 @@ ServerEvents.recipes((event) => {
             output: 'create:controls',
             pattern: ['A', 'B', 'C'],
             key: {
-                A: 'pneumaticcraft:module_expansion_card',
+                A: 'immersiveengineering:component_electronic',
                 B: 'create:railway_casing',
                 C: '#forge:gears/compressed_iron'
             },

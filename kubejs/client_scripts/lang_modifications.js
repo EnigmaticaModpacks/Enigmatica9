@@ -475,6 +475,13 @@ const entries = {
                 normal: 'Revolver',
                 expert: 'Spellbound Revolver'
             }
+        },
+        {
+            key: 'item.immersiveengineering.component_electronic',
+            value: {
+                normal: 'Electronic Component',
+                expert: 'Logic Control Crystal'
+            }
         }
     ],
     powah: [

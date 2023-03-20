@@ -407,6 +407,16 @@ ServerEvents.recipes((event) => {
                 E: '#industrialforegoing:machine_frame/simple'
             },
             id: `immersiveengineering:crafting/cloche`
+        },
+        {
+            output: '4x immersiveengineering:wirecoil_redstone',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:redstone',
+                B: '#forge:wires/aluminum',
+                C: '#forge:rods/treated_wood'
+            },
+            id: `immersiveengineering:crafting/wirecoil_redstone`
         }
     ];
 

@@ -25,5 +25,6 @@
 	"block.immersiveengineering.stairs_steel_scaffolding_wooden_top": "Reinforced Scaffolding Stairs",
 	"item.immersiveengineering.drillhead_steel": "Reinforced Drill Head",
 	"item.immersiveengineering.rockcutter": "Rockcutter Sawblade",
-	"item.immersiveengineering.revolver": "Spellbound Revolver"
+	"item.immersiveengineering.revolver": "Spellbound Revolver",
+	"item.immersiveengineering.component_electronic": "Logic Control Crystal"
 }
