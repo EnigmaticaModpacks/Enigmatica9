@@ -26,5 +26,6 @@
 	"item.immersiveengineering.drillhead_steel": "Reinforced Drill Head",
 	"item.immersiveengineering.rockcutter": "Rockcutter Sawblade",
 	"item.immersiveengineering.revolver": "Spellbound Revolver",
-	"item.immersiveengineering.component_electronic": "Runic Control Crystal"
+	"item.immersiveengineering.component_electronic": "Runic Control Crystal",
+	"item.immersiveengineering.circuit_board": "Runic Proto-Board"
 }

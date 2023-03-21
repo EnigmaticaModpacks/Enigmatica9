@@ -489,6 +489,13 @@ const entries = {
                 normal: 'Electronic Component',
                 expert: 'Runic Control Crystal'
             }
+        },
+        {
+            key: 'item.immersiveengineering.circuit_board',
+            value: {
+                normal: 'Circuit Backplane',
+                expert: 'Runic Proto-Board'
+            }
         }
     ],
     powah: [

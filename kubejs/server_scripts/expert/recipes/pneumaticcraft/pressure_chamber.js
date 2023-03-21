@@ -302,6 +302,16 @@ ServerEvents.recipes((event) => {
             ],
             pressure: 4.0,
             id: 'pneumaticcraft:gun_ammo_weighted'
+        },
+        {
+            results: [{ item: 'immersiveengineering:circuit_board', count: 1 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:plates/plastic', count: 2 },
+                { tag: 'forge:plates/electrum' },
+                { item: 'powah:dielectric_paste' }
+            ],
+            pressure: 2.0,
+            id: `${id_prefix}circuit_board`
         }
     ];
 

@@ -126,6 +126,37 @@ ServerEvents.recipes((event) => {
             reagent: [{ item: 'minecraft:netherite_scrap' }],
             sourceCost: 5000,
             id: `${id_prefix}netherite_ingot`
+        },
+        {
+            output: { item: 'immersiveengineering:mold_plate', count: 1 },
+            pedestalItems: [{ item: { tag: 'forge:plates' } }, { item: { item: 'ars_nouveau:manipulation_essence' } }],
+            reagent: [{ item: 'pneumaticcraft:compressed_stone_slab' }],
+            sourceCost: 1000,
+            id: `${id_prefix}mold_plate`
+        },
+        {
+            output: { item: 'immersiveengineering:mold_wire', count: 1 },
+            pedestalItems: [{ item: { tag: 'forge:wires' } }, { item: { item: 'ars_nouveau:manipulation_essence' } }],
+            reagent: [{ item: 'pneumaticcraft:compressed_stone_slab' }],
+            sourceCost: 1000,
+            id: `${id_prefix}mold_wire`
+        },
+        {
+            output: { item: 'immersiveengineering:mold_rod', count: 1 },
+            pedestalItems: [
+                { item: { tag: 'forge:rods/all_metal' } },
+                { item: { item: 'ars_nouveau:manipulation_essence' } }
+            ],
+            reagent: [{ item: 'pneumaticcraft:compressed_stone_slab' }],
+            sourceCost: 1000,
+            id: `${id_prefix}mold_rod`
+        },
+        {
+            output: { item: 'immersiveengineering:mold_gear', count: 1 },
+            pedestalItems: [{ item: { tag: 'forge:gears' } }, { item: { item: 'ars_nouveau:manipulation_essence' } }],
+            reagent: [{ item: 'pneumaticcraft:compressed_stone_slab' }],
+            sourceCost: 1000,
+            id: `${id_prefix}mold_gear`
         }
     ];
 
