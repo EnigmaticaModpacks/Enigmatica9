@@ -19,5 +19,6 @@
 	"item.pneumaticcraft.drill_bit_netherite": "Soulstrider's Drill Bit",
 	"block.pneumaticcraft.flux_compressor": "Arcane Compressor",
 	"pneumaticcraft.advancement.flux_compressor.desc": "Make a Arcane Compressor so you can use Forge Energy from other mods for your compression needs.",
-	"item.pneumaticcraft.module_expansion_card": "Module Expansion Crystal"
+	"item.pneumaticcraft.module_expansion_card": "Module Expansion Crystal",
+	"entity.minecraft.villager.pneumaticcraft.mechanic": "Magitek Researcher"
 }

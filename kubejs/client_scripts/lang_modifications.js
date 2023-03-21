@@ -314,6 +314,13 @@ const entries = {
                 normal: 'Module Expansion Card',
                 expert: 'Module Expansion Crystal'
             }
+        },
+        {
+            key: 'entity.minecraft.villager.pneumaticcraft.mechanic',
+            value: {
+                normal: 'Pressure Mechanic',
+                expert: 'Magitek Researcher'
+            }
         }
     ],
     occultism: [
