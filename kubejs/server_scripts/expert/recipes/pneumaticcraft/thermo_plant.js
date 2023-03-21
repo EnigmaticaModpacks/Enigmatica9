@@ -77,6 +77,15 @@ ServerEvents.recipes((event) => {
             air_use_multiplier: 1.0,
             speed: 2.0,
             id: `${id_prefix}biofuel`
+        },
+        {
+            item_output: { item: 'pneumaticcraft:upgrade_matrix', count: 4 },
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 1000, fluid: 'industrialforegoing:latex' },
+            item_input: [{ item: 'quark:blue_rune' }],
+            pressure: 2.0,
+            air_use_multiplier: 1.0,
+            speed: 2.0,
+            id: `pneumaticcraft:thermo_plant/upgrade_matrix`
         }
     ];
 
