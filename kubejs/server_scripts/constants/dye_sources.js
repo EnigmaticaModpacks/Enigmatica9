@@ -53,13 +53,6 @@ const dye_sources = [
         tertiary: 'minecraft:glowstone_dust'
     },
     {
-        input: 'minecraft:charcoal',
-        type: 'small',
-        primary: 'minecraft:black_dye',
-        secondary: 'minecraft:black_dye',
-        tertiary: 'minecraft:black_dye'
-    },
-    {
         input: 'minecraft:bone',
         type: 'small',
         primary: 'minecraft:bone_meal',
