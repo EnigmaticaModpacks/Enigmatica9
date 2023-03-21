@@ -414,14 +414,6 @@
 	#Schematicannon
 	[schematics.schematicannon]
 		#.
-		#Amount of game ticks between shots of the cannon. Higher => Slower
-		#Range: > 1
-		schematicannonDelay = 10
-		#.
-		#Amount of block positions per tick scanned by a running cannon. Higher => Faster
-		#Range: > 1
-		schematicannonSkips = 10
-		#.
 		#% of Schematicannon's Fuel filled by 1 Gunpowder.
 		#Range: 0.0 ~ 100.0
 		schematicannonGunpowderWorth = 20.0
@@ -429,6 +421,10 @@
 		#% of Schematicannon's Fuel used for each fired block.
 		#Range: 0.0 ~ 100.0
 		schematicannonFuelUsage = 0.05000000074505806
+		#.
+		#Amount of game ticks between shots of the cannon. Higher => Slower
+		#Range: > 1
+		schematicannonDelay = 10
 
 #.
 #Gadgets and other Shenanigans added by Create

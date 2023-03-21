@@ -27,7 +27,7 @@
 	#Oil worldgen whitelist by dimension ID: add dimension ID's to this list if you want oil lake worldgen to happen ONLY in those dimensions. You can wildcard the path; e.g 'modid:*' whitelists ALL dimensions of namespace 'modid'. If this is empty, it is ignored, and 'oil_world_gen_dimension_blacklist' will be checked instead.
 	oil_world_gen_dimension_whitelist = []
 	#Oil worldgen blacklist by dimension ID: add dimension ID's to this list if you don't want oil lake worldgen to happen there. You can wildcard this; e.g 'modid:*' blacklists ALL dimensions of namespace 'modid'.
-	oil_world_gen_dimension_blacklist = []
+	oil_world_gen_dimension_blacklist = ['minecraft:*', 'blue_skies:*', 'twilightforest:*', 'the_bumblezone:*']
 
 ["Machine Properties"]
 	#Aerial Interface backwards compat: allow pre-0.8.0 behaviour of getting player's armor inventory from top face, even with Dispenser Upgrade installed
