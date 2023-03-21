@@ -22,6 +22,24 @@ ServerEvents.recipes((event) => {
             ],
             fluid: { amount: 500, tag: 'forge:phenolic_resin' },
             id: `immersiveengineering:bottling/grindingdisk`
+        },
+        {
+            results: [{ item: 'create:brass_casing', count: 4 }],
+            inputs: [
+                { item: 'thermal:sawdust_block', count: 4 },
+                { base_ingredient: { tag: 'forge:ingots/energized_steel' }, count: 1 }
+            ],
+            fluid: { amount: 100, tag: 'forge:phenolic_resin' },
+            id: `${id_prefix}brass_casing`
+        },
+        {
+            results: [{ item: 'create:andesite_casing', count: 4 }],
+            inputs: [
+                { item: 'thermal:sawdust_block', count: 4 },
+                { item: 'pneumaticcraft:compressed_stone', count: 1 }
+            ],
+            fluid: { amount: 100, tag: 'forge:phenolic_resin' },
+            id: `${id_prefix}andesite_casing`
         }
     ];
 
