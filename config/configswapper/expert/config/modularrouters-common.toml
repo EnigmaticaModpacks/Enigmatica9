@@ -98,7 +98,7 @@
 ["Energy Costs"]
 	#Energy cost (FE) to run one right-click operation for the Activator Module
 	#Range: > 0
-	activatorModuleEnergyCost = 50
+	activatorModuleEnergyCost = 150
 	#Energy cost (FE) to run one left-click (attack) operation for the Activator Module
 	#Range: > 0
 	activatorModuleEnergyCostAttack = 150
@@ -128,7 +128,7 @@
 	extruderModule2EnergyCost = 0
 	#Energy cost (FE) to run one operation for the Flinger Module
 	#Range: > 0
-	flingerModuleEnergyCost = 50
+	flingerModuleEnergyCost = 150
 	#Energy cost (FE) to run one operation for the Fluid Module Mk1
 	#Range: > 0
 	fluidModuleEnergyCost = 50
@@ -137,10 +137,10 @@
 	fluidModule2EnergyCost = 100
 	#Energy cost (FE) to run one operation for the Placer Module
 	#Range: > 0
-	placerModuleEnergyCost = 50
+	placerModuleEnergyCost = 150
 	#Energy cost (FE) to run one operation for the Player Module
 	#Range: > 0
-	playerModuleEnergyCost = 300
+	playerModuleEnergyCost = 600
 	#Energy cost (FE) to run one operation for the Puller Module Mk1
 	#Range: > 0
 	pullerModule1EnergyCost = 50
