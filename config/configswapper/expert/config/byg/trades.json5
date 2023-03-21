@@ -590,6 +590,16 @@ to make editing this file much easier.
                 },
                 {
                     config: {
+                        emerald_cost: 4,
+                        number_of_items: 24,
+                        max_uses: 20,
+                        villager_xp: 10,
+                        item: 'pneumaticcraft:programming_puzzle'
+                    },
+                    type: 'corgilib:items_for_emeralds'
+                },
+                {
+                    config: {
                         cost: 3,
                         max_uses: 10,
                         villager_xp: 15,
