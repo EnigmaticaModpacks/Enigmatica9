@@ -304,6 +304,14 @@ JEIEvents.information((event) => {
             text: [
                 `Generates FE randomly during rainy or stormy weather. A fake lightning bolt will strike the Lightning Rod to indicate that this has happened. The chances of generating FE may be increased by building a larger Lightning Rod on this base.`
             ]
+        },
+        {
+            items: ['starbunclemania:source_fluid_bucket'],
+            text: [`Use a Source Condenser to convert Source to this liquid form.`]
+        },
+        {
+            items: ['starbunclemania:source_condenser'],
+            text: [`Converts Source from nearby Source Jars into Liquefied Source, placing it in any tank below it.`]
         }
     ];
 
