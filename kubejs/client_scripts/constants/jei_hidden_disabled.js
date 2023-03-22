@@ -301,6 +301,8 @@ jei.expert.items.disabled = [
     'pneumaticcraft:solar_compressor',
     'pneumaticcraft:thermal_compressor',
     'pneumaticcraft:spawner_agitator',
+    'pneumaticcraft:jet_boots_upgrade_2',
+    'pneumaticcraft:jet_boots_upgrade_4',
     /powah:furnator/,
     /powah:magmator/,
     /powah:solar_panel/,
@@ -370,7 +372,8 @@ jei.expert.recipes.hidden = [
             'ars_nouveau:vitalic_sourcelink',
             'ars_nouveau:volcanic_sourcelink',
             'ars_nouveau:agronomic_sourcelink',
-            'ars_nouveau:conjuration_essence_to_soul_sand'
+            'ars_nouveau:conjuration_essence_to_soul_sand',
+            'ars_nouveau:blank_thread'
         ]
     },
     {

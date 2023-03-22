@@ -377,6 +377,20 @@ const entries = {
                 normal: 'Pressure Mechanic',
                 expert: 'Magitek Researcher'
             }
+        },
+        {
+            key: 'item.pneumaticcraft.jet_boots_upgrade_3',
+            value: {
+                normal: 'Jet Boots Upgrade: Tier III',
+                expert: 'Jet Boots Upgrade: Tier II'
+            }
+        },
+        {
+            key: 'item.pneumaticcraft.jet_boots_upgrade_5',
+            value: {
+                normal: 'Jet Boots Upgrade: Tier V',
+                expert: 'Jet Boots Upgrade: Tier III'
+            }
         }
     ],
     occultism: [

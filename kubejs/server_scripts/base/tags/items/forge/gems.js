@@ -12,7 +12,9 @@ ServerEvents.tags('item', (event) => {
         `powah:crystal_blazing`,
         `powah:crystal_niotic`,
         `powah:crystal_spirited`,
-        `powah:crystal_nitro`
+        `powah:crystal_nitro`,
+        `byg:therium_crystal_shard`,
+        `byg:subzero_crystal_shard`
     ]);
     event.add('forge:gems/ender', 'minecraft:ender_pearl');
     event.add('forge:gems/coal', 'minecraft:coal');
@@ -30,4 +32,7 @@ ServerEvents.tags('item', (event) => {
     event.add(`forge:gems/niotic`, `powah:crystal_niotic`);
     event.add(`forge:gems/spirited`, `powah:crystal_spirited`);
     event.add(`forge:gems/nitro`, `powah:crystal_nitro`);
+
+    event.add(`forge:gems/therium`, `byg:therium_crystal_shard`);
+    event.add(`forge:gems/subzero`, `byg:subzero_crystal_shard`);
 });

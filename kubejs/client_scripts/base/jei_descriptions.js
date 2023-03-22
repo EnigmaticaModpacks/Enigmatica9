@@ -312,6 +312,43 @@ JEIEvents.information((event) => {
         {
             items: ['starbunclemania:source_condenser'],
             text: [`Converts Source from nearby Source Jars into Liquefied Source, placing it in any tank below it.`]
+        },
+        {
+            items: ['pneumaticcraft:jet_boots_upgrade_1'],
+            text: [`● Hover Mode (Loses Altitude)`, `● Smart Hover`, `● Slowest Tier`]
+        },
+        {
+            items: ['pneumaticcraft:jet_boots_upgrade_2'],
+            text: [`● Hover Mode (Loses Altitude)`, `● Smart Hover`, `● Faster than Previous Tier`]
+        },
+        {
+            items: ['pneumaticcraft:jet_boots_upgrade_3'],
+            text: [
+                `● Builder Mode (Loses Altitude)`,
+                `● Hover Mode (Loses Altitude)`,
+                `● Smart Hover`,
+                `● Faster than Previous Tier`
+            ]
+        },
+        {
+            items: ['pneumaticcraft:jet_boots_upgrade_4'],
+            text: [
+                `● Builder Mode (Loses Altitude)`,
+                `● Hover Mode (Loses Altitude)`,
+                `● Smart Hover`,
+                `● Flight Stabilizers`,
+                `● Faster than Previous Tier`
+            ]
+        },
+        {
+            items: ['pneumaticcraft:jet_boots_upgrade_5'],
+            text: [
+                `● Builder Mode (Keeps Altitude)`,
+                `● Hover Mode (Keeps Altitude)`,
+                `● Smart Hover`,
+                `● Flight Stabilizers`,
+                `● Fastest Tier`
+            ]
         }
     ];
 

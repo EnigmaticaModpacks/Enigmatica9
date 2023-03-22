@@ -157,6 +157,83 @@ ServerEvents.recipes((event) => {
             reagent: [{ item: 'pneumaticcraft:compressed_stone_slab' }],
             sourceCost: 1000,
             id: `${id_prefix}mold_gear`
+        },
+        {
+            output: { item: 'pneumaticcraft:volume_upgrade', count: 1 },
+            pedestalItems: [
+                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { item: 'pneumaticcraft:pressure_chamber_wall' } }
+            ],
+            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            sourceCost: 0,
+            id: `${id_prefix}volume_upgrade`
+        },
+        {
+            output: { item: 'pneumaticcraft:range_upgrade', count: 1 },
+            pedestalItems: [
+                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { tag: 'forge:gems/source' } }
+            ],
+            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            sourceCost: 0,
+            id: `${id_prefix}range_upgrade`
+        },
+        {
+            output: { item: 'pneumaticcraft:security_upgrade', count: 1 },
+            pedestalItems: [
+                { item: { item: 'ars_nouveau:abjuration_essence' } },
+                { item: { item: 'pneumaticcraft:pressure_gauge' } }
+            ],
+            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            sourceCost: 0,
+            id: `${id_prefix}security_upgrade`
+        },
+        {
+            output: { item: 'pneumaticcraft:speed_upgrade', count: 1 },
+            pedestalItems: [{ item: { item: 'ars_nouveau:water_essence' } }, { item: { tag: 'forge:gems/fluix' } }],
+            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            sourceCost: 0,
+            id: `${id_prefix}speed_upgrade`
+        },
+        {
+            output: { item: 'pneumaticcraft:item_life_upgrade', count: 1 },
+            pedestalItems: [
+                { item: { item: 'ars_nouveau:abjuration_essence' } },
+                { item: { item: 'minecraft:golden_apple' } }
+            ],
+            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            sourceCost: 0,
+            id: `${id_prefix}item_life_upgrade`
+        },
+        {
+            output: { item: 'pneumaticcraft:entity_tracker_upgrade', count: 1 },
+            pedestalItems: [
+                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { item: 'ae2:charged_certus_quartz_crystal' } }
+            ],
+            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            sourceCost: 0,
+            id: `${id_prefix}entity_tracker_upgrade`
+        },
+        {
+            output: { item: 'pneumaticcraft:block_tracker_upgrade', count: 1 },
+            pedestalItems: [
+                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { item: 'ae2:charged_certus_quartz_crystal' } }
+            ],
+            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            sourceCost: 0,
+            id: `${id_prefix}block_tracker_upgrade`
+        },
+        {
+            output: { item: 'pneumaticcraft:dispenser_upgrade', count: 1 },
+            pedestalItems: [
+                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { item: 'ae2:certus_quartz_crystal' } }
+            ],
+            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            sourceCost: 0,
+            id: `${id_prefix}dispenser_upgrade`
         }
     ];
 

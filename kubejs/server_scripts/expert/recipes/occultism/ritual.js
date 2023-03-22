@@ -646,6 +646,33 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_craft_flux_compressor`
         },
         {
+            output: 'pneumaticcraft:jet_boots_upgrade_1',
+            activation_item: 'pneumaticcraft:upgrade_matrix',
+            inputs: [
+                'ars_nouveau:ritual_flight',
+                'ars_nouveau:glyph_launch',
+                'ars_nouveau:glyph_underfoot',
+                'ars_nouveau:glyph_launch',
+                'pneumaticcraft:pressure_tube',
+                'pneumaticcraft:pressure_tube',
+                'pneumaticcraft:pressure_tube',
+                'pneumaticcraft:pressure_tube',
+                '#forge:ingots/skies',
+                '#forge:ingots/skies',
+                '#forge:ingots/skies',
+                '#forge:ingots/skies'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/air',
+                display_name: 'ritual.occultism.sacrifice.air_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_jet_boots_upgrade_1',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_jet_boots_upgrade_1`
+        },
+        {
             output: '4x ae2:controller',
             activation_item: 'pneumaticcraft:logistics_core',
             inputs: [

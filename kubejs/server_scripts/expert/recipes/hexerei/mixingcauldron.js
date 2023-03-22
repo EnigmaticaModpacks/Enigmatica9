@@ -372,6 +372,69 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: `${id_prefix}familiar_ring`
+        },
+        {
+            output: 'pneumaticcraft:jet_boots_upgrade_3',
+            inputs: [
+                'pneumaticcraft:jet_boots_upgrade_1',
+                'pneumaticcraft:reinforced_pressure_tube',
+                'ars_nouveau:glyph_wind_shear',
+                'pneumaticcraft:reinforced_pressure_tube',
+                'ars_elemental:lesser_air_focus',
+                'pneumaticcraft:reinforced_pressure_tube',
+                'ars_nouveau:glyph_wind_shear',
+                'pneumaticcraft:reinforced_pressure_tube'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:slow_falling' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:slow_falling' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}jet_boots_upgrade_3`
+        },
+        {
+            output: 'pneumaticcraft:jet_boots_upgrade_5',
+            inputs: [
+                'pneumaticcraft:jet_boots_upgrade_3',
+                'pneumaticcraft:advanced_pressure_tube',
+                'ars_nouveau:glyph_glide',
+                'pneumaticcraft:advanced_pressure_tube',
+                'ars_elemental:air_focus',
+                'pneumaticcraft:advanced_pressure_tube',
+                'ars_nouveau:glyph_glide',
+                'pneumaticcraft:advanced_pressure_tube'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:long_slow_falling' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:long_slow_falling' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}jet_boots_upgrade_5`
+        },
+        {
+            output: 'ars_nouveau:blank_thread',
+            inputs: [
+                'naturesaura:gold_leaf',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'naturesaura:gold_leaf',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:long_knowledge' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:long_knowledge' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}blank_thread`
         }
     ];
 
