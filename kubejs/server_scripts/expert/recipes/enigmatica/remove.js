@@ -143,6 +143,11 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:range_upgrade' },
         { id: 'pneumaticcraft:volume_upgrade' },
 
+        { id: 'pneumaticcraft:pneumatic_helmet' },
+        { id: 'pneumaticcraft:pneumatic_chestplate' },
+        { id: 'pneumaticcraft:pneumatic_leggings' },
+        { id: 'pneumaticcraft:pneumatic_boots' },
+
         { id: 'powah:crafting/dielectric_rod_h' },
         { id: 'powah:crafting/dielectric_paste' },
         { id: 'powah:crafting/dielectric_paste_2' },

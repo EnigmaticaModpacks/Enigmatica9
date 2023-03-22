@@ -418,6 +418,7 @@ ServerEvents.recipes((event) => {
         {
             output: 'ars_nouveau:blank_thread',
             inputs: [
+                'ars_nouveau:magebloom_fiber',
                 'naturesaura:gold_leaf',
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber',

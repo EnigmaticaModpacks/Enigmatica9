@@ -234,6 +234,102 @@ ServerEvents.recipes((event) => {
             reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
             sourceCost: 0,
             id: `${id_prefix}dispenser_upgrade`
+        },
+        {
+            output: { item: 'pneumaticcraft:pneumatic_helmet' },
+            pedestalItems: [
+                { item: { item: 'pneumaticcraft:module_expansion_card' } },
+                { item: { tag: 'forge:ingots/compressed_iron' } },
+                { item: { item: 'pneumaticcraft:air_canister' } },
+                { item: { tag: 'forge:ingots/compressed_iron' } },
+                { item: { item: 'pneumaticcraft:air_canister' } },
+                { item: { tag: 'forge:ingots/compressed_iron' } },
+                { item: { item: 'pneumaticcraft:air_canister' } },
+                { item: { tag: 'forge:ingots/compressed_iron' } }
+            ],
+            reagent: [
+                { item: 'pneumaticcraft:compressed_iron_helmet' },
+                { item: 'minecraft:diamond_helmet' },
+                { item: 'naturesaura:sky_helmet' },
+                { item: 'blue_skies:charoite_helmet' },
+                { item: 'twilightforest:knightmetal_helmet' },
+                { item: 'twilightforest:steeleaf_helmet' }
+            ],
+            keepNbtOfReagent: true,
+            sourceCost: 0,
+            id: `${id_prefix}pneumatic_helmet`
+        },
+        {
+            output: { item: 'pneumaticcraft:pneumatic_chestplate' },
+            pedestalItems: [
+                { item: { item: 'pneumaticcraft:module_expansion_card' } },
+                { item: { tag: 'forge:ingots/compressed_iron' } },
+                { item: { item: 'pneumaticcraft:air_canister' } },
+                { item: { tag: 'forge:ingots/compressed_iron' } },
+                { item: { item: 'pneumaticcraft:air_canister' } },
+                { item: { tag: 'forge:ingots/compressed_iron' } },
+                { item: { item: 'pneumaticcraft:air_canister' } },
+                { item: { tag: 'forge:ingots/compressed_iron' } }
+            ],
+            reagent: [
+                { item: 'pneumaticcraft:compressed_iron_chestplate' },
+                { item: 'minecraft:diamond_chestplate' },
+                { item: 'naturesaura:sky_chest' },
+                { item: 'blue_skies:charoite_chestplate' },
+                { item: 'twilightforest:knightmetal_chestplate' },
+                { item: 'twilightforest:steeleaf_chestplate' }
+            ],
+            keepNbtOfReagent: true,
+            sourceCost: 0,
+            id: `${id_prefix}pneumatic_chestplate`
+        },
+        {
+            output: { item: 'pneumaticcraft:pneumatic_leggings' },
+            pedestalItems: [
+                { item: { item: 'pneumaticcraft:module_expansion_card' } },
+                { item: { tag: 'forge:ingots/compressed_iron' } },
+                { item: { item: 'pneumaticcraft:air_canister' } },
+                { item: { tag: 'forge:ingots/compressed_iron' } },
+                { item: { item: 'pneumaticcraft:air_canister' } },
+                { item: { tag: 'forge:ingots/compressed_iron' } },
+                { item: { item: 'pneumaticcraft:air_canister' } },
+                { item: { tag: 'forge:ingots/compressed_iron' } }
+            ],
+            reagent: [
+                { item: 'pneumaticcraft:compressed_iron_leggings' },
+                { item: 'minecraft:diamond_leggings' },
+                { item: 'naturesaura:sky_pants' },
+                { item: 'blue_skies:charoite_leggings' },
+                { item: 'twilightforest:knightmetal_leggings' },
+                { item: 'twilightforest:steeleaf_leggings' }
+            ],
+            keepNbtOfReagent: true,
+            sourceCost: 0,
+            id: `${id_prefix}pneumatic_leggings`
+        },
+        {
+            output: { item: 'pneumaticcraft:pneumatic_boots' },
+            pedestalItems: [
+                { item: { item: 'pneumaticcraft:module_expansion_card' } },
+                { item: { tag: 'forge:ingots/compressed_iron' } },
+                { item: { item: 'pneumaticcraft:air_canister' } },
+                { item: { tag: 'forge:ingots/compressed_iron' } },
+                { item: { item: 'pneumaticcraft:air_canister' } },
+                { item: { tag: 'forge:ingots/compressed_iron' } },
+                { item: { item: 'pneumaticcraft:air_canister' } },
+                { item: { tag: 'forge:ingots/compressed_iron' } }
+            ],
+            reagent: [
+                { item: 'pneumaticcraft:compressed_iron_boots' },
+                { item: 'minecraft:diamond_boots' },
+                { item: 'naturesaura:sky_shoes' },
+                { item: 'blue_skies:charoite_boots' },
+                { item: 'twilightforest:knightmetal_boots' },
+                { item: 'twilightforest:steeleaf_boots' }
+            ],
+            keepNbtOfReagent: true,
+            sourceCost: 0,
+            id: `${id_prefix}pneumatic_boots`
         }
     ];
 
