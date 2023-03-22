@@ -23,7 +23,7 @@ ServerEvents.recipes((event) => {
                 C: 'pneumaticcraft:pressure_tube',
                 D: 'minecraft:blast_furnace'
             },
-            id: `pneumaticcraft:air_compressor`
+            id: `${id_prefix}air_compressor`
         },
         {
             output: Item.of('16x pneumaticcraft:pressure_chamber_wall'),
@@ -168,6 +168,37 @@ ServerEvents.recipes((event) => {
                 D: 'thermal:fluid_cell_frame'
             },
             id: `pneumaticcraft:kerosene_lamp`
+        },
+        {
+            output: 'pneumaticcraft:turbine_rotor',
+            pattern: [' A ', ' B ', 'A A'],
+            key: {
+                A: 'pneumaticcraft:turbine_blade',
+                B: '#forge:ingots/skies'
+            },
+            id: `pneumaticcraft:turbine_rotor`
+        },
+        {
+            output: '4x pneumaticcraft:reinforced_pressure_tube',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'pneumaticcraft:pressure_tube',
+                B: 'thermal:hazmat_fabric',
+                C: 'thermal:cured_rubber'
+            },
+            id: `${id_prefix}reinforced_pressure_tube`
+        },
+        {
+            output: 'pneumaticcraft:jackhammer',
+            pattern: ['ABA', 'CDC', ' E '],
+            key: {
+                A: '#forge:wooden_grip',
+                B: 'create:andesite_casing',
+                C: 'naturesaura:gold_leaf',
+                D: 'pneumaticcraft:pressure_tube',
+                E: 'ars_nouveau:air_essence'
+            },
+            id: `pneumaticcraft:jackhammer`
         }
     ];
 

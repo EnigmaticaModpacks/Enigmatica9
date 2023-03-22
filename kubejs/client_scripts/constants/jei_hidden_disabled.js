@@ -130,12 +130,29 @@ jei.base.categories.hidden = ['twilightforest:uncrafting'];
 // Normal
 jei.normal.items.disabled = [];
 jei.normal.items.hidden = [
-    /kubejs:tree_of_life_/,
+    /kubejs:.*tree_of_life_/,
+    /kubejs:ritual_craft_/,
+    /kubejs:ritual_summon_/,
+    /kubejs:heartwood_/,
     'kubejs:summon_death_tome',
     'kubejs:teleport_everdawn',
+    'kubejs:ritual_teleport_everdawn',
     'kubejs:teleport_everbright',
+    'kubejs:ritual_teleport_everbright',
+    'kubejs:teleport_nether',
+    'kubejs:ritual_teleport_nether',
     'kubejs:pig_iron_ingot',
-    'kubejs:mystery_mash'
+    'kubejs:mystery_mash',
+    'kubejs:dream_stone',
+    'kubejs:saturated_magebloom_filter',
+    'kubejs:magebloom_filter',
+    'kubejs:dimensional_storage_crystal',
+    'kubejs:energetic_transference_matrix',
+    'kubejs:kaolin_powder',
+    'kubejs:calcined_kaolin_pearls',
+    'kubejs:kaolin_clay',
+    'kubejs:aura_leaf',
+    'kubejs:spirit_of_devotion'
 ];
 jei.normal.fluids.hidden = [];
 jei.normal.categories.hidden = [];
@@ -168,6 +185,14 @@ jei.expert.items.disabled = [
     'immersiveengineering:thermoelectric_generator',
     'immersiveengineering:transformer',
     'immersiveengineering:transformer_hv',
+    'immersiveengineering:lightning_rod',
+    'immersiveengineering:arc_furnace',
+    'immersiveengineering:diesel_generator',
+    'immersiveengineering:auto_workbench',
+    'immersiveengineering:excavator',
+    'immersiveengineering:bucket_wheel',
+    'immersiveengineering:excavator_full',
+    'immersiveengineering:toolupgrade_drill_lube',
     'industrialforegoing:biofuel_generator',
     'industrialforegoing:fermentation_station',
     'industrialforegoing:fluid_sieving_machine',
@@ -241,6 +266,12 @@ jei.expert.items.disabled = [
     'naturesaura:token_rage',
     'naturesaura:token_sorrow',
     'naturesaura:token_terror',
+    'naturesaura:shockwave_creator',
+    'naturesaura:blast_furnace_booster',
+    'naturesaura:dimension_rail_end',
+    'naturesaura:dimension_rail_nether',
+    'naturesaura:dimension_rail_overworld',
+    /occultism:chalk_.*_impure/,
     'pneumaticcraft:advanced_air_compressor',
     'pneumaticcraft:advanced_liquid_compressor',
     'pneumaticcraft:liquid_compressor',
@@ -249,30 +280,11 @@ jei.expert.items.disabled = [
     'pneumaticcraft:solar_compressor',
     'pneumaticcraft:thermal_compressor',
     'pneumaticcraft:spawner_agitator',
-    'powah:furnator_basic',
-    'powah:furnator_blazing',
-    'powah:furnator_hardened',
-    'powah:furnator_niotic',
-    'powah:furnator_nitro',
-    'powah:furnator_spirited',
-    'powah:magmator_basic',
-    'powah:magmator_blazing',
-    'powah:magmator_hardened',
-    'powah:magmator_niotic',
-    'powah:magmator_nitro',
-    'powah:magmator_spirited',
-    'powah:solar_panel_basic',
-    'powah:solar_panel_blazing',
-    'powah:solar_panel_hardened',
-    'powah:solar_panel_niotic',
-    'powah:solar_panel_nitro',
-    'powah:solar_panel_spirited',
-    'powah:thermo_generator_basic',
-    'powah:thermo_generator_blazing',
-    'powah:thermo_generator_hardened',
-    'powah:thermo_generator_niotic',
-    'powah:thermo_generator_nitro',
-    'powah:thermo_generator_spirited',
+    /powah:furnator/,
+    /powah:magmator/,
+    /powah:solar_panel/,
+    /powah:thermo_generator/,
+    /powah:(capacitor|reactor|energ.*|.*_cell|battery|player.*|ender.*)_(blazing|hardened)/,
     'superiorshields:copper_shield',
     'superiorshields:diamond_shield',
     'superiorshields:electric_shield',
@@ -298,7 +310,11 @@ jei.expert.items.disabled = [
     'thermal:dynamo_lapidary',
     'thermal:dynamo_magmatic',
     'thermal:dynamo_numismatic',
-    'thermal:dynamo_stirling'
+    'thermal:dynamo_stirling',
+    'thermal:flux_saw',
+    'thermal:flux_drill',
+    'thermal:drill_head',
+    'thermal:saw_blade'
 ];
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];
@@ -320,12 +336,25 @@ jei.expert.recipes.hidden = [
             'naturesaura:light_staff',
             'naturesaura:cave_finder',
             'naturesaura:pet_reviver',
-            'naturesaura:shockwave_creator'
+            'naturesaura:shockwave_creator',
+            'naturesaura:blast_furnace_booster',
+            'naturesaura:auto_crafter',
+            'naturesaura:death_ring',
+            'naturesaura:dimension_rail_end',
+            'naturesaura:dimension_rail_nether',
+            'naturesaura:dimension_rail_overworld',
+            'naturesaura:animal_spawner',
+            'ars_nouveau:imbuement_chamber',
+            'ars_nouveau:mycelial_sourcelink',
+            'ars_nouveau:vitalic_sourcelink',
+            'ars_nouveau:volcanic_sourcelink',
+            'ars_nouveau:agronomic_sourcelink',
+            'ars_nouveau:conjuration_essence_to_soul_sand'
         ]
     },
     {
         category: 'naturesaura:altar',
-        recipes_by_id: ['naturesaura:altar/infused_stone']
+        recipes_by_id: ['naturesaura:altar/infused_stone', 'naturesaura:altar/tainted_gold']
     },
     {
         category: 'naturesaura:tree_ritual',
@@ -348,6 +377,20 @@ jei.expert.recipes.hidden = [
             'naturesaura:offering/token_terror',
             'naturesaura:offering/token_euphoria',
             'naturesaura:offering/sky_ingot_from_gold'
+        ]
+    },
+    {
+        category: 'ars_nouveau:imbuement',
+        recipes_by_id: []
+    },
+    {
+        category: 'ars_nouveau:enchanting_apparatus',
+        recipes_by_id: [
+            'ars_nouveau:wixie_charm',
+            'ars_nouveau:starbuncle_charm',
+            'ars_nouveau:magebloom_crop',
+            'ars_nouveau:void_jar',
+            'ars_nouveau:jar_of_light'
         ]
     }
 ];

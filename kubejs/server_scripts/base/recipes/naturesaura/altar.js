@@ -5,7 +5,6 @@ ServerEvents.recipes((event) => {
         {
             output: '4x thermal:basalz_powder',
             input: 'thermal:basalz_rod',
-            aura_type: 'naturesaura:overworld',
             catalyst: 'naturesaura:crushing_catalyst',
             aura: 5000,
             time: 60,
@@ -14,7 +13,6 @@ ServerEvents.recipes((event) => {
         {
             output: '4x thermal:blitz_powder',
             input: 'thermal:blitz_rod',
-            aura_type: 'naturesaura:overworld',
             catalyst: 'naturesaura:crushing_catalyst',
             aura: 5000,
             time: 60,
@@ -23,7 +21,6 @@ ServerEvents.recipes((event) => {
         {
             output: '4x thermal:blizz_powder',
             input: 'thermal:blizz_rod',
-            aura_type: 'naturesaura:overworld',
             catalyst: 'naturesaura:crushing_catalyst',
             aura: 5000,
             time: 60,
@@ -32,7 +29,6 @@ ServerEvents.recipes((event) => {
         {
             output: '4x minecraft:blaze_powder',
             input: 'minecraft:blaze_rod',
-            aura_type: 'naturesaura:overworld',
             catalyst: 'naturesaura:crushing_catalyst',
             aura: 5000,
             time: 60,
@@ -41,7 +37,6 @@ ServerEvents.recipes((event) => {
         {
             output: 'minecraft:bamboo',
             input: 'minecraft:stick',
-            aura_type: 'naturesaura:overworld',
             catalyst: 'naturesaura:conversion_catalyst',
             aura: 600,
             time: 20,

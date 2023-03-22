@@ -12,6 +12,15 @@ ServerEvents.recipes((event) => {
                 A: 'pneumaticcraft:compressed_stone'
             },
             id: `occultism:crafting/sacrificial_bowl`
+        },
+        {
+            output: '5x occultism:wormhole_frame',
+            pattern: ['ABA', 'BAB', 'ABA'],
+            key: {
+                A: 'occultism:otherstone_frame',
+                B: '#forge:ingots/energized_steel'
+            },
+            id: `occultism:crafting/wormhole_frame`
         }
     ];
 

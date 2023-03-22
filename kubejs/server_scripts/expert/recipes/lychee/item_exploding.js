@@ -10,10 +10,10 @@ ServerEvents.recipes((event) => {
                 {
                     type: 'drop_item',
                     item: 'pneumaticcraft:compressed_stone',
-                    count: 1
+                    count: 1,
+                    contextual: { type: 'chance', chance: 0.5 }
                 }
             ],
-            contextual: { type: 'chance', chance: 0.5 },
             id: `${id_prefix}compressed_stone`
         }
     ];

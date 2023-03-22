@@ -9,7 +9,6 @@ ServerEvents.recipes((event) => {
         {
             output: 'naturesaura:infused_iron',
             input: '#forge:ingots/ironwood',
-            aura_type: 'naturesaura:overworld',
             aura: 15000,
             time: 80,
             id: 'naturesaura:altar/infused_iron'
@@ -17,7 +16,6 @@ ServerEvents.recipes((event) => {
         {
             output: 'naturesaura:infused_iron_block',
             input: '#forge:storage_blocks/ironwood',
-            aura_type: 'naturesaura:overworld',
             aura: 135000,
             time: 700,
             id: 'naturesaura:altar/infused_iron_block'
@@ -25,7 +23,6 @@ ServerEvents.recipes((event) => {
         {
             output: 'nomadictents:golden_mallet',
             input: 'nomadictents:mallet',
-            aura_type: 'naturesaura:overworld',
             aura: 500000,
             time: 1800,
             id: 'nomadictents:golden_mallet'
@@ -33,7 +30,6 @@ ServerEvents.recipes((event) => {
         {
             output: '4x kubejs:kaolin_clay',
             input: '#forge:storage_blocks/clay',
-            aura_type: 'naturesaura:overworld',
             catalyst: 'naturesaura:conversion_catalyst',
             aura: 3000,
             time: 10,
@@ -42,11 +38,40 @@ ServerEvents.recipes((event) => {
         {
             output: 'twilightforest:steeleaf_ingot',
             input: 'naturesaura:gold_leaf',
-            aura_type: 'naturesaura:overworld',
             catalyst: 'naturesaura:conversion_catalyst',
             aura: 15000,
             time: 80,
             id: `${id_prefix}steeleaf_ingot`
+        },
+        {
+            output: '4x blue_skies:sunstone_crystal',
+            input: 'blue_skies:moonstone_block',
+            aura: 100000,
+            time: 600,
+            id: `${id_prefix}sunstone_block`
+        },
+        {
+            output: '4x blue_skies:moonstone_crystal',
+            input: 'blue_skies:sunstone_block',
+            aura: 100000,
+            time: 600,
+            id: `${id_prefix}moonstone_block`
+        },
+        {
+            output: 'rftoolsbase:dimensionalshard',
+            input: 'ae2:charged_certus_quartz_crystal',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 3000,
+            time: 10,
+            id: `${id_prefix}dimensionalshard`
+        },
+        {
+            output: '4x kubejs:spirit_of_devotion',
+            input: 'rftoolsbase:infused_diamond',
+            catalyst: 'kubejs:gloaming_catalyst',
+            aura: 600,
+            time: 10,
+            id: `${id_prefix}spirit_of_devotion`
         }
     ];
 

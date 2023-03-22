@@ -49,6 +49,7 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:processing/netherite/dust_to_ancient_debris' },
 
         { id: 'minecraft:bone_meal' },
+        { id: 'minecraft:glass' },
 
         { id: 'occultism:crafting/butcher_knife' },
 

@@ -23,6 +23,17 @@ ServerEvents.recipes((event) => {
                 B: 'ars_nouveau:fire_essence'
             },
             id: `${id_prefix}fiery_blood`
+        },
+        {
+            output: 'twilightforest:moon_dial',
+            pattern: [' A ', 'BCB', 'ADA'],
+            key: {
+                A: '#forge:ingots/gold',
+                B: '#forge:nuggets/gold',
+                C: '#forge:gems/moonstone',
+                D: '#forge:dusts/redstone'
+            },
+            id: `${id_prefix}moon_dial`
         }
     ];
 
