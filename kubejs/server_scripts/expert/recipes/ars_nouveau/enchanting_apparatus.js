@@ -69,6 +69,17 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}stable_wormhole`
         },
         {
+            output: { item: 'powah:binding_card_dim' },
+            pedestalItems: [
+                { item: { item: 'rftoolsbase:dimensionalshard' } },
+                { item: { item: 'rftoolsbase:dimensionalshard' } },
+                { item: { item: 'rftoolsbase:dimensionalshard' } }
+            ],
+            reagent: [{ item: 'powah:binding_card' }],
+            sourceCost: 2000,
+            id: `${id_prefix}binding_card_dim`
+        },
+        {
             output: { item: 'ae2:crafting_unit', count: 2 },
             pedestalItems: [
                 { item: { item: 'pneumaticcraft:logistics_core' } },
@@ -440,6 +451,54 @@ ServerEvents.recipes((event) => {
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `${id_prefix}pneumatic_boots`
+        },
+        {
+            output: { item: 'mininggadgets:mininggadget_simple' },
+            pedestalItems: [
+                { item: { tag: 'forge:gems/infused_diamond' } },
+                { item: { tag: 'forge:nuggets/silver' } },
+                { item: { item: 'powah:capacitor_niotic' } },
+                { item: { tag: 'forge:wooden_grip' } },
+                { item: { item: 'ars_nouveau:glyph_break' } },
+                { item: { tag: 'forge:wooden_grip' } },
+                { item: { item: 'powah:capacitor_niotic' } },
+                { item: { tag: 'forge:nuggets/silver' } }
+            ],
+            reagent: [{ item: 'ars_nouveau:wand' }],
+            sourceCost: 0,
+            id: `${id_prefix}mininggadget_simple`
+        },
+        {
+            output: { item: 'mininggadgets:mininggadget_fancy' },
+            pedestalItems: [
+                { item: { tag: 'forge:gems/infused_diamond' } },
+                { item: { tag: 'forge:nuggets/gold' } },
+                { item: { item: 'powah:capacitor_niotic' } },
+                { item: { tag: 'forge:wooden_grip' } },
+                { item: { item: 'ars_nouveau:glyph_break' } },
+                { item: { tag: 'forge:wooden_grip' } },
+                { item: { item: 'powah:capacitor_niotic' } },
+                { item: { tag: 'forge:nuggets/gold' } }
+            ],
+            reagent: [{ item: 'ars_nouveau:wand' }],
+            sourceCost: 0,
+            id: `${id_prefix}mininggadget_fancy`
+        },
+        {
+            output: { item: 'mininggadgets:mininggadget' },
+            pedestalItems: [
+                { item: { tag: 'forge:gems/infused_diamond' } },
+                { item: { tag: 'forge:nuggets/electrum' } },
+                { item: { item: 'powah:capacitor_niotic' } },
+                { item: { tag: 'forge:wooden_grip' } },
+                { item: { item: 'ars_nouveau:glyph_break' } },
+                { item: { tag: 'forge:wooden_grip' } },
+                { item: { item: 'powah:capacitor_niotic' } },
+                { item: { tag: 'forge:nuggets/electrum' } }
+            ],
+            reagent: [{ item: 'ars_nouveau:wand' }],
+            sourceCost: 0,
+            id: `${id_prefix}mininggadget`
         }
     ];
 

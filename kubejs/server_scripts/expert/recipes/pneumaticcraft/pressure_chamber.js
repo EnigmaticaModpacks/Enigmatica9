@@ -312,6 +312,172 @@ ServerEvents.recipes((event) => {
             ],
             pressure: 2.0,
             id: `${id_prefix}circuit_board`
+        },
+        {
+            results: [{ item: 'mininggadgets:upgrade_empty' }],
+            inputs: [{ tag: 'forge:plastic' }, { item: 'pneumaticcraft:upgrade_matrix' }],
+            pressure: 2.0,
+            id: `${id_prefix}upgrade_empty`
+        },
+        {
+            results: [{ item: 'mininggadgets:upgrade_silk' }],
+            inputs: [
+                { item: 'mininggadgets:upgrade_empty' },
+                { item: 'powah:dielectric_paste' },
+                { item: 'ars_nouveau:glyph_extract' }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}upgrade_silk`
+        },
+        {
+            results: [{ item: 'mininggadgets:upgrade_fortune_1' }],
+            inputs: [
+                { item: 'mininggadgets:upgrade_empty' },
+                { item: 'powah:dielectric_paste' },
+                { item: 'ars_nouveau:glyph_fortune' }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}upgrade_fortune_1`
+        },
+        {
+            results: [{ item: 'mininggadgets:upgrade_fortune_2' }],
+            inputs: [
+                { item: 'mininggadgets:upgrade_fortune_1' },
+                { item: 'powah:dielectric_paste' },
+                { item: 'ars_nouveau:glyph_amplify' }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}upgrade_fortune_2`
+        },
+        {
+            results: [{ item: 'mininggadgets:upgrade_fortune_3' }],
+            inputs: [
+                { item: 'mininggadgets:upgrade_fortune_2' },
+                { item: 'powah:dielectric_paste' },
+                { item: 'ars_nouveau:glyph_amplify' }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}upgrade_fortune_3`
+        },
+        {
+            results: [{ item: 'mininggadgets:upgrade_range_1' }],
+            inputs: [
+                { item: 'mininggadgets:upgrade_empty' },
+                { item: 'powah:dielectric_paste' },
+                { item: 'ars_nouveau:glyph_accelerate' }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}upgrade_range_1`
+        },
+        {
+            results: [{ item: 'mininggadgets:upgrade_range_2' }],
+            inputs: [
+                { item: 'mininggadgets:upgrade_range_1' },
+                { item: 'powah:dielectric_paste' },
+                { item: 'ars_nouveau:glyph_accelerate' }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}upgrade_range_2`
+        },
+        {
+            results: [{ item: 'mininggadgets:upgrade_range_3' }],
+            inputs: [
+                { item: 'mininggadgets:upgrade_range_3' },
+                { item: 'powah:dielectric_paste' },
+                { item: 'ars_nouveau:glyph_accelerate' }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}upgrade_range_3`
+        },
+        {
+            results: [{ item: 'mininggadgets:upgrade_void_junk' }],
+            inputs: [
+                { item: 'mininggadgets:upgrade_empty' },
+                { item: 'powah:dielectric_paste' },
+                { item: 'ars_nouveau:glyph_crush' }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}upgrade_void_junk`
+        },
+        {
+            results: [{ item: 'mininggadgets:upgrade_magnet' }],
+            inputs: [
+                { item: 'mininggadgets:upgrade_empty' },
+                { item: 'powah:dielectric_paste' },
+                { item: 'ars_nouveau:glyph_pickup' }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}upgrade_magnet`
+        },
+        {
+            results: [{ item: 'mininggadgets:upgrade_light_placer' }],
+            inputs: [
+                { item: 'mininggadgets:upgrade_empty' },
+                { item: 'powah:dielectric_paste' },
+                { item: 'ars_nouveau:glyph_light' }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}upgrade_light_placer`
+        },
+        {
+            results: [{ item: 'mininggadgets:upgrade_freezing' }],
+            inputs: [
+                { item: 'mininggadgets:upgrade_empty' },
+                { item: 'powah:dielectric_paste' },
+                { item: 'ars_nouveau:glyph_freeze' }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}upgrade_freezing`
+        },
+        {
+            results: [{ item: 'mininggadgets:upgrade_efficiency_1' }],
+            inputs: [
+                { item: 'mininggadgets:upgrade_empty' },
+                { item: 'powah:dielectric_paste' },
+                { item: 'ars_nouveau:glyph_break' }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}upgrade_efficiency_1`
+        },
+        {
+            results: [{ item: 'mininggadgets:upgrade_efficiency_2' }],
+            inputs: [
+                { item: 'mininggadgets:upgrade_efficiency_1' },
+                { item: 'powah:dielectric_paste' },
+                { item: 'ars_nouveau:glyph_amplify' }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}upgrade_efficiency_2`
+        },
+        {
+            results: [{ item: 'mininggadgets:upgrade_efficiency_3' }],
+            inputs: [
+                { item: 'mininggadgets:upgrade_efficiency_2' },
+                { item: 'powah:dielectric_paste' },
+                { item: 'ars_nouveau:glyph_amplify' }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}upgrade_efficiency_3`
+        },
+        {
+            results: [{ item: 'mininggadgets:upgrade_efficiency_4' }],
+            inputs: [
+                { item: 'mininggadgets:upgrade_efficiency_3' },
+                { item: 'powah:dielectric_paste' },
+                { item: 'ars_nouveau:glyph_amplify' }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}upgrade_efficiency_4`
+        },
+        {
+            results: [{ item: 'mininggadgets:upgrade_efficiency_5' }],
+            inputs: [
+                { item: 'mininggadgets:upgrade_efficiency_4' },
+                { item: 'powah:dielectric_paste' },
+                { item: 'ars_nouveau:glyph_amplify' }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}upgrade_efficiency_5`
         }
     ];
 

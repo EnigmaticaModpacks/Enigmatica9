@@ -526,11 +526,11 @@ ServerEvents.recipes((event) => {
             inputs: [
                 'pneumaticcraft:upgrade_matrix',
                 'ars_nouveau:abjuration_essence',
-                'rftoolsbase:infused_diamond',
+                '#forge:gems/infused_diamond',
                 'ars_nouveau:abjuration_essence',
                 'ars_nouveau:glyph_self',
                 'ars_nouveau:abjuration_essence',
-                'rftoolsbase:infused_diamond',
+                '#forge:gems/infused_diamond',
                 'ars_nouveau:abjuration_essence'
             ],
             liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:resistance' } },

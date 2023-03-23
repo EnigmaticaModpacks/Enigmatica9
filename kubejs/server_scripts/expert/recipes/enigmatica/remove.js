@@ -13,8 +13,10 @@ ServerEvents.recipes((event) => {
 
         { mod: 'computercraft' },
         { mod: 'superiorshields' },
+        { mod: 'mininggadgets' },
 
         { output: /pneumaticcraft:.*_upgrade/ },
+        { output: /powah:player_transmitter.*/ },
         { output: 'ae2:silicon' },
         { output: 'ae2:formation_plane' },
         { output: 'ae2:annihilation_plane' },
@@ -143,7 +145,10 @@ ServerEvents.recipes((event) => {
         { id: 'powah:crafting/dielectric_rod_h' },
         { id: 'powah:crafting/dielectric_paste' },
         { id: 'powah:crafting/dielectric_paste_2' },
-        { id: 'powah:energizing/blazing_crystal' },
+        { id: 'powah:crafting/dielectric_casing' },
+        { id: 'powah:crafting/binding_card' },
+        { id: 'powah:crafting/aerial_pearl' },
+        { id: 'powah:energizing/ender_core' },
         { id: /powah:crafting\/energizing_rod_/ },
         { id: /powah:crafting\/(cable|capacitor|reactor|energ.*|.*_cell|battery|player.*|ender.*)_(blazing|hardened)/ },
 
