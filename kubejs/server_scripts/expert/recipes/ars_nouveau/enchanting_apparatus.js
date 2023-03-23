@@ -460,7 +460,7 @@ ServerEvents.recipes((event) => {
                 { item: { item: 'powah:capacitor_niotic' } },
                 { item: { tag: 'forge:wooden_grip' } },
                 { item: { item: 'ars_nouveau:glyph_break' } },
-                { item: { tag: 'forge:wooden_grip' } },
+                { item: { item: 'immersiveengineering:component_electronic' } },
                 { item: { item: 'powah:capacitor_niotic' } },
                 { item: { tag: 'forge:nuggets/silver' } }
             ],
@@ -476,7 +476,7 @@ ServerEvents.recipes((event) => {
                 { item: { item: 'powah:capacitor_niotic' } },
                 { item: { tag: 'forge:wooden_grip' } },
                 { item: { item: 'ars_nouveau:glyph_break' } },
-                { item: { tag: 'forge:wooden_grip' } },
+                { item: { item: 'immersiveengineering:component_electronic' } },
                 { item: { item: 'powah:capacitor_niotic' } },
                 { item: { tag: 'forge:nuggets/gold' } }
             ],
@@ -492,7 +492,7 @@ ServerEvents.recipes((event) => {
                 { item: { item: 'powah:capacitor_niotic' } },
                 { item: { tag: 'forge:wooden_grip' } },
                 { item: { item: 'ars_nouveau:glyph_break' } },
-                { item: { tag: 'forge:wooden_grip' } },
+                { item: { item: 'immersiveengineering:component_electronic' } },
                 { item: { item: 'powah:capacitor_niotic' } },
                 { item: { tag: 'forge:nuggets/electrum' } }
             ],
