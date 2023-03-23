@@ -224,6 +224,18 @@ ServerEvents.recipes((event) => {
                 E: '#forge:wooden_grip'
             },
             id: `pneumaticcraft:minigun`
+        },
+        {
+            output: 'pneumaticcraft:vacuum_pump',
+            pattern: ['ABA', 'CDC', 'EEE'],
+            key: {
+                A: 'pneumaticcraft:pressure_gauge',
+                B: 'pneumaticcraft:turbine_rotor',
+                C: 'pneumaticcraft:pressure_tube',
+                D: 'naturesaura:vacuum_bottle',
+                E: 'ae2:sky_stone_slab'
+            },
+            id: `pneumaticcraft:vacuum_pump`
         }
     ];
 

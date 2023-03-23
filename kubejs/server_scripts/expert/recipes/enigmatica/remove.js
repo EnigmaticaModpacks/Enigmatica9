@@ -14,6 +14,7 @@ ServerEvents.recipes((event) => {
         { mod: 'computercraft' },
         { mod: 'superiorshields' },
 
+        { output: /pneumaticcraft:.*_upgrade/ },
         { output: 'ae2:silicon' },
         { output: 'ae2:formation_plane' },
         { output: 'ae2:annihilation_plane' },
@@ -121,7 +122,6 @@ ServerEvents.recipes((event) => {
 
         { id: /pneumaticcraft:.*_compressor/ },
         { id: /pneumaticcraft:thermo_plant\/.*_drill_bit/ },
-        { output: /pneumaticcraft:.*_upgrade/ },
         { id: 'pneumaticcraft:explosion_crafting/compressed_iron_ingot' },
         { id: 'pneumaticcraft:explosion_crafting/compressed_iron_block' },
         { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },
