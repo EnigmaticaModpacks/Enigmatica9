@@ -351,7 +351,7 @@ ServerEvents.recipes((event) => {
                 'minecraft:golden_carrot'
             ],
             duration: 10,
-            id: `occultism:ritual/bat_familiar`
+            id: `occultism:ritual/familiar_bat`
         },
         {
             // Increases wood breaking speed

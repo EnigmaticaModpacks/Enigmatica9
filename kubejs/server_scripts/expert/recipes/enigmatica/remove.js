@@ -111,6 +111,7 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:teleportation_core' },
 
         { id: 'minecraft:netherite_ingot' },
+        { id: 'minecraft:lodestone' },
 
         { id: 'occultism:ritual/craft_dimensional_matrix' },
         { id: 'occultism:ritual/craft_storage_controller_base' },
@@ -120,8 +121,7 @@ ServerEvents.recipes((event) => {
 
         { id: /pneumaticcraft:.*_compressor/ },
         { id: /pneumaticcraft:thermo_plant\/.*_drill_bit/ },
-        { id: /pneumaticcraft:jet_boots_upgrade_/ },
-        { id: /pneumaticcraft:jumping_upgrade_/ },
+        { output: /pneumaticcraft:.*_upgrade/ },
         { id: 'pneumaticcraft:explosion_crafting/compressed_iron_ingot' },
         { id: 'pneumaticcraft:explosion_crafting/compressed_iron_block' },
         { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },
@@ -134,15 +134,6 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:spawner_agitator' },
         { id: 'pneumaticcraft:module_expansion_card' },
         { id: 'pneumaticcraft:compressed_iron_gear' },
-        { id: 'pneumaticcraft:item_life_upgrade' },
-        { id: 'pneumaticcraft:entity_tracker_upgrade' },
-        { id: 'pneumaticcraft:dispenser_upgrade' },
-        { id: 'pneumaticcraft:block_tracker_upgrade' },
-        { id: 'pneumaticcraft:speed_upgrade' },
-        { id: 'pneumaticcraft:speed_upgrade_from_glycerol' },
-        { id: 'pneumaticcraft:security_upgrade' },
-        { id: 'pneumaticcraft:range_upgrade' },
-        { id: 'pneumaticcraft:volume_upgrade' },
 
         { id: 'pneumaticcraft:pneumatic_helmet' },
         { id: 'pneumaticcraft:pneumatic_chestplate' },

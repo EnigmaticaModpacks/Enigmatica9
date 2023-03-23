@@ -306,7 +306,7 @@ ServerEvents.recipes((event) => {
                 fluid: 'hexerei:potion',
                 nbt: { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' }
             },
-            fluidLevelsConsumed: 333,
+            fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: `${id_prefix}pet_reviver`
         },
@@ -330,7 +330,7 @@ ServerEvents.recipes((event) => {
                 fluid: 'hexerei:potion',
                 nbt: { Bottle: 'REGULAR', Potion: 'minecraft:leaping' }
             },
-            fluidLevelsConsumed: 333,
+            fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: `${id_prefix}shockwave_creator`
         },
@@ -499,6 +499,114 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: `${id_prefix}jumping_upgrade_4`
+        },
+        {
+            output: 'pneumaticcraft:night_vision_upgrade',
+            inputs: [
+                'pneumaticcraft:upgrade_matrix',
+                'occultism:spirit_attuned_gem',
+                'ars_nouveau:glyph_light',
+                'occultism:spirit_attuned_gem',
+                'ars_nouveau:glyph_self',
+                'occultism:spirit_attuned_gem',
+                'ars_nouveau:glyph_light',
+                'occultism:spirit_attuned_gem'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:long_night_vision' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:long_night_vision' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}night_vision_upgrade`
+        },
+        {
+            output: 'pneumaticcraft:armor_upgrade',
+            inputs: [
+                'pneumaticcraft:upgrade_matrix',
+                'ars_nouveau:abjuration_essence',
+                'rftoolsbase:infused_diamond',
+                'ars_nouveau:abjuration_essence',
+                'ars_nouveau:glyph_self',
+                'ars_nouveau:abjuration_essence',
+                'rftoolsbase:infused_diamond',
+                'ars_nouveau:abjuration_essence'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:resistance' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:resistance' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}armor_upgrade`
+        },
+        {
+            output: 'pneumaticcraft:gilded_upgrade',
+            inputs: [
+                'pneumaticcraft:upgrade_matrix',
+                'ars_nouveau:abjuration_essence',
+                '#forge:plates/gold',
+                'ars_nouveau:abjuration_essence',
+                'ars_nouveau:glyph_self',
+                'ars_nouveau:abjuration_essence',
+                '#forge:plates/gold',
+                'ars_nouveau:abjuration_essence'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:long_knowledge' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:long_knowledge' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}gilded_upgrade`
+        },
+        {
+            output: 'pneumaticcraft:ender_visor_upgrade',
+            inputs: [
+                'pneumaticcraft:upgrade_matrix',
+                'ars_nouveau:abjuration_essence',
+                'minecraft:carved_pumpkin',
+                'ars_nouveau:abjuration_essence',
+                'ars_nouveau:glyph_self',
+                'ars_nouveau:abjuration_essence',
+                'minecraft:carved_pumpkin',
+                'ars_nouveau:abjuration_essence'
+            ],
+            liquid: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:enderference_potion_long' }
+            },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:enderference_potion_long' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}ender_visor_upgrade`
+        },
+        {
+            output: 'pneumaticcraft:elytra_upgrade',
+            inputs: [
+                'pneumaticcraft:upgrade_matrix',
+                'hexerei:infused_fabric',
+                'ars_nouveau:glyph_glide',
+                'hexerei:infused_fabric',
+                'ars_nouveau:glyph_self',
+                'hexerei:infused_fabric',
+                'ars_nouveau:glyph_glide',
+                'hexerei:infused_fabric'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:leaping' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:leaping' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}elytra_upgrade`
         }
     ];
 

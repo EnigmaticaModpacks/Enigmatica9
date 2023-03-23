@@ -161,8 +161,9 @@ ServerEvents.recipes((event) => {
         {
             output: { item: 'pneumaticcraft:volume_upgrade', count: 1 },
             pedestalItems: [
+                { item: { item: 'pneumaticcraft:pressure_chamber_wall' } },
                 { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'pneumaticcraft:pressure_chamber_wall' } }
+                { item: { item: 'ars_nouveau:air_essence' } }
             ],
             reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
             sourceCost: 0,
@@ -171,8 +172,9 @@ ServerEvents.recipes((event) => {
         {
             output: { item: 'pneumaticcraft:range_upgrade', count: 1 },
             pedestalItems: [
+                { item: { tag: 'forge:gems/source' } },
                 { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { tag: 'forge:gems/source' } }
+                { item: { item: 'ars_nouveau:manipulation_essence' } }
             ],
             reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
             sourceCost: 0,
@@ -181,8 +183,9 @@ ServerEvents.recipes((event) => {
         {
             output: { item: 'pneumaticcraft:security_upgrade', count: 1 },
             pedestalItems: [
+                { item: { item: 'pneumaticcraft:pressure_gauge' } },
                 { item: { item: 'ars_nouveau:abjuration_essence' } },
-                { item: { item: 'pneumaticcraft:pressure_gauge' } }
+                { item: { item: 'ars_nouveau:abjuration_essence' } }
             ],
             reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
             sourceCost: 0,
@@ -190,7 +193,11 @@ ServerEvents.recipes((event) => {
         },
         {
             output: { item: 'pneumaticcraft:speed_upgrade', count: 1 },
-            pedestalItems: [{ item: { item: 'ars_nouveau:water_essence' } }, { item: { tag: 'forge:gems/fluix' } }],
+            pedestalItems: [
+                { item: { tag: 'forge:gems/fluix' } },
+                { item: { item: 'ars_nouveau:water_essence' } },
+                { item: { item: 'ars_nouveau:water_essence' } }
+            ],
             reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
             sourceCost: 0,
             id: `${id_prefix}speed_upgrade`
@@ -198,8 +205,9 @@ ServerEvents.recipes((event) => {
         {
             output: { item: 'pneumaticcraft:item_life_upgrade', count: 1 },
             pedestalItems: [
+                { item: { item: 'ars_nouveau:mendosteen_pod' } },
                 { item: { item: 'ars_nouveau:abjuration_essence' } },
-                { item: { item: 'minecraft:golden_apple' } }
+                { item: { item: 'ars_nouveau:abjuration_essence' } }
             ],
             reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
             sourceCost: 0,
@@ -208,8 +216,9 @@ ServerEvents.recipes((event) => {
         {
             output: { item: 'pneumaticcraft:entity_tracker_upgrade', count: 1 },
             pedestalItems: [
+                { item: { item: 'ae2:charged_certus_quartz_crystal' } },
                 { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ae2:charged_certus_quartz_crystal' } }
+                { item: { item: 'ars_nouveau:air_essence' } }
             ],
             reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
             sourceCost: 0,
@@ -218,8 +227,9 @@ ServerEvents.recipes((event) => {
         {
             output: { item: 'pneumaticcraft:block_tracker_upgrade', count: 1 },
             pedestalItems: [
+                { item: { item: 'ae2:charged_certus_quartz_crystal' } },
                 { item: { item: 'ars_nouveau:earth_essence' } },
-                { item: { item: 'ae2:charged_certus_quartz_crystal' } }
+                { item: { item: 'ars_nouveau:earth_essence' } }
             ],
             reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
             sourceCost: 0,
@@ -228,12 +238,112 @@ ServerEvents.recipes((event) => {
         {
             output: { item: 'pneumaticcraft:dispenser_upgrade', count: 1 },
             pedestalItems: [
+                { item: { item: 'ae2:certus_quartz_crystal' } },
                 { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ae2:certus_quartz_crystal' } }
+                { item: { item: 'ars_nouveau:manipulation_essence' } }
             ],
             reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
             sourceCost: 0,
             id: `${id_prefix}dispenser_upgrade`
+        },
+        {
+            output: { item: 'pneumaticcraft:magnet_upgrade', count: 1 },
+            pedestalItems: [
+                { item: { item: 'minecraft:lodestone' } },
+                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { item: 'ars_nouveau:manipulation_essence' } }
+            ],
+            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            sourceCost: 0,
+            id: `${id_prefix}magnet_upgrade`
+        },
+        {
+            output: { item: 'pneumaticcraft:minigun_upgrade', count: 1 },
+            pedestalItems: [
+                { item: { item: 'pneumaticcraft:minigun' } },
+                { item: { item: 'ars_nouveau:fire_essence' } },
+                { item: { item: 'ars_nouveau:fire_essence' } }
+            ],
+            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            sourceCost: 0,
+            id: `${id_prefix}minigun_upgrade`
+        },
+        {
+            output: { item: 'pneumaticcraft:inventory_upgrade', count: 4 },
+            pedestalItems: [
+                { item: { item: 'ars_nouveau:abjuration_essence' } },
+                { item: { item: 'thermal:fluid_reservoir' } },
+                { item: { item: 'thermal:satchel' } }
+            ],
+            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            sourceCost: 0,
+            id: `${id_prefix}inventory_upgrade`
+        },
+        {
+            output: { item: 'pneumaticcraft:standby_upgrade', count: 1 },
+            pedestalItems: [
+                { item: { tag: 'comforts:sleeping_bags' } },
+                { item: { item: 'ars_nouveau:abjuration_essence' } },
+                { item: { item: 'ars_nouveau:abjuration_essence' } }
+            ],
+            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            sourceCost: 0,
+            id: `${id_prefix}standby_upgrade`
+        },
+        {
+            output: { item: 'pneumaticcraft:charging_upgrade', count: 1 },
+            pedestalItems: [
+                { item: { item: 'pneumaticcraft:charging_module' } },
+                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { item: 'ars_nouveau:air_essence' } }
+            ],
+            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            sourceCost: 0,
+            id: `${id_prefix}charging_upgrade`
+        },
+        {
+            output: { item: 'pneumaticcraft:stomp_upgrade', count: 1 },
+            pedestalItems: [
+                { item: { tag: 'forge:storage_blocks/lead' } },
+                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { item: 'ars_nouveau:earth_essence' } }
+            ],
+            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            sourceCost: 0,
+            id: `${id_prefix}stomp_upgrade`
+        },
+        {
+            output: { item: 'pneumaticcraft:flippers_upgrade', count: 1 },
+            pedestalItems: [
+                { item: { item: 'thermal:diving_boots' } },
+                { item: { item: 'ars_nouveau:water_essence' } },
+                { item: { item: 'ars_nouveau:water_essence' } }
+            ],
+            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            sourceCost: 0,
+            id: `${id_prefix}flippers_upgrade`
+        },
+        {
+            output: { item: 'pneumaticcraft:scuba_upgrade', count: 1 },
+            pedestalItems: [
+                { item: { item: 'thermal:diving_helmet' } },
+                { item: { item: 'ars_nouveau:water_essence' } },
+                { item: { item: 'ars_nouveau:water_essence' } }
+            ],
+            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            sourceCost: 0,
+            id: `${id_prefix}scuba_upgrade`
+        },
+        {
+            output: { item: 'pneumaticcraft:coordinate_tracker_upgrade', count: 1 },
+            pedestalItems: [
+                { item: { item: 'ars_nouveau:ritual_scrying' } },
+                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { item: 'ars_nouveau:manipulation_essence' } }
+            ],
+            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            sourceCost: 0,
+            id: `${id_prefix}coordinate_tracker_upgrade`
         },
         {
             output: { item: 'pneumaticcraft:pneumatic_helmet' },
@@ -330,6 +440,18 @@ ServerEvents.recipes((event) => {
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `${id_prefix}pneumatic_boots`
+        },
+        {
+            output: { item: 'ars_nouveau:thread_gliding' },
+            pedestalItems: [
+                { item: { item: 'immersiveengineering:glider' } },
+                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { item: 'ars_nouveau:air_essence' } }
+            ],
+            reagent: [{ item: 'ars_nouveau:blank_thread' }],
+            keepNbtOfReagent: true,
+            sourceCost: 0,
+            id: `ars_nouveau:thread_gliding`
         }
     ];
 
