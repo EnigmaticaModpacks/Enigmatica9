@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             results: [{ item: 'immersiveengineering:duroplast', count: 4 }, { item: 'thermal:machine_frame' }],
-            input: { item: 'thermal:machine_frame' },
+            inputs: [{ base_ingredient: { item: 'thermal:machine_frame' }, count: 1 }],
             fluid: { amount: 4000, tag: 'forge:phenolic_resin' },
             id: `immersiveengineering:bottling/duroplast_block`
         },
@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
         {
             results: [{ item: 'create:brass_casing', count: 4 }],
             inputs: [
-                { item: 'thermal:sawdust_block', count: 4 },
+                { base_ingredient: { item: 'thermal:sawdust_block' }, count: 4 },
                 { base_ingredient: { tag: 'forge:ingots/energized_steel' }, count: 1 }
             ],
             fluid: { amount: 100, tag: 'forge:phenolic_resin' },
@@ -35,11 +35,21 @@ ServerEvents.recipes((event) => {
         {
             results: [{ item: 'create:andesite_casing', count: 4 }],
             inputs: [
-                { item: 'thermal:sawdust_block', count: 4 },
-                { item: 'pneumaticcraft:compressed_stone', count: 1 }
+                { base_ingredient: { item: 'thermal:sawdust_block' }, count: 4 },
+                { base_ingredient: { item: 'pneumaticcraft:compressed_stone', count: 1 } }
             ],
             fluid: { amount: 100, tag: 'forge:phenolic_resin' },
             id: `${id_prefix}andesite_casing`
+        },
+        {
+            results: [{ item: 'minecraft:elytra' }],
+            inputs: [
+                { base_ingredient: { tag: 'forge:plates/aluminum' }, count: 2 },
+                { base_ingredient: { item: 'hexerei:infused_fabric' }, count: 4 },
+                { base_ingredient: { item: 'ars_nouveau:magebloom_fiber' }, count: 8 }
+            ],
+            fluid: { amount: 2000, tag: 'forge:phenolic_resin' },
+            id: `${id_prefix}elytra`
         }
     ];
 

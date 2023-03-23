@@ -440,18 +440,6 @@ ServerEvents.recipes((event) => {
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `${id_prefix}pneumatic_boots`
-        },
-        {
-            output: { item: 'ars_nouveau:thread_gliding' },
-            pedestalItems: [
-                { item: { item: 'immersiveengineering:glider' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } }
-            ],
-            reagent: [{ item: 'ars_nouveau:blank_thread' }],
-            keepNbtOfReagent: true,
-            sourceCost: 0,
-            id: `ars_nouveau:thread_gliding`
         }
     ];
 
