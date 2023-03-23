@@ -5,18 +5,21 @@ _Using Forge-1.19.2-43.2.6_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 **New Mods**
 
 **Improvements**
--  Update Blue Skies Boss loot to guarantee certain drops and buff others
--  Create alternate crafting recipe for red nether brick that doesn't use netherwart
--  Kerosene and Source may now be used to superheat Blaze Burners
--  AE2 Growth Accelerators now work on Blue Skies Sunstone and Moonstone in addition to certus and amethyst
--  Ars Nouveau Golems now harvest Sunstone, Moonstone, Amethyst, and Certus
--  Glass Smelting has been cleaned up to make a little more sense
--  Many tags have been updated for blocks, gems, and ingots
+
+-   Update Blue Skies Boss loot to guarantee certain drops and buff others
+-   Create alternate crafting recipe for red nether brick that doesn't use netherwart
+-   Kerosene and Source may now be used to superheat Blaze Burners
+-   AE2 Growth Accelerators now work on Blue Skies Sunstone and Moonstone and BYG crystals, in addition to certus and amethyst
+-   Ars Nouveau Golems now harvest Sunstone, Moonstone, Amethyst, and Certus
+-   Glass Smelting has been cleaned up to make a little more sense
+-   Many tags have been updated for blocks, gems, and ingots
 
 **Fixed Bugs**
--  Remove disabled items from Occultism quests [\#258](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/258) ([MuteTiefling](https://github.com/MuteTiefling))
--  Remove refrences to non existant schematics in Natures Aura quests [\#259](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/259) ([MuteTiefling](https://github.com/MuteTiefling))
--  Clarify Tools quests [\#255](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/255) ([MuteTiefling](https://github.com/MuteTiefling))
+
+-   Remove disabled items from Occultism quests [\#258](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/258) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Remove refrences to non existant schematics in Natures Aura quests [\#259](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/259) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Clarify Tools quests [\#255](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/255) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix Thermal Tomato Sauce [\#280](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/280) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
