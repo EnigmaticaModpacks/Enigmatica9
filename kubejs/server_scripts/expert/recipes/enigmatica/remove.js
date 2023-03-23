@@ -121,6 +121,7 @@ ServerEvents.recipes((event) => {
         { id: /pneumaticcraft:.*_compressor/ },
         { id: /pneumaticcraft:thermo_plant\/.*_drill_bit/ },
         { id: /pneumaticcraft:jet_boots_upgrade_/ },
+        { id: /pneumaticcraft:jumping_upgrade_/ },
         { id: 'pneumaticcraft:explosion_crafting/compressed_iron_ingot' },
         { id: 'pneumaticcraft:explosion_crafting/compressed_iron_block' },
         { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },

@@ -382,6 +382,13 @@ const entries = {
             key: 'item.pneumaticcraft.jet_boots_upgrade_3',
             value: {
                 normal: 'Jet Boots Upgrade: Tier III',
+                expert: 'Jet Boots Upgrade: Tier I'
+            }
+        },
+        {
+            key: 'item.pneumaticcraft.jet_boots_upgrade_4',
+            value: {
+                normal: 'Jet Boots Upgrade: Tier IV',
                 expert: 'Jet Boots Upgrade: Tier II'
             }
         },
@@ -390,6 +397,27 @@ const entries = {
             value: {
                 normal: 'Jet Boots Upgrade: Tier V',
                 expert: 'Jet Boots Upgrade: Tier III'
+            }
+        },
+        {
+            key: 'item.pneumaticcraft.jumping_upgrade_2',
+            value: {
+                normal: 'Jumping Upgrade: Tier II',
+                expert: 'Jumping Upgrade: Tier I'
+            }
+        },
+        {
+            key: 'item.pneumaticcraft.jumping_upgrade_3',
+            value: {
+                normal: 'Jumping Upgrade: Tier III',
+                expert: 'Jumping Upgrade: Tier II'
+            }
+        },
+        {
+            key: 'item.pneumaticcraft.jumping_upgrade_4',
+            value: {
+                normal: 'Jumping Upgrade: Tier IV',
+                expert: 'Jumping Upgrade: Tier III'
             }
         }
     ],

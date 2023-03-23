@@ -374,9 +374,9 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}familiar_ring`
         },
         {
-            output: 'pneumaticcraft:jet_boots_upgrade_3',
+            output: 'pneumaticcraft:jet_boots_upgrade_4',
             inputs: [
-                'pneumaticcraft:jet_boots_upgrade_1',
+                'pneumaticcraft:jet_boots_upgrade_3',
                 'pneumaticcraft:reinforced_pressure_tube',
                 'ars_nouveau:glyph_wind_shear',
                 'pneumaticcraft:reinforced_pressure_tube',
@@ -392,12 +392,12 @@ ServerEvents.recipes((event) => {
             },
             fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
-            id: `${id_prefix}jet_boots_upgrade_3`
+            id: `${id_prefix}jet_boots_upgrade_4`
         },
         {
             output: 'pneumaticcraft:jet_boots_upgrade_5',
             inputs: [
-                'pneumaticcraft:jet_boots_upgrade_3',
+                'pneumaticcraft:jet_boots_upgrade_4',
                 'pneumaticcraft:advanced_pressure_tube',
                 'ars_nouveau:glyph_glide',
                 'pneumaticcraft:advanced_pressure_tube',
@@ -436,6 +436,69 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: `${id_prefix}blank_thread`
+        },
+        {
+            output: 'pneumaticcraft:jumping_upgrade_2',
+            inputs: [
+                'pneumaticcraft:upgrade_matrix',
+                'pneumaticcraft:pressure_tube',
+                'ars_nouveau:glyph_leap',
+                'pneumaticcraft:pressure_tube',
+                'ars_nouveau:glyph_underfoot',
+                'pneumaticcraft:pressure_tube',
+                'ars_nouveau:glyph_leap',
+                'pneumaticcraft:pressure_tube'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:leaping' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:leaping' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}jumping_upgrade_2`
+        },
+        {
+            output: 'pneumaticcraft:jumping_upgrade_3',
+            inputs: [
+                'pneumaticcraft:jumping_upgrade_2',
+                'pneumaticcraft:reinforced_pressure_tube',
+                'ars_nouveau:glyph_amplify',
+                'pneumaticcraft:reinforced_pressure_tube',
+                'ars_elemental:lesser_air_focus',
+                'pneumaticcraft:reinforced_pressure_tube',
+                'ars_nouveau:glyph_amplify',
+                'pneumaticcraft:reinforced_pressure_tube'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:long_leaping' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:long_leaping' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}jumping_upgrade_3`
+        },
+        {
+            output: 'pneumaticcraft:jumping_upgrade_4',
+            inputs: [
+                'pneumaticcraft:jumping_upgrade_3',
+                'pneumaticcraft:advanced_pressure_tube',
+                'ars_nouveau:glyph_amplify',
+                'pneumaticcraft:advanced_pressure_tube',
+                'ars_elemental:air_focus',
+                'pneumaticcraft:advanced_pressure_tube',
+                'ars_nouveau:glyph_amplify',
+                'pneumaticcraft:advanced_pressure_tube'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:strong_leaping' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:strong_leaping' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}jumping_upgrade_4`
         }
     ];
 

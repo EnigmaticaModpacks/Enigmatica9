@@ -646,7 +646,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_craft_flux_compressor`
         },
         {
-            output: 'pneumaticcraft:jet_boots_upgrade_1',
+            output: 'pneumaticcraft:jet_boots_upgrade_3',
             activation_item: 'pneumaticcraft:upgrade_matrix',
             inputs: [
                 'ars_nouveau:ritual_flight',
@@ -666,11 +666,11 @@ ServerEvents.recipes((event) => {
                 tag: 'enigmatica:elementals/air',
                 display_name: 'ritual.occultism.sacrifice.air_elementals'
             },
-            ritual_dummy: 'kubejs:ritual_craft_jet_boots_upgrade_1',
+            ritual_dummy: 'kubejs:ritual_craft_jet_boots_upgrade_3',
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:lesser_binding',
             duration: 10,
-            id: `${id_prefix}ritual_craft_jet_boots_upgrade_1`
+            id: `${id_prefix}ritual_craft_jet_boots_upgrade_3`
         },
         {
             output: '4x ae2:controller',

@@ -29,6 +29,10 @@
 	"gui.tooltip.item.pneumaticcraft.safety_tube_module": "§bThis module will vent high pressure air if the tube pressure reaches 4.9 bar (19.9 for Advanced Pressure Tubes). Although this prevents explosions, released air is energy loss and wastes fuel.${br}${br}When upgraded with a Module Expansion Crystal, the threshold can be configured precisely via GUI.",
 	"gui.tooltip.item.pneumaticcraft.vacuum_module": "§bActs just like a Vacuum Pump, but as a module. Takes pressure at the wide (green) end, and removes it at the narrow (red) end. Install a Module Expansion Crystal to increase operation speed. Apply a Redstone Signal to prevent operation.",
 	"pneumaticcraft.gui.redstoneModule.addAdvancedPCB": "Apply a Module Expansion Crystal to enable more features.",
-	"item.pneumaticcraft.jet_boots_upgrade_3": "Jet Boots Upgrade: Tier II",
-	"item.pneumaticcraft.jet_boots_upgrade_5": "Jet Boots Upgrade: Tier III"
+	"item.pneumaticcraft.jet_boots_upgrade_3": "Jet Boots Upgrade: Tier I",
+	"item.pneumaticcraft.jet_boots_upgrade_5": "Jet Boots Upgrade: Tier III",
+	"item.pneumaticcraft.jet_boots_upgrade_4": "Jet Boots Upgrade: Tier II",
+	"item.pneumaticcraft.jumping_upgrade_2": "Jumping Upgrade: Tier I",
+	"item.pneumaticcraft.jumping_upgrade_3": "Jumping Upgrade: Tier II",
+	"item.pneumaticcraft.jumping_upgrade_4": "Jumping Upgrade: Tier III"
 }
