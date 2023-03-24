@@ -116,6 +116,11 @@ ServerEvents.recipes((event) => {
         { id: 'minecraft:netherite_ingot' },
         { id: 'minecraft:lodestone' },
 
+        { id: 'modularrouters:sender_module_1_alt' },
+        { id: 'modularrouters:sender_module_2_x4' },
+        { id: 'modularrouters:puller_module_2_x4' },
+        { id: 'modularrouters:fluid_module_2_x4' },
+
         { id: 'occultism:ritual/craft_dimensional_matrix' },
         { id: 'occultism:ritual/craft_storage_controller_base' },
         { id: 'occultism:ritual/craft_stable_wormhole' },
