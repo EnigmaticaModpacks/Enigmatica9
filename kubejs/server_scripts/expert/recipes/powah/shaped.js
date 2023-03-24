@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:base/powah/shaped/';
+    const id_prefix = 'enigmatica:expert/powah/shaped/';
     const recipes = [
         {
             output: 'powah:battery_basic',
