@@ -1,4 +1,4 @@
-## Enigmatica9 - 1.5.0
+## Enigmatica9 - 1.6.0
 
   * [AEInfinityBooster-1.19.2-1.2.0+11.jar](https://www.curseforge.com/minecraft/mc-mods/aeinfinitybooster/files/3940200) (by [hexeptiondev](https://www.curseforge.com/members/hexeptiondev/projects))
   * [AI-Improvements-1.19.2-0.5.2.jar](https://www.curseforge.com/minecraft/mc-mods/ai-improvements/files/4019127) (by [QueenOfMissiles](https://www.curseforge.com/members/QueenOfMissiles/projects))
@@ -53,7 +53,7 @@
   * [DarkPaintings-Forge-1.19.2-13.1.5.jar](https://www.curseforge.com/minecraft/mc-mods/dark-paintings/files/4357106) (by [DarkhaxDev](https://www.curseforge.com/members/DarkhaxDev/projects))
   * [Decorative Blocks-forge-1.19.2-3.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/decorative-blocks/files/3941638) (by [stohun](https://www.curseforge.com/members/stohun/projects))
   * [defaultoptions-forge-1.19-15.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/default-options/files/3832590) (by [BlayTheNinth](https://www.curseforge.com/members/BlayTheNinth/projects))
-  * [DiagonalFences-v4.2.3-1.19.2-Forge.jar](https://www.curseforge.com/minecraft/mc-mods/diagonal-fences/files/4026713) (by [Fuzs_](https://www.curseforge.com/members/Fuzs_/projects))
+  * [DiagonalFences-v4.2.3-1.19.2-Forge.jar](https://www.curseforge.com/minecraft/mc-mods/diagonal-fences/files/4026713) (by [Fuzs](https://www.curseforge.com/members/Fuzs/projects))
   * [Ding-1.19.2-Forge-1.4.0.jar](https://www.curseforge.com/minecraft/mc-mods/ding/files/4382947) (by [ohaiiChun](https://www.curseforge.com/members/ohaiiChun/projects))
   * [dynview-1.19.1-2.9.jar](https://www.curseforge.com/minecraft/mc-mods/dynamic-view/files/3919241) (by [someaddon](https://www.curseforge.com/members/someaddon/projects))
   * [eccentrictome-1.19.2-1.9.1.jar](https://www.curseforge.com/minecraft/mc-mods/eccentric-tome/files/4159488) (by [EccentricVamp](https://www.curseforge.com/members/EccentricVamp/projects))
@@ -86,7 +86,7 @@
   * [ftb-teams-forge-1902.2.12-build.95.jar](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge/files/4367026) (by [FTB](https://www.curseforge.com/members/FTB/projects))
   * [functionalstorage-1.19.2-1.1.3.jar](https://www.curseforge.com/minecraft/mc-mods/functional-storage/files/4324174) (by [Buuz135](https://www.curseforge.com/members/Buuz135/projects))
   * [GatewaysToEternity-1.19.2-3.1.1.jar](https://www.curseforge.com/minecraft/mc-mods/gateways-to-eternity/files/4297481) (by [Shadows_of_Fire](https://www.curseforge.com/members/Shadows_of_Fire/projects))
-  * [geckolib-forge-1.19-3.1.40.jar](https://www.curseforge.com/minecraft/mc-mods/geckolib/files/4407241) (by [ThanosGecko](https://www.curseforge.com/members/ThanosGecko/projects))
+  * [geckolib-forge-1.19-3.1.40.jar](https://www.curseforge.com/minecraft/mc-mods/geckolib/files/4407241) (by [Gecko](https://www.curseforge.com/members/Gecko/projects))
   * [glassential-forge-1.19-1.2.4.jar](https://www.curseforge.com/minecraft/mc-mods/glassential/files/3901780) (by [Lykrast](https://www.curseforge.com/members/Lykrast/projects))
   * [guardvillagers-1.19.2-1.5.5.jar](https://www.curseforge.com/minecraft/mc-mods/guard-villagers/files/4432658) (by [almightytallestred](https://www.curseforge.com/members/almightytallestred/projects))
   * [HealthOverlay-1.19.2-7.2.1.jar](https://www.curseforge.com/minecraft/mc-mods/health-overlay/files/4288082) (by [Terrails](https://www.curseforge.com/members/Terrails/projects))
@@ -139,7 +139,7 @@
   * [polylib-forge-1900.0.2-build.42.jar](https://www.curseforge.com/minecraft/mc-mods/polylib/files/4110280) (by [Official_CreeperHost](https://www.curseforge.com/members/Official_CreeperHost/projects))
   * [polymorph-forge-0.46.1+1.19.2.jar](https://www.curseforge.com/minecraft/mc-mods/polymorph/files/4119087) (by [TheIllusiveC4](https://www.curseforge.com/members/TheIllusiveC4/projects))
   * [Powah-4.0.6.jar](https://www.curseforge.com/minecraft/mc-mods/powah-rearchitected/files/4183078) (by [thetechnici4n](https://www.curseforge.com/members/thetechnici4n/projects))
-  * [PuzzlesLib-v4.3.12-1.19.2-Forge.jar](https://www.curseforge.com/minecraft/mc-mods/puzzles-lib/files/4041202) (by [Fuzs_](https://www.curseforge.com/members/Fuzs_/projects))
+  * [PuzzlesLib-v4.3.12-1.19.2-Forge.jar](https://www.curseforge.com/minecraft/mc-mods/puzzles-lib/files/4041202) (by [Fuzs](https://www.curseforge.com/members/Fuzs/projects))
   * [Quark-3.4-394.jar](https://www.curseforge.com/minecraft/mc-mods/quark/files/4426258) (by [Vazkii](https://www.curseforge.com/members/Vazkii/projects))
   * [redstonepen-1.19.2-forge-1.2.20.jar](https://www.curseforge.com/minecraft/mc-mods/redstone-pen/files/4393700) (by [wilechaote](https://www.curseforge.com/members/wilechaote/projects))
   * [repurposed_structures_forge-6.3.16+1.19.2.jar](https://www.curseforge.com/minecraft/mc-mods/repurposed-structures/files/4417695) (by [telepathicgrunt](https://www.curseforge.com/members/telepathicgrunt/projects))
