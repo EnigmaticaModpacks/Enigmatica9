@@ -23,6 +23,7 @@ _Using Forge-1.19.2-43.2.6_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 -   Remove refrences to non existant schematics in Natures Aura quests [\#259](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/259) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Clarify Tools quests [\#255](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/255) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix Thermal Tomato Sauce [\#280](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/280) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix missing loot in Industrial Foregoing Quests ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
