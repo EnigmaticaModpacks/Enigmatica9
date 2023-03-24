@@ -13,6 +13,9 @@ _Using Forge-1.19.2-43.2.6_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 -   Ars Nouveau Golems now harvest Sunstone, Moonstone, Amethyst, and Certus
 -   Glass Smelting has been cleaned up to make a little more sense
 -   Many tags have been updated for blocks, gems, and ingots
+-   Add more tooltips for Redstone devices, including the new Online Detector blocks
+-   Add IE machines to JEI so they can be discovered more easily. Also adds some descriptions to them when no recipes are shown (ex. diesel generator)
+-   Hide The One Probe recipes and items as they're not used
 
 **Fixed Bugs**
 
