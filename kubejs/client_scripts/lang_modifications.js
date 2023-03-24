@@ -132,7 +132,7 @@ const entries = {
         {
             key: 'block.create.mechanical_arm',
             value: {
-                normal: 'Mehcanical Arm',
+                normal: 'Mechanical Arm',
                 expert: 'Enchanted Arm'
             }
         },
