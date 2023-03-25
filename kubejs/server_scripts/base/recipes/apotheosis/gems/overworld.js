@@ -6,28 +6,28 @@ ServerEvents.highPriorityData((event) => {
             name: 'earth',
             weight: 4,
             quality: 0.5,
-            dimensions: ['overworld'],
+            dimensions: ['minecraft:overworld'],
             unique: true,
             min_rarity: 'epic',
             bonuses: [
                 {
                     type: 'apotheosis:enchantment',
                     gem_class: { key: 'melee_weapon', types: ['sword', 'trident', 'heavy_weapon'] },
-                    enchantment: 'sharpness',
+                    enchantment: 'minecraft:sharpness',
                     must_exist: true,
                     values: { epic: 1, mythic: 1, ancient: 2 }
                 },
                 {
                     type: 'apotheosis:enchantment',
                     gem_class: { key: 'core_armor', types: ['chestplate', 'leggings'] },
-                    enchantment: 'protection',
+                    enchantment: 'minecraft:protection',
                     must_exist: true,
                     values: { epic: 1, mythic: 2, ancient: 3 }
                 },
                 {
                     type: 'apotheosis:enchantment',
                     gem_class: { key: 'breaker', types: ['shovel', 'pickaxe'] },
-                    enchantment: 'fortune',
+                    enchantment: 'minecraft:fortune',
                     must_exist: true,
                     values: { epic: 1, mythic: 1, ancient: 1 }
                 }

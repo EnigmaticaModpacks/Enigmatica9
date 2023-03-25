@@ -7,7 +7,7 @@ ServerEvents.highPriorityData((event) => {
             conditions: [{ type: 'apotheosis:module', module: 'enchantment' }],
             weight: 4,
             quality: 0.75,
-            dimensions: ['the_nether'],
+            dimensions: ['minecraft:the_nether'],
             unique: true,
             min_rarity: 'rare',
             bonuses: [
@@ -38,19 +38,19 @@ ServerEvents.highPriorityData((event) => {
                 {
                     type: 'apotheosis:enchantment',
                     gem_class: { key: 'light_weapon', types: ['sword', 'trident'] },
-                    enchantment: 'fire_aspect',
+                    enchantment: 'minecraft:fire_aspect',
                     values: { rare: 1, epic: 2, mythic: 3, ancient: 4 }
                 },
                 {
                     type: 'apotheosis:enchantment',
                     gem_class: { key: 'chestplate', types: ['chestplate'] },
-                    enchantment: 'fire_protection',
+                    enchantment: 'minecraft:fire_protection',
                     values: { rare: 1, epic: 1, mythic: 2, ancient: 2 }
                 },
                 {
                     type: 'apotheosis:enchantment',
                     gem_class: { key: 'breaker', types: ['shovel', 'pickaxe'] },
-                    enchantment: 'efficiency',
+                    enchantment: 'minecraft:efficiency',
                     values: { rare: 1, epic: 1, mythic: 2, ancient: 2 }
                 }
             ]

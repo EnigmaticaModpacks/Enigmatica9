@@ -48,7 +48,7 @@
     "affix.apotheosis:armor/mob_effect/chilling": "Glacial",
     "affix.apotheosis:armor/mob_effect/chilling.suffix": "of Rime Frost",
 
-    "item.apotheosis.gem.apotheosis:core/moon_touched": "Moon-Touched Gem",
-    "item.apotheosis.gem.apotheosis:core/sun_kissed": "Sun-Kissed Gem",
-    "item.apotheosis.gem.apotheosis:core/twilight_guardian": "Twilight Guardian Gem"
+    "item.apotheosis.gem.apotheosis:everbright/moon_touched": "Moon-Touched Gem",
+    "item.apotheosis.gem.apotheosis:everdawn/sun_kissed": "Sun-Kissed Gem",
+    "item.apotheosis.gem.apotheosis:twilight_forest/twilight_guardian": "Twilight Guardian Gem"
 }

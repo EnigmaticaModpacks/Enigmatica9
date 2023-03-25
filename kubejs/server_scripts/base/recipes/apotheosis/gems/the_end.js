@@ -7,13 +7,13 @@ ServerEvents.highPriorityData((event) => {
             weight: 2,
             quality: 0.8,
             min_rarity: 'mythic',
-            dimensions: ['the_end'],
+            dimensions: ['minecraft:the_end'],
             unique: true,
             bonuses: [
                 {
                     type: 'apotheosis:enchantment',
                     gem_class: { key: 'anything', types: ['helmet'] },
-                    enchantment: 'sharpness',
+                    enchantment: 'minecraft:sharpness',
                     _comment: 'The enchantment field is unused when global=true, but still must be a valid name',
                     global: true,
                     values: { mythic: 1, ancient: 2 }
