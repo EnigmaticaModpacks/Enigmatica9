@@ -351,7 +351,7 @@ ServerEvents.recipes((event) => {
                 'minecraft:golden_carrot'
             ],
             duration: 10,
-            id: `occultism:ritual/bat_familiar`
+            id: `occultism:ritual/familiar_bat`
         },
         {
             // Increases wood breaking speed
@@ -582,16 +582,16 @@ ServerEvents.recipes((event) => {
         },
         {
             output: '8x pneumaticcraft:module_expansion_card',
-            activation_item: 'immersiveengineering:coil_mv',
+            activation_item: 'ae2:quartz_block',
             inputs: [
                 'pneumaticcraft:compressed_stone_slab',
                 'pneumaticcraft:compressed_stone_slab',
                 'pneumaticcraft:compressed_stone_slab',
                 'pneumaticcraft:compressed_stone_slab',
-                '#forge:gems/certus_quartz',
-                '#forge:gems/certus_quartz',
-                '#forge:gems/certus_quartz',
-                '#forge:gems/certus_quartz'
+                '#forge:wires/electrum',
+                '#forge:wires/electrum',
+                '#forge:wires/electrum',
+                '#forge:wires/electrum'
             ],
             entity_to_sacrifice: {
                 tag: 'enigmatica:elementals/air',
@@ -602,6 +602,29 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:lesser_binding',
             duration: 10,
             id: `${id_prefix}ritual_craft_module_expansion_card`
+        },
+        {
+            output: '8x immersiveengineering:component_electronic',
+            activation_item: 'minecraft:quartz_block',
+            inputs: [
+                '#forge:treated_wood_slab',
+                '#forge:treated_wood_slab',
+                '#forge:treated_wood_slab',
+                '#forge:treated_wood_slab',
+                '#forge:wires/electrum',
+                '#forge:wires/electrum',
+                '#forge:wires/electrum',
+                '#forge:wires/electrum'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/fire',
+                display_name: 'ritual.occultism.sacrifice.fire_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_component_electronic',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_component_electronic`
         },
         {
             output: 'pneumaticcraft:flux_compressor',
@@ -621,6 +644,33 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:lesser_binding',
             duration: 10,
             id: `${id_prefix}ritual_craft_flux_compressor`
+        },
+        {
+            output: 'pneumaticcraft:jet_boots_upgrade_3',
+            activation_item: 'pneumaticcraft:upgrade_matrix',
+            inputs: [
+                'ars_nouveau:ritual_flight',
+                'ars_nouveau:glyph_launch',
+                'ars_nouveau:glyph_underfoot',
+                'ars_nouveau:glyph_launch',
+                'pneumaticcraft:pressure_tube',
+                'pneumaticcraft:pressure_tube',
+                'pneumaticcraft:pressure_tube',
+                'pneumaticcraft:pressure_tube',
+                '#forge:ingots/skies',
+                '#forge:ingots/skies',
+                '#forge:ingots/skies',
+                '#forge:ingots/skies'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/air',
+                display_name: 'ritual.occultism.sacrifice.air_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_jet_boots_upgrade_3',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:lesser_binding',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_jet_boots_upgrade_3`
         },
         {
             output: '4x ae2:controller',

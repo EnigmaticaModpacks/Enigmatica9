@@ -227,6 +227,54 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}infused_iron_pickaxe_conversions/flawless_budding_quartz`
         },
         {
+            item_in: { item: 'naturesaura:infused_iron_pickaxe' },
+            block_in: 'byg:therium_crystal_block',
+            post: [
+                { type: 'prevent_default' },
+                { type: 'place', block: 'byg:budding_therium_crystal' },
+                { type: 'damage_item', damage: 200 },
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
+                    hide: true
+                }
+            ],
+            id: `${id_prefix}infused_iron_pickaxe_conversions/budding_therium_crystal`
+        },
+        {
+            item_in: { item: 'naturesaura:infused_iron_pickaxe' },
+            block_in: 'byg:subzero_crystal_block',
+            post: [
+                { type: 'prevent_default' },
+                { type: 'place', block: 'byg:budding_subzero_crystal' },
+                { type: 'damage_item', damage: 200 },
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
+                    hide: true
+                }
+            ],
+            id: `${id_prefix}infused_iron_pickaxe_conversions/budding_subzero_crystal`
+        },
+        {
+            item_in: { item: 'naturesaura:infused_iron_pickaxe' },
+            block_in: 'minecraft:amethyst_block',
+            post: [
+                { type: 'prevent_default' },
+                { type: 'place', block: 'minecraft:budding_amethyst' },
+                { type: 'damage_item', damage: 200 },
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
+                    hide: true
+                }
+            ],
+            id: `${id_prefix}infused_iron_pickaxe_conversions/budding_amethyst`
+        },
+        {
             hide_in_viewer: true,
             item_in: { tag: 'forge:tools/knives' },
             block_in: 'minecraft:pumpkin',

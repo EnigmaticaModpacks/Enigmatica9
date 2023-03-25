@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
             key: {
                 C: { item: 'minecraft:copper_ingot' },
                 L: { tag: 'pneumaticcraft:compressed_stone' },
-                R: { item: 'create:precision_mechanism' },
+                R: { tag: 'forge:gears/compressed_iron' },
                 S: { item: 'create:fluid_pipe' }
             },
             result: { item: 'create:potato_cannon' },

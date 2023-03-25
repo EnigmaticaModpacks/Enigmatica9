@@ -37,7 +37,7 @@ ServerEvents.recipes((event) => {
             output: 'immersiveengineering:coil_lv',
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
-                A: 'immersiveengineering:wirecoil_copper',
+                A: '#forge:wires/copper',
                 B: 'create:shaft'
             },
             id: `immersiveengineering:crafting/coil_lv`
@@ -46,7 +46,7 @@ ServerEvents.recipes((event) => {
             output: 'immersiveengineering:coil_mv',
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
-                A: 'immersiveengineering:wirecoil_electrum',
+                A: '#forge:wires/electrum',
                 B: 'create:shaft'
             },
             id: `immersiveengineering:crafting/coil_mv`
@@ -55,7 +55,7 @@ ServerEvents.recipes((event) => {
             output: 'immersiveengineering:coil_hv',
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
-                A: 'immersiveengineering:wirecoil_steel',
+                A: '#forge:wires/steel',
                 B: 'create:shaft'
             },
             id: `immersiveengineering:crafting/coil_hv`
@@ -253,6 +253,228 @@ ServerEvents.recipes((event) => {
                 C: 'immersiveengineering:redstone_acid_bucket'
             },
             id: `immersiveengineering:crafting/toolupgrade_drill_fortune`
+        },
+        {
+            output: 'immersiveengineering:gunpart_drum',
+            pattern: [' AB', 'ACA', ' A '],
+            key: {
+                A: '#forge:ingots/compressed_iron',
+                B: 'ars_nouveau:earth_essence',
+                C: '#forge:rods/aluminum'
+            },
+            id: `immersiveengineering:crafting/gunpart_drum`
+        },
+        {
+            output: 'immersiveengineering:gunpart_barrel',
+            pattern: ['  B', ' C ', 'A  '],
+            key: {
+                A: '#forge:ingots/compressed_iron',
+                B: 'ars_nouveau:air_essence',
+                C: '#forge:rods/aluminum'
+            },
+            id: `immersiveengineering:crafting/gunpart_barrel`
+        },
+        {
+            output: 'immersiveengineering:gunpart_hammer',
+            pattern: ['  B', 'AA ', ' C '],
+            key: {
+                A: '#forge:ingots/compressed_iron',
+                B: 'ars_nouveau:fire_essence',
+                C: '#forge:rods/aluminum'
+            },
+            id: `immersiveengineering:crafting/gunpart_hammer`
+        },
+        {
+            output: 'immersiveengineering:speedloader',
+            pattern: ['ABC'],
+            key: {
+                A: '#forge:rods/aluminum',
+                B: 'immersiveengineering:gunpart_drum',
+                C: 'ars_nouveau:water_essence'
+            },
+            id: `immersiveengineering:crafting/speedloader`
+        },
+        {
+            output: '2x immersiveengineering:item_batcher',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:treated_wood',
+                B: 'pneumaticcraft:omnidirectional_hopper',
+                C: 'pneumaticcraft:logistics_core'
+            },
+            id: `immersiveengineering:crafting/item_batcher`
+        },
+        {
+            output: '2x immersiveengineering:fluid_sorter',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:treated_wood',
+                B: 'pneumaticcraft:liquid_hopper',
+                C: 'pneumaticcraft:logistics_core'
+            },
+            id: `immersiveengineering:crafting/fluid_sorter`
+        },
+        {
+            output: '2x immersiveengineering:sorter',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:treated_wood',
+                B: 'immersiveengineering:conveyor_basic',
+                C: 'pneumaticcraft:logistics_core'
+            },
+            id: `immersiveengineering:crafting/sorter`
+        },
+        {
+            output: 'immersiveengineering:furnace_heater',
+            pattern: ['AEA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:plates/obsidian',
+                B: 'naturesaura:furnace_heater',
+                C: 'powah:capacitor_basic_large',
+                D: 'thermal:machine_frame',
+                E: 'powah:energy_cable_basic'
+            },
+            id: `immersiveengineering:crafting/furnace_heater`
+        },
+        {
+            output: 'immersiveengineering:toolupgrade_revolver_magazine',
+            pattern: [' BA', 'BAB', 'CB '],
+            key: {
+                A: '#forge:plates/aluminum',
+                B: '#forge:nuggets/bronze',
+                C: 'thermal:redstone_servo'
+            },
+            id: `immersiveengineering:crafting/toolupgrade_revolver_magazine`
+        },
+        {
+            output: 'immersiveengineering:fluid_pump',
+            pattern: [' A ', 'BCB', 'BDB'],
+            key: {
+                A: 'powah:energy_cable_basic',
+                B: '#forge:plates/aluminum',
+                C: 'createaddition:electric_motor',
+                D: 'create:mechanical_pump'
+            },
+            id: `immersiveengineering:crafting/fluid_pump`
+        },
+        {
+            output: 'immersiveengineering:toolupgrade_chemthrower_focus',
+            pattern: ['AB', 'BC'],
+            key: {
+                A: 'create:fluid_pipe',
+                B: '#forge:plates/obsidian',
+                C: 'ars_nouveau:water_essence'
+            },
+            id: `immersiveengineering:crafting/toolupgrade_chemthrower_focus`
+        },
+        {
+            output: 'immersiveengineering:toolupgrade_chemthrower_multitank',
+            pattern: ['AB', 'BC'],
+            key: {
+                A: 'create:fluid_pipe',
+                B: 'immersiveengineering:toolupgrade_drill_capacity',
+                C: 'thermal:cured_rubber'
+            },
+            id: `immersiveengineering:crafting/toolupgrade_chemthrower_multitank`
+        },
+        {
+            output: 'immersiveengineering:skyhook',
+            pattern: ['AA', 'AB'],
+            key: {
+                A: '#forge:ingots/compressed_iron',
+                B: '#forge:wooden_grip'
+            },
+            id: `immersiveengineering:crafting/skyhook`
+        },
+        {
+            output: 'immersiveengineering:toolupgrade_revolver_bayonet',
+            pattern: ['BA', 'CB'],
+            key: {
+                A: '#forge:ingots/compressed_iron',
+                B: '#forge:nuggets/bronze',
+                C: '#forge:rods/treated_wood'
+            },
+            id: `immersiveengineering:crafting/toolupgrade_revolver_bayonet`
+        },
+        {
+            output: 'immersiveengineering:cloche',
+            pattern: ['ABA', 'ACA', 'DED'],
+            key: {
+                A: 'quark:framed_glass_pane',
+                B: 'immersiveengineering:light_bulb',
+                C: 'ars_nouveau:earth_essence',
+                D: '#forge:treated_wood',
+                E: '#industrialforegoing:machine_frame/simple'
+            },
+            id: `immersiveengineering:crafting/cloche`
+        },
+        {
+            output: '4x immersiveengineering:wirecoil_redstone',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:redstone',
+                B: '#forge:wires/aluminum',
+                C: '#forge:rods/treated_wood'
+            },
+            id: `immersiveengineering:crafting/wirecoil_redstone`
+        },
+        {
+            output: 'immersiveengineering:railgun',
+            pattern: [' EA', 'BAC', 'DC '],
+            key: {
+                A: '#forge:rods/aluminum',
+                B: 'immersiveengineering:component_electronic',
+                C: 'powah:capacitor_spirited',
+                D: '#forge:wooden_grip',
+                E: 'ars_nouveau:manipulation_essence'
+            },
+            id: `immersiveengineering:crafting/railgun`
+        },
+        {
+            output: 'immersiveengineering:toolupgrade_railgun_scope',
+            pattern: ['ABC', 'B B', 'CBA'],
+            key: {
+                A: '#forge:nuggets/bronze',
+                B: '#forge:rods/aluminum',
+                C: 'occultism:spirit_attuned_gem'
+            },
+            id: `immersiveengineering:crafting/toolupgrade_railgun_scope`
+        },
+        {
+            output: 'immersiveengineering:turret_chem',
+            pattern: [' A ', ' BC', 'DEF'],
+            key: {
+                A: 'immersiveengineering:toolupgrade_railgun_scope',
+                B: 'immersiveengineering:chemthrower',
+                C: 'immersiveengineering:component_electronic',
+                D: 'thermal:fluid_cell_frame',
+                E: 'immersiveengineering:turntable',
+                F: 'immersiveengineering:rs_engineering'
+            },
+            id: `immersiveengineering:crafting/turret_chem`
+        },
+        {
+            output: 'immersiveengineering:turret_gun',
+            pattern: [' A ', ' BC', 'DEF'],
+            key: {
+                A: 'immersiveengineering:toolupgrade_railgun_scope',
+                B: 'immersiveengineering:revolver',
+                C: 'immersiveengineering:component_electronic',
+                D: 'immersiveengineering:toolupgrade_revolver_magazine',
+                E: 'immersiveengineering:turntable',
+                F: 'immersiveengineering:rs_engineering'
+            },
+            id: `immersiveengineering:crafting/turret_gun`
+        },
+        {
+            output: 'immersiveengineering:toolupgrade_railgun_capacitors',
+            pattern: ['A C', 'BA ', ' BA'],
+            key: {
+                A: '#forge:plates/constantan',
+                B: '#forge:ingots/compressed_iron',
+                C: 'ars_nouveau:air_essence'
+            },
+            id: `immersiveengineering:crafting/toolupgrade_railgun_capacitors`
         }
     ];
 

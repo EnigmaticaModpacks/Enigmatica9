@@ -189,6 +189,20 @@
     "ritual.enigmatica.occultism/ritual/ritual_craft_module_expansion_card.interrupted": "Ritual of Binding interrupted.",
     "ritual.enigmatica.occultism/ritual/ritual_craft_module_expansion_card.conditions": "Not all requirements for this ritual are met.",
 
+    "item.kubejs.ritual_craft_component_electronic": "Ritual: Craft Imprinted Control Crystal",
+    "item.kubejs.ritual_craft_component_electronic.tooltip": "Bind a Fire Elemental to control various devices.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_component_electronic.started": "Ritual of Binding started.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_component_electronic.finished": "Ritual of Binding completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_component_electronic.interrupted": "Ritual of Binding interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_component_electronic.conditions": "Not all requirements for this ritual are met.",
+
+    "item.kubejs.ritual_craft_jet_boots_upgrade_3": "Ritual: Craft Jet Boots Upgrade",
+    "item.kubejs.ritual_craft_jet_boots_upgrade_3.tooltip": "Bind an Air Elemental to obtain the power of flight.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_jet_boots_upgrade_3.started": "Ritual of Binding started.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_jet_boots_upgrade_3.finished": "Ritual of Binding completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_jet_boots_upgrade_3.interrupted": "Ritual of Binding interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_jet_boots_upgrade_3.conditions": "Not all requirements for this ritual are met.",
+
     "item.kubejs.ritual_craft_blaze_burner": "Ritual: Craft Blaze Burner",
     "item.kubejs.ritual_craft_blaze_burner.tooltip": "Bind a Fire Elemental to provide a powerful source of heat.",
     "ritual.enigmatica.occultism/ritual/ritual_craft_blaze_burner.started": "Ritual of Binding started.",
