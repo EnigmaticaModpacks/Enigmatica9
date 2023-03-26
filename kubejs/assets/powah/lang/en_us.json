@@ -1,5 +1,7 @@
 {
-    "item.powah.capacitor_basic_tiny": "Basic Capacitor (Tiny)",
-    "item.powah.capacitor_basic": "Basic Capacitor (Small)",
-    "item.powah.capacitor_basic_large": "Basic Capacitor"
+	"item.powah.capacitor_basic_tiny": "Basic Capacitor (Tiny)",
+	"item.powah.capacitor_basic": "Basic Capacitor (Small)",
+	"item.powah.capacitor_basic_large": "Basic Capacitor",
+	"block.powah.energized_steel_block": "Block Of Energized Steel",
+	"item.powah.steel_energized": "Energized Steel"
 }

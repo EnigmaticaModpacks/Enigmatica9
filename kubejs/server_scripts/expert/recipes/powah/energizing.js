@@ -40,6 +40,12 @@ ServerEvents.recipes((event) => {
             ],
             energy: '200000',
             id: `${id_prefix}infused_diamond`
+        },
+        {
+            output: 'powah:binding_card',
+            inputs: ['powah:blank_card', '#forge:gems/carminite'],
+            energy: '12000000',
+            id: `${id_prefix}binding_card`
         }
     ];
 

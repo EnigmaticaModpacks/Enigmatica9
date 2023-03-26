@@ -20,6 +20,21 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}charged_certus_quartz_crystal`
+        },
+        {
+            item_in: [
+                { tag: 'forge:gems/source' },
+                { item: 'minecraft:chiseled_stone_bricks' },
+                { tag: 'forge:ores/ironwood' }
+            ],
+            post: [
+                {
+                    type: 'drop_item',
+                    item: 'minecraft:lodestone',
+                    count: 1
+                }
+            ],
+            id: `${id_prefix}lodestone`
         }
     ];
 

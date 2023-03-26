@@ -15,5 +15,7 @@
 	"block.create.brass_funnel": "Brass Funnel",
 	"block.create.brass_tunnel": "Brass Tunnel",
 	"item.create.brass_hand": "Brass Hand",
-	"item.create.mechanical_arm": "Mehcanical Arm"
+	"item.create.mechanical_arm": "Enchanted Arm",
+	"block.create.mechanical_arm": "Mechanical Arm",
+	"block.create.brass_ladder": "Brass Ladder"
 }

@@ -6,6 +6,12 @@ StartupEvents.registry('fluid', (event) => {
             id: 'abyssal_seawater',
             texture: 0x0b1c38,
             display: 'Abyssal Seawater'
+        },
+        {
+            type: 'thin',
+            id: 'magicite',
+            texture: 0x05f549,
+            display: 'Magicite'
         }
     ];
 

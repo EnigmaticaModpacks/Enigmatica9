@@ -56,4 +56,7 @@ ServerEvents.tags('item', (event) => {
     event.add(`forge:storage_blocks/nitro_crystal`, `powah:nitro_crystal_block`);
 
     event.add(`forge:storage_blocks/soul_steel`, `spirit:soul_steel_block`);
+
+    event.add(`forge:storage_blocks/therium`, `byg:therium_crystal_block`);
+    event.add(`forge:storage_blocks/subzero`, `byg:subzero_crystal_block`);
 });

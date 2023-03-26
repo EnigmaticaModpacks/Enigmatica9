@@ -8,6 +8,7 @@ ServerEvents.recipes((event) => {
         //     id: 'sample'
         // }
         { mod: 'gateways' },
+        { mod: 'theoneprobe' },
         { output: /pendorite/ },
         { output: /emeraldite/ },
         { output: /ametrine/ },

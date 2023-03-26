@@ -67,7 +67,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: '4x kubejs:spirit_of_devotion',
-            input: 'rftoolsbase:infused_diamond',
+            input: '#forge:gems/infused_diamond',
             catalyst: 'kubejs:gloaming_catalyst',
             aura: 600,
             time: 10,

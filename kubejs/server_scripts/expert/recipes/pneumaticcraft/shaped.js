@@ -199,6 +199,43 @@ ServerEvents.recipes((event) => {
                 E: 'ars_nouveau:air_essence'
             },
             id: `pneumaticcraft:jackhammer`
+        },
+        {
+            output: 'pneumaticcraft:sentry_turret',
+            pattern: [' A ', ' BC', 'DEF'],
+            key: {
+                A: 'immersiveengineering:toolupgrade_railgun_scope',
+                B: 'pneumaticcraft:minigun',
+                C: 'immersiveengineering:component_electronic',
+                D: 'create:copper_backtank',
+                E: 'immersiveengineering:turntable',
+                F: 'immersiveengineering:rs_engineering'
+            },
+            id: `pneumaticcraft:sentry_turret`
+        },
+        {
+            output: 'pneumaticcraft:minigun',
+            pattern: ['ABD', 'BCB', 'EB '],
+            key: {
+                A: 'pneumaticcraft:air_canister',
+                B: 'immersiveengineering:gunpart_barrel',
+                C: '#forge:gears/compressed_iron',
+                D: '#forge:plates/bronze',
+                E: '#forge:wooden_grip'
+            },
+            id: `pneumaticcraft:minigun`
+        },
+        {
+            output: 'pneumaticcraft:vacuum_pump',
+            pattern: ['ABA', 'CDC', 'EEE'],
+            key: {
+                A: 'pneumaticcraft:pressure_gauge',
+                B: 'pneumaticcraft:turbine_rotor',
+                C: 'pneumaticcraft:pressure_tube',
+                D: 'naturesaura:vacuum_bottle',
+                E: 'ae2:sky_stone_slab'
+            },
+            id: `pneumaticcraft:vacuum_pump`
         }
     ];
 

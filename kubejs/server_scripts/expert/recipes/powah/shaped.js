@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'powah:expert/shaped/';
+    const id_prefix = 'enigmatica:expert/powah/shaped/';
     const recipes = [
         {
             output: 'powah:battery_basic',
@@ -111,6 +111,17 @@ ServerEvents.recipes((event) => {
                 C: 'occultism:stable_wormhole'
             },
             id: `powah:crafting/ender_cell_basic`
+        },
+        {
+            output: 'powah:player_transmitter_basic',
+            pattern: [' A ', 'BCB', 'BDB'],
+            key: {
+                A: 'ae2:fluix_pearl',
+                B: 'powah:capacitor_basic_large',
+                C: 'powah:dielectric_rod',
+                D: 'ars_nouveau:arcane_core'
+            },
+            id: `${id_prefix}player_transmitter_basic`
         }
     ];
 

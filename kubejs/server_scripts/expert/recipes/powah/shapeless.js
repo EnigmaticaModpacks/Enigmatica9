@@ -32,6 +32,39 @@ ServerEvents.recipes((event) => {
             output: 'powah:energizing_rod_nitro',
             inputs: ['powah:energizing_rod_spirited', 'powah:capacitor_nitro'],
             id: `${id_prefix}energizing_rod/nitro`
+        },
+        {
+            output: 'powah:player_transmitter_niotic',
+            inputs: [
+                'powah:player_transmitter_basic',
+                'powah:capacitor_niotic',
+                'powah:capacitor_niotic',
+                'powah:capacitor_niotic',
+                'powah:capacitor_niotic'
+            ],
+            id: `${id_prefix}player_transmitter/niotic`
+        },
+        {
+            output: 'powah:player_transmitter_spirited',
+            inputs: [
+                'powah:player_transmitter_niotic',
+                'powah:capacitor_spirited',
+                'powah:capacitor_spirited',
+                'powah:capacitor_spirited',
+                'powah:capacitor_spirited'
+            ],
+            id: `${id_prefix}player_transmitter/spirited`
+        },
+        {
+            output: 'powah:player_transmitter_nitro',
+            inputs: [
+                'powah:player_transmitter_spirited',
+                'powah:capacitor_nitro',
+                'powah:capacitor_nitro',
+                'powah:capacitor_nitro',
+                'powah:capacitor_nitro'
+            ],
+            id: `${id_prefix}player_transmitter/nitro`
         }
     ];
 

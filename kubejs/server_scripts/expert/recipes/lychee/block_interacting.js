@@ -150,7 +150,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}conversion_catalyst`
         },
         {
-            item_in: { item: 'kubejs:water_essence' },
+            item_in: { item: 'ars_nouveau:water_essence' },
             block_in: 'naturesaura:gold_brick',
             post: [
                 {

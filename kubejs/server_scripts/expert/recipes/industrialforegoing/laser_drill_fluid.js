@@ -20,6 +20,23 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}abyssal_seawater`
+        },
+        {
+            type: 'industrialforegoing:laser_drill_fluid',
+            catalyst: { tag: 'industrialforegoing:laser_lens/lime' },
+            entity: 'ars_nouveau:wilden_boss',
+            output: '{Amount:500,FluidName:"kubejs:magicite"}',
+            pointer: 0,
+            rarity: [
+                {
+                    depth_max: 256,
+                    depth_min: -64,
+                    weight: 8,
+                    blacklist: {},
+                    whitelist: {}
+                }
+            ],
+            id: `${id_prefix}magicite`
         }
     ];
 
