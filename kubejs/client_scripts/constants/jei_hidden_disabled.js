@@ -129,6 +129,12 @@ jei.base.fluids.hidden = [
     'createaddition:bioethanol'
 ];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
+jei.base.recipes.hidden = [
+    {
+        category: 'minecraft:crafting',
+        recipes_by_id: ['pneumaticcraft:one_probe_crafting']
+    }
+];
 
 // Normal
 jei.normal.items.disabled = [];

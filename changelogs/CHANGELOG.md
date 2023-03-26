@@ -9,13 +9,15 @@ _Using Forge-1.19.2-43.2.6_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 -   Update Blue Skies Boss loot to guarantee certain drops and buff others
 -   Create alternate crafting recipe for red nether brick that doesn't use netherwart
 -   Kerosene and Source may now be used to superheat Blaze Burners
--   AE2 Growth Accelerators now work on Blue Skies Sunstone and Moonstone and BYG crystals, in addition to certus and amethyst
+-   AE2 Growth Accelerators now work on Sunstone, Moonstone, Therium Crystals, and Subzero Crystals, in addition to Certus and Amethyst
 -   Ars Nouveau Golems now harvest Sunstone, Moonstone, Amethyst, and Certus
 -   Glass Smelting has been cleaned up to make a little more sense
 -   Many tags have been updated for blocks, gems, and ingots
 -   Add more tooltips for Redstone devices, including the new Online Detector blocks
 -   Add IE machines to JEI so they can be discovered more easily. Also adds some descriptions to them when no recipes are shown (ex. diesel generator)
 -   Hide The One Probe recipes and items as they're not used
+-   Add many stone and cobblestone types to the Igneous Extruder
+-   Create special recipes for Frost Magma, Cryptic Magma, and Permafrost
 
 **Fixed Bugs**
 

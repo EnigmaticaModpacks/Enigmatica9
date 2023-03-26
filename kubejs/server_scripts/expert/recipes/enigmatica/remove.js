@@ -104,12 +104,14 @@ ServerEvents.recipes((event) => {
         { id: /empty_shell/, mod: 'immersiveengineering' },
         { id: /empty_casing/, mod: 'immersiveengineering' },
 
+        { id: 'industrialforegoing:crusher/sand_silicon' },
         { id: 'industrialforegoing:washing_factory' },
         { id: 'industrialforegoing:fermentation_station' },
         { id: 'industrialforegoing:fluid_sieving_machine' },
         { id: 'industrialforegoing:ore_laser_base' },
         { id: 'industrialforegoing:fluid_laser_base' },
         { id: /industrialforegoing:laser_drill_ore/ },
+        { id: `industrialforegoing:dryrubber` },
 
         { id: 'mekanism:teleportation_core' },
 
