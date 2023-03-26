@@ -76,11 +76,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}imbuement_chamber`
         },
         {
-            item_in: {
-                type: 'forge:nbt',
-                item: 'naturesaura:aura_bottle',
-                nbt: '{stored_type:"naturesaura:overworld"}'
-            },
+            item_in: { item: 'naturesaura:gold_leaf' },
             block_in: 'twilightforest:ironwood_block',
             post: [
                 {

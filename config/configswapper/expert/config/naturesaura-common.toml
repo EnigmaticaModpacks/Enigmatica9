@@ -6,7 +6,7 @@
 	auraTypeOverrides = [
 		"blue_skies:everbright->naturesaura:nether",
 		"blue_skies:everdawn->naturesaura:overworld",
-		"twilightforest:twilight_forest->naturesaura:overworld",
+		"twilightforest:twilight_forest->naturesaura:end",
 		"the_bumblezone:the_bumblezone->naturesaura:end"
 		
 	]
