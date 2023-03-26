@@ -24,5 +24,8 @@
 	"block.immersiveengineering.stairs_steel_scaffolding_grate_top": "Steel Scaffolding Stairs",
 	"block.immersiveengineering.stairs_steel_scaffolding_wooden_top": "Steel Scaffolding Stairs",
 	"item.immersiveengineering.drillhead_steel": "Steel Drill Head",
-	"item.immersiveengineering.rockcutter": "Rockcutter Sawblade"
+	"item.immersiveengineering.rockcutter": "Rockcutter Sawblade",
+	"item.immersiveengineering.revolver": "Revolver",
+	"item.immersiveengineering.component_electronic": "Electronic Component",
+	"item.immersiveengineering.circuit_board": "Circuit Backplane"
 }

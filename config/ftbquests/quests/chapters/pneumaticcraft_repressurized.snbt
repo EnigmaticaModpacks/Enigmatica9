@@ -1672,7 +1672,7 @@
 			description: [
 				"Bats. The greatest enemy of them all. Now behold, their doom is in your hands."
 				""
-				"Micro missiles are target seeking explosives. They do no damage to the terrain and can be configured for varying degrees of explosive damage, travel speed, and turn speed. Sneak Right-Click to configure."
+				"Micromissiles are target seeking explosives. They do no damage to the terrain and can be configured for varying degrees of explosive damage, travel speed, and turn speed. Sneak Right-Click to configure."
 			]
 			dependencies: ["00000000000000D3"]
 			id: "3753EF6387AEA9AB"

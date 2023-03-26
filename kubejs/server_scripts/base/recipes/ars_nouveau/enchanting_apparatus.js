@@ -144,7 +144,7 @@ ServerEvents.recipes((event) => {
             ],
             reagent: [
                 { item: 'minecraft:iron_boots' },
-                { item: 'naturesaura:infused_iron_shoess' },
+                { item: 'naturesaura:infused_iron_shoes' },
                 { item: 'blue_skies:aquite_boots' },
                 { item: 'twilightforest:ironwood_boots' },
                 { item: 'immersiveengineering:armor_steel_feet' }

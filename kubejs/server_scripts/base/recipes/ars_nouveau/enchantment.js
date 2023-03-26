@@ -1098,32 +1098,6 @@ ServerEvents.recipes((event) => {
         },
 
         {
-            enchantment: 'minecraft:quick_charge',
-            level: 4,
-            pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { tag: 'forge:storage_blocks/source' } }
-            ]
-        },
-        {
-            enchantment: 'minecraft:quick_charge',
-            level: 5,
-            pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { tag: 'forge:storage_blocks/source' } }
-            ]
-        },
-
-        {
             enchantment: 'minecraft:channeling',
             level: 1,
             pedestalItems: [

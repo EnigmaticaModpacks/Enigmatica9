@@ -201,10 +201,10 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 200,
-                niotic: 800,
-                spirited: 3200,
-                nitro: 12800
+                basic: 500,
+                niotic: 1000,
+                spirited: 8000,
+                nitro: 32000
             }
         },
         cables: {
@@ -212,10 +212,10 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 200,
-                niotic: 800,
-                spirited: 3200,
-                nitro: 12800
+                basic: 500,
+                niotic: 1000,
+                spirited: 8000,
+                nitro: 32000
             }
         },
         dischargers: {
@@ -232,10 +232,10 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 200,
-                niotic: 800,
-                spirited: 3200,
-                nitro: 12800
+                basic: 500,
+                niotic: 1000,
+                spirited: 8000,
+                nitro: 32000
             }
         },
         ender_cells: {
@@ -243,10 +243,10 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 2000,
-                niotic: 8000,
-                spirited: 32000,
-                nitro: 128000
+                basic: 5000,
+                niotic: 10000,
+                spirited: 80000,
+                nitro: 320000
             },
             channels: {
                 starter: 1,
@@ -263,10 +263,10 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 200,
-                niotic: 800,
-                spirited: 3200,
-                nitro: 12800
+                basic: 500,
+                niotic: 1000,
+                spirited: 8000,
+                nitro: 32000
             },
             channels: {
                 starter: 1,
@@ -292,10 +292,10 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 200,
-                niotic: 800,
-                spirited: 3200,
-                nitro: 12800
+                basic: 500,
+                niotic: 1000,
+                spirited: 8000,
+                nitro: 32000
             }
         },
         energizing_rods: {
@@ -312,10 +312,10 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 400,
-                niotic: 1600,
-                spirited: 6400,
-                nitro: 25600
+                basic: 5000,
+                niotic: 10000,
+                spirited: 80000,
+                nitro: 320000
             }
         },
         hoppers: {
@@ -332,10 +332,10 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 200,
-                niotic: 800,
-                spirited: 3200,
-                nitro: 12800
+                basic: 500,
+                niotic: 1000,
+                spirited: 8000,
+                nitro: 32000
             },
             charging_rates: {
                 starter: 1,
@@ -361,10 +361,10 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 200,
-                niotic: 800,
-                spirited: 3200,
-                nitro: 12800
+                basic: 500,
+                niotic: 1000,
+                spirited: 8000,
+                nitro: 32000
             },
             charging_rates: {
                 starter: 1,

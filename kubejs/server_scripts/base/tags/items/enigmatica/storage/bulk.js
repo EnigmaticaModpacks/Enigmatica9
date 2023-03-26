@@ -8,7 +8,8 @@ ServerEvents.tags('item', (event) => {
         /ae2:item_storage_cell_/,
         /ae2things:disk_drive_/,
         '#functionalstorage:drawer',
-        'functionalstorage:armory_cabinet'
+        'functionalstorage:armory_cabinet',
+        'immersiveengineering:silo'
         //'botania:black_hole_talisman'
     ]);
 });

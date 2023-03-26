@@ -130,9 +130,9 @@ const entries = {
             }
         },
         {
-            key: 'item.create.mechanical_arm',
+            key: 'block.create.mechanical_arm',
             value: {
-                normal: 'Mehcanical Arm',
+                normal: 'Mechanical Arm',
                 expert: 'Enchanted Arm'
             }
         },
@@ -155,6 +155,22 @@ const entries = {
             value: {
                 normal: 'Apply Andesite Alloy to stripped wood, creating a basic casing for your machines',
                 expert: 'Apply Compressed Stone to stripped wood, creating a basic casing for your machines'
+            }
+        },
+        {
+            key: 'block.create.brass_ladder',
+            value: {
+                normal: 'Brass Ladder',
+                expert: 'Fancy Ladder'
+            }
+        }
+    ],
+    createaddition: [
+        {
+            key: 'block.createaddition.electric_motor',
+            value: {
+                normal: 'Electric Motor',
+                expert: 'Eldritch Engine'
             }
         }
     ],
@@ -290,6 +306,118 @@ const entries = {
             value: {
                 normal: 'Make a Flux Compressor so you can use Forge Energy from other mods for your compression needs.',
                 expert: 'Make a Arcane Compressor so you can use Forge Energy from other mods for your compression needs.'
+            }
+        },
+        {
+            key: 'item.pneumaticcraft.module_expansion_card',
+            value: {
+                normal: 'Module Expansion Card',
+                expert: 'Module Expansion Crystal'
+            }
+        },
+        {
+            key: 'gui.tooltip.item.pneumaticcraft.air_grate_module',
+            value: {
+                normal: '§9Formula: Range(blocks) = 4.0 x pressure(bar), or -16 x pressure(bar) if vacuum${br}${br}§bThis module will repel or attract any entity within range dependent on whether pressure is positive or negative, respectively, and will attempt to insert items into any adjacent inventory.  Can also be used to cool Heat Sinks.${br}${br}When upgraded with a Module Expansion Card, the entities affected can be configured via GUI.',
+                expert: '§9Formula: Range(blocks) = 4.0 x pressure(bar), or -16 x pressure(bar) if vacuum${br}${br}§bThis module will repel or attract any entity within range dependent on whether pressure is positive or negative, respectively, and will attempt to insert items into any adjacent inventory.  Can also be used to cool Heat Sinks.${br}${br}When upgraded with a Module Expansion Crystal, the entities affected can be configured via GUI.'
+            }
+        },
+        {
+            key: 'gui.tooltip.item.pneumaticcraft.charging_module',
+            value: {
+                normal: 'This module (de)pressurizes any pressurizable items in the inventory it points at. Note: air can flow both to and from items in the inventory, depending on their pressure and pressure in the tube!${br}${br}When upgraded with a Module Expansion Card, air flows much more quickly.',
+                expert: 'This module (de)pressurizes any pressurizable items in the inventory it points at. Note: air can flow both to and from items in the inventory, depending on their pressure and pressure in the tube!${br}${br}When upgraded with a Module Expansion Crystal, air flows much more quickly.'
+            }
+        },
+        {
+            key: 'gui.tooltip.item.pneumaticcraft.pressure_gauge_module',
+            value: {
+                normal: "§9Formula: Redstone = 2.0 x pressure(bar)${br}${br}§bThis module emits a redstone signal, the strength of which depends on the tube's pressure.${br}${br}When upgraded with a Module Expansion Card, the threshold can be configured precisely via GUI.",
+                expert: "§9Formula: Redstone = 2.0 x pressure(bar)${br}${br}§bThis module emits a redstone signal, the strength of which depends on the tube's pressure.${br}${br}When upgraded with a Module Expansion Crystal, the threshold can be configured precisely via GUI."
+            }
+        },
+        {
+            key: 'gui.tooltip.item.pneumaticcraft.redstone_module',
+            value: {
+                normal: '§bThis module transmits redstone signals to other Redstone Modules on connected tubes. Right-click with any dye to set the channel; right-click with a wrench to toggle between input and output.${br}${br}Upgrade with a Module Expansion Card for extra signal processing operations.',
+                expert: '§bThis module transmits redstone signals to other Redstone Modules on connected tubes. Right-click with any dye to set the channel; right-click with a wrench to toggle between input and output.${br}${br}Upgrade with a Module Expansion Crystal for extra signal processing operations.'
+            }
+        },
+        {
+            key: 'gui.tooltip.item.pneumaticcraft.regulator_tube_module',
+            value: {
+                normal: '§bThis module limits the pressure allowed on its low side based on the redstone signal it receives. No signal = 4.9 bar (19.9 for Advanced Pressure Tubes), a full signal = 0 bar (no air allowed through), and other signal levels are interpolated. Air is always allowed to travel "backwards" through the Regulator, making it usable as a one-way valve.${br}When upgraded with a Module Expansion Card, the threshold can be configured precisely via GUI.',
+                expert: '§bThis module limits the pressure allowed on its low side based on the redstone signal it receives. No signal = 4.9 bar (19.9 for Advanced Pressure Tubes), a full signal = 0 bar (no air allowed through), and other signal levels are interpolated. Air is always allowed to travel "backwards" through the Regulator, making it usable as a one-way valve.${br}When upgraded with a Module Expansion Crystal, the threshold can be configured precisely via GUI.'
+            }
+        },
+        {
+            key: 'gui.tooltip.item.pneumaticcraft.safety_tube_module',
+            value: {
+                normal: '§bThis module will vent high pressure air if the tube pressure reaches 4.9 bar (19.9 for Advanced Pressure Tubes). Although this prevents explosions, released air is energy loss and wastes fuel.${br}${br}When upgraded with a Module Expansion Card, the threshold can be configured precisely via GUI.',
+                expert: '§bThis module will vent high pressure air if the tube pressure reaches 4.9 bar (19.9 for Advanced Pressure Tubes). Although this prevents explosions, released air is energy loss and wastes fuel.${br}${br}When upgraded with a Module Expansion Crystal, the threshold can be configured precisely via GUI.'
+            }
+        },
+        {
+            key: 'gui.tooltip.item.pneumaticcraft.vacuum_module',
+            value: {
+                normal: '§bActs just like a Vacuum Pump, but as a module. Takes pressure at the wide (green) end, and removes it at the narrow (red) end. Install a Module Expansion Card to increase operation speed. Apply a Redstone Signal to prevent operation.',
+                expert: '§bActs just like a Vacuum Pump, but as a module. Takes pressure at the wide (green) end, and removes it at the narrow (red) end. Install a Module Expansion Crystal to increase operation speed. Apply a Redstone Signal to prevent operation.'
+            }
+        },
+        {
+            key: 'pneumaticcraft.gui.redstoneModule.addAdvancedPCB',
+            value: {
+                normal: 'Apply a Module Expansion Card to enable more features.',
+                expert: 'Apply a Module Expansion Crystal to enable more features.'
+            }
+        },
+        {
+            key: 'entity.minecraft.villager.pneumaticcraft.mechanic',
+            value: {
+                normal: 'Pressure Mechanic',
+                expert: 'Magitek Researcher'
+            }
+        },
+        {
+            key: 'item.pneumaticcraft.jet_boots_upgrade_3',
+            value: {
+                normal: 'Jet Boots Upgrade: Tier III',
+                expert: 'Jet Boots Upgrade: Tier I'
+            }
+        },
+        {
+            key: 'item.pneumaticcraft.jet_boots_upgrade_4',
+            value: {
+                normal: 'Jet Boots Upgrade: Tier IV',
+                expert: 'Jet Boots Upgrade: Tier II'
+            }
+        },
+        {
+            key: 'item.pneumaticcraft.jet_boots_upgrade_5',
+            value: {
+                normal: 'Jet Boots Upgrade: Tier V',
+                expert: 'Jet Boots Upgrade: Tier III'
+            }
+        },
+        {
+            key: 'item.pneumaticcraft.jumping_upgrade_2',
+            value: {
+                normal: 'Jumping Upgrade: Tier II',
+                expert: 'Jumping Upgrade: Tier I'
+            }
+        },
+        {
+            key: 'item.pneumaticcraft.jumping_upgrade_3',
+            value: {
+                normal: 'Jumping Upgrade: Tier III',
+                expert: 'Jumping Upgrade: Tier II'
+            }
+        },
+        {
+            key: 'item.pneumaticcraft.jumping_upgrade_4',
+            value: {
+                normal: 'Jumping Upgrade: Tier IV',
+                expert: 'Jumping Upgrade: Tier III'
             }
         }
     ],
@@ -445,10 +573,55 @@ const entries = {
                 normal: 'Steel Drill Head',
                 expert: 'Reinforced Drill Head'
             }
+        },
+        {
+            key: 'item.immersiveengineering.revolver',
+            value: {
+                normal: 'Revolver',
+                expert: 'Spellbound Revolver'
+            }
+        },
+        {
+            key: 'item.immersiveengineering.component_electronic',
+            value: {
+                normal: 'Electronic Component',
+                expert: 'Imprinted Control Crystal'
+            }
+        },
+        {
+            key: 'item.immersiveengineering.circuit_board',
+            value: {
+                normal: 'Circuit Backplane',
+                expert: 'Runic Proto-Board'
+            }
+        }
+    ],
+    powah: [
+        {
+            key: 'block.powah.energized_steel_block',
+            value: {
+                normal: 'Block Of Energized Steel',
+                expert: 'Block of Orichalcum'
+            }
+        },
+        {
+            key: 'item.powah.steel_energized',
+            value: {
+                normal: 'Energized Steel',
+                expert: 'Orichalcum Ingot'
+            }
+        }
+    ],
+    supplementaries: [
+        {
+            key: 'block.supplementaries.brass_lantern',
+            value: {
+                normal: 'Brass Lantern',
+                expert: 'Gold Lantern'
+            }
         }
     ]
 };
-
 Object.keys(entries).forEach((mod) => {
     let lang_file = `kubejs/assets/${mod}/lang/en_us.json`;
     let lang_json = JsonIO.read(lang_file);
