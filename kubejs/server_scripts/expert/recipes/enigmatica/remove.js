@@ -104,13 +104,16 @@ ServerEvents.recipes((event) => {
         { id: /empty_shell/, mod: 'immersiveengineering' },
         { id: /empty_casing/, mod: 'immersiveengineering' },
 
+        { id: /industrialforegoing:laser_drill_ore/ },
+        { id: /industrialforegoing:dissolution_chamber\/range_addon/ },
+        { id: 'industrialforegoing:dissolution_chamber/infinity_launcher' },
+        { id: 'industrialforegoing:dissolution_chamber/infinity_backpack' },
         { id: 'industrialforegoing:crusher/sand_silicon' },
         { id: 'industrialforegoing:washing_factory' },
         { id: 'industrialforegoing:fermentation_station' },
         { id: 'industrialforegoing:fluid_sieving_machine' },
         { id: 'industrialforegoing:ore_laser_base' },
         { id: 'industrialforegoing:fluid_laser_base' },
-        { id: /industrialforegoing:laser_drill_ore/ },
         { id: `industrialforegoing:dryrubber` },
         { id: 'industrialforegoing:latex_processing_unit' },
         { id: 'industrialforegoing:mob_duplicator' },
@@ -126,8 +129,6 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:block_placer' },
         { id: 'industrialforegoing:fluid_placer' },
         { id: 'industrialforegoing:mob_imprisonment_tool' },
-        { id: 'industrialforegoing:dissolution_chamber/infinity_launcher' },
-        { id: 'industrialforegoing:dissolution_chamber/infinity_backpack' },
 
         { id: 'mekanism:teleportation_core' },
 
