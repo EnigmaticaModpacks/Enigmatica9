@@ -59,6 +59,8 @@ ServerEvents.recipes((event) => {
 
         { id: 'farmersdelight:integration/immersiveengineering/metalpress/pumpkin' },
 
+        { id: 'farmingforblockheads:feeding_trough' },
+
         { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
         { id: 'hexerei:willow_broom_from_mixing_cauldron' },
         { id: 'hexerei:blood_sigil_from_mixing_cauldron' },
@@ -129,6 +131,7 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:block_placer' },
         { id: 'industrialforegoing:fluid_placer' },
         { id: 'industrialforegoing:mob_imprisonment_tool' },
+        { id: 'industrialforegoing:animal_feeder' },
 
         { id: 'mekanism:teleportation_core' },
 
