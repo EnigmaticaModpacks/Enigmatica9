@@ -98,6 +98,11 @@ ServerEvents.recipes((event) => {
             filter: {},
             to_replace: 'create:electron_tube',
             replace_with: 'pneumaticcraft:logistics_core'
+        },
+        {
+            filter: { mod: 'spirit' },
+            to_replace: 'minecraft:netherrack',
+            replace_with: 'naturesaura:ancient_stick'
         }
     ];
 

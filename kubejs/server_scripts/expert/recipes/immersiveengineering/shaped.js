@@ -397,18 +397,6 @@ ServerEvents.recipes((event) => {
             id: `immersiveengineering:crafting/toolupgrade_revolver_bayonet`
         },
         {
-            output: 'immersiveengineering:cloche',
-            pattern: ['ABA', 'ACA', 'DED'],
-            key: {
-                A: 'quark:framed_glass_pane',
-                B: 'immersiveengineering:light_bulb',
-                C: '#forge:essences/earth',
-                D: '#forge:treated_wood',
-                E: '#industrialforegoing:machine_frame/simple'
-            },
-            id: `immersiveengineering:crafting/cloche`
-        },
-        {
             output: '4x immersiveengineering:wirecoil_redstone',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {

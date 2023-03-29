@@ -16,7 +16,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}whirlisprig`
         },
         {
-            inputs: ['naturesaura:birth_spirit', '#forge:gems/source', 'naturesaura:token_joy'],
+            inputs: ['naturesaura:birth_spirit', '#forge:gems/source', 'naturesaura:pet_reviver'],
             entity: 'ars_nouveau:drygmy',
             aura: 100000,
             time: 100,
@@ -30,26 +30,11 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}frog`
         },
         {
-            inputs: ['naturesaura:birth_spirit', 'minecraft:leather', 'minecraft:coal'],
-            entity: 'quark:foxhound',
-            aura: 150000,
-            time: 120,
-            id: `${id_prefix}foxhound`
-        },
-
-        {
             inputs: ['naturesaura:birth_spirit', 'farmersdelight:cabbage', 'minecraft:carrot'],
             entity: 'minecraft:rabbit',
             aura: 30000,
             time: 40,
             id: 'naturesaura:animal_spawner/rabbit'
-        },
-        {
-            inputs: ['naturesaura:birth_spirit', 'ars_elemental:anima_essence', 'minecraft:feather'],
-            entity: 'minecraft:phantom',
-            aura: 200000,
-            time: 200,
-            id: 'naturesaura:animal_spawner/phantom'
         },
         {
             inputs: ['naturesaura:birth_spirit', 'minecraft:feather', 'minecraft:jungle_sapling'],
@@ -64,27 +49,6 @@ ServerEvents.recipes((event) => {
             aura: 50000,
             time: 60,
             id: 'naturesaura:animal_spawner/turtle'
-        },
-        {
-            inputs: ['naturesaura:birth_spirit', 'thermal:blitz_rod', 'thermal:blitz_powder'],
-            entity: 'thermal:blitz',
-            aura: 150000,
-            time: 120,
-            id: `${id_prefix}blitz`
-        },
-        {
-            inputs: ['naturesaura:birth_spirit', 'thermal:blizz_rod', 'thermal:blizz_powder'],
-            entity: 'thermal:blizz',
-            aura: 150000,
-            time: 120,
-            id: `${id_prefix}blizz`
-        },
-        {
-            inputs: ['naturesaura:birth_spirit', 'thermal:basalz_rod', 'thermal:basalz_powder'],
-            entity: 'thermal:basalz',
-            aura: 150000,
-            time: 120,
-            id: `${id_prefix}basalz`
         },
         {
             inputs: ['naturesaura:birth_spirit', 'minecraft:feather', 'hexerei:seed_mixture'],

@@ -46,6 +46,12 @@ ServerEvents.recipes((event) => {
             inputs: ['powah:blank_card', '#forge:gems/carminite'],
             energy: '12000000',
             id: `${id_prefix}binding_card`
+        },
+        {
+            output: 'mekanism:upgrade_anchor',
+            inputs: ['powah:blank_card', '#forge:essences/abjuration', '#forge:gems/diopside'],
+            energy: '100000',
+            id: `${id_prefix}upgrade_anchor`
         }
     ];
 
