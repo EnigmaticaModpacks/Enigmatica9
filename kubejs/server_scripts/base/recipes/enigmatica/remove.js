@@ -56,6 +56,8 @@ ServerEvents.recipes((event) => {
         { id: 'minecraft:bone_meal' },
         { id: 'minecraft:glass' },
 
+        { id: /naturesaura:animal_spawner\/sheep_/ },
+
         { id: 'occultism:crafting/butcher_knife' },
 
         { id: /pneumaticcraft:thermo_plant\/vegetable_oil_from_/ },
