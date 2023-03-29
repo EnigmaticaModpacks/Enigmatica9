@@ -290,7 +290,7 @@ ServerEvents.recipes((event) => {
         },
         {
             entity: 'blue_skies:crogre',
-            inputs: ['naturesaura:birth_spirit', 'blue_skies:bug_guts'],
+            inputs: ['naturesaura:birth_spirit', 'blue_skies:bug_guts', 'blue_skies:chilled_lily_pad'],
             aura: aura_cost.large,
             time: 40,
             id: `${id_prefix}crogre`
