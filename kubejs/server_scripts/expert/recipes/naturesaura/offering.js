@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: { item: 'naturesaura:clock_hand' },
-            input: { item: 'ars_nouveau:manipulation_essence' },
+            input: { tag: 'forge:essences/manipulation' },
             start_item: { item: 'naturesaura:calling_spirit' },
             id: `naturesaura:offering/clock_hand`
         },

@@ -61,11 +61,6 @@ ServerEvents.recipes((event) => {
         },
         {
             filter: { mod: 'powah' },
-            to_replace: 'minecraft:redstone_block',
-            replace_with: 'ae2:fluix_block'
-        },
-        {
-            filter: { mod: 'powah' },
             to_replace: 'powah:dielectric_casing',
             replace_with: 'thermal:energy_cell_frame'
         },

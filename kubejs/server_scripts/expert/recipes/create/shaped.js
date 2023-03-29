@@ -119,7 +119,7 @@ ServerEvents.recipes((event) => {
                 A: 'create:shaft',
                 B: 'create:andesite_casing',
                 C: 'naturesaura:infused_stone',
-                D: 'ars_nouveau:earth_essence'
+                D: '#forge:essences/earth'
             },
             id: `create:crafting/kinetics/mechanical_press`
         },
@@ -129,7 +129,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'create:shaft',
                 B: '#forge:plates/constantan',
-                C: 'ars_nouveau:air_essence'
+                C: '#forge:essences/air'
             },
             id: `create:crafting/kinetics/propeller`
         },
@@ -139,7 +139,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'create:shaft',
                 B: '#forge:plates/bronze',
-                C: 'ars_nouveau:water_essence'
+                C: '#forge:essences/water'
             },
             id: `create:crafting/kinetics/whisk`
         },

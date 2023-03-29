@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
         {
             output: 'twilightforest:raw_ironwood',
             inputs: [
-                'ars_nouveau:manipulation_essence',
+                '#forge:essences/manipulation',
                 'hexerei:belladonna_berries',
                 'naturesaura:gold_leaf',
                 'hexerei:dried_yellow_dock_flowers',
@@ -195,11 +195,11 @@ ServerEvents.recipes((event) => {
             inputs: [
                 'blue_skies:soul_fragment',
                 'blue_skies:soul_fragment',
-                'ars_nouveau:water_essence',
-                'ars_nouveau:fire_essence',
-                'ars_nouveau:manipulation_essence',
-                'ars_nouveau:earth_essence',
-                'ars_nouveau:air_essence',
+                '#forge:essences/water',
+                '#forge:essences/fire',
+                '#forge:essences/manipulation',
+                '#forge:essences/earth',
+                '#forge:essences/air',
                 'blue_skies:soul_fragment'
             ],
             liquid: {
@@ -217,7 +217,7 @@ ServerEvents.recipes((event) => {
         {
             output: 'twilightforest:fiery_block',
             inputs: [
-                'ars_nouveau:fire_essence',
+                '#forge:essences/fire',
                 'hexerei:dried_yellow_dock_flowers',
                 '#forge:dusts/constantan',
                 'hexerei:dried_yellow_dock_flowers',
@@ -317,7 +317,7 @@ ServerEvents.recipes((event) => {
                 'hexerei:dried_mandrake_flowers',
                 '#forge:plates/lead',
                 'hexerei:belladonna_berries',
-                'ars_nouveau:earth_essence',
+                '#forge:essences/earth',
                 'hexerei:belladonna_berries',
                 '#forge:plates/lead',
                 'hexerei:dried_mandrake_flowers'
@@ -525,13 +525,13 @@ ServerEvents.recipes((event) => {
             output: 'pneumaticcraft:armor_upgrade',
             inputs: [
                 'pneumaticcraft:upgrade_matrix',
-                'ars_nouveau:abjuration_essence',
+                '#forge:essences/abjuration',
                 '#forge:gems/infused_diamond',
-                'ars_nouveau:abjuration_essence',
+                '#forge:essences/abjuration',
                 'ars_nouveau:glyph_self',
-                'ars_nouveau:abjuration_essence',
+                '#forge:essences/abjuration',
                 '#forge:gems/infused_diamond',
-                'ars_nouveau:abjuration_essence'
+                '#forge:essences/abjuration'
             ],
             liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:resistance' } },
             liquidOutput: {
@@ -546,13 +546,13 @@ ServerEvents.recipes((event) => {
             output: 'pneumaticcraft:gilded_upgrade',
             inputs: [
                 'pneumaticcraft:upgrade_matrix',
-                'ars_nouveau:abjuration_essence',
+                '#forge:essences/abjuration',
                 '#forge:plates/gold',
-                'ars_nouveau:abjuration_essence',
+                '#forge:essences/abjuration',
                 'ars_nouveau:glyph_self',
-                'ars_nouveau:abjuration_essence',
+                '#forge:essences/abjuration',
                 '#forge:plates/gold',
-                'ars_nouveau:abjuration_essence'
+                '#forge:essences/abjuration'
             ],
             liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:long_knowledge' } },
             liquidOutput: {
@@ -567,13 +567,13 @@ ServerEvents.recipes((event) => {
             output: 'pneumaticcraft:ender_visor_upgrade',
             inputs: [
                 'pneumaticcraft:upgrade_matrix',
-                'ars_nouveau:abjuration_essence',
+                '#forge:essences/abjuration',
                 'minecraft:carved_pumpkin',
-                'ars_nouveau:abjuration_essence',
+                '#forge:essences/abjuration',
                 'ars_nouveau:glyph_self',
-                'ars_nouveau:abjuration_essence',
+                '#forge:essences/abjuration',
                 'minecraft:carved_pumpkin',
-                'ars_nouveau:abjuration_essence'
+                '#forge:essences/abjuration'
             ],
             liquid: {
                 fluid: 'hexerei:potion',

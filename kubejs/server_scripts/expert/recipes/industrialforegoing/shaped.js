@@ -25,6 +25,19 @@ ServerEvents.recipes((event) => {
                 C: '#industrialforegoing:machine_frame/simple'
             },
             id: 'industrialforegoing:laser_drill'
+        },
+        {
+            output: '4x industrialforegoing:hydroponic_bed',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'farmersdelight:rich_soil',
+                B: '#forge:essences/water',
+                C: '#forge:plastic',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:ingots/infused_iron',
+                F: '#forge:essences/earth'
+            },
+            id: 'industrialforegoing:hydroponic_bed'
         }
     ];
 

@@ -159,7 +159,7 @@ ServerEvents.recipes((event) => {
             output: '3x modularrouters:speed_upgrade',
             pattern: [' A ', 'ABA', 'CCC'],
             key: {
-                A: 'ars_nouveau:air_essence',
+                A: '#forge:essences/air',
                 B: 'modularrouters:blank_upgrade',
                 C: '#forge:gems/fluix'
             },
@@ -169,7 +169,7 @@ ServerEvents.recipes((event) => {
             output: '3x modularrouters:fluid_upgrade',
             pattern: [' A ', 'ABA', 'CCC'],
             key: {
-                A: 'ars_nouveau:water_essence',
+                A: '#forge:essences/water',
                 B: 'modularrouters:blank_upgrade',
                 C: '#forge:gems/fluix'
             },

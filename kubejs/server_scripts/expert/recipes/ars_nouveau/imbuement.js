@@ -11,9 +11,9 @@ ServerEvents.recipes((event) => {
             output: 'minecraft:iron_ingot',
             count: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:fire_essence' } },
-                { item: { item: 'ars_nouveau:fire_essence' } }
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/fire' } },
+                { item: { tag: 'forge:essences/fire' } }
             ],
             source: 600,
             id: `${id_prefix}iron_from_pig_iron`
@@ -92,8 +92,8 @@ ServerEvents.recipes((event) => {
             count: 2,
             pedestalItems: [
                 { item: { tag: 'forge:storage_blocks/carminite' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } }
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/conjuration' } }
             ],
             source: 500,
             id: `${id_prefix}logistics_core`
@@ -139,9 +139,9 @@ ServerEvents.recipes((event) => {
             output: 'pneumaticcraft:drill_bit_iron',
             count: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:earth_essence' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
-                { item: { item: 'ars_nouveau:earth_essence' } }
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { tag: 'forge:essences/earth' } }
             ],
             source: 600,
             id: `${id_prefix}drill_bit_iron`

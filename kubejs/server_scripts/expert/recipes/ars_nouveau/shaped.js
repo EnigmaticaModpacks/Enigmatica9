@@ -42,7 +42,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: '#forge:storage_blocks/glowstone',
                 B: 'thermal:jar',
-                C: 'ars_nouveau:air_essence'
+                C: '#forge:essences/air'
             },
             id: `${id_prefix}jar_of_light`
         },
@@ -50,9 +50,9 @@ ServerEvents.recipes((event) => {
             output: 'ars_nouveau:void_jar',
             pattern: ['A', 'B', 'C'],
             key: {
-                A: 'ars_nouveau:fire_essence',
+                A: '#forge:essences/fire',
                 B: 'thermal:jar',
-                C: 'ars_nouveau:manipulation_essence'
+                C: '#forge:essences/manipulation'
             },
             id: `${id_prefix}void_jar`
         },

@@ -13,11 +13,11 @@ ServerEvents.recipes((event) => {
         {
             output: '4x powah:crystal_niotic',
             inputs: [
-                'ars_nouveau:water_essence',
+                '#forge:essences/water',
                 'blue_skies:soul_fragment',
                 '#forge:gems/aquite',
                 'blue_skies:soul_fragment',
-                'ars_nouveau:water_essence'
+                '#forge:essences/water'
             ],
             energy: '100000',
             id: `powah:energizing/niotic_crystal`
@@ -31,12 +31,12 @@ ServerEvents.recipes((event) => {
         {
             output: '2x rftoolsbase:infused_diamond',
             inputs: [
-                'ars_nouveau:water_essence',
-                'ars_nouveau:fire_essence',
+                '#forge:essences/water',
+                '#forge:essences/fire',
                 '#forge:gems/diamond',
                 '#forge:gems/diamond',
-                'ars_nouveau:earth_essence',
-                'ars_nouveau:air_essence'
+                '#forge:essences/earth',
+                '#forge:essences/air'
             ],
             energy: '200000',
             id: `${id_prefix}infused_diamond`

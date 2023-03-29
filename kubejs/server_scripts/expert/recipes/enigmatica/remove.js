@@ -132,8 +132,11 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:fluid_placer' },
         { id: 'industrialforegoing:mob_imprisonment_tool' },
         { id: 'industrialforegoing:animal_feeder' },
+        { id: 'industrialforegoing:spores_recreator' },
 
         { id: 'mekanism:teleportation_core' },
+        { id: 'mekanism:seismic_reader' },
+        { id: 'mekanism:energy_tablet' },
 
         { id: 'minecraft:netherite_ingot' },
         { id: 'minecraft:lodestone' },
@@ -177,6 +180,7 @@ ServerEvents.recipes((event) => {
         { id: 'powah:crafting/aerial_pearl' },
         { id: 'powah:energizing/ender_core' },
         { id: /powah:crafting\/energizing_rod_/ },
+        { id: /powah:crafting\/battery_/ },
         { id: /powah:crafting\/(cable|capacitor|reactor|energ.*|.*_cell|battery|player.*|ender.*)_(blazing|hardened)/ },
 
         { id: 'quark:tools/crafting/runes/rainbow_rune' },
@@ -206,6 +210,8 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:flux_drill' },
         { id: 'thermal:drill_head' },
         { id: 'thermal:saw_blade' },
+        { id: 'thermal:energy_cell' },
+        { id: 'thermal:flux_capacitor' },
 
         { id: 'twilightforest:equipment/fiery_ingot_crafting' },
         { id: 'twilightforest:material/fiery_iron_ingot' },

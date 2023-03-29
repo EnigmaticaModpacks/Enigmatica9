@@ -73,7 +73,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: '#forge:ingots/compressed_iron',
                 B: 'pneumaticcraft:logistics_core',
-                C: 'ars_nouveau:water_essence'
+                C: '#forge:essences/water'
             },
             id: `ae2:network/parts/export_bus`
         },
@@ -83,7 +83,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: '#forge:ingots/compressed_iron',
                 B: 'pneumaticcraft:logistics_core',
-                C: 'ars_nouveau:water_essence'
+                C: '#forge:essences/water'
             },
             id: `ae2:network/parts/import_bus`
         },
@@ -133,7 +133,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: '#forge:gems/fluix',
                 B: '#forge:ingots/compressed_iron',
-                C: 'ars_nouveau:water_essence',
+                C: '#forge:essences/water',
                 D: 'occultism:stable_wormhole'
             },
             id: `ae2:network/parts/tunnels_me`
@@ -144,7 +144,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: '#forge:gems/fluix',
                 B: '#forge:ingots/compressed_iron',
-                C: 'ars_nouveau:water_essence',
+                C: '#forge:essences/water',
                 D: 'occultism:stable_wormhole'
             },
             id: `ae2:network/parts/tunnels_me`

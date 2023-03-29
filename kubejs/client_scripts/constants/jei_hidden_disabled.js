@@ -277,6 +277,8 @@ jei.expert.items.disabled = [
     'mekanism:ultimate_energy_cube',
     'mekanism:ultimate_induction_cell',
     'mekanism:ultimate_induction_provider',
+    'mekanism:seismic_reader',
+    'mekanism:energy_tablet',
     'mekanismgenerators:gas_burning_generator',
     'mekanismgenerators:advanced_solar_generator',
     'mekanismgenerators:bio_generator',
@@ -373,7 +375,9 @@ jei.expert.items.disabled = [
     'thermal:flux_saw',
     'thermal:flux_drill',
     'thermal:drill_head',
-    'thermal:saw_blade'
+    'thermal:saw_blade',
+    'thermal:energy_cell',
+    'thermal:flux_capacitor'
 ];
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];

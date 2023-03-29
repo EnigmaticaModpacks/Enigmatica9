@@ -18,6 +18,7 @@ _Using Forge-1.19.2-43.2.6_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 -   Hide The One Probe recipes and items as they're not used
 -   Add many stone and cobblestone types to the Igneous Extruder
 -   Create special recipes for Frost Magma, Cryptic Magma, and Permafrost
+-   All Minecraft stone types may now be generated in the Material StoneWork Factory. Others are excluded to avoid overloading the selection interface. Many of these also no longer consume Water or Lava.
 
 **Fixed Bugs**
 

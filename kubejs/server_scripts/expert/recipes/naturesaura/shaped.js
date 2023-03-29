@@ -34,7 +34,7 @@ ServerEvents.recipes((event) => {
                 B: '#forge:dyes/yellow',
                 C: '#forge:dyes/blue',
                 D: 'naturesaura:infused_iron',
-                E: 'ars_nouveau:water_essence'
+                E: '#forge:essences/water'
             },
             id: `naturesaura:color_changer`
         },
@@ -43,8 +43,8 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: 'minecraft:stone_bricks',
-                B: 'ars_nouveau:water_essence',
-                C: 'ars_nouveau:conjuration_essence'
+                B: '#forge:essences/water',
+                C: '#forge:essences/conjuration'
             },
             id: `naturesaura:spring`
         },
@@ -61,10 +61,10 @@ ServerEvents.recipes((event) => {
             output: '4x naturesaura:calling_spirit',
             pattern: [' A ', 'BEC', ' D '],
             key: {
-                A: 'ars_nouveau:air_essence',
-                B: 'ars_nouveau:fire_essence',
-                C: 'ars_nouveau:water_essence',
-                D: 'ars_nouveau:earth_essence',
+                A: '#forge:essences/air',
+                B: '#forge:essences/fire',
+                C: '#forge:essences/water',
+                D: '#forge:essences/earth',
                 E: '#forge:gems/moonstone'
             },
             id: `naturesaura:calling_spirit`
@@ -98,11 +98,11 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'DCE', 'AFA'],
             key: {
                 A: 'naturesaura:infused_stone',
-                B: 'ars_nouveau:air_essence',
+                B: '#forge:essences/air',
                 C: '#forge:gems/nitro',
-                D: 'ars_nouveau:earth_essence',
-                E: 'ars_nouveau:fire_essence',
-                F: 'ars_nouveau:water_essence'
+                D: '#forge:essences/earth',
+                E: '#forge:essences/fire',
+                F: '#forge:essences/water'
             },
             id: `naturesaura:generator_limit_remover`
         },
@@ -122,7 +122,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'CCC'],
             key: {
                 A: 'naturesaura:gold_powder',
-                B: 'ars_nouveau:manipulation_essence',
+                B: '#forge:essences/manipulation',
                 C: 'naturesaura:infused_slab'
             },
             id: `naturesaura:powder_placer`
@@ -136,7 +136,7 @@ ServerEvents.recipes((event) => {
                 C: 'minecraft:dark_prismarine',
                 D: 'quark:bottled_cloud',
                 E: 'minecraft:sunflower',
-                F: 'ars_nouveau:manipulation_essence'
+                F: '#forge:essences/manipulation'
             },
             id: `naturesaura:weather_changer`
         },
@@ -147,7 +147,7 @@ ServerEvents.recipes((event) => {
                 A: 'naturesaura:infused_brick',
                 B: '#forge:storage_blocks/sunstone',
                 C: 'naturesaura:infused_iron',
-                D: 'ars_nouveau:manipulation_essence',
+                D: '#forge:essences/manipulation',
                 E: '#forge:storage_blocks/moonstone'
             },
             id: `naturesaura:time_changer`

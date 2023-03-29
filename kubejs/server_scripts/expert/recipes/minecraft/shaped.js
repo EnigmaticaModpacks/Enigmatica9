@@ -46,7 +46,7 @@ ServerEvents.recipes((event) => {
             output: '4x minecraft:fire_charge',
             pattern: [' B ', 'BAB', ' B '],
             key: {
-                A: 'ars_nouveau:fire_essence',
+                A: '#forge:essences/fire',
                 B: 'ae2:tiny_tnt'
             },
             id: `${id_prefix}fire_charge`
