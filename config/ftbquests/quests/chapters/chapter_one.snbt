@@ -198,8 +198,8 @@
 		}
 		{
 			title: "Elemental Essences"
-			x: -5.0d
-			y: -3.0d
+			x: -5.5d
+			y: -2.5d
 			description: [
 				"Air: Obtain a feather from a Raven found throughout the Twilight Forest."
 				""
@@ -678,6 +678,29 @@
 				type: "item"
 				item: "createaddition:rolling_mill"
 			}]
+		}
+		{
+			x: -5.0d
+			y: -3.5d
+			description: [
+				"While Charms of Life have been left scattered around these lands, there is one creature know for hoarding them: The Lich. "
+				""
+				"Defeat the lich to obtain the Charm. Maybe snatch their spell book at the same time; they won’t be needing it anymore. "
+			]
+			dependencies: ["4830632A0E6E9651"]
+			id: "370C40BCC3A6A055"
+			tasks: [
+				{
+					id: "33DC0C1E9B381D81"
+					type: "item"
+					item: "ars_elemental:anima_essence"
+				}
+				{
+					id: "3452A9AC39B219A4"
+					type: "item"
+					item: "ars_nouveau:novice_spell_book"
+				}
+			]
 		}
 	]
 	quest_links: [ ]
