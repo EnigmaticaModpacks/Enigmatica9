@@ -12,7 +12,7 @@ ServerEvents.highPriorityData((event) => {
                     stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
                 }
             ],
-            completion_xp: 250,
+            completion_xp: 10000,
             spawn_range: 1,
             waves: [
                 {
@@ -214,7 +214,7 @@ ServerEvents.highPriorityData((event) => {
                     stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
                 }
             ],
-            completion_xp: 250,
+            completion_xp: 10000,
             spawn_range: 3,
             waves: [
                 {
@@ -233,7 +233,7 @@ ServerEvents.highPriorityData((event) => {
                             stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
                         }
                     ],
-                    max_wave_time: 750,
+                    max_wave_time: 800,
                     setup_time: 50
                 },
                 {
@@ -257,7 +257,7 @@ ServerEvents.highPriorityData((event) => {
                             stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
                         }
                     ],
-                    max_wave_time: 750,
+                    max_wave_time: 800,
                     setup_time: 50
                 },
                 {
@@ -281,7 +281,7 @@ ServerEvents.highPriorityData((event) => {
                             stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
                         }
                     ],
-                    max_wave_time: 750,
+                    max_wave_time: 800,
                     setup_time: 50
                 },
                 {
@@ -296,7 +296,7 @@ ServerEvents.highPriorityData((event) => {
                             stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
                         }
                     ],
-                    max_wave_time: 3000,
+                    max_wave_time: 2400,
                     setup_time: 50
                 }
             ],
