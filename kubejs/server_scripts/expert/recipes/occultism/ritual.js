@@ -803,12 +803,7 @@ ServerEvents.recipes((event) => {
         {
             output: 'kubejs:summon_death_tome',
             activation_item: '#forge:bookshelves',
-            inputs: [
-                '#forge:essences/anima',
-                '#forge:essences/air',
-                '#forge:essences/anima',
-                '#forge:essences/air'
-            ],
+            inputs: ['#forge:essences/anima', '#forge:essences/air', '#forge:essences/anima', '#forge:essences/air'],
             ritual_dummy: 'kubejs:ritual_summon_death_tome',
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:summon_evil',
@@ -980,6 +975,56 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:tree_of_life_stage_3',
             duration: 60,
             id: `${id_prefix}ritual_tree_of_life_4`
+        },
+        {
+            output: Item.of('gateways:gate_pearl', `{gateway:"gateways:wither_council_gate", radius:5}`),
+            activation_item: '#forge:ingots/netherite',
+            inputs: [
+                'minecraft:wither_skeleton_skull',
+                'minecraft:wither_skeleton_skull',
+                'spirit:compressed_soul_powder_block',
+                'minecraft:wither_skeleton_skull',
+                '#forge:ingots/soul_steel',
+                '#forge:ingots/soul_steel',
+                '#forge:ingots/soul_steel',
+                '#forge:ingots/soul_steel',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond'
+            ],
+            ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:wither_council_gate", radius:5}`),
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_evil',
+            duration: 10,
+            id: `${id_prefix}wither_council_gate`
+        },
+        {
+            output: Item.of('gateways:gate_pearl', `{gateway:"gateways:wilden_circle_gate", radius:5}`),
+            activation_item: 'farmersdelight:honey_glazed_ham_block',
+            inputs: [
+                'hexerei:blood_bottle',
+                'hexerei:blood_bottle',
+                'hexerei:blood_bottle',
+                'hexerei:blood_bottle',
+                'kubejs:mystery_mash',
+                'kubejs:mystery_mash',
+                'kubejs:mystery_mash',
+                'kubejs:mystery_mash',
+                'kubejs:mystery_mash',
+                'kubejs:mystery_mash',
+                'kubejs:mystery_mash',
+                'kubejs:mystery_mash'
+            ],
+            ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:wilden_circle_gate", radius:5}`),
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_evil',
+            entity_to_sacrifice: {
+                tag: 'enigmatica:azulfo',
+                display_name: 'ritual.occultism.sacrifice.azulfo'
+            },
+            duration: 10,
+            id: `${id_prefix}wilden_circle_gate`
         }
     ];
 

@@ -175,6 +175,7 @@ jei.expert.items.disabled = [
     'ars_nouveau:mycelial_sourcelink',
     'ars_nouveau:vitalic_sourcelink',
     'ars_nouveau:volcanic_sourcelink',
+    'ars_nouveau:ritual_wilden_summon',
     'constructionwand:iron_wand',
     'constructionwand:stone_wand',
     'create:empty_blaze_burner',

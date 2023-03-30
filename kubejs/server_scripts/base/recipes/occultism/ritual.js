@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    const id_prefix = 'enigmatica:expert/occultism/ritual/';
+    const id_prefix = 'enigmatica:base/occultism/ritual/';
     const recipes = [
         /*
         Custom Summons
@@ -34,7 +34,7 @@ ServerEvents.recipes((event) => {
         {
             type: 'creeper',
             inputs: [
-                'ars_nouveau:conjuration_essence',
+                '#forge:essences/conjuration',
                 'thermal:gunpowder_block',
                 'thermal:gunpowder_block',
                 'thermal:gunpowder_block'
@@ -43,7 +43,7 @@ ServerEvents.recipes((event) => {
         {
             type: 'enderman',
             inputs: [
-                'ars_nouveau:conjuration_essence',
+                '#forge:essences/conjuration',
                 'minecraft:ender_pearl',
                 'minecraft:ender_pearl',
                 'minecraft:ender_pearl'
@@ -52,7 +52,7 @@ ServerEvents.recipes((event) => {
         {
             type: 'ghast',
             inputs: [
-                'ars_nouveau:conjuration_essence',
+                '#forge:essences/conjuration',
                 'minecraft:ghast_tear',
                 'thermal:gunpowder_block',
                 'minecraft:ghast_tear'
@@ -61,7 +61,7 @@ ServerEvents.recipes((event) => {
         {
             type: 'magma_cube',
             inputs: [
-                'ars_nouveau:conjuration_essence',
+                '#forge:essences/conjuration',
                 'minecraft:magma_block',
                 'minecraft:magma_block',
                 'minecraft:magma_block'
@@ -70,7 +70,7 @@ ServerEvents.recipes((event) => {
         {
             type: 'shulker',
             inputs: [
-                'ars_nouveau:conjuration_essence',
+                '#forge:essences/conjuration',
                 'minecraft:shulker_shell',
                 'minecraft:shulker_shell',
                 'minecraft:shulker_shell'
@@ -79,7 +79,7 @@ ServerEvents.recipes((event) => {
         {
             type: 'skeleton',
             inputs: [
-                'ars_nouveau:conjuration_essence',
+                '#forge:essences/conjuration',
                 'minecraft:bone_block',
                 'minecraft:bone_block',
                 'minecraft:bone_block'
@@ -88,7 +88,7 @@ ServerEvents.recipes((event) => {
         {
             type: 'slime',
             inputs: [
-                'ars_nouveau:conjuration_essence',
+                '#forge:essences/conjuration',
                 'minecraft:slime_block',
                 'minecraft:slime_block',
                 'minecraft:slime_block'
@@ -97,7 +97,7 @@ ServerEvents.recipes((event) => {
         {
             type: 'spider',
             inputs: [
-                'ars_nouveau:conjuration_essence',
+                '#forge:essences/conjuration',
                 'minecraft:spider_eye',
                 'minecraft:fermented_spider_eye',
                 'minecraft:spider_eye'
@@ -106,7 +106,7 @@ ServerEvents.recipes((event) => {
         {
             type: 'witch',
             inputs: [
-                'ars_nouveau:conjuration_essence',
+                '#forge:essences/conjuration',
                 'minecraft:redstone_block',
                 'minecraft:glowstone',
                 'thermal:gunpowder_block',
@@ -121,7 +121,7 @@ ServerEvents.recipes((event) => {
         {
             type: 'zombie',
             inputs: [
-                'ars_nouveau:conjuration_essence',
+                '#forge:essences/conjuration',
                 'minecraft:rotten_flesh',
                 'minecraft:rotten_flesh',
                 'minecraft:rotten_flesh'
@@ -130,38 +130,33 @@ ServerEvents.recipes((event) => {
         {
             type: 'blaze',
             inputs: [
-                'ars_nouveau:conjuration_essence',
-                'ars_nouveau:fire_essence',
-                'ars_nouveau:fire_essence',
-                'ars_nouveau:fire_essence'
+                '#forge:essences/conjuration',
+                '#forge:essences/fire',
+                '#forge:essences/fire',
+                '#forge:essences/fire'
             ]
         },
         {
             type: 'basalz',
             inputs: [
-                'ars_nouveau:conjuration_essence',
-                'ars_nouveau:earth_essence',
-                'ars_nouveau:earth_essence',
-                'ars_nouveau:earth_essence'
+                '#forge:essences/conjuration',
+                '#forge:essences/earth',
+                '#forge:essences/earth',
+                '#forge:essences/earth'
             ]
         },
         {
             type: 'blizz',
             inputs: [
-                'ars_nouveau:conjuration_essence',
-                'ars_nouveau:water_essence',
-                'ars_nouveau:water_essence',
-                'ars_nouveau:water_essence'
+                '#forge:essences/conjuration',
+                '#forge:essences/water',
+                '#forge:essences/water',
+                '#forge:essences/water'
             ]
         },
         {
             type: 'blitz',
-            inputs: [
-                'ars_nouveau:conjuration_essence',
-                'ars_nouveau:air_essence',
-                'ars_nouveau:air_essence',
-                'ars_nouveau:air_essence'
-            ]
+            inputs: ['#forge:essences/conjuration', '#forge:essences/air', '#forge:essences/air', '#forge:essences/air']
         }
     ];
 
@@ -238,24 +233,13 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'occultism:ritual';
-
-        // activation_item: { item: 'occultism:book_of_binding_bound_marid' },
         recipe.activation_item = Ingredient.of(recipe.activation_item).toJson();
-
         if (recipe.item_to_use) {
-            // item_to_use: { item: 'minecraft:egg' },
             recipe.item_to_use = Ingredient.of(recipe.item_to_use).toJson();
         }
-
-        // ritual_dummy: { item: 'occultism:ritual_dummy/craft_stabilizer_tier4' },
         recipe.ritual_dummy = Item.of(recipe.ritual_dummy).toJson();
-
-        // ingredients: [{ item: 'occultism:storage_stabilizer_tier3' }, { tag: 'forge:storage_blocks/iesnium' }],
         recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
-
-        // result: { item: 'occultism:storage_stabilizer_tier4' }
         recipe.result = Item.of(recipe.output).toJson();
-
         event.custom(recipe).id(recipe.id);
     });
 });

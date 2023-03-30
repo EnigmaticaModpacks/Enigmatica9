@@ -23,6 +23,7 @@
     "ritual.occultism.sacrifice.air_elementals": "Blitz",
     "ritual.occultism.sacrifice.earth_elementals": "Basalz",
     "ritual.occultism.sacrifice.water_elementals": "Blizz",
+    "ritual.occultism.sacrifice.azulfo": "Azulfo",
 
     "advancements.occultism.possess_enderman.title": "Ritual: Possess Enderman",
     "advancements.occultism.possess_endermite.title": "Ritual: Possess Endermite",
@@ -491,5 +492,17 @@
     "ritual.enigmatica.occultism/ritual/blitz_gate_large.interrupted": "Large Air Elemental Gateway Interrupted",
     "ritual.enigmatica.occultism/ritual/blitz_gate_large.conditions": "Not all requirements for this ritual are met.",
 
-    "gateways.spawner_rift": "Spawner Rift"
+    "gateways.spawner_rift": "Spawner Rift",
+
+    "gateways.wither_council_gate": "Wither Council Gate",
+    "ritual.enigmatica.occultism/ritual/wither_council_gate.started": "Started Summoning the Wither Council",
+    "ritual.enigmatica.occultism/ritual/wither_council_gate.finished": "The Wither Council's gateway has opened",
+    "ritual.enigmatica.occultism/ritual/wither_council_gate.interrupted": "The Wither Council's gateway has been interrupted",
+    "ritual.enigmatica.occultism/ritual/wither_council_gate.conditions": "Not all requirements for this ritual are met.",
+
+    "gateways.wilden_circle_gate": "Wilden Circle Gate",
+    "ritual.enigmatica.occultism/ritual/wilden_circle_gate.started": "Started Summoning the Wilden Circle",
+    "ritual.enigmatica.occultism/ritual/wilden_circle_gate.finished": "The Wilden Circle's gateway has opened",
+    "ritual.enigmatica.occultism/ritual/wilden_circle_gate.interrupted": "The Wilden Circle's gateway has been interrupted",
+    "ritual.enigmatica.occultism/ritual/wilden_circle_gate.conditions": "Not all requirements for this ritual are met."
 }
