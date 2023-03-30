@@ -20,7 +20,9 @@ _Using Forge-1.19.2-43.2.6_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 -   Create special recipes for Frost Magma, Cryptic Magma, and Permafrost
 -   All Minecraft stone types may now be generated in the Material StoneWork Factory. Others are excluded to avoid overloading the selection interface. Many of these also no longer consume Water or Lava.
 -   Add many Twilight Forest and Blue Skies animals to Nature's Aura Altar of Birthing
--   Introducing the Wither Council and Wilden Circle gateways, available now on Abra's Open Conjure. Can you finish them in time?
+-   Introducing the Wither Council and Grove of the Wilden gateways, available now on Abra's Open Conjure. Can you finish them in time?
+-   Coffee may be purchased from the Market block
+-   Tooltip on Sage changed to direct players to the Market Block rather than breaking grass.
 
 **Fixed Bugs**
 

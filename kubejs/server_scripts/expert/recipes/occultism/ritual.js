@@ -1000,7 +1000,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}wither_council_gate`
         },
         {
-            output: Item.of('gateways:gate_pearl', `{gateway:"gateways:wilden_circle_gate", radius:5}`),
+            output: Item.of('gateways:gate_pearl', `{gateway:"gateways:wilden_grove_gate", radius:5}`),
             activation_item: 'farmersdelight:honey_glazed_ham_block',
             inputs: [
                 'hexerei:blood_bottle',
@@ -1016,7 +1016,7 @@ ServerEvents.recipes((event) => {
                 'kubejs:mystery_mash',
                 'kubejs:mystery_mash'
             ],
-            ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:wilden_circle_gate", radius:5}`),
+            ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:wilden_grove_gate", radius:5}`),
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:summon_evil',
             entity_to_sacrifice: {
@@ -1024,7 +1024,7 @@ ServerEvents.recipes((event) => {
                 display_name: 'ritual.occultism.sacrifice.azulfo'
             },
             duration: 10,
-            id: `${id_prefix}wilden_circle_gate`
+            id: `${id_prefix}wilden_grove_gate`
         }
     ];
 

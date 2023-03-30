@@ -620,6 +620,15 @@ const entries = {
                 expert: 'Gold Lantern'
             }
         }
+    ],
+    ars_nouveau: [
+        {
+            key: 'tooltip.ars_nouveau.wilden_tribute',
+            value: {
+                normal: 'Obtained by defeating the Wilden Chimera. See Ritual of Summon Wilden.',
+                expert: 'Obtained by defeating the Wilden Chimera. See Grove of the Wilden Gate Pearl.'
+            }
+        }
     ]
 };
 Object.keys(entries).forEach((mod) => {

@@ -6,13 +6,14 @@ ServerEvents.highPriorityData((event) => {
         {
             size: 'small',
             color: '#0b9e32',
+            leash_range: 32,
             rewards: [
                 {
                     type: 'stack',
                     stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
                 }
             ],
-            completion_xp: 10000,
+            completion_xp: 250,
             spawn_range: 1,
             waves: [
                 {
@@ -119,13 +120,24 @@ ServerEvents.highPriorityData((event) => {
         {
             size: 'large',
             color: '#b30f04',
+            leash_range: 32,
             rewards: [
                 {
                     type: 'stack',
                     stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                },
+                {
+                    type: 'apotheosis:affix',
+                    rarity: 'mythic'
+                },
+                {
+                    type: 'loot_table',
+                    loot_table: 'enigmatica:apotheosis_gem_cache',
+                    rolls: 5,
+                    desc: 'Apotheosis Gems'
                 }
             ],
-            completion_xp: 250,
+            completion_xp: 5000,
             spawn_range: 3,
             waves: [
                 {
@@ -208,13 +220,24 @@ ServerEvents.highPriorityData((event) => {
         {
             size: 'large',
             color: '#a005fa',
+            leash_range: 32,
             rewards: [
                 {
                     type: 'stack',
                     stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                },
+                {
+                    type: 'apotheosis:affix',
+                    rarity: 'mythic'
+                },
+                {
+                    type: 'loot_table',
+                    loot_table: 'enigmatica:apotheosis_gem_cache',
+                    rolls: 5,
+                    desc: 'Apotheosis Gems'
                 }
             ],
-            completion_xp: 10000,
+            completion_xp: 5000,
             spawn_range: 3,
             waves: [
                 {
@@ -288,7 +311,10 @@ ServerEvents.highPriorityData((event) => {
                     entities: [
                         { entity: 'ars_nouveau:wilden_boss' },
                         { entity: 'ars_nouveau:wilden_boss' },
-                        { entity: 'ars_nouveau:wilden_boss' }
+                        { entity: 'ars_nouveau:wilden_boss' },
+                        { entity: 'twilightforest:skeleton_druid' },
+                        { entity: 'twilightforest:skeleton_druid' },
+                        { entity: 'twilightforest:skeleton_druid' }
                     ],
                     rewards: [
                         {
@@ -300,7 +326,7 @@ ServerEvents.highPriorityData((event) => {
                     setup_time: 50
                 }
             ],
-            id: 'wilden_circle_gate'
+            id: 'wilden_grove_gate'
         }
     ];
 

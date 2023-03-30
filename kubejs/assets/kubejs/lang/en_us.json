@@ -13,6 +13,7 @@
     "item.kubejs.amethyst_dust": "Amethyst Dust",
 
     "entity.minecraft.villager.byg.forager": "Forager",
+    "tooltip.hexerei.sage_seeds": "May be purchased from the Market block.",
 
     "recipes.lychee.item_inside.sunstone.condition.description": "Converts around Noon. Reverts if left out too long...",
     "recipes.lychee.item_inside.moonstone.condition.description": "Converts around Midnight. Reverts if left out too long...",
@@ -500,9 +501,9 @@
     "ritual.enigmatica.occultism/ritual/wither_council_gate.interrupted": "The Wither Council's gateway has been interrupted",
     "ritual.enigmatica.occultism/ritual/wither_council_gate.conditions": "Not all requirements for this ritual are met.",
 
-    "gateways.wilden_circle_gate": "Wilden Circle Gate",
-    "ritual.enigmatica.occultism/ritual/wilden_circle_gate.started": "Started Summoning the Wilden Circle",
-    "ritual.enigmatica.occultism/ritual/wilden_circle_gate.finished": "The Wilden Circle's gateway has opened",
-    "ritual.enigmatica.occultism/ritual/wilden_circle_gate.interrupted": "The Wilden Circle's gateway has been interrupted",
-    "ritual.enigmatica.occultism/ritual/wilden_circle_gate.conditions": "Not all requirements for this ritual are met."
+    "gateways.wilden_grove_gate": "Grove of the Wilden Gate",
+    "ritual.enigmatica.occultism/ritual/wilden_grove_gate.started": "Started Summoning the Grove of the Wilden",
+    "ritual.enigmatica.occultism/ritual/wilden_grove_gate.finished": "The Grove of the Wilden gateway has opened",
+    "ritual.enigmatica.occultism/ritual/wilden_grove_gate.interrupted": "The Grove of the Wilden gateway has been interrupted",
+    "ritual.enigmatica.occultism/ritual/wilden_grove_gate.conditions": "Not all requirements for this ritual are met."
 }
