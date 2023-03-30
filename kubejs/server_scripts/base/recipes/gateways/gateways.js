@@ -262,6 +262,30 @@ ServerEvents.highPriorityData((event) => {
                 },
                 {
                     entities: [
+                        { entity: 'ars_nouveau:wilden_guardian' },
+                        { entity: 'ars_nouveau:wilden_guardian' },
+                        { entity: 'ars_nouveau:wilden_hunter' },
+                        { entity: 'ars_nouveau:wilden_hunter' },
+                        { entity: 'ars_nouveau:wilden_stalker' },
+                        { entity: 'ars_nouveau:wilden_stalker' },
+                        { entity: 'twilightforest:skeleton_druid' },
+                        { entity: 'twilightforest:skeleton_druid' },
+                        { entity: 'twilightforest:skeleton_druid' },
+                        { entity: 'twilightforest:skeleton_druid' },
+                        { entity: 'twilightforest:skeleton_druid' },
+                        { entity: 'twilightforest:skeleton_druid' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 750,
+                    setup_time: 50
+                },
+                {
+                    entities: [
                         { entity: 'ars_nouveau:wilden_boss' },
                         { entity: 'ars_nouveau:wilden_boss' },
                         { entity: 'ars_nouveau:wilden_boss' }
