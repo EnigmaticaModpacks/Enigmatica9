@@ -11,6 +11,8 @@ ServerEvents.tags('block', (event) => {
             'minecraft:wither_skeleton_skull',
             'occultism:spirit_attuned_crystal',
             'occultism:sacrificial_bowl',
-            'occultism:golden_sacrificial_bowl'
+            'occultism:golden_sacrificial_bowl',
+            'decorative_blocks:soul_brazier',
+            'naturesaura:gold_powder'
         ]);
 });

@@ -22,7 +22,7 @@ ServerEvents.recipes((event) => {
                 A: '#forge:ingots/infused_iron',
                 B: 'mekanism:teleportation_core',
                 C: 'powah:capacitor_basic_large',
-                D: 'thermal:energy_cell_frame',
+                D: 'travelanchors:travel_anchor',
                 E: 'occultism:soul_gem'
             },
             id: 'mekanism:teleporter'

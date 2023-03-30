@@ -978,7 +978,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: Item.of('gateways:gate_pearl', `{gateway:"gateways:wither_council_gate", radius:5}`),
-            activation_item: '#forge:ingots/netherite',
+            activation_item: '#forge:ingots/tainted_gold',
             inputs: [
                 'minecraft:wither_skeleton_skull',
                 'minecraft:wither_skeleton_skull',
@@ -988,10 +988,10 @@ ServerEvents.recipes((event) => {
                 '#forge:ingots/soul_steel',
                 '#forge:ingots/soul_steel',
                 '#forge:ingots/soul_steel',
-                '#forge:gems/diamond',
-                '#forge:gems/diamond',
-                '#forge:gems/diamond',
-                '#forge:gems/diamond'
+                '#forge:gems/infused_diamond',
+                '#forge:gems/infused_diamond',
+                '#forge:gems/infused_diamond',
+                '#forge:gems/infused_diamond'
             ],
             ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:wither_council_gate", radius:5}`),
             ritual_type: 'occultism:craft',

@@ -145,6 +145,19 @@ ServerEvents.recipes((event) => {
             ],
             source: 600,
             id: `${id_prefix}drill_bit_iron`
+        },
+        {
+            input: { item: 'kubejs:spirit_of_devotion' },
+            output: 'ars_nouveau:wilden_tribute',
+            count: 1,
+            pedestalItems: [
+                { item: { item: 'ars_nouveau:wilden_wing' } },
+                { item: { item: 'ars_nouveau:wilden_horn' } },
+                { item: { item: 'ars_nouveau:wilden_tribute' } },
+                { item: { item: 'ars_nouveau:wilden_spike' } }
+            ],
+            source: 10000,
+            id: `${id_prefix}wilden_tribute`
         }
     ];
 
