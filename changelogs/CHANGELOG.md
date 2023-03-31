@@ -17,7 +17,7 @@ _Using Forge-1.19.2-43.2.6_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 -   Add IE machines to JEI so they can be discovered more easily. Also adds some descriptions to them when no recipes are shown (ex. diesel generator)
 -   Hide The One Probe recipes and items as they're not used
 -   Add many stone and cobblestone types to the Igneous Extruder
--   Create special recipes for Frost Magma, Cryptic Magma, and Permafrost
+-   Add special recipes for Frost Magma, Cryptic Magma, and Permafrost
 -   All Minecraft stone types may now be generated in the Material StoneWork Factory. Others are excluded to avoid overloading the selection interface. Many of these also no longer consume Water or Lava.
 -   Add many Twilight Forest and Blue Skies animals to Nature's Aura Altar of Birthing
 -   Introducing the Wither Council and Grove of the Wilden gateways, available now on Abra's Open Conjure. Can you finish them in time?
