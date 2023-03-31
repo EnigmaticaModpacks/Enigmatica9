@@ -147,17 +147,18 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}drill_bit_iron`
         },
         {
-            input: { item: 'kubejs:spirit_of_devotion' },
-            output: 'ars_nouveau:wilden_tribute',
+            input: { tag: 'forge:gems/infused_diamond' },
+            output: 'ars_elemental:mark_of_mastery',
             count: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:wilden_wing' } },
-                { item: { item: 'ars_nouveau:wilden_horn' } },
                 { item: { item: 'ars_nouveau:wilden_tribute' } },
-                { item: { item: 'ars_nouveau:wilden_spike' } }
+                { item: { tag: 'forge:essences/abjuration' } },
+                { item: { tag: 'forge:essences/anima' } },
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/conjuration' } }
             ],
             source: 10000,
-            id: `${id_prefix}wilden_tribute`
+            id: 'ars_elemental:imbuement_mark_of_mastery'
         }
     ];
 

@@ -499,6 +499,20 @@ ServerEvents.recipes((event) => {
             reagent: [{ item: 'ars_nouveau:wand' }],
             sourceCost: 0,
             id: `${id_prefix}mininggadget`
+        },
+        {
+            output: { item: 'ars_nouveau:summon_focus' },
+            pedestalItems: [
+                { item: { item: 'ars_elemental:mark_of_mastery' } },
+                { item: { tag: 'forge:wires/electrum' } },
+                { item: { tag: 'forge:wires/electrum' } },
+                { item: { item: 'blue_skies:summoning_tome' } },
+                { item: { tag: 'forge:wires/electrum' } },
+                { item: { tag: 'forge:wires/electrum' } }
+            ],
+            reagent: [{ tag: 'forge:storage_blocks/source' }],
+            sourceCost: 10000,
+            id: 'ars_nouveau:summon_focus'
         }
     ];
 

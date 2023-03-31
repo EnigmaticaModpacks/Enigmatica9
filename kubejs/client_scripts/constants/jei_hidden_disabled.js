@@ -416,7 +416,8 @@ jei.expert.recipes.hidden = [
             'ars_nouveau:volcanic_sourcelink',
             'ars_nouveau:agronomic_sourcelink',
             'ars_nouveau:conjuration_essence_to_soul_sand',
-            'ars_nouveau:blank_thread'
+            'ars_nouveau:blank_thread',
+            'ars_nouveau:novice_spell_book'
         ]
     },
     {

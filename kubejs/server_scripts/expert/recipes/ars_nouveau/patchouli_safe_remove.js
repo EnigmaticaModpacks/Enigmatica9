@@ -11,7 +11,8 @@ ServerEvents.recipes((event) => {
             { id: 'ars_nouveau:volcanic_sourcelink', output: 'ars_nouveau:volcanic_sourcelink' },
             { id: 'ars_nouveau:agronomic_sourcelink', output: 'ars_nouveau:agronomic_sourcelink' },
             { id: 'ars_nouveau:conjuration_essence_to_soul_sand', output: 'minecraft:soul_sand' },
-            { id: 'ars_nouveau:blank_thread', output: 'ars_nouveau:blank_thread' }
+            { id: 'ars_nouveau:blank_thread', output: 'ars_nouveau:blank_thread' },
+            { id: 'ars_nouveau:novice_spell_book', output: 'ars_nouveau:novice_spell_book' }
         ],
         enchanting_apparatus: [
             { id: 'ars_nouveau:wixie_charm', output: 'ars_nouveau:wixie_charm' },
