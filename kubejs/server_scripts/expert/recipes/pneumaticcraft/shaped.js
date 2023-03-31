@@ -236,6 +236,98 @@ ServerEvents.recipes((event) => {
                 E: 'ae2:sky_stone_slab'
             },
             id: `pneumaticcraft:vacuum_pump`
+        },
+        {
+            output: '2x pneumaticcraft:pneumatic_cylinder',
+            pattern: ['ABA', 'ACA'],
+            key: {
+                A: '#forge:plastic',
+                B: '#forge:rods/aluminum',
+                C: 'pneumaticcraft:cannon_barrel'
+            },
+            id: `pneumaticcraft:pneumatic_cylinder`
+        },
+        {
+            output: '4x pneumaticcraft:printed_circuit_board',
+            pattern: ['ABC', 'BDB', 'CBA'],
+            key: {
+                A: 'pneumaticcraft:module_expansion_card',
+                B: 'quark:rainbow_rune',
+                C: 'immersiveengineering:component_electronic',
+                D: 'immersiveengineering:circuit_board'
+            },
+            id: `pneumaticcraft:printed_circuit_board`
+        },
+        {
+            output: 'pneumaticcraft:assembly_platform',
+            pattern: ['ABA', 'CDC'],
+            key: {
+                A: 'pneumaticcraft:pneumatic_cylinder',
+                B: '#forge:ingots/energized_steel',
+                C: '#forge:ingots/compressed_iron',
+                D: 'pneumaticcraft:printed_circuit_board'
+            },
+            id: `pneumaticcraft:assembly_platform`
+        },
+        {
+            output: 'pneumaticcraft:assembly_controller',
+            pattern: [' E ', 'AB ', 'CDC'],
+            key: {
+                A: 'pneumaticcraft:pressure_tube',
+                B: '#forge:ingots/energized_steel',
+                C: '#forge:ingots/compressed_iron',
+                D: 'pneumaticcraft:printed_circuit_board',
+                E: 'supplementaries:crystal_display'
+            },
+            id: `pneumaticcraft:assembly_controller`
+        },
+        {
+            output: 'pneumaticcraft:assembly_laser',
+            pattern: ['EAA', ' BA', 'CDC'],
+            key: {
+                A: 'pneumaticcraft:pneumatic_cylinder',
+                B: '#forge:ingots/energized_steel',
+                C: '#forge:ingots/compressed_iron',
+                D: 'pneumaticcraft:printed_circuit_board',
+                E: '#forge:gems/moonstone'
+            },
+            id: `pneumaticcraft:assembly_laser`
+        },
+        {
+            output: 'pneumaticcraft:assembly_drill',
+            pattern: ['EAA', ' BA', 'CDC'],
+            key: {
+                A: 'pneumaticcraft:pneumatic_cylinder',
+                B: '#forge:ingots/energized_steel',
+                C: '#forge:ingots/compressed_iron',
+                D: 'pneumaticcraft:printed_circuit_board',
+                E: 'pneumaticcraft:drill_bit_diamond'
+            },
+            id: `pneumaticcraft:assembly_drill`
+        },
+        {
+            output: 'pneumaticcraft:assembly_io_unit_import',
+            pattern: ['EAA', ' BA', 'CDC'],
+            key: {
+                A: 'pneumaticcraft:pneumatic_cylinder',
+                B: '#forge:ingots/energized_steel',
+                C: '#forge:ingots/compressed_iron',
+                D: 'pneumaticcraft:printed_circuit_board',
+                E: 'create:brass_hand'
+            },
+            id: `pneumaticcraft:assembly_io_unit_import`
+        },
+        {
+            output: 'pneumaticcraft:assembly_io_unit_export',
+            pattern: ['AAE', 'AB ', 'CDC'],
+            key: {
+                A: 'pneumaticcraft:pneumatic_cylinder',
+                B: '#forge:ingots/energized_steel',
+                C: '#forge:ingots/compressed_iron',
+                D: 'pneumaticcraft:printed_circuit_board',
+                E: 'create:brass_hand'
+            },
+            id: `pneumaticcraft:assembly_io_unit_export`
         }
     ];
 

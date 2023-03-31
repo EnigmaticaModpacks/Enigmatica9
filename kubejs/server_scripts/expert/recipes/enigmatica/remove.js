@@ -110,8 +110,10 @@ ServerEvents.recipes((event) => {
 
         { id: /industrialforegoing:laser_drill_ore/ },
         { id: /industrialforegoing:dissolution_chamber\/range_addon/ },
+        { id: /industrialforegoing:dissolution_chamber\/laser_lens/ },
         { id: 'industrialforegoing:dissolution_chamber/infinity_launcher' },
         { id: 'industrialforegoing:dissolution_chamber/infinity_backpack' },
+        { id: 'industrialforegoing:dissolution_chamber/mechanical_dirt' },
         { id: 'industrialforegoing:crusher/sand_silicon' },
         { id: 'industrialforegoing:washing_factory' },
         { id: 'industrialforegoing:fermentation_station' },
@@ -135,6 +137,8 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:mob_imprisonment_tool' },
         { id: 'industrialforegoing:animal_feeder' },
         { id: 'industrialforegoing:spores_recreator' },
+        { id: 'industrialforegoing:mob_slaughter_factory' },
+        { id: 'industrialforegoing:resourceful_furnace' },
 
         { id: 'mekanism:teleportation_core' },
         { id: 'mekanism:seismic_reader' },

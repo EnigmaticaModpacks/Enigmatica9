@@ -266,6 +266,8 @@ jei.expert.items.disabled = [
     'industrialforegoing:infinity_backpack',
     'industrialforegoing:animal_feeder',
     'industrialforegoing:spores_recreator',
+    'industrialforegoing:mob_slaughter_factory',
+    'industrialforegoing:resourceful_furnace',
     'mekanism:advanced_energy_cube',
     'mekanism:advanced_induction_cell',
     'mekanism:advanced_induction_provider',
