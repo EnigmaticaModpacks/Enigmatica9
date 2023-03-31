@@ -249,12 +249,11 @@ ServerEvents.recipes((event) => {
         },
         {
             output: '4x pneumaticcraft:printed_circuit_board',
-            pattern: ['ABC', 'BDB', 'CBA'],
+            pattern: [' BA', 'BCB', 'AB '],
             key: {
-                A: 'pneumaticcraft:module_expansion_card',
+                A: 'immersiveengineering:component_electronic',
                 B: 'quark:rainbow_rune',
-                C: 'immersiveengineering:component_electronic',
-                D: 'immersiveengineering:circuit_board'
+                C: 'immersiveengineering:circuit_board'
             },
             id: `pneumaticcraft:printed_circuit_board`
         },
