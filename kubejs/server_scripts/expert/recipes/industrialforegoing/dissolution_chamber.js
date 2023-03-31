@@ -20,6 +20,23 @@ ServerEvents.recipes((event) => {
             inputFluid: '{Amount:2000,FluidName:"minecraft:water"}',
             processingTime: 200,
             id: `${id_prefix}meat_and_bio_fuel`
+        },
+        {
+            output: '2x industrialforegoing:machine_frame_advanced',
+            inputs: [
+                '#forge:ingots/steel',
+                'pneumaticcraft:printed_circuit_board',
+                '#forge:ingots/steel',
+                'powah:energy_cable_spirited',
+
+                'powah:energy_cable_spirited',
+                '#forge:ingots/steel',
+                'kubejs:energetic_transference_matrix',
+                '#forge:ingots/steel'
+            ],
+            inputFluid: '{Amount:1000,FluidName:"industrialforegoing:latex"}',
+            processingTime: 800,
+            id: `${id_prefix}machine_frame_advanced`
         }
     ];
 
