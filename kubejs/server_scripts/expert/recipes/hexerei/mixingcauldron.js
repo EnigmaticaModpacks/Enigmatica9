@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/hexerei/mixingcauldron/';
     const recipes = [
         {
-            output: 'twilightforest:raw_ironwood',
+            output: '4x twilightforest:raw_ironwood',
             inputs: [
                 '#forge:essences/manipulation',
                 'hexerei:belladonna_berries',
@@ -215,7 +215,7 @@ ServerEvents.recipes((event) => {
             id: 'tiab:time_in_a_bottle'
         },
         {
-            output: 'twilightforest:fiery_block',
+            output: '9x twilightforest:fiery_ingot',
             inputs: [
                 '#forge:essences/fire',
                 'hexerei:dried_yellow_dock_flowers',
@@ -230,7 +230,7 @@ ServerEvents.recipes((event) => {
             liquidOutput: { fluid: 'minecraft:lava' },
             fluidLevelsConsumed: 1000,
             heatRequirement: 'heated',
-            id: `${id_prefix}fiery_block`
+            id: `${id_prefix}fiery_ingot`
         },
         {
             output: 'naturesaura:loot_finder',

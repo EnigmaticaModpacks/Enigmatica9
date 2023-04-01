@@ -240,6 +240,8 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:saw_blade' },
         { id: 'thermal:energy_cell' },
         { id: 'thermal:flux_capacitor' },
+        { id: 'thermal:augments/upgrade_augment_2' },
+        { id: 'thermal:augments/upgrade_augment_3' },
 
         { id: 'twilightforest:equipment/fiery_ingot_crafting' },
         { id: 'twilightforest:material/fiery_iron_ingot' },

@@ -580,8 +580,6 @@
 				"A Blaze will need to be summoned and bound into appropriate materials to create this device. Luckily, with control of the elements, summoning forth a single Blaze should prove to be a trivial task."
 				""
 				"Each type of elemental may be summoned using Gythia’s Perpetual Geas. Look up Summon Bound Elemental in JEI to see their recipe. These elementals will be summoned with their AI and loot disabled."
-				""
-				"Tip: Look up the recipe for Block of Fiery Metal."
 			]
 			dependencies: ["126F4A37A0A21921"]
 			id: "5038FC4A51F51F31"

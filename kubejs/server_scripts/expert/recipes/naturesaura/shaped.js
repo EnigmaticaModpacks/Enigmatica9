@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: '#forge:gems/carminite',
-                B: 'naturesaura:infused_iron',
+                B: '#forge:ingots/infused_iron',
                 C: 'twilightforest:carminite_reactor'
             },
             id: `naturesaura:rf_converter`
@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'minecraft:nether_bricks',
                 B: '#forge:ingots/electrum',
-                C: 'naturesaura:infused_iron',
+                C: '#forge:ingots/infused_iron',
                 D: '#forge:storage_blocks/source'
             },
             id: `naturesaura:potion_generator`
@@ -33,7 +33,7 @@ ServerEvents.recipes((event) => {
                 A: '#forge:dyes/red',
                 B: '#forge:dyes/yellow',
                 C: '#forge:dyes/blue',
-                D: 'naturesaura:infused_iron',
+                D: '#forge:ingots/infused_iron',
                 E: '#forge:essences/water'
             },
             id: `naturesaura:color_changer`
@@ -74,7 +74,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
                 A: 'naturesaura:infused_stone',
-                B: 'naturesaura:infused_iron',
+                B: '#forge:ingots/infused_iron',
                 C: '#forge:gems/nitro',
                 D: '#forge:storage_blocks/source',
                 E: 'quark:ender_watcher'
@@ -86,7 +86,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
                 A: 'naturesaura:infused_stone',
-                B: 'naturesaura:infused_iron',
+                B: '#forge:ingots/infused_iron',
                 C: '#forge:gems/nitro',
                 D: '#forge:storage_blocks/source',
                 E: 'minecraft:sculk_sensor'
@@ -111,7 +111,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'CDC', 'ABA'],
             key: {
                 A: 'ae2:sky_stone_block',
-                B: 'naturesaura:infused_iron',
+                B: '#forge:ingots/infused_iron',
                 C: 'ae2:quartz_vibrant_glass',
                 D: 'twilightforest:firefly_jar'
             },
@@ -146,11 +146,21 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'naturesaura:infused_brick',
                 B: '#forge:storage_blocks/sunstone',
-                C: 'naturesaura:infused_iron',
+                C: '#forge:ingots/infused_iron',
                 D: '#forge:essences/manipulation',
                 E: '#forge:storage_blocks/moonstone'
             },
             id: `naturesaura:time_changer`
+        },
+        {
+            output: '4x naturesaura:hopper_upgrade',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'naturesaura:infused_stone',
+                B: '#forge:ingots/infused_iron',
+                C: 'minecraft:lodestone'
+            },
+            id: `naturesaura:hopper_upgrade`
         }
     ];
 

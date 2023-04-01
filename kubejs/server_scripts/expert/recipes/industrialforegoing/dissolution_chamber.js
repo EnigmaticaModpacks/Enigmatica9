@@ -24,15 +24,15 @@ ServerEvents.recipes((event) => {
         {
             output: '2x industrialforegoing:machine_frame_advanced',
             inputs: [
-                '#forge:ingots/steel',
+                '#forge:ingots/soul_steel',
                 'pneumaticcraft:printed_circuit_board',
-                '#forge:ingots/steel',
+                '#forge:ingots/soul_steel',
                 'powah:energy_cable_spirited',
 
                 'powah:energy_cable_spirited',
-                '#forge:ingots/steel',
+                '#forge:ingots/soul_steel',
                 'kubejs:energetic_transference_matrix',
-                '#forge:ingots/steel'
+                '#forge:ingots/soul_steel'
             ],
             inputFluid: '{Amount:1000,FluidName:"industrialforegoing:latex"}',
             processingTime: 800,

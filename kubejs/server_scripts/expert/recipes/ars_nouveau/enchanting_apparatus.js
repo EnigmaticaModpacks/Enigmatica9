@@ -513,6 +513,32 @@ ServerEvents.recipes((event) => {
             reagent: [{ tag: 'forge:storage_blocks/source' }],
             sourceCost: 10000,
             id: 'ars_nouveau:summon_focus'
+        },
+        {
+            output: { item: 'thermal:upgrade_augment_2', nbt: '{AugmentData:{BaseMod:4,Type:"Upgrade"}}' },
+            pedestalItems: [
+                { item: { tag: 'forge:ingots/energized_steel' } },
+                { item: { tag: 'forge:ingots/energized_steel' } },
+                { item: { tag: 'forge:ingots/energized_steel' } },
+                { item: { tag: 'forge:gems/infused_diamond' } },
+                { item: { tag: 'forge:gems/infused_diamond' } },
+                { item: { tag: 'forge:gems/infused_diamond' } }
+            ],
+            reagent: [{ item: 'thermal:upgrade_augment_1' }],
+            sourceCost: 5000,
+            id: `${id_prefix}upgrade_augment_2`
+        },
+        {
+            output: { item: 'thermal:upgrade_augment_3', nbt: '{AugmentData:{BaseMod:8,Type:"Upgrade"}}' },
+            pedestalItems: [
+                { item: { item: 'ars_elemental:mark_of_mastery' } },
+                { item: { tag: 'forge:gems/spirited' } },
+                { item: { tag: 'forge:gems/spirited' } },
+                { item: { tag: 'forge:gems/spirited' } }
+            ],
+            reagent: [{ item: 'thermal:upgrade_augment_2' }],
+            sourceCost: 10000,
+            id: `${id_prefix}upgrade_augment_3`
         }
     ];
 
