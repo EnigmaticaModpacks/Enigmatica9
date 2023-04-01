@@ -382,7 +382,8 @@ jei.expert.items.disabled = [
     'thermal:drill_head',
     'thermal:saw_blade',
     'thermal:energy_cell',
-    'thermal:flux_capacitor'
+    'thermal:flux_capacitor',
+    'thermal:device_potion_diffuser'
 ];
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];

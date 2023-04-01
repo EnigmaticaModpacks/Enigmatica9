@@ -72,6 +72,13 @@ ServerEvents.recipes((event) => {
             aura: 600,
             time: 10,
             id: `${id_prefix}spirit_of_devotion`
+        },
+        {
+            output: 'thermal:deep_aquachow',
+            input: 'thermal:aquachow',
+            aura: 300,
+            time: 5,
+            id: `${id_prefix}spirit_of_devotion`
         }
     ];
 

@@ -42,4 +42,6 @@ ServerEvents.tags('item', (event) => {
 
     event.add(`forge:gems/infused_diamond`, `rftoolsbase:infused_diamond`);
     event.add(`forge:gems/infused_ender`, `rftoolsbase:infused_enderpearl`);
+
+    event.add(`forge:gems/spirit_attuned`, `occultism:spirit_attuned_gem`);
 });

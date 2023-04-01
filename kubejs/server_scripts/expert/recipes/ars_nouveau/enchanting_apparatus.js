@@ -534,6 +534,8 @@ ServerEvents.recipes((event) => {
                 { item: { item: 'ars_elemental:mark_of_mastery' } },
                 { item: { tag: 'forge:gems/spirited' } },
                 { item: { tag: 'forge:gems/spirited' } },
+                { item: { item: 'pneumaticcraft:printed_circuit_board' } },
+                { item: { tag: 'forge:gems/spirited' } },
                 { item: { tag: 'forge:gems/spirited' } }
             ],
             reagent: [{ item: 'thermal:upgrade_augment_2' }],

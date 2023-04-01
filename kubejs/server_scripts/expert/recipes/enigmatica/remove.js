@@ -207,6 +207,7 @@ ServerEvents.recipes((event) => {
         { id: 'powah:crafting/binding_card' },
         { id: 'powah:crafting/aerial_pearl' },
         { id: 'powah:energizing/ender_core' },
+        { id: 'powah:energizing/blazing_crystal' },
         { id: /powah:crafting\/energizing_rod_/ },
         { id: /powah:crafting\/battery_/ },
         { id: /powah:crafting\/(cable|capacitor|reactor|energ.*|.*_cell|battery|player.*|ender.*)_(blazing|hardened)/ },
@@ -240,6 +241,9 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:saw_blade' },
         { id: 'thermal:energy_cell' },
         { id: 'thermal:flux_capacitor' },
+        { id: 'thermal:aquachow_4' },
+        { id: 'thermal:deep_aquachow_4' },
+        { id: 'thermal:device_potion_diffuser' },
         { id: 'thermal:augments/upgrade_augment_2' },
         { id: 'thermal:augments/upgrade_augment_3' },
 
