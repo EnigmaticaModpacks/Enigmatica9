@@ -284,7 +284,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: '#forge:plates/bronze',
                 B: 'thermal:cured_rubber',
-                C: 'thermal:jar'
+                C: 'starbunclemania:fluid_jar'
             },
             id: 'thermal:fluid_reservoir'
         }

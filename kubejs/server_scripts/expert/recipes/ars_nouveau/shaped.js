@@ -84,6 +84,17 @@ ServerEvents.recipes((event) => {
                 B: '#forge:gems/source'
             },
             id: `ars_nouveau:ring_of_potential`
+        },
+        {
+            output: 'ars_nouveau:alchemists_crown',
+            pattern: ['ABA', 'BCB', '  D'],
+            key: {
+                A: 'thermal:jar',
+                B: '#forge:wires/electrum',
+                C: 'ars_nouveau:mundane_belt',
+                D: 'createaddition:straw'
+            },
+            id: `${id_prefix}alchemists_crown`
         }
     ];
 

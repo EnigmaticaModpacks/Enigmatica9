@@ -14,6 +14,17 @@ ServerEvents.recipes((event) => {
                 C: 'ars_nouveau:blue_archwood_wood'
             },
             id: 'starbunclemania:fluid_jar'
+        },
+        {
+            output: 'starbunclemania:fluid_sourcelink',
+            pattern: ['A A', 'CBC', ' D '],
+            key: {
+                A: '#forge:ingots/electrum',
+                B: '#forge:gems/source',
+                C: '#forge:nuggets/bronze',
+                D: 'starbunclemania:fluid_jar'
+            },
+            id: 'starbunclemania:fluid_sourcelink'
         }
     ];
 

@@ -607,6 +607,42 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: `${id_prefix}elytra_upgrade`
+        },
+        {
+            output: 'ars_nouveau:potion_flask',
+            inputs: [
+                '#forge:essences/abjuration',
+                '#forge:nuggets/electrum',
+                '#forge:gems/source',
+                '#forge:nuggets/electrum',
+                'thermal:jar',
+                '#forge:nuggets/electrum',
+                '#forge:gems/source',
+                '#forge:nuggets/electrum'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 1000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}potion_flask`
+        },
+        {
+            output: 'ars_nouveau:potion_melder',
+            inputs: [
+                'minecraft:cauldron',
+                '#forge:nuggets/electrum',
+                '#forge:essences/abjuration',
+                '#forge:nuggets/electrum',
+                '#forge:storage_blocks/source',
+                '#forge:nuggets/electrum',
+                '#forge:essences/abjuration',
+                '#forge:nuggets/electrum'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 1000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}potion_melder`
         }
     ];
 

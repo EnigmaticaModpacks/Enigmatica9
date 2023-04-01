@@ -19,7 +19,10 @@ ServerEvents.recipes((event) => {
             { id: 'ars_nouveau:starbuncle_charm', output: 'ars_nouveau:starbuncle_charm' },
             { id: 'ars_nouveau:magebloom_crop', output: 'ars_nouveau:magebloom_crop' },
             { id: 'ars_nouveau:void_jar', output: 'ars_nouveau:void_jar' },
-            { id: 'ars_nouveau:jar_of_light', output: 'ars_nouveau:jar_of_light' }
+            { id: 'ars_nouveau:jar_of_light', output: 'ars_nouveau:jar_of_light' },
+            { id: 'ars_nouveau:potion_flask', output: 'ars_nouveau:potion_flask' },
+            { id: 'ars_nouveau:potion_melder', output: 'ars_nouveau:potion_melder' },
+            { id: 'ars_nouveau:alchemists_crown', output: 'ars_nouveau:alchemists_crown' }
         ],
         imbuement: [
             // { id: 'ars_nouveau:recipe_id', output: 'ars_nouveau:recipe_output' }

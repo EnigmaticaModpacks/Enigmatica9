@@ -243,6 +243,8 @@
 				"To begin extracting more useful amounts of magical energies, we’ll need to begin pursuing alchemy and brewing. By distilling down various natural ingredients, we can tap into their latent energies more easily. "
 				""
 				"Potions of Ancient Knowledge should be well within reach and may be brewed in the Mixing Cauldron. Once brewed, right click the Cauldron with some Glass Bottles to extract the potions. "
+				""
+				"From there, a Wixie will make a wonderful friend for automatically crafting more potions and providing them to Potion Jars for use by the Alchemical Sourcelink."
 			]
 			dependencies: [
 				"6DBB9A9F698FA7B9"
@@ -265,6 +267,11 @@
 							Potion: "apotheosis:knowledge"
 						}
 					}
+				}
+				{
+					id: "773BE5655881E258"
+					type: "item"
+					item: "ars_nouveau:wixie_charm"
 				}
 			]
 		}

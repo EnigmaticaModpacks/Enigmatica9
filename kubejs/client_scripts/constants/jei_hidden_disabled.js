@@ -383,7 +383,12 @@ jei.expert.items.disabled = [
     'thermal:saw_blade',
     'thermal:energy_cell',
     'thermal:flux_capacitor',
-    'thermal:device_potion_diffuser'
+    'thermal:device_potion_diffuser',
+    'twilightforest:candelabra',
+    'twilightforest:keepsake_casket',
+    'twilightforest:cube_of_annihilation',
+    'twilightforest:greater_potion_flask',
+    'twilightforest:brittle_potion_flask'
 ];
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];
@@ -461,7 +466,10 @@ jei.expert.recipes.hidden = [
             'ars_nouveau:starbuncle_charm',
             'ars_nouveau:magebloom_crop',
             'ars_nouveau:void_jar',
-            'ars_nouveau:jar_of_light'
+            'ars_nouveau:jar_of_light',
+            'ars_nouveau:potion_flask',
+            'ars_nouveau:potion_melder',
+            'ars_nouveau:alchemists_crown'
         ]
     }
 ];
