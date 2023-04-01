@@ -629,6 +629,15 @@ const entries = {
                 expert: 'Obtained by defeating the Wilden Chimera. See Grove of the Wilden Gate Pearl.'
             }
         }
+    ],
+    thermal: [
+        {
+            key: 'block.thermal.dynamo_disenchantment',
+            value: {
+                normal: 'Disenchantment Dynamo',
+                expert: 'Arcane Dynamo'
+            }
+        }
     ]
 };
 Object.keys(entries).forEach((mod) => {

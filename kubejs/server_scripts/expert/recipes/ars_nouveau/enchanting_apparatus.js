@@ -541,6 +541,22 @@ ServerEvents.recipes((event) => {
             reagent: [{ item: 'thermal:upgrade_augment_2' }],
             sourceCost: 10000,
             id: `${id_prefix}upgrade_augment_3`
+        },
+        {
+            output: { item: 'thermal:dynamo_disenchantment' },
+            pedestalItems: [
+                { item: { item: 'immersiveengineering:coil_mv' } },
+                { item: { tag: 'forge:gems/source' } },
+                { item: { item: 'quark:rainbow_rune' } },
+                { item: { item: 'minecraft:lodestone' } },
+                { item: { item: 'powah:capacitor_niotic' } },
+                { item: { item: 'minecraft:lodestone' } },
+                { item: { item: 'quark:rainbow_rune' } },
+                { item: { tag: 'forge:gems/source' } }
+            ],
+            reagent: [{ item: 'thermal:energy_cell_frame' }],
+            sourceCost: 10000,
+            id: `${id_prefix}dynamo_disenchantment`
         }
     ];
 

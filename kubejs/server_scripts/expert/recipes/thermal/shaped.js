@@ -243,6 +243,50 @@ ServerEvents.recipes((event) => {
                 B: 'thermal:beekeeper_fabric'
             },
             id: 'thermal:junk_net'
+        },
+        {
+            output: 'thermal:flux_magnet',
+            pattern: ['A B', 'CDC', ' E '],
+            key: {
+                A: 'quark:red_rune',
+                B: 'quark:blue_rune',
+                C: 'powah:dielectric_rod',
+                D: 'powah:capacitor_basic_large',
+                E: 'powah:dielectric_rod_horizontal'
+            },
+            id: 'thermal:flux_magnet'
+        },
+        {
+            output: 'thermal:potion_quiver',
+            pattern: [' AB', 'ACD', ' DA'],
+            key: {
+                A: '#forge:plates/bronze',
+                B: '#forge:rope',
+                C: 'ars_nouveau:potion_jar',
+                D: 'thermal:cured_rubber'
+            },
+            id: 'thermal:potion_quiver'
+        },
+        {
+            output: 'thermal:potion_infuser',
+            pattern: [' AA', 'DCA', 'BD '],
+            key: {
+                A: '#forge:plates/bronze',
+                B: '#forge:gems/amethyst',
+                C: 'ars_nouveau:potion_jar',
+                D: 'thermal:cured_rubber'
+            },
+            id: 'thermal:potion_infuser'
+        },
+        {
+            output: 'thermal:fluid_reservoir',
+            pattern: [' A ', 'ABA', ' C '],
+            key: {
+                A: '#forge:plates/bronze',
+                B: 'thermal:cured_rubber',
+                C: 'thermal:jar'
+            },
+            id: 'thermal:fluid_reservoir'
         }
     ];
 
