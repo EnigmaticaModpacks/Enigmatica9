@@ -58,7 +58,7 @@ ServerEvents.recipes((event) => {
             output: '3x create:brass_tunnel',
             pattern: [' A ', 'BBB', 'CCC'],
             key: {
-                A: 'create:electron_tube',
+                A: 'pneumaticcraft:logistics_core',
                 B: 'create:brass_casing',
                 C: 'immersiveengineering:strip_curtain'
             },
@@ -78,7 +78,7 @@ ServerEvents.recipes((event) => {
             output: '2x create:brass_funnel',
             pattern: [' A ', 'CBC'],
             key: {
-                A: 'create:electron_tube',
+                A: 'pneumaticcraft:logistics_core',
                 B: 'create:brass_casing',
                 C: 'immersiveengineering:strip_curtain'
             },
@@ -157,7 +157,7 @@ ServerEvents.recipes((event) => {
             output: 'create:mechanical_drill',
             pattern: ['BA'],
             key: {
-                A: 'thermal:drill_head',
+                A: 'immersiveengineering:drillhead_steel',
                 B: 'create:andesite_casing'
             },
             id: `create:crafting/kinetics/mechanical_drill`
@@ -166,7 +166,7 @@ ServerEvents.recipes((event) => {
             output: 'create:mechanical_saw',
             pattern: ['BA'],
             key: {
-                A: 'thermal:saw_blade',
+                A: '#forge:sawblades',
                 B: 'create:andesite_casing'
             },
             id: `create:crafting/kinetics/mechanical_saw`
@@ -232,6 +232,122 @@ ServerEvents.recipes((event) => {
                 D: '#forge:dusts/redstone'
             },
             id: `create:crafting/logistics/pulse_repeater`
+        },
+        {
+            output: 'create:deployer',
+            pattern: ['A', 'B', 'C'],
+            key: {
+                A: 'pneumaticcraft:logistics_core',
+                B: 'create:andesite_casing',
+                C: 'create:brass_hand'
+            },
+            id: `create:crafting/kinetics/deployer`
+        },
+        {
+            output: 'create:mechanical_arm',
+            pattern: ['AA', 'BC', 'DE'],
+            key: {
+                A: '#forge:ingots/constantan',
+                B: '#forge:gears/constantan',
+                C: 'create:brass_hand',
+                D: 'create:brass_casing',
+                E: 'pneumaticcraft:logistics_core'
+            },
+            id: `create:crafting/kinetics/mechanical_arm`
+        },
+        {
+            output: 'create:peculiar_bell',
+            pattern: ['A', 'B'],
+            key: {
+                A: '#forge:storage_blocks/energized_steel',
+                B: '#forge:ingots/energized_steel'
+            },
+            id: `create:crafting/curiosities/peculiar_bell`
+        },
+        {
+            output: 'create:crafter_slot_cover',
+            pattern: ['ABA'],
+            key: {
+                A: '#forge:nuggets/gold',
+                B: '#forge:plates/nickel'
+            },
+            id: `create:crafting/kinetics/crafter_slot_cover`
+        },
+        {
+            output: 'create:attribute_filter',
+            pattern: ['ABA'],
+            key: {
+                A: '#forge:nuggets/electrum',
+                B: 'thermal:beekeeper_fabric'
+            },
+            id: `create:crafting/kinetics/attribute_filter`
+        },
+        {
+            output: 'create:filter',
+            pattern: ['ABA'],
+            key: {
+                A: '#forge:nuggets/tin',
+                B: 'thermal:beekeeper_fabric'
+            },
+            id: `create:crafting/kinetics/filter`
+        },
+        {
+            output: 'create:extendo_grip',
+            pattern: [' A ', 'BAC', 'DA '],
+            key: {
+                A: 'naturesaura:ancient_stick',
+                B: '#forge:gears/compressed_iron',
+                C: 'create:brass_hand',
+                D: '#forge:wooden_grip'
+            },
+            id: `${id_prefix}extendo_grip`
+        },
+        {
+            output: 'create:rotation_speed_controller',
+            pattern: ['A', 'B', 'C'],
+            key: {
+                A: 'immersiveengineering:component_electronic',
+                B: 'create:brass_casing',
+                C: '#forge:gears/compressed_iron'
+            },
+            id: `create:crafting/kinetics/rotation_speed_controller`
+        },
+        {
+            output: 'create:controls',
+            pattern: ['A', 'B', 'C'],
+            key: {
+                A: 'immersiveengineering:component_electronic',
+                B: 'create:railway_casing',
+                C: '#forge:gears/compressed_iron'
+            },
+            id: `create:crafting/kinetics/controls`
+        },
+        {
+            output: '3x create:train_door',
+            pattern: ['AA', 'BB', 'AA'],
+            key: {
+                A: '#forge:plates/obsidian',
+                B: '#forge:plates/gold'
+            },
+            id: `create:crafting/kinetics/train_door`
+        },
+        {
+            output: '6x create:train_trapdoor',
+            pattern: ['ABA', 'ABA'],
+            key: {
+                A: '#forge:plates/obsidian',
+                B: '#forge:plates/gold'
+            },
+            id: `create:crafting/kinetics/train_trapdoor`
+        },
+        {
+            output: '4x create:nixie_tube',
+            pattern: ['AA', 'BB'],
+            key: {
+                A: 'immersiveengineering:electron_tube',
+                B: '#forge:treated_wood_slab'
+            },
+            id: `create:crafting/kinetics/nixie_tube`
         }
     ];
 

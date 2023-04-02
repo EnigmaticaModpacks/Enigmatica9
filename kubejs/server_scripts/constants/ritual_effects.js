@@ -93,6 +93,36 @@ const ritual_effects = {
             ]
         }
     },
+    teleport_nether: {
+        teleport: {
+            // Where are we going?
+            arrival: 'minecraft:the_nether',
+            // Only allow departure from these dimensions
+            departure: ['blue_skies:everbright', 'blue_skies:everdawn', 'twilightforest:twilight_forest'],
+            // How random the teleport destination is
+            uncertainty: 5000,
+            // Maximum number of entities to affect
+            limit: 3,
+            // Diameter of selection area, centered on ritual
+            range: 10
+        },
+        potion: {
+            spells: [
+                {
+                    // Maximum number of entities to affect
+                    limit: 3,
+                    // Diameter of selection area, centered on ritual
+                    range: 10,
+                    // Effect to apply
+                    effect: 'minecraft:fire_resistance',
+                    // Effect Duration in seconds
+                    duration: 20,
+                    // Effect level. 1 means 1
+                    level: 1
+                }
+            ]
+        }
+    },
     gate_pearl: {
         gateway: true
     },

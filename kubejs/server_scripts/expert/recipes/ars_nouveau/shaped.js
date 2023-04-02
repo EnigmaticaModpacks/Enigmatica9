@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
                 B: 'thermal:jar',
                 C: 'ars_nouveau:air_essence'
             },
-            id: `ars_nouveau:jar_of_light`
+            id: `${id_prefix}jar_of_light`
         },
         {
             output: 'ars_nouveau:void_jar',
@@ -54,7 +54,36 @@ ServerEvents.recipes((event) => {
                 B: 'thermal:jar',
                 C: 'ars_nouveau:manipulation_essence'
             },
-            id: `ars_nouveau:void_jar`
+            id: `${id_prefix}void_jar`
+        },
+        {
+            output: 'ars_nouveau:arcane_core',
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: 'ars_nouveau:sourcestone',
+                B: '#forge:ingots/energized_steel',
+                C: '#forge:gems/source'
+            },
+            id: `ars_nouveau:arcane_core`
+        },
+        {
+            output: 'ars_nouveau:enchanting_apparatus',
+            pattern: ['BAB', ' C ', 'BAB'],
+            key: {
+                A: 'ars_nouveau:sourcestone',
+                B: '#forge:ingots/energized_steel',
+                C: '#forge:gems/fluix'
+            },
+            id: `ars_nouveau:enchanting_apparatus`
+        },
+        {
+            output: 'ars_nouveau:ring_of_potential',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: '#forge:nuggets/silver',
+                B: '#forge:gems/source'
+            },
+            id: `ars_nouveau:ring_of_potential`
         }
     ];
 

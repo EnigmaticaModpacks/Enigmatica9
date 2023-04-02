@@ -25,7 +25,7 @@ ServerEvents.highPriorityData((event) => {
                 mythic: { duration: { min: 20, steps: 3, step: 20 }, amplifier: { min: 0, steps: 1, step: 1 } },
                 ancient: { duration: { min: 40, steps: 7, step: 40 }, amplifier: { min: 1, steps: 2, step: 1 } }
             },
-            types: ['ARMOR']
+            types: ['helmet', 'chestplate', 'leggings', 'boots']
         },
         {
             name: 'bolstering',
@@ -38,7 +38,7 @@ ServerEvents.highPriorityData((event) => {
                 mythic: { duration: { min: 60, steps: 7, step: 20 }, amplifier: { min: 0, steps: 1, step: 1 } },
                 ancient: { duration: { min: 100, steps: 10, step: 40 }, amplifier: { min: 1, steps: 2, step: 1 } }
             },
-            types: ['ARMOR']
+            types: ['helmet', 'chestplate', 'leggings', 'boots']
         },
         {
             name: 'shielding',
@@ -51,7 +51,7 @@ ServerEvents.highPriorityData((event) => {
                 mythic: { duration: { min: 60, steps: 7, step: 20 }, amplifier: { min: 0, steps: 1, step: 1 } },
                 ancient: { duration: { min: 100, steps: 10, step: 40 }, amplifier: { min: 1, steps: 2, step: 1 } }
             },
-            types: ['ARMOR']
+            types: ['helmet', 'chestplate', 'leggings', 'boots']
         },
         {
             name: 'chilling',
@@ -63,7 +63,7 @@ ServerEvents.highPriorityData((event) => {
                 mythic: { duration: { min: 60, steps: 7, step: 20 }, amplifier: { min: 0, steps: 1, step: 1 } },
                 ancient: { duration: { min: 100, steps: 10, step: 40 }, amplifier: { min: 1, steps: 2, step: 1 } }
             },
-            types: ['ARMOR']
+            types: ['helmet', 'chestplate', 'leggings', 'boots']
         }
     ];
 

@@ -146,11 +146,9 @@
 			y: 5.5d
 			subtitle: "Standard Candle"
 			description: [
-				"Candles are another item used in most ritual pentacles. They are made from the tallow you get by slaughtering pigs, cows, or sheep with a Butcher Knife."
+				"Candles are another item used in most ritual pentacles. They are made from the tallow you get by slaughtering pigs, cows, sheep, and other such animals."
 				""
 				"They work as a light source and are also great for decoration!"
-				""
-				"Note: You are now able to use candles from other mods in your rituals!"
 			]
 			dependencies: ["0000000000000DD8"]
 			id: "0000000000000D92"
@@ -183,17 +181,6 @@
 									id: "occultism:candle_white"
 								}
 							]
-						}
-					}
-				}
-				{
-					id: "0000000000000DF4"
-					type: "item"
-					item: {
-						id: "occultism:butcher_knife"
-						Count: 1b
-						tag: {
-							Damage: 0
 						}
 					}
 				}

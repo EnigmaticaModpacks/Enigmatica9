@@ -1,3 +1,32 @@
+### Enigmatica 9 v1.6.0
+
+_Using Forge-1.19.2-43.2.6_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.6.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.6.0.md)_
+
+**New Mods**
+
+**Improvements**
+
+-   Update Blue Skies Boss loot to guarantee certain drops and buff others
+-   Create alternate crafting recipe for red nether brick that doesn't use netherwart
+-   Kerosene and Source may now be used to superheat Blaze Burners
+-   AE2 Growth Accelerators now work on Blue Skies Sunstone and Moonstone and BYG crystals, in addition to certus and amethyst
+-   Ars Nouveau Golems now harvest Sunstone, Moonstone, Amethyst, and Certus
+-   Glass Smelting has been cleaned up to make a little more sense
+-   Many tags have been updated for blocks, gems, and ingots
+-   Add more tooltips for Redstone devices, including the new Online Detector blocks
+-   Add IE machines to JEI so they can be discovered more easily. Also adds some descriptions to them when no recipes are shown (ex. diesel generator)
+-   Hide The One Probe recipes and items as they're not used
+
+**Fixed Bugs**
+
+-   Remove disabled items from Occultism quests [\#258](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/258) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Remove refrences to non existant schematics in Natures Aura quests [\#259](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/259) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Clarify Tools quests [\#255](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/255) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix Thermal Tomato Sauce [\#280](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/280) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix missing loot in Industrial Foregoing Quests ([MuteTiefling](https://github.com/MuteTiefling))
+
+---
+
 ### Enigmatica 9 v1.5.0
 
 _Using Forge-1.19.2-43.2.4_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.5.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.5.0.md)_

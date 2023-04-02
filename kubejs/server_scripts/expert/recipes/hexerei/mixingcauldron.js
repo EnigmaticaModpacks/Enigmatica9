@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/hexerei/mixingcauldron/';
     const recipes = [
         {
-            liquid: { fluid: 'minecraft:water' },
+            output: 'twilightforest:raw_ironwood',
             inputs: [
                 'ars_nouveau:manipulation_essence',
                 'hexerei:belladonna_berries',
@@ -16,14 +16,14 @@ ServerEvents.recipes((event) => {
                 'twilightforest:liveroot',
                 'hexerei:belladonna_berries'
             ],
-            output: 'twilightforest:raw_ironwood',
+            liquid: { fluid: 'minecraft:water' },
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 1000,
             heatRequirement: 'heated',
             id: `${id_prefix}raw_ironwood`
         },
         {
-            liquid: { fluid: 'minecraft:water' },
+            output: 'occultism:chalk_white',
             inputs: [
                 'minecraft:calcite',
                 'hexerei:dried_sage',
@@ -34,14 +34,14 @@ ServerEvents.recipes((event) => {
                 'hexerei:dried_mugwort_leaves',
                 'hexerei:dried_sage'
             ],
-            output: 'occultism:chalk_white',
+            liquid: { fluid: 'minecraft:water' },
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 1000,
             heatRequirement: 'heated',
             id: `${id_prefix}chalk_white`
         },
         {
-            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:knowledge' } },
+            output: 'occultism:chalk_gold',
             inputs: [
                 'minecraft:calcite',
                 'naturesaura:gold_powder',
@@ -52,14 +52,38 @@ ServerEvents.recipes((event) => {
                 'naturesaura:gold_leaf',
                 'naturesaura:gold_powder'
             ],
-            output: 'occultism:chalk_gold',
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:knowledge' } },
             liquidOutput: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:knowledge' } },
             fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: `${id_prefix}chalk_gold`
         },
         {
-            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:harming' } },
+            output: 'occultism:chalk_purple',
+            inputs: [
+                'minecraft:calcite',
+                '#forge:dusts/fluix',
+                'occultism:spirit_attuned_gem',
+                '#forge:dusts/fluix',
+                'minecraft:calcite',
+                '#forge:dusts/fluix',
+                'occultism:spirit_attuned_gem',
+                '#forge:dusts/fluix'
+            ],
+            liquid: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
+            },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}chalk_purple`
+        },
+        {
+            output: 'hexerei:blood_sigil',
             inputs: [
                 'minecraft:flint',
                 'ars_nouveau:sourcestone',
@@ -70,14 +94,14 @@ ServerEvents.recipes((event) => {
                 'minecraft:flint',
                 'ars_nouveau:sourcestone'
             ],
-            output: 'hexerei:blood_sigil',
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:harming' } },
             liquidOutput: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:harming' } },
             fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: `${id_prefix}blood_sigil`
         },
         {
-            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:knowledge' } },
+            output: 'ars_nouveau:magebloom_crop',
             inputs: [
                 'immersiveengineering:seed',
                 '#forge:gems/source',
@@ -88,17 +112,14 @@ ServerEvents.recipes((event) => {
                 'hexerei:belladonna_berries',
                 '#forge:gems/source'
             ],
-            output: 'ars_nouveau:magebloom_crop',
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:knowledge' } },
             liquidOutput: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:knowledge' } },
             fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: `${id_prefix}magebloom_crop`
         },
         {
-            liquid: {
-                fluid: 'hexerei:potion',
-                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
-            },
+            output: 'superiorshields:ironwood_shield',
             inputs: [
                 '#forge:storage_blocks/source',
                 '#forge:ingots/ironwood',
@@ -109,7 +130,10 @@ ServerEvents.recipes((event) => {
                 'twilightforest:torchberries',
                 '#forge:ingots/ironwood'
             ],
-            output: 'superiorshields:ironwood_shield',
+            liquid: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
+            },
             liquidOutput: {
                 fluid: 'hexerei:potion',
                 nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
@@ -119,10 +143,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ironwood_shield`
         },
         {
-            liquid: {
-                fluid: 'hexerei:potion',
-                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
-            },
+            output: 'superiorshields:steeleaf_shield',
             inputs: [
                 '#forge:storage_blocks/source',
                 '#forge:ingots/steeleaf',
@@ -133,7 +154,10 @@ ServerEvents.recipes((event) => {
                 'twilightforest:firefly',
                 '#forge:ingots/steeleaf'
             ],
-            output: 'superiorshields:steeleaf_shield',
+            liquid: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
+            },
             liquidOutput: {
                 fluid: 'hexerei:potion',
                 nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
@@ -143,10 +167,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}steeleaf_shield`
         },
         {
-            liquid: {
-                fluid: 'hexerei:potion',
-                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
-            },
+            output: 'superiorshields:knightmetal_shield',
             inputs: [
                 '#forge:storage_blocks/source',
                 '#forge:ingots/knightmetal',
@@ -157,7 +178,10 @@ ServerEvents.recipes((event) => {
                 'twilightforest:knightmetal_ring',
                 '#forge:ingots/knightmetal'
             ],
-            output: 'superiorshields:knightmetal_shield',
+            liquid: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
+            },
             liquidOutput: {
                 fluid: 'hexerei:potion',
                 nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion_strong' }
@@ -167,10 +191,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}knightmetal_shield`
         },
         {
-            liquid: {
-                fluid: 'hexerei:potion',
-                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:strong_swiftness' }
-            },
+            output: 'tiab:time_in_a_bottle',
             inputs: [
                 'blue_skies:soul_fragment',
                 'blue_skies:soul_fragment',
@@ -181,7 +202,10 @@ ServerEvents.recipes((event) => {
                 'ars_nouveau:air_essence',
                 'blue_skies:soul_fragment'
             ],
-            output: 'tiab:time_in_a_bottle',
+            liquid: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:strong_swiftness' }
+            },
             liquidOutput: {
                 fluid: 'hexerei:potion',
                 nbt: { Bottle: 'REGULAR', Potion: 'minecraft:strong_swiftness' }
@@ -191,7 +215,7 @@ ServerEvents.recipes((event) => {
             id: 'tiab:time_in_a_bottle'
         },
         {
-            liquid: { fluid: 'minecraft:lava' },
+            output: 'twilightforest:fiery_block',
             inputs: [
                 'ars_nouveau:fire_essence',
                 'hexerei:dried_yellow_dock_flowers',
@@ -202,14 +226,14 @@ ServerEvents.recipes((event) => {
                 '#forge:dusts/constantan',
                 'hexerei:dried_yellow_dock_flowers'
             ],
-            output: 'twilightforest:fiery_block',
+            liquid: { fluid: 'minecraft:lava' },
             liquidOutput: { fluid: 'minecraft:lava' },
             fluidLevelsConsumed: 1000,
             heatRequirement: 'heated',
             id: `${id_prefix}fiery_block`
         },
         {
-            liquid: { fluid: 'minecraft:water' },
+            output: 'naturesaura:loot_finder',
             inputs: [
                 '#forge:gems/emerald',
                 '#forge:nuggets/gold',
@@ -220,14 +244,14 @@ ServerEvents.recipes((event) => {
                 'hexerei:dried_sage',
                 '#forge:nuggets/gold'
             ],
-            output: 'naturesaura:loot_finder',
+            liquid: { fluid: 'minecraft:water' },
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 1000,
             heatRequirement: 'heated',
             id: `${id_prefix}loot_finder`
         },
         {
-            liquid: { fluid: 'minecraft:water' },
+            output: 'naturesaura:light_staff',
             inputs: [
                 'twilightforest:torchberries',
                 '#forge:nuggets/gold',
@@ -238,14 +262,14 @@ ServerEvents.recipes((event) => {
                 'hexerei:dried_yellow_dock_flowers',
                 '#forge:nuggets/gold'
             ],
-            output: 'naturesaura:light_staff',
+            liquid: { fluid: 'minecraft:water' },
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 1000,
             heatRequirement: 'heated',
             id: `${id_prefix}light_staff`
         },
         {
-            liquid: { fluid: 'minecraft:water' },
+            output: 'naturesaura:cave_finder',
             inputs: [
                 'twilightforest:liveroot',
                 '#forge:nuggets/gold',
@@ -256,17 +280,14 @@ ServerEvents.recipes((event) => {
                 'hexerei:dried_belladonna_flowers',
                 '#forge:nuggets/gold'
             ],
-            output: 'naturesaura:cave_finder',
+            liquid: { fluid: 'minecraft:water' },
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 1000,
             heatRequirement: 'heated',
             id: `${id_prefix}cave_finder`
         },
         {
-            liquid: {
-                fluid: 'hexerei:potion',
-                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' }
-            },
+            output: 'naturesaura:pet_reviver',
             inputs: [
                 '#forge:string',
                 'hexerei:dried_yellow_dock_leaves',
@@ -277,20 +298,20 @@ ServerEvents.recipes((event) => {
                 'twilightforest:torchberries',
                 'hexerei:dried_mugwort_leaves'
             ],
-            output: 'naturesaura:pet_reviver',
+            liquid: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' }
+            },
             liquidOutput: {
                 fluid: 'hexerei:potion',
                 nbt: { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' }
             },
-            fluidLevelsConsumed: 333,
+            fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: `${id_prefix}pet_reviver`
         },
         {
-            liquid: {
-                fluid: 'hexerei:potion',
-                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:leaping' }
-            },
+            output: 'naturesaura:shockwave_creator',
             inputs: [
                 '#forge:string',
                 'hexerei:dried_mandrake_flowers',
@@ -301,14 +322,291 @@ ServerEvents.recipes((event) => {
                 '#forge:plates/lead',
                 'hexerei:dried_mandrake_flowers'
             ],
-            output: 'naturesaura:shockwave_creator',
+            liquid: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:leaping' }
+            },
             liquidOutput: {
                 fluid: 'hexerei:potion',
                 nbt: { Bottle: 'REGULAR', Potion: 'minecraft:leaping' }
             },
-            fluidLevelsConsumed: 333,
+            fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: `${id_prefix}shockwave_creator`
+        },
+        {
+            output: 'naturesaura:death_ring',
+            inputs: [
+                '#forge:gems/emerald',
+                'hexerei:belladonna_berries',
+                '#forge:nuggets/electrum',
+                'hexerei:mandrake_root',
+                'ars_nouveau:ring_of_potential',
+                'hexerei:mandrake_root',
+                '#forge:nuggets/electrum',
+                'hexerei:belladonna_berries'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' } },
+            liquidOutput: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' } },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}death_ring`
+        },
+        {
+            output: 'occultism:familiar_ring',
+            inputs: [
+                'occultism:soul_gem',
+                'hexerei:dried_mandrake_flowers',
+                '#forge:nuggets/electrum',
+                'hexerei:dried_sage',
+                'ars_nouveau:ring_of_potential',
+                'hexerei:dried_sage',
+                '#forge:nuggets/electrum',
+                'hexerei:dried_mandrake_flowers'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:shielding_potion' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}familiar_ring`
+        },
+        {
+            output: 'pneumaticcraft:jet_boots_upgrade_4',
+            inputs: [
+                'pneumaticcraft:jet_boots_upgrade_3',
+                'pneumaticcraft:reinforced_pressure_tube',
+                'ars_nouveau:glyph_wind_shear',
+                'pneumaticcraft:reinforced_pressure_tube',
+                'ars_elemental:lesser_air_focus',
+                'pneumaticcraft:reinforced_pressure_tube',
+                'ars_nouveau:glyph_wind_shear',
+                'pneumaticcraft:reinforced_pressure_tube'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:slow_falling' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:slow_falling' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}jet_boots_upgrade_4`
+        },
+        {
+            output: 'pneumaticcraft:jet_boots_upgrade_5',
+            inputs: [
+                'pneumaticcraft:jet_boots_upgrade_4',
+                'pneumaticcraft:advanced_pressure_tube',
+                'ars_nouveau:glyph_glide',
+                'pneumaticcraft:advanced_pressure_tube',
+                'ars_elemental:air_focus',
+                'pneumaticcraft:advanced_pressure_tube',
+                'ars_nouveau:glyph_glide',
+                'pneumaticcraft:advanced_pressure_tube'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:long_slow_falling' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:long_slow_falling' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}jet_boots_upgrade_5`
+        },
+        {
+            output: 'ars_nouveau:blank_thread',
+            inputs: [
+                'ars_nouveau:magebloom_fiber',
+                'naturesaura:gold_leaf',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'naturesaura:gold_leaf',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:long_knowledge' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:long_knowledge' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}blank_thread`
+        },
+        {
+            output: 'pneumaticcraft:jumping_upgrade_2',
+            inputs: [
+                'pneumaticcraft:upgrade_matrix',
+                'pneumaticcraft:pressure_tube',
+                'ars_nouveau:glyph_leap',
+                'pneumaticcraft:pressure_tube',
+                'ars_nouveau:glyph_underfoot',
+                'pneumaticcraft:pressure_tube',
+                'ars_nouveau:glyph_leap',
+                'pneumaticcraft:pressure_tube'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:leaping' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:leaping' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}jumping_upgrade_2`
+        },
+        {
+            output: 'pneumaticcraft:jumping_upgrade_3',
+            inputs: [
+                'pneumaticcraft:jumping_upgrade_2',
+                'pneumaticcraft:reinforced_pressure_tube',
+                'ars_nouveau:glyph_amplify',
+                'pneumaticcraft:reinforced_pressure_tube',
+                'ars_elemental:lesser_air_focus',
+                'pneumaticcraft:reinforced_pressure_tube',
+                'ars_nouveau:glyph_amplify',
+                'pneumaticcraft:reinforced_pressure_tube'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:long_leaping' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:long_leaping' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}jumping_upgrade_3`
+        },
+        {
+            output: 'pneumaticcraft:jumping_upgrade_4',
+            inputs: [
+                'pneumaticcraft:jumping_upgrade_3',
+                'pneumaticcraft:advanced_pressure_tube',
+                'ars_nouveau:glyph_amplify',
+                'pneumaticcraft:advanced_pressure_tube',
+                'ars_elemental:air_focus',
+                'pneumaticcraft:advanced_pressure_tube',
+                'ars_nouveau:glyph_amplify',
+                'pneumaticcraft:advanced_pressure_tube'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:strong_leaping' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:strong_leaping' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}jumping_upgrade_4`
+        },
+        {
+            output: 'pneumaticcraft:night_vision_upgrade',
+            inputs: [
+                'pneumaticcraft:upgrade_matrix',
+                'occultism:spirit_attuned_gem',
+                'ars_nouveau:glyph_light',
+                'occultism:spirit_attuned_gem',
+                'ars_nouveau:glyph_self',
+                'occultism:spirit_attuned_gem',
+                'ars_nouveau:glyph_light',
+                'occultism:spirit_attuned_gem'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:long_night_vision' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:long_night_vision' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}night_vision_upgrade`
+        },
+        {
+            output: 'pneumaticcraft:armor_upgrade',
+            inputs: [
+                'pneumaticcraft:upgrade_matrix',
+                'ars_nouveau:abjuration_essence',
+                '#forge:gems/infused_diamond',
+                'ars_nouveau:abjuration_essence',
+                'ars_nouveau:glyph_self',
+                'ars_nouveau:abjuration_essence',
+                '#forge:gems/infused_diamond',
+                'ars_nouveau:abjuration_essence'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:resistance' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:resistance' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}armor_upgrade`
+        },
+        {
+            output: 'pneumaticcraft:gilded_upgrade',
+            inputs: [
+                'pneumaticcraft:upgrade_matrix',
+                'ars_nouveau:abjuration_essence',
+                '#forge:plates/gold',
+                'ars_nouveau:abjuration_essence',
+                'ars_nouveau:glyph_self',
+                'ars_nouveau:abjuration_essence',
+                '#forge:plates/gold',
+                'ars_nouveau:abjuration_essence'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:long_knowledge' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:long_knowledge' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}gilded_upgrade`
+        },
+        {
+            output: 'pneumaticcraft:ender_visor_upgrade',
+            inputs: [
+                'pneumaticcraft:upgrade_matrix',
+                'ars_nouveau:abjuration_essence',
+                'minecraft:carved_pumpkin',
+                'ars_nouveau:abjuration_essence',
+                'ars_nouveau:glyph_self',
+                'ars_nouveau:abjuration_essence',
+                'minecraft:carved_pumpkin',
+                'ars_nouveau:abjuration_essence'
+            ],
+            liquid: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:enderference_potion_long' }
+            },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:enderference_potion_long' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}ender_visor_upgrade`
+        },
+        {
+            output: 'pneumaticcraft:elytra_upgrade',
+            inputs: [
+                'pneumaticcraft:upgrade_matrix',
+                'hexerei:infused_fabric',
+                'ars_nouveau:glyph_glide',
+                'hexerei:infused_fabric',
+                'ars_nouveau:glyph_self',
+                'hexerei:infused_fabric',
+                'ars_nouveau:glyph_glide',
+                'hexerei:infused_fabric'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:leaping' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'minecraft:leaping' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}elytra_upgrade`
         }
     ];
 

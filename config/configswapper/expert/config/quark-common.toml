@@ -829,7 +829,6 @@
 [management]
 	"Expanded Item Interactions" = true
 	"Inventory Sorting" = true
-	"Automatic Took Restock" = true
 	"Quick Armor Swapping" = true
 	"Item Sharing" = true
 	"Hotbar Changer" = true
@@ -856,20 +855,6 @@
 
 	[management.item_sharing]
 		"Render Items In Chat" = true
-
-	[management.automatic_took_restock]
-		#This feature disables itself if any of the following mods are loaded: 
-		# - inventorytweaks
-		#This is done to prevent content overlap.
-		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
-		"Ignore Anti Overlap" = false
-		"Unstackables Only" = false
-		#Enchantments deemed important enough to have special priority when finding a replacement
-		"Important Enchantments" = ["minecraft:silk_touch", "minecraft:fortune", "minecraft:infinity", "minecraft:luck_of_the_sea", "minecraft:looting"]
-		#Enable replacing your tools with tools of the same type but not the same item
-		"Enable Loose Matching" = true
-		#Enable comparing enchantments to find a replacement
-		"Enable Enchant Matching" = true
 
 [tweaks]
 	"Zombie Villagers On Normal" = false

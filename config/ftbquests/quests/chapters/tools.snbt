@@ -420,32 +420,16 @@
 		}
 		{
 			title: "Chainsaw"
+			icon: "thermal:saw_blade"
 			x: -11.0d
 			y: -8.0d
-			description: ["When applied to an Axe, Chainsaw will cause it to fell entire trees, rather than a single block at a time. "]
+			description: ["When applied to an Axe, the Chainsaw enchantment will cause the axe to fell entire trees, rather than a single block at a time. "]
 			dependencies: ["358FAB3D482C463A"]
 			id: "5864F8263845E294"
 			tasks: [{
-				id: "70C63294BE9D1A64"
-				type: "item"
-				item: {
-					id: "minecraft:enchanted_book"
-					Count: 1b
-					tag: {
-						StoredEnchantments: [{
-							lvl: 1s
-							id: "apotheosis:chainsaw"
-						}]
-					}
-				}
-			}]
-			rewards: [{
-				id: "1CDA5D733D056848"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
+				id: "5814B6BA778CE9C1"
+				type: "checkmark"
+				title: "Chainsaw Enchantment"
 			}]
 		}
 		{
@@ -781,7 +765,23 @@
 				{
 					id: "2B24FDC5DFF2DAC8"
 					type: "item"
-					item: "ars_nouveau:glyph_fell"
+					title: "Glyph of Fell or Break"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "ars_nouveau:glyph_fell"
+									Count: 1b
+								}
+								{
+									id: "ars_nouveau:glyph_break"
+									Count: 1b
+								}
+							]
+						}
+					}
 				}
 			]
 			rewards: [{
@@ -804,52 +804,40 @@
 			x: -9.0d
 			y: -8.0d
 			shape: "circle"
-			description: ["Upgrades to basic Shovels and Hammers, these tools mine a 3x3 area. Apply Power of the Depth to them to the depth of mining. Each level of the enchant will cause the tool to mine another block deep."]
+			description: [
+				"Upgrades to basic Shovels and Hammers, these tools mine a 3x3 area. "
+				""
+				"Apply Power of the Depth to them to the depth of mining. Each level of the enchant will cause the tool to mine another block deep."
+			]
 			dependencies: ["358FAB3D482C463A"]
 			id: "0F002D99C31CFE24"
-			tasks: [
-				{
-					id: "71303CACE8C59A83"
-					type: "item"
-					title: "Excavators"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "simplytools:diamond_hammer"
-									Count: 1b
-									tag: {
-										Damage: 0
-									}
+			tasks: [{
+				id: "71303CACE8C59A83"
+				type: "item"
+				title: "Excavators"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "simplytools:diamond_hammer"
+								Count: 1b
+								tag: {
+									Damage: 0
 								}
-								{
-									id: "simplytools:diamond_excavator"
-									Count: 1b
-									tag: {
-										Damage: 0
-									}
+							}
+							{
+								id: "simplytools:diamond_excavator"
+								Count: 1b
+								tag: {
+									Damage: 0
 								}
-							]
-						}
+							}
+						]
 					}
 				}
-				{
-					id: "1EF30B3A780F7595"
-					type: "item"
-					item: {
-						id: "minecraft:enchanted_book"
-						Count: 1b
-						tag: {
-							StoredEnchantments: [{
-								lvl: 5s
-								id: "simplytools:power_of_the_depth"
-							}]
-						}
-					}
-				}
-			]
+			}]
 			rewards: [{
 				id: "7FEA0293136D2491"
 				type: "command"

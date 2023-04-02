@@ -12,6 +12,7 @@ ServerEvents.recipes((event) => {
         recipes.push({
             input: { fluidTag: prop.fuel, amount: 1000 },
             burnTime: Math.floor(prop.energy / energy_modifier),
+            superheated: prop.superheated ? prop.superheated : false,
             id: `${id_prefix}${prop.fuel.split(':')[1]}`
         });
     });

@@ -7,6 +7,9 @@ ServerEvents.recipes((event) => {
         //     mod: 'sample',
         //     id: 'sample'
         // }
+
+        { mod: 'gateways' },
+        { mod: 'theoneprobe' },
         
         { output: /pendorite/ },
         { output: /emeraldite/ },
@@ -46,6 +49,7 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:crushing\/biofuel/ },
 
         { id: 'minecraft:bone_meal' },
+        { id: 'minecraft:glass' },
 
         { id: 'occultism:crafting/butcher_knife' },
 
@@ -136,8 +140,6 @@ ServerEvents.recipes((event) => {
         { type: 'thermal:pulverizer_recycle' },
         { type: 'thermal:insolator' },
         { type: 'thermal:compression_fuel' },
-
-        { mod: 'gateways' },
 
         //// Emendatus Enigmatica Related stuff
 

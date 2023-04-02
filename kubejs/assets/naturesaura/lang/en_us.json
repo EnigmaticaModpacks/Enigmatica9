@@ -2,5 +2,7 @@
 	"block.naturesaura.infused_iron_block": "Infused Iron Block",
 	"item.naturesaura.infused_iron": "Infused Iron Ingot",
 	"advancement.naturesaura.infused_materials.desc": "Use the Natural Altar to create Infused Iron",
-	"advancement.naturesaura.infused_tools.desc": "Create a Botanist's Pickaxe and Blade"
+	"advancement.naturesaura.infused_tools.desc": "Create a Botanist's Pickaxe and Blade",
+	"block.naturesaura.tainted_gold_block": "Tainted Gold Block",
+	"item.naturesaura.tainted_gold": "Tainted Gold Ingot"
 }

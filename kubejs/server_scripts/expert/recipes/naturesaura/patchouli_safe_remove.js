@@ -17,9 +17,19 @@ ServerEvents.recipes((event) => {
             { id: 'naturesaura:light_staff', output: 'naturesaura:light_staff' },
             { id: 'naturesaura:cave_finder', output: 'naturesaura:cave_finder' },
             { id: 'naturesaura:pet_reviver', output: 'naturesaura:pet_reviver' },
-            { id: 'naturesaura:shockwave_creator', output: 'naturesaura:shockwave_creator' }
+            { id: 'naturesaura:shockwave_creator', output: 'naturesaura:shockwave_creator' },
+            { id: 'naturesaura:blast_furnace_booster', output: 'naturesaura:blast_furnace_booster' },
+            { id: 'naturesaura:auto_crafter', output: 'naturesaura:auto_crafter' },
+            { id: 'naturesaura:death_ring', output: 'naturesaura:death_ring' },
+            { id: 'naturesaura:dimension_rail_end', output: 'naturesaura:dimension_rail_end' },
+            { id: 'naturesaura:dimension_rail_nether', output: 'naturesaura:dimension_rail_nether' },
+            { id: 'naturesaura:dimension_rail_overworld', output: 'naturesaura:dimension_rail_overworld' },
+            { id: 'naturesaura:animal_spawner', output: 'naturesaura:animal_spawner' }
         ],
-        altar: [{ id: 'naturesaura:altar/infused_stone', output: 'naturesaura:infused_stone' }],
+        altar: [
+            { id: 'naturesaura:altar/infused_stone', output: 'naturesaura:infused_stone' },
+            { id: 'naturesaura:altar/tainted_gold', output: 'naturesaura:tainted_gold' }
+        ],
         tree_ritual: [
             {
                 id: 'naturesaura:tree_ritual/ore_spawn_powder',

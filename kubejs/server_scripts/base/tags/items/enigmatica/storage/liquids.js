@@ -6,11 +6,12 @@ ServerEvents.tags('item', (event) => {
             /fluid_storage/,
             /extrastorage:.*_fluid/,
             /ae2:fluid_storage_cell_/,
+            'immersiveengineering:tank',
+            'mekanism:dynamic_valve'
             //'chiselsandbits:bit_storage',
             //'rftoolsutility:tank',
             //'thermal:fluid_cell',
             //'industrialforegoing:black_hole_controller',
-            'mekanism:dynamic_valve'
         ])
         .remove([
             'pneumaticcraft:etching_tank',

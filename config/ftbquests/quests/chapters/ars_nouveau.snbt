@@ -366,14 +366,10 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: -0.5d
+			x: -6.0d
+			y: 0.0d
 			subtitle: "Boop the Snoot"
-			description: [
-				"An amicable being that's deeply attuned with Source, Bookwyrms may be summoned by Sneak Right-Clicking their charm on a Lectern. Once summoned, they’ll repeatedly cast any spell they’ve been given on blocks in their area."
-				""
-				"Refer to the Worn Notebook for an in-depth guide on using Whelps. "
-			]
+			description: ["An amicable being with a driving need to organize, Bookwyrms are central to using Ars Nouveau’s item management system which allows linking many inventories together into a single access point."]
 			dependencies: ["00000000000009ED"]
 			id: "00000000000003F0"
 			tasks: [{
@@ -391,8 +387,8 @@
 			}]
 		}
 		{
-			x: -7.5d
-			y: -1.5d
+			x: -5.0d
+			y: -0.5d
 			subtitle: "In Search of the Golden Acorn"
 			description: [
 				"Carbuncles are curious forest critters with a love for all things shiny. Gold, in particular. They may be befriended by tossing them a small amount of gold. Once befriended, they will assist by collecting items and moving them to inventories. "
@@ -428,8 +424,8 @@
 			]
 		}
 		{
-			x: -7.0d
-			y: -0.5d
+			x: -7.5d
+			y: -1.5d
 			subtitle: "Whispering Winds"
 			description: [
 				"Sylphs are the care-takers of the forest, helping new growth to flourish. They will come with you willingly if you honor them by planting a tree in their stead. Once befriended, a Sylph will tend to a small area and gift you with their bounty. Plant down trees, crops, flowers, and other natural items and over time the Sylph will grow more of these and offer them to you."
@@ -488,6 +484,7 @@
 			tasks: [{
 				id: "678A401205BCA8C5"
 				type: "item"
+				title: "Familiar Shards"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
@@ -540,8 +537,8 @@
 		}
 		{
 			icon: "ars_nouveau:wixie_charm"
-			x: -6.0d
-			y: 0.0d
+			x: -7.0d
+			y: -0.5d
 			subtitle: "Wyrd Sisters"
 			description: [
 				"Wouldn't it be helpful to have a hand around the Crafting Table? Someone to pass you this, or fetch you that? Or perhaps they could just do the job for you while you further your studies of the arcane?"
@@ -574,7 +571,7 @@
 			}]
 		}
 		{
-			x: -6.0d
+			x: -8.5d
 			y: 1.0d
 			subtitle: "Nanny Ogg's Cookbook"
 			description: [
@@ -605,7 +602,7 @@
 		}
 		{
 			icon: "ars_nouveau:potion_melder"
-			x: -7.0d
+			x: -9.5d
 			y: 1.5d
 			subtitle: "Subtle Infusions"
 			description: [
@@ -662,7 +659,7 @@
 			]
 		}
 		{
-			x: -6.5d
+			x: -9.0d
 			y: 2.5d
 			description: [
 				"Multiple doses all bottled up and ready to go in an eco-friendly re-usable package. "
@@ -1434,7 +1431,7 @@
 			}]
 		}
 		{
-			x: -6.0d
+			x: -8.5d
 			y: 3.5d
 			description: [
 				"The Splash Flask Cannon is a simple device designed to further weaponize harmful potions. Any potion fed into it may be thrown as if it had been brewed into a Splash Potion. "
@@ -1492,7 +1489,7 @@
 			}]
 		}
 		{
-			x: -5.0d
+			x: -7.5d
 			y: 1.5d
 			subtitle: "Potpourri for the Soul "
 			description: [
@@ -1516,7 +1513,7 @@
 			}]
 		}
 		{
-			x: -7.0d
+			x: -9.5d
 			y: 3.5d
 			description: [
 				"A wizard in battle has no time to worry about such trivialities as quaffing a potion. The Alchemist’s Crown handles that for them. "
@@ -1623,13 +1620,7 @@
 				id: "20587DF83A9CDEE2"
 				type: "command"
 				title: "Scavenger's Delight"
-				icon: {
-					id: "ftbquests:custom_icon"
-					Count: 1b
-					tag: {
-						Icon: "kubejs:textures/item/scavengers_delight.png"
-					}
-				}
+				icon: "kubejs:scavengers_delight"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				player_command: false
 			}]
@@ -1982,14 +1973,13 @@
 		}
 		{
 			title: "Starbuncle Logistics"
-			x: -2.0d
-			y: -0.5d
+			x: -3.5d
+			y: 1.0d
 			description: [
 				"In addition to transporting items and looking stylish, Starbuncles may be given a few additional accessories to further enhance their abilities. "
 				""
 				"Configuring their pickup and drop off locations remains the same as with Items; by using a Dominion Wand after equipping them with the appropriate accessory. "
 			]
-			hide_dependency_lines: true
 			dependencies: ["00000000000003F2"]
 			id: "355D6EAEA6130932"
 			tasks: [{
@@ -2007,8 +1997,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 1.0d
+			x: -3.5d
+			y: 2.0d
 			subtitle: "Watt is love? Baby don't hertz me, n-ohm-ore"
 			description: ["A tiny little backpack for transporting FE from place to place. "]
 			dependencies: ["355D6EAEA6130932"]
@@ -2028,8 +2018,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 0.5d
+			x: -2.5d
+			y: 1.5d
 			subtitle: "Looking a little sloshed"
 			description: ["Sealed to prevent spillages, the Starbucket allows the Starbuncle to transport any fluid. "]
 			dependencies: ["355D6EAEA6130932"]
@@ -2049,8 +2039,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: 0.5d
+			x: -4.5d
+			y: 1.5d
 			subtitle: "Let's not get carried away"
 			description: ["With a Starballon in tow, a Starbuncle may transport Mekanism gasses from place to place. "]
 			dependencies: ["355D6EAEA6130932"]
@@ -2070,7 +2060,7 @@
 			}]
 		}
 		{
-			x: -5.5d
+			x: -8.0d
 			y: 2.5d
 			description: [
 				"Though suitable for any fluid, Fluid Containment Jars are particularly useful for working with Potions. "
@@ -2117,7 +2107,8 @@
 		{
 			title: "Energy Conversion"
 			x: -2.0d
-			y: 2.5d
+			y: -4.5d
+			shape: "gear"
 			description: [
 				"Once thought to be entirely separate, the magical energies know as Source, Aura, and FE are in fact all facets of the same energy. By making use of special crystals, it becomes possible to convert between them with ease. "
 				""
@@ -2183,6 +2174,95 @@
 			]
 			rewards: [{
 				id: "7CE9FDA5D58E4515"
+				type: "command"
+				title: "Rare Ars Nouveau Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -6.0d
+			y: 1.5d
+			description: [
+				"The Storage Lectern is the central access point for Bookwyrm based storage. Place one down anywhere and Right-Click one or more Bookwyrm Charms onto it to bind them to the Lectern."
+				""
+				"The Bookwyrms are responsible for moving items around and each one may manage up to eight inventories. So, a Lectern with two Bookwyrms attached could be bound to up to 16 nearby inventories."
+				""
+				"To bind an inventory to the Lectern, first Sneak Right-Click the inventory with a Dominion Wand, then Right-Click the Lectern. The Lectern may be Right-Clicked again with a Dominion Wand to highlight all attached inventories and Bookwyrms."
+				""
+				"This system pairs very nicely with large storage containers like Drawers, Item Vaults, and Dimensional Storage Actuators, creating dense storage capabilities using fewer Bookwyrm connections. "
+				""
+				"The Lecterns may also be chained to allow remote access to the central storage. Place a new lectern anywhere within 30 blocks of the primary lectern, Right-Click the new one with the Wand, then Right-Click the primary with the wand. The new Lectern will now have access to all of the inventories of the first. Just keep chaining in this way as far as desired to have terminals throughout your home!"
+				""
+				"Note: Chained Lecterns may not have Bookwyrms or Inventories bound to them. Doing so will sever the connection with the primary network and create a new separate network."
+				""
+				"Finally, it should be mentioned that any unbound inventory placed directly adjacent to the primary Lectern will act as an input for the entire system. Any items that find their way into this inventory will be automatically sorted out to linked inventories by the Bookwyrms. "
+			]
+			dependencies: ["00000000000003F0"]
+			min_width: 300
+			id: "3F58A461A0322846"
+			tasks: [{
+				id: "46A80C1104FFAE5A"
+				type: "item"
+				item: "ars_nouveau:storage_lectern"
+			}]
+			rewards: [{
+				id: "770A155A795A779F"
+				type: "item"
+				item: "create:item_vault"
+				count: 9
+			}]
+		}
+		{
+			x: -6.5d
+			y: 2.5d
+			description: [
+				"The Repository is a special block that can hold as much as a Double Chest in a single block space. Unlike a standard Chest, however, they retain their name when broken. This ties in nicely with another feature of the Lectern: Named Tabs"
+				""
+				"Any named inventories that are bound to the Lectern will show up in a special tab in the interface. Inventories sharing the same name all share the tab and the contents of all of these inventories is grouped together. This allows for some manual organization, such as putting all gems in one set of inventories, or special equipment in another. Think of these as a search group, allowing quick access to all the items at a click. "
+				""
+				"This feature works with any inventory that can be named in an Anvil, however, it works best with those that retain their name on pickup to avoid having to rename them. Some other examples include Shulker Boxes, Smart Chests, Reinforced Chests, Wooden Storage Crates, and Reinforced Storage Crates to name a few. "
+			]
+			dependencies: ["3F58A461A0322846"]
+			id: "6712F0284D3B20A9"
+			tasks: [{
+				id: "010B09FADC08000C"
+				type: "item"
+				item: "ars_nouveau:repository"
+			}]
+			rewards: [{
+				id: "2E298084349A0FDF"
+				type: "command"
+				title: "Rare Ars Nouveau Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -5.5d
+			y: 2.5d
+			description: [
+				"Display Cases are a simple Redstone device to read the contents of an inventory. They may be linked to any inventory or even a Storage Lectern and can output a signal when the configured item is either above or below a defined threshold. "
+				""
+				"Select the inventory to bind it to with the Dominion Wand. Sneak Right-Click for regular inventories or just a simple Right-Click for a Lectern, then Right-Click the placed Display Case to bind it. "
+				""
+				"To set the item to monitor, simply Right-Click the item into the Case."
+				""
+				"To set the quantity, us an empty hand to Right-Click the Case to increase and Left-Click to decrease. Sneak Click will increase or decrease by bounds of eight."
+				""
+				"To invert the signal, Sneak Right-Click the Case with the Dominion Wand."
+			]
+			dependencies: ["3F58A461A0322846"]
+			id: "68921D838C07EFE7"
+			tasks: [{
+				id: "230D088EC2109D10"
+				type: "item"
+				item: "ars_nouveau:item_detector"
+			}]
+			rewards: [{
+				id: "6B0B1FC4330D47D7"
 				type: "command"
 				title: "Rare Ars Nouveau Loot Box"
 				icon: "kubejs:rare_lootbox"

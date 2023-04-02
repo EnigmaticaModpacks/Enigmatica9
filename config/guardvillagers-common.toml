@@ -28,6 +28,8 @@
 	"Allow guard arrows to damage villagers, iron golems, or other guards? The i-frames will still be shown for them but they won't lose any health if this is set to false" = true
 	#This makes guards form a phalanx
 	"Have guards form a phalanx?" = true
+	#Range: -999.9000244140625 ~ 999.0
+	"Chance to drop equipment" = 100.0
 	#Range: -500.0 ~ 900.0
 	"Guard health" = 20.0
 
