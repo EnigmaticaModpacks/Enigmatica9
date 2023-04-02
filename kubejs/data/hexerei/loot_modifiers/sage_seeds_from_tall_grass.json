@@ -1,4 +1,4 @@
 {
-    "type": "hexerei:sage_seeds_from_grass",
+    "type": "hexerei:sage_seeds_from_tall_grass",
     "conditions": [{ "condition": "forge:false" }]
 }

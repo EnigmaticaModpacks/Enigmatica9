@@ -9,8 +9,7 @@ ServerEvents.recipes((event) => {
         }
     ];
 
-    // Temporary Disabled due to bug with KubeJS -> Ingredient.of(tag).getItemIds() returns nothing at first launch!
-    // Override is in place! The game triggers /reload on first load so this script is going to work now :D
+    // TODO: Rework ALL iterations over tags to use cached FILES!
     let conversionTypes = ['storage_block', 'ore'];
     let materials = Object.keys(metal_properties).concat(Object.keys(gemProperties))
     conversionTypes.forEach((type) => {
