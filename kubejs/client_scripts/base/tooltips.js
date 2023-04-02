@@ -30,6 +30,15 @@ ItemEvents.tooltip((event) => {
             text: [Text.of('Recipe disabled for Enigmatica 9').gold()]
         },
         {
+            items: [
+                'create:stockpile_switch',
+                'minecraft:comparator',
+                'create:content_observer',
+                'ars_nouveau:item_detector'
+            ],
+            text: [Text.of('Redstone Device: Inventory Monitor').darkRed()]
+        },
+        {
             items: ['quark:ender_watcher'],
             text: [Text.of('Redstone Device: Detects Players Looking').darkRed()]
         },
