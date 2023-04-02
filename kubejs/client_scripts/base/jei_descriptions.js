@@ -236,6 +236,7 @@ JEIEvents.information((event) => {
             items: ['emendatusenigmatica:source_gem'],
             text: ['Obtained by placing Lapis or Amethyst in an Imbuement Chamber.']
         },
+        {
             items: ['blue_skies:moonstone_crystal'],
             text: [
                 `Will grow on Blocks of Moonstone if placed in water.`,

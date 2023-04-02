@@ -30,8 +30,6 @@
     "forge:storage_blocks/{material}",
     "forge:storage_blocks/raw_{material}",
     "forge:slag",
-    "forge:coal_coke",
-    "forge:sawdust",
     "mekanism:crystals/{material}",
     "mekanism:shards/{material}",
     "mekanism:clumps/{material}",

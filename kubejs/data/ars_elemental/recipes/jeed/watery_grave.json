@@ -1,0 +1,24 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "jeed",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "jeed:effect_provider",
+        "effect":{
+          "id": "ars_elemental:watery_grave"
+        },
+        "providers": [
+          {
+            "item": "ars_elemental:glyph_watery_grave"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "hexerei:add_to_candle",
+  "conditions": [
+    {
+      "type": "forge:false"
+    }
+  ],
+  "input": {
+    "item": "minecraft:redstone_block"
+  },
+  "output": {
+    "item": "hexerei:candle",
+    "nbt": {
+      "base": {
+        "layer": "hexerei:textures/block/selenite_block.png",
+        "layerFromBlockLocation": false
+      }
+    }
+  }
+}

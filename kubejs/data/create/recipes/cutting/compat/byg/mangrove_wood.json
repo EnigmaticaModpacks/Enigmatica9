@@ -1,0 +1,19 @@
+{
+  "type": "create:cutting",
+  "conditions": [
+    {
+      "type": "forge:false"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "byg:mangrove_wood"
+    }
+  ],
+  "processingTime": 50,
+  "results": [
+    {
+      "item": "byg:stripped_mangrove_wood"
+    }
+  ]
+}
