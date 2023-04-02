@@ -5,12 +5,6 @@ ServerEvents.recipes((event) => {
 
     const id_prefix = 'enigmatica:expert/naturesaura/offering/';
     const recipes = [
-        // {
-        //     output: { item: 'twilightforest:ironwood_ingot', count: 2 },
-        //     input: { item: 'twilightforest:raw_ironwood' },
-        //     start_item: { tag: 'forge:gems/source' },
-        //     id: `${id_prefix}ironwood_ingot`
-        // },
         {
             output: { item: 'ae2:sky_dust', count: 4 },
             input: { tag: 'forge:dusts/quartz' },
@@ -22,6 +16,18 @@ ServerEvents.recipes((event) => {
             input: { tag: 'forge:ingots/aluminum' },
             start_item: { item: 'naturesaura:calling_spirit' },
             id: `naturesaura:offering/sky_ingot`
+        },
+        {
+            output: { item: 'naturesaura:clock_hand' },
+            input: { item: 'ars_nouveau:manipulation_essence' },
+            start_item: { item: 'naturesaura:calling_spirit' },
+            id: `naturesaura:offering/clock_hand`
+        },
+        {
+            output: { item: 'naturesaura:tainted_gold', count: 2 },
+            input: { tag: 'forge:ingots/netherite' },
+            start_item: { item: 'kubejs:spirit_of_devotion' },
+            id: `${id_prefix}lumium_ingot`
         }
     ];
 

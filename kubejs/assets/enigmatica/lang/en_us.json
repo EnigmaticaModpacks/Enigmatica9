@@ -28,7 +28,7 @@
     "effect.naturesaura.breathless.description": "Gradually asphyxiates the target.",
     "effect.apotheosis.bleeding.description": "Lose health over time.",
     "effect.apotheosis.knowledge.description": "Increases Experience gained.",
-    "effect.occultism.third_eye.description": "AGrants the ability to see Otherstone and Otherworld Trees in their true form, allowing them to be harvested.",
+    "effect.occultism.third_eye.description": "Grants the ability to see Otherstone and Otherworld Trees in their true form, allowing them to be harvested.",
     "effect.occultism.dragon_greed.description": "The Dragon familiar provides increased experience gain to their master",
     "effect.occultism.mummy_dodge.description": "The Mummy familiar is a martial arts expert and fights to protect their master.",
     "effect.occultism.beaver_harvest.description": "The Beaver familiar provides increased woodcutting speed to their masters and harvests nearby trees when they grow from a sapling.",
@@ -46,5 +46,9 @@
     "affix.apotheosis:armor/mob_effect/shielding": "Warding",
     "affix.apotheosis:armor/mob_effect/shielding.suffix": "of Unyielding Opposition",
     "affix.apotheosis:armor/mob_effect/chilling": "Glacial",
-    "affix.apotheosis:armor/mob_effect/chilling.suffix": "of Rime Frost"
+    "affix.apotheosis:armor/mob_effect/chilling.suffix": "of Rime Frost",
+
+    "item.apotheosis.gem.apotheosis:everbright/moon_touched": "Moon-Touched Gem",
+    "item.apotheosis.gem.apotheosis:everdawn/sun_kissed": "Sun-Kissed Gem",
+    "item.apotheosis.gem.apotheosis:twilight_forest/twilight_guardian": "Twilight Guardian Gem"
 }

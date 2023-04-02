@@ -33,24 +33,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}vegetable_oil_low_yield`
         },
         {
-            inputs: ['powah:photoelectric_pane', 'powah:ender_core'],
-            outputs: [{ item: 'powah:lens_of_ender' }],
-            energy: 50000,
-            id: `${id_prefix}lens_of_ender`
-        },
-        {
-            inputs: ['powah:aerial_pearl', 'powah:ender_core'],
-            outputs: [{ item: 'powah:player_aerial_pearl' }],
-            energy: 100000,
-            id: `${id_prefix}player_aerial_pearl`
-        },
-        {
-            inputs: ['powah:binding_card', 'powah:ender_core'],
-            outputs: [{ item: 'powah:binding_card_dim' }],
-            energy: 150000,
-            id: `${id_prefix}binding_card_dim`
-        },
-        {
             inputs: ['ae2:certus_quartz_crystal', 'ae2:calculation_processor_press'],
             outputs: [{ item: 'ae2:printed_calculation_processor' }],
             energy: 12000,

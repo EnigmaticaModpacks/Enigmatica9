@@ -27,7 +27,7 @@
 	#Oil worldgen whitelist by dimension ID: add dimension ID's to this list if you want oil lake worldgen to happen ONLY in those dimensions. You can wildcard the path; e.g 'modid:*' whitelists ALL dimensions of namespace 'modid'. If this is empty, it is ignored, and 'oil_world_gen_dimension_blacklist' will be checked instead.
 	oil_world_gen_dimension_whitelist = []
 	#Oil worldgen blacklist by dimension ID: add dimension ID's to this list if you don't want oil lake worldgen to happen there. You can wildcard this; e.g 'modid:*' blacklists ALL dimensions of namespace 'modid'.
-	oil_world_gen_dimension_blacklist = []
+	oil_world_gen_dimension_blacklist = ['minecraft:*', 'blue_skies:*', 'twilightforest:*', 'the_bumblezone:*']
 
 ["Machine Properties"]
 	#Aerial Interface backwards compat: allow pre-0.8.0 behaviour of getting player's armor inventory from top face, even with Dispenser Upgrade installed
@@ -144,10 +144,10 @@
 ["Minigun Properties"]
 	#Standard Ammo cartridge size
 	#Range: 1 ~ 30000
-	standard_ammo_cartridge_size = 1000
+	standard_ammo_cartridge_size = 5000
 	#Base bullet damage of the Sentry Gun, Handheld Minigun, and Drone Minigun, before ammo bonuses are considered
 	#Range: 0.0 ~ 1.7976931348623157E308
-	base_damage = 4.0
+	base_damage = 10.0
 	#Base range of Minigun, before Range Upgrades are considered
 	#Range: 5 ~ 100
 	base_range = 50
@@ -159,20 +159,20 @@
 
 	#Armor Piercing Ammo cartridge size
 	#Range: 1 ~ 30000
-	armor_piercing_ammo_cartridge_size = 750
+	armor_piercing_ammo_cartridge_size = 5000
 	#Armor Piercing Ammo damage multiplier (relative to standard ammo)
 	#Range: 0.0 ~ 1.7976931348623157E308
-	ap_ammo_damage_multiplier = 1.25
+	ap_ammo_damage_multiplier = 1.50
 	#Armor Piercing Ammo percentage chance to ignore target's armor
 	#Range: 1 ~ 100
 	ap_ammo_ignore_armor_chance = 100	
 	
 	#Explosive Ammo cartridge size
 	#Range: 1 ~ 30000
-	explosive_ammo_cartridge_size = 500
+	explosive_ammo_cartridge_size = 5000
 	#Minigun Explosive Ammo damage multiplier (relative to standard ammo)
 	#Range: 0.0 ~ 1.7976931348623157E308
-	explosive_ammo_damage_multiplier = 0.2
+	explosive_ammo_damage_multiplier = 1.0
 	#Explosive Ammo base percentage chance to cause an explosion
 	#Range: > 0
 	explosive_ammo_explosion_chance = 50	
@@ -184,7 +184,7 @@
 	
 	#Freezing Ammo cartridge size
 	#Range: > 0
-	freezing_ammo_cartridge_size = 500
+	freezing_ammo_cartridge_size = 5000
 	#Damage done to entities within the fake 'ice' blocks cause by freezing ammo
 	#Range: 0.0 ~ 1.7976931348623157E308
 	freezing_ammo_fake_ice_damage = 1.0
@@ -197,10 +197,10 @@
 	
 	#Incendiary Ammo cartridge size
 	#Range: 1 ~ 30000
-	incendiary_ammo_cartridge_size = 500
+	incendiary_ammo_cartridge_size = 5000
 	#Incendiary ammo base percentage chance to ignite blocks
 	#Range: 1 ~ 100
-	incendiary_ammo_block_ignite_chance = 20
+	incendiary_ammo_block_ignite_chance = 10
 	#Incendiary ammo base percentage chance to ignite entities
 	#Range: 1 ~ 100
 	incendiary_ammo_entity_ignite_chance = 100
@@ -210,7 +210,7 @@
 		
 	#Weighted Ammo cartridge size
 	#Range: 1 ~ 30000
-	weighted_ammo_cartridge_size = 500
+	weighted_ammo_cartridge_size = 5000
 	#Weighted Ammo damage multiplier (relative to standard ammo)
 	#Range: 0.0 ~ 1.7976931348623157E308
 	weighted_ammo_damage_multiplier = 2.5
@@ -315,7 +315,7 @@
 	addMechanicHouse = 8
 	#Which trades should the Pressure Mechanic offer? ALL will offer all trades. PCB_BLUEPRINT will offer *only* the PCB Blueprint, an item required for normal progression through the mod. NONE will offer nothing (but the PCB Blueprint is also available via Amadron by default). Note that changing this won't affect any already-spawned Pressure Mechanics.
 	#Allowed Values: NONE, PCB_BLUEPRINT, ALL
-	mechanicTrades = "ALL"
+	mechanicTrades = "NONE"
 
 [Drones]
 	#Enable Drone Suffocation Damage

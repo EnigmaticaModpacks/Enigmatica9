@@ -826,6 +826,14 @@
 				Dimensions = ["minecraft:overworld"]
 				"Is Blacklist" = false
 
+	[world.glimmering_weald]
+		#Experimental, dont change if you dont know what you are doing. Weirdness min value from which biome will spawn. Decreasing will make biome appear more often
+		#Allowed values: [-2,2]
+		"Min Weirdness Range" = 1.5499999523162842
+		#Experimental, dont change if you dont know what you are doing. Weirdness max value until which biome will spawn. Increasing will make biome appear more often
+		#Allowed values: [-2,2]
+		"Max Weirdness Range" = 2.0
+
 [management]
 	"Expanded Item Interactions" = true
 	"Inventory Sorting" = true

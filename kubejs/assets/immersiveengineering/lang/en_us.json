@@ -1,16 +1,31 @@
 {
-    "advancement.immersiveengineering.mb_auto_workbench": "Automated Workbench",
-    "advancement.immersiveengineering.mb_auto_workbench.desc": "Form the Automated Workbench Multiblock",
-
-    "advancement.immersiveengineering.mb_sawmill": "Sawmill",
-    "advancement.immersiveengineering.mb_sawmill.desc": "Form the Sawmill Multiblock",
-
-    "advancement.immersiveengineering.mb_assembler": "Assembler",
-    "advancement.immersiveengineering.mb_assembler.desc": "Form the Assembler Multiblock",
-
-    "advancement.immersiveengineering.mb_lightning_rod": "Lightning Rod",
-    "advancement.immersiveengineering.mb_lightning_rod.desc": "Form the Lightning Rod Multiblock",
-
-    "advancement.immersiveengineering.mb_bottling_machine": "Bottling Machine",
-    "advancement.immersiveengineering.mb_bottling_machine.desc": "Form the Bottling Machine Multiblock"
+	"advancement.immersiveengineering.mb_auto_workbench": "Automated Workbench",
+	"advancement.immersiveengineering.mb_auto_workbench.desc": "Form the Automated Workbench Multiblock",
+	"advancement.immersiveengineering.mb_sawmill": "Sawmill",
+	"advancement.immersiveengineering.mb_sawmill.desc": "Form the Sawmill Multiblock",
+	"advancement.immersiveengineering.mb_assembler": "Assembler",
+	"advancement.immersiveengineering.mb_assembler.desc": "Form the Assembler Multiblock",
+	"advancement.immersiveengineering.mb_lightning_rod": "Lightning Rod",
+	"advancement.immersiveengineering.mb_lightning_rod.desc": "Form the Lightning Rod Multiblock",
+	"advancement.immersiveengineering.mb_bottling_machine": "Bottling Machine",
+	"advancement.immersiveengineering.mb_bottling_machine.desc": "Form the Bottling Machine Multiblock",
+	"desc.immersiveengineering.flavour.toolupgrade_drill_fortune": "Increases the ore yields when digging with the Mining Drill",
+	"block.immersiveengineering.steel_fence": "Steel Fence",
+	"block.immersiveengineering.steel_post": "Steel Post",
+	"block.immersiveengineering.steel_wallmount": "Steel Wallmount",
+	"block.immersiveengineering.steel_slope": "Steel Structural Arm",
+	"block.immersiveengineering.steel_scaffolding_standard": "Steel Scaffolding",
+	"block.immersiveengineering.steel_scaffolding_grate_top": "Steel Scaffolding",
+	"block.immersiveengineering.steel_scaffolding_wooden_top": "Steel Scaffolding",
+	"block.immersiveengineering.slab_steel_scaffolding_standard": "Steel Scaffolding Slab",
+	"block.immersiveengineering.slab_steel_scaffolding_grate_top": "Steel Scaffolding Slab",
+	"block.immersiveengineering.slab_steel_scaffolding_wooden_top": "Steel Scaffolding Slab",
+	"block.immersiveengineering.stairs_steel_scaffolding_standard": "Steel Scaffolding Stairs",
+	"block.immersiveengineering.stairs_steel_scaffolding_grate_top": "Steel Scaffolding Stairs",
+	"block.immersiveengineering.stairs_steel_scaffolding_wooden_top": "Steel Scaffolding Stairs",
+	"item.immersiveengineering.drillhead_steel": "Steel Drill Head",
+	"item.immersiveengineering.rockcutter": "Rockcutter Sawblade",
+	"item.immersiveengineering.revolver": "Revolver",
+	"item.immersiveengineering.component_electronic": "Electronic Component",
+	"item.immersiveengineering.circuit_board": "Circuit Backplane"
 }

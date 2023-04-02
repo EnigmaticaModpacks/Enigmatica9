@@ -13,6 +13,15 @@ ServerEvents.recipes((event) => {
                 B: 'create:copper_valve_handle'
             },
             id: 'supplementaries:faucet'
+        },
+        {
+            output: 'supplementaries:brass_lantern',
+            pattern: ['A', 'B', 'A'],
+            key: {
+                A: '#forge:ingots/gold',
+                B: 'minecraft:blaze_powder'
+            },
+            id: 'supplementaries:brass_lantern'
         }
     ];
 

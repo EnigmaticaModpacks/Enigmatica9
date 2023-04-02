@@ -15,6 +15,18 @@ ServerEvents.recipes((event) => {
                 D: 'create:andesite_casing'
             },
             id: `createaddition:crafting/rolling_mill`
+        },
+        {
+            output: 'createaddition:tesla_coil',
+            pattern: ['AAA', 'BCB', 'DED'],
+            key: {
+                A: '#forge:plates/aluminum',
+                B: 'powah:capacitor_basic_large',
+                C: 'immersiveengineering:coil_mv',
+                D: 'powah:energy_cable_basic',
+                E: 'create:brass_casing'
+            },
+            id: `${id_prefix}tesla_coil`
         }
     ];
 

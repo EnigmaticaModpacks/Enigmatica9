@@ -1,5 +1,5 @@
 param (
-   [string]$mode = "default"
+    [string]$mode = "default"
 )
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
@@ -66,6 +66,15 @@ function Test-ForDependencies {
 
         throw "curl not available. Please follow the instructions above." 
     }
+}
+
+function Update-BetterCompatibilityCheckerVersion {
+    $configPath = "$INSTANCE_ROOT/config/bcc-common.toml"
+
+    # Replace anything that matches semver of the type 1.0.0 with $MODPACK_VERSION
+    $contents = [System.IO.File]::ReadAllText($configPath) -replace "\d\.\d\.\d", $MODPACK_VERSION
+    [System.IO.File]::WriteAllText($configPath, $contents)
+    
 }
 
 function New-ClientFiles {
@@ -407,10 +416,11 @@ else {
 
 Test-ForDependencies
 
-switch($mode) {
+switch ($mode) {
     "default" {
         . "$PSScriptRoot/$secretsFile"
         Validate-SecretsFile
+        Update-BetterCompatibilityCheckerVersion
         New-ClientFiles
         Push-ClientFiles
         if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {

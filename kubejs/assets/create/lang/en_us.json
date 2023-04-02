@@ -9,5 +9,13 @@
 	"block.create.andesite_tunnel": "Andesite Tunnel",
 	"advancement.create.andesite_alloy.desc": "Obtain some Andesite Alloy, Create's most important resource",
 	"advancement.create.andesite_casing": "The Andesite Age",
-	"advancement.create.andesite_casing.desc": "Apply Andesite Alloy to stripped wood, creating a basic casing for your machines"
+	"advancement.create.andesite_casing.desc": "Apply Andesite Alloy to stripped wood, creating a basic casing for your machines",
+	"block.create.mechanical_crafter": "Mechancical Crafter",
+	"block.create.brass_casing": "Brass Casing",
+	"block.create.brass_funnel": "Brass Funnel",
+	"block.create.brass_tunnel": "Brass Tunnel",
+	"item.create.brass_hand": "Brass Hand",
+	"item.create.mechanical_arm": "Enchanted Arm",
+	"block.create.mechanical_arm": "Mechanical Arm",
+	"block.create.brass_ladder": "Brass Ladder"
 }

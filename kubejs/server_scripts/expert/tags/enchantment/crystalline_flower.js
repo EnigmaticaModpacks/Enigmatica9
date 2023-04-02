@@ -3,5 +3,5 @@ ServerEvents.tags('enchantment', (event) => {
         return;
     }
 
-    event.get('the_bumblezone:crystalline_flower/disallowed_enchantments').add(['minecraft:respiration']);
+    // event.get('the_bumblezone:crystalline_flower/disallowed_enchantments').add(['minecraft:respiration']);
 });

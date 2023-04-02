@@ -30,6 +30,15 @@ ItemEvents.tooltip((event) => {
             text: [Text.of('Recipe disabled for Enigmatica 9').gold()]
         },
         {
+            items: [
+                'create:stockpile_switch',
+                'minecraft:comparator',
+                'create:content_observer',
+                'ars_nouveau:item_detector'
+            ],
+            text: [Text.of('Redstone Device: Inventory Monitor').darkRed()]
+        },
+        {
             items: ['quark:ender_watcher'],
             text: [Text.of('Redstone Device: Detects Players Looking').darkRed()]
         },
@@ -60,6 +69,10 @@ ItemEvents.tooltip((event) => {
         {
             items: ['quark:gold_button'],
             text: [Text.of('Redstone Device: Short Pulse').darkRed()]
+        },
+        {
+            items: [/^.*:(?!gold|iron).*_button$/],
+            text: [Text.of('Redstone Device: Medium Pulse').darkRed()]
         },
         {
             items: [
@@ -348,7 +361,8 @@ ItemEvents.tooltip((event) => {
                 'mekanism:formulaic_assemblicator',
                 'create:mechanical_crafter',
                 'naturesaura:auto_crafter',
-                'thermal:machine_crafter'
+                'thermal:machine_crafter',
+                'immersiveengineering:assembler'
             ],
             text: [Text.of(`Auto-crafter`).green()]
         },
@@ -450,14 +464,15 @@ ItemEvents.tooltip((event) => {
                 'pneumaticcraft:gas_lift'
             ],
             text: [Text.of(`Fluid Pump`).gold()]
-        }
-
-        /* 
+        },
         {
-            items: ['clockout:clockout_block'],
-            text: [Text.of(`Outputs redstone when the player is online.`).aqua()]
+            items: ['online_detector:online_detector', 'online_detector:advanced_online_detector'],
+            text: [Text.of(`Redstone Device: Detects when the player is online.`).darkRed()]
+        },
+        {
+            items: ['immersiveengineering:logic_unit', 'redstonepen:control_box', 'pneumaticcraft:redstone_module'],
+            text: [Text.of(`Redstone Device: Programmable Redstone Logic.`).darkRed()]
         }
-        */
     ];
 
     recipes.forEach((recipe) => {

@@ -50,6 +50,15 @@ ServerEvents.recipes((event) => {
                 B: 'ars_nouveau:air_essence'
             },
             id: `${id_prefix}dragon_breath`
+        },
+        {
+            output: '4x minecraft:fire_charge',
+            pattern: [' B ', 'BAB', ' B '],
+            key: {
+                A: 'ars_nouveau:fire_essence',
+                B: 'ae2:tiny_tnt'
+            },
+            id: `${id_prefix}fire_charge`
         }
     ];
 

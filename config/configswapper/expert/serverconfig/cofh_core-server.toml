@@ -1,20 +1,3 @@
-
-[Gameplay]
-
-	[Gameplay.Fishing]
-		#If TRUE, Fishing will cause exhaustion.
-		"Fishing Exhaustion" = false
-		#This option sets the amount of exhaustion caused by fishing, if enabled.
-		#Range: 0.0 ~ 10.0
-		"Fishing Exhaustion Amount" = 0.125
-
-	[Gameplay.World]
-		#If TRUE, Sapling growth will be slowed by a configurable factor.
-		"Sapling Growth Reduction" = false
-		#This option sets the growth factor for saplings - they will only grow 1 in N times.
-		#Range: > 1
-		"Sapling Growth Reduction Factor" = 4
-
 [Commands]
 	#The required permission level for the '/cofh crafting' command.
 	#Range: 0 ~ 4

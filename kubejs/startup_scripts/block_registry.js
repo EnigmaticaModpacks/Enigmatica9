@@ -45,6 +45,11 @@ StartupEvents.registry('block', (event) => {
             name: 'heartwood_stage_4_inactive',
             material: 'wood',
             hardness: 100.0
+        },
+        {
+            name: 'gloaming_catalyst',
+            material: 'rock',
+            hardness: 2.0
         }
     ];
 

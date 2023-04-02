@@ -27,25 +27,33 @@ JEIEvents.information((event) => {
             text: ['Obtained by Right-Clicking a Glass Bottle in the air between Y Levels 192 and 196.']
         },
         {
-            items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:overworld' })],
+            items: ['naturesaura:aura_bottle'],
             text: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the Overworld, Twilight Forest, or the Everdawn. This action removes Aura from the area.',
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the appropriate dimension. This action removes Aura from the area.',
+                ' ',
+                `Bottled Sunlight: The Overworld, Twilight Forest, or the Everdawn`,
+                `Bottled Ghosts: Nether or Everbright`,
+                `Bottled Darkness: The End or The Bumblezone`,
                 ' ',
                 `Can be automated using a Dispenser.`
             ]
         },
         {
-            items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:end' })],
+            items: ['naturesaura:bottle_two_the_rebottling'],
             text: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the End or The Bumblezone. This action removes Aura from the area.',
+                'Right-Click in the air in the appropriate dimension to obtained bottled Aura types. This action removes Aura from the area.',
+                ' ',
+                `Bottled Sunlight: The Overworld, Twilight Forest, or the Everdawn`,
+                `Bottled Ghosts: Nether or Everbright`,
+                `Bottled Darkness: The End or The Bumblezone`,
                 ' ',
                 `Can be automated using a Dispenser.`
             ]
         },
         {
-            items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:nether' })],
+            items: ['naturesaura:vacuum_bottle'],
             text: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the Nether or the Everbright. This action removes Aura from the area.',
+                'Obtained by Right-Clicking a Bottle and Cork in the air in an area devoid of Aura.',
                 ' ',
                 `Can be automated using a Dispenser.`
             ]
@@ -227,11 +235,129 @@ JEIEvents.information((event) => {
         {
             items: ['emendatusenigmatica:source_gem'],
             text: ['Obtained by placing Lapis or Amethyst in an Imbuement Chamber.']
+        },
+            items: ['blue_skies:moonstone_crystal'],
+            text: [
+                `Will grow on Blocks of Moonstone if placed in water.`,
+                ` `,
+                `May be boosted with Crystal Growth Accelerators.`
+            ]
+        },
+        {
+            items: ['blue_skies:sunstone_crystal'],
+            text: [
+                `Will grow on Blocks of Sunstone if placed in water.`,
+                ` `,
+                `May be boosted with Crystal Growth Accelerators.`
+            ]
+        },
+        {
+            items: ['blue_skies:sunstone_block', 'blue_skies:moonstone_block'],
+            text: [
+                `Place in Water to begin growing crystals on the sides. `,
+                ` `,
+                `May be boosted with Crystal Growth Accelerators.`
+            ]
+        },
+        {
+            items: ['ae2:name_press'],
+            text: [
+                `Used to automatically rename items in an Inscriber.`,
+                ` `,
+                `To obtain, Right-Click a Quartz Knife in the air then insert a valid ingot and provide the desired name.`
+            ]
+        },
+        {
+            items: [
+                'immersiveengineering:alloy_smelter',
+                'immersiveengineering:arc_furnace',
+                'immersiveengineering:assembler',
+                'immersiveengineering:auto_workbench',
+                'immersiveengineering:blast_furnace',
+                'immersiveengineering:bottling_machine',
+                'immersiveengineering:coke_oven',
+                'immersiveengineering:crusher',
+                'immersiveengineering:diesel_generator',
+                'immersiveengineering:excavator',
+                'immersiveengineering:fermenter',
+                'immersiveengineering:advanced_blast_furnace',
+                'immersiveengineering:lightning_rod',
+                'immersiveengineering:metal_press',
+                'immersiveengineering:mixer',
+                'immersiveengineering:refinery',
+                'immersiveengineering:sawmill',
+                'immersiveengineering:silo',
+                'immersiveengineering:squeezer',
+                'immersiveengineering:tank'
+            ],
+            text: [`This is a multi-block structure. Refer to the Engineer's Manual for instructions on building it.`]
+        },
+        {
+            items: ['immersiveengineering:excavator'],
+            text: [
+                `Digs up materials from deposits deep in the ground. Refer to the Engineer's Manual for a full listing of deposits and how to locate them.`
+            ]
+        },
+        {
+            items: ['immersiveengineering:diesel_generator'],
+            text: [`Generates FE by burning liquid fuels. Accepts the same fuels as the Thermal Compression Dynamo.`]
+        },
+        {
+            items: ['immersiveengineering:lightning_rod'],
+            text: [
+                `Generates FE randomly during rainy or stormy weather. A fake lightning bolt will strike the Lightning Rod to indicate that this has happened. The chances of generating FE may be increased by building a larger Lightning Rod on this base.`
+            ]
+        },
+        {
+            items: ['starbunclemania:source_fluid_bucket'],
+            text: [`Use a Source Condenser to convert Source to this liquid form.`]
+        },
+        {
+            items: ['starbunclemania:source_condenser'],
+            text: [`Converts Source from nearby Source Jars into Liquefied Source, placing it in any tank below it.`]
+        },
+        {
+            items: ['pneumaticcraft:jet_boots_upgrade_1'],
+            text: [`● Hover Mode (Loses Altitude)`, `● Smart Hover`, `● Slowest Tier`]
+        },
+        {
+            items: ['pneumaticcraft:jet_boots_upgrade_2'],
+            text: [`● Hover Mode (Loses Altitude)`, `● Smart Hover`, `● Faster than Previous Tier`]
+        },
+        {
+            items: ['pneumaticcraft:jet_boots_upgrade_3'],
+            text: [
+                `● Builder Mode (Loses Altitude)`,
+                `● Hover Mode (Loses Altitude)`,
+                `● Smart Hover`,
+                `● Faster than Previous Tier`
+            ]
+        },
+        {
+            items: ['pneumaticcraft:jet_boots_upgrade_4'],
+            text: [
+                `● Builder Mode (Loses Altitude)`,
+                `● Hover Mode (Loses Altitude)`,
+                `● Smart Hover`,
+                `● Flight Stabilizers`,
+                `● Faster than Previous Tier`
+            ]
+        },
+        {
+            items: ['pneumaticcraft:jet_boots_upgrade_5'],
+            text: [
+                `● Builder Mode (Keeps Altitude)`,
+                `● Hover Mode (Keeps Altitude)`,
+                `● Smart Hover`,
+                `● Flight Stabilizers`,
+                `● Fastest Tier`
+            ]
         }
     ];
 
     descriptions.forEach((description) => {
         description.items.forEach((item) => {
+            // console.log(`Descriptions: ${item}`);
             event.addItem(item, description.text);
         });
     });
@@ -252,6 +378,7 @@ JEIEvents.information((event) => {
 
     jei.base.items.disabled.forEach((item) => {
         if (item !== air) {
+            // console.log(`Disabled: ${item}`);
             event.addItem(item, disabled_item_message);
         }
     });

@@ -12,7 +12,12 @@
 	dispenser_minecart = true
 	crystal_display = true
 	relayer = true
-	pulley_block = true
+
+	[redstone.pulley_block]
+		enabled = true
+		#Chance for a new mineshaft elevator piece to spawn
+		#Range: 0.0 ~ 1.0
+		mineshaft_elevator = 0.02
 
 	[redstone.speaker_block]
 		enabled = true
@@ -308,7 +313,7 @@
 
 	[tweaks.shulker_helmet]
 		#Allows wearing shulker shells
-		enabled = true
+		enabled = false
 
 	[tweaks.traders_open_doors]
 		#Allows traders to open doors (because they couldnt aparently)
@@ -318,7 +323,7 @@
 		#Allows dispensers to use axes on blocks to strip logs and scrape off copper oxidation and wax
 		axe_strip = true
 		#Enables shooting ender pearls with dispensers
-		shoot_ender_pearls = true
+		shoot_ender_pearls = false
 
 	[tweaks.cake_tweaks]
 		#Allows you to place a cake on top of another

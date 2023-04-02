@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
                 'naturesaura:infused_stone',
                 'create:andesite_casing'
             ],
-            time: 5 * time_multiplier,
+            time: 5,
             sapling: 'ars_nouveau:purple_archwood_sapling',
             id: `${id_prefix}offering_table`
         },
@@ -31,7 +31,7 @@ ServerEvents.recipes((event) => {
                 'minecraft:water_bucket',
                 'minecraft:water_bucket'
             ],
-            time: 5 * time_multiplier,
+            time: 5,
             sapling: 'quark:blue_blossom_sapling',
             id: `${id_prefix}blue_archwood_sapling`
         },
@@ -43,7 +43,7 @@ ServerEvents.recipes((event) => {
                 'twilightforest:raven_feather',
                 'twilightforest:raven_feather'
             ],
-            time: 5 * time_multiplier,
+            time: 5,
             sapling: 'quark:lavender_blossom_sapling',
             id: `${id_prefix}purple_archwood_sapling`
         },
@@ -55,7 +55,7 @@ ServerEvents.recipes((event) => {
                 'twilightforest:cicada',
                 'twilightforest:cicada'
             ],
-            time: 5 * time_multiplier,
+            time: 5,
             sapling: 'quark:yellow_blossom_sapling',
             id: `${id_prefix}green_archwood_sapling`
         },
@@ -67,7 +67,7 @@ ServerEvents.recipes((event) => {
                 'minecraft:lava_bucket',
                 'minecraft:lava_bucket'
             ],
-            time: 5 * time_multiplier,
+            time: 5,
             sapling: 'quark:red_blossom_sapling',
             id: `${id_prefix}red_archwood_sapling`
         },
@@ -79,7 +79,7 @@ ServerEvents.recipes((event) => {
                 'twilightforest:firefly',
                 'twilightforest:firefly'
             ],
-            time: 5 * time_multiplier,
+            time: 5,
             sapling: 'quark:orange_blossom_sapling',
             id: `${id_prefix}yellow_archwood_sapling`
         },
@@ -93,7 +93,7 @@ ServerEvents.recipes((event) => {
                 'naturesaura:gold_leaf',
                 'naturesaura:gold_leaf'
             ],
-            time: 5 * time_multiplier,
+            time: 5,
             sapling: 'quark:red_blossom_sapling',
             id: `naturesaura:tree_ritual/ancient_sapling`
         },
@@ -107,7 +107,7 @@ ServerEvents.recipes((event) => {
                 'naturesaura:gold_leaf',
                 'naturesaura:gold_leaf'
             ],
-            time: 5 * time_multiplier,
+            time: 5,
             sapling: 'quark:yellow_blossom_sapling',
             id: `${id_prefix}ancient_sapling`
         },
@@ -123,10 +123,61 @@ ServerEvents.recipes((event) => {
                 'naturesaura:gold_leaf',
                 'minecraft:flint'
             ],
-            time: 5 * time_multiplier,
+            time: 5,
             sapling: 'quark:red_blossom_sapling',
             id: 'naturesaura:tree_ritual/furnace_heater'
+        },
+        {
+            output: 'naturesaura:break_prevention',
+            ingredients: [
+                'ars_nouveau:mendosteen_pod',
+                '#forge:ingots/steeleaf',
+                '#forge:ingots/steeleaf',
+                '#forge:ingots/steeleaf'
+            ],
+            time: 5,
+            sapling: 'hexerei:mahogany_sapling',
+            id: 'naturesaura:tree_ritual/break_prevention'
+        },
+        {
+            output: 'occultism:soul_gem',
+            ingredients: ['#forge:gems/diamond', '#forge:dusts/silver', 'ae2:sky_dust', 'ae2:sky_dust'],
+            time: 5,
+            sapling: 'quark:lavender_blossom_sapling',
+            id: `${id_prefix}soul_gem`
+        },
+        {
+            output: 'naturesaura:eye',
+            ingredients: [
+                'hexerei:mindful_trance_blend',
+                '#forge:ingots/silver',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf'
+            ],
+            time: 25,
+            sapling: 'hexerei:mahogany_sapling',
+            id: 'naturesaura:tree_ritual/eye'
+        },
+        {
+            output: 'naturesaura:eye_improved',
+            ingredients: ['naturesaura:eye', 'naturesaura:sky_ingot', 'naturesaura:gold_leaf', 'naturesaura:gold_leaf'],
+            time: 25,
+            sapling: 'hexerei:mahogany_sapling',
+            id: 'naturesaura:tree_ritual/eye_improved'
+        },
+        {
+            output: 'pneumaticcraft:drill_bit_compressed_iron',
+            ingredients: [
+                '#forge:ingots/infused_iron',
+                'ars_nouveau:abjuration_essence',
+                'ars_nouveau:earth_essence',
+                'ars_nouveau:earth_essence'
+            ],
+            time: 5,
+            sapling: 'quark:yellow_blossom_sapling',
+            id: `${id_prefix}drill_bit_compressed_iron`
         }
+
         /*
             ,
             {
@@ -148,15 +199,10 @@ ServerEvents.recipes((event) => {
     ];
     recipes.forEach((recipe) => {
         recipe.type = 'naturesaura:tree_ritual';
-
-        // ingredients: [{ item: 'minecraft:oak_sapling' }, { tag: '#minecraft:small_flowers' }],
         recipe.ingredients = recipe.ingredients.map((input) => Ingredient.of(input).toJson());
-
-        // sapling: { item: 'minecraft:oak_sapling' },
         recipe.sapling = Item.of(recipe.sapling).toJson();
-
-        // output: { item: 'naturesaura:ancient_sapling', count: 2 },
         recipe.output = Item.of(recipe.output).toJson();
+        recipe.time = recipe.time * time_multiplier;
 
         event.custom(recipe).id(recipe.id);
     });
