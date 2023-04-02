@@ -1,4 +1,0 @@
-{
-    "type": "immersiveengineering:hemp_seed_drops",
-    "conditions": [{ "condition": "forge:false" }]
-}
