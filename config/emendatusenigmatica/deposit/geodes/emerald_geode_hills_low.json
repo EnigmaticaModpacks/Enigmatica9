@@ -38,6 +38,7 @@
         ],
         "clusters": [],
         "chance": 20,
+        "rarity": "rare",
         "crackChance": 0.25,
         "minYLevel": -50,
         "maxYLevel": 15,

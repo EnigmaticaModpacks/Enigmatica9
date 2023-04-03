@@ -34,7 +34,7 @@
             "byg_white_sandstone",
             "byg_windswept_sandstone"
         ],
-        "chance": 40,
+        "chance": 15,
         "size": 15,
         "minYLevel": 40,
         "maxYLevel": 320,

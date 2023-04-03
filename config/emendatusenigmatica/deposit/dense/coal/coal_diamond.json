@@ -9,8 +9,9 @@
             {"material": "coal", "weight": 50},
             {"block": "minecraft:deepslate", "weight": 25}
         ],
-        "chance": 88,
+        "chance": 5,
         "size": 34,
+        "rarity": "rare",
         "minYLevel": -60,
         "maxYLevel": -10,
         "generateSamples": false,

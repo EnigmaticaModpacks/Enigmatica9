@@ -24,10 +24,10 @@
       "quark_jasper",
       "quark_shale"
     ],
-    "chance": 48,
+    "chance": 22,
     "size": 10,
-    "minYLevel": 35,
-    "maxYLevel": 320,
+    "minYLevel": 30,
+    "maxYLevel": 220,
     "placement": "uniform",
     "rarity": "common"
   }

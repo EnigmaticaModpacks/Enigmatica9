@@ -24,7 +24,7 @@
       "quark_jasper",
       "quark_shale"
     ],
-    "chance": 25,
+    "chance": 8,
     "size": 10,
     "minYLevel": 10,
     "maxYLevel": 50,

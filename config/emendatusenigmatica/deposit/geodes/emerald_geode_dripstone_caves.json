@@ -27,7 +27,8 @@
             {"block": "emendatusenigmatica:diamond_dripstone_ore", "weight": 30}
         ],
         "clusters": [],
-        "chance": 4,
+        "chance": 20,
+        "rarity": "rare",
         "crackChance": 0.20,
         "minYLevel": -60,
         "maxYLevel": 70,

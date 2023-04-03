@@ -22,14 +22,12 @@
             "emendatusenigmatica:medium_fluorite_bud"
         ],
         "fillBlocks": [{"block": "minecraft:air", "weight": 10}],
-        "chance": 2,
+        "chance": 30,
+        "rarity": "rare",
         "crackChance": 0.15,
         "minYLevel": -15,
         "maxYLevel": 40,
-        "generateSamples": true,
-        "sampleBlocks": [
-            { "material": "fluorite", "weight": 10, "strata": "create_asurine"}
-        ],
+        "generateSamples": false,
         "fillerTypes": [
             "minecraft_deepslate",
             "minecraft_tuff",

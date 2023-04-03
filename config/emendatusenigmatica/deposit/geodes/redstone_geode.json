@@ -32,7 +32,8 @@
             {"block": "emendatusenigmatica:copper_crimsite_ore", "weight": 15}
         ],
         "clusters": [],
-        "chance": 10,
+        "chance": 30,
+        "rarity": "rare",
         "crackChance": 0.3,
         "minYLevel": -40,
         "maxYLevel": 40,

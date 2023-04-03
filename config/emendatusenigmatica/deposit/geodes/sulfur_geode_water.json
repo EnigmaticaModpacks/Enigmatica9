@@ -23,7 +23,8 @@
             "emendatusenigmatica:medium_sulfur_bud"
         ],
         "fillBlocks": [{"block": "minecraft:water", "weight": 10}],
-        "chance": 1,
+        "chance": 10,
+        "rarity": "rare",
         "crackChance": 0,
         "minYLevel": -50,
         "maxYLevel": 30,

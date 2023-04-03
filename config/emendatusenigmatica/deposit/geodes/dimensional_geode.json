@@ -22,7 +22,8 @@
             "emendatusenigmatica:medium_dimensional_bud"
         ],
         "fillBlocks": [{"block": "minecraft:air", "weight": 10}],
-        "chance": 2,
+        "chance": 20,
+        "rarity": "rare",
         "crackChance": 0.25,
         "minYLevel": -60,
         "maxYLevel": 0,
