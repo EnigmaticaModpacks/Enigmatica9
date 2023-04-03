@@ -1391,15 +1391,12 @@
 					}
 				}
 				{
-					id: "17E85BEC398930AD"
+					id: "4FAD2C6B55D34714"
 					type: "item"
-					title: "Sawblade"
 					item: {
-						id: "immersiveengineering:sawblade"
+						id: "thermal:fluid_reservoir"
 						Count: 1b
-						tag: {
-							Damage: 0
-						}
+						tag: { }
 					}
 				}
 			]
@@ -1498,10 +1495,13 @@
 					}
 				}
 				{
-					id: "7683853C5B00EE25"
+					id: "151E1697923A9F23"
 					type: "item"
-					title: "Iron Drill Head"
-					item: "immersiveengineering:drillhead_iron"
+					item: {
+						id: "thermal:fluid_reservoir"
+						Count: 1b
+						tag: { }
+					}
 				}
 			]
 		}

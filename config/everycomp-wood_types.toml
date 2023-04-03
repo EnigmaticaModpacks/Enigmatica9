@@ -106,6 +106,7 @@
 		[types.leaves_type.hexerei]
 			mahogany = true
 			willow = true
+			witch_hazel = true
 
 		[types.leaves_type.quark]
 			blue_blossom = true
@@ -176,6 +177,7 @@
 		[types.wood_type.hexerei]
 			mahogany = true
 			willow = true
+			witch_hazel = true
 
 		[types.wood_type.twilightforest]
 			twilight_oak = true
@@ -343,6 +345,8 @@
 			polished_mahogany = true
 			willow = true
 			polished_willow = true
+			witch_hazel = true
+			polished_witch_hazel = true
 
 		[types.cut_block_type.blue_skies]
 			nature_stone = true

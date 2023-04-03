@@ -1,5 +1,5 @@
 
-["Fancy font in book"]
-	#Enabling this allows fancy cursive font for the book (english only not fully implemented)
-	fancy_font_in_book = false
+["List of Extra Fonts"]
+	#list of fonts that can be used, mainly for the book of shadows
+	font_list = ["minecraft:default", "hexerei:fancy", "hexerei:bloody", "hexerei:earth", "hexerei:seattle", "hexerei:medieval", "hexerei:augusta"]
 

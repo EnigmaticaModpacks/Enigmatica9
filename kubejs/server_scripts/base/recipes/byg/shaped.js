@@ -9,6 +9,15 @@ ServerEvents.recipes((event) => {
                 A: 'byg:therium_crystal_shard'
             },
             id: `${id_prefix}therium_crystal_block`
+        },
+        {
+            output: '8x byg:cryptic_magma_block',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'byg:cryptic_stone',
+                B: 'ars_nouveau:fire_essence'
+            },
+            id: `${id_prefix}cryptic_magma_block`
         }
     ];
 

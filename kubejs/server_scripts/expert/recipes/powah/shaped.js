@@ -5,17 +5,6 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/powah/shaped/';
     const recipes = [
         {
-            output: 'powah:battery_basic',
-            pattern: ['ABA', 'CDC', 'ACA'],
-            key: {
-                A: 'powah:dielectric_paste',
-                B: '#forge:gems/moonstone',
-                C: 'powah:capacitor_basic_large',
-                D: 'ae2:fluix_block'
-            },
-            id: `powah:crafting/battery_basic`
-        },
-        {
             output: 'powah:energy_cell_basic',
             pattern: ['ABA', 'DCD', 'ABA'],
             key: {
@@ -61,7 +50,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'pneumaticcraft:pressure_chamber_glass',
                 B: 'pneumaticcraft:pressure_chamber_wall',
-                C: 'ars_nouveau:fire_essence'
+                C: '#forge:essences/fire'
             },
             id: `powah:crafting/energizing_orb`
         },

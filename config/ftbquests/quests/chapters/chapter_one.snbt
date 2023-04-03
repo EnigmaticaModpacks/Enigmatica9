@@ -198,8 +198,8 @@
 		}
 		{
 			title: "Elemental Essences"
-			x: -5.0d
-			y: -3.0d
+			x: -5.5d
+			y: -2.5d
 			description: [
 				"Air: Obtain a feather from a Raven found throughout the Twilight Forest."
 				""
@@ -243,6 +243,8 @@
 				"To begin extracting more useful amounts of magical energies, we’ll need to begin pursuing alchemy and brewing. By distilling down various natural ingredients, we can tap into their latent energies more easily. "
 				""
 				"Potions of Ancient Knowledge should be well within reach and may be brewed in the Mixing Cauldron. Once brewed, right click the Cauldron with some Glass Bottles to extract the potions. "
+				""
+				"From there, a Wixie will make a wonderful friend for automatically crafting more potions and providing them to Potion Jars for use by the Alchemical Sourcelink."
 			]
 			dependencies: [
 				"6DBB9A9F698FA7B9"
@@ -265,6 +267,11 @@
 							Potion: "apotheosis:knowledge"
 						}
 					}
+				}
+				{
+					id: "773BE5655881E258"
+					type: "item"
+					item: "ars_nouveau:wixie_charm"
 				}
 			]
 		}
@@ -580,8 +587,6 @@
 				"A Blaze will need to be summoned and bound into appropriate materials to create this device. Luckily, with control of the elements, summoning forth a single Blaze should prove to be a trivial task."
 				""
 				"Each type of elemental may be summoned using Gythia’s Perpetual Geas. Look up Summon Bound Elemental in JEI to see their recipe. These elementals will be summoned with their AI and loot disabled."
-				""
-				"Tip: Look up the recipe for Block of Fiery Metal."
 			]
 			dependencies: ["126F4A37A0A21921"]
 			id: "5038FC4A51F51F31"
@@ -678,6 +683,29 @@
 				type: "item"
 				item: "createaddition:rolling_mill"
 			}]
+		}
+		{
+			x: -5.0d
+			y: -3.5d
+			description: [
+				"While Charms of Life have been left scattered around these lands, there is one creature know for hoarding them: The Lich. "
+				""
+				"Defeat the lich to obtain the Charm. Maybe snatch their spell book at the same time; they won’t be needing it anymore. "
+			]
+			dependencies: ["4830632A0E6E9651"]
+			id: "370C40BCC3A6A055"
+			tasks: [
+				{
+					id: "33DC0C1E9B381D81"
+					type: "item"
+					item: "ars_elemental:anima_essence"
+				}
+				{
+					id: "3452A9AC39B219A4"
+					type: "item"
+					item: "ars_nouveau:novice_spell_book"
+				}
+			]
 		}
 	]
 	quest_links: [ ]

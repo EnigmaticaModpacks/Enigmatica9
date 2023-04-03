@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
             pattern: [' A ', 'ABA', ' A '],
             key: {
                 A: 'pneumaticcraft:compressed_brick_tile',
-                B: 'ars_nouveau:air_essence'
+                B: '#forge:essences/air'
             },
             id: `pneumaticcraft:pressure_tube`
         },
@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
             pattern: ['AAA', 'ABC', 'ADA'],
             key: {
                 A: 'pneumaticcraft:compressed_brick_tile',
-                B: 'ars_nouveau:air_essence',
+                B: '#forge:essences/air',
                 C: 'pneumaticcraft:pressure_tube',
                 D: 'minecraft:blast_furnace'
             },
@@ -30,7 +30,7 @@ ServerEvents.recipes((event) => {
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'pneumaticcraft:compressed_brick_tile',
-                B: 'ars_nouveau:earth_essence'
+                B: '#forge:essences/earth'
             },
             id: `pneumaticcraft:pressure_chamber_wall`
         },
@@ -94,7 +94,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'A A'],
             key: {
                 A: '#forge:rods/treated_wood',
-                B: 'ars_nouveau:earth_essence'
+                B: '#forge:essences/earth'
             },
             id: `pneumaticcraft:crop_support`
         },
@@ -105,7 +105,7 @@ ServerEvents.recipes((event) => {
                 A: 'pneumaticcraft:compressed_stone',
                 B: 'pneumaticcraft:pressure_tube',
                 C: 'thermal:fluid_cell_frame',
-                D: 'ars_nouveau:air_essence'
+                D: '#forge:essences/air'
             },
             id: `pneumaticcraft:gas_lift`
         },
@@ -115,7 +115,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'pneumaticcraft:thermal_lagging',
                 B: '#forge:ingots/constantan',
-                C: 'ars_nouveau:fire_essence'
+                C: '#forge:essences/fire'
             },
             id: `pneumaticcraft:heat_pipe`
         },
@@ -125,7 +125,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'pneumaticcraft:thermal_lagging',
                 B: '#forge:ingots/constantan',
-                C: 'ars_nouveau:fire_essence'
+                C: '#forge:essences/fire'
             },
             id: `pneumaticcraft:heat_pipe`
         },
@@ -136,7 +136,7 @@ ServerEvents.recipes((event) => {
                 A: 'pneumaticcraft:pressure_tube',
                 B: 'minecraft:stone_pressure_plate',
                 C: 'pneumaticcraft:compressed_stone_slab',
-                D: 'ars_nouveau:air_essence'
+                D: '#forge:essences/air'
             },
             id: `pneumaticcraft:charging_station`
         },
@@ -145,7 +145,7 @@ ServerEvents.recipes((event) => {
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'pneumaticcraft:pressure_tube',
-                B: 'ars_nouveau:air_essence'
+                B: '#forge:essences/air'
             },
             id: `pneumaticcraft:charging_module`
         },
@@ -164,7 +164,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'pneumaticcraft:compressed_stone',
                 B: 'ae2:quartz_glass',
-                C: 'ars_nouveau:fire_essence',
+                C: '#forge:essences/fire',
                 D: 'thermal:fluid_cell_frame'
             },
             id: `pneumaticcraft:kerosene_lamp`
@@ -196,7 +196,7 @@ ServerEvents.recipes((event) => {
                 B: 'create:andesite_casing',
                 C: 'naturesaura:gold_leaf',
                 D: 'pneumaticcraft:pressure_tube',
-                E: 'ars_nouveau:air_essence'
+                E: '#forge:essences/air'
             },
             id: `pneumaticcraft:jackhammer`
         },
@@ -236,6 +236,97 @@ ServerEvents.recipes((event) => {
                 E: 'ae2:sky_stone_slab'
             },
             id: `pneumaticcraft:vacuum_pump`
+        },
+        {
+            output: '2x pneumaticcraft:pneumatic_cylinder',
+            pattern: ['ABA', 'ACA'],
+            key: {
+                A: '#forge:plastic',
+                B: '#forge:rods/aluminum',
+                C: 'pneumaticcraft:cannon_barrel'
+            },
+            id: `pneumaticcraft:pneumatic_cylinder`
+        },
+        {
+            output: '4x pneumaticcraft:printed_circuit_board',
+            pattern: [' BA', 'BCB', 'AB '],
+            key: {
+                A: 'immersiveengineering:component_electronic',
+                B: 'quark:rainbow_rune',
+                C: 'immersiveengineering:circuit_board'
+            },
+            id: `pneumaticcraft:printed_circuit_board`
+        },
+        {
+            output: 'pneumaticcraft:assembly_platform',
+            pattern: ['ABA', 'CDC'],
+            key: {
+                A: 'pneumaticcraft:pneumatic_cylinder',
+                B: '#forge:ingots/energized_steel',
+                C: '#forge:ingots/compressed_iron',
+                D: 'pneumaticcraft:printed_circuit_board'
+            },
+            id: `pneumaticcraft:assembly_platform`
+        },
+        {
+            output: 'pneumaticcraft:assembly_controller',
+            pattern: [' E ', 'AB ', 'CDC'],
+            key: {
+                A: 'pneumaticcraft:pressure_tube',
+                B: '#forge:ingots/energized_steel',
+                C: '#forge:ingots/compressed_iron',
+                D: 'pneumaticcraft:printed_circuit_board',
+                E: 'supplementaries:crystal_display'
+            },
+            id: `pneumaticcraft:assembly_controller`
+        },
+        {
+            output: 'pneumaticcraft:assembly_laser',
+            pattern: ['EAA', ' BA', 'CDC'],
+            key: {
+                A: 'pneumaticcraft:pneumatic_cylinder',
+                B: '#forge:ingots/energized_steel',
+                C: '#forge:ingots/compressed_iron',
+                D: 'pneumaticcraft:printed_circuit_board',
+                E: '#forge:gems/moonstone'
+            },
+            id: `pneumaticcraft:assembly_laser`
+        },
+        {
+            output: 'pneumaticcraft:assembly_drill',
+            pattern: ['EAA', ' BA', 'CDC'],
+            key: {
+                A: 'pneumaticcraft:pneumatic_cylinder',
+                B: '#forge:ingots/energized_steel',
+                C: '#forge:ingots/compressed_iron',
+                D: 'pneumaticcraft:printed_circuit_board',
+                E: 'pneumaticcraft:drill_bit_diamond'
+            },
+            id: `pneumaticcraft:assembly_drill`
+        },
+        {
+            output: 'pneumaticcraft:assembly_io_unit_import',
+            pattern: ['EAA', ' BA', 'CDC'],
+            key: {
+                A: 'pneumaticcraft:pneumatic_cylinder',
+                B: '#forge:ingots/energized_steel',
+                C: '#forge:ingots/compressed_iron',
+                D: 'pneumaticcraft:printed_circuit_board',
+                E: 'create:brass_hand'
+            },
+            id: `pneumaticcraft:assembly_io_unit_import`
+        },
+        {
+            output: 'pneumaticcraft:assembly_io_unit_export',
+            pattern: ['AAE', 'AB ', 'CDC'],
+            key: {
+                A: 'pneumaticcraft:pneumatic_cylinder',
+                B: '#forge:ingots/energized_steel',
+                C: '#forge:ingots/compressed_iron',
+                D: 'pneumaticcraft:printed_circuit_board',
+                E: 'create:brass_hand'
+            },
+            id: `pneumaticcraft:assembly_io_unit_export`
         }
     ];
 

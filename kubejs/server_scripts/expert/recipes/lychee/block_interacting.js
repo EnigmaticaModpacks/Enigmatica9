@@ -76,11 +76,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}imbuement_chamber`
         },
         {
-            item_in: {
-                type: 'forge:nbt',
-                item: 'naturesaura:aura_bottle',
-                nbt: '{stored_type:"naturesaura:overworld"}'
-            },
+            item_in: { item: 'naturesaura:gold_leaf' },
             block_in: 'twilightforest:ironwood_block',
             post: [
                 {
@@ -115,7 +111,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}nature_altar_from_sunlight`
         },
         {
-            item_in: { item: 'ars_nouveau:fire_essence' },
+            item_in: { tag: 'forge:essences/fire' },
             block_in: 'naturesaura:gold_brick',
             post: [
                 {
@@ -150,7 +146,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}conversion_catalyst`
         },
         {
-            item_in: { item: 'ars_nouveau:water_essence' },
+            item_in: { tag: 'forge:essences/water' },
             block_in: 'naturesaura:gold_brick',
             post: [
                 {
