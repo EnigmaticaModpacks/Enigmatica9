@@ -61,11 +61,6 @@ ServerEvents.recipes((event) => {
         },
         {
             filter: { mod: 'powah' },
-            to_replace: 'minecraft:redstone_block',
-            replace_with: 'ae2:fluix_block'
-        },
-        {
-            filter: { mod: 'powah' },
             to_replace: 'powah:dielectric_casing',
             replace_with: 'thermal:energy_cell_frame'
         },
@@ -103,6 +98,11 @@ ServerEvents.recipes((event) => {
             filter: {},
             to_replace: 'create:electron_tube',
             replace_with: 'pneumaticcraft:logistics_core'
+        },
+        {
+            filter: { mod: 'spirit' },
+            to_replace: 'minecraft:netherrack',
+            replace_with: 'naturesaura:ancient_stick'
         }
     ];
 

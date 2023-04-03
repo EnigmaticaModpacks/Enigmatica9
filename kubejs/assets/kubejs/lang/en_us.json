@@ -13,6 +13,7 @@
     "item.kubejs.amethyst_dust": "Amethyst Dust",
 
     "entity.minecraft.villager.byg.forager": "Forager",
+    "tooltip.hexerei.sage_seeds": "May be purchased from the Market block.",
 
     "recipes.lychee.item_inside.sunstone.condition.description": "Converts around Noon. Reverts if left out too long...",
     "recipes.lychee.item_inside.moonstone.condition.description": "Converts around Midnight. Reverts if left out too long...",
@@ -23,6 +24,7 @@
     "ritual.occultism.sacrifice.air_elementals": "Blitz",
     "ritual.occultism.sacrifice.earth_elementals": "Basalz",
     "ritual.occultism.sacrifice.water_elementals": "Blizz",
+    "ritual.occultism.sacrifice.azulfo": "Azulfo",
 
     "advancements.occultism.possess_enderman.title": "Ritual: Possess Enderman",
     "advancements.occultism.possess_endermite.title": "Ritual: Possess Endermite",
@@ -491,5 +493,17 @@
     "ritual.enigmatica.occultism/ritual/blitz_gate_large.interrupted": "Large Air Elemental Gateway Interrupted",
     "ritual.enigmatica.occultism/ritual/blitz_gate_large.conditions": "Not all requirements for this ritual are met.",
 
-    "gateways.spawner_rift": "Spawner Rift"
+    "gateways.spawner_rift": "Spawner Rift",
+
+    "gateways.wither_council_gate": "Wither Council Gate",
+    "ritual.enigmatica.occultism/ritual/wither_council_gate.started": "Started Summoning the Wither Council",
+    "ritual.enigmatica.occultism/ritual/wither_council_gate.finished": "The Wither Council's gateway has opened",
+    "ritual.enigmatica.occultism/ritual/wither_council_gate.interrupted": "The Wither Council's gateway has been interrupted",
+    "ritual.enigmatica.occultism/ritual/wither_council_gate.conditions": "Not all requirements for this ritual are met.",
+
+    "gateways.wilden_grove_gate": "Grove of the Wilden Gate",
+    "ritual.enigmatica.occultism/ritual/wilden_grove_gate.started": "Started Summoning the Grove of the Wilden",
+    "ritual.enigmatica.occultism/ritual/wilden_grove_gate.finished": "The Grove of the Wilden gateway has opened",
+    "ritual.enigmatica.occultism/ritual/wilden_grove_gate.interrupted": "The Grove of the Wilden gateway has been interrupted",
+    "ritual.enigmatica.occultism/ritual/wilden_grove_gate.conditions": "Not all requirements for this ritual are met."
 }

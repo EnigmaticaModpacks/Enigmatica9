@@ -42,7 +42,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: '#forge:storage_blocks/glowstone',
                 B: 'thermal:jar',
-                C: 'ars_nouveau:air_essence'
+                C: '#forge:essences/air'
             },
             id: `${id_prefix}jar_of_light`
         },
@@ -50,9 +50,9 @@ ServerEvents.recipes((event) => {
             output: 'ars_nouveau:void_jar',
             pattern: ['A', 'B', 'C'],
             key: {
-                A: 'ars_nouveau:fire_essence',
+                A: '#forge:essences/fire',
                 B: 'thermal:jar',
-                C: 'ars_nouveau:manipulation_essence'
+                C: '#forge:essences/manipulation'
             },
             id: `${id_prefix}void_jar`
         },
@@ -84,6 +84,17 @@ ServerEvents.recipes((event) => {
                 B: '#forge:gems/source'
             },
             id: `ars_nouveau:ring_of_potential`
+        },
+        {
+            output: 'ars_nouveau:alchemists_crown',
+            pattern: ['ABA', 'BCB', '  D'],
+            key: {
+                A: 'thermal:jar',
+                B: '#forge:wires/electrum',
+                C: 'ars_nouveau:mundane_belt',
+                D: 'createaddition:straw'
+            },
+            id: `${id_prefix}alchemists_crown`
         }
     ];
 

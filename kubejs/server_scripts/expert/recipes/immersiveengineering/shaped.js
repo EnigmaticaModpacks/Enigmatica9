@@ -219,7 +219,7 @@ ServerEvents.recipes((event) => {
             pattern: [' A ', 'ABA', ' AC'],
             key: {
                 A: '#forge:plates/bronze',
-                B: 'ars_nouveau:water_essence',
+                B: '#forge:essences/water',
                 C: 'thermal:cured_rubber'
             },
             id: `immersiveengineering:crafting/toolupgrade_drill_capacity`
@@ -229,7 +229,7 @@ ServerEvents.recipes((event) => {
             pattern: [' A ', 'ABA', ' AC'],
             key: {
                 A: '#forge:plates/tin',
-                B: 'ars_nouveau:air_essence',
+                B: '#forge:essences/air',
                 C: 'pneumaticcraft:pressure_tube'
             },
             id: `immersiveengineering:crafting/toolupgrade_drill_waterproof`
@@ -239,7 +239,7 @@ ServerEvents.recipes((event) => {
             pattern: [' A ', 'ABA', ' AC'],
             key: {
                 A: '#forge:plates/invar',
-                B: 'ars_nouveau:earth_essence',
+                B: '#forge:essences/earth',
                 C: '#forge:rods/iron'
             },
             id: `immersiveengineering:crafting/toolupgrade_drill_damage`
@@ -249,7 +249,7 @@ ServerEvents.recipes((event) => {
             pattern: [' A ', 'ABA', ' AC'],
             key: {
                 A: '#forge:plates/constantan',
-                B: 'ars_nouveau:fire_essence',
+                B: '#forge:essences/fire',
                 C: 'immersiveengineering:redstone_acid_bucket'
             },
             id: `immersiveengineering:crafting/toolupgrade_drill_fortune`
@@ -259,7 +259,7 @@ ServerEvents.recipes((event) => {
             pattern: [' AB', 'ACA', ' A '],
             key: {
                 A: '#forge:ingots/compressed_iron',
-                B: 'ars_nouveau:earth_essence',
+                B: '#forge:essences/earth',
                 C: '#forge:rods/aluminum'
             },
             id: `immersiveengineering:crafting/gunpart_drum`
@@ -269,7 +269,7 @@ ServerEvents.recipes((event) => {
             pattern: ['  B', ' C ', 'A  '],
             key: {
                 A: '#forge:ingots/compressed_iron',
-                B: 'ars_nouveau:air_essence',
+                B: '#forge:essences/air',
                 C: '#forge:rods/aluminum'
             },
             id: `immersiveengineering:crafting/gunpart_barrel`
@@ -279,7 +279,7 @@ ServerEvents.recipes((event) => {
             pattern: ['  B', 'AA ', ' C '],
             key: {
                 A: '#forge:ingots/compressed_iron',
-                B: 'ars_nouveau:fire_essence',
+                B: '#forge:essences/fire',
                 C: '#forge:rods/aluminum'
             },
             id: `immersiveengineering:crafting/gunpart_hammer`
@@ -290,7 +290,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: '#forge:rods/aluminum',
                 B: 'immersiveengineering:gunpart_drum',
-                C: 'ars_nouveau:water_essence'
+                C: '#forge:essences/water'
             },
             id: `immersiveengineering:crafting/speedloader`
         },
@@ -363,7 +363,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'create:fluid_pipe',
                 B: '#forge:plates/obsidian',
-                C: 'ars_nouveau:water_essence'
+                C: '#forge:essences/water'
             },
             id: `immersiveengineering:crafting/toolupgrade_chemthrower_focus`
         },
@@ -397,18 +397,6 @@ ServerEvents.recipes((event) => {
             id: `immersiveengineering:crafting/toolupgrade_revolver_bayonet`
         },
         {
-            output: 'immersiveengineering:cloche',
-            pattern: ['ABA', 'ACA', 'DED'],
-            key: {
-                A: 'quark:framed_glass_pane',
-                B: 'immersiveengineering:light_bulb',
-                C: 'ars_nouveau:earth_essence',
-                D: '#forge:treated_wood',
-                E: '#industrialforegoing:machine_frame/simple'
-            },
-            id: `immersiveengineering:crafting/cloche`
-        },
-        {
             output: '4x immersiveengineering:wirecoil_redstone',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
@@ -426,7 +414,7 @@ ServerEvents.recipes((event) => {
                 B: 'immersiveengineering:component_electronic',
                 C: 'powah:capacitor_spirited',
                 D: '#forge:wooden_grip',
-                E: 'ars_nouveau:manipulation_essence'
+                E: '#forge:essences/manipulation'
             },
             id: `immersiveengineering:crafting/railgun`
         },
@@ -472,7 +460,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: '#forge:plates/constantan',
                 B: '#forge:ingots/compressed_iron',
-                C: 'ars_nouveau:air_essence'
+                C: '#forge:essences/air'
             },
             id: `immersiveengineering:crafting/toolupgrade_railgun_capacitors`
         }

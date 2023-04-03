@@ -102,7 +102,7 @@ ServerEvents.recipes((event) => {
                 A: 'nomadictents:tent_canvas',
                 B: '#forge:ingots/ironwood',
                 C: '#forge:rods/treated_wood',
-                D: 'ars_nouveau:earth_essence'
+                D: '#forge:essences/earth'
             },
             id: 'nomadictents:obsidian_tent_shovel'
         },
@@ -113,7 +113,7 @@ ServerEvents.recipes((event) => {
                 A: 'nomadictents:tent_canvas',
                 B: '#forge:ingots/steeleaf',
                 C: '#forge:rods/aluminum',
-                D: 'ars_nouveau:earth_essence'
+                D: '#forge:essences/earth'
             },
             id: 'nomadictents:diamond_tent_shovel'
         }

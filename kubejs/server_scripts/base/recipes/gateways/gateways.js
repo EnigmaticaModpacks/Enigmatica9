@@ -6,6 +6,7 @@ ServerEvents.highPriorityData((event) => {
         {
             size: 'small',
             color: '#0b9e32',
+            leash_range: 32,
             rewards: [
                 {
                     type: 'stack',
@@ -115,6 +116,217 @@ ServerEvents.highPriorityData((event) => {
                 }
             ],
             id: 'spawner_rift'
+        },
+        {
+            size: 'large',
+            color: '#b30f04',
+            leash_range: 32,
+            rewards: [
+                {
+                    type: 'stack',
+                    stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                },
+                {
+                    type: 'apotheosis:affix',
+                    rarity: 'mythic'
+                },
+                {
+                    type: 'loot_table',
+                    loot_table: 'enigmatica:apotheosis_gem_cache',
+                    rolls: 5,
+                    desc: 'Apotheosis Gems'
+                }
+            ],
+            completion_xp: 5000,
+            spawn_range: 3,
+            waves: [
+                {
+                    entities: [
+                        { entity: 'minecraft:stray' },
+                        { entity: 'minecraft:stray' },
+                        { entity: 'minecraft:stray' },
+                        { entity: 'minecraft:stray' },
+                        { entity: 'minecraft:stray' },
+                        { entity: 'minecraft:stray' },
+                        { entity: 'twilightforest:winter_wolf' },
+                        { entity: 'twilightforest:winter_wolf' },
+                        { entity: 'twilightforest:winter_wolf' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 1500,
+                    setup_time: 50
+                },
+                {
+                    entities: [
+                        { entity: 'twilightforest:wraith' },
+                        { entity: 'twilightforest:wraith' },
+                        { entity: 'twilightforest:wraith' },
+                        { entity: 'twilightforest:wraith' },
+                        { entity: 'twilightforest:wraith' },
+                        { entity: 'twilightforest:wraith' },
+                        { entity: 'twilightforest:death_tome' },
+                        { entity: 'twilightforest:death_tome' },
+                        { entity: 'twilightforest:death_tome' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 750,
+                    setup_time: 50
+                },
+                {
+                    entities: [{ entity: 'occultism:wild_hunt_wither_skeleton' }],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 1500,
+                    setup_time: 50
+                },
+                {
+                    entities: [
+                        { entity: 'minecraft:wither' },
+                        { entity: 'minecraft:wither' },
+                        { entity: 'minecraft:wither' },
+                        { entity: 'minecraft:wither_skeleton' },
+                        { entity: 'minecraft:wither_skeleton' },
+                        { entity: 'minecraft:wither_skeleton' },
+                        { entity: 'minecraft:wither_skeleton' },
+                        { entity: 'minecraft:wither_skeleton' },
+                        { entity: 'minecraft:wither_skeleton' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 1500,
+                    setup_time: 50
+                }
+            ],
+            id: 'wither_council_gate'
+        },
+        {
+            size: 'large',
+            color: '#a005fa',
+            leash_range: 32,
+            rewards: [
+                {
+                    type: 'stack',
+                    stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                },
+                {
+                    type: 'apotheosis:affix',
+                    rarity: 'mythic'
+                },
+                {
+                    type: 'loot_table',
+                    loot_table: 'enigmatica:apotheosis_gem_cache',
+                    rolls: 5,
+                    desc: 'Apotheosis Gems'
+                }
+            ],
+            completion_xp: 5000,
+            spawn_range: 3,
+            waves: [
+                {
+                    entities: [
+                        { entity: 'ars_nouveau:wilden_hunter' },
+                        { entity: 'ars_nouveau:wilden_hunter' },
+                        { entity: 'ars_nouveau:wilden_stalker' },
+                        { entity: 'ars_nouveau:wilden_stalker' },
+                        { entity: 'twilightforest:skeleton_druid' },
+                        { entity: 'twilightforest:skeleton_druid' },
+                        { entity: 'twilightforest:skeleton_druid' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 800,
+                    setup_time: 50
+                },
+                {
+                    entities: [
+                        { entity: 'ars_nouveau:wilden_guardian' },
+                        { entity: 'ars_nouveau:wilden_guardian' },
+                        { entity: 'ars_nouveau:wilden_guardian' },
+                        { entity: 'ars_nouveau:wilden_hunter' },
+                        { entity: 'ars_nouveau:wilden_hunter' },
+                        { entity: 'ars_nouveau:wilden_hunter' },
+                        { entity: 'ars_nouveau:wilden_stalker' },
+                        { entity: 'ars_nouveau:wilden_stalker' },
+                        { entity: 'ars_nouveau:wilden_stalker' },
+                        { entity: 'twilightforest:skeleton_druid' },
+                        { entity: 'twilightforest:skeleton_druid' },
+                        { entity: 'twilightforest:skeleton_druid' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 800,
+                    setup_time: 50
+                },
+                {
+                    entities: [
+                        { entity: 'ars_nouveau:wilden_guardian' },
+                        { entity: 'ars_nouveau:wilden_guardian' },
+                        { entity: 'ars_nouveau:wilden_hunter' },
+                        { entity: 'ars_nouveau:wilden_hunter' },
+                        { entity: 'ars_nouveau:wilden_stalker' },
+                        { entity: 'ars_nouveau:wilden_stalker' },
+                        { entity: 'twilightforest:skeleton_druid' },
+                        { entity: 'twilightforest:skeleton_druid' },
+                        { entity: 'twilightforest:skeleton_druid' },
+                        { entity: 'twilightforest:skeleton_druid' },
+                        { entity: 'twilightforest:skeleton_druid' },
+                        { entity: 'twilightforest:skeleton_druid' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 800,
+                    setup_time: 50
+                },
+                {
+                    entities: [
+                        { entity: 'ars_nouveau:wilden_boss' },
+                        { entity: 'ars_nouveau:wilden_boss' },
+                        { entity: 'ars_nouveau:wilden_boss' },
+                        { entity: 'twilightforest:skeleton_druid' },
+                        { entity: 'twilightforest:skeleton_druid' },
+                        { entity: 'twilightforest:skeleton_druid' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 2400,
+                    setup_time: 50
+                }
+            ],
+            id: 'wilden_grove_gate'
         }
     ];
 

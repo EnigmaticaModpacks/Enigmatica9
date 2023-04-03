@@ -3,6 +3,7 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
+            output: 'hexerei:broom_netherite_tip',
             liquid: { fluid: 'minecraft:lava' },
             inputs: [
                 '#forge:gems/amethyst',
@@ -14,13 +15,13 @@ ServerEvents.recipes((event) => {
                 'minecraft:netherite_scrap',
                 'minecraft:netherite_ingot'
             ],
-            output: 'hexerei:broom_netherite_tip',
             liquidOutput: { fluid: 'minecraft:lava' },
             fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: 'hexerei:broom_netherite_tip_from_mixing_cauldron'
         },
         {
+            output: '12x minecraft:slime_ball',
             liquid: { fluid: 'minecraft:water' },
             inputs: [
                 'thermal:slime_mushroom_spores',
@@ -32,13 +33,13 @@ ServerEvents.recipes((event) => {
                 'thermal:slime_mushroom_spores',
                 'thermal:slime_mushroom_spores'
             ],
-            output: 'minecraft:slime_block',
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 50,
             heatRequirement: 'heated',
             id: `${id_prefix}slime_from_spore`
         },
         {
+            output: '12x minecraft:gunpowder',
             liquid: { fluid: 'minecraft:water' },
             inputs: [
                 'thermal:gunpowder_mushroom_spores',
@@ -50,13 +51,13 @@ ServerEvents.recipes((event) => {
                 'thermal:gunpowder_mushroom_spores',
                 'thermal:gunpowder_mushroom_spores'
             ],
-            output: 'thermal:gunpowder_block',
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 50,
             heatRequirement: 'heated',
             id: `${id_prefix}gunpowder_from_spore`
         },
         {
+            output: '12x minecraft:glowstone_dust',
             liquid: { fluid: 'minecraft:water' },
             inputs: [
                 'thermal:glowstone_mushroom_spores',
@@ -68,13 +69,13 @@ ServerEvents.recipes((event) => {
                 'thermal:glowstone_mushroom_spores',
                 'thermal:glowstone_mushroom_spores'
             ],
-            output: 'minecraft:glowstone',
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 50,
             heatRequirement: 'heated',
             id: `${id_prefix}glowstone_from_spore`
         },
         {
+            output: '12x minecraft:redstone',
             liquid: { fluid: 'minecraft:water' },
             inputs: [
                 'thermal:redstone_mushroom_spores',
@@ -86,13 +87,13 @@ ServerEvents.recipes((event) => {
                 'thermal:redstone_mushroom_spores',
                 'thermal:redstone_mushroom_spores'
             ],
-            output: 'minecraft:redstone_block',
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 50,
             heatRequirement: 'heated',
             id: `${id_prefix}redstone_from_spore`
         },
         {
+            output: '12x minecraft:gunpowder',
             liquid: { fluid: 'minecraft:water' },
             inputs: [
                 '#forge:dusts/sulfur',
@@ -104,7 +105,6 @@ ServerEvents.recipes((event) => {
                 '#forge:dusts/niter',
                 '#forge:dusts/niter'
             ],
-            output: 'thermal:gunpowder_block',
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 50,
             heatRequirement: 'heated',

@@ -18,7 +18,7 @@
         lens_of_ender: false,
         // List of fluids used in the Magmator.
         magmatic_fluids: {
-            'minecraft:lava': 5000
+            'minecraft:lava': 1
         },
         // List of coolant fluids used in the Reactor and the Thermo Generator.
         coolant_fluids: {
@@ -30,7 +30,7 @@
             'minecraft:lava': 1000
         },
         // Energy produced per fuel tick in the Furnator.
-        energy_per_fuel_tick: 15,
+        energy_per_fuel_tick: 1,
         energizing_range: 6,
         /* Multiplier to the required energy applied after an energizing recipe is read.
 		   Use this to adjust the cost of ALL energizing recipes.
@@ -44,28 +44,28 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 200000,
-                niotic: 1000000,
-                spirited: 5000000,
-                nitro: 25000000
+                basic: 40000,
+                niotic: 160000,
+                spirited: 640000,
+                nitro: 2560000
             },
             transfer_rates: {
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 2000,
-                niotic: 10000,
-                spirited: 50000,
-                nitro: 250000
+                basic: 4000,
+                niotic: 16000,
+                spirited: 64000,
+                nitro: 256000
             },
             generation_rates: {
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 1000,
-                niotic: 5000,
-                spirited: 25000,
-                nitro: 125000
+                basic: 2000,
+                niotic: 8000,
+                spirited: 32000,
+                nitro: 128000
             }
         },
         furnators: {
@@ -192,19 +192,19 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 20000,
-                niotic: 80000,
-                spirited: 320000,
-                nitro: 1280000
+                basic: 4000000,
+                niotic: 16000000,
+                spirited: 64000000,
+                nitro: 256000000
             },
             transfer_rates: {
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 500,
-                niotic: 1000,
-                spirited: 8000,
-                nitro: 32000
+                basic: 4000,
+                niotic: 16000,
+                spirited: 64000,
+                nitro: 256000
             }
         },
         cables: {
@@ -212,10 +212,10 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 500,
-                niotic: 1000,
-                spirited: 8000,
-                nitro: 32000
+                basic: 4000,
+                niotic: 16000,
+                spirited: 64000,
+                nitro: 256000
             }
         },
         dischargers: {
@@ -223,19 +223,19 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 20000,
-                niotic: 80000,
-                spirited: 320000,
-                nitro: 1280000
+                basic: 4000000,
+                niotic: 16000000,
+                spirited: 64000000,
+                nitro: 256000000
             },
             transfer_rates: {
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 500,
-                niotic: 1000,
-                spirited: 8000,
-                nitro: 32000
+                basic: 4000,
+                niotic: 16000,
+                spirited: 64000,
+                nitro: 256000
             }
         },
         ender_cells: {
@@ -243,10 +243,10 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 5000,
-                niotic: 10000,
-                spirited: 80000,
-                nitro: 320000
+                basic: 4000,
+                niotic: 16000,
+                spirited: 64000,
+                nitro: 256000
             },
             channels: {
                 starter: 1,
@@ -263,10 +263,10 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 500,
-                niotic: 1000,
-                spirited: 8000,
-                nitro: 32000
+                basic: 1000,
+                niotic: 4000,
+                spirited: 16000,
+                nitro: 64000
             },
             channels: {
                 starter: 1,
@@ -283,19 +283,19 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 20000,
-                niotic: 80000,
-                spirited: 320000,
-                nitro: 1280000
+                basic: 4000000,
+                niotic: 16000000,
+                spirited: 64000000,
+                nitro: 256000000
             },
             transfer_rates: {
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 500,
-                niotic: 1000,
-                spirited: 8000,
-                nitro: 32000
+                basic: 4000,
+                niotic: 16000,
+                spirited: 64000,
+                nitro: 256000
             }
         },
         energizing_rods: {
@@ -312,10 +312,10 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 5000,
-                niotic: 10000,
-                spirited: 80000,
-                nitro: 320000
+                basic: 4000,
+                niotic: 40000,
+                spirited: 160000,
+                nitro: 640000
             }
         },
         hoppers: {
@@ -323,19 +323,19 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 20000,
-                niotic: 80000,
-                spirited: 320000,
-                nitro: 1280000
+                basic: 4000000,
+                niotic: 16000000,
+                spirited: 64000000,
+                nitro: 256000000
             },
             transfer_rates: {
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 500,
-                niotic: 1000,
-                spirited: 8000,
-                nitro: 32000
+                basic: 4000,
+                niotic: 16000,
+                spirited: 64000,
+                nitro: 256000
             },
             charging_rates: {
                 starter: 1,
@@ -352,19 +352,19 @@
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 20000,
-                niotic: 80000,
-                spirited: 320000,
-                nitro: 1280000
+                basic: 4000000,
+                niotic: 16000000,
+                spirited: 64000000,
+                nitro: 256000000
             },
             transfer_rates: {
                 starter: 1,
                 hardened: 1,
                 blazing: 1,
-                basic: 500,
-                niotic: 1000,
-                spirited: 8000,
-                nitro: 32000
+                basic: 4000,
+                niotic: 16000,
+                spirited: 64000,
+                nitro: 256000
             },
             charging_rates: {
                 starter: 1,

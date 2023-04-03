@@ -1,0 +1,29 @@
+ServerEvents.tags('item', (event) => {
+    event
+        .get('forge:essences')
+        .add([
+            'twilightforest:borer_essence',
+            'the_bumblezone:essence_of_the_bees',
+            'occultism:afrit_essence',
+            'ars_nouveau:water_essence',
+            'ars_nouveau:fire_essence',
+            'ars_nouveau:earth_essence',
+            'ars_nouveau:air_essence',
+            'ars_nouveau:manipulation_essence',
+            'ars_nouveau:conjuration_essence',
+            'ars_nouveau:abjuration_essence',
+            'ars_elemental:anima_essence'
+        ]);
+
+    event.get('forge:essences/borer').add(['twilightforest:borer_essence']);
+    event.get('forge:essences/bee').add(['the_bumblezone:essence_of_the_bees']);
+    event.get('forge:essences/afrit').add(['occultism:afrit_essence']);
+    event.get('forge:essences/water').add(['ars_nouveau:water_essence']);
+    event.get('forge:essences/fire').add(['ars_nouveau:fire_essence']);
+    event.get('forge:essences/earth').add(['ars_nouveau:earth_essence']);
+    event.get('forge:essences/air').add(['ars_nouveau:air_essence']);
+    event.get('forge:essences/manipulation').add(['ars_nouveau:manipulation_essence']);
+    event.get('forge:essences/conjuration').add(['ars_nouveau:conjuration_essence']);
+    event.get('forge:essences/abjuration').add(['ars_nouveau:abjuration_essence']);
+    event.get('forge:essences/anima').add(['ars_elemental:anima_essence']);
+});

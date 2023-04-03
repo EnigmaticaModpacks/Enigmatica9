@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
             inputs: [
                 { type: 'pneumaticcraft:stacked_item', item: 'minecraft:glass', count: 32 },
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:dusts/certus_quartz', count: 16 },
-                { item: 'ars_nouveau:fire_essence' }
+                { tag: 'forge:essences/fire' }
             ],
             pressure: 2.0,
             id: `${id_prefix}quartz_fiber`
@@ -24,7 +24,7 @@ ServerEvents.recipes((event) => {
             results: [{ item: 'thermal:beekeeper_fabric', count: 8 }],
             inputs: [
                 { type: 'pneumaticcraft:stacked_item', item: 'minecraft:white_wool', count: 8 },
-                { item: 'ars_nouveau:air_essence' }
+                { tag: 'forge:essences/air' }
             ],
             pressure: 2.0,
             id: `${id_prefix}beekeeper_fabric`
@@ -33,7 +33,7 @@ ServerEvents.recipes((event) => {
             results: [{ item: 'thermal:diving_fabric', count: 8 }],
             inputs: [
                 { type: 'pneumaticcraft:stacked_item', item: 'minecraft:lime_wool', count: 8 },
-                { item: 'ars_nouveau:water_essence' }
+                { tag: 'forge:essences/water' }
             ],
             pressure: 2.0,
             id: `${id_prefix}diving_fabric`
@@ -42,7 +42,7 @@ ServerEvents.recipes((event) => {
             results: [{ item: 'thermal:hazmat_fabric', count: 8 }],
             inputs: [
                 { type: 'pneumaticcraft:stacked_item', item: 'minecraft:red_wool', count: 8 },
-                { item: 'ars_nouveau:earth_essence' }
+                { tag: 'forge:essences/earth' }
             ],
             pressure: 2.0,
             id: `${id_prefix}hazmat_fabric`
@@ -92,7 +92,7 @@ ServerEvents.recipes((event) => {
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:wires/copper', count: 4 },
                 { type: 'pneumaticcraft:stacked_item', item: 'minecraft:glass_bottle', count: 4 },
                 { type: 'pneumaticcraft:stacked_item', item: 'minecraft:string', count: 4 },
-                { item: 'ars_nouveau:fire_essence' }
+                { tag: 'forge:essences/fire' }
             ],
             pressure: -0.5,
             id: `${id_prefix}light_bulb`
@@ -102,7 +102,7 @@ ServerEvents.recipes((event) => {
             inputs: [
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/steeleaf', count: 64 },
                 { type: 'pneumaticcraft:stacked_item', item: 'naturesaura:gold_powder', count: 8 },
-                { item: 'ars_nouveau:manipulation_essence' }
+                { tag: 'forge:essences/manipulation' }
             ],
             pressure: 1.0,
             id: `${id_prefix}empty_casing`
@@ -112,7 +112,7 @@ ServerEvents.recipes((event) => {
             inputs: [
                 { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:empty_casing', count: 64 },
                 { type: 'pneumaticcraft:stacked_item', item: 'pneumaticcraft:compressed_stone', count: 8 },
-                { item: 'ars_nouveau:fire_essence' }
+                { tag: 'forge:essences/fire' }
             ],
             pressure: 1.0,
             id: `${id_prefix}bullet_casull`
@@ -121,8 +121,8 @@ ServerEvents.recipes((event) => {
             results: [{ item: 'immersiveengineering:silver', count: 64 }],
             inputs: [
                 { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
-                { item: 'ars_elemental:anima_essence' },
-                { item: 'ars_nouveau:manipulation_essence' }
+                { tag: 'forge:essences/anima' },
+                { tag: 'forge:essences/manipulation' }
             ],
             pressure: 1.0,
             id: `${id_prefix}bullet_silver`
@@ -131,8 +131,8 @@ ServerEvents.recipes((event) => {
             results: [{ item: 'immersiveengineering:homing', count: 64 }],
             inputs: [
                 { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
-                { item: 'ars_nouveau:air_essence' },
-                { item: 'ars_nouveau:manipulation_essence' }
+                { tag: 'forge:essences/air' },
+                { tag: 'forge:essences/manipulation' }
             ],
             pressure: 1.0,
             id: `${id_prefix}bullet_homing`
@@ -141,8 +141,8 @@ ServerEvents.recipes((event) => {
             results: [{ item: 'immersiveengineering:armor_piercing', count: 64 }],
             inputs: [
                 { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
-                { item: 'ars_nouveau:earth_essence' },
-                { item: 'ars_nouveau:manipulation_essence' }
+                { tag: 'forge:essences/earth' },
+                { tag: 'forge:essences/manipulation' }
             ],
             pressure: 1.0,
             id: `${id_prefix}bullet_armor_piercing`
@@ -151,8 +151,8 @@ ServerEvents.recipes((event) => {
             results: [{ item: 'immersiveengineering:he', count: 64 }],
             inputs: [
                 { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
-                { item: 'ars_nouveau:fire_essence' },
-                { item: 'ars_nouveau:manipulation_essence' }
+                { tag: 'forge:essences/fire' },
+                { tag: 'forge:essences/manipulation' }
             ],
             pressure: 1.0,
             id: `${id_prefix}bullet_he`
@@ -161,8 +161,8 @@ ServerEvents.recipes((event) => {
             results: [{ item: 'immersiveengineering:potion', count: 64 }],
             inputs: [
                 { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
-                { item: 'ars_nouveau:water_essence' },
-                { item: 'ars_nouveau:manipulation_essence' }
+                { tag: 'forge:essences/water' },
+                { tag: 'forge:essences/manipulation' }
             ],
             pressure: 1.0,
             id: `${id_prefix}bullet_potion`
@@ -171,8 +171,8 @@ ServerEvents.recipes((event) => {
             results: [{ item: 'immersiveengineering:wolfpack', count: 64 }],
             inputs: [
                 { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:homing', count: 64 },
-                { item: 'ars_nouveau:conjuration_essence' },
-                { item: 'ars_nouveau:manipulation_essence' }
+                { tag: 'forge:essences/conjuration' },
+                { tag: 'forge:essences/manipulation' }
             ],
             pressure: 1.0,
             id: `${id_prefix}bullet_wolfpack`
@@ -182,7 +182,7 @@ ServerEvents.recipes((event) => {
             inputs: [
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/steeleaf', count: 64 },
                 { type: 'pneumaticcraft:stacked_item', item: 'minecraft:paper', count: 8 },
-                { item: 'ars_nouveau:manipulation_essence' }
+                { tag: 'forge:essences/manipulation' }
             ],
             pressure: 1.0,
             id: `${id_prefix}empty_shell`
@@ -192,7 +192,7 @@ ServerEvents.recipes((event) => {
             inputs: [
                 { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:empty_shell', count: 64 },
                 { type: 'pneumaticcraft:stacked_item', item: 'occultism:burnt_otherstone', count: 8 },
-                { item: 'ars_nouveau:fire_essence' }
+                { tag: 'forge:essences/fire' }
             ],
             pressure: 1.0,
             id: `${id_prefix}bullet_buckshot`
@@ -202,7 +202,7 @@ ServerEvents.recipes((event) => {
             inputs: [
                 { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:buckshot', count: 64 },
                 { item: 'minecraft:dragon_breath' },
-                { item: 'ars_nouveau:manipulation_essence' }
+                { tag: 'forge:essences/manipulation' }
             ],
             pressure: 1.0,
             id: `${id_prefix}bullet_dragons_breath`
@@ -210,7 +210,7 @@ ServerEvents.recipes((event) => {
         {
             results: [{ item: 'pneumaticcraft:gun_ammo', count: 1 }],
             inputs: [
-                { type: 'pneumaticcraft:stacked_item', item: 'ars_nouveau:conjuration_essence', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:essences/conjuration', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', item: 'thermal:blitz_powder', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/compressed_iron', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
@@ -226,7 +226,7 @@ ServerEvents.recipes((event) => {
         {
             results: [{ item: 'pneumaticcraft:gun_ammo_ap', count: 1 }],
             inputs: [
-                { type: 'pneumaticcraft:stacked_item', item: 'ars_nouveau:conjuration_essence', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:essences/conjuration', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', item: 'thermal:basalz_powder', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/compressed_iron', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:armor_piercing', count: 64 },
@@ -242,7 +242,7 @@ ServerEvents.recipes((event) => {
         {
             results: [{ item: 'pneumaticcraft:gun_ammo_freezing', count: 1 }],
             inputs: [
-                { type: 'pneumaticcraft:stacked_item', item: 'ars_nouveau:conjuration_essence', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:essences/conjuration', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', item: 'thermal:blizz_powder', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/compressed_iron', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
@@ -258,7 +258,7 @@ ServerEvents.recipes((event) => {
         {
             results: [{ item: 'pneumaticcraft:gun_ammo_explosive', count: 1 }],
             inputs: [
-                { type: 'pneumaticcraft:stacked_item', item: 'ars_nouveau:conjuration_essence', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:essences/conjuration', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', item: 'minecraft:blaze_powder', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/compressed_iron', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:he', count: 64 },
@@ -274,7 +274,7 @@ ServerEvents.recipes((event) => {
         {
             results: [{ item: 'pneumaticcraft:gun_ammo_incendiary', count: 1 }],
             inputs: [
-                { type: 'pneumaticcraft:stacked_item', item: 'ars_nouveau:conjuration_essence', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:essences/conjuration', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', item: 'minecraft:blaze_powder', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/compressed_iron', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },
@@ -290,7 +290,7 @@ ServerEvents.recipes((event) => {
         {
             results: [{ item: 'pneumaticcraft:gun_ammo_weighted', count: 1 }],
             inputs: [
-                { type: 'pneumaticcraft:stacked_item', item: 'ars_nouveau:conjuration_essence', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:essences/conjuration', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', item: 'thermal:basalz_powder', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/compressed_iron', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:casull', count: 64 },

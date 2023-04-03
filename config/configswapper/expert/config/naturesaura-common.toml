@@ -6,7 +6,7 @@
 	auraTypeOverrides = [
 		"blue_skies:everbright->naturesaura:nether",
 		"blue_skies:everdawn->naturesaura:overworld",
-		"twilightforest:twilight_forest->naturesaura:overworld",
+		"twilightforest:twilight_forest->naturesaura:end",
 		"the_bumblezone:the_bumblezone->naturesaura:end"
 		
 	]
@@ -16,10 +16,6 @@
 	oreExceptions = []
 	#Additional projectile types that are allowed to be consumed by the projectile generator. Each entry needs to be formatted as entity_registry_name->aura_amount
 	additionalProjectiles = [
-		"ars_nouveau:spell_proj->2000",
-		"ars_nouveau:orbit->3333",
-		"ars_elemental:homing_projectile->8000",
-		"ars_elemental:curved_projectile->2000",
 		"minecraft:egg->0",
 		"minecraft:snowball->0",
 		"minecraft:small_fireball->0",

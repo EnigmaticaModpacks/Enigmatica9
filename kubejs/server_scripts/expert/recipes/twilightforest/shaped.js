@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'hexerei:blood_bottle',
-                B: 'ars_nouveau:fire_essence'
+                B: '#forge:essences/fire'
             },
             id: `${id_prefix}fiery_blood`
         },

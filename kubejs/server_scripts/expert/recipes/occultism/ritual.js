@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             output: 'ars_nouveau:wixie_charm',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             inputs: [
                 'hexerei:mindful_trance_blend',
                 'twilightforest:torchberries',
@@ -22,7 +22,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'ars_nouveau:wixie_charm',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             inputs: ['ars_nouveau:wixie_shards'],
             ritual_dummy: 'kubejs:ritual_summon_wixie_from_shards',
             ritual_type: 'occultism:craft',
@@ -32,7 +32,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'ars_nouveau:amethyst_golem_charm',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             inputs: [
                 'hexerei:mindful_trance_blend',
                 '#forge:gems/amethyst',
@@ -47,7 +47,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'ars_nouveau:starbuncle_charm',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             inputs: [
                 'hexerei:mindful_trance_blend',
                 'naturesaura:gold_leaf',
@@ -62,7 +62,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'ars_nouveau:starbuncle_charm',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             inputs: ['ars_nouveau:starbuncle_shards'],
             ritual_dummy: 'kubejs:ritual_summon_starbuncle_from_shards',
             ritual_type: 'occultism:craft',
@@ -79,7 +79,7 @@ ServerEvents.recipes((event) => {
             inputs: [
                 'hexerei:gold_rings',
                 'hexerei:broom_brush',
-                'ars_nouveau:air_essence',
+                '#forge:essences/air',
                 'hexerei:small_satchel',
                 'hexerei:willow_log',
                 'hexerei:willow_log'
@@ -97,7 +97,7 @@ ServerEvents.recipes((event) => {
         {
             // Water Breathing
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             inputs: [
                 'hexerei:mindful_trance_blend',
                 'naturesaura:gold_leaf',
@@ -118,7 +118,7 @@ ServerEvents.recipes((event) => {
         {
             // Jump Boost
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             inputs: [
                 'hexerei:mindful_trance_blend',
                 'naturesaura:gold_leaf',
@@ -139,16 +139,16 @@ ServerEvents.recipes((event) => {
         {
             // Fire Resistance, Attacks Enemies
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             inputs: [
                 'hexerei:mindful_trance_blend',
                 'naturesaura:gold_leaf',
                 'naturesaura:gold_leaf',
                 'naturesaura:gold_leaf',
-                'ars_nouveau:fire_essence',
-                'ars_nouveau:fire_essence',
-                'ars_nouveau:fire_essence',
-                'ars_nouveau:fire_essence'
+                '#forge:essences/fire',
+                '#forge:essences/fire',
+                '#forge:essences/fire',
+                '#forge:essences/fire'
             ],
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:devil_familiar',
@@ -160,7 +160,7 @@ ServerEvents.recipes((event) => {
         {
             // Increases XP gains
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             inputs: [
                 'hexerei:mindful_trance_blend',
                 'naturesaura:gold_leaf',
@@ -169,7 +169,7 @@ ServerEvents.recipes((event) => {
                 '#forge:storage_blocks/diamond',
                 '#forge:storage_blocks/gold',
                 '#forge:storage_blocks/emerald',
-                'ars_nouveau:fire_essence'
+                '#forge:essences/fire'
             ],
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:dragon_familiar',
@@ -181,7 +181,7 @@ ServerEvents.recipes((event) => {
         {
             // Prevents other Familiars from dying and heals the Player
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:fairy_familiar',
             ritual_type: 'occultism:familiar',
@@ -195,10 +195,10 @@ ServerEvents.recipes((event) => {
                 '#minecraft:small_flowers',
                 '#minecraft:small_flowers',
                 '#minecraft:small_flowers',
-                'ars_nouveau:fire_essence',
-                'ars_nouveau:water_essence',
-                'ars_nouveau:earth_essence',
-                'ars_nouveau:air_essence'
+                '#forge:essences/fire',
+                '#forge:essences/water',
+                '#forge:essences/earth',
+                '#forge:essences/air'
             ],
             duration: 10,
             id: `occultism:ritual/familiar_fairy`
@@ -206,7 +206,7 @@ ServerEvents.recipes((event) => {
         {
             // Item Magnet
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:greedy_familiar',
             ritual_type: 'occultism:familiar',
@@ -218,8 +218,8 @@ ServerEvents.recipes((event) => {
                 'naturesaura:gold_leaf',
                 '#forge:ingots/copper',
                 '#forge:ingots/copper',
-                'ars_nouveau:earth_essence',
-                'ars_nouveau:earth_essence'
+                '#forge:essences/earth',
+                '#forge:essences/earth'
             ],
             duration: 10,
             id: `occultism:ritual/familiar_greedy`
@@ -227,7 +227,7 @@ ServerEvents.recipes((event) => {
         {
             // Prevents Player Death, losing a limb for each death prevented.
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:guardian_familiar',
             ritual_type: 'occultism:familiar',
@@ -239,8 +239,8 @@ ServerEvents.recipes((event) => {
                 'naturesaura:gold_leaf',
                 '#forge:gems/diamond',
                 '#forge:gems/diamond',
-                'ars_nouveau:earth_essence',
-                'ars_nouveau:earth_essence'
+                '#forge:essences/earth',
+                '#forge:essences/earth'
             ],
             duration: 10,
             id: `occultism:ritual/familiar_guardian`
@@ -248,7 +248,7 @@ ServerEvents.recipes((event) => {
         {
             // Grants damage buffs against recently killed mobs
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:headless_familiar',
             ritual_type: 'occultism:familiar',
@@ -269,7 +269,7 @@ ServerEvents.recipes((event) => {
         {
             // Fights for the Player, grants Dodge effect
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:mummy_familiar',
             ritual_type: 'occultism:familiar',
@@ -291,7 +291,7 @@ ServerEvents.recipes((event) => {
             // Multi-Jump, Jump Boost, Slow Fall
             output: 'occultism:jei_dummy/none',
             ritual_type: 'occultism:summon_tamed',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:otherworld_bird',
             ritual_type: 'occultism:familiar',
@@ -303,8 +303,8 @@ ServerEvents.recipes((event) => {
                 'naturesaura:gold_leaf',
                 '#forge:feathers',
                 '#forge:feathers',
-                'ars_nouveau:air_essence',
-                'ars_nouveau:air_essence'
+                '#forge:essences/air',
+                '#forge:essences/air'
             ],
             duration: 10,
             id: `occultism:ritual/familiar_otherworld_bird`
@@ -313,7 +313,7 @@ ServerEvents.recipes((event) => {
             // Just a pet
             output: 'occultism:jei_dummy/none',
             ritual_type: 'occultism:summon_with_chance_of_chicken_tamed',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'minecraft:parrot',
             ritual_type: 'occultism:familiar',
@@ -335,7 +335,7 @@ ServerEvents.recipes((event) => {
         {
             // Night Vision
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:bat_familiar',
             ritual_type: 'occultism:familiar',
@@ -356,7 +356,7 @@ ServerEvents.recipes((event) => {
         {
             // Increases wood breaking speed
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:beaver_familiar',
             ritual_type: 'occultism:familiar',
@@ -377,7 +377,7 @@ ServerEvents.recipes((event) => {
         {
             // Attacks enemies and makes them glow
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:beholder_familiar',
             ritual_type: 'occultism:familiar',
@@ -398,7 +398,7 @@ ServerEvents.recipes((event) => {
         {
             // Repairs Equipmet and upgrades other familiars.
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:blacksmith_familiar',
             ritual_type: 'occultism:familiar',
@@ -411,7 +411,7 @@ ServerEvents.recipes((event) => {
                 'minecraft:anvil',
                 'simplytools:iron_hammer',
                 'minecraft:blast_furnace',
-                'ars_nouveau:fire_essence'
+                '#forge:essences/fire'
             ],
             duration: 10,
             id: `occultism:ritual/blacksmith_familiar`
@@ -419,7 +419,7 @@ ServerEvents.recipes((event) => {
         {
             // Rideable Mount
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:chimera_familiar',
             ritual_type: 'occultism:familiar',
@@ -439,7 +439,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             inputs: [
                 'hexerei:mindful_trance_blend',
                 'naturesaura:gold_leaf',
@@ -459,20 +459,20 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             inputs: [
                 'quark:gold_bars',
                 'quark:gold_bars',
                 'quark:gold_bars',
                 'quark:gold_bars',
-                'ars_nouveau:fire_essence',
+                '#forge:essences/fire',
                 'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:fire_essence',
+                '#forge:essences/fire',
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:fire_essence',
+                '#forge:essences/fire',
                 'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:fire_essence'
+                '#forge:essences/fire'
             ],
             entity_to_summon: 'minecraft:blaze',
             entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b,DeathLootTable:"minecraft:entities/bat"}',
@@ -484,20 +484,20 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             inputs: [
                 'quark:gold_bars',
                 'quark:gold_bars',
                 'quark:gold_bars',
                 'quark:gold_bars',
-                'ars_nouveau:air_essence',
+                '#forge:essences/air',
                 'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:air_essence',
+                '#forge:essences/air',
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:air_essence',
+                '#forge:essences/air',
                 'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:air_essence'
+                '#forge:essences/air'
             ],
             entity_to_summon: 'thermal:blitz',
             entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b,DeathLootTable:"minecraft:entities/bat"}',
@@ -509,20 +509,20 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             inputs: [
                 'quark:gold_bars',
                 'quark:gold_bars',
                 'quark:gold_bars',
                 'quark:gold_bars',
-                'ars_nouveau:earth_essence',
+                '#forge:essences/earth',
                 'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:earth_essence',
+                '#forge:essences/earth',
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:earth_essence',
+                '#forge:essences/earth',
                 'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:earth_essence'
+                '#forge:essences/earth'
             ],
             entity_to_summon: 'thermal:basalz',
             entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b,DeathLootTable:"minecraft:entities/bat"}',
@@ -534,20 +534,20 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'occultism:jei_dummy/none',
-            activation_item: 'ars_nouveau:conjuration_essence',
+            activation_item: '#forge:essences/conjuration',
             inputs: [
                 'quark:gold_bars',
                 'quark:gold_bars',
                 'quark:gold_bars',
                 'quark:gold_bars',
-                'ars_nouveau:water_essence',
+                '#forge:essences/water',
                 'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:water_essence',
+                '#forge:essences/water',
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:water_essence',
+                '#forge:essences/water',
                 'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:water_essence'
+                '#forge:essences/water'
             ],
             entity_to_summon: 'thermal:blizz',
             entity_nbt: '{NoAI:1b,PersistenceRequired:1b,Corrupted:1b,DeathLootTable:"minecraft:entities/bat"}',
@@ -803,12 +803,7 @@ ServerEvents.recipes((event) => {
         {
             output: 'kubejs:summon_death_tome',
             activation_item: '#forge:bookshelves',
-            inputs: [
-                'ars_elemental:anima_essence',
-                'ars_nouveau:air_essence',
-                'ars_elemental:anima_essence',
-                'ars_nouveau:air_essence'
-            ],
+            inputs: ['#forge:essences/anima', '#forge:essences/air', '#forge:essences/anima', '#forge:essences/air'],
             ritual_dummy: 'kubejs:ritual_summon_death_tome',
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:summon_evil',
@@ -859,7 +854,7 @@ ServerEvents.recipes((event) => {
             inputs: [
                 '#forge:ingots/skies',
                 'naturesaura:gold_leaf',
-                'ars_nouveau:air_essence',
+                '#forge:essences/air',
                 'naturesaura:gold_leaf',
 
                 'ae2:sky_dust',
@@ -884,7 +879,7 @@ ServerEvents.recipes((event) => {
             inputs: [
                 '#forge:ingots/skies',
                 'naturesaura:gold_leaf',
-                'ars_nouveau:air_essence',
+                '#forge:essences/air',
                 'naturesaura:gold_leaf',
 
                 'ae2:sky_dust',
@@ -909,7 +904,7 @@ ServerEvents.recipes((event) => {
             inputs: [
                 '#forge:ingots/tainted_gold',
                 'naturesaura:gold_leaf',
-                'ars_nouveau:fire_essence',
+                '#forge:essences/fire',
                 'naturesaura:gold_leaf',
 
                 'create:cinder_flour',
@@ -980,6 +975,56 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:tree_of_life_stage_3',
             duration: 60,
             id: `${id_prefix}ritual_tree_of_life_4`
+        },
+        {
+            output: Item.of('gateways:gate_pearl', `{gateway:"gateways:wither_council_gate", radius:5}`),
+            activation_item: '#forge:ingots/tainted_gold',
+            inputs: [
+                'minecraft:wither_skeleton_skull',
+                'minecraft:wither_skeleton_skull',
+                'spirit:compressed_soul_powder_block',
+                'minecraft:wither_skeleton_skull',
+                '#forge:ingots/soul_steel',
+                '#forge:ingots/soul_steel',
+                '#forge:ingots/soul_steel',
+                '#forge:ingots/soul_steel',
+                '#forge:gems/infused_diamond',
+                '#forge:gems/infused_diamond',
+                '#forge:gems/infused_diamond',
+                '#forge:gems/infused_diamond'
+            ],
+            ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:wither_council_gate", radius:5}`),
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_evil',
+            duration: 10,
+            id: `${id_prefix}wither_council_gate`
+        },
+        {
+            output: Item.of('gateways:gate_pearl', `{gateway:"gateways:wilden_grove_gate", radius:5}`),
+            activation_item: 'farmersdelight:honey_glazed_ham_block',
+            inputs: [
+                'hexerei:blood_bottle',
+                'hexerei:blood_bottle',
+                'hexerei:blood_bottle',
+                'hexerei:blood_bottle',
+                'kubejs:mystery_mash',
+                'kubejs:mystery_mash',
+                'kubejs:mystery_mash',
+                'kubejs:mystery_mash',
+                'kubejs:mystery_mash',
+                'kubejs:mystery_mash',
+                'kubejs:mystery_mash',
+                'kubejs:mystery_mash'
+            ],
+            ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:wilden_grove_gate", radius:5}`),
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_evil',
+            entity_to_sacrifice: {
+                tag: 'enigmatica:azulfo',
+                display_name: 'ritual.occultism.sacrifice.azulfo'
+            },
+            duration: 10,
+            id: `${id_prefix}wilden_grove_gate`
         }
     ];
 

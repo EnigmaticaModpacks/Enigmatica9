@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
             output: 'createaddition:rolling_mill',
             pattern: ['ABA', 'CBC', 'CDC'],
             key: {
-                A: 'ars_nouveau:earth_essence',
+                A: '#forge:essences/earth',
                 B: 'create:shaft',
                 C: 'pneumaticcraft:compressed_stone',
                 D: 'create:andesite_casing'

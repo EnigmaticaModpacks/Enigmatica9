@@ -9,6 +9,11 @@ ServerEvents.recipes((event) => {
             output: 'thermal:jar',
             inputs: ['supplementaries:jar'],
             id: `${id_prefix}jar`
+        },
+        {
+            output: '8x thermal:aquachow',
+            inputs: ['minecraft:honeycomb', 'twilightforest:torchberries', 'twilightforest:torchberries'],
+            id: `${id_prefix}aquachow`
         }
     ];
 

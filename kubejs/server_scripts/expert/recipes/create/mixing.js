@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
                 { item: 'thermal:rubber' },
                 { item: 'thermal:rubber' },
                 { item: 'thermal:rubber' },
-                { item: 'ars_nouveau:fire_essence' },
+                { tag: 'forge:essences/fire' },
                 { amount: 1000, fluid: 'minecraft:water' }
             ],
             results: [{ item: 'thermal:cured_rubber', count: 4 }],

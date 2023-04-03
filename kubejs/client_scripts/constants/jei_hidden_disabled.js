@@ -129,6 +129,12 @@ jei.base.fluids.hidden = [
     'createaddition:bioethanol'
 ];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
+jei.base.recipes.hidden = [
+    {
+        category: 'minecraft:crafting',
+        recipes_by_id: ['pneumaticcraft:one_probe_crafting']
+    }
+];
 
 // Normal
 jei.normal.items.disabled = [];
@@ -169,6 +175,7 @@ jei.expert.items.disabled = [
     'ars_nouveau:mycelial_sourcelink',
     'ars_nouveau:vitalic_sourcelink',
     'ars_nouveau:volcanic_sourcelink',
+    'ars_nouveau:ritual_wilden_summon',
     'constructionwand:iron_wand',
     'constructionwand:stone_wand',
     'create:empty_blaze_burner',
@@ -176,6 +183,7 @@ jei.expert.items.disabled = [
     'createaddition:modular_accumulator',
     'createaddition:capacitor',
     'createaddition:portable_energy_interface',
+    'farmingforblockheads:feeding_trough',
     'immersiveengineering:capacitor_hv',
     'immersiveengineering:capacitor_lv',
     'immersiveengineering:capacitor_mv',
@@ -216,6 +224,7 @@ jei.expert.items.disabled = [
     'immersiveengineering:redstone_breaker',
     'immersiveengineering:breaker_switch',
     'immersiveengineering:current_transformer',
+    'immersiveengineering:cloche',
     'industrialforegoing:biofuel_generator',
     'industrialforegoing:fermentation_station',
     'industrialforegoing:fluid_sieving_machine',
@@ -238,6 +247,27 @@ jei.expert.items.disabled = [
     'industrialforegoing:mycelial_slimey',
     'industrialforegoing:pitiful_generator',
     'industrialforegoing:washing_factory',
+    `industrialforegoing:tinydryrubber`,
+    'industrialforegoing:latex_processing_unit',
+    'industrialforegoing:mob_duplicator',
+    'industrialforegoing:bioreactor',
+    'industrialforegoing:enchantment_extractor',
+    'industrialforegoing:fluid_extractor',
+    'industrialforegoing:enchantment_factory',
+    'industrialforegoing:water_condensator',
+    'industrialforegoing:wither_builder',
+    'industrialforegoing:enchantment_applicator',
+    'industrialforegoing:fluid_collector',
+    'industrialforegoing:block_breaker',
+    'industrialforegoing:block_placer',
+    'industrialforegoing:fluid_placer',
+    'industrialforegoing:mob_imprisonment_tool',
+    'industrialforegoing:infinity_launcher',
+    'industrialforegoing:infinity_backpack',
+    'industrialforegoing:animal_feeder',
+    'industrialforegoing:spores_recreator',
+    'industrialforegoing:mob_slaughter_factory',
+    'industrialforegoing:resourceful_furnace',
     'mekanism:advanced_energy_cube',
     'mekanism:advanced_induction_cell',
     'mekanism:advanced_induction_provider',
@@ -252,6 +282,8 @@ jei.expert.items.disabled = [
     'mekanism:ultimate_energy_cube',
     'mekanism:ultimate_induction_cell',
     'mekanism:ultimate_induction_provider',
+    'mekanism:seismic_reader',
+    'mekanism:energy_tablet',
     'mekanismgenerators:gas_burning_generator',
     'mekanismgenerators:advanced_solar_generator',
     'mekanismgenerators:bio_generator',
@@ -348,7 +380,15 @@ jei.expert.items.disabled = [
     'thermal:flux_saw',
     'thermal:flux_drill',
     'thermal:drill_head',
-    'thermal:saw_blade'
+    'thermal:saw_blade',
+    'thermal:energy_cell',
+    'thermal:flux_capacitor',
+    'thermal:device_potion_diffuser',
+    'twilightforest:candelabra',
+    'twilightforest:keepsake_casket',
+    'twilightforest:cube_of_annihilation',
+    'twilightforest:greater_potion_flask',
+    'twilightforest:brittle_potion_flask'
 ];
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];
@@ -384,7 +424,8 @@ jei.expert.recipes.hidden = [
             'ars_nouveau:volcanic_sourcelink',
             'ars_nouveau:agronomic_sourcelink',
             'ars_nouveau:conjuration_essence_to_soul_sand',
-            'ars_nouveau:blank_thread'
+            'ars_nouveau:blank_thread',
+            'ars_nouveau:novice_spell_book'
         ]
     },
     {
@@ -425,7 +466,10 @@ jei.expert.recipes.hidden = [
             'ars_nouveau:starbuncle_charm',
             'ars_nouveau:magebloom_crop',
             'ars_nouveau:void_jar',
-            'ars_nouveau:jar_of_light'
+            'ars_nouveau:jar_of_light',
+            'ars_nouveau:potion_flask',
+            'ars_nouveau:potion_melder',
+            'ars_nouveau:alchemists_crown'
         ]
     }
 ];

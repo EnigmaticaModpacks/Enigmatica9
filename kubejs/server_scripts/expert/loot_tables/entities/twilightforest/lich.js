@@ -15,7 +15,7 @@ ServerEvents.genericLootTables((event) => {
         });
 
         table.addPool((pool) => {
-            pool.rolls = [1, 1];
+            pool.rolls = [5, 15];
             pool.addItem(Item.of('twilightforest:charm_of_life_2'), 1);
         });
     });

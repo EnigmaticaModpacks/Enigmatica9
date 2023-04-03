@@ -37,6 +37,10 @@ ServerEvents.recipes((event) => {
 
         { id: 'hexerei:black_dye_from_pestle_and_mortar' },
 
+        { id: `industrialforegoing:stonework_generate/diorite` },
+        { id: `industrialforegoing:stonework_generate/granite` },
+        { id: `industrialforegoing:stonework_generate/andesite` },
+
         { id: /mekanism:enriching\/dye/ },
         { id: /mekanism:compat\/byg\/dye/ },
         { id: /mekanism:compat\/byg\/sawing\/log/ },
@@ -51,6 +55,8 @@ ServerEvents.recipes((event) => {
 
         { id: 'minecraft:bone_meal' },
         { id: 'minecraft:glass' },
+
+        { id: /naturesaura:animal_spawner\/sheep_/ },
 
         { id: 'occultism:crafting/butcher_knife' },
 
