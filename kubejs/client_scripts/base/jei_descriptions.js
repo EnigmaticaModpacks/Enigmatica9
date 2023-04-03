@@ -355,7 +355,7 @@ JEIEvents.information((event) => {
             text: [
                 `May be obtained through fishing, inside urns, or purchased from Cartographers.`,
                 ` `,
-                `For an easy supply, try an Aquatic Entangler with Junk Nets! `
+                `For an easy supply, try an Aquatic Entangler with Junk Nets!`
             ]
         }
     ];
