@@ -49,6 +49,15 @@ ServerEvents.recipes((event) => {
             ],
             energy: 1600,
             id: `${id_prefix}bioethanol`
+        },
+        {
+            input: Ingredient.of('#forge:dusts/redstone'),
+            outputs: [
+                { item: 'emendatusenigmatica:cinnabar_dust', chance: 0.5 },
+                { fluid: 'thermal:redstone', amount: 50 }
+            ],
+            energy: 1600,
+            id: `${id_prefix}cinnabar_dust`
         }
     ];
 

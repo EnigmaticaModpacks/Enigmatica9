@@ -523,41 +523,41 @@ const gemProperties = {
         }
     },
     cinnabar: {
-        meltingPoint: 580,
-        oreProcessing: {
-            output: {
-                type: 'gem',
-                substrate: 'minecraft:gravel',
-                secondary: 'emendatusenigmatica:sulfur_dust'
-            },
-            create: {
-                primaryCount: 2,
-                secondaryCount: 2,
-                secondaryChance: 0.5,
-                processingTime: 300
-            },
-            thermal: {
-                primaryCount: 2,
-                secondaryCount: 2,
-                secondaryChance: 0.5
-            },
-            immersiveengineering: {
-                primaryCount: 2,
-                secondaryCount: 2,
-                secondaryChance: 0.5
-            },
-            ars_nouveau: {
-                primaryCount: 2,
-                secondaryCount: 2,
-                secondaryChance: 0.5
-            },
-            occultism: {
-                primaryCount: 4
-            },
-            mekanism: {
-                enrichmentCount: 4
-            }
-        }
+        meltingPoint: 580//,
+        // oreProcessing: {
+        //     output: {
+        //         type: 'gem',
+        //         substrate: 'minecraft:gravel',
+        //         secondary: 'emendatusenigmatica:sulfur_dust'
+        //     },
+        //     create: {
+        //         primaryCount: 2,
+        //         secondaryCount: 2,
+        //         secondaryChance: 0.5,
+        //         processingTime: 300
+        //     },
+        //     thermal: {
+        //         primaryCount: 2,
+        //         secondaryCount: 2,
+        //         secondaryChance: 0.5
+        //     },
+        //     immersiveengineering: {
+        //         primaryCount: 2,
+        //         secondaryCount: 2,
+        //         secondaryChance: 0.5
+        //     },
+        //     ars_nouveau: {
+        //         primaryCount: 2,
+        //         secondaryCount: 2,
+        //         secondaryChance: 0.5
+        //     },
+        //     occultism: {
+        //         primaryCount: 4
+        //     },
+        //     mekanism: {
+        //         enrichmentCount: 4
+        //     }
+        // }
     },
     aquite: {
         // meltingPoint: 0,

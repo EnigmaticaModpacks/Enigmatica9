@@ -361,6 +361,21 @@ JEIEvents.information((event) => {
                 ` `,
                 `For an easy supply, try an Aquatic Entangler with Junk Nets!`
             ]
+        },
+        {
+            items: [
+                "hexerei:sage_seed",
+                "immersiveengineering:seed",
+                "occultism:datura_seeds",
+                "sushigocrafting:cucumber_seeds",
+                "sushigocrafting:soy_seeds",
+                "sushigocrafting:wasabi_seeds",
+                "sushigocrafting:sesame_seeds"
+            ],
+            text: [
+                "This seed does not drop from grass!",
+                "It has to be purchased from the Market block."
+            ]
         }
     ];
 

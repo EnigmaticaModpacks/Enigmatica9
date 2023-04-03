@@ -91,6 +91,8 @@ jei.base.items.disabled = [
     'thermal:latex_bucket',
     'thermal:creosote_bucket',
     'thermal:refined_fuel_bucket',
+    'thermal:deepslate_cinnabar_ore',
+    'thermal:cinnabar_ore',
 
     'twilightforest:uncrafting_table',
 

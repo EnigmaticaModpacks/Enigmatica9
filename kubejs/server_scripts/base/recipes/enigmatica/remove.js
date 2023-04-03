@@ -14,6 +14,9 @@ ServerEvents.recipes((event) => {
         { output: /pendorite/ },
         { output: /emeraldite/ },
         { output: /ametrine/ },
+        { output: /thermal.*cinnabar_ore/},
+
+        { input: /thermal.*cinnabar_ore/},
 
         { id: /ars_nouveau:.*_dye/ },
 
@@ -42,6 +45,7 @@ ServerEvents.recipes((event) => {
         { id: `industrialforegoing:stonework_generate/diorite` },
         { id: `industrialforegoing:stonework_generate/granite` },
         { id: `industrialforegoing:stonework_generate/andesite` },
+        { id: `industrialforegoing:laser_drill_ore/ores/cinnabar`},
 
         { id: /mekanism:enriching\/dye/ },
         { id: /mekanism:compat\/byg\/dye/ },
