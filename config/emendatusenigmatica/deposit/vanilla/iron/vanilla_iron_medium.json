@@ -2,7 +2,7 @@
   "type": "emendatusenigmatica:vanilla_deposit",
   "dimension": "minecraft:overworld",
   "biomes": [],
-  "registryName": "vanilla_iron_low",
+  "registryName": "vanilla_iron_medium",
   "config": {
     "material": "iron",
     "fillerTypes": [
