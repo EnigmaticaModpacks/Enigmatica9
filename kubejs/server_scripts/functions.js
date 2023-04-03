@@ -1,21 +1,6 @@
 //priority: 1005
 const PowahAPI = Java.loadClass('owmii.powah.api.PowahAPI');
 
-const unificationBlacklist = [];
-
-const unificationBlacklistEntry = (material, type) => {
-    return { material: material, type: type };
-};
-
-const entryIsBlacklisted = (material, type) => {
-    for (var i = 0; i < unificationBlacklist.length; i++) {
-        if (unificationBlacklist[i].material == material && unificationBlacklist[i].type == type) {
-            return true;
-        }
-    }
-    return false;
-};
-
 const tagIsEmpty = (tag) => {
     return getPreferredItemInTag(Ingredient.of(tag)).id == air;
 };

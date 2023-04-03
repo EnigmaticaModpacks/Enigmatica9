@@ -53,7 +53,7 @@ ServerEvents.recipes((event) => {
         {
             input: Ingredient.of('#forge:dusts/redstone'),
             outputs: [
-                { item: 'emendatusenigmatica:cinnabar_dust', chance: 0.5 },
+                { item: 'emendatusenigmatica:cinnabar_dust', chance: 1 },
                 { fluid: 'thermal:redstone', amount: 50 }
             ],
             energy: 1600,

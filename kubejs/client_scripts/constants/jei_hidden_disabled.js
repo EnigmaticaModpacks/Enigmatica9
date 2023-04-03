@@ -132,8 +132,7 @@ jei.base.items.hidden = [
     'sophisticatedstorage:debug_tool',
    
     /twilightforest:.*boss_spawner/,
-    /hexerei:.*selenite/,
-    'hexerei:creative_waxing_kit',
+
     /nomadictents:.*_shamiyana_wall/,
     /nomadictents:.*_tepee_wall/,
     'nomadictents:indlu_wall',
@@ -161,8 +160,6 @@ jei.base.recipes.hidden = [
         recipes_by_id: ['pneumaticcraft:one_probe_crafting']
     }
 ];
-
-jei.base.fluids.hidden = [];
 jei.base.gases.hidden = [];
 
 // Normal
@@ -194,7 +191,6 @@ jei.normal.items.hidden = [
 ];
 jei.normal.fluids.hidden = [];
 jei.normal.categories.hidden = [];
-jei.normal.fluids.hidden = [];
 jei.normal.gases.hidden = [];
 
 // Expert

@@ -14,16 +14,16 @@ ServerEvents.recipes((event) => {
     let materials = Object.keys(metal_properties).concat(Object.keys(gemProperties))
     conversionTypes.forEach((type) => {
        materials.forEach((material) => {
-            if (!entryIsBlacklisted(material, type)) {
-                let tag = Ingredient.of(`#forge:${type}s/${material}`);
-                let itemArray = tag.getItemIds()
-                if (itemArray.length > 1) {
-                    let index = 0
-                    itemArray.forEach((block) => {
+            let tag = Ingredient.of(`#forge:${type}s/${material}`);
+            let itemArray = tag.getItemIds()
+            if (itemArray.length > 1) {
+                let index = 0
+                itemArray.forEach((block) => {
+                    if (!block.match(/air/)) {
                         index++
                         event.stonecutting(block, tag).id(`${id_prefix}${type}_conversion/${material}/${index}`);
-                    });
-                }
+                    }
+                });
             }
         });
     });

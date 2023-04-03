@@ -10,12 +10,7 @@
     "blue_skies"
   ],
   "stoneStrata": [
-    "stone",
-    "nether",
-    "deepslate",
-    "granite",
-    "diorite",
-    "andesite"
+    "stone"
   ],
   "tags": [
     "forge:nuggets/{material}",
