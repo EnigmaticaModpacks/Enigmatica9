@@ -22,8 +22,9 @@ ServerEvents.recipes((event) => {
     let types = Object.keys(cobbleworks);
 
     types.forEach((type) => {
-        cobbleworks[type].forEach((material) => {
-            if (material.split(':')[0] == 'minecraft') {
+        cobbleworks[type]
+            .filter((material) => material.split(':')[0] == 'minecraft')
+            .forEach((material) => {
                 recipes.push({
                     output: { item: material, count: 1 },
                     lavaNeed: 1000,
@@ -32,8 +33,7 @@ ServerEvents.recipes((event) => {
                     waterConsume: 0,
                     id: `${id_prefix}${material.replace(':', '_')}`
                 });
-            }
-        });
+            });
     });
 
     recipes.forEach((recipe) => {

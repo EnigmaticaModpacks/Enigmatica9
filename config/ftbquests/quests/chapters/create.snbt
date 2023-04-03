@@ -1099,10 +1099,12 @@
 				item: "create:spout"
 			}]
 			rewards: [{
-				id: "61DC715A5922317C"
-				type: "item"
+				id: "2C441D0D6266C526"
+				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				player_command: false
 			}]
 		}
 		{
