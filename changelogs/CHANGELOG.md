@@ -24,6 +24,7 @@ _Using Forge-1.19.2-43.2.6_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 -   Clarify Tools quests [\#255](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/255) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix Thermal Tomato Sauce [\#280](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/280) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix missing loot in Industrial Foregoing Quests ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix broken loot in Create Quests (https://github.com/EnigmaticaModpacks/Enigmatica9/issues/289) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
