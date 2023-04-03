@@ -8,10 +8,11 @@
             {"material": "tin", "weight": 55},
             {"material": "quartz", "weight": 45}
         ],
-        "chance": 65,
+        "chance": 40,
         "size": 38,
         "minYLevel": -60,
         "maxYLevel": -25,
+        "rarity": "rare",
         "generateSamples": true,
         "sampleBlocks": [{"material": "quartz", "weight": 10, "strata": "minecraft_basalt"}],
         "fillerTypes": [
