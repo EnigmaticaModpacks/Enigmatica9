@@ -15,7 +15,7 @@
         "minecraft_netherrack",
         "minecraft_air"
       ],
-      "chance": 10,
+      "chance": 15,
       "size": 50,
       "minYLevel": 5,
       "maxYLevel": 118,
