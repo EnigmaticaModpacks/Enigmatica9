@@ -19,7 +19,8 @@ WorldgenEvents.remove((event) => {
         [
             'byg:pendorite_ore',
             'byg:ametrine_ore',
-            'byg:budding_ametrine_ore'
+            'byg:budding_ametrine_ore',
+            'byg:emeraldite_ore'
         ]
     );
 });
