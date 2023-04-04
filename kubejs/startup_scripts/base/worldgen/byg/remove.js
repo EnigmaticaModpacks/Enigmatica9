@@ -20,7 +20,12 @@ WorldgenEvents.remove((event) => {
             'byg:pendorite_ore',
             'byg:ametrine_ore',
             'byg:budding_ametrine_ore',
-            'byg:emeraldite_ore'
+            'byg:emeraldite_ore',
+            'byg:anthracite_ore',
+            'byg:brimstone_nether_quartz_ore',
+            'byg:brimstone_nether_gold_ore',
+            'byg:blue_nether_quartz_ore',
+            'byg:blue_nether_gold_ore'
         ]
     );
 });
