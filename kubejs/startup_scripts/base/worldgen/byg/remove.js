@@ -17,15 +17,15 @@ WorldgenEvents.remove((event) => {
 
     event.removeFeatureById('underground_ores', 
         [
-            'byg:pendorite_ore',
-            'byg:ametrine_ore',
-            'byg:budding_ametrine_ore',
-            'byg:emeraldite_ore',
-            'byg:anthracite_ore',
-            'byg:brimstone_nether_quartz_ore',
-            'byg:brimstone_nether_gold_ore',
-            'byg:blue_nether_quartz_ore',
-            'byg:blue_nether_gold_ore'
+            "byg:ore_gold_brimstone",
+            "byg:ore_gold_blue_netherrack",
+            "byg:ore_quartz_brimstone",
+            "byg:ore_quartz_blue_netherrack",
+            "byg:ore_anthracite",
+            "byg:ore_pendorite",
+            "byg:ore_emeraldite",
+            "byg:cryptic_redstone",
+            "byg:island_ametrine_clusters"
         ]
     );
 });
