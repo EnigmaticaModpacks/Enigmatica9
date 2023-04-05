@@ -228,5 +228,36 @@ const biomes = {
         'minecraft:deep_ocean',
         'minecraft:deep_lukewarm_ocean',
         'blue_skies:deep_peeking_ocean'
+    ],
+    in_desert: [
+        "minecraft:desert",
+        "minecraft:badlands",
+        "minecraft:eroded_badlands",
+        "byg:atacama_desert",
+        "byg:windswept_desert",
+        "byg:mojave_desert",
+        "byg:red_rock_valley",
+        "byg:quartz_desert"
+    ],
+    in_hills: [
+        "minecraft:windswept_hills",
+        "minecraft:windswept_forest",
+        "minecraft:windswept_gravelly_hills",
+        "minecraft:meadow",
+        "minecraft:frozen_peaks",
+        "minecraft:jagged_peaks",
+        "minecraft:stony_peaks",
+        "minecraft:snowy_slopes",
+        "byg:canadian_shield", 
+        "byg:crag_gardens", 
+        "byg:dacite_ridges", 
+        "byg:howling_peaks"
+    ],
+    ins_swamps: [
+        "minecraft:swamp",
+        "minecraft:mangrove_swamp",
+        "byg:bayou",
+        "byg:cypress_swamplands",
+        "hexerei:willow_swamp"
     ]
 };

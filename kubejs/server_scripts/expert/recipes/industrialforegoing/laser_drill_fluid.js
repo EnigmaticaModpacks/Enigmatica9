@@ -5,7 +5,6 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/industrialforegoing/laser_drill_fluid/';
     const recipes = [
         {
-            type: 'industrialforegoing:laser_drill_fluid',
             catalyst: { tag: 'industrialforegoing:laser_lens/blue' },
             entity: 'minecraft:empty',
             output: '{Amount:100,FluidName:"kubejs:abyssal_seawater"}',
@@ -22,7 +21,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}abyssal_seawater`
         },
         {
-            type: 'industrialforegoing:laser_drill_fluid',
             catalyst: { tag: 'industrialforegoing:laser_lens/lime' },
             entity: 'ars_nouveau:wilden_boss',
             output: '{Amount:500,FluidName:"kubejs:magicite"}',

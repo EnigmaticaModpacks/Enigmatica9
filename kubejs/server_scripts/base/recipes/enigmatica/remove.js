@@ -154,6 +154,8 @@ ServerEvents.recipes((event) => {
         { type: 'immersiveengineering:fermenter' },
         { type: 'immersiveengineering:generator_fuel' },
 
+        { type: "industrialforegoing:laser_drill_ore" },
+        
         { type: 'pneumaticcraft:fuel_quality' },
 
         { type: 'thermal:lapidary_fuel' },
