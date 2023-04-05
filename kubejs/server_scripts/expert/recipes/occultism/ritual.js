@@ -6,6 +6,78 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/occultism/ritual/';
     const recipes = [
         {
+            output: 'occultism:jei_dummy/none',
+            entity_to_summon: 'occultism:foliot',
+            spirit_job_type: 'occultism:crush_tier1',
+            spirit_max_age: -1,
+            activation_item: 'occultism:book_of_binding_bound_foliot',
+            inputs: [
+                '#forge:raw_materials/iron',
+                '#forge:raw_materials/iron',
+                '#forge:raw_materials/iron',
+                '#forge:raw_materials/iron'
+            ],
+            ritual_dummy: 'occultism:ritual_dummy/summon_foliot_crusher',
+            ritual_type: 'occultism:summon_spirit_with_job',
+            pentacle_id: 'occultism:summon_foliot',
+            duration: 60,
+            id: 'occultism:ritual/summon_foliot_crusher'
+        },
+        {
+            output: 'occultism:jei_dummy/none',
+            entity_to_summon: 'occultism:djinni',
+            spirit_job_type: 'occultism:crush_tier2',
+            spirit_max_age: -1,
+            activation_item: 'occultism:book_of_binding_bound_djinni',
+            inputs: [
+                '#forge:raw_materials/iron',
+                '#forge:raw_materials/iron',
+                '#forge:raw_materials/iron',
+                '#forge:raw_materials/iron'
+            ],
+            ritual_dummy: 'occultism:ritual_dummy/summon_djinni_crusher',
+            ritual_type: 'occultism:summon_spirit_with_job',
+            pentacle_id: 'occultism:summon_djinni',
+            duration: 90,
+            id: 'occultism:ritual/summon_djinni_crusher'
+        },
+        {
+            output: 'occultism:jei_dummy/none',
+            entity_to_summon: 'occultism:afrit',
+            spirit_job_type: 'occultism:crush_tier3',
+            spirit_max_age: -1,
+            activation_item: 'occultism:book_of_binding_bound_afrit',
+            inputs: [
+                '#forge:raw_materials/iron',
+                '#forge:raw_materials/iron',
+                '#forge:raw_materials/iron',
+                '#forge:raw_materials/iron'
+            ],
+            ritual_dummy: 'occultism:ritual_dummy/summon_afrit_crusher',
+            ritual_type: 'occultism:summon_spirit_with_job',
+            pentacle_id: 'occultism:summon_afrit',
+            duration: 120,
+            id: 'occultism:ritual/summon_afrit_crusher'
+        },
+        {
+            output: 'occultism:jei_dummy/none',
+            entity_to_summon: 'occultism:marid',
+            spirit_job_type: 'occultism:crush_tier4',
+            spirit_max_age: -1,
+            activation_item: 'occultism:book_of_binding_bound_marid',
+            inputs: [
+                '#forge:raw_materials/iron',
+                '#forge:raw_materials/iron',
+                '#forge:raw_materials/iron',
+                '#forge:raw_materials/iron'
+            ],
+            ritual_dummy: 'occultism:ritual_dummy/summon_marid_crusher',
+            ritual_type: 'occultism:summon_spirit_with_job',
+            pentacle_id: 'occultism:summon_marid',
+            duration: 150,
+            id: 'occultism:ritual/summon_marid_crusher'
+        },
+        {
             output: 'ars_nouveau:wixie_charm',
             activation_item: '#forge:essences/conjuration',
             inputs: [
