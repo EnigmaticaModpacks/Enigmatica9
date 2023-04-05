@@ -343,6 +343,7 @@
 				""
 				"Crafting a broom to get around might help in avoiding some more… deadly obstacles. "
 			]
+			dependencies: ["7CFD3DFD4C593EB5"]
 			id: "67A48CCEDA5C6AF3"
 			tasks: [{
 				id: "227E258AA45F15CD"
