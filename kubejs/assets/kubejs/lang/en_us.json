@@ -185,7 +185,7 @@
     "ritual.enigmatica.occultism/ritual/ritual_summon_starbuncle_from_shards.conditions": "Not all requirements for this ritual are met.",
 
     "item.kubejs.ritual_craft_willow_broom": "Ritual: Craft Willow Broom",
-    "item.kubejs.ritual_craft_willow_broom.tooltip": "Bind a Raven to obtain the power of flight.",
+    "item.kubejs.ritual_craft_willow_broom.tooltip": "Bind a fae into a broom to obtain the power of flight.",
     "ritual.enigmatica.occultism/ritual/ritual_craft_willow_broom.started": "Ritual of Binding started.",
     "ritual.enigmatica.occultism/ritual/ritual_craft_willow_broom.finished": "Ritual of Binding completed.",
     "ritual.enigmatica.occultism/ritual/ritual_craft_willow_broom.interrupted": "Ritual of Binding interrupted.",

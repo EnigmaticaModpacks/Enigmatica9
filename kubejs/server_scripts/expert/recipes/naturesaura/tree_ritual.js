@@ -205,26 +205,41 @@ ServerEvents.recipes((event) => {
             time: 20,
             sapling: 'ars_elemental:yellow_archwood_sapling',
             id: `${id_prefix}dim_source_generator`
+        },
+        {
+            output: 'ars_nouveau:scribes_table',
+            ingredients: [
+                'supplementaries:antique_ink',
+                '#forge:planks/archwood',
+                '#forge:planks/archwood',
+                '#forge:planks/archwood',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                '#forge:fabrics/infused',
+                '#forge:fabrics/infused'
+            ],
+            time: 40,
+            sapling: 'ars_nouveau:purple_archwood_sapling',
+            id: `${id_prefix}scribes_table`
         }
 
         /*
-            ,
-            {
-                ingredients: [
-                    item, //top
-                    item, //bottom
-                    item, //left
-                    item, //right
+        {
+            ingredients: [
+                item, //top
+                item, //bottom
+                item, //left
+                item, //right
 
-                    item, //topleft
-                    item, //bottomright
-                    item, //topright
-                    item //bottomleft
-                output: 'naturesaura:oak_generator',
-                sapling: 'quark:yellow_blossom_sapling',
-                id: 'naturesaura:oak_generator'
-            }
-            */
+                item, //topleft
+                item, //bottomright
+                item, //topright
+                item //bottomleft
+            output: 'naturesaura:oak_generator',
+            sapling: 'quark:yellow_blossom_sapling',
+            id: 'naturesaura:oak_generator'
+        }
+        */
     ];
     recipes.forEach((recipe) => {
         recipe.type = 'naturesaura:tree_ritual';

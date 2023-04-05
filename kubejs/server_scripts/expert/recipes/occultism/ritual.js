@@ -90,26 +90,32 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_summon_starbuncle_from_shards`
         },
         {
-            output: Item.of(
-                'hexerei:willow_broom',
-                '{Inventory:{Items:[{Count:1b,Slot:0,id:"hexerei:gold_rings"},{Count:1b,Slot:1,id:"hexerei:small_satchel"},{Count:1b,Slot:2,id:"hexerei:broom_brush",tag:{Damage:0}}],Size:30}}'
-            ),
+            output: Item.of('hexerei:willow_broom', {
+                Inventory: {
+                    Items: [
+                        { Count: 1, Slot: 0, id: 'hexerei:gold_rings' },
+                        { Count: 1, Slot: 1, id: 'hexerei:small_satchel' },
+                        { Count: 1, Slot: 2, id: 'hexerei:broom_brush', tag: { Damage: 0, Unbreakable: 1 } }
+                    ],
+                    Size: 30
+                },
+                display: { Name: '{"translate":"item.hexerei.willow_broom"}' },
+                floatMode: 0
+            }),
             activation_item: 'hexerei:blood_bottle',
             inputs: [
-                'hexerei:gold_rings',
-                'hexerei:broom_brush',
-                '#forge:essences/air',
+                'hexerei:mindful_trance_blend',
                 'hexerei:small_satchel',
+                'hexerei:broom_brush',
+                'hexerei:gold_rings',
+                'hexerei:dried_yellow_dock_leaves',
+                'hexerei:dried_yellow_dock_leaves',
                 'hexerei:willow_log',
                 'hexerei:willow_log'
             ],
             ritual_dummy: 'kubejs:ritual_craft_willow_broom',
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:summon_familiar',
-            entity_to_sacrifice: {
-                tag: 'enigmatica:ravens',
-                display_name: 'ritual.occultism.sacrifice.ravens'
-            },
             duration: 10,
             id: `${id_prefix}ritual_craft_willow_broom`
         },
