@@ -31,6 +31,12 @@ const jei = {
 
 // Base
 jei.base.items.disabled = [
+    /thermal.*cinnabar_ore/,
+    /thermal.*niter_ore/,
+    /thermal.*sulfur_ore/,
+    /mekanism.*fluorite_ore/,
+    /rftoolsbase:dimensionalshard_/,
+
     /emendatusenigmatica:.*_cluster_shard\b/,
 
     /pendorite/,

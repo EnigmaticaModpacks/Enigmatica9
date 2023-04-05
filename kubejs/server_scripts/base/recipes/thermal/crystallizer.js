@@ -43,6 +43,20 @@ ServerEvents.recipes((event) => {
             outputs: [Item.of('ae2:certus_quartz_crystal', 2)],
             energy: 20000,
             id: `${id_prefix}certus_quartz_crystal`
+        },
+        {
+            inputs: ['#forge:dusts/dimensional'],
+            fluid: Fluid.of('minecraft:water', 1000),
+            outputs: [Item.of('rftoolsbase:dimensionalshard')],
+            energy: 2500,
+            id: `${id_prefix}dimensional_shard_from_dust`
+        },
+        {
+            inputs: ['#forge:dusts/fluorite'],
+            fluid: Fluid.of('minecraft:water', 1000),
+            outputs: [Item.of('emendatusenigmatica:fluorite_gem')],
+            energy: 2500,
+            id: `${id_prefix}fluorite_shard_from_dust`
         }
     ];
 

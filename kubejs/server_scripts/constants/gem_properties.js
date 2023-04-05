@@ -314,50 +314,50 @@ const gemProperties = {
     },
     sulfur: {
         meltingPoint: 115,
-        oreProcessing: {
-            output: {
-                type: 'gem',
-                substrate: 'minecraft:netherrack',
-                secondary: 'emendatusenigmatica:sulfur_dust'
-            },
-            create: {
-                primaryCount: 8,
-                secondaryCount: 3,
-                secondaryChance: 0.25,
-                processingTime: 300
-            },
-            thermal: {
-                primaryCount: 8,
-                secondaryCount: 3,
-                secondaryChance: 0.25
-            },
-            immersiveengineering: {
-                primaryCount: 8,
-                secondaryCount: 3,
-                secondaryChance: 0.25
-            },
-            ars_nouveau: {
-                primaryCount: 8,
-                secondaryCount: 3,
-                secondaryChance: 0.25
-            },
-            occultism: {
-                primaryCount: 12
-            },
-            mekanism: {
-                enrichmentCount: 8,
-                purificationCount: 12,
-                injectionCount: 16,
-                purificationGas: {
-                    gas: 'mekanism:oxygen',
-                    amount: 1
-                },
-                injectionGas: {
-                    gas: 'mekanism:hydrofluoric_acid',
-                    amount: 1
-                }
-            }
-        }
+        // oreProcessing: {
+        //     output: {
+        //         type: 'gem',
+        //         substrate: 'minecraft:netherrack',
+        //         secondary: 'emendatusenigmatica:sulfur_dust'
+        //     },
+        //     create: {
+        //         primaryCount: 8,
+        //         secondaryCount: 3,
+        //         secondaryChance: 0.25,
+        //         processingTime: 300
+        //     },
+        //     thermal: {
+        //         primaryCount: 8,
+        //         secondaryCount: 3,
+        //         secondaryChance: 0.25
+        //     },
+        //     immersiveengineering: {
+        //         primaryCount: 8,
+        //         secondaryCount: 3,
+        //         secondaryChance: 0.25
+        //     },
+        //     ars_nouveau: {
+        //         primaryCount: 8,
+        //         secondaryCount: 3,
+        //         secondaryChance: 0.25
+        //     },
+        //     occultism: {
+        //         primaryCount: 12
+        //     },
+        //     mekanism: {
+        //         enrichmentCount: 8,
+        //         purificationCount: 12,
+        //         injectionCount: 16,
+        //         purificationGas: {
+        //             gas: 'mekanism:oxygen',
+        //             amount: 1
+        //         },
+        //         injectionGas: {
+        //             gas: 'mekanism:hydrofluoric_acid',
+        //             amount: 1
+        //         }
+        //     }
+        // }
     },
     apatite: {
         meltingPoint: 450,
@@ -403,124 +403,124 @@ const gemProperties = {
     },
     fluorite: {
         meltingPoint: 1418,
-        oreProcessing: {
-            output: {
-                type: 'gem',
-                substrate: 'minecraft:gravel',
-                secondary: 'minecraft:quartz'
-            },
-            create: {
-                primaryCount: 8,
-                secondaryCount: 3,
-                secondaryChance: 0.25,
-                processingTime: 300
-            },
-            thermal: {
-                primaryCount: 8,
-                secondaryCount: 3,
-                secondaryChance: 0.25
-            },
-            immersiveengineering: {
-                primaryCount: 8,
-                secondaryCount: 3,
-                secondaryChance: 0.25
-            },
-            ars_nouveau: {
-                primaryCount: 8,
-                secondaryCount: 3,
-                secondaryChance: 0.25
-            },
-            occultism: {
-                primaryCount: 10
-            },
-            mekanism: {
-                enrichmentCount: 8,
-                purificationCount: 12,
-                injectionCount: 16,
-                purificationGas: {
-                    gas: 'mekanism:oxygen',
-                    amount: 1
-                },
-                injectionGas: {
-                    gas: 'mekanism:hydrofluoric_acid',
-                    amount: 1
-                }
-            }
-        }
+        // oreProcessing: {
+        //     output: {
+        //         type: 'gem',
+        //         substrate: 'minecraft:gravel',
+        //         secondary: 'minecraft:quartz'
+        //     },
+        //     create: {
+        //         primaryCount: 8,
+        //         secondaryCount: 3,
+        //         secondaryChance: 0.25,
+        //         processingTime: 300
+        //     },
+        //     thermal: {
+        //         primaryCount: 8,
+        //         secondaryCount: 3,
+        //         secondaryChance: 0.25
+        //     },
+        //     immersiveengineering: {
+        //         primaryCount: 8,
+        //         secondaryCount: 3,
+        //         secondaryChance: 0.25
+        //     },
+        //     ars_nouveau: {
+        //         primaryCount: 8,
+        //         secondaryCount: 3,
+        //         secondaryChance: 0.25
+        //     },
+        //     occultism: {
+        //         primaryCount: 10
+        //     },
+        //     mekanism: {
+        //         enrichmentCount: 8,
+        //         purificationCount: 12,
+        //         injectionCount: 16,
+        //         purificationGas: {
+        //             gas: 'mekanism:oxygen',
+        //             amount: 1
+        //         },
+        //         injectionGas: {
+        //             gas: 'mekanism:hydrofluoric_acid',
+        //             amount: 1
+        //         }
+        //     }
+        // }
     },
     dimensional: {
         meltingPoint: 1450,
-        oreProcessing: {
-            output: {
-                type: 'dust',
-                substrate: 'minecraft:gravel',
-                secondary: 'rftoolsbase:dimensionalshard'
-            },
-            create: {
-                primaryCount: 6,
-                secondaryCount: 3,
-                secondaryChance: 0.25,
-                processingTime: 300
-            },
-            thermal: {
-                primaryCount: 6,
-                secondaryCount: 3,
-                secondaryChance: 0.25
-            },
-            immersiveengineering: {
-                primaryCount: 6,
-                secondaryCount: 3,
-                secondaryChance: 0.25
-            },
-            ars_nouveau: {
-                primaryCount: 6,
-                secondaryCount: 3,
-                secondaryChance: 0.25
-            },
-            occultism: {
-                primaryCount: 8
-            },
-            mekanism: {
-                enrichmentCount: 8
-            }
-        }
+        // oreProcessing: {
+        //     output: {
+        //         type: 'dust',
+        //         substrate: 'minecraft:gravel',
+        //         secondary: 'rftoolsbase:dimensionalshard'
+        //     },
+        //     create: {
+        //         primaryCount: 6,
+        //         secondaryCount: 3,
+        //         secondaryChance: 0.25,
+        //         processingTime: 300
+        //     },
+        //     thermal: {
+        //         primaryCount: 6,
+        //         secondaryCount: 3,
+        //         secondaryChance: 0.25
+        //     },
+        //     immersiveengineering: {
+        //         primaryCount: 6,
+        //         secondaryCount: 3,
+        //         secondaryChance: 0.25
+        //     },
+        //     ars_nouveau: {
+        //         primaryCount: 6,
+        //         secondaryCount: 3,
+        //         secondaryChance: 0.25
+        //     },
+        //     occultism: {
+        //         primaryCount: 8
+        //     },
+        //     mekanism: {
+        //         enrichmentCount: 8
+        //     }
+        // }
     },
     niter: {
         meltingPoint: 334,
-        oreProcessing: {
-            output: {
-                type: 'gem',
-                substrate: 'minecraft:gravel',
-                secondary: 'emendatusenigmatica:sulfur_dust'
-            },
-            create: {
-                primaryCount: 2,
-                secondaryCount: 2,
-                secondaryChance: 0.25,
-                processingTime: 300
-            },
-            thermal: {
-                primaryCount: 2,
-                secondaryCount: 2,
-                secondaryChance: 0.25
-            },
-            immersiveengineering: {
-                primaryCount: 2,
-                secondaryCount: 2,
-                secondaryChance: 0.25
-            },
-            ars_nouveau: {
-                primaryCount: 2,
-                secondaryCount: 2,
-                secondaryChance: 0.25
-            },
-            occultism: {
-                primaryCount: 3
-            },
-            mekanism: {
-                enrichmentCount: 3
-            }
-        }
+        // oreProcessing: {
+        //     output: {
+        //         type: 'gem',
+        //         substrate: 'minecraft:gravel',
+        //         secondary: 'emendatusenigmatica:sulfur_dust'
+        //     },
+        //     create: {
+        //         primaryCount: 2,
+        //         secondaryCount: 2,
+        //         secondaryChance: 0.25,
+        //         processingTime: 300
+        //     },
+        //     thermal: {
+        //         primaryCount: 2,
+        //         secondaryCount: 2,
+        //         secondaryChance: 0.25
+        //     },
+        //     immersiveengineering: {
+        //         primaryCount: 2,
+        //         secondaryCount: 2,
+        //         secondaryChance: 0.25
+        //     },
+        //     ars_nouveau: {
+        //         primaryCount: 2,
+        //         secondaryCount: 2,
+        //         secondaryChance: 0.25
+        //     },
+        //     occultism: {
+        //         primaryCount: 3
+        //     },
+        //     mekanism: {
+        //         enrichmentCount: 3
+        //     }
+        // }
     },
     cinnabar: {
         meltingPoint: 580//,

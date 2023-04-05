@@ -14,9 +14,18 @@ ServerEvents.recipes((event) => {
         { output: /pendorite/ },
         { output: /emeraldite/ },
         { output: /ametrine/ },
+
         { output: /thermal.*cinnabar_ore/},
+        { output: /thermal.*niter_ore/},
+        { output: /thermal.*sulfur_ore/},
+        { output: /mekanism.*fluorite_ore/},
+        { output: /rftoolsbase:dimensionalshard_/},
 
         { input: /thermal.*cinnabar_ore/},
+        { input: /thermal.*niter_ore/},
+        { input: /thermal.*sulfur_ore/},
+        { input: /mekanism.*fluorite_ore/},
+        { input: /rftoolsbase:dimensionalshard_/},
 
         { id: /ars_nouveau:.*_dye/ },
 
@@ -76,6 +85,8 @@ ServerEvents.recipes((event) => {
         { id: 'powah:crafting/capacitor_basic_tiny' },
 
         { id: 'quark:tweaks/smelting/bone_meal_utility' },
+
+        { id: 'rftoolsbase:dimensionalshard' },
 
         { id: 'thermal:machines/centrifuge/centrifuge_allium' },
         { id: 'thermal:machines/centrifuge/centrifuge_azure_bluet' },

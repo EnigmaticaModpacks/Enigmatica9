@@ -5,6 +5,7 @@
 // Variable "localDebug" determines if any debugging information, like what material uses fallback output, or printing of recipes, is being executed, use with caution!
 let localDebug = false
 
+//TODO: Rework Fallback to use Tag lists from files >.>
 // Main Part
 ServerEvents.recipes((event) => {
     if (global.isNormalMode == false) {
@@ -540,24 +541,19 @@ function gem_ore_processing(material, properties, event, id_prefix) {
 
     switch(gem_properties.output.type) {
         case("dust"):
-        output_itemStack = AlmostUnified.getPreferredItemForTag(`forge:dusts/${material}`)
-        if (output_itemStack.isEmpty()) {
-            output_itemStack = Item.of(Ingredient.of(`#forge:dusts/${material}`).getItemIds()[0])
-            if (localDebug) console.warn(" // Ore Processing Rework // Material \"" + material + "\" uses fallback output item for gem processing! Type: Dust")
-            // OVERRIDE -> Ingredient.of('#tag').getItemIds() returns nothing at first launch at the time of writing this script, so for now, this "safety feature" doesn't exactly work...
-            // This is here to fix the issues with one problematic material -> Dimensional Shard, as it uses this fallback output as only material now.
-            if (material == 'dimensional') {
-                output_itemStack = Item.of('rftoolsbase:dimensionalshard')
+            output_itemStack = AlmostUnified.getPreferredItemForTag(`forge:dusts/${material}`)
+            if (output_itemStack.isEmpty()) {
+                output_itemStack = Item.of(Ingredient.of(`#forge:dusts/${material}`).getItemIds()[0])
+                if (localDebug) console.warn(" // Ore Processing Rework // Material \"" + material + "\" uses fallback output item for gem processing! Type: Dust")
             }
-        }
-        break
+            break
         case("gem"):
-        output_itemStack = AlmostUnified.getPreferredItemForTag(`forge:gems/${material}`)
-        if (output_itemStack.isEmpty()) {
-            output_itemStack = Item.of(Ingredient.of(`#forge:gems/${material}`).getItemIds()[0])
-            if (localDebug) console.warn(" // Ore Processing Rework // Material \"" + material + "\" uses fallback output item for gem processing! Type: Gem")
-        }
-        break
+            output_itemStack = AlmostUnified.getPreferredItemForTag(`forge:gems/${material}`)
+            if (output_itemStack.isEmpty()) {
+                output_itemStack = Item.of(Ingredient.of(`#forge:gems/${material}`).getItemIds()[0])
+                if (localDebug) console.warn(" // Ore Processing Rework // Material \"" + material + "\" uses fallback output item for gem processing! Type: Gem")
+            }
+            break
     }
 
     // Create Crushing Wheels
