@@ -428,6 +428,294 @@ const entries = {
                 normal: '%s is bound to this dimensional matrix.',
                 expert: 'The Universe is under no obligation to make sense to you.'
             }
+        },
+        {
+            key: 'ritual.occultism.summon_afrit_crusher.finished',
+            value: {
+                normal: 'Summoned afrit ore crusher successfully.',
+                expert: 'Summoned afrit engraver successfully.'
+            }
+        },
+        {
+            key: 'ritual.occultism.summon_afrit_crusher.interrupted',
+            value: {
+                normal: 'Summoning of afrit ore crusher interrupted.',
+                expert: 'Summoning of afrit engraver interrupted.'
+            }
+        },
+        {
+            key: 'ritual.occultism.summon_afrit_crusher.started',
+            value: {
+                normal: 'Started summoning afrit ore crusher.',
+                expert: 'Started summoning afrit engraver.'
+            }
+        },
+        {
+            key: 'ritual.occultism.summon_djinni_crusher.finished',
+            value: {
+                normal: 'Summoned djinni ore crusher successfully.',
+                expert: 'Summoned djinni engraver successfully.'
+            }
+        },
+        {
+            key: 'ritual.occultism.summon_djinni_crusher.interrupted',
+            value: {
+                normal: 'Summoning of djinni ore crusher interrupted.',
+                expert: 'Summoning of djinni engraver interrupted.'
+            }
+        },
+        {
+            key: 'ritual.occultism.summon_djinni_crusher.started',
+            value: {
+                normal: 'Started summoning djinni ore crusher.',
+                expert: 'Started summoning djinni engraver.'
+            }
+        },
+        {
+            key: 'ritual.occultism.summon_foliot_crusher.finished',
+            value: {
+                normal: 'Summoned foliot ore crusher successfully.',
+                expert: 'Summoned foliot engraver successfully.'
+            }
+        },
+        {
+            key: 'ritual.occultism.summon_foliot_crusher.interrupted',
+            value: {
+                normal: 'Summoning of foliot ore crusher interrupted.',
+                expert: 'Summoning of foliot engraver interrupted.'
+            }
+        },
+        {
+            key: 'ritual.occultism.summon_foliot_crusher.started',
+            value: {
+                normal: 'Started summoning foliot ore crusher.',
+                expert: 'Started summoning foliot engraver.'
+            }
+        },
+        {
+            key: 'ritual.occultism.summon_marid_crusher.finished',
+            value: {
+                normal: 'Summoned marid ore crusher successfully.',
+                expert: 'Summoned marid engraver successfully.'
+            }
+        },
+        {
+            key: 'ritual.occultism.summon_marid_crusher.interrupted',
+            value: {
+                normal: 'Summoning of marid ore crusher interrupted.',
+                expert: 'Summoning of marid engraver interrupted.'
+            }
+        },
+        {
+            key: 'ritual.occultism.summon_marid_crusher.started',
+            value: {
+                normal: 'Started summoning marid ore crusher.',
+                expert: 'Started summoning marid engraver.'
+            }
+        },
+        {
+            key: 'occultism.jei.crushing',
+            value: {
+                normal: 'Crusher Spirit',
+                expert: 'Engraving Spirit'
+            }
+        },
+        {
+            key: 'item.occultism.ritual_dummy.summon_afrit_crusher',
+            value: {
+                normal: 'Ritual: Summon Afrit Crusher',
+                expert: 'Ritual: Summon Afrit Etcher'
+            }
+        },
+        {
+            key: 'item.occultism.ritual_dummy.summon_afrit_crusher.tooltip',
+            value: {
+                normal: 'The crusher is a spirit summoned to crush ores into dusts, effectively (more than) doubling the metal output. This crusher decays (much) slower than lower tier crushers.',
+                expert: 'The etcher is a spirit summoned engrave materials.'
+            }
+        },
+        {
+            key: 'item.occultism.ritual_dummy.summon_djinni_crusher',
+            value: {
+                normal: 'Ritual: Summon Djinni Crusher',
+                expert: 'Ritual: Summon Djinni Etcher'
+            }
+        },
+        {
+            key: 'item.occultism.ritual_dummy.summon_djinni_crusher.tooltip',
+            value: {
+                normal: 'The crusher is a spirit summoned to crush ores into dusts, effectively (more than) doubling the metal output. This crusher decays (much) slower than lower tier crushers.',
+                expert: 'The etcher is a spirit summoned engrave materials.'
+            }
+        },
+        {
+            key: 'item.occultism.ritual_dummy.summon_foliot_crusher',
+            value: {
+                normal: 'Ritual: Summon Foliot Crusher',
+                expert: 'Ritual: Summon Foliot Etcher'
+            }
+        },
+        {
+            key: 'item.occultism.ritual_dummy.summon_foliot_crusher.tooltip',
+            value: {
+                normal: 'The crusher is a spirit summoned to crush ores into dusts, effectively doubling the metal output.',
+                expert: 'The etcher is a spirit summoned engrave materials.'
+            }
+        },
+        {
+            key: 'item.occultism.ritual_dummy.summon_marid_crusher',
+            value: {
+                normal: 'Ritual: Summon Marid Crusher',
+                expert: 'Ritual: Summon Marid Etcher'
+            }
+        },
+        {
+            key: 'item.occultism.ritual_dummy.summon_marid_crusher.tooltip',
+            value: {
+                normal: 'The crusher is a spirit summoned to crush ores into dusts, effectively (more than) doubling the metal output. This crusher decays (much) slower than lower tier crushers.',
+                expert: 'The etcher is a spirit summoned engrave materials.'
+            }
+        },
+        {
+            key: 'book.occultism.dictionary_of_spirits.summoning_rituals.summon_crusher_t1.about_crushers.text',
+            value: {
+                normal: 'Crusher spirits are summoned to crush ores into dusts, effectively multiplying the metal output. They will pick up appropriate ores and drop the resulting dusts into the world. A purple particle effect and a crushing sound indicate the crusher is at work.\n',
+                expert: 'Etcher spirits are summoned to engrave materials. They will pick up appropriate items and drop the resulting engraved item into the world. A purple particle effect indicates the Etcher is at work.\n'
+            }
+        },
+        {
+            key: 'book.occultism.dictionary_of_spirits.summoning_rituals.summon_crusher_t1.about_crushers.title',
+            value: {
+                normal: 'Crusher Spirits',
+                expert: 'Etcher Spirits'
+            }
+        },
+        {
+            key: 'book.occultism.dictionary_of_spirits.summoning_rituals.summon_crusher_t1.automation.text',
+            value: {
+                normal: "To ease automation, try summoning a [Transporter Spirit](entry://occultism:dictionary_of_spirits/summoning_rituals/summon_transport_items)\nto place items from chests in the crusher's inventory, and a [Janitor Spirit](entry://occultism:dictionary_of_spirits/summoning_rituals/summon_cleaner) to collect the processed items.\n",
+                expert: "To ease automation, try summoning a [Transporter Spirit](entry://occultism:dictionary_of_spirits/summoning_rituals/summon_transport_items)\nto place items from chests in the etcher's inventory, and a [Janitor Spirit](entry://occultism:dictionary_of_spirits/summoning_rituals/summon_cleaner) to collect the processed items.\n"
+            }
+        },
+        {
+            key: 'book.occultism.dictionary_of_spirits.summoning_rituals.summon_crusher_t1.intro.text',
+            value: {
+                normal: 'The foliot crusher is the most basic crusher spirit.\n\\\n\\\nIt will crush **one** ore into **two** corresponding dusts.\n',
+                expert: 'The foliot etcher is the most basic etcher spirit.\n'
+            }
+        },
+        {
+            key: 'book.occultism.dictionary_of_spirits.summoning_rituals.summon_crusher_t1.intro.title',
+            value: {
+                normal: 'Foliot Crusher',
+                expert: 'Foliot Etcher'
+            }
+        },
+        {
+            key: 'book.occultism.dictionary_of_spirits.summoning_rituals.summon_crusher_t1.name',
+            value: {
+                normal: 'Summon Foliot Crusher',
+                expert: 'Summon Foliot Etcher'
+            }
+        },
+        {
+            key: 'book.occultism.dictionary_of_spirits.summoning_rituals.summon_crusher_t2.intro.text',
+            value: {
+                normal: 'The djinni crusher is resistant essence decay and faster and more efficient than the foliot crusher.\n\\\n\\\nIt will crush **one** ore into **three** corresponding dusts.\n',
+                expert: 'The djinni etcher is resistant essence decay and faster and more efficient than the foliot etcher.\n'
+            }
+        },
+        {
+            key: 'book.occultism.dictionary_of_spirits.summoning_rituals.summon_crusher_t2.intro.title',
+            value: {
+                normal: 'Djinni Crusher',
+                expert: 'Djinni Etcher'
+            }
+        },
+        {
+            key: 'book.occultism.dictionary_of_spirits.summoning_rituals.summon_crusher_t2.name',
+            value: {
+                normal: 'Summon Djinni Crusher',
+                expert: 'Summon Djinni Etcher'
+            }
+        },
+        {
+            key: 'book.occultism.dictionary_of_spirits.summoning_rituals.summon_crusher_t3.intro.text',
+            value: {
+                normal: 'The afrit crusher is resistant to essence decay and faster and more efficient than the djinni crusher.\n\\\n\\\nIt will crush **one** ore into **four** corresponding dusts.\n',
+                expert: 'The afrit etcher is resistant to essence decay and faster and more efficient than the djinni etcher.\n'
+            }
+        },
+        {
+            key: 'book.occultism.dictionary_of_spirits.summoning_rituals.summon_crusher_t3.intro.title',
+            value: {
+                normal: 'Afrit Crusher',
+                expert: 'Afrit Etcher'
+            }
+        },
+        {
+            key: 'book.occultism.dictionary_of_spirits.summoning_rituals.summon_crusher_t3.name',
+            value: {
+                normal: 'Summon Afrit Crusher',
+                expert: 'Summon Afrit Etcher'
+            }
+        },
+        {
+            key: 'book.occultism.dictionary_of_spirits.summoning_rituals.summon_crusher_t4.intro.text',
+            value: {
+                normal: 'The afrit crusher is resistant to essence decay and faster and more efficient than the afrit crusher.\n\\\n\\\nIt will crush **one** ore into **six** corresponding dusts.\n',
+                expert: 'The afrit etcher is resistant to essence decay and faster and more efficient than the afrit etcher.\n'
+            }
+        },
+        {
+            key: 'book.occultism.dictionary_of_spirits.summoning_rituals.summon_crusher_t4.intro.title',
+            value: {
+                normal: 'Marid Crusher',
+                expert: 'Marid Etcher'
+            }
+        },
+        {
+            key: 'book.occultism.dictionary_of_spirits.summoning_rituals.summon_crusher_t4.name',
+            value: {
+                normal: 'Summon Marid Crusher',
+                expert: 'Summon Marid Etcher'
+            }
+        },
+
+        {
+            key: 'job.occultism.crush_tier1',
+            value: {
+                normal: 'Slow Crusher',
+                expert: 'Slow Etcher'
+            }
+        },
+        {
+            key: 'job.occultism.crush_tier2',
+            value: {
+                normal: 'Crusher',
+                expert: 'Etcher'
+            }
+        },
+        {
+            key: 'job.occultism.crush_tier3',
+            value: {
+                normal: 'Fast Crusher',
+                expert: 'Fast Etcher'
+            }
+        },
+        {
+            key: 'job.occultism.crush_tier4',
+            value: {
+                normal: 'Very Fast Crusher',
+                expert: 'Very Fast Etcher'
+            }
+        },
+        {
+            key: 'jei.occultism.crushing.tier',
+            value: {
+                normal: 'Min Crusher Tier: %d',
+                expert: 'Min Etcher Tier: %d'
+            }
         }
     ],
     industrialforegoing: [

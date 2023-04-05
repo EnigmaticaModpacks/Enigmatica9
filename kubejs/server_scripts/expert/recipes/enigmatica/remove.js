@@ -33,6 +33,7 @@ ServerEvents.recipes((event) => {
 
         { type: 'thermal:smelter_recycle' },
         { type: 'ae2:charger' },
+        { type: 'occultism:crushing' },
 
         { id: 'ae2:network/blocks/crystal_processing_charger' },
         { id: 'ae2:network/parts/quartz_fiber_part' },

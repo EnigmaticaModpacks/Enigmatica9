@@ -129,17 +129,6 @@ ServerEvents.recipes((event) => {
             .id(`${id_prefix}immersiveengineering_crusher/${id_suffix}`);
 
         outputs = dye_source.primary;
-        // Occultism Crushing
-        event
-            .custom({
-                type: 'occultism:crushing',
-                ingredient: Ingredient.of(input).toJson(),
-                result: Item.of(outputs, count).toJson(),
-                crushing_time: duration,
-                ignore_crushing_multiplier: false
-            })
-            .id(`${id_prefix}occultism_crushing/${id_suffix}`);
-
         // Mekanism Enriching
         event
             .custom({

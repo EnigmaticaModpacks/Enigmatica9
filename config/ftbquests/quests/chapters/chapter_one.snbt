@@ -228,8 +228,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -1.0d
+			x: -0.5d
+			y: -1.5d
 			description: ["Obtain a bottle of Sunlight and Right-Click a block of Ironwood to convert it to a Natural Altar. Be sure to build the rest of the required structure as well."]
 			dependencies: ["6DBB9A9F698FA7B9"]
 			id: "4B874AA448FF4C7A"
@@ -240,26 +240,19 @@
 			}]
 		}
 		{
-			x: -8.0d
+			x: -8.5d
 			y: -2.0d
+			description: [
+				"By balancing the outward force of Aura with the inward crushing of this spell, we’re able to reach a stable equilibrium that is both strong and durable; Compressed Stone. "
+				""
+				"From here, more advanced forms of metalworking may begin. "
+			]
 			dependencies: ["06416F333E89B682"]
 			id: "79B755D0BDB6A8B7"
 			tasks: [{
 				id: "03C5CEE9CEF3B241"
 				type: "item"
 				item: "pneumaticcraft:compressed_stone"
-			}]
-		}
-		{
-			x: -8.0d
-			y: -1.0d
-			description: ["Combine Compressed stone and Stripped Canopy Logs to create Compressed Stone Casings."]
-			dependencies: ["79B755D0BDB6A8B7"]
-			id: "19EF89C9BD4F7CB8"
-			tasks: [{
-				id: "2459AC669EBDC270"
-				type: "item"
-				item: "create:andesite_casing"
 			}]
 		}
 		{
@@ -287,7 +280,7 @@
 		}
 		{
 			x: -2.0d
-			y: 0.0d
+			y: -1.0d
 			shape: "hexagon"
 			description: [
 				"The Cult of the Ur-Ghast, foolish as they were, were not far off in their research. Carminite has excellent arcane resonance, but the Redstone they coupled it with was too strong a moderator. The resulting superradiant instability quickly became too much for their contraption to manage. "
@@ -312,8 +305,8 @@
 		{
 			title: "Applied Energistics"
 			icon: "ae2:energy_acceptor"
-			x: -2.0d
-			y: 1.0d
+			x: -3.5d
+			y: -0.5d
 			description: ["It’s time we start putting some of this magic to use getting organized. With the Aura Forge providing basic magical energy, we can channel our magical energies into these crystalline networks, allowing us to craft and sort more readily. "]
 			dependencies: ["3B372F597A05E777"]
 			id: "4FEF700D65A68CFB"
@@ -356,8 +349,8 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: -3.0d
+			x: -2.0d
+			y: -4.0d
 			description: ["A wise witch will use every tool at her disposal, and Superior Shields offer a potent source of protection when exploring these lands. "]
 			dependencies: ["058A00E7A69F684A"]
 			id: "7C58B3E61A83C628"
@@ -428,7 +421,7 @@
 			}]
 		}
 		{
-			x: -9.0d
+			x: -10.0d
 			y: -2.0d
 			description: [
 				"A Blaze will need to be summoned and bound into appropriate materials to create this device. Luckily, with control of the elements, summoning forth a single Blaze should prove to be a trivial task."
@@ -463,8 +456,8 @@
 			}]
 		}
 		{
-			x: -8.5d
-			y: 1.5d
+			x: 1.5d
+			y: -4.0d
 			description: [
 				"Use the Spirit of Calling to grow the Tree of Life somewhere in the Twilight Forest. Choose your spot carefully, as this same tree will be upgraded as you progress through the pack. "
 				""
@@ -483,8 +476,8 @@
 			}]
 		}
 		{
-			x: -9.0d
-			y: 2.5d
+			x: 1.0d
+			y: -3.0d
 			shape: "hexagon"
 			description: [
 				"The moon known as the Everbright is a chill place of ice, snow, and roaming spirits. "
@@ -503,8 +496,8 @@
 		}
 		{
 			icon: "blue_skies:sunstone_crystal"
-			x: -8.0d
-			y: 2.5d
+			x: 2.0d
+			y: -3.0d
 			shape: "hexagon"
 			description: [
 				"The moon known as the Everdawn is a place of warmth and dangerous insects."
@@ -522,7 +515,7 @@
 		}
 		{
 			icon: "twilightforest:lich_trophy"
-			x: -11.5d
+			x: -13.0d
 			y: -5.0d
 			shape: "hexagon"
 			description: [
@@ -545,8 +538,9 @@
 			]
 		}
 		{
-			x: -8.0d
+			x: -8.5d
 			y: -3.0d
+			description: ["Luckily, despite the state of the Lich’s book, the Crush glyphs appear whole and in a usable state. Many others are going to need repair, but this will serve for now. "]
 			dependencies: ["272C349F5CF92FA0"]
 			id: "06416F333E89B682"
 			tasks: [{
@@ -556,7 +550,7 @@
 			}]
 		}
 		{
-			x: -12.0d
+			x: -13.5d
 			y: -3.0d
 			dependencies: ["30DB748747B58442"]
 			id: "7507572BD048B6C9"
@@ -567,7 +561,7 @@
 			}]
 		}
 		{
-			x: -8.0d
+			x: -8.5d
 			y: -5.0d
 			shape: "hexagon"
 			description: ["Find a spot marked by Uberous Soil in the Highlands, dig down to find a Troll den, and return with their Magic Beans."]
@@ -603,7 +597,7 @@
 			}]
 		}
 		{
-			x: -10.0d
+			x: -11.5d
 			y: -4.0d
 			description: ["The elementals required to craft these Essences are not native to this land, but a rift may occasionally open when breaking Spawners, unleashing elementals and other fearful creatures. Come prepared for a fight."]
 			dependencies: ["1663996E4CDF9947"]
@@ -615,7 +609,7 @@
 			}]
 		}
 		{
-			x: -8.0d
+			x: -8.5d
 			y: -4.0d
 			description: ["The elementals required to craft these Essences are not native to this land, but a rift may occasionally open when breaking Spawners, unleashing elementals and other fearful creatures. Come prepared for a fight."]
 			dependencies: ["3A1C75AE5E314CE0"]
@@ -628,7 +622,7 @@
 		}
 		{
 			icon: "twilightforest:alpha_yeti_trophy"
-			x: -10.0d
+			x: -11.5d
 			y: -5.0d
 			shape: "hexagon"
 			description: ["Brave the frigid caves where Yeti make their homes and return with a sample of their fur."]
@@ -640,7 +634,7 @@
 			}]
 		}
 		{
-			x: -11.5d
+			x: -13.0d
 			y: -4.0d
 			dependencies: ["370C40BCC3A6A055"]
 			id: "30DB748747B58442"
@@ -651,7 +645,7 @@
 			}]
 		}
 		{
-			x: -11.0d
+			x: -12.5d
 			y: -3.0d
 			description: ["Once repositories of ancient spell knowledge, these tomes have been animated into some twisted semblance of life. With some care, some spells may still be extracted from them, however. Summoning a few will be an excellent way to supplement this newfound spell book. "]
 			dependencies: ["30DB748747B58442"]
@@ -664,7 +658,7 @@
 		}
 		{
 			icon: "twilightforest:hydra_trophy"
-			x: -9.0d
+			x: -10.0d
 			y: -5.0d
 			shape: "hexagon"
 			description: ["Defeat the Hydra in the Fire Swamp and return with a sample of its blood."]
@@ -676,7 +670,7 @@
 			}]
 		}
 		{
-			x: -9.0d
+			x: -10.0d
 			y: -4.0d
 			description: ["The elementals required to craft these Essences are not native to this land, but a rift may occasionally open when breaking Spawners, unleashing elementals and other fearful creatures. Come prepared for a fight."]
 			dependencies: ["3D88325CD7EA9978"]
@@ -689,8 +683,8 @@
 		}
 		{
 			icon: "twilightforest:snow_queen_trophy"
-			x: -8.5d
-			y: 0.5d
+			x: 1.5d
+			y: -5.0d
 			shape: "hexagon"
 			id: "729E9D41A28D0E4D"
 			tasks: [{
@@ -700,7 +694,7 @@
 			}]
 		}
 		{
-			x: -9.0d
+			x: -10.0d
 			y: -3.0d
 			dependencies: ["7A3B33287BFF4CB1"]
 			id: "30547CCA38EC3A0D"
@@ -746,6 +740,28 @@
 				id: "05F83955C4E12297"
 				type: "item"
 				item: "hexerei:mindful_trance_blend"
+			}]
+		}
+		{
+			x: -9.0d
+			y: -1.0d
+			dependencies: ["79B755D0BDB6A8B7"]
+			id: "44B02A5817C4144A"
+			tasks: [{
+				id: "7E269B72F57C62D3"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -1.0d
+			dependencies: ["79B755D0BDB6A8B7"]
+			id: "1B65494C4D2422F6"
+			tasks: [{
+				id: "0B175CCA250DA302"
+				type: "item"
+				item: "createaddition:rolling_mill"
 			}]
 		}
 	]
