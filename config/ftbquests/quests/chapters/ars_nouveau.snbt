@@ -2197,7 +2197,7 @@
 				""
 				"Note: Chained Lecterns may not have Bookwyrms or Inventories bound to them. Doing so will sever the connection with the primary network and create a new separate network."
 				""
-				"Finally, it should be mentioned that any unbound inventory placed directly adjacent to the primary Lectern will act as an input for the entire system. Any items that find their way into this inventory will be automatically sorted out to linked inventories by the Bookwyrms. "
+				"Finally, it should be mentioned that any unbound inventory placed directly adjacent to a Lectern will act as an input for the entire system. Any items that find their way into this inventory will be automatically sorted out to linked inventories by the Bookwyrms. This works for remote Lecterns as well. Items may also be inserted directly into the Lectern via hoppers or other automated logistics. "
 			]
 			dependencies: ["00000000000003F0"]
 			min_width: 300
