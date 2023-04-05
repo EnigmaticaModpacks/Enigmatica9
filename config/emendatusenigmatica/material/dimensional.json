@@ -3,7 +3,6 @@
     "source": "modded",
     "localizedName": "Dimensional Shard",
     "processedTypes": [
-        "ore",
         "storage_block",
         "cluster",
         "dust"

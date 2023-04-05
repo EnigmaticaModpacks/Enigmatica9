@@ -3,7 +3,6 @@
     "source": "modded",
     "localizedName": "Sulfur",
     "processedTypes": [
-        "ore",
         "storage_block",
         "gem",
         "dust",
