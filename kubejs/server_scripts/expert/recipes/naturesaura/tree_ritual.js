@@ -173,9 +173,25 @@ ServerEvents.recipes((event) => {
                 '#forge:essences/earth',
                 '#forge:essences/earth'
             ],
-            time: 5,
+            time: 40,
             sapling: 'quark:yellow_blossom_sapling',
             id: `${id_prefix}drill_bit_compressed_iron`
+        },
+        {
+            output: 'ars_nouveau:storage_lectern',
+            ingredients: [
+                'ars_nouveau:archwood_chest',
+                'ars_nouveau:archwood_chest',
+                'ars_nouveau:blank_parchment',
+                'ars_nouveau:blank_parchment',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf'
+            ],
+            time: 20,
+            sapling: 'ars_nouveau:blue_archwood_sapling',
+            id: `${id_prefix}storage_lectern`
         }
 
         /*

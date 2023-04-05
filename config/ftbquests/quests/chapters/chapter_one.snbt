@@ -198,7 +198,7 @@
 		}
 		{
 			title: "Elemental Essences"
-			x: -5.5d
+			x: -5.0d
 			y: -2.5d
 			description: [
 				"Air: Obtain a feather from a Raven found throughout the Twilight Forest."
@@ -288,7 +288,7 @@
 		}
 		{
 			x: -0.5d
-			y: -1.0d
+			y: -1.5d
 			description: ["Obtain a bottle of Sunlight and Right-Click a block of Ironwood to convert it to a Natural Altar. Be sure to build the rest of the required structure as well."]
 			dependencies: ["6DBB9A9F698FA7B9"]
 			id: "4B874AA448FF4C7A"
@@ -299,7 +299,7 @@
 			}]
 		}
 		{
-			x: -5.0d
+			x: -5.5d
 			y: -1.5d
 			description: ["Obtained by blowing up Andesite, though better means certainly exist. "]
 			dependencies: ["4830632A0E6E9651"]
@@ -311,7 +311,7 @@
 			}]
 		}
 		{
-			x: -5.0d
+			x: -5.5d
 			y: 0.0d
 			description: ["Combine Compressed stone and Stripped Canopy Logs to create Compressed Stone Casings."]
 			dependencies: ["79B755D0BDB6A8B7"]
@@ -323,8 +323,8 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: 0.0d
+			x: -4.0d
+			y: 0.5d
 			description: ["By heating up the Air Essence within this contraption, we can induce the essence to create pressure which may be used to drive some very useful machinery."]
 			dependencies: ["19EF89C9BD4F7CB8"]
 			id: "0DB07D1C824BFEA8"
@@ -335,8 +335,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 0.0d
+			x: -2.5d
+			y: 1.0d
 			dependencies: ["0DB07D1C824BFEA8"]
 			id: "75C38D71F1A04EB4"
 			tasks: [{
@@ -346,8 +346,9 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 0.0d
+			x: -2.0d
+			y: -0.5d
+			shape: "hexagon"
 			description: [
 				"The Cult of the Ur-Ghast, foolish as they were, were not far off in their calculations. They merely miscalculated the moderating capabilities of Redstone. By fully encasing their reactor, it set up a resonance leading to their demise. "
 				""
@@ -364,14 +365,12 @@
 			}]
 		}
 		{
-			title: "Simple Storage"
-			x: -0.5d
-			y: 1.0d
-			description: ["It’s time we start putting some of this magic to use getting organized. With the Aura Forge we can channel our magical energies into these crystalline networks, allowing us to craft and sort more readily. "]
-			dependencies: [
-				"75C38D71F1A04EB4"
-				"3B372F597A05E777"
-			]
+			title: "Applied Energistics"
+			icon: "ae2:energy_acceptor"
+			x: -1.0d
+			y: 1.5d
+			description: ["It’s time we start putting some of this magic to use getting organized. With the Aura Forge providing basic magical energy, we can channel our magical energies into these crystalline networks, allowing us to craft and sort more readily. "]
+			dependencies: ["75C38D71F1A04EB4"]
 			id: "4FEF700D65A68CFB"
 			tasks: [
 				{
@@ -394,7 +393,7 @@
 		{
 			title: "Familiar Friends"
 			x: 1.0d
-			y: -2.0d
+			y: -2.5d
 			description: [
 				"With the death of the Naga, the fae are willing to grant their aid. They may be summoned forth to occupy many different forms, each of which will grant very useful boons."
 				""
@@ -433,7 +432,7 @@
 			]
 		}
 		{
-			x: 2.5d
+			x: 1.5d
 			y: -1.5d
 			description: [
 				"What is a witch without her broom?"
@@ -453,8 +452,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -3.0d
+			x: 0.5d
+			y: -3.5d
 			description: ["A wise witch will use every tool at her disposal, and Superior Shields offer a potent source of protection when exploring these lands. "]
 			dependencies: ["058A00E7A69F684A"]
 			id: "7C58B3E61A83C628"
@@ -525,8 +524,8 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: 0.5d
+			x: -5.5d
+			y: 1.0d
 			description: [
 				"A windmill will be the place to begin powering Create contraptions."
 				""
@@ -541,8 +540,8 @@
 			}]
 		}
 		{
-			x: -5.5d
-			y: 1.0d
+			x: -4.5d
+			y: 1.5d
 			dependencies: ["126F4A37A0A21921"]
 			id: "10B98B16BED0E03D"
 			tasks: [{
@@ -552,8 +551,8 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: 2.0d
+			x: -6.0d
+			y: 2.5d
 			dependencies: ["126F4A37A0A21921"]
 			id: "6B03BDFD08CB95A9"
 			tasks: [{
@@ -563,8 +562,8 @@
 			}]
 		}
 		{
-			x: -7.5d
-			y: 1.0d
+			x: -6.5d
+			y: 1.5d
 			dependencies: ["126F4A37A0A21921"]
 			id: "038666BDCF0A787C"
 			tasks: [
@@ -581,8 +580,8 @@
 			]
 		}
 		{
-			x: -6.5d
-			y: 3.0d
+			x: -5.5d
+			y: 3.5d
 			description: [
 				"A Blaze will need to be summoned and bound into appropriate materials to create this device. Luckily, with control of the elements, summoning forth a single Blaze should prove to be a trivial task."
 				""
@@ -597,8 +596,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 1.0d
+			x: -2.5d
+			y: 2.0d
 			description: ["The strange process of making Aluminum will begin with Clay converted to Kaolin Clay. Discover the rest of the process through JEI. "]
 			dependencies: ["75C38D71F1A04EB4"]
 			id: "345CBD118EAA0C09"
@@ -616,8 +615,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 2.0d
+			x: -2.5d
+			y: 3.0d
 			description: [
 				"Use the Spirit of Calling to grow the Tree of Life somewhere in the Twilight Forest. Choose your spot carefully, as this same tree will be upgraded as you progress through the pack. "
 				""
@@ -636,8 +635,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: 3.0d
+			x: -3.0d
+			y: 4.0d
 			shape: "hexagon"
 			description: [
 				"The moon known as the Everbright is a chill place of ice, snow, and roaming spirits. "
@@ -656,8 +655,8 @@
 		}
 		{
 			icon: "blue_skies:sunstone_crystal"
-			x: -1.5d
-			y: 3.0d
+			x: -2.0d
+			y: 4.0d
 			shape: "hexagon"
 			description: [
 				"The moon known as the Everdawn is a place of warmth and dangerous insects."
@@ -674,8 +673,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: 2.0d
+			x: -5.0d
+			y: 2.5d
 			dependencies: ["126F4A37A0A21921"]
 			id: "6ABCDCE95361076A"
 			tasks: [{
@@ -685,7 +684,7 @@
 			}]
 		}
 		{
-			x: -5.0d
+			x: -4.5d
 			y: -3.5d
 			description: [
 				"While Charms of Life have been left scattered around these lands, there is one creature know for hoarding them: The Lich. "

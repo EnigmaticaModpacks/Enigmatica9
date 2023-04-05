@@ -38,6 +38,7 @@ StartupEvents.registry('item', (event) => {
         'ritual_summon_wixie',
         'ritual_summon_wixie_from_shards',
         'ritual_summon_amethyst_golem',
+        'ritual_summon_bookwyrm',
         'ritual_summon_starbuncle',
         'ritual_summon_starbuncle_from_shards',
         'ritual_summon_crow',

@@ -46,6 +46,25 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_summon_amethyst_golem`
         },
         {
+            output: '2x ars_nouveau:bookwyrm_charm',
+            activation_item: '#forge:essences/conjuration',
+            inputs: [
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                '#forge:gems/amethyst',
+                '#forge:gems/amethyst',
+                '#forge:gems/amethyst',
+                '#forge:gems/amethyst'
+            ],
+            ritual_dummy: 'kubejs:ritual_summon_bookwyrm',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_bookwyrm`
+        },
+        {
             output: 'ars_nouveau:starbuncle_charm',
             activation_item: '#forge:essences/conjuration',
             inputs: [
