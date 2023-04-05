@@ -59,6 +59,17 @@ ServerEvents.recipes((event) => {
             inputs: ['powah:blank_card', '#forge:essences/abjuration', '#forge:gems/diopside'],
             energy: '100000',
             id: `${id_prefix}upgrade_anchor`
+        },
+        {
+            output: '4x kubejs:dim_arcanite_crystal',
+            inputs: [
+                '#forge:storage_blocks/source',
+                '#forge:gems/carminite',
+                '#forge:gems/carminite',
+                '#forge:gems/carminite'
+            ],
+            energy: '50000',
+            id: `${id_prefix}dim_arcanite_crystal`
         }
     ];
 

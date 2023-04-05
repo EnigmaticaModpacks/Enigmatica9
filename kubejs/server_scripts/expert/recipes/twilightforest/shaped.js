@@ -6,16 +6,6 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            output: 'twilightforest:carminite_reactor',
-            pattern: ['ABA', 'BCB', 'ABA'],
-            key: {
-                A: 'twilightforest:encased_towerwood',
-                B: '#forge:gems/carminite',
-                C: '#forge:storage_blocks/source'
-            },
-            id: 'twilightforest:carminite_reactor'
-        },
-        {
             output: '8x twilightforest:fiery_blood',
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {

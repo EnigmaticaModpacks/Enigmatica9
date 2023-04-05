@@ -350,18 +350,23 @@
 			y: -0.5d
 			shape: "hexagon"
 			description: [
-				"The Cult of the Ur-Ghast, foolish as they were, were not far off in their calculations. They merely miscalculated the moderating capabilities of Redstone. By fully encasing their reactor, it set up a resonance leading to their demise. "
+				"The Cult of the Ur-Ghast, foolish as they were, were not far off in their research. Carminite has excellent arcane resonance, but the Redstone they coupled it with was too strong a moderator. The resulting superradiant instability quickly became too much for their contraption to manage. "
 				""
-				"Simply setting the Redstone further away and adding some stabilizing elements is enough to make the device much safer to work with. "
+				"Fusing it with Source Gems, on the other hand, appears to properly channel the arcane fields. These first attempts appear imperfect, however. The process needs refining. "
 				""
-				"Refer to the Book of Natural Aura for instructions on setting up the multi-block for this. "
+				"================================================"
+				""
+				"Enigmatic Unity’s Pulsating Crystals serve as the basis for generating most FE, though a few other methods are still available. They require a Source Jar nearby from which they’ll periodically draw a quantity of Source, converting it into FE. If there is any Aura present when this happens, a portion of Aura will also be consumed, generating far more FE in the process. "
+				""
+				"These devices will never drain Aura into unsafe levels. "
 			]
 			dependencies: ["4B874AA448FF4C7A"]
+			min_width: 300
 			id: "3B372F597A05E777"
 			tasks: [{
 				id: "77D74CEE62130A5B"
 				type: "item"
-				item: "naturesaura:rf_converter"
+				item: "enigmaticunity:dim_source_generator"
 			}]
 		}
 		{

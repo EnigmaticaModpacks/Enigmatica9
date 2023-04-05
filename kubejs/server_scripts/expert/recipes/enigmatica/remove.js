@@ -14,6 +14,7 @@ ServerEvents.recipes((event) => {
         { mod: 'computercraft' },
         { mod: 'superiorshields' },
         { mod: 'mininggadgets' },
+        { mod: 'enigmaticunity' },
 
         { output: /pneumaticcraft:.*_upgrade/ },
         { output: /powah:player_transmitter.*/ },

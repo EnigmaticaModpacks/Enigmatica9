@@ -192,6 +192,19 @@ ServerEvents.recipes((event) => {
             time: 20,
             sapling: 'ars_nouveau:blue_archwood_sapling',
             id: `${id_prefix}storage_lectern`
+        },
+        {
+            output: 'enigmaticunity:dim_source_generator',
+            ingredients: [
+                'kubejs:dim_arcanite_crystal',
+                '#forge:planks/archwood',
+                '#forge:ingots/infused_iron',
+                '#forge:ingots/infused_iron',
+                'naturesaura:gold_leaf'
+            ],
+            time: 20,
+            sapling: 'ars_elemental:yellow_archwood_sapling',
+            id: `${id_prefix}dim_source_generator`
         }
 
         /*

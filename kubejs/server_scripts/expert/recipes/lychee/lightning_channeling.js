@@ -35,6 +35,22 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}lodestone`
+        },
+        {
+            item_in: [
+                { tag: 'forge:storage_blocks/source' },
+                { tag: 'forge:gems/carminite' },
+                { tag: 'forge:gems/carminite' },
+                { tag: 'forge:gems/carminite' }
+            ],
+            post: [
+                {
+                    type: 'drop_item',
+                    item: 'kubejs:dim_arcanite_crystal',
+                    count: 2
+                }
+            ],
+            id: `${id_prefix}dim_arcanite_crystal`
         }
     ];
 

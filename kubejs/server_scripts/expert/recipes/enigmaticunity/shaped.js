@@ -5,17 +5,6 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'powah:expert/enigmaticunity/shaped/';
     const recipes = [
         {
-            output: 'enigmaticunity:dim_source_generator',
-            pattern: [' A ', 'BCB', ' D '],
-            key: {
-                A: '#forge:gems/fluix',
-                B: 'naturesaura:infused_iron',
-                C: 'ars_nouveau:blue_archwood_log',
-                D: 'powah:capacitor_basic_large'
-            },
-            id: `enigmaticunity:dim_source_generator`
-        },
-        {
             output: 'enigmaticunity:dim_source_producer',
             pattern: ['AAA', 'ABA'],
             key: {
