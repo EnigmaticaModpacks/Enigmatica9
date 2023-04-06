@@ -24,6 +24,9 @@
 	informLights = true
 	#Should the Wilden Chimera dive bomb destroy blocks?
 	destructiveDiveBomb = true
+	#How many inventories can lectern support per bookwyrm
+	#Range: > 1
+	bookwyrmLimit = 8
 
 [drygmy_production]
 	#How much source drygmys consume per generation

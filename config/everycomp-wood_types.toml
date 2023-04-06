@@ -572,6 +572,7 @@
 			chest = true
 			bookshelf = true
 			stripped_post = true
+			hollow_log = true
 
 		[entries.wood_type.twilightforest]
 			banister = true
