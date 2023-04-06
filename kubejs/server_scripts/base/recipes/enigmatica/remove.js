@@ -18,12 +18,16 @@ ServerEvents.recipes((event) => {
         { output: /thermal.*cinnabar_ore/},
         { output: /thermal.*niter_ore/},
         { output: /thermal.*sulfur_ore/},
+        { output: /thermal.*sapphire_ore/},
+        { output: /thermal.*ruby_ore/},
         { output: /mekanism.*fluorite_ore/},
         { output: /rftoolsbase:dimensionalshard_/},
 
         { input: /thermal.*cinnabar_ore/},
         { input: /thermal.*niter_ore/},
         { input: /thermal.*sulfur_ore/},
+        { input: /thermal.*sapphire_ore/},
+        { input: /thermal.*ruby_ore/},
         { input: /mekanism.*fluorite_ore/},
         { input: /rftoolsbase:dimensionalshard_/},
 
@@ -71,6 +75,9 @@ ServerEvents.recipes((event) => {
         { id: /naturesaura:animal_spawner\/sheep_/ },
 
         { id: 'occultism:crafting/butcher_knife' },
+        { id: /occultism:miner\/.*\/deepslate_/ },
+        { id: 'occultism:miner/ores/sapphire_ore' },
+        { id: 'occultism:miner/ores/ruby_ore' },
 
         { id: /pneumaticcraft:thermo_plant\/vegetable_oil_from_/ },
         { id: /pneumaticcraft:thermo_plant\/ethanol_from_/ },

@@ -1,6 +1,6 @@
 ServerEvents.recipes((event) => {
     let metals = Object.keys(metal_properties)
-    let gems = Object.keys(gemProperties)
+    let gems = Object.keys(gem_properties)
     let exceptions = {
         // Gems
         coal: {

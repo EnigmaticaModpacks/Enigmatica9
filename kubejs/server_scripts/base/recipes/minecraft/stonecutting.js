@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
 
     // TODO: Rework ALL iterations over tags to use cached FILES!
     let conversionTypes = ['storage_block', 'ore'];
-    let materials = Object.keys(metal_properties).concat(Object.keys(gemProperties))
+    let materials = Object.keys(metal_properties).concat(Object.keys(gem_properties))
     conversionTypes.forEach((type) => {
        materials.forEach((material) => {
             let tag = Ingredient.of(`#forge:${type}s/${material}`);

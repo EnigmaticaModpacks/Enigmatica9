@@ -11,6 +11,9 @@ const metal_properties = {
             },
             create: {
                 processingTime: 350
+            },
+            occultism: {
+                oreWeight: 600
             }
         }
     },
@@ -23,6 +26,9 @@ const metal_properties = {
             },
             create: {
                 processingTime: 400
+            },
+            occultism: {
+                oreWeight: 750
             }
         }
     },
@@ -35,6 +41,9 @@ const metal_properties = {
             },
             create: {
                 processingTime: 300
+            },
+            occultism: {
+                oreWeight: 320
             }
         }
     },
@@ -47,6 +56,9 @@ const metal_properties = {
             },
             create: {
                 processingTime: 350
+            },
+            occultism: {
+                oreWeight: 610
             }
         }
     },
@@ -59,6 +71,9 @@ const metal_properties = {
             },
             create: {
                 processingTime: 400
+            },
+            occultism: {
+                oreWeight: 210
             }
         }
     },
@@ -71,6 +86,9 @@ const metal_properties = {
             },
             create: {
                 processingTime: 400
+            },
+            occultism: {
+                oreWeight: 200
             }
         }
     },
@@ -83,6 +101,9 @@ const metal_properties = {
             },
             create: {
                 processingTime: 300
+            },
+            occultism: {
+                oreWeight: 500
             }
         }
     },
@@ -95,6 +116,9 @@ const metal_properties = {
             },
             create: {
                 processingTime: 300
+            },
+            occultism: {
+                oreWeight: 400
             }
         }
     },
@@ -107,6 +131,9 @@ const metal_properties = {
             },
             create: {
                 processingTime: 350
+            },
+            occultism: {
+                oreWeight: 232
             }
         }
     },
@@ -119,6 +146,9 @@ const metal_properties = {
             },
             create: {
                 processingTime: 300
+            },
+            occultism: {
+                oreWeight: 430
             }
         }
     },
@@ -131,6 +161,9 @@ const metal_properties = {
             },
             create: {
                 processingTime: 350
+            },
+            occultism: {
+                oreWeight: 190 
             }
         }
     },
@@ -143,7 +176,10 @@ const metal_properties = {
     //         },
     //         create: {
     //             processingTime: 400
-    //         }
+    //         },
+    //        occultism: {
+    //            oreWeight: 170
+    //        }
     //     }
     // },
     iesnium: {

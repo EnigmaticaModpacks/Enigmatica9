@@ -35,7 +35,8 @@
 //             secondaryChance: 0.25
 //         }
 //         occultism: {
-//             primaryCount: 6
+//             primaryCount: 6,
+//             oreWeight: 500 // For Djini Miners
 //         },
 //         mekanism: {
 //             enrichmentCount: 6,                          // Output for Enriching
@@ -59,7 +60,7 @@ function getItemFromTag(tag) {
     return AlmostUnified.getPreferredItemForTag(tag).getId()
 }
 
-const gemProperties = {
+const gem_properties = {
     redstone: {
         meltingPoint: 660,
         oreProcessing: {
@@ -90,7 +91,8 @@ const gemProperties = {
                 secondaryChance: 0.25
             },
             occultism: {
-                primaryCount: 6
+                primaryCount: 6,
+                oreWeight: 520
             },
             mekanism: {
                 enrichmentCount: 8,
@@ -137,7 +139,8 @@ const gemProperties = {
                 secondaryChance: 0.5
             },
             occultism: {
-                primaryCount: 4
+                primaryCount: 4,
+                oreWeight: 1000
             },
             mekanism: {
                 enrichmentCount: 3,
@@ -179,7 +182,8 @@ const gemProperties = {
                 secondaryChance: 0.5
             },
             occultism: {
-                primaryCount: 2
+                primaryCount: 2,
+                oreWeight: 220
             },
             mekanism: {
                 enrichmentCount: 2,
@@ -221,7 +225,8 @@ const gemProperties = {
                 secondaryChance: 0.5
             },
             occultism: {
-                primaryCount: 2
+                primaryCount: 2,
+                oreWeight: 160
             },
             mekanism: {
                 enrichmentCount: 2,
@@ -263,7 +268,8 @@ const gemProperties = {
                 secondaryChance: 0.5
             },
             occultism: {
-                primaryCount: 9
+                primaryCount: 9,
+                oreWeight: 350
             },
             mekanism: {
                 enrichmentCount: 9,
@@ -342,7 +348,8 @@ const gemProperties = {
         //         secondaryChance: 0.25
         //     },
         //     occultism: {
-        //         primaryCount: 12
+        //         primaryCount: 12,
+        //         oreWeight:          
         //     },
         //     mekanism: {
         //         enrichmentCount: 8,
@@ -389,7 +396,8 @@ const gemProperties = {
                 secondaryChance: 0.25
             },
             occultism: {
-                primaryCount: 10
+                primaryCount: 10,
+                oreWeight: 1500
             },
             mekanism: {
                 enrichmentCount: 8,
@@ -431,7 +439,8 @@ const gemProperties = {
         //         secondaryChance: 0.25
         //     },
         //     occultism: {
-        //         primaryCount: 10
+        //         primaryCount: 10,
+        //         oreWeight:  
         //     },
         //     mekanism: {
         //         enrichmentCount: 8,
@@ -478,7 +487,8 @@ const gemProperties = {
         //         secondaryChance: 0.25
         //     },
         //     occultism: {
-        //         primaryCount: 8
+        //         primaryCount: 8,
+        //         oreWeight:
         //     },
         //     mekanism: {
         //         enrichmentCount: 8
@@ -515,7 +525,8 @@ const gemProperties = {
         //         secondaryChance: 0.25
         //     },
         //     occultism: {
-        //         primaryCount: 3
+        //         primaryCount: 3,
+        //         oreWeight:
         //     },
         //     mekanism: {
         //         enrichmentCount: 3
@@ -552,7 +563,8 @@ const gemProperties = {
         //         secondaryChance: 0.5
         //     },
         //     occultism: {
-        //         primaryCount: 4
+        //         primaryCount: 4,
+        //         oreWeight:
         //     },
         //     mekanism: {
         //         enrichmentCount: 4
@@ -750,7 +762,8 @@ const gemProperties = {
         //         primaryCount: 4
         //     },
         //     occultism: {
-        //         primaryCount: 4
+        //         primaryCount: 4,
+        //         oreWeight:
         //     },
         //     mekanism: {
         //         primaryCount: 4

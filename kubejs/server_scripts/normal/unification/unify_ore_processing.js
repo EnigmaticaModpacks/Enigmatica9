@@ -1,5 +1,5 @@
 // Ore processing Unification script
-// This script uses metal_properties and gemProperties defined in metal_properties.js and gem_properties.js, which can be found in kubejs/constants folder, to create all recipes required for processing raw and block versions of an Ore.
+// This script uses metal_properties and gem_properties defined in metal_properties.js and gem_properties.js, which can be found in kubejs/constants folder, to create all recipes required for processing raw and block versions of an Ore.
 // It uses Almost Unified getPreferredItemForTag() function to get output items, but because it only works for materials unified by AU, it can return empty itemstack for non-unified materials. If that happends, it tries to use any item present in provided tag.
 // This is not a problem for materials that return only one thing, however for materials that have 2 or more items returned in provided tag, it is, and it should be added to AU for unification.
 // Variable "localDebug" determines if any debugging information, like what material uses fallback output, or printing of recipes, is being executed, use with caution!
@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
 
     const id_prefix = 'enigmatica:normal/unification/ore_processing/'
     let metals = Object.keys(metal_properties)
-    let gems = Object.keys(gemProperties)
+    let gems = Object.keys(gem_properties)
     
     metals.forEach((metal) => {
         auto_fortune(metal, metal_properties, event, id_prefix)
@@ -22,7 +22,7 @@ ServerEvents.recipes((event) => {
     })
 
     gems.forEach((gem) => {
-        gem_ore_processing(gem, gemProperties, event, id_prefix)
+        gem_ore_processing(gem, gem_properties, event, id_prefix)
     })
 })
 
