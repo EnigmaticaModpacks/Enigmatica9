@@ -642,7 +642,134 @@ ServerEvents.recipes((event) => {
             ],
             id: `${id_prefix}aluminum_ore`
         },
-        // TODO: Blue Skies
+        // Blue_Skies
+        // TODO: Per-Biome bonuses and actual world ore gen for this, this is the only way to get them atm >.>
+        {
+            catalyst: { tag: 'industrialforegoing:laser_lens/red' },
+            output: { item: 'emendatusenigmatica:pyrope_ore' },
+            pointer: 0,
+            rarity: [
+                {
+                    depth_max: 320,
+                    depth_min: -64,
+                    weight: 20,
+                    blacklist: {},
+                    whitelist: {
+                        type: 'minecraft:worldgen/biome',
+                        values: biomes.in_everbright.concat(biomes.in_everdawn)
+                    }
+                }
+            ],
+            id: `${id_prefix}pyrope_ore`
+        },
+        {
+            catalyst: { tag: 'industrialforegoing:laser_lens/light_blue' },
+            output: { item: 'emendatusenigmatica:aquite_ore' },
+            pointer: 0,
+            rarity: [
+                {
+                    depth_max: 320,
+                    depth_min: -64,
+                    weight: 20,
+                    blacklist: {},
+                    whitelist: {
+                        type: 'minecraft:worldgen/biome',
+                        values: biomes.in_everbright.concat(biomes.in_everdawn)
+                    }
+                }
+            ],
+            id: `${id_prefix}aquite_ore`
+        },
+        {
+            catalyst: { tag: 'industrialforegoing:laser_lens/pink' },
+            output: { item: 'emendatusenigmatica:charoite_ore' },
+            pointer: 0,
+            rarity: [
+                {
+                    depth_max: 320,
+                    depth_min: -64,
+                    weight: 20,
+                    blacklist: {},
+                    whitelist: {
+                        type: 'minecraft:worldgen/biome',
+                        values: biomes.in_everbright.concat(biomes.in_everdawn)
+                    }
+                }
+            ],
+            id: `${id_prefix}charoite_ore`
+        },
+        {
+            catalyst: { tag: 'industrialforegoing:laser_lens/green' },
+            output: { item: 'emendatusenigmatica:diopside_ore' },
+            pointer: 0,
+            rarity: [
+                {
+                    depth_max: 320,
+                    depth_min: -64,
+                    weight: 20,
+                    blacklist: {},
+                    whitelist: {
+                        type: 'minecraft:worldgen/biome',
+                        values: biomes.in_everbright.concat(biomes.in_everdawn)
+                    }
+                }
+            ],
+            id: `${id_prefix}diopside_ore`
+        },
+        {
+            catalyst: { tag: 'industrialforegoing:laser_lens/red' },
+            output: { item: 'emendatusenigmatica:ventium_ore' },
+            pointer: 0,
+            rarity: [
+                {
+                    depth_max: 320,
+                    depth_min: -64,
+                    weight: 20,
+                    blacklist: {},
+                    whitelist: {
+                        type: 'minecraft:worldgen/biome',
+                        values: biomes.in_everbright
+                    }
+                }
+            ],
+            id: `${id_prefix}ventium_ore`
+        },
+        {
+            catalyst: { tag: 'industrialforegoing:laser_lens/purple' },
+            output: { item: 'emendatusenigmatica:falsite_ore' },
+            pointer: 0,
+            rarity: [
+                {
+                    depth_max: 320,
+                    depth_min: -64,
+                    weight: 20,
+                    blacklist: {},
+                    whitelist: {
+                        type: 'minecraft:worldgen/biome',
+                        values: biomes.in_everbright
+                    }
+                }
+            ],
+            id: `${id_prefix}falsite_ore`
+        },
+        {
+            catalyst: { tag: 'industrialforegoing:laser_lens/orange' },
+            output: { item: 'emendatusenigmatica:horizonite_ore' },
+            pointer: 0,
+            rarity: [
+                {
+                    depth_max: 320,
+                    depth_min: -64,
+                    weight: 20,
+                    blacklist: {},
+                    whitelist: {
+                        type: 'minecraft:worldgen/biome',
+                        values: biomes.in_everdawn
+                    }
+                }
+            ],
+            id: `${id_prefix}horizonite_ore`
+        }
     ];
 
     recipes.forEach((recipe) => {
