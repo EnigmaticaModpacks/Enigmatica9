@@ -28,10 +28,8 @@
         "crackChance": 0,
         "minYLevel": -50,
         "maxYLevel": 30,
-        "generateSamples": true,
-        "sampleBlocks": [
-            { "material": "sulfur", "weight": 10, "strata": "create_ochrum"}
-        ],
+        "generateSamples": false,
+        "sampleBlocks": [],
         "fillerTypes": [
             "minecraft_deepslate",
             "minecraft_tuff",

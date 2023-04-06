@@ -27,10 +27,8 @@
         "crackChance": 0.25,
         "minYLevel": -60,
         "maxYLevel": 0,
-        "generateSamples": true,
-        "sampleBlocks": [
-            { "material": "dimensional", "weight": 10, "strata": "create_asurine"}
-        ],
+        "generateSamples": false,
+        "sampleBlocks": [],
         "fillerTypes": [
             "minecraft_deepslate",
             "minecraft_tuff",
