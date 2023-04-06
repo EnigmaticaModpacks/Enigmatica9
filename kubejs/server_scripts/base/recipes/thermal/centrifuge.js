@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
                     chance: 0.75,
                     locked: true
                 },
-                { item: 'thermal:bitumen', chance: 1.5 },
+                { item: 'emendatusenigmatica:bitumen_gem', chance: 1.5 },
                 { item: 'thermal:tar', chance: 1.0 },
                 { fluid: 'pneumaticcraft:oil', amount: 100 }
             ],
@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
                     chance: 0.75,
                     locked: true
                 },
-                { item: 'thermal:bitumen', chance: 1.5 },
+                { item: 'emendatusenigmatica:bitumen_gem', chance: 1.5 },
                 { item: 'thermal:tar', chance: 1.0 },
                 { fluid: 'pneumaticcraft:oil', amount: 100 }
             ],

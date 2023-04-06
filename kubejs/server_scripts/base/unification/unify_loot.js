@@ -1,5 +1,6 @@
 // https://github.com/AlmostReliable/lootjs/wiki
 LootJS.modifiers((event) => {
+
     // Replace ingots / nuggets / Storage Blocks / Gems in loot chests!
     event.addLootTypeModifier(LootType.CHEST)
     // Ingots
@@ -68,8 +69,9 @@ LootJS.modifiers((event) => {
         while (iterator.hasNext()) {
             let tagString = iterator.next().location().toString()
             if (tagString.startsWith("forge:gems/")) {
-                if (Item.exists(`emendatusenigmatica:${tagString.substring(11)}_gem`)) {
-                    return Item.of(`emendatusenigmatica:${tagString.substring(11)}_gem`, ItemStack.getCount())
+                let tagSubString = tagString.substring(11)
+                if (Item.exists(`emendatusenigmatica:${tagSubString}_gem`)) {
+                    return Item.of(`emendatusenigmatica:${tagSubString}_gem`, ItemStack.getCount())
                 } else {
                     return ItemStack
                 }
@@ -101,4 +103,73 @@ LootJS.modifiers((event) => {
         return ItemStack
     })
 
+    // Replace all block drops of Raw Ores etc for EE ones!
+    event.addLootTypeModifier(LootType.BLOCK)
+    // Ingots
+    .modifyLoot(Ingredient.of("#forge:ingots"), (ItemStack) => {
+        if (ItemStack.getId().startsWith("emendatusenigmatica")) {
+            return ItemStack
+        }
+        let iterator = ItemStack.getTags().iterator()
+        while (iterator.hasNext()) {
+            let tagString = iterator.next().location().toString()
+            if (tagString.startsWith("forge:ingots/")) {
+                let tagSubString = tagString.substring(13)
+                if (Item.exists(`emendatusenigmatica:${tagSubString}_ingot`)) {
+                    return Item.of(`emendatusenigmatica:${tagSubString}_ingot`, ItemStack.getCount())
+                } else {
+                    return ItemStack
+                }
+            }
+        }
+        console.error("LootJS Unification Loot Modifier triggered for: Ingots, but any of required tags were found in the item:")
+        console.error(ItemStack.getId())
+        return ItemStack
+    })
+    //Gems
+    .modifyLoot(Ingredient.of("#forge:gems"), (ItemStack) => {
+        if (ItemStack.getId().startsWith("emendatusenigmatica")) {
+            return ItemStack
+        }
+        let iterator = ItemStack.getTags().iterator()
+        while (iterator.hasNext()) {
+            let tagString = iterator.next().location().toString()
+            if (tagString.startsWith("forge:gems/")) {
+                let tagSubString = tagString.substring(11)
+                if (Item.exists(`emendatusenigmatica:${tagSubString}_gem`)) {
+                    return Item.of(`emendatusenigmatica:${tagSubString}_gem`, ItemStack.getCount())
+                } else {
+                    return ItemStack
+                }
+            }
+        }
+        console.error("LootJS Unification Loot Modifier triggered for: Gems, but any of required tags were found in the item:")
+        console.error(ItemStack.getId())
+        return ItemStack
+    })
+    // Raw Ores
+    .modifyLoot(Ingredient.of("#forge:raw_materials"), (ItemStack) => {
+        if (ItemStack.getId().startsWith("emendatusenigmatica")) {
+            return ItemStack
+        }
+        let iterator = ItemStack.getTags().iterator()
+        while (iterator.hasNext()) {
+            let tagString = iterator.next().location().toString()
+            if (tagString.startsWith("forge:raw_materials/")) {
+                let tagSubString = tagString.substring(20)
+                if (Item.exists(`emendatusenigmatica:raw_${tagSubString}`)) {
+                    return Item.of(`emendatusenigmatica:raw_${tagSubString}`, ItemStack.getCount())
+                } else if (ItemStack.getId().startsWith("blue_skies")) {
+                    if (Item.exists(`emendatusenigmatica:${tagSubString}_gem`)) {
+                        return Item.of(`emendatusenigmatica:${tagSubString}_gem`)
+                    }
+                } else {
+                    return ItemStack
+                }
+            }
+        }
+        console.error("LootJS Unification Loot Modifier triggered for: Raw Materials, but any of required tags were found in the item:")
+        console.error(ItemStack.getId())
+        return ItemStack
+    })
 });

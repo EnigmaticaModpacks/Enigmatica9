@@ -72,13 +72,13 @@ ServerEvents.recipes((event) => {
         } else {
             material_properties = gem_properties[material]
         }
-
+        
         if (material_properties.oreProcessing != null && material_properties.oreProcessing.occultism != null && material_properties.oreProcessing.occultism.oreWeight != null) {
             recipes.push(
                 {
                     ingredient: { tag: "occultism:miners/deeps" },
                     output: `emendatusenigmatica:${material}_deepslate_ore`,
-                    weight: material_properties.oreProcessing.occultism.oreWeightTa,
+                    weight: material_properties.oreProcessing.occultism.oreWeight,
                     id: `occultism:miner/deeps/${material}_deepslate_ore`
                 }
             )
