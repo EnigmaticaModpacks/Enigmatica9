@@ -827,12 +827,12 @@
 				"Is Blacklist" = false
 
 	[world.glimmering_weald]
-		#Experimental, dont change if you dont know what you are doing. Weirdness min value from which biome will spawn. Decreasing will make biome appear more often
-		#Allowed values: [-2,2]
-		"Min Weirdness Range" = 1.5499999523162842
-		#Experimental, dont change if you dont know what you are doing. Weirdness max value until which biome will spawn. Increasing will make biome appear more often
+		#Experimental, dont change if you dont know what you are doing. Depth max value until which biome will spawn. Increasing will make biome appear more often
 		#Allowed values: [-2,2]
 		"Max Weirdness Range" = 2.0
+		#Experimental, dont change if you dont know what you are doing. Depth min value from which biome will spawn. Decreasing will make biome appear more often
+		#Allowed values: [-2,2]
+		"Min Depth Range" = 1.5499999523162842
 
 [management]
 	"Expanded Item Interactions" = true
@@ -1409,8 +1409,10 @@
 		#Master Librarians will offer to exchange Ancient Tomes, provided you give them a max-level Enchanted Book of the Tome's enchantment too.
 		"Librarians Exchange Ancient Tomes" = true
 		"Overleveled Books Glow Rainbow" = true
-		#Also applies a random curse along each book
+		#Applying a tome will also randomly curse your item
 		"Curse Gear" = false
+		#Allows combining tomes with normal books
+		"Combine With Books" = true
 
 	[tools.torch_arrow]
 		"Extinguish On Miss" = false
@@ -1540,6 +1542,12 @@
 	[building.thatch]
 		#Allowed values: [0,1]
 		"Fall Damage Multiplier" = 0.5
+		#This feature disables itself if any of the following mods are loaded: 
+		# - goated
+		# - environmental
+		#This is done to prevent content overlap.
+		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
+		"Ignore Anti Overlap" = false
 
 	[building.industrial_palette]
 		"Enable Iron Plates" = true

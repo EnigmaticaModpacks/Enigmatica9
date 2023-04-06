@@ -1,0 +1,14 @@
+
+#General settings
+[General]
+	#Setting this to true will allow saplings to turn into dense trees [Default: true]
+	enableSaplingToDenseTree = false
+	#Chance of a sapling turning into a dense tree. (0.05 = 5%) [Default: 0.05]
+	#Range: 0.0 ~ 1.0
+	saplingToDenseTreeChance = 0.05
+
+#Biome settings
+[Biome]
+	#Blacklist biomes from spawning dense trees. (Use the registry name of the biome) Example: "minecraft:flower_forest"
+	biomeBlacklist = [""]
+

@@ -27,6 +27,15 @@
 	#Range: 0 ~ 16383
 	baseline_stress = 16000
 
+#Portable Energy Interface
+[portable_energy_interface]
+	#PEI max output in FE/t (Energy transfer).
+	#Range: > 0
+	pei_max_output = 4096
+	#PEI max input in FE/t (Energy transfer).
+	#Range: > 0
+	pei_max_input = 4096
+
 #Electric Motor
 [electric_motor]
 	#Electric Motor internal capacity in FE.

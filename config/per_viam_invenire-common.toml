@@ -3,7 +3,7 @@
 minimumRailsToUseInPath = 5
 #Maximum amount of nodes used during a pathing calculation.
 #Range: 5000 ~ 10000
-maxPathFindingNodes = 2500
+maxPathFindingNodes = 5000
 #Logging verbosity. Lower is more information.
 #Range: 0 ~ 6
 pathFindingLogVerbosity = 5
