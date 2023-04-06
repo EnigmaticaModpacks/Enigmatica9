@@ -17,7 +17,8 @@
         "crystal",
         "shard",
         "clump",
-        "dirty_dust"
+        "dirty_dust",
+        "infuse_type"
     ],
     "properties": {
         "materialType": "metal",

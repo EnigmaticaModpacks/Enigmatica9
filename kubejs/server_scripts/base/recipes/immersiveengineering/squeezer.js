@@ -3,7 +3,7 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            result: Item.of('immersiveengineering:dust_hop_graphite').toJson(),
+            result: Item.of('emendatusenigmatica:hop_graphite_dust').toJson(),
             input: { base_ingredient: { tag: 'forge:dusts/coal_coke' }, count: 8 },
             energy: 19200,
             id: `${id_prefix}hop_graphite`
