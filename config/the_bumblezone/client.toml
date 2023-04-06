@@ -28,7 +28,7 @@ playWrathOfHiveEffectMusic = true
 # 
 #-----------------------------------------------------
 #
-# Whether to show the item on the Bee Queen that the Queen wants for Super Trades.
+# Whether to show the item on the Bee Queen that the Queen wants for Bonus Trades.
 #
-renderBeeQueenSuperTradeItem = true
+renderBeeQueenBonusTradeItem = true
 
