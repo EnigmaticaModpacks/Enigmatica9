@@ -36,11 +36,15 @@ ServerEvents.recipes((event) => {
         { type: 'occultism:crushing' },
 
         { id: 'ae2:network/blocks/crystal_processing_charger' },
+        { id: `ae2:network/crafting/cpu_crafting_unit` },
         { id: 'ae2:network/parts/quartz_fiber_part' },
         { id: 'ae2:transform/fluix_crystals' },
         { id: 'ae2:network/blocks/controller' },
         { id: 'ae2:misc/fluixpearl' },
-        { id: `ae2:network/crafting/cpu_crafting_unit` },
+        { id: 'ae2:inscriber/silicon_print' },
+        { id: 'ae2:inscriber/logic_processor' },
+        { id: 'ae2:inscriber/calculation_processor' },
+        { id: 'ae2:inscriber/engineering_processor' },
 
         { id: 'constructionwand:stone_wand' },
         { id: 'constructionwand:iron_wand' },

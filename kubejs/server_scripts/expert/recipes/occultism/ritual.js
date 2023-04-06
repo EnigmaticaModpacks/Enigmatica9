@@ -12,10 +12,10 @@ ServerEvents.recipes((event) => {
             spirit_max_age: -1,
             activation_item: 'occultism:book_of_binding_bound_foliot',
             inputs: [
-                '#forge:raw_materials/iron',
-                '#forge:raw_materials/iron',
-                '#forge:raw_materials/iron',
-                '#forge:raw_materials/iron'
+                '#forge:essences/conjuration',
+                '#forge:gems/carminite',
+                'naturesaura:gold_leaf',
+                '#forge:gems/carminite'
             ],
             ritual_dummy: 'occultism:ritual_dummy/summon_foliot_crusher',
             ritual_type: 'occultism:summon_spirit_with_job',

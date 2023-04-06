@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:normal/occultism/crushing/';
     const recipes = [
         {
-            output: 'pneumaticcraft:logistics_core',
+            output: '2x pneumaticcraft:logistics_core',
             input: 'naturesaura:infused_slab',
             crushing_time: 60,
             min_tier: 1,
