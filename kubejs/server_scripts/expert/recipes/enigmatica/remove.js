@@ -232,6 +232,8 @@ ServerEvents.recipes((event) => {
         { id: 'supplementaries:jar' },
         { id: 'supplementaries:soap' },
 
+        { id: /thermal:machines\/pulverizer\/pulverizer_.*_to_dust/ },
+        { id: /thermal:augments/ },
         { id: 'thermal:enderium_dust_2' },
         { id: 'thermal:lumium_dust_4' },
         { id: 'thermal:signalum_dust_4' },
@@ -250,8 +252,6 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:aquachow_4' },
         { id: 'thermal:deep_aquachow_4' },
         { id: 'thermal:device_potion_diffuser' },
-        { id: 'thermal:augments/upgrade_augment_2' },
-        { id: 'thermal:augments/upgrade_augment_3' },
 
         { id: 'twilightforest:equipment/fiery_ingot_crafting' },
         { id: 'twilightforest:material/fiery_iron_ingot' },

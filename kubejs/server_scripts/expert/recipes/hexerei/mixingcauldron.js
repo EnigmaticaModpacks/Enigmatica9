@@ -643,6 +643,23 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 1000,
             heatRequirement: 'heated',
             id: `${id_prefix}potion_melder`
+        },
+        {
+            output: '4x hexerei:infused_fabric',
+            inputs: [
+                'ars_nouveau:magebloom_fiber',
+                '#forge:fabrics/ersatz_leather',
+                'ars_nouveau:magebloom_fiber',
+                '#forge:fabrics/ersatz_leather',
+                'ars_nouveau:magebloom_fiber',
+                '#forge:fabrics/ersatz_leather',
+                'ars_nouveau:magebloom_fiber',
+                '#forge:fabrics/ersatz_leather'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 333,
+            id: `hexerei:infused_fabric_from_mixing_cauldron`
         }
     ];
 

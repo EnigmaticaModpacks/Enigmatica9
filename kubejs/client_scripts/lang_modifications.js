@@ -925,6 +925,34 @@ const entries = {
                 normal: 'Disenchantment Dynamo',
                 expert: 'Arcane Dynamo'
             }
+        },
+        {
+            key: 'block.thermal.machine_smelter',
+            value: {
+                normal: 'Induction Smelter',
+                expert: 'Aura Forge'
+            }
+        },
+        {
+            key: 'thermal.jei.smelter',
+            value: {
+                normal: 'Induction Smelter',
+                expert: 'Aura Forge'
+            }
+        },
+        {
+            key: 'block.thermal.machine_furnace',
+            value: {
+                normal: 'Redstone Furnace',
+                expert: 'Arcane Furnace'
+            }
+        },
+        {
+            key: 'thermal.jei.furnace',
+            value: {
+                normal: 'Redstone Furnace',
+                expert: 'Arcane Furnace'
+            }
         }
     ]
 };
