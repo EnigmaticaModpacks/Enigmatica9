@@ -253,7 +253,7 @@ const biomes = {
         "byg:dacite_ridges", 
         "byg:howling_peaks"
     ],
-    ins_swamps: [
+    in_swamps: [
         "minecraft:swamp",
         "minecraft:mangrove_swamp",
         "byg:bayou",
