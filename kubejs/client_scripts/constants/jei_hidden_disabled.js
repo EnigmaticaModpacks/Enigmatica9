@@ -124,14 +124,11 @@ jei.base.items.hidden = [
     /kubejs:.*indicator/,
     /kubejs:.*delight/,
     /kubejs:.*lootbox/,
-    
-    /mekanism:creative_/,
 
     'naturesaura:multiblock_maker',
     
     /occultism:.*debug/,
     'occultism:lighted_air',
-
     
     /powah:.*uraninite_ore.*/,
     
@@ -193,7 +190,24 @@ jei.normal.items.hidden = [
     'kubejs:calcined_kaolin_pearls',
     'kubejs:kaolin_clay',
     'kubejs:aura_leaf',
-    'kubejs:spirit_of_devotion'
+    'kubejs:spirit_of_devotion',
+
+    // Creative items:
+    /mekanism:creative_/,
+    /ae2:creative/,
+    /ars_nouveau:creative/,
+    'buildinggadgets:construction_paste_container_creative',
+    /create:creative/,
+    'create:handheld_worldshaper',
+    /functionalstorage:creative/,
+    /immersiveengineering.*creative/,
+    /littlelogistics:creative/,
+    /pneumaticcraft:creative/,
+    /appmek:creative/,
+    'powah:energy_cell_creative',
+    /thermal.*creative/,
+    /createaddition:creative/,
+    /modularrouters:creative/
 ];
 jei.normal.fluids.hidden = [];
 jei.normal.categories.hidden = [];
