@@ -50,7 +50,15 @@
 			tasks: [{
 				id: "7C1283E295E083B3"
 				type: "item"
-				item: "minecraft:copper_ingot"
+				title: "Copper Ingot"
+				icon: "emendatusenigmatica:copper_ingot"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/copper"
+					}
+				}
 			}]
 		}
 		{
@@ -193,7 +201,15 @@
 			tasks: [{
 				id: "2E174C92D4AD07A8"
 				type: "item"
-				item: "thermal:bronze_ingot"
+				title: "Bronze Ingot"
+				icon: "emendatusenigmatica:bronze_ingot"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/bronze"
+					}
+				}
 			}]
 		}
 		{
@@ -606,6 +622,7 @@
 				id: "29BB4507855ECBB7"
 				type: "item"
 				title: "Aluminum"
+				icon: "emendatusenigmatica:aluminum_ingot"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
