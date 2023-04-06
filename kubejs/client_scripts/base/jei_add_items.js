@@ -19,7 +19,8 @@ JEIEvents.addItems((event) => {
         'immersiveengineering:sawmill',
         'immersiveengineering:silo',
         'immersiveengineering:squeezer',
-        'immersiveengineering:tank'
+        'immersiveengineering:tank',
+        'emendatusenigmatica:bitumen_sandstone_ore'
     ];
 
     items.forEach((item) => event.add(item));

@@ -38,6 +38,8 @@ jei.base.items.disabled = [
     /rftoolsbase:dimensionalshard_/,
 
     /emendatusenigmatica:.*_cluster_shard\b/,
+    /emendatusenigmatica:bitumen_.*_ore/,
+    'emendatusenigmatica:bitumen_ore',
 
     /pendorite/,
     /emeraldite/,
