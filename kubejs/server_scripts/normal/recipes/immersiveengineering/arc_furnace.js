@@ -5,7 +5,6 @@ ServerEvents.recipes((event) => {
     
     const id_prefix = 'enigmatica:normal/immersiveengineering/arc_furnace/';
 
-    // Note: Arc Furnace recipe handler is damaged by the time of writing this script (26.12.2022) -> Do not use secondaries field!
     // Note 2: For "Ease of use", use an object {item: "id:here", count: 2} for input and additives, those will be used with Ingredient.of() later on! Tag can also be used in place of "id:here"
     const recipes = [
         {
@@ -15,8 +14,10 @@ ServerEvents.recipes((event) => {
                 { item: '#forge:dusts/diamond', count: 1 }
             ],
             output: Item.of(AlmostUnified.getPreferredItemForTag('forge:ingots/enderium'), 2),
-            // secondaries: [],
-            // slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
+            secondaries: [],
+            slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
+            secondaries: [],
+            slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
             energy: 51200,
             time: 120,
             id: `${id_prefix}enderium_ingot`
@@ -28,6 +29,8 @@ ServerEvents.recipes((event) => {
                 { item: '#forge:ingots/silver', count: 1 }
             ],
             output: Item.of(AlmostUnified.getPreferredItemForTag('forge:ingots/lumium'), 4),
+            secondaries: [],
+            slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
             energy: 51200,
             time: 120,
             id: `${id_prefix}lumium_ingot`
@@ -39,6 +42,8 @@ ServerEvents.recipes((event) => {
                 { item: '#forge:ingots/silver', count: 1 }
             ],
             output: Item.of(AlmostUnified.getPreferredItemForTag('forge:ingots/signalum'), 4),
+            secondaries: [],
+            slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
             energy: 51200,
             time: 120,
             id: `${id_prefix}signalum_ingot`
@@ -49,6 +54,8 @@ ServerEvents.recipes((event) => {
                 { item: '#forge:nuggets/zinc', count: 1 }
             ],
             output: Item.of(AlmostUnified.getPreferredItemForTag('forge:ingots/andesite'), 1),
+            secondaries: [],
+            slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
             energy: 25600,
             time: 60,
             id: `${id_prefix}andesite_alloy_from_zinc`
@@ -59,6 +66,8 @@ ServerEvents.recipes((event) => {
                 { item: '#forge:nuggets/iron', count: 1 }
             ],
             output: Item.of(AlmostUnified.getPreferredItemForTag('forge:ingots/andesite'), 1),
+            secondaries: [],
+            slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
             energy: 25600,
             time: 60,
             id: `${id_prefix}andesite_alloy_from_iron`

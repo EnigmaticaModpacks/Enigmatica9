@@ -52,6 +52,8 @@ ServerEvents.recipes((event) => {
         { id: 'createaddition:rolling/straw' },
         { id: 'createaddition:compat/ae2/charged_certus_quartz' },
         { id: 'createaddition:crafting/accumulator_conversion' },
+        { id: 'createaddition:compat/immersiveengineering/crushing/coal_coke' },
+        { id: 'createaddition:compat/immersiveengineering/crushing/coke_block' },
 
         { id: 'hexerei:black_dye_from_pestle_and_mortar' },
 
@@ -59,6 +61,8 @@ ServerEvents.recipes((event) => {
         { id: `industrialforegoing:stonework_generate/granite` },
         { id: `industrialforegoing:stonework_generate/andesite` },
         { id: `industrialforegoing:laser_drill_ore/ores/cinnabar`},
+
+        { id: 'immersiveengineering:crafting/coal_coke_to_coke' },
 
         { id: /mekanism:enriching\/dye/ },
         { id: /mekanism:compat\/byg\/dye/ },
@@ -135,6 +139,8 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:machines/press/press_rice_unpacking' },
         { id: 'thermal:machines/press/press_onion_unpacking' },
         { id: 'thermal:machines/press/press_hops_unpacking' },
+        { id: 'thermal:machines/press/packing3x3/press_coal_coke_packing' },
+        { id: 'thermal:machines/press/unpacking/press_coal_coke_unpacking' },
         { id: 'thermal:fuels/gourmand/gourmand_tomato_block' },
         { id: 'thermal:fuels/gourmand/gourmand_onion_block' },
         { id: 'thermal:smelting/cured_rubber_from_smelting' },
