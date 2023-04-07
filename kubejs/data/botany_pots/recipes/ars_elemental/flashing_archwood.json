@@ -1,0 +1,50 @@
+{
+    "type": "forge:conditional",
+    "recipes": [
+      {
+        "conditions": [
+          {
+            "modid": "botany_pots",
+            "type": "forge:mod_loaded"
+          }
+        ],
+        "recipe": {
+          "bookshelf:load_conditions": [
+            {
+              "type": "bookshelf:item_exists",
+              "values": [
+                "ars_elemental:yellow_archwood_sapling"
+              ]
+            }
+          ],
+          "type": "botanypots:crop",
+          "seed": {
+            "item": "ars_elemental:yellow_archwood_sapling"
+          },
+          "categories": [
+            "dirt"
+          ],
+          "growthTicks": 2400,
+          "display": {
+            "block": "ars_elemental:yellow_archwood_sapling"
+          },
+          "drops": [
+            {
+              "chance": 1.00,
+              "output": {
+                "item": "ars_elemental:yellow_archwood_log"
+              },
+              "minRolls": 2,
+              "maxRolls": 4
+            },
+            {
+              "chance": 0.01,
+              "output": {
+                "item": "ars_elemental:yellow_archwood_sapling"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
