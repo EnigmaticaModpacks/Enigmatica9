@@ -1,6 +1,6 @@
 //priority: 1000
 
-const sawdust = 'thermal:sawdust';
+const sawdust = 'immersiveengineering:sawdust';
 const bark = 'farmersdelight:tree_bark';
 
 // Used to populate the wood_variants_constructor constant - Add variants here to enable compat with various cutting mechanics.
