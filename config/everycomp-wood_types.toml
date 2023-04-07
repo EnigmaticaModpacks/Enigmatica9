@@ -269,6 +269,8 @@
 			concrete_leaded = true
 			insulating_glass = true
 			alloybrick = true
+			hempcrete_brick = true
+			concrete_brick = true
 
 		[types.cut_block_type.occultism]
 			otherstone = true
