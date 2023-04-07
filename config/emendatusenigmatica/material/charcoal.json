@@ -1,8 +1,7 @@
 {
   "id": "charcoal",
-  "source": "vanilla",
+  "source": "modded",
   "localizedName": "Charcoal",
-  "disableDefaultOre": true,
   "processedTypes": [
     "dust"
   ],
