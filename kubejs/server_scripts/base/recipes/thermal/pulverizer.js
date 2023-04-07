@@ -73,6 +73,12 @@ ServerEvents.recipes((event) => {
             outputs: [{ item: 'emendatusenigmatica:iron_dust', count: 1}],
             energy: 4000,
             id: `${id_prefix}iron_dust`
+        },
+        {
+            input: '#forge:gems/dimensional',
+            outputs: [{ item: 'emendatusenigmatica:dimensional_dust', count: 1}],
+            energy: 4000,
+            id: `${id_prefix}dimensional_dust`
         }
     ];
 
