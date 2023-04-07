@@ -233,10 +233,6 @@ JEIEvents.information((event) => {
             ]
         },
         {
-            items: ['emendatusenigmatica:source_gem'],
-            text: ['Obtained by placing Lapis or Amethyst in an Imbuement Chamber.']
-        },
-        {
             items: ['blue_skies:moonstone_crystal'],
             text: [
                 `Will grow on Blocks of Moonstone if placed in water.`,
@@ -373,8 +369,7 @@ JEIEvents.information((event) => {
                 "sushigocrafting:sesame_seeds"
             ],
             text: [
-                "This seed does not drop from grass!",
-                "It has to be purchased from the Market block."
+                "Purchase from the Market block."
             ]
         }
     ];
