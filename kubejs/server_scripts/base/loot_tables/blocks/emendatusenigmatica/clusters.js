@@ -66,7 +66,7 @@ LootJS.modifiers((event) => {
         })
         .not(n => n.matchMainHand(ItemFilter.hasEnchantment('minecraft:silk_touch')))
         .addAlternativesLoot(
-            LootEntry.of('emendatusenigmatica:sulfur_gem').limitCount().applyOreBonus('minecraft:fortune')
+            LootEntry.of('emendatusenigmatica:sulfur_gem').applyOreBonus('minecraft:fortune')
                 .when((c) => c.matchMainHand(ItemFilter.hasEnchantment('minecraft:fortune'))),
             LootEntry.of('emendatusenigmatica:sulfur_gem').limitCount([2,3])
         )
