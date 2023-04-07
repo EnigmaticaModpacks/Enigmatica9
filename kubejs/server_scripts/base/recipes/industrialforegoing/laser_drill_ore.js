@@ -1,13 +1,6 @@
 ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/industrialforegoing/laser_drill_ore/';
-    const default_blacklist =  [
-        "minecraft:the_end",
-        "minecraft:the_void",
-        "minecraft:small_end_islands",
-        "minecraft:end_barrens",
-        "minecraft:end_highlands",
-        "minecraft:end_midlands"
-    ] 
+
     const recipes = [
         {
             catalyst: { tag: 'industrialforegoing:laser_lens/brown' },
@@ -20,7 +13,7 @@ ServerEvents.recipes((event) => {
                     weight: 20,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -30,7 +23,7 @@ ServerEvents.recipes((event) => {
                     weight: 3,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 }
@@ -48,7 +41,7 @@ ServerEvents.recipes((event) => {
                     weight: 15,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -58,7 +51,7 @@ ServerEvents.recipes((event) => {
                     weight: 3,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 }
@@ -76,7 +69,7 @@ ServerEvents.recipes((event) => {
                     weight: 10,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -86,7 +79,7 @@ ServerEvents.recipes((event) => {
                     weight: 2,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -114,7 +107,7 @@ ServerEvents.recipes((event) => {
                     weight: 3,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -124,7 +117,7 @@ ServerEvents.recipes((event) => {
                     weight: 1,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -162,7 +155,7 @@ ServerEvents.recipes((event) => {
                     weight: 1,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -190,7 +183,7 @@ ServerEvents.recipes((event) => {
                     weight: 5,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -200,7 +193,7 @@ ServerEvents.recipes((event) => {
                     weight: 25,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -228,7 +221,7 @@ ServerEvents.recipes((event) => {
                     weight: 8,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -238,7 +231,7 @@ ServerEvents.recipes((event) => {
                     weight: 30,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -248,7 +241,7 @@ ServerEvents.recipes((event) => {
                     weight: 12,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 }
@@ -266,7 +259,7 @@ ServerEvents.recipes((event) => {
                     weight: 5,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -276,7 +269,7 @@ ServerEvents.recipes((event) => {
                     weight: 20,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 }
@@ -295,7 +288,7 @@ ServerEvents.recipes((event) => {
                     weight: 2,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -323,7 +316,7 @@ ServerEvents.recipes((event) => {
                     weight: 2,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -351,7 +344,7 @@ ServerEvents.recipes((event) => {
                     weight: 6,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -361,7 +354,7 @@ ServerEvents.recipes((event) => {
                     weight: 35,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 }
@@ -379,7 +372,7 @@ ServerEvents.recipes((event) => {
                     weight: 5,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -389,7 +382,7 @@ ServerEvents.recipes((event) => {
                     weight: 30,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 }
@@ -407,7 +400,7 @@ ServerEvents.recipes((event) => {
                     weight: 8,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -417,7 +410,7 @@ ServerEvents.recipes((event) => {
                     weight: 35,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -445,7 +438,7 @@ ServerEvents.recipes((event) => {
                     weight: 8,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -455,7 +448,7 @@ ServerEvents.recipes((event) => {
                     weight: 30,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 }
@@ -473,7 +466,7 @@ ServerEvents.recipes((event) => {
                     weight: 14,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 }
@@ -491,7 +484,7 @@ ServerEvents.recipes((event) => {
                     weight: 12,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -501,7 +494,7 @@ ServerEvents.recipes((event) => {
                     weight: 5,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -529,7 +522,7 @@ ServerEvents.recipes((event) => {
                     weight: 45,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -539,7 +532,7 @@ ServerEvents.recipes((event) => {
                     weight: 15,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -549,7 +542,7 @@ ServerEvents.recipes((event) => {
                     weight: 8,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 }
@@ -567,7 +560,7 @@ ServerEvents.recipes((event) => {
                     weight: 8,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -577,7 +570,7 @@ ServerEvents.recipes((event) => {
                     weight: 14,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -587,7 +580,7 @@ ServerEvents.recipes((event) => {
                     weight: 20,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 }
@@ -605,7 +598,7 @@ ServerEvents.recipes((event) => {
                     weight: 14,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
@@ -615,7 +608,7 @@ ServerEvents.recipes((event) => {
                     weight: 7,
                     blacklist: {
                         type: 'minecraft:worldgen/biome',
-                        values: default_blacklist
+                        values: biomes.in_the_end
                     },
                     whitelist: {}
                 },
