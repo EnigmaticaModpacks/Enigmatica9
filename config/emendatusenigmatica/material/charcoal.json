@@ -1,0 +1,16 @@
+{
+  "id": "charcoal",
+  "source": "vanilla",
+  "localizedName": "Charcoal",
+  "disableDefaultOre": true,
+  "processedTypes": [
+    "dust"
+  ],
+  "properties": {
+    "materialType": "gem",
+    "harvestLevel": 0,
+    "isBurnable": true,
+    "burnTime": 1600,
+    "blockRecipeType": 9
+  }
+}
