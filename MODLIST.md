@@ -152,6 +152,7 @@
   * [RecipesLibrary-1.19.2-2.0.1.jar](https://www.curseforge.com/minecraft/mc-mods/recipes-library/files/3932567) (by [GeheimagentNr1](https://www.curseforge.com/members/GeheimagentNr1/projects))
   * [redstonepen-1.19.2-forge-1.2.20.jar](https://www.curseforge.com/minecraft/mc-mods/redstone-pen/files/4393700) (by [wilechaote](https://www.curseforge.com/members/wilechaote/projects))
   * [repurposed_structures_forge-6.3.21+1.19.2.jar](https://www.curseforge.com/minecraft/mc-mods/repurposed-structures/files/4478742) (by [telepathicgrunt](https://www.curseforge.com/members/telepathicgrunt/projects))
+  * [resourcefulconfig-forge-1.19.2-1.0.20.jar](https://www.curseforge.com/minecraft/mc-mods/resourceful-config/files/4444198) (by [ThatGravyBoat](https://www.curseforge.com/members/ThatGravyBoat/projects))
   * [restrictedportals-1.19-1.3.0.jar](https://www.curseforge.com/minecraft/mc-mods/restricted-portals/files/3848861) (by [MoreThanHidden](https://www.curseforge.com/members/MoreThanHidden/projects))
   * [rftoolsbase-1.19-4.1.7.jar](https://www.curseforge.com/minecraft/mc-mods/rftools-base/files/4474182) (by [McJty](https://www.curseforge.com/members/McJty/projects))
   * [rftoolsbuilder-1.19-5.2.5.jar](https://www.curseforge.com/minecraft/mc-mods/rftools-builder/files/4474189) (by [McJty](https://www.curseforge.com/members/McJty/projects))
