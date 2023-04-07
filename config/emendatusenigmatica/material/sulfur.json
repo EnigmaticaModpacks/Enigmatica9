@@ -11,6 +11,8 @@
     "properties": {
         "materialType": "gem",
         "harvestLevel": 2,
-        "blockRecipeType": 9
+        "blockRecipeType": 9,
+        "isBurnable": true,
+        "burnTime": 1200
     }
 }

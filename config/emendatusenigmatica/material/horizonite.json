@@ -18,7 +18,9 @@
     ],
     "properties": {
         "materialType": "metal",
-        "harvestLevel": 1
+        "harvestLevel": 1,
+        "isBurnable": true,
+        "burnTime": 1400
     },
     "colors": {
         "gasColor": "c94627"
