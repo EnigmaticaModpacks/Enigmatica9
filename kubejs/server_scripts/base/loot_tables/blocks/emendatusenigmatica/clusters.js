@@ -17,73 +17,60 @@ p.or((or) => {
 LootJS.modifiers((event) => {
     // Clusters
     // Dimensional
+
     event.addBlockLootModifier('emendatusenigmatica:dimensional_cluster')
         .removeLoot('emendatusenigmatica:dimensional_cluster_shard')
-        .pool(p => {
-            p.matchMainHand(ItemFilter.PICKAXE.hasEnchantment('minecraft:fortune'));
-            p.addWeightedLoot(1, 'rftoolsbase:dimensionalshard');
-            p.applyBonus('minecraft:fortune', 1);
-        })
-        .pool(p => {
-            p.or((or) => {
-                or.matchMainHand(ItemFilter.PICKAXE)
-                or.and(a => {
-                    a.playerPredicate((p) => {
-                        return p.getClass().isAssignableFrom(FakePlayer);
-                    })
-                    a.not(n => n.playerPredicate(p => true))
-                })
-                or.not(n => n.playerPredicate(p => true))
+        .or((or) => {
+            or.matchMainHand(ItemFilter.PICKAXE)
+            or.and(a => {
+                a.playerPredicate((p) => {return p.getClass().isAssignableFrom(FakePlayer)})
+                a.not(n => n.playerPredicate(p => true))
             })
-            p.not(n => n.matchMainHand(ItemFilter.hasEnchantment('minecraft:fortune').hasEnchantment('minecraft:silk_touch')));
-            p.addWeightedLoot([1,2], 'rftoolsbase:dimensionalshard');
-        });
+            or.not(n => n.playerPredicate(p => true))
+        })
+        .not(n => n.matchMainHand(ItemFilter.hasEnchantment('minecraft:silk_touch')))
+        .addAlternativesLoot(
+            LootEntry.of('rftoolsbase:dimensionalshard').limitCount([1,2]).applyOreBonus('minecraft:fortune')
+                .when((c) => c.matchMainHand(ItemFilter.hasEnchantment('minecraft:fortune'))),
+            LootEntry.of('rftoolsbase:dimensionalshard').limitCount([1,2])
+        )
 
     // Fluorite
     event.addBlockLootModifier('emendatusenigmatica:fluorite_cluster')
         .removeLoot('emendatusenigmatica:fluorite_cluster_shard')
-        .pool(p => {
-            p.matchMainHand(ItemFilter.PICKAXE.hasEnchantment('minecraft:fortune'));
-            p.addWeightedLoot([1,2], 'emendatusenigmatica:fluorite_gem');
-            p.applyBonus('minecraft:fortune', 1);
-        })
-        .pool(p => {
-            p.or((or) => {
-                or.matchMainHand(ItemFilter.PICKAXE)
-                or.and(a => {
-                    a.playerPredicate((p) => {
-                        return p.getClass().isAssignableFrom(FakePlayer);
-                    })
-                    a.not(n => n.playerPredicate(p => true))
-                })
-                or.not(n => n.playerPredicate(p => true))
+        .or((or) => {
+            or.matchMainHand(ItemFilter.PICKAXE)
+            or.and(a => {
+                a.playerPredicate((p) => {return p.getClass().isAssignableFrom(FakePlayer)})
+                a.not(n => n.playerPredicate(p => true))
             })
-            p.not(n => n.matchMainHand(ItemFilter.hasEnchantment('minecraft:fortune').hasEnchantment('minecraft:silk_touch')));
-            p.addWeightedLoot([2,3], 'emendatusenigmatica:fluorite_gem');
-        });
+            or.not(n => n.playerPredicate(p => true))
+        })
+        .not(n => n.matchMainHand(ItemFilter.hasEnchantment('minecraft:silk_touch')))
+        .addAlternativesLoot(
+            LootEntry.of('emendatusenigmatica:fluorite_gem').limitCount([1,2]).applyOreBonus('minecraft:fortune')
+                .when((c) => c.matchMainHand(ItemFilter.hasEnchantment('minecraft:fortune'))),
+            LootEntry.of('emendatusenigmatica:fluorite_gem').limitCount([2,3])
+        )
 
     // Sulfur
     event.addBlockLootModifier('emendatusenigmatica:sulfur_cluster')
         .removeLoot('emendatusenigmatica:sulfur_cluster_shard')
-        .pool(p => {
-            p.matchMainHand(ItemFilter.PICKAXE.hasEnchantment('minecraft:fortune'));
-            p.addWeightedLoot(1, 'emendatusenigmatica:sulfur_gem');
-            p.applyBonus('minecraft:fortune', 1);
-        })
-        .pool(p => {
-            p.or((or) => {
-                or.matchMainHand(ItemFilter.PICKAXE)
-                or.and(a => {
-                    a.playerPredicate((p) => {
-                        return p.getClass().isAssignableFrom(FakePlayer);
-                    })
-                    a.not(n => n.playerPredicate(p => true))
-                })
-                or.not(n => n.playerPredicate(p => true))
+        .or((or) => {
+            or.matchMainHand(ItemFilter.PICKAXE)
+            or.and(a => {
+                a.playerPredicate((p) => {return p.getClass().isAssignableFrom(FakePlayer)})
+                a.not(n => n.playerPredicate(p => true))
             })
-            p.not(n => n.matchMainHand(ItemFilter.hasEnchantment('minecraft:fortune').hasEnchantment('minecraft:silk_touch')));
-            p.addWeightedLoot(1, 'emendatusenigmatica:sulfur_gem');
-        });
+            or.not(n => n.playerPredicate(p => true))
+        })
+        .not(n => n.matchMainHand(ItemFilter.hasEnchantment('minecraft:silk_touch')))
+        .addAlternativesLoot(
+            LootEntry.of('emendatusenigmatica:sulfur_gem').limitCount().applyOreBonus('minecraft:fortune')
+                .when((c) => c.matchMainHand(ItemFilter.hasEnchantment('minecraft:fortune'))),
+            LootEntry.of('emendatusenigmatica:sulfur_gem').limitCount([2,3])
+        )
+
     
     // Buds
     let buds = ['fluorite', 'sulfur', 'dimensional']
@@ -92,21 +79,16 @@ LootJS.modifiers((event) => {
     buds.forEach((bud) => {
         ratios_keys.forEach((size) => {
             event.addBlockLootModifier(`emendatusenigmatica:${size}_${bud}_bud`)
-            .pool(p => {
-                p.or((or) => {
-                    or.matchMainHand(ItemFilter.PICKAXE)
-                    or.and(a => {
-                        a.playerPredicate((p) => {
-                            return p.getClass().isAssignableFrom(FakePlayer);
-                        })
-                        a.not(n => n.playerPredicate(p => true))
-                    })
-                    or.not(n => n.playerPredicate(p => true))
+            .or((or) => {
+                or.matchMainHand(ItemFilter.PICKAXE)
+                or.and(a => {
+                    a.playerPredicate((p) => {return p.getClass().isAssignableFrom(FakePlayer)})
+                    a.not(n => n.playerPredicate(p => true))
                 })
-                p.not(n => n.matchMainHand(ItemFilter.hasEnchantment('minecraft:silk_touch')));
-                p.randomChance(ratios[size])
-                p.addLoot(`emendatusenigmatica:${bud}_dust`);
+                or.not(n => n.playerPredicate(p => true))
             })
+            .not(n => n.matchMainHand(ItemFilter.hasEnchantment('minecraft:silk_touch')))
+            .addLoot(LootEntry.of(`emendatusenigmatica:${bud}_dust`).when((c) => c.randomChance(ratios[size])))
         })
     })
 });
