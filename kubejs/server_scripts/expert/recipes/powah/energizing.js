@@ -25,12 +25,12 @@ ServerEvents.recipes((event) => {
         {
             output: '4x spirit:soul_steel_ingot',
             inputs: [
-                '#forge:ingots/copper',
-                '#forge:ingots/copper',
-                '#forge:ingots/silver',
-                '#forge:ingots/nickel',
+                '#forge:dusts/iesnium',
+                '#forge:dusts/iesnium',
+                '#forge:dusts/iesnium',
+                '#forge:dusts/nickel',
                 '#forge:dusts/diamond',
-                'blue_skies:soul_fragment'
+                'spirit:soul_powder'
             ],
             energy: '100000',
             id: `${id_prefix}soul_steel_ingot`

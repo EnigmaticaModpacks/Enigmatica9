@@ -476,6 +476,7 @@
 			}]
 		}
 		{
+			icon: "blue_skies:moonstone_crystal"
 			x: 1.0d
 			y: -3.0d
 			shape: "hexagon"
@@ -510,6 +511,7 @@
 				id: "31596C34895C8006"
 				type: "dimension"
 				title: "Visit the Everdawn"
+				icon: "blue_skies:sunstone_crystal"
 				dimension: "blue_skies:everdawn"
 			}]
 		}

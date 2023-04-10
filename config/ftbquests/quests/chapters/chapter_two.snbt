@@ -1,0 +1,471 @@
+{
+	id: "762FE9447FC2B081"
+	group: "2FE70BF4886F08F4"
+	order_index: 1
+	filename: "chapter_two"
+	title: "Chapter Two"
+	icon: "blue_skies:moonstone"
+	always_invisible: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -4.0d
+			y: 0.5d
+			shape: "hexagon"
+			dependencies: ["4F90F6437D6CF7EC"]
+			id: "3D0B7DA1DD0A74B1"
+			tasks: [{
+				id: "1B464D1BB138C06B"
+				type: "dimension"
+				title: "Visit the Nether"
+				icon: "minecraft:nether_star"
+				dimension: "minecraft:the_nether"
+			}]
+		}
+		{
+			icon: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:wither_council_gate"
+				}
+			}
+			x: -4.0d
+			y: -0.5d
+			shape: "hexagon"
+			description: ["Summon the Wither Council to obtain access to Nether Stars"]
+			id: "4F90F6437D6CF7EC"
+			tasks: [{
+				id: "456BA96D5527F132"
+				type: "item"
+				item: "minecraft:nether_star"
+			}]
+		}
+		{
+			title: "Dream Stone"
+			icon: "blue_skies:alchemy_table"
+			x: -2.0d
+			y: -0.5d
+			shape: "hexagon"
+			id: "69324F7E3A7BCF04"
+			tasks: [
+				{
+					id: "37D201ABC1A3265B"
+					type: "item"
+					item: {
+						id: "blue_skies:alchemy_scroll"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5DBC9261959191DC"
+					type: "item"
+					item: "kubejs:dream_stone"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			dependencies: ["69324F7E3A7BCF04"]
+			id: "4C676E7D2BA75DE4"
+			tasks: [{
+				id: "47352920219144B1"
+				type: "item"
+				item: "kubejs:gloaming_catalyst"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.5d
+			dependencies: ["4C676E7D2BA75DE4"]
+			id: "71D9A268FF98E954"
+			tasks: [{
+				id: "4FF05D947BDCBD0C"
+				type: "item"
+				item: "kubejs:spirit_of_devotion"
+			}]
+		}
+		{
+			title: "Netherite Scrap"
+			icon: "blue_skies:summoning_table"
+			x: -0.5d
+			y: -0.5d
+			shape: "hexagon"
+			id: "0CFE9B39B0643013"
+			tasks: [
+				{
+					id: "7B83A6FC77564C81"
+					type: "item"
+					item: {
+						id: "blue_skies:summoning_tome"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5BAB3FF81039BF5E"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			dependencies: ["0CFE9B39B0643013"]
+			id: "77E8DD38A379F9C7"
+			tasks: [{
+				id: "55E4F11D8C8357A5"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			dependencies: ["77E8DD38A379F9C7"]
+			id: "39B2F84EBDC27AA3"
+			tasks: [{
+				id: "4241691B8FE4293D"
+				type: "item"
+				item: "naturesaura:tainted_gold"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["64D941490FEC2D79"]
+			id: "31E4C2A162D7497C"
+			tasks: [{
+				id: "2D56C518D77625DD"
+				type: "item"
+				item: "ars_nouveau:enchanting_apparatus"
+			}]
+		}
+		{
+			icon: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:wilden_grove_gate"
+				}
+			}
+			x: 10.0d
+			y: -0.5d
+			shape: "hexagon"
+			id: "0B7E9625225C8413"
+			tasks: [{
+				id: "21A6D819BD491B00"
+				type: "item"
+				item: "ars_nouveau:wilden_tribute"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			dependencies: ["31E4C2A162D7497C"]
+			id: "0E3DFBEF189DE800"
+			tasks: [
+				{
+					id: "713A9B50F06F2804"
+					type: "item"
+					item: "immersiveengineering:mold_gear"
+				}
+				{
+					id: "4509325B0D8828B0"
+					type: "item"
+					item: "immersiveengineering:mold_plate"
+				}
+				{
+					id: "05A67D1D5C79F160"
+					type: "item"
+					item: "immersiveengineering:mold_rod"
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 0.5d
+			dependencies: ["0B7E9625225C8413"]
+			id: "10238EBB9B55F67B"
+			tasks: [{
+				id: "1DDBFACA2CC5B913"
+				type: "item"
+				item: "ars_elemental:mark_of_mastery"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 5.0d
+			dependencies: ["1D0AA79380E87E57"]
+			id: "7563E41DBF4FD286"
+			tasks: [{
+				id: "6D78A382292EF627"
+				type: "item"
+				item: "industrialforegoing:machine_frame_simple"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.0d
+			dependencies: ["7563E41DBF4FD286"]
+			id: "17F735810850C368"
+			tasks: [{
+				id: "5F0411E4A7C69564"
+				type: "item"
+				item: "industrialforegoing:ore_laser_base"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 6.0d
+			dependencies: ["7563E41DBF4FD286"]
+			id: "5503E132D9D02EF8"
+			tasks: [{
+				id: "6FE9FBFD8C2D21EA"
+				type: "item"
+				item: "industrialforegoing:fluid_laser_base"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.5d
+			dependencies: ["31E4C2A162D7497C"]
+			id: "19E0F8DEEA2CA71C"
+			tasks: [{
+				id: "6F52A19B5FBCB59A"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.5d
+			dependencies: ["19E0F8DEEA2CA71C"]
+			id: "6044FE23384692A5"
+			tasks: [{
+				id: "0B70A4972A7F691F"
+				type: "item"
+				item: "create:crushing_wheel"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 8.0d
+			dependencies: ["126F4E070F219A8B"]
+			id: "606F79DAEB15E85B"
+			tasks: [{
+				id: "1A90312A5DCEA90B"
+				type: "item"
+				item: "spirit:soul_steel_ingot"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 9.0d
+			dependencies: ["606F79DAEB15E85B"]
+			id: "507A68CE5D41C4C2"
+			tasks: [{
+				id: "0D888CFF2F834C92"
+				type: "item"
+				item: "industrialforegoing:machine_frame_advanced"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 7.0d
+			dependencies: ["17F735810850C368"]
+			id: "126F4E070F219A8B"
+			tasks: [{
+				id: "2CF76301E00C267D"
+				type: "item"
+				item: "spirit:soul_powder"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 7.0d
+			dependencies: ["5503E132D9D02EF8"]
+			id: "22900B24763183DE"
+			tasks: [{
+				id: "7272B1CEF58427A5"
+				type: "item"
+				item: "kubejs:abyssal_seawater_bucket"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 9.0d
+			dependencies: ["6E239ECBE33DFA36"]
+			id: "70D6C0937B1D4450"
+			tasks: [{
+				id: "5785C175A0F6CD9D"
+				type: "item"
+				item: "industrialforegoing:biofuel_bucket"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 8.0d
+			dependencies: [
+				"4B12601018EEB05D"
+				"22900B24763183DE"
+			]
+			id: "6E239ECBE33DFA36"
+			tasks: [{
+				id: "2879671AF2B13169"
+				type: "item"
+				item: "kubejs:saturated_magebloom_filter"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 6.0d
+			dependencies: ["7563E41DBF4FD286"]
+			id: "4B12601018EEB05D"
+			tasks: [{
+				id: "1DE7111A79414D27"
+				type: "item"
+				item: "pneumaticcraft:flux_compressor"
+			}]
+		}
+		{
+			icon: "powah:energizing_orb"
+			x: 3.5d
+			y: -1.5d
+			shape: "hexagon"
+			id: "60324503ED7AC4C1"
+			tasks: [
+				{
+					id: "1E9F51D9111326A7"
+					type: "item"
+					item: "powah:energizing_orb"
+				}
+				{
+					id: "05525E02360F94FE"
+					type: "item"
+					item: "powah:energizing_rod_basic"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 5.0d
+			id: "00CBB00A1C09BCA4"
+			tasks: [{
+				id: "3826319717FB029A"
+				type: "item"
+				item: "immersiveengineering:rs_engineering"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.5d
+			dependencies: ["7B4761574E7A7B82"]
+			id: "767A379B00DCA2E0"
+			tasks: [{
+				id: "1558A342DAD1935D"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			dependencies: ["5BDDB58FF188E650"]
+			id: "7B4761574E7A7B82"
+			tasks: [{
+				id: "379D0425849E6188"
+				type: "item"
+				item: "kubejs:pig_iron_ingot"
+			}]
+		}
+		{
+			icon: "immersiveengineering:advanced_blast_furnace"
+			x: 5.0d
+			y: 0.0d
+			dependencies: ["64D941490FEC2D79"]
+			id: "2BA70920EA1ED0A8"
+			tasks: [{
+				id: "79ABD0D7EFB8D300"
+				type: "item"
+				item: "immersiveengineering:blastbrick_reinforced"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			dependencies: ["60324503ED7AC4C1"]
+			id: "64D941490FEC2D79"
+			tasks: [{
+				id: "56331B0146D3B8B5"
+				type: "item"
+				item: "powah:steel_energized"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			dependencies: [
+				"2BA70920EA1ED0A8"
+				"6044FE23384692A5"
+			]
+			id: "5BDDB58FF188E650"
+			tasks: [{
+				id: "28CE70B7793778D6"
+				type: "item"
+				item: "create:crushed_iron_ore"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			dependencies: ["767A379B00DCA2E0"]
+			id: "16B840CCFD9B3115"
+			tasks: [{
+				id: "05285D9A3BD52FB6"
+				type: "item"
+				item: "thermal:invar_ingot"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.5d
+			dependencies: ["16B840CCFD9B3115"]
+			id: "1D0AA79380E87E57"
+			tasks: [{
+				id: "5C129E4F6EAC8C83"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 6.0d
+			id: "2C43443DCFFF65F4"
+			tasks: [{
+				id: "05A605FCDAEBD972"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 6.0d
+			id: "15F56E72212629FB"
+			tasks: [{
+				id: "0154E90B21C27B44"
+				type: "item"
+				item: "immersiveengineering:heavy_engineering"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -997,7 +997,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'kubejs:teleport_nether',
-            activation_item: '#forge:gems/carminite',
+            activation_item: '#forge:nether_stars',
             inputs: [
                 '#forge:ingots/tainted_gold',
                 'naturesaura:gold_leaf',
