@@ -7,8 +7,7 @@
 		"blue_skies:everbright->naturesaura:nether",
 		"blue_skies:everdawn->naturesaura:overworld",
 		"twilightforest:twilight_forest->naturesaura:end",
-		"the_bumblezone:the_bumblezone->naturesaura:end"
-		
+		"the_bumblezone:the_bumblezone->naturesaura:end"		
 	]
 	#Additional blocks that are recognized as generatable ores for the passive ore generation effect. Each entry needs to be formatted as tag_name->oreWeight->dimension where a higher weight makes the ore more likely to spawn with 5000 being the weight of coal, the default ore with the highest weight, and dimension being any of overworld and nether
 	additionalOres = []
@@ -26,7 +25,7 @@
 		"minecraft:shulker_bullet->0",
 		"minecraft:llama_spit->0",
 		"minecraft:trident->0"
-							]
+		]
 	#The amount of blocks that can be between two Aura Field Creators for them to be connectable and work together
 	fieldCreatorRange = 24
 	#The Aura to RF ratio used by the RF converter, read as aura*ratio = rf
@@ -36,7 +35,7 @@
 
 [features]
 	#If the RF converter block should be enabled
-	rfConverter = true
+	rfConverter = false
 	#If the chunk loader block should be enabled
 	chunkLoader = false
 	#If the Aura Imbalance effect of grass and trees dying in the area if the Aura levels are too low should occur
