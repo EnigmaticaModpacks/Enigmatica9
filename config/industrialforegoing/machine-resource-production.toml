@@ -101,7 +101,7 @@
 		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [100 (5s)]
 		maxProgress = 100
 		#Amount of Power Consumed per Tick - Default: [5000FE]
-		powerPerOperation = 5000
+		powerPerOperation = 10000
 
 	[MachineResourceProductionConfig.BlockPlacerConfig]
 		#Max Stored Power [FE] - Default: [10000 FE]
