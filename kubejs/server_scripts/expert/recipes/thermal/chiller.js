@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
         {
             result: [{ item: 'minecraft:nether_star', chance: 1.75 }],
             ingredients: [{ fluid: 'industrialforegoing:ether_gas', amount: 1000 }],
-            energy: 75000,
+            energy: 32000,
             id: `${id_prefix}nether_star`
         }
     ];

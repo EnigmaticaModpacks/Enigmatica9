@@ -10,7 +10,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -4.0d
+			x: -3.5d
 			y: 0.5d
 			shape: "hexagon"
 			dependencies: ["4F90F6437D6CF7EC"]
@@ -19,7 +19,7 @@
 				id: "1B464D1BB138C06B"
 				type: "dimension"
 				title: "Visit the Nether"
-				icon: "minecraft:nether_star"
+				icon: "minecraft:warped_fungus"
 				dimension: "minecraft:the_nether"
 			}]
 		}
@@ -31,7 +31,7 @@
 					gateway: "gateways:wither_council_gate"
 				}
 			}
-			x: -4.0d
+			x: -3.5d
 			y: -0.5d
 			shape: "hexagon"
 			description: ["Summon the Wither Council to obtain access to Nether Stars"]
@@ -176,7 +176,7 @@
 				{
 					id: "713A9B50F06F2804"
 					type: "item"
-					item: "immersiveengineering:mold_gear"
+					item: "immersiveengineering:mold_rod"
 				}
 				{
 					id: "4509325B0D8828B0"
@@ -186,7 +186,7 @@
 				{
 					id: "05A67D1D5C79F160"
 					type: "item"
-					item: "immersiveengineering:mold_rod"
+					item: "immersiveengineering:mold_gear"
 				}
 			]
 		}
