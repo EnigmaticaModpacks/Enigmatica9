@@ -132,27 +132,26 @@ ServerEvents.highPriorityData((event) => {
                 G: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_gold' },
                 P: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_purple' },
                 R: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_red' },
-                B: { type: 'modonomicon:block', block: 'decorative_blocks:soul_brazier' },
-                S: { type: 'modonomicon:block', block: 'occultism:spirit_attuned_crystal' }
+                B: { type: 'modonomicon:block', block: 'decorative_blocks:soul_brazier' }
             },
             pattern: [
                 [
                     '___P_________P___',
-                    '_P___P_____P___P_',
+                    '_P___P__B__P___P_',
                     '__G_G__R_R__G_G__',
-                    'P__B_RPASAPR_B__P',
+                    'P__B_RPA_APR_B__P',
                     '__G_GAW___WAG_G__',
                     '_P_RAP_____PAR_P_',
                     '___PW_W___W_WP___',
                     '__RA___W_W___AR__',
-                    '___S____0____S___',
+                    '_B______0______B_',
                     '__RA___W_W___AR__',
                     '___PW_W___W_WP___',
                     '_P_RAP_____PAR_P_',
                     '__G_GAW___WAG_G__',
-                    'P__B_RPASAPR_B__P',
+                    'P__B_RPA_APR_B__P',
                     '__G_G__R_R__G_G__',
-                    '_P___P_____P___P_',
+                    '_P___P__B__P___P_',
                     '___P_________P___'
                 ]
             ],
