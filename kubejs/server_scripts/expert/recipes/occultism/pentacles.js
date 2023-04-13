@@ -86,34 +86,79 @@ ServerEvents.highPriorityData((event) => {
             ]
         },
         {
-            name: 'summon_evil',
+            name: 'summon_lesser_evil',
             x_placement: -5,
             y_placement: 7,
             mapping: {
                 0: { type: 'modonomicon:block', block: 'occultism:golden_sacrificial_bowl' },
                 P: { type: 'modonomicon:block', block: 'naturesaura:gold_powder' },
                 W: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_white' },
-                F: { type: 'modonomicon:block', block: 'decorative_blocks:soul_brazier' },
-                S: { type: 'modonomicon:block', block: 'occultism:spirit_attuned_crystal' }
+                C: { type: 'modonomicon:tag', display: 'occultism:candle_white', tag: '#minecraft:candles' }
             },
             pattern: [
                 [
-                    'F___PSP___F',
-                    '__PW___WP__',
-                    '_P_______P_',
-                    '_W_W___W_W_',
-                    'P___W_W___P',
-                    'S____0____S',
-                    'P___W_W___P',
-                    '_W_W___W_W_',
-                    '_P_______P_',
-                    '__PW___WP__',
-                    'F___PSP___F'
+                    '______C______',
+                    '_____P_P_____',
+                    '__CPW___WPC__',
+                    '__P_______P__',
+                    '__W_W___W_W__',
+                    '_P___W_W___P_',
+                    'C_____0_____C',
+                    '_P___W_W___P_',
+                    '__W_W___W_W__',
+                    '__P_______P__',
+                    '__CPW___WPC__',
+                    '_____P_P_____',
+                    '______C______'
                 ]
             ],
             parents: [
                 {
                     entry: 'occultism:pentacles/lesser_binding',
+                    draw_arrow: true,
+                    line_enabled: true,
+                    line_reversed: false
+                }
+            ]
+        },
+        {
+            name: 'summon_greater_evil',
+            x_placement: -3,
+            y_placement: 7,
+            mapping: {
+                0: { type: 'modonomicon:block', block: 'occultism:golden_sacrificial_bowl' },
+                A: { type: 'modonomicon:block', block: 'naturesaura:gold_powder' },
+                W: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_white' },
+                G: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_gold' },
+                P: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_purple' },
+                R: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_red' },
+                B: { type: 'modonomicon:block', block: 'decorative_blocks:soul_brazier' },
+                S: { type: 'modonomicon:block', block: 'occultism:spirit_attuned_crystal' }
+            },
+            pattern: [
+                [
+                    '___P_________P___',
+                    '_P___P_____P___P_',
+                    '__G_G__R_R__G_G__',
+                    'P__B_RPASAPR_B__P',
+                    '__G_GAW___WAG_G__',
+                    '_P_RAP_____PAR_P_',
+                    '___PW_W___W_WP___',
+                    '__RA___W_W___AR__',
+                    '___S____0____S___',
+                    '__RA___W_W___AR__',
+                    '___PW_W___W_WP___',
+                    '_P_RAP_____PAR_P_',
+                    '__G_GAW___WAG_G__',
+                    'P__B_RPASAPR_B__P',
+                    '__G_G__R_R__G_G__',
+                    '_P___P_____P___P_',
+                    '___P_________P___'
+                ]
+            ],
+            parents: [
+                {
+                    entry: 'occultism:pentacles/summon_lesser_evil',
                     draw_arrow: true,
                     line_enabled: true,
                     line_reversed: false

@@ -903,7 +903,7 @@ ServerEvents.recipes((event) => {
             inputs: ['#forge:essences/anima', '#forge:essences/air', '#forge:essences/anima', '#forge:essences/air'],
             ritual_dummy: 'kubejs:ritual_summon_death_tome',
             ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:summon_evil',
+            pentacle_id: 'occultism:summon_lesser_evil',
             duration: 10,
             id: `${id_prefix}ritual_summon_death_tome`
         },
@@ -1092,7 +1092,7 @@ ServerEvents.recipes((event) => {
             ],
             ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:wither_council_gate", radius:5}`),
             ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:summon_evil',
+            pentacle_id: 'occultism:summon_greater_evil',
             duration: 10,
             id: `${id_prefix}wither_council_gate`
         },
@@ -1115,7 +1115,7 @@ ServerEvents.recipes((event) => {
             ],
             ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:wilden_grove_gate", radius:5}`),
             ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:summon_evil',
+            pentacle_id: 'occultism:summon_greater_evil',
             entity_to_sacrifice: {
                 tag: 'enigmatica:azulfo',
                 display_name: 'ritual.occultism.sacrifice.azulfo'
