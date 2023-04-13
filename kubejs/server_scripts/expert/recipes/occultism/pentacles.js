@@ -127,32 +127,31 @@ ServerEvents.highPriorityData((event) => {
             y_placement: 7,
             mapping: {
                 0: { type: 'modonomicon:block', block: 'occultism:golden_sacrificial_bowl' },
-                A: { type: 'modonomicon:block', block: 'naturesaura:gold_powder' },
                 W: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_white' },
-                G: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_gold' },
                 P: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_purple' },
                 R: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_red' },
-                B: { type: 'modonomicon:block', block: 'decorative_blocks:soul_brazier' }
+                B: { type: 'modonomicon:block', block: 'decorative_blocks:soul_brazier' },
+                H: { type: 'modonomicon:block', block: 'minecraft:skeleton_skull' }
             },
             pattern: [
                 [
-                    '___P_________P___',
+                    '__PPP_______PPP__',
                     '_P___P__B__P___P_',
-                    '__G_G__R_R__G_G__',
-                    'P__B_RPA_APR_B__P',
-                    '__G_GAW___WAG_G__',
-                    '_P_RAP_____PAR_P_',
-                    '___PW_W___W_WP___',
-                    '__RA___W_W___AR__',
-                    '_B______0______B_',
-                    '__RA___W_W___AR__',
-                    '___PW_W___W_WP___',
-                    '_P_RAP_____PAR_P_',
-                    '__G_GAW___WAG_G__',
-                    'P__B_RPA_APR_B__P',
-                    '__G_G__R_R__G_G__',
+                    'P_W_W_RRRRP_W_W_P',
+                    'P__BHRPW_WPRHB__P',
+                    'P_WHR_PW_WP_RHW_P',
+                    '_P_R_P__W__P_R_P_',
+                    '__PPP__W_W__PPR__',
+                    '__RWW_W___W_WWR__',
+                    '_BR__W__0__W__RB_',
+                    '__RWW_W___W_WWR__',
+                    '__RPP__W_W__PPP__',
+                    '_P_R_P__W__P_R_P_',
+                    'P_WHR_PW_WP_RHW_P',
+                    'P__BHRPW_WPRHB__P',
+                    'P_W_W_PRRRR_W_W_P',
                     '_P___P__B__P___P_',
-                    '___P_________P___'
+                    '__PPP_______PPP__'
                 ]
             ],
             parents: [

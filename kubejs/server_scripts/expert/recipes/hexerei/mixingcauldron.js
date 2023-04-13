@@ -83,6 +83,24 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}chalk_purple`
         },
         {
+            output: 'occultism:chalk_red',
+            inputs: [
+                'minecraft:calcite',
+                '#forge:gems/carminite',
+                '#forge:essences/afrit',
+                '#forge:gems/carminite',
+                'minecraft:calcite',
+                '#forge:gems/carminite',
+                '#forge:essences/afrit',
+                '#forge:gems/carminite'
+            ],
+            liquid: { fluid: 'hexerei:blood_fluid' },
+            liquidOutput: { fluid: 'hexerei:blood_fluid' },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}chalk_red`
+        },
+        {
             output: 'hexerei:blood_sigil',
             inputs: [
                 'minecraft:flint',
