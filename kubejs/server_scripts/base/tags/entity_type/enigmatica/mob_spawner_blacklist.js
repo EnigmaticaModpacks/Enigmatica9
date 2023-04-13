@@ -19,6 +19,7 @@ ServerEvents.tags('entity_type', (event) => {
             'blue_skies:alchemist',
             'blue_skies:summoner',
             'blue_skies:arachnarch',
-            'blue_skies:starlit_crusher'
+            'blue_skies:starlit_crusher',
+            'quark:stoneling'
         ]);
 });
