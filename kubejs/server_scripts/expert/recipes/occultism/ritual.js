@@ -873,14 +873,14 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:logistics_core',
                 'pneumaticcraft:logistics_core',
                 'pneumaticcraft:logistics_core',
-                'quark:rainbow_rune',
+                'mekanism:teleportation_core',
                 '#forge:gems/blazing',
-                'quark:rainbow_rune',
+                'mekanism:teleportation_core',
                 '#forge:gems/blazing',
                 '#forge:gems/blazing',
-                'quark:rainbow_rune',
+                'mekanism:teleportation_core',
                 '#forge:gems/blazing',
-                'quark:rainbow_rune'
+                'mekanism:teleportation_core'
             ],
             ritual_dummy: 'kubejs:ritual_craft_energetic_transference_matrix',
             ritual_type: 'occultism:craft',
