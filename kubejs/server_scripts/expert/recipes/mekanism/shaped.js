@@ -61,13 +61,14 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'mekanism:resistive_heater',
-            pattern: ['ABA', 'CDC', 'AEA'],
+            pattern: ['ABA', 'CDC', 'EFE'],
             key: {
                 A: '#forge:plates/obsidian',
                 B: 'pneumaticcraft:heat_sink',
-                C: 'powah:capacitor_niotic',
-                D: 'thermal:machine_frame',
-                E: 'naturesaura:furnace_heater'
+                C: '#forge:ingots/fiery',
+                D: 'immersiveengineering:furnace_heater',
+                E: 'naturesaura:infused_brick',
+                F: '#forge:gems/pyrope'
             },
             id: 'mekanism:resistive_heater'
         },

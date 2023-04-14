@@ -326,13 +326,11 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'immersiveengineering:furnace_heater',
-            pattern: ['AEA', 'CDC', 'ABA'],
+            pattern: ['ACA', 'ABA'],
             key: {
-                A: '#forge:plates/obsidian',
+                A: '#forge:plates/aluminum',
                 B: 'naturesaura:furnace_heater',
-                C: 'powah:capacitor_basic_large',
-                D: 'thermal:machine_frame',
-                E: 'powah:capacitor_basic_large'
+                C: 'thermal:machine_frame'
             },
             id: `immersiveengineering:crafting/furnace_heater`
         },
