@@ -478,6 +478,12 @@ ServerEvents.recipes((event) => {
             ],
             pressure: 4.0,
             id: `${id_prefix}upgrade_efficiency_5`
+        },
+        {
+            results: [{ item: 'naturesaura:vacuum_bottle', count: 1 }],
+            inputs: [{ item: 'naturesaura:bottle_two_the_rebottling' }],
+            pressure: -0.5,
+            id: `${id_prefix}vacuum_bottle`
         }
     ];
 

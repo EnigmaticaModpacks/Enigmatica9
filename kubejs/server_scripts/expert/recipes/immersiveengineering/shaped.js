@@ -461,6 +461,24 @@ ServerEvents.recipes((event) => {
                 C: '#forge:essences/air'
             },
             id: `immersiveengineering:crafting/toolupgrade_railgun_capacitors`
+        },
+        {
+            output: '4x immersiveengineering:fluid_pipe',
+            pattern: ['ABA'],
+            key: {
+                A: '#forge:plates/aluminum',
+                B: '#forge:ingots/aluminum'
+            },
+            id: `immersiveengineering:crafting/fluid_pipe`
+        },
+        {
+            output: '4x immersiveengineering:fluid_pipe',
+            pattern: ['A', 'B', 'A'],
+            key: {
+                A: '#forge:plates/aluminum',
+                B: '#forge:ingots/aluminum'
+            },
+            id: `${id_prefix}fluid_pipe_vertical`
         }
     ];
 

@@ -168,29 +168,6 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 1.0d
-			dependencies: ["31E4C2A162D7497C"]
-			id: "0E3DFBEF189DE800"
-			tasks: [
-				{
-					id: "713A9B50F06F2804"
-					type: "item"
-					item: "immersiveengineering:mold_rod"
-				}
-				{
-					id: "4509325B0D8828B0"
-					type: "item"
-					item: "immersiveengineering:mold_plate"
-				}
-				{
-					id: "05A67D1D5C79F160"
-					type: "item"
-					item: "immersiveengineering:mold_gear"
-				}
-			]
-		}
-		{
 			x: 10.0d
 			y: 0.5d
 			dependencies: ["0B7E9625225C8413"]
@@ -202,8 +179,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 5.0d
+			x: 5.0d
+			y: 6.0d
 			dependencies: ["1D0AA79380E87E57"]
 			id: "7563E41DBF4FD286"
 			tasks: [{
@@ -213,8 +190,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 6.0d
+			x: 4.0d
+			y: 7.0d
 			dependencies: ["7563E41DBF4FD286"]
 			id: "17F735810850C368"
 			tasks: [{
@@ -224,8 +201,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 6.0d
+			x: 5.0d
+			y: 7.0d
 			dependencies: ["7563E41DBF4FD286"]
 			id: "5503E132D9D02EF8"
 			tasks: [{
@@ -257,8 +234,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 8.0d
+			x: 4.0d
+			y: 9.0d
 			dependencies: ["126F4E070F219A8B"]
 			id: "606F79DAEB15E85B"
 			tasks: [{
@@ -268,8 +245,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 9.0d
+			x: 4.0d
+			y: 10.0d
 			dependencies: ["606F79DAEB15E85B"]
 			id: "507A68CE5D41C4C2"
 			tasks: [{
@@ -279,8 +256,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 7.0d
+			x: 4.0d
+			y: 8.0d
 			dependencies: ["17F735810850C368"]
 			id: "126F4E070F219A8B"
 			tasks: [{
@@ -290,8 +267,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 7.0d
+			x: 5.0d
+			y: 8.0d
 			dependencies: ["5503E132D9D02EF8"]
 			id: "22900B24763183DE"
 			tasks: [{
@@ -301,8 +278,8 @@
 			}]
 		}
 		{
-			x: 8.0d
-			y: 9.0d
+			x: 6.0d
+			y: 10.0d
 			dependencies: ["6E239ECBE33DFA36"]
 			id: "70D6C0937B1D4450"
 			tasks: [{
@@ -312,8 +289,8 @@
 			}]
 		}
 		{
-			x: 8.0d
-			y: 8.0d
+			x: 6.0d
+			y: 9.0d
 			dependencies: [
 				"4B12601018EEB05D"
 				"22900B24763183DE"
@@ -326,8 +303,8 @@
 			}]
 		}
 		{
-			x: 8.0d
-			y: 6.0d
+			x: 6.0d
+			y: 7.0d
 			dependencies: ["7563E41DBF4FD286"]
 			id: "4B12601018EEB05D"
 			tasks: [{
@@ -356,8 +333,8 @@
 			]
 		}
 		{
-			x: 1.5d
-			y: 5.0d
+			x: -1.5d
+			y: 4.5d
 			id: "00CBB00A1C09BCA4"
 			tasks: [{
 				id: "3826319717FB029A"
@@ -367,24 +344,16 @@
 		}
 		{
 			x: 5.0d
-			y: 2.5d
-			dependencies: ["7B4761574E7A7B82"]
+			y: 1.5d
+			dependencies: [
+				"2BA70920EA1ED0A8"
+				"6044FE23384692A5"
+			]
 			id: "767A379B00DCA2E0"
 			tasks: [{
 				id: "1558A342DAD1935D"
 				type: "item"
 				item: "minecraft:iron_ingot"
-			}]
-		}
-		{
-			x: 6.0d
-			y: 2.0d
-			dependencies: ["5BDDB58FF188E650"]
-			id: "7B4761574E7A7B82"
-			tasks: [{
-				id: "379D0425849E6188"
-				type: "item"
-				item: "kubejs:pig_iron_ingot"
 			}]
 		}
 		{
@@ -411,23 +380,13 @@
 			}]
 		}
 		{
+			title: "Magical Forging"
 			x: 5.0d
-			y: 1.5d
-			dependencies: [
-				"2BA70920EA1ED0A8"
-				"6044FE23384692A5"
-			]
-			id: "5BDDB58FF188E650"
-			tasks: [{
-				id: "28CE70B7793778D6"
-				type: "item"
-				item: "create:crushed_iron_ore"
-			}]
-		}
-		{
-			x: 6.0d
 			y: 3.0d
-			dependencies: ["767A379B00DCA2E0"]
+			dependencies: [
+				"767A379B00DCA2E0"
+				"5598EB1EF9E8BBE0"
+			]
 			id: "16B840CCFD9B3115"
 			tasks: [{
 				id: "05285D9A3BD52FB6"
@@ -437,7 +396,7 @@
 		}
 		{
 			x: 5.0d
-			y: 3.5d
+			y: 4.5d
 			dependencies: ["16B840CCFD9B3115"]
 			id: "1D0AA79380E87E57"
 			tasks: [{
@@ -447,8 +406,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 6.0d
+			x: -0.5d
+			y: 4.5d
 			id: "2C43443DCFFF65F4"
 			tasks: [{
 				id: "05A605FCDAEBD972"
@@ -457,13 +416,24 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 6.0d
+			x: -5.5d
+			y: 7.0d
 			id: "15F56E72212629FB"
 			tasks: [{
 				id: "0154E90B21C27B44"
 				type: "item"
 				item: "immersiveengineering:heavy_engineering"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.0d
+			dependencies: ["6044FE23384692A5"]
+			id: "5598EB1EF9E8BBE0"
+			tasks: [{
+				id: "594737E33CA6E1E2"
+				type: "item"
+				item: "thermal:machine_smelter"
 			}]
 		}
 	]
