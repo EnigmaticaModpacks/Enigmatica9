@@ -283,7 +283,7 @@
 			y: -1.0d
 			shape: "hexagon"
 			description: [
-				"The Cult of the Ur-Ghast, foolish as they were, were not far off in their research. Carminite has excellent arcane resonance, but the Redstone they coupled it with was too strong a moderator. The resulting superradiant instability quickly became too much for their contraption to manage. "
+				"The Cult of the Ur-Ghast, foolish as they were, were not far off in their research. Carminite has excellent arcane resonance, but the Redstone they coupled it with was too strong of a moderator. The resulting superradiant instability quickly became too much for their contraption to manage. "
 				""
 				"Fusing it with Source Gems, on the other hand, appears to properly channel the arcane fields. These first attempts appear imperfect, however. The process needs refining. "
 				""
@@ -764,6 +764,17 @@
 				id: "0B175CCA250DA302"
 				type: "item"
 				item: "createaddition:rolling_mill"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -0.5d
+			dependencies: ["3B372F597A05E777"]
+			id: "505DBC92B7AC1AFE"
+			tasks: [{
+				id: "7C7C33FFD852E5A8"
+				type: "item"
+				item: "thermal:machine_furnace"
 			}]
 		}
 	]

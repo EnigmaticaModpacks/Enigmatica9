@@ -139,7 +139,7 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 4.5d
 			y: 0.0d
 			dependencies: ["64D941490FEC2D79"]
 			id: "31E4C2A162D7497C"
@@ -180,7 +180,7 @@
 		}
 		{
 			x: 2.0d
-			y: 5.0d
+			y: 4.0d
 			dependencies: ["1D0AA79380E87E57"]
 			id: "7563E41DBF4FD286"
 			tasks: [{
@@ -191,7 +191,7 @@
 		}
 		{
 			x: 1.0d
-			y: 6.0d
+			y: 5.0d
 			dependencies: ["7563E41DBF4FD286"]
 			id: "17F735810850C368"
 			tasks: [{
@@ -202,7 +202,7 @@
 		}
 		{
 			x: 2.0d
-			y: 6.0d
+			y: 5.0d
 			dependencies: ["7563E41DBF4FD286"]
 			id: "5503E132D9D02EF8"
 			tasks: [{
@@ -212,7 +212,7 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 4.5d
 			y: 1.0d
 			dependencies: ["31E4C2A162D7497C"]
 			id: "6044FE23384692A5"
@@ -224,7 +224,7 @@
 		}
 		{
 			x: 1.0d
-			y: 8.0d
+			y: 7.0d
 			dependencies: ["126F4E070F219A8B"]
 			id: "606F79DAEB15E85B"
 			tasks: [{
@@ -235,7 +235,7 @@
 		}
 		{
 			x: 1.0d
-			y: 9.0d
+			y: 8.0d
 			dependencies: ["606F79DAEB15E85B"]
 			id: "507A68CE5D41C4C2"
 			tasks: [{
@@ -246,7 +246,7 @@
 		}
 		{
 			x: 1.0d
-			y: 7.0d
+			y: 6.0d
 			dependencies: ["17F735810850C368"]
 			id: "126F4E070F219A8B"
 			tasks: [{
@@ -257,7 +257,7 @@
 		}
 		{
 			x: 2.0d
-			y: 7.0d
+			y: 6.0d
 			dependencies: ["5503E132D9D02EF8"]
 			id: "22900B24763183DE"
 			tasks: [{
@@ -268,7 +268,7 @@
 		}
 		{
 			x: 3.0d
-			y: 9.0d
+			y: 8.0d
 			dependencies: ["6E239ECBE33DFA36"]
 			id: "70D6C0937B1D4450"
 			tasks: [{
@@ -279,7 +279,7 @@
 		}
 		{
 			x: 3.0d
-			y: 8.0d
+			y: 7.0d
 			dependencies: [
 				"4B12601018EEB05D"
 				"22900B24763183DE"
@@ -293,7 +293,7 @@
 		}
 		{
 			x: 3.0d
-			y: 6.0d
+			y: 5.0d
 			dependencies: ["7563E41DBF4FD286"]
 			id: "4B12601018EEB05D"
 			tasks: [{
@@ -322,8 +322,8 @@
 			]
 		}
 		{
-			x: 6.0d
-			y: -0.5d
+			x: 5.5d
+			y: 1.5d
 			dependencies: ["21C352EEFEB25365"]
 			id: "00CBB00A1C09BCA4"
 			tasks: [{
@@ -347,9 +347,15 @@
 			}]
 		}
 		{
+			title: "Improved Blast Furnace"
 			icon: "immersiveengineering:advanced_blast_furnace"
-			x: 3.5d
+			x: 2.5d
 			y: 0.5d
+			description: [
+				"Supplying enough heat to work with Iron directly has proved difficult until now. With a magically enhanced blast furnace and Horizonite as fuel, it should prove more feasible."
+				""
+				"Horizonite appears to only occur naturally within the moon of Everdawn. "
+			]
 			dependencies: ["64D941490FEC2D79"]
 			id: "2BA70920EA1ED0A8"
 			tasks: [{
@@ -401,8 +407,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 0.0d
+			x: 5.5d
+			y: 2.5d
 			description: [
 				"The following multiblock machines are available with Light Engineering Blocks:"
 				""
@@ -422,7 +428,7 @@
 		}
 		{
 			x: 5.0d
-			y: 5.0d
+			y: 4.0d
 			description: [
 				"The following multiblock machines are available with Heavy Engineering Blocks:"
 				""
@@ -440,7 +446,7 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 4.5d
 			y: 2.0d
 			dependencies: ["6044FE23384692A5"]
 			id: "5598EB1EF9E8BBE0"
@@ -451,9 +457,9 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: -1.5d
-			shape: "hexagon"
+			x: 5.5d
+			y: 0.5d
+			dependencies: ["31E4C2A162D7497C"]
 			id: "21C352EEFEB25365"
 			tasks: [{
 				id: "4027AFF2F762B0D1"

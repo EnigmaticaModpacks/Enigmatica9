@@ -74,7 +74,7 @@ ServerEvents.recipes((event) => {
         { id: 'hexerei:herb_jar_from_mixing_cauldron' },
         { id: 'hexerei:mixing_cauldron' },
 
-        { id: /immersiveengineering:blastfurnace\/fuel_charcoal/ },
+        { id: /immersiveengineering:blastfurnace\/fuel_/ },
         { id: /immersiveengineering:crafting\/.*_mix/ },
         { id: /immersiveengineering:crafting\/toolupgrade_powerpack_.*/ },
         { id: /immersiveengineering:crafting\/wirecoil_(?!redstone).*/ },
