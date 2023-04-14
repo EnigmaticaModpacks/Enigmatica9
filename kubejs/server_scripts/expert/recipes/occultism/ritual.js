@@ -778,12 +778,12 @@ ServerEvents.recipes((event) => {
                 'naturesaura:infused_stone',
                 'naturesaura:infused_stone',
                 'quark:rainbow_rune',
-                'powah:energy_cable_niotic',
+                'powah:capacitor_niotic',
                 'quark:rainbow_rune',
-                'powah:energy_cable_niotic',
-                'powah:energy_cable_niotic',
+                'powah:capacitor_niotic',
+                'powah:capacitor_niotic',
                 'quark:rainbow_rune',
-                'powah:energy_cable_niotic',
+                'powah:capacitor_niotic',
                 'quark:rainbow_rune'
             ],
             entity_to_sacrifice: {

@@ -146,10 +146,27 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:mob_slaughter_factory' },
         { id: 'industrialforegoing:resourceful_furnace' },
 
-        { id: 'mekanism:teleportation_core' },
-        { id: 'mekanism:seismic_reader' },
-        { id: 'mekanism:energy_tablet' },
+        { id: /mekanism:transmitter\/universal_cable/ },
         { id: 'mekanism:upgrade/anchor' },
+        { id: 'mekanism:teleportation_core' },
+        { id: 'mekanism:energy_tablet' },
+        { id: 'mekanism:seismic_reader' },
+        { id: 'mekanism:seismic_vibrator' },
+        { id: 'mekanism:jetpack' },
+        { id: 'mekanism:jetpack_armored' },
+        { id: 'mekanism:free_runners' },
+        { id: 'mekanism:free_runners_armored' },
+        { id: 'mekanism:atomic_disassembler' },
+        { id: 'mekanism:electric_bow' },
+        { id: 'mekanism:flamethrower' },
+        { id: 'mekanism:dictionary' },
+        { id: 'mekanism:crafting_formula' },
+        { id: 'mekanism:formulaic_assemblicator' },
+        { id: 'mekanism:geiger_counter' },
+        { id: 'mekanism:dosimeter' },
+        { id: /mekanism:hazmat/ },
+        { id: /mekanism:scuba/ },
+        { id: 'mekanism:oredictionificator' },
 
         { id: 'minecraft:netherite_ingot' },
         { id: 'minecraft:lodestone' },
@@ -215,14 +232,17 @@ ServerEvents.recipes((event) => {
         { id: 'powah:crafting/aerial_pearl' },
         { id: 'powah:energizing/ender_core' },
         { id: 'powah:energizing/blazing_crystal' },
-        { id: /powah:crafting\/energizing_rod_/ },
-        { id: /powah:crafting\/battery_/ },
-        { id: /powah:crafting\/(cable|capacitor|reactor|energ.*|.*_cell|battery|player.*|ender.*)_(blazing|hardened)/ },
+        {
+            id: /powah:crafting\/(thermo_generator|solar_panel|furnator|magmator|reactor|energy|cable|battery|ender)/
+        },
+        { id: /powah:crafting\/(energizing_rod_|player_transmitter_|capacitor_)(blazing|hardened)/ },
 
         { id: 'quark:tools/crafting/runes/rainbow_rune' },
 
         { id: 'rftoolsbase:dimensionalshard' },
         { id: 'rftoolsbase:infused_diamond' },
+
+        { id: 'sophisticatedbackpacks:battery_upgrade' },
 
         { id: `spirit:soul_engulfing/soul_powder` },
         { id: `spirit:soul_engulfing/soul_powder_block` },
@@ -253,6 +273,7 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:aquachow_4' },
         { id: 'thermal:deep_aquachow_4' },
         { id: 'thermal:device_potion_diffuser' },
+        { id: 'thermal:tools/rf_potato' },
 
         { id: 'twilightforest:equipment/fiery_ingot_crafting' },
         { id: 'twilightforest:material/fiery_iron_ingot' },

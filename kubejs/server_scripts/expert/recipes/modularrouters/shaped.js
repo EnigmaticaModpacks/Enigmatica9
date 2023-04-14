@@ -150,7 +150,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: '#forge:ingots/steeleaf',
-                B: 'powah:energy_cable_basic',
+                B: 'powah:capacitor_basic_large',
                 C: 'modularrouters:blank_module'
             },
             id: 'modularrouters:energy_output_module'

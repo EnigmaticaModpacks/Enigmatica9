@@ -332,7 +332,7 @@ ServerEvents.recipes((event) => {
                 B: 'naturesaura:furnace_heater',
                 C: 'powah:capacitor_basic_large',
                 D: 'thermal:machine_frame',
-                E: 'powah:energy_cable_basic'
+                E: 'powah:capacitor_basic_large'
             },
             id: `immersiveengineering:crafting/furnace_heater`
         },
@@ -350,7 +350,7 @@ ServerEvents.recipes((event) => {
             output: 'immersiveengineering:fluid_pump',
             pattern: [' A ', 'BCB', 'BDB'],
             key: {
-                A: 'powah:energy_cable_basic',
+                A: 'powah:capacitor_basic_large',
                 B: '#forge:plates/aluminum',
                 C: 'createaddition:electric_motor',
                 D: 'create:mechanical_pump'

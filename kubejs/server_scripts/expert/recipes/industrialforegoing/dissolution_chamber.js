@@ -27,9 +27,9 @@ ServerEvents.recipes((event) => {
                 '#forge:ingots/soul_steel',
                 'pneumaticcraft:printed_circuit_board',
                 '#forge:ingots/soul_steel',
-                'powah:energy_cable_spirited',
+                'powah:capacitor_spirited',
 
-                'powah:energy_cable_spirited',
+                'powah:capacitor_spirited',
                 '#forge:ingots/soul_steel',
                 'kubejs:energetic_transference_matrix',
                 '#forge:ingots/soul_steel'

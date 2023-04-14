@@ -84,11 +84,11 @@ ServerEvents.recipes((event) => {
             pedestalItems: [
                 { item: { item: 'pneumaticcraft:logistics_core' } },
                 { item: { item: 'naturesaura:infused_stone' } },
-                { item: { item: 'powah:energy_cable_niotic' } },
+                { item: { item: 'powah:capacitor_niotic' } },
                 { item: { item: 'naturesaura:infused_stone' } },
                 { item: { item: 'pneumaticcraft:logistics_core' } },
                 { item: { item: 'naturesaura:infused_stone' } },
-                { item: { item: 'powah:energy_cable_niotic' } },
+                { item: { item: 'powah:capacitor_niotic' } },
                 { item: { item: 'naturesaura:infused_stone' } }
             ],
             reagent: [{ item: 'ars_nouveau:wixie_charm' }],

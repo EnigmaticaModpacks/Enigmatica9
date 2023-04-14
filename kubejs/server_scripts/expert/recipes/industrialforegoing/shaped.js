@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'ae2:sky_stone_block',
                 B: '#forge:ingots/compressed_iron',
-                C: 'powah:energy_cable_niotic',
+                C: 'powah:capacitor_niotic',
                 D: 'kubejs:energetic_transference_matrix',
                 E: 'thermal:cured_rubber'
             },
