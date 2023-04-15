@@ -98,6 +98,19 @@
 		#
 		#Range: 0.0 ~ 1.0
 		PBOreHoneycombSpawnRateSpiderBeeDungeon = 0.12
+		# 
+		#-----------------------------------------------------
+		#
+		# Allow filled Bee Cages to turn Empty Honeycomb Brood blocks into 
+		# a regular Honeycomb Brood Block with a larva inside! 
+		#
+		allowProductiveBeesBeeCageRevivingEmptyBroodBlock = true
+		# 
+		#-----------------------------------------------------
+		#
+		# Allow Honeycomb Brood blocks fed by Dispenser to be able to have chance of spawning Productive Bees's bees.
+		#
+		allowProductiveBeesSpawnFromDispenserFedBroodBlock = true
 
 	["Mod Compatibility Options"."Friends and Foes Options"]
 		# 
@@ -190,6 +203,19 @@
 		# NOTE: Will require a restart of the world to take effect. 
 		#
 		spawnResourcefulBeesHoneycombVeins = true
+		# 
+		#-----------------------------------------------------
+		#
+		# Allow filled Bee Jars to turn Empty Honeycomb Brood blocks into 
+		# a regular Honeycomb Brood Block with a larva inside! 
+		#
+		allowResourcefulBeesBeeJarRevivingEmptyBroodBlock = true
+		# 
+		#-----------------------------------------------------
+		#
+		# Allow Honeycomb Brood blocks fed by Dispenser to be able to have chance of spawning Resourceful Bees's bees.
+		#
+		allowResourcefulBeesSpawnFromDispenserFedBroodBlock = true
 
 	["Mod Compatibility Options"."Potion of Bees Options"]
 		# 
@@ -207,4 +233,13 @@
 		# Adds Bumblezone items to Beekeeper mod's Beekeeper trades!
 		#
 		allowBeekeeperTradesCompat = true
+
+	["Mod Compatibility Options"."Goodall Options"]
+		# 
+		#-----------------------------------------------------
+		#
+		# Allow Bottled Bees to turn Empty Honeycomb Brood blocks into 
+		# a regular Honeycomb Brood Block with a larva inside! 
+		#
+		allowGoodallBottledBeesRevivingEmptyBroodBlock = true
 

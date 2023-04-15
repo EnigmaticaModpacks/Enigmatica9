@@ -1,0 +1,41 @@
+
+["general configs"]
+	#Enable or disable magic flag on spell damage, for interaction with magic reduction or proficiency
+	"turn spells magic" = true
+
+#Pmmo scaling
+[PMMO]
+	#XP gained per Mana spent
+	ars_mana = 0.1
+	#% Bonus to Spell Damage per Magic level
+	ars_damage_bonus = 0.0
+	#% Bonus to Spell Resistance per Magic level
+	ars_defense_bonus = 0.0
+
+#Scaling Health scaling
+["SCALING HEALTH"]
+	#Spell Damage bonus per crystal
+	scaling_ars_damage = 0.0
+
+#Identity Abilities
+["IDENTITY MORPHS"]
+	#cooldown for the active ability of flarecannon
+	flarecannon_cooldown = 120
+	#cooldown for the active ability of starbuncle
+	starby_cooldown = 3600
+	#cooldown for the active ability of weald walker
+	ww_cooldown = 100
+	#cooldown for the active ability of whirlisprig
+	whirli_cooldown = 400
+	#cooldown for the active ability of wilden hunter
+	wil_hunter_cooldown = 800
+	#cooldown for the active ability of wilden stalker
+	wil_stalker_cooldown = 1300
+	#cooldown for the active ability of wixie
+	wixie_cooldown = 100
+
+#Hexcasting Compat
+["HEX CASTING"]
+	#media value of a source gem
+	source_media = 50000
+
