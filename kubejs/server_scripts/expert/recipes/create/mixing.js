@@ -120,6 +120,15 @@ ServerEvents.recipes((event) => {
             ],
             results: [{ item: AlmostUnified.getPreferredItemForTag('forge:dusts/constantan').getId(), count: 4 }],
             id: `${id_prefix}constantan_dust`
+        },
+        {
+            ingredients: [{ tag: 'forge:essences/manipulation' }, { amount: 1000, fluidTag: 'forge:brine' }],
+            results: [
+                { item: 'mekanism:dust_lithium', count: 4 },
+                { item: 'occultism:iesnium_dust', count: 3 }
+            ],
+            heatRequirement: 'superheated',
+            id: `${id_prefix}iesnium_lithium_salt`
         }
     ];
 

@@ -218,7 +218,6 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:spawner_agitator' },
         { id: 'pneumaticcraft:module_expansion_card' },
         { id: 'pneumaticcraft:compressed_iron_gear' },
-
         { id: 'pneumaticcraft:pneumatic_helmet' },
         { id: 'pneumaticcraft:pneumatic_chestplate' },
         { id: 'pneumaticcraft:pneumatic_leggings' },

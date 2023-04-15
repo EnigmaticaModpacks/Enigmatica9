@@ -153,6 +153,12 @@ ServerEvents.recipes((event) => {
             outputs: ['thermal:dynamo_fuel_augment'],
             energy: 10000,
             id: `${id_prefix}dynamo_fuel_augment`
+        },
+        {
+            inputs: ['minecraft:netherite_scrap', '4x #forge:ingots/iesnium'],
+            outputs: ['4x minecraft:netherite_ingot'],
+            energy: 20000,
+            id: `${id_prefix}netherite_ingot`
         }
     ];
 

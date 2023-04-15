@@ -23,6 +23,18 @@ ServerEvents.recipes((event) => {
             id: `powah:energizing/niotic_crystal`
         },
         {
+            output: '4x powah:crystal_spirited',
+            inputs: [
+                '#forge:essences/earth',
+                'kubejs:sylvanite',
+                '#forge:gems/diopside',
+                'kubejs:sylvanite',
+                '#forge:essences/earth'
+            ],
+            energy: '1600000',
+            id: `powah:energizing/spirited_crystal`
+        },
+        {
             output: '4x spirit:soul_steel_ingot',
             inputs: [
                 '#forge:dusts/iesnium',

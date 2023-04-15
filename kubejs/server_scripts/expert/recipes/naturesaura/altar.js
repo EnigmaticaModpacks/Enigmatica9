@@ -79,14 +79,6 @@ ServerEvents.recipes((event) => {
             aura: 300,
             time: 5,
             id: `${id_prefix}deep_aquachow`
-        },
-        {
-            output: '9x occultism:raw_iesnium',
-            input: '#forge:storage_blocks/raw_silver',
-            catalyst: 'kubejs:gloaming_catalyst',
-            aura: 54000,
-            time: 180,
-            id: `${id_prefix}raw_iesnium`
         }
     ];
 

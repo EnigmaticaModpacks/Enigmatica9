@@ -127,18 +127,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}brass_hand`
         },
         {
-            output: { item: 'minecraft:netherite_ingot', count: 4 },
-            pedestalItems: [
-                { item: { tag: 'forge:ingots/electrum' } },
-                { item: { tag: 'forge:ingots/electrum' } },
-                { item: { tag: 'forge:ingots/electrum' } },
-                { item: { tag: 'forge:ingots/electrum' } }
-            ],
-            reagent: [{ item: 'minecraft:netherite_scrap' }],
-            sourceCost: 5000,
-            id: `${id_prefix}netherite_ingot`
-        },
-        {
             output: { item: 'immersiveengineering:mold_plate', count: 1 },
             pedestalItems: [{ item: { tag: 'forge:plates' } }, { item: { tag: 'forge:essences/manipulation' } }],
             reagent: [{ item: 'pneumaticcraft:compressed_stone_slab' }],

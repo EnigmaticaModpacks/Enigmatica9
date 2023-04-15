@@ -57,14 +57,14 @@ ServerEvents.recipes((event) => {
         },
         {
             fluid_input: { type: 'pneumaticcraft:fluid', amount: 8000, fluid: 'kubejs:abyssal_seawater' },
-            fluid_output: { amount: 800, fluid: 'mekanism:brine' },
+            fluid_output: { amount: 1000, fluid: 'mekanism:brine' },
             item_input: [{ item: 'kubejs:magebloom_filter' }],
             item_output: { item: 'kubejs:saturated_magebloom_filter' },
             exothermic: true,
             temperature: { max_temp: 273 },
             pressure: 9.5,
             air_use_multiplier: 20.0,
-            speed: 0.5,
+            speed: 0.75,
             id: `${id_prefix}saturated_magebloom_filter`
         },
         {
@@ -86,6 +86,17 @@ ServerEvents.recipes((event) => {
             air_use_multiplier: 1.0,
             speed: 2.0,
             id: `pneumaticcraft:thermo_plant/upgrade_matrix`
+        },
+        {
+            item_output: { item: 'kubejs:sylvanite', count: 1 },
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 100, fluid: 'kubejs:magicite' },
+            item_input: [{ tag: 'forge:dusts/silver' }],
+            exothermic: true,
+            temperature: { max_temp: 173 },
+            pressure: 9.0,
+            air_use_multiplier: 20.0,
+            speed: 0.5,
+            id: `${id_prefix}sylvanite`
         }
     ];
 

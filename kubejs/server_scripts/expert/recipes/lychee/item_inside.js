@@ -124,7 +124,6 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'lychee:item_inside';
-
         event.custom(recipe).id(recipe.id);
     });
 });

@@ -121,7 +121,7 @@ ServerEvents.recipes((event) => {
             output: '2x ars_nouveau:bookwyrm_charm',
             activation_item: '#forge:essences/conjuration',
             inputs: [
-                'naturesaura:gold_leaf',
+                'hexerei:mindful_trance_blend',
                 'naturesaura:gold_leaf',
                 'naturesaura:gold_leaf',
                 'naturesaura:gold_leaf',
@@ -725,12 +725,13 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'pneumaticcraft:flux_compressor',
-            activation_item: '#industrialforegoing:machine_frame/simple',
+            activation_item: 'pneumaticcraft:air_compressor',
             inputs: [
-                'pneumaticcraft:reinforced_pressure_tube',
+                'pneumaticcraft:printed_circuit_board',
                 'pneumaticcraft:turbine_rotor',
                 '#forge:gears/compressed_iron',
-                'pneumaticcraft:turbine_rotor'
+                'pneumaticcraft:turbine_rotor',
+                'pneumaticcraft:reinforced_pressure_tube'
             ],
             entity_to_sacrifice: {
                 tag: 'enigmatica:elementals/air',

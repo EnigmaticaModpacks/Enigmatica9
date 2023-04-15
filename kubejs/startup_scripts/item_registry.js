@@ -26,7 +26,8 @@ StartupEvents.registry('item', (event) => {
         'dream_stone',
         'dim_arcanite_crystal',
         'bright_arcanite_crystal',
-        'iridescent_arcanite_crystal'
+        'iridescent_arcanite_crystal',
+        'sylvanite'
     ];
 
     const ritualDummies = [

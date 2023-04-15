@@ -179,7 +179,7 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 2.5d
 			y: 4.0d
 			dependencies: ["1D0AA79380E87E57"]
 			id: "7563E41DBF4FD286"
@@ -190,7 +190,7 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: 2.5d
 			y: 5.0d
 			dependencies: ["7563E41DBF4FD286"]
 			id: "17F735810850C368"
@@ -201,9 +201,9 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 5.0d
-			dependencies: ["7563E41DBF4FD286"]
+			x: 4.5d
+			y: 6.0d
+			dependencies: ["7465284C82512CF1"]
 			id: "5503E132D9D02EF8"
 			tasks: [{
 				id: "6FE9FBFD8C2D21EA"
@@ -223,9 +223,12 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: 3.0d
 			y: 7.0d
-			dependencies: ["126F4E070F219A8B"]
+			dependencies: [
+				"126F4E070F219A8B"
+				"6E239ECBE33DFA36"
+			]
 			id: "606F79DAEB15E85B"
 			tasks: [{
 				id: "1A90312A5DCEA90B"
@@ -234,9 +237,12 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 8.0d
-			dependencies: ["606F79DAEB15E85B"]
+			x: 4.0d
+			y: 7.0d
+			dependencies: [
+				"606F79DAEB15E85B"
+				"5503E132D9D02EF8"
+			]
 			id: "507A68CE5D41C4C2"
 			tasks: [{
 				id: "0D888CFF2F834C92"
@@ -245,7 +251,7 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: 2.5d
 			y: 6.0d
 			dependencies: ["17F735810850C368"]
 			id: "126F4E070F219A8B"
@@ -256,33 +262,11 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 3.5d
 			y: 6.0d
-			dependencies: ["5503E132D9D02EF8"]
-			id: "22900B24763183DE"
-			tasks: [{
-				id: "7272B1CEF58427A5"
-				type: "item"
-				item: "kubejs:abyssal_seawater_bucket"
-			}]
-		}
-		{
-			x: 3.0d
-			y: 8.0d
-			dependencies: ["6E239ECBE33DFA36"]
-			id: "70D6C0937B1D4450"
-			tasks: [{
-				id: "5785C175A0F6CD9D"
-				type: "item"
-				item: "industrialforegoing:biofuel_bucket"
-			}]
-		}
-		{
-			x: 3.0d
-			y: 7.0d
 			dependencies: [
 				"4B12601018EEB05D"
-				"22900B24763183DE"
+				"5503E132D9D02EF8"
 			]
 			id: "6E239ECBE33DFA36"
 			tasks: [{
@@ -292,9 +276,9 @@
 			}]
 		}
 		{
-			x: 3.0d
+			x: 3.5d
 			y: 5.0d
-			dependencies: ["7563E41DBF4FD286"]
+			dependencies: ["538DE3B57A9AC5AD"]
 			id: "4B12601018EEB05D"
 			tasks: [{
 				id: "1DE7111A79414D27"
@@ -427,7 +411,7 @@
 			}]
 		}
 		{
-			x: 5.0d
+			x: 4.5d
 			y: 4.0d
 			description: [
 				"The following multiblock machines are available with Heavy Engineering Blocks:"
@@ -465,6 +449,28 @@
 				id: "4027AFF2F762B0D1"
 				type: "item"
 				item: "kubejs:energetic_transference_matrix"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 5.0d
+			dependencies: ["15F56E72212629FB"]
+			id: "538DE3B57A9AC5AD"
+			tasks: [{
+				id: "6D0F7E922D427944"
+				type: "item"
+				item: "pneumaticcraft:printed_circuit_board"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 5.5d
+			dependencies: ["538DE3B57A9AC5AD"]
+			id: "7465284C82512CF1"
+			tasks: [{
+				id: "25E1CC6FE74A1DFB"
+				type: "item"
+				item: "pneumaticcraft:assembly_controller"
 			}]
 		}
 	]
