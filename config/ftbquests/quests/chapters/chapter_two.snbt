@@ -10,8 +10,8 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -3.5d
-			y: 0.5d
+			x: -1.5d
+			y: 5.0d
 			shape: "hexagon"
 			dependencies: ["4F90F6437D6CF7EC"]
 			id: "3D0B7DA1DD0A74B1"
@@ -31,8 +31,8 @@
 					gateway: "gateways:wither_council_gate"
 				}
 			}
-			x: -3.5d
-			y: -0.5d
+			x: -1.5d
+			y: 4.0d
 			shape: "hexagon"
 			description: ["Summon the Wither Council to obtain access to Nether Stars"]
 			id: "4F90F6437D6CF7EC"
@@ -45,7 +45,7 @@
 		{
 			title: "Dream Stone"
 			icon: "blue_skies:alchemy_table"
-			x: -2.0d
+			x: -1.5d
 			y: -0.5d
 			shape: "hexagon"
 			id: "69324F7E3A7BCF04"
@@ -69,7 +69,7 @@
 			]
 		}
 		{
-			x: -2.0d
+			x: -1.5d
 			y: 0.5d
 			dependencies: ["69324F7E3A7BCF04"]
 			id: "4C676E7D2BA75DE4"
@@ -80,7 +80,7 @@
 			}]
 		}
 		{
-			x: -2.0d
+			x: -1.5d
 			y: 1.5d
 			dependencies: ["4C676E7D2BA75DE4"]
 			id: "71D9A268FF98E954"
@@ -93,7 +93,7 @@
 		{
 			title: "Netherite Scrap"
 			icon: "blue_skies:summoning_table"
-			x: -0.5d
+			x: 0.0d
 			y: -0.5d
 			shape: "hexagon"
 			id: "0CFE9B39B0643013"
@@ -117,7 +117,7 @@
 			]
 		}
 		{
-			x: -0.5d
+			x: 0.0d
 			y: 0.5d
 			dependencies: ["0CFE9B39B0643013"]
 			id: "77E8DD38A379F9C7"
@@ -128,7 +128,7 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: 0.0d
 			y: 1.5d
 			dependencies: ["77E8DD38A379F9C7"]
 			id: "39B2F84EBDC27AA3"
@@ -157,8 +157,8 @@
 					gateway: "gateways:wilden_grove_gate"
 				}
 			}
-			x: 10.0d
-			y: -0.5d
+			x: 0.0d
+			y: 4.0d
 			shape: "hexagon"
 			id: "0B7E9625225C8413"
 			tasks: [{
@@ -168,8 +168,8 @@
 			}]
 		}
 		{
-			x: 10.0d
-			y: 0.5d
+			x: 0.0d
+			y: 5.0d
 			dependencies: ["0B7E9625225C8413"]
 			id: "10238EBB9B55F67B"
 			tasks: [{
@@ -306,7 +306,7 @@
 			]
 		}
 		{
-			x: 5.5d
+			x: 6.0d
 			y: 1.5d
 			dependencies: ["21C352EEFEB25365"]
 			id: "00CBB00A1C09BCA4"
@@ -363,10 +363,7 @@
 			title: "Magical Forging"
 			x: 3.5d
 			y: 2.5d
-			dependencies: [
-				"767A379B00DCA2E0"
-				"5598EB1EF9E8BBE0"
-			]
+			dependencies: ["767A379B00DCA2E0"]
 			id: "16B840CCFD9B3115"
 			tasks: [{
 				id: "05285D9A3BD52FB6"
@@ -391,7 +388,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 6.0d
 			y: 2.5d
 			description: [
 				"The following multiblock machines are available with Light Engineering Blocks:"
@@ -427,17 +424,6 @@
 				id: "0154E90B21C27B44"
 				type: "item"
 				item: "immersiveengineering:heavy_engineering"
-			}]
-		}
-		{
-			x: 4.5d
-			y: 2.0d
-			dependencies: ["6044FE23384692A5"]
-			id: "5598EB1EF9E8BBE0"
-			tasks: [{
-				id: "594737E33CA6E1E2"
-				type: "item"
-				item: "thermal:machine_smelter"
 			}]
 		}
 		{
