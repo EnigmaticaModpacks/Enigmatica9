@@ -1,0 +1,5 @@
+#Should all Colors of Dyed Blocks should be shown in the Creative Tabs?
+all_colors_in_item_group = true
+#Activate Debug Blocks?
+debug_blocks = false
+
