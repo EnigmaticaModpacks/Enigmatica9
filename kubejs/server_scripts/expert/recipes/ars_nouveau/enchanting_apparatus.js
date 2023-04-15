@@ -446,6 +446,19 @@ ServerEvents.recipes((event) => {
             reagents: ['thermal:energy_cell_frame'],
             sourceCost: 10000,
             id: `${id_prefix}dynamo_disenchantment`
+        },
+        {
+            output: 'ars_elemental:thread_summon',
+            inputs: [
+                '#forge:essences/conjuration',
+                '#forge:essences/conjuration',
+                'blue_skies:summoning_tome',
+                '#ars_nouveau:wilden_drop',
+                '#ars_nouveau:wilden_drop'
+            ],
+            reagents: ['ars_nouveau:blank_thread'],
+            sourceCost: 0,
+            id: `ars_elemental:thread_summon`
         }
     ];
 
