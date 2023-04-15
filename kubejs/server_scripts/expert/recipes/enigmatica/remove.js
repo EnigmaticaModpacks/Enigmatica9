@@ -46,6 +46,9 @@ ServerEvents.recipes((event) => {
         { id: 'ae2:inscriber/calculation_processor' },
         { id: 'ae2:inscriber/engineering_processor' },
 
+        { id: /blue_skies:.*_(helmet|chestplate|leggings|boots)/ },
+        { id: /blue_skies:.*_(sword|pickaxe|axe|shovel|hoe)/ },
+
         { id: 'constructionwand:stone_wand' },
         { id: 'constructionwand:iron_wand' },
 
@@ -170,6 +173,8 @@ ServerEvents.recipes((event) => {
 
         { id: 'minecraft:netherite_ingot' },
         { id: 'minecraft:lodestone' },
+        { id: /minecraft:diamond_(helmet|chestplate|leggings|boots)/ },
+        { id: /minecraft:diamond_(sword|pickaxe|axe|shovel|hoe)/ },
 
         { id: 'modularrouters:sender_module_1_alt' },
         { id: 'modularrouters:sender_module_2_x4' },

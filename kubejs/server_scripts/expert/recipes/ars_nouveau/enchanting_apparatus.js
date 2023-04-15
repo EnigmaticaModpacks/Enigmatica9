@@ -612,6 +612,45 @@ ServerEvents.recipes((event) => {
         );
     });
 
+    const gem_types = [
+        { mod: 'minecraft', material: 'diamond', essence: 'abjuration' },
+        { mod: 'blue_skies', material: 'pyrope', essence: 'fire' },
+        { mod: 'blue_skies', material: 'aquite', essence: 'water' },
+        { mod: 'blue_skies', material: 'diopside', essence: 'earth' },
+        { mod: 'blue_skies', material: 'charoite', essence: 'air' }
+    ];
+
+    const equipment_types = [
+        { slot: 'helmet', count: 5 },
+        { slot: 'chestplate', count: 8 },
+        { slot: 'leggings', count: 7 },
+        { slot: 'boots', count: 4 },
+        { slot: 'sword', count: 2 },
+        { slot: 'pickaxe', count: 3 },
+        { slot: 'axe', count: 3 },
+        { slot: 'shovel', count: 1 },
+        { slot: 'hoe', count: 2 }
+    ];
+
+    gem_types.forEach((gem_type) => {
+        equipment_types.forEach((equipment_type) => {
+            let pedestalItems = [{ item: { tag: `forge:essences/${gem_type.essence}` } }];
+
+            for (let i = 0; i < equipment_type.count; i++) {
+                pedestalItems.push({ item: { tag: `forge:gems/${gem_type.material}` } });
+            }
+
+            recipes.push({
+                output: { item: `${gem_type.mod}:${gem_type.material}_${equipment_type.slot}` },
+                pedestalItems: pedestalItems,
+                reagent: [{ item: `minecraft:golden_${equipment_type.slot}` }],
+                keepNbtOfReagent: true,
+                sourceCost: 0,
+                id: `${id_prefix}${gem_type.material}_${equipment_type.slot}`
+            });
+        });
+    });
+
     recipes.forEach((recipe) => {
         recipe.type = 'ars_nouveau:enchanting_apparatus';
         event.custom(recipe).id(recipe.id);
