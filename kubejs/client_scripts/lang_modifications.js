@@ -1019,6 +1019,57 @@ const entries = {
                 expert: 'A machine which uses bits of aetherium and mass amounts of energy to atomically transmute various resources.'
             }
         }
+    ],
+    ae2: [
+        {
+            key: 'item.ae2.printed_silicon',
+            value: {
+                normal: 'Printed Silicon',
+                expert: 'Runic Manifold'
+            }
+        },
+        {
+            key: 'item.ae2.printed_logic_processor',
+            value: {
+                normal: 'Printed Logic Circuit',
+                expert: 'Runic Manifold: Djinni'
+            }
+        },
+        {
+            key: 'item.ae2.printed_calculation_processor',
+            value: {
+                normal: 'Printed Calculation Circuit',
+                expert: 'Runic Manifold: Afrit'
+            }
+        },
+        {
+            key: 'item.ae2.printed_engineering_processor',
+            value: {
+                normal: 'Printed Engineering Circuit',
+                expert: 'Runic Manifold: Marid'
+            }
+        },
+        {
+            key: 'item.ae2.logic_processor',
+            value: {
+                normal: 'Logic Processor',
+                expert: 'Runic Manifold: Djinni (Bound)'
+            }
+        },
+        {
+            key: 'item.ae2.calculation_processor',
+            value: {
+                normal: 'Calculation Processor',
+                expert: 'Runic Manifold: Afrit (Bound)'
+            }
+        },
+        {
+            key: 'item.ae2.engineering_processor',
+            value: {
+                normal: 'Engineering Processor',
+                expert: 'Runic Manifold: Marid (Bound)'
+            }
+        }
     ]
 };
 Object.keys(entries).forEach((mod) => {

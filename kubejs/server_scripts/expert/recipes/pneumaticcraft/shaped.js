@@ -251,7 +251,7 @@ ServerEvents.recipes((event) => {
             output: '4x pneumaticcraft:printed_circuit_board',
             pattern: [' BA', 'BCB', 'AB '],
             key: {
-                A: 'immersiveengineering:component_electronic',
+                A: 'ae2:logic_processor',
                 B: 'quark:rainbow_rune',
                 C: 'immersiveengineering:circuit_board'
             },

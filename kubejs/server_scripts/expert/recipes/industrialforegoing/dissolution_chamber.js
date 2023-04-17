@@ -41,13 +41,13 @@ ServerEvents.recipes((event) => {
             output: '2x industrialforegoing:machine_frame_advanced',
             inputs: [
                 '#forge:ingots/soul_steel',
-                'pneumaticcraft:printed_circuit_board',
+                'kubejs:energetic_transference_matrix',
                 '#forge:ingots/soul_steel',
                 'powah:capacitor_spirited',
 
                 'powah:capacitor_spirited',
                 '#forge:ingots/soul_steel',
-                'kubejs:energetic_transference_matrix',
+                'ae2:calculation_processor',
                 '#forge:ingots/soul_steel'
             ],
             inputFluid: '{Amount:1000,FluidName:"industrialforegoing:ether_gas"}',

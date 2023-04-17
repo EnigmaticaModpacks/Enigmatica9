@@ -238,6 +238,39 @@ ServerEvents.recipes((event) => {
                 D: 'naturesaura:sky_ingot'
             },
             id: `ae2:network/cells/item_storage_components_cell_256k_part`
+        },
+        {
+            output: 'ae2:printed_logic_processor',
+            pattern: ['AB ', 'CDC', ' B '],
+            key: {
+                A: 'occultism:purified_ink',
+                B: 'quark:orange_rune',
+                C: 'quark:yellow_rune',
+                D: 'ae2:printed_silicon'
+            },
+            id: `${id_prefix}printed_logic_processor`
+        },
+        {
+            output: 'ae2:printed_calculation_processor',
+            pattern: ['AB ', 'CDC', ' B '],
+            key: {
+                A: 'occultism:purified_ink',
+                B: 'quark:light_blue_rune',
+                C: 'quark:blue_rune',
+                D: 'ae2:printed_silicon'
+            },
+            id: `${id_prefix}printed_calculation_processor`
+        },
+        {
+            output: 'ae2:printed_engineering_processor',
+            pattern: ['AB ', 'CDC', ' B '],
+            key: {
+                A: 'occultism:purified_ink',
+                B: 'quark:cyan_rune',
+                C: 'quark:lime_rune',
+                D: 'ae2:printed_silicon'
+            },
+            id: `${id_prefix}printed_engineering_processor`
         }
     ];
 

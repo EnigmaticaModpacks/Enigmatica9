@@ -41,10 +41,7 @@ ServerEvents.recipes((event) => {
         { id: 'ae2:transform/fluix_crystals' },
         { id: 'ae2:network/blocks/controller' },
         { id: 'ae2:misc/fluixpearl' },
-        { id: 'ae2:inscriber/silicon_print' },
-        { id: 'ae2:inscriber/logic_processor' },
-        { id: 'ae2:inscriber/calculation_processor' },
-        { id: 'ae2:inscriber/engineering_processor' },
+        { id: /ae2:inscriber/ },
 
         { id: /blue_skies:.*_(helmet|chestplate|leggings|boots)/ },
         { id: /blue_skies:.*_(sword|pickaxe|axe|shovel|hoe)/ },

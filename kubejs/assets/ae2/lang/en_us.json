@@ -1,0 +1,9 @@
+{
+	"item.ae2.printed_silicon": "Runic Manifold",
+	"item.ae2.printed_logic_processor": "Runic Manifold: Djinni",
+	"item.ae2.printed_calculation_processor": "Runic Manifold: Afrit",
+	"item.ae2.printed_engineering_processor": "Runic Manifold: Marid",
+	"item.ae2.logic_processor": "Runic Manifold: Djinni (Bound)",
+	"item.ae2.calculation_processor": "Runic Manifold: Afrit (Bound)",
+	"item.ae2.engineering_processor": "Runic Manifold: Marid (Bound)"
+}
