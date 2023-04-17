@@ -954,6 +954,36 @@ const entries = {
                 expert: 'Arcane Furnace'
             }
         }
+    ],
+    mekanism: [
+        {
+            key: 'gas.mekanism.polonium',
+            value: {
+                normal: 'Polonium',
+                expert: 'Pandemonium'
+            }
+        },
+        {
+            key: 'item.mekanism.pellet_polonium',
+            value: {
+                normal: 'Polonium',
+                expert: 'Mote of Pandemonium'
+            }
+        },
+        {
+            key: 'gas.mekanism.antimatter',
+            value: {
+                normal: 'Antimatter',
+                expert: 'Aetherium'
+            }
+        },
+        {
+            key: 'item.mekanism.pellet_antimatter',
+            value: {
+                normal: 'Antimatter Pellet',
+                expert: 'Mote of Aetherium'
+            }
+        }
     ]
 };
 Object.keys(entries).forEach((mod) => {

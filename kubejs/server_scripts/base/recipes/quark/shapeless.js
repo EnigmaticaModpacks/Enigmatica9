@@ -6,6 +6,11 @@ ServerEvents.recipes((event) => {
             output: 'quark:permafrost',
             inputs: ['minecraft:dirt', 'thermal:ice_charge'],
             id: `${id_prefix}permafrost`
+        },
+        {
+            output: 'quark:rainbow_rune',
+            inputs: ['quark:blank_rune', '#forge:dyes/rainbow'],
+            id: `${id_prefix}rainbow_rune`
         }
     ];
 

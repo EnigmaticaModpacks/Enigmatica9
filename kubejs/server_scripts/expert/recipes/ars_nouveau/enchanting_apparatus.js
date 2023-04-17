@@ -459,63 +459,65 @@ ServerEvents.recipes((event) => {
             reagents: ['ars_nouveau:blank_thread'],
             sourceCost: 0,
             id: `ars_elemental:thread_summon`
+        },
+        {
+            output: Item.of(
+                'immersiveengineering:revolver',
+                '{perks:{cooldown:0.75d,luck:1.0d,noise:0.75d},upgrades:{}}'
+            ),
+            inputs: [
+                '#forge:ingots/infused_iron',
+                '#forge:ingots/infused_iron',
+                '#forge:ingots/infused_iron',
+                'naturesaura:calling_spirit',
+                '#forge:storage_blocks/lapis',
+                '#forge:storage_blocks/lapis',
+                '#forge:storage_blocks/source',
+                '#forge:storage_blocks/source'
+            ],
+            reagents: ['immersiveengineering:revolver'],
+            sourceCost: 2000,
+            id: `${id_prefix}revolver_tier_1`
+        },
+        {
+            output: Item.of(
+                'immersiveengineering:revolver',
+                '{perks:{cooldown:0.5d,luck:2.0d,noise:0.5d},upgrades:{}}'
+            ),
+            inputs: [
+                '#forge:ingots/skies',
+                '#forge:ingots/skies',
+                '#forge:ingots/skies',
+                'kubejs:spirit_of_devotion',
+                '#forge:storage_blocks/lapis',
+                '#forge:storage_blocks/lapis',
+                '#forge:storage_blocks/source',
+                '#forge:storage_blocks/source'
+            ],
+            reagents: ['immersiveengineering:revolver'],
+            sourceCost: 5000,
+            id: `${id_prefix}revolver_tier_2`
+        },
+        {
+            output: Item.of(
+                'immersiveengineering:revolver',
+                '{perks:{cooldown:0.25d,luck:3.0d,noise:0.25d},upgrades:{}}'
+            ),
+            inputs: [
+                '#forge:ingots/depths',
+                '#forge:ingots/depths',
+                '#forge:ingots/depths',
+                'kubejs:spirit_of_devotion',
+                '#forge:storage_blocks/lapis',
+                '#forge:storage_blocks/lapis',
+                '#forge:storage_blocks/source',
+                '#forge:storage_blocks/source'
+            ],
+            reagents: ['immersiveengineering:revolver'],
+            sourceCost: 10000,
+            id: `${id_prefix}revolver_tier_3`
         }
     ];
-
-    const gunparts = ['barrel', 'hammer', 'drum'];
-
-    gunparts.forEach((gunpart) => {
-        recipes.push(
-            {
-                output: Item.of(`immersiveengineering:gunpart_${gunpart}`, '{generatePerks:1b,perks:{luck:0.50d}}'),
-                inputs: [
-                    '#forge:essences/earth',
-                    '#forge:essences/earth',
-                    '#forge:essences/earth',
-                    '#forge:storage_blocks/diamond',
-                    '#forge:storage_blocks/lapis',
-                    '#forge:storage_blocks/lapis',
-                    '#forge:storage_blocks/source',
-                    '#forge:storage_blocks/source'
-                ],
-                reagents: [`immersiveengineering:gunpart_${gunpart}`],
-                sourceCost: 0,
-                id: `${id_prefix}${gunpart}_luck`
-            },
-            {
-                output: Item.of(`immersiveengineering:gunpart_${gunpart}`, '{generatePerks:1b,perks:{cooldown:0.85d}}'),
-                inputs: [
-                    '#forge:essences/air',
-                    '#forge:essences/air',
-                    '#forge:essences/air',
-                    '#forge:storage_blocks/diamond',
-                    '#forge:storage_blocks/lapis',
-                    '#forge:storage_blocks/lapis',
-                    '#forge:storage_blocks/source',
-                    '#forge:storage_blocks/source'
-                ],
-                reagents: [`immersiveengineering:gunpart_${gunpart}`],
-                sourceCost: 0,
-                id: `${id_prefix}${gunpart}_cooldown`
-            },
-            {
-                output: Item.of(`immersiveengineering:gunpart_${gunpart}`, '{generatePerks:1b,perks:{noise:0.50d}}'),
-                inputs: [
-                    '#forge:essences/water',
-                    '#forge:essences/water',
-                    '#forge:essences/water',
-                    '#forge:wool',
-                    '#forge:storage_blocks/lapis',
-                    '#forge:storage_blocks/lapis',
-                    '#forge:storage_blocks/source',
-                    '#forge:storage_blocks/source'
-                ],
-                reagents: [`immersiveengineering:gunpart_${gunpart}`],
-                sourceCost: 0,
-                id: `${id_prefix}${gunpart}_noise`
-            }
-        );
-    });
 
     const gem_types = [
         { mod: 'minecraft', material: 'diamond', essence: 'abjuration' },

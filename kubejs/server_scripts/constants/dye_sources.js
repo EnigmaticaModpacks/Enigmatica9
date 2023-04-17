@@ -1003,6 +1003,16 @@ const dye_sources = [
         primary: 'minecraft:black_dye',
         secondary: 'minecraft:black_dye',
         tertiary: 'minecraft:purple_dye'
+    },
+
+    // Many Ideas
+
+    {
+        input: 'minecraft:prismarine_crystals',
+        type: 'small',
+        primary: 'manyideas_core:dye_rainbow',
+        secondary: 'manyideas_core:dye_rainbow',
+        tertiary: 'manyideas_core:dye_rainbow'
     }
 ];
 

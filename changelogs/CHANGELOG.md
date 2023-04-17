@@ -23,6 +23,7 @@ _Using Forge-1.19.2-43.2.6_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 -   Introducing the Wither Council and Grove of the Wilden gateways, available now on Abra's Open Conjure. Can you finish them in time?
 -   Coffee may be purchased from the Market block.
 -   Tooltip on Sage changed to direct players to the Market Block rather than breaking grass.
+-   Allow Prismarine to be made from Certus Quartz with Natures Aura, preventing a feedback loop with regular quartz.
 
 **Fixed Bugs**
 

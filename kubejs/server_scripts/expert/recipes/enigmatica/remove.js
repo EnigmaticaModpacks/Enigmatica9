@@ -241,7 +241,7 @@ ServerEvents.recipes((event) => {
         },
         { id: /powah:crafting\/(energizing_rod_|player_transmitter_|capacitor_)(blazing|hardened)/ },
 
-        { id: 'quark:tools/crafting/runes/rainbow_rune' },
+        { id: /quark:.*rainbow_rune/ },
 
         { id: 'rftoolsbase:dimensionalshard' },
         { id: 'rftoolsbase:infused_diamond' },
