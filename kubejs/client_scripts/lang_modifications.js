@@ -983,6 +983,41 @@ const entries = {
                 normal: 'Antimatter Pellet',
                 expert: 'Mote of Aetherium'
             }
+        },
+        {
+            key: 'block.mekanism.antiprotonic_nucleosynthesizer',
+            value: {
+                normal: 'Antiprotonic Nucleosynthesizer',
+                expert: 'Aetheric Transmutation Chamber'
+            }
+        },
+        {
+            key: 'container.mekanism.antiprotonic_nucleosynthesizer',
+            value: {
+                normal: 'Antiprotonic Nucleosynthesizer',
+                expert: 'Aetheric Transmutation Chamber'
+            }
+        },
+        {
+            key: 'sound_event.mekanism.tile.machine.antiprotonic_nucleosynthesizer',
+            value: {
+                normal: 'Nucleosynthesizer hums',
+                expert: 'Aetheric Transmutation Chamber hums'
+            }
+        },
+        {
+            key: 'advancements.mekanism.nucleosynthesizer.description',
+            value: {
+                normal: "Craft an Antiprotonic Nucleosynthesizer and don't worry if you can't pronounce the name",
+                expert: "Craft an Aetheric Transmutation Chamber and don't worry if you can't pronounce the name"
+            }
+        },
+        {
+            key: 'description.mekanism.antiprotonic_nucleosynthesizer',
+            value: {
+                normal: 'A machine which uses bits of antimatter and mass amounts of energy to atomically transmute various resources.',
+                expert: 'A machine which uses bits of aetherium and mass amounts of energy to atomically transmute various resources.'
+            }
         }
     ]
 };

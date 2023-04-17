@@ -2,5 +2,10 @@
 	"gas.mekanism.polonium": "Pandemonium",
 	"gas.mekanism.antimatter": "Aetherium",
 	"item.mekanism.pellet_polonium": "Mote of Pandemonium",
-	"item.mekanism.pellet_antimatter": "Mote of Aetherium"
+	"item.mekanism.pellet_antimatter": "Mote of Aetherium",
+	"block.mekanism.antiprotonic_nucleosynthesizer": "Aetheric Transmutation Chamber",
+	"container.mekanism.antiprotonic_nucleosynthesizer": "Aetheric Transmutation Chamber",
+	"sound_event.mekanism.tile.machine.antiprotonic_nucleosynthesizer": "Aetheric Transmutation Chamber hums",
+	"advancements.mekanism.nucleosynthesizer.description": "Craft an Aetheric Transmutation Chamber and don't worry if you can't pronounce the name",
+	"description.mekanism.antiprotonic_nucleosynthesizer": "A machine which uses bits of aetherium and mass amounts of energy to atomically transmute various resources."
 }
