@@ -499,23 +499,20 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}revolver_tier_2`
         },
         {
-            output: Item.of(
-                'immersiveengineering:revolver',
-                '{perks:{cooldown:0.25d,luck:3.0d,noise:0.25d},upgrades:{}}'
-            ),
+            output: 'ae2:quantum_link',
             inputs: [
-                '#forge:ingots/depths',
-                '#forge:ingots/depths',
-                '#forge:ingots/depths',
-                'kubejs:spirit_of_devotion',
-                '#forge:storage_blocks/lapis',
-                '#forge:storage_blocks/lapis',
-                '#forge:storage_blocks/source',
-                '#forge:storage_blocks/source'
+                'ae2:quartz_glass',
+                'ae2:fluix_pearl',
+                'ae2:quartz_glass',
+                'ae2:fluix_pearl',
+                'ae2:quartz_glass',
+                'ae2:fluix_pearl',
+                'ae2:quartz_glass',
+                'ae2:fluix_pearl'
             ],
-            reagents: ['immersiveengineering:revolver'],
+            reagents: ['occultism:dimensional_matrix'],
             sourceCost: 10000,
-            id: `${id_prefix}revolver_tier_3`
+            id: `${id_prefix}quantum_link`
         }
     ];
 

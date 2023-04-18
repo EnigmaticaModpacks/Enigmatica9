@@ -271,6 +271,193 @@ ServerEvents.recipes((event) => {
                 D: 'ae2:printed_silicon'
             },
             id: `${id_prefix}printed_engineering_processor`
+        },
+        {
+            output: 'ae2:biometric_card',
+            pattern: ['ABC', 'DDD'],
+            key: {
+                A: '#forge:plastic',
+                B: 'minecraft:ender_eye',
+                C: 'quark:rainbow_rune',
+                D: '#forge:nuggets/gold'
+            },
+            id: 'ae2:tools/network_biometric_card'
+        },
+        {
+            output: 'ae2:memory_card',
+            pattern: ['ABC', 'DDD'],
+            key: {
+                A: '#forge:plastic',
+                B: 'ars_nouveau:experience_gem',
+                C: 'quark:rainbow_rune',
+                D: '#forge:nuggets/gold'
+            },
+            id: 'ae2:tools/network_memory_card'
+        },
+        {
+            output: 'ae2:entropy_manipulator',
+            pattern: [' AB', ' CD', 'C  '],
+            key: {
+                A: '#forge:essences/manipulation',
+                B: '#forge:gems/fluix',
+                C: 'naturesaura:ancient_stick',
+                D: 'ae2:energy_cell'
+            },
+            id: 'ae2:tools/misctools_entropy_manipulator'
+        },
+        {
+            output: 'ae2:wireless_receiver',
+            pattern: [' A ', 'BCB', ' B '],
+            key: {
+                A: 'ae2:fluix_pearl',
+                B: '#forge:ingots/skies',
+                C: 'ae2:quartz_fiber'
+            },
+            id: 'ae2:network/wireless_part'
+        },
+        {
+            output: 'ae2:spatial_cell_component_2',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'ae2:fluix_pearl',
+                B: 'kubejs:dimensional_storage_crystal',
+                C: '#forge:ingots/skies'
+            },
+            id: 'ae2:network/cells/spatial_components'
+        },
+        {
+            output: 'ae2:spatial_cell_component_16',
+            pattern: ['ABD', 'BCB', 'DBA'],
+            key: {
+                A: 'ae2:fluix_pearl',
+                B: 'kubejs:dimensional_storage_crystal',
+                C: '#forge:ingots/skies',
+                D: 'ae2:spatial_cell_component_2'
+            },
+            id: 'ae2:network/cells/spatial_components_0'
+        },
+        {
+            output: 'ae2:spatial_cell_component_128',
+            pattern: ['ABD', 'BCB', 'DBA'],
+            key: {
+                A: 'ae2:fluix_pearl',
+                B: 'kubejs:dimensional_storage_crystal',
+                C: '#forge:ingots/skies',
+                D: 'ae2:spatial_cell_component_16'
+            },
+            id: 'ae2:network/cells/spatial_components_1'
+        },
+        {
+            output: 'ae2:chest',
+            pattern: [' A ', 'BCB'],
+            key: {
+                A: 'ae2:terminal',
+                B: 'ae2:fluix_glass_cable',
+                C: 'ars_nouveau:repository'
+            },
+            id: 'ae2:network/blocks/storage_chest'
+        },
+        {
+            output: 'ae2:spatial_anchor',
+            pattern: ['AAA', 'BCB', 'DED'],
+            key: {
+                A: 'ae2:spatial_pylon',
+                B: 'ae2:fluix_glass_cable',
+                C: 'ae2:spatial_cell_component_128',
+                D: '#forge:ingots/skies',
+                E: 'pneumaticcraft:logistics_core'
+            },
+            id: 'ae2:network/blocks/spatial_anchor'
+        },
+        {
+            output: 'ae2:spatial_io_port',
+            pattern: ['AAA', 'BCB', 'DED'],
+            key: {
+                A: 'ae2:quartz_glass',
+                B: 'ae2:fluix_glass_cable',
+                C: 'ae2:io_port',
+                D: '#forge:ingots/skies',
+                E: 'pneumaticcraft:logistics_core'
+            },
+            id: 'ae2:network/blocks/spatial_io_port'
+        },
+        {
+            output: 'ae2:energy_cell',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:planks/archwood',
+                B: 'powah:capacitor_basic_large',
+                C: '#forge:storage_blocks/certus_quartz'
+            },
+            id: 'ae2:network/blocks/energy_energy_cell'
+        },
+        {
+            output: '2x ae2:quantum_ring',
+            pattern: ['ABA', 'BCB', 'ADA'],
+            key: {
+                A: 'ars_nouveau:sourcestone',
+                B: 'mekanism:teleportation_core',
+                C: 'pneumaticcraft:logistics_core',
+                D: '#ae2:smart_dense_cable'
+            },
+            id: 'ae2:network/blocks/quantum_ring'
+        },
+        {
+            output: 'ae2:cell_workbench',
+            pattern: [' A ', 'BCB', 'DDD'],
+            key: {
+                A: '#forge:fabrics/woven',
+                B: '#forge:gems/certus_quartz',
+                C: 'ars_nouveau:repository',
+                D: 'naturesaura:infused_stone'
+            },
+            id: 'ae2:network/blocks/cell_workbench'
+        },
+        {
+            output: 'ae2:security_station',
+            pattern: ['ABA', 'CDC'],
+            key: {
+                A: 'ae2:fluix_glass_cable',
+                B: 'supplementaries:key',
+                C: '#forge:plates/bronze',
+                D: 'ae2:chest'
+            },
+            id: 'ae2:network/blocks/security_station'
+        },
+        {
+            output: 'ae2:io_port',
+            pattern: ['AAA', 'BCB', 'DED'],
+            key: {
+                A: 'ae2:quartz_glass',
+                B: 'ae2:drive',
+                C: 'ae2:fluix_glass_cable',
+                D: 'naturesaura:infused_stone',
+                E: '#forge:essences/manipulation'
+            },
+            id: 'ae2:network/blocks/io_port'
+        },
+        {
+            output: 'ae2:drive',
+            pattern: ['AAA', 'BCB', 'DED'],
+            key: {
+                A: '#forge:ingots/skies',
+                B: 'ae2:fluix_glass_cable',
+                C: 'ars_nouveau:repository',
+                D: 'naturesaura:infused_stone',
+                E: 'pneumaticcraft:logistics_core'
+            },
+            id: 'ae2:network/blocks/storage_drive'
+        },
+        {
+            output: '3x ae2:blank_pattern',
+            pattern: ['ABA', 'BCB', 'DDD'],
+            key: {
+                A: 'ae2:quartz_glass',
+                B: 'ars_nouveau:blank_parchment',
+                C: 'occultism:purified_ink',
+                D: '#forge:plates/aluminum'
+            },
+            id: 'ae2:network/crafting/patterns_blank'
         }
     ];
 

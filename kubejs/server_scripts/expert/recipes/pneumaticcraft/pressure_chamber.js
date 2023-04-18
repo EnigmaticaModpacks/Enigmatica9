@@ -484,6 +484,15 @@ ServerEvents.recipes((event) => {
             inputs: [{ item: 'naturesaura:bottle_two_the_rebottling' }],
             pressure: -0.5,
             id: `${id_prefix}vacuum_bottle`
+        },
+        {
+            results: [{ item: 'ae2:dense_energy_cell', count: 1 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'ae2:energy_cell', count: 8 },
+                { tag: 'forge:storage_blocks/source' }
+            ],
+            pressure: 2.0,
+            id: `${id_prefix}dense_energy_cell`
         }
     ];
 
