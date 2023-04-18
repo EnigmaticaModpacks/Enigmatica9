@@ -14,8 +14,9 @@ ServerEvents.recipes((event) => {
             inputs: [
                 '#forge:essences/conjuration',
                 '#forge:gems/carminite',
-                'naturesaura:gold_leaf',
-                '#forge:gems/carminite'
+                '#ae2:knife',
+                '#forge:gems/carminite',
+                'naturesaura:gold_leaf'
             ],
             ritual_dummy: 'occultism:ritual_dummy/summon_foliot_crusher',
             ritual_type: 'occultism:summon_spirit_with_job',
@@ -30,10 +31,11 @@ ServerEvents.recipes((event) => {
             spirit_max_age: -1,
             activation_item: 'occultism:book_of_binding_bound_djinni',
             inputs: [
-                '#forge:raw_materials/iron',
-                '#forge:raw_materials/iron',
-                '#forge:raw_materials/iron',
-                '#forge:raw_materials/iron'
+                '#forge:essences/conjuration',
+                '#forge:gems/carminite',
+                '#ae2:knife',
+                '#forge:gems/carminite',
+                'naturesaura:gold_leaf'
             ],
             ritual_dummy: 'occultism:ritual_dummy/summon_djinni_crusher',
             ritual_type: 'occultism:summon_spirit_with_job',
@@ -48,10 +50,11 @@ ServerEvents.recipes((event) => {
             spirit_max_age: -1,
             activation_item: 'occultism:book_of_binding_bound_afrit',
             inputs: [
-                '#forge:raw_materials/iron',
-                '#forge:raw_materials/iron',
-                '#forge:raw_materials/iron',
-                '#forge:raw_materials/iron'
+                '#forge:essences/conjuration',
+                '#forge:gems/carminite',
+                '#ae2:knife',
+                '#forge:gems/carminite',
+                'naturesaura:gold_leaf'
             ],
             ritual_dummy: 'occultism:ritual_dummy/summon_afrit_crusher',
             ritual_type: 'occultism:summon_spirit_with_job',
@@ -66,10 +69,11 @@ ServerEvents.recipes((event) => {
             spirit_max_age: -1,
             activation_item: 'occultism:book_of_binding_bound_marid',
             inputs: [
-                '#forge:raw_materials/iron',
-                '#forge:raw_materials/iron',
-                '#forge:raw_materials/iron',
-                '#forge:raw_materials/iron'
+                '#forge:essences/conjuration',
+                '#forge:gems/carminite',
+                '#ae2:knife',
+                '#forge:gems/carminite',
+                'naturesaura:gold_leaf'
             ],
             ritual_dummy: 'occultism:ritual_dummy/summon_marid_crusher',
             ritual_type: 'occultism:summon_spirit_with_job',
