@@ -102,6 +102,14 @@
     "quartz"
   ],
   "priorityOverrides": {},
+  "tagOwnerships": {
+    "forge:gems/coal_coke": [
+      "forge:coal_coke"
+    ],
+    "forge:dusts/wood": [
+      "forge:sawdust"
+    ]
+  },
   "ignoredTags": [],
   "ignoredItems": [],
   "ignoredRecipeTypes": [
