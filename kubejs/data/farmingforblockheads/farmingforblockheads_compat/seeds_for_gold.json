@@ -1,0 +1,18 @@
+{
+    "modId": "farmingforblockheads",
+    "group": {
+        "name": "Common Seeds",
+        "enabledByDefault": true,
+        "defaultPayment": { "item": "minecraft:gold_ingot" },
+        "defaultCategory": "farmingforblockheads:seed_exchange"
+    },
+    "customEntries": [
+        { "output": "immersiveengineering:seed" },
+        { "output": "occultism:datura_seeds" },
+        { "output": "hexerei:sage_seed" },
+        { "output": "hexerei:yellow_dock_bush" },
+        { "output": "hexerei:mugwort_bush" },
+        { "output": "hexerei:mandrake_flower" },
+        { "output": "hexerei:belladonna_flower" }
+    ]
+}
