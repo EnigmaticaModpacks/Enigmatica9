@@ -23,6 +23,6 @@ WorldgenEvents.remove((event) => {
             'minecraft:gold_ore',
             'minecraft:iron_ore',
             'minecraft:coal_ore'
-        ]
+        ];
     });
 });

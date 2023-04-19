@@ -73,7 +73,7 @@ jei.base.items.disabled = [
     'engineersdecor:test_block',
 
     /mekanism:.*_bin/,
-    
+
     'minecraft:nether_gold_ore',
 
     'immersiveengineering:blast_furnace',
@@ -81,7 +81,7 @@ jei.base.items.disabled = [
     'immersiveengineering:plantoil_bucket',
     'immersiveengineering:ethanol_bucket',
     'immersiveengineering:biodiesel_bucket',
-    
+
     'industrialforegoing:dryrubber',
 
     /thermal:flax/,
@@ -120,7 +120,7 @@ jei.base.items.disabled = [
 jei.base.items.hidden = [
     /emendatusenigmatica:bitumen_.*_ore/,
     'emendatusenigmatica:bitumen_ore',
-    
+
     /hexerei:.*selenite/,
     'hexerei:creative_waxing_kit',
 
@@ -129,14 +129,14 @@ jei.base.items.hidden = [
     /kubejs:.*lootbox/,
 
     'naturesaura:multiblock_maker',
-    
+
     /occultism:.*debug/,
     'occultism:lighted_air',
-    
+
     /powah:.*uraninite_ore.*/,
-    
+
     'sophisticatedstorage:debug_tool',
-   
+
     /twilightforest:.*boss_spawner/,
 
     /nomadictents:.*_shamiyana_wall/,

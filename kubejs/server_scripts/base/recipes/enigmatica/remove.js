@@ -10,26 +10,26 @@ ServerEvents.recipes((event) => {
 
         { mod: 'gateways' },
         { mod: 'theoneprobe' },
-        
+
         { output: /pendorite/ },
         { output: /emeraldite/ },
         { output: /ametrine/ },
 
-        { output: /thermal.*cinnabar_ore/},
-        { output: /thermal.*niter_ore/},
-        { output: /thermal.*sulfur_ore/},
-        { output: /thermal.*sapphire_ore/},
-        { output: /thermal.*ruby_ore/},
-        { output: /mekanism.*fluorite_ore/},
-        { output: /rftoolsbase:dimensionalshard_/},
+        { output: /thermal.*cinnabar_ore/ },
+        { output: /thermal.*niter_ore/ },
+        { output: /thermal.*sulfur_ore/ },
+        { output: /thermal.*sapphire_ore/ },
+        { output: /thermal.*ruby_ore/ },
+        { output: /mekanism.*fluorite_ore/ },
+        { output: /rftoolsbase:dimensionalshard_/ },
 
-        { input: /thermal.*cinnabar_ore/},
-        { input: /thermal.*niter_ore/},
-        { input: /thermal.*sulfur_ore/},
-        { input: /thermal.*sapphire_ore/},
-        { input: /thermal.*ruby_ore/},
-        { input: /mekanism.*fluorite_ore/},
-        { input: /rftoolsbase:dimensionalshard_/},
+        { input: /thermal.*cinnabar_ore/ },
+        { input: /thermal.*niter_ore/ },
+        { input: /thermal.*sulfur_ore/ },
+        { input: /thermal.*sapphire_ore/ },
+        { input: /thermal.*ruby_ore/ },
+        { input: /mekanism.*fluorite_ore/ },
+        { input: /rftoolsbase:dimensionalshard_/ },
 
         { id: /ars_nouveau:.*_dye/ },
 
@@ -60,7 +60,7 @@ ServerEvents.recipes((event) => {
         { id: `industrialforegoing:stonework_generate/diorite` },
         { id: `industrialforegoing:stonework_generate/granite` },
         { id: `industrialforegoing:stonework_generate/andesite` },
-        { id: `industrialforegoing:laser_drill_ore/ores/cinnabar`},
+        { id: `industrialforegoing:laser_drill_ore/ores/cinnabar` },
 
         { id: 'immersiveengineering:crafting/coal_coke_to_coke' },
 
@@ -168,8 +168,8 @@ ServerEvents.recipes((event) => {
         { type: 'immersiveengineering:fermenter' },
         { type: 'immersiveengineering:generator_fuel' },
 
-        { type: "industrialforegoing:laser_drill_ore" },
-        
+        { type: 'industrialforegoing:laser_drill_ore' },
+
         { type: 'pneumaticcraft:fuel_quality' },
 
         { type: 'starbunclemania:fluid_sourcelink' },
@@ -182,12 +182,12 @@ ServerEvents.recipes((event) => {
 
         //// Emendatus Enigmatica Related stuff
 
-        { id: /emendatusenigmatica:tinted_glass\/from_shard/},              // Cluster Compat, it is disabled for purpose we have, but if the future you want to enable it back, this should be modified!
-        { id: /emendatusenigmatica:spyglass\/from_shard/},                  // Cluster Compat, it is disabled for purpose we have, but if the future you want to enable it back, this should be modified!
-        { id: /industrialforegoing:.*_gear/ },                              // Gears
-        { id: /hammercrushing/, mod: 'immersiveengineering' },              // Dusts.js related
-        { id: /immersiveengineering:crafting\/plate_.*_hammering/ },        // plates.js related
-        { id: /immersiveengineering:crafting\/stick_/ },                    // rods.js related
+        { id: /emendatusenigmatica:tinted_glass\/from_shard/ }, // Cluster Compat, it is disabled for purpose we have, but if the future you want to enable it back, this should be modified!
+        { id: /emendatusenigmatica:spyglass\/from_shard/ }, // Cluster Compat, it is disabled for purpose we have, but if the future you want to enable it back, this should be modified!
+        { id: /industrialforegoing:.*_gear/ }, // Gears
+        { id: /hammercrushing/, mod: 'immersiveengineering' }, // Dusts.js related
+        { id: /immersiveengineering:crafting\/plate_.*_hammering/ }, // plates.js related
+        { id: /immersiveengineering:crafting\/stick_/ }, // rods.js related
         { id: /emendatusenigmatica:ingot\/from_dust.*\/refined_obsidian/ }, // Removes smelting recipes dust -> ingot for Refined Obsidian
         { id: 'create:crushing/veridium' },
         { id: 'create:crushing/ochrum' },
@@ -202,7 +202,7 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:compat/create/pulverizer_create_crimsite' },
         { id: 'thermal:compat/create/pulverizer_create_asurine' },
         { id: 'thermal:machines/pulverizer/pulverizer_gilded_blackstone' },
-        
+
         // Ore Processing Related
 
         // Slurries
@@ -210,12 +210,12 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:processing\/.*\/crystal\/from_slurry/ },
 
         // Ore -> Shards etc
-        { id: /mekanism:processing\/.*\/from_raw_block/ }, 
+        { id: /mekanism:processing\/.*\/from_raw_block/ },
         { id: /mekanism:processing\/.*\/from_raw_ore/ },
         { id: /mekanism:processing\/.*\/from_ore/ },
 
         // Combiner
-        { id: /mekanism:processing\/.*\/ore\/.*from_raw$/ }, 
+        { id: /mekanism:processing\/.*\/ore\/.*from_raw$/ },
         { id: /mekanism:processing\/.*\/to_ore$/ },
         { id: /mekanism:processing\/.*\/to_deepslate_ore$/ },
 
@@ -232,10 +232,10 @@ ServerEvents.recipes((event) => {
         { type: 'thermal:pulverizer', id: /pulverizer_.*_ore/ },
         { type: 'thermal:centrifuge', id: /crushed_.*_ore/ },
 
-        { id: 'thermal:machines/pulverizer/pulverizer_apatite'},
-        { id: 'thermal:machines/pulverizer/pulverizer_cinnabar'},
-        { id: 'thermal:machines/pulverizer/pulverizer_niter'},
-        { id: 'thermal:machines/pulverizer/pulverizer_sulfur'},
+        { id: 'thermal:machines/pulverizer/pulverizer_apatite' },
+        { id: 'thermal:machines/pulverizer/pulverizer_cinnabar' },
+        { id: 'thermal:machines/pulverizer/pulverizer_niter' },
+        { id: 'thermal:machines/pulverizer/pulverizer_sulfur' }
     ];
 
     colors.forEach((color) => {

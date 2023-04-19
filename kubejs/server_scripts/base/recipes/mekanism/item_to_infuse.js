@@ -10,10 +10,10 @@ ServerEvents.recipes((event) => {
         //     },
         //     id: `${id_prefix}glowstone_infuse_type`
         // }
-    ]
+    ];
 
     recipes.forEach((recipe) => {
-        recipe.type = "mekanism:infusion_conversion";
+        recipe.type = 'mekanism:infusion_conversion';
         recipe.input = { ingredient: Ingredient.of(recipe.input).toJson() };
         event.custom(recipe).id(recipe.id);
     });

@@ -11,16 +11,16 @@ ServerEvents.recipes((event) => {
 
     // TODO: Rework ALL iterations over tags to use cached FILES!
     let conversionTypes = ['storage_block', 'ore'];
-    let materials = Object.keys(metal_properties).concat(Object.keys(gem_properties))
+    let materials = Object.keys(metal_properties).concat(Object.keys(gem_properties));
     conversionTypes.forEach((type) => {
-       materials.forEach((material) => {
+        materials.forEach((material) => {
             let tag = Ingredient.of(`#forge:${type}s/${material}`);
-            let itemArray = tag.getItemIds()
+            let itemArray = tag.getItemIds();
             if (itemArray.length > 1) {
-                let index = 0
+                let index = 0;
                 itemArray.forEach((block) => {
                     if (!block.match(/air/)) {
-                        index++
+                        index++;
                         event.stonecutting(block, tag).id(`${id_prefix}${type}_conversion/${material}/${index}`);
                     }
                 });

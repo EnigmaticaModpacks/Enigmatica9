@@ -475,17 +475,17 @@ ItemEvents.tooltip((event) => {
         },
         {
             items: [
-                "hexerei:sage_seed",
-                "immersiveengineering:seed",
-                "occultism:datura_seeds",
-                "sushigocrafting:cucumber_seeds",
-                "sushigocrafting:soy_seeds",
-                "sushigocrafting:wasabi_seeds",
-                "sushigocrafting:sesame_seeds"
+                'hexerei:sage_seed',
+                'immersiveengineering:seed',
+                'occultism:datura_seeds',
+                'sushigocrafting:cucumber_seeds',
+                'sushigocrafting:soy_seeds',
+                'sushigocrafting:wasabi_seeds',
+                'sushigocrafting:sesame_seeds'
             ],
             text: [
-                Text.of("This seed does not drop from grass!").green(),
-                Text.of("It has to be purchased from the Market block.").green()
+                Text.of('This seed does not drop from grass!').green(),
+                Text.of('It has to be purchased from the Market block.').green()
             ]
         }
     ];

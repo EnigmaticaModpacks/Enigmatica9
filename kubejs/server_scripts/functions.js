@@ -16,7 +16,6 @@ const getStrippedLogFrom = (logBlock) => {
     return result;
 };
 
-
 const playerHas = (item, player) => {
     return player.inventory.find(item) != -1;
 };

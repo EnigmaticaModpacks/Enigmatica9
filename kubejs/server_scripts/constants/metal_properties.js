@@ -163,7 +163,7 @@ const metal_properties = {
                 processingTime: 350
             },
             occultism: {
-                oreWeight: 190 
+                oreWeight: 190
             }
         }
     },
@@ -250,12 +250,12 @@ const metal_properties = {
     },
     energized_steel: {
         meltingPoint: 875
-    }, 
+    },
     // TODO, Add  melting Points for those metals:
     brass: {
         // meltingPoint: 1000
     },
-    bronze :{
+    bronze: {
         // meltingPoint: 1000
     },
     constantan: {

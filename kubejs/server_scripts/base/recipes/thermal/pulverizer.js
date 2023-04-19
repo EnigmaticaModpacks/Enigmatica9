@@ -52,31 +52,31 @@ ServerEvents.recipes((event) => {
         },
         {
             input: '#forge:gems/coal',
-            outputs: [{ item: 'emendatusenigmatica:coal_dust', count: 1}],
+            outputs: [{ item: 'emendatusenigmatica:coal_dust', count: 1 }],
             energy: 4000,
             id: `${id_prefix}coal_dust`
         },
         {
             input: '#forge:ingots/copper',
-            outputs: [{ item: 'emendatusenigmatica:copper_dust', count: 1}],
+            outputs: [{ item: 'emendatusenigmatica:copper_dust', count: 1 }],
             energy: 4000,
             id: `${id_prefix}copper_dust`
         },
         {
             input: '#forge:ingots/gold',
-            outputs: [{ item: 'emendatusenigmatica:gold_dust', count: 1}],
+            outputs: [{ item: 'emendatusenigmatica:gold_dust', count: 1 }],
             energy: 4000,
             id: `${id_prefix}gold_dust`
         },
         {
             input: '#forge:ingots/iron',
-            outputs: [{ item: 'emendatusenigmatica:iron_dust', count: 1}],
+            outputs: [{ item: 'emendatusenigmatica:iron_dust', count: 1 }],
             energy: 4000,
             id: `${id_prefix}iron_dust`
         },
         {
             input: '#forge:gems/dimensional',
-            outputs: [{ item: 'emendatusenigmatica:dimensional_dust', count: 1}],
+            outputs: [{ item: 'emendatusenigmatica:dimensional_dust', count: 1 }],
             energy: 4000,
             id: `${id_prefix}dimensional_dust`
         }

@@ -15,12 +15,10 @@ WorldgenEvents.remove((event) => {
     'surface_structures'
     */
 
-    event.removeFeatureById('underground_ores', 
-        [
-            'rftoolsbase:dimshard_dimensions',
-            'rftoolsbase:dimshard_end',
-            'rftoolsbase:dimshard_nether',
-            'rftoolsbase:dimshard_overworld'
-        ]
-    );
+    event.removeFeatureById('underground_ores', [
+        'rftoolsbase:dimshard_dimensions',
+        'rftoolsbase:dimshard_end',
+        'rftoolsbase:dimshard_nether',
+        'rftoolsbase:dimshard_overworld'
+    ]);
 });

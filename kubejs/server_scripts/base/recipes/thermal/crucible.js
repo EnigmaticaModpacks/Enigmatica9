@@ -28,14 +28,14 @@ ServerEvents.recipes((event) => {
             },
             energy: 5000,
             id: `${id_prefix}greater_experience_gem_to_liquid`
-        } 
+        }
     ];
 
     recipes.forEach((recipe) => {
         recipe.type = 'thermal:crucible';
-        recipe.ingredient = Ingredient.of(recipe.input).toJson()
-        recipe.result = []
-        recipe.result.push(recipe.output)
+        recipe.ingredient = Ingredient.of(recipe.input).toJson();
+        recipe.result = [];
+        recipe.result.push(recipe.output);
         event.custom(recipe).id(recipe.id);
     });
 });

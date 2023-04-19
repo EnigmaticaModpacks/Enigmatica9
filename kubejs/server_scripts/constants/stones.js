@@ -26,5 +26,5 @@ const stones = [
     'create:ochrum',
     'create:scoria',
     'create:scorchia',
-    'create:veridium' 
+    'create:veridium'
 ];

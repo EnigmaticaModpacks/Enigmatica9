@@ -9,7 +9,10 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}insulating_glass`
         },
         {
-            ingredients: [{ tag: 'forge:gems/coal_coke', count: 1 },{ value: [{ tag: "forge:ingots/iron" },{ tag: "forge:dusts/iron" }], count: 1 }],
+            ingredients: [
+                { tag: 'forge:gems/coal_coke', count: 1 },
+                { value: [{ tag: 'forge:ingots/iron' }, { tag: 'forge:dusts/iron' }], count: 1 }
+            ],
             result: [{ item: 'emendatusenigmatica:steel_ingot', count: 2 }],
             energy: 3200,
             id: `thermal:machines/smelter/smelter_alloy_steel`
