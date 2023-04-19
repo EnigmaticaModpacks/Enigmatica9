@@ -24,6 +24,11 @@ _Using Forge-1.19.2-43.2.6_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 -   Coffee may be purchased from the Market block.
 -   Tooltip on Sage changed to direct players to the Market Block rather than breaking grass.
 -   Allow Prismarine to be made from Certus Quartz with Natures Aura, preventing a feedback loop with regular quartz.
+-   Add Hexerei's new tree to wood cutting machines
+-   Add Demon's Dream, Hemp, Sage, and other Hexerei Plants to Village loot and Shipwrecks
+-   Add some other fun loot to Shipwrecks
+-   Reduce cost of Demon's Dream, Hemp, Sage, and other Hexerei Plants in the Market from an Emerald to a gold
+-   Buff Enigmatic Unity power conversion
 
 **Fixed Bugs**
 
