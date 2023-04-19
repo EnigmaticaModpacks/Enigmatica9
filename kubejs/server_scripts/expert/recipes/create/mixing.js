@@ -7,11 +7,11 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            ingredients: [{ item: 'create:crushed_iron_ore' }, { amount: 100, fluidTag: 'forge:redstone_acid' }],
+            ingredients: [{ tag: 'create:crushed_ores/iron' }, { amount: 100, fluidTag: 'forge:redstone_acid' }],
             results: [
-                { item: 'mekanism:dirty_dust_iron', count: 2 },
-                { item: 'mekanism:dirty_dust_tin', count: 1, chance: 0.3 },
-                { item: 'mekanism:dirty_dust_tin', count: 1, chance: 0.1 }
+                { item: 'emendatusenigmatica:iron_dirty_dust', count: 2 },
+                { item: 'emendatusenigmatica:nickel_dirty_dust', count: 1, chance: 0.3 },
+                { item: 'emendatusenigmatica:nickel_dirty_dust', count: 1, chance: 0.1 }
             ],
             heatRequirement: 'heated',
             id: `${id_prefix}iron_dust_from_redstone_acid`
@@ -85,7 +85,7 @@ ServerEvents.recipes((event) => {
                 { tag: 'forge:dusts/tin' },
                 { tag: 'forge:dusts/redstone' }
             ],
-            results: [{ item: AlmostUnified.getPreferredItemForTag('forge:dusts/bronze').getId(), count: 4 }],
+            results: [{ item: 'emendatusenigmatica:bronze_dust', count: 4 }],
             id: `${id_prefix}bronze_dust`
         },
         {
@@ -96,7 +96,7 @@ ServerEvents.recipes((event) => {
                 { tag: 'forge:dusts/gold' },
                 { tag: 'forge:dusts/redstone' }
             ],
-            results: [{ item: AlmostUnified.getPreferredItemForTag('forge:dusts/electrum').getId(), count: 4 }],
+            results: [{ item: 'emendatusenigmatica:electrum_dust', count: 4 }],
             id: `${id_prefix}electrum_dust`
         },
         {
@@ -107,7 +107,7 @@ ServerEvents.recipes((event) => {
                 { tag: 'forge:dusts/redstone' },
                 { tag: 'forge:dusts/redstone' }
             ],
-            results: [{ item: AlmostUnified.getPreferredItemForTag('forge:dusts/invar').getId(), count: 3 }],
+            results: [{ item: 'emendatusenigmatica:invar_dust', count: 3 }],
             id: `${id_prefix}invar_dust`
         },
         {
@@ -118,14 +118,14 @@ ServerEvents.recipes((event) => {
                 { tag: 'forge:dusts/copper' },
                 { tag: 'forge:dusts/redstone' }
             ],
-            results: [{ item: AlmostUnified.getPreferredItemForTag('forge:dusts/constantan').getId(), count: 4 }],
+            results: [{ item: 'emendatusenigmatica:constantan_dust', count: 4 }],
             id: `${id_prefix}constantan_dust`
         },
         {
             ingredients: [{ tag: 'forge:essences/manipulation' }, { amount: 1000, fluidTag: 'forge:brine' }],
             results: [
                 { item: 'mekanism:dust_lithium', count: 4 },
-                { item: 'occultism:iesnium_dust', count: 3 }
+                { item: 'emendatusenigmatica:iesnium_dust', count: 3 }
             ],
             heatRequirement: 'superheated',
             id: `${id_prefix}iesnium_lithium_salt`

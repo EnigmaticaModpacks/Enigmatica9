@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/mekanism/purifying/';
     const recipes = [
         {
-            output: { item: 'minecraft:iron_ingot', count: 1 },
+            output: { item: 'emendatusenigmatica:iron_ingot', count: 1 },
             itemInput: { ingredient: { tag: 'forge:ingots/pig_iron' } },
             chemicalInput: { gas: 'mekanism:oxygen', amount: 1 },
             id: `${id_prefix}iron_ingot`
