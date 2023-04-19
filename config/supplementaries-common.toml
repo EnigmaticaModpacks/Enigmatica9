@@ -74,7 +74,6 @@
 
 [building]
 	daub = true
-	ash_brick = true
 	lapis_bricks = true
 	deepslate_lamp = true
 	end_stone_lamp = true
@@ -103,6 +102,7 @@
 	doormat = true
 	flint_block = true
 	candle_holder = true
+	ash_bricks = true
 
 	[building.blackboard]
 		enabled = true
@@ -498,7 +498,7 @@
 		#Allows entities killed by spikes to drop loot as if they were killed by a player
 		player_loot = false
 		#Alternative mode for bamboo spikes. Allows only harmful effects to be applied on them and they obtain infinite durability
-		alternative_mode = true
+		only_allow_harmful_effects = true
 
 	[functional.urn]
 		enabled = true

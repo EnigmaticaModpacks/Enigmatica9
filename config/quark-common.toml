@@ -878,6 +878,8 @@
 		#Enable comparing enchantments to find a replacement
 		"Enable Enchant Matching" = true
 		"Unstackables Only" = false
+		#Allow pulling items from one hotbar slot to another
+		"Check Hotbar" = false
 
 [tweaks]
 	"Zombie Villagers On Normal" = false
@@ -985,6 +987,8 @@
 		"Enable Minecarts" = true
 		#Does Dragon Breath return a bottle when used as a reagent or material?
 		"Effective Dragon Breath" = true
+		#Can you craft a boat around a chest to directly make a chest boat?
+		"Enable Chest Boats" = true
 
 	[tweaks.enhanced_ladders]
 		"Allow Sliding" = true
@@ -1077,6 +1081,15 @@
 	[tweaks.campfires_boost_elytra]
 		"Boost Strength" = 0.5
 		"Max Speed" = 1.0
+
+	[tweaks.double_door_opening]
+		#This feature disables itself if any of the following mods are loaded: 
+		# - utilitix
+		#This is done to prevent content overlap.
+		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
+		"Ignore Anti Overlap" = false
+		"Enable Doors" = true
+		"Enable Fence Gates" = true
 
 [client]
 	"Greener Grass" = true
@@ -1665,4 +1678,8 @@
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
 		"Change Names" = true
+
+	[building.vertical_slabs]
+		#Should Walls and Panes attempt to connect to the side of Vertical Slabs?
+		"Allow Side Connections" = true
 

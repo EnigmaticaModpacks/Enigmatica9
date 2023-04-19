@@ -27,11 +27,6 @@ pack_edit_mode = true
 			#Use 'server_entry.description' key for the Description.
 			use_language_files = false
 
-		#User Configs
-		[modules.server_creator_banner.user]
-			#Should the banner be displayed.
-			display_banner = true
-
 	[modules.public_server_list]
 		enabled = true
 
