@@ -19,8 +19,7 @@ LootJS.modifiers((event) => {
                 }
             }
         }
-        console.error("LootJS Unification Loot Modifier triggered for: Ingots, but any of required tags were found in the item:")
-        console.error(ItemStack.getId())
+        console.error("LootJS Unification Loot Modifier triggered for Ingots, but none of the required tags were found in the item: " + ItemStack.getId())
         return ItemStack
     })
     // Nuggets
@@ -39,8 +38,7 @@ LootJS.modifiers((event) => {
                 }
             }
         }
-        console.error("LootJS Unification Loot Modifier triggered for: Nuggets, but any of required tags were found in the item:")
-        console.error(ItemStack.getId())
+        console.error("LootJS Unification Loot Modifier triggered for Nuggets, but none of the required tags were found in the item: " + ItemStack.getId())
         return ItemStack
     })
     // Storage Blocks
@@ -59,8 +57,7 @@ LootJS.modifiers((event) => {
                 }
             }
         }
-        console.error("LootJS Unification Loot Modifier triggered for: Storage Blocks, but any of required tags were found in the item:")
-        console.error(ItemStack.getId())
+        console.error("LootJS Unification Loot Modifier triggered for Storage Blocks, but none of the required tags were found in the item: " + ItemStack.getId())
         return ItemStack
     })
     //Gems
@@ -77,8 +74,7 @@ LootJS.modifiers((event) => {
                 }
             }
         }
-        console.error("LootJS Unification Loot Modifier triggered for: Gems, but any of required tags were found in the item:")
-        console.error(ItemStack.getId())
+        console.error("LootJS Unification Loot Modifier triggered for Gems, but none of the required tags were found in the item: " + ItemStack.getId())
         return ItemStack
     })
 
@@ -98,8 +94,7 @@ LootJS.modifiers((event) => {
                 }
             }
         }
-        console.error("LootJS Unification Loot Modifier triggered for: Ingots, but any of required tags were found in the item:")
-        console.error(ItemStack.getId())
+        console.error("LootJS Unification Loot Modifier triggered for Ingots, but none of the required tags were found in the item: " + ItemStack.getId())
         return ItemStack
     })
 
@@ -122,8 +117,7 @@ LootJS.modifiers((event) => {
                 }
             }
         }
-        console.error("LootJS Unification Loot Modifier triggered for: Ingots, but any of required tags were found in the item:")
-        console.error(ItemStack.getId())
+        console.error("LootJS Unification Loot Modifier triggered for Ingots, but none of the required tags were found in the item: " + ItemStack.getId())
         return ItemStack
     })
     //Gems
@@ -143,8 +137,7 @@ LootJS.modifiers((event) => {
                 }
             }
         }
-        console.error("LootJS Unification Loot Modifier triggered for: Gems, but any of required tags were found in the item:")
-        console.error(ItemStack.getId())
+        console.error("LootJS Unification Loot Modifier triggered for Gems, but none of the required tags were found in the item: " + ItemStack.getId())
         return ItemStack
     })
     // Raw Ores
@@ -168,8 +161,7 @@ LootJS.modifiers((event) => {
                 }
             }
         }
-        console.error("LootJS Unification Loot Modifier triggered for: Raw Materials, but any of required tags were found in the item:")
-        console.error(ItemStack.getId())
+        console.error("LootJS Unification Loot Modifier triggered for Raw Materials, but none of the required tags were found in the item: " + ItemStack.getId())
         return ItemStack
     })
 });
