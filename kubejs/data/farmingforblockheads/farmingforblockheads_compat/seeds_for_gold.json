@@ -3,7 +3,7 @@
     "group": {
         "name": "Common Seeds",
         "enabledByDefault": true,
-        "defaultPayment": { "item": "emendatusenignmatica:gold_ingot" },
+        "defaultPayment": { "item": "emendatusenigmatica:gold_ingot" },
         "defaultCategory": "farmingforblockheads:seed_exchange"
     },
     "customEntries": [
