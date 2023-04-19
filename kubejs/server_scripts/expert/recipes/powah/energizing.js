@@ -23,14 +23,26 @@ ServerEvents.recipes((event) => {
             id: `powah:energizing/niotic_crystal`
         },
         {
+            output: '4x powah:crystal_spirited',
+            inputs: [
+                '#forge:essences/earth',
+                'kubejs:sylvanite',
+                '#forge:gems/diopside',
+                'kubejs:sylvanite',
+                '#forge:essences/earth'
+            ],
+            energy: '1600000',
+            id: `powah:energizing/spirited_crystal`
+        },
+        {
             output: '4x spirit:soul_steel_ingot',
             inputs: [
-                '#forge:ingots/copper',
-                '#forge:ingots/copper',
-                '#forge:ingots/silver',
-                '#forge:ingots/nickel',
+                '#forge:dusts/iesnium',
+                '#forge:dusts/iesnium',
+                '#forge:dusts/iesnium',
+                '#forge:dusts/nickel',
                 '#forge:dusts/diamond',
-                'blue_skies:soul_fragment'
+                'spirit:soul_powder'
             ],
             energy: '100000',
             id: `${id_prefix}soul_steel_ingot`
@@ -59,6 +71,17 @@ ServerEvents.recipes((event) => {
             inputs: ['powah:blank_card', '#forge:essences/abjuration', '#forge:gems/diopside'],
             energy: '100000',
             id: `${id_prefix}upgrade_anchor`
+        },
+        {
+            output: '4x kubejs:dim_arcanite_crystal',
+            inputs: [
+                '#forge:storage_blocks/source',
+                '#forge:gems/carminite',
+                '#forge:gems/carminite',
+                '#forge:gems/carminite'
+            ],
+            energy: '50000',
+            id: `${id_prefix}dim_arcanite_crystal`
         }
     ];
 

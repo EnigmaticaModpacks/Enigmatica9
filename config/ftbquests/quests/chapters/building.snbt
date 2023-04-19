@@ -797,6 +797,39 @@
 				player_command: false
 			}]
 		}
+		{
+			x: 3.5d
+			y: 9.0d
+			description: ["A simple sensor that can be placed over any door. When a player approaches, the door will open automatically. Their vertical detection range may be adjusted with a Redstone Key, allowing them to work on larger doors. "]
+			id: "17F29DFB161A6D1E"
+			tasks: [{
+				id: "73B6B9FD71519D5C"
+				type: "item"
+				item: "manyideas_doors:player_door_sensor"
+			}]
+			rewards: [{
+				id: "2606C21488212483"
+				type: "item"
+				item: "manyideas_core:redstone_key"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 9.0d
+			description: ["Enchanted shears that, when used upon a Rainbow Sheep, will produce Rainbow Wool. "]
+			id: "7F8E9CAAF204E1F3"
+			tasks: [{
+				id: "50B8BB361CE34B8A"
+				type: "item"
+				item: {
+					id: "manyideas_core:mysterious_shears"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
 	]
 	quest_links: [
 		{

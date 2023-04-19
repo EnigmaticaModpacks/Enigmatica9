@@ -6,6 +6,82 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/occultism/ritual/';
     const recipes = [
         {
+            output: 'occultism:jei_dummy/none',
+            entity_to_summon: 'occultism:foliot',
+            spirit_job_type: 'occultism:crush_tier1',
+            spirit_max_age: -1,
+            activation_item: 'occultism:book_of_binding_bound_foliot',
+            inputs: [
+                '#forge:essences/conjuration',
+                '#forge:gems/carminite',
+                '#ae2:knife',
+                '#forge:gems/carminite',
+                'naturesaura:gold_leaf'
+            ],
+            ritual_dummy: 'occultism:ritual_dummy/summon_foliot_crusher',
+            ritual_type: 'occultism:summon_spirit_with_job',
+            pentacle_id: 'occultism:summon_foliot',
+            duration: 60,
+            id: 'occultism:ritual/summon_foliot_crusher'
+        },
+        {
+            output: 'occultism:jei_dummy/none',
+            entity_to_summon: 'occultism:djinni',
+            spirit_job_type: 'occultism:crush_tier2',
+            spirit_max_age: -1,
+            activation_item: 'occultism:book_of_binding_bound_djinni',
+            inputs: [
+                '#forge:essences/conjuration',
+                '#forge:gems/carminite',
+                '#ae2:knife',
+                '#forge:gems/carminite',
+                'naturesaura:gold_leaf'
+            ],
+            ritual_dummy: 'occultism:ritual_dummy/summon_djinni_crusher',
+            ritual_type: 'occultism:summon_spirit_with_job',
+            pentacle_id: 'occultism:summon_djinni',
+            duration: 90,
+            id: 'occultism:ritual/summon_djinni_crusher'
+        },
+        {
+            output: 'occultism:jei_dummy/none',
+            entity_to_summon: 'occultism:afrit',
+            spirit_job_type: 'occultism:crush_tier3',
+            spirit_max_age: -1,
+            activation_item: 'occultism:book_of_binding_bound_afrit',
+            inputs: [
+                '#forge:essences/conjuration',
+                '#forge:gems/carminite',
+                '#ae2:knife',
+                '#forge:gems/carminite',
+                'naturesaura:gold_leaf'
+            ],
+            ritual_dummy: 'occultism:ritual_dummy/summon_afrit_crusher',
+            ritual_type: 'occultism:summon_spirit_with_job',
+            pentacle_id: 'occultism:summon_afrit',
+            duration: 120,
+            id: 'occultism:ritual/summon_afrit_crusher'
+        },
+        {
+            output: 'occultism:jei_dummy/none',
+            entity_to_summon: 'occultism:marid',
+            spirit_job_type: 'occultism:crush_tier4',
+            spirit_max_age: -1,
+            activation_item: 'occultism:book_of_binding_bound_marid',
+            inputs: [
+                '#forge:essences/conjuration',
+                '#forge:gems/carminite',
+                '#ae2:knife',
+                '#forge:gems/carminite',
+                'naturesaura:gold_leaf'
+            ],
+            ritual_dummy: 'occultism:ritual_dummy/summon_marid_crusher',
+            ritual_type: 'occultism:summon_spirit_with_job',
+            pentacle_id: 'occultism:summon_marid',
+            duration: 150,
+            id: 'occultism:ritual/summon_marid_crusher'
+        },
+        {
             output: 'ars_nouveau:wixie_charm',
             activation_item: '#forge:essences/conjuration',
             inputs: [
@@ -46,6 +122,25 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_summon_amethyst_golem`
         },
         {
+            output: '2x ars_nouveau:bookwyrm_charm',
+            activation_item: '#forge:essences/conjuration',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                '#forge:gems/amethyst',
+                '#forge:gems/amethyst',
+                '#forge:gems/amethyst',
+                '#forge:gems/amethyst'
+            ],
+            ritual_dummy: 'kubejs:ritual_summon_bookwyrm',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_bookwyrm`
+        },
+        {
             output: 'ars_nouveau:starbuncle_charm',
             activation_item: '#forge:essences/conjuration',
             inputs: [
@@ -71,26 +166,32 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_summon_starbuncle_from_shards`
         },
         {
-            output: Item.of(
-                'hexerei:willow_broom',
-                '{Inventory:{Items:[{Count:1b,Slot:0,id:"hexerei:gold_rings"},{Count:1b,Slot:1,id:"hexerei:small_satchel"},{Count:1b,Slot:2,id:"hexerei:broom_brush",tag:{Damage:0}}],Size:30}}'
-            ),
+            output: Item.of('hexerei:willow_broom', {
+                Inventory: {
+                    Items: [
+                        { Count: 1, Slot: 0, id: 'hexerei:gold_rings' },
+                        { Count: 1, Slot: 1, id: 'hexerei:small_satchel' },
+                        { Count: 1, Slot: 2, id: 'hexerei:broom_brush', tag: { Damage: 0, Unbreakable: 1 } }
+                    ],
+                    Size: 30
+                },
+                display: { Name: '{"translate":"item.hexerei.willow_broom"}' },
+                floatMode: 0
+            }),
             activation_item: 'hexerei:blood_bottle',
             inputs: [
-                'hexerei:gold_rings',
-                'hexerei:broom_brush',
-                '#forge:essences/air',
+                'hexerei:mindful_trance_blend',
                 'hexerei:small_satchel',
+                'hexerei:broom_brush',
+                'hexerei:gold_rings',
+                'hexerei:dried_yellow_dock_leaves',
+                'hexerei:dried_yellow_dock_leaves',
                 'hexerei:willow_log',
                 'hexerei:willow_log'
             ],
             ritual_dummy: 'kubejs:ritual_craft_willow_broom',
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:summon_familiar',
-            entity_to_sacrifice: {
-                tag: 'enigmatica:ravens',
-                display_name: 'ritual.occultism.sacrifice.ravens'
-            },
             duration: 10,
             id: `${id_prefix}ritual_craft_willow_broom`
         },
@@ -628,12 +729,13 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'pneumaticcraft:flux_compressor',
-            activation_item: '#industrialforegoing:machine_frame/simple',
+            activation_item: 'pneumaticcraft:air_compressor',
             inputs: [
-                'pneumaticcraft:reinforced_pressure_tube',
+                'pneumaticcraft:printed_circuit_board',
                 'pneumaticcraft:turbine_rotor',
                 '#forge:gears/compressed_iron',
-                'pneumaticcraft:turbine_rotor'
+                'pneumaticcraft:turbine_rotor',
+                'pneumaticcraft:reinforced_pressure_tube'
             ],
             entity_to_sacrifice: {
                 tag: 'enigmatica:elementals/air',
@@ -681,12 +783,12 @@ ServerEvents.recipes((event) => {
                 'naturesaura:infused_stone',
                 'naturesaura:infused_stone',
                 'quark:rainbow_rune',
-                'powah:energy_cable_niotic',
+                'powah:capacitor_niotic',
                 'quark:rainbow_rune',
-                'powah:energy_cable_niotic',
-                'powah:energy_cable_niotic',
+                'powah:capacitor_niotic',
+                'powah:capacitor_niotic',
                 'quark:rainbow_rune',
-                'powah:energy_cable_niotic',
+                'powah:capacitor_niotic',
                 'quark:rainbow_rune'
             ],
             entity_to_sacrifice: {
@@ -806,7 +908,7 @@ ServerEvents.recipes((event) => {
             inputs: ['#forge:essences/anima', '#forge:essences/air', '#forge:essences/anima', '#forge:essences/air'],
             ritual_dummy: 'kubejs:ritual_summon_death_tome',
             ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:summon_evil',
+            pentacle_id: 'occultism:summon_lesser_evil',
             duration: 10,
             id: `${id_prefix}ritual_summon_death_tome`
         },
@@ -900,7 +1002,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'kubejs:teleport_nether',
-            activation_item: '#forge:gems/carminite',
+            activation_item: '#forge:nether_stars',
             inputs: [
                 '#forge:ingots/tainted_gold',
                 'naturesaura:gold_leaf',
@@ -995,7 +1097,7 @@ ServerEvents.recipes((event) => {
             ],
             ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:wither_council_gate", radius:5}`),
             ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:summon_evil',
+            pentacle_id: 'occultism:summon_greater_evil',
             duration: 10,
             id: `${id_prefix}wither_council_gate`
         },
@@ -1018,7 +1120,7 @@ ServerEvents.recipes((event) => {
             ],
             ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:wilden_grove_gate", radius:5}`),
             ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:summon_evil',
+            pentacle_id: 'occultism:summon_greater_evil',
             entity_to_sacrifice: {
                 tag: 'enigmatica:azulfo',
                 display_name: 'ritual.occultism.sacrifice.azulfo'

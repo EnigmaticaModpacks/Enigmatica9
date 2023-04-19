@@ -1,19 +1,6 @@
 ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/enigmatica/';
     const recipes = [
-        // {
-        //     outputs: {
-        //         primary: { item: 'minecraft:magenta_dye', count: 3, chance: 1.0 },
-        //         secondary: { item: 'minecraft:purple_dye', count: 1, chance: 0.5 },
-        //         tertiary: { item: 'minecraft:pink_dye', count: 1, chance: 0.25 }
-        //     },
-        //     input: 'byg:allium_flower_bush',
-        //     experience: 0.5,
-        //     duration: 20,
-        //     energy: 1000,
-        //     ignore_occultism_multiplier: true,
-        //     id_suffix: `magenta_dye_from_allium_flower_bush`
-        // }
         {
             outputs: { primary: { item: 'kubejs:amethyst_dust', count: 1, chance: 1.0 } },
             input: '#forge:gems/amethyst',
@@ -26,16 +13,7 @@ ServerEvents.recipes((event) => {
     ];
 
     const recipetypes_crushing = (event, recipe) => {
-        // Occultism
-        event
-            .custom({
-                type: 'occultism:crushing',
-                ingredient: Ingredient.of(recipe.input).toJson(),
-                result: Item.of(recipe.outputs.primary.item, recipe.outputs.primary.count).toJson(),
-                crushing_time: recipe.duration,
-                ignore_crushing_multiplier: recipe.ignore_occultism_multiplier
-            })
-            .id(`${id_prefix}occultism_crushing/${recipe.id_suffix}`);
+        // Occultism - Intentionally excluded as they aren't used for crushing in Expert. All crushing compat should go in Normal scripts.
 
         // Mekanism
         event

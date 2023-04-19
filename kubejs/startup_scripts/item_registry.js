@@ -23,7 +23,11 @@ StartupEvents.registry('item', (event) => {
         'dimensional_storage_crystal',
         'magebloom_filter',
         'saturated_magebloom_filter',
-        'dream_stone'
+        'dream_stone',
+        'dim_arcanite_crystal',
+        'bright_arcanite_crystal',
+        'iridescent_arcanite_crystal',
+        'sylvanite'
     ];
 
     const ritualDummies = [
@@ -38,6 +42,7 @@ StartupEvents.registry('item', (event) => {
         'ritual_summon_wixie',
         'ritual_summon_wixie_from_shards',
         'ritual_summon_amethyst_golem',
+        'ritual_summon_bookwyrm',
         'ritual_summon_starbuncle',
         'ritual_summon_starbuncle_from_shards',
         'ritual_summon_crow',

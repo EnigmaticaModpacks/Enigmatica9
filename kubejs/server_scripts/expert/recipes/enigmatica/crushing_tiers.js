@@ -4,7 +4,7 @@ ServerEvents.recipes((event) => {
     }
 
     const id_prefix = 'enigmatica:expert/enigmatica/';
-    // Tiers range from 1-5, with 5 being the highest
+    // Tiers range from 1-4, with 4 being the highest
     const recipes = [
         // Placeholder recipe. Iron will have different secondary. Almost Unified functions will be used for outputs.
         {
@@ -42,20 +42,6 @@ ServerEvents.recipes((event) => {
     // Todo: Update Metal and Gem properties to include crushing tier, make loop for all of this based on that. Pending completion of EE setup by Kanz
 
     const recipetypes_crushing = (event, recipe) => {
-        // Occultism
-        if (recipe.crushing_tier <= 3 || recipe.crushing_tier == 5) {
-            event
-                .custom({
-                    type: 'occultism:crushing',
-                    ingredient: Ingredient.of(recipe.input).toJson(),
-                    result: { item: recipe.outputs.primary, count: 2 },
-                    min_tier: recipe.crushing_tier > 4 ? 4 : recipe.crushing_tier,
-                    crushing_time: recipe.duration,
-                    ignore_crushing_multiplier: recipe.ignore_multiplier
-                })
-                .id(`${id_prefix}occultism_crushing/${recipe.id_suffix}`);
-        }
-
         if (recipe.crushing_tier <= 1) {
             let multiplier = recipe.ignore_multiplier ? 1 : 2;
 
@@ -137,10 +123,9 @@ ServerEvents.recipes((event) => {
         }
 
         if (recipe.crushing_tier <= 4) {
+            // Immersive Engineering
             let multiplier = recipe.ignore_multiplier ? 1 : 4;
-
             let secondary_outputs = [];
-
             if (recipe.outputs.secondary) {
                 secondary_outputs.push({
                     output: {
@@ -150,8 +135,6 @@ ServerEvents.recipes((event) => {
                     chance: 0.5
                 });
             }
-
-            // Immersive Engineering
             event
                 .custom({
                     type: 'immersiveengineering:crusher',
@@ -164,10 +147,9 @@ ServerEvents.recipes((event) => {
                     secondaries: secondary_outputs
                 })
                 .id(`${id_prefix}immersiveengineering_crusher/${recipe.id_suffix}`);
-        }
 
-        if (recipe.crushing_tier <= 5) {
-            let multiplier = recipe.ignore_multiplier ? 1 : 2.25; // Pulverizer has massive catalysts, this does about 5x with the best
+            // Thermal
+            multiplier = recipe.ignore_multiplier ? 1 : 2.25; // Pulverizer has massive catalysts, this does about 5x with the best
             let outputs = [
                 {
                     item: recipe.outputs.primary,
@@ -184,7 +166,6 @@ ServerEvents.recipes((event) => {
                 });
             }
 
-            // Thermal
             event
                 .custom({
                     type: 'thermal:pulverizer',

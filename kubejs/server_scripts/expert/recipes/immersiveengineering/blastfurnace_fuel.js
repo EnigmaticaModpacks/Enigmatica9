@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             input: '#forge:nuggets/horizonite',
-            time: 64 * 20,
+            time: 120 * 20,
             id: `${id_prefix}horizonite_nugget`
         }
     ];

@@ -6,16 +6,6 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            output: 'naturesaura:rf_converter',
-            pattern: ['ABA', 'BCB', 'ABA'],
-            key: {
-                A: '#forge:gems/carminite',
-                B: '#forge:ingots/infused_iron',
-                C: 'twilightforest:carminite_reactor'
-            },
-            id: `naturesaura:rf_converter`
-        },
-        {
             output: 'naturesaura:potion_generator',
             pattern: ['ABA', 'CDC', 'ABA'],
             key: {

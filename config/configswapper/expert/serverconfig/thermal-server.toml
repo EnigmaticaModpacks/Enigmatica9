@@ -133,7 +133,7 @@
 	[Machines.Chiller]
 		#This sets the base power consumption (RF/t) for the Blast Chiller.
 		#Range: 1 ~ 200
-		"Base Power" = 32
+		"Base Power" = 96
 
 	[Machines.Refinery]
 		#This sets the base power consumption (RF/t) for the Fractionating Still.

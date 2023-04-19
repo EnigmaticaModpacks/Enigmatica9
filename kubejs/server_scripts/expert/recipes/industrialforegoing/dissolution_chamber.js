@@ -22,72 +22,133 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}meat_and_bio_fuel`
         },
         {
+            output: '4x hexerei:infused_fabric',
+            inputs: [
+                '#forge:fabrics/ersatz_leather',
+                'ars_nouveau:magebloom_fiber',
+                '#forge:fabrics/ersatz_leather',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                '#forge:fabrics/ersatz_leather',
+                'ars_nouveau:magebloom_fiber',
+                '#forge:fabrics/ersatz_leather'
+            ],
+            inputFluid: '{Amount:300,FluidName:"minecraft:water"}',
+            processingTime: 60,
+            id: `${id_prefix}infused_fabric`
+        },
+        {
             output: '2x industrialforegoing:machine_frame_advanced',
             inputs: [
                 '#forge:ingots/soul_steel',
-                'pneumaticcraft:printed_circuit_board',
-                '#forge:ingots/soul_steel',
-                'powah:energy_cable_spirited',
-
-                'powah:energy_cable_spirited',
-                '#forge:ingots/soul_steel',
                 'kubejs:energetic_transference_matrix',
+                '#forge:ingots/soul_steel',
+                'powah:capacitor_spirited',
+
+                'powah:capacitor_spirited',
+                '#forge:ingots/soul_steel',
+                'ae2:calculation_processor',
                 '#forge:ingots/soul_steel'
             ],
-            inputFluid: '{Amount:1000,FluidName:"industrialforegoing:latex"}',
+            inputFluid: '{Amount:1000,FluidName:"industrialforegoing:ether_gas"}',
             processingTime: 800,
             id: `${id_prefix}machine_frame_advanced`
         },
         {
-            output: Item.of('industrialforegoing:speed_addon_1', 2, '{TitaniumAugment:{Speed:2.0f}}'),
+            output: Item.of('industrialforegoing:speed_addon_1', 4, '{TitaniumAugment:{Speed:2.0f}}'),
             inputs: [
+                'modularrouters:augment_core',
+                'ars_nouveau:starbuncle_charm',
+                'modularrouters:augment_core',
                 '#forge:gems/blazing',
-                'pneumaticcraft:printed_circuit_board',
-                'mininggadgets:upgrade_empty',
-                'ae2:fluix_glass_cable',
-
-                'ae2:fluix_glass_cable',
-                'mininggadgets:upgrade_empty',
-                'pneumaticcraft:printed_circuit_board',
-                '#forge:gems/blazing'
+                '#forge:gems/blazing',
+                'modularrouters:augment_core',
+                'ars_nouveau:starbuncle_charm',
+                'modularrouters:augment_core'
             ],
             inputFluid: '{Amount:1000,FluidName:"pneumaticcraft:lubricant"}',
             processingTime: 200,
             id: `industrialforegoing:dissolution_chamber/speed_addon_1`
         },
         {
-            output: Item.of('industrialforegoing:efficiency_addon_1', 2, '{TitaniumAugment:{Efficiency:0.9f}}'),
+            output: Item.of('industrialforegoing:efficiency_addon_1', 4, '{TitaniumAugment:{Efficiency:0.9f}}'),
             inputs: [
-                'powah:charged_snowball',
-                'pneumaticcraft:printed_circuit_board',
-                'mininggadgets:upgrade_empty',
-                'ae2:fluix_glass_cable',
-
-                'ae2:fluix_glass_cable',
-                'mininggadgets:upgrade_empty',
-                'pneumaticcraft:printed_circuit_board',
-                'powah:charged_snowball'
+                'modularrouters:augment_core',
+                'ars_nouveau:amethyst_golem_charm',
+                'modularrouters:augment_core',
+                '#forge:gems/blazing',
+                '#forge:gems/blazing',
+                'modularrouters:augment_core',
+                'ars_nouveau:amethyst_golem_charm',
+                'modularrouters:augment_core'
             ],
             inputFluid: '{Amount:1000,FluidName:"pneumaticcraft:lubricant"}',
             processingTime: 200,
             id: `industrialforegoing:dissolution_chamber/efficiency_addon_1`
         },
         {
-            output: Item.of('industrialforegoing:processing_addon_1', 2, '{TitaniumAugment:{Processing:2.0f}}'),
+            output: Item.of('industrialforegoing:processing_addon_1', 4, '{TitaniumAugment:{Processing:2.0f}}'),
             inputs: [
-                '#forge:gems/spirit_attuned',
-                'pneumaticcraft:printed_circuit_board',
-                'mininggadgets:upgrade_empty',
-                'ae2:fluix_glass_cable',
-
-                'ae2:fluix_glass_cable',
-                'mininggadgets:upgrade_empty',
-                'pneumaticcraft:printed_circuit_board',
-                '#forge:gems/spirit_attuned'
+                'modularrouters:augment_core',
+                'ars_nouveau:wixie_charm',
+                'modularrouters:augment_core',
+                '#forge:gems/blazing',
+                '#forge:gems/blazing',
+                'modularrouters:augment_core',
+                'ars_nouveau:wixie_charm',
+                'modularrouters:augment_core'
             ],
             inputFluid: '{Amount:1000,FluidName:"pneumaticcraft:lubricant"}',
             processingTime: 200,
             id: `industrialforegoing:dissolution_chamber/processing_addon_1`
+        },
+        {
+            output: Item.of('industrialforegoing:speed_addon_2', 4, '{TitaniumAugment:{Speed:3.0f}}'),
+            inputs: [
+                'industrialforegoing:speed_addon_1',
+                'pneumaticcraft:printed_circuit_board',
+                'industrialforegoing:speed_addon_1',
+                '#forge:gems/subzero',
+                '#forge:gems/subzero',
+                'industrialforegoing:speed_addon_1',
+                'pneumaticcraft:printed_circuit_board',
+                'industrialforegoing:speed_addon_1'
+            ],
+            inputFluid: '{Amount:1000,FluidName:"kubejs:magicite"}',
+            processingTime: 200,
+            id: `industrialforegoing:dissolution_chamber/speed_addon_2`
+        },
+        {
+            output: Item.of('industrialforegoing:efficiency_addon_2', 4, '{TitaniumAugment:{Efficiency:0.8f}}'),
+            inputs: [
+                'industrialforegoing:efficiency_addon_1',
+                'pneumaticcraft:printed_circuit_board',
+                'industrialforegoing:efficiency_addon_1',
+                '#forge:gems/subzero',
+                '#forge:gems/subzero',
+                'industrialforegoing:efficiency_addon_1',
+                'pneumaticcraft:printed_circuit_board',
+                'industrialforegoing:efficiency_addon_1'
+            ],
+            inputFluid: '{Amount:1000,FluidName:"kubejs:magicite"}',
+            processingTime: 200,
+            id: `industrialforegoing:dissolution_chamber/efficiency_addon_2`
+        },
+        {
+            output: Item.of('industrialforegoing:processing_addon_2', 4, '{TitaniumAugment:{Processing:3.0f}}'),
+            inputs: [
+                'industrialforegoing:processing_addon_1',
+                'pneumaticcraft:printed_circuit_board',
+                'industrialforegoing:processing_addon_1',
+                '#forge:gems/subzero',
+                '#forge:gems/subzero',
+                'industrialforegoing:processing_addon_1',
+                'pneumaticcraft:printed_circuit_board',
+                'industrialforegoing:processing_addon_1'
+            ],
+            inputFluid: '{Amount:1000,FluidName:"kubejs:magicite"}',
+            processingTime: 200,
+            id: `industrialforegoing:dissolution_chamber/processing_addon_2`
         }
     ];
 

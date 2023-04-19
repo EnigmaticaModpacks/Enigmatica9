@@ -6,626 +6,561 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/ars_nouveau/enchanting_apparatus/';
     const recipes = [
         {
-            output: { item: 'create:mechanical_crafter', count: 8 },
-            pedestalItems: [
-                { item: { item: 'create:brass_casing' } },
-                { item: { item: 'create:brass_casing' } },
-                { item: { item: 'create:brass_casing' } },
-                { item: { item: 'create:brass_casing' } },
-                { item: { item: 'create:brass_casing' } },
-                { item: { item: 'create:brass_casing' } },
-                { item: { item: 'create:brass_casing' } },
-                { item: { item: 'create:brass_casing' } }
+            output: '8x create:mechanical_crafter',
+            inputs: [
+                'create:brass_casing',
+                'create:brass_casing',
+                'create:brass_casing',
+                'create:brass_casing',
+                'create:brass_casing',
+                'create:brass_casing',
+                'create:brass_casing',
+                'create:brass_casing'
             ],
-            reagent: [{ item: 'minecraft:crafting_table' }],
+            reagents: ['minecraft:crafting_table'],
             sourceCost: 500,
             id: `${id_prefix}mechanical_crafter`
         },
         {
-            output: { item: 'mekanism:teleportation_core', count: 2 },
-            pedestalItems: [
-                { item: { tag: 'forge:essences/conjuration' } },
-                { item: { item: 'quark:rainbow_rune' } },
-                { item: { item: 'quark:rainbow_rune' } }
-            ],
-            reagent: [{ item: 'occultism:spirit_attuned_gem' }],
+            output: '2x mekanism:teleportation_core',
+            inputs: ['#forge:essences/conjuration', 'quark:rainbow_rune', 'quark:rainbow_rune'],
+            reagents: ['occultism:spirit_attuned_gem'],
             sourceCost: 500,
             id: `${id_prefix}teleportation_core`
         },
         {
-            output: { item: 'occultism:storage_controller_base' },
-            pedestalItems: [
-                { item: { tag: 'forge:ingots/energized_steel' } },
-                { item: { tag: 'forge:ingots/energized_steel' } },
-                { item: { tag: 'forge:ingots/energized_steel' } }
-            ],
-            reagent: [{ item: 'occultism:otherstone_pedestal' }],
+            output: 'occultism:storage_controller_base',
+            inputs: ['#forge:ingots/energized_steel', '#forge:ingots/energized_steel', '#forge:ingots/energized_steel'],
+            reagents: ['occultism:otherstone_pedestal'],
             sourceCost: 2000,
             id: `${id_prefix}storage_controller_base`
         },
         {
-            output: {
-                item: 'occultism:dimensional_matrix',
-                nbt: { spiritName: '' }
-            },
-            pedestalItems: [
-                { item: { item: 'rftoolsbase:dimensionalshard' } },
-                { item: { item: 'rftoolsbase:dimensionalshard' } },
-                { item: { item: 'rftoolsbase:dimensionalshard' } }
-            ],
-            reagent: [{ item: 'mekanism:teleportation_core' }],
+            output: Item.of('occultism:dimensional_matrix', '{spiritName:""}'),
+            inputs: ['rftoolsbase:dimensionalshard', 'rftoolsbase:dimensionalshard', 'rftoolsbase:dimensionalshard'],
+            reagents: ['mekanism:teleportation_core'],
             sourceCost: 2000,
             id: `${id_prefix}dimensional_matrix`
         },
         {
-            output: { item: 'occultism:stable_wormhole' },
-            pedestalItems: [
-                { item: { item: 'rftoolsbase:dimensionalshard' } },
-                { item: { item: 'rftoolsbase:dimensionalshard' } },
-                { item: { item: 'rftoolsbase:dimensionalshard' } }
-            ],
-            reagent: [{ item: 'occultism:wormhole_frame' }],
+            output: 'occultism:stable_wormhole',
+            inputs: ['rftoolsbase:dimensionalshard', 'rftoolsbase:dimensionalshard', 'rftoolsbase:dimensionalshard'],
+            reagents: ['occultism:wormhole_frame'],
             sourceCost: 2000,
             id: `${id_prefix}stable_wormhole`
         },
         {
-            output: { item: 'powah:binding_card_dim' },
-            pedestalItems: [
-                { item: { item: 'rftoolsbase:dimensionalshard' } },
-                { item: { item: 'rftoolsbase:dimensionalshard' } },
-                { item: { item: 'rftoolsbase:dimensionalshard' } }
-            ],
-            reagent: [{ item: 'powah:binding_card' }],
+            output: 'powah:binding_card_dim',
+            inputs: ['rftoolsbase:dimensionalshard', 'rftoolsbase:dimensionalshard', 'rftoolsbase:dimensionalshard'],
+            reagents: ['powah:binding_card'],
             sourceCost: 2000,
             id: `${id_prefix}binding_card_dim`
         },
         {
-            output: { item: 'ae2:crafting_unit', count: 2 },
-            pedestalItems: [
-                { item: { item: 'pneumaticcraft:logistics_core' } },
-                { item: { item: 'naturesaura:infused_stone' } },
-                { item: { item: 'powah:energy_cable_niotic' } },
-                { item: { item: 'naturesaura:infused_stone' } },
-                { item: { item: 'pneumaticcraft:logistics_core' } },
-                { item: { item: 'naturesaura:infused_stone' } },
-                { item: { item: 'powah:energy_cable_niotic' } },
-                { item: { item: 'naturesaura:infused_stone' } }
+            output: '2x ae2:crafting_unit',
+            inputs: [
+                'pneumaticcraft:logistics_core',
+                'naturesaura:infused_stone',
+                'powah:capacitor_niotic',
+                'naturesaura:infused_stone',
+                'pneumaticcraft:logistics_core',
+                'naturesaura:infused_stone',
+                'powah:capacitor_niotic',
+                'naturesaura:infused_stone'
             ],
-            reagent: [{ item: 'ars_nouveau:wixie_charm' }],
+            reagents: ['ars_nouveau:wixie_charm'],
             sourceCost: 5000,
             id: `${id_prefix}crafting_unit`
         },
         {
-            output: { item: 'naturesaura:animal_spawner' },
-            pedestalItems: [
-                { item: { tag: 'forge:essences/conjuration' } },
-                { item: { item: 'minecraft:golden_carrot' } },
-                { item: { item: 'minecraft:hay_block' } },
-                { item: { item: 'minecraft:golden_apple' } }
+            output: 'naturesaura:animal_spawner',
+            inputs: [
+                '#forge:essences/conjuration',
+                'minecraft:golden_carrot',
+                'minecraft:hay_block',
+                'minecraft:golden_apple'
             ],
-            reagent: [{ item: 'spirit:broken_spawner' }],
+            reagents: ['spirit:broken_spawner'],
             sourceCost: 9000,
             id: `${id_prefix}animal_spawner`
         },
         {
-            output: { item: 'pneumaticcraft:drill_bit_diamond' },
-            pedestalItems: [{ item: { tag: 'forge:ingots/skies' } }, { item: { item: 'ars_nouveau:glyph_aoe' } }],
-            reagent: [{ item: 'pneumaticcraft:drill_bit_compressed_iron' }],
+            output: 'pneumaticcraft:drill_bit_diamond',
+            inputs: ['#forge:ingots/skies', 'ars_nouveau:glyph_aoe'],
+            reagents: ['pneumaticcraft:drill_bit_compressed_iron'],
             sourceCost: 3000,
             id: `${id_prefix}drill_bit_diamond`
         },
         {
-            output: { item: 'create:brass_hand' },
-            pedestalItems: [
-                { item: { tag: 'forge:essences/manipulation' } },
-                { item: { tag: 'forge:leather' } },
-                { item: { tag: 'forge:leather' } },
-                { item: { tag: 'forge:leather' } }
-            ],
-            reagent: [{ tag: 'forge:ingots/energized_steel' }],
+            output: 'create:brass_hand',
+            inputs: ['#forge:essences/manipulation', '#forge:leather', '#forge:leather', '#forge:leather'],
+            reagents: ['#forge:ingots/energized_steel'],
             sourceCost: 1000,
             id: `${id_prefix}brass_hand`
         },
         {
-            output: { item: 'minecraft:netherite_ingot', count: 4 },
-            pedestalItems: [
-                { item: { tag: 'forge:ingots/electrum' } },
-                { item: { tag: 'forge:ingots/electrum' } },
-                { item: { tag: 'forge:ingots/electrum' } },
-                { item: { tag: 'forge:ingots/electrum' } }
-            ],
-            reagent: [{ item: 'minecraft:netherite_scrap' }],
-            sourceCost: 5000,
-            id: `${id_prefix}netherite_ingot`
-        },
-        {
-            output: { item: 'immersiveengineering:mold_plate', count: 1 },
-            pedestalItems: [{ item: { tag: 'forge:plates' } }, { item: { tag: 'forge:essences/manipulation' } }],
-            reagent: [{ item: 'pneumaticcraft:compressed_stone_slab' }],
+            output: 'immersiveengineering:mold_plate',
+            inputs: ['#forge:plates', '#forge:essences/manipulation'],
+            reagents: ['pneumaticcraft:compressed_stone_slab'],
             sourceCost: 1000,
             id: `${id_prefix}mold_plate`
         },
         {
-            output: { item: 'immersiveengineering:mold_wire', count: 1 },
-            pedestalItems: [{ item: { tag: 'forge:wires' } }, { item: { tag: 'forge:essences/manipulation' } }],
-            reagent: [{ item: 'pneumaticcraft:compressed_stone_slab' }],
+            output: 'immersiveengineering:mold_wire',
+            inputs: ['#forge:wires', '#forge:essences/manipulation'],
+            reagents: ['pneumaticcraft:compressed_stone_slab'],
             sourceCost: 1000,
             id: `${id_prefix}mold_wire`
         },
         {
-            output: { item: 'immersiveengineering:mold_rod', count: 1 },
-            pedestalItems: [
-                { item: { tag: 'forge:rods/all_metal' } },
-                { item: { tag: 'forge:essences/manipulation' } }
-            ],
-            reagent: [{ item: 'pneumaticcraft:compressed_stone_slab' }],
+            output: 'immersiveengineering:mold_rod',
+            inputs: ['#forge:rods/all_metal', '#forge:essences/manipulation'],
+            reagents: ['pneumaticcraft:compressed_stone_slab'],
             sourceCost: 1000,
             id: `${id_prefix}mold_rod`
         },
         {
-            output: { item: 'immersiveengineering:mold_gear', count: 1 },
-            pedestalItems: [{ item: { tag: 'forge:gears' } }, { item: { tag: 'forge:essences/manipulation' } }],
-            reagent: [{ item: 'pneumaticcraft:compressed_stone_slab' }],
+            output: 'immersiveengineering:mold_gear',
+            inputs: ['#forge:gears', '#forge:essences/manipulation'],
+            reagents: ['pneumaticcraft:compressed_stone_slab'],
             sourceCost: 1000,
             id: `${id_prefix}mold_gear`
         },
         {
-            output: { item: 'pneumaticcraft:volume_upgrade', count: 1 },
-            pedestalItems: [
-                { item: { item: 'pneumaticcraft:pressure_chamber_wall' } },
-                { item: { tag: 'forge:essences/air' } },
-                { item: { tag: 'forge:essences/air' } }
-            ],
-            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            output: 'pneumaticcraft:volume_upgrade',
+            inputs: ['pneumaticcraft:pressure_chamber_wall', '#forge:essences/air', '#forge:essences/air'],
+            reagents: ['pneumaticcraft:upgrade_matrix'],
             sourceCost: 0,
             id: `${id_prefix}volume_upgrade`
         },
         {
-            output: { item: 'pneumaticcraft:range_upgrade', count: 1 },
-            pedestalItems: [
-                { item: { tag: 'forge:gems/source' } },
-                { item: { tag: 'forge:essences/manipulation' } },
-                { item: { tag: 'forge:essences/manipulation' } }
-            ],
-            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            output: 'pneumaticcraft:range_upgrade',
+            inputs: ['#forge:gems/source', '#forge:essences/manipulation', '#forge:essences/manipulation'],
+            reagents: ['pneumaticcraft:upgrade_matrix'],
             sourceCost: 0,
             id: `${id_prefix}range_upgrade`
         },
         {
-            output: { item: 'pneumaticcraft:security_upgrade', count: 1 },
-            pedestalItems: [
-                { item: { item: 'pneumaticcraft:pressure_gauge' } },
-                { item: { tag: 'forge:essences/abjuration' } },
-                { item: { tag: 'forge:essences/abjuration' } }
-            ],
-            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            output: 'pneumaticcraft:security_upgrade',
+            inputs: ['pneumaticcraft:pressure_gauge', '#forge:essences/abjuration', '#forge:essences/abjuration'],
+            reagents: ['pneumaticcraft:upgrade_matrix'],
             sourceCost: 0,
             id: `${id_prefix}security_upgrade`
         },
         {
-            output: { item: 'pneumaticcraft:speed_upgrade', count: 1 },
-            pedestalItems: [
-                { item: { tag: 'forge:gems/fluix' } },
-                { item: { tag: 'forge:essences/water' } },
-                { item: { tag: 'forge:essences/water' } }
-            ],
-            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            output: 'pneumaticcraft:speed_upgrade',
+            inputs: ['#forge:gems/fluix', '#forge:essences/water', '#forge:essences/water'],
+            reagents: ['pneumaticcraft:upgrade_matrix'],
             sourceCost: 0,
             id: `${id_prefix}speed_upgrade`
         },
         {
-            output: { item: 'pneumaticcraft:item_life_upgrade', count: 1 },
-            pedestalItems: [
-                { item: { item: 'ars_nouveau:mendosteen_pod' } },
-                { item: { tag: 'forge:essences/abjuration' } },
-                { item: { tag: 'forge:essences/abjuration' } }
-            ],
-            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            output: 'pneumaticcraft:item_life_upgrade',
+            inputs: ['ars_nouveau:mendosteen_pod', '#forge:essences/abjuration', '#forge:essences/abjuration'],
+            reagents: ['pneumaticcraft:upgrade_matrix'],
             sourceCost: 0,
             id: `${id_prefix}item_life_upgrade`
         },
         {
-            output: { item: 'pneumaticcraft:entity_tracker_upgrade', count: 1 },
-            pedestalItems: [
-                { item: { item: 'ae2:charged_certus_quartz_crystal' } },
-                { item: { tag: 'forge:essences/air' } },
-                { item: { tag: 'forge:essences/air' } }
-            ],
-            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            output: 'pneumaticcraft:entity_tracker_upgrade',
+            inputs: ['ae2:charged_certus_quartz_crystal', '#forge:essences/air', '#forge:essences/air'],
+            reagents: ['pneumaticcraft:upgrade_matrix'],
             sourceCost: 0,
             id: `${id_prefix}entity_tracker_upgrade`
         },
         {
-            output: { item: 'pneumaticcraft:block_tracker_upgrade', count: 1 },
-            pedestalItems: [
-                { item: { item: 'ae2:charged_certus_quartz_crystal' } },
-                { item: { tag: 'forge:essences/earth' } },
-                { item: { tag: 'forge:essences/earth' } }
-            ],
-            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            output: 'pneumaticcraft:block_tracker_upgrade',
+            inputs: ['ae2:charged_certus_quartz_crystal', '#forge:essences/earth', '#forge:essences/earth'],
+            reagents: ['pneumaticcraft:upgrade_matrix'],
             sourceCost: 0,
             id: `${id_prefix}block_tracker_upgrade`
         },
         {
-            output: { item: 'pneumaticcraft:dispenser_upgrade', count: 1 },
-            pedestalItems: [
-                { item: { item: 'ae2:certus_quartz_crystal' } },
-                { item: { tag: 'forge:essences/manipulation' } },
-                { item: { tag: 'forge:essences/manipulation' } }
-            ],
-            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            output: 'pneumaticcraft:dispenser_upgrade',
+            inputs: ['ae2:certus_quartz_crystal', '#forge:essences/manipulation', '#forge:essences/manipulation'],
+            reagents: ['pneumaticcraft:upgrade_matrix'],
             sourceCost: 0,
             id: `${id_prefix}dispenser_upgrade`
         },
         {
-            output: { item: 'pneumaticcraft:magnet_upgrade', count: 1 },
-            pedestalItems: [
-                { item: { item: 'minecraft:lodestone' } },
-                { item: { tag: 'forge:essences/manipulation' } },
-                { item: { tag: 'forge:essences/manipulation' } }
-            ],
-            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            output: 'pneumaticcraft:magnet_upgrade',
+            inputs: ['minecraft:lodestone', '#forge:essences/manipulation', '#forge:essences/manipulation'],
+            reagents: ['pneumaticcraft:upgrade_matrix'],
             sourceCost: 0,
             id: `${id_prefix}magnet_upgrade`
         },
         {
-            output: { item: 'pneumaticcraft:minigun_upgrade', count: 1 },
-            pedestalItems: [
-                { item: { item: 'pneumaticcraft:minigun' } },
-                { item: { tag: 'forge:essences/fire' } },
-                { item: { tag: 'forge:essences/fire' } }
-            ],
-            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            output: 'pneumaticcraft:minigun_upgrade',
+            inputs: ['pneumaticcraft:minigun', '#forge:essences/fire', '#forge:essences/fire'],
+            reagents: ['pneumaticcraft:upgrade_matrix'],
             sourceCost: 0,
             id: `${id_prefix}minigun_upgrade`
         },
         {
-            output: { item: 'pneumaticcraft:inventory_upgrade', count: 4 },
-            pedestalItems: [
-                { item: { tag: 'forge:essences/abjuration' } },
-                { item: { item: 'thermal:fluid_reservoir' } },
-                { item: { item: 'thermal:satchel' } }
-            ],
-            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            output: '4x pneumaticcraft:inventory_upgrade',
+            inputs: ['#forge:essences/abjuration', 'thermal:fluid_reservoir', 'thermal:satchel'],
+            reagents: ['pneumaticcraft:upgrade_matrix'],
             sourceCost: 0,
             id: `${id_prefix}inventory_upgrade`
         },
         {
-            output: { item: 'pneumaticcraft:standby_upgrade', count: 1 },
-            pedestalItems: [
-                { item: { tag: 'comforts:sleeping_bags' } },
-                { item: { tag: 'forge:essences/abjuration' } },
-                { item: { tag: 'forge:essences/abjuration' } }
-            ],
-            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            output: 'pneumaticcraft:standby_upgrade',
+            inputs: ['#comforts:sleeping_bags', '#forge:essences/abjuration', '#forge:essences/abjuration'],
+            reagents: ['pneumaticcraft:upgrade_matrix'],
             sourceCost: 0,
             id: `${id_prefix}standby_upgrade`
         },
         {
-            output: { item: 'pneumaticcraft:charging_upgrade', count: 1 },
-            pedestalItems: [
-                { item: { item: 'pneumaticcraft:charging_module' } },
-                { item: { tag: 'forge:essences/air' } },
-                { item: { tag: 'forge:essences/air' } }
-            ],
-            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            output: 'pneumaticcraft:charging_upgrade',
+            inputs: ['pneumaticcraft:charging_module', '#forge:essences/air', '#forge:essences/air'],
+            reagents: ['pneumaticcraft:upgrade_matrix'],
             sourceCost: 0,
             id: `${id_prefix}charging_upgrade`
         },
         {
-            output: { item: 'pneumaticcraft:stomp_upgrade', count: 1 },
-            pedestalItems: [
-                { item: { tag: 'forge:storage_blocks/lead' } },
-                { item: { tag: 'forge:essences/earth' } },
-                { item: { tag: 'forge:essences/earth' } }
-            ],
-            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            output: 'pneumaticcraft:stomp_upgrade',
+            inputs: ['#forge:storage_blocks/lead', '#forge:essences/earth', '#forge:essences/earth'],
+            reagents: ['pneumaticcraft:upgrade_matrix'],
             sourceCost: 0,
             id: `${id_prefix}stomp_upgrade`
         },
         {
-            output: { item: 'pneumaticcraft:flippers_upgrade', count: 1 },
-            pedestalItems: [
-                { item: { item: 'thermal:diving_boots' } },
-                { item: { tag: 'forge:essences/water' } },
-                { item: { tag: 'forge:essences/water' } }
-            ],
-            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            output: 'pneumaticcraft:flippers_upgrade',
+            inputs: ['thermal:diving_boots', '#forge:essences/water', '#forge:essences/water'],
+            reagents: ['pneumaticcraft:upgrade_matrix'],
             sourceCost: 0,
             id: `${id_prefix}flippers_upgrade`
         },
         {
-            output: { item: 'pneumaticcraft:scuba_upgrade', count: 1 },
-            pedestalItems: [
-                { item: { item: 'thermal:diving_helmet' } },
-                { item: { tag: 'forge:essences/water' } },
-                { item: { tag: 'forge:essences/water' } }
-            ],
-            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            output: 'pneumaticcraft:scuba_upgrade',
+            inputs: ['thermal:diving_helmet', '#forge:essences/water', '#forge:essences/water'],
+            reagents: ['pneumaticcraft:upgrade_matrix'],
             sourceCost: 0,
             id: `${id_prefix}scuba_upgrade`
         },
         {
-            output: { item: 'pneumaticcraft:coordinate_tracker_upgrade', count: 1 },
-            pedestalItems: [
-                { item: { item: 'ars_nouveau:ritual_scrying' } },
-                { item: { tag: 'forge:essences/manipulation' } },
-                { item: { tag: 'forge:essences/manipulation' } }
-            ],
-            reagent: [{ item: 'pneumaticcraft:upgrade_matrix' }],
+            output: 'pneumaticcraft:coordinate_tracker_upgrade',
+            inputs: ['ars_nouveau:ritual_scrying', '#forge:essences/manipulation', '#forge:essences/manipulation'],
+            reagents: ['pneumaticcraft:upgrade_matrix'],
             sourceCost: 0,
             id: `${id_prefix}coordinate_tracker_upgrade`
         },
         {
-            output: { item: 'pneumaticcraft:pneumatic_helmet' },
-            pedestalItems: [
-                { item: { item: 'pneumaticcraft:module_expansion_card' } },
-                { item: { tag: 'forge:ingots/compressed_iron' } },
-                { item: { item: 'pneumaticcraft:air_canister' } },
-                { item: { tag: 'forge:ingots/compressed_iron' } },
-                { item: { item: 'pneumaticcraft:air_canister' } },
-                { item: { tag: 'forge:ingots/compressed_iron' } },
-                { item: { item: 'pneumaticcraft:air_canister' } },
-                { item: { tag: 'forge:ingots/compressed_iron' } }
+            output: 'pneumaticcraft:pneumatic_helmet',
+            inputs: [
+                'pneumaticcraft:module_expansion_card',
+                '#forge:ingots/compressed_iron',
+                'pneumaticcraft:air_canister',
+                '#forge:ingots/compressed_iron',
+                'pneumaticcraft:air_canister',
+                '#forge:ingots/compressed_iron',
+                'pneumaticcraft:air_canister',
+                '#forge:ingots/compressed_iron'
             ],
-            reagent: [
-                { item: 'pneumaticcraft:compressed_iron_helmet' },
-                { item: 'minecraft:diamond_helmet' },
-                { item: 'naturesaura:sky_helmet' },
-                { item: 'blue_skies:charoite_helmet' },
-                { item: 'twilightforest:knightmetal_helmet' },
-                { item: 'twilightforest:steeleaf_helmet' }
+            reagents: [
+                'pneumaticcraft:compressed_iron_helmet',
+                'minecraft:diamond_helmet',
+                'naturesaura:sky_helmet',
+                'blue_skies:charoite_helmet',
+                'twilightforest:knightmetal_helmet',
+                'twilightforest:steeleaf_helmet'
             ],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `${id_prefix}pneumatic_helmet`
         },
         {
-            output: { item: 'pneumaticcraft:pneumatic_chestplate' },
-            pedestalItems: [
-                { item: { item: 'pneumaticcraft:module_expansion_card' } },
-                { item: { tag: 'forge:ingots/compressed_iron' } },
-                { item: { item: 'pneumaticcraft:air_canister' } },
-                { item: { tag: 'forge:ingots/compressed_iron' } },
-                { item: { item: 'pneumaticcraft:air_canister' } },
-                { item: { tag: 'forge:ingots/compressed_iron' } },
-                { item: { item: 'pneumaticcraft:air_canister' } },
-                { item: { tag: 'forge:ingots/compressed_iron' } }
+            output: 'pneumaticcraft:pneumatic_chestplate',
+            inputs: [
+                'pneumaticcraft:module_expansion_card',
+                '#forge:ingots/compressed_iron',
+                'pneumaticcraft:air_canister',
+                '#forge:ingots/compressed_iron',
+                'pneumaticcraft:air_canister',
+                '#forge:ingots/compressed_iron',
+                'pneumaticcraft:air_canister',
+                '#forge:ingots/compressed_iron'
             ],
-            reagent: [
-                { item: 'pneumaticcraft:compressed_iron_chestplate' },
-                { item: 'minecraft:diamond_chestplate' },
-                { item: 'naturesaura:sky_chest' },
-                { item: 'blue_skies:charoite_chestplate' },
-                { item: 'twilightforest:knightmetal_chestplate' },
-                { item: 'twilightforest:steeleaf_chestplate' }
+            reagents: [
+                'pneumaticcraft:compressed_iron_chestplate',
+                'minecraft:diamond_chestplate',
+                'naturesaura:sky_chest',
+                'blue_skies:charoite_chestplate',
+                'twilightforest:knightmetal_chestplate',
+                'twilightforest:steeleaf_chestplate'
             ],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `${id_prefix}pneumatic_chestplate`
         },
         {
-            output: { item: 'pneumaticcraft:pneumatic_leggings' },
-            pedestalItems: [
-                { item: { item: 'pneumaticcraft:module_expansion_card' } },
-                { item: { tag: 'forge:ingots/compressed_iron' } },
-                { item: { item: 'pneumaticcraft:air_canister' } },
-                { item: { tag: 'forge:ingots/compressed_iron' } },
-                { item: { item: 'pneumaticcraft:air_canister' } },
-                { item: { tag: 'forge:ingots/compressed_iron' } },
-                { item: { item: 'pneumaticcraft:air_canister' } },
-                { item: { tag: 'forge:ingots/compressed_iron' } }
+            output: 'pneumaticcraft:pneumatic_leggings',
+            inputs: [
+                'pneumaticcraft:module_expansion_card',
+                '#forge:ingots/compressed_iron',
+                'pneumaticcraft:air_canister',
+                '#forge:ingots/compressed_iron',
+                'pneumaticcraft:air_canister',
+                '#forge:ingots/compressed_iron',
+                'pneumaticcraft:air_canister',
+                '#forge:ingots/compressed_iron'
             ],
-            reagent: [
-                { item: 'pneumaticcraft:compressed_iron_leggings' },
-                { item: 'minecraft:diamond_leggings' },
-                { item: 'naturesaura:sky_pants' },
-                { item: 'blue_skies:charoite_leggings' },
-                { item: 'twilightforest:knightmetal_leggings' },
-                { item: 'twilightforest:steeleaf_leggings' }
+            reagents: [
+                'pneumaticcraft:compressed_iron_leggings',
+                'minecraft:diamond_leggings',
+                'naturesaura:sky_pants',
+                'blue_skies:charoite_leggings',
+                'twilightforest:knightmetal_leggings',
+                'twilightforest:steeleaf_leggings'
             ],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `${id_prefix}pneumatic_leggings`
         },
         {
-            output: { item: 'pneumaticcraft:pneumatic_boots' },
-            pedestalItems: [
-                { item: { item: 'pneumaticcraft:module_expansion_card' } },
-                { item: { tag: 'forge:ingots/compressed_iron' } },
-                { item: { item: 'pneumaticcraft:air_canister' } },
-                { item: { tag: 'forge:ingots/compressed_iron' } },
-                { item: { item: 'pneumaticcraft:air_canister' } },
-                { item: { tag: 'forge:ingots/compressed_iron' } },
-                { item: { item: 'pneumaticcraft:air_canister' } },
-                { item: { tag: 'forge:ingots/compressed_iron' } }
+            output: 'pneumaticcraft:pneumatic_boots',
+            inputs: [
+                'pneumaticcraft:module_expansion_card',
+                '#forge:ingots/compressed_iron',
+                'pneumaticcraft:air_canister',
+                '#forge:ingots/compressed_iron',
+                'pneumaticcraft:air_canister',
+                '#forge:ingots/compressed_iron',
+                'pneumaticcraft:air_canister',
+                '#forge:ingots/compressed_iron'
             ],
-            reagent: [
-                { item: 'pneumaticcraft:compressed_iron_boots' },
-                { item: 'minecraft:diamond_boots' },
-                { item: 'naturesaura:sky_shoes' },
-                { item: 'blue_skies:charoite_boots' },
-                { item: 'twilightforest:knightmetal_boots' },
-                { item: 'twilightforest:steeleaf_boots' }
+            reagents: [
+                'pneumaticcraft:compressed_iron_boots',
+                'minecraft:diamond_boots',
+                'naturesaura:sky_shoes',
+                'blue_skies:charoite_boots',
+                'twilightforest:knightmetal_boots',
+                'twilightforest:steeleaf_boots'
             ],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `${id_prefix}pneumatic_boots`
         },
         {
-            output: { item: 'mininggadgets:mininggadget_simple' },
-            pedestalItems: [
-                { item: { tag: 'forge:gems/infused_diamond' } },
-                { item: { tag: 'forge:nuggets/silver' } },
-                { item: { item: 'powah:capacitor_niotic' } },
-                { item: { tag: 'forge:wooden_grip' } },
-                { item: { item: 'ars_nouveau:glyph_break' } },
-                { item: { item: 'immersiveengineering:component_electronic' } },
-                { item: { item: 'powah:capacitor_niotic' } },
-                { item: { tag: 'forge:nuggets/silver' } }
+            output: 'mininggadgets:mininggadget_simple',
+            inputs: [
+                '#forge:gems/infused_diamond',
+                '#forge:nuggets/silver',
+                'powah:capacitor_niotic',
+                '#forge:wooden_grip',
+                'ars_nouveau:glyph_break',
+                'immersiveengineering:component_electronic',
+                'powah:capacitor_niotic',
+                '#forge:nuggets/silver'
             ],
-            reagent: [{ item: 'ars_nouveau:wand' }],
+            reagents: ['ars_nouveau:wand'],
             sourceCost: 0,
             id: `${id_prefix}mininggadget_simple`
         },
         {
-            output: { item: 'mininggadgets:mininggadget_fancy' },
-            pedestalItems: [
-                { item: { tag: 'forge:gems/infused_diamond' } },
-                { item: { tag: 'forge:nuggets/gold' } },
-                { item: { item: 'powah:capacitor_niotic' } },
-                { item: { tag: 'forge:wooden_grip' } },
-                { item: { item: 'ars_nouveau:glyph_break' } },
-                { item: { item: 'immersiveengineering:component_electronic' } },
-                { item: { item: 'powah:capacitor_niotic' } },
-                { item: { tag: 'forge:nuggets/gold' } }
+            output: 'mininggadgets:mininggadget_fancy',
+            inputs: [
+                '#forge:gems/infused_diamond',
+                '#forge:nuggets/gold',
+                'powah:capacitor_niotic',
+                '#forge:wooden_grip',
+                'ars_nouveau:glyph_break',
+                'immersiveengineering:component_electronic',
+                'powah:capacitor_niotic',
+                '#forge:nuggets/gold'
             ],
-            reagent: [{ item: 'ars_nouveau:wand' }],
+            reagents: ['ars_nouveau:wand'],
             sourceCost: 0,
             id: `${id_prefix}mininggadget_fancy`
         },
         {
-            output: { item: 'mininggadgets:mininggadget' },
-            pedestalItems: [
-                { item: { tag: 'forge:gems/infused_diamond' } },
-                { item: { tag: 'forge:nuggets/electrum' } },
-                { item: { item: 'powah:capacitor_niotic' } },
-                { item: { tag: 'forge:wooden_grip' } },
-                { item: { item: 'ars_nouveau:glyph_break' } },
-                { item: { item: 'immersiveengineering:component_electronic' } },
-                { item: { item: 'powah:capacitor_niotic' } },
-                { item: { tag: 'forge:nuggets/electrum' } }
+            output: 'mininggadgets:mininggadget',
+            inputs: [
+                '#forge:gems/infused_diamond',
+                '#forge:nuggets/electrum',
+                'powah:capacitor_niotic',
+                '#forge:wooden_grip',
+                'ars_nouveau:glyph_break',
+                'immersiveengineering:component_electronic',
+                'powah:capacitor_niotic',
+                '#forge:nuggets/electrum'
             ],
-            reagent: [{ item: 'ars_nouveau:wand' }],
+            reagents: ['ars_nouveau:wand'],
             sourceCost: 0,
             id: `${id_prefix}mininggadget`
         },
         {
-            output: { item: 'ars_nouveau:summon_focus' },
-            pedestalItems: [
-                { item: { item: 'ars_elemental:mark_of_mastery' } },
-                { item: { tag: 'forge:wires/electrum' } },
-                { item: { tag: 'forge:wires/electrum' } },
-                { item: { item: 'blue_skies:summoning_tome' } },
-                { item: { tag: 'forge:wires/electrum' } },
-                { item: { tag: 'forge:wires/electrum' } }
+            output: 'ars_nouveau:summon_focus',
+            inputs: [
+                'ars_elemental:mark_of_mastery',
+                '#forge:wires/electrum',
+                '#forge:wires/electrum',
+                'blue_skies:summoning_tome',
+                '#forge:wires/electrum',
+                '#forge:wires/electrum'
             ],
-            reagent: [{ tag: 'forge:storage_blocks/source' }],
+            reagents: ['#forge:storage_blocks/source'],
             sourceCost: 10000,
             id: 'ars_nouveau:summon_focus'
         },
         {
-            output: { item: 'thermal:upgrade_augment_2', nbt: '{AugmentData:{BaseMod:4,Type:"Upgrade"}}' },
-            pedestalItems: [
-                { item: { tag: 'forge:ingots/energized_steel' } },
-                { item: { tag: 'forge:ingots/energized_steel' } },
-                { item: { tag: 'forge:ingots/energized_steel' } },
-                { item: { tag: 'forge:gems/infused_diamond' } },
-                { item: { tag: 'forge:gems/infused_diamond' } },
-                { item: { tag: 'forge:gems/infused_diamond' } }
+            output: Item.of('thermal:upgrade_augment_2', '{AugmentData:{BaseMod:4,Type:"Upgrade"}}'),
+            inputs: [
+                '#forge:ingots/energized_steel',
+                '#forge:ingots/energized_steel',
+                '#forge:ingots/energized_steel',
+                '#forge:gems/infused_diamond',
+                '#forge:gems/infused_diamond',
+                '#forge:gems/infused_diamond'
             ],
-            reagent: [{ item: 'thermal:upgrade_augment_1' }],
+            reagents: ['thermal:upgrade_augment_1'],
             sourceCost: 5000,
             id: `${id_prefix}upgrade_augment_2`
         },
         {
-            output: { item: 'thermal:upgrade_augment_3', nbt: '{AugmentData:{BaseMod:8,Type:"Upgrade"}}' },
-            pedestalItems: [
-                { item: { item: 'ars_elemental:mark_of_mastery' } },
-                { item: { tag: 'forge:gems/spirited' } },
-                { item: { tag: 'forge:gems/spirited' } },
-                { item: { item: 'pneumaticcraft:printed_circuit_board' } },
-                { item: { tag: 'forge:gems/spirited' } },
-                { item: { tag: 'forge:gems/spirited' } }
+            output: Item.of('thermal:upgrade_augment_3', '{AugmentData:{BaseMod:8,Type:"Upgrade"}}'),
+            inputs: [
+                'ars_elemental:mark_of_mastery',
+                '#forge:gems/spirited',
+                '#forge:gems/spirited',
+                'pneumaticcraft:printed_circuit_board',
+                '#forge:gems/spirited',
+                '#forge:gems/spirited'
             ],
-            reagent: [{ item: 'thermal:upgrade_augment_2' }],
+            reagents: ['thermal:upgrade_augment_2'],
             sourceCost: 10000,
             id: `${id_prefix}upgrade_augment_3`
         },
         {
-            output: { item: 'thermal:dynamo_disenchantment' },
-            pedestalItems: [
-                { item: { item: 'immersiveengineering:coil_mv' } },
-                { item: { tag: 'forge:gems/source' } },
-                { item: { item: 'quark:rainbow_rune' } },
-                { item: { item: 'minecraft:lodestone' } },
-                { item: { item: 'powah:capacitor_niotic' } },
-                { item: { item: 'minecraft:lodestone' } },
-                { item: { item: 'quark:rainbow_rune' } },
-                { item: { tag: 'forge:gems/source' } }
+            output: 'thermal:dynamo_disenchantment',
+            inputs: [
+                'immersiveengineering:coil_mv',
+                '#forge:gems/source',
+                'quark:rainbow_rune',
+                'minecraft:lodestone',
+                'powah:capacitor_niotic',
+                'minecraft:lodestone',
+                'quark:rainbow_rune',
+                '#forge:gems/source'
             ],
-            reagent: [{ item: 'thermal:energy_cell_frame' }],
+            reagents: ['thermal:energy_cell_frame'],
             sourceCost: 10000,
             id: `${id_prefix}dynamo_disenchantment`
+        },
+        {
+            output: 'ars_elemental:thread_summon',
+            inputs: [
+                '#forge:essences/conjuration',
+                '#forge:essences/conjuration',
+                'blue_skies:summoning_tome',
+                '#ars_nouveau:wilden_drop',
+                '#ars_nouveau:wilden_drop'
+            ],
+            reagents: ['ars_nouveau:blank_thread'],
+            sourceCost: 0,
+            id: `ars_elemental:thread_summon`
+        },
+        {
+            output: Item.of(
+                'immersiveengineering:revolver',
+                '{perks:{cooldown:0.75d,luck:1.0d,noise:0.75d},upgrades:{}}'
+            ),
+            inputs: [
+                '#forge:ingots/infused_iron',
+                '#forge:ingots/infused_iron',
+                '#forge:ingots/infused_iron',
+                'naturesaura:calling_spirit',
+                '#forge:storage_blocks/lapis',
+                '#forge:storage_blocks/lapis',
+                '#forge:storage_blocks/source',
+                '#forge:storage_blocks/source'
+            ],
+            reagents: ['immersiveengineering:revolver'],
+            sourceCost: 2000,
+            id: `${id_prefix}revolver_tier_1`
+        },
+        {
+            output: Item.of(
+                'immersiveengineering:revolver',
+                '{perks:{cooldown:0.5d,luck:2.0d,noise:0.5d},upgrades:{}}'
+            ),
+            inputs: [
+                '#forge:ingots/skies',
+                '#forge:ingots/skies',
+                '#forge:ingots/skies',
+                'kubejs:spirit_of_devotion',
+                '#forge:storage_blocks/lapis',
+                '#forge:storage_blocks/lapis',
+                '#forge:storage_blocks/source',
+                '#forge:storage_blocks/source'
+            ],
+            reagents: ['immersiveengineering:revolver'],
+            sourceCost: 5000,
+            id: `${id_prefix}revolver_tier_2`
+        },
+        {
+            output: 'ae2:quantum_link',
+            inputs: [
+                'ae2:quartz_glass',
+                'ae2:fluix_pearl',
+                'ae2:quartz_glass',
+                'ae2:fluix_pearl',
+                'ae2:quartz_glass',
+                'ae2:fluix_pearl',
+                'ae2:quartz_glass',
+                'ae2:fluix_pearl'
+            ],
+            reagents: ['occultism:dimensional_matrix'],
+            sourceCost: 10000,
+            id: `${id_prefix}quantum_link`
         }
     ];
 
-    const gunparts = ['barrel', 'hammer', 'drum'];
+    const gem_types = [
+        { mod: 'minecraft', material: 'diamond', essence: 'abjuration' },
+        { mod: 'blue_skies', material: 'pyrope', essence: 'fire' },
+        { mod: 'blue_skies', material: 'aquite', essence: 'water' },
+        { mod: 'blue_skies', material: 'diopside', essence: 'earth' },
+        { mod: 'blue_skies', material: 'charoite', essence: 'air' }
+    ];
 
-    gunparts.forEach((gunpart) => {
-        recipes.push(
-            {
-                output: {
-                    item: `immersiveengineering:gunpart_${gunpart}`,
-                    nbt: '{generatePerks:1b,perks:{luck:0.50d}}'
-                },
-                pedestalItems: [
-                    { item: { tag: 'forge:essences/earth' } },
-                    { item: { tag: 'forge:essences/earth' } },
-                    { item: { tag: 'forge:essences/earth' } },
-                    { item: { tag: 'forge:storage_blocks/diamond' } },
-                    { item: { tag: 'forge:storage_blocks/lapis' } },
-                    { item: { tag: 'forge:storage_blocks/lapis' } },
-                    { item: { tag: 'forge:storage_blocks/source' } },
-                    { item: { tag: 'forge:storage_blocks/source' } }
-                ],
-                reagent: [{ item: `immersiveengineering:gunpart_${gunpart}` }],
-                sourceCost: 0,
-                id: `${id_prefix}${gunpart}_luck`
-            },
-            {
-                output: {
-                    item: `immersiveengineering:gunpart_${gunpart}`,
-                    nbt: '{generatePerks:1b,perks:{cooldown:0.85d}}'
-                },
-                pedestalItems: [
-                    { item: { tag: 'forge:essences/air' } },
-                    { item: { tag: 'forge:essences/air' } },
-                    { item: { tag: 'forge:essences/air' } },
-                    { item: { tag: 'forge:storage_blocks/diamond' } },
-                    { item: { tag: 'forge:storage_blocks/lapis' } },
-                    { item: { tag: 'forge:storage_blocks/lapis' } },
-                    { item: { tag: 'forge:storage_blocks/source' } },
-                    { item: { tag: 'forge:storage_blocks/source' } }
-                ],
-                reagent: [{ item: `immersiveengineering:gunpart_${gunpart}` }],
-                sourceCost: 0,
-                id: `${id_prefix}${gunpart}_cooldown`
-            },
-            {
-                output: {
-                    item: `immersiveengineering:gunpart_${gunpart}`,
-                    nbt: '{generatePerks:1b,perks:{noise:0.50d}}'
-                },
-                pedestalItems: [
-                    { item: { tag: 'forge:essences/water' } },
-                    { item: { tag: 'forge:essences/water' } },
-                    { item: { tag: 'forge:essences/water' } },
-                    { item: { tag: 'forge:wool' } },
-                    { item: { tag: 'forge:storage_blocks/lapis' } },
-                    { item: { tag: 'forge:storage_blocks/lapis' } },
-                    { item: { tag: 'forge:storage_blocks/source' } },
-                    { item: { tag: 'forge:storage_blocks/source' } }
-                ],
-                reagent: [{ item: `immersiveengineering:gunpart_${gunpart}` }],
-                sourceCost: 0,
-                id: `${id_prefix}${gunpart}_noise`
+    const equipment_types = [
+        { slot: 'helmet', count: 5 },
+        { slot: 'chestplate', count: 8 },
+        { slot: 'leggings', count: 7 },
+        { slot: 'boots', count: 4 },
+        { slot: 'sword', count: 2 },
+        { slot: 'pickaxe', count: 3 },
+        { slot: 'axe', count: 3 },
+        { slot: 'shovel', count: 1 },
+        { slot: 'hoe', count: 2 }
+    ];
+
+    gem_types.forEach((gem_type) => {
+        equipment_types.forEach((equipment_type) => {
+            let inputs = [`#forge:essences/${gem_type.essence}`];
+
+            for (let i = 0; i < equipment_type.count; i++) {
+                inputs.push(`#forge:gems/${gem_type.material}`);
             }
-        );
+
+            recipes.push({
+                output: `${gem_type.mod}:${gem_type.material}_${equipment_type.slot}`,
+                inputs: inputs,
+                reagents: [`minecraft:golden_${equipment_type.slot}`],
+                keepNbtOfReagent: true,
+                sourceCost: 0,
+                id: `${id_prefix}${gem_type.material}_${equipment_type.slot}`
+            });
+        });
     });
 
     recipes.forEach((recipe) => {
         recipe.type = 'ars_nouveau:enchanting_apparatus';
+        recipe.output = Item.of(recipe.output).toJson();
+        recipe.pedestalItems = recipe.inputs.map((input) => ({ item: Ingredient.of(input).toJson() }));
+        recipe.reagent = recipe.reagents.map((reagent) => Ingredient.of(reagent).toJson());
+
         event.custom(recipe).id(recipe.id);
     });
 });

@@ -41,6 +41,22 @@ ServerEvents.recipes((event) => {
             aura: 600,
             time: 20,
             id: `${id_prefix}bamboo`
+        },
+        {
+            output: 'minecraft:prismarine_crystals',
+            input: 'ae2:charged_certus_quartz_crystal',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 18000,
+            time: 60,
+            id: `naturesaura:altar/prismarine_crystal`
+        },
+        {
+            output: 'minecraft:prismarine_shard',
+            input: 'ae2:certus_quartz_crystal',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 18000,
+            time: 60,
+            id: `naturesaura:altar/prismarine`
         }
     ];
 

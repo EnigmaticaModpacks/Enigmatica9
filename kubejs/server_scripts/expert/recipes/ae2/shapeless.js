@@ -66,6 +66,46 @@ ServerEvents.recipes((event) => {
             output: 'ae2:crafting_accelerator',
             inputs: ['ae2:crafting_unit', 'ars_nouveau:wixie_charm'],
             id: `ae2:network/crafting/cpu_crafting_accelerator`
+        },
+        {
+            output: 'ae2:network_tool',
+            inputs: ['#ae2:quartz_wrench', '#ae2:illuminated_panel', 'quark:rainbow_rune'],
+            id: `ae2:tools/network_tool`
+        },
+        {
+            output: 'ae2:wireless_access_point',
+            inputs: ['ae2:wireless_receiver', 'pneumaticcraft:logistics_core', 'ae2:fluix_glass_cable'],
+            id: `ae2:network/wireless_access_point`
+        },
+        {
+            output: 'ae2:basic_card',
+            inputs: ['modularrouters:augment_core', '#forge:gems/sunstone_crystal', 'powah:dielectric_paste'],
+            id: `ae2:materials/basiccard`
+        },
+        {
+            output: 'ae2:advanced_card',
+            inputs: ['modularrouters:augment_core', '#forge:gems/moonstone_crystal', 'powah:dielectric_paste'],
+            id: `ae2:materials/advancedcard`
+        },
+        {
+            output: 'ae2:void_card',
+            inputs: ['ae2:basic_card', 'pneumaticcraft:logistics_core', '#forge:essences/fire'],
+            id: `ae2:materials/cardvoid`
+        },
+        {
+            output: 'ae2:equal_distribution_card',
+            inputs: ['ae2:advanced_card', 'pneumaticcraft:logistics_core', '#forge:essences/air'],
+            id: `ae2:materials/carddistribution`
+        },
+        {
+            output: 'ae2:pattern_encoding_terminal',
+            inputs: ['ae2:crafting_terminal', 'pneumaticcraft:logistics_core', 'ae2:blank_pattern'],
+            id: `ae2:network/parts/terminals_pattern_encoding`
+        },
+        {
+            output: 'ae2:pattern_access_terminal',
+            inputs: ['#ae2:illuminated_panel', 'pneumaticcraft:logistics_core', '#ae2:pattern_provider'],
+            id: `ae2:network/parts/terminals_pattern_access`
         }
     ];
 

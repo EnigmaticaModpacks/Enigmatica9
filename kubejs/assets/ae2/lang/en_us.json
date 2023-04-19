@@ -1,0 +1,9 @@
+{
+	"item.ae2.printed_silicon": "Printed Silicon",
+	"item.ae2.printed_logic_processor": "Printed Logic Circuit",
+	"item.ae2.printed_calculation_processor": "Printed Calculation Circuit",
+	"item.ae2.printed_engineering_processor": "Printed Engineering Circuit",
+	"item.ae2.logic_processor": "Logic Processor",
+	"item.ae2.calculation_processor": "Calculation Processor",
+	"item.ae2.engineering_processor": "Engineering Processor"
+}

@@ -47,7 +47,7 @@ ServerEvents.recipes((event) => {
         {
             filter: { mod: 'powah' },
             to_replace: 'powah:energy_cable_blazing',
-            replace_with: 'powah:energy_cable_basic'
+            replace_with: 'powah:capacitor_basic_large'
         },
         {
             filter: { mod: 'powah' },
@@ -103,6 +103,21 @@ ServerEvents.recipes((event) => {
             filter: { mod: 'spirit' },
             to_replace: 'minecraft:netherrack',
             replace_with: 'naturesaura:ancient_stick'
+        },
+        {
+            filter: {},
+            to_replace: 'mekanism:energy_tablet',
+            replace_with: 'powah:capacitor_basic_large'
+        },
+        {
+            filter: {},
+            to_replace: 'mekanism:jetpack',
+            replace_with: 'pneumaticcraft:jet_boots_upgrade_5'
+        },
+        {
+            filter: {},
+            to_replace: 'mekanism:free_runners',
+            replace_with: 'pneumaticcraft:speed_upgrade'
         }
     ];
 

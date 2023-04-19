@@ -1,0 +1,11 @@
+{
+	"gas.mekanism.polonium": "Polonium",
+	"gas.mekanism.antimatter": "Antimatter",
+	"item.mekanism.pellet_polonium": "Polonium",
+	"item.mekanism.pellet_antimatter": "Antimatter Pellet",
+	"block.mekanism.antiprotonic_nucleosynthesizer": "Antiprotonic Nucleosynthesizer",
+	"container.mekanism.antiprotonic_nucleosynthesizer": "Antiprotonic Nucleosynthesizer",
+	"sound_event.mekanism.tile.machine.antiprotonic_nucleosynthesizer": "Nucleosynthesizer hums",
+	"advancements.mekanism.nucleosynthesizer.description": "Craft an Antiprotonic Nucleosynthesizer and don't worry if you can't pronounce the name",
+	"description.mekanism.antiprotonic_nucleosynthesizer": "A machine which uses bits of antimatter and mass amounts of energy to atomically transmute various resources."
+}

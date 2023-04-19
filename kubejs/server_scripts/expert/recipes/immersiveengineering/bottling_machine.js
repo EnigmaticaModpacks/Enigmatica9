@@ -50,6 +50,27 @@ ServerEvents.recipes((event) => {
             ],
             fluid: { amount: 2000, tag: 'forge:phenolic_resin' },
             id: `${id_prefix}elytra`
+        },
+        {
+            results: [{ item: 'ae2:printed_silicon', count: 4 }],
+            inputs: [
+                { base_ingredient: { item: 'quark:rainbow_rune' }, count: 4 },
+                { base_ingredient: { item: 'kubejs:dimensional_storage_crystal' }, count: 2 }
+            ],
+            fluid: { amount: 400, tag: 'forge:source' },
+            id: `${id_prefix}printed_silicon`
+        },
+        {
+            results: [{ item: 'ars_nouveau:source_gem' }, { item: 'thermal:chiller_ball_cast' }],
+            inputs: [{ item: 'thermal:chiller_ball_cast' }],
+            fluid: { amount: 250, tag: 'forge:source' },
+            id: `${id_prefix}source_gem`
+        },
+        {
+            results: [{ item: 'ars_nouveau:source_gem_block' }, { item: 'thermal:machine_frame' }],
+            inputs: [{ item: 'thermal:machine_frame' }],
+            fluid: { amount: 1000, tag: 'forge:source' },
+            id: `${id_prefix}source_gem_block`
         }
     ];
 

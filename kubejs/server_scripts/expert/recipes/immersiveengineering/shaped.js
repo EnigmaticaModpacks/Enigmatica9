@@ -326,13 +326,11 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'immersiveengineering:furnace_heater',
-            pattern: ['AEA', 'CDC', 'ABA'],
+            pattern: ['ACA', 'ABA'],
             key: {
-                A: '#forge:plates/obsidian',
+                A: '#forge:plates/aluminum',
                 B: 'naturesaura:furnace_heater',
-                C: 'powah:capacitor_basic_large',
-                D: 'thermal:machine_frame',
-                E: 'powah:energy_cable_basic'
+                C: 'thermal:machine_frame'
             },
             id: `immersiveengineering:crafting/furnace_heater`
         },
@@ -350,7 +348,7 @@ ServerEvents.recipes((event) => {
             output: 'immersiveengineering:fluid_pump',
             pattern: [' A ', 'BCB', 'BDB'],
             key: {
-                A: 'powah:energy_cable_basic',
+                A: 'powah:capacitor_basic_large',
                 B: '#forge:plates/aluminum',
                 C: 'createaddition:electric_motor',
                 D: 'create:mechanical_pump'
@@ -463,6 +461,24 @@ ServerEvents.recipes((event) => {
                 C: '#forge:essences/air'
             },
             id: `immersiveengineering:crafting/toolupgrade_railgun_capacitors`
+        },
+        {
+            output: '4x immersiveengineering:fluid_pipe',
+            pattern: ['ABA'],
+            key: {
+                A: '#forge:plates/aluminum',
+                B: '#forge:ingots/aluminum'
+            },
+            id: `immersiveengineering:crafting/fluid_pipe`
+        },
+        {
+            output: '4x immersiveengineering:fluid_pipe',
+            pattern: ['A', 'B', 'A'],
+            key: {
+                A: '#forge:plates/aluminum',
+                B: '#forge:ingots/aluminum'
+            },
+            id: `${id_prefix}fluid_pipe_vertical`
         }
     ];
 
