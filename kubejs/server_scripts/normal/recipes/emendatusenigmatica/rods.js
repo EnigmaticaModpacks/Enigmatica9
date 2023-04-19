@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
         if (Item.exists(`emendatusenigmatica:${metal}_rod`)) {
             recipes.push({
                 output: Item.of(`emendatusenigmatica:${metal}_rod`, 4),
-                pattern: [' A ', ' A '],
+                pattern: ['A', 'A'],
                 key: {
                     A: `#forge:ingots/${metal}`
                 },

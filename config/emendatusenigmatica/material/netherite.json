@@ -8,7 +8,8 @@
         "nugget",
         "crushed_ore",
         "dust",
-        "gear"
+        "gear",
+        "plate"
     ],
     "properties": {
         "materialType": "metal",
