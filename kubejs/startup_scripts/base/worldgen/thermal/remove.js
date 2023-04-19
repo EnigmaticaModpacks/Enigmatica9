@@ -15,16 +15,14 @@ WorldgenEvents.remove((event) => {
     'surface_structures'
     */
 
-    event.removeFeatureById('underground_ores', 
-        [
-            'thermal:lead_ore',
-            'thermal:nickel_ore',
-            'thermal:niter_ore',
-            'thermal:cinnabar_ore',
-            'thermal:silver_ore',
-            'thermal:tin_ore',
-            'thermal:sulfur_ore',
-            'thermal:apatite_ore'
-        ]
-    );
+    event.removeFeatureById('underground_ores', [
+        'thermal:lead_ore',
+        'thermal:nickel_ore',
+        'thermal:niter_ore',
+        'thermal:cinnabar_ore',
+        'thermal:silver_ore',
+        'thermal:tin_ore',
+        'thermal:sulfur_ore',
+        'thermal:apatite_ore'
+    ]);
 });

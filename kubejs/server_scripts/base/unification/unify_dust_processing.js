@@ -1,6 +1,6 @@
 ServerEvents.recipes((event) => {
-    let metals = Object.keys(metal_properties)
-    let gems = Object.keys(gem_properties)
+    let metals = Object.keys(metal_properties);
+    let gems = Object.keys(gem_properties);
     let exceptions = {
         // Gems
         coal: {
@@ -89,24 +89,24 @@ ServerEvents.recipes((event) => {
         aluminum: {
             immersiveengineering: true
         }
-    }
+    };
 
     metals.forEach((metal) => {
         if (Item.exists(`emendatusenigmatica:${metal}_dust`)) {
-            recipetypes_crushing(event, {name: metal, type: "metal"}, exceptions)
+            recipetypes_crushing(event, { name: metal, type: 'metal' }, exceptions);
         }
-    })
+    });
 
     gems.forEach((gem) => {
         if (Item.exists(`emendatusenigmatica:${gem}_dust`)) {
-            recipetypes_crushing(event, {name: gem, type: "gem"}, exceptions)
+            recipetypes_crushing(event, { name: gem, type: 'gem' }, exceptions);
         }
-    })
-})
+    });
+});
 
 // Functions
 function recipetypes_crushing(event, material, exceptions) {
-    const id_prefix = 'enigmatica:unification/dust_processing/'
+    const id_prefix = 'enigmatica:unification/dust_processing/';
     let recipe = {
         outputs: { primary: { item: `emendatusenigmatica:${material.name}_dust`, count: 1, chance: 1 } },
         input: '',
@@ -116,20 +116,20 @@ function recipetypes_crushing(event, material, exceptions) {
         ignore_occultism_multiplier: true,
         id_suffix: '',
         exceptions: exceptions[material.name]
-    }
+    };
 
     if (!recipe.exceptions) recipe.exceptions = {};
 
-    if (material.type == "gem") {
-        recipe.input = `#forge:gems/${material.name}`
-        recipe.id_suffix = `gems/${material.name}_dust`
-    } else if (material.type == "metal") {
-        recipe.input = `#forge:ingots/${material.name}`
-        recipe.id_suffix = `metals/${material.name}_dust`
+    if (material.type == 'gem') {
+        recipe.input = `#forge:gems/${material.name}`;
+        recipe.id_suffix = `gems/${material.name}_dust`;
+    } else if (material.type == 'metal') {
+        recipe.input = `#forge:ingots/${material.name}`;
+        recipe.id_suffix = `metals/${material.name}_dust`;
     }
 
     // Occultism
-    if(!recipe.exceptions.occultism && !material.type == "metal") {
+    if (!recipe.exceptions.occultism && !material.type == 'metal') {
         event
             .custom({
                 type: 'occultism:crushing',
@@ -141,7 +141,7 @@ function recipetypes_crushing(event, material, exceptions) {
             .id(`${id_prefix}occultism_crushing/${recipe.id_suffix}`);
     }
     // Mekanism
-    if(!recipe.exceptions.mekanism) {
+    if (!recipe.exceptions.mekanism) {
         event
             .custom({
                 type: 'mekanism:crushing',
@@ -151,7 +151,7 @@ function recipetypes_crushing(event, material, exceptions) {
             .id(`${id_prefix}mekanism_crushing/${recipe.id_suffix}`);
     }
     // Immersive Engineering
-    if(!recipe.exceptions.immersiveengineering) {
+    if (!recipe.exceptions.immersiveengineering) {
         event
             .custom({
                 type: 'immersiveengineering:crusher',
@@ -163,7 +163,7 @@ function recipetypes_crushing(event, material, exceptions) {
             .id(`${id_prefix}immersiveengineering_crusher/${recipe.id_suffix}`);
     }
     // Ars Nouveau
-    if(!recipe.exceptions.arsnouveau) {
+    if (!recipe.exceptions.arsnouveau) {
         event
             .custom({
                 type: 'ars_nouveau:crush',
@@ -173,7 +173,7 @@ function recipetypes_crushing(event, material, exceptions) {
             .id(`${id_prefix}ars_nouveau_crushing/${recipe.id_suffix}`);
     }
     // Create
-    if(!recipe.exceptions.create) {
+    if (!recipe.exceptions.create) {
         event
             .custom({
                 type: 'create:milling',
@@ -183,4 +183,4 @@ function recipetypes_crushing(event, material, exceptions) {
             })
             .id(`${id_prefix}create_milling/${recipe.id_suffix}`);
     }
-};
+}

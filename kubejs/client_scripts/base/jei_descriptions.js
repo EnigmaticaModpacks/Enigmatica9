@@ -360,17 +360,15 @@ JEIEvents.information((event) => {
         },
         {
             items: [
-                "hexerei:sage_seed",
-                "immersiveengineering:seed",
-                "occultism:datura_seeds",
-                "sushigocrafting:cucumber_seeds",
-                "sushigocrafting:soy_seeds",
-                "sushigocrafting:wasabi_seeds",
-                "sushigocrafting:sesame_seeds"
+                'hexerei:sage_seed',
+                'immersiveengineering:seed',
+                'occultism:datura_seeds',
+                'sushigocrafting:cucumber_seeds',
+                'sushigocrafting:soy_seeds',
+                'sushigocrafting:wasabi_seeds',
+                'sushigocrafting:sesame_seeds'
             ],
-            text: [
-                "Purchase from the Market block."
-            ]
+            text: ['Purchase from the Market block.']
         }
     ];
 

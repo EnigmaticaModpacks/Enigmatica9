@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
     if (global.isNormalMode == false) {
         return;
     }
-    
+
     const id_prefix = 'enigmatica:normal/enigmatica/shapeless/';
 
     const recipes = [

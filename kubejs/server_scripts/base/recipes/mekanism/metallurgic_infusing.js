@@ -16,10 +16,10 @@ ServerEvents.recipes((event) => {
         // },
         {
             input: { tag: 'forge:dusts/copper' },
-            chemicalInput: { amount: 10, tag: "mekanism:gold"},
+            chemicalInput: { amount: 10, tag: 'mekanism:gold' },
             output: Item.of('emendatusenigmatica:rose_gold_dust'),
             id: `${id_prefix}rose_gold_alloy`
-        }//,
+        } //,
         // {
         //     input: { tag: 'forge:dusts/copper' },
         //     chemicalInput: { amount: 10, tag: "emendatusenigmatica:zinc"},
@@ -35,9 +35,9 @@ ServerEvents.recipes((event) => {
     ];
 
     recipes.forEach((recipe) => {
-        recipe.type = "mekanism:metallurgic_infusing";
+        recipe.type = 'mekanism:metallurgic_infusing';
         recipe.itemInput = { ingredient: recipe.input };
-        recipe.output = recipe.output.toJson()
+        recipe.output = recipe.output.toJson();
         event.custom(recipe).id(recipe.id);
     });
 });

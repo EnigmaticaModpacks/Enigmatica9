@@ -17,11 +17,13 @@ ServerEvents.recipes((event) => {
     ];
 
     recipes.forEach((recipe) => {
-        event.custom({
-            type: 'create:milling',
-            ingredients: [Ingredient.of(recipe.input).toJson()],
-            results: recipe.outputs.map((output) => Ingredient.of(output).toJson()),
-            processingTime: recipe.duration
-        }).id(recipe.id);
+        event
+            .custom({
+                type: 'create:milling',
+                ingredients: [Ingredient.of(recipe.input).toJson()],
+                results: recipe.outputs.map((output) => Ingredient.of(output).toJson()),
+                processingTime: recipe.duration
+            })
+            .id(recipe.id);
     });
 });

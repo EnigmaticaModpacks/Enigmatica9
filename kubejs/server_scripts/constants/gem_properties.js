@@ -47,17 +47,17 @@
 //                 gas: 'mekanism:oxygen',
 //                 amount: 1
 //             },
-//             injectionGas: {                              
+//             injectionGas: {
 //                 gas: 'mekanism:hydrofluoric_acid',
 //                 amount: 1
-//             }    
+//             }
 //             // Note: If you want to disable one of the mek processing types, just remove the field!
 //         }
 //     }
 // },
 
 function getItemFromTag(tag) {
-    return AlmostUnified.getPreferredItemForTag(tag).getId()
+    return AlmostUnified.getPreferredItemForTag(tag).getId();
 }
 
 const gem_properties = {
@@ -319,7 +319,7 @@ const gem_properties = {
         }
     },
     sulfur: {
-        meltingPoint: 115,
+        meltingPoint: 115
         // oreProcessing: {
         //     output: {
         //         type: 'gem',
@@ -349,7 +349,7 @@ const gem_properties = {
         //     },
         //     occultism: {
         //         primaryCount: 12,
-        //         oreWeight:          
+        //         oreWeight:
         //     },
         //     mekanism: {
         //         enrichmentCount: 8,
@@ -410,7 +410,7 @@ const gem_properties = {
         }
     },
     fluorite: {
-        meltingPoint: 1418,
+        meltingPoint: 1418
         // oreProcessing: {
         //     output: {
         //         type: 'gem',
@@ -440,7 +440,7 @@ const gem_properties = {
         //     },
         //     occultism: {
         //         primaryCount: 10,
-        //         oreWeight:  
+        //         oreWeight:
         //     },
         //     mekanism: {
         //         enrichmentCount: 8,
@@ -458,7 +458,7 @@ const gem_properties = {
         // }
     },
     dimensional: {
-        meltingPoint: 1450,
+        meltingPoint: 1450
         // oreProcessing: {
         //     output: {
         //         type: 'dust',
@@ -496,7 +496,7 @@ const gem_properties = {
         // }
     },
     niter: {
-        meltingPoint: 334,
+        meltingPoint: 334
         // oreProcessing: {
         //     output: {
         //         type: 'gem',
@@ -534,7 +534,7 @@ const gem_properties = {
         // }
     },
     cinnabar: {
-        meltingPoint: 580//,
+        meltingPoint: 580 //,
         // oreProcessing: {
         //     output: {
         //         type: 'gem',
@@ -740,7 +740,7 @@ const gem_properties = {
         }
     },
     bitumen: {
-        meltingPoint: 115,
+        meltingPoint: 115
         // oreProcessing: {
         //     output: {
         //         type: 'gem',

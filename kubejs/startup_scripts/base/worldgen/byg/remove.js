@@ -15,17 +15,15 @@ WorldgenEvents.remove((event) => {
     'surface_structures'
     */
 
-    event.removeFeatureById('underground_ores', 
-        [
-            "byg:ore_gold_brimstone",
-            "byg:ore_gold_blue_netherrack",
-            "byg:ore_quartz_brimstone",
-            "byg:ore_quartz_blue_netherrack",
-            "byg:ore_anthracite",
-            "byg:ore_pendorite",
-            "byg:ore_emeraldite",
-            "byg:cryptic_redstone",
-            "byg:island_ametrine_clusters"
-        ]
-    );
+    event.removeFeatureById('underground_ores', [
+        'byg:ore_gold_brimstone',
+        'byg:ore_gold_blue_netherrack',
+        'byg:ore_quartz_brimstone',
+        'byg:ore_quartz_blue_netherrack',
+        'byg:ore_anthracite',
+        'byg:ore_pendorite',
+        'byg:ore_emeraldite',
+        'byg:cryptic_redstone',
+        'byg:island_ametrine_clusters'
+    ]);
 });

@@ -12,9 +12,9 @@ ServerEvents.recipes((event) => {
     ];
 
     recipes.forEach((recipe) => {
-        recipe.type = "immersiveengineering:coke_oven"
-        recipe.input = Ingredient.of(recipe.input).toJson()
-        recipe.result = Item.of(recipe.output).toJson()
+        recipe.type = 'immersiveengineering:coke_oven';
+        recipe.input = Ingredient.of(recipe.input).toJson();
+        recipe.result = Item.of(recipe.output).toJson();
         event.custom(recipe).id(recipe.id);
     });
 });

@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
     if (global.isNormalMode == false) {
         return;
     }
-    
+
     const recipes = [];
 
     let props = Object.keys(metal_properties);

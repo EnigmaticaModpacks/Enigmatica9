@@ -139,10 +139,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}signalum_ingot`
         },
         {
-            inputs: [
-                Ingredient.of('#forge:ingots/iron').toJson(),
-                Ingredient.of('#forge:gems/coal_coke').toJson()
-            ],
+            inputs: [Ingredient.of('#forge:ingots/iron').toJson(), Ingredient.of('#forge:gems/coal_coke').toJson()],
             outputs: [Item.of(AlmostUnified.getPreferredItemForTag('forge:ingots/steel'), 1).toJson()],
             heatRequirement: 'heated',
             id: `${id_prefix}steel_ingot`

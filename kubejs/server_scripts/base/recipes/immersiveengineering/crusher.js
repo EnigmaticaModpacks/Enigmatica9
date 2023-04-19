@@ -12,10 +12,10 @@ ServerEvents.recipes((event) => {
     ];
 
     recipes.forEach((recipe) => {
-        recipe.type = "immersiveengineering:crusher"
-        recipe.input = Ingredient.of(recipe.input).toJson()
-        recipe.result = Item.of(recipe.output).toJson()
-        recipe.secondaries = recipe.secondaries.map(secondary => Item.of(secondary).toJson())
-        event.custom(recipe).id(recipe.id)
+        recipe.type = 'immersiveengineering:crusher';
+        recipe.input = Ingredient.of(recipe.input).toJson();
+        recipe.result = Item.of(recipe.output).toJson();
+        recipe.secondaries = recipe.secondaries.map((secondary) => Item.of(secondary).toJson());
+        event.custom(recipe).id(recipe.id);
     });
 });

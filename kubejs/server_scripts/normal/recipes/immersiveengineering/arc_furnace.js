@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
     if (global.isNormalMode == false) {
         return;
     }
-    
+
     const id_prefix = 'enigmatica:normal/immersiveengineering/arc_furnace/';
 
     // Note 2: For "Ease of use", use an object {item: "id:here", count: 2} for input and additives, those will be used with Ingredient.of() later on! Tag can also be used in place of "id:here"
@@ -50,9 +50,7 @@ ServerEvents.recipes((event) => {
         },
         {
             input: { item: '#forge:stones/andesite', count: 1 },
-            additives: [
-                { item: '#forge:nuggets/zinc', count: 1 }
-            ],
+            additives: [{ item: '#forge:nuggets/zinc', count: 1 }],
             output: Item.of(AlmostUnified.getPreferredItemForTag('forge:ingots/andesite'), 1),
             secondaries: [],
             slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
@@ -62,9 +60,7 @@ ServerEvents.recipes((event) => {
         },
         {
             input: { item: '#forge:stones/andesite', count: 1 },
-            additives: [
-                { item: '#forge:nuggets/iron', count: 1 }
-            ],
+            additives: [{ item: '#forge:nuggets/iron', count: 1 }],
             output: Item.of(AlmostUnified.getPreferredItemForTag('forge:ingots/andesite'), 1),
             secondaries: [],
             slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
@@ -76,9 +72,12 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'immersiveengineering:arc_furnace';
-        recipe.input = { base_ingredient: Ingredient.of(recipe.input.item).toJson(), count: recipe.input.count }
-        recipe.additives = recipe.additives.map((additive) => ({ base_ingredient: Ingredient.of(additive.item).toJson(), count: additive.count }))
-        recipe.results = [{ base_ingredient: { item: recipe.output.getId() }, count: recipe.output.getCount() }]
+        recipe.input = { base_ingredient: Ingredient.of(recipe.input.item).toJson(), count: recipe.input.count };
+        recipe.additives = recipe.additives.map((additive) => ({
+            base_ingredient: Ingredient.of(additive.item).toJson(),
+            count: additive.count
+        }));
+        recipe.results = [{ base_ingredient: { item: recipe.output.getId() }, count: recipe.output.getCount() }];
         event.custom(recipe).id(recipe.id);
     });
 });
