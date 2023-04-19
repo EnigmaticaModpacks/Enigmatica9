@@ -1,0 +1,13 @@
+{
+    "id": "infused_iron",
+    "source": "modded",
+    "localizedName": "Infused Iron",
+    "processedTypes": [
+        "storage_block",
+        "ingot"
+    ],
+    "properties": {
+        "materialType": "metal",
+        "harvestLevel": 2
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "id": "minecraft_air",
+    "baseTexture": "minecraft:block/air",
+    "suffix": "air",
+    "fillerType": "minecraft:air",
+    "localizedName": "air",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 6,
+    "sampleStrata": false
+}

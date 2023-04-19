@@ -1,0 +1,11 @@
+{
+    "id": "byg_blue_sandstone",
+    "baseTexture": "byg:block/blue_sandstone",
+    "suffix": "blue_sandstone",
+    "fillerType": "byg:blue_sandstone",
+    "localizedName": "Blue Sandstone",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 2,
+    "sampleStrata": false
+}

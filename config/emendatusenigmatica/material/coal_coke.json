@@ -1,0 +1,17 @@
+{
+    "id": "coal_coke",
+    "source": "modded",
+    "localizedName": "Coal Coke",
+    "processedTypes": [
+        "storage_block",
+        "gem",
+        "dust"
+    ],
+    "properties": {
+        "materialType": "gem",
+        "harvestLevel": 1,
+        "isBurnable": true,
+        "burnTime": 3200,
+        "blockRecipeType": 9
+    }
+}

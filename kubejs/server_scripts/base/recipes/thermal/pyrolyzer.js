@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
         {
             input: Ingredient.of('#forge:gems/coal'),
             outputs: [
-                { item: 'thermal:coal_coke' },
+                { item: AlmostUnified.getPreferredItemForTag('forge:gems/coal_coke').getId() },
                 { item: 'thermal:tar', chance: 0.25 },
                 { fluid: 'immersiveengineering:creosote', amount: 500 }
             ],
@@ -23,7 +23,7 @@ ServerEvents.recipes((event) => {
         {
             input: Ingredient.of('#forge:storage_blocks/coal'),
             outputs: [
-                { item: 'thermal:coal_coke_block' },
+                { item: AlmostUnified.getPreferredItemForTag('forge:storage_blocks/coal_coke').getId() },
                 { item: 'thermal:tar', chance: 0.25 * 9 },
                 { fluid: 'immersiveengineering:creosote', amount: 5000 }
             ],

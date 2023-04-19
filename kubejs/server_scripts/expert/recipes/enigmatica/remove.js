@@ -345,23 +345,12 @@ ServerEvents.recipes((event) => {
         { type: 'minecraft:blasting', output: '#forge:dusts' },
         { type: 'minecraft:blasting', output: /ingot_from_crushed/ },
 
-        { type: 'create:crushing', id: /_ore$/ },
-        { type: 'create:crushing', id: /_recycling$/ },
-        { type: 'create:crushing', id: /raw_/ },
-        { type: 'create:splashing', id: /_ore$/ },
-
         { type: 'immersiveengineering:arc_furnace' },
-        { type: 'immersiveengineering:crusher', id: /raw_block/ },
-        { type: 'immersiveengineering:crusher', id: /raw_ore/ },
-        { type: 'immersiveengineering:crusher', id: /ore_/ },
         { type: 'immersiveengineering:crusher', id: /ingot_/ },
 
         { type: 'thermal:smelter' },
         { type: 'thermal:centrifuge', id: /centrifuge_.*_dust/ },
-        { type: 'thermal:centrifuge', id: /crushed_.*_ore/ },
         { type: 'thermal:pulverizer', id: /ingot_to_dust/ },
-        { type: 'thermal:pulverizer', id: /pulverizer_raw/ },
-        { type: 'thermal:pulverizer', id: /pulverizer_.*_ore/ },
 
         { type: 'occultism:crushing', id: /dust/ },
 
@@ -377,10 +366,8 @@ ServerEvents.recipes((event) => {
         { id: 'create:splashing/soul_sand' },
         { id: 'create:splashing/red_sand' },
 
-        { id: /hammercrushing/, mod: 'immersiveengineering' },
         { id: /block_blast/, mod: 'quark' },
 
-        { id: /mekanism:processing\/.*\/slurry/ },
         { id: /mekanism:processing\/.*\/crystal/ },
         { id: /mekanism:processing\/.*\/shard/ },
         { id: /mekanism:processing\/.*\/clump/ },

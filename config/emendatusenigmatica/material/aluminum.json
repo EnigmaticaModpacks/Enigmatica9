@@ -1,0 +1,37 @@
+{
+    "id": "aluminum",
+    "source": "modded",
+    "localizedName": "Aluminium",
+    "processedTypes": [
+        "storage_block",
+        "ore",
+        "raw",
+        "crushed_ore",
+        "ingot",
+        "nugget",
+        "dust",
+        "plate",
+        "rod",
+        "gear",
+        "slurry",
+        "crystal",
+        "shard",
+        "clump",
+        "dirty_dust"
+    ],
+    "properties": {
+        "materialType": "metal",
+        "harvestLevel": 1
+    },
+    "oreDrop": {
+        "drop": "emendatusenigmatica:raw_aluminum",
+        "min": 1,
+        "max": 1
+    },
+    "compat": {
+        "thermal": false
+    },
+    "colors": {
+        "gasColor": "a2a8ab"
+    }
+}

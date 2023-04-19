@@ -1,0 +1,11 @@
+{
+    "id": "blue_skies_umber",
+    "baseTexture": "blue_skies:block/stone/umber",
+    "suffix": "umber",
+    "fillerType": "blue_skies:umber",
+    "localizedName": "Umber",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 6,
+    "sampleStrata": false
+}

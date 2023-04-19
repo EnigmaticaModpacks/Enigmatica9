@@ -1,0 +1,11 @@
+{
+    "id": "create_veridium",
+    "baseTexture": "create:block/palettes/stone_types/veridium",
+    "suffix": "veridium",
+    "fillerType": "create:veridium",
+    "localizedName": "Veridium",
+    "harvestTool": "pickaxe",
+    "hardness": 1.25,
+    "resistance": 5,
+    "sampleStrata": false
+}

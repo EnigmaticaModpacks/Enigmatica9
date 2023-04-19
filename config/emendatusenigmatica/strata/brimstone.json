@@ -1,0 +1,11 @@
+{
+    "id": "byg_brimstone",
+    "baseTexture": "byg:block/brimstone",
+    "suffix": "brimstone",
+    "fillerType": "byg:brimstone",
+    "localizedName": "Brimstone",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 6,
+    "sampleStrata": false
+}

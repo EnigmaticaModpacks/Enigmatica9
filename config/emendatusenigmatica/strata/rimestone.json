@@ -1,0 +1,11 @@
+{
+    "id": "blue_skies_rimestone",
+    "baseTexture": "blue_skies:block/stone/rimestone",
+    "suffix": "rimestone",
+    "fillerType": "blue_skies:rimestone",
+    "localizedName": "Rimestone",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 6,
+    "sampleStrata": false
+}

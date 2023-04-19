@@ -3,10 +3,10 @@
     worldgen: {
         // Enable this to disable worldgen entirely. If true, the other options have no effect.
         disable_all: true,
-        poor_uraninite_veins_per_chunk: 8,
-        uraninite_veins_per_chunk: 6,
-        dense_uraninite_veins_per_chunk: 3,
-        dry_ice_veins_per_chunk: 9
+        poor_uraninite_veins_per_chunk: 0,
+        uraninite_veins_per_chunk: 0,
+        dense_uraninite_veins_per_chunk: 0,
+        dry_ice_veins_per_chunk: 0
     },
     // Other general config options.
     general: {

@@ -1,0 +1,11 @@
+{
+    "id": "create_scorchia",
+    "baseTexture": "create:block/palettes/stone_types/scorchia",
+    "suffix": "scorchia",
+    "fillerType": "create:scorchia",
+    "localizedName": "Scorchia",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 6,
+    "sampleStrata": false
+}

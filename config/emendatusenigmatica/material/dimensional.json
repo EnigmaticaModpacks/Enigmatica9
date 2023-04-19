@@ -1,0 +1,21 @@
+{
+    "id": "dimensional",
+    "source": "modded",
+    "localizedName": "Dimensional Shard",
+    "processedTypes": [
+        "storage_block",
+        "cluster",
+        "dust"
+    ],
+    "properties": {
+        "materialType": "gem",
+        "harvestLevel": 2,
+        "blockRecipeType": 9,
+        "isEmissive": true
+    },
+    "oreDrop": {
+        "drop": "rftoolsbase:dimensionalshard",
+        "min": 4,
+        "max": 5
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "id": "byg_purple_sandstone",
+    "baseTexture": "byg:block/purple_sandstone",
+    "suffix": "purple_sandstone",
+    "fillerType": "byg:purple_sandstone",
+    "localizedName": "Purple Sandstone",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 2,
+    "sampleStrata": false
+}

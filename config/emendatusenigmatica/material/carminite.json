@@ -1,0 +1,14 @@
+{
+    "id": "carminite",
+    "source": "modded",
+    "localizedName": "Carminite",
+    "processedTypes": [
+        "storage_block",
+        "gem"
+    ],
+    "properties": {
+        "materialType": "gem",
+        "harvestLevel": 2,
+        "blockRecipeType": 9
+    }
+}

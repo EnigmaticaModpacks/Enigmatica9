@@ -1,0 +1,15 @@
+{
+    "id": "charoite",
+    "source": "modded",
+    "localizedName": "Charoite",
+    "processedTypes": [
+        "ore",
+        "storage_block",
+        "gem"
+    ],
+    "properties": {
+        "materialType": "gem",
+        "harvestLevel": 2,
+        "blockRecipeType": 9
+    }
+}

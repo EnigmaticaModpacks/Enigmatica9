@@ -9,27 +9,43 @@ const jei = {
     base: {
         items: { hidden: [], disabled: [] },
         fluids: { hidden: [] },
+        gases: { hidden: [] },
         categories: { hidden: [] },
         recipes: { hidden: [] }
     },
     normal: {
         items: { hidden: [], disabled: [] },
         fluids: { hidden: [] },
+        gases: { hidden: [] },
         categories: { hidden: [] },
         recipes: { hidden: [] }
     },
     expert: {
         items: { hidden: [], disabled: [] },
         fluids: { hidden: [] },
+        gases: { hidden: [] },
         categories: { hidden: [] },
         recipes: { hidden: [] }
     }
 };
+
 // Base
 jei.base.items.disabled = [
+    /thermal.*cinnabar_ore/,
+    /thermal.*niter_ore/,
+    /thermal.*sulfur_ore/,
+    /mekanism.*fluorite_ore/,
+    /rftoolsbase:dimensionalshard_/,
+
+    /emendatusenigmatica:.*_cluster_shard\b/,
+
     /pendorite/,
     /emeraldite/,
     /ametrine/,
+
+    /blue_skies:raw_charoite/,
+    /blue_skies:raw_aquite/,
+
     /theoneprobe/,
 
     'createaddition:copper_spool',
@@ -57,13 +73,15 @@ jei.base.items.disabled = [
     'engineersdecor:test_block',
 
     /mekanism:.*_bin/,
+    
+    'minecraft:nether_gold_ore',
 
     'immersiveengineering:blast_furnace',
     'immersiveengineering:alloy_smelter',
     'immersiveengineering:plantoil_bucket',
     'immersiveengineering:ethanol_bucket',
     'immersiveengineering:biodiesel_bucket',
-
+    
     'industrialforegoing:dryrubber',
 
     /thermal:flax/,
@@ -79,6 +97,8 @@ jei.base.items.disabled = [
     'thermal:latex_bucket',
     'thermal:creosote_bucket',
     'thermal:refined_fuel_bucket',
+    'thermal:deepslate_cinnabar_ore',
+    'thermal:cinnabar_ore',
 
     'twilightforest:uncrafting_table',
 
@@ -98,16 +118,27 @@ jei.base.items.disabled = [
     'sushigocrafting:rice'
 ];
 jei.base.items.hidden = [
+    /emendatusenigmatica:bitumen_.*_ore/,
+    'emendatusenigmatica:bitumen_ore',
+    
+    /hexerei:.*selenite/,
+    'hexerei:creative_waxing_kit',
+
     /kubejs:.*indicator/,
     /kubejs:.*delight/,
     /kubejs:.*lootbox/,
+
     'naturesaura:multiblock_maker',
-    'sophisticatedstorage:debug_tool',
+    
     /occultism:.*debug/,
     'occultism:lighted_air',
+    
+    /powah:.*uraninite_ore.*/,
+    
+    'sophisticatedstorage:debug_tool',
+   
     /twilightforest:.*boss_spawner/,
-    /hexerei:.*selenite/,
-    'hexerei:creative_waxing_kit',
+
     /nomadictents:.*_shamiyana_wall/,
     /nomadictents:.*_tepee_wall/,
     'nomadictents:indlu_wall',
@@ -135,6 +166,7 @@ jei.base.recipes.hidden = [
         recipes_by_id: ['pneumaticcraft:one_probe_crafting']
     }
 ];
+jei.base.gases.hidden = [];
 
 // Normal
 jei.normal.items.disabled = [];
@@ -161,10 +193,28 @@ jei.normal.items.hidden = [
     'kubejs:calcined_kaolin_pearls',
     'kubejs:kaolin_clay',
     'kubejs:aura_leaf',
-    'kubejs:spirit_of_devotion'
+    'kubejs:spirit_of_devotion',
+
+    // Creative items:
+    /mekanism:creative_/,
+    /ae2:creative/,
+    /ars_nouveau:creative/,
+    'buildinggadgets:construction_paste_container_creative',
+    /create:creative/,
+    'create:handheld_worldshaper',
+    /functionalstorage:creative/,
+    /immersiveengineering.*creative/,
+    /littlelogistics:creative/,
+    /pneumaticcraft:creative/,
+    /appmek:creative/,
+    'powah:energy_cell_creative',
+    /thermal.*creative/,
+    /createaddition:creative/,
+    /modularrouters:creative/
 ];
 jei.normal.fluids.hidden = [];
 jei.normal.categories.hidden = [];
+jei.normal.gases.hidden = [];
 
 // Expert
 jei.expert.items.disabled = [
@@ -412,6 +462,7 @@ jei.expert.items.disabled = [
 ];
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];
+jei.expert.gases.hidden = [];
 jei.expert.categories.hidden = [];
 jei.expert.recipes.hidden = [
     {

@@ -1,0 +1,11 @@
+{
+    "id": "byg_windswept_sandstone",
+    "baseTexture": "byg:block/windswept_sandstone",
+    "suffix": "windswept_sandstone",
+    "fillerType": "byg:windswept_sandstone",
+    "localizedName": "Windswept Sandstone",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 2,
+    "sampleStrata": false
+}

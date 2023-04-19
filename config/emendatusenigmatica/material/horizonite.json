@@ -1,0 +1,28 @@
+{
+    "id": "horizonite",
+    "source": "modded",
+    "localizedName": "Horizonite",
+    "processedTypes": [
+        "storage_block",
+        "ore",
+        "raw",
+        "crushed_ore",
+        "ingot",
+        "dust",
+        "nugget",
+        "slurry",
+        "crystal",
+        "shard",
+        "clump",
+        "dirty_dust"
+    ],
+    "properties": {
+        "materialType": "metal",
+        "harvestLevel": 1,
+        "isBurnable": true,
+        "burnTime": 1400
+    },
+    "colors": {
+        "gasColor": "c94627"
+    }
+}

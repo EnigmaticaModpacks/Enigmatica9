@@ -1,0 +1,15 @@
+{
+  "id": "source",
+  "source": "modded",
+  "localizedName": "Source",
+  "processedTypes": [
+    "storage_block",
+    "gem"
+  ],
+  "properties": {
+    "materialType": "gem",
+    "harvestLevel": 2,
+    "blockRecipeType": 4,
+    "isEmissive": true
+  }
+}

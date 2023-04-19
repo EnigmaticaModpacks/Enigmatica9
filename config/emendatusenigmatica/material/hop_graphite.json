@@ -1,0 +1,15 @@
+{
+    "id": "hop_graphite",
+    "source": "modded",
+    "localizedName": "HOP Graphite",
+    "processedTypes": [
+        "storage_block",
+        "ingot",
+        "dust",
+        "nugget"
+    ],
+    "properties": {
+        "materialType": "metal",
+        "harvestLevel": 2
+    }
+}

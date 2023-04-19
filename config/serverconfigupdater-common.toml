@@ -6,7 +6,7 @@
 
 ["File Deleter"]
 	# This is intended for deleting files for pack updates. This is a last resort! Replace with empty files instead when possible. The file will be deleted every launch if it exists! Specify the path to the file. Comma Separated List. Example: scripts/badscript.zs
-	files = [""]
+	files = ["kubejs/data/hexerei/loot_modifiers/animal_fat_drops.json", "kubejs/data/hexerei/loot_modifiers/animal_fat_from_cow.json", "kubejs/data/hexerei/loot_modifiers/animal_fat_from_pig.json", "kubejs/data/hexerei/loot_modifiers/animal_fat_from_sheep.json", "kubejs/data/hexerei/loot_modifiers/sage_seeds_from_grass.json", "kubejs/data/hexerei/loot_modifiers/sage_seeds_from_tall_grass.json", "kubejs/data/immersiveengineering/loot_modifiers/hemp_from_grass.json", "kubejs/data/immersiveengineering/loot_modifiers/hemp_from_tall_grass.json", "kubejs/data/immersiveengineering/recipes/arc_recycling_list.json", "kubejs/data/occultism/loot_modifiers/datura_seed_from_grass.json", "kubejs/data/occultism/loot_modifiers/datura_seed_from_tall_grass.json", "kubejs/data/sushigocrafting/loot_modifiers/grass_seeds.json"]
 	# By default Folders are only deleted if they are empty. Set to true to change that.
 	deleteFoldersWithContent = false
 

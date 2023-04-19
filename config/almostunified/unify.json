@@ -1,8 +1,8 @@
 {
   "modPriorities": [
+    "emendatusenigmatica",
     "minecraft",
     "kubejs",
-    "crafttweaker",
     "create",
     "thermal",
     "mekanism",
@@ -10,12 +10,7 @@
     "blue_skies"
   ],
   "stoneStrata": [
-    "stone",
-    "nether",
-    "deepslate",
-    "granite",
-    "diorite",
-    "andesite"
+    "stone"
   ],
   "tags": [
     "forge:nuggets/{material}",
@@ -28,19 +23,26 @@
     "forge:plates/{material}",
     "forge:rods/{material}",
     "forge:storage_blocks/{material}",
+    "forge:storage_blocks/raw_{material}",
     "forge:slag",
-    "forge:coal_coke",
-    "forge:sawdust"
+    "mekanism:crystals/{material}",
+    "mekanism:shards/{material}",
+    "mekanism:clumps/{material}",
+    "mekanism:dirty_dusts/{material}",
+    "mekanism:shards/{material}",
+    "create:crushed_ores/{material}"
   ],
   "materials": [
     "aeternium",
     "aluminum",
+    "andesite",
     "amber",
     "apatite",
     "aquite",
     "bitumen",
     "brass",
     "bronze",
+    "carminite",
     "charcoal",
     "charoite",
     "cinnabar",
@@ -50,6 +52,7 @@
     "constantan",
     "copper",
     "diamond",
+    "dimensional",
     "diopside",
     "electrum",
     "elementium",
@@ -58,7 +61,10 @@
     "falsite",
     "fluorite",
     "gold",
+    "hop_graphite",
     "horizonite",
+    "iesnium",
+    "infused_iron",
     "invar",
     "iridium",
     "iron",
@@ -67,26 +73,43 @@
     "lumium",
     "netherite",
     "nickel",
+    "niter",
     "obsidian",
     "osmium",
     "peridot",
     "platinum",
     "potassium_nitrate",
     "pyrope",
+    "redstone",
+    "refined_glowstone",
+    "refined_obsidian",
+    "rose_gold",
     "ruby",
     "saltpeter",
     "sapphire",
     "signalum",
     "silver",
+    "sky",
+    "source",
     "steel",
     "sulfur",
+    "tainted_gold",
     "tin",
     "uranium",
     "ventium",
     "wood",
-    "zinc"
+    "zinc",
+    "quartz"
   ],
   "priorityOverrides": {},
+  "tagOwnerships": {
+    "forge:gems/coal_coke": [
+      "forge:coal_coke"
+    ],
+    "forge:dusts/wood": [
+      "forge:sawdust"
+    ]
+  },
   "ignoredTags": [],
   "ignoredItems": [],
   "ignoredRecipeTypes": [

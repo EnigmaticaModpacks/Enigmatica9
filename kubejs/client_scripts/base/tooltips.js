@@ -472,6 +472,21 @@ ItemEvents.tooltip((event) => {
         {
             items: ['immersiveengineering:logic_unit', 'redstonepen:control_box', 'pneumaticcraft:redstone_module'],
             text: [Text.of(`Redstone Device: Programmable Redstone Logic.`).darkRed()]
+        },
+        {
+            items: [
+                "hexerei:sage_seed",
+                "immersiveengineering:seed",
+                "occultism:datura_seeds",
+                "sushigocrafting:cucumber_seeds",
+                "sushigocrafting:soy_seeds",
+                "sushigocrafting:wasabi_seeds",
+                "sushigocrafting:sesame_seeds"
+            ],
+            text: [
+                Text.of("This seed does not drop from grass!").green(),
+                Text.of("It has to be purchased from the Market block.").green()
+            ]
         }
     ];
 

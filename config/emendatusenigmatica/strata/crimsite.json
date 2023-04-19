@@ -1,0 +1,11 @@
+{
+    "id": "create_crimsite",
+    "baseTexture": "create:block/palettes/stone_types/crimsite",
+    "suffix": "crimsite",
+    "fillerType": "create:crimsite",
+    "localizedName": "Crimsite",
+    "harvestTool": "pickaxe",
+    "hardness": 1.25,
+    "resistance": 5,
+    "sampleStrata": true
+}

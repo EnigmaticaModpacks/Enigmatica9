@@ -1,0 +1,15 @@
+{
+    "id": "refined_obsidian",
+    "source": "modded",
+    "localizedName": "Refined Obsidian",
+    "processedTypes": [
+        "storage_block",
+        "ingot",
+        "nugget",
+        "dust"
+    ],
+    "properties": {
+        "materialType": "metal",
+        "harvestLevel": 2
+    }
+}

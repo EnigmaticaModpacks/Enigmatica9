@@ -1,0 +1,11 @@
+{
+    "id": "blue_skies_turquoise_stone",
+    "baseTexture": "blue_skies:block/stone/turquoise_stone",
+    "suffix": "turquoise_stone",
+    "fillerType": "blue_skies:turquoise_stone",
+    "localizedName": "Turquoise Stone",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 6,
+    "sampleStrata": false
+}

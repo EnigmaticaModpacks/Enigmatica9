@@ -7,11 +7,29 @@ ServerEvents.recipes((event) => {
         //     mod: 'sample',
         //     id: 'sample'
         // }
+
         { mod: 'gateways' },
         { mod: 'theoneprobe' },
+        
         { output: /pendorite/ },
         { output: /emeraldite/ },
         { output: /ametrine/ },
+
+        { output: /thermal.*cinnabar_ore/},
+        { output: /thermal.*niter_ore/},
+        { output: /thermal.*sulfur_ore/},
+        { output: /thermal.*sapphire_ore/},
+        { output: /thermal.*ruby_ore/},
+        { output: /mekanism.*fluorite_ore/},
+        { output: /rftoolsbase:dimensionalshard_/},
+
+        { input: /thermal.*cinnabar_ore/},
+        { input: /thermal.*niter_ore/},
+        { input: /thermal.*sulfur_ore/},
+        { input: /thermal.*sapphire_ore/},
+        { input: /thermal.*ruby_ore/},
+        { input: /mekanism.*fluorite_ore/},
+        { input: /rftoolsbase:dimensionalshard_/},
 
         { id: /ars_nouveau:.*_dye/ },
 
@@ -34,12 +52,17 @@ ServerEvents.recipes((event) => {
         { id: 'createaddition:rolling/straw' },
         { id: 'createaddition:compat/ae2/charged_certus_quartz' },
         { id: 'createaddition:crafting/accumulator_conversion' },
+        { id: 'createaddition:compat/immersiveengineering/crushing/coal_coke' },
+        { id: 'createaddition:compat/immersiveengineering/crushing/coke_block' },
 
         { id: 'hexerei:black_dye_from_pestle_and_mortar' },
 
         { id: `industrialforegoing:stonework_generate/diorite` },
         { id: `industrialforegoing:stonework_generate/granite` },
         { id: `industrialforegoing:stonework_generate/andesite` },
+        { id: `industrialforegoing:laser_drill_ore/ores/cinnabar`},
+
+        { id: 'immersiveengineering:crafting/coal_coke_to_coke' },
 
         { id: /mekanism:enriching\/dye/ },
         { id: /mekanism:compat\/byg\/dye/ },
@@ -47,11 +70,9 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:sawing\/log/ },
         { id: /mekanism:compat\/byg\/combining\/.*_ore_/ },
         { id: /mekanism:bin\/.*/ },
-        { id: /mekanism:crushing\/biofuel/ },
-        { id: /mekanism:processing\/.*\/ore\/.*from_raw$/ },
-        { id: /mekanism:processing\/.*\/to_ore$/ },
-        { id: /mekanism:processing\/.*\/to_deepslate_ore$/ },
         { id: 'mekanism:processing/netherite/dust_to_ancient_debris' },
+        { id: /mekanism:crushing\/biofuel/ },
+        { id: `mekanism:processing/bronze/ingot/from_infusing` },
 
         { id: 'minecraft:bone_meal' },
         { id: 'minecraft:glass' },
@@ -59,6 +80,9 @@ ServerEvents.recipes((event) => {
         { id: /naturesaura:animal_spawner\/sheep_/ },
 
         { id: 'occultism:crafting/butcher_knife' },
+        { id: /occultism:miner\/.*\/deepslate_/ },
+        { id: 'occultism:miner/ores/sapphire_ore' },
+        { id: 'occultism:miner/ores/ruby_ore' },
 
         { id: /pneumaticcraft:thermo_plant\/vegetable_oil_from_/ },
         { id: /pneumaticcraft:thermo_plant\/ethanol_from_/ },
@@ -73,6 +97,8 @@ ServerEvents.recipes((event) => {
         { id: 'powah:crafting/capacitor_basic_tiny' },
 
         { id: 'quark:tweaks/smelting/bone_meal_utility' },
+
+        { id: 'rftoolsbase:dimensionalshard' },
 
         { id: 'thermal:machines/centrifuge/centrifuge_allium' },
         { id: 'thermal:machines/centrifuge/centrifuge_azure_bluet' },
@@ -113,6 +139,8 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:machines/press/press_rice_unpacking' },
         { id: 'thermal:machines/press/press_onion_unpacking' },
         { id: 'thermal:machines/press/press_hops_unpacking' },
+        { id: 'thermal:machines/press/packing3x3/press_coal_coke_packing' },
+        { id: 'thermal:machines/press/unpacking/press_coal_coke_unpacking' },
         { id: 'thermal:fuels/gourmand/gourmand_tomato_block' },
         { id: 'thermal:fuels/gourmand/gourmand_onion_block' },
         { id: 'thermal:smelting/cured_rubber_from_smelting' },
@@ -140,6 +168,8 @@ ServerEvents.recipes((event) => {
         { type: 'immersiveengineering:fermenter' },
         { type: 'immersiveengineering:generator_fuel' },
 
+        { type: "industrialforegoing:laser_drill_ore" },
+        
         { type: 'pneumaticcraft:fuel_quality' },
 
         { type: 'starbunclemania:fluid_sourcelink' },
@@ -148,7 +178,64 @@ ServerEvents.recipes((event) => {
         { type: 'thermal:sawmill' },
         { type: 'thermal:pulverizer_recycle' },
         { type: 'thermal:insolator' },
-        { type: 'thermal:compression_fuel' }
+        { type: 'thermal:compression_fuel' },
+
+        //// Emendatus Enigmatica Related stuff
+
+        { id: /emendatusenigmatica:tinted_glass\/from_shard/},              // Cluster Compat, it is disabled for purpose we have, but if the future you want to enable it back, this should be modified!
+        { id: /emendatusenigmatica:spyglass\/from_shard/},                  // Cluster Compat, it is disabled for purpose we have, but if the future you want to enable it back, this should be modified!
+        { id: /industrialforegoing:.*_gear/ },                              // Gears
+        { id: /hammercrushing/, mod: 'immersiveengineering' },              // Dusts.js related
+        { id: /immersiveengineering:crafting\/plate_.*_hammering/ },        // plates.js related
+        { id: /immersiveengineering:crafting\/stick_/ },                    // rods.js related
+        { id: /emendatusenigmatica:ingot\/from_dust.*\/refined_obsidian/ }, // Removes smelting recipes dust -> ingot for Refined Obsidian
+        { id: 'create:crushing/veridium' },
+        { id: 'create:crushing/ochrum' },
+        { id: 'create:crushing/crimsite' },
+        { id: 'create:crushing/asurine' },
+        { id: 'create:crushing/tuff' },
+        { id: 'create:splashing/red_sand' },
+        { id: 'create:splashing/soul_sand' },
+        { id: 'create:splashing/gravel' },
+        { id: 'thermal:compat/create/pulverizer_create_veridium' },
+        { id: 'thermal:compat/create/pulverizer_create_ochrum' },
+        { id: 'thermal:compat/create/pulverizer_create_crimsite' },
+        { id: 'thermal:compat/create/pulverizer_create_asurine' },
+        { id: 'thermal:machines/pulverizer/pulverizer_gilded_blackstone' },
+        
+        // Ore Processing Related
+
+        // Slurries
+        { id: /mekanism:processing\/.*\/slurry/ },
+        { id: /mekanism:processing\/.*\/crystal\/from_slurry/ },
+
+        // Ore -> Shards etc
+        { id: /mekanism:processing\/.*\/from_raw_block/ }, 
+        { id: /mekanism:processing\/.*\/from_raw_ore/ },
+        { id: /mekanism:processing\/.*\/from_ore/ },
+
+        // Combiner
+        { id: /mekanism:processing\/.*\/ore\/.*from_raw$/ }, 
+        { id: /mekanism:processing\/.*\/to_ore$/ },
+        { id: /mekanism:processing\/.*\/to_deepslate_ore$/ },
+
+        { type: 'create:crushing', id: /_ore$/ },
+        { type: 'create:crushing', id: /_recycling$/ },
+        { type: 'create:crushing', id: /raw_/ },
+        { type: 'create:splashing', id: /_ore$/ },
+
+        { type: 'immersiveengineering:crusher', id: /raw_block/ },
+        { type: 'immersiveengineering:crusher', id: /raw_ore/ },
+        { type: 'immersiveengineering:crusher', id: /ore_/ },
+
+        { type: 'thermal:pulverizer', id: /pulverizer_raw/ },
+        { type: 'thermal:pulverizer', id: /pulverizer_.*_ore/ },
+        { type: 'thermal:centrifuge', id: /crushed_.*_ore/ },
+
+        { id: 'thermal:machines/pulverizer/pulverizer_apatite'},
+        { id: 'thermal:machines/pulverizer/pulverizer_cinnabar'},
+        { id: 'thermal:machines/pulverizer/pulverizer_niter'},
+        { id: 'thermal:machines/pulverizer/pulverizer_sulfur'},
     ];
 
     colors.forEach((color) => {

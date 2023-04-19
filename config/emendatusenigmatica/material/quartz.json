@@ -1,0 +1,21 @@
+{
+  "id": "quartz",
+  "source": "vanilla",
+  "localizedName": "Nether Quartz",
+  "disableDefaultOre": true,
+  "processedTypes": [
+    "ore",
+    "dust",
+    "gear"
+  ],
+  "properties": {
+    "materialType": "gem",
+    "harvestLevel": 1,
+    "blockRecipeType": 4
+  },
+  "oreDrop": {
+    "drop": "minecraft:quartz",
+    "min": 1,
+    "max": 1
+  }
+}

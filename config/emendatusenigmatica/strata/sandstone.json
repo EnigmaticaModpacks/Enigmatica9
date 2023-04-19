@@ -1,0 +1,11 @@
+{
+    "id": "minecraft_sandstone",
+    "baseTexture": "minecraft:block/sandstone",
+    "suffix": "sandstone",
+    "fillerType": "minecraft:sandstone",
+    "localizedName": "Sandstone",
+    "harvestTool": "pickaxe",
+    "hardness": 0.8,
+    "resistance": 0.8,
+    "sampleStrata": false
+}

@@ -1,0 +1,11 @@
+{
+    "id": "minecraft_netherrack",
+    "baseTexture": "minecraft:block/netherrack",
+    "suffix": "netherrack",
+    "fillerType": "minecraft:netherrack",
+    "localizedName": "Netherrack",
+    "harvestTool": "pickaxe",
+    "hardness": 0.4,
+    "resistance": 0.4,
+    "sampleStrata": false
+}

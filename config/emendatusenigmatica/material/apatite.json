@@ -1,0 +1,21 @@
+{
+    "id": "apatite",
+    "source": "modded",
+    "localizedName": "Apatite",
+    "processedTypes": [
+      "ore",
+      "storage_block",
+      "gem",
+      "dust"
+    ],
+    "properties": {
+      "materialType": "gem",
+      "harvestLevel": 1,
+      "blockRecipeType": 9
+    },
+    "oreDrop": {
+      "drop": "emendatusenigmatica:apatite_gem",
+      "min": 1,
+      "max": 1
+    }
+}

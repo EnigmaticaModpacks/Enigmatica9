@@ -1,0 +1,11 @@
+{
+    "id": "minecraft_tuff",
+    "baseTexture": "minecraft:block/tuff",
+    "suffix": "tuff",
+    "fillerType": "minecraft:tuff",
+    "localizedName": "Tuff",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 6,
+    "sampleStrata": false
+}

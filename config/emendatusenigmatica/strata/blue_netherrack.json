@@ -1,0 +1,11 @@
+{
+    "id": "byg_blue_netherrack",
+    "baseTexture": "byg:block/blue_netherrack",
+    "suffix": "blue_netherrack",
+    "fillerType": "byg:blue_netherrack",
+    "localizedName": "Blue Netherrack",
+    "harvestTool": "pickaxe",
+    "hardness": 0.4,
+    "resistance": 0.4,
+    "sampleStrata": false
+}

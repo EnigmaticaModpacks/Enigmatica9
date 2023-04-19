@@ -19,8 +19,7 @@ const stones = [
     'quark:limestone',
     'quark:myalite',
     'quark:permafrost',
-    'quark:shale'
-    /* 
+    'quark:shale',
     'create:asurine',
     'create:crimsite',
     'create:limestone',
@@ -28,5 +27,4 @@ const stones = [
     'create:scoria',
     'create:scorchia',
     'create:veridium' 
-    */
 ];

@@ -1,0 +1,11 @@
+{
+    "id": "create_asurine",
+    "baseTexture": "create:block/palettes/stone_types/asurine",
+    "suffix": "asurine",
+    "fillerType": "create:asurine",
+    "localizedName": "Asurine",
+    "harvestTool": "pickaxe",
+    "hardness": 1.25,
+    "resistance": 5,
+    "sampleStrata": true
+}

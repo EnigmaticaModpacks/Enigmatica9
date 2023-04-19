@@ -1,0 +1,11 @@
+{
+    "id": "quark_shale",
+    "baseTexture": "quark:block/shale",
+    "suffix": "shale",
+    "fillerType": "quark:shale",
+    "localizedName": "Shale",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 6,
+    "sampleStrata": false
+}

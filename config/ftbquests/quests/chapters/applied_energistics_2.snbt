@@ -9,7 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Applied Energistics 2"
+			title: "Meteorites!"
 			icon: "ae2:meteorite_compass"
 			x: 0.0d
 			y: -3.0d
@@ -976,6 +976,7 @@
 			}]
 		}
 		{
+			title: "Applied Energistics 2"
 			icon: "ae2:singularity"
 			x: 0.0d
 			y: -4.0d
@@ -990,7 +991,7 @@
 				id: "695BE08F1A558DCA"
 				type: "item"
 				title: "Any Raw Materials"
-				icon: "minecraft:raw_copper"
+				icon: "emendatusenigmatica:raw_copper"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b

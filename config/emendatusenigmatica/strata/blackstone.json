@@ -1,0 +1,11 @@
+{
+    "id": "minecraft_blackstone",
+    "baseTexture": "minecraft:block/blackstone",
+    "suffix": "blackstone",
+    "fillerType": "minecraft:blackstone",
+    "localizedName": "Blackstone",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 6,
+    "sampleStrata": false
+}

@@ -1,0 +1,15 @@
+{
+    "id": "niter",
+    "source": "modded",
+    "localizedName": "Niter",
+    "processedTypes": [
+        "storage_block",
+        "gem",
+        "dust"
+    ],
+    "properties": {
+        "materialType": "gem",
+        "harvestLevel": 1,
+        "blockRecipeType": 9
+    }
+}

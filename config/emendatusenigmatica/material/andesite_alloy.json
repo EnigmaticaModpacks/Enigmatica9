@@ -1,0 +1,12 @@
+{
+    "id": "andesite",
+    "source": "modded",
+    "localizedName": "Andesite Alloy",
+    "processedTypes": [
+        "ingot"
+    ],
+    "properties": {
+        "materialType": "alloy",
+        "harvestLevel": 2
+    }
+}

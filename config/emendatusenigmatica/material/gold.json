@@ -1,0 +1,36 @@
+{
+    "id": "gold",
+    "source": "vanilla",
+    "localizedName": "Gold",
+    "disableDefaultOre": true,
+    "processedTypes": [
+        "storage_block",
+        "ore",
+        "raw",
+        "crushed_ore",
+        "ingot",
+        "nugget",
+        "dust",
+        "plate",
+        "rod",
+        "gear",
+        "slurry",
+        "crystal",
+        "shard",
+        "clump",
+        "dirty_dust"
+    ],
+    "properties": {
+        "materialType": "metal",
+        "harvestLevel": 2,
+        "isEmissive": true
+    },
+    "colors": {
+        "gasColor": "f5c938"
+    },
+    "oreDrop": {
+        "drop": "emendatusenigmatica:raw_gold",
+        "min": 1,
+        "max": 1
+    }
+}

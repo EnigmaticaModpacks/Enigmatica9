@@ -18,11 +18,11 @@ ServerEvents.recipes((event) => {
         // Mekanism
         event
             .custom({
-                type: 'mekanism:enriching',
+                type: 'mekanism:crushing',
                 input: { ingredient: Ingredient.of(recipe.input).toJson() },
                 output: Item.of(recipe.outputs.primary.item, recipe.outputs.primary.count).toJson()
             })
-            .id(`${id_prefix}mekanism_enriching/${recipe.id_suffix}`);
+            .id(`${id_prefix}mekanism_crushing/${recipe.id_suffix}`);
 
         // Immersive Engineering
         let immersiveengineering_secondaries = [];

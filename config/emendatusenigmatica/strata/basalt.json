@@ -1,0 +1,11 @@
+{
+    "id": "minecraft_basalt",
+    "baseTexture": "minecraft:block/basalt_side",
+    "suffix": "basalt",
+    "fillerType": "minecraft:basalt",
+    "localizedName": "Basalt",
+    "harvestTool": "pickaxe",
+    "hardness": 1.25,
+    "resistance": 5,
+    "sampleStrata": true
+}

@@ -1,0 +1,11 @@
+{
+    "id": "quark_jasper",
+    "baseTexture": "quark:block/jasper",
+    "suffix": "jasper",
+    "fillerType": "quark:jasper",
+    "localizedName": "Jasper",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 6,
+    "sampleStrata": false
+}

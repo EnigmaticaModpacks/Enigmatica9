@@ -1,0 +1,11 @@
+{
+    "id": "byg_black_sandstone",
+    "baseTexture": "byg:block/black_sandstone",
+    "suffix": "black_sandstone",
+    "fillerType": "byg:black_sandstone",
+    "localizedName": "Black Sandstone",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 2,
+    "sampleStrata": false
+}

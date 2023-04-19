@@ -1,0 +1,13 @@
+{
+    "id": "tainted_gold",
+    "source": "modded",
+    "localizedName": "Tainted Gold",
+    "processedTypes": [
+        "storage_block",
+        "ingot"
+    ],
+    "properties": {
+        "materialType": "metal",
+        "harvestLevel": 2
+    }
+}

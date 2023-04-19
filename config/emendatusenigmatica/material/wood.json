@@ -1,0 +1,15 @@
+{
+    "id": "wood",
+    "source": "modded",
+    "localizedName": "Wood",
+    "processedTypes": [
+        "dust"
+    ],
+    "properties": {
+        "materialType": "gem",
+        "harvestLevel": 0,
+        "isBurnable": true,
+        "burnTime": 100,
+        "blockRecipeType": 9
+    }
+}

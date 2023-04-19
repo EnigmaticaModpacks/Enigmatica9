@@ -1,0 +1,20 @@
+{
+    "id": "aquite",
+    "source": "modded",
+    "localizedName": "Aquite",
+    "processedTypes": [
+      "ore",
+      "storage_block",
+      "gem"
+    ],
+    "properties": {
+      "materialType": "gem",
+      "harvestLevel": 1,
+      "blockRecipeType": 9
+    },
+    "oreDrop": {
+      "drop": "emendatusenigmatica:aquite_gem",
+      "min": 1,
+      "max": 1
+    }
+}

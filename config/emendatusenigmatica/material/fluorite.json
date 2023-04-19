@@ -1,0 +1,21 @@
+{
+  "id": "fluorite",
+  "source": "modded",
+  "localizedName": "Fluorite",
+  "processedTypes": [
+    "storage_block",
+    "gem",
+    "dust",
+    "cluster"
+  ],
+  "properties": {
+    "materialType": "gem",
+    "harvestLevel": 1,
+    "blockRecipeType": 9
+  },
+  "oreDrop": {
+    "drop": "emendatusenigmatica:fluorite_gem",
+    "min": 1,
+    "max": 1
+  }
+}

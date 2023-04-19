@@ -1,0 +1,11 @@
+{
+    "id": "minecraft_dripstone",
+    "baseTexture": "minecraft:block/dripstone_block",
+    "suffix": "dripstone",
+    "fillerType": "minecraft:dripstone_block",
+    "localizedName": "Dripstone",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 1,
+    "sampleStrata": true
+}

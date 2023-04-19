@@ -1,0 +1,14 @@
+{
+    "id": "refined_glowstone",
+    "source": "modded",
+    "localizedName": "Refined Glowstone",
+    "processedTypes": [
+        "storage_block",
+        "ingot",
+        "nugget"
+    ],
+    "properties": {
+        "materialType": "metal",
+        "harvestLevel": 2
+    }
+}

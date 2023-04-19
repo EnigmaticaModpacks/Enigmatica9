@@ -1,0 +1,15 @@
+{
+    "id": "diopside",
+    "source": "modded",
+    "localizedName": "Diopside",
+    "processedTypes": [
+        "ore",
+        "storage_block",
+        "gem"
+    ],
+    "properties": {
+        "materialType": "gem",
+        "harvestLevel": 2,
+        "blockRecipeType": 9
+    }
+}

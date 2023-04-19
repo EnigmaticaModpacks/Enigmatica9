@@ -1,0 +1,34 @@
+{
+    "id": "osmium",
+    "source": "modded",
+    "localizedName": "Osmium",
+    "processedTypes": [
+        "storage_block",
+        "ore",
+        "raw",
+        "crushed_ore",
+        "ingot",
+        "nugget",
+        "dust",
+        "plate",
+        "rod",
+        "gear",
+        "slurry",
+        "crystal",
+        "shard",
+        "clump",
+        "dirty_dust"
+    ],
+    "properties": {
+        "materialType": "metal",
+        "harvestLevel": 1
+    },
+    "colors": {
+        "gasColor": "a4b3cf"
+    },
+    "oreDrop": {
+        "drop": "emendatusenigmatica:raw_osmium",
+        "min": 1,
+        "max": 1
+    }
+}

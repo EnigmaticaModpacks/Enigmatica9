@@ -1,0 +1,11 @@
+{
+    "id": "byg_dacite",
+    "baseTexture": "byg:block/dacite",
+    "suffix": "dacite",
+    "fillerType": "byg:dacite",
+    "localizedName": "Dacite",
+    "harvestTool": "pickaxe",
+    "hardness": 1.5,
+    "resistance": 6,
+    "sampleStrata": false
+}

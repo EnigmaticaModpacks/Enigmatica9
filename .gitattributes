@@ -9,6 +9,13 @@
 # Declare files that will always have CRLF line endings on checkout.
 *.sh text eol=lf
 *.bat text eol=crlf
+*.json eol=lf
+*.json5 eol=lf
+*.cfg eol=lf
+*.toml eol=lf
+*.ini eol=lf
+*.md eol=lf
+*.properties eol=lf
 
 # Denote all files that are truly binary and should not be modified.
 *.png binary
