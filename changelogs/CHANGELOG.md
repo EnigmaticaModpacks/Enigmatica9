@@ -29,6 +29,7 @@ _Using Forge-1.19.2-43.2.6_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 -   Add some other fun loot to Shipwrecks
 -   Reduce cost of Demon's Dream, Hemp, Sage, and other Hexerei Plants in the Market from an Emerald to a gold
 -   Buff Enigmatic Unity power conversion
+-   Immersive Engineering mineral deposits are now infinite! Huzzah!
 
 **Fixed Bugs**
 

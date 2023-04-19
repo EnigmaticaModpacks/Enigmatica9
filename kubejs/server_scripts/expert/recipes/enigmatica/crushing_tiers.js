@@ -6,9 +6,11 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/enigmatica/';
     // Tiers range from 1-4, with 4 being the highest
     const recipes = [
-        // Placeholder recipe. Iron will have different secondary. Almost Unified functions will be used for outputs.
         {
-            outputs: { primary: 'create:crushed_iron_ore', secondary: 'create:crushed_tin_ore' },
+            outputs: {
+                primary: 'emendatusenigmatica:crushed_iron_ore',
+                secondary: 'emendatusenigmatica:crushed_nickel_ore'
+            },
             input: '#forge:raw_ores/iron',
             experience: 0.2,
             duration: 200,
@@ -18,7 +20,10 @@ ServerEvents.recipes((event) => {
             id_suffix: `iron_crushed_ore_from_raw_ore`
         },
         {
-            outputs: { primary: 'create:crushed_copper_ore', secondary: 'create:crushed_nickel_ore' },
+            outputs: {
+                primary: 'emendatusenigmatica:crushed_copper_ore',
+                secondary: 'emendatusenigmatica:crushed_tin_ore'
+            },
             input: '#forge:raw_ores/copper',
             experience: 0.2,
             duration: 100,
@@ -28,7 +33,7 @@ ServerEvents.recipes((event) => {
             id_suffix: `copper_crushed_ore_from_raw_ore`
         },
         {
-            outputs: { primary: 'mekanism:dirty_dust_copper' },
+            outputs: { primary: 'emendatusenigmatica:copper_dirty_dust' },
             input: '#mekanism:clumps/copper',
             experience: 0.2,
             duration: 100,

@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             input: { tag: 'forge:ingots/pig_iron' },
-            output: 'minecraft:iron_ingot',
+            output: 'emendatusenigmatica:iron_ingot',
             count: 1,
             pedestalItems: [
                 { item: { tag: 'forge:essences/air' } },
