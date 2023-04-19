@@ -73,6 +73,16 @@ const structures = [
     {
         mod: 'immersiveengineering',
         type: 'multiblocks',
+        name: 'sawmill',
+        index: 3,
+        block: {
+            normal: 'immersiveengineering:heavy_engineering',
+            expert: 'immersiveengineering:light_engineering'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
         name: 'silo',
         index: 2,
         block: {
@@ -240,6 +250,46 @@ const structures = [
         block: {
             normal: 'immersiveengineering:sheetmetal_steel',
             expert: 'kubejs:disabled_structure_indicator'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
+        name: 'metal_press',
+        index: 4,
+        block: {
+            normal: 'immersiveengineering:heavy_engineering',
+            expert: 'immersiveengineering:light_engineering'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
+        name: 'crusher',
+        index: 1,
+        block: {
+            normal: 'immersiveengineering:light_engineering',
+            expert: 'immersiveengineering:heavy_engineering'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
+        name: 'squeezer',
+        index: 2,
+        block: {
+            normal: 'immersiveengineering:light_engineering',
+            expert: 'immersiveengineering:heavy_engineering'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
+        name: 'fermenter',
+        index: 1,
+        block: {
+            normal: 'immersiveengineering:light_engineering',
+            expert: 'immersiveengineering:heavy_engineering'
         }
     }
 ];

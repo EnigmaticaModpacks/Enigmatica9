@@ -193,7 +193,7 @@ ServerEvents.recipes((event) => {
                 B: '#forge:gears/compressed_iron',
                 C: 'immersiveengineering:component_electronic'
             },
-            id: 'thermal:augments/upgrade_augment_1'
+            id: `${id_prefix}upgrade_augment_1`
         },
         {
             output: 'thermal:charge_bench',
@@ -287,6 +287,32 @@ ServerEvents.recipes((event) => {
                 C: 'starbunclemania:fluid_jar'
             },
             id: 'thermal:fluid_reservoir'
+        },
+        {
+            output: 'thermal:machine_furnace',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:plates/aluminum',
+                B: 'naturesaura:furnace_heater',
+                C: '#forge:ingots/infused_iron',
+                D: 'minecraft:furnace',
+                E: 'naturesaura:infused_brick',
+                F: '#forge:essences/fire'
+            },
+            id: 'thermal:machine_furnace'
+        },
+        {
+            output: 'thermal:machine_smelter',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:plates/obsidian',
+                B: 'naturesaura:furnace_heater',
+                C: '#forge:ingots/fiery',
+                D: 'minecraft:blast_furnace',
+                E: 'naturesaura:infused_brick',
+                F: '#forge:gems/pyrope'
+            },
+            id: 'thermal:machine_smelter'
         }
     ];
 

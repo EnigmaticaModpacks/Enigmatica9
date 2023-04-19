@@ -1,0 +1,70 @@
+{
+	id: "7877C1CEF044BFDF"
+	group: "2FE70BF4886F08F4"
+	order_index: 2
+	filename: "chapter_three"
+	title: "Chapter Three"
+	icon: "minecraft:echo_shard"
+	always_invisible: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 3.5d
+			dependencies: ["73B4078AB841567A"]
+			id: "2F5D2A85ADFE9CA1"
+			tasks: [{
+				id: "5E5E4C5197B0EA3E"
+				type: "item"
+				item: "mekanism:pellet_antimatter"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["714A42E9CE3C32EA"]
+			id: "73B4078AB841567A"
+			tasks: [{
+				id: "5534AEDEA476B323"
+				type: "item"
+				item: "mekanism:pellet_polonium"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			description: ["Use the Catalyst to create a Sculk farm"]
+			dependencies: ["3037BC1A3EC6EFF2"]
+			id: "5BAB85095E92AFD9"
+			tasks: [{
+				id: "71E672DDBF4F35C1"
+				type: "item"
+				item: "minecraft:sculk"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.0d
+			description: ["Obtain a Sculk Catalyst from a Warden"]
+			id: "3037BC1A3EC6EFF2"
+			tasks: [{
+				id: "719C40D73FB92E13"
+				type: "item"
+				item: "minecraft:sculk_catalyst"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			dependencies: ["5BAB85095E92AFD9"]
+			id: "714A42E9CE3C32EA"
+			tasks: [{
+				id: "318FFB5EA1AB4BCF"
+				type: "item"
+				item: "minecraft:echo_shard"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -62,32 +62,15 @@
 			}]
 		}
 		{
-			x: -2.0d
+			x: -5.5d
 			y: -5.0d
+			shape: "hexagon"
+			description: ["Seek out the Naga that lords over the forest denizens and end it in a display of solidarity with the fae creatures it terrorizes. "]
 			id: "73CDA6ED2393DE42"
 			tasks: [{
 				id: "34B9CD591F64D0B0"
 				type: "item"
 				item: "twilightforest:naga_trophy"
-			}]
-		}
-		{
-			title: "Gardening"
-			x: -2.0d
-			y: -4.0d
-			description: ["With the remaining plants and herbs found among the remains of the Naga, a garden should be top priority, as a number of these plants appear to have potent magical properties."]
-			dependencies: ["73CDA6ED2393DE42"]
-			id: "1E9E0EC1196E1EA1"
-			tasks: [{
-				id: "7602CEC56DB4FA6E"
-				type: "item"
-				item: {
-					id: "minecraft:stone_hoe"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
 			}]
 		}
 		{
@@ -127,10 +110,7 @@
 			x: -3.5d
 			y: -3.5d
 			description: ["These trees hold great power in them that will need to be unleashed. The fruits found among the Naga’s remains may be grown upon the trunks of the Archwood trees, while the two variants of Ancient tree offer boons in their wood and in their fruit."]
-			dependencies: [
-				"7224985826C6E047"
-				"1E9E0EC1196E1EA1"
-			]
+			dependencies: ["7224985826C6E047"]
 			id: "66A59B3CD77FB54A"
 			tasks: [{
 				id: "5389FDD8F93CD9A6"
@@ -196,6 +176,7 @@
 		{
 			x: -2.0d
 			y: -3.0d
+			description: ["Alloys such as Bronze will require grinding the constituent metals down to fine powder and mixing them with Redstone Dust in a Pestle and Mortar. "]
 			dependencies: ["058A00E7A69F684A"]
 			id: "009B693088915678"
 			tasks: [{
@@ -211,46 +192,6 @@
 					}
 				}
 			}]
-		}
-		{
-			title: "Elemental Essences"
-			x: -5.5d
-			y: -2.5d
-			description: [
-				"Air: Obtain a feather from a Raven found throughout the Twilight Forest."
-				""
-				"Fire: Defeat the Hydra in the Fire Swamp and return with a sample of its blood."
-				""
-				"Water: Brave the frigid caves where Yeti make their homes and return with a sample of their fur."
-				""
-				"Earth: Find a spot marked by Uberous Soil in the Highlands, dig down to find a Troll den, and return with their Magic Beans."
-				""
-				"The elementals required for these Essences are not native to this land, but a rift may occasionally open when breaking Spawners, unleashing elementals and other fearful creatures. "
-			]
-			dependencies: ["4830632A0E6E9651"]
-			id: "667698AAEFEDB15D"
-			tasks: [
-				{
-					id: "2BEDFD34E8B577CB"
-					type: "item"
-					item: "ars_nouveau:water_essence"
-				}
-				{
-					id: "5C539027F1000F6F"
-					type: "item"
-					item: "ars_nouveau:fire_essence"
-				}
-				{
-					id: "7C61C59DD57BCDEE"
-					type: "item"
-					item: "ars_nouveau:earth_essence"
-				}
-				{
-					id: "1AEA3A87BA3E2144"
-					type: "item"
-					item: "ars_nouveau:air_essence"
-				}
-			]
 		}
 		{
 			x: -3.5d
@@ -304,7 +245,7 @@
 		}
 		{
 			x: -0.5d
-			y: -1.0d
+			y: -1.5d
 			description: ["Obtain a bottle of Sunlight and Right-Click a block of Ironwood to convert it to a Natural Altar. Be sure to build the rest of the required structure as well."]
 			dependencies: ["6DBB9A9F698FA7B9"]
 			id: "4B874AA448FF4C7A"
@@ -315,10 +256,14 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: -1.5d
-			description: ["Obtained by blowing up Andesite, though better means certainly exist. "]
-			dependencies: ["4830632A0E6E9651"]
+			x: -8.5d
+			y: -2.0d
+			description: [
+				"By balancing the outward force of Aura with the inward crushing of this spell, we’re able to reach a stable equilibrium that is both strong and durable; Compressed Stone. "
+				""
+				"From here, more advanced forms of metalworking may begin. "
+			]
+			dependencies: ["06416F333E89B682"]
 			id: "79B755D0BDB6A8B7"
 			tasks: [{
 				id: "03C5CEE9CEF3B241"
@@ -327,22 +272,10 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: 0.0d
-			description: ["Combine Compressed stone and Stripped Canopy Logs to create Compressed Stone Casings."]
-			dependencies: ["79B755D0BDB6A8B7"]
-			id: "19EF89C9BD4F7CB8"
-			tasks: [{
-				id: "2459AC669EBDC270"
-				type: "item"
-				item: "create:andesite_casing"
-			}]
-		}
-		{
-			x: -3.5d
-			y: 0.0d
+			x: -7.0d
+			y: -3.0d
 			description: ["By heating up the Air Essence within this contraption, we can induce the essence to create pressure which may be used to drive some very useful machinery."]
-			dependencies: ["19EF89C9BD4F7CB8"]
+			dependencies: ["1C6BF5FE58C49456"]
 			id: "0DB07D1C824BFEA8"
 			tasks: [{
 				id: "438CB309DA6F1D4D"
@@ -351,8 +284,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 0.0d
+			x: -7.0d
+			y: -2.0d
 			dependencies: ["0DB07D1C824BFEA8"]
 			id: "75C38D71F1A04EB4"
 			tasks: [{
@@ -362,32 +295,36 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 0.0d
+			x: -2.0d
+			y: -1.0d
+			shape: "hexagon"
 			description: [
-				"The Cult of the Ur-Ghast, foolish as they were, were not far off in their calculations. They merely miscalculated the moderating capabilities of Redstone. By fully encasing their reactor, it set up a resonance leading to their demise. "
+				"The Cult of the Ur-Ghast, foolish as they were, were not far off in their research. Carminite has excellent arcane resonance, but the Redstone they coupled it with was too strong of a moderator. The resulting superradiant instability quickly became too much for their contraption to manage. "
 				""
-				"Simply setting the Redstone further away and adding some stabilizing elements is enough to make the device much safer to work with. "
+				"Fusing it with Source Gems, on the other hand, appears to properly channel the arcane fields. These first attempts appear imperfect, however. The process needs refining. "
 				""
-				"Refer to the Book of Natural Aura for instructions on setting up the multi-block for this. "
+				"================================================"
+				""
+				"Enigmatic Unity’s Pulsating Crystals serve as the basis for generating most FE, though a few other methods are still available. They require a Source Jar nearby from which they’ll periodically draw a quantity of Source, converting it into FE. If there is any Aura present when this happens, a portion of Aura will also be consumed, generating far more FE in the process. "
+				""
+				"These devices will never drain Aura into unsafe levels. "
 			]
 			dependencies: ["4B874AA448FF4C7A"]
+			min_width: 300
 			id: "3B372F597A05E777"
 			tasks: [{
 				id: "77D74CEE62130A5B"
 				type: "item"
-				item: "naturesaura:rf_converter"
+				item: "enigmaticunity:dim_source_generator"
 			}]
 		}
 		{
-			title: "Simple Storage"
-			x: -0.5d
-			y: 1.0d
-			description: ["It’s time we start putting some of this magic to use getting organized. With the Aura Forge we can channel our magical energies into these crystalline networks, allowing us to craft and sort more readily. "]
-			dependencies: [
-				"75C38D71F1A04EB4"
-				"3B372F597A05E777"
-			]
+			title: "Applied Energistics"
+			icon: "ae2:energy_acceptor"
+			x: -3.5d
+			y: -0.5d
+			description: ["It’s time we start putting some of this magic to use getting organized. With the Aura Forge providing basic magical energy, we can channel our magical energies into these crystalline networks, allowing us to craft and sort more readily. "]
+			dependencies: ["3B372F597A05E777"]
 			id: "4FEF700D65A68CFB"
 			tasks: [
 				{
@@ -408,55 +345,14 @@
 			]
 		}
 		{
-			title: "Familiar Friends"
-			x: 1.0d
+			x: -5.5d
 			y: -2.0d
-			description: [
-				"With the death of the Naga, the fae are willing to grant their aid. They may be summoned forth to occupy many different forms, each of which will grant very useful boons."
-				""
-				"A selection of Occultism, Hexerei, and Ars Nouveau critters may be summoned; research uses for Mindful Trance Blend to see what is available. "
-			]
-			dependencies: ["66585A158F41DE44"]
-			id: "7F72107B96AF6F35"
-			tasks: [
-				{
-					id: "3447C9BEE82ACEFF"
-					type: "item"
-					item: {
-						id: "occultism:chalk_white"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "63B189499275F3B5"
-					type: "item"
-					item: {
-						id: "occultism:chalk_gold"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "5AF125A5CC884DDD"
-					type: "item"
-					item: "hexerei:mindful_trance_blend"
-				}
-			]
-		}
-		{
-			x: 2.5d
-			y: -1.5d
 			description: [
 				"What is a witch without her broom?"
 				""
 				"Crafting a broom to get around might help in avoiding some more… deadly obstacles. "
 			]
-			dependencies: ["7F72107B96AF6F35"]
+			dependencies: ["7CFD3DFD4C593EB5"]
 			id: "67A48CCEDA5C6AF3"
 			tasks: [{
 				id: "227E258AA45F15CD"
@@ -469,8 +365,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -3.0d
+			x: -2.0d
+			y: -4.0d
 			description: ["A wise witch will use every tool at her disposal, and Superior Shields offer a potent source of protection when exploring these lands. "]
 			dependencies: ["058A00E7A69F684A"]
 			id: "7C58B3E61A83C628"
@@ -541,70 +437,14 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: 0.5d
-			description: [
-				"A windmill will be the place to begin powering Create contraptions."
-				""
-				"Note: Max RPM has been reduced for Expert. "
-			]
-			dependencies: ["19EF89C9BD4F7CB8"]
-			id: "126F4A37A0A21921"
-			tasks: [{
-				id: "74F831D3F0B08446"
-				type: "item"
-				item: "create:windmill_bearing"
-			}]
-		}
-		{
-			x: -5.5d
-			y: 1.0d
-			dependencies: ["126F4A37A0A21921"]
-			id: "10B98B16BED0E03D"
-			tasks: [{
-				id: "71BF717EE2070419"
-				type: "item"
-				item: "create:millstone"
-			}]
-		}
-		{
-			x: -7.0d
-			y: 2.0d
-			dependencies: ["126F4A37A0A21921"]
-			id: "6B03BDFD08CB95A9"
-			tasks: [{
-				id: "4639E8C5CA66139A"
-				type: "item"
-				item: "create:mechanical_press"
-			}]
-		}
-		{
-			x: -7.5d
-			y: 1.0d
-			dependencies: ["126F4A37A0A21921"]
-			id: "038666BDCF0A787C"
-			tasks: [
-				{
-					id: "1223CFAADEBF3D9E"
-					type: "item"
-					item: "create:mechanical_mixer"
-				}
-				{
-					id: "556EE1FF4827F0A1"
-					type: "item"
-					item: "create:basin"
-				}
-			]
-		}
-		{
-			x: -6.5d
-			y: 3.0d
+			x: -10.0d
+			y: -2.0d
 			description: [
 				"A Blaze will need to be summoned and bound into appropriate materials to create this device. Luckily, with control of the elements, summoning forth a single Blaze should prove to be a trivial task."
 				""
 				"Each type of elemental may be summoned using Gythia’s Perpetual Geas. Look up Summon Bound Elemental in JEI to see their recipe. These elementals will be summoned with their AI and loot disabled."
 			]
-			dependencies: ["126F4A37A0A21921"]
+			dependencies: ["30547CCA38EC3A0D"]
 			id: "5038FC4A51F51F31"
 			tasks: [{
 				id: "377114D7550BC0D8"
@@ -613,8 +453,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 1.0d
+			x: -7.0d
+			y: -1.0d
 			description: ["The strange process of making Aluminum will begin with Clay converted to Kaolin Clay. Discover the rest of the process through JEI. "]
 			dependencies: ["75C38D71F1A04EB4"]
 			id: "345CBD118EAA0C09"
@@ -633,8 +473,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 2.0d
+			x: 1.5d
+			y: -4.0d
 			description: [
 				"Use the Spirit of Calling to grow the Tree of Life somewhere in the Twilight Forest. Choose your spot carefully, as this same tree will be upgraded as you progress through the pack. "
 				""
@@ -644,7 +484,7 @@
 				""
 				"A block of Moonstone may also be suffused with daylight in a Natural Altar to create a Sunstone which may then be grown in a manner similar to Moonstone. "
 			]
-			dependencies: ["345CBD118EAA0C09"]
+			dependencies: ["729E9D41A28D0E4D"]
 			id: "668B76A0085B4054"
 			tasks: [{
 				id: "156E6D2ED289EC8F"
@@ -653,8 +493,9 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: 3.0d
+			icon: "blue_skies:moonstone_crystal"
+			x: 1.0d
+			y: -3.0d
 			shape: "hexagon"
 			description: [
 				"The moon known as the Everbright is a chill place of ice, snow, and roaming spirits. "
@@ -673,8 +514,8 @@
 		}
 		{
 			icon: "blue_skies:sunstone_crystal"
-			x: -1.5d
-			y: 3.0d
+			x: 2.0d
+			y: -3.0d
 			shape: "hexagon"
 			description: [
 				"The moon known as the Everdawn is a place of warmth and dangerous insects."
@@ -687,42 +528,271 @@
 				id: "31596C34895C8006"
 				type: "dimension"
 				title: "Visit the Everdawn"
+				icon: "blue_skies:sunstone_crystal"
 				dimension: "blue_skies:everdawn"
 			}]
 		}
 		{
-			x: -6.0d
-			y: 2.0d
-			dependencies: ["126F4A37A0A21921"]
-			id: "6ABCDCE95361076A"
-			tasks: [{
-				id: "0E077DE2DBCF9928"
-				type: "item"
-				item: "createaddition:rolling_mill"
-			}]
-		}
-		{
-			x: -5.0d
-			y: -3.5d
+			icon: "twilightforest:lich_trophy"
+			x: -13.0d
+			y: -5.0d
+			shape: "hexagon"
 			description: [
 				"While Charms of Life have been left scattered around these lands, there is one creature know for hoarding them: The Lich. "
 				""
-				"Defeat the lich to obtain the Charm. Maybe snatch their spell book at the same time; they won’t be needing it anymore. "
+				"Defeat the lich to obtain the Charm. Maybe snatch their spell book and ink at the same time; they won’t be needing it anymore. "
 			]
-			dependencies: ["4830632A0E6E9651"]
 			id: "370C40BCC3A6A055"
 			tasks: [
-				{
-					id: "33DC0C1E9B381D81"
-					type: "item"
-					item: "ars_elemental:anima_essence"
-				}
 				{
 					id: "3452A9AC39B219A4"
 					type: "item"
 					item: "ars_nouveau:novice_spell_book"
 				}
+				{
+					id: "4F31DB2A715A1983"
+					type: "item"
+					item: "supplementaries:antique_ink"
+				}
 			]
+		}
+		{
+			x: -8.5d
+			y: -3.0d
+			description: ["Luckily, despite the state of the Lich’s book, the Crush glyphs appear whole and in a usable state. Many others are going to need repair, but this will serve for now. "]
+			dependencies: ["272C349F5CF92FA0"]
+			id: "06416F333E89B682"
+			tasks: [{
+				id: "6F9B4EC955F522D8"
+				type: "item"
+				item: "ars_nouveau:glyph_crush"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -3.0d
+			dependencies: ["30DB748747B58442"]
+			id: "7507572BD048B6C9"
+			tasks: [{
+				id: "711069D305E66D19"
+				type: "item"
+				item: "ars_nouveau:scribes_table"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -5.0d
+			shape: "hexagon"
+			description: ["Find a spot marked by Uberous Soil in the Highlands, dig down to find a Troll den, and return with their Magic Beans."]
+			id: "3A1C75AE5E314CE0"
+			tasks: [{
+				id: "38BB526223B1CCD0"
+				type: "item"
+				item: "twilightforest:magic_beans"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -5.0d
+			shape: "hexagon"
+			description: ["Obtain a feather from a Raven. They may be found throughout the Twilight Forest."]
+			id: "65F93CF297E5B720"
+			tasks: [{
+				id: "3B27C0BE5E2BE901"
+				type: "item"
+				item: "twilightforest:raven_feather"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -4.0d
+			description: ["The elementals required to craft these Essences are not native to this land, but a rift may occasionally open when breaking Spawners, unleashing elementals and other fearful creatures. Come prepared for a fight."]
+			dependencies: ["65F93CF297E5B720"]
+			id: "1C6BF5FE58C49456"
+			tasks: [{
+				id: "6AB326583DEF4915"
+				type: "item"
+				item: "ars_nouveau:air_essence"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -4.0d
+			description: ["The elementals required to craft these Essences are not native to this land, but a rift may occasionally open when breaking Spawners, unleashing elementals and other fearful creatures. Come prepared for a fight."]
+			dependencies: ["1663996E4CDF9947"]
+			id: "605D0EC9ABE8595E"
+			tasks: [{
+				id: "2C9FC97C9F2B625B"
+				type: "item"
+				item: "ars_nouveau:water_essence"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -4.0d
+			description: ["The elementals required to craft these Essences are not native to this land, but a rift may occasionally open when breaking Spawners, unleashing elementals and other fearful creatures. Come prepared for a fight."]
+			dependencies: ["3A1C75AE5E314CE0"]
+			id: "272C349F5CF92FA0"
+			tasks: [{
+				id: "1FB74CF06AD39276"
+				type: "item"
+				item: "ars_nouveau:earth_essence"
+			}]
+		}
+		{
+			icon: "twilightforest:alpha_yeti_trophy"
+			x: -11.5d
+			y: -5.0d
+			shape: "hexagon"
+			description: ["Brave the frigid caves where Yeti make their homes and return with a sample of their fur."]
+			id: "1663996E4CDF9947"
+			tasks: [{
+				id: "13A0A51BB5337C79"
+				type: "item"
+				item: "twilightforest:alpha_yeti_fur"
+			}]
+		}
+		{
+			x: -13.0d
+			y: -4.0d
+			dependencies: ["370C40BCC3A6A055"]
+			id: "30DB748747B58442"
+			tasks: [{
+				id: "477CD97ADFBFC51B"
+				type: "item"
+				item: "ars_elemental:anima_essence"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -3.0d
+			description: ["Once repositories of ancient spell knowledge, these tomes have been animated into some twisted semblance of life. With some care, some spells may still be extracted from them, however. Summoning a few will be an excellent way to supplement this newfound spell book. "]
+			dependencies: ["30DB748747B58442"]
+			id: "28A304E0F1600640"
+			tasks: [{
+				id: "3E2B1B3D745AD10D"
+				type: "item"
+				item: "kubejs:ritual_summon_death_tome"
+			}]
+		}
+		{
+			icon: "twilightforest:hydra_trophy"
+			x: -10.0d
+			y: -5.0d
+			shape: "hexagon"
+			description: ["Defeat the Hydra in the Fire Swamp and return with a sample of its blood."]
+			id: "3D88325CD7EA9978"
+			tasks: [{
+				id: "5149BC32070634D6"
+				type: "item"
+				item: "twilightforest:fiery_blood"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -4.0d
+			description: ["The elementals required to craft these Essences are not native to this land, but a rift may occasionally open when breaking Spawners, unleashing elementals and other fearful creatures. Come prepared for a fight."]
+			dependencies: ["3D88325CD7EA9978"]
+			id: "7A3B33287BFF4CB1"
+			tasks: [{
+				id: "700787ED503D9218"
+				type: "item"
+				item: "ars_nouveau:fire_essence"
+			}]
+		}
+		{
+			icon: "twilightforest:snow_queen_trophy"
+			x: 1.5d
+			y: -5.0d
+			shape: "hexagon"
+			id: "729E9D41A28D0E4D"
+			tasks: [{
+				id: "2AC77513E49B126E"
+				type: "item"
+				item: "blue_skies:moonstone"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -3.0d
+			dependencies: ["7A3B33287BFF4CB1"]
+			id: "30547CCA38EC3A0D"
+			tasks: [{
+				id: "449066CA51EE1BF6"
+				type: "item"
+				item: "twilightforest:fiery_ingot"
+			}]
+		}
+		{
+			icon: "ars_nouveau:conjuration_essence"
+			x: -5.5d
+			y: -4.0d
+			description: [
+				"With the seeds, herbs, and saplings found among the remains of the Naga, a garden should be top priority. A number of these plants appear to have potent magical properties that will prove invaluable. "
+				""
+				"Brewing Magebloom Seeds from these plants should be a simple task and will allow the creation of this powerful essence."
+			]
+			dependencies: ["73CDA6ED2393DE42"]
+			id: "087CFEB4B77FAE9B"
+			tasks: [{
+				id: "5A391AC753037129"
+				type: "item"
+				item: "ars_nouveau:conjuration_essence"
+			}]
+		}
+		{
+			title: "Familiar Friends"
+			x: -5.5d
+			y: -3.0d
+			description: [
+				"With the Naga slaughtered and Conjuration Essence mastered, it is possible to call forth a variety of helpful fae creatures. They take many forms and grant many useful boons. "
+				""
+				"================================="
+				""
+				"Draw out the pentacle known as Aching’s Amicable Accord, detailed in the Dictionary of Spirits, to begin. "
+				""
+				"A selection of Occultism, Hexerei, and Ars Nouveau critters may be summoned; research uses for Mindful Trance Blend to see what is available."
+			]
+			dependencies: ["087CFEB4B77FAE9B"]
+			id: "7CFD3DFD4C593EB5"
+			tasks: [{
+				id: "05F83955C4E12297"
+				type: "item"
+				item: "hexerei:mindful_trance_blend"
+			}]
+		}
+		{
+			x: -9.0d
+			y: -1.0d
+			dependencies: ["79B755D0BDB6A8B7"]
+			id: "44B02A5817C4144A"
+			tasks: [{
+				id: "7E269B72F57C62D3"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -1.0d
+			dependencies: ["79B755D0BDB6A8B7"]
+			id: "1B65494C4D2422F6"
+			tasks: [{
+				id: "0B175CCA250DA302"
+				type: "item"
+				item: "createaddition:rolling_mill"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -0.5d
+			dependencies: ["3B372F597A05E777"]
+			id: "505DBC92B7AC1AFE"
+			tasks: [{
+				id: "7C7C33FFD852E5A8"
+				type: "item"
+				item: "thermal:machine_furnace"
+			}]
 		}
 	]
 	quest_links: [ ]

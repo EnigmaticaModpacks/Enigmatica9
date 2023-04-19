@@ -95,6 +95,27 @@ ServerEvents.recipes((event) => {
                 D: 'createaddition:straw'
             },
             id: `${id_prefix}alchemists_crown`
+        },
+        {
+            output: '2x ars_nouveau:repository',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:nuggets/electrum',
+                B: 'ars_nouveau:archwood_chest',
+                C: '#forge:gems/source'
+            },
+            id: `ars_nouveau:repository`
+        },
+        {
+            output: 'ars_nouveau:dominion_wand',
+            pattern: [' AB', ' CA', 'CD '],
+            key: {
+                A: '#forge:nuggets/electrum',
+                B: '#forge:gems/source',
+                C: '#forge:rods/wooden',
+                D: '#forge:fabrics/infused'
+            },
+            id: `${id_prefix}dominion_wand`
         }
     ];
 

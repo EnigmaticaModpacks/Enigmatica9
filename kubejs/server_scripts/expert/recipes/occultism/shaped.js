@@ -6,12 +6,22 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            output: 'occultism:sacrificial_bowl',
-            pattern: ['A A', 'AAA'],
+            output: '4x occultism:sacrificial_bowl',
+            pattern: ['A A', 'ABA'],
             key: {
-                A: 'pneumaticcraft:compressed_stone'
+                A: 'ars_nouveau:sourcestone',
+                B: '#forge:storage_blocks/source'
             },
             id: `occultism:crafting/sacrificial_bowl`
+        },
+        {
+            output: 'occultism:golden_sacrificial_bowl',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: '#forge:nuggets/gold',
+                B: 'occultism:sacrificial_bowl'
+            },
+            id: `occultism:crafting/golden_sacrificial_bowl`
         },
         {
             output: '5x occultism:wormhole_frame',

@@ -2,221 +2,209 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/ars_nouveau/enchanting_apparatus/';
     const recipes = [
         {
-            output: { item: 'ars_nouveau:archmage_hood' },
-            pedestalItems: [
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } }
+            output: 'ars_nouveau:archmage_hood',
+            inputs: [
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber'
             ],
-            reagent: [
-                { item: 'minecraft:diamond_helmet' },
-                { item: 'naturesaura:sky_helmet' },
-                { item: 'blue_skies:charoite_helmet' },
-                { item: 'twilightforest:knightmetal_helmet' },
-                { item: 'twilightforest:steeleaf_helmet' }
+            reagents: [
+                'minecraft:diamond_helmet',
+                'naturesaura:sky_helmet',
+                'blue_skies:charoite_helmet',
+                'twilightforest:knightmetal_helmet',
+                'twilightforest:steeleaf_helmet'
             ],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `ars_nouveau:archmage_hood`
         },
         {
-            output: { item: 'ars_nouveau:archmage_robes' },
-            pedestalItems: [
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } }
+            output: 'ars_nouveau:archmage_robes',
+            inputs: [
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber'
             ],
-            reagent: [
-                { item: 'minecraft:diamond_chestplate' },
-                { item: 'naturesaura:sky_chest' },
-                { item: 'blue_skies:charoite_chestplate' },
-                { item: 'twilightforest:knightmetal_chestplate' },
-                { item: 'twilightforest:steeleaf_chestplate' }
+            reagents: [
+                'minecraft:diamond_chestplate',
+                'naturesaura:sky_chest',
+                'blue_skies:charoite_chestplate',
+                'twilightforest:knightmetal_chestplate',
+                'twilightforest:steeleaf_chestplate'
             ],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `ars_nouveau:archmage_robes`
         },
         {
-            output: { item: 'ars_nouveau:archmage_leggings' },
-            pedestalItems: [
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } }
+            output: 'ars_nouveau:archmage_leggings',
+            inputs: [
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber'
             ],
-            reagent: [
-                { item: 'minecraft:diamond_leggings' },
-                { item: 'naturesaura:sky_pants' },
-                { item: 'blue_skies:charoite_leggings' },
-                { item: 'twilightforest:knightmetal_leggings' },
-                { item: 'twilightforest:steeleaf_leggings' }
+            reagents: [
+                'minecraft:diamond_leggings',
+                'naturesaura:sky_pants',
+                'blue_skies:charoite_leggings',
+                'twilightforest:knightmetal_leggings',
+                'twilightforest:steeleaf_leggings'
             ],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `ars_nouveau:archmage_leggings`
         },
         {
-            output: { item: 'ars_nouveau:archmage_boots' },
-            pedestalItems: [
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } }
+            output: 'ars_nouveau:archmage_boots',
+            inputs: [
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber'
             ],
-            reagent: [
-                { item: 'minecraft:diamond_boots' },
-                { item: 'naturesaura:sky_shoes' },
-                { item: 'blue_skies:charoite_boots' },
-                { item: 'twilightforest:knightmetal_boots' },
-                { item: 'twilightforest:steeleaf_boots' }
+            reagents: [
+                'minecraft:diamond_boots',
+                'naturesaura:sky_shoes',
+                'blue_skies:charoite_boots',
+                'twilightforest:knightmetal_boots',
+                'twilightforest:steeleaf_boots'
             ],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `ars_nouveau:archmage_boots`
         },
         {
-            output: { item: 'ars_nouveau:apprentice_hood' },
-            pedestalItems: [
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } }
+            output: 'ars_nouveau:apprentice_hood',
+            inputs: [
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber'
             ],
-            reagent: [
-                { item: 'minecraft:iron_helmet' },
-                { item: 'naturesaura:infused_iron_helmet' },
-                { item: 'blue_skies:aquite_helmet' },
-                { item: 'twilightforest:ironwood_helmet' },
-                { item: 'immersiveengineering:armor_steel_head' }
+            reagents: [
+                'minecraft:iron_helmet',
+                'naturesaura:infused_iron_helmet',
+                'blue_skies:aquite_helmet',
+                'twilightforest:ironwood_helmet',
+                'immersiveengineering:armor_steel_head'
             ],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `ars_nouveau:apprentice_hood`
         },
         {
-            output: { item: 'ars_nouveau:apprentice_robes' },
-            pedestalItems: [
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } }
+            output: 'ars_nouveau:apprentice_robes',
+            inputs: [
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber'
             ],
-            reagent: [
-                { item: 'minecraft:iron_chestplate' },
-                { item: 'naturesaura:infused_iron_chest' },
-                { item: 'blue_skies:aquite_chestplate' },
-                { item: 'twilightforest:ironwood_chestplate' },
-                { item: 'immersiveengineering:armor_steel_chest' }
+            reagents: [
+                'minecraft:iron_chestplate',
+                'naturesaura:infused_iron_chest',
+                'blue_skies:aquite_chestplate',
+                'twilightforest:ironwood_chestplate',
+                'immersiveengineering:armor_steel_chest'
             ],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `ars_nouveau:apprentice_robes`
         },
         {
-            output: { item: 'ars_nouveau:apprentice_leggings' },
-            pedestalItems: [
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } }
+            output: 'ars_nouveau:apprentice_leggings',
+            inputs: [
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber'
             ],
-            reagent: [
-                { item: 'minecraft:iron_leggings' },
-                { item: 'naturesaura:infused_iron_pants' },
-                { item: 'blue_skies:aquite_leggings' },
-                { item: 'twilightforest:ironwood_leggings' },
-                { item: 'immersiveengineering:armor_steel_legs' }
+            reagents: [
+                'minecraft:iron_leggings',
+                'naturesaura:infused_iron_pants',
+                'blue_skies:aquite_leggings',
+                'twilightforest:ironwood_leggings',
+                'immersiveengineering:armor_steel_legs'
             ],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `ars_nouveau:apprentice_leggings`
         },
         {
-            output: { item: 'ars_nouveau:apprentice_boots' },
-            pedestalItems: [
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } }
+            output: 'ars_nouveau:apprentice_boots',
+            inputs: [
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber'
             ],
-            reagent: [
-                { item: 'minecraft:iron_boots' },
-                { item: 'naturesaura:infused_iron_shoes' },
-                { item: 'blue_skies:aquite_boots' },
-                { item: 'twilightforest:ironwood_boots' },
-                { item: 'immersiveengineering:armor_steel_feet' }
+            reagents: [
+                'minecraft:iron_boots',
+                'naturesaura:infused_iron_shoes',
+                'blue_skies:aquite_boots',
+                'twilightforest:ironwood_boots',
+                'immersiveengineering:armor_steel_feet'
             ],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `ars_nouveau:apprentice_boots`
         },
         {
-            output: { item: 'ars_nouveau:novice_hood' },
-            pedestalItems: [
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } }
+            output: 'ars_nouveau:novice_hood',
+            inputs: [
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber'
             ],
-            reagent: [
-                { item: 'minecraft:golden_helmet' },
-                { item: 'blue_skies:pyrope_helmet' },
-                { item: 'blue_skies:horizonite_helmet' }
-            ],
+            reagents: ['minecraft:golden_helmet', 'blue_skies:pyrope_helmet', 'blue_skies:horizonite_helmet'],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `ars_nouveau:novice_hood`
         },
         {
-            output: { item: 'ars_nouveau:novice_robes' },
-            pedestalItems: [
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } }
+            output: 'ars_nouveau:novice_robes',
+            inputs: [
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber'
             ],
-            reagent: [
-                { item: 'minecraft:golden_chestplate' },
-                { item: 'blue_skies:pyrope_chestplate' },
-                { item: 'blue_skies:horizonite_chestplate' }
+            reagents: [
+                'minecraft:golden_chestplate',
+                'blue_skies:pyrope_chestplate',
+                'blue_skies:horizonite_chestplate'
             ],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `ars_nouveau:novice_robes`
         },
         {
-            output: { item: 'ars_nouveau:novice_leggings' },
-            pedestalItems: [
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } }
+            output: 'ars_nouveau:novice_leggings',
+            inputs: [
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber'
             ],
-            reagent: [
-                { item: 'minecraft:golden_leggings' },
-                { item: 'blue_skies:pyrope_leggings' },
-                { item: 'blue_skies:horizonite_leggings' }
-            ],
+            reagents: ['minecraft:golden_leggings', 'blue_skies:pyrope_leggings', 'blue_skies:horizonite_leggings'],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `ars_nouveau:novice_leggings`
         },
         {
-            output: { item: 'ars_nouveau:novice_boots' },
-            pedestalItems: [
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } },
-                { item: { item: 'ars_nouveau:magebloom_fiber' } }
+            output: 'ars_nouveau:novice_boots',
+            inputs: [
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber',
+                'ars_nouveau:magebloom_fiber'
             ],
-            reagent: [
-                { item: 'minecraft:golden_boots' },
-                { item: 'blue_skies:pyrope_boots' },
-                { item: 'blue_skies:horizonite_boots' }
-            ],
+            reagents: ['minecraft:golden_boots', 'blue_skies:pyrope_boots', 'blue_skies:horizonite_boots'],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `ars_nouveau:novice_boots`
@@ -225,6 +213,10 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'ars_nouveau:enchanting_apparatus';
+        recipe.output = Item.of(recipe.output).toJson();
+        recipe.pedestalItems = recipe.inputs.map((input) => ({ item: Ingredient.of(input).toJson() }));
+        recipe.reagent = recipe.reagents.map((reagent) => Ingredient.of(reagent).toJson());
+
         event.custom(recipe).id(recipe.id);
     });
 });

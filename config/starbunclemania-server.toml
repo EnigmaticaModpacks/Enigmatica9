@@ -5,7 +5,7 @@
 	starbattery_ratio = 500000
 	#Value of milli-bucket of fluid converted in source by the sourcelink
 	#Example entry: "minecraft:lava=1.6"
-	fluid_to_source = ["industrialforegoing:ether_gas=5.0", "starbunclemania:source_fluid=0.9", "pneumaticcraft:biodiesel=0.5", "immersiveengineering:biodiesel=0.5", "industrialforegoing:sludge=0.1"]
+	fluid_to_source = []
 	#Transfer rate of the gas starbuncles
 	#Range: > 1
 	starballoon_ratio = 16000

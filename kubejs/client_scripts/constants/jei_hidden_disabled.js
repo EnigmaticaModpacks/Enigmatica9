@@ -318,6 +318,8 @@ jei.expert.items.disabled = [
     'industrialforegoing:spores_recreator',
     'industrialforegoing:mob_slaughter_factory',
     'industrialforegoing:resourceful_furnace',
+
+    /mekanism:universal_cable/,
     'mekanism:advanced_energy_cube',
     'mekanism:advanced_induction_cell',
     'mekanism:advanced_induction_provider',
@@ -332,8 +334,25 @@ jei.expert.items.disabled = [
     'mekanism:ultimate_energy_cube',
     'mekanism:ultimate_induction_cell',
     'mekanism:ultimate_induction_provider',
-    'mekanism:seismic_reader',
     'mekanism:energy_tablet',
+    'mekanism:seismic_reader',
+    'mekanism:seismic_vibrator',
+    'mekanism:jetpack',
+    'mekanism:jetpack_armored',
+    'mekanism:free_runners',
+    'mekanism:free_runners_armored',
+    'mekanism:atomic_disassembler',
+    'mekanism:electric_bow',
+    'mekanism:flamethrower',
+    'mekanism:dictionary',
+    'mekanism:crafting_formula',
+    'mekanism:formulaic_assemblicator',
+    'mekanism:geiger_counter',
+    'mekanism:dosimeter',
+    /mekanism:hazmat/,
+    /mekanism:scuba/,
+    'mekanism:oredictionificator',
+
     'mekanismgenerators:gas_burning_generator',
     'mekanismgenerators:advanced_solar_generator',
     'mekanismgenerators:bio_generator',
@@ -358,6 +377,7 @@ jei.expert.items.disabled = [
     'mekanismgenerators:turbine_valve',
     'mekanismgenerators:turbine_vent',
     'mekanismgenerators:wind_generator',
+
     /mininggadgets:upgrade_battery/,
     'mininggadgets:upgrade_three_by_three',
     'naturesaura:animal_generator',
@@ -378,6 +398,7 @@ jei.expert.items.disabled = [
     'naturesaura:dimension_rail_end',
     'naturesaura:dimension_rail_nether',
     'naturesaura:dimension_rail_overworld',
+    'naturesaura:rf_converter',
     /occultism:chalk_.*_impure/,
     'pneumaticcraft:advanced_air_compressor',
     'pneumaticcraft:advanced_liquid_compressor',
@@ -392,15 +413,13 @@ jei.expert.items.disabled = [
     'pneumaticcraft:jumping_upgrade_1',
     'pneumaticcraft:radiation_shielding_upgrade',
     'pneumaticcraft:search_upgrade',
-    /powah:furnator/,
-    /powah:magmator/,
-    /powah:solar_panel/,
-    /powah:thermo_generator/,
-    /powah:(capacitor|reactor|energ.*|.*_cell|battery|player.*|ender.*)_(blazing|hardened)/,
+    /powah:(thermo_generator|solar_panel|furnator|magmator|reactor|energy|battery|ender)/,
+    /powah:(energizing_rod_|player_transmitter_|capacitor_)(blazing|hardened)/,
     'powah:dielectric_casing',
     'powah:ender_core',
     'powah:player_aerial_pearl',
     'powah:aerial_pearl',
+    'sophisticatedbackpacks:battery_upgrade',
     'superiorshields:copper_shield',
     'superiorshields:diamond_shield',
     'superiorshields:electric_shield',
@@ -434,6 +453,7 @@ jei.expert.items.disabled = [
     'thermal:energy_cell',
     'thermal:flux_capacitor',
     'thermal:device_potion_diffuser',
+    'thermal:rf_potato',
     'twilightforest:candelabra',
     'twilightforest:keepsake_casket',
     'twilightforest:cube_of_annihilation',
@@ -469,6 +489,7 @@ jei.expert.recipes.hidden = [
             'naturesaura:dimension_rail_nether',
             'naturesaura:dimension_rail_overworld',
             'naturesaura:animal_spawner',
+            'naturesaura:rf_converter',
             'ars_nouveau:imbuement_chamber',
             'ars_nouveau:mycelial_sourcelink',
             'ars_nouveau:vitalic_sourcelink',
@@ -476,7 +497,8 @@ jei.expert.recipes.hidden = [
             'ars_nouveau:agronomic_sourcelink',
             'ars_nouveau:conjuration_essence_to_soul_sand',
             'ars_nouveau:blank_thread',
-            'ars_nouveau:novice_spell_book'
+            'ars_nouveau:novice_spell_book',
+            'ars_nouveau:scribes_table'
         ]
     },
     {
@@ -520,7 +542,9 @@ jei.expert.recipes.hidden = [
             'ars_nouveau:jar_of_light',
             'ars_nouveau:potion_flask',
             'ars_nouveau:potion_melder',
-            'ars_nouveau:alchemists_crown'
+            'ars_nouveau:alchemists_crown',
+            'ars_nouveau:dominion_wand',
+            'ars_nouveau:storage_lectern'
         ]
     }
 ];

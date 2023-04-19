@@ -12,7 +12,8 @@ ServerEvents.recipes((event) => {
             { id: 'ars_nouveau:agronomic_sourcelink', output: 'ars_nouveau:agronomic_sourcelink' },
             { id: 'ars_nouveau:conjuration_essence_to_soul_sand', output: 'minecraft:soul_sand' },
             { id: 'ars_nouveau:blank_thread', output: 'ars_nouveau:blank_thread' },
-            { id: 'ars_nouveau:novice_spell_book', output: 'ars_nouveau:novice_spell_book' }
+            { id: 'ars_nouveau:novice_spell_book', output: 'ars_nouveau:novice_spell_book' },
+            { id: 'ars_nouveau:scribes_table', output: 'ars_nouveau:scribes_table' }
         ],
         enchanting_apparatus: [
             { id: 'ars_nouveau:wixie_charm', output: 'ars_nouveau:wixie_charm' },
@@ -22,7 +23,9 @@ ServerEvents.recipes((event) => {
             { id: 'ars_nouveau:jar_of_light', output: 'ars_nouveau:jar_of_light' },
             { id: 'ars_nouveau:potion_flask', output: 'ars_nouveau:potion_flask' },
             { id: 'ars_nouveau:potion_melder', output: 'ars_nouveau:potion_melder' },
-            { id: 'ars_nouveau:alchemists_crown', output: 'ars_nouveau:alchemists_crown' }
+            { id: 'ars_nouveau:alchemists_crown', output: 'ars_nouveau:alchemists_crown' },
+            { id: 'ars_nouveau:dominion_wand', output: 'ars_nouveau:dominion_wand' },
+            { id: 'ars_nouveau:storage_lectern', output: 'ars_nouveau:storage_lectern' }
         ],
         imbuement: [
             // { id: 'ars_nouveau:recipe_id', output: 'ars_nouveau:recipe_output' }

@@ -14,6 +14,7 @@ ServerEvents.recipes((event) => {
         { mod: 'computercraft' },
         { mod: 'superiorshields' },
         { mod: 'mininggadgets' },
+        { mod: 'enigmaticunity' },
 
         { output: /pneumaticcraft:.*_upgrade/ },
         { output: /powah:player_transmitter.*/ },
@@ -32,13 +33,22 @@ ServerEvents.recipes((event) => {
 
         { type: 'thermal:smelter_recycle' },
         { type: 'ae2:charger' },
+        { type: 'occultism:crushing' },
 
+        { id: /ae2:inscriber/ },
         { id: 'ae2:network/blocks/crystal_processing_charger' },
-        { id: 'ae2:network/parts/quartz_fiber_part' },
-        { id: 'ae2:transform/fluix_crystals' },
+        { id: 'ae2:network/blocks/energy_dense_energy_cell' },
+        { id: 'ae2:network/blocks/quantum_link' },
         { id: 'ae2:network/blocks/controller' },
-        { id: 'ae2:misc/fluixpearl' },
         { id: `ae2:network/crafting/cpu_crafting_unit` },
+        { id: 'ae2:network/parts/quartz_fiber_part' },
+        { id: 'ae2:network/wireless_terminal' },
+        { id: 'ae2:network/upgrade_wireless_crafting_terminal' },
+        { id: 'ae2:transform/fluix_crystals' },
+        { id: 'ae2:misc/fluixpearl' },
+
+        { id: /blue_skies:.*_(helmet|chestplate|leggings|boots)/ },
+        { id: /blue_skies:.*_(sword|pickaxe|axe|shovel|hoe)/ },
 
         { id: 'constructionwand:stone_wand' },
         { id: 'constructionwand:iron_wand' },
@@ -68,7 +78,7 @@ ServerEvents.recipes((event) => {
         { id: 'hexerei:herb_jar_from_mixing_cauldron' },
         { id: 'hexerei:mixing_cauldron' },
 
-        { id: /immersiveengineering:blastfurnace\/fuel_charcoal/ },
+        { id: /immersiveengineering:blastfurnace\/fuel_/ },
         { id: /immersiveengineering:crafting\/.*_mix/ },
         { id: /immersiveengineering:crafting\/toolupgrade_powerpack_.*/ },
         { id: /immersiveengineering:crafting\/wirecoil_(?!redstone).*/ },
@@ -140,13 +150,32 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:mob_slaughter_factory' },
         { id: 'industrialforegoing:resourceful_furnace' },
 
-        { id: 'mekanism:teleportation_core' },
-        { id: 'mekanism:seismic_reader' },
-        { id: 'mekanism:energy_tablet' },
+        { id: /mekanism:transmitter\/universal_cable/ },
         { id: 'mekanism:upgrade/anchor' },
+        { id: 'mekanism:teleportation_core' },
+        { id: 'mekanism:energy_tablet' },
+        { id: 'mekanism:seismic_reader' },
+        { id: 'mekanism:seismic_vibrator' },
+        { id: 'mekanism:jetpack' },
+        { id: 'mekanism:jetpack_armored' },
+        { id: 'mekanism:free_runners' },
+        { id: 'mekanism:free_runners_armored' },
+        { id: 'mekanism:atomic_disassembler' },
+        { id: 'mekanism:electric_bow' },
+        { id: 'mekanism:flamethrower' },
+        { id: 'mekanism:dictionary' },
+        { id: 'mekanism:crafting_formula' },
+        { id: 'mekanism:formulaic_assemblicator' },
+        { id: 'mekanism:geiger_counter' },
+        { id: 'mekanism:dosimeter' },
+        { id: /mekanism:hazmat/ },
+        { id: /mekanism:scuba/ },
+        { id: 'mekanism:oredictionificator' },
 
         { id: 'minecraft:netherite_ingot' },
         { id: 'minecraft:lodestone' },
+        { id: /minecraft:diamond_(helmet|chestplate|leggings|boots)/ },
+        { id: /minecraft:diamond_(sword|pickaxe|axe|shovel|hoe)/ },
 
         { id: 'modularrouters:sender_module_1_alt' },
         { id: 'modularrouters:sender_module_2_x4' },
@@ -179,6 +208,7 @@ ServerEvents.recipes((event) => {
         { id: 'occultism:ritual/craft_stable_wormhole' },
         { id: 'occultism:ritual/craft_soul_gem' },
         { id: 'occultism:ritual/craft_familiar_ring' },
+        { id: 'occultism:spirit_fire/spirit_attuned_gem' },
 
         { id: /pneumaticcraft:.*_compressor/ },
         { id: /pneumaticcraft:thermo_plant\/.*_drill_bit/ },
@@ -194,7 +224,6 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:spawner_agitator' },
         { id: 'pneumaticcraft:module_expansion_card' },
         { id: 'pneumaticcraft:compressed_iron_gear' },
-
         { id: 'pneumaticcraft:pneumatic_helmet' },
         { id: 'pneumaticcraft:pneumatic_chestplate' },
         { id: 'pneumaticcraft:pneumatic_leggings' },
@@ -208,14 +237,17 @@ ServerEvents.recipes((event) => {
         { id: 'powah:crafting/aerial_pearl' },
         { id: 'powah:energizing/ender_core' },
         { id: 'powah:energizing/blazing_crystal' },
-        { id: /powah:crafting\/energizing_rod_/ },
-        { id: /powah:crafting\/battery_/ },
-        { id: /powah:crafting\/(cable|capacitor|reactor|energ.*|.*_cell|battery|player.*|ender.*)_(blazing|hardened)/ },
+        {
+            id: /powah:crafting\/(thermo_generator|solar_panel|furnator|magmator|reactor|energy|cable|battery|ender)/
+        },
+        { id: /powah:crafting\/(energizing_rod_|player_transmitter_|capacitor_)(blazing|hardened)/ },
 
-        { id: 'quark:tools/crafting/runes/rainbow_rune' },
+        { id: /quark:.*rainbow_rune/ },
 
         { id: 'rftoolsbase:dimensionalshard' },
         { id: 'rftoolsbase:infused_diamond' },
+
+        { id: 'sophisticatedbackpacks:battery_upgrade' },
 
         { id: `spirit:soul_engulfing/soul_powder` },
         { id: `spirit:soul_engulfing/soul_powder_block` },
@@ -226,6 +258,8 @@ ServerEvents.recipes((event) => {
         { id: 'supplementaries:jar' },
         { id: 'supplementaries:soap' },
 
+        { id: /thermal:machines\/pulverizer\/pulverizer_.*_to_dust/ },
+        { id: /thermal:augments/ },
         { id: 'thermal:enderium_dust_2' },
         { id: 'thermal:lumium_dust_4' },
         { id: 'thermal:signalum_dust_4' },
@@ -244,8 +278,7 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:aquachow_4' },
         { id: 'thermal:deep_aquachow_4' },
         { id: 'thermal:device_potion_diffuser' },
-        { id: 'thermal:augments/upgrade_augment_2' },
-        { id: 'thermal:augments/upgrade_augment_3' },
+        { id: 'thermal:tools/rf_potato' },
 
         { id: 'twilightforest:equipment/fiery_ingot_crafting' },
         { id: 'twilightforest:material/fiery_iron_ingot' },

@@ -76,6 +76,59 @@ ServerEvents.recipes((event) => {
             results: [{ item: 'powah:crystal_blazing', count: 4 }],
             heatRequirement: 'heated',
             id: `${id_prefix}crystal_blazing`
+        },
+        {
+            ingredients: [
+                { tag: 'forge:dusts/copper' },
+                { tag: 'forge:dusts/copper' },
+                { tag: 'forge:dusts/copper' },
+                { tag: 'forge:dusts/tin' },
+                { tag: 'forge:dusts/redstone' }
+            ],
+            results: [{ item: AlmostUnified.getPreferredItemForTag('forge:dusts/bronze').getId(), count: 4 }],
+            id: `${id_prefix}bronze_dust`
+        },
+        {
+            ingredients: [
+                { tag: 'forge:dusts/silver' },
+                { tag: 'forge:dusts/silver' },
+                { tag: 'forge:dusts/gold' },
+                { tag: 'forge:dusts/gold' },
+                { tag: 'forge:dusts/redstone' }
+            ],
+            results: [{ item: AlmostUnified.getPreferredItemForTag('forge:dusts/electrum').getId(), count: 4 }],
+            id: `${id_prefix}electrum_dust`
+        },
+        {
+            ingredients: [
+                { tag: 'forge:dusts/iron' },
+                { tag: 'forge:dusts/iron' },
+                { tag: 'forge:dusts/nickel' },
+                { tag: 'forge:dusts/redstone' },
+                { tag: 'forge:dusts/redstone' }
+            ],
+            results: [{ item: AlmostUnified.getPreferredItemForTag('forge:dusts/invar').getId(), count: 3 }],
+            id: `${id_prefix}invar_dust`
+        },
+        {
+            ingredients: [
+                { tag: 'forge:dusts/nickel' },
+                { tag: 'forge:dusts/nickel' },
+                { tag: 'forge:dusts/copper' },
+                { tag: 'forge:dusts/copper' },
+                { tag: 'forge:dusts/redstone' }
+            ],
+            results: [{ item: AlmostUnified.getPreferredItemForTag('forge:dusts/constantan').getId(), count: 4 }],
+            id: `${id_prefix}constantan_dust`
+        },
+        {
+            ingredients: [{ tag: 'forge:essences/manipulation' }, { amount: 1000, fluidTag: 'forge:brine' }],
+            results: [
+                { item: 'mekanism:dust_lithium', count: 4 },
+                { item: 'occultism:iesnium_dust', count: 3 }
+            ],
+            heatRequirement: 'superheated',
+            id: `${id_prefix}iesnium_lithium_salt`
         }
     ];
 

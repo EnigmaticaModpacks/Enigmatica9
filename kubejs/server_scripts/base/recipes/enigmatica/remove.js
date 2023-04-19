@@ -172,6 +172,8 @@ ServerEvents.recipes((event) => {
         
         { type: 'pneumaticcraft:fuel_quality' },
 
+        { type: 'starbunclemania:fluid_sourcelink' },
+
         { type: 'thermal:lapidary_fuel' },
         { type: 'thermal:sawmill' },
         { type: 'thermal:pulverizer_recycle' },

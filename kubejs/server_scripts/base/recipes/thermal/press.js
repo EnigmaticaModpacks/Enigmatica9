@@ -33,54 +33,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}vegetable_oil_low_yield`
         },
         {
-            inputs: ['ae2:certus_quartz_crystal', 'ae2:calculation_processor_press'],
-            outputs: [{ item: 'ae2:printed_calculation_processor' }],
-            energy: 12000,
-            id: `${id_prefix}printed_calculation_processor`
-        },
-        {
-            inputs: ['#forge:gems/diamond', 'ae2:engineering_processor_press'],
-            outputs: [{ item: 'ae2:printed_engineering_processor' }],
-            energy: 12000,
-            id: `${id_prefix}printed_engineering_processor`
-        },
-        {
-            inputs: ['#forge:ingots/gold', 'ae2:logic_processor_press'],
-            outputs: [{ item: 'ae2:printed_logic_processor' }],
-            energy: 12000,
-            id: `${id_prefix}printed_logic_processor`
-        },
-        {
-            inputs: ['#forge:silicon', 'ae2:silicon_press'],
-            outputs: [{ item: 'ae2:printed_silicon' }],
-            energy: 4000,
-            id: `${id_prefix}printed_silicon`
-        },
-        {
-            inputs: ['#forge:storage_blocks/iron', 'ae2:calculation_processor_press'],
-            outputs: [{ item: 'ae2:calculation_processor_press' }],
-            energy: 12000,
-            id: `${id_prefix}calculation_processor_press`
-        },
-        {
-            inputs: ['#forge:storage_blocks/iron', 'ae2:engineering_processor_press'],
-            outputs: [{ item: 'ae2:engineering_processor_press' }],
-            energy: 12000,
-            id: `${id_prefix}engineering_processor_press`
-        },
-        {
-            inputs: ['#forge:storage_blocks/iron', 'ae2:logic_processor_press'],
-            outputs: [{ item: 'ae2:logic_processor_press' }],
-            energy: 12000,
-            id: `${id_prefix}logic_processor_press`
-        },
-        {
-            inputs: ['#forge:storage_blocks/iron', 'ae2:silicon_press'],
-            outputs: [{ item: 'ae2:silicon_press' }],
-            energy: 4000,
-            id: `${id_prefix}silicon_press`
-        },
-        {
             inputs: ['sushigocrafting:dried_seaweed_block'],
             outputs: [{ item: 'sushigocrafting:nori_sheets', count: 6 }],
             energy: 2000,

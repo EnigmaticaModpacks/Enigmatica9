@@ -5,15 +5,15 @@ ServerEvents.recipes((event) => {
 
     const id_prefix = 'enigmatica:expert/mekanism/reaction/';
     const recipes = [
-        // {
-        //     duration: 100,
-        //     fluidInput: { tag: 'minecraft:lava', amount: 1 },
-        //     gasInput: { gas: 'mekanism:oxygen', amount: 1 },
-        //     itemInput: { ingredient: { tag: 'forge:ingots/pig_iron' }, amount: 1 },
-        //     itemOutput: { item: 'minecraft:iron_ingot' },
-        //     energyRequired: 4000,
-        //     id: `${id_prefix}iron_ingot`
-        // }
+        {
+            gasOutput: { gas: 'mekanism:polonium', amount: 1000 },
+            itemInput: { ingredient: { item: 'minecraft:echo_shard' }, amount: 4 },
+            gasInput: { gas: 'mekanism:hydrofluoric_acid', amount: 100 },
+            fluidInput: { tag: 'forge:magicite', amount: 250 },
+            energyRequired: 10000,
+            duration: 1200,
+            id: `${id_prefix}polonium`
+        }
     ];
 
     recipes.forEach((recipe) => {

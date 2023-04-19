@@ -87,18 +87,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}infused_stone`
         },
         {
-            input: { item: 'naturesaura:infused_slab' },
-            output: 'pneumaticcraft:logistics_core',
-            count: 2,
-            pedestalItems: [
-                { item: { tag: 'forge:storage_blocks/carminite' } },
-                { item: { tag: 'forge:essences/manipulation' } },
-                { item: { tag: 'forge:essences/conjuration' } }
-            ],
-            source: 500,
-            id: `${id_prefix}logistics_core`
-        },
-        {
             input: { tag: 'forge:gems/source' },
             output: 'ars_nouveau:conjuration_essence',
             count: 1,
