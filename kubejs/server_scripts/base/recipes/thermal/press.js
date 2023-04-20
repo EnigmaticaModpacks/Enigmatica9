@@ -3,42 +3,86 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            inputs: ['minecraft:dandelion'],
             outputs: [{ fluid: 'industrialforegoing:latex', amount: 50 }],
+            inputs: ['minecraft:dandelion'],
             energy: 400,
             id: 'thermal:machines/press/press_dandelion_to_latex'
         },
         {
-            inputs: ['minecraft:vine'],
             outputs: [{ fluid: 'industrialforegoing:latex', amount: 50 }],
+            inputs: ['minecraft:vine'],
             energy: 400,
             id: 'thermal:machines/press/press_vine_to_latex'
         },
         {
-            inputs: [Ingredient.of(['thermal:peanut', 'blue_skies:solnut'])],
             outputs: [{ fluid: 'pneumaticcraft:vegetable_oil', amount: 180 }],
+            inputs: [Ingredient.of(['thermal:peanut', 'blue_skies:solnut'])],
             energy: 6400,
             id: `${id_prefix}vegetable_oil_high_yield`
         },
         {
-            inputs: [Ingredient.of(['thermal:corn', 'blue_skies:fiery_beans'])],
             outputs: [{ fluid: 'pneumaticcraft:vegetable_oil', amount: 120 }],
+            inputs: [Ingredient.of(['thermal:corn', 'blue_skies:fiery_beans'])],
             energy: 6400,
             id: `${id_prefix}vegetable_oil_medium_yield`
         },
         {
-            inputs: [Ingredient.of(['thermal:sadiroot', 'supplementaries:flax_seeds', 'immersiveengineering:seed'])],
             outputs: [{ fluid: 'pneumaticcraft:vegetable_oil', amount: 60 }],
+            inputs: [Ingredient.of(['thermal:sadiroot', 'supplementaries:flax_seeds', 'immersiveengineering:seed'])],
             energy: 6400,
             id: `${id_prefix}vegetable_oil_low_yield`
         },
         {
-            inputs: ['sushigocrafting:dried_seaweed_block'],
             outputs: [{ item: 'sushigocrafting:nori_sheets', count: 6 }],
+            inputs: ['sushigocrafting:dried_seaweed_block'],
             energy: 2000,
             id: `${id_prefix}nori_sheets`
         }
     ];
+
+    const rod_materials = [
+        'iron',
+        'lead',
+        'constantan',
+        'osmium',
+        'electrum',
+        'nickel',
+        'copper',
+        'enderium',
+        'signalum',
+        'lumium',
+        'gold',
+        'aluminum',
+        'steel',
+        'uranium',
+        'silver',
+        'bronze',
+        'brass',
+        'rose_gold',
+        'zinc',
+        'invar',
+        'tin'
+    ];
+
+    rod_materials.forEach((material) => {
+        recipes.push({
+            outputs: [{ item: `emendatusenigmatica:${material}_rod`, count: 2 }],
+            inputs: ['immersiveengineering:mold_rod', `#forge:plates/${material}`],
+            energy: 2400,
+            id: `${id_prefix}${material}_rod`
+        });
+    });
+
+    const plate_materials = ['osmium', 'brass', 'zinc'];
+
+    plate_materials.forEach((material) => {
+        recipes.push({
+            outputs: [{ item: `emendatusenigmatica:${material}_plate`, count: 1 }],
+            inputs: [`#forge:ingots/${material}`],
+            energy: 2400,
+            id: `${id_prefix}${material}_plate`
+        });
+    });
 
     recipes.forEach((recipe) => {
         recipe.type = 'thermal:press';

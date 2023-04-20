@@ -1,20 +1,23 @@
 ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:normal/create/splashing/';
+    if (global.isNormalMode == false) {
+        return;
+    }
 
     let recipes = [
         {
             ingredients: [Ingredient.of('#create:crushed_ores/netherite', 1)],
             results: [
-                Item.of(AlmostUnified.getPreferredItemForTag('forge:nuggets/netherite'), 3).toJson(),
+                Item.of('emendatusenigmatica:netherite_nugget', 3).toJson(),
                 {
                     chance: 0.66,
                     count: 3,
-                    item: AlmostUnified.getPreferredItemForTag('forge:nuggets/netherite').getId()
+                    item: 'emendatusenigmatica:netherite_nugget'
                 },
                 {
                     chance: 0.33,
                     count: 3,
-                    item: AlmostUnified.getPreferredItemForTag('forge:nuggets/netherite').getId()
+                    item: 'emendatusenigmatica:netherite_nugget'
                 }
             ],
             id: `${id_prefix}netherite_washing`

@@ -53,6 +53,7 @@ ServerEvents.recipes((event) => {
         { id: 'constructionwand:stone_wand' },
         { id: 'constructionwand:iron_wand' },
 
+        { id: /create:pressing\/.*_ingot/ },
         { id: 'create:crafting/kinetics/white_sail' },
         { id: 'create:mechanical_crafting/wand_of_symmetry' },
         { id: 'create:mechanical_crafting/extendo_grip' },
@@ -63,13 +64,15 @@ ServerEvents.recipes((event) => {
         { id: 'create:item_application/brass_casing_from_log' },
         { id: 'create:conversion_0' },
 
+        { id: /createaddition:pressing\/.*_ingot/ },
+        { id: /createaddition:crafting\/capacitor/ },
         { id: 'createaddition:mechanical_crafting/tesla_coil' },
         { id: 'createaddition:mechanical_crafting/electric_motor' },
-        { id: /createaddition:crafting\/capacitor/ },
         { id: 'createaddition:crafting/portable_energy_interface' },
 
         { id: /emendatusenigmatica:plate\/from_ingot/ },
-        { id: /emendatusenigmatica:dust\/from_ore/ },
+        { id: /emendatusenigmatica:rod\/from_ingot/ },
+        { id: /emendatusenigmatica:gear\/from_ingot/ },
 
         { id: 'farmersdelight:integration/immersiveengineering/metalpress/pumpkin' },
 
@@ -332,6 +335,15 @@ ServerEvents.recipes((event) => {
         { mod: 'thermal', id: /dynamo/ },
 
         // Disable Ore Processing
+
+        { id: /emendatusenigmatica:.*from_ore/ },
+        { id: /emendatusenigmatica:.*from_raw/ },
+        { id: /emendatusenigmatica:.*from_raw_block/ },
+        { id: /emendatusenigmatica:.*from_slurry/ },
+        { id: /emendatusenigmatica:.*from_crystal/ },
+        { id: /emendatusenigmatica:.*from_shard/ },
+        { id: /emendatusenigmatica:.*from_clump/ },
+        { id: /emendatusenigmatica:slurry\/clean/ },
 
         { type: 'minecraft:smelting', output: '#forge:nuggets' },
         { type: 'minecraft:smelting', output: '#forge:ingots' },
