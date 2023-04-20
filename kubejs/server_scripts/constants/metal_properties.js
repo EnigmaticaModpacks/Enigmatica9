@@ -58,7 +58,7 @@ const metal_properties = {
     },
     lead: {
         meltingPoint: 330,
-        crushing_tier: 2,
+        crushing_tier: 1,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'silver' },
             create: { processingTime: 300 },
@@ -125,6 +125,7 @@ const metal_properties = {
         }
     },
     horizonite: {
+        crushing_tier: 3,
         // meltingPoint: 0,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'ventium' },
@@ -132,6 +133,7 @@ const metal_properties = {
         }
     },
     ventium: {
+        crushing_tier: 3,
         // meltingPoint: 0,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'falsite' },
@@ -139,6 +141,7 @@ const metal_properties = {
         }
     },
     falsite: {
+        crushing_tier: 3,
         // meltingPoint: 0,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'horizonite' },
@@ -146,19 +149,25 @@ const metal_properties = {
         }
     },
     enderium: {
-        meltingPoint: 1450
+        meltingPoint: 1450,
+        crushing_tier: 4
     },
     signalum: {
-        meltingPoint: 1272
+        meltingPoint: 1272,
+        crushing_tier: 4
     },
     lumium: {
-        meltingPoint: 1354
+        meltingPoint: 1354,
+        crushing_tier: 4
     },
     infused_iron: {
         meltingPoint: 850
     },
-    sky_metal: {
+    sky: {
         meltingPoint: 950
+    },
+    tainted_gold: {
+        // meltingPoint: 1000
     },
     energized_steel: {
         meltingPoint: 875
@@ -166,21 +175,23 @@ const metal_properties = {
     // TODO, Add  melting Points for those metals:
     brass: {
         // meltingPoint: 1000
+        crushing_tier: 2
     },
     bronze: {
         // meltingPoint: 1000
+        crushing_tier: 1
     },
     constantan: {
         // meltingPoint: 1000
+        crushing_tier: 2
     },
     electrum: {
         // meltingPoint: 1000
-    },
-    infused_iron: {
-        // meltingPoint: 1000
+        crushing_tier: 1
     },
     invar: {
         // meltingPoint: 1000
+        crushing_tier: 3
     },
     refined_glowstone: {
         // meltingPoint: 1000
@@ -191,19 +202,18 @@ const metal_properties = {
     rose_gold: {
         // meltingPoint: 1000
     },
-    sky_ingot: {
-        // meltingPoint: 1000
-    },
     soul_steel: {
         // meltingPoint: 1000
     },
     steel: {
         // meltingPoint: 1000
-    },
-    tainted_gold: {
-        // meltingPoint: 1000
+        crushing_tier: 4
     },
     andesite: {
+        // meltingPoint: 1000
+    },
+    netherite: {
+        crushing_tier: 4
         // meltingPoint: 1000
     }
 };
