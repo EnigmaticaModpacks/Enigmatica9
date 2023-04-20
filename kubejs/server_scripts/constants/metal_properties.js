@@ -58,7 +58,7 @@ const metal_properties = {
     },
     lead: {
         meltingPoint: 330,
-        crushing_tier: 1,
+        crushing_tier: 2,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'silver' },
             create: { processingTime: 300 },
