@@ -63,6 +63,7 @@ function getItemFromTag(tag) {
 const gem_properties = {
     redstone: {
         meltingPoint: 660,
+        crushing_tier: 1,
         oreProcessing: {
             output: {
                 type: 'dust',
@@ -111,6 +112,7 @@ const gem_properties = {
     },
     coal: {
         meltingPoint: 1149,
+        crushing_tier: 1,
         oreProcessing: {
             output: {
                 type: 'gem',
@@ -154,6 +156,7 @@ const gem_properties = {
     },
     diamond: {
         meltingPoint: 1450,
+        crushing_tier: 3,
         oreProcessing: {
             output: {
                 type: 'gem',
@@ -197,6 +200,7 @@ const gem_properties = {
     },
     emerald: {
         meltingPoint: 934,
+        crushing_tier: 3,
         oreProcessing: {
             output: {
                 type: 'gem',
@@ -240,6 +244,7 @@ const gem_properties = {
     },
     lapis: {
         meltingPoint: 115,
+        crushing_tier: 1,
         oreProcessing: {
             output: {
                 type: 'gem',
@@ -283,6 +288,7 @@ const gem_properties = {
     },
     quartz: {
         meltingPoint: 637,
+        crushing_tier: 2,
         oreProcessing: {
             output: {
                 type: 'gem',
@@ -319,7 +325,8 @@ const gem_properties = {
         }
     },
     sulfur: {
-        meltingPoint: 115
+        meltingPoint: 115,
+        crushing_tier: 1
         // oreProcessing: {
         //     output: {
         //         type: 'gem',
@@ -368,6 +375,7 @@ const gem_properties = {
     },
     apatite: {
         meltingPoint: 450,
+        crushing_tier: 1,
         oreProcessing: {
             output: {
                 type: 'gem',
@@ -410,7 +418,8 @@ const gem_properties = {
         }
     },
     fluorite: {
-        meltingPoint: 1418
+        meltingPoint: 1418,
+        crushing_tier: 2
         // oreProcessing: {
         //     output: {
         //         type: 'gem',
@@ -458,7 +467,8 @@ const gem_properties = {
         // }
     },
     dimensional: {
-        meltingPoint: 1450
+        meltingPoint: 1450,
+        crushing_tier: 2
         // oreProcessing: {
         //     output: {
         //         type: 'dust',
@@ -496,7 +506,8 @@ const gem_properties = {
         // }
     },
     niter: {
-        meltingPoint: 334
+        meltingPoint: 334,
+        crushing_tier: 1
         // oreProcessing: {
         //     output: {
         //         type: 'gem',
@@ -781,5 +792,26 @@ const gem_properties = {
     },
     nitro: {
         meltingPoint: 1450
+    },
+    certus: {
+        crushing_tier: 2
+    },
+    fluix: {
+        crushing_tier: 2
+    },
+    amethyst: {
+        crushing_tier: 2
+    },
+    coal_coke: {
+        crushing_tier: 1
+    },
+    charcoal: {
+        crushing_tier: 1
+    },
+    niter: {
+        crushing_tier: 1
+    },
+    ender_pearl: {
+        crushing_tier: 2
     }
 };
