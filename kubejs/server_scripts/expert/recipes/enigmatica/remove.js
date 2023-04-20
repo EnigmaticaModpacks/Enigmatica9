@@ -68,6 +68,9 @@ ServerEvents.recipes((event) => {
         { id: /createaddition:crafting\/capacitor/ },
         { id: 'createaddition:crafting/portable_energy_interface' },
 
+        { id: /emendatusenigmatica:plate\/from_ingot/ },
+        { id: /emendatusenigmatica:dust\/from_ore/ },
+
         { id: 'farmersdelight:integration/immersiveengineering/metalpress/pumpkin' },
 
         { id: 'farmingforblockheads:feeding_trough' },

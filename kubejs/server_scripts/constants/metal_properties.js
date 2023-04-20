@@ -4,167 +4,101 @@
 const metal_properties = {
     copper: {
         meltingPoint: 500,
+        crushing_tier: 1,
         oreProcessing: {
-            output: {
-                substrate: 'minecraft:gravel',
-                secondary: 'gold'
-            },
-            create: {
-                processingTime: 350
-            },
-            occultism: {
-                oreWeight: 600
-            }
+            output: { substrate: 'minecraft:gravel', secondary: 'gold' },
+            create: { processingTime: 350 },
+            occultism: { oreWeight: 600 }
         }
     },
     iron: {
         meltingPoint: 800,
+        crushing_tier: 3,
         oreProcessing: {
-            output: {
-                substrate: 'minecraft:gravel',
-                secondary: 'nickel'
-            },
-            create: {
-                processingTime: 400
-            },
-            occultism: {
-                oreWeight: 750
-            }
+            output: { substrate: 'minecraft:gravel', secondary: 'nickel' },
+            create: { processingTime: 400 },
+            occultism: { oreWeight: 750 }
         }
     },
     gold: {
         meltingPoint: 700,
+        crushing_tier: 1,
         oreProcessing: {
-            output: {
-                substrate: 'minecraft:gravel',
-                secondary: 'zinc'
-            },
-            create: {
-                processingTime: 300
-            },
-            occultism: {
-                oreWeight: 320
-            }
+            output: { substrate: 'minecraft:gravel', secondary: 'zinc' },
+            create: { processingTime: 300 },
+            occultism: { oreWeight: 320 }
         }
     },
     tin: {
         meltingPoint: 225,
+        crushing_tier: 1,
         oreProcessing: {
-            output: {
-                substrate: 'minecraft:gravel',
-                secondary: 'osmium'
-            },
-            create: {
-                processingTime: 350
-            },
-            occultism: {
-                oreWeight: 610
-            }
+            output: { substrate: 'minecraft:gravel', secondary: 'osmium' },
+            create: { processingTime: 350 },
+            occultism: { oreWeight: 610 }
         }
     },
     osmium: {
         meltingPoint: 975,
+        crushing_tier: 3,
         oreProcessing: {
-            output: {
-                substrate: 'minecraft:gravel',
-                secondary: 'tin'
-            },
-            create: {
-                processingTime: 400
-            },
-            occultism: {
-                oreWeight: 210
-            }
+            output: { substrate: 'minecraft:gravel', secondary: 'tin' },
+            create: { processingTime: 400 },
+            occultism: { oreWeight: 210 }
         }
     },
     uranium: {
         meltingPoint: 830,
+        crushing_tier: 4,
         oreProcessing: {
-            output: {
-                substrate: 'minecraft:gravel',
-                secondary: 'lead'
-            },
-            create: {
-                processingTime: 400
-            },
-            occultism: {
-                oreWeight: 200
-            }
+            output: { substrate: 'minecraft:gravel', secondary: 'lead' },
+            create: { processingTime: 400 },
+            occultism: { oreWeight: 200 }
         }
     },
     lead: {
         meltingPoint: 330,
+        crushing_tier: 2,
         oreProcessing: {
-            output: {
-                substrate: 'minecraft:gravel',
-                secondary: 'silver'
-            },
-            create: {
-                processingTime: 300
-            },
-            occultism: {
-                oreWeight: 500
-            }
+            output: { substrate: 'minecraft:gravel', secondary: 'silver' },
+            create: { processingTime: 300 },
+            occultism: { oreWeight: 500 }
         }
     },
     silver: {
         meltingPoint: 790,
+        crushing_tier: 1,
         oreProcessing: {
-            output: {
-                substrate: 'minecraft:gravel',
-                secondary: 'lead'
-            },
-            create: {
-                processingTime: 300
-            },
-            occultism: {
-                oreWeight: 400
-            }
+            output: { substrate: 'minecraft:gravel', secondary: 'lead' },
+            create: { processingTime: 300 },
+            occultism: { oreWeight: 400 }
         }
     },
     nickel: {
         meltingPoint: 950,
+        crushing_tier: 2,
         oreProcessing: {
-            output: {
-                substrate: 'minecraft:gravel',
-                secondary: 'iron'
-            },
-            create: {
-                processingTime: 350
-            },
-            occultism: {
-                oreWeight: 232
-            }
+            output: { substrate: 'minecraft:gravel', secondary: 'iron' },
+            create: { processingTime: 350 },
+            occultism: { oreWeight: 232 }
         }
     },
     aluminum: {
         meltingPoint: 425,
+        crushing_tier: 3,
         oreProcessing: {
-            output: {
-                substrate: 'minecraft:gravel',
-                secondary: 'iron'
-            },
-            create: {
-                processingTime: 300
-            },
-            occultism: {
-                oreWeight: 430
-            }
+            output: { substrate: 'minecraft:gravel', secondary: 'iron' },
+            create: { processingTime: 300 },
+            occultism: { oreWeight: 430 }
         }
     },
     zinc: {
+        crushing_tier: 2,
         meltingPoint: 420,
         oreProcessing: {
-            output: {
-                substrate: 'minecraft:gravel',
-                secondary: 'gold'
-            },
-            create: {
-                processingTime: 350
-            },
-            occultism: {
-                oreWeight: 190
-            }
+            output: { substrate: 'minecraft:gravel', secondary: 'gold' },
+            create: { processingTime: 350 },
+            occultism: { oreWeight: 190 }
         }
     },
     // cobalt: {
@@ -184,55 +118,33 @@ const metal_properties = {
     // },
     iesnium: {
         meltingPoint: 850,
+        crushing_tier: 4,
         oreProcessing: {
-            output: {
-                substrate: 'occultism:burnt_otherstone',
-                secondary: 'silver'
-            },
-            create: {
-                processingTime: 500
-            }
+            output: { substrate: 'occultism:burnt_otherstone', secondary: 'silver' },
+            create: { processingTime: 500 }
         }
     },
     horizonite: {
         // meltingPoint: 0,
         oreProcessing: {
-            output: {
-                substrate: 'minecraft:gravel',
-                secondary: 'ventium'
-            },
-            create: {
-                processingTime: 450
-            }
+            output: { substrate: 'minecraft:gravel', secondary: 'ventium' },
+            create: { processingTime: 450 }
         }
     },
     ventium: {
         // meltingPoint: 0,
         oreProcessing: {
-            output: {
-                substrate: 'minecraft:gravel',
-                secondary: 'falsite'
-            },
-            create: {
-                processingTime: 450
-            }
+            output: { substrate: 'minecraft:gravel', secondary: 'falsite' },
+            create: { processingTime: 450 }
         }
     },
     falsite: {
         // meltingPoint: 0,
         oreProcessing: {
-            output: {
-                substrate: 'minecraft:gravel',
-                secondary: 'horizonite'
-            },
-            create: {
-                processingTime: 450
-            }
+            output: { substrate: 'minecraft:gravel', secondary: 'horizonite' },
+            create: { processingTime: 450 }
         }
     },
-    // elementium: {
-    //     meltingPoint: 875
-    // },
     enderium: {
         meltingPoint: 1450
     },
