@@ -8,6 +8,12 @@
     "item.emendatusenigmatica.sulfur_gem": "Sulfur",
     "item.emendatusengimatica.crushed_nether_ore": "Crushed Ancient Debris",
     "item.emendatusenigmatica.andesite_ingot": "Andesite Alloy",
-    "item.emendatusenigmatica.sky_ingot": "Ingot of the skies",
-    "item.emendatusenigmatica.wood_dust": "Sawdust"
+    "item.emendatusenigmatica.sky_ingot": "Ingot of the Skies",
+    "item.emendatusenigmatica.wood_dust": "Sawdust",
+    "block.emendatusenigmatica.wood_block": "Block of Sawdust",
+    "block.emendatusenigmatica.infused_iron_block": "Block of Infused Ironwood",
+    "item.emendatusenigmatica.infused_iron_ingot": "Infused Ironwood Ingot",
+    "block.emendatusenigmatica.tainted_gold_block": "Block of Celestial Gold",
+    "item.emendatusenigmatica.tainted_gold_ingot": "Celestial Gold Ingot"
 }
+

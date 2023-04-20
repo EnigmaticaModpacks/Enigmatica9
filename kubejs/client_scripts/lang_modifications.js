@@ -1,34 +1,36 @@
 //priority: 800
 const entries = {
-    naturesaura: [
+    emendatusenigmatica: [
         {
-            key: 'block.naturesaura.infused_iron_block',
+            key: 'block.emendatusenigmatica.infused_iron_block',
             value: {
-                normal: 'Infused Iron Block',
-                expert: 'Infused Ironwood Block'
+                normal: 'Block of Infused Iron',
+                expert: 'Block of Infused Ironwood'
             }
         },
         {
-            key: 'item.naturesaura.infused_iron',
+            key: 'item.emendatusenigmatica.infused_iron_ingot',
             value: {
                 normal: 'Infused Iron Ingot',
                 expert: 'Infused Ironwood Ingot'
             }
         },
         {
-            key: 'block.naturesaura.tainted_gold_block',
+            key: 'block.emendatusenigmatica.tainted_gold_block',
             value: {
-                normal: 'Tainted Gold Block',
-                expert: 'Celestial Gold Block'
+                normal: 'Block of Tainted Gold',
+                expert: 'Block of Celestial Gold'
             }
         },
         {
-            key: 'item.naturesaura.tainted_gold',
+            key: 'item.emendatusenigmatica.tainted_gold_ingot',
             value: {
                 normal: 'Tainted Gold Ingot',
                 expert: 'Celestial Gold Ingot'
             }
-        },
+        }
+    ],
+    naturesaura: [
         {
             key: 'advancement.naturesaura.infused_materials.desc',
             value: {
@@ -183,6 +185,20 @@ const entries = {
             }
         },
         {
+            key: 'item.pneumaticcraft.compressed_iron_gear',
+            value: {
+                normal: 'Compressed Iron Gear',
+                expert: 'Spellbound Invar Gear'
+            }
+        },
+        {
+            key: 'item.pneumaticcraft.ingot_iron_compressed',
+            value: {
+                normal: 'Compressed Iron Ingot',
+                expert: 'Spellbound Invar Ingot'
+            }
+        },
+        {
             key: 'block.pneumaticcraft.creative_compressed_iron_block',
             value: {
                 normal: 'Creative Compressed Iron Block',
@@ -246,24 +262,10 @@ const entries = {
             }
         },
         {
-            key: 'item.pneumaticcraft.compressed_iron_gear',
-            value: {
-                normal: 'Compressed Iron Gear',
-                expert: 'Spellbound Invar Gear'
-            }
-        },
-        {
             key: 'item.pneumaticcraft.compressed_iron_leggings',
             value: {
                 normal: 'Compressed Iron Leggings',
                 expert: 'Spellbound Invar Leggings'
-            }
-        },
-        {
-            key: 'item.pneumaticcraft.ingot_iron_compressed',
-            value: {
-                normal: 'Compressed Iron Ingot',
-                expert: 'Spellbound Invar Ingot'
             }
         },
         {

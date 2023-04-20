@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
                 Ingredient.of('#forge:dusts/copper'),
                 Ingredient.of('#forge:dusts/redstone')
             ],
-            output: Item.of(AlmostUnified.getPreferredItemForTag('forge:dusts/bronze'), 4),
+            output: Item.of('emendatusenigmatica:bronze_dust', 4),
             grindingTime: 10 * 20,
             id: `${id_prefix}bronze_dust`
         },
@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
                 Ingredient.of('#forge:dusts/gold'),
                 Ingredient.of('#forge:dusts/silver')
             ],
-            output: Item.of(AlmostUnified.getPreferredItemForTag('forge:dusts/electrum'), 4),
+            output: Item.of('emendatusenigmatica:electrum_dust', 4),
             grindingTime: 10 * 20,
             id: `${id_prefix}electrum_dust`
         },
@@ -38,7 +38,7 @@ ServerEvents.recipes((event) => {
                 Ingredient.of('#forge:dusts/iron'),
                 Ingredient.of('#forge:dusts/redstone')
             ],
-            output: Item.of(AlmostUnified.getPreferredItemForTag('forge:dusts/invar'), 3),
+            output: Item.of('emendatusenigmatica:invar_dust', 3),
             grindingTime: 10 * 20,
             id: `${id_prefix}invar_dust`
         },
@@ -50,7 +50,7 @@ ServerEvents.recipes((event) => {
                 Ingredient.of('#forge:dusts/copper'),
                 Ingredient.of('#forge:dusts/nickel')
             ],
-            output: Item.of(AlmostUnified.getPreferredItemForTag('forge:dusts/constantan'), 4),
+            output: Item.of('emendatusenigmatica:constantan_dust', 4),
             grindingTime: 10 * 20,
             id: `${id_prefix}constantan_dust`
         },
