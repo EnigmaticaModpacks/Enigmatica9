@@ -1,4 +1,7 @@
 ServerEvents.recipes((event) => {
+    if (global.isNormalMode == false) {
+        return;
+    }
     let metals = Object.keys(metal_properties);
     let gems = Object.keys(gem_properties);
     let exceptions = {
