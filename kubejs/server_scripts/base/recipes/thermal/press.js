@@ -84,6 +84,17 @@ ServerEvents.recipes((event) => {
         });
     });
 
+    const gear_materials = ['osmium', 'aluminum', 'uranium', 'brass', 'zinc'];
+
+    gear_materials.forEach((material) => {
+        recipes.push({
+            outputs: [{ item: `emendatusenigmatica:${material}_gear`, count: 1 }],
+            inputs: ['thermal:press_gear_die', `#forge:ingots/${material}`],
+            energy: 2400,
+            id: `${id_prefix}${material}_gear`
+        });
+    });
+
     recipes.forEach((recipe) => {
         recipe.type = 'thermal:press';
         recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());

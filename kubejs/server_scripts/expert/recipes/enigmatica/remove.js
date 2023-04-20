@@ -73,6 +73,7 @@ ServerEvents.recipes((event) => {
         { id: /emendatusenigmatica:plate\/from_ingot/ },
         { id: /emendatusenigmatica:rod\/from_ingot/ },
         { id: /emendatusenigmatica:gear\/from_ingot/ },
+        { id: /emendatusenigmatica:gear\/from_gem/ },
 
         { id: 'farmersdelight:integration/immersiveengineering/metalpress/pumpkin' },
 
@@ -266,6 +267,7 @@ ServerEvents.recipes((event) => {
 
         { id: /thermal:machines\/pulverizer\/pulverizer_.*_to_dust/ },
         { id: /thermal:augments/ },
+        { id: /thermal:parts\/.*_gear/ },
         { id: 'thermal:enderium_dust_2' },
         { id: 'thermal:lumium_dust_4' },
         { id: 'thermal:signalum_dust_4' },

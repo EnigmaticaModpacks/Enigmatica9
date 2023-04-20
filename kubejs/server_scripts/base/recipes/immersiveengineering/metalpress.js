@@ -27,6 +27,18 @@ ServerEvents.recipes((event) => {
         });
     });
 
+    const gear_materials = ['netherite', 'enderium', 'signalum', 'lumium'];
+
+    gear_materials.forEach((material) => {
+        recipes.push({
+            output: `emendatusenigmatica:${material}_gear`,
+            mold: 'immersiveengineering:mold_gear',
+            input: `#forge:ingots/${material}`,
+            energy: 2400,
+            id: `${id_prefix}${material}_gear`
+        });
+    });
+
     recipes.forEach((recipe) => {
         recipe.type = 'immersiveengineering:metal_press';
         recipe.input = Ingredient.of(recipe.input).toJson();
