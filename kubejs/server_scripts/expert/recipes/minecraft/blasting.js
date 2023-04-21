@@ -5,26 +5,14 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/minecraft/blasting/';
     const recipes = [
         {
-            input: 'create:crushed_copper_ore',
-            output: 'mekanism:clump_copper',
-            xp: 0.5,
-            id: `${id_prefix}clump_copper_from_crushed_ore`
-        },
-        {
-            input: 'mekanism:dirty_dust_copper',
-            output: 'minecraft:copper_ingot',
-            xp: 0.5,
-            id: `${id_prefix}copper_ingot_from_dirty_dust`
-        },
-        {
-            input: '#forge:ores/ironwood',
             output: '2x twilightforest:ironwood_ingot',
+            input: '#forge:ores/ironwood',
             xp: 0.5,
             id: `${id_prefix}ironwood_ingot`
         },
         {
-            input: 'occultism:otherstone',
             output: 'occultism:burnt_otherstone',
+            input: 'occultism:otherstone',
             xp: 0.5,
             id: `${id_prefix}burnt_otherstone`
         },
@@ -53,6 +41,25 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}bronze_dust_to_ingot`
         }
     ];
+
+    const simple_metals = ['copper', 'silver', 'gold', 'tin', 'horizonite', 'ventium', 'ventium', 'falsite'];
+
+    simple_metals.forEach((metal) => {
+        recipes.push(
+            {
+                output: `emendatusenigmatica:${metal}_clump`,
+                input: `#create:crushed_ores/${metal}`,
+                xp: 0.5,
+                id: `${id_prefix}clump_${metal}_from_crushed_ore`
+            },
+            {
+                output: `emendatusenigmatica:${metal}_ingot`,
+                input: `emendatusenigmatica:${metal}_dirty_dust`,
+                xp: 0.5,
+                id: `${id_prefix}${metal}_ingot_from_dirty_dust`
+            }
+        );
+    });
 
     recipes.forEach((recipe) => {
         event.blasting(recipe.output, recipe.input).xp(recipe.xp).id(recipe.id);
