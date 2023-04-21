@@ -5,97 +5,32 @@ ServerEvents.recipes((event) => {
 
     const id_prefix = 'enigmatica:expert/enigmatica/';
     // Tiers range from 1-4, with 4 being the highest
-    const recipes = [
-        {
-            outputs: {
-                primary: 'emendatusenigmatica:crushed_iron_ore',
-                secondary: 'emendatusenigmatica:crushed_tin_ore',
-                tertiary: 'emendatusenigmatica:raw_iron'
-            },
-            input: '#forge:raw_materials/iron',
-            crushing_tier: metal_properties['iron'].crushing_tier,
-            ignore_multiplier: false,
-            id_suffix: `iron_crushed_ore_from_raw_ore`
-        },
-        {
-            outputs: {
-                primary: 'emendatusenigmatica:crushed_copper_ore',
-                secondary: 'emendatusenigmatica:crushed_nickel_ore',
-                tertiary: 'emendatusenigmatica:raw_copper'
-            },
-            input: '#forge:raw_materials/copper',
-            crushing_tier: metal_properties['copper'].crushing_tier,
-            ignore_multiplier: false,
-            id_suffix: `copper_crushed_ore_from_raw_ore`
-        },
-        {
-            outputs: {
-                primary: 'emendatusenigmatica:crushed_tin_ore',
-                secondary: 'emendatusenigmatica:quartz_dust',
-                secondary_amount: 3,
-                tertiary: 'emendatusenigmatica:raw_tin'
-            },
-            input: '#forge:raw_materials/tin',
-            crushing_tier: metal_properties['tin'].crushing_tier,
-            ignore_multiplier: false,
-            id_suffix: `tin_crushed_ore_from_raw_ore`
-        },
-        {
-            outputs: {
-                primary: 'emendatusenigmatica:crushed_gold_ore',
-                secondary: 'emendatusenigmatica:crushed_copper_ore',
-                tertiary: 'emendatusenigmatica:raw_gold'
-            },
-            input: '#forge:raw_materials/gold',
-            crushing_tier: metal_properties['gold'].crushing_tier,
-            ignore_multiplier: false,
-            id_suffix: `gold_crushed_ore_from_raw_ore`
-        },
-        {
-            outputs: {
-                primary: 'emendatusenigmatica:crushed_silver_ore',
-                secondary: 'emendatusenigmatica:crushed_lead_ore',
-                tertiary: 'emendatusenigmatica:raw_silver'
-            },
-            input: '#forge:raw_materials/silver',
-            crushing_tier: metal_properties['silver'].crushing_tier,
-            ignore_multiplier: false,
-            id_suffix: `silver_crushed_ore_from_raw_ore`
-        },
-        {
-            outputs: {
-                primary: 'emendatusenigmatica:crushed_horizonite_ore',
-                secondary: 'emendatusenigmatica:crushed_copper_ore',
-                tertiary: 'emendatusenigmatica:raw_horizonite'
-            },
-            input: '#forge:raw_materials/horizonite',
-            crushing_tier: metal_properties['horizonite'].crushing_tier,
-            ignore_multiplier: false,
-            id_suffix: `horizonite_crushed_ore_from_raw_ore`
-        },
-        {
-            outputs: {
-                primary: 'emendatusenigmatica:crushed_ventium_ore',
-                secondary: 'emendatusenigmatica:crushed_nickel_ore',
-                tertiary: 'emendatusenigmatica:raw_ventium'
-            },
-            input: '#forge:raw_materials/ventium',
-            crushing_tier: metal_properties['ventium'].crushing_tier,
-            ignore_multiplier: false,
-            id_suffix: `ventium_crushed_ore_from_raw_ore`
-        },
-        {
-            outputs: {
-                primary: 'emendatusenigmatica:crushed_falsite_ore',
-                secondary: 'emendatusenigmatica:crushed_osmium_ore',
-                tertiary: 'emendatusenigmatica:raw_falsite'
-            },
-            input: '#forge:raw_materials/falsite',
-            crushing_tier: metal_properties['falsite'].crushing_tier,
-            ignore_multiplier: false,
-            id_suffix: `falsite_crushed_ore_from_raw_ore`
+    const recipes = [];
+
+    const ore_metals = ['iron', 'copper', 'silver', 'gold', 'tin', 'horizonite', 'ventium', 'falsite'];
+
+    ore_metals.forEach((metal) => {
+        let outputs = {
+            primary: `emendatusenigmatica:crushed_${metal}_ore`,
+            tertiary: `emendatusenigmatica:raw_${metal}`
+        };
+
+        let secondary = metal_properties[metal].oreProcessing.expert_output.secondary;
+        if (secondary == 'quartz') {
+            outputs.secondary = `emendatusenigmatica:${secondary}_dust`;
+            outputs.secondary_amount = 2;
+        } else {
+            outputs.secondary = `emendatusenigmatica:crushed_${secondary}_ore`;
         }
-    ];
+
+        recipes.push({
+            outputs: outputs,
+            input: `#forge:raw_materials/${metal}`,
+            crushing_tier: metal_properties[metal].crushing_tier,
+            ignore_multiplier: false,
+            id_suffix: `${metal}_crushed_ore_from_raw_ore`
+        });
+    });
 
     const simple_metals = ['copper', 'silver', 'gold', 'tin', 'horizonite', 'ventium', 'falsite'];
 

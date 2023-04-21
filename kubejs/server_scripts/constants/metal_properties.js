@@ -7,6 +7,7 @@ const metal_properties = {
         crushing_tier: 1,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'gold' },
+            expert_output: { secondary: 'nickel' },
             create: { processingTime: 350 },
             occultism: { oreWeight: 600 }
         }
@@ -16,6 +17,7 @@ const metal_properties = {
         crushing_tier: 3,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'nickel' },
+            expert_output: { secondary: 'tin' },
             create: { processingTime: 400 },
             occultism: { oreWeight: 750 }
         }
@@ -25,6 +27,7 @@ const metal_properties = {
         crushing_tier: 1,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'zinc' },
+            expert_output: { secondary: 'copper' },
             create: { processingTime: 300 },
             occultism: { oreWeight: 320 }
         }
@@ -34,6 +37,7 @@ const metal_properties = {
         crushing_tier: 1,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'osmium' },
+            expert_output: { secondary: 'quartz' },
             create: { processingTime: 350 },
             occultism: { oreWeight: 610 }
         }
@@ -70,6 +74,7 @@ const metal_properties = {
         crushing_tier: 1,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'lead' },
+            expert_output: { secondary: 'lead' },
             create: { processingTime: 300 },
             occultism: { oreWeight: 400 }
         }
@@ -129,6 +134,7 @@ const metal_properties = {
         // meltingPoint: 0,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'ventium' },
+            expert_output: { secondary: 'copper' },
             create: { processingTime: 450 }
         }
     },
@@ -137,6 +143,7 @@ const metal_properties = {
         // meltingPoint: 0,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'falsite' },
+            expert_output: { secondary: 'nickel' },
             create: { processingTime: 450 }
         }
     },
@@ -145,6 +152,7 @@ const metal_properties = {
         // meltingPoint: 0,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'horizonite' },
+            expert_output: { secondary: 'osmium' },
             create: { processingTime: 450 }
         }
     },
