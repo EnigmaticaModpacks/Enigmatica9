@@ -63,7 +63,6 @@ function getItemFromTag(tag) {
 const gem_properties = {
     redstone: {
         meltingPoint: 660,
-        crushing_tier: 1,
         oreProcessing: {
             output: {
                 type: 'dust',

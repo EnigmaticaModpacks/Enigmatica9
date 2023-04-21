@@ -7,7 +7,9 @@
         "thermal",
         "mekanism",
         "immersiveengineering",
-        "blue_skies"
+        "blue_skies",
+        "rftoolsbase",
+        "ae2"
     ],
     "stoneStrata": ["stone"],
     "tags": [

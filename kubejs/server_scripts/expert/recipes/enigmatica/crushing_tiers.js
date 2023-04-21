@@ -5,12 +5,37 @@ ServerEvents.recipes((event) => {
 
     const id_prefix = 'enigmatica:expert/enigmatica/';
     // Tiers range from 1-4, with 4 being the highest
-    const recipes = [];
+    const recipes = [
+        {
+            types: ['gems'],
+            material: 'ender_pearl',
+            dust_item: 'thermal:ender_pearl_dust',
+            crushing_tier: gem_properties['ender_pearl'].crushing_tier
+        },
+        {
+            types: ['gems'],
+            material: 'amethyst',
+            dust_item: 'kubejs:amethyst_dust',
+            crushing_tier: gem_properties['amethyst'].crushing_tier
+        },
+        {
+            types: ['gems'],
+            material: 'fluix',
+            dust_item: 'ae2:fluix_dust',
+            crushing_tier: gem_properties['fluix'].crushing_tier
+        },
+        {
+            types: ['gems'],
+            material: 'certus_quartz',
+            dust_item: 'ae2:certus_quartz_dust',
+            crushing_tier: gem_properties['certus_quartz'].crushing_tier
+        }
+    ];
 
     const metals = Object.keys(metal_properties);
 
     metals.forEach((metal) => {
-        if (metal_properties[metal].crushing_tier) {
+        if (metal_properties[metal].crushing_tier && Item.exists(`emendatusenigmatica:${metal}_dust`)) {
             let types = [];
             if (Item.exists(`emendatusenigmatica:${metal}_ingot`)) types.push('ingots');
             if (Item.exists(`emendatusenigmatica:${metal}_plate`)) types.push('plates');
@@ -27,10 +52,8 @@ ServerEvents.recipes((event) => {
     let gems = Object.keys(gem_properties);
 
     gems.forEach((gem) => {
-        if (gem_properties[gem].crushing_tier) {
-            let types = [];
-            // if (Item.of(AlmostUnified.getPreferredItemForTag(`forge:gems/${gem}`))) types.push('gems');
-
+        if (gem_properties[gem].crushing_tier && Item.exists(`emendatusenigmatica:${gem}_dust`)) {
+            let types = ['gems'];
             recipes.push({
                 types: types,
                 material: gem,
@@ -43,6 +66,9 @@ ServerEvents.recipes((event) => {
         let duration = 200 * recipe.crushing_tier;
         let energy = 3000 * recipe.crushing_tier;
         let experience = 0.2 * recipe.crushing_tier;
+        let dust_item = recipe.dust_item
+            ? recipe.dust_item
+            : Item.of(AlmostUnified.getPreferredItemForTag(`forge:dusts/${recipe.material}`)).getId();
 
         recipe.types.forEach((type) => {
             let count = 1;
@@ -55,7 +81,7 @@ ServerEvents.recipes((event) => {
                 event
                     .custom({
                         type: 'hexerei:pestle_and_mortar',
-                        output: Item.of(`${5 * count}x emendatusenigmatica:${recipe.material}_dust`).toJson(),
+                        output: Item.of(`${5 * count}x ${dust_item}`).toJson(),
                         ingredients: [
                             Ingredient.of(`#forge:${type}/${recipe.material}`).toJson(),
                             Ingredient.of(`#forge:${type}/${recipe.material}`).toJson(),
@@ -74,7 +100,7 @@ ServerEvents.recipes((event) => {
                 event
                     .custom({
                         type: 'ars_nouveau:crush',
-                        output: [{ item: `emendatusenigmatica:${recipe.material}_dust`, count: count, chance: 1.0 }],
+                        output: [{ item: `${dust_item}`, count: count, chance: 1.0 }],
                         input: Ingredient.of(`#forge:${type}/${recipe.material}`).toJson()
                     })
                     .id(`${id_prefix}ars_nouveau_crushing/${id_suffix}`);
@@ -83,7 +109,7 @@ ServerEvents.recipes((event) => {
                 event
                     .custom({
                         type: 'create:milling',
-                        results: [Item.of(`${count}x emendatusenigmatica:${recipe.material}_dust`).toJson()],
+                        results: [Item.of(`${count}x ${dust_item}`).toJson()],
                         ingredients: [Ingredient.of(`#forge:${type}/${recipe.material}`).toJson()],
                         processingTime: duration
                     })
@@ -96,7 +122,7 @@ ServerEvents.recipes((event) => {
                 event
                     .custom({
                         type: 'create:crushing',
-                        results: [Item.of(`${count}x emendatusenigmatica:${recipe.material}_dust`).toJson()],
+                        results: [Item.of(`${count}x ${dust_item}`).toJson()],
                         ingredients: [Ingredient.of(`#forge:${type}/${recipe.material}`).toJson()],
                         processingTime: duration
                     })
@@ -111,7 +137,7 @@ ServerEvents.recipes((event) => {
                     .custom({
                         type: 'immersiveengineering:crusher',
                         result: {
-                            base_ingredient: { item: `emendatusenigmatica:${recipe.material}_dust` },
+                            base_ingredient: { item: `${dust_item}` },
                             count: count
                         },
                         input: Ingredient.of(`#forge:${type}/${recipe.material}`).toJson(),
@@ -125,7 +151,7 @@ ServerEvents.recipes((event) => {
                 event
                     .custom({
                         type: 'thermal:pulverizer',
-                        result: [Item.of(`${count}x emendatusenigmatica:${recipe.material}_dust`).toJson()],
+                        result: [Item.of(`${count}x ${dust_item}`).toJson()],
                         ingredient: Ingredient.of(`#forge:${type}/${recipe.material}`).toJson(),
                         energy: energy,
                         experience: experience
@@ -135,11 +161,11 @@ ServerEvents.recipes((event) => {
                 // Thermal Earth Charge
                 if (type == 'gems') {
                     event
-                        .shapeless(`${count}x emendatusenigmatica:${recipe.material}_dust`, [
+                        .shapeless(`${count}x ${dust_item}`, [
                             `#forge:${type}/${recipe.material}`,
                             'thermal:earth_charge'
                         ])
-                        .id(`${id_prefix}thermal_pulverizer/${id_suffix}`);
+                        .id(`${id_prefix}thermal_earth_charge/${id_suffix}`);
                 }
             }
         });
