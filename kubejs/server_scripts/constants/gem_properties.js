@@ -793,7 +793,7 @@ const gem_properties = {
     nitro: {
         meltingPoint: 1450
     },
-    certus: {
+    certus_quartz: {
         crushing_tier: 2
     },
     fluix: {

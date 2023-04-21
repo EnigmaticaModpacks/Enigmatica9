@@ -5,182 +5,144 @@ ServerEvents.recipes((event) => {
 
     const id_prefix = 'enigmatica:expert/enigmatica/';
     // Tiers range from 1-4, with 4 being the highest
-    const recipes = [
-        {
-            outputs: {
-                primary: 'emendatusenigmatica:crushed_iron_ore',
-                secondary: 'emendatusenigmatica:crushed_nickel_ore'
-            },
-            input: '#forge:raw_ores/iron',
-            experience: 0.2,
-            duration: 200,
-            energy: 6000,
-            crushing_tier: 3,
-            ignore_multiplier: false,
-            id_suffix: `iron_crushed_ore_from_raw_ore`
-        },
-        {
-            outputs: {
-                primary: 'emendatusenigmatica:crushed_copper_ore',
-                secondary: 'emendatusenigmatica:crushed_tin_ore'
-            },
-            input: '#forge:raw_ores/copper',
-            experience: 0.2,
-            duration: 100,
-            energy: 3000,
-            crushing_tier: 1,
-            ignore_multiplier: false,
-            id_suffix: `copper_crushed_ore_from_raw_ore`
-        },
-        {
-            outputs: { primary: 'emendatusenigmatica:copper_dirty_dust' },
-            input: '#mekanism:clumps/copper',
-            experience: 0.2,
-            duration: 100,
-            energy: 3000,
-            crushing_tier: 1,
-            ignore_multiplier: true,
-            id_suffix: `copper_clump_from_dirty_dust`
-        }
-    ];
+    const recipes = [];
 
-    // Todo: Update Metal and Gem properties to include crushing tier, make loop for all of this based on that. Pending completion of EE setup by Kanz
+    const metals = Object.keys(metal_properties);
+
+    metals.forEach((metal) => {
+        if (metal_properties[metal].crushing_tier) {
+            let types = [];
+            if (Item.exists(`emendatusenigmatica:${metal}_ingot`)) types.push('ingots');
+            if (Item.exists(`emendatusenigmatica:${metal}_plate`)) types.push('plates');
+            if (Item.exists(`emendatusenigmatica:${metal}_gear`)) types.push('gears');
+
+            recipes.push({
+                types: types,
+                material: metal,
+                crushing_tier: metal_properties[metal].crushing_tier
+            });
+        }
+    });
+
+    let gems = Object.keys(gem_properties);
+
+    gems.forEach((gem) => {
+        if (gem_properties[gem].crushing_tier) {
+            let types = [];
+            // if (Item.of(AlmostUnified.getPreferredItemForTag(`forge:gems/${gem}`))) types.push('gems');
+
+            recipes.push({
+                types: types,
+                material: gem,
+                crushing_tier: gem_properties[gem].crushing_tier
+            });
+        }
+    });
 
     const recipetypes_crushing = (event, recipe) => {
-        if (recipe.crushing_tier <= 1) {
-            let multiplier = recipe.ignore_multiplier ? 1 : 2;
+        let duration = 200 * recipe.crushing_tier;
+        let energy = 3000 * recipe.crushing_tier;
+        let experience = 0.2 * recipe.crushing_tier;
 
-            // Hexerei
-            event
-                .custom({
-                    type: 'hexerei:pestle_and_mortar',
-                    ingredients: [
-                        Ingredient.of(recipe.input).toJson(),
-                        Ingredient.of(recipe.input).toJson(),
-                        Ingredient.of(recipe.input).toJson(),
-                        Ingredient.of(recipe.input).toJson(),
-                        Ingredient.of(recipe.input).toJson()
-                    ],
-                    output: {
-                        item: recipe.outputs.primary,
-                        count: 5 * multiplier
-                    },
-                    grindingTime: recipe.duration * 5
-                })
-                .id(`${id_prefix}hexerei_pestle_and_mortar/${recipe.id_suffix}`);
-        }
+        recipe.types.forEach((type) => {
+            let count = 1;
+            if (type == 'gears') count = 4;
+            let id_suffix = `${recipe.material}_${type}_to_dust`;
 
-        if (recipe.crushing_tier <= 2) {
-            let multiplier = recipe.ignore_multiplier ? 1 : 3;
-            let outputs = [
-                {
-                    item: recipe.outputs.primary,
-                    count: multiplier,
-                    chance: 1.0
+            // Tier 1
+            if (recipe.crushing_tier <= 1) {
+                // Hexerei
+                event
+                    .custom({
+                        type: 'hexerei:pestle_and_mortar',
+                        output: Item.of(`${5 * count}x emendatusenigmatica:${recipe.material}_dust`).toJson(),
+                        ingredients: [
+                            Ingredient.of(`#forge:${type}/${recipe.material}`).toJson(),
+                            Ingredient.of(`#forge:${type}/${recipe.material}`).toJson(),
+                            Ingredient.of(`#forge:${type}/${recipe.material}`).toJson(),
+                            Ingredient.of(`#forge:${type}/${recipe.material}`).toJson(),
+                            Ingredient.of(`#forge:${type}/${recipe.material}`).toJson()
+                        ],
+                        grindingTime: duration * 5
+                    })
+                    .id(`${id_prefix}hexerei_pestle_and_mortar/${id_suffix}`);
+            }
+
+            // Tier 2
+            if (recipe.crushing_tier <= 2) {
+                // Ars Nouveau
+                event
+                    .custom({
+                        type: 'ars_nouveau:crush',
+                        output: [{ item: `emendatusenigmatica:${recipe.material}_dust`, count: count, chance: 1.0 }],
+                        input: Ingredient.of(`#forge:${type}/${recipe.material}`).toJson()
+                    })
+                    .id(`${id_prefix}ars_nouveau_crushing/${id_suffix}`);
+
+                // Create Milling
+                event
+                    .custom({
+                        type: 'create:milling',
+                        results: [Item.of(`${count}x emendatusenigmatica:${recipe.material}_dust`).toJson()],
+                        ingredients: [Ingredient.of(`#forge:${type}/${recipe.material}`).toJson()],
+                        processingTime: duration
+                    })
+                    .id(`${id_prefix}create_milling/${id_suffix}`);
+            }
+
+            // Tier 3
+            if (recipe.crushing_tier <= 3) {
+                // Create
+                event
+                    .custom({
+                        type: 'create:crushing',
+                        results: [Item.of(`${count}x emendatusenigmatica:${recipe.material}_dust`).toJson()],
+                        ingredients: [Ingredient.of(`#forge:${type}/${recipe.material}`).toJson()],
+                        processingTime: duration
+                    })
+                    .id(`${id_prefix}create_crushing/${id_suffix}`);
+            }
+
+            // Tier 4
+            if (recipe.crushing_tier <= 4) {
+                // Immersive Engineering
+
+                event
+                    .custom({
+                        type: 'immersiveengineering:crusher',
+                        result: {
+                            base_ingredient: { item: `emendatusenigmatica:${recipe.material}_dust` },
+                            count: count
+                        },
+                        input: Ingredient.of(`#forge:${type}/${recipe.material}`).toJson(),
+                        energy: energy,
+                        secondaries: []
+                    })
+                    .id(`${id_prefix}immersiveengineering_crusher/${id_suffix}`);
+
+                // Thermal Pulverizer
+
+                event
+                    .custom({
+                        type: 'thermal:pulverizer',
+                        result: [Item.of(`${count}x emendatusenigmatica:${recipe.material}_dust`).toJson()],
+                        ingredient: Ingredient.of(`#forge:${type}/${recipe.material}`).toJson(),
+                        energy: energy,
+                        experience: experience
+                    })
+                    .id(`${id_prefix}thermal_pulverizer/${id_suffix}`);
+
+                // Thermal Earth Charge
+                if (type == 'gems') {
+                    event
+                        .shapeless(`${count}x emendatusenigmatica:${recipe.material}_dust`, [
+                            `#forge:${type}/${recipe.material}`,
+                            'thermal:earth_charge'
+                        ])
+                        .id(`${id_prefix}thermal_pulverizer/${id_suffix}`);
                 }
-            ];
-
-            if (recipe.outputs.secondary) {
-                outputs.push({
-                    item: recipe.outputs.secondary,
-                    count: 1,
-                    chance: 0.25
-                });
             }
-
-            // Ars Nouveau
-            event
-                .custom({
-                    type: 'ars_nouveau:crush',
-                    input: Ingredient.of(recipe.input).toJson(),
-                    output: outputs
-                })
-                .id(`${id_prefix}ars_nouveau_crushing/${recipe.id_suffix}`);
-        }
-
-        if (recipe.crushing_tier <= 3) {
-            let multiplier = recipe.ignore_multiplier ? 1 : 3;
-            let outputs = [
-                {
-                    item: recipe.outputs.primary,
-                    count: multiplier,
-                    chance: 1.0
-                }
-            ];
-
-            if (recipe.outputs.secondary) {
-                outputs.push({
-                    item: recipe.outputs.secondary,
-                    count: 1,
-                    chance: 0.25
-                });
-            }
-
-            // Create
-            event
-                .custom({
-                    type: 'create:crushing',
-                    ingredients: [Ingredient.of(recipe.input).toJson()],
-                    results: outputs,
-                    processingTime: recipe.duration
-                })
-                .id(`${id_prefix}create_crushing/${recipe.id_suffix}`);
-        }
-
-        if (recipe.crushing_tier <= 4) {
-            // Immersive Engineering
-            let multiplier = recipe.ignore_multiplier ? 1 : 4;
-            let secondary_outputs = [];
-            if (recipe.outputs.secondary) {
-                secondary_outputs.push({
-                    output: {
-                        item: recipe.outputs.secondary,
-                        count: 1
-                    },
-                    chance: 0.5
-                });
-            }
-            event
-                .custom({
-                    type: 'immersiveengineering:crusher',
-                    energy: recipe.energy,
-                    input: Ingredient.of(recipe.input).toJson(),
-                    result: {
-                        base_ingredient: { item: recipe.outputs.primary },
-                        count: multiplier
-                    },
-                    secondaries: secondary_outputs
-                })
-                .id(`${id_prefix}immersiveengineering_crusher/${recipe.id_suffix}`);
-
-            // Thermal
-            multiplier = recipe.ignore_multiplier ? 1 : 2.25; // Pulverizer has massive catalysts, this does about 5x with the best
-            let outputs = [
-                {
-                    item: recipe.outputs.primary,
-                    count: multiplier,
-                    chance: 1.0
-                }
-            ];
-
-            if (recipe.outputs.secondary) {
-                outputs.push({
-                    item: recipe.outputs.secondary,
-                    count: 1,
-                    chance: 0.5
-                });
-            }
-
-            event
-                .custom({
-                    type: 'thermal:pulverizer',
-                    ingredient: Ingredient.of(recipe.input).toJson(),
-                    energy: recipe.energy,
-                    result: outputs,
-                    experience: recipe.experience
-                })
-                .id(`${id_prefix}thermal_pulverizer/${recipe.id_suffix}`);
-        }
+        });
     };
 
     recipes.forEach((recipe) => {
