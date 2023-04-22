@@ -152,7 +152,7 @@ const metal_properties = {
         // meltingPoint: 0,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'horizonite' },
-            expert_output: { secondary: 'osmium' },
+            expert_output: { secondary: 'lead' },
             create: { processingTime: 450 }
         }
     },
