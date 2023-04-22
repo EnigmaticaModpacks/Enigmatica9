@@ -67,6 +67,37 @@ ServerEvents.recipes((event) => {
         });
     });
 
+    const simple_metals = ['copper', 'silver', 'gold', 'tin', 'horizonite', 'ventium', 'ventium', 'falsite'];
+
+    simple_metals.forEach((metal) => {
+        let outputs = [{ item: `emendatusenigmatica:${metal}_dirty_dust`, count: 4 }];
+
+        let secondary = metal_properties[metal].oreProcessing.expert_output.secondary;
+        if (secondary == 'quartz') {
+            outputs.push({ item: `emendatusenigmatica:${secondary}_dust`, count: 4 });
+        } else {
+            outputs.push({ item: `emendatusenigmatica:${secondary}_dirty_dust`, count: 2 });
+        }
+
+        recipes.push({
+            outputs: outputs,
+            input: `#create:crushed_ores/${metal}`,
+            transitionalItem: `emendatusenigmatica:crushed_${metal}_ore`,
+            loops: 1,
+            sequence: [
+                {
+                    type: 'create:filling',
+                    ingredients: [
+                        { item: `emendatusenigmatica:crushed_${metal}_ore` },
+                        { fluidTag: 'forge:redstone_acid', amount: 25 }
+                    ],
+                    results: [{ item: `emendatusenigmatica:crushed_${metal}_ore` }]
+                }
+            ],
+            id: `${id_prefix}${metal}_dirty_dust_from_acid`
+        });
+    });
+
     recipes.forEach((recipe) => {
         recipe.type = 'create:sequenced_assembly';
         recipe.results = recipe.outputs.map((output) => Item.of(output).toJson());
