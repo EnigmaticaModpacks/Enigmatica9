@@ -188,6 +188,7 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:geiger_counter' },
         { id: 'mekanism:dosimeter' },
         { id: 'mekanism:oredictionificator' },
+        { id: 'mekanism:metallurgic_infuser' },
         { id: 'mekanism:crushing/charcoal_dust' },
         { id: 'mekanism:compat/ae2/fluix_crystal_to_dust' },
         { id: 'mekanism:compat/ae2/certus_crystal_to_dust' },

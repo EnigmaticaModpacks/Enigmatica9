@@ -5,23 +5,26 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/immersiveengineering/blastfurnace/';
     const recipes = [
         {
-            input: { tag: 'mekanism:dirty_dusts/iron' },
-            result: { item: 'kubejs:pig_iron_ingot' },
-            slag: Item.of('thermal:slag').toJson(),
+            input: '#mekanism:dirty_dusts/iron',
+            output: 'kubejs:crude_iron_ingot',
+            slag: 'thermal:slag',
             time: 30,
-            id: `${id_prefix}pig_iron_from_iron_dirty_dust`
+            id: `${id_prefix}crude_iron_from_dirty_dust`
         },
         {
-            input: { tag: 'mekanism:crystals/iron' },
-            result: { item: 'kubejs:pig_iron_ingot' },
-            slag: Item.of('thermal:slag').toJson(),
+            input: '#mekanism:crystals/iron',
+            output: 'kubejs:crude_iron_ingot',
+            slag: 'thermal:slag',
             time: 5,
-            id: `${id_prefix}pig_iron_from_iron_crystal`
+            id: `${id_prefix}crude_iron_from_crystal`
         }
     ];
 
     recipes.forEach((recipe) => {
         recipe.type = 'immersiveengineering:blast_furnace';
+        recipe.input = Ingredient.of(recipe.input).toJson();
+        recipe.result = Item.of(recipe.output).toJson();
+        recipe.slag = Item.of(recipe.slag).toJson();
         // Specify time in seconds in the recipes.
         recipe.time = recipe.time * 20;
         event.custom(recipe).id(recipe.id);

@@ -513,6 +513,22 @@ ServerEvents.recipes((event) => {
             reagents: ['occultism:dimensional_matrix'],
             sourceCost: 10000,
             id: `${id_prefix}quantum_link`
+        },
+        {
+            output: 'mekanism:metallurgic_infuser',
+            inputs: [
+                '#forge:gems/infused_diamond',
+                '#forge:plates/obsidian',
+                'ae2:quartz_glass',
+                '#forge:plates/obsidian',
+                '#forge:gems/infused_diamond',
+                '#forge:plates/obsidian',
+                'ae2:quartz_glass',
+                '#forge:plates/obsidian'
+            ],
+            reagents: ['ars_nouveau:arcane_core'],
+            sourceCost: 10000,
+            id: `${id_prefix}metallurgic_infuser`
         }
     ];
 

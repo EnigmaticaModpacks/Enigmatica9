@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
                 { tag: 'mekanism:shards/iron', count: 3 },
                 { item: 'ae2:charged_certus_quartz_crystal' }
             ],
-            result: [{ item: 'mekanism:crystal_iron', count: 1 }],
+            result: [{ item: 'emendatusenigmatica:iron_crystal', count: 1 }],
             energy: 20000,
             id: `${id_prefix}iron_crystal_from_iron_dirty_dust`
         }
