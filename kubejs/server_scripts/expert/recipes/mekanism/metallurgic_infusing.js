@@ -10,6 +10,12 @@ ServerEvents.recipes((event) => {
             itemInput: { ingredient: { tag: 'forge:ingots/crude_iron' } },
             chemicalInput: { infuse_type: 'emendatusenigmatica:air_essence', amount: 10 },
             id: `${id_prefix}iron_ingot`
+        },
+        {
+            output: { item: 'emendatusenigmatica:osmium_dirty_dust', count: 1 },
+            itemInput: { ingredient: { tag: 'mekanism:clumps/osmium' } },
+            chemicalInput: { infuse_type: 'emendatusenigmatica:water_essence', amount: 20 },
+            id: `${id_prefix}osmium_dirty_dust`
         }
     ];
 

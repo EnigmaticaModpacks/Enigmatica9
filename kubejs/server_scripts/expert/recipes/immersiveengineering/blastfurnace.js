@@ -7,14 +7,14 @@ ServerEvents.recipes((event) => {
         {
             input: '#mekanism:dirty_dusts/iron',
             output: 'kubejs:crude_iron_ingot',
-            slag: 'thermal:slag',
+            slag: 'thermal:rich_slag',
             time: 30,
             id: `${id_prefix}crude_iron_from_dirty_dust`
         },
         {
             input: '#mekanism:crystals/iron',
             output: 'kubejs:crude_iron_ingot',
-            slag: 'thermal:slag',
+            slag: 'thermal:rich_slag',
             time: 5,
             id: `${id_prefix}crude_iron_from_crystal`
         }

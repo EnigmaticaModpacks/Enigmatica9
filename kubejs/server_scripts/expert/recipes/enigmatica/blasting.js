@@ -39,6 +39,12 @@ ServerEvents.recipes((event) => {
             output: 'emendatusenigmatica:aluminum_ingot',
             xp: 0.5,
             id_suffix: `aluminum_dust_to_ingot`
+        },
+        {
+            output: `emendatusenigmatica:osmium_ingot`,
+            input: `emendatusenigmatica:osmium_dirty_dust`,
+            xp: 0.5,
+            id_suffix: `osmium_ingot_from_dirty_dust`
         }
     ];
 
