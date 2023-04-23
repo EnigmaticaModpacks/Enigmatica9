@@ -224,6 +224,8 @@ ServerEvents.recipes((event) => {
         { id: 'naturesaura:animal_spawner/witch' },
         { id: 'naturesaura:animal_spawner/zombie' },
         { id: 'naturesaura:animal_spawner/zombified_piglin' },
+        { id: `naturesaura:offering/sky_ingot` },
+        { id: `naturesaura:altar/tainted_gold_block` },
 
         { id: 'occultism:ritual/craft_dimensional_matrix' },
         { id: 'occultism:ritual/craft_storage_controller_base' },

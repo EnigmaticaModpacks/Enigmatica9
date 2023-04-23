@@ -104,7 +104,8 @@
     "tagOwnerships": {
         "forge:gems/coal_coke": ["forge:coal_coke"],
         "forge:dusts/wood": ["forge:sawdust"],
-        "forge:dusts/niter": ["forge:dusts/saltpeter"]
+        "forge:dusts/niter": ["forge:dusts/saltpeter"],
+        "forge:storage_blocks/sky": ["forge:storage_blocks/skies"]
     },
     "ignoredTags": [],
     "ignoredItems": [],

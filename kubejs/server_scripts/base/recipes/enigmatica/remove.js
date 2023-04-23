@@ -79,6 +79,9 @@ ServerEvents.recipes((event) => {
         { id: 'minecraft:glass' },
 
         { id: /naturesaura:animal_spawner\/sheep_/ },
+        { id: 'naturesaura:infused_iron' },
+        { id: 'naturesaura:sky_ingot' },
+        { id: 'naturesaura:tainted_gold' },
 
         { id: 'occultism:crafting/butcher_knife' },
         { id: /occultism:miner\/.*\/deepslate_/ },

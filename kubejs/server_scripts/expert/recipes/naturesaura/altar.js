@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
             id: 'naturesaura:altar/infused_iron'
         },
         {
-            output: 'naturesaura:infused_iron_block',
+            output: 'emendatusenigmatica:infused_iron_block',
             input: '#forge:storage_blocks/ironwood',
             aura: 135000,
             time: 700,

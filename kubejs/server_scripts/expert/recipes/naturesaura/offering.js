@@ -15,7 +15,13 @@ ServerEvents.recipes((event) => {
             output: { item: 'emendatusenigmatica:sky_ingot', count: 2 },
             input: { tag: 'forge:ingots/aluminum' },
             start_item: { item: 'naturesaura:calling_spirit' },
-            id: `naturesaura:offering/sky_ingot`
+            id: `${id_prefix}sky_ingot`
+        },
+        {
+            output: { item: 'emendatusenigmatica:sky_block', count: 2 },
+            input: { tag: 'forge:storage_blocks/aluminum' },
+            start_item: { item: 'naturesaura:calling_spirit' },
+            id: `${id_prefix}sky_block`
         },
         {
             output: { item: 'naturesaura:clock_hand' },
@@ -28,6 +34,12 @@ ServerEvents.recipes((event) => {
             input: { tag: 'forge:ingots/netherite' },
             start_item: { item: 'kubejs:spirit_of_devotion' },
             id: `${id_prefix}tainted_gold_ingot`
+        },
+        {
+            output: { item: 'emendatusenigmatica:tainted_gold_block', count: 2 },
+            input: { tag: 'forge:storage_blocks/netherite' },
+            start_item: { item: 'kubejs:spirit_of_devotion' },
+            id: `${id_prefix}tainted_gold_block`
         }
     ];
 

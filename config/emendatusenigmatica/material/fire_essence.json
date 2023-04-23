@@ -2,10 +2,7 @@
     "id": "fire_essence",
     "source": "modded",
     "localizedName": "Fire Essence",
-    "processedTypes": ["gas"],
-    "gas": {
-        "isBurnable": false
-    },
+    "processedTypes": ["infuse_type"],
     "colors": {
         "gasColor": "fc0303"
     }

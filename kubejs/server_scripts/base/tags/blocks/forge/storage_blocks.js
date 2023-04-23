@@ -46,7 +46,7 @@ ServerEvents.tags('block', (event) => {
 
     event.add(`forge:storage_blocks/tainted_gold`, 'naturesaura:tainted_gold_block');
     event.add(`forge:storage_blocks/infused_iron`, 'naturesaura:infused_iron_block');
-    event.add(`forge:storage_blocks/skies`, 'naturesaura:sky_ingot_block');
+    event.add(`forge:storage_blocks/sky`, 'naturesaura:sky_ingot_block');
     event.add(`forge:storage_blocks/depths`, 'naturesaura:depth_ingot_block');
 
     event.add(`forge:storage_blocks/energized_steel`, `powah:energized_steel_block`);
