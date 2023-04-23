@@ -34,6 +34,7 @@ ServerEvents.recipes((event) => {
         { type: 'thermal:smelter_recycle' },
         { type: 'ae2:charger' },
         { type: 'occultism:crushing' },
+        { type: 'mekanism:energy_conversion' },
 
         { id: /ae2:inscriber/ },
         { id: 'ae2:network/blocks/crystal_processing_charger' },
