@@ -84,5 +84,15 @@ ServerEvents.recipes((event) => {
                 input: { ingredient: Ingredient.of(recipe.input).toJson() }
             })
             .id(`${id_prefix}mekanism_smelting/${recipe.id_suffix}`);
+
+        event
+            .custom({
+                type: 'immersiveengineering:blast_furnace',
+                input: Ingredient.of(recipe.input).toJson(),
+                result: Item.of(recipe.output).toJson(),
+                slag: Item.of('thermal:slag').toJson(),
+                time: 3 * 20
+            })
+            .id(`${id_prefix}immersiveengineering_blast_furnace/${recipe.id_suffix}`);
     });
 });

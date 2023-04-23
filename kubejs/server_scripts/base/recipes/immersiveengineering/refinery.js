@@ -3,14 +3,14 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            result: { fluid: 'pneumaticcraft:biodiesel', amount: 16 },
+            result: { fluid: 'pneumaticcraft:biodiesel', amount: 50 },
             inputs: [
-                { tag: 'forge:plantoil', amount: 8 },
-                { tag: 'forge:ethanol', amount: 8 }
+                { tag: 'forge:plantoil', amount: 25 },
+                { tag: 'forge:ethanol', amount: 25 }
             ],
-            catalyst: '#forge:dusts/saltpeter',
+            catalyst: '#forge:dusts/niter',
             energy: 80,
-            id: 'immersiveengineering:refinery/biodiesel'
+            id: `${id_prefix}biodiesel`
         }
     ];
 

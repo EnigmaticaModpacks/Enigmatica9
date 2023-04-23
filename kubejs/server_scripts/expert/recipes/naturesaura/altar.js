@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/naturesaura/altar/';
     const recipes = [
         {
-            output: 'naturesaura:infused_iron',
+            output: 'emendatusenigmatica:infused_iron_ingot',
             input: '#forge:ingots/ironwood',
             aura: 15000,
             time: 80,
