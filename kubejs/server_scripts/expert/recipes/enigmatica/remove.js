@@ -286,6 +286,7 @@ ServerEvents.recipes((event) => {
 
         { id: /thermal:machines\/pulverizer\/pulverizer_.*_to_dust/ },
         { id: /thermal:augments/ },
+        { id: /thermal:.*_mushroom_spores/ },
         { id: /thermal:parts\/.*_gear/ },
         { id: /thermal:earth_charge/ },
         { id: 'thermal:enderium_dust_2' },
