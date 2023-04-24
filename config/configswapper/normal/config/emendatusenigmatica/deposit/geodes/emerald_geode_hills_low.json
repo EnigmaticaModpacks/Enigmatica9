@@ -1,0 +1,67 @@
+{
+    "type": "emendatusenigmatica:geode_deposit",
+    "dimension": "minecraft:overworld",
+    "biomes": [
+        "minecraft:windswept_hills",
+        "minecraft:windswept_forest",
+        "minecraft:windswept_gravelly_hills",
+        "minecraft:meadow",
+        "minecraft:frozen_peaks",
+        "minecraft:jagged_peaks",
+        "minecraft:stony_peaks",
+        "minecraft:snowy_slopes",
+        "byg:canadian_shield", 
+        "byg:crag_gardens", 
+        "byg:dacite_ridges", 
+        "byg:howling_peaks"
+    ],
+    "registryName": "emerald_geode_hills_low",
+    "config": {
+        "outerShellBlocks": [
+            {"block": "create:cut_dripstone", "weight": 85},
+            {"block": "minecraft:dripstone_block", "weight": 15}
+        ],
+        "innerShellBlocks": [
+            {"block": "minecraft:dripstone_block", "weight": 70},
+            {"block": "create:cut_dripstone", "weight": 15},
+            {"block": "emendatusenigmatica:lapis_dripstone_ore", "weight": 15}
+        ],
+        "innerBlocks": [
+            {"block": "minecraft:dripstone_block", "weight": 70},
+            {"block": "emendatusenigmatica:lapis_dripstone_ore", "weight": 20},
+            {"block": "emendatusenigmatica:emerald_dripstone_ore", "weight": 10}
+        ],
+        "fillBlocks": [
+            {"block": "minecraft:dripstone_block", "weight": 55},
+            {"block": "emendatusenigmatica:emerald_dripstone_ore", "weight": 25},
+            {"block": "emendatusenigmatica:diamond_dripstone_ore", "weight": 25}
+        ],
+        "clusters": [],
+        "chance": 20,
+        "rarity": "rare",
+        "crackChance": 0.25,
+        "minYLevel": -50,
+        "maxYLevel": 15,
+        "generateSamples": false,
+        "sampleBlocks": [],
+        "fillerTypes": [
+            "minecraft_deepslate",
+            "minecraft_tuff",
+            "minecraft_stone",
+            "minecraft_andesite",
+            "minecraft_granite",
+            "minecraft_diorite",
+            "create_limestone",
+            "create_ochrum",
+            "create_scoria",
+            "create_crimsite",
+            "create_asurine",
+            "create_veridium",
+            "byg_soapstone",
+            "byg_scoria_stone",
+            "byg_dacite",
+            "quark_jasper",
+            "quark_shale"
+        ]
+    }
+}

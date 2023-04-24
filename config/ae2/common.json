@@ -2,7 +2,6 @@
   "general": {
     "unsupportedDeveloperTools": false,
     "matterCannonBlockDamage_comment": "Enables the ability of the Matter Cannon to break blocks.",
-    "matterCannonBlockDamage": true,
     "tinyTntBlockDamage_comment": "Enables the ability of Tiny TNT to break blocks.",
     "tinyTntBlockDamage": true,
     "serverOpsIgnoreSecurity_comment": "Server operators are not restricted by ME security terminal settings.",
