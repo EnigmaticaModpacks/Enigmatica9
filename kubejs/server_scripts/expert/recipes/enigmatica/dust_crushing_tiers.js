@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
         {
             input_types: ['gems'],
             material: 'ender_pearl',
-            output: 'thermal:ender_pearl_dust',
+            output: 'emendatusenigmatica:ender_pearl_dust',
             crushing_tier: gem_properties['ender_pearl'].crushing_tier
         },
         {
