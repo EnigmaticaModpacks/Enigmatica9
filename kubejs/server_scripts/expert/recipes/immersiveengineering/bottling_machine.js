@@ -84,8 +84,6 @@ ServerEvents.recipes((event) => {
         }
     ];
 
-    const simple_metals = ['copper', 'silver', 'gold', 'tin', 'horizonite', 'ventium', 'ventium', 'falsite', 'lead'];
-
     simple_metals.forEach((metal) => {
         let outputs = [{ item: `emendatusenigmatica:${metal}_dirty_dust`, count: 2 }];
 

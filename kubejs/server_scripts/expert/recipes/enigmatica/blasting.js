@@ -69,8 +69,6 @@ ServerEvents.recipes((event) => {
         }
     ];
 
-    const simple_metals = ['copper', 'silver', 'gold', 'tin', 'horizonite', 'ventium', 'ventium', 'falsite', 'lead'];
-
     simple_metals.forEach((metal) => {
         recipes.push(
             {

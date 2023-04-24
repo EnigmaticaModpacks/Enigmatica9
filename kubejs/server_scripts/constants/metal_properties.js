@@ -1,5 +1,7 @@
 //priority: 1010
 
+const simple_metals = ['copper', 'silver', 'gold', 'tin', 'horizonite', 'ventium', 'ventium', 'falsite', 'lead'];
+
 // Properties for Metal processing
 const metal_properties = {
     copper: {
