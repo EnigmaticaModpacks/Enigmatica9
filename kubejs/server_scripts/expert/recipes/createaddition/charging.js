@@ -19,13 +19,13 @@ ServerEvents.recipes((event) => {
         },
         {
             input: { tag: 'forge:ingots/ironwood' },
-            result: { item: 'naturesaura:infused_iron' },
+            result: { item: 'emendatusenigmatica:infused_iron_ingot' },
             energy: 600000,
-            id: `${id_prefix}infused_iron`
+            id: `${id_prefix}infused_iron_ingot`
         },
         {
             input: { tag: 'forge:storage_blocks/ironwood' },
-            result: { item: 'naturesaura:infused_iron_block' },
+            result: { item: 'emendatusenigmatica:infused_iron_block' },
             energy: 5400000,
             id: `${id_prefix}infused_iron_block`
         },

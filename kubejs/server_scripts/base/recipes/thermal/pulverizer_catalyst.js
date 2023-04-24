@@ -13,9 +13,9 @@ ServerEvents.recipes((event) => {
         },
         {
             ingredient: [{ item: 'ars_nouveau:water_essence' }],
-            primary_mod: 0.6,
-            secondary_mod: 10.5,
-            energy_mod: 0.5,
+            primary_mod: 0.75,
+            secondary_mod: 3.5,
+            energy_mod: 0.1,
             min_chance: 0.25,
             use_chance: 0.25,
             id: `${id_prefix}water_essence`

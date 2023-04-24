@@ -39,7 +39,7 @@ ServerEvents.recipes((event) => {
             inputs: [
                 '#forge:dusts/iesnium',
                 '#forge:dusts/iesnium',
-                '#forge:dusts/iesnium',
+                '#forge:dusts/osmium',
                 '#forge:dusts/nickel',
                 '#forge:dusts/diamond',
                 'spirit:soul_powder'

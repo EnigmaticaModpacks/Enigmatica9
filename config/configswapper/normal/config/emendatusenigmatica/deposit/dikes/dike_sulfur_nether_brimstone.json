@@ -1,0 +1,24 @@
+{
+    "type": "emendatusenigmatica:dike_deposit",
+    "dimension": "minecraft:the_nether",
+    "biomes": [
+      "byg:brimstone_caverns"
+    ],
+    "registryName": "dike_sulfur_nether_brimstone_deposit",
+    "config": {
+      "blocks": [
+        {"block": "emendatusenigmatica:sulfur_cluster_shard_block", "weight": 2},
+        {"block": "emendatusenigmatica:budding_sulfur", "weight":2}
+      ],
+      "fillerTypes": [
+        "byg_brimstone",
+        "minecraft_netherrack",
+        "minecraft_air"
+      ],
+      "chance": 15,
+      "size": 50,
+      "minYLevel": 5,
+      "maxYLevel": 118,
+      "generateSamples": false
+    }
+  }

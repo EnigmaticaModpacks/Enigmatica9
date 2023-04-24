@@ -4,25 +4,25 @@ ServerEvents.recipes((event) => {
     }
     const id_prefix = 'enigmatica:expert/create/sequenced_assembly/';
     const recipes = [
-        /*{
-            input: 'input_item_here',
-            outputs: [
-                Item.of('6x create:large_cogwheel').withChance(32.0), //withChance sets a weight for the output, default is 1 without it
-                Item.of('secondary_outputs').withChance(2.0),
-               'more_secondaries_with_weight_1'
+        {
+            results: [
+                { item: `ae2:sky_dust`, chance: 4 },
+                { item: `emendatusenigmatica:silver_clump`, chance: 1 },
+                { item: `emendatusenigmatica:osmium_clump`, chance: 1 },
+                { item: 'thermal:slag', chance: 3 }
             ],
-            transitionalItem: 'transitional_item_here', //required, but can be same as input item apparently
-            loops: 1, //required
+            input: 'thermal:rich_slag',
+            transitionalItem: 'ae2:sky_dust',
+            loops: 4,
             sequence: [
                 {
-                    type: 'sequence_type_here',  //options are deploying, cutting, filling, pressing
-                    input: 'input_items_fluids_or_array_here',
-                    output: 'output_item_here',
-                    processingTime: 50 // for cutting recipes
+                    type: 'create:filling',
+                    ingredients: [{ item: 'ae2:sky_dust' }, { fluidTag: 'forge:redstone_acid', amount: 25 }],
+                    results: [{ item: 'ae2:sky_dust' }]
                 }
             ],
-            id: 'recipe_id_here'
-        }*/
+            id: `${id_prefix}sky_dust_silver_osmium_clump`
+        }
     ];
 
     const plate_materials = [
@@ -52,7 +52,7 @@ ServerEvents.recipes((event) => {
 
     plate_materials.forEach((material) => {
         recipes.push({
-            outputs: [`emendatusenigmatica:${material}_plate`],
+            results: [{ item: `emendatusenigmatica:${material}_plate` }],
             input: `#forge:ingots/${material}`,
             transitionalItem: `emendatusenigmatica:${material}_ingot`,
             loops: 3,
@@ -67,9 +67,37 @@ ServerEvents.recipes((event) => {
         });
     });
 
+    simple_metals.forEach((metal) => {
+        let results = [{ item: `emendatusenigmatica:${metal}_dirty_dust`, count: 4 }];
+
+        let secondary = metal_properties[metal].oreProcessing.expert_output.secondary;
+        if (secondary == 'quartz') {
+            results.push({ item: `emendatusenigmatica:${secondary}_dust`, count: 4 });
+        } else {
+            results.push({ item: `emendatusenigmatica:${secondary}_dirty_dust`, count: 2 });
+        }
+
+        recipes.push({
+            results: results,
+            input: `#create:crushed_ores/${metal}`,
+            transitionalItem: `emendatusenigmatica:crushed_${metal}_ore`,
+            loops: 4,
+            sequence: [
+                {
+                    type: 'create:filling',
+                    ingredients: [
+                        { item: `emendatusenigmatica:crushed_${metal}_ore` },
+                        { fluidTag: 'forge:redstone_acid', amount: 25 }
+                    ],
+                    results: [{ item: `emendatusenigmatica:crushed_${metal}_ore` }]
+                }
+            ],
+            id: `${id_prefix}${metal}_dirty_dust_from_acid`
+        });
+    });
+
     recipes.forEach((recipe) => {
         recipe.type = 'create:sequenced_assembly';
-        recipe.results = recipe.outputs.map((output) => Item.of(output).toJson());
         recipe.ingredient = Ingredient.of(recipe.input).toJson();
         recipe.transitionalItem = Item.of(recipe.transitionalItem).toJson();
         event.custom(recipe).id(recipe.id);

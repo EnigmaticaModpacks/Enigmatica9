@@ -149,6 +149,18 @@ ServerEvents.recipes((event) => {
             inputFluid: '{Amount:1000,FluidName:"kubejs:magicite"}',
             processingTime: 200,
             id: `industrialforegoing:dissolution_chamber/processing_addon_2`
+        },
+        {
+            output: '9x twilightforest:fiery_ingot',
+            inputs: [
+                '#forge:essences/fire',
+                '#forge:dusts/constantan',
+                '#forge:dusts/constantan',
+                '#forge:storage_blocks/source'
+            ],
+            inputFluid: '{Amount:1000,FluidName:"minecraft:lava"}',
+            processingTime: 60,
+            id: `${id_prefix}fiery_ingot`
         }
     ];
 
