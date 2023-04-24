@@ -22,6 +22,12 @@ ServerEvents.recipes((event) => {
             itemInput: { ingredient: { tag: 'mekanism:clumps/nickel' } },
             chemicalInput: { infuse_type: 'emendatusenigmatica:earth_essence', amount: 20 },
             id: `${id_prefix}nickel_dirty_dust`
+        },
+        {
+            output: { item: 'emendatusenigmatica:horizonite_ingot' },
+            itemInput: { ingredient: { tag: 'forge:ingots/fiery' } },
+            chemicalInput: { infuse_type: 'emendatusenigmatica:fire_essence', amount: 20 },
+            id: `${id_prefix}horizonite_ingot`
         }
     ];
 
