@@ -65,6 +65,7 @@ const metal_properties = {
         crushing_tier: 2,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'silver' },
+            expert_output: { secondary: 'silver' },
             create: { processingTime: 300 },
             occultism: { oreWeight: 500 }
         }
