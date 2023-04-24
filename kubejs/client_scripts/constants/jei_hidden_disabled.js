@@ -182,7 +182,7 @@ jei.normal.items.hidden = [
     'kubejs:ritual_teleport_everbright',
     'kubejs:teleport_nether',
     'kubejs:ritual_teleport_nether',
-    'kubejs:pig_iron_ingot',
+    'kubejs:crude_iron_ingot',
     'kubejs:mystery_mash',
     'kubejs:dream_stone',
     'kubejs:saturated_magebloom_filter',

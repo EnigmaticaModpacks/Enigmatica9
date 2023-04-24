@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             item_in: [{ tag: 'mekanism:dirty_dusts/iron' }],
-            post: [{ type: 'drop_item', item: 'mekanism:shard_iron', count: 6 }],
+            post: [{ type: 'drop_item', item: 'emendatusenigmatica:iron_shard', count: 6 }],
             id: `${id_prefix}shard_iron`
         },
         {

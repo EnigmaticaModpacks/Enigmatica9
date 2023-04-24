@@ -6,7 +6,7 @@ ServerEvents.tags('item', (event) => {
 
         'industrialforegoing:pink_slime_ingot',
 
-        'kubejs:pig_iron_ingot',
+        'kubejs:crude_iron_ingot',
         'kubejs:red_nether_brick',
 
         'naturesaura:infused_iron',
@@ -27,7 +27,7 @@ ServerEvents.tags('item', (event) => {
 
     event.add(`forge:ingots/pink_slime`, 'industrialforegoing:pink_slime_ingot');
 
-    event.add(`forge:ingots/pig_iron`, 'kubejs:pig_iron_ingot');
+    event.add(`forge:ingots/crude_iron`, 'kubejs:crude_iron_ingot');
     event.add(`forge:ingots/brick`, 'kubejs:red_nether_brick');
 
     event.add(`forge:ingots/infused_iron`, 'naturesaura:infused_iron');

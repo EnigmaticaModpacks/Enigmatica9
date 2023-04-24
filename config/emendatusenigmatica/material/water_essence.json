@@ -1,0 +1,9 @@
+{
+    "id": "water_essence",
+    "source": "modded",
+    "localizedName": "Water Essence",
+    "processedTypes": ["infuse_type"],
+    "colors": {
+        "gasColor": "463185"
+    }
+}

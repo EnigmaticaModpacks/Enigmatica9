@@ -1,0 +1,9 @@
+{
+    "id": "fire_essence",
+    "source": "modded",
+    "localizedName": "Fire Essence",
+    "processedTypes": ["infuse_type"],
+    "colors": {
+        "gasColor": "820e0e"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "id": "ender_pearl",
+    "source": "modded",
+    "localizedName": "Ender Pearl",
+    "processedTypes": ["dust"],
+    "properties": {
+        "materialType": "gem"
+    }
+}

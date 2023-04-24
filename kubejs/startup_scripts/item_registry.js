@@ -13,7 +13,7 @@ StartupEvents.registry('item', (event) => {
         'alchemists_delight',
         'amethyst_dust',
         'aura_leaf',
-        'pig_iron_ingot',
+        'crude_iron_ingot',
         'red_nether_brick',
         'kaolin_clay',
         'calcined_kaolin_pearls',

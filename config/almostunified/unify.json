@@ -7,7 +7,9 @@
         "thermal",
         "mekanism",
         "immersiveengineering",
-        "blue_skies"
+        "blue_skies",
+        "rftoolsbase",
+        "ae2"
     ],
     "stoneStrata": ["stone"],
     "tags": [
@@ -56,6 +58,7 @@
         "elementium",
         "emerald",
         "enderium",
+        "ender_pearl",
         "falsite",
         "fluorite",
         "gold",
@@ -101,7 +104,8 @@
     "tagOwnerships": {
         "forge:gems/coal_coke": ["forge:coal_coke"],
         "forge:dusts/wood": ["forge:sawdust"],
-        "forge:dusts/niter": ["forge:dusts/saltpeter", "forge:dusts/potassium_nitrate"]
+        "forge:dusts/niter": ["forge:dusts/saltpeter"],
+        "forge:storage_blocks/sky": ["forge:storage_blocks/skies"]
     },
     "ignoredTags": [],
     "ignoredItems": [],

@@ -1,0 +1,44 @@
+{
+    "type": "emendatusenigmatica:vanilla_deposit",
+    "dimension": "minecraft:overworld",
+    "biomes": [
+        "minecraft:desert",
+        "minecraft:badlands",
+        "minecraft:eroded_badlands",
+        "byg:atacama_desert",
+        "byg:windswept_desert",
+        "byg:mojave_desert",
+        "byg:red_rock_valley",
+        "byg:quartz_desert",
+        "minecraft:deep_frozen_ocean",
+        "minecraft:deep_cold_ocean",
+        "minecraft:deep_ocean",
+        "minecraft:deep_lukewarm_ocean",
+        "minecraft:frozen_ocean",
+        "minecraft:ocean",
+        "minecraft:cold_ocean",
+        "minecraft:lukewarm_ocean",
+        "minecraft:warm_ocean",
+        "byg:dead_sea",
+        "byg:lush_stacks"
+    ],
+    "registryName": "vanilla_bitumen_sandstone",
+    "config": {
+        "material": "bitumen",
+        "fillerTypes": [
+            "minecraft_sandstone",
+            "minecraft_red_sandstone",
+            "byg_black_sandstone",
+            "byg_blue_sandstone",
+            "byg_purple_sandstone",
+            "byg_white_sandstone",
+            "byg_windswept_sandstone"
+        ],
+        "chance": 15,
+        "size": 15,
+        "minYLevel": 40,
+        "maxYLevel": 320,
+        "placement": "uniform",
+        "rarity": "common"
+    }
+}
