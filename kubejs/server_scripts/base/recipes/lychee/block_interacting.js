@@ -324,6 +324,20 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}carved_pumpkin`
+        },
+        {
+            hide_in_viewer: true,
+            item_in: { item: 'occultism:soul_gem' },
+            block_in: 'ars_nouveau:mob_jar',
+            post: [{ type: 'prevent_default' }],
+            id: `${id_prefix}prevent_mob_jar_soul_gem`
+        },
+        {
+            hide_in_viewer: true,
+            item_in: { item: 'industrialforegoing:mob_imprisonment_tool' },
+            block_in: 'ars_nouveau:mob_jar',
+            post: [{ type: 'prevent_default' }],
+            id: `${id_prefix}prevent_mob_jar_mob_imprisonment_tool`
         }
     ];
 
