@@ -561,6 +561,22 @@ ServerEvents.recipes((event) => {
             reagents: ['sophisticatedstorage:upgrade_base'],
             sourceCost: 1000,
             id: `${id_prefix}gold_to_diamond_tier_upgrade`
+        },
+        {
+            output: 'sophisticatedstorage:stack_upgrade_tier_4',
+            inputs: [
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                'ars_nouveau:repository',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                'ars_nouveau:repository',
+                '#forge:gems/diamond'
+            ],
+            reagents: ['sophisticatedstorage:stack_upgrade_tier_3'],
+            sourceCost: 1000,
+            id: `${id_prefix}stack_upgrade_tier_4`
         }
     ];
 

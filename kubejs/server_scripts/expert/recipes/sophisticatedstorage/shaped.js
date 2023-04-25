@@ -75,6 +75,36 @@ ServerEvents.recipes((event) => {
                 C: 'sophisticatedstorage:upgrade_base'
             },
             id: 'sophisticatedstorage:diamond_to_netherite_tier_upgrade'
+        },
+        {
+            output: 'sophisticatedstorage:stack_upgrade_tier_1',
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: 'ars_nouveau:purple_archwood_wood',
+                B: 'ars_nouveau:repository',
+                C: 'sophisticatedstorage:upgrade_base'
+            },
+            id: 'sophisticatedstorage:stack_upgrade_tier_1'
+        },
+        {
+            output: 'sophisticatedstorage:stack_upgrade_tier_2',
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: ['#forge:plates/iron', '#forge:plates/tin'],
+                B: 'ars_nouveau:repository',
+                C: 'sophisticatedstorage:stack_upgrade_tier_1'
+            },
+            id: 'sophisticatedstorage:stack_upgrade_tier_2'
+        },
+        {
+            output: 'sophisticatedstorage:stack_upgrade_tier_3',
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: '#forge:plates/gold',
+                B: 'ars_nouveau:repository',
+                C: 'sophisticatedstorage:stack_upgrade_tier_2'
+            },
+            id: 'sophisticatedstorage:stack_upgrade_tier_3'
         }
     ];
 
