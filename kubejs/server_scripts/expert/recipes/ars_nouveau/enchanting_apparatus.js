@@ -529,6 +529,22 @@ ServerEvents.recipes((event) => {
             reagents: ['ars_nouveau:arcane_core'],
             sourceCost: 10000,
             id: `${id_prefix}metallurgic_infuser`
+        },
+        {
+            output: 'functionalstorage:diamond_upgrade',
+            inputs: [
+                '#forge:storage_blocks/diamond',
+                '#forge:gems/diamond',
+                '#forge:chests/wooden',
+                '#forge:gems/diamond',
+                '#forge:storage_blocks/diamond',
+                '#forge:gems/diamond',
+                '#forge:chests/wooden',
+                '#forge:gems/diamond'
+            ],
+            reagents: ['functionalstorage:gold_upgrade'],
+            sourceCost: 1000,
+            id: `${id_prefix}diamond_upgrade`
         }
     ];
 

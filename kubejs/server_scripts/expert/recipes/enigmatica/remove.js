@@ -86,6 +86,8 @@ ServerEvents.recipes((event) => {
 
         { id: 'farmingforblockheads:feeding_trough' },
 
+        { id: 'functionalstorage:diamond_upgrade' },
+
         { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
         { id: 'hexerei:willow_broom_from_mixing_cauldron' },
         { id: 'hexerei:blood_sigil_from_mixing_cauldron' },
