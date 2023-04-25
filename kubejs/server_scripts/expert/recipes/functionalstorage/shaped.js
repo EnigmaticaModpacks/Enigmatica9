@@ -36,6 +36,26 @@ ServerEvents.recipes((event) => {
                 D: '#forge:ingots/energized_steel'
             },
             id: 'functionalstorage:armory_cabinet'
+        },
+        {
+            output: 'functionalstorage:copper_upgrade',
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: '#forge:plates/copper',
+                B: 'ars_nouveau:repository',
+                C: '#functionalstorage:drawer'
+            },
+            id: 'functionalstorage:copper_upgrade'
+        },
+        {
+            output: 'functionalstorage:gold_upgrade',
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: '#forge:plates/gold',
+                B: 'ars_nouveau:repository',
+                C: 'functionalstorage:copper_upgrade'
+            },
+            id: 'functionalstorage:gold_upgrade'
         }
     ];
 

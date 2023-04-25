@@ -533,18 +533,34 @@ ServerEvents.recipes((event) => {
         {
             output: 'functionalstorage:diamond_upgrade',
             inputs: [
-                '#forge:storage_blocks/diamond',
                 '#forge:gems/diamond',
-                '#forge:chests/wooden',
                 '#forge:gems/diamond',
-                '#forge:storage_blocks/diamond',
+                'ars_nouveau:repository',
                 '#forge:gems/diamond',
-                '#forge:chests/wooden',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                'ars_nouveau:repository',
                 '#forge:gems/diamond'
             ],
             reagents: ['functionalstorage:gold_upgrade'],
             sourceCost: 1000,
             id: `${id_prefix}diamond_upgrade`
+        },
+        {
+            output: 'sophisticatedstorage:gold_to_diamond_tier_upgrade',
+            inputs: [
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                'ars_nouveau:repository',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                'ars_nouveau:repository',
+                '#forge:gems/diamond'
+            ],
+            reagents: ['sophisticatedstorage:upgrade_base'],
+            sourceCost: 1000,
+            id: `${id_prefix}gold_to_diamond_tier_upgrade`
         }
     ];
 

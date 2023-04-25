@@ -278,6 +278,11 @@ ServerEvents.recipes((event) => {
 
         { id: 'sophisticatedbackpacks:battery_upgrade' },
 
+        { id: /sophisticatedstorage:limited_/ },
+        { id: /sophisticatedstorage:tier_upgrade_/ },
+        { id: 'sophisticatedstorage:storage_link_from_controller' },
+        { id: 'sophisticatedstorage:gold_to_diamond_tier_upgrade' },
+
         { id: `spirit:soul_engulfing/soul_powder` },
         { id: `spirit:soul_engulfing/soul_powder_block` },
         { id: `spirit:soul_engulfing/soul_slate` },

@@ -420,7 +420,11 @@ jei.expert.items.disabled = [
     'powah:ender_core',
     'powah:player_aerial_pearl',
     'powah:aerial_pearl',
+
     'sophisticatedbackpacks:battery_upgrade',
+
+    /sophisticatedstorage:limited_/,
+
     'superiorshields:copper_shield',
     'superiorshields:diamond_shield',
     'superiorshields:electric_shield',
