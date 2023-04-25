@@ -226,6 +226,7 @@ jei.expert.items.disabled = [
     'ars_nouveau:vitalic_sourcelink',
     'ars_nouveau:volcanic_sourcelink',
     'ars_nouveau:ritual_wilden_summon',
+    'compactmachines:chunkloader_upgrade',
     'constructionwand:iron_wand',
     'constructionwand:stone_wand',
     'create:empty_blaze_burner',
@@ -419,7 +420,11 @@ jei.expert.items.disabled = [
     'powah:ender_core',
     'powah:player_aerial_pearl',
     'powah:aerial_pearl',
+
     'sophisticatedbackpacks:battery_upgrade',
+
+    /sophisticatedstorage:limited_/,
+
     'superiorshields:copper_shield',
     'superiorshields:diamond_shield',
     'superiorshields:electric_shield',

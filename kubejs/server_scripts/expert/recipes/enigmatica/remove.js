@@ -15,6 +15,7 @@ ServerEvents.recipes((event) => {
         { mod: 'superiorshields' },
         { mod: 'mininggadgets' },
         { mod: 'enigmaticunity' },
+        { mod: 'compactmachines' },
 
         { output: /pneumaticcraft:.*_upgrade/ },
         { output: /powah:player_transmitter.*/ },
@@ -84,6 +85,8 @@ ServerEvents.recipes((event) => {
         { id: 'farmersdelight:integration/immersiveengineering/metalpress/pumpkin' },
 
         { id: 'farmingforblockheads:feeding_trough' },
+
+        { id: 'functionalstorage:diamond_upgrade' },
 
         { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
         { id: 'hexerei:willow_broom_from_mixing_cauldron' },
@@ -275,6 +278,12 @@ ServerEvents.recipes((event) => {
 
         { id: 'sophisticatedbackpacks:battery_upgrade' },
 
+        { id: /sophisticatedstorage:limited_/ },
+        { id: /sophisticatedstorage:tier_upgrade_/ },
+        { id: 'sophisticatedstorage:storage_link_from_controller' },
+        { id: 'sophisticatedstorage:gold_to_diamond_tier_upgrade' },
+        { id: 'sophisticatedstorage:stack_upgrade_tier_4' },
+
         { id: `spirit:soul_engulfing/soul_powder` },
         { id: `spirit:soul_engulfing/soul_powder_block` },
         { id: `spirit:soul_engulfing/soul_slate` },
@@ -286,6 +295,7 @@ ServerEvents.recipes((event) => {
 
         { id: /thermal:machines\/pulverizer\/pulverizer_.*_to_dust/ },
         { id: /thermal:augments/ },
+        { id: /thermal:.*_mushroom_spores/ },
         { id: /thermal:parts\/.*_gear/ },
         { id: /thermal:earth_charge/ },
         { id: 'thermal:enderium_dust_2' },

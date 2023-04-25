@@ -221,6 +221,62 @@ ServerEvents.recipes((event) => {
             time: 40,
             sapling: 'ars_nouveau:purple_archwood_sapling',
             id: `${id_prefix}scribes_table`
+        },
+        {
+            output: 'thermal:glowstone_mushroom_spores',
+            ingredients: [
+                'minecraft:warped_fungus',
+                'thermal:phytosoil',
+                '#forge:storage_blocks/glowstone',
+                '#forge:storage_blocks/glowstone',
+                'naturesaura:gold_leaf',
+                '#forge:essences/manipulation'
+            ],
+            time: 120,
+            sapling: 'quark:ancient_sapling',
+            id: `${id_prefix}glowstone_mushroom_spores`
+        },
+        {
+            output: 'thermal:gunpowder_mushroom_spores',
+            ingredients: [
+                'minecraft:crimson_fungus',
+                'thermal:phytosoil',
+                '#forge:storage_blocks/gunpowder',
+                '#forge:storage_blocks/gunpowder',
+                'naturesaura:gold_leaf',
+                '#forge:essences/manipulation'
+            ],
+            time: 120,
+            sapling: 'quark:ancient_sapling',
+            id: `${id_prefix}gunpowder_mushroom_spores`
+        },
+        {
+            output: 'thermal:slime_mushroom_spores',
+            ingredients: [
+                'minecraft:warped_fungus',
+                'thermal:phytosoil',
+                'minecraft:slime_block',
+                'minecraft:slime_block',
+                'naturesaura:gold_leaf',
+                '#forge:essences/manipulation'
+            ],
+            time: 120,
+            sapling: 'quark:ancient_sapling',
+            id: `${id_prefix}slime_mushroom_spores`
+        },
+        {
+            output: 'thermal:redstone_mushroom_spores',
+            ingredients: [
+                'minecraft:crimson_fungus',
+                'thermal:phytosoil',
+                '#forge:storage_blocks/redstone',
+                '#forge:storage_blocks/redstone',
+                'naturesaura:gold_leaf',
+                '#forge:essences/manipulation'
+            ],
+            time: 120,
+            sapling: 'quark:ancient_sapling',
+            id: `${id_prefix}redstone_mushroom_spores`
         }
 
         /*
