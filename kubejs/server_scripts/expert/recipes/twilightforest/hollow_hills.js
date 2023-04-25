@@ -14,8 +14,7 @@ ServerEvents.highPriorityData((event) => {
 
                 'twilightforest:gold_ore_stalactite',
                 'twilightforest:silver_ore_stalactite',
-                'twilightforest:copper_ore_stalactite',
-                'twilightforest:tin_ore_stalactite'
+                'twilightforest:copper_ore_stalactite'
             ]
         },
         {
