@@ -275,6 +275,54 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}infused_iron_pickaxe_conversions/budding_amethyst`
         },
         {
+            item_in: { item: 'naturesaura:infused_iron_pickaxe' },
+            block_in: 'emendatusenigmatica:sulfur_cluster_shard_block',
+            post: [
+                { type: 'prevent_default' },
+                { type: 'place', block: 'emendatusenigmatica:budding_sulfur' },
+                { type: 'damage_item', damage: 200 },
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
+                    hide: true
+                }
+            ],
+            id: `${id_prefix}infused_iron_pickaxe_conversions/budding_sulfur`
+        },
+        {
+            item_in: { item: 'naturesaura:infused_iron_pickaxe' },
+            block_in: 'emendatusenigmatica:dimensional_cluster_shard_block',
+            post: [
+                { type: 'prevent_default' },
+                { type: 'place', block: 'emendatusenigmatica:budding_dimensional' },
+                { type: 'damage_item', damage: 200 },
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
+                    hide: true
+                }
+            ],
+            id: `${id_prefix}infused_iron_pickaxe_conversions/budding_dimensional`
+        },
+        {
+            item_in: { item: 'naturesaura:infused_iron_pickaxe' },
+            block_in: 'emendatusenigmatica:fluorite_cluster_shard_block',
+            post: [
+                { type: 'prevent_default' },
+                { type: 'place', block: 'emendatusenigmatica:budding_fluorite' },
+                { type: 'damage_item', damage: 200 },
+                { type: 'add_item_cooldown', s: 2 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
+                    hide: true
+                }
+            ],
+            id: `${id_prefix}infused_iron_pickaxe_conversions/budding_fluorite`
+        },
+        {
             hide_in_viewer: true,
             item_in: { tag: 'forge:tools/knives' },
             block_in: 'minecraft:pumpkin',

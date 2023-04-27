@@ -1,5 +1,5 @@
 ServerEvents.blockLootTables((event) => {
-    const crystal_types = ['fluorite', 'sulfur', 'dimensional'];
+    const crystal_types = ['subzero', 'therium'];
 
     // Clusters
     crystal_types.forEach((crystal_type) => {
@@ -10,7 +10,7 @@ ServerEvents.blockLootTables((event) => {
                     children: [
                         {
                             type: 'minecraft:item',
-                            name: `emendatusenigmatica:${crystal_type}_cluster`,
+                            name: `byg:${crystal_type}_crystal_cluster`,
                             conditions: [
                                 {
                                     condition: 'minecraft:match_tool',
@@ -22,7 +22,7 @@ ServerEvents.blockLootTables((event) => {
                         },
                         {
                             type: 'minecraft:item',
-                            name: AlmostUnified.getPreferredItemForTag(`forge:gems/${crystal_type}`).getId(),
+                            name: `byg:${crystal_type}_crystal_shard`,
                             functions: [
                                 { add: false, count: 4.0, function: 'minecraft:set_count' },
                                 {
@@ -45,14 +45,14 @@ ServerEvents.blockLootTables((event) => {
 
     crystal_types.forEach((crystal_type) => {
         bud_sizes.forEach((size) => {
-            event.addBlock(`emendatusenigmatica:${size}_${crystal_type}_bud`, (table) => {
+            event.addBlock(`byg:${size}_${crystal_type}_crystal_bud`, (table) => {
                 table.addPool((pool) => {
                     pool.addEntry({
                         type: 'minecraft:alternatives',
                         children: [
                             {
                                 type: 'minecraft:item',
-                                name: `emendatusenigmatica:${size}_${crystal_type}_bud`,
+                                name: `byg:${size}_${crystal_type}_crystal_bud`,
                                 conditions: [
                                     {
                                         condition: 'minecraft:match_tool',
@@ -64,7 +64,7 @@ ServerEvents.blockLootTables((event) => {
                             },
                             {
                                 type: 'minecraft:item',
-                                name: `emendatusenigmatica:${crystal_type}_dust`,
+                                name: `kubejs:${crystal_type}_dust`,
                                 conditions: [{ condition: 'minecraft:survives_explosion' }]
                             }
                         ]

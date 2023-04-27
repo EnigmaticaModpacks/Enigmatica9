@@ -29,6 +29,18 @@ ServerEvents.recipes((event) => {
             material: 'certus_quartz',
             output: 'ae2:certus_quartz_dust',
             crushing_tier: gem_properties['certus_quartz'].crushing_tier
+        },
+        {
+            input_types: ['gems'],
+            material: 'therium',
+            output: 'kubejs:therium_dust',
+            crushing_tier: gem_properties['therium'].crushing_tier
+        },
+        {
+            input_types: ['gems'],
+            material: 'subzero',
+            output: 'kubejs:subzero_dust',
+            crushing_tier: gem_properties['subzero'].crushing_tier
         }
     ];
 
