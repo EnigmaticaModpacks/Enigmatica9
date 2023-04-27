@@ -17,8 +17,9 @@ ServerEvents.chestLootTables((event) => {
             pool.addItem(
                 Item.of('apotheosis:potion_charm', '{Damage:0,Potion:"minecraft:water_breathing"}'),
                 1,
-                [5, 10]
+                [1, 3]
             );
+            // pool.addItem(Item.of('occultism:familiar_ring', '{familiarType:"occultism:familiar_cthulhu"}'), 1, 1);
         });
     });
 

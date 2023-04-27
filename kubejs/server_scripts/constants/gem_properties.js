@@ -801,6 +801,12 @@ const gem_properties = {
     amethyst: {
         crushing_tier: 2
     },
+    therium: {
+        crushing_tier: 2
+    },
+    subzero: {
+        crushing_tier: 2
+    },
     coal_coke: {
         crushing_tier: 1
     },

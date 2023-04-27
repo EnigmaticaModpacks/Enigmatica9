@@ -12,6 +12,8 @@ StartupEvents.registry('item', (event) => {
         'scavengers_delight',
         'alchemists_delight',
         'amethyst_dust',
+        'subzero_dust',
+        'therium_dust',
         'aura_leaf',
         'crude_iron_ingot',
         'red_nether_brick',

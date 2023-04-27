@@ -12,6 +12,24 @@ ServerEvents.recipes((event) => {
             energy: 1000,
             ignore_occultism_multiplier: true,
             id_suffix: `amethyst_dust_from_amethyst`
+        },
+        {
+            outputs: { primary: { item: 'kubejs:therium_dust', count: 1, chance: 1.0 } },
+            input: '#forge:gems/therium',
+            experience: 0.2,
+            duration: 20,
+            energy: 1000,
+            ignore_occultism_multiplier: true,
+            id_suffix: `therium_dust_from_therium`
+        },
+        {
+            outputs: { primary: { item: 'kubejs:subzero_dust', count: 1, chance: 1.0 } },
+            input: '#forge:gems/subzero',
+            experience: 0.2,
+            duration: 20,
+            energy: 1000,
+            ignore_occultism_multiplier: true,
+            id_suffix: `subzero_dust_from_subzero`
         }
     ];
 
