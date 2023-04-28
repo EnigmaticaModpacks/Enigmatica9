@@ -2,6 +2,8 @@
 
 _Using Forge-1.19.2-43.2.8_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.6.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.6.0.md)_
 
+**We recommend** starting a new world for this update. Oregeneration and resources have been completely reworked.
+
 **New Mods**
 
 **Improvements**
