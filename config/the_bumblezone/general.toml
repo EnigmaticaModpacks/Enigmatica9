@@ -40,10 +40,11 @@
 	# 
 	#-----------------------------------------------------
 	#
-	# How long in seconds this music disc will be playing music.
-	# This is used for the server to know when to make Allays stop dancing when Jukebox plays this music disc.
+	# Brood Blocks will automatically spawn bees until the number of active bees is the value below. 
+	# Set this higher to allow Brood Blocks to spawn more bees in a smaller area or set it to 0 to turn 
+	# off automatic Brood Block bee spawning.
 	#
-	#Range: 0 ~ 1000000
+	#Range: 0 ~ 1000
 	broodBlocksBeeSpawnCapacity = 84
 	# 
 	#-----------------------------------------------------
@@ -154,6 +155,14 @@
 	#
 	#Range: 0 ~ 1000000
 	beeQueenBonusTradeAmountTillSatified = 24
+	# 
+	#-----------------------------------------------------
+	#
+	# How long in seconds this music disc will be playing music.
+	# This is used for the server to know when to make Allays stop dancing when Jukebox plays this music disc.
+	#
+	#Range: 0 ~ 1000000
+	musicDiscTimeLengthFlightOfTheBumblebee = 84
 
 ["Bee Loot Injection Options"]
 	# 
