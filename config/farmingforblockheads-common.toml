@@ -18,6 +18,6 @@ fertilizerBonusGrowthChance = 1.0
 #The chance for Fertilized Farmland to turn back into regular Farmland (per provided bonus).
 #Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 fertilizerRegressionChance = 0.0
-#Set this to true if you're a modpack dev to see Farming for Blockheads registry warnings in chat. Errors will always display.
-showRegistryWarnings = false
+#If true, merchants will be considered babies (on a technical level only), which may resolve exploits based on merchant death loot (like blood)
+treatMerchantsLikeBabies = false
 
