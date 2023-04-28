@@ -1,10 +1,10 @@
 ### Enigmatica 9 v1.6.0
 
-_Using Forge-1.19.2-43.2.8_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.6.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.6.0.md)_
+🚀 Forge-1.19.2-43.2.8 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.6.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.6.0.md)
 
-**We recommend** starting a new world for this update. Oregeneration and resources have been completely reworked.
+#### 🌍 We recommend starting a new world for this update. Resources and ores got a major overhaul!
 
-**New Mods**
+### 🎁 New Mods Added
 
 -   [Ars Scalaes](https://www.curseforge.com/minecraft/mc-mods/ars-scalaes) (by [Alexth99](https://www.curseforge.com/members/Alexth99/projects))
 -   [CorgiLib](https://www.curseforge.com/minecraft/mc-mods/corgilib) (by [Corgi_Taco](https://www.curseforge.com/members/Corgi_Taco/projects))
@@ -30,7 +30,7 @@ _Using Forge-1.19.2-43.2.8_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 -   [Too Many Glyphs](https://www.curseforge.com/minecraft/mc-mods/too-many-glyphs) (by [derringercubed](https://www.curseforge.com/members/derringercubed/projects))
 -   [Towers of the Wild: Additions](https://www.curseforge.com/minecraft/mc-mods/towers-of-the-wild-additions) (by [Aureljz](https://www.curseforge.com/members/Aureljz/projects))
 
-**Improvements**
+### 🌟 Improvements
 
 -   Update Blue Skies Boss loot to guarantee certain drops and buff others
 -   Create alternate crafting recipe for red nether brick that doesn't use netherwart
@@ -58,14 +58,14 @@ _Using Forge-1.19.2-43.2.8_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 -   Immersive Engineering mineral deposits are now infinite! Huzzah!
 -   Make Occultism crusher spirits able to crush modded ores [\#151](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/151)
 
-**Fixed Bugs**
+### 🐛 Fixed Bugs
 
 -   Remove disabled items from Occultism quests [\#258](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/258) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Remove refrences to non existant schematics in Natures Aura quests [\#259](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/259) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Clarify Tools quests [\#255](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/255) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix Thermal Tomato Sauce [\#280](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/280) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix missing loot in Industrial Foregoing Quests ([MuteTiefling](https://github.com/MuteTiefling))
--   Fix broken loot in Create Quests (https://github.com/EnigmaticaModpacks/Enigmatica9/issues/289) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix broken loot in Create Quests [\#289](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/289) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Compacting drawer does not "understand" copper nuggets [\#247](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/247)
 -   Building gadget can duplicate \(at least\) backpacks [\#295](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/295)
 -   Soul gem can duplicate mobs from containment jars [\#294](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/294)
@@ -90,18 +90,18 @@ _Using Forge-1.19.2-43.2.4_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 
 **Please read the changelog for [v1.4.0](#enigmatica-9-v141--v142), it has breaking changes.**
 
-**New Mods**
+### 🎁 New Mods Added
 
 -   [Mob Despawn Timers](https://www.curseforge.com/minecraft/mc-mods/mob-despawn-timers) (by [Shadows_of_Fire](https://www.curseforge.com/members/Shadows_of_Fire/projects))
 
-**Improvements**
+### 🌟 Improvements
 
 -   Significantly reduce the rate of super glue in Create loot rewards [\#239](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/239) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Remove invalid bone meal recipe [\#238](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/238) ([MuteTiefling](https://github.com/MuteTiefling))
 -   fix PNC drones not working [\#237](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/237) ([MuteTiefling](https://github.com/MuteTiefling))
 -   AE2 Quests and more [\#234](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/234) ([MuteTiefling](https://github.com/MuteTiefling))
 
-**Fixed Bugs**
+### 🐛 Fixed Bugs
 
 -   Crimson altar fails to convert gold to tainted gold [\#240](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/240)
 -   Can't Parse Loot Table [\#233](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/233)
@@ -116,7 +116,7 @@ _Using Forge-1.19.2-43.2.4_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 
 **Please read the changelog for v1.4.0, this is update is just a small hotfix.**
 
-**Fixed Bugs**
+### 🐛 Fixed Bugs
 
 -   Disabled Quark automatic recipe unlock to decrease world load times in some cases.
 -   Set Better Compat Check version correctly.
@@ -133,7 +133,7 @@ _Using Forge-1.19.2-43.2.4_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 
 Due to an issue between EveryComp and Macaw's mods and MrCrayfish's Furniture Mod, we've unfortunately had to remove Macaw's and MrCrayfish's mods. We did not want to remove any of those mods, but the modpack would be virtually unplayable with less than 16GB allocated if we hadn't.
 
-**New Mods**
+### 🎁 New Mods Added
 
 -   [Ars Creo](https://www.curseforge.com/minecraft/mc-mods/ars-creo) (by [baileyholl2](https://www.curseforge.com/members/baileyholl2/projects))
 -   [Better Compatibility Checker](https://www.curseforge.com/minecraft/mc-mods/better-compatibility-checker) (by [Gaz\_](https://www.curseforge.com/members/Gaz_/projects))
@@ -176,12 +176,12 @@ Due to an issue between EveryComp and Macaw's mods and MrCrayfish's Furniture Mo
 -   [Macaw's Trapdoors](https://www.curseforge.com/minecraft/mc-mods/macaws-trapdoors) (by [sketch_macaw](https://www.curseforge.com/members/sketch_macaw/projects))
 -   [MrCrayfish's Furniture Mod](https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod) (by [MrCrayfish](https://www.curseforge.com/members/MrCrayfish/projects))
 
-**Improvements**
+### 🌟 Improvements
 
 -   Eccentric Tome should not have the Blue Skies Book [\#212](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/212)
 -   Add a Create-Torque-to-Power Transformer [\#206](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/206)
 
-**Fixed Bugs**
+### 🐛 Fixed Bugs
 
 -   Chunk loading doesn't work properly, `limitedchunks` seems to be to blame. [\#205](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/205)
 -   Witch Hazel slabs not craftable [\#180](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/180)
@@ -194,7 +194,7 @@ Due to an issue between EveryComp and Macaw's mods and MrCrayfish's Furniture Mo
 
 _Using Forge-1.19.2-43.1.57_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.3.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.3.0.md)_
 
-**New Mods**
+### 🎁 New Mods Added
 
 -   [CoFH Core](https://www.curseforge.com/minecraft/mc-mods/cofh-core) (by [TeamCoFH](https://www.curseforge.com/members/TeamCoFH/projects))
 -   [Thermal Cultivation](https://www.curseforge.com/minecraft/mc-mods/thermal-cultivation) (by [TeamCoFH](https://www.curseforge.com/members/TeamCoFH/projects))
@@ -204,7 +204,7 @@ _Using Forge-1.19.2-43.1.57_ | _[Mod Updates](https://github.com/EnigmaticaModpa
 -   [Thermal Integration](https://www.curseforge.com/minecraft/mc-mods/thermal-integration) (by [TeamCoFH](https://www.curseforge.com/members/TeamCoFH/projects))
 -   [Thermal Locomotion](https://www.curseforge.com/minecraft/mc-mods/thermal-locomotion) (by [TeamCoFH](https://www.curseforge.com/members/TeamCoFH/projects))
 
-**Improvements**
+### 🌟 Improvements
 
 -   ... maybe fix the tag scripts breaking? [\#140](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/140) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Reinstate Dye Mixing Recipes [\#139](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/139) ([MuteTiefling](https://github.com/MuteTiefling))
@@ -213,7 +213,7 @@ _Using Forge-1.19.2-43.1.57_ | _[Mod Updates](https://github.com/EnigmaticaModpa
 -   Make Forsaken Knights slightly less common [\#133](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/133) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Adjust Cave Creeper and Stoneling Loot Tables [\#132](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/132) ([MuteTiefling](https://github.com/MuteTiefling))
 
-**Fixed Bugs**
+### 🐛 Fixed Bugs
 
 -   upgrade from 1.0.2 server to 1.1.1 server breaks purification chamber in mekanism for ore trippling [\#129](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/129)
 -   Occultism Old Edition book duping [\#89](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/89)
@@ -226,17 +226,17 @@ _Using Forge-1.19.2-43.1.57_ | _[Mod Updates](https://github.com/EnigmaticaModpa
 
 _Using Forge-1.19.2-43.1.52_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.2.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.2.0.md)_
 
-**New Mods**
+### 🎁 New Mods Added
 
 -   [CC: Tweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked) (by [SquidDev](https://www.curseforge.com/members/SquidDev/projects))
 -   [Creeper Overhaul](https://www.curseforge.com/minecraft/mc-mods/creeper-overhaul) (by [joosh_7889](https://www.curseforge.com/members/joosh_7889/projects))
 -   [Industrial Foregoing](https://www.curseforge.com/minecraft/mc-mods/industrial-foregoing) (by [Buuz135](https://www.curseforge.com/members/Buuz135/projects))
 
-**Improvements**
+### 🌟 Improvements
 
 -   JEI QoL change -\> Increase limit of columns and rows for ingredient list and bookmarks. [\#123](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/123) ([Kanzaji](https://github.com/Kanzaji))
 
-**Fixed Bugs**
+### 🐛 Fixed Bugs
 
 -   upgrade from 1.0.2 server to 1.1.1 server breaks purification chamber in mekanism for ore trippling [\#129](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/129)
 -   Fix missing Ore Processing options [\#125](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/125) ([MuteTiefling](https://github.com/MuteTiefling))
@@ -246,7 +246,7 @@ _Using Forge-1.19.2-43.1.52_ | _[Mod Updates](https://github.com/EnigmaticaModpa
 
 _Using Forge-1.19.2-43.1.47_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.1.1.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.1.1.md)_
 
-**Fixed Bugs**
+### 🐛 Fixed Bugs
 
 -   Server files seem to be missing PolyLib [\#121](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/121)
 
@@ -256,7 +256,7 @@ _Using Forge-1.19.2-43.1.47_ | _[Mod Updates](https://github.com/EnigmaticaModpa
 
 _Using Forge-1.19.2-43.1.47_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.1.0.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.1.0.md)_
 
-**New Mods**
+### 🎁 New Mods Added
 
 -   [Apotheosis](https://www.curseforge.com/minecraft/mc-mods/apotheosis) (by [Shadows_of_Fire](https://www.curseforge.com/members/Shadows_of_Fire/projects))
 -   [Applied Mekanistics](https://www.curseforge.com/minecraft/mc-mods/applied-mekanistics) (by [ramidzkh](https://www.curseforge.com/members/ramidzkh/projects))
@@ -279,7 +279,7 @@ _Using Forge-1.19.2-43.1.47_ | _[Mod Updates](https://github.com/EnigmaticaModpa
 -   [Toast Control](https://www.curseforge.com/minecraft/mc-mods/toast-control) (by [Shadows_of_Fire](https://www.curseforge.com/members/Shadows_of_Fire/projects))
 -   [Yeetus Experimentus](https://www.curseforge.com/minecraft/mc-mods/yeetusexperimentus) (by [Sunekaer](https://www.curseforge.com/members/Sunekaer/projects))
 
-**Improvements**
+### 🌟 Improvements
 
 -   Drowned now have a chance to drown their attackers [\#120](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/120) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Give Archdruids some poison spray [\#117](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/117) ([MuteTiefling](https://github.com/MuteTiefling))
@@ -289,7 +289,7 @@ _Using Forge-1.19.2-43.1.47_ | _[Mod Updates](https://github.com/EnigmaticaModpa
 -   Ars Nouveau Quest Refresh [\#90](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/90) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Quest Port from E8 [\#34](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/34) ([Kanzaji](https://github.com/Kanzaji))
 
-**Fixed Bugs**
+### 🐛 Fixed Bugs
 
 -   Dragon Slaying Bug [\#114](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/114)
 -   While carrying an armoured jetpack and wearing a second if you impact a tree top and die you lose one jetpack [\#108](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/108)
@@ -309,7 +309,7 @@ _Using Forge-1.19.2-43.1.47_ | _[Mod Updates](https://github.com/EnigmaticaModpa
 
 _Using Forge-1.19.2-43.1.34_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.0.2.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.0.2.md)_
 
-**Fixed Bugs**
+### 🐛 Fixed Bugs
 
 -   Revert Fairy Ring changes [\#61](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/61) ([MuteTiefling](https://github.com/MuteTiefling))
 
@@ -319,11 +319,11 @@ _Using Forge-1.19.2-43.1.34_ | _[Mod Updates](https://github.com/EnigmaticaModpa
 
 _Using Forge-1.19.2-43.1.34_ | _[Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.0.1.md)_ | _[Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.0.1.md)_
 
-**Fixed Bugs**
+### 🐛 Fixed Bugs
 
 -   Fixed players being unable to join servers
 
-**Improvements**
+### 🌟 Improvements
 
 -   Pre-loaded Eccentric Tome [\#60](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/60) ([MuteTiefling](https://github.com/MuteTiefling))
 
