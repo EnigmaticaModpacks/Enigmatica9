@@ -1,0 +1,24 @@
+{
+  "type": "emendatusenigmatica:vanilla_deposit",
+  "dimension": "minecraft:the_nether",
+  "biomes": [],
+  "registryName": "vanilla_aluminum_nether",
+  "config": {
+    "material": "aluminum",
+    "fillerTypes": [
+      "minecraft_basalt",
+      "minecraft_blackstone",
+      "minecraft_netherrack",
+      "byg_blue_netherrack",
+      "byg_brimstone",
+      "byg_magmatic_stone",
+      "byg_scoria_stone"
+    ],
+    "chance": 10,
+    "size": 13,
+    "minYLevel": 5,
+    "maxYLevel": 118,
+    "placement": "uniform",
+    "rarity": "common"
+  }
+  }

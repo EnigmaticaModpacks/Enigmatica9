@@ -2,12 +2,7 @@
     "id": "sulfur",
     "source": "modded",
     "localizedName": "Sulfur",
-    "processedTypes": [
-        "storage_block",
-        "gem",
-        "dust",
-        "cluster"
-    ],
+    "processedTypes": ["storage_block", "gem", "dust", "cluster"],
     "properties": {
         "materialType": "gem",
         "harvestLevel": 2,

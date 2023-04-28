@@ -71,8 +71,36 @@ ServerEvents.recipes((event) => {
             inputs: [{ item: 'thermal:machine_frame' }],
             fluid: { amount: 1000, tag: 'forge:source' },
             id: `${id_prefix}source_gem_block`
+        },
+        {
+            results: [
+                { item: 'ae2:sky_dust', count: 4 },
+                { item: 'emendatusenigmatica:silver_clump' },
+                { item: 'emendatusenigmatica:osmium_clump' }
+            ],
+            inputs: [{ base_ingredient: { item: 'thermal:rich_slag' }, count: 9 }],
+            fluid: { amount: 100, tag: 'forge:redstone_acid' },
+            id: `${id_prefix}sky_dust_silver_osmium_clump`
         }
     ];
+
+    simple_metals.forEach((metal) => {
+        let outputs = [{ item: `emendatusenigmatica:${metal}_dirty_dust`, count: 2 }];
+
+        let secondary = metal_properties[metal].oreProcessing.expert_output.secondary;
+        if (secondary == 'quartz') {
+            outputs.push({ item: `emendatusenigmatica:${secondary}_dust` });
+        } else {
+            outputs.push({ item: `emendatusenigmatica:${secondary}_dirty_dust` });
+        }
+
+        recipes.push({
+            results: outputs,
+            inputs: [{ base_ingredient: { tag: `create:crushed_ores/${metal}` }, count: 1 }],
+            fluid: { amount: 100, tag: 'forge:redstone_acid' },
+            id: `${id_prefix}${metal}_dirty_dust_from_acid`
+        });
+    });
 
     recipes.forEach((recipe) => {
         recipe.type = 'immersiveengineering:bottling_machine';

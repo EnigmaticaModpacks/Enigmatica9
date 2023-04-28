@@ -1,0 +1,9 @@
+{
+    "id": "air_essence",
+    "source": "modded",
+    "localizedName": "Air Essence",
+    "processedTypes": ["infuse_type"],
+    "colors": {
+        "gasColor": "876d16"
+    }
+}

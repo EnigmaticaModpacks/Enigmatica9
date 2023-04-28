@@ -32,25 +32,25 @@ ServerEvents.recipes((event) => {
         },
         {
             inputs: ['3x #forge:dusts/copper', '#forge:dusts/tin', '#forge:dusts/redstone'],
-            outputs: [Item.of('emendatusenigmatica:bronze_ingot', 4), 'thermal:rich_slag'],
+            outputs: [Item.of('emendatusenigmatica:bronze_ingot', 4), 'thermal:slag'],
             energy: 2400,
             id: `${id_prefix}bronze_ingot`
         },
         {
             inputs: ['2x #forge:dusts/silver', '2x #forge:dusts/gold', '#forge:dusts/redstone'],
-            outputs: [Item.of('emendatusenigmatica:electrum_ingot', 4), 'thermal:rich_slag'],
+            outputs: [Item.of('emendatusenigmatica:electrum_ingot', 4), 'thermal:slag'],
             energy: 2400,
             id: `${id_prefix}electrum_ingot`
         },
         {
             inputs: ['2x #forge:dusts/iron', '#forge:dusts/nickel', '2x #forge:dusts/redstone'],
-            outputs: [Item.of('emendatusenigmatica:invar_ingot', 3), '2x thermal:rich_slag'],
+            outputs: [Item.of('emendatusenigmatica:invar_ingot', 3), '2x thermal:slag'],
             energy: 2400,
             id: `${id_prefix}invar_ingot`
         },
         {
             inputs: ['2x #forge:dusts/nickel', '2x #forge:dusts/copper', '#forge:dusts/redstone'],
-            outputs: [Item.of('emendatusenigmatica:constantan_ingot', 4), 'thermal:rich_slag'],
+            outputs: [Item.of('emendatusenigmatica:constantan_ingot', 4), 'thermal:slag'],
             energy: 2400,
             id: `${id_prefix}constantan_ingot`
         },

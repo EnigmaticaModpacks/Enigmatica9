@@ -10,10 +10,18 @@ ServerEvents.recipes((event) => {
             ingredients: [{ tag: 'create:crushed_ores/iron' }, { amount: 100, fluidTag: 'forge:redstone_acid' }],
             results: [
                 { item: 'emendatusenigmatica:iron_dirty_dust', count: 2 },
-                { item: 'emendatusenigmatica:nickel_dirty_dust', count: 1, chance: 0.3 },
-                { item: 'emendatusenigmatica:nickel_dirty_dust', count: 1, chance: 0.1 }
+                {
+                    item: `emendatusenigmatica:${metal_properties['iron'].oreProcessing.expert_output.secondary}_dirty_dust`,
+                    count: 1,
+                    chance: 0.3
+                },
+                {
+                    item: `emendatusenigmatica:${metal_properties['iron'].oreProcessing.expert_output.secondary}_dirty_dust`,
+                    count: 1,
+                    chance: 0.1
+                }
             ],
-            heatRequirement: 'heated',
+            heatRequirement: 'superheated',
             id: `${id_prefix}iron_dust_from_redstone_acid`
         },
         {

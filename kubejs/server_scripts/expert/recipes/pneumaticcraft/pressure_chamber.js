@@ -493,6 +493,15 @@ ServerEvents.recipes((event) => {
             ],
             pressure: 2.0,
             id: `${id_prefix}dense_energy_cell`
+        },
+        {
+            results: [{ item: 'compactmachines:wall', count: 32 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'occultism:otherstone', count: 32 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:dusts/fluix', count: 4 }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}compactmachines_wall`
         }
     ];
 

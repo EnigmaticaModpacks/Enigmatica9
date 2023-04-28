@@ -1,0 +1,10 @@
+{
+    "id": "sky",
+    "source": "modded",
+    "localizedName": "Sky",
+    "processedTypes": ["storage_block", "ingot"],
+    "properties": {
+        "materialType": "metal",
+        "harvestLevel": 2
+    }
+}

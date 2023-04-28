@@ -201,8 +201,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 6.0d
+			x: 3.5d
+			y: 5.5d
 			dependencies: ["7465284C82512CF1"]
 			id: "5503E132D9D02EF8"
 			tasks: [{
@@ -223,8 +223,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 7.0d
+			x: 3.5d
+			y: 6.5d
 			dependencies: [
 				"126F4E070F219A8B"
 				"6E239ECBE33DFA36"
@@ -237,12 +237,9 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 7.0d
-			dependencies: [
-				"606F79DAEB15E85B"
-				"5503E132D9D02EF8"
-			]
+			x: 3.5d
+			y: 8.0d
+			dependencies: ["606F79DAEB15E85B"]
 			id: "507A68CE5D41C4C2"
 			tasks: [{
 				id: "0D888CFF2F834C92"
@@ -262,7 +259,7 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: 4.5d
 			y: 6.0d
 			dependencies: [
 				"4B12601018EEB05D"
@@ -276,8 +273,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 5.0d
+			x: 5.5d
+			y: 5.5d
 			dependencies: ["538DE3B57A9AC5AD"]
 			id: "4B12601018EEB05D"
 			tasks: [{
@@ -320,8 +317,8 @@
 			x: 3.5d
 			y: 1.5d
 			dependencies: [
-				"2BA70920EA1ED0A8"
 				"6044FE23384692A5"
+				"49159D9F94B7006C"
 			]
 			id: "767A379B00DCA2E0"
 			tasks: [{
@@ -334,7 +331,7 @@
 			title: "Improved Blast Furnace"
 			icon: "immersiveengineering:advanced_blast_furnace"
 			x: 2.5d
-			y: 0.5d
+			y: 0.0d
 			description: [
 				"Supplying enough heat to work with Iron directly has proved difficult until now. With a magically enhanced blast furnace and Horizonite as fuel, it should prove more feasible."
 				""
@@ -438,8 +435,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 5.0d
+			x: 5.5d
+			y: 4.5d
 			dependencies: ["15F56E72212629FB"]
 			id: "538DE3B57A9AC5AD"
 			tasks: [{
@@ -449,14 +446,25 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 5.5d
+			x: 4.5d
+			y: 5.0d
 			dependencies: ["538DE3B57A9AC5AD"]
 			id: "7465284C82512CF1"
 			tasks: [{
 				id: "25E1CC6FE74A1DFB"
 				type: "item"
 				item: "pneumaticcraft:assembly_controller"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.0d
+			dependencies: ["2BA70920EA1ED0A8"]
+			id: "49159D9F94B7006C"
+			tasks: [{
+				id: "7667047356862670"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
 			}]
 		}
 	]

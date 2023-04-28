@@ -63,6 +63,7 @@ ServerEvents.recipes((event) => {
         { id: `industrialforegoing:laser_drill_ore/ores/cinnabar` },
 
         { id: 'immersiveengineering:crafting/coal_coke_to_coke' },
+        { id: 'immersiveengineering:refinery/biodiesel' },
 
         { id: /mekanism:enriching\/dye/ },
         { id: /mekanism:compat\/byg\/dye/ },
@@ -70,14 +71,17 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:sawing\/log/ },
         { id: /mekanism:compat\/byg\/combining\/.*_ore_/ },
         { id: /mekanism:bin\/.*/ },
-        { id: 'mekanism:processing/netherite/dust_to_ancient_debris' },
         { id: /mekanism:crushing\/biofuel/ },
+        { id: 'mekanism:processing/netherite/dust_to_ancient_debris' },
         { id: `mekanism:processing/bronze/ingot/from_infusing` },
 
         { id: 'minecraft:bone_meal' },
         { id: 'minecraft:glass' },
 
         { id: /naturesaura:animal_spawner\/sheep_/ },
+        { id: 'naturesaura:infused_iron' },
+        { id: 'naturesaura:sky_ingot' },
+        { id: 'naturesaura:tainted_gold' },
 
         { id: 'occultism:crafting/butcher_knife' },
         { id: /occultism:miner\/.*\/deepslate_/ },

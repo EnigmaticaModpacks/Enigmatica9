@@ -2,11 +2,7 @@
     "id": "dimensional",
     "source": "modded",
     "localizedName": "Dimensional Shard",
-    "processedTypes": [
-        "storage_block",
-        "cluster",
-        "dust"
-    ],
+    "processedTypes": ["storage_block", "cluster", "dust"],
     "properties": {
         "materialType": "gem",
         "harvestLevel": 2,

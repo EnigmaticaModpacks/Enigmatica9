@@ -11,8 +11,8 @@ ServerEvents.recipes((event) => {
             ingredients: [
                 { item: 'minecraft:glass_bottle' },
                 {
-                    amount: 250,
-                    fluid: 'hexerei:blood_fluid'
+                    fluidTag: 'forge:blood',
+                    amount: 250
                 }
             ],
             id: `${id_prefix}blood_bottle`
