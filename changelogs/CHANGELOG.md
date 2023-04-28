@@ -6,6 +6,30 @@ _Using Forge-1.19.2-43.2.8_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 
 **New Mods**
 
+-   [Ars Scalaes](https://www.curseforge.com/minecraft/mc-mods/ars-scalaes) (by [Alexth99](https://www.curseforge.com/members/Alexth99/projects))
+-   [CorgiLib](https://www.curseforge.com/minecraft/mc-mods/corgilib) (by [Corgi_Taco](https://www.curseforge.com/members/Corgi_Taco/projects))
+-   [Dense Trees](https://www.curseforge.com/minecraft/mc-mods/dense-trees) (by [Mrbysco](https://www.curseforge.com/members/Mrbysco/projects))
+-   [EE: Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/emendatus-enigmatica-ars-nouveau-addon) (by [Ridanisaurus](https://www.curseforge.com/members/Ridanisaurus/projects))
+-   [EE: Create](https://www.curseforge.com/minecraft/mc-mods/emendatus-enigmatica-create-addon) (by [Ridanisaurus](https://www.curseforge.com/members/Ridanisaurus/projects))
+-   [EE: Mekanism](https://www.curseforge.com/minecraft/mc-mods/emendatus-enigmatica-mekanism-addon) (by [Ridanisaurus](https://www.curseforge.com/members/Ridanisaurus/projects))
+-   [EE: Occultism](https://www.curseforge.com/minecraft/mc-mods/emendatus-enigmatica-occultism-addon) (by [Ridanisaurus](https://www.curseforge.com/members/Ridanisaurus/projects))
+-   [EE: Thermal Expansion](https://www.curseforge.com/minecraft/mc-mods/emendatus-enigmatica-thermal-addon) (by [Ridanisaurus](https://www.curseforge.com/members/Ridanisaurus/projects))
+-   [Emendatus Enigmatica](https://www.curseforge.com/minecraft/mc-mods/emendatus-enigmatica) (by [Ridanisaurus](https://www.curseforge.com/members/Ridanisaurus/projects))
+-   [Integrated API](https://www.curseforge.com/minecraft/mc-mods/integrated-api) (by [CraisinLord](https://www.curseforge.com/members/CraisinLord/projects))
+-   [Integrated Dungeons and Structures](https://www.curseforge.com/minecraft/mc-mods/idas) (by [CraisinLord](https://www.curseforge.com/members/CraisinLord/projects))
+-   [LootJS: KubeJS Addon](https://www.curseforge.com/minecraft/mc-mods/lootjs) (by [Lytho](https://www.curseforge.com/members/Lytho/projects))
+-   [ManyIdeas Core](https://www.curseforge.com/minecraft/mc-mods/manyideas-core) (by [GeheimagentNr1](https://www.curseforge.com/members/GeheimagentNr1/projects))
+-   [ManyIdeas Doors](https://www.curseforge.com/minecraft/mc-mods/manyideas-doors) (by [GeheimagentNr1](https://www.curseforge.com/members/GeheimagentNr1/projects))
+-   [NotEnoughRecipeBook](https://www.curseforge.com/minecraft/mc-mods/notenoughrecipebook) (by [SSKirillSS](https://www.curseforge.com/members/SSKirillSS/projects))
+-   [Online Detector (Forge)](https://www.curseforge.com/minecraft/mc-mods/online-detector) (by [andrew0030](https://www.curseforge.com/members/andrew0030/projects))
+-   [Pehkui](https://www.curseforge.com/minecraft/mc-mods/pehkui) (by [Virtuoel](https://www.curseforge.com/members/Virtuoel/projects))
+-   [PerViamInvenire](https://www.curseforge.com/minecraft/mc-mods/perviaminvenire) (by [OrionOnline](https://www.curseforge.com/members/OrionOnline/projects))
+-   [Recipes Library](https://www.curseforge.com/minecraft/mc-mods/recipes-library) (by [GeheimagentNr1](https://www.curseforge.com/members/GeheimagentNr1/projects))
+-   [Resourceful Config](https://www.curseforge.com/minecraft/mc-mods/resourceful-config) (by [ThatGravyBoat](https://www.curseforge.com/members/ThatGravyBoat/projects))
+-   [Restricted Portals](https://www.curseforge.com/minecraft/mc-mods/restricted-portals) (by [MoreThanHidden](https://www.curseforge.com/members/MoreThanHidden/projects))
+-   [Too Many Glyphs](https://www.curseforge.com/minecraft/mc-mods/too-many-glyphs) (by [derringercubed](https://www.curseforge.com/members/derringercubed/projects))
+-   [Towers of the Wild: Additions](https://www.curseforge.com/minecraft/mc-mods/towers-of-the-wild-additions) (by [Aureljz](https://www.curseforge.com/members/Aureljz/projects))
+
 **Improvements**
 
 -   Update Blue Skies Boss loot to guarantee certain drops and buff others
@@ -32,6 +56,7 @@ _Using Forge-1.19.2-43.2.8_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 -   Reduce cost of Demon's Dream, Hemp, Sage, and other Hexerei Plants in the Market from an Emerald to a gold
 -   Buff Enigmatic Unity power conversion
 -   Immersive Engineering mineral deposits are now infinite! Huzzah!
+-   Make Occultism crusher spirits able to crush modded ores [\#151](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/151)
 
 **Fixed Bugs**
 
@@ -41,6 +66,21 @@ _Using Forge-1.19.2-43.2.8_ | _[Mod Updates](https://github.com/EnigmaticaModpac
 -   Fix Thermal Tomato Sauce [\#280](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/280) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix missing loot in Industrial Foregoing Quests ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix broken loot in Create Quests (https://github.com/EnigmaticaModpacks/Enigmatica9/issues/289) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Compacting drawer does not "understand" copper nuggets [\#247](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/247)
+-   Building gadget can duplicate \(at least\) backpacks [\#295](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/295)
+-   Soul gem can duplicate mobs from containment jars [\#294](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/294)
+-   Quest reward missing/broken for create spout [\#289](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/289)
+-   Modonomicon \(Occultism\) rendering issue with FTB Chunks [\#286](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/286)
+-   Hexerei infused fabric block recipe producing fewer blocks than stated [\#284](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/284)
+-   tomato sauce is craftable [\#280](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/280)
+-   charcoal has two mekanism enrichment chamber recipies [\#275](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/275)
+-   Apotheotic Shulker bosses create extra shulkers [\#272](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/272)
+-   Deadlock when blocking Piercing Crossbow shots [\#270](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/270)
+-   Emerldite Ore Spawning in Nether [\#260](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/260)
+-   Candle quest in occultism requires disabled item [\#258](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/258)
+-   \[DISABLED ITEM\] Raw Pendorite [\#256](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/256)
+-   Equipment/Excavators quest does not complete [\#255](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/255)
+-   Magical Vestments and Alteration Table quests do not complete [\#252](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/252)
 
 ---
 
