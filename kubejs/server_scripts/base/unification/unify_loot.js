@@ -1,12 +1,12 @@
 // https://github.com/AlmostReliable/lootjs/wiki
 LootJS.modifiers((event) => {
-    // Functions
-    // tag              -> Tag to search for
-    // suffix           -> suffix for the EE variant of the item
-    // prefix           -> Prefix for the item, used if you want to unify an item with different name, like crushed ores
-    // ItemStack        -> Original ItemStack
-    // replaceWithRaw   -> Should it replace with Raw ore, or return unified version of the item?
-    // count            -> if replaceWithRaw => True, then specifies the amount of raw ore given for each item.
+    // How to use unifyLoot()
+    // tag              -> String - Tag to search for (accepts both tags with and without #)
+    // suffix           -> String - suffix for the EE variant of the item
+    // prefix           -> String - prefix for the EE variant of the item (for example, when you want to unify crushed ores (...:crushed_iron_ore))
+    // ItemStack        -> ItemStack - Original ItemStack that was meant to be dropped
+    // replaceWithRaw   -> Boolean - Should it replace the drop with Raw ore, or return unified version of the item?
+    // count            -> integer - if replaceWithRaw is True, then specifies the amount of raw ore given for each item.
     function unifyLoot(tag, suffix, ItemStack, prefix, replaceWithRaw, count) {
         prefix = (typeof prefix == undefined || prefix == null)? "": prefix + "_";
         replaceWithRaw = (typeof replaceWithRaw == undefined || replaceWithRaw == null)? false: true;
@@ -73,7 +73,7 @@ LootJS.modifiers((event) => {
         // Gems
         .modifyLoot(Ingredient.of('#forge:gems'), (ItemStack) => {return unifyLoot("forge:gems", "gem", ItemStack)})
         // Raw Ores
-        // Raw Ores being replaced by themselves is intended! It is because raw ores from gems are disabled, and if something wants to drop / generate a raw ore that is disabled (Blue Skies), it will get a gem instead!
+        // Raw Ores being replaced by themselves is intended! It is because raw ores for gems are disabled, so if something wants to drop / generate a raw ore that is disabled (Blue Skies), it will return a gem instead!
         .modifyLoot(Ingredient.of('#forge:raw_materials'), (ItemStack) => {return unifyLoot("forge:raw_materials", "gem", ItemStack, null, true)})
         // Dusts
         .modifyLoot(Ingredient.of('#forge:dusts'), (ItemStack) => {return unifyLoot("forge:dusts", "dust", ItemStack)})
