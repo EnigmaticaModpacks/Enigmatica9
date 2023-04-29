@@ -79,7 +79,6 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('byg:winter_scilla', 1, [1, 4]);
             pool.addItem('byg:yellow_daffodil', 1, [1, 4]);
             pool.addItem('byg:yellow_tulip', 1, [1, 4]);
-            pool.addItem('byg:thereal_bellflower', 1, [1, 4]);
         });
     });
 });
