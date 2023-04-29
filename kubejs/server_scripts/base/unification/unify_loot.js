@@ -1,12 +1,12 @@
 // https://github.com/AlmostReliable/lootjs/wiki
 LootJS.modifiers((event) => {
     // Functions
-    // tag -> Tag to search for
-    // suffix -> suffix for the EE variant of the item
-    // prefix -> Prefix for the item, used if you want to unify an item with different name, like crushed ores
-    // ItemStack -> Original ItemStack
-    // replaceWithRaw -> Should it replace with Raw ore, or return unified version of the item?
-    // count -> if replaceWithRaw => True, then specifies the amount of raw ore given for each item.
+    // tag              -> Tag to search for
+    // suffix           -> suffix for the EE variant of the item
+    // prefix           -> Prefix for the item, used if you want to unify an item with different name, like crushed ores
+    // ItemStack        -> Original ItemStack
+    // replaceWithRaw   -> Should it replace with Raw ore, or return unified version of the item?
+    // count            -> if replaceWithRaw => True, then specifies the amount of raw ore given for each item.
     function unifyLoot(tag, suffix, ItemStack, prefix, replaceWithRaw, count) {
         prefix = (typeof prefix == undefined || prefix == null)? "": prefix + "_";
         replaceWithRaw = (typeof replaceWithRaw == undefined || replaceWithRaw == null)? false: true;
