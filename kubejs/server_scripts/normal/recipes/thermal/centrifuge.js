@@ -1,4 +1,7 @@
 ServerEvents.recipes((event) => {
+    if (global.isNormalMode == false) {
+        return;
+    }
     const id_prefix = 'enigmatica:normal/thermal/centrifuge/';
 
     const recipes = [

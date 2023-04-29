@@ -1,110 +1,76 @@
-const FakePlayer = Java.loadClass('net.minecraftforge.common.util.FakePlayer');
+ServerEvents.blockLootTables((event) => {
+    const crystal_types = ['fluorite', 'sulfur', 'dimensional'];
 
-// For FakePlayer to work in Pools, you have to use this as the condition:
-/*
-p.or((or) => {
-    or.matchMainHand(ItemFilter.PICKAXE) // Main Condition (Can be more than one!, just add another 'or')
-    or.and(a => {
-        a.playerPredicate((p) => {
-            return p.getClass().isAssignableFrom(FakePlayer); // Predicate for proper FakePlayer Implementation (Like AE2)
-        })
-        a.not(n => n.playerPredicate(p => true)) // Unfortunetally method above also picks up actual Player, so this is here to make sure player is not picked up!
-    })
-    or.not(n => n.playerPredicate(p => true)) // Predicate for non-players, so stuff that is FakePlayer but has wonky implementation or any other custom method (like Create)
-})
-*/
-
-LootJS.modifiers((event) => {
     // Clusters
-    // Dimensional
-
-    event
-        .addBlockLootModifier('emendatusenigmatica:dimensional_cluster')
-        .removeLoot('emendatusenigmatica:dimensional_cluster_shard')
-        .or((or) => {
-            or.matchMainHand(ItemFilter.PICKAXE);
-            or.and((a) => {
-                a.playerPredicate((p) => {
-                    return p.getClass().isAssignableFrom(FakePlayer);
+    crystal_types.forEach((crystal_type) => {
+        event.addBlock(`emendatusenigmatica:${crystal_type}_cluster`, (table) => {
+            table.addPool((pool) => {
+                pool.addEntry({
+                    type: 'minecraft:alternatives',
+                    children: [
+                        {
+                            type: 'minecraft:item',
+                            name: `emendatusenigmatica:${crystal_type}_cluster`,
+                            conditions: [
+                                {
+                                    condition: 'minecraft:match_tool',
+                                    predicate: {
+                                        enchantments: [{ enchantment: 'minecraft:silk_touch', levels: { min: 1 } }]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            type: 'minecraft:item',
+                            name: AlmostUnified.getPreferredItemForTag(`forge:gems/${crystal_type}`).getId(),
+                            functions: [
+                                { add: false, count: 4.0, function: 'minecraft:set_count' },
+                                {
+                                    function: 'minecraft:apply_bonus',
+                                    formula: 'minecraft:uniform_bonus_count',
+                                    enchantment: 'minecraft:fortune',
+                                    parameters: { bonusMultiplier: 1 }
+                                },
+                                { function: 'minecraft:explosion_decay' }
+                            ]
+                        }
+                    ]
                 });
-                a.not((n) => n.playerPredicate((p) => true));
             });
-            or.not((n) => n.playerPredicate((p) => true));
-        })
-        .not((n) => n.matchMainHand(ItemFilter.hasEnchantment('minecraft:silk_touch')))
-        .addAlternativesLoot(
-            LootEntry.of('rftoolsbase:dimensionalshard')
-                .limitCount([1, 2])
-                .applyOreBonus('minecraft:fortune')
-                .when((c) => c.matchMainHand(ItemFilter.hasEnchantment('minecraft:fortune'))),
-            LootEntry.of('rftoolsbase:dimensionalshard').limitCount([1, 2])
-        );
-
-    // Fluorite
-    event
-        .addBlockLootModifier('emendatusenigmatica:fluorite_cluster')
-        .removeLoot('emendatusenigmatica:fluorite_cluster_shard')
-        .or((or) => {
-            or.matchMainHand(ItemFilter.PICKAXE);
-            or.and((a) => {
-                a.playerPredicate((p) => {
-                    return p.getClass().isAssignableFrom(FakePlayer);
-                });
-                a.not((n) => n.playerPredicate((p) => true));
-            });
-            or.not((n) => n.playerPredicate((p) => true));
-        })
-        .not((n) => n.matchMainHand(ItemFilter.hasEnchantment('minecraft:silk_touch')))
-        .addAlternativesLoot(
-            LootEntry.of('emendatusenigmatica:fluorite_gem')
-                .limitCount([1, 2])
-                .applyOreBonus('minecraft:fortune')
-                .when((c) => c.matchMainHand(ItemFilter.hasEnchantment('minecraft:fortune'))),
-            LootEntry.of('emendatusenigmatica:fluorite_gem').limitCount([2, 3])
-        );
-
-    // Sulfur
-    event
-        .addBlockLootModifier('emendatusenigmatica:sulfur_cluster')
-        .removeLoot('emendatusenigmatica:sulfur_cluster_shard')
-        .or((or) => {
-            or.matchMainHand(ItemFilter.PICKAXE);
-            or.and((a) => {
-                a.playerPredicate((p) => {
-                    return p.getClass().isAssignableFrom(FakePlayer);
-                });
-                a.not((n) => n.playerPredicate((p) => true));
-            });
-            or.not((n) => n.playerPredicate((p) => true));
-        })
-        .not((n) => n.matchMainHand(ItemFilter.hasEnchantment('minecraft:silk_touch')))
-        .addAlternativesLoot(
-            LootEntry.of('emendatusenigmatica:sulfur_gem')
-                .applyOreBonus('minecraft:fortune')
-                .when((c) => c.matchMainHand(ItemFilter.hasEnchantment('minecraft:fortune'))),
-            LootEntry.of('emendatusenigmatica:sulfur_gem').limitCount([2, 3])
-        );
+        });
+    });
 
     // Buds
-    let buds = ['fluorite', 'sulfur', 'dimensional'];
-    let ratios = { small: 0.1, medium: 0.4, large: 0.7 };
-    let ratios_keys = Object.keys(ratios);
-    buds.forEach((bud) => {
-        ratios_keys.forEach((size) => {
-            event
-                .addBlockLootModifier(`emendatusenigmatica:${size}_${bud}_bud`)
-                .or((or) => {
-                    or.matchMainHand(ItemFilter.PICKAXE);
-                    or.and((a) => {
-                        a.playerPredicate((p) => {
-                            return p.getClass().isAssignableFrom(FakePlayer);
-                        });
-                        a.not((n) => n.playerPredicate((p) => true));
+    const bud_sizes = ['small', 'medium', 'large'];
+
+    crystal_types.forEach((crystal_type) => {
+        bud_sizes.forEach((size) => {
+            event.addBlock(`emendatusenigmatica:${size}_${crystal_type}_bud`, (table) => {
+                table.addPool((pool) => {
+                    pool.addEntry({
+                        type: 'minecraft:alternatives',
+                        children: [
+                            {
+                                type: 'minecraft:item',
+                                name: `emendatusenigmatica:${size}_${crystal_type}_bud`,
+                                conditions: [
+                                    {
+                                        condition: 'minecraft:match_tool',
+                                        predicate: {
+                                            enchantments: [{ enchantment: 'minecraft:silk_touch', levels: { min: 1 } }]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                type: 'minecraft:item',
+                                name: `emendatusenigmatica:${crystal_type}_dust`,
+                                conditions: [{ condition: 'minecraft:survives_explosion' }]
+                            }
+                        ]
                     });
-                    or.not((n) => n.playerPredicate((p) => true));
-                })
-                .not((n) => n.matchMainHand(ItemFilter.hasEnchantment('minecraft:silk_touch')))
-                .addLoot(LootEntry.of(`emendatusenigmatica:${bud}_dust`).when((c) => c.randomChance(ratios[size])));
+                });
+            });
         });
     });
 });

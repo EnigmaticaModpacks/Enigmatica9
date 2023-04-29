@@ -513,6 +513,70 @@ ServerEvents.recipes((event) => {
             reagents: ['occultism:dimensional_matrix'],
             sourceCost: 10000,
             id: `${id_prefix}quantum_link`
+        },
+        {
+            output: 'mekanism:metallurgic_infuser',
+            inputs: [
+                '#forge:gems/infused_diamond',
+                '#forge:plates/obsidian',
+                'ae2:quartz_glass',
+                '#forge:plates/obsidian',
+                '#forge:gems/infused_diamond',
+                '#forge:plates/obsidian',
+                'ae2:quartz_glass',
+                '#forge:plates/obsidian'
+            ],
+            reagents: ['ars_nouveau:arcane_core'],
+            sourceCost: 10000,
+            id: `${id_prefix}metallurgic_infuser`
+        },
+        {
+            output: 'functionalstorage:diamond_upgrade',
+            inputs: [
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                'ars_nouveau:repository',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                'ars_nouveau:repository',
+                '#forge:gems/diamond'
+            ],
+            reagents: ['functionalstorage:gold_upgrade'],
+            sourceCost: 1000,
+            id: `${id_prefix}diamond_upgrade`
+        },
+        {
+            output: 'sophisticatedstorage:gold_to_diamond_tier_upgrade',
+            inputs: [
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                'ars_nouveau:repository',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                'ars_nouveau:repository',
+                '#forge:gems/diamond'
+            ],
+            reagents: ['sophisticatedstorage:upgrade_base'],
+            sourceCost: 1000,
+            id: `${id_prefix}gold_to_diamond_tier_upgrade`
+        },
+        {
+            output: 'sophisticatedstorage:stack_upgrade_tier_4',
+            inputs: [
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                'ars_nouveau:repository',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                'ars_nouveau:repository',
+                '#forge:gems/diamond'
+            ],
+            reagents: ['sophisticatedstorage:stack_upgrade_tier_3'],
+            sourceCost: 1000,
+            id: `${id_prefix}stack_upgrade_tier_4`
         }
     ];
 

@@ -7,18 +7,6 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            input: { tag: 'forge:ingots/pig_iron' },
-            output: 'emendatusenigmatica:iron_ingot',
-            count: 1,
-            pedestalItems: [
-                { item: { tag: 'forge:essences/air' } },
-                { item: { tag: 'forge:essences/fire' } },
-                { item: { tag: 'forge:essences/fire' } }
-            ],
-            source: 600,
-            id: `${id_prefix}iron_from_pig_iron`
-        },
-        {
             input: { tag: 'forge:gems/source' },
             output: 'ars_nouveau:fire_essence',
             count: 1,

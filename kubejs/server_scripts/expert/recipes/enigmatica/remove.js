@@ -15,6 +15,7 @@ ServerEvents.recipes((event) => {
         { mod: 'superiorshields' },
         { mod: 'mininggadgets' },
         { mod: 'enigmaticunity' },
+        { mod: 'compactmachines' },
 
         { output: /pneumaticcraft:.*_upgrade/ },
         { output: /powah:player_transmitter.*/ },
@@ -34,6 +35,7 @@ ServerEvents.recipes((event) => {
         { type: 'thermal:smelter_recycle' },
         { type: 'ae2:charger' },
         { type: 'occultism:crushing' },
+        { type: 'mekanism:energy_conversion' },
 
         { id: /ae2:inscriber/ },
         { id: 'ae2:network/blocks/crystal_processing_charger' },
@@ -63,21 +65,28 @@ ServerEvents.recipes((event) => {
         { id: 'create:item_application/brass_casing_from_wood' },
         { id: 'create:item_application/brass_casing_from_log' },
         { id: 'create:conversion_0' },
+        { id: 'create:compat/ae2/milling/fluix_crystal' },
+        { id: 'create:compat/ae2/milling/certus_quartz' },
+        { id: 'create:compat/ae2/milling/ender_pearl' },
 
         { id: /createaddition:pressing\/.*_ingot/ },
         { id: /createaddition:crafting\/capacitor/ },
         { id: 'createaddition:mechanical_crafting/tesla_coil' },
         { id: 'createaddition:mechanical_crafting/electric_motor' },
         { id: 'createaddition:crafting/portable_energy_interface' },
+        { id: 'createaddition:compat/immersiveengineering/crushing/steel_ingot' },
+        { id: 'createaddition:crushing/diamond' },
 
         { id: /emendatusenigmatica:plate\/from_ingot/ },
         { id: /emendatusenigmatica:rod\/from_ingot/ },
         { id: /emendatusenigmatica:gear\/from_ingot/ },
-        { id: /emendatusenigmatica:gear\/from_gem/ },
+        { id: /emendatusenigmatica:dust\/from_gem/ },
 
         { id: 'farmersdelight:integration/immersiveengineering/metalpress/pumpkin' },
 
         { id: 'farmingforblockheads:feeding_trough' },
+
+        { id: 'functionalstorage:diamond_upgrade' },
 
         { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
         { id: 'hexerei:willow_broom_from_mixing_cauldron' },
@@ -124,6 +133,8 @@ ServerEvents.recipes((event) => {
         { id: 'immersiveengineering:metalpress/melon' },
         { id: /empty_shell/, mod: 'immersiveengineering' },
         { id: /empty_casing/, mod: 'immersiveengineering' },
+        { id: /immersiveengineering:crusher\/coal/ },
+        { id: /immersiveengineering:crusher\/coke/ },
 
         { id: /industrialforegoing:laser_drill_ore/ },
         { id: /industrialforegoing:dissolution_chamber\/range_addon/ },
@@ -158,6 +169,11 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:resourceful_furnace' },
 
         { id: /mekanism:transmitter\/universal_cable/ },
+        { id: /mekanism:processing\/steel/ },
+        { id: /mekanism:processing\/netherite/ },
+        { id: /mekanism:processing\/.*\/to_dust/ },
+        { id: /mekanism:hazmat/ },
+        { id: /mekanism:scuba/ },
         { id: 'mekanism:upgrade/anchor' },
         { id: 'mekanism:teleportation_core' },
         { id: 'mekanism:energy_tablet' },
@@ -175,9 +191,13 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:formulaic_assemblicator' },
         { id: 'mekanism:geiger_counter' },
         { id: 'mekanism:dosimeter' },
-        { id: /mekanism:hazmat/ },
-        { id: /mekanism:scuba/ },
         { id: 'mekanism:oredictionificator' },
+        { id: 'mekanism:metallurgic_infuser' },
+        { id: 'mekanism:crushing/charcoal_dust' },
+        { id: 'mekanism:compat/ae2/fluix_crystal_to_dust' },
+        { id: 'mekanism:compat/ae2/certus_crystal_to_dust' },
+        { id: 'mekanism:gas_conversion/flint_to_oxygen' },
+        { id: `mekanism:processing/uranium/reprocessing/to_fuel` },
 
         { id: 'minecraft:netherite_ingot' },
         { id: 'minecraft:lodestone' },
@@ -209,6 +229,8 @@ ServerEvents.recipes((event) => {
         { id: 'naturesaura:animal_spawner/witch' },
         { id: 'naturesaura:animal_spawner/zombie' },
         { id: 'naturesaura:animal_spawner/zombified_piglin' },
+        { id: `naturesaura:offering/sky_ingot` },
+        { id: `naturesaura:altar/tainted_gold_block` },
 
         { id: 'occultism:ritual/craft_dimensional_matrix' },
         { id: 'occultism:ritual/craft_storage_controller_base' },
@@ -256,6 +278,12 @@ ServerEvents.recipes((event) => {
 
         { id: 'sophisticatedbackpacks:battery_upgrade' },
 
+        { id: /sophisticatedstorage:limited_/ },
+        { id: /sophisticatedstorage:tier_upgrade_/ },
+        { id: 'sophisticatedstorage:storage_link_from_controller' },
+        { id: 'sophisticatedstorage:gold_to_diamond_tier_upgrade' },
+        { id: 'sophisticatedstorage:stack_upgrade_tier_4' },
+
         { id: `spirit:soul_engulfing/soul_powder` },
         { id: `spirit:soul_engulfing/soul_powder_block` },
         { id: `spirit:soul_engulfing/soul_slate` },
@@ -267,7 +295,9 @@ ServerEvents.recipes((event) => {
 
         { id: /thermal:machines\/pulverizer\/pulverizer_.*_to_dust/ },
         { id: /thermal:augments/ },
+        { id: /thermal:.*_mushroom_spores/ },
         { id: /thermal:parts\/.*_gear/ },
+        { id: /thermal:earth_charge/ },
         { id: 'thermal:enderium_dust_2' },
         { id: 'thermal:lumium_dust_4' },
         { id: 'thermal:signalum_dust_4' },
@@ -287,6 +317,11 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:deep_aquachow_4' },
         { id: 'thermal:device_potion_diffuser' },
         { id: 'thermal:tools/rf_potato' },
+        { id: 'thermal:machines/pulverizer/pulverizer_lapis' },
+        { id: 'thermal:machines/pulverizer/pulverizer_ender_pearl' },
+        { id: 'thermal:machines/pulverizer/pulverizer_quartz' },
+        { id: 'thermal:machines/pulverizer/pulverizer_emerald' },
+        { id: 'thermal:machines/pulverizer/pulverizer_diamond' },
 
         { id: 'twilightforest:equipment/fiery_ingot_crafting' },
         { id: 'twilightforest:material/fiery_iron_ingot' },
@@ -345,6 +380,9 @@ ServerEvents.recipes((event) => {
         { id: /emendatusenigmatica:.*from_crystal/ },
         { id: /emendatusenigmatica:.*from_shard/ },
         { id: /emendatusenigmatica:.*from_clump/ },
+        { id: /emendatusenigmatica:.*from_dirty/ },
+        { id: /emendatusenigmatica:.*from_ingot/ },
+        { id: /emendatusenigmatica:.*from_gem/ },
         { id: /emendatusenigmatica:slurry\/clean/ },
 
         { type: 'minecraft:smelting', output: '#forge:nuggets' },

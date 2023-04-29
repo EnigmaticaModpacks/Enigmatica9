@@ -51,6 +51,8 @@
 	squirrelRefreshRate = 600
 	#Set to false to disable the lightning crashing often on flashing archwood biome(s).
 	always_thunder = true
+	#If enabled, soulbound enchantment can appear in randomly enchanted loot chests.
+	soulbound_loot = true
 
 ["Source cost"]
 	#How much source does the water urn consume.

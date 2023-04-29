@@ -182,7 +182,7 @@ jei.normal.items.hidden = [
     'kubejs:ritual_teleport_everbright',
     'kubejs:teleport_nether',
     'kubejs:ritual_teleport_nether',
-    'kubejs:pig_iron_ingot',
+    'kubejs:crude_iron_ingot',
     'kubejs:mystery_mash',
     'kubejs:dream_stone',
     'kubejs:saturated_magebloom_filter',
@@ -226,6 +226,7 @@ jei.expert.items.disabled = [
     'ars_nouveau:vitalic_sourcelink',
     'ars_nouveau:volcanic_sourcelink',
     'ars_nouveau:ritual_wilden_summon',
+    'compactmachines:chunkloader_upgrade',
     'constructionwand:iron_wand',
     'constructionwand:stone_wand',
     'create:empty_blaze_burner',
@@ -419,7 +420,11 @@ jei.expert.items.disabled = [
     'powah:ender_core',
     'powah:player_aerial_pearl',
     'powah:aerial_pearl',
+
     'sophisticatedbackpacks:battery_upgrade',
+
+    /sophisticatedstorage:limited_/,
+
     'superiorshields:copper_shield',
     'superiorshields:diamond_shield',
     'superiorshields:electric_shield',

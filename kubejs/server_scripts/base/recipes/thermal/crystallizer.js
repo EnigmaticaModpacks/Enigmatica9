@@ -57,6 +57,20 @@ ServerEvents.recipes((event) => {
             outputs: [Item.of('emendatusenigmatica:fluorite_gem')],
             energy: 2500,
             id: `${id_prefix}fluorite_shard_from_dust`
+        },
+        {
+            inputs: ['#forge:dusts/therium'],
+            fluid: Fluid.of('minecraft:water', 1000),
+            outputs: [Item.of('byg:therium_crystal_shard')],
+            energy: 2500,
+            id: `${id_prefix}therium_shard_from_dust`
+        },
+        {
+            inputs: ['#forge:dusts/subzero'],
+            fluid: Fluid.of('minecraft:water', 1000),
+            outputs: [Item.of('byg:subzero_crystal_shard')],
+            energy: 2500,
+            id: `${id_prefix}subzero_shard_from_dust`
         }
     ];
 

@@ -10,6 +10,20 @@ ServerEvents.recipes((event) => {
             crushing_time: 20,
             ignore_occultism_multiplier: true,
             id: `${id_prefix}amethyst_dust_from_amethyst`
+        },
+        {
+            output: 'kubejs:therium_dust',
+            input: '#forge:gems/therium',
+            crushing_time: 20,
+            ignore_occultism_multiplier: true,
+            id: `${id_prefix}therium_dust_from_therium`
+        },
+        {
+            output: 'kubejs:subzero_dust',
+            input: '#forge:gems/subzero',
+            crushing_time: 20,
+            ignore_occultism_multiplier: true,
+            id: `${id_prefix}subzero_dust_from_subzero`
         }
     ];
 

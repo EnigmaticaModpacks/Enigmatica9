@@ -1,0 +1,9 @@
+{
+    "id": "earth_essence",
+    "source": "modded",
+    "localizedName": "Earth Essence",
+    "processedTypes": ["infuse_type"],
+    "colors": {
+        "gasColor": "138749"
+    }
+}

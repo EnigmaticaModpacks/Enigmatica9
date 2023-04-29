@@ -346,4 +346,8 @@
 	stuck_drone_teleport_ticks = 20
 	#When false, drones may not navigate or teleport into unloaded chunks. Setting this true may lead to server performance and stability issues - beware.
 	allow_navigate_to_unloaded_chunks = false
+	#When true, drones can query the location of any player on the server with the '$player=<name>' variable syntax. Set this to false if you don't want to allow this, e.g. on a PvP server, where this can turn drones into lethal assassins.
+	allowAnyPlayerVarQuery = true
+	#When true, drones can teleport into areas protected by Security Stations of other player. You may wish to set this to false on PvP servers.
+	allowTeleportToProtectedArea = true
 
