@@ -50,7 +50,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem(Item.of('minecraft:potion', '{Potion:"minecraft:strong_healing"}'), 75, 1);
             pool.addItem(Item.of('minecraft:potion', '{Potion:"minecraft:strong_swiftness"}'), 75, 1);
 
-            pool.addItem('twilightforest:ironwood_sword', 25, 1).enchantWithLevels(15, true);
+            pool.addItem('twilightforest:ironwood_sword', 75, 1).enchantWithLevels(15, true);
             pool.addItem('naturesaura:infused_iron_sword', 25, 1).enchantWithLevels(15, true);
             pool.addItem('minecraft:bow', 25, 1).enchantWithLevels(30, true);
             pool.addItem('minecraft:crossbow', 25, 1).enchantWithLevels(30, true);

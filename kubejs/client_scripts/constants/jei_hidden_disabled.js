@@ -164,6 +164,27 @@ jei.base.recipes.hidden = [
     {
         category: 'minecraft:crafting',
         recipes_by_id: ['pneumaticcraft:one_probe_crafting']
+    },
+    {
+        category: 'naturesaura:animal_spawner',
+        recipes_by_id: [
+            'naturesaura:animal_spawner/sheep_black',
+            'naturesaura:animal_spawner/sheep_blue',
+            'naturesaura:animal_spawner/sheep_brown',
+            'naturesaura:animal_spawner/sheep_cyan',
+            'naturesaura:animal_spawner/sheep_gray',
+            'naturesaura:animal_spawner/sheep_green',
+            'naturesaura:animal_spawner/sheep_light_blue',
+            'naturesaura:animal_spawner/sheep_light_gray',
+            'naturesaura:animal_spawner/sheep_lime',
+            'naturesaura:animal_spawner/sheep_magenta',
+            'naturesaura:animal_spawner/sheep_orange',
+            'naturesaura:animal_spawner/sheep_pink',
+            'naturesaura:animal_spawner/sheep_purple',
+            'naturesaura:animal_spawner/sheep_red',
+            'naturesaura:animal_spawner/sheep_white',
+            'naturesaura:animal_spawner/sheep_yellow'
+        ]
     }
 ];
 jei.base.gases.hidden = [];
@@ -531,6 +552,31 @@ jei.expert.recipes.hidden = [
             'naturesaura:offering/token_terror',
             'naturesaura:offering/token_euphoria',
             'naturesaura:offering/sky_ingot_from_gold'
+        ]
+    },
+    {
+        category: 'naturesaura:animal_spawner',
+        recipes_by_id: [
+            'naturesaura:animal_spawner/endermite',
+            'naturesaura:animal_spawner/phantom',
+            'naturesaura:animal_spawner/slime',
+            'naturesaura:animal_spawner/ghast',
+            'naturesaura:animal_spawner/wither_skeleton',
+            'naturesaura:animal_spawner/blaze',
+            'naturesaura:animal_spawner/guardian',
+            'naturesaura:animal_spawner/creeper',
+            'naturesaura:animal_spawner/enderman',
+            'naturesaura:animal_spawner/hoglin',
+            'naturesaura:animal_spawner/husk',
+            'naturesaura:animal_spawner/magma_cube',
+            'naturesaura:animal_spawner/piglin',
+            'naturesaura:animal_spawner/piglin_brute',
+            'naturesaura:animal_spawner/shulker',
+            'naturesaura:animal_spawner/skeleton',
+            'naturesaura:animal_spawner/stray',
+            'naturesaura:animal_spawner/witch',
+            'naturesaura:animal_spawner/zombie',
+            'naturesaura:animal_spawner/zombified_piglin'
         ]
     },
     {

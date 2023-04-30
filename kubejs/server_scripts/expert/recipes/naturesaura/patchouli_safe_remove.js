@@ -50,6 +50,27 @@ ServerEvents.recipes((event) => {
             { id: 'naturesaura:offering/token_terror', output: 'naturesaura:token_terror' },
             { id: 'naturesaura:offering/token_euphoria', output: 'naturesaura:token_euphoria' },
             { id: 'naturesaura:offering/sky_ingot_from_gold', output: 'naturesaura:sky_ingot' }
+        ],
+        animal_spawner: [
+            { id: 'naturesaura:animal_spawner/endermite', output: 'minecraft:endermite' },
+            { id: 'naturesaura:animal_spawner/phantom', output: 'minecraft:phantom' },
+            { id: 'naturesaura:animal_spawner/slime', output: 'minecraft:slime' },
+            { id: 'naturesaura:animal_spawner/ghast', output: 'minecraft:ghast' },
+            { id: 'naturesaura:animal_spawner/wither_skeleton', output: 'minecraft:wither_skeleton' },
+            { id: 'naturesaura:animal_spawner/blaze', output: 'minecraft:blaze' },
+            { id: 'naturesaura:animal_spawner/guardian', output: 'minecraft:guardian' },
+            { id: 'naturesaura:animal_spawner/creeper', output: 'minecraft:creeper' },
+            { id: 'naturesaura:animal_spawner/enderman', output: 'minecraft:enderman' },
+            { id: 'naturesaura:animal_spawner/husk', output: 'minecraft:husk' },
+            { id: 'naturesaura:animal_spawner/magma_cube', output: 'minecraft:magma_cube' },
+            { id: 'naturesaura:animal_spawner/piglin', output: 'minecraft:piglin' },
+            { id: 'naturesaura:animal_spawner/piglin_brute', output: 'minecraft:piglin_brute' },
+            { id: 'naturesaura:animal_spawner/shulker', output: 'minecraft:shulker' },
+            { id: 'naturesaura:animal_spawner/skeleton', output: 'minecraft:skeleton' },
+            { id: 'naturesaura:animal_spawner/stray', output: 'minecraft:stray' },
+            { id: 'naturesaura:animal_spawner/witch', output: 'minecraft:witch' },
+            { id: 'naturesaura:animal_spawner/zombie', output: 'minecraft:zombie' },
+            { id: 'naturesaura:animal_spawner/zombified_piglin', output: 'minecraft:zombified_piglin' }
         ]
     };
 
@@ -89,6 +110,18 @@ ServerEvents.recipes((event) => {
                 input: { item: 'kubejs:altered_recipe_indicator' },
                 start_item: { item: 'kubejs:altered_recipe_indicator' },
                 output: Item.of(recipe.output).toJson()
+            })
+            .id(recipe.id);
+    });
+
+    patchouli_safe_removals.animal_spawner.forEach((recipe) => {
+        event
+            .custom({
+                type: 'naturesaura:animal_spawner',
+                ingredients: [{ item: 'kubejs:altered_recipe_indicator' }],
+                entity: recipe.output,
+                aura: 1,
+                time: 1
             })
             .id(recipe.id);
     });
