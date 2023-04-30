@@ -566,7 +566,6 @@ jei.expert.recipes.hidden = [
             'naturesaura:animal_spawner/guardian',
             'naturesaura:animal_spawner/creeper',
             'naturesaura:animal_spawner/enderman',
-            'naturesaura:animal_spawner/hoglin',
             'naturesaura:animal_spawner/husk',
             'naturesaura:animal_spawner/magma_cube',
             'naturesaura:animal_spawner/piglin',
