@@ -1,3 +1,17 @@
+### Enigmatica 9 v1.6.1
+
+### 🎁 New Mods Added
+
+### 🌟 Improvements
+
+-   Expand loot in Twilight Forest, Blue Skies, and other dungeons.
+
+### 🐛 Fixed Bugs
+
+-   Fix broken Book of Natural Aura [\#322](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/322) ([MuteTiefling](https://github.com/MuteTiefling))
+
+---
+
 ### Enigmatica 9 v1.6.0
 
 🚀 Forge-1.19.2-43.2.8 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.6.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.6.0.md)
