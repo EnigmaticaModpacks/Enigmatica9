@@ -24,6 +24,7 @@ ServerEvents.entityLootTables((event) => {
             pool.addItem('ars_elemental:glyph_not_insect_filter', 1);
             pool.addItem('ars_elemental:glyph_not_undead_filter', 1);
             pool.addItem('ars_elemental:glyph_undead_filter', 1);
+
             pool.addItem('ars_nouveau:glyph_amplify', 1);
             pool.addItem('ars_nouveau:glyph_bounce', 1);
             pool.addItem('ars_nouveau:glyph_craft', 1);
@@ -31,6 +32,7 @@ ServerEvents.entityLootTables((event) => {
             pool.addItem('ars_nouveau:glyph_delay', 1);
             pool.addItem('ars_nouveau:glyph_dispel', 1);
             pool.addItem('ars_nouveau:glyph_evaporate', 1);
+            pool.addItem('ars_nouveau:glyph_fell', 1);
             pool.addItem('ars_nouveau:glyph_freeze', 1);
             pool.addItem('ars_nouveau:glyph_gust', 1);
             pool.addItem('ars_nouveau:glyph_harvest', 1);
@@ -52,6 +54,19 @@ ServerEvents.entityLootTables((event) => {
             pool.addItem('ars_nouveau:glyph_toss', 1);
             pool.addItem('ars_nouveau:glyph_underfoot', 1);
             pool.addItem('ars_nouveau:glyph_crush', 1);
+
+            pool.addItem('toomanyglyphs:glyph_filter_animal', 1);
+            pool.addItem('toomanyglyphs:glyph_filter_block', 1);
+            pool.addItem('toomanyglyphs:glyph_filter_entity', 1);
+            pool.addItem('toomanyglyphs:glyph_filter_item', 1);
+            pool.addItem('toomanyglyphs:glyph_filter_living', 1);
+            pool.addItem('toomanyglyphs:glyph_filter_living_not_monster', 1);
+            pool.addItem('toomanyglyphs:glyph_filter_living_not_player', 1);
+            pool.addItem('toomanyglyphs:glyph_filter_monster', 1);
+            pool.addItem('toomanyglyphs:glyph_filter_player', 1);
+            pool.addItem('toomanyglyphs:glyph_lay_on_hands', 1);
+            pool.addItem('toomanyglyphs:glyph_ray', 1);
+            pool.addItem('toomanyglyphs:glyph_reverse_direction', 1);
         });
     });
 });

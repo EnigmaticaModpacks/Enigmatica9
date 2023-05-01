@@ -3,15 +3,15 @@
 	#Additional conversion recipes for the Botanist's Pickaxe right click function. Each entry needs to be formatted as modid:input_block[prop1=value1,...]->modid:output_block[prop1=value1,...] where block state properties are optional, and entries follow standard TOML array formatting (https://toml.io/en/v1.0.0#array).
 	additionalBotanistPickaxeConversions = []
 	#Additional projectile types that are allowed to be consumed by the projectile generator. Each entry needs to be formatted as entity_registry_name->aura_amount, and entries follow standard TOML array formatting (https://toml.io/en/v1.0.0#array).
-	additionalProjectiles = []
+	additionalProjectiles = ["minecraft:egg->0", "minecraft:snowball->0", "minecraft:small_fireball->0", "minecraft:ender_pearl->16000", "minecraft:experience_bottle->64000", "minecraft:arrow->0", "minecraft:spectral_arrow->0", "minecraft:shulker_bullet->0", "minecraft:llama_spit->0", "minecraft:trident->0"]
 	#The Aura to RF ratio used by the RF converter, read as aura*ratio = rf
-	auraToRFRatio = 0.05
+	auraToRFRatio = 0.025
 	#Blocks that are exempt from being recognized as generatable ores for the passive ore generation effect. Each entry needs to be formatted as modid:block[prop1=value1,...] where block state properties are optional, and entries follow standard TOML array formatting (https://toml.io/en/v1.0.0#array).
 	oreExceptions = []
 	#Additional blocks that are recognized as generatable ores for the passive ore generation effect. Each entry needs to be formatted as tag_name->oreWeight->dimension where a higher weight makes the ore more likely to spawn with 5000 being the weight of coal, the default ore with the highest weight, and dimension being any of overworld and nether, and entries follow standard TOML array formatting (https://toml.io/en/v1.0.0#array).
 	additionalOres = []
 	#Additional dimensions that map to Aura types that should be present in them. This is useful if you have a modpack with custom dimensions that should have Aura act similarly to an existing dimension in them. Each entry needs to be formatted as dimension_name->aura_type, where aura_type can be any of naturesaura:overworld, naturesaura:nether and naturesaura:end, and entries follow standard TOML array formatting (https://toml.io/en/v1.0.0#array).
-	auraTypeOverrides = ["blue_skies:everbright->naturesaura:nether", "blue_skies:everdawn->naturesaura:overworld", "twilightforest:twilight_forest->naturesaura:overworld", "the_bumblezone:the_bumblezone->naturesaura:end"]
+	auraTypeOverrides = ["blue_skies:everbright->naturesaura:nether", "blue_skies:everdawn->naturesaura:overworld", "twilightforest:twilight_forest->naturesaura:end", "the_bumblezone:the_bumblezone->naturesaura:end"]
 	#The maximum amount of animals that can be around the powder of fertility before it stops working
 	maxAnimalsAroundPowder = 200
 	#The amount of blocks that can be between two Aura Field Creators for them to be connectable and work together
@@ -21,9 +21,9 @@
 
 [features]
 	#If the Aura Imbalance effect of ores spawning in the area if Aura levels are too high should occur
-	oreEffect = true
+	oreEffect = false
 	#If the chunk loader block should be enabled
-	chunkLoader = true
+	chunkLoader = false
 	#If the Aura Imbalance effect of grass growing on netherrack if the Aura levels are high enough should occur
 	netherGrassEffect = true
 	#If the Aura Imbalance effect of explosions happening randomly if Aura levels are too low should occur
@@ -37,7 +37,7 @@
 	#If the Aura Imbalance effect of aura containers in players' inventories being filled if the Aura levels are high enough should occur
 	cacheRechargeEffect = true
 	#If the RF converter block should be enabled
-	rfConverter = true
+	rfConverter = false
 	#If the Aura Imbalance effect of farm animals being affected in positive ways if Aura levels are too high should occur
 	animalEffect = true
 	#If the Aura Imbalance effect of breathlessness if Aura levels are too low should occur

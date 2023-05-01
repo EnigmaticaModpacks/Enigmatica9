@@ -276,7 +276,7 @@ ServerEvents.recipes((event) => {
         },
         {
             item_in: { item: 'naturesaura:infused_iron_pickaxe' },
-            block_in: 'emendatusenigmatica:sulfur_cluster_shard_block',
+            block_in: 'emendatusenigmatica:sulfur_block',
             post: [
                 { type: 'prevent_default' },
                 { type: 'place', block: 'emendatusenigmatica:budding_sulfur' },
@@ -292,7 +292,7 @@ ServerEvents.recipes((event) => {
         },
         {
             item_in: { item: 'naturesaura:infused_iron_pickaxe' },
-            block_in: 'emendatusenigmatica:dimensional_cluster_shard_block',
+            block_in: 'emendatusenigmatica:dimensional_block',
             post: [
                 { type: 'prevent_default' },
                 { type: 'place', block: 'emendatusenigmatica:budding_dimensional' },
@@ -308,7 +308,7 @@ ServerEvents.recipes((event) => {
         },
         {
             item_in: { item: 'naturesaura:infused_iron_pickaxe' },
-            block_in: 'emendatusenigmatica:fluorite_cluster_shard_block',
+            block_in: 'emendatusenigmatica:fluorite_block',
             post: [
                 { type: 'prevent_default' },
                 { type: 'place', block: 'emendatusenigmatica:budding_fluorite' },
