@@ -24,6 +24,13 @@ ServerEvents.recipes((event) => {
             crushing_time: 20,
             ignore_occultism_multiplier: true,
             id: `${id_prefix}subzero_dust_from_subzero`
+        },
+        {
+            output: 'minecraft:netherite_scrap',
+            input: '#forge:ores/netherite',
+            crushing_time: 90,
+            ignore_occultism_multiplier: false,
+            id: `${id_prefix}netherite_crushing`
         }
     ];
 
