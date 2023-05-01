@@ -56,5 +56,11 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('minecraft:crossbow', 25, 1).enchantWithLevels(30, true);
             pool.addItem('minecraft:experience_bottle', 25, 1);
         });
+
+        table.addPool((pool) => {
+            pool.rolls = [1, 2];
+
+            pool.addEntry({ type: 'loot_table', weight: 25, name: 'enigmatica:ars_nouveau_glyph_cache/tier_1' });
+        });
     });
 });

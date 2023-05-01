@@ -65,7 +65,7 @@ LootJS.modifiers((event) => {
         )
         // Crushed Ores
         .modifyLoot(Ingredient.of('#create:crushed_ores'), (itemStack) =>
-            unifyLoot('create:crushed_ores', 'ore', itemStack, 'crushed')
+            unifyLoot('create:crushed_ores', 'ore', itemStack, null, true)
         )
         // Gems
         .modifyLoot(Ingredient.of('#forge:gems'), (itemStack) => unifyLoot('forge:gems', 'gem', itemStack))
