@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
             processingTime: 480,
             results: [
                 { item: 'mekanism:dirty_netherite_scrap' },
-                { item: 'mekanism:dirty_netherite_scrap' , chance: 0.25 },
+                { item: 'mekanism:dirty_netherite_scrap', chance: 0.25 },
                 { item: 'minecraft:ancient_debris', chance: 0.5 }
             ],
             id: `${id_prefix}crushed_netherite`

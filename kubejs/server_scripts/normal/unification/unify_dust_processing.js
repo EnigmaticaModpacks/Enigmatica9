@@ -6,33 +6,33 @@ ServerEvents.recipes((event) => {
     let gems = Object.keys(gem_properties);
     let nonEECompat = [
         {
-            dust: "ae2:certus_quartz_dust",
-            name: "certus_quartz",
-            type: "gems"
+            dust: 'ae2:certus_quartz_dust',
+            name: 'certus_quartz',
+            type: 'gems'
         },
         {
-            dust: "ae2:fluix_dust",
-            name: "fluix",
-            type: "gems"
+            dust: 'ae2:fluix_dust',
+            name: 'fluix',
+            type: 'gems'
         },
         {
-            dust: "ae2:sky_dust",
-            name: "sky_stone",
-            type: "stone"
+            dust: 'ae2:sky_dust',
+            name: 'sky_stone',
+            type: 'stone'
         },
         {
-            dust: "create:powdered_obsidian",
-            name: "obsidian",
-            type: "stone",
-            tag: "#forge:obsidian"
+            dust: 'create:powdered_obsidian',
+            name: 'obsidian',
+            type: 'stone',
+            tag: '#forge:obsidian'
         },
         {
-            dust: "create:cinder_flour",
-            name: "netherrack",
-            type: "stone",
-            tag: "#forge:netherrack"
+            dust: 'create:cinder_flour',
+            name: 'netherrack',
+            type: 'stone',
+            tag: '#forge:netherrack'
         }
-    ]
+    ];
     let exceptions = {
         // Stones
         sky_stone: {
@@ -72,7 +72,7 @@ ServerEvents.recipes((event) => {
         },
         certus_quartz: {
             mekansim: true,
-            create: true,
+            create: true
         },
         fluix: {
             mekanism: true,
@@ -153,10 +153,10 @@ ServerEvents.recipes((event) => {
                 exceptions[metal] = {
                     occultism: true,
                     thermal: true
-                }
+                };
             } else {
-                exceptions[metal].occultism = true
-                exceptions[metal].thermal = true
+                exceptions[metal].occultism = true;
+                exceptions[metal].thermal = true;
             }
 
             recipetypes_crushing(event, { name: metal, type: 'ingots' }, exceptions);
@@ -166,24 +166,32 @@ ServerEvents.recipes((event) => {
     gems.forEach((gem) => {
         if (Item.exists(`emendatusenigmatica:${gem}_dust`)) {
             if (!exceptions[gem]) {
-                exceptions[gem] = {thermal: true}
+                exceptions[gem] = { thermal: true };
             } else {
-                exceptions[gem].thermal = true
+                exceptions[gem].thermal = true;
             }
             recipetypes_crushing(event, { name: gem, type: 'gems' }, exceptions);
         }
     });
 
     nonEECompat.forEach((material) => {
-        recipetypes_crushing(event, { name: material.name, type: material.type }, exceptions, material.dust, material.tag)
-    })
+        recipetypes_crushing(
+            event,
+            { name: material.name, type: material.type },
+            exceptions,
+            material.dust,
+            material.tag
+        );
+    });
 });
 
 // Functions
 function recipetypes_crushing(event, material, exceptions, item, tag) {
     const id_prefix = 'enigmatica:normal/unification/dust_processing/';
     let recipe = {
-        outputs: { primary: { item: (item == null)? `emendatusenigmatica:${material.name}_dust`: item, count: 1, chance: 1 } },
+        outputs: {
+            primary: { item: item == null ? `emendatusenigmatica:${material.name}_dust` : item, count: 1, chance: 1 }
+        },
         input: '',
         experience: 0.25,
         duration: 80,
@@ -195,7 +203,7 @@ function recipetypes_crushing(event, material, exceptions, item, tag) {
 
     if (!recipe.exceptions) recipe.exceptions = {};
 
-    recipe.input = (tag == null)? `#forge:${material.type}/${material.name}`: tag;
+    recipe.input = tag == null ? `#forge:${material.type}/${material.name}` : tag;
     recipe.id_suffix = `${material.type}/${material.name}_dust`;
 
     // Occultism
@@ -253,17 +261,19 @@ function recipetypes_crushing(event, material, exceptions, item, tag) {
             })
             .id(`${id_prefix}create_milling/${recipe.id_suffix}`);
     }
-    
+
     // Thermal
     if (!recipe.exceptions.thermal) {
         event
             .custom({
                 type: 'thermal:pulverizer',
                 ingredient: Ingredient.of(recipe.input).toJson(),
-                results: [{
-                    item: recipe.outputs.primary.item,
-                    count: recipe.outputs.primary.count
-                }],
+                results: [
+                    {
+                        item: recipe.outputs.primary.item,
+                        count: recipe.outputs.primary.count
+                    }
+                ],
                 experience: recipe.experience
             })
             .id(`${id_prefix}thermal_pulverizer/${recipe.id_suffix}`);
