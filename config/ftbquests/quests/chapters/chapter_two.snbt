@@ -10,7 +10,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -1.5d
+			x: -4.5d
 			y: 5.0d
 			shape: "hexagon"
 			dependencies: ["4F90F6437D6CF7EC"]
@@ -31,7 +31,7 @@
 					gateway: "gateways:wither_council_gate"
 				}
 			}
-			x: -1.5d
+			x: -4.5d
 			y: 4.0d
 			shape: "hexagon"
 			description: ["Summon the Wither Council to obtain access to Nether Stars"]
@@ -45,7 +45,7 @@
 		{
 			title: "Dream Stone"
 			icon: "blue_skies:alchemy_table"
-			x: -1.5d
+			x: -4.5d
 			y: -0.5d
 			shape: "hexagon"
 			id: "69324F7E3A7BCF04"
@@ -69,7 +69,7 @@
 			]
 		}
 		{
-			x: -1.5d
+			x: -4.5d
 			y: 0.5d
 			dependencies: ["69324F7E3A7BCF04"]
 			id: "4C676E7D2BA75DE4"
@@ -80,7 +80,7 @@
 			}]
 		}
 		{
-			x: -1.5d
+			x: -4.5d
 			y: 1.5d
 			dependencies: ["4C676E7D2BA75DE4"]
 			id: "71D9A268FF98E954"
@@ -93,7 +93,7 @@
 		{
 			title: "Netherite Scrap"
 			icon: "blue_skies:summoning_table"
-			x: 0.0d
+			x: -3.0d
 			y: -0.5d
 			shape: "hexagon"
 			id: "0CFE9B39B0643013"
@@ -117,7 +117,7 @@
 			]
 		}
 		{
-			x: 0.0d
+			x: -3.0d
 			y: 0.5d
 			dependencies: ["0CFE9B39B0643013"]
 			id: "77E8DD38A379F9C7"
@@ -128,7 +128,7 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: -3.0d
 			y: 1.5d
 			dependencies: ["77E8DD38A379F9C7"]
 			id: "39B2F84EBDC27AA3"
@@ -157,7 +157,7 @@
 					gateway: "gateways:wilden_grove_gate"
 				}
 			}
-			x: 0.0d
+			x: -3.0d
 			y: 4.0d
 			shape: "hexagon"
 			id: "0B7E9625225C8413"
@@ -168,7 +168,7 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: -3.0d
 			y: 5.0d
 			dependencies: ["0B7E9625225C8413"]
 			id: "10238EBB9B55F67B"
@@ -179,7 +179,7 @@
 			}]
 		}
 		{
-			x: 2.5d
+			x: 4.5d
 			y: 4.0d
 			dependencies: ["1D0AA79380E87E57"]
 			id: "7563E41DBF4FD286"
@@ -190,7 +190,7 @@
 			}]
 		}
 		{
-			x: 2.5d
+			x: 4.5d
 			y: 5.0d
 			dependencies: ["7563E41DBF4FD286"]
 			id: "17F735810850C368"
@@ -248,7 +248,7 @@
 			}]
 		}
 		{
-			x: 2.5d
+			x: 4.5d
 			y: 6.0d
 			dependencies: ["17F735810850C368"]
 			id: "126F4E070F219A8B"
@@ -259,7 +259,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 2.5d
 			y: 6.0d
 			dependencies: [
 				"4B12601018EEB05D"
@@ -273,7 +273,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 1.5d
 			y: 5.5d
 			dependencies: ["538DE3B57A9AC5AD"]
 			id: "4B12601018EEB05D"
@@ -316,6 +316,7 @@
 		{
 			x: 3.5d
 			y: 1.5d
+			description: ["Purified from Crude Iron by treating it with refined Air Essence, Iron forms the basis for more advanced materials. "]
 			dependencies: [
 				"6044FE23384692A5"
 				"49159D9F94B7006C"
@@ -357,24 +358,29 @@
 			}]
 		}
 		{
-			title: "Magical Forging"
+			title: "Aura Forging"
 			x: 3.5d
 			y: 2.5d
+			description: ["Suitable for a variety of arcane crafting techniques, the Aura Forge may also be used to simplify making some alloys such as Invar. "]
 			dependencies: ["767A379B00DCA2E0"]
 			id: "16B840CCFD9B3115"
 			tasks: [{
-				id: "05285D9A3BD52FB6"
+				id: "300FD0ADB58C0ED6"
 				type: "item"
-				item: "thermal:invar_ingot"
+				item: "thermal:machine_smelter"
 			}]
 		}
 		{
 			x: 3.5d
 			y: 3.5d
 			description: [
-				"Formed by crushing Invar with Magic! The following spell form will crush items on the ground: "
+				"Formed by crushing Invar with Magic! "
+				""
+				"The following spell form will crush items on the ground: "
 				""
 				"Projectile > Crush > Sensitive "
+				""
+				"By adding the Sensitive Glyph after the Crush, the spell is able to target items on the ground. Consider combining this with a turret or using a similar spell with the Rune glyph."
 			]
 			dependencies: ["16B840CCFD9B3115"]
 			id: "1D0AA79380E87E57"
@@ -405,7 +411,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 2.5d
 			y: 4.0d
 			description: [
 				"The following multiblock machines are available with Heavy Engineering Blocks:"
@@ -435,7 +441,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 1.5d
 			y: 4.5d
 			dependencies: ["15F56E72212629FB"]
 			id: "538DE3B57A9AC5AD"
@@ -446,7 +452,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 2.5d
 			y: 5.0d
 			dependencies: ["538DE3B57A9AC5AD"]
 			id: "7465284C82512CF1"
@@ -465,6 +471,74 @@
 				id: "7667047356862670"
 				type: "item"
 				item: "mekanism:metallurgic_infuser"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			description: ["Formed from Crude Iron treated with refined Fire Essence, Steel is a strong and versatile material. "]
+			dependencies: ["49159D9F94B7006C"]
+			id: "32D83EBEBBDD47EB"
+			tasks: [{
+				id: "1F6D964EF18EC186"
+				type: "item"
+				item: "emendatusenigmatica:steel_ingot"
+			}]
+		}
+		{
+			title: "Ore Processing - Sulfuric Acid"
+			icon: "mekanism:sulfuric_acid_bucket"
+			x: 5.5d
+			y: 4.5d
+			description: [
+				"Several crushed ores may be treated with Sulfuric Acid to further refine them and increase their yields. "
+				""
+				"Water Vapor and Oxygen are easily obtained from their respective Essences in the Chemical Oxidizer, while the resulting chemicals may be combined in the Chemical Infuser and finally converted to Liquid Sulfuric Acid in the Rotary Condensentrator. "
+			]
+			dependencies: ["7563E41DBF4FD286"]
+			id: "77CAC3F258EC598A"
+			tasks: [
+				{
+					id: "4215B4C72BE3AB08"
+					type: "item"
+					item: "mekanism:chemical_infuser"
+				}
+				{
+					id: "7663840A15A2F694"
+					type: "item"
+					item: "mekanism:chemical_oxidizer"
+				}
+				{
+					id: "5171075570360331"
+					type: "item"
+					item: "mekanism:rotary_condensentrator"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 2.0d
+			description: ["Extracted from the Rich Slag left over from processing other materials, Osmium is an extremely dense material with uniquely resistant properties, making it useful for more advanced magical metallurgy. "]
+			dependencies: ["49159D9F94B7006C"]
+			id: "682A7A6F4C3194DD"
+			tasks: [{
+				id: "122E9D95077F6253"
+				type: "item"
+				item: "emendatusenigmatica:osmium_ingot"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 3.5d
+			dependencies: [
+				"2C43443DCFFF65F4"
+				"7563E41DBF4FD286"
+			]
+			id: "217250B9FE66ED36"
+			tasks: [{
+				id: "2195222B1946B50B"
+				type: "item"
+				item: "ae2:printed_logic_processor"
 			}]
 		}
 	]
