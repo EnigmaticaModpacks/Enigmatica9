@@ -6,9 +6,7 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            ingredients: [
-                { item: 'mekanism:dirty_netherite_scrap', count: 1 }
-            ],
+            ingredients: [{ item: 'mekanism:dirty_netherite_scrap', count: 1 }],
             result: [
                 { item: 'minecraft:netherite_scrap', chance: 0.9 },
                 { item: 'emendatusenigmatica:gold_nugget', chance: 0.15 }

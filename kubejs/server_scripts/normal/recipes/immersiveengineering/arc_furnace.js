@@ -69,7 +69,7 @@ ServerEvents.recipes((event) => {
         {
             input: { item: 'mekanism:dirty_netherite_scrap', count: 1 },
             additives: [],
-            output: Item.of("minecraft:netherite_scrap", 1),
+            output: Item.of('minecraft:netherite_scrap', 1),
             secondaries: [],
             slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
             energy: 25600,
@@ -79,7 +79,7 @@ ServerEvents.recipes((event) => {
         {
             input: { item: '#forge:ores/netherite', count: 1 },
             additives: [],
-            output: Item.of("minecraft:netherite_scrap", 3),
+            output: Item.of('minecraft:netherite_scrap', 3),
             secondaries: [],
             slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
             energy: 25600,
