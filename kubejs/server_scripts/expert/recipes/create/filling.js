@@ -8,14 +8,13 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             results: [{ item: 'hexerei:blood_bottle' }],
-            ingredients: [
-                { item: 'minecraft:glass_bottle' },
-                {
-                    fluidTag: 'forge:blood',
-                    amount: 250
-                }
-            ],
+            ingredients: [{ item: 'minecraft:glass_bottle' }, { fluidTag: 'forge:blood', amount: 250 }],
             id: `${id_prefix}blood_bottle`
+        },
+        {
+            results: [{ item: 'hexerei:quicksilver_bottle' }],
+            ingredients: [{ item: 'minecraft:glass_bottle' }, { fluidTag: 'forge:quicksilver', amount: 250 }],
+            id: `${id_prefix}quicksilver_bottle`
         }
     ];
 

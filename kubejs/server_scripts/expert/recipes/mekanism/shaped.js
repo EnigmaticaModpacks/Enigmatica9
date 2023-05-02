@@ -83,6 +83,41 @@ ServerEvents.recipes((event) => {
             },
             id: 'mekanism:chargepad'
         },
+        {
+            output: 'mekanism:chemical_oxidizer',
+            pattern: ['BCB', 'ADA', 'FEF'],
+            key: {
+                A: 'immersiveengineering:insulating_glass',
+                B: '#forge:essences/air',
+                C: 'pneumaticcraft:reinforced_chest',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: 'mekanism:basic_chemical_tank',
+                F: '#forge:plates/obsidian'
+            },
+            id: 'mekanism:chemical_oxidizer'
+        },
+        {
+            output: 'mekanism:chemical_infuser',
+            pattern: ['EBE', 'ACA', 'DED'],
+            key: {
+                A: 'immersiveengineering:insulating_glass',
+                B: '#forge:ingots/fiery',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: '#forge:plates/obsidian',
+                E: 'mekanism:basic_chemical_tank'
+            },
+            id: 'mekanism:chemical_infuser'
+        },
+        {
+            output: 'mekanism:basic_chemical_tank',
+            pattern: [' A ', 'BCB', ' B '],
+            key: {
+                A: 'pneumaticcraft:safety_tube_module',
+                B: '#forge:plates/osmium',
+                C: 'pneumaticcraft:air_canister'
+            },
+            id: 'mekanism:chemical_tank/basic'
+        },
 
         // Placeholder recipes
 

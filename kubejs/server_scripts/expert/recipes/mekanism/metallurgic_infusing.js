@@ -12,6 +12,24 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}iron_ingot`
         },
         {
+            output: 'emendatusenigmatica:steel_ingot',
+            itemInput: { ingredient: { tag: 'forge:ingots/crude_iron' } },
+            chemicalInput: { infuse_type: 'emendatusenigmatica:fire_essence', amount: 20 },
+            id: `${id_prefix}steel_ingot`
+        },
+        {
+            output: '2x emendatusenigmatica:infused_iron_ingot',
+            itemInput: { ingredient: { tag: 'forge:ingots/ironwood' } },
+            chemicalInput: { infuse_type: 'emendatusenigmatica:earth_essence', amount: 20 },
+            id: `${id_prefix}infused_iron_ingot`
+        },
+        {
+            output: '2x emendatusenigmatica:sky_ingot',
+            itemInput: { ingredient: { tag: 'forge:ingots/aluminum' } },
+            chemicalInput: { infuse_type: 'emendatusenigmatica:air_essence', amount: 20 },
+            id: `${id_prefix}sky_ingot`
+        },
+        {
             output: 'emendatusenigmatica:osmium_dirty_dust',
             itemInput: { ingredient: { tag: 'mekanism:clumps/osmium' } },
             chemicalInput: { infuse_type: 'emendatusenigmatica:water_essence', amount: 20 },

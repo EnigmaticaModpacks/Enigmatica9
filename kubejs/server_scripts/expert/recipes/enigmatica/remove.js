@@ -105,6 +105,7 @@ ServerEvents.recipes((event) => {
         { id: /immersiveengineering:metalpress\/bullet_.*/ },
         { id: 'immersiveengineering:crafting/treated_wood_horizontal' },
         { id: 'immersiveengineering:blastfurnace/steel' },
+        { id: 'immersiveengineering:blastfurnace/steel_block' },
         { id: 'immersiveengineering:crafting/blastbrick' },
         { id: 'immersiveengineering:crafting/toolupgrade_drill_lube' },
         { id: 'immersiveengineering:crafting/tesla_coil' },
@@ -304,8 +305,9 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:machines/pulverizer/pulverizer_diamond' },
 
         { id: 'twilightforest:equipment/fiery_ingot_crafting' },
-        { id: 'twilightforest:material/fiery_iron_ingot' },
-        { id: 'twilightforest:material/fiery_iron_ingot_reversed' },
+        { id: /twilightforest:equipment\/fiery_fiery_/ },
+        { id: /twilightforest:equipment\/fiery_iron_/ },
+        { id: /twilightforest:material\/fiery_iron_/ },
 
         { id: /chalk/, mod: 'occultism' },
         { id: /rune_from_corundum/, mod: 'quark' },

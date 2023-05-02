@@ -81,6 +81,18 @@ ServerEvents.recipes((event) => {
             inputs: [{ base_ingredient: { item: 'thermal:rich_slag' }, count: 9 }],
             fluid: { amount: 100, tag: 'forge:redstone_acid' },
             id: `${id_prefix}sky_dust_silver_osmium_clump`
+        },
+        {
+            results: [{ item: 'hexerei:quicksilver_bottle' }],
+            inputs: [{ base_ingredient: { item: 'minecraft:glass_bottle' } }],
+            fluid: { amount: 250, tag: 'forge:quicksilver' },
+            id: `${id_prefix}quicksilver_bottle`
+        },
+        {
+            results: [{ item: 'hexerei:blood_bottle' }],
+            inputs: [{ base_ingredient: { item: 'minecraft:glass_bottle' } }],
+            fluid: { amount: 250, tag: 'forge:blood' },
+            id: `${id_prefix}blood_bottle`
         }
     ];
 
