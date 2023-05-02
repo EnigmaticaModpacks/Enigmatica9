@@ -87,7 +87,7 @@ ServerEvents.recipes((event) => {
                     type: 'create:filling',
                     ingredients: [
                         { item: `emendatusenigmatica:crushed_${metal}_ore` },
-                        { fluidTag: 'forge:redstone_acid', amount: 25 }
+                        { fluidTag: 'forge:sulfuric_acid', amount: 25 }
                     ],
                     results: [{ item: `emendatusenigmatica:crushed_${metal}_ore` }]
                 }

@@ -85,7 +85,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'mekanism:chemical_oxidizer',
-            pattern: ['BCB', 'ADA', 'FEF'],
+            pattern: ['CBE', 'ADA', 'FBF'],
             key: {
                 A: 'immersiveengineering:insulating_glass',
                 B: '#forge:essences/air',
@@ -118,6 +118,19 @@ ServerEvents.recipes((event) => {
             },
             id: 'mekanism:chemical_tank/basic'
         },
+        {
+            output: 'mekanism:rotary_condensentrator',
+            pattern: ['EBF', 'ACA', 'DBD'],
+            key: {
+                A: 'immersiveengineering:insulating_glass',
+                B: 'pneumaticcraft:turbine_rotor',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: '#forge:plates/obsidian',
+                E: 'mekanism:basic_chemical_tank',
+                F: 'thermal:fluid_cell_frame'
+            },
+            id: 'mekanism:rotary_condensentrator'
+        },
 
         // Placeholder recipes
 
@@ -131,18 +144,6 @@ ServerEvents.recipes((event) => {
                 D: '#forge:gems/diamond'
             },
             id: 'mekanism:laser'
-        },
-        {
-            output: 'mekanism:rotary_condensentrator',
-            pattern: ['ABA', 'CDE', 'ABA'],
-            key: {
-                A: '#forge:glass/colorless',
-                B: '#forge:circuits/basic',
-                C: 'mekanism:basic_chemical_tank',
-                D: '#industrialforegoing:machine_frame/simple',
-                E: 'mekanism:basic_fluid_tank'
-            },
-            id: 'mekanism:rotary_condensentrator'
         },
         {
             output: 'mekanism:meka_tool',

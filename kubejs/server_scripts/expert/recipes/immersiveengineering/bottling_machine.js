@@ -109,7 +109,7 @@ ServerEvents.recipes((event) => {
         recipes.push({
             results: outputs,
             inputs: [{ base_ingredient: { tag: `create:crushed_ores/${metal}` }, count: 1 }],
-            fluid: { amount: 100, tag: 'forge:redstone_acid' },
+            fluid: { amount: 100, tag: 'forge:sulfuric_acid' },
             id: `${id_prefix}${metal}_dirty_dust_from_acid`
         });
     });
