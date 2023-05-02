@@ -26,7 +26,7 @@
 	#Energy per operation tick (Joules).
 	oxidationChamber = "200"
 	#Energy per operation tick (Joules).
-	chemicalInfuser = "100"
+	chemicalInfuser = "10"
 	#Energy per operation tick (Joules).
 	chemicalInjectionChamber = "400"
 	#Energy per operation tick (Joules).
