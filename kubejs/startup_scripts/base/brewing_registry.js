@@ -39,6 +39,11 @@ MoreJSEvents.registerPotionBrewing((event) => {
             output: 'minecraft:fire_resistance'
         },
         {
+            reagent: 'byg:aloe_vera',
+            input: 'minecraft:awkward',
+            output: 'minecraft:fire_resistance'
+        },
+        {
             reagent: 'blue_skies:fiery_beans',
             input: 'minecraft:awkward',
             output: 'minecraft:strength'

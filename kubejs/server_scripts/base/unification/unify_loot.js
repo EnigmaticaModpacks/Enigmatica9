@@ -8,17 +8,19 @@ LootJS.modifiers((event) => {
     // replaceWithRaw   -> Boolean - Should it replace the drop with Raw ore, or return unified version of the item?
     // count            -> integer - if replaceWithRaw is True, then specifies the amount of raw ore given for each item.
     function unifyLoot(tag, suffix, itemStack, prefix, replaceWithRaw, count) {
-        prefix = (!prefix)? "": prefix + "_";
-        replaceWithRaw = (!replaceWithRaw)? false: true;
-        count = (!count)? itemStack.getCount(): count;
+        prefix = !prefix ? '' : prefix + '_';
+        replaceWithRaw = !replaceWithRaw ? false : true;
+        count = !count ? itemStack.getCount() : count;
         // If itemstack already is from EE and replaceWithRaw is false, just return it.
-        if (itemStack.getId().startsWith('emendatusenigmatica:') && !replaceWithRaw) {return itemStack;}
-        tag = (tag.startsWith("#")? tag.substring(1): tag) + "/"
+        if (itemStack.getId().startsWith('emendatusenigmatica:') && !replaceWithRaw) {
+            return itemStack;
+        }
+        tag = (tag.startsWith('#') ? tag.substring(1) : tag) + '/';
         let iterator = itemStack.getTags().iterator();
         while (iterator.hasNext()) {
             let tagString = iterator.next().location().toString();
             if (tagString.startsWith(tag)) {
-                let tagSubString = tagString.substring(tag.lastIndexOf("/")+1);
+                let tagSubString = tagString.substring(tag.lastIndexOf('/') + 1);
                 if (Item.exists(`emendatusenigmatica:raw_${tagSubString}`) && replaceWithRaw) {
                     return Item.of(`emendatusenigmatica:raw_${tagSubString}`, count);
                 }
@@ -39,42 +41,61 @@ LootJS.modifiers((event) => {
     event
         .addLootTypeModifier(LootType.CHEST)
         // Ingots
-        .modifyLoot(Ingredient.of('#forge:ingots'), (itemStack) => unifyLoot("forge:ingots", "ingot", itemStack, null, true))
+        .modifyLoot(Ingredient.of('#forge:ingots'), (itemStack) =>
+            unifyLoot('forge:ingots', 'ingot', itemStack, null, true)
+        )
         // Nuggets
-        .modifyLoot(Ingredient.of('#forge:nuggets'), (itemStack) => unifyLoot("forge:nuggets", "nugget", itemStack, null, true, 1))
+        .modifyLoot(Ingredient.of('#forge:nuggets'), (itemStack) =>
+            unifyLoot('forge:nuggets', 'nugget', itemStack, null, true, 1)
+        )
         // Storage Blocks
-        .modifyLoot(Ingredient.of('#forge:storage_blocks'), (itemStack) => unifyLoot("forge:storage_blocks", "block", itemStack, null, true, itemStack.getCount() * (Math.floor(Math.random() * 3) + 3)))
+        .modifyLoot(Ingredient.of('#forge:storage_blocks'), (itemStack) =>
+            unifyLoot(
+                'forge:storage_blocks',
+                'block',
+                itemStack,
+                null,
+                true,
+                itemStack.getCount() * (Math.floor(Math.random() * 3) + 3)
+            )
+        )
         // Raw Ores
-        .modifyLoot(Ingredient.of('#forge:raw_materials'), (itemStack) => unifyLoot("forge:raw_materials", "gem", itemStack, null, true))
+        .modifyLoot(Ingredient.of('#forge:raw_materials'), (itemStack) =>
+            unifyLoot('forge:raw_materials', 'gem', itemStack, null, true)
+        )
         // Crushed Ores
-        .modifyLoot(Ingredient.of('#create:crushed_ores'), (itemStack) => unifyLoot("create:crushed_ores", "ore", itemStack, "crushed"))
+        .modifyLoot(Ingredient.of('#create:crushed_ores'), (itemStack) =>
+            unifyLoot('create:crushed_ores', 'ore', itemStack, null, true)
+        )
         // Gems
-        .modifyLoot(Ingredient.of('#forge:gems'), (itemStack) => unifyLoot("forge:gems", "gem", itemStack)) 
+        .modifyLoot(Ingredient.of('#forge:gems'), (itemStack) => unifyLoot('forge:gems', 'gem', itemStack))
         // Dusts
-        .modifyLoot(Ingredient.of('#forge:dusts'), (itemStack) => unifyLoot("forge:dusts", "dust", itemStack)) 
+        .modifyLoot(Ingredient.of('#forge:dusts'), (itemStack) => unifyLoot('forge:dusts', 'dust', itemStack));
 
     // Replace drops from mobs!
     event
         .addLootTypeModifier(LootType.ENTITY)
         // Ingots
-        .modifyLoot(Ingredient.of('#forge:ingots'), (itemStack) => unifyLoot("forge:ingots", "ingot", itemStack))
+        .modifyLoot(Ingredient.of('#forge:ingots'), (itemStack) => unifyLoot('forge:ingots', 'ingot', itemStack))
         // Nuggets
-        .modifyLoot(Ingredient.of('#forge:nuggets'), (itemStack) => unifyLoot("forge:nuggets", "nugget", itemStack))
+        .modifyLoot(Ingredient.of('#forge:nuggets'), (itemStack) => unifyLoot('forge:nuggets', 'nugget', itemStack))
         // Gems
-        .modifyLoot(Ingredient.of('#forge:gems'), (itemStack) => unifyLoot("forge:gems", "gem", itemStack))
+        .modifyLoot(Ingredient.of('#forge:gems'), (itemStack) => unifyLoot('forge:gems', 'gem', itemStack));
 
     // Replace all block drops of Raw Ores etc for EE ones!
     event
         .addLootTypeModifier(LootType.BLOCK)
         // Ingots
-        .modifyLoot(Ingredient.of('#forge:ingots'), (itemStack) => unifyLoot("forge:ingots", "ingot", itemStack))
+        .modifyLoot(Ingredient.of('#forge:ingots'), (itemStack) => unifyLoot('forge:ingots', 'ingot', itemStack))
         // Nuggets
-        .modifyLoot(Ingredient.of('#forge:nuggets'), (itemStack) => unifyLoot("forge:nuggets", "nugget", itemStack))
+        .modifyLoot(Ingredient.of('#forge:nuggets'), (itemStack) => unifyLoot('forge:nuggets', 'nugget', itemStack))
         // Gems
-        .modifyLoot(Ingredient.of('#forge:gems'), (itemStack) => unifyLoot("forge:gems", "gem", itemStack))
+        .modifyLoot(Ingredient.of('#forge:gems'), (itemStack) => unifyLoot('forge:gems', 'gem', itemStack))
         // Raw Ores
         // Raw Ores being replaced by themselves is intended! It is because raw ores for gems are disabled, so if something wants to drop / generate a raw ore that is disabled (Blue Skies), it will return a gem instead!
-        .modifyLoot(Ingredient.of('#forge:raw_materials'), (itemStack) => unifyLoot("forge:raw_materials", "gem", itemStack, null, true))
+        .modifyLoot(Ingredient.of('#forge:raw_materials'), (itemStack) =>
+            unifyLoot('forge:raw_materials', 'gem', itemStack, null, true)
+        )
         // Dusts
-        .modifyLoot(Ingredient.of('#forge:dusts'), (itemStack) => unifyLoot("forge:dusts", "dust", itemStack))
+        .modifyLoot(Ingredient.of('#forge:dusts'), (itemStack) => unifyLoot('forge:dusts', 'dust', itemStack));
 });
