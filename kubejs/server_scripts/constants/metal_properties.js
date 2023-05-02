@@ -226,5 +226,8 @@ const metal_properties = {
     netherite: {
         crushing_tier: 4
         // meltingPoint: 1000
+    },
+    hop_graphite:{
+        // meltingPoint: 1000
     }
 };

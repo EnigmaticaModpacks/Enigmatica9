@@ -86,6 +86,7 @@ ServerEvents.recipes((event) => {
         { id: /occultism:miner\/.*\/deepslate_/ },
         { id: 'occultism:miner/ores/sapphire_ore' },
         { id: 'occultism:miner/ores/ruby_ore' },
+        { id: /occultism:crushing\/.*dust/ },
 
         { id: /pneumaticcraft:thermo_plant\/vegetable_oil_from_/ },
         { id: /pneumaticcraft:thermo_plant\/ethanol_from_/ },
