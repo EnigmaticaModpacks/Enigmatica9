@@ -2,26 +2,28 @@
 // Used for Apotheosis and Armored Mobs scripts
 
 const enchant_glint = {
-    blank: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:blank_rune"}`,
-    white: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:white_rune"}`,
-    orange: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:orange_rune"}`,
-    magenta: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:magenta_rune"}`,
-    light_blue: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:light_blue_rune"}`,
-    yellow: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:yellow_rune"}`,
-    lime: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:lime_rune"}`,
-    pink: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:pink_rune"}`,
-    gray: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:gray_rune"}`,
-    light_gray: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:light_gray_rune"}`,
-    cyan: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:cyan_rune"}`,
-    purple: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:purple_rune"}`,
-    blue: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:blue_rune"}`,
-    green: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:green_rune"}`,
-    red: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:red_rune"}`,
-    black: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:black_rune"}`,
-    rainbow: `"quark:RuneAttached":1b,"quark:RuneColor":{Count:1b,id:"quark:rainbow_rune"}`
+    blank: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:blank_rune' } },
+    white: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:white_rune' } },
+    orange: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:orange_rune' } },
+    magenta: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:magenta_rune' } },
+    light_blue: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:light_blue_rune' } },
+    yellow: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:yellow_rune' } },
+    lime: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:lime_rune' } },
+    pink: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:pink_rune' } },
+    gray: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:gray_rune' } },
+    light_gray: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:light_gray_rune' } },
+    cyan: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:cyan_rune' } },
+    purple: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:purple_rune' } },
+    blue: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:blue_rune' } },
+    green: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:green_rune' } },
+    red: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:red_rune' } },
+    black: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:black_rune' } },
+    rainbow: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:rainbow_rune' } }
 };
 
-const default_nbt = `{Damage:0,${enchant_glint.blank}}`;
+const default_nbt = Object.assign({ Damage: 0 }, enchant_glint.blank);
+
+const leather_armors = { black: Object.assign({ display: { color: 1908001 } }, default_nbt) };
 
 const shield_nbt = {
     tree: `{BlockEntityTag:{Base:15,Patterns:[{Color:12,Pattern:"sc"},{Color:12,Pattern:"bts"},{Color:13,Pattern:"cbo"},{Color:15,Pattern:"ls"},{Color:15,Pattern:"rs"},{Color:15,Pattern:"tt"},{Color:13,Pattern:"flo"},{Color:5,Pattern:"mc"},{Color:13,Pattern:"glb"}]},Damage:0,${enchant_glint.blank}}`,
@@ -52,7 +54,7 @@ const shield_nbt = {
 
 const all_shield_designs = [];
 Object.keys(shield_nbt).forEach((shield) => {
-    all_shield_designs.push({ weight: 1, stack: { item: 'minecraft:shield', nbt: shield_nbt[shield] } });
+    all_shield_designs.push({ stack: { item: 'minecraft:shield', nbt: shield_nbt[shield] }, weight: 1 });
 });
 
 // { weight: 1, stack: { item: 'minecraft:shield', nbt: shield_nbt.dark_knight } }
@@ -88,27 +90,27 @@ dark_blue_cross: https://minecraft.tools/en/shield.php?color_id_0=8&shape_id_1=2
 
 */
 const tipped_arrow_nbt = {
-    blasting: '{Potion:"ars_nouveau:blasting_potion"}',
-    blasting_long: '{Potion:"ars_nouveau:blasting_potion_long"}',
-    blasting_strong: '{Potion:"ars_nouveau:blasting_potion_strong"}',
-    freezing: '{Potion:"ars_nouveau:freezing_potion"}',
-    freezing_long: '{Potion:"ars_nouveau:freezing_potion_long"}',
-    freezing_strong: '{Potion:"ars_nouveau:freezing_potion_strong"}',
-    weakness: '{Potion:"minecraft:weakness"}',
-    weakness_long: '{Potion:"minecraft:long_weakness"}',
-    sundering: '{Potion:"apotheosis:sundering"}',
-    sundering_long: '{Potion:"apotheosis:long_sundering"}',
-    sundering_strong: '{Potion:"apotheosis:strong_sundering"}',
-    poison: '{Potion:"minecraft:poison"}',
-    poison_long: '{Potion:"minecraft:long_poison"}',
-    poison_strong: '{Potion:"minecraft:strong_poison"}',
-    shock: '{Potion:"ars_elemental:shock_potion"}',
-    shock_long: '{Potion:"ars_elemental:shock_potion_long"}',
-    harming: '{Potion:"minecraft:harming"}',
-    harming_strong: '{Potion:"minecraft:strong_harming"}',
-    wither: '{Potion:"apotheosis:wither"}',
-    wither_long: '{Potion:"apotheosis:long_wither"}',
-    wither_strong: '{Potion:"apotheosis:strong_sundering"}'
+    blasting: { Potion: 'ars_nouveau:blasting_potion' },
+    blasting_long: { Potion: 'ars_nouveau:blasting_potion_long' },
+    blasting_strong: { Potion: 'ars_nouveau:blasting_potion_strong' },
+    freezing: { Potion: 'ars_nouveau:freezing_potion' },
+    freezing_long: { Potion: 'ars_nouveau:freezing_potion_long' },
+    freezing_strong: { Potion: 'ars_nouveau:freezing_potion_strong' },
+    weakness: { Potion: 'minecraft:weakness' },
+    weakness_long: { Potion: 'minecraft:long_weakness' },
+    sundering: { Potion: 'apotheosis:sundering' },
+    sundering_long: { Potion: 'apotheosis:long_sundering' },
+    sundering_strong: { Potion: 'apotheosis:strong_sundering' },
+    poison: { Potion: 'minecraft:poison' },
+    poison_long: { Potion: 'minecraft:long_poison' },
+    poison_strong: { Potion: 'minecraft:strong_poison' },
+    shock: { Potion: 'ars_elemental:shock_potion' },
+    shock_long: { Potion: 'ars_elemental:shock_potion_long' },
+    harming: { Potion: 'minecraft:harming' },
+    harming_strong: { Potion: 'minecraft:strong_harming' },
+    wither: { Potion: 'apotheosis:wither' },
+    wither_long: { Potion: 'apotheosis:long_wither' },
+    wither_strong: { Potion: 'apotheosis:strong_sundering' }
 };
 
 const reactive = {
