@@ -8,7 +8,7 @@ enchantment_levels: [50, 30, 120, 40],
 
 */
 ServerEvents.highPriorityData((event) => {
-    const id_prefix = 'apotheosis:minibosses/';
+    const id_prefix = 'apotheosis:minibosses/minecraft/';
     const recipes = [
         {
             id: 'skeleton_bow',
@@ -16,7 +16,7 @@ ServerEvents.highPriorityData((event) => {
             weight: 85,
             quality: 0,
             entities: ['minecraft:skeleton'],
-            valid_gear_sets: ['#miniboss_skeleton_bow'],
+            valid_gear_sets: ['#miniboss/skeleton_bow'],
             dimensions: [],
             affixed: false,
             nbt: {},
@@ -40,8 +40,8 @@ ServerEvents.highPriorityData((event) => {
             weight: 15,
             quality: 0,
             entities: ['minecraft:skeleton'],
-            valid_gear_sets: ['#miniboss_skeleton_forsaken_knight'],
-            dimensions: ['minecraft:overworld'],
+            valid_gear_sets: ['#miniboss/skeleton_forsaken_knight'],
+            dimensions: [],
             affixed: false,
             nbt: {},
             stats: {
@@ -61,12 +61,6 @@ ServerEvents.highPriorityData((event) => {
             }
         }
     ];
-
-    const disabled_recipes = [];
-
-    disabled_recipes.forEach((recipe) => {
-        recipes.push({ entity: recipe.entity, conditions: [{ type: 'forge:false' }] });
-    });
 
     recipes.forEach((recipe) => {
         event.addJson(`${id_prefix}${recipe.id}.json`, recipe);

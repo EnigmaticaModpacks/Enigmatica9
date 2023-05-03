@@ -23,41 +23,360 @@ const enchant_glint = {
 
 const default_nbt = Object.assign({ Damage: 0 }, enchant_glint.blank);
 
-const leather_armors = { black: Object.assign({ display: { color: 1908001 } }, default_nbt) };
+const leather_colors = { black: Object.assign({ display: { color: 1908001 } }, default_nbt) };
+
+const enchantments = {
+    knockback_1: {
+        Enchantments: [{ id: 'minecraft:knockback', lvl: 1 }]
+    },
+    knockback_2: {
+        Enchantments: [{ id: 'minecraft:knockback', lvl: 2 }]
+    },
+    knockback_3: {
+        Enchantments: [{ id: 'minecraft:knockback', lvl: 3 }]
+    },
+    reactive_1: {
+        Enchantments: [{ id: 'ars_nouveau:reactive', lvl: 1 }]
+    },
+    reactive_2: {
+        Enchantments: [{ id: 'ars_nouveau:reactive', lvl: 2 }]
+    },
+    reactive_3: {
+        Enchantments: [{ id: 'ars_nouveau:reactive', lvl: 3 }]
+    }
+};
 
 const shield_nbt = {
-    tree: `{BlockEntityTag:{Base:15,Patterns:[{Color:12,Pattern:"sc"},{Color:12,Pattern:"bts"},{Color:13,Pattern:"cbo"},{Color:15,Pattern:"ls"},{Color:15,Pattern:"rs"},{Color:15,Pattern:"tt"},{Color:13,Pattern:"flo"},{Color:5,Pattern:"mc"},{Color:13,Pattern:"glb"}]},Damage:0,${enchant_glint.blank}}`,
-    dark_knight: `{BlockEntityTag:{Base:15,Patterns:[{Color:8,Pattern:"ms"},{Color:8,Pattern:"cs"},{Color:0,Pattern:"sc"},{Color:15,Pattern:"gra"},{Color:15,Pattern:"gru"},{Color:15,Pattern:"flo"}]},Damage:0,${enchant_glint.blank}}`,
-    bi_pride: `{BlockEntityTag:{Base:11,Patterns:[{Color:2,Pattern:"vh"},{Color:10,Pattern:"cs"}]},Damage:0,${enchant_glint.blank}}`,
-    trans_pride: `{BlockEntityTag:{Base:6,Patterns:[{Color:3,Pattern:"bo"},{Color:0,Pattern:"cs"},{Color:0,Pattern:"cs"}]},Damage:0,${enchant_glint.blank}}`,
-    gay_pride: `{BlockEntityTag:{Base:0,Patterns:[{Color:1,Pattern:"hh"},{Color:5,Pattern:"hhb"},{Color:14,Pattern:"ts"},{Color:4,Pattern:"ms"},{Color:9,Pattern:"bs"}]},Damage:0,${enchant_glint.blank}}`,
-    lesbian_pride: `{BlockEntityTag:{Base:0,Patterns:[{Color:6,Pattern:"ls"},{Color:6,Pattern:"rs"},{Color:14,Pattern:"bo"}]},Damage:0,${enchant_glint.blank}}`,
-    sunset: `{BlockEntityTag:{Base:9,Patterns:[{Color:1,Pattern:"gra"},{Color:4,Pattern:"flo"},{Color:4,Pattern:"mc"},{Color:9,Pattern:"bs"},{Color:12,Pattern:"bts"},{Color:13,Pattern:"bts"}]},Damage:0,${enchant_glint.blank}}`,
-    ender_eye: `{BlockEntityTag:{Base:10,Patterns:[{Color:7,Pattern:"gra"},{Color:5,Pattern:"mc"},{Color:15,Pattern:"cr"},{Color:15,Pattern:"tts"},{Color:15,Pattern:"bts"},{Color:7,Pattern:"bo"}]},Damage:0,${enchant_glint.blank}}`,
-    dragon_eye: `{BlockEntityTag:{Base:0,Patterns:[{Color:15,Pattern:"ts"},{Color:15,Pattern:"bs"},{Color:3,Pattern:"flo"},{Color:15,Pattern:"cbo"},{Color:14,Pattern:"mc"},{Color:15,Pattern:"cr"}]},Damage:0,${enchant_glint.blank}}`,
-    orange_starburst: `{BlockEntityTag:{Base:0,Patterns:[{Color:15,Pattern:"drs"},{Color:15,Pattern:"dls"},{Color:14,Pattern:"cr"},{Color:1,Pattern:"flo"},{Color:7,Pattern:"bo"}]},Damage:0,${enchant_glint.blank}}`,
-    dark_creeper: `{BlockEntityTag:{Base:0,Patterns:[{Color:15,Pattern:"cbo"},{Color:11,Pattern:"sc"},{Color:15,Pattern:"gru"},{Color:15,Pattern:"gra"},{Color:7,Pattern:"mc"},{Color:0,Pattern:"cre"}]},Damage:0,${enchant_glint.blank}}`,
-    pale_fire: `{BlockEntityTag:{Base:1,Patterns:[{Color:4,Pattern:"flo"},{Color:1,Pattern:"bri"},{Color:4,Pattern:"bt"},{Color:1,Pattern:"cr"},{Color:4,Pattern:"bts"},{Color:4,Pattern:"gru"}]},Damage:0,${enchant_glint.blank}}`,
-    dark_fire: `{BlockEntityTag:{Base:15,Patterns:[{Color:14,Pattern:"moj"},{Color:1,Pattern:"bt"},{Color:15,Pattern:"mr"},{Color:1,Pattern:"gru"},{Color:4,Pattern:"bts"},{Color:15,Pattern:"gra"}]},Damage:0,${enchant_glint.blank}}`,
-    ender_swirl: `{BlockEntityTag:{Base:15,Patterns:[{Color:0,Pattern:"dls"},{Color:10,Pattern:"mr"},{Color:15,Pattern:"dls"},{Color:2,Pattern:"mc"},{Color:15,Pattern:"flo"}]},Damage:0,${enchant_glint.blank}}`,
-    grey_knight: `{BlockEntityTag:{Base:12,Patterns:[{Color:15,Pattern:"bri"},{Color:12,Pattern:"gra"},{Color:12,Pattern:"gru"},{Color:8,Pattern:"sc"},{Color:8,Pattern:"mc"},{Color:7,Pattern:"flo"}]},Damage:0,${enchant_glint.blank}}`,
-    blue_burst: `{BlockEntityTag:{Base:0,Patterns:[{Color:8,Pattern:"cbo"},{Color:11,Pattern:"cs"},{Color:0,Pattern:"sc"},{Color:9,Pattern:"mr"},{Color:11,Pattern:"gru"},{Color:3,Pattern:"gra"}]},Damage:0,${enchant_glint.blank}}`,
-    blue_panel: `{BlockEntityTag:{Base:4,Patterns:[{Color:9,Pattern:"gra"},{Color:3,Pattern:"gru"},{Color:11,Pattern:"sc"},{Color:3,Pattern:"mc"},{Color:11,Pattern:"bo"},{Color:11,Pattern:"flo"}]},Damage:0,${enchant_glint.blank}}`,
-    dark_cross: `{BlockEntityTag:{Base:11,Patterns:[{Color:15,Pattern:"cbo"},{Color:3,Pattern:"cs"},{Color:3,Pattern:"ms"},{Color:14,Pattern:"mc"},{Color:15,Pattern:"flo"}]},Damage:0,${enchant_glint.blank}}`,
-    red_ornamental: `{BlockEntityTag:{Base:15,Patterns:[{Color:14,Pattern:"tts"},{Color:14,Pattern:"mr"},{Color:15,Pattern:"flo"},{Color:14,Pattern:"bts"},{Color:15,Pattern:"cbo"},{Color:14,Pattern:"bo"}]},Damage:0,${enchant_glint.blank}}`,
-    orange_burst: `{BlockEntityTag:{Base:1,Patterns:[{Color:14,Pattern:"ss"},{Color:14,Pattern:"gru"},{Color:1,Pattern:"gra"},{Color:15,Pattern:"mr"},{Color:1,Pattern:"mc"},{Color:14,Pattern:"flo"}]},Damage:0,${enchant_glint.blank}}`,
-    warden_eye: `{BlockEntityTag:{Base:9,Patterns:[{Color:15,Pattern:"gra"},{Color:15,Pattern:"gru"},{Color:15,Pattern:"dls"},{Color:15,Pattern:"drs"},{Color:9,Pattern:"mr"},{Color:15,Pattern:"flo"}]},Damage:0,${enchant_glint.blank}}`,
-    warden_visage: `{BlockEntityTag:{Base:9,Patterns:[{Color:15,Pattern:"gra"},{Color:15,Pattern:"gru"},{Color:15,Pattern:"dls"},{Color:15,Pattern:"drs"},{Color:9,Pattern:"mr"},{Color:15,Pattern:"flo"}]},Damage:0,${enchant_glint.blank}}`,
-    sea_scape: `{BlockEntityTag:{Base:15,Patterns:[{Color:3,Pattern:"gra"},{Color:15,Pattern:"tts"},{Color:15,Pattern:"bts"},{Color:3,Pattern:"mc"}]},Damage:0,${enchant_glint.blank}}`,
-    dark_blue_cross: `{BlockEntityTag:{Base:15,Patterns:[{Color:3,Pattern:"gra"},{Color:15,Pattern:"tts"},{Color:15,Pattern:"bts"},{Color:3,Pattern:"mc"}]},Damage:0,${enchant_glint.blank}}`
+    tree: {
+        BlockEntityTag: {
+            Base: 15,
+            Patterns: [
+                { Color: 12, Pattern: 'sc' },
+                { Color: 12, Pattern: 'bts' },
+                { Color: 13, Pattern: 'cbo' },
+                { Color: 15, Pattern: 'ls' },
+                { Color: 15, Pattern: 'rs' },
+                { Color: 15, Pattern: 'tt' },
+                { Color: 13, Pattern: 'flo' },
+                { Color: 5, Pattern: 'mc' },
+                { Color: 13, Pattern: 'glb' }
+            ]
+        },
+        Damage: 0
+    },
+    dark_knight: {
+        BlockEntityTag: {
+            Base: 15,
+            Patterns: [
+                { Color: 8, Pattern: 'ms' },
+                { Color: 8, Pattern: 'cs' },
+                { Color: 0, Pattern: 'sc' },
+                { Color: 15, Pattern: 'gra' },
+                { Color: 15, Pattern: 'gru' },
+                { Color: 15, Pattern: 'flo' }
+            ]
+        },
+        Damage: 0
+    },
+    bi_pride: {
+        BlockEntityTag: {
+            Base: 11,
+            Patterns: [
+                { Color: 2, Pattern: 'vh' },
+                { Color: 10, Pattern: 'cs' }
+            ]
+        },
+        Damage: 0
+    },
+    trans_pride: {
+        BlockEntityTag: {
+            Base: 6,
+            Patterns: [
+                { Color: 3, Pattern: 'bo' },
+                { Color: 0, Pattern: 'cs' },
+                { Color: 0, Pattern: 'cs' }
+            ]
+        },
+        Damage: 0
+    },
+    gay_pride: {
+        BlockEntityTag: {
+            Base: 0,
+            Patterns: [
+                { Color: 1, Pattern: 'hh' },
+                { Color: 5, Pattern: 'hhb' },
+                { Color: 14, Pattern: 'ts' },
+                { Color: 4, Pattern: 'ms' },
+                { Color: 9, Pattern: 'bs' }
+            ]
+        },
+        Damage: 0
+    },
+    lesbian_pride: {
+        BlockEntityTag: {
+            Base: 0,
+            Patterns: [
+                { Color: 6, Pattern: 'ls' },
+                { Color: 6, Pattern: 'rs' },
+                { Color: 14, Pattern: 'bo' }
+            ]
+        },
+        Damage: 0
+    },
+    sunset: {
+        BlockEntityTag: {
+            Base: 9,
+            Patterns: [
+                { Color: 1, Pattern: 'gra' },
+                { Color: 4, Pattern: 'flo' },
+                { Color: 4, Pattern: 'mc' },
+                { Color: 9, Pattern: 'bs' },
+                { Color: 12, Pattern: 'bts' },
+                { Color: 13, Pattern: 'bts' }
+            ]
+        },
+        Damage: 0
+    },
+    ender_eye: {
+        BlockEntityTag: {
+            Base: 10,
+            Patterns: [
+                { Color: 7, Pattern: 'gra' },
+                { Color: 5, Pattern: 'mc' },
+                { Color: 15, Pattern: 'cr' },
+                { Color: 15, Pattern: 'tts' },
+                { Color: 15, Pattern: 'bts' },
+                { Color: 7, Pattern: 'bo' }
+            ]
+        },
+        Damage: 0
+    },
+    dragon_eye: {
+        BlockEntityTag: {
+            Base: 0,
+            Patterns: [
+                { Color: 15, Pattern: 'ts' },
+                { Color: 15, Pattern: 'bs' },
+                { Color: 3, Pattern: 'flo' },
+                { Color: 15, Pattern: 'cbo' },
+                { Color: 14, Pattern: 'mc' },
+                { Color: 15, Pattern: 'cr' }
+            ]
+        },
+        Damage: 0
+    },
+    orange_starburst: {
+        BlockEntityTag: {
+            Base: 0,
+            Patterns: [
+                { Color: 15, Pattern: 'drs' },
+                { Color: 15, Pattern: 'dls' },
+                { Color: 14, Pattern: 'cr' },
+                { Color: 1, Pattern: 'flo' },
+                { Color: 7, Pattern: 'bo' }
+            ]
+        },
+        Damage: 0
+    },
+    dark_creeper: {
+        BlockEntityTag: {
+            Base: 0,
+            Patterns: [
+                { Color: 15, Pattern: 'cbo' },
+                { Color: 11, Pattern: 'sc' },
+                { Color: 15, Pattern: 'gru' },
+                { Color: 15, Pattern: 'gra' },
+                { Color: 7, Pattern: 'mc' },
+                { Color: 0, Pattern: 'cre' }
+            ]
+        },
+        Damage: 0
+    },
+    pale_fire: {
+        BlockEntityTag: {
+            Base: 1,
+            Patterns: [
+                { Color: 4, Pattern: 'flo' },
+                { Color: 1, Pattern: 'bri' },
+                { Color: 4, Pattern: 'bt' },
+                { Color: 1, Pattern: 'cr' },
+                { Color: 4, Pattern: 'bts' },
+                { Color: 4, Pattern: 'gru' }
+            ]
+        },
+        Damage: 0
+    },
+    dark_fire: {
+        BlockEntityTag: {
+            Base: 15,
+            Patterns: [
+                { Color: 14, Pattern: 'moj' },
+                { Color: 1, Pattern: 'bt' },
+                { Color: 15, Pattern: 'mr' },
+                { Color: 1, Pattern: 'gru' },
+                { Color: 4, Pattern: 'bts' },
+                { Color: 15, Pattern: 'gra' }
+            ]
+        },
+        Damage: 0
+    },
+    ender_swirl: {
+        BlockEntityTag: {
+            Base: 15,
+            Patterns: [
+                { Color: 0, Pattern: 'dls' },
+                { Color: 10, Pattern: 'mr' },
+                { Color: 15, Pattern: 'dls' },
+                { Color: 2, Pattern: 'mc' },
+                { Color: 15, Pattern: 'flo' }
+            ]
+        },
+        Damage: 0
+    },
+    grey_knight: {
+        BlockEntityTag: {
+            Base: 12,
+            Patterns: [
+                { Color: 15, Pattern: 'bri' },
+                { Color: 12, Pattern: 'gra' },
+                { Color: 12, Pattern: 'gru' },
+                { Color: 8, Pattern: 'sc' },
+                { Color: 8, Pattern: 'mc' },
+                { Color: 7, Pattern: 'flo' }
+            ]
+        },
+        Damage: 0
+    },
+    blue_burst: {
+        BlockEntityTag: {
+            Base: 0,
+            Patterns: [
+                { Color: 8, Pattern: 'cbo' },
+                { Color: 11, Pattern: 'cs' },
+                { Color: 0, Pattern: 'sc' },
+                { Color: 9, Pattern: 'mr' },
+                { Color: 11, Pattern: 'gru' },
+                { Color: 3, Pattern: 'gra' }
+            ]
+        },
+        Damage: 0
+    },
+    blue_panel: {
+        BlockEntityTag: {
+            Base: 4,
+            Patterns: [
+                { Color: 9, Pattern: 'gra' },
+                { Color: 3, Pattern: 'gru' },
+                { Color: 11, Pattern: 'sc' },
+                { Color: 3, Pattern: 'mc' },
+                { Color: 11, Pattern: 'bo' },
+                { Color: 11, Pattern: 'flo' }
+            ]
+        },
+        Damage: 0
+    },
+    dark_cross: {
+        BlockEntityTag: {
+            Base: 11,
+            Patterns: [
+                { Color: 15, Pattern: 'cbo' },
+                { Color: 3, Pattern: 'cs' },
+                { Color: 3, Pattern: 'ms' },
+                { Color: 14, Pattern: 'mc' },
+                { Color: 15, Pattern: 'flo' }
+            ]
+        },
+        Damage: 0
+    },
+    red_ornamental: {
+        BlockEntityTag: {
+            Base: 15,
+            Patterns: [
+                { Color: 14, Pattern: 'tts' },
+                { Color: 14, Pattern: 'mr' },
+                { Color: 15, Pattern: 'flo' },
+                { Color: 14, Pattern: 'bts' },
+                { Color: 15, Pattern: 'cbo' },
+                { Color: 14, Pattern: 'bo' }
+            ]
+        },
+        Damage: 0
+    },
+    orange_burst: {
+        BlockEntityTag: {
+            Base: 1,
+            Patterns: [
+                { Color: 14, Pattern: 'ss' },
+                { Color: 14, Pattern: 'gru' },
+                { Color: 1, Pattern: 'gra' },
+                { Color: 15, Pattern: 'mr' },
+                { Color: 1, Pattern: 'mc' },
+                { Color: 14, Pattern: 'flo' }
+            ]
+        },
+        Damage: 0
+    },
+    warden_eye: {
+        BlockEntityTag: {
+            Base: 9,
+            Patterns: [
+                { Color: 15, Pattern: 'gra' },
+                { Color: 15, Pattern: 'gru' },
+                { Color: 15, Pattern: 'dls' },
+                { Color: 15, Pattern: 'drs' },
+                { Color: 9, Pattern: 'mr' },
+                { Color: 15, Pattern: 'flo' }
+            ]
+        },
+        Damage: 0
+    },
+    warden_visage: {
+        BlockEntityTag: {
+            Base: 9,
+            Patterns: [
+                { Color: 15, Pattern: 'gra' },
+                { Color: 15, Pattern: 'gru' },
+                { Color: 15, Pattern: 'dls' },
+                { Color: 15, Pattern: 'drs' },
+                { Color: 9, Pattern: 'mr' },
+                { Color: 15, Pattern: 'flo' }
+            ]
+        },
+        Damage: 0
+    },
+    sea_scape: {
+        BlockEntityTag: {
+            Base: 15,
+            Patterns: [
+                { Color: 3, Pattern: 'gra' },
+                { Color: 15, Pattern: 'tts' },
+                { Color: 15, Pattern: 'bts' },
+                { Color: 3, Pattern: 'mc' }
+            ]
+        },
+        Damage: 0
+    },
+    dark_blue_cross: {
+        BlockEntityTag: {
+            Base: 15,
+            Patterns: [
+                { Color: 3, Pattern: 'gra' },
+                { Color: 15, Pattern: 'tts' },
+                { Color: 15, Pattern: 'bts' },
+                { Color: 3, Pattern: 'mc' }
+            ]
+        },
+        Damage: 0
+    }
 };
 
 const all_shield_designs = [];
 Object.keys(shield_nbt).forEach((shield) => {
-    all_shield_designs.push({ stack: { item: 'minecraft:shield', nbt: shield_nbt[shield] }, weight: 1 });
+    all_shield_designs.push({
+        stack: { item: 'minecraft:shield', nbt: Object.assign(shield_nbt[shield], enchant_glint.blank) },
+        weight: 1
+    });
 });
-
-// { weight: 1, stack: { item: 'minecraft:shield', nbt: shield_nbt.dark_knight } }
 
 /*
 Credits for Shield Designs
@@ -110,28 +429,408 @@ const tipped_arrow_nbt = {
     harming_strong: { Potion: 'minecraft:strong_harming' },
     wither: { Potion: 'apotheosis:wither' },
     wither_long: { Potion: 'apotheosis:long_wither' },
-    wither_strong: { Potion: 'apotheosis:strong_sundering' }
+    wither_strong: { Potion: 'apotheosis:strong_wither' }
 };
 
 const reactive = {
-    poison_bounce: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"Poison Globule",recipe:{part0:"ars_elemental:glyph_curved_projectile",part1:"ars_nouveau:glyph_pierce",part2:"ars_nouveau:glyph_pierce",part3:"ars_nouveau:glyph_linger",part4:"ars_nouveau:glyph_harm",part5:"ars_nouveau:glyph_extend_time",part6:"ars_nouveau:glyph_hex",part7:"ars_elemental:glyph_poison_spores",part8:"ars_nouveau:glyph_extend_time",part9:"ars_nouveau:glyph_amplify",size:10},sound:{pitch:2.55f,soundTag:{id:"ars_nouveau:tempestry_family"},volume:1.0f},spellColor:{b:25,g:255,r:25}}}}`,
-    wind_shear: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"Wind Shear",recipe:{part0:"ars_nouveau:glyph_touch",part1:"ars_nouveau:glyph_launch",part2:"ars_nouveau:glyph_launch",part3:"ars_nouveau:glyph_delay",part4:"ars_nouveau:glyph_extend_time",part5:"ars_nouveau:glyph_wind_shear",size:6},sound:{pitch:1.0f,soundTag:{id:"ars_nouveau:fire_family"},volume:1.0f},spellColor:{b:255,g:255,r:255}}}}`,
-    burning_aura: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"Burning Aura",recipe:{part0:"ars_nouveau:glyph_orbit",part1:"ars_nouveau:glyph_split",part2:"ars_nouveau:glyph_split",part3:"ars_nouveau:glyph_split",part4:"ars_nouveau:glyph_ignite",part5:"ars_nouveau:glyph_flare",part6:"ars_nouveau:glyph_amplify",part7:"ars_nouveau:glyph_amplify",part8:"ars_nouveau:glyph_amplify",part9:"ars_nouveau:glyph_amplify",size:10},sound:{pitch:0.5f,soundTag:{id:"ars_nouveau:fire_family_2"},volume:1.0f},spellColor:{b:1,g:90,r:255}}}}`,
-    freezing_aura: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"Freezing Aura",recipe:{part0:"ars_nouveau:glyph_orbit",part1:"ars_nouveau:glyph_split",part2:"ars_nouveau:glyph_split",part3:"ars_nouveau:glyph_split",part4:"ars_nouveau:glyph_freeze",part5:"ars_nouveau:glyph_cold_snap",part6:"ars_nouveau:glyph_cold_snap",part7:"ars_nouveau:glyph_amplify",part8:"ars_nouveau:glyph_amplify",part9:"ars_nouveau:glyph_amplify",size:10},sound:{pitch:0.5f,soundTag:{id:"ars_nouveau:fire_family_2"},volume:1.0f},spellColor:{b:255,g:25,r:30}}}}`,
-    drown: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"Drown",recipe:{part0:"ars_nouveau:glyph_touch",part1:"ars_elemental:glyph_watery_grave",part2:"ars_elemental:glyph_watery_grave",part3:"ars_nouveau:glyph_extend_time",part4:"ars_nouveau:glyph_amplify",part5:"ars_nouveau:glyph_extend_time",size:6},sound:{pitch:1.0f,soundTag:{id:"ars_nouveau:fire_family"},volume:1.0f},spellColor:{b:255,g:255,r:25}}}}`,
-    restoration: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"",recipe:{part0:"ars_nouveau:glyph_underfoot",part1:"ars_nouveau:glyph_linger",part2:"ars_nouveau:glyph_accelerate",part3:"ars_nouveau:glyph_accelerate",part4:"ars_nouveau:glyph_accelerate",part5:"ars_nouveau:glyph_accelerate",part6:"ars_nouveau:glyph_accelerate",part7:"ars_nouveau:glyph_accelerate",part8:"ars_nouveau:glyph_accelerate",part9:"ars_nouveau:glyph_heal",size:10},sound:{pitch:0.6f,soundTag:{id:"ars_nouveau:gaia_family"},volume:1.0f},spellColor:{b:25,g:255,r:25}}}}`,
-    hex_zone: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"",recipe:{part0:"ars_nouveau:glyph_underfoot",part1:"ars_nouveau:glyph_linger",part2:"ars_nouveau:glyph_hex",part3:"ars_nouveau:glyph_amplify",part4:"ars_nouveau:glyph_amplify",part5:"ars_nouveau:glyph_extend_time",part6:"ars_nouveau:glyph_extend_time",size:7},sound:{pitch:1.0f,soundTag:{id:"ars_nouveau:fire_family"},volume:1.0f},spellColor:{b:255,g:25,r:80}}}}`,
-    poison_touch: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"",recipe:{part0:"ars_nouveau:glyph_touch",part1:"ars_nouveau:glyph_harm",part2:"ars_nouveau:glyph_extend_time",size:3},sound:{pitch:1.0f,soundTag:{id:"ars_nouveau:fire_family"},volume:1.0f},spellColor:{b:25,g:255,r:25}}}}`,
-    come_here: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"",recipe:{part0:"ars_nouveau:glyph_touch",part1:"ars_nouveau:glyph_pull",part2:"ars_nouveau:glyph_amplify",part3:"ars_nouveau:glyph_amplify",part4:"ars_nouveau:glyph_amplify",size:5},sound:{pitch:0.4f,soundTag:{id:"ars_nouveau:tempestry_family"},volume:1.0f},spellColor:{b:255,g:25,r:80}}}}`,
-    life_link: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"",recipe:{part0:"ars_nouveau:glyph_touch",part1:"ars_elemental:glyph_life_link",part2:"ars_nouveau:glyph_extend_time",part3:"ars_nouveau:glyph_extend_time",part4:"ars_nouveau:glyph_extend_time",size:5},sound:{pitch:2.55f,soundTag:{id:"ars_nouveau:tempestry_family"},volume:1.0f},spellColor:{b:255,g:25,r:80}}}}`,
-    vanish: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"",recipe:{part0:"ars_nouveau:glyph_self",part1:"ars_nouveau:glyph_invisibility",part2:"ars_nouveau:glyph_duration_down",part3:"ars_nouveau:glyph_duration_down",part4:"ars_nouveau:glyph_duration_down",size:5},sound:{pitch:0.01f,soundTag:{id:"ars_nouveau:tempestry_family"},volume:1.0f},spellColor:{b:255,g:25,r:80}}}}`,
-    earth_snare: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"",recipe:{part0:"ars_nouveau:glyph_touch",part1:"ars_nouveau:glyph_snare",part2:"ars_nouveau:glyph_crush",size:3},sound:{pitch:1.0f,soundTag:{id:"ars_nouveau:fire_family"},volume:1.0f},spellColor:{b:1,g:74,r:150}}}}`,
-    bounce_lightning: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"",recipe:{part0:"ars_elemental:glyph_curved_projectile",part1:"ars_nouveau:glyph_pierce",part2:"ars_nouveau:glyph_pierce",part3:"ars_nouveau:glyph_lightning",size:4},sound:{pitch:1.67f,soundTag:{id:"ars_nouveau:tempestry_family"},volume:1.0f},spellColor:{b:255,g:255,r:255}}}}`,
-    bounce_freeze: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"",recipe:{part0:"ars_elemental:glyph_curved_projectile",part1:"ars_nouveau:glyph_pierce",part2:"ars_nouveau:glyph_pierce",part3:"ars_nouveau:glyph_linger",part4:"ars_nouveau:glyph_freeze",part5:"ars_nouveau:glyph_cold_snap",size:6},sound:{pitch:0.01f,soundTag:{id:"ars_nouveau:tempestry_family"},volume:1.0f},spellColor:{b:255,g:25,r:30}}}}`,
-    orbit_lightning: `"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"",recipe:{part0:"ars_nouveau:glyph_orbit",part1:"ars_nouveau:glyph_aoe",part2:"ars_nouveau:glyph_aoe",part3:"ars_nouveau:glyph_aoe",part4:"ars_nouveau:glyph_aoe",part5:"ars_nouveau:glyph_aoe",part6:"ars_nouveau:glyph_aoe",part7:"ars_nouveau:glyph_split",part8:"ars_nouveau:glyph_split",part9:"ars_nouveau:glyph_lightning",size:10},sound:{pitch:1.67f,soundTag:{id:"ars_nouveau:tempestry_family"},volume:1.0f},spellColor:{b:255,g:255,r:255}}}}`
+    poison_bounce: {
+        'ars_nouveau:reactive_caster': {
+            current_slot: 0,
+            flavor: '',
+            spell_count: 1,
+            spells: {
+                spell0: {
+                    name: 'Poison Globule',
+                    recipe: {
+                        part0: 'ars_elemental:glyph_curved_projectile',
+                        part1: 'ars_nouveau:glyph_pierce',
+                        part2: 'ars_nouveau:glyph_pierce',
+                        part3: 'ars_nouveau:glyph_linger',
+                        part4: 'ars_nouveau:glyph_harm',
+                        part5: 'ars_nouveau:glyph_extend_time',
+                        part6: 'ars_nouveau:glyph_hex',
+                        part7: 'ars_elemental:glyph_poison_spores',
+                        part8: 'ars_nouveau:glyph_extend_time',
+                        part9: 'ars_nouveau:glyph_amplify',
+                        size: 10
+                    },
+                    sound: { pitch: 2.55, soundTag: { id: 'ars_nouveau:tempestry_family' }, volume: 1.0 },
+                    spellColor: { b: 25, g: 255, r: 25 }
+                }
+            }
+        }
+    },
+    wind_shear: {
+        'ars_nouveau:reactive_caster': {
+            current_slot: 0,
+            flavor: '',
+            spell_count: 1,
+            spells: {
+                spell0: {
+                    name: 'Wind Shear',
+                    recipe: {
+                        part0: 'ars_nouveau:glyph_touch',
+                        part1: 'ars_nouveau:glyph_launch',
+                        part2: 'ars_nouveau:glyph_launch',
+                        part3: 'ars_nouveau:glyph_delay',
+                        part4: 'ars_nouveau:glyph_extend_time',
+                        part5: 'ars_nouveau:glyph_wind_shear',
+                        size: 6
+                    },
+                    sound: { pitch: 1.0, soundTag: { id: 'ars_nouveau:fire_family' }, volume: 1.0 },
+                    spellColor: { b: 255, g: 255, r: 255 }
+                }
+            }
+        }
+    },
+    burning_aura: {
+        'ars_nouveau:reactive_caster': {
+            current_slot: 0,
+            flavor: '',
+            spell_count: 1,
+            spells: {
+                spell0: {
+                    name: 'Burning Aura',
+                    recipe: {
+                        part0: 'ars_nouveau:glyph_orbit',
+                        part1: 'ars_nouveau:glyph_split',
+                        part2: 'ars_nouveau:glyph_split',
+                        part3: 'ars_nouveau:glyph_split',
+                        part4: 'ars_nouveau:glyph_ignite',
+                        part5: 'ars_nouveau:glyph_flare',
+                        part6: 'ars_nouveau:glyph_amplify',
+                        part7: 'ars_nouveau:glyph_amplify',
+                        part8: 'ars_nouveau:glyph_amplify',
+                        part9: 'ars_nouveau:glyph_amplify',
+                        size: 10
+                    },
+                    sound: { pitch: 0.5, soundTag: { id: 'ars_nouveau:fire_family_2' }, volume: 1.0 },
+                    spellColor: { b: 1, g: 90, r: 255 }
+                }
+            }
+        }
+    },
+    freezing_aura: {
+        'ars_nouveau:reactive_caster': {
+            current_slot: 0,
+            flavor: '',
+            spell_count: 1,
+            spells: {
+                spell0: {
+                    name: 'Freezing Aura',
+                    recipe: {
+                        part0: 'ars_nouveau:glyph_orbit',
+                        part1: 'ars_nouveau:glyph_split',
+                        part2: 'ars_nouveau:glyph_split',
+                        part3: 'ars_nouveau:glyph_split',
+                        part4: 'ars_nouveau:glyph_freeze',
+                        part5: 'ars_nouveau:glyph_cold_snap',
+                        part6: 'ars_nouveau:glyph_cold_snap',
+                        part7: 'ars_nouveau:glyph_amplify',
+                        part8: 'ars_nouveau:glyph_amplify',
+                        part9: 'ars_nouveau:glyph_amplify',
+                        size: 10
+                    },
+                    sound: { pitch: 0.5, soundTag: { id: 'ars_nouveau:fire_family_2' }, volume: 1.0 },
+                    spellColor: { b: 255, g: 25, r: 30 }
+                }
+            }
+        }
+    },
+    drown: {
+        'ars_nouveau:reactive_caster': {
+            current_slot: 0,
+            flavor: '',
+            spell_count: 1,
+            spells: {
+                spell0: {
+                    name: 'Drown',
+                    recipe: {
+                        part0: 'ars_nouveau:glyph_touch',
+                        part1: 'ars_elemental:glyph_watery_grave',
+                        part2: 'ars_elemental:glyph_watery_grave',
+                        part3: 'ars_nouveau:glyph_extend_time',
+                        part4: 'ars_nouveau:glyph_amplify',
+                        part5: 'ars_nouveau:glyph_extend_time',
+                        size: 6
+                    },
+                    sound: { pitch: 1.0, soundTag: { id: 'ars_nouveau:fire_family' }, volume: 1.0 },
+                    spellColor: { b: 255, g: 255, r: 25 }
+                }
+            }
+        }
+    },
+    restoration: {
+        'ars_nouveau:reactive_caster': {
+            current_slot: 0,
+            flavor: '',
+            spell_count: 1,
+            spells: {
+                spell0: {
+                    name: '',
+                    recipe: {
+                        part0: 'ars_nouveau:glyph_underfoot',
+                        part1: 'ars_nouveau:glyph_linger',
+                        part2: 'ars_nouveau:glyph_accelerate',
+                        part3: 'ars_nouveau:glyph_accelerate',
+                        part4: 'ars_nouveau:glyph_accelerate',
+                        part5: 'ars_nouveau:glyph_accelerate',
+                        part6: 'ars_nouveau:glyph_accelerate',
+                        part7: 'ars_nouveau:glyph_accelerate',
+                        part8: 'ars_nouveau:glyph_accelerate',
+                        part9: 'ars_nouveau:glyph_heal',
+                        size: 10
+                    },
+                    sound: { pitch: 0.6, soundTag: { id: 'ars_nouveau:gaia_family' }, volume: 1.0 },
+                    spellColor: { b: 25, g: 255, r: 25 }
+                }
+            }
+        }
+    },
+    hex_zone: {
+        'ars_nouveau:reactive_caster': {
+            current_slot: 0,
+            flavor: '',
+            spell_count: 1,
+            spells: {
+                spell0: {
+                    name: '',
+                    recipe: {
+                        part0: 'ars_nouveau:glyph_underfoot',
+                        part1: 'ars_nouveau:glyph_linger',
+                        part2: 'ars_nouveau:glyph_hex',
+                        part3: 'ars_nouveau:glyph_amplify',
+                        part4: 'ars_nouveau:glyph_amplify',
+                        part5: 'ars_nouveau:glyph_extend_time',
+                        part6: 'ars_nouveau:glyph_extend_time',
+                        size: 7
+                    },
+                    sound: { pitch: 1.0, soundTag: { id: 'ars_nouveau:fire_family' }, volume: 1.0 },
+                    spellColor: { b: 255, g: 25, r: 80 }
+                }
+            }
+        }
+    },
+    poison_touch: {
+        'ars_nouveau:reactive_caster': {
+            current_slot: 0,
+            flavor: '',
+            spell_count: 1,
+            spells: {
+                spell0: {
+                    name: '',
+                    recipe: {
+                        part0: 'ars_nouveau:glyph_touch',
+                        part1: 'ars_nouveau:glyph_harm',
+                        part2: 'ars_nouveau:glyph_extend_time',
+                        size: 3
+                    },
+                    sound: { pitch: 1.0, soundTag: { id: 'ars_nouveau:fire_family' }, volume: 1.0 },
+                    spellColor: { b: 25, g: 255, r: 25 }
+                }
+            }
+        }
+    },
+    come_here: {
+        'ars_nouveau:reactive_caster': {
+            current_slot: 0,
+            flavor: '',
+            spell_count: 1,
+            spells: {
+                spell0: {
+                    name: '',
+                    recipe: {
+                        part0: 'ars_nouveau:glyph_touch',
+                        part1: 'ars_nouveau:glyph_pull',
+                        part2: 'ars_nouveau:glyph_amplify',
+                        part3: 'ars_nouveau:glyph_amplify',
+                        part4: 'ars_nouveau:glyph_amplify',
+                        size: 5
+                    },
+                    sound: { pitch: 0.4, soundTag: { id: 'ars_nouveau:tempestry_family' }, volume: 1.0 },
+                    spellColor: { b: 255, g: 25, r: 80 }
+                }
+            }
+        }
+    },
+    life_link: {
+        'ars_nouveau:reactive_caster': {
+            current_slot: 0,
+            flavor: '',
+            spell_count: 1,
+            spells: {
+                spell0: {
+                    name: '',
+                    recipe: {
+                        part0: 'ars_nouveau:glyph_touch',
+                        part1: 'ars_elemental:glyph_life_link',
+                        part2: 'ars_nouveau:glyph_extend_time',
+                        part3: 'ars_nouveau:glyph_extend_time',
+                        part4: 'ars_nouveau:glyph_extend_time',
+                        size: 5
+                    },
+                    sound: { pitch: 2.55, soundTag: { id: 'ars_nouveau:tempestry_family' }, volume: 1.0 },
+                    spellColor: { b: 255, g: 25, r: 80 }
+                }
+            }
+        }
+    },
+    vanish: {
+        'ars_nouveau:reactive_caster': {
+            current_slot: 0,
+            flavor: '',
+            spell_count: 1,
+            spells: {
+                spell0: {
+                    name: '',
+                    recipe: {
+                        part0: 'ars_nouveau:glyph_self',
+                        part1: 'ars_nouveau:glyph_invisibility',
+                        part2: 'ars_nouveau:glyph_duration_down',
+                        part3: 'ars_nouveau:glyph_duration_down',
+                        part4: 'ars_nouveau:glyph_duration_down',
+                        size: 5
+                    },
+                    sound: { pitch: 0.01, soundTag: { id: 'ars_nouveau:tempestry_family' }, volume: 1.0 },
+                    spellColor: { b: 255, g: 25, r: 80 }
+                }
+            }
+        }
+    },
+    earth_snare: {
+        'ars_nouveau:reactive_caster': {
+            current_slot: 0,
+            flavor: '',
+            spell_count: 1,
+            spells: {
+                spell0: {
+                    name: '',
+                    recipe: {
+                        part0: 'ars_nouveau:glyph_touch',
+                        part1: 'ars_nouveau:glyph_snare',
+                        part2: 'ars_nouveau:glyph_crush',
+                        size: 3
+                    },
+                    sound: { pitch: 1.0, soundTag: { id: 'ars_nouveau:fire_family' }, volume: 1.0 },
+                    spellColor: { b: 1, g: 74, r: 150 }
+                }
+            }
+        }
+    },
+    bounce_lightning: {
+        'ars_nouveau:reactive_caster': {
+            current_slot: 0,
+            flavor: '',
+            spell_count: 1,
+            spells: {
+                spell0: {
+                    name: '',
+                    recipe: {
+                        part0: 'ars_elemental:glyph_curved_projectile',
+                        part1: 'ars_nouveau:glyph_pierce',
+                        part2: 'ars_nouveau:glyph_pierce',
+                        part3: 'ars_nouveau:glyph_lightning',
+                        size: 4
+                    },
+                    sound: { pitch: 1.67, soundTag: { id: 'ars_nouveau:tempestry_family' }, volume: 1.0 },
+                    spellColor: { b: 255, g: 255, r: 255 }
+                }
+            }
+        }
+    },
+    bounce_freeze: {
+        'ars_nouveau:reactive_caster': {
+            current_slot: 0,
+            flavor: '',
+            spell_count: 1,
+            spells: {
+                spell0: {
+                    name: '',
+                    recipe: {
+                        part0: 'ars_elemental:glyph_curved_projectile',
+                        part1: 'ars_nouveau:glyph_pierce',
+                        part2: 'ars_nouveau:glyph_pierce',
+                        part3: 'ars_nouveau:glyph_linger',
+                        part4: 'ars_nouveau:glyph_freeze',
+                        part5: 'ars_nouveau:glyph_cold_snap',
+                        size: 6
+                    },
+                    sound: { pitch: 0.01, soundTag: { id: 'ars_nouveau:tempestry_family' }, volume: 1.0 },
+                    spellColor: { b: 255, g: 25, r: 30 }
+                }
+            }
+        }
+    },
+    orbit_lightning: {
+        'ars_nouveau:reactive_caster': {
+            current_slot: 0,
+            flavor: '',
+            spell_count: 1,
+            spells: {
+                spell0: {
+                    name: '',
+                    recipe: {
+                        part0: 'ars_nouveau:glyph_orbit',
+                        part1: 'ars_nouveau:glyph_aoe',
+                        part2: 'ars_nouveau:glyph_aoe',
+                        part3: 'ars_nouveau:glyph_aoe',
+                        part4: 'ars_nouveau:glyph_aoe',
+                        part5: 'ars_nouveau:glyph_aoe',
+                        part6: 'ars_nouveau:glyph_aoe',
+                        part7: 'ars_nouveau:glyph_split',
+                        part8: 'ars_nouveau:glyph_split',
+                        part9: 'ars_nouveau:glyph_lightning',
+                        size: 10
+                    },
+                    sound: { pitch: 1.67, soundTag: { id: 'ars_nouveau:tempestry_family' }, volume: 1.0 },
+                    spellColor: { b: 255, g: 255, r: 255 }
+                }
+            }
+        }
+    }
 };
 
 const enchanters_sword = {
-    hex_blade: `"ars_nouveau:caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"Burn",recipe:{part0:"ars_nouveau:glyph_touch",part1:"ars_nouveau:glyph_hex",part2:"ars_nouveau:glyph_ignite",part3:"ars_nouveau:glyph_flare",part4:"ars_nouveau:glyph_amplify",size:5},sound:{pitch:1.0f,soundTag:{id:"ars_nouveau:fire_family"},volume:1.0f},spellColor:{b:25,g:25,r:255}}}}`,
-    dispel: `"ars_nouveau:caster":{current_slot:0,flavor:"",spell_count:1,spells:{spell0:{name:"Dispel",recipe:{part0:"ars_nouveau:glyph_touch",part1:"ars_nouveau:glyph_dispel",part2:"ars_nouveau:glyph_amplify",size:3},sound:{pitch:1.0f,soundTag:{id:"ars_nouveau:fire_family"},volume:1.0f},spellColor:{b:167,g:25,r:80}}}}`
+    hex_blade: {
+        'ars_nouveau:caster': {
+            current_slot: 0,
+            flavor: '',
+            spell_count: 1,
+            spells: {
+                spell0: {
+                    name: 'Burn',
+                    recipe: {
+                        part0: 'ars_nouveau:glyph_touch',
+                        part1: 'ars_nouveau:glyph_hex',
+                        part2: 'ars_nouveau:glyph_ignite',
+                        part3: 'ars_nouveau:glyph_flare',
+                        part4: 'ars_nouveau:glyph_amplify',
+                        size: 5
+                    },
+                    sound: { pitch: 1.0, soundTag: { id: 'ars_nouveau:fire_family' }, volume: 1.0 },
+                    spellColor: { b: 25, g: 25, r: 255 }
+                }
+            }
+        }
+    },
+    dispel: {
+        'ars_nouveau:caster': {
+            current_slot: 0,
+            flavor: '',
+            spell_count: 1,
+            spells: {
+                spell0: {
+                    name: 'Dispel',
+                    recipe: {
+                        part0: 'ars_nouveau:glyph_touch',
+                        part1: 'ars_nouveau:glyph_dispel',
+                        part2: 'ars_nouveau:glyph_amplify',
+                        size: 3
+                    },
+                    sound: { pitch: 1.0, soundTag: { id: 'ars_nouveau:fire_family' }, volume: 1.0 },
+                    spellColor: { b: 167, g: 25, r: 80 }
+                }
+            }
+        }
+    }
 };

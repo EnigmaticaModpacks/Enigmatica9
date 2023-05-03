@@ -2,7 +2,7 @@ ServerEvents.highPriorityData((event) => {
     const id_prefix = 'apotheosis:boss_gear/miniboss/';
     const recipes = [
         {
-            name: 'skeleton',
+            name: 'skeleton_forsaken_knight',
             weight: 100,
             quality: 2.5,
             mainhands: [
@@ -57,7 +57,7 @@ ServerEvents.highPriorityData((event) => {
                     drop_chance: 0.085
                 }
             ],
-            tags: ['miniboss_skeleton_forsaken_knight']
+            tags: ['miniboss/skeleton_forsaken_knight']
         },
         {
             name: 'skeleton_bow_chainmail',
@@ -72,22 +72,22 @@ ServerEvents.highPriorityData((event) => {
             ],
             offhands: [
                 {
-                    stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.harming },
+                    stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.harming, count: 5 },
                     weight: 25,
                     drop_chance: 1.0
                 },
                 {
-                    stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.blasting },
+                    stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.blasting, count: 5 },
                     weight: 15,
                     drop_chance: 1.0
                 },
                 {
-                    stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.sundering },
+                    stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.sundering, count: 5 },
                     weight: 35,
                     drop_chance: 1.0
                 },
                 {
-                    stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.poison },
+                    stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.poison, count: 5 },
                     weight: 25,
                     drop_chance: 1.0
                 }
@@ -120,7 +120,7 @@ ServerEvents.highPriorityData((event) => {
                     drop_chance: 0.085
                 }
             ],
-            tags: ['miniboss_skeleton_bow']
+            tags: ['miniboss/skeleton_bow']
         },
         {
             name: 'skeleton_bow_leather',
@@ -129,22 +129,22 @@ ServerEvents.highPriorityData((event) => {
             mainhands: [{ stack: { item: 'minecraft:bow', nbt: default_nbt }, weight: 100, drop_chance: 0.085 }],
             offhands: [
                 {
-                    stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.harming },
+                    stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.harming, count: 5 },
                     weight: 25,
                     drop_chance: 1.0
                 },
                 {
-                    stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.blasting },
+                    stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.blasting, count: 5 },
                     weight: 15,
                     drop_chance: 1.0
                 },
                 {
-                    stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.sundering },
+                    stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.sundering, count: 5 },
                     weight: 35,
                     drop_chance: 1.0
                 },
                 {
-                    stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.poison },
+                    stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.poison, count: 5 },
                     weight: 25,
                     drop_chance: 1.0
                 }
@@ -153,7 +153,7 @@ ServerEvents.highPriorityData((event) => {
                 {
                     stack: {
                         item: 'minecraft:leather_helmet',
-                        nbt: leather_armors.black
+                        nbt: leather_colors.black
                     },
                     weight: 100,
                     drop_chance: 0.085
@@ -163,7 +163,7 @@ ServerEvents.highPriorityData((event) => {
                 {
                     stack: {
                         item: 'minecraft:leather_chestplate',
-                        nbt: leather_armors.black
+                        nbt: leather_colors.black
                     },
                     weight: 100,
                     drop_chance: 0.085
@@ -173,7 +173,7 @@ ServerEvents.highPriorityData((event) => {
                 {
                     stack: {
                         item: 'minecraft:leather_leggings',
-                        nbt: leather_armors.black
+                        nbt: leather_colors.black
                     },
                     weight: 100,
                     drop_chance: 0.085
@@ -183,13 +183,13 @@ ServerEvents.highPriorityData((event) => {
                 {
                     stack: {
                         item: 'minecraft:leather_boots',
-                        nbt: leather_armors.black
+                        nbt: leather_colors.black
                     },
                     weight: 100,
                     drop_chance: 0.085
                 }
             ],
-            tags: ['miniboss_skeleton_bow']
+            tags: ['miniboss/skeleton_bow']
         }
     ];
 
