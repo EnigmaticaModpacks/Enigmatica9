@@ -7,6 +7,12 @@ LootJS.modifiers((event) => {
     // itemStack        -> itemStack - Original itemStack that was meant to be dropped
     // replaceWithRaw   -> Boolean - Should it replace the drop with Raw ore, or return unified version of the item?
     // count            -> integer - if replaceWithRaw is True, then specifies the amount of raw ore given for each item.
+    // Exceptions in unification.
+    let exceptions = {
+        "blue_skies:raw_charoite": "blue_skies:charoite",
+        "blue_skies:raw_aquite": "blue_skies:aquite"
+    }
+
     function unifyLoot(tag, suffix, itemStack, prefix, replaceWithRaw, count) {
         prefix = !prefix ? '' : prefix + '_';
         replaceWithRaw = !replaceWithRaw ? false : true;
@@ -14,6 +20,9 @@ LootJS.modifiers((event) => {
         // If itemstack already is from EE and replaceWithRaw is false, just return it.
         if (itemStack.getId().startsWith('emendatusenigmatica:') && !replaceWithRaw) {
             return itemStack;
+        }
+        if (exceptions[itemStack.getId()]) {
+            return Item.of(exceptions[itemStack.getId()], itemStack.getCount())
         }
         tag = (tag.startsWith('#') ? tag.substring(1) : tag) + '/';
         let iterator = itemStack.getTags().iterator();
