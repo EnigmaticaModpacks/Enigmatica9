@@ -14,8 +14,8 @@ ServerEvents.recipes((event) => {
         {
             input: '#forge:ores/netherite',
             output: [
-                { item: "minecraft:netherite_scrap", count: 1, chance: 1 },
-                { item: "minecraft:netherite_scrap", count: 1, chance: 0.75 }
+                { item: 'minecraft:netherite_scrap', count: 1, chance: 1 },
+                { item: 'minecraft:netherite_scrap', count: 1, chance: 0.75 }
             ],
             id: `${id_prefix}netherite_scrap`
         }

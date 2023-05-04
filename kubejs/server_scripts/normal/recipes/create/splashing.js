@@ -28,13 +28,11 @@ ServerEvents.recipes((event) => {
         if (Item.exists(`emendatusenigmatica:${key}_dirty_dust`)) {
             recipes.push({
                 ingredients: [Ingredient.of(`#mekanism:dirty_dusts/${key}`)],
-                results: [
-                    Item.of(`emendatusenigmatica:${key}_dust`, 1).toJson()
-                ],
+                results: [Item.of(`emendatusenigmatica:${key}_dust`, 1).toJson()],
                 id: `${id_prefix}dirty_${key}_dust`
-            })
+            });
         }
-    })
+    });
 
     recipes.forEach((recipe) => {
         recipe.type = 'create:splashing';

@@ -14,11 +14,11 @@ ServerEvents.recipes((event) => {
         },
         {
             input: '#forge:ores/netherite',
-            output: "2x mekanism:dirty_netherite_scrap",
+            output: '2x mekanism:dirty_netherite_scrap',
             secondaries: [
                 {
                     chance: 0.33,
-                    output: Item.of("mekanism:dirty_netherite_scrap").toJson()
+                    output: Item.of('mekanism:dirty_netherite_scrap').toJson()
                 }
             ],
             energy: 10000,
