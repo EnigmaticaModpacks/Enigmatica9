@@ -8,30 +8,24 @@ enchantment_levels: [50, 30, 120, 40],
 
 */
 ServerEvents.highPriorityData((event) => {
-    const id_prefix = 'apotheosis:minibosses/hexerei/';
+    const id_prefix = 'apotheosis:minibosses/ars_nouveau/';
     const recipes = [
         {
-            id: 'crow',
+            id: 'ally_vex',
             name: null,
-            chance: 1.0,
-            weight: 85,
+            chance: 0.5,
+            weight: 100,
             quality: 0,
-            entities: ['hexerei:crow'],
-            valid_gear_sets: ['#miniboss/empty'],
+            entities: ['ars_nouveau:ally_vex'],
+            valid_gear_sets: ['#miniboss/vex'],
             dimensions: [],
             affixed: false,
             nbt: {},
             stats: {
-                enchant_chance: 0.0,
-                enchantment_levels: [12, 8, 20, 14],
+                enchant_chance: 0.5,
+                enchantment_levels: [10, 20, 10, 20],
                 effects: [],
-                attribute_modifiers: [
-                    {
-                        attribute: 'minecraft:generic.max_health',
-                        operation: 'ADDITION',
-                        value: { min: 20, steps: 1, step: 0 }
-                    }
-                ]
+                attribute_modifiers: []
             }
         }
     ];

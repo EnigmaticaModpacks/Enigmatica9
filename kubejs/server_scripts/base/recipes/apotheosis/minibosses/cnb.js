@@ -31,6 +31,7 @@ ServerEvents.highPriorityData((event) => {
     ];
 
     recipes.forEach((recipe) => {
+        recipe.exclusions = [{ type: 'apotheosis:nbt', nbt: { Corrupted: true } }];
         event.addJson(`${id_prefix}${recipe.id}.json`, recipe);
     });
 });
