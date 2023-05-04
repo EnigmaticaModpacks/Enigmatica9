@@ -587,7 +587,7 @@ const gem_properties = {
             output: {
                 type: 'gem',
                 substrate: 'minecraft:gravel',
-                secondary: 'emendatusenigmatica:diopside_gem'
+                secondary: 'blue_skies:diopside_gem'
             },
             create: {
                 primaryCount: 6,
@@ -629,7 +629,7 @@ const gem_properties = {
             output: {
                 type: 'gem',
                 substrate: 'minecraft:gravel',
-                secondary: 'emendatusenigmatica:pyrope_gem'
+                secondary: 'blue_skies:pyrope_gem'
             },
             create: {
                 primaryCount: 6,
@@ -671,7 +671,7 @@ const gem_properties = {
             output: {
                 type: 'gem',
                 substrate: 'minecraft:gravel',
-                secondary: 'emendatusenigmatica:charoite_gem'
+                secondary: 'blue_skies:charoite'
             },
             create: {
                 primaryCount: 6,
@@ -713,7 +713,7 @@ const gem_properties = {
             output: {
                 type: 'gem',
                 substrate: 'minecraft:gravel',
-                secondary: 'emendatusenigmatica:aquite_gem'
+                secondary: 'blue_skies:aquite'
             },
             create: {
                 primaryCount: 6,
