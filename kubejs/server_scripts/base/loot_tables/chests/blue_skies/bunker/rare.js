@@ -7,7 +7,7 @@ ServerEvents.chestLootTables((event) => {
             pool.addItem('emendatusenigmatica:raw_gold', 3, [1, 3]);
             pool.addItem('emendatusenigmatica:raw_copper', 3, [1, 3]);
             pool.addItem('emendatusenigmatica:raw_silver', 1, [1, 3]);
-            pool.addItem('emendatusenigmatica:aquite_gem', 1, [3, 6]);
+            pool.addItem('blue_skies:aquite', 1, [3, 6]);
         });
 
         table.addPool((pool) => {

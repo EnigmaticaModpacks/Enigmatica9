@@ -79,7 +79,7 @@ ServerEvents.recipes((event) => {
                 id_suffix: `clump_${metal}_from_crushed_ore`
             },
             {
-                output: `emendatusenigmatica:${metal}_ingot`,
+                output: metal == "gold" ? 'minecraft:gold_ingot': `emendatusenigmatica:${metal}_ingot`,
                 input: `emendatusenigmatica:${metal}_dirty_dust`,
                 slag: 'thermal:slag',
                 xp: 0.5,

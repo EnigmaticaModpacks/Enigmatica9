@@ -46,6 +46,8 @@ ServerEvents.recipes((event) => {
 
     const metals = Object.keys(metal_properties);
 
+    // Note to Motoko
+    // Due to issues with AU and hard-coded content, vanilla ingots are now from Minecraft! This script requires a bit of a rework to add support for minecraft namespace -- Kanz
     metals.forEach((metal) => {
         if (metal_properties[metal].crushing_tier && Item.exists(`emendatusenigmatica:${metal}_dust`)) {
             let input_types = [];

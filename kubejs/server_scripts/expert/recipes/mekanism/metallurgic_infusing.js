@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/mekanism/metallurgic_infusing/';
     const recipes = [
         {
-            output: 'emendatusenigmatica:iron_ingot',
+            output: 'minecraft:iron_ingot',
             itemInput: { ingredient: { tag: 'forge:ingots/crude_iron' } },
             chemicalInput: { infuse_type: 'emendatusenigmatica:air_essence', amount: 20 },
             id: `${id_prefix}iron_ingot`
