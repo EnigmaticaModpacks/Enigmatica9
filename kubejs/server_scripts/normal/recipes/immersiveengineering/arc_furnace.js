@@ -16,8 +16,6 @@ ServerEvents.recipes((event) => {
             output: Item.of(AlmostUnified.getPreferredItemForTag('forge:ingots/enderium'), 2),
             secondaries: [],
             slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
-            secondaries: [],
-            slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
             energy: 51200,
             time: 120,
             id: `${id_prefix}enderium_ingot`
@@ -67,6 +65,26 @@ ServerEvents.recipes((event) => {
             energy: 25600,
             time: 60,
             id: `${id_prefix}andesite_alloy_from_iron`
+        },
+        {
+            input: { item: 'mekanism:dirty_netherite_scrap', count: 1 },
+            additives: [],
+            output: Item.of('minecraft:netherite_scrap', 1),
+            secondaries: [],
+            slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
+            energy: 25600,
+            time: 60,
+            id: `${id_prefix}netherite_scrap_from_dirty`
+        },
+        {
+            input: { item: '#forge:ores/netherite', count: 1 },
+            additives: [],
+            output: Item.of('minecraft:netherite_scrap', 3),
+            secondaries: [],
+            slag: Item.of(AlmostUnified.getPreferredItemForTag('forge:slag')).toJson(),
+            energy: 25600,
+            time: 180,
+            id: `immersiveengineering:arcfurnace/netherite_scrap`
         }
     ];
 

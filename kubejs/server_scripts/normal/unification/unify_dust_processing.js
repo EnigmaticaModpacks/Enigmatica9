@@ -4,11 +4,56 @@ ServerEvents.recipes((event) => {
     }
     let metals = Object.keys(metal_properties);
     let gems = Object.keys(gem_properties);
+    let nonEECompat = [
+        {
+            dust: 'ae2:certus_quartz_dust',
+            name: 'certus_quartz',
+            type: 'gems'
+        },
+        {
+            dust: 'ae2:fluix_dust',
+            name: 'fluix',
+            type: 'gems'
+        },
+        {
+            dust: 'ae2:sky_dust',
+            name: 'sky_stone',
+            type: 'stone'
+        },
+        {
+            dust: 'create:powdered_obsidian',
+            name: 'obsidian',
+            type: 'stone',
+            tag: '#forge:obsidian'
+        },
+        {
+            dust: 'create:cinder_flour',
+            name: 'netherrack',
+            type: 'stone',
+            tag: '#forge:netherrack'
+        }
+    ];
     let exceptions = {
+        // Stones
+        sky_stone: {
+            mekanism: true,
+            create: true
+        },
+        obsidian: {
+            mekanism: true,
+            create: true
+        },
+        netherrack: {
+            thermal: true,
+            create: true
+        },
         // Gems
         coal: {
             mekanism: true,
             immersiveengineering: true
+        },
+        charcoal: {
+            mekanism: true
         },
         diamond: {
             mekanism: true
@@ -24,6 +69,14 @@ ServerEvents.recipes((event) => {
         },
         quartz: {
             mekanism: true
+        },
+        certus_quartz: {
+            mekansim: true,
+            create: true
+        },
+        fluix: {
+            mekanism: true,
+            create: true
         },
         // Metals
         zinc: {
@@ -96,25 +149,52 @@ ServerEvents.recipes((event) => {
 
     metals.forEach((metal) => {
         if (Item.exists(`emendatusenigmatica:${metal}_dust`)) {
-            recipetypes_crushing(event, { name: metal, type: 'metal' }, exceptions);
+            if (!exceptions[metal]) {
+                exceptions[metal] = {
+                    occultism: true,
+                    thermal: true
+                };
+            } else {
+                exceptions[metal].occultism = true;
+                exceptions[metal].thermal = true;
+            }
+
+            recipetypes_crushing(event, { name: metal, type: 'ingots' }, exceptions);
         }
     });
 
     gems.forEach((gem) => {
         if (Item.exists(`emendatusenigmatica:${gem}_dust`)) {
-            recipetypes_crushing(event, { name: gem, type: 'gem' }, exceptions);
+            if (!exceptions[gem]) {
+                exceptions[gem] = { thermal: true };
+            } else {
+                exceptions[gem].thermal = true;
+            }
+            recipetypes_crushing(event, { name: gem, type: 'gems' }, exceptions);
         }
+    });
+
+    nonEECompat.forEach((material) => {
+        recipetypes_crushing(
+            event,
+            { name: material.name, type: material.type },
+            exceptions,
+            material.dust,
+            material.tag
+        );
     });
 });
 
 // Functions
-function recipetypes_crushing(event, material, exceptions) {
-    const id_prefix = 'enigmatica:unification/dust_processing/';
+function recipetypes_crushing(event, material, exceptions, item, tag) {
+    const id_prefix = 'enigmatica:normal/unification/dust_processing/';
     let recipe = {
-        outputs: { primary: { item: `emendatusenigmatica:${material.name}_dust`, count: 1, chance: 1 } },
+        outputs: {
+            primary: { item: item == null ? `emendatusenigmatica:${material.name}_dust` : item, count: 1, chance: 1 }
+        },
         input: '',
         experience: 0.25,
-        duration: 20,
+        duration: 80,
         energy: 1000,
         ignore_occultism_multiplier: true,
         id_suffix: '',
@@ -123,16 +203,11 @@ function recipetypes_crushing(event, material, exceptions) {
 
     if (!recipe.exceptions) recipe.exceptions = {};
 
-    if (material.type == 'gem') {
-        recipe.input = `#forge:gems/${material.name}`;
-        recipe.id_suffix = `gems/${material.name}_dust`;
-    } else if (material.type == 'metal') {
-        recipe.input = `#forge:ingots/${material.name}`;
-        recipe.id_suffix = `metals/${material.name}_dust`;
-    }
+    recipe.input = tag == null ? `#forge:${material.type}/${material.name}` : tag;
+    recipe.id_suffix = `${material.type}/${material.name}_dust`;
 
     // Occultism
-    if (!recipe.exceptions.occultism && !material.type == 'metal') {
+    if (!recipe.exceptions.occultism) {
         event
             .custom({
                 type: 'occultism:crushing',
@@ -185,5 +260,22 @@ function recipetypes_crushing(event, material, exceptions) {
                 processingTime: 50
             })
             .id(`${id_prefix}create_milling/${recipe.id_suffix}`);
+    }
+
+    // Thermal
+    if (!recipe.exceptions.thermal) {
+        event
+            .custom({
+                type: 'thermal:pulverizer',
+                ingredient: Ingredient.of(recipe.input).toJson(),
+                results: [
+                    {
+                        item: recipe.outputs.primary.item,
+                        count: recipe.outputs.primary.count
+                    }
+                ],
+                experience: recipe.experience
+            })
+            .id(`${id_prefix}thermal_pulverizer/${recipe.id_suffix}`);
     }
 }

@@ -34,6 +34,12 @@ ServerEvents.recipes((event) => {
             outputs: [{ item: 'emendatusenigmatica:dimensional_dust', count: 1 }],
             energy: 4000,
             id: `${id_prefix}dimensional_dust`
+        },
+        {
+            input: '#forge:ores/netherite',
+            outputs: [{ item: 'mekanism:dirty_netherite_scrap', count: 1, chance: 1 }],
+            energy: 4000,
+            id: `${id_prefix}netherite_scrap`
         }
     ];
 
