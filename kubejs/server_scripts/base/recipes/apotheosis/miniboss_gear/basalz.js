@@ -2,7 +2,7 @@ ServerEvents.highPriorityData((event) => {
     const id_prefix = 'apotheosis:boss_gear/miniboss/';
     const recipes = [
         {
-            name: 'blitz',
+            name: 'blizz',
             weight: 100,
             quality: 2.5,
             mainhands: [],
@@ -11,8 +11,8 @@ ServerEvents.highPriorityData((event) => {
             chestplates: [
                 {
                     stack: {
-                        item: 'minecraft:chainmail_chestplate',
-                        nbt: Object.assign(reactive.orbit_lightning, enchant_glint.blank, enchantments.reactive_3)
+                        item: 'pneumaticcraft:compressed_iron_chestplate',
+                        nbt: Object.assign(reactive.earth_snare, enchant_glint.blank, enchantments.reactive_1)
                     },
                     weight: 100,
                     drop_chance: 0.0
@@ -20,7 +20,7 @@ ServerEvents.highPriorityData((event) => {
             ],
             leggings: [],
             boots: [],
-            tags: ['miniboss/blitz']
+            tags: ['miniboss/blizz']
         }
     ];
 
