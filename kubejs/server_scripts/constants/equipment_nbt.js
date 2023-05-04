@@ -2,77 +2,53 @@
 // Used for Apotheosis and Armored Mobs scripts
 
 const enchant_glint = {
-    blank: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:blank_rune' } },
-    white: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:white_rune' } },
-    orange: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:orange_rune' } },
-    magenta: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:magenta_rune' } },
-    light_blue: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:light_blue_rune' } },
-    yellow: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:yellow_rune' } },
-    lime: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:lime_rune' } },
-    pink: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:pink_rune' } },
-    gray: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:gray_rune' } },
-    light_gray: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:light_gray_rune' } },
-    cyan: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:cyan_rune' } },
-    purple: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:purple_rune' } },
-    blue: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:blue_rune' } },
-    green: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:green_rune' } },
-    red: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:red_rune' } },
-    black: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:black_rune' } },
-    rainbow: { 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:rainbow_rune' } }
+    blank: { Damage: 0, 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:blank_rune' } },
+    white: { Damage: 0, 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:white_rune' } },
+    orange: { Damage: 0, 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:orange_rune' } },
+    magenta: { Damage: 0, 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:magenta_rune' } },
+    light_blue: { Damage: 0, 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:light_blue_rune' } },
+    yellow: { Damage: 0, 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:yellow_rune' } },
+    lime: { Damage: 0, 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:lime_rune' } },
+    pink: { Damage: 0, 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:pink_rune' } },
+    gray: { Damage: 0, 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:gray_rune' } },
+    light_gray: { Damage: 0, 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:light_gray_rune' } },
+    cyan: { Damage: 0, 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:cyan_rune' } },
+    purple: { Damage: 0, 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:purple_rune' } },
+    blue: { Damage: 0, 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:blue_rune' } },
+    green: { Damage: 0, 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:green_rune' } },
+    red: { Damage: 0, 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:red_rune' } },
+    black: { Damage: 0, 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:black_rune' } },
+    rainbow: { Damage: 0, 'quark:RuneAttached': 1, 'quark:RuneColor': { Count: 1, id: 'quark:rainbow_rune' } }
 };
 
-const default_nbt = Object.assign({ Damage: 0 }, enchant_glint.blank);
+const default_nbt = enchant_glint.blank;
 
 const leather_colors = {
     black: Object.assign({ display: { color: 1908001 } }, default_nbt),
     sea_green: Object.assign({ display: { color: 4357207 } }, default_nbt),
-    void_purple: Object.assign({ display: { color: 2624321 } }, default_nbt)
+    void_purple: Object.assign({ display: { color: 2624321 } }, default_nbt),
+    sapper_red: Object.assign({ display: { color: 10826026 } }, default_nbt),
+    sapper_brown: Object.assign({ display: { color: 6968645 } }, default_nbt),
+    sapper_green: Object.assign({ display: { color: 5465909 } }, default_nbt)
 };
 
-const enchantments = {
-    knockback_1: {
-        Enchantments: [{ id: 'minecraft:knockback', lvl: 1 }]
-    },
-    knockback_2: {
-        Enchantments: [{ id: 'minecraft:knockback', lvl: 2 }]
-    },
-    knockback_3: {
-        Enchantments: [{ id: 'minecraft:knockback', lvl: 3 }]
-    },
-    reactive_1: {
-        Enchantments: [{ id: 'ars_nouveau:reactive', lvl: 1 }]
-    },
-    reactive_2: {
-        Enchantments: [{ id: 'ars_nouveau:reactive', lvl: 2 }]
-    },
-    reactive_3: {
-        Enchantments: [{ id: 'ars_nouveau:reactive', lvl: 3 }]
-    },
-    reactive_4: {
-        Enchantments: [{ id: 'ars_nouveau:reactive', lvl: 4 }]
-    },
-    multishot: {
-        Enchantments: [{ id: 'minecraft:multishot', lvl: 1 }]
-    },
-    sharpness_1: {
-        Enchantments: [{ id: 'minecraft:sharpness', lvl: 1 }]
-    },
-    sharpness_2: {
-        Enchantments: [{ id: 'minecraft:sharpness', lvl: 2 }]
-    },
-    sharpness_3: {
-        Enchantments: [{ id: 'minecraft:sharpness', lvl: 3 }]
-    },
-    punch_1: {
-        Enchantments: [{ id: 'minecraft:punch', lvl: 1 }]
-    },
-    punch_2: {
-        Enchantments: [{ id: 'minecraft:punch', lvl: 2 }]
-    },
-    punch_3: {
-        Enchantments: [{ id: 'minecraft:punch', lvl: 3 }]
+const enchantments = {};
+
+let enchant_ranges = [
+    { id: 'twilightforest:chill_aura', max: 5 },
+    { id: 'minecraft:punch', max: 5 },
+    { id: 'minecraft:sharpness', max: 3 },
+    { id: 'minecraft:multishot', max: 1 },
+    { id: 'ars_nouveau:reactive', max: 4 },
+    { id: 'minecraft:knockback', max: 3 }
+];
+
+enchant_ranges.forEach((enchant) => {
+    for (let i = 1; i <= enchant.max; i++) {
+        let key = `${enchant.id.split(':')[1]}_${i}`;
+        enchantments[key] = { Enchantments: [{ id: enchant.id, lvl: i }] };
     }
-};
+});
 
 const shield_nbt = {
     tree: {

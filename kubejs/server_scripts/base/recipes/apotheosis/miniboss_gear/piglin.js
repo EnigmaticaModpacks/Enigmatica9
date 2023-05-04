@@ -9,7 +9,7 @@ ServerEvents.highPriorityData((event) => {
                 {
                     stack: {
                         item: 'minecraft:crossbow',
-                        nbt: Object.assign(enchantments.multishot, enchant_glint.blank)
+                        nbt: Object.assign(enchantments.multishot_1, enchant_glint.blank)
                     },
                     weight: 50,
                     drop_chance: 0.085
