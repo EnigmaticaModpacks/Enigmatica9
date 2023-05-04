@@ -4,8 +4,7 @@
     "localizedName": "Pyrope",
     "processedTypes": [
         "ore",
-        "storage_block",
-        "gem"
+        "storage_block"
     ],
     "properties": {
         "materialType": "gem",
