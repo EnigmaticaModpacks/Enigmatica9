@@ -167,7 +167,7 @@ ServerEvents.recipes((event) => {
             inputs: ['naturesaura:birth_spirit', '#forge:wool', 'minecraft:wheat'],
             aura: aura_cost.medium,
             time: 40,
-            id: `${id_prefix}sheep`
+            id: 'naturesaura:sheep_white'
         },
         {
             entity: 'twilightforest:bighorn_sheep',

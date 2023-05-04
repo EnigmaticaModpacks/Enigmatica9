@@ -1,3 +1,22 @@
+### Enigmatica 9 v1.6.1
+
+### 🎁 New Mods Added
+
+### 🌟 Improvements
+
+-   Expand loot in Twilight Forest, Blue Skies, and other dungeons.
+-   Make Fell a Tier 1 glyph and simplify the recipe.
+-   Update Death Tome loot to include new Tier 1 glyphs.
+-   Aloe Vera may now be used to craft Fire Resistance potions.
+
+### 🐛 Fixed Bugs
+
+-   Fix broken Book of Natural Aura [\#322](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/322) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix Infused Pick right click actions for Sulfur, Dimensional, and Fluorite [\#322](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/322) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Disable PVI for vanilla mobs as there appear to be some random crashes related that are hard to track down. [\#322](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/322) ([MuteTiefling](https://github.com/MuteTiefling))
+
+---
+
 ### Enigmatica 9 v1.6.0
 
 🚀 Forge-1.19.2-43.2.8 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.6.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.6.0.md)

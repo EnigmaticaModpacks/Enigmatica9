@@ -6,7 +6,7 @@
 	#Range: 0 ~ 1000000
 	maxRadius = 5000
 	#A list of structures that the compass will not display in the GUI and will not be able to search for. Wildcard character * can be used to match any number of characters, and ? can be used to match one character. Ex: ["minecraft:stronghold", "minecraft:endcity", "minecraft:*village*"]
-	structureBlacklist = ["ae2*", "ars*", "byg*", "cloudstorage*", "ctov*", "dungeons_arise*", "hexerei*", "minecraft*", "repurposed_structures*", "the_bumblezone*", "twilightforest*", "supplementaries*", "blue_skies:village*", "blue_skies:gatekeeper*", "better*"]
+	structureBlacklist = ["ae2*", "ars*", "byg*", "cloudstorage*", "ctov*", "dungeons_arise*", "hexerei*", "minecraft*", "repurposed_structures*", "the_bumblezone*", "twilightforest*", "supplementaries*", "blue_skies:village*", "blue_skies:gatekeeper*", "better*", "idas*"]
 	#Allows a player to teleport to a located structure when in creative mode, opped, or in cheat mode.
 	allowTeleport = false
 	#The maximum number of samples to be taken when searching for a structure.

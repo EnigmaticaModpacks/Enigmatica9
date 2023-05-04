@@ -78,7 +78,6 @@ ServerEvents.recipes((event) => {
         { id: 'minecraft:bone_meal' },
         { id: 'minecraft:glass' },
 
-        { id: /naturesaura:animal_spawner\/sheep_/ },
         { id: 'naturesaura:infused_iron' },
         { id: 'naturesaura:sky_ingot' },
         { id: 'naturesaura:tainted_gold' },
