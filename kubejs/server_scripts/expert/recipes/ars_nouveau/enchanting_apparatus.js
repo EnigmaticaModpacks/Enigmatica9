@@ -261,7 +261,6 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:compressed_iron_helmet',
                 'minecraft:diamond_helmet',
                 'naturesaura:sky_helmet',
-                'blue_skies:charoite_helmet',
                 'twilightforest:knightmetal_helmet',
                 'twilightforest:steeleaf_helmet'
             ],
@@ -285,7 +284,6 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:compressed_iron_chestplate',
                 'minecraft:diamond_chestplate',
                 'naturesaura:sky_chest',
-                'blue_skies:charoite_chestplate',
                 'twilightforest:knightmetal_chestplate',
                 'twilightforest:steeleaf_chestplate'
             ],
@@ -309,7 +307,6 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:compressed_iron_leggings',
                 'minecraft:diamond_leggings',
                 'naturesaura:sky_pants',
-                'blue_skies:charoite_leggings',
                 'twilightforest:knightmetal_leggings',
                 'twilightforest:steeleaf_leggings'
             ],
@@ -581,11 +578,7 @@ ServerEvents.recipes((event) => {
     ];
 
     const gem_types = [
-        { mod: 'minecraft', material: 'diamond', essence: 'abjuration' },
-        { mod: 'blue_skies', material: 'pyrope', essence: 'fire' },
-        { mod: 'blue_skies', material: 'aquite', essence: 'water' },
-        { mod: 'blue_skies', material: 'diopside', essence: 'earth' },
-        { mod: 'blue_skies', material: 'charoite', essence: 'air' }
+        { mod: 'minecraft', material: 'diamond', essence: 'abjuration' }
     ];
 
     const equipment_types = [

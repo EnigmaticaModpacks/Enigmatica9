@@ -49,9 +49,6 @@ ServerEvents.recipes((event) => {
         { id: 'ae2:transform/fluix_crystals' },
         { id: 'ae2:misc/fluixpearl' },
 
-        { id: /blue_skies:.*_(helmet|chestplate|leggings|boots)/ },
-        { id: /blue_skies:.*_(sword|pickaxe|axe|shovel|hoe)/ },
-
         { id: 'constructionwand:stone_wand' },
         { id: 'constructionwand:iron_wand' },
 

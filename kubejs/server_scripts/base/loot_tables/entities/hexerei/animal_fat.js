@@ -1,12 +1,5 @@
 ServerEvents.entityLootTables((event) => {
     const entity_types = [
-        'blue_skies:azulfo',
-        'blue_skies:crogre',
-        'blue_skies:crystal_camel',
-        'blue_skies:diophyde_prowler',
-        'blue_skies:reindeer',
-        'blue_skies:shade_monitor',
-        'blue_skies:stardust_ram',
         'minecraft:cow',
         'minecraft:donkey',
         'minecraft:goat',

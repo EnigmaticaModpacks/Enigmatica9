@@ -13,7 +13,7 @@ WorldgenEvents.add((event) => {
         {
             category: 'creature',
             entity: 'ars_nouveau:drygmy',
-            biomes: ['#twilightforest:in_twilight_forest', '#blue_skies:everbright', '#blue_skies:everdawn'],
+            biomes: ['#twilightforest:in_twilight_forest'],
             minCount: 1,
             maxCount: 2,
             weight: 10
@@ -21,7 +21,7 @@ WorldgenEvents.add((event) => {
         {
             category: 'creature',
             entity: 'ars_nouveau:starbuncle',
-            biomes: ['#twilightforest:in_twilight_forest', '#blue_skies:everbright', '#blue_skies:everdawn'],
+            biomes: ['#twilightforest:in_twilight_forest'],
             minCount: 1,
             maxCount: 2,
             weight: 10
@@ -29,7 +29,7 @@ WorldgenEvents.add((event) => {
         {
             category: 'creature',
             entity: 'ars_nouveau:whirlisprig',
-            biomes: ['#twilightforest:in_twilight_forest', '#blue_skies:everbright', '#blue_skies:everdawn'],
+            biomes: ['#twilightforest:in_twilight_forest'],
             minCount: 1,
             maxCount: 2,
             weight: 10
@@ -37,7 +37,7 @@ WorldgenEvents.add((event) => {
         {
             category: 'creature',
             entity: 'bookwyrms:book_wyrm',
-            biomes: ['#twilightforest:in_twilight_forest', '#blue_skies:everbright', '#blue_skies:everdawn'],
+            biomes: ['#twilightforest:in_twilight_forest'],
             minCount: 1,
             maxCount: 2,
             weight: 10

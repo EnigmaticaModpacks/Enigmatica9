@@ -132,33 +132,6 @@ const metal_properties = {
             create: { processingTime: 500 }
         }
     },
-    horizonite: {
-        crushing_tier: 3,
-        // meltingPoint: 0,
-        oreProcessing: {
-            output: { substrate: 'minecraft:gravel', secondary: 'ventium' },
-            expert_output: { secondary: 'copper' },
-            create: { processingTime: 450 }
-        }
-    },
-    ventium: {
-        crushing_tier: 3,
-        // meltingPoint: 0,
-        oreProcessing: {
-            output: { substrate: 'minecraft:gravel', secondary: 'falsite' },
-            expert_output: { secondary: 'nickel' },
-            create: { processingTime: 450 }
-        }
-    },
-    falsite: {
-        crushing_tier: 3,
-        // meltingPoint: 0,
-        oreProcessing: {
-            output: { substrate: 'minecraft:gravel', secondary: 'horizonite' },
-            expert_output: { secondary: 'lead' },
-            create: { processingTime: 450 }
-        }
-    },
     enderium: {
         meltingPoint: 1450,
         crushing_tier: 4
