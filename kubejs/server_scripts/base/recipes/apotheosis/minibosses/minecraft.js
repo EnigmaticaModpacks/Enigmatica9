@@ -377,6 +377,54 @@ ServerEvents.highPriorityData((event) => {
                     }
                 ]
             }
+        },
+        {
+            id: 'drowned',
+            name: null,
+            chance: 1.0,
+            weight: 100,
+            quality: 0,
+            entities: ['minecraft:drowned'],
+            valid_gear_sets: ['#miniboss/drowned'],
+            dimensions: [],
+            affixed: false,
+            nbt: {},
+            stats: {
+                enchant_chance: 1.0,
+                enchantment_levels: [15, 15, 15, 15],
+                effects: [{ effect: 'minecraft:resistance', amplifier: 0, chance: 1.0 }],
+                attribute_modifiers: [
+                    {
+                        attribute: 'minecraft:generic.max_health',
+                        operation: 'ADDITION',
+                        value: { min: 40, steps: 1, step: 0 }
+                    }
+                ]
+            }
+        },
+        {
+            id: 'enderman',
+            name: null,
+            chance: 1.0,
+            weight: 100,
+            quality: 0,
+            entities: ['minecraft:enderman'],
+            valid_gear_sets: ['#miniboss/enderman'],
+            dimensions: [],
+            affixed: false,
+            nbt: {},
+            stats: {
+                enchant_chance: 1.0,
+                enchantment_levels: [15, 15, 15, 15],
+                effects: [{ effect: 'minecraft:resistance', amplifier: 0, chance: 1.0 }],
+                attribute_modifiers: [
+                    {
+                        attribute: 'minecraft:generic.max_health',
+                        operation: 'ADDITION',
+                        value: { min: 60, steps: 1, step: 0 }
+                    }
+                ]
+            }
         }
     ];
 

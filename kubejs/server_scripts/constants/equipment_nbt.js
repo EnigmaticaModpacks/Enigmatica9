@@ -23,7 +23,11 @@ const enchant_glint = {
 
 const default_nbt = Object.assign({ Damage: 0 }, enchant_glint.blank);
 
-const leather_colors = { black: Object.assign({ display: { color: 1908001 } }, default_nbt) };
+const leather_colors = {
+    black: Object.assign({ display: { color: 1908001 } }, default_nbt),
+    sea_green: Object.assign({ display: { color: 4357207 } }, default_nbt),
+    void_purple: Object.assign({ display: { color: 2624321 } }, default_nbt)
+};
 
 const enchantments = {
     knockback_1: {
