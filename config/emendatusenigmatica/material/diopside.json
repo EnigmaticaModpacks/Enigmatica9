@@ -10,5 +10,10 @@
         "materialType": "gem",
         "harvestLevel": 2,
         "blockRecipeType": 9
+    },
+    "oreDrop": {
+      "drop": "blue_skies:diopside_gem",
+      "min": 1,
+      "max": 1
     }
 }

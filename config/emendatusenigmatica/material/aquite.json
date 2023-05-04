@@ -12,7 +12,7 @@
       "blockRecipeType": 9
     },
     "oreDrop": {
-      "drop": "emendatusenigmatica:aquite_gem",
+      "drop": "blue_skies:aquite",
       "min": 1,
       "max": 1
     }
