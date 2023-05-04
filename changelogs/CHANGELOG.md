@@ -14,7 +14,7 @@
 -   Fix broken Book of Natural Aura [\#322](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/322) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix Infused Pick right click actions for Sulfur, Dimensional, and Fluorite [\#322](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/322) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Disable PVI for vanilla mobs as there appear to be some random crashes related that are hard to track down. [\#322](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/322) ([MuteTiefling](https://github.com/MuteTiefling))
--   Fix missing Treated Stick recipe [\#332](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/332) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix missing Treated Stick recipe [\#339](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/339) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
