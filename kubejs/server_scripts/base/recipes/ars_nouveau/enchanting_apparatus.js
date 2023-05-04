@@ -12,7 +12,6 @@ ServerEvents.recipes((event) => {
             reagents: [
                 'minecraft:diamond_helmet',
                 'naturesaura:sky_helmet',
-                'blue_skies:charoite_helmet',
                 'twilightforest:knightmetal_helmet',
                 'twilightforest:steeleaf_helmet'
             ],
@@ -31,8 +30,6 @@ ServerEvents.recipes((event) => {
             reagents: [
                 'minecraft:diamond_chestplate',
                 'naturesaura:sky_chest',
-                'blue_skies:charoite_chestplate',
-                'twilightforest:knightmetal_chestplate',
                 'twilightforest:steeleaf_chestplate'
             ],
             keepNbtOfReagent: true,
@@ -50,7 +47,6 @@ ServerEvents.recipes((event) => {
             reagents: [
                 'minecraft:diamond_leggings',
                 'naturesaura:sky_pants',
-                'blue_skies:charoite_leggings',
                 'twilightforest:knightmetal_leggings',
                 'twilightforest:steeleaf_leggings'
             ],
@@ -69,7 +65,6 @@ ServerEvents.recipes((event) => {
             reagents: [
                 'minecraft:diamond_boots',
                 'naturesaura:sky_shoes',
-                'blue_skies:charoite_boots',
                 'twilightforest:knightmetal_boots',
                 'twilightforest:steeleaf_boots'
             ],
@@ -88,7 +83,6 @@ ServerEvents.recipes((event) => {
             reagents: [
                 'minecraft:iron_helmet',
                 'naturesaura:infused_iron_helmet',
-                'blue_skies:aquite_helmet',
                 'twilightforest:ironwood_helmet',
                 'immersiveengineering:armor_steel_head'
             ],
@@ -107,7 +101,6 @@ ServerEvents.recipes((event) => {
             reagents: [
                 'minecraft:iron_chestplate',
                 'naturesaura:infused_iron_chest',
-                'blue_skies:aquite_chestplate',
                 'twilightforest:ironwood_chestplate',
                 'immersiveengineering:armor_steel_chest'
             ],
@@ -126,7 +119,6 @@ ServerEvents.recipes((event) => {
             reagents: [
                 'minecraft:iron_leggings',
                 'naturesaura:infused_iron_pants',
-                'blue_skies:aquite_leggings',
                 'twilightforest:ironwood_leggings',
                 'immersiveengineering:armor_steel_legs'
             ],
@@ -145,7 +137,6 @@ ServerEvents.recipes((event) => {
             reagents: [
                 'minecraft:iron_boots',
                 'naturesaura:infused_iron_shoes',
-                'blue_skies:aquite_boots',
                 'twilightforest:ironwood_boots',
                 'immersiveengineering:armor_steel_feet'
             ],
@@ -161,7 +152,7 @@ ServerEvents.recipes((event) => {
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber'
             ],
-            reagents: ['minecraft:golden_helmet', 'blue_skies:pyrope_helmet', 'blue_skies:horizonite_helmet'],
+            reagents: ['minecraft:golden_helmet'],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `ars_nouveau:novice_hood`
@@ -176,8 +167,6 @@ ServerEvents.recipes((event) => {
             ],
             reagents: [
                 'minecraft:golden_chestplate',
-                'blue_skies:pyrope_chestplate',
-                'blue_skies:horizonite_chestplate'
             ],
             keepNbtOfReagent: true,
             sourceCost: 0,
@@ -191,7 +180,7 @@ ServerEvents.recipes((event) => {
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber'
             ],
-            reagents: ['minecraft:golden_leggings', 'blue_skies:pyrope_leggings', 'blue_skies:horizonite_leggings'],
+            reagents: ['minecraft:golden_leggings'],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `ars_nouveau:novice_leggings`
@@ -204,7 +193,7 @@ ServerEvents.recipes((event) => {
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber'
             ],
-            reagents: ['minecraft:golden_boots', 'blue_skies:pyrope_boots', 'blue_skies:horizonite_boots'],
+            reagents: ['minecraft:golden_boots'],
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `ars_nouveau:novice_boots`

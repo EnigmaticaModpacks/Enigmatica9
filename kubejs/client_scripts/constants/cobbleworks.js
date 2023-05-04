@@ -53,7 +53,6 @@ const generatableStone = [
 const generatableBasalt = [];
 
 const excludeDuplicatesCobbleGen = [
-    'blue_skies:turquoise_cobblestone',
     'byg:dacite',
     'byg:dacite_cobblestone',
     'byg:ether_stone',

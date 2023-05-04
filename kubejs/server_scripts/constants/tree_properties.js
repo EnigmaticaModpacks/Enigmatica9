@@ -1111,20 +1111,6 @@ const tree_properties = {
             foliage: ['byg:shulkren_wart_block', 'byg:purple_shroomlight', 'byg:shulkren_vine'],
             dimension: 'end',
             substrate: 'end_mushroom'
-        },
-        {
-            sapling: 'blue_skies:snowcap_pinhead',
-            stems: ['blue_skies:snowcap_mushroom_stem'],
-            foliage: ['blue_skies:snowcap_mushroom_block'],
-            dimension: 'everbright',
-            substrate: 'mushroom'
-        },
-        {
-            sapling: 'blue_skies:snowcap_mushroom',
-            stems: ['blue_skies:snowcap_mushroom_stem'],
-            foliage: ['blue_skies:snowcap_mushroom_block'],
-            dimension: 'everbright',
-            substrate: 'mushroom'
         }
     ]
 };
