@@ -43,6 +43,30 @@ const enchantments = {
     },
     reactive_3: {
         Enchantments: [{ id: 'ars_nouveau:reactive', lvl: 3 }]
+    },
+    reactive_4: {
+        Enchantments: [{ id: 'ars_nouveau:reactive', lvl: 4 }]
+    },
+    multishot: {
+        Enchantments: [{ id: 'minecraft:multishot', lvl: 1 }]
+    },
+    sharpness_1: {
+        Enchantments: [{ id: 'minecraft:sharpness', lvl: 1 }]
+    },
+    sharpness_2: {
+        Enchantments: [{ id: 'minecraft:sharpness', lvl: 2 }]
+    },
+    sharpness_3: {
+        Enchantments: [{ id: 'minecraft:sharpness', lvl: 3 }]
+    },
+    punch_1: {
+        Enchantments: [{ id: 'minecraft:punch', lvl: 1 }]
+    },
+    punch_2: {
+        Enchantments: [{ id: 'minecraft:punch', lvl: 2 }]
+    },
+    punch_3: {
+        Enchantments: [{ id: 'minecraft:punch', lvl: 3 }]
     }
 };
 
@@ -433,7 +457,7 @@ const tipped_arrow_nbt = {
 };
 
 const reactive = {
-    poison_bounce: {
+    bounce_poison: {
         'ars_nouveau:reactive_caster': {
             current_slot: 0,
             flavor: '',
@@ -500,9 +524,7 @@ const reactive = {
                         part5: 'ars_nouveau:glyph_flare',
                         part6: 'ars_nouveau:glyph_amplify',
                         part7: 'ars_nouveau:glyph_amplify',
-                        part8: 'ars_nouveau:glyph_amplify',
-                        part9: 'ars_nouveau:glyph_amplify',
-                        size: 10
+                        size: 8
                     },
                     sound: { pitch: 0.5, soundTag: { id: 'ars_nouveau:fire_family_2' }, volume: 1.0 },
                     spellColor: { b: 1, g: 90, r: 255 }
@@ -577,7 +599,7 @@ const reactive = {
                         part5: 'ars_nouveau:glyph_accelerate',
                         part6: 'ars_nouveau:glyph_accelerate',
                         part7: 'ars_nouveau:glyph_accelerate',
-                        part8: 'ars_nouveau:glyph_accelerate',
+                        part8: 'toomanyglyphs:glyph_filter_living_not_monster',
                         part9: 'ars_nouveau:glyph_heal',
                         size: 10
                     },

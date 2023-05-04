@@ -40,7 +40,7 @@ ServerEvents.highPriorityData((event) => {
                 {
                     stack: {
                         item: 'twilightforest:fiery_leggings',
-                        nbt: Object.assign(reactive.poison_bounce, enchant_glint.blank, enchantments.reactive_1)
+                        nbt: Object.assign(reactive.bounce_poison, enchant_glint.blank, enchantments.reactive_1)
                     },
                     weight: 100,
                     drop_chance: 0.0

@@ -12,6 +12,7 @@ ServerEvents.highPriorityData((event) => {
     const recipes = [
         {
             id: 'afrit_wild',
+            name: null,
             chance: 1.0,
             weight: 100,
             quality: 0,
@@ -39,6 +40,7 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             id: 'wild_hunt_wither_skeleton',
+            name: null,
             chance: 1.0,
             weight: 100,
             quality: 0,
@@ -66,6 +68,7 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             id: 'wild_hunt_skeleton',
+            name: null,
             chance: 1.0,
             weight: 100,
             quality: 0,
@@ -108,6 +111,7 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             id: 'possessed_enderman',
+            name: null,
             chance: 1.0,
             weight: 100,
             quality: 0,
@@ -161,6 +165,7 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             id: 'possessed_skeleton',
+            name: null,
             chance: 1.0,
             weight: 100,
             quality: 0,
