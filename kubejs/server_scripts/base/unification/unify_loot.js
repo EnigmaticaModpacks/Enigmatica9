@@ -17,13 +17,16 @@ LootJS.modifiers((event) => {
         prefix = !prefix ? '' : prefix + '_';
         replaceWithRaw = !replaceWithRaw ? false : true;
         count = !count ? itemStack.getCount() : count;
+
+        if (exceptions[itemStack.getId()]) {
+            return Item.of(exceptions[itemStack.getId()], itemStack.getCount())
+        }
+
         // If itemstack already is from EE and replaceWithRaw is false, just return it.
         if (itemStack.getId().startsWith('emendatusenigmatica:') && !replaceWithRaw) {
             return itemStack;
         }
-        if (exceptions[itemStack.getId()]) {
-            return Item.of(exceptions[itemStack.getId()], itemStack.getCount())
-        }
+        
         tag = (tag.startsWith('#') ? tag.substring(1) : tag) + '/';
         let iterator = itemStack.getTags().iterator();
         while (iterator.hasNext()) {
