@@ -434,67 +434,67 @@ const armored_mobs = {
                             drop_rate: 0.085
                         }
                     }
+                },
+                {
+                    weight: 25,
+                    set: {
+                        max_health: 50,
+                        effects: [{ type: 'minecraft:speed', amplifier: 2 }],
+                        enchant: {
+                            chance: 0.5,
+                            level: { min: 10, max: 30 },
+                            treasure: false
+                        },
+                        mainhand: {
+                            item: Item.of('minecraft:bow', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.harming),
+                            drop_rate: 1.0
+                        }
+                    }
+                },
+                {
+                    weight: 5,
+                    set: {
+                        max_health: 50,
+                        effects: [{ type: 'minecraft:speed', amplifier: 2 }],
+                        enchant: {
+                            chance: 0.5,
+                            level: { min: 10, max: 30 },
+                            treasure: false
+                        },
+                        mainhand: {
+                            item: Item.of('minecraft:bow', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.blasting),
+                            drop_rate: 1.0
+                        }
+                    }
+                },
+                {
+                    weight: 25,
+                    set: {
+                        max_health: 50,
+                        effects: [{ type: 'minecraft:speed', amplifier: 2 }],
+                        enchant: {
+                            chance: 0.5,
+                            level: { min: 10, max: 30 },
+                            treasure: false
+                        },
+                        mainhand: {
+                            item: Item.of('minecraft:bow', default_nbt),
+                            drop_rate: 0.085
+                        },
+                        offhand: {
+                            item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.sundering),
+                            drop_rate: 1.0
+                        }
+                    }
                 }
-                // {
-                //     weight: 25,
-                //     set: {
-                //         max_health: 50,
-                //         effects: [{ type: 'minecraft:speed', amplifier: 2 }],
-                //         enchant: {
-                //             chance: 0.5,
-                //             level: { min: 10, max: 30 },
-                //             treasure: false
-                //         },
-                //         mainhand: {
-                //             item: Item.of('minecraft:bow', default_nbt),
-                //             drop_rate: 0.085
-                //         },
-                //         offhand: {
-                //             item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.harming),
-                //             drop_rate: 1.0
-                //         }
-                //     }
-                // },
-                // {
-                //     weight: 5,
-                //     set: {
-                //         max_health: 50,
-                //         effects: [{ type: 'minecraft:speed', amplifier: 2 }],
-                //         enchant: {
-                //             chance: 0.5,
-                //             level: { min: 10, max: 30 },
-                //             treasure: false
-                //         },
-                //         mainhand: {
-                //             item: Item.of('minecraft:bow', default_nbt),
-                //             drop_rate: 0.085
-                //         },
-                //         offhand: {
-                //             item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.blasting),
-                //             drop_rate: 1.0
-                //         }
-                //     }
-                // },
-                // {
-                //     weight: 25,
-                //     set: {
-                //         max_health: 50,
-                //         effects: [{ type: 'minecraft:speed', amplifier: 2 }],
-                //         enchant: {
-                //             chance: 0.5,
-                //             level: { min: 10, max: 30 },
-                //             treasure: false
-                //         },
-                //         mainhand: {
-                //             item: Item.of('minecraft:bow', default_nbt),
-                //             drop_rate: 0.085
-                //         },
-                //         offhand: {
-                //             item: Item.of('minecraft:tipped_arrow', 5, tipped_arrow_nbt.sundering),
-                //             drop_rate: 1.0
-                //         }
-                //     }
-                // }
             ]
         },
         wither_skeleton: {
