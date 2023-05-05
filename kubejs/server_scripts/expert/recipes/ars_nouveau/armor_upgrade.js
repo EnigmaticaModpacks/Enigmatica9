@@ -7,9 +7,9 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             pedestalItems: [
-                { item: { tag: 'forge:gems/niotic' } },
-                { item: { tag: 'forge:gems/niotic' } },
-                { item: { tag: 'forge:gems/niotic' } }
+                { item: { tag: 'forge:gems/infused_diamond' } },
+                { item: { tag: 'forge:gems/infused_diamond' } },
+                { item: { tag: 'forge:gems/infused_diamond' } }
             ],
             sourceCost: 2500,
             tier: 1,
