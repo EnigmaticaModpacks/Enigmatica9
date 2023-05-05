@@ -47,30 +47,30 @@ ServerEvents.recipes((event) => {
             chemicalInput: { infuse_type: 'emendatusenigmatica:fire_essence', amount: 20 },
             id: `${id_prefix}tunnel_item`
         },
-        {
-            output: 'ars_nouveau:fire_essence',
-            itemInput: { ingredient: { tag: 'forge:gems/source' } },
-            chemicalInput: { infuse_type: 'emendatusenigmatica:fire_essence', amount: 10 },
-            id: `${id_prefix}fire_essence`
-        },
-        {
-            output: 'ars_nouveau:water_essence',
-            itemInput: { ingredient: { tag: 'forge:gems/source' } },
-            chemicalInput: { infuse_type: 'emendatusenigmatica:water_essence', amount: 10 },
-            id: `${id_prefix}water_essence`
-        },
-        {
-            output: 'ars_nouveau:air_essence',
-            itemInput: { ingredient: { tag: 'forge:gems/source' } },
-            chemicalInput: { infuse_type: 'emendatusenigmatica:air_essence', amount: 10 },
-            id: `${id_prefix}air_essence`
-        },
-        {
-            output: 'ars_nouveau:earth_essence',
-            itemInput: { ingredient: { tag: 'forge:gems/source' } },
-            chemicalInput: { infuse_type: 'emendatusenigmatica:earth_essence', amount: 10 },
-            id: `${id_prefix}earth_essence`
-        },
+        // {
+        //     output: 'ars_nouveau:fire_essence',
+        //     itemInput: { ingredient: { tag: 'forge:gems/source' } },
+        //     chemicalInput: { infuse_type: 'emendatusenigmatica:fire_essence', amount: 10 },
+        //     id: `${id_prefix}fire_essence`
+        // },
+        // {
+        //     output: 'ars_nouveau:water_essence',
+        //     itemInput: { ingredient: { tag: 'forge:gems/source' } },
+        //     chemicalInput: { infuse_type: 'emendatusenigmatica:water_essence', amount: 10 },
+        //     id: `${id_prefix}water_essence`
+        // },
+        // {
+        //     output: 'ars_nouveau:air_essence',
+        //     itemInput: { ingredient: { tag: 'forge:gems/source' } },
+        //     chemicalInput: { infuse_type: 'emendatusenigmatica:air_essence', amount: 10 },
+        //     id: `${id_prefix}air_essence`
+        // },
+        // {
+        //     output: 'ars_nouveau:earth_essence',
+        //     itemInput: { ingredient: { tag: 'forge:gems/source' } },
+        //     chemicalInput: { infuse_type: 'emendatusenigmatica:earth_essence', amount: 10 },
+        //     id: `${id_prefix}earth_essence`
+        // },
         {
             output: 'powah:crystal_blazing',
             itemInput: { ingredient: { tag: 'forge:gems/prismarine' } },
