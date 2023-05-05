@@ -24,35 +24,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}uraninite`
         },
         {
-            inputs: ['ars_nouveau:fire_essence', '#forge:nuggets/horizonite', '#forge:nuggets/horizonite'],
-            energy: '120000',
-            output: Item.of('powah:crystal_blazing', 4),
-            id: `${id_prefix}crystal_blazing`
-        },
-        {
-            inputs: ['ars_nouveau:water_essence', '#forge:gems/aquite'],
-            energy: '300000',
-            output: Item.of('powah:crystal_niotic', 3),
-            id: `${id_prefix}crystal_niotic`
-        },
-        {
-            inputs: ['ars_nouveau:earth_essence', '#forge:gems/diopside'],
-            energy: '1000000',
-            output: Item.of('powah:crystal_spirited', 3),
-            id: `${id_prefix}crystal_spirited`
-        },
-        {
-            inputs: [
-                'occultism:afrit_essence',
-                '#forge:storage_blocks/pyrope',
-                '#forge:storage_blocks/pyrope',
-                'powah:blazing_crystal_block'
-            ],
-            energy: '20000000',
-            output: Item.of('powah:crystal_nitro', 27),
-            id: `${id_prefix}crystal_nitro`
-        },
-        {
             inputs: [
                 'powah:capacitor_basic_large',
                 '#forge:gears/enderium',

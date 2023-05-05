@@ -48,7 +48,7 @@ ServerEvents.recipes((event) => {
                 B: '#forge:essences/conjuration',
                 C: '#forge:plastic',
                 D: '#industrialforegoing:machine_frame/simple',
-                E: '#forge:ingots/falsite',
+                E: '#forge:ingots/lead',
                 F: '#forge:essences/anima'
             },
             id: 'industrialforegoing:mechanical_dirt'
