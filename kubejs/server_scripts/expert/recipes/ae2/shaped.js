@@ -91,7 +91,7 @@ ServerEvents.recipes((event) => {
             output: 'ae2:formation_plane',
             pattern: [' BA'],
             key: {
-                A: 'blue_skies:crystal_glass_pane',
+                A: 'spirit:soul_glass',
                 B: 'ae2:export_bus'
             },
             id: `${id_prefix}formation_plane`
@@ -100,7 +100,7 @@ ServerEvents.recipes((event) => {
             output: 'ae2:annihilation_plane',
             pattern: [' BA'],
             key: {
-                A: 'blue_skies:midnight_glass_pane',
+                A: 'spirit:soul_glass',
                 B: 'ae2:import_bus'
             },
             id: `${id_prefix}annihilation_plane`

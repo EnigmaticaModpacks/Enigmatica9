@@ -574,12 +574,17 @@ ServerEvents.recipes((event) => {
             reagents: ['sophisticatedstorage:stack_upgrade_tier_3'],
             sourceCost: 1000,
             id: `${id_prefix}stack_upgrade_tier_4`
+        },
+        {
+            output: 'mekanism:upgrade_anchor',
+            inputs: ['#forge:essences/abjuration', 'ars_nouveau:glyph_aoe'],
+            reagents: ['powah:blank_card'],
+            sourceCost: 1000,
+            id: `${id_prefix}upgrade_anchor`
         }
     ];
 
-    const gem_types = [
-        { mod: 'minecraft', material: 'diamond', essence: 'abjuration' }
-    ];
+    const gem_types = [{ mod: 'minecraft', material: 'diamond', essence: 'abjuration' }];
 
     const equipment_types = [
         { slot: 'helmet', count: 5 },

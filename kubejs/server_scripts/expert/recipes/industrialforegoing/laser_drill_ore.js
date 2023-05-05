@@ -6,50 +6,6 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             catalyst: { tag: 'industrialforegoing:laser_lens/light_blue' },
-            output: { item: 'minecraft:clay_ball' },
-            pointer: 0,
-            rarity: [
-                {
-                    depth_max: 60,
-                    depth_min: 50,
-                    weight: 28,
-                    blacklist: {},
-                    whitelist: { type: 'minecraft:worldgen/biome', values: biomes.in_everbright }
-                },
-                {
-                    depth_max: 255,
-                    depth_min: 0,
-                    weight: 1,
-                    blacklist: {},
-                    whitelist: { type: 'minecraft:worldgen/biome', values: biomes.in_everbright }
-                }
-            ],
-            id: `${id_prefix}clay_ball`
-        },
-        {
-            catalyst: { tag: 'industrialforegoing:laser_lens/light_blue' },
-            output: { item: 'blue_skies:soul_fragment' },
-            pointer: 0,
-            rarity: [
-                {
-                    depth_max: 16,
-                    depth_min: 5,
-                    weight: 10,
-                    blacklist: {},
-                    whitelist: { type: 'minecraft:worldgen/biome', values: biomes.in_everbright }
-                },
-                {
-                    depth_max: 255,
-                    depth_min: 0,
-                    weight: 4,
-                    blacklist: {},
-                    whitelist: { type: 'minecraft:worldgen/biome', values: biomes.in_everbright }
-                }
-            ],
-            id: `${id_prefix}soul_fragment`
-        },
-        {
-            catalyst: { tag: 'industrialforegoing:laser_lens/light_blue' },
             output: { item: 'spirit:soul_powder' },
             pointer: 0,
             rarity: [
@@ -58,14 +14,28 @@ ServerEvents.recipes((event) => {
                     depth_min: 5,
                     weight: 10,
                     blacklist: {},
-                    whitelist: { type: 'minecraft:worldgen/biome', values: biomes.in_everbright }
+                    whitelist: {
+                        type: 'minecraft:worldgen/biome',
+                        values: [
+                            'twilightforest:dark_forest',
+                            'twilightforest:dark_forest_center',
+                            'twilightforest:spooky_forest'
+                        ]
+                    }
                 },
                 {
                     depth_max: 255,
                     depth_min: 0,
                     weight: 4,
                     blacklist: {},
-                    whitelist: { type: 'minecraft:worldgen/biome', values: biomes.in_everbright }
+                    whitelist: {
+                        type: 'minecraft:worldgen/biome',
+                        values: [
+                            'twilightforest:dark_forest',
+                            'twilightforest:dark_forest_center',
+                            'twilightforest:spooky_forest'
+                        ]
+                    }
                 }
             ],
             id: `${id_prefix}soul_powder`
@@ -80,14 +50,28 @@ ServerEvents.recipes((event) => {
                     depth_min: 5,
                     weight: 10,
                     blacklist: {},
-                    whitelist: { type: 'minecraft:worldgen/biome', values: biomes.in_everbright }
+                    whitelist: {
+                        type: 'minecraft:worldgen/biome',
+                        values: [
+                            'twilightforest:dark_forest',
+                            'twilightforest:dark_forest_center',
+                            'twilightforest:spooky_forest'
+                        ]
+                    }
                 },
                 {
                     depth_max: 255,
                     depth_min: 0,
                     weight: 4,
                     blacklist: {},
-                    whitelist: { type: 'minecraft:worldgen/biome', values: biomes.in_everbright }
+                    whitelist: {
+                        type: 'minecraft:worldgen/biome',
+                        values: [
+                            'twilightforest:dark_forest',
+                            'twilightforest:dark_forest_center',
+                            'twilightforest:spooky_forest'
+                        ]
+                    }
                 }
             ],
             id: `${id_prefix}soul_slate`

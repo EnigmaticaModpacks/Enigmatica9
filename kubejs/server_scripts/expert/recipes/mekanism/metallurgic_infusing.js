@@ -70,6 +70,12 @@ ServerEvents.recipes((event) => {
             itemInput: { ingredient: { tag: 'forge:gems/source' } },
             chemicalInput: { infuse_type: 'emendatusenigmatica:earth_essence', amount: 10 },
             id: `${id_prefix}earth_essence`
+        },
+        {
+            output: 'powah:crystal_blazing',
+            itemInput: { ingredient: { tag: 'forge:gems/prismarine' } },
+            chemicalInput: { infuse_type: 'emendatusenigmatica:fire_essence', amount: 40 },
+            id: `${id_prefix}crystal_blazing`
         }
     ];
 

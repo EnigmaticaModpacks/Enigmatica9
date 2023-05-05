@@ -5,14 +5,9 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/immersiveengineering/blastfurnace_fuel/';
     const recipes = [
         {
-            input: '#forge:nuggets/horizonite',
-            time: 120,
-            id: `${id_prefix}horizonite_nugget`
-        },
-        {
-            input: '#forge:dusts/horizonite',
+            input: '#forge:gems/blazing',
             time: 1200,
-            id: `${id_prefix}horizonite_dusts`
+            id: `${id_prefix}blazing`
         }
     ];
 
