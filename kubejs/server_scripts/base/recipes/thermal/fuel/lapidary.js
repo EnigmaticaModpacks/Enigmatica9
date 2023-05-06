@@ -14,34 +14,14 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}diamond`
         },
         {
-            ingredient: { tag: 'forge:gems/charoite' },
-            energy: 500000,
-            id: `${id_prefix}charoite`
-        },
-        {
-            ingredient: { tag: 'forge:gems/aquite' },
-            energy: 500000,
-            id: `${id_prefix}aquite`
-        },
-        {
             ingredient: { tag: 'forge:gems/emerald' },
             energy: 125000,
             id: `${id_prefix}emerald`
         },
         {
-            ingredient: { tag: 'forge:gems/diopside' },
-            energy: 125000,
-            id: `${id_prefix}diopside`
-        },
-        {
             ingredient: { tag: 'forge:gems/fluix' },
             energy: 125000,
             id: `${id_prefix}fluix`
-        },
-        {
-            ingredient: { tag: 'forge:gems/pyrope' },
-            energy: 125000,
-            id: `${id_prefix}pyrope`
         },
         {
             ingredient: { tag: 'forge:gems/lapis' },
@@ -77,11 +57,6 @@ ServerEvents.recipes((event) => {
             ingredient: { tag: 'forge:gems/certus_quartz' },
             energy: 40000,
             id: `${id_prefix}certus_quartz`
-        },
-        {
-            ingredient: { tag: 'forge:gems/moonstone' },
-            energy: 40000,
-            id: `${id_prefix}moonstone`
         }
     ];
 

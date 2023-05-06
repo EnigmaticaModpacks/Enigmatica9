@@ -55,7 +55,7 @@ ServerEvents.recipes((event) => {
                 B: '#forge:essences/fire',
                 C: '#forge:essences/water',
                 D: '#forge:essences/earth',
-                E: '#forge:gems/moonstone'
+                E: '#forge:gems/niotic'
             },
             id: `naturesaura:calling_spirit`
         },

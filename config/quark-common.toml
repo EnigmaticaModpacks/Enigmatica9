@@ -5,8 +5,8 @@
 	Foxhound = true
 	Forgotten = true
 	Shiba = true
-	Wraith = true
-	Toretoise = true
+	Wraith = false
+	Toretoise = false
 
 	[mobs.toretoise]
 		"Max Y Level" = 0
@@ -226,7 +226,7 @@
 	"Interpret Shulker Box Like Blocks" = true
 
 [automation]
-	Chute = true
+	Chute = false
 	"Iron Rod" = true
 	"Ender Watcher" = true
 	"Jukebox Automation" = true
@@ -836,12 +836,12 @@
 
 [management]
 	"Expanded Item Interactions" = true
+	"Automatic Tool Restock" = true
 	"Inventory Sorting" = true
 	"Quick Armor Swapping" = true
 	"Item Sharing" = true
 	"Hotbar Changer" = true
 	"Easy Transfering" = true
-	"Automatic Tool Restock" = true
 
 	[management.inventory_sorting]
 		#Play a click when sorting inventories using keybindings
@@ -859,27 +859,27 @@
 		"Enable Lava Interaction" = true
 		"Allow Opening Shulker Boxes" = true
 
-	[management.easy_transfering]
-		"Enable Shift Lock" = true
-
-	[management.item_sharing]
-		"Render Items In Chat" = true
-
 	[management.automatic_tool_restock]
 		#This feature disables itself if any of the following mods are loaded: 
 		# - inventorytweaks
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
+		"Unstackables Only" = false
 		#Enchantments deemed important enough to have special priority when finding a replacement
 		"Important Enchantments" = ["minecraft:silk_touch", "minecraft:fortune", "minecraft:infinity", "minecraft:luck_of_the_sea", "minecraft:looting"]
 		#Enable replacing your tools with tools of the same type but not the same item
 		"Enable Loose Matching" = true
-		#Enable comparing enchantments to find a replacement
-		"Enable Enchant Matching" = true
-		"Unstackables Only" = false
 		#Allow pulling items from one hotbar slot to another
 		"Check Hotbar" = false
+		#Enable comparing enchantments to find a replacement
+		"Enable Enchant Matching" = true
+
+	[management.easy_transfering]
+		"Enable Shift Lock" = true
+
+	[management.item_sharing]
+		"Render Items In Chat" = true
 
 [tweaks]
 	"Zombie Villagers On Normal" = false
@@ -977,6 +977,8 @@
 		"Easy Hopper" = true
 		#Can a repeater be crafted with the pattern for a redstone torch?
 		"Enable Repeater" = true
+		#Can you craft a boat around a chest to directly make a chest boat?
+		"Enable Chest Boats" = true
 		#Can cookies, paper, and bread be crafted in a 2x2 crafting table?
 		"Bent Recipes" = true
 		#Can Rotten Flesh and Poisonous Potatoes be composted?
@@ -987,8 +989,6 @@
 		"Enable Minecarts" = true
 		#Does Dragon Breath return a bottle when used as a reagent or material?
 		"Effective Dragon Breath" = true
-		#Can you craft a boat around a chest to directly make a chest boat?
-		"Enable Chest Boats" = true
 
 	[tweaks.enhanced_ladders]
 		"Allow Sliding" = true
@@ -1009,6 +1009,15 @@
 		"Ignored Recipes" = []
 		"Disable Recipe Book" = true
 		"Force Limited Crafting" = false
+
+	[tweaks.double_door_opening]
+		#This feature disables itself if any of the following mods are loaded: 
+		# - utilitix
+		#This is done to prevent content overlap.
+		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
+		"Ignore Anti Overlap" = false
+		"Enable Fence Gates" = true
+		"Enable Doors" = true
 
 	[tweaks.reacharound_placing]
 		#Allowed values: [0,1]
@@ -1081,15 +1090,6 @@
 	[tweaks.campfires_boost_elytra]
 		"Boost Strength" = 0.5
 		"Max Speed" = 1.0
-
-	[tweaks.double_door_opening]
-		#This feature disables itself if any of the following mods are loaded: 
-		# - utilitix
-		#This is done to prevent content overlap.
-		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
-		"Ignore Anti Overlap" = false
-		"Enable Doors" = true
-		"Enable Fence Gates" = true
 
 [client]
 	"Greener Grass" = true
@@ -1304,21 +1304,21 @@
 	"Narrator Readout" = false
 	"Overlay Shader" = false
 	"Enchantments Begone" = true
-	"Game Nerfs" = false
+	"Game Nerfs" = true
 
 	[experimental.game_nerfs]
 		#Makes Mending act like the Unmending mod
 		#https://www.curseforge.com/minecraft/mc-mods/unmending
-		"Nerf Mending" = true
+		"Nerf Mending" = false
 		#Makes Iron Golems not drop Iron Ingots
-		"Disable Iron Farms" = true
+		"Disable Iron Farms" = false
 		"Non Griefing Entities" = ["minecraft:creeper", "minecraft:enderman"]
 		#Makes Sheep not drop Wool when killed
-		"Disable Wool Drops" = true
+		"Disable Wool Drops" = false
 		#Disables mob griefing for only specific entities
 		"Enable Selective Mob Griefing" = true
 		#Makes Boats not glide on ice
-		"Disable Ice Roads" = true
+		"Disable Ice Roads" = false
 		#Resets all villager discounts when zombified to prevent reducing prices to ridiculous levels
 		"Nerf Villager Discount" = true
 
@@ -1338,7 +1338,7 @@
 		Shader = "none"
 
 	[experimental.enchantments_begone]
-		"Enchantments To Begone" = ["apotheosis:earths_boon", "apotheosis:rebounding", "apotheosis:spearfishing", "minecraft:binding_curse", "minecraft:vanishing_curse", "supplementaries:stasis"]
+		"Enchantments To Begone" = ["apotheosis:earths_boon", "apotheosis:rebounding", "apotheosis:spearfishing", "minecraft:respiration", "minecraft:binding_curse", "minecraft:vanishing_curse", "supplementaries:stasis", "minecraft:mending"]
 
 [categories]
 	Building = true
@@ -1353,7 +1353,7 @@
 	Client = true
 
 [tools]
-	Pickarang = true
+	Pickarang = false
 	"Ambient Discs" = true
 	"Seed Pouch" = false
 	"Pathfinder Maps" = false
@@ -1419,13 +1419,13 @@
 		#Format is lootTable,weight. i.e. "minecraft:chests/stronghold_library,30"
 		"Loot Tables" = ["minecraft:chests/stronghold_library,30", "minecraft:chests/simple_dungeon,20", "minecraft:chests/bastion_treasure,25", "minecraft:chests/woodland_mansion,15", "minecraft:chests/nether_bridge,0", "minecraft:chests/underwater_ruin_big,0", "minecraft:chests/underwater_ruin_small,0", "quark:misc/monster_box,5"]
 		"Limit Break Upgrade Cost" = 30
-		#Master Librarians will offer to exchange Ancient Tomes, provided you give them a max-level Enchanted Book of the Tome's enchantment too.
-		"Librarians Exchange Ancient Tomes" = true
-		"Overleveled Books Glow Rainbow" = true
-		#Applying a tome will also randomly curse your item
-		"Curse Gear" = false
 		#Allows combining tomes with normal books
 		"Combine With Books" = true
+		#Master Librarians will offer to exchange Ancient Tomes, provided you give them a max-level Enchanted Book of the Tome's enchantment too.
+		"Librarians Exchange Ancient Tomes" = true
+		#Applying a tome will also randomly curse your item
+		"Curse Gear" = false
+		"Overleveled Books Glow Rainbow" = true
 
 	[tools.torch_arrow]
 		"Extinguish On Miss" = false
@@ -1553,14 +1553,14 @@
 		"Enable Auto Crawl" = true
 
 	[building.thatch]
-		#Allowed values: [0,1]
-		"Fall Damage Multiplier" = 0.5
 		#This feature disables itself if any of the following mods are loaded: 
 		# - goated
 		# - environmental
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
+		#Allowed values: [0,1]
+		"Fall Damage Multiplier" = 0.5
 
 	[building.industrial_palette]
 		"Enable Iron Plates" = true
@@ -1570,6 +1570,10 @@
 		#The scale at which items render in the Glass Item Frame. To match the vanilla Item Frame size, set to 1.0
 		"Item Render Scale" = 1.5
 		"Glass Item Frames Update Maps" = true
+
+	[building.vertical_slabs]
+		#Should Walls and Panes attempt to connect to the side of Vertical Slabs?
+		"Allow Side Connections" = true
 
 	[building.rope]
 		"Enable Dispenser Behavior" = true
@@ -1678,8 +1682,4 @@
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
 		"Change Names" = true
-
-	[building.vertical_slabs]
-		#Should Walls and Panes attempt to connect to the side of Vertical Slabs?
-		"Allow Side Connections" = true
 

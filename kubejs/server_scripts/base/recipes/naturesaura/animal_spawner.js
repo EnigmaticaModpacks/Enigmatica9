@@ -72,13 +72,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}crab`
         },
         {
-            entity: 'blue_skies:whistleshell_crab',
-            inputs: ['naturesaura:birth_spirit', 'blue_skies:grittle_flatfish', 'minecraft:sand'],
-            aura: aura_cost.medium,
-            time: 40,
-            id: `${id_prefix}whistleshell_crab`
-        },
-        {
             entity: 'twilightforest:penguin',
             inputs: ['naturesaura:birth_spirit', 'minecraft:snowball', '#forge:raw_fishes'],
             aura: aura_cost.small,
@@ -191,13 +184,6 @@ ServerEvents.recipes((event) => {
             id: 'naturesaura:animal_spawner/wolf'
         },
         {
-            entity: 'blue_skies:diophyde_prowler',
-            inputs: ['naturesaura:birth_spirit', 'blue_skies:municipal_monkfish', 'minecraft:snowball'],
-            aura: aura_cost.huge,
-            time: 40,
-            id: `${id_prefix}diophyde_prowler`
-        },
-        {
             entity: 'minecraft:horse',
             inputs: ['naturesaura:birth_spirit', 'minecraft:golden_carrot', 'minecraft:apple'],
             aura: aura_cost.large,
@@ -224,97 +210,6 @@ ServerEvents.recipes((event) => {
             aura: aura_cost.large,
             time: 40,
             id: 'naturesaura:animal_spawner/mooshroom'
-        },
-        {
-            entity: 'blue_skies:stardust_ram',
-            inputs: ['naturesaura:birth_spirit', 'blue_skies:lunar_grass', 'farmersdelight:tree_bark'],
-            aura: aura_cost.medium,
-            time: 40,
-            id: `${id_prefix}stardust_ram`
-        },
-        {
-            entity: 'blue_skies:cosmic_fox',
-            inputs: ['naturesaura:birth_spirit', 'blue_skies:crescent_fruit', 'minecraft:feather'],
-            aura: aura_cost.medium,
-            time: 40,
-            id: `${id_prefix}cosmic_fox`
-        },
-        {
-            entity: 'blue_skies:crystal_camel',
-            inputs: ['naturesaura:birth_spirit', 'blue_skies:scalefruit', 'blue_skies:crystal_sand'],
-            aura: aura_cost.large,
-            time: 40,
-            id: `${id_prefix}crystal_camel`
-        },
-        {
-            entity: 'blue_skies:snow_owl',
-            inputs: ['naturesaura:birth_spirit', 'minecraft:rabbit', 'minecraft:snowball'],
-            aura: aura_cost.medium,
-            time: 40,
-            id: `${id_prefix}snow_owl`
-        },
-        {
-            entity: 'blue_skies:reindeer',
-            inputs: ['naturesaura:birth_spirit', 'blue_skies:pine_fruit', 'minecraft:snowball'],
-            aura: aura_cost.medium,
-            time: 40,
-            id: `${id_prefix}reindeer`
-        },
-        {
-            entity: 'blue_skies:sliv',
-            inputs: ['naturesaura:birth_spirit', 'farmersdelight:raw_pasta'],
-            aura: aura_cost.small,
-            time: 40,
-            id: `${id_prefix}sliv`
-        },
-        {
-            entity: 'blue_skies:azulfo',
-            inputs: ['naturesaura:birth_spirit', 'minecraft:wheat', 'blue_skies:turquoise_grass'],
-            aura: aura_cost.huge,
-            time: 40,
-            id: `${id_prefix}azulfo`
-        },
-        {
-            entity: 'blue_skies:shade_monitor',
-            inputs: ['naturesaura:birth_spirit', '#forge:foods/meat/raw', 'blue_skies:grittle_flatfish'],
-            aura: aura_cost.medium,
-            time: 40,
-            id: `${id_prefix}shade_monitor`
-        },
-        {
-            entity: 'blue_skies:seclam',
-            inputs: ['naturesaura:birth_spirit', 'minecraft:kelp', 'blue_skies:brumble'],
-            aura: aura_cost.medium,
-            time: 40,
-            id: `${id_prefix}seclam`
-        },
-        {
-            entity: 'blue_skies:crogre',
-            inputs: ['naturesaura:birth_spirit', 'blue_skies:bug_guts', 'blue_skies:chilled_lily_pad'],
-            aura: aura_cost.large,
-            time: 40,
-            id: `${id_prefix}crogre`
-        },
-        {
-            entity: 'blue_skies:emberback',
-            inputs: ['naturesaura:birth_spirit', 'blue_skies:black_brewberry', 'blue_skies:flare_floret'],
-            aura: aura_cost.large,
-            time: 40,
-            id: `${id_prefix}emberback`
-        },
-        {
-            entity: 'blue_skies:firefly',
-            inputs: ['naturesaura:birth_spirit', 'blue_skies:nightcress', 'blue_skies:lucentroot'],
-            aura: aura_cost.large,
-            time: 40,
-            id: `${id_prefix}firefly`
-        },
-        {
-            entity: 'blue_skies:nyctofly',
-            inputs: ['naturesaura:birth_spirit', 'blue_skies:moonlit_bloom', 'blue_skies:glimmer_reed'],
-            aura: aura_cost.large,
-            time: 40,
-            id: `${id_prefix}nyctofly`
         }
     ];
 

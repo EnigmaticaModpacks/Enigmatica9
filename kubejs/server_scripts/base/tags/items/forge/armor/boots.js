@@ -7,15 +7,10 @@ ServerEvents.tags('item', (event) => {
             'immersiveengineering:armor_steel_feet',
             'mekanism:free_runners',
             'naturesaura:infused_iron_shoes',
-            'naturesaura:sky_shoes'
+            'naturesaura:sky_shoes',
+            'naturesaura:depth_shoes'
         ])
-        .remove([
-            'pneumaticcraft:jet_boots_upgrade_1',
-            'pneumaticcraft:jet_boots_upgrade_2',
-            'pneumaticcraft:jet_boots_upgrade_3',
-            'pneumaticcraft:jet_boots_upgrade_4',
-            'pneumaticcraft:jet_boots_upgrade_5'
-        ]);
+        .remove([/pneumaticcraft:jet_boots_upgrade_/]);
     event
         .get('forge:armors/boots')
         .add([
@@ -24,13 +19,8 @@ ServerEvents.tags('item', (event) => {
             'immersiveengineering:armor_steel_feet',
             'mekanism:free_runners',
             'naturesaura:infused_iron_shoes',
-            'naturesaura:sky_shoes'
+            'naturesaura:sky_shoes',
+            'naturesaura:depth_shoes'
         ])
-        .remove([
-            'pneumaticcraft:jet_boots_upgrade_1',
-            'pneumaticcraft:jet_boots_upgrade_2',
-            'pneumaticcraft:jet_boots_upgrade_3',
-            'pneumaticcraft:jet_boots_upgrade_4',
-            'pneumaticcraft:jet_boots_upgrade_5'
-        ]);
+        .remove([/pneumaticcraft:jet_boots_upgrade_/]);
 });

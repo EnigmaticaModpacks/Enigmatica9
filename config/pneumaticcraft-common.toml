@@ -5,7 +5,7 @@
 	addMechanicHouse = 8
 	#Which trades should the Pressure Mechanic offer? ALL will offer all trades. PCB_BLUEPRINT will offer *only* the PCB Blueprint, an item required for normal progression through the mod. NONE will offer nothing (but the PCB Blueprint is also available via Amadron by default). Note that changing this won't affect any already-spawned Pressure Mechanics.
 	#Allowed Values: NONE, PCB_BLUEPRINT, ALL
-	mechanicTrades = "ALL"
+	mechanicTrades = "NONE"
 
 [Integration]
 	#Immersive Engineering: External Heater FE/t. Set to 0 to disable External Heater integration entirely.
@@ -41,13 +41,13 @@
 ["Minigun Properties"]
 	#Weighted Ammo cartridge size
 	#Range: 1 ~ 30000
-	weighted_ammo_cartridge_size = 500
+	weighted_ammo_cartridge_size = 5000
 	#Armor Piercing Ammo cartridge size
 	#Range: 1 ~ 30000
-	armor_piercing_ammo_cartridge_size = 750
+	armor_piercing_ammo_cartridge_size = 5000
 	#Explosive Ammo cartridge size
 	#Range: 1 ~ 30000
-	explosive_ammo_cartridge_size = 500
+	explosive_ammo_cartridge_size = 5000
 	#Minigun Explosive Ammo explosion power (ref: 2 = creeper, 4 = TNT
 	#Range: 0.0 ~ 1.7976931348623157E308
 	explosive_ammo_explosion_power = 1.5
@@ -64,10 +64,10 @@
 	block_hit_particles = true
 	#Base bullet damage of the Sentry Gun, Handheld Minigun, and Drone Minigun, before ammo bonuses are considered
 	#Range: 0.0 ~ 1.7976931348623157E308
-	base_damage = 4.0
+	base_damage = 10.0
 	#Freezing Ammo cartridge size
 	#Range: > 0
-	freezing_ammo_cartridge_size = 500
+	freezing_ammo_cartridge_size = 5000
 	#Base range of Minigun, before Range Upgrades are considered
 	#Range: 5 ~ 100
 	base_range = 50
@@ -79,13 +79,13 @@
 	incendiary_ammo_entity_ignite_chance = 100
 	#Incendiary ammo base percentage chance to ignite blocks
 	#Range: 1 ~ 100
-	incendiary_ammo_block_ignite_chance = 20
+	incendiary_ammo_block_ignite_chance = 10
 	#Armor Piercing Ammo percentage chance to ignore target's armor
 	#Range: 1 ~ 100
 	ap_ammo_ignore_armor_chance = 100
 	#Incendiary Ammo cartridge size
 	#Range: 1 ~ 30000
-	incendiary_ammo_cartridge_size = 500
+	incendiary_ammo_cartridge_size = 5000
 	#Percentage chance per shot of potion-tipped ammo proc'ing the potion effect, before Dispenser Upgrades are considered
 	#Range: 1 ~ 100
 	potion_proc_chance = 7
@@ -93,10 +93,10 @@
 	explosive_ammo_terrain_damage = false
 	#Standard Ammo cartridge size
 	#Range: 1 ~ 30000
-	standard_ammo_cartridge_size = 1000
+	standard_ammo_cartridge_size = 5000
 	#Armor Piercing Ammo damage multiplier (relative to standard ammo)
 	#Range: 0.0 ~ 1.7976931348623157E308
-	ap_ammo_damage_multiplier = 1.25
+	ap_ammo_damage_multiplier = 1.5
 	#Weighted Ammo range multiplier (relative to standard ammo)
 	#Range: 0.0 ~ 1.7976931348623157E308
 	weighted_ammo_range_multiplier = 0.2
@@ -105,7 +105,7 @@
 	freezing_ammo_block_ice_chance = 10
 	#Minigun Explosive Ammo damage multiplier (relative to standard ammo)
 	#Range: 0.0 ~ 1.7976931348623157E308
-	explosive_ammo_damage_multiplier = 0.2
+	explosive_ammo_damage_multiplier = 1.0
 	#Freezing Ammo base percentage chance to form ice on entities which have been hit
 	#Range: 0 ~ 100
 	freezing_ammo_entity_ice_chance = 20
@@ -159,10 +159,16 @@
 	flippers_speed_boost_ground = 0.03
 
 ["Machine Properties"]
+	#The amount to multiply the air production of the solar compressor by.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	solar_compressor_multiplier = 1.0
 	#Can Security Stations be hacked? If set to false, Security Stations are purely a grief protection feature with no hacking minigame
 	security_station_allow_hacking = true
 	#Aerial Interface backwards compat: allow pre-0.8.0 behaviour of getting player's armor inventory from top face, even with Dispenser Upgrade installed
 	aerial_interface_armor_compat = true
+	#The amount of air produced for 1 pump cycle in the manual compressor
+	#Range: > 0
+	manual_compressor_air_per_cycle = 1000
 	#Speed multiplier per speed upgrade: speed mult = speedUpgradeSpeedMultiplier ^ num_of_speed_upgrades
 	#Range: 1.0 ~ 2.0
 	speed_upgrade_speed_multiplier = 1.5157165665104
@@ -174,6 +180,11 @@
 	pneumatic_engine_efficiency = 80
 	#Can the Liquid Hopper absorb/dispense fluids into the world with a Dispenser Upgrade?
 	liquid_hopper_dispenser = true
+	#The amount of hunger consumed from the player for 1 pump cycle step in the manual compressor. For comparison, sprinting consumes 0.1 hunger per meter sprinted.
+	#Range: 0.0 ~ 40.0
+	manual_compressor_hunger_drain_per_cycle_step = 0.1
+	#Whether to allow fake players to use the manual compressor
+	manual_compressor_allow_fake_players = false
 	#Can the Omnidirectional Hopper dispense items into the world with a Dispenser Upgrade?
 	omni_hopper_dispenser = true
 	#Fuel usage / heat gen multiplier per speed upgrade: usage mult = speedUpgradeUsageMultiplier ^ num_of_speed_upgrades
@@ -191,7 +202,7 @@
 	elevator_base_blocks_per_base = 12
 	#The amount of air produced by using 100 FE (Forge Energy) in the flux compressor
 	#Range: > 0
-	flux_compressor_efficiency = 100
+	flux_compressor_efficiency = 80
 	#Can the Kerosene Lamp burn any kind of fuel?  If false, only Kerosene can be burnt
 	kerosene_lamp_can_use_any_fuel = true
 	#Kerosene Lamp fuel efficiency: higher values mean fuel will last longer in the lamp
@@ -212,21 +223,10 @@
 	#Changing this value will alter the hydraulic bar production of the Pneumatic Pump. The input, air, will stay the same
 	#Range: > 0
 	pneumatic_pump_efficiency = 80
-	#The amount to multiply the air production of the solar compressor by.
-	#Range: 0.0 ~ 1.7976931348623157E308
-	solar_compressor_multiplier = 1.0
-	#The amount of air produced for 1 pump cycle in the manual compressor
-	#Range: > 0
-	manual_compressor_air_per_cycle = 1000
-	#The amount of hunger consumed from the player for 1 pump cycle step in the manual compressor. For comparison, sprinting consumes 0.1 hunger per meter sprinted.
-	#Range: 0.0 ~ 40.0
-	manual_compressor_hunger_drain_per_cycle_step = 0.1
-	#Whether to allow fake players to use the manual compressor
-	manual_compressor_allow_fake_players = false
 
 [General]
 	#Enable mod dungeon loot generation
-	enable_dungeon_loot = true
+	enable_dungeon_loot = false
 	#Time, in ticks, it takes to use a bandage.
 	#Range: > 1
 	bandage_use_time = 40
@@ -309,7 +309,7 @@
 	#Oil worldgen whitelist by dimension ID: add dimension ID's to this list if you want oil lake worldgen to happen ONLY in those dimensions. You can wildcard the path; e.g 'modid:*' whitelists ALL dimensions of namespace 'modid'. If this is empty, it is ignored, and 'oil_world_gen_dimension_blacklist' will be checked instead.
 	oil_world_gen_dimension_whitelist = []
 	#Oil worldgen blacklist by dimension ID: add dimension ID's to this list if you don't want oil lake worldgen to happen there. You can wildcard this; e.g 'modid:*' blacklists ALL dimensions of namespace 'modid'.
-	oil_world_gen_dimension_blacklist = []
+	oil_world_gen_dimension_blacklist = ["minecraft:*", "blue_skies:*", "twilightforest:*", "the_bumblezone:*"]
 
 [Logistics]
 	#Minimum pressure for a Logistics Module to function
@@ -323,6 +323,12 @@
 	item_transport_cost = 0.5
 
 [Drones]
+	#When false, drones may not navigate or teleport into unloaded chunks. Setting this true may lead to server performance and stability issues - beware.
+	allow_navigate_to_unloaded_chunks = false
+	#When true, drones can query the location of any player on the server with the '$player=<name>' variable syntax. Set this to false if you don't want to allow this, e.g. on a PvP server, where this can turn drones into lethal assassins.
+	allowAnyPlayerVarQuery = true
+	#When true, drones can teleport into areas protected by Security Stations of other player. You may wish to set this to false on PvP servers.
+	allowTeleportToProtectedArea = true
 	#Drones render their held item (the item in slot 0 of their inventory) ?  Note: this is in common config since if enabled, server needs to sync the item data to the client.
 	drones_render_held_item = true
 	#The maximum distance that a Drone may teleport when it can't find a path to its destination. Default value of 0 means no limit. This is primarily intended to limit abuse of teleportation to other players on PvP servers, but may find other uses. Be careful about setting this value very low.
@@ -344,10 +350,4 @@
 	#If a Drone has found a path, but gets stuck on a block along that path, it will teleport to its destination after this many ticks of being stuck. Set this to 0 to disable teleporting, which will likely leave the drone waiting there forever (or until it runs out of air). Note that getting stuck on a block is usually the fault of the mod that added the block (especially if the block has a non-full-cube shape), but if you encounter this behaviour, please report it as a PneumaticCraft: Repressurized issue so it can be investigated.
 	#Range: > 0
 	stuck_drone_teleport_ticks = 20
-	#When false, drones may not navigate or teleport into unloaded chunks. Setting this true may lead to server performance and stability issues - beware.
-	allow_navigate_to_unloaded_chunks = false
-	#When true, drones can query the location of any player on the server with the '$player=<name>' variable syntax. Set this to false if you don't want to allow this, e.g. on a PvP server, where this can turn drones into lethal assassins.
-	allowAnyPlayerVarQuery = true
-	#When true, drones can teleport into areas protected by Security Stations of other player. You may wish to set this to false on PvP servers.
-	allowTeleportToProtectedArea = true
 

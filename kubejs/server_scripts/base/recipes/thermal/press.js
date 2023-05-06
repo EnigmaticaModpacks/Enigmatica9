@@ -16,13 +16,13 @@ ServerEvents.recipes((event) => {
         },
         {
             outputs: [{ fluid: 'pneumaticcraft:vegetable_oil', amount: 180 }],
-            inputs: [Ingredient.of(['thermal:peanut', 'blue_skies:solnut'])],
+            inputs: [Ingredient.of(['thermal:peanut'])],
             energy: 6400,
             id: `${id_prefix}vegetable_oil_high_yield`
         },
         {
             outputs: [{ fluid: 'pneumaticcraft:vegetable_oil', amount: 120 }],
-            inputs: [Ingredient.of(['thermal:corn', 'blue_skies:fiery_beans'])],
+            inputs: [Ingredient.of(['thermal:corn'])],
             energy: 6400,
             id: `${id_prefix}vegetable_oil_medium_yield`
         },

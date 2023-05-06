@@ -233,30 +233,6 @@ JEIEvents.information((event) => {
             ]
         },
         {
-            items: ['blue_skies:moonstone_crystal'],
-            text: [
-                `Will grow on Blocks of Moonstone if placed in water.`,
-                ` `,
-                `May be boosted with Crystal Growth Accelerators.`
-            ]
-        },
-        {
-            items: ['blue_skies:sunstone_crystal'],
-            text: [
-                `Will grow on Blocks of Sunstone if placed in water.`,
-                ` `,
-                `May be boosted with Crystal Growth Accelerators.`
-            ]
-        },
-        {
-            items: ['blue_skies:sunstone_block', 'blue_skies:moonstone_block'],
-            text: [
-                `Place in Water to begin growing crystals on the sides. `,
-                ` `,
-                `May be boosted with Crystal Growth Accelerators.`
-            ]
-        },
-        {
             items: ['ae2:name_press'],
             text: [
                 `Used to automatically rename items in an Inscriber.`,

@@ -16,10 +16,6 @@ ServerEvents.tags('entity_type', (event) => {
             'twilightforest:quest_ram',
             'minecraft:wither',
             'minecraft:ender_dragon',
-            'blue_skies:alchemist',
-            'blue_skies:summoner',
-            'blue_skies:arachnarch',
-            'blue_skies:starlit_crusher',
             'quark:stoneling'
         ]);
 });

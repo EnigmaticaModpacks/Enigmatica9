@@ -44,7 +44,7 @@ ServerEvents.highPriorityData((event) => {
                         { entity: 'minecraft:husk' },
                         { entity: 'minecraft:stray' },
                         { entity: 'minecraft:stray' },
-                        { entity: 'blue_skies:armored_frost_spirit' }
+                        { entity: 'minecraft:stray' }
                     ],
                     rewards: [
                         {
@@ -57,12 +57,12 @@ ServerEvents.highPriorityData((event) => {
                 },
                 {
                     entities: [
-                        { entity: 'blue_skies:nyctofly' },
-                        { entity: 'blue_skies:nyctofly' },
-                        { entity: 'blue_skies:nyctofly' },
                         { entity: 'minecraft:cave_spider' },
                         { entity: 'minecraft:cave_spider' },
-                        { entity: 'blue_skies:emberback' },
+                        { entity: 'minecraft:cave_spider' },
+                        { entity: 'minecraft:cave_spider' },
+                        { entity: 'minecraft:cave_spider' },
+                        { entity: 'twilightforest:fire_beetle' },
                         { entity: 'twilightforest:fire_beetle' }
                     ],
                     rewards: [

@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
     // Tiers range from 1-4, with 4 being the highest
     const recipes = [];
 
-    const ore_metals = ['iron', 'copper', 'silver', 'gold', 'tin', 'horizonite', 'ventium', 'falsite'];
+    const ore_metals = ['iron', 'copper', 'silver', 'gold', 'tin'];
 
     ore_metals.forEach((metal) => {
         let outputs = {
