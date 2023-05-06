@@ -17,9 +17,9 @@ ServerEvents.recipes((event) => {
         },
         {
             pedestalItems: [
-                { item: { tag: 'forge:gems/spirited' } },
-                { item: { tag: 'forge:gems/spirited' } },
-                { item: { tag: 'forge:gems/spirited' } }
+                { item: { tag: 'forge:gems/niotic' } },
+                { item: { tag: 'forge:gems/niotic' } },
+                { item: { tag: 'forge:gems/niotic' } }
             ],
             sourceCost: 5000,
             tier: 2,
