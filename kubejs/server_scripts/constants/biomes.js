@@ -1,5 +1,5 @@
 //priority: 1001
-const biomes = { 
+const biomes = {
     in_the_bumblezone: [
         'the_bumblezone:hive_pillar',
         'the_bumblezone:hive_wall',

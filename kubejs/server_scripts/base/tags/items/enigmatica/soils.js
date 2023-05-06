@@ -1,9 +1,6 @@
 ServerEvents.tags('item', (event) => {
     event.get(`enigmatica:soils/farmland`).add(['minecraft:farmland', 'farmersdelight:rich_soil_farmland']);
-    event.get(`enigmatica:soils/grass`).add([
-        'minecraft:grass_block',
-        'byg:overgrown_dacite'
-    ]);
+    event.get(`enigmatica:soils/grass`).add(['minecraft:grass_block', 'byg:overgrown_dacite']);
     event
         .get(`enigmatica:soils/dirt`)
         .add([
