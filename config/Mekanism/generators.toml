@@ -2,11 +2,11 @@
 #Mekanism Generators Config. This config is synced between server and client.
 [generators]
 	#Peak output for the Advanced Solar Generator. Note: It can go higher than this value in some extreme environments.
-	advancedSolarGeneration = "1"
+	advancedSolarGeneration = "300"
 	#Affects the Injection Rate, Max Temp, and Ignition Temp.
-	energyPerFusionFuel = "1"
+	energyPerFusionFuel = "10000000"
 	#Peak output for the Solar Generator. Note: It can go higher than this value in some extreme environments.
-	solarGeneration = "1"
+	solarGeneration = "50"
 
 	#Wind Generator Settings
 	[generators.wind_generator]
@@ -16,16 +16,16 @@
 		#The maximum Y value that affects the Wind Generators Power generation. This value gets clamped at the world's logical height.
 		maxY = 128
 		#Minimum base generation value of the Wind Generator.
-		windGenerationMin = "1"
+		windGenerationMin = "60"
 		#The list of dimension ids that the Wind Generator will not generate power in.
 		windGenerationDimBlacklist = ["minecraft:the_end", "minecraft:the_nether", "compactmachines:compact_world", "the_bumblezone:the_bumblezone"]
 		#Maximum base generation value of the Wind Generator.
-		generationMax = "1"
+		generationMax = "480"
 
 	#Turbine Settings
 	[generators.turbine]
 		#Amount of energy (J) that each block of the turbine contributes to the total energy capacity. Max = volume * energyCapacityPerVolume
-		energyCapacityPerVolume = "1"
+		energyCapacityPerVolume = "16000000"
 		#Amount of gas (mB) that each block of the turbine's steam cavity contributes to the volume. Max = volume * gasPerTank
 		#Range: 1 ~ 1773043451913643
 		gasPerTank = 64000
@@ -58,19 +58,19 @@
 		#The amount of lava in mB that gets consumed to transfer heatGeneration Joules to the Heat Generator.
 		heatGenerationFluidRate = 10
 		#Add this amount of Joules to the energy produced by a heat generator if it is in an 'ultrawarm' dimension, in vanilla this is just the Nether.
-		heatGenerationNether = "1"
+		heatGenerationNether = "100"
 		#Multiplier of effectiveness of Lava that is adjacent to the Heat Generator.
-		heatGenerationLava = "1"
+		heatGenerationLava = "30"
 		#The capacity in mB of the fluid tank in the Heat Generator.
 		#Range: > 1
 		tankCapacity = 24000
 		#Amount of energy in Joules the Heat Generator produces per tick. heatGeneration + heatGenerationLava * lavaSides + heatGenerationNether. Note: lavaSides is how many sides are adjacent to lava, this includes the block itself if it is lava logged allowing for a max of 7 "sides".
-		heatGeneration = "1"
+		heatGeneration = "200"
 
 	#Bio Generator Settings
 	[generators.bio_generator]
 		#Amount of energy in Joules the Bio Generator produces per tick.
-		bioGeneration = "1"
+		bioGeneration = "350"
 		#The capacity in mB of the fluid tank in the Bio Generator.
 		#Range: > 1
 		tankCapacity = 24000
@@ -113,7 +113,7 @@
 		#Range: 1.0 ~ 1.7976931348623157E308
 		surfaceAreaTarget = 4.0
 		#Amount of energy created (in heat) from each whole mB of fission fuel.
-		energyPerFissionFuel = "1"
+		energyPerFissionFuel = "1000000"
 
 	#Fusion Settings
 	[generators.fusion_reactor]
@@ -133,7 +133,7 @@
 		#Range: 2 ~ 1000000
 		fuelCapacity = 1000
 		#Amount of energy (J) the fusion reactor can store.
-		energyCapacity = "1"
+		energyCapacity = "1000000000"
 		#Amount of water (mB) per injection rate that the fusion reactor can store. Max = injectionRate * waterPerInjection
 		#Range: 1 ~ 21913098
 		waterPerInjection = 1000000

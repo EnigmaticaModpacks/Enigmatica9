@@ -214,16 +214,16 @@
 		#Range: 0.0 ~ 1.0
 		negativeEffectsMinSeverity = 0.1
 		#Enable worldwide radiation effects. Don't be a downer and disable this.
-		radiationEnabled = false
+		radiationEnabled = true
 
 	#SPS Settings
 	[general.sps]
 		#Energy needed to process 1 mB of input (inputPerAntimatter * energyPerInput = energy to produce 1 mB of antimatter).
-		energyPerInput = "25000"
+		energyPerInput = "1000000"
 		#Amount of output gas (mB, antimatter) that the SPS can store.
 		#Range: 1 ~ 9223372036854775807
 		outputTankCapacity = 1000
 		#How much input gas (polonium) in mB must be processed to make 1 mB of antimatter. Input tank capacity is 2x this value.
 		#Range: > 1
-		inputPerAntimatter = 100
+		inputPerAntimatter = 1000
 

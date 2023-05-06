@@ -20,7 +20,7 @@
 	#Base energy storage (Joules).
 	isotopicCentrifuge = "80000"
 	#Base energy storage (Joules). Also defines max output rate.
-	spsPort = "1000000"
+	spsPort = "1000000000"
 	#Base energy storage (Joules).
 	teleporter = "5000000"
 	#Base energy storage (Joules).
@@ -32,7 +32,7 @@
 	#Base energy storage (Joules).
 	crusher = "20000"
 	#Base energy storage (Joules).
-	pressurizedReactionBase = "160000"
+	pressurizedReactionBase = "2000"
 	#Base energy storage (Joules).
 	chemicalInfuser = "80000"
 	#Base energy storage (Joules).
@@ -48,7 +48,7 @@
 	#Base energy storage (Joules).
 	pigmentMixer = "80000"
 	#Base energy storage (Joules). Also defines max process rate.
-	antiprotonicNucleosynthesizer = "1000000"
+	antiprotonicNucleosynthesizer = "1000000000"
 	#Base energy storage (Joules).
 	combiner = "40000"
 	#Base energy storage (Joules).
