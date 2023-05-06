@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             result: { item: 'occultism:otherstone' },
-            ingredient: { item: 'blue_skies:lunar_stone' },
+            ingredient: { item: 'naturesaura:infused_stone' },
             id: 'occultism:spirit_fire/otherstone'
         }
     ];

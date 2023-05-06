@@ -330,7 +330,6 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:compressed_iron_boots',
                 'minecraft:diamond_boots',
                 'naturesaura:sky_shoes',
-                'blue_skies:charoite_boots',
                 'twilightforest:knightmetal_boots',
                 'twilightforest:steeleaf_boots'
             ],
@@ -392,7 +391,6 @@ ServerEvents.recipes((event) => {
                 'ars_elemental:mark_of_mastery',
                 '#forge:wires/electrum',
                 '#forge:wires/electrum',
-                'blue_skies:summoning_tome',
                 '#forge:wires/electrum',
                 '#forge:wires/electrum'
             ],
@@ -449,8 +447,8 @@ ServerEvents.recipes((event) => {
             inputs: [
                 '#forge:essences/conjuration',
                 '#forge:essences/conjuration',
-                'blue_skies:summoning_tome',
                 '#ars_nouveau:wilden_drop',
+                'twilightforest:raven_feather',
                 '#ars_nouveau:wilden_drop'
             ],
             reagents: ['ars_nouveau:blank_thread'],
