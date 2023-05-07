@@ -78,7 +78,7 @@ ServerEvents.recipes((event) => {
                 { item: 'minecraft:blaze_powder' },
                 { item: 'minecraft:blaze_powder' },
                 { item: 'minecraft:blaze_powder' },
-                { tag: 'forge:gems/sunstone_crystal' },
+                { tag: 'forge:gems/prismarine' },
                 { amount: 1000, fluidTag: 'forge:blood' }
             ],
             results: [{ item: 'powah:crystal_blazing', count: 4 }],

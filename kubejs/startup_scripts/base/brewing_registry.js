@@ -44,24 +44,9 @@ MoreJSEvents.registerPotionBrewing((event) => {
             output: 'minecraft:fire_resistance'
         },
         {
-            reagent: 'blue_skies:fiery_beans',
-            input: 'minecraft:awkward',
-            output: 'minecraft:strength'
-        },
-        {
-            reagent: 'blue_skies:scalefruit',
-            input: 'minecraft:awkward',
-            output: 'apotheosis:resistance'
-        },
-        {
             reagent: 'thermal:coffee',
             input: 'minecraft:awkward',
             output: 'apotheosis:haste'
-        },
-        {
-            reagent: 'blue_skies:cryo_root',
-            input: 'minecraft:awkward',
-            output: 'minecraft:slowness'
         },
         {
             reagent: 'cnb:pink_waterlily',
@@ -84,19 +69,9 @@ MoreJSEvents.registerPotionBrewing((event) => {
             output: 'minecraft:poison'
         },
         {
-            reagent: 'blue_skies:pink_brewberry',
-            input: 'minecraft:awkward',
-            output: 'minecraft:regeneration'
-        },
-        {
             reagent: 'minecraft:cocoa_beans',
             input: 'minecraft:awkward',
             output: 'minecraft:swiftness'
-        },
-        {
-            reagent: 'blue_skies:crescent_fruit',
-            input: 'minecraft:awkward',
-            output: 'minecraft:leaping'
         },
         {
             reagent: 'byg:death_cap',
@@ -122,11 +97,6 @@ MoreJSEvents.registerPotionBrewing((event) => {
             reagent: 'byg:ether_bulbs',
             input: 'minecraft:awkward',
             output: 'minecraft:invisibility'
-        },
-        {
-            reagent: 'blue_skies:lunar_vine',
-            input: 'minecraft:awkward',
-            output: 'minecraft:slow_falling'
         },
         {
             reagent: 'hexerei:mandrake_root',

@@ -4,7 +4,7 @@
 	order_index: 1
 	filename: "chapter_two"
 	title: "Chapter Two"
-	icon: "blue_skies:moonstone"
+	icon: "byg:subzero_crystal_cluster"
 	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -539,6 +539,66 @@
 				id: "2195222B1946B50B"
 				type: "item"
 				item: "ae2:printed_logic_processor"
+		}
+		{
+			x: 8.0d
+			y: -0.5d
+			id: "57861ABDB35ED555"
+			tasks: [{
+				id: "707735727FE79FB9"
+				type: "item"
+				item: {
+					id: "the_bumblezone:honey_compass"
+					Count: 1b
+					tag: {
+						CompassType: "structure"
+						TargetPos: {
+							X: -2480
+							Y: 0
+							Z: -1936
+						}
+						TargetDimension: "the_bumblezone:the_bumblezone"
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.5d
+			id: "55C6945D58D77AB6"
+			tasks: [{
+				id: "3CC2FBDD7AB29403"
+				type: "item"
+				item: {
+					id: "the_bumblezone:honey_compass"
+					Count: 1b
+					tag: {
+						Locked: 1b
+						CustomName: "item.the_bumblezone.honey_compass_throne_structure"
+						TargetPos: {
+							X: -1472
+							Y: 0
+							Z: -4688
+						}
+						CustomDescription: "item.the_bumblezone.honey_compass_throne_description"
+						CompassType: "structure"
+						TargetDimension: "the_bumblezone:the_bumblezone"
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.5d
+			id: "4CC418E7200DF351"
+			tasks: [{
+				id: "4F31450F59F287F9"
+				type: "item"
+				item: {
+					id: "the_bumblezone:honey_compass"
+					Count: 1b
+					tag: { }
+				}
 			}]
 		}
 	]

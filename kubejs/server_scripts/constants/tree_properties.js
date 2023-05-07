@@ -219,102 +219,6 @@ const tree_properties = {
             }
         },
         {
-            sapling: 'blue_skies:maple_sapling',
-            stems: ['blue_skies:maple_log'],
-            foliage: ['blue_skies:maple_leaves'],
-            fruits: [],
-            dimension: 'everdawn',
-            substrate: 'dirt',
-            logProcessing: {
-                sap: 'thermal:resin',
-                rate: { living: 50, dead: 6 }
-            }
-        },
-        {
-            sapling: 'blue_skies:dusk_sapling',
-            stems: ['blue_skies:dusk_log'],
-            foliage: ['blue_skies:dusk_leaves'],
-            fruits: [],
-            dimension: 'everdawn',
-            substrate: 'dirt',
-            logProcessing: {
-                sap: 'thermal:resin',
-                rate: { living: 50, dead: 6 }
-            }
-        },
-        {
-            sapling: 'blue_skies:lunar_sapling',
-            stems: ['blue_skies:lunar_log'],
-            foliage: ['blue_skies:lunar_leaves'],
-            fruits: [],
-            dimension: 'everdawn',
-            substrate: 'dirt',
-            logProcessing: {
-                sap: 'thermal:resin',
-                rate: { living: 50, dead: 6 }
-            }
-        },
-        {
-            sapling: 'blue_skies:crescent_fruit_sapling',
-            stems: ['blue_skies:dusk_log'],
-            foliage: ['blue_skies:crescent_fruit_leaves'],
-            fruits: ['blue_skies:crescent_fruit'],
-            dimension: 'everdawn',
-            substrate: 'dirt',
-            logProcessing: {
-                sap: 'thermal:resin',
-                rate: { living: 50, dead: 6 }
-            }
-        },
-        {
-            sapling: 'blue_skies:bluebright_sapling',
-            stems: ['blue_skies:bluebright_log'],
-            foliage: ['blue_skies:bluebright_leaves'],
-            fruits: [],
-            dimension: 'everbright',
-            substrate: 'dirt',
-            logProcessing: {
-                sap: 'thermal:resin',
-                rate: { living: 50, dead: 6 }
-            }
-        },
-        {
-            sapling: 'blue_skies:starlit_sapling',
-            stems: ['blue_skies:starlit_log'],
-            foliage: ['blue_skies:starlit_leaves'],
-            fruits: [],
-            dimension: 'everbright',
-            substrate: 'dirt',
-            logProcessing: {
-                sap: 'thermal:resin',
-                rate: { living: 50, dead: 6 }
-            }
-        },
-        {
-            sapling: 'blue_skies:frostbright_sapling',
-            stems: ['blue_skies:frostbright_log'],
-            foliage: ['blue_skies:frostbright_leaves'],
-            fruits: [],
-            dimension: 'everbright',
-            substrate: 'dirt',
-            logProcessing: {
-                sap: 'thermal:resin',
-                rate: { living: 50, dead: 6 }
-            }
-        },
-        {
-            sapling: 'blue_skies:cherry_sapling',
-            stems: ['blue_skies:cherry_log'],
-            foliage: ['blue_skies:cherry_leaves'],
-            fruits: ['blue_skies:cherry'],
-            dimension: 'everbright',
-            substrate: 'dirt',
-            logProcessing: {
-                sap: 'thermal:resin',
-                rate: { living: 50, dead: 6 }
-            }
-        },
-        {
             sapling: 'ars_elemental:yellow_archwood_sapling',
             stems: ['ars_elemental:yellow_archwood_log'],
             foliage: ['ars_elemental:yellow_archwood_leaves'],
@@ -1207,20 +1111,6 @@ const tree_properties = {
             foliage: ['byg:shulkren_wart_block', 'byg:purple_shroomlight', 'byg:shulkren_vine'],
             dimension: 'end',
             substrate: 'end_mushroom'
-        },
-        {
-            sapling: 'blue_skies:snowcap_pinhead',
-            stems: ['blue_skies:snowcap_mushroom_stem'],
-            foliage: ['blue_skies:snowcap_mushroom_block'],
-            dimension: 'everbright',
-            substrate: 'mushroom'
-        },
-        {
-            sapling: 'blue_skies:snowcap_mushroom',
-            stems: ['blue_skies:snowcap_mushroom_stem'],
-            foliage: ['blue_skies:snowcap_mushroom_block'],
-            dimension: 'everbright',
-            substrate: 'mushroom'
         }
     ]
 };

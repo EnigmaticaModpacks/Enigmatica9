@@ -3,7 +3,6 @@
 const cobbleworks = {
     basalts: ['minecraft:basalt', 'quark:myalite', 'quark:dusky_myalite', 'minecraft:end_stone'],
     cobblestones: [
-        'blue_skies:turquoise_cobblestone',
         'byg:cobbled_ether_stone',
         'byg:dacite_cobblestone',
         'byg:purpur_stone',
@@ -14,14 +13,6 @@ const cobbleworks = {
         'minecraft:cobbled_deepslate'
     ],
     stones: [
-        'blue_skies:blinding_stone',
-        'blue_skies:crystal_sandstone',
-        'blue_skies:lunar_stone',
-        'blue_skies:midnight_sandstone',
-        'blue_skies:nature_stone',
-        'blue_skies:poison_stone',
-        'blue_skies:rimestone',
-        'blue_skies:turquoise_stone',
         'byg:black_sandstone',
         'byg:blue_sandstone',
         'byg:brimstone',

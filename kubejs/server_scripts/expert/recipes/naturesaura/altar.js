@@ -44,20 +44,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}steeleaf_ingot`
         },
         {
-            output: '4x blue_skies:sunstone_crystal',
-            input: 'blue_skies:moonstone_block',
-            aura: 100000,
-            time: 600,
-            id: `${id_prefix}sunstone_block`
-        },
-        {
-            output: '4x blue_skies:moonstone_crystal',
-            input: 'blue_skies:sunstone_block',
-            aura: 100000,
-            time: 600,
-            id: `${id_prefix}moonstone_block`
-        },
-        {
             output: 'rftoolsbase:dimensionalshard',
             input: 'ae2:charged_certus_quartz_crystal',
             catalyst: 'naturesaura:conversion_catalyst',

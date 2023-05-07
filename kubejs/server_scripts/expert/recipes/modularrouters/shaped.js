@@ -68,7 +68,7 @@ ServerEvents.recipes((event) => {
             output: 'modularrouters:sender_module_2',
             pattern: [' A ', 'ABA', ' C '],
             key: {
-                A: 'blue_skies:soul_fragment',
+                A: 'spirit:soul_powder',
                 B: 'modularrouters:blank_module',
                 C: 'pneumaticcraft:omnidirectional_hopper'
             },
@@ -78,7 +78,7 @@ ServerEvents.recipes((event) => {
             output: 'modularrouters:puller_module_2',
             pattern: [' C ', 'ABA', ' A '],
             key: {
-                A: 'blue_skies:soul_fragment',
+                A: 'spirit:soul_powder',
                 B: 'modularrouters:blank_module',
                 C: 'pneumaticcraft:omnidirectional_hopper'
             },
@@ -88,7 +88,7 @@ ServerEvents.recipes((event) => {
             output: 'modularrouters:sender_module_3',
             pattern: [' D ', 'ABA', ' C '],
             key: {
-                A: 'blue_skies:soul_fragment',
+                A: 'spirit:soul_powder',
                 B: 'modularrouters:blank_module',
                 C: 'pneumaticcraft:omnidirectional_hopper',
                 D: 'mekanism:teleportation_core'
@@ -99,7 +99,7 @@ ServerEvents.recipes((event) => {
             output: 'modularrouters:distributor_module',
             pattern: ['ACA', 'CBC', 'ACA'],
             key: {
-                A: 'blue_skies:soul_fragment',
+                A: 'spirit:soul_powder',
                 B: 'modularrouters:blank_module',
                 C: 'pneumaticcraft:omnidirectional_hopper'
             },
@@ -120,7 +120,7 @@ ServerEvents.recipes((event) => {
             pattern: [' A ', 'BCB', ' B '],
             key: {
                 A: 'pneumaticcraft:liquid_hopper',
-                B: 'blue_skies:soul_fragment',
+                B: 'spirit:soul_powder',
                 C: 'modularrouters:blank_module'
             },
             id: 'modularrouters:fluid_module_2'
@@ -139,7 +139,7 @@ ServerEvents.recipes((event) => {
             output: 'modularrouters:energy_distributor_module',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
-                A: 'blue_skies:soul_fragment',
+                A: 'spirit:soul_powder',
                 B: 'powah:energizing_rod_basic',
                 C: 'modularrouters:blank_module'
             },

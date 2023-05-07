@@ -9,17 +9,6 @@
 			purple_archwood = true
 			red_archwood = true
 
-		[types.leaves_type.blue_skies]
-			crystallized = true
-			crescent_fruit = true
-			bluebright = true
-			starlit = true
-			frostbright = true
-			lunar = true
-			dusk = true
-			maple = true
-			cherry = true
-
 		[types.leaves_type.twilightforest]
 			beanstalk = true
 			thorn = true
@@ -124,16 +113,6 @@
 
 		[types.wood_type.ars_nouveau]
 			archwood = true
-
-		[types.wood_type.blue_skies]
-			crystallized = true
-			bluebright = true
-			starlit = true
-			frostbright = true
-			lunar = true
-			dusk = true
-			maple = true
-			cherry = true
 
 		[types.wood_type.quark]
 			azalea = true
@@ -349,53 +328,6 @@
 			polished_willow = true
 			witch_hazel = true
 			polished_witch_hazel = true
-
-		[types.cut_block_type.blue_skies]
-			nature_stone = true
-			glowing_nature_stone = true
-			nature_stonebrick = true
-			glowing_nature_stonebrick = true
-			poison_stone = true
-			glowing_poison_stone = true
-			poison_stonebrick = true
-			rough_poison_stonebrick = true
-			bluebright = true
-			starlit = true
-			frostbright = true
-			lunar = true
-			dusk = true
-			maple = true
-			cherry = true
-			crystallized = true
-			turquoise_stone = true
-			turquoise_cobblestone = true
-			mossy_turquoise_cobblestone = true
-			turquoise_stonebrick = true
-			mossy_turquoise_stonebrick = true
-			cracked_turquoise_stonebrick = true
-			midnight_sandstone = true
-			smooth_midnight_sandstone = true
-			brumble = true
-			polished_brumble = true
-			polished_brumble_brick = true
-			taratite = true
-			polished_taratite = true
-			rimestone = true
-			polished_rimestone = true
-			lunar_stone = true
-			lunar_cobblestone = true
-			mossy_lunar_cobblestone = true
-			lunar_stonebrick = true
-			mossy_lunar_stonebrick = true
-			cracked_lunar_stonebrick = true
-			crystal_sandstone = true
-			smooth_crystal_sandstone = true
-			cut_midnight_sandstone = true
-			cut_crystal_sandstone = true
-			umber = true
-			polished_umber = true
-			cinderstone = true
-			polished_cinderstone = true
 
 		[types.cut_block_type.twilightforest]
 			twilight_oak = true

@@ -4,7 +4,7 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             fluid_output: { amount: 180, fluid: 'pneumaticcraft:vegetable_oil' },
-            item_input: [{ item: 'thermal:peanut' }, { item: 'blue_skies:solnut' }],
+            item_input: [{ item: 'thermal:peanut' }],
             exothermic: false,
             pressure: 2.0,
             speed: 0.5,
@@ -12,7 +12,7 @@ ServerEvents.recipes((event) => {
         },
         {
             fluid_output: { amount: 120, fluid: 'pneumaticcraft:vegetable_oil' },
-            item_input: [{ item: 'thermal:corn' }, { item: 'blue_skies:fiery_beans' }],
+            item_input: [{ item: 'thermal:corn' }],
             exothermic: false,
             pressure: 2.0,
             speed: 0.5,
@@ -55,10 +55,7 @@ ServerEvents.recipes((event) => {
             item_input: [
                 { item: 'minecraft:apple' },
                 { item: 'minecraft:sugar_cane' },
-                { item: 'minecraft:sweet_berries' },
-                { item: 'blue_skies:brewberry' },
-                { item: 'blue_skies:pink_brewberry' },
-                { item: 'blue_skies:black_brewberry' }
+                { item: 'minecraft:sweet_berries' }
             ],
             exothermic: true,
             speed: 0.25,
