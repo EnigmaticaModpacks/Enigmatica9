@@ -274,6 +274,12 @@ ServerEvents.recipes((event) => {
         { id: `spirit:soul_engulfing/soul_steel` },
         { id: `spirit:soul_engulfing/soul_steel_block` },
 
+        { id: 'starbunclemania:fluid_jar' },
+        { id: 'starbunclemania:fluid_sourcelink' },
+        { id: 'starbunclemania:star_battery' },
+        { id: 'starbunclemania:star_bucket' },
+        { id: 'starbunclemania:star_bin' },
+
         { id: 'supplementaries:jar' },
         { id: 'supplementaries:soap' },
 

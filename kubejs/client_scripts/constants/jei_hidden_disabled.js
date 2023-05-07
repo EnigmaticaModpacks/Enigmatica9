@@ -513,6 +513,7 @@ jei.expert.recipes.hidden = [
             'naturesaura:dimension_rail_overworld',
             'naturesaura:animal_spawner',
             'naturesaura:rf_converter',
+            'naturesaura:calling_spirit',
             'ars_nouveau:imbuement_chamber',
             'ars_nouveau:mycelial_sourcelink',
             'ars_nouveau:vitalic_sourcelink',
@@ -577,7 +578,7 @@ jei.expert.recipes.hidden = [
     },
     {
         category: 'ars_nouveau:imbuement',
-        recipes_by_id: []
+        recipes_by_id: ['ars_nouveau:imbuement_lapis']
     },
     {
         category: 'ars_nouveau:enchanting_apparatus',

@@ -502,6 +502,48 @@ ServerEvents.recipes((event) => {
             ],
             pressure: 4.0,
             id: `${id_prefix}compactmachines_wall`
+        },
+        {
+            results: [{ item: 'starbunclemania:star_battery', count: 1 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'powah:capacitor_basic_large', count: 64 },
+                { tag: 'hexerei:small_satchels' }
+            ],
+            pressure: 2.0,
+            id: `${id_prefix}star_battery_basic`
+        },
+        {
+            results: [{ item: 'starbunclemania:star_battery', count: 1 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'powah:capacitor_niotic', count: 16 },
+                { tag: 'hexerei:small_satchels' }
+            ],
+            pressure: 2.0,
+            id: `${id_prefix}star_battery_niotic`
+        },
+        {
+            results: [{ item: 'starbunclemania:star_battery', count: 1 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'powah:capacitor_spirited', count: 4 },
+                { tag: 'hexerei:small_satchels' }
+            ],
+            pressure: 2.0,
+            id: `${id_prefix}star_battery_spirited`
+        },
+        {
+            results: [{ item: 'starbunclemania:star_battery', count: 1 }],
+            inputs: [{ item: 'powah:capacitor_nitro' }, { tag: 'hexerei:small_satchels' }],
+            pressure: 2.0,
+            id: `${id_prefix}star_battery_nitro`
+        },
+        {
+            results: [{ item: 'starbunclemania:star_bucket', count: 1 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'thermal:fluid_cell_frame', count: 8 },
+                { tag: 'hexerei:small_satchels' }
+            ],
+            pressure: 2.0,
+            id: `${id_prefix}star_bucket`
         }
     ];
 

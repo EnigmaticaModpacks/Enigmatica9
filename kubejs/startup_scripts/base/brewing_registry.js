@@ -204,7 +204,7 @@ MoreJSEvents.registerPotionBrewing((event) => {
             output: 'apotheosis:strong_fatigue'
         },
         {
-            reagent: 'hexerei:mandrake_flower',
+            reagent: 'hexerei:dried_mandrake_flowers',
             input: 'minecraft:awkward',
             output: 'minecraft:slowness'
         },
@@ -232,6 +232,31 @@ MoreJSEvents.registerPotionBrewing((event) => {
             reagent: 'thermal:amaranth',
             input: 'minecraft:awkward',
             output: 'minecraft:slow_falling'
+        },
+        {
+            reagent: 'thermal:sadiroot',
+            input: 'minecraft:awkward',
+            output: 'quark:resilience'
+        },
+        {
+            reagent: 'hexerei:dried_belladonna_flowers',
+            input: 'minecraft:awkward',
+            output: 'minecraft:water_breathing'
+        },
+        {
+            reagent: 'hexerei:dried_yellow_dock_flowers',
+            input: 'minecraft:awkward',
+            output: 'minecraft:strength'
+        },
+        {
+            reagent: 'hexerei:dried_sage',
+            input: 'minecraft:awkward',
+            output: 'minecraft:invisibility'
+        },
+        {
+            reagent: 'minecraft:honeycomb',
+            input: 'minecraft:awkward',
+            output: 'minecraft:healing'
         }
     ];
 

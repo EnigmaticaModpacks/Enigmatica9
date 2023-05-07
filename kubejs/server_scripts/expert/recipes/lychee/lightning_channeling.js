@@ -51,6 +51,39 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}dim_arcanite_crystal`
+        },
+        {
+            item_in: [
+                { tag: 'forge:dusts/subzero' },
+                { tag: 'forge:essences/air' },
+                { tag: 'forge:essences/fire' },
+                { tag: 'forge:essences/water' },
+                { tag: 'forge:essences/earth' }
+            ],
+            post: [
+                {
+                    type: 'drop_item',
+                    item: 'naturesaura:calling_spirit',
+                    count: 4
+                }
+            ],
+            id: `${id_prefix}calling_spirit`
+        },
+        {
+            item_in: [
+                { item: 'immersiveengineering:balloon' },
+                { tag: 'forge:essences/air' },
+                { item: 'ars_nouveau:magebloom_fiber' },
+                { item: 'ars_nouveau:magebloom_fiber' }
+            ],
+            post: [
+                {
+                    type: 'drop_item',
+                    item: 'starbunclemania:star_balloon',
+                    count: 4
+                }
+            ],
+            id: `${id_prefix}star_balloon`
         }
     ];
 

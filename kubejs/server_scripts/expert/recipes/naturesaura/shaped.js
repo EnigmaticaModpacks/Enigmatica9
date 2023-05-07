@@ -48,18 +48,6 @@ ServerEvents.recipes((event) => {
             id: `naturesaura:field_creator`
         },
         {
-            output: '4x naturesaura:calling_spirit',
-            pattern: [' A ', 'BEC', ' D '],
-            key: {
-                A: '#forge:essences/air',
-                B: '#forge:essences/fire',
-                C: '#forge:essences/water',
-                D: '#forge:essences/earth',
-                E: '#forge:gems/niotic'
-            },
-            id: `naturesaura:calling_spirit`
-        },
-        {
             output: 'naturesaura:projectile_generator',
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {

@@ -57,6 +57,30 @@ ServerEvents.recipes((event) => {
             aura: 18000,
             time: 60,
             id: `naturesaura:altar/prismarine`
+        },
+        {
+            output: 'minecraft:golden_apple',
+            input: 'create:honeyed_apple',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 60000,
+            time: 200,
+            id: `${id_prefix}golden_apple`
+        },
+        {
+            output: 'minecraft:golden_carrot',
+            input: 'minecraft:carrot',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 30000,
+            time: 100,
+            id: `${id_prefix}golden_carrot`
+        },
+        {
+            output: 'minecraft:glistering_melon_slice',
+            input: 'minecraft:melon_slice',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 6000,
+            time: 20,
+            id: `${id_prefix}glistering_melon_slice`
         }
     ];
 

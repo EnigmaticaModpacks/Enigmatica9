@@ -66,6 +66,21 @@ ServerEvents.recipes((event) => {
             slag: 'thermal:rich_slag',
             xp: 0.5,
             id_suffix: `nickel_clump_from_raw_ore`
+        },
+        {
+            output: `twilightforest:knightmetal_ingot`,
+            input: `#forge:ores/knightmetal`,
+            slag: 'thermal:slag',
+            xp: 0.5,
+            id_suffix: `knightmetal_ingot_from_shard_cluster`
+        },
+
+        {
+            output: '4x occultism:burnt_otherstone',
+            input: 'occultism:otherstone',
+            slag: 'thermal:slag',
+            xp: 0.5,
+            id: `burnt_otherstone`
         }
     ];
 
