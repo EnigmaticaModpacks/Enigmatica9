@@ -534,10 +534,15 @@
 			}]
 		}
 		{
+			title: "Telling of the Bees"
 			x: 7.5d
 			y: 0.0d
 			shape: "hexagon"
-			description: ["It is said that bees are keepers of a certain kind of magic to travel in spaces between the very threads of magic that infuse all things. Perhaps it’s time to seek out their aid in travelling further. "]
+			description: [
+				"In places that still keep the old ways, bees hold a privileged position in community life. From the birth of a child to the death of a friend, news of important events are shared first with the bees. "
+				""
+				"It seems likely that as the Cult of the Ur-Ghast rose in prominence in this place, the druids of the Wilden Grove may have discussed the events with the bees, perhaps even seeking advice from the Queen. Seek her out to see if she has any clues to offer. "
+			]
 			id: "4CC418E7200DF351"
 			tasks: [{
 				id: "4F31450F59F287F9"

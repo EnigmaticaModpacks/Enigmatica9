@@ -65,7 +65,11 @@
 			x: -5.5d
 			y: -5.0d
 			shape: "hexagon"
-			description: ["Seek out the Naga that lords over the forest denizens and end it in a display of solidarity with the fae creatures it terrorizes. "]
+			description: [
+				"Strange. At one time, this fen was kept by the Wilden Grove, a circle of druids sworn to preserve and watch over the surrounding wildlands. Yet no sign remains and creature such as this Naga now terrorize the lands. "
+				""
+				"Defeat it and display its head to show the Fae of this land that its tyranny has come to an end. They’ll undoubtedly be grateful. "
+			]
 			id: "73CDA6ED2393DE42"
 			tasks: [{
 				id: "34B9CD591F64D0B0"
@@ -158,9 +162,12 @@
 			x: -3.5d
 			y: -2.5d
 			description: [
-				"This potent device will allow us to imbue items with the latent magic found in all things. It will operate very slowly until we can begin feeding energy into it directly."
+				""
+				"This potent device allows one to imbue items with the latent magic of the realm. It operates slowly on its own, though it will speed up if Source is provided from a nearby jar."
 				""
 				"The focus items placed on pedestals nearby are never consumed and act merely as a key to determine the result."
+				""
+				"The Wilden Grove was well known for the high-quality Amethyst they’d extract from the earth. Undoubtedly, some can be found in the ruins of their homes or within the hills where they used their magic to concentrate precious materials for less damaging extraction. "
 			]
 			dependencies: [
 				"66A59B3CD77FB54A"
@@ -197,11 +204,11 @@
 			x: -3.5d
 			y: -1.5d
 			description: [
-				"To begin extracting more useful amounts of magical energies, we’ll need to begin pursuing alchemy and brewing. By distilling down various natural ingredients, we can tap into their latent energies more easily. "
+				"To begin extracting more useful amounts of magical energies, we’ll need to begin pursuing alchemy and brewing. By distilling down various natural ingredients, we can tap into their energies more easily. "
 				""
 				"Potions of Ancient Knowledge should be well within reach and may be brewed in the Mixing Cauldron. Once brewed, right click the Cauldron with some Glass Bottles to extract the potions. "
 				""
-				"From there, a Wixie will make a wonderful friend for automatically crafting more potions and providing them to Potion Jars for use by the Alchemical Sourcelink."
+				"From there, a Wixie will make a wonderful friend for automatically crafting more potions and providing them to Potion Jars for use with the Alchemical Sourcelink."
 			]
 			dependencies: [
 				"6DBB9A9F698FA7B9"
@@ -475,7 +482,11 @@
 		{
 			x: -2.0d
 			y: 2.0d
-			description: ["Use the Spirit of Calling to grow the Tree of Life somewhere in the Twilight Forest. Choose your spot carefully, as this same tree will be upgraded as you progress through the pack. "]
+			description: [
+				"Use the Spirit of Calling to grow the Tree of Life somewhere in the Twilight Forest. "
+				""
+				"Any location will do; however, the tree will grow as you progress so a large clearing will be best. "
+			]
 			dependencies: ["729E9D41A28D0E4D"]
 			id: "668B76A0085B4054"
 			tasks: [{
@@ -547,7 +558,11 @@
 			x: -7.0d
 			y: -5.0d
 			shape: "hexagon"
-			description: ["Obtain a feather from a Raven. They may be found throughout the Twilight Forest."]
+			description: [
+				"The ravens were once the honored companions of the Wilden Grove, working beside them to watch over these lands and carry messages where needed. Even with the Grove missing, the Ravens continue their vigil. "
+				""
+				"Obtain a Raven’s feather and use it to begin creating Essence of Air."
+			]
 			id: "65F93CF297E5B720"
 			tasks: [{
 				id: "3B27C0BE5E2BE901"
@@ -657,6 +672,11 @@
 			x: -2.0d
 			y: 1.0d
 			shape: "hexagon"
+			description: [
+				"With the elements mastered, only one task remains before the Tree of Life may be restored: Winter’s Reign must end. "
+				""
+				"Travel to the frozen glaciers where the Snow Queen resides and defeat her. "
+			]
 			id: "729E9D41A28D0E4D"
 			tasks: [{
 				id: "0FC4B74A9A5ACFFC"
@@ -680,9 +700,9 @@
 			x: -5.5d
 			y: -4.0d
 			description: [
-				"With the seeds, herbs, and saplings found among the remains of the Naga, a garden should be top priority. A number of these plants appear to have potent magical properties that will prove invaluable. "
+				"With the seeds, herbs, and saplings found among the remains of the Naga, its time to take root, so to speak, and lay out a garden. A number of these plants appear to possess potent magical properties that will prove invaluable."
 				""
-				"Brewing Magebloom Seeds from these plants should be a simple task and will allow the creation of this powerful essence."
+				"Prepare some Magebloom Seeds from these plants in order to begin creating this essence."
 			]
 			dependencies: ["73CDA6ED2393DE42"]
 			id: "087CFEB4B77FAE9B"

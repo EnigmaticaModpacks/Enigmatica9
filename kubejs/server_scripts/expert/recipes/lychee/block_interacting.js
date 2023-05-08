@@ -53,7 +53,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}mixing_cauldron`
         },
         {
-            item_in: { tag: 'forge:plates/bronze' },
+            item_in: { tag: 'forge:ingots/bronze' },
             block_in: 'ars_nouveau:green_archwood_wood',
             post: [
                 { type: 'place', block: 'ars_nouveau:imbuement_chamber' },
