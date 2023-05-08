@@ -94,6 +94,12 @@ ServerEvents.recipes((event) => {
             itemInput: { ingredient: { tag: 'forge:gems/prismarine' } },
             chemicalInput: { infuse_type: 'emendatusenigmatica:fire_essence', amount: 40 },
             id: `${id_prefix}crystal_blazing`
+        },
+        {
+            output: 'create:sturdy_sheet',
+            itemInput: { ingredient: { tag: 'forge:dusts/obsidian' } },
+            chemicalInput: { infuse_type: 'emendatusenigmatica:fire_essence', amount: 10 },
+            id: `${id_prefix}sturdy_sheet`
         }
     ];
 

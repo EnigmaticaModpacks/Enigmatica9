@@ -323,7 +323,7 @@
 			icon: "ae2:energy_acceptor"
 			x: -3.5d
 			y: -0.5d
-			description: ["It’s time we start putting some of this magic to use getting organized. With the Aura Forge providing basic magical energy, we can channel our magical energies into these crystalline networks, allowing us to craft and sort more readily. "]
+			description: ["It’s time we start putting some of this magic to use getting organized. With an Pulsating Crystal acting as a conduit, we can channel our magical energies into these crystalline networks, allowing us to craft and sort more easily. "]
 			dependencies: ["3B372F597A05E777"]
 			id: "4FEF700D65A68CFB"
 			tasks: [
@@ -473,63 +473,15 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: -4.0d
-			description: [
-				"Use the Spirit of Calling to grow the Tree of Life somewhere in the Twilight Forest. Choose your spot carefully, as this same tree will be upgraded as you progress through the pack. "
-				""
-				"Once the tree has been grown, it is possible to teleport to the Everdawn and Everbright, the next step of your journey. "
-				""
-				"Obtain a Block of Moonstone from the Ice Queen. Upon placing it under Water, new crystals will grow from its sides. "
-				""
-				"A block of Moonstone may also be suffused with daylight in a Natural Altar to create a Sunstone which may then be grown in a manner similar to Moonstone. "
-			]
+			x: -2.0d
+			y: 2.0d
+			description: ["Use the Spirit of Calling to grow the Tree of Life somewhere in the Twilight Forest. Choose your spot carefully, as this same tree will be upgraded as you progress through the pack. "]
 			dependencies: ["729E9D41A28D0E4D"]
 			id: "668B76A0085B4054"
 			tasks: [{
 				id: "156E6D2ED289EC8F"
 				type: "item"
 				item: "naturesaura:calling_spirit"
-			}]
-		}
-		{
-			icon: "blue_skies:moonstone_crystal"
-			x: 1.0d
-			y: -3.0d
-			shape: "hexagon"
-			description: [
-				"The moon known as the Everbright is a chill place of ice, snow, and roaming spirits. "
-				""
-				"Be certain to attune a Stabilized Warp Scroll to the Twilight Forest before departing and another upon arrival to facilitate travel back and forth, as these rituals are imperfect and prone to drift."
-			]
-			dependencies: ["668B76A0085B4054"]
-			id: "7276D9139B1BA355"
-			tasks: [{
-				id: "535A2F97D5754B17"
-				type: "dimension"
-				title: "Visit the Everbright"
-				icon: "blue_skies:moonstone_crystal"
-				dimension: "blue_skies:everbright"
-			}]
-		}
-		{
-			icon: "blue_skies:sunstone_crystal"
-			x: 2.0d
-			y: -3.0d
-			shape: "hexagon"
-			description: [
-				"The moon known as the Everdawn is a place of warmth and dangerous insects."
-				""
-				"Be certain to attune a Stabilized Warp Scroll to the Twilight Forest before departing and another upon arrival to facilitate travel back and forth, as these rituals are imperfect and prone to drift."
-			]
-			dependencies: ["668B76A0085B4054"]
-			id: "163E0DFCB52AF4AB"
-			tasks: [{
-				id: "31596C34895C8006"
-				type: "dimension"
-				title: "Visit the Everdawn"
-				icon: "blue_skies:sunstone_crystal"
-				dimension: "blue_skies:everdawn"
 			}]
 		}
 		{
@@ -702,8 +654,8 @@
 		}
 		{
 			icon: "twilightforest:snow_queen_trophy"
-			x: 1.5d
-			y: -5.0d
+			x: -2.0d
+			y: 1.0d
 			shape: "hexagon"
 			id: "729E9D41A28D0E4D"
 			tasks: [{

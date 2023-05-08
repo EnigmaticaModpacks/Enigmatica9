@@ -871,25 +871,17 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_craft_fluid_laser_base`
         },
         {
-            output: '4x kubejs:energetic_transference_matrix',
-            activation_item: 'occultism:book_of_binding_bound_djinni',
+            output: 'kubejs:energetic_transference_matrix',
+            activation_item: 'naturesaura:calling_spirit',
             inputs: [
                 'pneumaticcraft:logistics_core',
-                'pneumaticcraft:logistics_core',
-                'pneumaticcraft:logistics_core',
-                'pneumaticcraft:logistics_core',
+                'ae2:quantum_entangled_singularity',
                 'mekanism:teleportation_core',
-                '#forge:gems/blazing',
-                'mekanism:teleportation_core',
-                '#forge:gems/blazing',
-                '#forge:gems/blazing',
-                'mekanism:teleportation_core',
-                '#forge:gems/blazing',
-                'mekanism:teleportation_core'
+                'ae2:quantum_entangled_singularity'
             ],
             ritual_dummy: 'kubejs:ritual_craft_energetic_transference_matrix',
             ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:craft_djinni',
+            pentacle_id: 'occultism:tree_of_life_stage_1',
             duration: 10,
             id: `${id_prefix}ritual_craft_energetic_transference_matrix`
         },
@@ -949,56 +941,6 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:summon_foliot',
             duration: 60,
             id: `${id_prefix}ritual_tree_of_life_1`
-        },
-        {
-            output: 'kubejs:teleport_everdawn',
-            activation_item: '#forge:gems/sunstone_crystal',
-            inputs: [
-                '#forge:ingots/skies',
-                'naturesaura:gold_leaf',
-                '#forge:essences/air',
-                'naturesaura:gold_leaf',
-
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-                'ae2:sky_dust'
-            ],
-            ritual_dummy: 'kubejs:ritual_teleport_everdawn',
-            ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:tree_of_life_stage_1',
-            duration: 10,
-            id: `${id_prefix}ritual_teleport_everdawn`
-        },
-        {
-            output: 'kubejs:teleport_everbright',
-            activation_item: '#forge:gems/moonstone_crystal',
-            inputs: [
-                '#forge:ingots/skies',
-                'naturesaura:gold_leaf',
-                '#forge:essences/air',
-                'naturesaura:gold_leaf',
-
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-                'ae2:sky_dust'
-            ],
-            ritual_dummy: 'kubejs:ritual_teleport_everbright',
-            ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:tree_of_life_stage_1',
-            duration: 10,
-            id: `${id_prefix}ritual_teleport_everbright`
         },
         {
             output: 'kubejs:teleport_nether',

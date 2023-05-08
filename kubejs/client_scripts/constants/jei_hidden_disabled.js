@@ -244,6 +244,7 @@ jei.expert.items.disabled = [
     'ars_nouveau:vitalic_sourcelink',
     'ars_nouveau:volcanic_sourcelink',
     'ars_nouveau:ritual_wilden_summon',
+
     'compactmachines:chunkloader_upgrade',
     'constructionwand:iron_wand',
     'constructionwand:stone_wand',
@@ -418,6 +419,7 @@ jei.expert.items.disabled = [
     'naturesaura:dimension_rail_nether',
     'naturesaura:dimension_rail_overworld',
     'naturesaura:rf_converter',
+
     /occultism:chalk_.*_impure/,
     'pneumaticcraft:advanced_air_compressor',
     'pneumaticcraft:advanced_liquid_compressor',

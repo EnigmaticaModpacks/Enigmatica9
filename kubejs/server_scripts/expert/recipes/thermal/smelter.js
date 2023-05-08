@@ -159,6 +159,12 @@ ServerEvents.recipes((event) => {
             outputs: ['4x minecraft:netherite_ingot'],
             energy: 20000,
             id: `${id_prefix}netherite_ingot`
+        },
+        {
+            inputs: ['pneumaticcraft:logistics_core', 'ae2:singularity', 'mekanism:teleportation_core'],
+            outputs: ['2x kubejs:energetic_transference_matrix'],
+            energy: 8000,
+            id: `${id_prefix}netherite_ingot`
         }
     ];
 

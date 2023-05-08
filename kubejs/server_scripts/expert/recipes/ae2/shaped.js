@@ -49,21 +49,23 @@ ServerEvents.recipes((event) => {
         },
         {
             output: '3x ae2:annihilation_core',
-            pattern: ['AAA', 'BCB'],
+            pattern: [' B ', 'DCA', ' B '],
             key: {
-                A: '#forge:gems/moonstone_crystal',
+                A: '#forge:gems/subzero',
                 B: '#forge:dusts/fluix',
-                C: 'pneumaticcraft:logistics_core'
+                C: 'pneumaticcraft:logistics_core',
+                D: 'quark:rainbow_rune'
             },
             id: `ae2:materials/annihilationcore`
         },
         {
             output: '3x ae2:formation_core',
-            pattern: ['AAA', 'BCB'],
+            pattern: [' B ', 'ACD', ' B '],
             key: {
-                A: '#forge:gems/sunstone_crystal',
+                A: '#forge:gems/therium',
                 B: '#forge:dusts/fluix',
-                C: 'pneumaticcraft:logistics_core'
+                C: 'pneumaticcraft:logistics_core',
+                D: 'quark:rainbow_rune'
             },
             id: `ae2:materials/formationcore`
         },

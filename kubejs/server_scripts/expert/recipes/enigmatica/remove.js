@@ -46,7 +46,10 @@ ServerEvents.recipes((event) => {
         { id: 'ae2:network/parts/quartz_fiber_part' },
         { id: 'ae2:network/wireless_terminal' },
         { id: 'ae2:network/upgrade_wireless_crafting_terminal' },
+        { id: 'ae2:network/blocks/io_condenser' },
         { id: 'ae2:transform/fluix_crystals' },
+        { id: 'ae2:transform/entangled_singularity' },
+        { id: 'ae2:transform/entangled_singularity_from_pearl' },
         { id: 'ae2:misc/fluixpearl' },
 
         { id: 'constructionwand:stone_wand' },
@@ -79,6 +82,8 @@ ServerEvents.recipes((event) => {
         { id: /emendatusenigmatica:rod\/from_ingot/ },
         { id: /emendatusenigmatica:gear\/from_ingot/ },
         { id: /emendatusenigmatica:dust\/from_gem/ },
+
+        { id: `enigmaticunity:dim_source_producer` },
 
         { id: 'farmersdelight:integration/immersiveengineering/metalpress/pumpkin' },
 

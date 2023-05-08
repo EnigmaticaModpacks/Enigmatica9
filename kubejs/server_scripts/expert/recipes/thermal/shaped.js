@@ -303,13 +303,13 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'thermal:machine_smelter',
-            pattern: ['ABA', 'CDC', 'ECE'],
+            pattern: ['AAA', 'BCB', 'DED'],
             key: {
-                A: '#forge:plates/obsidian',
-                B: 'naturesaura:furnace_heater',
-                C: '#forge:ingots/fiery',
-                D: 'minecraft:blast_furnace',
-                E: 'naturesaura:infused_brick'
+                A: '#forge:plates/aluminum',
+                B: 'naturesaura:infused_brick',
+                C: 'minecraft:blast_furnace',
+                D: 'immersiveengineering:blastbrick_reinforced',
+                E: 'immersiveengineering:rs_engineering'
             },
             id: 'thermal:machine_smelter'
         }

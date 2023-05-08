@@ -55,8 +55,8 @@
         "matterCannon": 200000
     },
     "worldGen": {
-        "spawnPressesInMeteorites": true,
-        "generateMeteorites": true
+        "spawnPressesInMeteorites": false,
+        "generateMeteorites": false
     },
     "wireless": {
         "wirelessBaseCost": 8.0,
@@ -72,12 +72,12 @@
         "allowDisassembly": true
     },
     "PowerRatios": {
-        "ForgeEnergy": 0.5,
+        "ForgeEnergy": 1.0,
         "UsageMultiplier": 1.0
     },
     "Condenser": {
-        "MatterBalls": 256,
-        "Singularity": 256000
+        "MatterBalls": 64,
+        "Singularity": 16000
     },
     "tickRates": {
         "_comment": " Min / Max Tickrates for dynamic ticking, most of these components also use sleeping, to prevent constant ticking, adjust with care, non standard rates are not supported or tested.",

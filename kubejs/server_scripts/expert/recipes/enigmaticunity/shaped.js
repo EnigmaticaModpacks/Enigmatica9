@@ -6,12 +6,12 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             output: 'enigmaticunity:dim_source_producer',
-            pattern: ['AAA', 'ABA'],
+            pattern: ['A', 'B'],
             key: {
-                A: 'spirit:soul_glass',
+                A: 'ae2:quartz_glass',
                 B: `enigmaticunity:dim_source_generator`
             },
-            id: `enigmaticunity:dim_source_producer`
+            id: `${id_prefix}dim_source_producer`
         }
     ];
 

@@ -593,6 +593,22 @@ ServerEvents.recipes((event) => {
             reagents: ['immersiveengineering:balloon'],
             sourceCost: 0,
             id: 'starbunclemania:star_balloon'
+        },
+        {
+            output: 'ae2:condenser',
+            inputs: [
+                'ae2:fluix_pearl',
+                'naturesaura:infused_brick',
+                'ae2:formation_core',
+                'naturesaura:infused_brick',
+                'ae2:fluix_pearl',
+                'naturesaura:infused_brick',
+                'ae2:annihilation_core',
+                'naturesaura:infused_brick'
+            ],
+            reagents: ['occultism:stable_wormhole'],
+            sourceCost: 0,
+            id: `${id_prefix}condenser`
         }
     ];
 
