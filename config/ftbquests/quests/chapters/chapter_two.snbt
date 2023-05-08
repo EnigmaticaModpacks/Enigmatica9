@@ -10,8 +10,8 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 11.0d
-			y: 8.5d
+			x: 11.5d
+			y: 6.0d
 			shape: "hexagon"
 			dependencies: ["4F90F6437D6CF7EC"]
 			id: "3D0B7DA1DD0A74B1"
@@ -31,8 +31,8 @@
 					gateway: "gateways:wither_council_gate"
 				}
 			}
-			x: 11.0d
-			y: 7.5d
+			x: 11.5d
+			y: 5.0d
 			shape: "hexagon"
 			description: ["Summon the Wither Council to obtain access to Nether Stars"]
 			id: "4F90F6437D6CF7EC"
@@ -58,7 +58,7 @@
 		{
 			title: "Dream Stone"
 			icon: "kubejs:dream_stone"
-			x: -1.0d
+			x: 9.5d
 			y: 0.5d
 			shape: "hexagon"
 			id: "69324F7E3A7BCF04"
@@ -69,7 +69,7 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: 9.5d
 			y: 1.5d
 			dependencies: ["69324F7E3A7BCF04"]
 			id: "4C676E7D2BA75DE4"
@@ -80,7 +80,7 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: 9.5d
 			y: 2.5d
 			dependencies: ["4C676E7D2BA75DE4"]
 			id: "71D9A268FF98E954"
@@ -93,7 +93,7 @@
 		{
 			title: "Netherite Scrap"
 			icon: "minecraft:netherite_scrap"
-			x: 0.5d
+			x: 11.5d
 			y: 1.0d
 			shape: "hexagon"
 			id: "0CFE9B39B0643013"
@@ -104,7 +104,7 @@
 			}]
 		}
 		{
-			x: 0.5d
+			x: 11.5d
 			y: 2.0d
 			dependencies: ["0CFE9B39B0643013"]
 			id: "77E8DD38A379F9C7"
@@ -123,7 +123,7 @@
 			}]
 		}
 		{
-			x: 0.5d
+			x: 11.5d
 			y: 3.0d
 			dependencies: ["77E8DD38A379F9C7"]
 			id: "39B2F84EBDC27AA3"
@@ -160,8 +160,8 @@
 					gateway: "gateways:wilden_grove_gate"
 				}
 			}
-			x: 10.0d
-			y: 7.0d
+			x: 9.5d
+			y: 4.5d
 			shape: "hexagon"
 			id: "0B7E9625225C8413"
 			tasks: [
@@ -184,8 +184,8 @@
 			]
 		}
 		{
-			x: 10.0d
-			y: 8.0d
+			x: 9.5d
+			y: 5.5d
 			dependencies: ["0B7E9625225C8413"]
 			id: "10238EBB9B55F67B"
 			tasks: [{
@@ -485,8 +485,9 @@
 			}]
 		}
 		{
-			x: 11.0d
-			y: 0.5d
+			x: 7.5d
+			y: 1.0d
+			dependencies: ["4CC418E7200DF351"]
 			id: "57861ABDB35ED555"
 			tasks: [{
 				id: "707735727FE79FB9"
@@ -507,8 +508,9 @@
 			}]
 		}
 		{
-			x: 11.0d
-			y: 1.5d
+			x: 7.5d
+			y: 2.0d
+			dependencies: ["57861ABDB35ED555"]
 			id: "55C6945D58D77AB6"
 			tasks: [{
 				id: "3CC2FBDD7AB29403"
@@ -532,8 +534,10 @@
 			}]
 		}
 		{
-			x: 11.0d
-			y: -0.5d
+			x: 7.5d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["It is said that bees are keepers of a certain kind of magic to travel in spaces between the very threads of magic that infuse all things. Perhaps it’s time to seek out their aid in travelling further. "]
 			id: "4CC418E7200DF351"
 			tasks: [{
 				id: "4F31450F59F287F9"
