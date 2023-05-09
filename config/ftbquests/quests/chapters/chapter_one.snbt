@@ -432,7 +432,17 @@
 			icon: "pneumaticcraft:pressure_chamber_interface"
 			x: -1.5d
 			y: 1.0d
-			description: ["The Pressure Chamber is a crucial arcane construct, used in many applications, from extracting Aluminum from Kaolin Clay, to crafting potent ensorcelled projectiles, and many more in between. "]
+			description: [
+				"The Pressure Chamber is a crucial arcane construct, used in many applications, from extracting Aluminum from Kaolin Clay, to crafting potent ensorcelled projectiles, and many more in between."
+				""
+				"================================="
+				""
+				"Take special note of the Module Expansion Crystals used in this craft. These may be inserted onto most Tube Modules to enhance their abilities. "
+				""
+				"Using one on a Pressure Gauge Tube Module, for instance, will greatly simplify controlling a Compressor. "
+				""
+				"Meanwhile, using one on a Regulator Tube Module allows fine tuning when it comes to the amount of pressure allowed through a tube system. "
+			]
 			dependencies: ["0DB07D1C824BFEA8"]
 			id: "75C38D71F1A04EB4"
 			tasks: [
@@ -1311,7 +1321,11 @@
 			icon: {
 				id: "occultism:familiar_ring"
 				Count: 1b
-				tag: { }
+				tag: {
+					familiar: {
+						hasFamiliar: 0b
+					}
+				}
 				ForgeCaps: {
 					Parent: {
 						hasFamiliar: 0b
