@@ -12,13 +12,13 @@ ServerEvents.recipes((event) => {
         },
         {
             output: '2x powah:crystal_niotic',
-            inputs: ['spirit:soul_powder', '#forge:gems/subzero', 'spirit:soul_powder'],
+            inputs: ['#forge:dusts/subzero', 'quark:cyan_rune', '#forge:dusts/subzero'],
             energy: '50000',
             id: `${id_prefix}niotic_crystal`
         },
         {
             output: '2x powah:crystal_spirited',
-            inputs: ['kubejs:sylvanite', '#forge:gems/therium', 'kubejs:sylvanite'],
+            inputs: ['kubejs:sylvanite', 'quark:lime_rune', 'kubejs:sylvanite'],
             energy: '800000',
             id: `${id_prefix}spirited_crystal`
         },

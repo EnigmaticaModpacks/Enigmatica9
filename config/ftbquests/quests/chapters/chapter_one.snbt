@@ -1567,6 +1567,77 @@
 				player_command: false
 			}]
 		}
+		{
+			icon: "naturesaura:potion_generator"
+			x: -3.5d
+			y: 0.5d
+			description: [
+				"Much like the Alchemical Sourcelink can distill the magical essences in Potions down into Source, the Lingering Absorber is a structure that helps re-direct those energies back into the environment as Aura. "
+				""
+				"This is a large multiblock structure, so be sure to check the Book of Natural Aura for a preview to assist in building it. "
+				""
+				"================================================="
+				""
+				""
+				"Using this structure to generate Aura will require making Lingering potions and throwing them on the golden cross on the Absorber. Throwing higher quality potions, with greater strength and duration, will result in more Aura. "
+				""
+				"It is important to note that Wixies, as crafty as they are, are incapable of making Lingering or Splash potions. They’re easily automated with Create’s brewing system, however, and Dragon’s Breath may be crafted as well. "
+			]
+			dependencies: ["4B874AA448FF4C7A"]
+			min_width: 300
+			id: "16E90BC107468EC2"
+			tasks: [
+				{
+					id: "150E44FC952BB995"
+					type: "item"
+					item: "naturesaura:potion_generator"
+				}
+				{
+					id: "741C6A98C22B5E2B"
+					type: "item"
+					item: "minecraft:nether_bricks"
+					count: 28L
+				}
+				{
+					id: "2E87B053B4E0E3E2"
+					type: "item"
+					item: "minecraft:red_nether_bricks"
+					count: 12L
+				}
+			]
+			rewards: [{
+				id: "754742F0C105E7DD"
+				type: "item"
+				item: {
+					id: "naturesaura:aura_bottle"
+					Count: 1b
+					tag: {
+						stored_type: "naturesaura:end"
+					}
+				}
+				count: 16
+			}]
+		}
+		{
+			icon: "kubejs:aura_leaf"
+			x: -9.0d
+			y: 1.5d
+			shape: "hexagon"
+			description: [
+				"Having trouble with Aura? Need a quick boost?"
+				""
+				"Search for the Aura Leaf in JEI to discover the ritual for converting Twilight Forest boss trophies into a large infusion of Aura. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["4B874AA448FF4C7A"]
+			optional: true
+			id: "32B066B03F861D56"
+			tasks: [{
+				id: "7F62B58E81519265"
+				type: "checkmark"
+				title: "Emergency Aura"
+			}]
+		}
 	]
 	quest_links: [ ]
 }

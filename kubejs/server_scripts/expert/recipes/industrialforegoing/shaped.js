@@ -163,6 +163,19 @@ ServerEvents.recipes((event) => {
                 F: '#forge:essences/manipulation'
             },
             id: 'industrialforegoing:dissolution_chamber'
+        },
+        {
+            output: 'industrialforegoing:potion_brewer',
+            pattern: [' A ', 'BCD', 'EFE'],
+            key: {
+                A: 'ars_nouveau:wixie_charm',
+                B: 'enigmaticunity:dim_source_producer',
+                C: 'compactmachines:machine_small',
+                D: 'ars_nouveau:source_jar',
+                E: ['ars_nouveau:arcane_pedestal', 'ars_nouveau:arcane_platform'],
+                F: 'minecraft:cauldron'
+            },
+            id: 'industrialforegoing:potion_brewer'
         }
     ];
 
