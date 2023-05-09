@@ -118,7 +118,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'create:shaft',
                 B: 'create:andesite_casing',
-                C: 'naturesaura:infused_stone',
+                C: 'pneumaticcraft:compressed_stone',
                 D: '#forge:essences/earth'
             },
             id: `create:crafting/kinetics/mechanical_press`

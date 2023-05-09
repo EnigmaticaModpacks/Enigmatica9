@@ -153,14 +153,38 @@ ServerEvents.recipes((event) => {
         {
             output: '9x twilightforest:fiery_ingot',
             inputs: [
+                'hexerei:dried_yellow_dock_flowers',
                 '#forge:essences/fire',
+                'hexerei:dried_yellow_dock_flowers',
+
                 '#forge:dusts/constantan',
                 '#forge:dusts/constantan',
-                '#forge:storage_blocks/source'
+
+                'hexerei:dried_yellow_dock_flowers',
+                '#forge:storage_blocks/source',
+                'hexerei:dried_yellow_dock_flowers'
             ],
             inputFluid: '{Amount:1000,FluidName:"minecraft:lava"}',
             processingTime: 60,
             id: `${id_prefix}fiery_ingot`
+        },
+        {
+            output: '9x twilightforest:raw_ironwood',
+            inputs: [
+                'hexerei:belladonna_berries',
+                '#forge:essences/manipulation',
+                'hexerei:belladonna_berries',
+
+                'twilightforest:liveroot',
+                'naturesaura:gold_leaf',
+
+                'hexerei:dried_yellow_dock_flowers',
+                '#forge:raw_ores/iron',
+                'hexerei:dried_yellow_dock_flowers'
+            ],
+            inputFluid: '{Amount:1000,FluidName:"minecraft:water"}',
+            processingTime: 60,
+            id: `${id_prefix}raw_ironwood`
         }
     ];
 

@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            output: Item.of('8x pneumaticcraft:pressure_tube'),
+            output: '8x pneumaticcraft:pressure_tube',
             pattern: [' A ', 'ABA', ' A '],
             key: {
                 A: 'pneumaticcraft:compressed_brick_tile',
@@ -15,18 +15,7 @@ ServerEvents.recipes((event) => {
             id: `pneumaticcraft:pressure_tube`
         },
         {
-            output: Item.of('pneumaticcraft:air_compressor'),
-            pattern: ['AAA', 'ABC', 'ADA'],
-            key: {
-                A: 'pneumaticcraft:compressed_brick_tile',
-                B: '#forge:essences/air',
-                C: 'pneumaticcraft:pressure_tube',
-                D: 'minecraft:blast_furnace'
-            },
-            id: `${id_prefix}air_compressor`
-        },
-        {
-            output: Item.of('16x pneumaticcraft:pressure_chamber_wall'),
+            output: '16x pneumaticcraft:pressure_chamber_wall',
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'pneumaticcraft:compressed_brick_tile',
@@ -35,7 +24,7 @@ ServerEvents.recipes((event) => {
             id: `pneumaticcraft:pressure_chamber_wall`
         },
         {
-            output: Item.of('pneumaticcraft:pressure_gauge'),
+            output: 'pneumaticcraft:pressure_gauge',
             pattern: [' A ', 'ABA', ' A '],
             key: {
                 A: '#forge:ingots/bronze',
@@ -44,7 +33,7 @@ ServerEvents.recipes((event) => {
             id: `pneumaticcraft:pressure_gauge`
         },
         {
-            output: Item.of('pneumaticcraft:thermopneumatic_processing_plant'),
+            output: 'pneumaticcraft:thermopneumatic_processing_plant',
             pattern: ['AAA', 'BCB', 'AAA'],
             key: {
                 A: 'pneumaticcraft:compressed_stone_slab',
@@ -120,14 +109,14 @@ ServerEvents.recipes((event) => {
             id: `pneumaticcraft:heat_pipe`
         },
         {
-            output: '6x pneumaticcraft:heat_pipe',
-            pattern: ['AAA', 'BCB', 'AAA'],
+            output: 'pneumaticcraft:heat_sink',
+            pattern: ['AC ', 'BAC', ' BA'],
             key: {
-                A: 'pneumaticcraft:thermal_lagging',
-                B: '#forge:ingots/constantan',
-                C: '#forge:essences/fire'
+                A: '#forge:plates/constantan',
+                B: '#forge:plates/copper',
+                C: '#forge:essences/air'
             },
-            id: `pneumaticcraft:heat_pipe`
+            id: `pneumaticcraft:heat_sink`
         },
         {
             output: 'pneumaticcraft:charging_station',
@@ -327,6 +316,16 @@ ServerEvents.recipes((event) => {
                 E: 'create:brass_hand'
             },
             id: `pneumaticcraft:assembly_io_unit_export`
+        },
+        {
+            output: '2x pneumaticcraft:pressure_chamber_interface',
+            pattern: [' A ', 'BCB', ' A '],
+            key: {
+                A: 'pneumaticcraft:compressed_brick_tile',
+                B: 'create:portable_storage_interface',
+                C: 'pneumaticcraft:module_expansion_card'
+            },
+            id: `pneumaticcraft:pressure_chamber_interface`
         }
     ];
 

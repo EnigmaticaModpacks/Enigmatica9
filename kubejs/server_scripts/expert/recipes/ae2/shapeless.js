@@ -79,12 +79,12 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'ae2:basic_card',
-            inputs: ['modularrouters:augment_core', '#forge:gems/sunstone_crystal', 'powah:dielectric_paste'],
+            inputs: ['modularrouters:augment_core', '#forge:gems/therium', 'powah:dielectric_paste'],
             id: `ae2:materials/basiccard`
         },
         {
             output: 'ae2:advanced_card',
-            inputs: ['modularrouters:augment_core', '#forge:gems/moonstone_crystal', 'powah:dielectric_paste'],
+            inputs: ['modularrouters:augment_core', '#forge:gems/subzero', 'powah:dielectric_paste'],
             id: `ae2:materials/advancedcard`
         },
         {

@@ -728,14 +728,25 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_craft_component_electronic`
         },
         {
-            output: 'pneumaticcraft:flux_compressor',
-            activation_item: 'pneumaticcraft:air_compressor',
+            output: Item.of('pneumaticcraft:flux_compressor', {
+                BlockEntityTag: {
+                    UpgradeInventory: { Items: [{ Count: 1, Slot: 0, id: 'pneumaticcraft:security_upgrade' }], Size: 4 }
+                }
+            }),
+            activation_item: 'minecraft:blast_furnace',
             inputs: [
-                'pneumaticcraft:printed_circuit_board',
-                'pneumaticcraft:turbine_rotor',
-                '#forge:gears/compressed_iron',
-                'pneumaticcraft:turbine_rotor',
-                'pneumaticcraft:reinforced_pressure_tube'
+                'ars_elemental:lesser_air_focus',
+                'naturesaura:furnace_heater',
+                'ars_elemental:lesser_fire_focus',
+                'create:shaft',
+                '#forge:ingots/infused_iron',
+                '#forge:gems/source',
+                '#forge:ingots/infused_iron',
+                'create:propeller',
+                '#forge:ingots/infused_iron',
+                '#forge:gems/source',
+                '#forge:ingots/infused_iron',
+                'create:propeller'
             ],
             entity_to_sacrifice: {
                 tag: 'enigmatica:elementals/air',
@@ -759,10 +770,10 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:pressure_tube',
                 'pneumaticcraft:pressure_tube',
                 'pneumaticcraft:pressure_tube',
-                '#forge:ingots/skies',
-                '#forge:ingots/skies',
-                '#forge:ingots/skies',
-                '#forge:ingots/skies'
+                '#forge:ingots/sky',
+                '#forge:ingots/sky',
+                '#forge:ingots/sky',
+                '#forge:ingots/sky'
             ],
             entity_to_sacrifice: {
                 tag: 'enigmatica:elementals/air',
@@ -927,14 +938,14 @@ ServerEvents.recipes((event) => {
                 'naturesaura:calling_spirit',
                 'naturesaura:calling_spirit',
                 'naturesaura:calling_spirit',
-                '#forge:ingots/skies',
+                '#forge:ingots/sky',
                 'ae2:sky_dust',
-                '#forge:ingots/skies',
+                '#forge:ingots/sky',
                 'ae2:sky_dust',
                 'ae2:sky_dust',
-                '#forge:ingots/skies',
+                '#forge:ingots/sky',
                 'ae2:sky_dust',
-                '#forge:ingots/skies'
+                '#forge:ingots/sky'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_1',
             ritual_type: 'occultism:craft',

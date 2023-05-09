@@ -42,12 +42,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}nickel_dirty_dust`
         },
         {
-            output: 'emendatusenigmatica:horizonite_ingot',
-            itemInput: { ingredient: { tag: 'forge:ingots/fiery' } },
-            chemicalInput: { infuse_type: 'emendatusenigmatica:fire_essence', amount: 20 },
-            id: `${id_prefix}horizonite_ingot`
-        },
-        {
             output: Item.of('4x compactmachines:tunnel', '{definition:{id:"compactmachines:fluid"}}'),
             itemInput: { ingredient: { item: 'ae2:me_p2p_tunnel' } },
             chemicalInput: { infuse_type: 'emendatusenigmatica:water_essence', amount: 20 },

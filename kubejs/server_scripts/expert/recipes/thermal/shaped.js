@@ -290,14 +290,13 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'thermal:machine_furnace',
-            pattern: ['ABA', 'CDC', 'EFE'],
+            pattern: ['ABA', 'CDC', 'AEA'],
             key: {
-                A: '#forge:plates/aluminum',
+                A: 'naturesaura:infused_brick',
                 B: 'naturesaura:furnace_heater',
                 C: '#forge:ingots/infused_iron',
                 D: 'minecraft:furnace',
-                E: 'naturesaura:infused_brick',
-                F: '#forge:essences/fire'
+                E: '#forge:essences/fire'
             },
             id: 'thermal:machine_furnace'
         },

@@ -421,6 +421,8 @@ jei.expert.items.disabled = [
     'naturesaura:rf_converter',
 
     /occultism:chalk_.*_impure/,
+    'pneumaticcraft:air_compressor',
+    'pneumaticcraft:electrostatic_compressor',
     'pneumaticcraft:advanced_air_compressor',
     'pneumaticcraft:advanced_liquid_compressor',
     'pneumaticcraft:liquid_compressor',

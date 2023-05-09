@@ -60,6 +60,9 @@ ServerEvents.recipes((event) => {
         { id: 'create:crafting/kinetics/empty_blaze_burner' },
         { id: 'create:crafting/kinetics/mechanical_crafter' },
         { id: 'create:crafting/kinetics/brass_hand' },
+        { id: 'create:mixing/brass_ingot' },
+        { id: 'create:mixing/andesite_alloy_from_zinc' },
+        { id: 'create:mixing/andesite_alloy' },
         { id: 'create:mechanical_crafting/wand_of_symmetry' },
         { id: 'create:mechanical_crafting/extendo_grip' },
         { id: 'create:item_application/brass_casing_from_wood' },
@@ -76,6 +79,8 @@ ServerEvents.recipes((event) => {
         { id: 'createaddition:mechanical_crafting/electric_motor' },
         { id: 'createaddition:crafting/portable_energy_interface' },
         { id: 'createaddition:compat/immersiveengineering/crushing/steel_ingot' },
+        { id: 'createaddition:compat/immersiveengineering/constantan' },
+        { id: 'createaddition:compat/immersiveengineering/electrum' },
         { id: 'createaddition:crushing/diamond' },
 
         { id: /emendatusenigmatica:plate\/from_ingot/ },

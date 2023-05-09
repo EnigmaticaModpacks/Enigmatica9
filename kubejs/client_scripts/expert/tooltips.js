@@ -25,7 +25,7 @@ ItemEvents.tooltip((event) => {
     */
     const recipes = [
         {
-            items: ['pneumaticcraft:air_compressor', 'occultism:dimensional_mineshaft'],
+            items: ['occultism:dimensional_mineshaft'],
             text: [Text.of('Consumes Aura while in operation.').red()]
         },
         {

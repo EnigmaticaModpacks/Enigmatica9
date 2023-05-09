@@ -13,6 +13,12 @@ JEIEvents.information((event) => {
             text: [
                 `Obtained as a drop from the Lich in Twilight Forest. Come prepared, as they won't give it up without a fight.`
             ]
+        },
+        {
+            items: ['byg:subzero_crystal_shard'],
+            text: [
+                `Obtained as a drop from the Snow Queen in Twilight Forest. Come prepared, as they won't give it up without a fight.`
+            ]
         }
     ];
 

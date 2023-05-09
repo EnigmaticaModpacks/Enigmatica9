@@ -141,7 +141,13 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'occultism:soul_gem',
-            ingredients: ['#forge:gems/diamond', '#forge:dusts/silver', 'ae2:sky_dust', 'ae2:sky_dust'],
+            ingredients: [
+                '#forge:gems/diamond',
+                '#forge:dusts/silver',
+                'hexerei:dried_sage_bundle',
+                'hexerei:dried_sage_bundle',
+                'naturesaura:gold_leaf'
+            ],
             time: 5,
             sapling: 'quark:lavender_blossom_sapling',
             id: `${id_prefix}soul_gem`
