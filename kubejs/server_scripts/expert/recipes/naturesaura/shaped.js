@@ -123,10 +123,10 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
                 A: 'naturesaura:infused_brick',
-                B: '#forge:storage_blocks/sunstone',
+                B: 'minecraft:clock',
                 C: '#forge:ingots/infused_iron',
                 D: '#forge:essences/manipulation',
-                E: '#forge:storage_blocks/moonstone'
+                E: 'twilightforest:moon_dial'
             },
             id: `naturesaura:time_changer`
         },

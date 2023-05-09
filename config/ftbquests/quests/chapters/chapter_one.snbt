@@ -1001,6 +1001,13 @@
 				""
 				"Travel to the frigid glaciers and defeat the Snow Queen."
 			]
+			hide_dependency_lines: true
+			dependencies: [
+				"605D0EC9ABE8595E"
+				"1C6BF5FE58C49456"
+				"272C349F5CF92FA0"
+				"7A3B33287BFF4CB1"
+			]
 			id: "729E9D41A28D0E4D"
 			tasks: [{
 				id: "0FC4B74A9A5ACFFC"

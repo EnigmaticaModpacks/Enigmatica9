@@ -277,7 +277,7 @@ ServerEvents.recipes((event) => {
                 B: '#forge:ingots/energized_steel',
                 C: '#forge:ingots/compressed_iron',
                 D: 'pneumaticcraft:printed_circuit_board',
-                E: '#forge:gems/moonstone'
+                E: 'quark:rainbow_rune'
             },
             id: `pneumaticcraft:assembly_laser`
         },
