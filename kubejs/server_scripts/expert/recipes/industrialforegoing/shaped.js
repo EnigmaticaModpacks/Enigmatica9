@@ -176,6 +176,20 @@ ServerEvents.recipes((event) => {
                 F: 'minecraft:cauldron'
             },
             id: 'industrialforegoing:potion_brewer'
+        },
+        {
+            output: 'industrialforegoing:material_stonework_factory',
+            pattern: ['ABA', 'CDE', 'FGF'],
+            key: {
+                A: '#forge:plastic',
+                B: '#forge:essences/manipulation',
+                C: '#forge:essences/water',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:essences/fire',
+                F: '#forge:gears/steel',
+                G: '#forge:essences/earth'
+            },
+            id: 'industrialforegoing:material_stonework_factory'
         }
     ];
 

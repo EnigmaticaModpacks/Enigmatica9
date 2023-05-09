@@ -54,23 +54,6 @@ ServerEvents.recipes((event) => {
         },
         {
             item_in: [
-                { tag: 'forge:dusts/subzero' },
-                { tag: 'forge:essences/air' },
-                { tag: 'forge:essences/fire' },
-                { tag: 'forge:essences/water' },
-                { tag: 'forge:essences/earth' }
-            ],
-            post: [
-                {
-                    type: 'drop_item',
-                    item: 'naturesaura:calling_spirit',
-                    count: 4
-                }
-            ],
-            id: `${id_prefix}calling_spirit`
-        },
-        {
-            item_in: [
                 { item: 'immersiveengineering:balloon' },
                 { tag: 'forge:essences/air' },
                 { item: 'ars_nouveau:magebloom_fiber' },

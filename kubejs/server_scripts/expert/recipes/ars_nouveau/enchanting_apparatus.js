@@ -581,13 +581,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}upgrade_anchor`
         },
         {
-            output: '4x naturesaura:calling_spirit',
-            inputs: ['#forge:essences/air', '#forge:essences/fire', '#forge:essences/water', '#forge:essences/earth'],
-            reagents: ['#forge:dusts/subzero'],
-            sourceCost: 0,
-            id: `${id_prefix}calling_spirit`
-        },
-        {
             output: '4x starbunclemania:star_balloon',
             inputs: ['#forge:essences/air', 'ars_nouveau:magebloom_fiber', 'ars_nouveau:magebloom_fiber'],
             reagents: ['immersiveengineering:balloon'],
