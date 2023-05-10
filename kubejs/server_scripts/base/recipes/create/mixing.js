@@ -57,6 +57,12 @@ ServerEvents.recipes((event) => {
             outputs: [{ amount: 240, fluid: 'sophisticatedcore:xp_still' }],
             heatRequirement: 'heated',
             id: `${id_prefix}greater_experience_gem_to_liquid`
+        },
+        {
+            inputs: [Ingredient.of('minecraft:honey_block').toJson()],
+            outputs: [{ amount: 1000, fluid: 'the_bumblezone:honey_fluid_still' }],
+            heatRequirement: 'heated',
+            id: `create:mixing/honey`
         }
     ];
 

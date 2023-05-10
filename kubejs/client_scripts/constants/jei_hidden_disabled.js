@@ -115,6 +115,8 @@ jei.base.items.disabled = [
     'sushigocrafting:rice'
 ];
 jei.base.items.hidden = [
+    'create:honey_bucket',
+
     /emendatusenigmatica:bitumen_.*_ore/,
     'emendatusenigmatica:bitumen_ore',
 
@@ -154,7 +156,9 @@ jei.base.fluids.hidden = [
     'immersiveengineering:ethanol',
     'immersiveengineering:biodiesel',
     'createaddition:seed_oil',
-    'createaddition:bioethanol'
+    'createaddition:bioethanol',
+    'create:honey',
+    'cofh_core:honey'
 ];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
 jei.base.recipes.hidden = [

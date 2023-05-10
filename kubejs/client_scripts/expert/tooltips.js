@@ -35,6 +35,10 @@ ItemEvents.tooltip((event) => {
                     'A permanent gateway into the Otherworld allowing Source to flow in exchange for labor.'
                 ).lightPurple()
             ]
+        },
+        {
+            items: ['kubejs:dream_stone'],
+            text: [Text.of('It hums quietly when held.').gold()]
         }
     ];
 

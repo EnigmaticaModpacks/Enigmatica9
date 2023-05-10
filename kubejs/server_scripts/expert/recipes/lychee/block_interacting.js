@@ -182,14 +182,19 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}crushing_catalyst`
         },
         {
-            item_in: { item: 'kubejs:dream_stone' },
+            item_in: { item: 'the_bumblezone:essence_of_the_bees' },
             block_in: 'naturesaura:gold_brick',
             post: [
+                { type: 'prevent_default' },
                 {
                     type: 'place',
                     block: { blocks: ['kubejs:gloaming_catalyst'] },
                     contextual: [
-                        { type: 'is_sneaking', description: 'Must be sneaking. Consumes an incredible amount of Aura.' }
+                        {
+                            type: 'is_sneaking',
+                            description:
+                                'Must be sneaking. Consumes an incredible amount of Aura. Does not consume the essence.'
+                        }
                     ]
                 },
                 {
@@ -214,7 +219,11 @@ ServerEvents.recipes((event) => {
                 }
             ],
             contextual: [
-                { type: 'is_sneaking', description: 'Must be sneaking. Consumes an incredible amount of Aura.' }
+                {
+                    type: 'is_sneaking',
+                    description:
+                        'Must be sneaking. Consumes an incredible amount of Aura. Does not consume the essence.'
+                }
             ],
             id: `${id_prefix}gloaming_catalyst`
         }

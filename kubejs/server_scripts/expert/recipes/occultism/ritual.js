@@ -1075,8 +1075,8 @@ ServerEvents.recipes((event) => {
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:summon_greater_evil',
             entity_to_sacrifice: {
-                tag: 'enigmatica:azulfo',
-                display_name: 'ritual.occultism.sacrifice.azulfo'
+                tag: 'enigmatica:deer',
+                display_name: 'ritual.occultism.sacrifice.deer'
             },
             duration: 10,
             id: `${id_prefix}wilden_grove_gate`

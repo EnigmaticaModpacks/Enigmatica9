@@ -3,7 +3,7 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            input: Ingredient.of('thermal:oil_red_sand'),
+            input: 'thermal:oil_red_sand',
             outputs: [
                 {
                     item: 'minecraft:red_sand',
@@ -18,7 +18,7 @@ ServerEvents.recipes((event) => {
             id: 'thermal:machines/centrifuge/centrifuge_oil_red_sand'
         },
         {
-            input: Ingredient.of('thermal:oil_sand'),
+            input: 'thermal:oil_sand',
             outputs: [
                 {
                     item: 'minecraft:sand',
@@ -33,7 +33,7 @@ ServerEvents.recipes((event) => {
             id: 'thermal:machines/centrifuge/centrifuge_oil_sand'
         },
         {
-            input: Ingredient.of('#forge:bitumen'),
+            input: '#forge:bitumen',
             outputs: [
                 { item: 'thermal:tar', chance: 0.5 },
                 { fluid: 'pneumaticcraft:oil', amount: 50 }
@@ -42,7 +42,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}oil_from_bitumen`
         },
         {
-            input: Ingredient.of('#forge:fuels/bio'),
+            input: '#forge:fuels/bio',
             outputs: [
                 { item: 'thermal:compost', chance: 0.5 },
                 { fluid: 'mekanismgenerators:bioethanol', amount: 200 }
@@ -51,19 +51,37 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}bioethanol`
         },
         {
-            input: Ingredient.of('#forge:dusts/redstone'),
+            input: '#forge:dusts/redstone',
             outputs: [
                 { item: 'emendatusenigmatica:cinnabar_dust', chance: 1 },
                 { fluid: 'thermal:redstone', amount: 50 }
             ],
             energy: 1600,
             id: `${id_prefix}cinnabar_dust`
+        },
+        {
+            input: 'minecraft:honey_bottle',
+            outputs: [{ item: 'minecraft:glass_bottle' }, { fluid: 'the_bumblezone:honey_fluid_still', amount: 250 }],
+            energy: 400,
+            id: `thermal:machines/centrifuge/centrifuge_honey_bottle`
+        },
+        {
+            input: 'minecraft:honeycomb',
+            outputs: [{ fluid: 'the_bumblezone:honey_fluid_still', amount: 100 }],
+            energy: 1000,
+            id: `thermal:machines/centrifuge/centrifuge_honeycomb`
+        },
+        {
+            input: 'minecraft:honeycomb_block',
+            outputs: [{ fluid: 'the_bumblezone:honey_fluid_still', amount: 400 }],
+            energy: 4000,
+            id: `${id_prefix}honey_from_honeycomb_block`
         }
     ];
 
     recipes.forEach((recipe) => {
         recipe.type = 'thermal:centrifuge';
-        recipe.ingredient = recipe.input.toJson();
+        recipe.ingredient = Ingredient.of(recipe.input).toJson();
         recipe.result = recipe.outputs;
         event.custom(recipe).id(recipe.id);
     });

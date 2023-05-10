@@ -16,6 +16,8 @@ ItemEvents.modification((event) => {
         'rftoolsbase:infused_enderpearl',
         'rftoolsbase:infused_diamond',
 
+        'the_bumblezone:pollen_puff',
+
         //signs
         /(minecraft|supplementaries|twilightforest):\w+_sign/
     ];

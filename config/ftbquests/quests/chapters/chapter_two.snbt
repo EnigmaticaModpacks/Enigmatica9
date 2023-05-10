@@ -487,6 +487,13 @@
 		{
 			x: 7.5d
 			y: 1.0d
+			description: [
+				"The Cell Maze seems a likely a place as any to start. Locate it and search around for clues to the Queen's whereabouts.  They’re notable for their large cells partitioned off by Honey Web and contain countless Honey Cocoons."
+				""
+				"================================="
+				""
+				"While in the Bumblezone, Right-Click the Honey Compass in the air to attune it to the Cell Maze."
+			]
 			dependencies: ["4CC418E7200DF351"]
 			id: "57861ABDB35ED555"
 			tasks: [{
@@ -534,24 +541,57 @@
 			}]
 		}
 		{
-			title: "Telling of the Bees"
+			icon: "minecraft:honeycomb"
 			x: 7.5d
 			y: 0.0d
 			shape: "hexagon"
 			description: [
-				"In places that still keep the old ways, bees hold a privileged position in community life. From the birth of a child to the death of a friend, news of important events are shared first with the bees. "
+				"The meandering pathways in the Bumblezone are built for hive minds, and so can be difficult for others to follow. Crafting a Honey Compass will be the safest way forward."
 				""
-				"It seems likely that as the Cult of the Ur-Ghast rose in prominence in this place, the druids of the Wilden Grove may have discussed the events with the bees, perhaps even seeking advice from the Queen. Seek her out to see if she has any clues to offer. "
+				"Remember to show the bees respect while in their home. Feed bees and Honeycomb Brood Blocks some tasty honey treats to earn the Protection of the Hive. Only honored guests are allowed in their most sacred places."
+				""
+				"================================="
+				""
+				"While in the Bumblezone, it is possible to leave at any time by mining to the roof or floor. Above ore below a certain point, you’ll be teleported back to where you came from."
 			]
 			id: "4CC418E7200DF351"
-			tasks: [{
-				id: "4F31450F59F287F9"
-				type: "item"
-				item: {
-					id: "the_bumblezone:honey_compass"
-					Count: 1b
-					tag: { }
+			tasks: [
+				{
+					id: "4F31450F59F287F9"
+					type: "item"
+					item: {
+						id: "the_bumblezone:honey_compass"
+						Count: 1b
+						tag: { }
+					}
 				}
+				{
+					id: "727B3D8940DE93A6"
+					type: "item"
+					title: "Bee Treats"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "the_bumblezone:bee_bread"
+									Count: 1b
+								}
+								{
+									id: "minecraft:honey_bottle"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "6AA44F123D286226"
+				type: "item"
+				item: "the_bumblezone:bee_bread"
+				count: 16
 			}]
 		}
 		{
@@ -604,6 +644,48 @@
 				id: "0F59CD79EA51B378"
 				type: "item"
 				item: "kubejs:crude_iron_ingot"
+			}]
+		}
+		{
+			title: "Telling of the Bees"
+			icon: "minecraft:beehive"
+			x: 7.5d
+			y: -1.0d
+			shape: "hexagon"
+			description: [
+				"In places that still keep the old ways, bees hold a privileged position in community life. From the birth of a child to the death of a friend, news of important events are shared first with the bees. "
+				""
+				"It was widely known that the Wilden Grove were avid bee-keepers and some speculated that the bees would carry messages to them through dreams, keeping them apprised of news from far and wide. "
+				""
+				"A pretty story, but surely a simple scrying would have done the same. "
+				""
+				"Just the same, the practice never really died out, especially among the Grove. It seems likely that as the Cult of the Ur-Ghast rose in prominence in this place, the druids may hav discussed the events with the bees, perhaps even seeking advice from the Queen. "
+				""
+				"Seek out the Queen Bee to see if they have any clues to offer. "
+				""
+				"================================================="
+				""
+				"In order to travel to the Bumblezone, place a Teleporter directly beneath a Beehive, then throw an Ender Pearl at the Beehive."
+			]
+			dependencies: ["4CC418E7200DF351"]
+			min_width: 300
+			id: "2153EBB1D50F0039"
+			tasks: [
+				{
+					id: "4A2B53416D546C80"
+					type: "item"
+					item: "minecraft:beehive"
+				}
+				{
+					id: "637617E3CEC25857"
+					type: "item"
+					item: "mekanism:teleporter"
+				}
+			]
+			rewards: [{
+				id: "6363919C99636DBD"
+				type: "item"
+				item: "minecraft:ender_pearl"
 			}]
 		}
 	]

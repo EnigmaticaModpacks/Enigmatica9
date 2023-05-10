@@ -293,6 +293,8 @@ ServerEvents.recipes((event) => {
         { id: 'supplementaries:jar' },
         { id: 'supplementaries:soap' },
 
+        { id: 'the_bumblezone:honey_compass' },
+
         { id: /thermal:machines\/pulverizer\/pulverizer_.*_to_dust/ },
         { id: /thermal:augments/ },
         { id: /thermal:.*_mushroom_spores/ },

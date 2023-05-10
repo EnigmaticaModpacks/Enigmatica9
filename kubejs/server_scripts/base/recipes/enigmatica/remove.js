@@ -56,6 +56,7 @@ ServerEvents.recipes((event) => {
         { id: 'createaddition:compat/immersiveengineering/crushing/coke_block' },
 
         { id: 'hexerei:black_dye_from_pestle_and_mortar' },
+        { id: 'hexerei:broom_netherite_tip_from_mixing_cauldron' },
 
         { id: `industrialforegoing:stonework_generate/diorite` },
         { id: `industrialforegoing:stonework_generate/granite` },

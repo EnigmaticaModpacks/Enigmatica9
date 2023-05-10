@@ -81,6 +81,13 @@ ServerEvents.recipes((event) => {
             aura: 6000,
             time: 20,
             id: `${id_prefix}glistering_melon_slice`
+        },
+        {
+            output: 'naturesaura:birth_spirit',
+            input: 'minecraft:honeycomb',
+            aura: 45000,
+            time: 300,
+            id: `${id_prefix}birth_spirit`
         }
     ];
 
