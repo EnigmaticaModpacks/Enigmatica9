@@ -1,6 +1,6 @@
 //priority: 1010
 
-const simple_metals = ['copper', 'silver', 'gold', 'tin', 'horizonite', 'ventium', 'falsite', 'lead'];
+const simple_metals = ['copper', 'silver', 'gold', 'tin', 'lead'];
 
 // Properties for Metal processing
 const metal_properties = {
@@ -130,33 +130,6 @@ const metal_properties = {
         oreProcessing: {
             output: { substrate: 'occultism:burnt_otherstone', secondary: 'silver' },
             create: { processingTime: 500 }
-        }
-    },
-    horizonite: {
-        crushing_tier: 3,
-        // meltingPoint: 0,
-        oreProcessing: {
-            output: { substrate: 'minecraft:gravel', secondary: 'ventium' },
-            expert_output: { secondary: 'copper' },
-            create: { processingTime: 450 }
-        }
-    },
-    ventium: {
-        crushing_tier: 3,
-        // meltingPoint: 0,
-        oreProcessing: {
-            output: { substrate: 'minecraft:gravel', secondary: 'falsite' },
-            expert_output: { secondary: 'nickel' },
-            create: { processingTime: 450 }
-        }
-    },
-    falsite: {
-        crushing_tier: 3,
-        // meltingPoint: 0,
-        oreProcessing: {
-            output: { substrate: 'minecraft:gravel', secondary: 'horizonite' },
-            expert_output: { secondary: 'lead' },
-            create: { processingTime: 450 }
         }
     },
     enderium: {

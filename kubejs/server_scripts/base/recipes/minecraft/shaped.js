@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
             output: '10x minecraft:chain',
             pattern: [' S ', ' I ', ' S '],
             key: {
-                S: 'minecraft:iron_nugget',
+                S: '#forge:nuggets/iron',
                 I: '#forge:ingots/iron'
             },
             id: `minecraft:chain`

@@ -707,9 +707,9 @@
 			shape: "hexagon"
 			id: "729E9D41A28D0E4D"
 			tasks: [{
-				id: "2AC77513E49B126E"
+				id: "0FC4B74A9A5ACFFC"
 				type: "item"
-				item: "blue_skies:moonstone"
+				item: "byg:subzero_crystal_shard"
 			}]
 		}
 		{

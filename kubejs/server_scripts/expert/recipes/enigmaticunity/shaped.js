@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
             output: 'enigmaticunity:dim_source_producer',
             pattern: ['AAA', 'ABA'],
             key: {
-                A: 'blue_skies:crystal_glass_pane',
+                A: 'spirit:soul_glass',
                 B: `enigmaticunity:dim_source_generator`
             },
             id: `enigmaticunity:dim_source_producer`

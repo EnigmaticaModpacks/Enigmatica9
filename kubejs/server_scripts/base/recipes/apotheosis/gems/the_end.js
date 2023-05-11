@@ -12,7 +12,23 @@ ServerEvents.highPriorityData((event) => {
             bonuses: [
                 {
                     type: 'apotheosis:enchantment',
-                    gem_class: { key: 'anything', types: ['helmet'] },
+                    gem_class: {
+                        key: 'anything',
+                        types: [
+                            'bow',
+                            'crossbow',
+                            'pickaxe',
+                            'shovel',
+                            'heavy_weapon',
+                            'helmet',
+                            'chestplate',
+                            'leggings',
+                            'boots',
+                            'shield',
+                            'trident',
+                            'sword'
+                        ]
+                    },
                     enchantment: 'minecraft:sharpness',
                     _comment: 'The enchantment field is unused when global=true, but still must be a valid name',
                     global: true,

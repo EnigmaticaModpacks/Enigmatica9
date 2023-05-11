@@ -17,14 +17,7 @@ ServerEvents.recipes((event) => {
         },
         {
             fluid: { amount: 60, fluid: 'pneumaticcraft:ethanol' },
-            input: [
-                { item: 'minecraft:apple' },
-                { item: 'minecraft:sugar_cane' },
-                { item: 'minecraft:sweet_berries' },
-                { item: 'blue_skies:brewberry' },
-                { item: 'blue_skies:pink_brewberry' },
-                { item: 'blue_skies:black_brewberry' }
-            ],
+            input: [{ item: 'minecraft:apple' }, { item: 'minecraft:sugar_cane' }, { item: 'minecraft:sweet_berries' }],
             energy: 6400,
             id: `${id_prefix}ethanol_medium_yield`
         },

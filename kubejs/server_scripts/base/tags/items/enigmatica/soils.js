@@ -1,20 +1,6 @@
 ServerEvents.tags('item', (event) => {
     event.get(`enigmatica:soils/farmland`).add(['minecraft:farmland', 'farmersdelight:rich_soil_farmland']);
-    event.get(`enigmatica:soils/grass`).add([
-        'minecraft:grass_block',
-        // 'botania:enchanted_soil',
-        // 'botania:vivid_grass',
-        // 'botania:scorched_grass',
-        // 'botania:dry_grass',
-        // 'botania:golden_grass',
-        // 'botania:infused_grass',
-        // 'botania:mutated_grass',
-        'byg:overgrown_dacite',
-        'blue_skies:lunar_cherry_grass_block',
-        'blue_skies:turquoise_cherry_grass_block',
-        'blue_skies:lunar_grass_block',
-        'blue_skies:turquoise_grass_block'
-    ]);
+    event.get(`enigmatica:soils/grass`).add(['minecraft:grass_block', 'byg:overgrown_dacite']);
     event
         .get(`enigmatica:soils/dirt`)
         .add([
@@ -25,10 +11,6 @@ ServerEvents.tags('item', (event) => {
             'minecraft:rooted_dirt',
             'minecraft:mud',
             'byg:peat',
-            'blue_skies:coarse_lunar_dirt',
-            'blue_skies:lunar_dirt',
-            'blue_skies:coarse_turquoise_dirt',
-            'blue_skies:turquoise_dirt',
             'farmersdelight:rich_soil'
         ]);
     event.get(`enigmatica:soils/moss`).add(['minecraft:moss_block']);

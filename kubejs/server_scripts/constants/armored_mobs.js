@@ -549,7 +549,7 @@ const armored_mobs = {
                             drop_rate: 0.085
                         },
                         offhand: {
-                            item: Item.of('blue_skies:spike_shield', default_nbt),
+                            item: Item.of('minecraft:shield', default_nbt),
                             drop_rate: 0.085
                         }
                     }
@@ -988,22 +988,22 @@ const armored_mobs = {
                             treasure: false
                         },
                         head: {
-                            item: Item.of('blue_skies:aquite_helmet', default_nbt),
+                            item: Item.of('minecraft:diamond_helmet', default_nbt),
                             drop_rate: 0.085
                         },
                         chest: {
-                            item: Item.of('blue_skies:aquite_chestplate', default_nbt).enchant(
+                            item: Item.of('minecraft:diamond_chestplate', default_nbt).enchant(
                                 'twilightforest:chill_aura',
                                 5
                             ),
                             drop_rate: 0.085
                         },
                         legs: {
-                            item: Item.of('blue_skies:aquite_leggings', default_nbt),
+                            item: Item.of('minecraft:diamond_leggings', default_nbt),
                             drop_rate: 0.085
                         },
                         feet: {
-                            item: Item.of('blue_skies:aquite_boots', default_nbt),
+                            item: Item.of('minecraft:diamond_boots', default_nbt),
                             drop_rate: 0.085
                         }
                     }
@@ -1022,57 +1022,6 @@ const armored_mobs = {
                             { type: 'minecraft:regeneration', amplifier: 1 }
                         ],
                         max_health: 200
-                    }
-                }
-            ]
-        }
-    },
-    blue_skies: {
-        armored_frost_spirit: {
-            equipment: [
-                {
-                    weight: 100,
-                    set: {
-                        max_health: 30,
-                        enchant: {
-                            chance: 1.0,
-                            level: { min: 10, max: 20 },
-                            treasure: false
-                        },
-                        head: {
-                            item: Item.of('blue_skies:aquite_helmet', default_nbt),
-                            drop_rate: 0.085
-                        },
-                        chest: {
-                            item: Item.of('blue_skies:aquite_chestplate', default_nbt),
-                            drop_rate: 0.085
-                        },
-                        legs: {
-                            item: Item.of('blue_skies:aquite_leggings', default_nbt),
-                            drop_rate: 0.085
-                        },
-                        feet: {
-                            item: Item.of('blue_skies:aquite_boots', default_nbt),
-                            drop_rate: 0.085
-                        },
-                        mainhand: {
-                            item: Item.of('blue_skies:aquite_axe', default_nbt),
-                            drop_rate: 0.085
-                        }
-                    }
-                }
-            ]
-        },
-        whistleshell_crab: {
-            equipment: [
-                {
-                    weight: 100,
-                    set: {
-                        max_health: 40,
-                        effects: [
-                            { type: 'minecraft:strength', amplifier: 2 },
-                            { type: 'minecraft:resistance', amplifier: 2 }
-                        ]
                     }
                 }
             ]
@@ -1326,22 +1275,22 @@ const armored_mobs = {
                             treasure: false
                         },
                         head: {
-                            item: Item.of('blue_skies:charoite_helmet', `{${enchant_glint.blank}}`),
+                            item: Item.of('minecraft:diamond_helmet', `{${enchant_glint.blank}}`),
                             drop_rate: 0.0
                         },
                         chest: {
                             item: Item.of(
-                                'blue_skies:charoite_chestplate',
+                                'minecraft:diamond_chestplate',
                                 `{${reactive.vanish},${enchant_glint.blank}}`
                             ).enchant('ars_nouveau:reactive', 3),
                             drop_rate: 0.0
                         },
                         legs: {
-                            item: Item.of('blue_skies:charoite_leggings', `{${enchant_glint.blank}}`),
+                            item: Item.of('minecraft:diamond_leggings', `{${enchant_glint.blank}}`),
                             drop_rate: 0.0
                         },
                         feet: {
-                            item: Item.of('blue_skies:charoite_boots', `{${enchant_glint.blank}}`),
+                            item: Item.of('minecraft:diamond_boots', `{${enchant_glint.blank}}`),
                             drop_rate: 0.0
                         },
                         mainhand: {

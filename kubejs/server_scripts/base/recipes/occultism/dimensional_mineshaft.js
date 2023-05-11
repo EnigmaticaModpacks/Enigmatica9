@@ -20,48 +20,6 @@ ServerEvents.recipes((event) => {
             output: 'emendatusenigmatica:apatite_ore',
             weight: 1500,
             id: `${id_prefix}apatite_ore`
-        },
-        {
-            ingredient: { tag: 'occultism:miners/master' },
-            output: 'emendatusenigmatica:pyrope_ore',
-            weight: 500,
-            id: `${id_prefix}pyrope_ore`
-        },
-        {
-            ingredient: { tag: 'occultism:miners/master' },
-            output: 'emendatusenigmatica:aquite_ore',
-            weight: 500,
-            id: `${id_prefix}aquite_ore`
-        },
-        {
-            ingredient: { tag: 'occultism:miners/master' },
-            output: 'emendatusenigmatica:charoite_ore',
-            weight: 500,
-            id: `${id_prefix}charoite_ore`
-        },
-        {
-            ingredient: { tag: 'occultism:miners/master' },
-            output: 'emendatusenigmatica:diopside_ore',
-            weight: 500,
-            id: `${id_prefix}diopside_ore`
-        },
-        {
-            ingredient: { tag: 'occultism:miners/master' },
-            output: 'emendatusenigmatica:ventium_ore',
-            weight: 330,
-            id: `${id_prefix}ventium_ore`
-        },
-        {
-            ingredient: { tag: 'occultism:miners/master' },
-            output: 'emendatusenigmatica:falsite_ore',
-            weight: 330,
-            id: `${id_prefix}falsite_ore`
-        },
-        {
-            ingredient: { tag: 'occultism:miners/master' },
-            output: 'emendatusenigmatica:horizonite_ore',
-            weight: 380,
-            id: `${id_prefix}horizonite_ore`
         }
     ];
 

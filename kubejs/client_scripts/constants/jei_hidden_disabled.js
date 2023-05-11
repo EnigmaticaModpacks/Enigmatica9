@@ -43,9 +43,6 @@ jei.base.items.disabled = [
     /emeraldite/,
     /ametrine/,
 
-    /blue_skies:raw_charoite/,
-    /blue_skies:raw_aquite/,
-
     /theoneprobe/,
 
     'createaddition:copper_spool',

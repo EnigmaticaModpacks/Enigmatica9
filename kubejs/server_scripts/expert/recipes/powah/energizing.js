@@ -5,34 +5,22 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/powah/energizing/';
     const recipes = [
         {
-            output: '4x powah:steel_energized',
-            inputs: ['#forge:dusts/aluminum', '#forge:dusts/aluminum', '#forge:dusts/copper', '#forge:gems/moonstone'],
+            output: '3x powah:steel_energized',
+            inputs: ['#forge:dusts/aluminum', '#forge:dusts/aluminum', '#forge:dusts/copper', '#forge:essences/earth'],
             energy: '100000',
-            id: `powah:energizing/energized_steel`
+            id: `${id_prefix}energized_steel`
         },
         {
-            output: '4x powah:crystal_niotic',
-            inputs: [
-                '#forge:essences/water',
-                'blue_skies:soul_fragment',
-                '#forge:gems/aquite',
-                'blue_skies:soul_fragment',
-                '#forge:essences/water'
-            ],
-            energy: '100000',
-            id: `powah:energizing/niotic_crystal`
+            output: '2x powah:crystal_niotic',
+            inputs: ['spirit:soul_powder', '#forge:gems/subzero', 'spirit:soul_powder'],
+            energy: '50000',
+            id: `${id_prefix}niotic_crystal`
         },
         {
-            output: '4x powah:crystal_spirited',
-            inputs: [
-                '#forge:essences/earth',
-                'kubejs:sylvanite',
-                '#forge:gems/diopside',
-                'kubejs:sylvanite',
-                '#forge:essences/earth'
-            ],
-            energy: '1600000',
-            id: `powah:energizing/spirited_crystal`
+            output: '2x powah:crystal_spirited',
+            inputs: ['kubejs:sylvanite', '#forge:gems/therium', 'kubejs:sylvanite'],
+            energy: '800000',
+            id: `${id_prefix}spirited_crystal`
         },
         {
             output: '4x spirit:soul_steel_ingot',
@@ -65,12 +53,6 @@ ServerEvents.recipes((event) => {
             inputs: ['powah:blank_card', '#forge:gems/carminite'],
             energy: '12000000',
             id: `${id_prefix}binding_card`
-        },
-        {
-            output: 'mekanism:upgrade_anchor',
-            inputs: ['powah:blank_card', '#forge:essences/abjuration', '#forge:gems/diopside'],
-            energy: '100000',
-            id: `${id_prefix}upgrade_anchor`
         },
         {
             output: '4x kubejs:dim_arcanite_crystal',

@@ -448,19 +448,6 @@ crop_properties.grain_crops.crops = [
         plant: 'farmersdelight:rice_panicle',
         substrate: 'water'
     },
-    // Blue Skies
-    {
-        seed: 'blue_skies:pine_fruit_seeds',
-        render: { type: 'crop', block: 'blue_skies:pine_fruits' },
-        plant: 'blue_skies:pine_fruit',
-        substrate: 'dirt'
-    },
-    {
-        seed: 'blue_skies:scalefruit_seeds',
-        render: { type: 'crop', block: 'blue_skies:scalefruits' },
-        plant: 'blue_skies:scalefruit',
-        substrate: 'dirt'
-    },
     // Thermal Series
     {
         seed: 'thermal:amaranth_seeds',
@@ -493,13 +480,6 @@ crop_properties.leafy_crops.crops = [
         seed: 'farmersdelight:cabbage_seeds',
         render: { type: 'crop', block: 'farmersdelight:cabbages' },
         plant: 'farmersdelight:cabbage',
-        substrate: 'dirt'
-    },
-    // Blue Skies
-    {
-        seed: 'blue_skies:winter_leaf_seeds',
-        render: { type: 'crop', block: 'blue_skies:winter_leaves' },
-        plant: 'blue_skies:winter_leaves',
         substrate: 'dirt'
     },
     // Thermal Series
@@ -548,13 +528,6 @@ crop_properties.leafy_crops.crops = [
     }
 ];
 crop_properties.legume_crops.crops = [
-    // Blue Skies
-    {
-        seed: 'blue_skies:fiery_bean_seeds',
-        render: { type: 'crop', block: 'blue_skies:fiery_beans' },
-        plant: 'blue_skies:fiery_beans',
-        substrate: 'dirt'
-    },
     // Thermal Series
     {
         seed: 'thermal:green_bean_seeds',
@@ -636,13 +609,6 @@ crop_properties.root_crops.crops = [
         seed: 'thermal:sadiroot_seeds',
         render: { type: 'crop', block: 'thermal:sadiroot' },
         plant: 'thermal:sadiroot',
-        substrate: 'dirt'
-    },
-    // Blue Skies
-    {
-        seed: 'blue_skies:solnut',
-        render: { type: 'crop', block: 'blue_skies:solnuts' },
-        plant: 'blue_skies:solnut',
         substrate: 'dirt'
     },
     // SushiGo Crafting
@@ -922,38 +888,6 @@ crop_properties.grassy.crops = [
         render: { type: 'generic', block: 'twilightforest:moss_patch' },
         plant: 'twilightforest:moss_patch',
         substrate: 'grass'
-    },
-
-    // Blue Skies
-    {
-        seed: 'blue_skies:crystallized_grass',
-        render: { type: 'generic', block: 'blue_skies:crystallized_grass' },
-        plant: 'blue_skies:crystallized_grass',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:glimmer_reed',
-        render: { type: 'generic', block: 'blue_skies:glimmer_reed' },
-        plant: 'blue_skies:glimmer_reed',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:cherry_grass',
-        render: { type: 'generic', block: 'blue_skies:cherry_grass' },
-        plant: 'blue_skies:cherry_grass',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:lunar_grass',
-        render: { type: 'generic', block: 'blue_skies:lunar_grass' },
-        plant: 'blue_skies:lunar_grass',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:turquoise_grass',
-        render: { type: 'generic', block: 'blue_skies:turquoise_grass' },
-        plant: 'blue_skies:turquoise_grass',
-        substrate: 'grass'
     }
 ];
 crop_properties.aquatic.crops = [
@@ -1018,31 +952,6 @@ crop_properties.aquatic.crops = [
         seed: 'twilightforest:huge_water_lily',
         render: { type: 'generic', block: 'twilightforest:huge_water_lily' },
         plant: 'twilightforest:huge_water_lily',
-        substrate: 'water'
-    },
-    // Blue Skies
-    {
-        seed: 'blue_skies:chilled_lily_pad',
-        render: { type: 'generic', block: 'blue_skies:chilled_lily_pad' },
-        plant: 'blue_skies:chilled_lily_pad',
-        substrate: 'water'
-    },
-    {
-        seed: 'blue_skies:moonlit_water_lily',
-        render: { type: 'generic', block: 'blue_skies:moonlit_water_lily' },
-        plant: 'blue_skies:moonlit_water_lily',
-        substrate: 'water'
-    },
-    {
-        seed: 'blue_skies:brumble',
-        render: { type: 'generic', block: 'blue_skies:brumble' },
-        plant: 'blue_skies:brumble',
-        substrate: 'water'
-    },
-    {
-        seed: 'blue_skies:brumble_vine_top',
-        render: { type: 'generic', block: 'blue_skies:brumble_vine_top' },
-        plant: 'blue_skies:brumble_vine_top',
         substrate: 'water'
     },
     // Hexerei
@@ -1170,19 +1079,6 @@ crop_properties.mushrooms.crops = [
         seed: 'twilightforest:mushgloom',
         render: { type: 'generic', block: 'twilightforest:mushgloom' },
         plant: 'twilightforest:mushgloom',
-        substrate: 'mushroom'
-    },
-    // Blue Skies
-    {
-        seed: 'blue_skies:snowcap_mushroom',
-        render: { type: 'generic', block: 'blue_skies:snowcap_mushroom' },
-        plant: 'blue_skies:snowcap_mushroom',
-        substrate: 'mushroom'
-    },
-    {
-        seed: 'blue_skies:snowcap_pinhead',
-        render: { type: 'generic', block: 'blue_skies:snowcap_pinhead' },
-        plant: 'blue_skies:snowcap_pinhead',
         substrate: 'mushroom'
     },
     // Thermal Series
@@ -1397,43 +1293,6 @@ crop_properties.vines.crops = [
         seed: 'byg:nether_bristle',
         render: { type: 'generic', block: 'byg:nether_bristle' },
         plant: 'byg:nether_bristle',
-        substrate: 'netherrack'
-    },
-    // Blue Skies
-    {
-        seed: 'blue_skies:maple_vine',
-        render: { type: 'generic', block: 'blue_skies:maple_vine' },
-        plant: 'blue_skies:maple_vine',
-        substrate: 'netherrack'
-    },
-    {
-        seed: 'blue_skies:dusk_vine',
-        render: { type: 'generic', block: 'blue_skies:dusk_vine' },
-        plant: 'blue_skies:dusk_vine',
-        substrate: 'netherrack'
-    },
-    {
-        seed: 'blue_skies:lunar_vine',
-        render: { type: 'generic', block: 'blue_skies:lunar_vine' },
-        plant: 'blue_skies:lunar_vine',
-        substrate: 'netherrack'
-    },
-    {
-        seed: 'blue_skies:bluebright_vine',
-        render: { type: 'generic', block: 'blue_skies:bluebright_vine' },
-        plant: 'blue_skies:bluebright_vine',
-        substrate: 'netherrack'
-    },
-    {
-        seed: 'blue_skies:starlit_vine',
-        render: { type: 'generic', block: 'blue_skies:starlit_vine' },
-        plant: 'blue_skies:starlit_vine',
-        substrate: 'netherrack'
-    },
-    {
-        seed: 'blue_skies:frostbright_vine',
-        render: { type: 'generic', block: 'blue_skies:frostbright_vine' },
-        plant: 'blue_skies:frostbright_vine',
         substrate: 'netherrack'
     }
 ];
@@ -1994,103 +1853,6 @@ crop_properties.flowers.crops = [
         seed: 'twilightforest:thorn_rose',
         render: { type: 'generic', block: 'twilightforest:thorn_rose' },
         plant: 'twilightforest:thorn_rose',
-        substrate: 'grass'
-    },
-    // Blue Skies
-    {
-        seed: 'blue_skies:blaze_bud',
-        render: { type: 'generic', block: 'blue_skies:blaze_bud' },
-        plant: 'blue_skies:blaze_bud',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:blush_blossom',
-        render: { type: 'generic', block: 'blue_skies:blush_blossom' },
-        plant: 'blue_skies:blush_blossom',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:briskbloom',
-        render: { type: 'generic', block: 'blue_skies:briskbloom' },
-        plant: 'blue_skies:briskbloom',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:brittlebush',
-        render: { type: 'generic', block: 'blue_skies:brittlebush' },
-        plant: 'blue_skies:brittlebush',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:camellia',
-        render: { type: 'generic', block: 'blue_skies:camellia' },
-        plant: 'blue_skies:camellia',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:chillweed',
-        render: { type: 'generic', block: 'blue_skies:chillweed' },
-        plant: 'blue_skies:chillweed',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:crystal_flower',
-        render: { type: 'generic', block: 'blue_skies:crystal_flower' },
-        plant: 'blue_skies:crystal_flower',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:flare_floret',
-        render: { type: 'generic', block: 'blue_skies:flare_floret' },
-        plant: 'blue_skies:flare_floret',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:frose',
-        render: { type: 'generic', block: 'blue_skies:frose' },
-        plant: 'blue_skies:frose',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:lucentroot',
-        render: { type: 'generic', block: 'blue_skies:lucentroot' },
-        plant: 'blue_skies:lucentroot',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:midday_bayhop',
-        render: { type: 'generic', block: 'blue_skies:midday_bayhop' },
-        plant: 'blue_skies:midday_bayhop',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:moonlit_bloom',
-        render: { type: 'generic', block: 'blue_skies:moonlit_bloom' },
-        plant: 'blue_skies:moonlit_bloom',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:muckweed',
-        render: { type: 'generic', block: 'blue_skies:muckweed' },
-        plant: 'blue_skies:muckweed',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:nightcress',
-        render: { type: 'generic', block: 'blue_skies:nightcress' },
-        plant: 'blue_skies:nightcress',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:polar_posy',
-        render: { type: 'generic', block: 'blue_skies:polar_posy' },
-        plant: 'blue_skies:polar_posy',
-        substrate: 'grass'
-    },
-    {
-        seed: 'blue_skies:snowbloom',
-        render: { type: 'generic', block: 'blue_skies:snowbloom' },
-        plant: 'blue_skies:snowbloom',
         substrate: 'grass'
     }
 ];
