@@ -177,6 +177,9 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:mob_slaughter_factory' },
         { id: 'industrialforegoing:resourceful_furnace' },
 
+        { id: 'littlelogistics:steam_locomotive' },
+        { id: 'littlelogistics:tug' },
+
         { id: /mekanism:transmitter\/universal_cable/ },
         { id: /mekanism:processing\/steel/ },
         { id: /mekanism:processing\/netherite/ },
@@ -235,7 +238,10 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },
         { id: 'pneumaticcraft:pressure_chamber/compressed_iron_ingot' },
         { id: 'pneumaticcraft:pressure_chamber/compressed_iron_block' },
+        { id: 'pneumaticcraft:pressure_chamber/empty_pcb' },
         { id: 'pneumaticcraft:thermo_plant/reinforced_pressure_tube' },
+        { id: 'pneumaticcraft:assembly/unassembled_pcb' },
+        { id: 'pneumaticcraft:assembly/red_dye' },
         { id: 'pneumaticcraft:pressure_chamber_valve' },
         { id: 'pneumaticcraft:pressure_chamber_glass' },
         { id: 'pneumaticcraft:logistics_core' },
@@ -246,6 +252,9 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:pneumatic_chestplate' },
         { id: 'pneumaticcraft:pneumatic_leggings' },
         { id: 'pneumaticcraft:pneumatic_boots' },
+        { id: 'pneumaticcraft:etching_tank' },
+        { id: 'pneumaticcraft:uv_light_box' },
+        { id: 'pneumaticcraft:empty_pcb_from_failed_pcb' },
 
         { id: 'powah:crafting/dielectric_rod_h' },
         { id: 'powah:crafting/dielectric_paste' },

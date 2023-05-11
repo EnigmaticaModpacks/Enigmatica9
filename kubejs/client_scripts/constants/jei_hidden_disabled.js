@@ -343,6 +343,9 @@ jei.expert.items.disabled = [
     'industrialforegoing:mob_slaughter_factory',
     'industrialforegoing:resourceful_furnace',
 
+    'littlelogistics:steam_locomotive',
+    'littlelogistics:tug',
+
     /mekanism:universal_cable/,
     'mekanism:advanced_energy_cube',
     'mekanism:advanced_induction_cell',
@@ -440,6 +443,12 @@ jei.expert.items.disabled = [
     'pneumaticcraft:jumping_upgrade_1',
     'pneumaticcraft:radiation_shielding_upgrade',
     'pneumaticcraft:search_upgrade',
+    'pneumaticcraft:etching_tank',
+    'pneumaticcraft:uv_light_box',
+    'pneumaticcraft:failed_pcb',
+    'pneumaticcraft:unassembled_pcb',
+    'pneumaticcraft:empty_pcb',
+
     /powah:(thermo_generator|solar_panel|furnator|magmator|reactor|energy|battery|ender)/,
     /powah:(energizing_rod_|player_transmitter_|capacitor_)(blazing|hardened)/,
     'powah:dielectric_casing',

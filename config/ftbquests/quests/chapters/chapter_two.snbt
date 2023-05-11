@@ -10,8 +10,8 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 0.5d
-			y: 9.5d
+			x: 1.0d
+			y: 8.0d
 			shape: "hexagon"
 			dependencies: ["4F90F6437D6CF7EC"]
 			id: "3D0B7DA1DD0A74B1"
@@ -32,7 +32,7 @@
 				}
 			}
 			x: 0.5d
-			y: 8.5d
+			y: 7.0d
 			shape: "hexagon"
 			description: [
 				"Only a well-prepared witch should ever consider summoning the Wither Council, using every trick at her disposal to defeat them in a timely manner. "
@@ -59,8 +59,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 4.0d
+			x: 0.5d
+			y: 3.0d
 			dependencies: ["55C6945D58D77AB6"]
 			id: "4C676E7D2BA75DE4"
 			tasks: [{
@@ -70,8 +70,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 5.0d
+			x: 0.5d
+			y: 4.0d
 			dependencies: ["4C676E7D2BA75DE4"]
 			id: "71D9A268FF98E954"
 			tasks: [{
@@ -81,8 +81,8 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: 5.5d
+			x: -0.5d
+			y: 4.5d
 			shape: "hexagon"
 			description: ["It would seem the Cult of the Ur-Ghast were up to something far more sinister than previously thought. The rift they opened with their Carminite Reactor also gave them the opportunity to obtain this strange debris.  "]
 			id: "0CFE9B39B0643013"
@@ -93,8 +93,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 6.0d
+			x: 0.5d
+			y: 5.0d
 			description: [
 				"With some research, it appears the Cult were preparing to summon a great evil into the land. To what purpose is still unclear. "
 				""
@@ -114,8 +114,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 7.0d
+			x: 0.5d
+			y: 6.0d
 			description: [
 				"Bait. "
 				""
@@ -140,7 +140,7 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: 2.5d
 			y: -0.5d
 			dependencies: ["00B21E64DEFACB40"]
 			id: "31E4C2A162D7497C"
@@ -158,8 +158,8 @@
 					gateway: "gateways:wilden_grove_gate"
 				}
 			}
-			x: 0.5d
-			y: 3.5d
+			x: -0.5d
+			y: 2.5d
 			shape: "hexagon"
 			description: [
 				"As the Queen tells it, The Wilden Grove invoked a dangerous ritual to attempt to stop the Cult of the Ur-Ghast before it was too late. "
@@ -188,8 +188,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 4.5d
+			x: -1.0d
+			y: 3.5d
 			dependencies: ["0B7E9625225C8413"]
 			id: "10238EBB9B55F67B"
 			tasks: [{
@@ -199,8 +199,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 6.0d
+			x: 2.5d
+			y: 5.5d
 			dependencies: ["1D0AA79380E87E57"]
 			id: "7563E41DBF4FD286"
 			tasks: [{
@@ -210,8 +210,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 7.0d
+			x: 2.5d
+			y: 6.5d
 			dependencies: ["7563E41DBF4FD286"]
 			id: "17F735810850C368"
 			tasks: [{
@@ -221,8 +221,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 7.5d
+			x: 3.5d
+			y: 7.0d
 			dependencies: ["7465284C82512CF1"]
 			id: "5503E132D9D02EF8"
 			tasks: [{
@@ -232,7 +232,7 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: 2.5d
 			y: 0.5d
 			dependencies: ["31E4C2A162D7497C"]
 			id: "6044FE23384692A5"
@@ -243,8 +243,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 8.5d
+			x: 3.5d
+			y: 8.0d
 			dependencies: [
 				"126F4E070F219A8B"
 				"6E239ECBE33DFA36"
@@ -257,8 +257,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 10.0d
+			x: 3.5d
+			y: 9.5d
 			dependencies: ["606F79DAEB15E85B"]
 			id: "507A68CE5D41C4C2"
 			tasks: [{
@@ -268,8 +268,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 8.0d
+			x: 2.5d
+			y: 7.5d
 			dependencies: ["17F735810850C368"]
 			id: "126F4E070F219A8B"
 			tasks: [{
@@ -279,8 +279,8 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: 8.0d
+			x: 4.5d
+			y: 7.5d
 			dependencies: [
 				"4B12601018EEB05D"
 				"5503E132D9D02EF8"
@@ -293,8 +293,8 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: 7.5d
+			x: 5.5d
+			y: 7.0d
 			dependencies: ["538DE3B57A9AC5AD"]
 			id: "4B12601018EEB05D"
 			tasks: [{
@@ -305,7 +305,7 @@
 		}
 		{
 			icon: "powah:energizing_orb"
-			x: 4.5d
+			x: 3.5d
 			y: -2.5d
 			shape: "hexagon"
 			id: "60324503ED7AC4C1"
@@ -323,7 +323,7 @@
 			]
 		}
 		{
-			x: 5.5d
+			x: 2.5d
 			y: 3.5d
 			dependencies: ["49159D9F94B7006C"]
 			id: "767A379B00DCA2E0"
@@ -344,7 +344,7 @@
 		{
 			title: "Improved Blast Furnace"
 			icon: "immersiveengineering:advanced_blast_furnace"
-			x: 3.5d
+			x: 2.5d
 			y: 1.5d
 			description: [
 				"Supplying enough heat to work with Iron directly has proved difficult until now. With a magically enhanced blast furnace and Horizonite as fuel, it should prove more feasible."
@@ -360,34 +360,14 @@
 			}]
 		}
 		{
-			title: "Magical Forging"
-			x: 5.5d
-			y: 4.5d
-			dependencies: ["767A379B00DCA2E0"]
-			id: "16B840CCFD9B3115"
-			tasks: [{
-				id: "05285D9A3BD52FB6"
-				type: "item"
-				title: "Invar"
-				icon: "emendatusenigmatica:invar_ingot"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "forge:ingots/invar"
-					}
-				}
-			}]
-		}
-		{
-			x: 5.5d
-			y: 5.5d
+			x: 3.5d
+			y: 5.0d
 			description: [
 				"Formed by crushing Invar with Magic! The following spell form will crush items on the ground: "
 				""
 				"Projectile > Crush > Sensitive "
 			]
-			dependencies: ["16B840CCFD9B3115"]
+			dependencies: ["2BE91F37CE010984"]
 			id: "1D0AA79380E87E57"
 			tasks: [{
 				id: "5C129E4F6EAC8C83"
@@ -398,7 +378,7 @@
 		{
 			title: "Light Machinery"
 			icon: "immersiveengineering:light_engineering"
-			x: 5.5d
+			x: 4.5d
 			y: 1.5d
 			description: [
 				"The following multiblock machines are available with Light Engineering Blocks:"
@@ -426,8 +406,8 @@
 		}
 		{
 			title: "Heavy Machinery"
-			x: 6.5d
-			y: 6.0d
+			x: 4.5d
+			y: 5.5d
 			description: [
 				"The following multiblock machines are available with Heavy Engineering Blocks:"
 				""
@@ -445,7 +425,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 4.5d
 			y: 0.5d
 			dependencies: ["738DA69FFF6516FA"]
 			id: "21C352EEFEB25365"
@@ -456,8 +436,8 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: 6.5d
+			x: 5.5d
+			y: 6.0d
 			dependencies: ["15F56E72212629FB"]
 			id: "538DE3B57A9AC5AD"
 			tasks: [{
@@ -467,8 +447,8 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: 7.0d
+			x: 4.5d
+			y: 6.5d
 			dependencies: ["538DE3B57A9AC5AD"]
 			id: "7465284C82512CF1"
 			tasks: [{
@@ -478,7 +458,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 3.5d
 			y: 3.0d
 			dependencies: ["0C0A98C6DD871BD3"]
 			id: "49159D9F94B7006C"
@@ -489,8 +469,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 2.0d
+			x: 0.5d
+			y: 1.0d
 			shape: "hexagon"
 			description: [
 				"The Cell Maze seems a likely a place as any to start. Locate it and search around for clues to the Queen's whereabouts.  They’re notable for their large cells partitioned off by Honey Web and contain countless Honey Cocoons."
@@ -523,8 +503,8 @@
 		}
 		{
 			icon: "the_bumblezone:essence_of_the_bees"
-			x: -0.5d
-			y: 3.0d
+			x: 0.5d
+			y: 2.0d
 			shape: "hexagon"
 			description: [
 				"At last, the Queen!"
@@ -568,8 +548,8 @@
 		}
 		{
 			icon: "minecraft:honeycomb"
-			x: -0.5d
-			y: 1.0d
+			x: 0.5d
+			y: 0.0d
 			shape: "hexagon"
 			description: [
 				"The meandering pathways in the Bumblezone are built for hive minds, and so can be difficult for others to follow. Crafting a Honey Compass will be the safest way forward."
@@ -580,6 +560,7 @@
 				""
 				"While in the Bumblezone, it is possible to leave at any time by mining to the roof or floor. Above ore below a certain point, you’ll be teleported back to where you came from."
 			]
+			dependencies: ["2153EBB1D50F0039"]
 			id: "4CC418E7200DF351"
 			tasks: [
 				{
@@ -622,25 +603,6 @@
 		}
 		{
 			x: 3.5d
-			y: 3.5d
-			dependencies: ["49159D9F94B7006C"]
-			id: "0862AB2169FF2F09"
-			tasks: [{
-				id: "1636D501CFABD5CF"
-				type: "item"
-				title: "Steel"
-				icon: "emendatusenigmatica:steel_ingot"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "forge:ingots/steel"
-					}
-				}
-			}]
-		}
-		{
-			x: 4.5d
 			y: -1.0d
 			dependencies: ["60324503ED7AC4C1"]
 			id: "00B21E64DEFACB40"
@@ -651,7 +613,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 4.5d
 			y: -0.5d
 			dependencies: ["00B21E64DEFACB40"]
 			id: "738DA69FFF6516FA"
@@ -662,7 +624,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 3.5d
 			y: 2.0d
 			dependencies: ["2BA70920EA1ED0A8"]
 			id: "0C0A98C6DD871BD3"
@@ -675,8 +637,8 @@
 		{
 			title: "Telling of the Bees"
 			icon: "minecraft:beehive"
-			x: 0.0d
-			y: 0.0d
+			x: 1.0d
+			y: -1.0d
 			shape: "hexagon"
 			description: [
 				"In places that still keep the old ways, bees hold a privileged position in community life. From the birth of a child to the death of a friend, news of important events are shared first with the bees. "
@@ -693,10 +655,8 @@
 				""
 				"In order to travel to the Bumblezone, place a Teleporter directly beneath a Beehive, then throw an Ender Pearl at the Beehive."
 			]
-			dependencies: [
-				"4CC418E7200DF351"
-				"31E4C2A162D7497C"
-			]
+			hide_dependency_lines: true
+			dependencies: ["31E4C2A162D7497C"]
 			min_width: 300
 			id: "2153EBB1D50F0039"
 			tasks: [
@@ -715,6 +675,28 @@
 				id: "6363919C99636DBD"
 				type: "item"
 				item: "minecraft:ender_pearl"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.5d
+			dependencies: ["49159D9F94B7006C"]
+			id: "4A7EC5D11F20F2B7"
+			tasks: [{
+				id: "76E4EFCD4200B779"
+				type: "item"
+				item: "emendatusenigmatica:steel_ingot"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 4.0d
+			dependencies: ["767A379B00DCA2E0"]
+			id: "2BE91F37CE010984"
+			tasks: [{
+				id: "4CCF04553715833F"
+				type: "item"
+				item: "emendatusenigmatica:invar_ingot"
 			}]
 		}
 	]
