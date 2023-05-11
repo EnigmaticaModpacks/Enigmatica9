@@ -51,16 +51,17 @@ ServerEvents.recipes((event) => {
     ];
 
     plate_materials.forEach((material) => {
+        let preferredIngot = AlmostUnified.getPreferredItemForTag(`forge:ingots/${material}`).getId();
         recipes.push({
             results: [{ item: `emendatusenigmatica:${material}_plate` }],
             input: `#forge:ingots/${material}`,
-            transitionalItem: `emendatusenigmatica:${material}_ingot`,
+            transitionalItem: preferredIngot,
             loops: 3,
             sequence: [
                 {
                     type: 'create:pressing',
-                    ingredients: [{ item: `emendatusenigmatica:${material}_ingot` }],
-                    results: [{ item: `emendatusenigmatica:${material}_ingot` }]
+                    ingredients: [{ item: preferredIngot }],
+                    results: [{ item: preferredIngot }]
                 }
             ],
             id: `${id_prefix}${material}_plate`

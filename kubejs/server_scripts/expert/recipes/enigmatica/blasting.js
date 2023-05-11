@@ -49,6 +49,7 @@ ServerEvents.recipes((event) => {
     ];
 
     simple_metals.forEach((metal) => {
+        let preferredIngot = AlmostUnified.getPreferredItemForTag(`forge:ingots/${metal}`).getId();
         recipes.push(
             {
                 output: `emendatusenigmatica:${metal}_clump`,
@@ -58,7 +59,7 @@ ServerEvents.recipes((event) => {
                 id_suffix: `clump_${metal}_from_crushed_ore`
             },
             {
-                output: `emendatusenigmatica:${metal}_ingot`,
+                output: preferredIngot,
                 input: `emendatusenigmatica:${metal}_dirty_dust`,
                 slag: 'thermal:slag',
                 xp: 0.5,
@@ -68,11 +69,11 @@ ServerEvents.recipes((event) => {
     });
 
     const metals = Object.keys(metal_properties);
-
     metals.forEach((metal) => {
+        let preferredIngot = AlmostUnified.getPreferredItemForTag(`forge:ingots/${metal}`).getId();
         if (Item.exists(`emendatusenigmatica:${metal}_dust`)) {
             recipes.push({
-                output: `emendatusenigmatica:${metal}_ingot`,
+                output: preferredIngot,
                 input: `#forge:dusts/${metal}`,
                 slag: 'thermal:slag',
                 xp: 0.5,
