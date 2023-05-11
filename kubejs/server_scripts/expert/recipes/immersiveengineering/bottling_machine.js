@@ -93,6 +93,12 @@ ServerEvents.recipes((event) => {
             inputs: [{ base_ingredient: { item: 'minecraft:glass_bottle' } }],
             fluid: { amount: 250, tag: 'forge:blood' },
             id: `${id_prefix}blood_bottle`
+        },
+        {
+            results: [{ item: 'the_bumblezone:honey_compass' }],
+            inputs: [{ base_ingredient: { item: 'naturescompass:naturescompass' } }],
+            fluid: { amount: 250, tag: 'forge:honey' },
+            id: `${id_prefix}honey_compass`
         }
     ];
 

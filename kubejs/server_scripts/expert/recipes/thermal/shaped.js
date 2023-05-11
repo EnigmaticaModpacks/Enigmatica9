@@ -311,6 +311,54 @@ ServerEvents.recipes((event) => {
                 E: 'immersiveengineering:rs_engineering'
             },
             id: 'thermal:machine_smelter'
+        },
+        {
+            output: 'thermal:machine_crucible',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: '#forge:essences/fire',
+                B: '#forge:plastic',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: 'naturesaura:infused_brick',
+                E: 'pneumaticcraft:vortex_tube'
+            },
+            id: 'thermal:machine_crucible'
+        },
+        {
+            output: 'thermal:machine_chiller',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: '#forge:essences/water',
+                B: '#forge:plastic',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: 'naturesaura:infused_brick',
+                E: 'pneumaticcraft:vortex_tube'
+            },
+            id: 'thermal:machine_chiller'
+        },
+        {
+            output: 'thermal:machine_brewer',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: '#forge:essences/abjuration',
+                B: '#forge:plastic',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: 'naturesaura:infused_brick',
+                E: 'minecraft:brewing_stand'
+            },
+            id: 'thermal:machine_brewer'
+        },
+        {
+            output: 'thermal:machine_bottler',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'create:spout',
+                B: '#forge:plastic',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: 'naturesaura:infused_brick',
+                E: 'create:depot'
+            },
+            id: 'thermal:machine_bottler'
         }
     ];
 

@@ -15,6 +15,11 @@ ServerEvents.recipes((event) => {
             results: [{ item: 'hexerei:quicksilver_bottle' }],
             ingredients: [{ item: 'minecraft:glass_bottle' }, { fluidTag: 'forge:quicksilver', amount: 250 }],
             id: `${id_prefix}quicksilver_bottle`
+        },
+        {
+            results: [{ item: 'the_bumblezone:honey_compass' }],
+            ingredients: [{ item: 'naturescompass:naturescompass' }, { fluidTag: 'forge:honey', amount: 250 }],
+            id: `${id_prefix}honey_compass`
         }
     ];
 
