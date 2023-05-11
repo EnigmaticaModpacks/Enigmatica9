@@ -9,7 +9,14 @@ ServerEvents.recipes((event) => {
             item_in: { item: 'naturesaura:gold_leaf' },
             block_in: { tag: 'minecraft:logs' },
             post: [
-                { type: 'place', block: 'naturesaura:wood_stand' },
+                { type: 'prevent_default' },
+                {
+                    type: 'place',
+                    block: 'naturesaura:wood_stand',
+                    contextual: [
+                        { type: 'is_sneaking', description: 'Must be sneaking. Consumes a small amount of Aura.' }
+                    ]
+                },
                 {
                     type: 'execute',
                     command: 'playsound ars_nouveau:ea_finish block @p ~ ~ ~',
@@ -24,8 +31,14 @@ ServerEvents.recipes((event) => {
                     type: 'execute',
                     command: 'particle twilightforest:firefly ~ ~ ~ 1 1 1 1 15',
                     hide: true
+                },
+                {
+                    type: 'execute',
+                    command: 'naaura remove 5000',
+                    hide: true
                 }
             ],
+            contextual: [{ type: 'is_sneaking', description: 'Must be sneaking. Consumes a small amount of Aura.' }],
             id: `${id_prefix}wood_stand`
         },
         {
@@ -33,7 +46,14 @@ ServerEvents.recipes((event) => {
             block_in: 'minecraft:cauldron',
             hide_in_viewer: true,
             post: [
-                { type: 'place', block: 'hexerei:mixing_cauldron' },
+                { type: 'prevent_default' },
+                {
+                    type: 'place',
+                    block: 'hexerei:mixing_cauldron',
+                    contextual: [
+                        { type: 'is_sneaking', description: 'Must be sneaking. Consumes a small amount of Aura.' }
+                    ]
+                },
                 {
                     type: 'execute',
                     command: 'playsound ars_nouveau:ea_finish block @p ~ ~ ~',
@@ -48,15 +68,28 @@ ServerEvents.recipes((event) => {
                     type: 'execute',
                     command: 'particle twilightforest:firefly ~ ~ ~ 1 1 1 1 15',
                     hide: true
+                },
+                {
+                    type: 'execute',
+                    command: 'naaura remove 5000',
+                    hide: true
                 }
             ],
+            contextual: [{ type: 'is_sneaking', description: 'Must be sneaking. Consumes a small amount of Aura.' }],
             id: `${id_prefix}mixing_cauldron`
         },
         {
-            item_in: { tag: 'forge:ingots/bronze' },
-            block_in: 'ars_nouveau:green_archwood_wood',
+            item_in: { item: 'quark:ancient_fruit' },
+            block_in: 'emendatusenigmatica:bronze_block',
             post: [
-                { type: 'place', block: 'ars_nouveau:imbuement_chamber' },
+                { type: 'prevent_default' },
+                {
+                    type: 'place',
+                    block: 'ars_nouveau:imbuement_chamber',
+                    contextual: [
+                        { type: 'is_sneaking', description: 'Must be sneaking. Consumes a small amount of Aura.' }
+                    ]
+                },
                 {
                     type: 'execute',
                     command: 'playsound ars_nouveau:ea_finish block @p ~ ~ ~',
@@ -71,14 +104,21 @@ ServerEvents.recipes((event) => {
                     type: 'execute',
                     command: 'particle twilightforest:firefly ~ ~ ~ 1 1 1 1 15',
                     hide: true
+                },
+                {
+                    type: 'execute',
+                    command: 'naaura remove 5000',
+                    hide: true
                 }
             ],
+            contextual: [{ type: 'is_sneaking', description: 'Must be sneaking. Consumes a small amount of Aura.' }],
             id: `${id_prefix}imbuement_chamber`
         },
         {
             item_in: { item: 'naturesaura:gold_leaf' },
             block_in: 'twilightforest:ironwood_block',
             post: [
+                { type: 'prevent_default' },
                 {
                     type: 'place',
                     block: { blocks: ['naturesaura:nature_altar'] },
@@ -114,6 +154,7 @@ ServerEvents.recipes((event) => {
             item_in: { tag: 'forge:essences/fire' },
             block_in: 'naturesaura:gold_brick',
             post: [
+                { type: 'prevent_default' },
                 {
                     type: 'place',
                     block: { blocks: ['naturesaura:conversion_catalyst'] },
@@ -149,6 +190,7 @@ ServerEvents.recipes((event) => {
             item_in: { tag: 'forge:essences/water' },
             block_in: 'naturesaura:gold_brick',
             post: [
+                { type: 'prevent_default' },
                 {
                     type: 'place',
                     block: { blocks: ['naturesaura:crushing_catalyst'] },
@@ -192,8 +234,7 @@ ServerEvents.recipes((event) => {
                     contextual: [
                         {
                             type: 'is_sneaking',
-                            description:
-                                'Must be sneaking. Consumes an incredible amount of Aura. Does not consume the essence.'
+                            description: 'Must be sneaking. Consumes an incredible amount of Aura.'
                         }
                     ]
                 },
@@ -221,8 +262,7 @@ ServerEvents.recipes((event) => {
             contextual: [
                 {
                     type: 'is_sneaking',
-                    description:
-                        'Must be sneaking. Consumes an incredible amount of Aura. Does not consume the essence.'
+                    description: 'Must be sneaking. Consumes an incredible amount of Aura.'
                 }
             ],
             id: `${id_prefix}gloaming_catalyst`

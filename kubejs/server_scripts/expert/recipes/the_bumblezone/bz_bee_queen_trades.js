@@ -164,6 +164,68 @@ ServerEvents.lowPriorityData((event) => {
                     required: true
                 }
             ]
+        },
+        {
+            id: 'calling_spirit_trades',
+            wants: [{ id: 'kubejs:spirit_of_devotion', required: true }],
+            possible_rewards: [
+                {
+                    id: 'ars_nouveau:water_essence',
+                    count: 10,
+                    xp_reward: 10,
+                    weight: 100,
+                    required: true
+                },
+                {
+                    id: 'ars_nouveau:manipulation_essence',
+                    count: 10,
+                    xp_reward: 10,
+                    weight: 100,
+                    required: true
+                },
+                {
+                    id: 'ars_nouveau:fire_essence',
+                    count: 10,
+                    xp_reward: 10,
+                    weight: 100,
+                    required: true
+                },
+                {
+                    id: 'ars_nouveau:earth_essence',
+                    count: 10,
+                    xp_reward: 10,
+                    weight: 100,
+                    required: true
+                },
+                {
+                    id: 'ars_nouveau:air_essence',
+                    count: 10,
+                    xp_reward: 10,
+                    weight: 100,
+                    required: true
+                },
+                {
+                    id: 'ars_nouveau:conjuration_essence',
+                    count: 10,
+                    xp_reward: 10,
+                    weight: 100,
+                    required: true
+                },
+                {
+                    id: 'ars_nouveau:abjuration_essence',
+                    count: 10,
+                    xp_reward: 10,
+                    weight: 100,
+                    required: true
+                },
+                {
+                    id: 'ars_elemental:anima_essence',
+                    count: 10,
+                    xp_reward: 10,
+                    weight: 100,
+                    required: true
+                }
+            ]
         }
     ];
 

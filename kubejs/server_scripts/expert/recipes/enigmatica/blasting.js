@@ -12,48 +12,6 @@ ServerEvents.recipes((event) => {
             id_suffix: `ironwood_ingot`
         },
         {
-            output: 'emendatusenigmatica:invar_ingot',
-            input: '#forge:dusts/invar',
-            slag: 'thermal:slag',
-            xp: 0.5,
-            id_suffix: `invar_dust_to_ingot`
-        },
-        {
-            output: 'emendatusenigmatica:constantan_ingot',
-            input: '#forge:dusts/constantan',
-            slag: 'thermal:slag',
-            xp: 0.5,
-            id_suffix: `constantan_dust_to_ingot`
-        },
-        {
-            output: 'emendatusenigmatica:electrum_ingot',
-            input: '#forge:dusts/electrum',
-            slag: 'thermal:slag',
-            xp: 0.5,
-            id_suffix: `electrum_dust_to_ingot`
-        },
-        {
-            output: 'emendatusenigmatica:bronze_ingot',
-            input: '#forge:dusts/bronze',
-            slag: 'thermal:slag',
-            xp: 0.5,
-            id_suffix: `bronze_dust_to_ingot`
-        },
-        {
-            output: 'emendatusenigmatica:aluminum_ingot',
-            input: '#forge:dusts/aluminum',
-            slag: 'thermal:slag',
-            xp: 0.5,
-            id_suffix: `aluminum_dust_to_ingot`
-        },
-        {
-            output: `emendatusenigmatica:osmium_ingot`,
-            input: `#mekanism:dirty_dusts/osmium`,
-            slag: 'thermal:slag',
-            xp: 0.5,
-            id_suffix: `osmium_ingot_from_dirty_dust`
-        },
-        {
             output: `emendatusenigmatica:nickel_ingot`,
             input: `#mekanism:dirty_dusts/nickel`,
             slag: 'thermal:rich_slag',
@@ -74,13 +32,19 @@ ServerEvents.recipes((event) => {
             xp: 0.5,
             id_suffix: `knightmetal_ingot_from_shard_cluster`
         },
-
         {
             output: '4x occultism:burnt_otherstone',
             input: 'occultism:otherstone',
             slag: 'thermal:slag',
             xp: 0.5,
             id: `burnt_otherstone`
+        },
+        {
+            output: `emendatusenigmatica:iesnium_ingot`,
+            input: `#mekanism:dirty_dusts/iesnium`,
+            slag: 'thermal:rich_slag',
+            xp: 0.5,
+            id_suffix: `iesnium_ingot_from_dirty_dust`
         }
     ];
 
@@ -101,6 +65,20 @@ ServerEvents.recipes((event) => {
                 id_suffix: `${metal}_ingot_from_dirty_dust`
             }
         );
+    });
+
+    const metals = Object.keys(metal_properties);
+
+    metals.forEach((metal) => {
+        if (Item.exists(`emendatusenigmatica:${metal}_dust`)) {
+            recipes.push({
+                output: `emendatusenigmatica:${metal}_ingot`,
+                input: `#forge:dusts/${metal}`,
+                slag: 'thermal:slag',
+                xp: 0.5,
+                id_suffix: `${metal}_ingot_from_dust`
+            });
+        }
     });
 
     recipes.forEach((recipe) => {

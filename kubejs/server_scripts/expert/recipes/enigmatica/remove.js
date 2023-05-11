@@ -393,6 +393,7 @@ ServerEvents.recipes((event) => {
         { type: 'minecraft:smelting', output: '#forge:gems' },
         { type: 'minecraft:smelting', output: '#forge:dusts' },
         { type: 'minecraft:smelting', output: /ingot_from_crushed/ },
+        { output: 'minecraft:netherite_scrap' },
 
         // { type: 'minecraft:blasting', input: '#forge:ores' },
         // { type: 'minecraft:blasting', input: '#forge:raw_materials' },

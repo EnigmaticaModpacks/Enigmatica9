@@ -10,8 +10,8 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 11.5d
-			y: 6.0d
+			x: 0.5d
+			y: 9.5d
 			shape: "hexagon"
 			dependencies: ["4F90F6437D6CF7EC"]
 			id: "3D0B7DA1DD0A74B1"
@@ -31,47 +31,37 @@
 					gateway: "gateways:wither_council_gate"
 				}
 			}
-			x: 11.5d
-			y: 5.0d
+			x: 0.5d
+			y: 8.5d
 			shape: "hexagon"
-			description: ["Summon the Wither Council to obtain access to Nether Stars"]
-			id: "4F90F6437D6CF7EC"
-			tasks: [
-				{
-					id: "456BA96D5527F132"
-					type: "item"
-					item: "minecraft:nether_star"
-				}
-				{
-					id: "40DDC75AAB69065A"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:wither_council_gate"
-						}
-					}
-				}
+			description: [
+				"Only a well-prepared witch should ever consider summoning the Wither Council, using every trick at her disposal to defeat them in a timely manner. "
+				""
+				"Perhaps one should be captured for further study, however… "
+				""
+				"========================================"
+				""
+				"The Gateway for this fight is on a short timer. Capture a Wither and defeat the rest to obtain a Nether Star. The captured Wither will be used to mine Ether, which may be used to produce more Nether Stars. "
+				""
+				"Feel free to repeat this fight, but it is not intended to be needed more than once. "
+				""
+				"Summoning the Wither Council will require the use of Eskarina’s Monstrous Compulsion, a ritual pentacle detailed in the Dictionary of Spirits. "
+				""
+				"Look for the &4Wither Council Gate Pearl&r in JEI to find the recipe for this summoning ritual. "
 			]
-		}
-		{
-			title: "Dream Stone"
-			icon: "kubejs:dream_stone"
-			x: 9.5d
-			y: 0.5d
-			shape: "hexagon"
-			id: "69324F7E3A7BCF04"
+			dependencies: ["39B2F84EBDC27AA3"]
+			min_width: 250
+			id: "4F90F6437D6CF7EC"
 			tasks: [{
-				id: "5DBC9261959191DC"
+				id: "456BA96D5527F132"
 				type: "item"
-				item: "kubejs:dream_stone"
+				item: "minecraft:nether_star"
 			}]
 		}
 		{
-			x: 9.5d
-			y: 1.5d
-			dependencies: ["69324F7E3A7BCF04"]
+			x: -0.5d
+			y: 4.0d
+			dependencies: ["55C6945D58D77AB6"]
 			id: "4C676E7D2BA75DE4"
 			tasks: [{
 				id: "47352920219144B1"
@@ -80,8 +70,8 @@
 			}]
 		}
 		{
-			x: 9.5d
-			y: 2.5d
+			x: -0.5d
+			y: 5.0d
 			dependencies: ["4C676E7D2BA75DE4"]
 			id: "71D9A268FF98E954"
 			tasks: [{
@@ -91,40 +81,48 @@
 			}]
 		}
 		{
-			title: "Netherite Scrap"
-			icon: "minecraft:netherite_scrap"
-			x: 11.5d
-			y: 1.0d
+			x: 0.5d
+			y: 5.5d
 			shape: "hexagon"
+			description: ["It would seem the Cult of the Ur-Ghast were up to something far more sinister than previously thought. The rift they opened with their Carminite Reactor also gave them the opportunity to obtain this strange debris.  "]
 			id: "0CFE9B39B0643013"
 			tasks: [{
 				id: "5BAB3FF81039BF5E"
 				type: "item"
-				item: "minecraft:netherite_scrap"
+				item: "minecraft:ancient_debris"
 			}]
 		}
 		{
-			x: 11.5d
-			y: 2.0d
-			dependencies: ["0CFE9B39B0643013"]
+			x: -0.5d
+			y: 6.0d
+			description: [
+				"With some research, it appears the Cult were preparing to summon a great evil into the land. To what purpose is still unclear. "
+				""
+				"Just the same, the processes of cleansing this debris into a useful ingot is not for the feint of heart. "
+			]
+			dependencies: [
+				"71D9A268FF98E954"
+				"0CFE9B39B0643013"
+			]
 			id: "77E8DD38A379F9C7"
 			tasks: [{
 				id: "55E4F11D8C8357A5"
 				type: "item"
 				title: "Netherite"
 				icon: "emendatusenigmatica:netherite_ingot"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "forge:ingots/netherite"
-					}
-				}
+				item: "emendatusenigmatica:netherite_ingot"
 			}]
 		}
 		{
-			x: 11.5d
-			y: 3.0d
+			x: 0.0d
+			y: 7.0d
+			description: [
+				"Bait. "
+				""
+				"They were making bait. "
+				""
+				"Celestial Gold, blessed by the gods themselves, would ring out across the dimensions like a clear bell on a calm day. They’d never resist the chance to corrupt something so sacred. "
+			]
 			dependencies: ["77E8DD38A379F9C7"]
 			id: "39B2F84EBDC27AA3"
 			tasks: [{
@@ -160,32 +158,38 @@
 					gateway: "gateways:wilden_grove_gate"
 				}
 			}
-			x: 9.5d
-			y: 4.5d
+			x: 0.5d
+			y: 3.5d
 			shape: "hexagon"
-			id: "0B7E9625225C8413"
-			tasks: [
-				{
-					id: "21A6D819BD491B00"
-					type: "item"
-					item: "ars_nouveau:wilden_tribute"
-				}
-				{
-					id: "0207748C0B221F23"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:wilden_grove_gate"
-						}
-					}
-				}
+			description: [
+				"As the Queen tells it, The Wilden Grove invoked a dangerous ritual to attempt to stop the Cult of the Ur-Ghast before it was too late. "
+				""
+				"Sadly, the ritual was too much, and they lost themselves to the Call of the Beast."
+				""
+				"Send a message on the Queen’s behalf. Tell them &7“Your friendship is mourned. Rest now.”&r, then put them down."
+				""
+				"========================================"
+				""
+				"The Gateway for this fight is on a short timer. Capture a Wilden Chimera and defeat the rest to obtain a Wilden Tribute. The captured Wilden Chimera will be used to mine Magicite, which has multiple uses. "
+				""
+				"Feel free to repeat this fight, but it is not intended to be needed more than once. "
+				""
+				"Summoning the Grove of the Wilden will require the use of Eskarina’s Monstrous Compulsion, a ritual pentacle detailed in the Dictionary of Spirits. "
+				""
+				"Look for the &5Grove of the Wilden Gate Pearl&r in JEI to find the recipe for this summoning ritual."
 			]
+			dependencies: ["55C6945D58D77AB6"]
+			min_width: 250
+			id: "0B7E9625225C8413"
+			tasks: [{
+				id: "21A6D819BD491B00"
+				type: "item"
+				item: "ars_nouveau:wilden_tribute"
+			}]
 		}
 		{
-			x: 9.5d
-			y: 5.5d
+			x: 1.0d
+			y: 4.5d
 			dependencies: ["0B7E9625225C8413"]
 			id: "10238EBB9B55F67B"
 			tasks: [{
@@ -485,10 +489,13 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: 1.0d
+			x: -0.5d
+			y: 2.0d
+			shape: "hexagon"
 			description: [
 				"The Cell Maze seems a likely a place as any to start. Locate it and search around for clues to the Queen's whereabouts.  They’re notable for their large cells partitioned off by Honey Web and contain countless Honey Cocoons."
+				""
+				"Be sure to obtain the Protection of the Hive before entering!"
 				""
 				"================================="
 				""
@@ -515,35 +522,54 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: 2.0d
+			icon: "the_bumblezone:essence_of_the_bees"
+			x: -0.5d
+			y: 3.0d
+			shape: "hexagon"
+			description: [
+				"At last, the Queen!"
+				""
+				"Earn the boon of the Queen by completing the tasks they require, or by returning to them that which is rightfully theirs."
+				""
+				"================================="
+				""
+				"Essence of the Bees is a very rare reward, indeed, so do not squander it!"
+				"Use it to first craft the Gloaming Catalyst before consuming it to receive the rest of the permanent rewards it grants. "
+			]
 			dependencies: ["57861ABDB35ED555"]
 			id: "55C6945D58D77AB6"
-			tasks: [{
-				id: "3CC2FBDD7AB29403"
-				type: "item"
-				item: {
-					id: "the_bumblezone:honey_compass"
-					Count: 1b
-					tag: {
-						Locked: 1b
-						CustomName: "item.the_bumblezone.honey_compass_throne_structure"
-						TargetPos: {
-							X: -1472
-							Y: 0
-							Z: -4688
+			tasks: [
+				{
+					id: "3CC2FBDD7AB29403"
+					type: "item"
+					item: {
+						id: "the_bumblezone:honey_compass"
+						Count: 1b
+						tag: {
+							Locked: 1b
+							CustomName: "item.the_bumblezone.honey_compass_throne_structure"
+							TargetPos: {
+								X: -1472
+								Y: 0
+								Z: -4688
+							}
+							CustomDescription: "item.the_bumblezone.honey_compass_throne_description"
+							CompassType: "structure"
+							TargetDimension: "the_bumblezone:the_bumblezone"
 						}
-						CustomDescription: "item.the_bumblezone.honey_compass_throne_description"
-						CompassType: "structure"
-						TargetDimension: "the_bumblezone:the_bumblezone"
 					}
 				}
-			}]
+				{
+					id: "586A6799065EA729"
+					type: "item"
+					item: "the_bumblezone:essence_of_the_bees"
+				}
+			]
 		}
 		{
 			icon: "minecraft:honeycomb"
-			x: 7.5d
-			y: 0.0d
+			x: -0.5d
+			y: 1.0d
 			shape: "hexagon"
 			description: [
 				"The meandering pathways in the Bumblezone are built for hive minds, and so can be difficult for others to follow. Crafting a Honey Compass will be the safest way forward."
@@ -649,8 +675,8 @@
 		{
 			title: "Telling of the Bees"
 			icon: "minecraft:beehive"
-			x: 7.5d
-			y: -1.0d
+			x: 0.0d
+			y: 0.0d
 			shape: "hexagon"
 			description: [
 				"In places that still keep the old ways, bees hold a privileged position in community life. From the birth of a child to the death of a friend, news of important events are shared first with the bees. "
@@ -667,7 +693,10 @@
 				""
 				"In order to travel to the Bumblezone, place a Teleporter directly beneath a Beehive, then throw an Ender Pearl at the Beehive."
 			]
-			dependencies: ["4CC418E7200DF351"]
+			dependencies: [
+				"4CC418E7200DF351"
+				"31E4C2A162D7497C"
+			]
 			min_width: 300
 			id: "2153EBB1D50F0039"
 			tasks: [

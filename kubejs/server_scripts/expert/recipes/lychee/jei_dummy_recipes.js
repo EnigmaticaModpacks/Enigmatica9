@@ -10,7 +10,17 @@ ServerEvents.recipes((event) => {
             item_in: { item: 'twilightforest:naga_scale' },
             block_in: 'minecraft:cauldron',
             ghost: true,
-            post: [{ type: 'place', block: { blocks: ['hexerei:mixing_cauldron'], state: { gui_render: 'true' } } }],
+            post: [
+                { type: 'prevent_default' },
+                {
+                    type: 'place',
+                    block: { blocks: ['hexerei:mixing_cauldron'], state: { gui_render: 'true' } },
+                    contextual: [
+                        { type: 'is_sneaking', description: 'Must be sneaking. Consumes a small amount of Aura.' }
+                    ]
+                }
+            ],
+            contextual: [{ type: 'is_sneaking', description: 'Must be sneaking. Consumes a small amount of Aura.' }],
             id: `${id_prefix}mixing_cauldron`
         }
     ];

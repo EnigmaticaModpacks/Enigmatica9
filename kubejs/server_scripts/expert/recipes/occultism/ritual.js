@@ -1038,15 +1038,7 @@ ServerEvents.recipes((event) => {
                 'minecraft:wither_skeleton_skull',
                 'minecraft:wither_skeleton_skull',
                 'spirit:compressed_soul_powder_block',
-                'minecraft:wither_skeleton_skull',
-                '#forge:ingots/soul_steel',
-                '#forge:ingots/soul_steel',
-                '#forge:ingots/soul_steel',
-                '#forge:ingots/soul_steel',
-                '#forge:gems/infused_diamond',
-                '#forge:gems/infused_diamond',
-                '#forge:gems/infused_diamond',
-                '#forge:gems/infused_diamond'
+                'minecraft:wither_skeleton_skull'
             ],
             ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:wither_council_gate", radius:5}`),
             ritual_type: 'occultism:craft',
@@ -1056,7 +1048,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: Item.of('gateways:gate_pearl', `{gateway:"gateways:wilden_grove_gate", radius:5}`),
-            activation_item: 'farmersdelight:honey_glazed_ham_block',
+            activation_item: 'the_bumblezone:royal_jelly_bottle',
             inputs: [
                 'hexerei:blood_bottle',
                 'hexerei:blood_bottle',
