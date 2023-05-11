@@ -531,6 +531,7 @@ jei.expert.recipes.hidden = [
             'naturesaura:animal_spawner',
             'naturesaura:rf_converter',
             'naturesaura:calling_spirit',
+            'naturesaura:depth_ingot_creation',
             'ars_nouveau:imbuement_chamber',
             'ars_nouveau:mycelial_sourcelink',
             'ars_nouveau:vitalic_sourcelink',

@@ -165,6 +165,12 @@ ServerEvents.recipes((event) => {
             outputs: ['2x kubejs:energetic_transference_matrix'],
             energy: 8000,
             id: `${id_prefix}energetic_transference_matrix`
+        },
+        {
+            inputs: ['4x minecraft:echo_shard', '#forge:ingots/iesnium'],
+            outputs: ['naturesaura:depth_ingot'],
+            energy: 8000,
+            id: `${id_prefix}depth_ingot`
         }
     ];
 

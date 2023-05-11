@@ -10,7 +10,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -0.5d
+			x: -1.0d
 			y: 0.0d
 			dependencies: ["73B4078AB841567A"]
 			id: "2F5D2A85ADFE9CA1"
@@ -21,7 +21,7 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: -1.0d
 			y: -1.0d
 			dependencies: ["714A42E9CE3C32EA"]
 			id: "73B4078AB841567A"
@@ -66,9 +66,9 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: 0.0d
-			dependencies: ["73B4078AB841567A"]
+			x: 1.0d
+			y: -1.0d
+			dependencies: ["714A42E9CE3C32EA"]
 			id: "1D08EB5A9283F5F0"
 			tasks: [{
 				id: "7D81071298ED011E"
