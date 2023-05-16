@@ -359,6 +359,32 @@ ServerEvents.recipes((event) => {
                 E: 'create:depot'
             },
             id: 'thermal:machine_bottler'
+        },
+        {
+            output: 'thermal:machine_pulverizer',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'pneumaticcraft:pneumatic_cylinder',
+                B: '#forge:storage_blocks/depths',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: '#forge:gears/steel',
+                F: '#forge:essences/earth'
+            },
+            id: 'thermal:machine_pulverizer'
+        },
+        {
+            output: 'thermal:machine_sawmill',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'create:metal_bracket',
+                B: 'immersiveengineering:sawblade',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: '#forge:gears/steel',
+                F: '#forge:essences/earth'
+            },
+            id: 'thermal:machine_sawmill'
         }
     ];
 

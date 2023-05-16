@@ -191,6 +191,42 @@ ServerEvents.recipes((event) => {
                 G: '#forge:essences/earth'
             },
             id: 'industrialforegoing:material_stonework_factory'
+        },
+        {
+            output: '2x industrialforegoing:item_transporter_type',
+            pattern: [' AE', 'BCB', ' D '],
+            key: {
+                A: 'minecraft:hopper',
+                B: '#forge:ingots/electrum',
+                C: 'pneumaticcraft:logistics_core',
+                D: '#forge:gems/source',
+                E: '#forge:essences/air'
+            },
+            id: 'industrialforegoing:item_transporter_type'
+        },
+        {
+            output: '2x industrialforegoing:fluid_transporter_type',
+            pattern: [' AE', 'BCB', ' D '],
+            key: {
+                A: 'littlelogistics:fluid_hopper',
+                B: '#forge:ingots/electrum',
+                C: 'pneumaticcraft:logistics_core',
+                D: '#forge:gems/source',
+                E: '#forge:essences/air'
+            },
+            id: 'industrialforegoing:fluid_transporter_type'
+        },
+        {
+            output: '2x industrialforegoing:world_transporter_type',
+            pattern: [' AE', 'BCB', ' D '],
+            key: {
+                A: 'minecraft:dropper',
+                B: '#forge:ingots/electrum',
+                C: 'pneumaticcraft:logistics_core',
+                D: '#forge:gems/source',
+                E: '#forge:essences/air'
+            },
+            id: 'industrialforegoing:world_transporter_type'
         }
     ];
 

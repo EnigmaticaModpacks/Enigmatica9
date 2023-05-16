@@ -241,8 +241,10 @@ jei.normal.gases.hidden = [];
 // Expert
 jei.expert.items.disabled = [
     /computercraft/,
+
     'ae2:charger',
     'ae2:vibration_chamber',
+
     'ars_nouveau:agronomic_sourcelink',
     'ars_nouveau:mycelial_sourcelink',
     'ars_nouveau:vitalic_sourcelink',
@@ -250,14 +252,19 @@ jei.expert.items.disabled = [
     'ars_nouveau:ritual_wilden_summon',
 
     'compactmachines:chunkloader_upgrade',
+
     'constructionwand:iron_wand',
     'constructionwand:stone_wand',
+
     'create:empty_blaze_burner',
+
     'createaddition:alternator',
     'createaddition:modular_accumulator',
     'createaddition:capacitor',
     'createaddition:portable_energy_interface',
+
     'farmingforblockheads:feeding_trough',
+
     'immersiveengineering:capacitor_hv',
     'immersiveengineering:capacitor_lv',
     'immersiveengineering:capacitor_mv',
@@ -303,6 +310,8 @@ jei.expert.items.disabled = [
     'immersiveengineering:breaker_switch',
     'immersiveengineering:current_transformer',
     'immersiveengineering:cloche',
+
+    /industrialforegoing:.*black_hole/,
     'industrialforegoing:biofuel_generator',
     'industrialforegoing:fermentation_station',
     'industrialforegoing:fluid_sieving_machine',
@@ -350,21 +359,34 @@ jei.expert.items.disabled = [
     'littlelogistics:steam_locomotive',
     'littlelogistics:tug',
 
-    /mekanism:universal_cable/,
-    'mekanism:advanced_energy_cube',
-    'mekanism:advanced_induction_cell',
-    'mekanism:advanced_induction_provider',
+    /mekanism:.*_universal_cable/,
+    /mekanism:.*_thermodynamic_conductor/,
+    /mekanism:.*_logistical_transporter/,
+    /mekanism:.*_pressurized_tube/,
+    /mekanism:.*_mechanical_pipe/,
+    'mekanism:logistical_sorter',
+    'mekanism:diversion_transporter',
+    'mekanism:restrictive_transporter',
     'mekanism:basic_energy_cube',
     'mekanism:basic_induction_cell',
     'mekanism:basic_induction_provider',
+    'mekanism:advanced_energy_cube',
+    'mekanism:advanced_induction_cell',
+    'mekanism:advanced_induction_provider',
+    'mekanism:advanced_fluid_tank',
+    'mekanism:advanced_chemical_tank',
     'mekanism:elite_energy_cube',
     'mekanism:elite_induction_cell',
     'mekanism:elite_induction_provider',
-    'mekanism:induction_casing',
-    'mekanism:induction_port',
+    'mekanism:elite_fluid_tank',
+    'mekanism:elite_chemical_tank',
     'mekanism:ultimate_energy_cube',
     'mekanism:ultimate_induction_cell',
     'mekanism:ultimate_induction_provider',
+    'mekanism:ultimate_fluid_tank',
+    'mekanism:ultimate_chemical_tank',
+    'mekanism:induction_casing',
+    'mekanism:induction_port',
     'mekanism:energy_tablet',
     'mekanism:seismic_reader',
     'mekanism:seismic_vibrator',

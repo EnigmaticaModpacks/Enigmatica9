@@ -213,6 +213,32 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}dim_source_generator`
         },
         {
+            output: 'enigmaticunity:bright_source_generator',
+            ingredients: [
+                'kubejs:bright_arcanite_crystal',
+                '#forge:planks/archwood',
+                '#forge:ingots/skies',
+                '#forge:ingots/skies',
+                'naturesaura:gold_leaf'
+            ],
+            time: 20,
+            sapling: 'ars_elemental:yellow_archwood_sapling',
+            id: `${id_prefix}bright_source_generator`
+        },
+        {
+            output: 'enigmaticunity:iridescent_source_generator',
+            ingredients: [
+                'kubejs:iridescent_arcanite_crystal',
+                '#forge:planks/archwood',
+                '#forge:ingots/depths',
+                '#forge:ingots/depths',
+                'naturesaura:gold_leaf'
+            ],
+            time: 20,
+            sapling: 'ars_elemental:yellow_archwood_sapling',
+            id: `${id_prefix}iridescent_source_generator`
+        },
+        {
             output: 'ars_nouveau:scribes_table',
             ingredients: [
                 'supplementaries:antique_ink',

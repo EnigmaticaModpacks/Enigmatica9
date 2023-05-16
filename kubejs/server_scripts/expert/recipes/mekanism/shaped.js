@@ -115,7 +115,17 @@ ServerEvents.recipes((event) => {
                 B: '#forge:plates/osmium',
                 C: 'pneumaticcraft:air_canister'
             },
-            id: 'mekanism:chemical_tank/basic'
+            id: `${id_prefix}basic_chemical_tank`
+        },
+        {
+            output: 'mekanism:basic_fluid_tank',
+            pattern: [' A ', 'BCB', ' B '],
+            key: {
+                A: 'create:fluid_valve',
+                B: '#forge:plates/steel',
+                C: 'thermal:fluid_cell_frame'
+            },
+            id: `${id_prefix}basic_fluid_tank`
         },
         {
             output: 'mekanism:rotary_condensentrator',
