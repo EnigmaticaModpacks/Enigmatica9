@@ -8,19 +8,25 @@ ServerEvents.recipes((event) => {
             output: '3x powah:steel_energized',
             inputs: ['#forge:dusts/aluminum', '#forge:dusts/aluminum', '#forge:dusts/copper', '#forge:essences/earth'],
             energy: '100000',
-            id: `${id_prefix}energized_steel`
+            id: `${id_prefix}steel_energized`
         },
         {
             output: '2x powah:crystal_niotic',
             inputs: ['#forge:dusts/subzero', 'quark:cyan_rune', '#forge:dusts/subzero'],
             energy: '50000',
-            id: `${id_prefix}niotic_crystal`
+            id: `${id_prefix}crystal_niotic`
         },
         {
             output: '2x powah:crystal_spirited',
             inputs: ['kubejs:sylvanite', 'quark:lime_rune', 'kubejs:sylvanite'],
             energy: '800000',
-            id: `${id_prefix}spirited_crystal`
+            id: `${id_prefix}crystal_spirited`
+        },
+        {
+            output: '2x powah:crystal_nitro',
+            inputs: ['#forge:pellets/polonium', 'quark:red_rune', '#forge:pellets/polonium'],
+            energy: '12800000',
+            id: `${id_prefix}crystal_nitro`
         },
         {
             output: '4x spirit:soul_steel_ingot',

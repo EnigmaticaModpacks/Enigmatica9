@@ -104,13 +104,13 @@ ServerEvents.recipes((event) => {
 
         { id: /immersiveengineering:blastfurnace\/fuel_/ },
         { id: /immersiveengineering:crafting\/.*_mix/ },
-        { id: /immersiveengineering:crafting\/toolupgrade_powerpack_.*/ },
-        { id: /immersiveengineering:crafting\/wirecoil_(?!redstone).*/ },
+        { id: /immersiveengineering:crafting\/toolupgrade_powerpack_/ },
+        { id: /immersiveengineering:crafting\/wirecoil_/ },
         { id: /immersiveengineering:crafting\/wire_/ },
         { id: /immersiveengineering:.*\/component_iron/ },
         { id: /immersiveengineering:.*\/component_steel/ },
-        { id: /immersiveengineering:blueprint\/bullet_.*/ },
-        { id: /immersiveengineering:metalpress\/bullet_.*/ },
+        { id: /immersiveengineering:blueprint\/bullet_/ },
+        { id: /immersiveengineering:metalpress\/bullet_/ },
         { id: 'immersiveengineering:crafting/treated_wood_horizontal' },
         { id: 'immersiveengineering:blastfurnace/steel' },
         { id: 'immersiveengineering:blastfurnace/steel_block' },
@@ -133,6 +133,8 @@ ServerEvents.recipes((event) => {
         { id: 'immersiveengineering:blueprint/mold_bullet_casing' },
         { id: 'immersiveengineering:blueprint/mold_unpacking_4' },
         { id: 'immersiveengineering:blueprint/mold_unpacking_9' },
+        { id: 'immersiveengineering:blueprint/mold_packing_4' },
+        { id: 'immersiveengineering:blueprint/mold_packing_9' },
         { id: 'immersiveengineering:blueprint/mold_plate' },
         { id: 'immersiveengineering:blueprint/mold_wire' },
         { id: 'immersiveengineering:blueprint/mold_rod' },
@@ -187,6 +189,10 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:hazmat/ },
         { id: /mekanism:scuba/ },
         { id: 'mekanism:upgrade/anchor' },
+        { id: 'mekanism:sps_casing' },
+        { id: 'mekanism:laser' },
+        { id: 'mekanism:supercharged_coil' },
+        { id: 'mekanism:structural_glass' },
         { id: 'mekanism:teleportation_core' },
         { id: 'mekanism:energy_tablet' },
         { id: 'mekanism:seismic_reader' },
@@ -210,6 +216,7 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:compat/ae2/certus_crystal_to_dust' },
         { id: 'mekanism:gas_conversion/flint_to_oxygen' },
         { id: `mekanism:processing/uranium/reprocessing/to_fuel` },
+        { id: `mekanism:processing/lategame/polonium_pellet/from_reaction` },
 
         { id: 'minecraft:netherite_ingot' },
         { id: 'minecraft:lodestone' },
@@ -268,6 +275,7 @@ ServerEvents.recipes((event) => {
         { id: `powah:energizing/spirited_crystal` },
         { id: `powah:energizing/niotic_crystal` },
         { id: `powah:energizing/energized_steel` },
+        { id: `powah:energizing/nitro_crystal` },
 
         {
             id: /powah:crafting\/(thermo_generator|solar_panel|furnator|magmator|reactor|energy|cable|battery|ender)/

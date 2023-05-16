@@ -602,6 +602,38 @@ ServerEvents.recipes((event) => {
             reagents: ['occultism:stable_wormhole'],
             sourceCost: 0,
             id: `${id_prefix}condenser`
+        },
+        {
+            output: 'mekanism:laser',
+            inputs: [
+                '#industrialforegoing:laser_lens/red',
+                'powah:capacitor_spirited',
+                'quark:rainbow_rune',
+                'powah:capacitor_spirited',
+                '#industrialforegoing:machine_frame/advanced',
+                'powah:capacitor_spirited',
+                'quark:rainbow_rune',
+                'powah:capacitor_spirited'
+            ],
+            reagents: ['ars_nouveau:spell_turret'],
+            sourceCost: 10000,
+            id: `${id_prefix}laser`
+        },
+        {
+            output: 'mekanism:supercharged_coil',
+            inputs: [
+                'ars_elemental:arc_prism_lens',
+                'powah:capacitor_nitro',
+                'quark:rainbow_rune',
+                'powah:capacitor_nitro',
+                '#industrialforegoing:machine_frame/supreme',
+                'powah:capacitor_nitro',
+                'quark:rainbow_rune',
+                'powah:capacitor_nitro'
+            ],
+            reagents: ['mekanism:laser'],
+            sourceCost: 10000,
+            id: `${id_prefix}supercharged_coil`
         }
     ];
 

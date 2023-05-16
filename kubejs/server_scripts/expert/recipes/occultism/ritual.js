@@ -816,14 +816,20 @@ ServerEvents.recipes((event) => {
             output: 'industrialforegoing:ore_laser_base',
             activation_item: 'thermal:machine_frame',
             inputs: [
+                'ars_elemental:lesser_earth_focus',
+                '#forge:gears/aluminum',
+                '#forge:storage_blocks/source',
+                '#forge:gears/aluminum',
+
+                '#forge:ingots/energized_steel',
                 'spirit:soul_glass',
+                '#forge:ingots/energized_steel',
                 'spirit:soul_glass',
+
+                '#forge:ingots/energized_steel',
                 'spirit:soul_glass',
-                'spirit:soul_glass',
-                '#forge:ingots/compressed_iron',
-                '#forge:ingots/compressed_iron',
-                '#forge:ingots/compressed_iron',
-                '#forge:ingots/compressed_iron'
+                '#forge:ingots/energized_steel',
+                'spirit:soul_glass'
             ],
             entity_to_sacrifice: {
                 tag: 'enigmatica:elementals/earth',
@@ -862,14 +868,20 @@ ServerEvents.recipes((event) => {
             output: 'industrialforegoing:fluid_laser_base',
             activation_item: 'thermal:machine_frame',
             inputs: [
+                'ars_elemental:lesser_water_focus',
+                '#forge:gears/aluminum',
+                '#forge:storage_blocks/source',
+                '#forge:gears/aluminum',
+
+                '#forge:ingots/energized_steel',
                 'spirit:soul_glass',
+                '#forge:ingots/energized_steel',
                 'spirit:soul_glass',
+
+                '#forge:ingots/energized_steel',
                 'spirit:soul_glass',
-                'spirit:soul_glass',
-                '#forge:gems/niotic',
-                '#forge:gems/niotic',
-                '#forge:gems/niotic',
-                '#forge:gems/niotic'
+                '#forge:ingots/energized_steel',
+                'spirit:soul_glass'
             ],
             entity_to_sacrifice: {
                 tag: 'enigmatica:elementals/water',

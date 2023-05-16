@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/mekanism/metallurgic_infusing/';
     const recipes = [
         {
-            output: 'emendatusenigmatica:iron_ingot',
+            output: AlmostUnified.getPreferredItemForTag(`forge:ingots/iron`).getId(),
             itemInput: { ingredient: { tag: 'forge:ingots/crude_iron' } },
             chemicalInput: { infuse_type: 'emendatusenigmatica:air_essence', amount: 20 },
             id: `${id_prefix}iron_ingot`
@@ -59,30 +59,6 @@ ServerEvents.recipes((event) => {
             chemicalInput: { infuse_type: 'emendatusenigmatica:fire_essence', amount: 20 },
             id: `${id_prefix}tunnel_item`
         },
-        // {
-        //     output: 'ars_nouveau:fire_essence',
-        //     itemInput: { ingredient: { tag: 'forge:gems/source' } },
-        //     chemicalInput: { infuse_type: 'emendatusenigmatica:fire_essence', amount: 10 },
-        //     id: `${id_prefix}fire_essence`
-        // },
-        // {
-        //     output: 'ars_nouveau:water_essence',
-        //     itemInput: { ingredient: { tag: 'forge:gems/source' } },
-        //     chemicalInput: { infuse_type: 'emendatusenigmatica:water_essence', amount: 10 },
-        //     id: `${id_prefix}water_essence`
-        // },
-        // {
-        //     output: 'ars_nouveau:air_essence',
-        //     itemInput: { ingredient: { tag: 'forge:gems/source' } },
-        //     chemicalInput: { infuse_type: 'emendatusenigmatica:air_essence', amount: 10 },
-        //     id: `${id_prefix}air_essence`
-        // },
-        // {
-        //     output: 'ars_nouveau:earth_essence',
-        //     itemInput: { ingredient: { tag: 'forge:gems/source' } },
-        //     chemicalInput: { infuse_type: 'emendatusenigmatica:earth_essence', amount: 10 },
-        //     id: `${id_prefix}earth_essence`
-        // },
         {
             output: 'powah:crystal_blazing',
             itemInput: { ingredient: { tag: 'forge:gems/prismarine' } },
@@ -94,6 +70,12 @@ ServerEvents.recipes((event) => {
             itemInput: { ingredient: { tag: 'forge:dusts/obsidian' } },
             chemicalInput: { infuse_type: 'emendatusenigmatica:fire_essence', amount: 10 },
             id: `${id_prefix}sturdy_sheet`
+        },
+        {
+            output: 'mekanism:structural_glass',
+            itemInput: { ingredient: { item: 'ae2:quartz_glass' } },
+            chemicalInput: { infuse_type: 'emendatusenigmatica:earth_essence', amount: 40 },
+            id: `${id_prefix}structural_glass`
         }
     ];
 

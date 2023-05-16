@@ -50,8 +50,8 @@ ServerEvents.recipes((event) => {
         {
             results: [{ item: 'immersiveengineering:blastbrick', count: 8 }],
             inputs: [
-                { type: 'pneumaticcraft:stacked_item', item: 'pneumaticcraft:compressed_bricks', count: 8 },
-                { tag: 'forge:gems/blazing' }
+                { type: 'pneumaticcraft:stacked_item', item: 'naturesaura:gold_nether_brick', count: 8 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:dusts/therium', count: 3 }
             ],
             pressure: 4.0,
             id: `${id_prefix}blastbrick`

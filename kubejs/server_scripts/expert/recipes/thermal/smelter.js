@@ -156,7 +156,7 @@ ServerEvents.recipes((event) => {
         },
         {
             inputs: ['minecraft:netherite_scrap', '4x #forge:ingots/soul_steel'],
-            outputs: ['4x emendatusenigmatica:netherite_ingot'],
+            outputs: [`4x ${AlmostUnified.getPreferredItemForTag(`forge:ingots/netherite`).getId()}`],
             energy: 20000,
             id: `${id_prefix}netherite_ingot`
         },

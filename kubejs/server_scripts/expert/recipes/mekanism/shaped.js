@@ -130,20 +130,46 @@ ServerEvents.recipes((event) => {
             },
             id: 'mekanism:rotary_condensentrator'
         },
+        {
+            output: '2x mekanism:sps_port',
+            pattern: ['ABA', 'BCB', 'ADA'],
+            key: {
+                A: 'mekanism:sps_casing',
+                B: 'ae2:spatial_pylon',
+                C: '#industrialforegoing:machine_frame/supreme',
+                D: 'ae2:spatial_anchor'
+            },
+            id: 'mekanism:sps_port'
+        },
+        {
+            output: 'mekanism:enrichment_chamber',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:gears/steel',
+                B: '#forge:essences/manipulation',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:ingots/depths',
+                F: '#forge:essences/abjuration'
+            },
+            id: 'mekanism:enrichment_chamber'
+        },
+        {
+            output: 'mekanism:pressurized_reaction_chamber',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:gears/steel',
+                B: '#forge:essences/earth',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: 'mekanism:basic_chemical_tank',
+                F: 'thermal:fluid_cell_frame'
+            },
+            id: 'mekanism:pressurized_reaction_chamber'
+        },
 
         // Placeholder recipes
 
-        {
-            output: 'mekanism:laser',
-            pattern: ['AB ', 'ACD', 'AB '],
-            key: {
-                A: '#forge:alloys/elite',
-                B: 'powah:capacitor_spirited',
-                C: '#industrialforegoing:machine_frame/simple',
-                D: '#forge:gems/diamond'
-            },
-            id: 'mekanism:laser'
-        },
         {
             output: 'mekanism:meka_tool',
             pattern: ['ABA', 'CDC', 'EFE'],

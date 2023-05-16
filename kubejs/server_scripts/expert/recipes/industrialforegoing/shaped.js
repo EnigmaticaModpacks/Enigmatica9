@@ -19,11 +19,12 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'industrialforegoing:laser_drill',
-            pattern: ['A', 'B', 'C'],
+            pattern: [' B ', 'DAD', 'DCD'],
             key: {
                 A: 'powah:energizing_rod_niotic',
                 B: 'mekanism:teleportation_core',
-                C: '#industrialforegoing:machine_frame/simple'
+                C: '#industrialforegoing:machine_frame/simple',
+                D: '#forge:plastic'
             },
             id: 'industrialforegoing:laser_drill'
         },

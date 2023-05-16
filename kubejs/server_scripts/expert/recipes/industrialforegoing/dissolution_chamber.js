@@ -55,13 +55,30 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}machine_frame_advanced`
         },
         {
+            output: '2x industrialforegoing:machine_frame_supreme',
+            inputs: [
+                '#forge:ingots/depths',
+                'kubejs:energetic_transference_matrix',
+                '#forge:ingots/depths',
+                'powah:capacitor_nitro',
+
+                'powah:capacitor_nitro',
+                '#forge:ingots/depths',
+                'ae2:engineering_processor',
+                '#forge:ingots/depths'
+            ],
+            inputFluid: '{Amount:1000,FluidName:"hexerei:quicksilver_fluid"}',
+            processingTime: 800,
+            id: `${id_prefix}machine_frame_supreme`
+        },
+        {
             output: Item.of('industrialforegoing:speed_addon_1', 4, '{TitaniumAugment:{Speed:2.0f}}'),
             inputs: [
                 'modularrouters:augment_core',
                 'ars_nouveau:starbuncle_charm',
                 'modularrouters:augment_core',
-                '#forge:gems/blazing',
-                '#forge:gems/blazing',
+                '#forge:gems/therium',
+                '#forge:gems/therium',
                 'modularrouters:augment_core',
                 'ars_nouveau:starbuncle_charm',
                 'modularrouters:augment_core'
@@ -76,8 +93,8 @@ ServerEvents.recipes((event) => {
                 'modularrouters:augment_core',
                 'ars_nouveau:amethyst_golem_charm',
                 'modularrouters:augment_core',
-                '#forge:gems/blazing',
-                '#forge:gems/blazing',
+                '#forge:gems/therium',
+                '#forge:gems/therium',
                 'modularrouters:augment_core',
                 'ars_nouveau:amethyst_golem_charm',
                 'modularrouters:augment_core'
@@ -92,8 +109,8 @@ ServerEvents.recipes((event) => {
                 'modularrouters:augment_core',
                 'ars_nouveau:wixie_charm',
                 'modularrouters:augment_core',
-                '#forge:gems/blazing',
-                '#forge:gems/blazing',
+                '#forge:gems/therium',
+                '#forge:gems/therium',
                 'modularrouters:augment_core',
                 'ars_nouveau:wixie_charm',
                 'modularrouters:augment_core'
@@ -114,7 +131,7 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:printed_circuit_board',
                 'industrialforegoing:speed_addon_1'
             ],
-            inputFluid: '{Amount:1000,FluidName:"kubejs:magicite"}',
+            inputFluid: '{Amount:1000,FluidName:"hexerei:quicksilver_fluid"}',
             processingTime: 200,
             id: `industrialforegoing:dissolution_chamber/speed_addon_2`
         },
@@ -130,7 +147,7 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:printed_circuit_board',
                 'industrialforegoing:efficiency_addon_1'
             ],
-            inputFluid: '{Amount:1000,FluidName:"kubejs:magicite"}',
+            inputFluid: '{Amount:1000,FluidName:"hexerei:quicksilver_fluid"}',
             processingTime: 200,
             id: `industrialforegoing:dissolution_chamber/efficiency_addon_2`
         },
@@ -146,7 +163,7 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:printed_circuit_board',
                 'industrialforegoing:processing_addon_1'
             ],
-            inputFluid: '{Amount:1000,FluidName:"kubejs:magicite"}',
+            inputFluid: '{Amount:1000,FluidName:"hexerei:quicksilver_fluid"}',
             processingTime: 200,
             id: `industrialforegoing:dissolution_chamber/processing_addon_2`
         },
@@ -185,6 +202,24 @@ ServerEvents.recipes((event) => {
             inputFluid: '{Amount:1000,FluidName:"minecraft:water"}',
             processingTime: 60,
             id: `${id_prefix}raw_ironwood`
+        },
+        {
+            output: 'mekanism:sps_casing',
+            inputs: [
+                '#forge:wires/steel',
+                'powah:capacitor_nitro',
+                '#forge:wires/steel',
+
+                '#forge:plastic',
+                '#forge:plastic',
+
+                '#forge:wires/steel',
+                'powah:capacitor_nitro',
+                '#forge:wires/steel'
+            ],
+            inputFluid: '{Amount:1000,FluidName:"immersiveengineering:concrete"}',
+            processingTime: 800,
+            id: `${id_prefix}sps_casing`
         }
     ];
 
