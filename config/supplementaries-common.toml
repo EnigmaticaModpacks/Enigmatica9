@@ -203,7 +203,7 @@
 [tools]
 	antique_ink = true
 	candy = true
-	stasis = true
+	stasis = false
 
 	[tools.quiver]
 		enabled = true

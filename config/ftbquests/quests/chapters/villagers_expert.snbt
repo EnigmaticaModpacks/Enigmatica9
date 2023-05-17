@@ -544,7 +544,7 @@
 			title: "Villagers"
 			x: -3.5d
 			y: -4.0d
-			shape: "hexagon"
+			shape: "gear"
 			description: [
 				"Several mods add villagers, and it isn’t always a simple task to figure out what workstation goes with which villager. "
 				""
