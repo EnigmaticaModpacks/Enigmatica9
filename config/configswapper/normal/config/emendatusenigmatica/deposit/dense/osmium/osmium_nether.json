@@ -9,7 +9,7 @@
             {"material": "tin", "weight": 20},
             {"block": "minecraft:lava", "weight": 5}
         ],
-        "chance": 15,
+        "chance": 45,
         "size": 30,
         "rarity": "common",
         "minYLevel": 10,
