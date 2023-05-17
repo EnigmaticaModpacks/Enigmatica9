@@ -7,11 +7,8 @@ LootJS.modifiers((event) => {
     // itemStack        -> itemStack - Original itemStack that was meant to be dropped
     // replaceWithRaw   -> Boolean - Should it replace the drop with Raw ore, or return unified version of the item?
     // count            -> integer - if replaceWithRaw is True, then specifies the amount of raw ore given for each item.
-    // Exceptions in unification.
-    let exceptions = {
-        "blue_skies:raw_charoite": "blue_skies:charoite",
-        "blue_skies:raw_aquite": "blue_skies:aquite"
-    }
+    // Exceptions in unification. (Implementation created for Blue_Skies, that was removed, but the implementation is left for future.)
+    let exceptions = {}
 
     function unifyLoot(tag, suffix, itemStack, prefix, replaceWithRaw, count) {
         prefix = !prefix ? '' : prefix + '_';

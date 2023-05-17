@@ -50,8 +50,6 @@ ServerEvents.recipes((event) => {
         'tin'
     ];
 
-    // Note to Motoko
-    // Due to issues with AU and hard-coded content, vanilla ingots are now from Minecraft! This script requires a bit of a rework to add support for minecraft namespace -- Kanz
     plate_materials.forEach((material) => {
         recipes.push({
             results: [{ item: `emendatusenigmatica:${material}_plate` }],

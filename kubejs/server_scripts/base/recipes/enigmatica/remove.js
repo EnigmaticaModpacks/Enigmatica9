@@ -30,8 +30,6 @@ ServerEvents.recipes((event) => {
         { input: /thermal.*ruby_ore/ },
         { input: /mekanism.*fluorite_ore/ },
         { input: /rftoolsbase:dimensionalshard_/ },
-        { input: "blue_skies:raw_charoite" },
-        { input: "blue_skies:raw_aquite" },
 
         { id: /ars_nouveau:.*_dye/ },
 

@@ -197,8 +197,7 @@ const biomes = {
         'minecraft:deep_frozen_ocean',
         'minecraft:deep_cold_ocean',
         'minecraft:deep_ocean',
-        'minecraft:deep_lukewarm_ocean',
-        'blue_skies:deep_peeking_ocean'
+        'minecraft:deep_lukewarm_ocean'
     ],
     in_desert: [
         'minecraft:desert',

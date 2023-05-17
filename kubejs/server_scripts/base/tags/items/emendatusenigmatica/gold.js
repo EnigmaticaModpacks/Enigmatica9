@@ -4,7 +4,7 @@ ServerEvents.tags('item', (event) => {
         'emendatusenigmatica:gold_plate',
         'emendatusenigmatica:gold_rod',
         'emendatusenigmatica:gold_gear',
-        /*'emendatusenigmatica:crushed_gold_ore',*/
+        'emendatusenigmatica:crushed_gold_ore',
         'emendatusenigmatica:gold_dust'
     ]);
 });
