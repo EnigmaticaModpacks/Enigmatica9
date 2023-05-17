@@ -4,6 +4,7 @@
     "localizedName": "Netherite",
     "processedTypes": [
         "storage_block",
+        "ingot",
         "nugget",
         "dust",
         "gear",
