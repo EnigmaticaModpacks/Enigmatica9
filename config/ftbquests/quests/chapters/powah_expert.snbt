@@ -1,8 +1,8 @@
 {
-	id: "000000000000016E"
+	id: "2513FACDC0CF520A"
 	group: "72A9465344128AF9"
-	order_index: 9
-	filename: "powah"
+	order_index: 10
+	filename: "powah_expert"
 	title: "Powah!"
 	icon: "powah:dielectric_casing"
 	default_quest_shape: ""
@@ -20,14 +20,14 @@
 				"In addition, it offers a few unique mechanics and a variety of new materials to go along with its various tiers. Read along to discover more. "
 			]
 			min_width: 250
-			id: "000000000000016F"
+			id: "484E8107D89F94E0"
 			tasks: [{
-				id: "4C763494FAB6F8A2"
+				id: "11F7C2C9A36E4E9B"
 				type: "item"
 				item: "powah:dielectric_paste"
 			}]
 			rewards: [{
-				id: "413EB9C7629D2B60"
+				id: "7D551C38C8A37AA6"
 				type: "item"
 				title: "Wrench"
 				item: {
@@ -46,11 +46,10 @@
 			y: 1.0d
 			description: ["An energy generating mod would hardly be complete without some ways to transmit and store it. Powah comes with everything from personal batteries to charge held items to cables and in world storage cells. "]
 			hide_dependency_lines: true
-			dependencies: ["000000000000016F"]
 			min_width: 300
-			id: "0000000000000172"
+			id: "228CEB92770543F1"
 			tasks: [{
-				id: "112F2336BA13572A"
+				id: "71E5AE82FF86120F"
 				type: "item"
 				item: "powah:dielectric_casing"
 			}]
@@ -66,10 +65,9 @@
 				"Each tier of Furnator will generate the same amount of energy per fuel, they’ll just do so quicker. So, while a Nitro Furnator can generate some decent energy, it will consume fuel very quickly to do so. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["146BB956A5575B4D"]
-			id: "0000000000000176"
+			id: "6BD81E59225A80EB"
 			tasks: [{
-				id: "0000000000000177"
+				id: "25E8415D9709A2B2"
 				type: "item"
 				title: "Furnators"
 				item: {
@@ -106,7 +104,7 @@
 				}
 			}]
 			rewards: [{
-				id: "0000000000000288"
+				id: "1B8CA7B04FC6D250"
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -124,10 +122,9 @@
 				"The portion of a cable that connects to a machine may be Right-Clicked to adjust it or make it Redstone sensitive. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["0000000000000172"]
-			id: "000000000000017C"
+			id: "45A258DB18B418B6"
 			tasks: [{
-				id: "000000000000017D"
+				id: "60C17C93C3ACCCC2"
 				type: "item"
 				title: "Energy Cables"
 				icon: "powah:energy_cable_nitro"
@@ -189,7 +186,7 @@
 				}
 			}]
 			rewards: [{
-				id: "0000000000000289"
+				id: "5CCCFA8F36BEF7F6"
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -208,10 +205,9 @@
 				"Each tier of Magmator will generate the same amount of energy per bucket of fuel, they’ll just do so quicker. So, while a Nitro Magmator can generate some decent energy, it will consume fuel very quickly to do so."
 			]
 			hide_dependency_lines: true
-			dependencies: ["146BB956A5575B4D"]
-			id: "000000000000017E"
+			id: "7732A667435B4DB3"
 			tasks: [{
-				id: "000000000000017F"
+				id: "66FBE9ED8EF9A1D4"
 				type: "item"
 				title: "Magmators"
 				item: {
@@ -248,7 +244,7 @@
 				}
 			}]
 			rewards: [{
-				id: "074EB4DE8F4FF559"
+				id: "13196BBCEE5959D7"
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -269,10 +265,9 @@
 				"Check Uses on the Thermo Generator in JEI to see all available heat sources and coolants. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["146BB956A5575B4D"]
-			id: "0000000000000180"
+			id: "4FC6AE6258F20E57"
 			tasks: [{
-				id: "0000000000000181"
+				id: "128CD423F4291C27"
 				type: "item"
 				title: "Thermo Generators"
 				item: {
@@ -309,7 +304,7 @@
 				}
 			}]
 			rewards: [{
-				id: "000000000000064D"
+				id: "3B87560B2770329B"
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -323,10 +318,9 @@
 			y: 2.5d
 			description: ["Only operating half of the day, Solar Panels still make an excellent power source for certain applications"]
 			hide_dependency_lines: true
-			dependencies: ["146BB956A5575B4D"]
-			id: "0000000000000182"
+			id: "1E1D2B946CF049B1"
 			tasks: [{
-				id: "0000000000000183"
+				id: "0D83537E27FA65A8"
 				type: "item"
 				title: "Solar Panels"
 				item: {
@@ -363,7 +357,7 @@
 				}
 			}]
 			rewards: [{
-				id: "000000000000028A"
+				id: "4642C1B434BF7626"
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -376,15 +370,14 @@
 			x: 0.0d
 			y: 3.5d
 			description: ["When applied to a Solar Panel, a Lens of Ender will allow it to see the sun even while deep underground. It still won’t operate at night, but at least it can be brought inside or hidden. "]
-			dependencies: ["0000000000000182"]
-			id: "0000000000000184"
+			id: "7AB65041936695F9"
 			tasks: [{
-				id: "0000000000000185"
+				id: "52FFE0D28FBEA522"
 				type: "item"
 				item: "powah:lens_of_ender"
 			}]
 			rewards: [{
-				id: "000000000000064C"
+				id: "2A99ADD551B12661"
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -397,16 +390,15 @@
 			x: 4.5d
 			y: 2.0d
 			description: ["Powerful fuel for use in Reactors, though its high cost to craft means lower tier Reactors may operate at a net loss. "]
-			dependencies: ["000000000000018C"]
-			id: "0000000000000186"
+			id: "4066475F17E1DBC7"
 			tasks: [{
-				id: "0000000000000187"
+				id: "4458A587B220AACB"
 				type: "item"
 				item: "powah:uraninite"
 				count: 16L
 			}]
 			rewards: [{
-				id: "2F952BDC96B6C978"
+				id: "32B4475025F0863B"
 				type: "item"
 				item: "powah:uraninite"
 				count: 16
@@ -431,11 +423,10 @@
 				"Building a Reactor is as simple as holding a stack of 36 blocks and placing one. The rest of them will place automatically."
 			]
 			hide_dependency_lines: true
-			dependencies: ["146BB956A5575B4D"]
 			min_width: 300
-			id: "0000000000000188"
+			id: "1D0BA554893BDA78"
 			tasks: [{
-				id: "0000000000000189"
+				id: "7EEB6951C1050B8E"
 				type: "item"
 				title: "Reactors"
 				item: {
@@ -474,7 +465,7 @@
 			}]
 			rewards: [
 				{
-					id: "2D695290477D3526"
+					id: "45FAE4D3ADC347FE"
 					type: "command"
 					title: "Powah Loot Box"
 					icon: "kubejs:epic_lootbox"
@@ -482,7 +473,7 @@
 					player_command: false
 				}
 				{
-					id: "3171C436450BF2F4"
+					id: "760C03A0739CD87A"
 					type: "item"
 					item: "powah:dry_ice"
 					count: 16
@@ -506,17 +497,16 @@
 				"As energy costs increase for higher tier materials, higher tier Rods are recommended to increase the energy delivery rate, though it’s also viable to simply add more Rods. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["000000000000016F"]
 			min_width: 250
-			id: "000000000000018C"
+			id: "50999062F73B4226"
 			tasks: [
 				{
-					id: "000000000000018D"
+					id: "79E3995E3D305FF1"
 					type: "item"
 					item: "powah:energizing_orb"
 				}
 				{
-					id: "00000000000001C3"
+					id: "20D3D4FB3919A5FD"
 					type: "item"
 					title: "Energizing Rods"
 					item: {
@@ -555,7 +545,7 @@
 				}
 			]
 			rewards: [{
-				id: "00000000000001C5"
+				id: "6C4614908232DE18"
 				type: "item"
 				title: "Energizing Rod (Basic)"
 				item: "powah:energizing_rod_basic"
@@ -573,10 +563,9 @@
 				"Each side may be configured separately and the whole Cell may be made Redstone sensitive. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["0000000000000172"]
-			id: "000000000000018E"
+			id: "4D58AA876F99B645"
 			tasks: [{
-				id: "000000000000018F"
+				id: "6432196C114B6061"
 				type: "item"
 				title: "Energy Cells"
 				item: {
@@ -613,7 +602,7 @@
 				}
 			}]
 			rewards: [{
-				id: "000000000000028E"
+				id: "11A64E1BBBCD3832"
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -633,11 +622,10 @@
 				""
 				"This is a perfect way to recycle and condense any extra energy storage lying around. "
 			]
-			dependencies: ["000000000000018E"]
 			min_width: 300
-			id: "0000000000000190"
+			id: "6C5883132969B582"
 			tasks: [{
-				id: "0000000000000191"
+				id: "49BF7215EF24CC7B"
 				type: "item"
 				title: "Ender Cells"
 				item: {
@@ -674,7 +662,7 @@
 				}
 			}]
 			rewards: [{
-				id: "0000000000000226"
+				id: "4E203651D0EE757A"
 				type: "item"
 				title: "Energy Cell (Hardened)"
 				item: "powah:energy_cell_hardened"
@@ -691,11 +679,10 @@
 				"To set the owner, craft a Binding Card and Right-Click the card in the air. Doing so will bind the card to that player. The card may then be inserted into the Player Transmitter to configure it."
 			]
 			hide_dependency_lines: true
-			dependencies: ["0000000000000172"]
-			id: "0000000000000192"
+			id: "63B827E3E73EFA96"
 			tasks: [
 				{
-					id: "0000000000000193"
+					id: "14CEA79B97E17485"
 					type: "item"
 					title: "Player Transmitter"
 					item: {
@@ -732,13 +719,13 @@
 					}
 				}
 				{
-					id: "0000000000000224"
+					id: "380D1C25A2497F15"
 					type: "item"
 					item: "powah:binding_card"
 				}
 			]
 			rewards: [{
-				id: "000000000000028F"
+				id: "63098E3C72802581"
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -758,10 +745,9 @@
 				""
 				"Unlike an Ender Cell, however, more storage may not be added to the Ender Network from a Gate. This may only be done at a Cell. "
 			]
-			dependencies: ["0000000000000190"]
-			id: "0000000000000194"
+			id: "482BA6417571DD8B"
 			tasks: [{
-				id: "0000000000000195"
+				id: "6F1B2F3F80EF33BA"
 				type: "item"
 				title: "Ender Gates"
 				item: {
@@ -798,7 +784,7 @@
 				}
 			}]
 			rewards: [{
-				id: "51F5753437957980"
+				id: "46675AB646C359B3"
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -811,15 +797,14 @@
 			x: 9.5d
 			y: 3.5d
 			description: ["An ordinary Binding Card will only work within the same dimension as the Player Transmitter. By upgrading it to a Dimensional Card, however, the Player can enjoy wireless charging from anywhere. "]
-			dependencies: ["0000000000000192"]
-			id: "0000000000000198"
+			id: "7DE13B346D58EBC0"
 			tasks: [{
-				id: "0000000000000199"
+				id: "2A68E7410BEBD761"
 				type: "item"
 				item: "powah:binding_card_dim"
 			}]
 			rewards: [{
-				id: "0000000000000290"
+				id: "3B413E07DB669859"
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -832,15 +817,14 @@
 			x: 3.0d
 			y: 2.0d
 			description: ["After the Basic tier comes Hardened, the first tier requiring energized materials. "]
-			dependencies: ["000000000000018C"]
-			id: "000000000000019A"
+			id: "76F6EB4E8B08B2D7"
 			tasks: [{
-				id: "000000000000019B"
+				id: "6CBD94B2799343E9"
 				type: "item"
 				item: "powah:steel_energized"
 			}]
 			rewards: [{
-				id: "09CDE670DE70DDAE"
+				id: "455C8A8A7BE035D1"
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -852,15 +836,14 @@
 			x: 3.5d
 			y: 3.0d
 			description: ["The first of several crystalline materials required by Powah, Blazing Crystals retain enormous heat and double as a decent heat source for Thermo Generators. "]
-			dependencies: ["000000000000018C"]
-			id: "000000000000019C"
+			id: "021A85DF88F36FD9"
 			tasks: [{
-				id: "000000000000019D"
+				id: "2D1D4FA3C631D388"
 				type: "item"
 				item: "powah:crystal_blazing"
 			}]
 			rewards: [{
-				id: "15BA1F3744D7C2CF"
+				id: "4166AF7AA01BDA6D"
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -872,15 +855,14 @@
 			x: 4.5d
 			y: 3.5d
 			description: ["As costs increase, so to do the rewards, with Niotic tier machines operating much more quickly."]
-			dependencies: ["000000000000018C"]
-			id: "000000000000019E"
+			id: "7FEC371F683D607D"
 			tasks: [{
-				id: "000000000000019F"
+				id: "6B6FF472040B4127"
 				type: "item"
 				item: "powah:crystal_niotic"
 			}]
 			rewards: [{
-				id: "68CD30E38E3F5BF1"
+				id: "2D4FDD276AF9B9B5"
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -892,15 +874,14 @@
 			x: 5.5d
 			y: 3.0d
 			description: ["The penultimate tier of materials, Spirited is quite powerful in its own right. But with the right materials we can go further still. "]
-			dependencies: ["000000000000018C"]
-			id: "00000000000001A0"
+			id: "492CE55FC2AB4734"
 			tasks: [{
-				id: "00000000000001A1"
+				id: "4A0C045A3F573A79"
 				type: "item"
 				item: "powah:crystal_spirited"
 			}]
 			rewards: [{
-				id: "37664B9288E40001"
+				id: "5BA2BA147AD1ACF1"
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -912,15 +893,14 @@
 			x: 6.0d
 			y: 2.0d
 			description: ["Using incredibly rare materials to craft, Nitro represents the highest tier of Powah."]
-			dependencies: ["000000000000018C"]
-			id: "00000000000001A2"
+			id: "43F16FA71F8EAE7A"
 			tasks: [{
-				id: "00000000000001A3"
+				id: "62ED665D939499EC"
 				type: "item"
 				item: "powah:crystal_nitro"
 			}]
 			rewards: [{
-				id: "0000000000000294"
+				id: "67746BAC0B5F3B23"
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -935,10 +915,9 @@
 			y: 4.5d
 			description: ["Energy Hoppers effectively convert a simple chest into a mass charging inventory. Simply place it against a chest or other inventory; any powered items inside will be charged up in short order. "]
 			hide_dependency_lines: true
-			dependencies: ["0000000000000172"]
-			id: "414387508B9644C8"
+			id: "6321F402815A0E36"
 			tasks: [{
-				id: "0993F0AC43F031C2"
+				id: "7C5C67E1B08DC874"
 				type: "item"
 				title: "Energy Hoppers"
 				item: {
@@ -975,7 +954,7 @@
 				}
 			}]
 			rewards: [{
-				id: "4D1C32404BCA93FF"
+				id: "47AF4311EEA556A0"
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -990,10 +969,9 @@
 			y: 3.5d
 			description: ["Energy Dischargers will rapidly drain the energy stored in Batteries, allowing it to be fed into machines. While perhaps less useful when compared to Ender Cells, they still allow for long range and rapid transport of energy by shipping Batteries around. "]
 			hide_dependency_lines: true
-			dependencies: ["0000000000000172"]
-			id: "0DADA0DB59C7F1B3"
+			id: "25457BFC1A1DC810"
 			tasks: [{
-				id: "5C293198033B6C0D"
+				id: "0539751BF8379FF7"
 				type: "item"
 				item: {
 					id: "itemfilters:or"
@@ -1029,7 +1007,7 @@
 				}
 			}]
 			rewards: [{
-				id: "4884AAB9BEA3FB71"
+				id: "49A8050B4667E3D2"
 				type: "command"
 				title: "Powah Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -1043,10 +1021,9 @@
 			y: 1.0d
 			description: ["Powah offers five different generators, each situationally useful. Consider the application wisely when choosing which to use. "]
 			hide_dependency_lines: true
-			dependencies: ["000000000000016F"]
-			id: "146BB956A5575B4D"
+			id: "0A796ED3F4A37368"
 			tasks: [{
-				id: "6124DA30CE1586E0"
+				id: "4EB012E8797FF814"
 				type: "item"
 				item: "powah:capacitor_basic_large"
 			}]

@@ -1,8 +1,8 @@
 {
-	id: "000000000000009E"
+	id: "073D8C9BCEF4C979"
 	group: "5A8B89F87F77CF4C"
-	order_index: 4
-	filename: "natures_aura"
+	order_index: 5
+	filename: "natures_aura_expert"
 	title: "Nature's Aura"
 	icon: "naturesaura:gold_leaf"
 	default_quest_shape: ""
@@ -62,9 +62,9 @@
 				"~MuteTiefling"
 			]
 			min_width: 250
-			id: "000000000000009F"
+			id: "2DED8E4FA6DCD410"
 			tasks: [{
-				id: "5DCF7175B494CD02"
+				id: "1CA151483E2C22BB"
 				type: "item"
 				title: "Any Sapling"
 				item: {
@@ -76,7 +76,7 @@
 				}
 			}]
 			rewards: [{
-				id: "00000000000000A6"
+				id: "435A9EF5FAD4DB76"
 				type: "item"
 				item: {
 					id: "superiorshields:copper_shield"
@@ -101,17 +101,16 @@
 				""
 				"Refer to the Book of Natural Aura for specific instructions on building the ritual."
 			]
-			dependencies: ["00000000000000A8"]
-			id: "00000000000000A2"
+			id: "699BC5534C19FC5E"
 			tasks: [{
-				id: "000000000000037F"
+				id: "148F95A06F17918B"
 				type: "item"
 				item: "naturesaura:wood_stand"
 				count: 8L
 			}]
 			rewards: [
 				{
-					id: "000000000000035A"
+					id: "36808DD105A48BCC"
 					type: "command"
 					title: "Rare Nature's Aura Loot Box"
 					icon: "kubejs:rare_lootbox"
@@ -119,7 +118,7 @@
 					player_command: false
 				}
 				{
-					id: "14A7BCABC52C6E6D"
+					id: "753CD2F44D63188D"
 					type: "item"
 					item: "naturesaura:gold_powder"
 					count: 16
@@ -139,23 +138,22 @@
 				""
 				"Golden Leaf will drop whenever the fully transformed leaves are broken. Place fresh leaves near the remaining transformed leaves to begin converting them as well. "
 			]
-			dependencies: ["5DCF7175B494CD02"]
-			id: "00000000000000A8"
+			id: "2735E47A2A965FEE"
 			tasks: [
 				{
-					id: "00000000000000A9"
+					id: "0E8F119E16CC852B"
 					type: "item"
 					item: "naturesaura:gold_fiber"
 				}
 				{
-					id: "43FA051D7359B0CD"
+					id: "6700A70D6F3F011C"
 					type: "item"
 					item: "naturesaura:gold_leaf"
 				}
 			]
 			rewards: [
 				{
-					id: "000000000000035B"
+					id: "1B3CC9578B9BF05D"
 					type: "command"
 					title: "Rare Nature's Aura Loot Box"
 					icon: "kubejs:rare_lootbox"
@@ -163,7 +161,7 @@
 					player_command: false
 				}
 				{
-					id: "0000000000000A72"
+					id: "4D3CDE28F69D202C"
 					type: "command"
 					title: "Farmer's Delight"
 					icon: "kubejs:farmers_delight"
@@ -182,15 +180,14 @@
 				""
 				"Place the offerings in the bowl and then toss down a Spirit of Calling to complete the ritual. The bowl will hold multiple items, with only a single Spirit required for the full batch. "
 			]
-			dependencies: ["000000000000037F"]
-			id: "0000000000000230"
+			id: "37D084A5FD96EACA"
 			tasks: [{
-				id: "0000000000000231"
+				id: "061AD10825E1993F"
 				type: "item"
 				item: "naturesaura:offering_table"
 			}]
 			rewards: [{
-				id: "0000000000000373"
+				id: "366B1FFE22EBE4E5"
 				type: "command"
 				title: "Rare Nature's Aura Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -211,43 +208,42 @@
 				""
 				"Refer to the Book of Natural Aura's section on the Natural Altar and the Crimson Altar for a preview of the required structure."
 			]
-			dependencies: ["5DCF7175B494CD02"]
 			dependency_requirement: "all_started"
 			min_width: 250
-			id: "00000000000002B5"
+			id: "465085DE51A72E73"
 			tasks: [
 				{
-					id: "00000000000002B6"
+					id: "7EBAAE8549A91C6D"
 					type: "item"
 					item: "naturesaura:nature_altar"
 				}
 				{
-					id: "0000000000000331"
+					id: "4DD75E6EBA654D12"
 					type: "item"
 					item: "minecraft:oak_planks"
 					count: 20L
 				}
 				{
-					id: "0000000000000332"
+					id: "3EA6FF0E4235DB44"
 					type: "item"
 					item: "minecraft:stone_bricks"
 					count: 16L
 				}
 				{
-					id: "0000000000000333"
+					id: "12D60736A8AF5AAB"
 					type: "item"
 					item: "naturesaura:gold_brick"
 					count: 8L
 				}
 				{
-					id: "0000000000000334"
+					id: "03E99236300A5FFD"
 					type: "item"
 					item: "minecraft:chiseled_stone_bricks"
 					count: 4L
 				}
 			]
 			rewards: [{
-				id: "00000000000004A2"
+				id: "097F8CAD66BB44FC"
 				type: "command"
 				title: "Rare Nature's Aura Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -271,17 +267,16 @@
 				""
 				"Second, the wood is particularly useful when it comes to the arcane as it is steeped in the magical energies of Aura. It makes a fine base for many an arcane implement. "
 			]
-			dependencies: ["5DCF7175B494CD02"]
 			min_width: 300
-			id: "00000000000002C1"
+			id: "58438574716487D7"
 			tasks: [{
-				id: "00000000000002C2"
+				id: "6EF9F130AE0F37FD"
 				type: "item"
 				item: "naturesaura:ancient_sapling"
 			}]
 			rewards: [
 				{
-					id: "0000000000000369"
+					id: "5C2B4E261DE782E4"
 					type: "command"
 					title: "Rare Nature's Aura Loot Box"
 					icon: "kubejs:rare_lootbox"
@@ -289,7 +284,7 @@
 					player_command: false
 				}
 				{
-					id: "0000000000000702"
+					id: "1A4E4A4713072598"
 					type: "item"
 					title: "Ancient Log"
 					item: "naturesaura:ancient_log"
@@ -306,15 +301,14 @@
 				""
 				"Place it on any of the four short pillars surrounding the Altar itself to activate it."
 			]
-			dependencies: ["00000000000002B5"]
-			id: "00000000000002C3"
+			id: "2D92C208DD310E86"
 			tasks: [{
-				id: "00000000000002C4"
+				id: "431A924319567586"
 				type: "item"
 				item: "naturesaura:conversion_catalyst"
 			}]
 			rewards: [{
-				id: "0000000000000371"
+				id: "7B473B34257E6C77"
 				type: "command"
 				title: "Epic Nature's Aura Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -331,15 +325,14 @@
 				""
 				"Place it on any of the four short pillars surrounding the Altar itself to activate it."
 			]
-			dependencies: ["00000000000002B5"]
-			id: "00000000000002C5"
+			id: "37B44865CE6DEB8E"
 			tasks: [{
-				id: "00000000000002C6"
+				id: "6420AC075A3ECCBF"
 				type: "item"
 				item: "naturesaura:crushing_catalyst"
 			}]
 			rewards: [{
-				id: "0000000000000359"
+				id: "7E5EAD13F8837458"
 				type: "item"
 				title: "Gold Leaf"
 				item: "naturesaura:gold_leaf"
@@ -355,15 +348,14 @@
 				""
 				"Place the Creational Catalyst beneath any Aura Generator to remove its generation cap and attain such lushness as has not been observed since the early days of creation."
 			]
-			dependencies: ["000000000000031A"]
-			id: "00000000000002C7"
+			id: "6C1C63E372ECFEDC"
 			tasks: [{
-				id: "00000000000002C8"
+				id: "5157C6BD4F309FF4"
 				type: "item"
 				item: "naturesaura:generator_limit_remover"
 			}]
 			rewards: [{
-				id: "0000000000000378"
+				id: "7459B50D34DCEBD6"
 				type: "command"
 				title: "Epic Nature's Aura Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -376,15 +368,14 @@
 			y: -4.5d
 			subtitle: "Relax, I'll need some information first"
 			description: ["Many devices have a specific range that can only be seen by Right-Clicking on them with a Mystical Magnifier. It's a valuable tool to any natural botanist."]
-			dependencies: ["00000000000002B6"]
-			id: "00000000000002C9"
+			id: "11556E9D40C6EC4C"
 			tasks: [{
-				id: "00000000000002CA"
+				id: "73A094D6919E1D91"
 				type: "item"
 				item: "naturesaura:range_visualizer"
 			}]
 			rewards: [{
-				id: "0000000000000377"
+				id: "3CFF3CA727552A59"
 				type: "command"
 				title: "Rare Nature's Aura Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -403,15 +394,14 @@
 				""
 				"Finding an area with higher-than-normal Aura at this stage may be helpful, as some Aura will be consumed in order to create the apparatuses needed to help renew it. "
 			]
-			dependencies: ["000000000000037F"]
-			id: "00000000000002CB"
+			id: "111065FF35D1189F"
 			tasks: [{
-				id: "00000000000002CC"
+				id: "4A0A71CAE8332012"
 				type: "item"
 				item: "naturesaura:eye"
 			}]
 			rewards: [{
-				id: "0000000000000367"
+				id: "1E7F02A4791EFC1D"
 				type: "command"
 				title: "Rare Nature's Aura Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -431,15 +421,14 @@
 				""
 				"Note: These may not fill completely when worn. To get a full charge, or to even automate filling them, they may be placed in a Natural Altar to their maximum capacity."
 			]
-			dependencies: ["00000000000002B6"]
-			id: "00000000000002CD"
+			id: "4081F393EAB01CBE"
 			tasks: [{
-				id: "00000000000002CE"
+				id: "588C80AFF089BC0A"
 				type: "item"
 				item: "naturesaura:aura_cache"
 			}]
 			rewards: [{
-				id: "000000000000032D"
+				id: "11F0298FC3689734"
 				type: "command"
 				title: "Rare Nature's Aura Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -452,15 +441,14 @@
 			y: -3.5d
 			subtitle: "Open your eyes, then open your eyes again"
 			description: ["An advanced version of the Natural Eye which grants its owner the ability to see ever more precise details of the Aura around them."]
-			dependencies: ["00000000000002CB"]
-			id: "00000000000002E4"
+			id: "6B065FDF3EA4EB78"
 			tasks: [{
-				id: "00000000000002E5"
+				id: "3F9F4B01BE056CDC"
 				type: "item"
 				item: "naturesaura:eye_improved"
 			}]
 			rewards: [{
-				id: "0000000000000370"
+				id: "49064FB70F4C89F2"
 				type: "command"
 				title: "Epic Nature's Aura Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -479,15 +467,14 @@
 				""
 				"Note: These may not fill completely when worn. To get a full charge, or to even automate filling them, they may be placed in a Natural Altar to their maximum capacity."
 			]
-			dependencies: ["00000000000002CD"]
-			id: "00000000000002EE"
+			id: "3DB84F7840BACBFF"
 			tasks: [{
-				id: "00000000000002EF"
+				id: "1F1ED271AC9302C6"
 				type: "item"
 				item: "naturesaura:aura_trove"
 			}]
 			rewards: [{
-				id: "000000000000036F"
+				id: "4E8906F53D1A0AB0"
 				type: "command"
 				title: "Epic Nature's Aura Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -506,22 +493,21 @@
 				""
 				"This process will rapidly advance time at a great cost of Aura. Be wary not to allow Aura to drop too far!"
 			]
-			dependencies: ["00000000000002B6"]
-			id: "00000000000002F0"
+			id: "05CB261DC6E9F041"
 			tasks: [
 				{
-					id: "00000000000002F1"
+					id: "5349956ADF68A295"
 					type: "item"
 					item: "naturesaura:clock_hand"
 				}
 				{
-					id: "00000000000002F2"
+					id: "3CAF0F4C5100B399"
 					type: "item"
 					item: "naturesaura:time_changer"
 				}
 			]
 			rewards: [{
-				id: "000000000000036E"
+				id: "30A356076A18628A"
 				type: "command"
 				title: "Epic Nature's Aura Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -540,21 +526,20 @@
 				""
 				"The range depends upon strength of the redstone signal it is provided. "
 			]
-			dependencies: ["00000000000002B6"]
-			id: "00000000000002F8"
+			id: "454A0F0E48005FFE"
 			tasks: [{
-				id: "00000000000002F9"
+				id: "56626DE3C9E9BE87"
 				type: "item"
 				item: "naturesaura:animal_container"
 			}]
 			rewards: [
 				{
-					id: "000000000000032B"
+					id: "768D554686743991"
 					type: "item"
 					item: "create:analog_lever"
 				}
 				{
-					id: "3EF0E6B29460EC10"
+					id: "1979E756D0AF7475"
 					type: "command"
 					title: "Rare Nature's Aura Loot Box"
 					icon: "kubejs:rare_lootbox"
@@ -578,36 +563,35 @@
 				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 9 instance folder to assist with this multiblock."
 			]
 			hide_dependency_lines: true
-			dependencies: ["000000000000037F"]
 			min_width: 250
-			id: "00000000000002FA"
+			id: "13986C2B6CB6272E"
 			tasks: [
 				{
-					id: "00000000000002FB"
+					id: "1773B426491B9FCE"
 					type: "item"
 					item: "naturesaura:animal_spawner"
 				}
 				{
-					id: "000000000000033F"
+					id: "7AC7D86119B588A1"
 					type: "item"
 					item: "naturesaura:infused_brick"
 					count: 16L
 				}
 				{
-					id: "0000000000000340"
+					id: "0D397E94580AFC81"
 					type: "item"
 					item: "minecraft:hay_block"
 					count: 16L
 				}
 				{
-					id: "0000000000000341"
+					id: "2BEBFBB45AFD2A45"
 					type: "item"
 					item: "naturesaura:ancient_planks"
 					count: 4L
 				}
 			]
 			rewards: [{
-				id: "040E31F21688B546"
+				id: "2DB4B63FBFDFB240"
 				type: "item"
 				item: "naturesaura:pet_reviver"
 			}]
@@ -624,22 +608,21 @@
 				"Refer to the Book of Natural Aura for specific instructions."
 			]
 			hide_dependency_lines: true
-			dependencies: ["00000000000002B6"]
-			id: "00000000000002FC"
+			id: "1AE73DC4CC5A7C6F"
 			tasks: [{
-				id: "00000000000002FD"
+				id: "15ABF90EC87A9A88"
 				type: "item"
 				item: "naturesaura:placer"
 			}]
 			rewards: [
 				{
-					id: "000000000000031E"
+					id: "3CB75006420EC5A1"
 					type: "item"
 					title: "Item Frame"
 					item: "minecraft:item_frame"
 				}
 				{
-					id: "000000000000031F"
+					id: "577AB47A801DB8DA"
 					type: "item"
 					title: "Farming Stencil"
 					item: "naturesaura:farming_stencil"
@@ -661,16 +644,15 @@
 				"Note: The Aura Field Creator will use any tool provided in the frame including any enchants or special break properties of the tool. Shears shear leaves, shovels collect snow, Fortune and Silk Touch are respected. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["00000000000002B6"]
-			id: "00000000000002FE"
+			id: "1EA9C29C8955827D"
 			tasks: [{
-				id: "00000000000002FF"
+				id: "4AF95515F94B8839"
 				type: "item"
 				item: "naturesaura:field_creator"
 				count: 2L
 			}]
 			rewards: [{
-				id: "0000000000000362"
+				id: "230DB717CFF25F0B"
 				type: "command"
 				title: "Rare Nature's Aura Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -688,15 +670,14 @@
 				"While this process is much quicker than burning Coal or other combustible materials, it does come with the drawback that it can drain Aura into dangerous levels. Multiple may even be installed to enhance the effect. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["00000000000002B6"]
-			id: "0000000000000308"
+			id: "4D68B5141952C6A6"
 			tasks: [{
-				id: "0000000000000309"
+				id: "0F892FF01C192955"
 				type: "item"
 				item: "naturesaura:furnace_heater"
 			}]
 			rewards: [{
-				id: "0000000000000356"
+				id: "563C2C460079661B"
 				type: "command"
 				title: "Rare Nature's Aura Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -718,22 +699,21 @@
 				"A small amount of Aura is used every time an item is moved in or out of the crate. Therefore, it is vital that Aura is generated on both sides of the connection. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["00000000000002B6"]
-			id: "000000000000030A"
+			id: "6B336E008C4B58C5"
 			tasks: [{
-				id: "000000000000030B"
+				id: "4515752CE8CF34B4"
 				type: "item"
 				item: "naturesaura:ender_crate"
 			}]
 			rewards: [
 				{
-					id: "000000000000033D"
+					id: "0F8D483E6F7371A5"
 					type: "item"
 					title: "Ender Ocular"
 					item: "naturesaura:ender_access"
 				}
 				{
-					id: "000000000000033E"
+					id: "2AFDC4D29F3C05D5"
 					type: "item"
 					title: "Eye of Ender"
 					item: "minecraft:ender_eye"
@@ -750,15 +730,14 @@
 				""
 				"If used with an Adept’s Hopper, any filter set will be respected by the Hopper Enhancement. "
 			]
-			dependencies: ["000000000000030E"]
-			id: "000000000000030C"
+			id: "1D37E396D04A74AD"
 			tasks: [{
-				id: "000000000000030D"
+				id: "6DE026A64A7BEFF3"
 				type: "item"
 				item: "naturesaura:hopper_upgrade"
 			}]
 			rewards: [{
-				id: "20911E51DB4A9D8A"
+				id: "023260B9B7374F59"
 				type: "command"
 				title: "Rare Nature's Aura Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -775,23 +754,22 @@
 				""
 				"Place an Item Frame on the side and insert any item or block in the frame to set the filter. "
 			]
-			dependencies: ["00000000000002B6"]
-			id: "000000000000030E"
+			id: "385927686A412EA6"
 			tasks: [{
-				id: "000000000000030F"
+				id: "25F9A4238632D661"
 				type: "item"
 				item: "naturesaura:grated_chute"
 			}]
 			rewards: [
 				{
-					id: "000000000000031D"
+					id: "1877981636A0F2C0"
 					type: "item"
 					title: "Item Frame"
 					item: "minecraft:item_frame"
 					count: 4
 				}
 				{
-					id: "1FF5A00AF41D494F"
+					id: "470293D0FB403EA6"
 					type: "command"
 					title: "Rare Nature's Aura Loot Box"
 					icon: "kubejs:rare_lootbox"
@@ -812,10 +790,9 @@
 				""
 				"Each has been detailed at length in the Book of Natural Aura."
 			]
-			dependencies: ["00000000000002C1"]
-			id: "000000000000031A"
+			id: "25AA7A1A041FAA0C"
 			tasks: [{
-				id: "734C25E26EBC19C5"
+				id: "4C6D3095E8F582DF"
 				type: "item"
 				title: "Aura Generators"
 				item: {
@@ -864,7 +841,7 @@
 				}
 			}]
 			rewards: [{
-				id: "0000000000000863"
+				id: "139066FD1275A723"
 				type: "command"
 				title: "Rare Nature's Aura Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -891,12 +868,11 @@
 				"● No Storage - Your Aura Cache or Trove will not charge in the area."
 			]
 			hide_dependency_lines: true
-			dependencies: ["00000000000002B6"]
 			min_width: 250
-			id: "0000000000000339"
+			id: "578B0B5E74FEAC97"
 			tasks: [
 				{
-					id: "000000000000033A"
+					id: "0139B77473805166"
 					type: "item"
 					item: {
 						id: "naturesaura:effect_powder"
@@ -907,7 +883,7 @@
 					}
 				}
 				{
-					id: "0000000000000350"
+					id: "146C9A440BC7BC35"
 					type: "item"
 					item: {
 						id: "naturesaura:effect_powder"
@@ -918,7 +894,7 @@
 					}
 				}
 				{
-					id: "0000000000000351"
+					id: "3454E74CF4BE75A5"
 					type: "item"
 					item: {
 						id: "naturesaura:effect_powder"
@@ -929,7 +905,7 @@
 					}
 				}
 				{
-					id: "0000000000000352"
+					id: "015C350A93439B0D"
 					type: "item"
 					item: {
 						id: "naturesaura:effect_powder"
@@ -940,7 +916,7 @@
 					}
 				}
 				{
-					id: "0000000000000353"
+					id: "21D23B7891E68030"
 					type: "item"
 					item: {
 						id: "naturesaura:effect_powder"
@@ -953,13 +929,13 @@
 			]
 			rewards: [
 				{
-					id: "0000000000000354"
+					id: "1626124D88199034"
 					type: "item"
 					title: "Powder Manipulator"
 					item: "naturesaura:powder_placer"
 				}
 				{
-					id: "0000000000000366"
+					id: "1E29E1E01DA699F1"
 					type: "command"
 					title: "Epic Nature's Aura Loot Box"
 					icon: "kubejs:epic_lootbox"
@@ -973,15 +949,14 @@
 			y: -1.5d
 			subtitle: "She sounds like she's in a flurry"
 			description: ["When Aura is drawn through this device, it causes the heat in the area to rapidly disperse, dropping localized temperatures and causing snow and ice to form. "]
-			dependencies: ["00000000000002B6"]
-			id: "74D66D473E0509C7"
+			id: "228F799A45B48D70"
 			tasks: [{
-				id: "19319697794F7334"
+				id: "5E4F851471B1F091"
 				type: "item"
 				item: "naturesaura:snow_creator"
 			}]
 			rewards: [{
-				id: "5685824F755FD107"
+				id: "7A33E6109905AF66"
 				type: "command"
 				title: "Epic Nature's Aura Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -1002,10 +977,9 @@
 				""
 				"● Eye of the Shulker will locate End Cities."
 			]
-			dependencies: ["00000000000002CE"]
-			id: "37237E4F7D0020E0"
+			id: "033BE52CE2FD3347"
 			tasks: [{
-				id: "7F151E516222CEF2"
+				id: "2595740F68610F84"
 				type: "item"
 				title: "Eyes in the Dark"
 				item: {
@@ -1030,7 +1004,7 @@
 				}
 			}]
 			rewards: [{
-				id: "726807EBB03D8BE4"
+				id: "455236A2B705B554"
 				type: "command"
 				title: "Rare Nature's Aura Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -1048,15 +1022,14 @@
 				""
 				"Each bottle of sunlight equates to one second of time. One bottle of ghosts, one minute. One bottle of darkness, one hour. "
 			]
-			dependencies: ["00000000000002B6"]
-			id: "1FBCA7605FF2CEF2"
+			id: "59ECE9FF654CA492"
 			tasks: [{
-				id: "174F5E30E87BBCF4"
+				id: "307B82D5D8385AD7"
 				type: "item"
 				item: "naturesaura:aura_timer"
 			}]
 			rewards: [{
-				id: "435589B2E3400026"
+				id: "4429099A540470BF"
 				type: "command"
 				title: "Rare Nature's Aura Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -1072,15 +1045,14 @@
 				""
 				"The Spring provides water at the cost of a small amount of Aura. "
 			]
-			dependencies: ["00000000000002B6"]
-			id: "010B7E7E08893815"
+			id: "24F34D3F5B186B51"
 			tasks: [{
-				id: "60C52ACACF0BEEB0"
+				id: "0480B58CE324B5CD"
 				type: "item"
 				item: "naturesaura:spring"
 			}]
 			rewards: [{
-				id: "2078B2E2903D871C"
+				id: "20B45C4EAD3FE4CA"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -1096,15 +1068,14 @@
 				""
 				"For a miniscule upkeep cost, the Lamp of Sanctuary will inhibit natural mob spawns in its area of influence, the range of which is determined by the strength of the Redstone signal it is receiving. "
 			]
-			dependencies: ["00000000000002B6"]
-			id: "1ADD012B51234B7D"
+			id: "7829AB43D56BA11F"
 			tasks: [{
-				id: "6BA181F81623848A"
+				id: "64A9C3C426E11115"
 				type: "item"
 				item: "naturesaura:spawn_lamp"
 			}]
 			rewards: [{
-				id: "398C537F585E06BA"
+				id: "691D2626544B7801"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -1116,15 +1087,14 @@
 			x: -7.0d
 			y: -3.0d
 			description: ["Quite the simple device, but powerful, nonetheless. The Item distributor moves items from the inventory above it and evenly distributes them to the inventories adjacent. "]
-			dependencies: ["000000000000030E"]
-			id: "1E5CC7C2C414A8AB"
+			id: "67EDDAD97465EEF0"
 			tasks: [{
-				id: "3E7B9CAFE34D49A3"
+				id: "4661053FF7AEF153"
 				type: "item"
 				item: "naturesaura:item_distributor"
 			}]
 			rewards: [{
-				id: "64FB7A460234CA2F"
+				id: "7212F8AC7AC84191"
 				type: "command"
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
@@ -1136,15 +1106,14 @@
 			x: -1.0d
 			y: 1.0d
 			description: ["A true marvel for anyone who’s spent any time toiling in the earth to extract resources. With Eir’s Token attached to a tool, it will simply stop working rather than break at low durability. "]
-			dependencies: ["00000000000002CE"]
-			id: "4A5FA8B49626B99C"
+			id: "712E3B21060DB19C"
 			tasks: [{
-				id: "36E55AB645848C72"
+				id: "4721EF89824DD695"
 				type: "item"
 				item: "naturesaura:break_prevention"
 			}]
 			rewards: [{
-				id: "3DBA5D25A0607A73"
+				id: "28CC27FC10BC0B9B"
 				type: "command"
 				title: "Blacksmith's Delight"
 				icon: "kubejs:blacksmiths_delight"
@@ -1156,15 +1125,14 @@
 			x: -3.0d
 			y: 1.0d
 			description: ["When held anywhere in one’s inventory, the Ring of Last Chance prevents a killing blow, shattering itself rather than allow its bearer to slip off this mortal coil. "]
-			dependencies: ["00000000000002CE"]
-			id: "242E5ADFA0884661"
+			id: "127A0B252CBF60C1"
 			tasks: [{
-				id: "207B5525FD177EA2"
+				id: "7401EDCC5CD5093C"
 				type: "item"
 				item: "naturesaura:death_ring"
 			}]
 			rewards: [{
-				id: "108A5AC2A7832A0B"
+				id: "1B9403D8A20F2898"
 				type: "command"
 				title: "Alchemist's Delight"
 				icon: "kubejs:alchemists_delight"
@@ -1200,11 +1168,10 @@
 				""
 				"● Botanist’s Armor: When wearing a full set, inflicts Withering on attacking enemies."
 			]
-			dependencies: ["00000000000002CE"]
-			id: "159E146307DBBB87"
+			id: "221AF0ABFEB4F736"
 			tasks: [
 				{
-					id: "3F050F9F25788BB3"
+					id: "732BF42DDF8E3C04"
 					type: "item"
 					title: "Botanist's Tools"
 					item: {
@@ -1252,7 +1219,7 @@
 					}
 				}
 				{
-					id: "0EA1FC09DF9019A6"
+					id: "3DF384030CD7214E"
 					type: "item"
 					title: "Botanist's Armor"
 					item: {
@@ -1294,7 +1261,7 @@
 				}
 			]
 			rewards: [{
-				id: "22036BC2088D50A5"
+				id: "44955606B0E1C7B5"
 				type: "command"
 				title: "Rare Nature's Aura Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -1330,11 +1297,10 @@
 				""
 				"● Skyseeker’s Armor: When wearing a full set, grants a speed bonus and the ability to step up one block."
 			]
-			dependencies: ["00000000000002CE"]
-			id: "5DC23A0D5C698DC4"
+			id: "0C4D668C5FB91906"
 			tasks: [
 				{
-					id: "25C3D3A01B4DCD7B"
+					id: "3CCFA329B5099EA4"
 					type: "item"
 					title: "Skyseeker's Tools"
 					item: {
@@ -1382,7 +1348,7 @@
 					}
 				}
 				{
-					id: "27F6108FE8D25E90"
+					id: "532B0B84B31F2DCD"
 					type: "item"
 					title: "Skyseeker's Armor"
 					item: {
@@ -1424,7 +1390,7 @@
 				}
 			]
 			rewards: [{
-				id: "2C1BEB25E59B8F06"
+				id: "2927D64D54B5FDD6"
 				type: "command"
 				title: "Epic Nature's Aura Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -1436,10 +1402,9 @@
 			x: -4.0d
 			y: 0.5d
 			description: ["Drawing Aura from a worn Cache or Trove, these staves aid in locating various objects; they can be quite useful both at home and while adventuring abroad. "]
-			dependencies: ["00000000000002CE"]
-			id: "62B50A6A3764AF7A"
+			id: "0F179A3EBF0587B8"
 			tasks: [{
-				id: "4412D64BBD5A0B03"
+				id: "76B216E795F6C3FE"
 				type: "item"
 				title: "Staves of Power"
 				item: {
@@ -1468,7 +1433,7 @@
 				}
 			}]
 			rewards: [{
-				id: "49FD9AE13A2A9FA3"
+				id: "38D4D46D3976D5D6"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -1485,10 +1450,9 @@
 				""
 				"Simply place a Bottle and Cork in the dispenser and provide a Redstone Pulse. Provided there is sufficient Aura in the area, a bottle of the local Aura type will be produced. "
 			]
-			dependencies: ["00000000000002B6"]
-			id: "35538F8C6F596EE9"
+			id: "2F618EF3A3976CD3"
 			tasks: [{
-				id: "68B1E345C4BD4325"
+				id: "2F4C36ECF8500535"
 				type: "item"
 				title: "Bottled Aura"
 				item: {
@@ -1522,7 +1486,7 @@
 				}
 			}]
 			rewards: [{
-				id: "790B02389C97D92B"
+				id: "0CC83443C0E4A90D"
 				type: "command"
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
@@ -1542,12 +1506,11 @@
 				"Resonating Crystals, on the other hand, set up an internal resonance with FE, converting it back into Source or Aura. If a Source Jar is near enough, it will send it there. If there is no jar, or if it is 100% full, the Resonating Crystal will instead convert the incoming FE to Aura and diffuse it into the atmosphere. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["00000000000002B5"]
 			min_width: 300
-			id: "3B584D6A33A0D8A4"
+			id: "7C701D8BF9539E0C"
 			tasks: [
 				{
-					id: "576EF68AC9677774"
+					id: "0BB9E13D7D12A340"
 					type: "item"
 					title: "Pulsating Crystals"
 					item: {
@@ -1572,7 +1535,7 @@
 					}
 				}
 				{
-					id: "420D02A1E0F76E08"
+					id: "6523D564D0C06A9D"
 					type: "item"
 					title: "Resonating Crystals"
 					item: {
@@ -1598,7 +1561,7 @@
 				}
 			]
 			rewards: [{
-				id: "6A253E63ACD97A02"
+				id: "7FE6DA1A9A33BC3F"
 				type: "command"
 				title: "Epic Nature's Aura Loot Box"
 				icon: "kubejs:epic_lootbox"

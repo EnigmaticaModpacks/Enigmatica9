@@ -1,8 +1,8 @@
 {
-	id: "0000000000000093"
+	id: "6532940C993EB0C1"
 	group: "0856CF7F5CBEB20A"
-	order_index: 2
-	filename: "tools"
+	order_index: 3
+	filename: "tools_expert"
 	title: "Equipment"
 	icon: {
 		id: "minecraft:netherite_pickaxe"
@@ -44,13 +44,12 @@
 				"● $tools/hoe"
 				"● $tools/multi-tool"
 			]
-			dependencies: ["0E45018D600614BA"]
-			hide: true
-			id: "000000000000045C"
+			dependencies: ["2CCCDD05AED3153F"]
+			id: "291E5727DD1ADDF4"
 			tasks: [{
-				id: "1EDF7F5D2B905572"
+				id: "6CB601D6EDB6AA57"
 				type: "item"
-				title: "Any Tool"
+				title: "Any Tools"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -60,7 +59,7 @@
 				}
 			}]
 			rewards: [{
-				id: "0000000000000CA4"
+				id: "6C88FB980076E7D5"
 				type: "xp"
 				xp: 100
 			}]
@@ -74,7 +73,7 @@
 				}
 			}
 			x: -9.0d
-			y: -11.0d
+			y: -8.0d
 			subtitle: "Frickin' Laser Beams"
 			description: [
 				"A powered tool capable of mining blocks from a distance."
@@ -90,14 +89,11 @@
 				"● Filterable Void Upgrade"
 				"● Magnet Upgrade"
 			]
-			dependencies: [
-				"000000000000046C"
-				"358FAB3D482C463A"
-			]
-			id: "000000000000045F"
+			dependencies: ["4650EB4575965AAD"]
+			id: "400BF1DBF5EF7971"
 			tasks: [
 				{
-					id: "0000000000000460"
+					id: "2570BAAA2D7D8317"
 					type: "item"
 					title: "Mining Gadget"
 					item: {
@@ -125,20 +121,20 @@
 					}
 				}
 				{
-					id: "00000000000006F2"
+					id: "3FEA294367FD4307"
 					type: "item"
 					item: "mininggadgets:modificationtable"
 				}
 			]
 			rewards: [
 				{
-					id: "000000000000067D"
+					id: "00DFFC8DE1F504C3"
 					type: "item"
 					title: "Upgrade: Light Placer"
 					item: "mininggadgets:upgrade_light_placer"
 				}
 				{
-					id: "0000000000000A52"
+					id: "2743CB0A415CB5E7"
 					type: "command"
 					title: "Scavenger's Delight"
 					icon: "kubejs:scavengers_delight"
@@ -159,15 +155,15 @@
 				"Using a glass bottle between y192 and y196 will get you a Bottled Cloud. Right-Clicking the air again will place the cloud, allowing other blocks to be placed against it. It will disappear after a few moments, but will go back into your bottle on it's own if another block is placed against it in time. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["000000000000045C"]
-			id: "322E9DDDEE1623E3"
+			dependencies: ["291E5727DD1ADDF4"]
+			id: "7C80BF770471D535"
 			tasks: [{
-				id: "2AF9B5D1BACA4A59"
+				id: "36B52599415F3A77"
 				type: "item"
 				item: "quark:bottled_cloud"
 			}]
 			rewards: [{
-				id: "43188DFF0C8F9DDC"
+				id: "7B241F0433CB46B4"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -185,13 +181,10 @@
 				"Sneak Right-Click most machines to spend stored time on them, speeding them up briefly. "
 			]
 			hide_dependency_lines: true
-			dependencies: [
-				"000000000000046D"
-				"000000000000045C"
-			]
-			id: "7AE1180EFAF22376"
+			dependencies: ["291E5727DD1ADDF4"]
+			id: "49E1BA11BF18AC10"
 			tasks: [{
-				id: "4D29649F3F51D7D3"
+				id: "0862CF8273A2BA78"
 				type: "item"
 				item: {
 					id: "tiab:time_in_a_bottle"
@@ -200,7 +193,7 @@
 				}
 			}]
 			rewards: [{
-				id: "4FDD99B9F9F65B1D"
+				id: "7878D3C0A8B1AE6D"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -227,11 +220,11 @@
 				"Keep a villager in your pocket for good luck!"
 			]
 			hide_dependency_lines: true
-			dependencies: ["000000000000045C"]
+			dependencies: ["291E5727DD1ADDF4"]
 			min_width: 300
-			id: "43DB35C6C62A177D"
+			id: "0AA576CD27705145"
 			tasks: [{
-				id: "2A6319C69C3A93CF"
+				id: "5F6905CC416D4698"
 				type: "item"
 				item: {
 					id: "shrink:shrinking_device"
@@ -241,14 +234,14 @@
 			}]
 			rewards: [
 				{
-					id: "493BD102FB6F567C"
+					id: "3772A1C2FB217529"
 					type: "item"
 					title: "Glass Bottle"
 					item: "minecraft:glass_bottle"
 					count: 8
 				}
 				{
-					id: "64504DDDBC9AC25E"
+					id: "1BCA652FE9AB3AF5"
 					type: "command"
 					title: "Scavenger's Delight"
 					icon: "kubejs:scavengers_delight"
@@ -276,10 +269,10 @@
 				"The following quests will help highlight some of the more notable options. Enjoy!"
 			]
 			hide_dependency_lines: true
-			dependencies: ["000000000000045C"]
-			id: "358FAB3D482C463A"
+			dependencies: ["291E5727DD1ADDF4"]
+			id: "4650EB4575965AAD"
 			tasks: [{
-				id: "0CD75EE826F64FBA"
+				id: "5792CBBC2598D7C9"
 				type: "item"
 				title: "Craft Any Tool"
 				item: {
@@ -291,7 +284,7 @@
 				}
 			}]
 			rewards: [{
-				id: "014468D2F53971A4"
+				id: "19455C7D8B7BAD8F"
 				type: "xp"
 				xp: 100
 			}]
@@ -332,16 +325,16 @@
 				""
 				"At the Netherite tier, it gains the ability vein mine any block, if desired. "
 			]
-			dependencies: ["358FAB3D482C463A"]
-			id: "22C47015134927C0"
+			dependencies: ["4650EB4575965AAD"]
+			id: "28DF07224351C4B0"
 			tasks: [
 				{
-					id: "542C15675D324C67"
+					id: "183025779DB8C0CD"
 					type: "item"
 					item: "pneumaticcraft:jackhammer"
 				}
 				{
-					id: "1F0A6109EB36227B"
+					id: "39F8AF3AEE8B4C31"
 					type: "item"
 					title: "Drill Bits"
 					item: {
@@ -363,7 +356,7 @@
 				}
 			]
 			rewards: [{
-				id: "103EB2CE0DC06A32"
+				id: "7886C55AA167614E"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -392,23 +385,23 @@
 					}
 				}
 			}
-			x: -10.0d
-			y: -11.5d
+			x: -11.0d
+			y: -8.0d
 			description: [
 				"With Vein Mining Units installed, the Meka-Tool gains the ability to vein mine ores and logs. It may optionally be toggled to apply to any block."
 				""
 				"Additionally, the Blasting Unit allows it to mine a large area up to 9x9, with the radius and all other options configured in the Module Tweaker menu."
 			]
-			dependencies: ["358FAB3D482C463A"]
-			id: "38BE45BB19761236"
+			dependencies: ["4650EB4575965AAD"]
+			id: "03213C040584537B"
 			tasks: [
 				{
-					id: "5026F7A1A9F2EB37"
+					id: "4845CF13045C8DAE"
 					type: "item"
 					item: "mekanism:meka_tool"
 				}
 				{
-					id: "02280355939542A7"
+					id: "5D160816F72F66AF"
 					type: "item"
 					title: "Mining Modules"
 					item: {
@@ -430,7 +423,7 @@
 				}
 			]
 			rewards: [{
-				id: "3748DAA3600EA73A"
+				id: "1FAC612D007AA63F"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -441,13 +434,13 @@
 		{
 			title: "Chainsaw"
 			icon: "thermal:saw_blade"
-			x: -11.0d
-			y: -8.0d
+			x: -9.0d
+			y: -11.0d
 			description: ["When applied to an Axe, the Chainsaw enchantment will cause the axe to fell entire trees, rather than a single block at a time. "]
-			dependencies: ["358FAB3D482C463A"]
-			id: "5864F8263845E294"
+			dependencies: ["4650EB4575965AAD"]
+			id: "1EA2524632247041"
 			tasks: [{
-				id: "5814B6BA778CE9C1"
+				id: "2A9D3140767FF3A2"
 				type: "checkmark"
 				title: "Chainsaw Enchantment"
 			}]
@@ -456,10 +449,10 @@
 			x: -8.0d
 			y: -9.0d
 			description: ["The Skyseeker’s Handaxe natively has the ability to chop whole trees, making short work of any logging operation. "]
-			dependencies: ["358FAB3D482C463A"]
-			id: "7BC5D8F606BBCF19"
+			dependencies: ["4650EB4575965AAD"]
+			id: "24FA5629BEE5681B"
 			tasks: [{
-				id: "566D752356DBBA46"
+				id: "26BB982DA92AE9A0"
 				type: "item"
 				item: {
 					id: "naturesaura:sky_axe"
@@ -470,7 +463,7 @@
 				}
 			}]
 			rewards: [{
-				id: "418FF73BC209465E"
+				id: "3570B6A36168655F"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -743,8 +736,8 @@
 					}
 				}
 			}
-			x: -10.0d
-			y: -7.5d
+			x: -11.0d
+			y: -11.0d
 			description: [
 				"Included with the Novice’s Spellbook is the Glyph of Break, which is used for any sort of block breaking. "
 				""
@@ -754,11 +747,11 @@
 				""
 				"Example: Touch > Fell or Break > AOE x8"
 			]
-			dependencies: ["358FAB3D482C463A"]
-			id: "45033F9829C5B4CD"
+			dependencies: ["4650EB4575965AAD"]
+			id: "2CFAA6C4D717E6BF"
 			tasks: [
 				{
-					id: "58118046B9EA3E0E"
+					id: "6EF4B7A372868F7B"
 					type: "item"
 					title: "Spellbooks"
 					item: {
@@ -783,7 +776,7 @@
 					}
 				}
 				{
-					id: "2B24FDC5DFF2DAC8"
+					id: "5CF6DEDBBA142D2B"
 					type: "item"
 					title: "Glyph of Fell or Break"
 					item: {
@@ -805,7 +798,7 @@
 				}
 			]
 			rewards: [{
-				id: "39E9528BE6DAB579"
+				id: "26D391BE317C1493"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -821,18 +814,18 @@
 					Damage: 0
 				}
 			}
-			x: -9.0d
-			y: -8.0d
+			x: -10.0d
+			y: -11.5d
 			shape: "circle"
 			description: [
 				"Upgrades to basic Shovels and Hammers, these tools mine a 3x3 area. "
 				""
 				"Apply Power of the Depth to them to the depth of mining. Each level of the enchant will cause the tool to mine another block deep."
 			]
-			dependencies: ["358FAB3D482C463A"]
-			id: "0F002D99C31CFE24"
+			dependencies: ["4650EB4575965AAD"]
+			id: "5E6CE233428FFE63"
 			tasks: [{
-				id: "71303CACE8C59A83"
+				id: "38A42BC191855ECB"
 				type: "item"
 				title: "Excavators"
 				item: {
@@ -859,82 +852,7 @@
 				}
 			}]
 			rewards: [{
-				id: "7FEA0293136D2491"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
-			icon: {
-				id: "thermal:flux_drill"
-				Count: 1b
-				tag: {
-					Augments: [
-						{
-							id: "thermal:upgrade_augment_3"
-							Count: 1b
-						}
-						{
-							id: "thermal:area_radius_augment"
-							Count: 1b
-						}
-						{
-							id: "thermal:area_radius_augment"
-							Count: 1b
-						}
-						{
-							id: "thermal:area_radius_augment"
-							Count: 1b
-						}
-					]
-					Energy: 155200
-					Properties: {
-						BaseMod: 4.0f
-						Radius: 3.0f
-					}
-					Mode: 3
-				}
-			}
-			x: -12.0d
-			y: -10.0d
-			description: ["The Fluxbore and Fluxsaw both accept Integral Components and Radial Upgrades, allowing them to break blocks in ever increasing areas."]
-			dependencies: ["358FAB3D482C463A"]
-			id: "67FD5585D8CD2765"
-			tasks: [
-				{
-					id: "3FAE666199A97D9A"
-					type: "item"
-					title: "Flux Tools"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "thermal:flux_drill"
-									Count: 1b
-									tag: { }
-								}
-								{
-									id: "thermal:flux_saw"
-									Count: 1b
-									tag: { }
-								}
-							]
-						}
-					}
-				}
-				{
-					id: "4111141B841E6A8F"
-					type: "item"
-					item: "thermal:area_radius_augment"
-				}
-			]
-			rewards: [{
-				id: "249BCC9ECEB1E87E"
+				id: "56CEB308180745A4"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -957,13 +875,13 @@
 					}
 				}
 			}
-			x: -11.0d
-			y: -11.0d
+			x: -12.0d
+			y: -10.0d
 			description: ["With each level of charge, the Infinity Drill and Infinity Saw work in ever increasing areas. The Drill works in a simple radius around the point of mining, while the Saw cuts trees from the top down in a large area. "]
-			dependencies: ["358FAB3D482C463A"]
-			id: "1F4190DCDEF9B680"
+			dependencies: ["4650EB4575965AAD"]
+			id: "4439EC0EB57A1F69"
 			tasks: [{
-				id: "059E1E3CF687C2DB"
+				id: "0DD2A260790C8A0A"
 				type: "item"
 				title: "Infinity Tools"
 				item: {
@@ -1004,7 +922,7 @@
 				}
 			}]
 			rewards: [{
-				id: "49EF6BF284B65CD2"
+				id: "52510292FF8D040C"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -1031,28 +949,11 @@
 				ForgeCaps: {
 					Parent: {
 						Size: 5
-						Items: [
-							{
-								Slot: 0
-								id: "immersiveengineering:drillhead_steel"
-								Count: 1b
-							}
-							{
-								Slot: 1
-								id: "immersiveengineering:toolupgrade_drill_waterproof"
-								Count: 1b
-							}
-							{
-								Slot: 2
-								id: "immersiveengineering:toolupgrade_drill_lube"
-								Count: 1b
-							}
-							{
-								Slot: 3
-								id: "immersiveengineering:toolupgrade_drill_capacity"
-								Count: 1b
-							}
-						]
+						Items: [{
+							Slot: 0
+							id: "immersiveengineering:drillhead_steel"
+							Count: 1b
+						}]
 					}
 				}
 			}
@@ -1063,11 +964,11 @@
 				""
 				"The Drill itself is capable of up to a 3x3 mining area, while the Buzzsaw will attempt to cut down whole trees. "
 			]
-			dependencies: ["358FAB3D482C463A"]
-			id: "6FF4663931B0B2B2"
+			dependencies: ["4650EB4575965AAD"]
+			id: "3F7FCEDE77D9EC80"
 			tasks: [
 				{
-					id: "4061A95BBD1A9E42"
+					id: "1CE712C151A1CB1F"
 					type: "item"
 					title: "Engineer's Tools"
 					item: {
@@ -1102,7 +1003,7 @@
 					}
 				}
 				{
-					id: "0BBB71A8A1CDD7FD"
+					id: "6C75C7F200B7655D"
 					type: "item"
 					title: "Drills and Sawblades"
 					item: {
@@ -1138,7 +1039,7 @@
 				}
 			]
 			rewards: [{
-				id: "451D4EF8E99423F4"
+				id: "6BF1F4DCF4533EB5"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -1170,11 +1071,12 @@
 				"In addition to their basic stats, they may also be enchanted with a number of interesting effects, such as curing the bearer of all potion effects when the shield is depleted or applying Poison to anything that damages the shield. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["000000000000045C"]
+			dependencies: ["291E5727DD1ADDF4"]
+			dependency_requirement: "all_started"
 			min_width: 300
-			id: "2C96F74E20442E7A"
+			id: "121CF33BFAEF6205"
 			tasks: [{
-				id: "0A580EBE0BEE52D0"
+				id: "50541B95613CA29B"
 				type: "item"
 				title: "Superior Shields"
 				icon: {
@@ -1194,7 +1096,7 @@
 			}]
 			rewards: [
 				{
-					id: "7F9E5B553D8A3A92"
+					id: "3345648606C68BEB"
 					type: "item"
 					item: {
 						id: "minecraft:enchanted_book"
@@ -1208,7 +1110,7 @@
 					}
 				}
 				{
-					id: "58C2D15E139FF54E"
+					id: "2FCA3B2C9ABB9D73"
 					type: "command"
 					title: "Scavenger's Delight"
 					icon: "kubejs:scavengers_delight"
@@ -1233,10 +1135,10 @@
 				"While worn in a curio slot, the belt allows quick swapping between any of the tools stored in it. Check the Key Binds menu for options. By default, opening the tool swap menu is on R and opening the belt’s inventory to add or remove tools is on V."
 			]
 			hide_dependency_lines: true
-			dependencies: ["000000000000045C"]
-			id: "50F144C6D2460D67"
+			dependencies: ["291E5727DD1ADDF4"]
+			id: "5460EDD6024A9548"
 			tasks: [{
-				id: "2CE411031C66252D"
+				id: "5A274B01C0215C3F"
 				type: "item"
 				item: {
 					id: "toolbelt:belt"
@@ -1245,7 +1147,7 @@
 				}
 			}]
 			rewards: [{
-				id: "001AC8DB65AAC4B4"
+				id: "1A699324C4F5EC1A"
 				type: "item"
 				item: "toolbelt:pouch"
 			}]

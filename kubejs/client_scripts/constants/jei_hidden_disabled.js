@@ -427,6 +427,13 @@ jei.expert.items.disabled = [
     'mekanism:purification_chamber',
     'mekanism:solar_neutron_activator',
     'mekanism:robit',
+    'mekanism:thermal_evaporation_block',
+    'mekanism:thermal_evaporation_valve',
+    'mekanism:thermal_evaporation_controller',
+    'mekanism:boiler_casing',
+    'mekanism:boiler_valve',
+    'mekanism:pressure_disperser',
+    'mekanism:superheating_element',
 
     'mekanismgenerators:gas_burning_generator',
     'mekanismgenerators:advanced_solar_generator',

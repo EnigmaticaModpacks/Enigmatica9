@@ -1,8 +1,8 @@
 {
-	id: "4DFD666F4AAF1C11"
+	id: "775889C531B9A925"
 	group: "0856CF7F5CBEB20A"
-	order_index: 6
-	filename: "villagers"
+	order_index: 7
+	filename: "villagers_expert"
 	title: "Villagers"
 	icon: "minecraft:emerald"
 	default_quest_shape: ""
@@ -13,15 +13,15 @@
 			x: -3.5d
 			y: -2.5d
 			description: ["Armorers provide a variety of enchanted armor which can be quite useful early on. They can also be a convenient source of Bells."]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "2A215BD43EDD9749"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "1522FAB5B707F508"
 			tasks: [{
-				id: "3FA2954E2EE3D440"
+				id: "3A2706F5D507DD43"
 				type: "item"
 				item: "minecraft:blast_furnace"
 			}]
 			rewards: [{
-				id: "647F0610EA3206AD"
+				id: "0C95B6DC07AD0BE9"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -34,15 +34,15 @@
 			x: -1.5d
 			y: -2.5d
 			description: ["Butchers mostly buy raw meats and sell cooked meats. To the lucky few, however, they might have a Rabbit’s Foot available to trade."]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "7646D6584E71AA3B"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "5666C8219D9DA337"
 			tasks: [{
-				id: "70FFBC4860DFECFC"
+				id: "6D059F90ABF4498E"
 				type: "item"
 				item: "minecraft:smoker"
 			}]
 			rewards: [{
-				id: "7D551D76A1C3C105"
+				id: "5CC67A2426602997"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -55,15 +55,15 @@
 			x: -0.5d
 			y: -2.5d
 			description: ["Perhaps best known for their maps to nearby treasures and monuments, Cartographers also provide a number of interesting items such as banner patterns or Antique Ink, which gives maps a fancy faded look for decorative purposes."]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "76C71DD1757FD494"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "5597FAE499274F10"
 			tasks: [{
-				id: "0F8B6F1135F1E8DF"
+				id: "3B114383B57974E1"
 				type: "item"
 				item: "minecraft:cartography_table"
 			}]
 			rewards: [{
-				id: "067359D0E85D8EAC"
+				id: "03E298EA8E6067CD"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -76,15 +76,15 @@
 			x: -5.5d
 			y: -2.5d
 			description: ["Clerics buy and sell a many precious materials such as Gold and Lapis. They can be an excellent source of Ender Pearls as well, however, with no combat required. "]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "3C14CF7CA1F9DD9A"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "20957365FD15F4C2"
 			tasks: [{
-				id: "649DC2016CB8DBE0"
+				id: "3FFB8E7991FEDD62"
 				type: "item"
 				item: "minecraft:brewing_stand"
 			}]
 			rewards: [{
-				id: "6E3D8216B0D43FAB"
+				id: "2A6758B68600AC1F"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -97,15 +97,15 @@
 			x: -5.0d
 			y: -1.5d
 			description: ["Farmers will buy and sell a variety of crops. They can also sell Suspicious Stews and other treats. "]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "0FBEB1E726D60475"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "2AFF5C846A39C507"
 			tasks: [{
-				id: "5A5E33236045FBE0"
+				id: "5BF7BDEC4E7CA065"
 				type: "item"
 				item: "minecraft:composter"
 			}]
 			rewards: [{
-				id: "57A4C718E9577EF9"
+				id: "394BB50E84096B55"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -118,15 +118,15 @@
 			x: -6.0d
 			y: -1.5d
 			description: ["Have some spare fish to sell? Fishermen will buy raw fish and sell cooked fish. They’ll also offer enchanted Fishing Rods."]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "3EC4F1E762ED8B26"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "5821CEBA23FD498C"
 			tasks: [{
-				id: "2512363CEE80074D"
+				id: "42DF32AC339B9C19"
 				type: "item"
 				item: "minecraft:barrel"
 			}]
 			rewards: [{
-				id: "4267FF60EA57321D"
+				id: "6236F2A8BC341526"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -139,15 +139,15 @@
 			x: -3.0d
 			y: -1.5d
 			description: ["Need a Bow or Crossbow? Perhaps just some arrows without the hassle of killing Chickens? Fletchers are the answer. They’ll even sell enchanted equipment occasionally."]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "7B283F0A19CB22F7"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "3DB47F7AF2D042A1"
 			tasks: [{
-				id: "6E66D5AAC1F38952"
+				id: "22B8FA3B2435A6BC"
 				type: "item"
 				item: "minecraft:fletching_table"
 			}]
 			rewards: [{
-				id: "2B45A46D7A9BB397"
+				id: "470AF5F4392838E4"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -160,15 +160,15 @@
 			x: -1.0d
 			y: -1.5d
 			description: ["Leatherworkers are an excellent source for leather goods such as armor or Saddles."]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "17FA753207AD0010"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "31E9C3B2671938D0"
 			tasks: [{
-				id: "0D937F4178D270CC"
+				id: "14BECFE0D1E1903E"
 				type: "item"
 				item: "minecraft:cauldron"
 			}]
 			rewards: [{
-				id: "4A36446F83198A3E"
+				id: "511EDDF455805A19"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -204,15 +204,15 @@
 				"● Temptation"
 				"● Lure"
 			]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "484B56B135F7BBF7"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "6D6A23DEDB0707CD"
 			tasks: [{
-				id: "06AB246F8B272FC1"
+				id: "04EE57074E7E4056"
 				type: "item"
 				item: "minecraft:lectern"
 			}]
 			rewards: [{
-				id: "53258046C5E506CF"
+				id: "2C6369052E2F9461"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -225,15 +225,15 @@
 			x: -4.0d
 			y: -1.5d
 			description: ["Buying and selling various stones and bricks, Stone Masons are particularly useful as a source of Quartz blocks."]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "5DEA1F9E14CCC6B0"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "6BE789B38242042B"
 			tasks: [{
-				id: "0B275566F6A9290D"
+				id: "7BF8328E3B0C77A8"
 				type: "item"
 				item: "minecraft:stonecutter"
 			}]
 			rewards: [{
-				id: "26F83CEFA1D37BA4"
+				id: "6886A183E6C3283E"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -246,15 +246,15 @@
 			x: -2.0d
 			y: -1.5d
 			description: ["Primarily trading in wools and dyes, Shepherds have an artistic side and will occasionally sell paintings as well. "]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "1DA15B4B1FD3CDBD"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "3E5C78302D1DB75E"
 			tasks: [{
-				id: "5524159C47C5B5E4"
+				id: "2F8153628576F330"
 				type: "item"
 				item: "minecraft:loom"
 			}]
 			rewards: [{
-				id: "17C25CFD5C10A9AF"
+				id: "0538883C54775B33"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -267,15 +267,15 @@
 			x: -4.5d
 			y: -2.5d
 			description: ["Toolsmiths provide a variety of enchanted tools which can be quite useful early on. They can also be a convenient source of Bells."]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "4A128533C5039B61"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "6C9DE0A1D4C72117"
 			tasks: [{
-				id: "38CB770BBEAF6878"
+				id: "304180865A9AE285"
 				type: "item"
 				item: "minecraft:smithing_table"
 			}]
 			rewards: [{
-				id: "56C09E74F4C04953"
+				id: "7EF42B6A98D6340B"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -288,15 +288,15 @@
 			x: -2.5d
 			y: -2.5d
 			description: ["Weaponsmiths provide a variety of enchanted weapons which can be quite useful early on. They can also be a convenient source of Bells."]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "2BEB1752185EEE02"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "7F61E2C24268FA98"
 			tasks: [{
-				id: "27CBC92133F5718E"
+				id: "6D051A0732B16914"
 				type: "item"
 				item: "minecraft:grindstone"
 			}]
 			rewards: [{
-				id: "4392DF4D0E221A53"
+				id: "5B2649A6081434D9"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -309,15 +309,15 @@
 			x: -2.0d
 			y: 0.5d
 			description: ["Fluix Researchers can be an excellent early source for Certus Quartz and Sky Stone, as well as selling Inscriber Presses without needing to go out looking for a crashed meteor. "]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "2D997E47FA436BAA"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "2282AC0475014404"
 			tasks: [{
-				id: "04C6E510393451A7"
+				id: "5440D0ED10422B13"
 				type: "item"
 				item: "ae2:charger"
 			}]
 			rewards: [{
-				id: "6BC33728C5D8D0D8"
+				id: "2034691354C8FFBA"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -330,15 +330,15 @@
 			x: -3.0d
 			y: 0.5d
 			description: ["Pressure Mechanics sell a wide variety of Pneumatic devices, specialized ammo for Miniguns, and even circuit boards. "]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "2CEB9CD172B21EE5"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "18A0D921EEF7FE7F"
 			tasks: [{
-				id: "5B21592BFFB3878C"
+				id: "3DF441ECE45658A8"
 				type: "item"
 				item: "pneumaticcraft:charging_station"
 			}]
 			rewards: [{
-				id: "316A4A9FFCA2A234"
+				id: "4A7C2F412652EE4C"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -351,15 +351,15 @@
 			x: -5.0d
 			y: 0.5d
 			description: ["Foragers will purchase a variety of spare mushrooms that you may have lying about."]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "4DC6ACC638614AF5"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "747A1D6FC136658A"
 			tasks: [{
-				id: "4CC9D0A6F75D7C17"
+				id: "46B59781281AC734"
 				type: "item"
 				item: "byg:foragers_table"
 			}]
 			rewards: [{
-				id: "1A3C78B0ED00AA55"
+				id: "6579CF88E0968397"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -372,15 +372,15 @@
 			x: -4.0d
 			y: 0.5d
 			description: ["Trading in all manner of arcane goods, Shady Wizards are particularly useful for obtaining ritual tablets, familiar shards, and even rare Caster Tomes."]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "5BE517A357449C20"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "23ED03FE63FD2373"
 			tasks: [{
-				id: "3A39C5F5A14976CC"
+				id: "53CC631030A8D31F"
 				type: "item"
 				item: "ars_nouveau:arcane_core"
 			}]
 			rewards: [{
-				id: "24D908FD3162B3A4"
+				id: "4C9C4580BCF7757B"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -393,15 +393,15 @@
 			x: -5.5d
 			y: -0.5d
 			description: ["Engineers mostly buy and sell building materials such as concrete and scaffolding. They will, however, sell maps to Mineral Deposits at high levels."]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "592C390D79E3C244"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "553AC0B8D27BADA8"
 			tasks: [{
-				id: "23A9BA9EC78EF271"
+				id: "065E1A43E1767A25"
 				type: "item"
 				item: "immersiveengineering:turntable"
 			}]
 			rewards: [{
-				id: "374E53F3C57E58EF"
+				id: "5259D49C49DAB5DF"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -414,15 +414,15 @@
 			x: -4.5d
 			y: -0.5d
 			description: ["Machinists are perhaps most useful for the Blueprints they provide, being one of the only reliable sources for Arc Furnace Electrode Blueprints. They also sell tools, drill heads, and various machine parts. "]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "014B79B20F471E92"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "0158D296E36BB419"
 			tasks: [{
-				id: "71580CB31D830B92"
+				id: "7F6288E714F210C6"
 				type: "item"
 				item: "immersiveengineering:craftingtable"
 			}]
 			rewards: [{
-				id: "5E267462A0C76C1A"
+				id: "186F59EBEABC7E7C"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -435,15 +435,15 @@
 			x: -2.5d
 			y: -0.5d
 			description: ["Electricians offer a variety of wires and electrical components, as well as Faraday armor to keep you safe around exposed wires. "]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "6F05BC0A109D417A"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "59FC61E69453FA4D"
 			tasks: [{
-				id: "02EE19388A0F634A"
+				id: "62E86377665F546D"
 				type: "item"
 				item: "immersiveengineering:circuit_table"
 			}]
 			rewards: [{
-				id: "0FFCBB51F1110EA5"
+				id: "2E3163DF1860C162"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -456,15 +456,15 @@
 			x: -1.5d
 			y: -0.5d
 			description: ["Trading in gun parts and ammo, Gunsmiths can be invaluable for creating a powerful Revolver as they offer unique parts with special properties like increased luck or firing rate."]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "613E019B7F966FD2"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "58A73376FCA9A5C6"
 			tasks: [{
-				id: "082CC56B0E9342DD"
+				id: "0D17FD3AA81B3D05"
 				type: "item"
 				item: "immersiveengineering:workbench"
 			}]
 			rewards: [{
-				id: "1537AFD0D27EB5C7"
+				id: "5C7BB752EC3632BB"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -482,11 +482,11 @@
 				""
 				"These will then sell a variety of Shader Grabbags, allowing easy access to many random shaders to apply to compatible items such as Revolvers, Mining Drills, and more."
 			]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "538912EFED719BA8"
+			dependencies: ["7A341C5D96C4A809"]
+			id: "39BD2E415530761E"
 			tasks: [
 				{
-					id: "092EF53572E9802F"
+					id: "3508CC7BD81DF94C"
 					type: "item"
 					title: "Any Shader"
 					item: {
@@ -519,7 +519,7 @@
 					}
 				}
 				{
-					id: "46A62FE3592FE3BC"
+					id: "7F6A2E6030399F43"
 					type: "item"
 					title: "Banner"
 					item: {
@@ -532,7 +532,7 @@
 				}
 			]
 			rewards: [{
-				id: "1D2310A4FC9D436D"
+				id: "59EE246084CF7CDB"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -550,11 +550,11 @@
 				""
 				"The following quests cover the workstations used by each villager and attempt to give a brief description of what trades might be found."
 			]
-			dependencies: ["0E45018D600614BA"]
+			dependencies: ["2CCCDD05AED3153F"]
 			hide: true
-			id: "26BC59AAFA4069BE"
+			id: "7A341C5D96C4A809"
 			tasks: [{
-				id: "40BC6C88CE23470E"
+				id: "694D9FA47769EF6A"
 				type: "item"
 				item: "minecraft:emerald"
 			}]

@@ -5,7 +5,6 @@
 	filename: "chapter_two"
 	title: "Chapter Two"
 	icon: "byg:subzero_crystal_cluster"
-	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -85,6 +84,8 @@
 			y: 4.5d
 			shape: "hexagon"
 			description: ["It would seem the Cult of the Ur-Ghast were up to something far more sinister than previously thought. The rift they opened with their Carminite Reactor also gave them the opportunity to obtain this strange debris.  "]
+			dependencies: ["2CCCDD05AED3153F"]
+			hide: true
 			id: "0CFE9B39B0643013"
 			tasks: [{
 				id: "5BAB3FF81039BF5E"
@@ -297,6 +298,8 @@
 			x: 3.5d
 			y: -2.5d
 			shape: "hexagon"
+			dependencies: ["2CCCDD05AED3153F"]
+			hide: true
 			id: "60324503ED7AC4C1"
 			tasks: [
 				{

@@ -1,8 +1,8 @@
 {
-	id: "00000000000000AE"
+	id: "528DEAC4CBA79B23"
 	group: "72A9465344128AF9"
-	order_index: 7
-	filename: "pneumaticcraft_repressurized"
+	order_index: 8
+	filename: "pneumaticcraft_repressurized_expert"
 	title: "PneumaticCraft: Repressurized"
 	icon: "pneumaticcraft:pressure_gauge_module"
 	default_quest_shape: ""
@@ -20,9 +20,9 @@
 				""
 				"~MuteTiefling"
 			]
-			id: "00000000000000AF"
+			id: "6E942B6AC4460725"
 			tasks: [{
-				id: "7B56DD5D9F4BBB68"
+				id: "1D21763D7D27408C"
 				type: "item"
 				title: "Compressed Iron"
 				icon: "pneumaticcraft:ingot_iron_compressed"
@@ -44,7 +44,7 @@
 				}
 			}]
 			rewards: [{
-				id: "00000000000000B1"
+				id: "26FC0CB6FE55E311"
 				type: "item"
 				title: "Pneumatic Wrench"
 				item: {
@@ -76,31 +76,30 @@
 				""
 				"Note: Care must be taken when building a Pressure Chamber and the entire structure should avoid crossing chunk boundaries. F3+G will display chunk boundaries."
 			]
-			dependencies: ["00000000000000BD"]
 			min_width: 400
-			id: "00000000000000B3"
+			id: "2BCEA81413D908E4"
 			tasks: [
 				{
-					id: "00000000000000B4"
+					id: "7CAE99944A5DA34E"
 					type: "item"
 					item: "pneumaticcraft:pressure_chamber_wall"
 					count: 23L
 				}
 				{
-					id: "00000000000000BA"
+					id: "12F082C412932885"
 					type: "item"
 					item: "pneumaticcraft:pressure_chamber_interface"
 					count: 2L
 				}
 				{
-					id: "00000000000000BB"
+					id: "5529379BA0E98053"
 					type: "item"
 					item: "pneumaticcraft:pressure_chamber_valve"
 				}
 			]
 			rewards: [
 				{
-					id: "00000000000000C6"
+					id: "7364D55166238332"
 					type: "command"
 					title: "Rare PNC:R Loot Box"
 					icon: "kubejs:rare_lootbox"
@@ -108,7 +107,7 @@
 					player_command: false
 				}
 				{
-					id: "0000000000000A78"
+					id: "54CE724936B37534"
 					type: "command"
 					title: "Scavenger's Delight"
 					icon: "kubejs:scavengers_delight"
@@ -130,17 +129,16 @@
 				""
 				"Place a Pressure Gauge Tube Module on the first Pressure Tube out of the compressor, then run a loop of exactly nine Redstone Dust back to a repeater pointing into the Compressor itself. Finally, set the Compressor to run on Low Signal in its Redstone Behaviour panel. The end result is a Compressor that will turn off at about 4.5 bar. "
 			]
-			dependencies: ["7B56DD5D9F4BBB68"]
 			min_width: 300
-			id: "00000000000000BD"
+			id: "3BDD27D9FDC82E36"
 			tasks: [
 				{
-					id: "00000000000000BE"
+					id: "322423F415E284D8"
 					type: "item"
 					item: "pneumaticcraft:pressure_gauge_module"
 				}
 				{
-					id: "00000000000000BF"
+					id: "457687F0BC37E9EA"
 					type: "item"
 					title: "Air Compressors"
 					item: {
@@ -181,7 +179,7 @@
 					}
 				}
 				{
-					id: "00000000000000C0"
+					id: "5631F8C109FD8A29"
 					type: "item"
 					item: "pneumaticcraft:pressure_tube"
 					count: 8L
@@ -189,14 +187,14 @@
 			]
 			rewards: [
 				{
-					id: "00000000000000C1"
+					id: "2CF05CB4198898DA"
 					type: "item"
 					title: "Redstone Dust"
 					item: "minecraft:redstone"
 					count: 9
 				}
 				{
-					id: "00000000000000C2"
+					id: "3F1E0BD337B23FF2"
 					type: "item"
 					title: "Redstone Repeater"
 					item: "minecraft:repeater"
@@ -215,16 +213,15 @@
 				""
 				"Note: Sneak + Right-Click any PNC:R block with a Pneumatic Wrench to instantly pick it up while retaining the stored air and upgrades. This also works on Pressure Chamber Valves."
 			]
-			dependencies: ["00000000000000B3"]
-			id: "00000000000000C3"
+			id: "21E80B4F1712E3FF"
 			tasks: [{
-				id: "00000000000000C4"
+				id: "1177F882F4EC6D68"
 				type: "item"
 				item: "pneumaticcraft:security_upgrade"
 				count: 2L
 			}]
 			rewards: [{
-				id: "00000000000000C5"
+				id: "6E8BDFC4506F6E33"
 				type: "command"
 				title: "Rare PNC:R Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -241,15 +238,14 @@
 				""
 				"Perfect for keeping the terrors at bay. "
 			]
-			dependencies: ["00000000000000D3"]
-			id: "00000000000000CA"
+			id: "64B5744F479C4279"
 			tasks: [{
-				id: "00000000000000CB"
+				id: "0372C21229B0B51F"
 				type: "item"
 				item: "pneumaticcraft:kerosene_lamp"
 			}]
 			rewards: [{
-				id: "000000000000022D"
+				id: "1F3042103791237B"
 				type: "item"
 				title: "Medium Fluid Tank"
 				item: {
@@ -285,16 +281,15 @@
 				"● Resistive Heater"
 				"● Fuelwood Heater"
 			]
-			dependencies: ["00000000000000D2"]
 			min_width: 250
-			id: "00000000000000CF"
+			id: "52165EC21DD8ABFB"
 			tasks: [{
-				id: "00000000000000D0"
+				id: "6C43F51641A8BB70"
 				type: "item"
 				item: "pneumaticcraft:vortex_tube"
 			}]
 			rewards: [{
-				id: "00000000000000D1"
+				id: "4CF7E22863B404CF"
 				type: "item"
 				title: "Heat Sink"
 				item: "pneumaticcraft:heat_sink"
@@ -316,24 +311,23 @@
 				""
 				"Insulation takes many forms. Most any block that isn’t heat sensitive counts; trap doors, pipes and glass, may all be used. Thermal Lagging, however, tends to be ideal as it still allows Right-Click access to the machine it is install upon."
 			]
-			dependencies: ["7B56DD5D9F4BBB68"]
-			id: "00000000000000D2"
+			id: "011EE483D38C9C23"
 			tasks: [
 				{
-					id: "00000000000000D3"
+					id: "0BF764D71DBB2DA1"
 					type: "item"
 					item: "pneumaticcraft:heat_pipe"
 					count: 6L
 				}
 				{
-					id: "662C133047B676A3"
+					id: "51CB4BC0AB80DA66"
 					type: "item"
 					item: "pneumaticcraft:thermal_lagging"
 					count: 6L
 				}
 			]
 			rewards: [{
-				id: "00099FEE4C17C4F0"
+				id: "29CC4AE5D8D278BA"
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -353,16 +347,15 @@
 				""
 				"Note: When it comes to placement, the small end is the ‘regulated’ end. As with any tube module, a Right-Click will place it pointing away from the side it was clicked on. Sneak + Right-Click will place it on the opposite side of the tube. "
 			]
-			dependencies: ["00000000000000CF"]
 			min_width: 300
-			id: "00000000000000D5"
+			id: "6A0D0EE149F91408"
 			tasks: [{
-				id: "00000000000000D6"
+				id: "6FCA9EB91BB33E7E"
 				type: "item"
 				item: "pneumaticcraft:regulator_tube_module"
 			}]
 			rewards: [{
-				id: "00000000000000D8"
+				id: "42EDFE52FEF7D948"
 				type: "command"
 				title: "Rare PNC:R Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -379,15 +372,14 @@
 				""
 				"In order to cool liquids, fill a PNC:R tank or a bucket and place it inside the inventory. The cooled items will appear in the chest if there's room."
 			]
-			dependencies: ["00000000000000D3"]
-			id: "00000000000000D9"
+			id: "47AFE9BB5B8C4655"
 			tasks: [{
-				id: "00000000000000DA"
+				id: "598785CD3F83C151"
 				type: "item"
 				item: "pneumaticcraft:heat_frame"
 			}]
 			rewards: [{
-				id: "00000000000000DB"
+				id: "0952FFF35BFD54EE"
 				type: "item"
 				title: "Reinforced Chest"
 				item: "pneumaticcraft:reinforced_chest"
@@ -402,22 +394,21 @@
 				""
 				"When reading heat, try aiming it at a heat pipe or a PNC:R machine, rather than at an inventory with a heat frame."
 			]
-			dependencies: ["00000000000000D3"]
-			id: "00000000000000DC"
+			id: "7798C42F46156ECE"
 			tasks: [{
-				id: "00000000000000DD"
+				id: "6EFE971150331862"
 				type: "item"
 				item: "pneumaticcraft:universal_sensor"
 			}]
 			rewards: [
 				{
-					id: "00000000000000DE"
+					id: "4225A74DA201F312"
 					type: "item"
 					title: "Block Tracker Upgrade"
 					item: "pneumaticcraft:block_tracker_upgrade"
 				}
 				{
-					id: "00000000000000DF"
+					id: "2345C95FB18383C8"
 					type: "item"
 					title: "GPS Tool"
 					item: "pneumaticcraft:gps_tool"
@@ -434,23 +425,22 @@
 				""
 				"Place it above a source block of any fluid, insert drill pipes, and provide air. The pipes will extend down to a source, breaking blocks in the way if necessary, and will attempt to pull all nearby connected source blocks."
 			]
-			dependencies: ["00000000000000BF"]
-			id: "00000000000000E2"
+			id: "4BE812408CBFB588"
 			tasks: [
 				{
-					id: "00000000000000E3"
+					id: "278BF9D026EEEC6D"
 					type: "item"
 					item: "pneumaticcraft:gas_lift"
 				}
 				{
-					id: "00000000000000E4"
+					id: "4F62F1E2676A8DDF"
 					type: "item"
 					item: "pneumaticcraft:drill_pipe"
 					count: 12L
 				}
 			]
 			rewards: [{
-				id: "00000000000000E5"
+				id: "47CBFFB4C27B18A9"
 				type: "item"
 				title: "Seismic Sensor"
 				item: "pneumaticcraft:seismic_sensor"
@@ -467,23 +457,22 @@
 				""
 				"Note: A Comparator reading from the Controller will output a signal whenever the Refinery can do work, meaning it has a valid input and has room for the outputs, making it an excellent way of controlling a Vortex Tube efficiently."
 			]
-			dependencies: ["00000000000000D3"]
-			id: "00000000000000E7"
+			id: "77B7A8530C3B3421"
 			tasks: [
 				{
-					id: "00000000000000E8"
+					id: "1337A526608EDFB0"
 					type: "item"
 					item: "pneumaticcraft:refinery"
 				}
 				{
-					id: "00000000000000E9"
+					id: "5354E44458DBF503"
 					type: "item"
 					item: "pneumaticcraft:refinery_output"
 					count: 4L
 				}
 			]
 			rewards: [{
-				id: "000000000000022C"
+				id: "2120D4C24F7F303D"
 				type: "command"
 				title: "Rare PNC:R Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -503,24 +492,23 @@
 				""
 				"Some recipes will require very precise control of heat, for example, being between 30° and 60°. This can be accomplished by regulating the air going into a Vortex Tube by making use of a Universal Sensor to disable the air flow when the block reaches a certain temperature. "
 			]
-			dependencies: ["00000000000000D3"]
-			id: "00000000000000EA"
+			id: "341CD0E12D534A44"
 			tasks: [{
-				id: "00000000000000EB"
+				id: "28A39770D414504E"
 				type: "item"
 				item: "pneumaticcraft:thermopneumatic_processing_plant"
 				count: 4L
 			}]
 			rewards: [
 				{
-					id: "00000000000000EC"
+					id: "27115E85D1071701"
 					type: "item"
 					title: "Cod n Chips"
 					item: "pneumaticcraft:cod_n_chips"
 					count: 16
 				}
 				{
-					id: "00000000000000ED"
+					id: "29296A9922AAC24F"
 					type: "item"
 					title: "Dispenser Upgrade"
 					item: "pneumaticcraft:dispenser_upgrade"
@@ -542,46 +530,45 @@
 				""
 				"Modules must be installed on a pressure tube pointing into the Frame. A small amount of Air is used for every operation, and a minimum of 3 bar is required to function at all. These Modules also have a color-coded channel, allowing for very complex systems over the same tube network. "
 			]
-			dependencies: ["000000000000011D"]
 			min_width: 300
-			id: "000000000000010B"
+			id: "6F9B23BB2F05C9CF"
 			tasks: [{
-				id: "000000000000010C"
+				id: "05D615B75A5D5E7E"
 				type: "item"
 				item: "pneumaticcraft:logistics_module"
 				count: 8L
 			}]
 			rewards: [
 				{
-					id: "000000000000010D"
+					id: "0971F4B903BC0755"
 					type: "item"
 					title: "Logistic Requester Frame"
 					item: "pneumaticcraft:logistics_frame_requester"
 					count: 8
 				}
 				{
-					id: "000000000000010E"
+					id: "5B69B45A7A2CEB1C"
 					type: "item"
 					title: "Logistic Passive Provider Frame"
 					item: "pneumaticcraft:logistics_frame_passive_provider"
 					count: 8
 				}
 				{
-					id: "000000000000010F"
+					id: "3D2E76A2F71FD9F3"
 					type: "item"
 					title: "Logistic Storage Frame"
 					item: "pneumaticcraft:logistics_frame_storage"
 					count: 8
 				}
 				{
-					id: "00000000000006FF"
+					id: "405F63DF3A2DA57F"
 					type: "item"
 					title: "Logistic Active Provider Frame"
 					item: "pneumaticcraft:logistics_frame_active_provider"
 					count: 8
 				}
 				{
-					id: "10CE148DCEEDBE7E"
+					id: "17906620288CD598"
 					type: "item"
 					item: {
 						id: "pneumaticcraft:logistics_configurator"
@@ -599,15 +586,14 @@
 			subtitle: "Who Says You Can't Take It With You?"
 			description: ["A blast resistant chest that retains its contents when broken."]
 			hide_dependency_lines: true
-			dependencies: ["5E79C1011FABC4AF"]
-			id: "0000000000000110"
+			id: "78AA867A347E4A37"
 			tasks: [{
-				id: "0000000000000111"
+				id: "39F7DFB8722C0D56"
 				type: "item"
 				item: "pneumaticcraft:reinforced_chest"
 			}]
 			rewards: [{
-				id: "0000000000000113"
+				id: "620CA924053FE1B1"
 				type: "command"
 				title: "Rare PNC:R Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -620,16 +606,15 @@
 			y: -6.5d
 			subtitle: "Work Smarter, Not Harder"
 			description: ["An advanced version of the Reinforced Chest featuring a larger inventory, per slot item type and quantity filtering, ranged item collection, and the ability to push and pull items to and from nearby inventories."]
-			dependencies: ["00000000000000D3"]
-			id: "0000000000000114"
+			id: "31F1D77166705C31"
 			tasks: [{
-				id: "0000000000000115"
+				id: "559FDDE96388DC40"
 				type: "item"
 				item: "pneumaticcraft:smart_chest"
 			}]
 			rewards: [
 				{
-					id: "0000000000000117"
+					id: "3621E6BD54CDE738"
 					type: "command"
 					title: "Epic PNC:R Loot Box"
 					icon: "kubejs:epic_lootbox"
@@ -637,7 +622,7 @@
 					player_command: false
 				}
 				{
-					id: "0000000000000118"
+					id: "7B999E99D0741012"
 					type: "item"
 					title: "Magnet Upgrade"
 					item: "pneumaticcraft:magnet_upgrade"
@@ -651,22 +636,21 @@
 			y: -5.5d
 			subtitle: "Weird Flex, Bro"
 			description: ["Filterable and fast, PNC:R Hoppers can be oriented however you like and accept multiple useful upgrades. Check their GUI for more info."]
-			dependencies: ["00000000000000D3"]
-			id: "0000000000000119"
+			id: "2B9F6B6CA560D326"
 			tasks: [
 				{
-					id: "000000000000011A"
+					id: "008D9C03C28B8704"
 					type: "item"
 					item: "pneumaticcraft:omnidirectional_hopper"
 				}
 				{
-					id: "000000000000011B"
+					id: "1F4C8424CE84CA8F"
 					type: "item"
 					item: "pneumaticcraft:liquid_hopper"
 				}
 			]
 			rewards: [{
-				id: "000000000000011C"
+				id: "52A67AF1A81A0B58"
 				type: "item"
 				title: "Speed Upgrade"
 				item: "pneumaticcraft:speed_upgrade"
@@ -679,10 +663,9 @@
 			x: -20.5d
 			y: -8.5d
 			description: ["Automation is the heart and soul of PNC:R, and its Logistics, Redstone, and Programming capabilities make up the majority of what it can do."]
-			dependencies: ["00000000000000BF"]
-			id: "000000000000011D"
+			id: "7F36F40E0465B923"
 			tasks: [{
-				id: "7572CC9E6585AC4F"
+				id: "4547231CF39FE5A6"
 				type: "item"
 				title: "Logistics and Programming"
 				icon: "pneumaticcraft:pressure_tube"
@@ -708,7 +691,7 @@
 				}
 			}]
 			rewards: [{
-				id: "0000000000000A7A"
+				id: "4598DFE37D84B116"
 				type: "command"
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
@@ -730,17 +713,16 @@
 				""
 				"By installing such a card into a Module in Emitting mode, several features become available. For example, by making use of the color channels, it can function as an AND gate, OR gate, compare against another channel or against a constant value, and much more. By chaining them together, some truly compact Redstone logic can be made."
 			]
-			dependencies: ["000000000000011D"]
 			min_width: 300
-			id: "0000000000000120"
+			id: "33C871735DD99224"
 			tasks: [{
-				id: "0000000000000121"
+				id: "25B087926548F8F0"
 				type: "item"
 				item: "pneumaticcraft:redstone_module"
 				count: 2L
 			}]
 			rewards: [{
-				id: "0000000000000122"
+				id: "5D3612DC6DF205A4"
 				type: "command"
 				title: "Rare PNC:R Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -765,16 +747,15 @@
 				""
 				"For example, the Redstone control of a Compressor can be greatly compacted by applying a Module Expansion Card to the Pressure Gauge. Set this to output a signal only when the Gauge is below 4.9 bar (or 19.9 bar for advanced), then use a short section of Redstone modules to bring that signal directly to the Compressor. This eliminates the need for the long loop of Redstone suggested earlier."
 			]
-			dependencies: ["000000000000011D"]
 			min_width: 300
-			id: "0000000000000123"
+			id: "600E9DF5041FA21F"
 			tasks: [{
-				id: "0000000000000124"
+				id: "5366CD0611A2224C"
 				type: "item"
 				item: "pneumaticcraft:module_expansion_card"
 			}]
 			rewards: [{
-				id: "0000000000000125"
+				id: "5600DC7079A960F8"
 				type: "command"
 				title: "Legendary PNC:R Loot Box"
 				icon: "kubejs:legendary_lootbox"
@@ -788,10 +769,9 @@
 			subtitle: "Flying Circus"
 			description: ["Logistics Drones are handy little helpers in places where you don’t want to run a full air infrastructure. Experiment with some logistics frames and deploy a logistics drone to move the items for you."]
 			hide_dependency_lines: true
-			dependencies: ["00000000000000BD"]
-			id: "0000000000000126"
+			id: "2BF0EE004239C2AC"
 			tasks: [{
-				id: "0000000000000127"
+				id: "3B8551B48F0F93A4"
 				type: "item"
 				title: "Simple Drones"
 				item: {
@@ -825,7 +805,7 @@
 			}]
 			rewards: [
 				{
-					id: "0000000000000128"
+					id: "312B40790B0E6AE3"
 					type: "command"
 					title: "Epic PNC:R Loot Box"
 					icon: "kubejs:epic_lootbox"
@@ -833,7 +813,7 @@
 					player_command: false
 				}
 				{
-					id: "67E6ED078E250807"
+					id: "27AE33E162A1D6B8"
 					type: "item"
 					item: "pneumaticcraft:inventory_upgrade"
 					count: 4
@@ -853,23 +833,22 @@
 				""
 				"Note: The Charging Station is the POI for Pressure Mechanics. Maybe go make a friend and see what they have to offer."
 			]
-			dependencies: ["00000000000000B3"]
 			min_width: 300
-			id: "000000000000012C"
+			id: "3730F4664875AF9E"
 			tasks: [{
-				id: "000000000000012D"
+				id: "378CFDE8FC3E5363"
 				type: "item"
 				item: "pneumaticcraft:charging_station"
 			}]
 			rewards: [
 				{
-					id: "000000000000012E"
+					id: "18CE044363A25CBD"
 					type: "item"
 					title: "Dispenser Upgrade"
 					item: "pneumaticcraft:dispenser_upgrade"
 				}
 				{
-					id: "0000000000000700"
+					id: "440B5CB8A502E3BF"
 					type: "item"
 					title: "Volume Upgrade"
 					item: "pneumaticcraft:volume_upgrade"
@@ -882,15 +861,14 @@
 			y: -5.5d
 			subtitle: "In Her Time of Need"
 			description: ["Install one or more Item Life Upgrades in a Drone to help them stay in working order. They can occasionally take damage from environmental hazards and these upgrades will cause them to self-repair at the cost of some Air."]
-			dependencies: ["0000000000000126"]
-			id: "000000000000012F"
+			id: "694279B52360ADD9"
 			tasks: [{
-				id: "0000000000000130"
+				id: "406148B6217C1944"
 				type: "item"
 				item: "pneumaticcraft:item_life_upgrade"
 			}]
 			rewards: [{
-				id: "0000000000000131"
+				id: "09056410AC7B4F5E"
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -903,15 +881,14 @@
 			y: -4.5d
 			subtitle: "She's All Alone, All Alone"
 			description: ["Installing a Standby Upgrade in a non-programmable Drone will let it go to sleep when there’s no work to be done. Programmable drones may be programmed to do the same without the need of an upgrade."]
-			dependencies: ["0000000000000126"]
-			id: "0000000000000132"
+			id: "2AF8CE856E0E9D71"
 			tasks: [{
-				id: "0000000000000133"
+				id: "3D07056B2E9FE5B7"
 				type: "item"
 				item: "pneumaticcraft:standby_upgrade"
 			}]
 			rewards: [{
-				id: "0000000000000134"
+				id: "501A756DAB89889A"
 				type: "command"
 				title: "Rare PNC:R Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -924,15 +901,14 @@
 			y: -5.5d
 			subtitle: "He's Going the Distance"
 			description: ["Install a few Range Upgrades in a non-programmable drone to increase the area it covers."]
-			dependencies: ["0000000000000126"]
-			id: "0000000000000138"
+			id: "0C0CF19495038130"
 			tasks: [{
-				id: "0000000000000139"
+				id: "636E74B833DE113E"
 				type: "item"
 				item: "pneumaticcraft:range_upgrade"
 			}]
 			rewards: [{
-				id: "000000000000013A"
+				id: "6FD71C3AAA7C5554"
 				type: "item"
 				title: "Range Upgrade"
 				item: "pneumaticcraft:range_upgrade"
@@ -944,15 +920,14 @@
 			y: -4.5d
 			subtitle: "He's Going for Speed"
 			description: ["Speed things up with a few of these in a Drone. Many other blocks benefit from them as well."]
-			dependencies: ["0000000000000126"]
-			id: "000000000000013B"
+			id: "2CE1808F9FF6F4E6"
 			tasks: [{
-				id: "000000000000013C"
+				id: "64F51201D174AF98"
 				type: "item"
 				item: "pneumaticcraft:speed_upgrade"
 			}]
 			rewards: [{
-				id: "000000000000013D"
+				id: "0459D9273A6BCEB3"
 				type: "item"
 				title: "Speed Upgrade"
 				item: "pneumaticcraft:speed_upgrade"
@@ -976,22 +951,21 @@
 				"● Create a slime farm using milk buckets and green dye"
 				"● Create a transportation network using drones to pick you up and teleport you"
 			]
-			dependencies: ["0000000000000126"]
-			id: "000000000000013E"
+			id: "4BC617E2C8CDEF24"
 			tasks: [
 				{
-					id: "000000000000013F"
+					id: "241C4FF7CA84BE39"
 					type: "item"
 					item: "pneumaticcraft:drone"
 				}
 				{
-					id: "0000000000000141"
+					id: "60AFC2899CB71778"
 					type: "item"
 					item: "pneumaticcraft:programmer"
 				}
 			]
 			rewards: [{
-				id: "0000000000000140"
+				id: "7BB4D8C166E01C91"
 				type: "item"
 				title: "Programming Puzzle Piece"
 				item: "pneumaticcraft:programming_puzzle"
@@ -1003,15 +977,14 @@
 			y: -2.5d
 			subtitle: "Always At Arms Reach"
 			description: ["Remotes are programmable interface devices that work by manipulating global variables. You can use these for remote redstone when combined with a Universal Sensor, or they can be used to control programmable drones."]
-			dependencies: ["000000000000013E"]
-			id: "0000000000000142"
+			id: "60B082796E10B210"
 			tasks: [{
-				id: "0000000000000143"
+				id: "7AB632F4DB89BCE9"
 				type: "item"
 				item: "pneumaticcraft:remote"
 			}]
 			rewards: [{
-				id: "0000000000000144"
+				id: "05534AA4AD901FDD"
 				type: "command"
 				title: "Legendary PNC:R Loot Box"
 				icon: "kubejs:legendary_lootbox"
@@ -1030,15 +1003,14 @@
 				""
 				"Place any payment items in the chest, then complete the order from the Tablet itself. Once submitted, a Drone will appear to extract the payment from the chest. A short time later, a second drone will appear to deposit the purchase in the chest. When purchasing fluids, they’ll be sent to the bound tank instead. "
 			]
-			dependencies: ["00000000000000D3"]
-			id: "0000000000000148"
+			id: "11D246E41A38ECDF"
 			tasks: [{
-				id: "0000000000000149"
+				id: "694D30A4D11B1C83"
 				type: "item"
 				item: "pneumaticcraft:amadron_tablet"
 			}]
 			rewards: [{
-				id: "7DF10C7739565EF2"
+				id: "71C74EE7350259ED"
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -1057,15 +1029,14 @@
 				""
 				"Automating this process is highly recommended."
 			]
-			dependencies: ["00000000000000BF"]
-			id: "000000000000014E"
+			id: "1C2C25D313E77B01"
 			tasks: [{
-				id: "000000000000014F"
+				id: "4E37DFFD81693B09"
 				type: "item"
 				item: "pneumaticcraft:uv_light_box"
 			}]
 			rewards: [{
-				id: "0000000000000150"
+				id: "00C30D5175C69299"
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -1084,15 +1055,14 @@
 				""
 				"The acid is only consumed if heat is applied while etching a board, however, doing so significantly speeds up the process and a single bucket will last for many PCBs."
 			]
-			dependencies: ["00000000000000D3"]
-			id: "0000000000000151"
+			id: "0BBA982A030BA718"
 			tasks: [{
-				id: "0000000000000152"
+				id: "26AA31D24B1863AA"
 				type: "item"
 				item: "pneumaticcraft:etching_tank"
 			}]
 			rewards: [{
-				id: "0000000000000154"
+				id: "506A8F4E18F99E7E"
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -1118,47 +1088,46 @@
 				""
 				"Note: The Drill \\& Laser program allows the Assembly Table to craft recipes that require only a drill or laser. In most cases there’s no reason to use the individual programs."
 			]
-			dependencies: ["00000000000000BF"]
-			id: "0000000000000155"
+			id: "2C9A30956A2044A0"
 			tasks: [
 				{
-					id: "0000000000000157"
+					id: "39256304C4298D2F"
 					type: "item"
 					item: "pneumaticcraft:assembly_io_unit_import"
 				}
 				{
-					id: "0000000000000158"
+					id: "19E0D9C1E5354D91"
 					type: "item"
 					item: "pneumaticcraft:assembly_controller"
 				}
 				{
-					id: "0000000000000159"
+					id: "577EB62DCE88CD01"
 					type: "item"
 					item: "pneumaticcraft:assembly_io_unit_export"
 				}
 				{
-					id: "000000000000015A"
+					id: "50F09710E1BFAEF9"
 					type: "item"
 					item: "pneumaticcraft:assembly_drill"
 				}
 				{
-					id: "000000000000015B"
+					id: "3D44FA9D501C2E3E"
 					type: "item"
 					item: "pneumaticcraft:assembly_platform"
 				}
 				{
-					id: "000000000000015C"
+					id: "494CDB809E9F7ED1"
 					type: "item"
 					item: "pneumaticcraft:assembly_laser"
 				}
 				{
-					id: "14BE9C7C2FC14E65"
+					id: "3B65CED47E97C648"
 					type: "item"
 					item: "pneumaticcraft:assembly_program_drill_laser"
 				}
 			]
 			rewards: [{
-				id: "000000000000015D"
+				id: "33A65EE79C654898"
 				type: "command"
 				title: "Legendary PNC:R Loot Box"
 				icon: "kubejs:legendary_lootbox"
@@ -1176,16 +1145,15 @@
 				""
 				"Stack them vertically and Right-Click with a Pneumatic Wrench to form a multiblock tank."
 			]
-			dependencies: ["00000000000000D3"]
-			id: "000000000000016B"
+			id: "6B98810EDAC8DB0C"
 			tasks: [{
-				id: "000000000000016C"
+				id: "0EAB2205FB361207"
 				type: "item"
 				item: "pneumaticcraft:small_tank"
 				count: 2L
 			}]
 			rewards: [{
-				id: "000000000000016D"
+				id: "0BFF7AA6126076FD"
 				type: "item"
 				title: "Medium Fluid Tank"
 				item: "pneumaticcraft:medium_tank"
@@ -1205,11 +1173,10 @@
 				""
 				"Instead, consider cooling these with Heat Sinks and Air Grates. Three Heat Sinks in direct contact with the Compressor, and several Air Grates set up such that each is blowing at all three Heat Sinks can keep a high-speed Compressor running very cool and at a minor fraction of Air compared to Vortex Tube cooling."
 			]
-			dependencies: ["7F474543CD3E2742"]
 			min_width: 300
-			id: "0000000000000415"
+			id: "34334E03CA719084"
 			tasks: [{
-				id: "0000000000000416"
+				id: "603CE00DC97D2192"
 				type: "item"
 				title: "Advanced Compressors"
 				item: {
@@ -1234,7 +1201,7 @@
 				}
 			}]
 			rewards: [{
-				id: "000000000000063D"
+				id: "14C53EBF59D4E97D"
 				type: "command"
 				title: "Legendary PNC:R Loot Box"
 				icon: "kubejs:legendary_lootbox"
@@ -1253,17 +1220,16 @@
 				""
 				"Tip: Having a second Pressure Chamber under permanent vacuum can be enormously helpful as the Vacuum Chamber can be used to transfer Enchantments from items to books. Likewise, the books may be re-applied to items in a regular Pressure Chamber for a minor expenditure of Air."
 			]
-			dependencies: ["00000000000000B3"]
 			dependency_requirement: "one_completed"
 			min_width: 300
-			id: "0000000000000417"
+			id: "19F79435C6D185E3"
 			tasks: [{
-				id: "0000000000000418"
+				id: "543D0169C84EBE30"
 				type: "item"
 				item: "pneumaticcraft:vacuum_pump"
 			}]
 			rewards: [{
-				id: "0000000000000423"
+				id: "46B99CC6A928D067"
 				type: "item"
 				title: "Memory Stick"
 				item: "pneumaticcraft:memory_stick"
@@ -1290,16 +1256,15 @@
 				""
 				"Note: When the process has finished, Sneak + Right-Click the Extractor with a Pneumatic Wrench to avoid the need to charge from scratch the next time. An extractor with some volume upgrades should be able to extract cores from several spawners before needing to be re-charged. "
 			]
-			dependencies: ["0000000000000417"]
 			min_width: 300
-			id: "0000000000000419"
+			id: "451A77A22E408950"
 			tasks: [{
-				id: "000000000000041A"
+				id: "1DDBE70A2FC13278"
 				type: "item"
 				item: "pneumaticcraft:spawner_extractor"
 			}]
 			rewards: [{
-				id: "0000000000000433"
+				id: "4773CEF61A116EB4"
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -1327,23 +1292,22 @@
 				""
 				"Random mobs may be released from a core by Sneak + Right-Clicking it on the ground, allowing easier transportation of mobs even before the Pressurized Spawner is available. "
 			]
-			dependencies: ["0000000000000417"]
 			min_width: 250
-			id: "000000000000041B"
+			id: "40BD357818C3FC4B"
 			tasks: [
 				{
-					id: "000000000000041C"
+					id: "20D3B02690AA1ED2"
 					type: "item"
 					item: "pneumaticcraft:vacuum_trap"
 				}
 				{
-					id: "0000000000000422"
+					id: "41F20BAC1A7A8ED0"
 					type: "item"
 					item: "pneumaticcraft:spawner_core"
 				}
 			]
 			rewards: [{
-				id: "0000000000000434"
+				id: "71E7B2F1A0C4BCF2"
 				type: "command"
 				title: "Legendary PNC:R Loot Box"
 				icon: "kubejs:legendary_lootbox"
@@ -1360,15 +1324,14 @@
 				""
 				"Note: Consider keeping a spare empty spawner at your base. The Spawner Extractor can be placed atop it to simplify recharging it for future projects."
 			]
-			dependencies: ["0000000000000419"]
-			id: "000000000000041F"
+			id: "25943200D2F3A8C5"
 			tasks: [{
-				id: "0000000000000420"
+				id: "311FEA33F7200CF4"
 				type: "item"
 				item: "pneumaticcraft:pressurized_spawner"
 			}]
 			rewards: [{
-				id: "0000000000000432"
+				id: "1FEB1F3B27ED6C3E"
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -1383,10 +1346,9 @@
 			y: -8.5d
 			subtitle: "You Can Touch, You Can Play"
 			description: ["Beyond machines and logistics, PNC:R offers a number of very useful tools, armor, and utility devices. "]
-			dependencies: ["00000000000000BF"]
-			id: "5E79C1011FABC4AF"
+			id: "32D56D0E1A7E8DAC"
 			tasks: [{
-				id: "38BA4E657128DF03"
+				id: "3812A5C0C325C4CA"
 				type: "item"
 				title: "Tools and Utility"
 				icon: "pneumaticcraft:pressure_tube"
@@ -1412,7 +1374,7 @@
 				}
 			}]
 			rewards: [{
-				id: "0935B424D541C0A9"
+				id: "2B4ADC90E329AD37"
 				type: "item"
 				item: {
 					id: "pneumaticcraft:camo_applicator"
@@ -1434,16 +1396,15 @@
 				""
 				"When connected to a pressure line in a vacuum, the Air Grate also doubles as an item collector, pulling items and other entities towards it. Items pulled all the way to it will be inserted into any adjacent inventories. "
 			]
-			dependencies: ["00000000000000D2"]
-			id: "7F474543CD3E2742"
+			id: "3EFFC773FB6104ED"
 			tasks: [
 				{
-					id: "562CE211D55A5917"
+					id: "2F3872182DE0552B"
 					type: "item"
 					item: "pneumaticcraft:heat_sink"
 				}
 				{
-					id: "3D0FBF58D4043808"
+					id: "203BC2C64168D2C7"
 					type: "item"
 					item: "pneumaticcraft:air_grate_module"
 				}
@@ -1487,11 +1448,10 @@
 				"● Swim Speed"
 				"● Creative Flight"
 			]
-			dependencies: ["00000000000000D3"]
-			id: "24618E75ADD613FB"
+			id: "4023F483F5859ABE"
 			tasks: [
 				{
-					id: "497F07F140608A8A"
+					id: "54F6FEA6017FA1A3"
 					type: "item"
 					item: {
 						id: "pneumaticcraft:pneumatic_helmet"
@@ -1502,7 +1462,7 @@
 					}
 				}
 				{
-					id: "4A414B37CF20375E"
+					id: "406C722BC077C13F"
 					type: "item"
 					item: {
 						id: "pneumaticcraft:pneumatic_chestplate"
@@ -1513,7 +1473,7 @@
 					}
 				}
 				{
-					id: "0809898F780F7BBD"
+					id: "0D6070EB3A5012AD"
 					type: "item"
 					item: {
 						id: "pneumaticcraft:pneumatic_leggings"
@@ -1524,7 +1484,7 @@
 					}
 				}
 				{
-					id: "2D4527C6B0B16336"
+					id: "41A9A6E8911D79B0"
 					type: "item"
 					item: {
 						id: "pneumaticcraft:pneumatic_boots"
@@ -1537,7 +1497,7 @@
 			]
 			rewards: [
 				{
-					id: "0000000000000650"
+					id: "45F1066AD1B2C401"
 					type: "command"
 					title: "Epic PNC:R Loot Box"
 					icon: "kubejs:epic_lootbox"
@@ -1545,7 +1505,7 @@
 					player_command: false
 				}
 				{
-					id: "70699570CCD39B0A"
+					id: "0C55EECDCDE4C01C"
 					type: "command"
 					title: "Epic PNC:R Loot Box"
 					icon: "kubejs:epic_lootbox"
@@ -1553,7 +1513,7 @@
 					player_command: false
 				}
 				{
-					id: "672F3689E3C2339A"
+					id: "320E3090BF091078"
 					type: "command"
 					title: "Epic PNC:R Loot Box"
 					icon: "kubejs:epic_lootbox"
@@ -1561,7 +1521,7 @@
 					player_command: false
 				}
 				{
-					id: "62C0239DB29248EF"
+					id: "0CE417ED326B8137"
 					type: "command"
 					title: "Epic PNC:R Loot Box"
 					icon: "kubejs:epic_lootbox"
@@ -1579,22 +1539,21 @@
 				""
 				"Accepts Fortune or Silk Touch books."
 			]
-			dependencies: ["00000000000000D3"]
-			id: "4278BFAD291E036E"
+			id: "4DB935C9023BE022"
 			tasks: [{
-				id: "2E55FBA7E807FBF4"
+				id: "215DF4ECB6072D79"
 				type: "item"
 				item: "pneumaticcraft:jackhammer"
 			}]
 			rewards: [
 				{
-					id: "00000000000001C8"
+					id: "66EDA689BD443386"
 					type: "item"
 					title: "Compressed Iron Drill Bit"
 					item: "pneumaticcraft:drill_bit_compressed_iron"
 				}
 				{
-					id: "0000000000000A58"
+					id: "3585331031C74F01"
 					type: "command"
 					title: "Scavenger's Delight"
 					icon: "kubejs:scavengers_delight"
@@ -1608,15 +1567,14 @@
 			y: -3.5d
 			subtitle: "Stand and Deliver"
 			description: ["A smart turret that can be filtered to attack only certain creatures. For instance, only adult animals. "]
-			dependencies: ["00000000000000D3"]
-			id: "18953A6862AFCAAA"
+			id: "738C5B461AAEBDA7"
 			tasks: [{
-				id: "5E6B9C24EA7622A2"
+				id: "158359A805347117"
 				type: "item"
 				item: "pneumaticcraft:sentry_turret"
 			}]
 			rewards: [{
-				id: "0000000000000868"
+				id: "30C7FE88AE977339"
 				type: "item"
 				title: "Armor-Piercing Minigun Ammo"
 				item: {
@@ -1641,15 +1599,14 @@
 				""
 				"Add a Security Upgrade to prevent it from harming tamed creatures and fellow players."
 			]
-			dependencies: ["00000000000000D3"]
-			id: "7DBC7707618B7B45"
+			id: "6E6FC569FE823C92"
 			tasks: [{
-				id: "7D4A48B38E6E013F"
+				id: "1551C0D6DB15C9E7"
 				type: "item"
 				item: "pneumaticcraft:minigun"
 			}]
 			rewards: [{
-				id: "0000000000000867"
+				id: "4B4D3D2CDAAC172C"
 				type: "item"
 				title: "Minigun Ammo"
 				item: {
@@ -1674,10 +1631,9 @@
 				""
 				"Micromissiles are target seeking explosives. They do no damage to the terrain and can be configured for varying degrees of explosive damage, travel speed, and turn speed. Sneak Right-Click to configure."
 			]
-			dependencies: ["00000000000000D3"]
-			id: "3753EF6387AEA9AB"
+			id: "7228CB144D83D28F"
 			tasks: [{
-				id: "218E9A870C559B32"
+				id: "5A9880172381AF71"
 				type: "item"
 				item: {
 					id: "pneumaticcraft:micromissiles"
@@ -1688,7 +1644,7 @@
 				}
 			}]
 			rewards: [{
-				id: "0000000000000A56"
+				id: "0AF178227D43E923"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -1701,15 +1657,14 @@
 			y: -5.5d
 			subtitle: "Reach for the sky!"
 			description: ["Crop Supports promote healthy plant growth, increasing how quickly they grow. "]
-			dependencies: ["00000000000000D3"]
-			id: "181A40B9D19B50E3"
+			id: "318DFB6006EB5CC5"
 			tasks: [{
-				id: "6B3AD23FDD8CA720"
+				id: "7DBBDF18FF73F327"
 				type: "item"
 				item: "pneumaticcraft:crop_support"
 			}]
 			rewards: [{
-				id: "28F5EF7AA3A9A155"
+				id: "624B43310C57D3AF"
 				type: "command"
 				title: "Rare PNC:R Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -1730,27 +1685,26 @@
 				""
 				"For more information, refer to the PNC:R manual."
 			]
-			dependencies: ["00000000000000D3"]
-			id: "3137E183B0F0A8BD"
+			id: "07348A594F53E20F"
 			tasks: [
 				{
-					id: "43E02C86A70028CC"
+					id: "0D40D8A30E373F43"
 					type: "item"
 					item: "pneumaticcraft:elevator_base"
 				}
 				{
-					id: "35D7080558AD581C"
+					id: "1CCA7FB5D25FD689"
 					type: "item"
 					item: "pneumaticcraft:elevator_frame"
 				}
 				{
-					id: "6529DE6D54FCA6A4"
+					id: "1315EE038A39A303"
 					type: "item"
 					item: "pneumaticcraft:elevator_caller"
 				}
 			]
 			rewards: [{
-				id: "7593EC8DA1751738"
+				id: "1C96B75BC65D3936"
 				type: "command"
 				title: "Epic PNC:R Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -1762,15 +1716,14 @@
 			x: -10.0d
 			y: -4.5d
 			description: ["While capable of doing damage with launched TNT or Arrows, perhaps more interestingly, the Air Cannon can be used for transporting items, mobs, or simply tossing things on the ground for in-world crafting with a flair. "]
-			dependencies: ["00000000000000D3"]
-			id: "26B546F045E43BDE"
+			id: "2F2DFDE1AF2C7CC2"
 			tasks: [{
-				id: "454C415AAF527DCF"
+				id: "67B5DD98EB8424A5"
 				type: "item"
 				item: "pneumaticcraft:air_cannon"
 			}]
 			rewards: [{
-				id: "3B79641BF92B19FF"
+				id: "03A761B743DDD4FD"
 				type: "command"
 				title: "Rare PNC:R Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -1782,15 +1735,14 @@
 			x: -20.5d
 			y: -6.5d
 			description: ["When placed on the side of an inventory or a tank, the Transfer Gadget facilitates the transfer of items and fluids into any adjacent tank. It is a bit slow, but has the benefit of not requiring a block space. "]
-			dependencies: ["000000000000011D"]
-			id: "32629D82E446D70B"
+			id: "357E818321B68CEE"
 			tasks: [{
-				id: "2A6FAC02192749CE"
+				id: "5BEA30C650A77769"
 				type: "item"
 				item: "pneumaticcraft:transfer_gadget"
 			}]
 			rewards: [{
-				id: "16E0D7FE6BE0B32B"
+				id: "15748F8C017B2B45"
 				type: "command"
 				title: "Rare PNC:R Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -1809,15 +1761,14 @@
 				""
 				"In addition to this, with a Dispenser Upgrade installed it can automatically feed the player, or interface with their XP, allowing it to be piped in and out as Memory Essence. "
 			]
-			dependencies: ["00000000000000D3"]
-			id: "3E610B40E09B7D7D"
+			id: "2861AD0EB02F37A2"
 			tasks: [{
-				id: "57145B603FE1D996"
+				id: "4A701F7EA5F5A104"
 				type: "item"
 				item: "pneumaticcraft:aerial_interface"
 			}]
 			rewards: [{
-				id: "3B21A700E61C1016"
+				id: "3A10D0CC45A7D514"
 				type: "command"
 				title: "Legendary PNC:R Loot Box"
 				icon: "kubejs:legendary_lootbox"
@@ -1848,12 +1799,11 @@
 				""
 				"A Classify Filter may also be used for filtering broad categories of items. For instance, all furnace fuel, all unstackable items, all enchanted items, or anything that may be cooked in a furnace."
 			]
-			dependencies: ["000000000000010B"]
 			min_width: 300
-			id: "5927D60D8AC86FAA"
+			id: "72A73E10358253E8"
 			tasks: [
 				{
-					id: "42A5A2FDB26083E5"
+					id: "5FF6B6605886B59D"
 					type: "item"
 					item: {
 						id: "pneumaticcraft:classify_filter"
@@ -1867,7 +1817,7 @@
 					}
 				}
 				{
-					id: "4765C6F27CD262A1"
+					id: "5119730D4A3EAA91"
 					type: "item"
 					item: "pneumaticcraft:tag_workbench"
 				}

@@ -245,6 +245,13 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:solar_neutron_activator' },
         { id: 'mekanism:isotopic_centrifuge' },
         { id: 'mekanism:robit' },
+        { id: 'mekanism:thermal_evaporation_block' },
+        { id: 'mekanism:thermal_evaporation_valve' },
+        { id: 'mekanism:thermal_evaporation_controller' },
+        { id: 'mekanism:boiler_casing' },
+        { id: 'mekanism:boiler_valve' },
+        { id: 'mekanism:pressure_disperser' },
+        { id: 'mekanism:superheating_element' },
 
         { id: 'minecraft:netherite_ingot' },
         { id: 'minecraft:lodestone' },

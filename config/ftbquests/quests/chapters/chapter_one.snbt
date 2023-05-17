@@ -5,7 +5,6 @@
 	filename: "chapter_one"
 	title: "Chapter One"
 	icon: "naturesaura:ancient_sapling"
-	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -19,6 +18,8 @@
 				""
 				"Undoubtedly many of these mounds remain. Seek them out, though beware that in the absence of the Grove, others may have claimed these places for themselves. "
 			]
+			dependencies: ["2CCCDD05AED3153F"]
+			hide: true
 			id: "1075F3BAA03841EF"
 			tasks: [
 				{
@@ -60,6 +61,8 @@
 				""
 				"With its defeat, the Fae that call this place home will undoubtedly show their gratitude. "
 			]
+			dependencies: ["2CCCDD05AED3153F"]
+			hide: true
 			id: "73CDA6ED2393DE42"
 			tasks: [{
 				id: "34B9CD591F64D0B0"
@@ -776,6 +779,8 @@
 			y: -0.5d
 			shape: "hexagon"
 			description: ["Perhaps paying a visit to the local mage tower will turn up more information, or at least more useful tools to assist in restoring the Tree of Life?"]
+			dependencies: ["2CCCDD05AED3153F"]
+			hide: true
 			id: "370C40BCC3A6A055"
 			tasks: [
 				{

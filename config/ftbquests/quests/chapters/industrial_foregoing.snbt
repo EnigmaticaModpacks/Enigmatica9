@@ -1,7 +1,7 @@
 {
 	id: "0000000000000003"
 	group: "72A9465344128AF9"
-	order_index: 3
+	order_index: 4
 	filename: "industrial_foregoing"
 	title: "Industrial Foregoing"
 	icon: "industrialforegoing:latex_processing_unit"
@@ -12,14 +12,24 @@
 			title: "Industrial Foregoing"
 			icon: "industrialforegoing:plastic"
 			x: 1.5d
-			y: -9.0d
-			shape: "hexagon"
+			y: -8.5d
+			shape: "gear"
 			description: ["Industrial Foregoing provides a wide range of machines to automate various farming related tasks. From growing plants and breeding animals, to duplicating mobs and drilling for resources."]
+			dependencies: ["0E45018D600614BA"]
+			hide: true
 			id: "000000000000004A"
 			tasks: [{
-				id: "452B662F54BEAD8D"
+				id: "6EBA20DFD2DD25E2"
 				type: "item"
-				item: "industrialforegoing:machine_frame_pity"
+				title: "Any Tool"
+				icon: "industrialforegoing:machine_frame_pity"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:tools"
+					}
+				}
 			}]
 			rewards: [
 				{
@@ -127,10 +137,7 @@
 				""
 				"The Dissolution Chamber takes this process somewhat further, by dissolving the materials together and then systematically rebuilding something entirely new from the soup. "
 			]
-			dependencies: [
-				"000000000000004C"
-				"000000000000004F"
-			]
+			dependencies: ["000000000000004F"]
 			id: "0000000000000057"
 			tasks: [{
 				id: "000000000000006B"
@@ -245,7 +252,8 @@
 				""
 				"The Enchantment Extractor will remove a random enchantment from an item, preserving both the item and the enchantment by transferring it to a Book. "
 			]
-			dependencies: ["19EC4F3DB2126BBB"]
+			hide_dependency_lines: true
+			dependencies: ["7B6BB08B8455B4F9"]
 			id: "000000000000007C"
 			tasks: [
 				{
@@ -316,7 +324,8 @@
 				""
 				"For example, Cobble could be crushed to Gravel, then Sand, and finally smelted into Glass. "
 			]
-			dependencies: ["19EC4F3DB2126BBB"]
+			hide_dependency_lines: true
+			dependencies: ["7B6BB08B8455B4F9"]
 			id: "000000000000007E"
 			tasks: [{
 				id: "000000000000007F"
@@ -341,7 +350,7 @@
 				""
 				"Biofuel can be used to make power with the Biofuel Generator or to run Infinity tools."
 			]
-			dependencies: ["69566D2DE7D9DEA7"]
+			dependencies: ["2E7ED909FEF6DD65"]
 			id: "0000000000000080"
 			tasks: [{
 				id: "0000000000000081"
@@ -382,10 +391,7 @@
 				""
 				"Right-Click on a tank of Biofuel to fill it. "
 			]
-			dependencies: [
-				"69566D2DE7D9DEA7"
-				"0000000000000080"
-			]
+			dependencies: ["0000000000000080"]
 			id: "0000000000000082"
 			tasks: [{
 				id: "0000000000000083"
@@ -476,7 +482,8 @@
 				""
 				"Sneaking while standing on them will prevent the player from being carried along. "
 			]
-			dependencies: ["267BA0943DEBAA85"]
+			hide_dependency_lines: true
+			dependencies: ["13E239759123405E"]
 			id: "0000000000000088"
 			tasks: [
 				{
@@ -515,7 +522,8 @@
 				""
 				"In order to work, the Generators and Reactor must be placed by the same player. Only one set per player will work. The Reactor itself will continue to operate so long as all the Generators are producing power. "
 			]
-			dependencies: ["19EC4F3DB2126BBB"]
+			hide_dependency_lines: true
+			dependencies: ["7B6BB08B8455B4F9"]
 			id: "0000000000000EE3"
 			tasks: [
 				{
@@ -553,10 +561,7 @@
 				""
 				"When filled with Liquid Meat, it will automatically feed the player."
 			]
-			dependencies: [
-				"69566D2DE7D9DEA7"
-				"0000000000000080"
-			]
+			dependencies: ["0000000000000080"]
 			id: "0000000000000F05"
 			tasks: [{
 				id: "0000000000000F06"
@@ -623,10 +628,7 @@
 				""
 				"Right-Click on a tank of Biofuel to fill it. "
 			]
-			dependencies: [
-				"69566D2DE7D9DEA7"
-				"0000000000000080"
-			]
+			dependencies: ["0000000000000080"]
 			id: "0000000000000F07"
 			tasks: [{
 				id: "0000000000000F08"
@@ -700,10 +702,7 @@
 				""
 				"Right-Click on a tank of Biofuel to fill it. "
 			]
-			dependencies: [
-				"69566D2DE7D9DEA7"
-				"0000000000000080"
-			]
+			dependencies: ["0000000000000080"]
 			id: "0000000000000F09"
 			tasks: [{
 				id: "0000000000000F0A"
@@ -775,10 +774,7 @@
 				""
 				"Right-Click on a tank of Biofuel to fill it. "
 			]
-			dependencies: [
-				"69566D2DE7D9DEA7"
-				"0000000000000080"
-			]
+			dependencies: ["0000000000000080"]
 			id: "0000000000000F0B"
 			tasks: [{
 				id: "0000000000000F0C"
@@ -844,7 +840,8 @@
 			x: 4.5d
 			y: 1.0d
 			description: ["A block capable of storing big amounts of an item, you can insert or extract items by interacting with the front."]
-			dependencies: ["267BA0943DEBAA85"]
+			hide_dependency_lines: true
+			dependencies: ["13E239759123405E"]
 			id: "0000000000000F10"
 			tasks: [{
 				id: "0000000000000F11"
@@ -893,7 +890,8 @@
 			x: 6.5d
 			y: 1.0d
 			description: ["A block capable of storing big amounts of a fluid."]
-			dependencies: ["267BA0943DEBAA85"]
+			hide_dependency_lines: true
+			dependencies: ["13E239759123405E"]
 			id: "0000000000000F1A"
 			tasks: [{
 				id: "0000000000000F1B"
@@ -940,9 +938,10 @@
 		}
 		{
 			x: 5.5d
-			y: 2.0d
+			y: 0.5d
 			description: ["A block that can contain up to sixteen Black Hole Units or Tanks and make their contents accessible to automation."]
-			dependencies: ["267BA0943DEBAA85"]
+			hide_dependency_lines: true
+			dependencies: ["13E239759123405E"]
 			id: "0000000000000F24"
 			tasks: [{
 				id: "0000000000000F25"
@@ -1033,8 +1032,10 @@
 			icon: "industrialforegoing:plastic"
 			x: -1.5d
 			y: -7.0d
+			shape: "hexagon"
 			description: ["Plastic is a critical resource for many endeavors in Industrial Foregoing. Processing it down from Latex will take some time, however, so setting up some basic automation is going to be helpful in the long run. "]
-			dependencies: ["452B662F54BEAD8D"]
+			hide_dependency_lines: true
+			dependencies: ["000000000000004A"]
 			id: "1ABAC3F1FBB01AA9"
 			tasks: [{
 				id: "6EBED7E976CA0FB3"
@@ -1053,8 +1054,10 @@
 			icon: "industrialforegoing:mob_imprisonment_tool"
 			x: 4.5d
 			y: -7.0d
+			shape: "hexagon"
 			description: ["For more advanced machinery, fluids such as Liquid Meat, Pink Slime, and Ether Gas will be required. These may be obtained by processing mobs through various methods. "]
-			dependencies: ["452B662F54BEAD8D"]
+			hide_dependency_lines: true
+			dependencies: ["000000000000004A"]
 			id: "4217AB14E65F5524"
 			tasks: [{
 				id: "12AE3A01DCDEF828"
@@ -1075,13 +1078,23 @@
 			icon: "minecraft:wheat"
 			x: 1.5d
 			y: -7.0d
+			shape: "hexagon"
 			description: ["Industrial Foregoing comes with a variety of machines to help simplify crop farming. "]
-			dependencies: ["452B662F54BEAD8D"]
+			hide_dependency_lines: true
+			dependencies: ["000000000000004A"]
 			id: "16D2CB00189CDD9E"
 			tasks: [{
-				id: "134B21E7ADB38C4D"
+				id: "62E58089B0388B89"
 				type: "item"
-				item: "industrialforegoing:machine_frame_pity"
+				title: "Any Tool"
+				icon: "industrialforegoing:machine_frame_pity"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:tools"
+					}
+				}
 			}]
 			rewards: [{
 				id: "39966E85E0E9E299"
@@ -1095,13 +1108,23 @@
 			icon: "industrialforegoing:straw"
 			x: 5.5d
 			y: -1.0d
+			shape: "hexagon"
 			description: ["While it focuses more on mob and material processing, Industrial Foregoing also offers a number of tools for storing and moving items and fluids. "]
-			dependencies: ["452B662F54BEAD8D"]
+			hide_dependency_lines: true
+			dependencies: ["000000000000004A"]
 			id: "13E239759123405E"
 			tasks: [{
-				id: "267BA0943DEBAA85"
+				id: "4D862E363B06B2DF"
 				type: "item"
-				item: "industrialforegoing:machine_frame_pity"
+				title: "Any Tool"
+				icon: "industrialforegoing:machine_frame_pity"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:tools"
+					}
+				}
 			}]
 			rewards: [{
 				id: "237A67715D34F6C0"
@@ -1117,13 +1140,23 @@
 			icon: "industrialforegoing:meat_feeder"
 			x: -2.5d
 			y: -1.0d
+			shape: "hexagon"
 			description: ["Far from just machines, Industrial Foregoing has a number of utility tools to cover many needs."]
-			dependencies: ["452B662F54BEAD8D"]
+			hide_dependency_lines: true
+			dependencies: ["000000000000004A"]
 			id: "2E7ED909FEF6DD65"
 			tasks: [{
-				id: "69566D2DE7D9DEA7"
+				id: "2BA423123014C8B7"
 				type: "item"
-				item: "industrialforegoing:machine_frame_pity"
+				title: "Any Tool"
+				icon: "industrialforegoing:machine_frame_pity"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:tools"
+					}
+				}
 			}]
 			rewards: [{
 				id: "545227BDC3D56D52"
@@ -1144,7 +1177,8 @@
 				""
 				"Speed Addons will make Transporters operatate more quickly, while Efficiency Addons will allow them to move more per operation."
 			]
-			dependencies: ["267BA0943DEBAA85"]
+			hide_dependency_lines: true
+			dependencies: ["13E239759123405E"]
 			id: "0C2C4BCB834F0FF6"
 			tasks: [{
 				id: "486BA7F39E15AFF4"
@@ -1288,7 +1322,7 @@
 				""
 				"By providing a small amount of Ether Gas, it will even automatically harvest the crop its growing. "
 			]
-			dependencies: ["134B21E7ADB38C4D"]
+			dependencies: ["16D2CB00189CDD9E"]
 			id: "12F279A5A93AAD43"
 			tasks: [{
 				id: "43FC4B011ABB08C9"
@@ -1313,7 +1347,7 @@
 				""
 				"The Spores Recreator assists by maintaining those conditions internally, providing optimal growing conditions for mushrooms of all types. A small amount of Water is required for normal mushrooms, while some Lava is required for mushrooms native to the Nether. "
 			]
-			dependencies: ["134B21E7ADB38C4D"]
+			dependencies: ["16D2CB00189CDD9E"]
 			id: "63956867B89A6AF0"
 			tasks: [{
 				id: "595E4F56544EC927"
@@ -1354,13 +1388,23 @@
 			title: "Advanced Material Processing"
 			x: 1.5d
 			y: -2.0d
+			shape: "hexagon"
 			description: ["It isn’t all just mob mashing… well, maybe it is? Industrial Foregoing offers a… unique take on ore processing, as well as machines to assist with extraction of said ores and other materials. "]
-			dependencies: ["452B662F54BEAD8D"]
+			hide_dependency_lines: true
+			dependencies: ["000000000000004A"]
 			id: "7B6BB08B8455B4F9"
 			tasks: [{
-				id: "19EC4F3DB2126BBB"
+				id: "3CFA15B21DDD81CE"
 				type: "item"
-				item: "industrialforegoing:machine_frame_advanced"
+				title: "Any Tool"
+				icon: "industrialforegoing:machine_frame_advanced"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:hoes"
+					}
+				}
 			}]
 			rewards: [{
 				id: "37E1065325FCB784"
@@ -1380,7 +1424,8 @@
 				""
 				"Once Washed in Meat, the resulting concoction is passed through a Fermentation Station and finally a Sieving Machine that helps remove the metals from the rest."
 			]
-			dependencies: ["19EC4F3DB2126BBB"]
+			hide_dependency_lines: true
+			dependencies: ["7B6BB08B8455B4F9"]
 			id: "42D497134B15C45A"
 			tasks: [
 				{
@@ -1414,7 +1459,8 @@
 			x: 2.5d
 			y: -1.0d
 			subtitle: "If Memory Serves"
-			dependencies: ["19EC4F3DB2126BBB"]
+			hide_dependency_lines: true
+			dependencies: ["7B6BB08B8455B4F9"]
 			id: "16168AFBB631AC8A"
 			tasks: [
 				{

@@ -5,7 +5,6 @@
 	filename: "chapter_three"
 	title: "Chapter Three"
 	icon: "minecraft:echo_shard"
-	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -47,6 +46,8 @@
 			x: 0.0d
 			y: -4.0d
 			description: ["Obtain a Sculk Catalyst from a Warden"]
+			dependencies: ["2CCCDD05AED3153F"]
+			hide: true
 			id: "3037BC1A3EC6EFF2"
 			tasks: [{
 				id: "719C40D73FB92E13"
@@ -80,6 +81,8 @@
 			x: 3.5d
 			y: -2.5d
 			description: ["overworld"]
+			hide_dependency_lines: true
+			dependencies: ["3037BC1A3EC6EFF2"]
 			id: "3068A215C086E868"
 			tasks: [{
 				id: "066C9D662E76A149"
@@ -91,6 +94,8 @@
 			x: 4.0d
 			y: -4.0d
 			description: ["Nether"]
+			hide_dependency_lines: true
+			dependencies: ["3037BC1A3EC6EFF2"]
 			id: "73DB3A4227A5D15F"
 			tasks: [{
 				id: "34A1FBEF968C5B35"
@@ -102,6 +107,8 @@
 			x: 4.0d
 			y: -1.0d
 			description: ["The End"]
+			hide_dependency_lines: true
+			dependencies: ["3037BC1A3EC6EFF2"]
 			id: "2F3336F7EF512CFC"
 			tasks: [{
 				id: "0BEDD3E154EE059F"
@@ -113,6 +120,8 @@
 			x: 4.5d
 			y: -2.5d
 			description: ["Overworld"]
+			hide_dependency_lines: true
+			dependencies: ["3037BC1A3EC6EFF2"]
 			id: "533CEBC3E32C6C0C"
 			tasks: [{
 				id: "7E0DDF5DDA7DE6B8"
