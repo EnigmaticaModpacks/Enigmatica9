@@ -1,27 +1,18 @@
 ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/enigmatica/';
     const recipes = [
-        // {
-        //     outputs: { primary: { item: 'kubejs:amethyst_dust', count: 1, chance: 1.0 } },
-        //     input: '#forge:gems/amethyst',
-        //     experience: 0.2,
-        //     duration: 20,
-        //     energy: 1000,
-        //     ignore_occultism_multiplier: true,
-        //     id_suffix: `amethyst_dust_from_amethyst`
-        // }
+        {
+            outputs: { primary: { item: 'immersiveengineering:slag_gravel', count: 1, chance: 1.0 } },
+            input: '#forge:slag',
+            experience: 0.2,
+            duration: 20,
+            energy: 1000,
+            ignore_occultism_multiplier: true,
+            id_suffix: `slag_gravel`
+        }
     ];
 
     const recipetypes_crushing = (event, recipe) => {
-        // Mekanism
-        event
-            .custom({
-                type: 'mekanism:crushing',
-                input: { ingredient: Ingredient.of(recipe.input).toJson() },
-                output: Item.of(recipe.outputs.primary.item, recipe.outputs.primary.count).toJson()
-            })
-            .id(`${id_prefix}mekanism_crushing/${recipe.id_suffix}`);
-
         // Immersive Engineering
         let immersiveengineering_secondaries = [];
         if (recipe.outputs.secondary) {

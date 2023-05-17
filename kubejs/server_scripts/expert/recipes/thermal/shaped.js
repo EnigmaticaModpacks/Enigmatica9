@@ -369,7 +369,7 @@ ServerEvents.recipes((event) => {
                 C: 'pneumaticcraft:printed_circuit_board',
                 D: '#industrialforegoing:machine_frame/advanced',
                 E: '#forge:gears/steel',
-                F: '#forge:essences/earth'
+                F: 'create:depot'
             },
             id: 'thermal:machine_pulverizer'
         },
@@ -382,9 +382,97 @@ ServerEvents.recipes((event) => {
                 C: 'pneumaticcraft:printed_circuit_board',
                 D: '#industrialforegoing:machine_frame/advanced',
                 E: '#forge:gears/steel',
-                F: '#forge:essences/earth'
+                F: 'create:depot'
             },
             id: 'thermal:machine_sawmill'
+        },
+        {
+            output: 'thermal:machine_press',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'create:metal_bracket',
+                B: 'create:mechanical_press',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: '#forge:gears/steel',
+                F: 'create:depot'
+            },
+            id: 'thermal:machine_press'
+        },
+        {
+            output: 'thermal:machine_insolator',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'thermal:phytosoil',
+                B: 'immersiveengineering:light_bulb',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: '#forge:gears/electrum',
+                F: 'thermal:device_soil_infuser'
+            },
+            id: 'thermal:machine_insolator'
+        },
+        {
+            output: 'thermal:machine_crystallizer',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'ae2:quartz_growth_accelerator',
+                B: '#forge:plastic',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: '#forge:gears/electrum',
+                E: '#forge:essences/water'
+            },
+            id: 'thermal:machine_crystallizer'
+        },
+        {
+            output: 'thermal:machine_crafter',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'create:crafting_blueprint',
+                B: '#forge:plastic',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: '#forge:gears/compressed_iron',
+                E: '#forge:essences/manipulation'
+            },
+            id: 'thermal:machine_crafter'
+        },
+        {
+            output: 'thermal:machine_centrifuge',
+            pattern: ['FAG', 'BCB', 'DED'],
+            key: {
+                A: 'immersiveengineering:turntable',
+                B: '#forge:plastic',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: '#forge:gears/compressed_iron',
+                E: '#forge:essences/air',
+                F: 'minecraft:barrel',
+                G: 'thermal:fluid_cell_frame'
+            },
+            id: 'thermal:machine_centrifuge'
+        },
+        {
+            output: 'thermal:machine_pyrolyzer',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'minecraft:blast_furnace',
+                B: '#forge:plastic',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: 'immersiveengineering:blastbrick_reinforced',
+                E: 'thermal:fluid_cell_frame'
+            },
+            id: 'thermal:machine_pyrolyzer'
+        },
+        {
+            output: 'thermal:machine_refinery',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'pneumaticcraft:refinery',
+                B: 'pneumaticcraft:refinery_output',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: '#forge:gears/compressed_iron',
+                E: '#forge:essences/fire'
+            },
+            id: 'thermal:machine_refinery'
         }
     ];
 

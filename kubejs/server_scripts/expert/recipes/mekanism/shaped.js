@@ -177,6 +177,25 @@ ServerEvents.recipes((event) => {
             },
             id: 'mekanism:pressurized_reaction_chamber'
         },
+        {
+            output: 'mekanism:laser_tractor_beam',
+            pattern: ['B', 'A'],
+            key: {
+                A: 'pneumaticcraft:smart_chest',
+                B: 'mekanism:laser_amplifier'
+            },
+            id: 'mekanism:laser_tractor_beam'
+        },
+        {
+            output: 'mekanism:laser_amplifier',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:plates/steel',
+                B: '#forge:gems/infused_diamond',
+                C: 'thermal:machine_frame'
+            },
+            id: 'mekanism:laser_amplifier'
+        },
 
         // Placeholder recipes
 
@@ -192,16 +211,6 @@ ServerEvents.recipes((event) => {
                 F: 'powah:capacitor_spirited'
             },
             id: 'mekanism:meka_tool'
-        },
-        {
-            output: 'mekanism:robit',
-            pattern: [' A ', 'BCB', 'AAA'],
-            key: {
-                A: '#forge:ingots/steel',
-                B: 'powah:capacitor_spirited',
-                C: '#forge:alloys/ultimate'
-            },
-            id: 'mekanism:robit'
         }
     ];
 

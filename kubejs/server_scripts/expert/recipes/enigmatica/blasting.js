@@ -100,14 +100,6 @@ ServerEvents.recipes((event) => {
 
         event
             .custom({
-                type: 'mekanism:smelting',
-                output: Item.of(recipe.output).toJson(),
-                input: { ingredient: Ingredient.of(recipe.input).toJson() }
-            })
-            .id(`${id_prefix}mekanism_smelting/${recipe.id_suffix}`);
-
-        event
-            .custom({
                 type: 'immersiveengineering:blast_furnace',
                 input: Ingredient.of(recipe.input).toJson(),
                 result: Item.of(recipe.output).toJson(),

@@ -348,6 +348,36 @@ ServerEvents.recipes((event) => {
                 B: '#forge:treated_wood_slab'
             },
             id: `create:crafting/kinetics/nixie_tube`
+        },
+        {
+            output: '32x create:track',
+            pattern: ['ABA', 'ACA', 'ABA'],
+            key: {
+                A: '#forge:rods/iron',
+                B: '#forge:treated_wood',
+                C: '#forge:gravel'
+            },
+            id: `${id_prefix}track_from_iron`
+        },
+        {
+            output: '48x create:track',
+            pattern: ['ABA', 'ACA', 'ABA'],
+            key: {
+                A: '#forge:rods/osmium',
+                B: '#forge:treated_wood',
+                C: '#forge:gravel'
+            },
+            id: `${id_prefix}track_from_osmium`
+        },
+        {
+            output: '16x create:track',
+            pattern: ['ABA', 'ACA', 'ABA'],
+            key: {
+                A: '#forge:rods/bronze',
+                B: '#forge:treated_wood',
+                C: '#forge:gravel'
+            },
+            id: `${id_prefix}track_from_bronze`
         }
     ];
 

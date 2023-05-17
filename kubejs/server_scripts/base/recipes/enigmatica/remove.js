@@ -58,13 +58,14 @@ ServerEvents.recipes((event) => {
         { id: 'hexerei:black_dye_from_pestle_and_mortar' },
         { id: 'hexerei:broom_netherite_tip_from_mixing_cauldron' },
 
-        { id: `industrialforegoing:stonework_generate/diorite` },
-        { id: `industrialforegoing:stonework_generate/granite` },
-        { id: `industrialforegoing:stonework_generate/andesite` },
-        { id: `industrialforegoing:laser_drill_ore/ores/cinnabar` },
+        { id: 'industrialforegoing:stonework_generate/diorite' },
+        { id: 'industrialforegoing:stonework_generate/granite' },
+        { id: 'industrialforegoing:stonework_generate/andesite' },
+        { id: 'industrialforegoing:laser_drill_ore/ores/cinnabar' },
 
         { id: 'immersiveengineering:crafting/coal_coke_to_coke' },
         { id: 'immersiveengineering:refinery/biodiesel' },
+        { id: 'immersiveengineering:crusher/slag' },
 
         { id: /mekanism:enriching\/dye/ },
         { id: /mekanism:compat\/byg\/dye/ },
@@ -74,7 +75,7 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:bin\/.*/ },
         { id: /mekanism:crushing\/biofuel/ },
         { id: 'mekanism:processing/netherite/dust_to_ancient_debris' },
-        { id: `mekanism:processing/bronze/ingot/from_infusing` },
+        { id: 'mekanism:processing/bronze/ingot/from_infusing' },
 
         { id: 'minecraft:bone_meal' },
         { id: 'minecraft:glass' },

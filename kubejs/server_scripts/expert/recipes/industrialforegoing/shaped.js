@@ -227,6 +227,45 @@ ServerEvents.recipes((event) => {
                 E: '#forge:essences/air'
             },
             id: 'industrialforegoing:world_transporter_type'
+        },
+        {
+            output: 'industrialforegoing:sludge_refiner',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'minecraft:sand',
+                B: 'thermal:fluid_cell_frame',
+                C: '#forge:plastic',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:gears/compressed_iron',
+                F: 'immersiveengineering:furnace_heater'
+            },
+            id: 'industrialforegoing:sludge_refiner'
+        },
+        {
+            output: 'industrialforegoing:marine_fisher',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'thermal:deep_aquachow',
+                B: 'thermal:junk_net',
+                C: '#forge:plastic',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:gears/bronze',
+                F: 'thermal:device_fisher'
+            },
+            id: 'industrialforegoing:marine_fisher'
+        },
+        {
+            output: 'industrialforegoing:stasis_chamber',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'spirit:soul_glass',
+                B: 'spirit:soul_pedestal',
+                C: '#forge:plastic',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:gears/lead',
+                F: '#forge:essences/anima'
+            },
+            id: 'industrialforegoing:stasis_chamber'
         }
     ];
 
