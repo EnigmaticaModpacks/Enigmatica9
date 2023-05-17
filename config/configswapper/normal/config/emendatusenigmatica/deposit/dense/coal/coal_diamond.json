@@ -5,11 +5,11 @@
     "registryName": "dense_coal_diamond",
     "config": {
         "blocks": [
-            {"material": "diamond", "weight": 25},
-            {"material": "coal", "weight": 50},
-            {"block": "minecraft:deepslate", "weight": 25}
+            {"material": "diamond", "weight": 35},
+            {"material": "coal", "weight": 45},
+            {"block": "minecraft:deepslate", "weight": 20}
         ],
-        "chance": 11,
+        "chance": 15,
         "size": 34,
         "rarity": "rare",
         "minYLevel": -60,
