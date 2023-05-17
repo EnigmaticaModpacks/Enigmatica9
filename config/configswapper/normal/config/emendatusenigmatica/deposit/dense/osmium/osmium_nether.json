@@ -1,6 +1,6 @@
 {
     "type": "emendatusenigmatica:dense_deposit",
-    "dimension": "minecraft:the_nnether",
+    "dimension": "minecraft:the_nether",
     "biomes": [],
     "registryName": "dense_osmium_nether",
     "config": {
