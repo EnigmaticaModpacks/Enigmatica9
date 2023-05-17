@@ -36,12 +36,21 @@ function auto_fortune(material, properties, event, id_prefix) {
     let raw_itemStack = AlmostUnified.getPreferredItemForTag(`forge:raw_materials/${material}`);
     if (raw_itemStack.isEmpty()) {
         raw_itemStack = Item.of(Ingredient.of(`#forge:raw_materials/${material}`).getItemIds()[0]);
-        if (localDebug)
-            console.warn(
-                ' // Ore Processing Rework // Material "' +
-                    material +
-                    '" uses fallback output item for metal Auto-Fortune!'
-            );
+        if (localDebug) {
+            if (crushed_ore_itemStack == null) {
+                console.error(
+                    ' // Ore Processing Rework // Material "' +
+                        material +
+                        '" does not have an item for main output (Raw Ore) for Auto Fortune!'
+                )
+            } else {
+                console.warn(
+                    ' // Ore Processing Rework // Material "' +
+                        material +
+                        `" uses fallback output item (Raw Ore -> ${crushed_ore_itemStack.getId()}) for Auto Fortune!`
+                );
+            }
+        }
     }
 
     let recipes = [];
