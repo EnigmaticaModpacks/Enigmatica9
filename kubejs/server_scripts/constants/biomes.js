@@ -1,32 +1,5 @@
 //priority: 1001
 const biomes = {
-    in_everbright: [
-        'blue_skies:calming_skies',
-        'blue_skies:brightlands',
-        'blue_skies:slushlands',
-        'blue_skies:frostbitten_forest',
-        'blue_skies:peeking_ocean',
-        'blue_skies:midday_shore',
-        'blue_skies:snow_covered_pines',
-        'blue_skies:deep_peeking_ocean',
-        'blue_skies:brisk_meadow',
-        'blue_skies:polar_highland',
-        'blue_skies:frostbitten_forest_clearing',
-        'blue_skies:brumble_forest'
-    ],
-    in_everdawn: [
-        'blue_skies:unorthodox_valley',
-        'blue_skies:shaded_woodlands',
-        'blue_skies:crystal_dunes',
-        'blue_skies:sunset_maple_forest',
-        'blue_skies:rising_creek',
-        'blue_skies:moonlit_reservoir',
-        'blue_skies:crystal_roughs',
-        'blue_skies:searing_grassland',
-        'blue_skies:crescent_orchard',
-        'blue_skies:crescent_orchard_lake',
-        'blue_skies:crystal_dunes_spikes'
-    ],
     in_the_bumblezone: [
         'the_bumblezone:hive_pillar',
         'the_bumblezone:hive_wall',
@@ -215,12 +188,10 @@ const biomes = {
         'minecraft:warm_ocean',
         'byg:dead_sea',
         'byg:lush_stacks',
-        'blue_skies:peeking_ocean',
         'minecraft:deep_frozen_ocean',
         'minecraft:deep_cold_ocean',
         'minecraft:deep_ocean',
-        'minecraft:deep_lukewarm_ocean',
-        'blue_skies:deep_peeking_ocean'
+        'minecraft:deep_lukewarm_ocean'
     ],
     in_deep_ocean: [
         'minecraft:deep_frozen_ocean',

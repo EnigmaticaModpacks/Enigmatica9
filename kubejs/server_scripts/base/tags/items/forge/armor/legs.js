@@ -8,7 +8,8 @@ ServerEvents.tags('item', (event) => {
             'mekanism:hazmat_pants',
             'mekanism:mekasuit_pants',
             'naturesaura:infused_iron_pants',
-            'naturesaura:sky_pants'
+            'naturesaura:sky_pants',
+            'naturesaura:depth_pants'
         ]);
     event
         .get('forge:armors/leggings')
@@ -19,6 +20,7 @@ ServerEvents.tags('item', (event) => {
             'mekanism:hazmat_pants',
             'mekanism:mekasuit_pants',
             'naturesaura:infused_iron_pants',
-            'naturesaura:sky_pants'
+            'naturesaura:sky_pants',
+            'naturesaura:depth_pants'
         ]);
 });

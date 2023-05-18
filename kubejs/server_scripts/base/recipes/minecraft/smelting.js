@@ -48,12 +48,6 @@ ServerEvents.recipes((event) => {
             output: 'minecraft:purple_stained_glass',
             xp: 0.5,
             id: `byg:purple_glass_from_sand`
-        },
-        {
-            input: ['blue_skies:crystal_sand', 'byg:quartzite_sand'],
-            output: 'blue_skies:crystal_glass',
-            xp: 0.5,
-            id: `blue_skies:crystal_glass_from_smelting_crystal_sand`
         }
     ];
 

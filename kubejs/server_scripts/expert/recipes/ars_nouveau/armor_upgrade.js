@@ -7,9 +7,9 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             pedestalItems: [
-                { item: { tag: 'forge:gems/moonstone' } },
-                { item: { tag: 'forge:gems/moonstone' } },
-                { item: { tag: 'forge:gems/moonstone' } }
+                { item: { tag: 'forge:gems/infused_diamond' } },
+                { item: { tag: 'forge:gems/infused_diamond' } },
+                { item: { tag: 'forge:gems/infused_diamond' } }
             ],
             sourceCost: 2500,
             tier: 1,
@@ -17,10 +17,9 @@ ServerEvents.recipes((event) => {
         },
         {
             pedestalItems: [
-                { item: { tag: 'forge:gems/charoite' } },
-                { item: { tag: 'forge:gems/diopside' } },
-                { item: { tag: 'forge:gems/pyrope' } },
-                { item: { tag: 'forge:gems/aquite' } }
+                { item: { tag: 'forge:gems/niotic' } },
+                { item: { tag: 'forge:gems/niotic' } },
+                { item: { tag: 'forge:gems/niotic' } }
             ],
             sourceCost: 5000,
             tier: 2,

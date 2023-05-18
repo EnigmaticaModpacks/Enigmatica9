@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: '#forge:dusts/fluix',
                 B: 'powah:dielectric_paste',
-                C: '#forge:gems/moonstone'
+                C: '#forge:gems/subzero'
             },
             id: `powah:crafting/capacitor_basic_large`
         },
@@ -18,7 +18,7 @@ ServerEvents.recipes((event) => {
             output: 'powah:energizing_rod_basic',
             pattern: ['A', 'B', 'C'],
             key: {
-                A: '#forge:gems/moonstone',
+                A: '#forge:gems/prismarine',
                 B: 'powah:dielectric_rod',
                 C: 'powah:capacitor_basic_large'
             },

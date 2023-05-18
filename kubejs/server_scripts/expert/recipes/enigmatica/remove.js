@@ -49,25 +49,23 @@ ServerEvents.recipes((event) => {
         { id: 'ae2:transform/fluix_crystals' },
         { id: 'ae2:misc/fluixpearl' },
 
-        { id: /blue_skies:.*_(helmet|chestplate|leggings|boots)/ },
-        { id: /blue_skies:.*_(sword|pickaxe|axe|shovel|hoe)/ },
-
         { id: 'constructionwand:stone_wand' },
         { id: 'constructionwand:iron_wand' },
 
         { id: /create:pressing\/.*_ingot/ },
         { id: 'create:crafting/kinetics/white_sail' },
-        { id: 'create:mechanical_crafting/wand_of_symmetry' },
-        { id: 'create:mechanical_crafting/extendo_grip' },
         { id: 'create:crafting/kinetics/empty_blaze_burner' },
         { id: 'create:crafting/kinetics/mechanical_crafter' },
         { id: 'create:crafting/kinetics/brass_hand' },
+        { id: 'create:mechanical_crafting/wand_of_symmetry' },
+        { id: 'create:mechanical_crafting/extendo_grip' },
         { id: 'create:item_application/brass_casing_from_wood' },
         { id: 'create:item_application/brass_casing_from_log' },
         { id: 'create:conversion_0' },
         { id: 'create:compat/ae2/milling/fluix_crystal' },
         { id: 'create:compat/ae2/milling/certus_quartz' },
         { id: 'create:compat/ae2/milling/ender_pearl' },
+        { id: 'create:crushing/prismarine_crystals' },
 
         { id: /createaddition:pressing\/.*_ingot/ },
         { id: /createaddition:crafting\/capacitor/ },
@@ -244,8 +242,13 @@ ServerEvents.recipes((event) => {
         { id: 'powah:crafting/dielectric_casing' },
         { id: 'powah:crafting/binding_card' },
         { id: 'powah:crafting/aerial_pearl' },
+        { id: 'powah:crafting/energizing_rod_basic' },
         { id: 'powah:energizing/ender_core' },
         { id: 'powah:energizing/blazing_crystal' },
+        { id: `powah:energizing/spirited_crystal` },
+        { id: `powah:energizing/niotic_crystal` },
+        { id: `powah:energizing/energized_steel` },
+
         {
             id: /powah:crafting\/(thermo_generator|solar_panel|furnator|magmator|reactor|energy|cable|battery|ender)/
         },

@@ -261,7 +261,6 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:compressed_iron_helmet',
                 'minecraft:diamond_helmet',
                 'naturesaura:sky_helmet',
-                'blue_skies:charoite_helmet',
                 'twilightforest:knightmetal_helmet',
                 'twilightforest:steeleaf_helmet'
             ],
@@ -285,7 +284,6 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:compressed_iron_chestplate',
                 'minecraft:diamond_chestplate',
                 'naturesaura:sky_chest',
-                'blue_skies:charoite_chestplate',
                 'twilightforest:knightmetal_chestplate',
                 'twilightforest:steeleaf_chestplate'
             ],
@@ -309,7 +307,6 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:compressed_iron_leggings',
                 'minecraft:diamond_leggings',
                 'naturesaura:sky_pants',
-                'blue_skies:charoite_leggings',
                 'twilightforest:knightmetal_leggings',
                 'twilightforest:steeleaf_leggings'
             ],
@@ -333,7 +330,6 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:compressed_iron_boots',
                 'minecraft:diamond_boots',
                 'naturesaura:sky_shoes',
-                'blue_skies:charoite_boots',
                 'twilightforest:knightmetal_boots',
                 'twilightforest:steeleaf_boots'
             ],
@@ -395,7 +391,6 @@ ServerEvents.recipes((event) => {
                 'ars_elemental:mark_of_mastery',
                 '#forge:wires/electrum',
                 '#forge:wires/electrum',
-                'blue_skies:summoning_tome',
                 '#forge:wires/electrum',
                 '#forge:wires/electrum'
             ],
@@ -452,8 +447,8 @@ ServerEvents.recipes((event) => {
             inputs: [
                 '#forge:essences/conjuration',
                 '#forge:essences/conjuration',
-                'blue_skies:summoning_tome',
                 '#ars_nouveau:wilden_drop',
+                'twilightforest:raven_feather',
                 '#ars_nouveau:wilden_drop'
             ],
             reagents: ['ars_nouveau:blank_thread'],
@@ -577,16 +572,17 @@ ServerEvents.recipes((event) => {
             reagents: ['sophisticatedstorage:stack_upgrade_tier_3'],
             sourceCost: 1000,
             id: `${id_prefix}stack_upgrade_tier_4`
+        },
+        {
+            output: 'mekanism:upgrade_anchor',
+            inputs: ['#forge:essences/abjuration', 'ars_nouveau:glyph_aoe'],
+            reagents: ['powah:blank_card'],
+            sourceCost: 1000,
+            id: `${id_prefix}upgrade_anchor`
         }
     ];
 
-    const gem_types = [
-        { mod: 'minecraft', material: 'diamond', essence: 'abjuration' },
-        { mod: 'blue_skies', material: 'pyrope', essence: 'fire' },
-        { mod: 'blue_skies', material: 'aquite', essence: 'water' },
-        { mod: 'blue_skies', material: 'diopside', essence: 'earth' },
-        { mod: 'blue_skies', material: 'charoite', essence: 'air' }
-    ];
+    const gem_types = [{ mod: 'minecraft', material: 'diamond', essence: 'abjuration' }];
 
     const equipment_types = [
         { slot: 'helmet', count: 5 },

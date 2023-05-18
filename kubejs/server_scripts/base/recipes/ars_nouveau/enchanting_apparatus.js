@@ -1,215 +1,176 @@
 ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/ars_nouveau/enchanting_apparatus/';
-    const recipes = [
-        {
-            output: 'ars_nouveau:archmage_hood',
-            inputs: [
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber'
-            ],
-            reagents: [
-                'minecraft:diamond_helmet',
-                'naturesaura:sky_helmet',
-                'blue_skies:charoite_helmet',
-                'twilightforest:knightmetal_helmet',
-                'twilightforest:steeleaf_helmet'
-            ],
-            keepNbtOfReagent: true,
-            sourceCost: 0,
-            id: `ars_nouveau:archmage_hood`
-        },
-        {
-            output: 'ars_nouveau:archmage_robes',
-            inputs: [
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber'
-            ],
-            reagents: [
-                'minecraft:diamond_chestplate',
-                'naturesaura:sky_chest',
-                'blue_skies:charoite_chestplate',
-                'twilightforest:knightmetal_chestplate',
-                'twilightforest:steeleaf_chestplate'
-            ],
-            keepNbtOfReagent: true,
-            sourceCost: 0,
-            id: `ars_nouveau:archmage_robes`
-        },
-        {
-            output: 'ars_nouveau:archmage_leggings',
-            inputs: [
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber'
-            ],
-            reagents: [
-                'minecraft:diamond_leggings',
-                'naturesaura:sky_pants',
-                'blue_skies:charoite_leggings',
-                'twilightforest:knightmetal_leggings',
-                'twilightforest:steeleaf_leggings'
-            ],
-            keepNbtOfReagent: true,
-            sourceCost: 0,
-            id: `ars_nouveau:archmage_leggings`
-        },
-        {
-            output: 'ars_nouveau:archmage_boots',
-            inputs: [
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber'
-            ],
-            reagents: [
-                'minecraft:diamond_boots',
-                'naturesaura:sky_shoes',
-                'blue_skies:charoite_boots',
-                'twilightforest:knightmetal_boots',
-                'twilightforest:steeleaf_boots'
-            ],
-            keepNbtOfReagent: true,
-            sourceCost: 0,
-            id: `ars_nouveau:archmage_boots`
-        },
-        {
-            output: 'ars_nouveau:apprentice_hood',
-            inputs: [
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber'
-            ],
-            reagents: [
-                'minecraft:iron_helmet',
-                'naturesaura:infused_iron_helmet',
-                'blue_skies:aquite_helmet',
-                'twilightforest:ironwood_helmet',
-                'immersiveengineering:armor_steel_head'
-            ],
-            keepNbtOfReagent: true,
-            sourceCost: 0,
-            id: `ars_nouveau:apprentice_hood`
-        },
-        {
-            output: 'ars_nouveau:apprentice_robes',
-            inputs: [
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber'
-            ],
-            reagents: [
-                'minecraft:iron_chestplate',
-                'naturesaura:infused_iron_chest',
-                'blue_skies:aquite_chestplate',
-                'twilightforest:ironwood_chestplate',
-                'immersiveengineering:armor_steel_chest'
-            ],
-            keepNbtOfReagent: true,
-            sourceCost: 0,
-            id: `ars_nouveau:apprentice_robes`
-        },
-        {
-            output: 'ars_nouveau:apprentice_leggings',
-            inputs: [
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber'
-            ],
-            reagents: [
-                'minecraft:iron_leggings',
-                'naturesaura:infused_iron_pants',
-                'blue_skies:aquite_leggings',
-                'twilightforest:ironwood_leggings',
-                'immersiveengineering:armor_steel_legs'
-            ],
-            keepNbtOfReagent: true,
-            sourceCost: 0,
-            id: `ars_nouveau:apprentice_leggings`
-        },
-        {
-            output: 'ars_nouveau:apprentice_boots',
-            inputs: [
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber'
-            ],
-            reagents: [
-                'minecraft:iron_boots',
-                'naturesaura:infused_iron_shoes',
-                'blue_skies:aquite_boots',
-                'twilightforest:ironwood_boots',
-                'immersiveengineering:armor_steel_feet'
-            ],
-            keepNbtOfReagent: true,
-            sourceCost: 0,
-            id: `ars_nouveau:apprentice_boots`
-        },
+    const recipes = [];
+
+    let armors = [
         {
             output: 'ars_nouveau:novice_hood',
             inputs: [
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber'
-            ],
-            reagents: ['minecraft:golden_helmet', 'blue_skies:pyrope_helmet', 'blue_skies:horizonite_helmet'],
-            keepNbtOfReagent: true,
-            sourceCost: 0,
-            id: `ars_nouveau:novice_hood`
+                'immersiveengineering:armor_faraday_head',
+                'twilightforest:arctic_helmet',
+                'minecraft:chainmail_helmet',
+                'minecraft:golden_helmet',
+                'thermal:hazmat_helmet',
+                'thermal:diving_helmet',
+                'thermal:beekeeper_helmet',
+                'minecraft:turtle_helmet',
+                'create:diving_helmet',
+                'the_bumblezone:stingless_bee_helmet_1',
+                'the_bumblezone:stingless_bee_helmet_2'
+            ]
         },
         {
             output: 'ars_nouveau:novice_robes',
             inputs: [
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber'
-            ],
-            reagents: [
+                'immersiveengineering:armor_faraday_chest',
+                'twilightforest:arctic_chestplate',
+                'minecraft:chainmail_chestplate',
                 'minecraft:golden_chestplate',
-                'blue_skies:pyrope_chestplate',
-                'blue_skies:horizonite_chestplate'
-            ],
-            keepNbtOfReagent: true,
-            sourceCost: 0,
-            id: `ars_nouveau:novice_robes`
+                'thermal:hazmat_chestplate',
+                'thermal:diving_chestplate',
+                'thermal:beekeeper_chestplate',
+                'the_bumblezone:bumble_bee_chestplate_trans_2',
+                'the_bumblezone:bumble_bee_chestplate_trans_1',
+                'the_bumblezone:bumble_bee_chestplate_2',
+                'the_bumblezone:bumble_bee_chestplate_1'
+            ]
         },
         {
             output: 'ars_nouveau:novice_leggings',
             inputs: [
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber',
-                'ars_nouveau:magebloom_fiber'
-            ],
-            reagents: ['minecraft:golden_leggings', 'blue_skies:pyrope_leggings', 'blue_skies:horizonite_leggings'],
-            keepNbtOfReagent: true,
-            sourceCost: 0,
-            id: `ars_nouveau:novice_leggings`
+                'immersiveengineering:armor_faraday_legs',
+                'twilightforest:arctic_leggings',
+                'minecraft:chainmail_leggings',
+                'minecraft:golden_leggings',
+                'thermal:hazmat_leggings',
+                'thermal:diving_leggings',
+                'thermal:beekeeper_leggings',
+                'the_bumblezone:honey_bee_leggings_2',
+                'the_bumblezone:honey_bee_leggings_1'
+            ]
         },
         {
             output: 'ars_nouveau:novice_boots',
+            inputs: [
+                'immersiveengineering:armor_faraday_feet',
+                'twilightforest:arctic_boots',
+                'minecraft:chainmail_boots',
+                'minecraft:golden_boots',
+                'thermal:hazmat_boots',
+                'thermal:diving_boots',
+                'thermal:beekeeper_boots',
+                'create:diving_boots',
+                'the_bumblezone:carpenter_bee_boots_2'
+            ]
+        },
+        {
+            output: 'ars_nouveau:apprentice_hood',
+            inputs: [
+                'twilightforest:steeleaf_helmet',
+                'naturesaura:infused_iron_helmet',
+                'immersiveengineering:armor_steel_head',
+                'pneumaticcraft:compressed_iron_helmet',
+                'twilightforest:ironwood_helmet',
+                'minecraft:iron_helmet'
+            ]
+        },
+        {
+            output: 'ars_nouveau:apprentice_robes',
+            inputs: [
+                'twilightforest:steeleaf_chestplate',
+                'naturesaura:infused_iron_chest',
+                'immersiveengineering:armor_steel_chest',
+                'pneumaticcraft:compressed_iron_chestplate',
+                'twilightforest:ironwood_chestplate',
+                'minecraft:iron_chestplate'
+            ]
+        },
+        {
+            output: 'ars_nouveau:apprentice_leggings',
+            inputs: [
+                'twilightforest:steeleaf_leggings',
+                'naturesaura:infused_iron_pants',
+                'immersiveengineering:armor_steel_legs',
+                'pneumaticcraft:compressed_iron_leggings',
+                'twilightforest:ironwood_leggings',
+                'minecraft:iron_leggings'
+            ]
+        },
+        {
+            output: 'ars_nouveau:apprentice_boots',
+            inputs: [
+                'twilightforest:steeleaf_boots',
+                'naturesaura:infused_iron_shoes',
+                'immersiveengineering:armor_steel_feet',
+                'pneumaticcraft:compressed_iron_boots',
+                'twilightforest:ironwood_boots',
+                'minecraft:iron_boots'
+            ]
+        },
+        {
+            output: 'ars_nouveau:archmage_hood',
+            inputs: [
+                'minecraft:diamond_helmet',
+                'twilightforest:fiery_helmet',
+                'twilightforest:knightmetal_helmet',
+                'twilightforest:yeti_helmet',
+                'naturesaura:sky_helmet',
+                'twilightforest:phantom_helmet',
+                'hexerei:witch_helmet'
+            ]
+        },
+        {
+            output: 'ars_nouveau:archmage_robes',
+            inputs: [
+                'minecraft:diamond_chestplate',
+                'twilightforest:fiery_chestplate',
+                'twilightforest:knightmetal_chestplate',
+                'twilightforest:yeti_chestplate',
+                'naturesaura:sky_chest',
+                'twilightforest:phantom_chestplate',
+                'twilightforest:naga_chestplate',
+                'hexerei:witch_chestplate'
+            ]
+        },
+        {
+            output: 'ars_nouveau:archmage_leggings',
+            inputs: [
+                'minecraft:diamond_leggings',
+                'twilightforest:fiery_leggings',
+                'twilightforest:knightmetal_leggings',
+                'twilightforest:yeti_leggings',
+                'naturesaura:sky_pants',
+                'twilightforest:naga_leggings'
+            ]
+        },
+        {
+            output: 'ars_nouveau:archmage_boots',
+            inputs: [
+                'minecraft:diamond_boots',
+                'twilightforest:fiery_boots',
+                'twilightforest:knightmetal_boots',
+                'twilightforest:yeti_boots',
+                'naturesaura:sky_shoes',
+                'hexerei:witch_boots'
+            ]
+        }
+    ];
+
+    armors.forEach((armor) => {
+        recipes.push({
+            output: armor.output,
             inputs: [
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber'
             ],
-            reagents: ['minecraft:golden_boots', 'blue_skies:pyrope_boots', 'blue_skies:horizonite_boots'],
+            reagents: armor.inputs,
             keepNbtOfReagent: true,
             sourceCost: 0,
-            id: `ars_nouveau:novice_boots`
-        }
-    ];
+            id: armor.output
+        });
+    });
 
     recipes.forEach((recipe) => {
         recipe.type = 'ars_nouveau:enchanting_apparatus';

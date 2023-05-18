@@ -35,4 +35,6 @@
 		[lights.overlays.misc]
 			#Use simplified renderer for Warp Portals
 			no_end_portal_render = false
+			#Disables the skyweave renderer. Disable if your sky is broken with shaders.
+			disable_skyweave = false
 

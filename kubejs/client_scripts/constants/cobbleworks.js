@@ -2,7 +2,6 @@
 
 // Items added here will get recipes for Pedestals & Cobblegen Randomizer cobblegens.
 const generatableCobblestone = [
-    'blue_skies:turquoise_cobblestone',
     'byg:cobbled_ether_stone',
     'byg:dacite_cobblestone',
     'byg:purpur_stone',
@@ -11,22 +10,9 @@ const generatableCobblestone = [
     'byg:soapstone',
     'byg:travertine',
     'minecraft:cobbled_deepslate'
-    /*
-    'undergarden:depthrock',
-    'undergarden:shiverstone',
-    'undergarden:tremblecrust',
-    */
 ];
 // Items added here will get recipes for Pedestals & Cobblegen Randomizer stonegens.
 const generatableStone = [
-    'blue_skies:blinding_stone',
-    'blue_skies:crystal_sandstone',
-    'blue_skies:lunar_stone',
-    'blue_skies:midnight_sandstone',
-    'blue_skies:nature_stone',
-    'blue_skies:poison_stone',
-    'blue_skies:rimestone',
-    'blue_skies:turquoise_stone',
     'byg:black_sandstone',
     'byg:blue_sandstone',
     'byg:brimstone',
@@ -67,7 +53,6 @@ const generatableStone = [
 const generatableBasalt = [];
 
 const excludeDuplicatesCobbleGen = [
-    'blue_skies:turquoise_cobblestone',
     'byg:dacite',
     'byg:dacite_cobblestone',
     'byg:ether_stone',

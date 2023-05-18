@@ -7,7 +7,7 @@ ServerEvents.highPriorityData((event) => {
             weight: 30,
             quality: 0,
             min_rarity: 'rare',
-            dimensions: ['blue_skies:everbright'],
+            dimensions: [],
             bonuses: [
                 {
                     type: 'apotheosis:attribute',

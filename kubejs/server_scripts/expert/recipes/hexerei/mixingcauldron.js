@@ -211,14 +211,14 @@ ServerEvents.recipes((event) => {
         {
             output: 'tiab:time_in_a_bottle',
             inputs: [
-                'blue_skies:soul_fragment',
-                'blue_skies:soul_fragment',
+                'naturesaura:calling_spirit',
+                'naturesaura:calling_spirit',
                 '#forge:essences/water',
                 '#forge:essences/fire',
                 '#forge:essences/manipulation',
                 '#forge:essences/earth',
                 '#forge:essences/air',
-                'blue_skies:soul_fragment'
+                'naturesaura:calling_spirit'
             ],
             liquid: {
                 fluid: 'hexerei:potion',

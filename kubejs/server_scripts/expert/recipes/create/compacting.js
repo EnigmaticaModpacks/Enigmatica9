@@ -30,8 +30,8 @@ ServerEvents.recipes((event) => {
                 [{ tag: 'forge:foods/meat/raw' }, { item: 'minecraft:rotten_flesh' }],
                 [{ tag: 'forge:foods/meat/raw' }, { item: 'minecraft:rotten_flesh' }],
                 [{ tag: 'forge:foods/meat/raw' }, { item: 'minecraft:rotten_flesh' }],
-                [{ item: 'minecraft:spider_eye' }, { item: 'blue_skies:bug_guts' }],
-                [{ item: 'minecraft:spider_eye' }, { item: 'blue_skies:bug_guts' }]
+                [{ item: 'minecraft:spider_eye' }],
+                [{ item: 'minecraft:spider_eye' }]
             ],
             results: [
                 { fluid: 'hexerei:blood_fluid', amount: 250 },

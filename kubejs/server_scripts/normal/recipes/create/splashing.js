@@ -6,23 +6,33 @@ ServerEvents.recipes((event) => {
 
     let recipes = [
         {
-            ingredients: [Ingredient.of('#create:crushed_ores/netherite', 1)],
+            ingredients: [Item.of('mekanism:dirty_netherite_scrap')],
             results: [
-                Item.of('emendatusenigmatica:netherite_nugget', 3).toJson(),
+                Item.of('minecraft:netherite_scrap', 1).toJson(),
                 {
-                    chance: 0.66,
-                    count: 3,
-                    item: 'emendatusenigmatica:netherite_nugget'
+                    chance: 0.33,
+                    count: 1,
+                    item: 'minecraft:netherite_scrap'
                 },
                 {
                     chance: 0.33,
-                    count: 3,
-                    item: 'emendatusenigmatica:netherite_nugget'
+                    count: 1,
+                    item: 'emendatusenigmatica:gold_dirty_dust'
                 }
             ],
             id: `${id_prefix}netherite_washing`
         }
     ];
+
+    Object.keys(metal_properties).forEach((key) => {
+        if (Item.exists(`emendatusenigmatica:${key}_dirty_dust`)) {
+            recipes.push({
+                ingredients: [Ingredient.of(`#mekanism:dirty_dusts/${key}`)],
+                results: [Item.of(`emendatusenigmatica:${key}_dust`, 1).toJson()],
+                id: `${id_prefix}dirty_${key}_dust`
+            });
+        }
+    });
 
     recipes.forEach((recipe) => {
         recipe.type = 'create:splashing';

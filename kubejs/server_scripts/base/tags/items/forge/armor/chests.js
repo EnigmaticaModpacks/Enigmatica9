@@ -13,7 +13,8 @@ ServerEvents.tags('item', (event) => {
             'mekanism:jetpack_armored',
             'mekanism:mekasuit_bodyarmor',
             'naturesaura:infused_iron_chest',
-            'naturesaura:sky_chest'
+            'naturesaura:sky_chest',
+            'naturesaura:depth_chest'
         ])
         .remove(['pneumaticcraft:jet_boots_upgrade_1']);
     event
@@ -30,7 +31,8 @@ ServerEvents.tags('item', (event) => {
             'mekanism:jetpack_armored',
             'mekanism:mekasuit_bodyarmor',
             'naturesaura:infused_iron_chest',
-            'naturesaura:sky_chest'
+            'naturesaura:sky_chest',
+            'naturesaura:depth_chest'
         ])
         .remove(['pneumaticcraft:jet_boots_upgrade_1']);
 });
