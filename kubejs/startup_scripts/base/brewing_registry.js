@@ -41,7 +41,7 @@ MoreJSEvents.registerPotionBrewing((event) => {
         {
             reagent: 'byg:aloe_vera',
             input: 'minecraft:awkward',
-            output: 'minecraft:fire_resistance'
+            output: 'minecraft:regeneration'
         },
         {
             reagent: 'thermal:coffee',
@@ -202,6 +202,61 @@ MoreJSEvents.registerPotionBrewing((event) => {
             reagent: 'hexerei:mandrake_root',
             input: 'apotheosis:strong_haste',
             output: 'apotheosis:strong_fatigue'
+        },
+        {
+            reagent: 'hexerei:dried_mandrake_flowers',
+            input: 'minecraft:awkward',
+            output: 'minecraft:slowness'
+        },
+        {
+            reagent: 'byg:baobab_fruit',
+            input: 'minecraft:awkward',
+            output: 'apotheosis:resistance'
+        },
+        {
+            reagent: 'thermal:slime_mushroom_spores',
+            input: 'minecraft:awkward',
+            output: 'minecraft:leaping'
+        },
+        {
+            reagent: 'byg:japanese_orchid',
+            input: 'minecraft:awkward',
+            output: 'minecraft:luck'
+        },
+        {
+            reagent: 'minecraft:peony',
+            input: 'minecraft:awkward',
+            output: 'minecraft:luck'
+        },
+        {
+            reagent: 'thermal:amaranth',
+            input: 'minecraft:awkward',
+            output: 'minecraft:slow_falling'
+        },
+        {
+            reagent: 'thermal:sadiroot',
+            input: 'minecraft:awkward',
+            output: 'quark:resilience'
+        },
+        {
+            reagent: 'hexerei:dried_belladonna_flowers',
+            input: 'minecraft:awkward',
+            output: 'minecraft:water_breathing'
+        },
+        {
+            reagent: 'hexerei:dried_yellow_dock_flowers',
+            input: 'minecraft:awkward',
+            output: 'minecraft:strength'
+        },
+        {
+            reagent: 'hexerei:dried_sage',
+            input: 'minecraft:awkward',
+            output: 'minecraft:invisibility'
+        },
+        {
+            reagent: 'minecraft:honeycomb',
+            input: 'minecraft:awkward',
+            output: 'minecraft:healing'
         }
     ];
 

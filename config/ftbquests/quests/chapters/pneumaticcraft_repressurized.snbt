@@ -1,7 +1,7 @@
 {
 	id: "00000000000000AE"
 	group: "72A9465344128AF9"
-	order_index: 5
+	order_index: 9
 	filename: "pneumaticcraft_repressurized"
 	title: "PneumaticCraft: Repressurized"
 	icon: "pneumaticcraft:pressure_gauge_module"
@@ -11,8 +11,8 @@
 		{
 			icon: "pneumaticcraft:ingot_iron_compressed"
 			x: -16.0d
-			y: -14.0d
-			shape: "hexagon"
+			y: -16.0d
+			shape: "gear"
 			description: [
 				"PneumaticCraft: Repressurized is all about logistics, automation, and generally blowing things up for profit. Mastering pressurized air and heat will be the beginning of your journey. "
 				""
@@ -20,26 +20,19 @@
 				""
 				"~MuteTiefling"
 			]
+			dependencies: ["0E45018D600614BA"]
+			hide: true
 			id: "00000000000000AF"
 			tasks: [{
-				id: "7B56DD5D9F4BBB68"
+				id: "4DAEDBCC9D0A5897"
 				type: "item"
-				title: "Compressed Iron"
-				icon: "pneumaticcraft:ingot_iron_compressed"
+				title: "Any Tool"
+				icon: "pneumaticcraft:compressed_iron_block"
 				item: {
-					id: "itemfilters:or"
+					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						items: [
-							{
-								id: "pneumaticcraft:ingot_iron_compressed"
-								Count: 1b
-							}
-							{
-								id: "pneumaticcraft:compressed_stone"
-								Count: 1b
-							}
-						]
+						value: "forge:tools"
 					}
 				}
 			}]
@@ -59,7 +52,7 @@
 		{
 			title: "Pressure Chamber"
 			icon: "pneumaticcraft:pressure_chamber_wall"
-			x: -20.5d
+			x: -21.5d
 			y: -13.0d
 			description: [
 				"Central to any Pressure Mechanic’s workshop is the Pressure Chamber, which serves as both a functional machine for crafting and a battery of Air to even out usage spikes in a system. It is built as a hollow cube, either 3x3x3, 4x4x4, or 5x5x5. Starting with a small chamber is recommended as larger ones will take far longer to fill at the start."
@@ -120,8 +113,9 @@
 		{
 			title: "Getting Started: Pressure Management"
 			icon: "pneumaticcraft:air_compressor"
-			x: -20.5d
+			x: -21.5d
 			y: -14.0d
+			shape: "hexagon"
 			subtitle: "Under Pressure"
 			description: [
 				"While it won’t have you being visited by danger noodles from space or irradiating the countryside for the next millennium, Pressurized Air can be dangerous in its own right as going over pressure can cause that block to burst and be lost."
@@ -130,7 +124,8 @@
 				""
 				"Place a Pressure Gauge Tube Module on the first Pressure Tube out of the compressor, then run a loop of exactly nine Redstone Dust back to a repeater pointing into the Compressor itself. Finally, set the Compressor to run on Low Signal in its Redstone Behaviour panel. The end result is a Compressor that will turn off at about 4.5 bar. "
 			]
-			dependencies: ["7B56DD5D9F4BBB68"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000000AF"]
 			min_width: 300
 			id: "00000000000000BD"
 			tasks: [
@@ -205,7 +200,7 @@
 		}
 		{
 			title: "Security Upgrades"
-			x: -20.5d
+			x: -21.5d
 			y: -12.0d
 			subtitle: "Cautiously Optimistic"
 			description: [
@@ -233,15 +228,16 @@
 			}]
 		}
 		{
-			x: -12.0d
-			y: -6.0d
+			x: -16.5d
+			y: -11.5d
 			subtitle: "The Night is Dark..."
 			description: [
 				"Despite its name, the Kerosene Lamp can use all the same fuels as the Liquid Compressor, lighting up an area up to 30 blocks in radius. "
 				""
 				"Perfect for keeping the terrors at bay. "
 			]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["5E79C1011FABC4AF"]
 			id: "00000000000000CA"
 			tasks: [{
 				id: "00000000000000CB"
@@ -269,7 +265,7 @@
 			}]
 		}
 		{
-			x: -12.5d
+			x: -11.5d
 			y: -13.0d
 			subtitle: "Whirling Dervishes"
 			description: [
@@ -304,8 +300,9 @@
 		{
 			title: "Getting Started: Heat Management"
 			icon: "minecraft:blue_ice"
-			x: -11.5d
+			x: -10.5d
 			y: -14.0d
+			shape: "hexagon"
 			subtitle: "The Cold Never Bothered Me Anyway"
 			description: [
 				"While secondary to Pressure, Heat management is an important part of working with PNC:R machines. Some will need to be kept above certain temperatures, while others will need to be kept cool to operate properly. "
@@ -316,19 +313,20 @@
 				""
 				"Insulation takes many forms. Most any block that isn’t heat sensitive counts; trap doors, pipes and glass, may all be used. Thermal Lagging, however, tends to be ideal as it still allows Right-Click access to the machine it is install upon."
 			]
-			dependencies: ["7B56DD5D9F4BBB68"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000000AF"]
 			id: "00000000000000D2"
 			tasks: [
-				{
-					id: "00000000000000D3"
-					type: "item"
-					item: "pneumaticcraft:heat_pipe"
-					count: 6L
-				}
 				{
 					id: "662C133047B676A3"
 					type: "item"
 					item: "pneumaticcraft:thermal_lagging"
+					count: 6L
+				}
+				{
+					id: "2F472A934C0A96FD"
+					type: "item"
+					item: "pneumaticcraft:heat_pipe"
 					count: 6L
 				}
 			]
@@ -342,7 +340,7 @@
 			}]
 		}
 		{
-			x: -12.5d
+			x: -11.5d
 			y: -12.0d
 			description: [
 				"It’s worth noting that Vortex Tube uses a lot of Air and does not respond directly to Redstone control. In order to turn it off, the air supply must be cut. A Regulator Tube Module can do exactly that."
@@ -371,7 +369,7 @@
 			}]
 		}
 		{
-			x: -10.5d
+			x: -9.5d
 			y: -10.5d
 			subtitle: "Freeze Frame"
 			description: [
@@ -379,7 +377,8 @@
 				""
 				"In order to cool liquids, fill a PNC:R tank or a bucket and place it inside the inventory. The cooled items will appear in the chest if there's room."
 			]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000000D2"]
 			id: "00000000000000D9"
 			tasks: [{
 				id: "00000000000000DA"
@@ -394,15 +393,16 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: -7.5d
+			x: -14.5d
+			y: -13.0d
 			subtitle: "Under the Radar"
 			description: [
 				"The Universal Sensor is a powerful block that will output a redstone signal based on various conditions, such as detecting a nearby player, when a player Right-Clicks a block, the presence of blocks, light level, or even the current heat of a block."
 				""
 				"When reading heat, try aiming it at a heat pipe or a PNC:R machine, rather than at an inventory with a heat frame."
 			]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["5E79C1011FABC4AF"]
 			id: "00000000000000DC"
 			tasks: [{
 				id: "00000000000000DD"
@@ -426,7 +426,7 @@
 		}
 		{
 			icon: "pneumaticcraft:gas_lift"
-			x: -22.0d
+			x: -23.0d
 			y: -11.0d
 			subtitle: "Hands Off!"
 			description: [
@@ -434,7 +434,8 @@
 				""
 				"Place it above a source block of any fluid, insert drill pipes, and provide air. The pipes will extend down to a source, breaking blocks in the way if necessary, and will attempt to pull all nearby connected source blocks."
 			]
-			dependencies: ["00000000000000BF"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000000BD"]
 			id: "00000000000000E2"
 			tasks: [
 				{
@@ -459,7 +460,7 @@
 		{
 			title: "Oil Refinery"
 			icon: "pneumaticcraft:refinery_output"
-			x: -11.5d
+			x: -10.5d
 			y: -11.0d
 			subtitle: "Refined Company"
 			description: [
@@ -467,7 +468,8 @@
 				""
 				"Note: A Comparator reading from the Controller will output a signal whenever the Refinery can do work, meaning it has a valid input and has room for the outputs, making it an excellent way of controlling a Vortex Tube efficiently."
 			]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000000D2"]
 			id: "00000000000000E7"
 			tasks: [
 				{
@@ -493,7 +495,7 @@
 		}
 		{
 			title: "Thermopneumatic Processing"
-			x: -12.5d
+			x: -11.5d
 			y: -10.5d
 			subtitle: "Thermo-new-what-now?"
 			description: [
@@ -503,7 +505,8 @@
 				""
 				"Some recipes will require very precise control of heat, for example, being between 30° and 60°. This can be accomplished by regulating the air going into a Vortex Tube by making use of a Universal Sensor to disable the air flow when the block reaches a certain temperature. "
 			]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000000D2"]
 			id: "00000000000000EA"
 			tasks: [{
 				id: "00000000000000EB"
@@ -530,8 +533,8 @@
 		}
 		{
 			title: "Logistics"
-			x: -21.5d
-			y: -8.0d
+			x: -17.5d
+			y: -8.5d
 			subtitle: "Framing Your Request"
 			description: [
 				"Logistics Frames and Modules are the primary tools used in a Logistics network. They allow for the movement of both Items and Fluids over the same tube network at the same time."
@@ -594,12 +597,12 @@
 			]
 		}
 		{
-			x: -13.0d
-			y: -7.5d
+			x: -16.5d
+			y: -8.0d
 			subtitle: "Who Says You Can't Take It With You?"
 			description: ["A blast resistant chest that retains its contents when broken."]
 			hide_dependency_lines: true
-			dependencies: ["5E79C1011FABC4AF"]
+			dependencies: ["000000000000011D"]
 			id: "0000000000000110"
 			tasks: [{
 				id: "0000000000000111"
@@ -616,11 +619,12 @@
 			}]
 		}
 		{
-			x: -13.5d
-			y: -6.5d
+			x: -16.5d
+			y: -7.0d
 			subtitle: "Work Smarter, Not Harder"
 			description: ["An advanced version of the Reinforced Chest featuring a larger inventory, per slot item type and quantity filtering, ranged item collection, and the ability to push and pull items to and from nearby inventories."]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["000000000000011D"]
 			id: "0000000000000114"
 			tasks: [{
 				id: "0000000000000115"
@@ -647,11 +651,12 @@
 		{
 			title: "Hoppers"
 			icon: "pneumaticcraft:omnidirectional_hopper"
-			x: -13.5d
-			y: -5.5d
+			x: -15.5d
+			y: -8.0d
 			subtitle: "Weird Flex, Bro"
 			description: ["Filterable and fast, PNC:R Hoppers can be oriented however you like and accept multiple useful upgrades. Check their GUI for more info."]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["000000000000011D"]
 			id: "0000000000000119"
 			tasks: [
 				{
@@ -676,10 +681,12 @@
 		{
 			title: "Logistics and Programming"
 			icon: "pneumaticcraft:logistics_core"
-			x: -20.5d
-			y: -8.5d
+			x: -16.0d
+			y: -9.0d
+			shape: "hexagon"
 			description: ["Automation is the heart and soul of PNC:R, and its Logistics, Redstone, and Programming capabilities make up the majority of what it can do."]
-			dependencies: ["00000000000000BF"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000000BD"]
 			id: "000000000000011D"
 			tasks: [{
 				id: "7572CC9E6585AC4F"
@@ -718,8 +725,8 @@
 		}
 		{
 			title: "Redstone Modules"
-			x: -19.5d
-			y: -8.0d
+			x: -14.5d
+			y: -8.5d
 			subtitle: "Redstone Evolution"
 			description: [
 				"Redstone Modules are used to read and output Redstone signals by transmitting them over a pipe network. Each Module may be set to a color channel, allowing up to 16 different signals over the same tube network."
@@ -749,8 +756,8 @@
 			}]
 		}
 		{
-			x: -19.5d
-			y: -7.0d
+			x: -14.5d
+			y: -7.5d
 			subtitle: "Raspberry Pi"
 			description: [
 				"Module Expansion Cards are used to add extra functionality to various Tube Modules. Simply Right-Click it on any Tube Module to add new features"
@@ -765,6 +772,7 @@
 				""
 				"For example, the Redstone control of a Compressor can be greatly compacted by applying a Module Expansion Card to the Pressure Gauge. Set this to output a signal only when the Gauge is below 4.9 bar (or 19.9 bar for advanced), then use a short section of Redstone modules to bring that signal directly to the Compressor. This eliminates the need for the long loop of Redstone suggested earlier."
 			]
+			hide_dependency_lines: true
 			dependencies: ["000000000000011D"]
 			min_width: 300
 			id: "0000000000000123"
@@ -783,12 +791,12 @@
 			}]
 		}
 		{
-			x: -20.5d
-			y: -5.5d
+			x: -16.0d
+			y: -4.5d
 			subtitle: "Flying Circus"
 			description: ["Logistics Drones are handy little helpers in places where you don’t want to run a full air infrastructure. Experiment with some logistics frames and deploy a logistics drone to move the items for you."]
 			hide_dependency_lines: true
-			dependencies: ["00000000000000BD"]
+			dependencies: ["000000000000011D"]
 			id: "0000000000000126"
 			tasks: [{
 				id: "0000000000000127"
@@ -841,7 +849,7 @@
 			]
 		}
 		{
-			x: -21.5d
+			x: -22.5d
 			y: -12.0d
 			subtitle: "In-Flight Refueling"
 			description: [
@@ -878,8 +886,8 @@
 			]
 		}
 		{
-			x: -19.5d
-			y: -5.5d
+			x: -15.0d
+			y: -4.0d
 			subtitle: "In Her Time of Need"
 			description: ["Install one or more Item Life Upgrades in a Drone to help them stay in working order. They can occasionally take damage from environmental hazards and these upgrades will cause them to self-repair at the cost of some Air."]
 			dependencies: ["0000000000000126"]
@@ -899,8 +907,8 @@
 			}]
 		}
 		{
-			x: -19.5d
-			y: -4.5d
+			x: -15.0d
+			y: -3.0d
 			subtitle: "She's All Alone, All Alone"
 			description: ["Installing a Standby Upgrade in a non-programmable Drone will let it go to sleep when there’s no work to be done. Programmable drones may be programmed to do the same without the need of an upgrade."]
 			dependencies: ["0000000000000126"]
@@ -920,8 +928,8 @@
 			}]
 		}
 		{
-			x: -21.5d
-			y: -5.5d
+			x: -17.0d
+			y: -4.0d
 			subtitle: "He's Going the Distance"
 			description: ["Install a few Range Upgrades in a non-programmable drone to increase the area it covers."]
 			dependencies: ["0000000000000126"]
@@ -940,8 +948,8 @@
 			}]
 		}
 		{
-			x: -21.5d
-			y: -4.5d
+			x: -17.0d
+			y: -3.0d
 			subtitle: "He's Going for Speed"
 			description: ["Speed things up with a few of these in a Drone. Many other blocks benefit from them as well."]
 			dependencies: ["0000000000000126"]
@@ -962,7 +970,7 @@
 		{
 			title: "Programmable Drones"
 			icon: "pneumaticcraft:programmer"
-			x: -20.5d
+			x: -16.0d
 			y: -3.5d
 			subtitle: "Doin’ It My Way"
 			description: [
@@ -999,7 +1007,7 @@
 			}]
 		}
 		{
-			x: -20.5d
+			x: -16.0d
 			y: -2.5d
 			subtitle: "Always At Arms Reach"
 			description: ["Remotes are programmable interface devices that work by manipulating global variables. You can use these for remote redstone when combined with a Universal Sensor, or they can be used to control programmable drones."]
@@ -1020,8 +1028,8 @@
 			}]
 		}
 		{
-			x: -11.5d
-			y: -7.0d
+			x: -16.0d
+			y: -12.5d
 			subtitle: "Prime Delivery"
 			description: [
 				"The pinnacle of stay-at-home shopping. Click a button and your order is there before you know it."
@@ -1030,7 +1038,8 @@
 				""
 				"Place any payment items in the chest, then complete the order from the Tablet itself. Once submitted, a Drone will appear to extract the payment from the chest. A short time later, a second drone will appear to deposit the purchase in the chest. When purchasing fluids, they’ll be sent to the bound tank instead. "
 			]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["5E79C1011FABC4AF"]
 			id: "0000000000000148"
 			tasks: [{
 				id: "0000000000000149"
@@ -1047,7 +1056,7 @@
 			}]
 		}
 		{
-			x: -21.0d
+			x: -22.0d
 			y: -11.0d
 			subtitle: "Brighter than the Sun"
 			description: [
@@ -1057,7 +1066,8 @@
 				""
 				"Automating this process is highly recommended."
 			]
-			dependencies: ["00000000000000BF"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000000BD"]
 			id: "000000000000014E"
 			tasks: [{
 				id: "000000000000014F"
@@ -1076,7 +1086,7 @@
 		{
 			title: "Etching Tank"
 			icon: "pneumaticcraft:etching_tank"
-			x: -11.5d
+			x: -10.5d
 			y: -10.0d
 			subtitle: "A Caustic Solution"
 			description: [
@@ -1084,7 +1094,8 @@
 				""
 				"The acid is only consumed if heat is applied while etching a board, however, doing so significantly speeds up the process and a single bucket will last for many PCBs."
 			]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000000D2"]
 			id: "0000000000000151"
 			tasks: [{
 				id: "0000000000000152"
@@ -1103,7 +1114,7 @@
 		{
 			title: "Assembly Table"
 			icon: "pneumaticcraft:assembly_platform"
-			x: -21.5d
+			x: -22.5d
 			y: -10.0d
 			subtitle: "Some Assembly Required"
 			description: [
@@ -1118,7 +1129,8 @@
 				""
 				"Note: The Drill \\& Laser program allows the Assembly Table to craft recipes that require only a drill or laser. In most cases there’s no reason to use the individual programs."
 			]
-			dependencies: ["00000000000000BF"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000000BD"]
 			id: "0000000000000155"
 			tasks: [
 				{
@@ -1168,15 +1180,16 @@
 		}
 		{
 			title: "Fluid Tanks"
-			x: -13.0d
-			y: -4.5d
+			x: -15.5d
+			y: -6.0d
 			subtitle: "Stacking the Odds"
 			description: [
 				"Portable Fluid Storage. Also capable of filling buckets and other tanks for automation purposes."
 				""
 				"Stack them vertically and Right-Click with a Pneumatic Wrench to form a multiblock tank."
 			]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["000000000000011D"]
 			id: "000000000000016B"
 			tasks: [{
 				id: "000000000000016C"
@@ -1193,7 +1206,7 @@
 		}
 		{
 			icon: "pneumaticcraft:advanced_air_compressor"
-			x: -10.5d
+			x: -9.5d
 			y: -12.0d
 			subtitle: "Super Laminar Flow"
 			description: [
@@ -1243,7 +1256,7 @@
 			}]
 		}
 		{
-			x: -19.5d
+			x: -20.5d
 			y: -12.0d
 			subtitle: "Full Reverse!"
 			description: [
@@ -1270,7 +1283,7 @@
 			}]
 		}
 		{
-			x: -20.0d
+			x: -21.0d
 			y: -11.0d
 			subtitle: "Helter Skelter"
 			description: [
@@ -1309,7 +1322,7 @@
 		}
 		{
 			icon: "pneumaticcraft:vacuum_trap"
-			x: -19.0d
+			x: -20.0d
 			y: -11.0d
 			subtitle: "Who Ya Gonna Call?"
 			description: [
@@ -1352,7 +1365,7 @@
 			}]
 		}
 		{
-			x: -19.5d
+			x: -20.5d
 			y: -10.0d
 			subtitle: "Spinning in Their Graves"
 			description: [
@@ -1379,11 +1392,13 @@
 		{
 			title: "Tools and Utility"
 			icon: "pneumaticcraft:plastic"
-			x: -11.5d
-			y: -8.5d
+			x: -16.0d
+			y: -14.0d
+			shape: "hexagon"
 			subtitle: "You Can Touch, You Can Play"
 			description: ["Beyond machines and logistics, PNC:R offers a number of very useful tools, armor, and utility devices. "]
-			dependencies: ["00000000000000BF"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000000AF"]
 			id: "5E79C1011FABC4AF"
 			tasks: [{
 				id: "38BA4E657128DF03"
@@ -1425,7 +1440,7 @@
 		}
 		{
 			icon: "pneumaticcraft:heat_sink"
-			x: -10.5d
+			x: -9.5d
 			y: -13.0d
 			description: [
 				"Heat Sinks will passively increase the rate at which Heat is transferred into the air, helping to cool things back down to ambient temperatures quickly and efficiently."
@@ -1457,8 +1472,8 @@
 					Damage: 0
 				}
 			}
-			x: -10.0d
-			y: -3.0d
+			x: -15.5d
+			y: -10.5d
 			subtitle: "Send Your Armies But They'll Never Be Enough, My Shell's Too Tough"
 			description: [
 				"All pieces may be upgraded to enhance their armor, self-repair, or gilded to prevent Piglin attacks."
@@ -1487,7 +1502,8 @@
 				"● Swim Speed"
 				"● Creative Flight"
 			]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["5E79C1011FABC4AF"]
 			id: "24618E75ADD613FB"
 			tasks: [
 				{
@@ -1571,15 +1587,16 @@
 			]
 		}
 		{
-			x: -11.5d
-			y: -5.0d
+			x: -16.5d
+			y: -10.5d
 			subtitle: "Swiss-Army… Hammer"
 			description: [
 				"A versatile multi-tool capable of clearing large areas with ease. Sneak Right-Click to access the GUI where Drill Bits and Enchanted Books can be installed as well as changing the drill mode."
 				""
 				"Accepts Fortune or Silk Touch books."
 			]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["5E79C1011FABC4AF"]
 			id: "4278BFAD291E036E"
 			tasks: [{
 				id: "2E55FBA7E807FBF4"
@@ -1604,11 +1621,12 @@
 			]
 		}
 		{
-			x: -12.0d
-			y: -3.5d
+			x: -18.0d
+			y: -12.0d
 			subtitle: "Stand and Deliver"
 			description: ["A smart turret that can be filtered to attack only certain creatures. For instance, only adult animals. "]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["5E79C1011FABC4AF"]
 			id: "18953A6862AFCAAA"
 			tasks: [{
 				id: "5E6B9C24EA7622A2"
@@ -1633,15 +1651,16 @@
 			}]
 		}
 		{
-			x: -11.0d
-			y: -3.5d
+			x: -18.0d
+			y: -11.0d
 			subtitle: "Leveling the Playing Field"
 			description: [
 				"A modern solution to monster slaying. Pet friendly too!"
 				""
 				"Add a Security Upgrade to prevent it from harming tamed creatures and fellow players."
 			]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["5E79C1011FABC4AF"]
 			id: "7DBC7707618B7B45"
 			tasks: [{
 				id: "7D4A48B38E6E013F"
@@ -1666,15 +1685,16 @@
 			}]
 		}
 		{
-			x: -13.0d
-			y: -3.0d
+			x: -17.5d
+			y: -13.0d
 			subtitle: "Target Acquired"
 			description: [
 				"Bats. The greatest enemy of them all. Now behold, their doom is in your hands."
 				""
 				"Micromissiles are target seeking explosives. They do no damage to the terrain and can be configured for varying degrees of explosive damage, travel speed, and turn speed. Sneak Right-Click to configure."
 			]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["5E79C1011FABC4AF"]
 			id: "3753EF6387AEA9AB"
 			tasks: [{
 				id: "218E9A870C559B32"
@@ -1697,11 +1717,12 @@
 			}]
 		}
 		{
-			x: -9.5d
-			y: -5.5d
+			x: -14.0d
+			y: -11.0d
 			subtitle: "Reach for the sky!"
 			description: ["Crop Supports promote healthy plant growth, increasing how quickly they grow. "]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["5E79C1011FABC4AF"]
 			id: "181A40B9D19B50E3"
 			tasks: [{
 				id: "6B3AD23FDD8CA720"
@@ -1720,8 +1741,8 @@
 		{
 			title: "Elevators"
 			icon: "pneumaticcraft:elevator_base"
-			x: -9.5d
-			y: -6.5d
+			x: -14.0d
+			y: -12.0d
 			subtitle: "Uplifting News"
 			description: [
 				"The perfect addition to any vertical base of operations, PNC:R Elevators feature an easy to use Elevator Caller which will take the user directly to the requested floor. "
@@ -1730,7 +1751,8 @@
 				""
 				"For more information, refer to the PNC:R manual."
 			]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["5E79C1011FABC4AF"]
 			id: "3137E183B0F0A8BD"
 			tasks: [
 				{
@@ -1759,10 +1781,11 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: -4.5d
+			x: -16.5d
+			y: -6.0d
 			description: ["While capable of doing damage with launched TNT or Arrows, perhaps more interestingly, the Air Cannon can be used for transporting items, mobs, or simply tossing things on the ground for in-world crafting with a flair. "]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["000000000000011D"]
 			id: "26B546F045E43BDE"
 			tasks: [{
 				id: "454C415AAF527DCF"
@@ -1779,9 +1802,10 @@
 			}]
 		}
 		{
-			x: -20.5d
-			y: -6.5d
+			x: -15.5d
+			y: -7.0d
 			description: ["When placed on the side of an inventory or a tank, the Transfer Gadget facilitates the transfer of items and fluids into any adjacent tank. It is a bit slow, but has the benefit of not requiring a block space. "]
+			hide_dependency_lines: true
 			dependencies: ["000000000000011D"]
 			id: "32629D82E446D70B"
 			tasks: [{
@@ -1799,8 +1823,8 @@
 			}]
 		}
 		{
-			x: -11.0d
-			y: -6.0d
+			x: -15.5d
+			y: -11.5d
 			subtitle: "It's Over! I Have the High Ground!"
 			description: [
 				"The Aerial Interface is a powerful personal automation tool. Its sides may be configured to expose the player inventory to automation, allowing for automatic restocking of ammo and other items remotely."
@@ -1809,7 +1833,8 @@
 				""
 				"In addition to this, with a Dispenser Upgrade installed it can automatically feed the player, or interface with their XP, allowing it to be piped in and out as Memory Essence. "
 			]
-			dependencies: ["00000000000000D3"]
+			hide_dependency_lines: true
+			dependencies: ["5E79C1011FABC4AF"]
 			id: "3E610B40E09B7D7D"
 			tasks: [{
 				id: "57145B603FE1D996"
@@ -1837,8 +1862,8 @@
 					}
 				}
 			}
-			x: -21.5d
-			y: -7.0d
+			x: -17.5d
+			y: -7.5d
 			description: [
 				"Frames themselves have robust filtering options built in, but they don’t cover all use cases. "
 				""

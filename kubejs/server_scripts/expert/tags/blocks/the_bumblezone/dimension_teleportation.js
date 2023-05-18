@@ -11,5 +11,5 @@ ServerEvents.tags('block', (event) => {
     // Blocks required under a hive to teleport to the Bumblezone
     event
         .get('the_bumblezone:dimension_teleportation/required_blocks_under_beehive_to_teleport')
-        .add(['powah:blazing_crystal_block']);
+        .add(['mekanism:teleporter']);
 });

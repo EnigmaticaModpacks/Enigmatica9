@@ -12,48 +12,6 @@ ServerEvents.recipes((event) => {
             id_suffix: `ironwood_ingot`
         },
         {
-            output: 'emendatusenigmatica:invar_ingot',
-            input: '#forge:dusts/invar',
-            slag: 'thermal:slag',
-            xp: 0.5,
-            id_suffix: `invar_dust_to_ingot`
-        },
-        {
-            output: 'emendatusenigmatica:constantan_ingot',
-            input: '#forge:dusts/constantan',
-            slag: 'thermal:slag',
-            xp: 0.5,
-            id_suffix: `constantan_dust_to_ingot`
-        },
-        {
-            output: 'emendatusenigmatica:electrum_ingot',
-            input: '#forge:dusts/electrum',
-            slag: 'thermal:slag',
-            xp: 0.5,
-            id_suffix: `electrum_dust_to_ingot`
-        },
-        {
-            output: 'emendatusenigmatica:bronze_ingot',
-            input: '#forge:dusts/bronze',
-            slag: 'thermal:slag',
-            xp: 0.5,
-            id_suffix: `bronze_dust_to_ingot`
-        },
-        {
-            output: 'emendatusenigmatica:aluminum_ingot',
-            input: '#forge:dusts/aluminum',
-            slag: 'thermal:slag',
-            xp: 0.5,
-            id_suffix: `aluminum_dust_to_ingot`
-        },
-        {
-            output: `emendatusenigmatica:osmium_ingot`,
-            input: `#mekanism:dirty_dusts/osmium`,
-            slag: 'thermal:slag',
-            xp: 0.5,
-            id_suffix: `osmium_ingot_from_dirty_dust`
-        },
-        {
             output: `emendatusenigmatica:nickel_ingot`,
             input: `#mekanism:dirty_dusts/nickel`,
             slag: 'thermal:rich_slag',
@@ -66,10 +24,32 @@ ServerEvents.recipes((event) => {
             slag: 'thermal:rich_slag',
             xp: 0.5,
             id_suffix: `nickel_clump_from_raw_ore`
+        },
+        {
+            output: `twilightforest:knightmetal_ingot`,
+            input: `#forge:ores/knightmetal`,
+            slag: 'thermal:slag',
+            xp: 0.5,
+            id_suffix: `knightmetal_ingot_from_shard_cluster`
+        },
+        {
+            output: '4x occultism:burnt_otherstone',
+            input: 'occultism:otherstone',
+            slag: 'thermal:slag',
+            xp: 0.5,
+            id: `burnt_otherstone`
+        },
+        {
+            output: `emendatusenigmatica:iesnium_ingot`,
+            input: `#mekanism:dirty_dusts/iesnium`,
+            slag: 'thermal:rich_slag',
+            xp: 0.5,
+            id_suffix: `iesnium_ingot_from_dirty_dust`
         }
     ];
 
     simple_metals.forEach((metal) => {
+        let preferredIngot = AlmostUnified.getPreferredItemForTag(`forge:ingots/${metal}`).getId();
         recipes.push(
             {
                 output: `emendatusenigmatica:${metal}_clump`,
@@ -79,13 +59,27 @@ ServerEvents.recipes((event) => {
                 id_suffix: `clump_${metal}_from_crushed_ore`
             },
             {
-                output: metal == "gold" ? 'minecraft:gold_ingot': `emendatusenigmatica:${metal}_ingot`,
+                output: preferredIngot,
                 input: `emendatusenigmatica:${metal}_dirty_dust`,
                 slag: 'thermal:slag',
                 xp: 0.5,
                 id_suffix: `${metal}_ingot_from_dirty_dust`
             }
         );
+    });
+
+    const metals = Object.keys(metal_properties);
+    metals.forEach((metal) => {
+        let preferredIngot = AlmostUnified.getPreferredItemForTag(`forge:ingots/${metal}`).getId();
+        if (Item.exists(`emendatusenigmatica:${metal}_dust`)) {
+            recipes.push({
+                output: preferredIngot,
+                input: `#forge:dusts/${metal}`,
+                slag: 'thermal:slag',
+                xp: 0.5,
+                id_suffix: `${metal}_ingot_from_dust`
+            });
+        }
     });
 
     recipes.forEach((recipe) => {
@@ -103,14 +97,6 @@ ServerEvents.recipes((event) => {
                 energy_mod: 2.0
             })
             .id(`${id_prefix}thermal_smelting/${recipe.id_suffix}`);
-
-        event
-            .custom({
-                type: 'mekanism:smelting',
-                output: Item.of(recipe.output).toJson(),
-                input: { ingredient: Ingredient.of(recipe.input).toJson() }
-            })
-            .id(`${id_prefix}mekanism_smelting/${recipe.id_suffix}`);
 
         event
             .custom({

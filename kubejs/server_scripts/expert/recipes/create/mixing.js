@@ -133,7 +133,7 @@ ServerEvents.recipes((event) => {
             ingredients: [{ tag: 'forge:essences/manipulation' }, { amount: 1000, fluidTag: 'forge:brine' }],
             results: [
                 { item: 'mekanism:dust_lithium', count: 4 },
-                { item: 'emendatusenigmatica:iesnium_dust', count: 3 }
+                { item: 'emendatusenigmatica:iesnium_dirty_dust', count: 1 }
             ],
             heatRequirement: 'superheated',
             id: `${id_prefix}iesnium_lithium_salt`

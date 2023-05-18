@@ -1,7 +1,7 @@
 {
 	id: "000000000000016E"
 	group: "72A9465344128AF9"
-	order_index: 6
+	order_index: 11
 	filename: "powah"
 	title: "Powah!"
 	icon: "powah:dielectric_casing"
@@ -13,12 +13,14 @@
 			icon: "powah:book"
 			x: 4.5d
 			y: -0.5d
-			shape: "hexagon"
+			shape: "gear"
 			description: [
 				"As the name implies, Powah! is all about generating, storing, and transmitting power through various means. "
 				""
 				"In addition, it offers a few unique mechanics and a variety of new materials to go along with its various tiers. Read along to discover more. "
 			]
+			dependencies: ["0E45018D600614BA"]
+			hide: true
 			min_width: 250
 			id: "000000000000016F"
 			tasks: [{
@@ -44,6 +46,7 @@
 			icon: "powah:dielectric_casing"
 			x: 9.5d
 			y: 1.0d
+			shape: "hexagon"
 			description: ["An energy generating mod would hardly be complete without some ways to transmit and store it. Powah comes with everything from personal batteries to charge held items to cables and in world storage cells. "]
 			hide_dependency_lines: true
 			dependencies: ["000000000000016F"]
@@ -494,6 +497,7 @@
 			icon: "powah:energizing_orb"
 			x: 4.5d
 			y: 1.0d
+			shape: "hexagon"
 			description: [
 				"Powah introduces just a few types of machines, but multiple tiers of each. Obtaining higher tiers requires more powerful materials which are made with the Energizing Orb."
 				""
@@ -1041,6 +1045,7 @@
 			title: "Getting Started: Power Generation"
 			x: 0.0d
 			y: 1.0d
+			shape: "hexagon"
 			description: ["Powah offers five different generators, each situationally useful. Consider the application wisely when choosing which to use. "]
 			hide_dependency_lines: true
 			dependencies: ["000000000000016F"]

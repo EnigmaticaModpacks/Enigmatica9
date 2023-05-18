@@ -1,6 +1,10 @@
 ServerEvents.genericLootTables((event) => {
     event.addGeneric(`twilightforest:structures/hill_3`, (table) => {
         table.addPool((pool) => {
+            pool.addItem('minecraft:amethyst_shard', 75, [8, 32]);
+        });
+
+        table.addPool((pool) => {
             pool.rolls = [4, 6];
             pool.addEntry({ type: 'loot_table', weight: 25, name: 'twilightforest:structures/useless' });
             pool.addItem('emendatusenigmatica:raw_iron', 75, [1, 6]);

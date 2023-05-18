@@ -1,7 +1,7 @@
 {
 	id: "0000000000000CB0"
 	group: "5A8B89F87F77CF4C"
-	order_index: 3
+	order_index: 6
 	filename: "occultism"
 	title: "Occultism"
 	icon: {
@@ -20,12 +20,14 @@
 			icon: "occultism:dictionary_of_spirits"
 			x: 13.0d
 			y: -0.5d
-			shape: "hexagon"
+			shape: "gear"
 			description: [
 				"With Occultism, the Otherworld and its denizens are at your beck and call. From the simple Familiars to grant a variety of combat bonuses, to Ore Crushing Spirits for early ore processing and powerful Djinni Miners to gather valuable materials at your behest, Occultism has something for everyone. "
 				""
 				"The Dictionary of Spirits has everything needed to get started on the path, and acts both as a guide and as a crafting ingredient for obtaining the names of spirits. "
 			]
+			dependencies: ["0E45018D600614BA"]
+			hide: true
 			id: "0000000000000CB1"
 			tasks: [{
 				id: "379B9C805D818944"
@@ -43,6 +45,7 @@
 			icon: "occultism:spirit_fire"
 			x: 13.0d
 			y: 1.0d
+			shape: "hexagon"
 			subtitle: "Burnin' For You"
 			description: [
 				"Thought to be a native plant of the Otherworld gifted by the Spirits ages ago to initiate trade between worlds, Demon’s Dream is a potent fruit with several unique properties that have been used by practitioners throughout the ages."
@@ -111,9 +114,8 @@
 		{
 			title: "Summon Foliot Crusher"
 			icon: "emendatusenigmatica:iron_ore"
-			x: 16.5d
-			y: 11.0d
-			shape: "hexagon"
+			x: 17.0d
+			y: 3.5d
 			subtitle: "Working up an Apatite"
 			description: [
 				"When one operates outside of time, digging through a rock sample to extract every useful bit of material is a trivial task. Increasingly powerful spirits will be able to obtain even greater yields from a given sample. "
@@ -142,8 +144,8 @@
 		{
 			title: "Candles"
 			icon: "minecraft:purple_candle"
-			x: 12.0d
-			y: 5.5d
+			x: 11.5d
+			y: 3.5d
 			subtitle: "Standard Candle"
 			description: [
 				"Candles are another item used in most ritual pentacles. They are made from the tallow you get by slaughtering pigs, cows, sheep, and other such animals."
@@ -202,7 +204,7 @@
 		{
 			title: "Occult Materials"
 			x: 13.0d
-			y: 3.0d
+			y: 2.0d
 			description: [
 				"Communication and Trade with the Otherworld are feasible and safe for the acolyte, though some specialized materials will be required to begin. "
 				""
@@ -254,12 +256,11 @@
 		}
 		{
 			title: "White Chalk"
-			x: 15.0d
-			y: 2.0d
+			x: 12.0d
+			y: 2.5d
 			subtitle: "Returning to the Chalk"
 			description: ["While found in most known pentacles, White Chalk alone only has limited binding power. Still, it may be used for basic rituals until additional materials may be secured. "]
-			hide_dependency_lines: true
-			dependencies: ["0000000000000D96"]
+			dependencies: ["0000000000000DD8"]
 			id: "0000000000000D9A"
 			tasks: [{
 				id: "0000000000000D9B"
@@ -290,12 +291,11 @@
 		}
 		{
 			title: "Golden Chalk"
-			x: 15.0d
-			y: 3.0d
+			x: 12.0d
+			y: 4.5d
 			subtitle: "All Chalks of Life"
 			description: ["Including rare and expensive materials into the Chalk allows it to create a stronger connection with the Otherworld, allowing Spirits to be bound directly into items to enhance them."]
-			hide_dependency_lines: true
-			dependencies: ["0000000000000D96"]
+			dependencies: ["0000000000000DD8"]
 			id: "0000000000000D9C"
 			tasks: [{
 				id: "0000000000000D9D"
@@ -328,16 +328,15 @@
 			]
 		}
 		{
-			x: 15.0d
-			y: 4.0d
+			x: 14.0d
+			y: 2.5d
 			subtitle: "... And The Moon Went With Him"
 			description: [
 				"With a strong extra-planar component, Purple Chalk helps bind increasingly powerful Spirits. "
 				""
 				"Rituals that make use of Purple Chalk are not without risk, however, and some caution would be wise when dealing with some of these Spirits; not all are so amicable to being called to this realm. "
 			]
-			hide_dependency_lines: true
-			dependencies: ["0000000000000D96"]
+			dependencies: ["0000000000000DD8"]
 			id: "0000000000000D9E"
 			tasks: [{
 				id: "0000000000000D9F"
@@ -370,12 +369,11 @@
 			]
 		}
 		{
-			x: 15.0d
-			y: 5.0d
+			x: 14.0d
+			y: 4.5d
 			subtitle: "Culture Chalk"
 			description: ["Infused with the very essence of powerful spirits, Red Chalk is used as a final layer of protection in the most powerful of summoning circles. "]
-			hide_dependency_lines: true
-			dependencies: ["0000000000000D96"]
+			dependencies: ["0000000000000DD8"]
 			id: "0000000000000DA0"
 			tasks: [{
 				id: "0000000000000DA1"
@@ -410,8 +408,7 @@
 		{
 			title: "Cross-Dimensional Storage"
 			x: 8.0d
-			y: 9.0d
-			shape: "hexagon"
+			y: 2.0d
 			subtitle: "Truly Out of This World"
 			description: [
 				"Truly mind-bending magic, the Dimensional Storage Actuator claims a pocket of the Otherworld and makes it accessible from anywhere. "
@@ -422,10 +419,7 @@
 				""
 				"They may be picked up and moved without concern for their contents; everything will be right where it was left when the Storage Actuator is placed back down. Anything linked to the Actuator, such as Wormholes, will need to be rebound, however. "
 			]
-			dependencies: [
-				"6A1D5A9B037CB379"
-				"530BB11487524556"
-			]
+			dependencies: ["6A1D5A9B037CB379"]
 			dependency_requirement: "one_completed"
 			min_width: 300
 			id: "0000000000000DA4"
@@ -445,8 +439,7 @@
 		}
 		{
 			x: 7.5d
-			y: 11.5d
-			shape: "hexagon"
+			y: 4.5d
 			subtitle: "Taking the broader view"
 			description: [
 				"Storage Stabilizers are used to expand the internal storage of the Storage Actuator’s space by maintaining the integrity of the dimensional pocket. "
@@ -482,8 +475,7 @@
 		}
 		{
 			x: 8.5d
-			y: 11.5d
-			shape: "hexagon"
+			y: 4.5d
 			subtitle: "Expanding horizons"
 			description: ["Using the resonant properties of Iesnium to strengthen the stabilization field, these Stabilizers are the most powerful known and expand the Storage Actuator to incredible capacity. "]
 			dependencies: ["0000000000000DA8"]
@@ -503,9 +495,8 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: 9.5d
-			shape: "hexagon"
+			x: 7.0d
+			y: 2.5d
 			subtitle: "Overstepping boundaries"
 			description: [
 				"A small hand-held device that grants the bearer a portable link to the Storage Actuator it is bound to. "
@@ -534,8 +525,7 @@
 		}
 		{
 			x: 8.0d
-			y: 10.5d
-			shape: "hexagon"
+			y: 3.5d
 			subtitle: "Bigger on the inside"
 			description: [
 				"A portable hole that may be placed anywhere, granting access to the bound Storage Actuator. These are accessible by automation such as pipes or Transporter Foliots, allowing simple long-distance transport of materials."
@@ -577,8 +567,7 @@
 		{
 			title: "Soul Gem"
 			x: 18.0d
-			y: 9.0d
-			shape: "hexagon"
+			y: 2.0d
 			subtitle: "How Captivating"
 			description: [
 				"A minor trinket with powerful implications, the Soul Gem is effectively a small gateway to the Otherworld, allowing one creature to be put into a form of stasis in the Other Place. "
@@ -616,9 +605,8 @@
 					Damage: 0
 				}
 			}
-			x: 11.0d
-			y: 3.0d
-			shape: "hexagon"
+			x: 15.0d
+			y: 6.5d
 			subtitle: "Cautiously Optimistic"
 			description: [
 				"Though the Divination Rod is sufficient for locating Iesnium Ore, the process is slow and requires a keen eye. The Spirits of the Otherworld may be employed to make the process somewhat easier, however. "
@@ -659,8 +647,8 @@
 			]
 		}
 		{
-			x: 11.0d
-			y: 5.0d
+			x: 15.5d
+			y: 7.5d
 			description: ["The Iesnium Pickaxe has the same stats as a normal diamond pickaxe with the added bonus that it is able to mine Iesnium Ore."]
 			dependencies: ["0000000000000DD0"]
 			id: "0000000000000DC2"
@@ -697,9 +685,8 @@
 		{
 			title: "Crushed End Stone"
 			icon: "occultism:crushed_end_stone"
-			x: 13.0d
-			y: 6.5d
-			shape: "hexagon"
+			x: 10.5d
+			y: 5.5d
 			subtitle: "Stairway to the Stars"
 			description: [
 				"Summoning the Possessed Endermite allows the budding practitioner to easily access a rare component required for some rituals: End Stone."
@@ -737,9 +724,8 @@
 		{
 			title: "Skeleton Skulls"
 			icon: "minecraft:skeleton_skull"
-			x: 12.0d
-			y: 7.0d
-			shape: "hexagon"
+			x: 9.5d
+			y: 6.0d
 			subtitle: "We'll beheading off, then"
 			description: ["Skulls are used for several Ritual Pentacles and obtaining them isn’t always easy. Enlist the assistance of the Otherworld to summon forth a Skeleton with a surplus of skulls. "]
 			hide_dependency_lines: true
@@ -772,9 +758,8 @@
 		{
 			title: "Ender Pearls"
 			icon: "minecraft:ender_pearl"
-			x: 15.0d
-			y: 7.5d
-			shape: "hexagon"
+			x: 11.5d
+			y: 7.0d
 			subtitle: "Black Oyster Occult"
 			description: [
 				"Enderpearls are potent objects of alchemical importance. Though they may be retrieved from the rare Enderman that finds itself in our plane, they’re not exactly guaranteed to have one."
@@ -812,9 +797,8 @@
 		}
 		{
 			icon: "occultism:dimensional_mineshaft"
-			x: 19.5d
-			y: 11.0d
-			shape: "hexagon"
+			x: 19.0d
+			y: 3.5d
 			subtitle: "They all have their faults"
 			description: [
 				"The Dimensional Mineshaft opens tiny rifts throughout the planes, giving industrious Spirits access to all sorts of precious materials. Materials they’ll gladly share, as they’re unable to access them without assistance. "
@@ -865,9 +849,8 @@
 			]
 		}
 		{
-			x: 20.5d
-			y: 11.5d
-			shape: "hexagon"
+			x: 19.0d
+			y: 4.5d
 			subtitle: "Try not to take them for Granite"
 			description: ["The pinnacle in Spirit based mining, Marids keen sense and patience mean they find ores that lesser Spirits would overlook. "]
 			dependencies: ["0000000000000DCA"]
@@ -906,9 +889,8 @@
 			]
 		}
 		{
-			x: 11.0d
-			y: 4.0d
-			shape: "hexagon"
+			x: 16.0d
+			y: 6.5d
 			description: [
 				"As if it weren’t complicated enough already, what with all the divination and second sight required to locate and see Iesnium Ore, mining it also requires specially attuned tools to prevent it from settling permanently into Netherrack. "
 				""
@@ -939,8 +921,8 @@
 			}]
 		}
 		{
-			x: 14.0d
-			y: 5.5d
+			x: 14.5d
+			y: 3.5d
 			subtitle: "Discordant Resonance"
 			description: ["Resonating with Otherworldly energies, these Attuned Crystals are a simple yet effective method of stabilizing rituals, adding one more layer of protection to the practitioner. "]
 			dependencies: ["0000000000000DD8"]
@@ -963,7 +945,7 @@
 			title: "Sacrificial Bowls"
 			icon: "occultism:golden_sacrificial_bowl"
 			x: 13.0d
-			y: 4.5d
+			y: 3.5d
 			description: [
 				"It is common for young practitioners to believe they’re commanding the Spirits, bending them to their will. This is misguided, however. In truth, the Spirits are long lived creatures whose very perception of time differs wildly from our own, short lived as we are. "
 				""
@@ -974,10 +956,7 @@
 				"The item for the Golden Sacrificial Bowl must be placed last; this will trigger the ritual if everything else is correctly placed. If the ritual demands the sacrifice of a creature or use of an item, these actions are to be performed after the ritual is activated and must be performed within eight blocks of the Golden Sacrificial Bowl. "
 			]
 			hide_dependency_lines: true
-			dependencies: [
-				"0000000000000CB1"
-				"0000000000000D9A"
-			]
+			dependencies: ["0000000000000CB1"]
 			min_width: 300
 			id: "0000000000000DD8"
 			tasks: [
@@ -1005,8 +984,7 @@
 			title: "Weather Rituals"
 			icon: "minecraft:sunflower"
 			x: 19.0d
-			y: 9.5d
-			shape: "hexagon"
+			y: 2.5d
 			subtitle: "Blossoming even as we gaze"
 			description: [
 				"Certain spirits have the ability to control the weather in our world."
@@ -1066,8 +1044,7 @@
 			title: "Celestial Rituals"
 			icon: "minecraft:clock"
 			x: 17.0d
-			y: 9.5d
-			shape: "hexagon"
+			y: 2.5d
 			subtitle: "Swiftly flow the days"
 			description: [
 				"For timeless beings such as the Otherworld Spirits, there is little distinction between Past and Present. They are aware of our perception of time, but for them the difference is closer to our perception of Up and Down; moving to another place in time is as simple for them as for us to climb a hill. "
@@ -1112,9 +1089,8 @@
 		{
 			title: "Afrit Essence"
 			icon: "occultism:afrit_essence"
-			x: 13.0d
+			x: 10.5d
 			y: 7.5d
-			shape: "hexagon"
 			subtitle: "Dominance and Submission"
 			description: [
 				"A potent binding agent primarily used in the manufacture of Red Chalk, Afrit Essence may only be obtained by besting an Afrit in Combat, which requires summoning said Afrit in a broken Pentacle that leaves the practitioner unprotected and at the mercy of these powerful foes. "
@@ -1153,9 +1129,8 @@
 		{
 			title: "Wither Skeleton Skulls"
 			icon: "minecraft:wither_skeleton_skull"
-			x: 14.0d
-			y: 7.0d
-			shape: "hexagon"
+			x: 11.5d
+			y: 6.0d
 			subtitle: "Getting ahead in life"
 			description: [
 				"The Wild Hunt’s Horns strike fear into the hearts of most who hear its call, knowing that suffering and death soon follow in their wake. Intentionally calling them forth to do battle would be foolhardy at best."
@@ -1195,8 +1170,9 @@
 		{
 			title: "Getting Started: Iesnium Ore"
 			icon: "occultism:iesnium_ore"
-			x: 11.0d
-			y: 2.0d
+			x: 15.5d
+			y: 5.5d
+			shape: "hexagon"
 			description: [
 				"The strange material dubbed Iesnium has been known to seep into the Nether from the Otherworld. Early alchemists were hesitant to even declare it a metal as, despite its hardness and malleability, it always appears as if it is flowing slowly. "
 				""
@@ -1239,9 +1215,8 @@
 		{
 			title: "Summon Foliot Transporting Spirit"
 			icon: "minecraft:chest_minecart"
-			x: 10.5d
-			y: 10.5d
-			shape: "hexagon"
+			x: 9.5d
+			y: 3.5d
 			subtitle: "Keep on truckin'"
 			description: [
 				"Once a common sight around any practitioner’s workshop, Foliot Transporters are quick and intelligent, and will keep items stocked where needed. "
@@ -1271,9 +1246,8 @@
 		{
 			title: "Summon Djinni Machine Operator"
 			icon: "minecraft:furnace"
-			x: 9.5d
-			y: 9.5d
-			shape: "hexagon"
+			x: 9.0d
+			y: 2.5d
 			subtitle: "I Better Be Gettin' Overtime For This..."
 			description: [
 				"The Djinni Machine Operator Spirit is used with the Dimensional Storage Actuator as a basic form of autocrafting."
@@ -1300,7 +1274,7 @@
 		}
 		{
 			x: 18.0d
-			y: 12.0d
+			y: 4.0d
 			subtitle: "Shoulda put a ring on it"
 			description: [
 				"Some Familiars lend themselves more to combat situations than others. For those that grant simple bonuses, it is sometimes preferred to keep them in a ring where they can safely provide their bonus without the risk of catching a stray arrow. "
@@ -1337,9 +1311,8 @@
 		{
 			title: "Summon Marid Crusher"
 			icon: "occultism:iesnium_ore"
-			x: 15.5d
-			y: 11.5d
-			shape: "hexagon"
+			x: 17.0d
+			y: 4.5d
 			subtitle: "Good at mining their own business"
 			description: ["Though rarely seen, Marid are known to be incredibly patient and meticulous, extracting even the finest of particles of material. "]
 			hide_dependency_lines: true
@@ -1373,9 +1346,8 @@
 		{
 			title: "Summon Foliot Janitor"
 			icon: "occultism:brush"
-			x: 5.5d
-			y: 10.5d
-			shape: "hexagon"
+			x: 6.5d
+			y: 3.5d
 			subtitle: "My job. Toilets 'n boilers, boilers 'n toilets. Plus that one boilin' toilet. Fire me if'n you dare."
 			description: [
 				"The Foliot Janitor pairs nicely with Crusher Spirits, or anything else that likes to dump things all over the ground. It will quickly retrieve items and deposit them into a specified inventory or Stable Wormhole."
@@ -1406,8 +1378,7 @@
 			title: "Familiars"
 			icon: "occultism:ritual_dummy/custom_ritual"
 			x: 18.0d
-			y: 10.5d
-			shape: "hexagon"
+			y: 3.0d
 			description: [
 				"By sacrificing a life to the Otherworld, some truly magnificent friends may be called forth, granting permanent boons or even fighting alongside their master until their corporeal form can no longer maintain itself and the Spirit slips back to the Other Place. "
 				""
@@ -1460,9 +1431,8 @@
 		{
 			title: "Ghast Tears"
 			icon: "minecraft:ghast_tear"
-			x: 11.0d
-			y: 7.5d
-			shape: "hexagon"
+			x: 9.5d
+			y: 7.0d
 			subtitle: "The Great Ghastly"
 			description: ["For a creature that spends most of its time wailing, Ghast Tears are seemingly in short supply. With the assistance of the Otherworld, however, a perfectly teary eyed Ghast may be brought forth."]
 			hide_dependency_lines: true
@@ -1487,7 +1457,8 @@
 			title: "Tools and Utility"
 			icon: "occultism:spirit_lantern"
 			x: 18.0d
-			y: 8.0d
+			y: 1.0d
+			shape: "hexagon"
 			description: ["From material processing and automated mining to celestial manipulation, Occultism has a great deal of utility to provide. Explore some of the options in the following quests. "]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000DD8"]
@@ -1516,7 +1487,8 @@
 				}
 			}
 			x: 8.0d
-			y: 8.0d
+			y: 1.0d
+			shape: "hexagon"
 			description: ["Occultism has a lot to offer in terms of storage and item logistics. The following quests will cover a few of the more notable features."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000DD8"]

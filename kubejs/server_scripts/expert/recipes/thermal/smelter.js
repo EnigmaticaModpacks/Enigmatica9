@@ -155,10 +155,22 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}dynamo_fuel_augment`
         },
         {
-            inputs: ['minecraft:netherite_scrap', '4x #forge:ingots/iesnium'],
-            outputs: ['4x minecraft:netherite_ingot'],
+            inputs: ['minecraft:netherite_scrap', '4x #forge:ingots/soul_steel'],
+            outputs: [`4x ${AlmostUnified.getPreferredItemForTag(`forge:ingots/netherite`).getId()}`],
             energy: 20000,
             id: `${id_prefix}netherite_ingot`
+        },
+        {
+            inputs: ['pneumaticcraft:logistics_core', 'ae2:singularity', 'mekanism:teleportation_core'],
+            outputs: ['2x kubejs:energetic_transference_matrix'],
+            energy: 8000,
+            id: `${id_prefix}energetic_transference_matrix`
+        },
+        {
+            inputs: ['4x minecraft:echo_shard', '#forge:ingots/iesnium'],
+            outputs: ['naturesaura:depth_ingot'],
+            energy: 8000,
+            id: `${id_prefix}depth_ingot`
         }
     ];
 

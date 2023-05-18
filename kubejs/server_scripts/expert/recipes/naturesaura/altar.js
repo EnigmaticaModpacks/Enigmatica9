@@ -65,6 +65,22 @@ ServerEvents.recipes((event) => {
             aura: 300,
             time: 5,
             id: `${id_prefix}deep_aquachow`
+        },
+        {
+            output: '4x byg:subzero_crystal_shard',
+            input: '#forge:storage_blocks/therium',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 15000,
+            time: 80,
+            id: `${id_prefix}subzero_crystal_shard`
+        },
+        {
+            output: '4x byg:therium_crystal_shard',
+            input: '#forge:storage_blocks/subzero',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 15000,
+            time: 80,
+            id: `${id_prefix}therium_crystal_shard`
         }
     ];
 

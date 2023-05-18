@@ -5,13 +5,13 @@
 	fluid_to_source = []
 	#Transfer rate of the fluid starbuncles
 	#Range: > 1
-	starbucket_ratio = 16000
+	starbucket_ratio = 128000
 	#Transfer rate of the energy starbuncles
 	#Range: > 1
-	starbattery_ratio = 500000
+	starbattery_ratio = 2048000
 	#Transfer rate of the gas starbuncles
 	#Range: > 1
-	starballoon_ratio = 16000
+	starballoon_ratio = 128000
 	#Threshold of the fluid starbuncles, lower this if you need them to check and fill more often.
 	#Range: > 1
 	starbucket_threshold = 250

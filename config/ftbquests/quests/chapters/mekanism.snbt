@@ -1,7 +1,7 @@
 {
 	id: "00000000000000A5"
 	group: "72A9465344128AF9"
-	order_index: 4
+	order_index: 7
 	filename: "mekanism"
 	title: "Mekanism"
 	icon: "mekanism:alloy_atomic"
@@ -12,7 +12,7 @@
 			title: "Mekanism"
 			x: 1.5d
 			y: -3.0d
-			shape: "hexagon"
+			shape: "gear"
 			description: [
 				"A Sci-Fi themed technology mod with an emphasis on the extreme, Mekanism focuses on creating efficiencies, whether in the form of increased output from ores to advanced fusion reactors to power your base."
 				""
@@ -22,7 +22,8 @@
 				""
 				"{\"text\":\"Mekanism Wiki\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com\"}}"
 			]
-			optional: true
+			dependencies: ["0E45018D600614BA"]
+			hide: true
 			id: "00000000000006A1"
 			tasks: [{
 				id: "00000000000006A2"
@@ -41,15 +42,17 @@
 			icon: "mekanism:alloy_infused"
 			x: 6.5d
 			y: -1.5d
+			shape: "hexagon"
 			description: [
 				"As noted, Mekanism maintains a strong focus on efficiencies throughout the mod. As machines are upgraded and more systems put in place, they become more efficient, more productive, and cheaper to run."
 				""
 				"Focusing on being efficient from the very start will ultimately pay off in the long run."
 			]
-			dependencies: ["00000000000006A2"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A1"]
 			id: "00000000000006A5"
 			tasks: [{
-				id: "5CB3E59893073F9E"
+				id: "5A6C174601AF0F29"
 				type: "item"
 				title: "Material Processing"
 				item: "minecraft:redstone"
@@ -61,12 +64,14 @@
 			icon: "engineersdecor:sign_hotwire"
 			x: -3.5d
 			y: 4.0d
+			shape: "hexagon"
 			description: [
 				"That little Gas-Burning Generator is probably doing OK up to this point. One could be excused for thinking it's enough."
 				""
 				"Certain high-tier crafts will require substances currently out of our reach, and obtaining them is going to require extreme amounts of energy."
 			]
-			dependencies: ["00000000000006B4"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006BA"]
 			min_width: 250
 			id: "00000000000006A7"
 			tasks: [{
@@ -92,7 +97,7 @@
 				""
 				"Solid fuel may also be fed into the device, where it is converted to lava and 'burned' for energy. Combining both the passive and active generation methods will produce more power than either method on its own."
 			]
-			dependencies: ["44FDF3C32E3A98CF"]
+			dependencies: ["00000000000006BA"]
 			min_width: 250
 			id: "00000000000006AF"
 			tasks: [{
@@ -125,7 +130,7 @@
 				""
 				"Even at sea-level this will out-produce the heat generator's passive mode, however placing it higher in the world allows it to generate even more."
 			]
-			dependencies: ["44FDF3C32E3A98CF"]
+			dependencies: ["00000000000006BA"]
 			id: "00000000000006B1"
 			tasks: [{
 				id: "00000000000006B2"
@@ -155,7 +160,7 @@
 			y: 2.5d
 			subtitle: "Frightening Efficiency"
 			description: ["The Gas-Burning Generator primarily burns Ethylene to produce energy, however it can also be used to burn excess Hydrogen. Hydrogen itself produces no net gain in power, instead serving as a useful energy storage medium."]
-			dependencies: ["44FDF3C32E3A98CF"]
+			dependencies: ["00000000000006BA"]
 			id: "00000000000006B3"
 			tasks: [{
 				id: "00000000000006B4"
@@ -190,7 +195,7 @@
 				""
 				"It’s worth noting that the current fill level of an Induction Matrix may be read with a Comparator on an Induction Port; very useful for turning power production down or off when it is nearly full."
 			]
-			dependencies: ["2FB7EAFFAE541168"]
+			dependencies: ["3AA57306A4EAE317"]
 			min_width: 250
 			id: "00000000000006B5"
 			tasks: [
@@ -288,15 +293,17 @@
 			}
 			x: -3.5d
 			y: -1.5d
+			shape: "hexagon"
 			description: [
 				"It is possible to bootstrap power production by feeding Redstone dust directly into the power slot in Mekanism machines."
 				""
 				"This would be wasteful and inefficient, however. There are far more efficient ways to proceed."
 			]
-			dependencies: ["00000000000006A2"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A1"]
 			id: "00000000000006BA"
 			tasks: [{
-				id: "44FDF3C32E3A98CF"
+				id: "3BB7DEB15E30686E"
 				type: "item"
 				title: "Power Generation"
 				item: "minecraft:redstone"
@@ -466,7 +473,8 @@
 				""
 				"A variety of crushed materials are used throughout Mekanism, so a Crusher will be invaluable moving forward."
 			]
-			dependencies: ["5CB3E59893073F9E"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A5"]
 			id: "00000000000006C1"
 			tasks: [{
 				id: "00000000000006C2"
@@ -515,7 +523,8 @@
 			y: 4.0d
 			subtitle: "Pushing Down On Me, Pressing Down On You"
 			description: ["Certain chemical reactions only occur at greater pressures and the PRC can be used to facilitate them."]
-			dependencies: ["5CB3E59893073F9E"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A5"]
 			id: "00000000000006C3"
 			tasks: [{
 				id: "00000000000006C4"
@@ -536,7 +545,8 @@
 			y: 3.0d
 			subtitle: "Organic Blend"
 			description: ["Obsidian and Glowstone by themselves are brittle materials, despite their interesting properties. By refining them and bonding them with a substrate such as Osmium, they create alloys that are easier to work with while maintaining their unique nature."]
-			dependencies: ["5CB3E59893073F9E"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A5"]
 			id: "00000000000006C5"
 			tasks: [{
 				id: "00000000000006C6"
@@ -596,7 +606,8 @@
 				""
 				"Water or other fluids may then be piped in to one of the other Valves. As the Water heats, it will be converted to Brine which may then be piped out of the third Valve."
 			]
-			dependencies: ["5CB3E59893073F9E"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A5"]
 			min_width: 300
 			id: "00000000000006C7"
 			tasks: [
@@ -649,7 +660,8 @@
 				""
 				"Note that while Energy and Speed upgrades have no impact on the amount of Hydrogen that’s produced for a given amount of FE, they do still speed up the machine and both are required to run this machine at its fastest."
 			]
-			dependencies: ["5CB3E59893073F9E"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A5"]
 			id: "00000000000006CE"
 			tasks: [{
 				id: "00000000000006CF"
@@ -840,7 +852,7 @@
 				""
 				"Lastly, waste stored in such barrels will slowly and safely dissipate. So if the intent is to process it further, the safest course of action is to simply pipe it straight into machines."
 			]
-			dependencies: ["35157B8043AA3B0E"]
+			dependencies: ["6A35E77009D40D37"]
 			min_width: 250
 			id: "00000000000007A5"
 			tasks: [{
@@ -913,7 +925,8 @@
 				""
 				"Adding more Ports with Supercharged Ports attached to them will allow the machine to run faster, assuming of course that sufficient power and waste can be supplied."
 			]
-			dependencies: ["5CB3E59893073F9E"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A5"]
 			min_width: 275
 			id: "00000000000007B1"
 			tasks: [
@@ -1130,7 +1143,8 @@
 				""
 				"What they failed to understand was the vast amount of energy that would be required to do so."
 			]
-			dependencies: ["5CB3E59893073F9E"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A5"]
 			id: "00000000000007C5"
 			tasks: [{
 				id: "00000000000007C6"
@@ -1149,7 +1163,7 @@
 		{
 			icon: "mekanism:qio_drive_array"
 			x: 1.5d
-			y: 2.5d
+			y: 3.0d
 			shape: "circle"
 			subtitle: "Bigger on the Inside"
 			description: [
@@ -1157,10 +1171,8 @@
 				""
 				"It’s also fully compatible with Applied Energistics 2. Simply place a configured QIO Dashboard on an ME Storage Bus to grant AE2 full access to the entire contents of the QIO system."
 			]
-			dependencies: [
-				"6515A1D74E64D5AF"
-				"530BB11487524556"
-			]
+			hide_dependency_lines: true
+			dependencies: ["169A1D98A59A0961"]
 			dependency_requirement: "one_completed"
 			id: "00000000000007C7"
 			tasks: [
@@ -1216,7 +1228,7 @@
 			]
 		}
 		{
-			x: 1.0d
+			x: 0.5d
 			y: 3.5d
 			subtitle: "Remote Viewing"
 			description: [
@@ -1242,7 +1254,7 @@
 		}
 		{
 			title: "QIO Importing and Exporting"
-			x: 2.0d
+			x: 2.5d
 			y: 3.5d
 			subtitle: "Garbage In, Garbage Out"
 			description: [
@@ -1348,7 +1360,8 @@
 				""
 				"Redeemable once only."
 			]
-			dependencies: ["00000000000006A8"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A7"]
 			optional: true
 			id: "00000000000007E4"
 			tasks: [
@@ -1451,7 +1464,8 @@
 				""
 				"Similarly, Sneak + Right-Clicking the air with the gauge dropper will void whatever is currently stored."
 			]
-			dependencies: ["5CB3E59893073F9E"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A5"]
 			min_width: 300
 			id: "1100DDF4FA8D31C3"
 			tasks: [{
@@ -1479,7 +1493,8 @@
 				""
 				"To apply a Tier Installer, simply Sneak + Right-Click on a machine place in-world. Tiers must be installed in order, no skipping tiers!"
 			]
-			dependencies: ["5CB3E59893073F9E"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A5"]
 			min_width: 300
 			id: "6AA3DA7395582D75"
 			tasks: [{
@@ -1537,7 +1552,9 @@
 			y: 3.0d
 			subtitle: "Your Arm's Off!"
 			description: ["Making planks with hand tools is so last century, and incredibly wasteful. Obtain more for the effort and recover some of the loss by finding uses for the leftover saw dust."]
-			dependencies: ["5CB3E59893073F9E"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A5"]
+			dependency_requirement: "all_started"
 			id: "46314C0EADF8EBAA"
 			tasks: [{
 				id: "02D13AC31BDBC8A2"
@@ -1589,7 +1606,7 @@
 			]
 		}
 		{
-			x: 3.0d
+			x: 2.5d
 			y: 6.5d
 			subtitle: "Guests are reminded that Platform One forbids the use of weapons, teleportation, and religion."
 			description: [
@@ -1597,7 +1614,8 @@
 				""
 				"Teleporter Frames are Optional."
 			]
-			dependencies: ["2D5AA83E1CE08228"]
+			hide_dependency_lines: true
+			dependencies: ["3B10CD56D31A441C"]
 			id: "25956D039907CBDA"
 			tasks: [{
 				id: "5E962E033F464A5C"
@@ -1640,6 +1658,7 @@
 			}
 			x: 1.5d
 			y: -1.5d
+			shape: "hexagon"
 			description: [
 				"Mekanism deals in Energy, Fluid, Gas, Item, and Heat transfer, and has a matching pipe to assist in the transfer of each."
 				""
@@ -1649,7 +1668,8 @@
 				""
 				"When in any of the ‘Configurate’ modes, the Configurator will toggle different aspects of the pipe. See the following sections for more information. "
 			]
-			dependencies: ["00000000000006A2"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A1"]
 			min_width: 300
 			id: "169A1D98A59A0961"
 			tasks: [{
@@ -1670,7 +1690,7 @@
 			x: 3.5d
 			y: 0.5d
 			description: ["While Logistical Transporters themselves may not be configured to be Redstone sensitive, that doesn’t mean the option is completely gone. Replace a section of pipe with a Diversion Transporter, which allows each face to be individually configured for Redstone control."]
-			dependencies: ["45321E07EDDEBB33"]
+			dependencies: ["51ABA98A9755702F"]
 			id: "79F3C54ACC550AB9"
 			tasks: [{
 				id: "6B6252E342220039"
@@ -1702,7 +1722,7 @@
 				""
 				"The system is far more complicated than can truly be covered here, but with a little patience it isn’t difficult to figure out."
 			]
-			dependencies: ["45321E07EDDEBB33"]
+			dependencies: ["51ABA98A9755702F"]
 			min_width: 300
 			id: "42499C7047322203"
 			tasks: [{
@@ -1720,8 +1740,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 2.5d
+			x: 1.5d
+			y: 2.0d
 			description: [
 				"It isn’t always convenient to lay out pipes for hundreds of blocks, especially since the rules of Minecraft dictate that all those blocks would need to be loaded to transport items."
 				""
@@ -1731,7 +1751,15 @@
 				""
 				"Entangloporters have no range limitations and work across dimensions. They can be given an Anchor upgrade as well to force load the chunk they are in."
 			]
-			dependencies: ["6515A1D74E64D5AF"]
+			hide_dependency_lines: true
+			dependencies: [
+				"2436E4AA07F927D7"
+				"6A35E77009D40D37"
+				"51ABA98A9755702F"
+				"3AA57306A4EAE317"
+				"5B2E979C2A919EDD"
+			]
+			dependency_requirement: "one_completed"
 			min_width: 300
 			id: "057131CE0FEF6C3C"
 			tasks: [{
@@ -1752,7 +1780,8 @@
 			x: 7.5d
 			y: 2.0d
 			description: ["A high-temperature furnace that’ll get things cooked up in no time at all."]
-			dependencies: ["5CB3E59893073F9E"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A5"]
 			id: "4D94A20FD60D258C"
 			tasks: [{
 				id: "151C2E80078EB874"
@@ -1804,7 +1833,8 @@
 				""
 				"Be sure to install Gas Upgrades in these machines to reduce their overall Oxygen use, or it may be difficult to keep up with demands."
 			]
-			dependencies: ["5CB3E59893073F9E"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A5"]
 			id: "0AAE998A924CC85E"
 			tasks: [{
 				id: "077E0368259A7010"
@@ -1865,7 +1895,8 @@
 				""
 				"Remember to install Gas Upgrades to make the gas inputs more efficient!"
 			]
-			dependencies: ["5CB3E59893073F9E"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A5"]
 			id: "5ED5EC51312D76E6"
 			tasks: [{
 				id: "302C94E049A0A2DD"
@@ -1920,7 +1951,8 @@
 			x: 6.5d
 			y: 3.5d
 			description: ["Unsurprisingly, smashing things together to make new things is also an age-old tradition. The Combiner may be used to simplify obtaining a number of decorative blocks."]
-			dependencies: ["5CB3E59893073F9E"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A5"]
 			id: "4D4A40BDD24C8F14"
 			tasks: [{
 				id: "2AED570FCC485887"
@@ -2010,7 +2042,8 @@
 				"● Jump Height Enhancement"
 				"● Magnet Upgrade"
 			]
-			dependencies: ["2D5AA83E1CE08228"]
+			hide_dependency_lines: true
+			dependencies: ["3B10CD56D31A441C"]
 			id: "731FC613C86F01CB"
 			tasks: [
 				{
@@ -2079,7 +2112,7 @@
 				""
 				"Finally, Energy Cubes themselves have slots for the purpose of charging most energy using items, or even discharging other batteries."
 			]
-			dependencies: ["2FB7EAFFAE541168"]
+			dependencies: ["3AA57306A4EAE317"]
 			id: "2549907DF3DC48C1"
 			tasks: [{
 				id: "4D55580B1857B046"
@@ -2372,40 +2405,6 @@
 			}]
 		}
 		{
-			icon: "mekanism:personal_barrel"
-			x: 3.5d
-			y: 2.5d
-			description: [
-				"Personal storage blocks retain their inventories when picked up, and store as much as a double chest, making them a handy tool to have around. They can also be made Private or given Trusted access in a Security Desk."
-				""
-				"Right-Click to access the contents without placing it."
-				""
-				"Sneak + Right-Click to place it."
-			]
-			dependencies: ["45321E07EDDEBB33"]
-			id: "677289CC4EC5DF90"
-			tasks: [{
-				id: "50D4669D7DF380D1"
-				type: "item"
-				title: "Personal Storage"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "mekanism:personal_storage"
-					}
-				}
-			}]
-			rewards: [{
-				id: "1B885AE7C2D76799"
-				type: "command"
-				title: "Rare Mekanism Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
-				player_command: false
-			}]
-		}
-		{
 			x: 0.5d
 			y: 0.5d
 			description: [
@@ -2415,7 +2414,7 @@
 				""
 				"They’ll also function as an over-flow trash by setting them to “Dump Excess”."
 			]
-			dependencies: ["35157B8043AA3B0E"]
+			dependencies: ["6A35E77009D40D37"]
 			id: "1C706FC1DE9D7340"
 			tasks: [{
 				id: "03BA3EABF4DE35AA"
@@ -2459,7 +2458,7 @@
 			x: -0.5d
 			y: 0.5d
 			description: ["Basic Fluid storage, these can auto-output to the bottom by Sneak + Right-Clicking the bottom face with a Configurator."]
-			dependencies: ["7D8995B10891FFAD"]
+			dependencies: ["5B2E979C2A919EDD"]
 			id: "6D4F858265B370F8"
 			tasks: [{
 				id: "10D939E75E0AB632"
@@ -2501,10 +2500,11 @@
 		}
 		{
 			icon: "mekanism:formulaic_assemblicator"
-			x: 0.0d
+			x: 0.5d
 			y: 6.5d
 			description: ["While often overlooked, the Formulaic Assemblicator is a capable auto-crafter."]
-			dependencies: ["2D5AA83E1CE08228"]
+			hide_dependency_lines: true
+			dependencies: ["3B10CD56D31A441C"]
 			id: "664CD2AFAFB4812A"
 			tasks: [
 				{
@@ -2531,10 +2531,7 @@
 			x: -0.5d
 			y: 1.5d
 			description: ["Large scale Gas or Fluid storage, Dynamic Tanks may be any size from 3x3x3 to 18x18x18. Structural Glass may be used in place of Dynamic Tank blocks anywhere but the edges and corners."]
-			dependencies: [
-				"35157B8043AA3B0E"
-				"7D8995B10891FFAD"
-			]
+			dependencies: ["5B2E979C2A919EDD"]
 			dependency_requirement: "one_completed"
 			id: "5387D366A4862FB1"
 			tasks: [
@@ -2563,7 +2560,7 @@
 			x: -3.5d
 			y: 1.5d
 			description: ["Though they won’t produce anything at night, Solar Panels are an excellent way to get a small amount of power to remote places. "]
-			dependencies: ["44FDF3C32E3A98CF"]
+			dependencies: ["00000000000006BA"]
 			id: "2897ACAE04D4C8F8"
 			tasks: [{
 				id: "3DB23DC5A52F17A1"
@@ -2596,10 +2593,11 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: 0.5d
 			y: 7.5d
 			description: ["All your essential vitamins, minerals, and amino acids, neatly condensed into a convenient chewy paste. Yum."]
-			dependencies: ["2D5AA83E1CE08228"]
+			hide_dependency_lines: true
+			dependencies: ["3B10CD56D31A441C"]
 			id: "30F4E8AE8727A0EE"
 			tasks: [{
 				id: "567D6EFE33337978"
@@ -2624,10 +2622,11 @@
 		}
 		{
 			icon: "mekanism:pigment_mixer"
-			x: 3.0d
+			x: 2.5d
 			y: 7.5d
 			description: ["This suite of blocks allows for high-efficiency production and application of dyes. "]
-			dependencies: ["2D5AA83E1CE08228"]
+			hide_dependency_lines: true
+			dependencies: ["3B10CD56D31A441C"]
 			id: "74513A3EFCA4513E"
 			tasks: [
 				{
@@ -2658,11 +2657,13 @@
 		{
 			x: 1.5d
 			y: 5.0d
+			shape: "hexagon"
 			description: ["Beyond machines and logistics, Mekanism offers a number of very useful tools, armor, and utility devices."]
-			dependencies: ["00000000000006A2"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000006A1"]
 			id: "3B10CD56D31A441C"
 			tasks: [{
-				id: "2D5AA83E1CE08228"
+				id: "5C76D553644F66FC"
 				type: "item"
 				title: "Tools and Utility"
 				item: "mekanism:cardboard_box"
@@ -2684,7 +2685,8 @@
 				"● Teleportation Unit"
 				"● Farming Unit"
 			]
-			dependencies: ["2D5AA83E1CE08228"]
+			hide_dependency_lines: true
+			dependencies: ["3B10CD56D31A441C"]
 			id: "189E8DFFF26C7510"
 			tasks: [{
 				id: "24E34EA1B5550B8E"
@@ -2717,7 +2719,8 @@
 			y: 6.0d
 			subtitle: "Don't Leave That Plasma Cutter Running"
 			description: ["A basic multi-tool with built in vein mining and excellent attack damage."]
-			dependencies: ["2D5AA83E1CE08228"]
+			hide_dependency_lines: true
+			dependencies: ["3B10CD56D31A441C"]
 			id: "26D4C85F78385393"
 			tasks: [{
 				id: "2854FE5E1F221A75"

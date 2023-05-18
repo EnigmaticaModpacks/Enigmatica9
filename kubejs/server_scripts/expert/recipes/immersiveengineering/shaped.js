@@ -402,7 +402,25 @@ ServerEvents.recipes((event) => {
                 B: '#forge:wires/aluminum',
                 C: '#forge:rods/treated_wood'
             },
-            id: `immersiveengineering:crafting/wirecoil_redstone`
+            id: `${id_prefix}wirecoil_redstone`
+        },
+        {
+            output: '4x immersiveengineering:wirecoil_structure_steel',
+            pattern: [' A ', 'ABA', ' A '],
+            key: {
+                A: '#forge:wires/steel',
+                B: '#forge:rods/treated_wood'
+            },
+            id: `${id_prefix}wirecoil_structure_steel`
+        },
+        {
+            output: '4x immersiveengineering:wirecoil_structure_rope',
+            pattern: [' A ', 'ABA', ' A '],
+            key: {
+                A: '#forge:fiber_hemp',
+                B: '#forge:rods/treated_wood'
+            },
+            id: `${id_prefix}wirecoil_structure_rope`
         },
         {
             output: 'immersiveengineering:railgun',

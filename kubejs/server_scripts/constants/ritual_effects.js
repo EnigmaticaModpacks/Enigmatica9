@@ -33,75 +33,13 @@ const ritual_effects = {
             ]
         }
     },
-    teleport_everdawn: {
-        // Note to Motoko: Due to pending removal of Blue_Skies, this require a change I can't do myself ^^"
-        teleport: {
-            // Where are we going?
-            arrival: 'blue_skies:everdawn',
-            // Only allow departure from these dimensions
-            departure: ['blue_skies:everbright', 'twilightforest:twilight_forest'],
-            // How random the teleport destination is
-            uncertainty: 5000,
-            // Maximum number of entities to affect
-            limit: 3,
-            // Diameter of selection area, centered on ritual
-            range: 10
-        },
-        potion: {
-            spells: [
-                {
-                    // Maximum number of entities to affect
-                    limit: 3,
-                    // Diameter of selection area, centered on ritual
-                    range: 10,
-                    // Effect to apply
-                    effect: 'minecraft:slow_falling',
-                    // Effect Duration in seconds
-                    duration: 10,
-                    // Effect level. 1 means 1
-                    level: 1
-                }
-            ]
-        }
-    },
-    teleport_everbright: {
-        // Note to Motoko: Due to pending removal of Blue_Skies, this require a change I can't do myself ^^"
-        teleport: {
-            // Where are we going?
-            arrival: 'blue_skies:everbright',
-            // Only allow departure from these dimensions
-            departure: ['blue_skies:everdawn', 'twilightforest:twilight_forest'],
-            // How random the teleport destination is
-            uncertainty: 5000,
-            // Maximum number of entities to affect
-            limit: 3,
-            // Diameter of selection area, centered on ritual
-            range: 10
-        },
-        potion: {
-            spells: [
-                {
-                    // Maximum number of entities to affect
-                    limit: 3,
-                    // Diameter of selection area, centered on ritual
-                    range: 10,
-                    // Effect to apply
-                    effect: 'minecraft:slow_falling',
-                    // Effect Duration in seconds
-                    duration: 10,
-                    // Effect level. 1 means 1
-                    level: 1
-                }
-            ]
-        }
-    },
     teleport_nether: {
         // Note to Motoko: Due to pending removal of Blue_Skies, this require a change I can't do myself ^^"
         teleport: {
             // Where are we going?
             arrival: 'minecraft:the_nether',
             // Only allow departure from these dimensions
-            departure: ['blue_skies:everbright', 'blue_skies:everdawn', 'twilightforest:twilight_forest'],
+            departure: ['twilightforest:twilight_forest'],
             // How random the teleport destination is
             uncertainty: 5000,
             // Maximum number of entities to affect

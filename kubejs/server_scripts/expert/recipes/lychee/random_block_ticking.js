@@ -260,36 +260,6 @@ ServerEvents.recipes((event) => {
         }
     ];
 
-    for (let i = 0; i <= 10; i++) {
-        if (i == 0) {
-            recipes.push({
-                block_in: { blocks: ['pneumaticcraft:air_compressor'] },
-                post: subtractAura(10000),
-                contextual: {
-                    type: 'location',
-                    predicate: { block: { blocks: ['pneumaticcraft:air_compressor'], state: { on: true } } }
-                },
-                id: `${id_prefix}air_compressor_aura_drain`
-            });
-        } else {
-            recipes.push({
-                block_in: { blocks: ['pneumaticcraft:air_compressor'] },
-                post: subtractAura(10000 * i),
-                contextual: {
-                    type: 'location',
-                    predicate: {
-                        block: {
-                            blocks: ['pneumaticcraft:air_compressor'],
-                            state: { on: true },
-                            nbt: `{UpgradeInventory:{Items:[{id:"pneumaticcraft:speed_upgrade", Count:${i}b}]}}`
-                        }
-                    }
-                },
-                id: `${id_prefix}air_compressor_aura_drain_speed_${i}`
-            });
-        }
-    }
-
     recipes.forEach((recipe) => {
         recipe.type = 'lychee:random_block_ticking';
         event.custom(recipe).id(recipe.id);

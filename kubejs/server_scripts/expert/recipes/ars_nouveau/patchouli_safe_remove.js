@@ -27,9 +27,7 @@ ServerEvents.recipes((event) => {
             { id: 'ars_nouveau:dominion_wand', output: 'ars_nouveau:dominion_wand' },
             { id: 'ars_nouveau:storage_lectern', output: 'ars_nouveau:storage_lectern' }
         ],
-        imbuement: [
-            // { id: 'ars_nouveau:recipe_id', output: 'ars_nouveau:recipe_output' }
-        ]
+        imbuement: [{ id: 'ars_nouveau:imbuement_lapis', output: 'emendatusenigmatica:source_gem' }]
     };
 
     patchouli_safe_removals.shaped.forEach((recipe) => {

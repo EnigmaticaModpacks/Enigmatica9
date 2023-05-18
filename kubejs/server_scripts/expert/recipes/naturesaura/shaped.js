@@ -48,18 +48,6 @@ ServerEvents.recipes((event) => {
             id: `naturesaura:field_creator`
         },
         {
-            output: '4x naturesaura:calling_spirit',
-            pattern: [' A ', 'BEC', ' D '],
-            key: {
-                A: '#forge:essences/air',
-                B: '#forge:essences/fire',
-                C: '#forge:essences/water',
-                D: '#forge:essences/earth',
-                E: '#forge:gems/niotic'
-            },
-            id: `naturesaura:calling_spirit`
-        },
-        {
             output: 'naturesaura:projectile_generator',
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
@@ -135,10 +123,10 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
                 A: 'naturesaura:infused_brick',
-                B: '#forge:storage_blocks/sunstone',
+                B: 'minecraft:clock',
                 C: '#forge:ingots/infused_iron',
                 D: '#forge:essences/manipulation',
-                E: '#forge:storage_blocks/moonstone'
+                E: 'twilightforest:moon_dial'
             },
             id: `naturesaura:time_changer`
         },

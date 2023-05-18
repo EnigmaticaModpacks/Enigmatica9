@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: '#forge:ingots/gold',
                 B: '#forge:nuggets/gold',
-                C: '#forge:gems/moonstone',
+                C: '#forge:nuggets/silver',
                 D: '#forge:dusts/redstone'
             },
             id: `${id_prefix}moon_dial`

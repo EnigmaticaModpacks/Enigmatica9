@@ -7,18 +7,18 @@ ServerEvents.recipes((event) => {
             liquid: { fluid: 'minecraft:lava' },
             inputs: [
                 '#forge:gems/amethyst',
-                'minecraft:netherite_ingot',
+                '#forge:ingots/netherite',
                 'minecraft:netherite_scrap',
                 'minecraft:netherite_scrap',
-                'minecraft:netherite_ingot',
+                '#forge:ingots/netherite',
                 'minecraft:netherite_scrap',
                 'minecraft:netherite_scrap',
-                'minecraft:netherite_ingot'
+                '#forge:ingots/netherite'
             ],
             liquidOutput: { fluid: 'minecraft:lava' },
             fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
-            id: 'hexerei:broom_netherite_tip_from_mixing_cauldron'
+            id: `${id_prefix}broom_netherite_tip`
         },
         {
             output: '12x minecraft:slime_ball',

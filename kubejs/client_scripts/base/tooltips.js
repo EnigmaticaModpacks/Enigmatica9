@@ -489,6 +489,30 @@ ItemEvents.tooltip((event) => {
                 Text.of('This seed does not drop from grass!').green(),
                 Text.of('It has to be purchased from the Market block.').green()
             ]
+        },
+        {
+            items: ['ars_nouveau:starbuncle_shades'],
+            text: [Text.of(`Starbuncle Equipment: Lookin' cool and staying on task`).green()]
+        },
+        {
+            items: ['ars_nouveau:wixie_hat'],
+            text: [Text.of(`Starbuncle Equipment: Potion Transport`).green()]
+        },
+        {
+            items: ['starbunclemania:star_battery'],
+            text: [Text.of(`Starbuncle Equipment: Energy Transport`).green()]
+        },
+        {
+            items: ['starbunclemania:star_bucket'],
+            text: [Text.of(`Starbuncle Equipment: Liquid Transport`).green()]
+        },
+        {
+            items: ['starbunclemania:star_balloon'],
+            text: [Text.of(`Starbuncle Equipment: Gas Transport`).green()]
+        },
+        {
+            items: ['starbunclemania:star_bin'],
+            text: [Text.of(`Starbuncle Equipment: Voids Items`).green()]
         }
     ];
 

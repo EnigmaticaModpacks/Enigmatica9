@@ -16,6 +16,13 @@
 	quests: [
 		{
 			title: "Tools and Armor"
+			icon: {
+				id: "minecraft:netherite_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
 			x: -10.0d
 			y: -14.5d
 			shape: "gear"
@@ -37,15 +44,18 @@
 				"● $tools/hoe"
 				"● $tools/multi-tool"
 			]
+			dependencies: ["0E45018D600614BA"]
+			hide: true
 			id: "000000000000045C"
 			tasks: [{
-				id: "000000000000045D"
-				type: "checkmark"
-				icon: {
-					id: "minecraft:netherite_chestplate"
+				id: "1EDF7F5D2B905572"
+				type: "item"
+				title: "Any Tool"
+				item: {
+					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						Damage: 0
+						value: "forge:tools"
 					}
 				}
 			}]
@@ -80,10 +90,7 @@
 				"● Filterable Void Upgrade"
 				"● Magnet Upgrade"
 			]
-			dependencies: [
-				"000000000000046C"
-				"358FAB3D482C463A"
-			]
+			dependencies: ["358FAB3D482C463A"]
 			id: "000000000000045F"
 			tasks: [
 				{
@@ -138,7 +145,7 @@
 			]
 		}
 		{
-			x: -8.0d
+			x: -8.5d
 			y: -13.5d
 			subtitle: "Head in the Clouds"
 			description: [
@@ -148,6 +155,8 @@
 				""
 				"Using a glass bottle between y192 and y196 will get you a Bottled Cloud. Right-Clicking the air again will place the cloud, allowing other blocks to be placed against it. It will disappear after a few moments, but will go back into your bottle on it's own if another block is placed against it in time. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["000000000000045C"]
 			id: "322E9DDDEE1623E3"
 			tasks: [{
 				id: "2AF9B5D1BACA4A59"
@@ -164,7 +173,7 @@
 			}]
 		}
 		{
-			x: -12.0d
+			x: -11.5d
 			y: -13.5d
 			subtitle: "Just to Spend it With You..."
 			description: [
@@ -172,7 +181,8 @@
 				""
 				"Sneak Right-Click most machines to spend stored time on them, speeding them up briefly. "
 			]
-			dependencies: ["000000000000046D"]
+			hide_dependency_lines: true
+			dependencies: ["000000000000045C"]
 			id: "7AE1180EFAF22376"
 			tasks: [{
 				id: "4D29649F3F51D7D3"
@@ -193,8 +203,8 @@
 			}]
 		}
 		{
-			x: -11.5d
-			y: -15.5d
+			x: -12.5d
+			y: -12.5d
 			subtitle: "Pym Powered"
 			description: [
 				"Smaller, but equally strong? Impossible!"
@@ -210,6 +220,8 @@
 				""
 				"Keep a villager in your pocket for good luck!"
 			]
+			hide_dependency_lines: true
+			dependencies: ["000000000000045C"]
 			min_width: 300
 			id: "43DB35C6C62A177D"
 			tasks: [{
@@ -257,6 +269,8 @@
 				""
 				"The following quests will help highlight some of the more notable options. Enjoy!"
 			]
+			hide_dependency_lines: true
+			dependencies: ["000000000000045C"]
 			id: "358FAB3D482C463A"
 			tasks: [{
 				id: "0CD75EE826F64FBA"
@@ -1127,8 +1141,8 @@
 			}]
 		}
 		{
-			x: -8.5d
-			y: -15.5d
+			x: -7.5d
+			y: -12.5d
 			description: [
 				"Creeping Creepers got you down? Zealous Zombies getting all up in your face? Salacious Skeletons just won’t let you mine in peace?"
 				""
@@ -1149,6 +1163,8 @@
 				""
 				"In addition to their basic stats, they may also be enchanted with a number of interesting effects, such as curing the bearer of all potion effects when the shield is depleted or applying Poison to anything that damages the shield. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["000000000000045C"]
 			min_width: 300
 			id: "2C96F74E20442E7A"
 			tasks: [{
@@ -1210,6 +1226,8 @@
 				""
 				"While worn in a curio slot, the belt allows quick swapping between any of the tools stored in it. Check the Key Binds menu for options. By default, opening the tool swap menu is on R and opening the belt’s inventory to add or remove tools is on V."
 			]
+			hide_dependency_lines: true
+			dependencies: ["000000000000045C"]
 			id: "50F144C6D2460D67"
 			tasks: [{
 				id: "2CE411031C66252D"
