@@ -25,7 +25,7 @@ ItemEvents.tooltip((event) => {
     */
     const recipes = [
         {
-            items: ['pneumaticcraft:air_compressor', 'occultism:dimensional_mineshaft'],
+            items: ['occultism:dimensional_mineshaft'],
             text: [Text.of('Consumes Aura while in operation.').red()]
         },
         {
@@ -35,6 +35,10 @@ ItemEvents.tooltip((event) => {
                     'A permanent gateway into the Otherworld allowing Source to flow in exchange for labor.'
                 ).lightPurple()
             ]
+        },
+        {
+            items: ['kubejs:dream_stone'],
+            text: [Text.of('It hums quietly when held.').gold()]
         }
     ];
 

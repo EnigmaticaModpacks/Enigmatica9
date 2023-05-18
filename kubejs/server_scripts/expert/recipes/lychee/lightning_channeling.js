@@ -51,6 +51,22 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}dim_arcanite_crystal`
+        },
+        {
+            item_in: [
+                { item: 'immersiveengineering:balloon' },
+                { tag: 'forge:essences/air' },
+                { item: 'ars_nouveau:magebloom_fiber' },
+                { item: 'ars_nouveau:magebloom_fiber' }
+            ],
+            post: [
+                {
+                    type: 'drop_item',
+                    item: 'starbunclemania:star_balloon',
+                    count: 4
+                }
+            ],
+            id: `${id_prefix}star_balloon`
         }
     ];
 

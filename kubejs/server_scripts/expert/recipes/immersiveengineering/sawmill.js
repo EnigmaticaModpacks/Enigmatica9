@@ -11,6 +11,13 @@ ServerEvents.recipes((event) => {
             output: '21x kubejs:dimensional_storage_crystal',
             secondaries: [{ output: 'ae2:certus_quartz_dust', stripping: false }],
             id: `${id_prefix}oak_planks_from_oak_log`
+        },
+        {
+            energy: 500,
+            input: ['#forge:storage_blocks/quartz'],
+            output: '2x pneumaticcraft:aphorism_tile',
+            secondaries: [{ output: 'emendatusenigmatica:quartz_dust', stripping: false }],
+            id: `${id_prefix}aphorism_tile`
         }
     ];
 

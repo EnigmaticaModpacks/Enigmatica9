@@ -13,7 +13,7 @@
 			icon: "create:wrench"
 			x: 7.0d
 			y: 0.0d
-			shape: "hexagon"
+			shape: "gear"
 			description: [
 				"Welcome to Create! At its core, Create follows the same primary purpose as Vanilla Redstone: Give the player items to enable fanciful creations. "
 				""
@@ -23,6 +23,8 @@
 				""
 				"Naturally, with so much ground to cover, these quests will not be exhaustive. Instead, the goal will be to introduce basic concepts of Create to give you a solid footing to begin experimenting on your own. "
 			]
+			dependencies: ["0E45018D600614BA"]
+			hide: true
 			min_width: 250
 			id: "0000000000000C40"
 			tasks: [{
@@ -42,6 +44,7 @@
 			icon: "create:goggles"
 			x: 7.0d
 			y: 2.0d
+			shape: "hexagon"
 			subtitle: "Some Assembly Required"
 			description: [
 				"As with many systems, power is required. For Create, this generally means making something spin. There are, of course, multiple ways to do this, but let’s go over some basics briefly. "
@@ -56,7 +59,8 @@
 				""
 				"As a final note, while Create has no in game guidebook, it does have a Ponder system which shows how everything works through short in game animated sequences. Hover over most items and press the Ponder key shown in the tooltip to view them.  "
 			]
-			dependencies: ["5A269EA65E5B42CE"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000C40"]
 			min_width: 300
 			id: "0000000000000CBA"
 			tasks: [{
@@ -220,7 +224,8 @@
 				""
 				"To make efficient use of a fan and belt setup, make it blow across the length of the belt. Faster spin speeds mean the air stream blows farther. This also allows the fan to process multiple stacks at once. "
 			]
-			dependencies: ["74699E3BBDD7CF8B"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000D04"]
 			min_width: 300
 			id: "0000000000000CC4"
 			tasks: [{
@@ -254,7 +259,8 @@
 				""
 				"As it happens, conveying rotational force is quite simple. Shafts can be used to convey power linearly while cogs may be used to change direction and speed. "
 			]
-			dependencies: ["7BC4BA5631C46DB8"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000CBA"]
 			id: "0000000000000CCC"
 			tasks: [{
 				id: "0000000000000CCD"
@@ -293,7 +299,8 @@
 				""
 				"They also look great under Mechanical Belts."
 			]
-			dependencies: ["7BC4BA5631C46DB8"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000CBA"]
 			id: "0000000000000CCE"
 			tasks: [{
 				id: "0000000000000CCF"
@@ -335,7 +342,8 @@
 				""
 				"Brackets may be attached to Shafts or Cogs and are entirely decorative. They sure do make things look nicer though!"
 			]
-			dependencies: ["7BC4BA5631C46DB8"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000CBA"]
 			id: "0000000000000CD0"
 			tasks: [
 				{
@@ -369,7 +377,8 @@
 				""
 				"However, they have a slight advantage in that they can be used to split power off in two directions. They also have a vertical variant to get a shaft line running up or down. "
 			]
-			dependencies: ["7BC4BA5631C46DB8"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000CBA"]
 			id: "0000000000000CD4"
 			tasks: [{
 				id: "0000000000000CD5"
@@ -401,7 +410,8 @@
 				""
 				"Additionally, two large cogwheels can be interlocked perpendicularly to allow a shaft to change directions. Useful for going around corners or bringing power down from high above."
 			]
-			dependencies: ["7BC4BA5631C46DB8"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000CBA"]
 			min_width: 250
 			id: "0000000000000CD6"
 			tasks: [
@@ -443,7 +453,8 @@
 				""
 				"To attach them to a Shaft, simply place two Shafts and then Right-Click each with the belt in hand. Right-Click a Shaft into an existing Belt to add a connection."
 			]
-			dependencies: ["4C69D9C9883B2747"]
+			hide_dependency_lines: true
+			dependencies: ["45CBD91076EAD50D"]
 			min_width: 250
 			id: "0000000000000CD8"
 			tasks: [{
@@ -470,7 +481,8 @@
 				""
 				"They may also be used to change the direction of power by placing multiple of them in-line and rotating them 90-degrees from one another. "
 			]
-			dependencies: ["7BC4BA5631C46DB8"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000CBA"]
 			id: "0000000000000CE0"
 			tasks: [{
 				id: "0000000000000CE1"
@@ -496,7 +508,8 @@
 				""
 				"The Controller will automatically adjust to any RPM on its two output shafts. Set the speed with the scroll-wheel. "
 			]
-			dependencies: ["7BC4BA5631C46DB8"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000CBA"]
 			id: "0000000000000CE2"
 			tasks: [{
 				id: "0000000000000CE3"
@@ -529,7 +542,8 @@
 				""
 				"A funnel attached to a chest, for instance, can extract from the chest and dump onto an adjacent Belt line. Similarly, a belt feeding into a funnel will push items into the attached inventory."
 			]
-			dependencies: ["4C69D9C9883B2747"]
+			hide_dependency_lines: true
+			dependencies: ["45CBD91076EAD50D"]
 			id: "0000000000000CE5"
 			tasks: [
 				{
@@ -564,7 +578,8 @@
 				""
 				"Chutes may also be used to convey items upwards. If a chute has an encased fan set up directly on top of it, it can be used to pull items off a Belt. Of course, getting that item out requires some way of extracting from the chute, such as a Funnel."
 			]
-			dependencies: ["4C69D9C9883B2747"]
+			hide_dependency_lines: true
+			dependencies: ["45CBD91076EAD50D"]
 			min_width: 250
 			id: "0000000000000CE7"
 			tasks: [{
@@ -593,7 +608,8 @@
 				""
 				"As items pass into one tunnel, they’ll be evenly split among all connected tunnels on the other side."
 			]
-			dependencies: ["4C69D9C9883B2747"]
+			hide_dependency_lines: true
+			dependencies: ["45CBD91076EAD50D"]
 			id: "0000000000000CE9"
 			tasks: [
 				{
@@ -625,7 +641,8 @@
 				""
 				"Depots will hold a single stack of items, but they will also interact with Encased Fan Washing, Blasting, Smoking, and Haunting recipes, as well as the Plate Press. "
 			]
-			dependencies: ["4C69D9C9883B2747"]
+			hide_dependency_lines: true
+			dependencies: ["45CBD91076EAD50D"]
 			id: "0000000000000CF2"
 			tasks: [{
 				id: "0000000000000CF3"
@@ -652,7 +669,8 @@
 				""
 				"The Mechanical Arm can reach up to four blocks away in total. "
 			]
-			dependencies: ["4C69D9C9883B2747"]
+			hide_dependency_lines: true
+			dependencies: ["45CBD91076EAD50D"]
 			min_width: 250
 			id: "0000000000000CF4"
 			tasks: [{
@@ -678,7 +696,8 @@
 				""
 				"Create’s Millstone is an excellent early way to stretch materials a little further. "
 			]
-			dependencies: ["74699E3BBDD7CF8B"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000D04"]
 			id: "0000000000000CFC"
 			tasks: [{
 				id: "0000000000000CFD"
@@ -710,7 +729,8 @@
 				""
 				"Crushing Wheels may also be placed horizontally, allowing them to interface nicely with a Belt system."
 			]
-			dependencies: ["74699E3BBDD7CF8B"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000D04"]
 			min_width: 250
 			id: "0000000000000CFE"
 			tasks: [{
@@ -740,7 +760,8 @@
 				""
 				"Right-Clicking the hand with a Wrench will switch the Deployer into Left-Click mode, allowing it to attack mobs with a weapon, or otherwise interact with things that need to be Left-Clicked."
 			]
-			dependencies: ["74699E3BBDD7CF8B"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000D04"]
 			id: "0000000000000D00"
 			tasks: [
 				{
@@ -773,9 +794,11 @@
 			icon: "create:whisk"
 			x: 12.5d
 			y: 2.0d
+			shape: "hexagon"
 			subtitle: "Just a Little Something I Whipped Up"
 			description: ["With some basic power and logistics under our belts, it’s time we get our hands dirty and get down to business. Create offers several new crafting mechanics that are important to understand to work with the mod. "]
-			dependencies: ["5A269EA65E5B42CE"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000C40"]
 			id: "0000000000000D04"
 			tasks: [{
 				id: "74699E3BBDD7CF8B"
@@ -826,7 +849,8 @@
 				""
 				"While over any other block, however, a redstone signal is required to make it start. "
 			]
-			dependencies: ["74699E3BBDD7CF8B"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000D04"]
 			min_width: 250
 			id: "0000000000000D06"
 			tasks: [{
@@ -855,7 +879,8 @@
 				""
 				"If a Depot or Item Drain is placed adjacent and one block down from the Basin, recipes will automatically be output. A small spout will appear on the Basin when the Depot or Item Drain is placed correctly. "
 			]
-			dependencies: ["74699E3BBDD7CF8B"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000D04"]
 			id: "0000000000000D08"
 			tasks: [
 				{
@@ -889,7 +914,8 @@
 				""
 				"Feed them coal or other burnable material to get them riled up again if they cool down."
 			]
-			dependencies: ["74699E3BBDD7CF8B"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000D04"]
 			id: "0000000000000D0B"
 			tasks: [{
 				id: "0000000000000D0C"
@@ -944,7 +970,8 @@
 				""
 				"The block has a handy little directional indicator to help visualize the flow. A single pump can pressurize a large section of pipe, so be sure to spread them out. "
 			]
-			dependencies: ["4C69D9C9883B2747"]
+			hide_dependency_lines: true
+			dependencies: ["45CBD91076EAD50D"]
 			id: "0000000000000D0F"
 			tasks: [
 				{
@@ -973,7 +1000,8 @@
 			y: 4.0d
 			subtitle: "Shut The Front Door"
 			description: ["Fluid valves may be opened and closed by applying some rotational force, for example with a Valve Handle. "]
-			dependencies: ["4C69D9C9883B2747"]
+			hide_dependency_lines: true
+			dependencies: ["45CBD91076EAD50D"]
 			id: "0000000000000D13"
 			tasks: [
 				{
@@ -1001,7 +1029,8 @@
 			y: 4.5d
 			subtitle: "Reverse Osmosis Filter"
 			description: ["Doing the impossible is just another Tuesday in modded. Smart Fluid Pipes act as a fluid filter, either controlling what is allowed to be pulled from a connected tank, or what is allowed to continue down the line. "]
-			dependencies: ["4C69D9C9883B2747"]
+			hide_dependency_lines: true
+			dependencies: ["45CBD91076EAD50D"]
 			id: "0000000000000D15"
 			tasks: [{
 				id: "0000000000000D16"
@@ -1028,7 +1057,8 @@
 				"While they can't be interacted with by the player directly, needing pipes to insert and extract fluids, they merge with adjacent tanks to form large multi-blocks for bulk storage."
 				"They can have a 1x1, 2x2, or 3x3 base and extend as high as you like. "
 			]
-			dependencies: ["4C69D9C9883B2747"]
+			hide_dependency_lines: true
+			dependencies: ["45CBD91076EAD50D"]
 			id: "0000000000000D17"
 			tasks: [{
 				id: "0000000000000D18"
@@ -1062,7 +1092,8 @@
 				""
 				"Items may be inserted with hoppers, belts and funnels, mechanical arms and more. Experiment to see what you can come up with!"
 			]
-			dependencies: ["74699E3BBDD7CF8B"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000D04"]
 			min_width: 250
 			id: "0000000000000D1A"
 			tasks: [
@@ -1091,7 +1122,8 @@
 			y: 4.0d
 			subtitle: "Spouting Off Nonsense"
 			description: ["The spout is paired with a Depot by placing it above the Depot. It will attempt to fill any item appearing on the Depot. For example, to make buckets of water, fill potion bottles, or make delicious tea!"]
-			dependencies: ["74699E3BBDD7CF8B"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000D04"]
 			id: "0000000000000D23"
 			tasks: [{
 				id: "0000000000000D24"
@@ -1168,6 +1200,7 @@
 			}
 			x: 7.0d
 			y: 10.0d
+			shape: "hexagon"
 			description: [
 				"Modular Contraptions are build-it-yourself multiblock structures with nearly endless possibilities. "
 				""
@@ -1176,10 +1209,7 @@
 				"The following are some of the specialized blocks that may be used for these contraptions."
 			]
 			hide_dependency_lines: true
-			dependencies: [
-				"5A269EA65E5B42CE"
-				"0000000000000C40"
-			]
+			dependencies: ["0000000000000C40"]
 			id: "0000000000000D2B"
 			tasks: [{
 				id: "10A1593A5F3B4532"
@@ -1473,6 +1503,11 @@
 					type: "item"
 					item: "create:portable_storage_interface"
 				}
+				{
+					id: "3584467653F3C39B"
+					type: "item"
+					item: "createaddition:portable_energy_interface"
+				}
 			]
 			rewards: [{
 				id: "0000000000000D5F"
@@ -1519,7 +1554,8 @@
 				""
 				"Consider using an Analogue Lever to easily set a fixed speed. "
 			]
-			dependencies: ["7BC4BA5631C46DB8"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000CBA"]
 			id: "0000000000000D47"
 			tasks: [{
 				id: "0000000000000D48"
@@ -1546,7 +1582,8 @@
 				""
 				"Note, the Hose Pulley does not pump by itself. Lower the hose into the fluid body set up a Mechanical Pump to do the work for you. "
 			]
-			dependencies: ["4C69D9C9883B2747"]
+			hide_dependency_lines: true
+			dependencies: ["45CBD91076EAD50D"]
 			dependency_requirement: "one_completed"
 			min_width: 250
 			id: "0000000000000D49"
@@ -1573,7 +1610,8 @@
 				""
 				"Applying a Redstone signal to the block will cause the output side to start spinning in the opposite direction relative to the drive side. "
 			]
-			dependencies: ["7BC4BA5631C46DB8"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000CBA"]
 			id: "0000000000000D4B"
 			tasks: [{
 				id: "0000000000000D4C"
@@ -1598,7 +1636,8 @@
 				""
 				"It could useful for more advanced contraptions that need precise timing, as well."
 			]
-			dependencies: ["7BC4BA5631C46DB8"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000CBA"]
 			id: "0000000000000D4D"
 			tasks: [{
 				id: "0000000000000D4E"
@@ -1643,6 +1682,7 @@
 			title: "Saving Schematics"
 			x: 1.5d
 			y: 10.0d
+			shape: "hexagon"
 			subtitle: "Archetecture 101"
 			description: [
 				"Create has a set of tools dedicated to saving schematics of structures and replicating them."
@@ -1657,7 +1697,8 @@
 				""
 				"{\"text\":\"Saving a Schematic\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Creators-of-Create/Create/wiki/Saving-a-Schematic\"}}"
 			]
-			dependencies: ["5A269EA65E5B42CE"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000C40"]
 			min_width: 250
 			id: "5A581A8DF6CCC352"
 			tasks: [{
@@ -1750,7 +1791,8 @@
 				""
 				"It has small internal tank, from which fluids can be accessed by pipes."
 			]
-			dependencies: ["4C69D9C9883B2747"]
+			hide_dependency_lines: true
+			dependencies: ["45CBD91076EAD50D"]
 			dependency_requirement: "one_completed"
 			min_width: 225
 			id: "28D17B54F4DE4D86"
@@ -1863,9 +1905,11 @@
 		{
 			x: 1.5d
 			y: 2.0d
+			shape: "hexagon"
 			subtitle: "From Here to There, Funny Things Were Everywhere"
 			description: ["Half the joy of Create is seeing things move, and its logistics options do not disappoint. From Belts that render their contents, to Pipes showing fluids flowing through them, Create offers ways of moving around most anything. "]
-			dependencies: ["5A269EA65E5B42CE"]
+			hide_dependency_lines: true
+			dependencies: ["0000000000000C40"]
 			id: "45CBD91076EAD50D"
 			tasks: [{
 				id: "4C69D9C9883B2747"
@@ -1902,7 +1946,8 @@
 				""
 				"Vaults may be combined to form a multi-block storage container. The base must remain square and can be expanded up to 3x3, while the length can be up to 3x the diameter for a maximum size of 3x3x9. "
 			]
-			dependencies: ["4C69D9C9883B2747"]
+			hide_dependency_lines: true
+			dependencies: ["45CBD91076EAD50D"]
 			id: "0FEC8B6C5EBF0D99"
 			tasks: [{
 				id: "6EC36FA1B3FEB0D3"
@@ -2020,6 +2065,7 @@
 			}]
 		}
 		{
+			icon: "createaddition:alternator"
 			x: 1.5d
 			y: 7.0d
 			subtitle: "Spin Me Right Round"
@@ -2031,11 +2077,18 @@
 			hide_dependency_lines: true
 			dependencies: ["45CBD91076EAD50D"]
 			id: "4693EAC2CFBB6FB1"
-			tasks: [{
-				id: "06AFE505EFF7F9BB"
-				type: "item"
-				item: "createaddition:alternator"
-			}]
+			tasks: [
+				{
+					id: "06AFE505EFF7F9BB"
+					type: "item"
+					item: "createaddition:alternator"
+				}
+				{
+					id: "69F4626FAE4CB0D6"
+					type: "item"
+					item: "createaddition:modular_accumulator"
+				}
+			]
 			rewards: [{
 				id: "18498D3FE01276FC"
 				type: "command"

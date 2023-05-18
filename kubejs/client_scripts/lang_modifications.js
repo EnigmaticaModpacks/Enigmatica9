@@ -178,6 +178,13 @@ const entries = {
     ],
     pneumaticcraft: [
         {
+            key: 'item.pneumaticcraft.printed_circuit_board',
+            value: {
+                normal: 'Finished PCB',
+                expert: 'Runic Tensor-Field Matrix'
+            }
+        },
+        {
             key: 'block.pneumaticcraft.compressed_iron_block',
             value: {
                 normal: 'Block of Compressed Iron',

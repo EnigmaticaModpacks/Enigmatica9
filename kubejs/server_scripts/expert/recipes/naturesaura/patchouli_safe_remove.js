@@ -25,7 +25,9 @@ ServerEvents.recipes((event) => {
             { id: 'naturesaura:dimension_rail_nether', output: 'naturesaura:dimension_rail_nether' },
             { id: 'naturesaura:dimension_rail_overworld', output: 'naturesaura:dimension_rail_overworld' },
             { id: 'naturesaura:animal_spawner', output: 'naturesaura:animal_spawner' },
-            { id: 'naturesaura:rf_converter', output: 'naturesaura:rf_converter' }
+            { id: 'naturesaura:rf_converter', output: 'naturesaura:rf_converter' },
+            { id: 'naturesaura:calling_spirit', output: 'naturesaura:calling_spirit' },
+            { id: 'naturesaura:depth_ingot_creation', output: 'naturesaura:depth_ingot' }
         ],
         altar: [
             { id: 'naturesaura:altar/infused_stone', output: 'naturesaura:infused_stone' },

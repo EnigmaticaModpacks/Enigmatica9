@@ -28,6 +28,15 @@ ServerEvents.recipes((event) => {
             },
             energy: 5000,
             id: `${id_prefix}greater_experience_gem_to_liquid`
+        },
+        {
+            input: 'minecraft:honey_block',
+            output: {
+                fluid: 'the_bumblezone:honey_fluid_still',
+                amount: 1000
+            },
+            energy: 2000,
+            id: `thermal:machines/crucible/crucible_honey_block_to_honey`
         }
     ];
 

@@ -579,6 +579,61 @@ ServerEvents.recipes((event) => {
             reagents: ['powah:blank_card'],
             sourceCost: 1000,
             id: `${id_prefix}upgrade_anchor`
+        },
+        {
+            output: '4x starbunclemania:star_balloon',
+            inputs: ['#forge:essences/air', 'ars_nouveau:magebloom_fiber', 'ars_nouveau:magebloom_fiber'],
+            reagents: ['immersiveengineering:balloon'],
+            sourceCost: 0,
+            id: 'starbunclemania:star_balloon'
+        },
+        {
+            output: 'ae2:condenser',
+            inputs: [
+                'ae2:fluix_pearl',
+                'naturesaura:infused_brick',
+                'ae2:formation_core',
+                'naturesaura:infused_brick',
+                'ae2:fluix_pearl',
+                'naturesaura:infused_brick',
+                'ae2:annihilation_core',
+                'naturesaura:infused_brick'
+            ],
+            reagents: ['occultism:stable_wormhole'],
+            sourceCost: 0,
+            id: `${id_prefix}condenser`
+        },
+        {
+            output: 'mekanism:laser',
+            inputs: [
+                '#industrialforegoing:laser_lens/red',
+                'powah:capacitor_spirited',
+                'quark:rainbow_rune',
+                'powah:capacitor_spirited',
+                '#industrialforegoing:machine_frame/advanced',
+                'powah:capacitor_spirited',
+                'quark:rainbow_rune',
+                'powah:capacitor_spirited'
+            ],
+            reagents: ['ars_nouveau:spell_turret'],
+            sourceCost: 10000,
+            id: `${id_prefix}laser`
+        },
+        {
+            output: 'mekanism:supercharged_coil',
+            inputs: [
+                'ars_elemental:arc_prism_lens',
+                'powah:capacitor_nitro',
+                'quark:rainbow_rune',
+                'powah:capacitor_nitro',
+                '#industrialforegoing:machine_frame/supreme',
+                'powah:capacitor_nitro',
+                'quark:rainbow_rune',
+                'powah:capacitor_nitro'
+            ],
+            reagents: ['mekanism:laser'],
+            sourceCost: 10000,
+            id: `${id_prefix}supercharged_coil`
         }
     ];
 

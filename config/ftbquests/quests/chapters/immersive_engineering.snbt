@@ -1,7 +1,7 @@
 {
 	id: "0000000000000002"
 	group: "72A9465344128AF9"
-	order_index: 2
+	order_index: 3
 	filename: "immersive_engineering"
 	title: "Immersive Engineering"
 	icon: "immersiveengineering:heavy_engineering"
@@ -9,15 +9,18 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "Immersive Engineering"
 			icon: "immersiveengineering:manual"
 			x: -3.5d
-			y: -8.0d
-			shape: "hexagon"
+			y: -7.5d
+			shape: "gear"
 			description: [
 				"Immersive Engineering is a versatile tech mod with a focus on large multiblock structures and logistics, all while looking like it came out of a 19th century factory. "
 				""
 				"The Engineer’s Handbook does a wonderful job of covering things, so be sure to check it out from time to time."
 			]
+			dependencies: ["0E45018D600614BA"]
+			hide: true
 			id: "0000000000000004"
 			tasks: [{
 				id: "4C4EC117244A21C7"
@@ -41,18 +44,10 @@
 		}
 		{
 			title: "Getting Started: Logistics and Storage"
-			icon: {
-				id: "immersiveengineering:toolbox"
-				Count: 1b
-				ForgeCaps: {
-					Parent: {
-						Size: 23
-						Items: [ ]
-					}
-				}
-			}
+			icon: "immersiveengineering:toolbox"
 			x: -3.5d
 			y: -6.0d
+			shape: "hexagon"
 			description: [
 				"Factory building wouldn’t be complete without proper logistics to route items, fluid, and power to the machines that need them. As such, Immersive Engineering offers a robust suite of tools to assist in the effort. "
 				""
@@ -1094,7 +1089,8 @@
 			x: 1.0d
 			y: 2.5d
 			description: ["More than simply filling buckets, the Bottling Machine may be used to craft with a number of fluids, such as etching Copper or forming Duroplast."]
-			dependencies: ["37F3086A687795FB"]
+			hide_dependency_lines: true
+			dependencies: ["7215DE7DCCEA0835"]
 			dependency_requirement: "one_completed"
 			min_width: 250
 			id: "6AC625E4D6F5AAFB"
@@ -1861,9 +1857,10 @@
 			y: 4.0d
 			shape: "diamond"
 			description: ["Adding some lubricant to a Drill or Saw destined for rugged digging and cutting tough material can greatly extend the lifetime of the tool. "]
+			hide_dependency_lines: true
 			dependencies: [
-				"5B3CC19ED97DFA26"
-				"716019716B2915F9"
+				"0A476C6332EB6477"
+				"1487479CFA348530"
 			]
 			dependency_requirement: "one_completed"
 			id: "546222019B6470BA"
@@ -1977,6 +1974,7 @@
 			title: "Getting Started: Material Processing"
 			x: 0.5d
 			y: -6.0d
+			shape: "hexagon"
 			description: ["Bricks, Treated Wood, and Steel; these are what an Immersive Factory is built from, and the focus of early efforts in the mod. "]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000004"]
@@ -2008,6 +2006,7 @@
 			icon: "immersiveengineering:voltmeter"
 			x: -7.5d
 			y: -6.0d
+			shape: "hexagon"
 			description: ["Hear that hum? That’s the sound of industry waiting to happen. It’s time to unleash its potential. "]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000004"]
@@ -2038,6 +2037,7 @@
 			title: "Tools and Utility"
 			x: -7.5d
 			y: -0.5d
+			shape: "hexagon"
 			description: ["From high-powered lights and excavation tools to revolvers and railguns, Immersive Engineering offers a tool for nearly any job."]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000004"]
@@ -2092,6 +2092,7 @@
 			icon: "immersiveengineering:storage_steel"
 			x: 0.5d
 			y: -0.5d
+			shape: "hexagon"
 			description: ["With better materials come larger, more capable machines. Prepare to get dirty!"]
 			hide_dependency_lines: true
 			dependencies: ["0000000000000004"]

@@ -1,0 +1,324 @@
+{
+	id: "2513FACDC0CF520A"
+	group: "72A9465344128AF9"
+	order_index: 12
+	filename: "powah_expert"
+	title: "Powah!"
+	icon: "powah:dielectric_casing"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Powah!"
+			icon: "powah:book"
+			x: 4.5d
+			y: -0.5d
+			shape: "gear"
+			description: [
+				"As the name implies, Powah! is all about generating, storing, and transmitting power through various means. "
+				""
+				"In addition, it offers a few unique mechanics and a variety of new materials to go along with its various tiers. Read along to discover more. "
+			]
+			dependencies: ["2CCCDD05AED3153F"]
+			hide: true
+			min_width: 250
+			id: "484E8107D89F94E0"
+			tasks: [{
+				id: "11F7C2C9A36E4E9B"
+				type: "item"
+				item: "powah:dielectric_paste"
+			}]
+			rewards: [{
+				id: "7D551C38C8A37AA6"
+				type: "item"
+				title: "Wrench"
+				item: {
+					id: "powah:wrench"
+					Count: 1b
+					tag: {
+						PowahWrenchNBT: { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Getting Started: Logistics and Storage"
+			icon: "powah:dielectric_casing"
+			x: 4.5d
+			y: 4.0d
+			shape: "hexagon"
+			description: ["An energy generating mod would hardly be complete without some ways to transmit and store it. Powah comes with everything from personal batteries to charge held items to cables and in world storage cells. "]
+			hide_dependency_lines: true
+			dependencies: ["484E8107D89F94E0"]
+			min_width: 300
+			id: "228CEB92770543F1"
+			tasks: [{
+				id: "71E5AE82FF86120F"
+				type: "item"
+				item: "powah:dielectric_casing"
+			}]
+		}
+		{
+			title: "Getting Started: Energizing"
+			icon: "powah:energizing_orb"
+			x: 4.5d
+			y: 1.0d
+			shape: "hexagon"
+			description: [
+				"Powah introduces just a few types of machines, but multiple tiers of each. Obtaining higher tiers requires more powerful materials which are made with the Energizing Orb."
+				""
+				"The Orb may be operated by hand or via automation, accepting items from any sort of pipe or conveyance. Once items are inserted, they may not be removed via automation until the craft completes, simplifying automated crafting considerably. Items may be removed by hand at any time, however."
+				""
+				"Energy for the craft requires Energizing Rods placed around the Orb. These must be placed on some form of energy cable or battery. The rods themselves may be up to six blocks from the Orb and do not require line of sight; they’ll happily shoot their lasers through any block. "
+				""
+				"Rods will automatically link to the nearest Orb when placed but may be re-linked to another Orb manually with a Wrench. Sneak Right-Click the Wrench in the air to change it to Link mode."
+				""
+				"As energy costs increase for higher tier materials, higher tier Rods are recommended to increase the energy delivery rate, though it’s also viable to simply add more Rods. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["484E8107D89F94E0"]
+			min_width: 250
+			id: "50999062F73B4226"
+			tasks: [
+				{
+					id: "79E3995E3D305FF1"
+					type: "item"
+					item: "powah:energizing_orb"
+				}
+				{
+					id: "20D3D4FB3919A5FD"
+					type: "item"
+					title: "Energizing Rods"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "powah:energizing_rod_basic"
+									Count: 1b
+								}
+								{
+									id: "powah:energizing_rod_hardened"
+									Count: 1b
+								}
+								{
+									id: "powah:energizing_rod_blazing"
+									Count: 1b
+								}
+								{
+									id: "powah:energizing_rod_niotic"
+									Count: 1b
+								}
+								{
+									id: "powah:energizing_rod_spirited"
+									Count: 1b
+								}
+								{
+									id: "powah:energizing_rod_nitro"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "6C4614908232DE18"
+				type: "item"
+				title: "Energizing Rod (Basic)"
+				item: "powah:energizing_rod_basic"
+				count: 2
+			}]
+		}
+		{
+			title: "Player Transmitter"
+			icon: "powah:player_transmitter_nitro"
+			x: 5.0d
+			y: 5.0d
+			description: [
+				"Carrying around a battery is an excellent way to keep powered equipment charged on the go, but what if we could regain that inventory slot? The Player Transmitter allows precisely that by remotely charging any items in the owner’s inventory. "
+				""
+				"To set the owner, craft a Binding Card and Right-Click the card in the air. Doing so will bind the card to that player. The card may then be inserted into the Player Transmitter to configure it."
+			]
+			dependencies: ["228CEB92770543F1"]
+			id: "63B827E3E73EFA96"
+			tasks: [
+				{
+					id: "14CEA79B97E17485"
+					type: "item"
+					title: "Player Transmitter"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "powah:player_transmitter_basic"
+									Count: 1b
+								}
+								{
+									id: "powah:player_transmitter_hardened"
+									Count: 1b
+								}
+								{
+									id: "powah:player_transmitter_blazing"
+									Count: 1b
+								}
+								{
+									id: "powah:player_transmitter_niotic"
+									Count: 1b
+								}
+								{
+									id: "powah:player_transmitter_spirited"
+									Count: 1b
+								}
+								{
+									id: "powah:player_transmitter_nitro"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "380D1C25A2497F15"
+					type: "item"
+					item: "powah:binding_card"
+				}
+			]
+			rewards: [{
+				id: "63098E3C72802581"
+				type: "command"
+				title: "Powah Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Dimensional Binding Card"
+			x: 4.0d
+			y: 5.0d
+			description: ["An ordinary Binding Card will only work within the same dimension as the Player Transmitter. By upgrading it to a Dimensional Card, however, the Player can enjoy wireless charging from anywhere. "]
+			dependencies: ["63B827E3E73EFA96"]
+			id: "7DE13B346D58EBC0"
+			tasks: [{
+				id: "2A68E7410BEBD761"
+				type: "item"
+				item: "powah:binding_card_dim"
+			}]
+			rewards: [{
+				id: "3B413E07DB669859"
+				type: "command"
+				title: "Powah Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "Energized Steel"
+			x: 3.0d
+			y: 1.0d
+			description: ["After the Basic tier comes Hardened, the first tier requiring energized materials. "]
+			dependencies: ["50999062F73B4226"]
+			id: "76F6EB4E8B08B2D7"
+			tasks: [{
+				id: "6CBD94B2799343E9"
+				type: "item"
+				item: "powah:steel_energized"
+			}]
+			rewards: [{
+				id: "455C8A8A7BE035D1"
+				type: "command"
+				title: "Powah Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.0d
+			description: ["The first of several crystalline materials required by Powah, Blazing Crystals retain enormous heat and double as a decent heat source for Thermo Generators. "]
+			dependencies: ["50999062F73B4226"]
+			id: "021A85DF88F36FD9"
+			tasks: [{
+				id: "2D1D4FA3C631D388"
+				type: "item"
+				item: "powah:crystal_blazing"
+			}]
+			rewards: [{
+				id: "4166AF7AA01BDA6D"
+				type: "command"
+				title: "Powah Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.5d
+			description: ["As costs increase, so to do the rewards, with Niotic tier machines operating much more quickly."]
+			dependencies: ["50999062F73B4226"]
+			id: "7FEC371F683D607D"
+			tasks: [{
+				id: "6B6FF472040B4127"
+				type: "item"
+				item: "powah:crystal_niotic"
+			}]
+			rewards: [{
+				id: "2D4FDD276AF9B9B5"
+				type: "command"
+				title: "Powah Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.0d
+			description: ["The penultimate tier of materials, Spirited is quite powerful in its own right. But with the right materials we can go further still. "]
+			dependencies: ["50999062F73B4226"]
+			id: "492CE55FC2AB4734"
+			tasks: [{
+				id: "4A0C045A3F573A79"
+				type: "item"
+				item: "powah:crystal_spirited"
+			}]
+			rewards: [{
+				id: "5BA2BA147AD1ACF1"
+				type: "command"
+				title: "Powah Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.0d
+			description: ["Using incredibly rare materials to craft, Nitro represents the highest tier of Powah."]
+			dependencies: ["50999062F73B4226"]
+			id: "43F16FA71F8EAE7A"
+			tasks: [{
+				id: "62ED665D939499EC"
+				type: "item"
+				item: "powah:crystal_nitro"
+			}]
+			rewards: [{
+				id: "67746BAC0B5F3B23"
+				type: "command"
+				title: "Powah Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/powah/epic"
+				player_command: false
+			}]
+		}
+	]
+	quest_links: [ ]
+}

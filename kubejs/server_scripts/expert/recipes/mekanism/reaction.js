@@ -13,6 +13,14 @@ ServerEvents.recipes((event) => {
             energyRequired: 10000,
             duration: 1200,
             id: `${id_prefix}polonium`
+        },
+        {
+            itemOutput: { item: 'mekanism:pellet_polonium' },
+            fluidInput: { amount: 250, tag: 'forge:experience' },
+            gasInput: { amount: 1000, gas: 'mekanism:polonium' },
+            itemInput: { ingredient: { tag: 'forge:dusts/fluorite' } },
+            duration: 100,
+            id: `${id_prefix}pellet_polonium`
         }
     ];
 

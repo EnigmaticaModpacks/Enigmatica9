@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
                 B: 'ars_nouveau:mob_jar',
                 C: 'ars_nouveau:blue_archwood_wood'
             },
-            id: 'starbunclemania:fluid_jar'
+            id: `${id_prefix}fluid_jar`
         },
         {
             output: 'starbunclemania:fluid_sourcelink',
@@ -24,7 +24,17 @@ ServerEvents.recipes((event) => {
                 C: '#forge:nuggets/bronze',
                 D: 'starbunclemania:fluid_jar'
             },
-            id: 'starbunclemania:fluid_sourcelink'
+            id: `${id_prefix}fluid_sourcelink`
+        },
+        {
+            output: 'starbunclemania:star_bin',
+            pattern: [' A ', 'BCB', ' A '],
+            key: {
+                A: '#forge:nuggets/tin',
+                B: '#forge:plates/tin',
+                C: '#forge:storage_blocks/knightmetal'
+            },
+            id: `${id_prefix}star_bin`
         }
     ];
 

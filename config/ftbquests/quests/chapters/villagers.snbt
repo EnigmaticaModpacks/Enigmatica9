@@ -1,7 +1,7 @@
 {
 	id: "4DFD666F4AAF1C11"
 	group: "0856CF7F5CBEB20A"
-	order_index: 5
+	order_index: 6
 	filename: "villagers"
 	title: "Villagers"
 	icon: "minecraft:emerald"
@@ -307,7 +307,7 @@
 		{
 			title: "Fluix Researcher"
 			x: -2.0d
-			y: 3.0d
+			y: 0.5d
 			description: ["Fluix Researchers can be an excellent early source for Certus Quartz and Sky Stone, as well as selling Inscriber Presses without needing to go out looking for a crashed meteor. "]
 			dependencies: ["26BC59AAFA4069BE"]
 			id: "2D997E47FA436BAA"
@@ -328,7 +328,7 @@
 		{
 			title: "Pressure Mechanic"
 			x: -3.0d
-			y: 3.0d
+			y: 0.5d
 			description: ["Pressure Mechanics sell a wide variety of Pneumatic devices, specialized ammo for Miniguns, and even circuit boards. "]
 			dependencies: ["26BC59AAFA4069BE"]
 			id: "2CEB9CD172B21EE5"
@@ -349,7 +349,7 @@
 		{
 			title: "Forager"
 			x: -5.0d
-			y: 3.0d
+			y: 0.5d
 			description: ["Foragers will purchase a variety of spare mushrooms that you may have lying about."]
 			dependencies: ["26BC59AAFA4069BE"]
 			id: "4DC6ACC638614AF5"
@@ -368,135 +368,9 @@
 			}]
 		}
 		{
-			title: "Stargazer"
-			x: -6.0d
-			y: 1.5d
-			description: ["Stargazers have an eclectic selection of trades, though one stands out in particular: The Astrolabe. This device can be used to quickly transport the user back to a given Star Emitter, which can serve as a nice way to get into a Villager trading hall while leaving no entry for monsters."]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "0AA4B9584F4FC278"
-			tasks: [{
-				id: "65876E66F5291D33"
-				type: "item"
-				item: "blue_skies:star_emitter"
-			}]
-			rewards: [{
-				id: "5F7B45BDF3B6BC02"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Wrangler"
-			x: -5.0d
-			y: 1.5d
-			description: ["The Wrangler trades in meat and animal parts, not unlike their counterpart the Butcher. "]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "3FF06BE569A162E9"
-			tasks: [{
-				id: "1BDB2EAFCE98823F"
-				type: "item"
-				item: "blue_skies:trough"
-			}]
-			rewards: [{
-				id: "54CE665D3A9702A8"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Shoveler"
-			x: -3.0d
-			y: 1.5d
-			description: ["Shovelers sell a variety of enchanted shovels very cheaply. These shovels come pre-upgraded with Falsite, providing them with extra durability. "]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "494C086021300576"
-			tasks: [{
-				id: "12456AFCCE7FFFC0"
-				type: "item"
-				item: "blue_skies:tool_box"
-			}]
-			rewards: [{
-				id: "72ED3CABF3A93FB3"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Nightwatcher"
-			x: -4.0d
-			y: 1.5d
-			description: ["The mysterious Nightwatcher sells a variety of precious metals and gems which may be otherwise hard to come by. They’ll also sell a Bag of Spoils which functions as a transportable five slot inventory. "]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "07380B29A0A491D6"
-			tasks: [{
-				id: "7BC59E61B174CF66"
-				type: "item"
-				item: "blue_skies:bag_of_spoils"
-			}]
-			rewards: [{
-				id: "23F41BBEFE43B053"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Summoner"
-			x: -1.0d
-			y: 1.5d
-			description: ["Mostly trading in animal parts, Summoners will also purchase extra Summoning Tomes from their rogue colleagues in Blinding Dungeons."]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "365FAD52CA1AF03C"
-			tasks: [{
-				id: "36A19378FCFEC71A"
-				type: "item"
-				item: "blue_skies:summoning_table"
-			}]
-			rewards: [{
-				id: "1C6EC7D5418E9D39"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Alchemist"
-			x: -2.0d
-			y: 1.5d
-			description: ["Alchemists are capable of performing a variety of transformations on your behalf. They’ll also purchase extra Alchemy Scrolls from their rogue colleagues in Blinding Dungeons."]
-			dependencies: ["26BC59AAFA4069BE"]
-			id: "4EB63C049BABBA51"
-			tasks: [{
-				id: "3463C17FED3AE2BF"
-				type: "item"
-				item: "blue_skies:alchemy_table"
-			}]
-			rewards: [{
-				id: "5EF131E04D5419F0"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
 			title: "Shady Wizard"
 			x: -4.0d
-			y: 3.0d
+			y: 0.5d
 			description: ["Trading in all manner of arcane goods, Shady Wizards are particularly useful for obtaining ritual tablets, familiar shards, and even rare Caster Tomes."]
 			dependencies: ["26BC59AAFA4069BE"]
 			id: "5BE517A357449C20"
@@ -517,7 +391,7 @@
 		{
 			title: "Engineer"
 			x: -5.5d
-			y: 0.0d
+			y: -0.5d
 			description: ["Engineers mostly buy and sell building materials such as concrete and scaffolding. They will, however, sell maps to Mineral Deposits at high levels."]
 			dependencies: ["26BC59AAFA4069BE"]
 			id: "592C390D79E3C244"
@@ -538,7 +412,7 @@
 		{
 			title: "Machinist"
 			x: -4.5d
-			y: 0.0d
+			y: -0.5d
 			description: ["Machinists are perhaps most useful for the Blueprints they provide, being one of the only reliable sources for Arc Furnace Electrode Blueprints. They also sell tools, drill heads, and various machine parts. "]
 			dependencies: ["26BC59AAFA4069BE"]
 			id: "014B79B20F471E92"
@@ -559,7 +433,7 @@
 		{
 			title: "Electrician"
 			x: -2.5d
-			y: 0.0d
+			y: -0.5d
 			description: ["Electricians offer a variety of wires and electrical components, as well as Faraday armor to keep you safe around exposed wires. "]
 			dependencies: ["26BC59AAFA4069BE"]
 			id: "6F05BC0A109D417A"
@@ -580,7 +454,7 @@
 		{
 			title: "Gunsmith"
 			x: -1.5d
-			y: 0.0d
+			y: -0.5d
 			description: ["Trading in gun parts and ammo, Gunsmiths can be invaluable for creating a powerful Revolver as they offer unique parts with special properties like increased luck or firing rate."]
 			dependencies: ["26BC59AAFA4069BE"]
 			id: "613E019B7F966FD2"
@@ -602,7 +476,7 @@
 			title: "Outfitter"
 			icon: "minecraft:white_banner"
 			x: -3.5d
-			y: 0.0d
+			y: -0.5d
 			description: [
 				"One of the stranger Villager workstations, the Immersive Engineering Outfitter requires a Banner placed on the floor (not on a wall) with any shader applied to it. Applying a shader is as simple as right clicking the placed Banner with a Shader. "
 				""
@@ -670,12 +544,14 @@
 			title: "Villagers"
 			x: -3.5d
 			y: -4.0d
-			shape: "hexagon"
+			shape: "gear"
 			description: [
 				"Several mods add villagers, and it isn’t always a simple task to figure out what workstation goes with which villager. "
 				""
 				"The following quests cover the workstations used by each villager and attempt to give a brief description of what trades might be found."
 			]
+			dependencies: ["0E45018D600614BA"]
+			hide: true
 			id: "26BC59AAFA4069BE"
 			tasks: [{
 				id: "40BC6C88CE23470E"

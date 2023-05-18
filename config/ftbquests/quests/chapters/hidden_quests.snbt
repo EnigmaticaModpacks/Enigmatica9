@@ -71,6 +71,28 @@
 				item: "minecraft:bedrock"
 			}]
 		}
+		{
+			x: -10.0d
+			y: -5.0d
+			id: "2CCCDD05AED3153F"
+			tasks: [{
+				id: "6D7D5D881F406FAA"
+				type: "gamestage"
+				title: "Expert Mode Quests"
+				stage: "expert_mode"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -5.0d
+			id: "0E45018D600614BA"
+			tasks: [{
+				id: "5C42A05A17FA69B3"
+				type: "gamestage"
+				title: "Normal Mode Quests"
+				stage: "normal_mode"
+			}]
+		}
 	]
 	quest_links: [ ]
 }

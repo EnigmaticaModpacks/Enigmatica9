@@ -115,6 +115,8 @@ jei.base.items.disabled = [
     'sushigocrafting:rice'
 ];
 jei.base.items.hidden = [
+    'create:honey_bucket',
+
     /emendatusenigmatica:bitumen_.*_ore/,
     'emendatusenigmatica:bitumen_ore',
 
@@ -154,7 +156,9 @@ jei.base.fluids.hidden = [
     'immersiveengineering:ethanol',
     'immersiveengineering:biodiesel',
     'createaddition:seed_oil',
-    'createaddition:bioethanol'
+    'createaddition:bioethanol',
+    'create:honey',
+    'cofh_core:honey'
 ];
 jei.base.categories.hidden = ['twilightforest:uncrafting'];
 jei.base.recipes.hidden = [
@@ -237,22 +241,30 @@ jei.normal.gases.hidden = [];
 // Expert
 jei.expert.items.disabled = [
     /computercraft/,
+
     'ae2:charger',
     'ae2:vibration_chamber',
+
     'ars_nouveau:agronomic_sourcelink',
     'ars_nouveau:mycelial_sourcelink',
     'ars_nouveau:vitalic_sourcelink',
     'ars_nouveau:volcanic_sourcelink',
     'ars_nouveau:ritual_wilden_summon',
+
     'compactmachines:chunkloader_upgrade',
+
     'constructionwand:iron_wand',
     'constructionwand:stone_wand',
+
     'create:empty_blaze_burner',
+
     'createaddition:alternator',
     'createaddition:modular_accumulator',
     'createaddition:capacitor',
     'createaddition:portable_energy_interface',
+
     'farmingforblockheads:feeding_trough',
+
     'immersiveengineering:capacitor_hv',
     'immersiveengineering:capacitor_lv',
     'immersiveengineering:capacitor_mv',
@@ -281,7 +293,11 @@ jei.expert.items.disabled = [
     'immersiveengineering:tesla_coil',
     'immersiveengineering:generator',
     'immersiveengineering:floodlight',
-    /immersiveengineering:wirecoil_(?!redstone).*/,
+    'immersiveengineering:wirecoil_copper',
+    'immersiveengineering:wirecoil_steel',
+    'immersiveengineering:wirecoil_copper_ins',
+    'immersiveengineering:wirecoil_electrum',
+    'immersiveengineering:wirecoil_electrum_ins',
     'immersiveengineering:component_iron',
     'immersiveengineering:component_steel',
     'immersiveengineering:charging_station',
@@ -294,6 +310,9 @@ jei.expert.items.disabled = [
     'immersiveengineering:breaker_switch',
     'immersiveengineering:current_transformer',
     'immersiveengineering:cloche',
+
+    /industrialforegoing:.*black_hole/,
+    'industrialforegoing:machine_frame_pity',
     'industrialforegoing:biofuel_generator',
     'industrialforegoing:fermentation_station',
     'industrialforegoing:fluid_sieving_machine',
@@ -321,6 +340,8 @@ jei.expert.items.disabled = [
     'industrialforegoing:mob_duplicator',
     'industrialforegoing:bioreactor',
     'industrialforegoing:enchantment_extractor',
+    'industrialforegoing:enchantment_sorter',
+    'industrialforegoing:mob_crusher',
     'industrialforegoing:fluid_extractor',
     'industrialforegoing:enchantment_factory',
     'industrialforegoing:water_condensator',
@@ -338,21 +359,42 @@ jei.expert.items.disabled = [
     'industrialforegoing:mob_slaughter_factory',
     'industrialforegoing:resourceful_furnace',
 
-    /mekanism:universal_cable/,
-    'mekanism:advanced_energy_cube',
-    'mekanism:advanced_induction_cell',
-    'mekanism:advanced_induction_provider',
+    'littlelogistics:steam_locomotive',
+    'littlelogistics:tug',
+
+    /mekanism:.*_universal_cable/,
+    /mekanism:.*_thermodynamic_conductor/,
+    /mekanism:.*_logistical_transporter/,
+    /mekanism:.*_pressurized_tube/,
+    /mekanism:.*_mechanical_pipe/,
+    /mekanism:.*_purifying_factory/,
+    /mekanism:.*_compressing_factory/,
+    /mekanism:.*_crushing_factory/,
+    /mekanism:.*_sawing_factory/,
+    /mekanism:.*_smelting_factory/,
+    'mekanism:logistical_sorter',
+    'mekanism:diversion_transporter',
+    'mekanism:restrictive_transporter',
     'mekanism:basic_energy_cube',
     'mekanism:basic_induction_cell',
     'mekanism:basic_induction_provider',
+    'mekanism:advanced_energy_cube',
+    'mekanism:advanced_induction_cell',
+    'mekanism:advanced_induction_provider',
+    'mekanism:advanced_fluid_tank',
+    'mekanism:advanced_chemical_tank',
     'mekanism:elite_energy_cube',
     'mekanism:elite_induction_cell',
     'mekanism:elite_induction_provider',
-    'mekanism:induction_casing',
-    'mekanism:induction_port',
+    'mekanism:elite_fluid_tank',
+    'mekanism:elite_chemical_tank',
     'mekanism:ultimate_energy_cube',
     'mekanism:ultimate_induction_cell',
     'mekanism:ultimate_induction_provider',
+    'mekanism:ultimate_fluid_tank',
+    'mekanism:ultimate_chemical_tank',
+    'mekanism:induction_casing',
+    'mekanism:induction_port',
     'mekanism:energy_tablet',
     'mekanism:seismic_reader',
     'mekanism:seismic_vibrator',
@@ -371,6 +413,27 @@ jei.expert.items.disabled = [
     /mekanism:hazmat/,
     /mekanism:scuba/,
     'mekanism:oredictionificator',
+    'mekanism:crusher',
+    'mekanism:digital_miner',
+    'mekanism:dimensional_stabilizer',
+    'mekanism:electrolytic_separator',
+    'mekanism:energized_smelter',
+    'mekanism:fuelwood_heater',
+    'mekanism:isotopic_centrifuge',
+    'mekanism:osmium_compressor',
+    'mekanism:personal_barrel',
+    'mekanism:personal_chest',
+    'mekanism:precision_sawmill',
+    'mekanism:purification_chamber',
+    'mekanism:solar_neutron_activator',
+    'mekanism:robit',
+    'mekanism:thermal_evaporation_block',
+    'mekanism:thermal_evaporation_valve',
+    'mekanism:thermal_evaporation_controller',
+    'mekanism:boiler_casing',
+    'mekanism:boiler_valve',
+    'mekanism:pressure_disperser',
+    'mekanism:superheating_element',
 
     'mekanismgenerators:gas_burning_generator',
     'mekanismgenerators:advanced_solar_generator',
@@ -396,6 +459,11 @@ jei.expert.items.disabled = [
     'mekanismgenerators:turbine_valve',
     'mekanismgenerators:turbine_vent',
     'mekanismgenerators:wind_generator',
+    'mekanismgenerators:electromagnetic_coil',
+    'mekanismgenerators:module_geothermal_generator_unit',
+    'mekanismgenerators:module_solar_recharging_unit',
+    'mekanismgenerators:solar_panel',
+    'mekanismgenerators:turbine_blade',
 
     /mininggadgets:upgrade_battery/,
     'mininggadgets:upgrade_three_by_three',
@@ -418,7 +486,10 @@ jei.expert.items.disabled = [
     'naturesaura:dimension_rail_nether',
     'naturesaura:dimension_rail_overworld',
     'naturesaura:rf_converter',
+
     /occultism:chalk_.*_impure/,
+    'pneumaticcraft:air_compressor',
+    'pneumaticcraft:electrostatic_compressor',
     'pneumaticcraft:advanced_air_compressor',
     'pneumaticcraft:advanced_liquid_compressor',
     'pneumaticcraft:liquid_compressor',
@@ -432,6 +503,14 @@ jei.expert.items.disabled = [
     'pneumaticcraft:jumping_upgrade_1',
     'pneumaticcraft:radiation_shielding_upgrade',
     'pneumaticcraft:search_upgrade',
+    'pneumaticcraft:etching_tank',
+    'pneumaticcraft:uv_light_box',
+    'pneumaticcraft:failed_pcb',
+    'pneumaticcraft:unassembled_pcb',
+    'pneumaticcraft:empty_pcb',
+    'pneumaticcraft:solar_cell',
+    'pneumaticcraft:solar_wafer',
+
     /powah:(thermo_generator|solar_panel|furnator|magmator|reactor|energy|battery|ender)/,
     /powah:(energizing_rod_|player_transmitter_|capacitor_)(blazing|hardened)/,
     'powah:dielectric_casing',
@@ -463,6 +542,7 @@ jei.expert.items.disabled = [
     'superiorshields:tin_shield',
     'superiorshields:spirit_hunter_shield',
     'superiorshields:soul_stained_steel_shield',
+
     'thermal:dynamo_compression',
     'thermal:dynamo_gourmand',
     'thermal:dynamo_lapidary',
@@ -477,6 +557,7 @@ jei.expert.items.disabled = [
     'thermal:flux_capacitor',
     'thermal:device_potion_diffuser',
     'thermal:rf_potato',
+
     'twilightforest:candelabra',
     'twilightforest:keepsake_casket',
     'twilightforest:cube_of_annihilation',
@@ -513,6 +594,8 @@ jei.expert.recipes.hidden = [
             'naturesaura:dimension_rail_overworld',
             'naturesaura:animal_spawner',
             'naturesaura:rf_converter',
+            'naturesaura:calling_spirit',
+            'naturesaura:depth_ingot_creation',
             'ars_nouveau:imbuement_chamber',
             'ars_nouveau:mycelial_sourcelink',
             'ars_nouveau:vitalic_sourcelink',
@@ -577,7 +660,7 @@ jei.expert.recipes.hidden = [
     },
     {
         category: 'ars_nouveau:imbuement',
-        recipes_by_id: []
+        recipes_by_id: ['ars_nouveau:imbuement_lapis']
     },
     {
         category: 'ars_nouveau:enchanting_apparatus',

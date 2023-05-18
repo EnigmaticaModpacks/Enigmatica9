@@ -3,6 +3,14 @@ ServerEvents.recipes((event) => {
         return;
     }
 
+    // {
+    //     input: 'sample',
+    //     output: 'sample',
+    //     type: 'sample',
+    //     mod: 'sample',
+    //     id: 'sample'
+    // }
+
     const recipes = [
         {
             filter: { output: 'minecraft:hopper' },
@@ -118,6 +126,61 @@ ServerEvents.recipes((event) => {
             filter: {},
             to_replace: 'mekanism:free_runners',
             replace_with: 'pneumaticcraft:speed_upgrade'
+        },
+        {
+            filter: { output: 'littlelogistics:conductors_wrench' },
+            to_replace: '#forge:ingots/iron',
+            replace_with: '#forge:rods/bronze'
+        },
+        {
+            filter: { mod: 'littlelogistics' },
+            to_replace: '#forge:ingots/iron',
+            replace_with: '#forge:plates/bronze'
+        },
+        {
+            filter: { mod: 'littlelogistics' },
+            to_replace: '#forge:nuggets/iron',
+            replace_with: '#forge:nuggets/bronze'
+        },
+        {
+            filter: { mod: 'littlelogistics' },
+            to_replace: 'minecraft:ender_eye',
+            replace_with: '#forge:essences/manipulation'
+        },
+        {
+            filter: { mod: 'littlelogistics' },
+            to_replace: 'minecraft:ender_pearl',
+            replace_with: '#forge:essences/manipulation'
+        },
+        {
+            filter: { mod: 'littlelogistics' },
+            to_replace: 'minecraft:fishing_rod',
+            replace_with: 'thermal:junk_net'
+        },
+        {
+            filter: { mod: 'littlelogistics' },
+            to_replace: '#balm:stones',
+            replace_with: 'pneumaticcraft:compressed_stone'
+        },
+        {
+            filter: { mod: 'littlelogistics' },
+            to_replace: 'minecraft:stone_slab',
+            replace_with: 'pneumaticcraft:logistics_core'
+        },
+        {
+            filter: { output: /(framedblocks|minecraft|create):.*rail/ },
+            to_replace: '#forge:ingots/gold',
+            replace_with: '#forge:rods/electrum'
+        },
+        {
+            filter: { output: /(framedblocks|minecraft):.*rail/ },
+            to_replace: '#forge:ingots/iron',
+            replace_with: '#forge:rods/iron'
+        },
+        {
+            filter: { output: /minecraft:.*rail/ },
+            to_replace: '#forge:ingots/osmium',
+            replace_with: '#forge:rods/osmium'
         }
     ];
 

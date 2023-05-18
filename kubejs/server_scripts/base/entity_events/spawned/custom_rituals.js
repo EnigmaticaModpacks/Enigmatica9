@@ -199,7 +199,7 @@ EntityEvents.spawned((event) => {
                     }
 
                     if (index % Math.floor(coordinates.length / num_points) === 0) {
-                        command = `/execute in ${ritual_dimension} run playsound blue_skies:entity.armored_frost_spirit.hurt block @p ${coord.x} ${coord.y} ${coord.z} 2 1`;
+                        command = `/execute in ${ritual_dimension} run playsound quark:ambient.cave block @p ${coord.x} ${coord.y} ${coord.z} 2 1`;
                         schedule.server.runCommandSilent(command);
                     }
                 });
@@ -252,7 +252,7 @@ EntityEvents.spawned((event) => {
             let color;
             let secondary_particle;
 
-            if (ritual_dimension == 'minecraft:the_nether' || ritual_dimension == 'blue_skies:everbright') {
+            if (ritual_dimension == 'minecraft:the_nether') {
                 // Ghosts Aura - Red
                 color = '201 11 8';
                 secondary_particle = 'minecraft:soul';
@@ -384,10 +384,10 @@ EntityEvents.spawned((event) => {
                 delay = start_delay + 0.5 * block.pos[1];
                 event.server.scheduleInTicks(delay, (schedule) => {
                     if (palette.Name !== 'minecraft:air') {
-                        command = `/execute in ${ritual_dimension} run particle blue_skies:frose_snow ${coord.x} ${coord.y} ${coord.z} 0.5 0.5 0.5 0.1 1`;
+                        command = `/execute in ${ritual_dimension} run particle byg:cherry_blossom_fall_white ${coord.x} ${coord.y} ${coord.z} 0.5 0.5 0.5 0.1 1`;
                         schedule.server.runCommandSilent(command);
 
-                        command = `/execute in ${ritual_dimension} run particle blue_skies:dusk_smoke ${coord.x} ${coord.y} ${coord.z} 0.5 0.5 0.5 0.1 10`;
+                        command = `/execute in ${ritual_dimension} run particle supplementaries:bomb_smoke ${coord.x} ${coord.y} ${coord.z} 0.5 0.5 0.5 0.1 10`;
                         schedule.server.runCommandSilent(command);
                     }
 

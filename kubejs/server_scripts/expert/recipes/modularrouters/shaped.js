@@ -35,113 +35,132 @@ ServerEvents.recipes((event) => {
             id: 'modularrouters:modular_router'
         },
         {
-            output: 'modularrouters:player_module',
-            pattern: ['ABC'],
+            output: '2x modularrouters:player_module',
+            pattern: ['BAC', 'DED', 'CAB'],
             key: {
-                A: 'modularrouters:puller_module_2',
-                B: 'occultism:stable_wormhole',
-                C: 'modularrouters:sender_module_2'
+                A: '#forge:gems/source',
+                B: '#forge:ingots/sky',
+                C: '#forge:ingots/infused_iron',
+                D: 'occultism:stable_wormhole',
+                E: 'modularrouters:blank_module'
             },
             id: 'modularrouters:player_module'
         },
         {
-            output: 'modularrouters:sender_module_1',
-            pattern: [' A ', 'ABA', ' C '],
+            output: '4x modularrouters:sender_module_1',
+            pattern: ['CAC', 'DED', 'BAB'],
             key: {
-                A: '#forge:ingots/steeleaf',
-                B: 'modularrouters:blank_module',
-                C: 'minecraft:hopper'
+                A: '#forge:gems/source',
+                B: '#forge:ingots/silver',
+                C: '#forge:ingots/infused_iron',
+                D: 'minecraft:hopper',
+                E: 'modularrouters:blank_module'
             },
             id: 'modularrouters:sender_module_1'
         },
         {
-            output: 'modularrouters:puller_module_1',
-            pattern: [' C ', 'ABA', ' A '],
+            output: '4x modularrouters:puller_module_1',
+            pattern: ['BAB', 'DED', 'CAC'],
             key: {
-                A: '#forge:ingots/steeleaf',
-                B: 'modularrouters:blank_module',
-                C: 'minecraft:hopper'
+                A: '#forge:gems/source',
+                B: '#forge:ingots/silver',
+                C: '#forge:ingots/infused_iron',
+                D: 'minecraft:hopper',
+                E: 'modularrouters:blank_module'
             },
             id: 'modularrouters:puller_module_1'
         },
         {
-            output: 'modularrouters:sender_module_2',
-            pattern: [' A ', 'ABA', ' C '],
+            output: '4x modularrouters:sender_module_2',
+            pattern: ['CAC', 'DED', 'BAB'],
             key: {
-                A: 'spirit:soul_powder',
-                B: 'modularrouters:blank_module',
-                C: 'pneumaticcraft:omnidirectional_hopper'
+                A: '#forge:gems/source',
+                B: '#forge:ingots/sky',
+                C: '#forge:ingots/infused_iron',
+                D: 'pneumaticcraft:omnidirectional_hopper',
+                E: 'modularrouters:blank_module'
             },
             id: 'modularrouters:sender_module_2'
         },
         {
-            output: 'modularrouters:puller_module_2',
-            pattern: [' C ', 'ABA', ' A '],
+            output: '4x modularrouters:puller_module_2',
+            pattern: ['BAB', 'DED', 'CAC'],
             key: {
-                A: 'spirit:soul_powder',
-                B: 'modularrouters:blank_module',
-                C: 'pneumaticcraft:omnidirectional_hopper'
+                A: '#forge:gems/source',
+                B: '#forge:ingots/sky',
+                C: '#forge:ingots/infused_iron',
+                D: 'pneumaticcraft:omnidirectional_hopper',
+                E: 'modularrouters:blank_module'
             },
             id: 'modularrouters:puller_module_2'
         },
         {
-            output: 'modularrouters:sender_module_3',
-            pattern: [' D ', 'ABA', ' C '],
+            output: '4x modularrouters:sender_module_3',
+            pattern: ['BAB', 'DED', 'CAC'],
             key: {
-                A: 'spirit:soul_powder',
-                B: 'modularrouters:blank_module',
-                C: 'pneumaticcraft:omnidirectional_hopper',
-                D: 'mekanism:teleportation_core'
+                A: '#forge:gems/source',
+                B: '#forge:ingots/sky',
+                C: '#forge:ingots/infused_iron',
+                D: 'mekanism:teleportation_core',
+                E: 'modularrouters:blank_module'
             },
             id: 'modularrouters:sender_module_3'
         },
         {
-            output: 'modularrouters:distributor_module',
-            pattern: ['ACA', 'CBC', 'ACA'],
+            output: '4x modularrouters:distributor_module',
+            pattern: ['BAC', 'DED', 'CAB'],
             key: {
-                A: 'spirit:soul_powder',
-                B: 'modularrouters:blank_module',
-                C: 'pneumaticcraft:omnidirectional_hopper'
+                A: '#forge:gems/source',
+                B: '#forge:ingots/sky',
+                C: '#forge:ingots/infused_iron',
+                D: 'pneumaticcraft:omnidirectional_hopper',
+                E: 'modularrouters:blank_module'
             },
             id: 'modularrouters:distributor_module'
         },
         {
-            output: 'modularrouters:fluid_module',
-            pattern: [' A ', 'BCB', ' B '],
+            output: '4x modularrouters:fluid_module',
+            pattern: ['BAB', 'DED', 'CAC'],
             key: {
-                A: 'littlelogistics:fluid_hopper',
-                B: '#forge:ingots/steeleaf',
-                C: 'modularrouters:blank_module'
+                A: '#forge:gems/source',
+                B: '#forge:ingots/silver',
+                C: '#forge:ingots/infused_iron',
+                D: 'littlelogistics:fluid_hopper',
+                E: 'modularrouters:blank_module'
             },
             id: 'modularrouters:fluid_module'
         },
         {
-            output: 'modularrouters:fluid_module_2',
-            pattern: [' A ', 'BCB', ' B '],
+            output: '4x modularrouters:fluid_module_2',
+            pattern: ['BAB', 'DED', 'CAC'],
             key: {
-                A: 'pneumaticcraft:liquid_hopper',
-                B: 'spirit:soul_powder',
-                C: 'modularrouters:blank_module'
+                A: '#forge:gems/source',
+                B: '#forge:ingots/sky',
+                C: '#forge:ingots/infused_iron',
+                D: 'pneumaticcraft:liquid_hopper',
+                E: 'modularrouters:blank_module'
             },
             id: 'modularrouters:fluid_module_2'
         },
         {
-            output: 'modularrouters:vacuum_module',
-            pattern: [' A ', 'BCB', ' B '],
+            output: '2x modularrouters:vacuum_module',
+            pattern: [' A ', 'BCB', ' A '],
             key: {
-                A: 'minecraft:lodestone',
-                B: '#forge:ingots/steeleaf',
+                A: '#forge:gems/source',
+                B: 'minecraft:lodestone',
                 C: 'modularrouters:blank_module'
             },
             id: 'modularrouters:vacuum_module'
         },
         {
             output: 'modularrouters:energy_distributor_module',
-            pattern: ['ABA', 'BCB', 'ABA'],
+            pattern: ['BAB', 'DED', 'CAC'],
             key: {
-                A: 'spirit:soul_powder',
-                B: 'powah:energizing_rod_basic',
-                C: 'modularrouters:blank_module'
+                A: '#forge:gems/source',
+                B: '#forge:ingots/sky',
+                C: '#forge:ingots/infused_iron',
+                D: 'powah:energizing_rod_basic',
+                E: 'modularrouters:blank_module'
             },
             id: 'modularrouters:energy_distributor_module'
         },
@@ -149,7 +168,7 @@ ServerEvents.recipes((event) => {
             output: 'modularrouters:energy_output_module',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
-                A: '#forge:ingots/steeleaf',
+                A: '#forge:gems/source',
                 B: 'powah:capacitor_basic_large',
                 C: 'modularrouters:blank_module'
             },
