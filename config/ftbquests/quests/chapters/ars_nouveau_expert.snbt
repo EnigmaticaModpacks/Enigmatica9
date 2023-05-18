@@ -13,7 +13,7 @@
 			icon: "ars_nouveau:creative_spell_book"
 			x: -2.0d
 			y: -6.0d
-			shape: "hexagon"
+			shape: "gear"
 			description: [
 				"With Ars Nouveau you will learn to harness the latent energy infused in all things to cast powerful spells, drive arcane machinery, and even to empower some cute friends along the way. "
 				""
@@ -21,6 +21,8 @@
 				""
 				"~MuteTiefling"
 			]
+			dependencies: ["2CCCDD05AED3153F"]
+			hide: true
 			id: "4FFD31414D5F69E6"
 			tasks: [{
 				id: "4C0C28C6DB286E4B"
@@ -46,6 +48,7 @@
 				""
 				"To set a spell, inscribe a Spell Parchment and Right-Click it on the Turret. It may use either Touch or Projectile forms in the spell. "
 			]
+			dependencies: ["61D89161FF1433AC"]
 			id: "354B4053058D8DC9"
 			tasks: [{
 				id: "7FF61082CB97D077"
@@ -81,6 +84,7 @@
 				""
 				"● Fluid absorbs certain liquids from tanks placed below it, converting it into Source at different rates. "
 			]
+			dependencies: ["4197331BEFC9523D"]
 			min_width: 300
 			id: "302C5405A92ABA2B"
 			tasks: [{
@@ -147,6 +151,7 @@
 				""
 				"To use Runic Chalk, begin by Right-Clicking it on the ground to draw a rune. Now Right-Click the rune with a prepared Spell Parchment. Valid Spell Parchments must begin with the Touch Form."
 			]
+			dependencies: ["61D89161FF1433AC"]
 			id: "65A391A914555563"
 			tasks: [{
 				id: "65886230085A4889"
@@ -181,6 +186,7 @@
 				"Parchments may be re-used, though it can be useful to keep a library of scribed Parchments to be able to quickly re-apply the spell. "
 			]
 			hide_dependency_lines: true
+			dependencies: ["4CFBDE9FB821CFB6"]
 			id: "61D89161FF1433AC"
 			tasks: [{
 				id: "178E6CCD5BBB06AE"
@@ -203,6 +209,7 @@
 				"Second, they can be woven into a fabric that when worn close serves as a personal battery for Source."
 			]
 			hide_dependency_lines: true
+			dependencies: ["4FFD31414D5F69E6"]
 			id: "4CFBDE9FB821CFB6"
 			tasks: [
 				{
@@ -240,6 +247,7 @@
 				""
 				"The Enchanting Apparatus may also be used to apply specific enchantments to tools and armor, simplifying the process of getting certain enchants to round out a piece of gear. These recipes are only listed in the Worn Notebook."
 			]
+			dependencies: ["302C5405A92ABA2B"]
 			min_width: 250
 			id: "4838BDF5F871F986"
 			tasks: [
@@ -280,6 +288,8 @@
 				""
 				"Refer to the Worn Notebook's section on Magical Equipment for recipes and to discover more useful curios."
 			]
+			hide_dependency_lines: true
+			dependencies: ["4FFD31414D5F69E6"]
 			id: "514EBC20066B3A52"
 			tasks: [
 				{
@@ -311,6 +321,7 @@
 				""
 				"Use a Dominion Wand to set the links. "
 			]
+			dependencies: ["4838BDF5F871F986"]
 			id: "0558849340629198"
 			tasks: [{
 				id: "767E032AB8372611"
@@ -335,6 +346,7 @@
 				""
 				"They share the same range limitations of normal Relays, but by combining the two a network of Source can be easily strung across an area, making it available wherever it is needed."
 			]
+			dependencies: ["0558849340629198"]
 			id: "4FC7A27EE813E191"
 			tasks: [{
 				id: "1948D7AF917D9256"
@@ -355,6 +367,7 @@
 			y: 0.0d
 			subtitle: "Boop the Snoot"
 			description: ["An amicable being with a driving need to organize, Bookwyrms are central to using Ars Nouveau’s item management system which allows linking many inventories together into a single access point."]
+			dependencies: ["607D671B8C399B83"]
 			id: "15CB1C35BC808088"
 			tasks: [{
 				id: "6AD8119AA03B49E7"
@@ -383,6 +396,7 @@
 				""
 				"These critters can be an uncommon sight even in ancient forests. If none can be found, consider summoning them with the Altar of Birthing."
 			]
+			dependencies: ["607D671B8C399B83"]
 			id: "06AFFA588E4FFAAD"
 			tasks: [{
 				id: "073A6DCFEFE3E128"
@@ -417,6 +431,7 @@
 				""
 				"The number of wild Sylphs has dwindled in recent times. If none can be found, consider summoning them with the Altar of Birthing."
 			]
+			dependencies: ["607D671B8C399B83"]
 			id: "6B1BDD9754A7FF5E"
 			tasks: [{
 				id: "6EEC842FB69246E8"
@@ -461,6 +476,8 @@
 			y: -1.0d
 			subtitle: "Auto-magically"
 			description: ["Not all tasks lend themselves to completion by simple automatons like a turret or a rune. There exist certain magical creatures in this world that will help an aspiring practitioner quite willingly if asked nicely. "]
+			hide_dependency_lines: true
+			dependencies: ["4FFD31414D5F69E6"]
 			id: "607D671B8C399B83"
 			tasks: [{
 				id: "7EF83714F3685482"
@@ -528,6 +545,7 @@
 				""
 				"To specify what the Wixie ought to craft, simply make one of the items yourself and Right-Click it on her cauldron. She'll take care of gathering the required items from nearby inventories. She will need a jar of Source nearby, however, to keep her productive."
 			]
+			dependencies: ["607D671B8C399B83"]
 			id: "056A0DB6CE5116C9"
 			tasks: [
 				{
@@ -563,6 +581,7 @@
 				""
 				"It is recommended to take that potion and stick it in the jar immediately so that the potion jar can be locked to that type. Sneak + Right-Click the jar with a Dominion Wand to lock it to that type of potion. This is handy when multiple Wixies are at work in the same area.  "
 			]
+			dependencies: ["056A0DB6CE5116C9"]
 			min_width: 250
 			id: "3A45AF261026B10F"
 			tasks: [{
@@ -595,6 +614,7 @@
 				""
 				"The process uses some Source from a nearby Source Jar but produces potions that combine all the effects of the two inputs. This process can be chained to produce potions with multiple effects."
 			]
+			dependencies: ["3A45AF261026B10F"]
 			id: "3DA418767015E6E5"
 			tasks: [
 				{
@@ -644,6 +664,7 @@
 				""
 				"Each Flask can hold up to eight doses of potion and may even be enchanted to increase the potency or duration of the potions within."
 			]
+			dependencies: ["3A45AF261026B10F"]
 			id: "2F5B141F17AC773B"
 			tasks: [{
 				id: "410B901A50F887E0"
@@ -678,6 +699,7 @@
 				""
 				"Other Arcane Foci exist granting similar benefits, such as the Enchanter’s Mirror and Enchanter’s Sword. The Worn Notebook covers these and more. "
 			]
+			dependencies: ["61D89161FF1433AC"]
 			id: "7D0F493B1B116DA0"
 			tasks: [{
 				id: "755FC973DA0A8787"
@@ -704,6 +726,8 @@
 				""
 				"To get it going, Right-Click the Brazier with any Tablet. If extra materials are required, they should be thrown atop the flame to be consumed. Once everything is set, Right-Click again with an empty hand to finalize the ritual. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["4FFD31414D5F69E6"]
 			id: "2CFCF5AFECE471E7"
 			tasks: [{
 				id: "0BBCBFD97B091502"
@@ -726,6 +750,7 @@
 				""
 				"Monsters killed with this ritual will drop Experience Gems worth roughly double the XP they’d drop normally. But, all drops are lost in the process."
 			]
+			dependencies: ["2CFCF5AFECE471E7"]
 			id: "0192B98DE5786E7F"
 			tasks: [
 				{
@@ -757,6 +782,7 @@
 				""
 				"But did they solve the rain? No. Now let’s magic that rain away.  "
 			]
+			dependencies: ["2CFCF5AFECE471E7"]
 			id: "691206544D5EF45F"
 			tasks: [{
 				id: "269439A3A5CBE6FC"
@@ -784,6 +810,7 @@
 				""
 				"Surely nothing bad could come of this?"
 			]
+			dependencies: ["2CFCF5AFECE471E7"]
 			id: "0E4A7CF195CFFB49"
 			tasks: [
 				{
@@ -815,6 +842,7 @@
 				""
 				"Summons a Pillager Raid to your back door, just in time!"
 			]
+			dependencies: ["2CFCF5AFECE471E7"]
 			id: "0D2F5C9F811159E0"
 			tasks: [{
 				id: "665CD90C4D89EF90"
@@ -837,6 +865,7 @@
 				""
 				"Magic does wonders when it comes to growing crops and breeding animals. Combine these two rituals to keep your livestock busy and growing quickly. "
 			]
+			dependencies: ["2CFCF5AFECE471E7"]
 			id: "6518A4D6C3746C0C"
 			tasks: [
 				{
@@ -873,6 +902,7 @@
 				""
 				"Alternatively, a portal may be built using any type of Sourcestone in a rectangular shape.  Place a filled Source Jar nearby and toss a bound Warp Scroll through the frame to ignite it, linking it to the coordinates from the scroll. Items, mobs, even spells may pass through these portals, though they are incapable of crossing between dimensions. "
 			]
+			dependencies: ["4CFBDE9FB821CFB6"]
 			id: "524A6B28242AA5B8"
 			tasks: [{
 				id: "163C30AF21EC9EA7"
@@ -995,6 +1025,7 @@
 				""
 				"The number of wild Drygmies has dwindled in recent times. If none can be found, consider summoning them with the Altar of Birthing."
 			]
+			dependencies: ["607D671B8C399B83"]
 			id: "6AD899D00A4F801A"
 			tasks: [{
 				id: "03C83C1DC9E83BD4"
@@ -1030,6 +1061,7 @@
 				""
 				"Useful for summoning Wilden of all sizes. When augmented with body parts from each of the lesser Wilden, the Wilden Chimera will appear to avenge his kin."
 			]
+			dependencies: ["2CFCF5AFECE471E7"]
 			id: "4C8EE3E4E174B4CC"
 			tasks: [
 				{
@@ -1061,6 +1093,7 @@
 				""
 				"A Depositor therefore makes a great tool for keeping jars filled for other purposes, such as forming Warp Portals. Using both a Collector and a Depositor together also makes for a handy automation friendly means of transferring Source. Fill jars in one location, pick them up, and drain them elsewhere. "
 			]
+			dependencies: ["0558849340629198"]
 			id: "364F5765F967CD2A"
 			tasks: [{
 				id: "4DF32BC38D0F1D79"
@@ -1100,6 +1133,7 @@
 				""
 				"A small amount of Source is used in stabilizing this connection over longer distances. "
 			]
+			dependencies: ["0558849340629198"]
 			id: "1042A6ABF523E20D"
 			tasks: [{
 				id: "5375EC5614AE6B23"
@@ -1120,6 +1154,7 @@
 			y: -1.5d
 			subtitle: "Don't You Crittersize Me!"
 			description: ["The only thing keeping these cute critters from being a crunchy treat to larger predators are their swift little feet. A power they’ll gladly lend for the price of friendship."]
+			dependencies: ["7EE4A2E96D7FAD4E"]
 			id: "6006ADCD83297A65"
 			tasks: [{
 				id: "5648C8DE68415AEC"
@@ -1140,6 +1175,7 @@
 			y: 0.0d
 			subtitle: "A Spoonful of Sugar Helps the Medicine Go Down..."
 			description: ["Though quite pleasant to hang around in more domestic environments, Wixies are known to be quite resourceful in a fight, flinging dangerous brews hither and thither to fend off would be attackers. "]
+			dependencies: ["7EE4A2E96D7FAD4E"]
 			id: "22926CE82EC452E7"
 			tasks: [{
 				id: "06DC2795969C79F4"
@@ -1160,6 +1196,7 @@
 			y: -2.0d
 			subtitle: "As Luck Would Hoove It"
 			description: ["Powerful Earth Spirits with a knack for finding things, Drygmies impart their knowledge upon their friends, bolstering magic and turning up extra loot."]
+			dependencies: ["7EE4A2E96D7FAD4E"]
 			id: "1C3386E68132950C"
 			tasks: [{
 				id: "75F277CDA083AFF6"
@@ -1180,6 +1217,7 @@
 			y: -0.5d
 			subtitle: "I Will Dewey Decimate You"
 			description: ["With their deep link to Source, Bookwyrms make excellent allies, lending their strength each of their partner’s spell casts. "]
+			dependencies: ["7EE4A2E96D7FAD4E"]
 			id: "6739C16B7A5ADE24"
 			tasks: [{
 				id: "41D899E2D0696288"
@@ -1200,6 +1238,7 @@
 			y: -0.5d
 			subtitle: "The Queen of Sauce"
 			description: ["Variety is the spice of life, and none know this better than the Sylvan folk. Everything tastes better when they’re around."]
+			dependencies: ["7EE4A2E96D7FAD4E"]
 			id: "63138A584A6A780C"
 			tasks: [{
 				id: "14B5918A6BB181A8"
@@ -1226,6 +1265,8 @@
 				""
 				"Each familiar grants unique bonuses that are detailed in the Worn Notebook. Explore each to find just the right friend."
 			]
+			hide_dependency_lines: true
+			dependencies: ["2CFCF5AFECE471E7"]
 			id: "7EE4A2E96D7FAD4E"
 			tasks: [{
 				id: "38C9CC1DA3ABF280"
@@ -1246,6 +1287,7 @@
 			icon: "ars_nouveau:imbuement_chamber"
 			x: -6.0d
 			y: -7.0d
+			shape: "hexagon"
 			subtitle: "Like Sweet Morning Dew"
 			description: [
 				"Source is the driving energy behind every spell and arcane device in Ars Nouveau, but it must be condensed out of the world to harness it for anything beyond the simplest of uses. To that end, we’ll begin with an Imbuement Chamber."
@@ -1254,6 +1296,8 @@
 				""
 				"The item in the center of the recipe is to be inserted into the Chamber itself, while any items surrounding it are to be placed on nearby Pedestals. The items on the Pedestals act as keys and are never consumed, while the central item will be converted to the result. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["4FFD31414D5F69E6"]
 			id: "4197331BEFC9523D"
 			tasks: [
 				{
@@ -1292,6 +1336,7 @@
 			icon: "ars_nouveau:scribes_table"
 			x: 2.0d
 			y: -7.0d
+			shape: "hexagon"
 			description: [
 				"From novice to master alike, much time is dedicated to the art of spell craft, be it preparing and learning new Glyphs, enchanting personal Arcane Foci, or preparing Spell Glyphs or Turrets. "
 				""
@@ -1304,6 +1349,7 @@
 				"Note: Glyphs are stored on the player, not the Spell Book. So, losing a Spell Book does not mean the loss of learned glyphs. "
 			]
 			hide_dependency_lines: true
+			dependencies: ["4FFD31414D5F69E6"]
 			id: "662B1148F137F78E"
 			tasks: [
 				{
@@ -1337,6 +1383,7 @@
 				""
 				"Do note that some Threads have different or stronger effects when applied in higher tier Thread Slots. Some, like the Thread of Gliding, require a specific level slot to be applied at all. Applying the same Thread more than once will generally have no effect. "
 			]
+			dependencies: ["1DE83453655BF926"]
 			id: "4041414E9827EC51"
 			tasks: [
 				{
@@ -1370,6 +1417,7 @@
 				""
 				"The number of wild Sirens has dwindled in recent times. If none can be found, consider summoning them with the Altar of Birthing."
 			]
+			dependencies: ["607D671B8C399B83"]
 			id: "74A25A74AD496C58"
 			tasks: [{
 				id: "7B785038989991E1"
@@ -1393,6 +1441,7 @@
 				""
 				"Combined with Flasks, these can make powerful tools in combat. "
 			]
+			dependencies: ["2F5B141F17AC773B"]
 			id: "332108774E51AE83"
 			tasks: [{
 				id: "335374D3B228A88F"
@@ -1450,6 +1499,7 @@
 				""
 				"The Potion Diffuser greatly enhances the efficiency of potions by applying a single dose to all creatures in the area at an enhanced duration. "
 			]
+			dependencies: ["3A45AF261026B10F"]
 			id: "3AC7311898150AC1"
 			tasks: [{
 				id: "5F4EB7F44DD20B41"
@@ -1473,6 +1523,7 @@
 				""
 				"By opening the radial menu and selecting one of the potions detected in one’s inventory, the Alchemists Crown will automatically re-apply that potion whenever it’s duration ends. By keeping a few flasks on hand, potion effects can be made to last quite a long time without needing to drink repeatedly. "
 			]
+			dependencies: ["2F5B141F17AC773B"]
 			id: "0FDFF1446802C69F"
 			tasks: [{
 				id: "475AA200641E2432"
@@ -1515,6 +1566,7 @@
 			y: -1.5d
 			subtitle: "Flippin' your fins really will get you far"
 			description: ["Truly an indispensable companion to keep when exploring the depths, Sirens will grant their friends a bonus to water spells and also bestow Dolphin’s Grace upon them while swimming. "]
+			dependencies: ["7EE4A2E96D7FAD4E"]
 			id: "371FB3648C3FBE1A"
 			tasks: [{
 				id: "42F027CB39F6B192"
@@ -1535,6 +1587,7 @@
 			y: -2.0d
 			subtitle: "Burninate the land"
 			description: ["When kept as a close companion, Flarecannon will impart some of power upon their friends, boosting fire magics and granting temporary resistance to fire.  "]
+			dependencies: ["7EE4A2E96D7FAD4E"]
 			id: "7119FCE78917F94F"
 			tasks: [{
 				id: "545151E2B2B52B64"
@@ -1559,6 +1612,7 @@
 				""
 				"Refer to the Worn Notebook for an in-depth guide on using Flarecannon. "
 			]
+			dependencies: ["607D671B8C399B83"]
 			id: "187802E8740E4B7F"
 			tasks: [{
 				id: "2FDA844A058A00DC"
@@ -1593,6 +1647,8 @@
 				""
 				"Each set of armor may be upgraded in the Enchantment Apparatus through three different tiers. At each tier, they gain more slots for accepting Threads. The recipe for upgrading the tier is shown in the Worn Notebook. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["4CFBDE9FB821CFB6"]
 			id: "1DE83453655BF926"
 			tasks: [
 				{
@@ -1752,6 +1808,7 @@
 				""
 				"Amethyst Golems, meanwhile, are more fastidious in nature, gently caring for and harvesting Amethyst from nearby Budding Amethyst. Normal Amethyst blocks in their charge may even be made to bud and grow more.    "
 			]
+			dependencies: ["2CFCF5AFECE471E7"]
 			id: "449A56DADABF7ABD"
 			tasks: [
 				{
@@ -1787,6 +1844,7 @@
 				""
 				"Naturally, this also makes an excellent means of transport as well, as the jars may be picked up and moved around freely. To release a creature from the Jar, simply cast Dispel upon it. "
 			]
+			dependencies: ["2CFCF5AFECE471E7"]
 			id: "4A98AB6062E1016E"
 			tasks: [{
 				id: "07ABAA451789ABF2"
@@ -1810,6 +1868,8 @@
 				""
 				"Equipped in a dedicated Curio slot, each focus grants unique boons to their school which are detailed in the Worn Notebook. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["4FFD31414D5F69E6"]
 			id: "3A8F34144B6F22CB"
 			tasks: [{
 				id: "04CE1812FA0E4AD3"
@@ -1889,6 +1949,8 @@
 				""
 				"Place a Scry Crystal in the location to be monitored, Right-Click it with a Blank Parchment to record the location and place the resulting Scryer’s Scroll on a pedestal near the Oculus. When approached, the Oculus allows the Wizard to select from any of the nearby Scrolls to view the location. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["4FFD31414D5F69E6"]
 			id: "5A14F3DE74BAE772"
 			tasks: [
 				{
@@ -1918,6 +1980,7 @@
 				""
 				"Configuring their pickup and drop off locations remains the same as with Items; by using a Dominion Wand after equipping them with the appropriate accessory. "
 			]
+			dependencies: ["06AFFA588E4FFAAD"]
 			id: "77B0AD19B44B8660"
 			tasks: [{
 				id: "067A9588CB5F4392"
@@ -1938,6 +2001,7 @@
 			y: 2.0d
 			subtitle: "Watt is love? Baby don't hertz me, n-ohm-ore"
 			description: ["A tiny little backpack for transporting FE from place to place. "]
+			dependencies: ["77B0AD19B44B8660"]
 			id: "326B424F3311AAB8"
 			tasks: [{
 				id: "6B408FACAC10404D"
@@ -1958,6 +2022,7 @@
 			y: 1.5d
 			subtitle: "Looking a little sloshed"
 			description: ["Sealed to prevent spillages, the Starbucket allows the Starbuncle to transport any fluid. "]
+			dependencies: ["77B0AD19B44B8660"]
 			id: "68ADCCBF744B41A9"
 			tasks: [{
 				id: "1C01B6DC32E32717"
@@ -1978,6 +2043,7 @@
 			y: 1.5d
 			subtitle: "Let's not get carried away"
 			description: ["With a Starballon in tow, a Starbuncle may transport Mekanism gasses from place to place. "]
+			dependencies: ["77B0AD19B44B8660"]
 			id: "7E98C35AE5FE4968"
 			tasks: [{
 				id: "62762CA7EC7F9F1C"
@@ -2001,6 +2067,7 @@
 				""
 				"When fluid potions made by other mods such as Create, Hexerei, Thermal, or Immersive Engineering are stored in a Containment Jar, they’ll automatically be deposited into a Potion Jar placed atop it. Meaning any potion may be easily converted for use in devices such as Potion Melders or other alchemical tools offered by Ars Nouveau."
 			]
+			dependencies: ["3A45AF261026B10F"]
 			id: "681753F1F4851479"
 			tasks: [{
 				id: "0F74DECA21A5928E"
@@ -2021,6 +2088,7 @@
 			y: -5.0d
 			subtitle: "Source Reserves"
 			description: ["A simple device used for converting Source in its natural form to a more… fluid state, allowing it to be moved around by way of pipes or other conveyances. "]
+			dependencies: ["302C5405A92ABA2B"]
 			id: "427D01EAD70B7A13"
 			tasks: [{
 				id: "42AFE3C39ABFFBDB"
@@ -2040,7 +2108,7 @@
 			title: "Energy Conversion"
 			x: -2.0d
 			y: -4.5d
-			shape: "gear"
+			shape: "hexagon"
 			description: [
 				"Once thought to be entirely separate, the magical energies know as Source, Aura, and FE are in fact all facets of the same energy. By making use of special crystals, it becomes possible to convert between them with ease. "
 				""
@@ -2049,6 +2117,7 @@
 				"Resonating Crystals, on the other hand, set up an internal resonance with FE, converting it back into Source or Aura. If a Source Jar is near enough, it will send it there. If there is no jar, or if it is 100% full, the Resonating Crystal will instead convert the incoming FE to Aura and diffuse it into the atmosphere. "
 			]
 			hide_dependency_lines: true
+			dependencies: ["4FFD31414D5F69E6"]
 			min_width: 300
 			id: "2FA7B9ED0D86A30B"
 			tasks: [
@@ -2130,6 +2199,7 @@
 				""
 				"Finally, it should be mentioned that any unbound inventory placed directly adjacent to a Lectern will act as an input for the entire system. Any items that find their way into this inventory will be automatically sorted out to linked inventories by the Bookwyrms. This works for remote Lecterns as well. Items may also be inserted directly into the Lectern via hoppers or other automated logistics. "
 			]
+			dependencies: ["15CB1C35BC808088"]
 			min_width: 300
 			id: "6522618A9434DD3E"
 			tasks: [{
@@ -2154,6 +2224,7 @@
 				""
 				"This feature works with any inventory that can be named in an Anvil, however, it works best with those that retain their name on pickup to avoid having to rename them. Some other examples include Shulker Boxes, Smart Chests, Reinforced Chests, Wooden Storage Crates, and Reinforced Storage Crates to name a few. "
 			]
+			dependencies: ["6522618A9434DD3E"]
 			id: "7D0050E47F61A2EE"
 			tasks: [{
 				id: "626B703D635A79AE"
@@ -2183,6 +2254,7 @@
 				""
 				"To invert the signal, Sneak Right-Click the Case with the Dominion Wand."
 			]
+			dependencies: ["6522618A9434DD3E"]
 			id: "08CE1E56A1401A65"
 			tasks: [{
 				id: "265E41B9D5342FBE"

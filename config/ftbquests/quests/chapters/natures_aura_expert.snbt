@@ -51,7 +51,7 @@
 			icon: "naturesaura:aura_bloom"
 			x: -2.0d
 			y: -7.5d
-			shape: "hexagon"
+			shape: "gear"
 			description: [
 				"Nature's Aura is a druidic themed magi-tech mod that uses the omnipresent 'aura' to derive its power. "
 				""
@@ -61,6 +61,8 @@
 				""
 				"~MuteTiefling"
 			]
+			dependencies: ["2CCCDD05AED3153F"]
+			hide: true
 			min_width: 250
 			id: "2DED8E4FA6DCD410"
 			tasks: [{
@@ -101,6 +103,8 @@
 				""
 				"Refer to the Book of Natural Aura for specific instructions on building the ritual."
 			]
+			hide_dependency_lines: true
+			dependencies: ["2735E47A2A965FEE"]
 			id: "699BC5534C19FC5E"
 			tasks: [{
 				id: "148F95A06F17918B"
@@ -130,6 +134,7 @@
 			icon: "naturesaura:gold_fiber"
 			x: -4.5d
 			y: -8.5d
+			shape: "hexagon"
 			subtitle: "The threads that bind us"
 			description: [
 				"To begin upon the naturalist's path, Brilliant Fiber should be woven into the leaves of trees. There, they’ll transform the leaves to a beautiful golden hue."
@@ -138,6 +143,8 @@
 				""
 				"Golden Leaf will drop whenever the fully transformed leaves are broken. Place fresh leaves near the remaining transformed leaves to begin converting them as well. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["2DED8E4FA6DCD410"]
 			id: "2735E47A2A965FEE"
 			tasks: [
 				{
@@ -180,6 +187,8 @@
 				""
 				"Place the offerings in the bowl and then toss down a Spirit of Calling to complete the ritual. The bowl will hold multiple items, with only a single Spirit required for the full batch. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["2735E47A2A965FEE"]
 			id: "37D084A5FD96EACA"
 			tasks: [{
 				id: "061AD10825E1993F"
@@ -200,14 +209,15 @@
 			icon: "naturesaura:nature_altar"
 			x: -2.0d
 			y: -5.0d
+			shape: "hexagon"
 			subtitle: "The duality of life and death"
 			description: [
 				"The Natural Altar is the heart of two ritual practices; one to infuse life into objects and another to infuse death. "
 				""
-				"Recipes displaying a green aura bottle will be crafted on the altar built in the Overworld, while those with a red aura bottle must be performed on the Nether counterpart."
-				""
 				"Refer to the Book of Natural Aura's section on the Natural Altar and the Crimson Altar for a preview of the required structure."
 			]
+			hide_dependency_lines: true
+			dependencies: ["2DED8E4FA6DCD410"]
 			dependency_requirement: "all_started"
 			min_width: 250
 			id: "465085DE51A72E73"
@@ -255,6 +265,7 @@
 			title: "Getting Started: Generating Aura"
 			x: 0.5d
 			y: -8.5d
+			shape: "hexagon"
 			subtitle: "Give And Take"
 			description: [
 				"The earliest Naturalists are said to have discovered Aura by observing these Ancient Trees. They found their roots grew deep, drawing Aura up from the depths and dispersing it into the environment. "
@@ -267,6 +278,8 @@
 				""
 				"Second, the wood is particularly useful when it comes to the arcane as it is steeped in the magical energies of Aura. It makes a fine base for many an arcane implement. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["2DED8E4FA6DCD410"]
 			min_width: 300
 			id: "58438574716487D7"
 			tasks: [{
@@ -301,6 +314,7 @@
 				""
 				"Place it on any of the four short pillars surrounding the Altar itself to activate it."
 			]
+			dependencies: ["465085DE51A72E73"]
 			id: "2D92C208DD310E86"
 			tasks: [{
 				id: "431A924319567586"
@@ -325,6 +339,7 @@
 				""
 				"Place it on any of the four short pillars surrounding the Altar itself to activate it."
 			]
+			dependencies: ["465085DE51A72E73"]
 			id: "37B44865CE6DEB8E"
 			tasks: [{
 				id: "6420AC075A3ECCBF"
@@ -348,6 +363,7 @@
 				""
 				"Place the Creational Catalyst beneath any Aura Generator to remove its generation cap and attain such lushness as has not been observed since the early days of creation."
 			]
+			dependencies: ["25AA7A1A041FAA0C"]
 			id: "6C1C63E372ECFEDC"
 			tasks: [{
 				id: "5157C6BD4F309FF4"
@@ -368,6 +384,8 @@
 			y: -4.5d
 			subtitle: "Relax, I'll need some information first"
 			description: ["Many devices have a specific range that can only be seen by Right-Clicking on them with a Mystical Magnifier. It's a valuable tool to any natural botanist."]
+			hide_dependency_lines: true
+			dependencies: ["465085DE51A72E73"]
 			id: "11556E9D40C6EC4C"
 			tasks: [{
 				id: "73A094D6919E1D91"
@@ -394,6 +412,8 @@
 				""
 				"Finding an area with higher-than-normal Aura at this stage may be helpful, as some Aura will be consumed in order to create the apparatuses needed to help renew it. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["465085DE51A72E73"]
 			id: "111065FF35D1189F"
 			tasks: [{
 				id: "4A0A71CAE8332012"
@@ -413,6 +433,7 @@
 			title: "Harnessing Aura: Tools of the Trade"
 			x: -2.0d
 			y: -0.5d
+			shape: "hexagon"
 			subtitle: "Geo-caching 101"
 			description: [
 				"A portable source of Aura that can be be put to good use with a variety of tools. "
@@ -421,6 +442,8 @@
 				""
 				"Note: These may not fill completely when worn. To get a full charge, or to even automate filling them, they may be placed in a Natural Altar to their maximum capacity."
 			]
+			hide_dependency_lines: true
+			dependencies: ["2DED8E4FA6DCD410"]
 			id: "4081F393EAB01CBE"
 			tasks: [{
 				id: "588C80AFF089BC0A"
@@ -441,6 +464,7 @@
 			y: -3.5d
 			subtitle: "Open your eyes, then open your eyes again"
 			description: ["An advanced version of the Natural Eye which grants its owner the ability to see ever more precise details of the Aura around them."]
+			dependencies: ["111065FF35D1189F"]
 			id: "6B065FDF3EA4EB78"
 			tasks: [{
 				id: "3F9F4B01BE056CDC"
@@ -467,6 +491,7 @@
 				""
 				"Note: These may not fill completely when worn. To get a full charge, or to even automate filling them, they may be placed in a Natural Altar to their maximum capacity."
 			]
+			dependencies: ["4081F393EAB01CBE"]
 			id: "3DB84F7840BACBFF"
 			tasks: [{
 				id: "1F1ED271AC9302C6"
@@ -493,6 +518,8 @@
 				""
 				"This process will rapidly advance time at a great cost of Aura. Be wary not to allow Aura to drop too far!"
 			]
+			hide_dependency_lines: true
+			dependencies: ["465085DE51A72E73"]
 			id: "05CB261DC6E9F041"
 			tasks: [
 				{
@@ -526,6 +553,8 @@
 				""
 				"The range depends upon strength of the redstone signal it is provided. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["465085DE51A72E73"]
 			id: "454A0F0E48005FFE"
 			tasks: [{
 				id: "56626DE3C9E9BE87"
@@ -559,10 +588,9 @@
 				"Once built, simply throw down the reagents atop the altar. If there's enough Aura, the ritual will proceed automatically."
 				""
 				"Refer to the Book of Natural Aura for specific instructions on building the ritual."
-				""
-				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 9 instance folder to assist with this multiblock."
 			]
 			hide_dependency_lines: true
+			dependencies: ["2735E47A2A965FEE"]
 			min_width: 250
 			id: "13986C2B6CB6272E"
 			tasks: [
@@ -608,6 +636,7 @@
 				"Refer to the Book of Natural Aura for specific instructions."
 			]
 			hide_dependency_lines: true
+			dependencies: ["465085DE51A72E73"]
 			id: "1AE73DC4CC5A7C6F"
 			tasks: [{
 				id: "15ABF90EC87A9A88"
@@ -644,6 +673,7 @@
 				"Note: The Aura Field Creator will use any tool provided in the frame including any enchants or special break properties of the tool. Shears shear leaves, shovels collect snow, Fortune and Silk Touch are respected. "
 			]
 			hide_dependency_lines: true
+			dependencies: ["465085DE51A72E73"]
 			id: "1EA9C29C8955827D"
 			tasks: [{
 				id: "4AF95515F94B8839"
@@ -670,6 +700,7 @@
 				"While this process is much quicker than burning Coal or other combustible materials, it does come with the drawback that it can drain Aura into dangerous levels. Multiple may even be installed to enhance the effect. "
 			]
 			hide_dependency_lines: true
+			dependencies: ["465085DE51A72E73"]
 			id: "4D68B5141952C6A6"
 			tasks: [{
 				id: "0F892FF01C192955"
@@ -699,6 +730,7 @@
 				"A small amount of Aura is used every time an item is moved in or out of the crate. Therefore, it is vital that Aura is generated on both sides of the connection. "
 			]
 			hide_dependency_lines: true
+			dependencies: ["465085DE51A72E73"]
 			id: "6B336E008C4B58C5"
 			tasks: [{
 				id: "4515752CE8CF34B4"
@@ -730,6 +762,7 @@
 				""
 				"If used with an Adept’s Hopper, any filter set will be respected by the Hopper Enhancement. "
 			]
+			dependencies: ["385927686A412EA6"]
 			id: "1D37E396D04A74AD"
 			tasks: [{
 				id: "6DE026A64A7BEFF3"
@@ -754,6 +787,8 @@
 				""
 				"Place an Item Frame on the side and insert any item or block in the frame to set the filter. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["465085DE51A72E73"]
 			id: "385927686A412EA6"
 			tasks: [{
 				id: "25F9A4238632D661"
@@ -790,55 +825,13 @@
 				""
 				"Each has been detailed at length in the Book of Natural Aura."
 			]
+			dependencies: ["58438574716487D7"]
 			id: "25AA7A1A041FAA0C"
 			tasks: [{
 				id: "4C6D3095E8F582DF"
 				type: "item"
 				title: "Aura Generators"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "naturesaura:oak_generator"
-								Count: 1b
-							}
-							{
-								id: "naturesaura:flower_generator"
-								Count: 1b
-							}
-							{
-								id: "naturesaura:moss_generator"
-								Count: 1b
-							}
-							{
-								id: "naturesaura:slime_split_generator"
-								Count: 1b
-							}
-							{
-								id: "naturesaura:potion_generator"
-								Count: 1b
-							}
-							{
-								id: "naturesaura:animal_generator"
-								Count: 1b
-							}
-							{
-								id: "naturesaura:projectile_generator"
-								Count: 1b
-							}
-							{
-								id: "naturesaura:firework_generator"
-								Count: 1b
-							}
-							{
-								id: "naturesaura:chorus_generator"
-								Count: 1b
-							}
-						]
-					}
-				}
+				item: "naturesaura:potion_generator"
 			}]
 			rewards: [{
 				id: "139066FD1275A723"
@@ -868,6 +861,7 @@
 				"● No Storage - Your Aura Cache or Trove will not charge in the area."
 			]
 			hide_dependency_lines: true
+			dependencies: ["699BC5534C19FC5E"]
 			min_width: 250
 			id: "578B0B5E74FEAC97"
 			tasks: [
@@ -949,6 +943,8 @@
 			y: -1.5d
 			subtitle: "She sounds like she's in a flurry"
 			description: ["When Aura is drawn through this device, it causes the heat in the area to rapidly disperse, dropping localized temperatures and causing snow and ice to form. "]
+			hide_dependency_lines: true
+			dependencies: ["465085DE51A72E73"]
 			id: "228F799A45B48D70"
 			tasks: [{
 				id: "5E4F851471B1F091"
@@ -977,6 +973,8 @@
 				""
 				"● Eye of the Shulker will locate End Cities."
 			]
+			hide_dependency_lines: true
+			dependencies: ["4081F393EAB01CBE"]
 			id: "033BE52CE2FD3347"
 			tasks: [{
 				id: "2595740F68610F84"
@@ -1022,6 +1020,8 @@
 				""
 				"Each bottle of sunlight equates to one second of time. One bottle of ghosts, one minute. One bottle of darkness, one hour. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["465085DE51A72E73"]
 			id: "59ECE9FF654CA492"
 			tasks: [{
 				id: "307B82D5D8385AD7"
@@ -1045,6 +1045,8 @@
 				""
 				"The Spring provides water at the cost of a small amount of Aura. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["465085DE51A72E73"]
 			id: "24F34D3F5B186B51"
 			tasks: [{
 				id: "0480B58CE324B5CD"
@@ -1068,6 +1070,8 @@
 				""
 				"For a miniscule upkeep cost, the Lamp of Sanctuary will inhibit natural mob spawns in its area of influence, the range of which is determined by the strength of the Redstone signal it is receiving. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["465085DE51A72E73"]
 			id: "7829AB43D56BA11F"
 			tasks: [{
 				id: "64A9C3C426E11115"
@@ -1087,6 +1091,7 @@
 			x: -7.0d
 			y: -3.0d
 			description: ["Quite the simple device, but powerful, nonetheless. The Item distributor moves items from the inventory above it and evenly distributes them to the inventories adjacent. "]
+			dependencies: ["385927686A412EA6"]
 			id: "67EDDAD97465EEF0"
 			tasks: [{
 				id: "4661053FF7AEF153"
@@ -1106,6 +1111,8 @@
 			x: -1.0d
 			y: 1.0d
 			description: ["A true marvel for anyone who’s spent any time toiling in the earth to extract resources. With Eir’s Token attached to a tool, it will simply stop working rather than break at low durability. "]
+			hide_dependency_lines: true
+			dependencies: ["4081F393EAB01CBE"]
 			id: "712E3B21060DB19C"
 			tasks: [{
 				id: "4721EF89824DD695"
@@ -1125,6 +1132,8 @@
 			x: -3.0d
 			y: 1.0d
 			description: ["When held anywhere in one’s inventory, the Ring of Last Chance prevents a killing blow, shattering itself rather than allow its bearer to slip off this mortal coil. "]
+			hide_dependency_lines: true
+			dependencies: ["4081F393EAB01CBE"]
 			id: "127A0B252CBF60C1"
 			tasks: [{
 				id: "7401EDCC5CD5093C"
@@ -1168,6 +1177,7 @@
 				""
 				"● Botanist’s Armor: When wearing a full set, inflicts Withering on attacking enemies."
 			]
+			dependencies: ["4081F393EAB01CBE"]
 			id: "221AF0ABFEB4F736"
 			tasks: [
 				{
@@ -1297,6 +1307,7 @@
 				""
 				"● Skyseeker’s Armor: When wearing a full set, grants a speed bonus and the ability to step up one block."
 			]
+			dependencies: ["4081F393EAB01CBE"]
 			id: "0C4D668C5FB91906"
 			tasks: [
 				{
@@ -1402,6 +1413,8 @@
 			x: -4.0d
 			y: 0.5d
 			description: ["Drawing Aura from a worn Cache or Trove, these staves aid in locating various objects; they can be quite useful both at home and while adventuring abroad. "]
+			hide_dependency_lines: true
+			dependencies: ["4081F393EAB01CBE"]
 			id: "0F179A3EBF0587B8"
 			tasks: [{
 				id: "76B216E795F6C3FE"
@@ -1450,6 +1463,8 @@
 				""
 				"Simply place a Bottle and Cork in the dispenser and provide a Redstone Pulse. Provided there is sufficient Aura in the area, a bottle of the local Aura type will be produced. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["465085DE51A72E73"]
 			id: "2F618EF3A3976CD3"
 			tasks: [{
 				id: "2F4C36ECF8500535"
@@ -1506,6 +1521,7 @@
 				"Resonating Crystals, on the other hand, set up an internal resonance with FE, converting it back into Source or Aura. If a Source Jar is near enough, it will send it there. If there is no jar, or if it is 100% full, the Resonating Crystal will instead convert the incoming FE to Aura and diffuse it into the atmosphere. "
 			]
 			hide_dependency_lines: true
+			dependencies: ["4081F393EAB01CBE"]
 			min_width: 300
 			id: "7C701D8BF9539E0C"
 			tasks: [

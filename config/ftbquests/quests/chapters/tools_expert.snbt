@@ -45,6 +45,7 @@
 				"● $tools/multi-tool"
 			]
 			dependencies: ["2CCCDD05AED3153F"]
+			hide: true
 			id: "291E5727DD1ADDF4"
 			tasks: [{
 				id: "6CB601D6EDB6AA57"

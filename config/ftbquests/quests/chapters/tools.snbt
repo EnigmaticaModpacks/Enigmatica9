@@ -90,10 +90,7 @@
 				"● Filterable Void Upgrade"
 				"● Magnet Upgrade"
 			]
-			dependencies: [
-				"000000000000046C"
-				"358FAB3D482C463A"
-			]
+			dependencies: ["358FAB3D482C463A"]
 			id: "000000000000045F"
 			tasks: [
 				{
@@ -185,10 +182,7 @@
 				"Sneak Right-Click most machines to spend stored time on them, speeding them up briefly. "
 			]
 			hide_dependency_lines: true
-			dependencies: [
-				"000000000000046D"
-				"000000000000045C"
-			]
+			dependencies: ["000000000000045C"]
 			id: "7AE1180EFAF22376"
 			tasks: [{
 				id: "4D29649F3F51D7D3"

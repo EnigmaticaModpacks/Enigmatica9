@@ -1,12 +1,12 @@
 {
 	id: "713775E5BF39DAAB"
 	group: "72A9465344128AF9"
-	order_index: 7
+	order_index: 8
 	filename: "mekanism_expert"
 	title: "Mekanism"
 	icon: "mekanism:alloy_atomic"
 	default_quest_shape: ""
-	default_hide_dependency_lines: true
+	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Getting Started: Material Processing"
@@ -19,6 +19,7 @@
 				""
 				"Focusing on being efficient from the very start will ultimately pay off in the long run."
 			]
+			hide_dependency_lines: true
 			dependencies: ["2F22D2DB89CB9225"]
 			id: "094FAB57D8E3D2F6"
 			tasks: [{
@@ -42,6 +43,7 @@
 				""
 				"Automation Note: Since the two required input materials use two different channels, red and yellow, there’s no way to feed both items in from the same face. As a result, it’s often easiest to make multiple machines, each dedicated to their own infusion material."
 			]
+			hide_dependency_lines: true
 			dependencies: ["094FAB57D8E3D2F6"]
 			min_width: 300
 			id: "13762022DEE4BEC5"
@@ -106,6 +108,7 @@
 				""
 				"For example, a single Redstone will make a single Infused Alloy, however a single Enriched Redstone will make eight Alloys. It is therefore well worth the effort to enrich these items.  "
 			]
+			hide_dependency_lines: true
 			dependencies: ["094FAB57D8E3D2F6"]
 			id: "5EC7CA1A86435B30"
 			tasks: [{
@@ -171,6 +174,7 @@
 			y: 1.5d
 			subtitle: "Pushing Down On Me, Pressing Down On You"
 			description: ["Certain chemical reactions only occur at greater pressures and the PRC can be used to facilitate them."]
+			hide_dependency_lines: true
 			dependencies: ["094FAB57D8E3D2F6"]
 			id: "4427B8F3C87DDF02"
 			tasks: [{
@@ -200,6 +204,7 @@
 				""
 				"Adding more Ports with Supercharged Ports attached to them will allow the machine to run faster, assuming of course that sufficient power and waste can be supplied."
 			]
+			hide_dependency_lines: true
 			dependencies: ["094FAB57D8E3D2F6"]
 			min_width: 275
 			id: "3F0DE5664216AD01"
@@ -256,6 +261,7 @@
 				""
 				"What they failed to understand was the vast amount of energy that would be required to do so."
 			]
+			hide_dependency_lines: true
 			dependencies: ["094FAB57D8E3D2F6"]
 			id: "2D91422DA1C8E72A"
 			tasks: [{
@@ -347,7 +353,7 @@
 				""
 				"As previously mentioned, they can also be used to grant AE2 access to a QIO Network via an attached ME Storage Bus."
 			]
-			dependencies: ["06ABB5AAF6BEDC06"]
+			dependencies: ["362BB80FE6B078AF"]
 			id: "647D0BCC37639374"
 			tasks: [{
 				id: "215415FF1CBE9886"
@@ -375,7 +381,7 @@
 				""
 				"The Redstone Adapter simply outputs a signal when a certain threshold of an item has been reached within the QIO drive space, allowing a simple way of disabling machinery that no longer needs to run."
 			]
-			dependencies: ["06ABB5AAF6BEDC06"]
+			dependencies: ["362BB80FE6B078AF"]
 			id: "617A03EB53B9808F"
 			tasks: [
 				{
@@ -414,6 +420,7 @@
 				""
 				"Similarly, Sneak + Right-Clicking the air with the gauge dropper will void whatever is currently stored."
 			]
+			hide_dependency_lines: true
 			dependencies: ["094FAB57D8E3D2F6"]
 			min_width: 300
 			id: "06C3D5F78BA710C4"
@@ -442,6 +449,7 @@
 				""
 				"To apply a Tier Installer, simply Sneak + Right-Click on a machine place in-world. Tiers must be installed in order, no skipping tiers!"
 			]
+			hide_dependency_lines: true
 			dependencies: ["094FAB57D8E3D2F6"]
 			min_width: 300
 			id: "5A47B6B53BADF585"
@@ -545,6 +553,7 @@
 				""
 				"When in any of the ‘Configurate’ modes, the Configurator will toggle different aspects of the pipe. See the following sections for more information. "
 			]
+			hide_dependency_lines: true
 			dependencies: ["2F22D2DB89CB9225"]
 			min_width: 300
 			id: "06ABB5AAF6BEDC06"
@@ -574,6 +583,7 @@
 				""
 				"Entangloporters have no range limitations and work across dimensions. They can be given an Anchor upgrade as well to force load the chunk they are in."
 			]
+			hide_dependency_lines: true
 			dependencies: ["06ABB5AAF6BEDC06"]
 			min_width: 300
 			id: "6158C8C01BEFC857"
@@ -601,6 +611,7 @@
 				""
 				"Remember to install Gas Upgrades to make the gas inputs more efficient!"
 			]
+			hide_dependency_lines: true
 			dependencies: ["094FAB57D8E3D2F6"]
 			id: "2A029FF13CC8072B"
 			tasks: [{
@@ -656,6 +667,7 @@
 			x: 7.5d
 			y: 0.5d
 			description: ["Unsurprisingly, smashing things together to make new things is also an age-old tradition. The Combiner may be used to simplify obtaining a number of decorative blocks."]
+			hide_dependency_lines: true
 			dependencies: ["094FAB57D8E3D2F6"]
 			id: "2CEFDF64D65673F0"
 			tasks: [{
@@ -815,6 +827,7 @@
 				""
 				"They’ll also function as an over-flow trash by setting them to “Dump Excess”."
 			]
+			hide_dependency_lines: true
 			dependencies: ["06ABB5AAF6BEDC06"]
 			id: "7471BAAE8A81DBA2"
 			tasks: [{
@@ -835,6 +848,7 @@
 			x: 2.5d
 			y: -0.5d
 			description: ["Basic Fluid storage, these can auto-output to the bottom by Sneak + Right-Clicking the bottom face with a Configurator."]
+			hide_dependency_lines: true
 			dependencies: ["06ABB5AAF6BEDC06"]
 			id: "10371E1C04CA6673"
 			tasks: [{
@@ -855,8 +869,9 @@
 			x: 2.5d
 			y: 0.5d
 			description: ["Large scale Gas or Fluid storage, Dynamic Tanks may be any size from 3x3x3 to 18x18x18. Structural Glass may be used in place of Dynamic Tank blocks anywhere but the edges and corners."]
+			hide_dependency_lines: true
 			dependencies: ["06ABB5AAF6BEDC06"]
-			dependency_requirement: "one_completed"
+			dependency_requirement: "one_started"
 			id: "684B120D89102381"
 			tasks: [
 				{
@@ -944,6 +959,7 @@
 			y: -1.5d
 			shape: "hexagon"
 			description: ["Beyond machines and logistics, Mekanism offers a number of very useful tools, armor, and utility devices."]
+			hide_dependency_lines: true
 			dependencies: ["2F22D2DB89CB9225"]
 			id: "01E97C3D888A1677"
 			tasks: [{
@@ -989,7 +1005,7 @@
 			icon: "mekanism:teleportation_core"
 			x: 1.5d
 			y: -3.0d
-			shape: "hexagon"
+			shape: "gear"
 			description: [
 				"A Sci-Fi themed technology mod with an emphasis on the extreme, Mekanism focuses on creating efficiencies, whether in the form of increased output from ores to advanced fusion reactors to power your base."
 				""

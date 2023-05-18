@@ -21,6 +21,7 @@
 			y: 0.5d
 			subtitle: "Rags to Witches"
 			description: ["The vestments of a Witch go beyond mere mundane protection. Wearing them sends a message to other Witches to stand down while also offering hefty protection against the dark arts. "]
+			dependencies: ["27D3C19A82F5965F"]
 			id: "204242F437AA1238"
 			tasks: [
 				{
@@ -79,7 +80,8 @@
 		{
 			title: "Getting Started: Cauldron Crafting"
 			x: 4.0d
-			y: -2.5d
+			y: -0.5d
+			shape: "hexagon"
 			subtitle: "What a Brew-tiful Sight"
 			description: [
 				"The Cauldron itself is a time-honored tradition among Witches, used for general cooking, potion making, and more advanced magics alike, it is a versatile tool for any practitioner. "
@@ -89,6 +91,7 @@
 				"Items may also be piped in through any sort of automation, as well as dropped in from above. "
 			]
 			hide_dependency_lines: true
+			dependencies: ["10756D7A0325D98A"]
 			id: "21D5D34D6E1E5FF7"
 			tasks: [{
 				id: "4A4F1B879659384D"
@@ -118,9 +121,11 @@
 			title: "Hexerei"
 			icon: "hexerei:belladonna_flowers"
 			x: 6.0d
-			y: -2.5d
-			shape: "hexagon"
+			y: -2.0d
+			shape: "gear"
 			description: ["Learn the arts of Witchcraft as you explore what Hexerei has to offer, from cute friends to flying broomsticks, this mod will leave you feeling like a true Witch."]
+			dependencies: ["2CCCDD05AED3153F"]
+			hide: true
 			id: "10756D7A0325D98A"
 			tasks: [{
 				id: "355BF861FF657694"
@@ -148,6 +153,7 @@
 			y: 0.5d
 			subtitle: "Payback's a Witch"
 			description: ["Sharing a home with trolls will teach a Witch a thing or two, like the value of a heavy object to smash some heads in. Works great for tenderizing steaks too!"]
+			dependencies: ["27D3C19A82F5965F"]
 			id: "308521911C81C6E6"
 			tasks: [{
 				id: "098A80B8B424764E"
@@ -181,7 +187,7 @@
 		}
 		{
 			x: 8.0d
-			y: -1.5d
+			y: 0.5d
 			subtitle: "High and Dry"
 			description: [
 				"With a fine selection of herbs in hand, and a small garden prepared, the real magic of Witchcraft may begin. "
@@ -190,6 +196,7 @@
 				""
 				"Items may be hung manually with a Right-Click and removed again with a Sneak Right-Click. They may also be inserted via Hopper or other automation and the Drying Rack will conveniently prevent them from being pulled off before the process has finished. Each Rack holds up to nine items at a time."
 			]
+			dependencies: ["4BBFA0119FC270E3"]
 			id: "3F2ACD64E7394122"
 			tasks: [{
 				id: "0429E8C49A97273F"
@@ -220,7 +227,7 @@
 		{
 			icon: "hexerei:sage"
 			x: 8.0d
-			y: -0.5d
+			y: 1.5d
 			subtitle: "Turning Over a New Leaf"
 			description: [
 				"Dried Sage has a number of curative properties, but perhaps more surprising is its ability to ward an area against monster incursions. Perfect for the Witch looking to relax and make a few brews at home without being bothered. "
@@ -229,6 +236,7 @@
 				""
 				"Dried Sage may be inserted via Hopper or other automation, and the plate may be lit by a Deployer, allowing the Sage Burning Plate to be fully automated. "
 			]
+			dependencies: ["3F2ACD64E7394122"]
 			id: "0F3F2AA1B866CB50"
 			tasks: [
 				{
@@ -269,7 +277,7 @@
 		}
 		{
 			x: 3.0d
-			y: -0.5d
+			y: 1.5d
 			subtitle: "... And Now You're Mine"
 			description: [
 				"Far beyond simple light sources, a true Witch knows how to infuse Candles with potent magic, causing nearby plants to Grow rapidly, turn the weather from stormy to clear skies, or even imbue nearby monsters with effects such as Poison or Slowness. "
@@ -278,6 +286,7 @@
 				""
 				"Finally, Candles may be dyed by combining them with dyes in a Crafting Table. "
 			]
+			dependencies: ["166B90CB9B8B6707"]
 			id: "67D7FA38C0232F32"
 			tasks: [{
 				id: "3069C3E37887527D"
@@ -305,7 +314,7 @@
 		}
 		{
 			x: 3.0d
-			y: -1.5d
+			y: 0.5d
 			subtitle: "I Put a Spell On You ..."
 			description: [
 				"The Dipper is an apparatus that sits atop the Cauldron. With the Cauldron filled with Tallow and up to three String placed in the Dipper, it will set about dipping the string to make Candles all on its own."
@@ -314,6 +323,7 @@
 				""
 				"Note: When melting items for Tallow, the Cauldron must have water in it. "
 			]
+			dependencies: ["21D5D34D6E1E5FF7"]
 			id: "166B90CB9B8B6707"
 			tasks: [{
 				id: "4A35A7C5EF7A644B"
@@ -356,6 +366,7 @@
 				""
 				"Link the Broom to a Broom Whistle to be able to recall the Broom more easily. The Broom must be relatively nearby for this to work. "
 			]
+			dependencies: ["27D3C19A82F5965F"]
 			min_width: 300
 			id: "46C031D455D8119B"
 			tasks: [{
@@ -408,6 +419,7 @@
 			y: 2.5d
 			subtitle: "Gonna Fly Till I Can't No More"
 			description: ["Brooms may also be equipped with Satchels that come in various sizes and are the perfect place to store spare parts, potions, or anything one might need for longer excursions."]
+			dependencies: ["27D3C19A82F5965F"]
 			id: "674CDD2C25F46688"
 			tasks: [{
 				id: "55B0201F142DDF03"
@@ -458,6 +470,7 @@
 			y: 3.5d
 			subtitle: "For Better or For Warts"
 			description: ["A magical pouch bound to one’s Ender Chest, making it the perfect addition for any forgetful Witches who commonly lose their brooms. At least they won’t lose the contents!"]
+			dependencies: ["674CDD2C25F46688"]
 			id: "44F0D024BC9F442C"
 			tasks: [{
 				id: "217329C4BB70B482"
@@ -488,6 +501,7 @@
 			y: 3.5d
 			subtitle: "No Rest for the Wicca'd"
 			description: ["No simple storage bag, the Replacer Satchel will automatically swap out Brushes as they wear out, allowing one to fly for longer without interruption."]
+			dependencies: ["674CDD2C25F46688"]
 			id: "6156B4D8713862EE"
 			tasks: [{
 				id: "7BE681FD6562B7BD"
@@ -517,7 +531,8 @@
 			title: "Getting Started: Herb Lore"
 			icon: "hexerei:herb_drying_rack_full"
 			x: 8.0d
-			y: -2.5d
+			y: -0.5d
+			shape: "hexagon"
 			subtitle: "Sage Advice"
 			description: [
 				"The wise Witch knows the properties of every plant in their domain, and there are none more knowledgeable than those who call the Swamps their home. Locate a swamp and attempt to forage up some samples for a personal herb garden. "
@@ -527,6 +542,7 @@
 				"A Nature’s Compass is also a viable tool for locating Swamps. And for the less adventurous Witches, a stop a nearby Market Stall is likely sufficient. "
 			]
 			hide_dependency_lines: true
+			dependencies: ["10756D7A0325D98A"]
 			min_width: 300
 			id: "4BBFA0119FC270E3"
 			tasks: [
@@ -615,6 +631,7 @@
 			}
 			x: 6.0d
 			y: -0.5d
+			shape: "hexagon"
 			subtitle: "Witch Upon a Star"
 			description: [
 				"Dressing for the part is optional, of course, but style should never be overlooked. "
@@ -622,6 +639,7 @@
 				"Follow along to discover some of the very useful tools in a Witch’s arsenal."
 			]
 			hide_dependency_lines: true
+			dependencies: ["10756D7A0325D98A"]
 			id: "27D3C19A82F5965F"
 			tasks: [{
 				id: "09E97399DBE8D341"
@@ -666,7 +684,7 @@
 		{
 			icon: "hexerei:blood_sigil"
 			x: 4.0d
-			y: -1.5d
+			y: 0.5d
 			subtitle: "Life's a Witch and Then You Die"
 			description: [
 				"Blood is a powerful magical reagent, and a wise Witch is careful of allowing another magic user access to theirs. "
@@ -675,6 +693,7 @@
 				""
 				"Of course, nowhere is it stated that the blood must be one’s own. Try dropping a villager in to see what happens. Better still, see if the process can be automated…"
 			]
+			dependencies: ["21D5D34D6E1E5FF7"]
 			id: "1CE9A7812DCDD8BC"
 			tasks: [
 				{
@@ -710,7 +729,7 @@
 		{
 			title: "Crows"
 			x: 9.0d
-			y: -0.5d
+			y: 1.5d
 			subtitle: "For the Birds"
 			description: [
 				"Witches are often depicted as befriending animals, from cats and mice to snakes and lizards. The Witches of these swamps, however, have a special affinity for the native Crows. "
@@ -731,6 +750,7 @@
 				""
 				"A note on Pickpocketing: Crows have a fixed list of items they’ll choose from any given profession, and the list is not based on the available trades of that villager. "
 			]
+			dependencies: ["288651241042A695"]
 			min_width: 300
 			id: "006AA7562C9E592D"
 			tasks: [{
@@ -760,7 +780,7 @@
 		}
 		{
 			x: 9.0d
-			y: -1.5d
+			y: 0.5d
 			subtitle: "Keeping It Grounded"
 			description: [
 				"A common sight in apothecaries and kitchens of old, the humble Pestle and Mortar have been used for ages to grind and mix ingredients. "
@@ -769,6 +789,7 @@
 				""
 				"In addition, items may be piped in via automation and the Pestle and Mortar will hold onto them until finished, only allowing the final product to be extracted."
 			]
+			dependencies: ["4BBFA0119FC270E3"]
 			id: "288651241042A695"
 			tasks: [{
 				id: "461CC24285C645D5"
@@ -796,13 +817,14 @@
 		}
 		{
 			x: 9.0d
-			y: 0.5d
+			y: 2.5d
 			subtitle: "Do You Be-leaf in Magic?"
 			description: [
 				"While it also serves as an easily crafted Shulker Box, the Coffer primarily adds utility to Crows in Harvest mode. Depending on how the Crow button in the GUI is toggled, the Crow will either deposit everything it finds, or only deposit items that already exist in the Coffer, allowing it to act as a filter. "
 				""
 				"A Coffer may be quickly picked up with a single Left-Click."
 			]
+			dependencies: ["006AA7562C9E592D"]
 			id: "260496087FA65B9F"
 			tasks: [{
 				id: "367B2CA18ED5D6FA"
