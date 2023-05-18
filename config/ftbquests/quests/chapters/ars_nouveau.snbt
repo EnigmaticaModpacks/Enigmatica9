@@ -13,7 +13,7 @@
 			icon: "ars_nouveau:creative_spell_book"
 			x: -2.0d
 			y: -6.0d
-			shape: "hexagon"
+			shape: "gear"
 			description: [
 				"With Ars Nouveau you will learn to harness the latent energy infused in all things to cast powerful spells, drive arcane machinery, and even to empower some cute friends along the way. "
 				""
@@ -21,9 +21,11 @@
 				""
 				"~MuteTiefling"
 			]
+			dependencies: ["0E45018D600614BA"]
+			hide: true
 			id: "00000000000003AC"
 			tasks: [{
-				id: "0771CE9EBF17ADE2"
+				id: "66CCD91201C3921D"
 				type: "item"
 				item: "ars_nouveau:novice_spell_book"
 			}]
@@ -289,10 +291,9 @@
 				""
 				"Refer to the Worn Notebook's section on Magical Equipment for recipes and to discover more useful curios."
 			]
-			dependencies: [
-				"00000000000003DC"
-				"00000000000003DB"
-			]
+			hide_dependency_lines: true
+			dependencies: ["00000000000003D7"]
+			dependency_requirement: "all_started"
 			id: "00000000000003DE"
 			tasks: [
 				{
@@ -479,7 +480,8 @@
 			y: -1.0d
 			subtitle: "Auto-magically"
 			description: ["Not all tasks lend themselves to completion by simple automatons like a turret or a rune. There exist certain magical creatures in this world that will help an aspiring practitioner quite willingly if asked nicely. "]
-			dependencies: ["0771CE9EBF17ADE2"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000003AC"]
 			id: "00000000000009ED"
 			tasks: [{
 				id: "678A401205BCA8C5"
@@ -728,7 +730,8 @@
 				""
 				"To get it going, Right-Click the Brazier with any Tablet. If extra materials are required, they should be thrown atop the flame to be consumed. Once everything is set, Right-Click again with an empty hand to finalize the ritual. "
 			]
-			dependencies: ["0771CE9EBF17ADE2"]
+			hide_dependency_lines: true
+			dependencies: ["4D0CB5D53030494C"]
 			id: "5ED080DAA2A7E19A"
 			tasks: [{
 				id: "729AECF6F582CCBA"
@@ -1266,7 +1269,8 @@
 				""
 				"Each familiar grants unique bonuses that are detailed in the Worn Notebook. Explore each to find just the right friend."
 			]
-			dependencies: ["729AECF6F582CCBA"]
+			hide_dependency_lines: true
+			dependencies: ["5ED080DAA2A7E19A"]
 			id: "33F9C7DCBA952F1E"
 			tasks: [{
 				id: "3AA728ECE363A96A"
@@ -1287,6 +1291,7 @@
 			icon: "ars_nouveau:imbuement_chamber"
 			x: -6.0d
 			y: -7.0d
+			shape: "hexagon"
 			subtitle: "Like Sweet Morning Dew"
 			description: [
 				"Source is the driving energy behind every spell and arcane device in Ars Nouveau, but it must be condensed out of the world to harness it for anything beyond the simplest of uses. To that end, we’ll begin with an Imbuement Chamber."
@@ -1295,7 +1300,8 @@
 				""
 				"The item in the center of the recipe is to be inserted into the Chamber itself, while any items surrounding it are to be placed on nearby Pedestals. The items on the Pedestals act as keys and are never consumed, while the central item will be converted to the result. "
 			]
-			dependencies: ["0771CE9EBF17ADE2"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000003AC"]
 			id: "4D0CB5D53030494C"
 			tasks: [
 				{
@@ -1334,6 +1340,7 @@
 			icon: "ars_nouveau:scribes_table"
 			x: 2.0d
 			y: -7.0d
+			shape: "hexagon"
 			description: [
 				"From novice to master alike, much time is dedicated to the art of spell craft, be it preparing and learning new Glyphs, enchanting personal Arcane Foci, or preparing Spell Glyphs or Turrets. "
 				""
@@ -1644,7 +1651,8 @@
 				""
 				"Each set of armor may be upgraded in the Enchantment Apparatus through three different tiers. At each tier, they gain more slots for accepting Threads. The recipe for upgrading the tier is shown in the Worn Notebook. "
 			]
-			dependencies: ["138A7CF8826F30CD"]
+			hide_dependency_lines: true
+			dependencies: ["00000000000003D5"]
 			id: "2614A201594A632C"
 			tasks: [
 				{
@@ -1864,10 +1872,8 @@
 				""
 				"Equipped in a dedicated Curio slot, each focus grants unique boons to their school which are detailed in the Worn Notebook. "
 			]
-			dependencies: [
-				"00000000000003DC"
-				"00000000000003DB"
-			]
+			hide_dependency_lines: true
+			dependencies: ["00000000000003D7"]
 			id: "6A8D28FEED0CB148"
 			tasks: [{
 				id: "5913EA80944F3A87"
@@ -1947,10 +1953,8 @@
 				""
 				"Place a Scry Crystal in the location to be monitored, Right-Click it with a Blank Parchment to record the location and place the resulting Scryer’s Scroll on a pedestal near the Oculus. When approached, the Oculus allows the Wizard to select from any of the nearby Scrolls to view the location. "
 			]
-			dependencies: [
-				"00000000000003DC"
-				"00000000000003DB"
-			]
+			hide_dependency_lines: true
+			dependencies: ["00000000000003D7"]
 			id: "4D5B41D89738D3EE"
 			tasks: [
 				{
@@ -2108,7 +2112,7 @@
 			title: "Energy Conversion"
 			x: -2.0d
 			y: -4.5d
-			shape: "gear"
+			shape: "hexagon"
 			description: [
 				"Once thought to be entirely separate, the magical energies know as Source, Aura, and FE are in fact all facets of the same energy. By making use of special crystals, it becomes possible to convert between them with ease. "
 				""

@@ -82,32 +82,123 @@ ServerEvents.recipes((event) => {
             },
             id: 'mekanism:chargepad'
         },
-
-        // Placeholder recipes
-
         {
-            output: 'mekanism:laser',
-            pattern: ['AB ', 'ACD', 'AB '],
+            output: 'mekanism:chemical_oxidizer',
+            pattern: ['CBE', 'ADA', 'FBF'],
             key: {
-                A: '#forge:alloys/elite',
-                B: 'powah:capacitor_spirited',
-                C: '#industrialforegoing:machine_frame/simple',
-                D: '#forge:gems/diamond'
+                A: 'immersiveengineering:insulating_glass',
+                B: '#forge:essences/air',
+                C: 'pneumaticcraft:reinforced_chest',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: 'mekanism:basic_chemical_tank',
+                F: '#forge:plates/obsidian'
             },
-            id: 'mekanism:laser'
+            id: 'mekanism:chemical_oxidizer'
+        },
+        {
+            output: 'mekanism:chemical_infuser',
+            pattern: ['EBE', 'ACA', 'DED'],
+            key: {
+                A: 'immersiveengineering:insulating_glass',
+                B: '#forge:ingots/fiery',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: '#forge:plates/obsidian',
+                E: 'mekanism:basic_chemical_tank'
+            },
+            id: 'mekanism:chemical_infuser'
+        },
+        {
+            output: 'mekanism:basic_chemical_tank',
+            pattern: [' A ', 'BCB', ' B '],
+            key: {
+                A: 'pneumaticcraft:safety_tube_module',
+                B: '#forge:plates/osmium',
+                C: 'pneumaticcraft:air_canister'
+            },
+            id: `${id_prefix}basic_chemical_tank`
+        },
+        {
+            output: 'mekanism:basic_fluid_tank',
+            pattern: [' A ', 'BCB', ' B '],
+            key: {
+                A: 'create:fluid_valve',
+                B: '#forge:plates/steel',
+                C: 'thermal:fluid_cell_frame'
+            },
+            id: `${id_prefix}basic_fluid_tank`
         },
         {
             output: 'mekanism:rotary_condensentrator',
-            pattern: ['ABA', 'CDE', 'ABA'],
+            pattern: ['EBF', 'ACA', 'DBD'],
             key: {
-                A: '#forge:glass/colorless',
-                B: '#forge:circuits/basic',
-                C: 'mekanism:basic_chemical_tank',
-                D: '#industrialforegoing:machine_frame/simple',
-                E: 'mekanism:basic_fluid_tank'
+                A: 'immersiveengineering:insulating_glass',
+                B: 'pneumaticcraft:turbine_rotor',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: '#forge:plates/obsidian',
+                E: 'mekanism:basic_chemical_tank',
+                F: 'thermal:fluid_cell_frame'
             },
             id: 'mekanism:rotary_condensentrator'
         },
+        {
+            output: '2x mekanism:sps_port',
+            pattern: ['ABA', 'BCB', 'ADA'],
+            key: {
+                A: 'mekanism:sps_casing',
+                B: 'ae2:spatial_pylon',
+                C: '#industrialforegoing:machine_frame/supreme',
+                D: 'ae2:spatial_anchor'
+            },
+            id: 'mekanism:sps_port'
+        },
+        {
+            output: 'mekanism:enrichment_chamber',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:gears/steel',
+                B: '#forge:essences/manipulation',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:ingots/depths',
+                F: '#forge:essences/abjuration'
+            },
+            id: 'mekanism:enrichment_chamber'
+        },
+        {
+            output: 'mekanism:pressurized_reaction_chamber',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:gears/steel',
+                B: '#forge:essences/earth',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: 'mekanism:basic_chemical_tank',
+                F: 'thermal:fluid_cell_frame'
+            },
+            id: 'mekanism:pressurized_reaction_chamber'
+        },
+        {
+            output: 'mekanism:laser_tractor_beam',
+            pattern: ['B', 'A'],
+            key: {
+                A: 'pneumaticcraft:smart_chest',
+                B: 'mekanism:laser_amplifier'
+            },
+            id: 'mekanism:laser_tractor_beam'
+        },
+        {
+            output: 'mekanism:laser_amplifier',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:plates/steel',
+                B: '#forge:gems/infused_diamond',
+                C: 'thermal:machine_frame'
+            },
+            id: 'mekanism:laser_amplifier'
+        },
+
+        // Placeholder recipes
+
         {
             output: 'mekanism:meka_tool',
             pattern: ['ABA', 'CDC', 'EFE'],
@@ -120,16 +211,6 @@ ServerEvents.recipes((event) => {
                 F: 'powah:capacitor_spirited'
             },
             id: 'mekanism:meka_tool'
-        },
-        {
-            output: 'mekanism:robit',
-            pattern: [' A ', 'BCB', 'AAA'],
-            key: {
-                A: '#forge:ingots/steel',
-                B: 'powah:capacitor_spirited',
-                C: '#forge:alloys/ultimate'
-            },
-            id: 'mekanism:robit'
         }
     ];
 

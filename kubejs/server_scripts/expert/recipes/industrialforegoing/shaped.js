@@ -19,11 +19,12 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'industrialforegoing:laser_drill',
-            pattern: ['A', 'B', 'C'],
+            pattern: [' B ', 'DAD', 'DCD'],
             key: {
                 A: 'powah:energizing_rod_niotic',
                 B: 'mekanism:teleportation_core',
-                C: '#industrialforegoing:machine_frame/simple'
+                C: '#industrialforegoing:machine_frame/simple',
+                D: '#forge:plastic'
             },
             id: 'industrialforegoing:laser_drill'
         },
@@ -163,6 +164,108 @@ ServerEvents.recipes((event) => {
                 F: '#forge:essences/manipulation'
             },
             id: 'industrialforegoing:dissolution_chamber'
+        },
+        {
+            output: 'industrialforegoing:potion_brewer',
+            pattern: [' A ', 'BCD', 'EFE'],
+            key: {
+                A: 'ars_nouveau:wixie_charm',
+                B: 'enigmaticunity:dim_source_producer',
+                C: 'compactmachines:machine_small',
+                D: 'ars_nouveau:source_jar',
+                E: ['ars_nouveau:arcane_pedestal', 'ars_nouveau:arcane_platform'],
+                F: 'minecraft:cauldron'
+            },
+            id: 'industrialforegoing:potion_brewer'
+        },
+        {
+            output: 'industrialforegoing:material_stonework_factory',
+            pattern: ['ABA', 'CDE', 'FGF'],
+            key: {
+                A: '#forge:plastic',
+                B: '#forge:essences/manipulation',
+                C: '#forge:essences/water',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:essences/fire',
+                F: '#forge:gears/steel',
+                G: '#forge:essences/earth'
+            },
+            id: 'industrialforegoing:material_stonework_factory'
+        },
+        {
+            output: '2x industrialforegoing:item_transporter_type',
+            pattern: [' AE', 'BCB', ' D '],
+            key: {
+                A: 'minecraft:hopper',
+                B: '#forge:ingots/electrum',
+                C: 'pneumaticcraft:logistics_core',
+                D: '#forge:gems/source',
+                E: '#forge:essences/air'
+            },
+            id: 'industrialforegoing:item_transporter_type'
+        },
+        {
+            output: '2x industrialforegoing:fluid_transporter_type',
+            pattern: [' AE', 'BCB', ' D '],
+            key: {
+                A: 'littlelogistics:fluid_hopper',
+                B: '#forge:ingots/electrum',
+                C: 'pneumaticcraft:logistics_core',
+                D: '#forge:gems/source',
+                E: '#forge:essences/air'
+            },
+            id: 'industrialforegoing:fluid_transporter_type'
+        },
+        {
+            output: '2x industrialforegoing:world_transporter_type',
+            pattern: [' AE', 'BCB', ' D '],
+            key: {
+                A: 'minecraft:dropper',
+                B: '#forge:ingots/electrum',
+                C: 'pneumaticcraft:logistics_core',
+                D: '#forge:gems/source',
+                E: '#forge:essences/air'
+            },
+            id: 'industrialforegoing:world_transporter_type'
+        },
+        {
+            output: 'industrialforegoing:sludge_refiner',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'minecraft:sand',
+                B: 'thermal:fluid_cell_frame',
+                C: '#forge:plastic',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:gears/compressed_iron',
+                F: 'immersiveengineering:furnace_heater'
+            },
+            id: 'industrialforegoing:sludge_refiner'
+        },
+        {
+            output: 'industrialforegoing:marine_fisher',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'thermal:deep_aquachow',
+                B: 'thermal:junk_net',
+                C: '#forge:plastic',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:gears/bronze',
+                F: 'thermal:device_fisher'
+            },
+            id: 'industrialforegoing:marine_fisher'
+        },
+        {
+            output: 'industrialforegoing:stasis_chamber',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'spirit:soul_glass',
+                B: 'spirit:soul_pedestal',
+                C: '#forge:plastic',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:gears/lead',
+                F: '#forge:essences/anima'
+            },
+            id: 'industrialforegoing:stasis_chamber'
         }
     ];
 

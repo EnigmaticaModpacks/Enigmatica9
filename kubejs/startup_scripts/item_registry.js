@@ -34,8 +34,6 @@ StartupEvents.registry('item', (event) => {
 
     const ritualDummies = [
         'ritual_summon_death_tome',
-        'ritual_teleport_everdawn',
-        'ritual_teleport_everbright',
         'ritual_teleport_nether',
         'ritual_tree_of_life_1',
         'ritual_tree_of_life_2',

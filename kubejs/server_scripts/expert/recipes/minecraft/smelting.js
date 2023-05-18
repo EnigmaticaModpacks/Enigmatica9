@@ -15,12 +15,6 @@ ServerEvents.recipes((event) => {
             output: 'minecraft:nether_brick',
             xp: 0.5,
             id: `${id_prefix}nether_brick`
-        },
-        {
-            input: 'occultism:otherstone',
-            output: 'occultism:burnt_otherstone',
-            xp: 0.5,
-            id: `${id_prefix}burnt_otherstone`
         }
     ];
 

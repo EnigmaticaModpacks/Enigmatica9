@@ -141,7 +141,13 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'occultism:soul_gem',
-            ingredients: ['#forge:gems/diamond', '#forge:dusts/silver', 'ae2:sky_dust', 'ae2:sky_dust'],
+            ingredients: [
+                '#forge:gems/diamond',
+                '#forge:dusts/silver',
+                'hexerei:dried_sage_bundle',
+                'hexerei:dried_sage_bundle',
+                'naturesaura:gold_leaf'
+            ],
             time: 5,
             sapling: 'quark:lavender_blossom_sapling',
             id: `${id_prefix}soul_gem`
@@ -205,6 +211,32 @@ ServerEvents.recipes((event) => {
             time: 20,
             sapling: 'ars_elemental:yellow_archwood_sapling',
             id: `${id_prefix}dim_source_generator`
+        },
+        {
+            output: 'enigmaticunity:bright_source_generator',
+            ingredients: [
+                'kubejs:bright_arcanite_crystal',
+                '#forge:planks/archwood',
+                '#forge:ingots/skies',
+                '#forge:ingots/skies',
+                'naturesaura:gold_leaf'
+            ],
+            time: 20,
+            sapling: 'ars_elemental:yellow_archwood_sapling',
+            id: `${id_prefix}bright_source_generator`
+        },
+        {
+            output: 'enigmaticunity:iridescent_source_generator',
+            ingredients: [
+                'kubejs:iridescent_arcanite_crystal',
+                '#forge:planks/archwood',
+                '#forge:ingots/depths',
+                '#forge:ingots/depths',
+                'naturesaura:gold_leaf'
+            ],
+            time: 20,
+            sapling: 'ars_elemental:yellow_archwood_sapling',
+            id: `${id_prefix}iridescent_source_generator`
         },
         {
             output: 'ars_nouveau:scribes_table',

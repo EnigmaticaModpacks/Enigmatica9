@@ -5,13 +5,12 @@
 	filename: "chapter_two"
 	title: "Chapter Two"
 	icon: "byg:subzero_crystal_cluster"
-	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -1.5d
-			y: 5.0d
+			x: 1.0d
+			y: 8.0d
 			shape: "hexagon"
 			dependencies: ["4F90F6437D6CF7EC"]
 			id: "3D0B7DA1DD0A74B1"
@@ -31,10 +30,26 @@
 					gateway: "gateways:wither_council_gate"
 				}
 			}
-			x: -1.5d
-			y: 4.0d
+			x: 0.5d
+			y: 7.0d
 			shape: "hexagon"
-			description: ["Summon the Wither Council to obtain access to Nether Stars"]
+			description: [
+				"Only a well-prepared witch should ever consider summoning the Wither Council, using every trick at her disposal to defeat them in a timely manner. "
+				""
+				"Perhaps one should be captured for further study, however… "
+				""
+				"========================================"
+				""
+				"The Gateway for this fight is on a short timer. Capture a Wither and defeat the rest to obtain a Nether Star. The captured Wither will be used to mine Ether, which may be used to produce more Nether Stars. "
+				""
+				"Feel free to repeat this fight, but it is not intended to be needed more than once. "
+				""
+				"Summoning the Wither Council will require the use of Eskarina’s Monstrous Compulsion, a ritual pentacle detailed in the Dictionary of Spirits. "
+				""
+				"Look for the &4Wither Council Gate Pearl&r in JEI to find the recipe for this summoning ritual. "
+			]
+			dependencies: ["39B2F84EBDC27AA3"]
+			min_width: 250
 			id: "4F90F6437D6CF7EC"
 			tasks: [{
 				id: "456BA96D5527F132"
@@ -43,35 +58,9 @@
 			}]
 		}
 		{
-			title: "Dream Stone"
-			icon: "blue_skies:alchemy_table"
-			x: -1.5d
-			y: -0.5d
-			shape: "hexagon"
-			id: "69324F7E3A7BCF04"
-			tasks: [
-				{
-					id: "37D201ABC1A3265B"
-					type: "item"
-					item: {
-						id: "blue_skies:alchemy_scroll"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "5DBC9261959191DC"
-					type: "item"
-					item: "kubejs:dream_stone"
-				}
-			]
-		}
-		{
-			x: -1.5d
-			y: 0.5d
-			dependencies: ["69324F7E3A7BCF04"]
+			x: 0.5d
+			y: 3.0d
+			dependencies: ["55C6945D58D77AB6"]
 			id: "4C676E7D2BA75DE4"
 			tasks: [{
 				id: "47352920219144B1"
@@ -80,8 +69,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 1.5d
+			x: 0.5d
+			y: 4.0d
 			dependencies: ["4C676E7D2BA75DE4"]
 			id: "71D9A268FF98E954"
 			tasks: [{
@@ -91,57 +80,70 @@
 			}]
 		}
 		{
-			title: "Netherite Scrap"
-			icon: "blue_skies:summoning_table"
-			x: 0.0d
-			y: -0.5d
+			x: -0.5d
+			y: 4.5d
 			shape: "hexagon"
+			description: ["It would seem the Cult of the Ur-Ghast were up to something far more sinister than previously thought. The rift they opened with their Carminite Reactor also gave them the opportunity to obtain this strange debris.  "]
+			dependencies: ["2CCCDD05AED3153F"]
+			hide: true
 			id: "0CFE9B39B0643013"
-			tasks: [
-				{
-					id: "7B83A6FC77564C81"
-					type: "item"
-					item: {
-						id: "blue_skies:summoning_tome"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "5BAB3FF81039BF5E"
-					type: "item"
-					item: "minecraft:netherite_scrap"
-				}
-			]
+			tasks: [{
+				id: "5BAB3FF81039BF5E"
+				type: "item"
+				item: "minecraft:ancient_debris"
+			}]
 		}
 		{
-			x: 0.0d
-			y: 0.5d
-			dependencies: ["0CFE9B39B0643013"]
+			x: 0.5d
+			y: 5.0d
+			description: [
+				"With some research, it appears the Cult were preparing to summon a great evil into the land. To what purpose is still unclear. "
+				""
+				"Just the same, the processes of cleansing this debris into a useful ingot is not for the feint of heart. "
+			]
+			dependencies: [
+				"71D9A268FF98E954"
+				"0CFE9B39B0643013"
+			]
 			id: "77E8DD38A379F9C7"
 			tasks: [{
 				id: "55E4F11D8C8357A5"
 				type: "item"
-				item: "minecraft:netherite_ingot"
+				title: "Netherite"
+				icon: "emendatusenigmatica:netherite_ingot"
+				item: "emendatusenigmatica:netherite_ingot"
 			}]
 		}
 		{
-			x: 0.0d
-			y: 1.5d
+			x: 0.5d
+			y: 6.0d
+			description: [
+				"Bait. "
+				""
+				"They were making bait. "
+				""
+				"Celestial Gold, blessed by the gods themselves, would ring out across the dimensions like a clear bell on a calm day. They’d never resist the chance to corrupt something so sacred. "
+			]
 			dependencies: ["77E8DD38A379F9C7"]
 			id: "39B2F84EBDC27AA3"
 			tasks: [{
 				id: "4241691B8FE4293D"
 				type: "item"
-				item: "naturesaura:tainted_gold"
+				title: "Celestial Gold"
+				icon: "emendatusenigmatica:tainted_gold_ingot"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/tainted_gold"
+					}
+				}
 			}]
 		}
 		{
-			x: 4.5d
-			y: 0.0d
-			dependencies: ["64D941490FEC2D79"]
+			x: 2.5d
+			y: -0.5d
+			dependencies: ["00B21E64DEFACB40"]
 			id: "31E4C2A162D7497C"
 			tasks: [{
 				id: "2D56C518D77625DD"
@@ -157,9 +159,28 @@
 					gateway: "gateways:wilden_grove_gate"
 				}
 			}
-			x: 0.0d
-			y: 4.0d
+			x: -0.5d
+			y: 2.5d
 			shape: "hexagon"
+			description: [
+				"As the Queen tells it, The Wilden Grove invoked a dangerous ritual to attempt to stop the Cult of the Ur-Ghast before it was too late. "
+				""
+				"Sadly, the ritual was too much, and they lost themselves to the Call of the Beast."
+				""
+				"Send a message on the Queen’s behalf. Tell them &7“Your friendship is mourned. Rest now.”&r, then put them down."
+				""
+				"========================================"
+				""
+				"The Gateway for this fight is on a short timer. Capture a Wilden Chimera and defeat the rest to obtain a Wilden Tribute. The captured Wilden Chimera will be used to mine Magicite, which has multiple uses. "
+				""
+				"Feel free to repeat this fight, but it is not intended to be needed more than once. "
+				""
+				"Summoning the Grove of the Wilden will require the use of Eskarina’s Monstrous Compulsion, a ritual pentacle detailed in the Dictionary of Spirits. "
+				""
+				"Look for the &5Grove of the Wilden Gate Pearl&r in JEI to find the recipe for this summoning ritual."
+			]
+			dependencies: ["55C6945D58D77AB6"]
+			min_width: 250
 			id: "0B7E9625225C8413"
 			tasks: [{
 				id: "21A6D819BD491B00"
@@ -168,8 +189,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 5.0d
+			x: -1.0d
+			y: 3.5d
 			dependencies: ["0B7E9625225C8413"]
 			id: "10238EBB9B55F67B"
 			tasks: [{
@@ -180,7 +201,7 @@
 		}
 		{
 			x: 2.5d
-			y: 4.0d
+			y: 5.5d
 			dependencies: ["1D0AA79380E87E57"]
 			id: "7563E41DBF4FD286"
 			tasks: [{
@@ -191,8 +212,11 @@
 		}
 		{
 			x: 2.5d
-			y: 5.0d
-			dependencies: ["7563E41DBF4FD286"]
+			y: 6.5d
+			dependencies: [
+				"7563E41DBF4FD286"
+				"7465284C82512CF1"
+			]
 			id: "17F735810850C368"
 			tasks: [{
 				id: "5F0411E4A7C69564"
@@ -201,8 +225,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 5.5d
+			x: 4.5d
+			y: 6.5d
 			dependencies: ["7465284C82512CF1"]
 			id: "5503E132D9D02EF8"
 			tasks: [{
@@ -212,8 +236,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 1.0d
+			x: 2.5d
+			y: 0.5d
 			dependencies: ["31E4C2A162D7497C"]
 			id: "6044FE23384692A5"
 			tasks: [{
@@ -224,7 +248,7 @@
 		}
 		{
 			x: 3.5d
-			y: 6.5d
+			y: 8.0d
 			dependencies: [
 				"126F4E070F219A8B"
 				"6E239ECBE33DFA36"
@@ -238,7 +262,7 @@
 		}
 		{
 			x: 3.5d
-			y: 8.0d
+			y: 9.5d
 			dependencies: ["606F79DAEB15E85B"]
 			id: "507A68CE5D41C4C2"
 			tasks: [{
@@ -249,7 +273,7 @@
 		}
 		{
 			x: 2.5d
-			y: 6.0d
+			y: 7.5d
 			dependencies: ["17F735810850C368"]
 			id: "126F4E070F219A8B"
 			tasks: [{
@@ -260,11 +284,8 @@
 		}
 		{
 			x: 4.5d
-			y: 6.0d
-			dependencies: [
-				"4B12601018EEB05D"
-				"5503E132D9D02EF8"
-			]
+			y: 7.5d
+			dependencies: ["5503E132D9D02EF8"]
 			id: "6E239ECBE33DFA36"
 			tasks: [{
 				id: "2879671AF2B13169"
@@ -273,21 +294,12 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 5.5d
-			dependencies: ["538DE3B57A9AC5AD"]
-			id: "4B12601018EEB05D"
-			tasks: [{
-				id: "1DE7111A79414D27"
-				type: "item"
-				item: "pneumaticcraft:flux_compressor"
-			}]
-		}
-		{
 			icon: "powah:energizing_orb"
 			x: 3.5d
-			y: -1.5d
+			y: -2.5d
 			shape: "hexagon"
+			dependencies: ["2CCCDD05AED3153F"]
+			hide: true
 			id: "60324503ED7AC4C1"
 			tasks: [
 				{
@@ -303,41 +315,35 @@
 			]
 		}
 		{
-			x: 6.0d
-			y: 1.5d
-			dependencies: ["21C352EEFEB25365"]
-			id: "00CBB00A1C09BCA4"
-			tasks: [{
-				id: "3826319717FB029A"
-				type: "item"
-				item: "immersiveengineering:rs_engineering"
-			}]
-		}
-		{
-			x: 3.5d
-			y: 1.5d
-			dependencies: [
-				"6044FE23384692A5"
-				"49159D9F94B7006C"
-			]
+			x: 2.5d
+			y: 3.5d
+			dependencies: ["49159D9F94B7006C"]
 			id: "767A379B00DCA2E0"
 			tasks: [{
 				id: "1558A342DAD1935D"
 				type: "item"
-				item: "minecraft:iron_ingot"
+				title: "Iron"
+				icon: "emendatusenigmatica:iron_ingot"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/iron"
+					}
+				}
 			}]
 		}
 		{
 			title: "Improved Blast Furnace"
 			icon: "immersiveengineering:advanced_blast_furnace"
 			x: 2.5d
-			y: 0.0d
+			y: 1.5d
 			description: [
 				"Supplying enough heat to work with Iron directly has proved difficult until now. With a magically enhanced blast furnace and Horizonite as fuel, it should prove more feasible."
 				""
 				"Horizonite appears to only occur naturally within the moon of Everdawn. "
 			]
-			dependencies: ["64D941490FEC2D79"]
+			dependencies: ["6044FE23384692A5"]
 			id: "2BA70920EA1ED0A8"
 			tasks: [{
 				id: "79ABD0D7EFB8D300"
@@ -347,36 +353,13 @@
 		}
 		{
 			x: 3.5d
-			y: -0.5d
-			dependencies: ["60324503ED7AC4C1"]
-			id: "64D941490FEC2D79"
-			tasks: [{
-				id: "56331B0146D3B8B5"
-				type: "item"
-				item: "powah:steel_energized"
-			}]
-		}
-		{
-			title: "Magical Forging"
-			x: 3.5d
-			y: 2.5d
-			dependencies: ["767A379B00DCA2E0"]
-			id: "16B840CCFD9B3115"
-			tasks: [{
-				id: "05285D9A3BD52FB6"
-				type: "item"
-				item: "thermal:invar_ingot"
-			}]
-		}
-		{
-			x: 3.5d
-			y: 3.5d
+			y: 5.0d
 			description: [
 				"Formed by crushing Invar with Magic! The following spell form will crush items on the ground: "
 				""
 				"Projectile > Crush > Sensitive "
 			]
-			dependencies: ["16B840CCFD9B3115"]
+			dependencies: ["2BE91F37CE010984"]
 			id: "1D0AA79380E87E57"
 			tasks: [{
 				id: "5C129E4F6EAC8C83"
@@ -385,8 +368,10 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 2.5d
+			title: "Light Machinery"
+			icon: "immersiveengineering:light_engineering"
+			x: 4.5d
+			y: 1.5d
 			description: [
 				"The following multiblock machines are available with Light Engineering Blocks:"
 				""
@@ -396,17 +381,25 @@
 				"● Assembler"
 				"● Sawmill"
 			]
-			dependencies: ["00CBB00A1C09BCA4"]
+			dependencies: ["21C352EEFEB25365"]
 			id: "2C43443DCFFF65F4"
-			tasks: [{
-				id: "05A605FCDAEBD972"
-				type: "item"
-				item: "immersiveengineering:light_engineering"
-			}]
+			tasks: [
+				{
+					id: "05A605FCDAEBD972"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+				}
+				{
+					id: "63E361AD9BA98257"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+			]
 		}
 		{
+			title: "Heavy Machinery"
 			x: 4.5d
-			y: 4.0d
+			y: 5.5d
 			description: [
 				"The following multiblock machines are available with Heavy Engineering Blocks:"
 				""
@@ -424,9 +417,9 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 4.5d
 			y: 0.5d
-			dependencies: ["31E4C2A162D7497C"]
+			dependencies: ["738DA69FFF6516FA"]
 			id: "21C352EEFEB25365"
 			tasks: [{
 				id: "4027AFF2F762B0D1"
@@ -435,20 +428,9 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 4.5d
+			x: 3.5d
+			y: 6.0d
 			dependencies: ["15F56E72212629FB"]
-			id: "538DE3B57A9AC5AD"
-			tasks: [{
-				id: "6D0F7E922D427944"
-				type: "item"
-				item: "pneumaticcraft:printed_circuit_board"
-			}]
-		}
-		{
-			x: 4.5d
-			y: 5.0d
-			dependencies: ["538DE3B57A9AC5AD"]
 			id: "7465284C82512CF1"
 			tasks: [{
 				id: "25E1CC6FE74A1DFB"
@@ -457,9 +439,9 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 1.0d
-			dependencies: ["2BA70920EA1ED0A8"]
+			x: 3.5d
+			y: 3.0d
+			dependencies: ["0C0A98C6DD871BD3"]
 			id: "49159D9F94B7006C"
 			tasks: [{
 				id: "7667047356862670"
@@ -468,8 +450,19 @@
 			}]
 		}
 		{
-			x: 8.0d
-			y: -0.5d
+			x: 0.5d
+			y: 1.0d
+			shape: "hexagon"
+			description: [
+				"The Cell Maze seems a likely a place as any to start. Locate it and search around for clues to the Queen's whereabouts.  They’re notable for their large cells partitioned off by Honey Web and contain countless Honey Cocoons."
+				""
+				"Be sure to obtain the Protection of the Hive before entering!"
+				""
+				"================================="
+				""
+				"While in the Bumblezone, Right-Click the Honey Compass in the air to attune it to the Cell Maze."
+			]
+			dependencies: ["4CC418E7200DF351"]
 			id: "57861ABDB35ED555"
 			tasks: [{
 				id: "707735727FE79FB9"
@@ -490,42 +483,201 @@
 			}]
 		}
 		{
-			x: 8.0d
-			y: 0.5d
+			icon: "the_bumblezone:essence_of_the_bees"
+			x: 0.5d
+			y: 2.0d
+			shape: "hexagon"
+			description: [
+				"At last, the Queen!"
+				""
+				"Earn the boon of the Queen by completing the tasks they require, or by returning to them that which is rightfully theirs."
+				""
+				"================================="
+				""
+				"Essence of the Bees is a very rare reward, indeed, so do not squander it!"
+				"Use it to first craft the Gloaming Catalyst before consuming it to receive the rest of the permanent rewards it grants. "
+			]
+			dependencies: ["57861ABDB35ED555"]
 			id: "55C6945D58D77AB6"
-			tasks: [{
-				id: "3CC2FBDD7AB29403"
-				type: "item"
-				item: {
-					id: "the_bumblezone:honey_compass"
-					Count: 1b
-					tag: {
-						Locked: 1b
-						CustomName: "item.the_bumblezone.honey_compass_throne_structure"
-						TargetPos: {
-							X: -1472
-							Y: 0
-							Z: -4688
+			tasks: [
+				{
+					id: "3CC2FBDD7AB29403"
+					type: "item"
+					item: {
+						id: "the_bumblezone:honey_compass"
+						Count: 1b
+						tag: {
+							Locked: 1b
+							CustomName: "item.the_bumblezone.honey_compass_throne_structure"
+							TargetPos: {
+								X: -1472
+								Y: 0
+								Z: -4688
+							}
+							CustomDescription: "item.the_bumblezone.honey_compass_throne_description"
+							CompassType: "structure"
+							TargetDimension: "the_bumblezone:the_bumblezone"
 						}
-						CustomDescription: "item.the_bumblezone.honey_compass_throne_description"
-						CompassType: "structure"
-						TargetDimension: "the_bumblezone:the_bumblezone"
 					}
 				}
+				{
+					id: "586A6799065EA729"
+					type: "item"
+					item: "the_bumblezone:essence_of_the_bees"
+				}
+			]
+		}
+		{
+			icon: "minecraft:honeycomb"
+			x: 0.5d
+			y: 0.0d
+			shape: "hexagon"
+			description: [
+				"The meandering pathways in the Bumblezone are built for hive minds, and so can be difficult for others to follow. Crafting a Honey Compass will be the safest way forward."
+				""
+				"Remember to show the bees respect while in their home. Feed bees and Honeycomb Brood Blocks some tasty honey treats to earn the Protection of the Hive. Only honored guests are allowed in their most sacred places."
+				""
+				"================================="
+				""
+				"While in the Bumblezone, it is possible to leave at any time by mining to the roof or floor. Above ore below a certain point, you’ll be teleported back to where you came from."
+			]
+			dependencies: ["2153EBB1D50F0039"]
+			id: "4CC418E7200DF351"
+			tasks: [
+				{
+					id: "4F31450F59F287F9"
+					type: "item"
+					item: {
+						id: "the_bumblezone:honey_compass"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "727B3D8940DE93A6"
+					type: "item"
+					title: "Bee Treats"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "the_bumblezone:bee_bread"
+									Count: 1b
+								}
+								{
+									id: "minecraft:honey_bottle"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "6AA44F123D286226"
+				type: "item"
+				item: "the_bumblezone:bee_bread"
+				count: 16
 			}]
 		}
 		{
-			x: 8.0d
-			y: -1.5d
-			id: "4CC418E7200DF351"
+			x: 3.5d
+			y: -1.0d
+			dependencies: ["60324503ED7AC4C1"]
+			id: "00B21E64DEFACB40"
 			tasks: [{
-				id: "4F31450F59F287F9"
+				id: "01AF1B57146069F1"
 				type: "item"
-				item: {
-					id: "the_bumblezone:honey_compass"
-					Count: 1b
-					tag: { }
+				item: "powah:steel_energized"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -0.5d
+			dependencies: ["00B21E64DEFACB40"]
+			id: "738DA69FFF6516FA"
+			tasks: [{
+				id: "60BB72446E4D266C"
+				type: "item"
+				item: "occultism:spirit_attuned_gem"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.0d
+			dependencies: ["2BA70920EA1ED0A8"]
+			id: "0C0A98C6DD871BD3"
+			tasks: [{
+				id: "0F59CD79EA51B378"
+				type: "item"
+				item: "kubejs:crude_iron_ingot"
+			}]
+		}
+		{
+			title: "Telling of the Bees"
+			icon: "minecraft:beehive"
+			x: 1.0d
+			y: -1.0d
+			shape: "hexagon"
+			description: [
+				"In places that still keep the old ways, bees hold a privileged position in community life. From the birth of a child to the death of a friend, news of important events are shared first with the bees. "
+				""
+				"It was widely known that the Wilden Grove were avid bee-keepers and some speculated that the bees would carry messages to them through dreams, keeping them apprised of news from far and wide. "
+				""
+				"A pretty story, but surely a simple scrying would have done the same. "
+				""
+				"Just the same, the practice never really died out, especially among the Grove. It seems likely that as the Cult of the Ur-Ghast rose in prominence in this place, the druids may hav discussed the events with the bees, perhaps even seeking advice from the Queen. "
+				""
+				"Seek out the Queen Bee to see if they have any clues to offer. "
+				""
+				"================================================="
+				""
+				"In order to travel to the Bumblezone, place a Teleporter directly beneath a Beehive, then throw an Ender Pearl at the Beehive."
+			]
+			hide_dependency_lines: true
+			dependencies: ["31E4C2A162D7497C"]
+			min_width: 300
+			id: "2153EBB1D50F0039"
+			tasks: [
+				{
+					id: "4A2B53416D546C80"
+					type: "item"
+					item: "minecraft:beehive"
 				}
+				{
+					id: "637617E3CEC25857"
+					type: "item"
+					item: "mekanism:teleporter"
+				}
+			]
+			rewards: [{
+				id: "6363919C99636DBD"
+				type: "item"
+				item: "minecraft:ender_pearl"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.5d
+			dependencies: ["49159D9F94B7006C"]
+			id: "4A7EC5D11F20F2B7"
+			tasks: [{
+				id: "76E4EFCD4200B779"
+				type: "item"
+				item: "emendatusenigmatica:steel_ingot"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 4.0d
+			dependencies: ["767A379B00DCA2E0"]
+			id: "2BE91F37CE010984"
+			tasks: [{
+				id: "4CCF04553715833F"
+				type: "item"
+				item: "emendatusenigmatica:invar_ingot"
 			}]
 		}
 	]

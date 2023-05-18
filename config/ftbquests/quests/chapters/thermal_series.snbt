@@ -1,7 +1,7 @@
 {
 	id: "00000000000003A1"
 	group: "72A9465344128AF9"
-	order_index: 7
+	order_index: 13
 	filename: "thermal_series"
 	title: "Thermal Series"
 	icon: "thermal:wrench"
@@ -12,7 +12,7 @@
 			title: "Thermal Series"
 			x: 2.0d
 			y: 0.0d
-			shape: "hexagon"
+			shape: "gear"
 			description: [
 				"The Thermal Series is a suite of mods that has been a staple of Modded Minecraft for years. Time has brought many changes to it, but it's kept its overall theme of slightly magical tech throughout. "
 				""
@@ -20,20 +20,43 @@
 				""
 				"~MuteTiefling"
 			]
+			dependencies: ["0E45018D600614BA"]
+			hide: true
 			id: "00000000000003A2"
 			tasks: [{
-				id: "6F8140DE19FABFDA"
+				id: "76C4CF33829A2A0F"
 				type: "item"
-				item: "thermal:wrench"
+				title: "Any Tool"
+				icon: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "thermal:guidebook"
+					}
+				}
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:tools"
+					}
+				}
 			}]
-			rewards: [{
-				id: "4623F41B74F1829E"
-				type: "item"
-				title: "Iron Chunk"
-				item: "emendatusenigmatica:raw_iron"
-				count: 4
-				random_bonus: 8
-			}]
+			rewards: [
+				{
+					id: "4623F41B74F1829E"
+					type: "item"
+					title: "Iron Chunk"
+					item: "emendatusenigmatica:raw_iron"
+					count: 4
+					random_bonus: 8
+				}
+				{
+					id: "54F0E4A0571A954E"
+					type: "item"
+					item: "thermal:wrench"
+				}
+			]
 		}
 		{
 			icon: "thermal:dynamo_stirling"
@@ -440,6 +463,7 @@
 			title: "Exotic Elements"
 			x: -2.5d
 			y: 9.5d
+			shape: "hexagon"
 			subtitle: "Everything changed when the Fire Elementals attacked"
 			description: [
 				"Simple metallurgy can only go so far. At a certain point, more exotic materials are required. Seek out the elemental creatures that make their homes in the world's most extreme environments."
@@ -551,6 +575,7 @@
 			icon: "thermal:upgrade_augment_1"
 			x: -2.5d
 			y: 6.5d
+			shape: "hexagon"
 			description: [
 				"Integral Components represent a generic upgrade that may be installed in any upgradable Thermal Series machine, device, or dynamo. They offer a straight multiplier of most stats, applied after other Augments, so they’re always worth using."
 				""
@@ -995,6 +1020,7 @@
 			title: "Tools and Utility"
 			x: 2.0d
 			y: 6.5d
+			shape: "hexagon"
 			description: [
 				"A multi-purpose workbench which may be used to charge items, fill tanks with fluid, and alter the augments of any Thermal machines, devices, or tools. "
 				""
@@ -1206,6 +1232,7 @@
 			title: "Getting Started: Power Generation"
 			x: -2.5d
 			y: 1.5d
+			shape: "hexagon"
 			description: ["There’s no such thing as a free lunch, as the saying goes; doing work means using energy and the search for energy drives all things. Our first step, therefore, will be to generate some power to begin working with Thermal machines."]
 			hide_dependency_lines: true
 			dependencies: ["00000000000003A2"]
@@ -1267,7 +1294,7 @@
 		}
 		{
 			icon: "thermal:device_soil_infuser"
-			x: 5.5d
+			x: 6.0d
 			y: 4.0d
 			description: [
 				"Phyto-Soil is already a marvel of modern farming techniques, but it can be activated with a gentle energetic field to further enhance its growing potential. "
@@ -1308,7 +1335,7 @@
 			]
 		}
 		{
-			x: 7.5d
+			x: 7.0d
 			y: 4.0d
 			description: [
 				"While many find fishing to be a calm, relaxing pastime, others find it well… tedious. To those, the Aquatic Entangler is the answer to obtaining fish and other goodies from the seas. "
@@ -1535,20 +1562,21 @@
 			title: "Getting Started: Material Processing"
 			x: 2.0d
 			y: 1.5d
+			shape: "hexagon"
 			description: ["Better materials are critical to any industrial endeavor but getting them will require a bit of setup and equipment first. "]
 			hide_dependency_lines: true
 			dependencies: ["00000000000003A2"]
 			id: "356D43146EB57E78"
 			tasks: [{
-				id: "170EFDBE75844058"
+				id: "3D0B51796ED02AD3"
 				type: "item"
-				title: "Raw Nickel"
+				title: "Any Ore"
 				icon: "emendatusenigmatica:raw_nickel"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						value: "forge:raw_materials/nickel"
+						value: "forge:raw_materials"
 					}
 				}
 			}]
@@ -1850,6 +1878,7 @@
 			icon: "minecraft:oak_sapling"
 			x: 6.5d
 			y: 1.5d
+			shape: "hexagon"
 			description: ["Though metals and gems from deep in the ground are certainly important, one must not overlook the importance of renewable resources from the land and sea. Thermal offers a number of devices to assist in these agrarian endeavors."]
 			hide_dependency_lines: true
 			dependencies: ["00000000000003A2"]
@@ -1955,6 +1984,7 @@
 			icon: "thermal:cured_rubber_block"
 			x: 6.5d
 			y: 6.5d
+			shape: "hexagon"
 			description: ["Alloys and Cured Rubber unlock access to even more interesting machines. Of note, machines for refining better fuels and growing crystals. "]
 			hide_dependency_lines: true
 			dependencies: ["00000000000003A2"]

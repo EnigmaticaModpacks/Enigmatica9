@@ -16,11 +16,11 @@ ServerEvents.recipes((event) => {
                     blacklist: {},
                     whitelist: {
                         type: 'minecraft:worldgen/biome',
-                        values: [
+                        values: biomes.in_the_nether.concat([
                             'twilightforest:dark_forest',
                             'twilightforest:dark_forest_center',
                             'twilightforest:spooky_forest'
-                        ]
+                        ])
                     }
                 },
                 {
@@ -30,11 +30,11 @@ ServerEvents.recipes((event) => {
                     blacklist: {},
                     whitelist: {
                         type: 'minecraft:worldgen/biome',
-                        values: [
+                        values: biomes.in_the_nether.concat([
                             'twilightforest:dark_forest',
                             'twilightforest:dark_forest_center',
                             'twilightforest:spooky_forest'
-                        ]
+                        ])
                     }
                 }
             ],
@@ -52,11 +52,11 @@ ServerEvents.recipes((event) => {
                     blacklist: {},
                     whitelist: {
                         type: 'minecraft:worldgen/biome',
-                        values: [
+                        values: biomes.in_the_nether.concat([
                             'twilightforest:dark_forest',
                             'twilightforest:dark_forest_center',
                             'twilightforest:spooky_forest'
-                        ]
+                        ])
                     }
                 },
                 {
@@ -66,11 +66,11 @@ ServerEvents.recipes((event) => {
                     blacklist: {},
                     whitelist: {
                         type: 'minecraft:worldgen/biome',
-                        values: [
+                        values: biomes.in_the_nether.concat([
                             'twilightforest:dark_forest',
                             'twilightforest:dark_forest_center',
                             'twilightforest:spooky_forest'
-                        ]
+                        ])
                     }
                 }
             ],

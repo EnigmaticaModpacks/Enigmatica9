@@ -1,18 +1,16 @@
 //priority: 1004
-const setMode = (player) => {
-    console.log('setting mode for player: ' + player);
-    if (global.packmode == 'expert') {
-        // player.data.ftbquests.complete('0000000000000FEB');
-    } else {
-        // player.data.ftbquests.reset('0000000000000FEB');
-    }
-};
+PlayerEvents.loggedIn((event) => {
+    const expertModeQuest = '2CCCDD05AED3153F';
+    const normalModeQuest = '0E45018D600614BA';
 
-ServerEvents.highPriorityData((event) => {
-    if (event.server) {
-        event.server.players.forEach((player) => {
-            setMode(player);
-        });
+    console.log(`Setting mode for player: ${event.player}`);
+
+    if (global.packmode == 'expert') {
+        event.player.data.ftbquests.reset(normalModeQuest);
+        event.player.data.ftbquests.complete(expertModeQuest);
+    } else {
+        event.player.data.ftbquests.reset(expertModeQuest);
+        event.player.data.ftbquests.complete(normalModeQuest);
     }
 });
 

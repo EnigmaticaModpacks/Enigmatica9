@@ -81,6 +81,24 @@ ServerEvents.recipes((event) => {
             inputs: [{ base_ingredient: { item: 'thermal:rich_slag' }, count: 9 }],
             fluid: { amount: 100, tag: 'forge:redstone_acid' },
             id: `${id_prefix}sky_dust_silver_osmium_clump`
+        },
+        {
+            results: [{ item: 'hexerei:quicksilver_bottle' }],
+            inputs: [{ base_ingredient: { item: 'minecraft:glass_bottle' } }],
+            fluid: { amount: 250, tag: 'forge:quicksilver' },
+            id: `${id_prefix}quicksilver_bottle`
+        },
+        {
+            results: [{ item: 'hexerei:blood_bottle' }],
+            inputs: [{ base_ingredient: { item: 'minecraft:glass_bottle' } }],
+            fluid: { amount: 250, tag: 'forge:blood' },
+            id: `${id_prefix}blood_bottle`
+        },
+        {
+            results: [{ item: 'the_bumblezone:honey_compass' }],
+            inputs: [{ base_ingredient: { item: 'naturescompass:naturescompass' } }],
+            fluid: { amount: 250, tag: 'forge:honey' },
+            id: `${id_prefix}honey_compass`
         }
     ];
 
@@ -97,7 +115,7 @@ ServerEvents.recipes((event) => {
         recipes.push({
             results: outputs,
             inputs: [{ base_ingredient: { tag: `create:crushed_ores/${metal}` }, count: 1 }],
-            fluid: { amount: 100, tag: 'forge:redstone_acid' },
+            fluid: { amount: 100, tag: 'forge:sulfuric_acid' },
             id: `${id_prefix}${metal}_dirty_dust_from_acid`
         });
     });

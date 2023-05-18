@@ -233,7 +233,7 @@ ServerEvents.recipes((event) => {
             id: 'tiab:time_in_a_bottle'
         },
         {
-            output: '9x twilightforest:fiery_ingot',
+            output: '4x twilightforest:fiery_ingot',
             inputs: [
                 '#forge:essences/fire',
                 'hexerei:dried_yellow_dock_flowers',

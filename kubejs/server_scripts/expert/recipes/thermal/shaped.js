@@ -290,28 +290,189 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'thermal:machine_furnace',
-            pattern: ['ABA', 'CDC', 'EFE'],
+            pattern: ['ABA', 'CDC', 'AEA'],
             key: {
-                A: '#forge:plates/aluminum',
+                A: 'naturesaura:infused_brick',
                 B: 'naturesaura:furnace_heater',
                 C: '#forge:ingots/infused_iron',
                 D: 'minecraft:furnace',
-                E: 'naturesaura:infused_brick',
-                F: '#forge:essences/fire'
+                E: '#forge:essences/fire'
             },
             id: 'thermal:machine_furnace'
         },
         {
             output: 'thermal:machine_smelter',
-            pattern: ['ABA', 'CDC', 'ECE'],
+            pattern: ['AAA', 'BCB', 'DED'],
             key: {
-                A: '#forge:plates/obsidian',
-                B: 'naturesaura:furnace_heater',
-                C: '#forge:ingots/fiery',
-                D: 'minecraft:blast_furnace',
-                E: 'naturesaura:infused_brick'
+                A: '#forge:plates/aluminum',
+                B: 'naturesaura:infused_brick',
+                C: 'minecraft:blast_furnace',
+                D: 'immersiveengineering:blastbrick_reinforced',
+                E: 'immersiveengineering:rs_engineering'
             },
             id: 'thermal:machine_smelter'
+        },
+        {
+            output: 'thermal:machine_crucible',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: '#forge:essences/fire',
+                B: '#forge:plastic',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: 'naturesaura:infused_brick',
+                E: 'pneumaticcraft:vortex_tube'
+            },
+            id: 'thermal:machine_crucible'
+        },
+        {
+            output: 'thermal:machine_chiller',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: '#forge:essences/water',
+                B: '#forge:plastic',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: 'naturesaura:infused_brick',
+                E: 'pneumaticcraft:vortex_tube'
+            },
+            id: 'thermal:machine_chiller'
+        },
+        {
+            output: 'thermal:machine_brewer',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: '#forge:essences/abjuration',
+                B: '#forge:plastic',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: 'naturesaura:infused_brick',
+                E: 'minecraft:brewing_stand'
+            },
+            id: 'thermal:machine_brewer'
+        },
+        {
+            output: 'thermal:machine_bottler',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'create:spout',
+                B: '#forge:plastic',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: 'naturesaura:infused_brick',
+                E: 'create:depot'
+            },
+            id: 'thermal:machine_bottler'
+        },
+        {
+            output: 'thermal:machine_pulverizer',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'pneumaticcraft:pneumatic_cylinder',
+                B: '#forge:storage_blocks/depths',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: '#forge:gears/steel',
+                F: 'create:depot'
+            },
+            id: 'thermal:machine_pulverizer'
+        },
+        {
+            output: 'thermal:machine_sawmill',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'create:metal_bracket',
+                B: 'immersiveengineering:sawblade',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: '#forge:gears/steel',
+                F: 'create:depot'
+            },
+            id: 'thermal:machine_sawmill'
+        },
+        {
+            output: 'thermal:machine_press',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'create:metal_bracket',
+                B: 'create:mechanical_press',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: '#forge:gears/steel',
+                F: 'create:depot'
+            },
+            id: 'thermal:machine_press'
+        },
+        {
+            output: 'thermal:machine_insolator',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'thermal:phytosoil',
+                B: 'immersiveengineering:light_bulb',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: '#forge:gears/electrum',
+                F: 'thermal:device_soil_infuser'
+            },
+            id: 'thermal:machine_insolator'
+        },
+        {
+            output: 'thermal:machine_crystallizer',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'ae2:quartz_growth_accelerator',
+                B: '#forge:plastic',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: '#forge:gears/electrum',
+                E: '#forge:essences/water'
+            },
+            id: 'thermal:machine_crystallizer'
+        },
+        {
+            output: 'thermal:machine_crafter',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'create:crafting_blueprint',
+                B: '#forge:plastic',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: '#forge:gears/compressed_iron',
+                E: '#forge:essences/manipulation'
+            },
+            id: 'thermal:machine_crafter'
+        },
+        {
+            output: 'thermal:machine_centrifuge',
+            pattern: ['FAG', 'BCB', 'DED'],
+            key: {
+                A: 'immersiveengineering:turntable',
+                B: '#forge:plastic',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: '#forge:gears/compressed_iron',
+                E: '#forge:essences/air',
+                F: 'minecraft:barrel',
+                G: 'thermal:fluid_cell_frame'
+            },
+            id: 'thermal:machine_centrifuge'
+        },
+        {
+            output: 'thermal:machine_pyrolyzer',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'minecraft:blast_furnace',
+                B: '#forge:plastic',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: 'immersiveengineering:blastbrick_reinforced',
+                E: 'thermal:fluid_cell_frame'
+            },
+            id: 'thermal:machine_pyrolyzer'
+        },
+        {
+            output: 'thermal:machine_refinery',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'pneumaticcraft:refinery',
+                B: 'pneumaticcraft:refinery_output',
+                C: '#industrialforegoing:machine_frame/simple',
+                D: '#forge:gears/compressed_iron',
+                E: '#forge:essences/fire'
+            },
+            id: 'thermal:machine_refinery'
         }
     ];
 

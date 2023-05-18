@@ -728,14 +728,25 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_craft_component_electronic`
         },
         {
-            output: 'pneumaticcraft:flux_compressor',
-            activation_item: 'pneumaticcraft:air_compressor',
+            output: Item.of('pneumaticcraft:flux_compressor', {
+                BlockEntityTag: {
+                    UpgradeInventory: { Items: [{ Count: 1, Slot: 0, id: 'pneumaticcraft:security_upgrade' }], Size: 4 }
+                }
+            }),
+            activation_item: 'minecraft:blast_furnace',
             inputs: [
-                'pneumaticcraft:printed_circuit_board',
-                'pneumaticcraft:turbine_rotor',
-                '#forge:gears/compressed_iron',
-                'pneumaticcraft:turbine_rotor',
-                'pneumaticcraft:reinforced_pressure_tube'
+                'ars_elemental:lesser_air_focus',
+                'naturesaura:furnace_heater',
+                'ars_elemental:lesser_fire_focus',
+                'create:shaft',
+                '#forge:ingots/infused_iron',
+                '#forge:gems/source',
+                '#forge:ingots/infused_iron',
+                'create:propeller',
+                '#forge:ingots/infused_iron',
+                '#forge:gems/source',
+                '#forge:ingots/infused_iron',
+                'create:propeller'
             ],
             entity_to_sacrifice: {
                 tag: 'enigmatica:elementals/air',
@@ -759,10 +770,10 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:pressure_tube',
                 'pneumaticcraft:pressure_tube',
                 'pneumaticcraft:pressure_tube',
-                '#forge:ingots/skies',
-                '#forge:ingots/skies',
-                '#forge:ingots/skies',
-                '#forge:ingots/skies'
+                '#forge:ingots/sky',
+                '#forge:ingots/sky',
+                '#forge:ingots/sky',
+                '#forge:ingots/sky'
             ],
             entity_to_sacrifice: {
                 tag: 'enigmatica:elementals/air',
@@ -805,14 +816,20 @@ ServerEvents.recipes((event) => {
             output: 'industrialforegoing:ore_laser_base',
             activation_item: 'thermal:machine_frame',
             inputs: [
+                'ars_elemental:lesser_earth_focus',
+                '#forge:gears/aluminum',
+                '#forge:storage_blocks/source',
+                '#forge:gears/aluminum',
+
+                '#forge:ingots/energized_steel',
                 'spirit:soul_glass',
+                '#forge:ingots/energized_steel',
                 'spirit:soul_glass',
+
+                '#forge:ingots/energized_steel',
                 'spirit:soul_glass',
-                'spirit:soul_glass',
-                '#forge:ingots/compressed_iron',
-                '#forge:ingots/compressed_iron',
-                '#forge:ingots/compressed_iron',
-                '#forge:ingots/compressed_iron'
+                '#forge:ingots/energized_steel',
+                'spirit:soul_glass'
             ],
             entity_to_sacrifice: {
                 tag: 'enigmatica:elementals/earth',
@@ -851,14 +868,20 @@ ServerEvents.recipes((event) => {
             output: 'industrialforegoing:fluid_laser_base',
             activation_item: 'thermal:machine_frame',
             inputs: [
+                'ars_elemental:lesser_water_focus',
+                '#forge:gears/aluminum',
+                '#forge:storage_blocks/source',
+                '#forge:gears/aluminum',
+
+                '#forge:ingots/energized_steel',
                 'spirit:soul_glass',
+                '#forge:ingots/energized_steel',
                 'spirit:soul_glass',
+
+                '#forge:ingots/energized_steel',
                 'spirit:soul_glass',
-                'spirit:soul_glass',
-                '#forge:gems/niotic',
-                '#forge:gems/niotic',
-                '#forge:gems/niotic',
-                '#forge:gems/niotic'
+                '#forge:ingots/energized_steel',
+                'spirit:soul_glass'
             ],
             entity_to_sacrifice: {
                 tag: 'enigmatica:elementals/water',
@@ -871,25 +894,17 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_craft_fluid_laser_base`
         },
         {
-            output: '4x kubejs:energetic_transference_matrix',
-            activation_item: 'occultism:book_of_binding_bound_djinni',
+            output: 'kubejs:energetic_transference_matrix',
+            activation_item: 'naturesaura:calling_spirit',
             inputs: [
                 'pneumaticcraft:logistics_core',
-                'pneumaticcraft:logistics_core',
-                'pneumaticcraft:logistics_core',
-                'pneumaticcraft:logistics_core',
+                'ae2:quantum_entangled_singularity',
                 'mekanism:teleportation_core',
-                '#forge:gems/blazing',
-                'mekanism:teleportation_core',
-                '#forge:gems/blazing',
-                '#forge:gems/blazing',
-                'mekanism:teleportation_core',
-                '#forge:gems/blazing',
-                'mekanism:teleportation_core'
+                'ae2:quantum_entangled_singularity'
             ],
             ritual_dummy: 'kubejs:ritual_craft_energetic_transference_matrix',
             ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:craft_djinni',
+            pentacle_id: 'occultism:tree_of_life_stage_1',
             duration: 10,
             id: `${id_prefix}ritual_craft_energetic_transference_matrix`
         },
@@ -935,70 +950,20 @@ ServerEvents.recipes((event) => {
                 'naturesaura:calling_spirit',
                 'naturesaura:calling_spirit',
                 'naturesaura:calling_spirit',
-                '#forge:ingots/skies',
+                '#forge:ingots/sky',
                 'ae2:sky_dust',
-                '#forge:ingots/skies',
+                '#forge:ingots/sky',
                 'ae2:sky_dust',
                 'ae2:sky_dust',
-                '#forge:ingots/skies',
+                '#forge:ingots/sky',
                 'ae2:sky_dust',
-                '#forge:ingots/skies'
+                '#forge:ingots/sky'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_1',
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:summon_foliot',
             duration: 60,
             id: `${id_prefix}ritual_tree_of_life_1`
-        },
-        {
-            output: 'kubejs:teleport_everdawn',
-            activation_item: '#forge:gems/sunstone_crystal',
-            inputs: [
-                '#forge:ingots/skies',
-                'naturesaura:gold_leaf',
-                '#forge:essences/air',
-                'naturesaura:gold_leaf',
-
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-                'ae2:sky_dust'
-            ],
-            ritual_dummy: 'kubejs:ritual_teleport_everdawn',
-            ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:tree_of_life_stage_1',
-            duration: 10,
-            id: `${id_prefix}ritual_teleport_everdawn`
-        },
-        {
-            output: 'kubejs:teleport_everbright',
-            activation_item: '#forge:gems/moonstone_crystal',
-            inputs: [
-                '#forge:ingots/skies',
-                'naturesaura:gold_leaf',
-                '#forge:essences/air',
-                'naturesaura:gold_leaf',
-
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-                'ae2:sky_dust',
-                'ae2:sky_dust'
-            ],
-            ritual_dummy: 'kubejs:ritual_teleport_everbright',
-            ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:tree_of_life_stage_1',
-            duration: 10,
-            id: `${id_prefix}ritual_teleport_everbright`
         },
         {
             output: 'kubejs:teleport_nether',
@@ -1085,15 +1050,7 @@ ServerEvents.recipes((event) => {
                 'minecraft:wither_skeleton_skull',
                 'minecraft:wither_skeleton_skull',
                 'spirit:compressed_soul_powder_block',
-                'minecraft:wither_skeleton_skull',
-                '#forge:ingots/soul_steel',
-                '#forge:ingots/soul_steel',
-                '#forge:ingots/soul_steel',
-                '#forge:ingots/soul_steel',
-                '#forge:gems/infused_diamond',
-                '#forge:gems/infused_diamond',
-                '#forge:gems/infused_diamond',
-                '#forge:gems/infused_diamond'
+                'minecraft:wither_skeleton_skull'
             ],
             ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:wither_council_gate", radius:5}`),
             ritual_type: 'occultism:craft',
@@ -1103,7 +1060,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: Item.of('gateways:gate_pearl', `{gateway:"gateways:wilden_grove_gate", radius:5}`),
-            activation_item: 'farmersdelight:honey_glazed_ham_block',
+            activation_item: 'the_bumblezone:royal_jelly_bottle',
             inputs: [
                 'hexerei:blood_bottle',
                 'hexerei:blood_bottle',
@@ -1122,8 +1079,8 @@ ServerEvents.recipes((event) => {
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:summon_greater_evil',
             entity_to_sacrifice: {
-                tag: 'enigmatica:azulfo',
-                display_name: 'ritual.occultism.sacrifice.azulfo'
+                tag: 'enigmatica:deer',
+                display_name: 'ritual.occultism.sacrifice.deer'
             },
             duration: 10,
             id: `${id_prefix}wilden_grove_gate`

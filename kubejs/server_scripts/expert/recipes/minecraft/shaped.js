@@ -50,6 +50,55 @@ ServerEvents.recipes((event) => {
                 B: 'ae2:tiny_tnt'
             },
             id: `${id_prefix}fire_charge`
+        },
+        {
+            output: '9x minecraft:detector_rail',
+            pattern: ['A A', 'ABA', 'ACA'],
+            key: {
+                A: '#forge:rods/osmium',
+                B: 'minecraft:stone_pressure_plate',
+                C: '#forge:dusts/redstone'
+            },
+            id: `${id_prefix}detector_rail_from_osmium`
+        },
+        {
+            output: '3x minecraft:detector_rail',
+            pattern: ['A A', 'ABA', 'ACA'],
+            key: {
+                A: '#forge:rods/bronze',
+                B: 'minecraft:stone_pressure_plate',
+                C: '#forge:dusts/redstone'
+            },
+            id: `${id_prefix}detector_rail_from_bronze`
+        },
+        {
+            output: '9x minecraft:activator_rail',
+            pattern: ['ABA', 'ACA', 'ABA'],
+            key: {
+                A: '#forge:rods/osmium',
+                B: '#forge:rods/wooden',
+                C: 'minecraft:redstone_torch'
+            },
+            id: `${id_prefix}activator_rail_from_osmium`
+        },
+        {
+            output: '3x minecraft:activator_rail',
+            pattern: ['ABA', 'ACA', 'ABA'],
+            key: {
+                A: '#forge:rods/bronze',
+                B: '#forge:rods/wooden',
+                C: 'minecraft:redstone_torch'
+            },
+            id: `${id_prefix}activator_rail_from_bronze`
+        },
+        {
+            output: '8x minecraft:rail',
+            pattern: ['A A', 'ABA', 'A A'],
+            key: {
+                A: '#forge:rods/bronze',
+                B: '#forge:rods/wooden'
+            },
+            id: `${id_prefix}rail_from_bronze`
         }
     ];
 

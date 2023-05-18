@@ -6,19 +6,24 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/mekanism/oxidizing/';
     const recipes = [
         {
-            input: { ingredient: { tag: 'forge:essences/air' } },
             output: { gas: 'mekanism:oxygen', amount: 5000 },
+            input: { ingredient: { tag: 'forge:essences/air' } },
             id: `${id_prefix}oxygen`
         },
         {
-            input: { ingredient: { tag: 'forge:essences/water' } },
             output: { gas: 'mekanism:water_vapor', amount: 5000 },
+            input: { ingredient: { tag: 'forge:essences/water' } },
             id: `${id_prefix}water_vapor`
         },
         {
-            input: { ingredient: { tag: 'forge:gems/source' } },
             output: { gas: 'starbunclemania:source_gas', amount: 5000 },
+            input: { ingredient: { tag: 'forge:gems/source' } },
             id: `${id_prefix}source_gas`
+        },
+        {
+            output: { gas: 'mekanism:sulfur_dioxide', amount: 1000 },
+            input: { ingredient: { tag: 'forge:dusts/sulfur' } },
+            id: `mekanism:oxidizing/sulfur_dioxide`
         }
     ];
 
