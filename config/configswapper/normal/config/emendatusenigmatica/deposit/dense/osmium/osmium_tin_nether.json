@@ -2,14 +2,14 @@
     "type": "emendatusenigmatica:dense_deposit",
     "dimension": "minecraft:the_nether",
     "biomes": [],
-    "registryName": "dense_osmium_nether",
+    "registryName": "dense_osmium_tin_nether",
     "config": {
         "blocks": [
-            {"material": "osmium", "weight": 75},
+            {"material": "osmium", "weight": 72},
             {"material": "tin", "weight": 20},
-            {"block": "minecraft:lava", "weight": 5}
+            {"block": "minecraft:magma_block", "weight": 8}
         ],
-        "chance": 45,
+        "chance": 2,
         "size": 30,
         "rarity": "common",
         "minYLevel": 10,
