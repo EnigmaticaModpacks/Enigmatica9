@@ -47,7 +47,7 @@ ServerEvents.recipes((event) => {
                 {
                     type: 'drop_item',
                     item: 'kubejs:dim_arcanite_crystal',
-                    count: 2
+                    count: 4
                 }
             ],
             id: `${id_prefix}dim_arcanite_crystal`

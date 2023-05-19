@@ -678,6 +678,27 @@ ServerEvents.recipes((event) => {
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 333,
             id: `hexerei:infused_fabric_from_mixing_cauldron`
+        },
+        {
+            output: 'kubejs:bright_arcanite_crystal',
+            inputs: [
+                'kubejs:dim_arcanite_crystal',
+                'kubejs:sylvanite',
+                '#forge:dusts/lithium',
+                'kubejs:sylvanite',
+                '#forge:dusts/lithium',
+                'kubejs:sylvanite',
+                '#forge:dusts/lithium',
+                'kubejs:sylvanite'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:shock_potion' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:shock_potion' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}bright_arcanite_crystal`
         }
     ];
 

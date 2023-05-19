@@ -59,17 +59,6 @@ ServerEvents.recipes((event) => {
             inputs: ['powah:blank_card', '#forge:gems/carminite'],
             energy: '12000000',
             id: `${id_prefix}binding_card`
-        },
-        {
-            output: '4x kubejs:dim_arcanite_crystal',
-            inputs: [
-                '#forge:storage_blocks/source',
-                '#forge:gems/carminite',
-                '#forge:gems/carminite',
-                '#forge:gems/carminite'
-            ],
-            energy: '50000',
-            id: `${id_prefix}dim_arcanite_crystal`
         }
     ];
 
