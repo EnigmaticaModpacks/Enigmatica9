@@ -1027,31 +1027,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_tree_of_life_4`
         },
         {
-            output: 'kubejs:teleport_overworld',
-            activation_item: 'create:honeyed_apple',
-            inputs: [
-                '#forge:honeycombs',
-                '#forge:honeycombs',
-                '#forge:honeycombs',
-                '#forge:honeycombs',
-
-                '#minecraft:small_flowers',
-                '#minecraft:small_flowers',
-                '#minecraft:small_flowers',
-                '#minecraft:small_flowers',
-
-                '#minecraft:small_flowers',
-                '#minecraft:small_flowers',
-                '#minecraft:small_flowers',
-                '#minecraft:small_flowers'
-            ],
-            ritual_dummy: 'kubejs:ritual_teleport_overworld',
-            ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:tree_of_life_stage_2',
-            duration: 10,
-            id: `${id_prefix}ritual_teleport_overworld`
-        },
-        {
             output: 'kubejs:teleport_nether',
             activation_item: '#forge:nether_stars',
             inputs: [

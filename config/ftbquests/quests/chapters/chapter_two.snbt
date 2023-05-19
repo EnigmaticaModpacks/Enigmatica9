@@ -681,8 +681,9 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: 4.0d
+			x: 6.0d
+			y: 8.0d
+			shape: "hexagon"
 			description: [""]
 			dependencies: ["2759988A5B69A455"]
 			id: "2502B63BAC6868B6"
@@ -698,7 +699,7 @@
 			title: "Tree of Life"
 			icon: "kubejs:tree_of_life_2"
 			x: 6.5d
-			y: 3.0d
+			y: 7.0d
 			shape: "hexagon"
 			description: [
 				"As a boon for services rendered, the Queen grants safe passage to another realm. "
