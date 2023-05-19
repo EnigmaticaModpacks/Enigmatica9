@@ -681,30 +681,15 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 8.0d
-			shape: "hexagon"
-			description: [""]
-			dependencies: ["2759988A5B69A455"]
-			id: "2502B63BAC6868B6"
-			tasks: [{
-				id: "31CF8795E8EF100E"
-				type: "dimension"
-				title: "Visit the Overworld"
-				icon: "supplementaries:globe"
-				dimension: "minecraft:overworld"
-			}]
-		}
-		{
 			title: "Tree of Life"
 			icon: "kubejs:tree_of_life_2"
 			x: 6.5d
-			y: 7.0d
+			y: 3.0d
 			shape: "hexagon"
 			description: [
-				"As a boon for services rendered, the Queen grants safe passage to another realm. "
+				"As a boon for services rendered, the Queen grants safe passage to a lush realm of plenty."
 				""
-				"Nourish the Tree of Life with their gifts and travel to the Overworld. "
+				"Nourish the Tree of Life with their gifts and travel to the Overworld in search of more answers in restoring the Tree."
 				""
 				"================================="
 				""
@@ -717,6 +702,27 @@
 				id: "3D2248A91782812B"
 				type: "item"
 				item: "quark:ancient_fruit"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 4.0d
+			shape: "hexagon"
+			description: [
+				"With items attuned to the destination it is now possible to travel to the Overworld."
+				""
+				"================================="
+				""
+				"Look for &2Ritual Teleport Overworld&r in JEI to find the recipe for the teleportation ritual to visit the Overworld."
+			]
+			dependencies: ["2759988A5B69A455"]
+			id: "356B7D1DFF632DBD"
+			tasks: [{
+				id: "38380859B691C3D0"
+				type: "dimension"
+				title: "The Overworld"
+				icon: "supplementaries:globe"
+				dimension: "minecraft:overworld"
 			}]
 		}
 	]
