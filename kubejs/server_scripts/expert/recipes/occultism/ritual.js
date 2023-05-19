@@ -1031,9 +1031,9 @@ ServerEvents.recipes((event) => {
             activation_item: 'create:honeyed_apple',
             inputs: [
                 '#forge:honeycombs',
-                '#forge:honeycombs',
-                '#forge:honeycombs',
-                '#forge:honeycombs',
+                'naturesaura:gold_leaf',
+                '#forge:pollen',
+                'naturesaura:gold_leaf',
 
                 '#minecraft:small_flowers',
                 '#minecraft:small_flowers',
