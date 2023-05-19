@@ -9,7 +9,7 @@
 	#Description for the Advancements
 	description = "Obtain a %item%"
 	#Comma seperated list of items that when crafted unlock the corresponding dimension
-	craftitems = "naturesaura:tainted_gold,minecraft:ender_eye,minecraft:nether_star"
+	craftitems = "emendatusenigmatica:tainted_gold_ingot,minecraft:ender_eye,the_bumblezone:essence_of_the_bees"
 	#Comma seperated list of Dimension Resource Names
 	dimresname = "minecraft:the_nether,minecraft:the_end,minecraft:overworld"
 	#Comma seperated list of Dimension Display Names

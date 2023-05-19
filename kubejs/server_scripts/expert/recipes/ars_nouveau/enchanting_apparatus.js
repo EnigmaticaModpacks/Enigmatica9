@@ -634,6 +634,23 @@ ServerEvents.recipes((event) => {
             reagents: ['mekanism:laser'],
             sourceCost: 10000,
             id: `${id_prefix}supercharged_coil`
+        },
+        {
+            output: '2x minecraft:enchanted_book',
+            inputs: [
+                'occultism:book_of_binding_bound_foliot',
+                'supplementaries:antique_ink',
+                'minecraft:echo_shard',
+                'quark:rainbow_rune',
+                'quark:rainbow_rune',
+                'quark:rainbow_rune',
+                'quark:rainbow_rune',
+                'quark:rainbow_rune'
+            ],
+            reagents: ['minecraft:enchanted_book'],
+            sourceCost: 10000,
+            keepNbtOfReagent: true,
+            id: `${id_prefix}enchanted_book_clone`
         }
     ];
 

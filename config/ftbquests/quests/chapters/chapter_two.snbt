@@ -18,7 +18,7 @@
 				id: "1B464D1BB138C06B"
 				type: "dimension"
 				title: "Visit the Nether"
-				icon: "minecraft:warped_fungus"
+				icon: "minecraft:crimson_fungus"
 				dimension: "minecraft:the_nether"
 			}]
 		}
@@ -678,6 +678,44 @@
 				id: "4CCF04553715833F"
 				type: "item"
 				item: "emendatusenigmatica:invar_ingot"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 4.0d
+			description: [""]
+			dependencies: ["2759988A5B69A455"]
+			id: "2502B63BAC6868B6"
+			tasks: [{
+				id: "31CF8795E8EF100E"
+				type: "dimension"
+				title: "Visit the Overworld"
+				icon: "supplementaries:globe"
+				dimension: "minecraft:overworld"
+			}]
+		}
+		{
+			title: "Tree of Life"
+			icon: "kubejs:tree_of_life_2"
+			x: 6.5d
+			y: 3.0d
+			shape: "hexagon"
+			description: [
+				"As a boon for services rendered, the Queen grants safe passage to another realm. "
+				""
+				"Nourish the Tree of Life with their gifts and travel to the Overworld. "
+				""
+				"================================="
+				""
+				"Look for &aTree of Life 2&r in JEI to find the recipe for growing the Tree to the next stage."
+			]
+			hide_dependency_lines: true
+			dependencies: ["71D9A268FF98E954"]
+			id: "2759988A5B69A455"
+			tasks: [{
+				id: "3D2248A91782812B"
+				type: "item"
+				item: "quark:ancient_fruit"
 			}]
 		}
 	]

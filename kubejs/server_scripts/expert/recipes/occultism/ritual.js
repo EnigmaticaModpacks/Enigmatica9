@@ -966,6 +966,92 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_tree_of_life_1`
         },
         {
+            output: Item.of('kubejs:tree_of_life_2', { aura_amount: 200000, aura_max: 1000000 }),
+            activation_item: 'quark:ancient_fruit',
+            inputs: [
+                'kubejs:spirit_of_devotion',
+                'kubejs:spirit_of_devotion',
+                'kubejs:spirit_of_devotion',
+                'kubejs:spirit_of_devotion',
+                'the_bumblezone:glistering_honey_crystal',
+                'thermal:phyto_tnt',
+                'the_bumblezone:glistering_honey_crystal',
+                'thermal:phyto_tnt',
+                'thermal:phyto_tnt',
+                'the_bumblezone:glistering_honey_crystal',
+                'thermal:phyto_tnt',
+                'the_bumblezone:glistering_honey_crystal'
+            ],
+            ritual_dummy: 'kubejs:ritual_tree_of_life_2',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:tree_of_life_stage_1',
+            duration: 60,
+            id: `${id_prefix}ritual_tree_of_life_2`
+        },
+        {
+            output: Item.of('kubejs:tree_of_life_3', { aura_amount: 500000, aura_max: 1500000 }),
+            activation_item: 'twilightforest:rainbow_oak_sapling',
+            inputs: [
+                'kubejs:spirit_of_devotion',
+                'kubejs:spirit_of_devotion',
+                'kubejs:spirit_of_devotion',
+                'kubejs:spirit_of_devotion',
+                '#forge:ingots/tainted_gold',
+                'thermal:phyto_tnt',
+                '#forge:ingots/tainted_gold',
+                'thermal:phyto_tnt',
+                'thermal:phyto_tnt',
+                '#forge:ingots/tainted_gold',
+                'thermal:phyto_tnt',
+                '#forge:ingots/tainted_gold'
+            ],
+            ritual_dummy: 'kubejs:ritual_tree_of_life_3',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:tree_of_life_stage_2',
+            duration: 60,
+            id: `${id_prefix}ritual_tree_of_life_3`
+        },
+        {
+            output: Item.of('kubejs:tree_of_life_4', { aura_amount: 4000000, aura_max: 4000000 }),
+            activation_item: 'twilightforest:rainbow_oak_sapling',
+            inputs: [
+                '#forge:storage_blocks/iesnium',
+                '#forge:storage_blocks/iesnium',
+                '#forge:storage_blocks/iesnium',
+                '#forge:storage_blocks/iesnium'
+            ],
+            ritual_dummy: 'kubejs:ritual_tree_of_life_4',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:tree_of_life_stage_3',
+            duration: 60,
+            id: `${id_prefix}ritual_tree_of_life_4`
+        },
+        {
+            output: 'kubejs:teleport_overworld',
+            activation_item: 'create:honeyed_apple',
+            inputs: [
+                '#forge:honeycombs',
+                '#forge:honeycombs',
+                '#forge:honeycombs',
+                '#forge:honeycombs',
+
+                '#minecraft:small_flowers',
+                '#minecraft:small_flowers',
+                '#minecraft:small_flowers',
+                '#minecraft:small_flowers',
+
+                '#minecraft:small_flowers',
+                '#minecraft:small_flowers',
+                '#minecraft:small_flowers',
+                '#minecraft:small_flowers'
+            ],
+            ritual_dummy: 'kubejs:ritual_teleport_overworld',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:tree_of_life_stage_2',
+            duration: 10,
+            id: `${id_prefix}ritual_teleport_overworld`
+        },
+        {
             output: 'kubejs:teleport_nether',
             activation_item: '#forge:nether_stars',
             inputs: [
@@ -989,59 +1075,6 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:tree_of_life_stage_2',
             duration: 10,
             id: `${id_prefix}ritual_teleport_nether`
-        },
-        {
-            output: Item.of('kubejs:tree_of_life_2', { aura_amount: 200000, aura_max: 1000000 }),
-            activation_item: 'quark:ancient_fruit',
-            inputs: [
-                'kubejs:spirit_of_devotion',
-                'kubejs:spirit_of_devotion',
-                'kubejs:spirit_of_devotion',
-                'kubejs:spirit_of_devotion',
-                '#forge:ingots/tainted_gold',
-                'thermal:phytogro',
-                '#forge:ingots/tainted_gold',
-                'thermal:phytogro',
-                'thermal:phytogro',
-                '#forge:ingots/tainted_gold',
-                'thermal:phytogro',
-                '#forge:ingots/tainted_gold'
-            ],
-            ritual_dummy: 'kubejs:ritual_tree_of_life_2',
-            ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:tree_of_life_stage_1',
-            duration: 60,
-            id: `${id_prefix}ritual_tree_of_life_2`
-        },
-        {
-            output: Item.of('kubejs:tree_of_life_3', { aura_amount: 500000, aura_max: 1500000 }),
-            activation_item: 'twilightforest:rainbow_oak_sapling',
-            inputs: [
-                '#forge:storage_blocks/iesnium',
-                '#forge:storage_blocks/iesnium',
-                '#forge:storage_blocks/iesnium',
-                '#forge:storage_blocks/iesnium'
-            ],
-            ritual_dummy: 'kubejs:ritual_tree_of_life_3',
-            ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:tree_of_life_stage_2',
-            duration: 60,
-            id: `${id_prefix}ritual_tree_of_life_3`
-        },
-        {
-            output: Item.of('kubejs:tree_of_life_4', { aura_amount: 4000000, aura_max: 4000000 }),
-            activation_item: 'twilightforest:rainbow_oak_sapling',
-            inputs: [
-                '#forge:storage_blocks/iesnium',
-                '#forge:storage_blocks/iesnium',
-                '#forge:storage_blocks/iesnium',
-                '#forge:storage_blocks/iesnium'
-            ],
-            ritual_dummy: 'kubejs:ritual_tree_of_life_4',
-            ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:tree_of_life_stage_3',
-            duration: 60,
-            id: `${id_prefix}ritual_tree_of_life_4`
         },
         {
             output: Item.of('gateways:gate_pearl', `{gateway:"gateways:wither_council_gate", radius:5}`),
