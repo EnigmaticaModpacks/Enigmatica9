@@ -9,7 +9,7 @@
             {"material": "tin", "weight": 20},
             {"block": "minecraft:magma_block", "weight": 8}
         ],
-        "chance": 2,
+        "chance": 1,
         "size": 30,
         "rarity": "common",
         "minYLevel": 10,
