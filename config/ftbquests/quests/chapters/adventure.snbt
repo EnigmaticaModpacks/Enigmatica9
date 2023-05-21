@@ -34,7 +34,7 @@
 		{
 			title: "Oh, The Biomes You'll Go"
 			x: -1.5d
-			y: 0.5d
+			y: 1.0d
 			subtitle: "It's opener out there, in the wide open air."
 			description: [
 				"Like what you see? Oh, the Biomes You’ll go adds a plethora of beautiful new biomes to spruce up your world. "
@@ -56,7 +56,7 @@
 		}
 		{
 			x: 1.5d
-			y: 0.5d
+			y: 1.0d
 			subtitle: "We're not lost, we're right here on this very spot."
 			description: [
 				"Trouble finding your way? Need to find a new desert for some good old-fashioned sand gathering? Maybe a new place to call home, instead?"
@@ -80,40 +80,7 @@
 			}]
 		}
 		{
-			title: "Blue Skies"
-			icon: "blue_skies:everbright_portal"
-			x: 1.5d
-			y: 2.5d
-			description: [
-				"Travel to the Everdawn and Everbright to explore new wonders and face deadly foes."
-				""
-				"Locate a Gatekeeper in the Overworld to purchase a Zeal Lighter. This can be used to light the portal they’ll have hidden in their home. "
-			]
-			id: "1866817CD295C0B2"
-			tasks: [
-				{
-					id: "6CC661D03D43EC52"
-					type: "advancement"
-					title: "Everdawn"
-					advancement: "blue_skies:everbright/enter"
-					criterion: ""
-				}
-				{
-					id: "2905AE1D443C185B"
-					type: "advancement"
-					title: "Everbright"
-					advancement: "blue_skies:everdawn/enter"
-					criterion: ""
-				}
-			]
-			rewards: [{
-				id: "4C2D9629836131D3"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: -1.5d
+			x: -1.0d
 			y: 2.5d
 			description: [
 				"Travel to a world swathed in shadow, where frightful beasts call home. Fortune favors the bold! "
@@ -136,8 +103,8 @@
 		}
 		{
 			title: "The Bumblezone"
-			x: 0.0d
-			y: 3.0d
+			x: 1.0d
+			y: 2.5d
 			description: ["The world of bees is vaster than one might imagine. Throw an Ender Pearl into a hive to see just what’s waiting on the other side. "]
 			id: "03AC8543D6A41D0D"
 			tasks: [{

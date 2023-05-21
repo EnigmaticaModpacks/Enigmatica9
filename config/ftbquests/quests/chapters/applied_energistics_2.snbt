@@ -991,7 +991,7 @@
 				id: "695BE08F1A558DCA"
 				type: "item"
 				title: "Any Raw Materials"
-				icon: "emendatusenigmatica:raw_copper"
+				icon: "minecraft:raw_copper"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
