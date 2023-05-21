@@ -14,7 +14,7 @@
       "byg_magmatic_stone",
       "byg_scoria_stone"
     ],
-    "chance": 18,
+    "chance": 27,
     "size": 13,
     "minYLevel": 0,
     "maxYLevel": 128,

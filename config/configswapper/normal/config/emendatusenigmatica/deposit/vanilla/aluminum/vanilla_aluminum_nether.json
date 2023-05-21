@@ -14,11 +14,11 @@
       "byg_magmatic_stone",
       "byg_scoria_stone"
     ],
-    "chance": 10,
+    "chance": 11,
     "size": 13,
     "minYLevel": 5,
     "maxYLevel": 118,
     "placement": "uniform",
     "rarity": "common"
   }
-  }
+}

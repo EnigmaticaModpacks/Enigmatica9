@@ -7,7 +7,7 @@
         "blocks": [
             {"material": "quartz", "weight": 100}
         ],
-        "chance": 2,
+        "chance": 15,
         "size": 12,
         "rarity": "common",
         "minYLevel": 60,
