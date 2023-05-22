@@ -34,7 +34,6 @@ const ritual_effects = {
         }
     },
     teleport_nether: {
-        // Note to Motoko: Due to pending removal of Blue_Skies, this require a change I can't do myself ^^"
         teleport: {
             // Where are we going?
             arrival: 'minecraft:the_nether',

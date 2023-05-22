@@ -198,7 +198,6 @@ EntityEvents.spawned((event) => {
                         schedule.server.runCommandSilent(command);
                     }
 
-                    // Note to Motoko: Due to pending removal of Blue_Skies, this require a change I can't do myself ^^"
                     if (index % Math.floor(coordinates.length / num_points) === 0) {
                         command = `/execute in ${ritual_dimension} run playsound quark:ambient.cave block @p ${coord.x} ${coord.y} ${coord.z} 2 1`;
                         schedule.server.runCommandSilent(command);
@@ -384,7 +383,6 @@ EntityEvents.spawned((event) => {
 
                 delay = start_delay + 0.5 * block.pos[1];
                 event.server.scheduleInTicks(delay, (schedule) => {
-                // Note to Motoko: Due to pending removal of Blue_Skies, this require a change I can't do myself ^^"
                     if (palette.Name !== 'minecraft:air') {
                         command = `/execute in ${ritual_dimension} run particle byg:cherry_blossom_fall_white ${coord.x} ${coord.y} ${coord.z} 0.5 0.5 0.5 0.1 1`;
                         schedule.server.runCommandSilent(command);
