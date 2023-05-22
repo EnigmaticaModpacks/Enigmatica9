@@ -36,6 +36,9 @@ function auto_fortune(material, properties, event, id_prefix) {
     let raw_itemStack = AlmostUnified.getPreferredItemForTag(`forge:raw_materials/${material}`);
     if (raw_itemStack.isEmpty()) {
         raw_itemStack = Item.of(Ingredient.of(`#forge:raw_materials/${material}`).getItemIds()[0]);
+        if (raw_itemStack.isEmpty() || raw_itemStack.getId() == "minecraft:barrier") {
+            raw_itemStack = null;
+        }
         if (localDebug) {
             if (crushed_ore_itemStack == null) {
                 console.error(
@@ -217,7 +220,9 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     }
     if (ingot_itemStack.isEmpty()) {
         ingot_itemStack = Item.of(Ingredient.of(`#forge:ingots/${material}`).getItemIds()[0]);
-        ingot_itemStack = (ingot_itemStack.isEmpty() || ingot_itemStack.getId() == "minecraft:barrier")? null: ingot_itemStack;
+        if (ingot_itemStack.isEmpty() || ingot_itemStack.getId() == "minecraft:barrier") {
+            ingot_itemStack = null;
+        }
         if (localDebug) {
             if (ingot_itemStack == null) {
                 console.error(
@@ -236,7 +241,9 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     }
     if (nugget_itemStack.isEmpty()) {
         nugget_itemStack = Item.of(Ingredient.of(`#forge:nuggets/${material}`).getItemIds()[0]);
-        nugget_itemStack = (nugget_itemStack.isEmpty() || nugget_itemStack.getId() == "minecraft:barrier")? null: nugget_itemStack;
+        if (nugget_itemStack.isEmpty() || nugget_itemStack.getId() == "minecraft:barrier") {
+            nugget_itemStack = null;
+        }
         if (localDebug) {
             if (nugget_itemStack == null) {
                 console.error(
@@ -255,7 +262,9 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     }
     if (dust_itemStack.isEmpty()) {
         dust_itemStack = Item.of(Ingredient.of(`#forge:dusts/${material}`).getItemIds()[0]);
-        dust_itemStack = (dust_itemStack.isEmpty() || dust_itemStack.getId() == "minecraft:barrier")? null: dust_itemStack;
+        if (dust_itemStack.isEmpty() || dust_itemStack.getId() == "minecraft:barrier") {
+            dust_itemStack = null;
+        }
         if (localDebug) {
             if (dust_itemStack == null) {
                 console.error(
@@ -274,7 +283,9 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     }
     if (shard_itemStack.isEmpty()) {
         shard_itemStack = Item.of(Ingredient.of(`#mekanism:shards${material}`).getItemIds()[0]);
-        shard_itemStack = (shard_itemStack.isEmpty() || shard_itemStack.getId() == "minecraft:barrier")? null: shard_itemStack;
+        if (shard_itemStack.isEmpty() || shard_itemStack.getId() == "minecraft:barrier") {
+            shard_itemStack = null;
+        }
         if (localDebug) {
             if (shard_itemStack == null) {
                 console.error(
@@ -293,7 +304,9 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     }
     if (clump_itemStack.isEmpty()) {
         clump_itemStack = Item.of(Ingredient.of(`#mekanism:clumps/${material}`).getItemIds()[0]);
-        clump_itemStack = (clump_itemStack.isEmpty() || clump_itemStack.getId() == "minecraft:barrier")? null: clump_itemStack;
+        if (clump_itemStack.isEmpty() || clump_itemStack.getId() == "minecraft:barrier") { 
+            clump_itemStack = null;
+        }
         if (localDebug) {
             if (clump_itemStack == null) {
                 console.error(
@@ -720,7 +733,9 @@ function gem_ore_processing(material, properties, event, id_prefix) {
             output_itemStack = AlmostUnified.getPreferredItemForTag(`forge:dusts/${material}`);
             if (output_itemStack.isEmpty()) {
                 output_itemStack = Item.of(Ingredient.of(`#forge:dusts/${material}`).getItemIds()[0]);
-                output_itemStack = (output_itemStack.isEmpty() || output_itemStack.getId() == "minecraft:barrier")? null: output_itemStack;
+                if (output_itemStack.isEmpty() || output_itemStack.getId() == "minecraft:barrier") {
+                    output_itemStack = null;
+                }
                 if (localDebug) {
                     if (output_itemStack == null) {
                         console.error(
@@ -742,7 +757,9 @@ function gem_ore_processing(material, properties, event, id_prefix) {
             output_itemStack = AlmostUnified.getPreferredItemForTag(`forge:gems/${material}`);
             if (output_itemStack.isEmpty()) {
                 output_itemStack = Item.of(Ingredient.of(`#forge:gems/${material}`).getItemIds()[0]);
-                output_itemStack = (output_itemStack.isEmpty() || output_itemStack.getId() == "minecraft:barrier")? null: output_itemStack;
+                if (output_itemStack.isEmpty() || output_itemStack.getId() == "minecraft:barrier") {
+                    output_itemStack = null;
+                }
                 if (localDebug) {
                     if (output_itemStack == null) {
                         console.error(
