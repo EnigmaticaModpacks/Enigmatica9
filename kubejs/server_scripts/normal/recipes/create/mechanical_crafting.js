@@ -24,7 +24,7 @@ ServerEvents.recipes((event) => {
                 I: { tag: 'forge:plates/iron' },
                 R: { tag: 'forge:rods/iron' },
                 S: { item: 'immersiveengineering:coil_lv' },
-                A: { tag: 'forge:ingots/andesite' },
+                A: { tag: 'forge:ingots/andesite' }
             },
             result: { item: 'createaddition:alternator' },
             id: `${id_prefix}alternator`

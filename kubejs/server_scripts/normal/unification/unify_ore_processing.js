@@ -36,7 +36,7 @@ function auto_fortune(material, properties, event, id_prefix) {
     let raw_itemStack = AlmostUnified.getPreferredItemForTag(`forge:raw_materials/${material}`);
     if (raw_itemStack.isEmpty()) {
         raw_itemStack = Item.of(Ingredient.of(`#forge:raw_materials/${material}`).getItemIds()[0]);
-        if (raw_itemStack.isEmpty() || raw_itemStack.getId() == "minecraft:barrier") {
+        if (raw_itemStack.isEmpty() || raw_itemStack.getId() == 'minecraft:barrier') {
             raw_itemStack = null;
         }
         if (localDebug) {
@@ -45,7 +45,7 @@ function auto_fortune(material, properties, event, id_prefix) {
                     ' // Ore Processing Rework // Material "' +
                         material +
                         '" does not have an item for main output (Raw Ore) for Auto Fortune!'
-                )
+                );
             } else {
                 console.warn(
                     ' // Ore Processing Rework // Material "' +
@@ -199,7 +199,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     // Fallback output checks:
     if (crushed_ore_itemStack.isEmpty()) {
         crushed_ore_itemStack = Item.of(Ingredient.of(`#create:crushed_ores/${material}`).getItemIds()[0]);
-        if (crushed_ore_itemStack.isEmpty() || crushed_ore_itemStack.getId() == "minecraft:barrier") {
+        if (crushed_ore_itemStack.isEmpty() || crushed_ore_itemStack.getId() == 'minecraft:barrier') {
             crushed_ore_itemStack = null;
         }
         if (localDebug) {
@@ -208,7 +208,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
                     ' // Ore Processing Rework // Material "' +
                         material +
                         '" does not have an item for secondary (Crushed Ore) for metal processing!'
-                )
+                );
             } else {
                 console.warn(
                     ' // Ore Processing Rework // Material "' +
@@ -220,7 +220,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     }
     if (ingot_itemStack.isEmpty()) {
         ingot_itemStack = Item.of(Ingredient.of(`#forge:ingots/${material}`).getItemIds()[0]);
-        if (ingot_itemStack.isEmpty() || ingot_itemStack.getId() == "minecraft:barrier") {
+        if (ingot_itemStack.isEmpty() || ingot_itemStack.getId() == 'minecraft:barrier') {
             ingot_itemStack = null;
         }
         if (localDebug) {
@@ -229,7 +229,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
                     ' // Ore Processing Rework // Material "' +
                         material +
                         '" does not have an item for secondary (Ingot) for metal processing!'
-                )
+                );
             } else {
                 console.warn(
                     ' // Ore Processing Rework // Material "' +
@@ -241,7 +241,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     }
     if (nugget_itemStack.isEmpty()) {
         nugget_itemStack = Item.of(Ingredient.of(`#forge:nuggets/${material}`).getItemIds()[0]);
-        if (nugget_itemStack.isEmpty() || nugget_itemStack.getId() == "minecraft:barrier") {
+        if (nugget_itemStack.isEmpty() || nugget_itemStack.getId() == 'minecraft:barrier') {
             nugget_itemStack = null;
         }
         if (localDebug) {
@@ -250,7 +250,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
                     ' // Ore Processing Rework // Material "' +
                         material +
                         '" does not have an item for secondary (Nugget) for metal processing!'
-                )
+                );
             } else {
                 console.warn(
                     ' // Ore Processing Rework // Material "' +
@@ -262,7 +262,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     }
     if (dust_itemStack.isEmpty()) {
         dust_itemStack = Item.of(Ingredient.of(`#forge:dusts/${material}`).getItemIds()[0]);
-        if (dust_itemStack.isEmpty() || dust_itemStack.getId() == "minecraft:barrier") {
+        if (dust_itemStack.isEmpty() || dust_itemStack.getId() == 'minecraft:barrier') {
             dust_itemStack = null;
         }
         if (localDebug) {
@@ -271,7 +271,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
                     ' // Ore Processing Rework // Material "' +
                         material +
                         '" does not have an item for secondary (Dust) for metal processing!'
-                )
+                );
             } else {
                 console.warn(
                     ' // Ore Processing Rework // Material "' +
@@ -283,7 +283,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     }
     if (shard_itemStack.isEmpty()) {
         shard_itemStack = Item.of(Ingredient.of(`#mekanism:shards${material}`).getItemIds()[0]);
-        if (shard_itemStack.isEmpty() || shard_itemStack.getId() == "minecraft:barrier") {
+        if (shard_itemStack.isEmpty() || shard_itemStack.getId() == 'minecraft:barrier') {
             shard_itemStack = null;
         }
         if (localDebug) {
@@ -292,7 +292,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
                     ' // Ore Processing Rework // Material "' +
                         material +
                         '" does not have an item for secondary (Shard) for metal processing!'
-                )
+                );
             } else {
                 console.warn(
                     ' // Ore Processing Rework // Material "' +
@@ -304,7 +304,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     }
     if (clump_itemStack.isEmpty()) {
         clump_itemStack = Item.of(Ingredient.of(`#mekanism:clumps/${material}`).getItemIds()[0]);
-        if (clump_itemStack.isEmpty() || clump_itemStack.getId() == "minecraft:barrier") { 
+        if (clump_itemStack.isEmpty() || clump_itemStack.getId() == 'minecraft:barrier') {
             clump_itemStack = null;
         }
         if (localDebug) {
@@ -313,7 +313,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
                     ' // Ore Processing Rework // Material "' +
                         material +
                         '" does not have an item for secondary (Clump) for metal processing!'
-                )
+                );
             } else {
                 console.warn(
                     ' // Ore Processing Rework // Material "' +
@@ -324,7 +324,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
         }
     }
     Object.keys(secondaries).forEach((secondary) => {
-        if (secondary != "material" && secondaries[secondary].isEmpty()) {
+        if (secondary != 'material' && secondaries[secondary].isEmpty()) {
             switch (secondary) {
                 case 'crushed_ore_itemStack':
                     secondaries[secondary] = Item.of(
@@ -332,18 +332,26 @@ function metal_ore_processing(material, properties, event, id_prefix) {
                     );
                     break;
                 case 'ingot_itemStack':
-                    secondaries[secondary] = Item.of(Ingredient.of(`#forge:ingots/${secondaries[secondary].material}`).getItemIds()[0]);
+                    secondaries[secondary] = Item.of(
+                        Ingredient.of(`#forge:ingots/${secondaries[secondary].material}`).getItemIds()[0]
+                    );
                     break;
                 case 'nugget_itemStack':
-                    secondaries[secondary] = Item.of(Ingredient.of(`#forge:nuggets/${secondaries[secondary].material}`).getItemIds()[0]);
+                    secondaries[secondary] = Item.of(
+                        Ingredient.of(`#forge:nuggets/${secondaries[secondary].material}`).getItemIds()[0]
+                    );
                     break;
                 case 'dust_itemStack':
-                    secondaries[secondary] = Item.of(Ingredient.of(`#forge:dusts/${secondaries[secondary].material}`).getItemIds()[0]);
+                    secondaries[secondary] = Item.of(
+                        Ingredient.of(`#forge:dusts/${secondaries[secondary].material}`).getItemIds()[0]
+                    );
                     break;
             }
             if (localDebug)
                 console.warn(
-                    `// Ore Processing Rework // Material "${material}" uses fallback output for its secondary "${properties[material].oreProcessing.output.secondary}" (${secondary} // ${secondaries[secondary].getId()}) for metal processing!`
+                    `// Ore Processing Rework // Material "${material}" uses fallback output for its secondary "${
+                        properties[material].oreProcessing.output.secondary
+                    }" (${secondary} // ${secondaries[secondary].getId()}) for metal processing!`
                 );
         }
     });
@@ -371,7 +379,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
             item: 'create:experience_nugget',
             chance: 0.75
         });
-        recipes.push(recipe);    
+        recipes.push(recipe);
     }
 
     // Raw Ore Block crushing
@@ -733,7 +741,7 @@ function gem_ore_processing(material, properties, event, id_prefix) {
             output_itemStack = AlmostUnified.getPreferredItemForTag(`forge:dusts/${material}`);
             if (output_itemStack.isEmpty()) {
                 output_itemStack = Item.of(Ingredient.of(`#forge:dusts/${material}`).getItemIds()[0]);
-                if (output_itemStack.isEmpty() || output_itemStack.getId() == "minecraft:barrier") {
+                if (output_itemStack.isEmpty() || output_itemStack.getId() == 'minecraft:barrier') {
                     output_itemStack = null;
                 }
                 if (localDebug) {
@@ -742,7 +750,7 @@ function gem_ore_processing(material, properties, event, id_prefix) {
                             ' // Ore Processing Rework // Material "' +
                                 material +
                                 '" does not have an item for main output (Dust) for gem processing!'
-                        )
+                        );
                     } else {
                         console.warn(
                             ' // Ore Processing Rework // Material "' +
@@ -757,7 +765,7 @@ function gem_ore_processing(material, properties, event, id_prefix) {
             output_itemStack = AlmostUnified.getPreferredItemForTag(`forge:gems/${material}`);
             if (output_itemStack.isEmpty()) {
                 output_itemStack = Item.of(Ingredient.of(`#forge:gems/${material}`).getItemIds()[0]);
-                if (output_itemStack.isEmpty() || output_itemStack.getId() == "minecraft:barrier") {
+                if (output_itemStack.isEmpty() || output_itemStack.getId() == 'minecraft:barrier') {
                     output_itemStack = null;
                 }
                 if (localDebug) {
@@ -766,7 +774,7 @@ function gem_ore_processing(material, properties, event, id_prefix) {
                             ' // Ore Processing Rework // Material "' +
                                 material +
                                 '" does not have an item for main output (Gem) for gem processing!'
-                        )
+                        );
                     } else {
                         console.warn(
                             ' // Ore Processing Rework // Material "' +
