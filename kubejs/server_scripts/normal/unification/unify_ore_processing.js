@@ -196,7 +196,9 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     // Fallback output checks:
     if (crushed_ore_itemStack.isEmpty()) {
         crushed_ore_itemStack = Item.of(Ingredient.of(`#create:crushed_ores/${material}`).getItemIds()[0]);
-        crushed_ore_itemStack = (crushed_ore_itemStack.isEmpty() || crushed_ore_itemStack.getId() == "minecraft:barrier")? null: crushed_ore_itemStack;
+        if (crushed_ore_itemStack.isEmpty() || crushed_ore_itemStack.getId() == "minecraft:barrier") {
+            crushed_ore_itemStack = null;
+        }
         if (localDebug) {
             if (crushed_ore_itemStack == null) {
                 console.error(
