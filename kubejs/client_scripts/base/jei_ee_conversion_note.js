@@ -8,7 +8,7 @@ JEIEvents.information((event) => {
     const materials = ["copper", "iron", "gold", "diamond", "emerald", "netherite"]
     const types = ["ingot", "nugget", "block"]
     const conversion_message = [
-        Text.of("This item is going to be removed in the coming updates!").red(),
+        Text.of("This item is going to be removed in the near future.").red(),
         " ",
         Text.of("Please convert it to vanilla variant before updating your instance.").red()
     ]
