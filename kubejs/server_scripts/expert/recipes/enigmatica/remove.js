@@ -82,8 +82,6 @@ ServerEvents.recipes((event) => {
 
         { id: /createaddition:pressing\/.*_ingot/ },
         { id: /createaddition:crafting\/capacitor/ },
-        { id: 'createaddition:mechanical_crafting/tesla_coil' },
-        { id: 'createaddition:mechanical_crafting/electric_motor' },
         { id: 'createaddition:crafting/portable_energy_interface' },
         { id: 'createaddition:compat/immersiveengineering/crushing/steel_ingot' },
         { id: 'createaddition:compat/immersiveengineering/constantan' },
@@ -392,7 +390,6 @@ ServerEvents.recipes((event) => {
 
         { id: 'ae2:network/blocks/energy_vibration_chamber' },
 
-        { id: 'createaddition:mechanical_crafting/alternator' },
         { id: 'createaddition:crafting/modular_accumulator' },
 
         { id: 'immersiveengineering:crafting/electric_lantern' },

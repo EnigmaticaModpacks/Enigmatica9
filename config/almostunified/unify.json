@@ -1,7 +1,7 @@
 {
     "modPriorities": [
-        "emendatusenigmatica",
         "minecraft",
+        "emendatusenigmatica",
         "kubejs",
         "create",
         "thermal",
@@ -100,7 +100,17 @@
         "zinc",
         "quartz"
     ],
-    "priorityOverrides": {},
+    "priorityOverrides": {
+        "forge:ores/coal": "emendatusenigmatica",
+        "forge:ores/iron": "emendatusenigmatica",
+        "forge:ores/copper": "emendatusenigmatica",
+        "forge:ores/gold": "emendatusenigmatica",
+        "forge:ores/redstone": "emendatusenigmatica",
+        "forge:ores/emerald": "emendatusenigmatica",
+        "forge:ores/lapis": "emendatusenigmatica",
+        "forge:ores/diamond": "emendatusenigmatica",
+        "forge:ores/quartz": "emendatusenigmatica"
+    },
     "tagOwnerships": {
         "forge:gems/coal_coke": ["forge:coal_coke"],
         "forge:dusts/wood": ["forge:sawdust"],

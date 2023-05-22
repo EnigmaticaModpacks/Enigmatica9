@@ -15,7 +15,7 @@ WorldgenEvents.remove((event) => {
     'surface_structures'
     */
 
-    event.removeFeatureById('underground_ores', [
+    const features = [
         'byg:ore_gold_brimstone',
         'byg:ore_gold_blue_netherrack',
         'byg:ore_quartz_brimstone',
@@ -24,6 +24,10 @@ WorldgenEvents.remove((event) => {
         'byg:ore_pendorite',
         'byg:ore_emeraldite',
         'byg:cryptic_redstone',
-        'byg:island_ametrine_clusters'
-    ]);
+        'byg:island_ametrine_clusters',
+        'byg:quartz_spike'
+    ]
+
+    event.removeFeatureById('underground_ores', features);
+    event.removeFeatureById('underground_decoration', features);
 });

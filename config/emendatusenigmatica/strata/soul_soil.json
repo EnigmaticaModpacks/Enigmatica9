@@ -1,0 +1,11 @@
+{
+    "id": "minecraft_soul_soil",
+    "baseTexture": "minecraft:block/soul_soil",
+    "suffix": "soil",
+    "fillerType": "minecraft:soul_soil",
+    "localizedName": "Soul Soil",
+    "harvestTool": "shovel",
+    "hardness": 0.5,
+    "resistance": 3,
+    "sampleStrata": false
+}

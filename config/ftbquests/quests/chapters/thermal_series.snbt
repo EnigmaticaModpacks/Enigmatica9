@@ -47,7 +47,7 @@
 					id: "4623F41B74F1829E"
 					type: "item"
 					title: "Iron Chunk"
-					item: "emendatusenigmatica:raw_iron"
+					item: "minecraft:raw_iron"
 					count: 4
 					random_bonus: 8
 				}

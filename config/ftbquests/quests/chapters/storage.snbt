@@ -916,18 +916,18 @@
 				{
 					id: "643CCF8714B8719F"
 					type: "item"
-					item: "emendatusenigmatica:iron_block"
+					item: "minecraft:iron_block"
 				}
 				{
 					id: "1F4645AC8B559D5D"
 					type: "item"
-					item: "emendatusenigmatica:iron_ingot"
+					item: "minecraft:iron_ingot"
 					count: 9
 				}
 				{
 					id: "085AFBA229687140"
 					type: "item"
-					item: "emendatusenigmatica:iron_nugget"
+					item: "minecraft:iron_nugget"
 					count: 9
 				}
 			]

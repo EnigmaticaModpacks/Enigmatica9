@@ -41,7 +41,7 @@
 					id: "63727AE711541D73"
 					type: "item"
 					title: "Iron Ingot"
-					item: "emendatusenigmatica:iron_ingot"
+					item: "minecraft:iron_ingot"
 					count: 6
 					random_bonus: 4
 				}
