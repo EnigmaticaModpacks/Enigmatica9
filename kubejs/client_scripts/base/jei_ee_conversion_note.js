@@ -10,7 +10,7 @@ JEIEvents.information((event) => {
     const conversion_message = [
         Text.of("This item is going to be removed in the near future.").red(),
         " ",
-        Text.of("Please convert it to vanilla variant before updating your instance.").red()
+        Text.of("Please convert it to the vanilla variant before updating.").red()
     ]
 
     materials.forEach(material => {
