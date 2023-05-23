@@ -25,12 +25,12 @@
 				{
 					id: "661311DE367A692A"
 					type: "item"
-					item: "emendatusenigmatica:raw_gold"
+					item: "minecraft:raw_gold"
 				}
 				{
 					id: "2BF19C51CB184E04"
 					type: "item"
-					item: "emendatusenigmatica:raw_copper"
+					item: "minecraft:raw_copper"
 				}
 				{
 					id: "17CF16620C377879"

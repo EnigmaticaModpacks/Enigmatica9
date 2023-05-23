@@ -37,7 +37,7 @@
 				id: "37149643F21C4665"
 				type: "item"
 				title: "Copper Chunk"
-				item: "emendatusenigmatica:raw_copper"
+				item: "minecraft:raw_copper"
 				count: 3
 				random_bonus: 5
 			}]
@@ -1324,7 +1324,7 @@
 				id: "1D02949AB87F570D"
 				type: "item"
 				title: "Raw Iron"
-				icon: "emendatusenigmatica:raw_iron"
+				icon: "minecraft:raw_iron"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b

@@ -37,7 +37,7 @@
 				id: "7B54B7BEEA99667F"
 				type: "item"
 				title: "Copper Chunk"
-				item: "emendatusenigmatica:raw_copper"
+				item: "minecraft:raw_copper"
 				count: 3
 				random_bonus: 5
 			}]
@@ -1983,7 +1983,7 @@
 				id: "4199938FA3695A5E"
 				type: "item"
 				title: "Raw Iron"
-				icon: "emendatusenigmatica:raw_iron"
+				icon: "minecraft:raw_iron"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -2015,7 +2015,7 @@
 				id: "60A1A0E33224F1CA"
 				type: "item"
 				title: "Raw Copper"
-				icon: "emendatusenigmatica:raw_copper"
+				icon: "minecraft:raw_copper"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b

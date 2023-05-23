@@ -8,14 +8,14 @@ ServerEvents.recipes((event) => {
         {
             pattern: ['  A  ', ' BSB ', 'BSRSB', ' BCB '],
             key: {
-                A: { item: 'create:andesite_alloy' },
+                A: { tag: 'forge:ingots/andesite' },
                 C: { item: 'createaddition:capacitor' },
                 B: { tag: 'forge:plates/brass' },
                 R: { tag: 'forge:rods/iron' },
                 S: { item: 'immersiveengineering:coil_lv' }
             },
             result: { item: 'createaddition:electric_motor' },
-            id: `createaddition:mechanical_crafting/electric_motor`
+            id: `${id_prefix}electric_motor`
         },
         {
             pattern: ['  A  ', ' ISI ', 'ISRSI', ' ICI '],
@@ -24,15 +24,15 @@ ServerEvents.recipes((event) => {
                 I: { tag: 'forge:plates/iron' },
                 R: { tag: 'forge:rods/iron' },
                 S: { item: 'immersiveengineering:coil_lv' },
-                A: { item: 'create:andesite_alloy' }
+                A: { tag: 'forge:ingots/andesite' }
             },
             result: { item: 'createaddition:alternator' },
-            id: `createaddition:mechanical_crafting/alternator`
+            id: `${id_prefix}alternator`
         },
         {
             pattern: ['SSS', ' A ', 'CBC', 'PEP'],
             key: {
-                A: { item: 'create:andesite_alloy' },
+                A: { tag: 'forge:ingots/andesite' },
                 C: { item: 'createaddition:capacitor' },
                 P: { tag: 'forge:plates/brass' },
                 B: { item: 'create:brass_casing' },
@@ -40,7 +40,7 @@ ServerEvents.recipes((event) => {
                 E: { item: 'create:electron_tube' }
             },
             result: { item: 'createaddition:tesla_coil' },
-            id: `createaddition:mechanical_crafting/tesla_coil`
+            id: `${id_prefix}tesla_coil`
         }
     ];
 

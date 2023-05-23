@@ -167,163 +167,156 @@
 				type: "item"
 				item: "minecraft:book"
 			}]
-			rewards: [
-				{
-					id: "68C0A864D96B2AC8"
-					type: "item"
-					title: "Full Eccentric Tome"
-					item: {
-						id: "eccentrictome:tome"
-						Count: 1b
-						tag: {
-							"eccentrictome:mods": {
-								industrialforegoing: {
-									0: {
-										Count: 1.0d
-										id: "patchouli:guide_book"
-										tag: {
-											"patchouli:book": "industrialforegoing:industrial_foregoing"
-										}
-									}
-								}
-								powah: {
-									0: {
-										Count: 1.0d
-										id: "powah:book"
-									}
-								}
-								ftbquests: {
-									0: {
-										Count: 1.0d
-										id: "ftbquests:book"
-									}
-								}
-								modonomicon: {
-									0: {
-										Count: 1.0d
-										id: "modonomicon:modonomicon"
-										tag: {
-											"modonomicon:book_id": "theurgy:the_hermetica"
-										}
-									}
-								}
-								pneumaticcraft: {
-									0: {
-										Count: 1.0d
-										id: "patchouli:guide_book"
-										tag: {
-											"patchouli:book": "pneumaticcraft:book"
-										}
-									}
-								}
-								immersiveengineering: {
-									0: {
-										Count: 1.0d
-										id: "immersiveengineering:manual"
-									}
-								}
-								naturesaura: {
-									0: {
-										Count: 1.0d
-										id: "patchouli:guide_book"
-										tag: {
-											"patchouli:book": "naturesaura:book"
-										}
-									}
-								}
-								apotheosis: {
-									0: {
-										Count: 1.0d
-										id: "patchouli:guide_book"
-										tag: {
-											"patchouli:book": "apotheosis:apoth_chronicle"
-										}
-									}
-								}
-								littlelogistics: {
-									0: {
-										Count: 1.0d
-										id: "patchouli:guide_book"
-										tag: {
-											"patchouli:book": "littlelogistics:guide"
-										}
-									}
-								}
-								engineersdecor: {
-									0: {
-										Count: 1.0d
-										id: "patchouli:guide_book"
-										tag: {
-											"patchouli:book": "engineersdecor:engineersdecor_manual"
-										}
-									}
-								}
-								occultism: {
-									0: {
-										Count: 1.0d
-										id: "occultism:dictionary_of_spirits"
-										tag: {
-											"modonomicon:book_id": "occultism:dictionary_of_spirits"
-										}
-									}
-								}
-								ae2: {
-									0: {
-										Count: 1.0d
-										id: "ae2:guide"
-									}
-								}
-								modularrouters: {
-									0: {
-										Count: 1.0d
-										id: "patchouli:guide_book"
-										tag: {
-											"patchouli:book": "modularrouters:book"
-										}
-									}
-								}
-								ars_nouveau: {
-									0: {
-										Count: 1.0d
-										id: "ars_nouveau:worn_notebook"
-									}
-								}
-								sushigocrafting: {
-									0: {
-										Count: 1.0d
-										id: "patchouli:guide_book"
-										tag: {
-											"patchouli:book": "sushigocrafting:sushigocrafting"
-										}
-									}
-								}
-								thermal: {
-									0: {
-										Count: 1.0d
-										id: "patchouli:guide_book"
-										tag: {
-											"patchouli:book": "thermal:guidebook"
-										}
-									}
-								}
-								rftoolsbase: {
-									0: {
-										Count: 1.0d
-										id: "rftoolsbase:manual"
+			rewards: [{
+				id: "68C0A864D96B2AC8"
+				type: "item"
+				title: "Full Eccentric Tome"
+				item: {
+					id: "eccentrictome:tome"
+					Count: 1b
+					tag: {
+						"eccentrictome:mods": {
+							industrialforegoing: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "industrialforegoing:industrial_foregoing"
 									}
 								}
 							}
-							"eccentrictome:version": 1.0d
+							powah: {
+								0: {
+									Count: 1.0d
+									id: "powah:book"
+								}
+							}
+							ftbquests: {
+								0: {
+									Count: 1.0d
+									id: "ftbquests:book"
+								}
+							}
+							modonomicon: {
+								0: {
+									Count: 1.0d
+									id: "modonomicon:modonomicon"
+									tag: {
+										"modonomicon:book_id": "theurgy:the_hermetica"
+									}
+								}
+							}
+							pneumaticcraft: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "pneumaticcraft:book"
+									}
+								}
+							}
+							immersiveengineering: {
+								0: {
+									Count: 1.0d
+									id: "immersiveengineering:manual"
+								}
+							}
+							naturesaura: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "naturesaura:book"
+									}
+								}
+							}
+							apotheosis: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "apotheosis:apoth_chronicle"
+									}
+								}
+							}
+							littlelogistics: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "littlelogistics:guide"
+									}
+								}
+							}
+							engineersdecor: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "engineersdecor:engineersdecor_manual"
+									}
+								}
+							}
+							occultism: {
+								0: {
+									Count: 1.0d
+									id: "occultism:dictionary_of_spirits"
+									tag: {
+										"modonomicon:book_id": "occultism:dictionary_of_spirits"
+									}
+								}
+							}
+							ae2: {
+								0: {
+									Count: 1.0d
+									id: "ae2:guide"
+								}
+							}
+							modularrouters: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "modularrouters:book"
+									}
+								}
+							}
+							ars_nouveau: {
+								0: {
+									Count: 1.0d
+									id: "ars_nouveau:worn_notebook"
+								}
+							}
+							sushigocrafting: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "sushigocrafting:sushigocrafting"
+									}
+								}
+							}
+							thermal: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "thermal:guidebook"
+									}
+								}
+							}
+							rftoolsbase: {
+								0: {
+									Count: 1.0d
+									id: "rftoolsbase:manual"
+								}
+							}
 						}
+						"eccentrictome:version": 1.0d
 					}
-					only_one: true
 				}
-				{
-					id: "064330E16B6BBC5F"
-					type: "item"
-					item: "blue_skies:blue_journal"
-				}
-			]
+				only_one: true
+			}]
 		}
 	]
 	quest_links: [ ]

@@ -110,8 +110,8 @@
 				id: "55E4F11D8C8357A5"
 				type: "item"
 				title: "Netherite"
-				icon: "emendatusenigmatica:netherite_ingot"
-				item: "emendatusenigmatica:netherite_ingot"
+				icon: "minecraft:netherite_ingot"
+				item: "minecraft:netherite_ingot"
 			}]
 		}
 		{
@@ -323,7 +323,7 @@
 				id: "1558A342DAD1935D"
 				type: "item"
 				title: "Iron"
-				icon: "emendatusenigmatica:iron_ingot"
+				icon: "minecraft:iron_ingot"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b

@@ -856,7 +856,7 @@
 			rewards: [{
 				id: "203CECCC321A0C3D"
 				type: "item"
-				item: "emendatusenigmatica:emerald_block"
+				item: "minecraft:emerald_block"
 			}]
 		}
 		{
