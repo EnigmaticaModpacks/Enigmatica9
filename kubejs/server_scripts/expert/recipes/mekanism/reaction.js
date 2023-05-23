@@ -21,6 +21,22 @@ ServerEvents.recipes((event) => {
             itemInput: { ingredient: { tag: 'forge:dusts/fluorite' } },
             duration: 100,
             id: `${id_prefix}pellet_polonium`
+        },
+        {
+            itemOutput: { item: 'mekanism:substrate' },
+            fluidInput: { amount: 10, tag: 'minecraft:water' },
+            gasInput: { amount: 100, gas: 'mekanism:hydrogen' },
+            itemInput: { amount: 2, ingredient: { tag: 'forge:fuels/bio' } },
+            duration: 100,
+            id: `${id_prefix}substrate`
+        },
+        {
+            itemOutput: { item: 'minecraft:nether_star' },
+            fluidInput: { amount: 1000, tag: 'forge:ether_gas' },
+            gasInput: { amount: 100, gas: 'starbunclemania:source_gas' },
+            itemInput: { ingredient: { item: 'mekanism:substrate' } },
+            duration: 100,
+            id: `${id_prefix}nether_star`
         }
     ];
 
