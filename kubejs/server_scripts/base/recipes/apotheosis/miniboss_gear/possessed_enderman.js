@@ -19,7 +19,7 @@ ServerEvents.highPriorityData((event) => {
             helmets: [
                 {
                     stack: {
-                        item: 'blue_skies:charoite_helmet',
+                        item: 'minecraft:diamond_helmet',
                         nbt: default_nbt
                     },
                     weight: 100,
@@ -29,7 +29,7 @@ ServerEvents.highPriorityData((event) => {
             chestplates: [
                 {
                     stack: {
-                        item: 'blue_skies:charoite_chestplate',
+                        item: 'minecraft:diamond_chestplate',
                         nbt: Object.assign(reactive.vanish, enchant_glint.blank, enchantments.reactive_3)
                     },
                     weight: 100,
@@ -39,7 +39,7 @@ ServerEvents.highPriorityData((event) => {
             leggings: [
                 {
                     stack: {
-                        item: 'blue_skies:charoite_leggings',
+                        item: 'minecraft:diamond_leggings',
                         nbt: default_nbt
                     },
                     weight: 100,
@@ -49,7 +49,7 @@ ServerEvents.highPriorityData((event) => {
             boots: [
                 {
                     stack: {
-                        item: 'blue_skies:charoite_boots',
+                        item: 'minecraft:diamond_boots',
                         nbt: default_nbt
                     },
                     weight: 100,
