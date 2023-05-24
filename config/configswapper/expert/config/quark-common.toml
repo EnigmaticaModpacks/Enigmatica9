@@ -1126,7 +1126,7 @@
 	[client.improved_tooltips]
 		"Shulker Box Require Shift" = false
 		"Shulker Box Use Colors" = true
-		"Attribute Tooltips" = true
+		"Attribute Tooltips" = false
 		"Enchanting Tooltips" = true
 		#The value of each shank of food. Tweak this when using mods like Hardcore Hunger which change that value.
 		"Food Divisor" = 2
