@@ -125,10 +125,6 @@ JEIEvents.information((event) => {
             text: [`Obtained by manually breeding animals in high Aura areas.`]
         },
         {
-            items: ['explorerscompass:explorerscompass'],
-            text: [`May only be used to locate Blue Skies structures.`]
-        },
-        {
             items: [
                 'quark:violet_corundum',
                 'quark:indigo_corundum',
