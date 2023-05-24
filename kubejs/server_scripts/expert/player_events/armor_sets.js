@@ -72,7 +72,7 @@ armor_sets.forEach((armor_set) => {
         if (playerData.armorSetBonus) {
             playerData.armorSetEffects.forEach((effect) => {
                 if (player.potionEffects.getDuration(effect.potion) <= 21) {
-                    player.potionEffects.add(effect.potion, 39, effect.amp, false, false);
+                    player.potionEffects.add(effect.potion, 39, effect.amp, true, false);
                 }
             });
         }
