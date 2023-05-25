@@ -557,12 +557,19 @@ jei.expert.items.disabled = [
     'thermal:flux_capacitor',
     'thermal:device_potion_diffuser',
     'thermal:rf_potato',
+    'thermal:energy_limiter_attachment',
+    'thermal:energy_duct',
 
     'twilightforest:candelabra',
     'twilightforest:keepsake_casket',
     'twilightforest:cube_of_annihilation',
     'twilightforest:greater_potion_flask',
-    'twilightforest:brittle_potion_flask'
+    'twilightforest:brittle_potion_flask',
+
+    'xnet:wireless_router',
+    'xnet:antenna',
+    'xnet:antenna_dish',
+    'xnet:antenna_base'
 ];
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = [];

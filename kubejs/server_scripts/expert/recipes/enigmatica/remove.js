@@ -374,6 +374,8 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:aquachow_4' },
         { id: 'thermal:deep_aquachow_4' },
         { id: 'thermal:device_potion_diffuser' },
+        { id: 'thermal:energy_limiter_attachment_2' },
+        { id: 'thermal:energy_duct_4' },
         { id: 'thermal:tools/rf_potato' },
         { id: 'thermal:machines/pulverizer/pulverizer_lapis' },
         { id: 'thermal:machines/pulverizer/pulverizer_ender_pearl' },
