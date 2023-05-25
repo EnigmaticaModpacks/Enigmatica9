@@ -19,6 +19,8 @@ const colors = [
     'light_gray'
 ];
 
+const xnet_colors = ['red', 'yellow', 'green', 'blue'];
+
 const flare_colors = {
     white: 16383741,
     orange: 16351261,
