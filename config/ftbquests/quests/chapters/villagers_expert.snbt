@@ -305,29 +305,8 @@
 			}]
 		}
 		{
-			title: "Fluix Researcher"
-			x: -2.0d
-			y: 0.5d
-			description: ["Fluix Researchers can be an excellent early source for Certus Quartz and Sky Stone, as well as selling Inscriber Presses without needing to go out looking for a crashed meteor. "]
-			dependencies: ["7A341C5D96C4A809"]
-			id: "2282AC0475014404"
-			tasks: [{
-				id: "5440D0ED10422B13"
-				type: "item"
-				item: "ae2:charger"
-			}]
-			rewards: [{
-				id: "2034691354C8FFBA"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
 			title: "Pressure Mechanic"
-			x: -3.0d
+			x: -2.5d
 			y: 0.5d
 			description: ["Pressure Mechanics sell a wide variety of Pneumatic devices, specialized ammo for Miniguns, and even circuit boards. "]
 			dependencies: ["7A341C5D96C4A809"]
@@ -348,7 +327,7 @@
 		}
 		{
 			title: "Forager"
-			x: -5.0d
+			x: -4.5d
 			y: 0.5d
 			description: ["Foragers will purchase a variety of spare mushrooms that you may have lying about."]
 			dependencies: ["7A341C5D96C4A809"]
@@ -369,7 +348,7 @@
 		}
 		{
 			title: "Shady Wizard"
-			x: -4.0d
+			x: -3.5d
 			y: 0.5d
 			description: ["Trading in all manner of arcane goods, Shady Wizards are particularly useful for obtaining ritual tablets, familiar shards, and even rare Caster Tomes."]
 			dependencies: ["7A341C5D96C4A809"]
