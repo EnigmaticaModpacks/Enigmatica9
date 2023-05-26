@@ -87,6 +87,11 @@ ServerEvents.recipes((event) => {
         { id: 'naturesaura:sky_ingot' },
         { id: 'naturesaura:tainted_gold' },
 
+        { id: /nomadictents:.*_layer/ },
+        { id: /nomadictents:.*_yurt2/ },
+        { id: /nomadictents:.*_shovel/ },
+        { id: /nomadictents:.*_crossbeams/ },
+
         { id: 'occultism:crafting/butcher_knife' },
         { id: /occultism:miner\/.*\/deepslate_/ },
         { id: 'occultism:miner/ores/sapphire_ore' },

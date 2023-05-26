@@ -8,6 +8,15 @@ const armor_sets = [
         ],
         effects: [{ potion: 'ars_nouveau:mana_regen', amp: 2 }]
     },
+    {
+        armor: [
+            'thermal:beekeeper_helmet',
+            'thermal:beekeeper_chestplate',
+            'thermal:beekeeper_leggings',
+            'thermal:beekeeper_boots'
+        ],
+        effects: [{ potion: 'the_bumblezone:hidden', amp: 0 }]
+    },
 
     // Wearing any piece of the meka suit disables spell casting since it makes you effectively immune to magic.
     {

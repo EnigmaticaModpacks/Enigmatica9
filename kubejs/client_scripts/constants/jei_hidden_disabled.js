@@ -140,6 +140,8 @@ jei.base.items.hidden = [
 
     /nomadictents:.*_shamiyana_wall/,
     /nomadictents:.*_tepee_wall/,
+    /nomadictents:.*_shovel/,
+    /nomadictents:.*_crossbeams/,
     'nomadictents:indlu_wall',
     'nomadictents:bedouin_roof',
     'nomadictents:bedouin_wall',
