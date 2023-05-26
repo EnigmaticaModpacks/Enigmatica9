@@ -39,7 +39,7 @@ ServerEvents.recipes((event) => {
     rod_materials.forEach((material) => {
         recipes.push({
             output: `2x emendatusenigmatica:${material}_rod`,
-            input: `#forge:plates/${material}`,
+            input: `#forge:ingots/${material}`,
             id: `${id_prefix}${material}_rod`
         });
     });

@@ -1,85 +1,13 @@
 {
-	id: "39A5E07598ADAD34"
+	id: "57299B70360DE499"
 	group: "72A9465344128AF9"
-	order_index: 0
-	filename: "applied_energistics_2"
+	order_index: 1
+	filename: "applied_energistics_2_expert"
 	title: "Applied Energistics 2"
 	icon: "ae2:drive"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
-		{
-			title: "Meteorites!"
-			icon: "ae2:meteorite_compass"
-			x: 0.0d
-			y: -3.0d
-			description: ["Crafting a Meteorite Compass will be crucial to finding Certus Quartz, though it is very possible to stumble upon the meteorites above ground. Be sure to bring a decent pickaxe to break through the tough outer shell of the meteorite!"]
-			hide_dependency_lines: true
-			dependencies: ["7039D20D06BEAFC2"]
-			min_width: 250
-			id: "029656A1597547F9"
-			tasks: [{
-				id: "15965A8AF7CCE96E"
-				type: "item"
-				item: "ae2:meteorite_compass"
-			}]
-			rewards: [{
-				id: "16C28EC18C21F2F9"
-				type: "command"
-				title: "Miner's Delight"
-				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "Inscribers Presses"
-			icon: "ae2:mysterious_cube"
-			x: -1.0d
-			y: -2.5d
-			description: [
-				"Deep in the heart of the meteorites located by the Meteorite Compass lays a Mysterious Cube. Break it to obtain one of each Inscriber Press."
-				""
-				"Obtaining these Presses and building an Inscriber to use them in will allow the creation of more advanced machinery."
-			]
-			dependencies: ["029656A1597547F9"]
-			id: "0F2195611D84F112"
-			tasks: [
-				{
-					id: "6919EDCC56B4B66B"
-					type: "item"
-					item: "ae2:silicon_press"
-				}
-				{
-					id: "220B18536AF43E16"
-					type: "item"
-					item: "ae2:logic_processor_press"
-				}
-				{
-					id: "3B5A14BFC89CA251"
-					type: "item"
-					item: "ae2:engineering_processor_press"
-				}
-				{
-					id: "7DC733DD28FC398A"
-					type: "item"
-					item: "ae2:calculation_processor_press"
-				}
-				{
-					id: "6EF250D132B567C4"
-					type: "item"
-					item: "ae2:inscriber"
-				}
-			]
-			rewards: [{
-				id: "4D335664F4D4ED3D"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
-		}
 		{
 			title: "ME Controller Networks"
 			x: -1.5d
@@ -100,19 +28,16 @@
 				"Each exposed ME Controller face can provide up to 32 channels with a Dense Cable or P2P Tunnel attached to it. More on P2P later. For now, know that a single Dense Cable can transport 32 channels to an area, allowing up to 32 devices to be attached to it. "
 			]
 			hide_dependency_lines: true
-			dependencies: [
-				"029656A1597547F9"
-				"0F2195611D84F112"
-			]
+			dependencies: ["0097F2FB87804251"]
 			min_width: 300
-			id: "4D7FF267C7EC2845"
+			id: "5F3E20C3B3A32ACF"
 			tasks: [{
-				id: "5C31D902CE28DDCA"
+				id: "70CEB08A623209D4"
 				type: "item"
 				item: "ae2:controller"
 			}]
 			rewards: [{
-				id: "2688B8B2145804A6"
+				id: "4F04543FFF72A9BD"
 				type: "command"
 				title: "Epic Applied Energistics Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -127,15 +52,15 @@
 			y: 3.0d
 			description: ["The primary purpose of any ME network, whether Ad Hoc or Controller based, is storage and logistics. In terms of storage, the ME Network has two options, the ME Storage Bus and the ME Drive."]
 			hide_dependency_lines: true
-			dependencies: ["029656A1597547F9"]
-			id: "67C91F3187348C8E"
+			dependencies: ["0097F2FB87804251"]
+			id: "7FB8B3BF03A89410"
 			tasks: [{
-				id: "2D62B05AECEFC2E8"
+				id: "3D82AB251B74143F"
 				type: "item"
 				item: "ae2:certus_quartz_wrench"
 			}]
 			rewards: [{
-				id: "0F35EC2C40562447"
+				id: "5CA8480BEB290EE9"
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
@@ -155,22 +80,22 @@
 				""
 				"Filters may be conveniently dragged from JEI without needing to have the item in hand. "
 			]
-			dependencies: ["67C91F3187348C8E"]
-			id: "2288AA73FE626BFB"
+			dependencies: ["7FB8B3BF03A89410"]
+			id: "156CA5F24C59302A"
 			tasks: [
 				{
-					id: "63C8AD58ED1FA4BB"
+					id: "2D9BECD55CCD5D5F"
 					type: "item"
 					item: "ae2:drive"
 				}
 				{
-					id: "5484504991FA3D9A"
+					id: "63392F77E05B0BF4"
 					type: "item"
 					item: "ae2:cell_workbench"
 				}
 			]
 			rewards: [{
-				id: "337B225FE339F43B"
+				id: "01BF4CB94D87B2BF"
 				type: "command"
 				title: "Epic Applied Energistics Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -189,10 +114,10 @@
 				""
 				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
 			]
-			dependencies: ["2288AA73FE626BFB"]
-			id: "211D0FAA0B023EF0"
+			dependencies: ["156CA5F24C59302A"]
+			id: "0B95DC452E02E964"
 			tasks: [{
-				id: "5A20805886D94C81"
+				id: "0685913D68AE2214"
 				type: "item"
 				item: {
 					id: "ae2:item_storage_cell_1k"
@@ -201,7 +126,7 @@
 				}
 			}]
 			rewards: [{
-				id: "573D3073F3908571"
+				id: "332B628F01F6ACC8"
 				type: "command"
 				title: "Epic Applied Energistics Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -220,10 +145,10 @@
 				""
 				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
 			]
-			dependencies: ["2288AA73FE626BFB"]
-			id: "6B9F725AE5A94531"
+			dependencies: ["156CA5F24C59302A"]
+			id: "4B21571216DCDC69"
 			tasks: [{
-				id: "003BE39BD863F013"
+				id: "33E354A291EA4A94"
 				type: "item"
 				item: {
 					id: "ae2:fluid_storage_cell_1k"
@@ -232,7 +157,7 @@
 				}
 			}]
 			rewards: [{
-				id: "0DD466F9E4C971CA"
+				id: "2191B6E99F2D07AD"
 				type: "command"
 				title: "Epic Applied Energistics Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -251,10 +176,10 @@
 				""
 				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
 			]
-			dependencies: ["2288AA73FE626BFB"]
-			id: "22AB44AE329F9EA8"
+			dependencies: ["156CA5F24C59302A"]
+			id: "73765EC8E099FD57"
 			tasks: [{
-				id: "54EDF279D4FC786D"
+				id: "6A8CF9203996BA11"
 				type: "item"
 				item: {
 					id: "appmek:chemical_storage_cell_1k"
@@ -263,7 +188,7 @@
 				}
 			}]
 			rewards: [{
-				id: "01F67F64BFB7E5B9"
+				id: "15402D7A6B44E06D"
 				type: "command"
 				title: "Epic Applied Energistics Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -280,15 +205,15 @@
 				""
 				"This can be as simple as a connection to a single Chest or a Fluid Tank; or may be used to connect much larger storage networks to the Network."
 			]
-			dependencies: ["67C91F3187348C8E"]
-			id: "530BB11487524556"
+			dependencies: ["7FB8B3BF03A89410"]
+			id: "731CE00BD8C9E575"
 			tasks: [{
-				id: "208948F592EBBC4D"
+				id: "210F35A3EE24C0EC"
 				type: "item"
 				item: "ae2:storage_bus"
 			}]
 			rewards: [{
-				id: "158A6753A48CF984"
+				id: "60E138B701BF7801"
 				type: "command"
 				title: "Rare Applied Energistics Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -306,13 +231,13 @@
 				"Different colors may be laid out side by side without connecting, allowing them to be used to maintain separations between channels. "
 			]
 			dependencies: [
-				"4D7FF267C7EC2845"
-				"79315557F8BB1F99"
+				"5F3E20C3B3A32ACF"
+				"7346C9F69D3927FF"
 			]
 			dependency_requirement: "one_completed"
-			id: "66057A9358B600A9"
+			id: "64845BD36C494E85"
 			tasks: [{
-				id: "03067EF23D3A38BA"
+				id: "3F0F39B75A23111F"
 				type: "item"
 				title: "ME Glass Cables"
 				icon: "ae2:fluix_glass_cable"
@@ -325,7 +250,7 @@
 				}
 			}]
 			rewards: [{
-				id: "34D5FB644519CBF0"
+				id: "1E9648A738A38B54"
 				type: "command"
 				title: "Rare Applied Energistics Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -343,10 +268,10 @@
 				""
 				"However, partial block devices such as Terminals or Buses will not connect to a Dense Cable, so while they make excellent trunk lines, regular cables will still be needed for the final connection to these devices. "
 			]
-			dependencies: ["66057A9358B600A9"]
-			id: "7CCBE728C0D5090E"
+			dependencies: ["64845BD36C494E85"]
+			id: "78F2C89B4BDC3518"
 			tasks: [{
-				id: "2D997A56E5002CDC"
+				id: "672C399C73401663"
 				type: "item"
 				title: "Covered Cables"
 				item: {
@@ -367,7 +292,7 @@
 				}
 			}]
 			rewards: [{
-				id: "2A5FF8DDEF6001FE"
+				id: "67827C9AA3B11001"
 				type: "command"
 				title: "Rare Applied Energistics Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -380,15 +305,15 @@
 			x: -2.0d
 			y: 0.0d
 			description: ["Auto Crafting consists of three parts: the Crafting CPU, Pattern Providers, and the Patterns themselves. All three work in concert to run any Auto Crafting request. "]
-			dependencies: ["4D7FF267C7EC2845"]
-			id: "2FC3BF03747E40DB"
+			dependencies: ["5F3E20C3B3A32ACF"]
+			id: "103D66D58E2AE871"
 			tasks: [{
-				id: "33D2FF53122B1461"
+				id: "723A3C0A0248D17A"
 				type: "item"
 				item: "minecraft:crafting_table"
 			}]
 			rewards: [{
-				id: "1F0EE9EF2D994337"
+				id: "0B9B7C9D9C4B7E3C"
 				type: "command"
 				title: "Epic Applied Energistics Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -406,10 +331,10 @@
 				"Items may be picked up as normal while Fluids and Chemicals may be retrieved by Left Clicking a Fluid Tank or Chemical tank on the fluid or chemical in the Terminal. Similarly, they may be deposited by Right Clicking the tank into the list in the Terminal."
 			]
 			hide_dependency_lines: true
-			dependencies: ["66057A9358B600A9"]
-			id: "6C9905294D4D45A5"
+			dependencies: ["7346C9F69D3927FF"]
+			id: "489B2FA4E73E5951"
 			tasks: [{
-				id: "0BB7E1F714963E4B"
+				id: "1F7BA3B5B9ADFEB8"
 				type: "item"
 				title: "Terminals"
 				item: {
@@ -430,7 +355,7 @@
 				}
 			}]
 			rewards: [{
-				id: "4B4A7A5379592E0F"
+				id: "73050A813C48DF48"
 				type: "command"
 				title: "Rare Applied Energistics Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -447,15 +372,15 @@
 				""
 				"Once encoded, place the Pattern in an appropriate Pattern Provider. "
 			]
-			dependencies: ["2FC3BF03747E40DB"]
-			id: "7AF744A523A2B515"
+			dependencies: ["103D66D58E2AE871"]
+			id: "5D1DAA00815D0590"
 			tasks: [{
-				id: "3B63A2A1BC35B3C2"
+				id: "40ABE1BE92DFCC5C"
 				type: "item"
 				item: "ae2:pattern_encoding_terminal"
 			}]
 			rewards: [{
-				id: "712F6C181EE8F2A6"
+				id: "404BC61163C2C12B"
 				type: "command"
 				title: "Epic Applied Energistics Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -534,17 +459,17 @@
 				" "
 				"Doing the same without P2P would require managing eight individual Dense Cables all the way out to the same remote place."
 			]
-			dependencies: ["4D7FF267C7EC2845"]
+			dependencies: ["5F3E20C3B3A32ACF"]
 			min_width: 300
-			id: "2A5E79640AB4BDA5"
+			id: "78F157F1561D932F"
 			tasks: [
 				{
-					id: "50035793446D9D61"
+					id: "4F3701C0B742470B"
 					type: "item"
 					item: "ae2:me_p2p_tunnel"
 				}
 				{
-					id: "427D3687B5F51674"
+					id: "797A4938CFEFE5F4"
 					type: "item"
 					title: "Memory Cards"
 					icon: {
@@ -562,7 +487,7 @@
 				}
 			]
 			rewards: [{
-				id: "1CB7078D2013A45D"
+				id: "05BD8A1423C36C57"
 				type: "command"
 				title: "Epic Applied Energistics Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -584,11 +509,11 @@
 				""
 				"Each Crafting CPU is capable of seeing a single crafting task through from start to finish. This may involve multiple steps, such as turning Logs to Planks, then Planks to Sticks, and finally turning those sticks into a tool. "
 			]
-			dependencies: ["2FC3BF03747E40DB"]
+			dependencies: ["103D66D58E2AE871"]
 			min_width: 300
-			id: "22640DCB27BB1DE8"
+			id: "7E5425AD75D67C77"
 			tasks: [{
-				id: "5B4758B4CF231806"
+				id: "00BE39BD462DCEB9"
 				type: "item"
 				title: "Crafting CPU"
 				icon: "ae2:1k_crafting_storage"
@@ -630,7 +555,7 @@
 				}
 			}]
 			rewards: [{
-				id: "37DEEE5854DDC9C3"
+				id: "328112AEC0ACFA08"
 				type: "command"
 				title: "Epic Applied Energistics Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -654,23 +579,23 @@
 				""
 				"Machines such as Mekanism or Thermal machines, which can push back out the same side they received items on are therefore much simpler to automate, as a single Pattern Provider is all that is needed. "
 			]
-			dependencies: ["2FC3BF03747E40DB"]
+			dependencies: ["103D66D58E2AE871"]
 			min_width: 300
-			id: "3B2DA9A2923AC61E"
+			id: "67DC697DC3116C61"
 			tasks: [
 				{
-					id: "585C2BFDCD2F3A90"
+					id: "155CF4EBC1624BC5"
 					type: "item"
 					item: "ae2:molecular_assembler"
 				}
 				{
-					id: "1E0CA85F9AD5ABA8"
+					id: "741963BCF3511107"
 					type: "item"
 					item: "ae2:pattern_provider"
 				}
 			]
 			rewards: [{
-				id: "2FD4EE828E4E5D5A"
+				id: "19C4E8870DEE24D3"
 				type: "command"
 				title: "Epic Applied Energistics Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -688,23 +613,23 @@
 				""
 				"The Annihilation Plane will work immediately on any block in front of it. It may also be enchanted with Fortune or Silk Touch to allow it to efficiently process things like Certus Quartz Clusters or Ice. It cannot be filtered directly, however. To filter what it breaks, a Subnetwork is required with filtered storage that only allows the desired block to enter the system. For example, when working with Certus Quartz, to ensure it only breaks a full Certus Quartz Cluster, the subnetwork should have a filtered storage on it that only accepts Certus Quartz Crystals. A filtered Storage Bus pointed into a Chest is sufficient."
 			]
-			dependencies: ["6C9905294D4D45A5"]
+			dependencies: ["489B2FA4E73E5951"]
 			min_width: 300
-			id: "0E5806537154F593"
+			id: "4BD11D2FEB20CA76"
 			tasks: [
 				{
-					id: "4521A27E2919EA8B"
+					id: "46017C60DD0D02F9"
 					type: "item"
 					item: "ae2:annihilation_plane"
 				}
 				{
-					id: "3ACC5D335B9198A1"
+					id: "6D8DF3C5F4C0F25C"
 					type: "item"
 					item: "ae2:formation_plane"
 				}
 			]
 			rewards: [{
-				id: "744F2422F54D69DA"
+				id: "255A9411D3B4D8FC"
 				type: "command"
 				title: "Epic Applied Energistics Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -717,22 +642,22 @@
 			x: 2.5d
 			y: 1.0d
 			description: ["Where an Interface passively accepts or provides materials, Import and Export Buses actively push and pull them. Set an Export Bus against a tank and configure it to export Water to keep the tank filled, or set an Import bus against a tank of Hydrogen to import it into storage. "]
-			dependencies: ["6C9905294D4D45A5"]
-			id: "7DBCBBB2A18DDDA0"
+			dependencies: ["489B2FA4E73E5951"]
+			id: "380710CC9E988E6E"
 			tasks: [
 				{
-					id: "6F449BA448D51A46"
+					id: "1F4B3425D2AED786"
 					type: "item"
 					item: "ae2:import_bus"
 				}
 				{
-					id: "4BD463C5AA00681E"
+					id: "51DFC730611E90FE"
 					type: "item"
 					item: "ae2:export_bus"
 				}
 			]
 			rewards: [{
-				id: "72F01E6C29DAF100"
+				id: "4523DC97AA9D7388"
 				type: "command"
 				title: "Rare Applied Energistics Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -744,15 +669,15 @@
 			x: 1.5d
 			y: 1.0d
 			description: ["The ME Interface allows for both insertion and extraction of material from the ME system in a single block. Any material inserted into the Interface is instantly transferred into available storage on the Network. It may optionally be configured to supply up to nine materials, making them accessible for pipes from other mods to extract them from the system. "]
-			dependencies: ["6C9905294D4D45A5"]
-			id: "3E08D8EF1B87C547"
+			dependencies: ["489B2FA4E73E5951"]
+			id: "45FD47C73C76D9EB"
 			tasks: [{
-				id: "3A86D6762EA204DB"
+				id: "698BD2581B49FE93"
 				type: "item"
 				item: "ae2:interface"
 			}]
 			rewards: [{
-				id: "3246307964E6DCA5"
+				id: "15C35DA822BB37E1"
 				type: "command"
 				title: "Rare Applied Energistics Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -772,30 +697,30 @@
 				""
 				"Once built, the two sides of the network are seen as the same. Be sure to chunk load both sides, however."
 			]
-			dependencies: ["6C9905294D4D45A5"]
-			id: "444829B39E4D1BAA"
+			dependencies: ["489B2FA4E73E5951"]
+			id: "03662FB8C114E255"
 			tasks: [
 				{
-					id: "4853E968B5FAADDB"
+					id: "1386C9EFE6AF9CF1"
 					type: "item"
 					item: "ae2:quantum_ring"
 					count: 16L
 				}
 				{
-					id: "02B6BAD8D6A32813"
+					id: "207D87975B1F6F7B"
 					type: "item"
 					item: "ae2:quantum_link"
 					count: 2L
 				}
 				{
-					id: "0C5190D3174327A3"
+					id: "67B8DB06E27CB172"
 					type: "item"
 					item: "ae2:quantum_entangled_singularity"
 					count: 2L
 				}
 			]
 			rewards: [{
-				id: "6578D4689D6017B3"
+				id: "7201CC8D7142B3D1"
 				type: "command"
 				title: "Epic Applied Energistics Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -811,10 +736,10 @@
 				""
 				"Conversion monitors enhance this functionality by allowing the player to insert and withdraw those items by simply Right-Clicking it. "
 			]
-			dependencies: ["67C91F3187348C8E"]
-			id: "4E537D57D8775F31"
+			dependencies: ["7FB8B3BF03A89410"]
+			id: "4A481FE223072D06"
 			tasks: [{
-				id: "77AE32CCCFAD95CD"
+				id: "757E4B8921A9764C"
 				type: "item"
 				title: "Storage and Conversion Monitors"
 				item: {
@@ -835,7 +760,7 @@
 				}
 			}]
 			rewards: [{
-				id: "03BA42DAD3DB4772"
+				id: "520888C8211BEEC9"
 				type: "command"
 				title: "Rare Applied Energistics Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -853,15 +778,15 @@
 				""
 				"Individual Pattern Providers may be hidden from the Terminal by toggling the Pattern Access Terminal button in the GUI. "
 			]
-			dependencies: ["2FC3BF03747E40DB"]
-			id: "158C1E5F495210A8"
+			dependencies: ["103D66D58E2AE871"]
+			id: "7DC10A42E9E03052"
 			tasks: [{
-				id: "7DE1A12F377BD86A"
+				id: "332A01187B9AAEC5"
 				type: "item"
 				item: "ae2:pattern_access_terminal"
 			}]
 			rewards: [{
-				id: "60910F5984D9A60E"
+				id: "7C383955F6661648"
 				type: "command"
 				title: "Epic Applied Energistics Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -880,18 +805,15 @@
 				"The channel limit can be fairly restrictive but consider that a single ME Storage Bus can be used with a Storage Controller from Functional Storage or Sophisticated Storage; a small Ad Hoc network can therefore allow centralized access to a very large amount of storage, making this a great way to get organized early on. "
 			]
 			hide_dependency_lines: true
-			dependencies: [
-				"029656A1597547F9"
-				"63F29EE4BDECADC5"
-			]
-			id: "79315557F8BB1F99"
+			dependencies: ["0097F2FB87804251"]
+			id: "7346C9F69D3927FF"
 			tasks: [{
-				id: "577B6CFE4EE21CB6"
+				id: "48D6E5FE2CD4FC03"
 				type: "item"
 				item: "ae2:energy_acceptor"
 			}]
 			rewards: [{
-				id: "5BDD792D8C64CDF3"
+				id: "5AF2CC718C7B645A"
 				type: "command"
 				title: "Rare Applied Energistics Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -900,8 +822,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -2.5d
+			x: 0.0d
+			y: -2.0d
 			description: [
 				"The Flawless Budding Certus Quartz found in meteorites is not easily moved, and breaking it by hand will result in a Flawed Budding Certus Quartz which, when used to grow more Certus, will degrade further over time. "
 				""
@@ -909,15 +831,15 @@
 				""
 				"Automating the collection of Certus Quartz, be it remotely or at home, will be one of the primary challenges to getting into AE2 as Certus Quartz will be in high demand. Several options exist for automated harvesting, including Amethyst Golems from Ars Nouveau. "
 			]
-			dependencies: ["029656A1597547F9"]
-			id: "63F29EE4BDECADC5"
+			dependencies: ["0097F2FB87804251"]
+			id: "23B703D29164C39A"
 			tasks: [{
-				id: "4535F6ED34F0C681"
+				id: "283AEFC457EF26C8"
 				type: "item"
 				item: "ae2:certus_quartz_crystal"
 			}]
 			rewards: [{
-				id: "2F0C078854BD0C27"
+				id: "78266754B7850F70"
 				type: "command"
 				title: "Miner's Delight"
 				icon: "kubejs:miners_delight"
@@ -933,10 +855,10 @@
 				""
 				"Note: Smart and Covered cables of the same type and color will connect, so it is not necessary to run long lengths of Smart Cable. Instead, consider using one at the line’s starting point and continuing with Covered Cables from there. This gives an easy indication of the number of channels in use on that entire line. "
 			]
-			dependencies: ["7CCBE728C0D5090E"]
-			id: "687BAD603A1C2360"
+			dependencies: ["78F2C89B4BDC3518"]
+			id: "066690B512F54C08"
 			tasks: [{
-				id: "7A14B98C53180A0E"
+				id: "1D45B4425C813E2F"
 				type: "item"
 				title: "Smart Cables"
 				item: {
@@ -957,7 +879,7 @@
 				}
 			}]
 			rewards: [{
-				id: "33D8C58732E28B40"
+				id: "09CFB74977302E69"
 				type: "command"
 				title: "Rare Applied Energistics Loot Box"
 				icon: "kubejs:rare_lootbox"
@@ -977,11 +899,11 @@
 				""
 				"While ME P2P Tunnels may not be nested, the other types of P2P Tunnels may be transmitted over an ME P2P Tunnel connection."
 			]
-			dependencies: ["2A5E79640AB4BDA5"]
+			dependencies: ["78F157F1561D932F"]
 			min_width: 300
-			id: "4FD989BFEC000E3B"
+			id: "0F0C0C200A524CBF"
 			tasks: [{
-				id: "4BDE74C1FA99BAF3"
+				id: "35D05AF6D564F15D"
 				type: "item"
 				title: "Other P2P Tunnels"
 				item: {
@@ -1022,7 +944,7 @@
 				}
 			}]
 			rewards: [{
-				id: "7E47FD3643956FCE"
+				id: "165D78BF236C3E68"
 				type: "command"
 				title: "Epic Applied Energistics Loot Box"
 				icon: "kubejs:epic_lootbox"
@@ -1034,7 +956,7 @@
 			title: "Applied Energistics 2"
 			icon: "ae2:singularity"
 			x: 0.0d
-			y: -4.0d
+			y: -3.0d
 			shape: "gear"
 			description: [
 				"Applied Energistics takes storage and logistics to the next level. On its own, it is capable of automating many crafts while also providing deep storage solutions and capabilities to bridge many mods. "
@@ -1043,11 +965,11 @@
 				""
 				"{\"text\":\"AE2 Wiki\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/\"}}"
 			]
-			dependencies: ["0E45018D600614BA"]
+			dependencies: ["2CCCDD05AED3153F"]
 			hide: true
-			id: "7039D20D06BEAFC2"
+			id: "0097F2FB87804251"
 			tasks: [{
-				id: "695BE08F1A558DCA"
+				id: "04533E87C2D77F38"
 				type: "item"
 				title: "Any Raw Materials"
 				icon: "minecraft:raw_copper"
@@ -1060,7 +982,7 @@
 				}
 			}]
 			rewards: [{
-				id: "3DEBA95074DB1BBD"
+				id: "2111D1788D713E16"
 				type: "item"
 				item: "ae2:certus_quartz_wrench"
 			}]

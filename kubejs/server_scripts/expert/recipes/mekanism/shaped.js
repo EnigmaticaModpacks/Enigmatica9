@@ -153,13 +153,13 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'mekanism:enrichment_chamber',
-            pattern: ['ABA', 'CDC', 'EFE'],
+            pattern: ['EBE', 'CDC', 'AFA'],
             key: {
                 A: '#forge:gears/steel',
                 B: '#forge:essences/manipulation',
                 C: 'pneumaticcraft:printed_circuit_board',
                 D: '#industrialforegoing:machine_frame/simple',
-                E: '#forge:ingots/depths',
+                E: '#forge:plates/obsidian',
                 F: '#forge:essences/abjuration'
             },
             id: 'mekanism:enrichment_chamber'
@@ -195,6 +195,50 @@ ServerEvents.recipes((event) => {
                 C: 'thermal:machine_frame'
             },
             id: 'mekanism:laser_amplifier'
+        },
+        {
+            output: 'mekanism:basic_tier_installer',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:gears/compressed_iron',
+                B: 'kubejs:dimensional_storage_crystal',
+                C: 'immersiveengineering:component_electronic',
+                D: '#industrialforegoing:machine_frame/simple'
+            },
+            id: `${id_prefix}basic_tier_installer`
+        },
+        {
+            output: 'mekanism:advanced_tier_installer',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:gears/osmium',
+                B: 'ae2:spatial_cell_component_2',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#industrialforegoing:machine_frame/simple'
+            },
+            id: `${id_prefix}advanced_tier_installer`
+        },
+        {
+            output: 'mekanism:elite_tier_installer',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:gears/diamond',
+                B: 'ae2:spatial_cell_component_2',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#industrialforegoing:machine_frame/advanced'
+            },
+            id: `${id_prefix}elite_tier_installer`
+        },
+        {
+            output: 'mekanism:ultimate_tier_installer',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:gears/netherite',
+                B: 'ae2:spatial_cell_component_2',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#industrialforegoing:machine_frame/supreme'
+            },
+            id: `${id_prefix}ultimate_tier_installer`
         },
 
         // Placeholder recipes

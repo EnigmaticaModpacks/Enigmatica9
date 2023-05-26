@@ -45,7 +45,15 @@
 		{
 			x: 0.0d
 			y: -4.0d
-			description: ["Obtain a Sculk Catalyst from a Warden"]
+			description: [
+				"Long ago, the peoples of this realm attempted to call forth a great power to aid them in their time of need. This creature, known as the Warden, protected them for centuries before their civilization collapsed and their cities fell to ruin. "
+				""
+				"It is said the Warden still wanders those ancient broken halls. Locate it and lay it to rest. "
+				""
+				"================================="
+				""
+				"Travel to a Deep Dark biome far underground in the Overworld and make enough noise to force the Warden out of hiding. "
+			]
 			dependencies: ["2CCCDD05AED3153F"]
 			hide: true
 			id: "3037BC1A3EC6EFF2"
@@ -75,6 +83,63 @@
 				id: "7D81071298ED011E"
 				type: "item"
 				item: "naturesaura:depth_ingot"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			dependencies: ["1D08EB5A9283F5F0"]
+			id: "70CB050759D84E11"
+			tasks: [{
+				id: "1EC35F31C7341A6D"
+				type: "item"
+				item: "industrialforegoing:machine_frame_supreme"
+			}]
+		}
+		{
+			title: "Supercritical Phase Shifter"
+			icon: "mekanism:sps_casing"
+			x: 0.0d
+			y: 1.5d
+			hide_dependency_lines: true
+			min_width: 275
+			id: "10C86AC59F9FA412"
+			tasks: [
+				{
+					id: "30185A701A427F31"
+					type: "item"
+					item: "mekanism:sps_casing"
+					count: 60L
+				}
+				{
+					id: "262DB0E774CFE407"
+					type: "item"
+					item: "mekanismgenerators:reactor_glass"
+					count: 122L
+				}
+				{
+					id: "53AB66ED4447EA78"
+					type: "item"
+					item: "mekanism:sps_port"
+					count: 4L
+				}
+				{
+					id: "62492CD5442229F4"
+					type: "item"
+					item: "mekanism:supercharged_coil"
+					count: 2L
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 1.5d
+			hide_dependency_lines: true
+			id: "7674A0390C41044C"
+			tasks: [{
+				id: "2D0E28E7D7C3B594"
+				type: "item"
+				item: "mekanism:antiprotonic_nucleosynthesizer"
 			}]
 		}
 	]

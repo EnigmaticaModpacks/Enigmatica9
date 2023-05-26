@@ -1,7 +1,7 @@
 {
 	id: "00000000000000A5"
 	group: "72A9465344128AF9"
-	order_index: 7
+	order_index: 8
 	filename: "mekanism"
 	title: "Mekanism"
 	icon: "mekanism:alloy_atomic"
@@ -194,9 +194,11 @@
 				"At least two Induction Ports will be required to make full use of the Matrix, one configured for Input and the other for Output. Sneak + Right-Click with a Configurator to change the mode."
 				""
 				"It’s worth noting that the current fill level of an Induction Matrix may be read with a Comparator on an Induction Port; very useful for turning power production down or off when it is nearly full."
+				""
+				"{\"text\":\"Mekanism Wiki: Induction Matrix\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com/wiki/Induction_Matrix\"}}"
 			]
 			dependencies: ["3AA57306A4EAE317"]
-			min_width: 250
+			min_width: 300
 			id: "00000000000006B5"
 			tasks: [
 				{
@@ -605,6 +607,8 @@
 				"The Evaporation Plant functions with heat, which can be provided through a variety of means. The easiest will be to hook a Resistive Heater up to one of the Valves and give it power. Note that the amount of power used by the Resistive Heater can be set in the GUI. Experiment to find the right balance of power."
 				""
 				"Water or other fluids may then be piped in to one of the other Valves. As the Water heats, it will be converted to Brine which may then be piped out of the third Valve."
+				""
+				"{\"text\":\"Mekanism Wiki: Thermal Evaporation Plant\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com/wiki/Thermal_Evaporation_Plant\"}}"
 			]
 			hide_dependency_lines: true
 			dependencies: ["00000000000006A5"]
@@ -921,9 +925,11 @@
 			description: [
 				"You had a stockpile of Uranium, right? Yeah. You're going to need a lot to build this structure, which is used for generating Antimatter from Nuclear Waste."
 				""
-				"Refer to the Mekanism Wiki for assistance with the shape of this structure. Two ports with Supercharged Coils will accept power input. The other two ports will be used for inputting waste and outputting antimatter."
+				"Two ports with Supercharged Coils will accept power input. The other two ports will be used for inputting waste and outputting antimatter."
 				""
 				"Adding more Ports with Supercharged Ports attached to them will allow the machine to run faster, assuming of course that sufficient power and waste can be supplied."
+				""
+				"{\"text\":\"Mekanism Wiki: Supercritical Phase Shifter\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com/wiki/Supercritical_Phase_Shifter\"}}"
 			]
 			hide_dependency_lines: true
 			dependencies: ["00000000000006A5"]
@@ -2530,7 +2536,11 @@
 		{
 			x: -0.5d
 			y: 1.5d
-			description: ["Large scale Gas or Fluid storage, Dynamic Tanks may be any size from 3x3x3 to 18x18x18. Structural Glass may be used in place of Dynamic Tank blocks anywhere but the edges and corners."]
+			description: [
+				"Large scale Gas or Fluid storage, Dynamic Tanks may be any size from 3x3x3 to 18x18x18. Structural Glass may be used in place of Dynamic Tank blocks anywhere but the edges and corners."
+				""
+				"{\"text\":\"Mekanism Wiki: Dynamic Tank\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com/wiki/Dynamic_Tank\"}}"
+			]
 			dependencies: ["5B2E979C2A919EDD"]
 			dependency_requirement: "one_completed"
 			id: "5387D366A4862FB1"

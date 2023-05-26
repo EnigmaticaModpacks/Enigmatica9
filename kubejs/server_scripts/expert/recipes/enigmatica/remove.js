@@ -201,6 +201,7 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:fluid_tank/ },
         { id: /mekanism:chemical_tank/ },
         { id: /mekanism:factory\// },
+        { id: /mekanism:tier_installer/ },
         { id: 'mekanism:crushing/charcoal_dust' },
         { id: 'mekanism:compat/ae2/fluix_crystal_to_dust' },
         { id: 'mekanism:compat/ae2/certus_crystal_to_dust' },
