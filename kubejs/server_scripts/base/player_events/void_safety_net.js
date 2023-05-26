@@ -5,12 +5,15 @@ PlayerEvents.tick((event) => {
         return;
     }
 
-    if (String(event.level.getDimension()).includes('compactmachines') && player.y < 0) {
+    let currentDimension = String(event.level.getDimension());
+    let watchDimensions = ['compact_world', 'nomadictents', 'the_end'];
+
+    if (player.y < 0 && watchDimensions.some((substring) => currentDimension.includes(substring))) {
         let playerString = player.getUsername();
         let spawn = player.getRespawnPosition();
         let spawnDimension = player.getRespawnDimension().location();
         console.log(
-            `${playerString} has fallen out of a machine! Teleporting to their spawn point in ${spawnDimension} at X:${spawn.x} Y:${spawn.y} Z:${spawn.z} `
+            `${playerString} has fallen into the void in ${currentDimension}! Teleporting to their spawn point in ${spawnDimension} at X:${spawn.x} Y:${spawn.y} Z:${spawn.z} `
         );
         server.runCommandSilent(`execute in ${spawnDimension} run tp ${playerString} ${spawn.x} ${spawn.y} ${spawn.z}`);
         player.tell(Text.of('Oops! Looks like you slipped! Warping back to your spawn point.').green());
