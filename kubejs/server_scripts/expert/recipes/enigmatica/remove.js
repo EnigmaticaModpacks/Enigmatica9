@@ -79,10 +79,12 @@ ServerEvents.recipes((event) => {
         { id: 'create:compat/ae2/milling/ender_pearl' },
         { id: 'create:crushing/prismarine_crystals' },
         { id: 'create:sequenced_assembly/track' },
+        { id: 'create:brass_ladder_from_plates_brass_stonecutting' },
 
         { id: /createaddition:pressing\/.*_ingot/ },
         { id: /createaddition:crafting\/capacitor/ },
         { id: 'createaddition:crafting/portable_energy_interface' },
+        { id: 'createaddition:crafting/digital_adapter' },
         { id: 'createaddition:compat/immersiveengineering/crushing/steel_ingot' },
         { id: 'createaddition:compat/immersiveengineering/constantan' },
         { id: 'createaddition:compat/immersiveengineering/electrum' },

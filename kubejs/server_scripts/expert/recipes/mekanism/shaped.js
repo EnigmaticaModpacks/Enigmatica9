@@ -240,6 +240,31 @@ ServerEvents.recipes((event) => {
             },
             id: `${id_prefix}ultimate_tier_installer`
         },
+        {
+            output: 'mekanism:chemical_crystallizer',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'ae2:quartz_growth_accelerator',
+                B: 'mekanism:basic_chemical_tank',
+                C: '#industrialforegoing:machine_frame/supreme',
+                D: '#forge:gears/diamond',
+                E: '#forge:essences/earth'
+            },
+            id: 'mekanism:chemical_crystallizer'
+        },
+        {
+            output: 'mekanism:antiprotonic_nucleosynthesizer',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'spirit:soul_glass',
+                B: 'mekanism:basic_chemical_tank',
+                C: 'mekanism:superchared_coil',
+                D: 'ars_nouveau:arcane_core',
+                E: '#forge:gears/diamond',
+                F: '#forge:nether_stars'
+            },
+            id: 'mekanism:antiprotonic_nucleosynthesizer'
+        },
 
         // Placeholder recipes
 

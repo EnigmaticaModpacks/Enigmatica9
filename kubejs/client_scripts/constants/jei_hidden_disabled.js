@@ -264,6 +264,7 @@ jei.expert.items.disabled = [
     'createaddition:modular_accumulator',
     'createaddition:capacitor',
     'createaddition:portable_energy_interface',
+    'createaddition:crafting/digital_adapter',
 
     'farmingforblockheads:feeding_trough',
 

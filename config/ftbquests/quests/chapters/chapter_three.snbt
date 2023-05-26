@@ -33,7 +33,11 @@
 		{
 			x: 0.0d
 			y: -3.0d
-			description: ["Use the Catalyst to create a Sculk farm"]
+			description: [
+				"Though found in the wild, creating a local farm for Sculk is recommended. Whenever a mob dies near a Sculk Catalyst, it will cause the Catalyst to convert nearby Stone into Sculk. "
+				""
+				"Devise a way to automate this. "
+			]
 			dependencies: ["3037BC1A3EC6EFF2"]
 			id: "5BAB85095E92AFD9"
 			tasks: [{

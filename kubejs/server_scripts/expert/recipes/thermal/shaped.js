@@ -410,7 +410,7 @@ ServerEvents.recipes((event) => {
                 B: '#forge:plastic',
                 C: '#industrialforegoing:machine_frame/simple',
                 D: '#forge:gears/electrum',
-                E: '#forge:essences/water'
+                E: '#forge:essences/earth'
             },
             id: 'thermal:machine_crystallizer'
         },

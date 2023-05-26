@@ -378,6 +378,35 @@ ServerEvents.recipes((event) => {
                 C: '#forge:gravel'
             },
             id: `${id_prefix}track_from_bronze`
+        },
+        {
+            output: 'create:smart_fluid_pipe',
+            pattern: ['A', 'B', 'C'],
+            key: {
+                A: '#forge:ingots/energized_steel',
+                B: 'create:fluid_pipe',
+                C: 'pneumaticcraft:logistics_core'
+            },
+            id: `create:crafting/kinetics/smart_fluid_pipe`
+        },
+        {
+            output: 'create:smart_chute',
+            pattern: ['A', 'B', 'C'],
+            key: {
+                A: '#forge:ingots/energized_steel',
+                B: 'create:chute',
+                C: 'pneumaticcraft:logistics_core'
+            },
+            id: `create:crafting/kinetics/smart_chute`
+        },
+        {
+            output: 'create:flywheel',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: '#forge:ingots/bronze',
+                B: 'create:shaft'
+            },
+            id: `create:crafting/kinetics/flywheel`
         }
     ];
 

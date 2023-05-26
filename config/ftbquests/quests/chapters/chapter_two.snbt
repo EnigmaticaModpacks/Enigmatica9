@@ -12,6 +12,13 @@
 			x: 1.0d
 			y: 8.0d
 			shape: "hexagon"
+			description: [
+				"With items attuned to the destination it is now possible to travel to the Nether."
+				""
+				"================================="
+				""
+				"Look for &cRitual Teleport Nether&r in JEI to find the recipe for the teleportation ritual to visit the Nether."
+			]
 			dependencies: ["4F90F6437D6CF7EC"]
 			id: "3D0B7DA1DD0A74B1"
 			tasks: [{

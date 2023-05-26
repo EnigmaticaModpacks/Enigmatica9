@@ -28,6 +28,55 @@ const entries = {
                 normal: 'Tainted Gold Ingot',
                 expert: 'Celestial Gold Ingot'
             }
+        },
+        {
+            key: 'item.emendatusenigmatica.brass_ingot',
+            value: {
+                normal: 'Brass Ingot',
+                expert: 'Aetherial Brass Ingot'
+            }
+        },
+        {
+            key: 'item.emendatusenigmatica.brass_nugget',
+            value: {
+                normal: 'Brass Nugget',
+                expert: 'Aetherial Brass Nugget'
+            }
+        },
+        {
+            key: 'item.emendatusenigmatica.brass_dust',
+            value: {
+                normal: 'Brass Dust',
+                expert: 'Aetherial Brass Dust'
+            }
+        },
+        {
+            key: 'item.emendatusenigmatica.brass_plate',
+            value: {
+                normal: 'Brass Plate',
+                expert: 'Aetherial Brass Plate'
+            }
+        },
+        {
+            key: 'item.emendatusenigmatica.brass_gear',
+            value: {
+                normal: 'Brass Gear',
+                expert: 'Aetherial Brass Gear'
+            }
+        },
+        {
+            key: 'item.emendatusenigmatica.brass_rod',
+            value: {
+                normal: 'Brass Rod',
+                expert: 'Aetherial Brass Rod'
+            }
+        },
+        {
+            key: 'block.emendatusenigmatica.brass_block',
+            value: {
+                normal: 'Block of Brass',
+                expert: 'Block of Aetherial Brass'
+            }
         }
     ],
     naturesaura: [
@@ -299,8 +348,15 @@ const entries = {
         {
             key: 'item.pneumaticcraft.drill_bit_netherite',
             value: {
-                normal: 'Diamond Drill Bit',
+                normal: 'Netherite Drill Bit',
                 expert: "Soulstrider's Drill Bit"
+            }
+        },
+        {
+            key: 'item.pneumaticcraft.unassembled_drill_bit_netherite',
+            value: {
+                normal: 'Unassembled Netherite Drill Bit',
+                expert: "Unassembled Soulstrider's Drill Bit"
             }
         },
         {
