@@ -504,15 +504,14 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: -2.0d
 			y: -4.5d
-			subtitle: "Do not screw with the regulator"
 			description: [
-				"A minor recalibration and the Personal Shrinking Device can shrink one right out of sight and into the nooks and crannies of special machines. "
+				"The Personal Shrinking Device can shrink one right out of sight and into the nooks and crannies of special machines. "
 				""
 				"Build your own contraption within them to suit your needs, complete with custom input and output sides. "
 				""
-				"Simply Right-Click a Compact Machine with the PSD to warp inside of it. "
+				"Simply Right-Click a Compact Machine with the Personal Shrinking Device to warp inside."
 			]
 			dependencies: ["0000000000000400"]
 			id: "0AD2769DC173D26D"
@@ -530,13 +529,15 @@
 		}
 		{
 			icon: "compactmachines:machine_tiny"
-			x: -0.5d
+			x: -2.5d
 			y: -3.5d
 			subtitle: "One, cut a hole in a box"
 			description: [
 				"Gather the materials for your first Compact Machine!"
 				""
-				"The Tiny Compact Machine has an internal volume of 3x3x3 and while that seems terribly small, it is perfect for certain smaller automations. And if you yourself are shrunk it can make placing the blocks inside quite simple. "
+				"Compact Machines range in size from 3x3x3 to 13x13x13 blocks of internal space. "
+				""
+				"Choose the size that best fits your needs and build away!"
 			]
 			dependencies: ["0AD2769DC173D26D"]
 			min_width: 250
@@ -544,7 +545,40 @@
 			tasks: [{
 				id: "16A0C1D718EA19AF"
 				type: "item"
-				item: "compactmachines:machine_tiny"
+				title: "Compact Machines"
+				icon: "compactmachines:machine_small"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "compactmachines:machine_tiny"
+								Count: 1b
+							}
+							{
+								id: "compactmachines:machine_small"
+								Count: 1b
+							}
+							{
+								id: "compactmachines:machine_normal"
+								Count: 1b
+							}
+							{
+								id: "compactmachines:machine_large"
+								Count: 1b
+							}
+							{
+								id: "compactmachines:machine_giant"
+								Count: 1b
+							}
+							{
+								id: "compactmachines:machine_maximum"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "3E2CA8D755178794"
@@ -557,28 +591,8 @@
 		}
 		{
 			x: -1.5d
-			y: -3.0d
-			description: ["Weighing in at 13x13x13 internal volume, the Maximum sized Compact Machine truly offers a world of automation possibilities. What will you build in yours? A mobile base of operations? Compact ore processing? Zombie-proof Villager trading hall? "]
-			dependencies: ["3787A109AABC8921"]
-			id: "0DAA452348B02827"
-			tasks: [{
-				id: "21ED2337B44743E5"
-				type: "item"
-				item: "compactmachines:machine_maximum"
-			}]
-			rewards: [{
-				id: "299A8E596E259DC4"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
-			x: 0.5d
-			y: -3.0d
-			subtitle: "Quantum Tunneling"
+			y: -3.5d
+			subtitle: "Two, stick your junk in that box"
 			description: [
 				"Placed on the walls inside Compact Machines, Tunnels permit a connection to the outside world. "
 				""
@@ -1384,6 +1398,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["00000000000003FF"]
+			min_width: 300
 			id: "0FB7A6E25F2D548C"
 			tasks: [
 				{
@@ -1412,6 +1427,130 @@
 				icon: "kubejs:sorcerers_delight"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				player_command: false
+			}]
+		}
+		{
+			title: "Nomadic Tents"
+			icon: {
+				id: "nomadictents:mega_yurt"
+				Count: 1b
+				tag: { }
+			}
+			x: 1.0d
+			y: -4.5d
+			description: [
+				"Let wanderlust take you where the wind blows and bring your home along with you for the journey. "
+				""
+				"Nomadic Tents provide a small area to keep your essentials. Build a small storage system inside with some basic machinery. Keep your bed there too if you wish; sleeping is allowed!"
+				""
+				"Craft any sized tent, then Right Click and Hold on the ground to place the frame. Right Click each Frame block with a Tent Mallet to form the tent. Using a Golden Tent Mallet will frame out the entire tent instantly!"
+				""
+				"To pick the tent back up, Right Click the door once with any Tent Mallet."
+				""
+				"To enter or exit the tent, simply Right Click or walk through the door. Enjoy your cozy new living space!"
+				""
+				"========================================"
+				""
+				"Note: Normally this mod has Tent Shovels that are used to increase the floor depth of a tent. These have been intentionally disabled, and all tents come with the floor depth maximized by default."
+				""
+				"Already have a Mega sized tent but didn’t upgrade the floor layers? Craft it together with a Wooden Shovel to max out the layers. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["00000000000003FF"]
+			min_width: 250
+			id: "025C09686412AB3D"
+			tasks: [
+				{
+					id: "269EA5D2111B8063"
+					type: "item"
+					title: "Nomadic Tents"
+					icon: {
+						id: "nomadictents:tiny_yurt"
+						Count: 1b
+						tag: { }
+					}
+					item: {
+						id: "itemfilters:id_regex"
+						Count: 1b
+						tag: {
+							value: "nomadictents:.*(yurt|tepee|bedouin|indlu|shamiyana)$"
+						}
+					}
+				}
+				{
+					id: "16D5F888C22D1C21"
+					type: "item"
+					title: "Mallet"
+					icon: {
+						id: "nomadictents:mallet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "nomadictents:mallet"
+									Count: 1b
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									id: "nomadictents:golden_mallet"
+									Count: 1b
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "683A154EC6984812"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			icon: "pneumaticcraft:bandage"
+			x: -0.5d
+			y: -4.0d
+			shape: "heart"
+			subtitle: "Don't Panic!"
+			description: [
+				"There’s nothing quite so frustrating as falling into the void and dying due to a bug."
+				""
+				"Things happen. Sometimes players get outside of the bounds of a Compact Machine or a Tent and end up in an awkward situation of being unable to get back again. "
+				""
+				"Enigmatica has implemented special precautions for these situations. "
+				""
+				"Just jump into the void to be teleported to your spawn point. "
+			]
+			dependencies: [
+				"0AD2769DC173D26D"
+				"025C09686412AB3D"
+			]
+			dependency_requirement: "one_completed"
+			id: "1881C88DD5D42696"
+			tasks: [{
+				id: "27D76CDD3F2023A0"
+				type: "checkmark"
+				title: "Safety First!"
+			}]
+			rewards: [{
+				id: "473CAA5579E95F8E"
+				type: "item"
+				item: "minecraft:cookie"
 			}]
 		}
 	]

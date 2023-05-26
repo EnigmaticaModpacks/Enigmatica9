@@ -1126,8 +1126,8 @@
 				Count: 1b
 				tag: { }
 			}
-			x: -9.0d
-			y: -12.5d
+			x: -10.0d
+			y: -13.0d
 			description: [
 				"Need help juggling all those tools? Craft a Tool Belt!"
 				""
@@ -1151,62 +1151,6 @@
 				id: "1A699324C4F5EC1A"
 				type: "item"
 				item: "toolbelt:pouch"
-			}]
-		}
-		{
-			title: "Nomadic Tents"
-			icon: {
-				id: "nomadictents:mega_yurt"
-				Count: 1b
-				tag: { }
-			}
-			x: -11.0d
-			y: -12.5d
-			description: [
-				"Let wanderlust take you where the wind blows and bring your home along with you for the journey. "
-				""
-				"Nomadic Tents provide a small area to keep your essentials. Build a small storage system inside with some basic machinery. Keep your bed there too if you wish; sleeping is allowed!"
-				""
-				"Craft any sized tent, then Right Click and Hold on the ground to place the frame. Right Click each Frame block with a Tent Mallet to form the tent. Using a Golden Tent Mallet will frame out the entire tent instantly!"
-				""
-				"To pick the tent back up, Right Click the door once with any Tent Mallet."
-				""
-				"To enter or exit the tent, simply Right Click or walk through the door. Enjoy your cozy new living space!"
-				""
-				"========================================"
-				""
-				"Note: Normally this mod has Tent Shovels that are used to increase the floor depth of a tent. These have been intentionally disabled, and all tents come with the floor depth maximized by default."
-				""
-				"Already have a Mega sized tent but didn’t upgrade the floor layers? Craft it together with a Wooden Shovel to max out the layers. "
-			]
-			hide_dependency_lines: true
-			dependencies: ["291E5727DD1ADDF4"]
-			min_width: 250
-			id: "320E6628092DA9F6"
-			tasks: [{
-				id: "5804F5B950B9142E"
-				type: "item"
-				title: "Nomadic Tents"
-				icon: {
-					id: "nomadictents:tiny_yurt"
-					Count: 1b
-					tag: { }
-				}
-				item: {
-					id: "itemfilters:mod"
-					Count: 1b
-					tag: {
-						value: "nomadictents"
-					}
-				}
-			}]
-			rewards: [{
-				id: "5020AB1034152295"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
 			}]
 		}
 	]

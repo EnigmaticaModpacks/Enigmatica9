@@ -158,7 +158,7 @@ ServerEvents.recipes((event) => {
                 A: '#forge:gears/steel',
                 B: '#forge:essences/manipulation',
                 C: 'pneumaticcraft:printed_circuit_board',
-                D: '#industrialforegoing:machine_frame/simple',
+                D: '#industrialforegoing:machine_frame/advanced',
                 E: '#forge:plates/obsidian',
                 F: '#forge:essences/abjuration'
             },
