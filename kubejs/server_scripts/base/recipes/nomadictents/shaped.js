@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
                 key: {
                     P: previous_size,
                     B: `nomadictents:${type}_section`,
-                    C: 'minecraft:stick'
+                    C: '#forge:rods/wooden'
                 },
                 layers: index,
                 id: `nomadictents:${size}_${type}`
