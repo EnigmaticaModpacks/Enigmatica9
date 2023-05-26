@@ -139,7 +139,7 @@ MoreJSEvents.villagerTrades((event) => {
 
     recipes.forEach((recipe) => {
         event
-            .addTrade('immersiveengineering:machinist', recipe.level, recipe.inputs, recipe.output)
+            .addTrade('pneumaticcraft:mechanic', recipe.level, recipe.inputs, recipe.output)
             .priceMultiplier(recipe.priceMultiplier)
             .maxUses(recipe.maxUses)
             .villagerExperience(recipe.experience);
