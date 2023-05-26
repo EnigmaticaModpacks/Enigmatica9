@@ -84,7 +84,11 @@
 			y: 4.5d
 			shape: "hexagon"
 			description: ["It would seem the Cult of the Ur-Ghast were up to something far more sinister than previously thought. The rift they opened with their Carminite Reactor also gave them the opportunity to obtain this strange debris.  "]
-			dependencies: ["2CCCDD05AED3153F"]
+			hide_dependency_lines: true
+			dependencies: [
+				"2CCCDD05AED3153F"
+				"60324503ED7AC4C1"
+			]
 			hide: true
 			id: "0CFE9B39B0643013"
 			tasks: [{
