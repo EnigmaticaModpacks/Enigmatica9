@@ -203,7 +203,7 @@
 			}]
 		}
 		{
-			x: -12.5d
+			x: -12.0d
 			y: -12.5d
 			subtitle: "Pym Powered"
 			description: [
@@ -1141,7 +1141,7 @@
 			}]
 		}
 		{
-			x: -7.5d
+			x: -8.0d
 			y: -12.5d
 			description: [
 				"Creeping Creepers got you down? Zealous Zombies getting all up in your face? Salacious Skeletons just won’t let you mine in peace?"
@@ -1217,8 +1217,8 @@
 				Count: 1b
 				tag: { }
 			}
-			x: -9.5d
-			y: -13.0d
+			x: -9.0d
+			y: -12.5d
 			description: [
 				"Need help juggling all those tools? Craft a Tool Belt!"
 				""
@@ -1251,8 +1251,8 @@
 				Count: 1b
 				tag: { }
 			}
-			x: -10.5d
-			y: -13.0d
+			x: -11.0d
+			y: -12.5d
 			description: [
 				"Let wanderlust take you where the wind blows and bring your home along with you for the journey. "
 				""
