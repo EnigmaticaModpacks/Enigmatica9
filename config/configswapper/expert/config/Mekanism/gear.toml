@@ -5,13 +5,13 @@
 	#Meka-Tool Settings
 	[gear.mekatool]
 		#Base energy (Joules) usage of the Meka-Tool. (Gets multiplied by speed factor)
-		energyUsage = "10"
+		energyUsage = "100"
 		#Silk touch energy (Joules) usage of the Meka-Tool. (Gets multiplied by speed factor)
-		energyUsageSilk = "100"
+		energyUsageSilk = "1000"
 		#Cost in Joules of using the Meka-Tool to deal 4 units of damage.
 		energyUsageWeapon = "2000"
 		#Cost in Joules of using the Meka-Tool to teleport 10 blocks.
-		energyUsageTeleport = "1000"
+		energyUsageTeleport = "10000"
 		#Maximum distance a player can teleport with the Meka-Tool.
 		#Range: 2 ~ 1024
 		maxTeleportReach = 100
@@ -22,17 +22,17 @@
 		#Range: 0.1 ~ 100.0
 		baseEfficiency = 4.0
 		#Energy capacity (Joules) of the Meka-Tool without any installed upgrades. Quadratically scaled by upgrades.
-		baseEnergyCapacity = "16000000"
+		baseEnergyCapacity = "2500"
 		#Amount (joules) of energy the Meka-Tool can accept per tick. Quadratically scaled by upgrades.
-		chargeRate = "100000"
+		chargeRate = "1500"
 		#Cost in Joules of using the Meka-Tool as a hoe.
-		energyUsageHoe = "10"
+		energyUsageHoe = "100"
 		#Cost in Joules of using the Meka-Tool as a shovel for making paths and dowsing campfires.
-		energyUsageShovel = "10"
+		energyUsageShovel = "100"
 		#Cost in Joules of using the Meka-Tool as an axe for stripping logs, scraping, or removing wax.
-		energyUsageAxe = "10"
+		energyUsageAxe = "100"
 		#Cost in Joules of using the Meka-Tool to shear entities.
-		energyUsageShearEntity = "10"
+		energyUsageShearEntity = "100"
 		#Enable the 'Extended Vein Mining' mode for the Meka-Tool. (Allows vein mining everything not just ores/logs)
 		extendedMining = true
 		#Attack speed of the Meka-Tool.
