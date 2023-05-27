@@ -257,6 +257,7 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:boiler_valve' },
         { id: 'mekanism:pressure_disperser' },
         { id: 'mekanism:superheating_element' },
+        { id: 'mekanism:meka_tool' },
 
         { id: 'minecraft:netherite_ingot' },
         { id: 'minecraft:lodestone' },
@@ -291,6 +292,7 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:assembly/unassembled_pcb' },
         { id: 'pneumaticcraft:assembly/red_dye' },
         { id: 'pneumaticcraft:assembly/solar_cell' },
+        { id: 'pneumaticcraft:assembly/netherite_drill_bit' },
         { id: 'pneumaticcraft:pressure_chamber_valve' },
         { id: 'pneumaticcraft:pressure_chamber_glass' },
         { id: 'pneumaticcraft:logistics_core' },
@@ -385,6 +387,8 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:machines/pulverizer/pulverizer_quartz' },
         { id: 'thermal:machines/pulverizer/pulverizer_emerald' },
         { id: 'thermal:machines/pulverizer/pulverizer_diamond' },
+
+        { id: 'toomanyglyphs:glyph_chaining' },
 
         { id: 'twilightforest:equipment/fiery_ingot_crafting' },
         { id: /twilightforest:equipment\/fiery_fiery_/ },

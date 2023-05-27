@@ -59,14 +59,14 @@ ServerEvents.recipes((event) => {
         },
         {
             entity: 'twilightforest:helmet_crab',
-            inputs: ['naturesaura:birth_spirit', 'farmersdelight:cod_slice', 'minecraft:sand'],
+            inputs: ['naturesaura:birth_spirit', 'minecraft:cod', 'minecraft:sand'],
             aura: aura_cost.small,
             time: 40,
             id: `${id_prefix}helmet_crab`
         },
         {
             entity: 'quark:crab',
-            inputs: ['naturesaura:birth_spirit', 'farmersdelight:salmon_slice', 'minecraft:sand'],
+            inputs: ['naturesaura:birth_spirit', 'minecraft:salmon', 'minecraft:sand'],
             aura: aura_cost.small,
             time: 40,
             id: `${id_prefix}crab`

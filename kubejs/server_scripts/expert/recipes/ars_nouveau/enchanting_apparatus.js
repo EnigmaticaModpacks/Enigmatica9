@@ -92,6 +92,13 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}drill_bit_diamond`
         },
         {
+            output: 'pneumaticcraft:drill_bit_netherite',
+            inputs: ['#forge:ingots/depths', 'toomanyglyphs:glyph_chaining'],
+            reagents: ['pneumaticcraft:drill_bit_diamond'],
+            sourceCost: 10000,
+            id: `${id_prefix}drill_bit_netherite`
+        },
+        {
             output: 'create:brass_hand',
             inputs: ['#forge:essences/manipulation', '#forge:leather', '#forge:leather', '#forge:leather'],
             reagents: ['#forge:ingots/energized_steel'],
@@ -384,6 +391,22 @@ ServerEvents.recipes((event) => {
             reagents: ['ars_nouveau:wand'],
             sourceCost: 0,
             id: `${id_prefix}mininggadget`
+        },
+        {
+            output: 'mekanism:meka_tool',
+            inputs: [
+                '#forge:gems/infused_diamond',
+                '#forge:rods/osmium',
+                'powah:capacitor_spirited',
+                '#forge:plastic',
+                'ars_nouveau:glyph_break',
+                'immersiveengineering:component_electronic',
+                'powah:capacitor_spirited',
+                '#forge:rods/osmium'
+            ],
+            reagents: ['immersiveengineering:drill'],
+            sourceCost: 0,
+            id: `${id_prefix}meka_tool`
         },
         {
             output: 'ars_nouveau:summon_focus',

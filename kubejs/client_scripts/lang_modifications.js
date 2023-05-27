@@ -190,8 +190,8 @@ const entries = {
         {
             key: 'advancement.create.andesite_alloy.desc',
             value: {
-                normal: "Obtain some Andesite Alloy, Create's most important resource",
-                expert: "Obtain some Compressed Stone, Create's most important resource"
+                normal: `Obtain some Andesite Alloy, Create's most important resource`,
+                expert: `Obtain some Compressed Stone, Create's most important resource`
             }
         },
         {
@@ -286,14 +286,14 @@ const entries = {
             key: 'gui.tooltip.item.pneumaticcraft.drill_bit_diamond',
             value: {
                 normal: 'Faster than Compressed Iron Drill Bit${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs)',
-                expert: "Faster than Botanist's Drill Bit${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs)"
+                expert: `Faster than Botanist's Drill Bit${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs)`
             }
         },
         {
             key: 'gui.tooltip.item.pneumaticcraft.drill_bit_netherite',
             value: {
                 normal: 'Faster than Diamond Drill Bit${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs), 3x3(full), vein(all blocks)',
-                expert: "Faster than Skyseeker's Drill Bit${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs), 3x3(full), vein(all blocks)"
+                expert: `Faster than Skyseeker's Drill Bit${br}Dig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs), 3x3(full), vein(all blocks)`
             }
         },
         {
@@ -335,28 +335,28 @@ const entries = {
             key: 'item.pneumaticcraft.drill_bit_compressed_iron',
             value: {
                 normal: 'Compressed Iron Drill Bit',
-                expert: "Botanist's Drill Bit"
+                expert: `Botanist's Drill Bit`
             }
         },
         {
             key: 'item.pneumaticcraft.drill_bit_diamond',
             value: {
                 normal: 'Diamond Drill Bit',
-                expert: "Skyseeker's Drill Bit"
+                expert: `Skyseeker's Drill Bit`
             }
         },
         {
             key: 'item.pneumaticcraft.drill_bit_netherite',
             value: {
                 normal: 'Netherite Drill Bit',
-                expert: "Soulstrider's Drill Bit"
+                expert: `Soulstrider's Drill Bit`
             }
         },
         {
-            key: 'item.pneumaticcraft.unassembled_drill_bit_netherite',
+            key: 'item.pneumaticcraft.unassembled_netherite_drill_bit',
             value: {
                 normal: 'Unassembled Netherite Drill Bit',
-                expert: "Unassembled Soulstrider's Drill Bit"
+                expert: `Unassembled Soulstrider's Drill Bit`
             }
         },
         {
@@ -397,8 +397,8 @@ const entries = {
         {
             key: 'gui.tooltip.item.pneumaticcraft.pressure_gauge_module',
             value: {
-                normal: "§9Formula: Redstone = 2.0 x pressure(bar)${br}${br}§bThis module emits a redstone signal, the strength of which depends on the tube's pressure.${br}${br}When upgraded with a Module Expansion Card, the threshold can be configured precisely via GUI.",
-                expert: "§9Formula: Redstone = 2.0 x pressure(bar)${br}${br}§bThis module emits a redstone signal, the strength of which depends on the tube's pressure.${br}${br}When upgraded with a Module Expansion Crystal, the threshold can be configured precisely via GUI."
+                normal: `§9Formula: Redstone = 2.0 x pressure(bar)${br}${br}§bThis module emits a redstone signal, the strength of which depends on the tube's pressure.${br}${br}When upgraded with a Module Expansion Card, the threshold can be configured precisely via GUI.`,
+                expert: `§9Formula: Redstone = 2.0 x pressure(bar)${br}${br}§bThis module emits a redstone signal, the strength of which depends on the tube's pressure.${br}${br}When upgraded with a Module Expansion Crystal, the threshold can be configured precisely via GUI.`
             }
         },
         {
@@ -411,8 +411,8 @@ const entries = {
         {
             key: 'gui.tooltip.item.pneumaticcraft.regulator_tube_module',
             value: {
-                normal: '§bThis module limits the pressure allowed on its low side based on the redstone signal it receives. No signal = 4.9 bar (19.9 for Advanced Pressure Tubes), a full signal = 0 bar (no air allowed through), and other signal levels are interpolated. Air is always allowed to travel "backwards" through the Regulator, making it usable as a one-way valve.${br}When upgraded with a Module Expansion Card, the threshold can be configured precisely via GUI.',
-                expert: '§bThis module limits the pressure allowed on its low side based on the redstone signal it receives. No signal = 4.9 bar (19.9 for Advanced Pressure Tubes), a full signal = 0 bar (no air allowed through), and other signal levels are interpolated. Air is always allowed to travel "backwards" through the Regulator, making it usable as a one-way valve.${br}When upgraded with a Module Expansion Crystal, the threshold can be configured precisely via GUI.'
+                normal: '§bThis module limits the pressure allowed on its low side based on the redstone signal it receives. No signal = 4.9 bar (19.9 for Advanced Pressure Tubes), a full signal = 0 bar (no air allowed through), and other signal levels are interpolated. Air is always allowed to travel `backwards` through the Regulator, making it usable as a one-way valve.${br}When upgraded with a Module Expansion Card, the threshold can be configured precisely via GUI.',
+                expert: '§bThis module limits the pressure allowed on its low side based on the redstone signal it receives. No signal = 4.9 bar (19.9 for Advanced Pressure Tubes), a full signal = 0 bar (no air allowed through), and other signal levels are interpolated. Air is always allowed to travel `backwards` through the Regulator, making it usable as a one-way valve.${br}When upgraded with a Module Expansion Crystal, the threshold can be configured precisely via GUI.'
             }
         },
         {
@@ -658,8 +658,8 @@ const entries = {
         {
             key: 'book.occultism.dictionary_of_spirits.summoning_rituals.summon_crusher_t1.automation.text',
             value: {
-                normal: "To ease automation, try summoning a [Transporter Spirit](entry://occultism:dictionary_of_spirits/summoning_rituals/summon_transport_items)\nto place items from chests in the crusher's inventory, and a [Janitor Spirit](entry://occultism:dictionary_of_spirits/summoning_rituals/summon_cleaner) to collect the processed items.\n",
-                expert: "To ease automation, try summoning a [Transporter Spirit](entry://occultism:dictionary_of_spirits/summoning_rituals/summon_transport_items)\nto place items from chests in the etcher's inventory, and a [Janitor Spirit](entry://occultism:dictionary_of_spirits/summoning_rituals/summon_cleaner) to collect the processed items.\n"
+                normal: `To ease automation, try summoning a [Transporter Spirit](entry://occultism:dictionary_of_spirits/summoning_rituals/summon_transport_items)\nto place items from chests in the crusher's inventory, and a [Janitor Spirit](entry://occultism:dictionary_of_spirits/summoning_rituals/summon_cleaner) to collect the processed items.\n`,
+                expert: `To ease automation, try summoning a [Transporter Spirit](entry://occultism:dictionary_of_spirits/summoning_rituals/summon_transport_items)\nto place items from chests in the etcher's inventory, and a [Janitor Spirit](entry://occultism:dictionary_of_spirits/summoning_rituals/summon_cleaner) to collect the processed items.\n`
             }
         },
         {
@@ -1073,8 +1073,8 @@ const entries = {
         {
             key: 'advancements.mekanism.nucleosynthesizer.description',
             value: {
-                normal: "Craft an Antiprotonic Nucleosynthesizer and don't worry if you can't pronounce the name",
-                expert: "Craft an Aetheric Transmutation Chamber and don't worry if you can't pronounce the name"
+                normal: `Craft an Antiprotonic Nucleosynthesizer and don't worry if you can't pronounce the name`,
+                expert: `Craft an Aetheric Transmutation Chamber and don't worry if you can't pronounce the name`
             }
         },
         {

@@ -157,8 +157,8 @@ ServerEvents.recipes((event) => {
             key: {
                 A: '#forge:gears/steel',
                 B: '#forge:essences/manipulation',
-                C: 'pneumaticcraft:printed_circuit_board',
-                D: '#industrialforegoing:machine_frame/advanced',
+                C: '#forge:plastic',
+                D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:plates/obsidian',
                 F: '#forge:essences/abjuration'
             },
@@ -258,30 +258,41 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'spirit:soul_glass',
                 B: 'mekanism:basic_chemical_tank',
-                C: 'mekanism:superchared_coil',
+                C: 'mekanism:supercharged_coil',
                 D: 'ars_nouveau:arcane_core',
                 E: '#forge:gears/diamond',
                 F: '#forge:nether_stars'
             },
             id: 'mekanism:antiprotonic_nucleosynthesizer'
-        },
-
-        // Placeholder recipes
-
-        {
-            output: 'mekanism:meka_tool',
-            pattern: ['ABA', 'CDC', 'EFE'],
-            key: {
-                A: '#forge:circuits/ultimate',
-                B: 'mekanism:configurator',
-                C: 'mekanism:hdpe_sheet',
-                D: '#forge:alloys/ultimate',
-                E: '#forge:pellets/polonium',
-                F: 'powah:capacitor_spirited'
-            },
-            id: 'mekanism:meka_tool'
         }
     ];
+
+    const meka_tool_modules = [
+        { module: 'mekanism:module_teleportation_unit', glyph: 'ars_nouveau:glyph_blink' },
+        { module: 'mekanism:module_farming_unit', glyph: 'ars_nouveau:glyph_harvest' },
+        { module: 'mekanism:module_shearing_unit', glyph: 'ars_nouveau:glyph_cut' },
+        { module: 'mekanism:module_silk_touch_unit', glyph: 'ars_nouveau:glyph_extract' },
+        { module: 'mekanism:module_attack_amplification_unit', glyph: 'ars_nouveau:glyph_harm' },
+        { module: 'mekanism:module_fortune_unit', glyph: 'ars_nouveau:glyph_fortune' },
+        { module: 'mekanism:module_blasting_unit', glyph: 'ars_nouveau:glyph_explosion' },
+        { module: 'mekanism:module_excavation_escalation_unit', glyph: 'ars_nouveau:glyph_amplify' },
+        { module: 'mekanism:module_vein_mining_unit', glyph: 'toomanyglyphs:glyph_chaining' }
+    ];
+
+    meka_tool_modules.forEach((recipe) => {
+        recipes.push({
+            output: recipe.module,
+            pattern: ['ABA', 'CDC', 'CEC'],
+            key: {
+                A: '#forge:gems/source',
+                B: recipe.glyph,
+                C: '#forge:plastic',
+                D: 'modularrouters:augment_core',
+                E: 'pneumaticcraft:printed_circuit_board'
+            },
+            id: recipe.module
+        });
+    });
 
     recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);

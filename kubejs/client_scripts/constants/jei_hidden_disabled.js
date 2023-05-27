@@ -264,7 +264,7 @@ jei.expert.items.disabled = [
     'createaddition:modular_accumulator',
     'createaddition:capacitor',
     'createaddition:portable_energy_interface',
-    'createaddition:crafting/digital_adapter',
+    'createaddition:digital_adapter',
 
     'farmingforblockheads:feeding_trough',
 
@@ -513,6 +513,7 @@ jei.expert.items.disabled = [
     'pneumaticcraft:empty_pcb',
     'pneumaticcraft:solar_cell',
     'pneumaticcraft:solar_wafer',
+    'pneumaticcraft:unassembled_netherite_drill_bit',
 
     /powah:(thermo_generator|solar_panel|furnator|magmator|reactor|energy|battery|ender)/,
     /powah:(energizing_rod_|player_transmitter_|capacitor_)(blazing|hardened)/,

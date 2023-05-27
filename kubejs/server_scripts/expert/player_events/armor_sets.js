@@ -17,6 +17,37 @@ const armor_sets = [
         ],
         effects: [{ potion: 'the_bumblezone:hidden', amp: 0 }]
     },
+    {
+        armor: [
+            'naturesaura:infused_iron_helmet',
+            'naturesaura:infused_iron_chest',
+            'naturesaura:infused_iron_pants',
+            'naturesaura:infused_iron_shoes'
+        ],
+        effects: [{ potion: 'ars_nouveau:recovery', amp: 0 }]
+    },
+    {
+        armor: ['naturesaura:sky_helmet', 'naturesaura:sky_chest', 'naturesaura:sky_pants', 'naturesaura:sky_shoes'],
+        effects: [{ potion: 'ars_nouveau:glide', amp: 0 }]
+    },
+    {
+        armor: [
+            'naturesaura:depth_helmet',
+            'naturesaura:depth_chest',
+            'naturesaura:depth_pants',
+            'naturesaura:depth_shoes'
+        ],
+        effects: [{ potion: 'ars_nouveau:shielding', amp: 1 }]
+    },
+    {
+        armor: [
+            'twilightforest:steeleaf_helmet',
+            'twilightforest:steeleaf_chestplate',
+            'twilightforest:steeleaf_leggings',
+            'twilightforest:steeleaf_boots'
+        ],
+        effects: [{ potion: 'minecraft:luck', amp: 0 }]
+    },
 
     // Wearing any piece of the meka suit disables spell casting since it makes you effectively immune to magic.
     {

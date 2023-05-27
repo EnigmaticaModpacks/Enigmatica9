@@ -45,6 +45,13 @@ ServerEvents.recipes((event) => {
             slag: 'thermal:rich_slag',
             xp: 0.5,
             id_suffix: `iesnium_ingot_from_dirty_dust`
+        },
+        {
+            output: `emendatusenigmatica:osmium_ingot`,
+            input: `#mekanism:dirty_dusts/osmium`,
+            slag: 'thermal:slag',
+            xp: 0.5,
+            id_suffix: `osmium_ingot_from_dirty_dust`
         }
     ];
 

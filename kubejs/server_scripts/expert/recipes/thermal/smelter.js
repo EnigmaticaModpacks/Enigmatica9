@@ -167,8 +167,8 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}energetic_transference_matrix`
         },
         {
-            inputs: ['4x minecraft:echo_shard', '#forge:ingots/netherite'],
-            outputs: ['naturesaura:depth_ingot'],
+            inputs: ['#forge:gems/spirit_attuned', '4x #forge:ingots/knightmetal'],
+            outputs: ['4x naturesaura:depth_ingot'],
             energy: 8000,
             id: `${id_prefix}depth_ingot`
         }

@@ -11,6 +11,21 @@ ServerEvents.recipes((event) => {
             count: 1,
             exp: 27,
             id: `ars_nouveau:glyph_pickup`
+        },
+        {
+            output: 'toomanyglyphs:glyph_chaining',
+            inputItems: [
+                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { item: 'minecraft:chain' } },
+                { item: { item: 'minecraft:chain' } },
+                { item: { item: 'minecraft:chain' } },
+                { item: { tag: 'forge:ingots/depths' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:ingots/depths' } }
+            ],
+            count: 1,
+            exp: 55,
+            id: `${id_prefix}glyph_chaining`
         }
     ];
 
