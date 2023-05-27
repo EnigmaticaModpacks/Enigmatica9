@@ -24,48 +24,6 @@ to make editing this file much easier.
             '4': [],
             '5': []
         },
-        'blue_skies:alchemist': {
-            '1': [],
-            '2': [],
-            '3': [],
-            '4': [],
-            '5': []
-        },
-        'blue_skies:nightwatcher': {
-            '1': [],
-            '2': [],
-            '3': [],
-            '4': [],
-            '5': []
-        },
-        'blue_skies:shoveler': {
-            '1': [],
-            '2': [],
-            '3': [],
-            '4': [],
-            '5': []
-        },
-        'blue_skies:stargazer': {
-            '1': [],
-            '2': [],
-            '3': [],
-            '4': [],
-            '5': []
-        },
-        'blue_skies:summoner': {
-            '1': [],
-            '2': [],
-            '3': [],
-            '4': [],
-            '5': []
-        },
-        'blue_skies:wrangler': {
-            '1': [],
-            '2': [],
-            '3': [],
-            '4': [],
-            '5': []
-        },
         'byg:forager': {
             '1': [
                 {
@@ -273,18 +231,7 @@ to make editing this file much easier.
                     type: 'corgilib:emerald_for_items'
                 }
             ],
-            '3': [
-                {
-                    config: {
-                        emerald_cost: 16,
-                        item: 'minecraft:rabbit_foot',
-                        max_uses: 3,
-                        number_of_items: 1,
-                        villager_xp: 10
-                    },
-                    type: 'corgilib:items_for_emeralds'
-                }
-            ],
+            '3': [],
             '4': [],
             '5': []
         },
@@ -536,161 +483,11 @@ to make editing this file much easier.
             '5': []
         },
         'pneumaticcraft:mechanic': {
-            '1': [
-                {
-                    config: {
-                        emerald_cost: 3,
-                        number_of_items: 4,
-                        max_uses: 10,
-                        villager_xp: 10,
-                        item: 'ae2:certus_quartz_crystal'
-                    },
-                    type: 'corgilib:items_for_emeralds'
-                },
-                {
-                    config: {
-                        emerald_cost: 1,
-                        number_of_items: 2,
-                        max_uses: 10,
-                        villager_xp: 10,
-                        item: 'pneumaticcraft:logistics_core'
-                    },
-                    type: 'corgilib:items_for_emeralds'
-                },
-                {
-                    config: {
-                        emerald_cost: 4,
-                        number_of_items: 8,
-                        max_uses: 20,
-                        villager_xp: 10,
-                        item: 'pneumaticcraft:bandage'
-                    },
-                    type: 'corgilib:items_for_emeralds'
-                },
-                {
-                    config: {
-                        cost: 4,
-                        max_uses: 20,
-                        villager_xp: 15,
-                        item: 'pneumaticcraft:glycerol'
-                    },
-                    type: 'corgilib:emerald_for_items'
-                }
-            ],
-            '2': [
-                {
-                    config: {
-                        emerald_cost: 5,
-                        number_of_items: 8,
-                        max_uses: 20,
-                        villager_xp: 20,
-                        item: 'ae2:sky_stone_block'
-                    },
-                    type: 'corgilib:items_for_emeralds'
-                },
-                {
-                    config: {
-                        emerald_cost: 4,
-                        number_of_items: 24,
-                        max_uses: 20,
-                        villager_xp: 10,
-                        item: 'pneumaticcraft:programming_puzzle'
-                    },
-                    type: 'corgilib:items_for_emeralds'
-                },
-                {
-                    config: {
-                        cost: 3,
-                        max_uses: 10,
-                        villager_xp: 15,
-                        item: 'ae2:charged_certus_quartz_crystal'
-                    },
-                    type: 'corgilib:emerald_for_items'
-                },
-                {
-                    config: {
-                        emerald_cost: 15,
-                        number_of_items: 1,
-                        max_uses: 5,
-                        villager_xp: 20,
-                        item: 'pneumaticcraft:air_canister'
-                    },
-                    type: 'corgilib:items_for_emeralds'
-                }
-            ],
-            '3': [
-                {
-                    config: {
-                        cost: 2,
-                        max_uses: 10,
-                        villager_xp: 10,
-                        item: 'ae2:quartz_glass'
-                    },
-                    type: 'corgilib:emerald_for_items'
-                },
-                {
-                    config: {
-                        emerald_cost: 5,
-                        number_of_items: 4,
-                        max_uses: 14,
-                        villager_xp: 14,
-                        item: 'ae2:fluix_crystal'
-                    },
-                    type: 'corgilib:items_for_emeralds'
-                }
-            ],
-            '4': [
-                {
-                    config: {
-                        cost: 5,
-                        max_uses: 8,
-                        villager_xp: 12,
-                        item: 'ae2:matter_ball'
-                    },
-                    type: 'corgilib:emerald_for_items'
-                },
-                {
-                    config: {
-                        emerald_cost: 64,
-                        number_of_items: 1,
-                        max_uses: 1,
-                        villager_xp: 30,
-                        item: 'ae2:mysterious_cube'
-                    },
-                    type: 'corgilib:items_for_emeralds'
-                },
-                {
-                    config: {
-                        emerald_cost: 4,
-                        number_of_items: 8,
-                        max_uses: 15,
-                        villager_xp: 15,
-                        item: 'pneumaticcraft:logistics_module'
-                    },
-                    type: 'corgilib:items_for_emeralds'
-                }
-            ],
-            '5': [
-                {
-                    config: {
-                        emerald_cost: 29,
-                        number_of_items: 1,
-                        max_uses: 2,
-                        villager_xp: 20,
-                        item: 'pneumaticcraft:spawner_core_shell'
-                    },
-                    type: 'corgilib:items_for_emeralds'
-                },
-                {
-                    config: {
-                        cost: 16,
-                        max_uses: 8,
-                        villager_xp: 12,
-                        item: 'ae2:fluix_pearl'
-                    },
-                    type: 'corgilib:emerald_for_items'
-                }
-            ]
+            '1': [],
+            '2': [],
+            '3': [],
+            '4': [],
+            '5': []
         }
     },
     // Whether this file appends villager/wandering trader trades.

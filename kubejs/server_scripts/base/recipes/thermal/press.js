@@ -67,7 +67,7 @@ ServerEvents.recipes((event) => {
     rod_materials.forEach((material) => {
         recipes.push({
             outputs: [{ item: `emendatusenigmatica:${material}_rod`, count: 2 }],
-            inputs: ['immersiveengineering:mold_rod', `#forge:plates/${material}`],
+            inputs: ['immersiveengineering:mold_rod', `#forge:ingots/${material}`],
             energy: 2400,
             id: `${id_prefix}${material}_rod`
         });

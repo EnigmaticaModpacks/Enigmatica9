@@ -89,21 +89,6 @@ ServerEvents.recipes((event) => {
         },
         {
             filter: {},
-            to_replace: '#forge:plates/brass',
-            replace_with: '#forge:plates/gold'
-        },
-        {
-            filter: {},
-            to_replace: '#forge:ingots/brass',
-            replace_with: '#forge:ingots/energized_steel'
-        },
-        {
-            filter: {},
-            to_replace: '#forge:storage_blocks/brass',
-            replace_with: '#forge:storage_blocks/energized_steel'
-        },
-        {
-            filter: {},
             to_replace: 'create:electron_tube',
             replace_with: 'pneumaticcraft:logistics_core'
         },

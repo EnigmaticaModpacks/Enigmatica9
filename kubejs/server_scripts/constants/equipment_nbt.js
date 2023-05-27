@@ -643,11 +643,12 @@ const reactive = {
                     name: '',
                     recipe: {
                         part0: 'ars_nouveau:glyph_touch',
-                        part1: 'ars_nouveau:glyph_pull',
-                        part2: 'ars_nouveau:glyph_amplify',
+                        part1: 'toomanyglyphs:glyph_filter_player',
+                        part2: 'ars_nouveau:glyph_pull',
                         part3: 'ars_nouveau:glyph_amplify',
                         part4: 'ars_nouveau:glyph_amplify',
-                        size: 5
+                        part5: 'ars_nouveau:glyph_amplify',
+                        size: 6
                     },
                     sound: { pitch: 0.4, soundTag: { id: 'ars_nouveau:tempestry_family' }, volume: 1.0 },
                     spellColor: { b: 255, g: 25, r: 80 }

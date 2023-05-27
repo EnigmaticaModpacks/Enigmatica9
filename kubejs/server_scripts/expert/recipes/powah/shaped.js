@@ -28,9 +28,9 @@ ServerEvents.recipes((event) => {
             output: 'powah:energizing_orb',
             pattern: ['AAA', 'ACA', 'BBB'],
             key: {
-                A: 'pneumaticcraft:pressure_chamber_glass',
-                B: 'pneumaticcraft:pressure_chamber_wall',
-                C: '#forge:essences/fire'
+                A: 'ae2:quartz_vibrant_glass',
+                B: 'ae2:sky_stone_block',
+                C: '#forge:essences/manipulation'
             },
             id: `powah:crafting/energizing_orb`
         },

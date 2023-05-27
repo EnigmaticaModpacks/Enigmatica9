@@ -1,20 +1,33 @@
 {
-	id: "0000000000000096"
-	group: "0856CF7F5CBEB20A"
-	order_index: 1
-	filename: "building"
-	title: "Building"
-	icon: "minecraft:scaffolding"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "building"
+	group: "0856CF7F5CBEB20A"
+	icon: "minecraft:scaffolding"
+	id: "0000000000000096"
+	order_index: 1
+	quest_links: [
+		{
+			id: "1AF381BF18122BDE"
+			linked_quest: "5A581A8DF6CCC352"
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			id: "5691FC6E26AEA49D"
+			linked_quest: "3542632905883686"
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			id: "3CFD52C6E987D8D2"
+			linked_quest: "6305EF196599FC7C"
+			x: 1.5d
+			y: 6.0d
+		}
+	]
 	quests: [
 		{
-			title: "Decoration"
-			icon: "minecraft:scaffolding"
-			x: 0.0d
-			y: 9.5d
-			shape: "gear"
-			subtitle: "Dirt Hut No More"
 			description: [
 				"Welcome to the Building Chapter"
 				""
@@ -22,99 +35,101 @@
 				""
 				"~Ridanisaurus Rid \\& MuteTiefling"
 			]
-			optional: true
+			icon: "minecraft:scaffolding"
 			id: "058D3BEB64C74E27"
-			tasks: [{
-				id: "4A2592C4467CEAF6"
-				type: "checkmark"
-				title: "Builder"
-			}]
+			optional: true
 			rewards: [
 				{
-					id: "6BCFA4922355B43F"
-					type: "item"
-					item: "create:builders_tea"
 					count: 4
+					id: "6BCFA4922355B43F"
+					item: "create:builders_tea"
 					random_bonus: 4
+					type: "item"
 				}
 				{
 					id: "3C390EFCC5489351"
-					type: "item"
 					item: "minecraft:stonecutter"
+					type: "item"
 				}
 			]
+			shape: "gear"
+			subtitle: "Dirt Hut No More"
+			tasks: [{
+				id: "4A2592C4467CEAF6"
+				title: "Builder"
+				type: "checkmark"
+			}]
+			title: "Decoration"
+			x: 0.0d
+			y: 9.5d
 		}
 		{
-			title: "Connected Glass"
-			icon: "connectedglass:clear_glass"
-			x: 0.5d
-			y: 11.0d
-			subtitle: "I can see all obstacles in my way"
-			description: ["Connected Glass adds additional glass blocks and panes with connected textures. This of course covers the clear glass, and all 16 dyed glass types from Vanilla."]
 			dependencies: ["058D3BEB64C74E27"]
+			description: ["Connected Glass adds additional glass blocks and panes with connected textures. This of course covers the clear glass, and all 16 dyed glass types from Vanilla."]
+			icon: "connectedglass:clear_glass"
 			id: "66099AFAA1A6043F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "73CEB3BC6963B644"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			subtitle: "I can see all obstacles in my way"
 			tasks: [{
 				id: "7E626988261D7522"
-				type: "item"
-				title: "Connected Glass"
 				item: {
-					id: "itemfilters:mod"
 					Count: 1b
+					id: "itemfilters:mod"
 					tag: {
 						value: "connectedglass"
 					}
 				}
+				title: "Connected Glass"
+				type: "item"
 			}]
-			rewards: [{
-				id: "73CEB3BC6963B644"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				player_command: false
-			}]
+			title: "Connected Glass"
+			x: 0.5d
+			y: 11.0d
 		}
 		{
-			title: "Simply Light"
-			icon: "simplylight:illuminant_block_on"
-			x: -0.5d
-			y: 11.0d
-			subtitle: "Let there be light"
+			dependencies: ["058D3BEB64C74E27"]
 			description: [
 				"The mod name really says it all. It's simply that, a lights mod."
 				""
 				"But don't let the name fool you. Simply Light offers a wide range of lights to keep your base lit with style."
 			]
-			dependencies: ["058D3BEB64C74E27"]
+			icon: "simplylight:illuminant_block_on"
 			id: "42FB32CC99E66E3F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "7E2D7FEE20672C9D"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			subtitle: "Let there be light"
 			tasks: [{
+				count: 16L
 				id: "1EFA47BC6E4EC782"
-				type: "item"
-				title: "Any 16x Simply Lights"
 				item: {
-					id: "itemfilters:mod"
 					Count: 1b
+					id: "itemfilters:mod"
 					tag: {
 						value: "simplylight"
 					}
 				}
-				count: 16L
+				title: "Any 16x Simply Lights"
+				type: "item"
 			}]
-			rewards: [{
-				id: "7E2D7FEE20672C9D"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			title: "Simply Light"
+			x: -0.5d
+			y: 11.0d
 		}
 		{
-			title: "Framed Blocks"
-			icon: "framedblocks:framed_cube"
-			x: 1.5d
-			y: 10.0d
-			subtitle: "Sky is the limit"
+			dependencies: ["058D3BEB64C74E27"]
 			description: [
 				"Are you looking for Glass Stairs? or maybe a Netherite door? How about an Endstone Sign? Well, look no further."
 				""
@@ -122,33 +137,33 @@
 				""
 				"They can even be made to glow by right clicking them with glowstone!"
 			]
-			dependencies: ["058D3BEB64C74E27"]
+			icon: "framedblocks:framed_cube"
 			id: "0798D5139479A837"
-			tasks: [{
-				id: "6D98E195282468AF"
-				type: "item"
-				item: "framedblocks:framed_cube"
-				count: 4L
-			}]
 			rewards: [
 				{
 					id: "7A45DC96F03CA232"
-					type: "item"
 					item: "framedblocks:framed_hammer"
+					type: "item"
 				}
 				{
 					id: "1C5FD3A8CD3424C0"
-					type: "item"
 					item: "framedblocks:framed_wrench"
+					type: "item"
 				}
 			]
+			subtitle: "Sky is the limit"
+			tasks: [{
+				count: 4L
+				id: "6D98E195282468AF"
+				item: "framedblocks:framed_cube"
+				type: "item"
+			}]
+			title: "Framed Blocks"
+			x: 1.5d
+			y: 10.0d
 		}
 		{
-			title: "Framed Drawers"
-			icon: "functionalstorage:framed_1"
-			x: -1.5d
-			y: 9.0d
-			subtitle: "Build-a-Drawer"
+			dependencies: ["058D3BEB64C74E27"]
 			description: [
 				"Are you fed up with that Oak Drawer that is sticking out like a sore thumb in the middle of your build, completely mismatching your building palette?"
 				""
@@ -156,154 +171,154 @@
 				""
 				"Needless to say, Functional Storage has more than just a single drawer style template, it actually has a template for each type of drawer, whether it is a 1x2, 2x2 or even a Compacting Drawer."
 			]
-			dependencies: ["058D3BEB64C74E27"]
-			min_width: 250
+			icon: "functionalstorage:framed_1"
 			id: "473BE440ECB1CEDF"
+			min_width: 250
+			rewards: [
+				{
+					id: "799AB9D93C124D6F"
+					item: "functionalstorage:netherite_upgrade"
+					type: "item"
+				}
+				{
+					id: "006783158FEE960D"
+					item: "functionalstorage:void_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "Build-a-Drawer"
 			tasks: [{
 				id: "130291F7FD5C22C4"
-				type: "item"
-				title: "Any Framed Drawer"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "functionalstorage:framed_1"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "functionalstorage:framed_2"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "functionalstorage:framed_4"
-								Count: 1b
 							}
 							{
-								id: "functionalstorage:compacting_framed_drawer"
 								Count: 1b
+								id: "functionalstorage:compacting_framed_drawer"
 							}
 						]
 					}
 				}
+				title: "Any Framed Drawer"
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "799AB9D93C124D6F"
-					type: "item"
-					item: "functionalstorage:netherite_upgrade"
-				}
-				{
-					id: "006783158FEE960D"
-					type: "item"
-					item: "functionalstorage:void_upgrade"
-				}
-			]
+			title: "Framed Drawers"
+			x: -1.5d
+			y: 9.0d
 		}
 		{
-			title: "Engineer's Decor"
-			icon: "engineersdecor:steel_catwalk_stairs"
-			x: -1.5d
-			y: 10.0d
-			subtitle: "Immersive Decorating"
+			dependencies: ["058D3BEB64C74E27"]
 			description: [
 				"If you love the industrial look of Immersive Engineering, then you will probably love Engineer's Decor."
 				""
 				"This mod adds a handful of decorative blocks that should feel right at home in your Immersive Engineering base. Whether it is a DANGER! sign, or an industrial platforms and support beams, Engineer's Decor has got you covered."
 			]
-			dependencies: ["058D3BEB64C74E27"]
+			icon: "engineersdecor:steel_catwalk_stairs"
 			id: "68E143E444AF44C2"
-			tasks: [{
-				id: "3962CC2A503F48BE"
-				type: "item"
-				item: "engineersdecor:metal_bar"
-				count: 12L
-			}]
 			rewards: [{
-				id: "3C8E7414A7A4C3C0"
-				type: "item"
-				item: "engineersdecor:sign_hotwire"
 				count: 2
+				id: "3C8E7414A7A4C3C0"
+				item: "engineersdecor:sign_hotwire"
 				random_bonus: 4
+				type: "item"
 			}]
+			subtitle: "Immersive Decorating"
+			tasks: [{
+				count: 12L
+				id: "3962CC2A503F48BE"
+				item: "engineersdecor:metal_bar"
+				type: "item"
+			}]
+			title: "Engineer's Decor"
+			x: -1.5d
+			y: 10.0d
 		}
 		{
-			title: "Decorative Blocks"
-			icon: "decorative_blocks:oak_support"
-			x: 1.5d
-			y: 9.0d
-			subtitle: "Stay a while and listen..."
+			dependencies: ["058D3BEB64C74E27"]
 			description: [
 				"If you are into your medieval or rustic builds, whether it is a castle on a cliff, a cabin in the woods, or a hearty tavern for a weary traveler, Decorative Blocks will have some blocks that fits your style."
 				""
 				"Decorative Blocks offers many nicely textured and well designed blocks for your building needs."
 			]
-			dependencies: ["058D3BEB64C74E27"]
+			icon: "decorative_blocks:oak_support"
 			id: "03D0B336BB7CEFE1"
+			rewards: [
+				{
+					id: "3305966DAE15A384"
+					item: "minecraft:honey_bottle"
+					type: "item"
+				}
+				{
+					id: "2A80F9273B5F083C"
+					item: "the_bumblezone:sugar_water_bottle"
+					type: "item"
+				}
+				{
+					id: "6EF2696BD9DA2B0F"
+					item: "farmersdelight:milk_bottle"
+					type: "item"
+				}
+			]
+			subtitle: "Stay a while and listen..."
 			tasks: [{
 				id: "36159E7E842C9962"
-				type: "item"
-				title: "Decorative Blocks"
 				item: {
-					id: "itemfilters:mod"
 					Count: 1b
+					id: "itemfilters:mod"
 					tag: {
 						value: "decorative_blocks"
 					}
 				}
+				title: "Decorative Blocks"
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "3305966DAE15A384"
-					type: "item"
-					item: "minecraft:honey_bottle"
-				}
-				{
-					id: "2A80F9273B5F083C"
-					type: "item"
-					item: "the_bumblezone:sugar_water_bottle"
-				}
-				{
-					id: "6EF2696BD9DA2B0F"
-					type: "item"
-					item: "farmersdelight:milk_bottle"
-				}
-			]
+			title: "Decorative Blocks"
+			x: 1.5d
+			y: 9.0d
 		}
 		{
-			title: "General Building Tools"
-			icon: "framedblocks:framed_hammer"
-			x: 0.0d
-			y: 5.0d
-			shape: "gear"
-			subtitle: "The right tools for the job"
 			description: [
 				"Rome wasn’t built in a day, but with tools like these it certainly could have been. "
 				""
 				"Read on to discover some handy tools to vastly reduce the time it takes to make large scale projects come to life.  "
 			]
-			optional: true
+			icon: "framedblocks:framed_hammer"
 			id: "5411C8D2344CC2F1"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "215C050F84460976"
+				item: "minecraft:scaffolding"
+				random_bonus: 16
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "The right tools for the job"
 			tasks: [{
 				id: "48834CDA218F71E0"
-				type: "checkmark"
 				title: "Building Tools"
+				type: "checkmark"
 			}]
-			rewards: [{
-				id: "215C050F84460976"
-				type: "item"
-				item: "minecraft:scaffolding"
-				count: 16
-				random_bonus: 16
-			}]
+			title: "General Building Tools"
+			x: 0.0d
+			y: 5.0d
 		}
 		{
-			title: "Portable Stonecutter"
-			icon: "minecraft:stonecutter"
-			x: 0.5d
-			y: 6.0d
-			subtitle: "It's like the Chisel, but fatter"
+			dependencies: ["5411C8D2344CC2F1"]
 			description: [
 				"It cuts, it grinds, it chisels, polishes and even cooks and cleans!"
 				""
@@ -313,141 +328,153 @@
 				""
 				"Warning: Keep away from children, animals, nitwits. Do not place hand on blade while in motion. Extended use may lead to fatigue and loss of vision."
 			]
-			dependencies: ["5411C8D2344CC2F1"]
+			icon: "minecraft:stonecutter"
 			id: "085A8424875A2B23"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "31F796972A4B7369"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			subtitle: "It's like the Chisel, but fatter"
 			tasks: [{
 				id: "0F45B05043BCCBE6"
-				type: "item"
-				title: "Stonecutter Upgrade"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
-								id: "sophisticatedbackpacks:stonecutter_upgrade"
 								Count: 1b
+								id: "sophisticatedbackpacks:stonecutter_upgrade"
 							}
 							{
-								id: "sophisticatedstorage:stonecutter_upgrade"
 								Count: 1b
+								id: "sophisticatedstorage:stonecutter_upgrade"
 							}
 						]
 					}
 				}
+				title: "Stonecutter Upgrade"
+				type: "item"
 			}]
-			rewards: [{
-				id: "31F796972A4B7369"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			title: "Portable Stonecutter"
+			x: 0.5d
+			y: 6.0d
 		}
 		{
-			title: "Building Gadget"
-			icon: {
-				id: "buildinggadgets:gadget_building"
-				Count: 1b
-				tag: {
-					state: {
-						serializer: "buildinggadgets:dummy_serializer"
-						state: {
-							Name: "minecraft:air"
-						}
-						data: { }
-					}
-				}
-			}
-			x: -1.5d
-			y: 4.0d
-			subtitle: "It builds stuff"
+			dependencies: ["5411C8D2344CC2F1"]
 			description: [
 				"An advanced building device with several modes allowing for the quick construction of walls, stairs, and platforms. "
 				""
 				"Sneak Right Click on a block to set the block it’ll build with. Use the Building Gadgets Settings Menu key [default: g] to access advanced features. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["5411C8D2344CC2F1"]
-			id: "0F06CA2A45323C4C"
-			tasks: [{
-				id: "5DB4EE8F264A9453"
-				type: "item"
-				item: {
-					id: "buildinggadgets:gadget_building"
-					Count: 1b
-					tag: {
+			icon: {
+				Count: 1b
+				id: "buildinggadgets:gadget_building"
+				tag: {
+					state: {
+						data: { }
+						serializer: "buildinggadgets:dummy_serializer"
 						state: {
-							serializer: "buildinggadgets:dummy_serializer"
-							state: {
-								Name: "minecraft:air"
-							}
-							data: { }
+							Name: "minecraft:air"
 						}
 					}
 				}
-			}]
+			}
+			id: "0F06CA2A45323C4C"
 			rewards: [{
 				id: "651CFE821154BBC8"
 				type: "xp"
 				xp: 100
 			}]
-		}
-		{
-			title: "Exchange Gadget"
-			icon: {
-				id: "buildinggadgets:gadget_exchanging"
-				Count: 1b
-				tag: {
-					state: {
-						serializer: "buildinggadgets:dummy_serializer"
+			subtitle: "It builds stuff"
+			tasks: [{
+				id: "5DB4EE8F264A9453"
+				item: {
+					Count: 1b
+					id: "buildinggadgets:gadget_building"
+					tag: {
 						state: {
-							Name: "minecraft:air"
+							data: { }
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
 						}
-						data: { }
 					}
 				}
-			}
+				type: "item"
+			}]
+			title: "Building Gadget"
 			x: -1.5d
-			y: 5.0d
-			subtitle: "It exchanges stuff"
+			y: 4.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
 			description: [
 				"Quickly swap blocks in an area without having to break and manually place each one. Enchant with Silk Touch to work with delicate blocks such as glass."
 				""
 				"Sneak Right Click on a block to set the block it’ll build with. Use the Building Gadgets Settings Menu key [default: g] to access advanced features. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["5411C8D2344CC2F1"]
-			id: "25E1DB1C3F184D4C"
-			tasks: [{
-				id: "0031DADEE3BD0089"
-				type: "item"
-				item: {
-					id: "buildinggadgets:gadget_exchanging"
-					Count: 1b
-					tag: {
+			icon: {
+				Count: 1b
+				id: "buildinggadgets:gadget_exchanging"
+				tag: {
+					state: {
+						data: { }
+						serializer: "buildinggadgets:dummy_serializer"
 						state: {
-							serializer: "buildinggadgets:dummy_serializer"
-							state: {
-								Name: "minecraft:air"
-							}
-							data: { }
+							Name: "minecraft:air"
 						}
 					}
 				}
-			}]
+			}
+			id: "25E1DB1C3F184D4C"
 			rewards: [{
 				id: "2A430B36A4ECDB29"
 				type: "xp"
 				xp: 100
 			}]
+			subtitle: "It exchanges stuff"
+			tasks: [{
+				id: "0031DADEE3BD0089"
+				item: {
+					Count: 1b
+					id: "buildinggadgets:gadget_exchanging"
+					tag: {
+						state: {
+							data: { }
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Exchange Gadget"
+			x: -1.5d
+			y: 5.0d
 		}
 		{
-			title: "Copy-Paste Gadget"
+			dependencies: ["5411C8D2344CC2F1"]
+			description: [
+				"A powerful tool that allows copying large areas and rebuilding them instantly elsewhere, making short work of repeating large sections of a build, such as a repeating wall pattern, or sprucing up an area with a few different prefab homes."
+				""
+				"It’s possible to import and export patterns for the Copy/Paste gadget as well, and Enigmatica 6 comes with a variety of patterns that include many multiblocks from mods like Immersive Engineering and Astral Sorcery, to make working with those mods easier. Full instructions and templates can be located in your instance folder under “building_gadgets_patterns”."
+				""
+				"Sneak Right Click on a block to set the block it’ll build with. Use the Building Gadgets Settings Menu key [default: g] to access advanced features. "
+			]
+			hide_dependency_lines: true
 			icon: {
-				id: "buildinggadgets:gadget_copy_paste"
 				Count: 1b
+				id: "buildinggadgets:gadget_copy_paste"
 				tag: {
 					mode: 0b
 					template_id: [I;
@@ -458,25 +485,18 @@
 					]
 				}
 			}
-			x: -1.5d
-			y: 6.0d
-			subtitle: "It copies and pastes stuff"
-			description: [
-				"A powerful tool that allows copying large areas and rebuilding them instantly elsewhere, making short work of repeating large sections of a build, such as a repeating wall pattern, or sprucing up an area with a few different prefab homes."
-				""
-				"It’s possible to import and export patterns for the Copy/Paste gadget as well, and Enigmatica 6 comes with a variety of patterns that include many multiblocks from mods like Immersive Engineering and Astral Sorcery, to make working with those mods easier. Full instructions and templates can be located in your instance folder under “building_gadgets_patterns”."
-				""
-				"Sneak Right Click on a block to set the block it’ll build with. Use the Building Gadgets Settings Menu key [default: g] to access advanced features. "
-			]
-			hide_dependency_lines: true
-			dependencies: ["5411C8D2344CC2F1"]
 			id: "2E5F1C7B4B293531"
+			rewards: [{
+				id: "56EDEB3CE12B8C19"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "It copies and pastes stuff"
 			tasks: [{
 				id: "6AB9C0357788BA56"
-				type: "item"
 				item: {
-					id: "buildinggadgets:gadget_copy_paste"
 					Count: 1b
+					id: "buildinggadgets:gadget_copy_paste"
 					tag: {
 						mode: 0b
 						template_id: [I;
@@ -487,26 +507,14 @@
 						]
 					}
 				}
+				type: "item"
 			}]
-			rewards: [{
-				id: "56EDEB3CE12B8C19"
-				type: "xp"
-				xp: 100
-			}]
+			title: "Copy-Paste Gadget"
+			x: -1.5d
+			y: 6.0d
 		}
 		{
-			title: "Destruction Gadget"
-			icon: {
-				id: "buildinggadgets:gadget_destruction"
-				Count: 1b
-				tag: {
-					overlay: 1b
-					fuzzy: 1b
-				}
-			}
-			x: -1.5d
-			y: 7.0d
-			subtitle: "Guess what it does .."
+			dependencies: ["5411C8D2344CC2F1"]
 			description: [
 				"For those times when you simply want to clear a hole to build in, and don’t really care what happens to the blocks that were there."
 				""
@@ -515,39 +523,39 @@
 				"Sneak Right Click in the air to configure the area to void. Use the Building Gadgets Settings Menu key [default: g] to access advanced features. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["5411C8D2344CC2F1"]
-			id: "095108AB50598C04"
-			tasks: [{
-				id: "1441EAF1EDC3AFDF"
-				type: "item"
-				item: {
-					id: "buildinggadgets:gadget_destruction"
-					Count: 1b
-					tag: {
-						overlay: 1b
-						fuzzy: 1b
-					}
+			icon: {
+				Count: 1b
+				id: "buildinggadgets:gadget_destruction"
+				tag: {
+					fuzzy: 1b
+					overlay: 1b
 				}
-			}]
+			}
+			id: "095108AB50598C04"
 			rewards: [{
 				id: "61F9F3D49C389940"
 				type: "xp"
 				xp: 100
 			}]
+			subtitle: "Guess what it does .."
+			tasks: [{
+				id: "1441EAF1EDC3AFDF"
+				item: {
+					Count: 1b
+					id: "buildinggadgets:gadget_destruction"
+					tag: {
+						fuzzy: 1b
+						overlay: 1b
+					}
+				}
+				type: "item"
+			}]
+			title: "Destruction Gadget"
+			x: -1.5d
+			y: 7.0d
 		}
 		{
-			title: "Construction Wand"
-			icon: {
-				id: "constructionwand:stone_wand"
-				Count: 1b
-				tag: {
-					wand_options: { }
-					Damage: 0
-				}
-			}
-			x: -0.5d
-			y: 4.0d
-			subtitle: "Accio"
+			dependencies: ["5411C8D2344CC2F1"]
 			description: [
 				"A modded classic, the Construction Wand simply extends the blocks that are already placed in the world. This can make it easy to build a wall by first laying the foundation, then building up with the wand. "
 				""
@@ -555,44 +563,57 @@
 				""
 				"Ctrl Shift the wand in the air to access a menu with advanced options, or Ctrl Scroll Wheel to quickly toggle between building modes. "
 			]
-			dependencies: ["5411C8D2344CC2F1"]
+			icon: {
+				Count: 1b
+				id: "constructionwand:stone_wand"
+				tag: {
+					Damage: 0
+					wand_options: { }
+				}
+			}
 			id: "26B88D08862EA1AE"
+			rewards: [{
+				count: 16
+				id: "214C2A82D3E5941A"
+				item: "minecraft:scaffolding"
+				random_bonus: 16
+				type: "item"
+			}]
+			subtitle: "Accio"
 			tasks: [{
 				id: "131EB02FBDE8DC98"
-				type: "item"
-				title: "Any Construction Wand"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "constructionwand:stone_wand"
-								Count: 1b
 								tag: {
-									wand_options: { }
 									Damage: 0
+									wand_options: { }
 								}
 							}
 							{
+								Count: 1b
 								id: "constructionwand:iron_wand"
-								Count: 1b
 								tag: {
-									wand_options: { }
 									Damage: 0
+									wand_options: { }
 								}
 							}
 							{
+								Count: 1b
 								id: "constructionwand:diamond_wand"
-								Count: 1b
 								tag: {
-									wand_options: { }
 									Damage: 0
+									wand_options: { }
 								}
 							}
 							{
-								id: "constructionwand:infinity_wand"
 								Count: 1b
+								id: "constructionwand:infinity_wand"
 								tag: {
 									wand_options: { }
 								}
@@ -600,27 +621,15 @@
 						]
 					}
 				}
-			}]
-			rewards: [{
-				id: "214C2A82D3E5941A"
+				title: "Any Construction Wand"
 				type: "item"
-				item: "minecraft:scaffolding"
-				count: 16
-				random_bonus: 16
 			}]
+			title: "Construction Wand"
+			x: -0.5d
+			y: 4.0d
 		}
 		{
-			title: "Extendo Grip"
-			icon: {
-				id: "create:extendo_grip"
-				Count: 1b
-				tag: {
-					Damage: 0
-				}
-			}
-			x: 0.5d
-			y: 4.0d
-			subtitle: "BOING! BOING!"
+			dependencies: ["5411C8D2344CC2F1"]
 			description: [
 				"The Extendo Grip increases your reach distance, thus allowing you to place and break blocks at a larger distance."
 				""
@@ -628,34 +637,40 @@
 				""
 				"While wearing a Copper Tank, the Extendo Grip loses no Durability and instead uses some of the air pressure you have stored in your tank."
 			]
-			dependencies: ["5411C8D2344CC2F1"]
+			icon: {
+				Count: 1b
+				id: "create:extendo_grip"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "34F00196E2D0B4B0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "384957F4FCE7BC6A"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "BOING! BOING!"
 			tasks: [{
 				id: "36A419607017EA31"
-				type: "item"
 				item: {
-					id: "create:extendo_grip"
 					Count: 1b
+					id: "create:extendo_grip"
 					tag: {
 						Damage: 0
 					}
 				}
+				type: "item"
 			}]
-			rewards: [{
-				id: "384957F4FCE7BC6A"
-				type: "command"
-				title: "Rare Create Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/create/rare"
-				player_command: false
-			}]
+			title: "Extendo Grip"
+			x: 0.5d
+			y: 4.0d
 		}
 		{
-			title: "Wand of Symmetry"
-			icon: "create:wand_of_symmetry"
-			x: 1.5d
-			y: 7.0d
-			subtitle: "Lay your weary OCD to rest"
+			dependencies: ["5411C8D2344CC2F1"]
 			description: [
 				"With a hefty crafting recipe, the Wand of Symmetry does not disappoint those that loves a little symmetry in their life."
 				""
@@ -664,29 +679,27 @@
 				"To start, Right Click a block on the ground to place your place. Once placed, you can Sneak Right Click to open the configuration GUI where you can select the plane type, and the mirroring axis."
 			]
 			hide_dependency_lines: true
-			dependencies: ["5411C8D2344CC2F1"]
+			icon: "create:wand_of_symmetry"
 			id: "147B701C5BCF2424"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/create/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "01870BF5EE173AB5"
+				player_command: false
+				title: "Legendary Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "Lay your weary OCD to rest"
 			tasks: [{
 				id: "0A989C0C09502289"
-				type: "item"
 				item: "create:wand_of_symmetry"
+				type: "item"
 			}]
-			rewards: [{
-				id: "01870BF5EE173AB5"
-				type: "command"
-				title: "Legendary Create Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/create/legendary"
-				player_command: false
-			}]
+			title: "Wand of Symmetry"
+			x: 1.5d
+			y: 7.0d
 		}
 		{
-			title: "The Mighty Architect"
-			icon: "create:crafting_blueprint"
-			x: 1.5d
-			y: 2.5d
-			shape: "square"
-			subtitle: "I love it when a plan comes together"
 			description: [
 				"If you are the type of player who avoids building a base and lives in a dirt hole somewhere because you are not confident with your building skills, or simply don't have the time and energy to plan out a full base design, this this mod is for you."
 				""
@@ -696,47 +709,41 @@
 				""
 				"{\"text\":\"The Mighty Architect Mod Highlight\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtu.be/VdoKmdYubBM\"}}"
 			]
+			icon: "create:crafting_blueprint"
 			id: "4407C59E32585B96"
-			tasks: [{
-				id: "3671CC5B42EC4DF8"
-				type: "checkmark"
-				title: "The Mighty Architect"
-			}]
 			rewards: [
 				{
-					id: "3E564C831D52F1BD"
-					type: "item"
-					item: "create:builders_tea"
 					count: 2
+					id: "3E564C831D52F1BD"
+					item: "create:builders_tea"
 					random_bonus: 2
+					type: "item"
 				}
 				{
 					id: "7FB21C0F074D7720"
-					type: "item"
 					item: "create:empty_schematic"
+					type: "item"
 				}
 				{
-					id: "1DDF6EF97DE63E61"
-					type: "item"
-					item: "minecraft:gunpowder"
 					count: 8
+					id: "1DDF6EF97DE63E61"
+					item: "minecraft:gunpowder"
 					random_bonus: 8
+					type: "item"
 				}
 			]
+			shape: "square"
+			subtitle: "I love it when a plan comes together"
+			tasks: [{
+				id: "3671CC5B42EC4DF8"
+				title: "The Mighty Architect"
+				type: "checkmark"
+			}]
+			title: "The Mighty Architect"
+			x: 1.5d
+			y: 2.5d
 		}
 		{
-			title: "Quark"
-			icon: {
-				id: "quark:trowel"
-				Count: 1b
-				tag: {
-					Damage: 0
-				}
-			}
-			x: -1.5d
-			y: 2.5d
-			shape: "square"
-			subtitle: "Jack of all Trades"
 			description: [
 				"Quark is such a massive mod, and while it could have had it's own section, or even be part of the main Building section, we felt like having it as a stand-alone info quest fits better. While it would be near impossible to write down everything Quark has to offer, the below are some of the highlights for builders to make their life a little easier."
 				""
@@ -752,105 +759,98 @@
 				""
 				"{\"text\":\"Quark Wiki\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://quarkmod.net/#features\"}}"
 			]
+			icon: {
+				Count: 1b
+				id: "quark:trowel"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "73696B8EC7BB92C7"
-			tasks: [{
-				id: "5B29C3C71D617D0A"
-				type: "checkmark"
-				title: "Quark"
-			}]
 			rewards: [
 				{
 					id: "1EA35555757745CC"
-					type: "item"
 					item: {
-						id: "quark:trowel"
 						Count: 1b
+						id: "quark:trowel"
 						tag: {
 							Damage: 0
 						}
 					}
+					type: "item"
 				}
 				{
 					id: "5C1C38E52322F619"
-					type: "item"
 					item: "quark:rainbow_rune"
+					type: "item"
 				}
 			]
+			shape: "square"
+			subtitle: "Jack of all Trades"
+			tasks: [{
+				id: "5B29C3C71D617D0A"
+				title: "Quark"
+				type: "checkmark"
+			}]
+			title: "Quark"
+			x: -1.5d
+			y: 2.5d
 		}
 		{
-			x: -0.5d
-			y: 6.0d
-			description: ["Need a measuring tape? Well, how about an Abacus instead. This little guy will quickly tally up the number of blocks between point A and point B, perfect for planning large builds. Just Right-Click the ground at the start and walk to the end point. "]
 			dependencies: ["5411C8D2344CC2F1"]
+			description: ["Need a measuring tape? Well, how about an Abacus instead. This little guy will quickly tally up the number of blocks between point A and point B, perfect for planning large builds. Just Right-Click the ground at the start and walk to the end point. "]
 			id: "45A99E75C9AFCFC5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "0A09BABD778C97C2"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "2F6A3A84B2EBFABD"
-				type: "item"
 				item: "quark:abacus"
+				type: "item"
 			}]
-			rewards: [{
-				id: "0A09BABD778C97C2"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				player_command: false
-			}]
+			x: -0.5d
+			y: 6.0d
 		}
 		{
-			x: -0.5d
-			y: 8.0d
-			description: ["A simple sensor that can be placed over any door. When a player approaches, the door will open automatically. Their vertical detection range may be adjusted with a Redstone Key, allowing them to work on larger doors. "]
 			dependencies: ["058D3BEB64C74E27"]
+			description: ["A simple sensor that can be placed over any door. When a player approaches, the door will open automatically. Their vertical detection range may be adjusted with a Redstone Key, allowing them to work on larger doors. "]
 			id: "17F29DFB161A6D1E"
-			tasks: [{
-				id: "73B6B9FD71519D5C"
-				type: "item"
-				item: "manyideas_doors:player_door_sensor"
-			}]
 			rewards: [{
 				id: "2606C21488212483"
-				type: "item"
 				item: "manyideas_core:redstone_key"
+				type: "item"
 			}]
+			tasks: [{
+				id: "73B6B9FD71519D5C"
+				item: "manyideas_doors:player_door_sensor"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 8.0d
 		}
 		{
-			x: 0.5d
-			y: 8.0d
-			description: ["Enchanted shears that, when used upon a Rainbow Sheep, will produce Rainbow Wool. "]
 			dependencies: ["058D3BEB64C74E27"]
+			description: ["Enchanted shears that, when used upon a Rainbow Sheep, will produce Rainbow Wool. "]
 			id: "7F8E9CAAF204E1F3"
 			tasks: [{
 				id: "50B8BB361CE34B8A"
-				type: "item"
 				item: {
-					id: "manyideas_core:mysterious_shears"
 					Count: 1b
+					id: "manyideas_core:mysterious_shears"
 					tag: {
 						Damage: 0
 					}
 				}
+				type: "item"
 			}]
+			x: 0.5d
+			y: 8.0d
 		}
 	]
-	quest_links: [
-		{
-			linked_quest: "5A581A8DF6CCC352"
-			x: 1.5d
-			y: 4.0d
-			id: "1AF381BF18122BDE"
-		}
-		{
-			linked_quest: "3542632905883686"
-			x: 1.5d
-			y: 5.0d
-			id: "5691FC6E26AEA49D"
-		}
-		{
-			linked_quest: "6305EF196599FC7C"
-			x: 1.5d
-			y: 6.0d
-			id: "3CFD52C6E987D8D2"
-		}
-	]
+	title: "Building"
 }

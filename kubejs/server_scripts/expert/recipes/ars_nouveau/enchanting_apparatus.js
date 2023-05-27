@@ -92,6 +92,13 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}drill_bit_diamond`
         },
         {
+            output: 'pneumaticcraft:drill_bit_netherite',
+            inputs: ['#forge:ingots/depths', 'toomanyglyphs:glyph_chaining'],
+            reagents: ['pneumaticcraft:drill_bit_diamond'],
+            sourceCost: 10000,
+            id: `${id_prefix}drill_bit_netherite`
+        },
+        {
             output: 'create:brass_hand',
             inputs: ['#forge:essences/manipulation', '#forge:leather', '#forge:leather', '#forge:leather'],
             reagents: ['#forge:ingots/energized_steel'],
@@ -386,6 +393,22 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}mininggadget`
         },
         {
+            output: 'mekanism:meka_tool',
+            inputs: [
+                '#forge:gems/infused_diamond',
+                '#forge:rods/osmium',
+                'powah:capacitor_spirited',
+                '#forge:plastic',
+                'ars_nouveau:glyph_break',
+                'immersiveengineering:component_electronic',
+                'powah:capacitor_spirited',
+                '#forge:rods/osmium'
+            ],
+            reagents: ['immersiveengineering:drill'],
+            sourceCost: 0,
+            id: `${id_prefix}meka_tool`
+        },
+        {
             output: 'ars_nouveau:summon_focus',
             inputs: [
                 'ars_elemental:mark_of_mastery',
@@ -399,30 +422,52 @@ ServerEvents.recipes((event) => {
             id: 'ars_nouveau:summon_focus'
         },
         {
+            output: 'thermal:upgrade_augment_1',
+            inputs: [
+                'ae2:spatial_cell_component_2',
+                '#forge:gears/compressed_iron',
+                'immersiveengineering:component_electronic',
+                '#forge:gears/compressed_iron',
+                'ae2:spatial_cell_component_2',
+                '#forge:gears/compressed_iron',
+                'immersiveengineering:component_electronic',
+                '#forge:gears/compressed_iron'
+            ],
+            reagents: ['#industrialforegoing:machine_frame/simple'],
+            sourceCost: 1000,
+            id: `${id_prefix}upgrade_augment_1`
+        },
+        {
             output: Item.of('thermal:upgrade_augment_2', '{AugmentData:{BaseMod:4,Type:"Upgrade"}}'),
             inputs: [
-                '#forge:ingots/energized_steel',
-                '#forge:ingots/energized_steel',
-                '#forge:ingots/energized_steel',
-                '#forge:gems/infused_diamond',
-                '#forge:gems/infused_diamond',
-                '#forge:gems/infused_diamond'
+                'thermal:upgrade_augment_1',
+                'ae2:spatial_cell_component_2',
+                '#forge:gears/diamond',
+                'pneumaticcraft:printed_circuit_board',
+                '#forge:gears/diamond',
+                'ae2:spatial_cell_component_2',
+                '#forge:gears/diamond',
+                'pneumaticcraft:printed_circuit_board',
+                '#forge:gears/diamond'
             ],
-            reagents: ['thermal:upgrade_augment_1'],
+            reagents: ['#industrialforegoing:machine_frame/advanced'],
             sourceCost: 5000,
             id: `${id_prefix}upgrade_augment_2`
         },
         {
             output: Item.of('thermal:upgrade_augment_3', '{AugmentData:{BaseMod:8,Type:"Upgrade"}}'),
             inputs: [
-                'ars_elemental:mark_of_mastery',
-                '#forge:gems/spirited',
-                '#forge:gems/spirited',
+                'thermal:upgrade_augment_2',
+                'ae2:spatial_cell_component_2',
+                '#forge:gears/netherite',
                 'pneumaticcraft:printed_circuit_board',
-                '#forge:gems/spirited',
-                '#forge:gems/spirited'
+                '#forge:gears/netherite',
+                'ae2:spatial_cell_component_2',
+                '#forge:gears/netherite',
+                'pneumaticcraft:printed_circuit_board',
+                '#forge:gears/netherite'
             ],
-            reagents: ['thermal:upgrade_augment_2'],
+            reagents: ['#industrialforegoing:machine_frame/supreme'],
             sourceCost: 10000,
             id: `${id_prefix}upgrade_augment_3`
         },
@@ -634,6 +679,36 @@ ServerEvents.recipes((event) => {
             reagents: ['mekanism:laser'],
             sourceCost: 10000,
             id: `${id_prefix}supercharged_coil`
+        },
+        {
+            output: '2x minecraft:enchanted_book',
+            inputs: [
+                'occultism:book_of_binding_bound_foliot',
+                'supplementaries:antique_ink',
+                'minecraft:echo_shard',
+                'quark:rainbow_rune',
+                'quark:rainbow_rune',
+                'quark:rainbow_rune',
+                'quark:rainbow_rune',
+                'quark:rainbow_rune'
+            ],
+            reagents: ['minecraft:enchanted_book'],
+            sourceCost: 10000,
+            keepNbtOfReagent: true,
+            id: `${id_prefix}enchanted_book_clone`
+        },
+        {
+            output: 'emendatusenigmatica:diamond_gear',
+            inputs: [
+                '#forge:essences/abjuration',
+                '#mekanism:enriched/diamond',
+                '#mekanism:enriched/diamond',
+                '#mekanism:enriched/diamond',
+                '#mekanism:enriched/diamond'
+            ],
+            reagents: ['#forge:gears/electrum'],
+            sourceCost: 1000,
+            id: `${id_prefix}diamond_gear`
         }
     ];
 

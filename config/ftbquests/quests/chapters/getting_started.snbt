@@ -1,18 +1,14 @@
 {
-	id: "0000000000000044"
-	group: ""
-	order_index: 1
-	filename: "getting_started"
-	title: "Getting Started"
-	icon: "minecraft:nether_star"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_started"
+	group: ""
+	icon: "minecraft:nether_star"
+	id: "0000000000000044"
+	order_index: 1
+	quest_links: [ ]
 	quests: [
 		{
-			title: "Welcome!"
-			icon: "minecraft:oak_sapling"
-			x: 0.0d
-			y: -6.0d
 			description: [
 				"Welcome to Enigmatica 9, we're glad to have you! :D"
 				" "
@@ -24,26 +20,29 @@
 				"You can learn more about each type below."
 				""
 			]
-			size: 1.5d
-			min_width: 260
+			icon: "minecraft:oak_sapling"
 			id: "0000000000000045"
+			min_width: 260
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "0000000000000A93"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			size: 1.5d
 			tasks: [{
+				icon: "minecraft:oak_sapling"
 				id: "0000000000000046"
 				type: "checkmark"
-				icon: "minecraft:oak_sapling"
 			}]
-			rewards: [{
-				id: "0000000000000A93"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				player_command: false
-			}]
+			title: "Welcome!"
+			x: 0.0d
+			y: -6.0d
 		}
 		{
-			x: -0.5d
-			y: -4.5d
+			dependencies: ["0000000000000045"]
 			description: [
 				"The Exploration questline's purpose is to show what's available in the pack."
 				""
@@ -57,91 +56,82 @@
 				"● Redstone and Logic"
 				"● Storage"
 			]
-			dependencies: ["0000000000000045"]
 			id: "00000000000002AC"
-			tasks: [{
-				id: "00000000000002AD"
-				type: "checkmark"
-				title: "Discovering Enigmatica"
-				icon: "minecraft:compass"
-			}]
 			rewards: [{
 				id: "00000000000002B4"
 				type: "xp"
 				xp: 100
 			}]
+			tasks: [{
+				icon: "minecraft:compass"
+				id: "00000000000002AD"
+				title: "Discovering Enigmatica"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -4.5d
 		}
 		{
-			icon: "minecraft:writable_book"
-			x: 0.5d
-			y: -4.5d
+			dependencies: ["0000000000000045"]
 			description: [
 				"The Learning Mods chapters are designed to help you get started with large content mods and are broken up into Tech and Magic sections. They will explain roughly how to progress and how to work with the blocks and concepts present in the mod. "
 				""
 				"These chapters cover a lot of ground, but the don’t cover everything. So, be sure to explore the manuals for those mods that have them."
 			]
-			dependencies: ["0000000000000045"]
+			icon: "minecraft:writable_book"
 			id: "00000000000002AE"
-			tasks: [{
-				id: "00000000000002AF"
-				type: "checkmark"
-				title: "Learning Mods"
-			}]
 			rewards: [{
 				id: "00000000000002B2"
 				type: "xp"
 				xp: 100
 			}]
+			tasks: [{
+				id: "00000000000002AF"
+				title: "Learning Mods"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -4.5d
 		}
 		{
-			title: "Modded for Dummies"
-			x: 1.5d
-			y: -6.0d
-			subtitle: "Hey, listen!"
+			dependencies: ["0000000000000045"]
 			description: [
 				"If you're new to modded Minecraft, it can be a bit daunting to figure out what's what."
 				""
 				"That's why we made a book, to sum up the basics and give you a solid baseline to begin your modded journey!"
 			]
-			dependencies: ["0000000000000045"]
 			id: "00000000000006E9"
-			tasks: [{
-				id: "00000000000006EA"
-				type: "checkmark"
-				title: "Hey, listen!"
-				icon: {
-					id: "patchouli:guide_book"
-					Count: 1b
-					tag: {
-						"patchouli:book": "patchouli:modded_for_dummies"
-					}
-				}
-			}]
 			rewards: [{
 				id: "00000000000006EB"
-				type: "item"
-				title: "Modded for Dummies"
 				item: {
-					id: "patchouli:guide_book"
 					Count: 1b
+					id: "patchouli:guide_book"
 					tag: {
 						"patchouli:book": "patchouli:modded_for_dummies"
 					}
 				}
+				title: "Modded for Dummies"
+				type: "item"
 			}]
+			subtitle: "Hey, listen!"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "patchouli:modded_for_dummies"
+					}
+				}
+				id: "00000000000006EA"
+				title: "Hey, listen!"
+				type: "checkmark"
+			}]
+			title: "Modded for Dummies"
+			x: 1.5d
+			y: -6.0d
 		}
 		{
-			title: "Eccentric Tome"
-			icon: {
-				id: "eccentrictome:tome"
-				Count: 1b
-				tag: {
-					"eccentrictome:mods": { }
-				}
-			}
-			x: -1.5d
-			y: -6.0d
-			subtitle: "Don't Panic"
+			dependencies: ["0000000000000045"]
 			description: [
 				"A vast repository of knowledge in the palm of your hands. This tome comes pre-populated with the manuals for each mod so they’re always at the ready. "
 				""
@@ -159,75 +149,26 @@
 				""
 				"Lost your book? Just craft a new one, it’ll come pre-filled with manuals."
 			]
-			dependencies: ["0000000000000045"]
-			min_width: 250
+			icon: {
+				Count: 1b
+				id: "eccentrictome:tome"
+				tag: {
+					"eccentrictome:mods": { }
+				}
+			}
 			id: "1F5D6018C2E35C3D"
-			tasks: [{
-				id: "7781E2B735D79B56"
-				type: "item"
-				item: "minecraft:book"
-			}]
+			min_width: 250
 			rewards: [{
 				id: "68C0A864D96B2AC8"
-				type: "item"
-				title: "Full Eccentric Tome"
 				item: {
-					id: "eccentrictome:tome"
 					Count: 1b
+					id: "eccentrictome:tome"
 					tag: {
 						"eccentrictome:mods": {
-							industrialforegoing: {
+							ae2: {
 								0: {
 									Count: 1.0d
-									id: "patchouli:guide_book"
-									tag: {
-										"patchouli:book": "industrialforegoing:industrial_foregoing"
-									}
-								}
-							}
-							powah: {
-								0: {
-									Count: 1.0d
-									id: "powah:book"
-								}
-							}
-							ftbquests: {
-								0: {
-									Count: 1.0d
-									id: "ftbquests:book"
-								}
-							}
-							modonomicon: {
-								0: {
-									Count: 1.0d
-									id: "modonomicon:modonomicon"
-									tag: {
-										"modonomicon:book_id": "theurgy:the_hermetica"
-									}
-								}
-							}
-							pneumaticcraft: {
-								0: {
-									Count: 1.0d
-									id: "patchouli:guide_book"
-									tag: {
-										"patchouli:book": "pneumaticcraft:book"
-									}
-								}
-							}
-							immersiveengineering: {
-								0: {
-									Count: 1.0d
-									id: "immersiveengineering:manual"
-								}
-							}
-							naturesaura: {
-								0: {
-									Count: 1.0d
-									id: "patchouli:guide_book"
-									tag: {
-										"patchouli:book": "naturesaura:book"
-									}
+									id: "ae2:guide"
 								}
 							}
 							apotheosis: {
@@ -236,6 +177,42 @@
 									id: "patchouli:guide_book"
 									tag: {
 										"patchouli:book": "apotheosis:apoth_chronicle"
+									}
+								}
+							}
+							ars_nouveau: {
+								0: {
+									Count: 1.0d
+									id: "ars_nouveau:worn_notebook"
+								}
+							}
+							engineersdecor: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "engineersdecor:engineersdecor_manual"
+									}
+								}
+							}
+							ftbquests: {
+								0: {
+									Count: 1.0d
+									id: "ftbquests:book"
+								}
+							}
+							immersiveengineering: {
+								0: {
+									Count: 1.0d
+									id: "immersiveengineering:manual"
+								}
+							}
+							industrialforegoing: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "industrialforegoing:industrial_foregoing"
 									}
 								}
 							}
@@ -248,12 +225,30 @@
 									}
 								}
 							}
-							engineersdecor: {
+							modonomicon: {
+								0: {
+									Count: 1.0d
+									id: "modonomicon:modonomicon"
+									tag: {
+										"modonomicon:book_id": "theurgy:the_hermetica"
+									}
+								}
+							}
+							modularrouters: {
 								0: {
 									Count: 1.0d
 									id: "patchouli:guide_book"
 									tag: {
-										"patchouli:book": "engineersdecor:engineersdecor_manual"
+										"patchouli:book": "modularrouters:book"
+									}
+								}
+							}
+							naturesaura: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "naturesaura:book"
 									}
 								}
 							}
@@ -266,25 +261,25 @@
 									}
 								}
 							}
-							ae2: {
-								0: {
-									Count: 1.0d
-									id: "ae2:guide"
-								}
-							}
-							modularrouters: {
+							pneumaticcraft: {
 								0: {
 									Count: 1.0d
 									id: "patchouli:guide_book"
 									tag: {
-										"patchouli:book": "modularrouters:book"
+										"patchouli:book": "pneumaticcraft:book"
 									}
 								}
 							}
-							ars_nouveau: {
+							powah: {
 								0: {
 									Count: 1.0d
-									id: "ars_nouveau:worn_notebook"
+									id: "powah:book"
+								}
+							}
+							rftoolsbase: {
+								0: {
+									Count: 1.0d
+									id: "rftoolsbase:manual"
 								}
 							}
 							sushigocrafting: {
@@ -305,19 +300,24 @@
 									}
 								}
 							}
-							rftoolsbase: {
-								0: {
-									Count: 1.0d
-									id: "rftoolsbase:manual"
-								}
-							}
 						}
 						"eccentrictome:version": 1.0d
 					}
 				}
 				only_one: true
+				title: "Full Eccentric Tome"
+				type: "item"
 			}]
+			subtitle: "Don't Panic"
+			tasks: [{
+				id: "7781E2B735D79B56"
+				item: "minecraft:book"
+				type: "item"
+			}]
+			title: "Eccentric Tome"
+			x: -1.5d
+			y: -6.0d
 		}
 	]
-	quest_links: [ ]
+	title: "Getting Started"
 }

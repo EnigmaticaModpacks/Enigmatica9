@@ -186,16 +186,6 @@ ServerEvents.recipes((event) => {
             id: 'thermal:device_water_gen'
         },
         {
-            output: '2x thermal:upgrade_augment_1',
-            pattern: ['ABA', 'BCB', 'ABA'],
-            key: {
-                A: '#forge:plates/obsidian',
-                B: '#forge:gears/compressed_iron',
-                C: 'immersiveengineering:component_electronic'
-            },
-            id: `${id_prefix}upgrade_augment_1`
-        },
-        {
             output: 'thermal:charge_bench',
             pattern: ['AAA', 'BCB', 'DBD'],
             key: {
@@ -420,7 +410,7 @@ ServerEvents.recipes((event) => {
                 B: '#forge:plastic',
                 C: '#industrialforegoing:machine_frame/simple',
                 D: '#forge:gears/electrum',
-                E: '#forge:essences/water'
+                E: '#forge:essences/earth'
             },
             id: 'thermal:machine_crystallizer'
         },

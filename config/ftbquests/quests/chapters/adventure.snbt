@@ -1,125 +1,125 @@
 {
-	id: "0000000000000097"
-	group: "0856CF7F5CBEB20A"
-	order_index: 0
-	filename: "adventure"
-	title: "Adventure"
-	icon: "minecraft:recovery_compass"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "adventure"
+	group: "0856CF7F5CBEB20A"
+	icon: "minecraft:recovery_compass"
+	id: "0000000000000097"
+	order_index: 0
+	quest_links: [ ]
 	quests: [
 		{
-			title: "Dungeoneering"
-			x: 0.0d
-			y: 0.0d
-			subtitle: "Hack 'n Slash"
 			description: [
 				"Explorers beware, for terrors await in many seemingly abandoned structures throughout the lands. "
 				""
 				"Treasure awaits the brave; death awaits the weak. "
 			]
 			id: "0000000000000C85"
-			tasks: [{
-				id: "0000000000000C86"
-				type: "checkmark"
-				title: "Dungeoneering"
-				icon: "kubejs:scavengers_delight"
-			}]
 			rewards: [{
 				id: "0000000000000C9C"
 				type: "xp"
 				xp: 100
 			}]
+			subtitle: "Hack 'n Slash"
+			tasks: [{
+				icon: "kubejs:scavengers_delight"
+				id: "0000000000000C86"
+				title: "Dungeoneering"
+				type: "checkmark"
+			}]
+			title: "Dungeoneering"
+			x: 0.0d
+			y: 0.0d
 		}
 		{
-			title: "Oh, The Biomes You'll Go"
-			x: -1.5d
-			y: 1.0d
-			subtitle: "It's opener out there, in the wide open air."
 			description: [
 				"Like what you see? Oh, the Biomes You’ll go adds a plethora of beautiful new biomes to spruce up your world. "
 				""
 				"Take a stroll, look around, see what you like. Maybe you’ll find a new place to call home? "
 			]
 			id: "0000000000000C89"
-			tasks: [{
-				id: "0000000000000C8A"
-				type: "checkmark"
-				title: "Oh, The Biomes You'll Go"
-				icon: "byg:pink_cherry_sapling"
-			}]
 			rewards: [{
 				id: "0000000000000C9F"
 				type: "xp"
 				xp: 100
 			}]
+			subtitle: "It's opener out there, in the wide open air."
+			tasks: [{
+				icon: "byg:pink_cherry_sapling"
+				id: "0000000000000C8A"
+				title: "Oh, The Biomes You'll Go"
+				type: "checkmark"
+			}]
+			title: "Oh, The Biomes You'll Go"
+			x: -1.5d
+			y: 1.0d
 		}
 		{
-			x: 1.5d
-			y: 1.0d
-			subtitle: "We're not lost, we're right here on this very spot."
 			description: [
 				"Trouble finding your way? Need to find a new desert for some good old-fashioned sand gathering? Maybe a new place to call home, instead?"
 				""
 				"Craft a Nature’s Compass to help locate rare or unusual biomes. "
 			]
 			id: "0000000000000C97"
-			tasks: [{
-				id: "0000000000000C98"
-				type: "item"
-				item: {
-					id: "naturescompass:naturescompass"
-					Count: 1b
-					tag: { }
-				}
-			}]
 			rewards: [{
 				id: "0000000000000C9E"
 				type: "xp"
 				xp: 100
 			}]
+			subtitle: "We're not lost, we're right here on this very spot."
+			tasks: [{
+				id: "0000000000000C98"
+				item: {
+					Count: 1b
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
 		}
 		{
-			x: -1.0d
-			y: 2.5d
 			description: [
 				"Travel to a world swathed in shadow, where frightful beasts call home. Fortune favors the bold! "
 				""
 				"To form the portal, make a 2x2 pool of water surrounded by grass. Place flowers on the grass blocks and toss a diamond into the water."
 			]
 			id: "33D933483F33A53D"
-			tasks: [{
-				id: "26A9364AA502ACCD"
-				type: "advancement"
-				title: "Twilight Forest"
-				advancement: "twilightforest:root"
-				criterion: ""
-			}]
 			rewards: [{
 				id: "4288D2D3D0113D87"
 				type: "xp"
 				xp: 100
 			}]
+			tasks: [{
+				advancement: "twilightforest:root"
+				criterion: ""
+				id: "26A9364AA502ACCD"
+				title: "Twilight Forest"
+				type: "advancement"
+			}]
+			x: -1.0d
+			y: 2.5d
 		}
 		{
-			title: "The Bumblezone"
-			x: 1.0d
-			y: 2.5d
 			description: ["The world of bees is vaster than one might imagine. Throw an Ender Pearl into a hive to see just what’s waiting on the other side. "]
 			id: "03AC8543D6A41D0D"
-			tasks: [{
-				id: "5EE8D2B8705B17FE"
-				type: "advancement"
-				icon: "the_bumblezone:beehive_beeswax"
-				advancement: "the_bumblezone:the_bumblezone/teleportation/teleport_to_bumblezone_pearl"
-				criterion: ""
-			}]
 			rewards: [{
 				id: "15B4A2F8F0D5B1B5"
 				type: "xp"
 				xp: 100
 			}]
+			tasks: [{
+				advancement: "the_bumblezone:the_bumblezone/teleportation/teleport_to_bumblezone_pearl"
+				criterion: ""
+				icon: "the_bumblezone:beehive_beeswax"
+				id: "5EE8D2B8705B17FE"
+				type: "advancement"
+			}]
+			title: "The Bumblezone"
+			x: 1.0d
+			y: 2.5d
 		}
 	]
-	quest_links: [ ]
+	title: "Adventure"
 }

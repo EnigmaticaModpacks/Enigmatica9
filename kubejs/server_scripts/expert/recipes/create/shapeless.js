@@ -14,6 +14,11 @@ ServerEvents.recipes((event) => {
             output: 'create:adjustable_chain_gearshift',
             inputs: ['create:encased_chain_drive', 'immersiveengineering:component_electronic'],
             id: `create:crafting/kinetics/adjustable_chain_gearshift`
+        },
+        {
+            output: 'create:placard',
+            inputs: ['minecraft:item_frame', '#forge:plates/gold'],
+            id: `create:crafting/kinetics/placard`
         }
     ];
 
