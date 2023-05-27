@@ -1,39 +1,37 @@
 {
-	id: "713775E5BF39DAAB"
-	group: "72A9465344128AF9"
-	order_index: 9
-	filename: "mekanism_expert"
-	title: "Mekanism"
-	icon: "mekanism:alloy_atomic"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekanism_expert"
+	group: "72A9465344128AF9"
+	icon: "mekanism:alloy_atomic"
+	id: "713775E5BF39DAAB"
+	order_index: 9
+	quest_links: [ ]
 	quests: [
 		{
-			title: "Getting Started: Material Processing"
-			icon: "mekanism:alloy_infused"
-			x: 6.5d
-			y: -1.5d
-			shape: "hexagon"
+			dependencies: ["2F22D2DB89CB9225"]
 			description: [
 				"As noted, Mekanism maintains a strong focus on efficiencies throughout the mod. As machines are upgraded and more systems put in place, they become more efficient, more productive, and cheaper to run."
 				""
 				"Focusing on being efficient from the very start will ultimately pay off in the long run."
 			]
 			hide_dependency_lines: true
-			dependencies: ["2F22D2DB89CB9225"]
+			icon: "mekanism:alloy_infused"
 			id: "094FAB57D8E3D2F6"
+			shape: "hexagon"
 			tasks: [{
-				id: "7FB5DB1D16235D02"
-				type: "item"
-				title: "Material Processing"
-				item: "minecraft:redstone"
 				count: 16L
+				id: "7FB5DB1D16235D02"
+				item: "minecraft:redstone"
+				title: "Material Processing"
+				type: "item"
 			}]
+			title: "Getting Started: Material Processing"
+			x: 6.5d
+			y: -1.5d
 		}
 		{
-			x: 6.5d
-			y: -0.5d
-			subtitle: "Advanced Metallurgy"
+			dependencies: ["094FAB57D8E3D2F6"]
 			description: [
 				"Once some basic power infrastructure is settled, the next most important machine will be the Metallurgic Infuser."
 				""
@@ -44,63 +42,63 @@
 				"Automation Note: Since the two required input materials use two different channels, red and yellow, there’s no way to feed both items in from the same face. As a result, it’s often easiest to make multiple machines, each dedicated to their own infusion material."
 			]
 			hide_dependency_lines: true
-			dependencies: ["094FAB57D8E3D2F6"]
-			min_width: 300
 			id: "13762022DEE4BEC5"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "03D6AC51756CA1AD"
+					player_command: false
+					title: "Rare Mekanism Loot Box"
+					type: "command"
+				}
+				{
+					id: "77AD7E7DB9CF1EEF"
+					item: "mekanism:steel_casing"
+					title: "Steel Casing"
+					type: "item"
+				}
+			]
+			subtitle: "Advanced Metallurgy"
 			tasks: [{
 				id: "367A53ACB8A3AECB"
-				type: "item"
-				title: "Metallurgic Infuser"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "mekanism:metallurgic_infuser"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "mekanism:basic_infusing_factory"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "mekanism:advanced_infusing_factory"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "mekanism:elite_infusing_factory"
-								Count: 1b
 							}
 							{
-								id: "mekanism:ultimate_infusing_factory"
 								Count: 1b
+								id: "mekanism:ultimate_infusing_factory"
 							}
 						]
 					}
 				}
+				title: "Metallurgic Infuser"
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "03D6AC51756CA1AD"
-					type: "command"
-					title: "Rare Mekanism Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
-					player_command: false
-				}
-				{
-					id: "77AD7E7DB9CF1EEF"
-					type: "item"
-					title: "Steel Casing"
-					item: "mekanism:steel_casing"
-				}
-			]
+			x: 6.5d
+			y: -0.5d
 		}
 		{
-			x: 6.5d
-			y: 0.5d
-			subtitle: "Put One In The Chamber"
+			dependencies: ["094FAB57D8E3D2F6"]
 			description: [
 				"Alloys will be needed commonly for more advanced machinery. They can be quite costly to make, however, as infusion materials don’t go very far."
 				""
@@ -109,94 +107,92 @@
 				"For example, a single Redstone will make a single Infused Alloy, however a single Enriched Redstone will make eight Alloys. It is therefore well worth the effort to enrich these items.  "
 			]
 			hide_dependency_lines: true
-			dependencies: ["094FAB57D8E3D2F6"]
 			id: "5EC7CA1A86435B30"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "131BF3970989B404"
+					player_command: false
+					title: "Rare Mekanism Loot Box"
+					type: "command"
+				}
+				{
+					count: 4
+					id: "2A96EA3BE19E6B08"
+					item: "mekanism:enriched_redstone"
+					title: "Enriched Redstone"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "527979FF09FCCA75"
+					item: "mekanism:enriched_carbon"
+					title: "Enriched Carbon"
+					type: "item"
+				}
+			]
+			subtitle: "Put One In The Chamber"
 			tasks: [{
 				id: "5F5EE2F551F7913B"
-				type: "item"
-				title: "Enrichment Chamber"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "mekanism:enrichment_chamber"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "mekanism:basic_enriching_factory"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "mekanism:advanced_enriching_factory"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "mekanism:elite_enriching_factory"
-								Count: 1b
 							}
 							{
-								id: "mekanism:ultimate_enriching_factory"
 								Count: 1b
+								id: "mekanism:ultimate_enriching_factory"
 							}
 						]
 					}
 				}
+				title: "Enrichment Chamber"
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "131BF3970989B404"
-					type: "command"
-					title: "Rare Mekanism Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
-					player_command: false
-				}
-				{
-					id: "2A96EA3BE19E6B08"
-					type: "item"
-					title: "Enriched Redstone"
-					item: "mekanism:enriched_redstone"
-					count: 4
-				}
-				{
-					id: "527979FF09FCCA75"
-					type: "item"
-					title: "Enriched Carbon"
-					item: "mekanism:enriched_carbon"
-					count: 8
-				}
-			]
+			x: 6.5d
+			y: 0.5d
 		}
 		{
-			x: 6.5d
-			y: 1.5d
-			subtitle: "Pushing Down On Me, Pressing Down On You"
+			dependencies: ["094FAB57D8E3D2F6"]
 			description: ["Certain chemical reactions only occur at greater pressures and the PRC can be used to facilitate them."]
 			hide_dependency_lines: true
-			dependencies: ["094FAB57D8E3D2F6"]
 			id: "4427B8F3C87DDF02"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "1958B307B1019C34"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
+			subtitle: "Pushing Down On Me, Pressing Down On You"
 			tasks: [{
 				id: "0E9481BE3E52363E"
-				type: "item"
 				item: "mekanism:pressurized_reaction_chamber"
+				type: "item"
 			}]
-			rewards: [{
-				id: "1958B307B1019C34"
-				type: "command"
-				title: "Rare Mekanism Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
-				player_command: false
-			}]
+			x: 6.5d
+			y: 1.5d
 		}
 		{
-			title: "Supercritical Phase Shifter"
-			icon: "mekanism:sps_casing"
-			x: 7.0d
-			y: 2.5d
-			subtitle: "I've Giv'n Her All We've Got, Captain"
+			dependencies: ["094FAB57D8E3D2F6"]
 			description: [
 				"You had a stockpile of Uranium, right? Yeah. You're going to need a lot to build this structure, which is used for generating Antimatter from Nuclear Waste."
 				""
@@ -207,175 +203,176 @@
 				"{\"text\":\"Mekanism Wiki: Supercritical Phase Shifter\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com/wiki/Supercritical_Phase_Shifter\"}}"
 			]
 			hide_dependency_lines: true
-			dependencies: ["094FAB57D8E3D2F6"]
-			min_width: 275
+			icon: "mekanism:sps_casing"
 			id: "3F0DE5664216AD01"
-			tasks: [
-				{
-					id: "45E5874F0FCCDECE"
-					type: "item"
-					item: "mekanism:sps_casing"
-					count: 60L
-				}
-				{
-					id: "2164A5647CB59BA2"
-					type: "item"
-					item: "mekanismgenerators:reactor_glass"
-					count: 122L
-				}
-				{
-					id: "6E2FC37AF289F820"
-					type: "item"
-					item: "mekanism:sps_port"
-					count: 4L
-				}
-				{
-					id: "4D702AA818D8DE41"
-					type: "item"
-					item: "mekanism:supercharged_coil"
-					count: 2L
-				}
-			]
+			min_width: 275
 			rewards: [
 				{
-					id: "48465C411786E326"
-					type: "item"
-					title: "Uranium Ore"
-					item: "emendatusenigmatica:raw_uranium"
 					count: 64
+					id: "48465C411786E326"
+					item: "emendatusenigmatica:raw_uranium"
+					title: "Uranium Ore"
+					type: "item"
 				}
 				{
-					id: "2A335028425C54BC"
-					type: "command"
-					title: "Legendary Mekanism Loot Box"
-					icon: "kubejs:legendary_lootbox"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "2A335028425C54BC"
 					player_command: false
+					title: "Legendary Mekanism Loot Box"
+					type: "command"
 				}
 			]
+			subtitle: "I've Giv'n Her All We've Got, Captain"
+			tasks: [
+				{
+					count: 60L
+					id: "45E5874F0FCCDECE"
+					item: "mekanism:sps_casing"
+					type: "item"
+				}
+				{
+					count: 122L
+					id: "2164A5647CB59BA2"
+					item: "mekanismgenerators:reactor_glass"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6E2FC37AF289F820"
+					item: "mekanism:sps_port"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "4D702AA818D8DE41"
+					item: "mekanism:supercharged_coil"
+					type: "item"
+				}
+			]
+			title: "Supercritical Phase Shifter"
+			x: 7.0d
+			y: 2.5d
 		}
 		{
-			x: 6.0d
-			y: 2.5d
-			subtitle: "Indistinguishable from Magic"
+			dependencies: ["094FAB57D8E3D2F6"]
 			description: [
 				"Alchemists of yore were correct in believing that elemental substances could be transmuted."
 				""
 				"What they failed to understand was the vast amount of energy that would be required to do so."
 			]
 			hide_dependency_lines: true
-			dependencies: ["094FAB57D8E3D2F6"]
 			id: "2D91422DA1C8E72A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "5A38C9C7570957F9"
+				player_command: false
+				title: "Legendary Mekanism Loot Box"
+				type: "command"
+			}]
+			subtitle: "Indistinguishable from Magic"
 			tasks: [{
 				id: "0F4DBE31B74978E5"
-				type: "item"
 				item: "mekanism:antiprotonic_nucleosynthesizer"
+				type: "item"
 			}]
-			rewards: [{
-				id: "5A38C9C7570957F9"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
-				player_command: false
-			}]
+			x: 6.0d
+			y: 2.5d
 		}
 		{
-			icon: "mekanism:qio_drive_array"
-			x: 1.5d
-			y: 1.0d
-			shape: "circle"
-			subtitle: "Bigger on the Inside"
+			dependencies: ["06ABB5AAF6BEDC06"]
+			dependency_requirement: "one_completed"
 			description: [
 				"QIO Storage is an extra-dimensional, high-capacity storage medium. The system allows for remote access through a handheld terminal as well as wireless import, export, and Redstone Capabilities."
 				""
 				"It’s also fully compatible with Applied Energistics 2. Simply place a configured QIO Dashboard on an ME Storage Bus to grant AE2 full access to the entire contents of the QIO system."
 			]
-			dependencies: ["06ABB5AAF6BEDC06"]
-			dependency_requirement: "one_completed"
+			icon: "mekanism:qio_drive_array"
 			id: "362BB80FE6B078AF"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "60171A0A588FB94D"
+					player_command: false
+					title: "Legendary Mekanism Loot Box"
+					type: "command"
+				}
+				{
+					id: "256E33D958FEE444"
+					item: "mekanism:portable_qio_dashboard"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			subtitle: "Bigger on the Inside"
 			tasks: [
 				{
 					id: "266A71D752250BCE"
-					type: "item"
 					item: "mekanism:qio_drive_array"
+					type: "item"
 				}
 				{
 					id: "714570B8497FEDD3"
-					type: "item"
-					title: "QIO Drives"
 					item: {
-						id: "itemfilters:or"
 						Count: 1b
+						id: "itemfilters:or"
 						tag: {
 							items: [
 								{
+									Count: 1b
 									id: "mekanism:qio_drive_base"
-									Count: 1b
 								}
 								{
+									Count: 1b
 									id: "mekanism:qio_drive_hyper_dense"
-									Count: 1b
 								}
 								{
+									Count: 1b
 									id: "mekanism:qio_drive_time_dilating"
-									Count: 1b
 								}
 								{
-									id: "mekanism:qio_drive_supermassive"
 									Count: 1b
+									id: "mekanism:qio_drive_supermassive"
 								}
 							]
 						}
 					}
-				}
-			]
-			rewards: [
-				{
-					id: "60171A0A588FB94D"
-					type: "command"
-					title: "Legendary Mekanism Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
-					player_command: false
-				}
-				{
-					id: "256E33D958FEE444"
+					title: "QIO Drives"
 					type: "item"
-					item: "mekanism:portable_qio_dashboard"
 				}
 			]
+			x: 1.5d
+			y: 1.0d
 		}
 		{
-			x: 1.0d
-			y: 2.0d
-			subtitle: "Remote Viewing"
+			dependencies: ["362BB80FE6B078AF"]
 			description: [
 				"Dashboards may be placed anywhere and allow for manual insertion into and extraction from the network."
 				""
 				"As previously mentioned, they can also be used to grant AE2 access to a QIO Network via an attached ME Storage Bus."
 			]
-			dependencies: ["362BB80FE6B078AF"]
 			id: "647D0BCC37639374"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "1DD8FA2631E60F55"
+				player_command: false
+				title: "Legendary Mekanism Loot Box"
+				type: "command"
+			}]
+			subtitle: "Remote Viewing"
 			tasks: [{
 				id: "215415FF1CBE9886"
-				type: "item"
 				item: "mekanism:qio_dashboard"
+				type: "item"
 			}]
-			rewards: [{
-				id: "1DD8FA2631E60F55"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
-				player_command: false
-			}]
+			x: 1.0d
+			y: 2.0d
 		}
 		{
-			title: "QIO Importing and Exporting"
-			x: 2.0d
-			y: 2.0d
-			subtitle: "Garbage In, Garbage Out"
+			dependencies: ["362BB80FE6B078AF"]
 			description: [
 				"Storing items in a QIO Drive Array would be rather daft if there were no way of getting things in or out automatically."
 				""
@@ -383,38 +380,39 @@
 				""
 				"The Redstone Adapter simply outputs a signal when a certain threshold of an item has been reached within the QIO drive space, allowing a simple way of disabling machinery that no longer needs to run."
 			]
-			dependencies: ["362BB80FE6B078AF"]
 			id: "617A03EB53B9808F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "5AD55A2F51EED7D3"
+				player_command: false
+				title: "Legendary Mekanism Loot Box"
+				type: "command"
+			}]
+			subtitle: "Garbage In, Garbage Out"
 			tasks: [
 				{
 					id: "624880FD03932AC8"
-					type: "item"
 					item: "mekanism:qio_importer"
+					type: "item"
 				}
 				{
 					id: "2A7042C14CDA8281"
-					type: "item"
 					item: "mekanism:qio_exporter"
+					type: "item"
 				}
 				{
 					id: "5CEB7355DC35BEAD"
-					type: "item"
 					item: "mekanism:qio_redstone_adapter"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "5AD55A2F51EED7D3"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
-				player_command: false
-			}]
+			title: "QIO Importing and Exporting"
+			x: 2.0d
+			y: 2.0d
 		}
 		{
-			x: 7.5d
-			y: -0.5d
-			subtitle: "Better Than a Stick in the Eye"
+			dependencies: ["094FAB57D8E3D2F6"]
 			description: [
 				"It’s bound to happen. With pipes and cables running everywhere, who knows what’s going to get into that machine when it’s plonked down. Water? Hydrogen? And once things are in, often times it’s not clear how to get them out."
 				""
@@ -423,27 +421,27 @@
 				"Similarly, Sneak + Right-Clicking the air with the gauge dropper will void whatever is currently stored."
 			]
 			hide_dependency_lines: true
-			dependencies: ["094FAB57D8E3D2F6"]
-			min_width: 300
 			id: "06C3D5F78BA710C4"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "469F014669D8372A"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
+			subtitle: "Better Than a Stick in the Eye"
 			tasks: [{
 				id: "68D52990792852FA"
-				type: "item"
 				item: "mekanism:gauge_dropper"
+				type: "item"
 			}]
-			rewards: [{
-				id: "469F014669D8372A"
-				type: "command"
-				title: "Rare Mekanism Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
-				player_command: false
-			}]
+			x: 7.5d
+			y: -0.5d
 		}
 		{
-			x: 5.5d
-			y: -0.5d
-			subtitle: "Yo Dawg, Heard You Liked Machines..."
+			dependencies: ["094FAB57D8E3D2F6"]
 			description: [
 				"There are limits to the number of speed upgrades that can go in machines. After that, expanding sideways is the only option to speeding things up. Thankfully, Tier Installers make this somewhat easier than simply tossing down nine more machines full of upgrades. Remember, it’s all about being efficient!"
 				""
@@ -452,64 +450,71 @@
 				"To apply a Tier Installer, simply Sneak + Right-Click on a machine place in-world. Tiers must be installed in order, no skipping tiers!"
 			]
 			hide_dependency_lines: true
-			dependencies: ["094FAB57D8E3D2F6"]
-			min_width: 300
 			id: "5A47B6B53BADF585"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "5D6190F7A86AA552"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
+			subtitle: "Yo Dawg, Heard You Liked Machines..."
 			tasks: [{
 				id: "1841697C3D1FDFAE"
-				type: "item"
-				title: "Tier Installers"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "mekanism:basic_tier_installer"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "mekanism:advanced_tier_installer"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "mekanism:elite_tier_installer"
-								Count: 1b
 							}
 							{
-								id: "mekanism:ultimate_tier_installer"
 								Count: 1b
+								id: "mekanism:ultimate_tier_installer"
 							}
 						]
 					}
 				}
+				title: "Tier Installers"
+				type: "item"
 			}]
-			rewards: [{
-				id: "5D6190F7A86AA552"
-				type: "command"
-				title: "Rare Mekanism Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
-				player_command: false
-			}]
+			x: 5.5d
+			y: -0.5d
 		}
 		{
-			x: -3.5d
-			y: -0.5d
-			subtitle: "Guests are reminded that Platform One forbids the use of weapons, teleportation, and religion."
+			dependencies: ["01E97C3D888A1677"]
 			description: [
 				"Got somewhere to be and no time to get there? Well, start walking. And next time, bring a teleporter to set up when you get there to avoid going the long way again."
 				""
 				"Teleporter Frames are Optional."
 			]
-			dependencies: ["01E97C3D888A1677"]
 			id: "4A9E737597297689"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "418966840E6DECD6"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
+			subtitle: "Guests are reminded that Platform One forbids the use of weapons, teleportation, and religion."
 			tasks: [{
 				id: "11AFA218FE7BA802"
-				type: "item"
 				item: {
-					id: "mekanism:teleporter"
 					Count: 1b
+					id: "mekanism:teleporter"
 					tag: {
 						mekData: {
 							EnergyContainers: [{
@@ -519,33 +524,13 @@
 						}
 					}
 				}
+				type: "item"
 			}]
-			rewards: [{
-				id: "418966840E6DECD6"
-				type: "command"
-				title: "Rare Mekanism Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
-				player_command: false
-			}]
+			x: -3.5d
+			y: -0.5d
 		}
 		{
-			title: "Getting Started: Logistics and Storage"
-			icon: {
-				id: "mekanism:configurator"
-				Count: 1b
-				tag: {
-					mekData: {
-						EnergyContainers: [{
-							Container: 0b
-							stored: "60000"
-						}]
-					}
-				}
-			}
-			x: 1.5d
-			y: -1.5d
-			shape: "hexagon"
+			dependencies: ["2F22D2DB89CB9225"]
 			description: [
 				"Mekanism deals in Energy, Fluid, Gas, Item, and Heat transfer, and has a matching pipe to assist in the transfer of each."
 				""
@@ -556,26 +541,40 @@
 				"When in any of the ‘Configurate’ modes, the Configurator will toggle different aspects of the pipe. See the following sections for more information. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["2F22D2DB89CB9225"]
-			min_width: 300
+			icon: {
+				Count: 1b
+				id: "mekanism:configurator"
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "60000"
+						}]
+					}
+				}
+			}
 			id: "06ABB5AAF6BEDC06"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "4E6A4987E188A34D"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "503D71FFC12F066F"
-				type: "item"
 				item: "mekanism:configurator"
+				type: "item"
 			}]
-			rewards: [{
-				id: "4E6A4987E188A34D"
-				type: "command"
-				title: "Rare Mekanism Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
-				player_command: false
-			}]
+			title: "Getting Started: Logistics and Storage"
+			x: 1.5d
+			y: -1.5d
 		}
 		{
-			x: 0.5d
-			y: 0.5d
+			dependencies: ["06ABB5AAF6BEDC06"]
 			description: [
 				"It isn’t always convenient to lay out pipes for hundreds of blocks, especially since the rules of Minecraft dictate that all those blocks would need to be loaded to transport items."
 				""
@@ -586,26 +585,26 @@
 				"Entangloporters have no range limitations and work across dimensions. They can be given an Anchor upgrade as well to force load the chunk they are in."
 			]
 			hide_dependency_lines: true
-			dependencies: ["06ABB5AAF6BEDC06"]
-			min_width: 300
 			id: "6158C8C01BEFC857"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "532E3081E1FF5EC2"
+				player_command: false
+				title: "Legendary Mekanism Loot Box"
+				type: "command"
+			}]
 			tasks: [{
 				id: "4DB65EB788A1ECBA"
-				type: "item"
 				item: "mekanism:quantum_entangloporter"
+				type: "item"
 			}]
-			rewards: [{
-				id: "532E3081E1FF5EC2"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
-				player_command: false
-			}]
+			x: 0.5d
+			y: 0.5d
 		}
 		{
-			x: 5.5d
-			y: 0.5d
+			dependencies: ["094FAB57D8E3D2F6"]
 			description: [
 				"By placing objects under great pressure, they may be infused with other materials."
 				""
@@ -614,122 +613,109 @@
 				"Remember to install Gas Upgrades to make the gas inputs more efficient!"
 			]
 			hide_dependency_lines: true
-			dependencies: ["094FAB57D8E3D2F6"]
 			id: "2A029FF13CC8072B"
-			tasks: [{
-				id: "74C26C9ED32C3063"
-				type: "item"
-				title: "Chemical Injection Chamber"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "mekanism:chemical_injection_chamber"
-								Count: 1b
-							}
-							{
-								id: "mekanism:basic_injecting_factory"
-								Count: 1b
-							}
-							{
-								id: "mekanism:advanced_injecting_factory"
-								Count: 1b
-							}
-							{
-								id: "mekanism:elite_injecting_factory"
-								Count: 1b
-							}
-							{
-								id: "mekanism:ultimate_injecting_factory"
-								Count: 1b
-							}
-						]
-					}
-				}
-			}]
 			rewards: [
 				{
 					id: "71CFB0EC8091E0AF"
-					type: "item"
 					item: "mekanism:upgrade_gas"
+					type: "item"
 				}
 				{
-					id: "3F9BD229E827C77F"
-					type: "command"
-					title: "Epic Mekanism Loot Box"
-					icon: "kubejs:epic_lootbox"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "3F9BD229E827C77F"
 					player_command: false
+					title: "Epic Mekanism Loot Box"
+					type: "command"
 				}
 			]
-		}
-		{
-			x: 7.5d
-			y: 0.5d
-			description: ["Unsurprisingly, smashing things together to make new things is also an age-old tradition. The Combiner may be used to simplify obtaining a number of decorative blocks."]
-			hide_dependency_lines: true
-			dependencies: ["094FAB57D8E3D2F6"]
-			id: "2CEFDF64D65673F0"
 			tasks: [{
-				id: "44A2F1D3CBB1CA5F"
-				type: "item"
-				title: "Combiner"
+				id: "74C26C9ED32C3063"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
-								id: "mekanism:combiner"
 								Count: 1b
+								id: "mekanism:chemical_injection_chamber"
 							}
 							{
-								id: "mekanism:basic_combining_factory"
 								Count: 1b
+								id: "mekanism:basic_injecting_factory"
 							}
 							{
-								id: "mekanism:advanced_combining_factory"
 								Count: 1b
+								id: "mekanism:advanced_injecting_factory"
 							}
 							{
-								id: "mekanism:elite_combining_factory"
 								Count: 1b
+								id: "mekanism:elite_injecting_factory"
 							}
 							{
-								id: "mekanism:ultimate_combining_factory"
 								Count: 1b
+								id: "mekanism:ultimate_injecting_factory"
 							}
 						]
 					}
 				}
+				title: "Chemical Injection Chamber"
+				type: "item"
 			}]
-			rewards: [{
-				id: "2698CDF2EA240362"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/epic"
-				player_command: false
-			}]
+			x: 5.5d
+			y: 0.5d
 		}
 		{
-			icon: {
-				id: "mekanism:mekasuit_helmet"
-				Count: 1b
-				tag: {
-					mekData: {
-						EnergyContainers: [{
-							Container: 0b
-							stored: "16000000"
-						}]
+			dependencies: ["094FAB57D8E3D2F6"]
+			description: ["Unsurprisingly, smashing things together to make new things is also an age-old tradition. The Combiner may be used to simplify obtaining a number of decorative blocks."]
+			hide_dependency_lines: true
+			id: "2CEFDF64D65673F0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "2698CDF2EA240362"
+				player_command: false
+				title: "Epic Mekanism Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "44A2F1D3CBB1CA5F"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mekanism:combiner"
+							}
+							{
+								Count: 1b
+								id: "mekanism:basic_combining_factory"
+							}
+							{
+								Count: 1b
+								id: "mekanism:advanced_combining_factory"
+							}
+							{
+								Count: 1b
+								id: "mekanism:elite_combining_factory"
+							}
+							{
+								Count: 1b
+								id: "mekanism:ultimate_combining_factory"
+							}
+						]
 					}
 				}
-			}
-			x: -3.5d
-			y: 1.5d
-			subtitle: "The Only Thing They Fear... Is You."
+				title: "Combiner"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["01E97C3D888A1677"]
 			description: [
 				"All pieces may be upgraded to enhance the energy shield and add radiation shielding."
 				""
@@ -760,68 +746,81 @@
 				"● Jump Height Enhancement"
 				"● Magnet Upgrade"
 			]
-			dependencies: ["01E97C3D888A1677"]
+			icon: {
+				Count: 1b
+				id: "mekanism:mekasuit_helmet"
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "16000000"
+						}]
+					}
+				}
+			}
 			id: "6E480CFB4EB48E71"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "3CB100DC1C534B42"
+					player_command: false
+					title: "Legendary Mekanism Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "222D45DF4BF00BC2"
+					player_command: false
+					title: "Legendary Mekanism Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "1B429878EA149C2F"
+					player_command: false
+					title: "Legendary Mekanism Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "48E391547CA0B9FE"
+					player_command: false
+					title: "Legendary Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "The Only Thing They Fear... Is You."
 			tasks: [
 				{
 					id: "52DEDB7389CF027D"
-					type: "item"
 					item: "mekanism:mekasuit_helmet"
+					type: "item"
 				}
 				{
 					id: "3A0F1CA49AFCE8A8"
-					type: "item"
 					item: "mekanism:mekasuit_bodyarmor"
+					type: "item"
 				}
 				{
 					id: "146A47DDB3624E78"
-					type: "item"
 					item: "mekanism:mekasuit_pants"
+					type: "item"
 				}
 				{
 					id: "5B0CE25726B003A6"
-					type: "item"
 					item: "mekanism:mekasuit_boots"
+					type: "item"
 				}
 			]
-			rewards: [
-				{
-					id: "3CB100DC1C534B42"
-					type: "command"
-					title: "Legendary Mekanism Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
-					player_command: false
-				}
-				{
-					id: "222D45DF4BF00BC2"
-					type: "command"
-					title: "Legendary Mekanism Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
-					player_command: false
-				}
-				{
-					id: "1B429878EA149C2F"
-					type: "command"
-					title: "Legendary Mekanism Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
-					player_command: false
-				}
-				{
-					id: "48E391547CA0B9FE"
-					type: "command"
-					title: "Legendary Mekanism Loot Box"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
-					player_command: false
-				}
-			]
+			x: -3.5d
+			y: 1.5d
 		}
 		{
-			x: 0.5d
-			y: -0.5d
+			dependencies: ["06ABB5AAF6BEDC06"]
 			description: [
 				"Basic Chemical storage, these will hold any non-radioactive gas, slurry, infusion type, or pigment."
 				""
@@ -830,155 +829,154 @@
 				"They’ll also function as an over-flow trash by setting them to “Dump Excess”."
 			]
 			hide_dependency_lines: true
-			dependencies: ["06ABB5AAF6BEDC06"]
 			id: "7471BAAE8A81DBA2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "3237A18C32BE6F14"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
 			tasks: [{
 				id: "7BEFF1CA0FC0612B"
-				type: "item"
 				item: "mekanism:basic_chemical_tank"
+				type: "item"
 			}]
-			rewards: [{
-				id: "3237A18C32BE6F14"
-				type: "command"
-				title: "Rare Mekanism Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
-				player_command: false
-			}]
+			x: 0.5d
+			y: -0.5d
 		}
 		{
-			x: 2.5d
-			y: -0.5d
+			dependencies: ["06ABB5AAF6BEDC06"]
 			description: ["Basic Fluid storage, these can auto-output to the bottom by Sneak + Right-Clicking the bottom face with a Configurator."]
 			hide_dependency_lines: true
-			dependencies: ["06ABB5AAF6BEDC06"]
 			id: "10371E1C04CA6673"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "7F95A852BA445BB5"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
 			tasks: [{
 				id: "02E592C1CE9FB64A"
-				type: "item"
 				item: "mekanism:basic_fluid_tank"
+				type: "item"
 			}]
-			rewards: [{
-				id: "7F95A852BA445BB5"
-				type: "command"
-				title: "Rare Mekanism Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
-				player_command: false
-			}]
+			x: 2.5d
+			y: -0.5d
 		}
 		{
-			x: 2.5d
-			y: 0.5d
+			dependencies: ["06ABB5AAF6BEDC06"]
+			dependency_requirement: "one_started"
 			description: [
 				"Large scale Gas or Fluid storage, Dynamic Tanks may be any size from 3x3x3 to 18x18x18. Structural Glass may be used in place of Dynamic Tank blocks anywhere but the edges and corners."
 				""
 				"{\"text\":\"Mekanism Wiki: Dynamic Tank\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com/wiki/Dynamic_Tank\"}}"
 			]
 			hide_dependency_lines: true
-			dependencies: ["06ABB5AAF6BEDC06"]
-			dependency_requirement: "one_started"
 			id: "684B120D89102381"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "65A247D76D57636D"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "1E9AAE22BA9F3FB5"
-					type: "item"
 					item: "mekanism:dynamic_tank"
+					type: "item"
 				}
 				{
 					id: "1453F79AA63C84DD"
-					type: "item"
 					item: "mekanism:dynamic_valve"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "65A247D76D57636D"
-				type: "command"
-				title: "Rare Mekanism Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
-				player_command: false
-			}]
+			x: 2.5d
+			y: 0.5d
 		}
 		{
-			x: -3.0d
-			y: 0.5d
-			description: ["All your essential vitamins, minerals, and amino acids, neatly condensed into a convenient chewy paste. Yum."]
 			dependencies: ["01E97C3D888A1677"]
+			description: ["All your essential vitamins, minerals, and amino acids, neatly condensed into a convenient chewy paste. Yum."]
 			id: "52B63C31B6522EBF"
-			tasks: [{
-				id: "49252566B6D91021"
-				type: "item"
-				item: "mekanism:nutritional_liquifier"
-			}]
 			rewards: [
 				{
 					id: "2FD336CE679DF10F"
-					type: "item"
 					item: "mekanism:canteen"
+					type: "item"
 				}
 				{
-					id: "6D14EA132AC6D0B8"
-					type: "command"
-					title: "Epic Mekanism Loot Box"
-					icon: "kubejs:epic_lootbox"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "6D14EA132AC6D0B8"
 					player_command: false
+					title: "Epic Mekanism Loot Box"
+					type: "command"
 				}
 			]
+			tasks: [{
+				id: "49252566B6D91021"
+				item: "mekanism:nutritional_liquifier"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.5d
 		}
 		{
-			icon: "mekanism:pigment_mixer"
-			x: -2.5d
-			y: -0.5d
-			description: ["This suite of blocks allows for high-efficiency production and application of dyes. "]
 			dependencies: ["01E97C3D888A1677"]
+			description: ["This suite of blocks allows for high-efficiency production and application of dyes. "]
+			icon: "mekanism:pigment_mixer"
 			id: "38E5C9D1E8124AF2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "25EE24164AB5F22C"
+				player_command: false
+				title: "Epic Mekanism Loot Box"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "4303F9B3573D98A1"
-					type: "item"
 					item: "mekanism:pigment_mixer"
+					type: "item"
 				}
 				{
 					id: "071E42CACA230592"
-					type: "item"
 					item: "mekanism:pigment_extractor"
+					type: "item"
 				}
 				{
 					id: "5BCA0F44DD1F7259"
-					type: "item"
 					item: "mekanism:painting_machine"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "25EE24164AB5F22C"
-				type: "command"
-				title: "Epic Mekanism Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/epic"
-				player_command: false
-			}]
+			x: -2.5d
+			y: -0.5d
 		}
 		{
-			x: -3.0d
-			y: -1.5d
-			shape: "hexagon"
+			dependencies: ["2F22D2DB89CB9225"]
 			description: ["Beyond machines and logistics, Mekanism offers a number of very useful tools, armor, and utility devices."]
 			hide_dependency_lines: true
-			dependencies: ["2F22D2DB89CB9225"]
 			id: "01E97C3D888A1677"
+			shape: "hexagon"
 			tasks: [{
 				id: "5E370E815E04D56C"
-				type: "item"
-				title: "Tools and Utility"
 				item: "mekanism:cardboard_box"
+				title: "Tools and Utility"
+				type: "item"
 			}]
+			x: -3.0d
+			y: -1.5d
 		}
 		{
-			x: -2.5d
-			y: 1.5d
-			subtitle: "Rip and Tear"
+			dependencies: ["01E97C3D888A1677"]
 			description: [
 				"A powerful all in one tool capable of accepting several upgrades."
 				""
@@ -991,27 +989,26 @@
 				"● Teleportation Unit"
 				"● Farming Unit"
 			]
-			dependencies: ["01E97C3D888A1677"]
 			id: "3B271D8FF74A7F73"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "6646042C11EB98C5"
+				player_command: false
+				title: "Legendary Mekanism Loot Box"
+				type: "command"
+			}]
+			subtitle: "Rip and Tear"
 			tasks: [{
 				id: "0290DC2A227A55BA"
-				type: "item"
 				item: "mekanism:meka_tool"
+				type: "item"
 			}]
-			rewards: [{
-				id: "6646042C11EB98C5"
-				type: "command"
-				title: "Legendary Mekanism Loot Box"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
-				player_command: false
-			}]
+			x: -2.5d
+			y: 1.5d
 		}
 		{
-			icon: "mekanism:teleportation_core"
-			x: 1.5d
-			y: -3.0d
-			shape: "gear"
+			dependencies: ["2CCCDD05AED3153F"]
 			description: [
 				"A Sci-Fi themed technology mod with an emphasis on the extreme, Mekanism focuses on creating efficiencies, whether in the form of increased output from ores to advanced fusion reactors to power your base."
 				""
@@ -1021,15 +1018,18 @@
 				""
 				"{\"text\":\"Mekanism Wiki\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com\"}}"
 			]
-			dependencies: ["2CCCDD05AED3153F"]
 			hide: true
+			icon: "mekanism:teleportation_core"
 			id: "2F22D2DB89CB9225"
+			shape: "gear"
 			tasks: [{
 				id: "0B5D2CC7B9E48CE8"
-				type: "checkmark"
 				title: "Mekanism"
+				type: "checkmark"
 			}]
+			x: 1.5d
+			y: -3.0d
 		}
 	]
-	quest_links: [ ]
+	title: "Mekanism"
 }

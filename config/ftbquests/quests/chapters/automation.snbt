@@ -1,18 +1,46 @@
 {
-	id: "00000000000002AB"
-	group: "0856CF7F5CBEB20A"
-	order_index: 4
-	filename: "automation"
-	title: "Redstone and Logic"
-	icon: "minecraft:hopper"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "automation"
+	group: "0856CF7F5CBEB20A"
+	icon: "minecraft:hopper"
+	id: "00000000000002AB"
+	order_index: 4
+	quest_links: [
+		{
+			id: "5523D55508151A28"
+			linked_quest: "0E74E2DD26D0CED0"
+			x: -9.5d
+			y: -7.5d
+		}
+		{
+			id: "1022A1D5FDA65DEB"
+			linked_quest: "3B554ECB7BEADD2E"
+			x: -9.5d
+			y: -6.5d
+		}
+		{
+			id: "0FCDB9F838648F57"
+			linked_quest: "450E3698E39CC0A1"
+			x: -9.5d
+			y: -5.5d
+		}
+		{
+			id: "65E40D119E9AC5CC"
+			linked_quest: "00000000000000DC"
+			x: -8.5d
+			y: -6.0d
+		}
+		{
+			id: "23A3FE53CB6AA04A"
+			linked_quest: "0000000000000120"
+			x: -8.5d
+			y: -7.0d
+		}
+	]
 	quests: [
 		{
-			title: "Item Router"
-			x: -10.0d
-			y: -2.5d
-			subtitle: "Have you tried turning it off and on again?"
+			dependencies: ["3468E652B4FE85FA"]
 			description: [
 				"Modular Routers are very powerful tools for automation. They're a single block that can be augmented to do many things, like breaking blocks, sorting items, pushing items into remote inventories, or all of the above at once, and more!"
 				""
@@ -22,27 +50,27 @@
 				"There is also a mod guidebook \"Modular Routers Manual\", which will have details on everything."
 			]
 			hide_dependency_lines: true
-			dependencies: ["3468E652B4FE85FA"]
 			id: "15E49A6B00BE744C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+				icon: "kubejs:miners_delight"
+				id: "0000000000000968"
+				player_command: false
+				title: "Miner's Delight"
+				type: "command"
+			}]
+			subtitle: "Have you tried turning it off and on again?"
 			tasks: [{
 				id: "366C08F8F32D7E4B"
-				type: "item"
 				item: "modularrouters:modular_router"
+				type: "item"
 			}]
-			rewards: [{
-				id: "0000000000000968"
-				type: "command"
-				title: "Miner's Delight"
-				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
-				player_command: false
-			}]
+			title: "Item Router"
+			x: -10.0d
+			y: -2.5d
 		}
 		{
-			title: "XNet Controller"
-			icon: "xnet:controller"
-			x: -10.0d
-			y: -4.0d
+			dependencies: ["3468E652B4FE85FA"]
 			description: [
 				"xNet acts as a programmable logistics interface which can adapt to external conditions based on programmed logic. It can transfer Items, Fluids, Gases, and Power rapidly and in precise amounts in addition to its logic capabilities."
 				""
@@ -53,258 +81,260 @@
 				"All programming is performed within the Controller itself by first creating channels and then selecting connectors in the GUI to program what they will do. Watching a few videos on this is highly recommended, as it is not something that’s easily learned without visual guides. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["3468E652B4FE85FA"]
+			icon: "xnet:controller"
 			id: "559D7D60CDDE5596"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "0000000000000A5D"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "204956F05E407E82"
-					type: "item"
 					item: "xnet:controller"
+					type: "item"
 				}
 				{
+					consume_items: false
 					id: "79D951766C0A6EF5"
-					type: "item"
-					title: "Any XNet cable"
 					item: {
-						id: "itemfilters:or"
 						Count: 1b
+						id: "itemfilters:or"
 						tag: {
 							items: [
 								{
+									Count: 1b
 									id: "xnet:netcable_red"
-									Count: 1b
 								}
 								{
+									Count: 1b
 									id: "xnet:netcable_green"
-									Count: 1b
 								}
 								{
+									Count: 1b
 									id: "xnet:netcable_blue"
-									Count: 1b
 								}
 								{
-									id: "xnet:netcable_yellow"
 									Count: 1b
+									id: "xnet:netcable_yellow"
 								}
 							]
 						}
 					}
-					consume_items: false
+					title: "Any XNet cable"
+					type: "item"
 				}
 				{
 					id: "4B2CE60937C00CCE"
-					type: "item"
-					title: "Any XNet Connector"
 					item: {
-						id: "itemfilters:or"
 						Count: 1b
+						id: "itemfilters:or"
 						tag: {
 							items: [
 								{
+									Count: 1b
 									id: "xnet:connector_red"
-									Count: 1b
 								}
 								{
+									Count: 1b
 									id: "xnet:connector_green"
-									Count: 1b
 								}
 								{
+									Count: 1b
 									id: "xnet:connector_blue"
-									Count: 1b
 								}
 								{
-									id: "xnet:connector_yellow"
 									Count: 1b
+									id: "xnet:connector_yellow"
 								}
 							]
 						}
 					}
+					title: "Any XNet Connector"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "0000000000000A5D"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				player_command: false
-			}]
+			title: "XNet Controller"
+			x: -10.0d
+			y: -4.0d
 		}
 		{
-			title: "Redstone and Logic"
-			icon: "minecraft:comparator"
-			x: -10.0d
-			y: -9.0d
-			shape: "hexagon"
 			description: ["Mods bring a lot to the table when it comes to using redstone. From cable that can transmit 16 different signals at once, compact one-block timers or latches, or just wireless inter-dimensional connections, there's bound to be a solution to your redstone needs. "]
+			icon: "minecraft:comparator"
 			id: "3468E652B4FE85FA"
-			tasks: [{
-				id: "61B85B234D1E9F5E"
-				type: "checkmark"
-			}]
 			rewards: [{
 				id: "0DFBD5289D4AFCA0"
 				type: "xp"
 				xp: 100
 			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "61B85B234D1E9F5E"
+				type: "checkmark"
+			}]
+			title: "Redstone and Logic"
+			x: -10.0d
+			y: -9.0d
 		}
 		{
-			x: -10.0d
-			y: -1.5d
+			dependencies: ["15E49A6B00BE744C"]
 			description: ["Modules represent the Router’s basic programming; at least one is required for the Router to do anything at all. Up to nine Modules may be installed in a single Router and each will activate in order from left to right whenever the Router activates. "]
 			hide_dependency_lines: true
-			dependencies: ["15E49A6B00BE744C"]
 			id: "21B266F6556271EB"
+			rewards: [{
+				count: 2
+				id: "04E2CB365714CFFD"
+				item: "modularrouters:blank_module"
+				type: "item"
+			}]
 			tasks: [{
 				id: "428BD8D12FB203C8"
-				type: "item"
 				item: "modularrouters:blank_module"
-			}]
-			rewards: [{
-				id: "04E2CB365714CFFD"
 				type: "item"
-				item: "modularrouters:blank_module"
-				count: 2
 			}]
+			x: -10.0d
+			y: -1.5d
 		}
 		{
-			x: -11.0d
-			y: 0.5d
+			dependencies: ["60A72B4FC2AFD9C3"]
 			description: [
 				"Distributor Modules function much like MK2 Senders and Pullers and are bound to a block in the same way. However, the Distributor may be bound to as many as eight different sides or blocks. "
 				""
 				"Open the module’s GUI to set it to transfer either into the Router or Out, and to set a distribution strategy, such as Round Robin or Random. "
 			]
-			dependencies: ["60A72B4FC2AFD9C3"]
 			id: "1956D60143703C16"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "239155FDD340ECAF"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "6F60B6D7143847D6"
-				type: "item"
 				item: {
-					id: "modularrouters:distributor_module"
 					Count: 1b
+					id: "modularrouters:distributor_module"
 					tag: {
 						modularrouters: {
 							ModuleFilter: { }
 						}
 					}
 				}
+				type: "item"
 			}]
-			rewards: [{
-				id: "239155FDD340ECAF"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				player_command: false
-			}]
+			x: -11.0d
+			y: 0.5d
 		}
 		{
-			x: -9.0d
-			y: 0.5d
-			description: ["The Breaker Module breaks blocks adjacent to the Router. It uses the properties of the Pickaxe used to craft it, including enchantments, break level, and other special features, so be sure to craft the Module with an appropriate Pickaxe."]
 			dependencies: ["21B266F6556271EB"]
+			description: ["The Breaker Module breaks blocks adjacent to the Router. It uses the properties of the Pickaxe used to craft it, including enchantments, break level, and other special features, so be sure to craft the Module with an appropriate Pickaxe."]
 			id: "108E174F5672BF48"
-			tasks: [{
-				id: "614539807F15E23E"
-				type: "item"
-				item: {
-					id: "modularrouters:breaker_module"
-					Count: 1b
-					tag: {
-						modularrouters: {
-							ModuleFilter: { }
-							Direction: "NONE"
-						}
-					}
-				}
-			}]
 			rewards: [{
 				id: "1277D5B23BCA8923"
-				type: "item"
 				item: {
-					id: "minecraft:wooden_pickaxe"
 					Count: 1b
+					id: "minecraft:wooden_pickaxe"
 					tag: {
-						RepairCost: 1
 						Damage: 0
 						Enchantments: [{
-							lvl: 1s
 							id: "minecraft:silk_touch"
+							lvl: 1s
 						}]
+						RepairCost: 1
 					}
 				}
+				type: "item"
 			}]
+			tasks: [{
+				id: "614539807F15E23E"
+				item: {
+					Count: 1b
+					id: "modularrouters:breaker_module"
+					tag: {
+						modularrouters: {
+							Direction: "NONE"
+							ModuleFilter: { }
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.5d
 		}
 		{
-			x: -10.5d
-			y: 1.5d
+			dependencies: ["21B266F6556271EB"]
 			description: [
 				"Activator Modules will attempt to Right-Click blocks or entities with the item in their buffer. "
 				""
 				"They may also be used to attack entities if given a weapon and set to Attack mode. "
 			]
-			dependencies: ["21B266F6556271EB"]
 			id: "27C9B26FB5FF10E1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "3922A588208AF529"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "462755624D5FE2DE"
-				type: "item"
 				item: {
-					id: "modularrouters:activator_module"
 					Count: 1b
+					id: "modularrouters:activator_module"
 					tag: {
 						modularrouters: {
-							ModuleFilter: { }
 							Direction: "NONE"
+							ModuleFilter: { }
 						}
 					}
 				}
+				type: "item"
 			}]
-			rewards: [{
-				id: "3922A588208AF529"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: -10.5d
+			y: 1.5d
 		}
 		{
-			x: -8.5d
-			y: -0.5d
+			dependencies: ["21B266F6556271EB"]
 			description: [
 				"Vacuum Modules are powerful automation tools that allow picking up items from the ground based on complex filters. "
 				""
 				"If Augmented with an XP Vacuum, they can even be used to collect XP orbs and convert it to compatible XP fluids or Bottles O’ Enchanting."
 			]
-			dependencies: ["21B266F6556271EB"]
 			id: "322583CAAD093EE4"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "3C512C78B12406AA"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "56280F9C61952290"
-				type: "item"
 				item: {
-					id: "modularrouters:vacuum_module"
 					Count: 1b
+					id: "modularrouters:vacuum_module"
 					tag: {
 						modularrouters: {
-							ModuleFilter: { }
 							Direction: "NONE"
+							ModuleFilter: { }
 						}
 					}
 				}
+				type: "item"
 			}]
-			rewards: [{
-				id: "3C512C78B12406AA"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -8.5d
+			y: -0.5d
 		}
 		{
-			x: -11.5d
-			y: -0.5d
+			dependencies: ["21B266F6556271EB"]
 			description: [
 				"Fluid Modules work as either a Puller or a Sender, transferring fluids into or out of the router. Note that the Router has no built-in fluid tank to store anything, so one must be provided. A bucket or most modded tanks will work fine, simply place it in the Router’s buffer. "
 				""
@@ -314,32 +344,37 @@
 				""
 				"The MK2 variant must be linked to a block space by Sneak Right-Clicking the module on the desired block. "
 			]
-			dependencies: ["21B266F6556271EB"]
 			id: "56234AA9ED3E8324"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "30E1EC30981D6B46"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "6F58BD0AC1F29AD4"
-				type: "item"
-				title: "Fluid Modules"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
-								id: "modularrouters:fluid_module"
 								Count: 1b
+								id: "modularrouters:fluid_module"
 								tag: {
 									modularrouters: {
+										Direction: "NONE"
 										FluidDir: 0b
 										MaxTransfer: 1000
 										ModuleFilter: { }
-										Direction: "NONE"
 									}
 								}
 							}
 							{
-								id: "modularrouters:fluid_module_2"
 								Count: 1b
+								id: "modularrouters:fluid_module_2"
 								tag: {
 									modularrouters: {
 										FluidDir: 0b
@@ -351,51 +386,48 @@
 						]
 					}
 				}
+				title: "Fluid Modules"
+				type: "item"
 			}]
-			rewards: [{
-				id: "30E1EC30981D6B46"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -11.5d
+			y: -0.5d
 		}
 		{
-			title: "Redstone Pen"
-			icon: {
-				id: "redstonepen:pen"
-				Count: 1b
-				tag: {
-					Damage: 0
-				}
-			}
-			x: -7.5d
-			y: -7.5d
+			dependencies: ["3468E652B4FE85FA"]
 			description: [
 				"The Redstone Pen and Quill can \"draw\" redstone dust on any side of a block, with full manual control of connections. Just right click to start drawing! Just having a charged path running over a block won't power the block, but you can choose to do so by right clicking in the center of the redtone path with the pen."
 				""
 				"The Quill uses up redstone dust from your inventory, while the Pen version is charged up with redstone and doesn't need any from your inventory. Craft the pen with dust or blocks to recharge it. The Pen also re-absorbs the redstone when you clear a segment of path by left clicking it."
 			]
 			hide_dependency_lines: true
-			dependencies: ["3468E652B4FE85FA"]
+			icon: {
+				Count: 1b
+				id: "redstonepen:pen"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "44070C90619D14E6"
+			rewards: [{
+				count: 16
+				id: "5EEDBF4F50558BA8"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4DCA07CD21BD3977"
-				type: "item"
-				title: "Either Redstone Pen"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
-								id: "redstonepen:quill"
 								Count: 1b
+								id: "redstonepen:quill"
 							}
 							{
-								id: "redstonepen:pen"
 								Count: 1b
+								id: "redstonepen:pen"
 								tag: {
 									Damage: 0
 								}
@@ -403,333 +435,331 @@
 						]
 					}
 				}
-			}]
-			rewards: [{
-				id: "5EEDBF4F50558BA8"
+				title: "Either Redstone Pen"
 				type: "item"
-				item: "minecraft:redstone"
-				count: 16
 			}]
+			title: "Redstone Pen"
+			x: -7.5d
+			y: -7.5d
 		}
 		{
-			x: -10.5d
-			y: -6.5d
+			dependencies: ["3468E652B4FE85FA"]
 			description: [
 				"Cheap wireless redstone, with unlimited channels, and good but not unlimited range."
 				""
 				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
 			]
 			hide_dependency_lines: true
-			dependencies: ["3468E652B4FE85FA"]
 			id: "28A8C7959A7EEBAE"
-			tasks: [{
-				id: "1C4826588F57C889"
-				type: "item"
-				item: "create:redstone_link"
-				count: 2L
-			}]
 			rewards: [{
 				id: "6F390DC46A49341F"
-				type: "item"
 				item: "create:redstone_link"
+				type: "item"
 			}]
+			tasks: [{
+				count: 2L
+				id: "1C4826588F57C889"
+				item: "create:redstone_link"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -6.5d
 		}
 		{
-			x: -10.5d
-			y: -5.5d
+			dependencies: ["28A8C7959A7EEBAE"]
 			description: [
 				"Can remotly activate connected Redstone Links."
 				""
 				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
 			]
-			dependencies: ["28A8C7959A7EEBAE"]
 			id: "21E4D556E8AE724E"
-			tasks: [{
-				id: "161C3B3F56665A92"
-				type: "item"
-				item: "create:linked_controller"
-			}]
 			rewards: [{
 				id: "21EC369B48E4317E"
-				type: "item"
 				item: "minecraft:lectern"
+				type: "item"
 			}]
+			tasks: [{
+				id: "161C3B3F56665A92"
+				item: "create:linked_controller"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -5.5d
 		}
 		{
-			x: -11.5d
-			y: -7.0d
+			dependencies: ["3468E652B4FE85FA"]
 			description: [
 				"Set the output with a signal at the back, and reset the output with a signal from the side. Perfect for toggling your power generation automatically."
 				""
 				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
 			]
 			hide_dependency_lines: true
-			dependencies: ["3468E652B4FE85FA"]
 			id: "1042C49086A29CE2"
-			tasks: [{
-				id: "6A55E19410163485"
-				type: "item"
-				item: "create:powered_latch"
-			}]
 			rewards: [{
 				id: "3AA02F6637A04AD3"
-				type: "item"
 				item: "minecraft:comparator"
+				type: "item"
 			}]
+			tasks: [{
+				id: "6A55E19410163485"
+				item: "create:powered_latch"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -7.0d
 		}
 		{
-			title: "Redstone Proxy (Update)"
-			x: -11.0d
-			y: -4.0d
+			dependencies: ["559D7D60CDDE5596"]
 			description: [
 				"When attempting to read Redstone signals from non-vanilla sources, a Proxy block is often required. These should be placed so that the Redstone source points into the Proxy, and then the xNet Connector is placed against the Proxy itself. "
 				""
 				"In some cases, a block update is also required. For those, use the Redstone Proxy (update) block instead."
 			]
-			dependencies: ["559D7D60CDDE5596"]
 			id: "34D8561D229A3122"
+			rewards: [{
+				id: "6A693F43E60B3E3B"
+				item: "xnet:connector_blue"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7A89EF5C6B8A8132"
-				type: "item"
-				title: "Redstone Proxies"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
-								id: "xnet:redstone_proxy"
 								Count: 1b
+								id: "xnet:redstone_proxy"
 							}
 							{
-								id: "xnet:redstone_proxy_upd"
 								Count: 1b
+								id: "xnet:redstone_proxy_upd"
 							}
 						]
 					}
 				}
-			}]
-			rewards: [{
-				id: "6A693F43E60B3E3B"
+				title: "Redstone Proxies"
 				type: "item"
-				item: "xnet:connector_blue"
 			}]
+			title: "Redstone Proxy (Update)"
+			x: -11.0d
+			y: -4.0d
 		}
 		{
-			x: -10.5d
-			y: -7.5d
+			dependencies: ["3468E652B4FE85FA"]
 			description: ["Acts like redstone dust, but in solid block form. Easy vertical transmission!"]
 			hide_dependency_lines: true
-			dependencies: ["3468E652B4FE85FA"]
 			id: "359D48635F222076"
+			rewards: [{
+				count: 2
+				id: "45E59A0B45A70321"
+				item: "supplementaries:cog_block"
+				type: "item"
+			}]
 			tasks: [{
 				id: "59DB7B4DA871079D"
-				type: "item"
 				item: "supplementaries:cog_block"
-			}]
-			rewards: [{
-				id: "45E59A0B45A70321"
 				type: "item"
-				item: "supplementaries:cog_block"
-				count: 2
 			}]
+			x: -10.5d
+			y: -7.5d
 		}
 		{
-			title: "RS Pen Relays"
-			icon: "redstonepen:inverted_relay"
-			x: -7.5d
-			y: -6.5d
+			dependencies: ["44070C90619D14E6"]
 			description: [
 				"Simple relays that can be placed on any side of a block. The tooltips explain how each one works."
 				""
 				"When placing, right click the side of the block face you want the output side to face."
 			]
-			dependencies: ["44070C90619D14E6"]
+			icon: "redstonepen:inverted_relay"
 			id: "28F791EC21444045"
+			rewards: [{
+				count: 2
+				id: "38EDFE0071A6B262"
+				item: "redstonepen:relay"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1B0B720B736296F8"
-				type: "item"
-				title: "Any RS Pen Relay"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "redstonepen:relay"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "redstonepen:inverted_relay"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "redstonepen:bistable_relay"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "redstonepen:pulse_relay"
-								Count: 1b
 							}
 							{
-								id: "redstonepen:bridge_relay"
 								Count: 1b
+								id: "redstonepen:bridge_relay"
 							}
 						]
 					}
 				}
-			}]
-			rewards: [{
-				id: "38EDFE0071A6B262"
+				title: "Any RS Pen Relay"
 				type: "item"
-				item: "redstonepen:relay"
-				count: 2
 			}]
+			title: "RS Pen Relays"
+			x: -7.5d
+			y: -6.5d
 		}
 		{
-			x: -6.0d
-			y: -1.5d
+			dependencies: ["15E49A6B00BE744C"]
 			description: ["Upgrades are installed in the Router itself and augment how it operates, such as speeding it up or making it immune to blast damage."]
 			hide_dependency_lines: true
-			dependencies: ["15E49A6B00BE744C"]
 			id: "7CD587747CC14268"
+			rewards: [{
+				count: 2
+				id: "3E55636E26686CC0"
+				item: "modularrouters:blank_upgrade"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3FD6609BE4F80DAD"
-				type: "item"
 				item: "modularrouters:blank_upgrade"
-			}]
-			rewards: [{
-				id: "3E55636E26686CC0"
 				type: "item"
-				item: "modularrouters:blank_upgrade"
-				count: 2
 			}]
+			x: -6.0d
+			y: -1.5d
 		}
 		{
-			x: -14.0d
-			y: -1.5d
+			dependencies: ["15E49A6B00BE744C"]
 			description: ["Augments are installed within individual Modules and apply only to that module, changing how it operates. "]
 			hide_dependency_lines: true
-			dependencies: ["15E49A6B00BE744C"]
 			id: "7CA354074FCF8447"
+			rewards: [{
+				count: 2
+				id: "35F7F3293209E5BA"
+				item: "modularrouters:augment_core"
+				type: "item"
+			}]
 			tasks: [{
 				id: "175A67867F65B8C0"
-				type: "item"
 				item: "modularrouters:augment_core"
-			}]
-			rewards: [{
-				id: "35F7F3293209E5BA"
 				type: "item"
-				item: "modularrouters:augment_core"
-				count: 2
 			}]
+			x: -14.0d
+			y: -1.5d
 		}
 		{
-			x: -12.5d
-			y: -7.5d
+			dependencies: ["3468E652B4FE85FA"]
 			description: [
 				"Sends a pulse a set amount of time after receiving a signal"
 				""
 				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
 			]
 			hide_dependency_lines: true
-			dependencies: ["3468E652B4FE85FA"]
 			id: "26365967FDE026B6"
-			tasks: [{
-				id: "1E9609D8328D536F"
-				type: "item"
-				item: "create:pulse_repeater"
-			}]
 			rewards: [{
 				id: "2E26D4A73E250301"
-				type: "item"
 				item: "create:pulse_repeater"
+				type: "item"
 			}]
+			tasks: [{
+				id: "1E9609D8328D536F"
+				item: "create:pulse_repeater"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -7.5d
 		}
 		{
-			x: -11.5d
-			y: -6.0d
+			dependencies: ["1042C49086A29CE2"]
 			description: [
 				"Uses an input pulse to toggle the output. Use a repeater to send a pulse from the output back to the input, with a delay, to make a pulse lengthener."
 				""
 				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
 			]
-			dependencies: ["1042C49086A29CE2"]
 			id: "2013BF98F905223C"
-			tasks: [{
-				id: "39E71AF33C273C4C"
-				type: "item"
-				item: "create:powered_toggle_latch"
-			}]
 			rewards: [
 				{
 					id: "46DC8CD903DE448A"
-					type: "item"
 					item: "create:pulse_repeater"
+					type: "item"
 				}
 				{
 					id: "0EA944B40AA81DC1"
-					type: "item"
 					item: "create:pulse_extender"
+					type: "item"
 				}
 			]
+			tasks: [{
+				id: "39E71AF33C273C4C"
+				item: "create:powered_toggle_latch"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -6.0d
 		}
 		{
-			x: -9.0d
-			y: -4.0d
+			dependencies: ["559D7D60CDDE5596"]
 			description: [
 				"The RF Tools filter is compatible with xNet and is required for tag filtering. "
 				""
 				"Insert the filter into one of the 4 slots at the top of the UI and choose which filter a connector uses with the 'filter index' button on the right."
 			]
-			dependencies: ["559D7D60CDDE5596"]
 			id: "0597A437596EABC1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "7E251F2D83DBC6E3"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "3DFB959BAC0FAAFF"
-				type: "item"
 				item: {
-					id: "rftoolsbase:filter_module"
 					Count: 1b
+					id: "rftoolsbase:filter_module"
 					tag: { }
 				}
+				type: "item"
 			}]
-			rewards: [{
-				id: "7E251F2D83DBC6E3"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -9.0d
+			y: -4.0d
 		}
 		{
-			title: "The Regulator Augment"
-			x: -15.0d
-			y: -0.5d
+			dependencies: ["7CA354074FCF8447"]
 			description: [
 				"Regulator Augments act differently based on what Module they’re installed in. In general, they put a condition on when the module can act. For a Sender, they’ll only send if the target inventory has fewer items than the limit. "
 				""
 				"Check the entry in the Modular Routers Manual for details on how it changes each module. "
 			]
-			dependencies: ["7CA354074FCF8447"]
 			id: "0163571DC8F997F5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "621F32F72099BE12"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "143E9C1A894A8972"
-				type: "item"
 				item: "modularrouters:regulator_augment"
+				type: "item"
 			}]
-			rewards: [{
-				id: "621F32F72099BE12"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			title: "The Regulator Augment"
+			x: -15.0d
+			y: -0.5d
 		}
 		{
-			x: -7.0d
-			y: 0.5d
+			dependencies: ["7CD587747CC14268"]
 			description: [
 				"Speed and Stack Upgrades help to control how quickly the Router operates. "
 				""
@@ -739,55 +769,55 @@
 				""
 				"Both may be combined, of course, to achieve the desired goal. "
 			]
-			dependencies: ["7CD587747CC14268"]
 			id: "3D7E621374741748"
+			rewards: [
+				{
+					count: 3
+					id: "1BAB8612F63CCCC9"
+					item: "modularrouters:stack_upgrade"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "38A7373CD75CD65E"
+					item: "modularrouters:speed_upgrade"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "7CABBEFEA29A5692"
-					type: "item"
 					item: "modularrouters:stack_upgrade"
+					type: "item"
 				}
 				{
 					id: "797528A2459D22B8"
-					type: "item"
 					item: "modularrouters:speed_upgrade"
+					type: "item"
 				}
 			]
-			rewards: [
-				{
-					id: "1BAB8612F63CCCC9"
-					type: "item"
-					item: "modularrouters:stack_upgrade"
-					count: 3
-				}
-				{
-					id: "38A7373CD75CD65E"
-					type: "item"
-					item: "modularrouters:speed_upgrade"
-					count: 3
-				}
-			]
+			x: -7.0d
+			y: 0.5d
 		}
 		{
-			x: -5.0d
-			y: 0.5d
-			description: ["Makes the router fully blast proof, making them immune to both TnT and Withers, making them a valuable upgrade for working with explosions or building Withers. "]
 			dependencies: ["7CD587747CC14268"]
+			description: ["Makes the router fully blast proof, making them immune to both TnT and Withers, making them a valuable upgrade for working with explosions or building Withers. "]
 			id: "27F2EAA313795208"
-			tasks: [{
-				id: "61DD5DD42B8E1C8E"
-				type: "item"
-				item: "modularrouters:blast_upgrade"
-			}]
 			rewards: [{
 				id: "2DA82C3A16F3ACB1"
-				type: "item"
 				item: "modularrouters:blast_upgrade"
+				type: "item"
 			}]
+			tasks: [{
+				id: "61DD5DD42B8E1C8E"
+				item: "modularrouters:blast_upgrade"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.5d
 		}
 		{
-			x: -10.5d
-			y: -0.5d
+			dependencies: ["21B266F6556271EB"]
 			description: [
 				"Sender and Puller Modules send items to or pull items from remote inventories, respectively. "
 				""
@@ -797,31 +827,60 @@
 				""
 				"MK3 Senders go one step further still, allowing the router to send any distance, even across dimensions. The remote inventory must be loaded, of course. Otherwise, they are bound to a side of an inventory the same way as MK2 variants."
 			]
-			dependencies: ["21B266F6556271EB"]
 			id: "60A72B4FC2AFD9C3"
+			rewards: [
+				{
+					count: 3
+					id: "38C6E5FA80C00A29"
+					item: {
+						Count: 1b
+						id: "modularrouters:sender_module_1"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "54ADA65D38042D89"
+					item: {
+						Count: 1b
+						id: "modularrouters:puller_module_1"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "6BE2EDE7B7976DDA"
-					type: "item"
-					title: "Sender Modules"
 					item: {
-						id: "itemfilters:or"
 						Count: 1b
+						id: "itemfilters:or"
 						tag: {
 							items: [
 								{
+									Count: 1b
 									id: "modularrouters:sender_module_1"
-									Count: 1b
 									tag: {
 										modularrouters: {
-											ModuleFilter: { }
 											Direction: "NONE"
+											ModuleFilter: { }
 										}
 									}
 								}
 								{
-									id: "modularrouters:sender_module_2"
 									Count: 1b
+									id: "modularrouters:sender_module_2"
 									tag: {
 										modularrouters: {
 											ModuleFilter: { }
@@ -829,8 +888,8 @@
 									}
 								}
 								{
-									id: "modularrouters:sender_module_3"
 									Count: 1b
+									id: "modularrouters:sender_module_3"
 									tag: {
 										modularrouters: {
 											ModuleFilter: { }
@@ -840,29 +899,29 @@
 							]
 						}
 					}
+					title: "Sender Modules"
+					type: "item"
 				}
 				{
 					id: "580FE19F371CABA6"
-					type: "item"
-					title: "Puller Modules"
 					item: {
-						id: "itemfilters:or"
 						Count: 1b
+						id: "itemfilters:or"
 						tag: {
 							items: [
 								{
-									id: "modularrouters:puller_module_1"
 									Count: 1b
+									id: "modularrouters:puller_module_1"
 									tag: {
 										modularrouters: {
-											ModuleFilter: { }
 											Direction: "NONE"
+											ModuleFilter: { }
 										}
 									}
 								}
 								{
-									id: "modularrouters:puller_module_2"
 									Count: 1b
+									id: "modularrouters:puller_module_2"
 									tag: {
 										modularrouters: {
 											ModuleFilter: { }
@@ -872,54 +931,15 @@
 							]
 						}
 					}
+					title: "Puller Modules"
+					type: "item"
 				}
 			]
-			rewards: [
-				{
-					id: "38C6E5FA80C00A29"
-					type: "item"
-					item: {
-						id: "modularrouters:sender_module_1"
-						Count: 1b
-						tag: {
-							modularrouters: {
-								ModuleFilter: { }
-								Direction: "NONE"
-							}
-						}
-					}
-					count: 3
-				}
-				{
-					id: "54ADA65D38042D89"
-					type: "item"
-					item: {
-						id: "modularrouters:puller_module_1"
-						Count: 1b
-						tag: {
-							modularrouters: {
-								ModuleFilter: { }
-								Direction: "NONE"
-							}
-						}
-					}
-					count: 3
-				}
-			]
+			x: -10.5d
+			y: -0.5d
 		}
 		{
-			icon: {
-				id: "modularrouters:energy_distributor_module"
-				Count: 1b
-				tag: {
-					modularrouters: {
-						ModuleFilter: { }
-						Direction: "NONE"
-					}
-				}
-			}
-			x: -9.5d
-			y: -0.5d
+			dependencies: ["21B266F6556271EB"]
 			description: [
 				"The Energy Output and Energy Distribution Modules allow the Router to supply power to nearby blocks. "
 				""
@@ -927,123 +947,133 @@
 				""
 				"In either case, some source of power is required. This can be in the form of an energy containing item in the Router’s Buffer, or from the Router’s internal energy buffer if Energy Upgrades are installed. "
 			]
-			dependencies: ["21B266F6556271EB"]
+			icon: {
+				Count: 1b
+				id: "modularrouters:energy_distributor_module"
+				tag: {
+					modularrouters: {
+						Direction: "NONE"
+						ModuleFilter: { }
+					}
+				}
+			}
 			id: "2AB330A73BD6447C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "27AFD476C3E9CE35"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "79300CFD6BA43948"
-					type: "item"
 					item: {
-						id: "modularrouters:energy_distributor_module"
 						Count: 1b
+						id: "modularrouters:energy_distributor_module"
 						tag: {
 							modularrouters: {
-								ModuleFilter: { }
 								Direction: "NONE"
+								ModuleFilter: { }
 							}
 						}
 					}
+					type: "item"
 				}
 				{
 					id: "5D322C9809E07CCA"
-					type: "item"
 					item: {
-						id: "modularrouters:energy_output_module"
 						Count: 1b
+						id: "modularrouters:energy_output_module"
 						tag: {
 							modularrouters: {
-								ModuleFilter: { }
 								Direction: "NONE"
+								ModuleFilter: { }
 							}
 						}
 					}
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "27AFD476C3E9CE35"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: -9.5d
+			y: -0.5d
 		}
 		{
-			x: -5.0d
-			y: -0.5d
-			description: ["Grants the Router some amount of energy storage, allowing the router to handle both Item and Energy transfer at once. "]
 			dependencies: ["7CD587747CC14268"]
+			description: ["Grants the Router some amount of energy storage, allowing the router to handle both Item and Energy transfer at once. "]
 			id: "5A7512AA919309E5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "56004BEDB4624F96"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "0CF6F9BAA4502A0E"
-				type: "item"
 				item: "modularrouters:energy_upgrade"
+				type: "item"
 			}]
-			rewards: [{
-				id: "56004BEDB4624F96"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: -5.0d
+			y: -0.5d
 		}
 		{
-			x: -13.0d
-			y: -0.5d
-			description: ["When installed in Modules that work at range, these will adjust the working area. A Vacuum Module, for example, could have its range reduced to prevent picking up items for some other automation, or a Sender could have the range increased to reach further inventories."]
 			dependencies: ["7CA354074FCF8447"]
+			description: ["When installed in Modules that work at range, these will adjust the working area. A Vacuum Module, for example, could have its range reduced to prevent picking up items for some other automation, or a Sender could have the range increased to reach further inventories."]
 			id: "5769B2F6C1C41BF9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "16F20BC236C77741"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "4E92C9FC29427BD1"
-				type: "item"
-				title: "Range Augments"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
-								id: "modularrouters:range_down_augment"
 								Count: 1b
+								id: "modularrouters:range_down_augment"
 							}
 							{
-								id: "modularrouters:range_up_augment"
 								Count: 1b
+								id: "modularrouters:range_up_augment"
 							}
 						]
 					}
 				}
+				title: "Range Augments"
+				type: "item"
 			}]
-			rewards: [{
-				id: "16F20BC236C77741"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -13.0d
+			y: -0.5d
 		}
 		{
-			x: -7.0d
-			y: -0.5d
-			description: ["Sneak Right-Click these on another block and then install it in a Router to upgrade its look and feel. Make the Router look like practically anything at all, even flowers!"]
 			dependencies: ["7CD587747CC14268"]
+			description: ["Sneak Right-Click these on another block and then install it in a Router to upgrade its look and feel. Make the Router look like practically anything at all, even flowers!"]
 			id: "58F3471ACCC0F86A"
-			tasks: [{
-				id: "035E21B5DBD9BD35"
-				type: "item"
-				item: "modularrouters:camouflage_upgrade"
-			}]
 			rewards: [{
 				id: "54186C7FFD7F0FE0"
-				type: "item"
 				item: "minecraft:allium"
+				type: "item"
 			}]
+			tasks: [{
+				id: "035E21B5DBD9BD35"
+				item: "modularrouters:camouflage_upgrade"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -0.5d
 		}
 		{
-			x: -9.5d
-			y: 1.5d
+			dependencies: ["21B266F6556271EB"]
 			description: [
 				"Whether for automation, retractable drawbridges, or fancy doors, the Extruder Module may be of use in many situations."
 				""
@@ -1059,243 +1089,243 @@
 				""
 				"When using multiple Extruders together, the Sync Upgrade can help ensure that they all run simultaneously."
 			]
-			dependencies: ["21B266F6556271EB"]
 			id: "3CB129682BA3399A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "67EA54AB859657A6"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "0F3A18E0B4440919"
-				type: "item"
-				title: "Extruder Module"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
-								id: "modularrouters:extruder_module_1"
 								Count: 1b
+								id: "modularrouters:extruder_module_1"
 								tag: {
 									modularrouters: {
-										ModuleFilter: { }
 										Direction: "NONE"
+										ModuleFilter: { }
 									}
 								}
 							}
 							{
-								id: "modularrouters:extruder_module_2"
 								Count: 1b
+								id: "modularrouters:extruder_module_2"
 								tag: {
 									modularrouters: {
-										ModuleFilter: { }
 										Direction: "NONE"
+										ModuleFilter: { }
 									}
 								}
 							}
 						]
 					}
 				}
+				title: "Extruder Module"
+				type: "item"
 			}]
-			rewards: [{
-				id: "67EA54AB859657A6"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				player_command: false
-			}]
+			x: -9.5d
+			y: 1.5d
 		}
 		{
-			title: "More Filtering"
-			icon: "modularrouters:bulk_item_filter"
-			x: -10.0d
-			y: 2.5d
-			description: ["Need more advanced filters? Or just a bigger filter? Modular Routers has a variety of filter items that may be used in the filter slots of all Modules, enabling some truly advanced capabilities. "]
 			dependencies: ["21B266F6556271EB"]
+			description: ["Need more advanced filters? Or just a bigger filter? Modular Routers has a variety of filter items that may be used in the filter slots of all Modules, enabling some truly advanced capabilities. "]
+			icon: "modularrouters:bulk_item_filter"
 			id: "795B13C31D41A45D"
-			tasks: [{
-				id: "5B47A042CE63665C"
-				type: "item"
-				title: "Any Filter"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "modularrouters:bulk_item_filter"
-								Count: 1b
-							}
-							{
-								id: "modularrouters:inspection_filter"
-								Count: 1b
-							}
-							{
-								id: "modularrouters:mod_filter"
-								Count: 1b
-							}
-							{
-								id: "modularrouters:regex_filter"
-								Count: 1b
-							}
-						]
-					}
-				}
-			}]
 			rewards: [{
 				id: "2E3F82B6A759073B"
-				type: "item"
 				item: "modularrouters:bulk_item_filter"
+				type: "item"
 			}]
+			tasks: [{
+				id: "5B47A042CE63665C"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "modularrouters:bulk_item_filter"
+							}
+							{
+								Count: 1b
+								id: "modularrouters:inspection_filter"
+							}
+							{
+								Count: 1b
+								id: "modularrouters:mod_filter"
+							}
+							{
+								Count: 1b
+								id: "modularrouters:regex_filter"
+							}
+						]
+					}
+				}
+				title: "Any Filter"
+				type: "item"
+			}]
+			title: "More Filtering"
+			x: -10.0d
+			y: 2.5d
 		}
 		{
-			x: -12.5d
-			y: -6.5d
+			dependencies: ["26365967FDE026B6"]
 			description: [
 				"Holds redstone signal specified amount of time after initial signal was removed."
 				""
 				"For a detailed explanation on how to use this, use the 'ponder' feature by holding your mouse over the item in JEI or an inventory, and holding the ponder key (default: w)."
 			]
-			dependencies: ["26365967FDE026B6"]
 			id: "3C349C559F88A363"
-			tasks: [{
-				id: "58CA3C3C515AC16B"
-				type: "item"
-				item: "create:pulse_extender"
-			}]
 			rewards: [{
 				id: "074C3282498DCE8D"
-				type: "item"
 				item: "create:pulse_extender"
+				type: "item"
 			}]
+			tasks: [{
+				id: "58CA3C3C515AC16B"
+				item: "create:pulse_extender"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -6.5d
 		}
 		{
-			x: -6.0d
-			y: 0.5d
-			description: ["Fluid Transfer Upgrades act a bit like Stack upgrades for Fluids, allowing the Router to handle more fluid per activation. Rates will still need to be set in the Fluid Module."]
 			dependencies: ["7CD587747CC14268"]
+			description: ["Fluid Transfer Upgrades act a bit like Stack upgrades for Fluids, allowing the Router to handle more fluid per activation. Rates will still need to be set in the Fluid Module."]
 			id: "41C71AEDF8E9A5C7"
+			rewards: [{
+				count: 3
+				id: "4A8892A8E8CEC447"
+				item: "modularrouters:fluid_upgrade"
+				type: "item"
+			}]
 			tasks: [{
 				id: "69CAF3EA62DE4B0E"
-				type: "item"
 				item: "modularrouters:fluid_upgrade"
-			}]
-			rewards: [{
-				id: "4A8892A8E8CEC447"
 				type: "item"
-				item: "modularrouters:fluid_upgrade"
-				count: 3
 			}]
+			x: -6.0d
+			y: 0.5d
 		}
 		{
-			x: -15.0d
-			y: 0.5d
-			description: ["Filter Round Robin Augments change the nature of a Modules filter, turning it into a round robin list instead. Each time the Module activates, it will cycle to the next item in the filter and only act on that. This can be very useful for times when the Router should pick up a different item each time it activates. "]
 			dependencies: ["7CA354074FCF8447"]
+			description: ["Filter Round Robin Augments change the nature of a Modules filter, turning it into a round robin list instead. Each time the Module activates, it will cycle to the next item in the filter and only act on that. This can be very useful for times when the Router should pick up a different item each time it activates. "]
 			id: "43D0BB5727B18AB3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "08DE601136922190"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "4B21087E1243B4B2"
-				type: "item"
 				item: "modularrouters:filter_round_robin_augment"
+				type: "item"
 			}]
-			rewards: [{
-				id: "08DE601136922190"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -15.0d
+			y: 0.5d
 		}
 		{
-			x: -13.0d
-			y: 0.5d
-			description: ["Used in Flingers and Droppers, Pickup Delay Augments prevent the dropped or flung item from being immediately picked up by a player. Each one adds a ten second delay."]
 			dependencies: ["7CA354074FCF8447"]
+			description: ["Used in Flingers and Droppers, Pickup Delay Augments prevent the dropped or flung item from being immediately picked up by a player. Each one adds a ten second delay."]
 			id: "64E9FD4632B92843"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "2243774A0B86BB25"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "6832B2DCB3C58AAF"
-				type: "item"
 				item: "modularrouters:pickup_delay_augment"
+				type: "item"
 			}]
-			rewards: [{
-				id: "2243774A0B86BB25"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -13.0d
+			y: 0.5d
 		}
 		{
-			x: -14.0d
-			y: -0.5d
-			description: ["Fast Pickup Augments are used in Vacuum Modules and force the Module to ignore any pickup delay on the item, picking it up as soon as possible. "]
 			dependencies: ["7CA354074FCF8447"]
+			description: ["Fast Pickup Augments are used in Vacuum Modules and force the Module to ignore any pickup delay on the item, picking it up as soon as possible. "]
 			id: "460F55C357B8DF7F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "2AD1A7E7FBED5577"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "56F47D4A4F411979"
-				type: "item"
 				item: "modularrouters:fast_pickup_augment"
+				type: "item"
 			}]
-			rewards: [{
-				id: "2AD1A7E7FBED5577"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -14.0d
+			y: -0.5d
 		}
 		{
-			x: -14.0d
-			y: 0.5d
+			dependencies: ["7CA354074FCF8447"]
 			description: [
 				"The Redstone Augment allows a single Module to be disabled or enabled based on the Redstone signal the Router is receiving. "
 				""
 				"The Router still needs to run for this to work, however. So, it should be set to Redstone Mode: Always while this is installed in a module, allowing specific Modules to be disabled or enabled."
 			]
-			dependencies: ["7CA354074FCF8447"]
 			id: "6C80F938921271DC"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "27427773186BCFB8"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "25EBD2A311AC0930"
-				type: "item"
 				item: "modularrouters:redstone_augment"
+				type: "item"
 			}]
-			rewards: [{
-				id: "27427773186BCFB8"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -14.0d
+			y: 0.5d
 		}
 		{
-			x: -14.0d
-			y: 1.5d
+			dependencies: ["7CA354074FCF8447"]
 			description: [
 				"Stack Augments simply increase the stack size for a given Module independent of other Modules."
 				""
 				"For example, a Puller could be given two Stack Augments to allow it to pull four items at a time, then four Senders could be used to distribute those four items evenly to four different inventories. "
 			]
-			dependencies: ["7CA354074FCF8447"]
 			id: "189E11ADA3E5BF23"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "5DA8602DB0ED0DF3"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "735E20DC0126C844"
-				type: "item"
 				item: "modularrouters:stack_augment"
+				type: "item"
 			}]
-			rewards: [{
-				id: "5DA8602DB0ED0DF3"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -14.0d
+			y: 1.5d
 		}
 		{
-			x: -10.0d
-			y: 0.5d
+			dependencies: ["21B266F6556271EB"]
 			description: [
 				"Flingers and Droppers are a great way to get items into the world. "
 				""
@@ -1303,81 +1333,51 @@
 				""
 				"When setting the Speed, start small and experiment; the Flinger is quite powerful. A Speed of 1.0 and Pitch of 45.0 can launch items about 18 blocks. At max speed, the items may never be seen again."
 			]
-			dependencies: ["21B266F6556271EB"]
 			id: "67591F9B9E23D5C3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "36E4235895E38D38"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "41C41E19ECBFFA03"
-					type: "item"
 					item: {
-						id: "modularrouters:flinger_module"
 						Count: 1b
+						id: "modularrouters:flinger_module"
 						tag: {
 							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
 								Pitch: 0.0f
 								Speed: 0.0f
-								ModuleFilter: { }
-								Direction: "NONE"
 								Yaw: 0.0f
 							}
 						}
 					}
+					type: "item"
 				}
 				{
 					id: "29E5F81F70524360"
-					type: "item"
 					item: {
-						id: "modularrouters:dropper_module"
 						Count: 1b
+						id: "modularrouters:dropper_module"
 						tag: {
 							modularrouters: {
-								ModuleFilter: { }
 								Direction: "NONE"
+								ModuleFilter: { }
 							}
 						}
 					}
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "36E4235895E38D38"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				player_command: false
-			}]
+			x: -10.0d
+			y: 0.5d
 		}
 	]
-	quest_links: [
-		{
-			linked_quest: "0E74E2DD26D0CED0"
-			x: -9.5d
-			y: -7.5d
-			id: "5523D55508151A28"
-		}
-		{
-			linked_quest: "3B554ECB7BEADD2E"
-			x: -9.5d
-			y: -6.5d
-			id: "1022A1D5FDA65DEB"
-		}
-		{
-			linked_quest: "450E3698E39CC0A1"
-			x: -9.5d
-			y: -5.5d
-			id: "0FCDB9F838648F57"
-		}
-		{
-			linked_quest: "00000000000000DC"
-			x: -8.5d
-			y: -6.0d
-			id: "65E40D119E9AC5CC"
-		}
-		{
-			linked_quest: "0000000000000120"
-			x: -8.5d
-			y: -7.0d
-			id: "23A3FE53CB6AA04A"
-		}
-	]
+	title: "Redstone and Logic"
 }

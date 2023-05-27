@@ -1,53 +1,49 @@
 {
-	id: "035BFB6931C638D0"
-	group: "72A9465344128AF9"
-	order_index: 5
-	filename: "immersive_engineering_expert"
-	title: "Immersive Engineering"
-	icon: "immersiveengineering:heavy_engineering"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "immersive_engineering_expert"
+	group: "72A9465344128AF9"
+	icon: "immersiveengineering:heavy_engineering"
+	id: "035BFB6931C638D0"
+	order_index: 5
+	quest_links: [ ]
 	quests: [
 		{
-			title: "Immersive Engineering"
-			icon: "immersiveengineering:manual"
-			x: -3.5d
-			y: -7.5d
-			shape: "gear"
+			dependencies: ["2CCCDD05AED3153F"]
 			description: [
 				"Immersive Engineering is a versatile tech mod with a focus on large multiblock structures and logistics, all while looking like it came out of a 19th century factory. "
 				""
 				"The Engineer’s Handbook does a wonderful job of covering things, so be sure to check it out from time to time."
 			]
-			dependencies: ["2CCCDD05AED3153F"]
 			hide: true
+			icon: "immersiveengineering:manual"
 			id: "24EB456683513CA7"
+			rewards: [{
+				count: 3
+				id: "37149643F21C4665"
+				item: "minecraft:raw_copper"
+				random_bonus: 5
+				title: "Copper Chunk"
+				type: "item"
+			}]
+			shape: "gear"
 			tasks: [{
 				id: "064FC2BF0229F351"
-				type: "item"
 				item: {
-					id: "immersiveengineering:hammer"
 					Count: 1b
+					id: "immersiveengineering:hammer"
 					tag: {
 						Damage: 0
 					}
 				}
-			}]
-			rewards: [{
-				id: "37149643F21C4665"
 				type: "item"
-				title: "Copper Chunk"
-				item: "minecraft:raw_copper"
-				count: 3
-				random_bonus: 5
 			}]
+			title: "Immersive Engineering"
+			x: -3.5d
+			y: -7.5d
 		}
 		{
-			title: "Getting Started: Logistics and Storage"
-			icon: "immersiveengineering:toolbox"
-			x: -3.5d
-			y: -6.0d
-			shape: "hexagon"
+			dependencies: ["24EB456683513CA7"]
 			description: [
 				"Factory building wouldn’t be complete without proper logistics to route items, fluid, and power to the machines that need them. As such, Immersive Engineering offers a robust suite of tools to assist in the effort. "
 				""
@@ -62,68 +58,69 @@
 				"All these tools and more can be stored for easy access in an Engineer’s Toolbox. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["24EB456683513CA7"]
-			min_width: 300
+			icon: "immersiveengineering:toolbox"
 			id: "49C19EB5AD09505C"
-			tasks: [
-				{
-					id: "3AF4C35C5842E611"
-					type: "item"
-					item: {
-						id: "immersiveengineering:wirecutter"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "0C1389A70E2497E7"
-					type: "item"
-					item: {
-						id: "immersiveengineering:hammer"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
+			min_width: 300
 			rewards: [
 				{
-					id: "7CF96DD04549C88E"
-					type: "command"
-					title: "Rare Immersive Engineering Loot Box"
-					icon: "kubejs:rare_lootbox"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "7CF96DD04549C88E"
 					player_command: false
+					title: "Rare Immersive Engineering Loot Box"
+					type: "command"
 				}
 				{
 					id: "52054E2227B1F750"
-					type: "item"
 					item: {
-						id: "immersiveengineering:toolbox"
 						Count: 1b
 						ForgeCaps: {
 							Parent: {
-								Size: 23
 								Items: [ ]
+								Size: 23
 							}
 						}
+						id: "immersiveengineering:toolbox"
 					}
+					type: "item"
 				}
 				{
 					id: "121F99E8D1B506B8"
-					type: "item"
 					item: "immersiveengineering:screwdriver"
+					type: "item"
 				}
 			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "3AF4C35C5842E611"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:wirecutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0C1389A70E2497E7"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Getting Started: Logistics and Storage"
+			x: -3.5d
+			y: -6.0d
 		}
 		{
-			title: "Coke Oven"
-			icon: "immersiveengineering:coke_oven"
-			x: 0.5d
-			y: -5.0d
+			dependencies: ["2BE93580D70ADF20"]
 			description: [
 				"Critical to the creation of Steel, the Coke Oven is primarily used for processing Coal into Coal Coke and Creosote, two materials that will be used extensively throughout Immersive Engineering."
 				""
@@ -133,73 +130,74 @@
 				"The Engineer’s Manual shows how this structure is constructed. Right-Click the block highlighted in Red in the manual with an Engineer’s Hammer to form the structure. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["2BE93580D70ADF20"]
+			icon: "immersiveengineering:coke_oven"
 			id: "1303E05C56CDB1B5"
+			rewards: [{
+				count: 8
+				id: "0DCEF828615B1117"
+				item: "emendatusenigmatica:coal_coke_gem"
+				title: "Coal Coke"
+				type: "item"
+			}]
 			tasks: [{
-				id: "0ECFAF7E071E6B50"
-				type: "advancement"
 				advancement: "immersiveengineering:main/mb_cokeoven"
 				criterion: ""
+				id: "0ECFAF7E071E6B50"
+				type: "advancement"
 			}]
-			rewards: [{
-				id: "0DCEF828615B1117"
-				type: "item"
-				title: "Coal Coke"
-				item: "emendatusenigmatica:coal_coke_gem"
-				count: 8
-			}]
+			title: "Coke Oven"
+			x: 0.5d
+			y: -5.0d
 		}
 		{
-			icon: "immersiveengineering:workbench"
-			x: 0.0d
-			y: -4.0d
+			dependencies: ["2BE93580D70ADF20"]
 			description: [
 				"Engineers will spend a good deal of time at their workbenches, tinkering with tools and carefully forming delicate parts. "
 				""
 				"The Engineer’s Workbench provides a space for modifying tools from the mod, and doubles as a crafting bench for items that require an Engineer’s Blueprint. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["2BE93580D70ADF20"]
+			icon: "immersiveengineering:workbench"
 			id: "6E5C3A7C6F30FF95"
+			rewards: [
+				{
+					count: 8
+					id: "6EA7B350CFC24349"
+					item: "immersiveengineering:component_iron"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "398CDC6CF25157E2"
+					player_command: false
+					title: "Rare Immersive Engineering Loot Box"
+					type: "command"
+				}
+			]
 			tasks: [
 				{
 					id: "2867C5992DCE39E0"
-					type: "item"
 					item: "immersiveengineering:workbench"
+					type: "item"
 				}
 				{
 					id: "2F4F6159B413D1F5"
-					type: "item"
 					item: {
-						id: "immersiveengineering:blueprint"
 						Count: 1b
+						id: "immersiveengineering:blueprint"
 						tag: {
 							blueprint: "components"
 						}
 					}
-				}
-			]
-			rewards: [
-				{
-					id: "6EA7B350CFC24349"
 					type: "item"
-					item: "immersiveengineering:component_iron"
-					count: 8
-				}
-				{
-					id: "398CDC6CF25157E2"
-					type: "command"
-					title: "Rare Immersive Engineering Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-					player_command: false
 				}
 			]
+			x: 0.0d
+			y: -4.0d
 		}
 		{
-			icon: "immersiveengineering:conveyor_basic"
-			x: -4.5d
-			y: -5.0d
+			dependencies: ["49C19EB5AD09505C"]
 			description: [
 				"Getting items from processing to storage need not be a manual effort and Conveyor Belts will handle the task quite adequately. "
 				""
@@ -215,35 +213,34 @@
 				""
 				"Extracting Conveyors will pull from the attached inventory. They may have their extraction rate adjusted with a Screwdriver and the Extraction point may be adjusted with a Hammer, allowing input from the side of the belt, rather than in line with the flow of the belt. They’re also Redstone sensitive, with a high signal disabling them entirely."
 			]
-			dependencies: ["49C19EB5AD09505C"]
-			min_width: 300
+			icon: "immersiveengineering:conveyor_basic"
 			id: "14039F7C90D023AB"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "46FD7B2580341B5A"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "526005D7814BCDD1"
-					type: "item"
 					item: "immersiveengineering:conveyor_basic"
+					type: "item"
 				}
 				{
 					id: "19CD707664CAB05C"
-					type: "item"
 					item: "immersiveengineering:conveyor_extract"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "46FD7B2580341B5A"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			x: -4.5d
+			y: -5.0d
 		}
 		{
-			title: "Crusher"
-			icon: "immersiveengineering:crusher"
-			x: -0.5d
-			y: -2.5d
+			dependencies: ["2BE93580D70ADF20"]
 			description: [
 				"An all-purpose crushing machine commonly used for processing ores and other bulk items."
 				""
@@ -254,28 +251,28 @@
 				"Beware, the grinding blades can do a lot of damage, easily killing mobs and quickly destroying any items that fall in that don’t have a recipe. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["2BE93580D70ADF20"]
+			icon: "immersiveengineering:crusher"
 			id: "7CD8E2C4F323C73B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "426A2E4DA6AFF591"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			tasks: [{
-				id: "651C4FDE25F87CB6"
-				type: "advancement"
 				advancement: "immersiveengineering:multiblocks/mb_crusher"
 				criterion: ""
+				id: "651C4FDE25F87CB6"
+				type: "advancement"
 			}]
-			rewards: [{
-				id: "426A2E4DA6AFF591"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
-				player_command: false
-			}]
+			title: "Crusher"
+			x: -0.5d
+			y: -2.5d
 		}
 		{
-			title: "Metal Press"
-			icon: "immersiveengineering:metal_press"
-			x: 0.5d
-			y: -3.0d
+			dependencies: ["2BE93580D70ADF20"]
 			description: [
 				"A staple of any machine room, the Metal Press may be used to efficiently produce plates, gears, wires, and other stamped products. "
 				""
@@ -284,45 +281,45 @@
 				"Items are fed into the mill via the built-in conveyor belts and the resulting items will carry on along the belt. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["2BE93580D70ADF20"]
+			icon: "immersiveengineering:metal_press"
 			id: "5B9822A74466148B"
-			tasks: [{
-				id: "6CFF7F99D30ADDB9"
-				type: "advancement"
-				advancement: "immersiveengineering:multiblocks/mb_metalpress"
-				criterion: ""
-			}]
 			rewards: [
 				{
-					id: "1490CC5E595F40EF"
-					type: "item"
-					title: "Iron Plate"
-					item: "emendatusenigmatica:iron_plate"
 					count: 8
-				}
-				{
-					id: "55893B8A47AC8275"
+					id: "1490CC5E595F40EF"
+					item: "emendatusenigmatica:iron_plate"
+					title: "Iron Plate"
 					type: "item"
-					title: "Steel Plate"
-					auto: "enabled"
-					item: "emendatusenigmatica:steel_plate"
-					count: 4
 				}
 				{
-					id: "4154AF97AF351A81"
-					type: "command"
-					title: "Rare Immersive Engineering Loot Box"
-					icon: "kubejs:rare_lootbox"
+					auto: "enabled"
+					count: 4
+					id: "55893B8A47AC8275"
+					item: "emendatusenigmatica:steel_plate"
+					title: "Steel Plate"
+					type: "item"
+				}
+				{
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "4154AF97AF351A81"
 					player_command: false
+					title: "Rare Immersive Engineering Loot Box"
+					type: "command"
 				}
 			]
+			tasks: [{
+				advancement: "immersiveengineering:multiblocks/mb_metalpress"
+				criterion: ""
+				id: "6CFF7F99D30ADDB9"
+				type: "advancement"
+			}]
+			title: "Metal Press"
+			x: 0.5d
+			y: -3.0d
 		}
 		{
-			title: "Improved Blast Furnace"
-			icon: "immersiveengineering:advanced_blast_furnace"
-			x: 1.0d
-			y: -4.0d
+			dependencies: ["2BE93580D70ADF20"]
 			description: [
 				"A powerful furnace that helps maintain the specific heat requirements for smelting Steel. "
 				""
@@ -333,56 +330,57 @@
 				"Note: The Crude Blast Furnace is disabled for Enigmatica 9. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["2BE93580D70ADF20"]
+			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "65B1D9B610A11074"
-			tasks: [{
-				id: "1AA7EB0A384887B5"
-				type: "advancement"
-				advancement: "immersiveengineering:multiblocks/mb_improvedblastfurnace"
-				criterion: ""
-			}]
 			rewards: [
 				{
-					id: "31244E3A165692D7"
-					type: "command"
-					title: "Epic Immersive Engineering Loot Box"
-					icon: "kubejs:epic_lootbox"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "31244E3A165692D7"
 					player_command: false
+					title: "Epic Immersive Engineering Loot Box"
+					type: "command"
 				}
 				{
 					id: "640DDB8B296D6A12"
-					type: "item"
 					item: "emendatusenigmatica:steel_ingot"
+					type: "item"
 				}
 			]
+			tasks: [{
+				advancement: "immersiveengineering:multiblocks/mb_improvedblastfurnace"
+				criterion: ""
+				id: "1AA7EB0A384887B5"
+				type: "advancement"
+			}]
+			title: "Improved Blast Furnace"
+			x: 1.0d
+			y: -4.0d
 		}
 		{
-			x: -3.5d
-			y: 1.0d
+			dependencies: ["133A278BE0697460"]
 			description: ["The External Heater is a simple machine that, when powered, will heat adjacent furnaces. This allows the furnaces to smelt more quickly, without using fuel."]
 			hide_dependency_lines: true
-			dependencies: ["133A278BE0697460"]
 			id: "413BD93C7A51D3B0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "40925150E26EAE3B"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			tasks: [{
 				id: "0BF6A1FDE474580F"
-				type: "item"
 				item: "immersiveengineering:furnace_heater"
+				type: "item"
 			}]
-			rewards: [{
-				id: "40925150E26EAE3B"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			x: -3.5d
+			y: 1.0d
 		}
 		{
-			title: "Sawmill"
-			icon: "immersiveengineering:sawmill"
-			x: 1.5d
-			y: -2.5d
+			dependencies: ["2BE93580D70ADF20"]
+			dependency_requirement: "one_completed"
 			description: [
 				"A large mill for efficiently processing logs into planks. Without a blade installed, it will only strip bark from logs. However, with a blade installed it will also cut those stripped logs down into planks."
 				""
@@ -391,171 +389,172 @@
 				"Sawblades have limited durability and must be periodically replaced. A new blade may be installed by Right-Clicking it anywhere on the machine.  "
 			]
 			hide_dependency_lines: true
-			dependencies: ["2BE93580D70ADF20"]
-			dependency_requirement: "one_completed"
+			icon: "immersiveengineering:sawmill"
 			id: "2082A8C3FF0CC996"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "1066F6DE27800461"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "6F389DC5125000A5"
-					type: "item"
 					item: {
-						id: "immersiveengineering:sawblade"
 						Count: 1b
+						id: "immersiveengineering:sawblade"
 						tag: {
 							Damage: 0
 						}
 					}
+					type: "item"
 				}
 				{
-					id: "0D36DDC9143BC13D"
-					type: "advancement"
 					advancement: "immersiveengineering:multiblocks/mb_sawmill"
 					criterion: ""
+					id: "0D36DDC9143BC13D"
+					type: "advancement"
 				}
 			]
-			rewards: [{
-				id: "1066F6DE27800461"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
-				player_command: false
-			}]
+			title: "Sawmill"
+			x: 1.5d
+			y: -2.5d
 		}
 		{
-			title: "Industrial Squeezer"
-			icon: "immersiveengineering:squeezer"
-			x: -8.5d
-			y: -3.5d
+			dependencies: ["3F9F4B331D696ED3"]
 			description: ["Large Squeezers such as this have been used widely to extract fluids from materials or to compact dry goods into a more solid form. It’s an invaluable tool for any Engineer."]
 			hide_dependency_lines: true
-			dependencies: ["3F9F4B331D696ED3"]
+			icon: "immersiveengineering:squeezer"
 			id: "7E80A889357D36BC"
-			tasks: [{
-				id: "55161FAC8F935405"
-				type: "advancement"
-				advancement: "immersiveengineering:multiblocks/mb_squeezer"
-				criterion: ""
-			}]
 			rewards: [
 				{
-					id: "5BB46B34AA2E27C5"
-					type: "item"
-					title: "Industrial Hemp Seeds"
-					item: "immersiveengineering:seed"
 					count: 24
+					id: "5BB46B34AA2E27C5"
+					item: "immersiveengineering:seed"
+					title: "Industrial Hemp Seeds"
+					type: "item"
 				}
 				{
-					id: "7911BAC7D49A5DDE"
-					type: "command"
-					title: "Epic Immersive Engineering Loot Box"
-					icon: "kubejs:epic_lootbox"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "7911BAC7D49A5DDE"
 					player_command: false
+					title: "Epic Immersive Engineering Loot Box"
+					type: "command"
 				}
 			]
+			tasks: [{
+				advancement: "immersiveengineering:multiblocks/mb_squeezer"
+				criterion: ""
+				id: "55161FAC8F935405"
+				type: "advancement"
+			}]
+			title: "Industrial Squeezer"
+			x: -8.5d
+			y: -3.5d
 		}
 		{
-			title: "Refinery"
-			icon: "immersiveengineering:refinery"
-			x: -6.5d
-			y: -3.5d
+			dependencies: ["3F9F4B331D696ED3"]
 			description: ["Through management of heat and careful exploitation of density differentials, Refineries break down fluids into other useful materials. These Refineries can handle a few different transformations. "]
 			hide_dependency_lines: true
-			dependencies: ["3F9F4B331D696ED3"]
+			icon: "immersiveengineering:refinery"
 			id: "1F5634F9CA3D2D10"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "539F9DA723B28F8D"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			tasks: [{
-				id: "0B5F8C9759AD2030"
-				type: "advancement"
 				advancement: "immersiveengineering:multiblocks/mb_refinery"
 				criterion: ""
+				id: "0B5F8C9759AD2030"
+				type: "advancement"
 			}]
-			rewards: [{
-				id: "539F9DA723B28F8D"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
-				player_command: false
-			}]
+			title: "Refinery"
+			x: -6.5d
+			y: -3.5d
 		}
 		{
-			title: "Assembler"
-			icon: "immersiveengineering:assembler"
-			x: -7.0d
-			y: -4.5d
+			dependencies: ["3F9F4B331D696ED3"]
 			description: ["A large crafting machine, the Assembler is capable of sequentially processing up to three recipes. It also boasts three internal fluid tanks that may be drawn from to substitute for filled buckets used in recipes. "]
 			hide_dependency_lines: true
-			dependencies: ["3F9F4B331D696ED3"]
+			icon: "immersiveengineering:assembler"
 			id: "4F676F65E493205D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "4052FF9F57585C7E"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			tasks: [{
-				id: "6767B021FA04F5BB"
-				type: "advancement"
 				advancement: "immersiveengineering:multiblocks/mb_assembler"
 				criterion: ""
+				id: "6767B021FA04F5BB"
+				type: "advancement"
 			}]
-			rewards: [{
-				id: "4052FF9F57585C7E"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
-				player_command: false
-			}]
+			title: "Assembler"
+			x: -7.0d
+			y: -4.5d
 		}
 		{
-			title: "Mixer"
-			icon: "immersiveengineering:mixer"
-			x: -8.0d
-			y: -2.5d
+			dependencies: ["3F9F4B331D696ED3"]
 			description: ["Through vigorous agitation, the Mixer dissolves solids into fluids. Though often used for such mundane tasks as mixing concrete, they’re also quite good at making potions."]
 			hide_dependency_lines: true
-			dependencies: ["3F9F4B331D696ED3"]
+			icon: "immersiveengineering:mixer"
 			id: "233D1CB2325D9C48"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "608E51DBB573ED51"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			tasks: [{
-				id: "569CC41AEAAE373A"
-				type: "advancement"
 				advancement: "immersiveengineering:multiblocks/mb_mixer"
 				criterion: ""
+				id: "569CC41AEAAE373A"
+				type: "advancement"
 			}]
-			rewards: [{
-				id: "608E51DBB573ED51"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
-				player_command: false
-			}]
+			title: "Mixer"
+			x: -8.0d
+			y: -2.5d
 		}
 		{
-			title: "Bottling Machine"
-			icon: "immersiveengineering:bottling_machine"
-			x: -7.0d
-			y: -2.5d
-			description: ["More than simply filling buckets, the Bottling Machine may be used to craft with a number of fluids, such as etching Copper or forming Duroplast."]
-			hide_dependency_lines: true
 			dependencies: ["3F9F4B331D696ED3"]
 			dependency_requirement: "one_completed"
-			min_width: 250
+			description: ["More than simply filling buckets, the Bottling Machine may be used to craft with a number of fluids, such as etching Copper or forming Duroplast."]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:bottling_machine"
 			id: "0F9D505BAF29FEFB"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "3FFFB287BFADE2C3"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			tasks: [{
-				id: "7FB11D78FFF676E6"
-				type: "advancement"
 				advancement: "immersiveengineering:multiblocks/mb_bottling_machine"
 				criterion: ""
+				id: "7FB11D78FFF676E6"
+				type: "advancement"
 			}]
-			rewards: [{
-				id: "3FFFB287BFADE2C3"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			title: "Bottling Machine"
+			x: -7.0d
+			y: -2.5d
 		}
 		{
-			x: -4.5d
-			y: -3.0d
+			dependencies: ["14039F7C90D023AB"]
 			description: [
 				"Item Batcher is an advanced filter block made specifically for use with conveyor belts and creating batches of items for machines."
 				""
@@ -568,26 +567,26 @@
 				"Refer to the Engineer’s Manual for more information and other use cases. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["14039F7C90D023AB"]
-			min_width: 325
 			id: "164FE2584474D812"
+			min_width: 325
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "2C35D352E74590B4"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			tasks: [{
 				id: "14130BCFB4FEBB76"
-				type: "item"
 				item: "immersiveengineering:item_batcher"
+				type: "item"
 			}]
-			rewards: [{
-				id: "2C35D352E74590B4"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			x: -4.5d
+			y: -3.0d
 		}
 		{
-			x: -4.5d
-			y: -4.0d
+			dependencies: ["14039F7C90D023AB"]
 			description: [
 				"The Item Router is an advanced item sorter made to work with Conveyor Belts."
 				""
@@ -596,114 +595,113 @@
 				"Item Routers support filtering by item type as well as by NBT, Damage, and Tag."
 			]
 			hide_dependency_lines: true
-			dependencies: ["14039F7C90D023AB"]
-			min_width: 250
 			id: "496827CD87FB52CE"
-			tasks: [{
-				id: "7714BC287F80EBB9"
-				type: "item"
-				item: "immersiveengineering:sorter"
-			}]
+			min_width: 250
 			rewards: [
 				{
-					id: "30783270906323D3"
-					type: "item"
-					item: "immersiveengineering:conveyor_basic"
 					count: 8
+					id: "30783270906323D3"
+					item: "immersiveengineering:conveyor_basic"
 					random_bonus: 8
+					type: "item"
 				}
 				{
-					id: "3815899228753367"
-					type: "item"
-					item: "immersiveengineering:conveyor_vertical"
 					count: 4
+					id: "3815899228753367"
+					item: "immersiveengineering:conveyor_vertical"
 					random_bonus: 4
+					type: "item"
 				}
 			]
+			tasks: [{
+				id: "7714BC287F80EBB9"
+				item: "immersiveengineering:sorter"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.0d
 		}
 		{
-			title: "Item Silo"
-			icon: "immersiveengineering:silo"
-			x: -4.5d
-			y: -2.0d
+			dependencies: ["14039F7C90D023AB"]
 			description: [
 				"Simple bulk item storage. Items are input through the top and extracted through the bottom."
 				""
 				"Applying a Redstone signal to the bottom block will allow it to output automatically. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["14039F7C90D023AB"]
+			icon: "immersiveengineering:silo"
 			id: "797D4BF61A505A14"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "2CD8CE867708CD0B"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			tasks: [{
-				id: "605A702B72CF012E"
-				type: "advancement"
 				advancement: "immersiveengineering:multiblocks/mb_silo"
 				criterion: ""
+				id: "605A702B72CF012E"
+				type: "advancement"
 			}]
-			rewards: [{
-				id: "2CD8CE867708CD0B"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			title: "Item Silo"
+			x: -4.5d
+			y: -2.0d
 		}
 		{
-			title: "Fluid Tank"
-			icon: "immersiveengineering:tank"
-			x: -2.5d
-			y: -2.0d
+			dependencies: ["479A5350BDCB8AA0"]
 			description: [
 				"Simple bulk fluid storage. Fluids are input through the top and extracted through the bottom."
 				""
 				"Applying a Redstone signal to the bottom block will allow it to output automatically. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["479A5350BDCB8AA0"]
+			icon: "immersiveengineering:tank"
 			id: "455612A73D5FE24D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "5CE05E3DA7229475"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			tasks: [{
-				id: "59D000E4664C3DC3"
-				type: "advancement"
 				advancement: "immersiveengineering:multiblocks/mb_tank"
 				criterion: ""
+				id: "59D000E4664C3DC3"
+				type: "advancement"
 			}]
-			rewards: [{
-				id: "5CE05E3DA7229475"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			title: "Fluid Tank"
+			x: -2.5d
+			y: -2.0d
 		}
 		{
+			dependencies: ["3F9F4B331D696ED3"]
+			description: ["Fermentation has been going on in one form or another for millennia. Once upon a time fruits may have been left to ferment naturally over the course of days, now through industrial magic the process takes considerably less time.  "]
+			hide_dependency_lines: true
+			id: "35DED7016E460908"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "5CCC54117C042EE1"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				advancement: "immersiveengineering:multiblocks/mb_fermenter"
+				criterion: ""
+				id: "59DC0A3CD9D7B743"
+				type: "advancement"
+			}]
 			title: "Fermenter"
 			x: -8.0d
 			y: -4.5d
-			description: ["Fermentation has been going on in one form or another for millennia. Once upon a time fruits may have been left to ferment naturally over the course of days, now through industrial magic the process takes considerably less time.  "]
-			hide_dependency_lines: true
-			dependencies: ["3F9F4B331D696ED3"]
-			id: "35DED7016E460908"
-			tasks: [{
-				id: "59DC0A3CD9D7B743"
-				type: "advancement"
-				advancement: "immersiveengineering:multiblocks/mb_fermenter"
-				criterion: ""
-			}]
-			rewards: [{
-				id: "5CCC54117C042EE1"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
-				player_command: false
-			}]
 		}
 		{
-			icon: "immersiveengineering:fluid_pipe"
-			x: -2.5d
-			y: -5.0d
+			dependencies: ["49C19EB5AD09505C"]
 			description: [
 				"Simple Fluid Pipes to get fluids moving around the factory. These pipes do not pull from attached inventories on their own. For anything that doesn’t automatically push fluid outputs, a Fluid Pump will be required."
 				""
@@ -711,80 +709,80 @@
 				""
 				"The pipes themselves may be covered with Steel or Treated Wood Scaffolding blocks, as well as dyed by Right-Clicking with a dye piece. Dyed pipes will not connect to pipes of another color. "
 			]
-			dependencies: ["49C19EB5AD09505C"]
-			min_width: 300
+			icon: "immersiveengineering:fluid_pipe"
 			id: "479A5350BDCB8AA0"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "298946A9B451517E"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "2CB5EE40D717FBF6"
-					type: "item"
 					item: "immersiveengineering:fluid_pipe"
+					type: "item"
 				}
 				{
 					id: "13EC40BEA756282E"
-					type: "item"
 					item: "immersiveengineering:fluid_pump"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "298946A9B451517E"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			x: -2.5d
+			y: -5.0d
 		}
 		{
-			x: -2.5d
-			y: -3.0d
+			dependencies: ["479A5350BDCB8AA0"]
 			description: ["When an area needs to be flooded, large or small, a Fluid Outlet makes the perfect tool for the job. Simply place it and pipe fluids into it via any means; it will begin placing that fluid in the area below it, filling from bottom to top. "]
 			hide_dependency_lines: true
-			dependencies: ["479A5350BDCB8AA0"]
 			id: "0FBB42C35C632D6E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "25E0E92F5231037D"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			tasks: [{
 				id: "3F821E6D4ECAD9B1"
-				type: "item"
 				item: "immersiveengineering:fluid_placer"
+				type: "item"
 			}]
-			rewards: [{
-				id: "25E0E92F5231037D"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			x: -2.5d
+			y: -3.0d
 		}
 		{
-			x: -2.5d
-			y: -4.0d
+			dependencies: ["479A5350BDCB8AA0"]
 			description: [
 				"The Fluid Router is an advanced item sorter made to work with Fluid Pipes."
 				""
 				"Fluids inserted on a side will be output into any tank or Fluid Pipe on the side matching the filter. If a fluid doesn't match any filter, it will be redirected to a non-filtered side."
 			]
 			hide_dependency_lines: true
-			dependencies: ["479A5350BDCB8AA0"]
 			id: "4000EB49F6267A26"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "4EEB280105923301"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			tasks: [{
 				id: "40EFA9FBD3043B54"
-				type: "item"
 				item: "immersiveengineering:fluid_sorter"
+				type: "item"
 			}]
-			rewards: [{
-				id: "4EEB280105923301"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			x: -2.5d
+			y: -4.0d
 		}
 		{
-			x: -4.5d
-			y: 1.5d
-			subtitle: "Goes Brrr"
+			dependencies: ["133A278BE0697460"]
 			description: [
 				"A handheld saw perfect for chopping down trees or chopping through zombies. "
 				""
@@ -793,102 +791,102 @@
 				"Place it in an Engineer’s Workbench to add or remove augments. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["133A278BE0697460"]
 			id: "16EC372C27238D3F"
-			tasks: [{
-				id: "77B2CE6AE97C44D8"
-				type: "item"
-				item: {
-					id: "immersiveengineering:buzzsaw"
-					Count: 1b
-					ForgeCaps: {
-						Parent: {
-							Size: 5
-							Items: [ ]
-						}
-					}
-				}
-			}]
 			rewards: [
 				{
 					id: "2ED8178439A16546"
-					type: "item"
-					title: "Advanced Fluid Tank"
 					item: {
-						id: "mekanism:advanced_fluid_tank"
 						Count: 1b
+						id: "mekanism:advanced_fluid_tank"
 						tag: {
 							mekData: {
 								FluidTanks: [{
 									Tank: 0b
 									stored: {
-										FluidName: "immersiveengineering:biodiesel"
 										Amount: 16000
+										FluidName: "immersiveengineering:biodiesel"
 									}
 								}]
 							}
 						}
 					}
+					title: "Advanced Fluid Tank"
+					type: "item"
 				}
 				{
 					id: "59F5D756932C4969"
-					type: "item"
 					item: {
-						id: "thermal:fluid_reservoir"
 						Count: 1b
+						id: "thermal:fluid_reservoir"
 						tag: { }
 					}
+					type: "item"
 				}
 			]
+			subtitle: "Goes Brrr"
+			tasks: [{
+				id: "77B2CE6AE97C44D8"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 5
+						}
+					}
+					id: "immersiveengineering:buzzsaw"
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
 		}
 		{
-			x: -2.5d
-			y: 0.5d
-			subtitle: "First comes smiles, then lies. Last is gunfire."
+			dependencies: ["133A278BE0697460"]
 			description: [
 				"A trusty side-arm suitable for any Gunslinger."
 				""
 				"Place it in an Engineer’s Workbench to add or remove augments. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["133A278BE0697460"]
 			id: "230E559B86C56A0D"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "7D5842BA0E299AD8"
+					player_command: false
+					title: "Rare Immersive Engineering Loot Box"
+					type: "command"
+				}
+				{
+					count: 64
+					id: "69B649DB9E6D5964"
+					item: "immersiveengineering:casull"
+					title: "Casull Cartridge"
+					type: "item"
+				}
+			]
+			subtitle: "First comes smiles, then lies. Last is gunfire."
 			tasks: [{
 				id: "0E585C2527A5AAFE"
-				type: "item"
 				item: {
-					id: "immersiveengineering:revolver"
 					Count: 1b
 					ForgeCaps: {
 						Parent: {
-							Size: 21
 							Items: [ ]
+							Size: 21
 						}
 					}
+					id: "immersiveengineering:revolver"
 				}
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "7D5842BA0E299AD8"
-					type: "command"
-					title: "Rare Immersive Engineering Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-					player_command: false
-				}
-				{
-					id: "69B649DB9E6D5964"
-					type: "item"
-					title: "Casull Cartridge"
-					item: "immersiveengineering:casull"
-					count: 64
-				}
-			]
+			x: -2.5d
+			y: 0.5d
 		}
 		{
-			x: -2.5d
-			y: 1.5d
-			subtitle: "Workin' in a coal mine. Oops, about to slip down."
+			dependencies: ["133A278BE0697460"]
 			description: [
 				"A handheld tunnel bore capable of quickly digging through the toughest rocks. "
 				""
@@ -897,58 +895,58 @@
 				"Place it in an Engineer’s Workbench to add or remove augments. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["133A278BE0697460"]
 			id: "377AAE2494B83CCF"
-			tasks: [{
-				id: "69714853E4C23B11"
-				type: "item"
-				item: {
-					id: "immersiveengineering:drill"
-					Count: 1b
-					ForgeCaps: {
-						Parent: {
-							Size: 5
-							Items: [ ]
-						}
-					}
-				}
-			}]
 			rewards: [
 				{
 					id: "48369F60F9DFF5C9"
-					type: "item"
-					title: "Advanced Fluid Tank"
 					item: {
-						id: "mekanism:advanced_fluid_tank"
 						Count: 1b
+						id: "mekanism:advanced_fluid_tank"
 						tag: {
 							mekData: {
 								FluidTanks: [{
 									Tank: 0b
 									stored: {
-										FluidName: "immersiveengineering:biodiesel"
 										Amount: 16000
+										FluidName: "immersiveengineering:biodiesel"
 									}
 								}]
 							}
 						}
 					}
+					title: "Advanced Fluid Tank"
+					type: "item"
 				}
 				{
 					id: "258F2505776D8A0B"
-					type: "item"
 					item: {
-						id: "thermal:fluid_reservoir"
 						Count: 1b
+						id: "thermal:fluid_reservoir"
 						tag: { }
 					}
+					type: "item"
 				}
 			]
+			subtitle: "Workin' in a coal mine. Oops, about to slip down."
+			tasks: [{
+				id: "69714853E4C23B11"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 5
+						}
+					}
+					id: "immersiveengineering:drill"
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
 		}
 		{
-			x: -4.5d
-			y: 0.5d
-			subtitle: "See the TURTLE, ain't he keen?"
+			dependencies: ["133A278BE0697460"]
 			description: [
 				"Capable of launching projectiles at immense velocities and ripping through targets with impunity, the Railgun is a fierce weapon. "
 				""
@@ -957,45 +955,44 @@
 				"Place it in an Engineer’s Workbench to add or remove augments. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["133A278BE0697460"]
 			id: "1787B3CDAC005F1E"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "3669742F4DB4E3E8"
+					player_command: false
+					title: "Rare Immersive Engineering Loot Box"
+					type: "command"
+				}
+				{
+					count: 16
+					id: "6F7228CA2B868DFC"
+					item: "emendatusenigmatica:iron_rod"
+					title: "Iron Rod"
+					type: "item"
+				}
+			]
+			subtitle: "See the TURTLE, ain't he keen?"
 			tasks: [{
 				id: "21EBFD2EFF83C494"
-				type: "item"
 				item: {
-					id: "immersiveengineering:railgun"
 					Count: 1b
 					ForgeCaps: {
 						Parent: {
-							Size: 3
 							Items: [ ]
+							Size: 3
 						}
 					}
+					id: "immersiveengineering:railgun"
 				}
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "3669742F4DB4E3E8"
-					type: "command"
-					title: "Rare Immersive Engineering Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-					player_command: false
-				}
-				{
-					id: "6F7228CA2B868DFC"
-					type: "item"
-					title: "Iron Rod"
-					item: "emendatusenigmatica:iron_rod"
-					count: 16
-				}
-			]
+			x: -4.5d
+			y: 0.5d
 		}
 		{
-			x: -1.5d
-			y: 0.0d
-			shape: "diamond"
-			subtitle: "When the shooting starts, we kill what moves."
+			dependencies: ["230E559B86C56A0D"]
 			description: [
 				"The Speedloader will automatically reload the Revolver when it runs out of ammo, making it a great way to continue the fight. "
 				""
@@ -1003,103 +1000,102 @@
 				""
 				"It is possible to automate refilling Speed Loaders inside of an Immersive Engineering Assembler. With a little ingenuity, it’s more than possible to automatically pull empty Speedloaders from one’s inventory, fill them, and send them back. "
 			]
-			dependencies: ["230E559B86C56A0D"]
 			id: "5D5D2E8C9EABBB69"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "7D784913D9E8D959"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "When the shooting starts, we kill what moves."
 			tasks: [{
 				id: "7F69EA81B5E996DC"
-				type: "item"
 				item: {
-					id: "immersiveengineering:speedloader"
 					Count: 1b
 					ForgeCaps: {
 						Parent: {
-							Size: 8
 							Items: [ ]
+							Size: 8
 						}
 					}
+					id: "immersiveengineering:speedloader"
 				}
+				type: "item"
 			}]
-			rewards: [{
-				id: "7D784913D9E8D959"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			x: -1.5d
+			y: 0.0d
 		}
 		{
-			x: -1.5d
-			y: 1.0d
+			dependencies: ["230E559B86C56A0D"]
+			description: ["For those times when the beasts get too close, or the ammo runs dry. "]
+			id: "6F5C01A60646D61A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "3DD0A53CCD932C32"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			shape: "diamond"
 			subtitle: "The man in black fled across the desert..."
-			description: ["For those times when the beasts get too close, or the ammo runs dry. "]
-			dependencies: ["230E559B86C56A0D"]
-			id: "6F5C01A60646D61A"
 			tasks: [{
 				id: "32A57A5AE9CFD3B2"
-				type: "item"
 				item: "immersiveengineering:toolupgrade_revolver_bayonet"
+				type: "item"
 			}]
-			rewards: [{
-				id: "3DD0A53CCD932C32"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			x: -1.5d
+			y: 1.0d
 		}
 		{
-			x: -6.0d
-			y: 0.5d
+			dependencies: ["1787B3CDAC005F1E"]
+			description: ["Heatsinks allow the Railgun to recharge faster for more rapid-fire destruction. "]
+			id: "069B655AE0E4B1E2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "6D5DCD5F5DC44E15"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			shape: "diamond"
 			subtitle: "The wheel turns and the world moves on."
-			description: ["Heatsinks allow the Railgun to recharge faster for more rapid-fire destruction. "]
-			dependencies: ["1787B3CDAC005F1E"]
-			id: "069B655AE0E4B1E2"
 			tasks: [{
 				id: "61AAAA2E434CACED"
-				type: "item"
 				item: "immersiveengineering:toolupgrade_railgun_capacitors"
+				type: "item"
 			}]
-			rewards: [{
-				id: "6D5DCD5F5DC44E15"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			x: -6.0d
+			y: 0.5d
 		}
 		{
-			x: -5.5d
-			y: 0.0d
+			dependencies: ["1787B3CDAC005F1E"]
+			description: ["The Middle Mouse button will enable the scope when installed and scrolling will adjust the magnification level. Great for picking off a target at a distance. "]
+			id: "0378DCB050B7679C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "4254ABCD3D800570"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			shape: "diamond"
 			subtitle: "All things serve the beam."
-			description: ["The Middle Mouse button will enable the scope when installed and scrolling will adjust the magnification level. Great for picking off a target at a distance. "]
-			dependencies: ["1787B3CDAC005F1E"]
-			id: "0378DCB050B7679C"
 			tasks: [{
 				id: "0748647BEE65D7C4"
-				type: "item"
 				item: "immersiveengineering:toolupgrade_railgun_scope"
+				type: "item"
 			}]
-			rewards: [{
-				id: "4254ABCD3D800570"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			x: -5.5d
+			y: 0.0d
 		}
 		{
-			title: "Ammo Cartridges"
-			x: -1.0d
-			y: 0.5d
-			shape: "diamond"
-			subtitle: "...and the gunslinger followed."
+			dependencies: ["230E559B86C56A0D"]
 			description: [
 				"Casull Cartridges are the cheapest, most basic ammo; however, they still pack quite a punch. "
 				""
@@ -1109,131 +1105,131 @@
 				""
 				"Explore your options and read more in the Engineer’s Manual."
 			]
-			dependencies: ["230E559B86C56A0D"]
 			id: "4DD148DA6CA8C295"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "4699D3CFC067C539"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "...and the gunslinger followed."
 			tasks: [{
+				count: 24L
 				id: "61AE2889CFAB6E9E"
-				type: "item"
-				title: "Ammo Cartridges"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "immersiveengineering:casull"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "immersiveengineering:armor_piercing"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "immersiveengineering:buckshot"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "immersiveengineering:he"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "immersiveengineering:silver"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "immersiveengineering:dragons_breath"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "immersiveengineering:potion"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "immersiveengineering:flare"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "immersiveengineering:firework"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "immersiveengineering:homing"
-								Count: 1b
 							}
 							{
-								id: "immersiveengineering:wolfpack"
 								Count: 1b
+								id: "immersiveengineering:wolfpack"
 							}
 						]
 					}
 				}
-				count: 24L
+				title: "Ammo Cartridges"
+				type: "item"
 			}]
-			rewards: [{
-				id: "4699D3CFC067C539"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			title: "Ammo Cartridges"
+			x: -1.0d
+			y: 0.5d
 		}
 		{
-			x: -5.0d
-			y: 2.5d
+			dependencies: ["16EC372C27238D3F"]
+			description: ["An exceptional cutting implement that can cleanly carve out blocks of Stone, Ice, or Glass, effectively acting as a tool with Silk Touch. "]
+			id: "157407C0FB372FD9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "23B55FB82DC91FAD"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			shape: "diamond"
 			subtitle: "A Clean Job"
-			description: ["An exceptional cutting implement that can cleanly carve out blocks of Stone, Ice, or Glass, effectively acting as a tool with Silk Touch. "]
-			dependencies: ["16EC372C27238D3F"]
-			id: "157407C0FB372FD9"
 			tasks: [{
 				id: "40591D033F727807"
-				type: "item"
 				item: {
-					id: "immersiveengineering:rockcutter"
 					Count: 1b
+					id: "immersiveengineering:rockcutter"
 					tag: {
 						Damage: 0
 					}
 				}
+				type: "item"
 			}]
-			rewards: [{
-				id: "23B55FB82DC91FAD"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			x: -5.0d
+			y: 2.5d
 		}
 		{
-			x: -2.5d
-			y: 3.0d
+			dependencies: ["377AAE2494B83CCF"]
+			description: ["The Mining Drill’s engine is not normally capable of operating under water. However, with the addition of a Pressurized Air Tank it can be kept running at full speed."]
+			id: "23075A2FBEEA0C6B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "006A3342779F3BF5"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			shape: "diamond"
 			subtitle: "Don't Burst It"
-			description: ["The Mining Drill’s engine is not normally capable of operating under water. However, with the addition of a Pressurized Air Tank it can be kept running at full speed."]
-			dependencies: ["377AAE2494B83CCF"]
-			id: "23075A2FBEEA0C6B"
 			tasks: [{
 				id: "4A9773FA67662CE6"
-				type: "item"
 				item: "immersiveengineering:toolupgrade_drill_waterproof"
+				type: "item"
 			}]
-			rewards: [{
-				id: "006A3342779F3BF5"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			x: -2.5d
+			y: 3.0d
 		}
 		{
-			icon: "immersiveengineering:drillhead_steel"
-			x: -2.0d
-			y: 2.5d
-			shape: "diamond"
-			subtitle: "Diggy Diggy Hole"
+			dependencies: ["377AAE2494B83CCF"]
 			description: [
 				"Drill heads do wear out over time, though they can be removed from the drill and repaired in an Anvil. "
 				""
@@ -1241,211 +1237,212 @@
 				""
 				"Up to three Additional Augers may be added to a drill, each one speeding up the mining speed and even improving the damage dealt to anything unlucky enough to be standing in front of it."
 			]
-			dependencies: ["377AAE2494B83CCF"]
+			icon: "immersiveengineering:drillhead_steel"
 			id: "3C143602825AC132"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "2A1CB70A6FBC5D1C"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "Diggy Diggy Hole"
 			tasks: [
 				{
 					id: "57997CD29EEA7A62"
-					type: "item"
 					item: "immersiveengineering:drillhead_steel"
+					type: "item"
 				}
 				{
 					id: "2CDCFD399D0A61A4"
-					type: "item"
 					item: "immersiveengineering:toolupgrade_drill_damage"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "2A1CB70A6FBC5D1C"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			x: -2.0d
+			y: 2.5d
 		}
 		{
-			x: -3.5d
-			y: 2.5d
-			shape: "diamond"
-			description: ["Adding some lubricant to a Drill or Saw destined for rugged digging and cutting tough material can greatly extend the lifetime of the tool. "]
 			dependencies: [
 				"377AAE2494B83CCF"
 				"16EC372C27238D3F"
 			]
 			dependency_requirement: "one_completed"
+			description: ["Adding some lubricant to a Drill or Saw destined for rugged digging and cutting tough material can greatly extend the lifetime of the tool. "]
 			id: "0165101E8F7305CF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "29D2389ECDFDF63A"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "diamond"
 			tasks: [{
 				id: "05501095CD011D77"
-				type: "item"
 				item: "immersiveengineering:toolupgrade_drill_lube"
+				type: "item"
 			}]
-			rewards: [{
-				id: "29D2389ECDFDF63A"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			x: -3.5d
+			y: 2.5d
 		}
 		{
-			x: -4.5d
-			y: 3.0d
+			dependencies: ["16EC372C27238D3F"]
+			description: ["The Blade Quiver may be attached to the Buzzsaw in the Engineer’s Workbench, holds additional blades, and allows you to swap between them on-the-fly in the field. Sneak + Scroll Wheel to change blades. "]
+			id: "1EE0A3D7073E1E9C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "618B24D59812DB2E"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			shape: "diamond"
 			subtitle: "So Wait, Instead of Arrows..."
-			description: ["The Blade Quiver may be attached to the Buzzsaw in the Engineer’s Workbench, holds additional blades, and allows you to swap between them on-the-fly in the field. Sneak + Scroll Wheel to change blades. "]
-			dependencies: ["16EC372C27238D3F"]
-			id: "1EE0A3D7073E1E9C"
 			tasks: [{
 				id: "0FAB5782F8F94AB9"
-				type: "item"
 				item: "immersiveengineering:toolupgrade_buzzsaw_spareblades"
+				type: "item"
 			}]
-			rewards: [{
-				id: "618B24D59812DB2E"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			x: -4.5d
+			y: 3.0d
 		}
 		{
-			title: "Getting Started: Material Processing"
-			x: 0.5d
-			y: -6.0d
-			shape: "hexagon"
+			dependencies: ["24EB456683513CA7"]
 			description: ["Bricks, Treated Wood, and Steel; these are what an Immersive Factory is built from, and the focus of early efforts in the mod. "]
 			hide_dependency_lines: true
-			dependencies: ["24EB456683513CA7"]
 			id: "2BE93580D70ADF20"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "7AFEEC7724D63B67"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "hexagon"
 			tasks: [{
-				id: "1D02949AB87F570D"
-				type: "item"
-				title: "Raw Iron"
 				icon: "minecraft:raw_iron"
+				id: "1D02949AB87F570D"
 				item: {
-					id: "itemfilters:tag"
 					Count: 1b
+					id: "itemfilters:tag"
 					tag: {
 						value: "forge:raw_materials/iron"
 					}
 				}
+				title: "Raw Iron"
+				type: "item"
 			}]
-			rewards: [{
-				id: "7AFEEC7724D63B67"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			title: "Getting Started: Material Processing"
+			x: 0.5d
+			y: -6.0d
 		}
 		{
-			title: "Tools and Utility"
-			x: -3.5d
-			y: -0.5d
-			shape: "hexagon"
+			dependencies: ["24EB456683513CA7"]
 			description: ["From high-powered lights and excavation tools to revolvers and railguns, Immersive Engineering offers a tool for nearly any job."]
 			hide_dependency_lines: true
-			dependencies: ["24EB456683513CA7"]
 			id: "133A278BE0697460"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "2A30182F30E91A11"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "610492ACE6272701"
-				type: "item"
 				item: {
-					id: "immersiveengineering:hammer"
 					Count: 1b
+					id: "immersiveengineering:hammer"
 					tag: {
 						Damage: 0
 					}
 				}
+				type: "item"
 			}]
-			rewards: [{
-				id: "2A30182F30E91A11"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			title: "Tools and Utility"
+			x: -3.5d
+			y: -0.5d
 		}
 		{
-			x: -3.5d
-			y: 3.5d
-			shape: "diamond"
-			description: ["An extended Fuel Tank that works in the Mining Drill and Buzzsaw. Well worth the cost."]
-			hide_dependency_lines: true
 			dependencies: [
 				"377AAE2494B83CCF"
 				"16EC372C27238D3F"
 			]
+			description: ["An extended Fuel Tank that works in the Mining Drill and Buzzsaw. Well worth the cost."]
+			hide_dependency_lines: true
 			id: "7402400A005D191C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "448576DF1369C86E"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "diamond"
 			tasks: [{
 				id: "4FD070D1057A1E4C"
-				type: "item"
 				item: "immersiveengineering:toolupgrade_drill_capacity"
+				type: "item"
 			}]
-			rewards: [{
-				id: "448576DF1369C86E"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			x: -3.5d
+			y: 3.5d
 		}
 		{
-			title: "Heavy Machinery"
-			icon: "immersiveengineering:storage_steel"
-			x: -7.5d
-			y: -6.0d
-			shape: "hexagon"
+			dependencies: ["24EB456683513CA7"]
 			description: ["With better materials come larger, more capable machines. Prepare to get dirty!"]
 			hide_dependency_lines: true
-			dependencies: ["24EB456683513CA7"]
+			icon: "immersiveengineering:storage_steel"
 			id: "3F9F4B331D696ED3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "46E0B3AB7FBFB885"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "hexagon"
 			tasks: [{
-				id: "27B54CB739B18ABA"
-				type: "item"
-				title: "Heavy Machinery"
 				icon: "immersiveengineering:heavy_engineering"
+				id: "27B54CB739B18ABA"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "immersiveengineering:rs_engineering"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "immersiveengineering:heavy_engineering"
-								Count: 1b
 							}
 							{
-								id: "immersiveengineering:light_engineering"
 								Count: 1b
+								id: "immersiveengineering:light_engineering"
 							}
 						]
 					}
 				}
+				title: "Heavy Machinery"
+				type: "item"
 			}]
-			rewards: [{
-				id: "46E0B3AB7FBFB885"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
-				player_command: false
-			}]
+			title: "Heavy Machinery"
+			x: -7.5d
+			y: -6.0d
 		}
 		{
-			title: "Redstone Wiring"
-			icon: "immersiveengineering:wirecoil_redstone"
-			x: -3.5d
-			y: -5.0d
+			dependencies: ["49C19EB5AD09505C"]
 			description: [
 				"Redstone Wiring represents an advancement in Redstone technology, allowing a dedicated Engineer to build complex logic circuits that are less prone to the failings of traditional Redstone Dust. A color-coded channel system also allows a single small network to interact with multiple independent machines. "
 				""
@@ -1457,44 +1454,45 @@
 				""
 				"Redstone Interface Connectors are used in conjunction with special blocks like Item Batchers and Logic Units, allowing the signals used by those blocks to be read."
 			]
-			dependencies: ["49C19EB5AD09505C"]
-			min_width: 300
+			icon: "immersiveengineering:wirecoil_redstone"
 			id: "1A60F4B67CFE76AC"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "42D13B8C156E8F61"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "6931858B544E7D77"
-					type: "item"
 					item: "immersiveengineering:wirecoil_redstone"
+					type: "item"
 				}
 				{
 					id: "033DE98D3AAE0000"
-					type: "item"
 					item: "immersiveengineering:connector_redstone"
+					type: "item"
 				}
 				{
 					id: "3EEDF03A7B5B9341"
-					type: "item"
 					item: "immersiveengineering:connector_probe"
+					type: "item"
 				}
 				{
 					id: "4DE83979FE78EE61"
-					type: "item"
 					item: "immersiveengineering:connector_bundled"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "42D13B8C156E8F61"
-				type: "command"
-				title: "Rare Immersive Engineering Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				player_command: false
-			}]
+			title: "Redstone Wiring"
+			x: -3.5d
+			y: -5.0d
 		}
 		{
-			icon: "immersiveengineering:logic_circuit"
-			x: -3.5d
-			y: -3.0d
+			dependencies: ["1A60F4B67CFE76AC"]
 			description: [
 				"Logic Circuits themselves are crafted in the Engineer’s Circuit Table. "
 				""
@@ -1502,63 +1500,65 @@
 				""
 				"Circuits are programmed with an operator as well as Input and Output colors. When ready, the completed circuit is withdrawn from the right side of the GUI. Circuits may have their Inputs and Outputs reprogrammed by placing them back in the upper slot, but the operator is locked in upon first creation. "
 			]
-			dependencies: ["1A60F4B67CFE76AC"]
+			icon: "immersiveengineering:logic_circuit"
 			id: "4A717117EFEDB4CD"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "7AB92C9D40AE07DD"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "72C8A3BC45A0C163"
-					type: "item"
 					item: "immersiveengineering:circuit_table"
+					type: "item"
 				}
 				{
 					id: "15987861273FFC03"
-					type: "item"
 					item: "immersiveengineering:circuit_board"
+					type: "item"
 				}
 				{
 					id: "0B5C834806FAB2FE"
-					type: "item"
 					item: "immersiveengineering:wire_lead"
+					type: "item"
 				}
 				{
 					id: "5B2078E41414D91B"
-					type: "item"
 					item: "immersiveengineering:electron_tube"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "7AB92C9D40AE07DD"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
-				player_command: false
-			}]
+			x: -3.5d
+			y: -3.0d
 		}
 		{
-			x: -3.5d
-			y: -4.0d
+			dependencies: ["1A60F4B67CFE76AC"]
 			description: [
 				"The Logic Unit represents a compact and potentially very complex Redstone Logic computer. Up to ten Logic Circuits must be programmed and placed within and a Redstone Interface Connector attached to the outside. "
 				""
 				"Whenever the inbound signal changes, the Unit will cycle through each of the installed circuits once, performing each operation, allowing multiple logic gates to be applied to a signal, or even multiple color codes to be used as Input and Output signals. "
 			]
-			dependencies: ["1A60F4B67CFE76AC"]
 			id: "4E0820864EDAC42E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "0D5AB91F6CD6CDC5"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
 			tasks: [{
 				id: "78B9100B4FF5D14C"
-				type: "item"
 				item: "immersiveengineering:logic_unit"
+				type: "item"
 			}]
-			rewards: [{
-				id: "0D5AB91F6CD6CDC5"
-				type: "command"
-				title: "Epic Immersive Engineering Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
-				player_command: false
-			}]
+			x: -3.5d
+			y: -4.0d
 		}
 	]
-	quest_links: [ ]
+	title: "Immersive Engineering"
 }

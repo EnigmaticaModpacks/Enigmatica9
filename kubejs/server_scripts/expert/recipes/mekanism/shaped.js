@@ -264,6 +264,17 @@ ServerEvents.recipes((event) => {
                 F: '#forge:nether_stars'
             },
             id: 'mekanism:antiprotonic_nucleosynthesizer'
+        },
+        {
+            output: 'mekanism:module_energy_unit',
+            pattern: ['ABA', 'CDC', 'CBC'],
+            key: {
+                A: '#forge:gems/source',
+                B: 'powah:capacitor_spirited',
+                C: '#forge:plastic',
+                D: 'modularrouters:augment_core'
+            },
+            id: 'mekanism:module_energy_unit'
         }
     ];
 

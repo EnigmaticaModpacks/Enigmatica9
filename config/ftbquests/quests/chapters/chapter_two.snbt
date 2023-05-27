@@ -1,45 +1,39 @@
 {
-	id: "762FE9447FC2B081"
-	group: "2FE70BF4886F08F4"
-	order_index: 1
-	filename: "chapter_two"
-	title: "Chapter Two"
-	icon: "byg:subzero_crystal_cluster"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_two"
+	group: "2FE70BF4886F08F4"
+	icon: "byg:subzero_crystal_cluster"
+	id: "762FE9447FC2B081"
+	order_index: 1
+	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["4F90F6437D6CF7EC"]
+			description: ["With items attuned to the destination it is now possible to travel to the Nether."]
+			icon: "minecraft:crimson_fungus"
+			id: "3D0B7DA1DD0A74B1"
+			shape: "hexagon"
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					icon: "minecraft:crimson_fungus"
+					id: "1B464D1BB138C06B"
+					title: "Visit the Nether"
+					type: "dimension"
+				}
+				{
+					id: "66622CBCAA0E32C7"
+					item: "kubejs:teleport_nether"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 1.0d
 			y: 8.0d
-			shape: "hexagon"
-			description: [
-				"With items attuned to the destination it is now possible to travel to the Nether."
-				""
-				"================================="
-				""
-				"Look for &cRitual Teleport Nether&r in JEI to find the recipe for the teleportation ritual to visit the Nether."
-			]
-			dependencies: ["4F90F6437D6CF7EC"]
-			id: "3D0B7DA1DD0A74B1"
-			tasks: [{
-				id: "1B464D1BB138C06B"
-				type: "dimension"
-				title: "Visit the Nether"
-				icon: "minecraft:crimson_fungus"
-				dimension: "minecraft:the_nether"
-			}]
 		}
 		{
-			icon: {
-				id: "gateways:gate_pearl"
-				Count: 1b
-				tag: {
-					gateway: "gateways:wither_council_gate"
-				}
-			}
-			x: 0.5d
-			y: 7.0d
-			shape: "hexagon"
+			dependencies: ["39B2F84EBDC27AA3"]
 			description: [
 				"Only a well-prepared witch should ever consider summoning the Wither Council, using every trick at her disposal to defeat them in a timely manner. "
 				""
@@ -50,84 +44,102 @@
 				"The Gateway for this fight is on a short timer. Capture a Wither and defeat the rest to obtain a Nether Star. The captured Wither will be used to mine Ether, which may be used to produce more Nether Stars. "
 				""
 				"Feel free to repeat this fight, but it is not intended to be needed more than once. "
-				""
-				"Summoning the Wither Council will require the use of Eskarina’s Monstrous Compulsion, a ritual pentacle detailed in the Dictionary of Spirits. "
-				""
-				"Look for the &4Wither Council Gate Pearl&r in JEI to find the recipe for this summoning ritual. "
 			]
-			dependencies: ["39B2F84EBDC27AA3"]
-			min_width: 250
+			icon: {
+				Count: 1b
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "gateways:wither_council_gate"
+				}
+			}
 			id: "4F90F6437D6CF7EC"
-			tasks: [{
-				id: "456BA96D5527F132"
-				type: "item"
-				item: "minecraft:nether_star"
-			}]
+			min_width: 250
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "0D29D697AA5F02F1"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:wither_council_gate"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "15AF81020887B436"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 7.0d
 		}
 		{
-			x: 0.5d
-			y: 3.0d
 			dependencies: ["55C6945D58D77AB6"]
 			id: "4C676E7D2BA75DE4"
 			tasks: [{
 				id: "47352920219144B1"
-				type: "item"
 				item: "kubejs:gloaming_catalyst"
+				type: "item"
 			}]
+			x: 0.5d
+			y: 3.0d
 		}
 		{
-			x: 0.5d
-			y: 4.0d
 			dependencies: ["4C676E7D2BA75DE4"]
 			id: "71D9A268FF98E954"
 			tasks: [{
 				id: "4FF05D947BDCBD0C"
-				type: "item"
 				item: "kubejs:spirit_of_devotion"
+				type: "item"
 			}]
+			x: 0.5d
+			y: 4.0d
 		}
 		{
-			x: -0.5d
-			y: 4.5d
-			shape: "hexagon"
-			description: ["It would seem the Cult of the Ur-Ghast were up to something far more sinister than previously thought. The rift they opened with their Carminite Reactor also gave them the opportunity to obtain this strange debris.  "]
-			hide_dependency_lines: true
 			dependencies: [
 				"2CCCDD05AED3153F"
 				"60324503ED7AC4C1"
 			]
+			description: ["It would seem the Cult of the Ur-Ghast were up to something far more sinister than previously thought. The rift they opened with their Carminite Reactor also gave them the opportunity to obtain this strange debris.  "]
 			hide: true
+			hide_dependency_lines: true
 			id: "0CFE9B39B0643013"
+			shape: "hexagon"
 			tasks: [{
 				id: "5BAB3FF81039BF5E"
-				type: "item"
 				item: "minecraft:ancient_debris"
+				type: "item"
 			}]
+			x: -0.5d
+			y: 4.5d
 		}
 		{
-			x: 0.5d
-			y: 5.0d
+			dependencies: [
+				"71D9A268FF98E954"
+				"0CFE9B39B0643013"
+			]
 			description: [
 				"With some research, it appears the Cult were preparing to summon a great evil into the land. To what purpose is still unclear. "
 				""
 				"Just the same, the processes of cleansing this debris into a useful ingot is not for the feint of heart. "
 			]
-			dependencies: [
-				"71D9A268FF98E954"
-				"0CFE9B39B0643013"
-			]
 			id: "77E8DD38A379F9C7"
 			tasks: [{
-				id: "55E4F11D8C8357A5"
-				type: "item"
-				title: "Netherite"
 				icon: "minecraft:netherite_ingot"
+				id: "55E4F11D8C8357A5"
 				item: "minecraft:netherite_ingot"
+				title: "Netherite"
+				type: "item"
 			}]
+			x: 0.5d
+			y: 5.0d
 		}
 		{
-			x: 0.5d
-			y: 6.0d
+			dependencies: ["77E8DD38A379F9C7"]
 			description: [
 				"Bait. "
 				""
@@ -135,44 +147,36 @@
 				""
 				"Celestial Gold, blessed by the gods themselves, would ring out across the dimensions like a clear bell on a calm day. They’d never resist the chance to corrupt something so sacred. "
 			]
-			dependencies: ["77E8DD38A379F9C7"]
 			id: "39B2F84EBDC27AA3"
 			tasks: [{
-				id: "4241691B8FE4293D"
-				type: "item"
-				title: "Celestial Gold"
 				icon: "emendatusenigmatica:tainted_gold_ingot"
+				id: "4241691B8FE4293D"
 				item: {
-					id: "itemfilters:tag"
 					Count: 1b
+					id: "itemfilters:tag"
 					tag: {
 						value: "forge:ingots/tainted_gold"
 					}
 				}
+				title: "Celestial Gold"
+				type: "item"
 			}]
+			x: 0.5d
+			y: 6.0d
 		}
 		{
-			x: 2.5d
-			y: -0.5d
 			dependencies: ["00B21E64DEFACB40"]
 			id: "31E4C2A162D7497C"
 			tasks: [{
 				id: "2D56C518D77625DD"
-				type: "item"
 				item: "ars_nouveau:enchanting_apparatus"
+				type: "item"
 			}]
+			x: 2.5d
+			y: -0.5d
 		}
 		{
-			icon: {
-				id: "gateways:gate_pearl"
-				Count: 1b
-				tag: {
-					gateway: "gateways:wilden_grove_gate"
-				}
-			}
-			x: -0.5d
-			y: 2.5d
-			shape: "hexagon"
+			dependencies: ["55C6945D58D77AB6"]
 			description: [
 				"As the Queen tells it, The Wilden Grove invoked a dangerous ritual to attempt to stop the Cult of the Ur-Ghast before it was too late. "
 				""
@@ -185,45 +189,62 @@
 				"The Gateway for this fight is on a short timer. Capture a Wilden Chimera and defeat the rest to obtain a Wilden Tribute. The captured Wilden Chimera will be used to mine Magicite, which has multiple uses. "
 				""
 				"Feel free to repeat this fight, but it is not intended to be needed more than once. "
-				""
-				"Summoning the Grove of the Wilden will require the use of Eskarina’s Monstrous Compulsion, a ritual pentacle detailed in the Dictionary of Spirits. "
-				""
-				"Look for the &5Grove of the Wilden Gate Pearl&r in JEI to find the recipe for this summoning ritual."
 			]
-			dependencies: ["55C6945D58D77AB6"]
-			min_width: 250
+			icon: {
+				Count: 1b
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "gateways:wilden_grove_gate"
+				}
+			}
 			id: "0B7E9625225C8413"
-			tasks: [{
-				id: "21A6D819BD491B00"
-				type: "item"
-				item: "ars_nouveau:wilden_tribute"
-			}]
+			min_width: 250
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "5E066AEF6EE32A8F"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:wilden_grove_gate"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6BBD39057657A72D"
+					item: "ars_nouveau:wilden_tribute"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 2.5d
 		}
 		{
-			x: -1.0d
-			y: 3.5d
 			dependencies: ["0B7E9625225C8413"]
 			id: "10238EBB9B55F67B"
 			tasks: [{
 				id: "1DDBFACA2CC5B913"
-				type: "item"
 				item: "ars_elemental:mark_of_mastery"
+				type: "item"
 			}]
+			x: -1.0d
+			y: 3.5d
 		}
 		{
-			x: 2.5d
-			y: 5.5d
 			dependencies: ["1D0AA79380E87E57"]
 			id: "7563E41DBF4FD286"
 			tasks: [{
 				id: "6D78A382292EF627"
-				type: "item"
 				item: "industrialforegoing:machine_frame_simple"
+				type: "item"
 			}]
+			x: 2.5d
+			y: 5.5d
 		}
 		{
-			x: 2.5d
-			y: 6.5d
 			dependencies: [
 				"7563E41DBF4FD286"
 				"7465284C82512CF1"
@@ -231,35 +252,35 @@
 			id: "17F735810850C368"
 			tasks: [{
 				id: "5F0411E4A7C69564"
-				type: "item"
 				item: "industrialforegoing:ore_laser_base"
+				type: "item"
 			}]
+			x: 2.5d
+			y: 6.5d
 		}
 		{
-			x: 4.5d
-			y: 6.5d
 			dependencies: ["7465284C82512CF1"]
 			id: "5503E132D9D02EF8"
 			tasks: [{
 				id: "6FE9FBFD8C2D21EA"
-				type: "item"
 				item: "industrialforegoing:fluid_laser_base"
+				type: "item"
 			}]
+			x: 4.5d
+			y: 6.5d
 		}
 		{
-			x: 2.5d
-			y: 0.5d
 			dependencies: ["31E4C2A162D7497C"]
 			id: "6044FE23384692A5"
 			tasks: [{
 				id: "0B70A4972A7F691F"
-				type: "item"
 				item: "create:crushing_wheel"
+				type: "item"
 			}]
+			x: 2.5d
+			y: 0.5d
 		}
 		{
-			x: 3.5d
-			y: 8.0d
 			dependencies: [
 				"126F4E070F219A8B"
 				"6E239ECBE33DFA36"
@@ -267,122 +288,121 @@
 			id: "606F79DAEB15E85B"
 			tasks: [{
 				id: "1A90312A5DCEA90B"
-				type: "item"
 				item: "spirit:soul_steel_ingot"
+				type: "item"
 			}]
+			x: 3.5d
+			y: 8.0d
 		}
 		{
-			x: 3.5d
-			y: 9.5d
 			dependencies: ["606F79DAEB15E85B"]
 			id: "507A68CE5D41C4C2"
 			tasks: [{
 				id: "0D888CFF2F834C92"
-				type: "item"
 				item: "industrialforegoing:machine_frame_advanced"
+				type: "item"
 			}]
+			x: 3.5d
+			y: 9.5d
 		}
 		{
-			x: 2.5d
-			y: 7.5d
 			dependencies: ["17F735810850C368"]
 			id: "126F4E070F219A8B"
 			tasks: [{
 				id: "2CF76301E00C267D"
-				type: "item"
 				item: "spirit:soul_powder"
+				type: "item"
 			}]
+			x: 2.5d
+			y: 7.5d
 		}
 		{
-			x: 4.5d
-			y: 7.5d
 			dependencies: ["5503E132D9D02EF8"]
 			id: "6E239ECBE33DFA36"
 			tasks: [{
 				id: "2879671AF2B13169"
-				type: "item"
 				item: "kubejs:saturated_magebloom_filter"
+				type: "item"
 			}]
+			x: 4.5d
+			y: 7.5d
 		}
 		{
-			icon: "powah:energizing_orb"
-			x: 3.5d
-			y: -2.5d
-			shape: "hexagon"
 			dependencies: ["33BCDA0A76E2523C"]
 			hide: true
+			icon: "powah:energizing_orb"
 			id: "60324503ED7AC4C1"
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "1E9F51D9111326A7"
-					type: "item"
 					item: "powah:energizing_orb"
+					type: "item"
 				}
 				{
 					id: "05525E02360F94FE"
-					type: "item"
 					item: "powah:energizing_rod_basic"
+					type: "item"
 				}
 			]
+			x: 3.5d
+			y: -2.5d
 		}
 		{
-			x: 2.5d
-			y: 3.5d
 			dependencies: ["49159D9F94B7006C"]
 			id: "767A379B00DCA2E0"
 			tasks: [{
-				id: "1558A342DAD1935D"
-				type: "item"
-				title: "Iron"
 				icon: "minecraft:iron_ingot"
+				id: "1558A342DAD1935D"
 				item: {
-					id: "itemfilters:tag"
 					Count: 1b
+					id: "itemfilters:tag"
 					tag: {
 						value: "forge:ingots/iron"
 					}
 				}
+				title: "Iron"
+				type: "item"
 			}]
+			x: 2.5d
+			y: 3.5d
 		}
 		{
-			title: "Improved Blast Furnace"
-			icon: "immersiveengineering:advanced_blast_furnace"
-			x: 2.5d
-			y: 1.5d
+			dependencies: ["6044FE23384692A5"]
 			description: [
 				"Supplying enough heat to work with Iron directly has proved difficult until now. With a magically enhanced blast furnace and Horizonite as fuel, it should prove more feasible."
 				""
 				"Horizonite appears to only occur naturally within the moon of Everdawn. "
 			]
-			dependencies: ["6044FE23384692A5"]
+			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "2BA70920EA1ED0A8"
 			tasks: [{
 				id: "79ABD0D7EFB8D300"
-				type: "item"
 				item: "immersiveengineering:blastbrick_reinforced"
+				type: "item"
 			}]
+			title: "Improved Blast Furnace"
+			x: 2.5d
+			y: 1.5d
 		}
 		{
-			x: 3.5d
-			y: 5.0d
+			dependencies: ["2BE91F37CE010984"]
 			description: [
 				"Formed by crushing Invar with Magic! The following spell form will crush items on the ground: "
 				""
 				"Projectile > Crush > Sensitive "
 			]
-			dependencies: ["2BE91F37CE010984"]
 			id: "1D0AA79380E87E57"
 			tasks: [{
 				id: "5C129E4F6EAC8C83"
-				type: "item"
 				item: "pneumaticcraft:ingot_iron_compressed"
+				type: "item"
 			}]
+			x: 3.5d
+			y: 5.0d
 		}
 		{
-			title: "Light Machinery"
-			icon: "immersiveengineering:light_engineering"
-			x: 4.5d
-			y: 1.5d
+			dependencies: ["21C352EEFEB25365"]
 			description: [
 				"The following multiblock machines are available with Light Engineering Blocks:"
 				""
@@ -392,25 +412,26 @@
 				"● Assembler"
 				"● Sawmill"
 			]
-			dependencies: ["21C352EEFEB25365"]
+			icon: "immersiveengineering:light_engineering"
 			id: "2C43443DCFFF65F4"
 			tasks: [
 				{
 					id: "05A605FCDAEBD972"
-					type: "item"
 					item: "immersiveengineering:light_engineering"
+					type: "item"
 				}
 				{
 					id: "63E361AD9BA98257"
-					type: "item"
 					item: "immersiveengineering:rs_engineering"
+					type: "item"
 				}
 			]
+			title: "Light Machinery"
+			x: 4.5d
+			y: 1.5d
 		}
 		{
-			title: "Heavy Machinery"
-			x: 4.5d
-			y: 5.5d
+			dependencies: ["1D0AA79380E87E57"]
 			description: [
 				"The following multiblock machines are available with Heavy Engineering Blocks:"
 				""
@@ -419,51 +440,51 @@
 				"● Refinery"
 				"● Crusher"
 			]
-			dependencies: ["1D0AA79380E87E57"]
 			id: "15F56E72212629FB"
 			tasks: [{
 				id: "0154E90B21C27B44"
-				type: "item"
 				item: "immersiveengineering:heavy_engineering"
+				type: "item"
 			}]
+			title: "Heavy Machinery"
+			x: 4.5d
+			y: 5.5d
 		}
 		{
-			x: 4.5d
-			y: 0.5d
 			dependencies: ["738DA69FFF6516FA"]
 			id: "21C352EEFEB25365"
 			tasks: [{
 				id: "4027AFF2F762B0D1"
-				type: "item"
 				item: "kubejs:energetic_transference_matrix"
+				type: "item"
 			}]
+			x: 4.5d
+			y: 0.5d
 		}
 		{
-			x: 3.5d
-			y: 6.0d
 			dependencies: ["15F56E72212629FB"]
 			id: "7465284C82512CF1"
 			tasks: [{
 				id: "25E1CC6FE74A1DFB"
-				type: "item"
 				item: "pneumaticcraft:assembly_controller"
+				type: "item"
 			}]
+			x: 3.5d
+			y: 6.0d
 		}
 		{
-			x: 3.5d
-			y: 3.0d
 			dependencies: ["0C0A98C6DD871BD3"]
 			id: "49159D9F94B7006C"
 			tasks: [{
 				id: "7667047356862670"
-				type: "item"
 				item: "mekanism:metallurgic_infuser"
+				type: "item"
 			}]
+			x: 3.5d
+			y: 3.0d
 		}
 		{
-			x: 0.5d
-			y: 1.0d
-			shape: "hexagon"
+			dependencies: ["4CC418E7200DF351"]
 			description: [
 				"The Cell Maze seems a likely a place as any to start. Locate it and search around for clues to the Queen's whereabouts.  They’re notable for their large cells partitioned off by Honey Web and contain countless Honey Cocoons."
 				""
@@ -473,31 +494,30 @@
 				""
 				"While in the Bumblezone, Right-Click the Honey Compass in the air to attune it to the Cell Maze."
 			]
-			dependencies: ["4CC418E7200DF351"]
 			id: "57861ABDB35ED555"
+			shape: "hexagon"
 			tasks: [{
 				id: "707735727FE79FB9"
-				type: "item"
 				item: {
-					id: "the_bumblezone:honey_compass"
 					Count: 1b
+					id: "the_bumblezone:honey_compass"
 					tag: {
 						CompassType: "structure"
+						TargetDimension: "the_bumblezone:the_bumblezone"
 						TargetPos: {
 							X: -2480
 							Y: 0
 							Z: -1936
 						}
-						TargetDimension: "the_bumblezone:the_bumblezone"
 					}
 				}
+				type: "item"
 			}]
+			x: 0.5d
+			y: 1.0d
 		}
 		{
-			icon: "the_bumblezone:essence_of_the_bees"
-			x: 0.5d
-			y: 2.0d
-			shape: "hexagon"
+			dependencies: ["57861ABDB35ED555"]
 			description: [
 				"At last, the Queen!"
 				""
@@ -508,41 +528,41 @@
 				"Essence of the Bees is a very rare reward, indeed, so do not squander it!"
 				"Use it to first craft the Gloaming Catalyst before consuming it to receive the rest of the permanent rewards it grants. "
 			]
-			dependencies: ["57861ABDB35ED555"]
+			icon: "the_bumblezone:essence_of_the_bees"
 			id: "55C6945D58D77AB6"
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "3CC2FBDD7AB29403"
-					type: "item"
 					item: {
-						id: "the_bumblezone:honey_compass"
 						Count: 1b
+						id: "the_bumblezone:honey_compass"
 						tag: {
-							Locked: 1b
+							CompassType: "structure"
+							CustomDescription: "item.the_bumblezone.honey_compass_throne_description"
 							CustomName: "item.the_bumblezone.honey_compass_throne_structure"
+							Locked: 1b
+							TargetDimension: "the_bumblezone:the_bumblezone"
 							TargetPos: {
 								X: -1472
 								Y: 0
 								Z: -4688
 							}
-							CustomDescription: "item.the_bumblezone.honey_compass_throne_description"
-							CompassType: "structure"
-							TargetDimension: "the_bumblezone:the_bumblezone"
 						}
 					}
+					type: "item"
 				}
 				{
 					id: "586A6799065EA729"
-					type: "item"
 					item: "the_bumblezone:essence_of_the_bees"
+					type: "item"
 				}
 			]
+			x: 0.5d
+			y: 2.0d
 		}
 		{
-			icon: "minecraft:honeycomb"
-			x: 0.5d
-			y: 0.0d
-			shape: "hexagon"
+			dependencies: ["2153EBB1D50F0039"]
 			description: [
 				"The meandering pathways in the Bumblezone are built for hive minds, and so can be difficult for others to follow. Crafting a Honey Compass will be the safest way forward."
 				""
@@ -552,86 +572,85 @@
 				""
 				"While in the Bumblezone, it is possible to leave at any time by mining to the roof or floor. Above ore below a certain point, you’ll be teleported back to where you came from."
 			]
-			dependencies: ["2153EBB1D50F0039"]
+			icon: "minecraft:honeycomb"
 			id: "4CC418E7200DF351"
+			rewards: [{
+				count: 16
+				id: "6AA44F123D286226"
+				item: "the_bumblezone:bee_bread"
+				type: "item"
+			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "4F31450F59F287F9"
-					type: "item"
 					item: {
-						id: "the_bumblezone:honey_compass"
 						Count: 1b
+						id: "the_bumblezone:honey_compass"
 						tag: { }
 					}
+					type: "item"
 				}
 				{
 					id: "727B3D8940DE93A6"
-					type: "item"
-					title: "Bee Treats"
 					item: {
-						id: "itemfilters:or"
 						Count: 1b
+						id: "itemfilters:or"
 						tag: {
 							items: [
 								{
-									id: "the_bumblezone:bee_bread"
 									Count: 1b
+									id: "the_bumblezone:bee_bread"
 								}
 								{
-									id: "minecraft:honey_bottle"
 									Count: 1b
+									id: "minecraft:honey_bottle"
 								}
 							]
 						}
 					}
+					title: "Bee Treats"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "6AA44F123D286226"
-				type: "item"
-				item: "the_bumblezone:bee_bread"
-				count: 16
-			}]
+			x: 0.5d
+			y: 0.0d
 		}
 		{
-			x: 3.5d
-			y: -1.0d
 			dependencies: ["60324503ED7AC4C1"]
 			id: "00B21E64DEFACB40"
 			tasks: [{
 				id: "01AF1B57146069F1"
-				type: "item"
 				item: "powah:steel_energized"
+				type: "item"
 			}]
+			x: 3.5d
+			y: -1.0d
 		}
 		{
-			x: 4.5d
-			y: -0.5d
 			dependencies: ["00B21E64DEFACB40"]
 			id: "738DA69FFF6516FA"
 			tasks: [{
 				id: "60BB72446E4D266C"
-				type: "item"
 				item: "occultism:spirit_attuned_gem"
+				type: "item"
 			}]
+			x: 4.5d
+			y: -0.5d
 		}
 		{
-			x: 3.5d
-			y: 2.0d
 			dependencies: ["2BA70920EA1ED0A8"]
 			id: "0C0A98C6DD871BD3"
 			tasks: [{
 				id: "0F59CD79EA51B378"
-				type: "item"
 				item: "kubejs:crude_iron_ingot"
+				type: "item"
 			}]
+			x: 3.5d
+			y: 2.0d
 		}
 		{
-			title: "Telling of the Bees"
-			icon: "minecraft:beehive"
-			x: 1.0d
-			y: -1.0d
-			shape: "hexagon"
+			dependencies: ["31E4C2A162D7497C"]
 			description: [
 				"In places that still keep the old ways, bees hold a privileged position in community life. From the birth of a child to the death of a friend, news of important events are shared first with the bees. "
 				""
@@ -648,94 +667,105 @@
 				"In order to travel to the Bumblezone, place a Teleporter directly beneath a Beehive, then throw an Ender Pearl at the Beehive."
 			]
 			hide_dependency_lines: true
-			dependencies: ["31E4C2A162D7497C"]
-			min_width: 300
+			icon: "minecraft:beehive"
 			id: "2153EBB1D50F0039"
+			min_width: 300
+			rewards: [{
+				id: "6363919C99636DBD"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "4A2B53416D546C80"
-					type: "item"
 					item: "minecraft:beehive"
+					type: "item"
 				}
 				{
 					id: "637617E3CEC25857"
-					type: "item"
 					item: "mekanism:teleporter"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "6363919C99636DBD"
-				type: "item"
-				item: "minecraft:ender_pearl"
-			}]
+			title: "Telling of the Bees"
+			x: 1.0d
+			y: -1.0d
 		}
 		{
-			x: 4.5d
-			y: 3.5d
 			dependencies: ["49159D9F94B7006C"]
 			id: "4A7EC5D11F20F2B7"
 			tasks: [{
 				id: "76E4EFCD4200B779"
-				type: "item"
 				item: "emendatusenigmatica:steel_ingot"
+				type: "item"
 			}]
+			x: 4.5d
+			y: 3.5d
 		}
 		{
-			x: 3.5d
-			y: 4.0d
 			dependencies: ["767A379B00DCA2E0"]
 			id: "2BE91F37CE010984"
 			tasks: [{
 				id: "4CCF04553715833F"
-				type: "item"
 				item: "emendatusenigmatica:invar_ingot"
+				type: "item"
 			}]
+			x: 3.5d
+			y: 4.0d
 		}
 		{
-			title: "Tree of Life"
-			icon: "kubejs:tree_of_life_2"
-			x: 6.5d
-			y: 3.0d
-			shape: "hexagon"
+			dependencies: ["71D9A268FF98E954"]
 			description: [
 				"As a boon for services rendered, the Queen grants safe passage to a lush realm of plenty."
 				""
 				"Nourish the Tree of Life with their gifts and travel to the Overworld in search of more answers in restoring the Tree."
-				""
-				"================================="
-				""
-				"Look for &aTree of Life 2&r in JEI to find the recipe for growing the Tree to the next stage."
 			]
 			hide_dependency_lines: true
-			dependencies: ["71D9A268FF98E954"]
+			icon: "kubejs:tree_of_life_2"
 			id: "2759988A5B69A455"
-			tasks: [{
-				id: "3D2248A91782812B"
-				type: "item"
-				item: "quark:ancient_fruit"
-			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "3D2248A91782812B"
+					item: "quark:ancient_fruit"
+					type: "item"
+				}
+				{
+					id: "48FE87B0C247EE47"
+					item: "kubejs:ritual_tree_of_life_2"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Tree of Life"
+			x: 6.5d
+			y: 3.0d
 		}
 		{
+			dependencies: ["2759988A5B69A455"]
+			description: ["With items attuned to the destination it is now possible to travel to the Overworld."]
+			icon: "supplementaries:globe"
+			id: "356B7D1DFF632DBD"
+			shape: "hexagon"
+			tasks: [
+				{
+					dimension: "minecraft:overworld"
+					icon: "supplementaries:globe"
+					id: "38380859B691C3D0"
+					title: "The Overworld"
+					type: "dimension"
+				}
+				{
+					id: "4448E4A5664FA364"
+					item: "kubejs:teleport_overworld"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 6.5d
 			y: 4.0d
-			shape: "hexagon"
-			description: [
-				"With items attuned to the destination it is now possible to travel to the Overworld."
-				""
-				"================================="
-				""
-				"Look for &2Ritual Teleport Overworld&r in JEI to find the recipe for the teleportation ritual to visit the Overworld."
-			]
-			dependencies: ["2759988A5B69A455"]
-			id: "356B7D1DFF632DBD"
-			tasks: [{
-				id: "38380859B691C3D0"
-				type: "dimension"
-				title: "The Overworld"
-				icon: "supplementaries:globe"
-				dimension: "minecraft:overworld"
-			}]
 		}
 	]
-	quest_links: [ ]
+	title: "Chapter Two"
 }
