@@ -3,26 +3,39 @@ EntityEvents.hurt((event) => {
     if (!entity.isPlayer() || entity.isFake()) {
         return;
     }
-
     let player = entity;
-
     let currentDimension = String(level.getDimension());
     let watchDimensions = ['compact_world', 'nomadictents', 'the_end'];
-    // console.log(source.type);
+
     if (
         source.type == 'outOfWorld' &&
         player.y < 0 &&
         watchDimensions.some((substring) => currentDimension.includes(substring))
     ) {
-        let playerString = player.getUsername();
+        let username = player.getUsername();
         let spawn = player.getRespawnPosition();
         let spawnDimension = player.getRespawnDimension().location();
 
-        console.log(`${playerString} has fallen into the void in ${currentDimension}!`);
+        console.log(`${username} has fallen into the void in ${currentDimension}!`);
         console.log(`Teleporting to their spawn point in ${spawnDimension} at X:${spawn.x} Y:${spawn.y} Z:${spawn.z}`);
 
-        server.runCommandSilent(`execute in ${spawnDimension} run tp ${playerString} ${spawn.x} ${spawn.y} ${spawn.z}`);
         player.tell(Text.of('Oops! Looks like you slipped! Warping back to your spawn point.').green());
+
+        server.runCommandSilent(`execute in ${spawnDimension} run tp ${username} ${spawn.x} ${spawn.y} ${spawn.z}`);
+
+        // Cost is in hunger. Clear food related buffs and apply massive hunger briefly.
+        let effects = [
+            'farmersdelight:comfort',
+            'farmersdelight:nourishment',
+            'sushigocrafting:acquired_taste',
+            'sushigocrafting:small_bites',
+            'sushigocrafting:steady_hands'
+        ];
+        effects.forEach((effect) => {
+            server.runCommandSilent(`effect clear ${username} ${effect}`);
+        });
+        server.runCommandSilent(`effect give ${username} minecraft:hunger 8 255 true`);
+
         event.cancel();
     }
 });

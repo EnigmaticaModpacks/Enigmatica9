@@ -7,7 +7,11 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             output: 'ars_nouveau:glyph_pickup',
-            inputItems: [{ item: { item: 'minecraft:lodestone' } }, { item: { item: 'minecraft:lodestone' } }],
+            inputItems: [
+                { item: { item: 'minecraft:lodestone' } },
+                { item: { item: 'minecraft:lodestone' } },
+                { item: { item: 'supplementaries:antique_ink' } }
+            ],
             count: 1,
             exp: 27,
             id: `ars_nouveau:glyph_pickup`
@@ -21,13 +25,21 @@ ServerEvents.recipes((event) => {
                 { item: { item: 'minecraft:chain' } },
                 { item: { tag: 'forge:ingots/depths' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { tag: 'forge:ingots/depths' } }
+                { item: { tag: 'forge:ingots/depths' } },
+                { item: { item: 'supplementaries:antique_ink' } }
             ],
             count: 1,
             exp: 55,
-            id: `${id_prefix}glyph_chaining`
+            id: 'toomanyglyphs:glyph_chaining'
         }
     ];
+
+    // Add Antique Ink to every glyph
+    event.forEachRecipe({ type: 'ars_nouveau:glyph' }, (r) => {
+        let recipe = JSON.parse(r.json);
+        recipe.inputItems.push({ item: { item: 'supplementaries:antique_ink' } });
+        event.custom(recipe).id(r.getId());
+    });
 
     recipes.forEach((recipe) => {
         recipe.type = 'ars_nouveau:glyph';
