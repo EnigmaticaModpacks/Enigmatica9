@@ -1,19 +1,15 @@
 {
-	id: "634A8588EA6219D8"
-	group: "5A8B89F87F77CF4C"
-	order_index: 1
-	filename: "ars_nouveau_expert"
-	title: "Ars Nouveau"
-	icon: "ars_nouveau:source_gem"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ars_nouveau_expert"
+	group: "5A8B89F87F77CF4C"
+	icon: "ars_nouveau:source_gem"
+	id: "634A8588EA6219D8"
+	order_index: 1
+	quest_links: [ ]
 	quests: [
 		{
-			title: "Ars Nouveau"
-			icon: "ars_nouveau:creative_spell_book"
-			x: -2.0d
-			y: -6.0d
-			shape: "gear"
+			dependencies: ["2CCCDD05AED3153F"]
 			description: [
 				"With Ars Nouveau you will learn to harness the latent energy infused in all things to cast powerful spells, drive arcane machinery, and even to empower some cute friends along the way. "
 				""
@@ -21,52 +17,53 @@
 				""
 				"~MuteTiefling"
 			]
-			dependencies: ["2CCCDD05AED3153F"]
 			hide: true
+			icon: "ars_nouveau:creative_spell_book"
 			id: "4FFD31414D5F69E6"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "2657A594991D427A"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			shape: "gear"
 			tasks: [{
 				id: "4C0C28C6DB286E4B"
-				type: "item"
 				item: "ars_nouveau:novice_spell_book"
+				type: "item"
 			}]
-			rewards: [{
-				id: "2657A594991D427A"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			title: "Ars Nouveau"
+			x: -2.0d
+			y: -6.0d
 		}
 		{
-			title: "Spell Turret"
-			x: 3.0d
-			y: -4.0d
-			subtitle: "T-U-R-R-E-T, Turret"
+			dependencies: ["61D89161FF1433AC"]
 			description: [
 				"The Spell Turret is an enhanced apparatus used to cast spells on a Redstone pulse. Source for the spell will be provided automatically from nearby Source Jars."
 				""
 				"To set a spell, inscribe a Spell Parchment and Right-Click it on the Turret. It may use either Touch or Projectile forms in the spell. "
 			]
-			dependencies: ["61D89161FF1433AC"]
 			id: "354B4053058D8DC9"
-			tasks: [{
-				id: "7FF61082CB97D077"
-				type: "item"
-				item: "ars_nouveau:basic_spell_turret"
-			}]
 			rewards: [{
 				id: "2C1B2E8F4F88AF1D"
-				type: "item"
-				title: "Glyph: AOE"
 				item: "ars_nouveau:glyph_aoe"
+				title: "Glyph: AOE"
+				type: "item"
 			}]
+			subtitle: "T-U-R-R-E-T, Turret"
+			tasks: [{
+				id: "7FF61082CB97D077"
+				item: "ars_nouveau:basic_spell_turret"
+				type: "item"
+			}]
+			title: "Spell Turret"
+			x: 3.0d
+			y: -4.0d
 		}
 		{
-			icon: "emendatusenigmatica:source_gem"
-			x: -5.5d
-			y: -6.0d
-			subtitle: "Source Preserves"
+			dependencies: ["4197331BEFC9523D"]
 			description: [
 				"Source may be found in any living thing, so it should come as no surprise that it may be condensed from most living matter. In a natural cycle, the Source contained in the living is simply passed around from plant to animal and back. A nearby Sourcelink, however, may be used to re-direct that ephemeral dew into specially prepared Source Jars, preserving it for later use."
 				""
@@ -84,66 +81,67 @@
 				""
 				"● Fluid absorbs certain liquids from tanks placed below it, converting it into Source at different rates. "
 			]
-			dependencies: ["4197331BEFC9523D"]
-			min_width: 300
+			icon: "emendatusenigmatica:source_gem"
 			id: "302C5405A92ABA2B"
+			min_width: 300
+			rewards: [
+				{
+					id: "1509AE3838E1D8F3"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "66680508E51439EA"
+					player_command: false
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "Source Preserves"
 			tasks: [{
 				id: "7A1804289E263364"
-				type: "item"
-				title: "Sourcelinks"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "ars_nouveau:agronomic_sourcelink"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:volcanic_sourcelink"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:alchemical_sourcelink"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:vitalic_sourcelink"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:mycelial_sourcelink"
-								Count: 1b
 							}
 							{
-								id: "starbunclemania:fluid_sourcelink"
 								Count: 1b
+								id: "starbunclemania:fluid_sourcelink"
 							}
 						]
 					}
 				}
+				title: "Sourcelinks"
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "1509AE3838E1D8F3"
-					type: "item"
-					item: "ars_nouveau:source_jar"
-				}
-				{
-					id: "66680508E51439EA"
-					type: "command"
-					title: "Rare Ars Nouveau Loot Box"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-					player_command: false
-				}
-			]
+			x: -5.5d
+			y: -6.0d
 		}
 		{
-			x: 2.0d
-			y: -3.5d
-			subtitle: "Chalk it up to Experience"
+			dependencies: ["61D89161FF1433AC"]
 			description: [
 				"What good is magic if we can’t make it work for us? "
 				""
@@ -151,33 +149,32 @@
 				""
 				"To use Runic Chalk, begin by Right-Clicking it on the ground to draw a rune. Now Right-Click the rune with a prepared Spell Parchment. Valid Spell Parchments must begin with the Touch Form."
 			]
-			dependencies: ["61D89161FF1433AC"]
 			id: "65A391A914555563"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "3CC381888EA0B5BC"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			subtitle: "Chalk it up to Experience"
 			tasks: [{
 				id: "65886230085A4889"
-				type: "item"
 				item: {
-					id: "ars_nouveau:runic_chalk"
 					Count: 1b
+					id: "ars_nouveau:runic_chalk"
 					tag: {
 						Damage: 0
 					}
 				}
+				type: "item"
 			}]
-			rewards: [{
-				id: "3CC381888EA0B5BC"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: 2.0d
+			y: -3.5d
 		}
 		{
-			title: "Spell Parchment"
-			x: 2.0d
-			y: -5.0d
-			subtitle: "Jousting Snails"
+			dependencies: ["4CFBDE9FB821CFB6"]
 			description: [
 				"With some work, common paper can be infused to be a better receptacle for magic. Once infused, these written spells can be used in a variety of ways."
 				""
@@ -186,19 +183,19 @@
 				"Parchments may be re-used, though it can be useful to keep a library of scribed Parchments to be able to quickly re-apply the spell. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["4CFBDE9FB821CFB6"]
 			id: "61D89161FF1433AC"
+			subtitle: "Jousting Snails"
 			tasks: [{
 				id: "178E6CCD5BBB06AE"
-				type: "item"
 				item: "ars_nouveau:spell_parchment"
+				type: "item"
 			}]
+			title: "Spell Parchment"
+			x: 2.0d
+			y: -5.0d
 		}
 		{
-			icon: "ars_nouveau:magebloom"
-			x: 1.5d
-			y: -6.0d
-			subtitle: "Putting Down Roots"
+			dependencies: ["4FFD31414D5F69E6"]
 			description: [
 				"The Magebloom sits at the border between the mundane and the arcane. It grows as any other plant, but its roots reach through the veil, soaking in more of the Source that infuses the earth."
 				""
@@ -209,33 +206,32 @@
 				"Second, they can be woven into a fabric that when worn close serves as a personal battery for Source."
 			]
 			hide_dependency_lines: true
-			dependencies: ["4FFD31414D5F69E6"]
+			icon: "ars_nouveau:magebloom"
 			id: "4CFBDE9FB821CFB6"
+			rewards: [{
+				id: "514420F871FB3AD2"
+				item: "ars_nouveau:glyph_harvest"
+				title: "Glyph: Harvest"
+				type: "item"
+			}]
+			subtitle: "Putting Down Roots"
 			tasks: [
 				{
 					id: "48F41CBD7FAF18AA"
-					type: "item"
 					item: "ars_nouveau:magebloom_crop"
+					type: "item"
 				}
 				{
 					id: "32370E7C95E273E3"
-					type: "item"
 					item: "ars_nouveau:magebloom_fiber"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "514420F871FB3AD2"
-				type: "item"
-				title: "Glyph: Harvest"
-				item: "ars_nouveau:glyph_harvest"
-			}]
+			x: 1.5d
+			y: -6.0d
 		}
 		{
-			title: "Enchanting Apparatus"
-			icon: "ars_nouveau:enchanting_apparatus"
-			x: -6.5d
-			y: -6.0d
-			subtitle: "The Spirit is Willing but the Flesh is Spongy and Bruised"
+			dependencies: ["302C5405A92ABA2B"]
 			description: [
 				"One's own reservoir of Source is limited: the flesh can only hold so much. Certain magical materials exist to assist this but they themselves require access to greater reservoirs to even make."
 				""
@@ -247,73 +243,75 @@
 				""
 				"The Enchanting Apparatus may also be used to apply specific enchantments to tools and armor, simplifying the process of getting certain enchants to round out a piece of gear. These recipes are only listed in the Worn Notebook."
 			]
-			dependencies: ["302C5405A92ABA2B"]
-			min_width: 250
+			icon: "ars_nouveau:enchanting_apparatus"
 			id: "4838BDF5F871F986"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "6CC66A4B5F8AC37D"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			subtitle: "The Spirit is Willing but the Flesh is Spongy and Bruised"
 			tasks: [
 				{
 					id: "6BA8EBD8D836DF18"
-					type: "item"
 					item: "ars_nouveau:arcane_core"
+					type: "item"
 				}
 				{
 					id: "4133EE559F326FEA"
-					type: "item"
 					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
 				}
 				{
-					id: "6583D863BDDF82FD"
-					type: "item"
-					item: "ars_nouveau:arcane_pedestal"
 					count: 8L
+					id: "6583D863BDDF82FD"
+					item: "ars_nouveau:arcane_pedestal"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "6CC66A4B5F8AC37D"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			title: "Enchanting Apparatus"
+			x: -6.5d
+			y: -6.0d
 		}
 		{
-			title: "Curious Trinkets"
-			icon: "ars_nouveau:amulet_of_mana_regen"
-			x: -2.5d
-			y: -3.0d
-			subtitle: "Draw me like your French girls"
+			dependencies: ["4FFD31414D5F69E6"]
 			description: [
 				"Source is a fickle thing, and keeping it in one place long enough to use can be challenging at best. Aspiring practitioners may find themselves struggling to channel Source for very long. Besides magical accoutrements woven from Mana Fibers, certain other materials can be molded into useful trinkets to serve as an extension of one's own reserves."
 				""
 				"Refer to the Worn Notebook's section on Magical Equipment for recipes and to discover more useful curios."
 			]
 			hide_dependency_lines: true
-			dependencies: ["4FFD31414D5F69E6"]
+			icon: "ars_nouveau:amulet_of_mana_regen"
 			id: "514EBC20066B3A52"
+			rewards: [{
+				id: "0C4E913FC3A24306"
+				item: "ars_nouveau:void_jar"
+				title: "Jar of Voiding"
+				type: "item"
+			}]
+			subtitle: "Draw me like your French girls"
 			tasks: [
 				{
 					id: "4A83CC3EAC66759A"
-					type: "item"
 					item: "ars_nouveau:amulet_of_mana_regen"
+					type: "item"
 				}
 				{
 					id: "13F4E8919586B105"
-					type: "item"
 					item: "ars_nouveau:ring_of_lesser_discount"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "0C4E913FC3A24306"
-				type: "item"
-				title: "Jar of Voiding"
-				item: "ars_nouveau:void_jar"
-			}]
+			title: "Curious Trinkets"
+			x: -2.5d
+			y: -3.0d
 		}
 		{
-			x: -6.0d
-			y: -5.0d
-			subtitle: "Witches Abroad"
+			dependencies: ["4838BDF5F871F986"]
 			description: [
 				"Source permeates all things. Left to its own, it spreads and infuses but rarely collects. Binding it in jars is an excellent way of storing source for later use, but moving it from place to place can be a touchy subject."
 				""
@@ -321,24 +319,24 @@
 				""
 				"Use a Dominion Wand to set the links. "
 			]
-			dependencies: ["4838BDF5F871F986"]
 			id: "0558849340629198"
-			tasks: [{
-				id: "767E032AB8372611"
-				type: "item"
-				item: "ars_nouveau:relay"
-			}]
 			rewards: [{
 				id: "76D5A2971D6E11B2"
-				type: "item"
-				title: "Dominion Wand"
 				item: "ars_nouveau:dominion_wand"
+				title: "Dominion Wand"
+				type: "item"
 			}]
+			subtitle: "Witches Abroad"
+			tasks: [{
+				id: "767E032AB8372611"
+				item: "ars_nouveau:relay"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -5.0d
 		}
 		{
-			x: -7.0d
-			y: -4.0d
-			subtitle: "Equal Rites"
+			dependencies: ["0558849340629198"]
 			description: [
 				"Splitter Relays are capable of both sending to and receiving from multiple other Source Relays. "
 				""
@@ -346,47 +344,47 @@
 				""
 				"They share the same range limitations of normal Relays, but by combining the two a network of Source can be easily strung across an area, making it available wherever it is needed."
 			]
-			dependencies: ["0558849340629198"]
 			id: "4FC7A27EE813E191"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "631CD8944CF3CC6C"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			subtitle: "Equal Rites"
 			tasks: [{
 				id: "1948D7AF917D9256"
-				type: "item"
 				item: "ars_nouveau:relay_splitter"
+				type: "item"
 			}]
-			rewards: [{
-				id: "631CD8944CF3CC6C"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: -7.0d
+			y: -4.0d
 		}
 		{
-			x: -6.0d
-			y: 0.0d
-			subtitle: "Boop the Snoot"
-			description: ["An amicable being with a driving need to organize, Bookwyrms are central to using Ars Nouveau’s item management system which allows linking many inventories together into a single access point."]
 			dependencies: ["607D671B8C399B83"]
+			description: ["An amicable being with a driving need to organize, Bookwyrms are central to using Ars Nouveau’s item management system which allows linking many inventories together into a single access point."]
 			id: "15CB1C35BC808088"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "06700B179BAB6F8A"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			subtitle: "Boop the Snoot"
 			tasks: [{
 				id: "6AD8119AA03B49E7"
-				type: "item"
 				item: "ars_nouveau:bookwyrm_charm"
+				type: "item"
 			}]
-			rewards: [{
-				id: "06700B179BAB6F8A"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: -6.0d
+			y: 0.0d
 		}
 		{
-			x: -5.0d
-			y: -0.5d
-			subtitle: "In Search of the Golden Acorn"
+			dependencies: ["607D671B8C399B83"]
 			description: [
 				"Carbuncles are curious forest critters with a love for all things shiny. Gold, in particular. They may be befriended by tossing them a small amount of gold. Once befriended, they will assist by collecting items and moving them to inventories. "
 				""
@@ -396,34 +394,34 @@
 				""
 				"These critters can be an uncommon sight even in ancient forests. If none can be found, consider summoning them with the Altar of Birthing."
 			]
-			dependencies: ["607D671B8C399B83"]
 			id: "06AFFA588E4FFAAD"
-			tasks: [{
-				id: "073A6DCFEFE3E128"
-				type: "item"
-				item: {
-					id: "ars_nouveau:starbuncle_charm"
-					Count: 1b
-					tag: { }
-				}
-			}]
 			rewards: [
 				{
 					id: "55175DA1DBB7729F"
-					type: "item"
 					item: "starbunclemania:star_saddle"
+					type: "item"
 				}
 				{
 					id: "2EAA84ED357B61CA"
-					type: "item"
 					item: "starbunclemania:star_bin"
+					type: "item"
 				}
 			]
+			subtitle: "In Search of the Golden Acorn"
+			tasks: [{
+				id: "073A6DCFEFE3E128"
+				item: {
+					Count: 1b
+					id: "ars_nouveau:starbuncle_charm"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: -0.5d
 		}
 		{
-			x: -7.5d
-			y: -1.5d
-			subtitle: "Whispering Winds"
+			dependencies: ["607D671B8C399B83"]
 			description: [
 				"Sylphs are the care-takers of the forest, helping new growth to flourish. They will come with you willingly if you honor them by planting a tree in their stead. Once befriended, a Sylph will tend to a small area and gift you with their bounty. Plant down trees, crops, flowers, and other natural items and over time the Sylph will grow more of these and offer them to you."
 				""
@@ -431,113 +429,112 @@
 				""
 				"The number of wild Sylphs has dwindled in recent times. If none can be found, consider summoning them with the Altar of Birthing."
 			]
-			dependencies: ["607D671B8C399B83"]
 			id: "6B1BDD9754A7FF5E"
-			tasks: [{
-				id: "6EEC842FB69246E8"
-				type: "item"
-				item: "ars_nouveau:whirlisprig_charm"
-			}]
 			rewards: [
 				{
-					id: "54C27B605C9C3467"
-					type: "command"
-					title: "Rare Ars Nouveau Loot Box"
-					icon: "kubejs:rare_lootbox"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "54C27B605C9C3467"
 					player_command: false
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
 				}
 				{
+					count: 4
 					id: "199026F5A555B785"
-					type: "item"
-					title: "Bamboo"
 					item: "minecraft:bamboo"
-					count: 4
+					title: "Bamboo"
+					type: "item"
 				}
 				{
+					count: 4
 					id: "682315D73C9094E9"
-					type: "item"
-					title: "Pumpkin Seeds"
 					item: "minecraft:pumpkin_seeds"
-					count: 4
+					title: "Pumpkin Seeds"
+					type: "item"
 				}
 				{
-					id: "103F56E87F6E402E"
-					type: "item"
-					title: "Dark Oak Sapling"
-					item: "minecraft:dark_oak_sapling"
 					count: 4
+					id: "103F56E87F6E402E"
+					item: "minecraft:dark_oak_sapling"
+					title: "Dark Oak Sapling"
+					type: "item"
 				}
 			]
+			subtitle: "Whispering Winds"
+			tasks: [{
+				id: "6EEC842FB69246E8"
+				item: "ars_nouveau:whirlisprig_charm"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.5d
 		}
 		{
-			title: "Familiar Friends"
-			x: -6.0d
-			y: -1.0d
-			subtitle: "Auto-magically"
+			dependencies: ["4FFD31414D5F69E6"]
 			description: ["Not all tasks lend themselves to completion by simple automatons like a turret or a rune. There exist certain magical creatures in this world that will help an aspiring practitioner quite willingly if asked nicely. "]
 			hide_dependency_lines: true
-			dependencies: ["4FFD31414D5F69E6"]
 			id: "607D671B8C399B83"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "7DF496221DDAC5FB"
+					player_command: false
+					title: "Farmer's Delight"
+					type: "command"
+				}
+				{
+					id: "62483E6A1C86AEAD"
+					item: "ars_nouveau:allow_scroll"
+					type: "item"
+				}
+				{
+					id: "5F87E4677D1072A9"
+					item: "ars_nouveau:deny_scroll"
+					type: "item"
+				}
+			]
+			subtitle: "Auto-magically"
 			tasks: [{
 				id: "7EF83714F3685482"
-				type: "item"
-				title: "Familiar Shards"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "ars_nouveau:drygmy_shard"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:whirlisprig_shards"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_elemental:siren_shards"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:starbuncle_shards"
-								Count: 1b
 							}
 							{
-								id: "ars_nouveau:wixie_shards"
 								Count: 1b
+								id: "ars_nouveau:wixie_shards"
 							}
 						]
 					}
 				}
+				title: "Familiar Shards"
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "7DF496221DDAC5FB"
-					type: "command"
-					title: "Farmer's Delight"
-					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-					player_command: false
-				}
-				{
-					id: "62483E6A1C86AEAD"
-					type: "item"
-					item: "ars_nouveau:allow_scroll"
-				}
-				{
-					id: "5F87E4677D1072A9"
-					type: "item"
-					item: "ars_nouveau:deny_scroll"
-				}
-			]
+			title: "Familiar Friends"
+			x: -6.0d
+			y: -1.0d
 		}
 		{
-			icon: "ars_nouveau:wixie_charm"
-			x: -7.0d
-			y: -0.5d
-			subtitle: "Wyrd Sisters"
+			dependencies: ["607D671B8C399B83"]
 			description: [
 				"Wouldn't it be helpful to have a hand around the Crafting Table? Someone to pass you this, or fetch you that? Or perhaps they could just do the job for you while you further your studies of the arcane?"
 				""
@@ -545,33 +542,34 @@
 				""
 				"To specify what the Wixie ought to craft, simply make one of the items yourself and Right-Click it on her cauldron. She'll take care of gathering the required items from nearby inventories. She will need a jar of Source nearby, however, to keep her productive."
 			]
-			dependencies: ["607D671B8C399B83"]
+			icon: "ars_nouveau:wixie_charm"
 			id: "056A0DB6CE5116C9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "5E08CDEBE8129227"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			subtitle: "Wyrd Sisters"
 			tasks: [
 				{
 					id: "1F0E715353FA7539"
-					type: "item"
 					item: "ars_nouveau:wixie_charm"
+					type: "item"
 				}
 				{
 					id: "4A01A83E8357A13D"
-					type: "item"
 					item: "minecraft:cauldron"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "5E08CDEBE8129227"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: -7.0d
+			y: -0.5d
 		}
 		{
-			x: -8.5d
-			y: 1.0d
-			subtitle: "Nanny Ogg's Cookbook"
+			dependencies: ["056A0DB6CE5116C9"]
 			description: [
 				"Simple item crafting isn’t the only thing these crafty ladies have hidden up their sleeves. They’re quite the adept in a brewery as well, making potions of all types. "
 				""
@@ -581,28 +579,27 @@
 				""
 				"It is recommended to take that potion and stick it in the jar immediately so that the potion jar can be locked to that type. Sneak + Right-Click the jar with a Dominion Wand to lock it to that type of potion. This is handy when multiple Wixies are at work in the same area.  "
 			]
-			dependencies: ["056A0DB6CE5116C9"]
-			min_width: 250
 			id: "3A45AF261026B10F"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "3BD42A0AC8B961F5"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			subtitle: "Nanny Ogg's Cookbook"
 			tasks: [{
 				id: "3B14DF366CC32F73"
-				type: "item"
 				item: "ars_nouveau:potion_jar"
+				type: "item"
 			}]
-			rewards: [{
-				id: "3BD42A0AC8B961F5"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: -8.5d
+			y: 1.0d
 		}
 		{
-			icon: "ars_nouveau:potion_melder"
-			x: -9.5d
-			y: 1.5d
-			subtitle: "Subtle Infusions"
+			dependencies: ["3A45AF261026B10F"]
 			description: [
 				"The clever arcanist finds ways to save themselves time, and nothing wastes time like drinking five different potions in preparation for a fight. Why not mix them and drink them all at once? "
 				""
@@ -614,82 +611,83 @@
 				""
 				"The process uses some Source from a nearby Source Jar but produces potions that combine all the effects of the two inputs. This process can be chained to produce potions with multiple effects."
 			]
-			dependencies: ["3A45AF261026B10F"]
+			icon: "ars_nouveau:potion_melder"
 			id: "3DA418767015E6E5"
-			tasks: [
-				{
-					id: "7A62EB08CA861434"
-					type: "item"
-					item: "ars_nouveau:potion_melder"
-				}
-				{
-					id: "71DF4A4E4E0D67BE"
-					type: "item"
-					item: "ars_nouveau:potion_jar"
-					count: 3L
-				}
-			]
 			rewards: [
 				{
 					id: "38D6912888612F0B"
-					type: "item"
-					title: "Potion of Absorption"
 					item: {
-						id: "minecraft:potion"
 						Count: 1b
+						id: "minecraft:potion"
 						tag: {
 							Potion: "apotheosis:long_absorption"
 						}
 					}
+					title: "Potion of Absorption"
+					type: "item"
 				}
 				{
 					id: "11714970F24997FA"
-					type: "item"
-					title: "Potion of Fire Resistance"
 					item: {
-						id: "minecraft:potion"
 						Count: 1b
+						id: "minecraft:potion"
 						tag: {
 							Potion: "minecraft:long_fire_resistance"
 						}
 					}
+					title: "Potion of Fire Resistance"
+					type: "item"
 				}
 			]
+			subtitle: "Subtle Infusions"
+			tasks: [
+				{
+					id: "7A62EB08CA861434"
+					item: "ars_nouveau:potion_melder"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "71DF4A4E4E0D67BE"
+					item: "ars_nouveau:potion_jar"
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: 1.5d
 		}
 		{
-			x: -9.0d
-			y: 2.5d
+			dependencies: ["3A45AF261026B10F"]
 			description: [
 				"Multiple doses all bottled up and ready to go in an eco-friendly re-usable package. "
 				""
 				"Each Flask can hold up to eight doses of potion and may even be enchanted to increase the potency or duration of the potions within."
 			]
-			dependencies: ["3A45AF261026B10F"]
 			id: "2F5B141F17AC773B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "674D0E1D98CD7AB5"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
 			tasks: [{
 				id: "410B901A50F887E0"
-				type: "item"
 				item: {
-					id: "ars_nouveau:potion_flask"
 					Count: 1b
+					id: "ars_nouveau:potion_flask"
 					tag: {
 						Damage: 8
 					}
 				}
+				type: "item"
 			}]
-			rewards: [{
-				id: "674D0E1D98CD7AB5"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: -9.0d
+			y: 2.5d
 		}
 		{
-			x: 1.0d
-			y: -4.0d
-			subtitle: "Cast Wide, Your Net"
+			dependencies: ["61D89161FF1433AC"]
 			description: [
 				"A rather traditional Arcane Focus, the Casting Wand may be inscribed with a single spell in much the same way as inscribing a Parchment."
 				""
@@ -699,26 +697,26 @@
 				""
 				"Other Arcane Foci exist granting similar benefits, such as the Enchanter’s Mirror and Enchanter’s Sword. The Worn Notebook covers these and more. "
 			]
-			dependencies: ["61D89161FF1433AC"]
 			id: "7D0F493B1B116DA0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "1FF9BB5244F19212"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			subtitle: "Cast Wide, Your Net"
 			tasks: [{
 				id: "755FC973DA0A8787"
-				type: "item"
 				item: "ars_nouveau:wand"
+				type: "item"
 			}]
-			rewards: [{
-				id: "1FF9BB5244F19212"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: 1.0d
+			y: -4.0d
 		}
 		{
-			x: 2.0d
-			y: 2.0d
-			subtitle: "I Love the Smell of Napalm in the Morning"
+			dependencies: ["4FFD31414D5F69E6"]
 			description: [
 				"Nothing quite says “Magic” like burning reagents on a pyre!"
 				""
@@ -727,82 +725,81 @@
 				"To get it going, Right-Click the Brazier with any Tablet. If extra materials are required, they should be thrown atop the flame to be consumed. Once everything is set, Right-Click again with an empty hand to finalize the ritual. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["4FFD31414D5F69E6"]
 			id: "2CFCF5AFECE471E7"
-			tasks: [{
-				id: "0BBCBFD97B091502"
-				type: "item"
-				item: "ars_nouveau:ritual_brazier"
-			}]
 			rewards: [{
 				id: "16CEE63BCC711849"
-				type: "item"
 				item: "ars_nouveau:ritual_burrowing"
+				type: "item"
 			}]
+			subtitle: "I Love the Smell of Napalm in the Morning"
+			tasks: [{
+				id: "0BBCBFD97B091502"
+				item: "ars_nouveau:ritual_brazier"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
 		}
 		{
-			icon: "ars_nouveau:ritual_disintegration"
-			x: 3.5d
-			y: 2.5d
-			subtitle: "XP = MC Squared "
+			dependencies: ["2CFCF5AFECE471E7"]
 			description: [
 				"Killing monsters can be a … messy affair. Why not skip the trouble and simply distill them down into their very essence? "
 				""
 				"Monsters killed with this ritual will drop Experience Gems worth roughly double the XP they’d drop normally. But, all drops are lost in the process."
 			]
-			dependencies: ["2CFCF5AFECE471E7"]
+			icon: "ars_nouveau:ritual_disintegration"
 			id: "0192B98DE5786E7F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "0F5F7260808060F4"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			subtitle: "XP = MC Squared "
 			tasks: [
 				{
 					id: "28D0FC55BF7B1EED"
-					type: "item"
 					item: "ars_nouveau:ritual_disintegration"
+					type: "item"
 				}
 				{
 					id: "0D3E6133AD5CAE62"
-					type: "item"
 					item: "ars_nouveau:experience_gem"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "0F5F7260808060F4"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: 3.5d
+			y: 2.5d
 		}
 		{
-			x: 0.5d
-			y: 2.5d
-			subtitle: "Here Comes the Rain Again, Falling On My Head Like a Memory"
+			dependencies: ["2CFCF5AFECE471E7"]
 			description: [
 				"Sometimes it feels like the rain just never lets up. It has soaked through your armor, flooded your cave, corroded all those fancy schmancy circuits you were told would solve your problems. "
 				""
 				"But did they solve the rain? No. Now let’s magic that rain away.  "
 			]
-			dependencies: ["2CFCF5AFECE471E7"]
 			id: "691206544D5EF45F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "283F604BA1282333"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			subtitle: "Here Comes the Rain Again, Falling On My Head Like a Memory"
 			tasks: [{
 				id: "269439A3A5CBE6FC"
-				type: "item"
 				item: "ars_nouveau:ritual_cloudshaping"
+				type: "item"
 			}]
-			rewards: [{
-				id: "283F604BA1282333"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: 0.5d
+			y: 2.5d
 		}
 		{
-			title: "Celestial Manipulation"
-			x: 0.5d
-			y: 1.5d
-			subtitle: "Ain't nobody got time for that!"
+			dependencies: ["2CFCF5AFECE471E7"]
 			description: [
 				"Are your days too short? Not enough time for your nocturnal pursuits? "
 				""
@@ -810,89 +807,89 @@
 				""
 				"Surely nothing bad could come of this?"
 			]
-			dependencies: ["2CFCF5AFECE471E7"]
 			id: "0E4A7CF195CFFB49"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "6FF58044D0712C64"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			subtitle: "Ain't nobody got time for that!"
 			tasks: [
 				{
 					id: "565218681A6691CB"
-					type: "item"
 					item: "ars_nouveau:ritual_sunrise"
+					type: "item"
 				}
 				{
 					id: "3067103678498449"
-					type: "item"
 					item: "ars_nouveau:ritual_moonfall"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "6FF58044D0712C64"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			title: "Celestial Manipulation"
+			x: 0.5d
+			y: 1.5d
 		}
 		{
-			x: 3.5d
-			y: 1.5d
-			subtitle: "Hear Ye, Hear Ye"
+			dependencies: ["2CFCF5AFECE471E7"]
 			description: [
 				"All you Lowly Pillagers, Ravaging Vindicators, and Summoners of Questionable Merit are here-by formally summoned to participate in the coming tournaments! "
 				""
 				"Summons a Pillager Raid to your back door, just in time!"
 			]
-			dependencies: ["2CFCF5AFECE471E7"]
 			id: "0D2F5C9F811159E0"
-			tasks: [{
-				id: "665CD90C4D89EF90"
-				type: "item"
-				item: "ars_nouveau:ritual_challenge"
-			}]
 			rewards: [{
 				id: "5BA0C313BE7C7CAC"
-				type: "item"
 				item: "minecraft:emerald_block"
+				type: "item"
 			}]
+			subtitle: "Hear Ye, Hear Ye"
+			tasks: [{
+				id: "665CD90C4D89EF90"
+				item: "ars_nouveau:ritual_challenge"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
 		}
 		{
-			title: "Fertility and Growth"
-			x: 1.5d
-			y: 1.0d
-			subtitle: "Magically Sustained Gestation"
+			dependencies: ["2CFCF5AFECE471E7"]
 			description: [
 				"If you sad in life – use MSG. If you happy in life – use MSG. Put MSG in everything, it’ll turn out better. You just get baby? Put MSG on baby, make smarter."
 				""
 				"Magic does wonders when it comes to growing crops and breeding animals. Combine these two rituals to keep your livestock busy and growing quickly. "
 			]
-			dependencies: ["2CFCF5AFECE471E7"]
 			id: "6518A4D6C3746C0C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "1EC4616A0AE0C8D6"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			subtitle: "Magically Sustained Gestation"
 			tasks: [
 				{
 					id: "5A0F80423F9A8EA6"
-					type: "item"
 					item: "ars_nouveau:ritual_fertility"
+					type: "item"
 				}
 				{
 					id: "7368079BDB53EA8C"
-					type: "item"
 					item: "ars_nouveau:ritual_overgrowth"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "1EC4616A0AE0C8D6"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			title: "Fertility and Growth"
+			x: 1.5d
+			y: 1.0d
 		}
 		{
-			title: "Warp Portals"
-			x: 2.5d
-			y: -6.0d
-			subtitle: "A Wizard Did It!"
+			dependencies: ["4CFBDE9FB821CFB6"]
 			description: [
 				"Going somewhere? "
 				""
@@ -902,122 +899,123 @@
 				""
 				"Alternatively, a portal may be built using any type of Sourcestone in a rectangular shape.  Place a filled Source Jar nearby and toss a bound Warp Scroll through the frame to ignite it, linking it to the coordinates from the scroll. Items, mobs, even spells may pass through these portals, though they are incapable of crossing between dimensions. "
 			]
-			dependencies: ["4CFBDE9FB821CFB6"]
 			id: "524A6B28242AA5B8"
-			tasks: [{
-				id: "163C30AF21EC9EA7"
+			rewards: [{
+				count: 8
+				id: "3E81BCF12BFCF551"
+				item: "ars_nouveau:warp_scroll"
 				type: "item"
-				title: "Sourcestone"
+			}]
+			subtitle: "A Wizard Did It!"
+			tasks: [{
+				count: 14L
 				icon: "ars_nouveau:sourcestone"
+				id: "163C30AF21EC9EA7"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "ars_nouveau:sourcestone"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:sourcestone_small_bricks"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:smooth_sourcestone"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:sourcestone_mosaic"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:smooth_sourcestone_basketweave"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:smooth_sourcestone_small_bricks"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:sourcestone_basketweave"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:smooth_sourcestone_mosaic"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:smooth_sourcestone_alternating"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:sourcestone_alternating"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:sourcestone_large_bricks"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:smooth_sourcestone_large_bricks"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:smooth_gilded_sourcestone_basketweave"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:smooth_gilded_sourcestone_alternating"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:gilded_sourcestone_alternating"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:gilded_sourcestone_basketweave"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:gilded_sourcestone_mosaic"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:smooth_gilded_sourcestone_small_bricks"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:smooth_gilded_sourcestone_large_bricks"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:smooth_gilded_sourcestone_mosaic"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:gilded_sourcestone_small_bricks"
-								Count: 1b
 							}
 							{
-								id: "ars_nouveau:gilded_sourcestone_large_bricks"
 								Count: 1b
+								id: "ars_nouveau:gilded_sourcestone_large_bricks"
 							}
 						]
 					}
 				}
-				count: 14L
-			}]
-			rewards: [{
-				id: "3E81BCF12BFCF551"
+				title: "Sourcestone"
 				type: "item"
-				item: "ars_nouveau:warp_scroll"
-				count: 8
 			}]
+			title: "Warp Portals"
+			x: 2.5d
+			y: -6.0d
 		}
 		{
-			x: -6.5d
-			y: -2.0d
-			subtitle: "Very A-moose-ing."
+			dependencies: ["607D671B8C399B83"]
 			description: [
 				"Found most anywhere that wild beasts roam, Drygmies are spirits bound to the earth, tending her flock. Through their magic, they can gather items from all manner of beast without causing them harm in any way. They may be enticed to work for you by showing them a token of their mortal enemies: Wilden Defenders."
 				""
@@ -1025,239 +1023,239 @@
 				""
 				"The number of wild Drygmies has dwindled in recent times. If none can be found, consider summoning them with the Altar of Birthing."
 			]
-			dependencies: ["607D671B8C399B83"]
 			id: "6AD899D00A4F801A"
-			tasks: [{
-				id: "03C83C1DC9E83BD4"
-				type: "item"
-				item: "ars_nouveau:drygmy_charm"
-			}]
 			rewards: [
 				{
-					id: "528D9A6C163EB60E"
-					type: "command"
-					title: "Rare Ars Nouveau Loot Box"
-					icon: "kubejs:rare_lootbox"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "528D9A6C163EB60E"
 					player_command: false
+					title: "Rare Ars Nouveau Loot Box"
+					type: "command"
 				}
 				{
-					id: "2FEDBAF01DD0BF91"
-					type: "command"
-					title: "Summon Chicken"
-					icon: "minecraft:egg"
 					command: "/execute at @p run summon minecraft:chicken ~ ~2 ~"
+					icon: "minecraft:egg"
+					id: "2FEDBAF01DD0BF91"
 					player_command: false
+					title: "Summon Chicken"
+					type: "command"
 				}
 			]
+			subtitle: "Very A-moose-ing."
+			tasks: [{
+				id: "03C83C1DC9E83BD4"
+				item: "ars_nouveau:drygmy_charm"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -2.0d
 		}
 		{
-			icon: "ars_nouveau:ritual_wilden_summon"
-			x: 1.5d
-			y: 3.0d
-			subtitle: "The Beast of Caerbannog"
+			dependencies: ["2CFCF5AFECE471E7"]
 			description: [
 				"First shalt thou take out the Holy Pin. Then, shalt thou count to three, no more, no less…"
 				""
 				"Useful for summoning Wilden of all sizes. When augmented with body parts from each of the lesser Wilden, the Wilden Chimera will appear to avenge his kin."
 			]
-			dependencies: ["2CFCF5AFECE471E7"]
+			icon: "ars_nouveau:ritual_wilden_summon"
 			id: "4C8EE3E4E174B4CC"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "04F678C5D7C1C7F5"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			subtitle: "The Beast of Caerbannog"
 			tasks: [
 				{
 					id: "0609A04F9472F422"
-					type: "item"
 					item: "ars_nouveau:ritual_wilden_summon"
+					type: "item"
 				}
 				{
 					id: "60A51BD60D1A43AC"
-					type: "item"
 					item: "ars_nouveau:wilden_tribute"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "04F678C5D7C1C7F5"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: 1.5d
+			y: 3.0d
 		}
 		{
-			x: -5.0d
-			y: -4.0d
-			subtitle: "Ebb and Flow"
+			dependencies: ["0558849340629198"]
 			description: [
 				"Where Source Relays are typically limited to pulling from or sending to a single linked Source Jar, these specialized Relays will automatically pull from or send to any nearby jars without being linked. "
 				""
 				"A Depositor therefore makes a great tool for keeping jars filled for other purposes, such as forming Warp Portals. Using both a Collector and a Depositor together also makes for a handy automation friendly means of transferring Source. Fill jars in one location, pick them up, and drain them elsewhere. "
 			]
-			dependencies: ["0558849340629198"]
 			id: "364F5765F967CD2A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "2F18780C98316591"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			subtitle: "Ebb and Flow"
 			tasks: [{
 				id: "4DF32BC38D0F1D79"
-				type: "item"
-				title: "Source Relays: Collectors and Depositors"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
-								id: "ars_nouveau:relay_collector"
 								Count: 1b
+								id: "ars_nouveau:relay_collector"
 							}
 							{
-								id: "ars_nouveau:relay_deposit"
 								Count: 1b
+								id: "ars_nouveau:relay_deposit"
 							}
 						]
 					}
 				}
+				title: "Source Relays: Collectors and Depositors"
+				type: "item"
 			}]
-			rewards: [{
-				id: "2F18780C98316591"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: -5.0d
+			y: -4.0d
 		}
 		{
-			x: -6.0d
-			y: -3.5d
+			dependencies: ["0558849340629198"]
 			description: [
 				"Warp Relays serve as long range Source transportation. By linking two together, Source may be transferred any distance in the same dimension. "
 				""
 				"A small amount of Source is used in stabilizing this connection over longer distances. "
 			]
-			dependencies: ["0558849340629198"]
 			id: "1042A6ABF523E20D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "457C21ABFA7637A4"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
 			tasks: [{
 				id: "5375EC5614AE6B23"
+				item: { Count: 2b, id: "ars_nouveau:relay_warp" }
 				type: "item"
-				item: { id: "ars_nouveau:relay_warp", Count: 2b }
 			}]
-			rewards: [{
-				id: "457C21ABFA7637A4"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: -6.0d
+			y: -3.5d
 		}
 		{
-			x: 0.5d
-			y: -1.5d
-			subtitle: "Don't You Crittersize Me!"
-			description: ["The only thing keeping these cute critters from being a crunchy treat to larger predators are their swift little feet. A power they’ll gladly lend for the price of friendship."]
 			dependencies: ["7EE4A2E96D7FAD4E"]
+			description: ["The only thing keeping these cute critters from being a crunchy treat to larger predators are their swift little feet. A power they’ll gladly lend for the price of friendship."]
 			id: "6006ADCD83297A65"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+				icon: "kubejs:miners_delight"
+				id: "7F01E8DAF2CD0183"
+				player_command: false
+				title: "Miner's Delight"
+				type: "command"
+			}]
+			subtitle: "Don't You Crittersize Me!"
 			tasks: [{
 				id: "5648C8DE68415AEC"
-				type: "item"
 				item: "ars_nouveau:familiar_starbuncle"
+				type: "item"
 			}]
-			rewards: [{
-				id: "7F01E8DAF2CD0183"
-				type: "command"
-				title: "Miner's Delight"
-				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
-				player_command: false
-			}]
+			x: 0.5d
+			y: -1.5d
 		}
 		{
-			x: 2.0d
-			y: 0.0d
-			subtitle: "A Spoonful of Sugar Helps the Medicine Go Down..."
-			description: ["Though quite pleasant to hang around in more domestic environments, Wixies are known to be quite resourceful in a fight, flinging dangerous brews hither and thither to fend off would be attackers. "]
 			dependencies: ["7EE4A2E96D7FAD4E"]
+			description: ["Though quite pleasant to hang around in more domestic environments, Wixies are known to be quite resourceful in a fight, flinging dangerous brews hither and thither to fend off would be attackers. "]
 			id: "22926CE82EC452E7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "03F61C5A1DBBF074"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			subtitle: "A Spoonful of Sugar Helps the Medicine Go Down..."
 			tasks: [{
 				id: "06DC2795969C79F4"
-				type: "item"
 				item: "ars_nouveau:familiar_wixie"
+				type: "item"
 			}]
-			rewards: [{
-				id: "03F61C5A1DBBF074"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				player_command: false
-			}]
+			x: 2.0d
+			y: 0.0d
 		}
 		{
-			x: 1.5d
-			y: -2.0d
-			subtitle: "As Luck Would Hoove It"
-			description: ["Powerful Earth Spirits with a knack for finding things, Drygmies impart their knowledge upon their friends, bolstering magic and turning up extra loot."]
 			dependencies: ["7EE4A2E96D7FAD4E"]
+			description: ["Powerful Earth Spirits with a knack for finding things, Drygmies impart their knowledge upon their friends, bolstering magic and turning up extra loot."]
 			id: "1C3386E68132950C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "113DE4E30F0603AE"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			subtitle: "As Luck Would Hoove It"
 			tasks: [{
 				id: "75F277CDA083AFF6"
-				type: "item"
 				item: "ars_nouveau:familiar_drygmy"
+				type: "item"
 			}]
-			rewards: [{
-				id: "113DE4E30F0603AE"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: 1.5d
+			y: -2.0d
 		}
 		{
-			x: 3.0d
-			y: -0.5d
-			subtitle: "I Will Dewey Decimate You"
-			description: ["With their deep link to Source, Bookwyrms make excellent allies, lending their strength each of their partner’s spell casts. "]
 			dependencies: ["7EE4A2E96D7FAD4E"]
+			description: ["With their deep link to Source, Bookwyrms make excellent allies, lending their strength each of their partner’s spell casts. "]
 			id: "6739C16B7A5ADE24"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "593888B6FAFA3B6F"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			subtitle: "I Will Dewey Decimate You"
 			tasks: [{
 				id: "41D899E2D0696288"
-				type: "item"
 				item: "ars_nouveau:familiar_bookwyrm"
+				type: "item"
 			}]
-			rewards: [{
-				id: "593888B6FAFA3B6F"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: 3.0d
+			y: -0.5d
 		}
 		{
-			x: 1.0d
-			y: -0.5d
-			subtitle: "The Queen of Sauce"
-			description: ["Variety is the spice of life, and none know this better than the Sylvan folk. Everything tastes better when they’re around."]
 			dependencies: ["7EE4A2E96D7FAD4E"]
+			description: ["Variety is the spice of life, and none know this better than the Sylvan folk. Everything tastes better when they’re around."]
 			id: "63138A584A6A780C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "7F1942734DAE17E5"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			subtitle: "The Queen of Sauce"
 			tasks: [{
 				id: "14B5918A6BB181A8"
-				type: "item"
 				item: "ars_nouveau:familiar_whirlisprig"
+				type: "item"
 			}]
-			rewards: [{
-				id: "7F1942734DAE17E5"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				player_command: false
-			}]
+			x: 1.0d
+			y: -0.5d
 		}
 		{
-			x: 2.0d
-			y: -1.0d
-			subtitle: "Friendship is Magic"
+			dependencies: ["2CFCF5AFECE471E7"]
 			description: [
 				"For ages, sorcerers have been befriending creatures of all sorts to assist in their work. These friendships run deep, forming a symbiotic partnership that grants incredible longevity to the creature and potent abilities to the sorcerer. "
 				""
@@ -1266,29 +1264,26 @@
 				"Each familiar grants unique bonuses that are detailed in the Worn Notebook. Explore each to find just the right friend."
 			]
 			hide_dependency_lines: true
-			dependencies: ["2CFCF5AFECE471E7"]
 			id: "7EE4A2E96D7FAD4E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "5D1D40D3A5BD2188"
+				player_command: false
+				title: "Ars Nouveau Rare Loot Box"
+				type: "command"
+			}]
+			subtitle: "Friendship is Magic"
 			tasks: [{
 				id: "38C9CC1DA3ABF280"
-				type: "item"
 				item: "ars_nouveau:ritual_binding"
+				type: "item"
 			}]
-			rewards: [{
-				id: "5D1D40D3A5BD2188"
-				type: "command"
-				title: "Ars Nouveau Rare Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: 2.0d
+			y: -1.0d
 		}
 		{
-			title: "Getting Started: Source Gems"
-			icon: "ars_nouveau:imbuement_chamber"
-			x: -6.0d
-			y: -7.0d
-			shape: "hexagon"
-			subtitle: "Like Sweet Morning Dew"
+			dependencies: ["4FFD31414D5F69E6"]
 			description: [
 				"Source is the driving energy behind every spell and arcane device in Ars Nouveau, but it must be condensed out of the world to harness it for anything beyond the simplest of uses. To that end, we’ll begin with an Imbuement Chamber."
 				""
@@ -1297,46 +1292,47 @@
 				"The item in the center of the recipe is to be inserted into the Chamber itself, while any items surrounding it are to be placed on nearby Pedestals. The items on the Pedestals act as keys and are never consumed, while the central item will be converted to the result. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["4FFD31414D5F69E6"]
+			icon: "ars_nouveau:imbuement_chamber"
 			id: "4197331BEFC9523D"
-			tasks: [
-				{
-					id: "51BB03B7812E7421"
-					type: "item"
-					item: "ars_nouveau:imbuement_chamber"
-				}
-				{
-					id: "62D003778D2E6D62"
-					type: "item"
-					title: "Source Gem"
-					icon: "emendatusenigmatica:source_gem"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "forge:gems/source"
-						}
-					}
-				}
-			]
 			rewards: [{
 				id: "05D0688D89E97282"
-				type: "item"
 				item: {
-					id: "ars_nouveau:dowsing_rod"
 					Count: 1b
+					id: "ars_nouveau:dowsing_rod"
 					tag: {
 						Damage: 0
 					}
 				}
+				type: "item"
 			}]
+			shape: "hexagon"
+			subtitle: "Like Sweet Morning Dew"
+			tasks: [
+				{
+					id: "51BB03B7812E7421"
+					item: "ars_nouveau:imbuement_chamber"
+					type: "item"
+				}
+				{
+					icon: "emendatusenigmatica:source_gem"
+					id: "62D003778D2E6D62"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gems/source"
+						}
+					}
+					title: "Source Gem"
+					type: "item"
+				}
+			]
+			title: "Getting Started: Source Gems"
+			x: -6.0d
+			y: -7.0d
 		}
 		{
-			title: "Spellcasting"
-			icon: "ars_nouveau:scribes_table"
-			x: 2.0d
-			y: -7.0d
-			shape: "hexagon"
+			dependencies: ["4FFD31414D5F69E6"]
 			description: [
 				"From novice to master alike, much time is dedicated to the art of spell craft, be it preparing and learning new Glyphs, enchanting personal Arcane Foci, or preparing Spell Glyphs or Turrets. "
 				""
@@ -1349,31 +1345,32 @@
 				"Note: Glyphs are stored on the player, not the Spell Book. So, losing a Spell Book does not mean the loss of learned glyphs. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["4FFD31414D5F69E6"]
+			icon: "ars_nouveau:scribes_table"
 			id: "662B1148F137F78E"
+			rewards: [{
+				id: "2EA3CC2C989890A6"
+				item: "ars_nouveau:glyph_light"
+				type: "item"
+			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "55A610981FB2B42C"
-					type: "item"
 					item: "ars_nouveau:scribes_table"
+					type: "item"
 				}
 				{
 					id: "57F5ED827C82F0C5"
-					type: "item"
 					item: "ars_elemental:glyph_conjure_terrain"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "2EA3CC2C989890A6"
-				type: "item"
-				item: "ars_nouveau:glyph_light"
-			}]
+			title: "Spellcasting"
+			x: 2.0d
+			y: -7.0d
 		}
 		{
-			icon: "ars_nouveau:blank_thread"
-			x: -2.0d
-			y: -2.0d
-			subtitle: "Tailor Made"
+			dependencies: ["1DE83453655BF926"]
 			description: [
 				"Threads may be woven into a Thread Slot on applicable armor by way of the Alteration Table. "
 				""
@@ -1383,33 +1380,34 @@
 				""
 				"Do note that some Threads have different or stronger effects when applied in higher tier Thread Slots. Some, like the Thread of Gliding, require a specific level slot to be applied at all. Applying the same Thread more than once will generally have no effect. "
 			]
-			dependencies: ["1DE83453655BF926"]
+			icon: "ars_nouveau:blank_thread"
 			id: "4041414E9827EC51"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "523A8D4D80FE8B39"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			subtitle: "Tailor Made"
 			tasks: [
 				{
 					id: "69A40C89FE3DC9EC"
-					type: "item"
 					item: "ars_nouveau:alteration_table"
+					type: "item"
 				}
 				{
 					id: "72033877E069B7E5"
-					type: "item"
 					item: "ars_nouveau:blank_thread"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "523A8D4D80FE8B39"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: -2.0d
+			y: -2.0d
 		}
 		{
-			x: -4.5d
-			y: -1.5d
-			subtitle: "Darlin' it's better, down where it's wetter"
+			dependencies: ["607D671B8C399B83"]
 			description: [
 				"Though they’re often viewed with mistrust and labeled as man-eating beasts (it was just the one time, ok?), Sirens are really only interested in gathering shiny things. Once befriended, a Siren will slowly collect treasures from their watery homes, tucking them away for safe keeping. The prettier their environment, the more likely they are to share those treasures with their friends. "
 				""
@@ -1417,229 +1415,221 @@
 				""
 				"The number of wild Sirens has dwindled in recent times. If none can be found, consider summoning them with the Altar of Birthing."
 			]
-			dependencies: ["607D671B8C399B83"]
 			id: "74A25A74AD496C58"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "642BD46DC846AFF0"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			subtitle: "Darlin' it's better, down where it's wetter"
 			tasks: [{
 				id: "7B785038989991E1"
-				type: "item"
 				item: "ars_elemental:siren_charm"
+				type: "item"
 			}]
-			rewards: [{
-				id: "642BD46DC846AFF0"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: -4.5d
+			y: -1.5d
 		}
 		{
-			x: -8.5d
-			y: 3.5d
+			dependencies: ["2F5B141F17AC773B"]
 			description: [
 				"The Splash Flask Cannon is a simple device designed to further weaponize harmful potions. Any potion fed into it may be thrown as if it had been brewed into a Splash Potion. "
 				""
 				"Combined with Flasks, these can make powerful tools in combat. "
 			]
-			dependencies: ["2F5B141F17AC773B"]
 			id: "332108774E51AE83"
-			tasks: [{
-				id: "335374D3B228A88F"
-				type: "item"
-				item: {
-					id: "ars_nouveau:splash_flask_cannon"
-					Count: 1b
-					tag: {
-						potion_launcher: {
-							amountLeft: 0
-							lastSlot: 0
-							lastDataForRender: {
-								Potion: "minecraft:empty"
-							}
-						}
-					}
-				}
-			}]
 			rewards: [{
 				id: "7270CF894898E36D"
-				type: "item"
 				item: {
-					id: "ars_nouveau:potion_flask_amplify"
 					Count: 1b
+					id: "ars_nouveau:potion_flask_amplify"
 					tag: {
 						Damage: 0
 						an_potion_flask: {
-							count: 8
 							PotionData: {
-								Potion: "minecraft:strong_harming"
 								CustomPotionEffects: [{
-									"forge:id": "minecraft:poison"
 									Ambient: 0b
+									Amplifier: 1b
 									CurativeItems: [{
-										id: "minecraft:milk_bucket"
 										Count: 1b
+										id: "minecraft:milk_bucket"
 									}]
-									ShowIcon: 1b
-									ShowParticles: 1b
 									Duration: 432
 									Id: 19
-									Amplifier: 1b
+									ShowIcon: 1b
+									ShowParticles: 1b
+									"forge:id": "minecraft:poison"
 								}]
+								Potion: "minecraft:strong_harming"
 							}
+							count: 8
 						}
 					}
 				}
+				type: "item"
 			}]
+			tasks: [{
+				id: "335374D3B228A88F"
+				item: {
+					Count: 1b
+					id: "ars_nouveau:splash_flask_cannon"
+					tag: {
+						potion_launcher: {
+							amountLeft: 0
+							lastDataForRender: {
+								Potion: "minecraft:empty"
+							}
+							lastSlot: 0
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: 3.5d
 		}
 		{
-			x: -7.5d
-			y: 1.5d
-			subtitle: "Potpourri for the Soul "
+			dependencies: ["3A45AF261026B10F"]
 			description: [
 				""
 				"The Potion Diffuser greatly enhances the efficiency of potions by applying a single dose to all creatures in the area at an enhanced duration. "
 			]
-			dependencies: ["3A45AF261026B10F"]
 			id: "3AC7311898150AC1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "1048A87DBDEFDC94"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			subtitle: "Potpourri for the Soul "
 			tasks: [{
 				id: "5F4EB7F44DD20B41"
-				type: "item"
 				item: "ars_nouveau:potion_diffuser"
+				type: "item"
 			}]
-			rewards: [{
-				id: "1048A87DBDEFDC94"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				player_command: false
-			}]
+			x: -7.5d
+			y: 1.5d
 		}
 		{
-			x: -9.5d
-			y: 3.5d
+			dependencies: ["2F5B141F17AC773B"]
 			description: [
 				"A wizard in battle has no time to worry about such trivialities as quaffing a potion. The Alchemist’s Crown handles that for them. "
 				""
 				"By opening the radial menu and selecting one of the potions detected in one’s inventory, the Alchemists Crown will automatically re-apply that potion whenever it’s duration ends. By keeping a few flasks on hand, potion effects can be made to last quite a long time without needing to drink repeatedly. "
 			]
-			dependencies: ["2F5B141F17AC773B"]
 			id: "0FDFF1446802C69F"
-			tasks: [{
-				id: "475AA200641E2432"
-				type: "item"
-				item: "ars_nouveau:alchemists_crown"
-			}]
 			rewards: [{
 				id: "2E5AA852D1CA1123"
-				type: "item"
 				item: {
-					id: "ars_nouveau:potion_flask"
 					Count: 1b
+					id: "ars_nouveau:potion_flask"
 					tag: {
 						Damage: 0
 						an_potion_flask: {
-							count: 8
 							PotionData: {
-								Potion: "minecraft:long_strength"
 								CustomPotionEffects: [{
-									"forge:id": "minecraft:water_breathing"
 									Ambient: 0b
+									Amplifier: 0b
 									CurativeItems: [{
-										id: "minecraft:milk_bucket"
 										Count: 1b
+										id: "minecraft:milk_bucket"
 									}]
-									ShowIcon: 1b
-									ShowParticles: 1b
 									Duration: 9600
 									Id: 13
-									Amplifier: 0b
+									ShowIcon: 1b
+									ShowParticles: 1b
+									"forge:id": "minecraft:water_breathing"
 								}]
+								Potion: "minecraft:long_strength"
 							}
+							count: 8
 						}
 					}
 				}
+				type: "item"
 			}]
+			tasks: [{
+				id: "475AA200641E2432"
+				item: "ars_nouveau:alchemists_crown"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 3.5d
 		}
 		{
-			x: 3.5d
-			y: -1.5d
-			subtitle: "Flippin' your fins really will get you far"
-			description: ["Truly an indispensable companion to keep when exploring the depths, Sirens will grant their friends a bonus to water spells and also bestow Dolphin’s Grace upon them while swimming. "]
 			dependencies: ["7EE4A2E96D7FAD4E"]
+			description: ["Truly an indispensable companion to keep when exploring the depths, Sirens will grant their friends a bonus to water spells and also bestow Dolphin’s Grace upon them while swimming. "]
 			id: "371FB3648C3FBE1A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "053B675C08203E63"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			subtitle: "Flippin' your fins really will get you far"
 			tasks: [{
 				id: "42F027CB39F6B192"
-				type: "item"
 				item: "ars_elemental:siren_familiar"
+				type: "item"
 			}]
-			rewards: [{
-				id: "053B675C08203E63"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: 3.5d
+			y: -1.5d
 		}
 		{
-			x: 2.5d
-			y: -2.0d
-			subtitle: "Burninate the land"
-			description: ["When kept as a close companion, Flarecannon will impart some of power upon their friends, boosting fire magics and granting temporary resistance to fire.  "]
 			dependencies: ["7EE4A2E96D7FAD4E"]
+			description: ["When kept as a close companion, Flarecannon will impart some of power upon their friends, boosting fire magics and granting temporary resistance to fire.  "]
 			id: "7119FCE78917F94F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "180E24818B168713"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			subtitle: "Burninate the land"
 			tasks: [{
 				id: "545151E2B2B52B64"
-				type: "item"
 				item: "ars_elemental:firenando_familiar"
+				type: "item"
 			}]
-			rewards: [{
-				id: "180E24818B168713"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				player_command: false
-			}]
+			x: 2.5d
+			y: -2.0d
 		}
 		{
-			x: -5.5d
-			y: -2.0d
-			subtitle: "Five-Alarm Fire"
+			dependencies: ["607D671B8C399B83"]
 			description: [
 				"Powerful arcane constructs, these golems known as Flarecannon serve to protect, burning anything hostile that comes in their range. "
 				""
 				"Refer to the Worn Notebook for an in-depth guide on using Flarecannon. "
 			]
-			dependencies: ["607D671B8C399B83"]
 			id: "187802E8740E4B7F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "6AFAD8CCB8F9D632"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			subtitle: "Five-Alarm Fire"
 			tasks: [{
 				id: "2FDA844A058A00DC"
-				type: "item"
 				item: "ars_elemental:firenando_charm"
+				type: "item"
 			}]
-			rewards: [{
-				id: "6AFAD8CCB8F9D632"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -5.5d
+			y: -2.0d
 		}
 		{
-			title: "Magical Vestments"
-			icon: {
-				id: "ars_nouveau:apprentice_hood"
-				Count: 1b
-				tag: {
-					Damage: 0
-				}
-			}
-			x: -1.5d
-			y: -3.0d
-			subtitle: "I shall wear midnight"
+			dependencies: ["4CFBDE9FB821CFB6"]
 			description: [
 				"Ideal equipment for the dedicated Wizard, these magically enhanced vestments offer more than simple protection. "
 				""
@@ -1648,35 +1638,48 @@
 				"Each set of armor may be upgraded in the Enchantment Apparatus through three different tiers. At each tier, they gain more slots for accepting Threads. The recipe for upgrading the tier is shown in the Worn Notebook. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["4CFBDE9FB821CFB6"]
+			icon: {
+				Count: 1b
+				id: "ars_nouveau:apprentice_hood"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "1DE83453655BF926"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "0B82FDABF3529573"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			subtitle: "I shall wear midnight"
 			tasks: [
 				{
 					id: "08C5D78251862078"
-					type: "item"
-					title: "Magical Headgear"
 					item: {
-						id: "itemfilters:or"
 						Count: 1b
+						id: "itemfilters:or"
 						tag: {
 							items: [
 								{
+									Count: 1b
 									id: "ars_nouveau:novice_hood"
-									Count: 1b
 									tag: {
 										Damage: 0
 									}
 								}
 								{
+									Count: 1b
 									id: "ars_nouveau:apprentice_hood"
-									Count: 1b
 									tag: {
 										Damage: 0
 									}
 								}
 								{
-									id: "ars_nouveau:archmage_hood"
 									Count: 1b
+									id: "ars_nouveau:archmage_hood"
 									tag: {
 										Damage: 0
 									}
@@ -1684,33 +1687,33 @@
 							]
 						}
 					}
+					title: "Magical Headgear"
+					type: "item"
 				}
 				{
 					id: "7754A32BB5688CA8"
-					type: "item"
-					title: "Magical Robes"
 					item: {
-						id: "itemfilters:or"
 						Count: 1b
+						id: "itemfilters:or"
 						tag: {
 							items: [
 								{
+									Count: 1b
 									id: "ars_nouveau:novice_robes"
-									Count: 1b
 									tag: {
 										Damage: 0
 									}
 								}
 								{
+									Count: 1b
 									id: "ars_nouveau:apprentice_robes"
-									Count: 1b
 									tag: {
 										Damage: 0
 									}
 								}
 								{
-									id: "ars_nouveau:archmage_robes"
 									Count: 1b
+									id: "ars_nouveau:archmage_robes"
 									tag: {
 										Damage: 0
 									}
@@ -1718,33 +1721,33 @@
 							]
 						}
 					}
+					title: "Magical Robes"
+					type: "item"
 				}
 				{
 					id: "594A35F493503445"
-					type: "item"
-					title: "Magical Pants"
 					item: {
-						id: "itemfilters:or"
 						Count: 1b
+						id: "itemfilters:or"
 						tag: {
 							items: [
 								{
+									Count: 1b
 									id: "ars_nouveau:novice_leggings"
-									Count: 1b
 									tag: {
 										Damage: 0
 									}
 								}
 								{
+									Count: 1b
 									id: "ars_nouveau:apprentice_leggings"
-									Count: 1b
 									tag: {
 										Damage: 0
 									}
 								}
 								{
-									id: "ars_nouveau:archmage_leggings"
 									Count: 1b
+									id: "ars_nouveau:archmage_leggings"
 									tag: {
 										Damage: 0
 									}
@@ -1752,33 +1755,33 @@
 							]
 						}
 					}
+					title: "Magical Pants"
+					type: "item"
 				}
 				{
 					id: "1CB353D57CB8447F"
-					type: "item"
-					title: "Magical Boots"
 					item: {
-						id: "itemfilters:or"
 						Count: 1b
+						id: "itemfilters:or"
 						tag: {
 							items: [
 								{
+									Count: 1b
 									id: "ars_nouveau:novice_boots"
-									Count: 1b
 									tag: {
 										Damage: 0
 									}
 								}
 								{
+									Count: 1b
 									id: "ars_nouveau:apprentice_boots"
-									Count: 1b
 									tag: {
 										Damage: 0
 									}
 								}
 								{
-									id: "ars_nouveau:archmage_boots"
 									Count: 1b
+									id: "ars_nouveau:archmage_boots"
 									tag: {
 										Damage: 0
 									}
@@ -1786,21 +1789,16 @@
 							]
 						}
 					}
+					title: "Magical Boots"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "0B82FDABF3529573"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			title: "Magical Vestments"
+			x: -1.5d
+			y: -3.0d
 		}
 		{
-			icon: "ars_nouveau:ritual_awakening"
-			x: 2.5d
-			y: 3.0d
+			dependencies: ["2CFCF5AFECE471E7"]
 			description: [
 				"Golems have long been used by those of sorcerous ability to assist them in their work. With a Tablet of Awakening, an experienced mage may bring a form of sentience to Archwood Trees and Budding Amethyst. The resulting creatures are known as Weald Walkers and Amethyst Golems, respectively."
 				""
@@ -1808,33 +1806,33 @@
 				""
 				"Amethyst Golems, meanwhile, are more fastidious in nature, gently caring for and harvesting Amethyst from nearby Budding Amethyst. Normal Amethyst blocks in their charge may even be made to bud and grow more.    "
 			]
-			dependencies: ["2CFCF5AFECE471E7"]
+			icon: "ars_nouveau:ritual_awakening"
 			id: "449A56DADABF7ABD"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "3047EFF4240BBC13"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "2AB5E8ADCF71D9C9"
-					type: "item"
 					item: "ars_nouveau:ritual_awakening"
+					type: "item"
 				}
 				{
 					id: "7B469A83BA2B79F1"
-					type: "item"
 					item: "ars_nouveau:amethyst_golem_charm"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "3047EFF4240BBC13"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: 2.5d
+			y: 3.0d
 		}
 		{
-			x: 2.5d
-			y: 1.0d
-			subtitle: "Modern problems require modern solutions"
+			dependencies: ["2CFCF5AFECE471E7"]
 			description: [
 				"Working with others can be a messy business. Wizards of old spent a great deal of time and effort trying to keep their Drygmies and Villager friends safe from harm. Containment Jars offer a modern solution to this age-old problem. "
 				""
@@ -1844,104 +1842,103 @@
 				""
 				"Naturally, this also makes an excellent means of transport as well, as the jars may be picked up and moved around freely. To release a creature from the Jar, simply cast Dispel upon it. "
 			]
-			dependencies: ["2CFCF5AFECE471E7"]
 			id: "4A98AB6062E1016E"
+			rewards: [{
+				count: 4
+				id: "7751B545CC281892"
+				item: "ars_nouveau:mob_jar"
+				type: "item"
+			}]
+			subtitle: "Modern problems require modern solutions"
 			tasks: [{
 				id: "07ABAA451789ABF2"
-				type: "item"
 				item: "ars_nouveau:ritual_containment"
-			}]
-			rewards: [{
-				id: "7751B545CC281892"
 				type: "item"
-				item: "ars_nouveau:mob_jar"
-				count: 4
 			}]
+			x: 2.5d
+			y: 1.0d
 		}
 		{
-			icon: "ars_nouveau:summon_focus"
-			x: -1.0d
-			y: -2.0d
-			subtitle: "Focus Pocus"
+			dependencies: ["4FFD31414D5F69E6"]
 			description: [
 				"When a wizard chooses to specialize in a particular school of magic, often they will invest in a Focus to enhance their chosen school. "
 				""
 				"Equipped in a dedicated Curio slot, each focus grants unique boons to their school which are detailed in the Worn Notebook. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["4FFD31414D5F69E6"]
+			icon: "ars_nouveau:summon_focus"
 			id: "3A8F34144B6F22CB"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "19CF0E8800F47D68"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			subtitle: "Focus Pocus"
 			tasks: [{
 				id: "04CE1812FA0E4AD3"
-				type: "item"
-				title: "Spell Focuses"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "ars_elemental:lesser_fire_focus"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_elemental:lesser_water_focus"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_elemental:lesser_air_focus"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_elemental:lesser_earth_focus"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_nouveau:shapers_focus"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_elemental:fire_focus"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_elemental:water_focus"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_elemental:air_focus"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_elemental:earth_focus"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "ars_elemental:necrotic_focus"
-								Count: 1b
 							}
 							{
-								id: "ars_nouveau:summon_focus"
 								Count: 1b
+								id: "ars_nouveau:summon_focus"
 							}
 						]
 					}
 				}
+				title: "Spell Focuses"
+				type: "item"
 			}]
-			rewards: [{
-				id: "19CF0E8800F47D68"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: -1.0d
+			y: -2.0d
 		}
 		{
-			icon: "ars_nouveau:scryers_oculus"
-			x: -3.0d
-			y: -2.0d
-			subtitle: "You Lookin’ at Me Lookin’ at You"
+			dependencies: ["4FFD31414D5F69E6"]
 			description: [
 				"On occasion, it can be quite helpful to be able to see into an area without being there in person. Especially environments that may pose a hazard to the person. "
 				""
@@ -1950,165 +1947,165 @@
 				"Place a Scry Crystal in the location to be monitored, Right-Click it with a Blank Parchment to record the location and place the resulting Scryer’s Scroll on a pedestal near the Oculus. When approached, the Oculus allows the Wizard to select from any of the nearby Scrolls to view the location. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["4FFD31414D5F69E6"]
+			icon: "ars_nouveau:scryers_oculus"
 			id: "5A14F3DE74BAE772"
+			rewards: [{
+				count: 8
+				id: "7C628AA54064F06A"
+				item: "ars_nouveau:blank_parchment"
+				type: "item"
+			}]
+			subtitle: "You Lookin’ at Me Lookin’ at You"
 			tasks: [
 				{
 					id: "0E5841B9C906D0EF"
-					type: "item"
 					item: "ars_nouveau:scryers_oculus"
+					type: "item"
 				}
 				{
 					id: "5DA09289E7D32890"
-					type: "item"
 					item: "ars_nouveau:scryers_crystal"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "7C628AA54064F06A"
-				type: "item"
-				item: "ars_nouveau:blank_parchment"
-				count: 8
-			}]
+			x: -3.0d
+			y: -2.0d
 		}
 		{
-			title: "Starbuncle Logistics"
-			x: -3.5d
-			y: 1.0d
+			dependencies: ["06AFFA588E4FFAAD"]
 			description: [
 				"In addition to transporting items and looking stylish, Starbuncles may be given a few additional accessories to further enhance their abilities. "
 				""
 				"Configuring their pickup and drop off locations remains the same as with Items; by using a Dominion Wand after equipping them with the appropriate accessory. "
 			]
-			dependencies: ["06AFFA588E4FFAAD"]
 			id: "77B0AD19B44B8660"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "2A9F65EAFE5906AE"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "067A9588CB5F4392"
-				type: "item"
 				item: "ars_nouveau:starbuncle_shards"
+				type: "item"
 			}]
-			rewards: [{
-				id: "2A9F65EAFE5906AE"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				player_command: false
-			}]
+			title: "Starbuncle Logistics"
+			x: -3.5d
+			y: 1.0d
 		}
 		{
-			x: -3.5d
-			y: 2.0d
-			subtitle: "Watt is love? Baby don't hertz me, n-ohm-ore"
-			description: ["A tiny little backpack for transporting FE from place to place. "]
 			dependencies: ["77B0AD19B44B8660"]
+			description: ["A tiny little backpack for transporting FE from place to place. "]
 			id: "326B424F3311AAB8"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "71B1B07111E7AB15"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			subtitle: "Watt is love? Baby don't hertz me, n-ohm-ore"
 			tasks: [{
 				id: "6B408FACAC10404D"
-				type: "item"
 				item: "starbunclemania:star_battery"
+				type: "item"
 			}]
-			rewards: [{
-				id: "71B1B07111E7AB15"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: -3.5d
+			y: 2.0d
 		}
 		{
-			x: -2.5d
-			y: 1.5d
-			subtitle: "Looking a little sloshed"
-			description: ["Sealed to prevent spillages, the Starbucket allows the Starbuncle to transport any fluid. "]
 			dependencies: ["77B0AD19B44B8660"]
+			description: ["Sealed to prevent spillages, the Starbucket allows the Starbuncle to transport any fluid. "]
 			id: "68ADCCBF744B41A9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "7DDA37A921481C1B"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			subtitle: "Looking a little sloshed"
 			tasks: [{
 				id: "1C01B6DC32E32717"
-				type: "item"
 				item: "starbunclemania:star_bucket"
+				type: "item"
 			}]
-			rewards: [{
-				id: "7DDA37A921481C1B"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: -2.5d
+			y: 1.5d
 		}
 		{
-			x: -4.5d
-			y: 1.5d
-			subtitle: "Let's not get carried away"
-			description: ["With a Starballon in tow, a Starbuncle may transport Mekanism gasses from place to place. "]
 			dependencies: ["77B0AD19B44B8660"]
+			description: ["With a Starballon in tow, a Starbuncle may transport Mekanism gasses from place to place. "]
 			id: "7E98C35AE5FE4968"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "27D2395B64750346"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			subtitle: "Let's not get carried away"
 			tasks: [{
 				id: "62762CA7EC7F9F1C"
-				type: "item"
 				item: "starbunclemania:star_balloon"
+				type: "item"
 			}]
-			rewards: [{
-				id: "27D2395B64750346"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: -4.5d
+			y: 1.5d
 		}
 		{
-			x: -8.0d
-			y: 2.5d
+			dependencies: ["3A45AF261026B10F"]
 			description: [
 				"Though suitable for any fluid, Fluid Containment Jars are particularly useful for working with Potions. "
 				""
 				"When fluid potions made by other mods such as Create, Hexerei, Thermal, or Immersive Engineering are stored in a Containment Jar, they’ll automatically be deposited into a Potion Jar placed atop it. Meaning any potion may be easily converted for use in devices such as Potion Melders or other alchemical tools offered by Ars Nouveau."
 			]
-			dependencies: ["3A45AF261026B10F"]
 			id: "681753F1F4851479"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "102B3BDDD0DF27CF"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
 			tasks: [{
 				id: "0F74DECA21A5928E"
-				type: "item"
 				item: "starbunclemania:fluid_jar"
+				type: "item"
 			}]
-			rewards: [{
-				id: "102B3BDDD0DF27CF"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: -8.0d
+			y: 2.5d
 		}
 		{
-			x: -4.5d
-			y: -5.0d
-			subtitle: "Source Reserves"
-			description: ["A simple device used for converting Source in its natural form to a more… fluid state, allowing it to be moved around by way of pipes or other conveyances. "]
 			dependencies: ["302C5405A92ABA2B"]
+			description: ["A simple device used for converting Source in its natural form to a more… fluid state, allowing it to be moved around by way of pipes or other conveyances. "]
 			id: "427D01EAD70B7A13"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "0091925FA6883E6C"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			subtitle: "Source Reserves"
 			tasks: [{
 				id: "42AFE3C39ABFFBDB"
-				type: "item"
 				item: "starbunclemania:source_condenser"
+				type: "item"
 			}]
-			rewards: [{
-				id: "0091925FA6883E6C"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: -4.5d
+			y: -5.0d
 		}
 		{
-			title: "Energy Conversion"
-			x: -2.0d
-			y: -4.5d
-			shape: "hexagon"
+			dependencies: ["4FFD31414D5F69E6"]
 			description: [
 				"Once thought to be entirely separate, the magical energies know as Source, Aura, and FE are in fact all facets of the same energy. By making use of special crystals, it becomes possible to convert between them with ease. "
 				""
@@ -2117,73 +2114,75 @@
 				"Resonating Crystals, on the other hand, set up an internal resonance with FE, converting it back into Source or Aura. If a Source Jar is near enough, it will send it there. If there is no jar, or if it is 100% full, the Resonating Crystal will instead convert the incoming FE to Aura and diffuse it into the atmosphere. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["4FFD31414D5F69E6"]
-			min_width: 300
 			id: "2FA7B9ED0D86A30B"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "3F0E66EDE94551C5"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "1A220D095E91A581"
-					type: "item"
-					title: "Pulsating Crystals"
 					item: {
-						id: "itemfilters:or"
 						Count: 1b
+						id: "itemfilters:or"
 						tag: {
 							items: [
 								{
+									Count: 1b
 									id: "enigmaticunity:dim_source_generator"
-									Count: 1b
 								}
 								{
+									Count: 1b
 									id: "enigmaticunity:bright_source_generator"
-									Count: 1b
 								}
 								{
-									id: "enigmaticunity:iridescent_source_generator"
 									Count: 1b
+									id: "enigmaticunity:iridescent_source_generator"
 								}
 							]
 						}
 					}
+					title: "Pulsating Crystals"
+					type: "item"
 				}
 				{
 					id: "24A06FE9C1226158"
-					type: "item"
-					title: "Resonating Crystals"
 					item: {
-						id: "itemfilters:or"
 						Count: 1b
+						id: "itemfilters:or"
 						tag: {
 							items: [
 								{
+									Count: 1b
 									id: "enigmaticunity:dim_source_producer"
-									Count: 1b
 								}
 								{
+									Count: 1b
 									id: "enigmaticunity:bright_source_producer"
-									Count: 1b
 								}
 								{
-									id: "enigmaticunity:iridescent_source_producer"
 									Count: 1b
+									id: "enigmaticunity:iridescent_source_producer"
 								}
 							]
 						}
 					}
+					title: "Resonating Crystals"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "3F0E66EDE94551C5"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			title: "Energy Conversion"
+			x: -2.0d
+			y: -4.5d
 		}
 		{
-			x: -6.0d
-			y: 1.5d
+			dependencies: ["15CB1C35BC808088"]
 			description: [
 				"The Storage Lectern is the central access point for Bookwyrm based storage. Place one down anywhere and Right-Click one or more Bookwyrm Charms onto it to bind them to the Lectern."
 				""
@@ -2199,24 +2198,24 @@
 				""
 				"Finally, it should be mentioned that any unbound inventory placed directly adjacent to a Lectern will act as an input for the entire system. Any items that find their way into this inventory will be automatically sorted out to linked inventories by the Bookwyrms. This works for remote Lecterns as well. Items may also be inserted directly into the Lectern via hoppers or other automated logistics. "
 			]
-			dependencies: ["15CB1C35BC808088"]
-			min_width: 300
 			id: "6522618A9434DD3E"
+			min_width: 300
+			rewards: [{
+				count: 9
+				id: "0CEA9BE8AEBABDBE"
+				item: "create:item_vault"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4A2087F85123CECE"
-				type: "item"
 				item: "ars_nouveau:storage_lectern"
-			}]
-			rewards: [{
-				id: "0CEA9BE8AEBABDBE"
 				type: "item"
-				item: "create:item_vault"
-				count: 9
 			}]
+			x: -6.0d
+			y: 1.5d
 		}
 		{
-			x: -6.5d
-			y: 2.5d
+			dependencies: ["6522618A9434DD3E"]
 			description: [
 				"The Repository is a special block that can hold as much as a Double Chest in a single block space. Unlike a standard Chest, however, they retain their name when broken. This ties in nicely with another feature of the Lectern: Named Tabs"
 				""
@@ -2224,25 +2223,25 @@
 				""
 				"This feature works with any inventory that can be named in an Anvil, however, it works best with those that retain their name on pickup to avoid having to rename them. Some other examples include Shulker Boxes, Smart Chests, Reinforced Chests, Wooden Storage Crates, and Reinforced Storage Crates to name a few. "
 			]
-			dependencies: ["6522618A9434DD3E"]
 			id: "7D0050E47F61A2EE"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "713E65CAD400D0B1"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
 			tasks: [{
 				id: "626B703D635A79AE"
-				type: "item"
 				item: "ars_nouveau:repository"
+				type: "item"
 			}]
-			rewards: [{
-				id: "713E65CAD400D0B1"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: -6.5d
+			y: 2.5d
 		}
 		{
-			x: -5.5d
-			y: 2.5d
+			dependencies: ["6522618A9434DD3E"]
 			description: [
 				"Display Cases are a simple Redstone device to read the contents of an inventory. They may be linked to any inventory or even a Storage Lectern and can output a signal when the configured item is either above or below a defined threshold. "
 				""
@@ -2254,22 +2253,23 @@
 				""
 				"To invert the signal, Sneak Right-Click the Case with the Dominion Wand."
 			]
-			dependencies: ["6522618A9434DD3E"]
 			id: "08CE1E56A1401A65"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "6CE800DF409875BD"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
 			tasks: [{
 				id: "265E41B9D5342FBE"
-				type: "item"
 				item: "ars_nouveau:item_detector"
+				type: "item"
 			}]
-			rewards: [{
-				id: "6CE800DF409875BD"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
-				player_command: false
-			}]
+			x: -5.5d
+			y: 2.5d
 		}
 	]
-	quest_links: [ ]
+	title: "Ars Nouveau"
 }

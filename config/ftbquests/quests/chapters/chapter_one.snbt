@@ -1,86 +1,85 @@
 {
-	id: "2E4E08D773CFD9CF"
-	group: "2FE70BF4886F08F4"
-	order_index: 0
-	filename: "chapter_one"
-	title: "Chapter One"
-	icon: "naturesaura:ancient_sapling"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_one"
+	group: "2FE70BF4886F08F4"
+	icon: "naturesaura:ancient_sapling"
+	id: "2E4E08D773CFD9CF"
+	order_index: 0
+	quest_links: [ ]
 	quests: [
 		{
-			title: "Basic Metallurgy"
-			x: -0.5d
-			y: -7.5d
-			shape: "hexagon"
+			dependencies: ["2CCCDD05AED3153F"]
 			description: [
 				"The Wilden Grove practiced a particular form of druidic magic that would slowly draw materials from deep in the earth up into mounds where they could be easily extracted with minimal harm to the land. "
 				""
 				"Undoubtedly many of these mounds remain. Seek them out, though beware that in the absence of the Grove, others may have claimed these places for themselves. "
 			]
-			dependencies: ["2CCCDD05AED3153F"]
 			hide: true
 			id: "1075F3BAA03841EF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "60A777DE4B85ED0F"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "661311DE367A692A"
-					type: "item"
 					item: "minecraft:raw_gold"
+					type: "item"
 				}
 				{
 					id: "2BF19C51CB184E04"
-					type: "item"
 					item: "minecraft:raw_copper"
+					type: "item"
 				}
 				{
 					id: "17CF16620C377879"
-					type: "item"
 					item: "emendatusenigmatica:raw_silver"
+					type: "item"
 				}
 				{
 					id: "6C4462B5BE32C471"
-					type: "item"
 					item: "emendatusenigmatica:raw_tin"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "60A777DE4B85ED0F"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				player_command: false
-			}]
+			title: "Basic Metallurgy"
+			x: -0.5d
+			y: -7.5d
 		}
 		{
-			x: -3.5d
-			y: -7.5d
-			shape: "hexagon"
+			dependencies: ["2CCCDD05AED3153F"]
 			description: [
 				"Strange. At one time, this fen was kept by the Wilden Grove, a circle of druids sworn to preserve and watch over the surrounding wildlands. Yet no sign remains and creature such as this Naga now terrorize the lands. "
 				""
 				"With its defeat, the Fae that call this place home will undoubtedly show their gratitude. "
 			]
-			dependencies: ["2CCCDD05AED3153F"]
 			hide: true
 			id: "73CDA6ED2393DE42"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "3526846CB76A8242"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "34B9CD591F64D0B0"
-				type: "item"
 				item: "twilightforest:naga_trophy"
+				type: "item"
 			}]
-			rewards: [{
-				id: "3526846CB76A8242"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				player_command: false
-			}]
+			x: -3.5d
+			y: -7.5d
 		}
 		{
-			x: -2.0d
-			y: -3.5d
+			dependencies: ["66A59B3CD77FB54A"]
 			description: [
 				"By distilling down various natural ingredients, their energies may be tapped more easily. "
 				""
@@ -88,94 +87,96 @@
 				""
 				"Use the Mixing Cauldron to brew up some Potions of Ancient Knowledge, or any other potions you find interesting. Once brewed, they may be bottled by Right-Clicking the Cauldron with glass bottles. "
 			]
-			dependencies: ["66A59B3CD77FB54A"]
 			id: "66585A158F41DE44"
-			tasks: [{
-				id: "2CE5B9F18EE99393"
-				type: "item"
-				item: "hexerei:mixing_cauldron"
-			}]
 			rewards: [
 				{
-					id: "7447FA9138D4E94E"
-					type: "command"
-					title: "Alchemist's Delight"
-					icon: "kubejs:alchemists_delight"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "7447FA9138D4E94E"
 					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
 				}
 				{
-					id: "21542AAE9A1153D2"
-					type: "command"
-					title: "Sorcerer's Delight"
-					icon: "kubejs:sorcerers_delight"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "21542AAE9A1153D2"
 					player_command: false
+					title: "Sorcerer's Delight"
+					type: "command"
 				}
 			]
+			tasks: [{
+				id: "2CE5B9F18EE99393"
+				item: "hexerei:mixing_cauldron"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
 		}
 		{
-			x: -4.5d
-			y: -6.5d
+			dependencies: ["438EA01F776992AD"]
 			description: [
 				"These lands have flourished for millennia under the stewardship of the Grove and despite their absence, great power remains concentrated here. "
 				""
 				"The key to harvesting those energies starts in the trees. Craft some Brilliant Fiber in a Mortar and weave it among the leaves of any tree. As it takes hold, the leaves will be transformed, allowing Gold Leaf to be harvested.   "
 			]
 			hide_dependency_lines: true
-			dependencies: ["438EA01F776992AD"]
 			id: "69D302194D4262C6"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "55D3BB51B2164167"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "2DA048F9BCBFD749"
-					type: "item"
 					item: "naturesaura:gold_fiber"
+					type: "item"
 				}
 				{
 					id: "1F57FC2A2FF93F98"
-					type: "item"
 					item: "naturesaura:gold_leaf"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "55D3BB51B2164167"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -4.5d
+			y: -6.5d
 		}
 		{
-			title: "Ritual of the Forest"
-			x: -4.5d
-			y: -5.5d
+			dependencies: ["69D302194D4262C6"]
 			description: [
 				"Right-Click the Gold Leaves on any Log to transform it into the Wooden Stands required for the Ritual of the Forest. "
 				""
 				"Refer to the Book of Natural Aura for a visual representation of this structure and an explanation on its use. "
 			]
-			dependencies: ["69D302194D4262C6"]
 			id: "7224985826C6E047"
-			tasks: [{
-				id: "0E70C7E5D5B0E9EE"
-				type: "item"
-				item: "naturesaura:wood_stand"
-				count: 8L
-			}]
 			rewards: [{
-				id: "5AD0129D68FCCE54"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "5AD0129D68FCCE54"
 				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
 			}]
+			tasks: [{
+				count: 8L
+				id: "0E70C7E5D5B0E9EE"
+				item: "naturesaura:wood_stand"
+				type: "item"
+			}]
+			title: "Ritual of the Forest"
+			x: -4.5d
+			y: -5.5d
 		}
 		{
-			title: "Druidic Roots"
-			x: -3.5d
-			y: -5.0d
+			dependencies: [
+				"7224985826C6E047"
+				"73CDA6ED2393DE42"
+			]
 			description: [
 				"With the seeds, herbs, and saplings found among the Naga’s remains, its time to take root, so to speak, and lay out a garden. "
 				""
@@ -188,100 +189,96 @@
 				"Two types of Ancient Sapling may also be obtained through this ritual, with both offering unique benefits. "
 				"The wood of the pink sapling concentrates magical energies into it, making it useful for some devices. While the yellow variety’s fruits seem to carry with them the memories of those who’ve come before."
 			]
-			dependencies: [
-				"7224985826C6E047"
-				"73CDA6ED2393DE42"
-			]
-			min_width: 300
 			id: "66A59B3CD77FB54A"
-			tasks: [
-				{
-					id: "2649AB826D733E83"
-					type: "item"
-					item: "ars_nouveau:blue_archwood_sapling"
-				}
-				{
-					id: "6CBD1763D39C82C8"
-					type: "item"
-					item: "ars_nouveau:purple_archwood_sapling"
-				}
-				{
-					id: "4C0727B5BC2D1D96"
-					type: "item"
-					item: "ars_nouveau:green_archwood_sapling"
-				}
-				{
-					id: "7248E662C073F24E"
-					type: "item"
-					item: "ars_nouveau:red_archwood_sapling"
-				}
-				{
-					id: "439C281D06B2DB3A"
-					type: "item"
-					item: "ars_elemental:yellow_archwood_sapling"
-				}
-				{
-					id: "07E22FE463B8A021"
-					type: "item"
-					item: "quark:ancient_sapling"
-				}
-				{
-					id: "289800F347137F48"
-					type: "item"
-					item: "naturesaura:ancient_sapling"
-				}
-			]
+			min_width: 300
 			rewards: [{
 				id: "7BE2B86F33268C1A"
-				type: "item"
 				item: {
-					id: "minecraft:potion"
 					Count: 1b
+					id: "minecraft:potion"
 					tag: {
 						Potion: "apotheosis:knowledge"
 					}
 				}
+				type: "item"
 			}]
+			tasks: [
+				{
+					id: "2649AB826D733E83"
+					item: "ars_nouveau:blue_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "6CBD1763D39C82C8"
+					item: "ars_nouveau:purple_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "4C0727B5BC2D1D96"
+					item: "ars_nouveau:green_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "7248E662C073F24E"
+					item: "ars_nouveau:red_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "439C281D06B2DB3A"
+					item: "ars_elemental:yellow_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "07E22FE463B8A021"
+					item: "quark:ancient_sapling"
+					type: "item"
+				}
+				{
+					id: "289800F347137F48"
+					item: "naturesaura:ancient_sapling"
+					type: "item"
+				}
+			]
+			title: "Druidic Roots"
+			x: -3.5d
+			y: -5.0d
 		}
 		{
-			x: -5.0d
-			y: -3.5d
+			dependencies: ["66A59B3CD77FB54A"]
 			description: [
 				"Though slow at first, the Imbuement Chamber will be of great assistance in restoring the Tree of Life. Not only for condensing Source Gems, which have many uses of their own, but in obtaining the Elemental Essences as well; mastering these essences will allow the tree to be regrown. "
 				""
 				"The focus items placed on pedestals nearby are never consumed and act merely as a key to determine the result."
 			]
-			dependencies: ["66A59B3CD77FB54A"]
 			id: "4830632A0E6E9651"
-			tasks: [{
-				id: "75091A94E9106B4D"
-				type: "item"
-				item: "ars_nouveau:imbuement_chamber"
-			}]
 			rewards: [
 				{
-					id: "552050622E3679AC"
-					type: "command"
-					title: "Alchemist's Delight"
-					icon: "kubejs:alchemists_delight"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "552050622E3679AC"
 					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
 				}
 				{
-					id: "6F2498DE79248A40"
-					type: "command"
-					title: "Sorcerer's Delight"
-					icon: "kubejs:sorcerers_delight"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "6F2498DE79248A40"
 					player_command: false
+					title: "Sorcerer's Delight"
+					type: "command"
 				}
 			]
+			tasks: [{
+				id: "75091A94E9106B4D"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.5d
 		}
 		{
-			title: "Straight from the Source"
-			icon: "ars_nouveau:alchemical_sourcelink"
-			x: -2.0d
-			y: -1.5d
+			dependencies: ["6DBB9A9F698FA7B9"]
 			description: [
 				"An Alchemical Sourcelink will allow converting potions into more contained and portable magical energy, Source, which can be transmitted and manipulated quite easily, making it ideal for many focused magical pursuits. "
 				""
@@ -289,152 +286,153 @@
 				""
 				"Be sure to send some to a Source Jar near that Imbuement Chamber to get it operating faster too!"
 			]
-			dependencies: ["6DBB9A9F698FA7B9"]
+			icon: "ars_nouveau:alchemical_sourcelink"
 			id: "4BC2557232FAAC68"
+			rewards: [
+				{
+					count: 4
+					id: "1D87D734DBE1C1C5"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3E0A8F950EC660CC"
+					item: "ars_nouveau:relay"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "5414F5E5DBF5FCA4"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "25AAA83BADC6C276"
+					player_command: false
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
 			tasks: [
 				{
 					id: "7E588C3E5E9F189A"
-					type: "item"
 					item: "ars_nouveau:alchemical_sourcelink"
+					type: "item"
 				}
 				{
 					id: "01B64EB17008EF24"
-					type: "item"
 					item: "ars_nouveau:potion_jar"
+					type: "item"
 				}
 				{
 					id: "7E9ACE7C84B7A434"
-					type: "item"
 					item: "ars_nouveau:arcane_pedestal"
+					type: "item"
 				}
 			]
-			rewards: [
-				{
-					id: "1D87D734DBE1C1C5"
-					type: "item"
-					item: "ars_nouveau:source_jar"
-					count: 4
-				}
-				{
-					id: "3E0A8F950EC660CC"
-					type: "item"
-					item: "ars_nouveau:relay"
-					count: 4
-				}
-				{
-					id: "5414F5E5DBF5FCA4"
-					type: "command"
-					title: "Alchemist's Delight"
-					icon: "kubejs:alchemists_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-					player_command: false
-				}
-				{
-					id: "25AAA83BADC6C276"
-					type: "command"
-					title: "Sorcerer's Delight"
-					icon: "kubejs:sorcerers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-					player_command: false
-				}
-			]
+			title: "Straight from the Source"
+			x: -2.0d
+			y: -1.5d
 		}
 		{
-			x: -2.5d
-			y: -2.5d
-			description: ["Processing Iron is incredibly difficult and will take far more advanced arcane machinery to properly extract pure Iron from ore. By fusing it into a living amalgam known as Ironwood, however, it can be used for a variety of magical processes.  "]
 			dependencies: ["66585A158F41DE44"]
+			description: ["Processing Iron is incredibly difficult and will take far more advanced arcane machinery to properly extract pure Iron from ore. By fusing it into a living amalgam known as Ironwood, however, it can be used for a variety of magical processes.  "]
 			id: "6DBB9A9F698FA7B9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "2AACED085E11A317"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "16597A295DCF16BB"
-				type: "item"
 				item: "twilightforest:ironwood_ingot"
+				type: "item"
 			}]
-			rewards: [{
-				id: "2AACED085E11A317"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -2.5d
+			y: -2.5d
 		}
 		{
-			x: -3.5d
-			y: -1.5d
-			description: ["Obtain a bottle of Sunlight and Right-Click a block of Ironwood to convert it to a Natural Altar. Be sure to build the rest of the required structure as well."]
 			dependencies: ["6DBB9A9F698FA7B9"]
+			description: ["Obtain a bottle of Sunlight and Right-Click a block of Ironwood to convert it to a Natural Altar. Be sure to build the rest of the required structure as well."]
 			id: "4B874AA448FF4C7A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "0C7A8D2CC69903DE"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "210D29FCB8E3D805"
-				type: "item"
 				item: "naturesaura:nature_altar"
+				type: "item"
 			}]
-			rewards: [{
-				id: "0C7A8D2CC69903DE"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: -3.5d
+			y: -1.5d
 		}
 		{
-			x: -4.5d
-			y: -2.5d
-			description: ["By balancing the outward force of Aura with the inward crushing of this spell, we’re able to reach a stable equilibrium that is strong and durable enough to assist in advanced metallurgy: Compressed Stone."]
 			dependencies: ["4830632A0E6E9651"]
+			description: ["By balancing the outward force of Aura with the inward crushing of this spell, we’re able to reach a stable equilibrium that is strong and durable enough to assist in advanced metallurgy: Compressed Stone."]
 			id: "79B755D0BDB6A8B7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "0E5BD92301912FBE"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "03C5CEE9CEF3B241"
-				type: "item"
 				item: "pneumaticcraft:compressed_stone"
+				type: "item"
 			}]
-			rewards: [{
-				id: "0E5BD92301912FBE"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -4.5d
+			y: -2.5d
 		}
 		{
-			icon: "pneumaticcraft:flux_compressor"
-			x: -2.5d
-			y: 0.0d
+			dependencies: ["3B372F597A05E777"]
 			description: [
 				"A Blitz is bound into this device by way of Gythia’s Perpetual Geas and uses the supplied magical energies to generate enormous volumes of air."
 				" "
 				"Be mindful of the heat the device produces, however, as the Blitz must remain cool to function efficiently. "
 			]
-			dependencies: ["3B372F597A05E777"]
+			icon: "pneumaticcraft:flux_compressor"
 			id: "0DB07D1C824BFEA8"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "57ADEBF0E1DBCB92"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "438CB309DA6F1D4D"
-					type: "item"
 					item: "pneumaticcraft:flux_compressor"
+					type: "item"
 				}
 				{
 					id: "42ABEC342B377FCE"
-					type: "item"
 					item: "pneumaticcraft:heat_sink"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "57ADEBF0E1DBCB92"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: -2.5d
+			y: 0.0d
 		}
 		{
-			icon: "pneumaticcraft:pressure_chamber_interface"
-			x: -1.5d
-			y: 1.0d
+			dependencies: ["0DB07D1C824BFEA8"]
 			description: [
 				"The Pressure Chamber is a crucial arcane construct, used in many applications, from extracting Aluminum from Kaolin Clay, to crafting potent ensorcelled projectiles, and many more in between."
 				""
@@ -446,32 +444,33 @@
 				""
 				"Meanwhile, using one on a Regulator Tube Module allows fine tuning when it comes to the amount of pressure allowed through a tube system. "
 			]
-			dependencies: ["0DB07D1C824BFEA8"]
+			icon: "pneumaticcraft:pressure_chamber_interface"
 			id: "75C38D71F1A04EB4"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "06361DBAF7993B53"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "50FD357FF5C33713"
-					type: "item"
 					item: "pneumaticcraft:pressure_chamber_interface"
+					type: "item"
 				}
 				{
 					id: "0DE304F85997C797"
-					type: "item"
 					item: "pneumaticcraft:module_expansion_card"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "06361DBAF7993B53"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: -1.5d
+			y: 1.0d
 		}
 		{
-			x: -3.5d
-			y: -0.5d
+			dependencies: ["4B874AA448FF4C7A"]
 			description: [
 				"The Cult of the Ur-Ghast, foolish as they were, were not far off in their research. Carminite has excellent arcane resonance, but the Redstone they coupled it with was too strong of a moderator. The resulting superradiant instability quickly became too much for their contraption to manage. "
 				""
@@ -479,31 +478,28 @@
 				""
 				"================================================"
 				""
-				"Enigmatic Unity’s Pulsating Crystals serve as the basis for generating most FE, though a few other methods are still available. They require a Source Jar nearby from which they’ll periodically draw a quantity of Source, converting it into FE. If there is any Aura present when this happens, a portion of Aura will also be consumed, generating far more FE in the process. "
+				"Enigmatic Unity’s Pulsating Crystals serve as the basis for generating most FE, though a few other methods are available. They require a Source Jar nearby from which they’ll periodically draw a quantity of Source, converting it into FE. If there is any Aura present when this happens, a portion of Aura will also be consumed, generating far more FE in the process. "
 			]
-			dependencies: ["4B874AA448FF4C7A"]
-			min_width: 300
 			id: "3B372F597A05E777"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "63EC6BE1C18F9E9A"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "77D74CEE62130A5B"
-				type: "item"
 				item: "enigmaticunity:dim_source_generator"
+				type: "item"
 			}]
-			rewards: [{
-				id: "63EC6BE1C18F9E9A"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: -3.5d
+			y: -0.5d
 		}
 		{
-			title: "Applied Energistics"
-			icon: "ae2:energy_acceptor"
-			x: 2.0d
-			y: -0.5d
-			shape: "hexagon"
+			dependencies: ["3B372F597A05E777"]
 			description: [
 				"There’s far more to magic than just the showy bits of wiggling one’s fingers and making sparkly lights. Indeed, a great deal can be done through the arcane arts with the right materials and processes. "
 				""
@@ -515,43 +511,40 @@
 				"Construct an Ad Hoc ME network consisting of an Energy Acceptor, an ME Crafting Terminal, and one or more ME Storage Buses. Consider combining these with Functional Storage or Sophisticated Storage controllers to make the most out of the limited number of channels. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["3B372F597A05E777"]
+			icon: "ae2:energy_acceptor"
 			id: "4FEF700D65A68CFB"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "683599A33123AD92"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "4202AA34977E0F17"
-					type: "item"
 					item: "ae2:energy_acceptor"
+					type: "item"
 				}
 				{
 					id: "303B7F620DD08842"
-					type: "item"
 					item: "ae2:crafting_terminal"
+					type: "item"
 				}
 				{
 					id: "5B68DE27253EC4C9"
-					type: "item"
 					item: "ae2:storage_bus"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "683599A33123AD92"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			title: "Applied Energistics"
+			x: 2.0d
+			y: -0.5d
 		}
 		{
-			icon: {
-				id: "hexerei:willow_broom"
-				Count: 1b
-				tag: { }
-			}
-			x: 2.0d
-			y: -3.0d
-			shape: "hexagon"
+			dependencies: ["7CFD3DFD4C593EB5"]
 			description: [
 				"What is a witch without her broom?"
 				""
@@ -562,267 +555,268 @@
 				"Note: Broom durability has been disabled in Expert. Happy skies!"
 			]
 			hide_dependency_lines: true
-			dependencies: ["7CFD3DFD4C593EB5"]
+			icon: {
+				Count: 1b
+				id: "hexerei:willow_broom"
+				tag: { }
+			}
 			id: "67A48CCEDA5C6AF3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "5CD17C5FC1E99147"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "227E258AA45F15CD"
-					type: "item"
 					item: {
-						id: "hexerei:willow_broom"
 						Count: 1b
+						id: "hexerei:willow_broom"
 						tag: { }
 					}
+					type: "item"
 				}
 				{
 					id: "173DC23E5B15EBE3"
-					type: "item"
 					item: "hexerei:blood_sigil"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "5CD17C5FC1E99147"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: 2.0d
+			y: -3.0d
 		}
 		{
-			x: 2.0d
-			y: -5.5d
-			shape: "hexagon"
+			dependencies: ["0FE800BE7F220F36"]
 			description: ["A wise witch will use every tool at her disposal, and Superior Shields offer a potent source of protection when exploring these lands. "]
 			hide_dependency_lines: true
-			dependencies: ["0FE800BE7F220F36"]
 			id: "7C58B3E61A83C628"
+			rewards: [{
+				id: "01CB66007B462CFF"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "superiorshields:capacity"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "7BBEB1DDBE230A5C"
-				type: "item"
-				title: "Superior Shields"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "superiorshields:bronze_shield"
-								Count: 1b
 								tag: {
 									Damage: 0
 								}
 							}
 							{
+								Count: 1b
 								id: "superiorshields:electrum_shield"
-								Count: 1b
 								tag: {
 									Damage: 0
 								}
 							}
 							{
+								Count: 1b
 								id: "superiorshields:constantan_shield"
-								Count: 1b
 								tag: {
 									Damage: 0
 								}
 							}
 							{
+								Count: 1b
 								id: "superiorshields:ironwood_shield"
-								Count: 1b
 								tag: {
 									Damage: 0
 								}
 							}
 							{
+								Count: 1b
 								id: "superiorshields:steeleaf_shield"
-								Count: 1b
 								tag: {
 									Damage: 0
 								}
 							}
 							{
+								Count: 1b
 								id: "superiorshields:knightmetal_shield"
-								Count: 1b
 								tag: {
 									Damage: 0
 								}
 							}
 							{
+								Count: 1b
 								ForgeCaps: {
 									Parent: {
 										energy: 0
 									}
 								}
 								id: "superiorshields:flux_shield"
-								Count: 1b
 								tag: { }
 							}
 						]
 					}
 				}
-			}]
-			rewards: [{
-				id: "01CB66007B462CFF"
+				title: "Superior Shields"
 				type: "item"
-				item: {
-					id: "minecraft:enchanted_book"
-					Count: 1b
-					tag: {
-						StoredEnchantments: [{
-							lvl: 1s
-							id: "superiorshields:capacity"
-						}]
-					}
-				}
 			}]
+			x: 2.0d
+			y: -5.5d
 		}
 		{
-			x: -0.5d
-			y: -2.0d
+			dependencies: ["30547CCA38EC3A0D"]
 			description: [
 				"A Blaze will need to be summoned and bound into appropriate materials to create this device. Luckily, with control of the elements, summoning forth a single Blaze should prove to be a trivial task."
 				""
 				"Each type of elemental may be summoned using Gythia’s Perpetual Geas. Look up Summon Bound Elemental in JEI to see their recipe. These elementals will be summoned with their AI and loot disabled."
 			]
-			dependencies: ["30547CCA38EC3A0D"]
 			id: "5038FC4A51F51F31"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "29AD14E62D652876"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "377114D7550BC0D8"
-				type: "item"
 				item: "create:blaze_burner"
+				type: "item"
 			}]
-			rewards: [{
-				id: "29AD14E62D652876"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: -0.5d
+			y: -2.0d
 		}
 		{
-			icon: "immersiveengineering:ingot_aluminum"
-			x: -1.0d
-			y: 2.0d
+			dependencies: ["75C38D71F1A04EB4"]
 			description: [
 				"The strange process of making Aluminum will begin with Clay converted to Kaolin Clay. "
 				""
 				"Discover the rest of the process through JEI."
 			]
-			dependencies: ["75C38D71F1A04EB4"]
+			icon: "immersiveengineering:ingot_aluminum"
 			id: "345CBD118EAA0C09"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "7A67B9212D494248"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [
 				{
-					id: "29BB4507855ECBB7"
-					type: "item"
-					title: "Aluminum"
 					icon: "emendatusenigmatica:aluminum_ingot"
+					id: "29BB4507855ECBB7"
 					item: {
-						id: "itemfilters:tag"
 						Count: 1b
+						id: "itemfilters:tag"
 						tag: {
 							value: "forge:ingots/aluminum"
 						}
 					}
+					title: "Aluminum"
+					type: "item"
 				}
 				{
 					id: "48662443C3B62783"
-					type: "item"
 					item: "kubejs:kaolin_clay"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "7A67B9212D494248"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -1.0d
+			y: 2.0d
 		}
 		{
-			icon: "naturesaura:calling_spirit"
-			x: -3.5d
-			y: 3.0d
-			description: [
-				"Use the Spirit of Calling to grow the Tree of Life somewhere in the Twilight Forest. "
-				""
-				"Any location will do; however, the tree will grow as you progress so a large clearing will be best. "
-			]
 			dependencies: ["729E9D41A28D0E4D"]
+			icon: "naturesaura:calling_spirit"
 			id: "668B76A0085B4054"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "3CFF2AF1730FC80E"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			shape: "diamond"
 			tasks: [
 				{
 					id: "156E6D2ED289EC8F"
-					type: "item"
 					item: "naturesaura:calling_spirit"
+					type: "item"
 				}
 				{
 					id: "281AC53880EF93FE"
-					type: "item"
 					item: "naturesaura:offering_table"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "3CFF2AF1730FC80E"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: -3.5d
+			y: 3.0d
 		}
 		{
-			icon: "ars_nouveau:novice_spell_book"
-			x: -9.0d
-			y: -0.5d
-			shape: "hexagon"
-			description: ["Perhaps paying a visit to the local mage tower will turn up more information, or at least more useful tools to assist in restoring the Tree of Life?"]
 			dependencies: ["2CCCDD05AED3153F"]
+			description: ["Perhaps paying a visit to the local mage tower will turn up more information, or at least more useful tools to assist in restoring the Tree of Life?"]
 			hide: true
+			icon: "ars_nouveau:novice_spell_book"
 			id: "370C40BCC3A6A055"
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "3452A9AC39B219A4"
-					type: "item"
 					item: "ars_nouveau:novice_spell_book"
+					type: "item"
 				}
 				{
 					id: "4F31DB2A715A1983"
-					type: "item"
 					item: "supplementaries:antique_ink"
+					type: "item"
 				}
 			]
+			x: -9.0d
+			y: -0.5d
 		}
 		{
-			x: -9.5d
-			y: 0.5d
+			dependencies: ["370C40BCC3A6A055"]
 			description: [
 				"Luckily, despite decrepit the state of the spell book, the Crush glyphs appear whole and in a usable state. Many others are going to need repair, but this will serve for now."
 				""
 				"Though many glyphs may be found and used to repair the spell book, the Scribe’s Table may also be used to craft any glyph.  "
 			]
-			dependencies: ["370C40BCC3A6A055"]
 			id: "7507572BD048B6C9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "0CEB7353C721EF23"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "711069D305E66D19"
-				type: "item"
 				item: "ars_nouveau:scribes_table"
+				type: "item"
 			}]
-			rewards: [{
-				id: "0CEB7353C721EF23"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: -9.5d
+			y: 0.5d
 		}
 		{
-			x: -10.0d
-			y: -3.0d
-			shape: "hexagon"
+			dependencies: ["11AB47232D9F5D6D"]
 			description: [
 				"Often the first elemental essence mastered by druids of the Grove, Air requires the gift of a feather from their closest allies, the Ravens, as well as a test of the druid’s combat prowess."
 				""
@@ -833,26 +827,26 @@
 				"Seek out Spawners in the world and break them. They have a chance of causing a rupture in space, allowing creatures of all types to flow through, including Blitz and other elementals. Defeat them and close the rift to obtain Blitz Motes."
 			]
 			hide_dependency_lines: true
-			dependencies: ["11AB47232D9F5D6D"]
 			id: "1C6BF5FE58C49456"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "368322B66A743C01"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "6AB326583DEF4915"
-				type: "item"
 				item: "ars_nouveau:air_essence"
+				type: "item"
 			}]
-			rewards: [{
-				id: "368322B66A743C01"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				player_command: false
-			}]
+			x: -10.0d
+			y: -3.0d
 		}
 		{
-			x: -8.5d
-			y: -2.0d
-			shape: "hexagon"
+			dependencies: ["11AB47232D9F5D6D"]
 			description: [
 				"Surviving the cold and retrieving fur from an Alpha Yeti was considered quite the feat of fortitude. Enter the Yeti Lair in the Snowy Forest and face down these fierce creatures to obtain the fur."
 				""
@@ -863,26 +857,26 @@
 				"Seek out Spawners in the world and break them. They have a chance of causing a rupture in space, allowing creatures of all types to flow through, including Basalz and other elementals. Defeat them and close the rift to obtain Basalz Shards."
 			]
 			hide_dependency_lines: true
-			dependencies: ["11AB47232D9F5D6D"]
 			id: "605D0EC9ABE8595E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "51CCBDE9F54731C8"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "2C9FC97C9F2B625B"
-				type: "item"
 				item: "ars_nouveau:water_essence"
+				type: "item"
 			}]
-			rewards: [{
-				id: "51CCBDE9F54731C8"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				player_command: false
-			}]
+			x: -8.5d
+			y: -2.0d
 		}
 		{
-			x: -8.0d
-			y: -3.0d
-			shape: "hexagon"
+			dependencies: ["11AB47232D9F5D6D"]
 			description: [
 				"A test of cunning for young druids, obtaining Magic Beans involves sneaking into a Troll den and absconding with their sacred beans."
 				""
@@ -895,53 +889,52 @@
 				"Seek out Spawners in the world and break them. They have a chance of causing a rupture in space, allowing creatures of all types to flow through, including Basalz and other elementals. Defeat them and close the rift to obtain Basalz Shards."
 			]
 			hide_dependency_lines: true
-			dependencies: ["11AB47232D9F5D6D"]
 			id: "272C349F5CF92FA0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "3C9CCE31C80E1348"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "1FB74CF06AD39276"
-				type: "item"
 				item: "ars_nouveau:earth_essence"
+				type: "item"
 			}]
-			rewards: [{
-				id: "3C9CCE31C80E1348"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				player_command: false
-			}]
+			x: -8.0d
+			y: -3.0d
 		}
 		{
-			x: -9.0d
-			y: -3.0d
-			shape: "hexagon"
+			dependencies: ["11AB47232D9F5D6D"]
 			description: [
 				"Druids of the Grove commonly carried tokens with them, Charms of Life, to help prevent their untimely demise facing down some of the dangerous creatures they dealt with. Though death is part of the natural cycle, they held no issue with prolonging life through medicines and other such charms. "
 				""
 				"Undeath, on the other hand, was abhorrent to them and it is particularly cruel that their honored dead appear to have been re-animated and set to foul purpose. Seek out the mage’s tower and see if any answers can be found there. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["11AB47232D9F5D6D"]
 			id: "30DB748747B58442"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "61B34E18FBDA8BE6"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "477CD97ADFBFC51B"
-				type: "item"
 				item: "ars_elemental:anima_essence"
+				type: "item"
 			}]
-			rewards: [{
-				id: "61B34E18FBDA8BE6"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				player_command: false
-			}]
+			x: -9.0d
+			y: -3.0d
 		}
 		{
-			title: "Summon Death Tome"
-			icon: "occultism:ritual_dummy/custom_ritual"
-			x: -8.5d
-			y: 0.5d
+			dependencies: ["370C40BCC3A6A055"]
 			description: [
 				"Once repositories of ancient spell knowledge, these tomes have been animated into some twisted semblance of life. Some speculate that this enchantment was developed to protect the knowledge stored within the books, but it may just as well have been done to vex the librarians who housed them. "
 				""
@@ -949,27 +942,28 @@
 				""
 				"Search for Ritual Summon Death Tome in JEI to see how to summon more of these books. They’ll be an excellent way to supplement the missing glyphs in this newfound spell book."
 			]
-			dependencies: ["370C40BCC3A6A055"]
+			icon: "occultism:ritual_dummy/custom_ritual"
 			id: "28A304E0F1600640"
+			rewards: [{
+				command: "enigmatica:ars_nouveau_glyph_cache/tier_1"
+				icon: "ars_nouveau:blank_glyph"
+				id: "4D3BD7740EAF736F"
+				player_command: false
+				title: "Random Tier 1 Glyph"
+				type: "command"
+			}]
 			tasks: [{
+				entity: "twilightforest:death_tome"
 				id: "0DBE4EB438DD3212"
 				type: "kill"
-				entity: "twilightforest:death_tome"
 				value: 5L
 			}]
-			rewards: [{
-				id: "4D3BD7740EAF736F"
-				type: "command"
-				title: "Random Tier 1 Glyph"
-				icon: "ars_nouveau:blank_glyph"
-				command: "enigmatica:ars_nouveau_glyph_cache/tier_1"
-				player_command: false
-			}]
+			title: "Summon Death Tome"
+			x: -8.5d
+			y: 0.5d
 		}
 		{
-			x: -9.5d
-			y: -2.0d
-			shape: "hexagon"
+			dependencies: ["11AB47232D9F5D6D"]
 			description: [
 				"The Wilden Grove had once befriended and tamed the Hydras that call the Fire Swamp their home. How they did this remains a mystery… It seems there’s only one way of obtaining the blood of one now. Don’t approach too closely or you’ll surely become its next meal. "
 				""
@@ -980,105 +974,105 @@
 				"Seek out Spawners in the world and break them. They have a chance of causing a rupture in space, allowing creatures of all types to flow through, including Blaze and other elementals. Defeat them and close the rift to obtain Blaze Rods."
 			]
 			hide_dependency_lines: true
-			dependencies: ["11AB47232D9F5D6D"]
 			id: "7A3B33287BFF4CB1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "07DDF6CFF702FA3E"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "700787ED503D9218"
-				type: "item"
 				item: "ars_nouveau:fire_essence"
+				type: "item"
 			}]
-			rewards: [{
-				id: "07DDF6CFF702FA3E"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				player_command: false
-			}]
+			x: -9.5d
+			y: -2.0d
 		}
 		{
-			x: -3.5d
-			y: 2.0d
-			shape: "hexagon"
-			subtitle: "River of Memory"
-			description: [
-				"With the elements mastered, only one task remains before the Tree of Life may be restored: Winter’s Reign must end. "
-				""
-				"Travel to the frigid glaciers and defeat the Snow Queen."
-			]
-			hide_dependency_lines: true
 			dependencies: [
 				"605D0EC9ABE8595E"
 				"1C6BF5FE58C49456"
 				"272C349F5CF92FA0"
 				"7A3B33287BFF4CB1"
 			]
+			description: [
+				"With the elements mastered, only one task remains before the Tree of Life may be restored: Winter’s Reign must end. "
+				""
+				"Travel to the frigid glaciers and defeat the Snow Queen."
+			]
+			hide_dependency_lines: true
 			id: "729E9D41A28D0E4D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "624D22F8BB99AF09"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			subtitle: "River of Memory"
 			tasks: [{
 				id: "0FC4B74A9A5ACFFC"
-				type: "item"
 				item: "byg:subzero_crystal_shard"
+				type: "item"
 			}]
-			rewards: [{
-				id: "624D22F8BB99AF09"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -3.5d
+			y: 2.0d
 		}
 		{
-			x: -1.5d
-			y: -2.5d
+			dependencies: ["66585A158F41DE44"]
 			description: [
 				"Native to the elemental plane of fire, Fiery Metal is particularly suited for containing Fire Elementals.  "
 				""
 				"Though not found naturally in this plane, it can be created through the careful application of Fire Essence and other materials.  "
 			]
-			dependencies: ["66585A158F41DE44"]
 			id: "30547CCA38EC3A0D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "4CBF1295A045591B"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "449066CA51EE1BF6"
-				type: "item"
 				item: "twilightforest:fiery_ingot"
+				type: "item"
 			}]
-			rewards: [{
-				id: "4CBF1295A045591B"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -1.5d
+			y: -2.5d
 		}
 		{
-			icon: "ars_nouveau:conjuration_essence"
-			x: -9.5d
-			y: -4.0d
-			shape: "hexagon"
+			dependencies: ["11AB47232D9F5D6D"]
 			description: ["Conjuration is a skill mastered early by the druids of the Wilden Grove and requires only basic alchemical knowledge to make and grow Magebloom Seeds.  "]
 			hide_dependency_lines: true
-			dependencies: ["11AB47232D9F5D6D"]
+			icon: "ars_nouveau:conjuration_essence"
 			id: "087CFEB4B77FAE9B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "75C613BBF99219CD"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "5A391AC753037129"
-				type: "item"
 				item: "ars_nouveau:conjuration_essence"
+				type: "item"
 			}]
-			rewards: [{
-				id: "75C613BBF99219CD"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				player_command: false
-			}]
+			x: -9.5d
+			y: -4.0d
 		}
 		{
-			title: "Familiar Friends"
-			x: -0.5d
-			y: -3.0d
+			dependencies: ["66585A158F41DE44"]
 			description: [
 				"A lonely witch is a busy witch. "
 				""
@@ -1092,76 +1086,77 @@
 				""
 				"A selection of Occultism, Hexerei, and Ars Nouveau critters may be summoned; research uses for Mindful Trance Blend to see what is available. "
 			]
-			dependencies: ["66585A158F41DE44"]
 			id: "7CFD3DFD4C593EB5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "5986A05AFF7B5081"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "05F83955C4E12297"
-				type: "item"
 				item: "hexerei:mindful_trance_blend"
+				type: "item"
 			}]
-			rewards: [{
-				id: "5986A05AFF7B5081"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				player_command: false
-			}]
+			title: "Familiar Friends"
+			x: -0.5d
+			y: -3.0d
 		}
 		{
-			x: -5.0d
-			y: -1.5d
+			dependencies: ["79B755D0BDB6A8B7"]
 			description: [
 				"More finely crafted apparatus will need more delicately formed metals."
 				""
 				"These tough mechanical machines, the Mechanical Press and Rolling Mill are up to the task of properly pounding out plates or forming wires and rods, respectively. "
 			]
-			dependencies: ["79B755D0BDB6A8B7"]
 			id: "44B02A5817C4144A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "6F4B7367716925A5"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "7E269B72F57C62D3"
-					type: "item"
 					item: "create:mechanical_press"
+					type: "item"
 				}
 				{
 					id: "1A61D7D0519A6615"
-					type: "item"
 					item: "createaddition:rolling_mill"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "6F4B7367716925A5"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: -5.0d
+			y: -1.5d
 		}
 		{
-			x: -4.5d
-			y: 0.0d
-			description: ["An upgrade to the basic furnace used up till now. This simple apparatus merely channels the energies into an Extraneous Firestarter to produce heat. Crude, but effective.  "]
 			dependencies: ["3B372F597A05E777"]
+			description: ["An upgrade to the basic furnace used up till now. This simple apparatus merely channels the energies into an Extraneous Firestarter to produce heat. Crude, but effective.  "]
 			id: "505DBC92B7AC1AFE"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "5F79A6FD24450643"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "7C7C33FFD852E5A8"
-				type: "item"
 				item: "thermal:machine_furnace"
+				type: "item"
 			}]
-			rewards: [{
-				id: "5F79A6FD24450643"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: -4.5d
+			y: 0.0d
 		}
 		{
-			x: -0.5d
-			y: -6.5d
+			dependencies: ["1075F3BAA03841EF"]
 			description: [
 				"Forging metals requires specialized tools and processes, none of which are readily available. "
 				""
@@ -1169,66 +1164,64 @@
 				""
 				"The Pestle and Mortar is easily automated with just a hopper, no manual effort is required. "
 			]
-			dependencies: ["1075F3BAA03841EF"]
 			id: "438EA01F776992AD"
+			rewards: [{
+				id: "374D86C82113C057"
+				item: "minecraft:hopper"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "6DE620F66FF61F90"
-					type: "item"
 					item: "hexerei:pestle_and_mortar"
+					type: "item"
 				}
 				{
 					id: "37D34D2AA1C71252"
-					type: "item"
 					item: "minecraft:blast_furnace"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "374D86C82113C057"
-				type: "item"
-				item: "minecraft:hopper"
-			}]
+			x: -0.5d
+			y: -6.5d
 		}
 		{
-			x: -0.5d
-			y: -5.5d
 			dependencies: ["438EA01F776992AD"]
 			id: "0FE800BE7F220F36"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "5C4A1E2E0AC85142"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "7FCF40CA690E02B4"
-				type: "item"
-				title: "Alloying"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
-								id: "emendatusenigmatica:electrum_ingot"
 								Count: 1b
+								id: "emendatusenigmatica:electrum_ingot"
 							}
 							{
-								id: "emendatusenigmatica:bronze_ingot"
 								Count: 1b
+								id: "emendatusenigmatica:bronze_ingot"
 							}
 						]
 					}
 				}
+				title: "Alloying"
+				type: "item"
 			}]
-			rewards: [{
-				id: "5C4A1E2E0AC85142"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -0.5d
+			y: -5.5d
 		}
 		{
-			icon: "ars_nouveau:bookwyrm_charm"
-			x: 1.5d
-			y: -2.0d
-			shape: "hexagon"
+			dependencies: ["7CFD3DFD4C593EB5"]
 			description: [
 				"Keeping things organized is a chore nobody has time for. Nobody except Bookwyrms, that is. "
 				""
@@ -1237,32 +1230,32 @@
 				"Refer to the Ars Nouveau quests and Worn Notebook for in-depth information on how this works. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["7CFD3DFD4C593EB5"]
+			icon: "ars_nouveau:bookwyrm_charm"
 			id: "585E9984E9D6D09C"
+			rewards: [{
+				count: 8
+				id: "0DD0D672A19E586E"
+				item: "ars_nouveau:repository"
+				type: "item"
+			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "1EB98DDEF71EC000"
-					type: "item"
 					item: "ars_nouveau:bookwyrm_charm"
+					type: "item"
 				}
 				{
 					id: "3778AA9ABF10601C"
-					type: "item"
 					item: "ars_nouveau:storage_lectern"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "0DD0D672A19E586E"
-				type: "item"
-				item: "ars_nouveau:repository"
-				count: 8
-			}]
+			x: 1.5d
+			y: -2.0d
 		}
 		{
-			icon: "ars_nouveau:wixie_charm"
-			x: 2.5d
-			y: -2.0d
-			shape: "hexagon"
+			dependencies: ["7CFD3DFD4C593EB5"]
 			description: [
 				"When it comes to brewing potions, Wixies are among the best. Be sure to summon a few to help keep the Source flowing."
 				""
@@ -1273,36 +1266,37 @@
 				"More information can be found in the Worn Notebook. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["7CFD3DFD4C593EB5"]
+			icon: "ars_nouveau:wixie_charm"
 			id: "60ECF7DD8B262631"
+			rewards: [{
+				count: 8
+				id: "7FD354CD076A2619"
+				item: "ars_nouveau:abjuration_essence"
+				type: "item"
+			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "01EA0EF25D997350"
-					type: "item"
 					item: "ars_nouveau:wixie_charm"
+					type: "item"
 				}
 				{
 					id: "701592B5C2CFF255"
-					type: "item"
 					item: "minecraft:cauldron"
+					type: "item"
 				}
 				{
 					id: "05D27686E86156A8"
-					type: "item"
 					item: "ars_nouveau:arcane_pedestal"
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "7FD354CD076A2619"
-				type: "item"
-				item: "ars_nouveau:abjuration_essence"
-				count: 8
-			}]
+			x: 2.5d
+			y: -2.0d
 		}
 		{
-			x: 1.0d
-			y: -3.0d
-			shape: "hexagon"
+			dependencies: ["7CFD3DFD4C593EB5"]
 			description: [
 				"Multi-talented and friendly, Starbuncles may be tasked with moving around items, fluids, gases, energy, and even potions. "
 				""
@@ -1311,42 +1305,28 @@
 				"They’ll need some equipment to do each of these tasks, so be sure to outfit them appropriately.  Search for Starbuncle Equipment in JEI to find everything they can use. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["7CFD3DFD4C593EB5"]
 			id: "0C1D8DEC8ACB56AC"
-			tasks: [{
-				id: "1321FD497583DDCC"
-				type: "item"
-				item: {
-					id: "ars_nouveau:starbuncle_charm"
-					Count: 1b
-					tag: { }
-				}
-			}]
 			rewards: [{
 				id: "53407B1C5DA8EBAE"
-				type: "item"
 				item: "ars_nouveau:starbuncle_shades"
+				type: "item"
 			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "1321FD497583DDCC"
+				item: {
+					Count: 1b
+					id: "ars_nouveau:starbuncle_charm"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
 		}
 		{
-			title: "Familiars"
-			icon: {
-				id: "occultism:familiar_ring"
-				Count: 1b
-				tag: {
-					familiar: {
-						hasFamiliar: 0b
-					}
-				}
-				ForgeCaps: {
-					Parent: {
-						hasFamiliar: 0b
-					}
-				}
-			}
-			x: 1.5d
-			y: -4.0d
-			shape: "hexagon"
+			dependencies: ["7CFD3DFD4C593EB5"]
+			dependency_requirement: "one_completed"
 			description: [
 				"Though not exhaustive, the list below highlights some of the benefits to be had by befriending the these Familiars. More than one may be called forth at a time. "
 				""
@@ -1375,214 +1355,244 @@
 				"Note: Familiars are protected from friendly fire, and as such it is generally safe to fight near them."
 			]
 			hide_dependency_lines: true
-			dependencies: ["7CFD3DFD4C593EB5"]
-			dependency_requirement: "one_completed"
-			min_width: 300
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					Parent: {
+						hasFamiliar: 0b
+					}
+				}
+				id: "occultism:familiar_ring"
+				tag: {
+					familiar: {
+						hasFamiliar: 0b
+					}
+				}
+			}
 			id: "72B2DCE0BDCE548F"
-			tasks: [{
-				id: "44087E084C0010C4"
-				type: "advancement"
-				advancement: "occultism:occultism/familiar/root"
-				criterion: ""
-			}]
+			min_width: 300
 			rewards: [{
 				id: "32CA91154A0B0B68"
-				type: "item"
 				item: {
-					id: "occultism:familiar_ring"
 					Count: 1b
-					tag: { }
 					ForgeCaps: {
 						Parent: {
 							hasFamiliar: 0b
 						}
 					}
+					id: "occultism:familiar_ring"
+					tag: { }
 				}
+				type: "item"
 			}]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "occultism:occultism/familiar/root"
+				criterion: ""
+				id: "44087E084C0010C4"
+				type: "advancement"
+			}]
+			title: "Familiars"
+			x: 1.5d
+			y: -4.0d
 		}
 		{
-			x: 3.0d
-			y: -3.0d
-			shape: "hexagon"
+			dependencies: ["7CFD3DFD4C593EB5"]
 			description: [
 				"Diligent creatures once employed by the Wilden Grove, Amethyst Golems were likely the key to their high-quality Amethyst production. "
 				""
 				"Despite their name, they’ll gladly work with other budding crystals besides Amethyst. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["7CFD3DFD4C593EB5"]
 			id: "5A9F370B2DA197C9"
-			tasks: [{
-				id: "14E135F0E762732D"
-				type: "item"
-				item: "ars_nouveau:amethyst_golem_charm"
-			}]
 			rewards: [{
 				id: "01A0DA4C928250F9"
-				type: "item"
 				item: "minecraft:budding_amethyst"
+				type: "item"
 			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "14E135F0E762732D"
+				item: "ars_nouveau:amethyst_golem_charm"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
 		}
 		{
-			x: 2.5d
-			y: -4.0d
-			shape: "hexagon"
+			dependencies: ["7CFD3DFD4C593EB5"]
 			description: [
 				"Though the Wilden Grove were noted for the Ravens in their employ, there were more than a few who preferred to befriend the smaller, though equally intelligent, Crow."
 				""
 				"Discover more about Crows in the Hexerei quest chapter. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["7CFD3DFD4C593EB5"]
 			id: "7DC3B92B7722D2EB"
-			tasks: [{
-				id: "737F2CD00117DDA7"
-				type: "item"
-				item: "hexerei:seed_mixture"
-			}]
 			rewards: [{
 				id: "24BD267ED65B77CB"
-				type: "item"
 				item: {
-					id: "hexerei:crow_flute"
 					Count: 1b
+					id: "hexerei:crow_flute"
 					tag: { }
 				}
+				type: "item"
 			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "737F2CD00117DDA7"
+				item: "hexerei:seed_mixture"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
 		}
 		{
-			x: -8.5d
-			y: -4.0d
-			shape: "hexagon"
+			dependencies: ["11AB47232D9F5D6D"]
 			description: [
 				"One of the simpler Essences to master, Manipulation is associated with transmutation and long-range interactions. "
 				""
 				"Everything required to make it should be easily dug from the ground. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["11AB47232D9F5D6D"]
 			id: "511EF28B97B74DA9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "0BD0FAEB5CF42323"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "6D5F8903CDAEFA40"
-				type: "item"
 				item: "ars_nouveau:manipulation_essence"
+				type: "item"
 			}]
-			rewards: [{
-				id: "0BD0FAEB5CF42323"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				player_command: false
-			}]
+			x: -8.5d
+			y: -4.0d
 		}
 		{
-			x: -6.5d
-			y: -3.0d
+			dependencies: ["4830632A0E6E9651"]
 			description: [
 				"The Wilden Grove was well known for the high-quality Amethyst they’d extract from the earth which they used to produce Source Gems. "
 				""
 				"Undoubtedly, some can be found in the ruins of their homes or within the ore hills they’ve left behind. "
 			]
-			dependencies: ["4830632A0E6E9651"]
 			id: "11AB47232D9F5D6D"
 			tasks: [{
 				id: "2C7B6B3C361553D4"
-				type: "item"
 				item: "emendatusenigmatica:source_gem"
+				type: "item"
 			}]
+			x: -6.5d
+			y: -3.0d
 		}
 		{
-			icon: "kubejs:tree_of_life_1"
-			x: -3.5d
-			y: 6.0d
-			shape: "gear"
 			dependencies: [
 				"201EF7C650717118"
 				"16694CCD304B9745"
 			]
+			description: [
+				"Restoring the Tree of Life to its full glory will be no easy task. Use the knowledge obtained thus far to grow the seedling. With time and sacrifice, it will grow stronger. "
+				""
+				"Choose a site with plenty of room to give it room to take root. "
+			]
+			icon: "kubejs:tree_of_life_1"
 			id: "33BCDA0A76E2523C"
-			tasks: [{
-				id: "5D6C98C70E7FE01B"
-				type: "item"
-				item: "kubejs:ritual_tree_of_life_1"
-			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "439B5ADE18EE0912"
+					item: "quark:ancient_sapling"
+					type: "item"
+				}
+				{
+					id: "75A370CD9D47EE45"
+					item: "kubejs:tree_of_life_1"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Tree of Life"
+			x: -3.5d
+			y: 4.0d
 		}
 		{
-			x: -2.5d
-			y: 4.0d
 			dependencies: ["668B76A0085B4054"]
 			id: "201EF7C650717118"
+			shape: "diamond"
 			tasks: [{
 				id: "77AAD1F4C77CD9DF"
-				type: "item"
 				item: "naturesaura:sky_ingot"
+				type: "item"
 			}]
+			x: -3.0d
+			y: 3.5d
 		}
 		{
-			x: -4.5d
-			y: 4.0d
 			dependencies: ["668B76A0085B4054"]
 			id: "16694CCD304B9745"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "3397636DF871DB89"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			shape: "diamond"
 			tasks: [{
 				id: "719947AB9775C6CC"
-				type: "item"
 				item: "ae2:sky_dust"
+				type: "item"
 			}]
-			rewards: [{
-				id: "3397636DF871DB89"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -4.0d
+			y: 3.5d
 		}
 		{
-			x: -6.0d
-			y: 2.0d
-			description: ["Often found clustered in with Tin ores, Quartz may be extracted occasionally when grinding the ore with better tools, such as the Mill. "]
 			dependencies: ["347A644441BCF449"]
+			description: ["Often found clustered in with Tin ores, Quartz may be extracted occasionally when grinding the ore with better tools, such as the Mill. "]
 			id: "5B7806FED7D58329"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "2D22DA949427C0B4"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "76702DE4AA5CCE26"
-				type: "item"
 				item: "emendatusenigmatica:quartz_dust"
+				type: "item"
 			}]
-			rewards: [{
-				id: "2D22DA949427C0B4"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -6.0d
+			y: 2.0d
 		}
 		{
-			x: -5.5d
-			y: 1.0d
+			dependencies: ["79B755D0BDB6A8B7"]
 			description: ["Made from considerably tougher materials than a simple Mortar, the Millstone can tougher ores and may even occasionally recover some secondary materials from the ore.  "]
 			hide_dependency_lines: true
-			dependencies: ["79B755D0BDB6A8B7"]
 			id: "347A644441BCF449"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "651C07D976AD902F"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "0F473BC094DDA58D"
-				type: "item"
 				item: "create:millstone"
+				type: "item"
 			}]
-			rewards: [{
-				id: "651C07D976AD902F"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: -5.5d
+			y: 1.0d
 		}
 		{
-			icon: "naturesaura:potion_generator"
-			x: -3.5d
-			y: 0.5d
+			dependencies: ["4B874AA448FF4C7A"]
 			description: [
 				"Much like the Alchemical Sourcelink can distill the magical essences in Potions down into Source, the Lingering Absorber is a structure that helps re-direct those energies back into the environment as Aura. "
 				""
@@ -1595,61 +1605,63 @@
 				""
 				"It is important to note that Wixies, as crafty as they are, are incapable of making Lingering or Splash potions. They’re easily automated with Create’s brewing system, however, and Dragon’s Breath may be crafted as well. "
 			]
-			dependencies: ["4B874AA448FF4C7A"]
-			min_width: 300
+			icon: "naturesaura:potion_generator"
 			id: "16E90BC107468EC2"
-			tasks: [
-				{
-					id: "150E44FC952BB995"
-					type: "item"
-					item: "naturesaura:potion_generator"
-				}
-				{
-					id: "741C6A98C22B5E2B"
-					type: "item"
-					item: "minecraft:nether_bricks"
-					count: 28L
-				}
-				{
-					id: "2E87B053B4E0E3E2"
-					type: "item"
-					item: "minecraft:red_nether_bricks"
-					count: 12L
-				}
-			]
+			min_width: 300
 			rewards: [{
+				count: 16
 				id: "754742F0C105E7DD"
-				type: "item"
 				item: {
-					id: "naturesaura:aura_bottle"
 					Count: 1b
+					id: "naturesaura:aura_bottle"
 					tag: {
 						stored_type: "naturesaura:end"
 					}
 				}
-				count: 16
+				type: "item"
 			}]
+			tasks: [
+				{
+					id: "150E44FC952BB995"
+					item: "naturesaura:potion_generator"
+					type: "item"
+				}
+				{
+					count: 28L
+					id: "741C6A98C22B5E2B"
+					item: "minecraft:nether_bricks"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "2E87B053B4E0E3E2"
+					item: "minecraft:red_nether_bricks"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 0.5d
 		}
 		{
-			icon: "kubejs:aura_leaf"
-			x: -9.0d
-			y: 1.5d
-			shape: "hexagon"
+			dependencies: ["4B874AA448FF4C7A"]
 			description: [
 				"Having trouble with Aura? Need a quick boost?"
 				""
 				"Search for the Aura Leaf in JEI to discover the ritual for converting Twilight Forest boss trophies into a large infusion of Aura. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["4B874AA448FF4C7A"]
-			optional: true
+			icon: "kubejs:aura_leaf"
 			id: "32B066B03F861D56"
+			optional: true
+			shape: "hexagon"
 			tasks: [{
 				id: "7F62B58E81519265"
-				type: "checkmark"
 				title: "Emergency Aura"
+				type: "checkmark"
 			}]
+			x: -9.0d
+			y: 1.5d
 		}
 	]
-	quest_links: [ ]
+	title: "Chapter One"
 }

@@ -35,6 +35,8 @@ StartupEvents.registry('item', (event) => {
     const ritualDummies = [
         'ritual_summon_death_tome',
         'ritual_teleport_nether',
+        'ritual_teleport_overworld',
+        'ritual_teleport_end',
         'ritual_tree_of_life_1',
         'ritual_tree_of_life_2',
         'ritual_tree_of_life_3',
@@ -67,8 +69,8 @@ StartupEvents.registry('item', (event) => {
         { name: 'altered_recipe_indicator', texture: 'enigmatica_tree' },
         { name: 'disabled_recipe_indicator', texture: 'enigmatica_tree' },
         { name: 'summon_death_tome', texture: 'ritual_dummy' },
-        { name: 'teleport_everdawn', texture: 'ritual_dummy' },
-        { name: 'teleport_everbright', texture: 'ritual_dummy' },
+        { name: 'teleport_overworld', texture: 'ritual_dummy' },
+        { name: 'teleport_end', texture: 'ritual_dummy' },
         { name: 'teleport_nether', texture: 'ritual_dummy' },
         { name: 'tree_of_life_1', texture: 'enigmatica_tree' },
         { name: 'tree_of_life_2', texture: 'enigmatica_tree' },
@@ -90,4 +92,11 @@ StartupEvents.registry('item', (event) => {
 
     // Special Items
     event.create('spirit_of_devotion').group('KubeJS').texture(`kubejs:item/spirit_of_devotion`).glow(true);
+    event.create('heart_of_the_caldera').group('KubeJS').texture(`kubejs:item/heart_of_the_caldera`).rarity('uncommon');
+    event
+        .create('heart_of_the_mountain')
+        .group('KubeJS')
+        .texture(`kubejs:item/heart_of_the_mountain`)
+        .rarity('uncommon');
+    event.create('heart_of_the_storm').group('KubeJS').texture(`kubejs:item/heart_of_the_storm`).rarity('uncommon');
 });

@@ -26,7 +26,7 @@ WorldgenEvents.remove((event) => {
         'byg:cryptic_redstone',
         'byg:island_ametrine_clusters',
         'byg:quartz_spike'
-    ]
+    ];
 
     event.removeFeatureById('underground_ores', features);
     event.removeFeatureById('underground_decoration', features);

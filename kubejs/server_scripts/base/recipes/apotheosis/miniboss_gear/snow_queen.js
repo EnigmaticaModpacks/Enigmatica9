@@ -9,7 +9,7 @@ ServerEvents.highPriorityData((event) => {
             offhands: [],
             helmets: [
                 {
-                    stack: { item: 'blue_skies:aquite_helmet', nbt: enchant_glint.blue },
+                    stack: { item: 'minecraft:diamond_helmet', nbt: enchant_glint.blue },
                     weight: 100,
                     drop_chance: 0.085
                 }
@@ -17,7 +17,7 @@ ServerEvents.highPriorityData((event) => {
             chestplates: [
                 {
                     stack: {
-                        item: 'blue_skies:aquite_chestplate',
+                        item: 'minecraft:diamond_chestplate',
                         nbt: Object.assign(enchant_glint.blue, enchantments.chill_aura_5)
                     },
                     weight: 100,
@@ -26,14 +26,14 @@ ServerEvents.highPriorityData((event) => {
             ],
             leggings: [
                 {
-                    stack: { item: 'blue_skies:aquite_leggings', nbt: enchant_glint.blue },
+                    stack: { item: 'minecraft:diamond_leggings', nbt: enchant_glint.blue },
                     weight: 100,
                     drop_chance: 0.085
                 }
             ],
             boots: [
                 {
-                    stack: { item: 'blue_skies:aquite_boots', nbt: enchant_glint.blue },
+                    stack: { item: 'minecraft:diamond_boots', nbt: enchant_glint.blue },
                     weight: 100,
                     drop_chance: 0.085
                 }

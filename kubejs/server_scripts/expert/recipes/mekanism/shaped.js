@@ -153,13 +153,13 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'mekanism:enrichment_chamber',
-            pattern: ['ABA', 'CDC', 'EFE'],
+            pattern: ['EBE', 'CDC', 'AFA'],
             key: {
                 A: '#forge:gears/steel',
                 B: '#forge:essences/manipulation',
-                C: 'pneumaticcraft:printed_circuit_board',
+                C: '#forge:plastic',
                 D: '#industrialforegoing:machine_frame/simple',
-                E: '#forge:ingots/depths',
+                E: '#forge:plates/obsidian',
                 F: '#forge:essences/abjuration'
             },
             id: 'mekanism:enrichment_chamber'
@@ -196,23 +196,114 @@ ServerEvents.recipes((event) => {
             },
             id: 'mekanism:laser_amplifier'
         },
-
-        // Placeholder recipes
-
         {
-            output: 'mekanism:meka_tool',
+            output: 'mekanism:basic_tier_installer',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:gears/compressed_iron',
+                B: 'kubejs:dimensional_storage_crystal',
+                C: 'immersiveengineering:component_electronic',
+                D: '#industrialforegoing:machine_frame/simple'
+            },
+            id: `${id_prefix}basic_tier_installer`
+        },
+        {
+            output: 'mekanism:advanced_tier_installer',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:gears/osmium',
+                B: 'ae2:spatial_cell_component_2',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#industrialforegoing:machine_frame/simple'
+            },
+            id: `${id_prefix}advanced_tier_installer`
+        },
+        {
+            output: 'mekanism:elite_tier_installer',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:gears/diamond',
+                B: 'ae2:spatial_cell_component_2',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#industrialforegoing:machine_frame/advanced'
+            },
+            id: `${id_prefix}elite_tier_installer`
+        },
+        {
+            output: 'mekanism:ultimate_tier_installer',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:gears/netherite',
+                B: 'ae2:spatial_cell_component_2',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#industrialforegoing:machine_frame/supreme'
+            },
+            id: `${id_prefix}ultimate_tier_installer`
+        },
+        {
+            output: 'mekanism:chemical_crystallizer',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'ae2:quartz_growth_accelerator',
+                B: 'mekanism:basic_chemical_tank',
+                C: '#industrialforegoing:machine_frame/supreme',
+                D: '#forge:gears/diamond',
+                E: '#forge:essences/earth'
+            },
+            id: 'mekanism:chemical_crystallizer'
+        },
+        {
+            output: 'mekanism:antiprotonic_nucleosynthesizer',
             pattern: ['ABA', 'CDC', 'EFE'],
             key: {
-                A: '#forge:circuits/ultimate',
-                B: 'mekanism:configurator',
-                C: 'mekanism:hdpe_sheet',
-                D: '#forge:alloys/ultimate',
-                E: '#forge:pellets/polonium',
-                F: 'powah:capacitor_spirited'
+                A: 'spirit:soul_glass',
+                B: 'mekanism:basic_chemical_tank',
+                C: 'mekanism:supercharged_coil',
+                D: 'ars_nouveau:arcane_core',
+                E: '#forge:gears/diamond',
+                F: '#forge:nether_stars'
             },
-            id: 'mekanism:meka_tool'
+            id: 'mekanism:antiprotonic_nucleosynthesizer'
+        },
+        {
+            output: 'mekanism:module_energy_unit',
+            pattern: ['ABA', 'CDC', 'CBC'],
+            key: {
+                A: '#forge:gems/source',
+                B: 'powah:capacitor_spirited',
+                C: '#forge:plastic',
+                D: 'modularrouters:augment_core'
+            },
+            id: 'mekanism:module_energy_unit'
         }
     ];
+
+    const meka_tool_modules = [
+        { module: 'mekanism:module_teleportation_unit', glyph: 'ars_nouveau:glyph_blink' },
+        { module: 'mekanism:module_farming_unit', glyph: 'ars_nouveau:glyph_harvest' },
+        { module: 'mekanism:module_shearing_unit', glyph: 'ars_nouveau:glyph_cut' },
+        { module: 'mekanism:module_silk_touch_unit', glyph: 'ars_nouveau:glyph_extract' },
+        { module: 'mekanism:module_attack_amplification_unit', glyph: 'ars_nouveau:glyph_harm' },
+        { module: 'mekanism:module_fortune_unit', glyph: 'ars_nouveau:glyph_fortune' },
+        { module: 'mekanism:module_blasting_unit', glyph: 'ars_nouveau:glyph_explosion' },
+        { module: 'mekanism:module_excavation_escalation_unit', glyph: 'ars_nouveau:glyph_amplify' },
+        { module: 'mekanism:module_vein_mining_unit', glyph: 'toomanyglyphs:glyph_chaining' }
+    ];
+
+    meka_tool_modules.forEach((recipe) => {
+        recipes.push({
+            output: recipe.module,
+            pattern: ['ABA', 'CDC', 'CEC'],
+            key: {
+                A: '#forge:gems/source',
+                B: recipe.glyph,
+                C: '#forge:plastic',
+                D: 'modularrouters:augment_core',
+                E: 'pneumaticcraft:printed_circuit_board'
+            },
+            id: recipe.module
+        });
+    });
 
     recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);

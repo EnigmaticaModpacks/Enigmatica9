@@ -1,6 +1,6 @@
 {
     "id": "create_asurine",
-    "baseTexture": "create:block/palettes/stone_types/asurine",
+    "baseTexture": "create:block/palettes/stone_types/natural/asurine_3",
     "suffix": "asurine",
     "fillerType": "create:asurine",
     "localizedName": "Asurine",

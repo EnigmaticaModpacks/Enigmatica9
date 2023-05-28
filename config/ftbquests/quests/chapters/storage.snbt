@@ -1,19 +1,14 @@
 {
-	id: "583482A1C530FE26"
-	group: "0856CF7F5CBEB20A"
-	order_index: 5
-	filename: "storage"
-	title: "Storage"
-	icon: "minecraft:chest"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage"
+	group: "0856CF7F5CBEB20A"
+	icon: "minecraft:chest"
+	id: "583482A1C530FE26"
+	order_index: 5
+	quest_links: [ ]
 	quests: [
 		{
-			title: "Storage"
-			icon: "minecraft:chest"
-			x: -0.5d
-			y: -7.5d
-			shape: "gear"
 			description: [
 				"Finding a place to store stuff is always a bit complicated, and keeping organized can be quite a task at times. Thankfully, a few mods exist to assist in this endeavor. The following quests will help you discover these mods."
 				""
@@ -27,117 +22,125 @@
 				"● $containers/gas"
 				"● $containers/liquid"
 			]
+			icon: "minecraft:chest"
 			id: "00000000000003FF"
-			tasks: [{
-				id: "0000000000000400"
-				type: "checkmark"
-				title: "Storage"
-			}]
 			rewards: [{
 				id: "0000000000000CA3"
 				type: "xp"
 				xp: 100
 			}]
+			shape: "gear"
+			tasks: [{
+				id: "0000000000000400"
+				title: "Storage"
+				type: "checkmark"
+			}]
+			title: "Storage"
+			x: -0.5d
+			y: -7.5d
 		}
 		{
-			title: "Sophisticated Storage"
-			icon: {
-				id: "sophisticatedstorage:iron_chest"
-				Count: 1b
-				tag: {
-					mainColor: 1908001
-					accentColor: 1908001
-				}
-			}
-			x: -0.5d
-			y: -10.0d
-			subtitle: "A very fancy chest"
+			dependencies: ["0000000000000400"]
 			description: [
 				"Extra-large storage in the same space as a chest. Sophisticated Storage adds advanced Chests, Barrels, and Shulker Boxes in with multiple tiers of capacity. They even accept various upgrades to add additional functionality."
 				""
 				"Those may be upgraded in place by using the appropriate tier upgrade item on them."
 			]
-			dependencies: ["0000000000000400"]
-			min_width: 250
+			icon: {
+				Count: 1b
+				id: "sophisticatedstorage:iron_chest"
+				tag: {
+					accentColor: 1908001
+					mainColor: 1908001
+				}
+			}
 			id: "0000000000000405"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "0000000000000A6B"
+					player_command: false
+					title: "Farmer's Delight"
+					type: "command"
+				}
+				{
+					count: 4
+					id: "02608E766DA0DA92"
+					item: "sophisticatedstorage:basic_tier_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "A very fancy chest"
 			tasks: [{
 				id: "0000000000000EA5"
-				type: "item"
-				title: "Any Wooden Tier Storage"
 				item: {
-					id: "itemfilters:tag"
 					Count: 1b
+					id: "itemfilters:tag"
 					tag: {
 						value: "sophisticatedstorage:storage_wooden"
 					}
 				}
+				title: "Any Wooden Tier Storage"
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "0000000000000A6B"
-					type: "command"
-					title: "Farmer's Delight"
-					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-					player_command: false
-				}
-				{
-					id: "02608E766DA0DA92"
-					type: "item"
-					item: "sophisticatedstorage:basic_tier_upgrade"
-					count: 4
-				}
-			]
+			title: "Sophisticated Storage"
+			x: -0.5d
+			y: -10.0d
 		}
 		{
-			title: "Find Me"
-			icon: "naturesaura:range_visualizer"
-			x: 1.0d
-			y: -6.5d
-			description: ["Forgot where you left your precious diorite? Mouse over some in your inventory or JEI and press Y to locate it in nearby inventories. "]
 			dependencies: ["0000000000000400"]
+			description: ["Forgot where you left your precious diorite? Mouse over some in your inventory or JEI and press Y to locate it in nearby inventories. "]
+			icon: "naturesaura:range_visualizer"
 			id: "000000000000040B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "0000000000000A5E"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "000000000000040C"
 				type: "checkmark"
 			}]
-			rewards: [{
-				id: "0000000000000A5E"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				player_command: false
-			}]
+			title: "Find Me"
+			x: 1.0d
+			y: -6.5d
 		}
 		{
-			title: "Plonk"
-			icon: "create:brass_hand"
-			x: -2.0d
-			y: -6.5d
+			dependencies: ["0000000000000400"]
 			description: [
 				"Looking for a handy place to store your hammer at the forge? Tired of rummaging through chest after chest for that gear press? Place them in world instead!"
 				""
 				"Plonk allows you to place up to four stacks of items in any block space. Simply hold the item, point at a block, and press P to place. Right click to pick the items back up. "
 			]
-			dependencies: ["0000000000000400"]
+			icon: "create:brass_hand"
 			id: "000000000000040D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "2D1E55B5A92B9F94"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "000000000000040E"
 				type: "checkmark"
 			}]
-			rewards: [{
-				id: "2D1E55B5A92B9F94"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				player_command: false
-			}]
+			title: "Plonk"
+			x: -2.0d
+			y: -6.5d
 		}
 		{
-			x: -8.0d
-			y: -6.5d
+			dependencies: [
+				"0000000000000966"
+				"530BB11487524556"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"The Functional Storage Controller acts as a central hub for automation. Any linked drawers are accessible through it by things such as pipes, hoppers, or an ME Storage Bus. "
 				""
@@ -152,100 +155,93 @@
 				""
 				"Once in the desired mode, simply Right Click the target drawer to bind or unbind it. If in Multiple Linking Mode, Right Click a Start and End drawer. Every drawer in the selected area will be linked at once. Every drawer linked to the selected Controller will be highlighted as well while the Linking Tool is in hand. "
 			]
-			dependencies: [
-				"0000000000000966"
-				"530BB11487524556"
-			]
-			dependency_requirement: "one_completed"
-			min_width: 300
 			id: "000000000000040F"
-			tasks: [{
-				id: "000000000000068C"
-				type: "item"
-				item: "functionalstorage:storage_controller"
-			}]
+			min_width: 300
 			rewards: [
 				{
-					id: "00000000000009AB"
-					type: "command"
-					title: "Sorcerer's Delight"
-					icon: "kubejs:sorcerers_delight"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "00000000000009AB"
 					player_command: false
+					title: "Sorcerer's Delight"
+					type: "command"
 				}
 				{
 					id: "791D3C5F2F1F201A"
-					type: "item"
 					item: {
-						id: "functionalstorage:linking_tool"
 						Count: 1b
+						id: "functionalstorage:linking_tool"
 						tag: {
 							Action: "ADD"
 							Mode: "SINGLE"
 						}
 					}
+					type: "item"
 				}
 			]
+			tasks: [{
+				id: "000000000000068C"
+				item: "functionalstorage:storage_controller"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -6.5d
 		}
 		{
-			title: "Upgraded Storage"
+			dependencies: ["0000000000000405"]
+			description: ["Each tier of storage offers both more upgrade slots and more storage slots. "]
 			icon: {
-				id: "sophisticatedstorage:gold_chest"
 				Count: 1b
+				id: "sophisticatedstorage:gold_chest"
 				tag: {
 					woodType: "oak"
 				}
 			}
-			x: -0.5d
-			y: -12.0d
-			subtitle: "Bedazzled Chests"
-			description: ["Each tier of storage offers both more upgrade slots and more storage slots. "]
-			dependencies: ["0000000000000405"]
 			id: "0000000000000951"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "00000000000009A3"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			subtitle: "Bedazzled Chests"
 			tasks: [{
 				id: "0000000000000EA7"
-				type: "item"
-				title: "Any Gold Tier Storage"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "sophisticatedstorage:basic_to_iron_tier_upgrade"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "sophisticatedstorage:iron_to_gold_tier_upgrade"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
-								Count: 1b
 							}
 							{
-								id: "sophisticatedstorage:diamond_to_netherite_tier_upgrade"
 								Count: 1b
+								id: "sophisticatedstorage:diamond_to_netherite_tier_upgrade"
 							}
 						]
 					}
 				}
+				title: "Any Gold Tier Storage"
+				type: "item"
 			}]
-			rewards: [{
-				id: "00000000000009A3"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			title: "Upgraded Storage"
+			x: -0.5d
+			y: -12.0d
 		}
 		{
-			title: "Functional Storage"
-			icon: "functionalstorage:oak_4"
-			x: -6.0d
-			y: -7.5d
-			subtitle: "Drawing a line in the sand"
+			dependencies: ["0000000000000400"]
 			description: [
 				"Looking for a place to store those ten thousand Iron Ingots? Look no further. Functional Drawers has drawers that hold a very large quantity of a given item. They offer a number of useful upgrades as well to assist in both Storage and Automation endeavors. "
 				""
@@ -254,135 +250,130 @@
 				"● Toggle between modes by Sneak + Right Clicking in the air."
 				"● Right Click a drawer to change settings in chosen mode."
 			]
-			dependencies: ["0000000000000400"]
+			icon: "functionalstorage:oak_4"
 			id: "0000000000000966"
-			tasks: [{
-				id: "0000000000000967"
-				type: "item"
-				title: "Storage Drawers"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "functionalstorage:drawer"
-					}
-				}
-			}]
 			rewards: [{
 				id: "776CF888356B7AC8"
-				type: "item"
 				item: {
-					id: "functionalstorage:configuration_tool"
 					Count: 1b
+					id: "functionalstorage:configuration_tool"
 					tag: {
 						Mode: "LOCKING"
 					}
 				}
+				type: "item"
 			}]
+			subtitle: "Drawing a line in the sand"
+			tasks: [{
+				id: "0000000000000967"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+				title: "Storage Drawers"
+				type: "item"
+			}]
+			title: "Functional Storage"
+			x: -6.0d
+			y: -7.5d
 		}
 		{
-			x: -5.0d
-			y: -9.0d
-			subtitle: "Not enough storage?"
+			dependencies: ["0000000000000966"]
 			description: [
 				"Thirty-two stacks aren't enough? There is a solution!"
 				""
 				"Each drawer has four upgrade slots that may be used to enhance storage, stacking up to truly monumental capacities. "
 			]
-			dependencies: ["0000000000000966"]
 			id: "0000000000000980"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+				icon: "kubejs:miners_delight"
+				id: "00000000000009A1"
+				player_command: false
+				title: "Miner's Delight"
+				type: "command"
+			}]
+			subtitle: "Not enough storage?"
 			tasks: [{
+				count: 4L
 				id: "00000000000009A0"
-				type: "item"
-				title: "Storage Upgrades"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "functionalstorage:copper_upgrade"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "functionalstorage:gold_upgrade"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "functionalstorage:diamond_upgrade"
-								Count: 1b
 							}
 							{
-								id: "functionalstorage:netherite_upgrade"
 								Count: 1b
+								id: "functionalstorage:netherite_upgrade"
 							}
 						]
 					}
 				}
-				count: 4L
+				title: "Storage Upgrades"
+				type: "item"
 			}]
-			rewards: [{
-				id: "00000000000009A1"
-				type: "command"
-				title: "Miner's Delight"
-				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
-				player_command: false
-			}]
+			x: -5.0d
+			y: -9.0d
 		}
 		{
-			x: -4.0d
-			y: -8.5d
-			subtitle: "But bigger is always better right?"
-			description: ["Well no, bigger is not always better. A storage downgrade can be useful for light stock-keeping situations."]
 			dependencies: ["0000000000000966"]
+			description: ["Well no, bigger is not always better. A storage downgrade can be useful for light stock-keeping situations."]
 			id: "0000000000000982"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "00000000000009AA"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			subtitle: "But bigger is always better right?"
 			tasks: [{
 				id: "0000000000000983"
-				type: "item"
 				item: "functionalstorage:iron_downgrade"
+				type: "item"
 			}]
-			rewards: [{
-				id: "00000000000009AA"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				player_command: false
-			}]
+			x: -4.0d
+			y: -8.5d
 		}
 		{
-			x: -6.0d
-			y: -9.5d
-			subtitle: "Trash can build-in into drawer"
-			description: ["Excess items will be automatically voided."]
 			dependencies: ["0000000000000966"]
+			description: ["Excess items will be automatically voided."]
 			id: "0000000000000984"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "695D02E01FA0C0BD"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			subtitle: "Trash can build-in into drawer"
 			tasks: [{
 				id: "0000000000000985"
-				type: "item"
 				item: "functionalstorage:void_upgrade"
+				type: "item"
 			}]
-			rewards: [{
-				id: "695D02E01FA0C0BD"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -6.0d
+			y: -9.5d
 		}
 		{
-			icon: {
-				id: "sophisticatedbackpacks:backpack"
-				Count: 1b
-				tag: {
-					inventorySlots: 27
-					upgradeSlots: 1
-				}
-			}
-			x: 5.0d
-			y: -7.5d
+			dependencies: ["0000000000000400"]
 			description: [
 				"Sophisticated backpacks is the backpack mod you never knew you were missing. "
 				""
@@ -390,195 +381,216 @@
 				""
 				"Beyond these already excellent features, they can also host a number of very useful upgrades."
 			]
-			dependencies: ["0000000000000400"]
-			id: "0000000000000986"
-			tasks: [{
-				id: "60860FF293535D2F"
-				type: "item"
-				item: {
-					id: "sophisticatedbackpacks:backpack"
-					Count: 1b
-					tag: { }
+			icon: {
+				Count: 1b
+				id: "sophisticatedbackpacks:backpack"
+				tag: {
+					inventorySlots: 27
+					upgradeSlots: 1
 				}
-			}]
+			}
+			id: "0000000000000986"
 			rewards: [{
-				id: "0000000000000997"
-				type: "item"
-				title: "Leather"
 				icon: "minecraft:leather"
+				id: "0000000000000997"
 				item: "minecraft:leather"
 				random_bonus: 3
+				title: "Leather"
+				type: "item"
 			}]
+			tasks: [{
+				id: "60860FF293535D2F"
+				item: {
+					Count: 1b
+					id: "sophisticatedbackpacks:backpack"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -7.5d
 		}
 		{
-			x: 3.0d
-			y: -6.5d
-			description: ["A filterable upgrade that pulls items from afar, straight into your backpack."]
 			dependencies: ["0000000000000986"]
+			description: ["A filterable upgrade that pulls items from afar, straight into your backpack."]
 			id: "000000000000098E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "0000000000000A50"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "000000000000098F"
-				type: "item"
 				item: "sophisticatedbackpacks:magnet_upgrade"
+				type: "item"
 			}]
-			rewards: [{
-				id: "0000000000000A50"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: 3.0d
+			y: -6.5d
 		}
 		{
-			x: 5.0d
-			y: -5.5d
-			description: ["Never lose your precious goods again!"]
 			dependencies: ["0000000000000986"]
+			description: ["Never lose your precious goods again!"]
 			id: "0000000000000990"
-			tasks: [{
-				id: "0000000000000991"
-				type: "item"
-				item: "sophisticatedbackpacks:everlasting_upgrade"
-			}]
 			rewards: [
 				{
-					id: "000000000000099C"
-					type: "command"
-					title: "Sorcerer's Delight"
-					icon: "kubejs:sorcerers_delight"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "000000000000099C"
 					player_command: false
+					title: "Sorcerer's Delight"
+					type: "command"
 				}
 				{
-					id: "0000000000000A6A"
-					type: "command"
-					title: "Alchemist's Delight"
-					icon: "kubejs:alchemists_delight"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "0000000000000A6A"
 					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
 				}
 			]
+			tasks: [{
+				id: "0000000000000991"
+				item: "sophisticatedbackpacks:everlasting_upgrade"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.5d
 		}
 		{
-			x: 4.0d
-			y: -6.0d
-			description: ["A filterable upgrade that lets items pass directly into the backpack when picked up by the player. "]
 			dependencies: ["0000000000000986"]
+			description: ["A filterable upgrade that lets items pass directly into the backpack when picked up by the player. "]
 			id: "0000000000000992"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "000000000000099D"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "0000000000000993"
-				type: "item"
 				item: "sophisticatedbackpacks:pickup_upgrade"
+				type: "item"
 			}]
-			rewards: [{
-				id: "000000000000099D"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				player_command: false
-			}]
+			x: 4.0d
+			y: -6.0d
 		}
 		{
+			dependencies: ["0000000000000986"]
+			description: ["Need a snack? Let your backpack provide."]
+			id: "0000000000000994"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "0000000000000A51"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			subtitle: "You're Not You When You're Hungry"
+			tasks: [{
+				id: "0000000000000995"
+				item: "sophisticatedbackpacks:feeding_upgrade"
+				title: "Feeding Upgrade"
+				type: "item"
+			}]
 			title: "Feeding Upgrade"
 			x: 3.0d
 			y: -8.5d
-			subtitle: "You're Not You When You're Hungry"
-			description: ["Need a snack? Let your backpack provide."]
-			dependencies: ["0000000000000986"]
-			id: "0000000000000994"
-			tasks: [{
-				id: "0000000000000995"
-				type: "item"
-				title: "Feeding Upgrade"
-				item: "sophisticatedbackpacks:feeding_upgrade"
-			}]
-			rewards: [{
-				id: "0000000000000A51"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				player_command: false
-			}]
 		}
 		{
-			x: -0.5d
-			y: -4.5d
-			subtitle: "Do not screw with the regulator"
+			dependencies: ["0000000000000400"]
 			description: [
-				"A minor recalibration and the Personal Shrinking Device can shrink one right out of sight and into the nooks and crannies of special machines. "
+				"The Personal Shrinking Device can shrink one right out of sight and into the nooks and crannies of special machines. "
 				""
 				"Build your own contraption within them to suit your needs, complete with custom input and output sides. "
 				""
-				"Simply Right-Click a Compact Machine with the PSD to warp inside of it. "
+				"Simply Right-Click a Compact Machine with the Personal Shrinking Device to warp inside."
 			]
-			dependencies: ["0000000000000400"]
 			id: "0AD2769DC173D26D"
+			rewards: [{
+				count: 2
+				id: "07BAD39E967F6B85"
+				item: "naturesaura:ender_crate"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6B198B6A029D9333"
-				type: "item"
 				item: "compactmachines:personal_shrinking_device"
-			}]
-			rewards: [{
-				id: "07BAD39E967F6B85"
 				type: "item"
-				item: "naturesaura:ender_crate"
-				count: 2
 			}]
+			x: -2.0d
+			y: -4.5d
 		}
 		{
-			icon: "compactmachines:machine_tiny"
-			x: -0.5d
-			y: -3.5d
-			subtitle: "One, cut a hole in a box"
+			dependencies: ["0AD2769DC173D26D"]
 			description: [
 				"Gather the materials for your first Compact Machine!"
 				""
-				"The Tiny Compact Machine has an internal volume of 3x3x3 and while that seems terribly small, it is perfect for certain smaller automations. And if you yourself are shrunk it can make placing the blocks inside quite simple. "
+				"Compact Machines range in size from 3x3x3 to 13x13x13 blocks of internal space. "
+				""
+				"Choose the size that best fits your needs and build away!"
 			]
-			dependencies: ["0AD2769DC173D26D"]
-			min_width: 250
+			icon: "compactmachines:machine_tiny"
 			id: "3787A109AABC8921"
-			tasks: [{
-				id: "16A0C1D718EA19AF"
-				type: "item"
-				item: "compactmachines:machine_tiny"
-			}]
+			min_width: 250
 			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
 				id: "3E2CA8D755178794"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
 			}]
-		}
-		{
-			x: -1.5d
-			y: -3.0d
-			description: ["Weighing in at 13x13x13 internal volume, the Maximum sized Compact Machine truly offers a world of automation possibilities. What will you build in yours? A mobile base of operations? Compact ore processing? Zombie-proof Villager trading hall? "]
-			dependencies: ["3787A109AABC8921"]
-			id: "0DAA452348B02827"
+			subtitle: "One, cut a hole in a box"
 			tasks: [{
-				id: "21ED2337B44743E5"
+				icon: "compactmachines:machine_small"
+				id: "16A0C1D718EA19AF"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "compactmachines:machine_tiny"
+							}
+							{
+								Count: 1b
+								id: "compactmachines:machine_small"
+							}
+							{
+								Count: 1b
+								id: "compactmachines:machine_normal"
+							}
+							{
+								Count: 1b
+								id: "compactmachines:machine_large"
+							}
+							{
+								Count: 1b
+								id: "compactmachines:machine_giant"
+							}
+							{
+								Count: 1b
+								id: "compactmachines:machine_maximum"
+							}
+						]
+					}
+				}
+				title: "Compact Machines"
 				type: "item"
-				item: "compactmachines:machine_maximum"
 			}]
-			rewards: [{
-				id: "299A8E596E259DC4"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -2.5d
+			y: -3.5d
 		}
 		{
-			x: 0.5d
-			y: -3.0d
-			subtitle: "Quantum Tunneling"
+			dependencies: ["3787A109AABC8921"]
 			description: [
 				"Placed on the walls inside Compact Machines, Tunnels permit a connection to the outside world. "
 				""
@@ -586,20 +598,26 @@
 				""
 				"Of course, many other options exist for getting stuff in and out as well."
 			]
-			dependencies: ["3787A109AABC8921"]
 			id: "5511E0236BA3BDCA"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "526E10A2F22FF97C"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			subtitle: "Two, stick your junk in that box"
 			tasks: [{
 				id: "2D8BF6B60DE16FC8"
-				type: "item"
-				title: "Tunnels"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
-								id: "compactmachines:tunnel"
 								Count: 1b
+								id: "compactmachines:tunnel"
 								tag: {
 									definition: {
 										id: "compactmachines:energy"
@@ -607,8 +625,8 @@
 								}
 							}
 							{
-								id: "compactmachines:tunnel"
 								Count: 1b
+								id: "compactmachines:tunnel"
 								tag: {
 									definition: {
 										id: "compactmachines:fluid"
@@ -616,8 +634,8 @@
 								}
 							}
 							{
-								id: "compactmachines:tunnel"
 								Count: 1b
+								id: "compactmachines:tunnel"
 								tag: {
 									definition: {
 										id: "compactmachines:item"
@@ -627,107 +645,100 @@
 						]
 					}
 				}
+				title: "Tunnels"
+				type: "item"
 			}]
-			rewards: [{
-				id: "526E10A2F22FF97C"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -1.5d
+			y: -3.5d
 		}
 		{
-			title: "Upgraded Backpacks"
-			x: 5.0d
-			y: -9.5d
-			subtitle: "Haversack, will travel"
-			description: ["Each tier of backpack offers both more upgrade slots and more storage slots. "]
 			dependencies: ["0000000000000986"]
+			description: ["Each tier of backpack offers both more upgrade slots and more storage slots. "]
 			id: "585A22AF9FB84AFD"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "2102EE1604B1EE96"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			subtitle: "Haversack, will travel"
 			tasks: [{
 				id: "4F51BBE2671F8947"
-				type: "item"
-				title: "Upgraded Backpacks"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
-								id: "sophisticatedbackpacks:iron_backpack"
 								Count: 1b
+								id: "sophisticatedbackpacks:iron_backpack"
 								tag: {
-									inventorySlots: 54
-									upgradeSlots: 2
 									contentsUuid: [I;
 										1020082760
 										1650280995
 										-2026079560
 										1430724906
 									]
+									inventorySlots: 54
+									upgradeSlots: 2
 								}
 							}
 							{
-								id: "sophisticatedbackpacks:gold_backpack"
 								Count: 1b
+								id: "sophisticatedbackpacks:gold_backpack"
 								tag: {
-									inventorySlots: 81
-									upgradeSlots: 3
 									contentsUuid: [I;
 										-1791111194
 										-866301855
 										-1654859019
 										-1658630351
 									]
+									inventorySlots: 81
+									upgradeSlots: 3
 								}
 							}
 							{
-								id: "sophisticatedbackpacks:diamond_backpack"
 								Count: 1b
+								id: "sophisticatedbackpacks:diamond_backpack"
 								tag: {
-									inventorySlots: 108
-									upgradeSlots: 5
 									contentsUuid: [I;
 										-1078261197
 										-1384300211
 										-1721607180
 										631454807
 									]
+									inventorySlots: 108
+									upgradeSlots: 5
 								}
 							}
 							{
-								id: "sophisticatedbackpacks:netherite_backpack"
 								Count: 1b
+								id: "sophisticatedbackpacks:netherite_backpack"
 								tag: {
-									inventorySlots: 120
-									upgradeSlots: 7
 									contentsUuid: [I;
 										-875608460
 										-699055422
 										-1565753794
 										94699093
 									]
+									inventorySlots: 120
+									upgradeSlots: 7
 								}
 							}
 						]
 					}
 				}
+				title: "Upgraded Backpacks"
+				type: "item"
 			}]
-			rewards: [{
-				id: "2102EE1604B1EE96"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			title: "Upgraded Backpacks"
+			x: 5.0d
+			y: -9.5d
 		}
 		{
-			title: "Dimensional Storage"
-			x: 1.5d
-			y: -7.5d
-			subtitle: "Wouldn't you think my collection's complete?"
+			dependencies: ["0000000000000400"]
 			description: [
 				"Got more gadgets and gizmos than one cavern can hold? More whozits and whatzits than you know what to do with? Then its time to shove it in another dimension and hire someone to sort it for you. Just read the fine print of any contracts you sign."
 				""
@@ -735,57 +746,46 @@
 				""
 				"Check out the Occultism chapter for more details on the process."
 			]
-			dependencies: ["0000000000000400"]
-			min_width: 300
 			id: "662DA1135F00D6B6"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "44BA68CC5061BD0A"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			subtitle: "Wouldn't you think my collection's complete?"
 			tasks: [{
 				id: "0B58FB5EED4BBC33"
-				type: "item"
 				item: "occultism:storage_controller"
+				type: "item"
 			}]
-			rewards: [{
-				id: "44BA68CC5061BD0A"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			title: "Dimensional Storage"
+			x: 1.5d
+			y: -7.5d
 		}
 		{
-			x: -7.0d
-			y: -9.0d
-			subtitle: "Integrated Hopper in a nutshell"
+			dependencies: ["0000000000000966"]
 			description: [
 				"A Collector Upgrade allows the drawer to pick up items from the world. "
 				""
 				"Set the pickup direction in the drawer’s GUI. "
 			]
-			dependencies: ["0000000000000966"]
 			id: "4E92570E06A632C1"
-			tasks: [{
-				id: "26B4B487EC799FC4"
-				type: "item"
-				item: {
-					id: "functionalstorage:collector_upgrade"
-					Count: 1b
-					tag: {
-						Direction: "DOWN"
-					}
-				}
-			}]
 			rewards: [
 				{
 					id: "23A13AB2F98CDF57"
-					type: "item"
 					item: {
-						id: "functionalstorage:collector_upgrade"
 						Count: 1b
+						id: "functionalstorage:collector_upgrade"
 						tag: {
 							Direction: "DOWN"
 						}
 					}
 					random_bonus: 3
+					type: "item"
 				}
 				{
 					id: "433C740CEEB2C72A"
@@ -793,149 +793,161 @@
 					xp: 100
 				}
 			]
+			subtitle: "Integrated Hopper in a nutshell"
+			tasks: [{
+				id: "26B4B487EC799FC4"
+				item: {
+					Count: 1b
+					id: "functionalstorage:collector_upgrade"
+					tag: {
+						Direction: "DOWN"
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -9.0d
 		}
 		{
-			x: -8.0d
-			y: -8.5d
-			subtitle: "Hopper-like item transfer?"
+			dependencies: ["0000000000000966"]
 			description: [
 				"Puller and Pusher upgrades allow the drawer to pull items from or push items to adjacent inventories."
 				""
 				"Set the direction in the drawer’s GUI. "
 			]
-			dependencies: ["0000000000000966"]
 			id: "1E3D0A22137BC69D"
-			tasks: [
-				{
-					id: "0A86B1D1939EE2E6"
-					type: "item"
-					item: {
-						id: "functionalstorage:pusher_upgrade"
-						Count: 1b
-						tag: {
-							Direction: "DOWN"
-						}
-					}
-				}
-				{
-					id: "23FEE61D1BC3AA32"
-					type: "item"
-					item: {
-						id: "functionalstorage:puller_upgrade"
-						Count: 1b
-						tag: {
-							Direction: "DOWN"
-						}
-					}
-				}
-			]
 			rewards: [
 				{
 					id: "65E41DA8B0427C9F"
-					type: "item"
 					item: {
-						id: "functionalstorage:pusher_upgrade"
 						Count: 1b
+						id: "functionalstorage:pusher_upgrade"
 						tag: {
 							Direction: "DOWN"
 						}
 					}
 					random_bonus: 3
+					type: "item"
 				}
 				{
 					id: "275EAD67101B76E8"
-					type: "item"
 					item: {
-						id: "functionalstorage:puller_upgrade"
 						Count: 1b
+						id: "functionalstorage:puller_upgrade"
 						tag: {
 							Direction: "DOWN"
 						}
 					}
 					random_bonus: 3
+					type: "item"
 				}
 			]
+			subtitle: "Hopper-like item transfer?"
+			tasks: [
+				{
+					id: "0A86B1D1939EE2E6"
+					item: {
+						Count: 1b
+						id: "functionalstorage:pusher_upgrade"
+						tag: {
+							Direction: "DOWN"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "23FEE61D1BC3AA32"
+					item: {
+						Count: 1b
+						id: "functionalstorage:puller_upgrade"
+						tag: {
+							Direction: "DOWN"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: -8.5d
 		}
 		{
-			icon: "functionalstorage:ender_drawer"
-			x: -7.0d
-			y: -6.0d
-			subtitle: "Getting your drawers in a knot"
+			dependencies: ["0000000000000966"]
 			description: [
 				"Ender drawers, as the name might imply, allow their contents to be accessed from multiple locations. "
 				""
 				"Each drawer is given a unique frequency when placed which may be copied by Left Clicking it with a Linking Tool. Right Clicking another Ender Drawer copies the frequency to it, effectively making the two drawers act as one."
 			]
-			dependencies: ["0000000000000966"]
+			icon: "functionalstorage:ender_drawer"
 			id: "47EF38C8E41B2DE8"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "70E4602ABF82C34E"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			subtitle: "Getting your drawers in a knot"
 			tasks: [
 				{
 					id: "1E8ECE61CC02806E"
-					type: "item"
 					item: "functionalstorage:ender_drawer"
+					type: "item"
 				}
 				{
 					id: "4F28E77E9C804917"
-					type: "item"
 					item: {
-						id: "functionalstorage:linking_tool"
 						Count: 1b
+						id: "functionalstorage:linking_tool"
 						tag: {
 							Action: "ADD"
 							Mode: "SINGLE"
 						}
 					}
+					type: "item"
 				}
 			]
-			rewards: [{
-				id: "70E4602ABF82C34E"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: -7.0d
+			y: -6.0d
 		}
 		{
-			x: -5.0d
-			y: -6.0d
-			subtitle: "Lets compact everything"
+			dependencies: ["0000000000000966"]
 			description: [
 				"Compacting drawers automatically change form of item stored."
 				""
 				"From block to ingots, ingots to nuggets. Vice versa and everything at once."
 			]
-			dependencies: ["0000000000000966"]
 			id: "4B15775FF9D71CFE"
-			tasks: [{
-				id: "66F3136BE821E73D"
-				type: "item"
-				item: "functionalstorage:compacting_drawer"
-			}]
 			rewards: [
 				{
 					id: "643CCF8714B8719F"
-					type: "item"
 					item: "minecraft:iron_block"
+					type: "item"
 				}
 				{
+					count: 9
 					id: "1F4645AC8B559D5D"
-					type: "item"
 					item: "minecraft:iron_ingot"
-					count: 9
+					type: "item"
 				}
 				{
-					id: "085AFBA229687140"
-					type: "item"
-					item: "minecraft:iron_nugget"
 					count: 9
+					id: "085AFBA229687140"
+					item: "minecraft:iron_nugget"
+					type: "item"
 				}
 			]
+			subtitle: "Lets compact everything"
+			tasks: [{
+				id: "66F3136BE821E73D"
+				item: "functionalstorage:compacting_drawer"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -6.0d
 		}
 		{
-			x: -4.0d
-			y: -6.5d
-			subtitle: "Oh my god Becky, look at that trunk"
+			dependencies: ["0000000000000966"]
 			description: [
 				"A hoarder’s dream come true. Now nothing from that mob farm will go to waste! "
 				""
@@ -943,388 +955,393 @@
 				""
 				"The block has no manual interface, items must be accessed through automation. "
 			]
-			dependencies: ["0000000000000966"]
 			id: "42854348FF66AAC5"
+			rewards: [{
+				count: 2
+				id: "400AF04A55583751"
+				item: "minecraft:hopper"
+				type: "item"
+			}]
+			subtitle: "Oh my god Becky, look at that trunk"
 			tasks: [{
 				id: "6E1A61C9BC490741"
-				type: "item"
 				item: "functionalstorage:armory_cabinet"
-			}]
-			rewards: [{
-				id: "400AF04A55583751"
 				type: "item"
-				item: "minecraft:hopper"
-				count: 2
 			}]
+			x: -4.0d
+			y: -6.5d
 		}
 		{
-			title: "Applied Energetics 2"
-			x: -2.5d
-			y: -7.5d
-			subtitle: "Digital Age for Experts"
+			dependencies: ["0000000000000400"]
 			description: [
 				"Far more than a simple storage solution, Applied Energetics 2 offers a full range of automation and cross dimensional transport capabilities. "
 				""
 				"Check out the dedicated AE2 chapter for more information. "
 			]
-			dependencies: ["0000000000000400"]
-			min_width: 250
 			id: "6C528552302BCEDC"
-			tasks: [{
-				id: "122D1ECB8E615692"
-				type: "item"
-				item: "ae2:controller"
-			}]
+			min_width: 250
 			rewards: [
 				{
-					id: "0D90890F782B9600"
-					type: "item"
-					item: "ae2:fluix_smart_cable"
 					count: 16
+					id: "0D90890F782B9600"
+					item: "ae2:fluix_smart_cable"
 					random_bonus: 16
+					type: "item"
 				}
 				{
+					count: 4
 					id: "115AF38BB4ED00B6"
-					type: "item"
 					item: "ae2:logic_processor"
-					count: 4
 					random_bonus: 4
+					type: "item"
 				}
 				{
+					count: 4
 					id: "181F3C0D6742E235"
-					type: "item"
 					item: "ae2:calculation_processor"
-					count: 4
 					random_bonus: 4
+					type: "item"
 				}
 				{
-					id: "5873FC0F1B04508A"
-					type: "item"
-					item: "ae2:engineering_processor"
 					count: 4
+					id: "5873FC0F1B04508A"
+					item: "ae2:engineering_processor"
 					random_bonus: 4
+					type: "item"
 				}
 			]
+			subtitle: "Digital Age for Experts"
+			tasks: [{
+				id: "122D1ECB8E615692"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			title: "Applied Energetics 2"
+			x: -2.5d
+			y: -7.5d
 		}
 		{
-			x: 6.0d
-			y: -9.0d
-			description: ["Stack upgrades allow each slot to hold more than usual, with their effect stacking with each other as well. A single Tier 1 upgrade will double a slot to 128, and another Tier 1 upgrade will double that again to 256!"]
 			dependencies: ["0000000000000986"]
+			description: ["Stack upgrades allow each slot to hold more than usual, with their effect stacking with each other as well. A single Tier 1 upgrade will double a slot to 128, and another Tier 1 upgrade will double that again to 256!"]
 			id: "72E2F80597E42934"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "5B1B6013E6ED0715"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "399BC888799C334C"
-				type: "item"
-				title: "Stack Upgrades"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "sophisticatedbackpacks:stack_upgrade_tier_1"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "sophisticatedbackpacks:stack_upgrade_tier_2"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "sophisticatedbackpacks:stack_upgrade_tier_3"
-								Count: 1b
 							}
 							{
-								id: "sophisticatedbackpacks:stack_upgrade_tier_4"
 								Count: 1b
+								id: "sophisticatedbackpacks:stack_upgrade_tier_4"
 							}
 						]
 					}
 				}
+				title: "Stack Upgrades"
+				type: "item"
 			}]
-			rewards: [{
-				id: "5B1B6013E6ED0715"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: 6.0d
+			y: -9.0d
 		}
 		{
-			x: 4.0d
-			y: -9.0d
-			description: ["Add some extra features to your backpack, like the ability to smelt, craft, or use a stonecutter without leaving the interface. "]
 			dependencies: ["0000000000000986"]
+			description: ["Add some extra features to your backpack, like the ability to smelt, craft, or use a stonecutter without leaving the interface. "]
 			id: "137090962A587556"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "6D5ED9C4BB24D5EA"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "02E55ED53908580B"
-				type: "item"
-				title: "Functional Upgrades"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "sophisticatedbackpacks:smelting_upgrade"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "sophisticatedbackpacks:smoking_upgrade"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "sophisticatedbackpacks:blasting_upgrade"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "sophisticatedbackpacks:crafting_upgrade"
-								Count: 1b
 							}
 							{
-								id: "sophisticatedbackpacks:stonecutter_upgrade"
 								Count: 1b
+								id: "sophisticatedbackpacks:stonecutter_upgrade"
 							}
 						]
 					}
 				}
+				title: "Functional Upgrades"
+				type: "item"
 			}]
-			rewards: [{
-				id: "6D5ED9C4BB24D5EA"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				player_command: false
-			}]
+			x: 4.0d
+			y: -9.0d
 		}
 		{
-			x: 6.0d
-			y: -6.0d
+			dependencies: ["0000000000000986"]
 			description: [
 				"Personal fluid storage with a variety of practical applications. "
 				""
 				"This upgrade is augmented by Stack Upgrades."
 			]
-			dependencies: ["0000000000000986"]
 			id: "38B014017412A9EA"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "54D08CA9D3C99DF7"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "011CB3994D325742"
-				type: "item"
 				item: "sophisticatedbackpacks:tank_upgrade"
+				type: "item"
 			}]
-			rewards: [{
-				id: "54D08CA9D3C99DF7"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				player_command: false
-			}]
+			x: 6.0d
+			y: -6.0d
 		}
 		{
-			x: 7.0d
-			y: -8.0d
+			dependencies: ["0000000000000986"]
 			description: [
 				"Keeping tools charged on the go can be quite a drain. Attach a battery to your backpack to recharge those items on the go. "
 				""
 				"This upgrade is augmented by Stack Upgrades."
 			]
-			dependencies: ["0000000000000986"]
 			id: "503B1A17248C9070"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "5F17B44DFEC645FB"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "483996F5C4C5660B"
-				type: "item"
 				item: "sophisticatedbackpacks:battery_upgrade"
+				type: "item"
 			}]
-			rewards: [{
-				id: "5F17B44DFEC645FB"
-				type: "command"
-				title: "Alchemist's Delight"
-				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				player_command: false
-			}]
+			x: 7.0d
+			y: -8.0d
 		}
 		{
-			x: 7.0d
-			y: -6.5d
+			dependencies: ["0000000000000986"]
 			description: [
 				"When paired with a Tank Upgrade, pumps allow the backpack to pull fluids in from the world. Go for a dive!"
 				""
 				"The Experience Pump allows the backpack to instead store player XP, even repairing equipped tools and armor enchanted with Mending!"
 			]
-			dependencies: ["0000000000000986"]
 			id: "11A59FBD489A8212"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "7BF2A0DA41927B29"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "0697F99860277935"
-				type: "item"
-				title: "Pump Upgrades"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "sophisticatedbackpacks:pump_upgrade"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "sophisticatedbackpacks:advanced_pump_upgrade"
-								Count: 1b
 							}
 							{
-								id: "sophisticatedbackpacks:xp_pump_upgrade"
 								Count: 1b
+								id: "sophisticatedbackpacks:xp_pump_upgrade"
 							}
 						]
 					}
 				}
+				title: "Pump Upgrades"
+				type: "item"
 			}]
-			rewards: [{
-				id: "7BF2A0DA41927B29"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: 7.0d
+			y: -6.5d
 		}
 		{
-			x: 0.5d
-			y: -11.5d
-			description: ["Stack upgrades allow each slot to hold more than usual, with their effect stacking with each other as well. A single Tier 1 upgrade will double a slot to 128, and another Tier 1 upgrade will double that again to 256!"]
 			dependencies: ["0000000000000405"]
+			description: ["Stack upgrades allow each slot to hold more than usual, with their effect stacking with each other as well. A single Tier 1 upgrade will double a slot to 128, and another Tier 1 upgrade will double that again to 256!"]
 			id: "7B0AFE310E9AD4EB"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "0B5190854F290B9D"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "2C795523C6B0BF7A"
-				type: "item"
-				title: "Stack Upgrades"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "sophisticatedstorage:stack_upgrade_tier_1"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "sophisticatedstorage:stack_upgrade_tier_2"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "sophisticatedstorage:stack_upgrade_tier_3"
-								Count: 1b
 							}
 							{
-								id: "sophisticatedstorage:stack_upgrade_tier_4"
 								Count: 1b
+								id: "sophisticatedstorage:stack_upgrade_tier_4"
 							}
 						]
 					}
 				}
+				title: "Stack Upgrades"
+				type: "item"
 			}]
-			rewards: [{
-				id: "0B5190854F290B9D"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: 0.5d
+			y: -11.5d
 		}
 		{
-			x: -1.5d
-			y: -11.5d
-			description: ["Add some extra features to your storage, like the ability to smelt, craft, or use a stonecutter without leaving the interface. "]
 			dependencies: ["0000000000000405"]
+			description: ["Add some extra features to your storage, like the ability to smelt, craft, or use a stonecutter without leaving the interface. "]
 			id: "3F946CAEE4DDCFD2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "6D9CB4B5D250FD85"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "31018F129D832B9C"
-				type: "item"
-				title: "Functional Upgrades"
 				item: {
-					id: "itemfilters:or"
 					Count: 1b
+					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
+								Count: 1b
 								id: "sophisticatedstorage:smelting_upgrade"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "sophisticatedstorage:smoking_upgrade"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "sophisticatedstorage:blasting_upgrade"
-								Count: 1b
 							}
 							{
+								Count: 1b
 								id: "sophisticatedstorage:crafting_upgrade"
-								Count: 1b
 							}
 							{
-								id: "sophisticatedstorage:stonecutter_upgrade"
 								Count: 1b
+								id: "sophisticatedstorage:stonecutter_upgrade"
 							}
 						]
 					}
 				}
+				title: "Functional Upgrades"
+				type: "item"
 			}]
-			rewards: [{
-				id: "6D9CB4B5D250FD85"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				player_command: false
-			}]
+			x: -1.5d
+			y: -11.5d
 		}
 		{
-			x: -2.5d
-			y: -11.0d
-			description: ["Any item that comes in direct contact with the storage will be picked up automatically. "]
 			dependencies: ["0000000000000405"]
+			description: ["Any item that comes in direct contact with the storage will be picked up automatically. "]
 			id: "1CFC2F757BE1EAED"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "677C92499FF4E2D8"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "450EE65B0C525FF0"
-				type: "item"
 				item: "sophisticatedstorage:pickup_upgrade"
+				type: "item"
 			}]
-			rewards: [{
-				id: "677C92499FF4E2D8"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				player_command: false
-			}]
+			x: -2.5d
+			y: -11.0d
 		}
 		{
-			x: 1.5d
-			y: -11.0d
-			description: ["Picks up items in the area, inserting them into the storage. "]
 			dependencies: ["0000000000000405"]
+			description: ["Picks up items in the area, inserting them into the storage. "]
 			id: "5C185A0CE6459C3F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "53C384EC8266F233"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "12B21D7BF891349E"
-				type: "item"
 				item: "sophisticatedstorage:magnet_upgrade"
+				type: "item"
 			}]
-			rewards: [{
-				id: "53C384EC8266F233"
-				type: "command"
-				title: "Scavenger's Delight"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				player_command: false
-			}]
+			x: 1.5d
+			y: -11.0d
 		}
 		{
-			x: -0.5d
-			y: -9.0d
+			dependencies: [
+				"0000000000000405"
+				"530BB11487524556"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"The Sophisticated Storage Controller acts as a central hub for automation. Any linked drawers are accessible through it by things such as pipes, hoppers, or an ME Storage Bus."
 				""
@@ -1336,41 +1353,31 @@
 				""
 				"Finally, Right Click one or more Storage Links to create the connection. Each successful link will render a line between the Controller and the Storage Link. "
 			]
-			dependencies: [
-				"0000000000000405"
-				"530BB11487524556"
-			]
-			dependency_requirement: "one_completed"
-			min_width: 300
 			id: "50D051B9CD6372F1"
-			tasks: [{
-				id: "649223683D1A2C0E"
-				type: "item"
-				item: "sophisticatedstorage:controller"
-			}]
+			min_width: 300
 			rewards: [
 				{
-					id: "6A3A74529BC9D88E"
-					type: "item"
-					item: "sophisticatedstorage:storage_link"
 					count: 3
+					id: "6A3A74529BC9D88E"
+					item: "sophisticatedstorage:storage_link"
+					type: "item"
 				}
 				{
 					id: "2153557DF3335F11"
-					type: "item"
 					item: "sophisticatedstorage:storage_tool"
+					type: "item"
 				}
 			]
+			tasks: [{
+				id: "649223683D1A2C0E"
+				item: "sophisticatedstorage:controller"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -9.0d
 		}
 		{
-			icon: {
-				id: "entangled:block"
-				Count: 1b
-				tag: { }
-			}
-			x: -0.5d
-			y: -6.0d
-			subtitle: "Trading Places"
+			dependencies: ["00000000000003FF"]
 			description: [
 				"While not really storage on its own, the Entangled Block enables remote access to the block or machine it is bound to, extending the block’s capabilities to the Entangled Block. "
 				""
@@ -1383,37 +1390,177 @@
 				"To bind a block to the Entangled Block, Sneak Right-Click the target block with the Entangled Binder. Then simply Right-Click a placed Entangled Block. The target block will render inside of the Entangled Block when properly bound. "
 			]
 			hide_dependency_lines: true
-			dependencies: ["00000000000003FF"]
+			icon: {
+				Count: 1b
+				id: "entangled:block"
+				tag: { }
+			}
 			id: "0FB7A6E25F2D548C"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "54930DB1BCAFFAFC"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			subtitle: "Trading Places"
 			tasks: [
 				{
 					id: "3233A7CA900E0BE2"
-					type: "item"
 					item: {
-						id: "entangled:block"
 						Count: 1b
+						id: "entangled:block"
 						tag: { }
 					}
+					type: "item"
 				}
 				{
 					id: "2D7723E13C38D112"
-					type: "item"
 					item: {
-						id: "entangled:item"
 						Count: 1b
+						id: "entangled:item"
 						tag: { }
 					}
+					type: "item"
 				}
 			]
+			x: -0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["00000000000003FF"]
+			description: [
+				"Let wanderlust take you where the wind blows and bring your home along with you for the journey. "
+				""
+				"Nomadic Tents provide a small area to keep your essentials. Build a small storage system inside with some basic machinery. Keep your bed there too if you wish; sleeping is allowed!"
+				""
+				"Craft any sized tent, then Right-Click and Hold on the ground to place the frame. Right-Click each Frame block with a Tent Mallet to form the tent. Using a Golden Tent Mallet will frame out the entire tent instantly!"
+				""
+				"To pick the tent back up, Right-Click the door once with any Tent Mallet."
+				""
+				"To enter or exit the tent, simply Right-Click or walk through the door. Enjoy your cozy new living space!"
+				""
+				"========================================"
+				""
+				"Note: Normally this mod has Tent Shovels that are used to increase the floor depth of a tent. These have been intentionally disabled, and all tents come with the floor depth maximized by default."
+				""
+				"Already have a Mega sized tent but didn’t upgrade the floor layers? Craft it together with a Wooden Shovel to max out the layers. "
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "nomadictents:mega_yurt"
+				tag: { }
+			}
+			id: "025C09686412AB3D"
+			min_width: 250
 			rewards: [{
-				id: "54930DB1BCAFFAFC"
-				type: "command"
-				title: "Sorcerer's Delight"
-				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "683A154EC6984812"
 				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
 			}]
+			tasks: [
+				{
+					icon: {
+						Count: 1b
+						id: "nomadictents:tiny_yurt"
+						tag: { }
+					}
+					id: "269EA5D2111B8063"
+					item: {
+						Count: 1b
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "nomadictents:.*(yurt|tepee|bedouin|indlu|shamiyana)$"
+						}
+					}
+					title: "Nomadic Tents"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1b
+						id: "nomadictents:mallet"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "16D5F888C22D1C21"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "nomadictents:mallet"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "nomadictents:golden_mallet"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Mallet"
+					type: "item"
+				}
+			]
+			title: "Nomadic Tents"
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"0AD2769DC173D26D"
+				"025C09686412AB3D"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"There’s nothing quite so frustrating as falling into the void and dying due to a bug."
+				""
+				"Things happen. Sometimes players get outside of the bounds of a Compact Machine or a Tent and end up in an awkward situation of being unable to get back again. "
+				""
+				"Enigmatica has implemented special precautions for these situations. "
+				""
+				"Just jump into the void to be teleported to your spawn point. "
+				""
+				"================================="
+				""
+				"Valid Dimensions"
+				""
+				"● &3Compact Machines&r"
+				"● &6Nomadic Tents&r"
+				"● &5The End&r"
+			]
+			icon: "pneumaticcraft:bandage"
+			id: "1881C88DD5D42696"
+			rewards: [{
+				id: "473CAA5579E95F8E"
+				item: "minecraft:cookie"
+				type: "item"
+			}]
+			shape: "heart"
+			subtitle: "Don't Panic!"
+			tasks: [{
+				id: "27D76CDD3F2023A0"
+				title: "Safety First!"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -4.0d
 		}
 	]
-	quest_links: [ ]
+	title: "Storage"
 }

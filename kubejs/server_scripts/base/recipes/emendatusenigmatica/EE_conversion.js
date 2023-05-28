@@ -6,28 +6,25 @@
 
 ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/emendatusenigmatica/ee_conversion/';
-    const materials = ["copper", "iron", "gold", "diamond", "emerald", "netherite"]
-    const types = ["ingot", "nugget", "block"]
+    const materials = ['copper', 'iron', 'gold', 'diamond', 'emerald', 'netherite'];
+    const types = ['ingot', 'nugget', 'block'];
 
-    materials.forEach(material => {
-
-        types.forEach(type => {
+    materials.forEach((material) => {
+        types.forEach((type) => {
             let ee_item = `emendatusenigmatica:${material}_${type}`;
             let mc_item = `minecraft:${material}_${type}`;
             if (Item.exists(ee_item) && Item.exists(mc_item)) {
                 event.shapeless(mc_item, ee_item).id(`${id_prefix}${material}/${type}`);
             }
-        })
+        });
 
         let ee_item = `emendatusenigmatica:raw_${material}`;
         let mc_item = `minecraft:raw_${material}`;
         if (Item.exists(ee_item) && Item.exists(mc_item)) {
-            event.shapeless(mc_item, ee_item).id(`${id_prefix}${material}/raw`);;
+            event.shapeless(mc_item, ee_item).id(`${id_prefix}${material}/raw`);
         }
-        if (Item.exists(ee_item + "_block") && Item.exists(mc_item + "_block")) {
-            event.shapeless(mc_item + "_block", ee_item + "_block").id(`${id_prefix}${material}/raw_block`);;
+        if (Item.exists(ee_item + '_block') && Item.exists(mc_item + '_block')) {
+            event.shapeless(mc_item + '_block', ee_item + '_block').id(`${id_prefix}${material}/raw_block`);
         }
-
-    })
-
+    });
 });

@@ -33,10 +33,10 @@ const ritual_effects = {
             ]
         }
     },
-    teleport_nether: {
+    teleport_overworld: {
         teleport: {
             // Where are we going?
-            arrival: 'minecraft:the_nether',
+            arrival: 'minecraft:overworld',
             // Only allow departure from these dimensions
             departure: ['twilightforest:twilight_forest'],
             // How random the teleport destination is
@@ -54,7 +54,7 @@ const ritual_effects = {
                     // Diameter of selection area, centered on ritual
                     range: 10,
                     // Effect to apply
-                    effect: 'minecraft:fire_resistance',
+                    effect: 'minecraft:slow_falling',
                     // Effect Duration in seconds
                     duration: 20,
                     // Effect level. 1 means 1

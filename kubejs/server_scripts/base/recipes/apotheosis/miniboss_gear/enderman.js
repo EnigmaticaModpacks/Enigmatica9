@@ -15,7 +15,7 @@ ServerEvents.highPriorityData((event) => {
                         nbt: Object.assign(reactive.come_here, leather_colors.void_purple, enchantments.reactive_3)
                     },
                     weight: 50,
-                    drop_chance: 1.0
+                    drop_chance: 0.0
                 },
                 {
                     stack: {
@@ -23,7 +23,7 @@ ServerEvents.highPriorityData((event) => {
                         nbt: Object.assign(reactive.vanish, leather_colors.void_purple, enchantments.reactive_3)
                     },
                     weight: 50,
-                    drop_chance: 1.0
+                    drop_chance: 0.0
                 }
             ],
             leggings: [],

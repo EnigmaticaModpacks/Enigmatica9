@@ -17,7 +17,7 @@ ServerEvents.highPriorityData((event) => {
             ],
             offhands: [
                 {
-                    stack: { item: 'blue_skies:spike_shield', nbt: default_nbt },
+                    stack: { item: 'minecraft:shield', nbt: default_nbt },
                     weight: 100,
                     drop_chance: 0.085
                 }
