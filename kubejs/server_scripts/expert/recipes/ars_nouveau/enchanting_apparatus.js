@@ -338,6 +338,78 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}pneumatic_boots`
         },
         {
+            output: Item.of('mekanism:mekasuit_helmet', {
+                mekData: { modules: { 'mekanism:color_modulation_unit': { amount: 1, color: -14276057, enabled: 1 } } }
+            }),
+            inputs: [
+                'immersiveengineering:component_electronic',
+                '#forge:fabrics/infused',
+                '#forge:gems/infused_diamond',
+                '#forge:fabrics/infused',
+                'ars_elemental:glyph_bubble_shield',
+                '#forge:fabrics/infused',
+                '#forge:gems/infused_diamond',
+                '#forge:fabrics/infused'
+            ],
+            reagents: ['minecraft:netherite_helmet'],
+            sourceCost: 0,
+            id: `${id_prefix}mekasuit_helmet`
+        },
+        {
+            output: Item.of('mekanism:mekasuit_bodyarmor', {
+                mekData: { modules: { 'mekanism:color_modulation_unit': { amount: 1, color: -14276057, enabled: 1 } } }
+            }),
+            inputs: [
+                'immersiveengineering:component_electronic',
+                '#forge:fabrics/infused',
+                '#forge:gems/infused_diamond',
+                '#forge:fabrics/infused',
+                'ars_elemental:glyph_bubble_shield',
+                '#forge:fabrics/infused',
+                '#forge:gems/infused_diamond',
+                '#forge:fabrics/infused'
+            ],
+            reagents: ['minecraft:netherite_chestplate'],
+            sourceCost: 0,
+            id: `${id_prefix}mekasuit_bodyarmor`
+        },
+        {
+            output: Item.of('mekanism:mekasuit_pants', {
+                mekData: { modules: { 'mekanism:color_modulation_unit': { amount: 1, color: -14276057, enabled: 1 } } }
+            }),
+            inputs: [
+                'immersiveengineering:component_electronic',
+                '#forge:fabrics/infused',
+                '#forge:gems/infused_diamond',
+                '#forge:fabrics/infused',
+                'ars_elemental:glyph_bubble_shield',
+                '#forge:fabrics/infused',
+                '#forge:gems/infused_diamond',
+                '#forge:fabrics/infused'
+            ],
+            reagents: ['minecraft:netherite_leggings'],
+            sourceCost: 0,
+            id: `${id_prefix}mekasuit_pants`
+        },
+        {
+            output: Item.of('mekanism:mekasuit_boots', {
+                mekData: { modules: { 'mekanism:color_modulation_unit': { amount: 1, color: -14276057, enabled: 1 } } }
+            }),
+            inputs: [
+                'immersiveengineering:component_electronic',
+                '#forge:fabrics/infused',
+                '#forge:gems/infused_diamond',
+                '#forge:fabrics/infused',
+                'ars_elemental:glyph_bubble_shield',
+                '#forge:fabrics/infused',
+                '#forge:gems/infused_diamond',
+                '#forge:fabrics/infused'
+            ],
+            reagents: ['minecraft:netherite_boots'],
+            sourceCost: 0,
+            id: `${id_prefix}mekasuit_boots`
+        },
+        {
             output: 'mininggadgets:mininggadget_simple',
             inputs: [
                 '#forge:gems/infused_diamond',

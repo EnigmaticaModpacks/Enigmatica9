@@ -439,6 +439,10 @@ jei.expert.items.disabled = [
     'mekanism:boiler_valve',
     'mekanism:pressure_disperser',
     'mekanism:superheating_element',
+    'mekanism:module_radiation_shielding_unit',
+    'mekanism:module_geiger_unit',
+    'mekanism:module_dosimeter_unit',
+    'mekanism:module_inhalation_purification_unit',
 
     'mekanismgenerators:gas_burning_generator',
     'mekanismgenerators:advanced_solar_generator',
