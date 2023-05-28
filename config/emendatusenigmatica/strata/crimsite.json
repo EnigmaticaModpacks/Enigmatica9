@@ -1,6 +1,6 @@
 {
     "id": "create_crimsite",
-    "baseTexture": "create:block/palettes/stone_types/crimsite",
+    "baseTexture": "create:block/palettes/stone_types/natural/crimsite_2",
     "suffix": "crimsite",
     "fillerType": "create:crimsite",
     "localizedName": "Crimsite",
