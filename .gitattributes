@@ -23,8 +23,28 @@
 
 # Manual CRLF / LF conversion.
 # CRLF Files
+config\apotheosis\enchantments.cfg eol=crlf
 config\ars_scalaes-common.toml eol=crlf
+config\ars_scalaes\glyph_expand.toml eol=crlf
+config\ars_scalaes\glyph_resize.toml eol=crlf
+config\ars_scalaes\glyph_shrink.toml eol=crlf
 config\manyideas_core-client.toml eol=crlf
 config\pehkui-client.toml eol=crlf
 config\pehkui-common.toml eol=crlf
-config\apotheosis\enchantments.cfg eol=crlf
+config\toomanyglyphs\glyph_amplify_three.toml eol=crlf
+config\toomanyglyphs\glyph_amplify_two.toml eol=crlf
+config\toomanyglyphs\glyph_chaining.toml eol=crlf
+config\toomanyglyphs\glyph_filter_animal.toml eol=crlf
+config\toomanyglyphs\glyph_filter_block.toml eol=crlf
+config\toomanyglyphs\glyph_filter_entity.toml eol=crlf
+config\toomanyglyphs\glyph_filter_is_baby.toml eol=crlf
+config\toomanyglyphs\glyph_filter_is_mature.toml eol=crlf
+config\toomanyglyphs\glyph_filter_item.toml eol=crlf
+config\toomanyglyphs\glyph_filter_living_not_monster.toml eol=crlf
+config\toomanyglyphs\glyph_filter_living_not_player.toml eol=crlf
+config\toomanyglyphs\glyph_filter_living.toml eol=crlf
+config\toomanyglyphs\glyph_filter_monster.toml eol=crlf
+config\toomanyglyphs\glyph_filter_player.toml eol=crlf
+config\toomanyglyphs\glyph_lay_on_hands.toml eol=crlf
+config\toomanyglyphs\glyph_ray.toml eol=crlf
+config\toomanyglyphs\glyph_reverse_direction.toml eol=crlf
