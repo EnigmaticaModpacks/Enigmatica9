@@ -27,3 +27,4 @@ config\ars_scalaes-common.toml eol=crlf
 config\manyideas_core-client.toml eol=crlf
 config\pehkui-client.toml eol=crlf
 config\pehkui-common.toml eol=crlf
+config\apotheosis\enchantments.cfg eol=crlf
