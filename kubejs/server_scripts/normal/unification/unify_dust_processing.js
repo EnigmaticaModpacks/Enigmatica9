@@ -78,6 +78,9 @@ ServerEvents.recipes((event) => {
             mekanism: true,
             create: true
         },
+        ender_pearl: {
+            create: true
+        },
         // Metals
         zinc: {
             immersiveengineering: true
@@ -155,8 +158,12 @@ ServerEvents.recipes((event) => {
                     thermal: true
                 };
             } else {
-                exceptions[metal].occultism = true;
-                exceptions[metal].thermal = true;
+                if (exceptions[metal].occultism == null) {
+                    exceptions[metal].occultism = true;
+                }
+                if (exceptions[metal].thermal == null) {
+                    exceptions[metal].thermal = true;
+                }
             }
 
             recipetypes_crushing(event, { name: metal, type: 'ingots' }, exceptions);
@@ -168,7 +175,9 @@ ServerEvents.recipes((event) => {
             if (!exceptions[gem]) {
                 exceptions[gem] = { thermal: true };
             } else {
-                exceptions[gem].thermal = true;
+                if (exceptions[gem].thermal == null) {
+                    exceptions[gem].thermal = true;
+                }
             }
             recipetypes_crushing(event, { name: gem, type: 'gems' }, exceptions);
         }
@@ -190,7 +199,7 @@ function recipetypes_crushing(event, material, exceptions, item, tag) {
     const id_prefix = 'enigmatica:normal/unification/dust_processing/';
     let recipe = {
         outputs: {
-            primary: { item: item == null ? `emendatusenigmatica:${material.name}_dust` : item, count: 1, chance: 1 }
+            primary: { item: (item == null) ? `emendatusenigmatica:${material.name}_dust` : item, count: 1, chance: 1 }
         },
         input: '',
         experience: 0.25,
@@ -203,7 +212,7 @@ function recipetypes_crushing(event, material, exceptions, item, tag) {
 
     if (!recipe.exceptions) recipe.exceptions = {};
 
-    recipe.input = tag == null ? `#forge:${material.type}/${material.name}` : tag;
+    recipe.input = (tag == null) ? `#forge:${material.type}/${material.name}` : tag;
     recipe.id_suffix = `${material.type}/${material.name}_dust`;
 
     // Occultism
