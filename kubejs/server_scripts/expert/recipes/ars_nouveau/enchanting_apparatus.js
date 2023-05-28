@@ -92,13 +92,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}drill_bit_diamond`
         },
         {
-            output: 'pneumaticcraft:drill_bit_netherite',
-            inputs: ['#forge:ingots/depths', 'toomanyglyphs:glyph_chaining'],
-            reagents: ['pneumaticcraft:drill_bit_diamond'],
-            sourceCost: 10000,
-            id: `${id_prefix}drill_bit_netherite`
-        },
-        {
             output: 'create:brass_hand',
             inputs: ['#forge:essences/manipulation', '#forge:leather', '#forge:leather', '#forge:leather'],
             reagents: ['#forge:ingots/energized_steel'],

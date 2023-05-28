@@ -81,6 +81,13 @@ ServerEvents.recipes((event) => {
             aura: 15000,
             time: 80,
             id: `${id_prefix}therium_crystal_shard`
+        },
+        {
+            output: 'pneumaticcraft:drill_bit_netherite',
+            input: 'pneumaticcraft:unassembled_netherite_drill_bit',
+            aura: 500000,
+            time: 1800,
+            id: `${id_prefix}drill_bit_netherite`
         }
     ];
 
