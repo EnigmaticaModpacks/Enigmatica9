@@ -212,6 +212,7 @@ ServerEvents.recipes((event) => {
         { id: 'create:crushing/crimsite' },
         { id: 'create:crushing/asurine' },
         { id: 'create:crushing/tuff' },
+        { id: 'create:crushing/diorite' },
         { id: 'create:splashing/red_sand' },
         { id: 'create:splashing/soul_sand' },
         { id: 'create:splashing/gravel' },
