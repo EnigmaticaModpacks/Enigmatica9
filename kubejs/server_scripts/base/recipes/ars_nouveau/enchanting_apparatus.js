@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
                 'thermal:diving_helmet',
                 'thermal:beekeeper_helmet',
                 'minecraft:turtle_helmet',
-                'create:diving_helmet',
+                'create:copper_diving_helmet',
                 'the_bumblezone:stingless_bee_helmet_1',
                 'the_bumblezone:stingless_bee_helmet_2'
             ]
@@ -59,7 +59,7 @@ ServerEvents.recipes((event) => {
                 'thermal:hazmat_boots',
                 'thermal:diving_boots',
                 'thermal:beekeeper_boots',
-                'create:diving_boots',
+                'create:copper_diving_boots',
                 'the_bumblezone:carpenter_bee_boots_2'
             ]
         },
