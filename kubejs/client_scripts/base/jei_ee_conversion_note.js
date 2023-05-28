@@ -28,10 +28,11 @@ JEIEvents.information((event) => {
             event.addItem(ee_item, conversion_message);
         }
         if (Item.exists(ee_item + '_block') && Item.exists(mc_item + '_block')) {
-            event.addItem(ee_item, conversion_message);
+            event.addItem(ee_item + '_block', conversion_message);
         }
     });
 });
+
 ItemEvents.tooltip((event) => {
     const materials = ['copper', 'iron', 'gold', 'diamond', 'emerald', 'netherite'];
     const types = ['ingot', 'nugget', 'block'];
