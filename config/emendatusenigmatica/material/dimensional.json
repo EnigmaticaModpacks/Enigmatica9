@@ -1,7 +1,7 @@
 {
     "id": "dimensional",
     "source": "modded",
-    "localizedName": "Dimensional Shard",
+    "localizedName": "Dimensional",
     "processedTypes": ["storage_block", "cluster", "dust"],
     "properties": {
         "materialType": "gem",
