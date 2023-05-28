@@ -50,7 +50,7 @@ ServerEvents.highPriorityData((event) => {
         {
             weight: 50,
             quality: 3.5,
-            stack: { item: 'create:diving_helmet', nbt: default_nbt },
+            stack: { item: 'create:copper_diving_helmet', nbt: default_nbt },
             type: 'ARMOR',
             dimensions: ['minecraft:overworld'],
             max_rarity: 'mythic'
