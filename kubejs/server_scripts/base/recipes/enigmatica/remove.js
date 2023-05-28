@@ -203,6 +203,10 @@ ServerEvents.recipes((event) => {
         { id: /immersiveengineering:crafting\/plate_.*_hammering/ }, // plates.js related
         { id: /immersiveengineering:crafting\/stick_/ }, // rods.js related
         { id: /emendatusenigmatica:ingot\/from_dust.*\/refined_obsidian/ }, // Removes smelting recipes dust -> ingot for Refined Obsidian
+        { id: /create:(blasting|smelting).*_ingot_from_crushed/ },
+        { id: /create:(blasting|smelting).*_compat_(immersiveengineering|mekanism)/ },
+        { id: /create:splashing\/crushed_raw_/ },
+        { id: /create:splashing\/(immersiveengineering|mekanism)\/crushed_raw/ },
         { id: 'create:crushing/veridium' },
         { id: 'create:crushing/ochrum' },
         { id: 'create:crushing/crimsite' },
