@@ -266,6 +266,7 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:module_geiger_unit' },
         { id: 'mekanism:module_dosimeter_unit' },
         { id: 'mekanism:module_inhalation_purification_unit' },
+        { id: 'mekanism:electrolytic_core' },
 
         { id: 'minecraft:netherite_ingot' },
         { id: 'minecraft:lodestone' },
@@ -419,6 +420,7 @@ ServerEvents.recipes((event) => {
         { id: /_machine_frame/, mod: 'industrialforegoing' },
 
         // Disable Power Generation
+        { mod: 'mekanismgenerators' },
 
         { id: 'ae2:network/blocks/energy_vibration_chamber' },
 
@@ -429,17 +431,7 @@ ServerEvents.recipes((event) => {
         { id: 'immersiveengineering:crafting/thermoelectric_generator' },
         { id: 'immersiveengineering:crafting/dynamo' },
 
-        { id: 'mekanismgenerators:rotational_complex' },
-        { id: 'mekanismgenerators:reactor/glass' },
-        { id: 'mekanismgenerators:saturating_condenser' },
-        { id: 'mekanismgenerators:control_rod_assembly' },
-        { id: 'mekanismgenerators:hohlraum' },
-        { id: 'mekanismgenerators:module_geothermal_generator_unit' },
-        { id: 'mekanismgenerators:module_solar_recharging_unit' },
-        { id: 'mekanismgenerators:solar_panel' },
-        { id: 'mekanismgenerators:laser_focus_matrix' },
-        { id: 'mekanismgenerators:gas_burning_generator' },
-        { id: 'mekanismgenerators:electromagnetic_coil' },
+        { mod: 'mekanismgenerators' },
 
         { id: 'pneumaticcraft:pneumatic_dynamo' },
 

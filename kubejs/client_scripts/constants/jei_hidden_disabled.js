@@ -443,6 +443,7 @@ jei.expert.items.disabled = [
     'mekanism:module_geiger_unit',
     'mekanism:module_dosimeter_unit',
     'mekanism:module_inhalation_purification_unit',
+    'mekanism:electrolytic_core',
 
     'mekanismgenerators:gas_burning_generator',
     'mekanismgenerators:advanced_solar_generator',
