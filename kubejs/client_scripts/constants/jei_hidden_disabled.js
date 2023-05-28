@@ -45,6 +45,8 @@ jei.base.items.disabled = [
 
     /theoneprobe/,
 
+    /create:crushed_raw_.*/,
+
     'createaddition:copper_spool',
     'createaddition:spool',
     'createaddition:festive_spool',
