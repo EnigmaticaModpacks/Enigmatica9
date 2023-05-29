@@ -699,6 +699,23 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: `${id_prefix}bright_arcanite_crystal`
+        },
+        {
+            output: 'hexerei:replacer_satchel',
+            inputs: [
+                'hexerei:medium_satchel',
+                'hexerei:dried_mugwort_flowers',
+                '#forge:essences/manipulation',
+                'hexerei:dried_belladonna_flowers',
+                'hexerei:broom_brush',
+                'hexerei:dried_mandrake_flowers',
+                '#forge:essences/manipulation',
+                'hexerei:dried_yellow_dock_flowers'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:thick' } },
+            liquidOutput: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:thick' } },
+            fluidLevelsConsumed: 1000,
+            id: `hexerei:replacer_satchel_from_mixing_cauldron`
         }
     ];
 
