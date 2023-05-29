@@ -341,6 +341,19 @@ ServerEvents.recipes((event) => {
                 F: '#forge:gears/osmium'
             },
             id: 'mekanism:module_locomotive_boosting_unit'
+        },
+        {
+            output: 'mekanism:modification_station',
+            pattern: ['ABC', 'DEF'],
+            key: {
+                A: 'supplementaries:crystal_display',
+                B: '#forge:essences/manipulation',
+                C: 'create:mechanical_arm',
+                D: 'createaddition:electric_motor',
+                E: 'immersiveengineering:circuit_table',
+                F: 'create:sequenced_gearshift'
+            },
+            id: 'mekanism:modification_station'
         }
     ];
 

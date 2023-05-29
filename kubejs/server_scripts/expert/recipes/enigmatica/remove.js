@@ -62,6 +62,8 @@ ServerEvents.recipes((event) => {
         { id: 'constructionwand:iron_wand' },
 
         { id: /create:pressing\/.*_ingot/ },
+        { id: /create:brass_(ladder|scaffolding|bars)_from_ingots_brass_stonecutting/ },
+        { id: /create:copycat_.*_from_ingots_zinc_stonecutting/ },
         { id: 'create:crafting/kinetics/white_sail' },
         { id: 'create:crafting/kinetics/empty_blaze_burner' },
         { id: 'create:crafting/kinetics/mechanical_crafter' },
@@ -79,7 +81,6 @@ ServerEvents.recipes((event) => {
         { id: 'create:compat/ae2/milling/ender_pearl' },
         { id: 'create:crushing/prismarine_crystals' },
         { id: 'create:sequenced_assembly/track' },
-        { id: 'create:brass_ladder_from_plates_brass_stonecutting' },
 
         { id: /createaddition:pressing\/.*_ingot/ },
         { id: /createaddition:crafting\/capacitor/ },
