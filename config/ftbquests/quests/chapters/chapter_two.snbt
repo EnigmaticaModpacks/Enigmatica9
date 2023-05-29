@@ -728,7 +728,13 @@
 			tasks: [
 				{
 					id: "3D2248A91782812B"
-					item: "quark:ancient_fruit"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "apotheosis:long_knowledge"
+						}
+					}
 					type: "item"
 				}
 				{

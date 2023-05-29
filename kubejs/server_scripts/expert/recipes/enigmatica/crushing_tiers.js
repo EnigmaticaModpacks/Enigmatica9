@@ -15,8 +15,15 @@ ServerEvents.recipes((event) => {
             },
             input: '#forge:ores/netherite',
             crushing_tier: metal_properties['netherite'].crushing_tier,
-            ignore_multiplier: false,
             id_suffix: 'netherite_crushed_ore_from_raw_ore'
+        },
+        {
+            outputs: {
+                primary: 'occultism:crushed_end_stone'
+            },
+            input: 'minecraft:end_stone',
+            crushing_tier: 4,
+            id_suffix: 'crushed_end_stone_from_end_stone'
         }
     ];
 
@@ -40,7 +47,6 @@ ServerEvents.recipes((event) => {
             outputs: outputs,
             input: `#forge:raw_materials/${metal}`,
             crushing_tier: metal_properties[metal].crushing_tier,
-            ignore_multiplier: false,
             id_suffix: `${metal}_crushed_ore_from_raw_ore`
         });
     });
@@ -52,7 +58,6 @@ ServerEvents.recipes((event) => {
             },
             input: `#mekanism:clumps/${metal}`,
             crushing_tier: metal_properties[`${metal}`].crushing_tier,
-            ignore_multiplier: true,
             id_suffix: `${metal}_dirty_dust_from_clumps`
         });
     });

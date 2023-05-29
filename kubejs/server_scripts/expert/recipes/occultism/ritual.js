@@ -967,7 +967,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: Item.of('kubejs:tree_of_life_2', { aura_amount: 200000, aura_max: 1000000 }),
-            activation_item: 'quark:ancient_fruit',
+            activation_item: Item.of(Item.of('minecraft:potion', '{Potion:"apotheosis:knowledge"}')).weakNBT(),
             inputs: [
                 'kubejs:spirit_of_devotion',
                 'kubejs:spirit_of_devotion',
@@ -990,20 +990,22 @@ ServerEvents.recipes((event) => {
         },
         {
             output: Item.of('kubejs:tree_of_life_3', { aura_amount: 500000, aura_max: 1500000 }),
-            activation_item: 'twilightforest:rainbow_oak_sapling',
+            activation_item: Item.of(Item.of('minecraft:potion', '{Potion:"apotheosis:strong_knowledge"}')).weakNBT(),
             inputs: [
-                'kubejs:spirit_of_devotion',
-                'kubejs:spirit_of_devotion',
-                'kubejs:spirit_of_devotion',
-                'kubejs:spirit_of_devotion',
-                '#forge:ingots/tainted_gold',
-                'thermal:phyto_tnt',
-                '#forge:ingots/tainted_gold',
-                'thermal:phyto_tnt',
-                'thermal:phyto_tnt',
-                '#forge:ingots/tainted_gold',
-                'thermal:phyto_tnt',
-                '#forge:ingots/tainted_gold'
+                'kubejs:heart_of_the_tempest',
+                'minecraft:heart_of_the_sea',
+                'kubejs:heart_of_the_inferno',
+                'kubejs:heart_of_the_mountain',
+
+                'quark:paper_lantern',
+                'minecraft:sea_lantern',
+                'quark:blaze_lantern',
+                'supplementaries:deepslate_lamp',
+
+                'quark:paper_lantern',
+                'minecraft:sea_lantern',
+                'quark:blaze_lantern',
+                'supplementaries:deepslate_lamp'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_3',
             ritual_type: 'occultism:craft',
@@ -1075,6 +1077,31 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:tree_of_life_stage_2',
             duration: 10,
             id: `${id_prefix}ritual_teleport_nether`
+        },
+        {
+            output: 'kubejs:teleport_end',
+            activation_item: '#forge:gems/infused_ender',
+            inputs: [
+                '#forge:ingots/brass',
+                'naturesaura:gold_leaf',
+                '#forge:essences/air',
+                'naturesaura:gold_leaf',
+
+                '#forge:dusts/end_stone',
+                '#forge:dusts/end_stone',
+                '#forge:dusts/end_stone',
+                '#forge:dusts/end_stone',
+
+                '#forge:dusts/end_stone',
+                '#forge:dusts/end_stone',
+                '#forge:dusts/end_stone',
+                '#forge:dusts/end_stone'
+            ],
+            ritual_dummy: 'kubejs:ritual_teleport_end',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:tree_of_life_stage_3',
+            duration: 10,
+            id: `${id_prefix}ritual_teleport_end`
         },
         {
             output: Item.of('gateways:gate_pearl', `{gateway:"gateways:wither_council_gate", radius:5}`),

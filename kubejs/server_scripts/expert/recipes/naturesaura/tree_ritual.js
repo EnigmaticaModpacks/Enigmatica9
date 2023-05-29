@@ -309,6 +309,22 @@ ServerEvents.recipes((event) => {
             time: 120,
             sapling: 'quark:ancient_sapling',
             id: `${id_prefix}redstone_mushroom_spores`
+        },
+        {
+            output: 'kubejs:primed_aetheric_heart',
+            ingredients: [
+                '#forge:storage_blocks/nitro_crystal',
+                '#forge:storage_blocks/soul_steel',
+                'spirit:soul_slate',
+                'spirit:soul_slate',
+                '#forge:gears/brass',
+                '#forge:gears/brass',
+                '#forge:gears/brass',
+                '#forge:gears/brass'
+            ],
+            time: 120,
+            sapling: 'ars_nouveau:purple_archwood_sapling',
+            id: `${id_prefix}primed_aetheric_heart`
         }
 
         /*

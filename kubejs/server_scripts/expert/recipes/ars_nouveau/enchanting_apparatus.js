@@ -774,6 +774,82 @@ ServerEvents.recipes((event) => {
             reagents: ['#forge:gears/electrum'],
             sourceCost: 1000,
             id: `${id_prefix}diamond_gear`
+        },
+        {
+            output: 'minecraft:heart_of_the_sea',
+            inputs: [
+                'ars_elemental:water_focus',
+                '#forge:essences/water',
+                '#forge:essences/water',
+                '#forge:essences/water',
+                Item.of(
+                    'pneumaticcraft:spawner_core',
+                    '{"pneumaticcraft:SpawnerCoreStats":{"thermal:blizz":100}}'
+                ).weakNBT(),
+                '#forge:essences/water',
+                '#forge:essences/water',
+                '#forge:essences/water'
+            ],
+            reagents: ['kubejs:primed_aetheric_heart'],
+            sourceCost: 1000,
+            id: `${id_prefix}heart_of_the_sea`
+        },
+        {
+            output: 'kubejs:heart_of_the_mountain',
+            inputs: [
+                'ars_elemental:earth_focus',
+                '#forge:essences/earth',
+                '#forge:essences/earth',
+                '#forge:essences/earth',
+                Item.of(
+                    'pneumaticcraft:spawner_core',
+                    '{"pneumaticcraft:SpawnerCoreStats":{"thermal:basalz":100}}'
+                ).weakNBT(),
+                '#forge:essences/earth',
+                '#forge:essences/earth',
+                '#forge:essences/earth'
+            ],
+            reagents: ['kubejs:primed_aetheric_heart'],
+            sourceCost: 1000,
+            id: `${id_prefix}heart_of_the_mountain`
+        },
+        {
+            output: 'kubejs:heart_of_the_inferno',
+            inputs: [
+                'ars_elemental:fire_focus',
+                '#forge:essences/fire',
+                '#forge:essences/fire',
+                '#forge:essences/fire',
+                Item.of(
+                    'pneumaticcraft:spawner_core',
+                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:blaze":100}}'
+                ).weakNBT(),
+                '#forge:essences/fire',
+                '#forge:essences/fire',
+                '#forge:essences/fire'
+            ],
+            reagents: ['kubejs:primed_aetheric_heart'],
+            sourceCost: 1000,
+            id: `${id_prefix}heart_of_the_inferno`
+        },
+        {
+            output: 'kubejs:heart_of_the_tempest',
+            inputs: [
+                'ars_elemental:air_focus',
+                '#forge:essences/air',
+                '#forge:essences/air',
+                '#forge:essences/air',
+                Item.of(
+                    'pneumaticcraft:spawner_core',
+                    '{"pneumaticcraft:SpawnerCoreStats":{"thermal:blitz":100}}'
+                ).weakNBT(),
+                '#forge:essences/air',
+                '#forge:essences/air',
+                '#forge:essences/air'
+            ],
+            reagents: ['kubejs:primed_aetheric_heart'],
+            sourceCost: 1000,
+            id: `${id_prefix}heart_of_the_tempest`
         }
     ];
 

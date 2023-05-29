@@ -148,6 +148,64 @@
 			x: 0.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["7674A0390C41044C"]
+			id: "04B0F0BE6E54D620"
+			tasks: [{
+				id: "0D1ED0C7EDB28A00"
+				item: "emendatusenigmatica:brass_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0672B242C31F4A11"]
+			icon: "minecraft:chorus_fruit"
+			id: "0EBE44D4C30C0E51"
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					icon: "minecraft:chorus_fruit"
+					id: "2707A505AF3BD75E"
+					title: "Visit The End"
+					type: "dimension"
+				}
+				{
+					id: "385F0F4E48C8AE87"
+					item: "kubejs:ritual_teleport_end"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["04B0F0BE6E54D620"]
+			icon: "kubejs:tree_of_life_3"
+			id: "0672B242C31F4A11"
+			tasks: [
+				{
+					id: "009C9545ED44311C"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "apotheosis:strong_knowledge"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3A42495235D2DD89"
+					item: "kubejs:ritual_tree_of_life_3"
+					type: "item"
+				}
+			]
+			title: "Tree of Life"
+			x: 1.0d
+			y: 3.0d
+		}
 	]
 	title: "Chapter Three"
 }

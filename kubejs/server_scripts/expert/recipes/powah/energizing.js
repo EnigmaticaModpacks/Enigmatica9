@@ -24,7 +24,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: '2x powah:crystal_nitro',
-            inputs: ['#forge:pellets/polonium', 'quark:red_rune', '#forge:nether_stars'],
+            inputs: ['#forge:pellets/polonium', 'quark:red_rune', '#forge:pellets/polonium'],
             energy: '12800000',
             id: `${id_prefix}crystal_nitro`
         },
@@ -59,6 +59,19 @@ ServerEvents.recipes((event) => {
             inputs: ['powah:blank_card', '#forge:gems/carminite'],
             energy: '12000000',
             id: `${id_prefix}binding_card`
+        },
+        {
+            output: 'rftoolsbase:infused_enderpearl',
+            inputs: [
+                '#forge:storage_blocks/dimensional',
+                Item.of(
+                    'pneumaticcraft:spawner_core',
+                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:enderman":100}}'
+                ).weakNBT(),
+                '#forge:storage_blocks/dimensional'
+            ],
+            energy: '12000000',
+            id: `${id_prefix}infused_enderpearl`
         }
     ];
 

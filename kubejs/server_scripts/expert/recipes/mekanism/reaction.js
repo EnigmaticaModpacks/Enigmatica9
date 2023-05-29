@@ -18,7 +18,7 @@ ServerEvents.recipes((event) => {
             itemOutput: { item: 'mekanism:pellet_polonium' },
             fluidInput: { amount: 250, tag: 'forge:experience' },
             gasInput: { amount: 1000, gas: 'mekanism:polonium' },
-            itemInput: { ingredient: { tag: 'forge:dusts/fluorite' } },
+            itemInput: { ingredient: { tag: 'forge:nether_stars' } },
             duration: 100,
             id: `${id_prefix}pellet_polonium`
         },

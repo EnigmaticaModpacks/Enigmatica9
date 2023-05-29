@@ -214,6 +214,7 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:reaction/substrate/water_hydrogen' },
         { id: 'mekanism:reaction/substrate/water_ethene' },
         { id: 'mekanism:reaction/substrate/ethene_oxygen' },
+        { id: 'mekanism:nucleosynthesizing/heart_of_the_sea' },
         { id: 'mekanism:logistical_sorter' },
         { id: 'mekanism:upgrade/anchor' },
         { id: 'mekanism:sps_casing' },
@@ -340,6 +341,7 @@ ServerEvents.recipes((event) => {
 
         { id: 'rftoolsbase:dimensionalshard' },
         { id: 'rftoolsbase:infused_diamond' },
+        { id: 'rftoolsbase:infused_enderpearl' },
 
         { id: 'sophisticatedbackpacks:battery_upgrade' },
 
