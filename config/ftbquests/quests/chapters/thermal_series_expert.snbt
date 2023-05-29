@@ -1371,13 +1371,7 @@
 			tasks: [{
 				icon: "emendatusenigmatica:raw_nickel"
 				id: "1BC1E501C5643956"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:raw_materials/nickel"
-					}
-				}
+				item: "minecraft:raw_iron"
 				title: "Raw Nickel"
 				type: "item"
 			}]
