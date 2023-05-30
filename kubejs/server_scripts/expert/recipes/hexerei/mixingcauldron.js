@@ -680,15 +680,15 @@ ServerEvents.recipes((event) => {
             id: `hexerei:infused_fabric_from_mixing_cauldron`
         },
         {
-            output: 'kubejs:bright_arcanite_crystal',
+            output: '4x kubejs:bright_arcanite_crystal',
             inputs: [
                 'kubejs:dim_arcanite_crystal',
                 'kubejs:sylvanite',
-                '#forge:dusts/lithium',
                 'kubejs:sylvanite',
-                '#forge:dusts/lithium',
                 'kubejs:sylvanite',
-                '#forge:dusts/lithium',
+                'kubejs:dim_arcanite_crystal',
+                'kubejs:sylvanite',
+                'kubejs:sylvanite',
                 'kubejs:sylvanite'
             ],
             liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:shock_potion' } },
@@ -699,6 +699,27 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: `${id_prefix}bright_arcanite_crystal`
+        },
+        {
+            output: '4x kubejs:iridescent_arcanite_crystal',
+            inputs: [
+                'kubejs:bright_arcanite_crystal',
+                '#forge:dusts/brass',
+                '#forge:dusts/brass',
+                '#forge:dusts/brass',
+                '#forge:gems/nitro',
+                '#forge:dusts/brass',
+                '#forge:dusts/brass',
+                '#forge:dusts/brass'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:shock_potion' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:shock_potion' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}iridescent_arcanite_crystal`
         },
         {
             output: 'hexerei:replacer_satchel',
