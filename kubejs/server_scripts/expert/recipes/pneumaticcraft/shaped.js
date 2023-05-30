@@ -326,6 +326,19 @@ ServerEvents.recipes((event) => {
                 C: 'pneumaticcraft:module_expansion_card'
             },
             id: `pneumaticcraft:pressure_chamber_interface`
+        },
+        {
+            output: 'pneumaticcraft:vacuum_trap',
+            pattern: ['ABA', 'CDE', 'FFF'],
+            key: {
+                A: '#forge:gears/netherite',
+                B: 'supplementaries:netherite_trapdoor',
+                C: '#forge:storage_blocks/soul_steel',
+                D: 'spirit:soul_crystal',
+                E: 'pneumaticcraft:pressure_tube',
+                F: '#forge:ingots/soul_steel'
+            },
+            id: `pneumaticcraft:vacuum_trap`
         }
     ];
 
