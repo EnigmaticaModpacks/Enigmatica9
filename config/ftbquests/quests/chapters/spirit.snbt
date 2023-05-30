@@ -108,6 +108,14 @@
 				}
 			}
 			id: "4883919A7D067958"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "70AD156DCAFD0200"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "323B0A316D4EFC03"
 				item: {
@@ -177,6 +185,14 @@
 			]
 			icon: "minecraft:soul_campfire"
 			id: "025ECC6F5458ABB7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "7AE09C2B127B056C"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "66787F85815BDB87"
@@ -196,6 +212,14 @@
 				"The more souls contained in the Crystal, the better the Soul Cage will be!"
 			]
 			id: "5346D41AAE257E52"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "43916A1487F20C59"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "2F1C9041E33CE52F"
 				item: "spirit:soul_cage"
@@ -212,6 +236,14 @@
 				"Filling the Crystal requires killing mobs with it in one’s inventory. Special weapons must be used as well; either Soul Steel tools or weapons enchanted with Soul Reaper will do nicely. "
 			]
 			id: "57BF53D313AF25D1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "0B4C2A547E498C69"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "67ECB1C64AFC1CD4"
 				item: "spirit:soul_crystal"
@@ -232,6 +264,14 @@
 				"Crystal Pedestals may also be used to combine two Soul Crystals with like souls stored in them. Place one on the Pedestal, then Right-Click it with the other to transfer into the Crystal on the Pedestal."
 			]
 			id: "72404755AE801AD0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "6E37FF75A1558B1B"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "2248DAC6DBF9E42F"
 				item: "spirit:crystal_pedestal"
@@ -244,6 +284,14 @@
 			dependencies: ["025ECC6F5458ABB7"]
 			description: ["Pedestals are decorative blocks used to display items. Right-Click an item onto it to display. "]
 			id: "1175EB3DD0105811"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "5F1AF6109F3754D0"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "2C6D9BB6EDEC585E"
 				item: "spirit:pedestal"
@@ -262,11 +310,21 @@
 				"Any displayed soul may be converted to a Crude Soul by Right-Clicking with a Soul Steel Wand. "
 			]
 			id: "193FD67844E7D2CD"
-			rewards: [{
-				id: "2D7722107B0E6B0C"
-				item: "spirit:soul_steel_wand"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2D7722107B0E6B0C"
+					item: "spirit:soul_steel_wand"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "77FCCB80FEB9BBB5"
+					player_command: false
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
 			tasks: [{
 				id: "30B7F99C2453450E"
 				item: "spirit:soul_pedestal"
