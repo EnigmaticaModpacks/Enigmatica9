@@ -2044,7 +2044,7 @@
 		}
 		{
 			dependencies: ["355D6EAEA6130932"]
-			description: ["With a Starballon in tow, a Starbuncle may transport Mekanism gasses from place to place. "]
+			description: ["With a Starballoon in tow, a Starbuncle may transport Mekanism gasses from place to place. "]
 			id: "1F46F472B7FB88D5"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
