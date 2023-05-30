@@ -4,7 +4,7 @@
 
 ### 🌟 Improvements
 
--   Expand loot in Twilight Forest, Blue Skies, and other dungeons.
+-   Expand loot in Twilight Forest and other dungeons.
 -   Make Fell a Tier 1 glyph and simplify the recipe.
 -   Update Death Tome loot to include new Tier 1 glyphs.
 -   Aloe Vera may now be used to craft Fire Resistance potions.
