@@ -1,0 +1,280 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "spirit"
+	group: "5A8B89F87F77CF4C"
+	icon: "spirit:soul_crystal"
+	id: "596CC800F761E377"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Spirit is a small mod with one primary focus: spawning mobs. "]
+			icon: "spirit:soul_crystal"
+			id: "0EF8C14BA566F377"
+			shape: "gear"
+			tasks: [{
+				id: "0A12ECED7816E2F0"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			title: "Spirit"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["57BF53D313AF25D1"]
+			description: [
+				"In addition to harvesting extra souls when used to kill mobs, Soul Steel tools may also be empowered with the souls contained within a Soul Crystal. They may also be repaired by dropping them in Soul Fire. "
+				""
+				"The weapon will automatically pull from a Soul Crystal in one’s inventory when empowered, applying extra damage or special effects on hit. Be warned; this does consume souls from the Soul Crystal. "
+				""
+				"A tool may be empowered or depowered at any time by pressing its keybind. "
+				""
+				""
+				"{@pagebreak}"
+				"&nBee&r"
+				"● Applies poison on hit"
+				""
+				"&nBlaze&r"
+				"● Sets blocks and mobs ablaze"
+				""
+				"&nCat&r"
+				"● Applies speed on hit"
+				""
+				"&nCave Spider&r"
+				"● Applies poison on hit"
+				""
+				"&nChicken&r"
+				"● Applies slow falling on hit"
+				"{@pagebreak}"
+				"&nCreeper&r"
+				"● Explodes on impact"
+				""
+				"&nDolphin&r"
+				"● Applies dolphin's grace on hit"
+				""
+				"&nGhast&r"
+				"● Sets mobs and blocks ablaze"
+				"● Explodes on impact"
+				""
+				"&nGlow Squid&r"
+				"● Applies glowing on impact"
+				""
+				"&nIron Golem&r"
+				"● Provides 2 additional damage on hit"
+				"● Provides 1 additional level of "
+				"  knockback on hit"
+				"{@pagebreak}"
+				"&nPufferfish&r"
+				"● Applies poison on hit"
+				""
+				"&nRabbit&r"
+				"● Applies jump boost on hit"
+				""
+				"&nRavager&r"
+				"● Provides 4 additional damage on hit"
+				"● Provides 2 additional levels of "
+				"  knockback on hit"
+				""
+				"&nShulker&r"
+				"● Applies levitation on hit"
+				""
+				"&nSquid&r"
+				"● Applies blindness on hit"
+				"{@pagebreak}"
+				"&nTurtle&r"
+				"● Applies slowness on hit"
+				"● Applies resistance on hit"
+				""
+				"&nWarden&r"
+				"● Provides 5 additional damage on hit"
+				"● Provides 2 additional levels of "
+				"  knockback on hit"
+				"● Applies darkness on hit"
+				""
+				"&nWither&r"
+				"● Applies wither on hit"
+				"● Explodes on impact"
+				""
+				"&nWither Skeleton&r"
+				"● Applies wither on hit"
+			]
+			icon: {
+				Count: 1b
+				id: "spirit:soul_steel_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4883919A7D067958"
+			tasks: [{
+				id: "323B0A316D4EFC03"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "spirit:soul_steel_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "spirit:soul_steel_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "spirit:soul_steel_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "spirit:soul_steel_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "spirit:soul_steel_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "spirit:soul_steel_bow"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Soul Steel Tools"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0EF8C14BA566F377"]
+			description: [
+				"Soul Engulfing is the primary crafting mechanic introduced by Spirit. It involves building some structure with a Soul Fire burning in the middle, and then dropping an item into the Soul Fire."
+				""
+				"For some crafts, this will consume the structure. For others, the structure will not be consumed. In either case, if the structure and materials are valid, the resulting item will be dropped on the ground. "
+				""
+				"The structure required for each craft, as well as an indication if it will be consumed, is shown in JEI. "
+			]
+			icon: "minecraft:soul_campfire"
+			id: "025ECC6F5458ABB7"
+			shape: "hexagon"
+			tasks: [{
+				id: "66787F85815BDB87"
+				item: "minecraft:soul_sand"
+				title: "Soul Fire"
+				type: "item"
+			}]
+			title: "Getting Started: Soul Engulfing"
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["57BF53D313AF25D1"]
+			description: [
+				"A Soul Cage is used to spawn more mobs, simply put. A Soul Crystal with enough souls stored in it may be Right-Clicked on it to set the type. "
+				""
+				"The more souls contained in the Crystal, the better the Soul Cage will be!"
+			]
+			id: "5346D41AAE257E52"
+			tasks: [{
+				id: "2F1C9041E33CE52F"
+				item: "spirit:soul_cage"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["025ECC6F5458ABB7"]
+			description: [
+				"The Soul Crystal itself is used to store mob souls, with each crystal holding a single type of mob. "
+				""
+				"Filling the Crystal requires killing mobs with it in one’s inventory. Special weapons must be used as well; either Soul Steel tools or weapons enchanted with Soul Reaper will do nicely. "
+			]
+			id: "57BF53D313AF25D1"
+			tasks: [{
+				id: "67ECB1C64AFC1CD4"
+				item: "spirit:soul_crystal"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5346D41AAE257E52"]
+			description: [
+				"Crystal Pedestals may be used to help automate filling Soul Crystals. "
+				""
+				"Place one in a mob farm and provide it with a Soul Crystal. Any time a mob of the correct type is killed by an appropriate weapon within six blocks of it, the souls will be transferred into the Soul Crystal. "
+				""
+				"Modular Routers with Activator Modules, Create Deployers, and PneumaticCraft Drones are all capable of wielding such a weapon. Just be sure to drop it in Soul Fire every now and then to repair it!"
+				""
+				"Crystal Pedestals may also be used to combine two Soul Crystals with like souls stored in them. Place one on the Pedestal, then Right-Click it with the other to transfer into the Crystal on the Pedestal."
+			]
+			id: "72404755AE801AD0"
+			tasks: [{
+				id: "2248DAC6DBF9E42F"
+				item: "spirit:crystal_pedestal"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["025ECC6F5458ABB7"]
+			description: ["Pedestals are decorative blocks used to display items. Right-Click an item onto it to display. "]
+			id: "1175EB3DD0105811"
+			tasks: [{
+				id: "2C6D9BB6EDEC585E"
+				item: "spirit:pedestal"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["025ECC6F5458ABB7"]
+			description: [
+				"Soul Pedestals may be used to display mob souls for a more macabre sort of decoration. Right-Click with a Soul Crystal to display the contained mob."
+				""
+				"Soul Crystal Shards and Soul Crystals will display an actual mob entity, while Crude Soul Crystals will only display a generic, though very cute, Crude Soul. "
+				""
+				"Any displayed soul may be converted to a Crude Soul by Right-Clicking with a Soul Steel Wand. "
+			]
+			id: "193FD67844E7D2CD"
+			rewards: [{
+				id: "2D7722107B0E6B0C"
+				item: "spirit:soul_steel_wand"
+				type: "item"
+			}]
+			tasks: [{
+				id: "30B7F99C2453450E"
+				item: "spirit:soul_pedestal"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+	]
+	title: "Spirit"
+}
