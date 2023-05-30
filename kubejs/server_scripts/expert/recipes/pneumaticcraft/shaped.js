@@ -339,6 +339,16 @@ ServerEvents.recipes((event) => {
                 F: '#forge:ingots/soul_steel'
             },
             id: `pneumaticcraft:vacuum_trap`
+        },
+        {
+            output: 'pneumaticcraft:pressurized_spawner',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:ingots/soul_steel',
+                B: 'pneumaticcraft:advanced_pressure_tube',
+                C: 'spirit:soul_cage'
+            },
+            id: `pneumaticcraft:pressurized_spawner`
         }
     ];
 

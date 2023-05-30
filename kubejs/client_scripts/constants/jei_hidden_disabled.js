@@ -520,6 +520,8 @@ jei.expert.items.disabled = [
     'pneumaticcraft:empty_pcb',
     'pneumaticcraft:solar_cell',
     'pneumaticcraft:solar_wafer',
+    'pneumaticcraft:empty_spawner',
+    'pneumaticcraft:spawner_extractor',
 
     /powah:(thermo_generator|solar_panel|furnator|magmator|reactor|energy|battery|ender)/,
     /powah:(energizing_rod_|player_transmitter_|capacitor_)(blazing|hardened)/,

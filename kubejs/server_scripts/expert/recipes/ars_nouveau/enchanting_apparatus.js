@@ -850,6 +850,22 @@ ServerEvents.recipes((event) => {
             reagents: ['kubejs:primed_aetheric_heart'],
             sourceCost: 1000,
             id: `${id_prefix}heart_of_the_tempest`
+        },
+        {
+            output: 'pneumaticcraft:spawner_core_shell',
+            inputs: [
+                'spirit:soul_glass',
+                '#forge:gems/nitro',
+                'spirit:soul_glass',
+                '#forge:gems/nitro',
+                'spirit:soul_glass',
+                '#forge:gems/nitro',
+                'spirit:soul_glass',
+                '#forge:gems/nitro'
+            ],
+            reagents: ['occultism:soul_gem'],
+            sourceCost: 1000,
+            id: `${id_prefix}spawner_core_shell`
         }
     ];
 

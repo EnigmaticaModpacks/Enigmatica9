@@ -317,6 +317,8 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:etching_tank' },
         { id: 'pneumaticcraft:uv_light_box' },
         { id: 'pneumaticcraft:empty_pcb_from_failed_pcb' },
+        { id: 'pneumaticcraft:spawner_extractor' },
+        { id: 'pneumaticcraft:spawner_core_shell' },
 
         { id: 'powah:crafting/dielectric_rod_h' },
         { id: 'powah:crafting/dielectric_paste' },
