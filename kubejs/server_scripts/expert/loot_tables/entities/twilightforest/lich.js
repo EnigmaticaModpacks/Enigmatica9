@@ -15,6 +15,11 @@ ServerEvents.genericLootTables((event) => {
         });
 
         table.addPool((pool) => {
+            pool.rolls = [1, 1];
+            pool.addItem(Item.of('minecraft:enchanted_book').enchant('spirit:soul_reaper', 1), 1, 1);
+        });
+
+        table.addPool((pool) => {
             pool.rolls = [5, 15];
             pool.addItem('twilightforest:charm_of_life_2', 1, 1);
         });

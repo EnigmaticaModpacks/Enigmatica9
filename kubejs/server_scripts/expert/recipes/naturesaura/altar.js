@@ -88,6 +88,13 @@ ServerEvents.recipes((event) => {
             aura: 500000,
             time: 1800,
             id: `${id_prefix}drill_bit_netherite`
+        },
+        {
+            output: 'spirit:soul_crystal',
+            input: 'spirit:crude_soul_crystal',
+            aura: 15000,
+            time: 80,
+            id: `${id_prefix}soul_crystal`
         }
     ];
 

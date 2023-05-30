@@ -17,7 +17,9 @@ ServerEvents.highPriorityData((event) => {
         { ore: 'emendatusenigmatica:uranium_ore', max_length: 12, size_variation: 0.4, weight: 10 },
         { ore: 'emendatusenigmatica:nickel_ore', max_length: 8, size_variation: 0.9, weight: 30 },
         { ore: 'emendatusenigmatica:osmium_ore', max_length: 10, size_variation: 0.8, weight: 15 },
-        { ore: 'emendatusenigmatica:lead_ore', max_length: 9, size_variation: 0.7, weight: 15 }
+        { ore: 'emendatusenigmatica:lead_ore', max_length: 9, size_variation: 0.7, weight: 15 },
+
+        { ore: 'minecraft:calcite', max_length: 9, size_variation: 0.7, weight: 15 }
     ];
 
     recipes.forEach((recipe) => {

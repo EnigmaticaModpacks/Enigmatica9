@@ -61,13 +61,13 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}printed_silicon`
         },
         {
-            results: [{ item: 'ars_nouveau:source_gem' }, { item: 'thermal:chiller_ball_cast' }],
+            results: [{ item: 'emendatusenigmatica:source_gem' }, { item: 'thermal:chiller_ball_cast' }],
             inputs: [{ item: 'thermal:chiller_ball_cast' }],
             fluid: { amount: 250, tag: 'forge:source' },
             id: `${id_prefix}source_gem`
         },
         {
-            results: [{ item: 'ars_nouveau:source_gem_block' }, { item: 'thermal:machine_frame' }],
+            results: [{ item: 'emendatusenigmatica:source_block' }, { item: 'thermal:machine_frame' }],
             inputs: [{ item: 'thermal:machine_frame' }],
             fluid: { amount: 1000, tag: 'forge:source' },
             id: `${id_prefix}source_gem_block`

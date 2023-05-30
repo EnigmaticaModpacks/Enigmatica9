@@ -551,8 +551,6 @@
 				"Crafting a broom to get around might help in avoiding some more… deadly obstacles. "
 				""
 				"Obtain the necessary Blood by crafting a Blood Sigil and installing it in a Mixing Cauldron. Jump up and down inside to fill the Cauldron with your own blood and bottle it by Right-Clicking with a Glass Bottle."
-				""
-				"Note: Broom durability has been disabled in Expert. Happy skies!"
 			]
 			hide_dependency_lines: true
 			icon: {

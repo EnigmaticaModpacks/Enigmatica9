@@ -356,6 +356,9 @@ ServerEvents.recipes((event) => {
         { id: `spirit:soul_engulfing/soul_slate` },
         { id: `spirit:soul_engulfing/soul_steel` },
         { id: `spirit:soul_engulfing/soul_steel_block` },
+        { id: `spirit:soul_engulfing/crude_soul_crystal` },
+        { id: `spirit:soul_engulfing/soul_crystal_shard` },
+        { id: `spirit:soul_engulfing/soul_crystal` },
 
         { id: 'starbunclemania:fluid_jar' },
         { id: 'starbunclemania:fluid_sourcelink' },
