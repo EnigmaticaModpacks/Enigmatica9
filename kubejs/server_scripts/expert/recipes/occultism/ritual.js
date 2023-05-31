@@ -171,7 +171,7 @@ ServerEvents.recipes((event) => {
                     Items: [
                         { Count: 1, Slot: 0, id: 'hexerei:gold_rings' },
                         { Count: 1, Slot: 1, id: 'hexerei:small_satchel' },
-                        { Count: 1, Slot: 2, id: 'hexerei:broom_brush', tag: { Damage: 0, Unbreakable: 1 } }
+                        { Count: 1, Slot: 2, id: 'hexerei:broom_brush' }
                     ],
                     Size: 30
                 },
@@ -194,6 +194,100 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:summon_familiar',
             duration: 10,
             id: `${id_prefix}ritual_craft_willow_broom`
+        },
+        {
+            output: Item.of('hexerei:witch_hazel_broom', {
+                Inventory: {
+                    Items: [
+                        { Count: 1, Slot: 0, id: 'hexerei:gold_rings' },
+                        { Count: 1, Slot: 1, id: 'hexerei:small_satchel' },
+                        { Count: 1, Slot: 2, id: 'hexerei:broom_brush' }
+                    ],
+                    Size: 30
+                },
+                display: { Name: '{"translate":"item.hexerei.witch_hazel_broom"}' },
+                floatMode: 0
+            }),
+            activation_item: 'hexerei:blood_bottle',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'hexerei:small_satchel',
+                'hexerei:broom_brush',
+                'hexerei:gold_rings',
+                'hexerei:dried_yellow_dock_leaves',
+                'hexerei:dried_yellow_dock_leaves',
+                'hexerei:witch_hazel_log',
+                'hexerei:witch_hazel_log'
+            ],
+            ritual_dummy: 'kubejs:ritual_craft_witch_hazel_broom',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_witch_hazel_broom`
+        },
+        {
+            output: Item.of('ars_scalaes:archwood_broom', {
+                Inventory: {
+                    Items: [
+                        { Count: 1, Slot: 0, id: 'hexerei:gold_rings' },
+                        { Count: 1, Slot: 1, id: 'hexerei:small_satchel' },
+                        { Count: 1, Slot: 2, id: 'hexerei:broom_brush' }
+                    ],
+                    Size: 30
+                },
+                display: { Name: '{"translate":"item.ars_scalaes.archwood_broom"}' },
+                floatMode: 0
+            }),
+            activation_item: 'hexerei:blood_bottle',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'hexerei:small_satchel',
+                'hexerei:broom_brush',
+                'hexerei:gold_rings',
+                'hexerei:dried_yellow_dock_leaves',
+                'hexerei:dried_yellow_dock_leaves',
+                '#forge:logs/archwood',
+                '#forge:logs/archwood'
+            ],
+            ritual_dummy: 'kubejs:ritual_craft_archwood_broom',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_archwood_broom`
+        },
+        {
+            output: Item.of('hexerei:mahogany_broom', {
+                Inventory: {
+                    Items: [
+                        { Count: 1, Slot: 0, id: 'hexerei:gold_rings' },
+                        { Count: 1, Slot: 1, id: 'hexerei:small_satchel' },
+                        { Count: 1, Slot: 2, id: 'hexerei:broom_brush' }
+                    ],
+                    Size: 30
+                },
+                display: { Name: '{"translate":"item.hexerei.mahogany_broom"}' },
+                floatMode: 0
+            }),
+            activation_item: 'hexerei:blood_bottle',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'hexerei:small_satchel',
+                'hexerei:broom_brush',
+                'hexerei:gold_rings',
+                'hexerei:dried_yellow_dock_leaves',
+                'hexerei:dried_yellow_dock_leaves',
+                'hexerei:mahogany_log',
+                'hexerei:mahogany_log',
+                '#forge:gems/therium',
+                '#forge:gems/therium',
+                '#forge:gems/therium',
+                '#forge:gems/therium'
+            ],
+            ritual_dummy: 'kubejs:ritual_craft_mahogany_broom',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_mahogany_broom`
         },
         {
             // Water Breathing

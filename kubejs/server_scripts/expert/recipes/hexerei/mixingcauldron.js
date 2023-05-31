@@ -737,6 +737,80 @@ ServerEvents.recipes((event) => {
             liquidOutput: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:thick' } },
             fluidLevelsConsumed: 1000,
             id: `hexerei:replacer_satchel_from_mixing_cauldron`
+        },
+        {
+            output: 'hexerei:wet_broom_brush',
+            inputs: [
+                'hexerei:mandrake_root',
+                'minecraft:wheat',
+                'hexerei:mugwort_leaves',
+                'minecraft:wheat',
+                'hexerei:mandrake_root',
+                'minecraft:wheat',
+                'hexerei:yellow_dock_leaves',
+                'minecraft:wheat'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 1000,
+            id: `${id_prefix}wet_broom_brush`
+        },
+        {
+            output: 'hexerei:wet_herb_enhanced_broom_brush',
+            inputs: [
+                ['hexerei:broom_brush', 'hexerei:wet_broom_brush'],
+                'hexerei:belladonna_flowers',
+                'hexerei:belladonna_berries',
+                'hexerei:mandrake_root',
+                'hexerei:mandrake_flowers',
+                'hexerei:mandrake_root',
+                'hexerei:mugwort_flowers',
+                'hexerei:yellow_dock_flowers'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 1000,
+            id: `${id_prefix}wet_herb_enhanced_broom_brush`
+        },
+        {
+            output: 'ars_scalaes:wet_magebloom_brush',
+            inputs: [
+                ['hexerei:herb_enhanced_broom_brush', 'hexerei:wet_herb_enhanced_broom_brush'],
+                'ars_nouveau:magebloom',
+                'ars_nouveau:magebloom',
+                'hexerei:mandrake_root',
+                'hexerei:mandrake_flowers',
+                'hexerei:mandrake_root',
+                'ars_nouveau:magebloom',
+                'ars_nouveau:magebloom'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:mana_regen_potion' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:mana_regen_potion' }
+            },
+            fluidLevelsConsumed: 2000,
+            id: `${id_prefix}wet_magebloom_brush`
+        },
+        {
+            output: 'hexerei:wet_moon_dust_brush',
+            inputs: [
+                ['ars_scalaes:magebloom_brush', 'ars_scalaes:wet_magebloom_brush'],
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                'hexerei:mandrake_root',
+                'hexerei:mandrake_flowers',
+                'hexerei:mandrake_root',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:mana_regen_potion' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:mana_regen_potion' }
+            },
+            fluidLevelsConsumed: 2000,
+            id: `${id_prefix}wet_moon_dust_brush`
         }
     ];
 

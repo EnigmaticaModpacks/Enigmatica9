@@ -58,6 +58,9 @@ ServerEvents.recipes((event) => {
         { id: 'ae2:transform/entangled_singularity_from_pearl' },
         { id: 'ae2:misc/fluixpearl' },
 
+        { id: /ars_scalaes:.*_broom_from_mixing_cauldron/ },
+        { id: /ars_scalaes:.*_brush_from_mixing_cauldron/ },
+
         { id: 'constructionwand:stone_wand' },
         { id: 'constructionwand:iron_wand' },
 
@@ -104,8 +107,9 @@ ServerEvents.recipes((event) => {
 
         { id: 'functionalstorage:diamond_upgrade' },
 
+        { id: /hexerei:.*_broom_from_mixing_cauldron/ },
+        { id: /hexerei:.*_brush_from_mixing_cauldron/ },
         { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
-        { id: 'hexerei:willow_broom_from_mixing_cauldron' },
         { id: 'hexerei:blood_sigil_from_mixing_cauldron' },
         { id: 'hexerei:herb_jar_from_mixing_cauldron' },
         { id: 'hexerei:mixing_cauldron' },
