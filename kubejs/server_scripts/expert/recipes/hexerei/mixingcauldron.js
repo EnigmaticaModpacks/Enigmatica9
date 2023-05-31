@@ -437,11 +437,11 @@ ServerEvents.recipes((event) => {
             output: 'ars_nouveau:blank_thread',
             inputs: [
                 'ars_nouveau:magebloom_fiber',
-                'naturesaura:gold_leaf',
+                '#forge:dusts/moon_dust',
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber',
-                'naturesaura:gold_leaf',
+                '#forge:dusts/moon_dust',
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber'
@@ -798,9 +798,9 @@ ServerEvents.recipes((event) => {
                 ['ars_scalaes:magebloom_brush', 'ars_scalaes:wet_magebloom_brush'],
                 '#forge:dusts/moon_dust',
                 '#forge:dusts/moon_dust',
-                'hexerei:mandrake_root',
-                'hexerei:mandrake_flowers',
-                'hexerei:mandrake_root',
+                '#forge:dusts/sky_stone',
+                '#forge:dusts/subzero',
+                '#forge:dusts/sky_stone',
                 '#forge:dusts/moon_dust',
                 '#forge:dusts/moon_dust'
             ],
@@ -815,14 +815,14 @@ ServerEvents.recipes((event) => {
         {
             output: '32x hexerei:moon_dust',
             inputs: [
-                '#forge:dusts/sky_stone',
-                '#forge:dusts/sky_stone',
-                '#forge:dusts/sky_stone',
-                '#forge:dusts/sky_stone',
-                '#forge:dusts/sky_stone',
-                '#forge:dusts/sky_stone',
-                '#forge:dusts/sky_stone',
-                '#forge:dusts/sky_stone'
+                '#forge:dusts/silver',
+                '#forge:dusts/silver',
+                '#forge:dusts/silver',
+                '#forge:dusts/silver',
+                '#forge:dusts/silver',
+                '#forge:dusts/silver',
+                '#forge:dusts/silver',
+                '#forge:dusts/silver'
             ],
             liquid: { fluid: 'minecraft:water' },
             liquidOutput: { fluid: 'minecraft:water' },

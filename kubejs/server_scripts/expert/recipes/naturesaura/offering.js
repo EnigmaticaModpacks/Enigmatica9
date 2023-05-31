@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             output: { item: 'ae2:sky_dust', count: 4 },
-            input: { tag: 'forge:dusts/quartz' },
+            input: { tag: 'forge:dusts/moon_dust' },
             start_item: { item: 'naturesaura:calling_spirit' },
             id: `${id_prefix}sky_dust`
         },
