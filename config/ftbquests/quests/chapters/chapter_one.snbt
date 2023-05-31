@@ -551,6 +551,10 @@
 				"Crafting a broom to get around might help in avoiding some more… deadly obstacles. "
 				""
 				"Obtain the necessary Blood by crafting a Blood Sigil and installing it in a Mixing Cauldron. Jump up and down inside to fill the Cauldron with your own blood and bottle it by Right-Clicking with a Glass Bottle."
+				""
+				"================================="
+				""
+				"Consider crafting a Magebloom Broom Brush. For a strong enough magic user, these will never break, restoring themselves from the owner’s mana."
 			]
 			hide_dependency_lines: true
 			icon: {
