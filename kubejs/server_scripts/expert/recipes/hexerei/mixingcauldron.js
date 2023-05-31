@@ -798,9 +798,9 @@ ServerEvents.recipes((event) => {
                 ['ars_scalaes:magebloom_brush', 'ars_scalaes:wet_magebloom_brush'],
                 '#forge:dusts/moon_dust',
                 '#forge:dusts/moon_dust',
-                '#forge:dusts/sky_stone',
-                '#forge:dusts/subzero',
-                '#forge:dusts/sky_stone',
+                '#forge:dusts/moon_dust',
+                'naturesaura:calling_spirit',
+                '#forge:dusts/moon_dust',
                 '#forge:dusts/moon_dust',
                 '#forge:dusts/moon_dust'
             ],
