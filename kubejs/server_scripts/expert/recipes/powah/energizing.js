@@ -18,7 +18,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: '2x powah:crystal_spirited',
-            inputs: ['kubejs:sylvanite', 'quark:lime_rune', 'kubejs:sylvanite'],
+            inputs: ['#forge:dusts/sylvanite', 'quark:lime_rune', '#forge:dusts/sylvanite'],
             energy: '800000',
             id: `${id_prefix}crystal_spirited`
         },

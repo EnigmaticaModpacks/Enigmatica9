@@ -683,13 +683,13 @@ ServerEvents.recipes((event) => {
             output: '4x kubejs:bright_arcanite_crystal',
             inputs: [
                 'kubejs:dim_arcanite_crystal',
-                'kubejs:sylvanite',
-                'kubejs:sylvanite',
-                'kubejs:sylvanite',
+                '#forge:dusts/sylvanite',
+                '#forge:dusts/sylvanite',
+                '#forge:dusts/sylvanite',
                 'kubejs:dim_arcanite_crystal',
-                'kubejs:sylvanite',
-                'kubejs:sylvanite',
-                'kubejs:sylvanite'
+                '#forge:dusts/sylvanite',
+                '#forge:dusts/sylvanite',
+                '#forge:dusts/sylvanite'
             ],
             liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:shock_potion' } },
             liquidOutput: {
@@ -811,6 +811,24 @@ ServerEvents.recipes((event) => {
             },
             fluidLevelsConsumed: 2000,
             id: `${id_prefix}wet_moon_dust_brush`
+        },
+        {
+            output: '32x hexerei:moon_dust',
+            inputs: [
+                '#forge:dusts/sky_stone',
+                '#forge:dusts/sky_stone',
+                '#forge:dusts/sky_stone',
+                '#forge:dusts/sky_stone',
+                '#forge:dusts/sky_stone',
+                '#forge:dusts/sky_stone',
+                '#forge:dusts/sky_stone',
+                '#forge:dusts/sky_stone'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 250,
+            moonRequirement: 'full_moon',
+            id: `${id_prefix}moon_dust`
         }
     ];
 

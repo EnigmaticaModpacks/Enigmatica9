@@ -113,6 +113,7 @@ ServerEvents.recipes((event) => {
         { id: 'hexerei:blood_sigil_from_mixing_cauldron' },
         { id: 'hexerei:herb_jar_from_mixing_cauldron' },
         { id: 'hexerei:mixing_cauldron' },
+        { id: `hexerei:moon_dust_from_mixing_cauldron` },
 
         { id: /immersiveengineering:blastfurnace\/fuel_/ },
         { id: /immersiveengineering:crafting\/.*_mix/ },
