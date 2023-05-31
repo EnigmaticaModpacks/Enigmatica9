@@ -1526,7 +1526,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "77AAD1F4C77CD9DF"
-				item: "naturesaura:sky_ingot"
+				item: "emendatusenigmatica:sky_ingot"
 				type: "item"
 			}]
 			x: -3.0d
