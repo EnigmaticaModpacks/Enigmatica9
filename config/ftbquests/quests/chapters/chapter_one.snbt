@@ -98,12 +98,9 @@
 					type: "command"
 				}
 				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-					icon: "kubejs:sorcerers_delight"
-					id: "21542AAE9A1153D2"
-					player_command: false
-					title: "Sorcerer's Delight"
-					type: "command"
+					id: "55578A04D9B237EB"
+					item: "twilightforest:moon_dial"
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -427,6 +424,12 @@
 					item: "pneumaticcraft:heat_sink"
 					type: "item"
 				}
+				{
+					id: "21267160D037E938"
+					item: "kubejs:ritual_summon_bound_blitz"
+					optional_task: true
+					type: "item"
+				}
 			]
 			x: -2.5d
 			y: 0.0d
@@ -577,9 +580,28 @@
 					id: "227E258AA45F15CD"
 					item: {
 						Count: 1b
-						id: "hexerei:willow_broom"
-						tag: { }
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "hexerei:willow_broom"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "ars_scalaes:archwood_broom"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "hexerei:witch_hazel_broom"
+									tag: { }
+								}
+							]
+						}
 					}
+					title: "Basic Brooms"
 					type: "item"
 				}
 				{
@@ -684,8 +706,9 @@
 			description: [
 				"A Blaze will need to be summoned and bound into appropriate materials to create this device. Luckily, with control of the elements, summoning forth a single Blaze should prove to be a trivial task."
 				""
-				"Each type of elemental may be summoned using Gythia’s Perpetual Geas. Look up Summon Bound Elemental in JEI to see their recipe. These elementals will be summoned with their AI and loot disabled."
+				"Each type of elemental may be summoned using Gythia’s Perpetual Geas. These elementals will be summoned with their AI and loot disabled."
 			]
+			icon: "create:blaze_burner"
 			id: "5038FC4A51F51F31"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
@@ -695,11 +718,19 @@
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
-			tasks: [{
-				id: "377114D7550BC0D8"
-				item: "create:blaze_burner"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "377114D7550BC0D8"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+				{
+					id: "5A0D8A4117EF4915"
+					item: "kubejs:ritual_summon_bound_blaze"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: -0.5d
 			y: -2.0d
 		}
@@ -942,7 +973,7 @@
 				""
 				"Despite their dangerous nature, it is still possible to extract useful glyphs from them. "
 				""
-				"Search for Ritual Summon Death Tome in JEI to see how to summon more of these books. They’ll be an excellent way to supplement the missing glyphs in this newfound spell book."
+				"Perform this ritual to summon more of these books. They’ll be an excellent way to supplement the missing glyphs in this newfound spell book."
 			]
 			icon: "occultism:ritual_dummy/custom_ritual"
 			id: "28A304E0F1600640"
@@ -954,12 +985,20 @@
 				title: "Random Tier 1 Glyph"
 				type: "command"
 			}]
-			tasks: [{
-				entity: "twilightforest:death_tome"
-				id: "0DBE4EB438DD3212"
-				type: "kill"
-				value: 5L
-			}]
+			tasks: [
+				{
+					entity: "twilightforest:death_tome"
+					id: "0DBE4EB438DD3212"
+					type: "kill"
+					value: 5L
+				}
+				{
+					id: "3D0287DCD0BE94E2"
+					item: "kubejs:summon_death_tome"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "Summon Death Tome"
 			x: -8.5d
 			y: 0.5d
@@ -1602,7 +1641,6 @@
 				""
 				"================================================="
 				""
-				""
 				"Using this structure to generate Aura will require making Lingering potions and throwing them on the golden cross on the Absorber. Throwing higher quality potions, with greater strength and duration, will result in more Aura. "
 				""
 				"It is important to note that Wixies, as crafty as they are, are incapable of making Lingering or Splash potions. They’re easily automated with Create’s brewing system, however, and Dragon’s Breath may be crafted as well. "
@@ -1649,7 +1687,7 @@
 			description: [
 				"Having trouble with Aura? Need a quick boost?"
 				""
-				"Search for the Aura Leaf in JEI to discover the ritual for converting Twilight Forest boss trophies into a large infusion of Aura. "
+				"Perform this ritual to convert Twilight Forest boss trophies into a large infusion of Aura. "
 			]
 			hide_dependency_lines: true
 			icon: "kubejs:aura_leaf"
@@ -1657,9 +1695,11 @@
 			optional: true
 			shape: "hexagon"
 			tasks: [{
-				id: "7F62B58E81519265"
+				id: "6F7D8E0C230D3026"
+				item: "kubejs:aura_leaf"
+				optional_task: true
 				title: "Emergency Aura"
-				type: "checkmark"
+				type: "item"
 			}]
 			x: -9.0d
 			y: 1.5d

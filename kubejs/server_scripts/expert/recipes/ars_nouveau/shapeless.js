@@ -15,6 +15,21 @@ ServerEvents.recipes((event) => {
                 '#forge:ingots/energized_steel'
             ],
             id: 'ars_nouveau:ritual_brazier'
+        },
+        {
+            output: 'ars_nouveau:warp_scroll',
+            inputs: [
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                'ars_nouveau:blank_parchment',
+                '#forge:gems/source',
+                '#forge:gems/source',
+                '#forge:gems/source',
+                '#forge:gems/source'
+            ],
+            id: 'ars_nouveau:warp_scroll'
         }
     ];
 
