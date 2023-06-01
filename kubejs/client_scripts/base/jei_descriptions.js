@@ -361,6 +361,10 @@ JEIEvents.information((event) => {
             text: [
                 `This allows for simple conversion from Create, Thermal, Immersive Engineeering, or Hexerei potion fluids for use in Flasks or Melding.`
             ]
+        },
+        {
+            items: ['twilightforest:borer_essence'],
+            text: [`Drops from Towerwood Borers.`]
         }
     ];
 
