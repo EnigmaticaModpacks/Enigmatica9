@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
             ingredients: [{ item: 'mekanism:dirty_netherite_scrap', count: 1 }],
             result: [
                 { item: 'minecraft:netherite_scrap', chance: 0.9 },
-                { item: 'emendatusenigmatica:gold_nugget', chance: 0.15 }
+                { item: 'minecraft:gold_nugget', chance: 0.15 }
             ],
             energy: 10000,
             id: `${id_prefix}netherite_scrap`
