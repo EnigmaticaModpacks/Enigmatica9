@@ -30,3 +30,21 @@ pack_edit_mode = true
 	[modules.public_server_list]
 		enabled = true
 
+		#Modpack Configs
+		[modules.public_server_list.pack]
+
+			#Open Public Screen List Button
+			[modules.public_server_list.pack.open_screen_button]
+				#The position of the button from the left of the screen.
+				#Set to -1 to default.
+				#Range: > -1
+				x = -1
+				#The position of the button from the top of the screen.
+				#Set to -1 to default.
+				#Range: > -1
+				y = -1
+				#The width of the button.
+				#Set to 0 to default.
+				#Range: 0 ~ 400
+				width = 0
+
