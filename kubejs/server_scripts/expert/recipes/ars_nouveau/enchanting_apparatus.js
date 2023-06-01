@@ -92,13 +92,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}drill_bit_diamond`
         },
         {
-            output: 'pneumaticcraft:drill_bit_netherite',
-            inputs: ['#forge:ingots/depths', 'toomanyglyphs:glyph_chaining'],
-            reagents: ['pneumaticcraft:drill_bit_diamond'],
-            sourceCost: 10000,
-            id: `${id_prefix}drill_bit_netherite`
-        },
-        {
             output: 'create:brass_hand',
             inputs: ['#forge:essences/manipulation', '#forge:leather', '#forge:leather', '#forge:leather'],
             reagents: ['#forge:ingots/energized_steel'],
@@ -343,6 +336,78 @@ ServerEvents.recipes((event) => {
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `${id_prefix}pneumatic_boots`
+        },
+        {
+            output: Item.of('mekanism:mekasuit_helmet', {
+                mekData: { modules: { 'mekanism:color_modulation_unit': { amount: 1, color: -14276057, enabled: 1 } } }
+            }),
+            inputs: [
+                'immersiveengineering:component_electronic',
+                '#forge:fabrics/infused',
+                '#forge:gems/infused_diamond',
+                '#forge:fabrics/infused',
+                'ars_elemental:glyph_bubble_shield',
+                '#forge:fabrics/infused',
+                '#forge:gems/infused_diamond',
+                '#forge:fabrics/infused'
+            ],
+            reagents: ['minecraft:netherite_helmet'],
+            sourceCost: 0,
+            id: `${id_prefix}mekasuit_helmet`
+        },
+        {
+            output: Item.of('mekanism:mekasuit_bodyarmor', {
+                mekData: { modules: { 'mekanism:color_modulation_unit': { amount: 1, color: -14276057, enabled: 1 } } }
+            }),
+            inputs: [
+                'immersiveengineering:component_electronic',
+                '#forge:fabrics/infused',
+                '#forge:gems/infused_diamond',
+                '#forge:fabrics/infused',
+                'ars_elemental:glyph_bubble_shield',
+                '#forge:fabrics/infused',
+                '#forge:gems/infused_diamond',
+                '#forge:fabrics/infused'
+            ],
+            reagents: ['minecraft:netherite_chestplate'],
+            sourceCost: 0,
+            id: `${id_prefix}mekasuit_bodyarmor`
+        },
+        {
+            output: Item.of('mekanism:mekasuit_pants', {
+                mekData: { modules: { 'mekanism:color_modulation_unit': { amount: 1, color: -14276057, enabled: 1 } } }
+            }),
+            inputs: [
+                'immersiveengineering:component_electronic',
+                '#forge:fabrics/infused',
+                '#forge:gems/infused_diamond',
+                '#forge:fabrics/infused',
+                'ars_elemental:glyph_bubble_shield',
+                '#forge:fabrics/infused',
+                '#forge:gems/infused_diamond',
+                '#forge:fabrics/infused'
+            ],
+            reagents: ['minecraft:netherite_leggings'],
+            sourceCost: 0,
+            id: `${id_prefix}mekasuit_pants`
+        },
+        {
+            output: Item.of('mekanism:mekasuit_boots', {
+                mekData: { modules: { 'mekanism:color_modulation_unit': { amount: 1, color: -14276057, enabled: 1 } } }
+            }),
+            inputs: [
+                'immersiveengineering:component_electronic',
+                '#forge:fabrics/infused',
+                '#forge:gems/infused_diamond',
+                '#forge:fabrics/infused',
+                'ars_elemental:glyph_bubble_shield',
+                '#forge:fabrics/infused',
+                '#forge:gems/infused_diamond',
+                '#forge:fabrics/infused'
+            ],
+            reagents: ['minecraft:netherite_boots'],
+            sourceCost: 0,
+            id: `${id_prefix}mekasuit_boots`
         },
         {
             output: 'mininggadgets:mininggadget_simple',
@@ -709,6 +774,98 @@ ServerEvents.recipes((event) => {
             reagents: ['#forge:gears/electrum'],
             sourceCost: 1000,
             id: `${id_prefix}diamond_gear`
+        },
+        {
+            output: 'minecraft:heart_of_the_sea',
+            inputs: [
+                'ars_elemental:water_focus',
+                '#forge:essences/water',
+                '#forge:essences/water',
+                '#forge:essences/water',
+                Item.of(
+                    'pneumaticcraft:spawner_core',
+                    '{"pneumaticcraft:SpawnerCoreStats":{"thermal:blizz":100}}'
+                ).weakNBT(),
+                '#forge:essences/water',
+                '#forge:essences/water',
+                '#forge:essences/water'
+            ],
+            reagents: ['kubejs:primed_aetheric_heart'],
+            sourceCost: 1000,
+            id: `${id_prefix}heart_of_the_sea`
+        },
+        {
+            output: 'kubejs:heart_of_the_mountain',
+            inputs: [
+                'ars_elemental:earth_focus',
+                '#forge:essences/earth',
+                '#forge:essences/earth',
+                '#forge:essences/earth',
+                Item.of(
+                    'pneumaticcraft:spawner_core',
+                    '{"pneumaticcraft:SpawnerCoreStats":{"thermal:basalz":100}}'
+                ).weakNBT(),
+                '#forge:essences/earth',
+                '#forge:essences/earth',
+                '#forge:essences/earth'
+            ],
+            reagents: ['kubejs:primed_aetheric_heart'],
+            sourceCost: 1000,
+            id: `${id_prefix}heart_of_the_mountain`
+        },
+        {
+            output: 'kubejs:heart_of_the_inferno',
+            inputs: [
+                'ars_elemental:fire_focus',
+                '#forge:essences/fire',
+                '#forge:essences/fire',
+                '#forge:essences/fire',
+                Item.of(
+                    'pneumaticcraft:spawner_core',
+                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:blaze":100}}'
+                ).weakNBT(),
+                '#forge:essences/fire',
+                '#forge:essences/fire',
+                '#forge:essences/fire'
+            ],
+            reagents: ['kubejs:primed_aetheric_heart'],
+            sourceCost: 1000,
+            id: `${id_prefix}heart_of_the_inferno`
+        },
+        {
+            output: 'kubejs:heart_of_the_tempest',
+            inputs: [
+                'ars_elemental:air_focus',
+                '#forge:essences/air',
+                '#forge:essences/air',
+                '#forge:essences/air',
+                Item.of(
+                    'pneumaticcraft:spawner_core',
+                    '{"pneumaticcraft:SpawnerCoreStats":{"thermal:blitz":100}}'
+                ).weakNBT(),
+                '#forge:essences/air',
+                '#forge:essences/air',
+                '#forge:essences/air'
+            ],
+            reagents: ['kubejs:primed_aetheric_heart'],
+            sourceCost: 1000,
+            id: `${id_prefix}heart_of_the_tempest`
+        },
+        {
+            output: 'pneumaticcraft:spawner_core_shell',
+            inputs: [
+                'spirit:soul_glass',
+                '#forge:gems/nitro',
+                'spirit:soul_glass',
+                '#forge:gems/nitro',
+                'spirit:soul_glass',
+                '#forge:gems/nitro',
+                'spirit:soul_glass',
+                '#forge:gems/nitro'
+            ],
+            reagents: ['occultism:soul_gem'],
+            sourceCost: 1000,
+            id: `${id_prefix}spawner_core_shell`
         }
     ];
 

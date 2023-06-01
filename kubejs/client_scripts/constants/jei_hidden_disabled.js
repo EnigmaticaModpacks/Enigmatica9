@@ -439,6 +439,11 @@ jei.expert.items.disabled = [
     'mekanism:boiler_valve',
     'mekanism:pressure_disperser',
     'mekanism:superheating_element',
+    'mekanism:module_radiation_shielding_unit',
+    'mekanism:module_geiger_unit',
+    'mekanism:module_dosimeter_unit',
+    'mekanism:module_inhalation_purification_unit',
+    'mekanism:electrolytic_core',
 
     'mekanismgenerators:gas_burning_generator',
     'mekanismgenerators:advanced_solar_generator',
@@ -515,7 +520,8 @@ jei.expert.items.disabled = [
     'pneumaticcraft:empty_pcb',
     'pneumaticcraft:solar_cell',
     'pneumaticcraft:solar_wafer',
-    'pneumaticcraft:unassembled_netherite_drill_bit',
+    'pneumaticcraft:empty_spawner',
+    'pneumaticcraft:spawner_extractor',
 
     /powah:(thermo_generator|solar_panel|furnator|magmator|reactor|energy|battery|ender)/,
     /powah:(energizing_rod_|player_transmitter_|capacitor_)(blazing|hardened)/,

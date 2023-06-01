@@ -22,6 +22,9 @@ ServerEvents.tags('item', (event) => {
             'minecraft:glowstone',
             'minecraft:lava_bucket',
             'minecraft:magma_block',
-            'minecraft:shroomlight'
-        ]);
+            'minecraft:shroomlight',
+            'immersiveengineering:balloon',
+            'immersiveengineering:lantern'
+        ])
+        .remove('occultism:magic_lamp_empty');
 });

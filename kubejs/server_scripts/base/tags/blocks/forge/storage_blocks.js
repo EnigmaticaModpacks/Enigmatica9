@@ -11,7 +11,8 @@ ServerEvents.tags('block', (event) => {
         `powah:niotic_crystal_block`,
         `powah:spirited_crystal_block`,
         `powah:nitro_crystal_block`,
-        `spirit:soul_steel_block`
+        `spirit:soul_steel_block`,
+        'ars_nouveau:source_gem_block'
     ]);
     event.add(`forge:storage_blocks/glowstone`, 'minecraft:glowstone');
 
@@ -30,4 +31,6 @@ ServerEvents.tags('block', (event) => {
 
     event.add(`forge:storage_blocks/therium`, `byg:therium_crystal_block`);
     event.add(`forge:storage_blocks/subzero`, `byg:subzero_crystal_block`);
+
+    event.add(`forge:storage_blocks/source`, 'ars_nouveau:source_gem_block');
 });

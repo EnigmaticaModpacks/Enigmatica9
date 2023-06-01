@@ -15,32 +15,35 @@ ServerEvents.recipes((event) => {
             },
             input: '#forge:ores/netherite',
             crushing_tier: metal_properties['netherite'].crushing_tier,
-            ignore_multiplier: false,
             id_suffix: 'netherite_crushed_ore_from_raw_ore'
+        },
+        {
+            outputs: { primary: 'occultism:crushed_end_stone' },
+            input: 'minecraft:end_stone',
+            crushing_tier: 4,
+            id_suffix: 'crushed_end_stone_from_end_stone'
         }
     ];
 
     const ore_metals = ['iron', 'copper', 'silver', 'gold', 'tin'];
-
     ore_metals.forEach((metal) => {
         let outputs = {
-            primary: `emendatusenigmatica:crushed_${metal}_ore`,
-            tertiary: `emendatusenigmatica:raw_${metal}`
+            primary: AlmostUnified.getPreferredItemForTag(`create:crushed_ores/${metal}`).getId(),
+            tertiary: AlmostUnified.getPreferredItemForTag(`forge:raw_materials/${metal}`).getId()
         };
 
         let secondary = metal_properties[metal].oreProcessing.expert_output.secondary;
         if (secondary == 'quartz') {
-            outputs.secondary = `emendatusenigmatica:${secondary}_dust`;
+            outputs.secondary = AlmostUnified.getPreferredItemForTag(`forge:gems/${secondary}`).getId();
             outputs.secondary_amount = 2;
         } else {
-            outputs.secondary = `emendatusenigmatica:crushed_${secondary}_ore`;
+            outputs.secondary = AlmostUnified.getPreferredItemForTag(`forge:raw_materials/${secondary}`).getId();
         }
 
         recipes.push({
             outputs: outputs,
             input: `#forge:raw_materials/${metal}`,
             crushing_tier: metal_properties[metal].crushing_tier,
-            ignore_multiplier: false,
             id_suffix: `${metal}_crushed_ore_from_raw_ore`
         });
     });
@@ -48,11 +51,10 @@ ServerEvents.recipes((event) => {
     simple_metals.forEach((metal) => {
         recipes.push({
             outputs: {
-                primary: `emendatusenigmatica:${metal}_dirty_dust`
+                primary: AlmostUnified.getPreferredItemForTag(`mekanism:dirty_dusts/${metal}`).getId()
             },
             input: `#mekanism:clumps/${metal}`,
             crushing_tier: metal_properties[`${metal}`].crushing_tier,
-            ignore_multiplier: true,
             id_suffix: `${metal}_dirty_dust_from_clumps`
         });
     });

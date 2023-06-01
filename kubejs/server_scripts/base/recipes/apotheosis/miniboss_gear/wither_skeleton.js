@@ -15,13 +15,7 @@ ServerEvents.highPriorityData((event) => {
                     drop_chance: 0.085
                 }
             ],
-            offhands: [
-                {
-                    stack: { item: 'minecraft:shield', nbt: default_nbt },
-                    weight: 100,
-                    drop_chance: 0.085
-                }
-            ],
+            offhands: all_shield_designs,
             helmets: [
                 {
                     stack: { item: 'pneumaticcraft:compressed_iron_helmet', nbt: default_nbt },

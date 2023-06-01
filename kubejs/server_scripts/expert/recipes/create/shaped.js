@@ -407,6 +407,16 @@ ServerEvents.recipes((event) => {
                 B: 'create:shaft'
             },
             id: `create:crafting/kinetics/flywheel`
+        },
+        {
+            output: 'create:elevator_pulley',
+            pattern: ['A', 'B', 'C'],
+            key: {
+                A: 'create:brass_casing',
+                B: 'create:rope_pulley',
+                C: 'pneumaticcraft:logistics_core'
+            },
+            id: `create:crafting/kinetics/elevator_pulley`
         }
     ];
 

@@ -4,13 +4,14 @@
 
 ### 🌟 Improvements
 
--   Expand loot in Twilight Forest, Blue Skies, and other dungeons.
+-   Expand loot in Twilight Forest and other dungeons.
 -   Make Fell a Tier 1 glyph and simplify the recipe.
 -   Update Death Tome loot to include new Tier 1 glyphs.
 -   Aloe Vera may now be used to craft Fire Resistance potions.
 -   Falling out of a Nomadic Tent, Compact Machine, or the void in the End will now send the player to their spawn point.
 -   Nomadic Tents have been made considerably cheaper to craft and shovels are no longer needed to increase the floor depth, each size is already maxed out at crafting time.
 -   If a Mega Tent has already been crafted but the floor depth was not maxed out, it may be crafted together with a Wooden Shovel to upgrade it to max depth. For lower tiers, just craft up to the next tier.
+-   Introduces Quests for Spirit.
 
 ### 🐛 Fixed Bugs
 

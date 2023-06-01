@@ -22,6 +22,15 @@ ServerEvents.recipes((event) => {
                 B: 'minecraft:blaze_powder'
             },
             id: 'supplementaries:brass_lantern'
+        },
+        {
+            output: '2x supplementaries:crystal_display',
+            pattern: ['AB', 'AB', 'AB'],
+            key: {
+                A: 'pneumaticcraft:compressed_stone',
+                B: 'create:polished_rose_quartz'
+            },
+            id: 'supplementaries:crystal_display'
         }
     ];
 

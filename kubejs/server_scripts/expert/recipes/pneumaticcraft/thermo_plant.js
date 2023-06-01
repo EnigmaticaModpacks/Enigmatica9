@@ -90,7 +90,7 @@ ServerEvents.recipes((event) => {
         {
             item_output: { item: 'kubejs:sylvanite', count: 1 },
             fluid_input: { type: 'pneumaticcraft:fluid', amount: 100, fluid: 'kubejs:magicite' },
-            item_input: [{ tag: 'forge:dusts/silver' }],
+            item_input: [{ tag: 'forge:dusts/lithium' }],
             exothermic: true,
             temperature: { max_temp: 173 },
             pressure: 9.0,

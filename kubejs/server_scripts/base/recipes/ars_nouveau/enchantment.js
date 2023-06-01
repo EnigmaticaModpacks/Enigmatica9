@@ -891,6 +891,7 @@ ServerEvents.recipes((event) => {
             pedestalItems: [
                 { item: { item: 'spirit:soul_powder_block' } },
                 { item: { item: 'ars_nouveau:conjuration_essence' } },
+                { item: { item: 'minecraft:quartz_block' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
         },
@@ -899,9 +900,9 @@ ServerEvents.recipes((event) => {
             level: 2,
             pedestalItems: [
                 { item: { item: 'spirit:soul_powder_block' } },
-                { item: { item: 'spirit:soul_powder_block' } },
                 { item: { item: 'ars_nouveau:conjuration_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
+                { item: { item: 'minecraft:quartz_block' } },
+                { item: { item: 'minecraft:quartz_block' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
         },
@@ -910,12 +911,10 @@ ServerEvents.recipes((event) => {
             level: 3,
             pedestalItems: [
                 { item: { item: 'spirit:soul_powder_block' } },
-                { item: { item: 'spirit:soul_powder_block' } },
-                { item: { item: 'spirit:soul_powder_block' } },
                 { item: { item: 'ars_nouveau:conjuration_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { item: 'minecraft:quartz_block' } },
+                { item: { item: 'minecraft:quartz_block' } },
+                { item: { item: 'minecraft:quartz_block' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
         },
@@ -923,12 +922,12 @@ ServerEvents.recipes((event) => {
             enchantment: 'spirit:soul_reaper',
             level: 4,
             pedestalItems: [
-                { item: { item: 'spirit:soul_steel_block' } },
+                { item: { item: 'spirit:soul_powder_block' } },
                 { item: { item: 'ars_nouveau:conjuration_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { item: 'minecraft:quartz_block' } },
+                { item: { item: 'minecraft:quartz_block' } },
+                { item: { item: 'minecraft:quartz_block' } },
+                { item: { item: 'minecraft:quartz_block' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
         },
@@ -936,13 +935,13 @@ ServerEvents.recipes((event) => {
             enchantment: 'spirit:soul_reaper',
             level: 5,
             pedestalItems: [
-                { item: { item: 'spirit:soul_steel_block' } },
-                { item: { item: 'spirit:soul_steel_block' } },
+                { item: { item: 'spirit:soul_powder_block' } },
                 { item: { item: 'ars_nouveau:conjuration_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { item: 'minecraft:quartz_block' } },
+                { item: { item: 'minecraft:quartz_block' } },
+                { item: { item: 'minecraft:quartz_block' } },
+                { item: { item: 'minecraft:quartz_block' } },
+                { item: { item: 'minecraft:quartz_block' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
         },

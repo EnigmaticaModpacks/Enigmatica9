@@ -7,16 +7,10 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            output: Item.of('hexerei:broom_brush', { Damage: 0, Unbreakable: 1 }),
-            inputs: ['hexerei:wet_broom_brush'],
-            dryingTimeInTicks: 1000,
-            id: 'hexerei:broom_brush_from_drying_rack'
-        },
-        {
-            output: Item.of('hexerei:herb_enhanced_broom_brush', { Damage: 0, Unbreakable: 1 }),
-            inputs: ['hexerei:wet_herb_enhanced_broom_brush'],
+            output: Item.of('hexerei:moon_dust_brush', { Damage: 0, Unbreakable: 1 }),
+            inputs: ['hexerei:wet_moon_dust_brush'],
             dryingTimeInTicks: 2400,
-            id: 'hexerei:herb_enhanced_broom_brush_from_drying_rack'
+            id: 'hexerei:moon_brush_from_drying_rack'
         }
     ];
 

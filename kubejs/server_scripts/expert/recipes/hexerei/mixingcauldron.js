@@ -437,11 +437,11 @@ ServerEvents.recipes((event) => {
             output: 'ars_nouveau:blank_thread',
             inputs: [
                 'ars_nouveau:magebloom_fiber',
-                'naturesaura:gold_leaf',
+                '#forge:dusts/moon_dust',
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber',
-                'naturesaura:gold_leaf',
+                '#forge:dusts/moon_dust',
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber',
                 'ars_nouveau:magebloom_fiber'
@@ -680,16 +680,16 @@ ServerEvents.recipes((event) => {
             id: `hexerei:infused_fabric_from_mixing_cauldron`
         },
         {
-            output: 'kubejs:bright_arcanite_crystal',
+            output: '4x kubejs:bright_arcanite_crystal',
             inputs: [
                 'kubejs:dim_arcanite_crystal',
-                'kubejs:sylvanite',
-                '#forge:dusts/lithium',
-                'kubejs:sylvanite',
-                '#forge:dusts/lithium',
-                'kubejs:sylvanite',
-                '#forge:dusts/lithium',
-                'kubejs:sylvanite'
+                '#forge:dusts/sylvanite',
+                '#forge:dusts/sylvanite',
+                '#forge:dusts/sylvanite',
+                'kubejs:dim_arcanite_crystal',
+                '#forge:dusts/sylvanite',
+                '#forge:dusts/sylvanite',
+                '#forge:dusts/sylvanite'
             ],
             liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:shock_potion' } },
             liquidOutput: {
@@ -699,6 +699,136 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 2000,
             heatRequirement: 'heated',
             id: `${id_prefix}bright_arcanite_crystal`
+        },
+        {
+            output: '4x kubejs:iridescent_arcanite_crystal',
+            inputs: [
+                'kubejs:bright_arcanite_crystal',
+                '#forge:dusts/brass',
+                '#forge:dusts/brass',
+                '#forge:dusts/brass',
+                '#forge:gems/nitro',
+                '#forge:dusts/brass',
+                '#forge:dusts/brass',
+                '#forge:dusts/brass'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:shock_potion' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:shock_potion' }
+            },
+            fluidLevelsConsumed: 2000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}iridescent_arcanite_crystal`
+        },
+        {
+            output: 'hexerei:replacer_satchel',
+            inputs: [
+                'hexerei:medium_satchel',
+                'hexerei:dried_mugwort_flowers',
+                '#forge:essences/manipulation',
+                'hexerei:dried_belladonna_flowers',
+                'hexerei:broom_brush',
+                'hexerei:dried_mandrake_flowers',
+                '#forge:essences/manipulation',
+                'hexerei:dried_yellow_dock_flowers'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:thick' } },
+            liquidOutput: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:thick' } },
+            fluidLevelsConsumed: 1000,
+            id: `hexerei:replacer_satchel_from_mixing_cauldron`
+        },
+        {
+            output: 'hexerei:wet_broom_brush',
+            inputs: [
+                'hexerei:mandrake_root',
+                'minecraft:wheat',
+                'hexerei:mugwort_leaves',
+                'minecraft:wheat',
+                'hexerei:mandrake_root',
+                'minecraft:wheat',
+                'hexerei:yellow_dock_leaves',
+                'minecraft:wheat'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 1000,
+            id: `${id_prefix}wet_broom_brush`
+        },
+        {
+            output: 'hexerei:wet_herb_enhanced_broom_brush',
+            inputs: [
+                ['hexerei:broom_brush', 'hexerei:wet_broom_brush'],
+                'hexerei:belladonna_flowers',
+                'hexerei:belladonna_berries',
+                'hexerei:mandrake_root',
+                'hexerei:mandrake_flowers',
+                'hexerei:mandrake_root',
+                'hexerei:mugwort_flowers',
+                'hexerei:yellow_dock_flowers'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 1000,
+            id: `${id_prefix}wet_herb_enhanced_broom_brush`
+        },
+        {
+            output: 'ars_scalaes:wet_magebloom_brush',
+            inputs: [
+                ['hexerei:herb_enhanced_broom_brush', 'hexerei:wet_herb_enhanced_broom_brush'],
+                'ars_nouveau:magebloom',
+                'ars_nouveau:magebloom',
+                'hexerei:mandrake_root',
+                'hexerei:mandrake_flowers',
+                'hexerei:mandrake_root',
+                'ars_nouveau:magebloom',
+                'ars_nouveau:magebloom'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:mana_regen_potion' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:mana_regen_potion' }
+            },
+            fluidLevelsConsumed: 2000,
+            id: `${id_prefix}wet_magebloom_brush`
+        },
+        {
+            output: 'hexerei:wet_moon_dust_brush',
+            inputs: [
+                ['ars_scalaes:magebloom_brush', 'ars_scalaes:wet_magebloom_brush'],
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                'naturesaura:calling_spirit',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:mana_regen_potion' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_nouveau:mana_regen_potion' }
+            },
+            fluidLevelsConsumed: 2000,
+            id: `${id_prefix}wet_moon_dust_brush`
+        },
+        {
+            output: '32x hexerei:moon_dust',
+            inputs: [
+                '#forge:dusts/silver',
+                '#forge:dusts/silver',
+                '#forge:dusts/silver',
+                '#forge:dusts/silver',
+                '#forge:dusts/silver',
+                '#forge:dusts/silver',
+                '#forge:dusts/silver',
+                '#forge:dusts/silver'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 250,
+            moonRequirement: 'full_moon',
+            id: `${id_prefix}moon_dust`
         }
     ];
 
