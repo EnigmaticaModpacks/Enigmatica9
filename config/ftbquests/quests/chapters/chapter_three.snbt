@@ -16,8 +16,8 @@
 				item: "mekanism:pellet_antimatter"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: -1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["714A42E9CE3C32EA"]
@@ -35,7 +35,9 @@
 			description: [
 				"Though found in the wild, creating a local farm for Sculk is recommended. Whenever a mob dies near a Sculk Catalyst, it will cause the Catalyst to convert nearby Stone into Sculk. "
 				""
-				"Devise a way to automate this. "
+				"Silk-Touch is required to harvest the resulting Sculk."
+				""
+				"Devise a way to automate this."
 			]
 			id: "5BAB85095E92AFD9"
 			tasks: [{
@@ -79,21 +81,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["714A42E9CE3C32EA"]
-			id: "1D08EB5A9283F5F0"
-			tasks: [{
-				id: "7D81071298ED011E"
-				item: "naturesaura:depth_ingot"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -1.5d
-		}
-		{
-			dependencies: [
-				"1D08EB5A9283F5F0"
-				"73B4078AB841567A"
-			]
+			dependencies: ["73B4078AB841567A"]
 			id: "70CB050759D84E11"
 			tasks: [{
 				id: "1EC35F31C7341A6D"
@@ -135,8 +123,8 @@
 				}
 			]
 			title: "Supercritical Phase Shifter"
-			x: 0.0d
-			y: 0.0d
+			x: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2F5D2A85ADFE9CA1"]
@@ -147,7 +135,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["10C86AC59F9FA412"]
@@ -158,7 +146,65 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7674A0390C41044C"]
+			id: "04B0F0BE6E54D620"
+			tasks: [{
+				id: "0D1ED0C7EDB28A00"
+				item: "emendatusenigmatica:brass_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0672B242C31F4A11"]
+			icon: "minecraft:chorus_fruit"
+			id: "0EBE44D4C30C0E51"
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					icon: "minecraft:chorus_fruit"
+					id: "2707A505AF3BD75E"
+					title: "Visit The End"
+					type: "dimension"
+				}
+				{
+					id: "385F0F4E48C8AE87"
+					item: "kubejs:ritual_teleport_end"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["04B0F0BE6E54D620"]
+			icon: "kubejs:tree_of_life_3"
+			id: "0672B242C31F4A11"
+			tasks: [
+				{
+					id: "009C9545ED44311C"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "apotheosis:strong_knowledge"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3A42495235D2DD89"
+					item: "kubejs:ritual_tree_of_life_3"
+					type: "item"
+				}
+			]
+			title: "Tree of Life"
+			x: 1.0d
+			y: 3.0d
 		}
 	]
 	title: "Chapter Three"

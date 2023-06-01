@@ -53,6 +53,9 @@ StartupEvents.registry('item', (event) => {
         'ritual_summon_bound_basalz',
         'ritual_summon_bound_blizz',
         'ritual_craft_willow_broom',
+        'ritual_craft_witch_hazel_broom',
+        'ritual_craft_archwood_broom',
+        'ritual_craft_mahogany_broom',
         'ritual_craft_blaze_burner',
         'ritual_craft_module_expansion_card',
         'ritual_craft_energetic_transference_matrix',
@@ -92,11 +95,12 @@ StartupEvents.registry('item', (event) => {
 
     // Special Items
     event.create('spirit_of_devotion').group('KubeJS').texture(`kubejs:item/spirit_of_devotion`).glow(true);
-    event.create('heart_of_the_caldera').group('KubeJS').texture(`kubejs:item/heart_of_the_caldera`).rarity('uncommon');
+    event.create('heart_of_the_inferno').group('KubeJS').texture(`kubejs:item/heart_of_the_inferno`).rarity('uncommon');
     event
         .create('heart_of_the_mountain')
         .group('KubeJS')
         .texture(`kubejs:item/heart_of_the_mountain`)
         .rarity('uncommon');
-    event.create('heart_of_the_storm').group('KubeJS').texture(`kubejs:item/heart_of_the_storm`).rarity('uncommon');
+    event.create('heart_of_the_tempest').group('KubeJS').texture(`kubejs:item/heart_of_the_tempest`).rarity('uncommon');
+    event.create('primed_aetheric_heart').group('KubeJS').texture(`kubejs:item/primed_aetheric_heart`).rarity('rare');
 });

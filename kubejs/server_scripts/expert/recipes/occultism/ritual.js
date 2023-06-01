@@ -171,7 +171,7 @@ ServerEvents.recipes((event) => {
                     Items: [
                         { Count: 1, Slot: 0, id: 'hexerei:gold_rings' },
                         { Count: 1, Slot: 1, id: 'hexerei:small_satchel' },
-                        { Count: 1, Slot: 2, id: 'hexerei:broom_brush', tag: { Damage: 0, Unbreakable: 1 } }
+                        { Count: 1, Slot: 2, id: 'hexerei:broom_brush' }
                     ],
                     Size: 30
                 },
@@ -194,6 +194,100 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:summon_familiar',
             duration: 10,
             id: `${id_prefix}ritual_craft_willow_broom`
+        },
+        {
+            output: Item.of('hexerei:witch_hazel_broom', {
+                Inventory: {
+                    Items: [
+                        { Count: 1, Slot: 0, id: 'hexerei:gold_rings' },
+                        { Count: 1, Slot: 1, id: 'hexerei:small_satchel' },
+                        { Count: 1, Slot: 2, id: 'hexerei:broom_brush' }
+                    ],
+                    Size: 30
+                },
+                display: { Name: '{"translate":"item.hexerei.witch_hazel_broom"}' },
+                floatMode: 0
+            }),
+            activation_item: 'hexerei:blood_bottle',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'hexerei:small_satchel',
+                'hexerei:broom_brush',
+                'hexerei:gold_rings',
+                'hexerei:dried_yellow_dock_leaves',
+                'hexerei:dried_yellow_dock_leaves',
+                'hexerei:witch_hazel_log',
+                'hexerei:witch_hazel_log'
+            ],
+            ritual_dummy: 'kubejs:ritual_craft_witch_hazel_broom',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_witch_hazel_broom`
+        },
+        {
+            output: Item.of('ars_scalaes:archwood_broom', {
+                Inventory: {
+                    Items: [
+                        { Count: 1, Slot: 0, id: 'hexerei:gold_rings' },
+                        { Count: 1, Slot: 1, id: 'hexerei:small_satchel' },
+                        { Count: 1, Slot: 2, id: 'hexerei:broom_brush' }
+                    ],
+                    Size: 30
+                },
+                display: { Name: '{"translate":"item.ars_scalaes.archwood_broom"}' },
+                floatMode: 0
+            }),
+            activation_item: 'hexerei:blood_bottle',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'hexerei:small_satchel',
+                'hexerei:broom_brush',
+                'hexerei:gold_rings',
+                'hexerei:dried_yellow_dock_leaves',
+                'hexerei:dried_yellow_dock_leaves',
+                '#forge:logs/archwood',
+                '#forge:logs/archwood'
+            ],
+            ritual_dummy: 'kubejs:ritual_craft_archwood_broom',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_archwood_broom`
+        },
+        {
+            output: Item.of('hexerei:mahogany_broom', {
+                Inventory: {
+                    Items: [
+                        { Count: 1, Slot: 0, id: 'hexerei:gold_rings' },
+                        { Count: 1, Slot: 1, id: 'hexerei:small_satchel' },
+                        { Count: 1, Slot: 2, id: 'hexerei:broom_brush' }
+                    ],
+                    Size: 30
+                },
+                display: { Name: '{"translate":"item.hexerei.mahogany_broom"}' },
+                floatMode: 0
+            }),
+            activation_item: 'hexerei:blood_bottle',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'hexerei:small_satchel',
+                'hexerei:broom_brush',
+                'hexerei:gold_rings',
+                'hexerei:dried_yellow_dock_leaves',
+                'hexerei:dried_yellow_dock_leaves',
+                'hexerei:mahogany_log',
+                'hexerei:mahogany_log',
+                '#forge:gems/therium',
+                '#forge:gems/therium',
+                '#forge:gems/therium',
+                '#forge:gems/therium'
+            ],
+            ritual_dummy: 'kubejs:ritual_craft_mahogany_broom',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_mahogany_broom`
         },
         {
             // Water Breathing
@@ -951,12 +1045,12 @@ ServerEvents.recipes((event) => {
                 'naturesaura:calling_spirit',
                 'naturesaura:calling_spirit',
                 '#forge:ingots/sky',
-                'ae2:sky_dust',
+                '#forge:dusts/moon_dust',
                 '#forge:ingots/sky',
-                'ae2:sky_dust',
-                'ae2:sky_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
                 '#forge:ingots/sky',
-                'ae2:sky_dust',
+                '#forge:dusts/moon_dust',
                 '#forge:ingots/sky'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_1',
@@ -967,20 +1061,20 @@ ServerEvents.recipes((event) => {
         },
         {
             output: Item.of('kubejs:tree_of_life_2', { aura_amount: 200000, aura_max: 1000000 }),
-            activation_item: 'quark:ancient_fruit',
+            activation_item: Item.of(Item.of('minecraft:potion', '{Potion:"apotheosis:knowledge"}')).weakNBT(),
             inputs: [
                 'kubejs:spirit_of_devotion',
                 'kubejs:spirit_of_devotion',
                 'kubejs:spirit_of_devotion',
                 'kubejs:spirit_of_devotion',
-                'the_bumblezone:glistering_honey_crystal',
-                'thermal:phyto_tnt',
-                'the_bumblezone:glistering_honey_crystal',
-                'thermal:phyto_tnt',
-                'thermal:phyto_tnt',
-                'the_bumblezone:glistering_honey_crystal',
-                'thermal:phyto_tnt',
-                'the_bumblezone:glistering_honey_crystal'
+                'the_bumblezone:honey_crystal_shards',
+                'thermal:phytogro',
+                'the_bumblezone:honey_crystal_shards',
+                'thermal:phytogro',
+                'thermal:phytogro',
+                'the_bumblezone:honey_crystal_shards',
+                'thermal:phytogro',
+                'the_bumblezone:honey_crystal_shards'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_2',
             ritual_type: 'occultism:craft',
@@ -990,20 +1084,22 @@ ServerEvents.recipes((event) => {
         },
         {
             output: Item.of('kubejs:tree_of_life_3', { aura_amount: 500000, aura_max: 1500000 }),
-            activation_item: 'twilightforest:rainbow_oak_sapling',
+            activation_item: Item.of(Item.of('minecraft:potion', '{Potion:"apotheosis:strong_knowledge"}')).weakNBT(),
             inputs: [
-                'kubejs:spirit_of_devotion',
-                'kubejs:spirit_of_devotion',
-                'kubejs:spirit_of_devotion',
-                'kubejs:spirit_of_devotion',
-                '#forge:ingots/tainted_gold',
-                'thermal:phyto_tnt',
-                '#forge:ingots/tainted_gold',
-                'thermal:phyto_tnt',
-                'thermal:phyto_tnt',
-                '#forge:ingots/tainted_gold',
-                'thermal:phyto_tnt',
-                '#forge:ingots/tainted_gold'
+                'kubejs:heart_of_the_tempest',
+                'minecraft:heart_of_the_sea',
+                'kubejs:heart_of_the_inferno',
+                'kubejs:heart_of_the_mountain',
+
+                'quark:paper_lantern',
+                'minecraft:sea_lantern',
+                'quark:blaze_lantern',
+                'supplementaries:deepslate_lamp',
+
+                'quark:paper_lantern',
+                'minecraft:sea_lantern',
+                'quark:blaze_lantern',
+                'supplementaries:deepslate_lamp'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_3',
             ritual_type: 'occultism:craft',
@@ -1075,6 +1171,31 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:tree_of_life_stage_2',
             duration: 10,
             id: `${id_prefix}ritual_teleport_nether`
+        },
+        {
+            output: 'kubejs:teleport_end',
+            activation_item: '#forge:gems/infused_ender',
+            inputs: [
+                '#forge:ingots/brass',
+                'naturesaura:gold_leaf',
+                '#forge:essences/air',
+                'naturesaura:gold_leaf',
+
+                '#forge:dusts/end_stone',
+                '#forge:dusts/end_stone',
+                '#forge:dusts/end_stone',
+                '#forge:dusts/end_stone',
+
+                '#forge:dusts/end_stone',
+                '#forge:dusts/end_stone',
+                '#forge:dusts/end_stone',
+                '#forge:dusts/end_stone'
+            ],
+            ritual_dummy: 'kubejs:ritual_teleport_end',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:tree_of_life_stage_3',
+            duration: 10,
+            id: `${id_prefix}ritual_teleport_end`
         },
         {
             output: Item.of('gateways:gate_pearl', `{gateway:"gateways:wither_council_gate", radius:5}`),

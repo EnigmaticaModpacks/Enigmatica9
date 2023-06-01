@@ -9,10 +9,10 @@ ServerEvents.recipes((event) => {
             ingredient: { item: 'mekanism:brine_bucket' },
             result: [
                 { item: 'mekanism:dust_lithium', count: 4 },
-                { item: 'occultism:iesnium_dust', count: 3 }
+                { item: 'emendatusenigmatica:iesnium_dirty_dust', count: 1.0 }
             ],
             energy: 8000,
-            id: `${id_prefix}iesnium_lithium_salt`
+            id: `${id_prefix}iesnium_lithium`
         }
     ];
 

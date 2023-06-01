@@ -4,9 +4,7 @@
 	additionalBotanistPickaxeConversions = []
 	#Additional dimensions that map to Aura types that should be present in them. This is useful if you have a modpack with custom dimensions that should have Aura act similarly to an existing dimension in them. Each entry needs to be formatted as dimension_name->aura_type, where aura_type can be any of naturesaura:overworld, naturesaura:nether and naturesaura:end.
 	auraTypeOverrides = [
-		"blue_skies:everbright->naturesaura:nether",
-		"blue_skies:everdawn->naturesaura:overworld",
-		"twilightforest:twilight_forest->naturesaura:overworld",
+		"twilightforest:twilight_forest->naturesaura:end",
 		"the_bumblezone:the_bumblezone->naturesaura:end"
 		
 	]

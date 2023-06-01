@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
         {
             result: { amount: 10, fluid: 'hexerei:quicksilver_fluid' },
             input0: { amount: 10, tag: 'forge:magicite' },
-            catalyst: { tag: 'forge:gems/subzero' },
+            catalyst: { tag: 'forge:dusts/moon_dust' },
             energy: 500,
 
             id: `${id_prefix}quicksilver_fluid`

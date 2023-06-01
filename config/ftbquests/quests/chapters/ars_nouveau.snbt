@@ -390,11 +390,11 @@
 		{
 			dependencies: ["00000000000009ED"]
 			description: [
-				"Carbuncles are curious forest critters with a love for all things shiny. Gold, in particular. They may be befriended by tossing them a small amount of gold. Once befriended, they will assist by collecting items and moving them to inventories. "
+				"Starbuncles are curious forest critters with a love for all things shiny. Gold, in particular. They may be befriended by tossing them a small amount of gold. Once befriended, they will assist by collecting items and moving them to inventories. "
 				""
 				"They may be instructed what to do by using a Dominion Wand. Their behavior may be further modified by giving them some Starbuncle Shades or a Wixie hat. "
 				""
-				"Refer to the Worn Notebook for an in-depth guide on using Carbuncles."
+				"Refer to the Worn Notebook for an in-depth guide on using Starbuncles."
 				""
 				"These critters can be an uncommon sight even in ancient forests. If none can be found, consider summoning them with the Altar of Birthing."
 			]
@@ -2044,7 +2044,7 @@
 		}
 		{
 			dependencies: ["355D6EAEA6130932"]
-			description: ["With a Starballon in tow, a Starbuncle may transport Mekanism gasses from place to place. "]
+			description: ["With a Starballoon in tow, a Starbuncle may transport Mekanism gasses from place to place. "]
 			id: "1F46F472B7FB88D5"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"

@@ -341,6 +341,26 @@ JEIEvents.information((event) => {
                 'sushigocrafting:sesame_seeds'
             ],
             text: ['Purchase from the Market block.']
+        },
+        {
+            items: ['starbunclemania:fluid_jar'],
+            text: [`Fluid Potions stored in this jar will be automatically inserted into a Potion Jar placed atop it.`]
+        },
+        {
+            items: ['starbunclemania:fluid_jar'],
+            text: [
+                `This allows for simple conversion from Create, Thermal, Immersive Engineeering, or Hexerei potion fluids for use in Flasks or Melding.`
+            ]
+        },
+        {
+            items: ['ars_nouveau:potion_jar'],
+            text: [`Fluid Potions stored in a Fluid Containment Jar below this jar will be automatically imported.`]
+        },
+        {
+            items: ['ars_nouveau:potion_jar'],
+            text: [
+                `This allows for simple conversion from Create, Thermal, Immersive Engineeering, or Hexerei potion fluids for use in Flasks or Melding.`
+            ]
         }
     ];
 

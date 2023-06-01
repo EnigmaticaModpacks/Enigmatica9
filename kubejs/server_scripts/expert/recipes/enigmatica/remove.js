@@ -58,10 +58,15 @@ ServerEvents.recipes((event) => {
         { id: 'ae2:transform/entangled_singularity_from_pearl' },
         { id: 'ae2:misc/fluixpearl' },
 
+        { id: /ars_scalaes:.*_broom_from_mixing_cauldron/ },
+        { id: /ars_scalaes:.*_brush_from_mixing_cauldron/ },
+
         { id: 'constructionwand:stone_wand' },
         { id: 'constructionwand:iron_wand' },
 
         { id: /create:pressing\/.*_ingot/ },
+        { id: /create:brass_(ladder|scaffolding|bars)_from_ingots_brass_stonecutting/ },
+        { id: /create:copycat_.*_from_ingots_zinc_stonecutting/ },
         { id: 'create:crafting/kinetics/white_sail' },
         { id: 'create:crafting/kinetics/empty_blaze_burner' },
         { id: 'create:crafting/kinetics/mechanical_crafter' },
@@ -79,7 +84,6 @@ ServerEvents.recipes((event) => {
         { id: 'create:compat/ae2/milling/ender_pearl' },
         { id: 'create:crushing/prismarine_crystals' },
         { id: 'create:sequenced_assembly/track' },
-        { id: 'create:brass_ladder_from_plates_brass_stonecutting' },
 
         { id: /createaddition:pressing\/.*_ingot/ },
         { id: /createaddition:crafting\/capacitor/ },
@@ -103,11 +107,13 @@ ServerEvents.recipes((event) => {
 
         { id: 'functionalstorage:diamond_upgrade' },
 
+        { id: /hexerei:.*_broom_from_mixing_cauldron/ },
+        { id: /hexerei:.*_brush_from_mixing_cauldron/ },
         { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
-        { id: 'hexerei:willow_broom_from_mixing_cauldron' },
         { id: 'hexerei:blood_sigil_from_mixing_cauldron' },
         { id: 'hexerei:herb_jar_from_mixing_cauldron' },
         { id: 'hexerei:mixing_cauldron' },
+        { id: `hexerei:moon_dust_from_mixing_cauldron` },
 
         { id: /immersiveengineering:blastfurnace\/fuel_/ },
         { id: /immersiveengineering:crafting\/.*_mix/ },
@@ -213,6 +219,7 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:reaction/substrate/water_hydrogen' },
         { id: 'mekanism:reaction/substrate/water_ethene' },
         { id: 'mekanism:reaction/substrate/ethene_oxygen' },
+        { id: 'mekanism:nucleosynthesizing/heart_of_the_sea' },
         { id: 'mekanism:logistical_sorter' },
         { id: 'mekanism:upgrade/anchor' },
         { id: 'mekanism:sps_casing' },
@@ -258,6 +265,15 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:pressure_disperser' },
         { id: 'mekanism:superheating_element' },
         { id: 'mekanism:meka_tool' },
+        { id: 'mekanism:mekasuit_helmet' },
+        { id: 'mekanism:mekasuit_bodyarmor' },
+        { id: 'mekanism:mekasuit_pants' },
+        { id: 'mekanism:mekasuit_boots' },
+        { id: 'mekanism:module_radiation_shielding_unit' },
+        { id: 'mekanism:module_geiger_unit' },
+        { id: 'mekanism:module_dosimeter_unit' },
+        { id: 'mekanism:module_inhalation_purification_unit' },
+        { id: 'mekanism:electrolytic_core' },
 
         { id: 'minecraft:netherite_ingot' },
         { id: 'minecraft:lodestone' },
@@ -306,6 +322,8 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:etching_tank' },
         { id: 'pneumaticcraft:uv_light_box' },
         { id: 'pneumaticcraft:empty_pcb_from_failed_pcb' },
+        { id: 'pneumaticcraft:spawner_extractor' },
+        { id: 'pneumaticcraft:spawner_core_shell' },
 
         { id: 'powah:crafting/dielectric_rod_h' },
         { id: 'powah:crafting/dielectric_paste' },
@@ -330,6 +348,7 @@ ServerEvents.recipes((event) => {
 
         { id: 'rftoolsbase:dimensionalshard' },
         { id: 'rftoolsbase:infused_diamond' },
+        { id: 'rftoolsbase:infused_enderpearl' },
 
         { id: 'sophisticatedbackpacks:battery_upgrade' },
 
@@ -344,6 +363,9 @@ ServerEvents.recipes((event) => {
         { id: `spirit:soul_engulfing/soul_slate` },
         { id: `spirit:soul_engulfing/soul_steel` },
         { id: `spirit:soul_engulfing/soul_steel_block` },
+        { id: `spirit:soul_engulfing/crude_soul_crystal` },
+        { id: `spirit:soul_engulfing/soul_crystal_shard` },
+        { id: `spirit:soul_engulfing/soul_crystal` },
 
         { id: 'starbunclemania:fluid_jar' },
         { id: 'starbunclemania:fluid_sourcelink' },
@@ -411,6 +433,7 @@ ServerEvents.recipes((event) => {
         { id: /_machine_frame/, mod: 'industrialforegoing' },
 
         // Disable Power Generation
+        { mod: 'mekanismgenerators' },
 
         { id: 'ae2:network/blocks/energy_vibration_chamber' },
 
@@ -421,17 +444,7 @@ ServerEvents.recipes((event) => {
         { id: 'immersiveengineering:crafting/thermoelectric_generator' },
         { id: 'immersiveengineering:crafting/dynamo' },
 
-        { id: 'mekanismgenerators:rotational_complex' },
-        { id: 'mekanismgenerators:reactor/glass' },
-        { id: 'mekanismgenerators:saturating_condenser' },
-        { id: 'mekanismgenerators:control_rod_assembly' },
-        { id: 'mekanismgenerators:hohlraum' },
-        { id: 'mekanismgenerators:module_geothermal_generator_unit' },
-        { id: 'mekanismgenerators:module_solar_recharging_unit' },
-        { id: 'mekanismgenerators:solar_panel' },
-        { id: 'mekanismgenerators:laser_focus_matrix' },
-        { id: 'mekanismgenerators:gas_burning_generator' },
-        { id: 'mekanismgenerators:electromagnetic_coil' },
+        { mod: 'mekanismgenerators' },
 
         { id: 'pneumaticcraft:pneumatic_dynamo' },
 

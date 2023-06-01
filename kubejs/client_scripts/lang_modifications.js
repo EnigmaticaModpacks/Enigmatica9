@@ -33,49 +33,49 @@ const entries = {
             key: 'item.emendatusenigmatica.brass_ingot',
             value: {
                 normal: 'Brass Ingot',
-                expert: 'Aetherial Brass Ingot'
+                expert: 'Aetheric Brass Ingot'
             }
         },
         {
             key: 'item.emendatusenigmatica.brass_nugget',
             value: {
                 normal: 'Brass Nugget',
-                expert: 'Aetherial Brass Nugget'
+                expert: 'Aetheric Brass Nugget'
             }
         },
         {
             key: 'item.emendatusenigmatica.brass_dust',
             value: {
                 normal: 'Brass Dust',
-                expert: 'Aetherial Brass Dust'
+                expert: 'Aetheric Brass Dust'
             }
         },
         {
             key: 'item.emendatusenigmatica.brass_plate',
             value: {
                 normal: 'Brass Plate',
-                expert: 'Aetherial Brass Plate'
+                expert: 'Aetheric Brass Plate'
             }
         },
         {
             key: 'item.emendatusenigmatica.brass_gear',
             value: {
                 normal: 'Brass Gear',
-                expert: 'Aetherial Brass Gear'
+                expert: 'Aetheric Brass Gear'
             }
         },
         {
             key: 'item.emendatusenigmatica.brass_rod',
             value: {
                 normal: 'Brass Rod',
-                expert: 'Aetherial Brass Rod'
+                expert: 'Aetheric Brass Rod'
             }
         },
         {
             key: 'block.emendatusenigmatica.brass_block',
             value: {
                 normal: 'Block of Brass',
-                expert: 'Block of Aetherial Brass'
+                expert: 'Block of Aetheric Brass'
             }
         }
     ],
@@ -213,6 +213,27 @@ const entries = {
             value: {
                 normal: 'Brass Ladder',
                 expert: 'Fancy Ladder'
+            }
+        },
+        {
+            key: 'block.create.brass_bars',
+            value: {
+                normal: 'Brass Bars',
+                expert: 'Fancy Bars'
+            }
+        },
+        {
+            key: 'block.create.brass_scaffolding',
+            value: {
+                normal: 'Brass Scaffolding',
+                expert: 'Fancy Scaffolding'
+            }
+        },
+        {
+            key: 'block.create.brass_door',
+            value: {
+                normal: 'Brass Door',
+                expert: 'Fancy Door'
             }
         }
     ],

@@ -1375,10 +1375,10 @@
 					Count: 1b
 					id: "itemfilters:tag"
 					tag: {
-						value: "forge:raw_materials/nickel"
+						value: "forge:raw_materials"
 					}
 				}
-				title: "Raw Nickel"
+				title: "Material Processing"
 				type: "item"
 			}]
 			title: "Getting Started: Material Processing"

@@ -31,6 +31,19 @@ ServerEvents.recipes((event) => {
             count: 1,
             exp: 55,
             id: 'toomanyglyphs:glyph_chaining'
+        },
+        {
+            output: 'ars_elemental:glyph_bubble_shield',
+            inputItems: [
+                { item: { item: 'quark:rainbow_rune' } },
+                { item: { item: 'minecraft:prismarine_shard' } },
+                { item: { item: 'ars_nouveau:bastion_pod' } },
+                { item: { item: 'ars_nouveau:water_essence' } },
+                { item: { item: 'supplementaries:antique_ink' } }
+            ],
+            count: 1,
+            exp: 55,
+            id: 'ars_elemental:glyph_bubble_shield'
         }
     ];
 

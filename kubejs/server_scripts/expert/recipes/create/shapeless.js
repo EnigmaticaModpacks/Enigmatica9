@@ -19,6 +19,11 @@ ServerEvents.recipes((event) => {
             output: 'create:placard',
             inputs: ['minecraft:item_frame', '#forge:plates/gold'],
             id: `create:crafting/kinetics/placard`
+        },
+        {
+            output: 'create:rose_quartz_lamp',
+            inputs: ['create:polished_rose_quartz', '#forge:dusts/glowstone', '#forge:wires/lead'],
+            id: `create:crafting/kinetics/rose_quartz_lamp`
         }
     ];
 

@@ -728,7 +728,13 @@
 			tasks: [
 				{
 					id: "3D2248A91782812B"
-					item: "quark:ancient_fruit"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "apotheosis:long_knowledge"
+						}
+					}
 					type: "item"
 				}
 				{
@@ -765,6 +771,27 @@
 			]
 			x: 6.5d
 			y: 4.0d
+		}
+		{
+			dependencies: ["60324503ED7AC4C1"]
+			hide_dependency_lines: true
+			icon: "ae2:controller"
+			id: "330C200F0F0243FC"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "3B6B2B365CAD16C1"
+					item: "ae2:controller"
+					type: "item"
+				}
+				{
+					id: "77937A9F77A075BC"
+					item: "kubejs:ritual_summon_bound_blizz"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -1.0d
 		}
 	]
 	title: "Chapter Two"

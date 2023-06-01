@@ -267,14 +267,93 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'mekanism:module_energy_unit',
-            pattern: ['ABA', 'CDC', 'CBC'],
+            pattern: ['ABA', 'CDC', 'FBF'],
             key: {
                 A: '#forge:gems/source',
                 B: 'powah:capacitor_spirited',
-                C: '#forge:plastic',
-                D: 'modularrouters:augment_core'
+                C: '#forge:plates/aluminum',
+                D: 'modularrouters:augment_core',
+                F: '#forge:gears/osmium'
             },
             id: 'mekanism:module_energy_unit'
+        },
+        {
+            output: 'mekanism:module_gravitational_modulating_unit',
+            pattern: ['ABA', 'CDC', 'FEF'],
+            key: {
+                A: '#forge:ingots/brass',
+                B: 'ars_elemental:air_focus',
+                C: '#forge:plates/aluminum',
+                D: 'modularrouters:augment_core',
+                E: 'pneumaticcraft:printed_circuit_board',
+                F: '#forge:gears/osmium'
+            },
+            id: 'mekanism:module_gravitational_modulating_unit'
+        },
+        {
+            output: 'mekanism:module_hydraulic_propulsion_unit',
+            pattern: ['ABA', 'CDC', 'FEF'],
+            key: {
+                A: '#forge:essences/air',
+                B: 'ars_nouveau:glyph_amplify',
+                C: '#forge:plates/aluminum',
+                D: 'modularrouters:augment_core',
+                E: 'pneumaticcraft:printed_circuit_board',
+                F: '#forge:gears/osmium'
+            },
+            id: 'mekanism:module_hydraulic_propulsion_unit'
+        },
+        {
+            output: 'mekanism:module_hydrostatic_repulsor_unit',
+            pattern: ['ABA', 'CDC', 'FEF'],
+            key: {
+                A: '#forge:essences/water',
+                B: 'ars_nouveau:glyph_amplify',
+                C: '#forge:plates/aluminum',
+                D: 'modularrouters:augment_core',
+                E: 'pneumaticcraft:printed_circuit_board',
+                F: '#forge:gears/osmium'
+            },
+            id: 'mekanism:module_hydrostatic_repulsor_unit'
+        },
+        {
+            output: 'mekanism:module_motorized_servo_unit',
+            pattern: ['ABA', 'CDC', 'FEF'],
+            key: {
+                A: '#forge:essences/earth',
+                B: 'ars_nouveau:glyph_amplify',
+                C: '#forge:plates/aluminum',
+                D: 'modularrouters:augment_core',
+                E: 'pneumaticcraft:printed_circuit_board',
+                F: '#forge:gears/osmium'
+            },
+            id: 'mekanism:module_motorized_servo_unit'
+        },
+        {
+            output: 'mekanism:module_locomotive_boosting_unit',
+            pattern: ['ABA', 'CDC', 'FEF'],
+            key: {
+                A: '#forge:essences/fire',
+                B: 'ars_nouveau:glyph_amplify',
+                C: '#forge:plates/aluminum',
+                D: 'modularrouters:augment_core',
+                E: 'pneumaticcraft:printed_circuit_board',
+                F: '#forge:gears/osmium'
+            },
+            id: 'mekanism:module_locomotive_boosting_unit'
+        },
+        {
+            output: 'mekanism:modification_station',
+            pattern: ['ABC', 'DEF'],
+            key: {
+                A: 'supplementaries:crystal_display',
+                B: '#forge:essences/manipulation',
+                C: 'create:mechanical_arm',
+                D: 'createaddition:electric_motor',
+                E: 'immersiveengineering:circuit_table',
+                F: 'create:sequenced_gearshift'
+            },
+            id: 'mekanism:modification_station'
         }
     ];
 
@@ -287,19 +366,31 @@ ServerEvents.recipes((event) => {
         { module: 'mekanism:module_fortune_unit', glyph: 'ars_nouveau:glyph_fortune' },
         { module: 'mekanism:module_blasting_unit', glyph: 'ars_nouveau:glyph_explosion' },
         { module: 'mekanism:module_excavation_escalation_unit', glyph: 'ars_nouveau:glyph_amplify' },
-        { module: 'mekanism:module_vein_mining_unit', glyph: 'toomanyglyphs:glyph_chaining' }
+        { module: 'mekanism:module_vein_mining_unit', glyph: 'toomanyglyphs:glyph_chaining' },
+
+        { module: 'mekanism:module_laser_dissipation_unit', glyph: 'ars_nouveau:glyph_intangible' },
+        { module: 'mekanism:module_vision_enhancement_unit', glyph: 'ars_nouveau:glyph_light' },
+        { module: 'mekanism:module_electrolytic_breathing_unit', glyph: 'ars_nouveau:glyph_evaporate' },
+        { module: 'mekanism:module_frost_walker_unit', glyph: 'ars_nouveau:glyph_freeze' },
+        { module: 'mekanism:module_nutritional_injection_unit', glyph: 'ars_nouveau:glyph_toss' },
+        { module: 'mekanism:module_jetpack_unit', glyph: 'ars_nouveau:glyph_launch' },
+        { module: 'mekanism:module_gyroscopic_stabilization_unit', glyph: 'ars_nouveau:glyph_underfoot' },
+        { module: 'mekanism:module_elytra_unit', glyph: 'ars_nouveau:glyph_glide' },
+        { module: 'mekanism:module_charge_distribution_unit', glyph: 'ars_nouveau:glyph_split' },
+        { module: 'mekanism:module_magnetic_attraction_unit', glyph: 'ars_nouveau:glyph_pickup' }
     ];
 
     meka_tool_modules.forEach((recipe) => {
         recipes.push({
             output: recipe.module,
-            pattern: ['ABA', 'CDC', 'CEC'],
+            pattern: ['ABA', 'CDC', 'FEF'],
             key: {
                 A: '#forge:gems/source',
                 B: recipe.glyph,
-                C: '#forge:plastic',
+                C: '#forge:plates/aluminum',
                 D: 'modularrouters:augment_core',
-                E: 'pneumaticcraft:printed_circuit_board'
+                E: 'pneumaticcraft:printed_circuit_board',
+                F: '#forge:gears/osmium'
             },
             id: recipe.module
         });
