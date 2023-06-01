@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
         {
             outputs: {
                 primary: 'minecraft:netherite_scrap',
-                secondary: 'emendatusenigmatica:quartz_dust',
+                secondary: AlmostUnified.getPreferredItemForTag(`forge:gems/quartz`).getId(),
                 secondary_amount: 2,
                 tertiary: 'minecraft:ancient_debris'
             },

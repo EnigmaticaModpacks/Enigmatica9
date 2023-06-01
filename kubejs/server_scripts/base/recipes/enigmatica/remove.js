@@ -31,10 +31,13 @@ ServerEvents.recipes((event) => {
         { input: /mekanism.*fluorite_ore/ },
         { input: /rftoolsbase:dimensionalshard_/ },
 
+        { id: 'ars_elemental:blaze_crush' },
+
         { id: /ars_nouveau:.*_dye/ },
 
         { id: 'create:compat/ae2/mixing/fluix_crystal' },
         { id: 'create:compat/byg/crushing/lignite_ore' },
+        { id: 'create:crushing/blaze_rod' },
 
         { id: /createaddition:mixing\/biomass/ },
         { id: /createaddition:crafting\/.*spool/ },
@@ -69,6 +72,7 @@ ServerEvents.recipes((event) => {
         { id: 'immersiveengineering:crafting/coal_coke_to_coke' },
         { id: 'immersiveengineering:refinery/biodiesel' },
         { id: 'immersiveengineering:crusher/slag' },
+        { id: 'immersiveengineering:crusher/blaze_powder' },
 
         { id: /mekanism:enriching\/dye/ },
         { id: /mekanism:compat\/byg\/dye/ },

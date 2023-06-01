@@ -1,53 +1,47 @@
 ServerEvents.recipes((event) => {
-    const id_prefix = 'enigmatica:base/create/crushing_wheels/';
-
-    let recipes = [
+    const id_prefix = 'enigmatica:base/ars_nouveau/crushing/';
+    const recipes = [
         {
-            outputs: [
-                { item: 'minecraft:blaze_powder', count: 3 },
+            output: [
+                { item: 'minecraft:blaze_powder', count: 3, chance: 1.0 },
                 { item: 'minecraft:blaze_powder', count: 3, chance: 0.25 },
                 { item: 'emendatusenigmatica:sulfur_gem', count: 1, chance: 0.25 }
             ],
-            inputs: ['#forge:rods/blaze'],
-            processingTime: 60,
+            input: '#forge:rods/blaze',
             id: `${id_prefix}blaze_powder`
         },
         {
-            outputs: [
-                { item: 'thermal:blizz_powder', count: 3 },
+            output: [
+                { item: 'thermal:blizz_powder', count: 3, chance: 1.0 },
                 { item: 'thermal:blizz_powder', count: 3, chance: 0.25 },
                 { item: 'minecraft:snowball', count: 1, chance: 0.25 }
             ],
-            inputs: ['#forge:rods/blizz'],
-            processingTime: 60,
+            input: '#forge:rods/blizz',
             id: `${id_prefix}blizz_powder`
         },
         {
-            outputs: [
-                { item: 'thermal:blitz_powder', count: 3 },
+            output: [
+                { item: 'thermal:blitz_powder', count: 3, chance: 1.0 },
                 { item: 'thermal:blitz_powder', count: 3, chance: 0.25 },
                 { item: 'emendatusenigmatica:niter_gem', count: 1, chance: 0.5 }
             ],
-            inputs: ['#forge:rods/blitz'],
-            processingTime: 60,
+            input: '#forge:rods/blitz',
             id: `${id_prefix}blitz_powder`
         },
         {
-            outputs: [
-                { item: 'thermal:basalz_powder', count: 3 },
+            output: [
+                { item: 'thermal:basalz_powder', count: 3, chance: 1.0 },
                 { item: 'thermal:basalz_powder', count: 3, chance: 0.25 },
                 { item: 'thermal:slag', count: 1, chance: 0.5 }
             ],
-            inputs: ['#forge:rods/basalz'],
-            processingTime: 60,
+            input: '#forge:rods/basalz',
             id: `${id_prefix}basalz_powder`
         }
     ];
 
     recipes.forEach((recipe) => {
-        recipe.type = 'create:crushing';
-        recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
-        recipe.results = recipe.outputs;
+        recipe.type = 'ars_nouveau:crush';
+        recipe.input = Ingredient.of(recipe.input).toJson();
         event.custom(recipe).id(recipe.id);
     });
 });
