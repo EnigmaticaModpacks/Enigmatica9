@@ -8,7 +8,18 @@ LootJS.modifiers((event) => {
     // replaceWithRaw   -> Boolean - Should it replace the drop with Raw ore, or return unified version of the item?
     // count            -> integer - if replaceWithRaw is True, then specifies the amount of raw ore given for each item.
     // Exceptions in unification. (Implementation created for Blue_Skies, that was removed, but the implementation is left for future.)
-    let exceptions = {};
+    let exceptions = {
+        // 'item': 'replacement'
+        // 'minecraft:diamond': 'minecraft:dirt'
+    };
+
+    // Raw Ore Override
+    let mc_materials = ['iron', 'gold', 'copper'];
+    mc_materials.forEach((material) => {
+        let mc_variant = `minecraft:raw_${material}`;
+        exceptions[mc_variant] = mc_variant;
+        exceptions[`emendatusenigmatica:raw_${material}`] = mc_variant;
+    });
 
     function unifyLoot(tag, suffix, itemStack, prefix, replaceWithRaw, count) {
         prefix = !prefix ? '' : prefix + '_';
@@ -20,7 +31,7 @@ LootJS.modifiers((event) => {
         }
 
         // If itemstack already is from EE and replaceWithRaw is false, just return it.
-        if (itemStack.getId().startsWith('emendatusenigmatica:') && !replaceWithRaw) {
+        if (itemStack.getId().startsWith('emendatusenigmatica:') && !replaceWithRaw && !exceptions[itemStack.getId()]) {
             return itemStack;
         }
 

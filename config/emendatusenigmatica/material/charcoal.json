@@ -3,7 +3,8 @@
   "source": "modded",
   "localizedName": "Charcoal",
   "processedTypes": [
-    "dust"
+    "dust",
+    "storage_block"
   ],
   "properties": {
     "materialType": "gem",

@@ -24,48 +24,6 @@ to make editing this file much easier.
             '4': [],
             '5': []
         },
-        'blue_skies:alchemist': {
-            '1': [],
-            '2': [],
-            '3': [],
-            '4': [],
-            '5': []
-        },
-        'blue_skies:nightwatcher': {
-            '1': [],
-            '2': [],
-            '3': [],
-            '4': [],
-            '5': []
-        },
-        'blue_skies:shoveler': {
-            '1': [],
-            '2': [],
-            '3': [],
-            '4': [],
-            '5': []
-        },
-        'blue_skies:stargazer': {
-            '1': [],
-            '2': [],
-            '3': [],
-            '4': [],
-            '5': []
-        },
-        'blue_skies:summoner': {
-            '1': [],
-            '2': [],
-            '3': [],
-            '4': [],
-            '5': []
-        },
-        'blue_skies:wrangler': {
-            '1': [],
-            '2': [],
-            '3': [],
-            '4': [],
-            '5': []
-        },
         'byg:forager': {
             '1': [
                 {
@@ -273,18 +231,7 @@ to make editing this file much easier.
                     type: 'corgilib:emerald_for_items'
                 }
             ],
-            '3': [
-                {
-                    config: {
-                        emerald_cost: 16,
-                        item: 'minecraft:rabbit_foot',
-                        max_uses: 3,
-                        number_of_items: 1,
-                        villager_xp: 10
-                    },
-                    type: 'corgilib:items_for_emeralds'
-                }
-            ],
+            '3': [],
             '4': [],
             '5': []
         },

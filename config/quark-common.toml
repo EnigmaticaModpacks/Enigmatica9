@@ -192,6 +192,8 @@
 	#Allowed values: (0,)
 	"Advancement Visibility Depth" = 2
 	"'q' Button on the Right" = false
+	#Set to false to disable Quark's item info when viweing recipe/uses for an item in JEI
+	"Enable Jei Item Info" = true
 	#Allowed values: (0,)
 	"Piston Push Limit" = 12
 	#Set to false to stop quark from adding its own advancements
@@ -222,8 +224,12 @@
 	"Shulker Boxes" = ["minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box"]
 	#Set to true to enable a system that debugs quark's worldgen features. This should ONLY be used if you're asked to by a dev.
 	"Enable Worldgen Watchdog" = false
+	#Set to false to disable the behavior where quark will automatically hide any disabled items
+	"Hide Disabled Content" = true
 	#Should Quark treat anything with 'shulker_box' in its item identifier as a shulker box?
 	"Interpret Shulker Box Like Blocks" = true
+	#For JEI info purposes, add any items here to specifically disable their JEI info from Quark. Note that Quark already only shows info that's relevant to which features are enabled
+	"Suppressed Info" = []
 
 [automation]
 	Chute = false
@@ -240,6 +246,12 @@
 	"Redstone Randomizer" = true
 
 	[automation.dispensers_place_blocks]
+		#Set to false to refrain from registering any behaviors for blocks that have optional dispense behaviors already set.
+		#An optional behavior is one that will defer to the generic dispense item behavior if its condition fails.
+		#e.g. the Shulker Box behavior is optional, because it'll throw out the item if it fails, whereas TNT is not optional.
+		#If true, it'll attempt to use the previous behavior before trying to place the block in the world.
+		#Requires a game restart to re-apply.
+		"Wrap Existing Behaviors" = true
 		Blacklist = ["minecraft:water", "minecraft:lava", "minecraft:fire"]
 
 	[automation.metal_buttons]
@@ -874,6 +886,8 @@
 		"Check Hotbar" = false
 		#Enable comparing enchantments to find a replacement
 		"Enable Enchant Matching" = true
+		#Any items you place in this list will be ignored by the restock feature
+		"Ignored Items" = ["botania:exchange_rod", "botania:dirt_rod", "botania:skydirt_rod", "botania:cobble_rod"]
 
 	[management.easy_transfering]
 		"Enable Shift Lock" = true
@@ -894,9 +908,11 @@
 	"Double Door Opening" = true
 	"Automatic Recipe Unlock" = true
 	"No Durability On Cosmetics" = true
+	"Diamond Repair" = true
 	"Shulker Packing" = true
 	"Slabs To Blocks" = true
 	"Renewable Spore Blossoms" = true
+	"Slimes To Magma Cubes" = true
 	"Glass Shard" = false
 	"Campfires Boost Elytra" = true
 	"More Banner Layers" = true
@@ -940,6 +956,8 @@
 		"Harvest Level" = 2
 		#Allowed values: [0,)
 		"Fortune Level" = 2
+		"Display Fortune In Tooltip" = true
+		"Italic Tooltip" = true
 
 	[tweaks.more_note_block_sounds]
 		"Enable Amethyst Sound" = true
@@ -1009,6 +1027,14 @@
 		"Ignored Recipes" = []
 		"Disable Recipe Book" = true
 		"Force Limited Crafting" = false
+
+	[tweaks.diamond_repair]
+		#List of changes to apply to repair items, format is "<item>=<repair_item>" as seen in the defualt.
+		#Multiple repair items can be applied for the same base item, and as long as at least one is provided, any vanilla option will be removed.
+		#To use multiple items, comma separate them (e.g. "minecraft:diamond_sword=minecraft:diamond,minecraft:emerald")If you want the vanilla option back, you must add it again manually.
+		"Repair Item Changes" = ["minecraft:netherite_sword=minecraft:diamond", "minecraft:netherite_pickaxe=minecraft:diamond", "minecraft:netherite_axe=minecraft:diamond", "minecraft:netherite_shovel=minecraft:diamond", "minecraft:netherite_hoe=minecraft:diamond", "minecraft:netherite_helmet=minecraft:diamond", "minecraft:netherite_chestplate=minecraft:diamond", "minecraft:netherite_leggings=minecraft:diamond", "minecraft:netherite_boots=minecraft:diamond"]
+		"Unrepairable Items" = []
+		"Enable Jei Hints" = true
 
 	[tweaks.double_door_opening]
 		#This feature disables itself if any of the following mods are loaded: 
@@ -1162,9 +1188,10 @@
 	[client.improved_tooltips]
 		"Shulker Box Require Shift" = false
 		"Shulker Box Use Colors" = true
-		"Attribute Tooltips" = true
+		"Attribute Tooltips" = false
 		"Enchanting Tooltips" = true
-		#The value of each shank of food. Tweak this when using mods like Hardcore Hunger which change that value.
+		#The value of each shank of food.
+		#Tweak this when using mods like Hardcore Hunger which change that value.
 		"Food Divisor" = 2
 		#A list of additional stacks to display on each enchantment
 		#The format is as follows:
@@ -1177,6 +1204,11 @@
 		"Shulker Tooltips" = true
 		"Map Require Shift" = false
 		"Fuel Time Divisor" = 200
+		#Should item attributes be colored relative to your current equipped item?
+		#e.g. if wearing an Iron Helmet, the armor value in a Diamond Helmet will show as green, and vice versa would be red.
+		#If set to false, item attributes will show in white or red if they're negative values.
+		"Show Upgrade Status" = true
+		"Animate Up Down Arrows" = true
 		"Food Tooltips" = true
 		"Show Saturation" = true
 		"Map Tooltips" = true
@@ -1234,6 +1266,8 @@
 		"Dupe Multiplier" = 1.4
 		#Should this be X, the price of a piece increase by 1 every X pieces you generate
 		"Piece Price Scale" = 9
+		#Add specific enchantments to matrix enchanter. Meant for treasure ones
+		"Treasure Whitelist" = []
 		#How much each candle influences an enchantment. This works as a multiplier to its weight
 		"Influence Power" = 0.125
 		#Matrix Enchanting can be done with short (<= 3px blocks) instead of air around the enchanting table. Set this to false to disable this behaviour.
@@ -1300,11 +1334,30 @@
 
 [experimental]
 	"Adjustable Chat" = false
+	"Game Nerfs" = true
 	"Spawner Replacer" = false
 	"Narrator Readout" = false
 	"Overlay Shader" = false
+	#This feature generates Resource Pack Item Model predicates on the items defined in 'Items to Change'
+	#for the Enchantments defined in 'Enchantments to Register'.
+	#
+	#Example: if 'minecraft:silk_touch' is added to 'Enchantments to Register', and 'minecraft:netherite_pickaxe'
+	#is added to 'Items to Change', then a predicate named 'quark_has_enchant_minecraft_silk_touch' will be available
+	#to the netherite_pickaxe.json item model, whose value will be the enchantment level.
+	"Enchantment Predicates" = false
 	"Enchantments Begone" = true
-	"Game Nerfs" = true
+
+	[experimental.spawner_replacer]
+		#Mobs to be replaced with other mobs.
+		#Format is: "mob1,mob2", i.e. "minecraft:spider,minecraft:skeleton"
+		"Replace Mobs" = []
+
+	[experimental.enchantments_begone]
+		"Enchantments To Begone" = ["apotheosis:earths_boon", "apotheosis:rebounding", "apotheosis:spearfishing", "minecraft:respiration", "minecraft:binding_curse", "minecraft:vanishing_curse", "supplementaries:stasis", "minecraft:mending"]
+
+	[experimental.enchantment_predicates]
+		"Enchantments To Register" = []
+		"Items To Change" = []
 
 	[experimental.game_nerfs]
 		#Makes Mending act like the Unmending mod
@@ -1317,8 +1370,11 @@
 		"Disable Wool Drops" = false
 		#Disables mob griefing for only specific entities
 		"Enable Selective Mob Griefing" = true
+		"Elytra Allowed Dimensions" = ["minecraft:the_end"]
 		#Makes Boats not glide on ice
 		"Disable Ice Roads" = false
+		#Force Elytra to only work in specific dimensions
+		"Enable Dimension Locked Elytra" = false
 		#Resets all villager discounts when zombified to prevent reducing prices to ridiculous levels
 		"Nerf Villager Discount" = true
 
@@ -1326,19 +1382,11 @@
 		"Horizontal Shift" = 0
 		"Vertical Shift" = 0
 
-	[experimental.spawner_replacer]
-		#Mobs to be replaced with other mobs.
-		#Format is: "mob1,mob2", i.e. "minecraft:spider,minecraft:skeleton"
-		"Replace Mobs" = []
-
 	[experimental.overlay_shader]
 		#Sets the name of the shader to load on a regular basis. This can load any shader the Camera module can (and requires the Camera module enabled to apply said logic).
 		#Some useful shaders include 'desaturate', 'oversaturate', 'bumpy'
 		#Colorblind simulation shaders are available in the form of 'deuteranopia', 'protanopia', 'tritanopia', and 'achromatopsia'
 		Shader = "none"
-
-	[experimental.enchantments_begone]
-		"Enchantments To Begone" = ["apotheosis:earths_boon", "apotheosis:rebounding", "apotheosis:spearfishing", "minecraft:respiration", "minecraft:binding_curse", "minecraft:vanishing_curse", "supplementaries:stasis", "minecraft:mending"]
 
 [categories]
 	Building = true
@@ -1446,8 +1494,20 @@
 		#Here's an example of a map to locate Ice Mountains:
 		#minecraft:ice_mountains,2,8,14,7FE4FF
 		Customs = []
+		"Add To Wandering Trader Rare" = false
 		"Search Radius" = 6400
+		#Set to false to make it so the default quark Pathfinder Map Built-In don't get added, and only the custom ones do
+		"Apply Default Trades" = true
+		"Draw Hud" = true
+		"Add To Wandering Trader Generic" = false
+		"Hud On Top" = false
+		"Add To Cartographer" = true
 		"Xp From Trade" = 5
+		#Experimental. Determines if quills should be multithreaded instead. Will ignore quill speed. This could drastically improve performance as it execute the logic off the main thread ideally causing no lag at all
+		"Multi Threaded" = true
+		"Add To Wandering Trader Forced" = true
+		#How many steps in the search should the Pathfinder's Quill do per tick? The higher this value, the faster it'll find a result, but the higher chance it'll lag the game while doing so
+		"Pathfinders Quill Speed" = 32
 
 	[tools.color_runes]
 		"Jungle Temple Weight" = 8
