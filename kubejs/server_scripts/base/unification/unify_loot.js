@@ -14,17 +14,17 @@ LootJS.modifiers((event) => {
     };
 
     // Raw Ore Override
-    let mc_materials = ['iron', 'gold', 'copper']
-    mc_materials.forEach(material => {
-        let mc_variant = `minecraft:raw_${material}`
-        exceptions[mc_variant] = mc_variant
-        exceptions[`emendatusenigmatica:raw_${material}`] = mc_variant
-    })
+    let mc_materials = ['iron', 'gold', 'copper'];
+    mc_materials.forEach((material) => {
+        let mc_variant = `minecraft:raw_${material}`;
+        exceptions[mc_variant] = mc_variant;
+        exceptions[`emendatusenigmatica:raw_${material}`] = mc_variant;
+    });
 
     function unifyLoot(tag, suffix, itemStack, prefix, replaceWithRaw, count) {
-        prefix = (!prefix) ? '' : prefix + '_';
-        replaceWithRaw = (!replaceWithRaw) ? false : true;
-        count = (!count) ? itemStack.getCount() : count;
+        prefix = !prefix ? '' : prefix + '_';
+        replaceWithRaw = !replaceWithRaw ? false : true;
+        count = !count ? itemStack.getCount() : count;
 
         if (exceptions[itemStack.getId()]) {
             return Item.of(exceptions[itemStack.getId()], itemStack.getCount());
