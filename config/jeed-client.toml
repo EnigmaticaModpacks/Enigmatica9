@@ -4,4 +4,10 @@ effect_box = true
 hidden_effects = [""]
 #Show effect colors in tooltip
 effect_color = true
+#Show ingredients list along with an effect description
+ingredients_list = true
+#Renders individual slots instead of a big one. Only works for REI
+render_slots = false
+#Removes vanilla tooltips rendered when an effect renders small (square box)
+replace_vanilla_tooltips = true
 

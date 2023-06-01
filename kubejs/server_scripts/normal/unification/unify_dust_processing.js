@@ -199,7 +199,7 @@ function recipetypes_crushing(event, material, exceptions, item, tag) {
     const id_prefix = 'enigmatica:normal/unification/dust_processing/';
     let recipe = {
         outputs: {
-            primary: { item: (item == null) ? `emendatusenigmatica:${material.name}_dust` : item, count: 1, chance: 1 }
+            primary: { item: item == null ? `emendatusenigmatica:${material.name}_dust` : item, count: 1, chance: 1 }
         },
         input: '',
         experience: 0.25,
@@ -212,7 +212,7 @@ function recipetypes_crushing(event, material, exceptions, item, tag) {
 
     if (!recipe.exceptions) recipe.exceptions = {};
 
-    recipe.input = (tag == null) ? `#forge:${material.type}/${material.name}` : tag;
+    recipe.input = tag == null ? `#forge:${material.type}/${material.name}` : tag;
     recipe.id_suffix = `${material.type}/${material.name}_dust`;
 
     // Occultism

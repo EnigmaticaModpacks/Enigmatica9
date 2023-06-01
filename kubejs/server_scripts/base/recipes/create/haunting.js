@@ -10,9 +10,8 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'create:haunting';
-        recipe.ingredients = recipe.ingredients.map(ingredient => Ingredient.of(ingredient).toJson())
-        recipe.results = recipe.results.map(item => Item.of(item).toJson())
+        recipe.ingredients = recipe.ingredients.map((ingredient) => Ingredient.of(ingredient).toJson());
+        recipe.results = recipe.results.map((item) => Item.of(item).toJson());
         event.custom(recipe).id(recipe.id);
     });
 });
-

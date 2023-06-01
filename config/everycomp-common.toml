@@ -6,4 +6,6 @@
 	assets_depend_on_loaded_packs = true
 	#Creates a debug folder inside your instance directory where all the dynamically generated resources will be saved
 	save_debug_resources = false
+	#Don't touch unless you are told to
+	debug_packet = false
 
