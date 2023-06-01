@@ -12,6 +12,8 @@
 -   Nomadic Tents have been made considerably cheaper to craft and shovels are no longer needed to increase the floor depth, each size is already maxed out at crafting time.
 -   If a Mega Tent has already been crafted but the floor depth was not maxed out, it may be crafted together with a Wooden Shovel to upgrade it to max depth. For lower tiers, just craft up to the next tier.
 -   Introduces Quests for Spirit.
+-   Add descriptions explaining how to get Borer Essence for crafting Carminite
+-   Add Crushing support for elemental rods
 
 ### 🐛 Fixed Bugs
 

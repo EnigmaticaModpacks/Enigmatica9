@@ -532,8 +532,6 @@ jei.expert.items.disabled = [
 
     'sophisticatedbackpacks:battery_upgrade',
 
-    /sophisticatedstorage:limited_/,
-
     'superiorshields:copper_shield',
     'superiorshields:diamond_shield',
     'superiorshields:electric_shield',
