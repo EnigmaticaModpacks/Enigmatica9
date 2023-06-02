@@ -2,6 +2,17 @@
 
 ### 🎁 New Mods Added
 
+-   [Integrated Stronghold](https://www.curseforge.com/minecraft/mc-mods/integrated-stronghold) (by [CraisinLord](https://www.curseforge.com/members/CraisinLord/projects))
+-   [Thermal Dynamics](https://www.curseforge.com/minecraft/mc-mods/thermal-dynamics) (by [TeamCoFH](https://www.curseforge.com/members/TeamCoFH/projects))
+
+### Removed Mods
+
+-   [Blue Skies](https://www.curseforge.com/minecraft/mc-mods/blue-skies) (by [ModdingLegacy](https://www.curseforge.com/members/ModdingLegacy/projects))
+-   [Explorer's Compass](https://www.curseforge.com/minecraft/mc-mods/explorers-compass) (by [Chaosyr](https://www.curseforge.com/members/Chaosyr/projects))
+-   [Little Contraptions](https://www.curseforge.com/minecraft/mc-mods/little-contraptions) (by [EDToaster](https://www.curseforge.com/members/EDToaster/projects))
+-   [Structure Gel API](https://www.curseforge.com/minecraft/mc-mods/structure-gel-api) (by [ModdingLegacy](https://www.curseforge.com/members/ModdingLegacy/projects))
+-   [YUNG's Better Strongholds (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-strongholds) (by [YUNGNICKYOUNG](https://www.curseforge.com/members/YUNGNICKYOUNG/projects))
+
 ### 🌟 Improvements
 
 -   Expand loot in Twilight Forest and other dungeons.
@@ -14,6 +25,9 @@
 -   Introduces Quests for Spirit.
 -   Add descriptions explaining how to get Borer Essence for crafting Carminite
 -   Add Crushing support for elemental rods
+-   Unify More Loot! [\#325](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/325) ([Kanzaji](https://github.com/Kanzaji))
+-   Rework EE Replacement of Vanilla materials [\#338](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/338) ([Kanzaji](https://github.com/Kanzaji))
+-   Replace EE Gold Nugget to Vanilla one in the Thermal Netherite Processing Recipe [\#370](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/370) ([Kanzaji](https://github.com/Kanzaji))
 
 ### 🐛 Fixed Bugs
 
@@ -22,6 +36,7 @@
 -   Disable PVI for vanilla mobs as there appear to be some random crashes related that are hard to track down. [\#322](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/322) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix missing Treated Stick recipe [\#339](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/339) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix Endersurge gems not applying to anything but helms [\#343](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/343) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Rework Debris Processing + EE Integration fixes [\#331](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/331) ([Kanzaji](https://github.com/Kanzaji))
 
 ---
 
