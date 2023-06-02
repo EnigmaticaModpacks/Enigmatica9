@@ -17,4 +17,7 @@
 	#Limits the number of times a given augment may be applied to a given effect
 	#Example entry: "glyph_amplify=5"
 	augment_limits = ["ars_nouveau:glyph_pierce=1"]
+	#Max lifespan of the projectile, in seconds.
+	#Range: > 0
+	max_lifespan = 30
 

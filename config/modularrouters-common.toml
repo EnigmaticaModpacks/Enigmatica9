@@ -11,10 +11,10 @@
 	lowPowerTickRate = 100
 	#Fluid transfer rate increase per Fluid Transfer Upgrade
 	#Range: > 1
-	mBperFluidUpgade = 220
+	mBperFluidUpgade = 10
 	#Base fluid transfer rate (mB/t in each direction) for a router
 	#Range: > 1
-	fluidBaseTransferRate = 300
+	fluidBaseTransferRate = 50
 	#Router with eco mode enabled will go into low-power mode if idle for this many server ticks
 	#Range: > 1
 	ecoTimeout = 100
@@ -25,10 +25,10 @@
 	baseTickRate = 20
 	#Max fluid transfer rate (mB/t in each direction) for a router
 	#Range: > 1
-	fluidMaxTransferRate = 8000
+	fluidMaxTransferRate = 400
 	#FE capacity per Energy Upgrade
 	#Range: > 1
-	fePerEnergyUpgrade = 32000
+	fePerEnergyUpgrade = 50000
 	#FE transfer rate (FE/t) per Energy Upgrade
 	#Range: > 1
 	feXferPerEnergyUpgrade = 1000
@@ -101,49 +101,49 @@
 	activatorModuleEnergyCostAttack = 150
 	#Energy cost (FE) to run one operation for the Breaker Module
 	#Range: > 0
-	breakerModuleEnergyCost = 150
+	breakerModuleEnergyCost = 0
 	#Energy cost (FE) to run one operation for the Fluid Module Mk2
 	#Range: > 0
-	fluidModule2EnergyCost = 100
+	fluidModule2EnergyCost = 0
 	#Energy cost (FE) to run one operation for the Extruder Module Mk2
 	#Range: > 0
 	extruderModule2EnergyCost = 0
 	#Energy cost (FE) to run one operation for the Extruder Module Mk1
 	#Range: > 0
-	extruderModule1EnergyCost = 50
+	extruderModule1EnergyCost = 0
 	#Energy cost (FE) to run one operation for the Player Module
 	#Range: > 0
-	playerModuleEnergyCost = 600
+	playerModuleEnergyCost = 0
 	#Energy cost (FE) to run one operation for the Vacuum Module
 	#Range: > 0
-	vacuumModuleEnergyCost = 50
+	vacuumModuleEnergyCost = 0
 	#Energy cost (FE) to run one right-click operation for the Activator Module
 	#Range: > 0
-	activatorModuleEnergyCost = 150
+	activatorModuleEnergyCost = 0
 	#Energy cost (FE) to run one operation for the Placer Module
 	#Range: > 0
-	placerModuleEnergyCost = 150
+	placerModuleEnergyCost = 0
 	#Energy cost (FE) to run one operation for the Flinger Module
 	#Range: > 0
-	flingerModuleEnergyCost = 150
+	flingerModuleEnergyCost = 0
 	#Energy cost (FE) to run one operation for the Void Module
 	#Range: > 0
 	voidModuleEnergyCost = 0
 	#Energy cost (FE) to run one operation for the Puller Module Mk1
 	#Range: > 0
-	pullerModule1EnergyCost = 50
+	pullerModule1EnergyCost = 0
 	#Energy cost (FE) to run one operation for the Sender Module Mk1
 	#Range: > 0
-	senderModule1EnergyCost = 50
+	senderModule1EnergyCost = 0
 	#Energy cost (FE) to run one operation for the Energy Output Module
 	#Range: > 0
 	energyoutputModuleEnergyCost = 0
 	#Energy cost (FE) to run one operation for the Dropper Module
 	#Range: > 0
-	dropperModuleEnergyCost = 50
+	dropperModuleEnergyCost = 0
 	#Energy cost (FE) to run one operation for the Puller Module Mk2
 	#Range: > 0
-	pullerModule2EnergyCost = 100
+	pullerModule2EnergyCost = 0
 	#Energy cost (FE) to run one operation for the Detector Module
 	#Range: > 0
 	detectorModuleEnergyCost = 0
@@ -152,14 +152,14 @@
 	energydistributorModuleEnergyCost = 0
 	#Energy cost (FE) to run one operation for the Sender Module Mk3
 	#Range: > 0
-	senderModule3EnergyCost = 150
+	senderModule3EnergyCost = 0
 	#Energy cost (FE) to run one operation for the Distributor Module
 	#Range: > 0
-	distributorModuleEnergyCost = 150
+	distributorModuleEnergyCost = 0
 	#Energy cost (FE) to run one operation for the Fluid Module Mk1
 	#Range: > 0
-	fluidModuleEnergyCost = 50
+	fluidModuleEnergyCost = 0
 	#Energy cost (FE) to run one operation for the Sender Module Mk2
 	#Range: > 0
-	senderModule2EnergyCost = 100
+	senderModule2EnergyCost = 0
 
