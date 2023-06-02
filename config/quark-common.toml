@@ -5,8 +5,8 @@
 	Foxhound = true
 	Forgotten = true
 	Shiba = true
-	Wraith = false
-	Toretoise = false
+	Wraith = true
+	Toretoise = true
 
 	[mobs.toretoise]
 		"Max Y Level" = 0
@@ -232,7 +232,7 @@
 	"Suppressed Info" = []
 
 [automation]
-	Chute = false
+	Chute = true
 	"Iron Rod" = true
 	"Ender Watcher" = true
 	"Jukebox Automation" = true
@@ -1334,7 +1334,7 @@
 
 [experimental]
 	"Adjustable Chat" = false
-	"Game Nerfs" = true
+	"Game Nerfs" = false
 	"Spawner Replacer" = false
 	"Narrator Readout" = false
 	"Overlay Shader" = false
@@ -1353,7 +1353,7 @@
 		"Replace Mobs" = []
 
 	[experimental.enchantments_begone]
-		"Enchantments To Begone" = ["apotheosis:earths_boon", "apotheosis:rebounding", "apotheosis:spearfishing", "minecraft:respiration", "minecraft:binding_curse", "minecraft:vanishing_curse", "supplementaries:stasis", "minecraft:mending"]
+		"Enchantments To Begone" = ["apotheosis:earths_boon", "apotheosis:rebounding", "apotheosis:spearfishing", "minecraft:binding_curse", "minecraft:vanishing_curse", "supplementaries:stasis"]
 
 	[experimental.enchantment_predicates]
 		"Enchantments To Register" = []
@@ -1362,17 +1362,17 @@
 	[experimental.game_nerfs]
 		#Makes Mending act like the Unmending mod
 		#https://www.curseforge.com/minecraft/mc-mods/unmending
-		"Nerf Mending" = false
+		"Nerf Mending" = true
 		#Makes Iron Golems not drop Iron Ingots
-		"Disable Iron Farms" = false
+		"Disable Iron Farms" = true
 		"Non Griefing Entities" = ["minecraft:creeper", "minecraft:enderman"]
 		#Makes Sheep not drop Wool when killed
-		"Disable Wool Drops" = false
+		"Disable Wool Drops" = true
 		#Disables mob griefing for only specific entities
 		"Enable Selective Mob Griefing" = true
 		"Elytra Allowed Dimensions" = ["minecraft:the_end"]
 		#Makes Boats not glide on ice
-		"Disable Ice Roads" = false
+		"Disable Ice Roads" = true
 		#Force Elytra to only work in specific dimensions
 		"Enable Dimension Locked Elytra" = false
 		#Resets all villager discounts when zombified to prevent reducing prices to ridiculous levels
@@ -1401,7 +1401,7 @@
 	Client = true
 
 [tools]
-	Pickarang = false
+	Pickarang = true
 	"Ambient Discs" = true
 	"Seed Pouch" = false
 	"Pathfinder Maps" = false

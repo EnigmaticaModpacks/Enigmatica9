@@ -1,5 +1,5 @@
 #If false, the return portal will require the activation item.
-shouldReturnPortalBeUsable = false
+shouldReturnPortalBeUsable = true
 #If true, Keepsake Caskets that are spawned when a player dies will not be accessible by other players. Use this if you dont want people taking from other people's death caskets. NOTE: server operators will still be able to open locked caskets.
 uuid_locking = false
 #The dimension you can always travel to the Twilight Forest from, as well as the dimension you will return to. Defaults to the overworld. (domain:regname).
@@ -7,7 +7,7 @@ originDimension = "minecraft:overworld"
 #Allow portals only for admins (Operators). This severely reduces the range in which the mod usually scans for valid portal conditions, and it scans near ops only.
 adminOnlyPortals = false
 #Disable Twilight Forest portal creation entirely. Provided for server operators looking to restrict action to the dimension.
-disablePortalCreation = true
+disablePortalCreation = false
 #Use a valid advancement resource location as a string. For example, using the string "minecraft:story/mine_diamond" will lock the portal behind the "Diamonds!" advancement. Invalid/Empty Advancement resource IDs will leave the portal entirely unlocked.
 portalUnlockedByAdvancement = ""
 #The max amount of water spaces the mod will check for when creating a portal. Very high numbers may cause issues.
@@ -77,7 +77,7 @@ portalLightning = false
 	#If true, the return portal will spawn for new players that were sent to the TF if `spawn_in_tf` is true.
 	portalForNewPlayer = false
 	#If true, players spawning for the first time will spawn in the Twilight Forest.
-	newPlayersSpawnInTF = true
+	newPlayersSpawnInTF = false
 
 #We recommend downloading the Shield Parry mod for parrying, but these controls remain for without.
 ["Shield Parrying"]

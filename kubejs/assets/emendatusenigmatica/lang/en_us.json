@@ -21,5 +21,12 @@
 	"block.emendatusenigmatica.infused_iron_block": "Block of Infused Iron",
 	"item.emendatusenigmatica.infused_iron_ingot": "Infused Iron Ingot",
 	"block.emendatusenigmatica.tainted_gold_block": "Block of Tainted Gold",
-	"item.emendatusenigmatica.tainted_gold_ingot": "Tainted Gold Ingot"
+	"item.emendatusenigmatica.tainted_gold_ingot": "Tainted Gold Ingot",
+	"item.emendatusenigmatica.brass_ingot": "Brass Ingot",
+	"item.emendatusenigmatica.brass_nugget": "Brass Nugget",
+	"item.emendatusenigmatica.brass_dust": "Brass Dust",
+	"item.emendatusenigmatica.brass_plate": "Brass Plate",
+	"item.emendatusenigmatica.brass_gear": "Brass Gear",
+	"item.emendatusenigmatica.brass_rod": "Brass Rod",
+	"block.emendatusenigmatica.brass_block": "Block of Brass"
 }

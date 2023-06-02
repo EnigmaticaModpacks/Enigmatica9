@@ -11,10 +11,10 @@
 	#Range: > 1
 	per_spell_limit = 2147483647
 	#Is Starter Glyph?
-	starter = false
+	starter = true
 	#The tier of the glyph
 	#Range: 1 ~ 99
-	glyph_tier = 2
+	glyph_tier = 1
 	#Is Enabled?
 	enabled = true
 

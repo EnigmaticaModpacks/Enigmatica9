@@ -432,8 +432,8 @@ const entries = {
         {
             key: 'gui.tooltip.item.pneumaticcraft.regulator_tube_module',
             value: {
-                normal: '§bThis module limits the pressure allowed on its low side based on the redstone signal it receives. No signal = 4.9 bar (19.9 for Advanced Pressure Tubes), a full signal = 0 bar (no air allowed through), and other signal levels are interpolated. Air is always allowed to travel `backwards` through the Regulator, making it usable as a one-way valve.${br}When upgraded with a Module Expansion Card, the threshold can be configured precisely via GUI.',
-                expert: '§bThis module limits the pressure allowed on its low side based on the redstone signal it receives. No signal = 4.9 bar (19.9 for Advanced Pressure Tubes), a full signal = 0 bar (no air allowed through), and other signal levels are interpolated. Air is always allowed to travel `backwards` through the Regulator, making it usable as a one-way valve.${br}When upgraded with a Module Expansion Crystal, the threshold can be configured precisely via GUI.'
+                normal: '§bThis module limits the pressure allowed on its low side based on the redstone signal it receives. No signal = 4.9 bar (19.9 for Advanced Pressure Tubes), a full signal = 0 bar (no air allowed through), and other signal levels are interpolated. Air is always allowed to travel "backwards" through the Regulator, making it usable as a one-way valve.${br}When upgraded with a Module Expansion Card, the threshold can be configured precisely via GUI.',
+                expert: '§bThis module limits the pressure allowed on its low side based on the redstone signal it receives. No signal = 4.9 bar (19.9 for Advanced Pressure Tubes), a full signal = 0 bar (no air allowed through), and other signal levels are interpolated. Air is always allowed to travel "backwards" through the Regulator, making it usable as a one-way valve.${br}When upgraded with a Module Expansion Crystal, the threshold can be configured precisely via GUI.'
             }
         },
         {

@@ -16,7 +16,7 @@
 	"item.pneumaticcraft.drill_bit_compressed_iron": "Compressed Iron Drill Bit",
 	"item.pneumaticcraft.drill_bit_diamond": "Diamond Drill Bit",
 	"item.pneumaticcraft.drill_bit_iron": "Iron Drill Bit",
-	"item.pneumaticcraft.drill_bit_netherite": "Diamond Drill Bit",
+	"item.pneumaticcraft.drill_bit_netherite": "Netherite Drill Bit",
 	"block.pneumaticcraft.flux_compressor": "Flux Compressor",
 	"pneumaticcraft.advancement.flux_compressor.desc": "Make a Flux Compressor so you can use Forge Energy from other mods for your compression needs.",
 	"item.pneumaticcraft.module_expansion_card": "Module Expansion Card",
@@ -35,5 +35,6 @@
 	"item.pneumaticcraft.jumping_upgrade_2": "Jumping Upgrade: Tier II",
 	"item.pneumaticcraft.jumping_upgrade_3": "Jumping Upgrade: Tier III",
 	"item.pneumaticcraft.jumping_upgrade_4": "Jumping Upgrade: Tier IV",
-	"item.pneumaticcraft.printed_circuit_board": "Finished PCB"
+	"item.pneumaticcraft.printed_circuit_board": "Finished PCB",
+	"item.pneumaticcraft.unassembled_netherite_drill_bit": "Unassembled Netherite Drill Bit"
 }

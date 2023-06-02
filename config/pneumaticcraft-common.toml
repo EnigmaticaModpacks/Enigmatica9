@@ -5,7 +5,7 @@
 	addMechanicHouse = 8
 	#Which trades should the Pressure Mechanic offer? ALL will offer all trades. PCB_BLUEPRINT will offer *only* the PCB Blueprint, an item required for normal progression through the mod. NONE will offer nothing (but the PCB Blueprint is also available via Amadron by default). Note that changing this won't affect any already-spawned Pressure Mechanics.
 	#Allowed Values: NONE, PCB_BLUEPRINT, ALL
-	mechanicTrades = "NONE"
+	mechanicTrades = "ALL"
 
 [Integration]
 	#Immersive Engineering: External Heater FE/t. Set to 0 to disable External Heater integration entirely.
@@ -41,13 +41,13 @@
 ["Minigun Properties"]
 	#Weighted Ammo cartridge size
 	#Range: 1 ~ 30000
-	weighted_ammo_cartridge_size = 5000
+	weighted_ammo_cartridge_size = 500
 	#Armor Piercing Ammo cartridge size
 	#Range: 1 ~ 30000
-	armor_piercing_ammo_cartridge_size = 5000
+	armor_piercing_ammo_cartridge_size = 750
 	#Explosive Ammo cartridge size
 	#Range: 1 ~ 30000
-	explosive_ammo_cartridge_size = 5000
+	explosive_ammo_cartridge_size = 500
 	#Minigun Explosive Ammo explosion power (ref: 2 = creeper, 4 = TNT
 	#Range: 0.0 ~ 1.7976931348623157E308
 	explosive_ammo_explosion_power = 1.5
@@ -64,10 +64,10 @@
 	block_hit_particles = true
 	#Base bullet damage of the Sentry Gun, Handheld Minigun, and Drone Minigun, before ammo bonuses are considered
 	#Range: 0.0 ~ 1.7976931348623157E308
-	base_damage = 10.0
+	base_damage = 4.0
 	#Freezing Ammo cartridge size
 	#Range: > 0
-	freezing_ammo_cartridge_size = 5000
+	freezing_ammo_cartridge_size = 500
 	#Base range of Minigun, before Range Upgrades are considered
 	#Range: 5 ~ 100
 	base_range = 50
@@ -79,13 +79,13 @@
 	incendiary_ammo_entity_ignite_chance = 100
 	#Incendiary ammo base percentage chance to ignite blocks
 	#Range: 1 ~ 100
-	incendiary_ammo_block_ignite_chance = 10
+	incendiary_ammo_block_ignite_chance = 20
 	#Armor Piercing Ammo percentage chance to ignore target's armor
 	#Range: 1 ~ 100
 	ap_ammo_ignore_armor_chance = 100
 	#Incendiary Ammo cartridge size
 	#Range: 1 ~ 30000
-	incendiary_ammo_cartridge_size = 5000
+	incendiary_ammo_cartridge_size = 500
 	#Percentage chance per shot of potion-tipped ammo proc'ing the potion effect, before Dispenser Upgrades are considered
 	#Range: 1 ~ 100
 	potion_proc_chance = 7
@@ -93,10 +93,10 @@
 	explosive_ammo_terrain_damage = false
 	#Standard Ammo cartridge size
 	#Range: 1 ~ 30000
-	standard_ammo_cartridge_size = 5000
+	standard_ammo_cartridge_size = 1000
 	#Armor Piercing Ammo damage multiplier (relative to standard ammo)
 	#Range: 0.0 ~ 1.7976931348623157E308
-	ap_ammo_damage_multiplier = 1.5
+	ap_ammo_damage_multiplier = 1.25
 	#Weighted Ammo range multiplier (relative to standard ammo)
 	#Range: 0.0 ~ 1.7976931348623157E308
 	weighted_ammo_range_multiplier = 0.2
@@ -105,7 +105,7 @@
 	freezing_ammo_block_ice_chance = 10
 	#Minigun Explosive Ammo damage multiplier (relative to standard ammo)
 	#Range: 0.0 ~ 1.7976931348623157E308
-	explosive_ammo_damage_multiplier = 1.0
+	explosive_ammo_damage_multiplier = 0.2
 	#Freezing Ammo base percentage chance to form ice on entities which have been hit
 	#Range: 0 ~ 100
 	freezing_ammo_entity_ice_chance = 20
@@ -202,7 +202,7 @@
 	elevator_base_blocks_per_base = 12
 	#The amount of air produced by using 100 FE (Forge Energy) in the flux compressor
 	#Range: > 0
-	flux_compressor_efficiency = 80
+	flux_compressor_efficiency = 100
 	#Can the Kerosene Lamp burn any kind of fuel?  If false, only Kerosene can be burnt
 	kerosene_lamp_can_use_any_fuel = true
 	#Kerosene Lamp fuel efficiency: higher values mean fuel will last longer in the lamp
@@ -226,7 +226,7 @@
 
 [General]
 	#Enable mod dungeon loot generation
-	enable_dungeon_loot = false
+	enable_dungeon_loot = true
 	#Time, in ticks, it takes to use a bandage.
 	#Range: > 1
 	bandage_use_time = 40
@@ -309,7 +309,7 @@
 	#Oil worldgen whitelist by dimension ID: add dimension ID's to this list if you want oil lake worldgen to happen ONLY in those dimensions. You can wildcard the path; e.g 'modid:*' whitelists ALL dimensions of namespace 'modid'. If this is empty, it is ignored, and 'oil_world_gen_dimension_blacklist' will be checked instead.
 	oil_world_gen_dimension_whitelist = []
 	#Oil worldgen blacklist by dimension ID: add dimension ID's to this list if you don't want oil lake worldgen to happen there. You can wildcard this; e.g 'modid:*' blacklists ALL dimensions of namespace 'modid'.
-	oil_world_gen_dimension_blacklist = ["minecraft:*", "blue_skies:*", "twilightforest:*", "the_bumblezone:*"]
+	oil_world_gen_dimension_blacklist = []
 
 [Logistics]
 	#Minimum pressure for a Logistics Module to function
