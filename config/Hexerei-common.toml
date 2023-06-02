@@ -7,57 +7,21 @@
 	#Range of the Sage Burning Plate, setting to 0 will disable completely
 	spawn_disable_range = 48
 
-["Sage Bundle Settings"]
-	#Duration of how long each bundle will last while burning
-	sage_bundle_duration_in_seconds = 3600
-
-["Witch Hut Spacing"]
-	#spacing between witch huts, lower both spacing and separation to increase spawn rates
-	witch_hut_spacing = 20
-
-["Witch Hut Separation"]
-	#separation of the witch huts, lower both spacing and separation to increase spawn rates
-	witch_hut_separation = 8
-
-["Dark Coven Spacing"]
-	#spacing between dark covens, lower both spacing and separation to increase spawn rates
-	dark_coven_spacing = 29
-
-["Dark Coven Separation"]
-	#separation of the dark covens, lower both spacing and separation to increase spawn rates
-	dark_coven_separation = 11
-
 ["Broom Brush Durability"]
-	#100 durability will be about 16 minutes of flight time
+	#broom brush durability
 	broom_brush_durability = 100
 
-["Enhanced Broom Brush Durability"]
-	#200 durability will be about 32 minutes of flight time
-	enhanced_broom_brush_durability = 200
-
 ["Broom Netherite Tip Durability"]
-	#1 second of active time per 1 durability
+	#Broom Netherite Tip Durability
 	broom_netherite_tip_durability = 200
 
 ["Broom Waterproof Tip Durability"]
-	#1 second of active time per 1 durability
+	#Broom Waterproof Tip Durability
 	broom_waterproof_tip_durability = 800
 
 ["Crow Pickpocket Cooldown"]
 	#time (in ticks) for crow being able to pickpocket again (base 1 minute 30 seconds)
 	crow_pickpocket_cooldown = 1800
-
-["Crow Generation Weight"]
-	#weight of the crow generation (how often it'll spawn)
-	crow_generation_weight = 20
-
-["Crow Generation Min Count"]
-	#min number of crows spawning per group
-	crow_generation_min_count = 2
-
-["Crow Generation Max Count"]
-	#max number of crows spawning per group
-	crow_generation_max_count = 5
 
 ["Coffer Item Blacklist"]
 	#blacklists items from being placed inside of coffers
@@ -67,4 +31,20 @@
 	#rarity of the willow swamp biome, 0 to disable
 	#Range: > 0
 	willow_swamp_rarity = 2
+
+["Herb Enhanced Brush Durability"]
+	#Herb Enhanced brush durability
+	herb_enhanced_brush_durability = 200
+
+["Moon Dust Brush Durability"]
+	#Moon Dust brush durability
+	moon_dust_brush_durability = 200
+
+["Thruster Brush Durability"]
+	#thruster brush durability
+	thruster_brush_durability = 400
+
+["Sage Bundle Durability"]
+	#time (in ticks) for the sage bundle to burn out (default 3600 - 1 hour)
+	sage_bundle_durability = 3600
 
