@@ -1003,7 +1003,12 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_craft_energetic_transference_matrix`
         },
         {
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('minecraft:ender_pearl', {
+                display: {
+                    Lore: ['{"text":"The possessed Enderman will always drop at least one Ender Pearl when killed."}'],
+                    Name: '{"text":"Ritual: Summon Possessed Enderman"}'
+                }
+            }),
             activation_item: '#forge:end_stones',
             inputs: [
                 '#forge:essences/anima',
@@ -1019,7 +1024,14 @@ ServerEvents.recipes((event) => {
             id: `occultism:ritual/possess_enderman`
         },
         {
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('minecraft:skeleton_skull', {
+                display: {
+                    Lore: [
+                        '{"text":"The possessed Skeleton is immune to daylight and always drops at least one Skeleton Skull when killed."}'
+                    ],
+                    Name: '{"text":"Ritual: Summon Possessed Skeleton"}'
+                }
+            }),
             activation_item: 'byg:hanging_bones',
             inputs: ['#forge:essences/anima', 'minecraft:bone_meal', 'minecraft:bone_meal', 'minecraft:bone_meal'],
             entity_to_summon: 'occultism:possessed_skeleton',
@@ -1030,7 +1042,12 @@ ServerEvents.recipes((event) => {
             id: `occultism:ritual/possess_skeleton`
         },
         {
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('minecraft:end_stone', {
+                display: {
+                    Lore: ['{"text":"The possessed Endermite drops End Stone."}'],
+                    Name: '{"text":"Ritual: Summon Possessed Endermite"}'
+                }
+            }),
             activation_item: '#forge:end_stones',
             inputs: [
                 '#forge:essences/anima',
@@ -1046,7 +1063,12 @@ ServerEvents.recipes((event) => {
             id: `occultism:ritual/possess_endermite`
         },
         {
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('minecraft:ghast_tear', {
+                display: {
+                    Lore: ['{"text":"The possessed Ghast will always drop at least one Ghast Tear when killed."}'],
+                    Name: '{"text":"Ritual: Summon Possessed Ghast"}'
+                }
+            }),
             activation_item: 'minecraft:nether_bricks',
             inputs: ['#forge:essences/anima', '#forge:dusts/quartz', '#forge:dusts/quartz', '#forge:dusts/quartz'],
             entity_to_summon: 'occultism:possessed_ghast',
@@ -1055,6 +1077,25 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:summon_lesser_evil',
             duration: 10,
             id: `occultism:ritual/possess_ghast`
+        },
+        {
+            output: Item.of('minecraft:wither_skeleton_skull', {
+                display: {
+                    Lore: [
+                        '{"text":"The Wild Hunt consists of Wither Skeletons that are guaranteed to drop Wither Skeleton Skulls, and other minions."}'
+                    ],
+                    Name: '{"text":"Ritual: Summon The Wild Hunt"}'
+                }
+            }),
+            activation_item: 'minecraft:skeleton_skull',
+            inputs: ['#forge:essences/anima', '#forge:dusts/lead', '#forge:dusts/lead', '#forge:dusts/lead'],
+            entity_to_summon: 'occultism:wild_hunt_wither_skeleton',
+            entity_to_sacrifice: { tag: 'occultism:humans', display_name: 'ritual.occultism.sacrifice.humans' },
+            ritual_dummy: 'occultism:ritual_dummy/summon_wild_hunt',
+            ritual_type: 'occultism:summon',
+            pentacle_id: 'occultism:summon_lesser_evil',
+            duration: 10,
+            id: `occultism:ritual/summon_wild_hunt`
         },
 
         /*
