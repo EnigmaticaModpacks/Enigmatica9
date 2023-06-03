@@ -1048,7 +1048,7 @@ ServerEvents.recipes((event) => {
                     Name: '{"text":"Ritual: Summon Possessed Endermite"}'
                 }
             }),
-            activation_item: '#forge:end_stones',
+            activation_item: 'minecraft:stone_bricks',
             inputs: [
                 '#forge:essences/anima',
                 '#forge:essences/borer',
