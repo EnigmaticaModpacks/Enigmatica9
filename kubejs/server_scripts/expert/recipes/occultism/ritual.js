@@ -1002,6 +1002,60 @@ ServerEvents.recipes((event) => {
             duration: 10,
             id: `${id_prefix}ritual_craft_energetic_transference_matrix`
         },
+        {
+            output: 'occultism:jei_dummy/none',
+            activation_item: '#forge:end_stones',
+            inputs: [
+                '#forge:essences/anima',
+                '#forge:dusts/obsidian',
+                '#forge:dusts/obsidian',
+                '#forge:dusts/obsidian'
+            ],
+            entity_to_summon: 'occultism:possessed_enderman',
+            ritual_dummy: 'occultism:ritual_dummy/possess_enderman',
+            ritual_type: 'occultism:summon',
+            pentacle_id: 'occultism:summon_lesser_evil',
+            duration: 10,
+            id: `occultism:ritual/possess_enderman`
+        },
+        {
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'byg:hanging_bones',
+            inputs: ['#forge:essences/anima', 'minecraft:bone_meal', 'minecraft:bone_meal', 'minecraft:bone_meal'],
+            entity_to_summon: 'occultism:possessed_skeleton',
+            ritual_dummy: 'occultism:ritual_dummy/possess_skeleton',
+            ritual_type: 'occultism:summon',
+            pentacle_id: 'occultism:summon_lesser_evil',
+            duration: 10,
+            id: `occultism:ritual/possess_skeleton`
+        },
+        {
+            output: 'occultism:jei_dummy/none',
+            activation_item: '#forge:end_stones',
+            inputs: [
+                '#forge:essences/anima',
+                '#forge:essences/borer',
+                '#forge:essences/borer',
+                '#forge:essences/borer'
+            ],
+            entity_to_summon: 'occultism:possessed_endermite',
+            ritual_dummy: 'occultism:ritual_dummy/possess_endermite',
+            ritual_type: 'occultism:summon',
+            pentacle_id: 'occultism:summon_lesser_evil',
+            duration: 10,
+            id: `occultism:ritual/possess_endermite`
+        },
+        {
+            output: 'occultism:jei_dummy/none',
+            activation_item: 'minecraft:nether_bricks',
+            inputs: ['#forge:essences/anima', '#forge:dusts/quartz', '#forge:dusts/quartz', '#forge:dusts/quartz'],
+            entity_to_summon: 'occultism:possessed_ghast',
+            ritual_dummy: 'occultism:ritual_dummy/possess_ghast',
+            ritual_type: 'occultism:summon',
+            pentacle_id: 'occultism:summon_lesser_evil',
+            duration: 10,
+            id: `occultism:ritual/possess_ghast`
+        },
 
         /*
         Custom Summons

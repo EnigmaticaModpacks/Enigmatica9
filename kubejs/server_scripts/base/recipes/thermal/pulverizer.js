@@ -49,6 +49,15 @@ ServerEvents.recipes((event) => {
             outputs: [{ item: 'mekanism:bio_fuel', chance: 1.2 }],
             energy: 4000,
             id: `${id_prefix}crops`
+        },
+        {
+            input: 'minecraft:obsidian',
+            outputs: [
+                { item: 'create:powdered_obsidian', count: 1 },
+                { item: 'minecraft:obsidian', chance: 0.25 }
+            ],
+            energy: 4000,
+            id: `${id_prefix}powdered_obsidian`
         }
     ];
 
