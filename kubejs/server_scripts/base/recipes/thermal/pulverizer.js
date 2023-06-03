@@ -54,7 +54,7 @@ ServerEvents.recipes((event) => {
             input: 'minecraft:obsidian',
             outputs: [
                 { item: 'create:powdered_obsidian', count: 1 },
-                { item: 'minecraft:obsidian', chance: 0.25 }
+                { item: 'minecraft:obsidian', chance: 0.15 }
             ],
             energy: 4000,
             id: `${id_prefix}powdered_obsidian`
