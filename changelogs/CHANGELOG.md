@@ -2,9 +2,15 @@
 
 🚀 Forge-1.19.2-43.2.13 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.7.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.7.1.md)
 
+### 🎁 New Mods Added
+
+-   [Kotlin for Forge](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge) (by [thedarkcolour](https://www.curseforge.com/members/thedarkcolour/projects))
+-   [Mod Name Tooltip](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip) (by [mezz](https://www.curseforge.com/members/mezz/projects))
+-   [Some Assembly Required](https://www.curseforge.com/minecraft/mc-mods/some-assembly-required) (by [ochotonida](https://www.curseforge.com/members/ochotonida/projects))
+
 ### 🐛 Fixed Bugs
 
--   Fixed losing items after updating from 1.6.0 to 1.7.0
+-   Default EE configs to ensure they're loaded on first launch (Fixes lost items on updating) [\#375](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/375) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
