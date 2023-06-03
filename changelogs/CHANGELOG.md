@@ -1,4 +1,16 @@
+### Enigmatica 9 v1.7.1
+
+🚀 Forge-1.19.2-43.2.13 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.7.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.7.1.md)
+
+### 🐛 Fixed Bugs
+
+-   Fixed losing items after updating from 1.6.0 to 1.7.0
+
+---
+
 ### Enigmatica 9 v1.7.0
+
+🚀 Forge-1.19.2-43.2.13 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.7.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.7.0.md)
 
 ### 🎁 New Mods Added
 
