@@ -33,7 +33,6 @@ StartupEvents.registry('item', (event) => {
     ];
 
     const ritualDummies = [
-        'ritual_summon_death_tome',
         'ritual_teleport_nether',
         'ritual_teleport_overworld',
         'ritual_teleport_end',
@@ -71,7 +70,6 @@ StartupEvents.registry('item', (event) => {
     const reusableItemTextures = [
         { name: 'altered_recipe_indicator', texture: 'enigmatica_tree' },
         { name: 'disabled_recipe_indicator', texture: 'enigmatica_tree' },
-        { name: 'summon_death_tome', texture: 'ritual_dummy' },
         { name: 'teleport_overworld', texture: 'ritual_dummy' },
         { name: 'teleport_end', texture: 'ritual_dummy' },
         { name: 'teleport_nether', texture: 'ritual_dummy' },

@@ -291,7 +291,12 @@ ServerEvents.recipes((event) => {
         },
         {
             // Water Breathing
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('occultism:spawn_egg/familiar_cthulhu', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.familiar_cthulhu"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_cthulhu.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             inputs: [
                 'hexerei:mindful_trance_blend',
@@ -312,7 +317,12 @@ ServerEvents.recipes((event) => {
         },
         {
             // Jump Boost
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('occultism:spawn_egg/familiar_deer', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.familiar_deer"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_deer.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             inputs: [
                 'hexerei:mindful_trance_blend',
@@ -333,7 +343,12 @@ ServerEvents.recipes((event) => {
         },
         {
             // Fire Resistance, Attacks Enemies
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('occultism:spawn_egg/familiar_devil', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.familiar_devil"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_devil.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             inputs: [
                 'hexerei:mindful_trance_blend',
@@ -354,7 +369,12 @@ ServerEvents.recipes((event) => {
         },
         {
             // Increases XP gains
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('occultism:spawn_egg/familiar_dragon', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.familiar_dragon"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_dragon.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             inputs: [
                 'hexerei:mindful_trance_blend',
@@ -375,7 +395,12 @@ ServerEvents.recipes((event) => {
         },
         {
             // Prevents other Familiars from dying and heals the Player
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('occultism:spawn_egg/familiar_fairy', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.familiar_fairy"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_fairy.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:fairy_familiar',
@@ -400,7 +425,12 @@ ServerEvents.recipes((event) => {
         },
         {
             // Item Magnet
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('occultism:spawn_egg/familiar_greedy', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.familiar_greedy"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_greedy.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:greedy_familiar',
@@ -421,7 +451,12 @@ ServerEvents.recipes((event) => {
         },
         {
             // Prevents Player Death, losing a limb for each death prevented.
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('occultism:spawn_egg/familiar_guardian', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.familiar_guardian"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_guardian.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:guardian_familiar',
@@ -442,7 +477,12 @@ ServerEvents.recipes((event) => {
         },
         {
             // Grants damage buffs against recently killed mobs
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('occultism:spawn_egg/familiar_headless', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.familiar_headless"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_headless.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:headless_familiar',
@@ -463,7 +503,12 @@ ServerEvents.recipes((event) => {
         },
         {
             // Fights for the Player, grants Dodge effect
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('occultism:spawn_egg/familiar_mummy', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.familiar_mummy"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_mummy.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:mummy_familiar',
@@ -484,7 +529,12 @@ ServerEvents.recipes((event) => {
         },
         {
             // Multi-Jump, Jump Boost, Slow Fall
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('occultism:spawn_egg/otherworld_bird', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.familiar_otherworld_bird"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_otherworld_bird.tooltip"}']
+                }
+            }),
             ritual_type: 'occultism:summon_tamed',
             activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
@@ -506,7 +556,12 @@ ServerEvents.recipes((event) => {
         },
         {
             // Just a pet
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('minecraft:parrot_spawn_egg', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.familiar_parrot"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_parrot.tooltip"}']
+                }
+            }),
             ritual_type: 'occultism:summon_with_chance_of_chicken_tamed',
             activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
@@ -529,7 +584,12 @@ ServerEvents.recipes((event) => {
         },
         {
             // Night Vision
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('occultism:spawn_egg/familiar_bat', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.familiar_bat"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_bat.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:bat_familiar',
@@ -550,7 +610,12 @@ ServerEvents.recipes((event) => {
         },
         {
             // Increases wood breaking speed
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('occultism:spawn_egg/familiar_beaver', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.familiar_beaver"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_beaver.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:beaver_familiar',
@@ -571,7 +636,12 @@ ServerEvents.recipes((event) => {
         },
         {
             // Attacks enemies and makes them glow
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('occultism:spawn_egg/familiar_beholder', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.familiar_beholder"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_beholder.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:beholder_familiar',
@@ -592,7 +662,12 @@ ServerEvents.recipes((event) => {
         },
         {
             // Repairs Equipmet and upgrades other familiars.
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('occultism:spawn_egg/familiar_blacksmith', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.familiar_blacksmith"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_blacksmith.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:blacksmith_familiar',
@@ -613,7 +688,12 @@ ServerEvents.recipes((event) => {
         },
         {
             // Rideable Mount
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('occultism:spawn_egg/familiar_chimera', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.familiar_chimera"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_chimera.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:chimera_familiar',
@@ -633,7 +713,12 @@ ServerEvents.recipes((event) => {
             id: `occultism:ritual/chimera_familiar`
         },
         {
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('hexerei:crow_spawn_egg', {
+                display: {
+                    Name: '{"translate":"item.kubejs.ritual_summon_crow"}',
+                    Lore: ['{"translate":"item.kubejs.ritual_summon_crow.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             inputs: [
                 'hexerei:mindful_trance_blend',
@@ -653,7 +738,12 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_summon_crow`
         },
         {
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('minecraft:blaze_spawn_egg', {
+                display: {
+                    Name: '{"translate":"item.kubejs.ritual_summon_bound_blaze"}',
+                    Lore: ['{"translate":"item.kubejs.ritual_summon_bound_blaze.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             inputs: [
                 'quark:gold_bars',
@@ -678,7 +768,12 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_summon_bound_blaze`
         },
         {
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('thermal:blitz_spawn_egg', {
+                display: {
+                    Name: '{"translate":"item.kubejs.ritual_summon_bound_blitz"}',
+                    Lore: ['{"translate":"item.kubejs.ritual_summon_bound_blitz.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             inputs: [
                 'quark:gold_bars',
@@ -703,7 +798,12 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_summon_bound_blitz`
         },
         {
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('thermal:basalz_spawn_egg', {
+                display: {
+                    Name: '{"translate":"item.kubejs.ritual_summon_bound_basalz"}',
+                    Lore: ['{"translate":"item.kubejs.ritual_summon_bound_basalz.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             inputs: [
                 'quark:gold_bars',
@@ -728,7 +828,12 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_summon_bound_basalz`
         },
         {
-            output: 'occultism:jei_dummy/none',
+            output: Item.of('thermal:blizz_spawn_egg', {
+                display: {
+                    Name: '{"translate":"item.kubejs.ritual_summon_bound_blizz"}',
+                    Lore: ['{"translate":"item.kubejs.ritual_summon_bound_blizz.tooltip"}']
+                }
+            }),
             activation_item: '#forge:essences/conjuration',
             inputs: [
                 'quark:gold_bars',
@@ -1005,11 +1110,11 @@ ServerEvents.recipes((event) => {
         {
             output: Item.of('minecraft:ender_pearl', {
                 display: {
-                    Lore: ['{"text":"The possessed Enderman will always drop at least one Ender Pearl when killed."}'],
-                    Name: '{"text":"Ritual: Summon Possessed Enderman"}'
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.possess_enderman"}'],
+                    Name: '{"translate":"item.occultism.ritual_dummy.possess_enderman.tooltip"}'
                 }
             }),
-            activation_item: '#forge:end_stones',
+            activation_item: 'minecraft:chorus_flower',
             inputs: [
                 '#forge:essences/anima',
                 '#forge:dusts/obsidian',
@@ -1026,10 +1131,8 @@ ServerEvents.recipes((event) => {
         {
             output: Item.of('minecraft:skeleton_skull', {
                 display: {
-                    Lore: [
-                        '{"text":"The possessed Skeleton is immune to daylight and always drops at least one Skeleton Skull when killed."}'
-                    ],
-                    Name: '{"text":"Ritual: Summon Possessed Skeleton"}'
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.possess_skeleton"}'],
+                    Name: '{"translate":"item.occultism.ritual_dummy.possess_skeleton.tooltip"}'
                 }
             }),
             activation_item: 'byg:hanging_bones',
@@ -1044,8 +1147,8 @@ ServerEvents.recipes((event) => {
         {
             output: Item.of('minecraft:end_stone', {
                 display: {
-                    Lore: ['{"text":"The possessed Endermite drops End Stone."}'],
-                    Name: '{"text":"Ritual: Summon Possessed Endermite"}'
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.possess_endermite"}'],
+                    Name: '{"translate":"item.occultism.ritual_dummy.possess_endermite.tooltip"}'
                 }
             }),
             activation_item: 'minecraft:stone_bricks',
@@ -1065,8 +1168,8 @@ ServerEvents.recipes((event) => {
         {
             output: Item.of('minecraft:ghast_tear', {
                 display: {
-                    Lore: ['{"text":"The possessed Ghast will always drop at least one Ghast Tear when killed."}'],
-                    Name: '{"text":"Ritual: Summon Possessed Ghast"}'
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.possess_ghast"}'],
+                    Name: '{"translate":"item.occultism.ritual_dummy.possess_ghast.tooltip"}'
                 }
             }),
             activation_item: 'minecraft:nether_bricks',
@@ -1081,10 +1184,8 @@ ServerEvents.recipes((event) => {
         {
             output: Item.of('minecraft:wither_skeleton_skull', {
                 display: {
-                    Lore: [
-                        '{"text":"The Wild Hunt consists of Wither Skeletons that are guaranteed to drop Wither Skeleton Skulls, and other minions."}'
-                    ],
-                    Name: '{"text":"Ritual: Summon The Wild Hunt"}'
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.summon_wild_hunt"}'],
+                    Name: '{"translate":"item.occultism.ritual_dummy.summon_wild_hunt.tooltip"}'
                 }
             }),
             activation_item: 'minecraft:skeleton_skull',
@@ -1097,6 +1198,36 @@ ServerEvents.recipes((event) => {
             duration: 10,
             id: `occultism:ritual/summon_wild_hunt`
         },
+        {
+            output: Item.of('occultism:afrit_essence', {
+                display: {
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.summon_wild_afrit"}'],
+                    Name: '{"translate":"item.occultism.ritual_dummy.summon_wild_afrit.tooltip"}'
+                }
+            }),
+            activation_item: 'occultism:book_of_binding_bound_afrit',
+            inputs: [
+                '#forge:essences/conjuration',
+                '#forge:essences/fire',
+                'naturesaura:depth_sword',
+                '#forge:essences/air',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust'
+            ],
+            entity_to_summon: 'occultism:afrit_wild',
+            entity_to_sacrifice: { tag: 'enigmatica:deer', display_name: 'ritual.occultism.sacrifice.deer' },
+            ritual_dummy: 'occultism:ritual_dummy/summon_wild_afrit',
+            ritual_type: 'occultism:summon',
+            pentacle_id: 'occultism:summon_wild_afrit',
+            duration: 10,
+            id: `occultism:ritual/summon_wild_afrit`
+        },
 
         /*
         Custom Summons
@@ -1106,16 +1237,6 @@ ServerEvents.recipes((event) => {
 
         These should always use the 'occultism:craft' ritual_type
         */
-        {
-            output: 'kubejs:summon_death_tome',
-            activation_item: '#forge:bookshelves',
-            inputs: ['#forge:essences/anima', '#forge:essences/air', '#forge:essences/anima', '#forge:essences/air'],
-            ritual_dummy: 'kubejs:ritual_summon_death_tome',
-            ritual_type: 'occultism:craft',
-            pentacle_id: 'occultism:summon_lesser_evil',
-            duration: 10,
-            id: `${id_prefix}ritual_summon_death_tome`
-        },
         {
             output: Item.of('kubejs:aura_leaf', { aura_amount: 500000, aura_max: 1250000 }),
             activation_item: '#twilightforest:trophies',
@@ -1355,6 +1476,205 @@ ServerEvents.recipes((event) => {
                  '10 o'clock',
             ],
     */
+
+    let gateways = [
+        {
+            type: 'death_tome',
+            inputs: ['#forge:essences/conjuration', '#forge:bookshelves', '#forge:essences/anima', '#forge:bookshelves']
+        },
+        {
+            type: 'creeper',
+            inputs: [
+                '#forge:essences/conjuration',
+                '#forge:storage_blocks/gunpowder',
+                '#forge:essences/anima',
+                'minecraft:vine'
+            ]
+        },
+        {
+            type: 'enderman',
+            inputs: [
+                '#forge:essences/conjuration',
+                '#forge:gems/ender_pearl',
+                '#forge:essences/anima',
+                '#forge:gems/ender_pearl'
+            ]
+        },
+        {
+            type: 'ghast',
+            inputs: [
+                '#forge:essences/conjuration',
+                '#forge:storage_blocks/gunpowder',
+                '#forge:essences/anima',
+                'minecraft:ghast_tear'
+            ]
+        },
+        {
+            type: 'magma_cube',
+            inputs: [
+                '#forge:essences/conjuration',
+                'minecraft:magma_block',
+                '#forge:essences/anima',
+                'minecraft:magma_block'
+            ]
+        },
+        {
+            type: 'shulker',
+            inputs: [
+                '#forge:essences/conjuration',
+                'minecraft:shulker_shell',
+                '#forge:essences/anima',
+                'minecraft:shulker_shell'
+            ]
+        },
+        {
+            type: 'skeleton',
+            inputs: [
+                '#forge:essences/conjuration',
+                'minecraft:bone_block',
+                '#forge:essences/anima',
+                'minecraft:bone_block'
+            ]
+        },
+        {
+            type: 'slime',
+            inputs: [
+                '#forge:essences/conjuration',
+                'minecraft:slime_block',
+                '#forge:essences/anima',
+                'minecraft:slime_block'
+            ]
+        },
+        {
+            type: 'spider',
+            inputs: [
+                '#forge:essences/conjuration',
+                'minecraft:spider_eye',
+                '#forge:essences/anima',
+                'minecraft:spider_eye'
+            ]
+        },
+        {
+            type: 'witch',
+            inputs: [
+                '#forge:essences/conjuration',
+                '#forge:dusts/moon_dust',
+                '#forge:essences/anima',
+                '#forge:dusts/moon_dust'
+            ]
+        },
+        {
+            type: 'zombie',
+            inputs: [
+                '#forge:essences/conjuration',
+                'minecraft:rotten_flesh',
+                '#forge:essences/anima',
+                'minecraft:rotten_flesh'
+            ]
+        },
+        {
+            type: 'blaze',
+            inputs: [
+                '#forge:essences/conjuration',
+                '#forge:essences/fire',
+                '#forge:essences/fire',
+                '#forge:essences/fire'
+            ]
+        },
+        {
+            type: 'basalz',
+            inputs: [
+                '#forge:essences/conjuration',
+                '#forge:essences/earth',
+                '#forge:essences/earth',
+                '#forge:essences/earth'
+            ]
+        },
+        {
+            type: 'blizz',
+            inputs: [
+                '#forge:essences/conjuration',
+                '#forge:essences/water',
+                '#forge:essences/water',
+                '#forge:essences/water'
+            ]
+        },
+        {
+            type: 'blitz',
+            inputs: ['#forge:essences/conjuration', '#forge:essences/air', '#forge:essences/air', '#forge:essences/air']
+        }
+    ];
+
+    // Helper for generating lang entries. Leave disabled normally.
+    // Static entries generated to facilitate translation.
+    // Copy Paste results into assets/kubejs/lang/en_us.json
+    /* 
+            gateways.forEach((gateway) => {
+                let lang_entries = {};
+                let formatted_type = toTitleCase(gateway.type.replace(/_/g, ' '));
+        
+                let ritual = `ritual.enigmatica.occultism/ritual/${gateway.type}_gate_small`;
+                lang_entries[`${ritual}.started`] = `Started Opening Small ${formatted_type} Gateway`;
+                lang_entries[`${ritual}.finished`] = `Small ${formatted_type} Gateway Opened`;
+                lang_entries[`${ritual}.interrupted`] = `Small ${formatted_type} Gateway Interrupted`;
+                lang_entries[`${ritual}.conditions`] = `Not all requirements for this ritual are met.`;
+        
+                ritual = `ritual.enigmatica.occultism/ritual/${gateway.type}_gate`;
+                lang_entries[`${ritual}.started`] = `Started Opening ${formatted_type} Gateway`;
+                lang_entries[`${ritual}.finished`] = `${formatted_type} Gateway Opened`;
+                lang_entries[`${ritual}.interrupted`] = `${formatted_type} Gateway Interrupted`;
+                lang_entries[`${ritual}.conditions`] = `Not all requirements for this ritual are met.`;
+        
+                ritual = `ritual.enigmatica.occultism/ritual/${gateway.type}_gate_large`;
+                lang_entries[`${ritual}.started`] = `Started Opening Large ${formatted_type} Gateway`;
+                lang_entries[`${ritual}.finished`] = `Large ${formatted_type} Gateway Opened`;
+                lang_entries[`${ritual}.interrupted`] = `Large ${formatted_type} Gateway Interrupted`;
+                lang_entries[`${ritual}.conditions`] = `Not all requirements for this ritual are met.`;
+        
+                console.log(JSON.stringify(lang_entries));
+            });
+            */
+
+    gateways.forEach((gateway) => {
+        recipes.push(
+            {
+                output: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate_small", radius:5}`),
+                activation_item: '#forge:storage_blocks/emerald',
+                inputs: gateway.inputs,
+                ritual_dummy: Item.of(
+                    'gateways:gate_pearl',
+                    `{gateway:"gateways:${gateway.type}_gate_small", radius:5}`
+                ),
+                ritual_type: 'occultism:craft',
+                pentacle_id: 'occultism:summon_lesser_evil',
+                duration: 10,
+                id: `${id_prefix}${gateway.type}_gate_small`
+            },
+            {
+                output: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate", radius:5}`),
+                activation_item: '#forge:storage_blocks/niotic_crystal',
+                inputs: gateway.inputs,
+                ritual_dummy: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate", radius:5}`),
+                ritual_type: 'occultism:craft',
+                pentacle_id: 'occultism:summon_lesser_evil',
+                duration: 10,
+                id: `${id_prefix}${gateway.type}_gate`
+            },
+            {
+                output: Item.of('gateways:gate_pearl', `{gateway:"gateways:${gateway.type}_gate_large", radius:5}`),
+                activation_item: '#forge:storage_blocks/spirited_crystal',
+                inputs: gateway.inputs,
+                ritual_dummy: Item.of(
+                    'gateways:gate_pearl',
+                    `{gateway:"gateways:${gateway.type}_gate_large", radius:5}`
+                ),
+                ritual_type: 'occultism:craft',
+                pentacle_id: 'occultism:summon_greater_evil',
+                duration: 10,
+                id: `${id_prefix}${gateway.type}_gate_large`
+            }
+        );
+    });
 
     recipes.forEach((recipe) => {
         recipe.type = 'occultism:ritual';

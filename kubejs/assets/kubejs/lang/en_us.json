@@ -505,6 +505,22 @@
     "ritual.enigmatica.occultism/ritual/blitz_gate_large.interrupted": "Large Air Elemental Gateway Interrupted",
     "ritual.enigmatica.occultism/ritual/blitz_gate_large.conditions": "Not all requirements for this ritual are met.",
 
+    "gateways.death_tome_gate": "Death Tome Gate",
+    "gateways.death_tome_gate_small": "Small Death Tome Gate",
+    "gateways.death_tome_gate_large": "Large Death Tome Gate",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate_small.started": "Started Opening Small Death Tome Gateway",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate_small.finished": "Small Death Tome Gateway Opened",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate_small.interrupted": "Small Death Tome Gateway Interrupted",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate_small.conditions": "Not all requirements for this ritual are met.",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate.started": "Started Opening Death Tome Gateway",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate.finished": "Death Tome Gateway Opened",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate.interrupted": "Death Tome Gateway Interrupted",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate.conditions": "Not all requirements for this ritual are met.",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate_large.started": "Started Opening Large Death Tome Gateway",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate_large.finished": "Large Death Tome Gateway Opened",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate_large.interrupted": "Large Death Tome Gateway Interrupted",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate_large.conditions": "Not all requirements for this ritual are met.",
+
     "gateways.spawner_rift": "Spawner Rift",
 
     "gateways.wither_council_gate": "Wither Council Gate",

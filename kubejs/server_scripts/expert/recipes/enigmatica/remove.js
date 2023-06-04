@@ -294,6 +294,7 @@ ServerEvents.recipes((event) => {
         { id: 'occultism:ritual/craft_soul_gem' },
         { id: 'occultism:ritual/craft_familiar_ring' },
         { id: 'occultism:spirit_fire/spirit_attuned_gem' },
+        { id: 'occultism:ritual/summon_wild_otherworld_bird' },
 
         { id: /pneumaticcraft:.*_compressor/ },
         { id: /pneumaticcraft:thermo_plant\/.*_drill_bit/ },

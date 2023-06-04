@@ -573,12 +573,12 @@ const reactive = {
                     recipe: {
                         part0: 'ars_nouveau:glyph_underfoot',
                         part1: 'ars_nouveau:glyph_linger',
-                        part2: 'ars_nouveau:glyph_accelerate',
-                        part3: 'ars_nouveau:glyph_accelerate',
-                        part4: 'ars_nouveau:glyph_accelerate',
-                        part5: 'ars_nouveau:glyph_accelerate',
-                        part6: 'ars_nouveau:glyph_accelerate',
-                        part7: 'ars_nouveau:glyph_accelerate',
+                        part2: 'ars_nouveau:glyph_aoe',
+                        part3: 'ars_nouveau:glyph_aoe',
+                        part4: 'ars_nouveau:glyph_aoe',
+                        part5: 'ars_nouveau:glyph_aoe',
+                        part6: 'ars_nouveau:glyph_aoe',
+                        part7: 'ars_nouveau:glyph_aoe',
                         part8: 'toomanyglyphs:glyph_filter_living_not_monster',
                         part9: 'ars_nouveau:glyph_heal',
                         size: 10

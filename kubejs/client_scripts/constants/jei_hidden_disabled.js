@@ -498,6 +498,8 @@ jei.expert.items.disabled = [
     'naturesaura:rf_converter',
 
     /occultism:chalk_.*_impure/,
+    'occultism:ritual_dummy/summon_wild_otherworld_bird',
+
     'pneumaticcraft:air_compressor',
     'pneumaticcraft:electrostatic_compressor',
     'pneumaticcraft:advanced_air_compressor',
