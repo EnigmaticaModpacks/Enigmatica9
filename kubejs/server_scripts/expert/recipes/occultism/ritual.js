@@ -556,7 +556,7 @@ ServerEvents.recipes((event) => {
         },
         {
             // Just a pet
-            output: Item.of('minecraft:parrot_spawn_egg', {
+            output: Item.of('occultism:spawn_egg/familiar_parrot', {
                 display: {
                     Name: '{"translate":"item.occultism.ritual_dummy.familiar_parrot"}',
                     Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_parrot.tooltip"}']
@@ -632,7 +632,7 @@ ServerEvents.recipes((event) => {
                 '#minecraft:logs'
             ],
             duration: 10,
-            id: `occultism:ritual/beaver_familiar`
+            id: `occultism:ritual/familiar_beaver`
         },
         {
             // Attacks enemies and makes them glow
@@ -658,7 +658,7 @@ ServerEvents.recipes((event) => {
                 'minecraft:spider_eye'
             ],
             duration: 10,
-            id: `occultism:ritual/beholder_familiar`
+            id: `occultism:ritual/familiar_beholder`
         },
         {
             // Repairs Equipmet and upgrades other familiars.
@@ -684,7 +684,7 @@ ServerEvents.recipes((event) => {
                 '#forge:essences/fire'
             ],
             duration: 10,
-            id: `occultism:ritual/blacksmith_familiar`
+            id: `occultism:ritual/familiar_blacksmith`
         },
         {
             // Rideable Mount
@@ -710,7 +710,7 @@ ServerEvents.recipes((event) => {
                 '#forge:bones'
             ],
             duration: 10,
-            id: `occultism:ritual/chimera_familiar`
+            id: `occultism:ritual/familiar_chimera`
         },
         {
             output: Item.of('hexerei:crow_spawn_egg', {

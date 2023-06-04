@@ -39,6 +39,10 @@ ItemEvents.tooltip((event) => {
         {
             items: ['kubejs:dream_stone'],
             text: [Text.of('It hums quietly when held.').gold()]
+        },
+        {
+            items: ['occultism:dimensional_mineshaft'],
+            text: [Text.of('Consumes Aura for each mob spawned.').red()]
         }
     ];
 
