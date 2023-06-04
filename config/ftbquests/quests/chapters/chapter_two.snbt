@@ -841,6 +841,7 @@
 		}
 		{
 			dependencies: ["00B21E64DEFACB40"]
+			description: ["Known for their strength and endurance, Basalz will work tirelessly to power Create machinery if properly motived. "]
 			icon: "createaddition:electric_motor"
 			id: "1FDD6F9166A33F8D"
 			tasks: [
