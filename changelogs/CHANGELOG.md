@@ -1,4 +1,32 @@
+### Enigmatica 9 v1.7.2
+
+🚀 Forge-1.19.2-43.2.13 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.7.2.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.7.2.md)
+
+### 🐛 Fixed Bugs
+
+-   Server crash on startup [\#377](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/377)
+
+---
+
+### Enigmatica 9 v1.7.1
+
+🚀 Forge-1.19.2-43.2.13 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.7.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.7.1.md)
+
+### 🎁 New Mods Added
+
+-   [Kotlin for Forge](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge) (by [thedarkcolour](https://www.curseforge.com/members/thedarkcolour/projects))
+-   [Mod Name Tooltip](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip) (by [mezz](https://www.curseforge.com/members/mezz/projects))
+-   [Some Assembly Required](https://www.curseforge.com/minecraft/mc-mods/some-assembly-required) (by [ochotonida](https://www.curseforge.com/members/ochotonida/projects))
+
+### 🐛 Fixed Bugs
+
+-   Default EE configs to ensure they're loaded on first launch (Fixes lost items on updating) [\#375](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/375) ([MuteTiefling](https://github.com/MuteTiefling))
+
+---
+
 ### Enigmatica 9 v1.7.0
+
+🚀 Forge-1.19.2-43.2.13 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.7.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.7.0.md)
 
 ### 🎁 New Mods Added
 
