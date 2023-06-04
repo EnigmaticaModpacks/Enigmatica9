@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica9"
 $CLIENT_NAME = "Enigmatica9"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "1.7.1"
+$MODPACK_VERSION = "1.7.2"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "1.7.0"
+$LAST_MODPACK_VERSION = "1.7.1"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -79,8 +79,7 @@ $MODLIST_CREATOR_JAR = "ModListCreator-4.0.3-fatjar.jar"
 
 $CLIENT_FILE_AUTHOR = "EnigmaticaModpacks"
 
-$FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @("building_gadgets_patterns",
-	"config",
+$FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @("config",
 	"defaultconfigs",
 	"kubejs",
 	"local",
