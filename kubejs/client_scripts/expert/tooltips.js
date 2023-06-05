@@ -41,7 +41,7 @@ ItemEvents.tooltip((event) => {
             text: [Text.of('It hums quietly when held.').gold()]
         },
         {
-            items: ['occultism:dimensional_mineshaft'],
+            items: ['spirit:soul_cage'],
             text: [Text.of('Consumes Aura for each mob spawned.').red()]
         }
     ];
