@@ -34,7 +34,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}calcined_kaolin_pearls`
         },
         {
-            item_output: { item: 'emendatusenigmatica:aluminum_dust' },
+            item_output: { item: 'emendatusenigmatica:aluminum_dirty_dust' },
             fluid_input: { type: 'pneumaticcraft:fluid', amount: 10, fluid: 'immersiveengineering:redstone_acid' },
             item_input: [{ item: 'kubejs:kaolin_powder' }],
             exothermic: false,
@@ -42,7 +42,7 @@ ServerEvents.recipes((event) => {
             pressure: 4.0,
             air_use_multiplier: 5.0,
             speed: 2.0,
-            id: `${id_prefix}aluminum_dust`
+            id: `${id_prefix}aluminum_dirty_dust`
         },
         {
             fluid_input: { type: 'pneumaticcraft:fluid', amount: 250, fluid: 'minecraft:water' },

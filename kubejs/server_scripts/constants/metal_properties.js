@@ -138,11 +138,11 @@ const metal_properties = {
     },
     signalum: {
         meltingPoint: 1272,
-        crushing_tier: 4
+        crushing_tier: 1
     },
     lumium: {
         meltingPoint: 1354,
-        crushing_tier: 4
+        crushing_tier: 1
     },
     infused_iron: {
         meltingPoint: 850

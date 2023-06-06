@@ -8,61 +8,79 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             inputs: [
-                Ingredient.of('#forge:dusts/tin'),
-                Ingredient.of('#forge:dusts/copper'),
-                Ingredient.of('#forge:dusts/copper'),
-                Ingredient.of('#forge:dusts/copper'),
-                Ingredient.of('#forge:dusts/redstone')
+                '#forge:dusts/constantan',
+                '#forge:dusts/constantan',
+                Ingredient.of(['minecraft:glow_berries', 'twilightforest:torchberries']),
+                '#forge:dusts/constantan',
+                '#forge:dusts/constantan'
             ],
-            output: Item.of('emendatusenigmatica:bronze_dust', 4),
+            output: '4x emendatusenigmatica:lumium_dust',
+            grindingTime: 10 * 20,
+            id: `${id_prefix}lumium_dust`
+        },
+        {
+            inputs: [
+                '#forge:dusts/aluminum',
+                '#forge:dusts/aluminum',
+                '#forge:essences/manipulation',
+                '#forge:dusts/aluminum',
+                '#forge:dusts/aluminum'
+            ],
+            output: '4x emendatusenigmatica:signalum_dust',
+            grindingTime: 10 * 20,
+            id: `${id_prefix}signalum_dust`
+        },
+        {
+            inputs: [
+                '#forge:dusts/tin',
+                '#forge:dusts/copper',
+                '#forge:dusts/copper',
+                '#forge:dusts/copper',
+                '#forge:dusts/redstone'
+            ],
+            output: '4x emendatusenigmatica:bronze_dust',
             grindingTime: 10 * 20,
             id: `${id_prefix}bronze_dust`
         },
         {
             inputs: [
-                Ingredient.of('#forge:dusts/silver'),
-                Ingredient.of('#forge:dusts/gold'),
-                Ingredient.of('#forge:dusts/redstone'),
-                Ingredient.of('#forge:dusts/gold'),
-                Ingredient.of('#forge:dusts/silver')
+                '#forge:dusts/silver',
+                '#forge:dusts/gold',
+                '#forge:dusts/redstone',
+                '#forge:dusts/gold',
+                '#forge:dusts/silver'
             ],
-            output: Item.of('emendatusenigmatica:electrum_dust', 4),
+            output: '4x emendatusenigmatica:electrum_dust',
             grindingTime: 10 * 20,
             id: `${id_prefix}electrum_dust`
         },
         {
             inputs: [
-                Ingredient.of('#forge:dusts/redstone'),
-                Ingredient.of('#forge:dusts/iron'),
-                Ingredient.of('#forge:dusts/nickel'),
-                Ingredient.of('#forge:dusts/iron'),
-                Ingredient.of('#forge:dusts/redstone')
+                '#forge:dusts/redstone',
+                '#forge:dusts/iron',
+                '#forge:dusts/nickel',
+                '#forge:dusts/iron',
+                '#forge:dusts/redstone'
             ],
-            output: Item.of('emendatusenigmatica:invar_dust', 3),
+            output: '3x emendatusenigmatica:invar_dust',
             grindingTime: 10 * 20,
             id: `${id_prefix}invar_dust`
         },
         {
             inputs: [
-                Ingredient.of('#forge:dusts/nickel'),
-                Ingredient.of('#forge:dusts/copper'),
-                Ingredient.of('#forge:dusts/redstone'),
-                Ingredient.of('#forge:dusts/copper'),
-                Ingredient.of('#forge:dusts/nickel')
+                '#forge:dusts/nickel',
+                '#forge:dusts/copper',
+                '#forge:dusts/redstone',
+                '#forge:dusts/copper',
+                '#forge:dusts/nickel'
             ],
-            output: Item.of('emendatusenigmatica:constantan_dust', 4),
+            output: '4x emendatusenigmatica:constantan_dust',
             grindingTime: 10 * 20,
             id: `${id_prefix}constantan_dust`
         },
         {
-            inputs: [
-                Ingredient.of('#forge:string'),
-                Ingredient.of('#forge:string'),
-                Ingredient.of('twilightforest:firefly'),
-                Ingredient.of('#forge:string'),
-                Ingredient.of('#forge:string')
-            ],
-            output: Item.of('naturesaura:gold_fiber', 8),
+            inputs: ['#forge:string', '#forge:string', 'twilightforest:firefly', '#forge:string', '#forge:string'],
+            output: '8x naturesaura:gold_fiber',
             grindingTime: 2 * 20,
             id: `${id_prefix}gold_fiber`
         }
@@ -70,8 +88,8 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'hexerei:pestle_and_mortar';
-        recipe.ingredients = recipe.inputs.map((input) => input.toJson());
-        recipe.output = recipe.output.toJson();
+        recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
+        recipe.output = Item.of(recipe.output).toJson();
 
         event.custom(recipe).id(recipe.id);
     });

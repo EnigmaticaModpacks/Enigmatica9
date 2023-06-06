@@ -26,10 +26,10 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'modularrouters:modular_router',
-            pattern: ['AAA', 'BCB', 'AAA'],
+            pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: 'naturesaura:infused_stone',
-                B: '#forge:ingots/infused_iron',
+                B: '#forge:plates/signalum',
                 C: 'modularrouters:blank_module'
             },
             id: 'modularrouters:modular_router'

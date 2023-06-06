@@ -130,12 +130,12 @@ ServerEvents.recipes((event) => {
         {
             filter: { mod: 'littlelogistics' },
             to_replace: 'minecraft:ender_eye',
-            replace_with: '#forge:essences/manipulation'
+            replace_with: '#forge:nuggets/signalum'
         },
         {
             filter: { mod: 'littlelogistics' },
             to_replace: 'minecraft:ender_pearl',
-            replace_with: '#forge:essences/manipulation'
+            replace_with: '#forge:nuggets/signalum'
         },
         {
             filter: { mod: 'littlelogistics' },

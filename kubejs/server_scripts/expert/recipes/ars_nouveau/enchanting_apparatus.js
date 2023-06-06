@@ -606,13 +606,13 @@ ServerEvents.recipes((event) => {
         {
             output: 'ae2:quantum_link',
             inputs: [
-                'ae2:quartz_glass',
+                'thermal:signalum_glass',
                 'ae2:fluix_pearl',
-                'ae2:quartz_glass',
+                'thermal:signalum_glass',
                 'ae2:fluix_pearl',
-                'ae2:quartz_glass',
+                'thermal:signalum_glass',
                 'ae2:fluix_pearl',
-                'ae2:quartz_glass',
+                'thermal:signalum_glass',
                 'ae2:fluix_pearl'
             ],
             reagents: ['occultism:dimensional_matrix'],

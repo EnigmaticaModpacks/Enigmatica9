@@ -395,12 +395,13 @@ ServerEvents.recipes((event) => {
         },
         {
             output: '2x ae2:quantum_ring',
-            pattern: ['ABA', 'BCB', 'ADA'],
+            pattern: ['ABA', 'ECE', 'ADA'],
             key: {
                 A: 'ars_nouveau:sourcestone',
                 B: 'mekanism:teleportation_core',
                 C: 'pneumaticcraft:logistics_core',
-                D: '#ae2:smart_dense_cable'
+                D: '#ae2:smart_dense_cable',
+                E: '#forge:gears/signalum'
             },
             id: 'ae2:network/blocks/quantum_ring'
         },
@@ -460,6 +461,17 @@ ServerEvents.recipes((event) => {
                 D: '#forge:plates/aluminum'
             },
             id: 'ae2:network/crafting/patterns_blank'
+        },
+        {
+            output: '2x ae2:wireless_booster',
+            pattern: ['AAA', 'BCB', 'DBD'],
+            key: {
+                A: '#forge:dusts/fluix',
+                B: '#forge:nuggets/signalum',
+                C: 'modularrouters:blank_module',
+                D: '#forge:gems/certus_quartz'
+            },
+            id: 'ae2:network/wireless_booster'
         }
     ];
 

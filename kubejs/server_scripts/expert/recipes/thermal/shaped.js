@@ -391,13 +391,14 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'thermal:machine_crystallizer',
-            pattern: [' A ', 'BCB', 'DED'],
+            pattern: ['AFA', 'BCB', 'DED'],
             key: {
                 A: 'ae2:quartz_growth_accelerator',
-                B: '#forge:plastic',
-                C: '#industrialforegoing:machine_frame/simple',
-                D: '#forge:gears/electrum',
-                E: '#forge:essences/earth'
+                B: 'pneumaticcraft:printed_circuit_board',
+                C: '#industrialforegoing:machine_frame/advanced',
+                D: '#forge:gears/diamond',
+                E: 'ars_elemental:earth_focus',
+                F: 'ars_elemental:water_focus'
             },
             id: 'thermal:machine_crystallizer'
         },

@@ -130,6 +130,28 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}constantan_dust`
         },
         {
+            ingredients: [
+                { tag: 'forge:dusts/constantan' },
+                { tag: 'forge:dusts/constantan' },
+                { tag: 'forge:dusts/constantan' },
+                { tag: 'forge:dusts/constantan' },
+                [{ item: 'minecraft:glow_berries' }, { item: 'twilightforest:torchberries' }]
+            ],
+            results: [{ item: 'emendatusenigmatica:lumium_dust', count: 4 }],
+            id: `${id_prefix}lumium_dust`
+        },
+        {
+            ingredients: [
+                { tag: 'forge:dusts/aluminum' },
+                { tag: 'forge:dusts/aluminum' },
+                { tag: 'forge:dusts/aluminum' },
+                { tag: 'forge:dusts/aluminum' },
+                { tag: 'forge:esseneces/manipulation' }
+            ],
+            results: [{ item: 'emendatusenigmatica:signalum_dust', count: 4 }],
+            id: `${id_prefix}signalum_dust`
+        },
+        {
             ingredients: [{ tag: 'forge:essences/manipulation' }, { amount: 1000, fluidTag: 'forge:brine' }],
             results: [
                 { item: 'mekanism:dust_lithium', count: 4 },
