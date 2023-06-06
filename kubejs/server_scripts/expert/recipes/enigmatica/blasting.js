@@ -103,7 +103,7 @@ ServerEvents.recipes((event) => {
         recipes.push({
             output: preferredIngot,
             input: `#mekanism:crystals/${metal}`,
-            slag: 'thermal:rich_slag',
+            slag: 'thermal:slag',
             xp: 0.5,
             id_suffix: `${metal}_ingot_from_crystals`
         });

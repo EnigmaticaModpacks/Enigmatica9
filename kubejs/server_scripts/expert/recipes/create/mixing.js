@@ -158,7 +158,7 @@ ServerEvents.recipes((event) => {
                 { item: 'emendatusenigmatica:iesnium_dirty_dust', count: 1 }
             ],
             heatRequirement: 'superheated',
-            id: `${id_prefix}iesnium_lithium_salt`
+            id: `${id_prefix}lithium_iesnium`
         }
     ];
 
