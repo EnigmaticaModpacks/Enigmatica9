@@ -136,6 +136,17 @@ ServerEvents.recipes((event) => {
                 C: 'ars_nouveau:purple_archwood_wood'
             },
             id: `ars_nouveau:arcane_pedestal`
+        },
+        {
+            output: 'ars_nouveau:basic_spell_turret',
+            pattern: [' A ', 'BCB', 'ADA'],
+            key: {
+                A: '#forge:nuggets/electrum',
+                B: '#forge:wires/electrum',
+                C: '#forge:storage_blocks/source',
+                D: '#forge:essences/air'
+            },
+            id: `ars_nouveau:basic_spell_turret`
         }
     ];
 

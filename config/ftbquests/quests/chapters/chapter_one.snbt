@@ -1043,7 +1043,7 @@
 			description: [
 				"With the elements mastered, only one task remains before the Tree of Life may be restored: Winter’s Reign must end. "
 				""
-				"Travel to the frigid glaciers and defeat the Snow Queen."
+				"Travel to the frigid glaciers and defeat the Snow Queen to obtain Subzero Crystals."
 			]
 			hide_dependency_lines: true
 			id: "729E9D41A28D0E4D"
@@ -1703,6 +1703,38 @@
 			}]
 			x: -9.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: [
+				"The ability to call forth magic by wiggling one’s fingers is but a single facet of the mystic arts known to Witches. Ritual magic is another and takes many forms, from chalking arcane circles on the ground to burning specially prepared spell tablets. "
+				""
+				"The Ritual Brazier opens many options for automation and defense. Explore what each tablet can do and see what uses they can be put to."
+			]
+			icon: "ars_nouveau:ritual_brazier"
+			id: "324073603AF6FB29"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "65C797E604B3DA0F"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "5E75899DC12B686C"
+					item: "ars_nouveau:ritual_brazier"
+					type: "item"
+				}
+				{
+					id: "7C778A9C4AA7DC1C"
+					item: "ars_nouveau:ritual_flight"
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: -2.0d
 		}
 	]
 	title: "Chapter One"

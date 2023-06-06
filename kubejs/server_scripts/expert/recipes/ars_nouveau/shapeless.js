@@ -44,6 +44,18 @@ ServerEvents.recipes((event) => {
             output: 'ars_nouveau:ritual_sunrise',
             inputs: ['ars_nouveau:red_archwood_log', 'minecraft:clock'],
             id: 'ars_nouveau:ritual_sunrise'
+        },
+        {
+            output: 'ars_nouveau:ritual_flight',
+            inputs: [
+                'ars_nouveau:purple_archwood_log',
+                'twilightforest:raven_feather',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust'
+            ],
+            id: 'ars_nouveau:ritual_flight'
         }
     ];
 

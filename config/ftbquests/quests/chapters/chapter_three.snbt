@@ -9,17 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["028E6AD544B06111"]
-			id: "2F5D2A85ADFE9CA1"
-			tasks: [{
-				id: "5E5E4C5197B0EA3E"
-				item: "mekanism:pellet_antimatter"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 1.0d
-		}
-		{
 			dependencies: ["714A42E9CE3C32EA"]
 			id: "73B4078AB841567A"
 			tasks: [{
@@ -82,17 +71,6 @@
 		}
 		{
 			dependencies: ["73B4078AB841567A"]
-			id: "70CB050759D84E11"
-			tasks: [{
-				id: "1EC35F31C7341A6D"
-				item: "industrialforegoing:machine_frame_supreme"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["70CB050759D84E11"]
 			icon: "mekanism:sps_casing"
 			id: "10C86AC59F9FA412"
 			min_width: 275
@@ -123,26 +101,15 @@
 				}
 			]
 			title: "Supercritical Phase Shifter"
-			x: 0.0d
-			y: 0.0d
+			x: -1.0d
+			y: -0.5d
 		}
 		{
-			dependencies: ["2F5D2A85ADFE9CA1"]
+			dependencies: ["10C86AC59F9FA412"]
 			id: "7674A0390C41044C"
 			tasks: [{
 				id: "2D0E28E7D7C3B594"
 				item: "mekanism:antiprotonic_nucleosynthesizer"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["10C86AC59F9FA412"]
-			id: "028E6AD544B06111"
-			tasks: [{
-				id: "2143125A3D4EABD1"
-				item: "mekanism:chemical_crystallizer"
 				type: "item"
 			}]
 			x: -1.0d
@@ -156,13 +123,14 @@
 				item: "emendatusenigmatica:brass_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: -0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0672B242C31F4A11"]
 			icon: "minecraft:chorus_fruit"
 			id: "0EBE44D4C30C0E51"
+			shape: "hexagon"
 			tasks: [
 				{
 					dimension: "minecraft:the_end"
@@ -177,13 +145,15 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 4.0d
+			x: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["04B0F0BE6E54D620"]
+			hide_dependency_lines: true
 			icon: "kubejs:tree_of_life_3"
 			id: "0672B242C31F4A11"
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "009C9545ED44311C"
@@ -203,30 +173,28 @@
 				}
 			]
 			title: "Tree of Life"
-			x: 0.0d
-			y: 3.0d
+			x: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["0EBE44D4C30C0E51"]
-			id: "24C13543F6B1BF70"
-			tasks: [{
-				id: "3526E4E71E2E72DD"
-				item: "powah:lens_of_ender"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["24C13543F6B1BF70"]
+			description: ["Set up a Fluid Laser in the End using a Lens of Ender to obtain the Resonant Ender necessary to craft Enderium Ingots."]
+			icon: "emendatusenigmatica:enderium_ingot"
 			id: "2C30585E7A2D5EB3"
-			tasks: [{
-				id: "2314F1FE7822D002"
-				item: "emendatusenigmatica:enderium_ingot"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 6.0d
+			tasks: [
+				{
+					id: "2314F1FE7822D002"
+					item: "emendatusenigmatica:enderium_ingot"
+					type: "item"
+				}
+				{
+					id: "39F08E9BA05341F4"
+					item: "powah:lens_of_ender"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 1.5d
 		}
 	]
 	title: "Chapter Three"
