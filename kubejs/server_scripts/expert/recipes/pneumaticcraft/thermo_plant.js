@@ -97,6 +97,15 @@ ServerEvents.recipes((event) => {
             air_use_multiplier: 20.0,
             speed: 0.5,
             id: `${id_prefix}sylvanite`
+        },
+        {
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 10, fluid: 'kubejs:ambrosia' },
+            fluid_output: { amount: 2, fluid: 'industrialforegoing:ether_gas' },
+            exothermic: false,
+            temperature: { min_temp: 1273 },
+            pressure: 9.0,
+            speed: 2.0,
+            id: `${id_prefix}ether_gas`
         }
     ];
 

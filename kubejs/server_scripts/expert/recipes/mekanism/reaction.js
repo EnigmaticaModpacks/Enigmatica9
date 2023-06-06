@@ -32,7 +32,7 @@ ServerEvents.recipes((event) => {
         },
         {
             itemOutput: { item: 'minecraft:nether_star' },
-            fluidInput: { amount: 1000, tag: 'forge:ether_gas' },
+            fluidInput: { amount: 1000, tag: 'forge:blighted_ichor' },
             gasInput: { amount: 100, gas: 'starbunclemania:source_gas' },
             itemInput: { ingredient: { item: 'mekanism:substrate' } },
             duration: 100,
