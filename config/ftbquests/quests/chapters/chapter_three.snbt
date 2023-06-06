@@ -16,8 +16,8 @@
 				item: "mekanism:pellet_antimatter"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
+			x: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["714A42E9CE3C32EA"]
@@ -123,8 +123,8 @@
 				}
 			]
 			title: "Supercritical Phase Shifter"
-			x: 1.0d
-			y: 0.5d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2F5D2A85ADFE9CA1"]
@@ -135,7 +135,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["10C86AC59F9FA412"]
@@ -145,8 +145,8 @@
 				item: "mekanism:chemical_crystallizer"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 1.0d
+			x: -1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7674A0390C41044C"]
@@ -207,15 +207,15 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["73B4078AB841567A"]
+			dependencies: ["0EBE44D4C30C0E51"]
 			id: "24C13543F6B1BF70"
 			tasks: [{
 				id: "3526E4E71E2E72DD"
 				item: "powah:lens_of_ender"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -0.5d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["24C13543F6B1BF70"]
@@ -225,8 +225,8 @@
 				item: "emendatusenigmatica:enderium_ingot"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 4.0d
+			x: 0.0d
+			y: 6.0d
 		}
 	]
 	title: "Chapter Three"
