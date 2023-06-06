@@ -1155,8 +1155,8 @@ ServerEvents.recipes((event) => {
         {
             output: Item.of('minecraft:ender_pearl', {
                 display: {
-                    Lore: ['{"translate":"item.occultism.ritual_dummy.possess_enderman"}'],
-                    Name: '{"translate":"item.occultism.ritual_dummy.possess_enderman.tooltip"}'
+                    Name: '{"translate":"item.occultism.ritual_dummy.possess_enderman"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.possess_enderman.tooltip"}']
                 }
             }),
             activation_item: 'minecraft:chorus_flower',
@@ -1176,8 +1176,8 @@ ServerEvents.recipes((event) => {
         {
             output: Item.of('minecraft:skeleton_skull', {
                 display: {
-                    Lore: ['{"translate":"item.occultism.ritual_dummy.possess_skeleton"}'],
-                    Name: '{"translate":"item.occultism.ritual_dummy.possess_skeleton.tooltip"}'
+                    Name: '{"translate":"item.occultism.ritual_dummy.possess_skeleton"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.possess_skeleton.tooltip"}']
                 }
             }),
             activation_item: 'byg:hanging_bones',
@@ -1192,8 +1192,8 @@ ServerEvents.recipes((event) => {
         {
             output: Item.of('minecraft:end_stone', {
                 display: {
-                    Lore: ['{"translate":"item.occultism.ritual_dummy.possess_endermite"}'],
-                    Name: '{"translate":"item.occultism.ritual_dummy.possess_endermite.tooltip"}'
+                    Name: '{"translate":"item.occultism.ritual_dummy.possess_endermite"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.possess_endermite.tooltip"}']
                 }
             }),
             activation_item: 'minecraft:stone_bricks',
@@ -1213,8 +1213,8 @@ ServerEvents.recipes((event) => {
         {
             output: Item.of('minecraft:ghast_tear', {
                 display: {
-                    Lore: ['{"translate":"item.occultism.ritual_dummy.possess_ghast"}'],
-                    Name: '{"translate":"item.occultism.ritual_dummy.possess_ghast.tooltip"}'
+                    Name: '{"translate":"item.occultism.ritual_dummy.possess_ghast"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.possess_ghast.tooltip"}']
                 }
             }),
             activation_item: 'minecraft:nether_bricks',
@@ -1229,8 +1229,8 @@ ServerEvents.recipes((event) => {
         {
             output: Item.of('minecraft:wither_skeleton_skull', {
                 display: {
-                    Lore: ['{"translate":"item.occultism.ritual_dummy.summon_wild_hunt"}'],
-                    Name: '{"translate":"item.occultism.ritual_dummy.summon_wild_hunt.tooltip"}'
+                    Name: '{"translate":"item.occultism.ritual_dummy.summon_wild_hunt"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.summon_wild_hunt.tooltip"}']
                 }
             }),
             activation_item: 'minecraft:skeleton_skull',
@@ -1246,8 +1246,8 @@ ServerEvents.recipes((event) => {
         {
             output: Item.of('occultism:afrit_essence', {
                 display: {
-                    Lore: ['{"translate":"item.occultism.ritual_dummy.summon_wild_afrit"}'],
-                    Name: '{"translate":"item.occultism.ritual_dummy.summon_wild_afrit.tooltip"}'
+                    Name: '{"translate":"item.occultism.ritual_dummy.summon_wild_afrit"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.summon_wild_afrit.tooltip"}']
                 }
             }),
             activation_item: 'occultism:book_of_binding_bound_afrit',

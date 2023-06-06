@@ -148,7 +148,7 @@ const entries = {
         {
             key: 'block.create.mechanical_crafter',
             value: {
-                normal: 'Mechancical Crafter',
+                normal: 'Mechanical Crafter',
                 expert: 'Enchanted Crafter'
             }
         },

@@ -61,6 +61,9 @@ ServerEvents.recipes((event) => {
         { id: /ars_scalaes:.*_broom_from_mixing_cauldron/ },
         { id: /ars_scalaes:.*_brush_from_mixing_cauldron/ },
 
+        { id: 'ars_nouveau:sunrise_2' },
+        { id: 'ars_nouveau:moonfall_2' },
+
         { id: 'constructionwand:stone_wand' },
         { id: 'constructionwand:iron_wand' },
 
@@ -276,10 +279,11 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:electrolytic_core' },
         { id: 'mekanism:precision_sawmill' },
 
-        { id: 'minecraft:netherite_ingot' },
-        { id: 'minecraft:lodestone' },
         { id: /minecraft:diamond_(helmet|chestplate|leggings|boots)/ },
         { id: /minecraft:diamond_(sword|pickaxe|axe|shovel|hoe)/ },
+        { id: 'minecraft:netherite_ingot' },
+        { id: 'minecraft:lodestone' },
+        { id: 'minecraft:golden_apple' },
 
         { id: 'modularrouters:sender_module_1_alt' },
         { id: 'modularrouters:sender_module_2_x4' },
