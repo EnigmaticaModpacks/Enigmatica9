@@ -166,6 +166,51 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_summon_starbuncle_from_shards`
         },
         {
+            output: 'ars_nouveau:drygmy_charm',
+            activation_item: '#forge:essences/conjuration',
+            inputs: ['hexerei:mindful_trance_blend', 'quark:moss_paste', 'naturesaura:loot_finder', 'quark:moss_paste'],
+            ritual_dummy: 'kubejs:ritual_summon_drygmy',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_drygmy`
+        },
+        {
+            output: 'ars_nouveau:drygmy_charm',
+            activation_item: '#forge:essences/conjuration',
+            inputs: ['ars_nouveau:drygmy_shard'],
+            ritual_dummy: 'kubejs:ritual_summon_drygmy_from_shards',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_drygmy_from_shards`
+        },
+        {
+            output: 'ars_nouveau:whirlisprig_charm',
+            activation_item: '#forge:essences/conjuration',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                '#forge:ingots/steeleaf',
+                'naturesaura:light_staff',
+                '#forge:ingots/steeleaf'
+            ],
+            ritual_dummy: 'kubejs:ritual_summon_whirlisprig',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_whirlisprig`
+        },
+        {
+            output: 'ars_nouveau:whirlisprig_charm',
+            activation_item: '#forge:essences/conjuration',
+            inputs: ['ars_nouveau:whirlisprig_shards'],
+            ritual_dummy: 'kubejs:ritual_summon_whirlisprig_from_shards',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_whirlisprig_from_shards`
+        },
+        {
             output: Item.of('hexerei:willow_broom', {
                 Inventory: {
                     Items: [

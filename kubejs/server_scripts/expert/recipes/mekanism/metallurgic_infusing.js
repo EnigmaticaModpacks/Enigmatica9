@@ -76,6 +76,12 @@ ServerEvents.recipes((event) => {
             itemInput: { ingredient: { item: 'ae2:quartz_glass' } },
             chemicalInput: { infuse_type: 'emendatusenigmatica:earth_essence', amount: 40 },
             id: `${id_prefix}structural_glass`
+        },
+        {
+            output: 'mekanism:alloy_reinforced',
+            itemInput: { ingredient: { item: 'minecraft:popped_chorus_fruit' } },
+            chemicalInput: { infuse_type: 'mekanism:diamond', amount: 160 },
+            id: `mekanism:metallurgic_infusing/alloy/reinforced`
         }
     ];
 

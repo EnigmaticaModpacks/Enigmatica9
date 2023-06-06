@@ -83,9 +83,9 @@
 
 	[MachineResourceProductionConfig.HydroponicBedConfig]
 		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [100 (5s)]
-		maxProgress = 100
+		maxProgress = 20
 		#Amount of Power Consumed per Operation - Default: [1000FE]
-		powerPerOperation = 1000
+		powerPerOperation = 40
 		#Max Stored Power [FE] - Default: [10000 FE]
 		maxStoredPower = 10000
 

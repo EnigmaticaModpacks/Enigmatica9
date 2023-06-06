@@ -1057,6 +1057,13 @@ const entries = {
             }
         },
         {
+            key: 'item.mekanism.alloy_reinforced',
+            value: {
+                normal: 'Reinforced Alloy',
+                expert: 'Interludinum'
+            }
+        },
+        {
             key: 'gas.mekanism.antimatter',
             value: {
                 normal: 'Antimatter',

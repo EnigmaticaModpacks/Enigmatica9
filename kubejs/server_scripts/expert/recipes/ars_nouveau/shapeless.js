@@ -6,17 +6,6 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            output: 'ars_nouveau:ritual_brazier',
-            inputs: [
-                'ars_nouveau:arcane_pedestal',
-                '#forge:storage_blocks/source',
-                '#forge:ingots/energized_steel',
-                '#forge:ingots/energized_steel',
-                '#forge:ingots/energized_steel'
-            ],
-            id: 'ars_nouveau:ritual_brazier'
-        },
-        {
             output: 'ars_nouveau:warp_scroll',
             inputs: [
                 '#forge:dusts/moon_dust',
@@ -30,6 +19,11 @@ ServerEvents.recipes((event) => {
                 '#forge:gems/source'
             ],
             id: 'ars_nouveau:warp_scroll'
+        },
+        {
+            output: 'ars_nouveau:ritual_harvest',
+            inputs: ['ars_nouveau:green_archwood_log', '#forge:essences/earth', 'naturesaura:infused_iron_hoe'],
+            id: 'ars_nouveau:ritual_harvest'
         }
     ];
 

@@ -56,7 +56,6 @@ ServerEvents.recipes((event) => {
             grindingTime: 100,
             id: `${id_prefix}blitz_powder`
         },
-
         {
             inputs: [
                 '#forge:rods/basalz',
@@ -68,6 +67,18 @@ ServerEvents.recipes((event) => {
             output: '15x thermal:basalz_powder',
             grindingTime: 100,
             id: `${id_prefix}basalz_powder`
+        },
+        {
+            inputs: [
+                'minecraft:moss_block',
+                'minecraft:moss_block',
+                'minecraft:moss_block',
+                'minecraft:moss_block',
+                'minecraft:moss_block'
+            ],
+            output: '15x quark:moss_paste',
+            grindingTime: 60,
+            id: `${id_prefix}moss_paste`
         }
     ];
 

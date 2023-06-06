@@ -274,6 +274,7 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:module_dosimeter_unit' },
         { id: 'mekanism:module_inhalation_purification_unit' },
         { id: 'mekanism:electrolytic_core' },
+        { id: 'mekanism:precision_sawmill' },
 
         { id: 'minecraft:netherite_ingot' },
         { id: 'minecraft:lodestone' },
@@ -347,6 +348,7 @@ ServerEvents.recipes((event) => {
         { id: /powah:crafting\/(energizing_rod_|player_transmitter_|capacitor_)(blazing|hardened)/ },
 
         { id: /quark:.*rainbow_rune/ },
+        { id: 'quark:building/smelting/moss_paste' },
 
         { id: 'rftoolsbase:dimensionalshard' },
         { id: 'rftoolsbase:infused_diamond' },
@@ -406,11 +408,13 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:energy_limiter_attachment_2' },
         { id: 'thermal:energy_duct_4' },
         { id: 'thermal:tools/rf_potato' },
+        { id: 'thermal:machine_insolator' },
         { id: 'thermal:machines/pulverizer/pulverizer_lapis' },
         { id: 'thermal:machines/pulverizer/pulverizer_ender_pearl' },
         { id: 'thermal:machines/pulverizer/pulverizer_quartz' },
         { id: 'thermal:machines/pulverizer/pulverizer_emerald' },
         { id: 'thermal:machines/pulverizer/pulverizer_diamond' },
+        { id: 'thermal:machines/crucible/crucible_ender_pearl' },
 
         { id: 'toomanyglyphs:glyph_chaining' },
 

@@ -30,12 +30,11 @@ ServerEvents.recipes((event) => {
         },
         {
             output: '4x industrialforegoing:hydroponic_bed',
-            pattern: ['ABA', 'CDC', 'EFE'],
+            pattern: ['CBC', 'EAE', 'CFC'],
             key: {
                 A: 'farmersdelight:rich_soil',
                 B: '#forge:essences/water',
                 C: '#forge:plastic',
-                D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:ingots/infused_iron',
                 F: '#forge:essences/earth'
             },
@@ -56,12 +55,11 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'industrialforegoing:plant_sower',
-            pattern: ['ABA', 'CDC', 'EFE'],
+            pattern: ['CBC', 'EAE', 'CFC'],
             key: {
                 A: 'minecraft:flower_pot',
                 B: '#forge:essences/abjuration',
                 C: '#forge:plastic',
-                D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:ingots/ironwood',
                 F: '#forge:essences/earth'
             },
@@ -69,25 +67,23 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'industrialforegoing:plant_fertilizer',
-            pattern: ['ABA', 'CDC', 'EFE'],
+            pattern: ['CBC', 'EAE', 'CFC'],
             key: {
                 A: 'create:nozzle',
                 B: '#forge:essences/air',
                 C: '#forge:plastic',
-                D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:ingots/ironwood',
-                F: '#forge:essences/abjuration'
+                F: '#forge:essences/earth'
             },
             id: 'industrialforegoing:plant_fertilizer'
         },
         {
             output: 'industrialforegoing:plant_gatherer',
-            pattern: ['ABA', 'CDC', 'EFE'],
+            pattern: ['CBC', 'EAE', 'CFC'],
             key: {
-                A: Item.of('naturesaura:infused_iron_hoe', '{Damage:0}'),
+                A: Item.of('naturesaura:infused_iron_hoe', '{Damage:0}').weakNBT(),
                 B: '#forge:essences/conjuration',
                 C: '#forge:plastic',
-                D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:ingots/ironwood',
                 F: '#forge:essences/earth'
             },

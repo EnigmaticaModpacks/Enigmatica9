@@ -51,6 +51,22 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `industrialforegoing:laser_drill_fluid/ether_gas`
+        },
+        {
+            output: '{Amount:50,FluidName:"thermal:ender"}',
+            catalyst: { tag: 'industrialforegoing:laser_lens/ender' },
+            entity: 'minecraft:empty',
+            pointer: 0,
+            rarity: [
+                {
+                    depth_max: 256,
+                    depth_min: -64,
+                    weight: 8,
+                    blacklist: {},
+                    whitelist: { type: 'minecraft:worldgen/biome', values: biomes.in_the_end }
+                }
+            ],
+            id: `industrialforegoing:laser_drill_fluid/ender`
         }
     ];
 

@@ -390,19 +390,6 @@ ServerEvents.recipes((event) => {
             id: 'thermal:machine_press'
         },
         {
-            output: 'thermal:machine_insolator',
-            pattern: ['ABA', 'CDC', 'EFE'],
-            key: {
-                A: 'thermal:phytosoil',
-                B: 'immersiveengineering:light_bulb',
-                C: 'pneumaticcraft:printed_circuit_board',
-                D: '#industrialforegoing:machine_frame/advanced',
-                E: '#forge:gears/electrum',
-                F: 'thermal:device_soil_infuser'
-            },
-            id: 'thermal:machine_insolator'
-        },
-        {
             output: 'thermal:machine_crystallizer',
             pattern: [' A ', 'BCB', 'DED'],
             key: {

@@ -58,6 +58,15 @@ ServerEvents.recipes((event) => {
             ],
             energy: 4000,
             id: `${id_prefix}powdered_obsidian`
+        },
+        {
+            input: 'minecraft:moss_block',
+            outputs: [
+                { item: 'quark:moss_paste', count: 2 },
+                { item: 'quark:moss_paste', chance: 0.1 }
+            ],
+            energy: 500,
+            id: `${id_prefix}moss_paste`
         }
     ];
 

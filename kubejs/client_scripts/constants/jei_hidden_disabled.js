@@ -571,6 +571,7 @@ jei.expert.items.disabled = [
     'thermal:rf_potato',
     'thermal:energy_limiter_attachment',
     'thermal:energy_duct',
+    'thermal:machine_insolator',
 
     'twilightforest:candelabra',
     'twilightforest:keepsake_casket',
@@ -686,6 +687,8 @@ jei.expert.recipes.hidden = [
         recipes_by_id: [
             'ars_nouveau:wixie_charm',
             'ars_nouveau:starbuncle_charm',
+            'ars_nouveau:drygmy_charm',
+            'ars_nouveau:whirlisprig_charm',
             'ars_nouveau:magebloom_crop',
             'ars_nouveau:void_jar',
             'ars_nouveau:jar_of_light',
