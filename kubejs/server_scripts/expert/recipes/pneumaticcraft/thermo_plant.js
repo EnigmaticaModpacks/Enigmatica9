@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
         {
             item_output: { item: 'immersiveengineering:treated_wood_horizontal' },
             item_input: [{ tag: 'minecraft:planks' }],
-            fluid_input: { type: 'pneumaticcraft:fluid', amount: 125, fluid: 'immersiveengineering:creosote' },
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 125, tag: 'forge:creosote' },
             exothermic: false,
             speed: 4.0,
             id: `${id_prefix}treated_wood_horizontal`
@@ -35,7 +35,7 @@ ServerEvents.recipes((event) => {
         },
         {
             item_output: { item: 'emendatusenigmatica:aluminum_dirty_dust' },
-            fluid_input: { type: 'pneumaticcraft:fluid', amount: 10, fluid: 'immersiveengineering:redstone_acid' },
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 10, tag: 'forge:redstone_acid' },
             item_input: [{ item: 'kubejs:kaolin_powder' }],
             exothermic: false,
             temperature: { min_temp: 373 },
@@ -56,7 +56,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}redstone_acid`
         },
         {
-            fluid_input: { type: 'pneumaticcraft:fluid', amount: 8000, fluid: 'kubejs:abyssal_seawater' },
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 8000, tag: 'forge:abyssal_seawater' },
             fluid_output: { amount: 1000, fluid: 'mekanism:brine' },
             item_input: [{ item: 'kubejs:magebloom_filter' }],
             item_output: { item: 'kubejs:saturated_magebloom_filter' },
@@ -68,7 +68,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}saturated_magebloom_filter`
         },
         {
-            fluid_input: { type: 'pneumaticcraft:fluid', amount: 4000, fluid: 'starbunclemania:source_fluid' },
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 4000, tag: 'forge:source' },
             fluid_output: { amount: 4000, fluid: 'industrialforegoing:biofuel' },
             item_input: [{ item: 'kubejs:saturated_magebloom_filter' }],
             exothermic: false,
@@ -80,7 +80,7 @@ ServerEvents.recipes((event) => {
         },
         {
             item_output: { item: 'pneumaticcraft:upgrade_matrix', count: 4 },
-            fluid_input: { type: 'pneumaticcraft:fluid', amount: 1000, fluid: 'industrialforegoing:latex' },
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 1000, tag: 'forge:latex' },
             item_input: [{ item: 'quark:blue_rune' }],
             pressure: 2.0,
             air_use_multiplier: 1.0,
@@ -89,7 +89,7 @@ ServerEvents.recipes((event) => {
         },
         {
             item_output: { item: 'kubejs:sylvanite', count: 1 },
-            fluid_input: { type: 'pneumaticcraft:fluid', amount: 100, fluid: 'kubejs:magicite' },
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 100, tag: 'forge:magicite' },
             item_input: [{ tag: 'forge:dusts/lithium' }],
             exothermic: true,
             temperature: { max_temp: 173 },
@@ -99,13 +99,29 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}sylvanite`
         },
         {
-            fluid_input: { type: 'pneumaticcraft:fluid', amount: 10, fluid: 'kubejs:ambrosia' },
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 10, tag: 'forge:ambrosia' },
             fluid_output: { amount: 2, fluid: 'industrialforegoing:ether_gas' },
             exothermic: false,
             temperature: { min_temp: 1273 },
             pressure: 9.0,
             speed: 2.0,
             id: `${id_prefix}ether_gas`
+        },
+        {
+            item_input: { tag: 'forge:essences/manipulation' },
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 100, tag: 'forge:biodiesel' },
+            fluid_output: { amount: 100, fluid: 'pneumaticcraft:plastic' },
+            exothermic: false,
+            temperature: { min_temp: 373 },
+            id: `pneumaticcraft:thermo_plant/plastic_from_biodiesel`
+        },
+        {
+            item_input: { tag: 'forge:essences/manipulation' },
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 100, tag: 'forge:lpg' },
+            fluid_output: { amount: 100, fluid: 'pneumaticcraft:plastic' },
+            exothermic: false,
+            temperature: { min_temp: 373 },
+            id: `pneumaticcraft:thermo_plant/plastic_from_lpg`
         }
     ];
 
