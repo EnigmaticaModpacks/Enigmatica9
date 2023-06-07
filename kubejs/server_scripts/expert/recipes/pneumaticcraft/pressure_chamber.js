@@ -307,7 +307,7 @@ ServerEvents.recipes((event) => {
             results: [{ item: 'immersiveengineering:circuit_board', count: 1 }],
             inputs: [
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:plates/plastic', count: 2 },
-                { tag: 'forge:plates/electrum' },
+                { tag: 'forge:plates/signalum' },
                 { item: 'powah:dielectric_paste' }
             ],
             pressure: 2.0,

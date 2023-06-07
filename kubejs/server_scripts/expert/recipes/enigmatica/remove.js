@@ -32,9 +32,8 @@ ServerEvents.recipes((event) => {
         { output: 'thermal:earth_charge' },
         { output: 'twilightforest:raw_ironwood' },
 
-        { type: 'thermal:smelter_recycle' },
         { type: 'ae2:charger' },
-        { type: 'occultism:crushing' },
+        { type: 'ae2:transform' },
         { type: 'mekanism:energy_conversion' },
         { type: 'mekanism:separating' },
         { type: 'mekanism:compressing' },
@@ -42,6 +41,8 @@ ServerEvents.recipes((event) => {
         { type: 'mekanism:sawing' },
         { type: 'mekanism:centrifuging' },
         { type: 'mekanism:activating' },
+        { type: 'occultism:crushing' },
+        { type: 'thermal:smelter_recycle' },
 
         { id: /ae2:inscriber/ },
         { id: 'ae2:network/blocks/crystal_processing_charger' },

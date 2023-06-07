@@ -23,6 +23,17 @@ ServerEvents.recipes((event) => {
         }
     ];
 
+    simple_metals.forEach((metal) => {
+        recipes.push({
+            results: [{ item: `emendatusenigmatica:${metal}_dirty_dust`, count: 2 }],
+            ingredients: [
+                { item: `emendatusenigmatica:crushed_${metal}_ore` },
+                { fluidTag: 'forge:sulfuric_acid', amount: 10 }
+            ],
+            id: `${id_prefix}${metal}_dirty_dust_from_acid`
+        });
+    });
+
     recipes.forEach((recipe) => {
         recipe.type = 'create:filling';
         event.custom(recipe).id(recipe.id);

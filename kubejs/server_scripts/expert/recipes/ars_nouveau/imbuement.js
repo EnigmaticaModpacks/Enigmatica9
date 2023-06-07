@@ -106,6 +106,14 @@ ServerEvents.recipes((event) => {
             inputs: ['#forge:essences/air', '#forge:essences/fire', '#forge:essences/water', '#forge:essences/earth'],
             source: 10000,
             id: `${id_prefix}calling_spirit`
+        },
+        {
+            output: 'ae2:fluix_crystal',
+            count: 1,
+            reagent: 'ae2:charged_certus_quartz_crystal',
+            inputs: [],
+            source: 1000,
+            id: `${id_prefix}fluix_crystal`
         }
     ];
 

@@ -61,18 +61,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}printed_silicon`
         },
         {
-            results: [{ item: 'emendatusenigmatica:source_gem' }, { item: 'thermal:chiller_ball_cast' }],
-            inputs: [{ item: 'thermal:chiller_ball_cast' }],
-            fluid: { amount: 250, tag: 'forge:source' },
-            id: `${id_prefix}source_gem`
-        },
-        {
-            results: [{ item: 'emendatusenigmatica:source_block' }, { item: 'thermal:machine_frame' }],
-            inputs: [{ item: 'thermal:machine_frame' }],
-            fluid: { amount: 1000, tag: 'forge:source' },
-            id: `${id_prefix}source_gem_block`
-        },
-        {
             results: [
                 { item: 'ae2:sky_dust', count: 4 },
                 { item: 'emendatusenigmatica:silver_clump' },
@@ -103,10 +91,11 @@ ServerEvents.recipes((event) => {
     ];
 
     simple_metals.forEach((metal) => {
+        let rate = 3;
         recipes.push({
-            results: [{ item: `emendatusenigmatica:${metal}_dirty_dust`, count: 2 }],
-            inputs: [{ base_ingredient: { tag: `create:crushed_ores/${metal}` }, count: 1 }],
-            fluid: { amount: 10, tag: 'forge:sulfuric_acid' },
+            results: [{ item: `emendatusenigmatica:${metal}_dirty_dust`, count: 2 * rate }],
+            inputs: [{ base_ingredient: { tag: `create:crushed_ores/${metal}` }, count: 1 * rate }],
+            fluid: { amount: 10 * rate, tag: 'forge:sulfuric_acid' },
             id: `${id_prefix}${metal}_dirty_dust_from_acid`
         });
     });

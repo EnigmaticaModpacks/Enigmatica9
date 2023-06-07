@@ -18,9 +18,14 @@ ServerEvents.recipes((event) => {
     ];
 
     simple_metals.forEach((metal) => {
+        let rate = 3;
         recipes.push({
-            result: [{ item: `emendatusenigmatica:${metal}_dirty_dust`, count: 2 }],
-            ingredients: [{ tag: `create:crushed_ores/${metal}` }, { fluid_tag: 'forge:sulfuric_acid', amount: 10 }],
+            result: [{ item: `emendatusenigmatica:${metal}_dirty_dust`, count: 2 * rate }],
+            ingredients: [
+                { tag: `create:crushed_ores/${metal}`, count: 1 * rate },
+                { fluid_tag: 'forge:sulfuric_acid', amount: 10 * rate }
+            ],
+            energy: 3000 * rate,
             id: `${id_prefix}${metal}_dirty_dust_from_acid`
         });
     });

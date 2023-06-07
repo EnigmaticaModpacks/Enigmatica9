@@ -5,18 +5,6 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/lychee/lightning_channeling/';
     const recipes = [
         {
-            item_in: [{ item: 'ae2:certus_quartz_crystal' }],
-            post: [
-                {
-                    type: 'drop_item',
-                    item: 'ae2:charged_certus_quartz_crystal',
-                    count: 1,
-                    contextual: { type: 'chance', chance: 0.5 }
-                }
-            ],
-            id: `${id_prefix}charged_certus_quartz_crystal`
-        },
-        {
             item_in: [
                 { tag: 'forge:gems/source' },
                 { item: 'minecraft:chiseled_stone_bricks' },

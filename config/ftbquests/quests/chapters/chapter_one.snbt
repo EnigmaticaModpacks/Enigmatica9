@@ -502,18 +502,16 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["3B372F597A05E777"]
+			dependencies: ["0BAE6EBFEA3026B9"]
 			description: [
-				"There’s far more to magic than just the showy bits of wiggling one’s fingers and making sparkly lights. Indeed, a great deal can be done through the arcane arts with the right materials and processes. "
-				""
-				"Pulsating Crystals are merely the beginning. Long ago, specialists in transmutation and discovered ways of creating vast networks of crystalline conduits capable of wonderous feats. They kept vast hordes of materials stored away in dimensional arrays and could use it to create nearly anything on a whim. "
-				"That all seems rather far out of reach for now, but simple transport seems viable. "
+				"With Certus Quartz purified and growing, the real work may begin. When charged by a Pulsating Crystal, an arcane field is induced within their lattice that may be exploited to transport matter and energy great distances both instantly and in a very controlled and directed manner. "
 				""
 				"================================="
 				""
-				"Construct an Ad Hoc ME network consisting of an Energy Acceptor, an ME Crafting Terminal, and one or more ME Storage Buses. Consider combining these with Functional Storage or Sophisticated Storage controllers to make the most out of the limited number of channels. "
+				"Construct an Ad Hoc ME network consisting of an Energy Acceptor, an ME Crafting Terminal, and one or more ME Storage Buses connected by ME Glass Cable."
+				""
+				"Consider combining these with Functional Storage or Sophisticated Storage controllers to make the most out of the limited number of channels."
 			]
-			hide_dependency_lines: true
 			icon: "ae2:energy_acceptor"
 			id: "4FEF700D65A68CFB"
 			rewards: [{
@@ -541,10 +539,15 @@
 					item: "ae2:storage_bus"
 					type: "item"
 				}
+				{
+					id: "6C362370090CF12E"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
 			]
 			title: "Applied Energistics"
 			x: 2.0d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7CFD3DFD4C593EB5"]
@@ -1707,7 +1710,7 @@
 		{
 			dependencies: ["11AB47232D9F5D6D"]
 			description: [
-				"The ability to call forth magic by wiggling one’s fingers is but a single facet of the mystic arts known to Witches. Ritual magic is another and takes many forms, from chalking arcane circles on the ground to burning specially prepared spell tablets. "
+				"Ritual magic is yet another facet of the mystical arts and takes many forms, from chalking arcane circles on the ground to burning specially prepared spell tablets. "
 				""
 				"The Ritual Brazier opens many options for automation and defense. Explore what each tablet can do and see what uses they can be put to."
 			]
@@ -1735,6 +1738,38 @@
 			]
 			x: -6.5d
 			y: -2.0d
+		}
+		{
+			dependencies: ["3B372F597A05E777"]
+			description: [
+				"There’s far more to magic than just the showy bits of wiggling one’s fingers and making sparkly lights. Indeed, a great deal can be done through the arcane arts with the right materials and processes. "
+				""
+				"Long ago, specialists in transmutation and conjuration discovered ways of creating vast networks of crystalline conduits capable of wonderous feats. They kept hordes of materials stored away in dimensional arrays and could use them to create nearly anything on a whim. "
+				""
+				"That all seems rather far out of reach for now, but simple transport seems viable at least."
+				""
+				"================================="
+				""
+				"Begin by locating some Certus Quartz; the Wilden Grove will undoubtedly have left some behind in their ore mounds. Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the quartz and induce it to grow. "
+			]
+			hide_dependency_lines: true
+			id: "0BAE6EBFEA3026B9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "5BAC9CC4EA1BAEEC"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "76259CE881312220"
+				item: "ae2:quartz_block"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
 		}
 	]
 	title: "Chapter One"

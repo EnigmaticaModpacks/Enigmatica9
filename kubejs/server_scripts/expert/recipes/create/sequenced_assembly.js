@@ -68,26 +68,6 @@ ServerEvents.recipes((event) => {
         });
     });
 
-    simple_metals.forEach((metal) => {
-        recipes.push({
-            results: [{ item: `emendatusenigmatica:${metal}_dirty_dust`, count: 2 }],
-            input: `#create:crushed_ores/${metal}`,
-            transitionalItem: `emendatusenigmatica:crushed_${metal}_ore`,
-            loops: 4,
-            sequence: [
-                {
-                    type: 'create:filling',
-                    ingredients: [
-                        { item: `emendatusenigmatica:crushed_${metal}_ore` },
-                        { fluidTag: 'forge:sulfuric_acid', amount: 5 }
-                    ],
-                    results: [{ item: `emendatusenigmatica:crushed_${metal}_ore` }]
-                }
-            ],
-            id: `${id_prefix}${metal}_dirty_dust_from_acid`
-        });
-    });
-
     recipes.forEach((recipe) => {
         recipe.type = 'create:sequenced_assembly';
         recipe.ingredient = Ingredient.of(recipe.input).toJson();

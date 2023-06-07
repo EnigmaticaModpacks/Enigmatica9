@@ -340,13 +340,14 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'thermal:machine_bottler',
-            pattern: [' A ', 'BCB', 'DED'],
+            pattern: ['DAD', 'BCB', 'FEF'],
             key: {
                 A: 'create:spout',
                 B: 'pneumaticcraft:printed_circuit_board',
                 C: '#industrialforegoing:machine_frame/advanced',
                 D: 'naturesaura:infused_brick',
-                E: 'create:depot'
+                E: 'create:depot',
+                F: '#forge:gears/diamond'
             },
             id: 'thermal:machine_bottler'
         },

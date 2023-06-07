@@ -14,6 +14,13 @@ ServerEvents.recipes((event) => {
             id: 'naturesaura:altar/infused_iron'
         },
         {
+            output: 'ae2:charged_certus_quartz_crystal',
+            input: 'ae2:certus_quartz_crystal',
+            aura: 3000,
+            time: 60,
+            id: `${id_prefix}charged_certus_quartz_crystal`
+        },
+        {
             output: 'emendatusenigmatica:infused_iron_block',
             input: '#forge:storage_blocks/ironwood',
             aura: 135000,

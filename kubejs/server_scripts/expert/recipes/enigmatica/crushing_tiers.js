@@ -65,7 +65,7 @@ ServerEvents.recipes((event) => {
         let energy = 3000 * recipe.crushing_tier;
         // Note on Thermal Tier, Pulverizers have some very powerful catalysts that interact with this, so the baseline must be low to avoid infinite ore.
         // With Earth Essence and Resonant Components, 0.15 is about 4.5x, while 0.25 is about 17.5x. 0.2 is around 7x
-        let tertiary_chances = { tier_one: 0, tier_two: 0.5, tier_three: 0.63, tier_four: 0.75, tier_thermal: 0.05 };
+        let tertiary_chances = { tier_one: 0, tier_two: 0.5, tier_three: 0.63, tier_four: 0.75, tier_thermal: 0.15 };
 
         if (recipe.crushing_tier <= 1) {
             // Hexerei
