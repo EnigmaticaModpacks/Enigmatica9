@@ -157,7 +157,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: '#forge:gears/steel',
                 B: '#forge:essences/manipulation',
-                C: '#forge:plastic',
+                C: '#pneumaticcraft:plastic_sheets',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:plates/obsidian',
                 F: '#forge:essences/abjuration'

@@ -307,7 +307,7 @@ ServerEvents.recipes((event) => {
             pattern: [' A ', 'BCB', 'DED'],
             key: {
                 A: '#forge:essences/fire',
-                B: '#forge:plastic',
+                B: '#pneumaticcraft:plastic_sheets',
                 C: '#industrialforegoing:machine_frame/simple',
                 D: 'naturesaura:infused_brick',
                 E: 'pneumaticcraft:vortex_tube'
@@ -319,7 +319,7 @@ ServerEvents.recipes((event) => {
             pattern: [' A ', 'BCB', 'DED'],
             key: {
                 A: '#forge:essences/water',
-                B: '#forge:plastic',
+                B: '#pneumaticcraft:plastic_sheets',
                 C: '#industrialforegoing:machine_frame/simple',
                 D: 'naturesaura:infused_brick',
                 E: 'pneumaticcraft:vortex_tube'
@@ -331,7 +331,7 @@ ServerEvents.recipes((event) => {
             pattern: [' A ', 'BCB', 'DED'],
             key: {
                 A: '#forge:essences/abjuration',
-                B: '#forge:plastic',
+                B: '#pneumaticcraft:plastic_sheets',
                 C: '#industrialforegoing:machine_frame/simple',
                 D: 'naturesaura:infused_brick',
                 E: 'minecraft:brewing_stand'
@@ -408,7 +408,7 @@ ServerEvents.recipes((event) => {
             pattern: [' A ', 'BCB', 'DED'],
             key: {
                 A: 'create:crafting_blueprint',
-                B: '#forge:plastic',
+                B: '#pneumaticcraft:plastic_sheets',
                 C: '#industrialforegoing:machine_frame/simple',
                 D: '#forge:gears/compressed_iron',
                 E: '#forge:essences/manipulation'
@@ -420,7 +420,7 @@ ServerEvents.recipes((event) => {
             pattern: ['FAG', 'BCB', 'DED'],
             key: {
                 A: 'immersiveengineering:turntable',
-                B: '#forge:plastic',
+                B: '#pneumaticcraft:plastic_sheets',
                 C: '#industrialforegoing:machine_frame/simple',
                 D: '#forge:gears/compressed_iron',
                 E: '#forge:essences/air',
@@ -434,7 +434,7 @@ ServerEvents.recipes((event) => {
             pattern: [' A ', 'BCB', 'DED'],
             key: {
                 A: 'minecraft:blast_furnace',
-                B: '#forge:plastic',
+                B: '#pneumaticcraft:plastic_sheets',
                 C: '#industrialforegoing:machine_frame/simple',
                 D: 'immersiveengineering:blastbrick_reinforced',
                 E: 'thermal:fluid_cell_frame'

@@ -463,7 +463,7 @@ ServerEvents.recipes((event) => {
                 '#forge:gems/infused_diamond',
                 '#forge:rods/osmium',
                 'powah:capacitor_spirited',
-                '#forge:plastic',
+                '#pneumaticcraft:plastic_sheets',
                 'ars_nouveau:glyph_break',
                 'immersiveengineering:component_electronic',
                 'powah:capacitor_spirited',

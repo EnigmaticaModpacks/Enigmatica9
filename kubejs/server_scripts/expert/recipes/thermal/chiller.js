@@ -5,12 +5,12 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/thermal/chiller/';
 
     const recipes = [
-        // {
-        //     result: [{ item: 'minecraft:nether_star', chance: 1.75 }],
-        //     ingredients: [{ fluid: 'industrialforegoing:ether_gas', amount: 1000 }],
-        //     energy: 32000,
-        //     id: `${id_prefix}nether_star`
-        // }
+        {
+            result: [{ item: 'pneumaticcraft:plastic', chance: 2.15 }],
+            ingredients: [{ fluid: 'pneumaticcraft:plastic', amount: 1000 }],
+            energy: 8000,
+            id: `${id_prefix}plastic`
+        }
     ];
 
     recipes.forEach((recipe) => {

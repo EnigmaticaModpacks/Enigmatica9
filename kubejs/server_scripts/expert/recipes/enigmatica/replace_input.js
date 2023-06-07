@@ -166,6 +166,10 @@ ServerEvents.recipes((event) => {
             filter: { output: /minecraft:.*rail/ },
             to_replace: '#forge:ingots/osmium',
             replace_with: '#forge:rods/osmium'
+        },
+        {
+            to_replace: 'industrialforegoing:plastic',
+            replace_with: '#pneumaticcraft:plastic_sheets'
         }
     ];
 

@@ -278,7 +278,7 @@ ServerEvents.recipes((event) => {
             output: 'ae2:biometric_card',
             pattern: ['ABC', 'DDD'],
             key: {
-                A: '#forge:plastic',
+                A: '#pneumaticcraft:plastic_sheets',
                 B: 'minecraft:ender_eye',
                 C: 'quark:rainbow_rune',
                 D: '#forge:nuggets/gold'
@@ -289,7 +289,7 @@ ServerEvents.recipes((event) => {
             output: 'ae2:memory_card',
             pattern: ['ABC', 'DDD'],
             key: {
-                A: '#forge:plastic',
+                A: '#pneumaticcraft:plastic_sheets',
                 B: 'ars_nouveau:experience_gem',
                 C: 'quark:rainbow_rune',
                 D: '#forge:nuggets/gold'

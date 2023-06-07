@@ -24,7 +24,7 @@ ServerEvents.recipes((event) => {
                 A: 'powah:energizing_rod_niotic',
                 B: 'mekanism:teleportation_core',
                 C: '#industrialforegoing:machine_frame/simple',
-                D: '#forge:plastic'
+                D: '#pneumaticcraft:plastic_sheets'
             },
             id: 'industrialforegoing:laser_drill'
         },
@@ -34,7 +34,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'farmersdelight:rich_soil',
                 B: '#forge:essences/water',
-                C: '#forge:plastic',
+                C: '#pneumaticcraft:plastic_sheets',
                 E: '#forge:ingots/infused_iron',
                 F: '#forge:essences/earth'
             },
@@ -46,7 +46,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'minecraft:mycelium',
                 B: '#forge:essences/conjuration',
-                C: '#forge:plastic',
+                C: '#pneumaticcraft:plastic_sheets',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:ingots/lead',
                 F: '#forge:essences/anima'
@@ -59,7 +59,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'minecraft:flower_pot',
                 B: '#forge:essences/abjuration',
-                C: '#forge:plastic',
+                C: '#pneumaticcraft:plastic_sheets',
                 E: '#forge:ingots/ironwood',
                 F: '#forge:essences/earth'
             },
@@ -71,7 +71,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'create:nozzle',
                 B: '#forge:essences/air',
-                C: '#forge:plastic',
+                C: '#pneumaticcraft:plastic_sheets',
                 E: '#forge:ingots/ironwood',
                 F: '#forge:essences/earth'
             },
@@ -83,7 +83,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: Item.of('naturesaura:infused_iron_hoe', '{Damage:0}').weakNBT(),
                 B: '#forge:essences/conjuration',
-                C: '#forge:plastic',
+                C: '#pneumaticcraft:plastic_sheets',
                 E: '#forge:ingots/ironwood',
                 F: '#forge:essences/earth'
             },
@@ -95,7 +95,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: Item.of('minecraft:shears', '{Damage:0}'),
                 B: '#forge:essences/conjuration',
-                C: '#forge:plastic',
+                C: '#pneumaticcraft:plastic_sheets',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:ingots/ironwood',
                 F: 'thermal:fluid_cell_frame'
@@ -108,7 +108,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'supplementaries:gold_gate',
                 B: 'mekanism:teleportation_core',
-                C: '#forge:plastic',
+                C: '#pneumaticcraft:plastic_sheets',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:ingots/ironwood',
                 F: '#forge:gears/bronze'
@@ -121,7 +121,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'thermal:fluid_cell_frame',
                 B: 'create:whisk',
-                C: '#forge:plastic',
+                C: '#pneumaticcraft:plastic_sheets',
                 D: '#industrialforegoing:machine_frame/simple'
             },
             id: 'industrialforegoing:dye_mixer'
@@ -132,7 +132,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'pneumaticcraft:liquid_hopper',
                 B: 'thermal:fluid_cell_frame',
-                C: '#forge:plastic',
+                C: '#pneumaticcraft:plastic_sheets',
                 D: '#industrialforegoing:machine_frame/simple'
             },
             id: 'industrialforegoing:sewer'
@@ -143,7 +143,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'minecraft:composter',
                 B: 'thermal:fluid_cell_frame',
-                C: '#forge:plastic',
+                C: '#pneumaticcraft:plastic_sheets',
                 D: '#industrialforegoing:machine_frame/simple'
             },
             id: 'industrialforegoing:sewage_composter'
@@ -154,7 +154,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'pneumaticcraft:reinforced_chest',
                 B: 'thermal:fluid_cell_frame',
-                C: '#forge:plastic',
+                C: '#pneumaticcraft:plastic_sheets',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:ingots/compressed_iron',
                 F: '#forge:essences/manipulation'
@@ -178,7 +178,7 @@ ServerEvents.recipes((event) => {
             output: 'industrialforegoing:material_stonework_factory',
             pattern: ['ABA', 'CDE', 'FGF'],
             key: {
-                A: '#forge:plastic',
+                A: '#pneumaticcraft:plastic_sheets',
                 B: '#forge:essences/manipulation',
                 C: '#forge:essences/water',
                 D: '#industrialforegoing:machine_frame/simple',
@@ -230,7 +230,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'minecraft:sand',
                 B: 'thermal:fluid_cell_frame',
-                C: '#forge:plastic',
+                C: '#pneumaticcraft:plastic_sheets',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:gears/compressed_iron',
                 F: 'immersiveengineering:furnace_heater'
@@ -243,7 +243,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'thermal:deep_aquachow',
                 B: 'thermal:junk_net',
-                C: '#forge:plastic',
+                C: '#pneumaticcraft:plastic_sheets',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:gears/bronze',
                 F: 'thermal:device_fisher'
@@ -256,7 +256,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'spirit:soul_glass',
                 B: 'spirit:soul_pedestal',
-                C: '#forge:plastic',
+                C: '#pneumaticcraft:plastic_sheets',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:gears/lead',
                 F: '#forge:essences/anima'

@@ -5,16 +5,6 @@ ServerEvents.recipes((event) => {
             output: '2x immersiveengineering:wire_copper',
             input: '#forge:plates/copper',
             id: `${id_prefix}copper_wire`
-        },
-        {
-            output: 'createaddition:straw',
-            input: 'industrialforegoing:plastic',
-            id: `${id_prefix}straw_from_plastic_1`
-        },
-        {
-            output: 'createaddition:straw',
-            input: 'pneumaticcraft:plastic',
-            id: `${id_prefix}straw_from_plastic_2`
         }
     ];
 

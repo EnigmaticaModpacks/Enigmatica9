@@ -315,7 +315,7 @@ ServerEvents.recipes((event) => {
         },
         {
             results: [{ item: 'mininggadgets:upgrade_empty' }],
-            inputs: [{ tag: 'forge:plastic' }, { item: 'pneumaticcraft:upgrade_matrix' }],
+            inputs: [{ tag: 'pneumaticcraft:plastic_sheets' }, { item: 'pneumaticcraft:upgrade_matrix' }],
             pressure: 2.0,
             id: `${id_prefix}upgrade_empty`
         },

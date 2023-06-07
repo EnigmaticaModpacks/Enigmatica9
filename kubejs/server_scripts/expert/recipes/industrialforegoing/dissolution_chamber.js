@@ -210,8 +210,8 @@ ServerEvents.recipes((event) => {
                 'powah:capacitor_nitro',
                 '#forge:wires/steel',
 
-                '#forge:plastic',
-                '#forge:plastic',
+                '#pneumaticcraft:plastic_sheets',
+                '#pneumaticcraft:plastic_sheets',
 
                 '#forge:wires/steel',
                 'powah:capacitor_nitro',

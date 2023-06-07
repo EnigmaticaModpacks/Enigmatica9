@@ -230,7 +230,7 @@ ServerEvents.recipes((event) => {
             output: '2x pneumaticcraft:pneumatic_cylinder',
             pattern: ['ABA', 'ACA'],
             key: {
-                A: '#forge:plastic',
+                A: '#pneumaticcraft:plastic_sheets',
                 B: '#forge:rods/aluminum',
                 C: 'pneumaticcraft:cannon_barrel'
             },
@@ -349,8 +349,41 @@ ServerEvents.recipes((event) => {
                 C: 'spirit:soul_cage'
             },
             id: `pneumaticcraft:pressurized_spawner`
+        },
+        {
+            output: 'pneumaticcraft:remote',
+            pattern: [' A ', 'BCB', ' D '],
+            key: {
+                A: 'pneumaticcraft:network_io_port',
+                B: 'powah:blank_card',
+                C: 'pneumaticcraft:gps_tool',
+                D: 'pneumaticcraft:network_data_storage'
+            },
+            id: `pneumaticcraft:remote`
         }
     ];
+
+    const network_components = [
+        { item: 'pneumaticcraft:network_registry', color: 'lime' },
+        { item: 'pneumaticcraft:network_data_storage', color: 'gray' },
+        { item: 'pneumaticcraft:network_api', color: 'blue' },
+        { item: 'pneumaticcraft:diagnostic_subroutine', color: 'red' },
+        { item: 'pneumaticcraft:network_node', color: 'magenta' },
+        { item: 'pneumaticcraft:network_io_port', color: 'cyan' }
+    ];
+
+    network_components.forEach((component) => {
+        recipes.push({
+            output: `16x ${component.item}`,
+            pattern: [' BA', 'BCB', 'AB '],
+            key: {
+                A: 'ae2:calculation_processor',
+                B: `quark:${component.color}_rune`,
+                C: 'immersiveengineering:circuit_board'
+            },
+            id: component.item
+        });
+    });
 
     recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);

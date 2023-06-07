@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'quark:rainbow_rune',
                 B: 'pneumaticcraft:logistics_core',
-                C: '#forge:plastic'
+                C: '#pneumaticcraft:plastic_sheets'
             },
             id: 'modularrouters:blank_module'
         },
@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'quark:rainbow_rune',
                 B: 'pneumaticcraft:logistics_core',
-                C: '#forge:plastic'
+                C: '#pneumaticcraft:plastic_sheets'
             },
             id: 'modularrouters:blank_upgrade'
         },
