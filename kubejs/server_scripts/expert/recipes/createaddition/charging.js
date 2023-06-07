@@ -12,6 +12,12 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}charged_certus_quartz_crystal`
         },
         {
+            input: { item: 'ae2:charged_certus_quartz_crystal' },
+            result: { item: 'ae2:fluix_crystal' },
+            energy: 5000,
+            id: `${id_prefix}fluix_crystal`
+        },
+        {
             input: { item: 'minecraft:snowball' },
             result: { item: 'powah:charged_snowball' },
             energy: 5000,
