@@ -69,17 +69,8 @@ ServerEvents.recipes((event) => {
     });
 
     simple_metals.forEach((metal) => {
-        let results = [{ item: `emendatusenigmatica:${metal}_dirty_dust`, count: 4 }];
-
-        let secondary = metal_properties[metal].oreProcessing.expert_output.secondary;
-        if (secondary == 'quartz') {
-            results.push({ item: `emendatusenigmatica:${secondary}_dust`, count: 4 });
-        } else {
-            results.push({ item: `emendatusenigmatica:${secondary}_dirty_dust`, count: 2 });
-        }
-
         recipes.push({
-            results: results,
+            results: [{ item: `emendatusenigmatica:${metal}_dirty_dust`, count: 2 }],
             input: `#create:crushed_ores/${metal}`,
             transitionalItem: `emendatusenigmatica:crushed_${metal}_ore`,
             loops: 4,
@@ -88,7 +79,7 @@ ServerEvents.recipes((event) => {
                     type: 'create:filling',
                     ingredients: [
                         { item: `emendatusenigmatica:crushed_${metal}_ore` },
-                        { fluidTag: 'forge:sulfuric_acid', amount: 25 }
+                        { fluidTag: 'forge:sulfuric_acid', amount: 5 }
                     ],
                     results: [{ item: `emendatusenigmatica:crushed_${metal}_ore` }]
                 }

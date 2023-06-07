@@ -4,27 +4,27 @@
 	[Dynamos.Stirling]
 		#This sets the base power generation (RF/t) for the Stirling Dynamo.
 		#Range: 10 ~ 200
-		"Base Power" = 16
+		"Base Power" = 10
 
 	[Dynamos.Compression]
 		#This sets the base power generation (RF/t) for the Compression Dynamo.
 		#Range: 10 ~ 200
-		"Base Power" = 64
+		"Base Power" = 10
 
 	[Dynamos.Magmatic]
 		#This sets the base power generation (RF/t) for the Magmatic Dynamo.
 		#Range: 10 ~ 200
-		"Base Power" = 16
+		"Base Power" = 10
 
 	[Dynamos.Numismatic]
 		#This sets the base power generation (RF/t) for the Numismatic Dynamo.
 		#Range: 10 ~ 200
-		"Base Power" = 160
+		"Base Power" = 10
 
 	[Dynamos.Lapidary]
 		#This sets the base power generation (RF/t) for the Lapidary Dynamo.
 		#Range: 10 ~ 200
-		"Base Power" = 160
+		"Base Power" = 10
 
 	[Dynamos.Disenchantment]
 		#This sets the base power generation (RF/t) for the Disenchantment Dynamo.
@@ -34,7 +34,7 @@
 	[Dynamos.Gourmand]
 		#This sets the base power generation (RF/t) for the Gourmand Dynamo.
 		#Range: 10 ~ 200
-		"Base Power" = 96
+		"Base Power" = 10
 
 
 
@@ -93,37 +93,37 @@
 	[Machines.Furnace]
 		#This sets the base power consumption (RF/t) for the Redstone Furnace.
 		#Range: 1 ~ 200
-		"Base Power" = 16
+		"Base Power" = 96
 
 	[Machines.Sawmill]
 		#This sets the base power consumption (RF/t) for the Sawmill.
 		#Range: 1 ~ 200
-		"Base Power" = 16
+		"Base Power" = 96
 
 	[Machines.Pulverizer]
 		#This sets the base power consumption (RF/t) for the Pulverizer.
 		#Range: 1 ~ 200
-		"Base Power" = 64
+		"Base Power" = 96
 
 	[Machines.Smelter]
 		#This sets the base power consumption (RF/t) for the Induction Smelter.
 		#Range: 1 ~ 200
-		"Base Power" = 64
+		"Base Power" = 96
 
 	[Machines.Insolator]
 		#This sets the base power consumption (RF/t) for the Phytogenic Insolator.
 		#Range: 1 ~ 200
-		"Base Power" = 16
+		"Base Power" = 96
 
 	[Machines.Centrifuge]
 		#This sets the base power consumption (RF/t) for the Centrifugal Separator.
 		#Range: 1 ~ 200
-		"Base Power" = 32
+		"Base Power" = 96
 
 	[Machines.Press]
 		#This sets the base power consumption (RF/t) for the Multiservo Press.
 		#Range: 1 ~ 200
-		"Base Power" = 64
+		"Base Power" = 96
 
 	[Machines.Crucible]
 		#This sets the base power consumption (RF/t) for the Magma Crucible.
@@ -138,27 +138,27 @@
 	[Machines.Refinery]
 		#This sets the base power consumption (RF/t) for the Fractionating Still.
 		#Range: 1 ~ 200
-		"Base Power" = 32
+		"Base Power" = 96
 
 	[Machines.Pyrolyzer]
 		#This sets the base power consumption (RF/t) for the Pyrolyzer.
 		#Range: 1 ~ 200
-		"Base Power" = 16
+		"Base Power" = 96
 
 	[Machines.Bottler]
 		#This sets the base power consumption (RF/t) for the Fluid Encapsulator.
 		#Range: 1 ~ 200
-		"Base Power" = 32
+		"Base Power" = 96
 
 	[Machines.Brewer]
 		#This sets the base power consumption (RF/t) for the Crystallizer.
 		#Range: 1 ~ 200
-		"Base Power" = 8
+		"Base Power" = 96
 
 	[Machines.Crafter]
 		#This sets the base power consumption (RF/t) for the Sequential Fabricator.
 		#Range: 1 ~ 200
-		"Base Power" = 16
+		"Base Power" = 96
 
 ["Global Options"]
 	#If TRUE, Redstone Flux will act as its own energy system and will NOT be interoperable with 'Forge Energy' - only enable this if you absolutely know what you are doing and want the Thermal Series to use a unique energy system.

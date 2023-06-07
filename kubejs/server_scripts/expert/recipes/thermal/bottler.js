@@ -17,6 +17,14 @@ ServerEvents.recipes((event) => {
         }
     ];
 
+    simple_metals.forEach((metal) => {
+        recipes.push({
+            result: [{ item: `emendatusenigmatica:${metal}_dirty_dust`, count: 2 }],
+            ingredients: [{ tag: `create:crushed_ores/${metal}` }, { fluid_tag: 'forge:sulfuric_acid', amount: 10 }],
+            id: `${id_prefix}${metal}_dirty_dust_from_acid`
+        });
+    });
+
     recipes.forEach((recipe) => {
         recipe.type = 'thermal:bottler';
         event.custom(recipe).id(recipe.id);

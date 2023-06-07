@@ -79,36 +79,26 @@ ServerEvents.recipes((event) => {
     ];
 
     metal_dirty_dusts.forEach((metal) => {
-        let secondary = metal_properties[metal].oreProcessing.expert_output.secondary;
-        let secondary_modifier = 1;
-        if (secondary == 'quartz') {
-            secondary = AlmostUnified.getPreferredItemForTag(`forge:gems/${secondary}`).getId();
-            secondary_modifier = 2;
-        } else {
-            secondary = AlmostUnified.getPreferredItemForTag(`mekanism:shards/${secondary}`).getId();
-        }
-
         recipes.push({
             item_in: [{ tag: `mekanism:dirty_dusts/${metal}` }],
             post: [
-                { type: 'drop_item', item: `emendatusenigmatica:${metal}_shard`, count: 6 },
                 {
                     type: 'drop_item',
                     item: `emendatusenigmatica:${metal}_shard`,
-                    count: 3,
-                    contextual: { type: 'chance', chance: 0.75 }
+                    count: 1,
+                    contextual: { type: 'chance', chance: 0.33 }
                 },
                 {
                     type: 'drop_item',
-                    item: secondary,
-                    count: 2 * secondary_modifier,
-                    contextual: { type: 'chance', chance: 0.5 }
+                    item: `emendatusenigmatica:${metal}_shard`,
+                    count: 1,
+                    contextual: { type: 'chance', chance: 0.33 }
                 },
                 {
                     type: 'drop_item',
-                    item: secondary,
-                    count: 1 * secondary_modifier,
-                    contextual: { type: 'chance', chance: 0.25 }
+                    item: `emendatusenigmatica:${metal}_shard`,
+                    count: 1,
+                    contextual: { type: 'chance', chance: 0.33 }
                 }
             ],
             id: `${id_prefix}shard_${metal}`

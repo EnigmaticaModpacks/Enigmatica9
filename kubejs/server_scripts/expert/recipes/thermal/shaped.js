@@ -343,8 +343,8 @@ ServerEvents.recipes((event) => {
             pattern: [' A ', 'BCB', 'DED'],
             key: {
                 A: 'create:spout',
-                B: '#forge:plastic',
-                C: '#industrialforegoing:machine_frame/simple',
+                B: 'pneumaticcraft:printed_circuit_board',
+                C: '#industrialforegoing:machine_frame/advanced',
                 D: 'naturesaura:infused_brick',
                 E: 'create:depot'
             },
