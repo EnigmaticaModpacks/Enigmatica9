@@ -978,7 +978,13 @@
 				""
 				"Perform this ritual to summon more of these books. They’ll be an excellent way to supplement the missing glyphs in this newfound spell book."
 			]
-			icon: "occultism:ritual_dummy/custom_ritual"
+			icon: {
+				Count: 1b
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "gateways:death_tome_gate_large"
+				}
+			}
 			id: "28A304E0F1600640"
 			rewards: [{
 				command: "enigmatica:ars_nouveau_glyph_cache/tier_1"
@@ -997,7 +1003,13 @@
 				}
 				{
 					id: "3D0287DCD0BE94E2"
-					item: "kubejs:summon_death_tome"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:death_tome_gate_small"
+						}
+					}
 					optional_task: true
 					type: "item"
 				}
@@ -1768,6 +1780,7 @@
 				item: "ae2:quartz_block"
 				type: "item"
 			}]
+			title: "Certus Farming"
 			x: 2.0d
 			y: -0.5d
 		}
