@@ -108,12 +108,12 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}calling_spirit`
         },
         {
-            output: 'ae2:fluix_crystal',
+            output: 'ae2:charged_certus_quartz_crystal',
             count: 1,
-            reagent: 'ae2:charged_certus_quartz_crystal',
+            reagent: 'ae2:certus_quartz_crystal',
             inputs: [],
             source: 1000,
-            id: `${id_prefix}fluix_crystal`
+            id: `${id_prefix}charged_certus_quartz_crystal`
         }
     ];
 

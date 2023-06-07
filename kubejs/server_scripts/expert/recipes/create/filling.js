@@ -20,6 +20,11 @@ ServerEvents.recipes((event) => {
             results: [{ item: 'the_bumblezone:honey_compass' }],
             ingredients: [{ item: 'naturescompass:naturescompass' }, { fluidTag: 'forge:honey', amount: 250 }],
             id: `${id_prefix}honey_compass`
+        },
+        {
+            results: [{ item: 'ae2:fluix_crystal' }],
+            ingredients: [{ item: 'ae2:charged_certus_quartz_crystal' }, { fluidTag: 'forge:source', amount: 100 }],
+            id: `${id_prefix}fluix_crystal`
         }
     ];
 

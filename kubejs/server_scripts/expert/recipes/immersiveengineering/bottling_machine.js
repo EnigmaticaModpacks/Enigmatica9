@@ -87,6 +87,12 @@ ServerEvents.recipes((event) => {
             inputs: [{ base_ingredient: { item: 'naturescompass:naturescompass' } }],
             fluid: { amount: 250, tag: 'forge:honey' },
             id: `${id_prefix}honey_compass`
+        },
+        {
+            results: [{ item: 'ae2:fluix_crystal' }],
+            inputs: [{ base_ingredient: { item: 'ae2:charged_certus_quartz_crystal' } }],
+            fluid: { amount: 100, tag: 'forge:source' },
+            id: `${id_prefix}fluix_crystal`
         }
     ];
 

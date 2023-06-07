@@ -77,6 +77,7 @@ ServerEvents.recipes((event) => {
         { id: 'create:crafting/kinetics/empty_blaze_burner' },
         { id: 'create:crafting/kinetics/mechanical_crafter' },
         { id: 'create:crafting/kinetics/brass_hand' },
+        { id: 'create:haunting/lapis_recycling' },
         { id: 'create:mixing/brass_ingot' },
         { id: 'create:mixing/andesite_alloy_from_zinc' },
         { id: 'create:mixing/andesite_alloy' },
