@@ -48,6 +48,7 @@ ServerEvents.recipes((event) => {
         { type: 'mekanism:pigment_mixing' },
         { type: 'mekanism:painting' },
         { type: 'occultism:crushing' },
+        { type: 'occultism:miner' },
         { type: 'thermal:smelter_recycle' },
 
         { id: /ae2:inscriber/ },
@@ -327,14 +328,17 @@ ServerEvents.recipes((event) => {
         { id: 'naturesaura:offering/sky_ingot' },
         { id: 'naturesaura:altar/tainted_gold_block' },
 
+        { id: /occultism:ritual\/craft_miner/ },
+        { id: /occultism:ritual\/craft_stabilizer/ },
+        { id: 'occultism:spirit_fire/spirit_attuned_gem' },
         { id: 'occultism:ritual/craft_dimensional_matrix' },
         { id: 'occultism:ritual/craft_storage_controller_base' },
         { id: 'occultism:ritual/craft_stable_wormhole' },
         { id: 'occultism:ritual/craft_soul_gem' },
         { id: 'occultism:ritual/craft_familiar_ring' },
-        { id: 'occultism:spirit_fire/spirit_attuned_gem' },
         { id: 'occultism:ritual/summon_wild_otherworld_bird' },
         { id: 'occultism:ritual/summon_wild_parrot' },
+        { id: 'occultism:ritual/craft_dimensional_mineshaft' },
 
         { id: /pneumaticcraft:.*_compressor/ },
         { id: /pneumaticcraft:thermo_plant\/.*_drill_bit/ },

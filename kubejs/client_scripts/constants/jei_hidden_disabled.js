@@ -493,6 +493,11 @@ jei.expert.items.disabled = [
 
     /occultism:chalk_.*_impure/,
     'occultism:ritual_dummy/summon_wild_otherworld_bird',
+    'occultism:miner_foliot_unspecialized',
+    'occultism:miner_djinni_ores',
+    'occultism:miner_afrit_deeps',
+    'occultism:miner_marid_master',
+    'occultism:dimensional_mineshaft',
 
     'pneumaticcraft:air_compressor',
     'pneumaticcraft:electrostatic_compressor',
