@@ -516,7 +516,7 @@ ItemEvents.tooltip((event) => {
         },
         {
             items: ['superiorshields:flux_shield'],
-            text: [Text.of(`Accepts Integral Components.`).green()]
+            text: [Text.of(`Accepts Integral Components`).green()]
         }
     ];
 

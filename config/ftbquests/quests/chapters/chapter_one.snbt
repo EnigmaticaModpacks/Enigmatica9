@@ -721,16 +721,6 @@
 									Damage: 0
 								}
 							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									Parent: {
-										energy: 0
-									}
-								}
-								id: "superiorshields:flux_shield"
-								tag: { }
-							}
 						]
 					}
 				}

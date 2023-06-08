@@ -55,27 +55,16 @@
 			#The amount of ticks without taking damage before the shield begins to recharge.
 			recharge_delay = 60
 
-[thermal]
-
-	#Thermal augmentable shields stats. Each one represents a tier based on the integral components
-	[thermal.flux_shield]
-		#The amount of health the shield has. One point is half a shield icon (same as hearts.)
-		capacity = 5
-		#The amount of ticks between each attempt to recharge the shield bar.
-		recharge_rate = 100
-		#The amount of ticks without taking damage before the shield begins to recharge.
-		recharge_delay = 140
-
 [ars_nouveau]
 
 	#Shields made from materials present in Ars Nouveau
 	[ars_nouveau.enchanter_shield]
 		#The amount of health the shield has. One point is half a shield icon (same as hearts.)
-		capacity = 9
+		capacity = 15
 		#The amount of ticks between each attempt to recharge the shield bar.
-		recharge_rate = 40
+		recharge_rate = 20
 		#The amount of ticks without taking damage before the shield begins to recharge.
-		recharge_delay = 80
+		recharge_delay = 20
 
 [twilight_forest]
 

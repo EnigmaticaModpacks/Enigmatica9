@@ -868,16 +868,16 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}spawner_core_shell`
         },
         {
-            output: 'superiorshields:flux_shield',
+            output: 'superiorshields:enchanter_shield',
             inputs: [
                 'ars_elemental:glyph_bubble_shield',
+                '#forge:ingots/energized_steel',
                 '#forge:gems/source',
-                'powah:capacitor_niotic',
-                '#forge:gems/source',
+                '#forge:ingots/energized_steel',
                 'ars_nouveau:glyph_self',
+                '#forge:ingots/energized_steel',
                 '#forge:gems/source',
-                'powah:capacitor_niotic',
-                '#forge:gems/source'
+                '#forge:ingots/energized_steel'
             ],
             reagents: [
                 'superiorshields:knightmetal_shield',
@@ -889,7 +889,7 @@ ServerEvents.recipes((event) => {
             ],
             sourceCost: 1000,
             keepNbtOfReagent: true,
-            id: `${id_prefix}flux_shield`
+            id: `${id_prefix}enchanter_shield`
         }
     ];
 

@@ -564,7 +564,8 @@ jei.expert.items.disabled = [
     'superiorshields:steel_shield',
     'superiorshields:tin_shield',
     'superiorshields:spirit_hunter_shield',
-    'superiorshields:soul_stained_steel_shield',
+    'superiorshields:soul_stained_shield',
+    'superiorshields:flux_shield',
 
     'thermal:dynamo_compression',
     'thermal:dynamo_gourmand',
