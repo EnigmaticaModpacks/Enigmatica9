@@ -220,6 +220,70 @@ ServerEvents.recipes((event) => {
             inputFluid: '{Amount:1000,FluidName:"immersiveengineering:concrete"}',
             processingTime: 800,
             id: `${id_prefix}sps_casing`
+        },
+        {
+            output: '12x minecraft:glowstone_dust',
+            inputs: [
+                'thermal:glowstone_mushroom_spores',
+                'thermal:glowstone_mushroom_spores',
+                'thermal:glowstone_mushroom_spores',
+                'thermal:glowstone_mushroom_spores',
+                'thermal:glowstone_mushroom_spores',
+                'thermal:glowstone_mushroom_spores',
+                'thermal:glowstone_mushroom_spores',
+                'thermal:glowstone_mushroom_spores'
+            ],
+            inputFluid: '{Amount:50,FluidName:"minecraft:water"}',
+            processingTime: 40,
+            id: `${id_prefix}glowstone_dust_from_spores`
+        },
+        {
+            output: '12x minecraft:redstone',
+            inputs: [
+                'thermal:redstone_mushroom_spores',
+                'thermal:redstone_mushroom_spores',
+                'thermal:redstone_mushroom_spores',
+                'thermal:redstone_mushroom_spores',
+                'thermal:redstone_mushroom_spores',
+                'thermal:redstone_mushroom_spores',
+                'thermal:redstone_mushroom_spores',
+                'thermal:redstone_mushroom_spores'
+            ],
+            inputFluid: '{Amount:50,FluidName:"minecraft:water"}',
+            processingTime: 40,
+            id: `${id_prefix}redstone_from_spores`
+        },
+        {
+            output: '12x minecraft:gunpowder',
+            inputs: [
+                'thermal:gunpowder_mushroom_spores',
+                'thermal:gunpowder_mushroom_spores',
+                'thermal:gunpowder_mushroom_spores',
+                'thermal:gunpowder_mushroom_spores',
+                'thermal:gunpowder_mushroom_spores',
+                'thermal:gunpowder_mushroom_spores',
+                'thermal:gunpowder_mushroom_spores',
+                'thermal:gunpowder_mushroom_spores'
+            ],
+            inputFluid: '{Amount:50,FluidName:"minecraft:water"}',
+            processingTime: 40,
+            id: `${id_prefix}gunpowder_from_spores`
+        },
+        {
+            output: '12x minecraft:slime_ball',
+            inputs: [
+                'thermal:slime_mushroom_spores',
+                'thermal:slime_mushroom_spores',
+                'thermal:slime_mushroom_spores',
+                'thermal:slime_mushroom_spores',
+                'thermal:slime_mushroom_spores',
+                'thermal:slime_mushroom_spores',
+                'thermal:slime_mushroom_spores',
+                'thermal:slime_mushroom_spores'
+            ],
+            inputFluid: '{Amount:50,FluidName:"minecraft:water"}',
+            processingTime: 40,
+            id: `${id_prefix}slime_ball_from_spores`
         }
     ];
 
