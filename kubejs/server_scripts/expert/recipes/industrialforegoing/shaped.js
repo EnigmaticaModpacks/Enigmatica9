@@ -156,7 +156,7 @@ ServerEvents.recipes((event) => {
                 B: 'thermal:fluid_cell_frame',
                 C: '#pneumaticcraft:plastic_sheets',
                 D: '#industrialforegoing:machine_frame/simple',
-                E: '#forge:ingots/compressed_iron',
+                E: '#forge:gears/compressed_iron',
                 F: '#forge:essences/manipulation'
             },
             id: 'industrialforegoing:dissolution_chamber'

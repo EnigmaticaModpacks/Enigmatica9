@@ -196,6 +196,21 @@
 			x: 0.5d
 			y: 1.5d
 		}
+		{
+			dependencies: [
+				"2C30585E7A2D5EB3"
+				"04B0F0BE6E54D620"
+			]
+			hide_dependency_lines: true
+			id: "3DD1F3E561B3D06A"
+			tasks: [{
+				id: "3AEE4B91C07C6421"
+				item: "kubejs:tree_of_life_4"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
 	]
 	title: "Chapter Three"
 }

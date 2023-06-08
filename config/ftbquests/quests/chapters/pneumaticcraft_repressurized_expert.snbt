@@ -419,7 +419,7 @@
 					type: "item"
 				}
 			]
-			x: -23.0d
+			x: -22.5d
 			y: -11.0d
 		}
 		{
@@ -1081,8 +1081,8 @@
 				}
 			]
 			title: "Assembly Table"
-			x: -22.5d
-			y: -10.0d
+			x: -21.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["7F36F40E0465B923"]
@@ -1170,44 +1170,6 @@
 		{
 			dependencies: ["19F79435C6D185E3"]
 			description: [
-				"Recent advancements in Pneumatic technology now allow for the forced removal of the magical core of Spawners found throughout the world. Once extracted, they can be empowered to run more quickly by inserting them in a modified spawner and spinning them up with air."
-				""
-				"To begin, prepare the area around a spawner for a fight. Disabling it with Torches or by Hacking it are recommended."
-				""
-				"Place the Spawner Extractor on top of the spawner, connect a Vacuum Pump to the Extractor, and begin pumping the air out. As the Extractor reaches the requisite negative pressure, things will begin happening."
-				""
-				"The Extractor only works while the player is nearby, so stay close."
-				""
-				"As it works, mobs will be forcibly spawned in the area. You brought your armor, right?"
-				""
-				"The Extractor will slow down as more mobs accumulate in the area. Kill them quickly."
-				""
-				"Be prepared for large waves of mobs. Things can get hectic."
-				""
-				"Note: When the process has finished, Sneak + Right-Click the Extractor with a Pneumatic Wrench to avoid the need to charge from scratch the next time. An extractor with some volume upgrades should be able to extract cores from several spawners before needing to be re-charged. "
-			]
-			id: "451A77A22E408950"
-			min_width: 300
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
-				icon: "kubejs:epic_lootbox"
-				id: "4773CEF61A116EB4"
-				player_command: false
-				title: "Epic PNC:R Loot Box"
-				type: "command"
-			}]
-			subtitle: "Helter Skelter"
-			tasks: [{
-				id: "1DDBE70A2FC13278"
-				item: "pneumaticcraft:spawner_extractor"
-				type: "item"
-			}]
-			x: -21.0d
-			y: -11.0d
-		}
-		{
-			dependencies: ["19F79435C6D185E3"]
-			description: [
 				"Your gateway to custom spawning."
 				""
 				"Not every mob is readily available from natural spawners. Thankfully, there is a way of recreating the magic of the Spawner Core: The Vacuum Trap."
@@ -1246,33 +1208,8 @@
 					type: "item"
 				}
 			]
-			x: -20.0d
-			y: -11.0d
-		}
-		{
-			dependencies: ["451A77A22E408950"]
-			description: [
-				"Once the Extraction process has finished, be sure to break the empty spawner (any pick will do) and take it with you. It's required for crafting a Pressurized Spawner."
-				""
-				"Note: Consider keeping a spare empty spawner at your base. The Spawner Extractor can be placed atop it to simplify recharging it for future projects."
-			]
-			id: "25943200D2F3A8C5"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
-				icon: "kubejs:epic_lootbox"
-				id: "1FEB1F3B27ED6C3E"
-				player_command: false
-				title: "Epic PNC:R Loot Box"
-				type: "command"
-			}]
-			subtitle: "Spinning in Their Graves"
-			tasks: [{
-				id: "311FEA33F7200CF4"
-				item: "pneumaticcraft:pressurized_spawner"
-				type: "item"
-			}]
 			x: -20.5d
-			y: -10.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["6E942B6AC4460725"]
