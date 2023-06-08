@@ -1109,9 +1109,69 @@
 				id: "50541B95613CA29B"
 				item: {
 					Count: 1b
-					id: "itemfilters:tag"
+					id: "itemfilters:or"
 					tag: {
-						value: "superiorshields:shield"
+						items: [
+							{
+								Count: 1b
+								id: "superiorshields:bronze_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "superiorshields:electrum_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "superiorshields:constantan_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "superiorshields:ironwood_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "superiorshields:steeleaf_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "superiorshields:knightmetal_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "superiorshields:enchanter_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									Parent: {
+										energy: 0
+									}
+								}
+								id: "superiorshields:flux_shield"
+								tag: { }
+							}
+						]
 					}
 				}
 				title: "Superior Shields"

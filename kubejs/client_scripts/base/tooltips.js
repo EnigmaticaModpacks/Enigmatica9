@@ -513,6 +513,10 @@ ItemEvents.tooltip((event) => {
         {
             items: ['starbunclemania:star_bin'],
             text: [Text.of(`Starbuncle Equipment: Voids Items`).green()]
+        },
+        {
+            items: ['superiorshields:flux_shield'],
+            text: [Text.of(`Accepts Integral Components.`).green()]
         }
     ];
 
