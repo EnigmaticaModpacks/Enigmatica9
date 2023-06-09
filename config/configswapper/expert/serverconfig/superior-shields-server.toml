@@ -60,7 +60,7 @@
 	#Shields made from materials present in Ars Nouveau
 	[ars_nouveau.enchanter_shield]
 		#The amount of health the shield has. One point is half a shield icon (same as hearts.)
-		capacity = 15
+		capacity = 14
 		#The amount of ticks between each attempt to recharge the shield bar.
 		recharge_rate = 10
 		#The amount of ticks without taking damage before the shield begins to recharge.
