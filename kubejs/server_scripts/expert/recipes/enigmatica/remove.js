@@ -66,6 +66,8 @@ ServerEvents.recipes((event) => {
         { id: 'ae2:transform/entangled_singularity_from_pearl' },
         { id: 'ae2:misc/fluixpearl' },
 
+        { id: 'apotheosis:sigil_of_socketing' },
+
         { id: 'ars_elemental:flight_alt' },
 
         { id: 'ars_nouveau:sunrise_2' },

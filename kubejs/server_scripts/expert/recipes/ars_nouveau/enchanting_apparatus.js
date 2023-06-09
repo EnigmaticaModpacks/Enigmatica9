@@ -890,6 +890,22 @@ ServerEvents.recipes((event) => {
             sourceCost: 1000,
             keepNbtOfReagent: true,
             id: `${id_prefix}enchanter_shield`
+        },
+        {
+            output: 'apotheosis:sigil_of_socketing',
+            inputs: [
+                'apotheosis:gem_dust',
+                '#forge:ingots/energized_steel',
+                'apotheosis:gem_dust',
+                'apotheosis:gem_dust',
+                'apotheosis:gem_dust',
+                '#forge:ingots/energized_steel',
+                'apotheosis:gem_dust',
+                'apotheosis:gem_dust'
+            ],
+            reagents: ['occultism:otherstone_tablet'],
+            sourceCost: 10000,
+            id: `${id_prefix}sigil_of_socketing`
         }
     ];
 
