@@ -1060,7 +1060,7 @@ const entries = {
             key: 'item.mekanism.alloy_reinforced',
             value: {
                 normal: 'Reinforced Alloy',
-                expert: 'Interludinum'
+                expert: 'Infused Dragon Scale'
             }
         },
         {
