@@ -148,7 +148,7 @@ const entries = {
         {
             key: 'block.create.mechanical_crafter',
             value: {
-                normal: 'Mechancical Crafter',
+                normal: 'Mechanical Crafter',
                 expert: 'Enchanted Crafter'
             }
         },
@@ -1054,6 +1054,13 @@ const entries = {
             value: {
                 normal: 'Polonium',
                 expert: 'Mote of Pandemonium'
+            }
+        },
+        {
+            key: 'item.mekanism.alloy_reinforced',
+            value: {
+                normal: 'Reinforced Alloy',
+                expert: 'Interludinum'
             }
         },
         {

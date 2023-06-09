@@ -4,18 +4,22 @@ ServerEvents.recipes((event) => {
     }
     const id_prefix = 'enigmatica:expert/thermal/crystallizer/';
 
-    const recipes = [
-        {
+    const recipes = [];
+
+    const metal_shards = ['iron', 'aluminum', 'tin', 'iesnium', 'silver', 'gold', 'copper', 'nickel', 'osmium', 'lead'];
+
+    metal_shards.forEach((metal) => {
+        recipes.push({
             ingredients: [
-                { fluid: 'minecraft:water', amount: 500 },
-                { tag: 'mekanism:shards/iron', count: 3 },
-                { item: 'ae2:charged_certus_quartz_crystal' }
+                { fluid: 'hexerei:quicksilver_fluid', amount: 10 },
+                { tag: `mekanism:shards/${metal}` },
+                { tag: `forge:dusts/dimensional` }
             ],
-            result: [{ item: 'emendatusenigmatica:iron_crystal', count: 1 }],
-            energy: 20000,
-            id: `${id_prefix}iron_crystal_from_iron_dirty_dust`
-        }
-    ];
+            result: [{ item: `emendatusenigmatica:${metal}_crystal`, count: 3 }],
+            energy: 4000,
+            id: `${id_prefix}${metal}_crystal`
+        });
+    });
 
     recipes.forEach((recipe) => {
         recipe.type = 'thermal:crystallizer';

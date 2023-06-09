@@ -5,7 +5,7 @@
 	group: "0856CF7F5CBEB20A"
 	icon: "minecraft:chest"
 	id: "583482A1C530FE26"
-	order_index: 5
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
@@ -31,16 +31,22 @@
 			}]
 			shape: "gear"
 			tasks: [{
-				id: "0000000000000400"
+				id: "7215FE5828A30793"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "enigmatica:containers/basic"
+					}
+				}
 				title: "Storage"
-				type: "checkmark"
+				type: "item"
 			}]
 			title: "Storage"
 			x: -0.5d
 			y: -7.5d
 		}
 		{
-			dependencies: ["0000000000000400"]
 			description: [
 				"Extra-large storage in the same space as a chest. Sophisticated Storage adds advanced Chests, Barrels, and Shulker Boxes in with multiple tiers of capacity. They even accept various upgrades to add additional functionality."
 				""
@@ -90,7 +96,6 @@
 			y: -10.0d
 		}
 		{
-			dependencies: ["0000000000000400"]
 			description: ["Forgot where you left your precious diorite? Mouse over some in your inventory or JEI and press Y to locate it in nearby inventories. "]
 			icon: "naturesaura:range_visualizer"
 			id: "000000000000040B"
@@ -111,7 +116,6 @@
 			y: -6.5d
 		}
 		{
-			dependencies: ["0000000000000400"]
 			description: [
 				"Looking for a handy place to store your hammer at the forge? Tired of rummaging through chest after chest for that gear press? Place them in world instead!"
 				""
@@ -241,7 +245,6 @@
 			y: -12.0d
 		}
 		{
-			dependencies: ["0000000000000400"]
 			description: [
 				"Looking for a place to store those ten thousand Iron Ingots? Look no further. Functional Drawers has drawers that hold a very large quantity of a given item. They offer a number of useful upgrades as well to assist in both Storage and Automation endeavors. "
 				""
@@ -373,7 +376,6 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["0000000000000400"]
 			description: [
 				"Sophisticated backpacks is the backpack mod you never knew you were missing. "
 				""
@@ -504,7 +506,6 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["0000000000000400"]
 			description: [
 				"The Personal Shrinking Device can shrink one right out of sight and into the nooks and crannies of special machines. "
 				""
@@ -738,7 +739,6 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["0000000000000400"]
 			description: [
 				"Got more gadgets and gizmos than one cavern can hold? More whozits and whatzits than you know what to do with? Then its time to shove it in another dimension and hire someone to sort it for you. Just read the fine print of any contracts you sign."
 				""
@@ -972,7 +972,6 @@
 			y: -6.5d
 		}
 		{
-			dependencies: ["0000000000000400"]
 			description: [
 				"Far more than a simple storage solution, Applied Energetics 2 offers a full range of automation and cross dimensional transport capabilities. "
 				""

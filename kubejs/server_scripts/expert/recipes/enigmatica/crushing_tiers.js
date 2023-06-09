@@ -37,7 +37,7 @@ ServerEvents.recipes((event) => {
             outputs.secondary = AlmostUnified.getPreferredItemForTag(`forge:gems/${secondary}`).getId();
             outputs.secondary_amount = 2;
         } else {
-            outputs.secondary = AlmostUnified.getPreferredItemForTag(`forge:raw_materials/${secondary}`).getId();
+            outputs.secondary = AlmostUnified.getPreferredItemForTag(`create:crushed_ores/${secondary}`).getId();
         }
 
         recipes.push({

@@ -9,11 +9,13 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["0E45018D600614BA"]
 			description: [
 				"Explorers beware, for terrors await in many seemingly abandoned structures throughout the lands. "
 				""
 				"Treasure awaits the brave; death awaits the weak. "
 			]
+			hide: true
 			id: "0000000000000C85"
 			rewards: [{
 				id: "0000000000000C9C"
@@ -32,11 +34,13 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["0E45018D600614BA"]
 			description: [
 				"Like what you see? Oh, the Biomes You’ll go adds a plethora of beautiful new biomes to spruce up your world. "
 				""
 				"Take a stroll, look around, see what you like. Maybe you’ll find a new place to call home? "
 			]
+			hide: true
 			id: "0000000000000C89"
 			rewards: [{
 				id: "0000000000000C9F"
@@ -55,11 +59,13 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["0E45018D600614BA"]
 			description: [
 				"Trouble finding your way? Need to find a new desert for some good old-fashioned sand gathering? Maybe a new place to call home, instead?"
 				""
 				"Craft a Nature’s Compass to help locate rare or unusual biomes. "
 			]
+			hide: true
 			id: "0000000000000C97"
 			rewards: [{
 				id: "0000000000000C9E"
@@ -80,11 +86,13 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["0E45018D600614BA"]
 			description: [
 				"Travel to a world swathed in shadow, where frightful beasts call home. Fortune favors the bold! "
 				""
 				"To form the portal, make a 2x2 pool of water surrounded by grass. Place flowers on the grass blocks and toss a diamond into the water."
 			]
+			hide: true
 			id: "33D933483F33A53D"
 			rewards: [{
 				id: "4288D2D3D0113D87"
@@ -102,7 +110,9 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["0E45018D600614BA"]
 			description: ["The world of bees is vaster than one might imagine. Throw an Ender Pearl into a hive to see just what’s waiting on the other side. "]
+			hide: true
 			id: "03AC8543D6A41D0D"
 			rewards: [{
 				id: "15B4A2F8F0D5B1B5"

@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
         {
             input: '#forge:dusts/niter',
             output: 'emendatusenigmatica:niter_gem',
-            id: `${id_prefix}niter_shard_from_dust`
+            id: `${id_prefix}niter_gem_from_dust`
         },
         {
             input: '#forge:dusts/therium',
@@ -21,6 +21,21 @@ ServerEvents.recipes((event) => {
             input: '#forge:dusts/subzero',
             output: 'byg:subzero_crystal_shard',
             id: `${id_prefix}subzero_shard_from_dust`
+        },
+        {
+            input: '#forge:dusts/apatite',
+            output: 'emendatusenigmatica:apatite_gem',
+            id: `${id_prefix}apatite_gem_from_dust`
+        },
+        {
+            input: '#forge:dusts/sulfur',
+            output: 'emendatusenigmatica:sulfur_gem',
+            id: `${id_prefix}sulfur_gem_from_dust`
+        },
+        {
+            input: '#forge:dusts/cinnabar',
+            output: 'emendatusenigmatica:cinnabar_gem',
+            id: `${id_prefix}cinnabar_gem_from_dust`
         }
     ];
 

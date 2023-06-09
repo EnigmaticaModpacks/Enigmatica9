@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'quark:rainbow_rune',
                 B: 'pneumaticcraft:logistics_core',
-                C: '#forge:plastic'
+                C: '#pneumaticcraft:plastic_sheets'
             },
             id: 'modularrouters:blank_module'
         },
@@ -20,16 +20,16 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'quark:rainbow_rune',
                 B: 'pneumaticcraft:logistics_core',
-                C: '#forge:plastic'
+                C: '#pneumaticcraft:plastic_sheets'
             },
             id: 'modularrouters:blank_upgrade'
         },
         {
             output: 'modularrouters:modular_router',
-            pattern: ['AAA', 'BCB', 'AAA'],
+            pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: 'naturesaura:infused_stone',
-                B: '#forge:ingots/infused_iron',
+                B: '#forge:plates/signalum',
                 C: 'modularrouters:blank_module'
             },
             id: 'modularrouters:modular_router'

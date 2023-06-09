@@ -155,12 +155,24 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'create:mechanical_drill',
-            pattern: ['BA'],
+            pattern: ['  A', ' C ', 'B  '],
             key: {
                 A: 'immersiveengineering:drillhead_steel',
-                B: 'create:andesite_casing'
+                B: 'create:andesite_casing',
+                C: '#forge:gears/compressed_iron'
             },
             id: `create:crafting/kinetics/mechanical_drill`
+        },
+        {
+            output: 'create:mechanical_harvester',
+            pattern: [' AB', 'ACA', 'BAD'],
+            key: {
+                A: '#forge:plates/steel',
+                B: '#forge:gears/compressed_iron',
+                C: '#forge:rods/steel',
+                D: 'create:andesite_casing'
+            },
+            id: `create:crafting/kinetics/mechanical_harvester`
         },
         {
             output: 'create:mechanical_saw',

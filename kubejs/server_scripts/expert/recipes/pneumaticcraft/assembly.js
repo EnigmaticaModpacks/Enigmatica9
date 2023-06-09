@@ -4,7 +4,18 @@ ServerEvents.recipes((event) => {
     }
     const id_prefix = 'enigmatica:expert/pneumaticcraft/assembly_laser/';
 
-    const recipes = [];
+    const recipes = [
+        {
+            output: `powah:lens_of_ender`,
+            input: {
+                tag: `forge:pellets/polonium`,
+                type: 'pneumaticcraft:stacked_item',
+                count: 9
+            },
+            program: 'drill',
+            id: `${id_prefix}lens_of_ender`
+        }
+    ];
 
     colors.forEach((color) => {
         recipes.push({

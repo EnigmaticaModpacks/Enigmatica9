@@ -33,7 +33,6 @@ StartupEvents.registry('item', (event) => {
     ];
 
     const ritualDummies = [
-        'ritual_summon_death_tome',
         'ritual_teleport_nether',
         'ritual_teleport_overworld',
         'ritual_teleport_end',
@@ -47,6 +46,10 @@ StartupEvents.registry('item', (event) => {
         'ritual_summon_bookwyrm',
         'ritual_summon_starbuncle',
         'ritual_summon_starbuncle_from_shards',
+        'ritual_summon_drygmy',
+        'ritual_summon_drygmy_from_shards',
+        'ritual_summon_whirlisprig',
+        'ritual_summon_whirlisprig_from_shards',
         'ritual_summon_crow',
         'ritual_summon_bound_blaze',
         'ritual_summon_bound_blitz',
@@ -71,7 +74,6 @@ StartupEvents.registry('item', (event) => {
     const reusableItemTextures = [
         { name: 'altered_recipe_indicator', texture: 'enigmatica_tree' },
         { name: 'disabled_recipe_indicator', texture: 'enigmatica_tree' },
-        { name: 'summon_death_tome', texture: 'ritual_dummy' },
         { name: 'teleport_overworld', texture: 'ritual_dummy' },
         { name: 'teleport_end', texture: 'ritual_dummy' },
         { name: 'teleport_nether', texture: 'ritual_dummy' },

@@ -32,11 +32,19 @@ ServerEvents.recipes((event) => {
         },
         {
             itemOutput: { item: 'minecraft:nether_star' },
-            fluidInput: { amount: 1000, tag: 'forge:ether_gas' },
+            fluidInput: { amount: 1000, tag: 'forge:blighted_ichor' },
             gasInput: { amount: 100, gas: 'starbunclemania:source_gas' },
             itemInput: { ingredient: { item: 'mekanism:substrate' } },
             duration: 100,
             id: `${id_prefix}nether_star`
+        },
+        {
+            itemOutput: { item: 'emendatusenigmatica:enderium_ingot' },
+            fluidInput: { amount: 250, tag: 'forge:ender' },
+            gasInput: { amount: 50, gas: 'mekanism:oxygen' },
+            itemInput: { ingredient: { tag: 'mekanism:alloys/reinforced' } },
+            duration: 100,
+            id: `${id_prefix}enderium`
         }
     ];
 

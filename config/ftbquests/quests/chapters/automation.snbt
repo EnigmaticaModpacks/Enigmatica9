@@ -5,7 +5,7 @@
 	group: "0856CF7F5CBEB20A"
 	icon: "minecraft:hopper"
 	id: "00000000000002AB"
-	order_index: 4
+	order_index: 5
 	quest_links: [
 		{
 			id: "5523D55508151A28"

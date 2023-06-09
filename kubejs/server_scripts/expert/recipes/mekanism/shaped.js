@@ -157,7 +157,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: '#forge:gears/steel',
                 B: '#forge:essences/manipulation',
-                C: '#forge:plastic',
+                C: '#pneumaticcraft:plastic_sheets',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: '#forge:plates/obsidian',
                 F: '#forge:essences/abjuration'
@@ -354,6 +354,46 @@ ServerEvents.recipes((event) => {
                 F: 'create:sequenced_gearshift'
             },
             id: 'mekanism:modification_station'
+        },
+        {
+            output: 'mekanism:module_color_modulation_unit',
+            pattern: ['ABA', 'CED', 'GFG'],
+            key: {
+                A: '#forge:gems/source',
+                B: 'quark:green_rune',
+                C: 'quark:red_rune',
+                D: 'quark:blue_rune',
+                E: 'modularrouters:augment_core',
+                F: 'pneumaticcraft:printed_circuit_board',
+                G: '#forge:gears/osmium'
+            },
+            id: 'mekanism:module_color_modulation_unit'
+        },
+        {
+            output: 'mekanism:chemical_injection_chamber',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:plates/obsidian',
+                B: 'pneumaticcraft:reinforced_chest',
+                C: 'immersiveengineering:insulating_glass',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:gears/compressed_iron',
+                F: 'mekanism:basic_chemical_tank'
+            },
+            id: 'mekanism:chemical_injection_chamber'
+        },
+        {
+            output: 'mekanism:chemical_dissolution_chamber',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#pneumaticcraft:plastic_sheets',
+                B: 'pneumaticcraft:reinforced_chest',
+                C: 'mekanism:basic_chemical_tank',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: '#forge:gears/diamond',
+                F: '#forge:essences/manipulation'
+            },
+            id: 'mekanism:chemical_dissolution_chamber'
         }
     ];
 

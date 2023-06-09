@@ -71,7 +71,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'compactmachines:wall',
                 B: 'supplementaries:crystal_display',
-                C: '#forge:plastic',
+                C: '#pneumaticcraft:plastic_sheets',
                 D: 'ae2:fluix_pearl'
             },
             id: `${id_prefix}personal_shrinking_device`

@@ -463,7 +463,7 @@ ServerEvents.recipes((event) => {
                 '#forge:gems/infused_diamond',
                 '#forge:rods/osmium',
                 'powah:capacitor_spirited',
-                '#forge:plastic',
+                '#pneumaticcraft:plastic_sheets',
                 'ars_nouveau:glyph_break',
                 'immersiveengineering:component_electronic',
                 'powah:capacitor_spirited',
@@ -606,13 +606,13 @@ ServerEvents.recipes((event) => {
         {
             output: 'ae2:quantum_link',
             inputs: [
-                'ae2:quartz_glass',
+                'thermal:signalum_glass',
                 'ae2:fluix_pearl',
-                'ae2:quartz_glass',
+                'thermal:signalum_glass',
                 'ae2:fluix_pearl',
-                'ae2:quartz_glass',
+                'thermal:signalum_glass',
                 'ae2:fluix_pearl',
-                'ae2:quartz_glass',
+                'thermal:signalum_glass',
                 'ae2:fluix_pearl'
             ],
             reagents: ['occultism:dimensional_matrix'],
@@ -866,6 +866,30 @@ ServerEvents.recipes((event) => {
             reagents: ['occultism:soul_gem'],
             sourceCost: 1000,
             id: `${id_prefix}spawner_core_shell`
+        },
+        {
+            output: 'superiorshields:flux_shield',
+            inputs: [
+                'ars_elemental:glyph_bubble_shield',
+                '#forge:gems/source',
+                'powah:capacitor_niotic',
+                '#forge:gems/source',
+                'ars_nouveau:glyph_self',
+                '#forge:gems/source',
+                'powah:capacitor_niotic',
+                '#forge:gems/source'
+            ],
+            reagents: [
+                'superiorshields:knightmetal_shield',
+                'superiorshields:steeleaf_shield',
+                'superiorshields:ironwood_shield',
+                'superiorshields:constantan_shield',
+                'superiorshields:electrum_shield',
+                'superiorshields:bronze_shield'
+            ],
+            sourceCost: 1000,
+            keepNbtOfReagent: true,
+            id: `${id_prefix}flux_shield`
         }
     ];
 

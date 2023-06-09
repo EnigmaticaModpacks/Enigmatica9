@@ -276,7 +276,7 @@
 		energyModifier = 1.0
 		#A modifier to apply to the time of every bottling machine recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 0.25
 
 	[machines.mixer]
 		#A modifier to apply to the energy costs of every mixer recipe
@@ -284,7 +284,7 @@
 		energyModifier = 1.0
 		#A modifier to apply to the time of every mixer recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 0.25
 
 	[machines.sawmill]
 		#A modifier to apply to the energy costs of every sawmill recipe

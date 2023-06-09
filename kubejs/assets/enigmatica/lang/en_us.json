@@ -10,6 +10,7 @@
     "effect.sushigocrafting.acquired_taste.description": "Eating while this effect is active will give extra food.",
     "effect.sushigocrafting.small_bites.description": "Eating while this effect is active will give a small chance to not consume the item.",
     "effect.sushigocrafting.steady_hands.description": "Using a cutting board while this effect is active will give extra weights in your ingredients.",
+
     "effect.ars_nouveau.recovery.description": "Increases healing received from other sources.",
     "effect.ars_nouveau.blasting.description": "Causes the target to explode violently when the effect ends.",
     "effect.ars_nouveau.shielding.description": "Decreases damage from all sources.",
@@ -25,9 +26,14 @@
     "effect.ars_nouveau.snared.description": "Prevents movement.",
     "effect.ars_nouveau.spell_damage.description": "Increases damage caused by Ars Nouveau's Spells.",
     "effect.ars_nouveau.summoning_sickness.description": "Prevents summoning creatures.",
+
     "effect.naturesaura.breathless.description": "Gradually asphyxiates the target.",
+
     "effect.apotheosis.bleeding.description": "Lose health over time.",
     "effect.apotheosis.knowledge.description": "Increases Experience gained.",
+    "effect.apotheosis.vitality.description": "Increases healing received by 20% per level.",
+    "effect.apotheosis.grievous.description": "Reduces healing received by 40% per level. At level III or higher, all healing is prevented.",
+
     "effect.occultism.third_eye.description": "Grants the ability to see Otherstone and Otherworld Trees in their true form, allowing them to be harvested.",
     "effect.occultism.dragon_greed.description": "The Dragon familiar provides increased experience gain to their master",
     "effect.occultism.mummy_dodge.description": "The Mummy familiar is a martial arts expert and fights to protect their master.",

@@ -41,6 +41,13 @@ ServerEvents.recipes((event) => {
             input: '#forge:rods/basalz',
             energy: 500,
             id: `${id_prefix}basalz_powder`
+        },
+        {
+            output: 'create:powdered_obsidian',
+            secondaries: [{ output: { item: 'minecraft:obsidian', count: 1 }, chance: 0.75 }],
+            input: 'minecraft:obsidian',
+            energy: 2000,
+            id: `${id_prefix}powdered_obsidian`
         }
     ];
 

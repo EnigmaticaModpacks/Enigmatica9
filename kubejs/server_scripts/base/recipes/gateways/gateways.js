@@ -338,6 +338,15 @@ ServerEvents.highPriorityData((event) => {
     // Refer to constants/gateways_wave_modifiers for the standardized mob buffs at each wave.
     let generic_gateways = [
         {
+            type: 'death_tome_gate',
+            color: '#fcd703',
+            entries: {
+                common: { entity: 'twilightforest:death_tome', nbt: '{}' },
+                uncommon: { entity: 'twilightforest:death_tome', nbt: '{}' },
+                rare: { entity: 'twilightforest:death_tome', nbt: '{}' }
+            }
+        },
+        {
             type: 'ghast_gate',
             color: '#F0F0F0',
             entries: {
@@ -501,7 +510,7 @@ ServerEvents.highPriorityData((event) => {
 
             // Large
             if (size == 'large') {
-                loot_multiplier = 4;
+                loot_multiplier = 3;
                 completion_xp = completion_xp * 5;
                 spawn_range = spawn_range + 4;
                 primary_reward = { type: 'apotheosis:affix', rarity: 'rare' };
@@ -527,9 +536,9 @@ ServerEvents.highPriorityData((event) => {
             };
 
             let extra_rewards = {
-                common: 15 * loot_multiplier,
-                uncommon: 10 * loot_multiplier,
-                rare: 5 * loot_multiplier
+                common: 1.5 * loot_multiplier,
+                uncommon: 1.8 * loot_multiplier,
+                rare: 2.1 * loot_multiplier
             };
             // Rewards for completion of the entire gateway. Each wave also has rewards.
             let rarities = Object.keys(gateway.entries);
@@ -559,7 +568,7 @@ ServerEvents.highPriorityData((event) => {
                     }
                 });
 
-                let loot_per_mob = 2 * loot_multiplier;
+                let loot_per_mob = 1;
                 recipe.waves.push(
                     generateGatewayWave(mob_list, loot_per_mob, wave.modifier, max_wave_time, setup_time)
                 );

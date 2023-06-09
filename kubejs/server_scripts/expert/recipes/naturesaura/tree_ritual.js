@@ -325,6 +325,71 @@ ServerEvents.recipes((event) => {
             time: 120,
             sapling: 'ars_nouveau:purple_archwood_sapling',
             id: `${id_prefix}primed_aetheric_heart`
+        },
+        {
+            output: 'occultism:storage_stabilizer_tier1',
+            ingredients: [
+                'occultism:stable_wormhole',
+                'kubejs:dimensional_storage_crystal',
+                'ae2:fluix_pearl',
+                'ae2:fluix_pearl',
+                '#forge:ingots/copper',
+                '#forge:ingots/copper',
+                '#forge:ingots/copper',
+                '#forge:ingots/copper'
+            ],
+            time: 5,
+            sapling: 'ars_nouveau:purple_archwood_sapling',
+            id: `${id_prefix}storage_stabilizer_tier1`
+        },
+        {
+            output: 'occultism:storage_stabilizer_tier2',
+            ingredients: [
+                'occultism:storage_stabilizer_tier1',
+                'ae2:spatial_cell_component_2',
+                'ae2:singularity',
+                'ae2:singularity',
+                '#forge:ingots/aluminum',
+                '#forge:ingots/aluminum',
+                '#forge:ingots/aluminum',
+                '#forge:ingots/aluminum'
+            ],
+            time: 5,
+            sapling: 'ars_nouveau:purple_archwood_sapling',
+            id: `${id_prefix}storage_stabilizer_tier2`
+        },
+        {
+            output: 'occultism:storage_stabilizer_tier3',
+            ingredients: [
+                'occultism:storage_stabilizer_tier2',
+                'ae2:spatial_cell_component_16',
+                'ae2:singularity',
+                'ae2:singularity',
+                '#forge:ingots/lumium',
+                '#forge:ingots/lumium',
+                '#forge:ingots/lumium',
+                '#forge:ingots/lumium'
+            ],
+            time: 5,
+            sapling: 'ars_nouveau:purple_archwood_sapling',
+            id: `${id_prefix}storage_stabilizer_tier3`
+        },
+        {
+            output: 'occultism:storage_stabilizer_tier4',
+            ingredients: [
+                'occultism:storage_stabilizer_tier3',
+                'ae2:spatial_cell_component_128',
+                'ae2:singularity',
+                'ae2:singularity',
+
+                '#forge:ingots/iesnium',
+                '#forge:ingots/iesnium',
+                '#forge:ingots/iesnium',
+                '#forge:ingots/iesnium'
+            ],
+            time: 5,
+            sapling: 'ars_nouveau:purple_archwood_sapling',
+            id: `${id_prefix}storage_stabilizer_tier4`
         }
 
         /*

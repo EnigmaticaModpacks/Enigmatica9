@@ -49,6 +49,24 @@ ServerEvents.recipes((event) => {
             outputs: [{ item: 'mekanism:bio_fuel', chance: 1.2 }],
             energy: 4000,
             id: `${id_prefix}crops`
+        },
+        {
+            input: 'minecraft:obsidian',
+            outputs: [
+                { item: 'create:powdered_obsidian', count: 1 },
+                { item: 'minecraft:obsidian', chance: 0.15 }
+            ],
+            energy: 4000,
+            id: `${id_prefix}powdered_obsidian`
+        },
+        {
+            input: 'minecraft:moss_block',
+            outputs: [
+                { item: 'quark:moss_paste', count: 2 },
+                { item: 'quark:moss_paste', chance: 0.1 }
+            ],
+            energy: 500,
+            id: `${id_prefix}moss_paste`
         }
     ];
 

@@ -39,6 +39,10 @@ ItemEvents.tooltip((event) => {
         {
             items: ['kubejs:dream_stone'],
             text: [Text.of('It hums quietly when held.').gold()]
+        },
+        {
+            items: ['spirit:soul_cage'],
+            text: [Text.of('Consumes Aura for each mob spawned.').red()]
         }
     ];
 

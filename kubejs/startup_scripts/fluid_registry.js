@@ -4,22 +4,40 @@ StartupEvents.registry('fluid', (event) => {
         {
             type: 'thin',
             id: 'abyssal_seawater',
-            texture: 0x0b1c38,
+            color: 0x0b1c38,
             display: 'Abyssal Seawater'
         },
         {
             type: 'thin',
             id: 'magicite',
-            texture: 0x05f549,
+            color: 0xb8f5ce,
             display: 'Magicite'
+        },
+        {
+            type: 'thick',
+            id: 'mendosteen_mash',
+            color: 0x389425,
+            display: 'Mendosteen Mash'
+        },
+        {
+            type: 'thin',
+            id: 'ambrosia',
+            color: 0xf0ddbb,
+            display: 'Ambrosia'
+        },
+        {
+            type: 'thin',
+            id: 'blighted_ichor',
+            color: 0x702a6e,
+            display: 'Blighted Ichor'
         }
     ];
 
     fluids.forEach((fluid) => {
         if (fluid.type == 'thick') {
-            event.create(fluid.id).thickTexture(fluid.texture).bucketColor(fluid.texture).displayName(fluid.display);
+            event.create(fluid.id).thickTexture(fluid.color).bucketColor(fluid.color).displayName(fluid.display);
         } else if (fluid.type == 'thin') {
-            event.create(fluid.id).thinTexture(fluid.texture).bucketColor(fluid.texture).displayName(fluid.display);
+            event.create(fluid.id).thinTexture(fluid.color).bucketColor(fluid.color).displayName(fluid.display);
         }
     });
 });

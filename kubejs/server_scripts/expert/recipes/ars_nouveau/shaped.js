@@ -116,6 +116,37 @@ ServerEvents.recipes((event) => {
                 D: '#forge:fabrics/infused'
             },
             id: `${id_prefix}dominion_wand`
+        },
+        {
+            output: 'ars_nouveau:ritual_brazier',
+            pattern: ['ABA', 'ACA'],
+            key: {
+                A: '#forge:nuggets/electrum',
+                B: 'occultism:sacrificial_bowl',
+                C: 'ars_nouveau:blue_archwood_wood'
+            },
+            id: `ars_nouveau:ritual_brazier`
+        },
+        {
+            output: 'ars_nouveau:arcane_pedestal',
+            pattern: ['ABA', 'ACA'],
+            key: {
+                A: '#forge:nuggets/electrum',
+                B: 'occultism:sacrificial_bowl',
+                C: 'ars_nouveau:purple_archwood_wood'
+            },
+            id: `ars_nouveau:arcane_pedestal`
+        },
+        {
+            output: 'ars_nouveau:basic_spell_turret',
+            pattern: [' A ', 'BCB', 'ADA'],
+            key: {
+                A: '#forge:nuggets/electrum',
+                B: '#forge:wires/electrum',
+                C: '#forge:storage_blocks/source',
+                D: '#forge:essences/air'
+            },
+            id: `ars_nouveau:basic_spell_turret`
         }
     ];
 

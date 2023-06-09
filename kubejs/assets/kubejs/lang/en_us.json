@@ -15,10 +15,6 @@
     "entity.minecraft.villager.byg.forager": "Forager",
     "tooltip.hexerei.sage_seeds": "May be purchased from the Market block.",
 
-    "recipes.lychee.item_inside.sunstone.condition.description": "Converts around Noon. Reverts if left out too long...",
-    "recipes.lychee.item_inside.moonstone.condition.description": "Converts around Midnight. Reverts if left out too long...",
-    "recipes.lychee.item_inside.filter_filling.condition.description": "Place a Filter in an Ocean Biome under Y63 and above Y0. The Filter must have Water blocks at each of the cardinal direction and will fill slowly over time.",
-
     "ritual.occultism.sacrifice.ravens": "Raven",
     "ritual.occultism.sacrifice.fire_elementals": "Blaze",
     "ritual.occultism.sacrifice.air_elementals": "Blitz",
@@ -188,6 +184,20 @@
     "ritual.enigmatica.occultism/ritual/ritual_summon_starbuncle_from_shards.finished": "Ritual of Calling completed.",
     "ritual.enigmatica.occultism/ritual/ritual_summon_starbuncle_from_shards.interrupted": "Ritual of Calling interrupted.",
     "ritual.enigmatica.occultism/ritual/ritual_summon_starbuncle_from_shards.conditions": "Not all requirements for this ritual are met.",
+
+    "item.kubejs.ritual_summon_drygmy_from_shards": "Ritual: Summon Drygmy",
+    "item.kubejs.ritual_summon_drygmy_from_shards.tooltip": "Summon a Drygmy",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_drygmy_from_shards.started": "Ritual of Calling started.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_drygmy_from_shards.finished": "Ritual of Calling completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_drygmy_from_shards.interrupted": "Ritual of Calling interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_drygmy_from_shards.conditions": "Not all requirements for this ritual are met.",
+
+    "item.kubejs.ritual_summon_whirlisprig_from_shards": "Ritual: Summon Whirlisprig",
+    "item.kubejs.ritual_summon_whirlisprig_from_shards.tooltip": "Summon a Whirlisprig",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_whirlisprig_from_shards.started": "Ritual of Calling started.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_whirlisprig_from_shards.finished": "Ritual of Calling completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_whirlisprig_from_shards.interrupted": "Ritual of Calling interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_whirlisprig_from_shards.conditions": "Not all requirements for this ritual are met.",
 
     "item.kubejs.ritual_craft_willow_broom": "Ritual: Craft Willow Broom",
     "item.kubejs.ritual_craft_willow_broom.tooltip": "Bind a fae into a broom to obtain the power of flight.",
@@ -504,6 +514,22 @@
     "ritual.enigmatica.occultism/ritual/blitz_gate_large.finished": "Large Air Elemental Gateway Opened",
     "ritual.enigmatica.occultism/ritual/blitz_gate_large.interrupted": "Large Air Elemental Gateway Interrupted",
     "ritual.enigmatica.occultism/ritual/blitz_gate_large.conditions": "Not all requirements for this ritual are met.",
+
+    "gateways.death_tome_gate": "Death Tome Gate",
+    "gateways.death_tome_gate_small": "Small Death Tome Gate",
+    "gateways.death_tome_gate_large": "Large Death Tome Gate",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate_small.started": "Started Opening Small Death Tome Gateway",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate_small.finished": "Small Death Tome Gateway Opened",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate_small.interrupted": "Small Death Tome Gateway Interrupted",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate_small.conditions": "Not all requirements for this ritual are met.",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate.started": "Started Opening Death Tome Gateway",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate.finished": "Death Tome Gateway Opened",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate.interrupted": "Death Tome Gateway Interrupted",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate.conditions": "Not all requirements for this ritual are met.",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate_large.started": "Started Opening Large Death Tome Gateway",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate_large.finished": "Large Death Tome Gateway Opened",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate_large.interrupted": "Large Death Tome Gateway Interrupted",
+    "ritual.enigmatica.occultism/ritual/death_tome_gate_large.conditions": "Not all requirements for this ritual are met.",
 
     "gateways.spawner_rift": "Spawner Rift",
 

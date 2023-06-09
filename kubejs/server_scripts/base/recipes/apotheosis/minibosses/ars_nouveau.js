@@ -27,6 +27,41 @@ ServerEvents.highPriorityData((event) => {
                 effects: [],
                 attribute_modifiers: []
             }
+        },
+        {
+            id: 'weald_walker',
+            name: null,
+            chance: 1.0,
+            weight: 100,
+            quality: 0,
+            entities: [
+                'ars_nouveau:vexing_weald_walker',
+                'ars_nouveau:flourishing_weald_walker',
+                'ars_nouveau:blazing_weald_walker',
+                'ars_nouveau:cascading_weald_walker',
+                'ars_elemental:flashing_weald_walker'
+            ],
+            valid_gear_sets: ['#miniboss/weald_walker'],
+            dimensions: [],
+            affixed: false,
+            nbt: {},
+            stats: {
+                enchant_chance: 0.0,
+                enchantment_levels: [20, 20, 20, 20],
+                effects: [],
+                attribute_modifiers: [
+                    {
+                        attribute: 'minecraft:generic.max_health',
+                        operation: 'ADDITION',
+                        value: { min: 140, steps: 1, step: 0 }
+                    },
+                    {
+                        attribute: 'minecraft:generic.knockback_resistance',
+                        operation: 'ADDITION',
+                        value: 0.4
+                    }
+                ]
+            }
         }
     ];
 

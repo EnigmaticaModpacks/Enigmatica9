@@ -5,7 +5,7 @@
 	group: "0856CF7F5CBEB20A"
 	icon: "minecraft:scaffolding"
 	id: "0000000000000096"
-	order_index: 1
+	order_index: 2
 	quest_links: [
 		{
 			id: "1AF381BF18122BDE"

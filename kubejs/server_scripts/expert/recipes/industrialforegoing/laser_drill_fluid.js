@@ -37,7 +37,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}magicite`
         },
         {
-            output: '{Amount:500,FluidName:"industrialforegoing:ether_gas"}',
+            output: '{Amount:500,FluidName:"kubejs:blighted_ichor"}',
             catalyst: { tag: 'industrialforegoing:laser_lens/purple' },
             entity: 'minecraft:wither',
             pointer: 0,
@@ -50,7 +50,23 @@ ServerEvents.recipes((event) => {
                     whitelist: {}
                 }
             ],
-            id: `industrialforegoing:laser_drill_fluid/ether_gas`
+            id: `${id_prefix}blighted_ichor`
+        },
+        {
+            output: '{Amount:50,FluidName:"thermal:ender"}',
+            catalyst: { tag: 'industrialforegoing:laser_lens/ender' },
+            entity: 'minecraft:empty',
+            pointer: 0,
+            rarity: [
+                {
+                    depth_max: 256,
+                    depth_min: -64,
+                    weight: 8,
+                    blacklist: {},
+                    whitelist: { type: 'minecraft:worldgen/biome', values: biomes.in_the_end }
+                }
+            ],
+            id: `industrialforegoing:laser_drill_fluid/ender`
         }
     ];
 

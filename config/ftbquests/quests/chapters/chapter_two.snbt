@@ -249,23 +249,59 @@
 				"7563E41DBF4FD286"
 				"7465284C82512CF1"
 			]
+			icon: "industrialforegoing:ore_laser_base"
 			id: "17F735810850C368"
-			tasks: [{
-				id: "5F0411E4A7C69564"
-				item: "industrialforegoing:ore_laser_base"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5F0411E4A7C69564"
+					item: "industrialforegoing:ore_laser_base"
+					type: "item"
+				}
+				{
+					id: "32B92D89B9839804"
+					item: {
+						Count: 1b
+						id: "thermal:basalz_spawn_egg"
+						tag: {
+							display: {
+								Lore: ["{\"translate\":\"item.kubejs.ritual_summon_bound_basalz.tooltip\"}"]
+								Name: "{\"translate\":\"item.kubejs.ritual_summon_bound_basalz\"}"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 2.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["7465284C82512CF1"]
+			icon: "industrialforegoing:fluid_laser_base"
 			id: "5503E132D9D02EF8"
-			tasks: [{
-				id: "6FE9FBFD8C2D21EA"
-				item: "industrialforegoing:fluid_laser_base"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6FE9FBFD8C2D21EA"
+					item: "industrialforegoing:fluid_laser_base"
+					type: "item"
+				}
+				{
+					id: "7EBDABC9F8231A41"
+					item: {
+						Count: 1b
+						id: "thermal:blizz_spawn_egg"
+						tag: {
+							display: {
+								Lore: ["{\"translate\":\"item.kubejs.ritual_summon_bound_blizz.tooltip\"}"]
+								Name: "{\"translate\":\"item.kubejs.ritual_summon_bound_blizz\"}"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: 6.5d
 		}
@@ -664,7 +700,7 @@
 				""
 				"================================================="
 				""
-				"In order to travel to the Bumblezone, place a Teleporter directly beneath a Beehive, then throw an Ender Pearl at the Beehive."
+				"In order to travel to the Bumblezone, a Teleporter must be placed directly beneath a Beehive and then an Ender Pearl thrown at the Beehive."
 			]
 			hide_dependency_lines: true
 			icon: "minecraft:beehive"
@@ -739,7 +775,7 @@
 				}
 				{
 					id: "48FE87B0C247EE47"
-					item: "kubejs:ritual_tree_of_life_2"
+					item: "kubejs:tree_of_life_2"
 					optional_task: true
 					type: "item"
 				}
@@ -759,7 +795,7 @@
 					dimension: "minecraft:overworld"
 					icon: "supplementaries:globe"
 					id: "38380859B691C3D0"
-					title: "The Overworld"
+					title: "Visit The Overworld"
 					type: "dimension"
 				}
 				{
@@ -786,12 +822,52 @@
 				}
 				{
 					id: "77937A9F77A075BC"
-					item: "kubejs:ritual_summon_bound_blizz"
+					item: {
+						Count: 1b
+						id: "thermal:blizz_spawn_egg"
+						tag: {
+							display: {
+								Lore: ["{\"translate\":\"item.kubejs.ritual_summon_bound_blizz.tooltip\"}"]
+								Name: "{\"translate\":\"item.kubejs.ritual_summon_bound_blizz\"}"
+							}
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]
 			x: 6.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["00B21E64DEFACB40"]
+			description: ["Known for their strength and endurance, Basalz will work tirelessly to power Create machinery if properly motived. "]
+			icon: "createaddition:electric_motor"
+			id: "1FDD6F9166A33F8D"
+			tasks: [
+				{
+					id: "04B03547884EC0AA"
+					item: "createaddition:electric_motor"
+					type: "item"
+				}
+				{
+					id: "3484734D8BB146ED"
+					item: {
+						Count: 1b
+						id: "thermal:basalz_spawn_egg"
+						tag: {
+							display: {
+								Lore: ["{\"translate\":\"item.kubejs.ritual_summon_bound_basalz.tooltip\"}"]
+								Name: "{\"translate\":\"item.kubejs.ritual_summon_bound_basalz\"}"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.0d
 		}
 	]
 	title: "Chapter Two"

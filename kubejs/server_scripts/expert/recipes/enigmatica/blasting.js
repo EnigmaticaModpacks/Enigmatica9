@@ -12,6 +12,13 @@ ServerEvents.recipes((event) => {
             id_suffix: `ironwood_ingot`
         },
         {
+            output: `emendatusenigmatica:aluminum_ingot`,
+            input: `#mekanism:dirty_dusts/aluminum`,
+            slag: 'thermal:slag',
+            xp: 0.5,
+            id_suffix: `aluminum_ingot_from_dirty_dust`
+        },
+        {
             output: `emendatusenigmatica:nickel_ingot`,
             input: `#mekanism:dirty_dusts/nickel`,
             slag: 'thermal:rich_slag',
@@ -87,6 +94,19 @@ ServerEvents.recipes((event) => {
                 id_suffix: `${metal}_ingot_from_dust`
             });
         }
+    });
+
+    const metal_shards = ['aluminum', 'tin', 'iesnium', 'silver', 'gold', 'copper', 'nickel', 'osmium', 'lead'];
+
+    metal_shards.forEach((metal) => {
+        let preferredIngot = AlmostUnified.getPreferredItemForTag(`forge:ingots/${metal}`).getId();
+        recipes.push({
+            output: preferredIngot,
+            input: `#mekanism:crystals/${metal}`,
+            slag: 'thermal:slag',
+            xp: 0.5,
+            id_suffix: `${metal}_ingot_from_crystals`
+        });
     });
 
     recipes.forEach((recipe) => {

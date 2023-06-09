@@ -245,6 +245,7 @@ jei.normal.gases.hidden = [];
 // Expert
 jei.expert.items.disabled = [
     /computercraft/,
+    /rftoolsbuilder/,
 
     'ae2:charger',
     'ae2:vibration_chamber',
@@ -317,27 +318,12 @@ jei.expert.items.disabled = [
     'immersiveengineering:cloche',
 
     /industrialforegoing:.*black_hole/,
+    /industrialforegoing:conveyor/,
+    /industrialforegoing:mycelial/,
     'industrialforegoing:machine_frame_pity',
     'industrialforegoing:biofuel_generator',
     'industrialforegoing:fermentation_station',
     'industrialforegoing:fluid_sieving_machine',
-    'industrialforegoing:mycelial_crimed',
-    'industrialforegoing:mycelial_culinary',
-    'industrialforegoing:mycelial_death',
-    'industrialforegoing:mycelial_disenchantment',
-    'industrialforegoing:mycelial_ender',
-    'industrialforegoing:mycelial_explosive',
-    'industrialforegoing:mycelial_frosty',
-    'industrialforegoing:mycelial_furnace',
-    'industrialforegoing:mycelial_halitosis',
-    'industrialforegoing:mycelial_magma',
-    'industrialforegoing:mycelial_meatallurgic',
-    'industrialforegoing:mycelial_netherstar',
-    'industrialforegoing:mycelial_pink',
-    'industrialforegoing:mycelial_potion',
-    'industrialforegoing:mycelial_reactor',
-    'industrialforegoing:mycelial_rocket',
-    'industrialforegoing:mycelial_slimey',
     'industrialforegoing:pitiful_generator',
     'industrialforegoing:washing_factory',
     `industrialforegoing:tinydryrubber`,
@@ -363,6 +349,7 @@ jei.expert.items.disabled = [
     'industrialforegoing:spores_recreator',
     'industrialforegoing:mob_slaughter_factory',
     'industrialforegoing:resourceful_furnace',
+    'industrialforegoing:plastic',
 
     'littlelogistics:steam_locomotive',
     'littlelogistics:tug',
@@ -419,6 +406,10 @@ jei.expert.items.disabled = [
     /mekanism:scuba/,
     'mekanism:oredictionificator',
     'mekanism:crusher',
+    'mekanism:fluidic_plenisher',
+    'mekanism:combiner',
+    'mekanism:chemical_washer',
+    'mekanism:electric_pump',
     'mekanism:digital_miner',
     'mekanism:dimensional_stabilizer',
     'mekanism:electrolytic_separator',
@@ -444,6 +435,9 @@ jei.expert.items.disabled = [
     'mekanism:module_dosimeter_unit',
     'mekanism:module_inhalation_purification_unit',
     'mekanism:electrolytic_core',
+    'mekanism:pigment_extracting',
+    'mekanism:pigment_mixing',
+    'mekanism:painting',
 
     'mekanismgenerators:gas_burning_generator',
     'mekanismgenerators:advanced_solar_generator',
@@ -498,6 +492,13 @@ jei.expert.items.disabled = [
     'naturesaura:rf_converter',
 
     /occultism:chalk_.*_impure/,
+    'occultism:ritual_dummy/summon_wild_otherworld_bird',
+    'occultism:miner_foliot_unspecialized',
+    'occultism:miner_djinni_ores',
+    'occultism:miner_afrit_deeps',
+    'occultism:miner_marid_master',
+    'occultism:dimensional_mineshaft',
+
     'pneumaticcraft:air_compressor',
     'pneumaticcraft:electrostatic_compressor',
     'pneumaticcraft:advanced_air_compressor',
@@ -522,6 +523,8 @@ jei.expert.items.disabled = [
     'pneumaticcraft:solar_wafer',
     'pneumaticcraft:empty_spawner',
     'pneumaticcraft:spawner_extractor',
+    'pneumaticcraft:capacitor',
+    'pneumaticcraft:transistor',
 
     /powah:(thermo_generator|solar_panel|furnator|magmator|reactor|energy|battery|ender)/,
     /powah:(energizing_rod_|player_transmitter_|capacitor_)(blazing|hardened)/,
@@ -529,6 +532,16 @@ jei.expert.items.disabled = [
     'powah:ender_core',
     'powah:player_aerial_pearl',
     'powah:aerial_pearl',
+
+    'rftoolsbase:manual',
+    'rftoolsbase:machine_base',
+    'rftoolsbase:machine_frame',
+    'rftoolsbase:smartwrench_select',
+    'rftoolsbase:smartwrench',
+    'rftoolsbase:tablet',
+    'rftoolsbase:machine_infuser',
+    'rftoolsbase:information_screen',
+    'rftoolsbase:crafting_card',
 
     'sophisticatedbackpacks:battery_upgrade',
 
@@ -569,6 +582,7 @@ jei.expert.items.disabled = [
     'thermal:rf_potato',
     'thermal:energy_limiter_attachment',
     'thermal:energy_duct',
+    'thermal:machine_insolator',
 
     'twilightforest:candelabra',
     'twilightforest:keepsake_casket',
@@ -684,6 +698,8 @@ jei.expert.recipes.hidden = [
         recipes_by_id: [
             'ars_nouveau:wixie_charm',
             'ars_nouveau:starbuncle_charm',
+            'ars_nouveau:drygmy_charm',
+            'ars_nouveau:whirlisprig_charm',
             'ars_nouveau:magebloom_crop',
             'ars_nouveau:void_jar',
             'ars_nouveau:jar_of_light',

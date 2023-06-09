@@ -44,11 +44,11 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}steeleaf_ingot`
         },
         {
-            output: 'rftoolsbase:dimensionalshard',
-            input: 'ae2:charged_certus_quartz_crystal',
+            output: '9x rftoolsbase:dimensionalshard',
+            input: 'the_bumblezone:glistering_honey_crystal',
             catalyst: 'naturesaura:conversion_catalyst',
-            aura: 3000,
-            time: 10,
+            aura: 90000,
+            time: 300,
             id: `${id_prefix}dimensionalshard`
         },
         {

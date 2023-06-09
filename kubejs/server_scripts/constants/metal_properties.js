@@ -49,6 +49,7 @@ const metal_properties = {
         crushing_tier: 3,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'tin' },
+            expert_output: { secondary: 'copper' },
             create: { processingTime: 400 },
             occultism: { oreWeight: 210 }
         }
@@ -87,6 +88,7 @@ const metal_properties = {
         crushing_tier: 2,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'iron' },
+            expert_output: { secondary: 'iron' },
             create: { processingTime: 350 },
             occultism: { oreWeight: 232 }
         }
@@ -96,6 +98,7 @@ const metal_properties = {
         crushing_tier: 3,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'iron' },
+            expert_output: { secondary: 'copper' },
             create: { processingTime: 300 },
             occultism: { oreWeight: 430 }
         }
@@ -129,6 +132,7 @@ const metal_properties = {
         crushing_tier: 4,
         oreProcessing: {
             output: { substrate: 'occultism:burnt_otherstone', secondary: 'silver' },
+            expert_output: { secondary: 'silver' },
             create: { processingTime: 500 }
         }
     },
@@ -138,11 +142,11 @@ const metal_properties = {
     },
     signalum: {
         meltingPoint: 1272,
-        crushing_tier: 4
+        crushing_tier: 1
     },
     lumium: {
         meltingPoint: 1354,
-        crushing_tier: 4
+        crushing_tier: 1
     },
     infused_iron: {
         meltingPoint: 850

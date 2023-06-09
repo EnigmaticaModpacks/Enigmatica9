@@ -1,0 +1,143 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "adventure_expert"
+	group: "0856CF7F5CBEB20A"
+	icon: "minecraft:recovery_compass"
+	id: "156D069818843235"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"Explorers beware, for terrors await in many seemingly abandoned structures throughout the lands. "
+				""
+				"Treasure awaits the brave; death awaits the weak. "
+			]
+			hide: true
+			id: "47AE76E02C85889D"
+			rewards: [{
+				id: "487FC72668032818"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Hack 'n Slash"
+			tasks: [{
+				icon: "kubejs:scavengers_delight"
+				id: "78721C9F7AAB1EB7"
+				title: "Dungeoneering"
+				type: "checkmark"
+			}]
+			title: "Dungeoneering"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"Like what you see? Oh, the Biomes You’ll go adds a plethora of beautiful new biomes to spruce up your world. "
+				""
+				"Take a stroll, look around, see what you like. Maybe you’ll find a new place to call home? "
+			]
+			hide: true
+			id: "7F5FA709506E3B64"
+			rewards: [{
+				id: "5DA1C4C66DAC08B5"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "It's opener out there, in the wide open air."
+			tasks: [{
+				icon: "byg:pink_cherry_sapling"
+				id: "0DB34AAC146D5382"
+				title: "Oh, The Biomes You'll Go"
+				type: "checkmark"
+			}]
+			title: "Oh, The Biomes You'll Go"
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"Trouble finding your way? Need to find a new desert for some good old-fashioned sand gathering? Maybe a new place to call home, instead?"
+				""
+				"Craft a Nature’s Compass to help locate rare or unusual biomes. "
+			]
+			hide: true
+			id: "5CB7CB9124468371"
+			rewards: [{
+				id: "57CD9762F229EE5D"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "We're not lost, we're right here on this very spot."
+			tasks: [{
+				id: "27C01B99748ABC70"
+				item: {
+					Count: 1b
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: ["Enigmatica 9 Expert begins in the Twilight Forest. Face dangerous foes to restore the Tree of Life and branch out to explore new worlds. "]
+			hide: true
+			id: "273A8476E713635C"
+			rewards: [{
+				id: "7C1548324A304CEB"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "twilightforest:root"
+				criterion: ""
+				id: "56814ABCF9C95DAF"
+				title: "Twilight Forest"
+				type: "advancement"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"The world of bees is vaster than one might imagine. "
+				""
+				"Place a Teleporter beneath a hive, then throw an Ender Pearl into the hive to see just what’s waiting on the other side."
+			]
+			hide: true
+			icon: "the_bumblezone:beehive_beeswax"
+			id: "1A8E11E6902EF950"
+			rewards: [{
+				id: "64AB9C8C216812FC"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_bumblezone/teleportation/teleport_to_bumblezone_pearl"
+					criterion: ""
+					icon: "the_bumblezone:beehive_beeswax"
+					id: "4601E6FFAE3DF988"
+					type: "advancement"
+				}
+				{
+					id: "4478F355EBF30E9F"
+					item: "mekanism:teleporter"
+					type: "item"
+				}
+			]
+			title: "The Bumblezone"
+			x: 1.0d
+			y: 2.5d
+		}
+	]
+	title: "Adventure"
+}

@@ -3,7 +3,7 @@
 auraConversion = 40.0
 #Conversion multiplier from Source to Power
 #Range: 4.9E-324 ~ 1.7976931348623157E308
-sourceConversion = 200.0
+sourceConversion = 250.0
 
 ["Dim type"]
 	#Power Buffer size  of the Dim type
@@ -20,7 +20,7 @@ sourceConversion = 200.0
 	tickinterval = 80
 	#Amount of Source to convert per Operation with the Dim type
 	#Range: > 0
-	amountperoperation = 50
+	amountperoperation = 40
 	#Amount of Aura to drain/provide when theDim type operates
 	#Range: > 0
 	change = 750
@@ -40,7 +40,7 @@ sourceConversion = 200.0
 	tickinterval = 40
 	#Amount of Source to convert per Operation with the Bright type
 	#Range: > 0
-	amountperoperation = 50
+	amountperoperation = 40
 	#Amount of Aura to drain/provide when theBright type operates
 	#Range: > 0
 	change = 3750
@@ -60,7 +60,7 @@ sourceConversion = 200.0
 	tickinterval = 20
 	#Amount of Source to convert per Operation with the Iridescent type
 	#Range: > 0
-	amountperoperation = 50
+	amountperoperation = 40
 	#Amount of Aura to drain/provide when theIridescent type operates
 	#Range: > 0
 	change = 7750

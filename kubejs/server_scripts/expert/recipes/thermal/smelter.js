@@ -55,6 +55,21 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}constantan_ingot`
         },
         {
+            inputs: ['4x #forge:dusts/aluminum', '#forge:essences/manipulation'],
+            outputs: [Item.of('emendatusenigmatica:signalum_ingot', 4), 'thermal:slag'],
+            energy: 2400,
+            id: `${id_prefix}signalum_ingot`
+        },
+        {
+            inputs: [
+                '4x #forge:dusts/constantan',
+                Ingredient.of(['minecraft:glow_berries', 'twilightforest:torchberries'])
+            ],
+            outputs: [Item.of('emendatusenigmatica:lumium_ingot', 4), 'thermal:slag'],
+            energy: 2400,
+            id: `${id_prefix}lumium_ingot`
+        },
+        {
             inputs: ['modularrouters:augment_core', '2x #forge:essences/water', '#forge:gems/source'],
             outputs: ['thermal:machine_efficiency_augment'],
             energy: 10000,

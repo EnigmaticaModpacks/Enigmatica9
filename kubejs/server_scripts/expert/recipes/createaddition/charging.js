@@ -46,6 +46,12 @@ ServerEvents.recipes((event) => {
             result: { item: 'naturesaura:infused_stone' },
             energy: 5000,
             id: `${id_prefix}infused_stone`
+        },
+        {
+            input: { item: 'minecraft:clay' },
+            result: { item: 'kubejs:kaolin_clay', count: 4 },
+            energy: 100,
+            id: `${id_prefix}kaolin_clay`
         }
     ];
 

@@ -5,23 +5,6 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/lychee/lightning_channeling/';
     const recipes = [
         {
-            item_in: [{ tag: 'mekanism:dirty_dusts/iron' }],
-            post: [{ type: 'drop_item', item: 'emendatusenigmatica:iron_shard', count: 6 }],
-            id: `${id_prefix}shard_iron`
-        },
-        {
-            item_in: [{ item: 'ae2:certus_quartz_crystal' }],
-            post: [
-                {
-                    type: 'drop_item',
-                    item: 'ae2:charged_certus_quartz_crystal',
-                    count: 1,
-                    contextual: { type: 'chance', chance: 0.5 }
-                }
-            ],
-            id: `${id_prefix}charged_certus_quartz_crystal`
-        },
-        {
             item_in: [
                 { tag: 'forge:gems/source' },
                 { item: 'minecraft:chiseled_stone_bricks' },
@@ -69,6 +52,46 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}star_balloon`
         }
     ];
+
+    const metal_dirty_dusts = [
+        'iron',
+        'aluminum',
+        'tin',
+        'iesnium',
+        'silver',
+        'gold',
+        'copper',
+        'nickel',
+        'osmium',
+        'lead'
+    ];
+
+    metal_dirty_dusts.forEach((metal) => {
+        recipes.push({
+            item_in: [{ tag: `mekanism:dirty_dusts/${metal}` }],
+            post: [
+                {
+                    type: 'drop_item',
+                    item: `emendatusenigmatica:${metal}_shard`,
+                    count: 1,
+                    contextual: { type: 'chance', chance: 0.33 }
+                },
+                {
+                    type: 'drop_item',
+                    item: `emendatusenigmatica:${metal}_shard`,
+                    count: 1,
+                    contextual: { type: 'chance', chance: 0.33 }
+                },
+                {
+                    type: 'drop_item',
+                    item: `emendatusenigmatica:${metal}_shard`,
+                    count: 1,
+                    contextual: { type: 'chance', chance: 0.33 }
+                }
+            ],
+            id: `${id_prefix}shard_${metal}`
+        });
+    });
 
     recipes.forEach((recipe) => {
         recipe.type = 'lychee:lightning_channeling';

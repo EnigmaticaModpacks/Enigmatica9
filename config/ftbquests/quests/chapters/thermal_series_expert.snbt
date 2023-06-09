@@ -129,7 +129,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["6DDBC0C21F8B534B"]
@@ -239,42 +239,6 @@
 			}]
 			x: 1.0d
 			y: 4.0d
-		}
-		{
-			dependencies: ["3C0866A9BBD5EBD9"]
-			description: [
-				"Nature does an excellent job of growing plants. It's been at it for a while, after all. But when space is at a premium a Phytogenic Insolator is an excellent alternative to the natural approach. "
-				""
-				"Water and energy are required. Fertilizer is recommended, though optional. "
-			]
-			hide_dependency_lines: true
-			id: "0EB84260B0C05F1B"
-			rewards: [
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
-					icon: "kubejs:epic_lootbox"
-					id: "70690D2CD7B19451"
-					player_command: false
-					title: "Epic Thermal Series Loot Box"
-					type: "command"
-				}
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-					icon: "kubejs:farmers_delight"
-					id: "3F171CFC5D4251F1"
-					player_command: false
-					title: "Farmer's Delight"
-					type: "command"
-				}
-			]
-			subtitle: "Between the Wasteland and Sky..."
-			tasks: [{
-				id: "6B261C00F570E522"
-				item: "thermal:machine_insolator"
-				type: "item"
-			}]
-			x: 5.5d
-			y: 9.0d
 		}
 		{
 			dependencies: ["6DDBC0C21F8B534B"]
@@ -571,8 +535,8 @@
 				item: "thermal:machine_centrifuge"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 7.5d
+			x: 5.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["3C0866A9BBD5EBD9"]

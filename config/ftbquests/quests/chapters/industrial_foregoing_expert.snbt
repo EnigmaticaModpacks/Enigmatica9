@@ -248,45 +248,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["095AF2AD5F182DE8"]
-			description: [
-				"Conveyor belts move entities atop them whether that’s a mob or an item that has been dropped on it. Several types of upgrades are available such as for extracting or inserting into inventories or teleporting things short distances."
-				""
-				"Sneaking while standing on them will prevent the player from being carried along. "
-			]
-			hide_dependency_lines: true
-			icon: "industrialforegoing:conveyor"
-			id: "67BD266EDAFAEBCF"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
-				icon: "kubejs:rare_lootbox"
-				id: "36718B612ECC3B3B"
-				player_command: false
-				title: "Rare Industrial Foregoing Loot Box"
-				type: "command"
-			}]
-			subtitle: "Crossover"
-			tasks: [
-				{
-					id: "4B35CC4DD39D238A"
-					item: "industrialforegoing:conveyor"
-					type: "item"
-				}
-				{
-					id: "08E4BBA11D588867"
-					item: "industrialforegoing:conveyor_insertion_upgrade"
-					type: "item"
-				}
-				{
-					id: "4C3D68A3A878C6F9"
-					item: "industrialforegoing:conveyor_extraction_upgrade"
-					type: "item"
-				}
-			]
-			x: 2.0d
-			y: -1.0d
-		}
-		{
 			dependencies: ["3A4F484FD23B29BA"]
 			description: [
 				"A more powerful trident capable of damaging many mobs wherever it lands. It has built in Loyalty, Riptide, and Channelling enchantments that may be toggled as desired. "
@@ -669,7 +630,7 @@
 				type: "item"
 			}]
 			title: "Transporters"
-			x: 1.0d
+			x: 1.5d
 			y: -1.0d
 		}
 		{
