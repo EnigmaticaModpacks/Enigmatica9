@@ -62,9 +62,9 @@
 		#The amount of health the shield has. One point is half a shield icon (same as hearts.)
 		capacity = 15
 		#The amount of ticks between each attempt to recharge the shield bar.
-		recharge_rate = 20
+		recharge_rate = 10
 		#The amount of ticks without taking damage before the shield begins to recharge.
-		recharge_delay = 20
+		recharge_delay = 60
 
 [twilight_forest]
 
