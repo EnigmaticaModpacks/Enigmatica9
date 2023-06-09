@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
             pattern: ['  A', 'BCB', 'BBB'],
             key: {
                 A: '#forge:bones',
-                B: 'minecraft:andesite',
+                B: ['minecraft:andesite', 'twilightforest:nagastone'],
                 C: 'twilightforest:liveroot'
             },
             id: `${id_prefix}pestle_and_mortar`

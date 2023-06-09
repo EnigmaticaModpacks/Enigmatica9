@@ -17,8 +17,8 @@ ServerEvents.recipes((event) => {
             output: 'minecraft:furnace',
             pattern: ['AAA', 'A A', 'BBB'],
             key: {
-                A: 'minecraft:andesite',
-                B: 'minecraft:polished_andesite'
+                A: ['minecraft:andesite', 'twilightforest:nagastone'],
+                B: ['minecraft:polished_andesite', 'twilightforest:nagastone_head']
             },
             id: `${id_prefix}furnace`
         },
@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
             output: 'minecraft:blast_furnace',
             pattern: ['AAA', 'ACA', 'BDB'],
             key: {
-                A: 'minecraft:andesite',
+                A: ['minecraft:andesite', 'twilightforest:nagastone'],
                 B: 'minecraft:smooth_stone',
                 C: 'minecraft:furnace',
                 D: 'minecraft:bricks'
