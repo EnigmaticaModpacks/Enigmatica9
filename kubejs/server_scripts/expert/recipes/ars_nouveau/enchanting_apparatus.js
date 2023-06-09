@@ -779,16 +779,20 @@ ServerEvents.recipes((event) => {
             output: 'minecraft:heart_of_the_sea',
             inputs: [
                 'ars_elemental:water_focus',
-                '#forge:essences/water',
-                '#forge:essences/water',
-                '#forge:essences/water',
+                'kubejs:shard_of_enduring',
+                'kubejs:shard_of_enduring',
+                'kubejs:shard_of_enduring',
+                'kubejs:shard_of_enduring',
+                'kubejs:shard_of_enduring',
                 Item.of(
                     'pneumaticcraft:spawner_core',
                     '{"pneumaticcraft:SpawnerCoreStats":{"thermal:blizz":100}}'
                 ).weakNBT(),
-                '#forge:essences/water',
-                '#forge:essences/water',
-                '#forge:essences/water'
+                'kubejs:shard_of_enduring',
+                'kubejs:shard_of_enduring',
+                'kubejs:shard_of_enduring',
+                'kubejs:shard_of_enduring',
+                'kubejs:shard_of_enduring'
             ],
             reagents: ['kubejs:primed_aetheric_heart'],
             sourceCost: 1000,
@@ -798,16 +802,20 @@ ServerEvents.recipes((event) => {
             output: 'kubejs:heart_of_the_mountain',
             inputs: [
                 'ars_elemental:earth_focus',
-                '#forge:essences/earth',
-                '#forge:essences/earth',
-                '#forge:essences/earth',
+                'kubejs:shard_of_renewal',
+                'kubejs:shard_of_renewal',
+                'kubejs:shard_of_renewal',
+                'kubejs:shard_of_renewal',
+                'kubejs:shard_of_renewal',
                 Item.of(
                     'pneumaticcraft:spawner_core',
                     '{"pneumaticcraft:SpawnerCoreStats":{"thermal:basalz":100}}'
                 ).weakNBT(),
-                '#forge:essences/earth',
-                '#forge:essences/earth',
-                '#forge:essences/earth'
+                'kubejs:shard_of_renewal',
+                'kubejs:shard_of_renewal',
+                'kubejs:shard_of_renewal',
+                'kubejs:shard_of_renewal',
+                'kubejs:shard_of_renewal'
             ],
             reagents: ['kubejs:primed_aetheric_heart'],
             sourceCost: 1000,
@@ -817,16 +825,20 @@ ServerEvents.recipes((event) => {
             output: 'kubejs:heart_of_the_inferno',
             inputs: [
                 'ars_elemental:fire_focus',
-                '#forge:essences/fire',
-                '#forge:essences/fire',
-                '#forge:essences/fire',
+                'kubejs:shard_of_rebirth',
+                'kubejs:shard_of_rebirth',
+                'kubejs:shard_of_rebirth',
+                'kubejs:shard_of_rebirth',
+                'kubejs:shard_of_rebirth',
                 Item.of(
                     'pneumaticcraft:spawner_core',
                     '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:blaze":100}}'
                 ).weakNBT(),
-                '#forge:essences/fire',
-                '#forge:essences/fire',
-                '#forge:essences/fire'
+                'kubejs:shard_of_rebirth',
+                'kubejs:shard_of_rebirth',
+                'kubejs:shard_of_rebirth',
+                'kubejs:shard_of_rebirth',
+                'kubejs:shard_of_rebirth'
             ],
             reagents: ['kubejs:primed_aetheric_heart'],
             sourceCost: 1000,
@@ -836,16 +848,20 @@ ServerEvents.recipes((event) => {
             output: 'kubejs:heart_of_the_tempest',
             inputs: [
                 'ars_elemental:air_focus',
-                '#forge:essences/air',
-                '#forge:essences/air',
-                '#forge:essences/air',
+                'kubejs:shard_of_wisdom',
+                'kubejs:shard_of_wisdom',
+                'kubejs:shard_of_wisdom',
+                'kubejs:shard_of_wisdom',
+                'kubejs:shard_of_wisdom',
                 Item.of(
                     'pneumaticcraft:spawner_core',
                     '{"pneumaticcraft:SpawnerCoreStats":{"thermal:blitz":100}}'
                 ).weakNBT(),
-                '#forge:essences/air',
-                '#forge:essences/air',
-                '#forge:essences/air'
+                'kubejs:shard_of_wisdom',
+                'kubejs:shard_of_wisdom',
+                'kubejs:shard_of_wisdom',
+                'kubejs:shard_of_wisdom',
+                'kubejs:shard_of_wisdom'
             ],
             reagents: ['kubejs:primed_aetheric_heart'],
             sourceCost: 1000,
@@ -868,16 +884,16 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}spawner_core_shell`
         },
         {
-            output: 'superiorshields:flux_shield',
+            output: 'superiorshields:enchanter_shield',
             inputs: [
                 'ars_elemental:glyph_bubble_shield',
+                '#forge:ingots/energized_steel',
                 '#forge:gems/source',
-                'powah:capacitor_niotic',
-                '#forge:gems/source',
+                '#forge:ingots/energized_steel',
                 'ars_nouveau:glyph_self',
+                '#forge:ingots/energized_steel',
                 '#forge:gems/source',
-                'powah:capacitor_niotic',
-                '#forge:gems/source'
+                '#forge:ingots/energized_steel'
             ],
             reagents: [
                 'superiorshields:knightmetal_shield',
@@ -889,7 +905,47 @@ ServerEvents.recipes((event) => {
             ],
             sourceCost: 1000,
             keepNbtOfReagent: true,
-            id: `${id_prefix}flux_shield`
+            id: `${id_prefix}enchanter_shield`
+        },
+        {
+            output: 'apotheosis:sigil_of_socketing',
+            inputs: [
+                'apotheosis:gem_dust',
+                '#forge:ingots/energized_steel',
+                'apotheosis:gem_dust',
+                'apotheosis:gem_dust',
+                'apotheosis:gem_dust',
+                '#forge:ingots/energized_steel',
+                'apotheosis:gem_dust',
+                'apotheosis:gem_dust'
+            ],
+            reagents: ['occultism:otherstone_tablet'],
+            sourceCost: 10000,
+            id: `${id_prefix}sigil_of_socketing`
+        },
+        {
+            output: 'powah:lens_of_ender',
+            inputs: [
+                '#industrialforegoing:laser_lens/purple',
+                '#forge:pellets/polonium',
+                '#forge:pellets/polonium',
+                '#forge:pellets/polonium',
+                '#forge:essences/conjuration',
+                '#forge:pellets/polonium',
+                '#forge:pellets/polonium',
+                '#forge:pellets/polonium'
+            ],
+            reagents: [
+                Item.of('ars_nouveau:mob_jar', {
+                    BlockEntityTag: {
+                        entityTag: { id: 'minecraft:ender_dragon' },
+                        id: 'ars_nouveau:mob_jar'
+                    },
+                    entityId: 'minecraft:ender_dragon'
+                }).weakNBT()
+            ],
+            sourceCost: 10000,
+            id: `${id_prefix}lens_of_ender`
         }
     ];
 

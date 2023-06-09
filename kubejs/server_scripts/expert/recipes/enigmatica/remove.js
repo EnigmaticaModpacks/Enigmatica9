@@ -66,6 +66,8 @@ ServerEvents.recipes((event) => {
         { id: 'ae2:transform/entangled_singularity_from_pearl' },
         { id: 'ae2:misc/fluixpearl' },
 
+        { id: 'apotheosis:sigil_of_socketing' },
+
         { id: 'ars_elemental:flight_alt' },
 
         { id: 'ars_nouveau:sunrise_2' },
@@ -124,6 +126,7 @@ ServerEvents.recipes((event) => {
         { id: /hexerei:.*_broom_from_mixing_cauldron/ },
         { id: /hexerei:.*_brush_from_mixing_cauldron/ },
         { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
+        { id: 'hexerei:warhammer_from_mixing_cauldron' },
         { id: 'hexerei:blood_sigil_from_mixing_cauldron' },
         { id: 'hexerei:herb_jar_from_mixing_cauldron' },
         { id: 'hexerei:mixing_cauldron' },
@@ -178,6 +181,7 @@ ServerEvents.recipes((event) => {
         { id: /industrialforegoing:.*black_hole/ },
         { id: /industrialforegoing:dissolution_chamber\/range_addon/ },
         { id: /industrialforegoing:dissolution_chamber\/laser_lens/ },
+        { id: /industrialforegoing:dissolution_chamber\/infinity/ },
         { id: /industrialforegoing:conveyor/ },
         { id: 'industrialforegoing:dissolution_chamber/infinity_launcher' },
         { id: 'industrialforegoing:dissolution_chamber/infinity_backpack' },
@@ -227,6 +231,9 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:chemical_tank/ },
         { id: /mekanism:factory\// },
         { id: /mekanism:tier_installer/ },
+        { id: /mekanism:thermal_evaporation/ },
+        { id: /mekanism:control_circuit/ },
+        { id: /mekanism:upgrade\// },
         { id: 'mekanism:crushing/charcoal_dust' },
         { id: 'mekanism:compat/ae2/fluix_crystal_to_dust' },
         { id: 'mekanism:compat/ae2/certus_crystal_to_dust' },

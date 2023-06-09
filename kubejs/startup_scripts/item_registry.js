@@ -29,7 +29,15 @@ StartupEvents.registry('item', (event) => {
         'dim_arcanite_crystal',
         'bright_arcanite_crystal',
         'iridescent_arcanite_crystal',
-        'sylvanite'
+        'sylvanite',
+        'mote_of_renewal',
+        'mote_of_enduring',
+        'mote_of_rebirth',
+        'mote_of_wisdom',
+        'shard_of_renewal',
+        'shard_of_enduring',
+        'shard_of_rebirth',
+        'shard_of_wisdom'
     ];
 
     const ritualDummies = [

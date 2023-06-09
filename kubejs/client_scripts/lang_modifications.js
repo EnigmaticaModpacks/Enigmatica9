@@ -1060,7 +1060,7 @@ const entries = {
             key: 'item.mekanism.alloy_reinforced',
             value: {
                 normal: 'Reinforced Alloy',
-                expert: 'Interludinum'
+                expert: 'Infused Dragon Scale'
             }
         },
         {
@@ -1174,4 +1174,12 @@ Object.keys(entries).forEach((mod) => {
     });
 
     JsonIO.write(lang_file, lang_json);
+});
+
+// Temp Fix for issue with KubeJS not respecting expected order for lang entries
+ClientEvents.highPriorityAssets((event) => {
+    const langFile = JsonIO.read('kubejs/assets/kubejs/lang/en_us.json');
+    langFile.forEach((key, value) => {
+        event.addLang(key, value);
+    });
 });

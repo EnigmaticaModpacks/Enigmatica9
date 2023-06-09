@@ -159,6 +159,14 @@ ServerEvents.recipes((event) => {
             ],
             heatRequirement: 'superheated',
             id: `${id_prefix}lithium_iesnium`
+        },
+        {
+            ingredients: [
+                Item.of('minecraft:lingering_potion', { Potion: 'minecraft:strong_regeneration' }).weakNBT().toJson()
+            ],
+            results: [{ item: 'kubejs:mote_of_rebirth', count: 3 }],
+            heatRequirement: 'superheated',
+            id: `${id_prefix}mote_of_rebirth`
         }
     ];
 

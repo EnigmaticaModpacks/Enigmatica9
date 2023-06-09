@@ -829,6 +829,23 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 250,
             moonRequirement: 'full_moon',
             id: `${id_prefix}moon_dust`
+        },
+        {
+            output: 'hexerei:warhammer',
+            inputs: [
+                'simplytools:golden_hammer',
+                '#forge:dusts/moon_dust',
+                '#forge:storage_blocks/fiery',
+                'hexerei:mahogany_planks',
+                'hexerei:mahogany_planks',
+                'hexerei:mahogany_planks',
+                '#forge:storage_blocks/fiery',
+                '#forge:dusts/moon_dust'
+            ],
+            liquid: { fluid: 'minecraft:lava' },
+            liquidOutput: { fluid: 'minecraft:lava' },
+            fluidLevelsConsumed: 2000,
+            id: `${id_prefix}warhammer`
         }
     ];
 

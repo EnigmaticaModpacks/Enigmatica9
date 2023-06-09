@@ -544,6 +544,86 @@ ServerEvents.recipes((event) => {
             ],
             pressure: 2.0,
             id: `${id_prefix}star_bucket`
+        },
+        {
+            results: [{ item: 'kubejs:mote_of_enduring', count: 3 }],
+            inputs: [Item.of('minecraft:lingering_potion', '{Potion:"quark:strong_resilience"}').weakNBT().toJson()],
+            pressure: 4.9,
+            id: `${id_prefix}mote_of_enduring`
+        },
+        {
+            results: [{ item: 'kubejs:shard_of_renewal', count: 1 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_renewal', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:storage_blocks/steeleaf', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_renewal', count: 64 },
+
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:dusts/prismarine', count: 64 },
+                { item: 'naturesaura:ancient_sapling' },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:dusts/prismarine', count: 64 },
+
+                { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_renewal', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:gems/prismarine', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_renewal', count: 64 }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}shard_of_renewal`
+        },
+        {
+            results: [{ item: 'kubejs:shard_of_enduring', count: 1 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_enduring', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:storage_blocks/steel', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_enduring', count: 64 },
+
+                { type: 'pneumaticcraft:stacked_item', item: 'thermal:phytogro', count: 64 },
+                { tag: 'forge:buckets/royal_jelly' },
+                { type: 'pneumaticcraft:stacked_item', item: 'thermal:phytogro', count: 64 },
+
+                { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_enduring', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'minecraft:golden_apple', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_enduring', count: 64 }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}shard_of_enduring`
+        },
+        {
+            results: [{ item: 'kubejs:shard_of_rebirth', count: 1 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_rebirth', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:storage_blocks/soul_steel', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_rebirth', count: 64 },
+
+                { type: 'pneumaticcraft:stacked_item', item: 'create:cinder_flour', count: 64 },
+                Item.of('spirit:soul_crystal', '{StoredEntity:{Souls:512,Type:"minecraft:wither_skeleton"}}')
+                    .weakNBT()
+                    .toJson(),
+                { type: 'pneumaticcraft:stacked_item', item: 'create:cinder_flour', count: 64 },
+
+                { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_rebirth', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:gems/quartz', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_rebirth', count: 64 }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}shard_of_rebirth`
+        },
+        {
+            results: [{ item: 'kubejs:shard_of_wisdom', count: 1 }],
+            inputs: [
+                { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_wisdom', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:storage_blocks/enderium', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_wisdom', count: 64 },
+
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:dusts/end_stone', count: 64 },
+                { item: 'minecraft:dragon_head' },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:dusts/end_stone', count: 64 },
+
+                { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_wisdom', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'minecraft:popped_chorus_fruit', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_wisdom', count: 64 }
+            ],
+            pressure: 4.0,
+            id: `${id_prefix}shard_of_wisdom`
         }
     ];
 

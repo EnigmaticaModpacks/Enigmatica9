@@ -53,6 +53,56 @@ ServerEvents.recipes((event) => {
             itemInput: { ingredient: { item: 'ae2:matter_ball' } },
             duration: 100,
             id: `${id_prefix}blank_rune`
+        },
+        {
+            output: Item.of(
+                'industrialforegoing:infinity_drill',
+                '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'
+            ).toJson(),
+            gasInput: { gas: 'mekanism:antimatter', amount: 10000 },
+            itemInput: { ingredient: { item: 'immersiveengineering:drillhead_steel' } },
+            duration: 1200,
+            id: `${id_prefix}infinity_drill`
+        },
+        {
+            output: Item.of(
+                'industrialforegoing:infinity_saw',
+                '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'
+            ),
+            gasInput: { gas: 'mekanism:antimatter', amount: 10000 },
+            itemInput: { ingredient: { item: 'immersiveengineering:rockcutter' } },
+            duration: 1200,
+            id: `${id_prefix}infinity_saw`
+        },
+        {
+            output: Item.of(
+                'industrialforegoing:infinity_hammer',
+                '{Beheading:0,CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'
+            ),
+            gasInput: { gas: 'mekanism:antimatter', amount: 10000 },
+            itemInput: { ingredient: { item: 'hexerei:warhammer' } },
+            duration: 1200,
+            id: `${id_prefix}infinity_hammer`
+        },
+        {
+            output: Item.of(
+                'industrialforegoing:infinity_trident',
+                '{CanCharge:1b,Channeling:0b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"POOR",Special:0b}'
+            ),
+            gasInput: { gas: 'mekanism:antimatter', amount: 10000 },
+            itemInput: { ingredient: { item: 'minecraft:trident' } },
+            duration: 1200,
+            id: `${id_prefix}infinity_trident`
+        },
+        {
+            output: Item.of(
+                'industrialforegoing:infinity_nuke',
+                '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'
+            ),
+            gasInput: { gas: 'mekanism:antimatter', amount: 10000 },
+            itemInput: { ingredient: { item: 'thermal:earth_tnt' } },
+            duration: 1200,
+            id: `${id_prefix}infinity_nuke`
         }
     ];
 
