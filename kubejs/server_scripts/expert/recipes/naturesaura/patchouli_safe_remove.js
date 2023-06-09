@@ -27,7 +27,9 @@ ServerEvents.recipes((event) => {
             { id: 'naturesaura:animal_spawner', output: 'naturesaura:animal_spawner' },
             { id: 'naturesaura:rf_converter', output: 'naturesaura:rf_converter' },
             { id: 'naturesaura:calling_spirit', output: 'naturesaura:calling_spirit' },
-            { id: 'naturesaura:depth_ingot_creation', output: 'naturesaura:depth_ingot' }
+            { id: 'naturesaura:depth_ingot_creation', output: 'naturesaura:depth_ingot' },
+            { id: 'naturesaura:projectile_generator', output: 'naturesaura:projectile_generator' },
+            { id: 'naturesaura:firework_generator', output: 'naturesaura:firework_generator' }
         ],
         altar: [
             { id: 'naturesaura:altar/infused_stone', output: 'naturesaura:infused_stone' },

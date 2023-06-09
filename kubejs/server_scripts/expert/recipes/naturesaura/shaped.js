@@ -48,30 +48,6 @@ ServerEvents.recipes((event) => {
             id: `naturesaura:field_creator`
         },
         {
-            output: 'naturesaura:projectile_generator',
-            pattern: ['ABA', 'CDC', 'AEA'],
-            key: {
-                A: 'naturesaura:infused_stone',
-                B: '#forge:ingots/infused_iron',
-                C: '#forge:gems/nitro',
-                D: '#forge:storage_blocks/source',
-                E: 'quark:ender_watcher'
-            },
-            id: `naturesaura:projectile_generator`
-        },
-        {
-            output: 'naturesaura:firework_generator',
-            pattern: ['ABA', 'CDC', 'AEA'],
-            key: {
-                A: 'naturesaura:infused_stone',
-                B: '#forge:ingots/infused_iron',
-                C: '#forge:gems/nitro',
-                D: '#forge:storage_blocks/source',
-                E: 'minecraft:sculk_sensor'
-            },
-            id: `naturesaura:firework_generator`
-        },
-        {
             output: 'naturesaura:generator_limit_remover',
             pattern: ['ABA', 'DCE', 'AFA'],
             key: {
@@ -83,6 +59,19 @@ ServerEvents.recipes((event) => {
                 F: 'kubejs:mote_of_renewal'
             },
             id: `naturesaura:generator_limit_remover`
+        },
+        {
+            output: 'naturesaura:lower_limiter',
+            pattern: ['ABA', 'DCE', 'AFA'],
+            key: {
+                A: 'naturesaura:infused_stone',
+                B: '#forge:essences/air',
+                C: '#forge:gems/source',
+                D: '#forge:essences/earth',
+                E: '#forge:essences/fire',
+                F: '#forge:essences/water'
+            },
+            id: `naturesaura:lower_limiter`
         },
         {
             output: 'naturesaura:spawn_lamp',

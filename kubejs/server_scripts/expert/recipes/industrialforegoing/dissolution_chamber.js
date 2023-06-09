@@ -83,41 +83,9 @@ ServerEvents.recipes((event) => {
                 'ars_nouveau:starbuncle_charm',
                 'modularrouters:augment_core'
             ],
-            inputFluid: '{Amount:1000,FluidName:"pneumaticcraft:lubricant"}',
+            inputFluid: '{Amount:1000,FluidName:"hexerei:quicksilver_fluid"}',
             processingTime: 200,
             id: `industrialforegoing:dissolution_chamber/speed_addon_1`
-        },
-        {
-            output: Item.of('industrialforegoing:efficiency_addon_1', 4, '{TitaniumAugment:{Efficiency:0.9f}}'),
-            inputs: [
-                'modularrouters:augment_core',
-                'ars_nouveau:amethyst_golem_charm',
-                'modularrouters:augment_core',
-                '#forge:gems/therium',
-                '#forge:gems/therium',
-                'modularrouters:augment_core',
-                'ars_nouveau:amethyst_golem_charm',
-                'modularrouters:augment_core'
-            ],
-            inputFluid: '{Amount:1000,FluidName:"pneumaticcraft:lubricant"}',
-            processingTime: 200,
-            id: `industrialforegoing:dissolution_chamber/efficiency_addon_1`
-        },
-        {
-            output: Item.of('industrialforegoing:processing_addon_1', 4, '{TitaniumAugment:{Processing:2.0f}}'),
-            inputs: [
-                'modularrouters:augment_core',
-                'ars_nouveau:wixie_charm',
-                'modularrouters:augment_core',
-                '#forge:gems/therium',
-                '#forge:gems/therium',
-                'modularrouters:augment_core',
-                'ars_nouveau:wixie_charm',
-                'modularrouters:augment_core'
-            ],
-            inputFluid: '{Amount:1000,FluidName:"pneumaticcraft:lubricant"}',
-            processingTime: 200,
-            id: `industrialforegoing:dissolution_chamber/processing_addon_1`
         },
         {
             output: Item.of('industrialforegoing:speed_addon_2', 4, '{TitaniumAugment:{Speed:3.0f}}'),
@@ -136,6 +104,54 @@ ServerEvents.recipes((event) => {
             id: `industrialforegoing:dissolution_chamber/speed_addon_2`
         },
         {
+            output: '4x mekanism:upgrade_speed',
+            inputs: [
+                'powah:blank_card',
+                'ars_nouveau:starbuncle_charm',
+                'powah:blank_card',
+                '#forge:gems/therium',
+                '#forge:gems/therium',
+                'powah:blank_card',
+                'pneumaticcraft:printed_circuit_board',
+                'powah:blank_card'
+            ],
+            inputFluid: '{Amount:1000,FluidName:"hexerei:quicksilver_fluid"}',
+            processingTime: 200,
+            id: `${id_prefix}upgrade_speed`
+        },
+        {
+            output: Item.of('industrialforegoing:efficiency_addon_1', 4, '{TitaniumAugment:{Efficiency:0.9f}}'),
+            inputs: [
+                'modularrouters:augment_core',
+                'ars_nouveau:amethyst_golem_charm',
+                'modularrouters:augment_core',
+                '#forge:gems/therium',
+                '#forge:gems/therium',
+                'modularrouters:augment_core',
+                'ars_nouveau:amethyst_golem_charm',
+                'modularrouters:augment_core'
+            ],
+            inputFluid: '{Amount:1000,FluidName:"pneumaticcraft:lubricant"}',
+            processingTime: 200,
+            id: `industrialforegoing:dissolution_chamber/efficiency_addon_1`
+        },
+        {
+            output: '4x mekanism:upgrade_energy',
+            inputs: [
+                'powah:blank_card',
+                'ars_nouveau:amethyst_golem_charm',
+                'powah:blank_card',
+                '#forge:gems/therium',
+                '#forge:gems/therium',
+                'powah:blank_card',
+                'pneumaticcraft:printed_circuit_board',
+                'powah:blank_card'
+            ],
+            inputFluid: '{Amount:1000,FluidName:"pneumaticcraft:lubricant"}',
+            processingTime: 200,
+            id: `${id_prefix}upgrade_energy`
+        },
+        {
             output: Item.of('industrialforegoing:efficiency_addon_2', 4, '{TitaniumAugment:{Efficiency:0.8f}}'),
             inputs: [
                 'industrialforegoing:efficiency_addon_1',
@@ -147,9 +163,25 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:printed_circuit_board',
                 'industrialforegoing:efficiency_addon_1'
             ],
-            inputFluid: '{Amount:1000,FluidName:"hexerei:quicksilver_fluid"}',
+            inputFluid: '{Amount:1000,FluidName:"pneumaticcraft:lubricant"}',
             processingTime: 200,
             id: `industrialforegoing:dissolution_chamber/efficiency_addon_2`
+        },
+        {
+            output: Item.of('industrialforegoing:processing_addon_1', 4, '{TitaniumAugment:{Processing:2.0f}}'),
+            inputs: [
+                'modularrouters:augment_core',
+                'ars_nouveau:wixie_charm',
+                'modularrouters:augment_core',
+                '#forge:gems/therium',
+                '#forge:gems/therium',
+                'modularrouters:augment_core',
+                'ars_nouveau:wixie_charm',
+                'modularrouters:augment_core'
+            ],
+            inputFluid: '{Amount:1000,FluidName:"industrialforegoing:ether_gas"}',
+            processingTime: 200,
+            id: `industrialforegoing:dissolution_chamber/processing_addon_1`
         },
         {
             output: Item.of('industrialforegoing:processing_addon_2', 4, '{TitaniumAugment:{Processing:3.0f}}'),
@@ -163,9 +195,42 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:printed_circuit_board',
                 'industrialforegoing:processing_addon_1'
             ],
-            inputFluid: '{Amount:1000,FluidName:"hexerei:quicksilver_fluid"}',
+            inputFluid: '{Amount:1000,FluidName:"industrialforegoing:ether_gas"}',
             processingTime: 200,
             id: `industrialforegoing:dissolution_chamber/processing_addon_2`
+        },
+        {
+            output: '4x mekanism:upgrade_gas',
+            inputs: [
+                'powah:blank_card',
+                'pneumaticcraft:regulator_tube_module',
+                'powah:blank_card',
+                '#forge:gems/therium',
+                '#forge:gems/therium',
+                'powah:blank_card',
+                'pneumaticcraft:printed_circuit_board',
+                'powah:blank_card'
+            ],
+            inputFluid: '{Amount:1000,FluidName:"industrialforegoing:ether_gas"}',
+            processingTime: 200,
+            id: `${id_prefix}upgrade_gas`
+        },
+
+        {
+            output: '4x mekanism:upgrade_muffling',
+            inputs: [
+                'powah:blank_card',
+                '#minecraft:wool',
+                'powah:blank_card',
+                '#forge:gems/therium',
+                '#forge:gems/therium',
+                'powah:blank_card',
+                '#minecraft:wool',
+                'powah:blank_card'
+            ],
+            inputFluid: '{Amount:1000,FluidName:"minecraft:water"}',
+            processingTime: 200,
+            id: `${id_prefix}upgrade_muffling`
         },
         {
             output: '9x twilightforest:fiery_ingot',

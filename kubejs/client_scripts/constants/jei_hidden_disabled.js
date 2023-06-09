@@ -493,6 +493,8 @@ jei.expert.items.disabled = [
     'naturesaura:dimension_rail_nether',
     'naturesaura:dimension_rail_overworld',
     'naturesaura:rf_converter',
+    'naturesaura:projectile_generator',
+    'naturesaura:firework_generator',
 
     /occultism:chalk_.*_impure/,
     'occultism:ritual_dummy/summon_wild_otherworld_bird',
@@ -631,6 +633,8 @@ jei.expert.recipes.hidden = [
             'naturesaura:rf_converter',
             'naturesaura:calling_spirit',
             'naturesaura:depth_ingot_creation',
+            'naturesaura:projectile_generator',
+            'naturesaura:firework_generator',
             'ars_nouveau:imbuement_chamber',
             'ars_nouveau:mycelial_sourcelink',
             'ars_nouveau:vitalic_sourcelink',
