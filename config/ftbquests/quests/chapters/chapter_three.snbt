@@ -203,13 +203,58 @@
 			]
 			hide_dependency_lines: true
 			id: "3DD1F3E561B3D06A"
+			shape: "hexagon"
 			tasks: [{
 				id: "3AEE4B91C07C6421"
 				item: "kubejs:tree_of_life_4"
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3DD1F3E561B3D06A"]
+			id: "522FAC34F1EC78A6"
+			tasks: [{
+				id: "6F37D1F612338755"
+				item: "minecraft:heart_of_the_sea"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3DD1F3E561B3D06A"]
+			id: "7F47E4A0E4F840B0"
+			tasks: [{
+				id: "1B2410E6942EED4C"
+				item: "kubejs:heart_of_the_mountain"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3DD1F3E561B3D06A"]
+			id: "78FA52767FE8D732"
+			tasks: [{
+				id: "676C8DC7B592B237"
+				item: "kubejs:heart_of_the_inferno"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3DD1F3E561B3D06A"]
+			id: "75A2DCF61048E5CE"
+			tasks: [{
+				id: "29AACF719FD3F34E"
+				item: "kubejs:heart_of_the_tempest"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.0d
 		}
 	]
 	title: "Chapter Three"
