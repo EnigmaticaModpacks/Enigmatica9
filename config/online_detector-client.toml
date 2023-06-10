@@ -1,8 +1,0 @@
-
-# Client Settings for Online Detector
-[Particles]
-	# Whether or not there should be Redstone particles while the Online Detector Block is active.
-	shouldShowRedstoneParticles = true
-	# Whether or not there should be Portal particles while the Online Detector Block is active.
-	shouldShowPortalParticles = true
-
