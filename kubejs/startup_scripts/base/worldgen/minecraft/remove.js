@@ -18,11 +18,14 @@ WorldgenEvents.remove((event) => {
     event.removeOres((props) => {
         props.worldgenLayer = 'underground_ores';
         props.blocks = [
-            'minecraft:diamond_ore',
-            'minecraft:redstone_ore',
+            'minecraft:copper_ore',
             'minecraft:gold_ore',
             'minecraft:iron_ore',
-            'minecraft:coal_ore'
+            'minecraft:diamond_ore',
+            'minecraft:emerald_ore',
+            'minecraft:redstone_ore',
+            'minecraft:coal_ore',
+            'minecraft:lapis_ore'
         ];
     });
 });
