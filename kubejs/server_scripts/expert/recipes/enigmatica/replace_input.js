@@ -15,12 +15,12 @@ ServerEvents.recipes((event) => {
         {
             filter: { output: 'minecraft:hopper' },
             to_replace: '#forge:ingots/iron',
-            replace_with: '#forge:plates/tin'
+            replace_with: '#forge:ingots/tin'
         },
         {
             filter: { output: 'minecraft:bucket' },
             to_replace: '#forge:ingots/iron',
-            replace_with: '#forge:plates/tin'
+            replace_with: '#forge:ingots/tin'
         },
         {
             filter: { mod: 'create' },
