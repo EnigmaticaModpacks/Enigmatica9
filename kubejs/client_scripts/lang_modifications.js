@@ -1002,6 +1002,13 @@ const entries = {
                 normal: 'Obtained by defeating the Wilden Chimera. See Ritual of Summon Wilden.',
                 expert: 'Obtained by defeating the Wilden Chimera. See Grove of the Wilden Gate Pearl.'
             }
+        },
+        {
+            key: 'tooltip.magebloom',
+            value: {
+                normal: 'Crafted using the Enchanting Apparatus',
+                expert: 'Crafted in the Mixing Cauldron'
+            }
         }
     ],
     thermal: [

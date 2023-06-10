@@ -68,6 +68,11 @@ ServerEvents.recipes((event) => {
         let tertiary_chances = { tier_one: 0, tier_two: 0.5, tier_three: 0.63, tier_four: 0.75, tier_thermal: 0.15 };
 
         if (recipe.crushing_tier <= 1) {
+            let count = 5;
+
+            if (recipe.input.includes('raw_materials')) {
+                count = 12;
+            }
             // Hexerei
             event
                 .custom({
@@ -79,10 +84,7 @@ ServerEvents.recipes((event) => {
                         Ingredient.of(recipe.input).toJson(),
                         Ingredient.of(recipe.input).toJson()
                     ],
-                    output: {
-                        item: recipe.outputs.primary,
-                        count: 12
-                    },
+                    output: { item: recipe.outputs.primary, count: count },
                     grindingTime: duration * 5
                 })
                 .id(`${id_prefix}hexerei_pestle_and_mortar/${recipe.id_suffix}`);
