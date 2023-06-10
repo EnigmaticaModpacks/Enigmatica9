@@ -336,6 +336,8 @@ ServerEvents.recipes((event) => {
         { id: 'naturesaura:offering/sky_ingot' },
         { id: 'naturesaura:altar/tainted_gold_block' },
 
+        { id: 'nomadictents:shamiyana_section2' },
+
         { id: /occultism:ritual\/craft_miner/ },
         { id: /occultism:ritual\/craft_stabilizer/ },
         { id: 'occultism:spirit_fire/spirit_attuned_gem' },

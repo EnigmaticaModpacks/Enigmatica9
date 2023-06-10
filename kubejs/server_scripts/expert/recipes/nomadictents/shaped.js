@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            output: 'nomadictents:tent_canvas',
+            output: '6x nomadictents:tent_canvas',
             pattern: ['AAA', 'AAA'],
             key: {
                 A: '#forge:fabric_hemp'
@@ -24,13 +24,59 @@ ServerEvents.recipes((event) => {
             id: 'nomadictents:mallet'
         },
         {
-            output: 'nomadictents:indlu_section',
+            output: '4x nomadictents:indlu_section',
             pattern: ['ABA', 'ABA'],
             key: {
                 A: 'farmersdelight:straw_bale',
                 B: '#forge:rods/wooden'
             },
             id: 'nomadictents:indlu_section'
+        },
+        {
+            output: '4x nomadictents:tepee_section',
+            pattern: ['ABA', 'ABA'],
+            key: {
+                A: '#forge:leather',
+                B: '#forge:rods/wooden'
+            },
+            id: 'nomadictents:tepee_section'
+        },
+        {
+            output: '4x nomadictents:tepee_section',
+            pattern: ['ABA', 'ABA', 'ABA'],
+            key: {
+                A: 'minecraft:rabbit_hide',
+                B: '#forge:rods/wooden'
+            },
+            id: 'nomadictents:tepee_section2'
+        },
+        {
+            output: '4x nomadictents:yurt_section',
+            pattern: ['ABA', 'ABA'],
+            key: {
+                A: 'nomadictents:tent_canvas',
+                B: '#forge:rods/wooden'
+            },
+            id: 'nomadictents:yurt_section'
+        },
+        {
+            output: '4x nomadictents:bedouin_section',
+            pattern: ['ABA', 'ABA'],
+            key: {
+                A: '#minecraft:wool',
+                B: '#forge:rods/wooden'
+            },
+            id: 'nomadictents:bedouin_section'
+        },
+        {
+            output: '4x nomadictents:shamiyana_section',
+            pattern: ['CBC', 'ABA'],
+            key: {
+                A: '#minecraft:wool',
+                B: '#forge:rods/wooden',
+                C: 'nomadictents:tent_canvas'
+            },
+            id: 'nomadictents:shamiyana_section'
         }
     ];
 
