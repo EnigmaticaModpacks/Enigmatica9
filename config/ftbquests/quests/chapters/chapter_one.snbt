@@ -387,7 +387,7 @@
 		}
 		{
 			dependencies: ["6DBB9A9F698FA7B9"]
-			description: ["Obtain a bottle of Sunlight and Right-Click a block of Ironwood to convert it to a Natural Altar. Be sure to build the rest of the required structure as well."]
+			description: ["Obtain a Gold Leaf and Right-Click a block of Ironwood to convert it to a Natural Altar. Be sure to build the rest of the required structure as well."]
 			id: "4B874AA448FF4C7A"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
@@ -397,11 +397,18 @@
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
-			tasks: [{
-				id: "210D29FCB8E3D805"
-				item: "naturesaura:nature_altar"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "210D29FCB8E3D805"
+					item: "naturesaura:nature_altar"
+					type: "item"
+				}
+				{
+					id: "10897A1810BFBEAD"
+					item: "naturesaura:gold_leaf"
+					type: "item"
+				}
+			]
 			x: -3.5d
 			y: -1.5d
 		}
@@ -1248,6 +1255,7 @@
 			]
 			id: "438EA01F776992AD"
 			rewards: [{
+				count: 4
 				id: "374D86C82113C057"
 				item: "minecraft:hopper"
 				type: "item"
