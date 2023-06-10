@@ -81,7 +81,7 @@ ServerEvents.recipes((event) => {
                     ],
                     output: {
                         item: recipe.outputs.primary,
-                        count: 5
+                        count: 12
                     },
                     grindingTime: duration * 5
                 })

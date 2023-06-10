@@ -326,6 +326,7 @@ ServerEvents.recipes((event) => {
         { id: 'minecraft:netherite_ingot' },
         { id: 'minecraft:lodestone' },
         { id: 'minecraft:golden_apple' },
+        { id: 'minecraft:string' },
 
         { id: 'modularrouters:sender_module_1_alt' },
         { id: 'modularrouters:sender_module_2_x4' },
@@ -536,6 +537,7 @@ ServerEvents.recipes((event) => {
         { id: /emendatusenigmatica:.*from_ingot/ },
         { id: /emendatusenigmatica:.*from_gem/ },
         { id: /emendatusenigmatica:slurry\/clean/ },
+        { id: /quark:tweaks\/smelting\/raw/ },
 
         { type: 'minecraft:smelting', output: '#forge:nuggets' },
         { type: 'minecraft:smelting', output: '#forge:ingots' },
