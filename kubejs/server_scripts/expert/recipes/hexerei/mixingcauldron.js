@@ -137,6 +137,24 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}magebloom_crop`
         },
         {
+            output: 'ars_nouveau:magebloom_crop',
+            inputs: [
+                'immersiveengineering:seed',
+                'ars_nouveau:magebloom',
+                'hexerei:belladonna_berries',
+                'ars_nouveau:magebloom',
+                'hexerei:mandrake_root',
+                'ars_nouveau:magebloom',
+                'hexerei:belladonna_berries',
+                'ars_nouveau:magebloom'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 250,
+            heatRequirement: 'heated',
+            id: `${id_prefix}magebloom_crop_from_magebloom`
+        },
+        {
             output: 'superiorshields:ironwood_shield',
             inputs: [
                 '#forge:storage_blocks/source',
