@@ -1002,6 +1002,13 @@ const entries = {
                 normal: 'Obtained by defeating the Wilden Chimera. See Ritual of Summon Wilden.',
                 expert: 'Obtained by defeating the Wilden Chimera. See Grove of the Wilden Gate Pearl.'
             }
+        },
+        {
+            key: 'tooltip.magebloom',
+            value: {
+                normal: 'Crafted using the Enchanting Apparatus',
+                expert: 'Crafted in the Mixing Cauldron'
+            }
         }
     ],
     thermal: [
@@ -1161,6 +1168,45 @@ const entries = {
             value: {
                 normal: 'Engineering Processor',
                 expert: 'Runic Manifold: Marid (Bound)'
+            }
+        }
+    ],
+    simplytools: [
+        {
+            key: 'item.simplytools.iron_hammer_head',
+            value: {
+                normal: 'Iron Hammer Head',
+                expert: 'Ironwood Hammer Head'
+            }
+        },
+        {
+            key: 'item.simplytools.iron_hammer',
+            value: {
+                normal: 'Iron Hammer',
+                expert: 'Ironwood Hammer'
+            }
+        },
+        {
+            key: 'item.simplytools.iron_excavator_head',
+            value: {
+                normal: 'Iron Excavator Head',
+                expert: 'Ironwood Excavator Head'
+            }
+        },
+        {
+            key: 'item.simplytools.iron_excavator',
+            value: {
+                normal: 'Iron Excavator',
+                expert: 'Ironwood Excavator'
+            }
+        }
+    ],
+    minecraft: [
+        {
+            key: 'item.minecraft.dragon_breath',
+            value: {
+                normal: `Dragon's Breath`,
+                expert: 'Breath of Twilight'
             }
         }
     ]

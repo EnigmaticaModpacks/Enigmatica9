@@ -6,7 +6,7 @@ ServerEvents.highPriorityData((event) => {
         {
             size: 'small',
             color: '#0b9e32',
-            leash_range: 32,
+            leash_range: 256,
             rewards: [
                 {
                     type: 'stack',

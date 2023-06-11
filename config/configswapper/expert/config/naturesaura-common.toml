@@ -4,7 +4,7 @@
 	additionalBotanistPickaxeConversions = []
 	#Additional dimensions that map to Aura types that should be present in them. This is useful if you have a modpack with custom dimensions that should have Aura act similarly to an existing dimension in them. Each entry needs to be formatted as dimension_name->aura_type, where aura_type can be any of naturesaura:overworld, naturesaura:nether and naturesaura:end.
 	auraTypeOverrides = [
-		"twilightforest:twilight_forest->naturesaura:end",
+		"twilightforest:twilight_forest->naturesaura:overworld",
 		"the_bumblezone:the_bumblezone->naturesaura:end"		
 	]
 	#Additional blocks that are recognized as generatable ores for the passive ore generation effect. Each entry needs to be formatted as tag_name->oreWeight->dimension where a higher weight makes the ore more likely to spawn with 5000 being the weight of coal, the default ore with the highest weight, and dimension being any of overworld and nether

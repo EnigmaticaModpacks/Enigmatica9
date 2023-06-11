@@ -26,5 +26,5 @@ ServerEvents.tags('item', (event) => {
             'immersiveengineering:balloon',
             'immersiveengineering:lantern'
         ])
-        .remove('occultism:magic_lamp_empty');
+        .remove(['occultism:magic_lamp_empty', 'hexerei:candle_dipper']);
 });

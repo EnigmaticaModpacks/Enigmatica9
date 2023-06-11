@@ -360,6 +360,16 @@ ServerEvents.recipes((event) => {
                 D: 'pneumaticcraft:network_data_storage'
             },
             id: `pneumaticcraft:remote`
+        },
+        {
+            output: 'pneumaticcraft:small_tank',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'thermal:cured_rubber',
+                B: 'pneumaticcraft:compressed_stone',
+                C: 'ae2:quartz_glass'
+            },
+            id: `pneumaticcraft:small_tank`
         }
     ];
 

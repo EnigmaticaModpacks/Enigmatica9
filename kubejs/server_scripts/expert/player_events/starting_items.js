@@ -19,7 +19,7 @@ PlayerEvents.loggedIn((event) => {
             '64x minecraft:arrow',
             '64x minecraft:arrow',
             '64x minecraft:arrow',
-
+            'twilightforest:maze_map',
             Item.of(
                 'sophisticatedbackpacks:backpack',
                 '{borderColor:6258977,clothColor:6846789,inventorySlots:27,upgradeSlots:1}'

@@ -137,6 +137,24 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}magebloom_crop`
         },
         {
+            output: 'ars_nouveau:magebloom_crop',
+            inputs: [
+                'immersiveengineering:seed',
+                'ars_nouveau:magebloom',
+                'hexerei:belladonna_berries',
+                'ars_nouveau:magebloom',
+                'hexerei:mandrake_root',
+                'ars_nouveau:magebloom',
+                'hexerei:belladonna_berries',
+                'ars_nouveau:magebloom'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 250,
+            heatRequirement: 'heated',
+            id: `${id_prefix}magebloom_crop_from_magebloom`
+        },
+        {
             output: 'superiorshields:ironwood_shield',
             inputs: [
                 '#forge:storage_blocks/source',
@@ -846,6 +864,78 @@ ServerEvents.recipes((event) => {
             liquidOutput: { fluid: 'minecraft:lava' },
             fluidLevelsConsumed: 2000,
             id: `${id_prefix}warhammer`
+        },
+        {
+            output: 'hexerei:candle_dipper',
+            inputs: [
+                '#forge:ingots/tin',
+                '#forge:ingots/tin',
+                '#forge:ingots/tin',
+                '#forge:nuggets/silver',
+                '#forge:nuggets/silver',
+                '#forge:nuggets/silver',
+                '#forge:ingots/tin',
+                '#forge:ingots/tin'
+            ],
+            liquid: { fluid: 'minecraft:lava' },
+            liquidOutput: { fluid: 'minecraft:lava' },
+            fluidLevelsConsumed: 1000,
+            heatRequirement: 'heated',
+            id: 'hexerei:candle_dipper_from_mixing_cauldron'
+        },
+        {
+            output: 'hexerei:small_satchel',
+            inputs: [
+                '#forge:string',
+                '#forge:leather',
+                '#forge:leather',
+                '#forge:leather',
+                '#forge:nuggets/silver',
+                '#forge:leather',
+                '#forge:leather',
+                '#forge:leather'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 500,
+            heatRequirement: 'heated',
+            id: 'hexerei:small_satchel_from_mixing_cauldron'
+        },
+        {
+            output: 'hexerei:medium_satchel',
+            inputs: [
+                'hexerei:small_satchel',
+                '#forge:leather',
+                '#forge:leather',
+                '#forge:leather',
+                '#forge:string',
+                '#forge:leather',
+                '#forge:leather',
+                '#forge:leather'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 500,
+            heatRequirement: 'heated',
+            id: 'hexerei:medium_satchel_from_mixing_cauldron'
+        },
+        {
+            output: 'hexerei:large_satchel',
+            inputs: [
+                'hexerei:small_satchel',
+                '#forge:string',
+                '#forge:leather',
+                '#forge:string',
+                'hexerei:medium_satchel',
+                '#forge:string',
+                '#forge:leather',
+                '#forge:string'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 500,
+            heatRequirement: 'heated',
+            id: 'hexerei:large_satchel_from_mixing_cauldron'
         }
     ];
 

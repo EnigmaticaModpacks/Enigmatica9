@@ -1,6 +1,10 @@
 ServerEvents.genericLootTables((event) => {
     event.modify(`twilightforest:structures/foundation_basement`, (table) => {
         table.addPool((pool) => {
+            pool.addItem('minecraft:honeycomb', 75, [4, 16]);
+        });
+
+        table.addPool((pool) => {
             pool.rolls = [1, 1];
             pool.addItem('ars_nouveau:wixie_charm', 1, 1);
 

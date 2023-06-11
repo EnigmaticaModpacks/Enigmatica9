@@ -104,9 +104,13 @@
 				}
 			]
 			tasks: [{
-				id: "2CE5B9F18EE99393"
-				item: "hexerei:mixing_cauldron"
-				type: "item"
+				icon: "hexerei:mixing_cauldron"
+				id: "4BA040966CFE1DC8"
+				observe_type: 0
+				timer: 0L
+				title: "Mixing Cauldron"
+				to_observe: "hexerei:mixing_cauldron"
+				type: "observation"
 			}]
 			x: -2.0d
 			y: -3.5d
@@ -160,10 +164,13 @@
 				type: "command"
 			}]
 			tasks: [{
-				count: 8L
-				id: "0E70C7E5D5B0E9EE"
-				item: "naturesaura:wood_stand"
-				type: "item"
+				icon: "naturesaura:wood_stand"
+				id: "25F71D67CED16E2E"
+				observe_type: 0
+				timer: 0L
+				title: "Wooden Stand"
+				to_observe: "naturesaura:wood_stand"
+				type: "observation"
 			}]
 			title: "Ritual of the Forest"
 			x: -4.5d
@@ -267,9 +274,13 @@
 				}
 			]
 			tasks: [{
-				id: "75091A94E9106B4D"
-				item: "ars_nouveau:imbuement_chamber"
-				type: "item"
+				icon: "ars_nouveau:imbuement_chamber"
+				id: "559BB247F6674A56"
+				observe_type: 0
+				timer: 0L
+				title: "Imbuement Chamber"
+				to_observe: "ars_nouveau:imbuement_chamber"
+				type: "observation"
 			}]
 			x: -5.0d
 			y: -3.5d
@@ -387,7 +398,8 @@
 		}
 		{
 			dependencies: ["6DBB9A9F698FA7B9"]
-			description: ["Obtain a bottle of Sunlight and Right-Click a block of Ironwood to convert it to a Natural Altar. Be sure to build the rest of the required structure as well."]
+			description: ["Obtain a Gold Leaf and Sneak + Right-Click a block of Ironwood to convert it to a Natural Altar. Be sure to build the rest of the required structure as well."]
+			icon: "naturesaura:nature_altar"
 			id: "4B874AA448FF4C7A"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
@@ -397,11 +409,22 @@
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
-			tasks: [{
-				id: "210D29FCB8E3D805"
-				item: "naturesaura:nature_altar"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "10897A1810BFBEAD"
+					item: "naturesaura:gold_leaf"
+					type: "item"
+				}
+				{
+					icon: "naturesaura:nature_altar"
+					id: "58B970D39285FE82"
+					observe_type: 0
+					timer: 0L
+					title: "Natural Altar"
+					to_observe: "naturesaura:nature_altar"
+					type: "observation"
+				}
+			]
 			x: -3.5d
 			y: -1.5d
 		}
@@ -829,7 +852,7 @@
 				}
 			]
 			x: -3.5d
-			y: 3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2CCCDD05AED3153F"]
@@ -1013,7 +1036,7 @@
 			}
 			id: "28A304E0F1600640"
 			rewards: [{
-				command: "enigmatica:ars_nouveau_glyph_cache/tier_1"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:ars_nouveau_glyph_cache/tier_1"
 				icon: "ars_nouveau:blank_glyph"
 				id: "4D3BD7740EAF736F"
 				player_command: false
@@ -1104,7 +1127,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["66585A158F41DE44"]
@@ -1248,6 +1271,7 @@
 			]
 			id: "438EA01F776992AD"
 			rewards: [{
+				count: 4
 				id: "374D86C82113C057"
 				item: "minecraft:hopper"
 				type: "item"
@@ -1598,7 +1622,7 @@
 			]
 			title: "Tree of Life"
 			x: -3.5d
-			y: 4.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["668B76A0085B4054"]
@@ -1610,7 +1634,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["668B76A0085B4054"]
@@ -1630,7 +1654,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["347A644441BCF449"]
@@ -1674,7 +1698,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["4B874AA448FF4C7A"]
+			dependencies: ["3A7AEB067C49F899"]
 			description: [
 				"Much like the Alchemical Sourcelink can distill the magical essences in Potions down into Source, the Lingering Absorber is a structure that helps re-direct those energies back into the environment as Aura. "
 				""
@@ -1684,21 +1708,15 @@
 				""
 				"Using this structure to generate Aura will require making Lingering potions and throwing them on the golden cross on the Absorber. Throwing higher quality potions, with greater strength and duration, will result in more Aura. "
 				""
-				"It is important to note that Wixies, as crafty as they are, are incapable of making Lingering or Splash potions. They’re easily automated with Create’s brewing system, however, and Dragon’s Breath may be crafted as well. "
+				"It is important to note that Wixies, as crafty as they are, are incapable of making Lingering or Splash potions. They’re easily automated with Create’s brewing system, however, as well as with Industrial Foregoing's Potion Brewer later on."
 			]
 			icon: "naturesaura:potion_generator"
 			id: "16E90BC107468EC2"
 			min_width: 300
 			rewards: [{
-				count: 16
-				id: "754742F0C105E7DD"
-				item: {
-					Count: 1b
-					id: "naturesaura:aura_bottle"
-					tag: {
-						stored_type: "naturesaura:end"
-					}
-				}
+				count: 8
+				id: "4AD02A30701D4394"
+				item: "minecraft:dragon_breath"
 				type: "item"
 			}]
 			tasks: [
@@ -1721,7 +1739,7 @@
 				}
 			]
 			x: -3.5d
-			y: 0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4B874AA448FF4C7A"]
@@ -1809,6 +1827,52 @@
 			title: "Certus Farming"
 			x: 2.0d
 			y: -0.5d
+		}
+		{
+			dependencies: ["4B874AA448FF4C7A"]
+			description: [
+				"Honey’s healing properties are well known to Witches and have been used for centuries to treat countless ailments. With an extra little touch of magic, it can even be transmuted into a powerful substance known as Breath of Twilight. "
+				""
+				"Sadly, the bees all appear to have abandoned this area. Perhaps they can be enticed back now that someone is around to tend to them?"
+				""
+				"================================="
+				""
+				"Search the ruins of the homes in the forest for any remaining honeycomb and use it to craft a suitable home for some bees. "
+				""
+				"The bees themselves may be summoned with the Altar of Birthing, just bring some tasty flowers for them!"
+			]
+			icon: "naturesaura:animal_spawner"
+			id: "3A7AEB067C49F899"
+			rewards: [{
+				id: "72DE8D6EDF9F6515"
+				item: "thermal:device_hive_extractor"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "096F98097551C561"
+					item: "naturesaura:animal_spawner"
+					type: "item"
+				}
+				{
+					id: "7EE58C8ECCAA505E"
+					item: "minecraft:beehive"
+					type: "item"
+				}
+				{
+					id: "6ABD82F025EAE011"
+					item: "minecraft:bee_spawn_egg"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7C63D330A4BFB305"
+					item: "minecraft:dragon_breath"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 0.5d
 		}
 	]
 	title: "Chapter One"

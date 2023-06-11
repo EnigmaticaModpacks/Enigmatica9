@@ -96,7 +96,6 @@ ServerEvents.recipes((event) => {
             time: 80,
             id: `${id_prefix}soul_crystal`
         },
-        // Water
         {
             output: '3x kubejs:mote_of_renewal',
             input: Item.of('minecraft:lingering_potion', { Potion: 'ars_nouveau:recovery_potion_strong' }).weakNBT(),
@@ -104,6 +103,22 @@ ServerEvents.recipes((event) => {
             aura: 3000,
             time: 10,
             id: `${id_prefix}mote_of_renewal`
+        },
+        {
+            output: 'minecraft:dragon_breath',
+            input: 'minecraft:honey_bottle',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 3000,
+            time: 10,
+            id: `naturesaura:altar/breath`
+        },
+        {
+            output: 'ars_nouveau:source_berry',
+            input: 'hexerei:belladonna_berries',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 10000,
+            time: 60,
+            id: `${id_prefix}source_berry`
         }
     ];
 

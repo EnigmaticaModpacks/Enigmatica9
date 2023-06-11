@@ -1,3 +1,17 @@
+### Enigmatica 9 v1.8.0
+
+### 🎁 New Mods Added
+
+### Removed Mods
+
+### 🌟 Improvements
+
+-   Increase drop rate for saplings from Quark trees [\#396](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/396) ([MuteTiefling](https://github.com/MuteTiefling))
+
+### 🐛 Fixed Bugs
+
+---
+
 ### Enigmatica 9 v1.7.2
 
 🚀 Forge-1.19.2-43.2.13 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.7.2.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.7.2.md)

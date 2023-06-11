@@ -186,6 +186,7 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:dissolution_chamber/infinity_launcher' },
         { id: 'industrialforegoing:dissolution_chamber/infinity_backpack' },
         { id: 'industrialforegoing:dissolution_chamber/mechanical_dirt' },
+        { id: 'industrialforegoing:dissolution_chamber/pink_slime_ingot' },
         { id: 'industrialforegoing:crusher/sand_silicon' },
         { id: `industrialforegoing:laser_drill_fluid/ether_gas` },
         { id: 'industrialforegoing:machine_frame_pity' },
@@ -320,12 +321,15 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:module_inhalation_purification_unit' },
         { id: 'mekanism:electrolytic_core' },
         { id: 'mekanism:precision_sawmill' },
+        { id: 'mekanism:metallurgic_infusing/alloy/infused' },
+        { id: 'mekanism:processing/iron/enriched' },
 
         { id: /minecraft:diamond_(helmet|chestplate|leggings|boots)/ },
         { id: /minecraft:diamond_(sword|pickaxe|axe|shovel|hoe)/ },
         { id: 'minecraft:netherite_ingot' },
         { id: 'minecraft:lodestone' },
         { id: 'minecraft:golden_apple' },
+        { id: 'minecraft:string' },
 
         { id: 'modularrouters:sender_module_1_alt' },
         { id: 'modularrouters:sender_module_2_x4' },
@@ -334,6 +338,8 @@ ServerEvents.recipes((event) => {
 
         { id: 'naturesaura:offering/sky_ingot' },
         { id: 'naturesaura:altar/tainted_gold_block' },
+
+        { id: 'nomadictents:shamiyana_section2' },
 
         { id: /occultism:ritual\/craft_miner/ },
         { id: /occultism:ritual\/craft_stabilizer/ },
@@ -406,6 +412,11 @@ ServerEvents.recipes((event) => {
         { id: 'rftoolsbase:infused_enderpearl' },
 
         { id: 'sophisticatedbackpacks:battery_upgrade' },
+
+        { id: 'simplytools:diamond_hammer_head' },
+        { id: 'simplytools:diamond_hammer' },
+        { id: 'simplytools:diamond_excavator_head' },
+        { id: 'simplytools:diamond_excavator' },
 
         { id: /sophisticatedstorage:limited_/ },
         { id: /sophisticatedstorage:tier_upgrade_/ },
@@ -536,6 +547,7 @@ ServerEvents.recipes((event) => {
         { id: /emendatusenigmatica:.*from_ingot/ },
         { id: /emendatusenigmatica:.*from_gem/ },
         { id: /emendatusenigmatica:slurry\/clean/ },
+        { id: /quark:tweaks\/smelting\/raw/ },
 
         { type: 'minecraft:smelting', output: '#forge:nuggets' },
         { type: 'minecraft:smelting', output: '#forge:ingots' },

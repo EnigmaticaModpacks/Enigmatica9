@@ -5,6 +5,10 @@ ServerEvents.genericLootTables((event) => {
         });
 
         table.addPool((pool) => {
+            pool.addItem('minecraft:honeycomb', 75, [4, 16]);
+        });
+
+        table.addPool((pool) => {
             pool.rolls = [2, 4];
             pool.addItem('minecraft:melon_slice', 1, [1, 6]);
             pool.addItem('minecraft:melon_seeds', 1, [1, 6]);

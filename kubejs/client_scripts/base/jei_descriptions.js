@@ -365,6 +365,10 @@ JEIEvents.information((event) => {
         {
             items: ['twilightforest:borer_essence'],
             text: [`Drops from Towerwood Borers.`]
+        },
+        {
+            items: ['twilightforest:liveroot'],
+            text: [`Drops from Liveroots found under trees in the Twilight Forest.`]
         }
     ];
 

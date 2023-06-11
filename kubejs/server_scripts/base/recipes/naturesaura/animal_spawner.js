@@ -210,6 +210,13 @@ ServerEvents.recipes((event) => {
             aura: aura_cost.large,
             time: 40,
             id: 'naturesaura:animal_spawner/mooshroom'
+        },
+        {
+            entity: 'minecraft:bee',
+            inputs: ['naturesaura:birth_spirit', 'minecraft:oxeye_daisy'],
+            aura: aura_cost.small,
+            time: 40,
+            id: 'naturesaura:animal_spawner/bee'
         }
     ];
 

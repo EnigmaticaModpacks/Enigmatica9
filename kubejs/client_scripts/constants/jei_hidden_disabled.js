@@ -629,7 +629,6 @@ jei.expert.recipes.hidden = [
             'naturesaura:dimension_rail_end',
             'naturesaura:dimension_rail_nether',
             'naturesaura:dimension_rail_overworld',
-            'naturesaura:animal_spawner',
             'naturesaura:rf_converter',
             'naturesaura:calling_spirit',
             'naturesaura:depth_ingot_creation',

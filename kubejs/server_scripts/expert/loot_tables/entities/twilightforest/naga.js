@@ -43,7 +43,9 @@ ServerEvents.genericLootTables((event) => {
                         { id: 'ars_nouveau:bastion_pod', Count: 3 },
                         { id: 'ars_elemental:flashpine_pod', Count: 3 },
 
-                        { id: 'twilightforest:raven_feather', Count: 3 }
+                        { id: 'twilightforest:raven_feather', Count: 3 },
+
+                        { id: 'byg:aloe_vera', Count: 3 }
                     ],
                     display: {
                         Name: `{"text":"Druid's Pouch","color":"dark_green"}`,

@@ -1,6 +1,10 @@
 ServerEvents.genericLootTables((event) => {
     event.addGeneric(`twilightforest:structures/useless`, (table) => {
         table.addPool((pool) => {
+            pool.addItem('minecraft:honeycomb', 75, [4, 16]);
+        });
+
+        table.addPool((pool) => {
             pool.rolls = 1.0;
             pool.addItem('minecraft:feather', 1, [1, 3]);
             pool.addItem('minecraft:wheat_seeds', 1, [1, 2]);
