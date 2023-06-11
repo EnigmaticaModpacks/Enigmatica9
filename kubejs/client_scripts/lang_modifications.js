@@ -1200,6 +1200,15 @@ const entries = {
                 expert: 'Ironwood Excavator'
             }
         }
+    ],
+    minecraft: [
+        {
+            key: 'item.minecraft.dragon_breath',
+            value: {
+                normal: `Dragon's Breath`,
+                expert: 'Breath of Twilight'
+            }
+        }
     ]
 };
 Object.keys(entries).forEach((mod) => {

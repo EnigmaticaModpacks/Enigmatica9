@@ -852,7 +852,7 @@
 				}
 			]
 			x: -3.5d
-			y: 3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2CCCDD05AED3153F"]
@@ -1127,7 +1127,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["66585A158F41DE44"]
@@ -1622,7 +1622,7 @@
 			]
 			title: "Tree of Life"
 			x: -3.5d
-			y: 4.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["668B76A0085B4054"]
@@ -1634,7 +1634,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["668B76A0085B4054"]
@@ -1654,7 +1654,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["347A644441BCF449"]
@@ -1698,7 +1698,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["4B874AA448FF4C7A"]
+			dependencies: ["3A7AEB067C49F899"]
 			description: [
 				"Much like the Alchemical Sourcelink can distill the magical essences in Potions down into Source, the Lingering Absorber is a structure that helps re-direct those energies back into the environment as Aura. "
 				""
@@ -1708,21 +1708,15 @@
 				""
 				"Using this structure to generate Aura will require making Lingering potions and throwing them on the golden cross on the Absorber. Throwing higher quality potions, with greater strength and duration, will result in more Aura. "
 				""
-				"It is important to note that Wixies, as crafty as they are, are incapable of making Lingering or Splash potions. They’re easily automated with Create’s brewing system, however, and Dragon’s Breath may be crafted as well. "
+				"It is important to note that Wixies, as crafty as they are, are incapable of making Lingering or Splash potions. They’re easily automated with Create’s brewing system, however, as well as with Industrial Foregoing's Potion Brewer later on."
 			]
 			icon: "naturesaura:potion_generator"
 			id: "16E90BC107468EC2"
 			min_width: 300
 			rewards: [{
-				count: 16
-				id: "754742F0C105E7DD"
-				item: {
-					Count: 1b
-					id: "naturesaura:aura_bottle"
-					tag: {
-						stored_type: "naturesaura:end"
-					}
-				}
+				count: 8
+				id: "4AD02A30701D4394"
+				item: "minecraft:dragon_breath"
 				type: "item"
 			}]
 			tasks: [
@@ -1745,7 +1739,7 @@
 				}
 			]
 			x: -3.5d
-			y: 0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4B874AA448FF4C7A"]
@@ -1833,6 +1827,52 @@
 			title: "Certus Farming"
 			x: 2.0d
 			y: -0.5d
+		}
+		{
+			dependencies: ["4B874AA448FF4C7A"]
+			description: [
+				"Honey’s healing properties are well known to Witches and have been used for centuries to treat countless ailments. With an extra little touch of magic, it can even be transmuted into a powerful substance known as Breath of Twilight. "
+				""
+				"Sadly, the bees all appear to have abandoned this area. Perhaps they can be enticed back now that someone is around to tend to them?"
+				""
+				"================================="
+				""
+				"Search the ruins of the homes in the forest for any remaining honeycomb and use it to craft a suitable home for some bees. "
+				""
+				"The bees themselves may be summoned with the Altar of Birthing, just bring some tasty flowers for them!"
+			]
+			icon: "naturesaura:animal_spawner"
+			id: "3A7AEB067C49F899"
+			rewards: [{
+				id: "72DE8D6EDF9F6515"
+				item: "thermal:device_hive_extractor"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "096F98097551C561"
+					item: "naturesaura:animal_spawner"
+					type: "item"
+				}
+				{
+					id: "7EE58C8ECCAA505E"
+					item: "minecraft:beehive"
+					type: "item"
+				}
+				{
+					id: "6ABD82F025EAE011"
+					item: "minecraft:bee_spawn_egg"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7C63D330A4BFB305"
+					item: "minecraft:dragon_breath"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 0.5d
 		}
 	]
 	title: "Chapter One"
