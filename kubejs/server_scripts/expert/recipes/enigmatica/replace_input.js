@@ -190,6 +190,41 @@ ServerEvents.recipes((event) => {
             filter: { output: /minecart/ },
             to_replace: '#forge:ingots/iron',
             replace_with: '#forge:ingots/tin'
+        },
+        {
+            filter: { output: /thermal:.*_grenade/ },
+            to_replace: '#forge:ingots/iron',
+            replace_with: '#forge:nuggets/lead'
+        },
+        {
+            filter: { mod: 'toolbelt' },
+            to_replace: 'minecraft:leather',
+            replace_with: '#forge:leather'
+        },
+        {
+            filter: { mod: 'supplementaries' },
+            to_replace: 'minecraft:leather',
+            replace_with: '#forge:leather'
+        },
+        {
+            filter: { mod: 'cnb' },
+            to_replace: 'minecraft:leather',
+            replace_with: '#forge:leather'
+        },
+        {
+            filter: { mod: 'ars_nouveau' },
+            to_replace: 'minecraft:leather',
+            replace_with: '#forge:leather'
+        },
+        {
+            filter: { output: /item_frame/ },
+            to_replace: 'minecraft:leather',
+            replace_with: '#forge:leather'
+        },
+        {
+            filter: { output: 'minecraft:book' },
+            to_replace: 'minecraft:leather',
+            replace_with: '#forge:leather'
         }
     ];
 

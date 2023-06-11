@@ -882,6 +882,60 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 1000,
             heatRequirement: 'heated',
             id: 'hexerei:candle_dipper_from_mixing_cauldron'
+        },
+        {
+            output: 'hexerei:small_satchel',
+            inputs: [
+                '#forge:string',
+                '#forge:leather',
+                '#forge:leather',
+                '#forge:leather',
+                '#forge:nuggets/silver',
+                '#forge:leather',
+                '#forge:leather',
+                '#forge:leather'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 500,
+            heatRequirement: 'heated',
+            id: 'hexerei:small_satchel_from_mixing_cauldron'
+        },
+        {
+            output: 'hexerei:medium_satchel',
+            inputs: [
+                'hexerei:small_satchel',
+                '#forge:leather',
+                '#forge:leather',
+                '#forge:leather',
+                '#forge:string',
+                '#forge:leather',
+                '#forge:leather',
+                '#forge:leather'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 500,
+            heatRequirement: 'heated',
+            id: 'hexerei:medium_satchel_from_mixing_cauldron'
+        },
+        {
+            output: 'hexerei:large_satchel',
+            inputs: [
+                'hexerei:small_satchel',
+                '#forge:string',
+                '#forge:leather',
+                '#forge:string',
+                'hexerei:medium_satchel',
+                '#forge:string',
+                '#forge:leather',
+                '#forge:string'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 500,
+            heatRequirement: 'heated',
+            id: 'hexerei:large_satchel_from_mixing_cauldron'
         }
     ];
 
