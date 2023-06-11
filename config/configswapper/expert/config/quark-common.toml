@@ -1239,7 +1239,7 @@
 		"Replace Mobs" = []
 
 	[experimental.enchantments_begone]
-		"Enchantments To Begone" = ["apotheosis:earths_boon", "apotheosis:rebounding", "apotheosis:spearfishing", "minecraft:respiration", "minecraft:binding_curse", "minecraft:vanishing_curse", "supplementaries:stasis", "minecraft:mending"]
+		"Enchantments To Begone" = ["apotheosis:earths_boon", "apotheosis:rebounding", "apotheosis:spearfishing", "minecraft:respiration", "minecraft:binding_curse", "minecraft:vanishing_curse", "supplementaries:stasis", "minecraft:mending"] 
 
 	[experimental.enchantment_predicates]
 		"Enchantments To Register" = []

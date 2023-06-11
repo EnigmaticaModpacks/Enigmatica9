@@ -104,9 +104,13 @@
 				}
 			]
 			tasks: [{
-				id: "2CE5B9F18EE99393"
-				item: "hexerei:mixing_cauldron"
-				type: "item"
+				icon: "hexerei:mixing_cauldron"
+				id: "4BA040966CFE1DC8"
+				observe_type: 0
+				timer: 0L
+				title: "Mixing Cauldron"
+				to_observe: "hexerei:mixing_cauldron"
+				type: "observation"
 			}]
 			x: -2.0d
 			y: -3.5d
@@ -160,10 +164,13 @@
 				type: "command"
 			}]
 			tasks: [{
-				count: 8L
-				id: "0E70C7E5D5B0E9EE"
-				item: "naturesaura:wood_stand"
-				type: "item"
+				icon: "naturesaura:wood_stand"
+				id: "25F71D67CED16E2E"
+				observe_type: 0
+				timer: 0L
+				title: "Wooden Stand"
+				to_observe: "naturesaura:wood_stand"
+				type: "observation"
 			}]
 			title: "Ritual of the Forest"
 			x: -4.5d
@@ -267,9 +274,13 @@
 				}
 			]
 			tasks: [{
-				id: "75091A94E9106B4D"
-				item: "ars_nouveau:imbuement_chamber"
-				type: "item"
+				icon: "ars_nouveau:imbuement_chamber"
+				id: "559BB247F6674A56"
+				observe_type: 0
+				timer: 0L
+				title: "Imbuement Chamber"
+				to_observe: "ars_nouveau:imbuement_chamber"
+				type: "observation"
 			}]
 			x: -5.0d
 			y: -3.5d
@@ -387,7 +398,8 @@
 		}
 		{
 			dependencies: ["6DBB9A9F698FA7B9"]
-			description: ["Obtain a Gold Leaf and Right-Click a block of Ironwood to convert it to a Natural Altar. Be sure to build the rest of the required structure as well."]
+			description: ["Obtain a Gold Leaf and Sneak + Right-Click a block of Ironwood to convert it to a Natural Altar. Be sure to build the rest of the required structure as well."]
+			icon: "naturesaura:nature_altar"
 			id: "4B874AA448FF4C7A"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
@@ -399,14 +411,18 @@
 			}]
 			tasks: [
 				{
-					id: "210D29FCB8E3D805"
-					item: "naturesaura:nature_altar"
-					type: "item"
-				}
-				{
 					id: "10897A1810BFBEAD"
 					item: "naturesaura:gold_leaf"
 					type: "item"
+				}
+				{
+					icon: "naturesaura:nature_altar"
+					id: "58B970D39285FE82"
+					observe_type: 0
+					timer: 0L
+					title: "Natural Altar"
+					to_observe: "naturesaura:nature_altar"
+					type: "observation"
 				}
 			]
 			x: -3.5d

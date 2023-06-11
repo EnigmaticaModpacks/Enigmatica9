@@ -170,6 +170,26 @@ ServerEvents.recipes((event) => {
         {
             to_replace: 'industrialforegoing:plastic',
             replace_with: '#pneumaticcraft:plastic_sheets'
+        },
+        {
+            filter: { output: 'chimes:amethyst_chimes' },
+            to_replace: '#forge:ingots/iron',
+            replace_with: '#forge:ingots/tin'
+        },
+        {
+            filter: { output: 'apotheosis:simple_reforging_table' },
+            to_replace: '#forge:ingots/iron',
+            replace_with: '#forge:ingots/steel'
+        },
+        {
+            filter: { mod: 'simplytools' },
+            to_replace: '#forge:ingots/iron',
+            replace_with: '#forge:ingots/ironwood'
+        },
+        {
+            filter: { output: /minecart/ },
+            to_replace: '#forge:ingots/iron',
+            replace_with: '#forge:ingots/tin'
         }
     ];
 

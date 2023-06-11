@@ -186,6 +186,7 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:dissolution_chamber/infinity_launcher' },
         { id: 'industrialforegoing:dissolution_chamber/infinity_backpack' },
         { id: 'industrialforegoing:dissolution_chamber/mechanical_dirt' },
+        { id: 'industrialforegoing:dissolution_chamber/pink_slime_ingot' },
         { id: 'industrialforegoing:crusher/sand_silicon' },
         { id: `industrialforegoing:laser_drill_fluid/ether_gas` },
         { id: 'industrialforegoing:machine_frame_pity' },
@@ -320,6 +321,8 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:module_inhalation_purification_unit' },
         { id: 'mekanism:electrolytic_core' },
         { id: 'mekanism:precision_sawmill' },
+        { id: 'mekanism:metallurgic_infusing/alloy/infused' },
+        { id: 'mekanism:processing/iron/enriched' },
 
         { id: /minecraft:diamond_(helmet|chestplate|leggings|boots)/ },
         { id: /minecraft:diamond_(sword|pickaxe|axe|shovel|hoe)/ },
@@ -409,6 +412,11 @@ ServerEvents.recipes((event) => {
         { id: 'rftoolsbase:infused_enderpearl' },
 
         { id: 'sophisticatedbackpacks:battery_upgrade' },
+
+        { id: 'simplytools:diamond_hammer_head' },
+        { id: 'simplytools:diamond_hammer' },
+        { id: 'simplytools:diamond_excavator_head' },
+        { id: 'simplytools:diamond_excavator' },
 
         { id: /sophisticatedstorage:limited_/ },
         { id: /sophisticatedstorage:tier_upgrade_/ },
