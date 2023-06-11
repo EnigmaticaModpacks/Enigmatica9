@@ -99,6 +99,25 @@ ServerEvents.recipes((event) => {
                 B: '#forge:rods/wooden'
             },
             id: `${id_prefix}rail_from_bronze`
+        },
+        {
+            output: 'minecraft:smithing_table',
+            pattern: ['AA', 'BB'],
+            key: {
+                A: '#forge:ingots/steel',
+                B: 'create:andesite_casing'
+            },
+            id: 'minecraft:smithing_table'
+        },
+        {
+            output: 'minecraft:anvil',
+            pattern: ['AAA', ' B ', 'BCB'],
+            key: {
+                A: '#forge:storage_blocks/ironwood',
+                B: '#forge:ingots/ironwood',
+                C: '#forge:gems/source'
+            },
+            id: 'minecraft:anvil'
         }
     ];
 

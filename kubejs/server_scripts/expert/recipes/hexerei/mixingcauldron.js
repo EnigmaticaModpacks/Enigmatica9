@@ -864,6 +864,24 @@ ServerEvents.recipes((event) => {
             liquidOutput: { fluid: 'minecraft:lava' },
             fluidLevelsConsumed: 2000,
             id: `${id_prefix}warhammer`
+        },
+        {
+            output: 'hexerei:candle_dipper',
+            inputs: [
+                '#forge:ingots/tin',
+                '#forge:ingots/tin',
+                '#forge:ingots/tin',
+                '#forge:nuggets/silver',
+                '#forge:nuggets/silver',
+                '#forge:nuggets/silver',
+                '#forge:ingots/tin',
+                '#forge:ingots/tin'
+            ],
+            liquid: { fluid: 'minecraft:lava' },
+            liquidOutput: { fluid: 'minecraft:lava' },
+            fluidLevelsConsumed: 1000,
+            heatRequirement: 'heated',
+            id: 'hexerei:candle_dipper_from_mixing_cauldron'
         }
     ];
 

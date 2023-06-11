@@ -1170,6 +1170,36 @@ const entries = {
                 expert: 'Runic Manifold: Marid (Bound)'
             }
         }
+    ],
+    simplytools: [
+        {
+            key: 'item.simplytools.iron_hammer_head',
+            value: {
+                normal: 'Iron Hammer Head',
+                expert: 'Ironwood Hammer Head'
+            }
+        },
+        {
+            key: 'item.simplytools.iron_hammer',
+            value: {
+                normal: 'Iron Hammer',
+                expert: 'Ironwood Hammer'
+            }
+        },
+        {
+            key: 'item.simplytools.iron_excavator_head',
+            value: {
+                normal: 'Iron Excavator Head',
+                expert: 'Ironwood Excavator Head'
+            }
+        },
+        {
+            key: 'item.simplytools.iron_excavator',
+            value: {
+                normal: 'Iron Excavator',
+                expert: 'Ironwood Excavator'
+            }
+        }
     ]
 };
 Object.keys(entries).forEach((mod) => {

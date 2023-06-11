@@ -73,18 +73,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}crafting_unit`
         },
         {
-            output: 'naturesaura:animal_spawner',
-            inputs: [
-                '#forge:essences/conjuration',
-                'minecraft:golden_carrot',
-                'minecraft:hay_block',
-                'minecraft:golden_apple'
-            ],
-            reagents: ['spirit:broken_spawner'],
-            sourceCost: 9000,
-            id: `${id_prefix}animal_spawner`
-        },
-        {
             output: 'pneumaticcraft:drill_bit_diamond',
             inputs: ['#forge:ingots/skies', 'ars_nouveau:glyph_aoe'],
             reagents: ['pneumaticcraft:drill_bit_compressed_iron'],
@@ -946,6 +934,40 @@ ServerEvents.recipes((event) => {
             ],
             sourceCost: 10000,
             id: `${id_prefix}lens_of_ender`
+        },
+        {
+            output: 'simplytools:diamond_hammer',
+            inputs: [
+                '#forge:essences/abjuration',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond'
+            ],
+            reagents: ['simplytools:golden_hammer'],
+            keepNbtOfReagent: true,
+            sourceCost: 0,
+            id: `${id_prefix}diamond_hammer`
+        },
+        {
+            output: 'simplytools:diamond_excavator',
+            inputs: [
+                '#forge:essences/abjuration',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond'
+            ],
+            reagents: ['simplytools:golden_excavator'],
+            keepNbtOfReagent: true,
+            sourceCost: 0,
+            id: `${id_prefix}diamond_excavator`
         }
     ];
 

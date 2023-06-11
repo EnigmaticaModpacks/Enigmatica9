@@ -128,6 +128,49 @@ ServerEvents.recipes((event) => {
                 C: 'minecraft:lodestone'
             },
             id: `naturesaura:hopper_upgrade`
+        },
+        {
+            output: 'naturesaura:mover_cart',
+            pattern: ['ABA', ' C '],
+            key: {
+                A: '#forge:ingots/infused_iron',
+                B: 'minecraft:lodestone',
+                C: 'minecraft:minecart'
+            },
+            id: `naturesaura:mover_cart`
+        },
+        {
+            output: 'naturesaura:ender_crate',
+            pattern: ['ABA', 'CDC', 'ACA'],
+            key: {
+                A: 'occultism:otherstone',
+                B: 'minecraft:oxeye_daisy',
+                C: 'minecraft:honey_bottle',
+                D: 'minecraft:ender_chest'
+            },
+            id: `naturesaura:ender_crate`
+        },
+        {
+            output: 'naturesaura:ender_access',
+            pattern: ['ABA', 'CDC', 'ACA'],
+            key: {
+                A: 'occultism:burnt_otherstone',
+                B: 'minecraft:oxeye_daisy',
+                C: 'minecraft:honey_bottle',
+                D: 'minecraft:ender_chest'
+            },
+            id: `naturesaura:ender_access`
+        },
+        {
+            output: 'naturesaura:animal_spawner',
+            pattern: [' A ', 'BCB', ' D '],
+            key: {
+                A: '#forge:essences/conjuration',
+                B: '#forge:gems/source',
+                C: 'spirit:broken_spawner',
+                D: 'minecraft:hay_block'
+            },
+            id: `naturesaura:animal_spawner`
         }
     ];
 
