@@ -5,6 +5,7 @@ ServerEvents.highPriorityData((event) => {
         { ore: 'emendatusenigmatica:emerald_ore', max_length: 6, size_variation: 0.5, weight: 15 },
         { ore: 'emendatusenigmatica:lapis_ore', max_length: 8, size_variation: 0.8, weight: 26 },
         { ore: 'emendatusenigmatica:coal_ore', max_length: 10, size_variation: 0.8, weight: 40 },
+        { ore: 'emendatusenigmatica:apatite_ore', max_length: 10, size_variation: 0.8, weight: 40 },
 
         { ore: 'emendatusenigmatica:copper_ore', max_length: 8, size_variation: 0.6, weight: 20 },
         { ore: 'emendatusenigmatica:silver_ore', max_length: 7, size_variation: 0.7, weight: 30 },

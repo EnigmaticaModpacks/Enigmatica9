@@ -10,6 +10,7 @@ ServerEvents.highPriorityData((event) => {
             stalactites: [
                 'twilightforest:redstone_ore_stalactite',
                 'twilightforest:lapis_ore_stalactite',
+                'twilightforest:apatite_ore_stalactite',
                 'twilightforest:amethyst_block_stalactite',
                 'twilightforest:quartz_block_stalactite',
                 'twilightforest:calcite_stalactite',
@@ -27,6 +28,7 @@ ServerEvents.highPriorityData((event) => {
             stalactites: [
                 'twilightforest:redstone_ore_stalactite',
                 'twilightforest:lapis_ore_stalactite',
+                'twilightforest:apatite_ore_stalactite',
                 'twilightforest:amethyst_block_stalactite',
                 'twilightforest:quartz_block_stalactite',
                 'twilightforest:emerald_ore_stalactite',
