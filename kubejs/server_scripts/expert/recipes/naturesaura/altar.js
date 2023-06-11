@@ -111,6 +111,14 @@ ServerEvents.recipes((event) => {
             aura: 3000,
             time: 10,
             id: `naturesaura:altar/breath`
+        },
+        {
+            output: 'ars_nouveau:source_berry',
+            input: 'hexerei:belladonna_berries',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 10000,
+            time: 60,
+            id: `${id_prefix}source_berry`
         }
     ];
 
