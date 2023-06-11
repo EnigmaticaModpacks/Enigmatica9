@@ -18,6 +18,8 @@ ItemEvents.modification((event) => {
 
         'the_bumblezone:pollen_puff',
 
+        /thermal:.*_grenade/,
+
         //signs
         /(minecraft|supplementaries|twilightforest):\w+_sign/
     ];
