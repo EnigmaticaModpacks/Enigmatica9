@@ -321,7 +321,7 @@
 		{
 			dependencies: ["2BE93580D70ADF20"]
 			description: [
-				"A powerful furnace that helps maintain the specific heat requirements for smelting Steel. "
+				"A powerful furnace that helps maintain the specific heat requirements for smelting certain materials. "
 				""
 				"Both fuel and input items go into the top, while the results come out the front and back. It may be sped up significantly by adding Blast Furnace Preheaters to the sides and powering them."
 				""
@@ -385,8 +385,6 @@
 				"A large mill for efficiently processing logs into planks. Without a blade installed, it will only strip bark from logs. However, with a blade installed it will also cut those stripped logs down into planks."
 				""
 				"Items are fed into the mill via the built-in conveyor belts and the resulting blocks will carry on along the belt, while any by-products such as sawdust will be inserted into a conveyor or inventory in the front."
-				""
-				"Sawblades have limited durability and must be periodically replaced. A new blade may be installed by Right-Clicking it anywhere on the machine.  "
 			]
 			hide_dependency_lines: true
 			icon: "immersiveengineering:sawmill"
@@ -1265,31 +1263,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"377AAE2494B83CCF"
-				"16EC372C27238D3F"
-			]
-			dependency_requirement: "one_completed"
-			description: ["Adding some lubricant to a Drill or Saw destined for rugged digging and cutting tough material can greatly extend the lifetime of the tool. "]
-			id: "0165101E8F7305CF"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				icon: "kubejs:rare_lootbox"
-				id: "29D2389ECDFDF63A"
-				player_command: false
-				title: "Rare Immersive Engineering Loot Box"
-				type: "command"
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "05501095CD011D77"
-				item: "immersiveengineering:toolupgrade_drill_lube"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 2.5d
-		}
-		{
 			dependencies: ["16EC372C27238D3F"]
 			description: ["The Blade Quiver may be attached to the Buzzsaw in the Engineer’s Workbench, holds additional blades, and allows you to swap between them on-the-fly in the field. Sneak + Scroll Wheel to change blades. "]
 			id: "1EE0A3D7073E1E9C"
@@ -1394,7 +1367,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["24EB456683513CA7"]
@@ -1496,9 +1469,13 @@
 			description: [
 				"Logic Circuits themselves are crafted in the Engineer’s Circuit Table. "
 				""
-				"This workbench requires power, which is input from the back, as well as some quantity of Circuit Backplanes, Lead Wire, and Vacuum Tubes. Different logic operations will require different quantities. "
+				"This workbench requires power, which is input from the back, as well as some quantity of Runic Proto-Boards, Lead Wire, and Vacuum Tubes. Different logic operations will require different quantities. "
 				""
-				"Circuits are programmed with an operator as well as Input and Output colors. When ready, the completed circuit is withdrawn from the right side of the GUI. Circuits may have their Inputs and Outputs reprogrammed by placing them back in the upper slot, but the operator is locked in upon first creation. "
+				"Circuits are programmed with an operator as well as Input and Output colors. "
+				""
+				"When ready, the completed circuit is withdrawn from the right side of the GUI. "
+				""
+				"Circuits may have their Inputs and Outputs reprogrammed by placing them back in the upper slot, but the operator is locked in upon first creation. "
 			]
 			icon: "immersiveengineering:logic_circuit"
 			id: "4A717117EFEDB4CD"
