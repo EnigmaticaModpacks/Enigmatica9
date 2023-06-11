@@ -1036,7 +1036,7 @@
 			}
 			id: "28A304E0F1600640"
 			rewards: [{
-				command: "enigmatica:ars_nouveau_glyph_cache/tier_1"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:ars_nouveau_glyph_cache/tier_1"
 				icon: "ars_nouveau:blank_glyph"
 				id: "4D3BD7740EAF736F"
 				player_command: false
