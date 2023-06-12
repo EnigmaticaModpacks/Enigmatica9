@@ -262,6 +262,8 @@ jei.expert.items.disabled = [
     'constructionwand:stone_wand',
 
     'create:empty_blaze_burner',
+    'create:precision_mechanism',
+    'create:electron_tube',
 
     'createaddition:alternator',
     'createaddition:modular_accumulator',

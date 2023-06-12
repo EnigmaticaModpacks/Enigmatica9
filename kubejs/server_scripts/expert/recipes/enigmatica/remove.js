@@ -100,6 +100,8 @@ ServerEvents.recipes((event) => {
         { id: 'create:compat/ae2/milling/ender_pearl' },
         { id: 'create:crushing/prismarine_crystals' },
         { id: 'create:sequenced_assembly/track' },
+        { id: 'create:sequenced_assembly/precision_mechanism' },
+        { id: 'create:crafting/materials/electron_tube' },
 
         { id: /createaddition:pressing\/.*_ingot/ },
         { id: /createaddition:crafting\/capacitor/ },
