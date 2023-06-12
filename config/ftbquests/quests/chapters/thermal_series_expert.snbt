@@ -96,7 +96,7 @@
 				item: "thermal:device_tree_extractor"
 				type: "item"
 			}]
-			x: 6.5d
+			x: -2.5d
 			y: 2.5d
 		}
 		{
@@ -129,14 +129,14 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 9.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["6DDBC0C21F8B534B"]
 			description: [
 				"Some materials are more abundant than they seem at first glance, they're simply locked up in different forms that require a touch more work to release."
 				""
-				"A Pulverizer can help extract these extras, such as getting some nickel from iron ore, or silver from lead ore. "
+				"A Pulverizer can help extract these extras, extracting more material from ores. Be sure to check out the available Catalysts to get the most out of this machine. "
 			]
 			hide_dependency_lines: true
 			id: "768186F5E866720E"
@@ -458,8 +458,8 @@
 				type: "item"
 			}]
 			title: "RF Capacity and Transfer Augments"
-			x: -3.0d
-			y: 5.5d
+			x: 6.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["7CF7DC42CB9FA741"]
@@ -509,8 +509,8 @@
 				type: "item"
 			}]
 			title: "Machine and Device Augments"
-			x: -2.5d
-			y: 4.5d
+			x: 6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["3C0866A9BBD5EBD9"]
@@ -536,7 +536,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 8.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3C0866A9BBD5EBD9"]
@@ -569,7 +569,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 8.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["13A6AFA79C2B1B4D"]
@@ -602,8 +602,8 @@
 				item: "thermal:machine_output_augment"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 5.0d
+			x: 8.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["13A6AFA79C2B1B4D"]
@@ -636,8 +636,8 @@
 				item: "thermal:machine_speed_augment"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 5.0d
+			x: 5.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["4A3199826CFBB9F3"]
@@ -732,117 +732,6 @@
 			}]
 			x: 0.5d
 			y: 9.5d
-		}
-		{
-			dependencies: ["6820AD7EF8665E03"]
-			description: [
-				"Industrial Engineers often face a trade-off when designing a system, speed versus efficiency. Consider the needs of the application when choosing between these."
-				""
-				"Efficiency pays off when energy can be stored for future use. In such a case, installing a few Multi-Cycle Injectors would be wise. "
-				""
-				"However, sometimes a loss is required to keep up with a steady demand. Auxiliary Reaction Chambers will increase output, but fuel will burn less efficiently. "
-				""
-				"Dynamos will produce less energy per tick as their internal buffer fills, but they will continue to burn fuel slowly unless turned off. With an Excitation Field Limiter installed, they’ll turn off on their own when full. "
-			]
-			id: "39CE8D4C0C8914F6"
-			min_width: 300
-			rewards: [
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
-					icon: "kubejs:rare_lootbox"
-					id: "3875F4F56E5A8C36"
-					player_command: false
-					title: "Rare Thermal Series Loot Box"
-					type: "command"
-				}
-				{
-					id: "71587E12B2039C32"
-					item: "thermal:upgrade_augment_1"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "22010A56C52BC4B3"
-					item: "thermal:dynamo_output_augment"
-					type: "item"
-				}
-				{
-					id: "5760AE88A570422B"
-					item: "thermal:dynamo_fuel_augment"
-					type: "item"
-				}
-				{
-					id: "65FA3B71E25431E7"
-					item: "thermal:dynamo_throttle_augment"
-					type: "item"
-				}
-			]
-			title: "Dynamo Augments"
-			x: -2.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["6820AD7EF8665E03"]
-			description: [
-				"For the ultimate power source from Thermal, things will need to get a little arcane. "
-				""
-				"The Disenchantment Dynamo burns enchanted books as fuel, converting the powerful magics on these books into more readily used energy. "
-			]
-			id: "5CF2A9B3D3B0CDD6"
-			rewards: [
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-					icon: "kubejs:sorcerers_delight"
-					id: "1AD96730E74078C1"
-					player_command: false
-					title: "Sorcerer's Delight"
-					type: "command"
-				}
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
-					icon: "kubejs:epic_lootbox"
-					id: "1BDADE828310A85A"
-					player_command: false
-					title: "Epic Thermal Series Loot Box"
-					type: "command"
-				}
-			]
-			subtitle: "A Remnant from Another Age"
-			tasks: [{
-				id: "5A2B9E7F105E3304"
-				item: "thermal:dynamo_disenchantment"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["6820AD7EF8665E03"]
-			description: ["Perfect for quickly charging a set of tools after a long mining session, the Energetic Infuser can hold up to nine items at a time for charging. Items may be accessed manually or via automation. "]
-			id: "701A7AF666D8D87E"
-			rewards: [
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
-					icon: "kubejs:rare_lootbox"
-					id: "741FEB82A692D45D"
-					player_command: false
-					title: "Rare Thermal Series Loot Box"
-					type: "command"
-				}
-				{
-					id: "0D2AEC1DCF3B37D4"
-					item: "thermal:rf_coil_augment"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "567209C59217F854"
-				item: "thermal:charge_bench"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 2.0d
 		}
 		{
 			dependencies: ["7CF7DC42CB9FA741"]
@@ -1025,29 +914,6 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["7CF7DC42CB9FA741"]
-			description: ["There’s no such thing as a free lunch, as the saying goes; doing work means using energy and the search for energy drives all things. Our first step, therefore, will be to generate some power to begin working with Thermal machines."]
-			hide_dependency_lines: true
-			id: "6820AD7EF8665E03"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "7BD49A5F0B7FE2C8"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "7250BA330B2F0E53"
-				item: "minecraft:redstone"
-				type: "item"
-			}]
-			title: "Getting Started: Power Generation"
-			x: -2.5d
-			y: 1.5d
-		}
-		{
 			dependencies: ["47F7760AAA4EC64E"]
 			description: ["Good soil can be hard to come by, but with modern composting methods, waste food can be easily converted into compost. From there, a little mixing with other substrates results in some fine soil for planting."]
 			hide_dependency_lines: true
@@ -1085,7 +951,7 @@
 				item: "thermal:device_composter"
 				type: "item"
 			}]
-			x: 5.5d
+			x: -3.5d
 			y: 3.0d
 		}
 		{
@@ -1127,7 +993,7 @@
 				item: "thermal:device_soil_infuser"
 				type: "item"
 			}]
-			x: 6.0d
+			x: -3.0d
 			y: 4.0d
 		}
 		{
@@ -1172,7 +1038,7 @@
 				item: "thermal:device_fisher"
 				type: "item"
 			}]
-			x: 7.0d
+			x: -2.0d
 			y: 4.0d
 		}
 		{
@@ -1208,7 +1074,7 @@
 				item: "thermal:device_hive_extractor"
 				type: "item"
 			}]
-			x: 7.5d
+			x: -1.5d
 			y: 3.0d
 		}
 		{
@@ -1261,7 +1127,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 9.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6DDBC0C21F8B534B"]
@@ -1316,7 +1182,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 8.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7CF7DC42CB9FA741"]
@@ -1550,8 +1416,8 @@
 				item: "thermal:area_radius_augment"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 5.5d
+			x: 7.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["7CF7DC42CB9FA741"]
@@ -1581,7 +1447,7 @@
 				type: "item"
 			}]
 			title: "Agricultural Devices"
-			x: 6.5d
+			x: -2.5d
 			y: 1.5d
 		}
 		{
@@ -1695,7 +1561,7 @@
 			]
 			title: "Advanced Materials"
 			x: 6.5d
-			y: 6.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3C0866A9BBD5EBD9"]
@@ -1733,7 +1599,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 9.0d
+			y: 3.5d
 		}
 	]
 	title: "Thermal Series"
