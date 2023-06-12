@@ -25,9 +25,9 @@
         "twilightforest:thornlands",
         "twilightforest:final_plateau"
     ],
-    "registryName": "vanilla_coal_twilight_forest",
+    "registryName": "vanilla_iron_twilight_forest",
     "config": {
-        "material": "coal",
+        "material": "iron",
         "fillerTypes": [
             "minecraft_deepslate",
             "minecraft_tuff",
@@ -47,9 +47,9 @@
             "quark_jasper",
             "quark_shale"
         ],
-        "chance": 5,
-        "size": 1,
-        "minYLevel": -32,
+        "chance": 25,
+        "size": 5,
+        "minYLevel": -30,
         "maxYLevel": -25,
         "placement": "uniform",
         "rarity": "common"

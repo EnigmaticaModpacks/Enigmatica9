@@ -25,9 +25,9 @@
         "twilightforest:thornlands",
         "twilightforest:final_plateau"
     ],
-    "registryName": "vanilla_coal_twilight_forest",
+    "registryName": "vanilla_copper_twilight_forest",
     "config": {
-        "material": "coal",
+        "material": "copper",
         "fillerTypes": [
             "minecraft_deepslate",
             "minecraft_tuff",
@@ -47,10 +47,10 @@
             "quark_jasper",
             "quark_shale"
         ],
-        "chance": 5,
-        "size": 1,
-        "minYLevel": -32,
-        "maxYLevel": -25,
+        "chance": 22,
+        "size": 5,
+        "minYLevel": -5,
+        "maxYLevel": 20,
         "placement": "uniform",
         "rarity": "common"
     }

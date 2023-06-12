@@ -48,7 +48,7 @@
             "quark_shale"
         ],
         "chance": 4,
-        "size": 10,
+        "size": 3,
         "minYLevel": -25,
         "maxYLevel": -15,
         "placement": "uniform",

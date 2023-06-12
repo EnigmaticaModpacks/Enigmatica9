@@ -1,6 +1,6 @@
 {
     "type": "emendatusenigmatica:vanilla_deposit",
-    "dimension": "twilightforest:twilight_forest",
+    "dimension": "twilightforest:twilight_forest_type",
     "biomes": [
         "twilightforest:clearing",
         "twilightforest:dense_forest",
@@ -25,9 +25,9 @@
         "twilightforest:thornlands",
         "twilightforest:final_plateau"
     ],
-    "registryName": "vanilla_coal_twilight_forest",
+    "registryName": "vanilla_apatite_twilight_forest",
     "config": {
-        "material": "coal",
+        "material": "apatite",
         "fillerTypes": [
             "minecraft_deepslate",
             "minecraft_tuff",
@@ -47,10 +47,10 @@
             "quark_jasper",
             "quark_shale"
         ],
-        "chance": 5,
-        "size": 1,
-        "minYLevel": -32,
-        "maxYLevel": -25,
+        "chance": 20,
+        "size": 16,
+        "minYLevel": -10,
+        "maxYLevel": 30,
         "placement": "uniform",
         "rarity": "common"
     }
