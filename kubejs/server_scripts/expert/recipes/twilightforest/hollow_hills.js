@@ -13,7 +13,6 @@ ServerEvents.highPriorityData((event) => {
                 'twilightforest:apatite_ore_stalactite',
                 'twilightforest:amethyst_block_stalactite',
                 'twilightforest:quartz_block_stalactite',
-                'twilightforest:calcite_stalactite',
 
                 'twilightforest:gold_ore_stalactite',
                 'twilightforest:iron_ore_stalactite',

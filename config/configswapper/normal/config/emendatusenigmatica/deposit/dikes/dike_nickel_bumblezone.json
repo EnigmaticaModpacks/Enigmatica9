@@ -1,0 +1,19 @@
+{
+    "type": "emendatusenigmatica:dike_deposit",
+    "dimension": "the_bumblezone:the_bumblezone",
+    "biomes": ["the_bumblezone:hive_pillar", "the_bumblezone:hive_wall", "the_bumblezone:pollinated_pillar"],
+    "registryName": "dike_nickel_bumblezone_deposit",
+    "config": {
+        "blocks": [
+            { "block": "emendatusenigmatica:nickel_honeycomb_block_ore", "weight": 25 },
+            { "block": "emendatusenigmatica:copper_honeycomb_block_ore", "weight": 15 },
+            { "block": "minecraft:honeycomb_block", "weight": 60 }
+        ],
+        "fillerTypes": ["minecraft_honeycomb_block"],
+        "chance": 15,
+        "size": 50,
+        "minYLevel": 1,
+        "maxYLevel": 255,
+        "generateSamples": false
+    }
+}

@@ -206,43 +206,47 @@
 				}
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "2649AB826D733E83"
-					item: "ars_nouveau:blue_archwood_sapling"
-					type: "item"
+			tasks: [{
+				id: "3E9ED412320D7C44"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ars_nouveau:red_archwood_sapling"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:yellow_archwood_sapling"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:green_archwood_sapling"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:purple_archwood_sapling"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:blue_archwood_sapling"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:ancient_sapling"
+							}
+							{
+								Count: 1b
+								id: "quark:ancient_sapling"
+							}
+						]
+					}
 				}
-				{
-					id: "6CBD1763D39C82C8"
-					item: "ars_nouveau:purple_archwood_sapling"
-					type: "item"
-				}
-				{
-					id: "4C0727B5BC2D1D96"
-					item: "ars_nouveau:green_archwood_sapling"
-					type: "item"
-				}
-				{
-					id: "7248E662C073F24E"
-					item: "ars_nouveau:red_archwood_sapling"
-					type: "item"
-				}
-				{
-					id: "439C281D06B2DB3A"
-					item: "ars_elemental:yellow_archwood_sapling"
-					type: "item"
-				}
-				{
-					id: "07E22FE463B8A021"
-					item: "quark:ancient_sapling"
-					type: "item"
-				}
-				{
-					id: "289800F347137F48"
-					item: "naturesaura:ancient_sapling"
-					type: "item"
-				}
-			]
+				title: "Magic Saplings"
+				type: "item"
+			}]
 			title: "Druidic Roots"
 			x: -3.5d
 			y: -5.0d
