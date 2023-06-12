@@ -2,9 +2,9 @@ ServerEvents.chestLootTables((event) => {
     event.modify(`idas:witches_treestump/witches_treestump`, (table) => {
         table.addPool((pool) => {
             pool.rolls = [1, 3];
-            pool.addItem('emendatusenigmatica:raw_gold', 3, [2, 6]);
-            pool.addItem('emendatusenigmatica:raw_iron', 1, [2, 6]);
-            pool.addItem('emendatusenigmatica:raw_copper', 2, [2, 6]);
+            pool.addItem('minecraft:raw_gold', 3, [2, 6]);
+            pool.addItem('minecraft:raw_iron', 1, [2, 6]);
+            pool.addItem('minecraft:raw_copper', 2, [2, 6]);
             pool.addItem('naturesaura:death_ring', 2, 1);
             pool.addItem('ars_elemental:earth_focus', 1, 1);
             pool.addItem('occultism:soul_gem', 1, [1, 3]);

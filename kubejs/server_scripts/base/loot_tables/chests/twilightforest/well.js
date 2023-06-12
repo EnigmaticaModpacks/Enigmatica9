@@ -9,7 +9,7 @@ ServerEvents.genericLootTables((event) => {
         table.addPool((pool) => {
             pool.rolls = [1, 3];
             pool.randomChance(0.25);
-            pool.addItem('emendatusenigmatica:raw_copper', 2, [2, 5]);
+            pool.addItem('minecraft:raw_copper', 2, [2, 5]);
             pool.addItem('emendatusenigmatica:raw_silver', 1, [2, 5]);
         });
 

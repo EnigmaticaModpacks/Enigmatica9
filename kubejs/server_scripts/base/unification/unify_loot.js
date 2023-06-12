@@ -13,22 +13,10 @@ LootJS.modifiers((event) => {
         // 'minecraft:diamond': 'minecraft:dirt'
     };
 
-    // Raw Ore Override
-    let mc_materials = ['iron', 'gold', 'copper'];
-    mc_materials.forEach((material) => {
-        let mc_variant = `minecraft:raw_${material}`;
-        exceptions[mc_variant] = mc_variant;
-        exceptions[`emendatusenigmatica:raw_${material}`] = mc_variant;
-    });
-
     function unifyLoot(tag, suffix, itemStack, prefix, replaceWithRaw, count) {
         prefix = !prefix ? '' : prefix + '_';
         replaceWithRaw = !replaceWithRaw ? false : true;
         count = !count ? itemStack.getCount() : count;
-
-        if (exceptions[itemStack.getId()]) {
-            return Item.of(exceptions[itemStack.getId()], itemStack.getCount());
-        }
 
         // If itemstack already is from EE and replaceWithRaw is false, just return it.
         if (itemStack.getId().startsWith('emendatusenigmatica:') && !replaceWithRaw && !exceptions[itemStack.getId()]) {
@@ -41,11 +29,17 @@ LootJS.modifiers((event) => {
             let tagString = iterator.next().location().toString();
             if (tagString.startsWith(tag)) {
                 let tagSubString = tagString.substring(tag.lastIndexOf('/') + 1);
-                if (Item.exists(`emendatusenigmatica:raw_${tagSubString}`) && replaceWithRaw) {
-                    return Item.of(`emendatusenigmatica:raw_${tagSubString}`, count);
+
+                let replacementItem = AlmostUnified.getPreferredItemForTag(
+                    `forge:raw_materials/${tagSubString}`
+                ).getId();
+                if (Item.exists(replacementItem) && replaceWithRaw) {
+                    return Item.of(replacementItem, count);
                 }
-                if (Item.exists(`emendatusenigmatica:${tagSubString}_${suffix}`)) {
-                    return Item.of(`emendatusenigmatica:${prefix}${tagSubString}_${suffix}`, itemStack.getCount());
+
+                replacementItem = AlmostUnified.getPreferredItemForTag(`${tag}${tagSubString}`).getId();
+                if (Item.exists(replacementItem)) {
+                    return Item.of(replacementItem, itemStack.getCount());
                 }
                 return itemStack;
             }
@@ -85,7 +79,7 @@ LootJS.modifiers((event) => {
         )
         // Crushed Ores
         .modifyLoot(Ingredient.of('#create:crushed_ores'), (itemStack) =>
-            unifyLoot('create:crushed_ores', 'ore', itemStack, null, true)
+            unifyLoot('create:crushed_ores', null, itemStack, null, true)
         )
         // Gems
         .modifyLoot(Ingredient.of('#forge:gems'), (itemStack) => unifyLoot('forge:gems', 'gem', itemStack))

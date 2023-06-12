@@ -7,9 +7,9 @@ ServerEvents.genericLootTables((event) => {
         table.addPool((pool) => {
             pool.rolls = [4, 6];
             pool.addEntry({ type: 'loot_table', weight: 25, name: 'twilightforest:structures/useless' });
-            pool.addItem('emendatusenigmatica:raw_iron', 75, [1, 6]);
-            pool.addItem('emendatusenigmatica:raw_gold', 75, [1, 5]);
-            pool.addItem('emendatusenigmatica:raw_copper', 75, [1, 4]);
+            pool.addItem('minecraft:raw_iron', 75, [1, 6]);
+            pool.addItem('minecraft:raw_gold', 75, [1, 5]);
+            pool.addItem('minecraft:raw_copper', 75, [1, 4]);
             pool.addItem('emendatusenigmatica:raw_silver', 75, [1, 3]);
             pool.addItem('emendatusenigmatica:raw_tin', 75, [1, 2]);
             pool.addItem('minecraft:carrot', 75, [1, 4]);
