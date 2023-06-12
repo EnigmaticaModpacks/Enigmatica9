@@ -19,6 +19,8 @@ const colors = [
     'light_gray'
 ];
 
+const sandstone_colors = ['colorless', 'red', 'black', 'white', 'blue', 'purple', 'windswept'];
+
 const xnet_colors = ['red', 'yellow', 'green', 'blue'];
 
 const flare_colors = {

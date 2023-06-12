@@ -51,6 +51,26 @@ ServerEvents.recipes((event) => {
         }
     ];
 
+    sandstone_colors.forEach((color) => {
+        let output = '';
+
+        if (color == 'colorless') {
+            output = 'minecraft:sand';
+        } else if (color == 'red') {
+            output = 'minecraft:red_sand';
+        } else {
+            output = `byg:${color}_sand`;
+        }
+
+        recipes.push({
+            output: `2x ${output}`,
+            secondaries: [{ output: { item: 'emendatusenigmatica:niter_gem', count: 1 }, chance: 0.5 }],
+            input: `#forge:sandstone/${color}`,
+            energy: 4000,
+            id: `${id_prefix}niter_gem_from_${color}_sandstone`
+        });
+    });
+
     recipes.forEach((recipe) => {
         recipe.type = 'immersiveengineering:crusher';
         recipe.input = Ingredient.of(recipe.input).toJson();

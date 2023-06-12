@@ -73,6 +73,8 @@ ServerEvents.recipes((event) => {
         { id: 'immersiveengineering:refinery/biodiesel' },
         { id: 'immersiveengineering:crusher/slag' },
         { id: 'immersiveengineering:crusher/blaze_powder' },
+        { id: 'immersiveengineering:crusher/sandstone' },
+        { id: 'immersiveengineering:crusher/red_sandstone' },
 
         { id: /mekanism:enriching\/dye/ },
         { id: /mekanism:compat\/byg\/dye/ },
@@ -118,6 +120,7 @@ ServerEvents.recipes((event) => {
 
         { id: 'rftoolsbase:dimensionalshard' },
 
+        { id: /thermal:machines\/pulverizer\/pulverizer.*sandstone/ },
         { id: 'thermal:machines/centrifuge/centrifuge_allium' },
         { id: 'thermal:machines/centrifuge/centrifuge_azure_bluet' },
         { id: 'thermal:machines/centrifuge/centrifuge_blue_orchid' },
