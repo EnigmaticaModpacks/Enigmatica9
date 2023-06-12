@@ -91,63 +91,20 @@
 				}
 			]
 			shape: "hexagon"
-			tasks: [
-				{
-					id: "3AF4C35C5842E611"
-					item: {
-						Count: 1b
-						id: "immersiveengineering:wirecutter"
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "0C1389A70E2497E7"
+				item: {
+					Count: 1b
+					id: "immersiveengineering:hammer"
+					tag: {
+						Damage: 0
 					}
-					type: "item"
 				}
-				{
-					id: "0C1389A70E2497E7"
-					item: {
-						Count: 1b
-						id: "immersiveengineering:hammer"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "Getting Started: Logistics and Storage"
 			x: -3.5d
 			y: -6.0d
-		}
-		{
-			dependencies: ["2BE93580D70ADF20"]
-			description: [
-				"Critical to the creation of Steel, the Coke Oven is primarily used for processing Coal into Coal Coke and Creosote, two materials that will be used extensively throughout Immersive Engineering."
-				""
-				"Items and fluids may be piped in and out automatically."
-				""
-				""
-				"The Engineer’s Manual shows how this structure is constructed. Right-Click the block highlighted in Red in the manual with an Engineer’s Hammer to form the structure. "
-			]
-			hide_dependency_lines: true
-			icon: "immersiveengineering:coke_oven"
-			id: "1303E05C56CDB1B5"
-			rewards: [{
-				count: 8
-				id: "0DCEF828615B1117"
-				item: "emendatusenigmatica:coal_coke_gem"
-				title: "Coal Coke"
-				type: "item"
-			}]
-			tasks: [{
-				advancement: "immersiveengineering:main/mb_cokeoven"
-				criterion: ""
-				id: "0ECFAF7E071E6B50"
-				type: "advancement"
-			}]
-			title: "Coke Oven"
-			x: 0.5d
-			y: -5.0d
 		}
 		{
 			dependencies: ["2BE93580D70ADF20"]
@@ -193,8 +150,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: -4.0d
+			x: -0.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["49C19EB5AD09505C"]
@@ -269,7 +226,7 @@
 			}]
 			title: "Crusher"
 			x: -0.5d
-			y: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["2BE93580D70ADF20"]
@@ -316,7 +273,7 @@
 			}]
 			title: "Metal Press"
 			x: 0.5d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2BE93580D70ADF20"]
@@ -354,8 +311,8 @@
 				type: "advancement"
 			}]
 			title: "Improved Blast Furnace"
-			x: 1.0d
-			y: -4.0d
+			x: 1.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["133A278BE0697460"]
@@ -418,7 +375,7 @@
 			]
 			title: "Sawmill"
 			x: 1.5d
-			y: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3F9F4B331D696ED3"]
@@ -451,7 +408,7 @@
 			}]
 			title: "Industrial Squeezer"
 			x: -8.5d
-			y: -3.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3F9F4B331D696ED3"]
@@ -475,7 +432,7 @@
 			}]
 			title: "Refinery"
 			x: -6.5d
-			y: -3.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3F9F4B331D696ED3"]
@@ -498,7 +455,7 @@
 				type: "advancement"
 			}]
 			title: "Assembler"
-			x: -7.0d
+			x: -7.5d
 			y: -4.5d
 		}
 		{
@@ -522,8 +479,8 @@
 				type: "advancement"
 			}]
 			title: "Mixer"
-			x: -8.0d
-			y: -2.5d
+			x: -7.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3F9F4B331D696ED3"]
@@ -548,8 +505,8 @@
 				type: "advancement"
 			}]
 			title: "Bottling Machine"
-			x: -7.0d
-			y: -2.5d
+			x: -6.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["14039F7C90D023AB"]
@@ -695,8 +652,8 @@
 				type: "advancement"
 			}]
 			title: "Fermenter"
-			x: -8.0d
-			y: -4.5d
+			x: -8.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["49C19EB5AD09505C"]

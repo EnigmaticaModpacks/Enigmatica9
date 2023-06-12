@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
             count: 1,
             reagent: '#forge:gems/source',
             inputs: ['twilightforest:fiery_blood', 'hexerei:dried_yellow_dock_flowers', 'minecraft:blaze_rod'],
-            source: 2000,
+            source: 500,
             id: 'ars_nouveau:imbuement_fire_essence'
         },
         {
@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
             count: 1,
             reagent: '#forge:gems/source',
             inputs: ['twilightforest:raven_feather', 'hexerei:dried_sage', 'thermal:blitz_rod'],
-            source: 2000,
+            source: 500,
             id: 'ars_nouveau:imbuement_air_essence'
         },
         {
@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
             count: 1,
             reagent: '#forge:gems/source',
             inputs: ['twilightforest:alpha_yeti_fur', 'hexerei:dried_belladonna_flowers', 'thermal:blizz_rod'],
-            source: 2000,
+            source: 500,
             id: 'ars_nouveau:imbuement_water_essence'
         },
         {
@@ -35,7 +35,7 @@ ServerEvents.recipes((event) => {
             count: 1,
             reagent: '#forge:gems/source',
             inputs: ['twilightforest:magic_beans', 'hexerei:mandrake_root', 'thermal:basalz_rod'],
-            source: 2000,
+            source: 500,
             id: 'ars_nouveau:imbuement_earth_essence'
         },
         {
@@ -43,8 +43,24 @@ ServerEvents.recipes((event) => {
             count: 1,
             reagent: '#forge:gems/source',
             inputs: ['#forge:ingots/ironwood', 'twilightforest:cicada', 'twilightforest:naga_scale'],
-            source: 2000,
+            source: 500,
             id: 'ars_nouveau:imbuement_abjuration_essence'
+        },
+        {
+            output: 'ars_nouveau:conjuration_essence',
+            count: 1,
+            reagent: '#forge:gems/source',
+            inputs: ['#forge:ingots/silver', 'ars_nouveau:magebloom_block', 'minecraft:compass'],
+            source: 500,
+            id: `ars_nouveau:imbuement_conjuration_essence`
+        },
+        {
+            output: 'ars_nouveau:manipulation_essence',
+            count: 1,
+            reagent: '#forge:gems/source',
+            inputs: ['#forge:ingots/copper', 'minecraft:redstone_lamp', 'minecraft:clock'],
+            source: 500,
+            id: `ars_nouveau:imbuement_manipulation_essence`
         },
         {
             output: 'naturesaura:infused_stone',
@@ -53,22 +69,7 @@ ServerEvents.recipes((event) => {
             source: 500,
             id: `${id_prefix}infused_stone`
         },
-        {
-            output: 'ars_nouveau:conjuration_essence',
-            count: 1,
-            reagent: '#forge:gems/source',
-            inputs: ['#forge:ingots/silver', 'ars_nouveau:magebloom_block', 'minecraft:compass'],
-            source: 2000,
-            id: `ars_nouveau:imbuement_conjuration_essence`
-        },
-        {
-            output: 'ars_nouveau:manipulation_essence',
-            count: 1,
-            reagent: '#forge:gems/source',
-            inputs: ['#forge:ingots/copper', 'minecraft:redstone_lamp', 'minecraft:clock'],
-            source: 2000,
-            id: `ars_nouveau:imbuement_manipulation_essence`
-        },
+
         {
             output: 'ars_elemental:anima_essence',
             count: 1,
@@ -82,7 +83,7 @@ ServerEvents.recipes((event) => {
             count: 1,
             reagent: 'pneumaticcraft:compressed_stone',
             inputs: ['#forge:essences/earth', '#forge:essences/earth', '#forge:essences/earth'],
-            source: 600,
+            source: 500,
             id: `${id_prefix}drill_bit_iron`
         },
         {

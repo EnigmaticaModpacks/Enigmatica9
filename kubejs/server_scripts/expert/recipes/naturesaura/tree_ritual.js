@@ -333,10 +333,10 @@ ServerEvents.recipes((event) => {
                 'kubejs:dimensional_storage_crystal',
                 'ae2:fluix_pearl',
                 'ae2:fluix_pearl',
-                '#forge:ingots/copper',
-                '#forge:ingots/copper',
-                '#forge:ingots/copper',
-                '#forge:ingots/copper'
+                '#forge:ingots/signalum',
+                '#forge:ingots/signalum',
+                '#forge:ingots/signalum',
+                '#forge:ingots/signalum'
             ],
             time: 5,
             sapling: 'ars_nouveau:purple_archwood_sapling',
@@ -382,10 +382,10 @@ ServerEvents.recipes((event) => {
                 'ae2:singularity',
                 'ae2:singularity',
 
-                '#forge:ingots/iesnium',
-                '#forge:ingots/iesnium',
-                '#forge:ingots/iesnium',
-                '#forge:ingots/iesnium'
+                '#forge:ingots/soul_steel',
+                '#forge:ingots/soul_steel',
+                '#forge:ingots/soul_steel',
+                '#forge:ingots/soul_steel'
             ],
             time: 5,
             sapling: 'ars_nouveau:purple_archwood_sapling',

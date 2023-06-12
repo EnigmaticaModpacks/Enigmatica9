@@ -25,10 +25,6 @@ ItemEvents.tooltip((event) => {
     */
     const recipes = [
         {
-            items: ['occultism:dimensional_mineshaft'],
-            text: [Text.of('Consumes Aura while in operation.').red()]
-        },
-        {
             items: ['kubejs:energetic_transference_matrix'],
             text: [
                 Text.of(
@@ -43,6 +39,10 @@ ItemEvents.tooltip((event) => {
         {
             items: ['spirit:soul_cage'],
             text: [Text.of('Consumes Aura for each mob spawned.').red()]
+        },
+        {
+            items: ['immersiveengineering:windmill', 'immersiveengineering:watermill'],
+            text: [Text.of('Decorative use only.').green()]
         }
     ];
 

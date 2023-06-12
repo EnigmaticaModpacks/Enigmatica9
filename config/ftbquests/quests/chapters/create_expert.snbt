@@ -32,7 +32,13 @@
 			shape: "gear"
 			tasks: [{
 				id: "77654BA6263D7365"
-				item: "minecraft:andesite"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:stone"
+					}
+				}
 				title: "Create"
 				type: "item"
 			}]
@@ -222,6 +228,7 @@
 				""
 				"To make efficient use of a fan and belt setup, make it blow across the length of the belt. Faster spin speeds mean the air stream blows farther. This also allows the fan to process multiple stacks at once. "
 			]
+			hide_dependency_lines: true
 			icon: "create:propeller"
 			id: "371E4554AB5BF278"
 			min_width: 300

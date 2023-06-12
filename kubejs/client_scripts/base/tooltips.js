@@ -517,6 +517,10 @@ ItemEvents.tooltip((event) => {
         {
             items: ['superiorshields:flux_shield'],
             text: [Text.of(`Accepts Integral Components`).green()]
+        },
+        {
+            items: ['mekanism:cardboard_box'],
+            text: [Text.of(`Used for moving inventories`).green()]
         }
     ];
 
