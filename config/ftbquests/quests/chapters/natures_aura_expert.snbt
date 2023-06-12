@@ -210,7 +210,9 @@
 			description: [
 				"The Natural Altar is the heart of two ritual practices; one to infuse life into objects and another to infuse death. "
 				""
-				"Refer to the Book of Natural Aura's section on the Natural Altar and the Crimson Altar for a preview of the required structure."
+				"Refer to the Book of Natural Aura's section on the Natural Altar and the Crimson Altar for a preview of the required structure. "
+				""
+				"Any type of plank may be used in its construction. "
 			]
 			hide_dependency_lines: true
 			icon: "naturesaura:nature_altar"
@@ -235,7 +237,14 @@
 				{
 					count: 20L
 					id: "4DD75E6EBA654D12"
-					item: "minecraft:oak_planks"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:planks"
+						}
+					}
+					title: "Any #minecraft:planks"
 					type: "item"
 				}
 				{

@@ -1,0 +1,39 @@
+{
+    "type": "emendatusenigmatica:dense_deposit",
+    "dimension": "twilightforest:twilight_forest_type",
+    "biomes": [
+        "twilightforest:clearing",
+        "twilightforest:dense_forest",
+        "twilightforest:dense_mushroom_forest",
+        "twilightforest:firefly_forest",
+        "twilightforest:forest",
+        "twilightforest:mushroom_forest",
+        "twilightforest:oak_savannah",
+        "twilightforest:spooky_forest",
+        "twilightforest:enchanted_forest",
+        "twilightforest:dense_mushroom_forest",
+        "twilightforest:lake",
+        "twilightforest:stream",
+        "twilightforest:underground",
+        "twilightforest:swamp",
+        "twilightforest:fire_swamp",
+        "twilightforest:dark_forest",
+        "twilightforest:dark_forest_center",
+        "twilightforest:snowy_forest",
+        "twilightforest:glacier",
+        "twilightforest:highlands",
+        "twilightforest:thornlands",
+        "twilightforest:final_plateau"
+    ],
+    "registryName": "dense_granite",
+    "config": {
+        "blocks": [{ "block": "minecraft:granite", "weight": 100 }],
+        "chance": 1,
+        "size": 38,
+        "minYLevel": -30,
+        "maxYLevel": 30,
+        "rarity": "common",
+        "generateSamples": false,
+        "fillerTypes": ["minecraft_stone"]
+    }
+}
