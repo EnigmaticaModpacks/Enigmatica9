@@ -175,7 +175,8 @@ ItemEvents.tooltip((event) => {
                 'hexerei:dried_sage_bundle',
                 'hexerei:sage_burning_plate',
                 'naturesaura:spawn_lamp',
-                'immersiveengineering:electric_lantern'
+                'immersiveengineering:electric_lantern',
+                'ars_nouveau:ritual_sanctuary'
             ],
             text: [Text.of(`Prevents Mob Spawns`).green()]
         },
