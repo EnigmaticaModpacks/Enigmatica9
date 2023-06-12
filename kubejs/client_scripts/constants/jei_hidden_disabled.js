@@ -516,6 +516,13 @@ jei.expert.items.disabled = [
     'occultism:miner_afrit_deeps',
     'occultism:miner_marid_master',
     'occultism:dimensional_mineshaft',
+    'occultism:infused_pickaxe',
+    'occultism:otherworld_goggles',
+    'occultism:lens_frame',
+    'occultism:infused_lenses',
+    'occultism:lenses',
+    'occultism:magic_lamp_empty',
+    'occultism:spirit_attuned_pickaxe_head',
 
     'pneumaticcraft:air_compressor',
     'pneumaticcraft:electrostatic_compressor',

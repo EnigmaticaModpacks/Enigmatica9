@@ -364,6 +364,13 @@ ServerEvents.recipes((event) => {
         { id: 'occultism:ritual/summon_wild_otherworld_bird' },
         { id: 'occultism:ritual/summon_wild_parrot' },
         { id: 'occultism:ritual/craft_dimensional_mineshaft' },
+        { id: 'occultism:ritual/craft_infused_pickaxe' },
+        { id: 'occultism:ritual/craft_infused_lenses' },
+        { id: 'occultism:crafting/goggles' },
+        { id: 'occultism:crafting/lens_frame' },
+        { id: 'occultism:crafting/lenses' },
+        { id: 'occultism:crafting/magic_lamp_empty' },
+        { id: 'occultism:crafting/spirit_attuned_pickaxe_head' },
 
         { id: /pneumaticcraft:.*_compressor/ },
         { id: /pneumaticcraft:thermo_plant\/.*_drill_bit/ },
