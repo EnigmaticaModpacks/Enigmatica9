@@ -394,14 +394,14 @@ ServerEvents.recipes((event) => {
             id: 'ae2:network/blocks/energy_energy_cell'
         },
         {
-            output: '2x ae2:quantum_ring',
+            output: '8x ae2:quantum_ring',
             pattern: ['ABA', 'ECE', 'ADA'],
             key: {
                 A: 'ars_nouveau:sourcestone',
                 B: 'mekanism:teleportation_core',
                 C: 'pneumaticcraft:logistics_core',
                 D: '#ae2:smart_dense_cable',
-                E: '#forge:gears/signalum'
+                E: 'occultism:storage_stabilizer_tier1'
             },
             id: 'ae2:network/blocks/quantum_ring'
         },

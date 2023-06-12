@@ -453,6 +453,7 @@ jei.expert.items.disabled = [
     'mekanism:qio_exporter',
     'mekanism:qio_importer',
     'mekanism:qio_drive_array',
+    'mekanism:qio_dashboard',
 
     'mekanismgenerators:gas_burning_generator',
     'mekanismgenerators:advanced_solar_generator',

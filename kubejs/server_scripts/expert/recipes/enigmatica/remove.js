@@ -334,6 +334,7 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:qio_exporter' },
         { id: 'mekanism:qio_importer' },
         { id: 'mekanism:qio_drive_array' },
+        { id: 'mekanism:qio_dashboard' },
 
         { id: /minecraft:diamond_(helmet|chestplate|leggings|boots)/ },
         { id: /minecraft:diamond_(sword|pickaxe|axe|shovel|hoe)/ },

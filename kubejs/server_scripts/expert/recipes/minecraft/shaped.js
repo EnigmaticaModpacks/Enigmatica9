@@ -127,6 +127,15 @@ ServerEvents.recipes((event) => {
                 B: 'minecraft:stone'
             },
             id: 'minecraft:stonecutter'
+        },
+        {
+            output: 'minecraft:conduit',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'minecraft:nautilus_shell',
+                B: 'quark:blue_rune'
+            },
+            id: 'minecraft:conduit'
         }
     ];
 
