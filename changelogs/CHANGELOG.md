@@ -7,7 +7,7 @@
 ### 🌟 Improvements
 
 -   Increase drop rate for saplings from Quark trees [\#396](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/396) ([MuteTiefling](https://github.com/MuteTiefling))
--   Introducing Ore Gen in the Twilight Forest and Bumblezone
+-   Introducing Ore Gen in the Twilight Forest and Bumblezone [\#400](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/400) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
