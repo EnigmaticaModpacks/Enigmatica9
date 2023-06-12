@@ -32,7 +32,13 @@
 			shape: "gear"
 			tasks: [{
 				id: "77654BA6263D7365"
-				item: "minecraft:andesite"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:stone"
+					}
+				}
 				title: "Create"
 				type: "item"
 			}]

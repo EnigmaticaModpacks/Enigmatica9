@@ -102,9 +102,6 @@
     ],
     "priorityOverrides": {
         "forge:ores/coal": "emendatusenigmatica",
-        "forge:ores/iron": "emendatusenigmatica",
-        "forge:ores/copper": "emendatusenigmatica",
-        "forge:ores/gold": "emendatusenigmatica",
         "forge:ores/redstone": "emendatusenigmatica",
         "forge:ores/emerald": "emendatusenigmatica",
         "forge:ores/lapis": "emendatusenigmatica",
