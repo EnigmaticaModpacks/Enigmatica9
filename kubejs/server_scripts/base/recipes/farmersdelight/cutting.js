@@ -1,16 +1,15 @@
 ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/farmersdelight/cutting/';
     const recipes = [
-        // {
-        //     ingredients: [{ item: 'minecraft:acacia_log' }],
-        //     result: [{ item: 'minecraft:stripped_acacia_log' }, { item: 'farmersdelight:tree_bark' }],
-        //     sound: 'minecraft:item.axe.strip',
-        //     tool: {
-        //         type: 'farmersdelight:tool_action',
-        //         action: 'axe_strip'
-        //     },
-        //     id: `${id_prefix}stripped_acacia_log`
-        // }
+        {
+            ingredients: [{ item: 'minecraft:calcite' }],
+            result: [{ item: 'minecraft:nautilus_shell', chance: 0.05 }],
+            tool: {
+                type: 'farmersdelight:tool_action',
+                action: 'pickaxe_dig'
+            },
+            id: `${id_prefix}nautilus_shell`
+        }
     ];
 
     wood_properties.forEach((material) => {
