@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
                     keys: {
                         A: { block: 'powah:energized_steel_block' },
                         B: { block: '#forge:storage_blocks/source' },
-                        C: { block: 'occultism:spirit_attuned_crystal' }
+                        C: { block: 'minecraft:wither_skeleton_skull' }
                     }
                 }
             },
@@ -40,7 +40,7 @@ ServerEvents.recipes((event) => {
                     keys: {
                         A: { block: 'powah:energized_steel_block' },
                         B: { block: '#forge:storage_blocks/source' },
-                        C: { block: 'occultism:spirit_attuned_crystal' }
+                        C: { block: 'minecraft:wither_skeleton_skull' }
                     }
                 }
             },
