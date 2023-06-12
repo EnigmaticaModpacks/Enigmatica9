@@ -55,6 +55,27 @@ ServerEvents.recipes((event) => {
         }
     ];
 
+    sandstone_colors.forEach((color) => {
+        let output = '';
+
+        if (color == 'colorless') {
+            output = 'minecraft:sand';
+        } else if (color == 'red') {
+            output = 'minecraft:red_sand';
+        } else {
+            output = `byg:${color}_sand`;
+        }
+
+        recipes.push({
+            output: [
+                { item: output, count: 2, chance: 1.0 },
+                { item: 'emendatusenigmatica:niter_gem', count: 1, chance: 0.35 }
+            ],
+            input: `#forge:sandstone/${color}`,
+            id: `${id_prefix}niter_gem_from_${color}_sandstone`
+        });
+    });
+
     recipes.forEach((recipe) => {
         recipe.type = 'ars_nouveau:crush';
         recipe.input = Ingredient.of(recipe.input).toJson();

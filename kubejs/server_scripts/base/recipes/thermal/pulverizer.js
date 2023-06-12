@@ -70,6 +70,28 @@ ServerEvents.recipes((event) => {
         }
     ];
 
+    sandstone_colors.forEach((color) => {
+        let output = '';
+
+        if (color == 'colorless') {
+            output = 'minecraft:sand';
+        } else if (color == 'red') {
+            output = 'minecraft:red_sand';
+        } else {
+            output = `byg:${color}_sand`;
+        }
+
+        recipes.push({
+            input: `#forge:sandstone/${color}`,
+            outputs: [
+                { item: output, count: 2 },
+                { item: 'emendatusenigmatica:niter_gem', chance: 0.3 }
+            ],
+            energy: 4000,
+            id: `${id_prefix}niter_gem_from_${color}_sandstone`
+        });
+    });
+
     recipes.forEach((recipe) => {
         recipe.type = 'thermal:pulverizer';
         recipe.ingredient = Ingredient.of(recipe.input).toJson();

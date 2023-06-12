@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    const id_prefix = 'enigmatica:base/create/crushing_wheels/';
+    const id_prefix = 'enigmatica:base/create/crushing/';
 
     let recipes = [
         {
