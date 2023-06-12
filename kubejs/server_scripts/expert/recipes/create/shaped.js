@@ -17,15 +17,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}wand_of_symmetry`
         },
         {
-            output: 'create:water_wheel',
-            pattern: [' A ', 'ABA', ' A '],
-            key: {
-                A: 'immersiveengineering:waterwheel_segment',
-                B: 'create:large_cogwheel'
-            },
-            id: `create:crafting/kinetics/water_wheel`
-        },
-        {
             output: 'create:windmill_bearing',
             pattern: ['A', 'B'],
             key: {
