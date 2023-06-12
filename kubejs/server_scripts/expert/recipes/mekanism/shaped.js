@@ -394,6 +394,57 @@ ServerEvents.recipes((event) => {
                 F: '#forge:essences/manipulation'
             },
             id: 'mekanism:chemical_dissolution_chamber'
+        },
+        {
+            output: 'mekanism:nutritional_liquifier',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'thermal:cured_rubber',
+                B: 'pneumaticcraft:compressed_stone_slab',
+                C: '#forge:glass/colorless',
+                D: 'create:propeller',
+                E: 'pneumaticcraft:compressed_stone',
+                F: 'createaddition:electric_motor'
+            },
+            id: 'mekanism:nutritional_liquifier'
+        },
+        {
+            output: 'mekanism:security_desk',
+            pattern: [' A ', 'BCB', 'B B'],
+            key: {
+                A: 'supplementaries:crystal_display',
+                B: '#forge:ingots/compressed_iron',
+                C: 'pneumaticcraft:network_registry'
+            },
+            id: 'mekanism:security_desk'
+        },
+        {
+            output: 'mekanism:configuration_card',
+            pattern: ['ABA', ' CC'],
+            key: {
+                A: '#pneumaticcraft:plastic_sheets',
+                B: 'quark:yellow_rune',
+                C: '#forge:nuggets/gold'
+            },
+            id: 'mekanism:configuration_card'
+        },
+        {
+            output: 'mekanism:industrial_alarm',
+            pattern: [' A ', 'BBB'],
+            key: {
+                A: 'minecraft:redstone_lamp',
+                B: '#forge:nuggets/lead'
+            },
+            id: 'mekanism:industrial_alarm'
+        },
+        {
+            output: '2x mekanism:dynamic_valve',
+            pattern: [' A ', 'ABA', ' A '],
+            key: {
+                A: 'mekanism:dynamic_tank',
+                B: 'create:fluid_valve'
+            },
+            id: 'mekanism:dynamic_valve'
         }
     ];
 

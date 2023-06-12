@@ -118,6 +118,15 @@ ServerEvents.recipes((event) => {
                 C: '#forge:gems/source'
             },
             id: 'minecraft:anvil'
+        },
+        {
+            output: 'minecraft:stonecutter',
+            pattern: [' A ', 'BBB'],
+            key: {
+                A: 'manyideas_core:saw_stone',
+                B: 'minecraft:stone'
+            },
+            id: 'minecraft:stonecutter'
         }
     ];
 
