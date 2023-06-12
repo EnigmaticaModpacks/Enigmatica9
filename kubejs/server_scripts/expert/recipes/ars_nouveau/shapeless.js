@@ -56,11 +56,6 @@ ServerEvents.recipes((event) => {
                 '#forge:dusts/moon_dust'
             ],
             id: 'ars_nouveau:ritual_flight'
-        },
-        {
-            output: 'ars_nouveau:blank_parchment',
-            inputs: ['#forge:glyphs', '#forge:knives'],
-            id: `${id_prefix}blank_parchment`
         }
     ];
 
