@@ -13,6 +13,21 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}iron_dust_from_redstone_acid`
         },
         {
+            results: [
+                { item: 'emendatusenigmatica:iron_dirty_dust', count: 6 },
+                {
+                    item: AlmostUnified.getPreferredItemForTag(
+                        `mekanism:dirty_dusts/${metal_properties.iron.oreProcessing.expert_output.secondary}`
+                    ).getId(),
+                    count: 1
+                }
+            ],
+            ingredients: [{ tag: 'create:crushed_ores/iron' }, { fluidTag: 'forge:sulfuric_acid', amount: 30 }],
+            heatRequirement: 'superheated',
+
+            id: `${id_prefix}iron_dust_from_sulfuric_acid`
+        },
+        {
             results: [{ amount: 100, fluid: 'minecraft:water' }, { item: 'thermal:rubber' }],
             ingredients: [{ amount: 900, fluidTag: 'forge:latex' }],
             heatRequirement: 'heated',
