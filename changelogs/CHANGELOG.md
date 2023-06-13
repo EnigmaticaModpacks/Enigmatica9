@@ -9,6 +9,7 @@
 -   Increase drop rate for saplings from Quark trees [\#396](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/396) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Introducing Ore Gen in the Twilight Forest and Bumblezone [\#400](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/400) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Add crushing recipes for sandstone to niter [\#403](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/403) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Buff Occultism Combat Familiars [\#410](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/410) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
