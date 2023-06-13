@@ -44,6 +44,20 @@ ServerEvents.recipes((event) => {
             count: 1,
             exp: 55,
             id: 'ars_elemental:glyph_bubble_shield'
+        },
+        {
+            output: 'ars_nouveau:glyph_lightning',
+            inputItems: [
+                { item: { tag: 'forge:essences/air' } },
+                { item: { item: 'minecraft:lightning_rod' } },
+                { item: { item: 'minecraft:lightning_rod' } },
+                { item: { item: 'minecraft:lightning_rod' } },
+                { item: { item: 'minecraft:conduit' } },
+                { item: { item: 'supplementaries:antique_ink' } }
+            ],
+            count: 1,
+            exp: 160,
+            id: 'ars_nouveau:glyph_lightning'
         }
     ];
 

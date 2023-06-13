@@ -225,7 +225,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.attack_damage',
                         operation: 'ADDITION',
-                        value: 7
+                        value: 9.5
                     }
                 ]
             }
@@ -264,7 +264,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.attack_damage',
                         operation: 'ADDITION',
-                        value: 7
+                        value: 9.5
                     }
                 ]
             }
@@ -303,7 +303,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.attack_damage',
                         operation: 'ADDITION',
-                        value: 8
+                        value: 10.5
                     }
                 ]
             }

@@ -3,7 +3,7 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             ingredients: [{ item: 'minecraft:calcite' }],
-            result: [{ item: 'minecraft:nautilus_shell', chance: 0.05 }],
+            result: [{ item: 'minecraft:nautilus_shell', chance: 0.15 }],
             tool: {
                 type: 'farmersdelight:tool_action',
                 action: 'pickaxe_dig'
