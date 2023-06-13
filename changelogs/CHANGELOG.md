@@ -12,6 +12,8 @@
 
 ### 🐛 Fixed Bugs
 
+-   Fix Powah Reactor recipe [\#409](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/409) ([MuteTiefling](https://github.com/MuteTiefling))
+
 ---
 
 ### Enigmatica 9 v1.7.2
