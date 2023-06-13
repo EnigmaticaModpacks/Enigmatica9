@@ -849,7 +849,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}wet_moon_dust_brush`
         },
         {
-            output: '16x hexerei:moon_dust',
+            output: '32x hexerei:moon_dust',
             inputs: [
                 '#forge:dusts/silver',
                 '#forge:dusts/silver',
@@ -863,6 +863,7 @@ ServerEvents.recipes((event) => {
             liquid: { fluid: 'minecraft:water' },
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 250,
+            moonRequirement: 'full_moon',
             id: `${id_prefix}moon_dust`
         },
         {

@@ -86,6 +86,9 @@
 				"Potions of all types may be brewed from surprisingly common ingredients. Be sure to check out what can be brewed, as potions will prove indispensable when facing off against the less friendly creatures that now roam the lands."
 				""
 				"Use the Mixing Cauldron to brew up some Potions of Ancient Knowledge, or any other potions you find interesting. Once brewed, they may be bottled by Right-Clicking the Cauldron with glass bottles. "
+				""
+				""
+				"Note: Some recipes require a specific Moon Phase. These aren't immediately visible in the Twilight Forest, but with a Moon Dial or Crystal Ball, the current phase can be observed. "
 			]
 			id: "66585A158F41DE44"
 			rewards: [
