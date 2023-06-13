@@ -147,7 +147,7 @@ ServerEvents.recipes((event) => {
             output: 'powah:reactor_basic',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
-                A: 'twilightforest:carminite',
+                A: '#forge:gems/carminite',
                 B: 'powah:capacitor_basic_large',
                 C: 'powah:dielectric_casing'
             },
