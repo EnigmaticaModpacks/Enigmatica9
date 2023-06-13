@@ -472,6 +472,26 @@ ServerEvents.recipes((event) => {
                 D: '#forge:gems/certus_quartz'
             },
             id: 'ae2:network/wireless_booster'
+        },
+        {
+            output: 'ae2:certus_quartz_cutting_knife',
+            pattern: ['  A', 'BA ', 'CC '],
+            key: {
+                A: '#forge:rods/wooden',
+                B: '#forge:rods/lumium',
+                C: '#ae2:all_certus_quartz'
+            },
+            id: 'ae2:tools/certus_quartz_cutting_knife'
+        },
+        {
+            output: 'ae2:nether_quartz_cutting_knife',
+            pattern: ['  A', 'BA ', 'CC '],
+            key: {
+                A: '#forge:rods/wooden',
+                B: '#forge:rods/lumium',
+                C: '#forge:gems/quartz'
+            },
+            id: 'ae2:tools/nether_quartz_cutting_knife'
         }
     ];
 
