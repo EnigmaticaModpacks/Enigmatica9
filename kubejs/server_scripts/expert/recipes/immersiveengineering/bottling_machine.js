@@ -93,15 +93,41 @@ ServerEvents.recipes((event) => {
             inputs: [{ base_ingredient: { item: 'ae2:charged_certus_quartz_crystal' } }],
             fluid: { amount: 100, tag: 'forge:source' },
             id: `${id_prefix}fluix_crystal`
+        },
+        {
+            results: [
+                { item: 'emendatusenigmatica:iron_dirty_dust', count: 6 },
+                {
+                    item: AlmostUnified.getPreferredItemForTag(
+                        `mekanism:dirty_dusts/${metal_properties.iron.oreProcessing.expert_output.secondary}`
+                    ).getId(),
+                    count: 1
+                }
+            ],
+            inputs: [{ base_ingredient: { tag: `create:crushed_ores/iron` }, count: 3 }],
+            fluid: { tag: 'forge:sulfuric_acid', amount: 30 },
+            id: `${id_prefix}iron_dust_from_redstone_acid`
         }
     ];
 
     simple_metals.forEach((metal) => {
-        let rate = 3;
+        let secondary_amount = 1;
+        let secondary = metal_properties[metal].oreProcessing.expert_output.secondary;
+
+        if (secondary == 'quartz') {
+            secondary = AlmostUnified.getPreferredItemForTag(`forge:gems/${secondary}`).getId();
+            secondary_amount = 2;
+        } else {
+            secondary = AlmostUnified.getPreferredItemForTag(`mekanism:dirty_dusts/${secondary}`).getId();
+        }
+
         recipes.push({
-            results: [{ item: `emendatusenigmatica:${metal}_dirty_dust`, count: 2 * rate }],
-            inputs: [{ base_ingredient: { tag: `create:crushed_ores/${metal}` }, count: 1 * rate }],
-            fluid: { amount: 10 * rate, tag: 'forge:sulfuric_acid' },
+            results: [
+                { item: `emendatusenigmatica:${metal}_dirty_dust`, count: 6 },
+                { item: secondary, count: secondary_amount }
+            ],
+            inputs: [{ base_ingredient: { tag: `create:crushed_ores/${metal}` }, count: 3 }],
+            fluid: { tag: 'forge:sulfuric_acid', amount: 30 },
             id: `${id_prefix}${metal}_dirty_dust_from_acid`
         });
     });

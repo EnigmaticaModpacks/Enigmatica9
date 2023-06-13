@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
         {
             output: `emendatusenigmatica:nickel_ingot`,
             input: `#mekanism:dirty_dusts/nickel`,
-            slag: 'thermal:rich_slag',
+            slag: 'thermal:slag',
             xp: 0.5,
             id_suffix: `nickel_ingot_from_dirty_dust`
         },
