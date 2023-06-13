@@ -221,6 +221,11 @@ ServerEvents.highPriorityData((event) => {
                         attribute: 'minecraft:generic.armor_toughness',
                         operation: 'ADDITION',
                         value: 8
+                    },
+                    {
+                        attribute: 'minecraft:generic.attack_damage',
+                        operation: 'ADDITION',
+                        value: 7
                     }
                 ]
             }
@@ -255,6 +260,11 @@ ServerEvents.highPriorityData((event) => {
                         attribute: 'minecraft:generic.armor_toughness',
                         operation: 'ADDITION',
                         value: 12
+                    },
+                    {
+                        attribute: 'minecraft:generic.attack_damage',
+                        operation: 'ADDITION',
+                        value: 7
                     }
                 ]
             }
@@ -289,6 +299,11 @@ ServerEvents.highPriorityData((event) => {
                         attribute: 'minecraft:generic.armor_toughness',
                         operation: 'ADDITION',
                         value: 12
+                    },
+                    {
+                        attribute: 'minecraft:generic.attack_damage',
+                        operation: 'ADDITION',
+                        value: 8
                     }
                 ]
             }
