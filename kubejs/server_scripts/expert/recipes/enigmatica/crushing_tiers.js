@@ -22,6 +22,12 @@ ServerEvents.recipes((event) => {
             input: 'minecraft:end_stone',
             crushing_tier: 4,
             id_suffix: 'crushed_end_stone_from_end_stone'
+        },
+        {
+            outputs: { primary: 'emendatusenigmatica:nickel_dirty_dust' },
+            input: `#mekanism:clumps/nickel`,
+            crushing_tier: metal_properties.nickel.crushing_tier,
+            id_suffix: `nickel_dirty_dust_from_clumps`
         }
     ];
 
