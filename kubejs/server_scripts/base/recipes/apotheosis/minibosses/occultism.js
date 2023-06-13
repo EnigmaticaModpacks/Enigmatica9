@@ -190,6 +190,142 @@ ServerEvents.highPriorityData((event) => {
                 ]
             },
             supporting_entities: []
+        },
+        {
+            id: 'mummy_familiar',
+            name: null,
+            chance: 1.0,
+            weight: 100,
+            quality: 0,
+            entities: ['occultism:mummy_familiar'],
+            valid_gear_sets: ['#miniboss/empty'],
+            dimensions: [],
+            affixed: false,
+            nbt: {},
+            stats: {
+                enchant_chance: 1.0,
+                enchantment_levels: [30, 20, 30, 20],
+                effects: [],
+                attribute_modifiers: [
+                    {
+                        attribute: 'minecraft:generic.max_health',
+                        operation: 'ADDITION',
+                        value: 12
+                    },
+                    {
+                        attribute: 'minecraft:generic.armor',
+                        operation: 'ADDITION',
+                        value: 15
+                    },
+                    {
+                        attribute: 'minecraft:generic.armor_toughness',
+                        operation: 'ADDITION',
+                        value: 8
+                    }
+                ]
+            }
+        },
+        {
+            id: 'dragon_familiar',
+            name: null,
+            chance: 1.0,
+            weight: 100,
+            quality: 0,
+            entities: ['occultism:dragon_familiar'],
+            valid_gear_sets: ['#miniboss/empty'],
+            dimensions: [],
+            affixed: false,
+            nbt: {},
+            stats: {
+                enchant_chance: 1.0,
+                enchantment_levels: [30, 20, 30, 20],
+                effects: [],
+                attribute_modifiers: [
+                    {
+                        attribute: 'minecraft:generic.max_health',
+                        operation: 'ADDITION',
+                        value: 20
+                    },
+                    {
+                        attribute: 'minecraft:generic.armor',
+                        operation: 'ADDITION',
+                        value: 20
+                    },
+                    {
+                        attribute: 'minecraft:generic.armor_toughness',
+                        operation: 'ADDITION',
+                        value: 12
+                    }
+                ]
+            }
+        },
+        {
+            id: 'shub_niggurath_familiar',
+            name: null,
+            chance: 1.0,
+            weight: 100,
+            quality: 0,
+            entities: ['occultism:shub_niggurath_familiar'],
+            valid_gear_sets: ['#miniboss/empty'],
+            dimensions: [],
+            affixed: false,
+            nbt: {},
+            stats: {
+                enchant_chance: 1.0,
+                enchantment_levels: [30, 20, 30, 20],
+                effects: [],
+                attribute_modifiers: [
+                    {
+                        attribute: 'minecraft:generic.max_health',
+                        operation: 'ADDITION',
+                        value: 20
+                    },
+                    {
+                        attribute: 'minecraft:generic.armor',
+                        operation: 'ADDITION',
+                        value: 20
+                    },
+                    {
+                        attribute: 'minecraft:generic.armor_toughness',
+                        operation: 'ADDITION',
+                        value: 12
+                    }
+                ]
+            }
+        },
+        {
+            id: 'beholder_familiar',
+            name: null,
+            chance: 1.0,
+            weight: 100,
+            quality: 0,
+            entities: ['occultism:beholder_familiar'],
+            valid_gear_sets: ['#miniboss/empty'],
+            dimensions: [],
+            affixed: false,
+            nbt: {},
+            stats: {
+                enchant_chance: 1.0,
+                enchantment_levels: [30, 20, 30, 20],
+                effects: [],
+                attribute_modifiers: [
+                    {
+                        attribute: 'minecraft:generic.max_health',
+                        operation: 'ADDITION',
+                        value: 10
+                    },
+                    {
+                        attribute: 'minecraft:generic.armor',
+                        operation: 'ADDITION',
+                        value: 20
+                    },
+                    {
+                        attribute: 'minecraft:generic.armor_toughness',
+                        operation: 'ADDITION',
+                        value: 12
+                    }
+                ]
+            }
         }
     ];
 
