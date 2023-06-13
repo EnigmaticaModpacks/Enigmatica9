@@ -33,12 +33,12 @@ LootJS.modifiers((event) => {
                 let replacementItem = AlmostUnified.getPreferredItemForTag(
                     `forge:raw_materials/${tagSubString}`
                 ).getId();
-                if (Item.exists(replacementItem) && replaceWithRaw) {
+                if (replacementItem !== air && replaceWithRaw) {
                     return Item.of(replacementItem, count);
                 }
 
                 replacementItem = AlmostUnified.getPreferredItemForTag(`${tag}${tagSubString}`).getId();
-                if (Item.exists(replacementItem)) {
+                if (replacementItem !== air) {
                     return Item.of(replacementItem, itemStack.getCount());
                 }
                 return itemStack;
