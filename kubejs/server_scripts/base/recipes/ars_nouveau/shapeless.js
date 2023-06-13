@@ -3,7 +3,7 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            output: Item.of('ars_nouveau:magebloom_fiber', 12),
+            output: '12x ars_nouveau:magebloom_fiber',
             inputs: ['ars_nouveau:magebloom', 'ars_nouveau:magebloom', 'ars_nouveau:magebloom'],
             id: 'ars_nouveau:magebloom_fiber'
         }
