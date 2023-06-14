@@ -23,7 +23,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}raw_ironwood`
         },
         {
-            output: 'occultism:chalk_white',
+            output: Item.of('occultism:chalk_white', { Unbreakable: 1 }),
             inputs: [
                 'minecraft:calcite',
                 'hexerei:dried_sage',
@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}chalk_white`
         },
         {
-            output: 'occultism:chalk_gold',
+            output: Item.of('occultism:chalk_gold', { Unbreakable: 1 }),
             inputs: [
                 'minecraft:calcite',
                 'naturesaura:gold_powder',
@@ -59,7 +59,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}chalk_gold`
         },
         {
-            output: 'occultism:chalk_purple',
+            output: Item.of('occultism:chalk_purple', { Unbreakable: 1 }),
             inputs: [
                 'minecraft:calcite',
                 '#forge:dusts/fluix',
@@ -83,7 +83,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}chalk_purple`
         },
         {
-            output: 'occultism:chalk_red',
+            output: Item.of('occultism:chalk_red', { Unbreakable: 1 }),
             inputs: [
                 'minecraft:calcite',
                 '#forge:gems/carminite',
