@@ -338,7 +338,7 @@ ServerEvents.recipes((event) => {
                 '#forge:ingots/signalum',
                 '#forge:ingots/signalum'
             ],
-            time: 5,
+            time: 40,
             sapling: 'ars_nouveau:purple_archwood_sapling',
             id: `${id_prefix}storage_stabilizer_tier1`
         },
@@ -354,7 +354,7 @@ ServerEvents.recipes((event) => {
                 '#forge:ingots/aluminum',
                 '#forge:ingots/aluminum'
             ],
-            time: 5,
+            time: 40,
             sapling: 'ars_nouveau:purple_archwood_sapling',
             id: `${id_prefix}storage_stabilizer_tier2`
         },
@@ -370,7 +370,7 @@ ServerEvents.recipes((event) => {
                 '#forge:ingots/lumium',
                 '#forge:ingots/lumium'
             ],
-            time: 5,
+            time: 40,
             sapling: 'ars_nouveau:purple_archwood_sapling',
             id: `${id_prefix}storage_stabilizer_tier3`
         },
@@ -387,9 +387,26 @@ ServerEvents.recipes((event) => {
                 '#forge:ingots/soul_steel',
                 '#forge:ingots/soul_steel'
             ],
-            time: 5,
+            time: 40,
             sapling: 'ars_nouveau:purple_archwood_sapling',
             id: `${id_prefix}storage_stabilizer_tier4`
+        },
+        {
+            output: 'ars_elemental:everfull_urn',
+            ingredients: [
+                'minecraft:terracotta',
+                'minecraft:terracotta',
+                'minecraft:terracotta',
+                'minecraft:terracotta',
+
+                '#forge:essences/water',
+                '#forge:dusts/prismarine',
+                '#forge:essences/water',
+                '#forge:dusts/prismarine'
+            ],
+            time: 40,
+            sapling: 'ars_nouveau:blue_archwood_sapling',
+            id: `${id_prefix}everfull_urn`
         }
 
         /*
