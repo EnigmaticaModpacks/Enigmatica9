@@ -390,23 +390,6 @@ ServerEvents.recipes((event) => {
             time: 40,
             sapling: 'ars_nouveau:purple_archwood_sapling',
             id: `${id_prefix}storage_stabilizer_tier4`
-        },
-        {
-            output: 'ars_elemental:everfull_urn',
-            ingredients: [
-                'minecraft:terracotta',
-                'minecraft:terracotta',
-                'minecraft:terracotta',
-                'minecraft:terracotta',
-
-                '#forge:essences/water',
-                '#forge:dusts/prismarine',
-                '#forge:essences/water',
-                '#forge:dusts/prismarine'
-            ],
-            time: 40,
-            sapling: 'ars_nouveau:blue_archwood_sapling',
-            id: `${id_prefix}everfull_urn`
         }
 
         /*
