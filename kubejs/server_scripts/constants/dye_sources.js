@@ -344,6 +344,20 @@ const dye_sources = [
     },
     // Oh the Biome's You'll Go
     {
+        input: 'byg:oddity_cactus',
+        type: 'small',
+        primary: 'minecraft:white_dye',
+        secondary: 'minecraft:white_dye',
+        tertiary: 'minecraft:light_blue_dye'
+    },
+    {
+        input: 'byg:warped_cactus',
+        type: 'small',
+        primary: 'minecraft:cyan_dye',
+        secondary: 'minecraft:cyan_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
         input: 'byg:oddity_bush',
         type: 'small',
         primary: 'minecraft:white_dye',

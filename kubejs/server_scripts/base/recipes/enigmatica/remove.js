@@ -35,6 +35,9 @@ ServerEvents.recipes((event) => {
 
         { id: /ars_nouveau:.*_dye/ },
 
+        { id: 'byg:dye_from_warped_cactus' },
+        { id: 'byg:dye_from_oddity_cactus' },
+
         { id: 'create:compat/ae2/mixing/fluix_crystal' },
         { id: 'create:compat/byg/crushing/lignite_ore' },
         { id: 'create:crushing/blaze_rod' },
