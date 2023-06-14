@@ -276,6 +276,14 @@ const dye_sources = [
         secondary: 'minecraft:orange_dye',
         tertiary: 'minecraft:yellow_dye'
     },
+    {
+        input: 'minecraft:cactus',
+        type: 'small',
+        primary: 'minecraft:green_dye',
+        secondary: 'minecraft:green_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+
     // Farmer's Delight
 
     {
@@ -782,6 +790,20 @@ const dye_sources = [
         primary: 'minecraft:red_dye',
         secondary: 'minecraft:red_dye',
         tertiary: 'minecraft:orange_dye'
+    },
+    {
+        input: 'byg:barrel_cactus',
+        type: 'small',
+        primary: 'minecraft:green_dye',
+        secondary: 'minecraft:green_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'byg:flowering_barrel_cactus',
+        type: 'small',
+        primary: 'minecraft:green_dye',
+        secondary: 'minecraft:pink_dye',
+        tertiary: 'minecraft:yellow_dye'
     },
 
     // Twilight Forest

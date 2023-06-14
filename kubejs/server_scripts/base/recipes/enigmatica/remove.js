@@ -93,6 +93,7 @@ ServerEvents.recipes((event) => {
 
         { id: 'minecraft:bone_meal' },
         { id: 'minecraft:glass' },
+        { id: 'minecraft:green_dye' },
 
         { id: 'naturesaura:infused_iron' },
         { id: 'naturesaura:sky_ingot' },
