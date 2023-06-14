@@ -968,6 +968,27 @@ const entries = {
                 normal: 'Circuit Backplane',
                 expert: 'Runic Proto-Board'
             }
+        },
+        {
+            key: 'block.immersiveengineering.rs_engineering',
+            value: {
+                normal: 'Redstone Engineering Block',
+                expert: 'Quasi-Compact Artificing Block'
+            }
+        },
+        {
+            key: 'block.immersiveengineering.light_engineering',
+            value: {
+                normal: 'Light Engineering Block',
+                expert: 'Novice Artificing Block'
+            }
+        },
+        {
+            key: 'block.immersiveengineering.heavy_engineering',
+            value: {
+                normal: 'Heavy Engineering Block',
+                expert: 'Adept Artificing Block'
+            }
         }
     ],
     powah: [

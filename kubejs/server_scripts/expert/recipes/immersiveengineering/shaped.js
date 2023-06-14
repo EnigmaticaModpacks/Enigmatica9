@@ -165,31 +165,34 @@ ServerEvents.recipes((event) => {
         },
         {
             output: '4x immersiveengineering:rs_engineering',
-            pattern: ['ABA', 'BCB', 'ABA'],
+            pattern: ['ADA', 'BCB', 'ADA'],
             key: {
                 A: 'immersiveengineering:sheetmetal_colored_white',
                 B: 'powah:capacitor_basic_large',
-                C: 'kubejs:energetic_transference_matrix'
+                C: 'kubejs:energetic_transference_matrix',
+                D: 'thermal:redstone_servo'
             },
             id: `immersiveengineering:crafting/rs_engineering`
         },
         {
             output: '4x immersiveengineering:light_engineering',
-            pattern: ['ABA', 'BCB', 'ABA'],
+            pattern: ['ACA', 'BDB', 'ACA'],
             key: {
                 A: 'immersiveengineering:sheetmetal_colored_white',
-                B: '#forge:gears/bronze',
-                C: 'thermal:redstone_servo'
+                B: 'immersiveengineering:electron_tube',
+                C: 'thermal:redstone_servo',
+                D: 'immersiveengineering:component_electronic'
             },
             id: `immersiveengineering:crafting/light_engineering`
         },
         {
             output: '4x immersiveengineering:heavy_engineering',
-            pattern: ['ABA', 'BCB', 'ABA'],
+            pattern: ['ACA', 'BDB', 'ACA'],
             key: {
                 A: 'immersiveengineering:sheetmetal_colored_black',
                 B: '#forge:gears/compressed_iron',
-                C: 'thermal:redstone_servo'
+                C: 'thermal:redstone_servo',
+                D: 'ae2:logic_processor'
             },
             id: `immersiveengineering:crafting/heavy_engineering`
         },
@@ -428,7 +431,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: '#forge:rods/aluminum',
                 B: 'immersiveengineering:component_electronic',
-                C: 'powah:capacitor_spirited',
+                C: 'powah:capacitor_niotic',
                 D: '#forge:wooden_grip',
                 E: '#forge:essences/manipulation'
             },

@@ -9,6 +9,14 @@ ServerEvents.genericLootTables((event) => {
         });
 
         table.addPool((pool) => {
+            pool.rolls = [1, 2];
+            pool.randomChance(0.35);
+            pool.addItem('thermal:upgrade_augment_1', 2, 1);
+            pool.addItem('thermal:machine_speed_augment', 1, [1, 3]);
+            pool.addItem('functionalstorage:copper_upgrade', 1, [1, 3]);
+        });
+
+        table.addPool((pool) => {
             pool.rolls = [1, 1];
             pool.randomChance(0.5);
             pool.addItem(Item.of('occultism:familiar_ring', '{familiarType:"occultism:otherworld_bird"}'), 1, 1);

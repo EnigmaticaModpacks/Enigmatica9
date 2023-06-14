@@ -44,6 +44,8 @@ const cobbleworks = {
         'quark:jasper',
         'quark:limestone',
         'quark:soul_sandstone',
-        'quark:shale'
+        'quark:shale',
+        'twilightforest:nagastone',
+        'twilightforest:mazestone'
     ]
 };

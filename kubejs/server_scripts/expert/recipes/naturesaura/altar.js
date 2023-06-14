@@ -119,6 +119,14 @@ ServerEvents.recipes((event) => {
             aura: 10000,
             time: 60,
             id: `${id_prefix}source_berry`
+        },
+        {
+            output: 'minecraft:spore_blossom',
+            input: 'twilightforest:huge_water_lily',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 5000,
+            time: 60,
+            id: `${id_prefix}spore_blossom`
         }
     ];
 

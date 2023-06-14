@@ -1977,16 +1977,25 @@
 				"In addition to transporting items and looking stylish, Starbuncles may be given a few additional accessories to further enhance their abilities. "
 				""
 				"Configuring their pickup and drop off locations remains the same as with Items; by using a Dominion Wand after equipping them with the appropriate accessory. "
+				""
+				"Need them to access a specific side? Use a Direction Scroll to set their preferred side. These are set by looking in the desired direction and Sneak + Right-Clicking them. Then use the scroll on the Starbuncle."
 			]
 			id: "77B0AD19B44B8660"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				icon: "kubejs:farmers_delight"
-				id: "2A9F65EAFE5906AE"
-				player_command: false
-				title: "Farmer's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "2A9F65EAFE5906AE"
+					player_command: false
+					title: "Farmer's Delight"
+					type: "command"
+				}
+				{
+					id: "31A82FD455E5031B"
+					item: "starbunclemania:direction_scroll"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "067A9588CB5F4392"
 				item: "ars_nouveau:starbuncle_shards"

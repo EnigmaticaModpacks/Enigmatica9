@@ -1416,11 +1416,18 @@
 			]
 			hide_dependency_lines: true
 			id: "0C1D8DEC8ACB56AC"
-			rewards: [{
-				id: "53407B1C5DA8EBAE"
-				item: "ars_nouveau:starbuncle_shades"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "53407B1C5DA8EBAE"
+					item: "ars_nouveau:starbuncle_shades"
+					type: "item"
+				}
+				{
+					id: "75BF9711B018CC11"
+					item: "starbunclemania:direction_scroll"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "1321FD497583DDCC"

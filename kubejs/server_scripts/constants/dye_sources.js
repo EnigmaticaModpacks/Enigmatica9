@@ -32,13 +32,6 @@ const dye_sources = [
         tertiary: 'minecraft:light_gray_dye'
     },
     {
-        input: 'minecraft:lapis_lazuli',
-        type: 'small',
-        primary: 'minecraft:blue_dye',
-        secondary: 'minecraft:blue_dye',
-        tertiary: 'minecraft:blue_dye'
-    },
-    {
         input: 'minecraft:ink_sac',
         type: 'small',
         primary: 'minecraft:black_dye',
@@ -276,6 +269,14 @@ const dye_sources = [
         secondary: 'minecraft:orange_dye',
         tertiary: 'minecraft:yellow_dye'
     },
+    {
+        input: 'minecraft:cactus',
+        type: 'small',
+        primary: 'minecraft:green_dye',
+        secondary: 'minecraft:green_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+
     // Farmer's Delight
 
     {
@@ -335,6 +336,20 @@ const dye_sources = [
         tertiary: 'minecraft:green_dye'
     },
     // Oh the Biome's You'll Go
+    {
+        input: 'byg:oddity_cactus',
+        type: 'small',
+        primary: 'minecraft:white_dye',
+        secondary: 'minecraft:white_dye',
+        tertiary: 'minecraft:light_blue_dye'
+    },
+    {
+        input: 'byg:warped_cactus',
+        type: 'small',
+        primary: 'minecraft:cyan_dye',
+        secondary: 'minecraft:cyan_dye',
+        tertiary: 'minecraft:green_dye'
+    },
     {
         input: 'byg:oddity_bush',
         type: 'small',
@@ -783,6 +798,20 @@ const dye_sources = [
         secondary: 'minecraft:red_dye',
         tertiary: 'minecraft:orange_dye'
     },
+    {
+        input: 'byg:barrel_cactus',
+        type: 'small',
+        primary: 'minecraft:green_dye',
+        secondary: 'minecraft:green_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'byg:flowering_barrel_cactus',
+        type: 'small',
+        primary: 'minecraft:green_dye',
+        secondary: 'minecraft:pink_dye',
+        tertiary: 'minecraft:yellow_dye'
+    },
 
     // Twilight Forest
     {
@@ -893,6 +922,16 @@ const dye_sources = [
         primary: 'manyideas_core:dye_rainbow',
         secondary: 'manyideas_core:dye_rainbow',
         tertiary: 'manyideas_core:dye_rainbow'
+    },
+
+    // Emendatus Enigmatica
+
+    {
+        input: 'emendatusenigmatica:lapis_dust',
+        type: 'small',
+        primary: 'minecraft:blue_dye',
+        secondary: 'minecraft:blue_dye',
+        tertiary: 'minecraft:blue_dye'
     }
 ];
 
