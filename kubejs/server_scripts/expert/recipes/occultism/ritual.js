@@ -146,7 +146,7 @@ ServerEvents.recipes((event) => {
             inputs: [
                 'hexerei:mindful_trance_blend',
                 'naturesaura:gold_leaf',
-                '#forge:ingot/gold',
+                '#forge:ingots/gold',
                 'naturesaura:gold_leaf'
             ],
             ritual_dummy: 'kubejs:ritual_summon_starbuncle',
