@@ -49,24 +49,3 @@
 	#If the Aura Imbalance effect of grass growing on netherrack if the Aura levels are high enough should occur
 	netherGrassEffect = true
 
-[client]
-	#The percentage of particles that should be displayed, where 1 is 100% and 0 is 0%
-	#Range: 0.0 ~ 1.0
-	particleAmount = 1.0
-	#If particle spawning should respect the particle setting in Minecraft's video settings screen
-	respectVanillaParticleSettings = false
-	#The percentage of particles that should spawn when there is an excess amount of Aura in the environment, where 1 is 100% and 0 is 0%
-	excessParticleAmount = 1.0
-	#The location of the aura bar, where 0 is top left, 1 is top right, 2 is bottom left and 3 is bottom right
-	#Range: 0 ~ 3
-	auraBarLocation = 3
-	#The location of the aura cache bar, where 0 is to the left of the hotbar and 1 is to the right of the hotbar
-	#Range: 0 ~ 1
-	cacheBarLocation = 0
-	#If debug information about Aura around the player should be displayed in the F3 debug menu if the player is in creative mode
-	debugText = true
-	#If, when the F3 debug menu is open and the player is in creative mode, every Aura spot should be highlighted in the level for debug purposes
-	debugLevel = false
-	#If certain equippable items, like the Environmental Eye, should be rendered on the player
-	renderItemsOnPlayer = true
-
