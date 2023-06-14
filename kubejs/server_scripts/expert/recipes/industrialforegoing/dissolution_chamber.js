@@ -38,34 +38,34 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}infused_fabric`
         },
         {
-            output: '2x industrialforegoing:machine_frame_advanced',
+            output: '3x industrialforegoing:machine_frame_advanced',
             inputs: [
                 '#forge:ingots/soul_steel',
-                'kubejs:energetic_transference_matrix',
+                'immersiveengineering:rs_engineering',
                 '#forge:ingots/soul_steel',
-                'powah:capacitor_spirited',
+                'immersiveengineering:light_engineering',
 
-                'powah:capacitor_spirited',
-                '#forge:ingots/soul_steel',
+                'immersiveengineering:light_engineering',
                 'ae2:calculation_processor',
-                '#forge:ingots/soul_steel'
+                'powah:capacitor_spirited',
+                'ae2:calculation_processor'
             ],
             inputFluid: '{Amount:1000,FluidName:"industrialforegoing:ether_gas"}',
             processingTime: 800,
             id: `${id_prefix}machine_frame_advanced`
         },
         {
-            output: '2x industrialforegoing:machine_frame_supreme',
+            output: '3x industrialforegoing:machine_frame_supreme',
             inputs: [
                 '#forge:ingots/depths',
-                'kubejs:energetic_transference_matrix',
+                'immersiveengineering:rs_engineering',
                 '#forge:ingots/depths',
-                'powah:capacitor_nitro',
+                'immersiveengineering:heavy_engineering',
 
-                'powah:capacitor_nitro',
-                '#forge:ingots/depths',
+                'immersiveengineering:heavy_engineering',
                 'ae2:engineering_processor',
-                '#forge:ingots/depths'
+                'powah:capacitor_nitro',
+                'ae2:engineering_processor'
             ],
             inputFluid: '{Amount:1000,FluidName:"hexerei:quicksilver_fluid"}',
             processingTime: 800,
