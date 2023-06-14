@@ -249,6 +249,10 @@ jei.expert.items.disabled = [
 
     'ae2:charger',
     'ae2:vibration_chamber',
+    'ae2:silicon_press',
+    'ae2:logic_processor_press',
+    'ae2:engineering_processor_press',
+    'ae2:calculation_processor_press',
 
     'ars_nouveau:agronomic_sourcelink',
     'ars_nouveau:mycelial_sourcelink',

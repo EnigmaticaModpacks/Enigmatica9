@@ -150,7 +150,7 @@ ServerEvents.recipes((event) => {
                 { tag: 'forge:dusts/aluminum' },
                 { tag: 'forge:dusts/aluminum' },
                 { tag: 'forge:dusts/aluminum' },
-                { tag: 'forge:esseneces/manipulation' }
+                { tag: 'forge:essences/manipulation' }
             ],
             id: `${id_prefix}signalum_dust`
         },

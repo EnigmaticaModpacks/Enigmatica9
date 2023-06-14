@@ -30,7 +30,6 @@ ServerEvents.genericLootTables((event) => {
         table.addPool((pool) => {
             pool.rolls = 2.0;
             pool.addItem('naturesaura:birth_spirit', 1, [4, 8]);
-            pool.addItem('naturesaura:clock_hand', 1, [2, 4]);
             pool.addItem(Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:nether"}'), 1, 8);
             pool.addItem(Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'), 1, 8);
         });

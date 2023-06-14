@@ -156,6 +156,7 @@ const gem_properties = {
     diamond: {
         meltingPoint: 1450,
         crushing_tier: 3,
+        gear: true,
         oreProcessing: {
             output: {
                 type: 'gem',
@@ -200,6 +201,7 @@ const gem_properties = {
     emerald: {
         meltingPoint: 934,
         crushing_tier: 3,
+        gear: true,
         oreProcessing: {
             output: {
                 type: 'gem',
@@ -244,6 +246,7 @@ const gem_properties = {
     lapis: {
         meltingPoint: 115,
         crushing_tier: 1,
+        gear: true,
         oreProcessing: {
             output: {
                 type: 'gem',
@@ -288,6 +291,7 @@ const gem_properties = {
     quartz: {
         meltingPoint: 637,
         crushing_tier: 2,
+        gear: true,
         oreProcessing: {
             output: {
                 type: 'gem',

@@ -522,6 +522,17 @@ ItemEvents.tooltip((event) => {
         {
             items: ['mekanism:cardboard_box'],
             text: [Text.of(`Used for moving inventories`).green()]
+        },
+
+        {
+            items: [
+                'createaddition:electric_motor',
+                'create:steam_engine',
+                'create:windmill_bearing',
+                'create:water_wheel',
+                'create:large_water_wheel'
+            ],
+            text: [Text.of(`Generates Rotational Force`).green()]
         }
     ];
 

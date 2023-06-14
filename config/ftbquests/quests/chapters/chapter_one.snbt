@@ -85,7 +85,7 @@
 				""
 				"Potions of all types may be brewed from surprisingly common ingredients. Be sure to check out what can be brewed, as potions will prove indispensable when facing off against the less friendly creatures that now roam the lands."
 				""
-				"Use the Mixing Cauldron to brew up some Potions of Ancient Knowledge, or any other potions you find interesting. Once brewed, they may be bottled by Right-Clicking the Cauldron with glass bottles. "
+				"Use the Mixing Cauldron to brew up some Potions of Ancient Knowledge, or any other potions you find interesting. Once brewed, they may be bottled by Right-Clicking the Cauldron with glass bottles."
 			]
 			id: "66585A158F41DE44"
 			rewards: [
@@ -1674,7 +1674,7 @@
 			}]
 			tasks: [{
 				id: "76702DE4AA5CCE26"
-				item: "emendatusenigmatica:quartz_dust"
+				item: "minecraft:quartz"
 				type: "item"
 			}]
 			x: -6.0d

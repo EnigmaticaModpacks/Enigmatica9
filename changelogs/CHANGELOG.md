@@ -10,6 +10,7 @@
 -   Introducing Ore Gen in the Twilight Forest and Bumblezone [\#400](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/400) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Add crushing recipes for sandstone to niter [\#403](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/403) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Buff Occultism and Hexerei Combat Familiars [\#410](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/410) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Gears now use IE molds in both Thermal and IE machines. Thermal may also make Wires now. [\#413](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/413) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 

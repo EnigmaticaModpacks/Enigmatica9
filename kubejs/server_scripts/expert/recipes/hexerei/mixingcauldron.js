@@ -373,20 +373,38 @@ ServerEvents.recipes((event) => {
         {
             output: 'naturesaura:death_ring',
             inputs: [
-                '#forge:gems/emerald',
+                'ars_nouveau:ring_of_potential',
                 'hexerei:belladonna_berries',
                 '#forge:nuggets/electrum',
                 'hexerei:mandrake_root',
-                'ars_nouveau:ring_of_potential',
+                '#forge:essences/anima',
                 'hexerei:mandrake_root',
                 '#forge:nuggets/electrum',
                 'hexerei:belladonna_berries'
             ],
             liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' } },
             liquidOutput: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' } },
-            fluidLevelsConsumed: 2000,
+            fluidLevelsConsumed: 100,
             heatRequirement: 'heated',
             id: `${id_prefix}death_ring`
+        },
+        {
+            output: 'hexerei:crow_ankh_amulet',
+            inputs: [
+                '#forge:string',
+                'hexerei:belladonna_berries',
+                '#forge:nuggets/electrum',
+                'hexerei:mandrake_root',
+                '#forge:essences/anima',
+                'hexerei:mandrake_root',
+                '#forge:nuggets/electrum',
+                'hexerei:belladonna_berries'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' } },
+            liquidOutput: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' } },
+            fluidLevelsConsumed: 100,
+            heatRequirement: 'heated',
+            id: 'hexerei:crow_ankh_amulet_from_mixing_cauldron'
         },
         {
             output: 'occultism:familiar_ring',
@@ -831,7 +849,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}wet_moon_dust_brush`
         },
         {
-            output: '32x hexerei:moon_dust',
+            output: '8x hexerei:moon_dust',
             inputs: [
                 '#forge:dusts/silver',
                 '#forge:dusts/silver',
@@ -845,7 +863,6 @@ ServerEvents.recipes((event) => {
             liquid: { fluid: 'minecraft:water' },
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 250,
-            moonRequirement: 'full_moon',
             id: `${id_prefix}moon_dust`
         },
         {

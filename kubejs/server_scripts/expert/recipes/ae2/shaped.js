@@ -492,6 +492,16 @@ ServerEvents.recipes((event) => {
                 C: '#forge:gems/quartz'
             },
             id: 'ae2:tools/nether_quartz_cutting_knife'
+        },
+        {
+            output: 'ae2:not_so_mysterious_cube',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'ae2:smooth_sky_stone_block',
+                B: 'quark:rainbow_rune',
+                C: 'naturesaura:infused_stone'
+            },
+            id: 'ae2:shaped/not_so_mysterious_cube'
         }
     ];
 

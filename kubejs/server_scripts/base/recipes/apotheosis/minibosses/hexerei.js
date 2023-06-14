@@ -29,7 +29,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: 20
+                        value: 18
                     },
                     {
                         attribute: 'minecraft:generic.armor',
@@ -40,6 +40,16 @@ ServerEvents.highPriorityData((event) => {
                         attribute: 'minecraft:generic.armor_toughness',
                         operation: 'ADDITION',
                         value: 12
+                    },
+                    {
+                        attribute: 'minecraft:generic.attack_damage',
+                        operation: 'ADDITION',
+                        value: 9.5
+                    },
+                    {
+                        attribute: 'minecraft:generic.attack_knockback',
+                        operation: 'ADDITION',
+                        value: 1.5
                     }
                 ]
             }

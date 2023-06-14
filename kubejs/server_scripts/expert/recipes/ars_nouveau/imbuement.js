@@ -75,7 +75,7 @@ ServerEvents.recipes((event) => {
             count: 1,
             reagent: '#forge:gems/source',
             inputs: ['twilightforest:charm_of_life_2', '#forge:ingots/lead', 'hexerei:blood_bottle'],
-            source: 2000,
+            source: 500,
             id: `ars_elemental:imbuement_anima_essence`
         },
         {

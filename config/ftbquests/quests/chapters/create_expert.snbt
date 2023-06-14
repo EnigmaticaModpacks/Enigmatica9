@@ -2000,7 +2000,7 @@
 			description: [
 				"Who knew a Blaze could get thirsty? They’re certainly not interested in Water, but other combustible fluids seem to hit the spot just fine. "
 				""
-				"Giving the Blaze a Straw allows them to accept liquid fuels instead. These will never burn as hot as a Blaze Cake, but they can make an excellent alternative to Coal for regular heating operations."
+				"Giving the Blaze a Straw allows them to accept liquid fuels instead. Given the right fuel, it may even be super heated!"
 			]
 			id: "22B7A9A1F7CDD7A1"
 			rewards: [{

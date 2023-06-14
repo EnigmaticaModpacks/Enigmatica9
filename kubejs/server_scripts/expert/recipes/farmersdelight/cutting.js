@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
             tool: {
                 tag: 'forge:tools/knives'
             },
-            id: `${id_prefix}nautilus_shell`
+            id: `${id_prefix}recycle_glyphs_to_parchment`
         }
     ];
 
