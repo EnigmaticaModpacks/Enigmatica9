@@ -242,7 +242,7 @@ ServerEvents.recipes((event) => {
             output: 'ars_nouveau:scribes_table',
             ingredients: [
                 'supplementaries:antique_ink',
-                '#forge:planks/archwood',
+                '#forge:ingots/energized_steel',
                 '#forge:planks/archwood',
                 '#forge:planks/archwood',
                 'naturesaura:gold_leaf',
