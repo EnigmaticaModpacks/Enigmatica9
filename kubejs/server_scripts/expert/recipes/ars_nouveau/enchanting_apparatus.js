@@ -109,7 +109,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'immersiveengineering:mold_gear',
-            inputs: ['#forge:gears', '#forge:essences/manipulation'],
+            inputs: ['create:cogwheel', '#forge:essences/manipulation'],
             reagents: ['pneumaticcraft:compressed_stone_slab'],
             sourceCost: 1000,
             id: `${id_prefix}mold_gear`

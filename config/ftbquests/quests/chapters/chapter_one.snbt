@@ -1674,7 +1674,7 @@
 			}]
 			tasks: [{
 				id: "76702DE4AA5CCE26"
-				item: "emendatusenigmatica:quartz_dust"
+				item: "minecraft:quartz"
 				type: "item"
 			}]
 			x: -6.0d

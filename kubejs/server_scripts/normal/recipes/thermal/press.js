@@ -70,8 +70,25 @@ ServerEvents.recipes((event) => {
             outputs: [{ item: 'ae2:silicon_press' }],
             energy: 4000,
             id: `${id_prefix}silicon_press`
+        },
+        {
+            outputs: [{ item: `pneumaticcraft:compressed_iron_gear`, count: 1 }],
+            inputs: [`4x #forge:ingots/compressed_iron`, 'immersiveengineering:mold_gear'],
+            energy: 2400,
+            id: `${id_prefix}compressed_iron_gear`
         }
     ];
+
+    Object.keys(gem_properties).forEach((gem) => {
+        if (gem_properties[gem].gear) {
+            recipes.push({
+                outputs: [{ item: `emendatusenigmatica:${gem}_gear`, count: 1 }],
+                inputs: [`4x #forge:gems/${gem}`, 'immersiveengineering:mold_gear'],
+                energy: 2400,
+                id: `${id_prefix}${gem}_gear`
+            });
+        }
+    });
 
     recipes.forEach((recipe) => {
         recipe.type = 'thermal:press';

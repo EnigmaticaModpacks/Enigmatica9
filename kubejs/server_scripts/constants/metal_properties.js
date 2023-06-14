@@ -7,6 +7,10 @@ const metal_properties = {
     copper: {
         meltingPoint: 500,
         crushing_tier: 1,
+        gear: true,
+        plate: true,
+        rod: true,
+        wire: true,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'gold' },
             expert_output: { secondary: 'nickel' },
@@ -17,6 +21,9 @@ const metal_properties = {
     iron: {
         meltingPoint: 800,
         crushing_tier: 3,
+        gear: true,
+        plate: true,
+        rod: true,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'nickel' },
             expert_output: { secondary: 'tin' },
@@ -27,6 +34,9 @@ const metal_properties = {
     gold: {
         meltingPoint: 700,
         crushing_tier: 1,
+        gear: true,
+        plate: true,
+        rod: true,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'zinc' },
             expert_output: { secondary: 'copper' },
@@ -37,6 +47,9 @@ const metal_properties = {
     tin: {
         meltingPoint: 225,
         crushing_tier: 1,
+        gear: true,
+        plate: true,
+        rod: true,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'osmium' },
             expert_output: { secondary: 'quartz' },
@@ -47,6 +60,9 @@ const metal_properties = {
     osmium: {
         meltingPoint: 975,
         crushing_tier: 3,
+        gear: true,
+        plate: true,
+        rod: true,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'tin' },
             expert_output: { secondary: 'copper' },
@@ -57,6 +73,9 @@ const metal_properties = {
     uranium: {
         meltingPoint: 830,
         crushing_tier: 4,
+        gear: true,
+        plate: true,
+        rod: true,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'lead' },
             create: { processingTime: 400 },
@@ -66,6 +85,10 @@ const metal_properties = {
     lead: {
         meltingPoint: 330,
         crushing_tier: 2,
+        gear: true,
+        plate: true,
+        rod: true,
+        wire: true,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'silver' },
             expert_output: { secondary: 'silver' },
@@ -76,6 +99,9 @@ const metal_properties = {
     silver: {
         meltingPoint: 790,
         crushing_tier: 1,
+        gear: true,
+        plate: true,
+        rod: true,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'lead' },
             expert_output: { secondary: 'lead' },
@@ -86,6 +112,9 @@ const metal_properties = {
     nickel: {
         meltingPoint: 950,
         crushing_tier: 2,
+        gear: true,
+        plate: true,
+        rod: true,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'iron' },
             expert_output: { secondary: 'iron' },
@@ -96,6 +125,10 @@ const metal_properties = {
     aluminum: {
         meltingPoint: 425,
         crushing_tier: 3,
+        gear: true,
+        plate: true,
+        rod: true,
+        wire: true,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'iron' },
             expert_output: { secondary: 'copper' },
@@ -106,6 +139,9 @@ const metal_properties = {
     zinc: {
         crushing_tier: 2,
         meltingPoint: 420,
+        gear: true,
+        plate: true,
+        rod: true,
         oreProcessing: {
             output: { substrate: 'minecraft:gravel', secondary: 'gold' },
             create: { processingTime: 350 },
@@ -138,15 +174,24 @@ const metal_properties = {
     },
     enderium: {
         meltingPoint: 1450,
-        crushing_tier: 4
+        crushing_tier: 4,
+        gear: true,
+        plate: true,
+        rod: true
     },
     signalum: {
         meltingPoint: 1272,
-        crushing_tier: 1
+        crushing_tier: 1,
+        gear: true,
+        plate: true,
+        rod: true
     },
     lumium: {
         meltingPoint: 1354,
-        crushing_tier: 1
+        crushing_tier: 1,
+        gear: true,
+        plate: true,
+        rod: true
     },
     infused_iron: {
         meltingPoint: 850
@@ -163,23 +208,39 @@ const metal_properties = {
     // TODO, Add  melting Points for those metals:
     brass: {
         // meltingPoint: 1000
-        crushing_tier: 2
+        crushing_tier: 2,
+        gear: true,
+        plate: true,
+        rod: true
     },
     bronze: {
         // meltingPoint: 1000
-        crushing_tier: 1
+        crushing_tier: 1,
+        gear: true,
+        plate: true,
+        rod: true
     },
     constantan: {
         // meltingPoint: 1000
-        crushing_tier: 2
+        crushing_tier: 2,
+        gear: true,
+        plate: true,
+        rod: true
     },
     electrum: {
         // meltingPoint: 1000
-        crushing_tier: 1
+        crushing_tier: 1,
+        gear: true,
+        plate: true,
+        rod: true,
+        wire: true
     },
     invar: {
         // meltingPoint: 1000
-        crushing_tier: 3
+        crushing_tier: 3,
+        gear: true,
+        plate: true,
+        rod: true
     },
     refined_glowstone: {
         // meltingPoint: 1000
@@ -195,16 +256,28 @@ const metal_properties = {
     },
     steel: {
         // meltingPoint: 1000
-        crushing_tier: 4
+        crushing_tier: 4,
+        gear: true,
+        plate: true,
+        rod: true,
+        wire: true
     },
     andesite: {
         // meltingPoint: 1000
     },
     netherite: {
-        crushing_tier: 4
+        crushing_tier: 4,
+        gear: true
         // meltingPoint: 1000
     },
     hop_graphite: {
         // meltingPoint: 1000
+    },
+    rose_gold: {
+        // meltingPoint: 1000
+        crushing_tier: 1,
+        gear: true,
+        plate: true,
+        rod: true
     }
 };
