@@ -1995,7 +1995,6 @@
 					type: "command"
 				}
 				{
-					count: 4
 					id: "0ADB1DD209B4DFEB"
 					item: "starbunclemania:direction_scroll"
 					type: "item"

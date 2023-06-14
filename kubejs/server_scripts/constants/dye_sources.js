@@ -32,13 +32,6 @@ const dye_sources = [
         tertiary: 'minecraft:light_gray_dye'
     },
     {
-        input: 'minecraft:lapis_lazuli',
-        type: 'small',
-        primary: 'minecraft:blue_dye',
-        secondary: 'minecraft:blue_dye',
-        tertiary: 'minecraft:blue_dye'
-    },
-    {
         input: 'minecraft:ink_sac',
         type: 'small',
         primary: 'minecraft:black_dye',
@@ -929,6 +922,16 @@ const dye_sources = [
         primary: 'manyideas_core:dye_rainbow',
         secondary: 'manyideas_core:dye_rainbow',
         tertiary: 'manyideas_core:dye_rainbow'
+    },
+
+    // Emendatus Enigmatica
+
+    {
+        input: 'emendatusenigmatica:lapis_dust',
+        type: 'small',
+        primary: 'minecraft:blue_dye',
+        secondary: 'minecraft:blue_dye',
+        tertiary: 'minecraft:blue_dye'
     }
 ];
 
