@@ -166,7 +166,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'naturesaura:eye_improved',
-            ingredients: ['naturesaura:eye', 'naturesaura:sky_ingot', 'naturesaura:gold_leaf', 'naturesaura:gold_leaf'],
+            ingredients: ['naturesaura:eye', '#forge:ingots/sky', 'naturesaura:gold_leaf', 'naturesaura:gold_leaf'],
             time: 25,
             sapling: 'hexerei:mahogany_sapling',
             id: 'naturesaura:tree_ritual/eye_improved'
