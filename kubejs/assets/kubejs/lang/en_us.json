@@ -15,6 +15,10 @@
     "item.kubejs.tree_of_life_2": "Tree of Life: Stage 2",
     "item.kubejs.tree_of_life_3": "Tree of Life: Stage 3",
     "item.kubejs.tree_of_life_4": "Tree of Life: Stage 4",
+    "item.kubejs.mastery_token_air": "Mastery Token: Air",
+    "item.kubejs.mastery_token_earth": "Mastery Token: Earth",
+    "item.kubejs.mastery_token_fire": "Mastery Token: Fire",
+    "item.kubejs.mastery_token_water": "Mastery Token: Water",
 
     "entity.minecraft.villager.byg.forager": "Forager",
     "tooltip.hexerei.sage_seeds": "May be purchased from the Market block.",

@@ -154,10 +154,10 @@
 			icon: "kubejs:tree_of_life_3"
 			id: "0672B242C31F4A11"
 			rewards: [{
-				id: "056BDF2B145469D2"
+				id: "2D740869358D959C"
 				item: {
 					Count: 1b
-					id: "trofers:large_pillar"
+					id: "trofers:medium_plate"
 					tag: {
 						BlockEntityTag: {
 							Trophy: "trofers:tree_of_life_3"
@@ -220,7 +220,7 @@
 				id: "56B1186DA0E6278D"
 				item: {
 					Count: 1b
-					id: "trofers:large_pillar"
+					id: "trofers:large_plate"
 					tag: {
 						BlockEntityTag: {
 							Trophy: "trofers:tree_of_life_4"
@@ -241,6 +241,19 @@
 		{
 			dependencies: ["3DD1F3E561B3D06A"]
 			id: "522FAC34F1EC78A6"
+			rewards: [{
+				id: "177458D9F208E475"
+				item: {
+					Count: 1b
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:mastery_token_water"
+						}
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "6F37D1F612338755"
 				item: "minecraft:heart_of_the_sea"
@@ -252,6 +265,19 @@
 		{
 			dependencies: ["3DD1F3E561B3D06A"]
 			id: "7F47E4A0E4F840B0"
+			rewards: [{
+				id: "1E7213CB27EC8097"
+				item: {
+					Count: 1b
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:mastery_token_earth"
+						}
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "1B2410E6942EED4C"
 				item: "kubejs:heart_of_the_mountain"
@@ -263,24 +289,50 @@
 		{
 			dependencies: ["3DD1F3E561B3D06A"]
 			id: "78FA52767FE8D732"
+			rewards: [{
+				id: "707B97D92EFFEEBA"
+				item: {
+					Count: 1b
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:mastery_token_fire"
+						}
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "676C8DC7B592B237"
 				item: "kubejs:heart_of_the_inferno"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.5d
+			x: 0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3DD1F3E561B3D06A"]
 			id: "75A2DCF61048E5CE"
+			rewards: [{
+				id: "18DD56C12CED5345"
+				item: {
+					Count: 1b
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:mastery_token_air"
+						}
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "29AACF719FD3F34E"
 				item: "kubejs:heart_of_the_tempest"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 4.0d
+			x: 1.5d
+			y: 3.5d
 		}
 	]
 	title: "Chapter Three"

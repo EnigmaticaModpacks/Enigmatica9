@@ -761,10 +761,10 @@
 			icon: "kubejs:tree_of_life_2"
 			id: "2759988A5B69A455"
 			rewards: [{
-				id: "466C4B4406CAF0CF"
+				id: "0FB91854818547CC"
 				item: {
 					Count: 1b
-					id: "trofers:large_pillar"
+					id: "trofers:medium_plate"
 					tag: {
 						BlockEntityTag: {
 							Trophy: "trofers:tree_of_life_2"
