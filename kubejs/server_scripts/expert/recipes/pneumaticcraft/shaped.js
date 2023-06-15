@@ -163,7 +163,7 @@ ServerEvents.recipes((event) => {
             pattern: [' A ', ' B ', 'A A'],
             key: {
                 A: 'pneumaticcraft:turbine_blade',
-                B: '#forge:ingots/skies'
+                B: '#forge:ingots/sky'
             },
             id: `pneumaticcraft:turbine_rotor`
         },

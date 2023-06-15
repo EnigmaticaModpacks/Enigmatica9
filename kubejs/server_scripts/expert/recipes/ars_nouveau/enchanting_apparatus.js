@@ -74,7 +74,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'pneumaticcraft:drill_bit_diamond',
-            inputs: ['#forge:ingots/skies', 'ars_nouveau:glyph_aoe'],
+            inputs: ['#forge:ingots/sky', 'ars_nouveau:glyph_aoe'],
             reagents: ['pneumaticcraft:drill_bit_compressed_iron'],
             sourceCost: 3000,
             id: `${id_prefix}drill_bit_diamond`
@@ -578,9 +578,9 @@ ServerEvents.recipes((event) => {
                 '{perks:{cooldown:0.5d,luck:2.0d,noise:0.5d},upgrades:{}}'
             ),
             inputs: [
-                '#forge:ingots/skies',
-                '#forge:ingots/skies',
-                '#forge:ingots/skies',
+                '#forge:ingots/sky',
+                '#forge:ingots/sky',
+                '#forge:ingots/sky',
                 'kubejs:spirit_of_devotion',
                 '#forge:storage_blocks/lapis',
                 '#forge:storage_blocks/lapis',

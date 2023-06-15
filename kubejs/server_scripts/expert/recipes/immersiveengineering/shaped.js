@@ -141,7 +141,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: '#forge:ingots/compressed_iron',
                 B: 'create:shaft',
-                C: '#forge:ingots/skies'
+                C: '#forge:ingots/sky'
             },
             id: `immersiveengineering:crafting/rockcutter`
         },
