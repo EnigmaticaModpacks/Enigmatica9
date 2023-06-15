@@ -370,6 +370,17 @@ ServerEvents.recipes((event) => {
                 C: 'ae2:quartz_glass'
             },
             id: `pneumaticcraft:small_tank`
+        },
+        {
+            output: 'pneumaticcraft:fluid_mixer',
+            pattern: [' A ', 'BCB', 'ADA'],
+            key: {
+                A: 'thermal:fluid_cell_frame',
+                B: 'pneumaticcraft:compressed_stone',
+                C: 'create:propeller',
+                D: 'pneumaticcraft:pressure_tube'
+            },
+            id: `pneumaticcraft:fluid_mixer`
         }
     ];
 
