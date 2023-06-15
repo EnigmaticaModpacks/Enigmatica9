@@ -760,6 +760,19 @@
 			hide_dependency_lines: true
 			icon: "kubejs:tree_of_life_2"
 			id: "2759988A5B69A455"
+			rewards: [{
+				id: "466C4B4406CAF0CF"
+				item: {
+					Count: 1b
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:tree_of_life_2"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{

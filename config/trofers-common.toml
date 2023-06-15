@@ -3,7 +3,7 @@
 #Range: 0.0 ~ 1.0
 trophy_chance = 0.0
 #Whether trophies can drop loot when right-clicked
-enable_trophy_loot = false
+enable_trophy_loot = true
 #Whether trophies can apply status effects when right-clicked
-enable_trophy_effects = false
+enable_trophy_effects = true
 

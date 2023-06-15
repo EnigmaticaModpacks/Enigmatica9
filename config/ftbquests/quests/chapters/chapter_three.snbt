@@ -153,6 +153,19 @@
 			hide_dependency_lines: true
 			icon: "kubejs:tree_of_life_3"
 			id: "0672B242C31F4A11"
+			rewards: [{
+				id: "056BDF2B145469D2"
+				item: {
+					Count: 1b
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:tree_of_life_3"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -203,6 +216,19 @@
 			]
 			hide_dependency_lines: true
 			id: "3DD1F3E561B3D06A"
+			rewards: [{
+				id: "56B1186DA0E6278D"
+				item: {
+					Count: 1b
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:tree_of_life_4"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "3AEE4B91C07C6421"
