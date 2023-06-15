@@ -193,7 +193,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'ae2:sky_dust',
                 B: 'kubejs:dimensional_storage_crystal',
-                C: 'naturesaura:sky_ingot'
+                C: '#forge:ingots/sky'
             },
             id: `ae2:network/cells/item_storage_components_cell_1k_part`
         },
@@ -204,7 +204,7 @@ ServerEvents.recipes((event) => {
                 A: 'ae2:sky_dust',
                 B: 'kubejs:dimensional_storage_crystal',
                 C: 'ae2:cell_component_1k',
-                D: 'naturesaura:sky_ingot'
+                D: '#forge:ingots/sky'
             },
             id: `ae2:network/cells/item_storage_components_cell_4k_part`
         },
@@ -215,7 +215,7 @@ ServerEvents.recipes((event) => {
                 A: 'ae2:sky_dust',
                 B: 'kubejs:dimensional_storage_crystal',
                 C: 'ae2:cell_component_4k',
-                D: 'naturesaura:sky_ingot'
+                D: '#forge:ingots/sky'
             },
             id: `ae2:network/cells/item_storage_components_cell_16k_part`
         },
@@ -226,7 +226,7 @@ ServerEvents.recipes((event) => {
                 A: 'ae2:sky_dust',
                 B: 'kubejs:dimensional_storage_crystal',
                 C: 'ae2:cell_component_16k',
-                D: 'naturesaura:sky_ingot'
+                D: '#forge:ingots/sky'
             },
             id: `ae2:network/cells/item_storage_components_cell_64k_part`
         },
@@ -237,7 +237,7 @@ ServerEvents.recipes((event) => {
                 A: 'ae2:sky_dust',
                 B: 'kubejs:dimensional_storage_crystal',
                 C: 'ae2:cell_component_64k',
-                D: 'naturesaura:sky_ingot'
+                D: '#forge:ingots/sky'
             },
             id: `ae2:network/cells/item_storage_components_cell_256k_part`
         },

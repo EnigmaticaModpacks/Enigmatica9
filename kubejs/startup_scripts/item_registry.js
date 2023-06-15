@@ -37,7 +37,11 @@ StartupEvents.registry('item', (event) => {
         'shard_of_renewal',
         'shard_of_enduring',
         'shard_of_rebirth',
-        'shard_of_wisdom'
+        'shard_of_wisdom',
+        'mastery_token_air',
+        'mastery_token_earth',
+        'mastery_token_fire',
+        'mastery_token_water'
     ];
 
     const ritualDummies = [

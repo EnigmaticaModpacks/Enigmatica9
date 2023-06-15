@@ -755,7 +755,8 @@ jei.expert.recipes.hidden = [
             'ars_nouveau:potion_melder',
             'ars_nouveau:alchemists_crown',
             'ars_nouveau:dominion_wand',
-            'ars_nouveau:storage_lectern'
+            'ars_nouveau:storage_lectern',
+            'ars_elemental:everfull_urn'
         ]
     }
 ];

@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
                 .toJson(),
             result: [{ item: 'kubejs:mote_of_wisdom', count: 3 }],
             energy: 1000,
-            id: `${id_prefix}iesnium_lithium`
+            id: `${id_prefix}mote_of_wisdom`
         }
     ];
 

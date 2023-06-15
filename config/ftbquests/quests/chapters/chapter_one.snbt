@@ -1617,6 +1617,19 @@
 			]
 			icon: "kubejs:tree_of_life_1"
 			id: "33BCDA0A76E2523C"
+			rewards: [{
+				id: "17D884FFA7ACF753"
+				item: {
+					Count: 1b
+					id: "trofers:small_plate"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:tree_of_life_1"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [
 				{

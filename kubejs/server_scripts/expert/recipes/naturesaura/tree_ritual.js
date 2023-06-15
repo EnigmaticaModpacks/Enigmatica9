@@ -166,7 +166,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'naturesaura:eye_improved',
-            ingredients: ['naturesaura:eye', 'naturesaura:sky_ingot', 'naturesaura:gold_leaf', 'naturesaura:gold_leaf'],
+            ingredients: ['naturesaura:eye', '#forge:ingots/sky', 'naturesaura:gold_leaf', 'naturesaura:gold_leaf'],
             time: 25,
             sapling: 'hexerei:mahogany_sapling',
             id: 'naturesaura:tree_ritual/eye_improved'
@@ -338,7 +338,7 @@ ServerEvents.recipes((event) => {
                 '#forge:ingots/signalum',
                 '#forge:ingots/signalum'
             ],
-            time: 5,
+            time: 40,
             sapling: 'ars_nouveau:purple_archwood_sapling',
             id: `${id_prefix}storage_stabilizer_tier1`
         },
@@ -354,7 +354,7 @@ ServerEvents.recipes((event) => {
                 '#forge:ingots/aluminum',
                 '#forge:ingots/aluminum'
             ],
-            time: 5,
+            time: 40,
             sapling: 'ars_nouveau:purple_archwood_sapling',
             id: `${id_prefix}storage_stabilizer_tier2`
         },
@@ -370,7 +370,7 @@ ServerEvents.recipes((event) => {
                 '#forge:ingots/lumium',
                 '#forge:ingots/lumium'
             ],
-            time: 5,
+            time: 40,
             sapling: 'ars_nouveau:purple_archwood_sapling',
             id: `${id_prefix}storage_stabilizer_tier3`
         },
@@ -387,7 +387,7 @@ ServerEvents.recipes((event) => {
                 '#forge:ingots/soul_steel',
                 '#forge:ingots/soul_steel'
             ],
-            time: 5,
+            time: 40,
             sapling: 'ars_nouveau:purple_archwood_sapling',
             id: `${id_prefix}storage_stabilizer_tier4`
         }

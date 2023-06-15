@@ -6,27 +6,33 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            input: [Ingredient.of('#minecraft:wooden_stairs')],
-            output: Item.of('minecraft:stick', 9),
-            secondary: { output: Item.of(sawdust), chance: 0.38 },
+            input: ['#minecraft:wooden_stairs'],
+            output: '9x minecraft:stick',
+            secondary: { output: sawdust, chance: 0.38 },
             id: `mekanism:sawing/stairs`
         },
         {
-            input: [Ingredient.of('#minecraft:wooden_slabs')],
-            output: Item.of('minecraft:stick', 3),
-            secondary: { output: Item.of(sawdust), chance: 0.13 },
+            input: ['#minecraft:wooden_slabs'],
+            output: '3x minecraft:stick',
+            secondary: { output: sawdust, chance: 0.13 },
             id: `mekanism:sawing/slabs`
         },
         {
-            input: [Ingredient.of('#forge:rods/wooden')],
-            output: Item.of(sawdust),
+            input: ['#forge:rods/wooden'],
+            output: sawdust,
             id: `mekanism:sawing/stick`
         },
         {
-            input: [Ingredient.of('#minecraft:planks')],
-            output: Item.of('minecraft:stick', 6),
-            secondary: { output: Item.of(sawdust), chance: 0.25 },
+            input: ['#minecraft:planks'],
+            output: '6x minecraft:stick',
+            secondary: { output: sawdust, chance: 0.25 },
             id: `mekanism:sawing/planks`
+        },
+        {
+            input: ['naturesaura:ancient_log', 'naturesaura:ancient_bark'],
+            output: '6x naturesaura:ancient_planks',
+            secondary: { output: 'naturesaura:gold_powder', chance: 1.0 },
+            id: `${id_prefix}ancient_planks_from_ancient_log`
         }
     ];
 
@@ -35,9 +41,9 @@ ServerEvents.recipes((event) => {
         let input = material.log.block,
             output = material.log.stripped;
         recipes.push({
-            input: [Item.of(input)],
-            output: Item.of(output),
-            secondary: { output: Item.of(bark), chance: 1.0 },
+            input: [input],
+            output: output,
+            secondary: { output: bark, chance: 1.0 },
             id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
         });
 
@@ -45,9 +51,9 @@ ServerEvents.recipes((event) => {
         input = material.wood.block;
         output = material.wood.stripped;
         recipes.push({
-            input: [Item.of(input)],
-            output: Item.of(output),
-            secondary: { output: Item.of(bark), chance: 1.0 },
+            input: [input],
+            output: output,
+            secondary: { output: bark, chance: 1.0 },
             id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
         });
 
@@ -55,26 +61,22 @@ ServerEvents.recipes((event) => {
         input = material.log.stripped;
         output = material.plank.block;
         recipes.push({
-            input: [Item.of(input), Item.of(material.wood.stripped)],
+            input: [input, material.wood.stripped],
             output: Item.of(output, 6),
-            secondary: { output: Item.of(sawdust), chance: 0.25 },
+            secondary: { output: sawdust, chance: 0.25 },
             id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
         });
     });
 
     recipes.forEach((recipe) => {
         recipe.type = 'mekanism:sawing';
-        // input: { ingredient: [{ item: 'minecraft:oak_log' }] },
-        recipe.input = { ingredient: recipe.input.map((input) => input.toJson()) };
-        // mainOutput: { count: 6, item: 'minecraft:oak_planks' }
-        recipe.mainOutput = recipe.output.toJson();
+        recipe.input = { ingredient: recipe.input.map((input) => Ingredient.of(input).toJson()) };
+        recipe.mainOutput = Item.of(recipe.output).toJson();
         if (recipe.secondary) {
             if (recipe.secondary.output) {
-                // secondaryOutput: { item: 'farmersdelight:tree_bark' },
-                recipe.secondaryOutput = recipe.secondary.output.toJson();
+                recipe.secondaryOutput = Item.of(recipe.secondary.output).toJson();
             }
             if (recipe.secondary.chance) {
-                // secondaryChance: 0.25,
                 recipe.secondaryChance = recipe.secondary.chance;
             }
         }

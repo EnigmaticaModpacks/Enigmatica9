@@ -1,4 +1,5 @@
 {
-    "biome.hexerei.willow_swamp": "Willow Swamp",
-    "fluid_type.hexerei.quicksilver_fluid": "Quicksilver"
+	"biome.hexerei.willow_swamp": "Willow Swamp",
+	"fluid_type.hexerei.quicksilver_fluid": "Quicksilver",
+	"tooltip.hexerei.found_in_swamp": "Plant it to grow more!"
 }

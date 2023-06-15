@@ -27,7 +27,8 @@ ServerEvents.recipes((event) => {
             { id: 'ars_nouveau:dominion_wand', output: 'ars_nouveau:dominion_wand' },
             { id: 'ars_nouveau:storage_lectern', output: 'ars_nouveau:storage_lectern' },
             { id: 'ars_nouveau:drygmy_charm', output: 'ars_nouveau:drygmy_charm' },
-            { id: 'ars_nouveau:whirlisprig_charm', output: 'ars_nouveau:whirlisprig_charm' }
+            { id: 'ars_nouveau:whirlisprig_charm', output: 'ars_nouveau:whirlisprig_charm' },
+            { id: 'ars_elemental:everfull_urn', output: 'ars_elemental:everfull_urn' }
         ],
         imbuement: [{ id: 'ars_nouveau:imbuement_lapis', output: 'emendatusenigmatica:source_gem' }]
     };
