@@ -1230,6 +1230,15 @@ const entries = {
                 expert: 'Breath of Twilight'
             }
         }
+    ],
+    hexerei: [
+        {
+            key: 'tooltip.hexerei.found_in_swamp',
+            value: {
+                normal: 'Found in a swamp biome.',
+                expert: 'Plant it to grow more!'
+            }
+        }
     ]
 };
 Object.keys(entries).forEach((mod) => {

@@ -12,6 +12,38 @@ ServerEvents.recipes((event) => {
                 tag: 'forge:tools/knives'
             },
             id: `${id_prefix}recycle_glyphs_to_parchment`
+        },
+        {
+            ingredients: [{ item: 'hexerei:belladonna_flower' }],
+            result: [{ item: 'hexerei:belladonna_flowers' }, { item: 'hexerei:belladonna_berries' }],
+            tool: {
+                tag: 'forge:tools/knives'
+            },
+            id: `${id_prefix}process_belladonna_flower`
+        },
+        {
+            ingredients: [{ item: 'hexerei:yellow_dock_bush' }],
+            result: [{ item: 'hexerei:yellow_dock_flowers' }, { item: 'hexerei:yellow_dock_leaves' }],
+            tool: {
+                tag: 'forge:tools/knives'
+            },
+            id: `${id_prefix}process_yellow_dock_bush`
+        },
+        {
+            ingredients: [{ item: 'hexerei:mugwort_bush' }],
+            result: [{ item: 'hexerei:mugwort_flowers' }, { item: 'hexerei:mugwort_leaves' }],
+            tool: {
+                tag: 'forge:tools/knives'
+            },
+            id: `${id_prefix}process_mugwort_bush`
+        },
+        {
+            ingredients: [{ item: 'hexerei:mandrake_flower' }],
+            result: [{ item: 'hexerei:mandrake_flowers' }, { item: 'hexerei:mandrake_root' }],
+            tool: {
+                tag: 'forge:tools/knives'
+            },
+            id: `${id_prefix}process_mandrake_flower`
         }
     ];
 

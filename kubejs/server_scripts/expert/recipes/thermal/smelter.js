@@ -186,6 +186,12 @@ ServerEvents.recipes((event) => {
             outputs: ['4x naturesaura:depth_ingot'],
             energy: 8000,
             id: `${id_prefix}depth_ingot`
+        },
+        {
+            inputs: ['4x thermal:rubber', '#forge:essences/fire', '#forge:essences/water'],
+            outputs: ['4x thermal:cured_rubber'],
+            energy: 1000,
+            id: `${id_prefix}cured_rubber`
         }
     ];
 

@@ -19,6 +19,24 @@ ServerEvents.recipes((event) => {
             ],
             energy: 800,
             id: `${id_prefix}frost_melon_slice`
+        },
+        {
+            input: 'naturesaura:ancient_log',
+            outputs: [
+                { item: 'naturesaura:ancient_planks', count: 6 },
+                { item: 'naturesaura:gold_powder', chance: 1.1 }
+            ],
+            energy: 1000,
+            id: `${id_prefix}ancient_planks_from_ancient_log`
+        },
+        {
+            input: 'naturesaura:ancient_bark',
+            outputs: [
+                { item: 'naturesaura:ancient_planks', count: 6 },
+                { item: 'naturesaura:gold_powder', chance: 1.1 }
+            ],
+            energy: 1000,
+            id: `${id_prefix}ancient_planks_from_ancient_bark`
         }
     ];
 
