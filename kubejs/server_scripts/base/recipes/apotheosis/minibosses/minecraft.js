@@ -60,30 +60,31 @@ ServerEvents.highPriorityData((event) => {
                 ]
             }
         },
-        {
-            id: 'blaze',
-            name: null,
-            chance: 1.0,
-            weight: 100,
-            quality: 0,
-            entities: ['minecraft:blaze'],
-            valid_gear_sets: ['#miniboss/blaze'],
-            dimensions: [],
-            affixed: false,
-            nbt: {},
-            stats: {
-                enchant_chance: 1.0,
-                enchantment_levels: [20, 20, 20, 20],
-                effects: [{ effect: 'minecraft:strength', amplifier: 0, chance: 1.0 }],
-                attribute_modifiers: [
-                    {
-                        attribute: 'minecraft:generic.max_health',
-                        operation: 'ADDITION',
-                        value: { min: 40, steps: 1, step: 0 }
-                    }
-                ]
-            }
-        },
+        // Disabled until I can figure out how to exclude the Occultism spawns from this: Motoko
+        // {
+        //     id: 'blaze',
+        //     name: null,
+        //     chance: 1.0,
+        //     weight: 100,
+        //     quality: 0,
+        //     entities: ['minecraft:blaze'],
+        //     valid_gear_sets: ['#miniboss/blaze'],
+        //     dimensions: [],
+        //     affixed: false,
+        //     nbt: {},
+        //     stats: {
+        //         enchant_chance: 1.0,
+        //         enchantment_levels: [20, 20, 20, 20],
+        //         effects: [{ effect: 'minecraft:strength', amplifier: 0, chance: 1.0 }],
+        //         attribute_modifiers: [
+        //             {
+        //                 attribute: 'minecraft:generic.max_health',
+        //                 operation: 'ADDITION',
+        //                 value: { min: 40, steps: 1, step: 0 }
+        //             }
+        //         ]
+        //     }
+        // },
         {
             id: 'iron_golem',
             name: null,

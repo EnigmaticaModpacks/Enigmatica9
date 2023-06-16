@@ -381,6 +381,29 @@ ServerEvents.recipes((event) => {
                 D: 'pneumaticcraft:pressure_tube'
             },
             id: `pneumaticcraft:fluid_mixer`
+        },
+        {
+            output: 'pneumaticcraft:vortex_tube',
+            pattern: ['ABA', 'CBC', 'ADA'],
+            key: {
+                A: '#forge:ingots/ironwood',
+                B: 'pneumaticcraft:pressure_tube',
+                C: '#forge:plates/gold',
+                D: '#forge:essences/air'
+            },
+            id: `pneumaticcraft:vortex_tube`
+        },
+        {
+            output: 'pneumaticcraft:universal_sensor',
+            pattern: [' AB', ' C ', 'DE '],
+            key: {
+                A: '#forge:plates/signalum',
+                B: 'littlelogistics:receiver_component',
+                C: 'create:turntable',
+                D: 'pneumaticcraft:pressure_tube',
+                E: 'pneumaticcraft:compressed_stone'
+            },
+            id: `pneumaticcraft:universal_sensor`
         }
     ];
 
