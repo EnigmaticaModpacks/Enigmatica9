@@ -1219,6 +1219,15 @@
 				"More finely crafted apparatus will need more delicately formed metals."
 				""
 				"These tough mechanical machines, the Mechanical Press and Rolling Mill are up to the task of properly pounding out plates or forming wires and rods, respectively. "
+				""
+				"================================="
+				""
+				"Note that stress and rotational mechanics have been adjusted:"
+				""
+				"● Uncovered Shafts and Gears now "
+				"  contribute to stress"
+				""
+				"● Rotational speed is limited to 128 RPM"
 			]
 			id: "44B02A5817C4144A"
 			rewards: [{
