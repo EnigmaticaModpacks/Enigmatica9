@@ -124,7 +124,7 @@ const metal_properties = {
     },
     aluminum: {
         meltingPoint: 425,
-        crushing_tier: 3,
+        crushing_tier: 2,
         gear: true,
         plate: true,
         rod: true,
