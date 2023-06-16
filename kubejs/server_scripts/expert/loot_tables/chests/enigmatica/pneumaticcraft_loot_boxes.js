@@ -28,7 +28,6 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('pneumaticcraft:printed_circuit_board', 2, 8);
             pool.addItem('pneumaticcraft:speed_upgrade', 2, 2);
             pool.addItem('pneumaticcraft:volume_upgrade', 2, 4);
-            pool.addItem('pneumaticcraft:compressed_iron_block', 1, [3, 6]);
             pool.addItem('pneumaticcraft:large_tank', 2, 1);
         });
 
@@ -46,6 +45,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('pneumaticcraft:printed_circuit_board', 3, [1, 3]);
             pool.addItem('pneumaticcraft:smart_chest', 1, 1);
             pool.addItem('pneumaticcraft:huge_tank', 1, 1);
+            pool.addItem('pneumaticcraft:compressed_iron_block', 1, [3, 6]);
             pool.addItem(Item.of('pneumaticcraft:drone', '{"pneumaticcraft:air": 120000}'), 1, 1);
         });
 
