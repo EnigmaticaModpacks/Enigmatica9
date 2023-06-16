@@ -122,6 +122,16 @@ ServerEvents.recipes((event) => {
             exothermic: false,
             temperature: { min_temp: 373 },
             id: `pneumaticcraft:thermo_plant/plastic_from_lpg`
+        },
+        {
+            item_output: { item: 'powah:dielectric_paste', count: 8 },
+            item_input: { item: 'occultism:burnt_otherstone' },
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 250, tag: 'forge:latex' },
+            exothermic: false,
+            pressure: 2.0,
+            speed: 4.0,
+            temperature: { min_temp: 813 },
+            id: `${id_prefix}dielectric_paste`
         }
     ];
 

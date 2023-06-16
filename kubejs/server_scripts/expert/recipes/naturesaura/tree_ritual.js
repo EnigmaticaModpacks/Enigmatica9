@@ -217,8 +217,8 @@ ServerEvents.recipes((event) => {
             ingredients: [
                 'kubejs:bright_arcanite_crystal',
                 '#forge:planks/archwood',
-                '#forge:ingots/skies',
-                '#forge:ingots/skies',
+                '#forge:ingots/sky',
+                '#forge:ingots/sky',
                 'naturesaura:gold_leaf'
             ],
             time: 20,

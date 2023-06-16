@@ -12,7 +12,7 @@ ServerEvents.recipes((event) => {
                 A: '#forge:plates/tin',
                 B: 'pneumaticcraft:logistics_core',
                 C: 'create:andesite_casing',
-                D: '#pneumaticcraft:plastic_sheets',
+                D: '#forge:treated_wood_slab',
                 E: 'ars_nouveau:ritual_warping'
             },
             id: 'functionalstorage:storage_controller'
