@@ -500,6 +500,15 @@ ServerEvents.recipes((event) => {
                 B: '#forge:ingots/aluminum'
             },
             id: `${id_prefix}fluid_pipe_vertical`
+        },
+        {
+            output: '3x immersiveengineering:strip_curtain',
+            pattern: ['AAA', 'BBB', 'BBB'],
+            key: {
+                A: '#forge:rods/wooden',
+                B: '#forge:fabrics/tough'
+            },
+            id: `immersiveengineering:crafting/strip_curtain`
         }
     ];
 
