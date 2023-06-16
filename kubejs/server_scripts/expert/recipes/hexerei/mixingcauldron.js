@@ -265,7 +265,6 @@ ServerEvents.recipes((event) => {
             liquid: { fluid: 'minecraft:lava' },
             liquidOutput: { fluid: 'minecraft:lava' },
             fluidLevelsConsumed: 1000,
-            heatRequirement: 'heated',
             id: `${id_prefix}fiery_ingot`
         },
         {
@@ -897,7 +896,6 @@ ServerEvents.recipes((event) => {
             liquid: { fluid: 'minecraft:lava' },
             liquidOutput: { fluid: 'minecraft:lava' },
             fluidLevelsConsumed: 1000,
-            heatRequirement: 'heated',
             id: 'hexerei:candle_dipper_from_mixing_cauldron'
         },
         {
@@ -953,6 +951,23 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 500,
             heatRequirement: 'heated',
             id: 'hexerei:large_satchel_from_mixing_cauldron'
+        },
+        {
+            output: 'hexerei:crystal_ball',
+            inputs: [
+                '#forge:storage_blocks/source',
+                'ae2:quartz_vibrant_glass',
+                'ae2:quartz_vibrant_glass',
+                'ae2:quartz_vibrant_glass',
+                'occultism:otherstone_pedestal',
+                'ae2:quartz_vibrant_glass',
+                'ae2:quartz_vibrant_glass',
+                'ae2:quartz_vibrant_glass'
+            ],
+            liquid: { fluid: 'minecraft:lava' },
+            liquidOutput: { fluid: 'minecraft:lava' },
+            fluidLevelsConsumed: 1000,
+            id: `${id_prefix}crystal_ball`
         }
     ];
 

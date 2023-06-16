@@ -452,6 +452,26 @@ ServerEvents.recipes((event) => {
                 E: '#forge:essences/fire'
             },
             id: 'thermal:machine_refinery'
+        },
+        {
+            output: '2x thermal:servo_attachment',
+            pattern: [' A ', 'BCB'],
+            key: {
+                A: '#forge:nuggets/copper',
+                B: '#forge:nuggets/tin',
+                C: 'pneumaticcraft:logistics_core'
+            },
+            id: 'thermal:servo_attachment_2'
+        },
+        {
+            output: '2x thermal:turbo_servo_attachment',
+            pattern: [' A ', 'BCB'],
+            key: {
+                A: '#forge:nuggets/signalum',
+                B: '#forge:nuggets/invar',
+                C: 'pneumaticcraft:logistics_core'
+            },
+            id: 'thermal:turbo_servo_attachment_2'
         }
     ];
 

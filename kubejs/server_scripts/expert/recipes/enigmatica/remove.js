@@ -128,6 +128,7 @@ ServerEvents.recipes((event) => {
         { id: /hexerei:.*_broom_from_mixing_cauldron/ },
         { id: /hexerei:.*_brush_from_mixing_cauldron/ },
         { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
+        { id: 'hexerei:crystal_ball_from_mixing_cauldron' },
         { id: 'hexerei:warhammer_from_mixing_cauldron' },
         { id: 'hexerei:blood_sigil_from_mixing_cauldron' },
         { id: 'hexerei:herb_jar_from_mixing_cauldron' },
