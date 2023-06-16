@@ -43,23 +43,6 @@
 		}
 		{
 			dependencies: ["484E8107D89F94E0"]
-			description: ["An energy generating mod would hardly be complete without some ways to transmit and store it. Powah comes with everything from personal batteries to charge held items to cables and in world storage cells. "]
-			hide_dependency_lines: true
-			icon: "powah:dielectric_casing"
-			id: "228CEB92770543F1"
-			min_width: 300
-			shape: "hexagon"
-			tasks: [{
-				id: "71E5AE82FF86120F"
-				item: "powah:dielectric_casing"
-				type: "item"
-			}]
-			title: "Getting Started: Logistics and Storage"
-			x: 4.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["484E8107D89F94E0"]
 			description: [
 				"Powah introduces just a few types of machines, but multiple tiers of each. Obtaining higher tiers requires more powerful materials which are made with the Resonating Crystal Ball."
 				""
@@ -133,12 +116,13 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["228CEB92770543F1"]
+			dependencies: ["50999062F73B4226"]
 			description: [
 				"Carrying around a battery is an excellent way to keep powered equipment charged on the go, but what if we could regain that inventory slot? The Player Transmitter allows precisely that by remotely charging any items in the owner’s inventory. "
 				""
 				"To set the owner, craft a Binding Card and Right-Click the card in the air. Doing so will bind the card to that player. The card may then be inserted into the Player Transmitter to configure it."
 			]
+			hide_dependency_lines: true
 			icon: "powah:player_transmitter_nitro"
 			id: "63B827E3E73EFA96"
 			rewards: [{
@@ -194,8 +178,8 @@
 				}
 			]
 			title: "Player Transmitter"
-			x: 5.0d
-			y: 5.0d
+			x: 4.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["63B827E3E73EFA96"]
@@ -215,7 +199,7 @@
 				type: "item"
 			}]
 			title: "Dimensional Binding Card"
-			x: 4.0d
+			x: 4.5d
 			y: 5.0d
 		}
 		{

@@ -6,9 +6,23 @@ ServerEvents.recipes((event) => {
 
     const recipes = [];
 
+    let crystal_types = ['generator', 'producer'];
+    let crystal_sizes = ['dim', 'pulsating', 'iridescent'];
+
+    crystal_sizes.forEach((size) => {
+        crystal_types.forEach((type) => {
+            recipes.push({
+                result: { item: `kubejs:${size}_arcanite_crystal` },
+                input: { item: `enigmaticunity:${size}_source_${type}` },
+                program: 'drill',
+                id: `${id_prefix}${size}_source_${type}_recycling`
+            });
+        });
+    });
+
     colors.forEach((color) => {
         recipes.push({
-            output: `industrialforegoing:laser_lens${lens_colors[color]}`,
+            result: { item: `industrialforegoing:laser_lens${lens_colors[color]}` },
             input: {
                 item: `quark:${color}_rune`,
                 type: 'pneumaticcraft:stacked_item',
@@ -21,7 +35,6 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = `pneumaticcraft:assembly_${recipe.program}`;
-        recipe.result = Item.of(recipe.output).toJson();
         event.custom(recipe).id(recipe.id);
     });
 });
