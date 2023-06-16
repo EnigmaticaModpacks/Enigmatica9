@@ -381,6 +381,17 @@ ServerEvents.recipes((event) => {
                 D: 'pneumaticcraft:pressure_tube'
             },
             id: `pneumaticcraft:fluid_mixer`
+        },
+        {
+            output: 'pneumaticcraft:vortex_tube',
+            pattern: ['ABA', 'CBC', 'ADA'],
+            key: {
+                A: '#forge:ingots/ironwood',
+                B: 'pneumaticcraft:pressure_tube',
+                C: '#forge:plates/gold',
+                D: '#forge:essences/air'
+            },
+            id: `pneumaticcraft:vortex_tube`
         }
     ];
 
