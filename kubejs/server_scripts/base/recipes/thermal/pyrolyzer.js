@@ -3,8 +3,8 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            input: Ingredient.of('#forge:gems/coal'),
-            outputs: [
+            ingredient: { tag: 'forge:gems/coal' },
+            result: [
                 { item: AlmostUnified.getPreferredItemForTag('forge:gems/coal_coke').getId() },
                 { item: 'thermal:tar', chance: 0.25 },
                 { fluid: 'immersiveengineering:creosote', amount: 500 }
@@ -14,16 +14,16 @@ ServerEvents.recipes((event) => {
             id: 'thermal:machines/pyrolyzer/pyrolyzer_coal'
         },
         {
-            input: Ingredient.of('#minecraft:logs'),
-            outputs: [{ item: 'minecraft:charcoal' }, { fluid: 'immersiveengineering:creosote', amount: 250 }],
+            ingredient: { tag: 'minecraft:logs' },
+            result: [{ item: 'minecraft:charcoal' }, { fluid: 'immersiveengineering:creosote', amount: 250 }],
             energy: 4000,
             experience: 0.15,
             id: 'thermal:machines/pyrolyzer/pyrolyzer_logs'
         },
         {
-            input: Ingredient.of('#forge:storage_blocks/coal'),
-            outputs: [
-                { item: AlmostUnified.getPreferredItemForTag('forge:storage_blocks/coal_coke').getId() },
+            ingredient: { tag: 'forge:storage_blocks/coal' },
+            result: [
+                { item: 'emendatusenigmatica:coal_coke_block' },
                 { item: 'thermal:tar', chance: 0.25 * 9 },
                 { fluid: 'immersiveengineering:creosote', amount: 5000 }
             ],
@@ -35,8 +35,6 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'thermal:pyrolyzer';
-        recipe.ingredient = recipe.input.toJson();
-        recipe.result = recipe.outputs;
         event.custom(recipe).id(recipe.id);
     });
 });

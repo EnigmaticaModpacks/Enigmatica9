@@ -3,8 +3,8 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            input: 'minecraft:melon',
-            outputs: [
+            ingredient: { item: 'minecraft:melon' },
+            result: [
                 { item: 'minecraft:melon_slice', count: 8 },
                 { item: 'minecraft:melon_seeds', chance: 0.25 }
             ],
@@ -12,8 +12,8 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}melon_slice`
         },
         {
-            input: 'thermal:frost_melon',
-            outputs: [
+            ingredient: { item: 'thermal:frost_melon' },
+            result: [
                 { item: 'thermal:frost_melon_slice', count: 8 },
                 { item: 'thermal:frost_melon_seeds', chance: 0.25 }
             ],
@@ -21,8 +21,8 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}frost_melon_slice`
         },
         {
-            input: 'naturesaura:ancient_log',
-            outputs: [
+            ingredient: { item: 'naturesaura:ancient_log' },
+            result: [
                 { item: 'naturesaura:ancient_planks', count: 6 },
                 { item: 'naturesaura:gold_powder', chance: 1.1 }
             ],
@@ -30,8 +30,8 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ancient_planks_from_ancient_log`
         },
         {
-            input: 'naturesaura:ancient_bark',
-            outputs: [
+            ingredient: { item: 'naturesaura:ancient_bark' },
+            result: [
                 { item: 'naturesaura:ancient_planks', count: 6 },
                 { item: 'naturesaura:gold_powder', chance: 1.1 }
             ],
@@ -45,8 +45,8 @@ ServerEvents.recipes((event) => {
         let input = material.log.block,
             output = material.log.stripped;
         recipes.push({
-            input: input,
-            outputs: [
+            ingredient: { item: input },
+            result: [
                 { item: output, count: 1 },
                 { item: bark, chance: 1.25 }
             ],
@@ -58,8 +58,8 @@ ServerEvents.recipes((event) => {
         input = material.wood.block;
         output = material.wood.stripped;
         recipes.push({
-            input: input,
-            outputs: [
+            ingredient: { item: input },
+            result: [
                 { item: output, count: 1 },
                 { item: bark, chance: 1.25 }
             ],
@@ -71,8 +71,20 @@ ServerEvents.recipes((event) => {
         input = material.log.stripped;
         output = material.plank.block;
         recipes.push({
-            input: [input, material.wood.stripped],
-            outputs: [
+            ingredient: [{ item: input }],
+            result: [
+                { item: output, count: 6 },
+                { item: sawdust, chance: 0.5 }
+            ],
+            energy: 1000,
+            id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
+        });
+
+        input = material.wood.stripped;
+        output = material.plank.block;
+        recipes.push({
+            ingredient: [{ item: input }],
+            result: [
                 { item: output, count: 6 },
                 { item: sawdust, chance: 0.5 }
             ],
@@ -83,8 +95,6 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'thermal:sawmill';
-        recipe.ingredients = Ingredient.of(recipe.input).toJson();
-        recipe.result = recipe.outputs;
         event.custom(recipe).id(recipe.id);
     });
 });
