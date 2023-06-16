@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/modularrouters/shaped/';
     const recipes = [
         {
-            output: 'modularrouters:blank_module',
+            output: '3x modularrouters:blank_module',
             pattern: ['AAA', 'ABA', 'CCC'],
             key: {
                 A: 'quark:rainbow_rune',
@@ -15,7 +15,7 @@ ServerEvents.recipes((event) => {
             id: 'modularrouters:blank_module'
         },
         {
-            output: 'modularrouters:blank_upgrade',
+            output: '3x modularrouters:blank_upgrade',
             pattern: ['AAC', 'ABC', ' AC'],
             key: {
                 A: 'quark:rainbow_rune',
