@@ -1005,6 +1005,13 @@ const entries = {
                 normal: 'Energized Steel',
                 expert: 'Orichalcum Ingot'
             }
+        },
+        {
+            key: 'block.powah.energizing_orb',
+            value: {
+                normal: 'Energizing Orb',
+                expert: 'Resonating Crystal Ball'
+            }
         }
     ],
     supplementaries: [

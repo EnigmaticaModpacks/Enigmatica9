@@ -88,21 +88,14 @@
 				"Use the Mixing Cauldron to brew up some Potions of Ancient Knowledge, or any other potions you find interesting. Once brewed, they may be bottled by Right-Clicking the Cauldron with glass bottles."
 			]
 			id: "66585A158F41DE44"
-			rewards: [
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-					icon: "kubejs:alchemists_delight"
-					id: "7447FA9138D4E94E"
-					player_command: false
-					title: "Alchemist's Delight"
-					type: "command"
-				}
-				{
-					id: "55578A04D9B237EB"
-					item: "hexerei:crystal_ball"
-					type: "item"
-				}
-			]
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "7447FA9138D4E94E"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				icon: "hexerei:mixing_cauldron"
 				id: "4BA040966CFE1DC8"
