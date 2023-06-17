@@ -405,11 +405,7 @@
 		}
 		{
 			dependencies: ["6044FE23384692A5"]
-			description: [
-				"Supplying enough heat to work with Iron directly has proved difficult until now. With a magically enhanced blast furnace and Horizonite as fuel, it should prove more feasible."
-				""
-				"Horizonite appears to only occur naturally within the moon of Everdawn. "
-			]
+			description: ["Supplying enough heat to work with Iron directly has proved difficult until now. With a magically enhanced blast furnace and Blazing Crystals as fuel, it should prove more feasible."]
 			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "2BA70920EA1ED0A8"
 			tasks: [{
