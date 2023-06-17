@@ -11,9 +11,27 @@ ServerEvents.highPriorityData((event) => {
     const id_prefix = 'apotheosis:minibosses/minecraft/';
     const recipes = [
         {
+            id: 'skeleton_siege_breaker',
+            name: 'Skeletal Siege Breaker',
+            chance: 1.0,
+            weight: 5,
+            quality: 0,
+            entities: ['minecraft:skeleton'],
+            valid_gear_sets: ['#miniboss/skeleton_siege_breaker'],
+            dimensions: [],
+            affixed: false,
+            nbt: {},
+            stats: {
+                enchant_chance: 0.5,
+                enchantment_levels: [15, 15, 15, 15],
+                effects: [{ effect: 'minecraft:speed', amplifier: 1, chance: 1.0 }],
+                attribute_modifiers: []
+            }
+        },
+        {
             id: 'skeleton_bow',
             chance: 1.0,
-            weight: 85,
+            weight: 80,
             quality: 0,
             entities: ['minecraft:skeleton'],
             valid_gear_sets: ['#miniboss/skeleton_bow'],
