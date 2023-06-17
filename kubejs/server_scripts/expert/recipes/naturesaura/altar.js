@@ -39,8 +39,8 @@ ServerEvents.recipes((event) => {
             output: 'twilightforest:steeleaf_ingot',
             input: 'naturesaura:gold_leaf',
             catalyst: 'naturesaura:conversion_catalyst',
-            aura: 3000,
-            time: 10,
+            aura: 6000,
+            time: 20,
             id: `${id_prefix}steeleaf_ingot`
         },
         {
