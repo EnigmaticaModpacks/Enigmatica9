@@ -5,7 +5,7 @@
 	group: "2FE70BF4886F08F4"
 	icon: "naturesaura:ancient_sapling"
 	id: "2E4E08D773CFD9CF"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -14,6 +14,10 @@
 				"The Wilden Grove practiced a particular form of druidic magic that would slowly draw materials from deep in the earth up into mounds where they could be easily extracted with minimal harm to the land. "
 				""
 				"Undoubtedly many of these mounds remain. Seek them out, though beware that in the absence of the Grove, others may have claimed these places for themselves. "
+				""
+				"================================="
+				""
+				"Metal processing has been heavily customized with many metals having unique methods of acquisition. Be certain to examine JEI carefully!"
 			]
 			hide: true
 			id: "1075F3BAA03841EF"
@@ -1299,6 +1303,7 @@
 		}
 		{
 			dependencies: ["438EA01F776992AD"]
+			description: ["Alloying requires finely ground metals mixed with some form of flux to help with bonding and removal of impurities before heating it all to produce a quality ingot. For now, a Pestle and Mortar will serve well enough."]
 			id: "0FE800BE7F220F36"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
