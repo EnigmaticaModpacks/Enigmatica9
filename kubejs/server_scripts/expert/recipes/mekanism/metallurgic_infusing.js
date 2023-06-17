@@ -18,9 +18,9 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}steel_ingot`
         },
         {
-            output: { item: 'twilightforest:steeleaf_ingot', count: 2 },
+            output: { item: 'twilightforest:steeleaf_ingot', count: 3 },
             itemInput: { ingredient: { item: 'naturesaura:gold_leaf' } },
-            chemicalInput: { infuse_type: 'emendatusenigmatica:earth_essence', amount: 5 },
+            chemicalInput: { infuse_type: 'emendatusenigmatica:earth_essence', amount: 20 },
             id: `${id_prefix}steeleaf_ingot`
         },
         {
