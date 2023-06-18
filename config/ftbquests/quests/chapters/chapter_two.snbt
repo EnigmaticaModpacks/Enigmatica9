@@ -80,6 +80,14 @@
 		{
 			dependencies: ["55C6945D58D77AB6"]
 			id: "4C676E7D2BA75DE4"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "34E9AE2633A6559C"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "47352920219144B1"
 				item: "kubejs:gloaming_catalyst"
@@ -91,6 +99,11 @@
 		{
 			dependencies: ["4C676E7D2BA75DE4"]
 			id: "71D9A268FF98E954"
+			rewards: [{
+				id: "13F50F2CE1F91DC0"
+				item: "rftoolsbase:infused_diamond"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4FF05D947BDCBD0C"
 				item: "kubejs:spirit_of_devotion"
@@ -125,6 +138,14 @@
 				"Just the same, the processes of cleansing this debris into a useful ingot is not for the feint of heart. "
 			]
 			id: "77E8DD38A379F9C7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "2275D9F976F77BDF"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				icon: "minecraft:netherite_ingot"
 				id: "55E4F11D8C8357A5"
@@ -145,6 +166,14 @@
 				"Celestial Gold, blessed by the gods themselves, would ring out across the dimensions like a clear bell on a calm day. They’d never resist the chance to corrupt something so sacred. "
 			]
 			id: "39B2F84EBDC27AA3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "1E6AE784E9612FE8"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				icon: "emendatusenigmatica:tainted_gold_ingot"
 				id: "4241691B8FE4293D"
@@ -164,6 +193,14 @@
 		{
 			dependencies: ["00B21E64DEFACB40"]
 			id: "31E4C2A162D7497C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "4C9ACBB578AFC307"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "2D56C518D77625DD"
 				item: "ars_nouveau:enchanting_apparatus"
@@ -233,6 +270,14 @@
 		{
 			dependencies: ["1D0AA79380E87E57"]
 			id: "7563E41DBF4FD286"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "1B24E64E968AA545"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "6D78A382292EF627"
 				item: "industrialforegoing:machine_frame_simple"
@@ -248,6 +293,14 @@
 			]
 			icon: "industrialforegoing:ore_laser_base"
 			id: "17F735810850C368"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "27B8D639195825E7"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "5F0411E4A7C69564"
@@ -277,6 +330,14 @@
 			dependencies: ["7465284C82512CF1"]
 			icon: "industrialforegoing:fluid_laser_base"
 			id: "5503E132D9D02EF8"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "3AAF8D915008D323"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "6FE9FBFD8C2D21EA"
@@ -305,6 +366,14 @@
 		{
 			dependencies: ["31E4C2A162D7497C"]
 			id: "6044FE23384692A5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "11C12981BC558B2F"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "0B70A4972A7F691F"
 				item: "create:crushing_wheel"
@@ -319,6 +388,14 @@
 				"6E239ECBE33DFA36"
 			]
 			id: "606F79DAEB15E85B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "7A03B91B11415840"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "1A90312A5DCEA90B"
 				item: "spirit:soul_steel_ingot"
@@ -330,6 +407,14 @@
 		{
 			dependencies: ["606F79DAEB15E85B"]
 			id: "507A68CE5D41C4C2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "208C36FB1E415323"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "0D888CFF2F834C92"
 				item: "industrialforegoing:machine_frame_advanced"
@@ -341,6 +426,14 @@
 		{
 			dependencies: ["17F735810850C368"]
 			id: "126F4E070F219A8B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "43BF2A66732C89E4"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "2CF76301E00C267D"
 				item: "spirit:soul_powder"
@@ -384,6 +477,14 @@
 		{
 			dependencies: ["49159D9F94B7006C"]
 			id: "767A379B00DCA2E0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "18698AF64B9CA533"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				icon: "minecraft:iron_ingot"
 				id: "1558A342DAD1935D"
@@ -405,6 +506,14 @@
 			description: ["Supplying enough heat to work with Iron directly has proved difficult until now. With a magically enhanced blast furnace and Blazing Crystals as fuel, it should prove more feasible."]
 			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "2BA70920EA1ED0A8"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "212FE78B53835607"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "79ABD0D7EFB8D300"
 				item: "immersiveengineering:blastbrick_reinforced"
@@ -422,6 +531,14 @@
 				"Projectile > Crush > Sensitive "
 			]
 			id: "1D0AA79380E87E57"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "1BBB80CE7BEB69CF"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "5C129E4F6EAC8C83"
 				item: "pneumaticcraft:ingot_iron_compressed"
@@ -443,6 +560,14 @@
 			]
 			icon: "immersiveengineering:light_engineering"
 			id: "2C43443DCFFF65F4"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "04BACC81CA01141B"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "05A605FCDAEBD972"
@@ -470,6 +595,14 @@
 				"● Crusher"
 			]
 			id: "15F56E72212629FB"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "42238537475907E4"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "0154E90B21C27B44"
 				item: "immersiveengineering:heavy_engineering"
@@ -482,6 +615,14 @@
 		{
 			dependencies: ["738DA69FFF6516FA"]
 			id: "21C352EEFEB25365"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "6F1EDCAD415A69B3"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "4027AFF2F762B0D1"
 				item: "kubejs:energetic_transference_matrix"
@@ -493,6 +634,14 @@
 		{
 			dependencies: ["15F56E72212629FB"]
 			id: "7465284C82512CF1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "4E55A7B7ECBDEA8B"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "25E1CC6FE74A1DFB"
 				item: "pneumaticcraft:assembly_controller"
@@ -504,6 +653,14 @@
 		{
 			dependencies: ["0C0A98C6DD871BD3"]
 			id: "49159D9F94B7006C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "79ACAFF79994FD61"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "7667047356862670"
 				item: "mekanism:metallurgic_infuser"
@@ -524,6 +681,12 @@
 				"While in the Bumblezone, Right-Click the Honey Compass in the air to attune it to the Cell Maze."
 			]
 			id: "57861ABDB35ED555"
+			rewards: [{
+				count: 16
+				id: "7171199016FE9E99"
+				item: "minecraft:honey_bottle"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "707735727FE79FB9"
@@ -648,6 +811,14 @@
 		{
 			dependencies: ["60324503ED7AC4C1"]
 			id: "00B21E64DEFACB40"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "23B342C9B1B2B79C"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "01AF1B57146069F1"
 				item: "powah:steel_energized"
@@ -659,6 +830,14 @@
 		{
 			dependencies: ["00B21E64DEFACB40"]
 			id: "738DA69FFF6516FA"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "5EF326CA11F451A6"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "60BB72446E4D266C"
 				item: "occultism:spirit_attuned_gem"
@@ -670,6 +849,14 @@
 		{
 			dependencies: ["2BA70920EA1ED0A8"]
 			id: "0C0A98C6DD871BD3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "6E97F4196A474693"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "0F59CD79EA51B378"
 				item: "kubejs:crude_iron_ingot"
@@ -724,6 +911,14 @@
 		{
 			dependencies: ["49159D9F94B7006C"]
 			id: "4A7EC5D11F20F2B7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "220BD7C24AB55C46"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "76E4EFCD4200B779"
 				item: "emendatusenigmatica:steel_ingot"
@@ -735,6 +930,14 @@
 		{
 			dependencies: ["767A379B00DCA2E0"]
 			id: "2BE91F37CE010984"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "47F50316632E7DC7"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "4CCF04553715833F"
 				item: "emendatusenigmatica:invar_ingot"
@@ -819,6 +1022,14 @@
 			hide_dependency_lines: true
 			icon: "ae2:controller"
 			id: "330C200F0F0243FC"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "72393E06B7289A9F"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -850,6 +1061,14 @@
 			description: ["Known for their strength and endurance, Basalz will work tirelessly to power Create machinery if properly motived. "]
 			icon: "createaddition:electric_motor"
 			id: "1FDD6F9166A33F8D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "1510DA7F74A2CBA0"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
 			tasks: [
 				{
 					id: "04B03547884EC0AA"

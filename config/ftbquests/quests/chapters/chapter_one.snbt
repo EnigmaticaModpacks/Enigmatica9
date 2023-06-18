@@ -1943,6 +1943,14 @@
 				"Be sure to spend some time experimenting with the Spell Book, as it is easily one of the most powerful weapons in the hands of an experienced witch. "
 			]
 			id: "508748A195DE2C10"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "46B73E0A24DE5D55"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "6D5621B8BF6A9C18"
