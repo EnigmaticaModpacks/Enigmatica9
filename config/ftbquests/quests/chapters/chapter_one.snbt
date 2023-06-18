@@ -828,7 +828,7 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
+			x: -2.0d
 			y: 2.0d
 		}
 		{
@@ -843,7 +843,7 @@
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
-			shape: "diamond"
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "156E6D2ED289EC8F"
@@ -1652,10 +1652,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"201EF7C650717118"
-				"16694CCD304B9745"
-			]
+			dependencies: ["668B76A0085B4054"]
 			description: [
 				"Restoring the Tree of Life to its full glory will be no easy task. Use the knowledge obtained thus far to grow the seedling. With time and sacrifice, it will grow stronger. "
 				""
@@ -1676,7 +1673,7 @@
 				}
 				type: "item"
 			}]
-			shape: "diamond"
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "439B5ADE18EE0912"
@@ -1695,38 +1692,6 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["668B76A0085B4054"]
-			id: "201EF7C650717118"
-			shape: "diamond"
-			tasks: [{
-				id: "77AAD1F4C77CD9DF"
-				item: "emendatusenigmatica:sky_ingot"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["668B76A0085B4054"]
-			id: "16694CCD304B9745"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "3397636DF871DB89"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "719947AB9775C6CC"
-				item: "ae2:sky_dust"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 4.5d
-		}
-		{
 			dependencies: ["347A644441BCF449"]
 			description: ["Often found clustered in with Tin ores, Quartz may be extracted occasionally when grinding the ore with better tools, such as the Mill. "]
 			id: "5B7806FED7D58329"
@@ -1743,7 +1708,7 @@
 				item: "minecraft:quartz"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -5.0d
 			y: 2.0d
 		}
 		{

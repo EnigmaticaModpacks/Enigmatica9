@@ -906,6 +906,69 @@
 			x: 6.5d
 			y: 0.0d
 		}
+		{
+			dependencies: ["738DA69FFF6516FA"]
+			description: [
+				"With heightened spell casting ability comes the ability to improve some automation through Spell Turrets.  "
+				""
+				"As a practical example, the following spell form will allow a turret to pull a standard potion from an adjacent Potion Jar, convert it to Lingering and throw it where the projectile lands."
+				""
+				"&5Projectile&r > &aInfuse&r > &6Extend Time&r"
+				""
+				"These lingering potions will work exactly as their crafted variety for the purpose of running a Lingering Absorber without the need to craft beyond the base potion. "
+			]
+			hide_dependency_lines: true
+			id: "7619B458914F41FF"
+			rewards: [{
+				id: "58831BD248E42B45"
+				item: {
+					Count: 1b
+					id: "ars_nouveau:spell_parchment"
+					tag: {
+						"ars_nouveau:caster": {
+							current_slot: 0
+							flavor: ""
+							hidden_recipe: ""
+							is_hidden: 0b
+							spell_count: 1
+							spells: {
+								spell0: {
+									name: "Lingering Potions"
+									recipe: {
+										part0: "ars_nouveau:glyph_projectile"
+										part1: "ars_nouveau:glyph_infuse"
+										part2: "ars_nouveau:glyph_extend_time"
+										size: 3
+									}
+									sound: {
+										pitch: 0.01f
+										soundTag: {
+											id: "ars_nouveau:tempestry_family"
+										}
+										volume: 0.4f
+									}
+									spellColor: {
+										b: 255
+										g: 71
+										r: 1
+										type: "ars_nouveau:rainbow"
+									}
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "3716441EC6ACD043"
+				item: "ars_nouveau:timer_spell_turret"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
 	]
 	title: "Chapter Two"
 }
