@@ -14,6 +14,10 @@
 				"The Wilden Grove practiced a particular form of druidic magic that would slowly draw materials from deep in the earth up into mounds where they could be easily extracted with minimal harm to the land. "
 				""
 				"Undoubtedly many of these mounds remain. Seek them out, though beware that in the absence of the Grove, others may have claimed these places for themselves. "
+				""
+				"================================="
+				""
+				"Metal processing has been heavily customized with many metals having unique methods of acquisition. Be certain to examine JEI carefully!"
 			]
 			hide: true
 			id: "1075F3BAA03841EF"
@@ -375,7 +379,7 @@
 		}
 		{
 			dependencies: ["66585A158F41DE44"]
-			description: ["Processing Iron is incredibly difficult and will take far more advanced arcane machinery to properly extract pure Iron from ore. By fusing it into a living amalgam known as Ironwood, however, it can be used for a variety of magical processes.  "]
+			description: ["Processing Iron is incredibly difficult and will take far more advanced arcane machinery to properly extract pure Iron from ore. By fusing it into a living amalgam known as Ironwood, however, it can be used in a variety of magical applications.  "]
 			id: "6DBB9A9F698FA7B9"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
@@ -395,7 +399,11 @@
 		}
 		{
 			dependencies: ["6DBB9A9F698FA7B9"]
-			description: ["Obtain a Gold Leaf and Sneak + Right-Click a block of Ironwood to convert it to a Natural Altar. Be sure to build the rest of the required structure as well."]
+			description: [
+				"Obtain a Gold Leaf and Sneak + Right-Click a block of Ironwood to convert it to a Natural Altar. "
+				""
+				"Be sure to build the rest of the required structure as well. Any type of wood plank may be used."
+			]
 			icon: "naturesaura:nature_altar"
 			id: "4B874AA448FF4C7A"
 			rewards: [{
@@ -595,8 +603,8 @@
 				}
 			]
 			title: "Applied Energistics"
-			x: 2.0d
-			y: 0.5d
+			x: -9.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7CFD3DFD4C593EB5"]
@@ -663,10 +671,10 @@
 				}
 			]
 			x: 2.0d
-			y: -3.0d
+			y: 0.5d
 		}
 		{
-			dependencies: ["0FE800BE7F220F36"]
+			dependencies: ["7AD5D1665CA3DF4F"]
 			description: ["A wise witch will use every tool at her disposal, and Superior Shields offer a potent source of protection when exploring these lands. "]
 			hide_dependency_lines: true
 			id: "7C58B3E61A83C628"
@@ -747,8 +755,8 @@
 				title: "Superior Shields"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -5.5d
+			x: 2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["30547CCA38EC3A0D"]
@@ -852,9 +860,9 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["2CCCDD05AED3153F"]
+			dependencies: ["73CDA6ED2393DE42"]
 			description: ["Perhaps paying a visit to the local mage tower will turn up more information, or at least more useful tools to assist in restoring the Tree of Life?"]
-			hide: true
+			hide_dependency_lines: true
 			icon: "ars_nouveau:novice_spell_book"
 			id: "370C40BCC3A6A055"
 			shape: "hexagon"
@@ -889,6 +897,7 @@
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "711069D305E66D19"
 				item: "ars_nouveau:scribes_table"
@@ -1040,6 +1049,7 @@
 				title: "Random Tier 1 Glyph"
 				type: "command"
 			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					entity: "twilightforest:death_tome"
@@ -1147,8 +1157,8 @@
 				item: "twilightforest:fiery_ingot"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -2.5d
+			x: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["11AB47232D9F5D6D"]
@@ -1174,7 +1184,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["66585A158F41DE44"]
+			dependencies: ["7AD5D1665CA3DF4F"]
 			description: [
 				"A lonely witch is a busy witch. "
 				""
@@ -1188,6 +1198,7 @@
 				""
 				"A selection of Occultism, Hexerei, and Ars Nouveau critters may be summoned; research uses for Mindful Trance Blend to see what is available. "
 			]
+			hide_dependency_lines: true
 			id: "7CFD3DFD4C593EB5"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
@@ -1197,14 +1208,15 @@
 				title: "Alchemist's Delight"
 				type: "command"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "05F83955C4E12297"
 				item: "hexerei:mindful_trance_blend"
 				type: "item"
 			}]
 			title: "Familiar Friends"
-			x: -0.5d
-			y: -3.0d
+			x: 2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["79B755D0BDB6A8B7"]
@@ -1299,6 +1311,7 @@
 		}
 		{
 			dependencies: ["438EA01F776992AD"]
+			description: ["Alloying requires finely ground metals mixed with some form of flux to help with bonding and removal of impurities before heating it all to produce a quality ingot. For now, a Pestle and Mortar will serve well enough."]
 			id: "0FE800BE7F220F36"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
@@ -1364,7 +1377,7 @@
 				}
 			]
 			x: 1.5d
-			y: -2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7CFD3DFD4C593EB5"]
@@ -1405,7 +1418,7 @@
 				}
 			]
 			x: 2.5d
-			y: -2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["7CFD3DFD4C593EB5"]
@@ -1440,8 +1453,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: -3.0d
+			x: 1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["7CFD3DFD4C593EB5"]
@@ -1469,9 +1482,10 @@
 				"● Devil – Grants Fire Resistance."
 				""
 				"Other"
-				"● Blacksmith – Repairs equipment and applies upgrades to other familiars, enhancing them in a multitude of ways. "
+				"● Blacksmith – Repairs equipment and applies upgrades to "
+				"  other familiars, enhancing them in a multitude of ways. "
 				""
-				"Note: Familiars are protected from friendly fire, and as such it is generally safe to fight near them."
+				"Note: Familiars are protected from friendly fire, and as such it is generally safe to fight near them. In additions, some of the combat oriented ones have been buffed to help them survive."
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -1512,8 +1526,8 @@
 				type: "advancement"
 			}]
 			title: "Familiars"
-			x: 1.5d
-			y: -4.0d
+			x: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7CFD3DFD4C593EB5"]
@@ -1535,17 +1549,29 @@
 				item: "ars_nouveau:amethyst_golem_charm"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -3.0d
+			x: 2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7CFD3DFD4C593EB5"]
 			description: [
 				"Though the Wilden Grove were noted for the Ravens in their employ, there were more than a few who preferred to befriend the smaller, though equally intelligent, Crow."
 				""
+				"Summon a Crow and befriend it by feeding it Seed Mixture. These helpful critters can be equipped with a weapon and hat and will defend their friends to the death. "
+				""
 				"Discover more about Crows in the Hexerei quest chapter. "
 			]
 			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "hexerei:crow_spawn_egg"
+				tag: {
+					display: {
+						Lore: ["{\"translate\":\"item.kubejs.ritual_summon_crow.tooltip\"}"]
+						Name: "{\"translate\":\"item.kubejs.ritual_summon_crow\"}"
+					}
+				}
+			}
 			id: "7DC3B92B7722D2EB"
 			rewards: [{
 				id: "24BD267ED65B77CB"
@@ -1557,13 +1583,31 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "737F2CD00117DDA7"
-				item: "hexerei:seed_mixture"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -4.0d
+			tasks: [
+				{
+					icon: {
+						Count: 1b
+						id: "hexerei:crow_spawn_egg"
+						tag: {
+							display: {
+								Lore: ["{\"translate\":\"item.kubejs.ritual_summon_crow.tooltip\"}"]
+								Name: "{\"translate\":\"item.kubejs.ritual_summon_crow\"}"
+							}
+						}
+					}
+					id: "0F6AF050D2340F55"
+					item: "kubejs:ritual_summon_crow"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "174E4CF2D19C2143"
+					item: "hexerei:seed_mixture"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["11AB47232D9F5D6D"]
@@ -1787,7 +1831,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: 1.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["11AB47232D9F5D6D"]
@@ -1832,7 +1876,9 @@
 				""
 				"================================="
 				""
-				"Begin by locating some Certus Quartz; the Wilden Grove will undoubtedly have left some behind in their ore mounds. Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the quartz and induce it to grow. "
+				"Begin by locating some Certus Quartz; the Wilden Grove will undoubtedly have left some behind in their ore mounds. "
+				""
+				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the quartz and induce it to grow. "
 			]
 			hide_dependency_lines: true
 			id: "0BAE6EBFEA3026B9"
@@ -1851,8 +1897,8 @@
 				type: "item"
 			}]
 			title: "Certus Farming"
-			x: 2.0d
-			y: -0.5d
+			x: -9.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4B874AA448FF4C7A"]
@@ -1899,6 +1945,183 @@
 			]
 			x: -3.5d
 			y: 0.5d
+		}
+		{
+			dependencies: ["370C40BCC3A6A055"]
+			description: [
+				"Though crafting the most powerful spells may not be immediately viable, tier one glyphs can still be plenty powerful. "
+				""
+				"Of note is the Dispel glyph, which can quickly remove the powerful potion effects that appear on many stronger mobs. "
+				""
+				"Be sure to spend some time experimenting with the Spell Book, as it is easily one of the most powerful weapons in the hands of an experienced witch. "
+			]
+			id: "508748A195DE2C10"
+			shape: "hexagon"
+			tasks: [{
+				id: "6D5621B8BF6A9C18"
+				item: "ars_nouveau:glyph_dispel"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7AD5D1665CA3DF4F"]
+			description: [
+				"Magic is to be found everywhere for someone with sharp eyes and an open heart. Witches have been brewing since time immemorable, using the latent powers of the land to aid them in their pursuits. "
+				""
+				"Having access to the right potion at the right time can make all the difference in surviving. "
+				""
+				"================================="
+				""
+				"A variety of custom potion recipes have been added, making them accessible quite early on. Indeed, brewing will prove quite crucial to everything moving forward.  "
+				""
+				"Strength can help enormously when facing toughened monsters, while Swiftness and Invisibility can help avoid them entirely. In addition, Ars Nouveau allows mixing potions and storing them in Flasks for a single quick dose to apply multiple effects.  "
+			]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:potion_melder"
+			id: "4682D4537535937C"
+			rewards: [{
+				id: "2301E26C33533490"
+				item: {
+					Count: 1b
+					id: "ars_nouveau:potion_flask"
+					tag: {
+						Damage: 8
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "2EB943DDAA4C39F8"
+					item: "ars_nouveau:potion_jar"
+					type: "item"
+				}
+				{
+					id: "00984709DEA11344"
+					item: "ars_nouveau:potion_melder"
+					type: "item"
+				}
+			]
+			title: "Potions"
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["66585A158F41DE44"]
+			description: [
+				"A brave witch is a dead witch, or so the saying goes. Surviving this world filled with deadly monsters requires more than brute strength; a cunning mind and swift feet are far more important."
+				""
+				"A clever witch knows when to run away. "
+				""
+				"Of course, sometimes a fight is unavoidable. The world isn’t fair, after all. So, when it seems that everything is out for blood, remember that goes both ways: Fight dirty. "
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "hexerei:witch_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7AD5D1665CA3DF4F"
+			shape: "hexagon"
+			tasks: [{
+				id: "512F931B7ED46E5C"
+				item: "hexerei:mixing_cauldron"
+				type: "item"
+			}]
+			title: "Survival Essentials"
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4682D4537535937C"]
+			description: [
+				"Similar to the Alchemist’s Crown, Potion Charms serve to keep an effect applied much longer than normal. A Potion Charm crafted from three-minute potions, for example, will last 8 seconds per point of durability. "
+				""
+				"Even without being enchanted, these will last considerably longer than the potions used to craft them. "
+			]
+			hide_dependency_lines: true
+			id: "1B214D5A289CD17A"
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "apotheosis:potion_charm"
+					tag: {
+						Damage: 0
+						Potion: "minecraft:long_water_breathing"
+					}
+				}
+				id: "6DCBDBFF2F899881"
+				item: {
+					Count: 1b
+					id: "apotheosis:potion_charm"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Potion Charms"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"4682D4537535937C"
+				"7AD5D1665CA3DF4F"
+			]
+			description: [
+				"Skeletons frequently make use of tipped arrows, which are a recipe for a bad day if one is caught unaware. "
+				""
+				"Tipped arrows may be easily crafted by Right-Clicking an arrow on a Potion Jar, no lingering potions required! Blasting arrows make for a particularly nasty weapon that’s useful against both the living and the dead. "
+			]
+			hide_dependency_lines: true
+			id: "15C6FD1F5AD1C530"
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "minecraft:tipped_arrow"
+					tag: {
+						Potion: "minecraft:harming"
+					}
+				}
+				id: "1CE5E04BB5956BD2"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:arrows"
+					}
+				}
+				title: "Tipped Arrows"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4682D4537535937C"]
+			description: [
+				"Potions certainly do not last long, and drinking more manually isn’t always easily done. Be sure to check out the Alchemist’s Crown for an easy way to keep potions active for longer."
+				""
+				"Of special interest is that the Crown will draw from Potion Flasks, meaning mixed potions can be kept active easily."
+			]
+			hide_dependency_lines: true
+			id: "7376270A390D6A3C"
+			shape: "hexagon"
+			tasks: [{
+				id: "633962F5F4F1548E"
+				item: "ars_nouveau:alchemists_crown"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
 		}
 	]
 	title: "Chapter One"

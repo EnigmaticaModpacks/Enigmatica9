@@ -100,10 +100,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"2CCCDD05AED3153F"
-				"60324503ED7AC4C1"
-			]
+			dependencies: ["60324503ED7AC4C1"]
 			description: ["It would seem the Cult of the Ur-Ghast were up to something far more sinister than previously thought. The rift they opened with their Carminite Reactor also gave them the opportunity to obtain this strange debris.  "]
 			hide: true
 			hide_dependency_lines: true
@@ -405,11 +402,7 @@
 		}
 		{
 			dependencies: ["6044FE23384692A5"]
-			description: [
-				"Supplying enough heat to work with Iron directly has proved difficult until now. With a magically enhanced blast furnace and Horizonite as fuel, it should prove more feasible."
-				""
-				"Horizonite appears to only occur naturally within the moon of Everdawn. "
-			]
+			description: ["Supplying enough heat to work with Iron directly has proved difficult until now. With a magically enhanced blast furnace and Blazing Crystals as fuel, it should prove more feasible."]
 			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "2BA70920EA1ED0A8"
 			tasks: [{
@@ -880,6 +873,37 @@
 				}
 			]
 			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60324503ED7AC4C1"]
+			description: ["An empowered ritual that grants an hour of flight to up to five entities. Useful for exploration far from home. Be sure to bring the materials to re-cast it if necessary. "]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:ritual_flight"
+			id: "6952D7AD61181E37"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "64D8345AD1B57F8B"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "5623626CB05FAC41"
+					item: "ars_nouveau:ritual_flight"
+					type: "item"
+				}
+				{
+					id: "39C158A69FF4C6FE"
+					item: "kubejs:ritual_of_enduring_flight"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 6.5d
 			y: 0.0d
 		}
 	]

@@ -32,13 +32,13 @@ ServerEvents.recipes((event) => {
         {
             input: { tag: 'forge:storage_blocks/amethyst' },
             result: { item: 'emendatusenigmatica:source_block' },
-            energy: 20000,
+            energy: 4000,
             id: `${id_prefix}source_block`
         },
         {
             input: { tag: 'forge:gems/amethyst' },
             result: { item: 'emendatusenigmatica:source_gem' },
-            energy: 5000,
+            energy: 1000,
             id: `${id_prefix}source_gem`
         },
         {

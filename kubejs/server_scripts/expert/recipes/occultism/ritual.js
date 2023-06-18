@@ -1183,6 +1183,7 @@ ServerEvents.recipes((event) => {
             activation_item: 'byg:hanging_bones',
             inputs: ['#forge:essences/anima', 'minecraft:bone_meal', 'minecraft:bone_meal', 'minecraft:bone_meal'],
             entity_to_summon: 'occultism:possessed_skeleton',
+            entity_to_sacrifice: { tag: 'enigmatica:deer', display_name: 'ritual.occultism.sacrifice.deer' },
             ritual_dummy: 'occultism:ritual_dummy/possess_skeleton',
             ritual_type: 'occultism:summon',
             pentacle_id: 'occultism:summon_lesser_evil',
@@ -1236,7 +1237,7 @@ ServerEvents.recipes((event) => {
             activation_item: 'minecraft:skeleton_skull',
             inputs: ['#forge:essences/anima', '#forge:dusts/lead', '#forge:dusts/lead', '#forge:dusts/lead'],
             entity_to_summon: 'occultism:wild_hunt_wither_skeleton',
-            entity_to_sacrifice: { tag: 'occultism:humans', display_name: 'ritual.occultism.sacrifice.humans' },
+            entity_to_sacrifice: { tag: 'enigmatica:deer', display_name: 'ritual.occultism.sacrifice.deer' },
             ritual_dummy: 'occultism:ritual_dummy/summon_wild_hunt',
             ritual_type: 'occultism:summon',
             pentacle_id: 'occultism:summon_lesser_evil',
@@ -1505,6 +1506,16 @@ ServerEvents.recipes((event) => {
             },
             duration: 10,
             id: `${id_prefix}wilden_grove_gate`
+        },
+        {
+            output: 'kubejs:ritual_of_enduring_flight',
+            activation_item: 'ars_nouveau:ritual_flight',
+            inputs: ['#forge:ingots/sky', '#forge:ingots/sky', '#forge:ingots/sky', '#forge:ingots/sky'],
+            ritual_dummy: 'kubejs:ritual_of_enduring_flight',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_foliot',
+            duration: 20,
+            id: `${id_prefix}ritual_of_enduring_flight`
         }
     ];
 

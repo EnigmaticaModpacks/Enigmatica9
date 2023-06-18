@@ -14,19 +14,19 @@ const ritual_effects = {
             ]
         }
     },
-    spell_night_vision: {
+    ritual_of_enduring_flight: {
         potion: {
             // Spell effects to be applied.
             spells: [
                 {
                     // Maximum number of entities to affect
-                    limit: 3,
+                    limit: 5,
                     // Diameter of selection area, centered on ritual
                     range: 10,
                     // Effect to apply
-                    effect: 'minecraft:night_vision',
+                    effect: 'ars_nouveau:flight',
                     // Effect Duration in seconds
-                    duration: 1800,
+                    duration: 72000,
                     // Effect level. 1 means 1
                     level: 1
                 }

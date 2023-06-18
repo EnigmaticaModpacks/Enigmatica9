@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
     const recipes = [];
 
     let crystal_types = ['generator', 'producer'];
-    let crystal_sizes = ['dim', 'pulsating', 'iridescent'];
+    let crystal_sizes = ['dim', 'bright', 'iridescent'];
 
     crystal_sizes.forEach((size) => {
         crystal_types.forEach((type) => {

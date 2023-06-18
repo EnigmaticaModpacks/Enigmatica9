@@ -9,15 +9,15 @@ ServerEvents.recipes((event) => {
         {
             output: 'emendatusenigmatica:infused_iron_ingot',
             input: '#forge:ingots/ironwood',
-            aura: 15000,
-            time: 80,
+            aura: 7500,
+            time: 40,
             id: 'naturesaura:altar/infused_iron'
         },
         {
             output: 'emendatusenigmatica:infused_iron_block',
             input: '#forge:storage_blocks/ironwood',
-            aura: 135000,
-            time: 700,
+            aura: 67500,
+            time: 350,
             id: 'naturesaura:altar/infused_iron_block'
         },
         {
@@ -39,8 +39,8 @@ ServerEvents.recipes((event) => {
             output: 'twilightforest:steeleaf_ingot',
             input: 'naturesaura:gold_leaf',
             catalyst: 'naturesaura:conversion_catalyst',
-            aura: 15000,
-            time: 80,
+            aura: 6000,
+            time: 20,
             id: `${id_prefix}steeleaf_ingot`
         },
         {

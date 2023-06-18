@@ -7,6 +7,20 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
+            output: 'emendatusenigmatica:source_gem',
+            count: 1,
+            reagent: '#forge:gems/amethyst',
+            source: 100,
+            id: 'ars_nouveau:imbuement_amethyst'
+        },
+        {
+            output: 'emendatusenigmatica:source_block',
+            count: 1,
+            reagent: '#forge:storage_blocks/amethyst',
+            source: 400,
+            id: 'ars_nouveau:imbuement_amethyst_block'
+        },
+        {
             output: 'ars_nouveau:fire_essence',
             count: 1,
             reagent: '#forge:gems/source',
@@ -42,7 +56,7 @@ ServerEvents.recipes((event) => {
             output: 'ars_nouveau:abjuration_essence',
             count: 1,
             reagent: '#forge:gems/source',
-            inputs: ['#forge:ingots/ironwood', 'twilightforest:cicada', 'twilightforest:naga_scale'],
+            inputs: ['#forge:ingots/bronze', 'twilightforest:cicada', 'twilightforest:naga_scale'],
             source: 500,
             id: 'ars_nouveau:imbuement_abjuration_essence'
         },

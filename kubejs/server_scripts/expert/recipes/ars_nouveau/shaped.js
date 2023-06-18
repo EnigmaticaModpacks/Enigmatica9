@@ -87,12 +87,11 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'ars_nouveau:alchemists_crown',
-            pattern: ['ABA', 'BCB', '  D'],
+            pattern: ['ABA', 'BCB'],
             key: {
                 A: 'thermal:jar',
-                B: '#forge:wires/electrum',
-                C: 'ars_nouveau:mundane_belt',
-                D: 'createaddition:straw'
+                B: '#forge:nuggets/electrum',
+                C: 'ars_nouveau:mundane_belt'
             },
             id: `${id_prefix}alchemists_crown`
         },

@@ -323,6 +323,13 @@
     "ritual.enigmatica.occultism/ritual/ritual_craft_electric_motor.interrupted": "Ritual of Binding interrupted.",
     "ritual.enigmatica.occultism/ritual/ritual_craft_electric_motor.conditions": "Not all requirements for this ritual are met.",
 
+    "item.kubejs.ritual_of_enduring_flight": "Ritual: Enduring Flight",
+    "item.kubejs.ritual_of_enduring_flight.tooltip": "Grants an hour of flight to up to five entities in the area of effect.",
+    "ritual.enigmatica.occultism/ritual/ritual_of_enduring_flight.started": "Ritual of Enduring Flight started.",
+    "ritual.enigmatica.occultism/ritual/ritual_of_enduring_flight.finished": "Ritual of Enduring Flight completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_of_enduring_flight.interrupted": "Ritual of Enduring Flight interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_of_enduring_flight.conditions": "Not all requirements for this ritual are met.",
+
     "ritual.enigmatica.occultism/ritual/creeper_gate_small.started": "Started Opening Small Creeper Gateway",
     "ritual.enigmatica.occultism/ritual/creeper_gate_small.finished": "Small Creeper Gateway Opened",
     "ritual.enigmatica.occultism/ritual/creeper_gate_small.interrupted": "Small Creeper Gateway Interrupted",

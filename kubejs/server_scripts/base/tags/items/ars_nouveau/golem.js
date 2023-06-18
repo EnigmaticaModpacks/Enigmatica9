@@ -4,6 +4,9 @@ ServerEvents.tags('item', (event) => {
         'minecraft:amethyst_shard',
         'ae2:certus_quartz_crystal',
         'byg:therium_crystal_shard',
-        'byg:subzero_crystal_shard'
+        'byg:subzero_crystal_shard',
+        'emendatusenigmatica:fluorite_gem',
+        'emendatusenigmatica:sulfur_gem',
+        'rftoolsbase:dimensionalshard'
     ]);
 });
