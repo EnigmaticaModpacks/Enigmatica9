@@ -47,11 +47,9 @@
 				""
 				"Eating Demon’s Dream fruit pushes back the veil separating this world and the Otherworld, allowing one to see things for what they truly are. In particular, Otherworld trees tend to present themselves as common Oak in this world but may be harvested for what they are while under the effects of the Demon’s Dream."
 				""
-				"Burning the fruit causes a small rift to open into the Otherworld, creating a flame that exists primarily in that Other Place, simply toss it down and light it. This flame will not burn creatures but may be used to transmute or purify certain materials, such as turning Andesite into Otherstone. "
+				"Burning the fruit causes a small rift to open into the Otherworld, creating a flame that exists primarily in that Other Place, simply toss it down and light it. This flame will not burn creatures but may be used to transmute or purify certain materials. "
 				""
 				"Finally, Spirits from the Otherworld adore the taste of this fruit and feeding it to them will help restore their health. "
-				""
-				"Demon’s Dream Seeds may be obtained from the Farming for Blockheads Market."
 			]
 			hide_dependency_lines: true
 			icon: "occultism:spirit_fire"
@@ -67,14 +65,6 @@
 					type: "item"
 				}
 				{
-					auto: "disabled"
-					count: 4
-					id: "03A4D42614CC0815"
-					item: "occultism:spirit_attuned_gem"
-					title: "Spirit Attuned Gem"
-					type: "item"
-				}
-				{
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "10F35B67ABCD0BE9"
@@ -85,39 +75,18 @@
 			]
 			shape: "hexagon"
 			subtitle: "Burnin' For You"
-			tasks: [
-				{
-					id: "7157DB44750699EA"
-					item: "occultism:spirit_attuned_gem"
-					type: "item"
-				}
-				{
-					id: "7882CB600C782FF9"
-					item: "occultism:otherstone"
-					type: "item"
-				}
-				{
-					id: "0783CF8142D7D9CF"
-					item: "occultism:otherworld_log"
-					type: "item"
-				}
-				{
-					id: "317B6BEEED6726F7"
-					item: "occultism:datura"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "317B6BEEED6726F7"
+				item: "occultism:datura"
+				type: "item"
+			}]
 			title: "Getting Started: Ritual Magic"
 			x: 13.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["6174E9BF29FDE7FD"]
-			description: [
-				"Candles are another item used in most ritual pentacles. They are made from the tallow you get by slaughtering pigs, cows, sheep, and other such animals."
-				""
-				"They work as a light source and are also great for decoration!"
-			]
+			description: ["Candles are another item used in most ritual pentacles. Any type of candle will suffice."]
 			icon: "minecraft:purple_candle"
 			id: "2F1875D08B052109"
 			rewards: [{
@@ -129,44 +98,37 @@
 				type: "command"
 			}]
 			subtitle: "Standard Candle"
-			tasks: [
-				{
-					id: "5FB8A527B476873A"
-					item: {
-						Count: 1b
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "itemfilters:tag"
-									tag: {
-										value: "minecraft:candles"
-									}
+			tasks: [{
+				id: "5FB8A527B476873A"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "minecraft:candles"
 								}
-								{
-									Count: 1b
-									id: "itemfilters:tag"
-									tag: {
-										value: "hexerei:candles"
-									}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "hexerei:candles"
 								}
-								{
-									Count: 1b
-									id: "occultism:candle_white"
-								}
-							]
-						}
+							}
+							{
+								Count: 1b
+								id: "occultism:candle_white"
+							}
+						]
 					}
-					title: "Any Candle"
-					type: "item"
 				}
-				{
-					id: "4E564596C5A296FF"
-					item: "occultism:tallow"
-					type: "item"
-				}
-			]
+				title: "Any Candle"
+				type: "item"
+			}]
 			title: "Candles"
 			x: 12.0d
 			y: 3.0d
@@ -790,11 +752,6 @@
 					id: "16BD98D82120D9CC"
 					type: "advancement"
 				}
-				{
-					id: "6E0E32192386CFB6"
-					item: "occultism:ritual_dummy/summon_djinni_clear_weather"
-					type: "item"
-				}
 			]
 			title: "Weather Rituals"
 			x: 19.0d
@@ -831,14 +788,12 @@
 					advancement: "occultism:occultism/summon_djinni_night_time"
 					criterion: ""
 					id: "557D200FCE67921B"
-					title: "From Dusk..."
 					type: "advancement"
 				}
 				{
 					advancement: "occultism:occultism/summon_djinni_day_time"
 					criterion: ""
 					id: "722922FFAACE6EB0"
-					title: "...Till Dawn"
 					type: "advancement"
 				}
 			]
@@ -988,7 +943,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["1CA681DF652BF0D6"]
+			dependencies: ["1A8FB7EB02DAD9C9"]
 			description: [
 				"Some Familiars lend themselves more to combat situations than others. For those that grant simple bonuses, it is sometimes preferred to keep them in a ring where they can safely provide their bonus without the risk of catching a stray arrow. "
 				""
@@ -996,6 +951,7 @@
 				""
 				"The ring is also useful for trading Familiars with other practitioners, as the Familiar will view whoever releases them from the ring as their new companion."
 			]
+			hide_dependency_lines: true
 			id: "117C9E6DFD48A647"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
@@ -1082,7 +1038,8 @@
 				"● Devil – Grants Fire Resistance."
 				""
 				"Other"
-				"● Blacksmith – Repairs equipment and applies upgrades to other familiars, enhancing them in a multitude of ways. "
+				"● Blacksmith – Repairs equipment and applies upgrades to "
+				"  other familiars, enhancing them in a multitude of ways. "
 				""
 				"Note: Familiars are protected from friendly fire, and as such it is generally safe to fight near them."
 			]
@@ -1149,8 +1106,8 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "59F88416F2D1770C"
-				item: "occultism:spirit_attuned_gem"
+				id: "43742C4BF485D1CC"
+				item: "occultism:otherstone"
 				type: "item"
 			}]
 			title: "Tools and Utility"
@@ -1179,8 +1136,8 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "742E2F6B097E7DA8"
-				item: "occultism:spirit_attuned_gem"
+				id: "47C7E7EB53BB26F2"
+				item: "occultism:otherstone"
 				type: "item"
 			}]
 			title: "Storage and Logistics"

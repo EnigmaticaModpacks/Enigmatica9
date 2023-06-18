@@ -32,6 +32,7 @@ ServerEvents.recipes((event) => {
         { input: /rftoolsbase:dimensionalshard_/ },
 
         { id: 'ars_elemental:blaze_crush' },
+        { id: 'ars_elemental:bone_crush' },
 
         { id: /ars_nouveau:.*_dye/ },
 
@@ -42,6 +43,7 @@ ServerEvents.recipes((event) => {
         { id: 'create:compat/byg/crushing/lignite_ore' },
         { id: 'create:crushing/blaze_rod' },
         { id: 'create:milling/sandstone' },
+        { id: 'create:milling/bone' },
 
         { id: /createaddition:mixing\/biomass/ },
         { id: /createaddition:crafting\/.*spool/ },
@@ -82,6 +84,7 @@ ServerEvents.recipes((event) => {
         { id: 'immersiveengineering:crusher/slag' },
         { id: 'immersiveengineering:crusher/blaze_powder' },
         { id: 'immersiveengineering:crusher/sandstone' },
+        { id: 'immersiveengineering:crusher/bone_meal' },
         { id: 'immersiveengineering:crusher/red_sandstone' },
 
         { id: /mekanism:enriching\/dye/ },
