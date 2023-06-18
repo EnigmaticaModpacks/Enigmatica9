@@ -382,6 +382,12 @@ JEIEvents.information((event) => {
                 ` `,
                 `May also be configured at a Scribe's Table`
             ]
+        },
+        {
+            items: ['mekanism:cardboard_box'],
+            text: [
+                `The functionality of the Cardboard Box has been limited to simple Chests, Barrels, Crates, and other inventories that cannot otherwise be moved easily.`
+            ]
         }
     ];
 
