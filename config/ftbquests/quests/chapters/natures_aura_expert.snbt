@@ -120,10 +120,13 @@
 			]
 			subtitle: "Tire-toi une bûche"
 			tasks: [{
-				count: 8L
-				id: "148F95A06F17918B"
-				item: "naturesaura:wood_stand"
-				type: "item"
+				icon: "naturesaura:wood_stand"
+				id: "05714B3C0C99E55B"
+				observe_type: 0
+				timer: 0L
+				title: "Wooden Stand"
+				to_observe: "naturesaura:wood_stand"
+				type: "observation"
 			}]
 			title: "Ritual of the Forest"
 			x: -4.5d
@@ -444,8 +447,6 @@
 				"A portable source of Aura that can be be put to good use with a variety of tools. "
 				""
 				"Refer to the Book of Natural Aura's section on Natural Tools for potential uses."
-				""
-				"Note: These may not fill completely when worn. To get a full charge, or to even automate filling them, they may be placed in a Natural Altar to their maximum capacity."
 			]
 			hide_dependency_lines: true
 			id: "4081F393EAB01CBE"
@@ -858,8 +859,6 @@
 				""
 				"● Barrens - Prevent the formation of grass on Netherrack."
 				""
-				"● Bountiful Core - Stone and Netherrack are converted to ore with the appropriate Aura type."
-				""
 				"● Steady Growth - The growth of crops, plants, and flowers will no longer be boosted by Aura."
 				""
 				"● Fertility - Passive Animals will breed when able."
@@ -894,17 +893,6 @@
 						id: "naturesaura:effect_powder"
 						tag: {
 							effect: "naturesaura:nether_grass"
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "146C9A440BC7BC35"
-					item: {
-						Count: 1b
-						id: "naturesaura:effect_powder"
-						tag: {
-							effect: "naturesaura:ore_spawn"
 						}
 					}
 					type: "item"
