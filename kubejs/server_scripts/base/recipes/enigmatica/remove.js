@@ -32,6 +32,7 @@ ServerEvents.recipes((event) => {
         { input: /rftoolsbase:dimensionalshard_/ },
 
         { id: 'ars_elemental:blaze_crush' },
+        { id: 'ars_elemental:bone_crush' },
 
         { id: /ars_nouveau:.*_dye/ },
 
