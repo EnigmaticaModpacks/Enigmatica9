@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             result: { item: 'ars_nouveau:apprentice_spell_book' },
-            ingredients: [{ item: 'ars_nouveau:novice_spell_book' }, { item: 'naturesaura:calling_spirit' }],
+            ingredients: [{ item: 'ars_nouveau:novice_spell_book' }, { tag: 'forge:gems/spirit_attuned' }],
             id: 'ars_nouveau:apprentice_spell_book_upgrade'
         },
         {
