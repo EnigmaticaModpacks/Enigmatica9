@@ -1496,7 +1496,11 @@
 					}
 				}
 				id: "occultism:familiar_ring"
-				tag: { }
+				tag: {
+					familiar: {
+						hasFamiliar: 0b
+					}
+				}
 			}
 			id: "72B2DCE0BDCE548F"
 			min_width: 300

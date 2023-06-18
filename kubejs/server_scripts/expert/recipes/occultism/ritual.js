@@ -1506,6 +1506,16 @@ ServerEvents.recipes((event) => {
             },
             duration: 10,
             id: `${id_prefix}wilden_grove_gate`
+        },
+        {
+            output: 'kubejs:ritual_of_enduring_flight',
+            activation_item: 'ars_nouveau:ritual_flight',
+            inputs: ['#forge:ingots/sky', '#forge:ingots/sky', '#forge:ingots/sky', '#forge:ingots/sky'],
+            ritual_dummy: 'kubejs:ritual_of_enduring_flight',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_foliot',
+            duration: 20,
+            id: `${id_prefix}ritual_of_enduring_flight`
         }
     ];
 
