@@ -5,7 +5,7 @@
 	group: "2FE70BF4886F08F4"
 	icon: "minecraft:echo_shard"
 	id: "7877C1CEF044BFDF"
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
