@@ -193,6 +193,7 @@
 			id: "66A59B3CD77FB54A"
 			min_width: 300
 			rewards: [{
+				count: 3
 				id: "7BE2B86F33268C1A"
 				item: {
 					Count: 1b
@@ -767,14 +768,21 @@
 			]
 			icon: "create:blaze_burner"
 			id: "5038FC4A51F51F31"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				icon: "kubejs:sorcerers_delight"
-				id: "29AD14E62D652876"
-				player_command: false
-				title: "Sorcerer's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "29AD14E62D652876"
+					player_command: false
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					id: "118314732B168F3D"
+					item: "createaddition:straw"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "377114D7550BC0D8"
@@ -865,6 +873,14 @@
 			hide_dependency_lines: true
 			icon: "ars_nouveau:novice_spell_book"
 			id: "370C40BCC3A6A055"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "181F9F12E4654AC3"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -1643,6 +1659,12 @@
 				"Undoubtedly, some can be found in the ruins of their homes or within the ore hills they’ve left behind. "
 			]
 			id: "11AB47232D9F5D6D"
+			rewards: [{
+				count: 2
+				id: "477B37812787254C"
+				item: "emendatusenigmatica:source_block"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2C7B6B3C361553D4"
 				item: "emendatusenigmatica:source_gem"
@@ -2011,6 +2033,14 @@
 			]
 			hide_dependency_lines: true
 			id: "1B214D5A289CD17A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "13E73AB24BADDF67"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				icon: {
@@ -2047,6 +2077,14 @@
 			]
 			hide_dependency_lines: true
 			id: "15C6FD1F5AD1C530"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "6D4844BFC44CD5D5"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				icon: {
@@ -2079,6 +2117,14 @@
 			]
 			hide_dependency_lines: true
 			id: "7376270A390D6A3C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "5C504E7B50DF72CA"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "633962F5F4F1548E"

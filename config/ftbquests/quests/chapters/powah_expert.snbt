@@ -118,7 +118,7 @@
 		{
 			dependencies: ["50999062F73B4226"]
 			description: [
-				"Carrying around a battery is an excellent way to keep powered equipment charged on the go, but what if we could regain that inventory slot? The Player Transmitter allows precisely that by remotely charging any items in the owner’s inventory. "
+				"The Player Transmitter is a powerful conduit for funneling magical energies into equipment in the owner’s inventory. "
 				""
 				"To set the owner, craft a Binding Card and Right-Click the card in the air. Doing so will bind the card to that player. The card may then be inserted into the Player Transmitter to configure it."
 			]

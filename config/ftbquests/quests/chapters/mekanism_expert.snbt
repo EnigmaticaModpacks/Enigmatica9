@@ -43,22 +43,14 @@
 			hide_dependency_lines: true
 			id: "13762022DEE4BEC5"
 			min_width: 300
-			rewards: [
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
-					icon: "kubejs:rare_lootbox"
-					id: "03D6AC51756CA1AD"
-					player_command: false
-					title: "Rare Mekanism Loot Box"
-					type: "command"
-				}
-				{
-					id: "77AD7E7DB9CF1EEF"
-					item: "mekanism:steel_casing"
-					title: "Steel Casing"
-					type: "item"
-				}
-			]
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "03D6AC51756CA1AD"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
 			subtitle: "Advanced Metallurgy"
 			tasks: [{
 				id: "367A53ACB8A3AECB"
@@ -94,7 +86,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["094FAB57D8E3D2F6"]
@@ -107,30 +99,14 @@
 			]
 			hide_dependency_lines: true
 			id: "5EC7CA1A86435B30"
-			rewards: [
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
-					icon: "kubejs:rare_lootbox"
-					id: "131BF3970989B404"
-					player_command: false
-					title: "Rare Mekanism Loot Box"
-					type: "command"
-				}
-				{
-					count: 4
-					id: "2A96EA3BE19E6B08"
-					item: "mekanism:enriched_redstone"
-					title: "Enriched Redstone"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "527979FF09FCCA75"
-					item: "mekanism:enriched_carbon"
-					title: "Enriched Carbon"
-					type: "item"
-				}
-			]
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "131BF3970989B404"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
 			subtitle: "Put One In The Chamber"
 			tasks: [{
 				id: "5F5EE2F551F7913B"
@@ -166,7 +142,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["094FAB57D8E3D2F6"]
@@ -187,13 +163,13 @@
 				item: "mekanism:pressurized_reaction_chamber"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 7.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["094FAB57D8E3D2F6"]
 			description: [
-				"You had a stockpile of Uranium, right? Yeah. You're going to need a lot to build this structure, which is used for generating Antimatter from Nuclear Waste."
+				"By infusing Pandemonium with incredible amounts of magical energies, it may be refined into a material with potent transmutational properties: Aetherium."
 				""
 				"Two ports with Supercharged Coils will accept power input. The other two ports will be used for inputting waste and outputting antimatter."
 				""
@@ -205,23 +181,14 @@
 			icon: "mekanism:sps_casing"
 			id: "3F0DE5664216AD01"
 			min_width: 275
-			rewards: [
-				{
-					count: 64
-					id: "48465C411786E326"
-					item: "emendatusenigmatica:raw_uranium"
-					title: "Uranium Ore"
-					type: "item"
-				}
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
-					icon: "kubejs:legendary_lootbox"
-					id: "2A335028425C54BC"
-					player_command: false
-					title: "Legendary Mekanism Loot Box"
-					type: "command"
-				}
-			]
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "2A335028425C54BC"
+				player_command: false
+				title: "Legendary Mekanism Loot Box"
+				type: "command"
+			}]
 			subtitle: "I've Giv'n Her All We've Got, Captain"
 			tasks: [
 				{
@@ -250,8 +217,8 @@
 				}
 			]
 			title: "Supercritical Phase Shifter"
-			x: 7.0d
-			y: 2.0d
+			x: 6.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["094FAB57D8E3D2F6"]
@@ -276,8 +243,8 @@
 				item: "mekanism:antiprotonic_nucleosynthesizer"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 2.0d
+			x: 6.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["01E97C3D888A1677"]
@@ -396,7 +363,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2F22D2DB89CB9225"]
@@ -501,57 +468,8 @@
 				title: "Chemical Injection Chamber"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["094FAB57D8E3D2F6"]
-			description: ["Unsurprisingly, smashing things together to make new things is also an age-old tradition. The Combiner may be used to simplify obtaining a number of decorative blocks."]
-			hide_dependency_lines: true
-			id: "2CEFDF64D65673F0"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/epic"
-				icon: "kubejs:epic_lootbox"
-				id: "2698CDF2EA240362"
-				player_command: false
-				title: "Epic Mekanism Loot Box"
-				type: "command"
-			}]
-			tasks: [{
-				id: "44A2F1D3CBB1CA5F"
-				item: {
-					Count: 1b
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "mekanism:combiner"
-							}
-							{
-								Count: 1b
-								id: "mekanism:basic_combining_factory"
-							}
-							{
-								Count: 1b
-								id: "mekanism:advanced_combining_factory"
-							}
-							{
-								Count: 1b
-								id: "mekanism:elite_combining_factory"
-							}
-							{
-								Count: 1b
-								id: "mekanism:ultimate_combining_factory"
-							}
-						]
-					}
-				}
-				title: "Combiner"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 0.5d
+			x: 6.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["01E97C3D888A1677"]
@@ -656,8 +574,8 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
-			y: 0.5d
+			x: -3.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["06ABB5AAF6BEDC06"]
@@ -763,7 +681,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2F22D2DB89CB9225"]
@@ -810,8 +728,8 @@
 				item: "mekanism:meka_tool"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 0.5d
+			x: -2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2CCCDD05AED3153F"]
