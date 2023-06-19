@@ -1,9 +1,8 @@
 {
 	chapter_groups: [
-		{ id: "74B3CF67FCEAB20F", title: "Equipment" }
+		{ id: "2FE70BF4886F08F4", title: "Expert" }
 		{ id: "0856CF7F5CBEB20A", title: "Discovery" }
 		{ id: "72A9465344128AF9", title: "Learning - Technology" }
 		{ id: "5A8B89F87F77CF4C", title: "Learning - Magic" }
-		{ id: "2FE70BF4886F08F4", title: "Expert" }
 	]
 }

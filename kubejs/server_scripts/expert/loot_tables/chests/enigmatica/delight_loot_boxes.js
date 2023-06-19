@@ -16,15 +16,16 @@ ServerEvents.genericLootTables((event) => {
     event.addGeneric('enigmatica:loot_boxes/miners_delight', (table) => {
         table.addPool((pool) => {
             pool.rolls = [9, 15];
-            pool.addItem(AlmostUnified.getPreferredItemForTag('forge:ores/redstone'), 1, [12, 20]);
-            pool.addItem(AlmostUnified.getPreferredItemForTag('forge:ores/copper'), 1, [12, 20]);
-            pool.addItem(AlmostUnified.getPreferredItemForTag('forge:ores/iron'), 1, [12, 20]);
-            pool.addItem(AlmostUnified.getPreferredItemForTag('forge:ores/emerald'), 1, [8, 16]);
-            pool.addItem(AlmostUnified.getPreferredItemForTag('forge:ores/silver'), 1, [8, 16]);
-            pool.addItem(AlmostUnified.getPreferredItemForTag('forge:ores/gold'), 1, [8, 16]);
-            pool.addItem(AlmostUnified.getPreferredItemForTag('forge:ores/lapis'), 1, [8, 16]);
-            pool.addItem(AlmostUnified.getPreferredItemForTag('forge:ores/diamond'), 1, [2, 8]);
-            pool.addItem(AlmostUnified.getPreferredItemForTag('forge:ores/lead'), 1, [2, 8]);
+            pool.addItem(AlmostUnified.getPreferredItemForTag('forge:dusts/redstone'), 1, [12, 20]);
+            pool.addItem(AlmostUnified.getPreferredItemForTag('forge:gems/emerald'), 1, [8, 16]);
+            pool.addItem(AlmostUnified.getPreferredItemForTag('forge:gems/lapis'), 1, [8, 16]);
+            pool.addItem(AlmostUnified.getPreferredItemForTag('forge:gems/diamond'), 1, [2, 8]);
+
+            pool.addItem(AlmostUnified.getPreferredItemForTag('forge:raw_materials/copper'), 1, [12, 20]);
+            pool.addItem(AlmostUnified.getPreferredItemForTag('forge:raw_materials/iron'), 1, [12, 20]);
+            pool.addItem(AlmostUnified.getPreferredItemForTag('forge:raw_materials/silver'), 1, [8, 16]);
+            pool.addItem(AlmostUnified.getPreferredItemForTag('forge:raw_materials/gold'), 1, [8, 16]);
+            pool.addItem(AlmostUnified.getPreferredItemForTag('forge:raw_materials/tin'), 1, [8, 16]);
         });
         table.addPool((pool) => {
             pool.rolls = 1.0;

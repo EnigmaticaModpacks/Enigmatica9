@@ -528,7 +528,7 @@
 			description: [
 				"Formed by crushing Invar with Magic! The following spell form will crush items on the ground: "
 				""
-				"Projectile > Crush > Sensitive "
+				"&5Projectile&r > &aCrush&r > &6Sensitive&r "
 			]
 			id: "1D0AA79380E87E57"
 			rewards: [{
@@ -848,6 +848,7 @@
 		}
 		{
 			dependencies: ["2BA70920EA1ED0A8"]
+			description: ["A raw form of Iron which still needs to be worked somewhat to be useful."]
 			id: "0C0A98C6DD871BD3"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"

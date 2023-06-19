@@ -558,12 +558,12 @@ ServerEvents.recipes((event) => {
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:storage_blocks/steeleaf', count: 64 },
                 { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_renewal', count: 64 },
 
-                { type: 'pneumaticcraft:stacked_item', tag: 'forge:dusts/prismarine', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:fertilizer', count: 64 },
                 { item: 'naturesaura:ancient_sapling' },
-                { type: 'pneumaticcraft:stacked_item', tag: 'forge:dusts/prismarine', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:fertilizer', count: 64 },
 
                 { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_renewal', count: 64 },
-                { type: 'pneumaticcraft:stacked_item', tag: 'forge:gems/prismarine', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'minecraft:sea_lantern', count: 64 },
                 { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_renewal', count: 64 }
             ],
             pressure: 4.0,
@@ -601,7 +601,7 @@ ServerEvents.recipes((event) => {
                 { type: 'pneumaticcraft:stacked_item', item: 'create:cinder_flour', count: 64 },
 
                 { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_rebirth', count: 64 },
-                { type: 'pneumaticcraft:stacked_item', tag: 'forge:gems/quartz', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'create:rose_quartz_lamp', count: 64 },
                 { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_rebirth', count: 64 }
             ],
             pressure: 4.0,
@@ -619,7 +619,7 @@ ServerEvents.recipes((event) => {
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:dusts/end_stone', count: 64 },
 
                 { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_wisdom', count: 64 },
-                { type: 'pneumaticcraft:stacked_item', item: 'minecraft:popped_chorus_fruit', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'minecraft:dragon_egg', count: 64 },
                 { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_wisdom', count: 64 }
             ],
             pressure: 4.0,

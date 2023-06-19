@@ -59,9 +59,15 @@
 		{
 			dependencies: ["2CCCDD05AED3153F"]
 			description: [
-				"Strange. At one time, this fen was kept by the Wilden Grove, a circle of druids sworn to preserve and watch over the surrounding wildlands. Yet no sign remains and creature such as this Naga now terrorize the lands. "
+				"Strange. At one time, this fen was kept by the Wilden Grove, a circle of druids sworn to preserve and watch over the surrounding wildlands. Yet no sign remains and creatures such as this Naga now terrorize the lands. "
 				""
-				"With its defeat, the Fae that call this place home will undoubtedly show their gratitude. "
+				"With its defeat, the Fae that call this place home will undoubtedly show their gratitude."
+				""
+				"================================="
+				""
+				"Locate and kill the Naga. "
+				""
+				"It should be located somewhere nearby in a large stone courtyard. Though quick, Naga are not known for their intelligence and in their blind rage, they are easily dodged. Keep some distance and aim for the head."
 			]
 			hide: true
 			id: "73CDA6ED2393DE42"
@@ -74,6 +80,7 @@
 				type: "command"
 			}]
 			shape: "hexagon"
+			subtitle: "Fear is the Mind-Killer"
 			tasks: [{
 				id: "34B9CD591F64D0B0"
 				item: "twilightforest:naga_trophy"
