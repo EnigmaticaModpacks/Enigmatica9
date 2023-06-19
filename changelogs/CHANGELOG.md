@@ -18,6 +18,7 @@
 ### 🐛 Fixed Bugs
 
 -   Fix Powah Reactor recipe [\#409](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/409) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix Cows, Sheep, and Pigs not dropping Animal Fat [\#432](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/432) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
