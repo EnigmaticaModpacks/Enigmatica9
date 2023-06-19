@@ -20,7 +20,10 @@ JEIEvents.addItems((event) => {
         'immersiveengineering:silo',
         'immersiveengineering:squeezer',
         'immersiveengineering:tank',
-        'emendatusenigmatica:bitumen_sandstone_ore'
+        'emendatusenigmatica:bitumen_sandstone_ore',
+        Item.of('minecraft:enchanted_book').enchant('ars_nouveau:reactive', 1),
+        Item.of('minecraft:enchanted_book').enchant('ars_nouveau:reactive', 2),
+        Item.of('minecraft:enchanted_book').enchant('ars_nouveau:reactive', 3)
     ];
 
     items.forEach((item) => event.add(item));
