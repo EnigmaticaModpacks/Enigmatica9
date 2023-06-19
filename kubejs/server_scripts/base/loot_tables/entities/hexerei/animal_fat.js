@@ -1,12 +1,9 @@
 ServerEvents.entityLootTables((event) => {
     const entity_types = [
-        'minecraft:cow',
         'minecraft:donkey',
         'minecraft:goat',
         'minecraft:horse',
         'minecraft:llama',
-        'minecraft:pig',
-        'minecraft:sheep',
         'minecraft:trader_llama',
         'twilightforest:bighorn_sheep',
         'twilightforest:boar',
