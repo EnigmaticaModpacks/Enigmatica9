@@ -270,11 +270,10 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'thermal:fluid_reservoir',
-            pattern: [' A ', 'ABA', ' C '],
+            pattern: [' A ', 'ABA'],
             key: {
-                A: '#forge:plates/bronze',
-                B: 'thermal:cured_rubber',
-                C: 'starbunclemania:fluid_jar'
+                A: '#forge:nuggets/bronze',
+                B: 'starbunclemania:fluid_jar'
             },
             id: 'thermal:fluid_reservoir'
         },
