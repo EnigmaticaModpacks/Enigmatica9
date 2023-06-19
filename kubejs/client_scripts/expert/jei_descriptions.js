@@ -63,7 +63,12 @@ JEIEvents.information((event) => {
             ]
         },
         {
-            items: [/ars_elemental:aqua_/, /ars_elemental:earth_/, /ars_elemental:air_/, /ars_elemental:fire_/],
+            items: [
+                /ars_elemental:aqua_(hat|robes|leggings|boots)/,
+                /ars_elemental:earth_(hat|robes|leggings|boots)/,
+                /ars_elemental:air_(hat|robes|leggings|boots)/,
+                /ars_elemental:fire_(hat|robes|leggings|boots)/
+            ],
             text: [`Grants Spell Damage when wearing a full set.`]
         }
     ];
