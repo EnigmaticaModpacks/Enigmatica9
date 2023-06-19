@@ -7,6 +7,18 @@ ServerEvents.recipes((event) => {
 
     event.custom({
         type: 'apotheosis:potion_charm',
-        recipe: [[{ item: 'hexerei:mindful_trance_blend' }], ['potion'], [{ item: 'occultism:otherstone_slab' }]]
+        recipe: [
+            [
+                { item: 'hexerei:mandrake_root' },
+                { item: 'hexerei:mindful_trance_blend' },
+                { item: 'hexerei:mandrake_root' }
+            ],
+            [{ item: 'hexerei:dried_yellow_dock_flowers' }, 'potion', { item: 'hexerei:dried_yellow_dock_flowers' }],
+            [
+                { item: 'hexerei:mandrake_root' },
+                { item: 'occultism:otherstone_slab' },
+                { item: 'hexerei:mandrake_root' }
+            ]
+        ]
     });
 });
