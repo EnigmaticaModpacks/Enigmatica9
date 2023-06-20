@@ -516,6 +516,8 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:machines/pulverizer/pulverizer_diamond' },
         { id: 'thermal:machines/crucible/crucible_ender_pearl' },
 
+        { id: /theurgy:.*divination_rod/ },
+
         { id: 'toomanyglyphs:glyph_chaining' },
 
         { id: 'twilightforest:equipment/fiery_ingot_crafting' },

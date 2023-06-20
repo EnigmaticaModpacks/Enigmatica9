@@ -2312,6 +2312,38 @@
 			x: -5.5d
 			y: 2.5d
 		}
+		{
+			dependencies: ["5A14F3DE74BAE772"]
+			description: [
+				"Far from home and need a few more potions to top up? The Enchanter’s Eye allows remote casting to a fixed location when bound to a Scry Crystal, or multiple locations with Scryer’s Scrolls. "
+				""
+				"As a simple example of how this may be useful, a Scry Crystal placed facing a Storage Lectern would allow the following spell form to access the Lectern remotely:"
+				""
+				"&5Touch&r > &2Interact&r"
+				""
+				"Adding Sensitive to the spell form would allow remote filling of a flask. Simply hold the flask in the off hand and ensure the Scry Crystal is set facing a Potion Jar:"
+				""
+				"&5Touch&r > &2Interact&r > &6Sensitive&r"
+			]
+			id: "62DC38C5A8D7AA3A"
+			rewards: [{
+				count: 2
+				id: "12F3CB6463DA3B43"
+				item: "ars_nouveau:scryers_crystal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4CA1EF93C063A2EF"
+				item: {
+					Count: 1b
+					id: "ars_nouveau:enchanters_eye"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
 	]
 	title: "Ars Nouveau"
 }

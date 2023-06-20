@@ -49,6 +49,7 @@ ServerEvents.entityLootTables((event) => {
             pool.addItem('ars_nouveau:glyph_toss', 2);
             pool.addItem('ars_nouveau:glyph_underfoot', 2);
             pool.addItem('ars_nouveau:glyph_crush', 2);
+            pool.addItem('ars_nouveau:glyph_aoe', 2);
 
             pool.addItem('toomanyglyphs:glyph_filter_animal', 1);
             pool.addItem('toomanyglyphs:glyph_filter_block', 1);

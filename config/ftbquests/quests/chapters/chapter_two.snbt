@@ -916,7 +916,7 @@
 				}
 			]
 			title: "Tree of Life"
-			x: 6.5d
+			x: 7.5d
 			y: 3.0d
 		}
 		{
@@ -948,7 +948,7 @@
 					type: "item"
 				}
 			]
-			x: 6.5d
+			x: 7.5d
 			y: 4.0d
 		}
 		{
@@ -1121,6 +1121,32 @@
 			}]
 			x: 6.5d
 			y: 1.0d
+		}
+		{
+			dependencies: ["60324503ED7AC4C1"]
+			hide_dependency_lines: true
+			id: "6DB541631BF1FBFC"
+			shape: "hexagon"
+			tasks: [{
+				id: "67E12A5977051DA4"
+				item: {
+					Count: 1b
+					id: "theurgy:divination_rod_t3"
+					tag: {
+						Damage: 0
+						"theurgy:divination.setting.allow_attuning": 1b
+						"theurgy:divination.setting.allowed_blocks_tag": "theurgy:divination_rod_t4_allowed_blocks"
+						"theurgy:divination.setting.disallowed_blocks_tag": "theurgy:divination_rod_t4_disallowed_blocks"
+						"theurgy:divination.setting.duration": 40.0d
+						"theurgy:divination.setting.max_damage": 512.0d
+						"theurgy:divination.setting.range": 96.0d
+						"theurgy:divination.setting.tier": "minecraft:netherite"
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.0d
 		}
 	]
 	title: "Chapter Two"

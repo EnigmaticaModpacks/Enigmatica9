@@ -562,5 +562,11 @@
     "ritual.enigmatica.occultism/ritual/wilden_grove_gate.started": "Started Summoning the Grove of the Wilden",
     "ritual.enigmatica.occultism/ritual/wilden_grove_gate.finished": "The Grove of the Wilden gateway has opened",
     "ritual.enigmatica.occultism/ritual/wilden_grove_gate.interrupted": "The Grove of the Wilden gateway has been interrupted",
-    "ritual.enigmatica.occultism/ritual/wilden_grove_gate.conditions": "Not all requirements for this ritual are met."
+    "ritual.enigmatica.occultism/ritual/wilden_grove_gate.conditions": "Not all requirements for this ritual are met.",
+
+    "gateways.wild_hunt_gate": "Wild Hunt Gate",
+    "ritual.enigmatica.occultism/ritual/wild_hunt_gate.started": "Started Summoning the Wild Hunt",
+    "ritual.enigmatica.occultism/ritual/wild_hunt_gate.finished": "The Wild Hunt gateway has opened",
+    "ritual.enigmatica.occultism/ritual/wild_hunt_gate.interrupted": "The Wild Hunt gateway has been interrupted",
+    "ritual.enigmatica.occultism/ritual/wild_hunt_gate.conditions": "Not all requirements for this ritual are met."
 }
