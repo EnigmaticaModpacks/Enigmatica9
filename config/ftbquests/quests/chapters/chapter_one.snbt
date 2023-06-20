@@ -2148,6 +2148,45 @@
 			x: -8.0d
 			y: -0.5d
 		}
+		{
+			dependencies: ["345CBD118EAA0C09"]
+			description: [
+				"The practice of divination dates back centuries and all manner of material has been used for a focus, from tea leaves to entrails. "
+				""
+				"While certainly effective, those methods were preferred by some merely for the spectacle; anything can be used to tune one’s mind for the task. "
+			]
+			hide_dependency_lines: true
+			id: "37A128B304BAC0EC"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+				icon: "kubejs:miners_delight"
+				id: "0278C7667B0EC3FE"
+				player_command: false
+				title: "Miner's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "38BBFF1EA9A911FD"
+				item: {
+					Count: 1b
+					id: "theurgy:divination_rod_t3"
+					tag: {
+						Damage: 0
+						"theurgy:divination.setting.allow_attuning": 1b
+						"theurgy:divination.setting.allowed_blocks_tag": "theurgy:divination_rod_t4_allowed_blocks"
+						"theurgy:divination.setting.disallowed_blocks_tag": "theurgy:divination_rod_t4_disallowed_blocks"
+						"theurgy:divination.setting.duration": 40.0d
+						"theurgy:divination.setting.max_damage": 512.0d
+						"theurgy:divination.setting.range": 96.0d
+						"theurgy:divination.setting.tier": "minecraft:netherite"
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
 	]
 	title: "Chapter One"
 }
