@@ -81,10 +81,7 @@ ServerEvents.highPriorityData((event) => {
             ],
             helmets: [
                 {
-                    stack: {
-                        item: 'minecraft:wither_skeleton_skull',
-                        nbt: leather_colors.black
-                    },
+                    stack: { item: 'minecraft:wither_skeleton_skull' },
                     weight: 100,
                     drop_chance: 1.0
                 }
