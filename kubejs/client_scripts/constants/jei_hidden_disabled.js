@@ -539,6 +539,7 @@ jei.expert.items.disabled = [
     'occultism:lenses',
     'occultism:magic_lamp_empty',
     'occultism:spirit_attuned_pickaxe_head',
+    'occultism:ritual_dummy/summon_wild_hunt',
 
     'pneumaticcraft:air_compressor',
     'pneumaticcraft:electrostatic_compressor',

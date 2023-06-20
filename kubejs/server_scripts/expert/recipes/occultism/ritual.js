@@ -1228,23 +1228,6 @@ ServerEvents.recipes((event) => {
             id: `occultism:ritual/possess_ghast`
         },
         {
-            output: Item.of('minecraft:wither_skeleton_skull', {
-                display: {
-                    Name: '{"translate":"item.occultism.ritual_dummy.summon_wild_hunt"}',
-                    Lore: ['{"translate":"item.occultism.ritual_dummy.summon_wild_hunt.tooltip"}']
-                }
-            }),
-            activation_item: 'minecraft:skeleton_skull',
-            inputs: ['#forge:essences/anima', '#forge:dusts/lead', '#forge:dusts/lead', '#forge:dusts/lead'],
-            entity_to_summon: 'occultism:wild_hunt_wither_skeleton',
-            entity_to_sacrifice: { tag: 'enigmatica:deer', display_name: 'ritual.occultism.sacrifice.deer' },
-            ritual_dummy: 'occultism:ritual_dummy/summon_wild_hunt',
-            ritual_type: 'occultism:summon',
-            pentacle_id: 'occultism:summon_lesser_evil',
-            duration: 10,
-            id: `occultism:ritual/summon_wild_hunt`
-        },
-        {
             output: Item.of('occultism:afrit_essence', {
                 display: {
                     Name: '{"translate":"item.occultism.ritual_dummy.summon_wild_afrit"}',
@@ -1516,6 +1499,22 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:summon_foliot',
             duration: 20,
             id: `${id_prefix}ritual_of_enduring_flight`
+        },
+        {
+            output: Item.of('gateways:gate_pearl', `{gateway:"gateways:wild_hunt_gate", radius:5}`),
+            activation_item: 'minecraft:skeleton_skull',
+            inputs: ['#forge:essences/anima', '#forge:dusts/lead', '#forge:dusts/lead', '#forge:dusts/lead'],
+            entity_to_sacrifice: { tag: 'enigmatica:deer', display_name: 'ritual.occultism.sacrifice.deer' },
+            ritual_dummy: Item.of('minecraft:wither_skeleton_skull', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.summon_wild_hunt"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.summon_wild_hunt.tooltip"}']
+                }
+            }),
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_lesser_evil',
+            duration: 10,
+            id: `occultism:ritual/summon_wild_hunt`
         }
     ];
 
