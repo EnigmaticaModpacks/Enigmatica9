@@ -207,6 +207,8 @@ ServerEvents.recipes((event) => {
 
         { type: 'pneumaticcraft:fuel_quality' },
 
+        { type: 'quark:feeding_trough' },
+
         { type: 'starbunclemania:fluid_sourcelink' },
 
         { type: 'thermal:lapidary_fuel' },

@@ -109,6 +109,8 @@ jei.base.items.disabled = [
     'powah:capacitor_basic',
     'powah:capacitor_basic_tiny',
 
+    'quark:feeding_trough',
+
     'superiorshields:manasteel_shield',
     'superiorshields:terrasteel_shield',
     'superiorshields:elementium_shield',
@@ -275,8 +277,6 @@ jei.expert.items.disabled = [
     'createaddition:capacitor',
     'createaddition:portable_energy_interface',
     'createaddition:digital_adapter',
-
-    'farmingforblockheads:feeding_trough',
 
     'immersiveengineering:capacitor_hv',
     'immersiveengineering:capacitor_lv',
