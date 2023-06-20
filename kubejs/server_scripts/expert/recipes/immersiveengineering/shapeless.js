@@ -6,8 +6,16 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            output: 'immersiveengineering:blastbrick_reinforced',
-            inputs: ['immersiveengineering:blastbrick', '#forge:plates/obsidian'],
+            output: '3x immersiveengineering:blastbrick_reinforced',
+            inputs: [
+                'immersiveengineering:blastbrick',
+                'immersiveengineering:blastbrick',
+                'immersiveengineering:blastbrick',
+                '#forge:plates/obsidian',
+                '#forge:plates/obsidian',
+                '#forge:plates/obsidian',
+                '#forge:ingots/energized_steel'
+            ],
             id: 'immersiveengineering:crafting/blastbrick_reinforced'
         }
     ];

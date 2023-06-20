@@ -420,6 +420,16 @@ ServerEvents.recipes((event) => {
                 C: 'pneumaticcraft:logistics_core'
             },
             id: `create:crafting/kinetics/elevator_pulley`
+        },
+        {
+            output: 'create:potato_cannon',
+            pattern: ['AAA', 'BC '],
+            key: {
+                A: 'create:fluid_pipe',
+                B: '#forge:wooden_grip',
+                C: 'immersiveengineering:light_engineering'
+            },
+            id: `${id_prefix}potato_cannon`
         }
     ];
 

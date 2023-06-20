@@ -24,9 +24,11 @@
 			description: [
 				"Though found in the wild, creating a local farm for Sculk is recommended. Whenever a mob dies near a Sculk Catalyst, it will cause the Catalyst to convert nearby Stone into Sculk. "
 				""
+				"================================="
+				""
 				"Silk-Touch is required to harvest the resulting Sculk."
 				""
-				"Devise a way to automate this."
+				"Devise a way to automate harvesting this material."
 			]
 			id: "5BAB85095E92AFD9"
 			tasks: [{
@@ -34,11 +36,11 @@
 				item: "minecraft:sculk"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -3.0d
+			x: 0.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["507A68CE5D41C4C2"]
+			dependencies: ["7633AE65F02DCD1A"]
 			description: [
 				"Long ago, the peoples of this realm attempted to call forth a great power to aid them in their time of need. This creature, known as the Warden, protected them for centuries before their civilization collapsed and their cities fell to ruin. "
 				""
@@ -55,11 +57,16 @@
 				item: "minecraft:sculk_catalyst"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["5BAB85095E92AFD9"]
+			description: [
+				"Refined from Sculk, this mineral is associated with primal chaos. "
+				""
+				"Normally exceptionally rare, the ancients of this place appear to have been harvesting it for unknown ends. "
+			]
 			id: "714A42E9CE3C32EA"
 			tasks: [{
 				id: "318FFB5EA1AB4BCF"
@@ -67,7 +74,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["73B4078AB841567A"]
@@ -169,19 +176,14 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "009C9545ED44311C"
-					item: {
-						Count: 1b
-						id: "minecraft:potion"
-						tag: {
-							Potion: "apotheosis:strong_knowledge"
-						}
-					}
+					id: "3A42495235D2DD89"
+					item: "kubejs:tree_of_life_3"
+					optional_task: true
 					type: "item"
 				}
 				{
-					id: "3A42495235D2DD89"
-					item: "kubejs:tree_of_life_3"
+					id: "78730CF9F747683F"
+					item: "kubejs:shard_of_rebirth"
 					type: "item"
 				}
 			]
@@ -215,6 +217,7 @@
 				"04B0F0BE6E54D620"
 			]
 			hide_dependency_lines: true
+			icon: "kubejs:tree_of_life_4"
 			id: "3DD1F3E561B3D06A"
 			rewards: [{
 				id: "56B1186DA0E6278D"
@@ -230,11 +233,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "3AEE4B91C07C6421"
-				item: "kubejs:tree_of_life_4"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3AEE4B91C07C6421"
+					item: "kubejs:tree_of_life_4"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "275D73849A3B7698"
+					item: "kubejs:shard_of_wisdom"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 2.5d
 		}
@@ -333,6 +344,25 @@
 			}]
 			x: 1.5d
 			y: 3.5d
+		}
+		{
+			dependencies: ["606F79DAEB15E85B"]
+			id: "7633AE65F02DCD1A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "0EC0BB5CC7C8D37A"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "03F8D1746B3320C2"
+				item: "industrialforegoing:machine_frame_advanced"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
 		}
 	]
 	title: "Chapter Three"

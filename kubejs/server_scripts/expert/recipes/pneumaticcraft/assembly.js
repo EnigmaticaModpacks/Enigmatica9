@@ -4,7 +4,14 @@ ServerEvents.recipes((event) => {
     }
     const id_prefix = 'enigmatica:expert/pneumaticcraft/assembly_laser/';
 
-    const recipes = [];
+    const recipes = [
+        {
+            result: { item: `pneumaticcraft:advanced_pressure_tube`, count: 16 },
+            input: { tag: `forge:storage_blocks/compressed_iron` },
+            program: 'laser',
+            id: `${id_prefix}advanced_pressure_tube`
+        }
+    ];
 
     let crystal_types = ['generator', 'producer'];
     let crystal_sizes = ['dim', 'bright', 'iridescent'];

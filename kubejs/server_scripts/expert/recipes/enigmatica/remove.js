@@ -69,6 +69,7 @@ ServerEvents.recipes((event) => {
         { id: 'apotheosis:sigil_of_socketing' },
 
         { id: 'ars_elemental:flight_alt' },
+        { id: 'ars_elemental:mark_of_mastery' },
 
         { id: 'ars_nouveau:sunrise_2' },
         { id: 'ars_nouveau:moonfall_2' },
@@ -92,6 +93,8 @@ ServerEvents.recipes((event) => {
         { id: 'create:mixing/andesite_alloy' },
         { id: 'create:mechanical_crafting/wand_of_symmetry' },
         { id: 'create:mechanical_crafting/extendo_grip' },
+        { id: `create:mechanical_crafting/crushing_wheel` },
+        { id: `create:mechanical_crafting/potato_cannon` },
         { id: 'create:item_application/brass_casing_from_wood' },
         { id: 'create:item_application/brass_casing_from_log' },
         { id: 'create:conversion_0' },
@@ -395,6 +398,8 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:assembly/red_dye' },
         { id: 'pneumaticcraft:assembly/solar_cell' },
         { id: 'pneumaticcraft:assembly/netherite_drill_bit' },
+        { id: 'pneumaticcraft:assembly/advanced_pressure_tube' },
+        { id: 'pneumaticcraft:assembly/pressure_chamber_valve' },
         { id: 'pneumaticcraft:pressure_chamber_valve' },
         { id: 'pneumaticcraft:pressure_chamber_glass' },
         { id: 'pneumaticcraft:logistics_core' },
@@ -410,6 +415,7 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:empty_pcb_from_failed_pcb' },
         { id: 'pneumaticcraft:spawner_extractor' },
         { id: 'pneumaticcraft:spawner_core_shell' },
+        { id: 'pneumaticcraft:drone_interface' },
 
         { id: 'powah:crafting/dielectric_rod_h' },
         { id: 'powah:crafting/dielectric_paste' },

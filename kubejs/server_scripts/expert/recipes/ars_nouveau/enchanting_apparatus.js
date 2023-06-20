@@ -6,22 +6,6 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/ars_nouveau/enchanting_apparatus/';
     const recipes = [
         {
-            output: '8x create:mechanical_crafter',
-            inputs: [
-                'create:brass_casing',
-                'create:brass_casing',
-                'create:brass_casing',
-                'create:brass_casing',
-                'create:brass_casing',
-                'create:brass_casing',
-                'create:brass_casing',
-                'create:brass_casing'
-            ],
-            reagents: ['minecraft:crafting_table'],
-            sourceCost: 500,
-            id: `${id_prefix}mechanical_crafter`
-        },
-        {
             output: '2x mekanism:teleportation_core',
             inputs: ['#forge:essences/conjuration', 'quark:rainbow_rune', 'quark:rainbow_rune'],
             reagents: ['occultism:spirit_attuned_gem'],

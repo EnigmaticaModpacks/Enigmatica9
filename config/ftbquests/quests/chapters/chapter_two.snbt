@@ -13,6 +13,14 @@
 			description: ["With items attuned to the destination it is now possible to travel to the Nether."]
 			icon: "minecraft:crimson_fungus"
 			id: "3D0B7DA1DD0A74B1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "48DA2969D0098400"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -54,6 +62,14 @@
 			}
 			id: "4F90F6437D6CF7EC"
 			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "75A68FA15696B77F"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -79,6 +95,11 @@
 		}
 		{
 			dependencies: ["55C6945D58D77AB6"]
+			description: [
+				"While the sun sets on the Wilden Grove, so too does the moon rise for your coven. "
+				""
+				"Embrace the night. "
+			]
 			id: "4C676E7D2BA75DE4"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
@@ -94,23 +115,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["4C676E7D2BA75DE4"]
-			id: "71D9A268FF98E954"
-			rewards: [{
-				id: "13F50F2CE1F91DC0"
-				item: "rftoolsbase:infused_diamond"
-				type: "item"
-			}]
-			tasks: [{
-				id: "4FF05D947BDCBD0C"
-				item: "kubejs:spirit_of_devotion"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["60324503ED7AC4C1"]
@@ -118,6 +123,14 @@
 			hide: true
 			hide_dependency_lines: true
 			id: "0CFE9B39B0643013"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "0015D006738A40B6"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "5BAB3FF81039BF5E"
@@ -129,8 +142,8 @@
 		}
 		{
 			dependencies: [
-				"71D9A268FF98E954"
 				"0CFE9B39B0643013"
+				"4C676E7D2BA75DE4"
 			]
 			description: [
 				"With some research, it appears the Cult were preparing to summon a great evil into the land. To what purpose is still unclear. "
@@ -233,6 +246,14 @@
 			}
 			id: "0B7E9625225C8413"
 			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "1CFE0B1B74ED4CFA"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -258,6 +279,7 @@
 		}
 		{
 			dependencies: ["0B7E9625225C8413"]
+			description: ["The Wilden Tribute, found in the aftermath of the fight with the Wilden Chimera, is a mark held by those who have reached the pinnacle of magical ability. "]
 			id: "10238EBB9B55F67B"
 			tasks: [{
 				id: "1DDBFACA2CC5B913"
@@ -269,6 +291,7 @@
 		}
 		{
 			dependencies: ["1D0AA79380E87E57"]
+			description: ["Runic Manifolds serve to stabilize a greater dimensional pocket, allowing more spirits to work concurrently on the required task, while requiring less physical space for the apparatus itself. Fancy!"]
 			id: "7563E41DBF4FD286"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
@@ -283,13 +306,17 @@
 				item: "industrialforegoing:machine_frame_simple"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.5d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
-			dependencies: [
-				"7563E41DBF4FD286"
-				"7465284C82512CF1"
+			dependencies: ["1D0AA79380E87E57"]
+			description: [
+				"It is time once more to enlist the aid of the elemental spirits, this time to bring forth materials from the depths of their environments. By focusing tight beams of focused Source through these bases, the elementals will be able to retrieve what is needed. "
+				""
+				"From the Earth, Soul Powder."
+				""
+				"From the Sea, Abyssal Seawater."
 			]
 			icon: "industrialforegoing:ore_laser_base"
 			id: "17F735810850C368"
@@ -308,7 +335,17 @@
 					type: "item"
 				}
 				{
-					id: "32B92D89B9839804"
+					id: "65B0FDE9BA6DE70B"
+					item: "industrialforegoing:fluid_laser_base"
+					type: "item"
+				}
+				{
+					id: "56EF198402BC78DD"
+					item: "industrialforegoing:laser_drill"
+					type: "item"
+				}
+				{
+					id: "449CBA79AC0996E8"
 					item: {
 						Count: 1b
 						id: "thermal:basalz_spawn_egg"
@@ -322,37 +359,15 @@
 					optional_task: true
 					type: "item"
 				}
-			]
-			x: 2.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["7465284C82512CF1"]
-			icon: "industrialforegoing:fluid_laser_base"
-			id: "5503E132D9D02EF8"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "3AAF8D915008D323"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
-			tasks: [
 				{
-					id: "6FE9FBFD8C2D21EA"
-					item: "industrialforegoing:fluid_laser_base"
-					type: "item"
-				}
-				{
-					id: "7EBDABC9F8231A41"
+					id: "37C787A2F4CB8129"
 					item: {
 						Count: 1b
-						id: "thermal:blizz_spawn_egg"
+						id: "thermal:blitz_spawn_egg"
 						tag: {
 							display: {
-								Lore: ["{\"translate\":\"item.kubejs.ritual_summon_bound_blizz.tooltip\"}"]
-								Name: "{\"translate\":\"item.kubejs.ritual_summon_bound_blizz\"}"
+								Lore: ["{\"translate\":\"item.kubejs.ritual_summon_bound_blitz.tooltip\"}"]
+								Name: "{\"translate\":\"item.kubejs.ritual_summon_bound_blitz\"}"
 							}
 						}
 					}
@@ -360,11 +375,17 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 6.5d
+			title: "Laser Bases"
+			x: 3.5d
+			y: 7.0d
 		}
 		{
-			dependencies: ["31E4C2A162D7497C"]
+			dependencies: ["21C352EEFEB25365"]
+			description: [
+				"Extracting useful quantities of elemental iron from ore is no simple task and will require some specialized apparatus to work through the process. "
+				""
+				"To begin, a specially enchanted Crushing Wheel will be required to break the ore into smaller pieces. The resulting crushed ore will then need to be treated in an acid bath at high heat to begin removing impurities. "
+			]
 			id: "6044FE23384692A5"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
@@ -379,13 +400,18 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.5d
+			x: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
 				"126F4E070F219A8B"
 				"6E239ECBE33DFA36"
+			]
+			description: [
+				"A magically enhanced alloy with an affinity for souls. "
+				""
+				"Curiously, when combined with the scraps of material found in the Ur-Ghast tower, it appears to be capable of generating a powerful anti-magic field.  "
 			]
 			id: "606F79DAEB15E85B"
 			rewards: [{
@@ -405,26 +431,8 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["606F79DAEB15E85B"]
-			id: "507A68CE5D41C4C2"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "208C36FB1E415323"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "0D888CFF2F834C92"
-				item: "industrialforegoing:machine_frame_advanced"
-				type: "item"
-			}]
-			x: 3.5d
-			y: 9.5d
-		}
-		{
 			dependencies: ["17F735810850C368"]
+			description: ["A fine mineral said to be steeped with the souls of those interred in the earth. "]
 			id: "126F4E070F219A8B"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
@@ -443,7 +451,12 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["5503E132D9D02EF8"]
+			dependencies: ["17F735810850C368"]
+			description: [
+				"Abyssal Seawater, water from the deepest parts of the ocean, rich in rare minerals found nowhere else. It will need to be filtered and refined in order to obtain everything it has to offer. Begin by filtering it through a Magebloom Filter."
+				""
+				"The resulting Brine may then be cooked down to obtain Lithium and Iesnium, while the saturated filters may be processed to obtain Abyssaline, a potent form of Source useful in operating tools such as the Artificer’s Mining Drill and Buzzsaw."
+			]
 			id: "6E239ECBE33DFA36"
 			tasks: [{
 				id: "2879671AF2B13169"
@@ -455,9 +468,21 @@
 		}
 		{
 			dependencies: ["33BCDA0A76E2523C"]
+			description: [
+				"Focused bursts of controlled magical energies are necessary for transmuting certain materials. As it happens, a specially prepared crystal ball acts as the perfect lens for this sort of transmutation; accepting and amplifying the energies sent in from outside. "
+				""
+				"============================="
+				""
+				"Energizing Rods must be attached to a block that outputs power; they may not be placed on their own. Placing them on the bottom of a Pulsating Crystal works but may be a little awkward. Instead, consider using an Energy Meter or a Modular Router as the block to place them against. Just configure them to output to the side the Energizing Rod will be placed on. "
+			]
 			hide: true
 			icon: "powah:energizing_orb"
 			id: "60324503ED7AC4C1"
+			rewards: [{
+				id: "4FE88FB703488A37"
+				item: "energymeter:meter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -475,69 +500,54 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["49159D9F94B7006C"]
-			id: "767A379B00DCA2E0"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "18698AF64B9CA533"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				icon: "minecraft:iron_ingot"
-				id: "1558A342DAD1935D"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/iron"
-					}
-				}
-				title: "Iron"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 3.5d
-		}
-		{
 			dependencies: ["6044FE23384692A5"]
-			description: ["Supplying enough heat to work with Iron directly has proved difficult until now. With a magically enhanced blast furnace and Blazing Crystals as fuel, it should prove more feasible."]
+			description: [
+				"Obtaining the high heat and perfect conditions required to continue purifying Iron will require the construction of yet another magical apparatus, the Enhanced Blast Furnace."
+				""
+				"This device uses Blazing Crystals as fuel and while it is ideal for Iron, it works well for processing many other metals as well. "
+			]
 			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "2BA70920EA1ED0A8"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "212FE78B53835607"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "79ABD0D7EFB8D300"
-				item: "immersiveengineering:blastbrick_reinforced"
+				count: 8
+				id: "123F692F841A813C"
+				item: "powah:crystal_blazing"
 				type: "item"
 			}]
+			tasks: [
+				{
+					id: "79ABD0D7EFB8D300"
+					item: "immersiveengineering:blastbrick_reinforced"
+					type: "item"
+				}
+				{
+					id: "3296A9C9C71EBE17"
+					item: "kubejs:crude_iron_ingot"
+					type: "item"
+				}
+			]
 			title: "Improved Blast Furnace"
-			x: 2.5d
-			y: 1.5d
+			x: 3.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["2BE91F37CE010984"]
+			dependencies: ["49159D9F94B7006C"]
 			description: [
-				"Formed by crushing Invar with Magic! The following spell form will crush items on the ground: "
+				"While useful in its own right for precision artificing, Invar is better known amongst artificers for its unique ability to resist magical compression. "
+				""
+				"================================="
+				""
+				"Enchant Invar to form Spellbound Invar."
+				""
+				"The following spell form will crush items on the ground: "
 				""
 				"&5Projectile&r > &aCrush&r > &6Sensitive&r "
 			]
 			id: "1D0AA79380E87E57"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "1BBB80CE7BEB69CF"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
+				id: "5D844F4A7BA28FCE"
+				item: "pneumaticcraft:compressed_iron_block"
+				type: "item"
 			}]
 			tasks: [{
 				id: "5C129E4F6EAC8C83"
@@ -550,7 +560,7 @@
 		{
 			dependencies: ["21C352EEFEB25365"]
 			description: [
-				"The following multiblock machines are available with Light Engineering Blocks:"
+				"The following multiblock machines may be constructed with Novice Artificing Blocks:"
 				""
 				"● Metal Press"
 				"● Mixer"
@@ -568,26 +578,19 @@
 				title: "Alchemist's Delight"
 				type: "command"
 			}]
-			tasks: [
-				{
-					id: "05A605FCDAEBD972"
-					item: "immersiveengineering:light_engineering"
-					type: "item"
-				}
-				{
-					id: "63E361AD9BA98257"
-					item: "immersiveengineering:rs_engineering"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "05A605FCDAEBD972"
+				item: "immersiveengineering:light_engineering"
+				type: "item"
+			}]
 			title: "Light Machinery"
-			x: 4.5d
-			y: 1.5d
+			x: 4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1D0AA79380E87E57"]
 			description: [
-				"The following multiblock machines are available with Heavy Engineering Blocks:"
+				"The following multiblock machines may be constructed with Adept Artificing Blocks:"
 				""
 				"● Industrial Fermenter"
 				"● Industrial Sqeezer"
@@ -609,49 +612,48 @@
 				type: "item"
 			}]
 			title: "Heavy Machinery"
-			x: 4.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["738DA69FFF6516FA"]
-			id: "21C352EEFEB25365"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "6F1EDCAD415A69B3"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "4027AFF2F762B0D1"
-				item: "kubejs:energetic_transference_matrix"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["15F56E72212629FB"]
-			id: "7465284C82512CF1"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "4E55A7B7ECBDEA8B"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "25E1CC6FE74A1DFB"
-				item: "pneumaticcraft:assembly_controller"
-				type: "item"
-			}]
-			x: 3.5d
+			x: 4.0d
 			y: 6.0d
 		}
 		{
-			dependencies: ["0C0A98C6DD871BD3"]
+			dependencies: ["00B21E64DEFACB40"]
+			description: [
+				"There exists a certain imbalance in magical energies in the realms. While some, like this world, are positively overflowing with magical potential, others have a notable lack. "
+				""
+				"With the Tree of Life partially restored, it is safe to resume the ancient bargain struck with the spirits of the Otherworld, trading Source for their labor. "
+				""
+				"The Energetic Transference Matrix serves as the bridge to facilitate this exchange. When properly integrated into an arcane apparatus, materials and Source may be funneled in and the Spirits will do the rest, returning the desired outcome. "
+			]
+			icon: "kubejs:energetic_transference_matrix"
+			id: "21C352EEFEB25365"
+			rewards: [{
+				id: "114DDA59B0F39B36"
+				item: "immersiveengineering:rs_engineering"
+				type: "item"
+			}]
+			subtitle: "Interdimensional Outsourcing"
+			tasks: [
+				{
+					id: "4027AFF2F762B0D1"
+					item: "kubejs:energetic_transference_matrix"
+					type: "item"
+				}
+				{
+					id: "0FC163032DB062F7"
+					item: "thermal:machine_smelter"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2BA70920EA1ED0A8"]
+			description: [
+				"A specialized apparatus for magically infusing materials with various substances, the Metallurgic Infuser is critical in the process of purifying elemental iron. "
+				""
+				"With the inclusion of elemental fire, Crude Iron may be tempered into steel, while the inclusion of elemental air will purify the metal down into malleable Iron. "
+			]
 			id: "49159D9F94B7006C"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
@@ -667,7 +669,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4CC418E7200DF351"]
@@ -722,6 +724,12 @@
 			]
 			icon: "the_bumblezone:essence_of_the_bees"
 			id: "55C6945D58D77AB6"
+			rewards: [{
+				count: 8
+				id: "5D5766AB445B727E"
+				item: "the_bumblezone:royal_jelly_bottle"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -828,45 +836,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["00B21E64DEFACB40"]
-			id: "738DA69FFF6516FA"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "5EF326CA11F451A6"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "60BB72446E4D266C"
-				item: "occultism:spirit_attuned_gem"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["2BA70920EA1ED0A8"]
-			description: ["A raw form of Iron which still needs to be worked somewhat to be useful."]
-			id: "0C0A98C6DD871BD3"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "6E97F4196A474693"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "0F59CD79EA51B378"
-				item: "kubejs:crude_iron_ingot"
-				type: "item"
-			}]
-			x: 3.5d
-			y: 2.0d
-		}
-		{
 			dependencies: ["31E4C2A162D7497C"]
 			description: [
 				"In places that still keep the old ways, bees hold a privileged position in community life. From the birth of a child to the death of a friend, news of important events are shared first with the bees. "
@@ -910,45 +879,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["49159D9F94B7006C"]
-			id: "4A7EC5D11F20F2B7"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "220BD7C24AB55C46"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "76E4EFCD4200B779"
-				item: "emendatusenigmatica:steel_ingot"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["767A379B00DCA2E0"]
-			id: "2BE91F37CE010984"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "47F50316632E7DC7"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "4CCF04553715833F"
-				item: "emendatusenigmatica:invar_ingot"
-				type: "item"
-			}]
-			x: 3.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["71D9A268FF98E954"]
+			dependencies: ["4C676E7D2BA75DE4"]
 			description: [
 				"As a boon for services rendered, the Queen grants safe passage to a lush realm of plenty."
 				""
@@ -973,20 +904,14 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "3D2248A91782812B"
-					item: {
-						Count: 1b
-						id: "minecraft:potion"
-						tag: {
-							Potion: "apotheosis:long_knowledge"
-						}
-					}
-					type: "item"
-				}
-				{
 					id: "48FE87B0C247EE47"
 					item: "kubejs:tree_of_life_2"
 					optional_task: true
+					type: "item"
+				}
+				{
+					id: "110AE71D3773300B"
+					item: "kubejs:shard_of_enduring"
 					type: "item"
 				}
 			]
@@ -996,9 +921,17 @@
 		}
 		{
 			dependencies: ["2759988A5B69A455"]
-			description: ["With items attuned to the destination it is now possible to travel to the Overworld."]
+			description: ["With items attuned to the destination and the blessings of the Queen Bee, travel to the Overworld is now achievable."]
 			icon: "supplementaries:globe"
 			id: "356B7D1DFF632DBD"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "4F02BC40CABDEFBD"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -1059,7 +992,7 @@
 		}
 		{
 			dependencies: ["00B21E64DEFACB40"]
-			description: ["Known for their strength and endurance, Basalz will work tirelessly to power Create machinery if properly motived. "]
+			description: ["Known for their strength and endurance, Basalz will work tirelessly to power Create machinery if properly compensated with magical energies."]
 			icon: "createaddition:electric_motor"
 			id: "1FDD6F9166A33F8D"
 			rewards: [{
@@ -1092,8 +1025,8 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: 0.0d
+			x: 4.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["60324503ED7AC4C1"]
@@ -1127,7 +1060,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["738DA69FFF6516FA"]
+			dependencies: ["31E4C2A162D7497C"]
 			description: [
 				"With heightened spell casting ability comes the ability to improve some automation through Spell Turrets.  "
 				""

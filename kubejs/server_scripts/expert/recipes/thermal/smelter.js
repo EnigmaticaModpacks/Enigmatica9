@@ -254,6 +254,16 @@ ServerEvents.recipes((event) => {
             result: [{ item: `thermal:cured_rubber`, count: 4 }],
             energy: 1000,
             id: `${id_prefix}cured_rubber`
+        },
+        {
+            ingredients: [
+                { item: 'pneumaticcraft:compressed_stone', count: 16 },
+                { item: 'create:brass_casing', count: 4 },
+                { item: 'create:encased_chain_drive' }
+            ],
+            result: [{ item: `create:crushing_wheel`, count: 2 }],
+            energy: 16000,
+            id: `${id_prefix}crushing_wheel`
         }
     ];
 

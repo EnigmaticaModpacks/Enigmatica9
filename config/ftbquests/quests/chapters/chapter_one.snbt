@@ -355,14 +355,6 @@
 					title: "Alchemist's Delight"
 					type: "command"
 				}
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-					icon: "kubejs:sorcerers_delight"
-					id: "25AAA83BADC6C276"
-					player_command: false
-					title: "Sorcerer's Delight"
-					type: "command"
-				}
 			]
 			tasks: [
 				{
@@ -390,12 +382,9 @@
 			description: ["Processing Iron is incredibly difficult and will take far more advanced arcane machinery to properly extract pure Iron from ore. By fusing it into a living amalgam known as Ironwood, however, it can be used in a variety of magical applications.  "]
 			id: "6DBB9A9F698FA7B9"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "2AACED085E11A317"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
+				id: "40282E6227B9E924"
+				item: "twilightforest:ironwood_block"
+				type: "item"
 			}]
 			tasks: [{
 				id: "16597A295DCF16BB"
@@ -415,12 +404,10 @@
 			icon: "naturesaura:nature_altar"
 			id: "4B874AA448FF4C7A"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				icon: "kubejs:sorcerers_delight"
-				id: "0C7A8D2CC69903DE"
-				player_command: false
-				title: "Sorcerer's Delight"
-				type: "command"
+				count: 64
+				id: "01CFFD55A90494A9"
+				item: "naturesaura:gold_powder"
+				type: "item"
 			}]
 			tasks: [
 				{
@@ -579,14 +566,20 @@
 			]
 			icon: "ae2:energy_acceptor"
 			id: "4FEF700D65A68CFB"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				icon: "kubejs:sorcerers_delight"
-				id: "683599A33123AD92"
-				player_command: false
-				title: "Sorcerer's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "276AFA8EBC23CC5C"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "566B531B87A61061"
+					item: "ae2:storage_bus"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -816,12 +809,9 @@
 			icon: "immersiveengineering:ingot_aluminum"
 			id: "345CBD118EAA0C09"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "7A67B9212D494248"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
+				id: "3AE51D9B0D130B36"
+				item: "emendatusenigmatica:aluminum_block"
+				type: "item"
 			}]
 			tasks: [
 				{
@@ -845,34 +835,6 @@
 			]
 			x: -2.0d
 			y: 2.0d
-		}
-		{
-			dependencies: ["729E9D41A28D0E4D"]
-			icon: "naturesaura:calling_spirit"
-			id: "668B76A0085B4054"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				icon: "kubejs:sorcerers_delight"
-				id: "3CFF2AF1730FC80E"
-				player_command: false
-				title: "Sorcerer's Delight"
-				type: "command"
-			}]
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "156E6D2ED289EC8F"
-					item: "naturesaura:calling_spirit"
-					type: "item"
-				}
-				{
-					id: "281AC53880EF93FE"
-					item: "naturesaura:offering_table"
-					type: "item"
-				}
-			]
-			x: -3.5d
-			y: 4.0d
 		}
 		{
 			dependencies: ["73CDA6ED2393DE42"]
@@ -1168,12 +1130,9 @@
 			]
 			id: "30547CCA38EC3A0D"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "4CBF1295A045591B"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
+				id: "331A0CC3C988D124"
+				item: "twilightforest:fiery_block"
+				type: "item"
 			}]
 			tasks: [{
 				id: "449066CA51EE1BF6"
@@ -1259,12 +1218,9 @@
 			]
 			id: "44B02A5817C4144A"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				icon: "kubejs:sorcerers_delight"
-				id: "6F4B7367716925A5"
-				player_command: false
-				title: "Sorcerer's Delight"
-				type: "command"
+				id: "0FC05A9E5B974922"
+				item: "ars_creo:starbuncle_wheel"
+				type: "item"
 			}]
 			tasks: [
 				{
@@ -1311,12 +1267,19 @@
 				"The Pestle and Mortar is easily automated with just a hopper, no manual effort is required. "
 			]
 			id: "438EA01F776992AD"
-			rewards: [{
-				count: 4
-				id: "374D86C82113C057"
-				item: "minecraft:hopper"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "374D86C82113C057"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+				{
+					id: "45F86B71FC1BA4F4"
+					item: "naturesaura:furnace_heater"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "6DE620F66FF61F90"
@@ -1681,7 +1644,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["668B76A0085B4054"]
+			dependencies: ["729E9D41A28D0E4D"]
 			description: [
 				"Restoring the Tree of Life to its full glory will be no easy task. Use the knowledge obtained thus far to grow the seedling. With time and sacrifice, it will grow stronger. "
 				""
@@ -1705,20 +1668,20 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "439B5ADE18EE0912"
-					item: "quark:ancient_sapling"
-					type: "item"
-				}
-				{
 					id: "75A370CD9D47EE45"
 					item: "kubejs:tree_of_life_1"
 					optional_task: true
 					type: "item"
 				}
+				{
+					id: "78442FB8ED137BFF"
+					item: "kubejs:shard_of_renewal"
+					type: "item"
+				}
 			]
 			title: "Tree of Life"
 			x: -3.5d
-			y: 5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["347A644441BCF449"]
@@ -1836,26 +1799,26 @@
 			]
 			icon: "ars_nouveau:ritual_brazier"
 			id: "324073603AF6FB29"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "65C797E604B3DA0F"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
-			tasks: [
+			rewards: [
 				{
-					id: "5E75899DC12B686C"
-					item: "ars_nouveau:ritual_brazier"
-					type: "item"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "65C797E604B3DA0F"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
 				}
 				{
-					id: "7C778A9C4AA7DC1C"
+					id: "2B400407B6D2D2BD"
 					item: "ars_nouveau:ritual_flight"
 					type: "item"
 				}
 			]
+			tasks: [{
+				id: "5E75899DC12B686C"
+				item: "ars_nouveau:ritual_brazier"
+				type: "item"
+			}]
 			x: -6.5d
 			y: -2.0d
 		}
@@ -2148,6 +2111,42 @@
 			}]
 			x: 1.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["370C40BCC3A6A055"]
+			description: [
+				"Ordinarily Crush may only be used on blocks placed in the world. However, by augmenting it with Sensitive, it can target items dropped on the ground as well. "
+				""
+				"The following spell form will crush items on the ground: "
+				""
+				"&5Projectile&r > &aCrush&r > &6Sensitive&r"
+			]
+			icon: "ars_nouveau:glyph_crush"
+			id: "618CFB7745031AF6"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "53223E0F43F27F71"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "0623BA2C11B158BF"
+					item: "ars_nouveau:glyph_crush"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "003F24BD5E1DBA07"
+					item: "ars_nouveau:glyph_sensitive"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: -0.5d
 		}
 	]
 	title: "Chapter One"

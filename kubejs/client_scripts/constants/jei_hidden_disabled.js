@@ -268,6 +268,7 @@ jei.expert.items.disabled = [
     'create:empty_blaze_burner',
     'create:precision_mechanism',
     'create:electron_tube',
+    'create:mechanical_crafter',
 
     'createaddition:alternator',
     'createaddition:modular_accumulator',
@@ -444,9 +445,9 @@ jei.expert.items.disabled = [
     'mekanism:module_dosimeter_unit',
     'mekanism:module_inhalation_purification_unit',
     'mekanism:electrolytic_core',
-    'mekanism:pigment_extracting',
-    'mekanism:pigment_mixing',
-    'mekanism:painting',
+    'mekanism:pigment_extractor',
+    'mekanism:pigment_mixer',
+    'mekanism:painting_machine',
     'mekanism:quantum_entangloporter',
     'mekanism:hdpe_elytra',
     'mekanism:module_base',
@@ -565,6 +566,7 @@ jei.expert.items.disabled = [
     'pneumaticcraft:spawner_extractor',
     'pneumaticcraft:capacitor',
     'pneumaticcraft:transistor',
+    'pneumaticcraft:drone_interface',
 
     /powah:(thermo_generator|solar_panel|furnator|magmator|reactor|energy|battery|ender)/,
     /powah:(energizing_rod_|player_transmitter_|capacitor_)(blazing|hardened)/,
