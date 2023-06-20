@@ -404,6 +404,18 @@ ServerEvents.recipes((event) => {
                 E: 'pneumaticcraft:compressed_stone'
             },
             id: `pneumaticcraft:universal_sensor`
+        },
+        {
+            output: 'pneumaticcraft:aerial_interface',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: 'compactmachines:wall',
+                B: 'pneumaticcraft:omnidirectional_hopper',
+                C: 'occultism:stable_wormhole',
+                D: 'powah:player_transmitter_basic',
+                E: 'pneumaticcraft:advanced_pressure_tube'
+            },
+            id: `pneumaticcraft:aerial_interface`
         }
     ];
 

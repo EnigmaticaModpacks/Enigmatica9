@@ -752,8 +752,8 @@
 				type: "item"
 			}]
 			title: "Crushing Wheels"
-			x: 13.5d
-			y: 5.0d
+			x: 14.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["780BADC429826D36"]
@@ -794,8 +794,8 @@
 					type: "item"
 				}
 			]
-			x: 11.5d
-			y: 5.0d
+			x: 10.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["0A67F4F9AE300856"]
@@ -1081,48 +1081,6 @@
 			title: "Fluid Tanks"
 			x: 0.5d
 			y: 6.5d
-		}
-		{
-			dependencies: ["780BADC429826D36"]
-			description: [
-				"For those times when a simple 3x3 grid simply isn’t good enough, there’s the Mechanical Crafter. Or, Crafters, to be precise. These interlocking blocks connect to form a large crafting interface. Each block accepting a single item for the craft."
-				""
-				"Several advanced items may only be crafted this way."
-				""
-				"Take note when placing the crafters themselves as there will be an arrow pointing towards the block that was clicked to place it. This arrow indicates which way items will travel as the crafters work and all arrows must connect to a single crafter."
-				""
-				"For example, placing the first crafter on the ground will make the arrow point down, this would be the output. A crafter to the side of the first would need to be placed against the side so that its arrow points into the first, making a channel. "
-				""
-				"Crafter Slot Covers can be used to disable a given slot, which is required for any craft that has empty spaces in it. For instance, when crafting a chest with a 3x3 grid of Mechanical Crafters, the middle slot must be covered. "
-				""
-				"Items may be inserted with hoppers, belts and funnels, mechanical arms and more. Experiment to see what you can come up with!"
-			]
-			hide_dependency_lines: true
-			icon: "create:mechanical_crafter"
-			id: "65C9B0ECB7154097"
-			min_width: 250
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
-				icon: "kubejs:epic_lootbox"
-				id: "4725CDB92D99A18F"
-				player_command: false
-				title: "Epic Create Loot Box"
-				type: "command"
-			}]
-			tasks: [
-				{
-					id: "7EE4395DC67179F6"
-					item: "create:mechanical_crafter"
-					type: "item"
-				}
-				{
-					id: "5138A0222C0F1CF2"
-					item: "create:crafter_slot_cover"
-					type: "item"
-				}
-			]
-			x: 14.5d
-			y: 4.5d
 		}
 		{
 			dependencies: ["780BADC429826D36"]
@@ -1964,7 +1922,7 @@
 				item: "createaddition:tesla_coil"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 12.5d
 			y: 4.5d
 		}
 	]

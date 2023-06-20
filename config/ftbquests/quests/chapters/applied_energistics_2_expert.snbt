@@ -824,11 +824,9 @@
 		{
 			dependencies: ["0097F2FB87804251"]
 			description: [
-				"The Flawless Budding Certus Quartz found in meteorites is not easily moved, and breaking it by hand will result in a Flawed Budding Certus Quartz which, when used to grow more Certus, will degrade further over time. "
+				"Automating the collection of Certus Quartz will be one of the primary challenges to getting into AE2, as Certus Quartz will be in high demand. "
 				""
-				"There are ways to move them safely, however, namely Spatial I/O. And there are some ways to craft the block as well, for those inclined to do so. "
-				""
-				"Automating the collection of Certus Quartz, be it remotely or at home, will be one of the primary challenges to getting into AE2 as Certus Quartz will be in high demand. Several options exist for automated harvesting, including Amethyst Golems from Ars Nouveau. "
+				"Several options exist for automated harvesting, including Amethyst Golems from Ars Nouveau. "
 			]
 			id: "23B703D29164C39A"
 			rewards: [{

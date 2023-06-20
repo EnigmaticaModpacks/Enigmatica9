@@ -268,6 +268,7 @@ jei.expert.items.disabled = [
     'create:empty_blaze_burner',
     'create:precision_mechanism',
     'create:electron_tube',
+    'create:mechanical_crafter',
 
     'createaddition:alternator',
     'createaddition:modular_accumulator',
@@ -565,6 +566,7 @@ jei.expert.items.disabled = [
     'pneumaticcraft:spawner_extractor',
     'pneumaticcraft:capacitor',
     'pneumaticcraft:transistor',
+    'pneumaticcraft:drone_interface',
 
     /powah:(thermo_generator|solar_panel|furnator|magmator|reactor|energy|battery|ender)/,
     /powah:(energizing_rod_|player_transmitter_|capacitor_)(blazing|hardened)/,
