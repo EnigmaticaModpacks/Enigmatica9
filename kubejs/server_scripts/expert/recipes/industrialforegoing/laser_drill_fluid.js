@@ -5,6 +5,22 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/industrialforegoing/laser_drill_fluid/';
     const recipes = [
         {
+            output: '{Amount:500,FluidName:"thermal:glowstone"}',
+            catalyst: { tag: 'industrialforegoing:laser_lens/yellow' },
+            entity: 'minecraft:empty',
+            pointer: 0,
+            rarity: [
+                {
+                    depth_max: 5,
+                    depth_min: 0,
+                    weight: 8,
+                    blacklist: {},
+                    whitelist: { type: 'minecraft:worldgen/biome', values: biomes.in_the_nether }
+                }
+            ],
+            id: `${id_prefix}glowstone`
+        },
+        {
             output: '{Amount:500,FluidName:"kubejs:abyssal_seawater"}',
             catalyst: { tag: 'industrialforegoing:laser_lens/blue' },
             entity: 'minecraft:empty',

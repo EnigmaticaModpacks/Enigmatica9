@@ -193,7 +193,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'ae2:sky_dust',
                 B: 'kubejs:dimensional_storage_crystal',
-                C: 'naturesaura:sky_ingot'
+                C: '#forge:ingots/sky'
             },
             id: `ae2:network/cells/item_storage_components_cell_1k_part`
         },
@@ -204,7 +204,7 @@ ServerEvents.recipes((event) => {
                 A: 'ae2:sky_dust',
                 B: 'kubejs:dimensional_storage_crystal',
                 C: 'ae2:cell_component_1k',
-                D: 'naturesaura:sky_ingot'
+                D: '#forge:ingots/sky'
             },
             id: `ae2:network/cells/item_storage_components_cell_4k_part`
         },
@@ -215,7 +215,7 @@ ServerEvents.recipes((event) => {
                 A: 'ae2:sky_dust',
                 B: 'kubejs:dimensional_storage_crystal',
                 C: 'ae2:cell_component_4k',
-                D: 'naturesaura:sky_ingot'
+                D: '#forge:ingots/sky'
             },
             id: `ae2:network/cells/item_storage_components_cell_16k_part`
         },
@@ -226,7 +226,7 @@ ServerEvents.recipes((event) => {
                 A: 'ae2:sky_dust',
                 B: 'kubejs:dimensional_storage_crystal',
                 C: 'ae2:cell_component_16k',
-                D: 'naturesaura:sky_ingot'
+                D: '#forge:ingots/sky'
             },
             id: `ae2:network/cells/item_storage_components_cell_64k_part`
         },
@@ -237,7 +237,7 @@ ServerEvents.recipes((event) => {
                 A: 'ae2:sky_dust',
                 B: 'kubejs:dimensional_storage_crystal',
                 C: 'ae2:cell_component_64k',
-                D: 'naturesaura:sky_ingot'
+                D: '#forge:ingots/sky'
             },
             id: `ae2:network/cells/item_storage_components_cell_256k_part`
         },
@@ -312,7 +312,7 @@ ServerEvents.recipes((event) => {
             pattern: [' A ', 'BCB', ' B '],
             key: {
                 A: 'ae2:fluix_pearl',
-                B: '#forge:ingots/skies',
+                B: '#forge:ingots/sky',
                 C: 'ae2:quartz_fiber'
             },
             id: 'ae2:network/wireless_part'
@@ -323,7 +323,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'ae2:fluix_pearl',
                 B: 'kubejs:dimensional_storage_crystal',
-                C: '#forge:ingots/skies'
+                C: '#forge:ingots/sky'
             },
             id: 'ae2:network/cells/spatial_components'
         },
@@ -333,7 +333,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'ae2:fluix_pearl',
                 B: 'kubejs:dimensional_storage_crystal',
-                C: '#forge:ingots/skies',
+                C: '#forge:ingots/sky',
                 D: 'ae2:spatial_cell_component_2'
             },
             id: 'ae2:network/cells/spatial_components_0'
@@ -344,7 +344,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'ae2:fluix_pearl',
                 B: 'kubejs:dimensional_storage_crystal',
-                C: '#forge:ingots/skies',
+                C: '#forge:ingots/sky',
                 D: 'ae2:spatial_cell_component_16'
             },
             id: 'ae2:network/cells/spatial_components_1'
@@ -366,7 +366,7 @@ ServerEvents.recipes((event) => {
                 A: 'ae2:spatial_pylon',
                 B: 'ae2:fluix_glass_cable',
                 C: 'ae2:spatial_cell_component_128',
-                D: '#forge:ingots/skies',
+                D: '#forge:ingots/sky',
                 E: 'pneumaticcraft:logistics_core'
             },
             id: 'ae2:network/blocks/spatial_anchor'
@@ -378,7 +378,7 @@ ServerEvents.recipes((event) => {
                 A: 'ae2:quartz_glass',
                 B: 'ae2:fluix_glass_cable',
                 C: 'ae2:io_port',
-                D: '#forge:ingots/skies',
+                D: '#forge:ingots/sky',
                 E: 'pneumaticcraft:logistics_core'
             },
             id: 'ae2:network/blocks/spatial_io_port'
@@ -443,7 +443,7 @@ ServerEvents.recipes((event) => {
             output: 'ae2:drive',
             pattern: ['AAA', 'BCB', 'DED'],
             key: {
-                A: '#forge:ingots/skies',
+                A: '#forge:ingots/sky',
                 B: 'ae2:fluix_glass_cable',
                 C: 'ars_nouveau:repository',
                 D: 'naturesaura:infused_stone',
@@ -492,6 +492,16 @@ ServerEvents.recipes((event) => {
                 C: '#forge:gems/quartz'
             },
             id: 'ae2:tools/nether_quartz_cutting_knife'
+        },
+        {
+            output: 'ae2:not_so_mysterious_cube',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'ae2:smooth_sky_stone_block',
+                B: 'quark:rainbow_rune',
+                C: 'naturesaura:infused_stone'
+            },
+            id: 'ae2:shaped/not_so_mysterious_cube'
         }
     ];
 

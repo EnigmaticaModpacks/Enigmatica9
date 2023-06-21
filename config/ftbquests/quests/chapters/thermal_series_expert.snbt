@@ -219,7 +219,7 @@
 			rewards: [
 				{
 					id: "74F2CC09BEE4CE38"
-					item: "thermal:press_gear_die"
+					item: "immersiveengineering:mold_gear"
 					type: "item"
 				}
 				{

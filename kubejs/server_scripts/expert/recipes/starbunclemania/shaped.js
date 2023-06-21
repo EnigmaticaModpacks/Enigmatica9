@@ -7,9 +7,8 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             output: 'starbunclemania:fluid_jar',
-            pattern: ['A', 'B', 'C'],
+            pattern: ['CBC', ' C '],
             key: {
-                A: '#forge:essences/water',
                 B: 'ars_nouveau:mob_jar',
                 C: 'ars_nouveau:blue_archwood_wood'
             },

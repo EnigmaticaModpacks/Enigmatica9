@@ -48,6 +48,15 @@ const armor_sets = [
         ],
         effects: [{ potion: 'minecraft:luck', amp: 0 }]
     },
+    {
+        armor: [
+            'the_bumblezone:stingless_bee_helmet',
+            'the_bumblezone:bumble_bee_chestplate',
+            'the_bumblezone:honey_bee_leggings',
+            'the_bumblezone:carpenter_bee_boots'
+        ],
+        effects: [{ potion: 'ars_nouveau:glide', amp: 0 }]
+    },
 
     // Wearing any piece of the meka suit disables spell casting since it makes you effectively immune to magic.
     {
@@ -125,35 +134,11 @@ function isSetValid(player, armor) {
     let legs = armor[2];
     let feet = armor[3];
 
-    // if (head == null || player.getHeadArmorItem().id == head) {
-    //     head = true;
-    // } else {
-    //     head = false;
-    // }
-
-    // if (chest == null || player.getChestArmorItem().id == chest) {
-    //     chest = true;
-    // } else {
-    //     chest = false;
-    // }
-
-    // if (legs == null || player.getLegsArmorItem().id == legs) {
-    //     legs = true;
-    // } else {
-    //     legs = false;
-    // }
-
-    // if (feet == null || player.getFeetArmorItem().id == feet) {
-    //     feet = true;
-    // } else {
-    //     feet = false;
-    // }
-
     if (
-        (head == null || player.getHeadArmorItem().id == head) &&
-        (chest == null || player.getChestArmorItem().id == chest) &&
-        (legs == null || player.getLegsArmorItem().id == legs) &&
-        (feet == null || player.getFeetArmorItem().id == feet)
+        (head == null || player.getHeadArmorItem().id.includes(head)) &&
+        (chest == null || player.getChestArmorItem().id.includes(chest)) &&
+        (legs == null || player.getLegsArmorItem().id.includes(legs)) &&
+        (feet == null || player.getFeetArmorItem().id.includes(feet))
     ) {
         return true;
     } else {

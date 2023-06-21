@@ -2,14 +2,18 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/create/cutting/';
 
     const recipes = [
-        /*
         {
-            input: ['minecraft:acacia_wood'],
-            outputs: ['minecraft:stripped_acacia_wood'],
+            input: [Item.of('naturesaura:ancient_log')],
+            outputs: [Item.of('naturesaura:ancient_planks', 6)],
             processingTime: 50,
-            id: `${id_prefix}stripped_oak_log_from_oak_log`
+            id: `${id_prefix}ancient_planks_from_ancient_log`
+        },
+        {
+            input: [Item.of('naturesaura:ancient_bark')],
+            outputs: [Item.of('naturesaura:ancient_planks', 6)],
+            processingTime: 50,
+            id: `${id_prefix}ancient_planks_from_ancient_bark`
         }
-        */
     ];
 
     wood_properties.forEach((material) => {

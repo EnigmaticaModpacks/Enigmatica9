@@ -8,30 +8,14 @@ ServerEvents.recipes((event) => {
         }
     ];
 
-    const rod_materials = [
-        'lead',
-        'constantan',
-        'osmium',
-        'electrum',
-        'nickel',
-        'enderium',
-        'signalum',
-        'lumium',
-        'uranium',
-        'silver',
-        'bronze',
-        'rose_gold',
-        'zinc',
-        'invar',
-        'tin'
-    ];
-
-    rod_materials.forEach((material) => {
-        recipes.push({
-            output: `2x emendatusenigmatica:${material}_rod`,
-            input: `#forge:ingots/${material}`,
-            id: `${id_prefix}${material}_rod`
-        });
+    Object.keys(metal_properties).forEach((metal) => {
+        if (metal_properties[metal].rod) {
+            recipes.push({
+                output: `2x emendatusenigmatica:${metal}_rod`,
+                input: `#forge:ingots/${metal}`,
+                id: `${id_prefix}${metal}_rod`
+            });
+        }
     });
 
     recipes.forEach((recipe) => {

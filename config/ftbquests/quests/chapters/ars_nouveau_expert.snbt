@@ -30,8 +30,36 @@
 			}]
 			shape: "gear"
 			tasks: [{
-				id: "4C0C28C6DB286E4B"
-				item: "ars_nouveau:novice_spell_book"
+				id: "5F9E4E6B1B0F02DE"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ars_elemental:yellow_archwood_sapling"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:blue_archwood_sapling"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:purple_archwood_sapling"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:green_archwood_sapling"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:red_archwood_sapling"
+							}
+						]
+					}
+				}
+				title: "Archwood Saplings"
 				type: "item"
 			}]
 			title: "Ars Nouveau"
@@ -67,19 +95,11 @@
 			description: [
 				"Source may be found in any living thing, so it should come as no surprise that it may be condensed from most living matter. In a natural cycle, the Source contained in the living is simply passed around from plant to animal and back. A nearby Sourcelink, however, may be used to re-direct that ephemeral dew into specially prepared Source Jars, preserving it for later use."
 				""
-				"Each Sourcelink has its own requirements which are covered in detail in the Worn Notebook. They’re all useful in their own way, often the best choice is dictated by what other activities are already happening in an area."
+				"Each Sourcelink has its own requirements which are covered in detail in the Worn Notebook. "
 				""
-				"● Agronomic absorbs source from growing plants. Each time a nearby plant progresses a growth stage, some Source is produced. Certain magical plants produce more Source."
+				"● Alchemical Source Links re-absorb the condensed Source present in Potions. Any beneficial spell stored in an adjacent Potion Jar will be absorbed, producing Source. More is produced from stronger potions."
 				""
-				"● Alchemical re-absorbs the condensed Source present in Potions. Any beneficial spell stored in an adjacent Potion Jar will be absorbed, producing Source. More is produced from stronger potions."
-				""
-				"● Mycelial consumes food items placed into adjacent Pedestals. Though all food is rich in Source, those produced from Sourceberries tend to contain the most. "
-				""
-				"● Vitalic absorbs the life-force of creatures dying nearby. "
-				""
-				"● Volcanic consumes most burnables from adjacent Pedestals. Coal, long fossilized trees, produces a small amount while Blazing Archwood logs produce more sizeable quantities. "
-				""
-				"● Fluid absorbs certain liquids from tanks placed below it, converting it into Source at different rates. "
+				"● Fluid Source Links absorb certain liquids from tanks placed below it, converting them into Source at different rates. "
 			]
 			icon: "emendatusenigmatica:source_gem"
 			id: "302C5405A92ABA2B"
@@ -134,7 +154,7 @@
 						]
 					}
 				}
-				title: "Sourcelinks"
+				title: "Source Links"
 				type: "item"
 			}]
 			x: -5.5d
@@ -184,6 +204,14 @@
 			]
 			hide_dependency_lines: true
 			id: "61D89161FF1433AC"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "489E57E94749C830"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
 			subtitle: "Jousting Snails"
 			tasks: [{
 				id: "178E6CCD5BBB06AE"
@@ -553,18 +581,11 @@
 				type: "command"
 			}]
 			subtitle: "Wyrd Sisters"
-			tasks: [
-				{
-					id: "1F0E715353FA7539"
-					item: "ars_nouveau:wixie_charm"
-					type: "item"
-				}
-				{
-					id: "4A01A83E8357A13D"
-					item: "minecraft:cauldron"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1F0E715353FA7539"
+				item: "ars_nouveau:wixie_charm"
+				type: "item"
+			}]
 			x: -7.0d
 			y: -0.5d
 		}
@@ -889,7 +910,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["4CFBDE9FB821CFB6"]
+			dependencies: ["4FFD31414D5F69E6"]
 			description: [
 				"Going somewhere? "
 				""
@@ -899,6 +920,7 @@
 				""
 				"Alternatively, a portal may be built using any type of Sourcestone in a rectangular shape.  Place a filled Source Jar nearby and toss a bound Warp Scroll through the frame to ignite it, linking it to the coordinates from the scroll. Items, mobs, even spells may pass through these portals, though they are incapable of crossing between dimensions. "
 			]
+			hide_dependency_lines: true
 			id: "524A6B28242AA5B8"
 			rewards: [{
 				count: 8
@@ -1294,28 +1316,39 @@
 			hide_dependency_lines: true
 			icon: "ars_nouveau:imbuement_chamber"
 			id: "4197331BEFC9523D"
-			rewards: [{
-				id: "05D0688D89E97282"
-				item: {
-					Count: 1b
-					id: "ars_nouveau:dowsing_rod"
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "05D0688D89E97282"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:dowsing_rod"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 2
+					id: "3B8874244924D7CC"
+					item: "emendatusenigmatica:source_block"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Like Sweet Morning Dew"
 			tasks: [
 				{
-					id: "51BB03B7812E7421"
-					item: "ars_nouveau:imbuement_chamber"
-					type: "item"
+					icon: "ars_nouveau:imbuement_chamber"
+					id: "284734CBDFB5F1C8"
+					observe_type: 0
+					timer: 0L
+					to_observe: "ars_nouveau:imbuement_chamber"
+					type: "observation"
 				}
 				{
 					icon: "emendatusenigmatica:source_gem"
-					id: "62D003778D2E6D62"
+					id: "05D5F1C15D930952"
 					item: {
 						Count: 1b
 						id: "itemfilters:tag"
@@ -1977,16 +2010,25 @@
 				"In addition to transporting items and looking stylish, Starbuncles may be given a few additional accessories to further enhance their abilities. "
 				""
 				"Configuring their pickup and drop off locations remains the same as with Items; by using a Dominion Wand after equipping them with the appropriate accessory. "
+				""
+				"Need them to access a specific side? Use a Direction Scroll to set their preferred side. These are set by looking in the desired direction and Sneak + Right-Clicking them. Then use the scroll on the Starbuncle."
 			]
 			id: "77B0AD19B44B8660"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				icon: "kubejs:farmers_delight"
-				id: "2A9F65EAFE5906AE"
-				player_command: false
-				title: "Farmer's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "2A9F65EAFE5906AE"
+					player_command: false
+					title: "Farmer's Delight"
+					type: "command"
+				}
+				{
+					id: "31A82FD455E5031B"
+					item: "starbunclemania:direction_scroll"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "067A9588CB5F4392"
 				item: "ars_nouveau:starbuncle_shards"
@@ -2269,6 +2311,38 @@
 			}]
 			x: -5.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["5A14F3DE74BAE772"]
+			description: [
+				"Far from home and need a few more potions to top up? The Enchanter’s Eye allows remote casting to a fixed location when bound to a Scry Crystal, or multiple locations with Scryer’s Scrolls. "
+				""
+				"As a simple example of how this may be useful, a Scry Crystal placed facing a Storage Lectern would allow the following spell form to access the Lectern remotely:"
+				""
+				"&5Touch&r > &2Interact&r"
+				""
+				"Adding Sensitive to the spell form would allow remote filling of a flask. Simply hold the flask in the off hand and ensure the Scry Crystal is set facing a Potion Jar:"
+				""
+				"&5Touch&r > &2Interact&r > &6Sensitive&r"
+			]
+			id: "62DC38C5A8D7AA3A"
+			rewards: [{
+				count: 2
+				id: "12F3CB6463DA3B43"
+				item: "ars_nouveau:scryers_crystal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4CA1EF93C063A2EF"
+				item: {
+					Count: 1b
+					id: "ars_nouveau:enchanters_eye"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
 		}
 	]
 	title: "Ars Nouveau"

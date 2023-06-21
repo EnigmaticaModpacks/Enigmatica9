@@ -3,102 +3,95 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            outputs: [{ fluid: 'industrialforegoing:latex', amount: 50 }],
-            inputs: ['minecraft:dandelion'],
+            result: [{ fluid: 'industrialforegoing:latex', amount: 50 }],
+            ingredient: [{ item: 'minecraft:dandelion' }],
             energy: 400,
             id: 'thermal:machines/press/press_dandelion_to_latex'
         },
         {
-            outputs: [{ fluid: 'industrialforegoing:latex', amount: 50 }],
-            inputs: ['minecraft:vine'],
+            result: [{ fluid: 'industrialforegoing:latex', amount: 50 }],
+            ingredient: [{ item: 'minecraft:vine' }],
             energy: 400,
             id: 'thermal:machines/press/press_vine_to_latex'
         },
         {
-            outputs: [{ fluid: 'pneumaticcraft:vegetable_oil', amount: 180 }],
-            inputs: [Ingredient.of(['thermal:peanut'])],
+            result: [{ fluid: 'pneumaticcraft:vegetable_oil', amount: 180 }],
+            ingredient: [{ item: 'thermal:peanut' }],
             energy: 6400,
-            id: `${id_prefix}vegetable_oil_high_yield`
+            id: `${id_prefix}vegetable_oil_from_peanut`
         },
         {
-            outputs: [{ fluid: 'pneumaticcraft:vegetable_oil', amount: 120 }],
-            inputs: [Ingredient.of(['thermal:corn'])],
+            result: [{ fluid: 'pneumaticcraft:vegetable_oil', amount: 120 }],
+            ingredient: [{ item: 'thermal:corn' }],
             energy: 6400,
-            id: `${id_prefix}vegetable_oil_medium_yield`
+            id: `${id_prefix}vegetable_oil_from_corn`
         },
         {
-            outputs: [{ fluid: 'pneumaticcraft:vegetable_oil', amount: 60 }],
-            inputs: [Ingredient.of(['thermal:sadiroot', 'supplementaries:flax_seeds', 'immersiveengineering:seed'])],
+            result: [{ fluid: 'pneumaticcraft:vegetable_oil', amount: 60 }],
+            ingredient: [{ item: 'thermal:sadiroot' }],
             energy: 6400,
-            id: `${id_prefix}vegetable_oil_low_yield`
+            id: `${id_prefix}vegetable_oil_from_sadiroot`
         },
         {
-            outputs: [{ item: 'sushigocrafting:nori_sheets', count: 6 }],
-            inputs: ['sushigocrafting:dried_seaweed_block'],
+            result: [{ fluid: 'pneumaticcraft:vegetable_oil', amount: 60 }],
+            ingredient: [{ item: 'supplementaries:flax_seeds' }],
+            energy: 6400,
+            id: `${id_prefix}vegetable_oil_from_flax`
+        },
+        {
+            result: [{ fluid: 'pneumaticcraft:vegetable_oil', amount: 60 }],
+            ingredient: [{ item: 'immersiveengineering:seed' }],
+            energy: 6400,
+            id: `${id_prefix}vegetable_oil_from_hemp`
+        },
+        {
+            result: [{ item: 'sushigocrafting:nori_sheets', count: 6 }],
+            ingredient: [{ item: 'sushigocrafting:dried_seaweed_block' }],
             energy: 2000,
             id: `${id_prefix}nori_sheets`
         }
     ];
 
-    const rod_materials = [
-        'iron',
-        'lead',
-        'constantan',
-        'osmium',
-        'electrum',
-        'nickel',
-        'copper',
-        'enderium',
-        'signalum',
-        'lumium',
-        'gold',
-        'aluminum',
-        'steel',
-        'uranium',
-        'silver',
-        'bronze',
-        'brass',
-        'rose_gold',
-        'zinc',
-        'invar',
-        'tin'
-    ];
+    Object.keys(metal_properties).forEach((metal) => {
+        if (metal_properties[metal].gear) {
+            recipes.push({
+                result: [{ item: `emendatusenigmatica:${metal}_gear`, count: 1 }],
+                ingredient: [{ tag: `forge:ingots/${metal}`, count: 4 }, { item: 'immersiveengineering:mold_gear' }],
+                energy: 2400,
+                id: `${id_prefix}${metal}_gear`
+            });
+        }
 
-    rod_materials.forEach((material) => {
-        recipes.push({
-            outputs: [{ item: `emendatusenigmatica:${material}_rod`, count: 2 }],
-            inputs: ['immersiveengineering:mold_rod', `#forge:ingots/${material}`],
-            energy: 2400,
-            id: `${id_prefix}${material}_rod`
-        });
-    });
+        if (metal_properties[metal].plate) {
+            recipes.push({
+                result: [{ item: `emendatusenigmatica:${metal}_plate`, count: 1 }],
+                ingredient: [{ tag: `forge:ingots/${metal}` }],
+                energy: 2400,
+                id: `${id_prefix}${metal}_plate`
+            });
+        }
 
-    const plate_materials = ['osmium', 'brass', 'zinc'];
+        if (metal_properties[metal].rod) {
+            recipes.push({
+                result: [{ item: `emendatusenigmatica:${metal}_rod`, count: 2 }],
+                ingredient: [{ tag: `forge:ingots/${metal}` }, { item: 'immersiveengineering:mold_rod' }],
+                energy: 2400,
+                id: `${id_prefix}${metal}_rod`
+            });
+        }
 
-    plate_materials.forEach((material) => {
-        recipes.push({
-            outputs: [{ item: `emendatusenigmatica:${material}_plate`, count: 1 }],
-            inputs: [`#forge:ingots/${material}`],
-            energy: 2400,
-            id: `${id_prefix}${material}_plate`
-        });
-    });
-
-    const gear_materials = ['osmium', 'aluminum', 'uranium', 'brass', 'zinc'];
-
-    gear_materials.forEach((material) => {
-        recipes.push({
-            outputs: [{ item: `emendatusenigmatica:${material}_gear`, count: 1 }],
-            inputs: ['thermal:press_gear_die', `#forge:ingots/${material}`],
-            energy: 2400,
-            id: `${id_prefix}${material}_gear`
-        });
+        if (metal_properties[metal].wire) {
+            recipes.push({
+                result: [{ item: `immersiveengineering:wire_${metal}`, count: 2 }],
+                ingredient: [{ tag: `forge:ingots/${metal}` }, { item: 'immersiveengineering:mold_wire' }],
+                energy: 2400,
+                id: `${id_prefix}wire_${metal}`
+            });
+        }
     });
 
     recipes.forEach((recipe) => {
         recipe.type = 'thermal:press';
-        recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
-        recipe.result = recipe.outputs;
         event.custom(recipe).id(recipe.id);
     });
 });

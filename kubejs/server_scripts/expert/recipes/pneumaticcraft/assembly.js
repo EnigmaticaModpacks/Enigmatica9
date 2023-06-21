@@ -4,11 +4,32 @@ ServerEvents.recipes((event) => {
     }
     const id_prefix = 'enigmatica:expert/pneumaticcraft/assembly_laser/';
 
-    const recipes = [];
+    const recipes = [
+        {
+            result: { item: `pneumaticcraft:advanced_pressure_tube`, count: 16 },
+            input: { tag: `forge:storage_blocks/compressed_iron` },
+            program: 'laser',
+            id: `${id_prefix}advanced_pressure_tube`
+        }
+    ];
+
+    let crystal_types = ['generator', 'producer'];
+    let crystal_sizes = ['dim', 'bright', 'iridescent'];
+
+    crystal_sizes.forEach((size) => {
+        crystal_types.forEach((type) => {
+            recipes.push({
+                result: { item: `kubejs:${size}_arcanite_crystal` },
+                input: { item: `enigmaticunity:${size}_source_${type}` },
+                program: 'drill',
+                id: `${id_prefix}${size}_source_${type}_recycling`
+            });
+        });
+    });
 
     colors.forEach((color) => {
         recipes.push({
-            output: `industrialforegoing:laser_lens${lens_colors[color]}`,
+            result: { item: `industrialforegoing:laser_lens${lens_colors[color]}` },
             input: {
                 item: `quark:${color}_rune`,
                 type: 'pneumaticcraft:stacked_item',
@@ -21,7 +42,6 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = `pneumaticcraft:assembly_${recipe.program}`;
-        recipe.result = Item.of(recipe.output).toJson();
         event.custom(recipe).id(recipe.id);
     });
 });

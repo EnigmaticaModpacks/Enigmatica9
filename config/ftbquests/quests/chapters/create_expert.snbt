@@ -752,8 +752,8 @@
 				type: "item"
 			}]
 			title: "Crushing Wheels"
-			x: 13.5d
-			y: 5.0d
+			x: 14.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["780BADC429826D36"]
@@ -794,8 +794,8 @@
 					type: "item"
 				}
 			]
-			x: 11.5d
-			y: 5.0d
+			x: 10.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["0A67F4F9AE300856"]
@@ -1081,48 +1081,6 @@
 			title: "Fluid Tanks"
 			x: 0.5d
 			y: 6.5d
-		}
-		{
-			dependencies: ["780BADC429826D36"]
-			description: [
-				"For those times when a simple 3x3 grid simply isn’t good enough, there’s the Mechanical Crafter. Or, Crafters, to be precise. These interlocking blocks connect to form a large crafting interface. Each block accepting a single item for the craft."
-				""
-				"Several advanced items may only be crafted this way."
-				""
-				"Take note when placing the crafters themselves as there will be an arrow pointing towards the block that was clicked to place it. This arrow indicates which way items will travel as the crafters work and all arrows must connect to a single crafter."
-				""
-				"For example, placing the first crafter on the ground will make the arrow point down, this would be the output. A crafter to the side of the first would need to be placed against the side so that its arrow points into the first, making a channel. "
-				""
-				"Crafter Slot Covers can be used to disable a given slot, which is required for any craft that has empty spaces in it. For instance, when crafting a chest with a 3x3 grid of Mechanical Crafters, the middle slot must be covered. "
-				""
-				"Items may be inserted with hoppers, belts and funnels, mechanical arms and more. Experiment to see what you can come up with!"
-			]
-			hide_dependency_lines: true
-			icon: "create:mechanical_crafter"
-			id: "65C9B0ECB7154097"
-			min_width: 250
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
-				icon: "kubejs:epic_lootbox"
-				id: "4725CDB92D99A18F"
-				player_command: false
-				title: "Epic Create Loot Box"
-				type: "command"
-			}]
-			tasks: [
-				{
-					id: "7EE4395DC67179F6"
-					item: "create:mechanical_crafter"
-					type: "item"
-				}
-				{
-					id: "5138A0222C0F1CF2"
-					item: "create:crafter_slot_cover"
-					type: "item"
-				}
-			]
-			x: 14.5d
-			y: 4.5d
 		}
 		{
 			dependencies: ["780BADC429826D36"]
@@ -1686,110 +1644,6 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["0A67F4F9AE300856"]
-			description: [
-				"Create has a set of tools dedicated to saving schematics of structures and replicating them."
-				""
-				"The Schematic and Quill will allow you to save a schematic of an existing structure. This saved schematic will allow you to build the structure somewhere else."
-				""
-				"1) Right-Click to select the two opposite corners of the structure you want to save."
-				"2) Point at a face of the selected area and ctrl-scroll to adjust that side."
-				"3) Right-click to name and save the schematic."
-				""
-				"The Create GitHub has a wiki page with examples of saving schematics:"
-				""
-				"{\"text\":\"Saving a Schematic\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Creators-of-Create/Create/wiki/Saving-a-Schematic\"}}"
-			]
-			hide_dependency_lines: true
-			id: "2B1AEF38F5F1FEB1"
-			min_width: 250
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
-				icon: "kubejs:rare_lootbox"
-				id: "257AA57419ACDB08"
-				player_command: false
-				title: "Rare Create Loot Box"
-				type: "command"
-			}]
-			shape: "hexagon"
-			subtitle: "Archetecture 101"
-			tasks: [{
-				id: "3113919FCC7AEC4B"
-				item: "create:schematic_and_quill"
-				type: "item"
-			}]
-			title: "Saving Schematics"
-			x: 1.5d
-			y: 10.0d
-		}
-		{
-			dependencies: ["2B1AEF38F5F1FEB1"]
-			description: [
-				"In order to place your saved structures, you need to create a Schematic - this is done on the Schematic Table."
-				""
-				"Choose the schematic you want to create by mousing over the box in the middle of the GUI and scrolling. Place an Empty Schematic into the left slot on the table. Click the checkmark to print the schematic - this uploads it to the server and can take a while for very large schematics. You can close the table while this process completes and come back later. Pressing the “Open Folder” button will open the Schematic folder in your instance, and pressing “Refresh” will update the list of available schematics."
-				""
-				"Schematic in hand, you can place it in-world by right clicking. An on-screen HUD provides options for adjusting the schematic - moving, rotating, or flipping. Shift-right clicking the schematic will also allow you edit placement and rotation/mirroring. You can use this as a building guide, but there are better uses for it..."
-				""
-				"Note: Schematics for common multiblocks are included by default. You can use the \"Open Folder\" button to relocate any schematics you aren’t using and then refresh the list."
-				""
-				"The Create GitHub has a wiki with examples of loading schematics:"
-				""
-				"{\"text\":\"Loading a Schematic\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Creators-of-Create/Create/wiki/Loading-a-Schematic\"}}"
-			]
-			id: "25C83CC38129E437"
-			min_width: 300
-			rewards: [{
-				id: "209FB02C26E7D0FD"
-				item: "create:empty_schematic"
-				title: "Empty Schematic"
-				type: "item"
-			}]
-			subtitle: "Filing for Building Permits"
-			tasks: [{
-				id: "2337E4BD8C177A5A"
-				item: "create:schematic_table"
-				type: "item"
-			}]
-			title: "Placing Schematics"
-			x: 1.5d
-			y: 11.0d
-		}
-		{
-			dependencies: ["2B1AEF38F5F1FEB1"]
-			description: [
-				"The Schematicannon is how you're going to build your structures. It uses gunpowder as a propellent, and will take blocks from adjacent inventories."
-				""
-				"Take your freshly placed schematic and load it into the Schematicannon. Load gunpowder in the top left - the cannon will use one for each 400 blocks. Hit the Play button in the middle of the interface to begin placing blocks!"
-				""
-				"By default the cannon will pause if it doesn't have the block required, and it will replace any blocks in the way, but will protect tile entities (think chests and similar). Replaced blocks don't drop and are lost - the cannon IS NOT a quarry tool! These settings can be controlled by clicking the button in the bottom left."
-				""
-				"Note: The cannon isn't very fast, but it's possible to split the workload between multiple cannons, and Time in a Bottle works wonders on it!"
-				""
-				"The Create GitHub has a wiki with examples of printing schematics:"
-				""
-				"{\"text\":\"Printing a Schematic\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Creators-of-Create/Create/wiki/Printing-a-Schematic\"}}"
-			]
-			id: "547FA39DE3DCF20D"
-			min_width: 300
-			rewards: [{
-				count: 16
-				id: "5886A2F6A90E7C9C"
-				item: "minecraft:gunpowder"
-				title: "Gunpowder"
-				type: "item"
-			}]
-			subtitle: "Constructive Detonation"
-			tasks: [{
-				id: "52B79F033ADEC6F7"
-				item: "create:schematicannon"
-				type: "item"
-			}]
-			title: "Printing Schematics"
-			x: 1.5d
-			y: 12.0d
-		}
-		{
 			dependencies: ["21E017D060FC5109"]
 			dependency_requirement: "one_completed"
 			description: [
@@ -2000,7 +1854,7 @@
 			description: [
 				"Who knew a Blaze could get thirsty? They’re certainly not interested in Water, but other combustible fluids seem to hit the spot just fine. "
 				""
-				"Giving the Blaze a Straw allows them to accept liquid fuels instead. These will never burn as hot as a Blaze Cake, but they can make an excellent alternative to Coal for regular heating operations."
+				"Giving the Blaze a Straw allows them to accept liquid fuels instead. Given the right fuel, it may even be super heated!"
 			]
 			id: "22B7A9A1F7CDD7A1"
 			rewards: [{
@@ -2068,7 +1922,7 @@
 				item: "createaddition:tesla_coil"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 12.5d
 			y: 4.5d
 		}
 	]

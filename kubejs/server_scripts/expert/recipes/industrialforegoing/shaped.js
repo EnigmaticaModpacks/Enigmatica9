@@ -7,12 +7,12 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             output: '2x industrialforegoing:machine_frame_simple',
-            pattern: ['BDB', 'CAC', 'BEB'],
+            pattern: ['BDB', 'EAE', 'BCB'],
             key: {
-                A: 'ae2:sky_stone_block',
+                A: '#thermal:glass/hardened',
                 B: '#forge:ingots/compressed_iron',
                 C: 'powah:capacitor_niotic',
-                D: 'kubejs:energetic_transference_matrix',
+                D: 'immersiveengineering:rs_engineering',
                 E: 'ae2:logic_processor'
             },
             id: `${id_prefix}machine_frame_simple`

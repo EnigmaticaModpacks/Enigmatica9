@@ -9,6 +9,11 @@ ServerEvents.recipes((event) => {
             output: 'pneumaticcraft:unassembled_netherite_drill_bit',
             inputs: ['pneumaticcraft:drill_bit_diamond', '#forge:ingots/depths'],
             id: `pneumaticcraft:unassembled_netherite_drill_bit`
+        },
+        {
+            output: 'pneumaticcraft:transfer_gadget',
+            inputs: ['minecraft:hopper', '#forge:essences/manipulation'],
+            id: `pneumaticcraft:transfer_gadget`
         }
     ];
 

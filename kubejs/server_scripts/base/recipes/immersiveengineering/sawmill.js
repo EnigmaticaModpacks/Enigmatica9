@@ -2,19 +2,20 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/immersiveengineering/sawmill/';
 
     const recipes = [
-        /*
         {
             energy: 512,
-            input: Item.of('minecraft:oak_log'),
-            output: Item.of('6x minecraft:oak_planks'),
-            secondaries: [
-                { output: bark, stripping: true },
-                { output: sawdust, stripping: false }
-            ],
-            stripped: Item.of('minecraft:stripped_oak_log'),
-            id: `${id_prefix}oak_planks_from_oak_log`
+            input: [Item.of('naturesaura:ancient_log')],
+            output: Item.of('naturesaura:ancient_planks', 6),
+            secondaries: [{ output: 'naturesaura:gold_powder', stripping: false }],
+            id: `${id_prefix}ancient_planks_from_ancient_log`
+        },
+        {
+            energy: 512,
+            input: [Item.of('naturesaura:ancient_bark')],
+            output: Item.of('naturesaura:ancient_planks', 6),
+            secondaries: [{ output: 'naturesaura:gold_powder', stripping: false }],
+            id: `${id_prefix}ancient_planks_from_ancient_bark`
         }
-        */
     ];
 
     wood_properties.forEach((material) => {
@@ -50,25 +51,15 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'immersiveengineering:sawmill';
-
-        // input: [{ item: 'minecraft:oak_log' }, { item: 'minecraft:oak_wood' }]
         recipe.input = recipe.input.map((input) => input.toJson());
-
-        // result: { count: 6, item: 'minecraft:oak_planks' }
         recipe.result = recipe.output.toJson();
-
-        // secondaries: [
-        //     { output: { tag: 'forge:dusts/wood' }, stripping: true },
-        //     { output: { tag: 'forge:dusts/wood' }, stripping: false }
-        // ]
         recipe.secondaries = recipe.secondaries.map((secondary) => ({
             output: { item: secondary.output },
             stripping: secondary.stripping
         }));
-
-        // stripped: { item: 'minecraft:stripped_oak_log' }
-        recipe.stripped = recipe.stripped.toJson();
-
+        if (recipe.stripped) {
+            recipe.stripped = recipe.stripped.toJson();
+        }
         event.custom(recipe).id(recipe.id);
     });
 });

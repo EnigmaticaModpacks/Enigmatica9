@@ -32,16 +32,22 @@ ServerEvents.recipes((event) => {
         { input: /rftoolsbase:dimensionalshard_/ },
 
         { id: 'ars_elemental:blaze_crush' },
+        { id: 'ars_elemental:bone_crush' },
 
         { id: /ars_nouveau:.*_dye/ },
+
+        { id: 'byg:dye_from_warped_cactus' },
+        { id: 'byg:dye_from_oddity_cactus' },
 
         { id: 'create:compat/ae2/mixing/fluix_crystal' },
         { id: 'create:compat/byg/crushing/lignite_ore' },
         { id: 'create:crushing/blaze_rod' },
         { id: 'create:milling/sandstone' },
+        { id: 'create:milling/bone' },
 
         { id: /createaddition:mixing\/biomass/ },
         { id: /createaddition:crafting\/.*spool/ },
+        { id: /createaddition:rolling\/.*_ingot/ },
         { id: 'createaddition:crafting/barbed_wire' },
         { id: 'createaddition:crafting/redstone_relay' },
         { id: 'createaddition:crafting/connector' },
@@ -62,6 +68,8 @@ ServerEvents.recipes((event) => {
         { id: 'createaddition:compat/immersiveengineering/crushing/coal_coke' },
         { id: 'createaddition:compat/immersiveengineering/crushing/coke_block' },
 
+        { id: /emendatusenigmatica:gear\/from_ingot_press/ },
+
         { id: 'hexerei:black_dye_from_pestle_and_mortar' },
         { id: 'hexerei:broom_netherite_tip_from_mixing_cauldron' },
 
@@ -70,11 +78,13 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:stonework_generate/andesite' },
         { id: 'industrialforegoing:laser_drill_ore/ores/cinnabar' },
 
+        { id: /immersiveengineering:metalpress\/(gear|rod|plate)_/ },
         { id: 'immersiveengineering:crafting/coal_coke_to_coke' },
         { id: 'immersiveengineering:refinery/biodiesel' },
         { id: 'immersiveengineering:crusher/slag' },
         { id: 'immersiveengineering:crusher/blaze_powder' },
         { id: 'immersiveengineering:crusher/sandstone' },
+        { id: 'immersiveengineering:crusher/bone_meal' },
         { id: 'immersiveengineering:crusher/red_sandstone' },
 
         { id: /mekanism:enriching\/dye/ },
@@ -89,6 +99,7 @@ ServerEvents.recipes((event) => {
 
         { id: 'minecraft:bone_meal' },
         { id: 'minecraft:glass' },
+        { id: 'minecraft:green_dye' },
 
         { id: 'naturesaura:infused_iron' },
         { id: 'naturesaura:sky_ingot' },
@@ -122,6 +133,7 @@ ServerEvents.recipes((event) => {
         { id: 'rftoolsbase:dimensionalshard' },
 
         { id: /thermal:machines\/pulverizer\/pulverizer.*sandstone/ },
+        { id: /thermal:machines\/press\/press.*ingot_to_gear/ },
         { id: 'thermal:machines/centrifuge/centrifuge_allium' },
         { id: 'thermal:machines/centrifuge/centrifuge_azure_bluet' },
         { id: 'thermal:machines/centrifuge/centrifuge_blue_orchid' },
@@ -175,6 +187,7 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:machines/pyrolyzer/pyrolyzer_bitumen' },
         { id: 'thermal:compat/immersiveengineering/press_ie_hemp_to_plantoil' },
         { id: 'thermal:storage/sugar_cane_block' },
+        { id: 'thermal:press_gear_die' },
 
         { type: 'create:cutting' },
 

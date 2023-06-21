@@ -369,6 +369,25 @@ JEIEvents.information((event) => {
         {
             items: ['twilightforest:liveroot'],
             text: [`Drops from Liveroots found under trees in the Twilight Forest.`]
+        },
+        {
+            items: [
+                'starbunclemania:fluid_scroll_deny',
+                'starbunclemania:fluid_scroll_allow',
+                'ars_nouveau:deny_scroll',
+                'ars_nouveau:allow_scroll'
+            ],
+            text: [
+                `To configure, place the scroll in the mainhand and an item in the offhand, then Right-Click. Sneak Right-Click to remove.`,
+                ` `,
+                `May also be configured at a Scribe's Table`
+            ]
+        },
+        {
+            items: ['mekanism:cardboard_box'],
+            text: [
+                `The functionality of the Cardboard Box has been limited to simple Chests, Barrels, Crates, and other inventories that cannot otherwise be moved easily.`
+            ]
         }
     ];
 

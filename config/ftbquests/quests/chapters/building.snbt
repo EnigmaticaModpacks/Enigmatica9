@@ -6,26 +6,7 @@
 	icon: "minecraft:scaffolding"
 	id: "0000000000000096"
 	order_index: 2
-	quest_links: [
-		{
-			id: "1AF381BF18122BDE"
-			linked_quest: "5A581A8DF6CCC352"
-			x: 1.5d
-			y: 4.0d
-		}
-		{
-			id: "5691FC6E26AEA49D"
-			linked_quest: "3542632905883686"
-			x: 1.5d
-			y: 5.0d
-		}
-		{
-			id: "3CFD52C6E987D8D2"
-			linked_quest: "6305EF196599FC7C"
-			x: 1.5d
-			y: 6.0d
-		}
-	]
+	quest_links: [ ]
 	quests: [
 		{
 			description: [
@@ -410,7 +391,7 @@
 				type: "item"
 			}]
 			title: "Building Gadget"
-			x: -1.5d
+			x: -2.0d
 			y: 4.0d
 		}
 		{
@@ -459,7 +440,7 @@
 				type: "item"
 			}]
 			title: "Exchange Gadget"
-			x: -1.5d
+			x: -2.0d
 			y: 5.0d
 		}
 		{
@@ -510,7 +491,7 @@
 				type: "item"
 			}]
 			title: "Copy-Paste Gadget"
-			x: -1.5d
+			x: -2.0d
 			y: 6.0d
 		}
 		{
@@ -701,50 +682,6 @@
 		}
 		{
 			description: [
-				"If you are the type of player who avoids building a base and lives in a dirt hole somewhere because you are not confident with your building skills, or simply don't have the time and energy to plan out a full base design, this this mod is for you."
-				""
-				"The Mighty Architect allows you to plot down a dynamic design where you get to select how big or small the build is, how many floors, roof style, building materials, etc. Once your design is complete, it will save it as a schematic for you which can then be used in a Create Shematicannon to build it automatically."
-				""
-				"If the above introduction intrigues you, and you would like to learn more, or even see this mod in action, this short two minute video by the Mod Dev will show you the ins and outs of this wonderful mod."
-				""
-				"{\"text\":\"The Mighty Architect Mod Highlight\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtu.be/VdoKmdYubBM\"}}"
-			]
-			icon: "create:crafting_blueprint"
-			id: "4407C59E32585B96"
-			rewards: [
-				{
-					count: 2
-					id: "3E564C831D52F1BD"
-					item: "create:builders_tea"
-					random_bonus: 2
-					type: "item"
-				}
-				{
-					id: "7FB21C0F074D7720"
-					item: "create:empty_schematic"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "1DDF6EF97DE63E61"
-					item: "minecraft:gunpowder"
-					random_bonus: 8
-					type: "item"
-				}
-			]
-			shape: "square"
-			subtitle: "I love it when a plan comes together"
-			tasks: [{
-				id: "3671CC5B42EC4DF8"
-				title: "The Mighty Architect"
-				type: "checkmark"
-			}]
-			title: "The Mighty Architect"
-			x: 1.5d
-			y: 2.5d
-		}
-		{
-			description: [
 				"Quark is such a massive mod, and while it could have had it's own section, or even be part of the main Building section, we felt like having it as a stand-alone info quest fits better. While it would be near impossible to write down everything Quark has to offer, the below are some of the highlights for builders to make their life a little easier."
 				""
 				"- Decorative Blocks: Quark offers a plethora of blocks, both crafted like the different themed Chests, or gathered from around the world like the Corundum Crystal Blocks."
@@ -793,7 +730,7 @@
 				type: "checkmark"
 			}]
 			title: "Quark"
-			x: -1.5d
+			x: 0.0d
 			y: 2.5d
 		}
 		{
@@ -850,6 +787,108 @@
 			}]
 			x: 0.5d
 			y: 8.0d
+		}
+		{
+			description: [
+				"Create has a set of tools dedicated to saving schematics of structures and replicating them."
+				""
+				"The Schematic and Quill will allow you to save a schematic of an existing structure. This saved schematic will allow you to build the structure somewhere else."
+				""
+				"1) Right-Click to select the two opposite corners of the structure you want to save."
+				"2) Point at a face of the selected area and ctrl-scroll to adjust that side."
+				"3) Right-click to name and save the schematic."
+				""
+				"The Create GitHub has a wiki page with examples of saving schematics:"
+				""
+				"{\"text\":\"Saving a Schematic\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Creators-of-Create/Create/wiki/Saving-a-Schematic\"}}"
+			]
+			hide_dependency_lines: true
+			id: "225DD8C72B11FFE3"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "5596D763FED920E0"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "Archetecture 101"
+			tasks: [{
+				id: "5A9DC446B30DBFA0"
+				item: "create:schematic_and_quill"
+				type: "item"
+			}]
+			title: "Saving Schematics"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["225DD8C72B11FFE3"]
+			description: [
+				"In order to place your saved structures, you need to create a Schematic - this is done on the Schematic Table."
+				""
+				"Choose the schematic you want to create by mousing over the box in the middle of the GUI and scrolling. Place an Empty Schematic into the left slot on the table. Click the checkmark to print the schematic - this uploads it to the server and can take a while for very large schematics. You can close the table while this process completes and come back later. Pressing the “Open Folder” button will open the Schematic folder in your instance, and pressing “Refresh” will update the list of available schematics."
+				""
+				"Schematic in hand, you can place it in-world by right clicking. An on-screen HUD provides options for adjusting the schematic - moving, rotating, or flipping. Shift-right clicking the schematic will also allow you edit placement and rotation/mirroring. You can use this as a building guide, but there are better uses for it..."
+				""
+				"Note: Schematics for common multiblocks are included by default. You can use the \"Open Folder\" button to relocate any schematics you aren’t using and then refresh the list."
+				""
+				"The Create GitHub has a wiki with examples of loading schematics:"
+				""
+				"{\"text\":\"Loading a Schematic\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Creators-of-Create/Create/wiki/Loading-a-Schematic\"}}"
+			]
+			id: "7B4FBC9CC07C6E28"
+			min_width: 300
+			rewards: [{
+				id: "03CCD8A592938743"
+				item: "create:empty_schematic"
+				title: "Empty Schematic"
+				type: "item"
+			}]
+			subtitle: "Filing for Building Permits"
+			tasks: [{
+				id: "1D0625DD24276142"
+				item: "create:schematic_table"
+				type: "item"
+			}]
+			title: "Placing Schematics"
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7B4FBC9CC07C6E28"]
+			description: [
+				"The Schematicannon is how you're going to build your structures. It uses gunpowder as a propellent, and will take blocks from adjacent inventories."
+				""
+				"Take your freshly placed schematic and load it into the Schematicannon. Load gunpowder in the top left - the cannon will use one for each 400 blocks. Hit the Play button in the middle of the interface to begin placing blocks!"
+				""
+				"By default the cannon will pause if it doesn't have the block required, and it will replace any blocks in the way, but will protect tile entities (think chests and similar). Replaced blocks don't drop and are lost - the cannon IS NOT a quarry tool! These settings can be controlled by clicking the button in the bottom left."
+				""
+				"Note: The cannon isn't very fast, but it's possible to split the workload between multiple cannons, and Time in a Bottle works wonders on it!"
+				""
+				"The Create GitHub has a wiki with examples of printing schematics:"
+				""
+				"{\"text\":\"Printing a Schematic\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Creators-of-Create/Create/wiki/Printing-a-Schematic\"}}"
+			]
+			id: "55FBBB1108757907"
+			min_width: 300
+			rewards: [{
+				count: 16
+				id: "454017D41CFDE042"
+				item: "minecraft:gunpowder"
+				title: "Gunpowder"
+				type: "item"
+			}]
+			subtitle: "Constructive Detonation"
+			tasks: [{
+				id: "26823569074F6FA3"
+				item: "create:schematicannon"
+				type: "item"
+			}]
+			title: "Printing Schematics"
+			x: 2.0d
+			y: 6.0d
 		}
 	]
 	title: "Building"

@@ -17,21 +17,16 @@ ServerEvents.highPriorityData((event) => {
             weight: 100,
             quality: 0,
             entities: ['thermal:blizz'],
-            valid_gear_sets: ['#miniboss/blizz'],
+            valid_gear_sets: ['#miniboss/empty'],
             dimensions: [],
             affixed: false,
+            exclusions: [{ type: 'apotheosis:spawn_type', spawn_types: ['MOB_SUMMONED'] }],
             nbt: {},
             stats: {
                 enchant_chance: 1.0,
                 enchantment_levels: [20, 20, 20, 20],
                 effects: [{ effect: 'cofh_core:panacea', amplifier: 0, chance: 1.0 }],
-                attribute_modifiers: [
-                    {
-                        attribute: 'minecraft:generic.max_health',
-                        operation: 'ADDITION',
-                        value: { min: 40, steps: 1, step: 0 }
-                    }
-                ]
+                attribute_modifiers: []
             }
         },
         {
@@ -41,21 +36,16 @@ ServerEvents.highPriorityData((event) => {
             weight: 100,
             quality: 0,
             entities: ['thermal:basalz'],
-            valid_gear_sets: ['#miniboss/basalz'],
+            valid_gear_sets: ['#miniboss/empty'],
             dimensions: [],
             affixed: false,
+            exclusions: [{ type: 'apotheosis:spawn_type', spawn_types: ['MOB_SUMMONED'] }],
             nbt: {},
             stats: {
                 enchant_chance: 1.0,
                 enchantment_levels: [20, 20, 20, 20],
                 effects: [{ effect: 'cofh_core:explosion_resistance', amplifier: 0, chance: 1.0 }],
-                attribute_modifiers: [
-                    {
-                        attribute: 'minecraft:generic.max_health',
-                        operation: 'ADDITION',
-                        value: { min: 40, steps: 1, step: 0 }
-                    }
-                ]
+                attribute_modifiers: []
             }
         },
         {
@@ -65,27 +55,23 @@ ServerEvents.highPriorityData((event) => {
             weight: 100,
             quality: 0,
             entities: ['thermal:blitz'],
-            valid_gear_sets: ['#miniboss/blitz'],
+            valid_gear_sets: ['#miniboss/empty'],
             dimensions: [],
             affixed: false,
+            exclusions: [{ type: 'apotheosis:spawn_type', spawn_types: ['MOB_SUMMONED'] }],
             nbt: {},
             stats: {
                 enchant_chance: 1.0,
                 enchantment_levels: [20, 20, 20, 20],
                 effects: [{ effect: 'cofh_core:lightning_resistance', amplifier: 0, chance: 1.0 }],
-                attribute_modifiers: [
-                    {
-                        attribute: 'minecraft:generic.max_health',
-                        operation: 'ADDITION',
-                        value: { min: 40, steps: 1, step: 0 }
-                    }
-                ]
+                attribute_modifiers: []
             }
         }
     ];
 
     recipes.forEach((recipe) => {
-        recipe.exclusions = [{ type: 'apotheosis:nbt', nbt: { Corrupted: true } }];
+        recipe.exclusions ? recipe.exclusions.push(default_exclusions) : (recipe.exclusions = [default_exclusions]);
+
         event.addJson(`${id_prefix}${recipe.id}.json`, recipe);
     });
 });

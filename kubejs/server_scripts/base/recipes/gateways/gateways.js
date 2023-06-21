@@ -7,6 +7,7 @@ ServerEvents.highPriorityData((event) => {
             size: 'small',
             color: '#0b9e32',
             leash_range: 256,
+            allow_discarding: true,
             rewards: [
                 {
                     type: 'stack',
@@ -121,6 +122,7 @@ ServerEvents.highPriorityData((event) => {
             size: 'large',
             color: '#b30f04',
             leash_range: 32,
+            allow_discarding: true,
             rewards: [
                 {
                     type: 'stack',
@@ -220,7 +222,8 @@ ServerEvents.highPriorityData((event) => {
         {
             size: 'large',
             color: '#a005fa',
-            leash_range: 32,
+            leash_range: 256,
+            allow_discarding: true,
             rewards: [
                 {
                     type: 'stack',
@@ -327,6 +330,116 @@ ServerEvents.highPriorityData((event) => {
                 }
             ],
             id: 'wilden_grove_gate'
+        },
+        {
+            size: 'large',
+            color: '#554a57',
+            leash_range: 32,
+            rewards: [
+                {
+                    type: 'stack',
+                    stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                },
+                {
+                    type: 'apotheosis:affix',
+                    rarity: 'rare'
+                },
+                {
+                    type: 'loot_table',
+                    loot_table: 'enigmatica:apotheosis_gem_cache',
+                    rolls: 5,
+                    desc: 'Apotheosis Gems'
+                }
+            ],
+            completion_xp: 5000,
+            spawn_range: 3,
+            waves: [
+                {
+                    entities: [
+                        { entity: 'twilightforest:wraith' },
+                        { entity: 'twilightforest:wraith' },
+                        { entity: 'twilightforest:wraith' },
+                        { entity: 'twilightforest:wraith' },
+                        { entity: 'twilightforest:wraith' },
+                        { entity: 'twilightforest:wraith' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 750,
+                    setup_time: 50
+                },
+                {
+                    entities: [
+                        { entity: 'twilightforest:wraith' },
+                        { entity: 'twilightforest:wraith' },
+                        { entity: 'twilightforest:wraith' },
+                        { entity: 'twilightforest:wraith' },
+                        { entity: 'twilightforest:wraith' },
+                        { entity: 'twilightforest:wraith' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 1500,
+                    setup_time: 50
+                },
+                {
+                    entities: [
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_wither_skeleton' },
+                        { entity: 'occultism:wild_hunt_wither_skeleton' },
+                        { entity: 'occultism:wild_hunt_wither_skeleton' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 2400,
+                    setup_time: 50
+                },
+                {
+                    entities: [
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_wither_skeleton' },
+                        { entity: 'occultism:wild_hunt_wither_skeleton' },
+                        { entity: 'occultism:wild_hunt_wither_skeleton' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 2400,
+                    setup_time: 50
+                }
+            ],
+            id: 'wild_hunt_gate'
         }
     ];
 

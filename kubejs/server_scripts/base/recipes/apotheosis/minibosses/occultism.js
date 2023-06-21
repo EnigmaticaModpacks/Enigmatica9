@@ -221,6 +221,11 @@ ServerEvents.highPriorityData((event) => {
                         attribute: 'minecraft:generic.armor_toughness',
                         operation: 'ADDITION',
                         value: 8
+                    },
+                    {
+                        attribute: 'minecraft:generic.attack_damage',
+                        operation: 'ADDITION',
+                        value: 9.5
                     }
                 ]
             }
@@ -255,6 +260,11 @@ ServerEvents.highPriorityData((event) => {
                         attribute: 'minecraft:generic.armor_toughness',
                         operation: 'ADDITION',
                         value: 12
+                    },
+                    {
+                        attribute: 'minecraft:generic.attack_damage',
+                        operation: 'ADDITION',
+                        value: 9.5
                     }
                 ]
             }
@@ -289,6 +299,11 @@ ServerEvents.highPriorityData((event) => {
                         attribute: 'minecraft:generic.armor_toughness',
                         operation: 'ADDITION',
                         value: 12
+                    },
+                    {
+                        attribute: 'minecraft:generic.attack_damage',
+                        operation: 'ADDITION',
+                        value: 10.5
                     }
                 ]
             }
@@ -330,7 +345,8 @@ ServerEvents.highPriorityData((event) => {
     ];
 
     recipes.forEach((recipe) => {
-        recipe.exclusions = [{ type: 'apotheosis:nbt', nbt: { Corrupted: true } }];
+        recipe.exclusions ? recipe.exclusions.push(default_exclusions) : (recipe.exclusions = [default_exclusions]);
+
         event.addJson(`${id_prefix}${recipe.id}.json`, recipe);
     });
 });

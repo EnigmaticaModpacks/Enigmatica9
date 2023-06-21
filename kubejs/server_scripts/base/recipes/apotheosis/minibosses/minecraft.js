@@ -11,9 +11,27 @@ ServerEvents.highPriorityData((event) => {
     const id_prefix = 'apotheosis:minibosses/minecraft/';
     const recipes = [
         {
+            id: 'skeleton_siege_breaker',
+            name: 'Skeletal Siege Breaker',
+            chance: 1.0,
+            weight: 5,
+            quality: 0,
+            entities: ['minecraft:skeleton'],
+            valid_gear_sets: ['#miniboss/skeleton_siege_breaker'],
+            dimensions: [],
+            affixed: false,
+            nbt: {},
+            stats: {
+                enchant_chance: 0.5,
+                enchantment_levels: [15, 15, 15, 15],
+                effects: [{ effect: 'minecraft:speed', amplifier: 1, chance: 1.0 }],
+                attribute_modifiers: []
+            }
+        },
+        {
             id: 'skeleton_bow',
             chance: 1.0,
-            weight: 85,
+            weight: 80,
             quality: 0,
             entities: ['minecraft:skeleton'],
             valid_gear_sets: ['#miniboss/skeleton_bow'],
@@ -67,21 +85,16 @@ ServerEvents.highPriorityData((event) => {
             weight: 100,
             quality: 0,
             entities: ['minecraft:blaze'],
-            valid_gear_sets: ['#miniboss/blaze'],
+            valid_gear_sets: ['#miniboss/empty'],
             dimensions: [],
             affixed: false,
+            exclusions: [{ type: 'apotheosis:spawn_type', spawn_types: ['MOB_SUMMONED'] }],
             nbt: {},
             stats: {
                 enchant_chance: 1.0,
                 enchantment_levels: [20, 20, 20, 20],
                 effects: [{ effect: 'minecraft:strength', amplifier: 0, chance: 1.0 }],
-                attribute_modifiers: [
-                    {
-                        attribute: 'minecraft:generic.max_health',
-                        operation: 'ADDITION',
-                        value: { min: 40, steps: 1, step: 0 }
-                    }
-                ]
+                attribute_modifiers: []
             }
         },
         {
@@ -429,7 +442,8 @@ ServerEvents.highPriorityData((event) => {
     ];
 
     recipes.forEach((recipe) => {
-        recipe.exclusions = [{ type: 'apotheosis:nbt', nbt: { Corrupted: true } }];
+        recipe.exclusions ? recipe.exclusions.push(default_exclusions) : (recipe.exclusions = [default_exclusions]);
+
         event.addJson(`${id_prefix}${recipe.id}.json`, recipe);
     });
 });

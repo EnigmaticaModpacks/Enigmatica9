@@ -23,7 +23,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}raw_ironwood`
         },
         {
-            output: 'occultism:chalk_white',
+            output: Item.of('occultism:chalk_white', { Unbreakable: 1 }),
             inputs: [
                 'minecraft:calcite',
                 'hexerei:dried_sage',
@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}chalk_white`
         },
         {
-            output: 'occultism:chalk_gold',
+            output: Item.of('occultism:chalk_gold', { Unbreakable: 1 }),
             inputs: [
                 'minecraft:calcite',
                 'naturesaura:gold_powder',
@@ -59,7 +59,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}chalk_gold`
         },
         {
-            output: 'occultism:chalk_purple',
+            output: Item.of('occultism:chalk_purple', { Unbreakable: 1 }),
             inputs: [
                 'minecraft:calcite',
                 '#forge:dusts/fluix',
@@ -83,7 +83,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}chalk_purple`
         },
         {
-            output: 'occultism:chalk_red',
+            output: Item.of('occultism:chalk_red', { Unbreakable: 1 }),
             inputs: [
                 'minecraft:calcite',
                 '#forge:gems/carminite',
@@ -265,7 +265,6 @@ ServerEvents.recipes((event) => {
             liquid: { fluid: 'minecraft:lava' },
             liquidOutput: { fluid: 'minecraft:lava' },
             fluidLevelsConsumed: 1000,
-            heatRequirement: 'heated',
             id: `${id_prefix}fiery_ingot`
         },
         {
@@ -373,20 +372,38 @@ ServerEvents.recipes((event) => {
         {
             output: 'naturesaura:death_ring',
             inputs: [
-                '#forge:gems/emerald',
+                'ars_nouveau:ring_of_potential',
                 'hexerei:belladonna_berries',
                 '#forge:nuggets/electrum',
                 'hexerei:mandrake_root',
-                'ars_nouveau:ring_of_potential',
+                '#forge:essences/anima',
                 'hexerei:mandrake_root',
                 '#forge:nuggets/electrum',
                 'hexerei:belladonna_berries'
             ],
             liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' } },
             liquidOutput: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' } },
-            fluidLevelsConsumed: 2000,
+            fluidLevelsConsumed: 100,
             heatRequirement: 'heated',
             id: `${id_prefix}death_ring`
+        },
+        {
+            output: 'hexerei:crow_ankh_amulet',
+            inputs: [
+                '#forge:string',
+                'hexerei:belladonna_berries',
+                '#forge:nuggets/electrum',
+                'hexerei:mandrake_root',
+                '#forge:essences/anima',
+                'hexerei:mandrake_root',
+                '#forge:nuggets/electrum',
+                'hexerei:belladonna_berries'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' } },
+            liquidOutput: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' } },
+            fluidLevelsConsumed: 100,
+            heatRequirement: 'heated',
+            id: 'hexerei:crow_ankh_amulet_from_mixing_cauldron'
         },
         {
             output: 'occultism:familiar_ring',
@@ -831,7 +848,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}wet_moon_dust_brush`
         },
         {
-            output: '32x hexerei:moon_dust',
+            output: '8x hexerei:moon_dust',
             inputs: [
                 '#forge:dusts/silver',
                 '#forge:dusts/silver',
@@ -845,7 +862,6 @@ ServerEvents.recipes((event) => {
             liquid: { fluid: 'minecraft:water' },
             liquidOutput: { fluid: 'minecraft:water' },
             fluidLevelsConsumed: 250,
-            moonRequirement: 'full_moon',
             id: `${id_prefix}moon_dust`
         },
         {
@@ -880,7 +896,6 @@ ServerEvents.recipes((event) => {
             liquid: { fluid: 'minecraft:lava' },
             liquidOutput: { fluid: 'minecraft:lava' },
             fluidLevelsConsumed: 1000,
-            heatRequirement: 'heated',
             id: 'hexerei:candle_dipper_from_mixing_cauldron'
         },
         {
@@ -936,6 +951,23 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 500,
             heatRequirement: 'heated',
             id: 'hexerei:large_satchel_from_mixing_cauldron'
+        },
+        {
+            output: 'hexerei:crystal_ball',
+            inputs: [
+                '#forge:storage_blocks/source',
+                'ae2:quartz_vibrant_glass',
+                'ae2:quartz_vibrant_glass',
+                'ae2:quartz_vibrant_glass',
+                'occultism:otherstone_pedestal',
+                'ae2:quartz_vibrant_glass',
+                'ae2:quartz_vibrant_glass',
+                'ae2:quartz_vibrant_glass'
+            ],
+            liquid: { fluid: 'minecraft:lava' },
+            liquidOutput: { fluid: 'minecraft:lava' },
+            fluidLevelsConsumed: 1000,
+            id: `${id_prefix}crystal_ball`
         }
     ];
 

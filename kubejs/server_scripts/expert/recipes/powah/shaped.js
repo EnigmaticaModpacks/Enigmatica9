@@ -26,9 +26,9 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'powah:energizing_orb',
-            pattern: ['AAA', 'ACA', 'BBB'],
+            pattern: ['CAC', 'BBB'],
             key: {
-                A: 'ae2:quartz_vibrant_glass',
+                A: 'hexerei:crystal_ball',
                 B: 'ae2:sky_stone_block',
                 C: '#forge:essences/manipulation'
             },

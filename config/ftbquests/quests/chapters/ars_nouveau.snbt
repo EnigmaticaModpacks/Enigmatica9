@@ -1980,17 +1980,26 @@
 			description: [
 				"In addition to transporting items and looking stylish, Starbuncles may be given a few additional accessories to further enhance their abilities. "
 				""
-				"Configuring their pickup and drop off locations remains the same as with Items; by using a Dominion Wand after equipping them with the appropriate accessory. "
+				"Configuring their pickup and drop off locations remains the same as with Items; by using a Dominion Wand after equipping them with the appropriate accessory.  "
+				""
+				"Need them to access a specific side? Use a Direction Scroll to set their preferred side. These are set by looking in the desired direction and Sneak + Right-Clicking them. Then use the scroll on the Starbuncle."
 			]
 			id: "355D6EAEA6130932"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				icon: "kubejs:farmers_delight"
-				id: "554D391BC7B04832"
-				player_command: false
-				title: "Farmer's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "554D391BC7B04832"
+					player_command: false
+					title: "Farmer's Delight"
+					type: "command"
+				}
+				{
+					id: "0ADB1DD209B4DFEB"
+					item: "starbunclemania:direction_scroll"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "01C1E69E6C4CCEB7"
 				item: "ars_nouveau:starbuncle_shards"
@@ -2273,6 +2282,38 @@
 			}]
 			x: -5.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["4D5B41D89738D3EE"]
+			description: [
+				"Far from home and need a few more potions to top up? The Enchanter’s Eye allows remote casting to a fixed location when bound to a Scry Crystal, or multiple locations with Scryer’s Scrolls. "
+				""
+				"As a simple example of how this may be useful, a Scry Crystal placed facing a Storage Lectern would allow the following spell form to access the Lectern remotely:"
+				""
+				"&5Touch&r > &2Interact&r"
+				""
+				"Adding Sensitive to the spell form would allow remote filling of a flask. Simply hold the flask in the off hand and ensure the Scry Crystal is set facing a Potion Jar:"
+				""
+				"&5Touch&r > &2Interact&r > &6Sensitive&r"
+			]
+			id: "4B6B442259091E1C"
+			rewards: [{
+				count: 2
+				id: "257A6006929C3193"
+				item: "ars_nouveau:scryers_crystal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "12E8A3624A6491C9"
+				item: {
+					Count: 1b
+					id: "ars_nouveau:enchanters_eye"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
 		}
 	]
 	title: "Ars Nouveau"

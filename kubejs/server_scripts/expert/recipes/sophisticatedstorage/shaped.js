@@ -40,7 +40,7 @@ ServerEvents.recipes((event) => {
             output: '4x sophisticatedstorage:storage_link',
             pattern: ['CBC', 'BAB', 'CBC'],
             key: {
-                A: 'ars_nouveau:ritual_warping',
+                A: '#forge:planks/archwood',
                 B: '#forge:nuggets/lead',
                 C: 'sophisticatedstorage:upgrade_base'
             },

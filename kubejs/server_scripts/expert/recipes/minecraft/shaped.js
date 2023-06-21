@@ -133,7 +133,7 @@ ServerEvents.recipes((event) => {
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'minecraft:nautilus_shell',
-                B: 'quark:blue_rune'
+                B: 'quark:rainbow_rune'
             },
             id: 'minecraft:conduit'
         }

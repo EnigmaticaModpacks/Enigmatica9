@@ -1203,6 +1203,32 @@
 			x: -10.0d
 			y: -13.0d
 		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: ["Great for quickly dismantling leaves on tress, the humble Hoe is also a workhorse out in the fields, scything down grass in large swaths with ease. "]
+			id: "04EC298DE2818F2A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "3E9383F9CC2FD7A0"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "515526797B08891A"
+				item: {
+					Count: 1b
+					id: "minecraft:wooden_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: -7.5d
+		}
 	]
 	title: "Equipment"
 }

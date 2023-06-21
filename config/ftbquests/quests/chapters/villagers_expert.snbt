@@ -530,9 +530,12 @@
 			id: "7A341C5D96C4A809"
 			shape: "gear"
 			tasks: [{
-				id: "694D9FA47769EF6A"
-				item: "minecraft:emerald"
-				type: "item"
+				icon: "minecraft:emerald_block"
+				id: "648E00887FAA8285"
+				stat: "minecraft:talked_to_villager"
+				title: "Talk to a Villager"
+				type: "stat"
+				value: 1
 			}]
 			title: "Villagers"
 			x: -3.5d

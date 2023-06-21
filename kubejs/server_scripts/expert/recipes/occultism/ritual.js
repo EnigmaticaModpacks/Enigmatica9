@@ -146,7 +146,7 @@ ServerEvents.recipes((event) => {
             inputs: [
                 'hexerei:mindful_trance_blend',
                 'naturesaura:gold_leaf',
-                '#forge:raw_materials/gold',
+                '#forge:ingots/gold',
                 'naturesaura:gold_leaf'
             ],
             ritual_dummy: 'kubejs:ritual_summon_starbuncle',
@@ -1183,6 +1183,7 @@ ServerEvents.recipes((event) => {
             activation_item: 'byg:hanging_bones',
             inputs: ['#forge:essences/anima', 'minecraft:bone_meal', 'minecraft:bone_meal', 'minecraft:bone_meal'],
             entity_to_summon: 'occultism:possessed_skeleton',
+            entity_to_sacrifice: { tag: 'enigmatica:deer', display_name: 'ritual.occultism.sacrifice.deer' },
             ritual_dummy: 'occultism:ritual_dummy/possess_skeleton',
             ritual_type: 'occultism:summon',
             pentacle_id: 'occultism:summon_lesser_evil',
@@ -1225,23 +1226,6 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:summon_lesser_evil',
             duration: 10,
             id: `occultism:ritual/possess_ghast`
-        },
-        {
-            output: Item.of('minecraft:wither_skeleton_skull', {
-                display: {
-                    Name: '{"translate":"item.occultism.ritual_dummy.summon_wild_hunt"}',
-                    Lore: ['{"translate":"item.occultism.ritual_dummy.summon_wild_hunt.tooltip"}']
-                }
-            }),
-            activation_item: 'minecraft:skeleton_skull',
-            inputs: ['#forge:essences/anima', '#forge:dusts/lead', '#forge:dusts/lead', '#forge:dusts/lead'],
-            entity_to_summon: 'occultism:wild_hunt_wither_skeleton',
-            entity_to_sacrifice: { tag: 'occultism:humans', display_name: 'ritual.occultism.sacrifice.humans' },
-            ritual_dummy: 'occultism:ritual_dummy/summon_wild_hunt',
-            ritual_type: 'occultism:summon',
-            pentacle_id: 'occultism:summon_lesser_evil',
-            duration: 10,
-            id: `occultism:ritual/summon_wild_hunt`
         },
         {
             output: Item.of('occultism:afrit_essence', {
@@ -1306,12 +1290,12 @@ ServerEvents.recipes((event) => {
                 'naturesaura:calling_spirit',
                 'naturesaura:calling_spirit',
                 '#forge:ingots/infused_iron',
-                '#forge:gems/niotic',
                 '#forge:ingots/infused_iron',
-                '#forge:gems/niotic',
-                '#forge:gems/niotic',
                 '#forge:ingots/infused_iron',
-                '#forge:gems/niotic',
+                '#forge:ingots/infused_iron',
+                '#forge:ingots/infused_iron',
+                '#forge:ingots/infused_iron',
+                '#forge:ingots/infused_iron',
                 '#forge:ingots/infused_iron'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_1',
@@ -1329,12 +1313,12 @@ ServerEvents.recipes((event) => {
                 'kubejs:spirit_of_devotion',
                 'kubejs:spirit_of_devotion',
                 '#forge:ingots/depths',
-                '#forge:gems/spirited',
                 '#forge:ingots/depths',
-                '#forge:gems/spirited',
-                '#forge:gems/spirited',
                 '#forge:ingots/depths',
-                '#forge:gems/spirited',
+                '#forge:ingots/depths',
+                '#forge:ingots/depths',
+                '#forge:ingots/depths',
+                '#forge:ingots/depths',
                 '#forge:ingots/depths'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_2',
@@ -1352,12 +1336,12 @@ ServerEvents.recipes((event) => {
                 'naturesaura:birth_spirit',
                 'naturesaura:birth_spirit',
                 '#forge:ingots/tainted_gold',
-                '#forge:gems/nitro',
                 '#forge:ingots/tainted_gold',
-                '#forge:gems/nitro',
-                '#forge:gems/nitro',
                 '#forge:ingots/tainted_gold',
-                '#forge:gems/nitro',
+                '#forge:ingots/tainted_gold',
+                '#forge:ingots/tainted_gold',
+                '#forge:ingots/tainted_gold',
+                '#forge:ingots/tainted_gold',
                 '#forge:ingots/tainted_gold'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_3',
@@ -1375,12 +1359,12 @@ ServerEvents.recipes((event) => {
                 '#forge:gems/infused_ender',
                 '#forge:gems/infused_ender',
                 '#forge:ingots/sky',
-                'minecraft:dragon_egg',
                 '#forge:ingots/sky',
-                'minecraft:dragon_egg',
-                'minecraft:dragon_egg',
                 '#forge:ingots/sky',
-                'minecraft:dragon_egg',
+                '#forge:ingots/sky',
+                '#forge:ingots/sky',
+                '#forge:ingots/sky',
+                '#forge:ingots/sky',
                 '#forge:ingots/sky'
             ],
             ritual_dummy: 'kubejs:ritual_tree_of_life_4',
@@ -1505,6 +1489,32 @@ ServerEvents.recipes((event) => {
             },
             duration: 10,
             id: `${id_prefix}wilden_grove_gate`
+        },
+        {
+            output: 'kubejs:ritual_of_enduring_flight',
+            activation_item: 'ars_nouveau:ritual_flight',
+            inputs: ['#forge:ingots/sky', '#forge:ingots/sky', '#forge:ingots/sky', '#forge:ingots/sky'],
+            ritual_dummy: 'kubejs:ritual_of_enduring_flight',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_foliot',
+            duration: 20,
+            id: `${id_prefix}ritual_of_enduring_flight`
+        },
+        {
+            output: Item.of('gateways:gate_pearl', `{gateway:"gateways:wild_hunt_gate", radius:5}`),
+            activation_item: 'minecraft:skeleton_skull',
+            inputs: ['#forge:essences/anima', '#forge:dusts/lead', '#forge:dusts/lead', '#forge:dusts/lead'],
+            entity_to_sacrifice: { tag: 'enigmatica:deer', display_name: 'ritual.occultism.sacrifice.deer' },
+            ritual_dummy: Item.of('minecraft:wither_skeleton_skull', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.summon_wild_hunt"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.summon_wild_hunt.tooltip"}']
+                }
+            }),
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_lesser_evil',
+            duration: 10,
+            id: `occultism:ritual/summon_wild_hunt`
         }
     ];
 

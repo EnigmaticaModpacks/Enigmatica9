@@ -3,41 +3,37 @@ ServerEvents.recipes((event) => {
 
     const recipes = [];
 
-    const rod_materials = ['enderium', 'signalum', 'lumium'];
+    Object.keys(metal_properties).forEach((metal) => {
+        if (metal_properties[metal].gear) {
+            recipes.push({
+                output: `emendatusenigmatica:${metal}_gear`,
+                mold: 'immersiveengineering:mold_gear',
+                input: `#forge:ingots/${metal}`,
+                count: 4,
+                energy: 2400,
+                id: `${id_prefix}${metal}_gear`
+            });
+        }
 
-    rod_materials.forEach((material) => {
-        recipes.push({
-            output: `2x emendatusenigmatica:${material}_rod`,
-            mold: 'immersiveengineering:mold_rod',
-            input: `#forge:plates/${material}`,
-            energy: 2400,
-            id: `${id_prefix}${material}_rod`
-        });
-    });
+        if (metal_properties[metal].plate) {
+            recipes.push({
+                output: `emendatusenigmatica:${metal}_plate`,
+                mold: 'immersiveengineering:mold_plate',
+                input: `#forge:ingots/${metal}`,
+                energy: 2400,
+                id: `${id_prefix}${metal}_plate`
+            });
+        }
 
-    const plate_materials = ['netherite', 'enderium', 'signalum', 'lumium'];
-
-    plate_materials.forEach((material) => {
-        recipes.push({
-            output: `emendatusenigmatica:${material}_plate`,
-            mold: 'immersiveengineering:mold_plate',
-            input: `#forge:ingots/${material}`,
-            energy: 2400,
-            id: `${id_prefix}${material}_plate`
-        });
-    });
-
-    const gear_materials = ['netherite', 'enderium', 'signalum', 'lumium'];
-
-    gear_materials.forEach((material) => {
-        recipes.push({
-            output: `emendatusenigmatica:${material}_gear`,
-            mold: 'immersiveengineering:mold_gear',
-            input: `#forge:ingots/${material}`,
-            count: 4,
-            energy: 2400,
-            id: `${id_prefix}${material}_gear`
-        });
+        if (metal_properties[metal].rod) {
+            recipes.push({
+                output: `2x emendatusenigmatica:${metal}_rod`,
+                mold: 'immersiveengineering:mold_rod',
+                input: `#forge:ingots/${metal}`,
+                energy: 2400,
+                id: `${id_prefix}${metal}_rod`
+            });
+        }
     });
 
     recipes.forEach((recipe) => {

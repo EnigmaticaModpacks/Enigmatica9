@@ -7,192 +7,268 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            inputs: ['#forge:dusts/quartz', 'minecraft:obsidian', '#forge:glass/colorless'],
-            outputs: ['2x thermal:obsidian_glass'],
+            ingredients: [
+                { tag: 'forge:dusts/quartz' },
+                { item: 'minecraft:obsidian' },
+                { tag: 'forge:glass/colorless' }
+            ],
+            result: [{ item: 'thermal:obsidian_glass', count: 2 }],
             energy: 4800,
             id: `${id_prefix}obsidian_glass`
         },
         {
-            inputs: ['#forge:dusts/lumium', '2x thermal:obsidian_glass'],
-            outputs: ['2x thermal:lumium_glass'],
+            ingredients: [{ tag: 'forge:dusts/lumium' }, { item: 'thermal:obsidian_glass', count: 2 }],
+            result: [{ item: 'thermal:lumium_glass', count: 2 }],
             energy: 4800,
             id: `${id_prefix}lumium_glass`
         },
         {
-            inputs: ['#forge:dusts/signalum', '2x thermal:obsidian_glass'],
-            outputs: ['2x thermal:signalum_glass'],
+            ingredients: [{ tag: 'forge:dusts/signalum' }, { item: 'thermal:obsidian_glass', count: 2 }],
+            result: [{ item: 'thermal:signalum_glass', count: 2 }],
             energy: 4800,
             id: `${id_prefix}signalum_glass`
         },
         {
-            inputs: ['#forge:dusts/enderium', '2x thermal:obsidian_glass'],
-            outputs: ['2x thermal:enderium_glass'],
+            ingredients: [{ tag: 'forge:dusts/enderium' }, { item: 'thermal:obsidian_glass', count: 2 }],
+            result: [{ item: 'thermal:enderium_glass', count: 2 }],
             energy: 4800,
             id: `${id_prefix}enderium_glass`
         },
         {
-            inputs: ['3x #forge:dusts/copper', '#forge:dusts/tin', '#forge:dusts/redstone'],
-            outputs: [Item.of('emendatusenigmatica:bronze_ingot', 4), 'thermal:slag'],
+            ingredients: [
+                { tag: 'forge:dusts/copper', count: 3 },
+                { tag: 'forge:dusts/tin' },
+                { tag: 'forge:dusts/redstone' }
+            ],
+            result: [{ item: 'emendatusenigmatica:bronze_ingot', count: 4 }, { item: 'thermal:slag' }],
             energy: 2400,
             id: `${id_prefix}bronze_ingot`
         },
         {
-            inputs: ['2x #forge:dusts/silver', '2x #forge:dusts/gold', '#forge:dusts/redstone'],
-            outputs: [Item.of('emendatusenigmatica:electrum_ingot', 4), 'thermal:slag'],
+            ingredients: [
+                { tag: 'forge:dusts/silver', count: 2 },
+                { tag: 'forge:dusts/gold', count: 2 },
+                { tag: 'forge:dusts/redstone' }
+            ],
+            result: [{ item: 'emendatusenigmatica:electrum_ingot', count: 4 }, { item: 'thermal:slag' }],
             energy: 2400,
             id: `${id_prefix}electrum_ingot`
         },
         {
-            inputs: ['2x #forge:dusts/iron', '#forge:dusts/nickel', '2x #forge:dusts/redstone'],
-            outputs: [Item.of('emendatusenigmatica:invar_ingot', 3), '2x thermal:slag'],
+            ingredients: [
+                { tag: 'forge:dusts/iron', count: 2 },
+                { tag: 'forge:dusts/nickel' },
+                { tag: 'forge:dusts/redstone', count: 2 }
+            ],
+            result: [
+                { item: 'emendatusenigmatica:invar_ingot', count: 3 },
+                { item: 'thermal:slag', count: 2 }
+            ],
             energy: 2400,
             id: `${id_prefix}invar_ingot`
         },
         {
-            inputs: ['2x #forge:dusts/nickel', '2x #forge:dusts/copper', '#forge:dusts/redstone'],
-            outputs: [Item.of('emendatusenigmatica:constantan_ingot', 4), 'thermal:slag'],
+            ingredients: [
+                { tag: 'forge:dusts/nickel', count: 2 },
+                { tag: 'forge:dusts/copper', count: 2 },
+                { tag: 'forge:dusts/redstone' }
+            ],
+            result: [{ item: 'emendatusenigmatica:constantan_ingot', count: 4 }, { item: 'thermal:slag' }],
             energy: 2400,
             id: `${id_prefix}constantan_ingot`
         },
         {
-            inputs: ['4x #forge:dusts/aluminum', '#forge:essences/manipulation'],
-            outputs: [Item.of('emendatusenigmatica:signalum_ingot', 4), 'thermal:slag'],
+            ingredients: [{ tag: 'forge:dusts/aluminum', count: 4 }, { tag: 'forge:essences/manipulation' }],
+            result: [{ item: 'emendatusenigmatica:signalum_ingot', count: 4 }, { item: 'thermal:slag' }],
             energy: 2400,
             id: `${id_prefix}signalum_ingot`
         },
         {
-            inputs: [
-                '4x #forge:dusts/constantan',
-                Ingredient.of(['minecraft:glow_berries', 'twilightforest:torchberries'])
-            ],
-            outputs: [Item.of('emendatusenigmatica:lumium_ingot', 4), 'thermal:slag'],
+            ingredients: [{ tag: 'forge:dusts/constantan', count: 4 }, { item: 'minecraft:glow_berries' }],
+            result: [{ item: 'emendatusenigmatica:lumium_ingot', count: 4 }, { item: 'thermal:slag' }],
             energy: 2400,
-            id: `${id_prefix}lumium_ingot`
+            id: `${id_prefix}lumium_ingot_from_glow_berries`
         },
         {
-            inputs: ['modularrouters:augment_core', '2x #forge:essences/water', '#forge:gems/source'],
-            outputs: ['thermal:machine_efficiency_augment'],
+            ingredients: [{ tag: 'forge:dusts/constantan', count: 4 }, { item: 'twilightforest:torchberries' }],
+            result: [{ item: 'emendatusenigmatica:lumium_ingot', count: 4 }, { item: 'thermal:slag' }],
+            energy: 2400,
+            id: `${id_prefix}lumium_ingot_from_torchberries`
+        },
+        {
+            ingredients: [
+                { item: 'modularrouters:augment_core' },
+                { tag: 'forge:essences/water', count: 2 },
+                { tag: 'forge:gems/source' }
+            ],
+            result: [{ item: 'thermal:machine_efficiency_augment' }],
             energy: 10000,
             id: `${id_prefix}machine_efficiency_augment`
         },
         {
-            inputs: ['modularrouters:augment_core', '2x #forge:essences/fire', '#forge:gems/source'],
-            outputs: ['thermal:machine_speed_augment'],
+            ingredients: [
+                { item: 'modularrouters:augment_core' },
+                { tag: 'forge:essences/fire', count: 2 },
+                { tag: 'forge:gems/source' }
+            ],
+            result: [{ item: 'thermal:machine_speed_augment' }],
             energy: 10000,
             id: `${id_prefix}machine_speed_augment`
         },
         {
-            inputs: ['modularrouters:augment_core', '2x #forge:essences/air', 'powah:capacitor_basic_large'],
-            outputs: ['thermal:rf_coil_augment'],
+            ingredients: [
+                { item: 'modularrouters:augment_core' },
+                { tag: 'forge:essences/air', count: 2 },
+                { item: 'powah:capacitor_basic_large' }
+            ],
+            result: [{ item: 'thermal:rf_coil_augment' }],
             energy: 10000,
             id: `${id_prefix}rf_coil_augment`
         },
         {
-            inputs: ['modularrouters:augment_core', '2x #forge:essences/fire', 'powah:capacitor_basic_large'],
-            outputs: ['thermal:rf_coil_xfer_augment'],
+            ingredients: [
+                { item: 'modularrouters:augment_core' },
+                { tag: 'forge:essences/fire', count: 2 },
+                { item: 'powah:capacitor_basic_large' }
+            ],
+            result: [{ item: 'thermal:rf_coil_xfer_augment' }],
             energy: 10000,
             id: `${id_prefix}rf_coil_xfer_augment`
         },
         {
-            inputs: ['modularrouters:augment_core', '2x #forge:essences/water', 'powah:capacitor_basic_large'],
-            outputs: ['thermal:rf_coil_storage_augment'],
+            ingredients: [
+                { item: 'modularrouters:augment_core' },
+                { tag: 'forge:essences/water', count: 2 },
+                { item: 'powah:capacitor_basic_large' }
+            ],
+            result: [{ item: 'thermal:rf_coil_storage_augment' }],
             energy: 10000,
             id: `${id_prefix}rf_coil_storage_augment`
         },
         {
-            inputs: ['modularrouters:augment_core', 'thermal:fluid_cell_frame'],
-            outputs: ['thermal:fluid_tank_augment'],
+            ingredients: [{ item: 'modularrouters:augment_core' }, { item: 'thermal:fluid_cell_frame' }],
+            result: [{ item: 'thermal:fluid_tank_augment' }],
             energy: 10000,
             id: `${id_prefix}fluid_tank_augment`
         },
         {
-            inputs: ['modularrouters:augment_core', '4x #forge:fabrics/infused'],
-            outputs: ['thermal:machine_output_augment'],
+            ingredients: [{ item: 'modularrouters:augment_core' }, { tag: 'forge:fabrics/infused', count: 4 }],
+            result: [{ item: 'thermal:machine_output_augment' }],
             energy: 10000,
             id: `${id_prefix}machine_output_augment`
         },
         {
-            inputs: ['modularrouters:augment_core', '#forge:gems/infused_diamond'],
-            outputs: ['thermal:machine_catalyst_augment'],
+            ingredients: [{ item: 'modularrouters:augment_core' }, { tag: 'forge:gems/infused_diamond' }],
+            result: [{ item: 'thermal:machine_catalyst_augment' }],
             energy: 10000,
             id: `${id_prefix}machine_catalyst_augment`
         },
         {
-            inputs: ['modularrouters:augment_core', '4x #forge:gems/quartz'],
-            outputs: ['thermal:area_radius_augment'],
+            ingredients: [{ item: 'modularrouters:augment_core' }, { tag: 'forge:gems/quartz', count: 4 }],
+            result: [{ item: 'thermal:area_radius_augment' }],
             energy: 10000,
             id: `${id_prefix}area_radius_augment`
         },
         {
-            inputs: ['modularrouters:augment_core', 'pneumaticcraft:logistics_core'],
-            outputs: ['thermal:machine_cycle_augment'],
+            ingredients: [{ item: 'modularrouters:augment_core' }, { item: 'pneumaticcraft:logistics_core' }],
+            result: [{ item: 'thermal:machine_cycle_augment' }],
             energy: 10000,
             id: `${id_prefix}machine_cycle_augment`
         },
         {
-            inputs: ['modularrouters:augment_core', '#forge:storage_blocks/knightmetal'],
-            outputs: ['thermal:machine_null_augment'],
+            ingredients: [{ item: 'modularrouters:augment_core' }, { tag: 'forge:storage_blocks/knightmetal' }],
+            result: [{ item: 'thermal:machine_null_augment' }],
             energy: 10000,
             id: `${id_prefix}machine_null_augment`
         },
         {
-            inputs: ['modularrouters:augment_core', 'ars_nouveau:potion_flask_amplify'],
-            outputs: ['thermal:potion_amplifier_augment'],
+            ingredients: [{ item: 'modularrouters:augment_core' }, { item: 'ars_nouveau:potion_flask_amplify' }],
+            result: [{ item: 'thermal:potion_amplifier_augment' }],
             energy: 10000,
             id: `${id_prefix}potion_amplifier_augment`
         },
         {
-            inputs: ['modularrouters:augment_core', 'ars_nouveau:potion_flask_extend_time'],
-            outputs: ['thermal:potion_duration_augment'],
+            ingredients: [{ item: 'modularrouters:augment_core' }, { item: 'ars_nouveau:potion_flask_extend_time' }],
+            result: [{ item: 'thermal:potion_duration_augment' }],
             energy: 10000,
             id: `${id_prefix}potion_duration_augment`
         },
         {
-            inputs: [
-                'modularrouters:augment_core',
-                'immersiveengineering:component_electronic',
-                'immersiveengineering:coil_mv'
+            ingredients: [
+                { item: 'modularrouters:augment_core' },
+                { item: 'immersiveengineering:component_electronic' },
+                { item: 'immersiveengineering:coil_mv' }
             ],
-            outputs: ['thermal:dynamo_throttle_augment'],
+            result: [{ item: 'thermal:dynamo_throttle_augment' }],
             energy: 10000,
             id: `${id_prefix}dynamo_throttle_augment`
         },
         {
-            inputs: ['modularrouters:augment_core', 'thermal:energy_cell_frame', '4x quark:rainbow_rune'],
-            outputs: ['thermal:dynamo_output_augment'],
+            ingredients: [
+                { item: 'modularrouters:augment_core' },
+                { item: 'thermal:energy_cell_frame' },
+                { item: 'quark:rainbow_rune', count: 4 }
+            ],
+            result: [{ item: 'thermal:dynamo_output_augment' }],
             energy: 10000,
             id: `${id_prefix}dynamo_output_augment`
         },
         {
-            inputs: ['modularrouters:augment_core', 'minecraft:lodestone', '4x #forge:gems/source'],
-            outputs: ['thermal:dynamo_fuel_augment'],
+            ingredients: [
+                { item: 'modularrouters:augment_core' },
+                { item: 'minecraft:lodestone' },
+                { tag: 'forge:gems/source', count: 4 }
+            ],
+            result: [{ item: 'thermal:dynamo_fuel_augment' }],
             energy: 10000,
             id: `${id_prefix}dynamo_fuel_augment`
         },
         {
-            inputs: ['minecraft:netherite_scrap', '4x #forge:ingots/soul_steel'],
-            outputs: [`4x ${AlmostUnified.getPreferredItemForTag(`forge:ingots/netherite`).getId()}`],
+            ingredients: [{ item: 'minecraft:netherite_scrap' }, { tag: 'forge:ingots/soul_steel', count: 4 }],
+            result: [{ item: `minecraft:netherite_ingot`, count: 4 }],
             energy: 20000,
             id: `${id_prefix}netherite_ingot`
         },
         {
-            inputs: ['pneumaticcraft:logistics_core', 'ae2:singularity', 'mekanism:teleportation_core'],
-            outputs: ['2x kubejs:energetic_transference_matrix'],
+            ingredients: [
+                { item: 'pneumaticcraft:logistics_core' },
+                { item: 'ae2:singularity' },
+                { item: 'mekanism:teleportation_core' }
+            ],
+            result: [{ item: `kubejs:energetic_transference_matrix`, count: 2 }],
             energy: 8000,
             id: `${id_prefix}energetic_transference_matrix`
         },
         {
-            inputs: ['#forge:gems/spirit_attuned', '4x #forge:ingots/knightmetal'],
-            outputs: ['4x naturesaura:depth_ingot'],
+            ingredients: [{ tag: 'forge:gems/spirit_attuned' }, { tag: 'forge:ingots/knightmetal', count: 4 }],
+            result: [{ item: `naturesaura:depth_ingot`, count: 4 }],
             energy: 8000,
             id: `${id_prefix}depth_ingot`
+        },
+        {
+            ingredients: [
+                { item: 'thermal:rubber', count: 4 },
+                { tag: 'forge:essences/fire' },
+                { tag: 'forge:essences/water' }
+            ],
+            result: [{ item: `thermal:cured_rubber`, count: 4 }],
+            energy: 1000,
+            id: `${id_prefix}cured_rubber`
+        },
+        {
+            ingredients: [
+                { item: 'pneumaticcraft:compressed_stone', count: 16 },
+                { item: 'create:brass_casing', count: 4 },
+                { item: 'create:encased_chain_drive' }
+            ],
+            result: [{ item: `create:crushing_wheel`, count: 2 }],
+            energy: 16000,
+            id: `${id_prefix}crushing_wheel`
         }
     ];
 
     recipes.forEach((recipe) => {
         recipe.type = 'thermal:smelter';
-        recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
-        recipe.result = recipe.outputs.map((output) => Item.of(output).toJson());
         event.custom(recipe).id(recipe.id);
     });
 });

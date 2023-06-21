@@ -163,7 +163,7 @@ ServerEvents.recipes((event) => {
             pattern: [' A ', ' B ', 'A A'],
             key: {
                 A: 'pneumaticcraft:turbine_blade',
-                B: '#forge:ingots/skies'
+                B: '#forge:ingots/sky'
             },
             id: `pneumaticcraft:turbine_rotor`
         },
@@ -370,6 +370,52 @@ ServerEvents.recipes((event) => {
                 C: 'ae2:quartz_glass'
             },
             id: `pneumaticcraft:small_tank`
+        },
+        {
+            output: 'pneumaticcraft:fluid_mixer',
+            pattern: [' A ', 'BCB', 'ADA'],
+            key: {
+                A: 'thermal:fluid_cell_frame',
+                B: 'pneumaticcraft:compressed_stone',
+                C: 'create:propeller',
+                D: 'pneumaticcraft:pressure_tube'
+            },
+            id: `pneumaticcraft:fluid_mixer`
+        },
+        {
+            output: 'pneumaticcraft:vortex_tube',
+            pattern: ['ABA', 'CBC', 'ADA'],
+            key: {
+                A: '#forge:ingots/ironwood',
+                B: 'pneumaticcraft:pressure_tube',
+                C: '#forge:plates/gold',
+                D: '#forge:essences/air'
+            },
+            id: `pneumaticcraft:vortex_tube`
+        },
+        {
+            output: 'pneumaticcraft:universal_sensor',
+            pattern: [' AB', ' C ', 'DE '],
+            key: {
+                A: '#forge:plates/signalum',
+                B: 'littlelogistics:receiver_component',
+                C: 'create:turntable',
+                D: 'pneumaticcraft:pressure_tube',
+                E: 'pneumaticcraft:compressed_stone'
+            },
+            id: `pneumaticcraft:universal_sensor`
+        },
+        {
+            output: 'pneumaticcraft:aerial_interface',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: 'compactmachines:wall',
+                B: 'pneumaticcraft:omnidirectional_hopper',
+                C: 'occultism:stable_wormhole',
+                D: 'powah:player_transmitter_basic',
+                E: 'pneumaticcraft:advanced_pressure_tube'
+            },
+            id: `pneumaticcraft:aerial_interface`
         }
     ];
 

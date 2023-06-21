@@ -6,22 +6,6 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/ars_nouveau/enchanting_apparatus/';
     const recipes = [
         {
-            output: '8x create:mechanical_crafter',
-            inputs: [
-                'create:brass_casing',
-                'create:brass_casing',
-                'create:brass_casing',
-                'create:brass_casing',
-                'create:brass_casing',
-                'create:brass_casing',
-                'create:brass_casing',
-                'create:brass_casing'
-            ],
-            reagents: ['minecraft:crafting_table'],
-            sourceCost: 500,
-            id: `${id_prefix}mechanical_crafter`
-        },
-        {
             output: '2x mekanism:teleportation_core',
             inputs: ['#forge:essences/conjuration', 'quark:rainbow_rune', 'quark:rainbow_rune'],
             reagents: ['occultism:spirit_attuned_gem'],
@@ -74,7 +58,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'pneumaticcraft:drill_bit_diamond',
-            inputs: ['#forge:ingots/skies', 'ars_nouveau:glyph_aoe'],
+            inputs: ['#forge:ingots/sky', 'ars_nouveau:glyph_aoe'],
             reagents: ['pneumaticcraft:drill_bit_compressed_iron'],
             sourceCost: 3000,
             id: `${id_prefix}drill_bit_diamond`
@@ -109,7 +93,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'immersiveengineering:mold_gear',
-            inputs: ['#forge:gears', '#forge:essences/manipulation'],
+            inputs: ['create:cogwheel', '#forge:essences/manipulation'],
             reagents: ['pneumaticcraft:compressed_stone_slab'],
             sourceCost: 1000,
             id: `${id_prefix}mold_gear`
@@ -578,9 +562,9 @@ ServerEvents.recipes((event) => {
                 '{perks:{cooldown:0.5d,luck:2.0d,noise:0.5d},upgrades:{}}'
             ),
             inputs: [
-                '#forge:ingots/skies',
-                '#forge:ingots/skies',
-                '#forge:ingots/skies',
+                '#forge:ingots/sky',
+                '#forge:ingots/sky',
+                '#forge:ingots/sky',
                 'kubejs:spirit_of_devotion',
                 '#forge:storage_blocks/lapis',
                 '#forge:storage_blocks/lapis',

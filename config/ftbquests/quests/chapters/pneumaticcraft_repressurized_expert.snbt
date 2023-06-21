@@ -43,7 +43,7 @@
 						value: "forge:tools"
 					}
 				}
-				title: "Any Tool"
+				title: "PneumaticCraft: Repressurized"
 				type: "item"
 			}]
 			x: -16.0d
@@ -723,7 +723,7 @@
 		{
 			dependencies: ["33C871735DD99224"]
 			description: [
-				"Module Expansion Cards are used to add extra functionality to various Tube Modules. Simply Right-Click it on any Tube Module to add new features"
+				"Module Expansion Crystals are used to add extra functionality to various Tube Modules. Simply Right-Click it on any Tube Module to add new features"
 				""
 				"● Regulator Tube Module: Precise control of regulated pressure."
 				""

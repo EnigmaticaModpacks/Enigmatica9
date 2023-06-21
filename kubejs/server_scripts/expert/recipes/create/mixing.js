@@ -47,18 +47,8 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}cured_rubber`
         },
         {
-            results: [
-                { item: 'powah:dielectric_paste', count: 32 },
-                { item: 'powah:dielectric_paste', count: 8, chance: 0.15 }
-            ],
-            ingredients: [
-                { item: 'occultism:burnt_otherstone' },
-                { item: 'occultism:burnt_otherstone' },
-                { item: 'occultism:burnt_otherstone' },
-                { item: 'occultism:burnt_otherstone' },
-                { item: 'occultism:burnt_otherstone' },
-                { amount: 1000, fluidTag: 'forge:latex' }
-            ],
+            results: [{ item: 'powah:dielectric_paste', count: 8 }],
+            ingredients: [{ item: 'occultism:burnt_otherstone' }, { amount: 250, fluidTag: 'forge:latex' }],
             heatRequirement: 'heated',
             id: `${id_prefix}dielectric_paste`
         },
@@ -150,7 +140,7 @@ ServerEvents.recipes((event) => {
                 { tag: 'forge:dusts/aluminum' },
                 { tag: 'forge:dusts/aluminum' },
                 { tag: 'forge:dusts/aluminum' },
-                { tag: 'forge:esseneces/manipulation' }
+                { tag: 'forge:essences/manipulation' }
             ],
             id: `${id_prefix}signalum_dust`
         },

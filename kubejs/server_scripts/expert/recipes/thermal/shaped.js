@@ -19,8 +19,8 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: 'thermal:cured_rubber',
-                B: 'ae2:quartz_glass',
-                C: '#forge:gears/bronze'
+                B: '#forge:plates/bronze',
+                C: 'ae2:quartz_glass'
             },
             id: 'thermal:fluid_cell_frame'
         },
@@ -270,11 +270,10 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'thermal:fluid_reservoir',
-            pattern: [' A ', 'ABA', ' C '],
+            pattern: [' A ', 'ABA'],
             key: {
-                A: '#forge:plates/bronze',
-                B: 'thermal:cured_rubber',
-                C: 'starbunclemania:fluid_jar'
+                A: '#forge:nuggets/bronze',
+                B: 'starbunclemania:fluid_jar'
             },
             id: 'thermal:fluid_reservoir'
         },
@@ -452,6 +451,26 @@ ServerEvents.recipes((event) => {
                 E: '#forge:essences/fire'
             },
             id: 'thermal:machine_refinery'
+        },
+        {
+            output: '2x thermal:servo_attachment',
+            pattern: [' A ', 'BCB'],
+            key: {
+                A: '#forge:nuggets/copper',
+                B: '#forge:nuggets/tin',
+                C: 'pneumaticcraft:logistics_core'
+            },
+            id: 'thermal:servo_attachment_2'
+        },
+        {
+            output: '2x thermal:turbo_servo_attachment',
+            pattern: [' A ', 'BCB'],
+            key: {
+                A: '#forge:nuggets/signalum',
+                B: '#forge:nuggets/invar',
+                C: 'pneumaticcraft:logistics_core'
+            },
+            id: 'thermal:turbo_servo_attachment_2'
         }
     ];
 

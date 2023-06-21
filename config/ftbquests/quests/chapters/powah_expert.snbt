@@ -43,33 +43,16 @@
 		}
 		{
 			dependencies: ["484E8107D89F94E0"]
-			description: ["An energy generating mod would hardly be complete without some ways to transmit and store it. Powah comes with everything from personal batteries to charge held items to cables and in world storage cells. "]
-			hide_dependency_lines: true
-			icon: "powah:dielectric_casing"
-			id: "228CEB92770543F1"
-			min_width: 300
-			shape: "hexagon"
-			tasks: [{
-				id: "71E5AE82FF86120F"
-				item: "powah:dielectric_casing"
-				type: "item"
-			}]
-			title: "Getting Started: Logistics and Storage"
-			x: 4.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["484E8107D89F94E0"]
 			description: [
-				"Powah introduces just a few types of machines, but multiple tiers of each. Obtaining higher tiers requires more powerful materials which are made with the Energizing Orb."
+				"Powah introduces just a few types of machines, but multiple tiers of each. Obtaining higher tiers requires more powerful materials which are made with the Resonating Crystal Ball."
 				""
-				"The Orb may be operated by hand or via automation, accepting items from any sort of pipe or conveyance. Once items are inserted, they may not be removed via automation until the craft completes, simplifying automated crafting considerably. Items may be removed by hand at any time, however."
+				"The Crystal Ball may be operated by hand or via automation, accepting items from any sort of pipe or conveyance. Once items are inserted, they may not be removed via automation until the craft completes, simplifying automated crafting considerably. Items may be removed by hand at any time, however."
 				""
-				"Energy for the craft requires Energizing Rods placed around the Orb. These must be placed on some form of energy cable or battery. The rods themselves may be up to six blocks from the Orb and do not require line of sight; they’ll happily shoot their lasers through any block. "
+				"Energy for the craft requires Energizin Rods placed around the Crystal Ball. These must be placed on some form of energy cable or battery. The rods themselves may be up to six blocks from the Crystal Ball and do not require line of sight; they’ll happily shoot their lasers through any block. "
 				""
-				"Rods will automatically link to the nearest Orb when placed but may be re-linked to another Orb manually with a Wrench. Sneak Right-Click the Wrench in the air to change it to Link mode."
+				"Rods will automatically link to the nearest Crystal Ball when placed but may be re-linked to another Crystal Ball manually with a Wrench. Sneak Right-Click the Wrench in the air to change it to Link mode."
 				""
-				"As energy costs increase for higher tier materials, higher tier Rods are recommended to increase the energy delivery rate, though it’s also viable to simply add more Rods. "
+				"As energy costs increase for higher tier materials, higher tier Rods are recommended to increase the energy delivery rate, though it’s also viable to simply add more Rods."
 			]
 			hide_dependency_lines: true
 			icon: "powah:energizing_orb"
@@ -133,12 +116,13 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["228CEB92770543F1"]
+			dependencies: ["50999062F73B4226"]
 			description: [
-				"Carrying around a battery is an excellent way to keep powered equipment charged on the go, but what if we could regain that inventory slot? The Player Transmitter allows precisely that by remotely charging any items in the owner’s inventory. "
+				"The Player Transmitter is a powerful conduit for funneling magical energies into equipment in the owner’s inventory. "
 				""
 				"To set the owner, craft a Binding Card and Right-Click the card in the air. Doing so will bind the card to that player. The card may then be inserted into the Player Transmitter to configure it."
 			]
+			hide_dependency_lines: true
 			icon: "powah:player_transmitter_nitro"
 			id: "63B827E3E73EFA96"
 			rewards: [{
@@ -194,8 +178,8 @@
 				}
 			]
 			title: "Player Transmitter"
-			x: 5.0d
-			y: 5.0d
+			x: 4.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["63B827E3E73EFA96"]
@@ -215,7 +199,7 @@
 				type: "item"
 			}]
 			title: "Dimensional Binding Card"
-			x: 4.0d
+			x: 4.5d
 			y: 5.0d
 		}
 		{

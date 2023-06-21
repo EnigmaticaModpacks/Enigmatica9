@@ -968,6 +968,27 @@ const entries = {
                 normal: 'Circuit Backplane',
                 expert: 'Runic Proto-Board'
             }
+        },
+        {
+            key: 'block.immersiveengineering.rs_engineering',
+            value: {
+                normal: 'Redstone Engineering Block',
+                expert: 'Quasi-Compact Artificing Block'
+            }
+        },
+        {
+            key: 'block.immersiveengineering.light_engineering',
+            value: {
+                normal: 'Light Engineering Block',
+                expert: 'Novice Artificing Block'
+            }
+        },
+        {
+            key: 'block.immersiveengineering.heavy_engineering',
+            value: {
+                normal: 'Heavy Engineering Block',
+                expert: 'Adept Artificing Block'
+            }
         }
     ],
     powah: [
@@ -983,6 +1004,13 @@ const entries = {
             value: {
                 normal: 'Energized Steel',
                 expert: 'Orichalcum Ingot'
+            }
+        },
+        {
+            key: 'block.powah.energizing_orb',
+            value: {
+                normal: 'Energizing Orb',
+                expert: 'Resonating Crystal Ball'
             }
         }
     ],
@@ -1207,6 +1235,15 @@ const entries = {
             value: {
                 normal: `Dragon's Breath`,
                 expert: 'Breath of Twilight'
+            }
+        }
+    ],
+    hexerei: [
+        {
+            key: 'tooltip.hexerei.found_in_swamp',
+            value: {
+                normal: 'Found in a swamp biome.',
+                expert: 'Plant it to grow more!'
             }
         }
     ]

@@ -141,8 +141,8 @@
 					type: "item"
 				}
 			]
-			x: -9.0d
-			y: -11.0d
+			x: -8.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["000000000000045C"]
@@ -363,7 +363,7 @@
 				}
 			]
 			x: -8.0d
-			y: -10.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["358FAB3D482C463A"]
@@ -429,8 +429,8 @@
 					type: "item"
 				}
 			]
-			x: -10.0d
-			y: -11.5d
+			x: -9.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["358FAB3D482C463A"]
@@ -443,7 +443,7 @@
 				type: "checkmark"
 			}]
 			title: "Chainsaw"
-			x: -11.0d
+			x: -8.5d
 			y: -8.0d
 		}
 		{
@@ -469,8 +469,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: -9.0d
+			x: -11.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["358FAB3D482C463A"]
@@ -804,7 +804,7 @@
 				}
 			]
 			title: "Spells"
-			x: -10.0d
+			x: -10.5d
 			y: -7.5d
 		}
 		{
@@ -858,8 +858,8 @@
 				title: "Excavators"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -8.0d
+			x: -8.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["358FAB3D482C463A"]
@@ -1003,8 +1003,8 @@
 				title: "Infinity Tools"
 				type: "item"
 			}]
-			x: -11.0d
-			y: -11.0d
+			x: -11.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["358FAB3D482C463A"]
@@ -1243,6 +1243,32 @@
 			}]
 			x: -10.0d
 			y: -13.0d
+		}
+		{
+			dependencies: ["358FAB3D482C463A"]
+			description: ["Great for quickly dismantling leaves on tress, the humble Hoe is also a workhorse out in the fields, scything down grass in large swaths with ease. "]
+			id: "25531EAF260F3944"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "4734ACE72F894A6E"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "03615540784DE72D"
+				item: {
+					Count: 1b
+					id: "minecraft:wooden_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: -11.5d
 		}
 	]
 	title: "Equipment"
