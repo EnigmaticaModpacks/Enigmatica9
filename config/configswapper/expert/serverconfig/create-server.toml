@@ -244,7 +244,7 @@
 				hose_pulley = 4.0
 				mechanical_crafter = 2.0
 
-				shaft = 0.05
+				shaft = 0.1
 				andesite_encased_shaft = 0.0
 				brass_encased_shaft = 0.0
 
