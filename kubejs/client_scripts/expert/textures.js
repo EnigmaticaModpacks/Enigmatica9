@@ -33,6 +33,20 @@ ClientEvents.highPriorityAssets((event) => {
             }
         },
         {
+            path: 'immersiveengineering:models/item/drillhead_steel',
+            json_model: {
+                parent: 'minecraft:item/generated',
+                textures: { layer0: 'kubejs:item/drillhead_steel' }
+            }
+        },
+        {
+            path: 'immersiveengineering:models/item/sawblade',
+            json_model: {
+                parent: 'minecraft:item/generated',
+                textures: { layer0: 'kubejs:item/sawblade' }
+            }
+        },
+        {
             path: 'occultism:models/block/golden_sacrificial_bowl',
             json_model: {
                 parent: 'occultism:block/sacrificial_bowl',

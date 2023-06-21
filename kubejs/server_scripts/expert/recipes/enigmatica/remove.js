@@ -136,6 +136,10 @@ ServerEvents.recipes((event) => {
         { id: 'hexerei:mixing_cauldron' },
         { id: `hexerei:moon_dust_from_mixing_cauldron` },
 
+        { id: /empty_shell/, mod: 'immersiveengineering' },
+        { id: /empty_casing/, mod: 'immersiveengineering' },
+        { id: /immersiveengineering:crusher\/coal/ },
+        { id: /immersiveengineering:crusher\/coke/ },
         { id: /immersiveengineering:blastfurnace\/fuel_/ },
         { id: /immersiveengineering:crafting\/.*_mix/ },
         { id: /immersiveengineering:crafting\/toolupgrade_powerpack_/ },
@@ -176,10 +180,7 @@ ServerEvents.recipes((event) => {
         { id: 'immersiveengineering:blueprint/circuit_board' },
         { id: 'immersiveengineering:blueprint/component_electronic_adv' },
         { id: 'immersiveengineering:metalpress/melon' },
-        { id: /empty_shell/, mod: 'immersiveengineering' },
-        { id: /empty_casing/, mod: 'immersiveengineering' },
-        { id: /immersiveengineering:crusher\/coal/ },
-        { id: /immersiveengineering:crusher\/coke/ },
+        { id: 'immersiveengineering:crafting/drillhead_iron' },
 
         { id: /industrialforegoing:laser_drill_ore/ },
         { id: /industrialforegoing:.*black_hole/ },

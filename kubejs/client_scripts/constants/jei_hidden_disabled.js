@@ -323,6 +323,7 @@ jei.expert.items.disabled = [
     'immersiveengineering:breaker_switch',
     'immersiveengineering:current_transformer',
     'immersiveengineering:cloche',
+    'immersiveengineering:drillhead_iron',
 
     /industrialforegoing:.*black_hole/,
     /industrialforegoing:conveyor/,
