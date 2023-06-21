@@ -26,7 +26,7 @@ const ritual_effects = {
                     // Effect to apply
                     effect: 'ars_nouveau:flight',
                     // Effect Duration in seconds
-                    duration: 72000,
+                    duration: 3600,
                     // Effect level. 1 means 1
                     level: 1
                 }
