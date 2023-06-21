@@ -311,7 +311,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'immersiveengineering:component_electronic',
                 B: 'create:brass_casing',
-                C: '#forge:gears/compressed_iron'
+                C: '#forge:gears/osmium'
             },
             id: `create:crafting/kinetics/rotation_speed_controller`
         },
@@ -430,6 +430,17 @@ ServerEvents.recipes((event) => {
                 C: 'immersiveengineering:light_engineering'
             },
             id: `${id_prefix}potato_cannon`
+        },
+        {
+            output: 'create:schematicannon',
+            pattern: [' A ', 'BCB', 'DDD'],
+            key: {
+                A: 'pneumaticcraft:cannon_barrel',
+                B: '#minecraft:planks',
+                C: 'minecraft:dispenser',
+                D: 'minecraft:smooth_stone'
+            },
+            id: `create:crafting/schematics/schematicannon`
         }
     ];
 

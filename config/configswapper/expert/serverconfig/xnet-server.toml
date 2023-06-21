@@ -47,10 +47,10 @@
 	maxPublishedChannels = 32
 	#Power usage for the controller regardless of what it is doing
 	#Range: 0 ~ 1000000000
-	controllerRFPerTick = 128
+	controllerRFPerTick = 32
 	#Power usage for the controller per active channel
 	#Range: 0 ~ 1000000000
-	controllerChannelRFT = 32
+	controllerChannelRFT = 16
 	#Power usage for the controller per operation performed by one of the channels
 	#Range: 0 ~ 1000000000
 	controllerOperationRFT = 64

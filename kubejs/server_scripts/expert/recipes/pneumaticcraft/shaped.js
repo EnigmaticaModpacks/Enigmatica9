@@ -416,6 +416,26 @@ ServerEvents.recipes((event) => {
                 E: 'pneumaticcraft:advanced_pressure_tube'
             },
             id: `pneumaticcraft:aerial_interface`
+        },
+        {
+            output: 'pneumaticcraft:air_cannon',
+            pattern: [' A ', ' BC', 'DDD'],
+            key: {
+                A: 'pneumaticcraft:cannon_barrel',
+                B: 'pneumaticcraft:stone_base',
+                C: 'pneumaticcraft:pressure_tube',
+                D: 'pneumaticcraft:compressed_stone_slab'
+            },
+            id: `pneumaticcraft:air_cannon`
+        },
+        {
+            output: 'pneumaticcraft:cannon_barrel',
+            pattern: ['A A', 'A A', 'ABA'],
+            key: {
+                A: 'pneumaticcraft:compressed_stone',
+                B: 'pneumaticcraft:pressure_tube'
+            },
+            id: `pneumaticcraft:cannon_barrel`
         }
     ];
 

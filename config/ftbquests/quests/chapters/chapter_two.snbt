@@ -49,7 +49,7 @@
 				""
 				"========================================"
 				""
-				"The Gateway for this fight is on a short timer. Capture a Wither and defeat the rest to obtain a Nether Star. The captured Wither will be used to mine Ether, which may be used to produce more Nether Stars. "
+				"The Gateway for this fight is on a short timer. Capture a Wither and defeat the rest to obtain a Nether Star. The captured Wither will be used to mine Blighted Ichor, which may be used to produce more Nether Stars. "
 				""
 				"Feel free to repeat this fight, but it is not intended to be needed more than once. "
 			]
@@ -310,7 +310,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["1D0AA79380E87E57"]
+			dependencies: ["7563E41DBF4FD286"]
 			description: [
 				"It is time once more to enlist the aid of the elemental spirits, this time to bring forth materials from the depths of their environments. By focusing tight beams of focused Source through these bases, the elementals will be able to retrieve what is needed. "
 				""
@@ -593,7 +593,7 @@
 				"The following multiblock machines may be constructed with Adept Artificing Blocks:"
 				""
 				"● Industrial Fermenter"
-				"● Industrial Sqeezer"
+				"● Industrial Squeezer"
 				"● Refinery"
 				"● Crusher"
 			]

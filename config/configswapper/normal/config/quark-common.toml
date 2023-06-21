@@ -242,7 +242,7 @@
 	"Metal Buttons" = true
 	Gravisand = true
 	"Pistons Move Tile Entities" = false
-	"Feeding Trough" = true
+	"Feeding Trough" = false
 	"Redstone Randomizer" = true
 
 	[automation.dispensers_place_blocks]
