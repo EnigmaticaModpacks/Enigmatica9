@@ -27,5 +27,8 @@
 	"item.immersiveengineering.rockcutter": "Rockcutter Sawblade",
 	"item.immersiveengineering.revolver": "Revolver",
 	"item.immersiveengineering.component_electronic": "Electronic Component",
-	"item.immersiveengineering.circuit_board": "Circuit Backplane"
+	"item.immersiveengineering.circuit_board": "Circuit Backplane",
+	"block.immersiveengineering.rs_engineering": "Redstone Engineering Block",
+	"block.immersiveengineering.light_engineering": "Light Engineering Block",
+	"block.immersiveengineering.heavy_engineering": "Heavy Engineering Block"
 }

@@ -1,5 +1,5 @@
 # This holds the schematic version for internal purposes. DO NOT TOUCH!
-schematicVersion = 1
+schematicVersion = 2
 
 # This category holds configs that define ship behaviour.
 [Ship]
@@ -36,7 +36,7 @@ schematicVersion = 1
 
 		#Default configs for the container of the Cog.
 		[Ship.Cog.Container]
-			#Default container size. Must be divisible by 9.
+			#Set container size for the Cog (value must be divisible by 9 and bigger than 0).
 			shipContainerCogContainerSize = 108
 
 		#Cog specific speed modifier.
@@ -57,6 +57,7 @@ schematicVersion = 1
 
 		#Default configs for the container of the Brigg.
 		[Ship.Brigg.Container]
+			#Set container size for the Brigg (value must be divisible by 9 and bigger than 0).
 			shipContainerBriggContainerSize = 162
 
 		#Brigg specific speed modifier.
@@ -77,6 +78,7 @@ schematicVersion = 1
 
 		#Default configs for the container of the Galley.
 		[Ship.Galley.Container]
+			#Set container size for the Galley (value must be divisible by 9 and bigger than 0).
 			shipContainerGalleyContainerSize = 54
 
 		#Galley specific speed modifier.
