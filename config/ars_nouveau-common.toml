@@ -56,3 +56,15 @@
 	#Range: > 0
 	maxLogEvents = 100
 
+#Blocks
+[block]
+	#How much potion a melder takes from each input jar. 100 = 1 potion
+	#Range: > 100
+	melderInputCost = 200
+	#How much potion a melder outputs per cycle. 100 = 1 potion
+	#Range: > 100
+	melderOutput = 100
+	#How much source a melder takes per cycle
+	#Range: > 0
+	melderSourceCost = 300
+

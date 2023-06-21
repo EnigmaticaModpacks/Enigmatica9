@@ -53,6 +53,9 @@
 	always_thunder = true
 	#If enabled, soulbound enchantment can appear in randomly enchanted loot chests.
 	soulbound_loot = true
+	#Set over 0 to enable archwood forests with specific trees
+	#Range: 0 ~ 100
+	extra_biomes = 0
 
 ["Source cost"]
 	#How much source does the water urn consume.
