@@ -441,6 +441,27 @@ ServerEvents.recipes((event) => {
                 D: 'minecraft:smooth_stone'
             },
             id: `create:crafting/schematics/schematicannon`
+        },
+        {
+            output: 'create:steam_engine',
+            pattern: [' A ', 'BCB', ' D '],
+            key: {
+                A: '#forge:rods/aluminum',
+                B: '#forge:essences/air',
+                C: 'pneumaticcraft:cannon_barrel',
+                D: '#forge:storage_blocks/bronze'
+            },
+            id: `create:crafting/kinetics/steam_engine`
+        },
+        {
+            output: 'create:super_glue',
+            pattern: ['AB', 'CA'],
+            key: {
+                A: '#forge:slimeballs',
+                B: '#forge:plates/tin',
+                C: '#forge:nuggets/tin'
+            },
+            id: `create:crafting/kinetics/super_glue`
         }
     ];
 

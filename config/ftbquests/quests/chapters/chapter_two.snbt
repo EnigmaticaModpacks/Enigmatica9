@@ -10,7 +10,13 @@
 	quests: [
 		{
 			dependencies: ["4F90F6437D6CF7EC"]
-			description: ["With items attuned to the destination it is now possible to travel to the Nether."]
+			description: [
+				"With items attuned to the destination it is now possible to travel to the Nether."
+				""
+				"================================="
+				""
+				"Teleportation using the Tree of Life is prone to… drift. Be sure to bring along some means to return home as well as to set up a portal on the other side. "
+			]
 			icon: "minecraft:crimson_fungus"
 			id: "3D0B7DA1DD0A74B1"
 			rewards: [{
@@ -888,19 +894,31 @@
 			hide_dependency_lines: true
 			icon: "kubejs:tree_of_life_2"
 			id: "2759988A5B69A455"
-			rewards: [{
-				id: "0FB91854818547CC"
-				item: {
-					Count: 1b
-					id: "trofers:medium_plate"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "trofers:tree_of_life_2"
+			rewards: [
+				{
+					id: "0FB91854818547CC"
+					item: {
+						Count: 1b
+						id: "trofers:medium_plate"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:tree_of_life_2"
+							}
 						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 2
+					id: "0606173E7BE74E39"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:stable_warp_scroll"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -921,7 +939,13 @@
 		}
 		{
 			dependencies: ["2759988A5B69A455"]
-			description: ["With items attuned to the destination and the blessings of the Queen Bee, travel to the Overworld is now achievable."]
+			description: [
+				"With items attuned to the destination and the blessings of the Queen Bee, travel to the Overworld is now achievable."
+				""
+				"================================="
+				""
+				"Teleportation using the Tree of Life is prone to… drift. Be sure to bring along some means to return home as well as to set up a portal on the other side. "
+			]
 			icon: "supplementaries:globe"
 			id: "356B7D1DFF632DBD"
 			rewards: [{
