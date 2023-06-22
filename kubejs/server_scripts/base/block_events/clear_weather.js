@@ -10,7 +10,7 @@ BlockEvents.rightClicked((event) => {
         block.getId().match(/(minecraft:|comforts:).*(_bed|sleeping_bag|hammock_)/)
     ) {
         // clear weather after 100 ticks
-        event.server.scheduleInTicks(100, (schedule) => {
+        server.scheduleInTicks(100, (schedule) => {
             let command = `/execute in minecraft:overworld run weather clear`;
             schedule.server.runCommandSilent(command);
         });
