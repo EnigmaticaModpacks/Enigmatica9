@@ -22,7 +22,12 @@ ServerEvents.recipes((event) => {
                     count: 1
                 }
             ],
-            ingredients: [{ tag: 'create:crushed_ores/iron' }, { fluidTag: 'forge:sulfuric_acid', amount: 30 }],
+            ingredients: [
+                { tag: 'create:crushed_ores/iron' },
+                { tag: 'create:crushed_ores/iron' },
+                { tag: 'create:crushed_ores/iron' },
+                { fluidTag: 'forge:sulfuric_acid', amount: 30 }
+            ],
             heatRequirement: 'superheated',
 
             id: `${id_prefix}iron_dust_from_sulfuric_acid`
