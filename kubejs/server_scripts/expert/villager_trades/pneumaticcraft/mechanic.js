@@ -113,8 +113,8 @@ MoreJSEvents.villagerTrades((event) => {
         },
 
         {
-            output: 'pneumaticcraft:spawner_core_shell',
-            inputs: [TradeItem.of('minecraft:emerald', 32, 64)],
+            output: 'ae2:dense_energy_cell',
+            inputs: [TradeItem.of('minecraft:emerald', 54, 64)],
             priceMultiplier: 0.2,
             level: 5,
             maxUses: 2,

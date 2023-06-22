@@ -73,7 +73,7 @@
     },
     "PowerRatios": {
         "ForgeEnergy": 1.0,
-        "UsageMultiplier": 1.0
+        "UsageMultiplier": 0.1
     },
     "Condenser": {
         "MatterBalls": 64,
