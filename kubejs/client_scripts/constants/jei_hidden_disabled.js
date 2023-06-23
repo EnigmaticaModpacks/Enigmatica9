@@ -471,6 +471,7 @@ jei.expert.items.disabled = [
     'mekanism:hdpe_sheet',
     'mekanism:hdpe_rod',
     'mekanism:hdpe_pellet',
+    'mekanism:steel_casing',
 
     'mekanismgenerators:gas_burning_generator',
     'mekanismgenerators:advanced_solar_generator',

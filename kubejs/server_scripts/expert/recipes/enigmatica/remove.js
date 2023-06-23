@@ -344,6 +344,7 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:hdpe_stick' },
         { id: 'mekanism:hdpe_sheet' },
         { id: 'mekanism:hdpe_rod' },
+        { id: 'mekanism:steel_casing' },
 
         { id: /minecraft:diamond_(helmet|chestplate|leggings|boots)/ },
         { id: /minecraft:diamond_(sword|pickaxe|axe|shovel|hoe)/ },
@@ -437,6 +438,9 @@ ServerEvents.recipes((event) => {
 
         { id: /quark:.*rainbow_rune/ },
         { id: 'quark:building/smelting/moss_paste' },
+
+        { id: /railways:sequenced_assembly\/track_/ },
+        { id: /railways:sequenced_assembly\/.*conductor_cap/ },
 
         { id: 'rftoolsbase:dimensionalshard' },
         { id: 'rftoolsbase:infused_diamond' },

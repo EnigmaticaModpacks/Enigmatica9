@@ -357,7 +357,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'ACA', 'ABA'],
             key: {
                 A: '#forge:rods/iron',
-                B: '#forge:treated_wood',
+                B: '#forge:treated_wood_slab',
                 C: '#forge:gravel'
             },
             id: `${id_prefix}track_from_iron`
@@ -367,7 +367,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'ACA', 'ABA'],
             key: {
                 A: '#forge:rods/osmium',
-                B: '#forge:treated_wood',
+                B: '#forge:treated_wood_slab',
                 C: '#forge:gravel'
             },
             id: `${id_prefix}track_from_osmium`
@@ -377,7 +377,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'ACA', 'ABA'],
             key: {
                 A: '#forge:rods/bronze',
-                B: '#forge:treated_wood',
+                B: '#forge:treated_wood_slab',
                 C: '#forge:gravel'
             },
             id: `${id_prefix}track_from_bronze`
@@ -462,6 +462,35 @@ ServerEvents.recipes((event) => {
                 C: '#forge:nuggets/tin'
             },
             id: `create:crafting/kinetics/super_glue`
+        },
+        {
+            output: '16x create:metal_bracket',
+            pattern: ['AAA', 'BCB'],
+            key: {
+                A: ['#forge:nuggets/nickel', '#forge:nuggets/iron'],
+                B: ['#forge:ingots/nickel', '#forge:ingots/iron'],
+                C: 'pneumaticcraft:compressed_stone'
+            },
+            id: `create:crafting/kinetics/metal_bracket`
+        },
+        {
+            output: '16x create:wooden_bracket',
+            pattern: ['AAA', 'BCB'],
+            key: {
+                A: '#forge:rods/wooden',
+                B: '#minecraft:planks',
+                C: 'pneumaticcraft:compressed_stone'
+            },
+            id: `create:crafting/kinetics/wooden_bracket`
+        },
+        {
+            output: '16x create:metal_girder',
+            pattern: ['AAA', 'BBB'],
+            key: {
+                A: ['#forge:plates/nickel', '#forge:plates/iron'],
+                B: 'pneumaticcraft:compressed_stone'
+            },
+            id: `create:crafting/kinetics/metal_girder`
         }
     ];
 
