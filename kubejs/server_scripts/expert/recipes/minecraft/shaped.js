@@ -136,6 +136,15 @@ ServerEvents.recipes((event) => {
                 B: 'quark:rainbow_rune'
             },
             id: 'minecraft:conduit'
+        },
+        {
+            output: 'minecraft:shield',
+            pattern: ['A A', 'ABA', ' A '],
+            key: {
+                A: '#minecraft:planks',
+                B: '#forge:ingots/bronze'
+            },
+            id: 'minecraft:shield'
         }
     ];
 

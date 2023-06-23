@@ -12,13 +12,13 @@ ServerEvents.recipes((event) => {
                 { item: 'thermal:slag', chance: 3 }
             ],
             input: 'thermal:rich_slag',
-            transitionalItem: 'ae2:sky_dust',
+            transitionalItem: 'thermal:rich_slag',
             loops: 4,
             sequence: [
                 {
                     type: 'create:filling',
-                    ingredients: [{ item: 'ae2:sky_dust' }, { fluidTag: 'forge:redstone_acid', amount: 25 }],
-                    results: [{ item: 'ae2:sky_dust' }]
+                    ingredients: [{ item: 'thermal:rich_slag' }, { fluidTag: 'forge:redstone_acid', amount: 25 }],
+                    results: [{ item: 'thermal:rich_slag' }]
                 }
             ],
             id: `${id_prefix}sky_dust_silver_osmium_clump`

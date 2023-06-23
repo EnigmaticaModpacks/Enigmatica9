@@ -135,6 +135,13 @@
 		}
 		{
 			dependencies: ["0672B242C31F4A11"]
+			description: [
+				""
+				""
+				"================================="
+				""
+				"Teleportation using the Tree of Life is prone to… drift. Be sure to bring along some means to return home as well as to set up a portal on the other side. "
+			]
 			icon: "minecraft:chorus_fruit"
 			id: "0EBE44D4C30C0E51"
 			shape: "hexagon"

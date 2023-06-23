@@ -299,7 +299,7 @@ ServerEvents.recipes((event) => {
             pattern: [' A ', 'BAC', 'DA '],
             key: {
                 A: 'naturesaura:ancient_stick',
-                B: '#forge:gears/compressed_iron',
+                B: 'immersiveengineering:light_engineering',
                 C: 'create:brass_hand',
                 D: '#forge:wooden_grip'
             },
@@ -311,7 +311,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'immersiveengineering:component_electronic',
                 B: 'create:brass_casing',
-                C: '#forge:gears/osmium'
+                C: '#forge:gears/aluminum'
             },
             id: `create:crafting/kinetics/rotation_speed_controller`
         },
@@ -321,7 +321,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'immersiveengineering:component_electronic',
                 B: 'create:railway_casing',
-                C: '#forge:gears/compressed_iron'
+                C: '#forge:gears/lumium'
             },
             id: `create:crafting/kinetics/controls`
         },
@@ -357,7 +357,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'ACA', 'ABA'],
             key: {
                 A: '#forge:rods/iron',
-                B: '#forge:treated_wood',
+                B: '#forge:treated_wood_slab',
                 C: '#forge:gravel'
             },
             id: `${id_prefix}track_from_iron`
@@ -367,7 +367,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'ACA', 'ABA'],
             key: {
                 A: '#forge:rods/osmium',
-                B: '#forge:treated_wood',
+                B: '#forge:treated_wood_slab',
                 C: '#forge:gravel'
             },
             id: `${id_prefix}track_from_osmium`
@@ -377,7 +377,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'ACA', 'ABA'],
             key: {
                 A: '#forge:rods/bronze',
-                B: '#forge:treated_wood',
+                B: '#forge:treated_wood_slab',
                 C: '#forge:gravel'
             },
             id: `${id_prefix}track_from_bronze`
@@ -441,6 +441,65 @@ ServerEvents.recipes((event) => {
                 D: 'minecraft:smooth_stone'
             },
             id: `create:crafting/schematics/schematicannon`
+        },
+        {
+            output: 'create:steam_engine',
+            pattern: [' A ', 'BCB', ' D '],
+            key: {
+                A: '#forge:rods/aluminum',
+                B: '#forge:essences/air',
+                C: 'pneumaticcraft:cannon_barrel',
+                D: '#forge:storage_blocks/bronze'
+            },
+            id: `create:crafting/kinetics/steam_engine`
+        },
+        {
+            output: 'create:super_glue',
+            pattern: ['AB', 'CA'],
+            key: {
+                A: '#forge:slimeballs',
+                B: '#forge:plates/tin',
+                C: '#forge:nuggets/tin'
+            },
+            id: `create:crafting/kinetics/super_glue`
+        },
+        {
+            output: '16x create:metal_bracket',
+            pattern: ['AAA', 'BCB'],
+            key: {
+                A: ['#forge:nuggets/nickel', '#forge:nuggets/iron'],
+                B: ['#forge:ingots/nickel', '#forge:ingots/iron'],
+                C: 'pneumaticcraft:compressed_stone'
+            },
+            id: `create:crafting/kinetics/metal_bracket`
+        },
+        {
+            output: '16x create:wooden_bracket',
+            pattern: ['AAA', 'BCB'],
+            key: {
+                A: '#forge:rods/wooden',
+                B: '#minecraft:planks',
+                C: 'pneumaticcraft:compressed_stone'
+            },
+            id: `create:crafting/kinetics/wooden_bracket`
+        },
+        {
+            output: '16x create:metal_girder',
+            pattern: ['AAA', 'BBB'],
+            key: {
+                A: ['#forge:plates/nickel', '#forge:plates/iron'],
+                B: 'pneumaticcraft:compressed_stone'
+            },
+            id: `create:crafting/kinetics/metal_girder`
+        },
+        {
+            output: 'create:minecart_coupling',
+            pattern: ['  B', ' A ', 'B  '],
+            key: {
+                A: ['#forge:plates/nickel', '#forge:plates/iron'],
+                B: 'pneumaticcraft:compressed_stone'
+            },
+            id: `create:crafting/curiosities/minecart_coupling`
         }
     ];
 

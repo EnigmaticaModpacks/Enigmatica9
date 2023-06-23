@@ -142,7 +142,7 @@ MoreJSEvents.villagerTrades((event) => {
             inputs: [TradeItem.of('minecraft:emerald', 1, 2)],
             priceMultiplier: 0.2,
             level: 5,
-            maxUses: 16,
+            maxUses: 8,
             experience: 5
         }
     ];

@@ -945,7 +945,14 @@ const entries = {
             key: 'item.immersiveengineering.drillhead_steel',
             value: {
                 normal: 'Steel Drill Head',
-                expert: 'Reinforced Drill Head'
+                expert: `Skyseeker's Drill Head`
+            }
+        },
+        {
+            key: 'item.immersiveengineering.sawblade',
+            value: {
+                normal: 'Sawblade',
+                expert: `Botanist's Sawblade`
             }
         },
         {

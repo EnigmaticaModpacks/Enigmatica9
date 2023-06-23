@@ -791,7 +791,7 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
+			x: 3.0d
 			y: 2.5d
 		}
 		{
@@ -816,7 +816,7 @@
 				item: "ars_nouveau:ritual_cloudshaping"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.0d
 			y: 2.5d
 		}
 		{
@@ -1072,39 +1072,6 @@
 			}]
 			x: -6.5d
 			y: -2.0d
-		}
-		{
-			dependencies: ["2CFCF5AFECE471E7"]
-			description: [
-				"First shalt thou take out the Holy Pin. Then, shalt thou count to three, no more, no less…"
-				""
-				"Useful for summoning Wilden of all sizes. When augmented with body parts from each of the lesser Wilden, the Wilden Chimera will appear to avenge his kin."
-			]
-			icon: "ars_nouveau:ritual_wilden_summon"
-			id: "4C8EE3E4E174B4CC"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				icon: "kubejs:sorcerers_delight"
-				id: "04F678C5D7C1C7F5"
-				player_command: false
-				title: "Sorcerer's Delight"
-				type: "command"
-			}]
-			subtitle: "The Beast of Caerbannog"
-			tasks: [
-				{
-					id: "0609A04F9472F422"
-					item: "ars_nouveau:ritual_wilden_summon"
-					type: "item"
-				}
-				{
-					id: "60A51BD60D1A43AC"
-					item: "ars_nouveau:wilden_tribute"
-					type: "item"
-				}
-			]
-			x: 1.5d
-			y: 3.0d
 		}
 		{
 			dependencies: ["0558849340629198"]
@@ -1861,7 +1828,7 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
+			x: 2.0d
 			y: 3.0d
 		}
 		{

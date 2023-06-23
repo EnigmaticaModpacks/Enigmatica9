@@ -389,6 +389,37 @@ ServerEvents.recipes((event) => {
         }
     ];
 
+    // colors.forEach((color) => {
+    //     [`minecraft:${color}_bed`, `comforts:sleeping_bag_${color}`, `comforts:hammock_${color}`].forEach((bed) => {
+    //         recipes.push({
+    //             hide_in_viewer: true,
+    //             item_in: { type: 'lychee:always_true' },
+    //             block_in: bed,
+    //             contextual: [
+    //                 {
+    //                     type: 'and',
+    //                     contextual: [
+    //                         { type: 'not', contextual: { type: 'weather', weather: 'clear' } },
+    //                         {
+    //                             type: 'location',
+    //                             predicate: { location: { dimension: 'twilightforest:twilight_forest' } }
+    //                         }
+    //                     ]
+    //                 }
+    //             ],
+    //             post: [
+    //                 { type: 'prevent_default' },
+    //                 {
+    //                     type: 'execute',
+    //                     command: 'execute in minecraft:overworld run weather clear 3600',
+    //                     hide: true
+    //                 }
+    //             ],
+    //             id: `${id_prefix}clear_twilight_weather_${bed.split(':')[1]}`
+    //         });
+    //     });
+    // });
+
     recipes.forEach((recipe) => {
         recipe.type = 'lychee:block_interacting';
         event.custom(recipe).id(recipe.id);

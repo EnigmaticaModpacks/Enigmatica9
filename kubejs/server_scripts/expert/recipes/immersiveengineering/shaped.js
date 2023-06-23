@@ -128,10 +128,11 @@ ServerEvents.recipes((event) => {
         },
         {
             output: Item.of('immersiveengineering:sawblade', { Unbreakable: 1 }),
-            pattern: ['AA ', 'ABA', ' AA'],
+            pattern: ['CA ', 'ABA', ' AC'],
             key: {
-                A: '#forge:ingots/compressed_iron',
-                B: 'create:shaft'
+                A: '#forge:ingots/ironwood',
+                B: 'thermal:redstone_servo',
+                C: '#forge:ingots/infused_iron'
             },
             id: `immersiveengineering:crafting/sawblade`
         },
@@ -139,26 +140,17 @@ ServerEvents.recipes((event) => {
             output: Item.of('immersiveengineering:rockcutter', { Unbreakable: 1 }),
             pattern: ['CA ', 'ABA', ' AC'],
             key: {
-                A: '#forge:ingots/compressed_iron',
-                B: 'create:shaft',
+                A: '#forge:ingots/ironwood',
+                B: 'thermal:redstone_servo',
                 C: '#forge:ingots/sky'
             },
             id: `immersiveengineering:crafting/rockcutter`
         },
         {
-            output: Item.of('immersiveengineering:drillhead_iron', { Unbreakable: 1 }),
-            pattern: ['  A', 'AA ', 'BA '],
-            key: {
-                A: '#forge:ingots/iron',
-                B: 'thermal:redstone_servo'
-            },
-            id: `immersiveengineering:crafting/drillhead_iron`
-        },
-        {
             output: Item.of('immersiveengineering:drillhead_steel', { Unbreakable: 1 }),
             pattern: ['  A', 'AA ', 'BA '],
             key: {
-                A: '#forge:ingots/compressed_iron',
+                A: '#forge:ingots/sky',
                 B: 'thermal:redstone_servo'
             },
             id: `immersiveengineering:crafting/drillhead_steel`
@@ -198,11 +190,12 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'immersiveengineering:drill',
-            pattern: ['  A', ' BA', 'C  '],
+            pattern: [' DA', 'DBA', 'C  '],
             key: {
                 A: '#forge:wooden_grip',
-                B: 'immersiveengineering:heavy_engineering',
-                C: '#forge:gears/compressed_iron'
+                B: 'immersiveengineering:light_engineering',
+                C: '#forge:gears/diamond',
+                D: '#forge:plates/obsidian'
             },
             id: `immersiveengineering:crafting/drill`
         },
@@ -211,9 +204,9 @@ ServerEvents.recipes((event) => {
             pattern: ['  A', 'DBA', 'CD '],
             key: {
                 A: '#forge:wooden_grip',
-                B: 'immersiveengineering:heavy_engineering',
-                C: '#forge:gears/compressed_iron',
-                D: '#forge:plates/invar'
+                B: 'immersiveengineering:light_engineering',
+                C: '#forge:gears/diamond',
+                D: '#forge:plates/obsidian'
             },
             id: `immersiveengineering:crafting/buzzsaw`
         },
