@@ -83,6 +83,18 @@ ServerEvents.recipes((event) => {
             output: '8x naturesaura:gold_fiber',
             grindingTime: 2 * 20,
             id: `${id_prefix}gold_fiber`
+        },
+        {
+            inputs: [
+                'hexerei:belladonna_flowers',
+                'hexerei:belladonna_berries',
+                'hexerei:belladonna_berries',
+                'hexerei:belladonna_berries',
+                'hexerei:sage'
+            ],
+            output: '2x hexerei:mindful_trance_blend',
+            grindingTime: 2 * 20,
+            id: `hexerei:mindful_trance_blend_from_pestle_and_mortar`
         }
     ];
 
