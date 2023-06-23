@@ -25,6 +25,11 @@ ServerEvents.recipes((event) => {
             ingredients: [{ tag: 'forge:treated_wood' }, { tag: 'forge:ingots/energized_steel' }],
             results: [{ item: 'create:brass_casing' }],
             id: `${id_prefix}brass_casing_from_treated_wood`
+        },
+        {
+            ingredients: [{ item: 'pneumaticcraft:compressed_brick_tile' }, { tag: 'forge:plates/lumium' }],
+            results: [{ item: 'create:railway_casing' }],
+            id: 'create:item_application/railway_casing'
         }
     ];
 

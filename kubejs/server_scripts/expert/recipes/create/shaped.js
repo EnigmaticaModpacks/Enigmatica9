@@ -299,7 +299,7 @@ ServerEvents.recipes((event) => {
             pattern: [' A ', 'BAC', 'DA '],
             key: {
                 A: 'naturesaura:ancient_stick',
-                B: '#forge:gears/compressed_iron',
+                B: 'immersiveengineering:light_engineering',
                 C: 'create:brass_hand',
                 D: '#forge:wooden_grip'
             },
@@ -321,7 +321,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'immersiveengineering:component_electronic',
                 B: 'create:railway_casing',
-                C: '#forge:gears/compressed_iron'
+                C: '#forge:gears/lumium'
             },
             id: `create:crafting/kinetics/controls`
         },
@@ -491,6 +491,15 @@ ServerEvents.recipes((event) => {
                 B: 'pneumaticcraft:compressed_stone'
             },
             id: `create:crafting/kinetics/metal_girder`
+        },
+        {
+            output: 'create:minecart_coupling',
+            pattern: ['  B', ' A ', 'B  '],
+            key: {
+                A: ['#forge:plates/nickel', '#forge:plates/iron'],
+                B: 'pneumaticcraft:compressed_stone'
+            },
+            id: `create:crafting/curiosities/minecart_coupling`
         }
     ];
 
