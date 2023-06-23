@@ -11,6 +11,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('naturesaura:ancient_log', 1, 16);
             pool.addItem('naturesaura:ender_crate', 1, 2);
             pool.addItem('naturesaura:spawn_lamp', 1, 1);
+            pool.addItem('naturesaura:furnace_heater', 1, 2);
 
             pool.addItem('minecraft:activator_rail', 1, [4, 8]);
             pool.addItem('minecraft:rail', 1, [8, 16]);

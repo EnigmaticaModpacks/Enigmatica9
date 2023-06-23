@@ -388,6 +388,12 @@ JEIEvents.information((event) => {
             text: [
                 `The functionality of the Cardboard Box has been limited to simple Chests, Barrels, Crates, and other inventories that cannot otherwise be moved easily.`
             ]
+        },
+        {
+            items: ['twilightforest:red_thread'],
+            text: [
+                `This string-like item can be placed on any side of a block. When held, it will glow and be visible through other blocks. Helpful for markers or finding your way back home.`
+            ]
         }
     ];
 

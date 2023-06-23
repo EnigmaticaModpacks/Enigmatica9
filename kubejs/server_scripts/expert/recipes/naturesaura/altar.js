@@ -127,6 +127,13 @@ ServerEvents.recipes((event) => {
             aura: 5000,
             time: 60,
             id: `${id_prefix}spore_blossom`
+        },
+        {
+            output: 'twilightforest:ore_magnet',
+            input: 'minecraft:lodestone',
+            aura: 90000,
+            time: 300,
+            id: `${id_prefix}ore_magnet`
         }
     ];
 

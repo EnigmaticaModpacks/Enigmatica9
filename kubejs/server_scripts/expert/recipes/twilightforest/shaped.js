@@ -24,6 +24,47 @@ ServerEvents.recipes((event) => {
                 D: '#forge:dusts/redstone'
             },
             id: `${id_prefix}moon_dial`
+        },
+        {
+            output: '8x twilightforest:red_thread',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: '#forge:string',
+                B: 'twilightforest:torchberries'
+            },
+            id: `${id_prefix}red_thread`
+        },
+        {
+            output: 'twilightforest:moonworm_queen',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:dusts/moon_dust',
+                B: '#forge:essences/anima',
+                C: '#forge:essences/manipulation',
+                D: 'twilightforest:torchberries'
+            },
+            id: `${id_prefix}moonworm_queen`
+        },
+        {
+            output: 'twilightforest:moonworm_queen',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:dusts/moon_dust',
+                B: '#forge:essences/anima',
+                C: '#forge:essences/manipulation',
+                D: 'twilightforest:torchberries'
+            },
+            id: `${id_prefix}moonworm_queen`
+        },
+        {
+            output: 'twilightforest:transformation_powder',
+            pattern: ['AAA', 'ABA', 'ACA'],
+            key: {
+                A: '#forge:dusts/moon_dust',
+                B: '#forge:essences/manipulation',
+                C: 'thermal:satchel'
+            },
+            id: `${id_prefix}transformation_powder`
         }
     ];
 
