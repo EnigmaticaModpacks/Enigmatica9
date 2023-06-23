@@ -311,7 +311,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'immersiveengineering:component_electronic',
                 B: 'create:brass_casing',
-                C: '#forge:gears/osmium'
+                C: '#forge:gears/aluminum'
             },
             id: `create:crafting/kinetics/rotation_speed_controller`
         },

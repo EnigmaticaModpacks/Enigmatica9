@@ -1097,10 +1097,10 @@ ServerEvents.recipes((event) => {
                 'immersiveengineering:coil_mv',
                 'immersiveengineering:coil_mv',
                 'immersiveengineering:coil_mv',
-                '#forge:gears/osmium',
-                '#forge:gears/osmium',
-                '#forge:gears/osmium',
-                '#forge:gears/osmium'
+                '#forge:gears/aluminum',
+                '#forge:gears/aluminum',
+                '#forge:gears/aluminum',
+                '#forge:gears/aluminum'
             ],
             entity_to_sacrifice: {
                 tag: 'enigmatica:elementals/earth',
