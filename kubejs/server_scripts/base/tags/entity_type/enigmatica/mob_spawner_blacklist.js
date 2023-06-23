@@ -3,8 +3,10 @@ ServerEvents.tags('entity_type', (event) => {
         .get('enigmatica:mob_spawner_blacklist')
         .add([
             /occultism/,
-            /ars_nouveau:familiar_.*/,
+            /ars_nouveau/,
+            /pneumaticcraft.*drone/,
             /ars_elemental:.*_familiar/,
+            '#forge:bosses',
             'twilightforest:naga',
             'twilightforest:lich',
             'twilightforest:minoshroom',
@@ -17,5 +19,6 @@ ServerEvents.tags('entity_type', (event) => {
             'minecraft:wither',
             'minecraft:ender_dragon',
             'quark:stoneling'
-        ]);
+        ])
+        .remove([/ars_nouveau:wilden/]);
 });

@@ -357,7 +357,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'ACA', 'ABA'],
             key: {
                 A: '#forge:rods/iron',
-                B: '#forge:treated_wood_slab',
+                B: 'minecraft:smooth_stone_slab',
                 C: '#forge:gravel'
             },
             id: `${id_prefix}track_from_iron`
@@ -367,7 +367,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'ACA', 'ABA'],
             key: {
                 A: '#forge:rods/osmium',
-                B: '#forge:treated_wood_slab',
+                B: 'minecraft:smooth_stone_slab',
                 C: '#forge:gravel'
             },
             id: `${id_prefix}track_from_osmium`
@@ -377,7 +377,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'ACA', 'ABA'],
             key: {
                 A: '#forge:rods/bronze',
-                B: '#forge:treated_wood_slab',
+                B: 'minecraft:smooth_stone_slab',
                 C: '#forge:gravel'
             },
             id: `${id_prefix}track_from_bronze`
