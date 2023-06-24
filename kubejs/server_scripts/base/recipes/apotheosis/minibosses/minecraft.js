@@ -195,7 +195,7 @@ ServerEvents.highPriorityData((event) => {
         {
             id: 'vindicator',
             name: null,
-            chance: 1.0,
+            chance: 0.5,
             weight: 100,
             quality: 0,
             entities: ['minecraft:vindicator'],
@@ -211,7 +211,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 30, steps: 1, step: 0 }
+                        value: 26
                     }
                 ]
             }
@@ -235,7 +235,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 30, steps: 1, step: 0 }
+                        value: 26
                     }
                 ]
             }
@@ -394,7 +394,7 @@ ServerEvents.highPriorityData((event) => {
         {
             id: 'drowned',
             name: null,
-            chance: 1.0,
+            chance: 0.05,
             weight: 100,
             quality: 0,
             entities: ['minecraft:drowned'],

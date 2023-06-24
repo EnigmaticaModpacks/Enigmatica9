@@ -218,6 +218,27 @@
     "ritual.enigmatica.occultism/ritual/ritual_craft_willow_broom.interrupted": "Ritual of Binding interrupted.",
     "ritual.enigmatica.occultism/ritual/ritual_craft_willow_broom.conditions": "Not all requirements for this ritual are met.",
 
+    "item.kubejs.ritual_craft_witch_hazel_broom": "Ritual: Craft Witch Hazel Broom",
+    "item.kubejs.ritual_craft_witch_hazel_broom.tooltip": "Bind a fae into a broom to obtain the power of flight.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_witch_hazel_broom.started": "Ritual of Binding started.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_witch_hazel_broom.finished": "Ritual of Binding completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_witch_hazel_broom.interrupted": "Ritual of Binding interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_witch_hazel_broom.conditions": "Not all requirements for this ritual are met.",
+
+    "item.kubejs.ritual_craft_mahogany_broom": "Ritual: Craft Mahogany Broom",
+    "item.kubejs.ritual_craft_mahogany_broom.tooltip": "Bind a fae into a broom to obtain the power of flight.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_mahogany_broom.started": "Ritual of Binding started.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_mahogany_broom.finished": "Ritual of Binding completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_mahogany_broom.interrupted": "Ritual of Binding interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_mahogany_broom.conditions": "Not all requirements for this ritual are met.",
+
+    "item.kubejs.ritual_craft_archwood_broom": "Ritual: Craft Archwood Broom",
+    "item.kubejs.ritual_craft_archwood_broom.tooltip": "Bind a fae into a broom to obtain the power of flight.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_archwood_broom.started": "Ritual of Binding started.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_archwood_broom.finished": "Ritual of Binding completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_archwood_broom.interrupted": "Ritual of Binding interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_archwood_broom.conditions": "Not all requirements for this ritual are met.",
+
     "item.kubejs.ritual_craft_module_expansion_card": "Ritual: Craft Module Expansion Card",
     "item.kubejs.ritual_craft_module_expansion_card.tooltip": "Bind an Air Elemental to control Tube Modules.",
     "ritual.enigmatica.occultism/ritual/ritual_craft_module_expansion_card.started": "Ritual of Binding started.",
