@@ -51,8 +51,42 @@ ServerEvents.recipes((event) => {
                 B: 'naturesaura:infused_stone'
             },
             id: `${id_prefix}castle_roof_tile`
+        },
+        {
+            output: 'twilightforest:canopy_bookshelf',
+            pattern: ['AAA', 'BBB', 'AAA'],
+            key: {
+                A: 'twilightforest:canopy_planks',
+                B: 'minecraft:book'
+            },
+            id: 'twilightforest:canopy_bookshelf'
         }
     ];
+
+    const wood_types = [
+        'twilight_oak',
+        'canopy',
+        'mangrove',
+        'darkwood',
+        'time',
+        'transformation',
+        'mining',
+        'sorting'
+    ];
+
+    wood_types.forEach((wood) => {
+        let planks = `twilightforest:${wood}_planks`;
+        if (wood == 'darkwood') {
+            planks = `twilightforest:dark_planks`;
+        }
+
+        recipes.push({
+            output: `twilightforest:${wood}_chest`,
+            pattern: ['AAA', 'A A', 'AAA'],
+            key: { A: planks },
+            id: `twilightforest:wood/${wood}_chest`
+        });
+    });
 
     recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
