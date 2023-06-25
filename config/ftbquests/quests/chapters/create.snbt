@@ -233,10 +233,8 @@
 					type: "item"
 				}
 				{
-					count: 4
-					id: "0000000000000D73"
-					item: "minecraft:magma_block"
-					title: "Magma Block"
+					id: "0C159F1488C9CC3B"
+					item: "minecraft:campfire"
 					type: "item"
 				}
 			]

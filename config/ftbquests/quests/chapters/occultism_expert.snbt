@@ -50,6 +50,10 @@
 				"Burning the fruit causes a small rift to open into the Otherworld, creating a flame that exists primarily in that Other Place, simply toss it down and light it. This flame will not burn creatures but may be used to transmute or purify certain materials. "
 				""
 				"Finally, Spirits from the Otherworld adore the taste of this fruit and feeding it to them will help restore their health. "
+				""
+				"================================================="
+				""
+				"Fires can be started with Fire Charges as well as Flint and Steel."
 			]
 			hide_dependency_lines: true
 			icon: "occultism:spirit_fire"
