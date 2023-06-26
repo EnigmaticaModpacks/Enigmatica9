@@ -18,6 +18,23 @@ ServerEvents.recipes((event) => {
                 B: 'ars_nouveau:fire_essence'
             },
             id: `${id_prefix}cryptic_magma_block`
+        },
+        {
+            output: 'byg:therium_lamp',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: '#forge:nuggets/iron',
+                B: '#forge:storage_blocks/therium'
+            },
+            id: 'byg:therium_lamp'
+        },
+        {
+            output: '2x byg:chiseled_therium',
+            pattern: ['A', 'A'],
+            key: {
+                A: '#forge:storage_blocks/therium'
+            },
+            id: 'byg:chiseled_therium'
         }
     ];
 

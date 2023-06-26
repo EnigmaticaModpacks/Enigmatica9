@@ -43,6 +43,9 @@ ServerEvents.recipes((event) => {
         { id: 'byg:dye_from_warped_cactus' },
         { id: 'byg:dye_from_oddity_cactus' },
         { id: 'byg:byg_chest' },
+        { id: 'byg:jacaranda_boookshelf' },
+        { id: 'byg:rainbow_eucalpytus_trapdoor' },
+        { id: 'byg:rainbow_eucalpytus_door' },
 
         { id: 'create:compat/ae2/mixing/fluix_crystal' },
         { id: 'create:compat/byg/crushing/lignite_ore' },
@@ -105,6 +108,7 @@ ServerEvents.recipes((event) => {
         { id: 'minecraft:bone_meal' },
         { id: 'minecraft:glass' },
         { id: 'minecraft:green_dye' },
+        { id: 'minecraft:cake' },
 
         { id: 'naturesaura:infused_iron' },
         { id: 'naturesaura:sky_ingot' },
@@ -136,6 +140,12 @@ ServerEvents.recipes((event) => {
         { id: 'quark:tweaks/smelting/bone_meal_utility' },
 
         { id: 'rftoolsbase:dimensionalshard' },
+
+        { id: 'supplementaries:ash_bricks_vertical_slab_2' },
+        { id: 'supplementaries:blackstone_tile_vertical_slab_2' },
+        { id: 'supplementaries:checker_vertical_slab_2' },
+        { id: 'supplementaries:lapis_bricks_vertical_slab_2' },
+        { id: 'supplementaries:stone_tile_vertical_slab_2' },
 
         { id: /thermal:machines\/pulverizer\/pulverizer.*sandstone/ },
         { id: /thermal:machines\/press\/press.*ingot_to_gear/ },
