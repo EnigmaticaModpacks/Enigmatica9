@@ -274,6 +274,13 @@
     "ritual.enigmatica.occultism/ritual/ritual_summon_crow.interrupted": "Ritual of Calling interrupted.",
     "ritual.enigmatica.occultism/ritual/ritual_summon_crow.conditions": "Not all requirements for this ritual are met.",
 
+    "item.kubejs.ritual_summon_allay": "Ritual: Summon Allay",
+    "item.kubejs.ritual_summon_allay.tooltip": "Summon a friendly Allay.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_allay.started": "Ritual of Calling started.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_allay.finished": "Ritual of Calling completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_allay.interrupted": "Ritual of Calling interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_allay.conditions": "Not all requirements for this ritual are met.",
+
     "item.kubejs.ritual_summon_bound_blaze": "Ritual: Summon Bound Elemental: Blaze",
     "item.kubejs.ritual_summon_bound_blaze.tooltip": "Summon a bound Blaze, incapable of moving.",
     "ritual.enigmatica.occultism/ritual/ritual_summon_bound_blaze.started": "Ritual of Binding started.",

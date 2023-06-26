@@ -1,7 +1,7 @@
 
 [tweaks]
 	#This option will let you climb ladders automatically by just looking upwards, rather than requiring a key to be held down.
-	autoClimbLadder = true
+	autoClimbLadder = false
 	#This prevents the last torch in the offhand from being placed.
 	doNotUseLastTorch = true
 	#This option will hide your offhand item. It can be toggled via an optional key binding.

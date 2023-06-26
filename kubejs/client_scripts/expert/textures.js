@@ -47,6 +47,13 @@ ClientEvents.highPriorityAssets((event) => {
             }
         },
         {
+            path: 'minecraft:models/item/shears',
+            json_model: {
+                parent: 'minecraft:item/generated',
+                textures: { layer0: 'kubejs:item/shears' }
+            }
+        },
+        {
             path: 'occultism:models/block/golden_sacrificial_bowl',
             json_model: {
                 parent: 'occultism:block/sacrificial_bowl',

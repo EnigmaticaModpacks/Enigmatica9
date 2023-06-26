@@ -783,6 +783,31 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_summon_crow`
         },
         {
+            output: Item.of('minecraft:allay_spawn_egg', {
+                display: {
+                    Name: '{"translate":"item.kubejs.ritual_summon_allay"}',
+                    Lore: ['{"translate":"item.kubejs.ritual_summon_allay.tooltip"}']
+                }
+            }),
+            activation_item: '#forge:essences/conjuration',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                '#forge:gems/amethyst',
+                '#forge:gems/amethyst',
+                '#forge:gems/amethyst',
+                '#forge:gems/amethyst'
+            ],
+            entity_to_summon: 'minecraft:allay',
+            ritual_dummy: 'kubejs:ritual_summon_allay',
+            ritual_type: 'occultism:summon_tamed',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_allay`
+        },
+        {
             output: Item.of('minecraft:blaze_spawn_egg', {
                 display: {
                     Name: '{"translate":"item.kubejs.ritual_summon_bound_blaze"}',

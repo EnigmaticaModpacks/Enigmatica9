@@ -266,6 +266,123 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}gloaming_catalyst`
+        },
+        {
+            item_in: { item: 'minecraft:shears' },
+            block_in: { tag: 'minecraft:leaves' },
+            post: [
+                { type: 'prevent_default' },
+                {
+                    type: 'place',
+                    block: {
+                        blocks: ['naturesaura:golden_leaves'],
+                        state: { stage: '3' }
+                    }
+                },
+                { type: 'damage_item', damage: 15 },
+                { type: 'add_item_cooldown', s: 0.5 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.grass.place block @p ~ ~ ~',
+                    hide: true
+                }
+            ],
+            id: `${id_prefix}shears_conversions/golden_leaves`
+        },
+        {
+            item_in: { item: 'minecraft:shears' },
+            block_in: 'minecraft:cactus',
+            post: [
+                { type: 'prevent_default' },
+                {
+                    type: 'place',
+                    block: { blocks: ['naturesaura:aura_cactus'] }
+                },
+                { type: 'damage_item', damage: 5 },
+                { type: 'add_item_cooldown', s: 0.5 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.grass.place block @p ~ ~ ~',
+                    hide: true
+                }
+            ],
+            id: `${id_prefix}shears_conversions/aura_cactus`
+        },
+        {
+            item_in: { item: 'minecraft:shears' },
+            block_in: 'minecraft:oxeye_daisy',
+            post: [
+                { type: 'prevent_default' },
+                {
+                    type: 'place',
+                    block: { blocks: ['naturesaura:aura_bloom'] }
+                },
+                { type: 'damage_item', damage: 5 },
+                { type: 'add_item_cooldown', s: 0.5 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.grass.place block @p ~ ~ ~',
+                    hide: true
+                }
+            ],
+            id: `${id_prefix}shears_conversions/aura_bloom`
+        },
+        {
+            item_in: { item: 'minecraft:shears' },
+            block_in: 'minecraft:red_mushroom',
+            post: [
+                { type: 'prevent_default' },
+                {
+                    type: 'place',
+                    block: { blocks: ['naturesaura:aura_mushroom'] }
+                },
+                { type: 'damage_item', damage: 5 },
+                { type: 'add_item_cooldown', s: 0.5 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.grass.place block @p ~ ~ ~',
+                    hide: true
+                }
+            ],
+            id: `${id_prefix}shears_conversions/aura_mushroom`
+        },
+        {
+            item_in: { item: 'minecraft:shears' },
+            block_in: 'minecraft:warped_fungus',
+            post: [
+                { type: 'prevent_default' },
+                {
+                    type: 'place',
+                    block: { blocks: ['naturesaura:warped_aura_mushroom'] }
+                },
+                { type: 'damage_item', damage: 5 },
+                { type: 'add_item_cooldown', s: 0.5 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.grass.place block @p ~ ~ ~',
+                    hide: true
+                }
+            ],
+            id: `${id_prefix}shears_conversions/warped_aura_mushroom`
+        },
+        {
+            item_in: { item: 'minecraft:shears' },
+            block_in: 'minecraft:crimson_fungus',
+            post: [
+                { type: 'prevent_default' },
+                {
+                    type: 'place',
+                    block: { blocks: ['naturesaura:crimson_aura_mushroom'] }
+                },
+                { type: 'damage_item', damage: 5 },
+                { type: 'add_item_cooldown', s: 0.5 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.grass.place block @p ~ ~ ~',
+                    hide: true
+                }
+            ],
+            id: `${id_prefix}shears_conversions/crimson_aura_mushroom`
         }
     ];
 
