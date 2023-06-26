@@ -147,7 +147,7 @@ ServerEvents.recipes((event) => {
                 A: '#forge:gems/fluix',
                 B: '#forge:ingots/compressed_iron',
                 C: '#forge:essences/water',
-                D: 'occultism:stable_wormhole'
+                D: 'occultism:wormhole_frame'
             },
             id: `ae2:network/parts/tunnels_me`
         },
