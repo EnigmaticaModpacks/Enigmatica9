@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
                 A: '#forge:gems/source',
                 B: '#forge:ingots/sky',
                 C: '#forge:ingots/infused_iron',
-                D: 'occultism:stable_wormhole',
+                D: 'occultism:wormhole_frame',
                 E: 'modularrouters:blank_module'
             },
             id: 'modularrouters:player_module'

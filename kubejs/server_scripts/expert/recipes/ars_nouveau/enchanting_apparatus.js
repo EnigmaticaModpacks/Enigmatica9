@@ -681,7 +681,7 @@ ServerEvents.recipes((event) => {
                 'ae2:annihilation_core',
                 'naturesaura:infused_brick'
             ],
-            reagents: ['occultism:stable_wormhole'],
+            reagents: ['occultism:wormhole_frame'],
             sourceCost: 0,
             id: `${id_prefix}condenser`
         },

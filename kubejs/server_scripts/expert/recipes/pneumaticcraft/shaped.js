@@ -411,7 +411,7 @@ ServerEvents.recipes((event) => {
             key: {
                 A: 'compactmachines:wall',
                 B: 'pneumaticcraft:omnidirectional_hopper',
-                C: 'occultism:stable_wormhole',
+                C: 'occultism:wormhole_frame',
                 D: 'powah:player_transmitter_basic',
                 E: 'pneumaticcraft:advanced_pressure_tube'
             },
