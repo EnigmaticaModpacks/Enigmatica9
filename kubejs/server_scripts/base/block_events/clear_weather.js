@@ -13,7 +13,9 @@ BlockEvents.rightClicked((event) => {
     ) {
         // clear weather after 100 ticks
         server.scheduleInTicks(100, (schedule) => {
-            let command = `/execute in minecraft:overworld run weather clear 24000`;
+            let interval = randomInt(3, 7) * 24000;
+            console.log(`Halting Rain for ${interval} ticks!`);
+            let command = `/execute in minecraft:overworld run weather clear ${interval}`;
             schedule.server.runCommandSilent(command);
         });
     }
