@@ -974,9 +974,9 @@
 
 	[tweaks.utility_recipes]
 		#Can two Logs be used to craft 16 sticks?
-		"Easy Sticks" = true
+		"Easy Sticks" = false
 		#Can you craft four chests at once using logs?
-		"Logs To Chests" = true
+		"Logs To Chests" = false
 		#Can other stone-like materials be used for crafting stone tools?
 		"Better Stone Tool Crafting" = true
 		#Can a dispenser be crafted by adding a bow to a dropper?
@@ -984,11 +984,11 @@
 		#Can any wool color be dyed?
 		"Dye Any Wool" = true
 		#Can Coral be crafted into dye?
-		"Coral To Dye" = true
+		"Coral To Dye" = false
 		#Can Charcoal be crafted into Black Dye?
-		"Charcoal To Black Dye" = true
+		"Charcoal To Black Dye" = false
 		#Can raw ore blocks be smelted, taking 9x the time a normal item?
-		"Smelt Raw Ore Blocks" = true
+		"Smelt Raw Ore Blocks" = false
 		#Can torches can be used as fuel in furnaces?
 		"Torches Burn" = true
 		#Can two Logs be used instead of a Chest to make a Hopper?

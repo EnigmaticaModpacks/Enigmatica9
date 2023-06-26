@@ -4,6 +4,7 @@
         "emendatusenigmatica",
         "kubejs",
         "create",
+        "quark",
         "thermal",
         "mekanism",
         "immersiveengineering",
@@ -98,7 +99,17 @@
         "ventium",
         "wood",
         "zinc",
-        "quartz"
+        "quartz",
+        "gunpowder",
+        "rice",
+        "onion",
+        "tomato",
+        "beetroot",
+        "potato",
+        "carrot",
+        "apple",
+        "bamboo",
+        "sugar_cane"
     ],
     "priorityOverrides": {},
     "tagOwnerships": {

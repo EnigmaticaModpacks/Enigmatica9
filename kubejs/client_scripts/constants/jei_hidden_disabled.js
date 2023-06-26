@@ -85,10 +85,11 @@ jei.base.items.disabled = [
 
     /thermal:flax/,
     /thermal:hops/,
-    /thermal:onion/,
-    /thermal:rice/,
+    'thermal:rice_seeds',
+    'thermal:rice',
+    'thermal:onion_seeds',
+    'thermal:onion',
     'thermal:tomato_seeds',
-    'thermal:tomato_block',
     'thermal:tomato',
     'thermal:crude_oil_bucket',
     'thermal:heavy_oil_bucket',
@@ -120,6 +121,8 @@ jei.base.items.disabled = [
 ];
 jei.base.items.hidden = [
     'create:honey_bucket',
+
+    /densetrees/,
 
     /emendatusenigmatica:bitumen_.*_ore/,
     'emendatusenigmatica:bitumen_ore',

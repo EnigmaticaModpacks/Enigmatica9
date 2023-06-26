@@ -28,6 +28,33 @@ ServerEvents.recipes((event) => {
         });
     });
 
+    // Tag conversion
+    conversionTypes = [
+        `#forge:storage_blocks/gunpowder`,
+        `#forge:storage_blocks/rice`,
+        `#forge:storage_blocks/onion`,
+        `#forge:storage_blocks/tomato`,
+        `#forge:storage_blocks/beetroot`,
+        `#forge:storage_blocks/potato`,
+        `#forge:storage_blocks/carrot`,
+        `#forge:storage_blocks/apple`,
+        `#forge:storage_blocks/bamboo`,
+        `#forge:storage_blocks/sugar_cane`
+    ];
+
+    conversionTypes.forEach((tag) => {
+        let ingredient = Ingredient.of(tag);
+
+        ingredient.stacks.forEach((block) => {
+            let output = block.getId();
+            recipes.push({
+                output: output,
+                input: ingredient,
+                id: `${id_prefix}${output.replace(':', '_')}`
+            });
+        });
+    });
+
     recipes.forEach((recipe) => {
         event.stonecutting(recipe.output, recipe.input).id(recipe.id);
     });

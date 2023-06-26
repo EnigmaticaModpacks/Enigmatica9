@@ -14,6 +14,9 @@
 -   Twilight Forest decorative blocks are now craftable. [\#415](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/415) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Remove Nature's Aura client configs from Config Swapper [\#416](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/416) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Buff Occultism Storage [\#416](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/416) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix many recipe conflicts [\#446](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/446) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Dense Trees now drop multiple regular logs, rather than dense logs [\#446](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/446) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Storage blocks for crops are now unified. Stonecutter may be used to obtain alternate block types [\#446](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/446) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
