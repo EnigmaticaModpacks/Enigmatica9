@@ -73,6 +73,7 @@ ServerEvents.recipes((event) => {
 
         { id: 'ars_nouveau:sunrise_2' },
         { id: 'ars_nouveau:moonfall_2' },
+        { id: 'ars_nouveau:crush_sandstone_to_sand' },
 
         { id: /ars_scalaes:.*_broom_from_mixing_cauldron/ },
         { id: /ars_scalaes:.*_brush_from_mixing_cauldron/ },

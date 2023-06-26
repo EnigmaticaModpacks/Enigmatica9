@@ -329,7 +329,7 @@ ServerEvents.recipes((event) => {
         {
             output: 'occultism:storage_stabilizer_tier1',
             ingredients: [
-                'occultism:stable_wormhole',
+                'occultism:wormhole_frame',
                 'kubejs:dimensional_storage_crystal',
                 'ae2:fluix_pearl',
                 'ae2:fluix_pearl',
