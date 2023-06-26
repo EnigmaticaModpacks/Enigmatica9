@@ -48,7 +48,9 @@ ServerEvents.tags('block', (event) => {
         'quark:apple_crate',
         'thermal:apple_block',
         'quark:gunpowder_sack',
-        'thermal:gunpowder_block'
+        'thermal:gunpowder_block',
+        'quark:sugar_cane_block',
+        'thermal:sugar_cane_block'
     ]);
     event.add(`forge:storage_blocks/glowstone`, 'minecraft:glowstone');
 
@@ -102,4 +104,5 @@ ServerEvents.tags('block', (event) => {
         .get(`forge:storage_blocks/carrot`)
         .add(['farmersdelight:carrot_crate', 'thermal:carrot_block', 'quark:carrot_crate']);
     event.get(`forge:storage_blocks/apple`).add(['quark:apple_crate', 'thermal:apple_block']);
+    event.get(`forge:storage_blocks/sugar_cane`).add(['quark:sugar_cane_block', 'thermal:sugar_cane_block']);
 });
