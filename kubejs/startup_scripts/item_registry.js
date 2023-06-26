@@ -63,6 +63,7 @@ StartupEvents.registry('item', (event) => {
         'ritual_summon_whirlisprig',
         'ritual_summon_whirlisprig_from_shards',
         'ritual_summon_crow',
+        'ritual_summon_allay',
         'ritual_summon_bound_blaze',
         'ritual_summon_bound_blitz',
         'ritual_summon_bound_basalz',

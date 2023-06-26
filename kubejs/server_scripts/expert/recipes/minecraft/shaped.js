@@ -145,6 +145,15 @@ ServerEvents.recipes((event) => {
                 B: '#forge:ingots/bronze'
             },
             id: 'minecraft:shield'
+        },
+        {
+            output: 'minecraft:shears',
+            pattern: ['AB', 'BA'],
+            key: {
+                A: '#forge:rods/ancient',
+                B: '#forge:ingots/infused_iron'
+            },
+            id: 'minecraft:shears'
         }
     ];
 

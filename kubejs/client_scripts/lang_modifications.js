@@ -1243,6 +1243,13 @@ const entries = {
                 normal: `Dragon's Breath`,
                 expert: 'Breath of Twilight'
             }
+        },
+        {
+            key: 'item.minecraft.shears',
+            value: {
+                normal: `Shears`,
+                expert: `Botanist's Shears`
+            }
         }
     ],
     hexerei: [
