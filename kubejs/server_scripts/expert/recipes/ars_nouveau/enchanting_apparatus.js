@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}dimensional_matrix`
         },
         {
-            output: 'occultism:stable_wormhole',
+            output: Item.of('occultism:stable_wormhole', {}),
             inputs: ['rftoolsbase:dimensionalshard', 'rftoolsbase:dimensionalshard', 'rftoolsbase:dimensionalshard'],
             reagents: ['occultism:wormhole_frame'],
             sourceCost: 2000,
