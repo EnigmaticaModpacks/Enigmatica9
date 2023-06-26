@@ -10,6 +10,7 @@ ServerEvents.recipes((event) => {
 
         { mod: 'gateways' },
         { mod: 'theoneprobe' },
+        { mod: 'densetrees' },
 
         { output: /pendorite/ },
         { output: /emeraldite/ },
@@ -31,6 +32,9 @@ ServerEvents.recipes((event) => {
         { input: /mekanism.*fluorite_ore/ },
         { input: /rftoolsbase:dimensionalshard_/ },
 
+        { id: 'ae2:misc/vanilla_daylight_detector' },
+        { id: 'ae2:misc/vanilla_comparator' },
+
         { id: 'ars_elemental:blaze_crush' },
         { id: 'ars_elemental:bone_crush' },
 
@@ -38,6 +42,7 @@ ServerEvents.recipes((event) => {
 
         { id: 'byg:dye_from_warped_cactus' },
         { id: 'byg:dye_from_oddity_cactus' },
+        { id: 'byg:byg_chest' },
 
         { id: 'create:compat/ae2/mixing/fluix_crystal' },
         { id: 'create:compat/byg/crushing/lignite_ore' },
@@ -210,6 +215,8 @@ ServerEvents.recipes((event) => {
         { type: 'quark:feeding_trough' },
 
         { type: 'starbunclemania:fluid_sourcelink' },
+
+        { type: 'the_bumblezone:sticky_honey_residue/from_smelting_glistering_honey_crystal' },
 
         { type: 'thermal:lapidary_fuel' },
         { type: 'thermal:sawmill' },

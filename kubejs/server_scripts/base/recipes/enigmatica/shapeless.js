@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: Item.of('minecraft:magenta_dye', 4),
-            inputs: ['#forge:dyes/blue', '#forge:dyes/red', '#forge:dyes/pink'],
+            inputs: ['#forge:dyes/blue', '#forge:dyes/red', '#forge:dyes/white'],
             id: `${id_prefix}magenta_dye_from_blue_red_white`
         },
         {
