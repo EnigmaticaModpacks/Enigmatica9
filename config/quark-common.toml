@@ -242,7 +242,7 @@
 	"Metal Buttons" = true
 	Gravisand = true
 	"Pistons Move Tile Entities" = false
-	"Feeding Trough" = true
+	"Feeding Trough" = false
 	"Redstone Randomizer" = true
 
 	[automation.dispensers_place_blocks]
@@ -913,6 +913,7 @@
 	"Slabs To Blocks" = true
 	"Renewable Spore Blossoms" = true
 	"Slimes To Magma Cubes" = true
+	"Sponges Better" = true
 	"Glass Shard" = false
 	"Campfires Boost Elytra" = true
 	"More Banner Layers" = true
@@ -935,7 +936,6 @@
 	"Gold Tools Have Fortune" = true
 	"Horses Swim" = true
 	"Better Elytra Rocket" = true
-	"Sponges Better" = true
 
 	[tweaks.sign_editing]
 		"Requires Empty Hand" = false
@@ -975,9 +975,9 @@
 
 	[tweaks.utility_recipes]
 		#Can two Logs be used to craft 16 sticks?
-		"Easy Sticks" = true
+		"Easy Sticks" = false
 		#Can you craft four chests at once using logs?
-		"Logs To Chests" = true
+		"Logs To Chests" = false
 		#Can other stone-like materials be used for crafting stone tools?
 		"Better Stone Tool Crafting" = true
 		#Can a dispenser be crafted by adding a bow to a dropper?
@@ -985,11 +985,11 @@
 		#Can any wool color be dyed?
 		"Dye Any Wool" = true
 		#Can Coral be crafted into dye?
-		"Coral To Dye" = true
+		"Coral To Dye" = false
 		#Can Charcoal be crafted into Black Dye?
-		"Charcoal To Black Dye" = true
+		"Charcoal To Black Dye" = false
 		#Can raw ore blocks be smelted, taking 9x the time a normal item?
-		"Smelt Raw Ore Blocks" = true
+		"Smelt Raw Ore Blocks" = false
 		#Can torches can be used as fuel in furnaces?
 		"Torches Burn" = true
 		#Can two Logs be used instead of a Chest to make a Hopper?
@@ -1059,6 +1059,14 @@
 			B = 1.0
 			G = 1.0
 
+	[tweaks.sponges_better]
+		#The maximum number of water tiles that a sponge can 'crawl along' for draining. Vanilla default is 6.
+		#Allowed values: [6,)
+		"Maximum Crawl Distance" = 10
+		#The maximum number of water tiles that a sponge can soak up. Vanilla default is 64.
+		#Allowed values: [64,)
+		"Maximum Water Drain" = 256
+
 	[tweaks.renewable_spore_blossoms]
 		"Bone Meal Chance" = 0.2
 
@@ -1117,14 +1125,6 @@
 	[tweaks.campfires_boost_elytra]
 		"Boost Strength" = 0.5
 		"Max Speed" = 1.0
-
-	[tweaks.sponges_better]
-		#The maximum number of water tiles that a sponge can soak up. Vanilla default is 64.
-		#Allowed values: [64,)
-		"Maximum Water Drain" = 256
-		#The maximum number of water tiles that a sponge can 'crawl along' for draining. Vanilla default is 6.
-		#Allowed values: [6,)
-		"Maximum Crawl Distance" = 10
 
 [client]
 	"Greener Grass" = true
@@ -1375,6 +1375,8 @@
 		#Makes Iron Golems not drop Iron Ingots
 		"Disable Iron Farms" = true
 		"Non Griefing Entities" = ["minecraft:creeper", "minecraft:enderman"]
+		#Makes falling blocks not able to be duped via dimension crossing
+		"Disable Falling Block Dupe" = true
 		#Makes Sheep not drop Wool when killed
 		"Disable Wool Drops" = true
 		#Disables mob griefing for only specific entities
@@ -1384,12 +1386,10 @@
 		"Disable Ice Roads" = true
 		#Force Elytra to only work in specific dimensions
 		"Enable Dimension Locked Elytra" = false
-		#Resets all villager discounts when zombified to prevent reducing prices to ridiculous levels
-		"Nerf Villager Discount" = true
-		#Makes falling blocks not able to be duped via dimension crossing
-		"Disable Falling Block Dupe" = true
 		#Fixes several piston physics exploits, most notably including TNT duping
 		"Disable Piston Physics Exploits" = true
+		#Resets all villager discounts when zombified to prevent reducing prices to ridiculous levels
+		"Nerf Villager Discount" = true
 
 	[experimental.adjustable_chat]
 		"Horizontal Shift" = 0
@@ -1471,6 +1471,8 @@
 		"Cloud Level Bottom" = 191
 
 	[tools.ancient_tomes]
+		#Whether a sanity check is performed on the valid enchantments. If this is turned off, enchantments such as Silk Touch will be allowed to generate Ancient Tomes, if explicitly added to the Valid Enchantments.
+		"Sanity Check" = true
 		#When enabled, Efficiency VI Diamond and Netherite pickaxes can instamine Deepslate when under Haste 2
 		"Deepslate Tweak" = true
 		"Deepslate Tweak Needs Haste2" = true
@@ -1487,8 +1489,6 @@
 		#Applying a tome will also randomly curse your item
 		"Curse Gear" = false
 		"Overleveled Books Glow Rainbow" = true
-		#Whether a sanity check is performed on the valid enchantments. If this is turned off, enchantments such as Silk Touch will be allowed to generate Ancient Tomes, if explicitly added to the Valid Enchantments.
-		"Sanity Check" = true
 
 	[tools.torch_arrow]
 		"Extinguish On Miss" = false
@@ -1531,10 +1531,10 @@
 		"Item Quality" = 0
 		"Apply Cost" = 5
 		"Nether Fortress Weight" = 8
-		#Whether you can blend runes of each of the 'primary' colors plus white to create rainbow runes.
-		"Rainbow Rune Craftable" = true
 		#Whether you can blend runes of the 'primary' colors to create other colors of rune.
 		"Color Blending Runes" = true
+		#Whether you can blend runes of each of the 'primary' colors plus white to create rainbow runes.
+		"Rainbow Rune Craftable" = true
 
 	[tools.abacus]
 
@@ -1555,60 +1555,60 @@
 			"Max Hardness" = 20.0
 			#Pickarang harvest level. 2 is Iron, 3 is Diamond, 4 is Netherite.
 			"Harvest Level" = 3
+			#Whether this pickarang type can act as a shovel.
+			"Can Act As Shovel" = true
 			#How long it takes before the Pickarang starts returning to the player if it doesn't hit anything.
 			Timeout = 40
 			#How many ticks do you have to wait between using the pickarang again
 			Cooldown = 10
+			#Whether this pickarang type can act as a hoe.
+			"Can Act As Hoe" = true
+			#Whether this pickarang type can act as an axe.
+			"Can Act As Axe" = true
 			#Pickarang durability. Set to -1 to have the Pickarang be unbreakable.
 			Durability = 2000
 			#How much damage the Pickarang deals when swung as an item
 			"Attack Damage" = 2
-			#Whether this pickarang type can act as a hoe.
-			"Can Act As Hoe" = true
-			#Whether this pickarang type can act as a shovel.
-			"Can Act As Shovel" = true
-			#Whether this pickarang type can act as an axe.
-			"Can Act As Axe" = true
 
 		[tools.pickarang.pickarang]
 			#Pickarang max hardness breakable. 22.5 is ender chests, 25.0 is monster boxes, 50 is obsidian. Most things are below 5.
 			"Max Hardness" = 20.0
 			#Pickarang harvest level. 2 is Iron, 3 is Diamond, 4 is Netherite.
 			"Harvest Level" = 3
+			#Whether this pickarang type can act as a shovel.
+			"Can Act As Shovel" = true
 			#How long it takes before the Pickarang starts returning to the player if it doesn't hit anything.
 			Timeout = 20
 			#How many ticks do you have to wait between using the pickarang again
 			Cooldown = 10
+			#Whether this pickarang type can act as a hoe.
+			"Can Act As Hoe" = false
+			#Whether this pickarang type can act as an axe.
+			"Can Act As Axe" = true
 			#Pickarang durability. Set to -1 to have the Pickarang be unbreakable.
 			Durability = 800
 			#How much damage the Pickarang deals when swung as an item
 			"Attack Damage" = 2
-			#Whether this pickarang type can act as a hoe.
-			"Can Act As Hoe" = false
-			#Whether this pickarang type can act as a shovel.
-			"Can Act As Shovel" = true
-			#Whether this pickarang type can act as an axe.
-			"Can Act As Axe" = true
 
 		[tools.pickarang.flamerang]
 			#Pickarang max hardness breakable. 22.5 is ender chests, 25.0 is monster boxes, 50 is obsidian. Most things are below 5.
 			"Max Hardness" = 20.0
 			#Pickarang harvest level. 2 is Iron, 3 is Diamond, 4 is Netherite.
 			"Harvest Level" = 4
+			#Whether this pickarang type can act as a shovel.
+			"Can Act As Shovel" = true
 			#How long it takes before the Pickarang starts returning to the player if it doesn't hit anything.
 			Timeout = 20
 			#How many ticks do you have to wait between using the pickarang again
 			Cooldown = 10
+			#Whether this pickarang type can act as a hoe.
+			"Can Act As Hoe" = false
+			#Whether this pickarang type can act as an axe.
+			"Can Act As Axe" = true
 			#Pickarang durability. Set to -1 to have the Pickarang be unbreakable.
 			Durability = 1040
 			#How much damage the Pickarang deals when swung as an item
 			"Attack Damage" = 3
-			#Whether this pickarang type can act as a hoe.
-			"Can Act As Hoe" = false
-			#Whether this pickarang type can act as a shovel.
-			"Can Act As Shovel" = true
-			#Whether this pickarang type can act as an axe.
-			"Can Act As Axe" = true
 
 [building]
 	"Variant Furnaces" = true

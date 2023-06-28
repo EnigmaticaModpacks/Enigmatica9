@@ -18,6 +18,8 @@
 	fieldCreatorRange = 24
 	#Blocks that are exept from being fertilized by the plant boost effect. Each entry needs to be formatted as modid:block, and entries follow standard TOML array formatting (https://toml.io/en/v1.0.0#array).
 	plantBoostExceptions = []
+	#The maximum amount of blocks that aura can spread from an initial position before it starts fizzling out. It's recommended to lower this value on a large server to avoid lag caused by players chunk-loading their bases for extended amounts of time without an Aura Detector present.
+	maxAuraSpreadRange = 150
 
 [features]
 	#If the Aura Imbalance effect of ores spawning in the area if Aura levels are too high should occur

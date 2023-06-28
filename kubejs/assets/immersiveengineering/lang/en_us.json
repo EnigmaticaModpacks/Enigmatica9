@@ -30,5 +30,6 @@
 	"item.immersiveengineering.circuit_board": "Circuit Backplane",
 	"block.immersiveengineering.rs_engineering": "Redstone Engineering Block",
 	"block.immersiveengineering.light_engineering": "Light Engineering Block",
-	"block.immersiveengineering.heavy_engineering": "Heavy Engineering Block"
+	"block.immersiveengineering.heavy_engineering": "Heavy Engineering Block",
+	"item.immersiveengineering.sawblade": "Sawblade"
 }

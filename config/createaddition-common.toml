@@ -20,12 +20,12 @@
 # as the config isnt synced between Clients and Server.
 #General Settings
 [general]
-	#Forge Energy conversion rate (in FE/t at 256 RPM).
-	#Range: > 0
-	fe_conversion = 960
 	#Max stress for the Alternator and Electric Motor (in SU at 256 RPM).
-	#Range: 0 ~ 16383
-	baseline_stress = 16000
+	#Range: > 0
+	max_stress = 16384
+	#Forge Energy conversion rate (in FE/t at 256 RPM, value is the FE/t generated and consumed is at 256rpm).
+	#Range: > 0
+	fe_at_max_rpm = 480
 
 #Portable Energy Interface
 [portable_energy_interface]
@@ -131,4 +131,7 @@
 	#Diamond Grit Sandpaper durability (number of uses).
 	#Range: > 3
 	diamond_grit_sandpaper_uses = 1024
+	#Barbed Wire Damage.
+	#Range: 0.0 ~ 3.4028234663852886E38
+	barbed_wire_damage = 2.0
 
