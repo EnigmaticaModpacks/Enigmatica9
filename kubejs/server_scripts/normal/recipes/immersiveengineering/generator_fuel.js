@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
     const dieselGen_output = 16384; // get from immersiveengineering-server.toml
     const recipes = [];
 
-    fuelProperties.forEach((prop) => {
+    fuelProperties.normal.forEach((prop) => {
         recipes.push({
             fluidTag: prop.fuel,
             burnTime: Math.floor(prop.energy / dieselGen_output),
