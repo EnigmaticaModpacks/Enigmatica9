@@ -1,8 +1,12 @@
 ### Enigmatica 9 v1.8.0
 
+🚀 Forge-1.19.2-43.2.13 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.8.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.8.0.md)
+
 ### 🎁 New Mods Added
 
-### Removed Mods
+-   [Client Tweaks](https://www.curseforge.com/minecraft/mc-mods/client-tweaks) (by [BlayTheNinth](https://www.curseforge.com/members/BlayTheNinth/projects))
+-   [Create: Steam 'n' Rails](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails) (by [mattentosh](https://www.curseforge.com/members/mattentosh/projects))
+-   [Trofers](https://www.curseforge.com/minecraft/mc-mods/trofers) (by [ochotonida](https://www.curseforge.com/members/ochotonida/projects))
 
 ### 🌟 Improvements
 
