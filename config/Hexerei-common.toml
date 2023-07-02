@@ -46,5 +46,5 @@
 
 ["Sage Bundle Durability"]
 	#time (in ticks) for the sage bundle to burn out (default 3600 - 1 hour)
-	sage_bundle_durability = 86400
+	sage_bundle_durability = 36000
 
