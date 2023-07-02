@@ -1,0 +1,88 @@
+
+["Herb Jar Settings"]
+	#Disabling allows jars to hold any item
+	jars_only_hold_herbs = false
+
+["Sage Burning Plate Settings"]
+	#Range of the Sage Burning Plate, setting to 0 will disable completely
+	spawn_disable_range = 128
+
+["Broom Brush Durability"]
+	#broom brush durability
+	broom_brush_durability = 500
+
+["Broom Netherite Tip Durability"]
+	#Broom Netherite Tip Durability
+	broom_netherite_tip_durability = 1000
+
+["Broom Waterproof Tip Durability"]
+	#Broom Waterproof Tip Durability
+	broom_waterproof_tip_durability = 4000
+
+["Crow Pickpocket Cooldown"]
+	#time (in ticks) for crow being able to pickpocket again (base 1 minute 30 seconds)
+	crow_pickpocket_cooldown = 1800
+
+["Coffer Item Blacklist"]
+	#blacklists items from being placed inside of coffers
+	coffer_blacklist = [
+		"minecraft:shulker_box",
+		"minecraft:white_shulker_box",
+		"minecraft:orange_shulker_box",
+		"minecraft:magenta_shulker_box",
+		"minecraft:light_blue_shulker_box",
+		"minecraft:yellow_shulker_box",
+		"minecraft:lime_shulker_box",
+		"minecraft:pink_shulker_box",
+		"minecraft:gray_shulker_box",
+		"minecraft:light_gray_shulker_box",
+		"minecraft:cyan_shulker_box",
+		"minecraft:purple_shulker_box",
+		"minecraft:blue_shulker_box",
+		"minecraft:brown_shulker_box",
+		"minecraft:green_shulker_box",
+		"minecraft:red_shulker_box",
+		"minecraft:black_shulker_box",
+		"hexerei:coffer",
+		"sophisticatedstorage:shulker_box",
+		"sophisticatedbackpacks:backpack",
+		"immersiveengineering:toolbox",
+		"create:white_toolbox",	
+		"create:orange_toolbox",
+		"create:magenta_toolbox",
+		"create:light_blue_toolbox",
+		"create:yellow_toolbox",
+		"create:lime_toolbox",
+		"create:pink_toolbox",
+		"create:gray_toolbox",
+		"create:light_gray_toolbox",
+		"create:cyan_toolbox",
+		"create:purple_toolbox",
+		"create:blue_toolbox",
+		"create:brown_toolbox",
+		"create:green_toolbox",
+		"create:red_toolbox",	
+		"create:black_toolbox"
+	]
+
+["Biome Generation"]
+	#rarity of the willow swamp biome, 0 to disable
+	#Range: > 0
+	willow_swamp_rarity = 2
+
+["Herb Enhanced Brush Durability"]
+	#Herb Enhanced brush durability
+	herb_enhanced_brush_durability = 1000
+
+["Moon Dust Brush Durability"]
+	#Moon Dust brush durability
+	moon_dust_brush_durability = 1000
+
+["Thruster Brush Durability"]
+	#thruster brush durability
+	thruster_brush_durability = 400
+
+["Sage Bundle Durability"]
+	#time (in ticks) for the sage bundle to burn out (default 3600 - 1 hour)
+	sage_bundle_durability = 36000
+
