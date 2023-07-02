@@ -244,15 +244,15 @@
 				hose_pulley = 4.0
 				mechanical_crafter = 2.0
 
-				shaft = 0.1
+				shaft = 0.0
 				andesite_encased_shaft = 0.0
 				brass_encased_shaft = 0.0
 
-				cogwheel = 0.1
+				cogwheel = 0.0
 				andesite_encased_cogwheel = 0.0
 				brass_encased_cogwheel = 0.0
 
-				large_cogwheel = 0.1
+				large_cogwheel = 0.0
 				andesite_encased_large_cogwheel = 0.0
 				brass_encased_large_cogwheel = 0.0
 
