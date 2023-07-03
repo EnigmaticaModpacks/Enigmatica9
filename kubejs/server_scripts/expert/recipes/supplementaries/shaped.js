@@ -15,11 +15,11 @@ ServerEvents.recipes((event) => {
             id: 'supplementaries:faucet'
         },
         {
-            output: 'supplementaries:brass_lantern',
+            output: '2x supplementaries:brass_lantern',
             pattern: ['A', 'B', 'A'],
             key: {
                 A: '#forge:ingots/gold',
-                B: 'minecraft:blaze_powder'
+                B: '#forge:dusts/glowstone'
             },
             id: 'supplementaries:brass_lantern'
         },

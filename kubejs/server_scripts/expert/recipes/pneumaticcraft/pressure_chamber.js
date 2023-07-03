@@ -595,9 +595,12 @@ ServerEvents.recipes((event) => {
                 { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_rebirth', count: 64 },
 
                 { type: 'pneumaticcraft:stacked_item', item: 'create:cinder_flour', count: 64 },
-                Item.of('spirit:soul_crystal', '{StoredEntity:{Souls:512,Type:"minecraft:wither_skeleton"}}')
-                    .weakNBT()
-                    .toJson(),
+
+                Item.of(
+                    'pneumaticcraft:spawner_core',
+                    '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:wither_skeleton":100}}'
+                ).weakNBT(),
+
                 { type: 'pneumaticcraft:stacked_item', item: 'create:cinder_flour', count: 64 },
 
                 { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_rebirth', count: 64 },

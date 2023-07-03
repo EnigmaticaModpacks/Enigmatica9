@@ -968,6 +968,24 @@ ServerEvents.recipes((event) => {
             liquidOutput: { fluid: 'minecraft:lava' },
             fluidLevelsConsumed: 1000,
             id: `${id_prefix}crystal_ball`
+        },
+        {
+            output: '12x supplementaries:soap',
+            inputs: [
+                '#forge:tallow',
+                '#forge:dusts/ash',
+                '#forge:dusts/ash',
+                '#forge:dusts/ash',
+                '#forge:tallow',
+                '#forge:dusts/ash',
+                '#forge:dusts/ash',
+                '#forge:dusts/ash'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 1000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}soap`
         }
     ];
 

@@ -129,10 +129,10 @@ ServerEvents.recipes((event) => {
                 'naturesaura:gold_leaf',
                 'naturesaura:gold_leaf',
                 'naturesaura:gold_leaf',
-                '#forge:gems/amethyst',
-                '#forge:gems/amethyst',
-                '#forge:gems/amethyst',
-                '#forge:gems/amethyst'
+                'ars_nouveau:blank_parchment',
+                'ars_nouveau:blank_parchment',
+                'ars_nouveau:blank_parchment',
+                'ars_nouveau:blank_parchment'
             ],
             ritual_dummy: 'kubejs:ritual_summon_bookwyrm',
             ritual_type: 'occultism:craft',
@@ -584,7 +584,7 @@ ServerEvents.recipes((event) => {
             activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'occultism:otherworld_bird',
-            ritual_type: 'occultism:familiar',
+            ritual_type: 'occultism:summon_tamed',
             ritual_dummy: 'occultism:ritual_dummy/familiar_otherworld_bird',
             inputs: [
                 'hexerei:mindful_trance_blend',
@@ -1296,7 +1296,7 @@ ServerEvents.recipes((event) => {
         These should always use the 'occultism:craft' ritual_type
         */
         {
-            output: Item.of('kubejs:aura_leaf', { aura_amount: 500000, aura_max: 1250000 }),
+            output: Item.of('kubejs:aura_leaf', { aura_amount: 1000000, aura_max: 2000000 }),
             activation_item: '#twilightforest:trophies',
             inputs: [
                 '#forge:ingots/ironwood',
@@ -1307,11 +1307,11 @@ ServerEvents.recipes((event) => {
             ritual_dummy: 'kubejs:aura_leaf',
             ritual_type: 'occultism:craft',
             pentacle_id: 'occultism:summon_familiar',
-            duration: 180,
+            duration: 20,
             id: `${id_prefix}ritual_aura_generation`
         },
         {
-            output: Item.of('kubejs:tree_of_life_1', { aura_amount: 100000, aura_max: 1000000 }),
+            output: Item.of('kubejs:tree_of_life_1', { aura_amount: 200000, aura_max: 2000000 }),
             activation_item: 'kubejs:shard_of_renewal',
             inputs: [
                 'naturesaura:calling_spirit',
@@ -1334,7 +1334,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_tree_of_life_1`
         },
         {
-            output: Item.of('kubejs:tree_of_life_2', { aura_amount: 200000, aura_max: 1000000 }),
+            output: Item.of('kubejs:tree_of_life_2', { aura_amount: 400000, aura_max: 2000000 }),
             activation_item: 'kubejs:shard_of_enduring',
             inputs: [
                 'kubejs:spirit_of_devotion',
@@ -1357,7 +1357,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_tree_of_life_2`
         },
         {
-            output: Item.of('kubejs:tree_of_life_3', { aura_amount: 500000, aura_max: 1500000 }),
+            output: Item.of('kubejs:tree_of_life_3', { aura_amount: 1000000, aura_max: 2000000 }),
             activation_item: 'kubejs:shard_of_rebirth',
             inputs: [
                 'naturesaura:birth_spirit',

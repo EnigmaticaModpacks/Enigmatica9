@@ -1215,9 +1215,6 @@
 				""
 				"Note that stress and rotational mechanics have been adjusted:"
 				""
-				"● Uncovered Shafts and Gears now "
-				"  contribute to stress"
-				""
 				"● Rotational speed is limited to 128 RPM"
 			]
 			id: "44B02A5817C4144A"

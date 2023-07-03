@@ -436,6 +436,15 @@ ServerEvents.recipes((event) => {
                 B: 'pneumaticcraft:pressure_tube'
             },
             id: `pneumaticcraft:cannon_barrel`
+        },
+        {
+            output: 'pneumaticcraft:air_grate_module',
+            pattern: [' A ', 'ABA', ' A '],
+            key: {
+                A: 'create:andesite_bars',
+                B: 'pneumaticcraft:pressure_tube'
+            },
+            id: `pneumaticcraft:air_grate_module`
         }
     ];
 

@@ -13,6 +13,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('minecraft:sugar_cane', 1, [1, 4]);
             pool.addItem('minecraft:flower_pot', 1, 1);
             pool.addItem('thermal:phytogro', 1, [1, 4]);
+            pool.addItem('minecraft:flint_and_steel', 1, 1);
         });
 
         table.addPool((pool) => {
