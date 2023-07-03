@@ -159,11 +159,6 @@
 			dependencies: ["10C86AC59F9FA412"]
 			description: ["With Aetherium secured, a special chamber must be crafted to contain the reaction; letting this loose could devastate the land for millennia to come…"]
 			id: "7674A0390C41044C"
-			rewards: [{
-				id: "72C203006923AE4D"
-				item: "mekanism:pellet_antimatter"
-				type: "item"
-			}]
 			tasks: [{
 				id: "2D0E28E7D7C3B594"
 				item: "mekanism:antiprotonic_nucleosynthesizer"
@@ -174,13 +169,12 @@
 		}
 		{
 			dependencies: ["7674A0390C41044C"]
-			description: ["This metal hums with potential and seems uniquely attuned to the shadow people known as Endermen. Undoubtedly, it will help anchor a teleportation ritual to wherever they call home. "]
+			description: [
+				"This metal hums with potential and seems uniquely attuned to the shadow people known as Endermen."
+				""
+				"Undoubtedly, it will help anchor a teleportation ritual to wherever they call home. "
+			]
 			id: "04B0F0BE6E54D620"
-			rewards: [{
-				id: "42B48AC04B05F4AE"
-				item: "emendatusenigmatica:brass_block"
-				type: "item"
-			}]
 			tasks: [{
 				id: "0D1ED0C7EDB28A00"
 				item: "emendatusenigmatica:brass_ingot"
