@@ -159,6 +159,14 @@
 			dependencies: ["10C86AC59F9FA412"]
 			description: ["With Aetherium secured, a special chamber must be crafted to contain the reaction; letting this loose could devastate the land for millennia to come…"]
 			id: "7674A0390C41044C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "1EE9E2B3957D2441"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "2D0E28E7D7C3B594"
 				item: "mekanism:antiprotonic_nucleosynthesizer"
@@ -175,6 +183,14 @@
 				"Undoubtedly, it will help anchor a teleportation ritual to wherever they call home. "
 			]
 			id: "04B0F0BE6E54D620"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "691C3737512BE3BF"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "0D1ED0C7EDB28A00"
 				item: "emendatusenigmatica:brass_ingot"
@@ -268,9 +284,12 @@
 			icon: "emendatusenigmatica:enderium_ingot"
 			id: "2C30585E7A2D5EB3"
 			rewards: [{
-				id: "06A195F62C8DF27B"
-				item: "emendatusenigmatica:enderium_block"
-				type: "item"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "44489DB5A4DA190A"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
 			}]
 			tasks: [
 				{
