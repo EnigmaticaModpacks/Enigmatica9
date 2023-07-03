@@ -7,7 +7,7 @@
   "hideWarningToast": true,
   "alwaysHideReportButton": false,
   "disableTelemetry": true,
-  "showReloadButton": true,
+  "showReloadButton": false,
   "whitelistAllServers": false,
   "verifiedIconEnabled": true,
   "showNCRButton": true,
