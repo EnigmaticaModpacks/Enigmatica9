@@ -9,7 +9,6 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('minecraft:ice', 250, 32);
             pool.addItem('minecraft:blue_ice', 250, 8);
             pool.addItem('powah:dry_ice', 100, 8);
-            pool.addItem('powah:dielectric_casing', 250, 4);
             pool.addItem('powah:charged_snowball', 100, 32);
         });
 
