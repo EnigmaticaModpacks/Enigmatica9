@@ -10,8 +10,8 @@ ServerEvents.recipes((event) => {
             itemInput: { ingredient: { item: 'minecraft:echo_shard' }, amount: 4 },
             gasInput: { gas: 'mekanism:hydrofluoric_acid', amount: 100 },
             fluidInput: { tag: 'forge:magicite', amount: 250 },
-            energyRequired: 10000,
-            duration: 1200,
+            energyRequired: 3995,
+            duration: 300,
             id: `${id_prefix}polonium`
         },
         {
@@ -35,7 +35,8 @@ ServerEvents.recipes((event) => {
             fluidInput: { amount: 1000, tag: 'forge:blighted_ichor' },
             gasInput: { amount: 100, gas: 'starbunclemania:source_gas' },
             itemInput: { ingredient: { item: 'mekanism:substrate' } },
-            duration: 100,
+            energyRequired: 3995,
+            duration: 300,
             id: `${id_prefix}nether_star`
         },
         {
@@ -43,7 +44,8 @@ ServerEvents.recipes((event) => {
             fluidInput: { amount: 250, tag: 'forge:ender' },
             gasInput: { amount: 50, gas: 'mekanism:oxygen' },
             itemInput: { ingredient: { tag: 'mekanism:alloys/reinforced' } },
-            duration: 100,
+            energyRequired: 1995,
+            duration: 300,
             id: `${id_prefix}enderium`
         }
     ];
