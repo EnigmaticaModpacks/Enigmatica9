@@ -20,5 +20,6 @@
 	"block.create.brass_bars": "Brass Bars",
 	"block.create.brass_scaffolding": "Brass Scaffolding",
 	"block.create.brass_door": "Brass Door",
-	"item.create.brass_hand": "Brass Hand"
+	"item.create.brass_hand": "Brass Hand",
+	"block.create.andesite_bars": "Andesite Bars"
 }
