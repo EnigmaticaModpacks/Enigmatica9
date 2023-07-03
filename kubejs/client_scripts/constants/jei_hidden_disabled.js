@@ -159,7 +159,9 @@ jei.base.items.hidden = [
 jei.base.fluids.hidden = [
     'thermal:latex',
     'thermal:creosote',
-    /thermal:.*_oil/,
+    'thermal:heavy_oil',
+    'thermal:light_oil',
+    'thermal:crude_oil',
     'thermal:refined_fuel',
     'immersiveengineering:plantoil',
     'immersiveengineering:ethanol',

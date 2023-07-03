@@ -90,6 +90,13 @@ const entries = {
     ],
     create: [
         {
+            key: 'block.create.andesite_bars',
+            value: {
+                normal: 'Andesite Bars',
+                expert: 'Compressed Stone Bars'
+            }
+        },
+        {
             key: 'block.create.andesite_belt_funnel',
             value: {
                 normal: 'Andesite Belt Funnel',
@@ -1258,6 +1265,15 @@ const entries = {
             value: {
                 normal: 'Found in a swamp biome.',
                 expert: 'Plant it to grow more!'
+            }
+        }
+    ],
+    manyideas_core: [
+        {
+            key: 'item.manyideas_core.plate_iron',
+            value: {
+                normal: `Iron Plate`,
+                expert: `Heavy Plate`
             }
         }
     ]

@@ -2,10 +2,23 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/ars_nouveau/enchantment/';
     const recipes = [
         {
+            enchantment: 'naturesaura:aura_mending',
+            level: 1,
+            pedestalItems: [
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { tag: 'forge:storage_blocks/infused_iron' } },
+                { item: { tag: 'forge:storage_blocks/infused_iron' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/source' } }
+            ]
+        },
+
+        {
             enchantment: 'apotheosis:chromatic',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { tag: 'forge:essences/manipulation' } },
                 { item: { tag: 'forge:wool/red' } },
                 { item: { tag: 'forge:wool/green' } },
                 { item: { tag: 'forge:wool/blue' } },
@@ -24,7 +37,7 @@ ServerEvents.recipes((event) => {
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -39,7 +52,7 @@ ServerEvents.recipes((event) => {
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -111,7 +124,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'apotheosis:natures_blessing',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { item: 'minecraft:bone_block' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -121,7 +134,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'apotheosis:natures_blessing',
             level: 2,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { item: 'minecraft:bone_block' } },
                 { item: { item: 'minecraft:bone_block' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
@@ -132,8 +145,8 @@ ServerEvents.recipes((event) => {
             enchantment: 'apotheosis:natures_blessing',
             level: 3,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:earth_essence' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { item: 'minecraft:bone_block' } },
                 { item: { item: 'minecraft:bone_block' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
@@ -144,8 +157,8 @@ ServerEvents.recipes((event) => {
             enchantment: 'apotheosis:natures_blessing',
             level: 4,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:earth_essence' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { item: 'minecraft:bone_block' } },
                 { item: { item: 'minecraft:bone_block' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
@@ -157,8 +170,8 @@ ServerEvents.recipes((event) => {
             enchantment: 'apotheosis:natures_blessing',
             level: 5,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:earth_essence' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { item: 'minecraft:bone_block' } },
                 { item: { item: 'minecraft:bone_block' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
@@ -296,14 +309,14 @@ ServerEvents.recipes((event) => {
             enchantment: 'apotheosis:stable_footing',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { item: 'ars_nouveau:earth_essence' } }
+                { item: { tag: 'forge:essences/earth' } }
             ]
         },
 
@@ -311,7 +324,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'apotheosis:shield_bash',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { item: 'minecraft:piston' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
@@ -320,8 +333,8 @@ ServerEvents.recipes((event) => {
             enchantment: 'apotheosis:shield_bash',
             level: 2,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:earth_essence' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { item: 'minecraft:piston' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -331,9 +344,9 @@ ServerEvents.recipes((event) => {
             enchantment: 'apotheosis:shield_bash',
             level: 3,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:earth_essence' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { item: 'minecraft:piston' } },
                 { item: { item: 'minecraft:piston' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
@@ -344,10 +357,10 @@ ServerEvents.recipes((event) => {
             enchantment: 'apotheosis:shield_bash',
             level: 4,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:earth_essence' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { item: 'minecraft:piston' } },
                 { item: { item: 'minecraft:piston' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
@@ -359,7 +372,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'apotheosis:tempting',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { item: 'minecraft:golden_carrot' } },
                 { item: { item: 'minecraft:golden_carrot' } },
                 { item: { item: 'minecraft:golden_carrot' } },
@@ -374,7 +387,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'travelanchors:range',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { item: 'minecraft:ender_pearl' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
@@ -383,7 +396,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'travelanchors:range',
             level: 2,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { item: 'minecraft:ender_pearl' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -393,8 +406,8 @@ ServerEvents.recipes((event) => {
             enchantment: 'travelanchors:range',
             level: 3,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { item: 'minecraft:ender_pearl' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -404,8 +417,8 @@ ServerEvents.recipes((event) => {
             enchantment: 'travelanchors:range',
             level: 4,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { item: 'minecraft:ender_pearl' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
@@ -416,9 +429,9 @@ ServerEvents.recipes((event) => {
             enchantment: 'travelanchors:range',
             level: 5,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { item: 'minecraft:ender_pearl' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
@@ -434,7 +447,7 @@ ServerEvents.recipes((event) => {
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { tag: 'forge:essences/manipulation' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -446,7 +459,7 @@ ServerEvents.recipes((event) => {
             level: 1,
             pedestalItems: [
                 { item: { tag: 'forge:storage_blocks/knightmetal' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
         },
@@ -455,8 +468,8 @@ ServerEvents.recipes((event) => {
             level: 2,
             pedestalItems: [
                 { item: { tag: 'forge:storage_blocks/knightmetal' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
@@ -466,9 +479,9 @@ ServerEvents.recipes((event) => {
             level: 3,
             pedestalItems: [
                 { item: { tag: 'forge:storage_blocks/knightmetal' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -479,7 +492,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'twilightforest:chill_aura',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { item: 'twilightforest:alpha_yeti_fur' } },
                 { item: { tag: 'forge:ices/blue' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -489,7 +502,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'twilightforest:chill_aura',
             level: 2,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { item: 'twilightforest:alpha_yeti_fur' } },
                 { item: { tag: 'forge:ices/blue' } },
                 { item: { tag: 'forge:ices/blue' } },
@@ -501,7 +514,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'twilightforest:chill_aura',
             level: 3,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { item: 'twilightforest:alpha_yeti_fur' } },
                 { item: { tag: 'forge:ices/blue' } },
                 { item: { tag: 'forge:ices/blue' } },
@@ -516,7 +529,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'twilightforest:fire_react',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:fire_essence' } },
+                { item: { tag: 'forge:essences/fire' } },
                 { item: { tag: 'forge:storage_blocks/fiery' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
@@ -525,8 +538,8 @@ ServerEvents.recipes((event) => {
             enchantment: 'twilightforest:fire_react',
             level: 2,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:fire_essence' } },
-                { item: { item: 'ars_nouveau:fire_essence' } },
+                { item: { tag: 'forge:essences/fire' } },
+                { item: { tag: 'forge:essences/fire' } },
                 { item: { tag: 'forge:storage_blocks/fiery' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -536,9 +549,9 @@ ServerEvents.recipes((event) => {
             enchantment: 'twilightforest:fire_react',
             level: 3,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:fire_essence' } },
-                { item: { item: 'ars_nouveau:fire_essence' } },
-                { item: { item: 'ars_nouveau:fire_essence' } },
+                { item: { tag: 'forge:essences/fire' } },
+                { item: { tag: 'forge:essences/fire' } },
+                { item: { tag: 'forge:essences/fire' } },
                 { item: { tag: 'forge:storage_blocks/fiery' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
@@ -550,7 +563,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'the_bumblezone:neurotoxins',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { item: 'the_bumblezone:bee_stinger' } },
                 { item: { item: 'minecraft:soul_sand' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -560,8 +573,8 @@ ServerEvents.recipes((event) => {
             enchantment: 'the_bumblezone:neurotoxins',
             level: 2,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:earth_essence' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { item: 'the_bumblezone:bee_stinger' } },
                 { item: { item: 'the_bumblezone:bee_stinger' } },
                 { item: { item: 'minecraft:soul_sand' } },
@@ -608,7 +621,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'the_bumblezone:comb_cutter',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { item: 'the_bumblezone:honey_crystal_shards' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
@@ -671,8 +684,8 @@ ServerEvents.recipes((event) => {
             level: 1,
             pedestalItems: [
                 { item: { item: 'minecraft:firework_star' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:water_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/water' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
         },
@@ -681,9 +694,9 @@ ServerEvents.recipes((event) => {
             level: 2,
             pedestalItems: [
                 { item: { item: 'minecraft:firework_star' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:water_essence' } },
-                { item: { item: 'ars_nouveau:water_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/water' } },
+                { item: { tag: 'forge:essences/water' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
@@ -693,10 +706,10 @@ ServerEvents.recipes((event) => {
             level: 3,
             pedestalItems: [
                 { item: { item: 'minecraft:firework_star' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:water_essence' } },
-                { item: { item: 'ars_nouveau:water_essence' } },
-                { item: { item: 'ars_nouveau:water_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/water' } },
+                { item: { tag: 'forge:essences/water' } },
+                { item: { tag: 'forge:essences/water' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -708,8 +721,8 @@ ServerEvents.recipes((event) => {
             level: 1,
             pedestalItems: [
                 { item: { item: 'minecraft:firework_star' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:fire_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/fire' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
         },
@@ -718,9 +731,9 @@ ServerEvents.recipes((event) => {
             level: 2,
             pedestalItems: [
                 { item: { item: 'minecraft:firework_star' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:fire_essence' } },
-                { item: { item: 'ars_nouveau:fire_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/fire' } },
+                { item: { tag: 'forge:essences/fire' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
@@ -730,10 +743,10 @@ ServerEvents.recipes((event) => {
             level: 3,
             pedestalItems: [
                 { item: { item: 'minecraft:firework_star' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:fire_essence' } },
-                { item: { item: 'ars_nouveau:fire_essence' } },
-                { item: { item: 'ars_nouveau:fire_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/fire' } },
+                { item: { tag: 'forge:essences/fire' } },
+                { item: { tag: 'forge:essences/fire' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -746,7 +759,7 @@ ServerEvents.recipes((event) => {
             pedestalItems: [
                 { item: { item: 'minecraft:firework_star' } },
                 { item: { item: 'minecraft:chorus_fruit' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
         },
@@ -756,8 +769,8 @@ ServerEvents.recipes((event) => {
             pedestalItems: [
                 { item: { item: 'minecraft:firework_star' } },
                 { item: { item: 'minecraft:chorus_fruit' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
@@ -768,9 +781,9 @@ ServerEvents.recipes((event) => {
             pedestalItems: [
                 { item: { item: 'minecraft:firework_star' } },
                 { item: { item: 'minecraft:chorus_fruit' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -781,8 +794,8 @@ ServerEvents.recipes((event) => {
             enchantment: 'superiorshields:quickened',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
-                { item: { item: 'ars_nouveau:water_essence' } },
+                { item: { tag: 'forge:essences/abjuration' } },
+                { item: { tag: 'forge:essences/water' } },
                 { item: { tag: 'forge:storage_blocks/redstone' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
@@ -791,8 +804,8 @@ ServerEvents.recipes((event) => {
             enchantment: 'superiorshields:quickened',
             level: 2,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
-                { item: { item: 'ars_nouveau:water_essence' } },
+                { item: { tag: 'forge:essences/abjuration' } },
+                { item: { tag: 'forge:essences/water' } },
                 { item: { tag: 'forge:storage_blocks/redstone' } },
                 { item: { tag: 'forge:storage_blocks/redstone' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
@@ -803,8 +816,8 @@ ServerEvents.recipes((event) => {
             enchantment: 'superiorshields:quickened',
             level: 3,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
-                { item: { item: 'ars_nouveau:water_essence' } },
+                { item: { tag: 'forge:essences/abjuration' } },
+                { item: { tag: 'forge:essences/water' } },
                 { item: { tag: 'forge:storage_blocks/redstone' } },
                 { item: { tag: 'forge:storage_blocks/redstone' } },
                 { item: { tag: 'forge:storage_blocks/redstone' } },
@@ -818,7 +831,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'superiorshields:curing',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
+                { item: { tag: 'forge:essences/abjuration' } },
                 { item: { item: 'minecraft:milk_bucket' } },
                 { item: { tag: 'forge:storage_blocks/quartz' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
@@ -830,7 +843,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'superiorshields:amplify',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { tag: 'forge:essences/manipulation' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/diamond' } }
@@ -844,7 +857,7 @@ ServerEvents.recipes((event) => {
                 { item: { item: 'ars_nouveau:wilden_horn' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
-                { item: { item: 'ars_nouveau:fire_essence' } }
+                { item: { tag: 'forge:essences/fire' } }
             ]
         },
 
@@ -852,7 +865,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'superiorshields:capacity',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
+                { item: { tag: 'forge:essences/abjuration' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/diamond' } }
@@ -862,8 +875,8 @@ ServerEvents.recipes((event) => {
             enchantment: 'superiorshields:capacity',
             level: 2,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
+                { item: { tag: 'forge:essences/abjuration' } },
+                { item: { tag: 'forge:essences/abjuration' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/diamond' } },
@@ -874,9 +887,9 @@ ServerEvents.recipes((event) => {
             enchantment: 'superiorshields:capacity',
             level: 3,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
+                { item: { tag: 'forge:essences/abjuration' } },
+                { item: { tag: 'forge:essences/abjuration' } },
+                { item: { tag: 'forge:essences/abjuration' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/diamond' } },
@@ -890,7 +903,7 @@ ServerEvents.recipes((event) => {
             level: 1,
             pedestalItems: [
                 { item: { item: 'spirit:soul_powder_block' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
+                { item: { tag: 'forge:essences/conjuration' } },
                 { item: { item: 'minecraft:quartz_block' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
@@ -900,7 +913,7 @@ ServerEvents.recipes((event) => {
             level: 2,
             pedestalItems: [
                 { item: { item: 'spirit:soul_powder_block' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
+                { item: { tag: 'forge:essences/conjuration' } },
                 { item: { item: 'minecraft:quartz_block' } },
                 { item: { item: 'minecraft:quartz_block' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -911,7 +924,7 @@ ServerEvents.recipes((event) => {
             level: 3,
             pedestalItems: [
                 { item: { item: 'spirit:soul_powder_block' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
+                { item: { tag: 'forge:essences/conjuration' } },
                 { item: { item: 'minecraft:quartz_block' } },
                 { item: { item: 'minecraft:quartz_block' } },
                 { item: { item: 'minecraft:quartz_block' } },
@@ -923,7 +936,7 @@ ServerEvents.recipes((event) => {
             level: 4,
             pedestalItems: [
                 { item: { item: 'spirit:soul_powder_block' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
+                { item: { tag: 'forge:essences/conjuration' } },
                 { item: { item: 'minecraft:quartz_block' } },
                 { item: { item: 'minecraft:quartz_block' } },
                 { item: { item: 'minecraft:quartz_block' } },
@@ -936,7 +949,7 @@ ServerEvents.recipes((event) => {
             level: 5,
             pedestalItems: [
                 { item: { item: 'spirit:soul_powder_block' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
+                { item: { tag: 'forge:essences/conjuration' } },
                 { item: { item: 'minecraft:quartz_block' } },
                 { item: { item: 'minecraft:quartz_block' } },
                 { item: { item: 'minecraft:quartz_block' } },
@@ -961,7 +974,7 @@ ServerEvents.recipes((event) => {
             level: 2,
             pedestalItems: [
                 { item: { item: 'ars_nouveau:wilden_spike' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/diamond' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -973,7 +986,7 @@ ServerEvents.recipes((event) => {
             pedestalItems: [
                 { item: { item: 'ars_nouveau:wilden_spike' } },
                 { item: { item: 'ars_nouveau:wilden_spike' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/diamond' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -985,8 +998,8 @@ ServerEvents.recipes((event) => {
             pedestalItems: [
                 { item: { item: 'ars_nouveau:wilden_spike' } },
                 { item: { item: 'ars_nouveau:wilden_spike' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/diamond' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -999,8 +1012,8 @@ ServerEvents.recipes((event) => {
                 { item: { item: 'ars_nouveau:wilden_spike' } },
                 { item: { item: 'ars_nouveau:wilden_spike' } },
                 { item: { item: 'ars_nouveau:wilden_spike' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
-                { item: { item: 'ars_nouveau:earth_essence' } },
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { tag: 'forge:essences/earth' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/diamond' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -1011,7 +1024,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'parry:rebound',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { item: 'minecraft:piston' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
             ]
@@ -1020,8 +1033,8 @@ ServerEvents.recipes((event) => {
             enchantment: 'parry:rebound',
             level: 2,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { item: 'minecraft:piston' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -1031,9 +1044,9 @@ ServerEvents.recipes((event) => {
             enchantment: 'parry:rebound',
             level: 3,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { item: 'minecraft:piston' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -1043,10 +1056,10 @@ ServerEvents.recipes((event) => {
             enchantment: 'parry:rebound',
             level: 4,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { item: 'minecraft:piston' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -1056,11 +1069,11 @@ ServerEvents.recipes((event) => {
             enchantment: 'parry:rebound',
             level: 5,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { item: 'minecraft:piston' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } }
@@ -1071,10 +1084,10 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:piercing',
             level: 4,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/manipulation' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/lapis' } },
@@ -1085,10 +1098,10 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:piercing',
             level: 5,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/manipulation' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/quartz' } },
@@ -1100,9 +1113,9 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:channeling',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:air_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/air' } },
                 { item: { item: 'minecraft:lightning_rod' } },
                 { item: { item: 'minecraft:lightning_rod' } },
                 { item: { item: 'minecraft:lightning_rod' } }
@@ -1113,8 +1126,8 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:riptide',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:water_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { tag: 'forge:essences/water' } },
+                { item: { tag: 'forge:essences/manipulation' } },
                 { item: { item: 'minecraft:prismarine_bricks' } },
                 { item: { item: 'minecraft:prismarine_bricks' } },
                 { item: { item: 'minecraft:prismarine_bricks' } }
@@ -1124,9 +1137,9 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:riptide',
             level: 2,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:water_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { tag: 'forge:essences/water' } },
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/manipulation' } },
                 { item: { item: 'minecraft:prismarine_bricks' } },
                 { item: { item: 'minecraft:prismarine_bricks' } },
                 { item: { item: 'minecraft:prismarine_bricks' } }
@@ -1136,10 +1149,10 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:riptide',
             level: 3,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:water_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { tag: 'forge:essences/water' } },
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/manipulation' } },
                 { item: { item: 'minecraft:prismarine_bricks' } },
                 { item: { item: 'minecraft:prismarine_bricks' } },
                 { item: { item: 'minecraft:prismarine_bricks' } }
@@ -1149,10 +1162,10 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:riptide',
             level: 4,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:water_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { tag: 'forge:essences/water' } },
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/manipulation' } },
                 { item: { item: 'minecraft:dark_prismarine' } },
                 { item: { item: 'minecraft:dark_prismarine' } },
                 { item: { item: 'minecraft:dark_prismarine' } }
@@ -1162,11 +1175,11 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:riptide',
             level: 5,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:water_essence' } },
-                { item: { item: 'ars_nouveau:water_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { tag: 'forge:essences/water' } },
+                { item: { tag: 'forge:essences/water' } },
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/manipulation' } },
                 { item: { item: 'minecraft:dark_prismarine' } },
                 { item: { item: 'minecraft:dark_prismarine' } },
                 { item: { item: 'minecraft:dark_prismarine' } }
@@ -1177,7 +1190,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:impaling',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:water_essence' } },
+                { item: { tag: 'forge:essences/water' } },
                 { item: { item: 'ars_nouveau:wilden_spike' } },
                 { item: { item: 'minecraft:prismarine_bricks' } },
                 { item: { item: 'minecraft:prismarine_bricks' } },
@@ -1188,7 +1201,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:impaling',
             level: 2,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:water_essence' } },
+                { item: { tag: 'forge:essences/water' } },
                 { item: { item: 'ars_nouveau:wilden_spike' } },
                 { item: { item: 'ars_nouveau:wilden_spike' } },
                 { item: { item: 'minecraft:prismarine_bricks' } },
@@ -1200,7 +1213,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:impaling',
             level: 3,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:water_essence' } },
+                { item: { tag: 'forge:essences/water' } },
                 { item: { item: 'ars_nouveau:wilden_spike' } },
                 { item: { item: 'ars_nouveau:wilden_spike' } },
                 { item: { item: 'ars_nouveau:wilden_spike' } },
@@ -1213,7 +1226,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:impaling',
             level: 4,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:water_essence' } },
+                { item: { tag: 'forge:essences/water' } },
                 { item: { item: 'ars_nouveau:wilden_spike' } },
                 { item: { item: 'ars_nouveau:wilden_spike' } },
                 { item: { item: 'ars_nouveau:wilden_spike' } },
@@ -1226,8 +1239,8 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:impaling',
             level: 5,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:water_essence' } },
-                { item: { item: 'ars_nouveau:water_essence' } },
+                { item: { tag: 'forge:essences/water' } },
+                { item: { tag: 'forge:essences/water' } },
                 { item: { item: 'ars_nouveau:wilden_spike' } },
                 { item: { item: 'ars_nouveau:wilden_spike' } },
                 { item: { item: 'ars_nouveau:wilden_spike' } },
@@ -1241,8 +1254,8 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:loyalty',
             level: 1,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/conjuration' } },
                 { item: { item: 'minecraft:prismarine_bricks' } },
                 { item: { item: 'minecraft:prismarine_bricks' } },
                 { item: { item: 'minecraft:prismarine_bricks' } }
@@ -1252,9 +1265,9 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:loyalty',
             level: 2,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/conjuration' } },
+                { item: { tag: 'forge:essences/conjuration' } },
                 { item: { item: 'minecraft:prismarine_bricks' } },
                 { item: { item: 'minecraft:prismarine_bricks' } },
                 { item: { item: 'minecraft:prismarine_bricks' } }
@@ -1264,10 +1277,10 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:loyalty',
             level: 3,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/conjuration' } },
+                { item: { tag: 'forge:essences/conjuration' } },
+                { item: { tag: 'forge:essences/conjuration' } },
                 { item: { item: 'minecraft:prismarine_bricks' } },
                 { item: { item: 'minecraft:prismarine_bricks' } },
                 { item: { item: 'minecraft:prismarine_bricks' } }
@@ -1277,10 +1290,10 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:loyalty',
             level: 4,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/conjuration' } },
+                { item: { tag: 'forge:essences/conjuration' } },
+                { item: { tag: 'forge:essences/conjuration' } },
                 { item: { item: 'minecraft:dark_prismarine' } },
                 { item: { item: 'minecraft:dark_prismarine' } },
                 { item: { item: 'minecraft:dark_prismarine' } }
@@ -1290,10 +1303,10 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:loyalty',
             level: 5,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:air_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
-                { item: { item: 'ars_nouveau:conjuration_essence' } },
+                { item: { tag: 'forge:essences/air' } },
+                { item: { tag: 'forge:essences/conjuration' } },
+                { item: { tag: 'forge:essences/conjuration' } },
+                { item: { tag: 'forge:essences/conjuration' } },
                 { item: { item: 'minecraft:dark_prismarine' } },
                 { item: { item: 'minecraft:dark_prismarine' } },
                 { item: { item: 'minecraft:dark_prismarine' } }
@@ -1304,7 +1317,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:unbreaking',
             level: 4,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
+                { item: { tag: 'forge:essences/abjuration' } },
                 { item: { tag: 'forge:gems/diamond' } },
                 { item: { tag: 'forge:gems/diamond' } },
                 { item: { tag: 'forge:gems/diamond' } },
@@ -1318,7 +1331,7 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:unbreaking',
             level: 5,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
+                { item: { tag: 'forge:essences/abjuration' } },
                 { item: { tag: 'forge:gems/diamond' } },
                 { item: { tag: 'forge:gems/diamond' } },
                 { item: { tag: 'forge:gems/diamond' } },
@@ -1333,9 +1346,9 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:sweeping',
             level: 4,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/manipulation' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/lapis' } },
@@ -1347,9 +1360,9 @@ ServerEvents.recipes((event) => {
             enchantment: 'minecraft:sweeping',
             level: 5,
             pedestalItems: [
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/manipulation' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/source' } },
                 { item: { tag: 'forge:storage_blocks/lapis' } },

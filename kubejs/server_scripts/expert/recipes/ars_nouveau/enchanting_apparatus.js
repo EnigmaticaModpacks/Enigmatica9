@@ -851,7 +851,7 @@ ServerEvents.recipes((event) => {
                 'spirit:soul_glass',
                 '#forge:gems/nitro'
             ],
-            reagents: ['occultism:soul_gem'],
+            reagents: ['spirit:soul_crystal'],
             sourceCost: 1000,
             id: `${id_prefix}spawner_core_shell`
         },

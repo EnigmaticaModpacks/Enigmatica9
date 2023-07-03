@@ -225,6 +225,26 @@ ServerEvents.recipes((event) => {
             filter: { output: 'minecraft:book' },
             to_replace: 'minecraft:leather',
             replace_with: '#forge:leather'
+        },
+        {
+            filter: { output: /lantern/ },
+            to_replace: 'minecraft:iron_nugget',
+            replace_with: '#forge:nuggets/tin'
+        },
+        {
+            filter: { output: /lantern/ },
+            to_replace: 'minecraft:blaze_powder',
+            replace_with: '#forge:dusts/glowstone'
+        },
+        {
+            filter: { mod: 'manyideas_doors' },
+            to_replace: '#forge:ingots/iron',
+            replace_with: '#forge:ingots/bronze'
+        },
+        {
+            filter: { output: /hanging_sign/ },
+            to_replace: 'minecraft:iron_nugget',
+            replace_with: '#forge:nuggets/copper'
         }
     ];
 

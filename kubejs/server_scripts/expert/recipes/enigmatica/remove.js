@@ -50,6 +50,7 @@ ServerEvents.recipes((event) => {
         { type: 'occultism:crushing' },
         { type: 'occultism:miner' },
         { type: 'thermal:smelter_recycle' },
+        { type: 'thermal:smelter_catalyst' },
 
         { id: /ae2:inscriber/ },
         { id: 'ae2:network/blocks/crystal_processing_charger' },
@@ -266,6 +267,7 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:nucleosynthesizing/redstone_block' },
         { id: 'mekanism:metallurgic_infusing/alloy/infused' },
         { id: 'mekanism:processing/iron/enriched' },
+        { id: 'mekanism:processing/lategame/plutonium_pellet/from_reaction' },
         { id: 'mekanism:logistical_sorter' },
         { id: 'mekanism:sps_casing' },
         { id: 'mekanism:laser' },
@@ -385,6 +387,9 @@ ServerEvents.recipes((event) => {
 
         { id: /pneumaticcraft:.*_compressor/ },
         { id: /pneumaticcraft:thermo_plant\/.*_drill_bit/ },
+        { id: 'pneumaticcraft:amadron/emerald_to_oil' },
+        { id: 'pneumaticcraft:amadron/emerald_to_lubricant' },
+        { id: 'pneumaticcraft:amadron/pcb_blueprint' },
         { id: 'pneumaticcraft:explosion_crafting/compressed_iron_ingot' },
         { id: 'pneumaticcraft:explosion_crafting/compressed_iron_block' },
         { id: 'pneumaticcraft:pressure_chamber/compressed_stone' },

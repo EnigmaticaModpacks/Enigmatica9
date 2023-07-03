@@ -47,12 +47,16 @@ ItemEvents.tooltip((event) => {
             text: [Text.of('Redstone Device: Detects Players').darkRed()]
         },
         {
+            items: ['quark:obsidian_pressure_plate'],
+            text: [Text.of('Redstone Device: Outputs a Configurable Signal Strength').darkRed()]
+        },
+        {
             items: ['quark:abacus'],
             text: [Text.of('Measuring Tool').gold()]
         },
         {
             items: ['quark:grate'],
-            text: [Text.of('Allows Items to Pass').gold()]
+            text: [Text.of('Allows Items to Fall Through').gold()]
         },
         {
             items: ['quark:trowel'],
@@ -439,7 +443,7 @@ ItemEvents.tooltip((event) => {
         },
         {
             items: ['kubejs:aura_leaf'],
-            text: [Text.of('Generate a quantity of Aura').gold()]
+            text: [Text.of('Generate a quantity of Aura at the ritual site').gold()]
         },
         {
             items: [

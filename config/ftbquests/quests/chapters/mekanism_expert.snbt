@@ -200,7 +200,7 @@
 				{
 					count: 122L
 					id: "2164A5647CB59BA2"
-					item: "mekanismgenerators:reactor_glass"
+					item: "mekanism:structural_glass"
 					type: "item"
 				}
 				{

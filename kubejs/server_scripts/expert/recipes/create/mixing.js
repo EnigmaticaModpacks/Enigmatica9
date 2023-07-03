@@ -63,9 +63,8 @@ ServerEvents.recipes((event) => {
                 { tag: 'forge:dusts/ash' },
                 { tag: 'forge:dusts/ash' },
                 { tag: 'forge:dusts/ash' },
-                { tag: 'forge:dusts/ash' },
                 { tag: 'forge:tallow' },
-                { amount: 1000, fluidTag: 'forge:water' }
+                { amount: 1000, fluid: 'minecraft:water' }
             ],
             heatRequirement: 'heated',
             id: `${id_prefix}soap`
