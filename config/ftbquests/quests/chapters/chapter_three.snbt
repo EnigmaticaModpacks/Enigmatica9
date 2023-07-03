@@ -225,6 +225,7 @@
 				{
 					id: "385F0F4E48C8AE87"
 					item: "kubejs:ritual_teleport_end"
+					optional_task: true
 					type: "item"
 				}
 			]
