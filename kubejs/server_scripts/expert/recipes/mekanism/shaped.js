@@ -261,7 +261,7 @@ ServerEvents.recipes((event) => {
                 C: 'mekanism:supercharged_coil',
                 D: 'ars_nouveau:arcane_core',
                 E: '#forge:gears/diamond',
-                F: '#forge:nether_stars'
+                F: '#forge:pellets/antimatter'
             },
             id: 'mekanism:antiprotonic_nucleosynthesizer'
         },
