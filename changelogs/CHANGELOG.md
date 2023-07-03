@@ -1,3 +1,15 @@
+### Enigmatica 9 v1.8.1
+
+🚀 Forge-1.19.2-43.2.13 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.8.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.8.1.md)
+
+### 🐛 Fixed Bugs
+
+-   Cannot connect to server on version 1.8.0 [\#451](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/451)
+-   Game keeps randomly crashing [\#450](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/450)
+-   Public Server button overlaps with NoChatReports Reload button in MP menu! [\#444](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/444)
+
+---
+
 ### Enigmatica 9 v1.8.0
 
 🚀 Forge-1.19.2-43.2.13 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.8.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.8.0.md)
