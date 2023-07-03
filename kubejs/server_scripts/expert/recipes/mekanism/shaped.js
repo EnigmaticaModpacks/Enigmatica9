@@ -171,7 +171,7 @@ ServerEvents.recipes((event) => {
                 A: '#forge:gears/steel',
                 B: '#forge:essences/earth',
                 C: 'pneumaticcraft:printed_circuit_board',
-                D: '#industrialforegoing:machine_frame/advanced',
+                D: '#industrialforegoing:machine_frame/simple',
                 E: 'mekanism:basic_chemical_tank',
                 F: 'thermal:fluid_cell_frame'
             },

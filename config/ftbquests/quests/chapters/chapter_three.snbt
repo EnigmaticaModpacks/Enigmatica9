@@ -10,7 +10,16 @@
 	quests: [
 		{
 			dependencies: ["714A42E9CE3C32EA"]
+			description: ["After some experimentation with the Echo Shards, it appears they may be further refined into a substance known as Pandemonium; the purest form of chaos with powerful creational capabilities. "]
 			id: "73B4078AB841567A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "73146FCB5DE34BD0"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "5534AEDEA476B323"
 				item: "mekanism:pellet_polonium"
@@ -22,7 +31,7 @@
 		{
 			dependencies: ["3037BC1A3EC6EFF2"]
 			description: [
-				"Though found in the wild, creating a local farm for Sculk is recommended. Whenever a mob dies near a Sculk Catalyst, it will cause the Catalyst to convert nearby Stone into Sculk. "
+				"Though found in the wild, creating a local farm for Sculk is recommended. Whenever a mob dies near a Sculk Catalyst, it will cause nearby Stone to be converted into Sculk. "
 				""
 				"================================="
 				""
@@ -31,13 +40,21 @@
 				"Devise a way to automate harvesting this material."
 			]
 			id: "5BAB85095E92AFD9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "240F67E11441400B"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "71E672DDBF4F35C1"
 				item: "minecraft:sculk"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -4.0d
+			x: 1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7633AE65F02DCD1A"]
@@ -50,15 +67,22 @@
 				""
 				"Travel to a Deep Dark biome far underground in the Overworld and make enough noise to force the Warden out of hiding. "
 			]
-			hide: true
 			id: "3037BC1A3EC6EFF2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "57FBA26D0579E2F4"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "719C40D73FB92E13"
 				item: "minecraft:sculk_catalyst"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -4.0d
+			x: -1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5BAB85095E92AFD9"]
@@ -68,19 +92,39 @@
 				"Normally exceptionally rare, the ancients of this place appear to have been harvesting it for unknown ends. "
 			]
 			id: "714A42E9CE3C32EA"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "435BC41E9248DDA9"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "318FFB5EA1AB4BCF"
 				item: "minecraft:echo_shard"
 				type: "item"
 			}]
 			x: 0.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["73B4078AB841567A"]
+			description: [
+				"Thought lost to time by many magical practitioners, the creation of Aetherium has remained a closely guarded secret by Witches due to it’s raw potential. It seems likely that its use was what eventually led this civilization to its downfall, but it’s hard to be certain. "
+				""
+				"It seems that it needs to be created once more, however, to fully restore the Tree of Life. "
+			]
 			icon: "mekanism:sps_casing"
 			id: "10C86AC59F9FA412"
-			min_width: 275
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "19B4DB02EEC8719A"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [
 				{
 					count: 60L
@@ -108,35 +152,50 @@
 				}
 			]
 			title: "Supercritical Phase Shifter"
-			x: -1.0d
+			x: -1.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["10C86AC59F9FA412"]
+			description: ["With Aetherium secured, a special chamber must be crafted to contain the reaction; letting this loose could devastate the land for millennia to come…"]
 			id: "7674A0390C41044C"
+			rewards: [{
+				id: "72C203006923AE4D"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2D0E28E7D7C3B594"
 				item: "mekanism:antiprotonic_nucleosynthesizer"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -1.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["7674A0390C41044C"]
+			description: ["This metal hums with potential and seems uniquely attuned to the shadow people known as Endermen. Undoubtedly, it will help anchor a teleportation ritual to wherever they call home. "]
 			id: "04B0F0BE6E54D620"
+			rewards: [{
+				id: "42B48AC04B05F4AE"
+				item: "emendatusenigmatica:brass_block"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0D1ED0C7EDB28A00"
 				item: "emendatusenigmatica:brass_ingot"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 1.5d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["0672B242C31F4A11"]
+			dependencies: [
+				"0672B242C31F4A11"
+				"04B0F0BE6E54D620"
+			]
 			description: [
-				""
+				"This metal hums with potential and seems uniquely attuned to the shadow people known as Endermen. Undoubtedly, it will help anchor a teleportation ritual to wherever they call home. "
 				""
 				"================================="
 				""
@@ -159,11 +218,18 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
+			x: 1.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["04B0F0BE6E54D620"]
+			description: [
+				"Death follows life, and life thrives on death. Such is the circle of all things."
+				""
+				"The Tree of Life is not exempt from this cycle either; an infusion of souls would likely do it wonders at this stage. "
+				""
+				"Nourish the Tree once more and prepare to travel to the home of the Endermen in search of the final reagents required to fully restore it."
+			]
 			hide_dependency_lines: true
 			icon: "kubejs:tree_of_life_3"
 			id: "0672B242C31F4A11"
@@ -195,14 +261,23 @@
 				}
 			]
 			title: "Tree of Life"
-			x: 1.0d
+			x: 1.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["0EBE44D4C30C0E51"]
-			description: ["Set up a Fluid Laser in the End using a Lens of Ender to obtain the Resonant Ender necessary to craft Enderium Ingots."]
+			description: [
+				"True dragons passed from our world ages ago. Finding one here in this realm is quite a surprise, though certainly welcome. The magic it bears will be vital in the final restoration of the Tree. "
+				""
+				"It seems a shame to cage such a majestic creature…"
+			]
 			icon: "emendatusenigmatica:enderium_ingot"
 			id: "2C30585E7A2D5EB3"
+			rewards: [{
+				id: "06A195F62C8DF27B"
+				item: "emendatusenigmatica:enderium_block"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "2314F1FE7822D002"
@@ -215,13 +290,15 @@
 					type: "item"
 				}
 			]
-			x: 0.5d
+			x: 0.0d
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"2C30585E7A2D5EB3"
-				"04B0F0BE6E54D620"
+			dependencies: ["2C30585E7A2D5EB3"]
+			description: [
+				"With the final Shard obtained, the Tree of Life will finally be restored to its full glory. "
+				""
+				"May its roots delve deep as its branches reach for the sun. "
 			]
 			hide_dependency_lines: true
 			icon: "kubejs:tree_of_life_4"
@@ -257,7 +334,9 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["3DD1F3E561B3D06A"]
+			dependencies: ["27AB2CF4AC1A051E"]
+			description: ["Reach deep to the vivifying waters..."]
+			hide: true
 			id: "522FAC34F1EC78A6"
 			rewards: [{
 				id: "177458D9F208E475"
@@ -278,10 +357,12 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 3.5d
+			y: 5.0d
 		}
 		{
-			dependencies: ["3DD1F3E561B3D06A"]
+			dependencies: ["27AB2CF4AC1A051E"]
+			description: ["Rock to dust, dust to loam..."]
+			hide: true
 			id: "7F47E4A0E4F840B0"
 			rewards: [{
 				id: "1E7213CB27EC8097"
@@ -302,10 +383,12 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 4.0d
+			y: 5.5d
 		}
 		{
-			dependencies: ["3DD1F3E561B3D06A"]
+			dependencies: ["27AB2CF4AC1A051E"]
+			description: ["Grow tall, stretch to the sun's kiss..."]
+			hide: true
 			id: "78FA52767FE8D732"
 			rewards: [{
 				id: "707B97D92EFFEEBA"
@@ -326,10 +409,12 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 4.0d
+			y: 5.5d
 		}
 		{
-			dependencies: ["3DD1F3E561B3D06A"]
+			dependencies: ["27AB2CF4AC1A051E"]
+			description: ["Lean into the wind's gentle embrace..."]
+			hide: true
 			id: "75A2DCF61048E5CE"
 			rewards: [{
 				id: "18DD56C12CED5345"
@@ -350,10 +435,11 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 3.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["606F79DAEB15E85B"]
+			description: ["With greater knowledge of spatial dimensions, the Afrit is capable of carving out an even greater internal volume for use by the spirits running this apparatus, allowing them to perform mor complex tasks. "]
 			id: "7633AE65F02DCD1A"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
@@ -369,7 +455,27 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3DD1F3E561B3D06A"]
+			description: [
+				"Congratulations on restoring the Tree of Life and completing Enigmatica 9 Expert!"
+				""
+				"Hoping for a little extra challenge? Look no further. Craft the four Elemental Hearts and obtain your trophies!"
+			]
+			hide: true
+			hide_dependency_lines: true
+			id: "27AB2CF4AC1A051E"
+			shape: "gear"
+			tasks: [{
+				id: "1052BA22E449570E"
+				item: "kubejs:primed_aetheric_heart"
+				type: "item"
+			}]
+			title: "Bragging Rights"
+			x: 0.0d
+			y: 4.5d
 		}
 	]
 	title: "Chapter Three"
