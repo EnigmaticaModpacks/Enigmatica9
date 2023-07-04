@@ -9,6 +9,7 @@
 ### 🐛 Fixed Bugs
 
 -   Fix Some Assembly Required sawing recipes [\#460](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/460) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Reduce spawn range for Spirit spawners [\#460](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/460) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
