@@ -158,7 +158,7 @@
 		{
 			dependencies: ["69D302194D4262C6"]
 			description: [
-				"Right-Click the Gold Leaves on any Log to transform it into the Wooden Stands required for the Ritual of the Forest. "
+				"Sneak Right-Click the Gold Leaves on any Log to transform it into the Wooden Stands required for the Ritual of the Forest. "
 				""
 				"Refer to the Book of Natural Aura for a visual representation of this structure and an explanation on its use. "
 			]
@@ -1266,6 +1266,8 @@
 				"With a bit of effort, simpler materials may be harvested from ore, however. Craft a Pestle and Mortar to begin grinding them and a Blast Furnace to smelt it down into a useful form. "
 				""
 				"The Pestle and Mortar is easily automated with just a hopper, no manual effort is required. "
+				""
+				"To begin, simple metals such as Copper may be worked into an ingot by crushing, blasting, crushing, and blasting one final time. Better methods will become available later. "
 			]
 			id: "438EA01F776992AD"
 			rewards: [

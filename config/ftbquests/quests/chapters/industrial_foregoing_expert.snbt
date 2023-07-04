@@ -352,12 +352,6 @@
 			hide_dependency_lines: true
 			icon: "minecraft:wheat"
 			id: "10C9F0F84BF69D0A"
-			rewards: [{
-				count: 8
-				id: "3E0930B1DC35B819"
-				item: "minecraft:wheat_seeds"
-				type: "item"
-			}]
 			shape: "hexagon"
 			tasks: [{
 				icon: "minecraft:wheat_seeds"
@@ -382,14 +376,6 @@
 			hide_dependency_lines: true
 			icon: "industrialforegoing:meat_feeder"
 			id: "3A4F484FD23B29BA"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
-				icon: "kubejs:rare_lootbox"
-				id: "3858A904658B1C03"
-				player_command: false
-				title: "Rare Industrial Foregoing Loot Box"
-				type: "command"
-			}]
 			shape: "hexagon"
 			tasks: [{
 				icon: "minecraft:raw_copper"

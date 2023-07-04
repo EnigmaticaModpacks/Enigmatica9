@@ -95,6 +95,18 @@ ServerEvents.recipes((event) => {
             output: '2x hexerei:mindful_trance_blend',
             grindingTime: 2 * 20,
             id: `hexerei:mindful_trance_blend_from_pestle_and_mortar`
+        },
+        {
+            inputs: [
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf'
+            ],
+            output: '15x naturesaura:gold_powder',
+            grindingTime: 1 * 20,
+            id: `${id_prefix}gold_powder`
         }
     ];
 
