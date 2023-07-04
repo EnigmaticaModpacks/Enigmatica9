@@ -213,20 +213,37 @@
 		}
 		{
 			dependencies: ["00B21E64DEFACB40"]
+			description: ["Capable of imparting a number of enchantments on items, this Enchanting Apparatus will no doubt be of enormous value in the endeavors to come. "]
+			icon: "ars_nouveau:enchanting_apparatus"
 			id: "31E4C2A162D7497C"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "4C9ACBB578AFC307"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "2D56C518D77625DD"
-				item: "ars_nouveau:enchanting_apparatus"
-				type: "item"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "4C9ACBB578AFC307"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					count: 3
+					id: "3EA016A20F0AE7FA"
+					item: "ars_nouveau:arcane_platform"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2D56C518D77625DD"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+				{
+					id: "0C24097F0058189C"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+			]
 			x: 2.5d
 			y: -0.5d
 		}
@@ -828,6 +845,7 @@
 		}
 		{
 			dependencies: ["60324503ED7AC4C1"]
+			description: ["Known to the ancients as mountain copper, this unique alloy is of particular use in advanced enchanting as an amplifier. "]
 			id: "00B21E64DEFACB40"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"

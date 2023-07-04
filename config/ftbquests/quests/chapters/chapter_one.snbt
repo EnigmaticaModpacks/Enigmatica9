@@ -270,20 +270,18 @@
 			id: "4830632A0E6E9651"
 			rewards: [
 				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-					icon: "kubejs:alchemists_delight"
-					id: "552050622E3679AC"
-					player_command: false
-					title: "Alchemist's Delight"
-					type: "command"
-				}
-				{
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 					icon: "kubejs:sorcerers_delight"
 					id: "6F2498DE79248A40"
 					player_command: false
 					title: "Sorcerer's Delight"
 					type: "command"
+				}
+				{
+					count: 3
+					id: "643EF395119756CD"
+					item: "ars_nouveau:arcane_platform"
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -1209,7 +1207,7 @@
 			description: [
 				"More finely crafted apparatus will need more delicately formed metals."
 				""
-				"These tough mechanical machines, the Mechanical Press and Rolling Mill are up to the task of properly pounding out plates or forming wires and rods, respectively. "
+				"These tough mechanical machines, the Mechanical Press and Rolling Mill, are up to the task of properly pounding out plates or forming wires and rods, respectively. "
 				""
 				"================================="
 				""
