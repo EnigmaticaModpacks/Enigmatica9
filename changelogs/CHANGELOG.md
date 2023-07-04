@@ -1,3 +1,17 @@
+### Enigmatica 9 v1.9.0
+
+🚀 Forge-1.19.2-43.2.13 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.8.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.8.0.md)
+
+### 🎁 New Mods Added
+
+### 🌟 Improvements
+
+### 🐛 Fixed Bugs
+
+-   Fix Some Assembly Required sawing recipes [\#460](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/460) ([MuteTiefling](https://github.com/MuteTiefling))
+
+---
+
 ### Enigmatica 9 v1.8.1
 
 🚀 Forge-1.19.2-43.2.13 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.8.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.8.1.md)
