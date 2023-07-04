@@ -29,6 +29,7 @@ ServerEvents.entityLootTables((event) => {
             pool.addItem('ars_nouveau:glyph_evaporate', 2);
             pool.addItem('ars_nouveau:glyph_fell', 2);
             pool.addItem('ars_nouveau:glyph_freeze', 2);
+            pool.addItem('ars_nouveau:glyph_grow', 2);
             pool.addItem('ars_nouveau:glyph_gust', 2);
             pool.addItem('ars_nouveau:glyph_harvest', 2);
             pool.addItem('ars_nouveau:glyph_ignite', 2);
