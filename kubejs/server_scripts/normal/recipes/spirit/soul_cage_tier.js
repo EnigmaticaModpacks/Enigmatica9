@@ -1,13 +1,13 @@
 ServerEvents.recipes((event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode == false) {
         return;
     }
 
-    const id_prefix = 'enigmatica:expert/spirit/soul_cage_tier/';
+    const id_prefix = 'enigmatica:normal/spirit/soul_cage_tier/';
     const recipes = [
         {
             displayName: 'spirit.soul_cage.tier_1',
-            requiredSouls: 8,
+            requiredSouls: 64,
             minSpawnDelay: 300,
             maxSpawnDelay: 1000,
             spawnCount: 3,
@@ -16,7 +16,7 @@ ServerEvents.recipes((event) => {
         },
         {
             displayName: 'spirit.soul_cage.tier_2',
-            requiredSouls: 32,
+            requiredSouls: 128,
             minSpawnDelay: 150,
             maxSpawnDelay: 600,
             spawnCount: 5,
@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
         },
         {
             displayName: 'spirit.soul_cage.tier_3',
-            requiredSouls: 128,
+            requiredSouls: 256,
             minSpawnDelay: 75,
             maxSpawnDelay: 400,
             spawnCount: 7,
