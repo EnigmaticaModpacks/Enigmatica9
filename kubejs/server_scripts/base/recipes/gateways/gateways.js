@@ -12,6 +12,18 @@ ServerEvents.highPriorityData((event) => {
                 {
                     type: 'stack',
                     stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                },
+                {
+                    type: 'loot_table',
+                    loot_table: 'enigmatica:apotheosis_gem_cache',
+                    rolls: 5,
+                    desc: 'Apotheosis Gems'
+                },
+                {
+                    type: 'loot_table',
+                    loot_table: 'enigmatica:loot_boxes/miners_delight',
+                    rolls: 1,
+                    desc: `Miner's Delight Gems`
                 }
             ],
             completion_xp: 250,
@@ -61,8 +73,8 @@ ServerEvents.highPriorityData((event) => {
                         { entity: 'minecraft:cave_spider' },
                         { entity: 'minecraft:cave_spider' },
                         { entity: 'minecraft:cave_spider' },
-                        { entity: 'minecraft:cave_spider' },
-                        { entity: 'minecraft:cave_spider' },
+                        { entity: 'twilightforest:slime_beetle' },
+                        { entity: 'twilightforest:slime_beetle' },
                         { entity: 'twilightforest:fire_beetle' },
                         { entity: 'twilightforest:fire_beetle' }
                     ],
