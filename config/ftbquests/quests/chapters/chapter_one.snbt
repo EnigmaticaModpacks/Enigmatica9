@@ -158,7 +158,7 @@
 		{
 			dependencies: ["69D302194D4262C6"]
 			description: [
-				"Right-Click the Gold Leaves on any Log to transform it into the Wooden Stands required for the Ritual of the Forest. "
+				"Sneak Right-Click the Gold Leaves on any Log to transform it into the Wooden Stands required for the Ritual of the Forest. "
 				""
 				"Refer to the Book of Natural Aura for a visual representation of this structure and an explanation on its use. "
 			]
@@ -270,20 +270,18 @@
 			id: "4830632A0E6E9651"
 			rewards: [
 				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-					icon: "kubejs:alchemists_delight"
-					id: "552050622E3679AC"
-					player_command: false
-					title: "Alchemist's Delight"
-					type: "command"
-				}
-				{
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 					icon: "kubejs:sorcerers_delight"
 					id: "6F2498DE79248A40"
 					player_command: false
 					title: "Sorcerer's Delight"
 					type: "command"
+				}
+				{
+					count: 3
+					id: "643EF395119756CD"
+					item: "ars_nouveau:arcane_platform"
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -1209,7 +1207,7 @@
 			description: [
 				"More finely crafted apparatus will need more delicately formed metals."
 				""
-				"These tough mechanical machines, the Mechanical Press and Rolling Mill are up to the task of properly pounding out plates or forming wires and rods, respectively. "
+				"These tough mechanical machines, the Mechanical Press and Rolling Mill, are up to the task of properly pounding out plates or forming wires and rods, respectively. "
 				""
 				"================================="
 				""
@@ -1266,6 +1264,8 @@
 				"With a bit of effort, simpler materials may be harvested from ore, however. Craft a Pestle and Mortar to begin grinding them and a Blast Furnace to smelt it down into a useful form. "
 				""
 				"The Pestle and Mortar is easily automated with just a hopper, no manual effort is required. "
+				""
+				"To begin, simple metals such as Copper may be worked into an ingot by crushing, blasting, crushing, and blasting one final time. Better methods will become available later. "
 			]
 			id: "438EA01F776992AD"
 			rewards: [

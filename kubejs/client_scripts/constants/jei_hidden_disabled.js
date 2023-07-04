@@ -685,6 +685,7 @@ jei.expert.recipes.hidden = [
             'naturesaura:depth_ingot_creation',
             'naturesaura:projectile_generator',
             'naturesaura:firework_generator',
+            'naturesaura:gold_powder',
             'ars_nouveau:imbuement_chamber',
             'ars_nouveau:mycelial_sourcelink',
             'ars_nouveau:vitalic_sourcelink',
