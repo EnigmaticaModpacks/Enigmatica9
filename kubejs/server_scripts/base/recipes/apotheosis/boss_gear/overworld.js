@@ -117,6 +117,49 @@ ServerEvents.highPriorityData((event) => {
             chestplates: [{ weight: 1, stack: { item: 'naturesaura:infused_iron_chest', nbt: default_nbt } }],
             helmets: [{ weight: 1, stack: { item: 'naturesaura:infused_iron_helmet', nbt: default_nbt } }],
             tags: ['overworld_bow']
+        },
+        {
+            name: 'water',
+            weight: 40,
+            mainhands: [{ weight: 3, stack: { item: 'ars_nouveau:enchanters_sword', nbt: default_nbt } }],
+            offhands: [{ weight: 1, stack: { item: 'minecraft:totem_of_undying' } }],
+            boots: [
+                {
+                    weight: 1,
+                    stack: {
+                        item: 'ars_nouveau:apprentice_boots',
+                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'cyan' } })
+                    }
+                }
+            ],
+            leggings: [
+                {
+                    weight: 1,
+                    stack: {
+                        item: 'ars_nouveau:apprentice_leggings',
+                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'cyan' } })
+                    }
+                }
+            ],
+            chestplates: [
+                {
+                    weight: 1,
+                    stack: {
+                        item: 'ars_nouveau:apprentice_robes',
+                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'cyan' } })
+                    }
+                }
+            ],
+            helmets: [
+                {
+                    weight: 1,
+                    stack: {
+                        item: 'ars_nouveau:apprentice_hood',
+                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'cyan' } })
+                    }
+                }
+            ],
+            tags: ['overworld', 'overworld_mage']
         }
     ];
 
