@@ -263,7 +263,7 @@ ServerEvents.recipes((event) => {
             pattern: ['A', 'B'],
             key: {
                 A: '#forge:storage_blocks/brass',
-                B: '#forge:ingots/brass'
+                B: '#forge:rods/brass'
             },
             id: `create:crafting/curiosities/peculiar_bell`
         },
@@ -386,7 +386,7 @@ ServerEvents.recipes((event) => {
             output: 'create:smart_fluid_pipe',
             pattern: ['A', 'B', 'C'],
             key: {
-                A: '#forge:ingots/brass',
+                A: '#forge:plates/brass',
                 B: 'create:fluid_pipe',
                 C: 'pneumaticcraft:logistics_core'
             },
@@ -396,7 +396,7 @@ ServerEvents.recipes((event) => {
             output: 'create:smart_chute',
             pattern: ['A', 'B', 'C'],
             key: {
-                A: '#forge:ingots/brass',
+                A: '#forge:plates/brass',
                 B: 'create:chute',
                 C: 'pneumaticcraft:logistics_core'
             },

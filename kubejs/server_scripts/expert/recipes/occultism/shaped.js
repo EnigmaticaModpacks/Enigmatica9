@@ -24,11 +24,11 @@ ServerEvents.recipes((event) => {
             id: `occultism:crafting/golden_sacrificial_bowl`
         },
         {
-            output: '5x occultism:wormhole_frame',
-            pattern: ['ABA', 'BAB', 'ABA'],
+            output: 'occultism:wormhole_frame',
+            pattern: ['BBB', 'BAB', 'BBB'],
             key: {
                 A: 'occultism:otherstone_frame',
-                B: '#forge:ingots/brass'
+                B: '#forge:nuggets/brass'
             },
             id: `occultism:crafting/wormhole_frame`
         }

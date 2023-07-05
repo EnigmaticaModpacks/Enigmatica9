@@ -112,7 +112,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: '#forge:ingots/compressed_iron',
-                B: '#forge:ingots/brass',
+                B: '#forge:plates/brass',
                 C: 'ae2:quartz_glass'
             },
             id: `ae2:network/blocks/pattern_providers_interface`
