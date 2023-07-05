@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'BAB', 'ABA'],
             key: {
                 A: 'occultism:otherstone_frame',
-                B: '#forge:ingots/energized_steel'
+                B: '#forge:ingots/brass'
             },
             id: `occultism:crafting/wormhole_frame`
         }

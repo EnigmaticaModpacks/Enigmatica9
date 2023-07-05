@@ -33,7 +33,7 @@ ServerEvents.recipes((event) => {
                 A: '#forge:stone',
                 B: '#functionalstorage:drawer',
                 C: 'minecraft:comparator',
-                D: '#forge:ingots/energized_steel'
+                D: '#forge:ingots/brass'
             },
             id: 'functionalstorage:armory_cabinet'
         },

@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
             results: [{ item: 'create:brass_casing', count: 4 }],
             inputs: [
                 { base_ingredient: { item: 'thermal:sawdust_block' }, count: 4 },
-                { base_ingredient: { tag: 'forge:ingots/energized_steel' }, count: 1 }
+                { base_ingredient: { tag: 'forge:ingots/brass' }, count: 1 }
             ],
             fluid: { amount: 100, tag: 'forge:phenolic_resin' },
             id: `${id_prefix}brass_casing`

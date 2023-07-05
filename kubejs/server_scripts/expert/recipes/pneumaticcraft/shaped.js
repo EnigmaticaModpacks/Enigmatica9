@@ -251,7 +251,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'CDC'],
             key: {
                 A: 'pneumaticcraft:pneumatic_cylinder',
-                B: '#forge:ingots/energized_steel',
+                B: '#forge:ingots/brass',
                 C: '#forge:ingots/compressed_iron',
                 D: 'pneumaticcraft:printed_circuit_board'
             },
@@ -262,7 +262,7 @@ ServerEvents.recipes((event) => {
             pattern: [' E ', 'AB ', 'CDC'],
             key: {
                 A: 'pneumaticcraft:pressure_tube',
-                B: '#forge:ingots/energized_steel',
+                B: '#forge:ingots/brass',
                 C: '#forge:ingots/compressed_iron',
                 D: 'pneumaticcraft:printed_circuit_board',
                 E: 'supplementaries:crystal_display'
@@ -274,7 +274,7 @@ ServerEvents.recipes((event) => {
             pattern: ['EAA', ' BA', 'CDC'],
             key: {
                 A: 'pneumaticcraft:pneumatic_cylinder',
-                B: '#forge:ingots/energized_steel',
+                B: '#forge:ingots/brass',
                 C: '#forge:ingots/compressed_iron',
                 D: 'pneumaticcraft:printed_circuit_board',
                 E: 'quark:rainbow_rune'
@@ -286,7 +286,7 @@ ServerEvents.recipes((event) => {
             pattern: ['EAA', ' BA', 'CDC'],
             key: {
                 A: 'pneumaticcraft:pneumatic_cylinder',
-                B: '#forge:ingots/energized_steel',
+                B: '#forge:ingots/brass',
                 C: '#forge:ingots/compressed_iron',
                 D: 'pneumaticcraft:printed_circuit_board',
                 E: 'pneumaticcraft:drill_bit_diamond'
@@ -298,7 +298,7 @@ ServerEvents.recipes((event) => {
             pattern: ['EAA', ' BA', 'CDC'],
             key: {
                 A: 'pneumaticcraft:pneumatic_cylinder',
-                B: '#forge:ingots/energized_steel',
+                B: '#forge:ingots/brass',
                 C: '#forge:ingots/compressed_iron',
                 D: 'pneumaticcraft:printed_circuit_board',
                 E: 'create:brass_hand'
@@ -310,7 +310,7 @@ ServerEvents.recipes((event) => {
             pattern: ['AAE', 'AB ', 'CDC'],
             key: {
                 A: 'pneumaticcraft:pneumatic_cylinder',
-                B: '#forge:ingots/energized_steel',
+                B: '#forge:ingots/brass',
                 C: '#forge:ingots/compressed_iron',
                 D: 'pneumaticcraft:printed_circuit_board',
                 E: 'create:brass_hand'

@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
                 '#forge:plates/obsidian',
                 '#forge:plates/obsidian',
                 '#forge:plates/obsidian',
-                '#forge:ingots/energized_steel'
+                '#forge:ingots/brass'
             ],
             id: 'immersiveengineering:crafting/blastbrick_reinforced'
         }

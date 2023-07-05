@@ -281,7 +281,7 @@ ServerEvents.recipes((event) => {
             output: 'mekanism:module_gravitational_modulating_unit',
             pattern: ['ABA', 'CDC', 'FEF'],
             key: {
-                A: '#forge:ingots/brass',
+                A: '#forge:ingots/energized_steel',
                 B: 'ars_elemental:air_focus',
                 C: '#forge:plates/aluminum',
                 D: 'modularrouters:augment_core',

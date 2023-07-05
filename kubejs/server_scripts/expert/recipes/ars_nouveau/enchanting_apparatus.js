@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'occultism:storage_controller_base',
-            inputs: ['#forge:ingots/energized_steel', '#forge:ingots/energized_steel', '#forge:ingots/energized_steel'],
+            inputs: ['#forge:ingots/brass', '#forge:ingots/brass', '#forge:ingots/brass'],
             reagents: ['occultism:otherstone_pedestal'],
             sourceCost: 2000,
             id: `${id_prefix}storage_controller_base`
@@ -66,7 +66,7 @@ ServerEvents.recipes((event) => {
         {
             output: 'create:brass_hand',
             inputs: ['#forge:essences/manipulation', '#forge:leather', '#forge:leather', '#forge:leather'],
-            reagents: ['#forge:ingots/energized_steel'],
+            reagents: ['#forge:ingots/brass'],
             sourceCost: 1000,
             id: `${id_prefix}brass_hand`
         },
@@ -859,13 +859,13 @@ ServerEvents.recipes((event) => {
             output: 'superiorshields:enchanter_shield',
             inputs: [
                 'ars_elemental:glyph_bubble_shield',
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 '#forge:gems/source',
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'ars_nouveau:glyph_self',
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 '#forge:gems/source',
-                '#forge:ingots/energized_steel'
+                '#forge:ingots/brass'
             ],
             reagents: [
                 'superiorshields:knightmetal_shield',
@@ -883,11 +883,11 @@ ServerEvents.recipes((event) => {
             output: 'apotheosis:sigil_of_socketing',
             inputs: [
                 'apotheosis:gem_dust',
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'apotheosis:gem_dust',
                 'apotheosis:gem_dust',
                 'apotheosis:gem_dust',
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'apotheosis:gem_dust',
                 'apotheosis:gem_dust'
             ],

@@ -61,7 +61,7 @@ ServerEvents.recipes((event) => {
             pattern: ['AAA', 'BCB', 'AAA'],
             key: {
                 A: 'ars_nouveau:sourcestone',
-                B: '#forge:ingots/energized_steel',
+                B: '#forge:ingots/brass',
                 C: '#forge:gems/source'
             },
             id: `ars_nouveau:arcane_core`
@@ -71,7 +71,7 @@ ServerEvents.recipes((event) => {
             pattern: ['BAB', ' C ', 'BAB'],
             key: {
                 A: 'ars_nouveau:sourcestone',
-                B: '#forge:ingots/energized_steel',
+                B: '#forge:ingots/brass',
                 C: '#forge:gems/fluix'
             },
             id: `ars_nouveau:enchanting_apparatus`

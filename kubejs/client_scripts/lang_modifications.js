@@ -33,49 +33,49 @@ const entries = {
             key: 'item.emendatusenigmatica.brass_ingot',
             value: {
                 normal: 'Brass Ingot',
-                expert: 'Aetheric Brass Ingot'
+                expert: 'Orichalcum Ingot'
             }
         },
         {
             key: 'item.emendatusenigmatica.brass_nugget',
             value: {
                 normal: 'Brass Nugget',
-                expert: 'Aetheric Brass Nugget'
+                expert: 'Orichalcum Nugget'
             }
         },
         {
             key: 'item.emendatusenigmatica.brass_dust',
             value: {
                 normal: 'Brass Dust',
-                expert: 'Aetheric Brass Dust'
+                expert: 'Orichalcum Dust'
             }
         },
         {
             key: 'item.emendatusenigmatica.brass_plate',
             value: {
                 normal: 'Brass Plate',
-                expert: 'Aetheric Brass Plate'
+                expert: 'Orichalcum Plate'
             }
         },
         {
             key: 'item.emendatusenigmatica.brass_gear',
             value: {
                 normal: 'Brass Gear',
-                expert: 'Aetheric Brass Gear'
+                expert: 'Orichalcum Gear'
             }
         },
         {
             key: 'item.emendatusenigmatica.brass_rod',
             value: {
                 normal: 'Brass Rod',
-                expert: 'Aetheric Brass Rod'
+                expert: 'Orichalcum Rod'
             }
         },
         {
             key: 'block.emendatusenigmatica.brass_block',
             value: {
                 normal: 'Block of Brass',
-                expert: 'Block of Aetheric Brass'
+                expert: 'Block of Orichalcum'
             }
         }
     ],
@@ -1010,14 +1010,14 @@ const entries = {
             key: 'block.powah.energized_steel_block',
             value: {
                 normal: 'Block Of Energized Steel',
-                expert: 'Block of Orichalcum'
+                expert: 'Block of Aetheric Brass'
             }
         },
         {
             key: 'item.powah.steel_energized',
             value: {
                 normal: 'Energized Steel',
-                expert: 'Orichalcum Ingot'
+                expert: 'Aetheric Brass Ingot'
             }
         },
         {
