@@ -6,11 +6,11 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/mekanism/nucleosynthesizing/';
     const recipes = [
         {
-            output: { item: 'emendatusenigmatica:brass_ingot' },
-            gasInput: { gas: 'mekanism:antimatter', amount: 5 },
+            output: { item: 'powah:steel_energized' },
+            gasInput: { gas: 'mekanism:antimatter', amount: 10000 },
             itemInput: { ingredient: { tag: 'forge:ingots/copper' } },
             duration: 500,
-            id: `${id_prefix}brass_ingot`
+            id: `${id_prefix}steel_energized`
         },
         {
             output: { item: 'minecraft:end_crystal' },

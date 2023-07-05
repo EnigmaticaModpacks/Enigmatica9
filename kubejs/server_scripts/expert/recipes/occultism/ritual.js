@@ -1090,14 +1090,14 @@ ServerEvents.recipes((event) => {
                 '#forge:storage_blocks/source',
                 '#forge:gears/aluminum',
 
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'spirit:soul_glass',
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'spirit:soul_glass',
 
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'spirit:soul_glass',
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'spirit:soul_glass'
             ],
             entity_to_sacrifice: {
@@ -1146,14 +1146,14 @@ ServerEvents.recipes((event) => {
                 '#forge:storage_blocks/source',
                 '#forge:gears/aluminum',
 
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'spirit:soul_glass',
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'spirit:soul_glass',
 
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'spirit:soul_glass',
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'spirit:soul_glass'
             ],
             entity_to_sacrifice: {
@@ -1456,7 +1456,7 @@ ServerEvents.recipes((event) => {
             output: 'kubejs:teleport_end',
             activation_item: '#forge:gems/infused_ender',
             inputs: [
-                '#forge:ingots/brass',
+                '#forge:ingots/energized_steel',
                 'naturesaura:gold_leaf',
                 '#forge:essences/air',
                 'naturesaura:gold_leaf',

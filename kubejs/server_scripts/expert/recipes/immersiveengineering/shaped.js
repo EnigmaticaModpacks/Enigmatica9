@@ -502,6 +502,16 @@ ServerEvents.recipes((event) => {
                 B: '#forge:fabrics/tough'
             },
             id: `immersiveengineering:crafting/strip_curtain`
+        },
+        {
+            output: '3x immersiveengineering:blastbrick_reinforced',
+            pattern: ['AAA', 'BBB', 'CCC'],
+            key: {
+                A: 'immersiveengineering:blastbrick',
+                B: '#forge:plates/obsidian',
+                C: '#forge:plates/brass'
+            },
+            id: 'immersiveengineering:crafting/blastbrick_reinforced'
         }
     ];
 

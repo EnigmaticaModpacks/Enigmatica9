@@ -317,10 +317,10 @@ ServerEvents.recipes((event) => {
                 '#forge:storage_blocks/soul_steel',
                 'spirit:soul_slate',
                 'spirit:soul_slate',
-                '#forge:gears/brass',
-                '#forge:gears/brass',
-                '#forge:gears/brass',
-                '#forge:gears/brass'
+                '#forge:storage_blocks/energized_steel',
+                '#forge:storage_blocks/energized_steel',
+                '#forge:storage_blocks/energized_steel',
+                '#forge:storage_blocks/energized_steel'
             ],
             time: 120,
             sapling: 'ars_nouveau:purple_archwood_sapling',

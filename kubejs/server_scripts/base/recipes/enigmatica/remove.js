@@ -52,6 +52,7 @@ ServerEvents.recipes((event) => {
         { id: 'create:crushing/blaze_rod' },
         { id: 'create:milling/sandstone' },
         { id: 'create:milling/bone' },
+        { id: 'create:milling/andesite' },
 
         { id: /createaddition:mixing\/biomass/ },
         { id: /createaddition:crafting\/.*spool/ },

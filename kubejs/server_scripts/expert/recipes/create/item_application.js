@@ -22,7 +22,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}andesite_casing_from_treated_wood`
         },
         {
-            ingredients: [{ tag: 'forge:treated_wood' }, { tag: 'forge:ingots/energized_steel' }],
+            ingredients: [{ tag: 'forge:treated_wood' }, { tag: 'forge:ingots/brass' }],
             results: [{ item: 'create:brass_casing' }],
             id: `${id_prefix}brass_casing_from_treated_wood`
         },
