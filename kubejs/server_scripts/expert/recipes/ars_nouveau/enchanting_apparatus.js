@@ -446,19 +446,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}meka_tool`
         },
         {
-            output: 'ars_nouveau:summon_focus',
-            inputs: [
-                'ars_elemental:mark_of_mastery',
-                '#forge:wires/electrum',
-                '#forge:wires/electrum',
-                '#forge:wires/electrum',
-                '#forge:wires/electrum'
-            ],
-            reagents: ['#forge:storage_blocks/source'],
-            sourceCost: 10000,
-            id: 'ars_nouveau:summon_focus'
-        },
-        {
             output: 'thermal:upgrade_augment_1',
             inputs: [
                 'ae2:spatial_cell_component_2',

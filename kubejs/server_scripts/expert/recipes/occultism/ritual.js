@@ -1004,9 +1004,9 @@ ServerEvents.recipes((event) => {
             }),
             activation_item: 'minecraft:blast_furnace',
             inputs: [
-                'ars_elemental:lesser_air_focus',
+                'ars_elemental:air_focus',
                 'naturesaura:furnace_heater',
-                'ars_elemental:lesser_fire_focus',
+                'ars_elemental:fire_focus',
                 'create:shaft',
                 '#forge:ingots/infused_iron',
                 '#forge:gems/source',
@@ -1085,7 +1085,7 @@ ServerEvents.recipes((event) => {
             output: 'industrialforegoing:ore_laser_base',
             activation_item: 'thermal:machine_frame',
             inputs: [
-                'ars_elemental:lesser_earth_focus',
+                'ars_elemental:earth_focus',
                 '#forge:gears/aluminum',
                 '#forge:storage_blocks/source',
                 '#forge:gears/aluminum',
@@ -1141,7 +1141,7 @@ ServerEvents.recipes((event) => {
             output: 'industrialforegoing:fluid_laser_base',
             activation_item: 'thermal:machine_frame',
             inputs: [
-                'ars_elemental:lesser_water_focus',
+                'ars_elemental:water_focus',
                 '#forge:gears/aluminum',
                 '#forge:storage_blocks/source',
                 '#forge:gears/aluminum',
