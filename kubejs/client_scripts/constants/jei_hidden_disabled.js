@@ -261,6 +261,11 @@ jei.expert.items.disabled = [
     'ae2:engineering_processor_press',
     'ae2:calculation_processor_press',
 
+    'ars_elemental:lesser_fire_focus',
+    'ars_elemental:lesser_water_focus',
+    'ars_elemental:lesser_air_focus',
+    'ars_elemental:lesser_earth_focus',
+
     'ars_nouveau:agronomic_sourcelink',
     'ars_nouveau:mycelial_sourcelink',
     'ars_nouveau:vitalic_sourcelink',
