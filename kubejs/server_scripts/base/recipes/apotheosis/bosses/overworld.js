@@ -109,7 +109,7 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             entity: 'minecraft:skeleton',
-            weight: 200,
+            weight: 180,
             quality: 0,
             size: { width: 1, height: 2 },
             valid_gear_sets: ['#overworld_bow'],
