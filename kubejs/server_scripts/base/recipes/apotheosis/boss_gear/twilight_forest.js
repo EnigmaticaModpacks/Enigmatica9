@@ -210,7 +210,7 @@ ServerEvents.highPriorityData((event) => {
                     weight: 1,
                     stack: {
                         item: 'ars_nouveau:apprentice_boots',
-                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'green' } })
+                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'brown' } })
                     }
                 }
             ],
@@ -219,7 +219,7 @@ ServerEvents.highPriorityData((event) => {
                     weight: 1,
                     stack: {
                         item: 'ars_nouveau:apprentice_leggings',
-                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'green' } })
+                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'brown' } })
                     }
                 }
             ],
@@ -228,7 +228,7 @@ ServerEvents.highPriorityData((event) => {
                     weight: 1,
                     stack: {
                         item: 'ars_nouveau:apprentice_robes',
-                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'green' } })
+                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'brown' } })
                     }
                 }
             ],
@@ -237,7 +237,7 @@ ServerEvents.highPriorityData((event) => {
                     weight: 1,
                     stack: {
                         item: 'ars_nouveau:apprentice_hood',
-                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'green' } })
+                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'brown' } })
                     }
                 }
             ],

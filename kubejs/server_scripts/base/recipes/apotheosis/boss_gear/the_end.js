@@ -39,42 +39,10 @@ ServerEvents.highPriorityData((event) => {
             weight: 40,
             mainhands: [{ weight: 3, stack: { item: 'ars_nouveau:enchanters_sword', nbt: default_nbt } }],
             offhands: [{ weight: 1, stack: { item: 'minecraft:totem_of_undying' } }],
-            boots: [
-                {
-                    weight: 1,
-                    stack: {
-                        item: 'ars_nouveau:apprentice_boots',
-                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'white' } })
-                    }
-                }
-            ],
-            leggings: [
-                {
-                    weight: 1,
-                    stack: {
-                        item: 'ars_nouveau:apprentice_leggings',
-                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'white' } })
-                    }
-                }
-            ],
-            chestplates: [
-                {
-                    weight: 1,
-                    stack: {
-                        item: 'ars_nouveau:apprentice_robes',
-                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'white' } })
-                    }
-                }
-            ],
-            helmets: [
-                {
-                    weight: 1,
-                    stack: {
-                        item: 'ars_nouveau:apprentice_hood',
-                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'white' } })
-                    }
-                }
-            ],
+            boots: [{ weight: 1, stack: { item: 'ars_elemental:air_boots', nbt: default_nbt } }],
+            leggings: [{ weight: 1, stack: { item: 'ars_elemental:air_leggings', nbt: default_nbt } }],
+            chestplates: [{ weight: 1, stack: { item: 'ars_elemental:air_robes', nbt: default_nbt } }],
+            helmets: [{ weight: 1, stack: { item: 'ars_elemental:air_hat', nbt: default_nbt } }],
             tags: ['the_end', 'the_end_mage']
         }
     ];

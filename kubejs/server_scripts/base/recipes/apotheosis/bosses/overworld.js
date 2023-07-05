@@ -522,7 +522,7 @@ ServerEvents.highPriorityData((event) => {
             }
         },
         {
-            entity: 'ars_elemental:air_mage',
+            entity: 'ars_elemental:water_mage',
             weight: 20,
             quality: 6,
             size: { width: 1, height: 2 },

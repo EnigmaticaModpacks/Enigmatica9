@@ -205,6 +205,47 @@ ServerEvents.highPriorityData((event) => {
                     ]
                 }
             }
+        },
+        {
+            entity: 'ars_elemental:earth_mage',
+            weight: 20,
+            quality: 6,
+            size: { width: 1, height: 2 },
+            valid_gear_sets: ['#the_bumblezone_mage'],
+            dimensions: ['the_bumblezone:the_bumblezone'],
+            min_rarity: 'mythic',
+            max_rarity: 'mythic',
+            stats: {
+                mythic: {
+                    enchant_chance: 1,
+                    enchantment_levels: [36, 30, 100, 85],
+                    effects: [
+                        { effect: 'ars_nouveau:shielding', amplifier: { min: 2, max: 3 }, chance: 1 },
+                        { effect: 'ars_nouveau:spell_damage', amplifier: { min: 2, max: 7 }, chance: 1 },
+                        { effect: 'ars_nouveau:mana_regen', amplifier: { min: 2, max: 7 }, chance: 1 }
+                    ],
+                    attribute_modifiers: [
+                        {
+                            attribute: 'minecraft:generic.max_health',
+                            operation: 'ADDITION',
+                            value: { min: 90, steps: 60, step: 2 }
+                        },
+                        {
+                            attribute: 'minecraft:generic.movement_speed',
+                            operation: 'MULTIPLY_BASE',
+                            value: { min: 0.3, steps: 35, step: 0.01 }
+                        },
+                        {
+                            attribute: 'minecraft:generic.attack_damage',
+                            operation: 'MULTIPLY_BASE',
+                            value: { min: 1.2, steps: 40, step: 0.01 }
+                        },
+                        { attribute: 'minecraft:generic.knockback_resistance', operation: 'ADDITION', value: 1 },
+                        { attribute: 'minecraft:generic.armor', operation: 'ADDITION', value: 20 },
+                        { attribute: 'minecraft:generic.armor_toughness', operation: 'ADDITION', value: 20 }
+                    ]
+                }
+            }
         }
     ];
 
