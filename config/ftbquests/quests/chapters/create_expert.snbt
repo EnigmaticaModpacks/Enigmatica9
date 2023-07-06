@@ -1471,11 +1471,6 @@
 					item: "create:portable_storage_interface"
 					type: "item"
 				}
-				{
-					id: "4BB049DCC47F9DB8"
-					item: "createaddition:portable_energy_interface"
-					type: "item"
-				}
 			]
 			title: "Portable Interfaces"
 			x: 7.0d
