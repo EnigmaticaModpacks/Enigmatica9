@@ -440,7 +440,7 @@ ServerEvents.recipes((event) => {
                 '#forge:dusts/moon_dust'
             ],
             time: 40,
-            sapling: 'ars_nouveau:yellow_archwood_sapling',
+            sapling: 'ars_elemental:yellow_archwood_sapling',
             id: `${id_prefix}air_focus`
         },
         {

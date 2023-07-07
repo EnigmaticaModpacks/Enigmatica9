@@ -82,7 +82,10 @@ StartupEvents.registry('item', (event) => {
         'ritual_craft_electric_motor',
         'ritual_craft_component_electronic',
         'ritual_craft_jet_boots_upgrade_3',
-        'ritual_of_enduring_flight'
+        'ritual_of_enduring_flight',
+        'ritual_craft_sps_port',
+        'ritual_craft_energizing_orb',
+        'ritual_craft_tree_of_life_trophy'
     ];
 
     const reusableItemTextures = [

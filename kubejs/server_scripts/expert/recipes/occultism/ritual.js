@@ -1286,6 +1286,79 @@ ServerEvents.recipes((event) => {
             duration: 10,
             id: `occultism:ritual/summon_wild_afrit`
         },
+        {
+            output: Item.of('3x mekanism:sps_port'),
+            activation_item: '#industrialforegoing:machine_frame/supreme',
+            inputs: [
+                'ae2:spatial_anchor',
+                'ae2:spatial_anchor',
+                'ae2:spatial_anchor',
+                'ae2:spatial_anchor',
+
+                'ae2:spatial_pylon',
+                'mekanism:sps_casing',
+                'ae2:spatial_pylon',
+                'mekanism:sps_casing',
+
+                'ae2:spatial_pylon',
+                'mekanism:sps_casing',
+                'ae2:spatial_pylon',
+                'mekanism:sps_casing'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/air',
+                display_name: 'ritual.occultism.sacrifice.air_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_sps_port',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:tree_of_life_stage_3',
+            duration: 60,
+            id: `${id_prefix}ritual_craft_sps_port`
+        },
+        {
+            output: 'powah:energizing_orb',
+            activation_item: 'hexerei:crystal_ball',
+            inputs: [
+                'ae2:quartz_glass',
+                'ae2:quartz_glass',
+                '#forge:essences/manipulation',
+                'ae2:quartz_glass',
+
+                'ae2:quartz_glass',
+                'ae2:quartz_glass',
+                'ae2:sky_stone_block',
+                'ae2:quartz_glass',
+
+                'ae2:quartz_glass',
+                'ae2:quartz_glass',
+                'ae2:sky_stone_block',
+                'ae2:quartz_glass'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/water',
+                display_name: 'ritual.occultism.sacrifice.water_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_energizing_orb',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:tree_of_life_stage_1',
+            duration: 60,
+            id: `${id_prefix}ritual_craft_energizing_orb`
+        },
+        {
+            output: Item.of('trofers:large_pillar', '{BlockEntityTag:{Trophy:"trofers:tree_of_life"}}'),
+            activation_item: 'ars_nouveau:ritual_restoration',
+            inputs: [
+                'kubejs:heart_of_the_tempest',
+                'minecraft:heart_of_the_sea',
+                'kubejs:heart_of_the_mountain',
+                'kubejs:heart_of_the_inferno'
+            ],
+            ritual_dummy: 'kubejs:ritual_craft_tree_of_life_trophy',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:tree_of_life_stage_4',
+            duration: 60,
+            id: `${id_prefix}ritual_craft_tree_of_life_trophy`
+        },
 
         /*
         Custom Summons

@@ -141,17 +141,6 @@ ServerEvents.recipes((event) => {
             id: 'mekanism:rotary_condensentrator'
         },
         {
-            output: '2x mekanism:sps_port',
-            pattern: ['ABA', 'BCB', 'ADA'],
-            key: {
-                A: 'mekanism:sps_casing',
-                B: 'ae2:spatial_pylon',
-                C: '#industrialforegoing:machine_frame/supreme',
-                D: 'ae2:spatial_anchor'
-            },
-            id: 'mekanism:sps_port'
-        },
-        {
             output: 'mekanism:enrichment_chamber',
             pattern: ['EBE', 'CDC', 'AFA'],
             key: {

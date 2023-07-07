@@ -348,6 +348,7 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:hdpe_sheet' },
         { id: 'mekanism:hdpe_rod' },
         { id: 'mekanism:steel_casing' },
+        { id: 'mekanism:sps_port' },
 
         { id: /minecraft:diamond_(helmet|chestplate|leggings|boots)/ },
         { id: /minecraft:diamond_(sword|pickaxe|axe|shovel|hoe)/ },
@@ -429,6 +430,7 @@ ServerEvents.recipes((event) => {
         { id: 'powah:crafting/dielectric_casing' },
         { id: 'powah:crafting/binding_card' },
         { id: 'powah:crafting/aerial_pearl' },
+        { id: 'powah:crafting/energizing_orb' },
         { id: 'powah:crafting/energizing_rod_basic' },
         { id: 'powah:energizing/ender_core' },
         { id: 'powah:energizing/blazing_crystal' },

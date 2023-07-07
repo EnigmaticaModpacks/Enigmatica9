@@ -6,63 +6,12 @@ ServerEvents.highPriorityData((event) => {
     const recipes = [
         {
             colors: { accent: '#3dcc61', base: '#606060' },
-            display: { scale: 0.625 },
-            item: { item: 'kubejs:tree_of_life_1' },
-            name: {
-                color: '#3dcc61',
-                translate: 'trophy.trofers.composed',
-                with: [{ translate: 'item.kubejs.tree_of_life_1' }]
-            },
-            effects: {
-                rewards: {
-                    lootTable: 'enigmatica:loot_boxes/aura_leaves/tiny',
-                    cooldown: 6000
-                }
-            },
-            id: 'tree_of_life_1'
-        },
-        {
-            colors: { accent: '#3dcc61', base: '#606060' },
-            display: { scale: 0.75 },
-            item: { item: 'kubejs:tree_of_life_2' },
-            name: {
-                color: '#3dcc61',
-                translate: 'trophy.trofers.composed',
-                with: [{ translate: 'item.kubejs.tree_of_life_2' }]
-            },
-            effects: {
-                rewards: {
-                    lootTable: 'enigmatica:loot_boxes/aura_leaves/small',
-                    cooldown: 6000
-                }
-            },
-            id: 'tree_of_life_2'
-        },
-        {
-            colors: { accent: '#3dcc61', base: '#606060' },
-            display: { scale: 0.875 },
-            item: { item: 'kubejs:tree_of_life_3' },
-            name: {
-                color: '#3dcc61',
-                translate: 'trophy.trofers.composed',
-                with: [{ translate: 'item.kubejs.tree_of_life_3' }]
-            },
-            effects: {
-                rewards: {
-                    lootTable: 'enigmatica:loot_boxes/aura_leaves/medium',
-                    cooldown: 6000
-                }
-            },
-            id: 'tree_of_life_3'
-        },
-        {
-            colors: { accent: '#3dcc61', base: '#606060' },
             display: { scale: 1.0 },
             item: { item: 'kubejs:tree_of_life_4' },
             name: {
                 color: '#3dcc61',
                 translate: 'trophy.trofers.composed',
-                with: [{ translate: 'item.kubejs.tree_of_life_4' }]
+                with: [{ translate: 'item.kubejs.eternal_tree_of_life' }]
             },
             effects: {
                 rewards: {
@@ -70,7 +19,7 @@ ServerEvents.highPriorityData((event) => {
                     cooldown: 6000
                 }
             },
-            id: 'tree_of_life_4'
+            id: 'tree_of_life'
         },
         {
             colors: { accent: '#e0d022', base: '#606060' },
