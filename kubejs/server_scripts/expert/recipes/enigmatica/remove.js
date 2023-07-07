@@ -498,6 +498,7 @@ ServerEvents.recipes((event) => {
         { id: /thermal:.*_mushroom_spores/ },
         { id: /thermal:parts\/.*_gear/ },
         { id: /thermal:earth_charge/ },
+        { id: /thermal:.*_grenade/ },
         { id: 'thermal:enderium_dust_2' },
         { id: 'thermal:lumium_dust_4' },
         { id: 'thermal:signalum_dust_4' },
