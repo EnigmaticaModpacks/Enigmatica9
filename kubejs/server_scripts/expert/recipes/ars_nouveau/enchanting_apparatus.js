@@ -754,7 +754,7 @@ ServerEvents.recipes((event) => {
                 'kubejs:shard_of_enduring'
             ],
             reagents: ['kubejs:primed_aetheric_heart'],
-            sourceCost: 1000,
+            sourceCost: 10000,
             id: `${id_prefix}heart_of_the_sea`
         },
         {
@@ -777,7 +777,7 @@ ServerEvents.recipes((event) => {
                 'kubejs:shard_of_renewal'
             ],
             reagents: ['kubejs:primed_aetheric_heart'],
-            sourceCost: 1000,
+            sourceCost: 10000,
             id: `${id_prefix}heart_of_the_mountain`
         },
         {
@@ -800,7 +800,7 @@ ServerEvents.recipes((event) => {
                 'kubejs:shard_of_rebirth'
             ],
             reagents: ['kubejs:primed_aetheric_heart'],
-            sourceCost: 1000,
+            sourceCost: 10000,
             id: `${id_prefix}heart_of_the_inferno`
         },
         {
@@ -823,7 +823,7 @@ ServerEvents.recipes((event) => {
                 'kubejs:shard_of_wisdom'
             ],
             reagents: ['kubejs:primed_aetheric_heart'],
-            sourceCost: 1000,
+            sourceCost: 10000,
             id: `${id_prefix}heart_of_the_tempest`
         },
         {

@@ -431,7 +431,6 @@
 		{
 			dependencies: ["606F79DAEB15E85B"]
 			description: ["With greater knowledge of spatial dimensions, the Afrit is capable of carving out an even greater internal volume for use by the spirits running this apparatus, allowing them to perform more complex tasks. "]
-			hide: true
 			id: "7633AE65F02DCD1A"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
@@ -784,6 +783,7 @@
 				"78FA52767FE8D732"
 				"7F47E4A0E4F840B0"
 			]
+			description: ["Congratulations on completing Enigmatica 9: Expert!"]
 			hide: true
 			hide_dependency_lines: true
 			id: "26A44571C5C0F6B4"
