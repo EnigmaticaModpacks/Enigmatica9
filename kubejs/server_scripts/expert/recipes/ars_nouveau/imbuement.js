@@ -129,6 +129,70 @@ ServerEvents.recipes((event) => {
             inputs: [],
             source: 1000,
             id: `${id_prefix}charged_certus_quartz_crystal`
+        },
+        {
+            output: 'thermal:fire_grenade',
+            count: 1,
+            reagent: 'thermal:explosive_grenade',
+            inputs: ['minecraft:blaze_powder'],
+            source: 50,
+            id: `${id_prefix}fire_grenade`
+        },
+        {
+            output: 'thermal:ice_grenade',
+            count: 1,
+            reagent: 'thermal:explosive_grenade',
+            inputs: ['thermal:blizz_powder'],
+            source: 50,
+            id: `${id_prefix}ice_grenade`
+        },
+        {
+            output: 'thermal:lightning_grenade',
+            count: 1,
+            reagent: 'thermal:explosive_grenade',
+            inputs: ['thermal:blitz_powder'],
+            source: 50,
+            id: `${id_prefix}lightning_grenade`
+        },
+        {
+            output: 'thermal:earth_grenade',
+            count: 1,
+            reagent: 'thermal:explosive_grenade',
+            inputs: ['thermal:basalz_powder'],
+            source: 50,
+            id: `${id_prefix}earth_grenade`
+        },
+        {
+            output: 'thermal:ender_grenade',
+            count: 1,
+            reagent: 'thermal:explosive_grenade',
+            inputs: ['#forge:gems/ender_pearl'],
+            source: 50,
+            id: `${id_prefix}ender_grenade`
+        },
+        {
+            output: 'thermal:glowstone_grenade',
+            count: 1,
+            reagent: 'thermal:explosive_grenade',
+            inputs: ['#forge:dusts/glowstone'],
+            source: 50,
+            id: `${id_prefix}glowstone_grenade`
+        },
+        {
+            output: 'thermal:redstone_grenade',
+            count: 1,
+            reagent: 'thermal:explosive_grenade',
+            inputs: ['#forge:dusts/redstone'],
+            source: 50,
+            id: `${id_prefix}redstone_grenade`
+        },
+        {
+            output: 'thermal:slime_grenade',
+            count: 1,
+            reagent: 'thermal:explosive_grenade',
+            inputs: ['#forge:slimeballs'],
+            source: 50,
+            id: `${id_prefix}slime_grenade`
         }
     ];
 

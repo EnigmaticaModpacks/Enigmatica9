@@ -433,7 +433,7 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:reinforced_pressure_tube',
                 'ars_nouveau:glyph_wind_shear',
                 'pneumaticcraft:reinforced_pressure_tube',
-                'ars_elemental:lesser_air_focus',
+                'ars_elemental:air_focus',
                 'pneumaticcraft:reinforced_pressure_tube',
                 'ars_nouveau:glyph_wind_shear',
                 'pneumaticcraft:reinforced_pressure_tube'
@@ -518,7 +518,7 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:reinforced_pressure_tube',
                 'ars_nouveau:glyph_amplify',
                 'pneumaticcraft:reinforced_pressure_tube',
-                'ars_elemental:lesser_air_focus',
+                'ars_elemental:air_focus',
                 'pneumaticcraft:reinforced_pressure_tube',
                 'ars_nouveau:glyph_amplify',
                 'pneumaticcraft:reinforced_pressure_tube'

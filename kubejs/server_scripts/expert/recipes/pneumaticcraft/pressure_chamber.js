@@ -604,7 +604,7 @@ ServerEvents.recipes((event) => {
                 { type: 'pneumaticcraft:stacked_item', item: 'create:cinder_flour', count: 64 },
 
                 { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_rebirth', count: 64 },
-                { type: 'pneumaticcraft:stacked_item', item: 'create:rose_quartz_lamp', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:gems/nitro', count: 64 },
                 { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_rebirth', count: 64 }
             ],
             pressure: 4.0,

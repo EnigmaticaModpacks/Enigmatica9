@@ -261,6 +261,11 @@ jei.expert.items.disabled = [
     'ae2:engineering_processor_press',
     'ae2:calculation_processor_press',
 
+    'ars_elemental:lesser_fire_focus',
+    'ars_elemental:lesser_water_focus',
+    'ars_elemental:lesser_air_focus',
+    'ars_elemental:lesser_earth_focus',
+
     'ars_nouveau:agronomic_sourcelink',
     'ars_nouveau:mycelial_sourcelink',
     'ars_nouveau:vitalic_sourcelink',
@@ -699,7 +704,11 @@ jei.expert.recipes.hidden = [
     },
     {
         category: 'naturesaura:altar',
-        recipes_by_id: ['naturesaura:altar/infused_stone', 'naturesaura:altar/tainted_gold']
+        recipes_by_id: [
+            'naturesaura:altar/infused_stone',
+            'naturesaura:altar/tainted_gold',
+            'naturesaura:altar/gold_powder'
+        ]
     },
     {
         category: 'naturesaura:tree_ritual',
@@ -750,7 +759,13 @@ jei.expert.recipes.hidden = [
     },
     {
         category: 'ars_nouveau:imbuement',
-        recipes_by_id: ['ars_nouveau:imbuement_lapis']
+        recipes_by_id: [
+            'ars_nouveau:imbuement_lapis',
+            'ars_elemental:imbuement_lesser_fire_focus',
+            'ars_elemental:imbuement_lesser_water_focus',
+            'ars_elemental:imbuement_lesser_earth_focus',
+            'ars_elemental:imbuement_lesser_air_focus'
+        ]
     },
     {
         category: 'ars_nouveau:enchanting_apparatus',
@@ -767,7 +782,14 @@ jei.expert.recipes.hidden = [
             'ars_nouveau:alchemists_crown',
             'ars_nouveau:dominion_wand',
             'ars_nouveau:storage_lectern',
-            'ars_elemental:everfull_urn'
+            'ars_elemental:everfull_urn',
+            'ars_elemental:fire_focus',
+            'ars_elemental:water_focus',
+            'ars_elemental:earth_focus',
+            'ars_elemental:air_focus',
+            'ars_elemental:necrotic_focus',
+            'ars_nouveau:summon_focus',
+            'ars_nouveau:shapers_focus'
         ]
     }
 ];

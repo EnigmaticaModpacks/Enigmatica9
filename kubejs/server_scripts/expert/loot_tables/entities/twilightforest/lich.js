@@ -23,10 +23,5 @@ ServerEvents.genericLootTables((event) => {
             pool.rolls = [5, 15];
             pool.addItem('twilightforest:charm_of_life_2', 1, 1);
         });
-
-        table.addPool((pool) => {
-            pool.rolls = [3, 5];
-            pool.addItem('supplementaries:antique_ink', 1, 1);
-        });
     });
 });

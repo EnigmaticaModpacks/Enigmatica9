@@ -25,16 +25,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}energizing_rod/basic`
         },
         {
-            output: 'powah:energizing_orb',
-            pattern: ['CAC', 'BBB'],
-            key: {
-                A: 'hexerei:crystal_ball',
-                B: 'ae2:sky_stone_block',
-                C: '#forge:essences/manipulation'
-            },
-            id: `powah:crafting/energizing_orb`
-        },
-        {
             output: 'powah:player_transmitter_basic',
             pattern: [' A ', 'BCB', 'BDB'],
             key: {

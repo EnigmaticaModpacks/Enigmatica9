@@ -33,7 +33,8 @@ ServerEvents.recipes((event) => {
         ],
         altar: [
             { id: 'naturesaura:altar/infused_stone', output: 'naturesaura:infused_stone' },
-            { id: 'naturesaura:altar/tainted_gold', output: 'naturesaura:tainted_gold' }
+            { id: 'naturesaura:altar/tainted_gold', output: 'naturesaura:tainted_gold' },
+            { id: 'naturesaura:altar/gold_powder', output: 'naturesaura:gold_powder' }
         ],
         tree_ritual: [
             {
