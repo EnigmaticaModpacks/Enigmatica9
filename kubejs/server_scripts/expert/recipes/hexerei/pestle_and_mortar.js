@@ -104,7 +104,7 @@ ServerEvents.recipes((event) => {
                 'naturesaura:gold_leaf',
                 'naturesaura:gold_leaf'
             ],
-            output: '15x naturesaura:gold_powder',
+            output: '20x naturesaura:gold_powder',
             grindingTime: 1 * 20,
             id: `${id_prefix}gold_powder`
         }
