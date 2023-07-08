@@ -170,7 +170,7 @@ ServerEvents.highPriorityData((event) => {
             weight: 100,
             quality: 0,
             entities: ['occultism:possessed_skeleton'],
-            valid_gear_sets: ['#miniboss/skeleton_bow'],
+            valid_gear_sets: ['#miniboss/skeleton_bow', '#miniboss/skeleton_forsaken_knight'],
             dimensions: [],
             affixed: false,
             nbt: {},
