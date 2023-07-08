@@ -90,6 +90,13 @@ const entries = {
     ],
     create: [
         {
+            key: 'block.create.brass_block',
+            value: {
+                normal: 'Block of Brass',
+                expert: 'Block of Orichalcum'
+            }
+        },
+        {
             key: 'block.create.andesite_bars',
             value: {
                 normal: 'Andesite Bars',
