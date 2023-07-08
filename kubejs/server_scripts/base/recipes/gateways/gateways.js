@@ -371,9 +371,6 @@ ServerEvents.highPriorityData((event) => {
                         { entity: 'twilightforest:wraith' },
                         { entity: 'twilightforest:wraith' },
                         { entity: 'twilightforest:wraith' },
-                        { entity: 'twilightforest:wraith' },
-                        { entity: 'twilightforest:wraith' },
-                        { entity: 'twilightforest:wraith' },
                         { entity: 'occultism:wild_hunt_skeleton' },
                         { entity: 'occultism:wild_hunt_skeleton' },
                         { entity: 'occultism:wild_hunt_skeleton' }
@@ -384,7 +381,7 @@ ServerEvents.highPriorityData((event) => {
                             stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
                         }
                     ],
-                    max_wave_time: 750,
+                    max_wave_time: 2400,
                     setup_time: 50
                 },
                 {
@@ -392,9 +389,6 @@ ServerEvents.highPriorityData((event) => {
                         { entity: 'twilightforest:wraith' },
                         { entity: 'twilightforest:wraith' },
                         { entity: 'twilightforest:wraith' },
-                        { entity: 'twilightforest:wraith' },
-                        { entity: 'twilightforest:wraith' },
-                        { entity: 'twilightforest:wraith' },
                         { entity: 'occultism:wild_hunt_skeleton' },
                         { entity: 'occultism:wild_hunt_skeleton' },
                         { entity: 'occultism:wild_hunt_skeleton' }
@@ -405,7 +399,7 @@ ServerEvents.highPriorityData((event) => {
                             stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
                         }
                     ],
-                    max_wave_time: 1500,
+                    max_wave_time: 2400,
                     setup_time: 50
                 },
                 {
