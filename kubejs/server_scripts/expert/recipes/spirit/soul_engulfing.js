@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
                         ['ABA', 'B&B', 'ABA']
                     ],
                     keys: {
-                        A: { block: '#forge:storage_blocks/brass' },
+                        A: { block: 'ars_nouveau:arcane_core' },
                         B: { block: '#forge:storage_blocks/source' },
                         C: { block: 'minecraft:wither_skeleton_skull' }
                     }
@@ -38,7 +38,7 @@ ServerEvents.recipes((event) => {
                         ['ABA', 'B&B', 'ABA']
                     ],
                     keys: {
-                        A: { block: '#forge:storage_blocks/brass' },
+                        A: { block: 'ars_nouveau:arcane_core' },
                         B: { block: '#forge:storage_blocks/source' },
                         C: { block: 'minecraft:wither_skeleton_skull' }
                     }

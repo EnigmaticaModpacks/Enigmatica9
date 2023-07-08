@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
             ritual_dummy: 'occultism:ritual_dummy/summon_foliot_crusher',
             ritual_type: 'occultism:summon_spirit_with_job',
             pentacle_id: 'occultism:summon_foliot',
-            duration: 60,
+            duration: 20,
             id: 'occultism:ritual/summon_foliot_crusher'
         },
         {
@@ -40,7 +40,7 @@ ServerEvents.recipes((event) => {
             ritual_dummy: 'occultism:ritual_dummy/summon_djinni_crusher',
             ritual_type: 'occultism:summon_spirit_with_job',
             pentacle_id: 'occultism:summon_djinni',
-            duration: 90,
+            duration: 20,
             id: 'occultism:ritual/summon_djinni_crusher'
         },
         {
@@ -59,7 +59,7 @@ ServerEvents.recipes((event) => {
             ritual_dummy: 'occultism:ritual_dummy/summon_afrit_crusher',
             ritual_type: 'occultism:summon_spirit_with_job',
             pentacle_id: 'occultism:summon_afrit',
-            duration: 120,
+            duration: 20,
             id: 'occultism:ritual/summon_afrit_crusher'
         },
         {
@@ -78,7 +78,7 @@ ServerEvents.recipes((event) => {
             ritual_dummy: 'occultism:ritual_dummy/summon_marid_crusher',
             ritual_type: 'occultism:summon_spirit_with_job',
             pentacle_id: 'occultism:summon_marid',
-            duration: 150,
+            duration: 20,
             id: 'occultism:ritual/summon_marid_crusher'
         },
         {

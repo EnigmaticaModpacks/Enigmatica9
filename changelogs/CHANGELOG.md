@@ -6,6 +6,8 @@
 
 ### 🌟 Improvements
 
+-   Fiery Metal and Liquid Blaze Burners may now be used for PNC heat [\#467](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/467) ([MuteTiefling](https://github.com/MuteTiefling))
+
 ### 🐛 Fixed Bugs
 
 -   Fix Some Assembly Required sawing recipes [\#460](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/460) ([MuteTiefling](https://github.com/MuteTiefling))
