@@ -1203,17 +1203,17 @@ ServerEvents.recipes((event) => {
             id: `occultism:ritual/possess_enderman`
         },
         {
-            output: Item.of('minecraft:skeleton_skull', {
+            output: Item.of('gateways:gate_pearl', `{gateway:"gateways:possessed_skeleton_gate", radius:5}`),
+            activation_item: 'byg:hanging_bones',
+            inputs: ['#forge:essences/anima', 'minecraft:bone_meal', 'minecraft:bone_meal', 'minecraft:bone_meal'],
+            entity_to_summon: 'occultism:possessed_skeleton',
+            entity_to_sacrifice: { tag: 'enigmatica:deer', display_name: 'ritual.occultism.sacrifice.deer' },
+            ritual_dummy: Item.of('minecraft:skeleton_skull', {
                 display: {
                     Name: '{"translate":"item.occultism.ritual_dummy.possess_skeleton"}',
                     Lore: ['{"translate":"item.occultism.ritual_dummy.possess_skeleton.tooltip"}']
                 }
             }),
-            activation_item: 'byg:hanging_bones',
-            inputs: ['#forge:essences/anima', 'minecraft:bone_meal', 'minecraft:bone_meal', 'minecraft:bone_meal'],
-            entity_to_summon: 'occultism:possessed_skeleton',
-            entity_to_sacrifice: { tag: 'enigmatica:deer', display_name: 'ritual.occultism.sacrifice.deer' },
-            ritual_dummy: 'occultism:ritual_dummy/possess_skeleton',
             ritual_type: 'occultism:summon',
             pentacle_id: 'occultism:summon_lesser_evil',
             duration: 10,

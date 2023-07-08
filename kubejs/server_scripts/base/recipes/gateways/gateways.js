@@ -133,7 +133,7 @@ ServerEvents.highPriorityData((event) => {
         {
             size: 'large',
             color: '#b30f04',
-            leash_range: 32,
+            leash_range: 256,
             allow_discarding: true,
             rewards: [
                 {
@@ -346,7 +346,7 @@ ServerEvents.highPriorityData((event) => {
         {
             size: 'large',
             color: '#554a57',
-            leash_range: 32,
+            leash_range: 256,
             rewards: [
                 {
                     type: 'stack',
@@ -446,6 +446,110 @@ ServerEvents.highPriorityData((event) => {
                 }
             ],
             id: 'wild_hunt_gate'
+        },
+        {
+            size: 'large',
+            color: '#D3D3D3',
+            leash_range: 256,
+            rewards: [
+                {
+                    type: 'stack',
+                    stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                },
+                {
+                    type: 'apotheosis:affix',
+                    rarity: 'rare'
+                },
+                {
+                    type: 'loot_table',
+                    loot_table: 'enigmatica:apotheosis_gem_cache',
+                    rolls: 5,
+                    desc: 'Apotheosis Gems'
+                }
+            ],
+            completion_xp: 5000,
+            spawn_range: 3,
+            waves: [
+                {
+                    entities: [
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 2400,
+                    setup_time: 50
+                },
+                {
+                    entities: [
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 2400,
+                    setup_time: 50
+                },
+                {
+                    entities: [
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 2400,
+                    setup_time: 50
+                },
+                {
+                    entities: [
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                        }
+                    ],
+                    max_wave_time: 2400,
+                    setup_time: 50
+                }
+            ],
+            id: 'possessed_skeleton_gate'
         }
     ];
 
@@ -646,7 +750,7 @@ ServerEvents.highPriorityData((event) => {
             let recipe = {
                 size: size,
                 color: gateway.color,
-                leash_range: 64,
+                leash_range: 256,
                 waves: [],
                 completion_xp: completion_xp,
                 rewards: [primary_reward],

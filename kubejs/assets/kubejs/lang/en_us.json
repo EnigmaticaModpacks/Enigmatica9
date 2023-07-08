@@ -618,5 +618,11 @@
     "ritual.enigmatica.occultism/ritual/wild_hunt_gate.started": "Started Summoning the Wild Hunt",
     "ritual.enigmatica.occultism/ritual/wild_hunt_gate.finished": "The Wild Hunt gateway has opened",
     "ritual.enigmatica.occultism/ritual/wild_hunt_gate.interrupted": "The Wild Hunt gateway has been interrupted",
-    "ritual.enigmatica.occultism/ritual/wild_hunt_gate.conditions": "Not all requirements for this ritual are met."
+    "ritual.enigmatica.occultism/ritual/wild_hunt_gate.conditions": "Not all requirements for this ritual are met.",
+
+    "gateways.possessed_skeleton_gate": "Possessed Skeleton Gate",
+    "ritual.enigmatica.occultism/ritual/possessed_skeleton_gate.started": "Started Summoning Possessed Skeletons",
+    "ritual.enigmatica.occultism/ritual/possessed_skeleton_gate.finished": "The Possessed Skeleton gateway has opened",
+    "ritual.enigmatica.occultism/ritual/possessed_skeleton_gate.interrupted": "The Possessed Skeleton gateway has been interrupted",
+    "ritual.enigmatica.occultism/ritual/possessed_skeleton_gate.conditions": "Not all requirements for this ritual are met."
 }
