@@ -705,7 +705,7 @@
 				}
 			]
 			x: 6.5d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["31E4C2A162D7497C"]
@@ -768,7 +768,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1D0AA79380E87E57"]
@@ -844,6 +844,41 @@
 			}]
 			x: 3.5d
 			y: 3.0d
+		}
+		{
+			dependencies: ["330C200F0F0243FC"]
+			description: [
+				"Having friends on the Other Side is proving quite advantageous, as it seems that distances mean little to them in their realm. "
+				""
+				"A Quantum Network Bridge exploits this feature of their realm quite handily, making it possible to transport items, fluids, gasses, even power over incredibly long distances and between realms. "
+				""
+				"Refer to the quest in the Applied Energistics 2 chapter for more information on constructing this multiblock."
+			]
+			icon: "ae2:quantum_entangled_singularity"
+			id: "206B112E5F0C1C0A"
+			rewards: [{
+				id: "51FA17E37F1C0EE5"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					count: 16L
+					id: "191656C32155B744"
+					item: "ae2:quantum_ring"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "588420C0C476EAA5"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+			]
+			title: "Quantum Network Bridge"
+			x: 6.5d
+			y: 0.0d
 		}
 	]
 	title: "Chapter Two"
