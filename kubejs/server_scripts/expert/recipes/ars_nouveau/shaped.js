@@ -147,6 +147,15 @@ ServerEvents.recipes((event) => {
                 D: '#forge:essences/air'
             },
             id: `ars_nouveau:basic_spell_turret`
+        },
+        {
+            output: 'ars_nouveau:void_prism',
+            pattern: [' A ', 'ABA', ' A '],
+            key: {
+                A: 'manyideas_core:end_block',
+                B: 'ars_nouveau:spell_prism'
+            },
+            id: `ars_nouveau:void_prism`
         }
     ];
 
