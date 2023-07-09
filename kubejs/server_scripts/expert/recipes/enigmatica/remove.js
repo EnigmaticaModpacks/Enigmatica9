@@ -184,6 +184,7 @@ ServerEvents.recipes((event) => {
         { id: 'immersiveengineering:blueprint/graphite_electrode' },
         { id: 'immersiveengineering:metalpress/melon' },
         { id: 'immersiveengineering:crafting/drillhead_iron' },
+        { id: 'immersiveengineering:crafting/redstone_acid' },
 
         { id: /industrialforegoing:laser_drill_ore/ },
         { id: /industrialforegoing:.*black_hole/ },
