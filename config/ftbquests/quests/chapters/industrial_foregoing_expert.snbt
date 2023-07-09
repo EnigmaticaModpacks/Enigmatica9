@@ -307,36 +307,6 @@
 			]
 			hide_dependency_lines: true
 			id: "2E391C1331D1C854"
-			rewards: [{
-				id: "45BF216EF5EE391A"
-				item: {
-					Count: 1b
-					id: "industrialforegoing:common_black_hole_tank"
-					tag: {
-						BlockEntityTag: {
-							filter: {
-								Filter: { }
-								Pointer: 0
-								Type: "WHITELIST"
-							}
-							tank: {
-								Amount: 16000
-								FacingModes: {
-									BACK: "ENABLED"
-									BOTTOM: "ENABLED"
-									FRONT: "ENABLED"
-									LEFT: "ENABLED"
-									RIGHT: "ENABLED"
-									TOP: "ENABLED"
-								}
-								FluidName: "industrialforegoing:meat"
-							}
-						}
-					}
-				}
-				title: "Common Black Hole Tank"
-				type: "item"
-			}]
 			subtitle: "A Blight Upon the Land"
 			tasks: [{
 				id: "02831806736BC87A"
@@ -590,21 +560,14 @@
 			hide_dependency_lines: true
 			icon: "industrialforegoing:fluid_laser_base"
 			id: "56A313EA5C3D6A59"
-			rewards: [
-				{
-					id: "32447B3077222298"
-					item: "industrialforegoing:laser_lens14"
-					type: "item"
-				}
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/epic"
-					icon: "kubejs:epic_lootbox"
-					id: "356398A4898C5D98"
-					player_command: false
-					title: "Epic Industrial Foregoing Loot Box"
-					type: "command"
-				}
-			]
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "356398A4898C5D98"
+				player_command: false
+				title: "Epic Industrial Foregoing Loot Box"
+				type: "command"
+			}]
 			subtitle: "If Memory Serves"
 			tasks: [
 				{
