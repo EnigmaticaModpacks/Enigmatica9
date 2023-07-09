@@ -3,12 +3,6 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            result: Item.of('emendatusenigmatica:hop_graphite_dust').toJson(),
-            input: { base_ingredient: { tag: 'forge:dusts/coal_coke' }, count: 8 },
-            energy: 19200,
-            id: `${id_prefix}hop_graphite`
-        },
-        {
             fluid: { amount: 180, fluid: 'pneumaticcraft:vegetable_oil' },
             input: [{ item: 'thermal:peanut' }],
             energy: 6400,

@@ -181,6 +181,7 @@ ServerEvents.recipes((event) => {
         { id: 'immersiveengineering:blueprint/mold_gear' },
         { id: 'immersiveengineering:blueprint/circuit_board' },
         { id: 'immersiveengineering:blueprint/component_electronic_adv' },
+        { id: 'immersiveengineering:blueprint/graphite_electrode' },
         { id: 'immersiveengineering:metalpress/melon' },
         { id: 'immersiveengineering:crafting/drillhead_iron' },
 
