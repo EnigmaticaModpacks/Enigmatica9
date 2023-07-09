@@ -11,6 +11,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('occultism:book_of_binding_foliot', 1, [1, 2]);
             pool.addItem('occultism:book_of_binding_djinni', 1, [1, 2]);
             pool.addItem('occultism:storage_stabilizer_tier1', 1, 1);
+            pool.addItem('minecraft:skeleton_skull', 1, [4, 8]);
         });
 
         table.addPool((pool) => {
@@ -23,7 +24,6 @@ ServerEvents.genericLootTables((event) => {
         table.addPool((pool) => {
             pool.rolls = 2.0;
             pool.addItem('occultism:stable_wormhole', 1, 1);
-            pool.addItem('minecraft:skeleton_skull', 1, [4, 8]);
             pool.addItem('occultism:book_of_binding_afrit', 1, [1, 2]);
             pool.addItem('occultism:book_of_binding_marid', 1, [1, 2]);
             pool.addItem('occultism:storage_stabilizer_tier2', 1, 1);
