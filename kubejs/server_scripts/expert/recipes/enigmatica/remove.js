@@ -531,6 +531,7 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:machines/pulverizer/pulverizer_emerald' },
         { id: 'thermal:machines/pulverizer/pulverizer_diamond' },
         { id: 'thermal:machines/crucible/crucible_ender_pearl' },
+        { id: 'thermal:fuels/disenchantment/disenchantment_experience_bottle' },
 
         { id: /theurgy:.*divination_rod/ },
 
