@@ -122,7 +122,6 @@ ServerEvents.highPriorityData((event) => {
                 ['target_advancement_done_5'],
                 ['target_advancement_done_7'],
                 ['target_advancement_done_8'],
-                ['target_advancement_done_9'],
                 ['target_advancement_done_10'],
                 ['target_advancement_done_11'],
                 ['target_advancement_done_12'],
