@@ -41,6 +41,12 @@ ServerEvents.recipes((event) => {
             start_item: { item: 'kubejs:spirit_of_devotion' },
             id: `${id_prefix}tainted_gold_block`
         }
+        // {
+        //     output: { item: 'kubejs:primordial_seed', count: 1 },
+        //     input: { tag: 'forge:storage_blocks/infused_iron' },
+        //     start_item: { item: 'naturesaura:calling_spirit' },
+        //     id: `${id_prefix}primordial_seed`
+        // }
     ];
 
     recipes.forEach((recipe) => {

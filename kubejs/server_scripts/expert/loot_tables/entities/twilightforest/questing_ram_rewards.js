@@ -10,11 +10,16 @@ ServerEvents.genericLootTables((event) => {
         });
         table.addPool((pool) => {
             pool.rolls = 1.0;
-            pool.addItem('minecraft:bundle', 1).addFunction({
-                function: 'minecraft:set_nbt',
-                tag: '{Items:[{Count:1b,id:"twilightforest:quest_ram_trophy"},{Count:1b,id:"minecraft:coal_block"},{Count:1b,id:"minecraft:prismarine_bricks"},{Count:1b,id:"minecraft:lapis_block"}]}'
-                // TODO: This is really boring. Find some fun things to stick in here in the future.
-            });
+            pool.addItem(
+                Item.of('minecraft:bundle', 1, {
+                    Items: [
+                        { id: 'twilightforest:quest_ram_trophy', Count: 1 },
+                        { id: 'byg:therium_crystal_block', Count: 16 },
+                        { id: 'minecraft:sea_lantern', Count: 16 },
+                        { id: 'twilightforest:steeleaf_block', Count: 16 }
+                    ]
+                })
+            );
         });
     });
 });

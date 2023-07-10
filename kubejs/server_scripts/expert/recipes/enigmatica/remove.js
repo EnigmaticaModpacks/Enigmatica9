@@ -71,6 +71,8 @@ ServerEvents.recipes((event) => {
 
         { id: 'ars_elemental:flight_alt' },
         { id: 'ars_elemental:mark_of_mastery' },
+        { id: 'ars_elemental:siren_charm' },
+        { id: 'ars_elemental:firenando_charm' },
 
         { id: 'ars_nouveau:sunrise_2' },
         { id: 'ars_nouveau:moonfall_2' },

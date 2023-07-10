@@ -26,12 +26,12 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}treated_wood_horizontal`
         },
         {
-            item_output: { item: 'kubejs:calcined_kaolin_pearls' },
+            item_output: { item: 'kubejs:calcined_kaolin_pearl' },
             item_input: [{ item: 'kubejs:kaolin_clay' }],
             exothermic: false,
             temperature: { max_temp: 1123, min_temp: 923 },
             speed: 2.0,
-            id: `${id_prefix}calcined_kaolin_pearls`
+            id: `${id_prefix}calcined_kaolin_pearl`
         },
         {
             item_output: { item: 'emendatusenigmatica:aluminum_dirty_dust' },

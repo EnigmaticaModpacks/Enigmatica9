@@ -46,16 +46,16 @@ ServerEvents.recipes((event) => {
             output: 'minecraft:prismarine_crystals',
             input: 'ae2:charged_certus_quartz_crystal',
             catalyst: 'naturesaura:conversion_catalyst',
-            aura: 18000,
-            time: 60,
+            aura: 3000,
+            time: 10,
             id: `naturesaura:altar/prismarine_crystal`
         },
         {
             output: 'minecraft:prismarine_shard',
             input: 'ae2:certus_quartz_crystal',
             catalyst: 'naturesaura:conversion_catalyst',
-            aura: 18000,
-            time: 60,
+            aura: 3000,
+            time: 10,
             id: `naturesaura:altar/prismarine`
         },
         {

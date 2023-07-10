@@ -127,8 +127,16 @@ ServerEvents.recipes((event) => {
             count: 1,
             reagent: 'ae2:certus_quartz_crystal',
             inputs: [],
-            source: 1000,
+            source: 500,
             id: `${id_prefix}charged_certus_quartz_crystal`
+        },
+        {
+            output: 'ae2:charged_certus_quartz_crystal',
+            count: 4,
+            reagent: 'ae2:quartz_block',
+            inputs: [],
+            source: 2000,
+            id: `${id_prefix}charged_certus_quartz_crystal_from_block`
         },
         {
             output: 'thermal:fire_grenade',
@@ -193,6 +201,20 @@ ServerEvents.recipes((event) => {
             inputs: ['#forge:slimeballs'],
             source: 50,
             id: `${id_prefix}slime_grenade`
+        },
+        {
+            output: 'kubejs:primordial_seed',
+            count: 1,
+            reagent: 'minecraft:enchanted_golden_apple',
+            inputs: [
+                'twilightforest:quest_ram_trophy',
+                'ars_nouveau:drygmy_charm',
+                'ars_nouveau:whirlisprig_charm',
+                'ars_elemental:firenando_charm',
+                'ars_elemental:siren_charm'
+            ],
+            source: 10000,
+            id: `${id_prefix}primordial_seed`
         }
     ];
 

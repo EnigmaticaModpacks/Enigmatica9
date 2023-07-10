@@ -694,6 +694,15 @@ ServerEvents.highPriorityData((event) => {
                 uncommon: { entity: 'twilightforest:mist_wolf', nbt: '{}' },
                 rare: { entity: 'thermal:blizz', nbt: '{}' }
             }
+        },
+        {
+            type: 'swarm_gate',
+            color: '#eb34eb',
+            entries: {
+                common: { entity: 'minecraft:silverfish', nbt: '{}' },
+                uncommon: { entity: 'twilightforest:towerwood_borer', nbt: '{}' },
+                rare: { entity: 'minecraft:endermite', nbt: '{}' }
+            }
         }
     ];
 
@@ -702,6 +711,11 @@ ServerEvents.highPriorityData((event) => {
             let id = size == 'medium' ? gateway.type : `${gateway.type}_${size}`;
             let max_wave_time = 1800;
             let setup_time = 150;
+            let multiplier = 1;
+
+            if (gateway.type == 'swarm_gate') {
+                multiplier = 6;
+            }
 
             // Defaults for Small gateways
             let loot_multiplier = 1,
@@ -709,11 +723,26 @@ ServerEvents.highPriorityData((event) => {
                 spawn_range = 5,
                 primary_reward = { type: 'apotheosis:affix', rarity: 'common' },
                 wave_properties = [
-                    { common: 2, uncommon: 0, rare: 0, modifier: 'none' },
-                    { common: 2, uncommon: 0, rare: 0, modifier: gateways_wave_modifiers.wave_two },
-                    { common: 3, uncommon: 1, rare: 0, modifier: gateways_wave_modifiers.wave_three },
-                    { common: 3, uncommon: 1, rare: 0, modifier: gateways_wave_modifiers.wave_four },
-                    { common: 3, uncommon: 2, rare: 1, modifier: gateways_wave_modifiers.wave_five }
+                    { common: 2 * multiplier, uncommon: 0, rare: 0, modifier: 'none' },
+                    { common: 2 * multiplier, uncommon: 0, rare: 0, modifier: gateways_wave_modifiers.wave_two },
+                    {
+                        common: 3 * multiplier,
+                        uncommon: 1 * multiplier,
+                        rare: 0,
+                        modifier: gateways_wave_modifiers.wave_three
+                    },
+                    {
+                        common: 3 * multiplier,
+                        uncommon: 1 * multiplier,
+                        rare: 0,
+                        modifier: gateways_wave_modifiers.wave_four
+                    },
+                    {
+                        common: 3 * multiplier,
+                        uncommon: 2 * multiplier,
+                        rare: 1 * multiplier,
+                        modifier: gateways_wave_modifiers.wave_five
+                    }
                 ];
 
             // Medium
@@ -723,11 +752,31 @@ ServerEvents.highPriorityData((event) => {
                 spawn_range = spawn_range + 2;
                 primary_reward = { type: 'apotheosis:affix', rarity: 'uncommon' };
                 wave_properties = [
-                    { common: 2, uncommon: 1, rare: 0, modifier: 'none' },
-                    { common: 2, uncommon: 1, rare: 0, modifier: gateways_wave_modifiers.wave_two },
-                    { common: 3, uncommon: 2, rare: 0, modifier: gateways_wave_modifiers.wave_three },
-                    { common: 3, uncommon: 2, rare: 1, modifier: gateways_wave_modifiers.wave_four },
-                    { common: 3, uncommon: 2, rare: 2, modifier: gateways_wave_modifiers.wave_five }
+                    { common: 2 * multiplier, uncommon: 1 * multiplier, rare: 0, modifier: 'none' },
+                    {
+                        common: 2 * multiplier,
+                        uncommon: 1 * multiplier,
+                        rare: 0,
+                        modifier: gateways_wave_modifiers.wave_two
+                    },
+                    {
+                        common: 3 * multiplier,
+                        uncommon: 2 * multiplier,
+                        rare: 0,
+                        modifier: gateways_wave_modifiers.wave_three
+                    },
+                    {
+                        common: 3 * multiplier,
+                        uncommon: 2 * multiplier,
+                        rare: 1 * multiplier,
+                        modifier: gateways_wave_modifiers.wave_four
+                    },
+                    {
+                        common: 3 * multiplier,
+                        uncommon: 2 * multiplier,
+                        rare: 2 * multiplier,
+                        modifier: gateways_wave_modifiers.wave_five
+                    }
                 ];
             }
 
@@ -738,11 +787,31 @@ ServerEvents.highPriorityData((event) => {
                 spawn_range = spawn_range + 4;
                 primary_reward = { type: 'apotheosis:affix', rarity: 'rare' };
                 wave_properties = [
-                    { common: 3, uncommon: 3, rare: 0, modifier: 'none' },
-                    { common: 3, uncommon: 3, rare: 0, modifier: gateways_wave_modifiers.wave_two },
-                    { common: 5, uncommon: 3, rare: 0, modifier: gateways_wave_modifiers.wave_three },
-                    { common: 5, uncommon: 4, rare: 3, modifier: gateways_wave_modifiers.wave_four },
-                    { common: 6, uncommon: 5, rare: 4, modifier: gateways_wave_modifiers.wave_five }
+                    { common: 3 * multiplier, uncommon: 3 * multiplier, rare: 0, modifier: 'none' },
+                    {
+                        common: 3 * multiplier,
+                        uncommon: 3 * multiplier,
+                        rare: 0,
+                        modifier: gateways_wave_modifiers.wave_two
+                    },
+                    {
+                        common: 5 * multiplier,
+                        uncommon: 3 * multiplier,
+                        rare: 0,
+                        modifier: gateways_wave_modifiers.wave_three
+                    },
+                    {
+                        common: 5 * multiplier,
+                        uncommon: 4 * multiplier,
+                        rare: 3 * multiplier,
+                        modifier: gateways_wave_modifiers.wave_four
+                    },
+                    {
+                        common: 6 * multiplier,
+                        uncommon: 5 * multiplier,
+                        rare: 4 * multiplier,
+                        modifier: gateways_wave_modifiers.wave_five
+                    }
                 ];
             }
 
