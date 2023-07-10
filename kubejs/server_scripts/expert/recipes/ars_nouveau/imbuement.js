@@ -193,6 +193,20 @@ ServerEvents.recipes((event) => {
             inputs: ['#forge:slimeballs'],
             source: 50,
             id: `${id_prefix}slime_grenade`
+        },
+        {
+            output: 'kubejs:primordial_seed',
+            count: 1,
+            reagent: 'minecraft:enchanted_golden_apple',
+            inputs: [
+                'twilightforest:quest_ram_trophy',
+                'ars_nouveau:drygmy_charm',
+                'ars_nouveau:whirlisprig_charm',
+                'ars_elemental:firenando_charm',
+                'ars_elemental:siren_charm'
+            ],
+            source: 10000,
+            id: `${id_prefix}primordial_seed`
         }
     ];
 

@@ -364,7 +364,7 @@ JEIEvents.information((event) => {
         },
         {
             items: ['twilightforest:borer_essence'],
-            text: [`Drops from Towerwood Borers.`]
+            text: [`Drops from Towerwood Borers which may be found by breaking Infested Towerwood in the Dark Tower.`]
         },
         {
             items: ['twilightforest:liveroot'],

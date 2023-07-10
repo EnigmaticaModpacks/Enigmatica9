@@ -211,6 +211,41 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_summon_whirlisprig_from_shards`
         },
         {
+            output: 'ars_elemental:siren_charm',
+            activation_item: '#forge:essences/conjuration',
+            inputs: ['hexerei:mindful_trance_blend', 'thermal:aquachow', 'thermal:junk_net', 'thermal:aquachow'],
+            ritual_dummy: 'kubejs:ritual_summon_siren',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_siren`
+        },
+        {
+            output: 'ars_elemental:siren_charm',
+            activation_item: '#forge:essences/conjuration',
+            inputs: ['ars_elemental:siren_shards'],
+            ritual_dummy: 'kubejs:ritual_summon_siren_from_shards',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_siren_from_shards`
+        },
+        {
+            output: 'ars_elemental:firenando_charm',
+            activation_item: '#forge:essences/conjuration',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'twilightforest:fiery_blood',
+                'twilightforest:fiery_sword',
+                'twilightforest:fiery_blood'
+            ],
+            ritual_dummy: 'kubejs:ritual_summon_firenando',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_firenando`
+        },
+        {
             output: Item.of('hexerei:willow_broom', {
                 Inventory: {
                     Items: [
