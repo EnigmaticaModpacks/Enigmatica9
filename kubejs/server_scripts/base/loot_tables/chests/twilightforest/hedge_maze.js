@@ -40,8 +40,8 @@ ServerEvents.genericLootTables((event) => {
 
         table.addPool((pool) => {
             pool.rolls = [1, 1];
-            pool.randomChance(0.15);
-            pool.addItem(Item.of('occultism:familiar_ring', '{familiarType:"occultism:deer_familiar"}'), 1, 1);
+            pool.randomChance(0.3);
+            pool.addItem(Item.of('sophisticatedbackpacks:iron_backpack'), 1, 1);
         });
     });
 });
