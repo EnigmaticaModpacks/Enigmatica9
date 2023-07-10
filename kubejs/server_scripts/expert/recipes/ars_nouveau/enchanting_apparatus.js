@@ -98,7 +98,70 @@ ServerEvents.recipes((event) => {
             sourceCost: 1000,
             id: `${id_prefix}mold_gear`
         },
-
+        {
+            output: 'buildinggadgets:gadget_building',
+            inputs: [
+                'supplementaries:crystal_display',
+                'powah:capacitor_basic_large',
+                'powah:capacitor_basic_large',
+                'ars_nouveau:glyph_place_block',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation'
+            ],
+            reagents: ['mininggadgets:upgrade_empty'],
+            sourceCost: 5000,
+            id: `${id_prefix}gadget_building`
+        },
+        {
+            output: 'buildinggadgets:gadget_exchanging',
+            inputs: [
+                'supplementaries:crystal_display',
+                'powah:capacitor_basic_large',
+                'powah:capacitor_basic_large',
+                'ars_nouveau:glyph_exchange',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation'
+            ],
+            reagents: ['mininggadgets:upgrade_empty'],
+            sourceCost: 5000,
+            id: `${id_prefix}gadget_exchanging`
+        },
+        {
+            output: 'buildinggadgets:gadget_copy_paste',
+            inputs: [
+                'supplementaries:crystal_display',
+                'powah:capacitor_basic_large',
+                'powah:capacitor_basic_large',
+                'ars_nouveau:glyph_phantom_block',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation'
+            ],
+            reagents: ['mininggadgets:upgrade_empty'],
+            sourceCost: 5000,
+            id: `${id_prefix}gadget_copy_paste`
+        },
+        {
+            output: 'buildinggadgets:gadget_destruction',
+            inputs: [
+                'supplementaries:crystal_display',
+                'powah:capacitor_basic_large',
+                'powah:capacitor_basic_large',
+                'ars_nouveau:glyph_ignite',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation'
+            ],
+            reagents: ['mininggadgets:upgrade_empty'],
+            sourceCost: 5000,
+            id: `${id_prefix}gadget_destruction`
+        },
         {
             output: 'pneumaticcraft:pneumatic_helmet',
             inputs: [

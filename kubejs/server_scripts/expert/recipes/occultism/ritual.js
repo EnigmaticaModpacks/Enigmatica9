@@ -1122,10 +1122,10 @@ ServerEvents.recipes((event) => {
                 'immersiveengineering:coil_mv',
                 'immersiveengineering:coil_mv',
                 'immersiveengineering:coil_mv',
-                '#forge:gears/aluminum',
-                '#forge:gears/aluminum',
-                '#forge:gears/aluminum',
-                '#forge:gears/aluminum'
+                'minecraft:lodestone',
+                'minecraft:lodestone',
+                'minecraft:lodestone',
+                'minecraft:lodestone'
             ],
             entity_to_sacrifice: {
                 tag: 'enigmatica:elementals/earth',

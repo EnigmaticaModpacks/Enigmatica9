@@ -79,6 +79,8 @@ ServerEvents.recipes((event) => {
         { id: /ars_scalaes:.*_broom_from_mixing_cauldron/ },
         { id: /ars_scalaes:.*_brush_from_mixing_cauldron/ },
 
+        { id: /buildinggadgets:gadget_/ },
+
         { id: 'constructionwand:stone_wand' },
         { id: 'constructionwand:iron_wand' },
 

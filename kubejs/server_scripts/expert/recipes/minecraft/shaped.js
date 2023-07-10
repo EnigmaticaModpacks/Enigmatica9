@@ -6,6 +6,17 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
+            output: 'minecraft:piston',
+            pattern: [' A ', 'BCB', ' D '],
+            key: {
+                A: '#forge:treated_wood_slab',
+                B: '#forge:dusts/redstone',
+                C: 'minecraft:andesite',
+                D: 'create:piston_extension_pole'
+            },
+            id: `minecraft:piston`
+        },
+        {
             output: 'minecraft:cauldron',
             pattern: ['A A', 'A A', 'AAA'],
             key: {

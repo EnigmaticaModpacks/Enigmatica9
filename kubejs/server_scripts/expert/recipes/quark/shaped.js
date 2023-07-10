@@ -13,6 +13,16 @@ ServerEvents.recipes((event) => {
                 B: '#forge:ingots/infused_iron'
             },
             id: 'quark:tools/crafting/trowel'
+        },
+        {
+            output: 'quark:abacus',
+            pattern: ['ABA', 'ACA', 'ABA'],
+            key: {
+                A: '#minecraft:planks',
+                B: '#forge:rods/wooden',
+                C: '#forge:ingots/bronze'
+            },
+            id: 'quark:tools/crafting/abacus'
         }
     ];
 
