@@ -1799,6 +1799,15 @@ ServerEvents.recipes((event) => {
         {
             type: 'blitz',
             inputs: ['#forge:essences/conjuration', '#forge:essences/air', '#forge:essences/air', '#forge:essences/air']
+        },
+        {
+            type: 'swarm',
+            inputs: [
+                '#forge:essences/conjuration',
+                'minecraft:stone_bricks',
+                'minecraft:end_stone_bricks',
+                'twilightforest:towerwood'
+            ]
         }
     ];
 

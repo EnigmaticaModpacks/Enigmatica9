@@ -67,22 +67,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}deep_aquachow`
         },
         {
-            output: '4x byg:subzero_crystal_shard',
-            input: '#forge:storage_blocks/therium',
-            catalyst: 'naturesaura:conversion_catalyst',
-            aura: 15000,
-            time: 80,
-            id: `${id_prefix}subzero_crystal_shard`
-        },
-        {
-            output: '4x byg:therium_crystal_shard',
-            input: '#forge:storage_blocks/subzero',
-            catalyst: 'naturesaura:conversion_catalyst',
-            aura: 15000,
-            time: 80,
-            id: `${id_prefix}therium_crystal_shard`
-        },
-        {
             output: 'pneumaticcraft:drill_bit_netherite',
             input: 'pneumaticcraft:unassembled_netherite_drill_bit',
             aura: 500000,

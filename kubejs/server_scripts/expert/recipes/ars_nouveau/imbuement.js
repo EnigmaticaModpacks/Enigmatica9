@@ -127,8 +127,16 @@ ServerEvents.recipes((event) => {
             count: 1,
             reagent: 'ae2:certus_quartz_crystal',
             inputs: [],
-            source: 1000,
+            source: 500,
             id: `${id_prefix}charged_certus_quartz_crystal`
+        },
+        {
+            output: 'ae2:charged_certus_quartz_crystal',
+            count: 4,
+            reagent: 'ae2:quartz_block',
+            inputs: [],
+            source: 2000,
+            id: `${id_prefix}charged_certus_quartz_crystal_from_block`
         },
         {
             output: 'thermal:fire_grenade',

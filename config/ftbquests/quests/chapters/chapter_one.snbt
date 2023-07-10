@@ -607,7 +607,7 @@
 			]
 			title: "Applied Energistics"
 			x: -9.0d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7CFD3DFD4C593EB5"]
@@ -674,7 +674,7 @@
 				}
 			]
 			x: 2.0d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["7AD5D1665CA3DF4F"]
@@ -1200,7 +1200,7 @@
 			}]
 			title: "Familiar Friends"
 			x: 2.0d
-			y: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["79B755D0BDB6A8B7"]
@@ -1364,7 +1364,7 @@
 				}
 			]
 			x: 1.5d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["7CFD3DFD4C593EB5"]
@@ -1405,7 +1405,7 @@
 				}
 			]
 			x: 2.5d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7CFD3DFD4C593EB5"]
@@ -1441,7 +1441,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7CFD3DFD4C593EB5"]
@@ -1514,7 +1514,7 @@
 			}]
 			title: "Familiars"
 			x: 1.0d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["7CFD3DFD4C593EB5"]
@@ -1537,7 +1537,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["7CFD3DFD4C593EB5"]
@@ -1594,7 +1594,7 @@
 				}
 			]
 			x: 3.0d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["11AB47232D9F5D6D"]
@@ -1647,7 +1647,7 @@
 		{
 			dependencies: ["729E9D41A28D0E4D"]
 			description: [
-				"Restoring the Tree of Life to its full glory will be no easy task. Use the knowledge obtained thus far to grow the seedling. With time and sacrifice, it will grow stronger. "
+				"Restoring the Tree of Life to its full glory will be no easy task. Use the knowledge obtained thus far to grow the Primordial Seed. With time and sacrifice, it will grow stronger. "
 				""
 				"Choose a ritual site with plenty of room to give the tree the space it needs to take root. Performing this ritual will grow the tree immediately, centered upon the ritual pentacle. "
 			]
@@ -1819,7 +1819,7 @@
 				""
 				"That all seems rather far out of reach for now, but simple transport seems viable at least."
 				""
-				"================================="
+				"========================================"
 				""
 				"Begin by locating some Certus Quartz; the Wilden Grove will undoubtedly have left some behind in their ore mounds. "
 				""
@@ -1827,6 +1827,7 @@
 			]
 			hide_dependency_lines: true
 			id: "0BAE6EBFEA3026B9"
+			min_width: 250
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 				icon: "kubejs:alchemists_delight"
@@ -1842,8 +1843,8 @@
 				type: "item"
 			}]
 			title: "Certus Farming"
-			x: -9.0d
-			y: 1.5d
+			x: -9.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4B874AA448FF4C7A"]
@@ -2173,7 +2174,124 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["66A59B3CD77FB54A"]
+			description: [
+				"One of the few remaining guardians of these lands, the Questing Ram makes its home in the Enchanted Forest. "
+				""
+				"Seek them out and complete their task. It is doubtful they’ll know precisely what happened, but they may have knowledge vital to the restoration of the Tree of Life.  "
+				""
+				"================================="
+				""
+				"Obtain Wool of each color and provide it to the Ram. "
+			]
+			id: "032D29DD7D946EDB"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "69D3102DD62060D9"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "45865EFBDFC3E239"
+				item: "twilightforest:quest_ram_trophy"
+				type: "item"
+			}]
+			title: "Questing Ram"
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["032D29DD7D946EDB"]
+			description: [
+				"The Questing Ram has agreed to assist in renewing the Tree of Life by providing the necessary knowledge for recreating the Primordial Seed. However, they’ll need some help to do so. "
+				""
+				"Summon forth the elemental spirits of this land to imbue their energy into the Seed."
+			]
+			hide: true
+			id: "1DC39E690B6178EF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "67BBB8A5B92C7AE7"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "644F047CE0367F5A"
+				item: "kubejs:primordial_seed"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3B372F597A05E777"]
+			description: [
+				"While the Dark Tower itself is largely infested with Towerwood Borers, it’s trivial to attract more of the critters. Getting rid of them, on the other hand, may prove a little more complicated. "
+				""
+				"They don’t come alone, however, so care should be taken!"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "gateways:swarm_gate_large"
+				}
+			}
+			id: "5D1FCC45134CB879"
+			rewards: [{
+				count: 4
+				id: "291E911003FDDDA7"
+				item: "emendatusenigmatica:carminite_gem"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					entity: "minecraft:endermite"
+					icon: "minecraft:spawner"
+					id: "534A73E9BF329237"
+					type: "kill"
+					value: 5L
+				}
+				{
+					entity: "twilightforest:towerwood_borer"
+					id: "2E7B9A411B813DED"
+					type: "kill"
+					value: 5L
+				}
+				{
+					entity: "minecraft:silverfish"
+					icon: "minecraft:spawner"
+					id: "1567106A573CDBAD"
+					type: "kill"
+					value: 5L
+				}
+				{
+					id: "7849128B7816AA53"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:swarm_gate_small"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Summon Mite Swarms"
+			x: -8.5d
+			y: 2.0d
 		}
 	]
 	title: "Chapter One"
