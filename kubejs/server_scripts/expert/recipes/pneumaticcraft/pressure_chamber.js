@@ -16,7 +16,7 @@ ServerEvents.recipes((event) => {
         },
         {
             results: [{ item: 'kubejs:kaolin_powder', count: 2 }],
-            inputs: [{ item: 'kubejs:calcined_kaolin_pearls' }],
+            inputs: [{ item: 'kubejs:calcined_kaolin_pearl' }],
             pressure: 4.0,
             id: `${id_prefix}kaolin_powder`
         },
@@ -559,7 +559,7 @@ ServerEvents.recipes((event) => {
                 { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_renewal', count: 64 },
 
                 { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:fertilizer', count: 64 },
-                { item: 'naturesaura:ancient_sapling' },
+                { item: 'kubejs:primordial_seed' },
                 { type: 'pneumaticcraft:stacked_item', item: 'immersiveengineering:fertilizer', count: 64 },
 
                 { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_renewal', count: 64 },

@@ -18,7 +18,7 @@ StartupEvents.registry('item', (event) => {
         'crude_iron_ingot',
         'red_nether_brick',
         'kaolin_clay',
-        'calcined_kaolin_pearls',
+        'calcined_kaolin_pearl',
         'kaolin_powder',
         'mystery_mash',
         'energetic_transference_matrix',
@@ -41,7 +41,8 @@ StartupEvents.registry('item', (event) => {
         'mastery_token_air',
         'mastery_token_earth',
         'mastery_token_fire',
-        'mastery_token_water'
+        'mastery_token_water',
+        'primordial_seed'
     ];
 
     const ritualDummies = [

@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/cube_column",
+    "textures": {
+        "end": "byg:block/zelkova/log_top",
+        "side": "kubejs:block/heartwood_stage_2"
+    }
+}
