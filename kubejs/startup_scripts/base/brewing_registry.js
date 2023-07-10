@@ -209,7 +209,7 @@ MoreJSEvents.registerPotionBrewing((event) => {
             output: 'minecraft:slowness'
         },
         {
-            reagent: 'byg:baobab_fruit',
+            reagent: 'thermal:spinach_block',
             input: 'minecraft:awkward',
             output: 'apotheosis:resistance'
         },
