@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
     if (global.isNormalMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/immersiveengineering/shaped/';
+    const id_prefix = 'enigmatica:normal/immersiveengineering/shaped/';
 
     const recipes = [
         {

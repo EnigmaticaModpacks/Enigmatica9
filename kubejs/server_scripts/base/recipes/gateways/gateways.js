@@ -11,7 +11,7 @@ ServerEvents.highPriorityData((event) => {
             rewards: [
                 {
                     type: 'stack',
-                    stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                    stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                 },
                 {
                     type: 'loot_table',
@@ -43,7 +43,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -62,7 +62,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -81,7 +81,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -101,7 +101,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -121,7 +121,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -138,7 +138,7 @@ ServerEvents.highPriorityData((event) => {
             rewards: [
                 {
                     type: 'stack',
-                    stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                    stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                 },
                 {
                     type: 'apotheosis:affix',
@@ -169,7 +169,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 1500,
@@ -190,7 +190,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 750,
@@ -201,7 +201,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 1500,
@@ -222,7 +222,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 1500,
@@ -239,7 +239,7 @@ ServerEvents.highPriorityData((event) => {
             rewards: [
                 {
                     type: 'stack',
-                    stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                    stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                 },
                 {
                     type: 'apotheosis:affix',
@@ -268,7 +268,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 800,
@@ -292,7 +292,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 800,
@@ -316,7 +316,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 800,
@@ -334,7 +334,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -350,7 +350,7 @@ ServerEvents.highPriorityData((event) => {
             rewards: [
                 {
                     type: 'stack',
-                    stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                    stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                 },
                 {
                     type: 'apotheosis:affix',
@@ -378,7 +378,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -396,7 +396,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -417,7 +417,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -438,7 +438,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -454,7 +454,7 @@ ServerEvents.highPriorityData((event) => {
             rewards: [
                 {
                     type: 'stack',
-                    stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                    stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                 },
                 {
                     type: 'apotheosis:affix',
@@ -479,7 +479,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -497,7 +497,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -518,7 +518,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -542,7 +542,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,

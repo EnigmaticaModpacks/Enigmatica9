@@ -1122,10 +1122,10 @@ ServerEvents.recipes((event) => {
                 'immersiveengineering:coil_mv',
                 'immersiveengineering:coil_mv',
                 'immersiveengineering:coil_mv',
-                '#forge:gears/aluminum',
-                '#forge:gears/aluminum',
-                '#forge:gears/aluminum',
-                '#forge:gears/aluminum'
+                'minecraft:lodestone',
+                'minecraft:lodestone',
+                'minecraft:lodestone',
+                'minecraft:lodestone'
             ],
             entity_to_sacrifice: {
                 tag: 'enigmatica:elementals/earth',
@@ -1201,23 +1201,6 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:summon_lesser_evil',
             duration: 10,
             id: `occultism:ritual/possess_enderman`
-        },
-        {
-            output: Item.of('gateways:gate_pearl', `{gateway:"gateways:possessed_skeleton_gate", radius:5}`),
-            activation_item: 'byg:hanging_bones',
-            inputs: ['#forge:essences/anima', 'minecraft:bone_meal', 'minecraft:bone_meal', 'minecraft:bone_meal'],
-            entity_to_summon: 'occultism:possessed_skeleton',
-            entity_to_sacrifice: { tag: 'enigmatica:deer', display_name: 'ritual.occultism.sacrifice.deer' },
-            ritual_dummy: Item.of('minecraft:skeleton_skull', {
-                display: {
-                    Name: '{"translate":"item.occultism.ritual_dummy.possess_skeleton"}',
-                    Lore: ['{"translate":"item.occultism.ritual_dummy.possess_skeleton.tooltip"}']
-                }
-            }),
-            ritual_type: 'occultism:summon',
-            pentacle_id: 'occultism:summon_lesser_evil',
-            duration: 10,
-            id: `occultism:ritual/possess_skeleton`
         },
         {
             output: Item.of('minecraft:end_stone', {
@@ -1617,6 +1600,22 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:summon_lesser_evil',
             duration: 10,
             id: `occultism:ritual/summon_wild_hunt`
+        },
+        {
+            output: Item.of('gateways:gate_pearl', `{gateway:"gateways:possessed_skeleton_gate", radius:5}`),
+            activation_item: 'byg:hanging_bones',
+            inputs: ['#forge:essences/anima', 'minecraft:bone_meal', 'minecraft:bone_meal', 'minecraft:bone_meal'],
+            entity_to_sacrifice: { tag: 'enigmatica:deer', display_name: 'ritual.occultism.sacrifice.deer' },
+            ritual_dummy: Item.of('minecraft:skeleton_skull', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.possess_skeleton"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.possess_skeleton.tooltip"}']
+                }
+            }),
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_lesser_evil',
+            duration: 10,
+            id: `occultism:ritual/possess_skeleton`
         }
     ];
 

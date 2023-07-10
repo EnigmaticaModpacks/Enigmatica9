@@ -79,6 +79,8 @@ ServerEvents.recipes((event) => {
         { id: /ars_scalaes:.*_broom_from_mixing_cauldron/ },
         { id: /ars_scalaes:.*_brush_from_mixing_cauldron/ },
 
+        { id: /buildinggadgets:gadget_/ },
+
         { id: 'constructionwand:stone_wand' },
         { id: 'constructionwand:iron_wand' },
 
@@ -181,8 +183,10 @@ ServerEvents.recipes((event) => {
         { id: 'immersiveengineering:blueprint/mold_gear' },
         { id: 'immersiveengineering:blueprint/circuit_board' },
         { id: 'immersiveengineering:blueprint/component_electronic_adv' },
+        { id: 'immersiveengineering:blueprint/graphite_electrode' },
         { id: 'immersiveengineering:metalpress/melon' },
         { id: 'immersiveengineering:crafting/drillhead_iron' },
+        { id: 'immersiveengineering:crafting/redstone_acid' },
 
         { id: /industrialforegoing:laser_drill_ore/ },
         { id: /industrialforegoing:.*black_hole/ },

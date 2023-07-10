@@ -565,44 +565,12 @@
 				id: "131EB02FBDE8DC98"
 				item: {
 					Count: 1b
-					id: "itemfilters:or"
+					id: "constructionwand:diamond_wand"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "constructionwand:stone_wand"
-								tag: {
-									Damage: 0
-									wand_options: { }
-								}
-							}
-							{
-								Count: 1b
-								id: "constructionwand:iron_wand"
-								tag: {
-									Damage: 0
-									wand_options: { }
-								}
-							}
-							{
-								Count: 1b
-								id: "constructionwand:diamond_wand"
-								tag: {
-									Damage: 0
-									wand_options: { }
-								}
-							}
-							{
-								Count: 1b
-								id: "constructionwand:infinity_wand"
-								tag: {
-									wand_options: { }
-								}
-							}
-						]
+						Damage: 0
+						wand_options: { }
 					}
 				}
-				title: "Any Construction Wand"
 				type: "item"
 			}]
 			title: "Construction Wand"
@@ -688,10 +656,6 @@
 				""
 				"- Trowel: This tool allows the randomization of block placement. It selects block(s) for your hotbar when used."
 				""
-				"- Burning Vines: You can burn the end of a Vine with Flint \\& Steel to stop them from growing further down. No more stringy Vanilla hacks!!"
-				""
-				"- Pickarang: Breaks blocks at an extreme range, and brings them back to you."
-				""
 				"For more information on what else does Quark has to offer you as a builder, visit their official website."
 				""
 				"{\"text\":\"Quark Wiki\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://quarkmod.net/#features\"}}"
@@ -704,24 +668,17 @@
 				}
 			}
 			id: "73696B8EC7BB92C7"
-			rewards: [
-				{
-					id: "1EA35555757745CC"
-					item: {
-						Count: 1b
-						id: "quark:trowel"
-						tag: {
-							Damage: 0
-						}
+			rewards: [{
+				id: "1EA35555757745CC"
+				item: {
+					Count: 1b
+					id: "quark:trowel"
+					tag: {
+						Damage: 0
 					}
-					type: "item"
 				}
-				{
-					id: "5C1C38E52322F619"
-					item: "quark:rainbow_rune"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			shape: "square"
 			subtitle: "Jack of all Trades"
 			tasks: [{

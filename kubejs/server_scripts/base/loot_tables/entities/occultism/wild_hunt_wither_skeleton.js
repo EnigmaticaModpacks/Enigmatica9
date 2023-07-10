@@ -30,7 +30,7 @@ ServerEvents.genericLootTables((event) => {
             pool.bonusRolls = [0, 1];
             pool.killedByPlayer();
             pool.addItem('minecraft:book', 5, 1).enchantWithLevels([20, 50], true);
-            pool.addEntry({ type: 'loot_table', weight: 95, name: 'minecraft:chests/nether_bridge' });
+            pool.addEntry({ type: 'loot_table', weight: 95, name: 'minecraft:chests/stronghold_library' });
         });
 
         table.addPool((pool) => {

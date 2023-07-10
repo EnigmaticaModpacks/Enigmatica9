@@ -50,7 +50,7 @@
         "chance": 5,
         "size": 5,
         "minYLevel": -32,
-        "maxYLevel": -25,
+        "maxYLevel": -20,
         "placement": "uniform",
         "rarity": "common"
     }

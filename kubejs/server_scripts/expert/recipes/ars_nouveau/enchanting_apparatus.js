@@ -99,123 +99,68 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}mold_gear`
         },
         {
-            output: 'pneumaticcraft:volume_upgrade',
-            inputs: ['pneumaticcraft:pressure_chamber_wall', '#forge:essences/air', '#forge:essences/air'],
-            reagents: ['pneumaticcraft:upgrade_matrix'],
-            sourceCost: 0,
-            id: `${id_prefix}volume_upgrade`
+            output: 'buildinggadgets:gadget_building',
+            inputs: [
+                'supplementaries:crystal_display',
+                'powah:capacitor_basic_large',
+                'powah:capacitor_basic_large',
+                'ars_nouveau:glyph_place_block',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation'
+            ],
+            reagents: ['mininggadgets:upgrade_empty'],
+            sourceCost: 5000,
+            id: `${id_prefix}gadget_building`
         },
         {
-            output: 'pneumaticcraft:range_upgrade',
-            inputs: ['#forge:gems/source', '#forge:essences/manipulation', '#forge:essences/manipulation'],
-            reagents: ['pneumaticcraft:upgrade_matrix'],
-            sourceCost: 0,
-            id: `${id_prefix}range_upgrade`
+            output: 'buildinggadgets:gadget_exchanging',
+            inputs: [
+                'supplementaries:crystal_display',
+                'powah:capacitor_basic_large',
+                'powah:capacitor_basic_large',
+                'ars_nouveau:glyph_exchange',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation'
+            ],
+            reagents: ['mininggadgets:upgrade_empty'],
+            sourceCost: 5000,
+            id: `${id_prefix}gadget_exchanging`
         },
         {
-            output: 'pneumaticcraft:security_upgrade',
-            inputs: ['pneumaticcraft:pressure_gauge', '#forge:essences/abjuration', '#forge:essences/abjuration'],
-            reagents: ['pneumaticcraft:upgrade_matrix'],
-            sourceCost: 0,
-            id: `${id_prefix}security_upgrade`
+            output: 'buildinggadgets:gadget_copy_paste',
+            inputs: [
+                'supplementaries:crystal_display',
+                'powah:capacitor_basic_large',
+                'powah:capacitor_basic_large',
+                'ars_nouveau:glyph_phantom_block',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation'
+            ],
+            reagents: ['mininggadgets:upgrade_empty'],
+            sourceCost: 5000,
+            id: `${id_prefix}gadget_copy_paste`
         },
         {
-            output: 'pneumaticcraft:speed_upgrade',
-            inputs: ['#forge:gems/fluix', '#forge:essences/water', '#forge:essences/water'],
-            reagents: ['pneumaticcraft:upgrade_matrix'],
-            sourceCost: 0,
-            id: `${id_prefix}speed_upgrade`
-        },
-        {
-            output: 'pneumaticcraft:item_life_upgrade',
-            inputs: ['ars_nouveau:mendosteen_pod', '#forge:essences/abjuration', '#forge:essences/abjuration'],
-            reagents: ['pneumaticcraft:upgrade_matrix'],
-            sourceCost: 0,
-            id: `${id_prefix}item_life_upgrade`
-        },
-        {
-            output: 'pneumaticcraft:entity_tracker_upgrade',
-            inputs: ['ae2:charged_certus_quartz_crystal', '#forge:essences/air', '#forge:essences/air'],
-            reagents: ['pneumaticcraft:upgrade_matrix'],
-            sourceCost: 0,
-            id: `${id_prefix}entity_tracker_upgrade`
-        },
-        {
-            output: 'pneumaticcraft:block_tracker_upgrade',
-            inputs: ['ae2:charged_certus_quartz_crystal', '#forge:essences/earth', '#forge:essences/earth'],
-            reagents: ['pneumaticcraft:upgrade_matrix'],
-            sourceCost: 0,
-            id: `${id_prefix}block_tracker_upgrade`
-        },
-        {
-            output: 'pneumaticcraft:dispenser_upgrade',
-            inputs: ['ae2:certus_quartz_crystal', '#forge:essences/manipulation', '#forge:essences/manipulation'],
-            reagents: ['pneumaticcraft:upgrade_matrix'],
-            sourceCost: 0,
-            id: `${id_prefix}dispenser_upgrade`
-        },
-        {
-            output: 'pneumaticcraft:magnet_upgrade',
-            inputs: ['minecraft:lodestone', '#forge:essences/manipulation', '#forge:essences/manipulation'],
-            reagents: ['pneumaticcraft:upgrade_matrix'],
-            sourceCost: 0,
-            id: `${id_prefix}magnet_upgrade`
-        },
-        {
-            output: 'pneumaticcraft:minigun_upgrade',
-            inputs: ['pneumaticcraft:minigun', '#forge:essences/fire', '#forge:essences/fire'],
-            reagents: ['pneumaticcraft:upgrade_matrix'],
-            sourceCost: 0,
-            id: `${id_prefix}minigun_upgrade`
-        },
-        {
-            output: '4x pneumaticcraft:inventory_upgrade',
-            inputs: ['#forge:essences/abjuration', 'thermal:fluid_reservoir', 'thermal:satchel'],
-            reagents: ['pneumaticcraft:upgrade_matrix'],
-            sourceCost: 0,
-            id: `${id_prefix}inventory_upgrade`
-        },
-        {
-            output: 'pneumaticcraft:standby_upgrade',
-            inputs: ['#comforts:sleeping_bags', '#forge:essences/abjuration', '#forge:essences/abjuration'],
-            reagents: ['pneumaticcraft:upgrade_matrix'],
-            sourceCost: 0,
-            id: `${id_prefix}standby_upgrade`
-        },
-        {
-            output: 'pneumaticcraft:charging_upgrade',
-            inputs: ['pneumaticcraft:charging_module', '#forge:essences/air', '#forge:essences/air'],
-            reagents: ['pneumaticcraft:upgrade_matrix'],
-            sourceCost: 0,
-            id: `${id_prefix}charging_upgrade`
-        },
-        {
-            output: 'pneumaticcraft:stomp_upgrade',
-            inputs: ['#forge:storage_blocks/lead', '#forge:essences/earth', '#forge:essences/earth'],
-            reagents: ['pneumaticcraft:upgrade_matrix'],
-            sourceCost: 0,
-            id: `${id_prefix}stomp_upgrade`
-        },
-        {
-            output: 'pneumaticcraft:flippers_upgrade',
-            inputs: ['thermal:diving_boots', '#forge:essences/water', '#forge:essences/water'],
-            reagents: ['pneumaticcraft:upgrade_matrix'],
-            sourceCost: 0,
-            id: `${id_prefix}flippers_upgrade`
-        },
-        {
-            output: 'pneumaticcraft:scuba_upgrade',
-            inputs: ['thermal:diving_helmet', '#forge:essences/water', '#forge:essences/water'],
-            reagents: ['pneumaticcraft:upgrade_matrix'],
-            sourceCost: 0,
-            id: `${id_prefix}scuba_upgrade`
-        },
-        {
-            output: 'pneumaticcraft:coordinate_tracker_upgrade',
-            inputs: ['ars_nouveau:ritual_scrying', '#forge:essences/manipulation', '#forge:essences/manipulation'],
-            reagents: ['pneumaticcraft:upgrade_matrix'],
-            sourceCost: 0,
-            id: `${id_prefix}coordinate_tracker_upgrade`
+            output: 'buildinggadgets:gadget_destruction',
+            inputs: [
+                'supplementaries:crystal_display',
+                'powah:capacitor_basic_large',
+                'powah:capacitor_basic_large',
+                'ars_nouveau:glyph_ignite',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation'
+            ],
+            reagents: ['mininggadgets:upgrade_empty'],
+            sourceCost: 5000,
+            id: `${id_prefix}gadget_destruction`
         },
         {
             output: 'pneumaticcraft:pneumatic_helmet',
