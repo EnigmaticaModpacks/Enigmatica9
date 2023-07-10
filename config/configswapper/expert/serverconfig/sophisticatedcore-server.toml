@@ -70,8 +70,8 @@
 		"sophisticatedstorage:advanced_compacting_upgrade|true",
 		"sophisticatedstorage:compacting_upgrade|true",
 
-		"sophisticatedstorage:advanced_feeding_upgrade|true",
-		"sophisticatedstorage:feeding_upgrade|true",
+		"sophisticatedstorage:advanced_feeding_upgrade|false",
+		"sophisticatedstorage:feeding_upgrade|false",
 
 		"sophisticatedstorage:advanced_filter_upgrade|true",		
 		"sophisticatedstorage:filter_upgrade|true",
@@ -89,18 +89,18 @@
 		"sophisticatedstorage:pump_upgrade|false",	
 		"sophisticatedstorage:xp_pump_upgrade|false",
 
-		"sophisticatedstorage:auto_blasting_upgrade|true",
-		"sophisticatedstorage:blasting_upgrade|true",
+		"sophisticatedstorage:auto_blasting_upgrade|false",
+		"sophisticatedstorage:blasting_upgrade|false",
 
-		"sophisticatedstorage:auto_smelting_upgrade|true",
-		"sophisticatedstorage:smelting_upgrade|true",
+		"sophisticatedstorage:auto_smelting_upgrade|false",
+		"sophisticatedstorage:smelting_upgrade|false",
 
-		"sophisticatedstorage:auto_smoking_upgrade|true",	
-		"sophisticatedstorage:smoking_upgrade|true",	
+		"sophisticatedstorage:auto_smoking_upgrade|false",	
+		"sophisticatedstorage:smoking_upgrade|false",	
 		
 		"sophisticatedstorage:advanced_void_upgrade|true",
 		"sophisticatedstorage:void_upgrade|true",
-		
+
 		"sophisticatedstorage:crafting_upgrade|false",
 		"sophisticatedstorage:compression_upgrade|true",
 		"sophisticatedstorage:jukebox_upgrade|true",
