@@ -14,6 +14,7 @@
 -   Fix Some Assembly Required sawing recipes [\#460](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/460) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Reduce spawn range for Spirit spawners [\#460](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/460) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Osmium and Tin Raw Ore Blocks now craft down into Raw Ore properly [\#479](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/479) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Emeraldite Ore renamed to Emerald Ore and drops adjusted. [\#479](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/479) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 

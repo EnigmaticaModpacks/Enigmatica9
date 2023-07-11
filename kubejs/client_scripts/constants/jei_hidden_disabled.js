@@ -40,12 +40,13 @@ jei.base.items.disabled = [
     /emendatusenigmatica:.*_cluster_shard\b/,
 
     /pendorite/,
-    /emeraldite/,
     /ametrine/,
 
     /theoneprobe/,
 
     /create:crushed_raw_.*/,
+
+    'byg:emeraldite_shards',
 
     'createaddition:copper_spool',
     'createaddition:spool',
