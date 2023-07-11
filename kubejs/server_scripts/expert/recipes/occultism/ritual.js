@@ -1377,6 +1377,31 @@ ServerEvents.recipes((event) => {
             duration: 60,
             id: `${id_prefix}ritual_craft_tree_of_life_trophy`
         },
+        {
+            output: 'farmingforblockheads:market',
+            activation_item: '#forge:essences/conjuration',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+
+                'ars_elemental:yellow_archwood',
+                'ars_nouveau:green_archwood_wood',
+                'ars_nouveau:blue_archwood_wood',
+                'ars_nouveau:red_archwood_wood',
+
+                'ars_elemental:yellow_archwood',
+                'ars_nouveau:green_archwood_wood',
+                'ars_nouveau:blue_archwood_wood',
+                'ars_nouveau:red_archwood_wood'
+            ],
+            ritual_dummy: 'kubejs:ritual_craft_market',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_market`
+        },
 
         /*
         Custom Summons
