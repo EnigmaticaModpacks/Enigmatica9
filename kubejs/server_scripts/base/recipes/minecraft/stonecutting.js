@@ -6,6 +6,16 @@ ServerEvents.recipes((event) => {
             output: '4x minecraft:cut_copper',
             input: 'minecraft:copper_block',
             id: `minecraft:cut_copper_from_copper_block_stonecutting`
+        },
+        {
+            output: 'create:limestone',
+            input: 'quark:limestone',
+            id: `${id_prefix}quark_to_create_limestone`
+        },
+        {
+            output: 'quark:limestone',
+            input: 'create:limestone',
+            id: `${id_prefix}create_to_quark_limestone`
         }
     ];
 
