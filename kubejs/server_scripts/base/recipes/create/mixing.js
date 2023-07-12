@@ -59,23 +59,19 @@ ServerEvents.recipes((event) => {
         }
     ];
 
+    // Farmer's Delight Cooking Compat
     event.forEachRecipe({ type: 'farmersdelight:cooking' }, (r) => {
         let source_recipe = JSON.parse(r.json);
         let output_item = source_recipe.result.item;
+        let cook_time = 200;
         let serving_dish = {
             bottle: ['farmersdelight:glow_berry_custard', 'farmersdelight:apple_cider', 'farmersdelight:hot_cocoa'],
             pumpkin: ['farmersdelight:stuffed_pumpkin_block'],
             exclusions: ['farmersdelight:dumplings', 'farmersdelight:cabbage_rolls']
         };
 
-        if (!serving_dish.exclusions.includes(output_item)) {
-            if (serving_dish.bottle.includes(output_item)) {
-                source_recipe.ingredients.push({ item: 'minecraft:glass_bottle' });
-            } else if (serving_dish.pumpkin.includes(output_item)) {
-                source_recipe.ingredients.push({ item: 'minecraft:pumpkin' });
-            } else {
-                source_recipe.ingredients.push({ item: 'minecraft:bowl' });
-            }
+        if (source_recipe.cookingTime) {
+            cook_time = source_recipe.cookingTime;
         }
 
         let ingredients = source_recipe.ingredients.map((ingredient) => {
@@ -84,18 +80,35 @@ ServerEvents.recipes((event) => {
             }
             return ingredient;
         });
+        let ashes = Math.ceil(ingredients.length / 2);
+        let burned_outputs = [{ item: 'supplementaries:ash', count: ashes > 0 ? ashes : 1 }];
+
+        if (!serving_dish.exclusions.includes(output_item)) {
+            if (serving_dish.bottle.includes(output_item)) {
+                ingredients.push({ item: 'minecraft:glass_bottle' });
+                burned_outputs.push({ item: 'minecraft:glass_bottle' });
+            } else if (serving_dish.pumpkin.includes(output_item)) {
+                ingredients.push({ item: 'minecraft:pumpkin' });
+                burned_outputs.push({ item: 'minecraft:charcoal', count: 2 });
+            } else {
+                ingredients.push({ item: 'minecraft:bowl' });
+                burned_outputs.push({ item: 'minecraft:charcoal' });
+            }
+        }
 
         recipes.push(
             {
                 results: [source_recipe.result],
                 ingredients: ingredients,
                 heatRequirement: 'heated',
+                processingTime: cook_time,
                 id: `${id_prefix}${output_item.replace(':', '_')}`
             },
             {
-                results: [{ item: 'minecraft:charcoal' }],
+                results: burned_outputs,
                 ingredients: ingredients,
                 heatRequirement: 'superheated',
+                processingTime: cook_time / 10,
                 id: `${id_prefix}${output_item.replace(':', '_')}_burned`
             }
         );
