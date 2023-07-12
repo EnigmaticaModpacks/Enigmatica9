@@ -59,6 +59,48 @@ ServerEvents.recipes((event) => {
         }
     ];
 
+    event.forEachRecipe({ type: 'farmersdelight:cooking' }, (r) => {
+        let source_recipe = JSON.parse(r.json);
+        let output_item = source_recipe.result.item;
+        let serving_dish = {
+            bottle: ['farmersdelight:glow_berry_custard', 'farmersdelight:apple_cider', 'farmersdelight:hot_cocoa'],
+            pumpkin: ['farmersdelight:stuffed_pumpkin_block'],
+            exclusions: ['farmersdelight:dumplings', 'farmersdelight:cabbage_rolls']
+        };
+
+        if (!serving_dish.exclusions.includes(output_item)) {
+            if (serving_dish.bottle.includes(output_item)) {
+                source_recipe.ingredients.push({ item: 'minecraft:glass_bottle' });
+            } else if (serving_dish.pumpkin.includes(output_item)) {
+                source_recipe.ingredients.push({ item: 'minecraft:pumpkin' });
+            } else {
+                source_recipe.ingredients.push({ item: 'minecraft:bowl' });
+            }
+        }
+
+        let ingredients = source_recipe.ingredients.map((ingredient) => {
+            if (ingredient.tag && ingredient.tag == 'forge:milk') {
+                ingredient = { fluidTag: 'forge:milk', amount: 250 };
+            }
+            return ingredient;
+        });
+
+        recipes.push(
+            {
+                results: [source_recipe.result],
+                ingredients: ingredients,
+                heatRequirement: 'heated',
+                id: `${id_prefix}${output_item.replace(':', '_')}`
+            },
+            {
+                results: [{ item: 'minecraft:charcoal' }],
+                ingredients: ingredients,
+                heatRequirement: 'superheated',
+                id: `${id_prefix}${output_item.replace(':', '_')}_burned`
+            }
+        );
+    });
+
     recipes.forEach((recipe) => {
         recipe.type = 'create:mixing';
         event.custom(recipe).id(recipe.id);
