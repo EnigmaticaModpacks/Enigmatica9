@@ -7,7 +7,15 @@
         "defaultCategory": "farmingforblockheads:seeds"
     },
     "customEntries": [
+        { "output": "byg:blueberries" },
+        { "output": "byg:crimson_berries" },
+        { "output": "byg:nightshade_berries" },
         { "output": "farmersdelight:cabbage_seeds" },
+        { "output": "minecraft:sweet_berries" },
+        { "output": "sushigocrafting:sesame_seeds" },
+        { "output": "sushigocrafting:wasabi_seeds" },
+        { "output": "sushigocrafting:soy_seeds" },
+        { "output": "sushigocrafting:cucumber_seeds" },
         { "output": "thermal:amaranth_seeds" },
         { "output": "thermal:barley_seeds" },
         { "output": "thermal:bell_pepper_seeds" },
@@ -22,9 +30,6 @@
         { "output": "thermal:spinach_seeds" },
         { "output": "thermal:strawberry_seeds" },
         { "output": "thermal:tea_seeds" },
-        { "output": "sushigocrafting:sesame_seeds" },
-        { "output": "sushigocrafting:wasabi_seeds" },
-        { "output": "sushigocrafting:soy_seeds" },
-        { "output": "sushigocrafting:cucumber_seeds" }
+        { "output": "twilightforest:torchberry_plant" }
     ]
 }

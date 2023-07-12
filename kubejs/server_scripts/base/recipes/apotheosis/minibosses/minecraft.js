@@ -19,7 +19,7 @@ ServerEvents.highPriorityData((event) => {
             entities: ['minecraft:skeleton'],
             valid_gear_sets: ['#miniboss/skeleton_siege_breaker'],
             dimensions: [],
-            affixed: false,
+            affixed: true,
             nbt: {},
             stats: {
                 enchant_chance: 0.5,
