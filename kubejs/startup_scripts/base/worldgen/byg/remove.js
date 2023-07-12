@@ -23,7 +23,6 @@ WorldgenEvents.remove((event) => {
         'byg:ore_anthracite',
         'byg:ore_pendorite',
         'byg:cryptic_redstone',
-        'byg:island_ametrine_clusters',
         'byg:quartz_spike'
     ];
 
