@@ -240,6 +240,68 @@ ServerEvents.highPriorityData((event) => {
                 }
             ],
             tags: ['miniboss/skeleton_bow']
+        },
+        {
+            name: 'skeleton_sword',
+            weight: 100,
+            quality: 2.5,
+            mainhands: [
+                {
+                    stack: { item: 'twilightforest:knightmetal_sword', nbt: default_nbt },
+                    weight: 100,
+                    drop_chance: 0.085
+                },
+                {
+                    stack: { item: 'naturesaura:infused_iron_sword', nbt: default_nbt },
+                    weight: 100,
+                    drop_chance: 0.085
+                },
+                {
+                    stack: { item: 'ae2:fluix_sword', nbt: default_nbt },
+                    weight: 100,
+                    drop_chance: 0.085
+                },
+                {
+                    stack: { item: 'ae2:certus_quartz_sword', nbt: default_nbt },
+                    weight: 100,
+                    drop_chance: 0.085
+                },
+                {
+                    stack: { item: 'twilightforest:steeleaf_sword', nbt: default_nbt },
+                    weight: 100,
+                    drop_chance: 0.085
+                }
+            ],
+            offhands: all_shield_designs,
+            helmets: [
+                {
+                    stack: { item: 'immersiveengineering:armor_steel_head', nbt: default_nbt },
+                    weight: 100,
+                    drop_chance: 0.085
+                }
+            ],
+            chestplates: [
+                {
+                    stack: { item: 'immersiveengineering:armor_steel_chest', nbt: default_nbt },
+                    weight: 100,
+                    drop_chance: 0.085
+                }
+            ],
+            leggings: [
+                {
+                    stack: { item: 'immersiveengineering:armor_steel_legs', nbt: default_nbt },
+                    weight: 100,
+                    drop_chance: 0.085
+                }
+            ],
+            boots: [
+                {
+                    stack: { item: 'immersiveengineering:armor_steel_feet', nbt: default_nbt },
+                    weight: 100,
+                    drop_chance: 0.085
+                }
+            ],
+            tags: ['miniboss/skeleton_sword']
         }
     ];
 
