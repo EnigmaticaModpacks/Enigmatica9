@@ -219,12 +219,12 @@
     "ritual.enigmatica.occultism/ritual/ritual_summon_siren_from_shards.interrupted": "Ritual of Calling interrupted.",
     "ritual.enigmatica.occultism/ritual/ritual_summon_siren_from_shards.conditions": "Not all requirements for this ritual are met.",
 
-    "item.kubejs.ritual_summon_firenando_from_shards": "Ritual: Summon Flarecannon",
-    "item.kubejs.ritual_summon_firenando_from_shards.tooltip": "Summon a Flarecannon",
-    "ritual.enigmatica.occultism/ritual/ritual_summon_firenando_from_shards.started": "Ritual of Calling started.",
-    "ritual.enigmatica.occultism/ritual/ritual_summon_firenando_from_shards.finished": "Ritual of Calling completed.",
-    "ritual.enigmatica.occultism/ritual/ritual_summon_firenando_from_shards.interrupted": "Ritual of Calling interrupted.",
-    "ritual.enigmatica.occultism/ritual/ritual_summon_firenando_from_shards.conditions": "Not all requirements for this ritual are met.",
+    "item.kubejs.ritual_summon_firenando": "Ritual: Summon Flarecannon",
+    "item.kubejs.ritual_summon_firenando.tooltip": "Summon a Flarecannon",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_firenando.started": "Ritual of Calling started.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_firenando.finished": "Ritual of Calling completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_firenando.interrupted": "Ritual of Calling interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_firenando.conditions": "Not all requirements for this ritual are met.",
 
     "item.kubejs.ritual_craft_willow_broom": "Ritual: Craft Willow Broom",
     "item.kubejs.ritual_craft_willow_broom.tooltip": "Bind a fae into a broom to obtain the power of flight.",
