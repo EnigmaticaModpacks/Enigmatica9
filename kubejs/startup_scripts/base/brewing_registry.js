@@ -219,6 +219,11 @@ MoreJSEvents.registerPotionBrewing((event) => {
             output: 'apotheosis:strong_grievous'
         },
         {
+            reagent: 'hexerei:dried_mugwort_flowers',
+            input: 'minecraft:awkward',
+            output: 'apotheosis:strong_grievous'
+        },
+        {
             reagent: 'hexerei:dried_mandrake_flowers',
             input: 'minecraft:awkward',
             output: 'minecraft:slowness'
