@@ -204,6 +204,26 @@ MoreJSEvents.registerPotionBrewing((event) => {
             output: 'apotheosis:strong_fatigue'
         },
         {
+            reagent: 'hexerei:mandrake_root',
+            input: 'apotheosis:vitality',
+            output: 'apotheosis:grievous'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'apotheosis:long_vitality',
+            output: 'apotheosis:long_grievous'
+        },
+        {
+            reagent: 'hexerei:mandrake_root',
+            input: 'apotheosis:strong_vitality',
+            output: 'apotheosis:strong_grievous'
+        },
+        {
+            reagent: 'hexerei:dried_mugwort_flowers',
+            input: 'minecraft:awkward',
+            output: 'apotheosis:strong_grievous'
+        },
+        {
             reagent: 'hexerei:dried_mandrake_flowers',
             input: 'minecraft:awkward',
             output: 'minecraft:slowness'
@@ -298,6 +318,15 @@ MoreJSEvents.registerPotionBrewing((event) => {
 'apotheosis:strong_resistance'
 'apotheosis:long_resistance'
 'apotheosis:resistance'
+
+'apotheosis:strong_vitality'
+'apotheosis:long_vitality'
+'apotheosis:vitality'
+
+'apotheosis:strong_grievous'
+'apotheosis:long_grievous'
+'apotheosis:grievous'
+
 
 'quark:strong_resilience'
 'quark:long_resilience'

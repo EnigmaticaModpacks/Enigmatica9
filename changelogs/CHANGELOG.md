@@ -8,6 +8,11 @@
 
 -   Fiery Metal and Liquid Blaze Burners may now be used for PNC heat [\#467](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/467) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Added Conversion between Limestone from Quark and Create [\#479](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/479) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Added more recipes for Potions of Grievous Wounds [\#485](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/485) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Witches had their health reduced[\#485](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/485) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Skeletons have had their health reduced. They may also spawn as melee variants now instead of only using bows [\#485](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/485) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Named Miniboss mobs will now drop affix loot [\#485](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/485) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Crimson Berries, Nightshade Berres, Sweetberries, Glowberries, Blueberries, and Torchberry Plants may now be purchased from the Market [\#485](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/485) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
@@ -18,6 +23,7 @@
 -   Budding Dimensional Crystals now spawn in place of Ametrine in Viscal Isles [\#479](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/479) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix out of control CNB sporeling spawns [\#483](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/483) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Implement Apotheosis workaround for CNB Sporelings [\#484](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/484) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix Hemp not planting on Farming for Blockheads' Farmland [\#485](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/485) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 

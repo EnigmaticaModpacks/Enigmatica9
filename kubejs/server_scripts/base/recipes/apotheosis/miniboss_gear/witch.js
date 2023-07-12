@@ -29,17 +29,9 @@ ServerEvents.highPriorityData((event) => {
                 {
                     stack: {
                         item: 'hexerei:witch_chestplate',
-                        nbt: Object.assign(reactive.life_link, enchant_glint.blank, enchantments.reactive_3)
-                    },
-                    weight: 33,
-                    drop_chance: 0.0
-                },
-                {
-                    stack: {
-                        item: 'hexerei:witch_chestplate',
                         nbt: Object.assign(reactive.bounce_lightning, enchant_glint.blank, enchantments.reactive_1)
                     },
-                    weight: 33,
+                    weight: 30,
                     drop_chance: 0.0
                 },
                 {
@@ -47,7 +39,7 @@ ServerEvents.highPriorityData((event) => {
                         item: 'hexerei:witch_chestplate',
                         nbt: Object.assign(reactive.bounce_poison, enchant_glint.blank, enchantments.reactive_1)
                     },
-                    weight: 33,
+                    weight: 70,
                     drop_chance: 0.0
                 }
             ],
