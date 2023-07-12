@@ -130,6 +130,8 @@ ServerEvents.recipes((event) => {
 
         { id: 'farmersdelight:integration/immersiveengineering/metalpress/pumpkin' },
 
+        { id: 'farmingforblockheads:market' },
+
         { id: 'functionalstorage:diamond_upgrade' },
 
         { id: /hexerei:.*_broom_from_mixing_cauldron/ },

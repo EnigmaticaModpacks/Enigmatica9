@@ -219,8 +219,8 @@
     "ritual.enigmatica.occultism/ritual/ritual_summon_siren_from_shards.interrupted": "Ritual of Calling interrupted.",
     "ritual.enigmatica.occultism/ritual/ritual_summon_siren_from_shards.conditions": "Not all requirements for this ritual are met.",
 
-    "item.kubejs.ritual_summon_firenando_from_shards": "Ritual: Summon Firenando",
-    "item.kubejs.ritual_summon_firenando_from_shards.tooltip": "Summon a Firenando",
+    "item.kubejs.ritual_summon_firenando_from_shards": "Ritual: Summon Flarecannon",
+    "item.kubejs.ritual_summon_firenando_from_shards.tooltip": "Summon a Flarecannon",
     "ritual.enigmatica.occultism/ritual/ritual_summon_firenando_from_shards.started": "Ritual of Calling started.",
     "ritual.enigmatica.occultism/ritual/ritual_summon_firenando_from_shards.finished": "Ritual of Calling completed.",
     "ritual.enigmatica.occultism/ritual/ritual_summon_firenando_from_shards.interrupted": "Ritual of Calling interrupted.",
@@ -253,6 +253,13 @@
     "ritual.enigmatica.occultism/ritual/ritual_craft_archwood_broom.finished": "Ritual of Binding completed.",
     "ritual.enigmatica.occultism/ritual/ritual_craft_archwood_broom.interrupted": "Ritual of Binding interrupted.",
     "ritual.enigmatica.occultism/ritual/ritual_craft_archwood_broom.conditions": "Not all requirements for this ritual are met.",
+
+    "item.kubejs.ritual_craft_market": "Ritual: Craft Market Stand",
+    "item.kubejs.ritual_craft_market.tooltip": "Bind a fae to a Market Stand to obtain rare plants.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_market.started": "Ritual of Binding started.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_market.finished": "Ritual of Binding completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_market.interrupted": "Ritual of Binding interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_craft_market.conditions": "Not all requirements for this ritual are met.",
 
     "item.kubejs.ritual_craft_module_expansion_card": "Ritual: Craft Module Expansion Card",
     "item.kubejs.ritual_craft_module_expansion_card.tooltip": "Bind an Air Elemental to control Tube Modules.",

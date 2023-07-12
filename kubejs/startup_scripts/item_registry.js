@@ -89,7 +89,8 @@ StartupEvents.registry('item', (event) => {
         'ritual_of_enduring_flight',
         'ritual_craft_sps_port',
         'ritual_craft_energizing_orb',
-        'ritual_craft_tree_of_life_trophy'
+        'ritual_craft_tree_of_life_trophy',
+        'ritual_craft_market'
     ];
 
     const reusableItemTextures = [
