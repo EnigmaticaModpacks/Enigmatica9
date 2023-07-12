@@ -17,6 +17,7 @@
 -   Emeraldite Ore renamed to Emerald Ore and drops adjusted. [\#479](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/479) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Budding Dimensional Crystals now spawn in place of Ametrine in Viscal Isles [\#479](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/479) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix out of control CNB sporeling spawns [\#483](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/483) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Implement Apotheosis workaround for CNB Sporelings [\#484](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/484) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
