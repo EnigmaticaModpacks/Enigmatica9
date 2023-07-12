@@ -282,6 +282,7 @@ jei.expert.items.disabled = [
     'create:precision_mechanism',
     'create:electron_tube',
     'create:mechanical_crafter',
+    'create:experience_nugget',
 
     'createaddition:alternator',
     'createaddition:modular_accumulator',

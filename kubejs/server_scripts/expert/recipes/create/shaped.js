@@ -500,6 +500,14 @@ ServerEvents.recipes((event) => {
                 B: 'pneumaticcraft:compressed_stone'
             },
             id: `create:crafting/curiosities/minecart_coupling`
+        },
+        {
+            output: 'create:experience_block',
+            pattern: ['AAA', 'AAA', 'AAA'],
+            key: {
+                A: 'ars_nouveau:greater_experience_gem'
+            },
+            id: `create:crafting/materials/experience_block`
         }
     ];
 

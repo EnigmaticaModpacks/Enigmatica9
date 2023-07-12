@@ -140,11 +140,12 @@ ServerEvents.recipes((event) => {
             id: 'minecraft:stonecutter'
         },
         {
-            output: 'minecraft:conduit',
-            pattern: ['AAA', 'ABA', 'AAA'],
+            output: '3x minecraft:conduit',
+            pattern: [' A ', 'BBB', ' C '],
             key: {
-                A: 'minecraft:nautilus_shell',
-                B: 'quark:rainbow_rune'
+                A: '#forge:essences/air',
+                B: 'minecraft:nautilus_shell',
+                C: '#forge:essences/water'
             },
             id: 'minecraft:conduit'
         },

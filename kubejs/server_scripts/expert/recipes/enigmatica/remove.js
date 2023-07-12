@@ -107,6 +107,7 @@ ServerEvents.recipes((event) => {
         { id: 'create:compat/ae2/milling/fluix_crystal' },
         { id: 'create:compat/ae2/milling/certus_quartz' },
         { id: 'create:compat/ae2/milling/ender_pearl' },
+        { id: 'create:compat/byg/crushing/pervaded_netherrack' },
         { id: 'create:crushing/prismarine_crystals' },
         { id: 'create:sequenced_assembly/track' },
         { id: 'create:sequenced_assembly/precision_mechanism' },
