@@ -14,6 +14,16 @@ ServerEvents.recipes((event) => {
                 C: '#forge:gems/source'
             },
             id: `${id_prefix}everfull_urn`
+        },
+        {
+            output: 'ars_elemental:caster_bag',
+            pattern: ['BAB', 'ACA', 'AAA'],
+            key: {
+                A: '#forge:leather',
+                B: 'ars_nouveau:magebloom_fiber',
+                C: '#forge:gems/source'
+            },
+            id: 'ars_elemental:caster_bag'
         }
     ];
 
