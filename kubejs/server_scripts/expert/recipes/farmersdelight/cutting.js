@@ -40,6 +40,15 @@ ServerEvents.recipes((event) => {
             result: [{ item: 'minecraft:leather' }, { item: 'twilightforest:knightmetal_ingot', chance: 0.1 }],
             tool: { tag: 'forge:shears' },
             id: `farmersdelight:cutting/saddle`
+        },
+        {
+            ingredients: [{ item: 'minecraft:dripstone_block' }],
+            result: [{ item: 'minecraft:pointed_dripstone', count: 4 }],
+            tool: {
+                type: 'farmersdelight:tool_action',
+                action: 'pickaxe_dig'
+            },
+            id: `${id_prefix}pointed_dripstone`
         }
     ];
 
