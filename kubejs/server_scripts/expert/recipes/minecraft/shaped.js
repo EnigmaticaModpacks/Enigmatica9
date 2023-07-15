@@ -166,6 +166,15 @@ ServerEvents.recipes((event) => {
                 B: '#forge:ingots/infused_iron'
             },
             id: 'minecraft:shears'
+        },
+        {
+            output: '4x minecraft:dripstone_block',
+            pattern: ['AB', 'BA'],
+            key: {
+                A: 'minecraft:clay',
+                B: 'minecraft:tuff'
+            },
+            id: `${id_prefix}dripstone_block`
         }
     ];
 

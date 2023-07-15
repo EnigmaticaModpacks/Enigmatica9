@@ -84,6 +84,9 @@ ServerEvents.recipes((event) => {
 
     const metals = Object.keys(metal_properties);
     metals.forEach((metal) => {
+        if (metal == 'refined_obsidian') {
+            return;
+        }
         let preferredIngot = AlmostUnified.getPreferredItemForTag(`forge:ingots/${metal}`).getId();
         if (Item.exists(`emendatusenigmatica:${metal}_dust`) && !preferredIngot.includes('graphite')) {
             recipes.push({

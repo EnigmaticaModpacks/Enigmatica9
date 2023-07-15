@@ -31,8 +31,47 @@ ServerEvents.recipes((event) => {
                 B: 'create:polished_rose_quartz'
             },
             id: 'supplementaries:crystal_display'
+        },
+        {
+            output: 'supplementaries:sconce',
+            pattern: ['BAB', ' B '],
+            key: {
+                A: 'minecraft:torch',
+                B: '#forge:nuggets/lead'
+            },
+            id: 'supplementaries:sconce'
+        },
+        {
+            output: 'supplementaries:sconce_soul',
+            pattern: ['BAB', ' B '],
+            key: {
+                A: 'minecraft:soul_torch',
+                B: '#forge:nuggets/lead'
+            },
+            id: 'supplementaries:sconce_soul'
+        },
+        {
+            output: 'supplementaries:candle_holder',
+            pattern: ['A', 'B'],
+            key: {
+                A: 'minecraft:candle',
+                B: '#forge:nuggets/lead'
+            },
+            id: `supplementaries:candle_holders/candle_holder`
         }
     ];
+
+    colors.forEach((color) => {
+        recipes.push({
+            output: `supplementaries:candle_holder_${color}`,
+            pattern: ['A', 'B'],
+            key: {
+                A: `minecraft:${color}_candle`,
+                B: '#forge:nuggets/lead'
+            },
+            id: `supplementaries:candle_holders/candle_holder_${color}`
+        });
+    });
 
     recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);

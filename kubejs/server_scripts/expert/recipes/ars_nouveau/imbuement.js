@@ -77,6 +77,62 @@ ServerEvents.recipes((event) => {
             id: `ars_nouveau:imbuement_manipulation_essence`
         },
         {
+            output: 'ars_nouveau:fire_essence',
+            count: 4,
+            reagent: '#forge:storage_blocks/source',
+            inputs: ['twilightforest:fiery_blood', 'hexerei:dried_yellow_dock_flowers', 'minecraft:blaze_rod'],
+            source: 2000,
+            id: `${id_prefix}imbuement_fire_essence_from_block`
+        },
+        {
+            output: 'ars_nouveau:air_essence',
+            count: 4,
+            reagent: '#forge:storage_blocks/source',
+            inputs: ['twilightforest:raven_feather', 'hexerei:dried_sage', 'thermal:blitz_rod'],
+            source: 2000,
+            id: `${id_prefix}imbuement_air_essence_from_block`
+        },
+        {
+            output: 'ars_nouveau:water_essence',
+            count: 4,
+            reagent: '#forge:storage_blocks/source',
+            inputs: ['twilightforest:alpha_yeti_fur', 'hexerei:dried_belladonna_flowers', 'thermal:blizz_rod'],
+            source: 2000,
+            id: `${id_prefix}imbuement_water_essence_from_block`
+        },
+        {
+            output: 'ars_nouveau:earth_essence',
+            count: 4,
+            reagent: '#forge:storage_blocks/source',
+            inputs: ['twilightforest:magic_beans', 'hexerei:mandrake_root', 'thermal:basalz_rod'],
+            source: 2000,
+            id: `${id_prefix}imbuement_earth_essence_from_block`
+        },
+        {
+            output: 'ars_nouveau:abjuration_essence',
+            count: 4,
+            reagent: '#forge:storage_blocks/source',
+            inputs: ['#forge:ingots/bronze', 'twilightforest:cicada', 'twilightforest:naga_scale'],
+            source: 2000,
+            id: `${id_prefix}imbuement_abjuration_essence_from_block`
+        },
+        {
+            output: 'ars_nouveau:conjuration_essence',
+            count: 4,
+            reagent: '#forge:storage_blocks/source',
+            inputs: ['#forge:ingots/silver', 'ars_nouveau:magebloom_block', 'minecraft:compass'],
+            source: 2000,
+            id: `${id_prefix}imbuement_conjuration_essence_from_block`
+        },
+        {
+            output: 'ars_nouveau:manipulation_essence',
+            count: 4,
+            reagent: '#forge:storage_blocks/source',
+            inputs: ['#forge:ingots/copper', 'minecraft:redstone_lamp', 'minecraft:clock'],
+            source: 2000,
+            id: `${id_prefix}imbuement_manipulation_essence_from_block`
+        },
+        {
             output: 'naturesaura:infused_stone',
             count: 1,
             reagent: 'minecraft:calcite',
