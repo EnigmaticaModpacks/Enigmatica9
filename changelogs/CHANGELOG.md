@@ -15,6 +15,7 @@
 -   Crimson Berries, Nightshade Berres, Sweetberries, Glowberries, Blueberries, and Torchberry Plants may now be purchased from the Market [\#485](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/485) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Farmers Delight recipes are now covered by Create Mixing. Don't overheat them or they'll burn! [\#487](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/487) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Stable Wormholes may now be reset in a crafting table [\#487](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/487) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Add many items to Mekanism's Painting system [\#494](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/494) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 

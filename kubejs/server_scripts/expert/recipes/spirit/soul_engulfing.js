@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
                         ['ABA', 'B&B', 'ABA']
                     ],
                     keys: {
-                        A: { block: 'ars_nouveau:arcane_core' },
+                        A: { block: 'ars_nouveau:void_prism' },
                         B: { block: '#forge:storage_blocks/source' },
                         C: { block: 'minecraft:wither_skeleton_skull' }
                     }
