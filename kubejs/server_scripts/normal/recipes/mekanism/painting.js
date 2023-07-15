@@ -8,13 +8,13 @@ ServerEvents.recipes((event) => {
 
     colors.forEach((color) => {
         recipes.push({
-            output: { item: `minecraft:black_wool` },
+            output: { item: `thermal:${color}_rockwool` },
             chemicalInput: { amount: 256, pigment: `mekanism:${color}` },
             itemInput: {
                 ingredient: {
                     type: 'forge:difference',
                     base: { tag: 'mekanism:colorable/rockwool' },
-                    subtracted: { item: `minecraft:black_wool` }
+                    subtracted: { item: `thermal:${color}_rockwool` }
                 }
             },
             id: `${id_prefix}${color}`

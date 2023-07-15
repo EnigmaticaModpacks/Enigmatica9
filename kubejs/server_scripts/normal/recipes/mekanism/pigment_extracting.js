@@ -17,6 +17,13 @@ ServerEvents.recipes((event) => {
         }
     ];
 
+    colors.forEach((color) => {
+        recipes.push({
+            input: { ingredient: { item: `minecraft:${color}_wool` } },
+            output: { amount: 192, pigment: `mekanism:${color}` }
+        });
+    });
+
     recipes.forEach((recipe) => {
         recipe.type = 'mekanism:pigment_extracting';
         recipe.input = { ingredient: Ingredient.of(recipe.input).toJson() };
