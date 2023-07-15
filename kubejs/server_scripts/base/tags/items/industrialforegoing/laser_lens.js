@@ -1,5 +1,5 @@
 ServerEvents.tags('item', (event) => {
-    const items = [/industrialforegoing:laser_lens0/, 'powah:lens_of_ender'];
+    const items = [/industrialforegoing:laser_lens0/, 'powah:lens_of_ender', /industrialforegoing:laser_lens/];
 
     event.get('industrialforegoing:laser_lens').add(items);
 
