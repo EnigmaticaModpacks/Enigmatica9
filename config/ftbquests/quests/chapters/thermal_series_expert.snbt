@@ -105,23 +105,14 @@
 			hide_dependency_lines: true
 			icon: "thermal:machine_refinery"
 			id: "0D4784EAEBEE933B"
-			rewards: [
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
-					icon: "kubejs:epic_lootbox"
-					id: "3E31589A406DBA63"
-					player_command: false
-					title: "Epic Thermal Series Loot Box"
-					type: "command"
-				}
-				{
-					count: 8
-					id: "41AA5036DC4BBFF4"
-					item: "mekanism:basic_mechanical_pipe"
-					title: "Basic Mechanical Pipe"
-					type: "item"
-				}
-			]
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "3E31589A406DBA63"
+				player_command: false
+				title: "Epic Thermal Series Loot Box"
+				type: "command"
+			}]
 			subtitle: "Whiskey Business"
 			tasks: [{
 				id: "72CD088EF24F5B9E"
