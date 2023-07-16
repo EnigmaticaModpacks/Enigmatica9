@@ -33,7 +33,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 50, steps: 1, step: 0 }
+                        value: { min: 20, steps: 1, step: 0 }
                     }
                 ]
             },
@@ -82,13 +82,7 @@ ServerEvents.highPriorityData((event) => {
                     { effect: 'minecraft:strength', amplifier: 0, chance: 1.0 },
                     { effect: 'minecraft:resistance', amplifier: 0, chance: 1.0 }
                 ],
-                attribute_modifiers: [
-                    {
-                        attribute: 'minecraft:generic.max_health',
-                        operation: 'ADDITION',
-                        value: { min: 30, steps: 10, step: 2 }
-                    }
-                ]
+                attribute_modifiers: []
             }
         },
         {
@@ -109,13 +103,7 @@ ServerEvents.highPriorityData((event) => {
                     { effect: 'minecraft:strength', amplifier: 1, chance: 1.0 },
                     { effect: 'minecraft:resistance', amplifier: 0, chance: 1.0 }
                 ],
-                attribute_modifiers: [
-                    {
-                        attribute: 'minecraft:generic.max_health',
-                        operation: 'ADDITION',
-                        value: { min: 30, steps: 10, step: 2 }
-                    }
-                ]
+                attribute_modifiers: []
             },
             supporting_entities: [
                 {
@@ -249,7 +237,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 200, steps: 1, step: 0 }
+                        value: 100
                     }
                 ]
             }
@@ -273,7 +261,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 300, steps: 1, step: 0 }
+                        value: 300
                     }
                 ]
             }
