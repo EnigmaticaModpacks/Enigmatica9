@@ -53,7 +53,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 140, steps: 1, step: 0 }
+                        value: 140
                     },
                     {
                         attribute: 'minecraft:generic.knockback_resistance',
