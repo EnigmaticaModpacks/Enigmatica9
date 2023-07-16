@@ -35,12 +35,6 @@ ServerEvents.chestLootTables((event) => {
         });
 
         table.addPool((pool) => {
-            pool.rolls = [2, 4];
-            pool.randomChance(0.05);
-            pool.addItem('mekanism:pellet_antimatter', 1, 1);
-        });
-
-        table.addPool((pool) => {
             pool.rolls = [1, 3];
             pool.addEntry({ type: 'loot_table', weight: 1, name: 'enigmatica:apotheosis_gem_cache' });
         });
