@@ -33,7 +33,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 20, steps: 1, step: 0 }
+                        value: 20
                     }
                 ]
             },
@@ -237,7 +237,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: 100
+                        value: 90
                     }
                 ]
             }
@@ -261,7 +261,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: 300
+                        value: 90
                     }
                 ]
             }

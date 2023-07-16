@@ -59,13 +59,7 @@ ServerEvents.highPriorityData((event) => {
                 enchant_chance: 1.0,
                 enchantment_levels: [15, 15, 15, 15],
                 effects: [{ effect: 'minecraft:strength', amplifier: 0, chance: 1.0 }],
-                attribute_modifiers: [
-                    {
-                        attribute: 'minecraft:generic.max_health',
-                        operation: 'ADDITION',
-                        value: 20
-                    }
-                ]
+                attribute_modifiers: []
             }
         },
         {
@@ -90,7 +84,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: 40
+                        value: 20
                     }
                 ]
             }
@@ -138,7 +132,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: 200
+                        value: 90
                     }
                 ]
             }
@@ -186,7 +180,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: 30
+                        value: 24
                     }
                 ]
             }
@@ -272,13 +266,7 @@ ServerEvents.highPriorityData((event) => {
                 enchant_chance: 1.0,
                 enchantment_levels: [15, 20, 15, 20],
                 effects: [],
-                attribute_modifiers: [
-                    {
-                        attribute: 'minecraft:generic.max_health',
-                        operation: 'ADDITION',
-                        value: 30
-                    }
-                ]
+                attribute_modifiers: []
             }
         },
         {
@@ -300,7 +288,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: 50
+                        value: 30
                     }
                 ]
             }
@@ -417,13 +405,7 @@ ServerEvents.highPriorityData((event) => {
                 enchant_chance: 1.0,
                 enchantment_levels: [15, 15, 15, 15],
                 effects: [{ effect: 'minecraft:resistance', amplifier: 0, chance: 1.0 }],
-                attribute_modifiers: [
-                    {
-                        attribute: 'minecraft:generic.max_health',
-                        operation: 'ADDITION',
-                        value: 40
-                    }
-                ]
+                attribute_modifiers: []
             }
         },
         {
@@ -441,13 +423,7 @@ ServerEvents.highPriorityData((event) => {
                 enchant_chance: 1.0,
                 enchantment_levels: [15, 15, 15, 15],
                 effects: [{ effect: 'minecraft:resistance', amplifier: 0, chance: 1.0 }],
-                attribute_modifiers: [
-                    {
-                        attribute: 'minecraft:generic.max_health',
-                        operation: 'ADDITION',
-                        value: { min: 60, steps: 1, step: 0 }
-                    }
-                ]
+                attribute_modifiers: []
             }
         }
     ];
