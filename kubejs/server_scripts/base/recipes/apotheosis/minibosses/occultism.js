@@ -33,7 +33,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 190, steps: 10, step: 2 }
+                        value: 200
                     }
                 ]
             }
@@ -61,7 +61,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 100, steps: 10, step: 2 }
+                        value: 100
                     }
                 ]
             }
@@ -88,7 +88,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 75, steps: 10, step: 2 }
+                        value: 75
                     }
                 ]
             },
@@ -128,7 +128,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 80, steps: 10, step: 2 }
+                        value: 80
                     }
                 ]
             },
@@ -185,7 +185,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 75, steps: 10, step: 2 }
+                        value: 80
                     }
                 ]
             },

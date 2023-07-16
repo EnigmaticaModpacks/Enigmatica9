@@ -16,6 +16,7 @@
 -   Farmers Delight recipes are now covered by Create Mixing. Don't overheat them or they'll burn! [\#487](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/487) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Stable Wormholes may now be reset in a crafting table [\#487](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/487) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Add many items to Mekanism's Painting system [\#494](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/494) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Apotheosis bosses largely reverted to new defaults. Remaining bosses brought more in line with the new balancing. [\#495](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/495) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
