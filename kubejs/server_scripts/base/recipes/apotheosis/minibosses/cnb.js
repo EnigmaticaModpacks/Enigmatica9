@@ -17,6 +17,7 @@ ServerEvents.highPriorityData((event) => {
             weight: 85,
             quality: 0,
             entities: ['cnb:sporeling'],
+            dimensions: ['twilightforest:twilight_forest'],
             valid_gear_sets: ['#miniboss/sporeling'],
             dimensions: [],
             affixed: false,

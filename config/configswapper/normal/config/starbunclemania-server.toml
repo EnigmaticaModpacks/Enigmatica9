@@ -17,7 +17,7 @@
 	starbucket_threshold = 250
 	#Threshold rate of the energy starbuncles, lower this if you need them to check and fill more often.
 	#Range: > 1
-	starbattery_threshold = 1000
+	starbattery_threshold = 250
 	#Threshold rate of the gas starbuncles, lower this if you need them to check and fill more often.
 	#Range: > 1
 	starballoon_threshold = 250

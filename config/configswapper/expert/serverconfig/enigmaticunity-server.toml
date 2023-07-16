@@ -8,10 +8,10 @@ sourceConversion = 400.0
 ["Dim type"]
 	#Power Buffer size  of the Dim type
 	#Range: > 0
-	powerBuffer = 120000
+	powerBuffer = 240000
 	#Max amount of power transfer for the Dim type per tick
 	#Range: > 0
-	maxPowertransfer = 500
+	maxPowertransfer = 240000
 	#Range the Dim type can connect to Source containers
 	#Range: > 0
 	range = 8
@@ -28,10 +28,10 @@ sourceConversion = 400.0
 ["Bright type"]
 	#Power Buffer size  of the Bright type
 	#Range: > 0
-	powerBuffer = 480000
+	powerBuffer = 960000
 	#Max amount of power transfer for the Bright type per tick
 	#Range: > 0
-	maxPowertransfer = 4000
+	maxPowertransfer = 960000
 	#Range the Bright type can connect to Source containers
 	#Range: > 0
 	range = 8
@@ -48,10 +48,10 @@ sourceConversion = 400.0
 ["Iridescent type"]
 	#Power Buffer size  of the Iridescent type
 	#Range: > 0
-	powerBuffer = 960000
+	powerBuffer = 1920000
 	#Max amount of power transfer for the Iridescent type per tick
 	#Range: > 0
-	maxPowertransfer = 16000
+	maxPowertransfer = 1920000
 	#Range the Iridescent type can connect to Source containers
 	#Range: > 0
 	range = 8
