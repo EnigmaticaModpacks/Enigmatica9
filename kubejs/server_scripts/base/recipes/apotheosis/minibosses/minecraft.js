@@ -387,7 +387,13 @@ ServerEvents.highPriorityData((event) => {
                 enchant_chance: 1.0,
                 enchantment_levels: [25, 20, 25, 20],
                 effects: [{ effect: 'minecraft:speed', amplifier: 1, chance: 0.6 }],
-                attribute_modifiers: []
+                attribute_modifiers: [
+                    {
+                        attribute: 'apotheosis:healing_received',
+                        operation: 'MULTIPLY_TOTAL',
+                        value: -0.5
+                    }
+                ]
             }
         },
         {
