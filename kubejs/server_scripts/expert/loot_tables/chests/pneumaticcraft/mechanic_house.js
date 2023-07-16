@@ -18,6 +18,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('pneumaticcraft:advanced_pressure_tube', 4, [3, 8]);
             pool.addItem('pneumaticcraft:heat_pipe', 8, [3, 8]);
             pool.addItem('pneumaticcraft:aphorism_tile', 5, [2, 3]);
+            pool.addItem('pneumaticcraft:module_expansion_card', 5, [2, 3]);
         });
     });
 });
