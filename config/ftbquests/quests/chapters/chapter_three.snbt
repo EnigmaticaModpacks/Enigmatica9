@@ -9,7 +9,10 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["714A42E9CE3C32EA"]
+			dependencies: [
+				"714A42E9CE3C32EA"
+				"3D0B7DA1DD0A74B1"
+			]
 			description: ["After some experimentation with the Echo Shards, it appears they may be further refined into a substance known as Pandemonium; the purest form of chaos with powerful creational capabilities. "]
 			id: "73B4078AB841567A"
 			rewards: [{
@@ -25,8 +28,8 @@
 				item: "mekanism:pellet_polonium"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -4.0d
+			x: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3037BC1A3EC6EFF2"]
@@ -53,11 +56,11 @@
 				item: "minecraft:sculk"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -5.0d
+			x: -2.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["7633AE65F02DCD1A"]
+			dependencies: ["4410E58ED333FBCB"]
 			description: [
 				"Long ago, the peoples of this realm attempted to call forth a great power to aid them in their time of need. This creature, known as the Warden, protected them for centuries before their civilization collapsed and their cities fell to ruin. "
 				""
@@ -81,8 +84,8 @@
 				item: "minecraft:sculk_catalyst"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -5.5d
+			x: -1.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5BAB85095E92AFD9"]
@@ -105,8 +108,8 @@
 				item: "minecraft:echo_shard"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -4.5d
+			x: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0672B242C31F4A11"]
@@ -153,7 +156,7 @@
 			]
 			title: "Supercritical Phase Shifter"
 			x: -2.0d
-			y: -1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["10C86AC59F9FA412"]
@@ -173,7 +176,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7674A0390C41044C"]
@@ -197,7 +200,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["04B0F0BE6E54D620"]
@@ -227,13 +230,10 @@
 				}
 			]
 			x: 1.0d
-			y: -2.0d
+			y: 0.5d
 		}
 		{
-			dependencies: [
-				"3D0B7DA1DD0A74B1"
-				"73B4078AB841567A"
-			]
+			dependencies: ["73B4078AB841567A"]
 			description: [
 				"Death follows life, and life thrives on death. Such is the circle of all things."
 				""
@@ -259,7 +259,7 @@
 			]
 			title: "Tree of Life"
 			x: 0.0d
-			y: -3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["0EBE44D4C30C0E51"]
@@ -291,7 +291,7 @@
 				}
 			]
 			x: 2.0d
-			y: -1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2C30585E7A2D5EB3"]
@@ -318,7 +318,7 @@
 				}
 			]
 			x: 0.0d
-			y: -0.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["27AB2CF4AC1A051E"]
@@ -345,7 +345,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["27AB2CF4AC1A051E"]
@@ -372,7 +372,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["27AB2CF4AC1A051E"]
@@ -399,7 +399,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["27AB2CF4AC1A051E"]
@@ -426,7 +426,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["606F79DAEB15E85B"]
@@ -462,7 +462,7 @@
 			}]
 			title: "Final Rites"
 			x: 0.0d
-			y: 1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["356B7D1DFF632DBD"]
@@ -484,8 +484,8 @@
 				item: "minecraft:ancient_debris"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -7.0d
+			x: 1.5d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -513,11 +513,11 @@
 				title: "Netherite"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -6.0d
+			x: 0.0d
+			y: -5.5d
 		}
 		{
-			dependencies: ["77E8DD38A379F9C7"]
+			dependencies: ["2D08D3CC44A509B9"]
 			description: [
 				"Bait. "
 				""
@@ -547,8 +547,8 @@
 				title: "Celestial Gold"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -5.5d
+			x: 1.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["39B2F84EBDC27AA3"]
@@ -597,13 +597,13 @@
 					type: "item"
 				}
 				{
-					id: "15AF81020887B436"
-					item: "minecraft:nether_star"
+					id: "2131CE09625BAA40"
+					item: "kubejs:withered_soul"
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: -4.5d
+			x: 2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["4F90F6437D6CF7EC"]
@@ -641,7 +641,7 @@
 				}
 			]
 			x: 1.5d
-			y: -4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["356B7D1DFF632DBD"]
@@ -802,7 +802,85 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["77E8DD38A379F9C7"]
+			description: ["Fire and Water both possess the cleansing power to remove the taint from Netherite, restoring it to its former glory. Choose one and develop an enchanting setup capable of performing the ritual. "]
+			id: "2D08D3CC44A509B9"
+			tasks: [{
+				icon: "apotheosis:heart_seashelf"
+				id: "2465E0454B8C2FD0"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "apotheosis:heart_seashelf"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:crystal_seashelf"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:glowing_hellshelf"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:blazing_hellshelf"
+							}
+						]
+					}
+				}
+				title: "Ritual of Cleansing"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2D08D3CC44A509B9"]
+			description: [
+				"Long ago, the peoples of this realm attempted to call forth a great power to aid them in their time of need. This creature, known as the Warden, protected them for centuries before their civilization collapsed and their cities fell to ruin. "
+				""
+				"It is said the Warden still wanders those ancient broken halls. Locate it and lay it to rest. "
+				""
+				"================================="
+				""
+				"Travel to a Deep Dark biome far underground in the Overworld and make enough noise to force the Warden out of hiding. "
+				""
+				"Slay it to obtain a Warden Tendril."
+				""
+				"The Tendril will be key in creating a Sculk Catalyst in this Ritual of Growth."
+			]
+			id: "4410E58ED333FBCB"
+			tasks: [{
+				icon: "apotheosis:soul_touched_sculkshelf"
+				id: "76B9BC83DA6592C4"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "apotheosis:echoing_sculkshelf"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:soul_touched_sculkshelf"
+							}
+						]
+					}
+				}
+				title: "Ritual of Growth"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.5d
 		}
 	]
 	title: "Chapter Three"

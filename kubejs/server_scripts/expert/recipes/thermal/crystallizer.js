@@ -4,7 +4,17 @@ ServerEvents.recipes((event) => {
     }
     const id_prefix = 'enigmatica:expert/thermal/crystallizer/';
 
-    const recipes = [];
+    const recipes = [
+        {
+            ingredients: [
+                { fluid: 'hexerei:quicksilver_fluid', amount: 50 },
+                { item: 'minecraft:sculk', count: 20 }
+            ],
+            result: [{ item: 'minecraft:echo_shard' }],
+            energy: 12000,
+            id: `${id_prefix}echo_shard`
+        }
+    ];
 
     const metal_shards = ['iron', 'aluminum', 'tin', 'iesnium', 'silver', 'gold', 'copper', 'nickel', 'osmium', 'lead'];
 
