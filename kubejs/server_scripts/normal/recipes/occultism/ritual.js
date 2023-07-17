@@ -356,10 +356,15 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'occultism:ritual';
-        recipe.activation_item = Ingredient.of(recipe.activation_item).toJson();
-        if (recipe.item_to_use) {
-            recipe.item_to_use = Ingredient.of(recipe.item_to_use).toJson();
-        }
+        recipe.activation_item = recipe.activation_item.startsWith('#')
+            ? { tag: recipe.activation_item.slice(1) }
+            : { item: recipe.activation_item };
+
+        if (recipe.item_to_use)
+            recipe.item_to_use = recipe.item_to_use.startsWith('#')
+                ? { tag: recipe.item_to_use.slice(1) }
+                : { item: recipe.item_to_use };
+
         recipe.ritual_dummy = Item.of(recipe.ritual_dummy).toJson();
         recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
         recipe.result = Item.of(recipe.output).toJson();

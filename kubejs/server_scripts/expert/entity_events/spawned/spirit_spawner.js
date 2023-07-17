@@ -5,7 +5,9 @@ if (global.isExpertMode == true) {
             return;
         }
 
-        if (entity.nbt.hasOwnProperty('Corrupted')) {
+        // Switch to entity.nbt with KubeJS 6.1
+        // if (entity.nbt.hasOwnProperty('Corrupted')) {
+        if (entity.fullNBT.hasOwnProperty('Corrupted')) {
             let bBox = entity.getBoundingBox();
             let volume = (bBox.maxX - bBox.minX) * (bBox.maxY - bBox.minY) * (bBox.maxZ - bBox.minZ);
             let aura_cost = Math.floor(volume * 5000);
