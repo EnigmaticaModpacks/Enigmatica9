@@ -5,7 +5,7 @@ if (global.isExpertMode == true) {
             return;
         }
 
-        if (entity.fullNBT.hasOwnProperty('Corrupted')) {
+        if (entity.nbt.hasOwnProperty('Corrupted')) {
             let bBox = entity.getBoundingBox();
             let volume = (bBox.maxX - bBox.minX) * (bBox.maxY - bBox.minY) * (bBox.maxZ - bBox.minZ);
             let aura_cost = Math.floor(volume * 5000);

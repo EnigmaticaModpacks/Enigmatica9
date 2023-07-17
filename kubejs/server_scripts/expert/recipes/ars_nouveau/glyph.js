@@ -109,9 +109,10 @@ ServerEvents.recipes((event) => {
 
     // Add Antique Ink to every glyph
     event.forEachRecipe({ type: 'ars_nouveau:glyph' }, (r) => {
+        let found = recipes.some((recipe) => recipe.id === r.getId());
         let recipe = JSON.parse(r.json);
         recipe.inputItems.push({ item: { item: 'supplementaries:antique_ink' } });
-        event.custom(recipe).id(r.getId());
+        if (!found) event.custom(recipe).id(r.getId());
     });
 
     recipes.forEach((recipe) => {

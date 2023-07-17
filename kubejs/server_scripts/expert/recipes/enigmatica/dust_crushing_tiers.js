@@ -6,12 +6,12 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/enigmatica/';
     // Tiers range from 1-4, with 4 being the highest
     const recipes = [
-        {
-            input_types: ['gems'],
-            material: 'ender_pearl',
-            output: 'emendatusenigmatica:ender_pearl_dust',
-            crushing_tier: gem_properties['ender_pearl'].crushing_tier
-        },
+        // {
+        //     input_types: ['gems'],
+        //     material: 'ender_pearl',
+        //     output: 'emendatusenigmatica:ender_pearl_dust',
+        //     crushing_tier: gem_properties['ender_pearl'].crushing_tier
+        // },
         {
             input_types: ['gems'],
             material: 'amethyst',
