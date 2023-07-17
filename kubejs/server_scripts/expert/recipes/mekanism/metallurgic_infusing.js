@@ -86,7 +86,7 @@ ServerEvents.recipes((event) => {
         {
             output: { item: 'mekanism:alloy_reinforced' },
             itemInput: { ingredient: { item: 'quark:dragon_scale' } },
-            chemicalInput: { infuse_type: 'mekanism:diamond', amount: 160 },
+            chemicalInput: { infuse_type: 'mekanism:diamond', amount: 20 },
             id: `mekanism:metallurgic_infusing/alloy/reinforced`
         }
     ];

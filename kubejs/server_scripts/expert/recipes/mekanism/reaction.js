@@ -6,10 +6,10 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/mekanism/reaction/';
     const recipes = [
         {
-            gasOutput: { gas: 'mekanism:polonium', amount: 10 },
+            gasOutput: { gas: 'mekanism:polonium', amount: 100 },
             itemInput: { ingredient: { item: 'minecraft:echo_shard' }, amount: 4 },
-            gasInput: { gas: 'mekanism:hydrofluoric_acid', amount: 100 },
-            fluidInput: { tag: 'forge:magicite', amount: 250 },
+            gasInput: { gas: 'mekanism:hydrofluoric_acid', amount: 25 },
+            fluidInput: { tag: 'forge:magicite', amount: 100 },
             energyRequired: 3995,
             duration: 30,
             id: `${id_prefix}polonium`
@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
         },
         {
             itemOutput: { item: 'emendatusenigmatica:enderium_ingot' },
-            fluidInput: { amount: 250, tag: 'forge:ender' },
+            fluidInput: { amount: 50, tag: 'forge:ender' },
             gasInput: { amount: 50, gas: 'mekanism:oxygen' },
             itemInput: { ingredient: { tag: 'mekanism:alloys/reinforced' } },
             energyRequired: 1995,

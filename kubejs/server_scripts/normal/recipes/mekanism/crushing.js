@@ -57,7 +57,9 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'mekanism:crushing';
-        recipe.input = { ingredient: Ingredient.of(recipe.input).toJson() };
+        recipe.input = {
+            ingredient: recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input }
+        };
 
         // Energy in FE above, convert to Joules for Mek
         recipe.energyRequired = recipe.energyRequired * 2.5;

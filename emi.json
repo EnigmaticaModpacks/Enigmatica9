@@ -1,0 +1,200 @@
+{
+  "favorites": [],
+  "lookup_history": [
+    "fluid:thermal:ender",
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:antimatter"
+    },
+    "item:mekanism:pellet_antimatter",
+    {
+      "type": "item",
+      "id": "kubejs:heart_of_the_tempest",
+      "amount": 64
+    },
+    "item:emendatusenigmatica:enderium_ingot",
+    "item:kubejs:crude_iron_ingot",
+    "item:emendatusenigmatica:enriched_fire_essence",
+    {
+      "type": "jemi",
+      "uid": "infuse type:emendatusenigmatica:fire_essence"
+    },
+    "item:emendatusenigmatica:steel_ingot",
+    "#item:forge:ingots/steel",
+    "item:emendatusenigmatica:steel_block",
+    "#item:forge:storage_blocks/steel",
+    "item:kubejs:shard_of_enduring",
+    {
+      "type": "item",
+      "id": "minecraft:heart_of_the_sea",
+      "amount": 64
+    },
+    "#item:forge:storage_blocks/fluorite",
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:hydrofluoric_acid"
+    },
+    {
+      "type": "item",
+      "id": "kubejs:primed_aetheric_heart",
+      "amount": 64
+    },
+    "item:minecraft:lingering_potion{Potion:\"apotheosis:strong_knowledge\"}",
+    "item:kubejs:mote_of_wisdom",
+    "#item:forge:ingots/electrum",
+    "#item:forge:plates/electrum",
+    "#item:forge:ingots/silver",
+    "#item:forge:dusts/silver",
+    "#item:forge:ingots/enderium",
+    "#item:forge:storage_blocks/enderium",
+    "item:quark:dragon_scale",
+    "item:mekanism:enriched_diamond",
+    {
+      "type": "jemi",
+      "uid": "infuse type:mekanism:diamond"
+    },
+    "item:mekanism:alloy_reinforced",
+    "item:emendatusenigmatica:enderium_dust",
+    "#item:forge:dusts/enderium",
+    "item:emendatusenigmatica:enderium_block",
+    "item:minecraft:dragon_head",
+    "item:powah:lens_of_ender",
+    "item:minecraft:dragon_egg",
+    "item:kubejs:shard_of_wisdom",
+    "item:emendatusenigmatica:silver_dust",
+    "item:hexerei:moon_dust",
+    "item:emendatusenigmatica:electrum_plate",
+    "item:immersiveengineering:wire_electrum",
+    "item:ars_elemental:air_focus",
+    {
+      "type": "item",
+      "id": "kubejs:iridescent_arcanite_crystal",
+      "amount": 64
+    },
+    "fluid:starbunclemania:source_fluid",
+    "item:minecraft:sculk",
+    "item:ae2:certus_quartz_crystal",
+    "item:ae2:quartz_block",
+    "item:ae2:charged_certus_quartz_crystal",
+    "item:kubejs:magebloom_filter",
+    "fluid:kubejs:abyssal_seawater",
+    "item:kubejs:saturated_magebloom_filter",
+    "fluid:industrialforegoing:biofuel",
+    "item:minecraft:echo_shard",
+    {
+      "type": "fluid",
+      "id": "kubejs:magicite",
+      "amount": 0
+    },
+    {
+      "type": "item",
+      "id": "industrialforegoing:machine_frame_advanced",
+      "amount": 3
+    },
+    "item:powah:capacitor_spirited",
+    {
+      "type": "item",
+      "id": "powah:crystal_spirited",
+      "amount": 2
+    },
+    "item:kubejs:sylvanite",
+    {
+      "type": "fluid",
+      "id": "hexerei:quicksilver_fluid",
+      "amount": 10
+    },
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:polonium"
+    },
+    "item:ae2:fluix_crystal",
+    "item:ae2:fluix_dust",
+    "item:ae2:sky_dust",
+    "item:quark:blank_rune",
+    "item:quark:red_rune",
+    "item:powah:nitro_crystal_block",
+    "item:spirit:soul_steel_ingot",
+    "item:spirit:soul_steel_block",
+    "item:spirit:soul_slate",
+    "fluid:hexerei:potion{Bottle:\"REGULAR\",Potion:\"ars_elemental:shock_potion\"}",
+    "item:powah:steel_energized",
+    "item:powah:energized_steel_block",
+    {
+      "type": "item",
+      "id": "minecraft:enchanted_golden_apple",
+      "amount": 64
+    },
+    "item:kubejs:dim_arcanite_crystal",
+    "item:kubejs:bright_arcanite_crystal",
+    "item:minecraft:nether_star",
+    "item:mekanism:pellet_polonium",
+    "item:powah:crystal_nitro"
+  ],
+  "craft_history": [],
+  "recipe_defaults": {
+    "added": [
+      "jei:/enigmatica/expert/pneumaticcraft/pressure_chamber/blank_rune",
+      "jei:/enigmatica/expert/mekanism/reaction/enderium",
+      "jei:/mekanism/enriching/enriched/diamond",
+      "jei:/enigmatica/expert/pneumaticcraft/pressure_chamber/shard_of_wisdom",
+      "powah:crafting/energized_steel_block",
+      "jei:/enigmatica/expert/naturesaura/tree_ritual/air_focus",
+      "jei:/enigmatica/expert/thermal/centrifuge/mote_of_wisdom",
+      "quark:tools/crafting/runes/red_rune",
+      "jei:/enigmatica/expert/pneumaticcraft/pressure_chamber/shard_of_enduring",
+      "jei:/enigmatica/expert/mekanism/metallurgic_infusing/steel_ingot",
+      "powah:crafting/nitro_crystal_block",
+      "jei:/enigmatica/expert/pneumaticcraft/thermo_plant/saturated_magebloom_filter",
+      "ae2:decorative/quartz_block",
+      "jei:/enigmatica/expert/pneumaticcraft/thermo_plant/biofuel",
+      "jei:/enigmatica/expert/powah/energizing/soul_steel_ingot",
+      "jei:/emendatusenigmatica/infuse_type/from_enriched/fire_essence",
+      "jei:/mekanism/nucleosynthesizing/enchanted_golden_apple",
+      "jei:/enigmatica/expert/naturesaura/tree_ritual/primed_aetheric_heart",
+      "thermal:storage/enderium_block",
+      "jei:/enigmatica/expert/mekanism/nucleosynthesizing/steel_energized",
+      "jei:/createaddition/rolling/electrum_plate",
+      "jei:/enigmatica/expert/ars_nouveau/enchanting_apparatus/heart_of_the_tempest",
+      "jei:/enigmatica/expert/thermal/crystallizer/echo_shard",
+      "jei:/enigmatica/expert/ars_nouveau/imbuement/charged_certus_quartz_crystal_from_block",
+      "jei:/enigmatica/expert/hexerei/mixingcauldron/moon_dust",
+      "jei:/enigmatica/expert/mekanism/reaction/pellet_polonium",
+      "jei:/enigmatica/expert/hexerei/mixingcauldron/iridescent_arcanite_crystal",
+      "jei:/enigmatica/expert/lychee/lightning_channeling/dim_arcanite_crystal",
+      "jei:/enigmatica/expert/ars_nouveau/enchanting_apparatus/heart_of_the_sea",
+      "jei:/enigmatica/expert/immersiveengineering/mixer/source_fluid_from_block",
+      "jei:/enigmatica/expert/mekanism/enriching/enriched_fire_essence",
+      "jei:/enigmatica/expert/pneumaticcraft/thermo_plant/sylvanite",
+      "jei:/mekanism/infusion_conversion/diamond/from_enriched",
+      "jei:/enigmatica/expert/hexerei/mixingcauldron/bright_arcanite_crystal",
+      "jei:/enigmatica/expert/powah/energizing/crystal_nitro",
+      "jei:/enigmatica/expert/mekanism/reaction/nether_star",
+      "jei:/enigmatica/expert/immersiveengineering/bottling_machine/fluix_crystal",
+      "jei:/enigmatica/expert/enigmatica/ars_nouveau_crushing/fluix_gems",
+      "jei:/mekanism/metallurgic_infusing/alloy/reinforced",
+      "spirit:crafting/soul_steel_block",
+      "immersiveengineering:crafting/ingot_steel_to_storage_steel",
+      "jei:/enigmatica/expert/mekanism/reaction/polonium",
+      "jei:/enigmatica/expert/enigmatica/ars_nouveau_crushing/silver_ingots",
+      "jei:/enigmatica/expert/mekanism/dissolution/hydrofluoric_acid_from_block"
+    ],
+    "tags": {
+      "#item:forge:plates/electrum": "item:emendatusenigmatica:electrum_plate",
+      "#item:forge:ingots/silver": "item:emendatusenigmatica:silver_ingot",
+      "#item:forge:ingots/electrum": "item:emendatusenigmatica:electrum_ingot",
+      "#item:forge:dusts/silver": "item:emendatusenigmatica:silver_dust",
+      "#item:forge:storage_blocks/steel": "item:emendatusenigmatica:steel_block",
+      "#item:forge:ingots/enderium": "item:emendatusenigmatica:enderium_ingot",
+      "#item:forge:storage_blocks/enderium": "item:emendatusenigmatica:enderium_block",
+      "#item:forge:ingots/steel": "item:emendatusenigmatica:steel_ingot",
+      "#item:forge:storage_blocks/fluorite": "item:emendatusenigmatica:fluorite_block"
+    },
+    "resolutions": {
+      "jei:/thermal/machines/press/press_electrum_ingot_to_plate": [
+        "item:emendatusenigmatica:electrum_plate"
+      ]
+    },
+    "disabled": []
+  },
+  "hidden_stacks": []
+}

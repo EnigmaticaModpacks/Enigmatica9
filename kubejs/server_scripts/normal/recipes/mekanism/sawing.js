@@ -70,7 +70,9 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'mekanism:sawing';
-        recipe.input = { ingredient: recipe.input.map((input) => Ingredient.of(input).toJson()) };
+        recipe.input = {
+            ingredient: recipe.input.map((input) => (input.startsWith('#') ? { tag: input.slice(1) } : { item: input }))
+        };
         recipe.mainOutput = Item.of(recipe.output).toJson();
         if (recipe.secondary) {
             if (recipe.secondary.output) {

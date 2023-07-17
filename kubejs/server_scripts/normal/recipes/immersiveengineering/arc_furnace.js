@@ -90,7 +90,12 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'immersiveengineering:arc_furnace';
-        recipe.input = { base_ingredient: Ingredient.of(recipe.input.item).toJson(), count: recipe.input.count };
+        recipe.input = {
+            base_ingredient: recipe.input.item.startsWith('#')
+                ? { tag: recipe.input.item.slice(1) }
+                : { item: recipe.input.item },
+            count: recipe.input.item.count
+        };
         recipe.additives = recipe.additives.map((additive) => ({
             base_ingredient: Ingredient.of(additive.item).toJson(),
             count: additive.count
