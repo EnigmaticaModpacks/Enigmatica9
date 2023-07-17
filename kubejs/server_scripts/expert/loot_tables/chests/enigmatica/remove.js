@@ -8,5 +8,6 @@ LootJS.modifiers((event) => {
     event.addLootTableModifier(/.*/).removeLoot('sophisticatedbackpacks:advanced_feeding_upgrade');
     event.addLootTableModifier(/.*/).removeLoot('sophisticated_storage:feeding_upgrade');
     event.addLootTableModifier(/.*/).removeLoot('sophisticated_storage:advanced_feeding_upgrade');
+    event.addLootTableModifier(/.*/).removeLoot('minecraft:sculk_catalyst');
     event.disableWitherStarDrop();
 });

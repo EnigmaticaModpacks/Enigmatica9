@@ -1283,6 +1283,15 @@ const entries = {
                 expert: `Heavy Plate`
             }
         }
+    ],
+    apotheosis: [
+        {
+            key: 'item.apotheosis.infused_breath',
+            value: {
+                normal: `Infused Dragon's Breath`,
+                expert: `Infused Breath of Twilight`
+            }
+        }
     ]
 };
 Object.keys(entries).forEach((mod) => {
