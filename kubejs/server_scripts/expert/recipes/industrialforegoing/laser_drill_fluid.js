@@ -63,7 +63,7 @@ ServerEvents.recipes((event) => {
                     depth_min: -64,
                     weight: 8,
                     blacklist: {},
-                    whitelist: {}
+                    whitelist: { type: 'minecraft:worldgen/biome', values: biomes.in_the_nether }
                 }
             ],
             id: `${id_prefix}blighted_ichor`

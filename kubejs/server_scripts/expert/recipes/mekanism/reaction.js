@@ -6,12 +6,12 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/mekanism/reaction/';
     const recipes = [
         {
-            gasOutput: { gas: 'mekanism:polonium', amount: 1000 },
+            gasOutput: { gas: 'mekanism:polonium', amount: 10 },
             itemInput: { ingredient: { item: 'minecraft:echo_shard' }, amount: 4 },
             gasInput: { gas: 'mekanism:hydrofluoric_acid', amount: 100 },
             fluidInput: { tag: 'forge:magicite', amount: 250 },
             energyRequired: 3995,
-            duration: 300,
+            duration: 30,
             id: `${id_prefix}polonium`
         },
         {

@@ -42,7 +42,8 @@ StartupEvents.registry('item', (event) => {
         'mastery_token_earth',
         'mastery_token_fire',
         'mastery_token_water',
-        'primordial_seed'
+        'primordial_seed',
+        'withered_soul'
     ];
 
     const ritualDummies = [
