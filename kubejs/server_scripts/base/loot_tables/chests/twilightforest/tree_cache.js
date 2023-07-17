@@ -10,10 +10,11 @@ ServerEvents.genericLootTables((event) => {
 
         table.addPool((pool) => {
             pool.rolls = [1, 2];
-            pool.randomChance(0.35);
+            pool.randomChance(0.5);
             pool.addItem('thermal:upgrade_augment_1', 2, 1);
             pool.addItem('thermal:machine_speed_augment', 1, [1, 3]);
-            pool.addItem('functionalstorage:copper_upgrade', 1, [1, 3]);
+            pool.addItem('functionalstorage:copper_upgrade', 3, [1, 3]);
+            pool.addItem('sophisticatedstorage:stack_upgrade_tier_2', 3, [1, 3]);
         });
 
         table.addPool((pool) => {
@@ -31,6 +32,12 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('twilightforest:steeleaf_leggings', 1, 1).enchantWithLevels(15, true);
             pool.addItem('twilightforest:steeleaf_chestplate', 1, 1).enchantWithLevels(15, true);
             pool.addItem('twilightforest:steeleaf_helmet', 1, 1).enchantWithLevels(15, true);
+        });
+
+        table.addPool((pool) => {
+            pool.rolls = [1, 1];
+            pool.randomChance(0.3);
+            pool.addItem(Item.of('sophisticatedbackpacks:iron_backpack'), 1, 1);
         });
     });
 });

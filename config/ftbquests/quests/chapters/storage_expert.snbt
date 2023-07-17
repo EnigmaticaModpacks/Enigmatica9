@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["2CCCDD05AED3153F"]
 			description: [
 				"Finding a place to store stuff is always a bit complicated, and keeping organized can be quite a task at times. Thankfully, a few mods exist to assist in this endeavor. The following quests will help you discover these mods."
 				""
@@ -47,11 +48,13 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["49596454693937AC"]
 			description: [
 				"Extra-large storage in the same space as a chest. Sophisticated Storage adds advanced Chests, Barrels, and Shulker Boxes in with multiple tiers of capacity. They even accept various upgrades to add additional functionality."
 				""
 				"Those may be upgraded in place by using the appropriate tier upgrade item on them."
 			]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1b
 				id: "sophisticatedstorage:iron_chest"
@@ -92,11 +95,13 @@
 				type: "item"
 			}]
 			title: "Sophisticated Storage"
-			x: -0.5d
-			y: -10.0d
+			x: -4.5d
+			y: -5.5d
 		}
 		{
+			dependencies: ["49596454693937AC"]
 			description: ["Forgot where you left your precious diorite? Mouse over some in your inventory or JEI and press Y to locate it in nearby inventories. "]
+			hide_dependency_lines: true
 			icon: "naturesaura:range_visualizer"
 			id: "0C77E760CE4035D5"
 			rewards: [{
@@ -112,15 +117,17 @@
 				type: "checkmark"
 			}]
 			title: "Find Me"
-			x: 1.0d
-			y: -6.5d
+			x: -1.5d
+			y: -10.0d
 		}
 		{
+			dependencies: ["49596454693937AC"]
 			description: [
 				"Looking for a handy place to store your hammer at the forge? Tired of rummaging through chest after chest for that gear press? Place them in world instead!"
 				""
 				"Plonk allows you to place up to four stacks of items in any block space. Simply hold the item, point at a block, and press P to place. Right click to pick the items back up. "
 			]
+			hide_dependency_lines: true
 			icon: "create:brass_hand"
 			id: "4EE6A26305CC5B61"
 			rewards: [{
@@ -136,14 +143,11 @@
 				type: "checkmark"
 			}]
 			title: "Plonk"
-			x: -2.0d
-			y: -6.5d
+			x: 0.5d
+			y: -10.0d
 		}
 		{
-			dependencies: [
-				"0000000000000966"
-				"530BB11487524556"
-			]
+			dependencies: ["5F17797B15355AE8"]
 			dependency_requirement: "one_completed"
 			description: [
 				"The Functional Storage Controller acts as a central hub for automation. Any linked drawers are accessible through it by things such as pipes, hoppers, or an ME Storage Bus. "
@@ -188,11 +192,11 @@
 				item: "functionalstorage:storage_controller"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -6.5d
+			x: -1.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["0000000000000405"]
+			dependencies: ["2A0CD26353B9E8C2"]
 			description: ["Each tier of storage offers both more upgrade slots and more storage slots. "]
 			icon: {
 				Count: 1b
@@ -241,10 +245,11 @@
 				type: "item"
 			}]
 			title: "Upgraded Storage"
-			x: -0.5d
-			y: -12.0d
+			x: -4.0d
+			y: -4.5d
 		}
 		{
+			dependencies: ["49596454693937AC"]
 			description: [
 				"Looking for a place to store those ten thousand Iron Ingots? Look no further. Functional Drawers has drawers that hold a very large quantity of a given item. They offer a number of useful upgrades as well to assist in both Storage and Automation endeavors. "
 				""
@@ -253,6 +258,7 @@
 				"● Toggle between modes by Sneak + Right Clicking in the air."
 				"● Right Click a drawer to change settings in chosen mode."
 			]
+			hide_dependency_lines: true
 			icon: "functionalstorage:oak_4"
 			id: "5F17797B15355AE8"
 			rewards: [{
@@ -280,11 +286,11 @@
 				type: "item"
 			}]
 			title: "Functional Storage"
-			x: -6.0d
-			y: -7.5d
+			x: -0.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["0000000000000966"]
+			dependencies: ["5F17797B15355AE8"]
 			description: [
 				"Thirty-two stacks aren't enough? There is a solution!"
 				""
@@ -299,7 +305,6 @@
 				title: "Miner's Delight"
 				type: "command"
 			}]
-			subtitle: "Not enough storage?"
 			tasks: [{
 				count: 4L
 				id: "7533B2D2FE53A4F7"
@@ -330,12 +335,12 @@
 				title: "Storage Upgrades"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -9.0d
+			x: 0.5d
+			y: -5.0d
 		}
 		{
-			dependencies: ["0000000000000966"]
-			description: ["Well no, bigger is not always better. A storage downgrade can be useful for light stock-keeping situations."]
+			dependencies: ["5F17797B15355AE8"]
+			description: ["Bigger is not always better. A storage downgrade can be useful for light stock-keeping situations."]
 			id: "02901672C6C78D96"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
@@ -345,17 +350,16 @@
 				title: "Farmer's Delight"
 				type: "command"
 			}]
-			subtitle: "But bigger is always better right?"
 			tasks: [{
 				id: "14C0D698AE8C586C"
 				item: "functionalstorage:iron_downgrade"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -8.5d
+			x: 1.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["0000000000000966"]
+			dependencies: ["5F17797B15355AE8"]
 			description: ["Excess items will be automatically voided."]
 			id: "7FE743C24F4CE9C7"
 			rewards: [{
@@ -366,16 +370,16 @@
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
-			subtitle: "Trash can build-in into drawer"
 			tasks: [{
 				id: "004F62C96392AA97"
 				item: "functionalstorage:void_upgrade"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -9.5d
+			x: -0.5d
+			y: -5.5d
 		}
 		{
+			dependencies: ["49596454693937AC"]
 			description: [
 				"Sophisticated backpacks is the backpack mod you never knew you were missing. "
 				""
@@ -383,6 +387,7 @@
 				""
 				"Beyond these already excellent features, they can also host a number of very useful upgrades."
 			]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1b
 				id: "sophisticatedbackpacks:backpack"
@@ -393,11 +398,8 @@
 			}
 			id: "1CCF4A4FD41751B9"
 			rewards: [{
-				icon: "minecraft:leather"
-				id: "7E61BC38B0C6D5C1"
-				item: "minecraft:leather"
-				random_bonus: 3
-				title: "Leather"
+				id: "772D030A446E11E3"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_1"
 				type: "item"
 			}]
 			tasks: [{
@@ -409,11 +411,11 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: -7.5d
+			x: 3.5d
+			y: -5.5d
 		}
 		{
-			dependencies: ["0000000000000986"]
+			dependencies: ["1CCF4A4FD41751B9"]
 			description: ["A filterable upgrade that pulls items from afar, straight into your backpack."]
 			id: "5566E2FA4B215399"
 			rewards: [{
@@ -433,7 +435,7 @@
 			y: -6.5d
 		}
 		{
-			dependencies: ["0000000000000986"]
+			dependencies: ["1CCF4A4FD41751B9"]
 			description: ["Never lose your precious goods again!"]
 			id: "6DC1E5210FAAF68A"
 			rewards: [
@@ -459,11 +461,11 @@
 				item: "sophisticatedbackpacks:everlasting_upgrade"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.5d
 			y: -5.5d
 		}
 		{
-			dependencies: ["0000000000000986"]
+			dependencies: ["1CCF4A4FD41751B9"]
 			description: ["A filterable upgrade that lets items pass directly into the backpack when picked up by the player. "]
 			id: "559DC2E27C42D8A0"
 			rewards: [{
@@ -480,32 +482,10 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -6.0d
+			y: -6.5d
 		}
 		{
-			dependencies: ["0000000000000986"]
-			description: ["Need a snack? Let your backpack provide."]
-			id: "77236FD6FC3BD0FF"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "5757A3F008A44453"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
-			subtitle: "You're Not You When You're Hungry"
-			tasks: [{
-				id: "434D270A1EE54DAA"
-				item: "sophisticatedbackpacks:feeding_upgrade"
-				title: "Feeding Upgrade"
-				type: "item"
-			}]
-			title: "Feeding Upgrade"
-			x: 3.0d
-			y: -8.5d
-		}
-		{
+			dependencies: ["49596454693937AC"]
 			description: [
 				"The Personal Shrinking Device can shrink one right out of sight and into the nooks and crannies of special machines. "
 				""
@@ -513,6 +493,7 @@
 				""
 				"Simply Right-Click a Compact Machine with the Personal Shrinking Device to warp inside."
 			]
+			hide_dependency_lines: true
 			id: "715C67FD33E85847"
 			rewards: [{
 				count: 2
@@ -525,11 +506,11 @@
 				item: "compactmachines:personal_shrinking_device"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -4.5d
+			x: -1.5d
+			y: -8.5d
 		}
 		{
-			dependencies: ["0AD2769DC173D26D"]
+			dependencies: ["715C67FD33E85847"]
 			description: [
 				"Gather the materials for your first Compact Machine!"
 				""
@@ -587,11 +568,11 @@
 				title: "Compact Machines"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -3.5d
+			x: -2.0d
+			y: -7.5d
 		}
 		{
-			dependencies: ["3787A109AABC8921"]
+			dependencies: ["10DD2B405F79F5E5"]
 			description: [
 				"Placed on the walls inside Compact Machines, Tunnels permit a connection to the outside world. "
 				""
@@ -650,10 +631,10 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -3.5d
+			y: -6.5d
 		}
 		{
-			dependencies: ["0000000000000986"]
+			dependencies: ["1CCF4A4FD41751B9"]
 			description: ["Each tier of backpack offers both more upgrade slots and more storage slots. "]
 			id: "061564D8A1EC2E9B"
 			rewards: [{
@@ -735,10 +716,11 @@
 				type: "item"
 			}]
 			title: "Upgraded Backpacks"
-			x: 5.0d
-			y: -9.5d
+			x: 4.0d
+			y: -4.5d
 		}
 		{
+			dependencies: ["49596454693937AC"]
 			description: [
 				"Got more gadgets and gizmos than one cavern can hold? More whozits and whatzits than you know what to do with? Then its time to shove it in another dimension and hire someone to sort it for you. Just read the fine print of any contracts you sign."
 				""
@@ -746,6 +728,7 @@
 				""
 				"Check out the Occultism chapter for more details on the process."
 			]
+			hide_dependency_lines: true
 			id: "012B3D83DF5E9A82"
 			min_width: 300
 			rewards: [{
@@ -763,11 +746,11 @@
 				type: "item"
 			}]
 			title: "Dimensional Storage"
-			x: 1.5d
+			x: 1.0d
 			y: -7.5d
 		}
 		{
-			dependencies: ["0000000000000966"]
+			dependencies: ["5F17797B15355AE8"]
 			description: [
 				"A Collector Upgrade allows the drawer to pick up items from the world. "
 				""
@@ -793,7 +776,6 @@
 					xp: 100
 				}
 			]
-			subtitle: "Integrated Hopper in a nutshell"
 			tasks: [{
 				id: "3962A9414B67C6B8"
 				item: {
@@ -805,11 +787,11 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: -9.0d
+			x: -1.5d
+			y: -5.0d
 		}
 		{
-			dependencies: ["0000000000000966"]
+			dependencies: ["5F17797B15355AE8"]
 			description: [
 				"Puller and Pusher upgrades allow the drawer to pull items from or push items to adjacent inventories."
 				""
@@ -842,7 +824,6 @@
 					type: "item"
 				}
 			]
-			subtitle: "Hopper-like item transfer?"
 			tasks: [
 				{
 					id: "2DD94F64FB40D7B7"
@@ -867,11 +848,11 @@
 					type: "item"
 				}
 			]
-			x: -8.0d
-			y: -8.5d
+			x: -2.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["0000000000000966"]
+			dependencies: ["5F17797B15355AE8"]
 			description: [
 				"Ender drawers, as the name might imply, allow their contents to be accessed from multiple locations. "
 				""
@@ -907,11 +888,11 @@
 					type: "item"
 				}
 			]
-			x: -7.0d
-			y: -6.0d
+			x: -1.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["0000000000000966"]
+			dependencies: ["5F17797B15355AE8"]
 			description: [
 				"Compacting drawers automatically change form of item stored."
 				""
@@ -937,17 +918,16 @@
 					type: "item"
 				}
 			]
-			subtitle: "Lets compact everything"
 			tasks: [{
 				id: "0F1B61A14A1443C7"
 				item: "functionalstorage:compacting_drawer"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -6.0d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["0000000000000966"]
+			dependencies: ["5F17797B15355AE8"]
 			description: [
 				"A hoarder’s dream come true. Now nothing from that mob farm will go to waste! "
 				""
@@ -968,15 +948,17 @@
 				item: "functionalstorage:armory_cabinet"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -6.5d
+			x: 0.5d
+			y: -3.0d
 		}
 		{
+			dependencies: ["49596454693937AC"]
 			description: [
 				"Far more than a simple storage solution, Applied Energetics 2 offers a full range of automation and cross dimensional transport capabilities. "
 				""
 				"Check out the dedicated AE2 chapter for more information. "
 			]
+			hide_dependency_lines: true
 			id: "0E7B68F691009EE7"
 			min_width: 250
 			rewards: [
@@ -1016,11 +998,11 @@
 				type: "item"
 			}]
 			title: "Applied Energetics 2"
-			x: -2.5d
-			y: -7.5d
+			x: 0.5d
+			y: -6.5d
 		}
 		{
-			dependencies: ["0000000000000986"]
+			dependencies: ["1CCF4A4FD41751B9"]
 			description: ["Stack upgrades allow each slot to hold more than usual, with their effect stacking with each other as well. A single Tier 1 upgrade will double a slot to 128, and another Tier 1 upgrade will double that again to 256!"]
 			id: "403F66157A48A8B1"
 			rewards: [{
@@ -1060,12 +1042,12 @@
 				title: "Stack Upgrades"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -9.0d
+			x: 3.0d
+			y: -4.5d
 		}
 		{
-			dependencies: ["0000000000000986"]
-			description: ["Add some extra features to your backpack, like the ability to smelt, craft, or use a stonecutter without leaving the interface. "]
+			dependencies: ["1CCF4A4FD41751B9"]
+			description: ["Add some extra features to your backpack, like the ability to craft or use a stonecutter without leaving the interface. "]
 			id: "22B16439EF48FCF9"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
@@ -1084,18 +1066,6 @@
 						items: [
 							{
 								Count: 1b
-								id: "sophisticatedbackpacks:smelting_upgrade"
-							}
-							{
-								Count: 1b
-								id: "sophisticatedbackpacks:smoking_upgrade"
-							}
-							{
-								Count: 1b
-								id: "sophisticatedbackpacks:blasting_upgrade"
-							}
-							{
-								Count: 1b
 								id: "sophisticatedbackpacks:crafting_upgrade"
 							}
 							{
@@ -1108,103 +1078,11 @@
 				title: "Functional Upgrades"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -9.0d
+			x: 2.5d
+			y: -5.5d
 		}
 		{
-			dependencies: ["0000000000000986"]
-			description: [
-				"Personal fluid storage with a variety of practical applications. "
-				""
-				"This upgrade is augmented by Stack Upgrades."
-			]
-			id: "660AE3BFF47ADFED"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				icon: "kubejs:sorcerers_delight"
-				id: "7C96A4027EEE2FB1"
-				player_command: false
-				title: "Sorcerer's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "1BC6FDEC27727FC1"
-				item: "sophisticatedbackpacks:tank_upgrade"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["0000000000000986"]
-			description: [
-				"Keeping tools charged on the go can be quite a drain. Attach a battery to your backpack to recharge those items on the go. "
-				""
-				"This upgrade is augmented by Stack Upgrades."
-			]
-			id: "4C116F11F437955F"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "4C6DA5A9F5F519D5"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "4104FBEF6CA3CE3D"
-				item: "sophisticatedbackpacks:battery_upgrade"
-				type: "item"
-			}]
-			x: 7.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["0000000000000986"]
-			description: [
-				"When paired with a Tank Upgrade, pumps allow the backpack to pull fluids in from the world. Go for a dive!"
-				""
-				"The Experience Pump allows the backpack to instead store player XP, even repairing equipped tools and armor enchanted with Mending!"
-			]
-			id: "656A133C395DC17F"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "20AE937AD03CB5C6"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "41B6BCAE05C9DD7A"
-				item: {
-					Count: 1b
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "sophisticatedbackpacks:pump_upgrade"
-							}
-							{
-								Count: 1b
-								id: "sophisticatedbackpacks:advanced_pump_upgrade"
-							}
-							{
-								Count: 1b
-								id: "sophisticatedbackpacks:xp_pump_upgrade"
-							}
-						]
-					}
-				}
-				title: "Pump Upgrades"
-				type: "item"
-			}]
-			x: 7.0d
-			y: -6.5d
-		}
-		{
-			dependencies: ["0000000000000405"]
+			dependencies: ["2A0CD26353B9E8C2"]
 			description: ["Stack upgrades allow each slot to hold more than usual, with their effect stacking with each other as well. A single Tier 1 upgrade will double a slot to 128, and another Tier 1 upgrade will double that again to 256!"]
 			id: "7F91EB6B1C6419A4"
 			rewards: [{
@@ -1244,12 +1122,12 @@
 				title: "Stack Upgrades"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -11.5d
+			x: -4.0d
+			y: -6.5d
 		}
 		{
-			dependencies: ["0000000000000405"]
-			description: ["Add some extra features to your storage, like the ability to smelt, craft, or use a stonecutter without leaving the interface. "]
+			dependencies: ["2A0CD26353B9E8C2"]
+			description: ["Add some extra features to your storage, like the ability to craft or use a stonecutter without leaving the interface. "]
 			id: "7D8D1C51AED92742"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
@@ -1268,18 +1146,6 @@
 						items: [
 							{
 								Count: 1b
-								id: "sophisticatedstorage:smelting_upgrade"
-							}
-							{
-								Count: 1b
-								id: "sophisticatedstorage:smoking_upgrade"
-							}
-							{
-								Count: 1b
-								id: "sophisticatedstorage:blasting_upgrade"
-							}
-							{
-								Count: 1b
 								id: "sophisticatedstorage:crafting_upgrade"
 							}
 							{
@@ -1292,11 +1158,11 @@
 				title: "Functional Upgrades"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -11.5d
+			x: -5.0d
+			y: -6.5d
 		}
 		{
-			dependencies: ["0000000000000405"]
+			dependencies: ["2A0CD26353B9E8C2"]
 			description: ["Any item that comes in direct contact with the storage will be picked up automatically. "]
 			id: "0EBAE28D89D7BA19"
 			rewards: [{
@@ -1312,11 +1178,11 @@
 				item: "sophisticatedstorage:pickup_upgrade"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -11.0d
+			x: -5.5d
+			y: -5.5d
 		}
 		{
-			dependencies: ["0000000000000405"]
+			dependencies: ["2A0CD26353B9E8C2"]
 			description: ["Picks up items in the area, inserting them into the storage. "]
 			id: "16A9C609B6771A6A"
 			rewards: [{
@@ -1332,14 +1198,11 @@
 				item: "sophisticatedstorage:magnet_upgrade"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -11.0d
+			x: -3.5d
+			y: -5.5d
 		}
 		{
-			dependencies: [
-				"0000000000000405"
-				"530BB11487524556"
-			]
+			dependencies: ["2A0CD26353B9E8C2"]
 			dependency_requirement: "one_completed"
 			description: [
 				"The Sophisticated Storage Controller acts as a central hub for automation. Any linked drawers are accessible through it by things such as pipes, hoppers, or an ME Storage Bus."
@@ -1372,11 +1235,11 @@
 				item: "sophisticatedstorage:controller"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -9.0d
+			x: -5.0d
+			y: -4.5d
 		}
 		{
-			dependencies: ["00000000000003FF"]
+			dependencies: ["49596454693937AC"]
 			description: [
 				"While not really storage on its own, the Entangled Block enables remote access to the block or machine it is bound to, extending the block’s capabilities to the Entangled Block. "
 				""
@@ -1426,10 +1289,10 @@
 				}
 			]
 			x: -0.5d
-			y: -6.0d
+			y: -10.5d
 		}
 		{
-			dependencies: ["00000000000003FF"]
+			dependencies: ["49596454693937AC"]
 			description: [
 				"Let wanderlust take you where the wind blows and bring your home along with you for the journey. "
 				""
@@ -1517,13 +1380,13 @@
 				}
 			]
 			title: "Nomadic Tents"
-			x: 1.0d
-			y: -4.5d
+			x: 0.5d
+			y: -8.5d
 		}
 		{
 			dependencies: [
-				"0AD2769DC173D26D"
-				"025C09686412AB3D"
+				"6850D7A9C0E38879"
+				"715C67FD33E85847"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -1558,7 +1421,7 @@
 				type: "checkmark"
 			}]
 			x: -0.5d
-			y: -4.0d
+			y: -9.0d
 		}
 	]
 	title: "Storage"

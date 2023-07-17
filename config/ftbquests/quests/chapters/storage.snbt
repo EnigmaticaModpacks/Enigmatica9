@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["0E45018D600614BA"]
 			description: [
 				"Finding a place to store stuff is always a bit complicated, and keeping organized can be quite a task at times. Thankfully, a few mods exist to assist in this endeavor. The following quests will help you discover these mods."
 				""
@@ -22,6 +23,7 @@
 				"● $containers/gas"
 				"● $containers/liquid"
 			]
+			hide: true
 			icon: "minecraft:chest"
 			id: "00000000000003FF"
 			rewards: [{
@@ -47,11 +49,13 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["00000000000003FF"]
 			description: [
 				"Extra-large storage in the same space as a chest. Sophisticated Storage adds advanced Chests, Barrels, and Shulker Boxes in with multiple tiers of capacity. They even accept various upgrades to add additional functionality."
 				""
 				"Those may be upgraded in place by using the appropriate tier upgrade item on them."
 			]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1b
 				id: "sophisticatedstorage:iron_chest"
@@ -96,7 +100,9 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["00000000000003FF"]
 			description: ["Forgot where you left your precious diorite? Mouse over some in your inventory or JEI and press Y to locate it in nearby inventories. "]
+			hide_dependency_lines: true
 			icon: "naturesaura:range_visualizer"
 			id: "000000000000040B"
 			rewards: [{
@@ -116,11 +122,13 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["00000000000003FF"]
 			description: [
 				"Looking for a handy place to store your hammer at the forge? Tired of rummaging through chest after chest for that gear press? Place them in world instead!"
 				""
 				"Plonk allows you to place up to four stacks of items in any block space. Simply hold the item, point at a block, and press P to place. Right click to pick the items back up. "
 			]
+			hide_dependency_lines: true
 			icon: "create:brass_hand"
 			id: "000000000000040D"
 			rewards: [{
@@ -245,6 +253,7 @@
 			y: -12.0d
 		}
 		{
+			dependencies: ["00000000000003FF"]
 			description: [
 				"Looking for a place to store those ten thousand Iron Ingots? Look no further. Functional Drawers has drawers that hold a very large quantity of a given item. They offer a number of useful upgrades as well to assist in both Storage and Automation endeavors. "
 				""
@@ -253,6 +262,7 @@
 				"● Toggle between modes by Sneak + Right Clicking in the air."
 				"● Right Click a drawer to change settings in chosen mode."
 			]
+			hide_dependency_lines: true
 			icon: "functionalstorage:oak_4"
 			id: "0000000000000966"
 			rewards: [{
@@ -299,7 +309,6 @@
 				title: "Miner's Delight"
 				type: "command"
 			}]
-			subtitle: "Not enough storage?"
 			tasks: [{
 				count: 4L
 				id: "00000000000009A0"
@@ -335,7 +344,7 @@
 		}
 		{
 			dependencies: ["0000000000000966"]
-			description: ["Well no, bigger is not always better. A storage downgrade can be useful for light stock-keeping situations."]
+			description: ["Bigger is not always better. A storage downgrade can be useful for light stock-keeping situations."]
 			id: "0000000000000982"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
@@ -345,7 +354,6 @@
 				title: "Farmer's Delight"
 				type: "command"
 			}]
-			subtitle: "But bigger is always better right?"
 			tasks: [{
 				id: "0000000000000983"
 				item: "functionalstorage:iron_downgrade"
@@ -366,7 +374,6 @@
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
-			subtitle: "Trash can build-in into drawer"
 			tasks: [{
 				id: "0000000000000985"
 				item: "functionalstorage:void_upgrade"
@@ -376,6 +383,7 @@
 			y: -9.5d
 		}
 		{
+			dependencies: ["00000000000003FF"]
 			description: [
 				"Sophisticated backpacks is the backpack mod you never knew you were missing. "
 				""
@@ -383,6 +391,7 @@
 				""
 				"Beyond these already excellent features, they can also host a number of very useful upgrades."
 			]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1b
 				id: "sophisticatedbackpacks:backpack"
@@ -506,6 +515,7 @@
 			y: -8.5d
 		}
 		{
+			dependencies: ["00000000000003FF"]
 			description: [
 				"The Personal Shrinking Device can shrink one right out of sight and into the nooks and crannies of special machines. "
 				""
@@ -513,6 +523,7 @@
 				""
 				"Simply Right-Click a Compact Machine with the Personal Shrinking Device to warp inside."
 			]
+			hide_dependency_lines: true
 			id: "0AD2769DC173D26D"
 			rewards: [{
 				count: 2
@@ -739,6 +750,7 @@
 			y: -9.5d
 		}
 		{
+			dependencies: ["00000000000003FF"]
 			description: [
 				"Got more gadgets and gizmos than one cavern can hold? More whozits and whatzits than you know what to do with? Then its time to shove it in another dimension and hire someone to sort it for you. Just read the fine print of any contracts you sign."
 				""
@@ -746,6 +758,7 @@
 				""
 				"Check out the Occultism chapter for more details on the process."
 			]
+			hide_dependency_lines: true
 			id: "662DA1135F00D6B6"
 			min_width: 300
 			rewards: [{
@@ -793,7 +806,6 @@
 					xp: 100
 				}
 			]
-			subtitle: "Integrated Hopper in a nutshell"
 			tasks: [{
 				id: "26B4B487EC799FC4"
 				item: {
@@ -842,7 +854,6 @@
 					type: "item"
 				}
 			]
-			subtitle: "Hopper-like item transfer?"
 			tasks: [
 				{
 					id: "0A86B1D1939EE2E6"
@@ -937,7 +948,6 @@
 					type: "item"
 				}
 			]
-			subtitle: "Lets compact everything"
 			tasks: [{
 				id: "66F3136BE821E73D"
 				item: "functionalstorage:compacting_drawer"
@@ -972,11 +982,13 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["00000000000003FF"]
 			description: [
 				"Far more than a simple storage solution, Applied Energetics 2 offers a full range of automation and cross dimensional transport capabilities. "
 				""
 				"Check out the dedicated AE2 chapter for more information. "
 			]
+			hide_dependency_lines: true
 			id: "6C528552302BCEDC"
 			min_width: 250
 			rewards: [

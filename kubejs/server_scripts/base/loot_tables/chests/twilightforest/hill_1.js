@@ -34,6 +34,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('twilightforest:transformation_powder', 25, [1, 12]);
             pool.addItem('twilightforest:steeleaf_ingot', 25, [3, 7]);
             pool.addItem('twilightforest:music_disc_findings', 25, 1);
+            pool.addItem('sophisticatedbackpacks:stack_upgrade_tier_1', 25, 1);
         });
     });
 });

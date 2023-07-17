@@ -40,6 +40,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('twilightforest:charm_of_keeping_1', 25, 1);
             pool.addItem('twilightforest:ironwood_block', 25, 1);
             pool.addItem('twilightforest:music_disc_maker', 25, 1);
+            pool.addItem('sophisticatedbackpacks:stack_upgrade_tier_1', 25, 1);
         });
     });
 });

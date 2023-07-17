@@ -67,6 +67,10 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('ars_elemental:siren_shards', 1, 1);
             pool.addItem('twilightforest:raven_feather', 1, 1);
             pool.addItem('naturesaura:pet_reviver', 1, 1);
+            pool.addItem('sophisticatedstorage:stack_upgrade_tier_1', 1, 1);
+            pool.addItem('sophisticatedstorage:stack_upgrade_tier_2', 1, 1);
+            pool.addItem('sophisticatedstorage:basic_to_iron_tier_upgrade', 1, 1);
+            pool.addItem('sophisticatedstorage:iron_to_gold_tier_upgrade', 1, 1);
         });
     });
 
