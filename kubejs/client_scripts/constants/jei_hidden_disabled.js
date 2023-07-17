@@ -669,7 +669,6 @@ jei.expert.items.disabled = [
     'sophisticatedstorage:iron_to_diamond_tier_upgrade',
     'sophisticatedstorage:iron_to_netherite_tier_upgrade',
     'sophisticatedstorage:gold_to_netherite_tier_upgrade',
-    'sophisticatedstorage:diamond_to_netherite_tier_upgrade',
 
     'superiorshields:copper_shield',
     'superiorshields:diamond_shield',

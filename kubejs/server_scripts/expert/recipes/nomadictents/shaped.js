@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
             output: 'nomadictents:mallet',
             pattern: [' AB', ' CA', 'B  '],
             key: {
-                A: '#forge:ingots/lead',
+                A: 'ars_nouveau:sourcestone',
                 B: '#forge:rods/wooden',
                 C: 'nomadictents:tent_canvas'
             },

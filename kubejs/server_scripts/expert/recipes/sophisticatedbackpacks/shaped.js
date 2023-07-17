@@ -6,10 +6,10 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            output: 'sophisticatedbackpacks:upgrade_base',
+            output: '5x sophisticatedbackpacks:upgrade_base',
             pattern: ['ABA', 'BAB', 'ABA'],
             key: {
-                A: '#forge:treated_wood_slab',
+                A: 'ars_nouveau:archwood_slab',
                 B: '#forge:nuggets/electrum'
             },
             id: 'sophisticatedbackpacks:upgrade_base'
