@@ -105,6 +105,9 @@ ars_elemental_types.forEach((type) => {
 
 armor_sets.forEach((armor_set) => {
     PlayerEvents.tick((event) => {
+        if (global.isExpertMode == false) {
+            return;
+        }
         const player = event.player;
         const playerData = player.persistentData;
         if (!player.isPlayer() || player.isFake()) {
