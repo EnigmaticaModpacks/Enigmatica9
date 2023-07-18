@@ -271,8 +271,17 @@
 			icon: "kubejs:energetic_transference_matrix"
 			id: "21C352EEFEB25365"
 			rewards: [{
-				id: "114DDA59B0F39B36"
-				item: "immersiveengineering:rs_engineering"
+				id: "6AF890724D4023A1"
+				item: {
+					Count: 1b
+					id: "thermal:upgrade_augment_2"
+					tag: {
+						AugmentData: {
+							BaseMod: 4
+							Type: "Upgrade"
+						}
+					}
+				}
 				type: "item"
 			}]
 			subtitle: "Interdimensional Outsourcing"
