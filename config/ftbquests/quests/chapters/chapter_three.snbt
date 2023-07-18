@@ -825,8 +825,6 @@
 				"Travel to a Deep Dark biome far underground in the Overworld and make enough noise to force the Warden out of hiding. "
 				""
 				"Slay it to obtain a Warden Tendril."
-				""
-				"The Tendril will be key in creating a Sculk Catalyst in this Ritual of Growth."
 			]
 			id: "4410E58ED333FBCB"
 			tasks: [
@@ -853,8 +851,8 @@
 					type: "item"
 				}
 				{
-					id: "78062E486F693A20"
-					item: "minecraft:sculk_catalyst"
+					id: "65B2485AF1B67617"
+					item: "apotheosis:warden_tendril"
 					type: "item"
 				}
 			]
