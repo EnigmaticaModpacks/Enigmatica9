@@ -21,9 +21,10 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ambrosia`
         },
         {
-            result: { amount: 1, fluid: 'kubejs:elysium' },
+            result: { amount: 20, fluid: 'kubejs:elysium' },
             input0: { amount: 10, tag: 'forge:biofuel' },
-            catalyst: { item: 'kubejs:reverberating_powder' },
+            input1: { amount: 10, tag: 'forge:honey' },
+            catalyst: { item: 'kubejs:genius_loci' },
             energy: 500,
 
             id: `${id_prefix}quicksilver_fluid`

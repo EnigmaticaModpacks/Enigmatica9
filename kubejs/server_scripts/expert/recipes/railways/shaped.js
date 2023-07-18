@@ -140,6 +140,26 @@ ServerEvents.recipes((event) => {
                 C: 'pneumaticcraft:logistics_core'
             },
             id: 'railways:crafting/track_switch_brass'
+        },
+        {
+            output: 'railways:track_switch_andesite',
+            pattern: ['A', 'B', 'C'],
+            key: {
+                A: 'minecraft:lever',
+                B: 'create:andesite_casing',
+                C: 'pneumaticcraft:logistics_core'
+            },
+            id: 'railways:crafting/track_switch_andesite'
+        },
+        {
+            output: 'railways:remote_lens',
+            pattern: ['A', 'B', 'C'],
+            key: {
+                A: '#forge:nuggets/signalum',
+                B: '#forge:plates/gold',
+                C: 'ars_nouveau:scryers_crystal'
+            },
+            id: 'railways:crafting/remote_lens'
         }
     ];
 

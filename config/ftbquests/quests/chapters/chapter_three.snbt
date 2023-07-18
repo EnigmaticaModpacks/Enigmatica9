@@ -626,14 +626,34 @@
 			]
 			icon: "industrialforegoing:ore_laser_base"
 			id: "17F735810850C368"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "27B8D639195825E7"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					id: "5D5C3A61C518BD5F"
+					item: {
+						Count: 1b
+						id: "industrialforegoing:speed_addon_2"
+						tag: {
+							TitaniumAugment: {
+								Speed: 3.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "59F00D28D54B2705"
+					item: {
+						Count: 1b
+						id: "industrialforegoing:efficiency_addon_2"
+						tag: {
+							TitaniumAugment: {
+								Efficiency: 0.8f
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "5F0411E4A7C69564"
@@ -824,8 +844,9 @@
 				""
 				"Travel to a Deep Dark biome far underground in the Overworld and make enough noise to force the Warden out of hiding. "
 				""
-				"Slay it to obtain a Warden Tendril."
+				"Slay it to obtain a Warden Tendril which may be transformed into Genius Loci, a powerful catalyst used in the creation of Elysium."
 			]
+			icon: "apotheosis:soul_touched_sculkshelf"
 			id: "4410E58ED333FBCB"
 			tasks: [
 				{
@@ -851,8 +872,8 @@
 					type: "item"
 				}
 				{
-					id: "65B2485AF1B67617"
-					item: "apotheosis:warden_tendril"
+					id: "0CCA7157AB1E119F"
+					item: "kubejs:genius_loci"
 					type: "item"
 				}
 			]
