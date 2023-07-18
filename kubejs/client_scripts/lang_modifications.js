@@ -1292,6 +1292,22 @@ const entries = {
                 expert: `Infused Breath of Twilight`
             }
         }
+    ],
+    railways: [
+        {
+            key: 'block.railways.track_switch_brass',
+            value: {
+                normal: `Brass Track Switch`,
+                expert: `Enchanted Track Switch`
+            }
+        },
+        {
+            key: 'block.railways.track_switch_andesite',
+            value: {
+                normal: `Andesite Track Switch`,
+                expert: `Compressed Stone Track Switch`
+            }
+        }
     ]
 };
 Object.keys(entries).forEach((mod) => {

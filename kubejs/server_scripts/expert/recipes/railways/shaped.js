@@ -130,6 +130,16 @@ ServerEvents.recipes((event) => {
                 C: '#forge:string'
             },
             id: 'railways:crafting/conductor_whistle'
+        },
+        {
+            output: 'railways:track_switch_brass',
+            pattern: ['A', 'B', 'C'],
+            key: {
+                A: 'minecraft:lever',
+                B: 'create:brass_casing',
+                C: 'pneumaticcraft:logistics_core'
+            },
+            id: 'railways:crafting/track_switch_brass'
         }
     ];
 
