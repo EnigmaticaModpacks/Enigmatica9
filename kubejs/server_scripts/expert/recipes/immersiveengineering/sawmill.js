@@ -23,7 +23,7 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'immersiveengineering:sawmill';
-        recipe.input = recipe.input.map((input) => input.startsWith('#') ? { tag: input.slice(1) } : { item: input });
+        recipe.input = recipe.input.map((input) => (input.startsWith('#') ? { tag: input.slice(1) } : { item: input }));
         recipe.result = Item.of(recipe.output).toJson();
         recipe.secondaries = recipe.secondaries.map((secondary) => ({
             output: { item: secondary.output },
