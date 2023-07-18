@@ -44,7 +44,7 @@ StartupEvents.registry('item', (event) => {
         'mastery_token_water',
         'primordial_seed',
         'withered_soul',
-        'reverberating_powder'
+        'genius_loci'
     ];
 
     const ritualDummies = [
