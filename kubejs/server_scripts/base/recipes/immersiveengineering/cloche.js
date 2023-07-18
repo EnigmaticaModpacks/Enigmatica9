@@ -1,18 +1,7 @@
 ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/immersiveengineering/cloche/';
 
-    const recipes = [
-        /*
-        {
-            outputs: [Item.of('2x minecraft:wheat'), Item.of('minecraft:wheat_seeds')],
-            input: Item.of('minecraft:wheat_seeds'),
-            render: { type: 'crop', block: 'minecraft:wheat' },
-            soil: Item.of('minecraft:dirt'),
-            time: 800,
-            id: `${id_prefix}'minecraft_wheat'`
-        }
-        */
-    ];
+    const recipes = [];
 
     // Cloche additions from crop_properties constant
     let crop_types = Object.keys(crop_properties);
@@ -40,13 +29,13 @@ ServerEvents.recipes((event) => {
             let outputs = [Item.of(crop.plant, primary_count)];
 
             if (type.includes('_crops') && crop.seed !== 'minecraft:chorus_flower') {
-                outputs.push(Item.of(`${secondary_count}x ${crop.seed}`));
+                outputs.push({ item: crop.seed, count: secondary_count });
             }
             recipes.push({
                 outputs: outputs,
-                input: Item.of(crop.seed),
+                input: { item: crop.seed },
                 render: crop.render,
-                soil: Ingredient.of(`#enigmatica:soils/${crop.substrate}`),
+                soil: { tag: `enigmatica:soils/${crop.substrate}` },
                 time: Math.trunc(growth_ticks),
                 id: `${id_prefix}${crop.plant.replace(':', '_')}`
             });
@@ -56,15 +45,7 @@ ServerEvents.recipes((event) => {
     recipes.forEach((recipe) => {
         recipe.type = 'immersiveengineering:cloche';
 
-        // input: { item: 'minecraft:wheat_seeds' },
-        recipe.input = recipe.input.toJson();
-
-        // results: [{ count: 2, item: 'minecraft:wheat' }, { item: 'minecraft:wheat_seeds' }]
-        recipe.results = recipe.outputs.map((output) => output.toJson());
-
-        //soil: { item: 'minecraft:dirt' }
-        recipe.soil = recipe.soil.toJson();
-
+        recipe.results = recipe.outputs;
         event.custom(recipe).id(recipe.id);
     });
 });

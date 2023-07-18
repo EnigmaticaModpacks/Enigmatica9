@@ -277,12 +277,14 @@ ServerEvents.recipes((event) => {
     recipes.forEach((recipe) => {
         recipe.type = 'ars_nouveau:imbuement';
         if (recipe.inputs) {
-            recipe.pedestalItems = recipe.inputs.map((input) => ({ item: Ingredient.of(input).toJson() }));
+            recipe.pedestalItems = recipe.inputs.map((input) => ({
+                item: input.startsWith('#') ? { tag: input.slice(1) } : { item: input }
+            }));
         } else {
             recipe.pedestalItems = [];
         }
 
-        recipe.input = Ingredient.of(recipe.reagent).toJson();
+        recipe.input = recipe.reagent.startsWith('#') ? { tag: recipe.reagent.slice(1) } : { item: recipe.reagent };
 
         event.custom(recipe).id(recipe.id);
     });

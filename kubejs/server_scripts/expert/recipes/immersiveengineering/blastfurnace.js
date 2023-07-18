@@ -22,7 +22,7 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'immersiveengineering:blast_furnace';
-        recipe.input = Ingredient.of(recipe.input).toJson();
+        recipe.input = recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input };
         recipe.result = Item.of(recipe.output).toJson();
         recipe.slag = Item.of(recipe.slag).toJson();
         // Specify time in seconds in the recipes.

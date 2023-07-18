@@ -97,7 +97,7 @@ ServerEvents.recipes((event) => {
             count: recipe.input.item.count
         };
         recipe.additives = recipe.additives.map((additive) => ({
-            base_ingredient: Ingredient.of(additive.item).toJson(),
+            base_ingredient: additive.item.startsWith('#') ? { tag: additive.item.slice(1) } : { item: additive.item },
             count: additive.count
         }));
         recipe.results = [{ base_ingredient: { item: recipe.output.getId() }, count: recipe.output.getCount() }];

@@ -122,7 +122,7 @@ ServerEvents.recipes((event) => {
             .custom({
                 type: 'thermal:furnace',
                 result: Item.of(recipe.output).toJson(),
-                ingredient: Ingredient.of(recipe.input).toJson(),
+                ingredient: recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input },
                 experience: recipe.xp,
                 energy_mod: 2.0
             })
@@ -131,7 +131,7 @@ ServerEvents.recipes((event) => {
         event
             .custom({
                 type: 'immersiveengineering:blast_furnace',
-                input: Ingredient.of(recipe.input).toJson(),
+                input: recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input },
                 result: Item.of(recipe.output).toJson(),
                 slag: Item.of(recipe.slag).toJson(),
                 time: 3 * 20

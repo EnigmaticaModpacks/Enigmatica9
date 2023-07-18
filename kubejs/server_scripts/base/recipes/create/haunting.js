@@ -2,16 +2,18 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/create/haunting/';
     const recipes = [
         {
-            ingredients: ['supplementaries:sconce'],
-            results: ['supplementaries:sconce_soul'],
+            inputs: ['supplementaries:sconce'],
+            outputs: [{ item: 'supplementaries:sconce_soul' }],
             id: `supplementaries:integration/sconce_haunting`
         }
     ];
 
     recipes.forEach((recipe) => {
         recipe.type = 'create:haunting';
-        recipe.ingredients = recipe.ingredients.map((ingredient) => Ingredient.of(ingredient).toJson());
-        recipe.results = recipe.results.map((item) => Item.of(item).toJson());
+        recipe.ingredients = recipe.inputs.map((ingredinputient) =>
+            input.startsWith('#') ? { tag: input.slice(1) } : { item: input }
+        );
+        recipe.results = recipe.outputs;
         event.custom(recipe).id(recipe.id);
     });
 });

@@ -123,7 +123,7 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'naturesaura:altar';
-        recipe.input = Ingredient.of(recipe.input).toJson();
+        recipe.input = recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input };
         recipe.output = Item.of(recipe.output).toJson();
         if (recipe.catalyst) {
             recipe.catalyst = { item: recipe.catalyst };
