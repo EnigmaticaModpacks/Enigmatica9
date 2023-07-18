@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
         event
             .custom({
                 type: 'occultism:crushing',
-                ingredient: Ingredient.of(input).toJson(),
+                ingredient: input.startsWith('#') ? { tag: input.slice(1) } : { item: input },
                 result: Item.of(outputs, count).toJson(),
                 crushing_time: duration,
                 ignore_crushing_multiplier: false

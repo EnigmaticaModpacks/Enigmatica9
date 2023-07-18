@@ -12,7 +12,7 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'farmersdelight:cooking';
-        recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
+        recipe.ingredients = recipe.inputs.map((input) => input.startsWith('#') ? { tag: input.slice(1) } : { item: input });
         recipe.result = { item: recipe.output, count: recipe.count };
         if (recipe.container) {
             recipe.container = { item: recipe.container };

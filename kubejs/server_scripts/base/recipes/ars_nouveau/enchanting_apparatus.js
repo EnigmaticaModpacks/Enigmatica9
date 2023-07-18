@@ -174,9 +174,14 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'ars_nouveau:enchanting_apparatus';
+
         recipe.output = Item.of(recipe.output).toJson();
-        recipe.pedestalItems = recipe.inputs.map((input) => ({ item: Ingredient.of(input).toJson() }));
-        recipe.reagent = recipe.reagents.map((reagent) => Ingredient.of(reagent).toJson());
+        recipe.pedestalItems = recipe.inputs.map((input) => ({
+            item: input.startsWith('#') ? { tag: input.slice(1) } : { item: input }
+        }));
+        recipe.reagent = recipe.reagents.map((reagent) =>
+            reagent.startsWith('#') ? { tag: reagent.slice(1) } : { item: reagent }
+        );
 
         event.custom(recipe).id(recipe.id);
     });

@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
         {
             ingredients: [
                 { fluid: 'industrialforegoing:biofuel', amount: 500 },
-                { item: 'minecraft:sculk', count: 30 }
+                { item: 'minecraft:sculk', count: 9 }
             ],
             result: [{ item: 'minecraft:echo_shard' }],
             energy: 12000,

@@ -6,12 +6,12 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            input: 'byg:oddity_cactus',
+            input: { ingredient: { item: 'byg:oddity_cactus' } },
             output: { amount: 768, pigment: 'mekanism:white' },
             id: 'mekanism:compat/byg/pigment_extracting/white'
         },
         {
-            input: 'byg:warped_cactus',
+            input: { ingredient: { item: 'byg:warped_cactus' } },
             output: { amount: 768, pigment: 'mekanism:cyan' },
             id: 'mekanism:compat/byg/pigment_extracting/cyan'
         }
@@ -58,7 +58,6 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'mekanism:pigment_extracting';
-        recipe.input = { ingredient: Ingredient.of(recipe.input).toJson() };
         event.custom(recipe).id(recipe.id);
     });
 });
