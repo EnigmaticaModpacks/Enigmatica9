@@ -29,6 +29,8 @@
 -   Fix out of control CNB sporeling spawns [\#483](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/483) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Implement Apotheosis workaround for CNB Sporelings [\#484](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/484) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix Hemp not planting on Farming for Blockheads' Farmland [\#485](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/485) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Expert Armor Sets no longer affect Normal mode. [\#505](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/505) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Inhalation Purification no longer removes certain effects that aren't meant to be removed. [\#505](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/505) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
