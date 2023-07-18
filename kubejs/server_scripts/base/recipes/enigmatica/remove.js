@@ -12,6 +12,8 @@ ServerEvents.recipes((event) => {
         { mod: 'theoneprobe' },
         { mod: 'densetrees' },
 
+        { type: 'immersiveengineering:mineral_mix' },
+
         { output: /pendorite/ },
         { output: /emeraldite/ },
         { output: /ametrine/ },
