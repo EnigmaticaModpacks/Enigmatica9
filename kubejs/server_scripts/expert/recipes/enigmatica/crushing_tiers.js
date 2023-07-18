@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
         {
             outputs: { primary: 'occultism:crushed_end_stone' },
             input: 'minecraft:end_stone',
-            crushing_tier: 3,
+            crushing_tier: 2,
             id_suffix: 'crushed_end_stone_from_end_stone'
         },
         {
