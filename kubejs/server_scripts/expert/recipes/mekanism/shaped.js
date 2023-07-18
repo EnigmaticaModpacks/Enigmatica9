@@ -293,6 +293,19 @@ ServerEvents.recipes((event) => {
             id: 'mekanism:module_hydraulic_propulsion_unit'
         },
         {
+            output: 'mekanism:module_inhalation_purification_unit',
+            pattern: ['ABA', 'CDC', 'FEF'],
+            key: {
+                A: '#forge:essences/air',
+                B: 'kubejs:magebloom_filter',
+                C: '#forge:plates/netherite',
+                D: 'modularrouters:augment_core',
+                E: 'pneumaticcraft:printed_circuit_board',
+                F: '#forge:gears/osmium'
+            },
+            id: 'mekanism:module_inhalation_purification_unit'
+        },
+        {
             output: 'mekanism:module_hydrostatic_repulsor_unit',
             pattern: ['ABA', 'CDC', 'FEF'],
             key: {

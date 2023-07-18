@@ -470,7 +470,6 @@ jei.expert.items.disabled = [
     'mekanism:module_radiation_shielding_unit',
     'mekanism:module_geiger_unit',
     'mekanism:module_dosimeter_unit',
-    'mekanism:module_inhalation_purification_unit',
     'mekanism:electrolytic_core',
     'mekanism:pigment_extractor',
     'mekanism:pigment_mixer',

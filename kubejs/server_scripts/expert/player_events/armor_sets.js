@@ -63,28 +63,32 @@ const armor_sets = [
         armor: ['mekanism:mekasuit_helmet', null, null, null],
         effects: [
             { potion: 'ars_elemental:hymn_of_order', amp: 0 },
-            { potion: 'ars_nouveau:summoning_sickness', amp: 0 }
+            { potion: 'ars_nouveau:summoning_sickness', amp: 0 },
+            { potion: 'ars_nouveau:familiar_sickness', amp: 0 }
         ]
     },
     {
         armor: [null, 'mekanism:mekasuit_bodyarmor', null, null],
         effects: [
             { potion: 'ars_elemental:hymn_of_order', amp: 0 },
-            { potion: 'ars_nouveau:summoning_sickness', amp: 0 }
+            { potion: 'ars_nouveau:summoning_sickness', amp: 0 },
+            { potion: 'ars_nouveau:familiar_sickness', amp: 0 }
         ]
     },
     {
         armor: [null, null, 'mekanism:mekasuit_pants', null],
         effects: [
             { potion: 'ars_elemental:hymn_of_order', amp: 0 },
-            { potion: 'ars_nouveau:summoning_sickness', amp: 0 }
+            { potion: 'ars_nouveau:summoning_sickness', amp: 0 },
+            { potion: 'ars_nouveau:familiar_sickness', amp: 0 }
         ]
     },
     {
         armor: [null, null, null, 'mekanism:mekasuit_boots'],
         effects: [
             { potion: 'ars_elemental:hymn_of_order', amp: 0 },
-            { potion: 'ars_nouveau:summoning_sickness', amp: 0 }
+            { potion: 'ars_nouveau:summoning_sickness', amp: 0 },
+            { potion: 'ars_nouveau:familiar_sickness', amp: 0 }
         ]
     }
 ];
@@ -105,6 +109,9 @@ ars_elemental_types.forEach((type) => {
 
 armor_sets.forEach((armor_set) => {
     PlayerEvents.tick((event) => {
+        if (global.isExpertMode == false) {
+            return;
+        }
         const player = event.player;
         const playerData = player.persistentData;
         if (!player.isPlayer() || player.isFake()) {

@@ -340,7 +340,6 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:module_radiation_shielding_unit' },
         { id: 'mekanism:module_geiger_unit' },
         { id: 'mekanism:module_dosimeter_unit' },
-        { id: 'mekanism:module_inhalation_purification_unit' },
         { id: 'mekanism:electrolytic_core' },
         { id: 'mekanism:precision_sawmill' },
         { id: 'mekanism:quantum_entangloporter' },

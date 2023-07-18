@@ -1,0 +1,19 @@
+ServerEvents.tags('mob_effect', (event) => {
+    event
+        .get('mekanism:speed_up_blacklist')
+        .add([
+            'apotheosis:bleeding',
+            'apotheosis:grievous',
+            'apotheosis:sundering',
+            'ars_elemental:hymn_of_order',
+            'ars_nouveau:familiar_sickness',
+            'ars_nouveau:summoning_sickness',
+            'cofh_core:sundered',
+            'immersiveengineering:concrete_feet',
+            'immersiveengineering:conductive',
+            'minecraft:bad_omen',
+            'naturesaura:breathless',
+            'supplementaries:overencumbered',
+            'the_bumblezone:wrath_of_the_hive'
+        ]);
+});
