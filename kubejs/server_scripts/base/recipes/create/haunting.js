@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'create:haunting';
-        recipe.ingredients = recipe.inputs.map((ingredinputient) =>
+        recipe.ingredients = recipe.inputs.map((input) =>
             input.startsWith('#') ? { tag: input.slice(1) } : { item: input }
         );
         recipe.results = recipe.outputs;
