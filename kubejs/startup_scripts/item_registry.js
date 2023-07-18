@@ -43,7 +43,8 @@ StartupEvents.registry('item', (event) => {
         'mastery_token_fire',
         'mastery_token_water',
         'primordial_seed',
-        'withered_soul'
+        'withered_soul',
+        'genius_loci'
     ];
 
     const ritualDummies = [

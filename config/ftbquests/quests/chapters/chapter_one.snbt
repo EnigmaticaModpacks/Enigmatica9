@@ -1241,12 +1241,18 @@
 			description: ["An upgrade to the basic furnace used up till now. This simple apparatus merely channels the energies into an Extraneous Firestarter to produce heat. Crude, but effective.  "]
 			id: "505DBC92B7AC1AFE"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				icon: "kubejs:sorcerers_delight"
-				id: "5F79A6FD24450643"
-				player_command: false
-				title: "Sorcerer's Delight"
-				type: "command"
+				id: "61B93BE9DF0FEBC9"
+				item: {
+					Count: 1b
+					id: "thermal:upgrade_augment_2"
+					tag: {
+						AugmentData: {
+							BaseMod: 4
+							Type: "Upgrade"
+						}
+					}
+				}
+				type: "item"
 			}]
 			tasks: [{
 				id: "7C7C33FFD852E5A8"

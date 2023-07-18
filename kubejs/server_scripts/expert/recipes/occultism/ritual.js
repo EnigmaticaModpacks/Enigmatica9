@@ -706,10 +706,10 @@ ServerEvents.recipes((event) => {
                 'naturesaura:gold_leaf',
                 'naturesaura:gold_leaf',
                 'naturesaura:gold_leaf',
-                '#minecraft:logs',
-                '#minecraft:logs',
-                '#minecraft:logs',
-                '#minecraft:logs'
+                'quark:stick_block',
+                'quark:stick_block',
+                'quark:stick_block',
+                'quark:stick_block'
             ],
             duration: 10,
             id: `occultism:ritual/familiar_beaver`

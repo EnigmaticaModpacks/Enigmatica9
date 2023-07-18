@@ -71,7 +71,7 @@ ServerEvents.recipes((event) => {
             fluid_input: { type: 'pneumaticcraft:fluid', amount: 4000, tag: 'forge:source' },
             fluid_output: { amount: 4000, fluid: 'industrialforegoing:biofuel' },
             item_input: [{ item: 'kubejs:saturated_magebloom_filter' }],
-            item_output: { item: 'kubejs:magebloom_filter' },
+            item_output: { item: 'immersiveengineering:stick_treated', count: 3 },
             exothermic: false,
             temperature: { min_temp: 1273 },
             pressure: 7.0,

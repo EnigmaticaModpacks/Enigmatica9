@@ -6,11 +6,11 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/apotheosis/enchanting/';
     const recipes = [
         {
-            result: { item: 'minecraft:sculk_catalyst', count: 1 },
-            input: { item: 'industrialforegoing:mechanical_dirt' },
+            result: { item: 'kubejs:genius_loci', count: 8 },
+            input: { item: 'apotheosis:warden_tendril' },
             requirements: { eterna: 40, quanta: 15, arcana: 60 },
             max_requirements: { eterna: -1, quanta: 25, arcana: -1 },
-            id: `${id_prefix}sculk_catalyst`
+            id: `${id_prefix}genius_loci`
         },
         {
             result: { item: 'emendatusenigmatica:tainted_gold_ingot', count: 1 },
