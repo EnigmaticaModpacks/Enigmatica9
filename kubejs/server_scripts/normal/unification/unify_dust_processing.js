@@ -232,7 +232,9 @@ function recipetypes_crushing(event, material, exceptions, item, tag) {
         event
             .custom({
                 type: 'mekanism:crushing',
-                input: { ingredient: recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input } },
+                input: {
+                    ingredient: recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input }
+                },
                 output: Item.of(recipe.outputs.primary.item, recipe.outputs.primary.count).toJson()
             })
             .id(`${id_prefix}mekanism_crushing/${recipe.id_suffix}`);

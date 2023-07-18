@@ -1919,7 +1919,9 @@ ServerEvents.recipes((event) => {
                 : { item: recipe.item_to_use };
 
         recipe.ritual_dummy = Item.of(recipe.ritual_dummy).toJson();
-        recipe.ingredients = recipe.inputs.map((input) => input.startsWith('#') ? { tag: input.slice(1) } : { item: input });
+        recipe.ingredients = recipe.inputs.map((input) =>
+            input.startsWith('#') ? { tag: input.slice(1) } : { item: input }
+        );
         recipe.result = Item.of(recipe.output).toJson();
         event.custom(recipe).id(recipe.id);
     });

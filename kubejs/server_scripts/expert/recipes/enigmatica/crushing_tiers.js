@@ -134,7 +134,9 @@ ServerEvents.recipes((event) => {
             event
                 .custom({
                     type: 'create:milling',
-                    ingredients: [recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input }],
+                    ingredients: [
+                        recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input }
+                    ],
                     results: outputs,
                     processingTime: duration
                 })
@@ -170,7 +172,9 @@ ServerEvents.recipes((event) => {
             event
                 .custom({
                     type: 'create:crushing',
-                    ingredients: [recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input }],
+                    ingredients: [
+                        recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input }
+                    ],
                     results: outputs,
                     processingTime: duration
                 })
