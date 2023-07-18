@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
             catalyst: { item: 'kubejs:genius_loci' },
             energy: 500,
 
-            id: `${id_prefix}quicksilver_fluid`
+            id: `${id_prefix}elysium`
         }
     ];
 
