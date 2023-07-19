@@ -30,5 +30,10 @@ ServerEvents.chestLootTables((event) => {
             pool.rolls = [1, 3];
             pool.addEntry({ type: 'loot_table', weight: 1, name: 'enigmatica:apotheosis_gem_cache' });
         });
+
+        table.addPool((pool) => {
+            pool.rolls = 1.0;
+            pool.addEntry({ type: 'loot_table', weight: 1, name: 'enigmatica:ars_nouveau_glyph_cache/tier_3' });
+        });
     });
 });

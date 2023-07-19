@@ -1121,7 +1121,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["66585A158F41DE44"]
@@ -1675,7 +1675,7 @@
 			]
 			title: "Tree of Life"
 			x: -3.5d
-			y: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["347A644441BCF449"]
@@ -1759,8 +1759,8 @@
 					type: "item"
 				}
 			]
-			x: -3.5d
-			y: 1.5d
+			x: -6.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4B874AA448FF4C7A"]
@@ -1853,7 +1853,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["4B874AA448FF4C7A"]
+			dependencies: ["11AB47232D9F5D6D"]
 			description: [
 				"Honey’s healing properties are well known to Witches and have been used for centuries to treat countless ailments. With an extra little touch of magic, it can even be transmuted into a powerful substance known as Breath of Twilight. "
 				""
@@ -1895,8 +1895,8 @@
 					type: "item"
 				}
 			]
-			x: -3.5d
-			y: 0.5d
+			x: -5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["370C40BCC3A6A055"]
