@@ -139,7 +139,7 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             id: 'witch_solitary_witch',
-            name: 'miniboss.enigmatica.solitary_witch',
+            name: 'miniboss.enigmatica.witch_solitary_witch',
             chance: 1.0,
             weight: 100,
             quality: 0,

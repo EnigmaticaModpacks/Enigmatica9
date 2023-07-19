@@ -77,6 +77,14 @@ ServerEvents.recipes((event) => {
             id: `ars_nouveau:imbuement_manipulation_essence`
         },
         {
+            output: 'ars_elemental:anima_essence',
+            count: 1,
+            reagent: '#forge:gems/source',
+            inputs: ['twilightforest:charm_of_life_2', '#forge:ingots/lead', 'hexerei:blood_bottle'],
+            source: 500,
+            id: `ars_elemental:imbuement_anima_essence`
+        },
+        {
             output: 'ars_nouveau:fire_essence',
             count: 4,
             reagent: '#forge:storage_blocks/source',
@@ -133,20 +141,19 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}imbuement_manipulation_essence_from_block`
         },
         {
+            output: 'ars_elemental:anima_essence',
+            count: 4,
+            reagent: '#forge:storage_blocks/source',
+            inputs: ['twilightforest:charm_of_life_2', '#forge:ingots/lead', 'hexerei:blood_bottle'],
+            source: 2000,
+            id: `${id_prefix}imbuement_anima_essence_from_block`
+        },
+        {
             output: 'naturesaura:infused_stone',
             count: 1,
             reagent: 'minecraft:calcite',
             source: 500,
             id: `${id_prefix}infused_stone`
-        },
-
-        {
-            output: 'ars_elemental:anima_essence',
-            count: 1,
-            reagent: '#forge:gems/source',
-            inputs: ['twilightforest:charm_of_life_2', '#forge:ingots/lead', 'hexerei:blood_bottle'],
-            source: 500,
-            id: `ars_elemental:imbuement_anima_essence`
         },
         {
             output: 'pneumaticcraft:drill_bit_iron',
