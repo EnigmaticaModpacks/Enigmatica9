@@ -223,6 +223,8 @@
 	#Changing this value will alter the hydraulic bar production of the Pneumatic Pump. The input, air, will stay the same
 	#Range: > 0
 	pneumatic_pump_efficiency = 80
+	#ID's of dimensions in which the Aerial Interface is not allowed to operate. You can use wildcarded dimensions here, e.g. 'somemod:*'.
+	aerial_interface_dimension_blacklist = []
 
 [General]
 	#Enable mod dungeon loot generation

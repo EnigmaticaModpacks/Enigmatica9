@@ -13,6 +13,16 @@
 	nearTrainUpdateTicks = 1
 	#Register integration tracks for mods that are not present
 	registerMissingTracks = false
+	#Allow controlling Brass Switches remotely when approaching them on a train
+	flipDistantSwitches = true
+	#Placement range for switches
+	#Range: 16 ~ 128
+	switchPlacementRange = 64
+	#Disable Steam 'n Rails datafixers. Do not enable this config if you world contains pre-Create 0.5.1 monobogeys, because then they will be destroyed
+	disableDatafixer = false
+	#Maximum length of conductor vents
+	#Range: > 1
+	maxConductorVentLength = 64
 
 #Semaphore settings
 [semaphore]
