@@ -1,5 +1,8 @@
-param (
-    [string]$mode = "default"
+param(
+    [Parameter(Position = 0)]
+    [string]$mode = "default",
+    [Parameter(Position = 1)]
+    [switch]$uploadExpertMode
 )
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
@@ -14,6 +17,21 @@ function Validate-SecretsFile {
         Write-Host "You need a valid CurseForge API Token in a $secretsFile file" -ForegroundColor Red
         Write-Host "Creating $secretsFile" -ForegroundColor Cyan
         New-Item -Path $PSScriptRoot -ItemType File -Name $secretsFile -Value "# To generate an API token go to: https://authors.curseforge.com/account/api-tokens `n $CURSEFORGE_TOKEN = `"your-curseforge-token-here`""
+    }
+}
+
+function Switch-DefaultModeTo {
+    param(
+        [Parameter(Position = 0)]
+        [string]$mode
+    )
+    $defaultModeFilePath = "config/configswapper.json"
+
+    # Force the mode.json to be in expert mode for publishing
+    $defaultModeJson = Get-Content -Raw -Path $defaultModeFilePath | ConvertFrom-Json
+    if ($defaultModeJson.defaultmode -ne $mode) {
+        $defaultModeJson.defaultmode = $mode
+        $defaultModeJson | ConvertTo-Json | Set-Content $defaultModeFilePath
     }
 }
 
@@ -53,7 +71,6 @@ function Test-ForDependencies {
     }
 
     $isCurlAvailable = Get-Command $curl
-
     if (-not $isCurlAvailable) {
         Clear-Host
         Write-Host 
@@ -249,8 +266,6 @@ function Push-ClientFiles {
             -F metadata=$CLIENT_METADATA `
             -F file=@"$CLIENT_ZIP_NAME.zip" `
             --progress-bar | ConvertFrom-Json
-       
-
         $clientFileReturnId = $response.id
 
         if (-not $response.id) {
@@ -282,7 +297,7 @@ function Update-FileLinkInServerFiles {
         $idPart2 = Remove-LeadingZero -text $idPart2
         # CurseForge replaces whitespace in filenames with + in their CDN urls
         $sanitizedClientZipName = $CLIENT_ZIP_NAME.Replace(" ", "+")
-        $curseForgeCdnUrl = "https://media.forgecdn.net/files/$idPart1/$idPart2/$sanitizedClientZipName.zip"
+        $curseForgeCdnUrl = "https://media.forgecdn.net/files/$idPart1/$idPart2/$sanitizedClientZipName.zip"        
         $content = (Get-Content -Path $SERVER_SETUP_CONFIG_PATH) -replace "https://media.forgecdn.net/files/\d+/\d+/.*.zip", $curseForgeCdnUrl 
         [System.IO.File]::WriteAllLines(($SERVER_SETUP_CONFIG_PATH | Resolve-Path), $content)
 
@@ -401,7 +416,9 @@ function Remove-LeadingZero {
     return [int]$text
 }
 
+# Script execution starts here
 . "$PSScriptRoot/settings.ps1"
+. "$PSScriptRoot/$secretsFile"
 
 $startLocation = Get-Location
 Set-Location $INSTANCE_ROOT
@@ -421,21 +438,42 @@ switch ($mode) {
         . "$PSScriptRoot/$secretsFile"
         Validate-SecretsFile
         Update-BetterCompatibilityCheckerVersion
+
+        if ($uploadExpertMode) {
+            $CURSEFORGE_PROJECT_ID = 882461
+            $SERVER_FILES_FOLDER = "$INSTANCE_ROOT/server_files_expert"
+            $SERVER_SETUP_CONFIG_PATH = "$SERVER_FILES_FOLDER/server-setup-config.yaml"
+            $MODPACK_NAME = "Enigmatica9Expert"
+            $CLIENT_NAME = "Enigmatica9Expert"
+            $CLIENT_ZIP_NAME = "$CLIENT_NAME-$MODPACK_VERSION"
+            $SERVER_ZIP_NAME = "$CLIENT_NAME`Server-$MODPACK_VERSION"
+            $LAST_MODPACK_ZIP_NAME = "$CLIENT_NAME-$LAST_MODPACK_VERSION"
+            $CLIENT_FILE_DISPLAY_NAME = "Enigmatica 9 Expert $MODPACK_VERSION"
+            $SERVER_FILE_DISPLAY_NAME = "Enigmatica 9 Expert Server $MODPACK_VERSION"
+
+            Switch-DefaultModeTo -mode "expert"
+        }
+        else {
+            Switch-DefaultModeTo -mode "normal"
+        }
+
         New-ClientFiles
         Push-ClientFiles
         if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
             New-ServerFiles
         }
-        New-GitHubRelease
-        New-Changelog
-        Update-Modlist
+        if (!$uploadExpertMode) {
+            New-GitHubRelease
+            New-Changelog
+            Update-Modlist
+        }
 
         Write-Host "Modpack Upload Complete!" -ForegroundColor Green
         Set-Location $startLocation
 
         pause
         break
-    }
+    }    
     "modlist" {
         New-ClientFiles
         Update-Modlist
