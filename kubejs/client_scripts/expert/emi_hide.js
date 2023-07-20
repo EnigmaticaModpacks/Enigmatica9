@@ -1,6 +1,13 @@
-const emi_hide_recipes = { filters: [] };
+ClientEvents.highPriorityAssets((event) => {
+    if (global.isExpertMode == false) {
+        return;
+    }
 
-// EMI Compat
-emi_hide_recipes.filters.push({ id: `jei:/${id.replace(':', '/')}` });
-
-JsonIO.write(`kubejs/assets/emi/recipe/filters/emi_hide_recipes.json`, emi_hide_recipes);
+    jei.expert.recipes.hidden.forEach((recipe) => {
+        recipe.recipes_by_id.forEach((id) => {
+            event.add(`emi:recipe/filters/${id.replace(/(\/|:)/g, '_')}`, {
+                filters: [{ id: `jei:/${id.replace(':', '/')}` }]
+            });
+        });
+    });
+});
