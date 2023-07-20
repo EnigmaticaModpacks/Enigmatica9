@@ -1,0 +1,289 @@
+{
+	"filters": [
+		{
+			"id": "naturesaura:gold_fiber"
+		},
+		{
+			"id": "naturesaura:wood_stand"
+		},
+		{
+			"id": "naturesaura:offering_table"
+		},
+		{
+			"id": "naturesaura:flower_generator"
+		},
+		{
+			"id": "naturesaura:oak_generator"
+		},
+		{
+			"id": "naturesaura:slime_split_generator"
+		},
+		{
+			"id": "naturesaura:animal_generator"
+		},
+		{
+			"id": "naturesaura:chorus_generator"
+		},
+		{
+			"id": "naturesaura:moss_generator"
+		},
+		{
+			"id": "naturesaura:loot_finder"
+		},
+		{
+			"id": "naturesaura:light_staff"
+		},
+		{
+			"id": "naturesaura:cave_finder"
+		},
+		{
+			"id": "naturesaura:pet_reviver"
+		},
+		{
+			"id": "naturesaura:shockwave_creator"
+		},
+		{
+			"id": "naturesaura:blast_furnace_booster"
+		},
+		{
+			"id": "naturesaura:auto_crafter"
+		},
+		{
+			"id": "naturesaura:death_ring"
+		},
+		{
+			"id": "naturesaura:dimension_rail_end"
+		},
+		{
+			"id": "naturesaura:dimension_rail_nether"
+		},
+		{
+			"id": "naturesaura:dimension_rail_overworld"
+		},
+		{
+			"id": "naturesaura:rf_converter"
+		},
+		{
+			"id": "naturesaura:calling_spirit"
+		},
+		{
+			"id": "naturesaura:depth_ingot_creation"
+		},
+		{
+			"id": "naturesaura:projectile_generator"
+		},
+		{
+			"id": "naturesaura:firework_generator"
+		},
+		{
+			"id": "naturesaura:gold_powder"
+		},
+		{
+			"id": "ars_nouveau:imbuement_chamber"
+		},
+		{
+			"id": "ars_nouveau:mycelial_sourcelink"
+		},
+		{
+			"id": "ars_nouveau:vitalic_sourcelink"
+		},
+		{
+			"id": "ars_nouveau:volcanic_sourcelink"
+		},
+		{
+			"id": "ars_nouveau:agronomic_sourcelink"
+		},
+		{
+			"id": "ars_nouveau:conjuration_essence_to_soul_sand"
+		},
+		{
+			"id": "ars_nouveau:blank_thread"
+		},
+		{
+			"id": "ars_nouveau:novice_spell_book"
+		},
+		{
+			"id": "ars_nouveau:scribes_table"
+		},
+		{
+			"id": "naturesaura:altar/infused_stone"
+		},
+		{
+			"id": "naturesaura:altar/tainted_gold"
+		},
+		{
+			"id": "naturesaura:altar/gold_powder"
+		},
+		{
+			"id": "naturesaura:tree_ritual/ore_spawn_powder"
+		},
+		{
+			"id": "naturesaura:tree_ritual/crushing_catalyst"
+		},
+		{
+			"id": "naturesaura:tree_ritual/conversion_catalyst"
+		},
+		{
+			"id": "naturesaura:tree_ritual/nature_altar"
+		},
+		{
+			"id": "naturesaura:tree_ritual/token_sorrow"
+		},
+		{
+			"id": "naturesaura:tree_ritual/token_anger"
+		},
+		{
+			"id": "naturesaura:tree_ritual/token_fear"
+		},
+		{
+			"id": "naturesaura:tree_ritual/token_joy"
+		},
+		{
+			"id": "naturesaura:offering/token_grief"
+		},
+		{
+			"id": "naturesaura:offering/token_rage"
+		},
+		{
+			"id": "naturesaura:offering/token_terror"
+		},
+		{
+			"id": "naturesaura:offering/token_euphoria"
+		},
+		{
+			"id": "naturesaura:offering/sky_ingot_from_gold"
+		},
+		{
+			"id": "naturesaura:animal_spawner/endermite"
+		},
+		{
+			"id": "naturesaura:animal_spawner/phantom"
+		},
+		{
+			"id": "naturesaura:animal_spawner/slime"
+		},
+		{
+			"id": "naturesaura:animal_spawner/ghast"
+		},
+		{
+			"id": "naturesaura:animal_spawner/wither_skeleton"
+		},
+		{
+			"id": "naturesaura:animal_spawner/blaze"
+		},
+		{
+			"id": "naturesaura:animal_spawner/guardian"
+		},
+		{
+			"id": "naturesaura:animal_spawner/creeper"
+		},
+		{
+			"id": "naturesaura:animal_spawner/enderman"
+		},
+		{
+			"id": "naturesaura:animal_spawner/husk"
+		},
+		{
+			"id": "naturesaura:animal_spawner/magma_cube"
+		},
+		{
+			"id": "naturesaura:animal_spawner/piglin"
+		},
+		{
+			"id": "naturesaura:animal_spawner/piglin_brute"
+		},
+		{
+			"id": "naturesaura:animal_spawner/shulker"
+		},
+		{
+			"id": "naturesaura:animal_spawner/skeleton"
+		},
+		{
+			"id": "naturesaura:animal_spawner/stray"
+		},
+		{
+			"id": "naturesaura:animal_spawner/witch"
+		},
+		{
+			"id": "naturesaura:animal_spawner/zombie"
+		},
+		{
+			"id": "naturesaura:animal_spawner/zombified_piglin"
+		},
+		{
+			"id": "ars_nouveau:imbuement_lapis"
+		},
+		{
+			"id": "ars_elemental:imbuement_lesser_fire_focus"
+		},
+		{
+			"id": "ars_elemental:imbuement_lesser_water_focus"
+		},
+		{
+			"id": "ars_elemental:imbuement_lesser_earth_focus"
+		},
+		{
+			"id": "ars_elemental:imbuement_lesser_air_focus"
+		},
+		{
+			"id": "ars_nouveau:wixie_charm"
+		},
+		{
+			"id": "ars_nouveau:starbuncle_charm"
+		},
+		{
+			"id": "ars_nouveau:drygmy_charm"
+		},
+		{
+			"id": "ars_nouveau:whirlisprig_charm"
+		},
+		{
+			"id": "ars_nouveau:magebloom_crop"
+		},
+		{
+			"id": "ars_nouveau:void_jar"
+		},
+		{
+			"id": "ars_nouveau:jar_of_light"
+		},
+		{
+			"id": "ars_nouveau:potion_flask"
+		},
+		{
+			"id": "ars_nouveau:potion_melder"
+		},
+		{
+			"id": "ars_nouveau:alchemists_crown"
+		},
+		{
+			"id": "ars_nouveau:dominion_wand"
+		},
+		{
+			"id": "ars_nouveau:storage_lectern"
+		},
+		{
+			"id": "ars_elemental:everfull_urn"
+		},
+		{
+			"id": "ars_elemental:fire_focus"
+		},
+		{
+			"id": "ars_elemental:water_focus"
+		},
+		{
+			"id": "ars_elemental:earth_focus"
+		},
+		{
+			"id": "ars_elemental:air_focus"
+		},
+		{
+			"id": "ars_elemental:necrotic_focus"
+		},
+		{
+			"id": "ars_nouveau:summon_focus"
+		},
+		{
+			"id": "ars_nouveau:shapers_focus"
+		}
+	]
+}
