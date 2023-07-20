@@ -1,10 +1,10 @@
 ClientEvents.highPriorityAssets((event) => {
     // https://github.com/emilyploszaj/emi/wiki/Hiding-and-Adding-Index-Stacks
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode == false) {
         return;
     }
     const payload = { filters: [] };
-    const modes = ['base', 'expert'];
+    const modes = ['base', 'normal'];
 
     modes.forEach((mode) => {
         jei[mode].items.hidden.forEach((stack) => {

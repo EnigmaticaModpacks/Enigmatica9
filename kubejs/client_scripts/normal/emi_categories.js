@@ -1,4 +1,5 @@
 ClientEvents.highPriorityAssets((event) => {
+    // https://github.com/emilyploszaj/emi/wiki/Recipe-Category-Properties
     if (global.isNormalMode == false) {
         return;
     }
