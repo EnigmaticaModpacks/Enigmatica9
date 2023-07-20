@@ -2,12 +2,13 @@ ClientEvents.highPriorityAssets((event) => {
     if (global.isExpertMode == false) {
         return;
     }
-
+    const payload = {
+        filters: []
+    };
     jei.expert.recipes.hidden.forEach((recipe) => {
         recipe.recipes_by_id.forEach((id) => {
-            event.add(`emi:recipe/filters/${id.replace(/(\/|:)/g, '_')}`, {
-                filters: [{ id: `jei:/${id.replace(':', '/')}` }]
-            });
+            payload.filters.push({ id: `jei:/${id.replace(':', '/')}` });
         });
     });
+    JsonIO.write(`kubejs/assets/emi/recipe/filters/emi_hide_recipes.json`, payload);
 });
