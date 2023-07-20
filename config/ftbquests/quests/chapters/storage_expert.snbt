@@ -409,6 +409,7 @@
 					id: "sophisticatedbackpacks:backpack"
 					tag: { }
 				}
+				match_nbt: false
 				type: "item"
 			}]
 			x: 3.5d
