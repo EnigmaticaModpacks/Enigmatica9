@@ -853,18 +853,11 @@
 				type: "command"
 			}]
 			shape: "hexagon"
-			tasks: [
-				{
-					id: "3452A9AC39B219A4"
-					item: "ars_nouveau:novice_spell_book"
-					type: "item"
-				}
-				{
-					id: "4F31DB2A715A1983"
-					item: "supplementaries:antique_ink"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3452A9AC39B219A4"
+				item: "ars_nouveau:novice_spell_book"
+				type: "item"
+			}]
 			x: -9.0d
 			y: -0.5d
 		}
