@@ -119,6 +119,9 @@
 		maxPumpRange = 80
 		#If enabled makes Water and Heavy Water blocks be removed from the world on pump.
 		pumpWaterSources = false
+		#mB of Heavy Water that is extracted per block of Water by the Electric Pump with a Filter Upgrade.
+		#Range: 1 ~ 1000
+		pumpHeavyWaterAmount = 10
 
 	#Nutritional Paste Settings
 	[general.nutritional_paste]
