@@ -1,9 +1,9 @@
 ClientEvents.highPriorityAssets((event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode == false) {
         return;
     }
     const payload = { filters: [] };
-    const modes = ['base', 'expert'];
+    const modes = ['base', 'normal'];
 
     modes.forEach((mode) => {
         jei[mode].recipes.hidden.forEach((recipe) => {
