@@ -3,7 +3,6 @@ JEIEvents.removeRecipes((event) => {
         return;
     }
 
-    const emi_hide_recipes = { filters: [] };
     // console.log('JEI RECIPE CATEGORIES: ' + event.getCategoryIds());
     // console.log('Valid Keys: ' + Object.keys(event));
     jei.expert.recipes.hidden.forEach((recipe) => {
@@ -23,10 +22,6 @@ JEIEvents.removeRecipes((event) => {
             // }
             // console.log(`Category: ${recipe.category}, Hiding: ${id}`);
             event.remove(recipe.category, [id]);
-
-            // EMI Compat
-            emi_hide_recipes.filters.push({ id: id });
         });
-        JsonIO.write(`kubejs/assets/emi/recipe/filters/emi_hide_recipes.json`, emi_hide_recipes);
     });
 });
