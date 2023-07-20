@@ -9,7 +9,10 @@ ClientEvents.highPriorityAssets((event) => {
     modes.forEach((mode) => {
         jei[mode].recipes.hidden.forEach((recipe) => {
             recipe.recipes_by_id.forEach((id) => {
-                payload.filters.push({ id: `jei:/${id.replace(':', '/')}` });
+                if (!recipe.category.startsWith('minecraft')) {
+                    id = `jei:/${id.replace(':', '/')}`;
+                }
+                payload.filters.push({ id: id });
             });
         });
     });

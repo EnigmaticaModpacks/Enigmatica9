@@ -1,7 +1,7 @@
 {
 	"filters": [
 		{
-			"id": "jei:/pneumaticcraft/one_probe_crafting"
+			"id": "pneumaticcraft:one_probe_crafting"
 		},
 		{
 			"id": "jei:/naturesaura/animal_spawner/sheep_black"
@@ -52,109 +52,109 @@
 			"id": "jei:/naturesaura/animal_spawner/sheep_yellow"
 		},
 		{
-			"id": "jei:/naturesaura/gold_fiber"
+			"id": "naturesaura:gold_fiber"
 		},
 		{
-			"id": "jei:/naturesaura/wood_stand"
+			"id": "naturesaura:wood_stand"
 		},
 		{
-			"id": "jei:/naturesaura/offering_table"
+			"id": "naturesaura:offering_table"
 		},
 		{
-			"id": "jei:/naturesaura/flower_generator"
+			"id": "naturesaura:flower_generator"
 		},
 		{
-			"id": "jei:/naturesaura/oak_generator"
+			"id": "naturesaura:oak_generator"
 		},
 		{
-			"id": "jei:/naturesaura/slime_split_generator"
+			"id": "naturesaura:slime_split_generator"
 		},
 		{
-			"id": "jei:/naturesaura/animal_generator"
+			"id": "naturesaura:animal_generator"
 		},
 		{
-			"id": "jei:/naturesaura/chorus_generator"
+			"id": "naturesaura:chorus_generator"
 		},
 		{
-			"id": "jei:/naturesaura/moss_generator"
+			"id": "naturesaura:moss_generator"
 		},
 		{
-			"id": "jei:/naturesaura/loot_finder"
+			"id": "naturesaura:loot_finder"
 		},
 		{
-			"id": "jei:/naturesaura/light_staff"
+			"id": "naturesaura:light_staff"
 		},
 		{
-			"id": "jei:/naturesaura/cave_finder"
+			"id": "naturesaura:cave_finder"
 		},
 		{
-			"id": "jei:/naturesaura/pet_reviver"
+			"id": "naturesaura:pet_reviver"
 		},
 		{
-			"id": "jei:/naturesaura/shockwave_creator"
+			"id": "naturesaura:shockwave_creator"
 		},
 		{
-			"id": "jei:/naturesaura/blast_furnace_booster"
+			"id": "naturesaura:blast_furnace_booster"
 		},
 		{
-			"id": "jei:/naturesaura/auto_crafter"
+			"id": "naturesaura:auto_crafter"
 		},
 		{
-			"id": "jei:/naturesaura/death_ring"
+			"id": "naturesaura:death_ring"
 		},
 		{
-			"id": "jei:/naturesaura/dimension_rail_end"
+			"id": "naturesaura:dimension_rail_end"
 		},
 		{
-			"id": "jei:/naturesaura/dimension_rail_nether"
+			"id": "naturesaura:dimension_rail_nether"
 		},
 		{
-			"id": "jei:/naturesaura/dimension_rail_overworld"
+			"id": "naturesaura:dimension_rail_overworld"
 		},
 		{
-			"id": "jei:/naturesaura/rf_converter"
+			"id": "naturesaura:rf_converter"
 		},
 		{
-			"id": "jei:/naturesaura/calling_spirit"
+			"id": "naturesaura:calling_spirit"
 		},
 		{
-			"id": "jei:/naturesaura/depth_ingot_creation"
+			"id": "naturesaura:depth_ingot_creation"
 		},
 		{
-			"id": "jei:/naturesaura/projectile_generator"
+			"id": "naturesaura:projectile_generator"
 		},
 		{
-			"id": "jei:/naturesaura/firework_generator"
+			"id": "naturesaura:firework_generator"
 		},
 		{
-			"id": "jei:/naturesaura/gold_powder"
+			"id": "naturesaura:gold_powder"
 		},
 		{
-			"id": "jei:/ars_nouveau/imbuement_chamber"
+			"id": "ars_nouveau:imbuement_chamber"
 		},
 		{
-			"id": "jei:/ars_nouveau/mycelial_sourcelink"
+			"id": "ars_nouveau:mycelial_sourcelink"
 		},
 		{
-			"id": "jei:/ars_nouveau/vitalic_sourcelink"
+			"id": "ars_nouveau:vitalic_sourcelink"
 		},
 		{
-			"id": "jei:/ars_nouveau/volcanic_sourcelink"
+			"id": "ars_nouveau:volcanic_sourcelink"
 		},
 		{
-			"id": "jei:/ars_nouveau/agronomic_sourcelink"
+			"id": "ars_nouveau:agronomic_sourcelink"
 		},
 		{
-			"id": "jei:/ars_nouveau/conjuration_essence_to_soul_sand"
+			"id": "ars_nouveau:conjuration_essence_to_soul_sand"
 		},
 		{
-			"id": "jei:/ars_nouveau/blank_thread"
+			"id": "ars_nouveau:blank_thread"
 		},
 		{
-			"id": "jei:/ars_nouveau/novice_spell_book"
+			"id": "ars_nouveau:novice_spell_book"
 		},
 		{
-			"id": "jei:/ars_nouveau/scribes_table"
+			"id": "ars_nouveau:scribes_table"
 		},
 		{
 			"id": "jei:/naturesaura/altar/infused_stone"
