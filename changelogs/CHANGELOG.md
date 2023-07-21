@@ -18,6 +18,7 @@
 -   Add many items to Mekanism's Painting system [\#494](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/494) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Apotheosis bosses largely reverted to new defaults. Remaining bosses brought more in line with the new balancing. [\#495](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/495) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Apotheosis gems that were previously modified have been rebalanced to closer match the new defaults. [\#496](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/496) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Source Gem Blocks may now be stonecut between types. [\#519](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/519) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
