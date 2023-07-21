@@ -16,6 +16,16 @@ ServerEvents.recipes((event) => {
             output: 'quark:limestone',
             input: 'create:limestone',
             id: `${id_prefix}create_to_quark_limestone`
+        },
+        {
+            output: 'emendatusenigmatica:source_block',
+            input: 'ars_nouveau:source_gem_block',
+            id: `${id_prefix}ars_nouveau_to_emendatusenigmatica_source_gem_block`
+        },
+        {
+            output: 'ars_nouveau:source_gem_block',
+            input: 'emendatusenigmatica:source_block',
+            id: `${id_prefix}emendatusenigmatica_to_ars_nouveau_source_gem_block`
         }
     ];
 
