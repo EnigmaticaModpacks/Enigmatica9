@@ -34,6 +34,7 @@
 -   Inhalation Purification no longer removes certain effects that aren't meant to be removed. [\#505](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/505) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix IE Mineral Deposits. [\#506](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/506) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Enchanters Shield now accepts any source gem. [\#522](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/522) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Occultism Machine Operator quest is now completable. [\#523](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/523) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
