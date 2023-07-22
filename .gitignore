@@ -125,6 +125,7 @@ config/darkmodeeverywhere-client.toml
 config/darkmodeeverywhereshaders.json
 config/eidolon-client.toml
 config/emojiful-client.toml
+config/enigmaticgraves-common.toml
 config/entity_culling-client.toml
 config/explorerscompass-client.toml
 config/extremesoundmuffler-client.toml
