@@ -93,10 +93,21 @@ function Test-ForDependencies {
 }
 
 function Update-BetterCompatibilityCheckerVersion {
+    param(
+        [Parameter(Position = 0)]
+        [string]$mode
+    )
+
     $configPath = "$INSTANCE_ROOT/config/bcc-common.toml"
+
+    $modpackName = "Enigmatica 9"
+    if ($mode -eq "expert") {
+        $modpackName = "Enigmatica 9 Expert"
+    }
 
     # Replace anything that matches semver of the type 1.0.0 with $MODPACK_VERSION
     $contents = [System.IO.File]::ReadAllText($configPath) -replace "\d\.\d\.\d", $MODPACK_VERSION
+    $contents = $contents -replace ".*Enigmatica 9.*", "modpackName = `"$modpackName^"
     [System.IO.File]::WriteAllText($configPath, $contents)
     
 }
@@ -444,7 +455,6 @@ switch ($mode) {
     "default" {
         . "$PSScriptRoot/$secretsFile"
         Validate-SecretsFile
-        Update-BetterCompatibilityCheckerVersion
 
         if ($uploadExpertMode) {
             $CURSEFORGE_PROJECT_ID = 882461
@@ -459,9 +469,11 @@ switch ($mode) {
             $SERVER_FILE_DISPLAY_NAME = "Enigmatica 9 Expert Server $MODPACK_VERSION"
 
             Switch-DefaultModeTo -mode "expert"
+            Update-BetterCompatibilityCheckerVersion -mode "expert"
         }
         else {
             Switch-DefaultModeTo -mode "normal"
+            Update-BetterCompatibilityCheckerVersion -mode "normal"
         }
 
         New-ClientFiles
