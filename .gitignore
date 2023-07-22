@@ -131,6 +131,7 @@ config/extremesoundmuffler-client.toml
 config/farmersdelight-client.toml
 config/findme-client.toml
 config/framedblocks-client.toml
+config/ftbbackups2.json
 config/ftbchunks-client.toml
 config/gravestone-client.toml
 config/immersiveengineering-client.toml
