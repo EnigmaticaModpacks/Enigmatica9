@@ -1,3 +1,45 @@
+### Enigmatica 9 v1.9.0
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.9.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.9.0.md)
+
+### 🎁 New Mods Added
+
+### 🌟 Improvements
+
+-   Fiery Metal and Liquid Blaze Burners may now be used for PNC heat [\#467](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/467) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Added Conversion between Limestone from Quark and Create [\#479](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/479) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Added more recipes for Potions of Grievous Wounds [\#485](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/485) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Witches had their health reduced[\#485](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/485) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Skeletons have had their health reduced. They may also spawn as melee variants now instead of only using bows [\#485](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/485) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Named Miniboss mobs will now drop affix loot [\#485](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/485) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Crimson Berries, Nightshade Berres, Sweetberries, Glowberries, Blueberries, and Torchberry Plants may now be purchased from the Market [\#485](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/485) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Farmers Delight recipes are now covered by Create Mixing. Don't overheat them or they'll burn! [\#487](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/487) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Stable Wormholes may now be reset in a crafting table [\#487](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/487) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Add many items to Mekanism's Painting system [\#494](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/494) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Apotheosis bosses largely reverted to new defaults. Remaining bosses brought more in line with the new balancing. [\#495](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/495) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Apotheosis gems that were previously modified have been rebalanced to closer match the new defaults. [\#496](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/496) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Source Gem Blocks may now be stonecut between types. [\#519](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/519) ([MuteTiefling](https://github.com/MuteTiefling))
+
+### 🐛 Fixed Bugs
+
+-   Fix Some Assembly Required sawing recipes [\#460](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/460) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Reduce spawn range for Spirit spawners [\#460](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/460) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Osmium and Tin Raw Ore Blocks now craft down into Raw Ore properly [\#479](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/479) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Emeraldite Ore renamed to Emerald Ore and drops adjusted. [\#479](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/479) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Budding Dimensional Crystals now spawn in place of Ametrine in Viscal Isles [\#479](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/479) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix out of control CNB sporeling spawns [\#483](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/483) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Implement Apotheosis workaround for CNB Sporelings [\#484](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/484) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix Hemp not planting on Farming for Blockheads' Farmland [\#485](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/485) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Expert Armor Sets no longer affect Normal mode. [\#505](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/505) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Inhalation Purification no longer removes certain effects that aren't meant to be removed. [\#505](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/505) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix IE Mineral Deposits. [\#506](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/506) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Enchanters Shield now accepts any source gem. [\#522](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/522) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Occultism Machine Operator quest is now completable. [\#523](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/523) ([MuteTiefling](https://github.com/MuteTiefling))
+
+### Removed Mods
+
+---
+
 ### Enigmatica 9 v1.8.1
 
 🚀 Forge-1.19.2-43.2.13 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.8.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.8.1.md)
