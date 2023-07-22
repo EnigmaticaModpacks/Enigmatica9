@@ -141,17 +141,6 @@ ServerEvents.recipes((event) => {
             id: 'mekanism:rotary_condensentrator'
         },
         {
-            output: '2x mekanism:sps_port',
-            pattern: ['ABA', 'BCB', 'ADA'],
-            key: {
-                A: 'mekanism:sps_casing',
-                B: 'ae2:spatial_pylon',
-                C: '#industrialforegoing:machine_frame/supreme',
-                D: 'ae2:spatial_anchor'
-            },
-            id: 'mekanism:sps_port'
-        },
-        {
             output: 'mekanism:enrichment_chamber',
             pattern: ['EBE', 'CDC', 'AFA'],
             key: {
@@ -281,7 +270,7 @@ ServerEvents.recipes((event) => {
             output: 'mekanism:module_gravitational_modulating_unit',
             pattern: ['ABA', 'CDC', 'FEF'],
             key: {
-                A: '#forge:ingots/brass',
+                A: '#forge:ingots/energized_steel',
                 B: 'ars_elemental:air_focus',
                 C: '#forge:plates/aluminum',
                 D: 'modularrouters:augment_core',
@@ -302,6 +291,19 @@ ServerEvents.recipes((event) => {
                 F: '#forge:gears/osmium'
             },
             id: 'mekanism:module_hydraulic_propulsion_unit'
+        },
+        {
+            output: 'mekanism:module_inhalation_purification_unit',
+            pattern: ['ABA', 'CDC', 'FEF'],
+            key: {
+                A: '#forge:essences/air',
+                B: 'kubejs:magebloom_filter',
+                C: '#forge:plates/netherite',
+                D: 'modularrouters:augment_core',
+                E: 'pneumaticcraft:printed_circuit_board',
+                F: '#forge:gears/osmium'
+            },
+            id: 'mekanism:module_inhalation_purification_unit'
         },
         {
             output: 'mekanism:module_hydrostatic_repulsor_unit',

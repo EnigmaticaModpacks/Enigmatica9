@@ -111,45 +111,24 @@
 			description: [
 				"Engineers will spend a good deal of time at their workbenches, tinkering with tools and carefully forming delicate parts. "
 				""
-				"The Engineer’s Workbench provides a space for modifying tools from the mod, and doubles as a crafting bench for items that require an Engineer’s Blueprint. "
+				"The Engineer’s Workbench provides a space for modifying tools from the mod."
 			]
 			hide_dependency_lines: true
 			icon: "immersiveengineering:workbench"
 			id: "6E5C3A7C6F30FF95"
-			rewards: [
-				{
-					count: 8
-					id: "6EA7B350CFC24349"
-					item: "immersiveengineering:component_iron"
-					type: "item"
-				}
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-					icon: "kubejs:rare_lootbox"
-					id: "398CDC6CF25157E2"
-					player_command: false
-					title: "Rare Immersive Engineering Loot Box"
-					type: "command"
-				}
-			]
-			tasks: [
-				{
-					id: "2867C5992DCE39E0"
-					item: "immersiveengineering:workbench"
-					type: "item"
-				}
-				{
-					id: "2F4F6159B413D1F5"
-					item: {
-						Count: 1b
-						id: "immersiveengineering:blueprint"
-						tag: {
-							blueprint: "components"
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "398CDC6CF25157E2"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2867C5992DCE39E0"
+				item: "immersiveengineering:workbench"
+				type: "item"
+			}]
 			x: -0.5d
 			y: -5.0d
 		}
@@ -1246,14 +1225,6 @@
 			description: ["Bricks, Treated Wood, and Steel; these are what an Immersive Factory is built from, and the focus of early efforts in the mod. "]
 			hide_dependency_lines: true
 			id: "2BE93580D70ADF20"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
-				icon: "kubejs:rare_lootbox"
-				id: "7AFEEC7724D63B67"
-				player_command: false
-				title: "Rare Immersive Engineering Loot Box"
-				type: "command"
-			}]
 			shape: "hexagon"
 			tasks: [{
 				icon: "minecraft:raw_iron"

@@ -43,7 +43,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem(
                 Item.of(
                     'pneumaticcraft:huge_tank',
-                    '{BlockEntityTag:{SavedTanks:{Tank:{Amount:512000,FluidName:"industrialforegoing:sludge"}}}}'
+                    '{BlockEntityTag:{SavedTanks:{Tank:{Amount:16000,FluidName:"industrialforegoing:sludge"}}}}'
                 ),
                 1,
                 1
@@ -51,7 +51,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem(
                 Item.of(
                     'pneumaticcraft:huge_tank',
-                    '{BlockEntityTag:{SavedTanks:{Tank:{Amount:512000,FluidName:"industrialforegoing:biofuel"}}}}'
+                    '{BlockEntityTag:{SavedTanks:{Tank:{Amount:16000,FluidName:"industrialforegoing:biofuel"}}}}'
                 ),
                 1,
                 1
@@ -59,7 +59,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem(
                 Item.of(
                     'pneumaticcraft:huge_tank',
-                    '{BlockEntityTag:{SavedTanks:{Tank:{Amount:512000,FluidName:"industrialforegoing:essence"}}}}'
+                    '{BlockEntityTag:{SavedTanks:{Tank:{Amount:16000,FluidName:"industrialforegoing:essence"}}}}'
                 ),
                 1,
                 1

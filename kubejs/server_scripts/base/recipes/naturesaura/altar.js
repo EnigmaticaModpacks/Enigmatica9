@@ -46,16 +46,16 @@ ServerEvents.recipes((event) => {
             output: 'minecraft:prismarine_crystals',
             input: 'ae2:charged_certus_quartz_crystal',
             catalyst: 'naturesaura:conversion_catalyst',
-            aura: 18000,
-            time: 60,
+            aura: 3000,
+            time: 10,
             id: `naturesaura:altar/prismarine_crystal`
         },
         {
             output: 'minecraft:prismarine_shard',
             input: 'ae2:certus_quartz_crystal',
             catalyst: 'naturesaura:conversion_catalyst',
-            aura: 18000,
-            time: 60,
+            aura: 3000,
+            time: 10,
             id: `naturesaura:altar/prismarine`
         },
         {
@@ -93,7 +93,7 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'naturesaura:altar';
-        recipe.input = Ingredient.of(recipe.input).toJson();
+        recipe.input = recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input };
         recipe.output = Item.of(recipe.output).toJson();
         if (recipe.catalyst) {
             recipe.catalyst = { item: recipe.catalyst };

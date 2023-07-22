@@ -205,29 +205,43 @@ ServerEvents.highPriorityData((event) => {
             weight: 40,
             mainhands: [{ weight: 3, stack: { item: 'ars_nouveau:enchanters_sword', nbt: default_nbt } }],
             offhands: [{ weight: 1, stack: { item: 'minecraft:totem_of_undying' } }],
-            boots: [{ weight: 1, stack: { item: 'ars_elemental:earth_boots', nbt: default_nbt } }],
-            leggings: [{ weight: 1, stack: { item: 'ars_elemental:earth_leggings', nbt: default_nbt } }],
-            chestplates: [{ weight: 1, stack: { item: 'ars_elemental:earth_robes', nbt: default_nbt } }],
-            helmets: [{ weight: 1, stack: { item: 'ars_elemental:earth_hat', nbt: default_nbt } }],
-            tags: ['twilight', 'twilight_mage']
-        },
-        {
-            name: 'earth_bow',
-            weight: 40,
-            mainhands: [{ weight: 3, stack: { item: 'minecraft:bow', nbt: default_nbt } }],
-            offhands: [
-                { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.blasting_strong } },
-                { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.freezing_strong } },
-                { weight: 25, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.weakness_long } },
-                { weight: 15, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.sundering_strong } },
-                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.poison_strong } },
-                { weight: 10, stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.shock_long } }
+            boots: [
+                {
+                    weight: 1,
+                    stack: {
+                        item: 'ars_nouveau:apprentice_boots',
+                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'brown' } })
+                    }
+                }
             ],
-            boots: [{ weight: 1, stack: { item: 'ars_elemental:earth_boots', nbt: default_nbt } }],
-            leggings: [{ weight: 1, stack: { item: 'ars_elemental:earth_leggings', nbt: default_nbt } }],
-            chestplates: [{ weight: 1, stack: { item: 'ars_elemental:earth_robes', nbt: default_nbt } }],
-            helmets: [{ weight: 1, stack: { item: 'ars_elemental:earth_hat', nbt: default_nbt } }],
-            tags: ['twilight_bow']
+            leggings: [
+                {
+                    weight: 1,
+                    stack: {
+                        item: 'ars_nouveau:apprentice_leggings',
+                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'brown' } })
+                    }
+                }
+            ],
+            chestplates: [
+                {
+                    weight: 1,
+                    stack: {
+                        item: 'ars_nouveau:apprentice_robes',
+                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'brown' } })
+                    }
+                }
+            ],
+            helmets: [
+                {
+                    weight: 1,
+                    stack: {
+                        item: 'ars_nouveau:apprentice_hood',
+                        nbt: Object.assign(default_nbt, { an_stack_perks: { color: 'brown' } })
+                    }
+                }
+            ],
+            tags: ['twilight', 'twilight_mage']
         }
     ];
 

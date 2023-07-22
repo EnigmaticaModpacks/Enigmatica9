@@ -16,7 +16,9 @@ ServerEvents.recipes((event) => {
     recipes.forEach((recipe) => {
         recipe.type = 'ae2:transform';
         // ingredients:  [{ item: 'minecraft:oak_log' }],
-        recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
+        recipe.ingredients = recipe.inputs.map((input) =>
+            input.startsWith('#') ? { tag: input.slice(1) } : { item: input }
+        );
         // result: { count: 2, item: 'ae2:fluix_crystal' }
         recipe.result = recipe.output.toJson();
         event.custom(recipe).id(recipe.id);

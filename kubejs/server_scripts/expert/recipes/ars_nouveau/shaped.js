@@ -58,21 +58,22 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'ars_nouveau:arcane_core',
-            pattern: ['AAA', 'BCB', 'AAA'],
+            pattern: ['ABA', 'CDC', 'ABA'],
             key: {
-                A: 'ars_nouveau:sourcestone',
-                B: '#forge:ingots/energized_steel',
-                C: '#forge:gems/source'
+                A: '#forge:plates/brass',
+                B: 'ars_nouveau:sourcestone',
+                C: '#forge:planks/archwood',
+                D: 'ae2:fluix_block'
             },
             id: `ars_nouveau:arcane_core`
         },
         {
             output: 'ars_nouveau:enchanting_apparatus',
-            pattern: ['BAB', ' C ', 'BAB'],
+            pattern: ['BAB', 'C C', 'BAB'],
             key: {
                 A: 'ars_nouveau:sourcestone',
-                B: '#forge:ingots/energized_steel',
-                C: '#forge:gems/fluix'
+                B: '#forge:rods/brass',
+                C: '#forge:nuggets/brass'
             },
             id: `ars_nouveau:enchanting_apparatus`
         },
@@ -146,6 +147,15 @@ ServerEvents.recipes((event) => {
                 D: '#forge:essences/air'
             },
             id: `ars_nouveau:basic_spell_turret`
+        },
+        {
+            output: 'ars_nouveau:void_prism',
+            pattern: [' A ', 'ABA', ' A '],
+            key: {
+                A: 'manyideas_core:end_block',
+                B: 'ars_nouveau:spell_prism'
+            },
+            id: `ars_nouveau:void_prism`
         }
     ];
 

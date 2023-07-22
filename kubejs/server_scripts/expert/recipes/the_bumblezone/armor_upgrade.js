@@ -38,7 +38,7 @@ ServerEvents.recipes((event) => {
                     nbt = item.nbt;
                 }
                 nbt.forcedMaxFlyingTickTime = 72000;
-                nbt.requiredGearCountForFlyingTime = 4;
+                nbt.requiredWearablesCountForForcedFlyingTime = 4;
                 nbt.display = { Lore: ['{"text":"Exceptionally lightweight","color":"gold"}'] };
                 return itemstack.withNBT(nbt);
             })

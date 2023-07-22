@@ -6,14 +6,8 @@ MoreJSEvents.villagerTrades((event) => {
 
     const recipes = [
         {
-            professions: ['ae2:fluix_researcher', 'immersiveengineering:electrician'],
+            professions: ['ae2:fluix_researcher', 'immersiveengineering:electrician', 'immersiveengineering:machinist'],
             levels: ['all'],
-            vanilla: true,
-            modded: true
-        },
-        {
-            professions: ['immersiveengineering:machinist'],
-            levels: [5],
             vanilla: true,
             modded: true
         }

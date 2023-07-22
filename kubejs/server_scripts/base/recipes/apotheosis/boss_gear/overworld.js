@@ -117,6 +117,17 @@ ServerEvents.highPriorityData((event) => {
             chestplates: [{ weight: 1, stack: { item: 'naturesaura:infused_iron_chest', nbt: default_nbt } }],
             helmets: [{ weight: 1, stack: { item: 'naturesaura:infused_iron_helmet', nbt: default_nbt } }],
             tags: ['overworld_bow']
+        },
+        {
+            name: 'water',
+            weight: 40,
+            mainhands: [{ weight: 3, stack: { item: 'ars_nouveau:enchanters_sword', nbt: default_nbt } }],
+            offhands: [{ weight: 1, stack: { item: 'minecraft:totem_of_undying' } }],
+            boots: [{ weight: 1, stack: { item: 'ars_elemental:aqua_boots', nbt: default_nbt } }],
+            leggings: [{ weight: 1, stack: { item: 'ars_elemental:aqua_leggings', nbt: default_nbt } }],
+            chestplates: [{ weight: 1, stack: { item: 'ars_elemental:aqua_robes', nbt: default_nbt } }],
+            helmets: [{ weight: 1, stack: { item: 'ars_elemental:aqua_hat', nbt: default_nbt } }],
+            tags: ['overworld', 'overworld_mage']
         }
     ];
 

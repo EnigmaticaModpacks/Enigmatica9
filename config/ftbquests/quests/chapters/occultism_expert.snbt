@@ -938,9 +938,10 @@
 			}]
 			subtitle: "I Better Be Gettin' Overtime For This..."
 			tasks: [{
-				id: "0B788095ADC13FC0"
-				item: "occultism:ritual_dummy/summon_djinni_manage_machine"
-				type: "item"
+				advancement: "occultism:occultism/summon_djinni_manage_machine"
+				criterion: ""
+				id: "037CEDAB050E3E9E"
+				type: "advancement"
 			}]
 			title: "Summon Djinni Machine Operator"
 			x: 9.5d

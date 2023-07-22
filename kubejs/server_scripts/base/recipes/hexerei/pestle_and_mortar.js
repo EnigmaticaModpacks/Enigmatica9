@@ -84,7 +84,9 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'hexerei:pestle_and_mortar';
-        recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
+        recipe.ingredients = recipe.inputs.map((input) =>
+            input.startsWith('#') ? { tag: input.slice(1) } : { item: input }
+        );
         recipe.output = Item.of(recipe.output).toJson();
 
         event.custom(recipe).id(recipe.id);

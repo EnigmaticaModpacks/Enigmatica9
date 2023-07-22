@@ -28,9 +28,22 @@ ServerEvents.recipes((event) => {
             { id: 'ars_nouveau:storage_lectern', output: 'ars_nouveau:storage_lectern' },
             { id: 'ars_nouveau:drygmy_charm', output: 'ars_nouveau:drygmy_charm' },
             { id: 'ars_nouveau:whirlisprig_charm', output: 'ars_nouveau:whirlisprig_charm' },
-            { id: 'ars_elemental:everfull_urn', output: 'ars_elemental:everfull_urn' }
+            { id: 'ars_elemental:everfull_urn', output: 'ars_elemental:everfull_urn' },
+            { id: 'ars_elemental:fire_focus', output: 'ars_elemental:fire_focus' },
+            { id: 'ars_elemental:water_focus', output: 'ars_elemental:water_focus' },
+            { id: 'ars_elemental:earth_focus', output: 'ars_elemental:earth_focus' },
+            { id: 'ars_elemental:air_focus', output: 'ars_elemental:air_focus' },
+            { id: 'ars_elemental:necrotic_focus', output: 'ars_elemental:necrotic_focus' },
+            { id: 'ars_nouveau:summon_focus', output: 'ars_nouveau:summon_focus' },
+            { id: 'ars_nouveau:shapers_focus', output: 'ars_nouveau:shapers_focus' }
         ],
-        imbuement: [{ id: 'ars_nouveau:imbuement_lapis', output: 'emendatusenigmatica:source_gem' }]
+        imbuement: [
+            { id: 'ars_nouveau:imbuement_lapis', output: 'emendatusenigmatica:source_gem' },
+            { id: 'ars_elemental:imbuement_lesser_fire_focus', output: 'ars_elemental:lesser_fire_focus' },
+            { id: 'ars_elemental:imbuement_lesser_water_focus', output: 'ars_elemental:lesser_water_focus' },
+            { id: 'ars_elemental:imbuement_lesser_earth_focus', output: 'ars_elemental:lesser_earth_focus' },
+            { id: 'ars_elemental:imbuement_lesser_air_focus', output: 'ars_elemental:lesser_air_focus' }
+        ]
     };
 
     patchouli_safe_removals.shaped.forEach((recipe) => {

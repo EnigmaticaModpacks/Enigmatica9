@@ -23,7 +23,7 @@ ServerEvents.recipes((event) => {
         event
             .custom({
                 type: 'create:milling',
-                ingredients: [Ingredient.of(recipe.input).toJson()],
+                ingredients: [recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input }],
                 results: recipe.outputs.map((output) => Item.of(output).toJson()),
                 processingTime: recipe.duration
             })

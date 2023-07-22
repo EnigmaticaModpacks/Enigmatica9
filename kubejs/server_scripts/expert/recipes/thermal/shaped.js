@@ -471,6 +471,16 @@ ServerEvents.recipes((event) => {
                 C: 'pneumaticcraft:logistics_core'
             },
             id: 'thermal:turbo_servo_attachment_2'
+        },
+        {
+            output: '8x thermal:explosive_grenade',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:gunpowder',
+                B: 'minecraft:sand',
+                C: '#forge:nuggets/lead'
+            },
+            id: `${id_prefix}explosive_grenade`
         }
     ];
 

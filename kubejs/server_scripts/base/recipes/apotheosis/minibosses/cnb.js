@@ -17,16 +17,17 @@ ServerEvents.highPriorityData((event) => {
             weight: 85,
             quality: 0,
             entities: ['cnb:sporeling'],
+            dimensions: ['twilightforest:twilight_forest'],
             valid_gear_sets: ['#miniboss/sporeling'],
             dimensions: [],
             affixed: false,
-            nbt: {},
             stats: {
                 enchant_chance: 0.0,
                 enchantment_levels: [12, 8, 20, 14],
                 effects: [],
                 attribute_modifiers: []
-            }
+            },
+            finalize: true
         }
     ];
 

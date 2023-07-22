@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
             ritual_dummy: 'occultism:ritual_dummy/summon_foliot_crusher',
             ritual_type: 'occultism:summon_spirit_with_job',
             pentacle_id: 'occultism:summon_foliot',
-            duration: 60,
+            duration: 20,
             id: 'occultism:ritual/summon_foliot_crusher'
         },
         {
@@ -40,7 +40,7 @@ ServerEvents.recipes((event) => {
             ritual_dummy: 'occultism:ritual_dummy/summon_djinni_crusher',
             ritual_type: 'occultism:summon_spirit_with_job',
             pentacle_id: 'occultism:summon_djinni',
-            duration: 90,
+            duration: 20,
             id: 'occultism:ritual/summon_djinni_crusher'
         },
         {
@@ -59,7 +59,7 @@ ServerEvents.recipes((event) => {
             ritual_dummy: 'occultism:ritual_dummy/summon_afrit_crusher',
             ritual_type: 'occultism:summon_spirit_with_job',
             pentacle_id: 'occultism:summon_afrit',
-            duration: 120,
+            duration: 20,
             id: 'occultism:ritual/summon_afrit_crusher'
         },
         {
@@ -78,7 +78,7 @@ ServerEvents.recipes((event) => {
             ritual_dummy: 'occultism:ritual_dummy/summon_marid_crusher',
             ritual_type: 'occultism:summon_spirit_with_job',
             pentacle_id: 'occultism:summon_marid',
-            duration: 150,
+            duration: 20,
             id: 'occultism:ritual/summon_marid_crusher'
         },
         {
@@ -209,6 +209,41 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:summon_familiar',
             duration: 10,
             id: `${id_prefix}ritual_summon_whirlisprig_from_shards`
+        },
+        {
+            output: 'ars_elemental:siren_charm',
+            activation_item: '#forge:essences/conjuration',
+            inputs: ['hexerei:mindful_trance_blend', 'thermal:aquachow', 'thermal:junk_net', 'thermal:aquachow'],
+            ritual_dummy: 'kubejs:ritual_summon_siren',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_siren`
+        },
+        {
+            output: 'ars_elemental:siren_charm',
+            activation_item: '#forge:essences/conjuration',
+            inputs: ['ars_elemental:siren_shards'],
+            ritual_dummy: 'kubejs:ritual_summon_siren_from_shards',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_siren_from_shards`
+        },
+        {
+            output: 'ars_elemental:firenando_charm',
+            activation_item: '#forge:essences/conjuration',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'twilightforest:fiery_blood',
+                'twilightforest:fiery_sword',
+                'twilightforest:fiery_blood'
+            ],
+            ritual_dummy: 'kubejs:ritual_summon_firenando',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_firenando`
         },
         {
             output: Item.of('hexerei:willow_broom', {
@@ -671,10 +706,10 @@ ServerEvents.recipes((event) => {
                 'naturesaura:gold_leaf',
                 'naturesaura:gold_leaf',
                 'naturesaura:gold_leaf',
-                '#minecraft:logs',
-                '#minecraft:logs',
-                '#minecraft:logs',
-                '#minecraft:logs'
+                'quark:stick_block',
+                'quark:stick_block',
+                'quark:stick_block',
+                'quark:stick_block'
             ],
             duration: 10,
             id: `occultism:ritual/familiar_beaver`
@@ -1004,9 +1039,9 @@ ServerEvents.recipes((event) => {
             }),
             activation_item: 'minecraft:blast_furnace',
             inputs: [
-                'ars_elemental:lesser_air_focus',
+                'ars_elemental:air_focus',
                 'naturesaura:furnace_heater',
-                'ars_elemental:lesser_fire_focus',
+                'ars_elemental:fire_focus',
                 'create:shaft',
                 '#forge:ingots/infused_iron',
                 '#forge:gems/source',
@@ -1085,19 +1120,19 @@ ServerEvents.recipes((event) => {
             output: 'industrialforegoing:ore_laser_base',
             activation_item: 'thermal:machine_frame',
             inputs: [
-                'ars_elemental:lesser_earth_focus',
+                'ars_elemental:earth_focus',
                 '#forge:gears/aluminum',
                 '#forge:storage_blocks/source',
                 '#forge:gears/aluminum',
 
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'spirit:soul_glass',
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'spirit:soul_glass',
 
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'spirit:soul_glass',
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'spirit:soul_glass'
             ],
             entity_to_sacrifice: {
@@ -1122,10 +1157,10 @@ ServerEvents.recipes((event) => {
                 'immersiveengineering:coil_mv',
                 'immersiveengineering:coil_mv',
                 'immersiveengineering:coil_mv',
-                '#forge:gears/aluminum',
-                '#forge:gears/aluminum',
-                '#forge:gears/aluminum',
-                '#forge:gears/aluminum'
+                'minecraft:lodestone',
+                'minecraft:lodestone',
+                'minecraft:lodestone',
+                'minecraft:lodestone'
             ],
             entity_to_sacrifice: {
                 tag: 'enigmatica:elementals/earth',
@@ -1141,19 +1176,19 @@ ServerEvents.recipes((event) => {
             output: 'industrialforegoing:fluid_laser_base',
             activation_item: 'thermal:machine_frame',
             inputs: [
-                'ars_elemental:lesser_water_focus',
+                'ars_elemental:water_focus',
                 '#forge:gears/aluminum',
                 '#forge:storage_blocks/source',
                 '#forge:gears/aluminum',
 
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'spirit:soul_glass',
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'spirit:soul_glass',
 
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'spirit:soul_glass',
-                '#forge:ingots/energized_steel',
+                '#forge:ingots/brass',
                 'spirit:soul_glass'
             ],
             entity_to_sacrifice: {
@@ -1201,23 +1236,6 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:summon_lesser_evil',
             duration: 10,
             id: `occultism:ritual/possess_enderman`
-        },
-        {
-            output: Item.of('minecraft:skeleton_skull', {
-                display: {
-                    Name: '{"translate":"item.occultism.ritual_dummy.possess_skeleton"}',
-                    Lore: ['{"translate":"item.occultism.ritual_dummy.possess_skeleton.tooltip"}']
-                }
-            }),
-            activation_item: 'byg:hanging_bones',
-            inputs: ['#forge:essences/anima', 'minecraft:bone_meal', 'minecraft:bone_meal', 'minecraft:bone_meal'],
-            entity_to_summon: 'occultism:possessed_skeleton',
-            entity_to_sacrifice: { tag: 'enigmatica:deer', display_name: 'ritual.occultism.sacrifice.deer' },
-            ritual_dummy: 'occultism:ritual_dummy/possess_skeleton',
-            ritual_type: 'occultism:summon',
-            pentacle_id: 'occultism:summon_lesser_evil',
-            duration: 10,
-            id: `occultism:ritual/possess_skeleton`
         },
         {
             output: Item.of('minecraft:end_stone', {
@@ -1285,6 +1303,104 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:summon_wild_afrit',
             duration: 10,
             id: `occultism:ritual/summon_wild_afrit`
+        },
+        {
+            output: Item.of('3x mekanism:sps_port'),
+            activation_item: '#industrialforegoing:machine_frame/supreme',
+            inputs: [
+                'ae2:spatial_anchor',
+                'ae2:spatial_anchor',
+                'ae2:spatial_anchor',
+                'ae2:spatial_anchor',
+
+                'ae2:spatial_pylon',
+                'mekanism:sps_casing',
+                'ae2:spatial_pylon',
+                'mekanism:sps_casing',
+
+                'ae2:spatial_pylon',
+                'mekanism:sps_casing',
+                'ae2:spatial_pylon',
+                'mekanism:sps_casing'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/air',
+                display_name: 'ritual.occultism.sacrifice.air_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_sps_port',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:tree_of_life_stage_3',
+            duration: 60,
+            id: `${id_prefix}ritual_craft_sps_port`
+        },
+        {
+            output: 'powah:energizing_orb',
+            activation_item: 'hexerei:crystal_ball',
+            inputs: [
+                'ae2:quartz_glass',
+                'ae2:quartz_glass',
+                '#forge:essences/manipulation',
+                'ae2:quartz_glass',
+
+                'ae2:quartz_glass',
+                'ae2:quartz_glass',
+                'ae2:sky_stone_block',
+                'ae2:quartz_glass',
+
+                'ae2:quartz_glass',
+                'ae2:quartz_glass',
+                'ae2:sky_stone_block',
+                'ae2:quartz_glass'
+            ],
+            entity_to_sacrifice: {
+                tag: 'enigmatica:elementals/water',
+                display_name: 'ritual.occultism.sacrifice.water_elementals'
+            },
+            ritual_dummy: 'kubejs:ritual_craft_energizing_orb',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:tree_of_life_stage_1',
+            duration: 60,
+            id: `${id_prefix}ritual_craft_energizing_orb`
+        },
+        {
+            output: Item.of('trofers:large_pillar', '{BlockEntityTag:{Trophy:"trofers:tree_of_life"}}'),
+            activation_item: 'ars_nouveau:ritual_restoration',
+            inputs: [
+                'kubejs:heart_of_the_tempest',
+                'minecraft:heart_of_the_sea',
+                'kubejs:heart_of_the_mountain',
+                'kubejs:heart_of_the_inferno'
+            ],
+            ritual_dummy: 'kubejs:ritual_craft_tree_of_life_trophy',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:tree_of_life_stage_4',
+            duration: 60,
+            id: `${id_prefix}ritual_craft_tree_of_life_trophy`
+        },
+        {
+            output: 'farmingforblockheads:market',
+            activation_item: '#forge:essences/conjuration',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+
+                'ars_elemental:yellow_archwood',
+                'ars_nouveau:green_archwood_wood',
+                'ars_nouveau:blue_archwood_wood',
+                'ars_nouveau:red_archwood_wood',
+
+                'ars_elemental:yellow_archwood',
+                'ars_nouveau:green_archwood_wood',
+                'ars_nouveau:blue_archwood_wood',
+                'ars_nouveau:red_archwood_wood'
+            ],
+            ritual_dummy: 'kubejs:ritual_craft_market',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_market`
         },
 
         /*
@@ -1429,7 +1545,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'kubejs:teleport_nether',
-            activation_item: '#forge:nether_stars',
+            activation_item: 'kubejs:withered_soul',
             inputs: [
                 '#forge:ingots/tainted_gold',
                 'naturesaura:gold_leaf',
@@ -1456,7 +1572,7 @@ ServerEvents.recipes((event) => {
             output: 'kubejs:teleport_end',
             activation_item: '#forge:gems/infused_ender',
             inputs: [
-                '#forge:ingots/brass',
+                '#forge:ingots/energized_steel',
                 'naturesaura:gold_leaf',
                 '#forge:essences/air',
                 'naturesaura:gold_leaf',
@@ -1544,6 +1660,22 @@ ServerEvents.recipes((event) => {
             pentacle_id: 'occultism:summon_lesser_evil',
             duration: 10,
             id: `occultism:ritual/summon_wild_hunt`
+        },
+        {
+            output: Item.of('gateways:gate_pearl', `{gateway:"gateways:possessed_skeleton_gate", radius:5}`),
+            activation_item: 'byg:hanging_bones',
+            inputs: ['#forge:essences/anima', 'minecraft:bone_meal', 'minecraft:bone_meal', 'minecraft:bone_meal'],
+            entity_to_sacrifice: { tag: 'enigmatica:deer', display_name: 'ritual.occultism.sacrifice.deer' },
+            ritual_dummy: Item.of('minecraft:skeleton_skull', {
+                display: {
+                    Name: '{"translate":"item.occultism.ritual_dummy.possess_skeleton"}',
+                    Lore: ['{"translate":"item.occultism.ritual_dummy.possess_skeleton.tooltip"}']
+                }
+            }),
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_lesser_evil',
+            duration: 10,
+            id: `occultism:ritual/possess_skeleton`
         }
     ];
 
@@ -1692,6 +1824,15 @@ ServerEvents.recipes((event) => {
         {
             type: 'blitz',
             inputs: ['#forge:essences/conjuration', '#forge:essences/air', '#forge:essences/air', '#forge:essences/air']
+        },
+        {
+            type: 'swarm',
+            inputs: [
+                '#forge:essences/conjuration',
+                'minecraft:stone_bricks',
+                'minecraft:end_stone_bricks',
+                'twilightforest:towerwood'
+            ]
         }
     ];
 
@@ -1768,15 +1909,20 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'occultism:ritual';
+        recipe.activation_item = recipe.activation_item.startsWith('#')
+            ? { tag: recipe.activation_item.slice(1) }
+            : { item: recipe.activation_item };
 
-        recipe.activation_item = Ingredient.of(recipe.activation_item).toJson();
-        if (recipe.item_to_use) {
-            recipe.item_to_use = Ingredient.of(recipe.item_to_use).toJson();
-        }
+        if (recipe.item_to_use)
+            recipe.item_to_use = recipe.item_to_use.startsWith('#')
+                ? { tag: recipe.item_to_use.slice(1) }
+                : { item: recipe.item_to_use };
+
         recipe.ritual_dummy = Item.of(recipe.ritual_dummy).toJson();
-        recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
+        recipe.ingredients = recipe.inputs.map((input) =>
+            input.startsWith('#') ? { tag: input.slice(1) } : { item: input }
+        );
         recipe.result = Item.of(recipe.output).toJson();
-
         event.custom(recipe).id(recipe.id);
     });
 });

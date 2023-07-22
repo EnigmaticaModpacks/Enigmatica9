@@ -12,6 +12,8 @@ ServerEvents.recipes((event) => {
         { mod: 'theoneprobe' },
         { mod: 'densetrees' },
 
+        { type: 'immersiveengineering:mineral_mix' },
+
         { output: /pendorite/ },
         { output: /emeraldite/ },
         { output: /ametrine/ },
@@ -52,6 +54,7 @@ ServerEvents.recipes((event) => {
         { id: 'create:crushing/blaze_rod' },
         { id: 'create:milling/sandstone' },
         { id: 'create:milling/bone' },
+        { id: 'create:milling/andesite' },
 
         { id: /createaddition:mixing\/biomass/ },
         { id: /createaddition:crafting\/.*spool/ },

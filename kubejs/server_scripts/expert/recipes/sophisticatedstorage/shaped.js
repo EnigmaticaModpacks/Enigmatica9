@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
             output: '5x sophisticatedstorage:upgrade_base',
             pattern: ['ABA', 'BAB', 'ABA'],
             key: {
-                A: '#forge:treated_wood_slab',
+                A: 'ars_nouveau:archwood_slab',
                 B: '#forge:nuggets/bronze'
             },
             id: 'sophisticatedstorage:upgrade_base'
@@ -50,7 +50,7 @@ ServerEvents.recipes((event) => {
             output: 'sophisticatedstorage:basic_to_iron_tier_upgrade',
             pattern: ['AAA', 'BCB', 'AAA'],
             key: {
-                A: ['#forge:plates/iron', '#forge:plates/tin'],
+                A: '#forge:plates/tin',
                 B: 'ars_nouveau:repository',
                 C: 'sophisticatedstorage:upgrade_base'
             },

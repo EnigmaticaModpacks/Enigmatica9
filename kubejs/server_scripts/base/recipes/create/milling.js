@@ -1,7 +1,14 @@
 ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/create/milling/';
 
-    let recipes = [];
+    let recipes = [
+        {
+            outputs: [{ item: 'minecraft:cobblestone', count: 1 }],
+            inputs: ['minecraft:stone'],
+            processingTime: 60,
+            id: `${id_prefix}cobblestone`
+        }
+    ];
 
     sandstone_colors.forEach((color) => {
         let output = '';
@@ -27,7 +34,9 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'create:milling';
-        recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
+        recipe.ingredients = recipe.inputs.map((input) =>
+            input.startsWith('#') ? { tag: input.slice(1) } : { item: input }
+        );
         recipe.results = recipe.outputs;
         event.custom(recipe).id(recipe.id);
     });

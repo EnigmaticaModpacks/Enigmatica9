@@ -11,7 +11,19 @@ ServerEvents.highPriorityData((event) => {
             rewards: [
                 {
                     type: 'stack',
-                    stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                    stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
+                },
+                {
+                    type: 'loot_table',
+                    loot_table: 'enigmatica:apotheosis_gem_cache',
+                    rolls: 5,
+                    desc: 'Apotheosis Gems'
+                },
+                {
+                    type: 'loot_table',
+                    loot_table: 'enigmatica:loot_boxes/miners_delight',
+                    rolls: 1,
+                    desc: `Miner's Delight Gems`
                 }
             ],
             completion_xp: 250,
@@ -31,7 +43,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -50,7 +62,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -61,15 +73,15 @@ ServerEvents.highPriorityData((event) => {
                         { entity: 'minecraft:cave_spider' },
                         { entity: 'minecraft:cave_spider' },
                         { entity: 'minecraft:cave_spider' },
-                        { entity: 'minecraft:cave_spider' },
-                        { entity: 'minecraft:cave_spider' },
+                        { entity: 'twilightforest:slime_beetle' },
+                        { entity: 'twilightforest:slime_beetle' },
                         { entity: 'twilightforest:fire_beetle' },
                         { entity: 'twilightforest:fire_beetle' }
                     ],
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -89,7 +101,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -109,7 +121,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -121,12 +133,12 @@ ServerEvents.highPriorityData((event) => {
         {
             size: 'large',
             color: '#b30f04',
-            leash_range: 32,
+            leash_range: 256,
             allow_discarding: true,
             rewards: [
                 {
                     type: 'stack',
-                    stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                    stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                 },
                 {
                     type: 'apotheosis:affix',
@@ -157,7 +169,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 1500,
@@ -178,7 +190,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 750,
@@ -189,7 +201,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 1500,
@@ -210,7 +222,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 1500,
@@ -227,7 +239,7 @@ ServerEvents.highPriorityData((event) => {
             rewards: [
                 {
                     type: 'stack',
-                    stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                    stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                 },
                 {
                     type: 'apotheosis:affix',
@@ -256,7 +268,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 800,
@@ -280,7 +292,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 800,
@@ -304,7 +316,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 800,
@@ -322,7 +334,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -334,11 +346,11 @@ ServerEvents.highPriorityData((event) => {
         {
             size: 'large',
             color: '#554a57',
-            leash_range: 32,
+            leash_range: 256,
             rewards: [
                 {
                     type: 'stack',
-                    stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                    stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                 },
                 {
                     type: 'apotheosis:affix',
@@ -359,6 +371,21 @@ ServerEvents.highPriorityData((event) => {
                         { entity: 'twilightforest:wraith' },
                         { entity: 'twilightforest:wraith' },
                         { entity: 'twilightforest:wraith' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
+                        }
+                    ],
+                    max_wave_time: 2400,
+                    setup_time: 50
+                },
+                {
+                    entities: [
                         { entity: 'twilightforest:wraith' },
                         { entity: 'twilightforest:wraith' },
                         { entity: 'twilightforest:wraith' },
@@ -369,49 +396,7 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
-                        }
-                    ],
-                    max_wave_time: 750,
-                    setup_time: 50
-                },
-                {
-                    entities: [
-                        { entity: 'twilightforest:wraith' },
-                        { entity: 'twilightforest:wraith' },
-                        { entity: 'twilightforest:wraith' },
-                        { entity: 'twilightforest:wraith' },
-                        { entity: 'twilightforest:wraith' },
-                        { entity: 'twilightforest:wraith' },
-                        { entity: 'occultism:wild_hunt_skeleton' },
-                        { entity: 'occultism:wild_hunt_skeleton' },
-                        { entity: 'occultism:wild_hunt_skeleton' }
-                    ],
-                    rewards: [
-                        {
-                            type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
-                        }
-                    ],
-                    max_wave_time: 1500,
-                    setup_time: 50
-                },
-                {
-                    entities: [
-                        { entity: 'occultism:wild_hunt_skeleton' },
-                        { entity: 'occultism:wild_hunt_skeleton' },
-                        { entity: 'occultism:wild_hunt_skeleton' },
-                        { entity: 'occultism:wild_hunt_skeleton' },
-                        { entity: 'occultism:wild_hunt_skeleton' },
-                        { entity: 'occultism:wild_hunt_skeleton' },
-                        { entity: 'occultism:wild_hunt_wither_skeleton' },
-                        { entity: 'occultism:wild_hunt_wither_skeleton' },
-                        { entity: 'occultism:wild_hunt_wither_skeleton' }
-                    ],
-                    rewards: [
-                        {
-                            type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -432,7 +417,28 @@ ServerEvents.highPriorityData((event) => {
                     rewards: [
                         {
                             type: 'stack',
-                            stack: Item.of('kubejs:aura_leaf', '{aura_amount:20000.0d,aura_max:1500000.0d}')
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
+                        }
+                    ],
+                    max_wave_time: 2400,
+                    setup_time: 50
+                },
+                {
+                    entities: [
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_skeleton' },
+                        { entity: 'occultism:wild_hunt_wither_skeleton' },
+                        { entity: 'occultism:wild_hunt_wither_skeleton' },
+                        { entity: 'occultism:wild_hunt_wither_skeleton' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
                         }
                     ],
                     max_wave_time: 2400,
@@ -440,6 +446,110 @@ ServerEvents.highPriorityData((event) => {
                 }
             ],
             id: 'wild_hunt_gate'
+        },
+        {
+            size: 'large',
+            color: '#D3D3D3',
+            leash_range: 256,
+            rewards: [
+                {
+                    type: 'stack',
+                    stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
+                },
+                {
+                    type: 'apotheosis:affix',
+                    rarity: 'rare'
+                },
+                {
+                    type: 'loot_table',
+                    loot_table: 'enigmatica:apotheosis_gem_cache',
+                    rolls: 5,
+                    desc: 'Apotheosis Gems'
+                }
+            ],
+            completion_xp: 5000,
+            spawn_range: 3,
+            waves: [
+                {
+                    entities: [
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
+                        }
+                    ],
+                    max_wave_time: 2400,
+                    setup_time: 50
+                },
+                {
+                    entities: [
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
+                        }
+                    ],
+                    max_wave_time: 2400,
+                    setup_time: 50
+                },
+                {
+                    entities: [
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
+                        }
+                    ],
+                    max_wave_time: 2400,
+                    setup_time: 50
+                },
+                {
+                    entities: [
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' },
+                        { entity: 'occultism:possessed_skeleton' }
+                    ],
+                    rewards: [
+                        {
+                            type: 'stack',
+                            stack: { item: 'kubejs:aura_leaf', nbt: { aura_amount: 20000.0, aura_max: 1500000.0 } }
+                        }
+                    ],
+                    max_wave_time: 2400,
+                    setup_time: 50
+                }
+            ],
+            id: 'possessed_skeleton_gate'
         }
     ];
 
@@ -584,6 +694,15 @@ ServerEvents.highPriorityData((event) => {
                 uncommon: { entity: 'twilightforest:mist_wolf', nbt: '{}' },
                 rare: { entity: 'thermal:blizz', nbt: '{}' }
             }
+        },
+        {
+            type: 'swarm_gate',
+            color: '#eb34eb',
+            entries: {
+                common: { entity: 'minecraft:silverfish', nbt: '{}' },
+                uncommon: { entity: 'twilightforest:towerwood_borer', nbt: '{}' },
+                rare: { entity: 'minecraft:endermite', nbt: '{}' }
+            }
         }
     ];
 
@@ -592,6 +711,11 @@ ServerEvents.highPriorityData((event) => {
             let id = size == 'medium' ? gateway.type : `${gateway.type}_${size}`;
             let max_wave_time = 1800;
             let setup_time = 150;
+            let multiplier = 1;
+
+            if (gateway.type == 'swarm_gate') {
+                multiplier = 6;
+            }
 
             // Defaults for Small gateways
             let loot_multiplier = 1,
@@ -599,11 +723,26 @@ ServerEvents.highPriorityData((event) => {
                 spawn_range = 5,
                 primary_reward = { type: 'apotheosis:affix', rarity: 'common' },
                 wave_properties = [
-                    { common: 2, uncommon: 0, rare: 0, modifier: 'none' },
-                    { common: 2, uncommon: 0, rare: 0, modifier: gateways_wave_modifiers.wave_two },
-                    { common: 3, uncommon: 1, rare: 0, modifier: gateways_wave_modifiers.wave_three },
-                    { common: 3, uncommon: 1, rare: 0, modifier: gateways_wave_modifiers.wave_four },
-                    { common: 3, uncommon: 2, rare: 1, modifier: gateways_wave_modifiers.wave_five }
+                    { common: 2 * multiplier, uncommon: 0, rare: 0, modifier: 'none' },
+                    { common: 2 * multiplier, uncommon: 0, rare: 0, modifier: gateways_wave_modifiers.wave_two },
+                    {
+                        common: 3 * multiplier,
+                        uncommon: 1 * multiplier,
+                        rare: 0,
+                        modifier: gateways_wave_modifiers.wave_three
+                    },
+                    {
+                        common: 3 * multiplier,
+                        uncommon: 1 * multiplier,
+                        rare: 0,
+                        modifier: gateways_wave_modifiers.wave_four
+                    },
+                    {
+                        common: 3 * multiplier,
+                        uncommon: 2 * multiplier,
+                        rare: 1 * multiplier,
+                        modifier: gateways_wave_modifiers.wave_five
+                    }
                 ];
 
             // Medium
@@ -613,11 +752,31 @@ ServerEvents.highPriorityData((event) => {
                 spawn_range = spawn_range + 2;
                 primary_reward = { type: 'apotheosis:affix', rarity: 'uncommon' };
                 wave_properties = [
-                    { common: 2, uncommon: 1, rare: 0, modifier: 'none' },
-                    { common: 2, uncommon: 1, rare: 0, modifier: gateways_wave_modifiers.wave_two },
-                    { common: 3, uncommon: 2, rare: 0, modifier: gateways_wave_modifiers.wave_three },
-                    { common: 3, uncommon: 2, rare: 1, modifier: gateways_wave_modifiers.wave_four },
-                    { common: 3, uncommon: 2, rare: 2, modifier: gateways_wave_modifiers.wave_five }
+                    { common: 2 * multiplier, uncommon: 1 * multiplier, rare: 0, modifier: 'none' },
+                    {
+                        common: 2 * multiplier,
+                        uncommon: 1 * multiplier,
+                        rare: 0,
+                        modifier: gateways_wave_modifiers.wave_two
+                    },
+                    {
+                        common: 3 * multiplier,
+                        uncommon: 2 * multiplier,
+                        rare: 0,
+                        modifier: gateways_wave_modifiers.wave_three
+                    },
+                    {
+                        common: 3 * multiplier,
+                        uncommon: 2 * multiplier,
+                        rare: 1 * multiplier,
+                        modifier: gateways_wave_modifiers.wave_four
+                    },
+                    {
+                        common: 3 * multiplier,
+                        uncommon: 2 * multiplier,
+                        rare: 2 * multiplier,
+                        modifier: gateways_wave_modifiers.wave_five
+                    }
                 ];
             }
 
@@ -628,11 +787,31 @@ ServerEvents.highPriorityData((event) => {
                 spawn_range = spawn_range + 4;
                 primary_reward = { type: 'apotheosis:affix', rarity: 'rare' };
                 wave_properties = [
-                    { common: 3, uncommon: 3, rare: 0, modifier: 'none' },
-                    { common: 3, uncommon: 3, rare: 0, modifier: gateways_wave_modifiers.wave_two },
-                    { common: 5, uncommon: 3, rare: 0, modifier: gateways_wave_modifiers.wave_three },
-                    { common: 5, uncommon: 4, rare: 3, modifier: gateways_wave_modifiers.wave_four },
-                    { common: 6, uncommon: 5, rare: 4, modifier: gateways_wave_modifiers.wave_five }
+                    { common: 3 * multiplier, uncommon: 3 * multiplier, rare: 0, modifier: 'none' },
+                    {
+                        common: 3 * multiplier,
+                        uncommon: 3 * multiplier,
+                        rare: 0,
+                        modifier: gateways_wave_modifiers.wave_two
+                    },
+                    {
+                        common: 5 * multiplier,
+                        uncommon: 3 * multiplier,
+                        rare: 0,
+                        modifier: gateways_wave_modifiers.wave_three
+                    },
+                    {
+                        common: 5 * multiplier,
+                        uncommon: 4 * multiplier,
+                        rare: 3 * multiplier,
+                        modifier: gateways_wave_modifiers.wave_four
+                    },
+                    {
+                        common: 6 * multiplier,
+                        uncommon: 5 * multiplier,
+                        rare: 4 * multiplier,
+                        modifier: gateways_wave_modifiers.wave_five
+                    }
                 ];
             }
 
@@ -640,7 +819,7 @@ ServerEvents.highPriorityData((event) => {
             let recipe = {
                 size: size,
                 color: gateway.color,
-                leash_range: 64,
+                leash_range: 256,
                 waves: [],
                 completion_xp: completion_xp,
                 rewards: [primary_reward],

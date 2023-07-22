@@ -30,6 +30,12 @@ StartupEvents.registry('fluid', (event) => {
             id: 'blighted_ichor',
             color: 0x702a6e,
             display: 'Blighted Ichor'
+        },
+        {
+            type: 'thick',
+            id: 'elysium',
+            color: 0x02523f,
+            display: 'Elysium'
         }
     ];
 

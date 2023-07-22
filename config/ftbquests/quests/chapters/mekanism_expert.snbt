@@ -198,19 +198,18 @@
 					type: "item"
 				}
 				{
-					count: 122L
+					count: 123L
 					id: "2164A5647CB59BA2"
 					item: "mekanism:structural_glass"
 					type: "item"
 				}
 				{
-					count: 4L
+					count: 3L
 					id: "6E2FC37AF289F820"
 					item: "mekanism:sps_port"
 					type: "item"
 				}
 				{
-					count: 2L
 					id: "4D702AA818D8DE41"
 					item: "mekanism:supercharged_coil"
 					type: "item"

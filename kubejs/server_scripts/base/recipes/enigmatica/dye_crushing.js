@@ -27,11 +27,11 @@ ServerEvents.recipes((event) => {
             //     .custom({
             //         type: 'hexerei:pestle_and_mortar',
             //         ingredients: [
-            //             Ingredient.of(input).toJson(),
-            //             Ingredient.of(input).toJson(),
-            //             Ingredient.of(input).toJson(),
-            //             Ingredient.of(input).toJson(),
-            //             Ingredient.of(input).toJson()
+            //             input.startsWith('#') ? { tag: input.slice(1) } : { item: input },
+            //             input.startsWith('#') ? { tag: input.slice(1) } : { item: input },
+            //             input.startsWith('#') ? { tag: input.slice(1) } : { item: input },
+            //             input.startsWith('#') ? { tag: input.slice(1) } : { item: input },
+            //             input.startsWith('#') ? { tag: input.slice(1) } : { item: input }
             //         ],
             //         output: Item.of(output, count).toJson(),
             //         grindingTime: duration * 5
@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
             event
                 .custom({
                     type: 'occultism:crushing',
-                    ingredient: Ingredient.of(input).toJson(),
+                    ingredient: input.startsWith('#') ? { tag: input.slice(1) } : { item: input },
                     result: Item.of(output, count).toJson(),
                     crushing_time: duration,
                     ignore_crushing_multiplier: false
@@ -55,7 +55,7 @@ ServerEvents.recipes((event) => {
             event
                 .custom({
                     type: 'mekanism:enriching',
-                    input: { ingredient: Ingredient.of(input).toJson() },
+                    input: { ingredient: input.startsWith('#') ? { tag: input.slice(1) } : { item: input } },
                     output: Item.of(output, count).toJson()
                 })
                 .id(`${id_prefix}mekanism_enriching/${id_suffix}`);
@@ -133,7 +133,7 @@ ServerEvents.recipes((event) => {
         event
             .custom({
                 type: 'mekanism:enriching',
-                input: { ingredient: Ingredient.of(input).toJson() },
+                input: { ingredient: input.startsWith('#') ? { tag: input.slice(1) } : { item: input } },
                 output: Item.of(outputs, count).toJson()
             })
             .id(`${id_prefix}mekanism_enriching/${id_suffix}`);
@@ -150,11 +150,11 @@ ServerEvents.recipes((event) => {
             .custom({
                 type: 'hexerei:pestle_and_mortar',
                 ingredients: [
-                    Ingredient.of(input).toJson(),
-                    Ingredient.of(input).toJson(),
-                    Ingredient.of(input).toJson(),
-                    Ingredient.of(input).toJson(),
-                    Ingredient.of(input).toJson()
+                    input.startsWith('#') ? { tag: input.slice(1) } : { item: input },
+                    input.startsWith('#') ? { tag: input.slice(1) } : { item: input },
+                    input.startsWith('#') ? { tag: input.slice(1) } : { item: input },
+                    input.startsWith('#') ? { tag: input.slice(1) } : { item: input },
+                    input.startsWith('#') ? { tag: input.slice(1) } : { item: input }
                 ],
                 output: Item.of(outputs, count).toJson(),
                 grindingTime: duration * 5

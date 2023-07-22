@@ -6,38 +6,7 @@
 	icon: "minecraft:hopper"
 	id: "00000000000002AB"
 	order_index: 5
-	quest_links: [
-		{
-			id: "5523D55508151A28"
-			linked_quest: "0E74E2DD26D0CED0"
-			x: -9.5d
-			y: -7.5d
-		}
-		{
-			id: "1022A1D5FDA65DEB"
-			linked_quest: "3B554ECB7BEADD2E"
-			x: -9.5d
-			y: -6.5d
-		}
-		{
-			id: "0FCDB9F838648F57"
-			linked_quest: "450E3698E39CC0A1"
-			x: -9.5d
-			y: -5.5d
-		}
-		{
-			id: "65E40D119E9AC5CC"
-			linked_quest: "00000000000000DC"
-			x: -8.5d
-			y: -6.0d
-		}
-		{
-			id: "23A3FE53CB6AA04A"
-			linked_quest: "0000000000000120"
-			x: -8.5d
-			y: -7.0d
-		}
-	]
+	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["3468E652B4FE85FA"]
@@ -1377,6 +1346,195 @@
 			]
 			x: -10.0d
 			y: 0.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"Redstone Wiring represents an advancement in Redstone technology, allowing a dedicated Engineer to build complex logic circuits that are less prone to the failings of traditional Redstone Dust. A color-coded channel system also allows a single small network to interact with multiple independent machines. "
+				""
+				"Redstone Wires may be stretched between Redstone Wire Connectors, Probe Connectors, or Interface Connectors. These carry the Redstone signal without the signal decaying. "
+				""
+				"Redstone Wire Connectors act as Input and Output points for a signal and may be placed directly on a block. They must have their mode and color channel set by using a Screwdriver on them."
+				""
+				"Redstone Probe Connectors act very much like Comparators with a few extra built-in features. Most Immersive Engineering machines will output special comparator signals that may also be read by this Connector. Refer to the Engineer’s Manual for specifics about each machine."
+				""
+				"Redstone Interface Connectors are used in conjunction with special blocks like Item Batchers and Logic Units, allowing the signals used by those blocks to be read."
+			]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:wirecoil_redstone"
+			id: "0F3213C2D5485E07"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "21186E3E79CE729E"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "77D958D9ACA92218"
+					item: "immersiveengineering:wirecoil_redstone"
+					type: "item"
+				}
+				{
+					id: "40C7CD15412A3979"
+					item: "immersiveengineering:connector_redstone"
+					type: "item"
+				}
+				{
+					id: "1DB826C14C8462EF"
+					item: "immersiveengineering:connector_probe"
+					type: "item"
+				}
+				{
+					id: "67FBAA5C931FC761"
+					item: "immersiveengineering:connector_bundled"
+					type: "item"
+				}
+			]
+			title: "Redstone Wiring"
+			x: -9.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"The Logic Unit represents a compact and potentially very complex Redstone Logic computer. Up to ten Logic Circuits must be programmed and placed within and a Redstone Interface Connector attached to the outside. "
+				""
+				"Whenever the inbound signal changes, the Unit will cycle through each of the installed circuits once, performing each operation, allowing multiple logic gates to be applied to a signal, or even multiple color codes to be used as Input and Output signals. "
+			]
+			hide_dependency_lines: true
+			id: "1FF9CA3EE7F4278A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "50603CD292ADFE2D"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "22883C7BA3DD8EE6"
+				item: "immersiveengineering:logic_unit"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1FF9CA3EE7F4278A"]
+			description: [
+				"Logic Circuits themselves are crafted in the Engineer’s Circuit Table. "
+				""
+				"This workbench requires power, which is input from the back, as well as some quantity of Runic Proto-Boards, Lead Wire, and Vacuum Tubes. Different logic operations will require different quantities. "
+				""
+				"Circuits are programmed with an operator as well as Input and Output colors. "
+				""
+				"When ready, the completed circuit is withdrawn from the right side of the GUI. "
+				""
+				"Circuits may have their Inputs and Outputs reprogrammed by placing them back in the upper slot, but the operator is locked in upon first creation. "
+			]
+			icon: "immersiveengineering:logic_circuit"
+			id: "2159567BA78E0A96"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "59C423C8FAA91053"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "43B1CA89D91A0DB6"
+					item: "immersiveengineering:circuit_table"
+					type: "item"
+				}
+				{
+					id: "73437E9CDD9D1202"
+					item: "immersiveengineering:circuit_board"
+					type: "item"
+				}
+				{
+					id: "5540EFDC98885D11"
+					item: "immersiveengineering:wire_lead"
+					type: "item"
+				}
+				{
+					id: "0B46E2BDE09FED63"
+					item: "immersiveengineering:electron_tube"
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"Redstone Modules are used to read and output Redstone signals by transmitting them over a pipe network. Each Module may be set to a color channel, allowing up to 16 different signals over the same tube network."
+				""
+				"This requires no air and signals do not degrade over distance. "
+				""
+				"Installing a Module Expansion card into a Module in Receiving mode, it may be set to behave exactly like a vanilla Comparator, getting a signal from blocks that emit special values for Comparators, like the Refinery."
+				""
+				"By installing such a card into a Module in Emitting mode, several features become available. For example, by making use of the color channels, it can function as an AND gate, OR gate, compare against another channel or against a constant value, and much more. By chaining them together, some truly compact Redstone logic can be made."
+			]
+			hide_dependency_lines: true
+			id: "1B0B9D271A013CB1"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "6FB0C0E66B7494DA"
+				player_command: false
+				title: "Rare PNC:R Loot Box"
+				type: "command"
+			}]
+			subtitle: "Redstone Evolution"
+			tasks: [{
+				count: 2L
+				id: "332907C9101D2A78"
+				item: "pneumaticcraft:redstone_module"
+				type: "item"
+			}]
+			title: "Redstone Modules"
+			x: -8.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"The Universal Sensor is a powerful block that will output a redstone signal based on various conditions, such as detecting a nearby player, when a player Right-Clicks a block, the presence of blocks, light level, or even the current heat of a block."
+				""
+				"When reading heat, try aiming it at a heat pipe or a PNC:R machine, rather than at an inventory with a heat frame."
+			]
+			hide_dependency_lines: true
+			id: "0D01781386CC5EEE"
+			rewards: [
+				{
+					id: "78E81C6649951023"
+					item: "pneumaticcraft:block_tracker_upgrade"
+					title: "Block Tracker Upgrade"
+					type: "item"
+				}
+				{
+					id: "4A857F82E1E65B98"
+					item: "pneumaticcraft:gps_tool"
+					title: "GPS Tool"
+					type: "item"
+				}
+			]
+			subtitle: "Under the Radar"
+			tasks: [{
+				id: "189A3C683392323F"
+				item: "pneumaticcraft:universal_sensor"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -6.0d
 		}
 	]
 	title: "Redstone and Logic"

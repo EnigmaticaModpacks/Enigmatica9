@@ -54,6 +54,13 @@ ClientEvents.highPriorityAssets((event) => {
             }
         },
         {
+            path: 'minecraft:models/item/heart_of_the_sea',
+            json_model: {
+                parent: 'minecraft:item/generated',
+                textures: { layer0: 'kubejs:item/heart_of_the_sea' }
+            }
+        },
+        {
             path: 'occultism:models/block/golden_sacrificial_bowl',
             json_model: {
                 parent: 'occultism:block/sacrificial_bowl',

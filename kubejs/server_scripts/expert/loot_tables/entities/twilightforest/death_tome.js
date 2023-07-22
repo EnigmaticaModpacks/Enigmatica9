@@ -29,12 +29,14 @@ ServerEvents.entityLootTables((event) => {
             pool.addItem('ars_nouveau:glyph_evaporate', 2);
             pool.addItem('ars_nouveau:glyph_fell', 2);
             pool.addItem('ars_nouveau:glyph_freeze', 2);
+            pool.addItem('ars_nouveau:glyph_grow', 2);
             pool.addItem('ars_nouveau:glyph_gust', 2);
             pool.addItem('ars_nouveau:glyph_harvest', 2);
             pool.addItem('ars_nouveau:glyph_ignite', 2);
             pool.addItem('ars_nouveau:glyph_interact', 2);
             pool.addItem('ars_nouveau:glyph_launch', 2);
             pool.addItem('ars_nouveau:glyph_leap', 2);
+            pool.addItem('ars_nouveau:glyph_light', 2);
             pool.addItem('ars_nouveau:glyph_phantom_block', 2);
             pool.addItem('ars_nouveau:glyph_pickup', 2);
             pool.addItem('ars_nouveau:glyph_place_block', 2);

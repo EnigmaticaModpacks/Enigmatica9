@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
             minSpawnDelay: 300,
             maxSpawnDelay: 1000,
             spawnCount: 3,
-            spawnRange: 5,
+            spawnRange: 4,
             id: `spirit:tiers/tier_1`
         },
         {
@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
             minSpawnDelay: 150,
             maxSpawnDelay: 600,
             spawnCount: 5,
-            spawnRange: 7,
+            spawnRange: 5,
             id: `spirit:tiers/tier_2`
         },
         {
@@ -29,7 +29,7 @@ ServerEvents.recipes((event) => {
             minSpawnDelay: 75,
             maxSpawnDelay: 400,
             spawnCount: 7,
-            spawnRange: 9,
+            spawnRange: 6,
             id: `spirit:tiers/tier_3`
         },
         {
@@ -38,7 +38,7 @@ ServerEvents.recipes((event) => {
             minSpawnDelay: 25,
             maxSpawnDelay: 300,
             spawnCount: 9,
-            spawnRange: 11,
+            spawnRange: 7,
             id: `spirit:tiers/tier_4`
         }
     ];

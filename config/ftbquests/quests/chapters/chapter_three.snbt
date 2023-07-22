@@ -9,7 +9,10 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["714A42E9CE3C32EA"]
+			dependencies: [
+				"714A42E9CE3C32EA"
+				"3D0B7DA1DD0A74B1"
+			]
 			description: ["After some experimentation with the Echo Shards, it appears they may be further refined into a substance known as Pandemonium; the purest form of chaos with powerful creational capabilities. "]
 			id: "73B4078AB841567A"
 			rewards: [{
@@ -26,10 +29,10 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -1.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["3037BC1A3EC6EFF2"]
+			dependencies: ["4410E58ED333FBCB"]
 			description: [
 				"Though found in the wild, creating a local farm for Sculk is recommended. Whenever a mob dies near a Sculk Catalyst, it will cause nearby Stone to be converted into Sculk. "
 				""
@@ -53,43 +56,15 @@
 				item: "minecraft:sculk"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["7633AE65F02DCD1A"]
-			description: [
-				"Long ago, the peoples of this realm attempted to call forth a great power to aid them in their time of need. This creature, known as the Warden, protected them for centuries before their civilization collapsed and their cities fell to ruin. "
-				""
-				"It is said the Warden still wanders those ancient broken halls. Locate it and lay it to rest. "
-				""
-				"================================="
-				""
-				"Travel to a Deep Dark biome far underground in the Overworld and make enough noise to force the Warden out of hiding. "
-			]
-			id: "3037BC1A3EC6EFF2"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "57FBA26D0579E2F4"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "719C40D73FB92E13"
-				item: "minecraft:sculk_catalyst"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -3.5d
+			x: -1.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5BAB85095E92AFD9"]
 			description: [
 				"Refined from Sculk, this mineral is associated with primal chaos. "
 				""
-				"Normally exceptionally rare, the ancients of this place appear to have been harvesting it for unknown ends. "
+				"Normally exceptionally rare, the ancients of this land appear to have been harvesting it for unknown ends. "
 			]
 			id: "714A42E9CE3C32EA"
 			rewards: [{
@@ -105,16 +80,17 @@
 				item: "minecraft:echo_shard"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.5d
+			x: -1.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["73B4078AB841567A"]
+			dependencies: ["0672B242C31F4A11"]
 			description: [
 				"Thought lost to time by many magical practitioners, the creation of Aetherium has remained a closely guarded secret by Witches due to it’s raw potential. It seems likely that its use was what eventually led this civilization to its downfall, but it’s hard to be certain. "
 				""
 				"It seems that it needs to be created once more, however, to fully restore the Tree of Life. "
 			]
+			hide_dependency_lines: true
 			icon: "mekanism:sps_casing"
 			id: "10C86AC59F9FA412"
 			rewards: [{
@@ -133,27 +109,26 @@
 					type: "item"
 				}
 				{
-					count: 122L
+					count: 123L
 					id: "262DB0E774CFE407"
 					item: "mekanism:structural_glass"
 					type: "item"
 				}
 				{
-					count: 4L
+					count: 3L
 					id: "53AB66ED4447EA78"
 					item: "mekanism:sps_port"
 					type: "item"
 				}
 				{
-					count: 2L
 					id: "62492CD5442229F4"
 					item: "mekanism:supercharged_coil"
 					type: "item"
 				}
 			]
 			title: "Supercritical Phase Shifter"
-			x: -1.5d
-			y: -0.5d
+			x: -2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["10C86AC59F9FA412"]
@@ -172,7 +147,7 @@
 				item: "mekanism:antiprotonic_nucleosynthesizer"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -1.0d
 			y: 0.5d
 		}
 		{
@@ -193,17 +168,14 @@
 			}]
 			tasks: [{
 				id: "0D1ED0C7EDB28A00"
-				item: "emendatusenigmatica:brass_ingot"
+				item: "powah:steel_energized"
 				type: "item"
 			}]
 			x: 0.0d
-			y: 0.0d
+			y: 0.5d
 		}
 		{
-			dependencies: [
-				"0672B242C31F4A11"
-				"04B0F0BE6E54D620"
-			]
+			dependencies: ["04B0F0BE6E54D620"]
 			description: [
 				"This metal hums with potential and seems uniquely attuned to the shadow people known as Endermen. Undoubtedly, it will help anchor a teleportation ritual to wherever they call home. "
 				""
@@ -229,11 +201,11 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
+			x: 1.0d
 			y: 0.5d
 		}
 		{
-			dependencies: ["04B0F0BE6E54D620"]
+			dependencies: ["73B4078AB841567A"]
 			description: [
 				"Death follows life, and life thrives on death. Such is the circle of all things."
 				""
@@ -241,22 +213,8 @@
 				""
 				"Nourish the Tree once more and prepare to travel to the home of the Endermen in search of the final reagents required to fully restore it."
 			]
-			hide_dependency_lines: true
 			icon: "kubejs:tree_of_life_3"
 			id: "0672B242C31F4A11"
-			rewards: [{
-				id: "2D740869358D959C"
-				item: {
-					Count: 1b
-					id: "trofers:medium_plate"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "trofers:tree_of_life_3"
-						}
-					}
-				}
-				type: "item"
-			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -272,13 +230,13 @@
 				}
 			]
 			title: "Tree of Life"
-			x: 1.5d
-			y: -0.5d
+			x: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0EBE44D4C30C0E51"]
 			description: [
-				"True dragons passed from our world ages ago. Finding one here in this realm is quite a surprise, though certainly welcome. The magic it bears will be vital in the final restoration of the Tree. "
+				"True dragons passed from our world ages ago. Finding one here in this realm is quite a surprise, though certainly welcome. The magic and knowledge it bears will be vital in the final restoration of the Tree. "
 				""
 				"It seems a shame to cage such a majestic creature…"
 			]
@@ -304,8 +262,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 1.5d
+			x: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2C30585E7A2D5EB3"]
@@ -317,19 +275,6 @@
 			hide_dependency_lines: true
 			icon: "kubejs:tree_of_life_4"
 			id: "3DD1F3E561B3D06A"
-			rewards: [{
-				id: "56B1186DA0E6278D"
-				item: {
-					Count: 1b
-					id: "trofers:large_plate"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "trofers:tree_of_life_4"
-						}
-					}
-				}
-				type: "item"
-			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -345,7 +290,7 @@
 				}
 			]
 			x: 0.0d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["27AB2CF4AC1A051E"]
@@ -365,13 +310,14 @@
 				}
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "6F37D1F612338755"
 				item: "minecraft:heart_of_the_sea"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 5.0d
+			x: -2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["27AB2CF4AC1A051E"]
@@ -391,13 +337,14 @@
 				}
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "1B2410E6942EED4C"
 				item: "kubejs:heart_of_the_mountain"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 5.5d
+			x: -1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["27AB2CF4AC1A051E"]
@@ -417,13 +364,14 @@
 				}
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "676C8DC7B592B237"
 				item: "kubejs:heart_of_the_inferno"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 5.5d
+			x: 1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["27AB2CF4AC1A051E"]
@@ -443,17 +391,18 @@
 				}
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "29AACF719FD3F34E"
 				item: "kubejs:heart_of_the_tempest"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 5.0d
+			x: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["606F79DAEB15E85B"]
-			description: ["With greater knowledge of spatial dimensions, the Afrit is capable of carving out an even greater internal volume for use by the spirits running this apparatus, allowing them to perform mor complex tasks. "]
+			description: ["With greater knowledge of spatial dimensions, the Afrit is capable of carving out an even greater internal volume for use by the spirits running this apparatus, allowing them to perform more complex tasks. "]
 			id: "7633AE65F02DCD1A"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
@@ -468,28 +417,468 @@
 				item: "industrialforegoing:machine_frame_advanced"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.5d
+			x: -1.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["3DD1F3E561B3D06A"]
-			description: [
-				"Congratulations on restoring the Tree of Life and completing Enigmatica 9 Expert!"
-				""
-				"Hoping for a little extra challenge? Look no further. Craft the four Elemental Hearts and obtain your trophies!"
-			]
+			description: ["Though its roots dig deep, and its branches scrape the sky, the Tree of Life remains in a tenuous state. It must be bolstered by the elements to ensure it never fades again. "]
 			hide: true
 			hide_dependency_lines: true
 			id: "27AB2CF4AC1A051E"
-			shape: "gear"
+			shape: "hexagon"
 			tasks: [{
 				id: "1052BA22E449570E"
 				item: "kubejs:primed_aetheric_heart"
 				type: "item"
 			}]
-			title: "Bragging Rights"
+			title: "Final Rites"
 			x: 0.0d
-			y: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["356B7D1DFF632DBD"]
+			description: ["It would seem the Cult of the Ur-Ghast were up to something far more sinister than previously thought. The rift they opened with their Carminite Reactor also gave them the opportunity to obtain this strange debris.  "]
+			hide: true
+			hide_dependency_lines: true
+			id: "0CFE9B39B0643013"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "0015D006738A40B6"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "5BAB3FF81039BF5E"
+				item: "minecraft:ancient_debris"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"0CFE9B39B0643013"
+				"606F79DAEB15E85B"
+			]
+			description: [
+				"With some research, it appears the Cult of the Ur-Ghast were preparing to summon a great evil into the land. To what purpose is still unclear. "
+				""
+				"Just the same, this debris will need to be purified before being put to use, the processes for which is not for the feint of heart. "
+			]
+			id: "77E8DD38A379F9C7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "2275D9F976F77BDF"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				icon: "minecraft:netherite_ingot"
+				id: "55E4F11D8C8357A5"
+				item: "minecraft:netherite_ingot"
+				title: "Netherite"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2D08D3CC44A509B9"]
+			description: [
+				"Bait. "
+				""
+				"They were making bait. "
+				""
+				"Celestial Gold, blessed by the gods themselves, would ring out across the dimensions like a clear bell on a calm day. They’d never resist the chance to corrupt something so sacred. "
+			]
+			id: "39B2F84EBDC27AA3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "1E6AE784E9612FE8"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				icon: "emendatusenigmatica:tainted_gold_ingot"
+				id: "4241691B8FE4293D"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/tainted_gold"
+					}
+				}
+				title: "Celestial Gold"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["39B2F84EBDC27AA3"]
+			description: [
+				"Only a well-prepared witch should ever consider summoning the Wither Council, using every trick at her disposal to defeat them in a timely manner. "
+				""
+				"Perhaps one should be captured for further study, however… "
+				""
+				"========================================"
+				""
+				"The Gateway for this fight is on a short timer. "
+				""
+				"Capture a Wither and defeat the rest. The captured Wither will be used to mine Blighted Ichor, which may be used to produce Nether Stars. "
+				""
+				"Feel free to repeat this fight, but it is not intended to be needed more than once. "
+			]
+			icon: {
+				Count: 1b
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "gateways:wither_council_gate"
+				}
+			}
+			id: "4F90F6437D6CF7EC"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "75A68FA15696B77F"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "0D29D697AA5F02F1"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:wither_council_gate"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2131CE09625BAA40"
+					item: "kubejs:withered_soul"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4F90F6437D6CF7EC"]
+			description: [
+				"With items attuned to the destination it is now possible to travel to the Nether."
+				""
+				"================================="
+				""
+				"Teleportation using the Tree of Life is prone to… drift. Be sure to bring along some means to return home as well as to set up a portal on the other side. "
+			]
+			icon: "minecraft:crimson_fungus"
+			id: "3D0B7DA1DD0A74B1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "48DA2969D0098400"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					icon: "minecraft:crimson_fungus"
+					id: "1B464D1BB138C06B"
+					title: "Visit the Nether"
+					type: "dimension"
+				}
+				{
+					id: "66622CBCAA0E32C7"
+					item: "kubejs:teleport_nether"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["356B7D1DFF632DBD"]
+			description: [
+				"It is time once more to enlist the aid of the elemental spirits, this time to bring forth materials from the depths of their environments. By focusing tight beams of focused Source through these bases, the elementals will be able to retrieve what is needed. "
+				""
+				"From the Earth, Soul Powder."
+				""
+				"From the Sea, Abyssal Seawater."
+			]
+			icon: "industrialforegoing:ore_laser_base"
+			id: "17F735810850C368"
+			rewards: [
+				{
+					id: "5D5C3A61C518BD5F"
+					item: {
+						Count: 1b
+						id: "industrialforegoing:speed_addon_2"
+						tag: {
+							TitaniumAugment: {
+								Speed: 3.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "59F00D28D54B2705"
+					item: {
+						Count: 1b
+						id: "industrialforegoing:efficiency_addon_2"
+						tag: {
+							TitaniumAugment: {
+								Efficiency: 0.8f
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5F0411E4A7C69564"
+					item: "industrialforegoing:ore_laser_base"
+					type: "item"
+				}
+				{
+					id: "65B0FDE9BA6DE70B"
+					item: "industrialforegoing:fluid_laser_base"
+					type: "item"
+				}
+				{
+					id: "56EF198402BC78DD"
+					item: "industrialforegoing:laser_drill"
+					type: "item"
+				}
+				{
+					id: "449CBA79AC0996E8"
+					item: {
+						Count: 1b
+						id: "thermal:basalz_spawn_egg"
+						tag: {
+							display: {
+								Lore: ["{\"translate\":\"item.kubejs.ritual_summon_bound_basalz.tooltip\"}"]
+								Name: "{\"translate\":\"item.kubejs.ritual_summon_bound_basalz\"}"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "37C787A2F4CB8129"
+					item: {
+						Count: 1b
+						id: "thermal:blitz_spawn_egg"
+						tag: {
+							display: {
+								Lore: ["{\"translate\":\"item.kubejs.ritual_summon_bound_blitz.tooltip\"}"]
+								Name: "{\"translate\":\"item.kubejs.ritual_summon_bound_blitz\"}"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Laser Bases"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"126F4E070F219A8B"
+				"6E239ECBE33DFA36"
+			]
+			description: [
+				"A magically enhanced alloy with an affinity for souls. "
+				""
+				"Curiously, when combined with the scraps of material found in the Ur-Ghast tower, it appears to be capable of generating a powerful anti-magic field.  "
+			]
+			id: "606F79DAEB15E85B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "7A03B91B11415840"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "1A90312A5DCEA90B"
+				item: "spirit:soul_steel_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["17F735810850C368"]
+			description: [
+				"Abyssal Seawater, water from the deepest parts of the ocean, rich in rare minerals found nowhere else. It will need to be filtered and refined in order to obtain everything it has to offer. Begin by filtering it through a Magebloom Filter."
+				""
+				"The resulting Brine may then be cooked down to obtain Lithium and Iesnium, while the saturated filters may be processed to obtain Abyssaline, a potent form of Source useful in operating tools such as the Artificer’s Mining Drill and Buzzsaw."
+			]
+			id: "6E239ECBE33DFA36"
+			tasks: [{
+				id: "2879671AF2B13169"
+				item: "kubejs:saturated_magebloom_filter"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["17F735810850C368"]
+			description: ["A fine mineral said to be steeped with the souls of those interred in the earth. "]
+			id: "126F4E070F219A8B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "43BF2A66732C89E4"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2CF76301E00C267D"
+				item: "spirit:soul_powder"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"522FAC34F1EC78A6"
+				"75A2DCF61048E5CE"
+				"78FA52767FE8D732"
+				"7F47E4A0E4F840B0"
+			]
+			description: ["Congratulations on completing Enigmatica 9: Expert!"]
+			hide: true
+			hide_dependency_lines: true
+			id: "26A44571C5C0F6B4"
+			shape: "heart"
+			tasks: [{
+				id: "29BB4A53F41C33F7"
+				item: {
+					Count: 1b
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:tree_of_life"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["77E8DD38A379F9C7"]
+			description: ["Fire and Water both possess the cleansing power to remove the taint from Netherite, restoring it to its former glory. Choose one and develop an enchanting setup capable of performing the ritual. "]
+			id: "2D08D3CC44A509B9"
+			tasks: [{
+				icon: "apotheosis:heart_seashelf"
+				id: "2465E0454B8C2FD0"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "apotheosis:heart_seashelf"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:crystal_seashelf"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:glowing_hellshelf"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:blazing_hellshelf"
+							}
+						]
+					}
+				}
+				title: "Ritual of Cleansing"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2D08D3CC44A509B9"]
+			description: [
+				"Long ago, the peoples of this realm attempted to call forth a great power to aid them in their time of need. This creature, known as the Warden, protected them for centuries before their civilization collapsed and their cities fell to ruin. "
+				""
+				"It is said the Warden still wanders those ancient broken halls. Locate it and lay it to rest. "
+				""
+				"================================="
+				""
+				"Travel to a Deep Dark biome far underground in the Overworld and make enough noise to force the Warden out of hiding. "
+				""
+				"Slay it to obtain a Warden Tendril which may be transformed into Genius Loci, a powerful catalyst used in the creation of Elysium."
+			]
+			icon: "apotheosis:soul_touched_sculkshelf"
+			id: "4410E58ED333FBCB"
+			tasks: [
+				{
+					icon: "apotheosis:soul_touched_sculkshelf"
+					id: "76B9BC83DA6592C4"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "apotheosis:echoing_sculkshelf"
+								}
+								{
+									Count: 1b
+									id: "apotheosis:soul_touched_sculkshelf"
+								}
+							]
+						}
+					}
+					title: "Ritual of Growth"
+					type: "item"
+				}
+				{
+					id: "0CCA7157AB1E119F"
+					item: "kubejs:genius_loci"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -4.5d
 		}
 	]
 	title: "Chapter Three"

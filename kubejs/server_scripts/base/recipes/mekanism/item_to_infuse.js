@@ -14,7 +14,9 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'mekanism:infusion_conversion';
-        recipe.input = { ingredient: Ingredient.of(recipe.input).toJson() };
+        recipe.input = {
+            ingredient: recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input }
+        };
         event.custom(recipe).id(recipe.id);
     });
 });

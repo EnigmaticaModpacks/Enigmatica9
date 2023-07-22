@@ -62,6 +62,17 @@ ServerEvents.highPriorityData((event) => {
                 { weight: 1, stack: { item: 'the_bumblezone:stingless_bee_helmet_2', nbt: default_nbt } }
             ],
             tags: ['the_bumblezone_bow']
+        },
+        {
+            name: 'earth',
+            weight: 40,
+            mainhands: [{ weight: 3, stack: { item: 'ars_nouveau:enchanters_sword', nbt: default_nbt } }],
+            offhands: [{ weight: 1, stack: { item: 'minecraft:totem_of_undying' } }],
+            boots: [{ weight: 1, stack: { item: 'ars_elemental:earth_boots', nbt: default_nbt } }],
+            leggings: [{ weight: 1, stack: { item: 'ars_elemental:earth_leggings', nbt: default_nbt } }],
+            chestplates: [{ weight: 1, stack: { item: 'ars_elemental:earth_robes', nbt: default_nbt } }],
+            helmets: [{ weight: 1, stack: { item: 'ars_elemental:earth_hat', nbt: default_nbt } }],
+            tags: ['the_bumblezone', 'the_bumblezone_mage']
         }
     ];
 

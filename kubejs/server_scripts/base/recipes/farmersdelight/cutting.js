@@ -9,6 +9,12 @@ ServerEvents.recipes((event) => {
                 action: 'pickaxe_dig'
             },
             id: `${id_prefix}nautilus_shell`
+        },
+        {
+            ingredients: [{ item: 'minecraft:melon' }],
+            result: [{ item: 'minecraft:melon_slice', count: 8 }],
+            tool: { tag: 'forge:tools/knives' },
+            id: `farmersdelight:cutting/melon`
         }
     ];
 

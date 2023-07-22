@@ -19,7 +19,7 @@ ServerEvents.highPriorityData((event) => {
             entities: ['minecraft:skeleton'],
             valid_gear_sets: ['#miniboss/skeleton_siege_breaker'],
             dimensions: [],
-            affixed: false,
+            affixed: true,
             nbt: {},
             stats: {
                 enchant_chance: 0.5,
@@ -31,7 +31,7 @@ ServerEvents.highPriorityData((event) => {
         {
             id: 'skeleton_bow',
             chance: 1.0,
-            weight: 80,
+            weight: 40,
             quality: 0,
             entities: ['minecraft:skeleton'],
             valid_gear_sets: ['#miniboss/skeleton_bow'],
@@ -42,25 +42,36 @@ ServerEvents.highPriorityData((event) => {
                 enchant_chance: 0.5,
                 enchantment_levels: [15, 15, 15, 15],
                 effects: [{ effect: 'minecraft:speed', amplifier: 1, chance: 1.0 }],
-                attribute_modifiers: [
-                    {
-                        attribute: 'minecraft:generic.max_health',
-                        operation: 'ADDITION',
-                        value: { min: 40, steps: 10, step: 2 }
-                    }
-                ]
+                attribute_modifiers: []
+            }
+        },
+        {
+            id: 'skeleton_sword',
+            chance: 1.0,
+            weight: 40,
+            quality: 0,
+            entities: ['minecraft:skeleton'],
+            valid_gear_sets: ['#miniboss/skeleton_sword'],
+            dimensions: [],
+            affixed: false,
+            nbt: {},
+            stats: {
+                enchant_chance: 1.0,
+                enchantment_levels: [15, 15, 15, 15],
+                effects: [{ effect: 'minecraft:strength', amplifier: 0, chance: 1.0 }],
+                attribute_modifiers: []
             }
         },
         {
             id: 'skeleton_forsaken_knight',
-            name: 'Forsaken Knight',
+            name: 'miniboss.enigmatica.skeleton_forsaken_knight',
             chance: 1.0,
             weight: 15,
             quality: 0,
             entities: ['minecraft:skeleton'],
             valid_gear_sets: ['#miniboss/skeleton_forsaken_knight'],
             dimensions: [],
-            affixed: false,
+            affixed: true,
             nbt: {},
             stats: {
                 enchant_chance: 1.0,
@@ -73,7 +84,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 40, steps: 10, step: 2 }
+                        value: 20
                     }
                 ]
             }
@@ -121,21 +132,21 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 200, steps: 1, step: 0 }
+                        value: 90
                     }
                 ]
             }
         },
         {
-            id: 'witch',
-            name: null,
+            id: 'witch_solitary_witch',
+            name: 'miniboss.enigmatica.witch_solitary_witch',
             chance: 1.0,
             weight: 100,
             quality: 0,
             entities: ['minecraft:witch'],
             valid_gear_sets: ['#miniboss/witch'],
             dimensions: [],
-            affixed: false,
+            affixed: true,
             nbt: {},
             stats: {
                 enchant_chance: 1.0,
@@ -145,7 +156,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 30, steps: 1, step: 0 }
+                        value: 24
                     }
                 ]
             }
@@ -169,7 +180,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 30, steps: 1, step: 0 }
+                        value: 24
                     }
                 ]
             }
@@ -255,13 +266,7 @@ ServerEvents.highPriorityData((event) => {
                 enchant_chance: 1.0,
                 enchantment_levels: [15, 20, 15, 20],
                 effects: [],
-                attribute_modifiers: [
-                    {
-                        attribute: 'minecraft:generic.max_health',
-                        operation: 'ADDITION',
-                        value: { min: 30, steps: 1, step: 0 }
-                    }
-                ]
+                attribute_modifiers: []
             }
         },
         {
@@ -283,21 +288,21 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 50, steps: 1, step: 0 }
+                        value: 30
                     }
                 ]
             }
         },
         {
             id: 'wither_skeleton_withered_knight',
-            name: 'Withered Knight',
+            name: 'miniboss.enigmatica.wither_skeleton_withered_knight',
             chance: 1.0,
             weight: 15,
             quality: 0,
             entities: ['minecraft:wither_skeleton'],
             valid_gear_sets: ['#miniboss/wither_skeleton_withered_knight'],
             dimensions: [],
-            affixed: false,
+            affixed: true,
             nbt: {},
             stats: {
                 enchant_chance: 1.0,
@@ -311,7 +316,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 75, steps: 1, step: 0 }
+                        value: 75
                     }
                 ]
             }
@@ -335,21 +340,21 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 75, steps: 1, step: 0 }
+                        value: 75
                     }
                 ]
             }
         },
         {
             id: 'stray_hoarfrost_knight',
-            name: 'Hoarfrost Knight',
+            name: 'miniboss.enigmatica.stray_hoarfrost_knight',
             chance: 1.0,
             weight: 15,
             quality: 0,
             entities: ['minecraft:stray'],
             valid_gear_sets: ['#miniboss/stray_hoarfrost_knight'],
             dimensions: [],
-            affixed: false,
+            affixed: true,
             nbt: {},
             stats: {
                 enchant_chance: 1.0,
@@ -362,7 +367,7 @@ ServerEvents.highPriorityData((event) => {
                     {
                         attribute: 'minecraft:generic.max_health',
                         operation: 'ADDITION',
-                        value: { min: 75, steps: 1, step: 0 }
+                        value: 75
                     }
                 ]
             }
@@ -384,9 +389,9 @@ ServerEvents.highPriorityData((event) => {
                 effects: [{ effect: 'minecraft:speed', amplifier: 1, chance: 0.6 }],
                 attribute_modifiers: [
                     {
-                        attribute: 'minecraft:generic.max_health',
-                        operation: 'ADDITION',
-                        value: { min: 50, steps: 1, step: 0 }
+                        attribute: 'apotheosis:healing_received',
+                        operation: 'MULTIPLY_TOTAL',
+                        value: -0.5
                     }
                 ]
             }
@@ -406,13 +411,7 @@ ServerEvents.highPriorityData((event) => {
                 enchant_chance: 1.0,
                 enchantment_levels: [15, 15, 15, 15],
                 effects: [{ effect: 'minecraft:resistance', amplifier: 0, chance: 1.0 }],
-                attribute_modifiers: [
-                    {
-                        attribute: 'minecraft:generic.max_health',
-                        operation: 'ADDITION',
-                        value: { min: 40, steps: 1, step: 0 }
-                    }
-                ]
+                attribute_modifiers: []
             }
         },
         {
@@ -430,13 +429,7 @@ ServerEvents.highPriorityData((event) => {
                 enchant_chance: 1.0,
                 enchantment_levels: [15, 15, 15, 15],
                 effects: [{ effect: 'minecraft:resistance', amplifier: 0, chance: 1.0 }],
-                attribute_modifiers: [
-                    {
-                        attribute: 'minecraft:generic.max_health',
-                        operation: 'ADDITION',
-                        value: { min: 60, steps: 1, step: 0 }
-                    }
-                ]
+                attribute_modifiers: []
             }
         }
     ];

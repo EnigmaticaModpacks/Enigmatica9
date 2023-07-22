@@ -112,7 +112,7 @@ ServerEvents.recipes((event) => {
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: '#forge:ingots/compressed_iron',
-                B: '#forge:ingots/energized_steel',
+                B: '#forge:plates/brass',
                 C: 'ae2:quartz_glass'
             },
             id: `ae2:network/blocks/pattern_providers_interface`
@@ -128,17 +128,6 @@ ServerEvents.recipes((event) => {
                 E: 'ae2:formation_core'
             },
             id: `ae2:network/crafting/molecular_assembler`
-        },
-        {
-            output: 'ae2:me_p2p_tunnel',
-            pattern: [' BA', 'CDA', ' BA'],
-            key: {
-                A: '#forge:gems/fluix',
-                B: '#forge:ingots/compressed_iron',
-                C: '#forge:essences/water',
-                D: 'occultism:wormhole_frame'
-            },
-            id: `ae2:network/parts/tunnels_me`
         },
         {
             output: 'ae2:me_p2p_tunnel',

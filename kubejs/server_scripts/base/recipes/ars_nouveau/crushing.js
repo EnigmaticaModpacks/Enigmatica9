@@ -52,6 +52,16 @@ ServerEvents.recipes((event) => {
             ],
             input: 'minecraft:moss_block',
             id: `${id_prefix}moss_paste`
+        },
+        {
+            output: [{ item: 'minecraft:cobblestone', count: 1, chance: 1.0 }],
+            input: 'minecraft:stone',
+            id: `ars_nouveau:crush_stone`
+        },
+        {
+            output: [{ item: 'ae2:sky_dust', count: 1, chance: 1.0 }],
+            input: 'ae2:sky_stone_block',
+            id: `${id_prefix}sky_dust`
         }
     ];
 
@@ -78,7 +88,7 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'ars_nouveau:crush';
-        recipe.input = Ingredient.of(recipe.input).toJson();
+        recipe.input = recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input };
         event.custom(recipe).id(recipe.id);
     });
 });

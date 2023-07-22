@@ -46,17 +46,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}moonworm_queen`
         },
         {
-            output: 'twilightforest:moonworm_queen',
-            pattern: ['ABA', 'CDC', 'ABA'],
-            key: {
-                A: '#forge:dusts/moon_dust',
-                B: '#forge:essences/anima',
-                C: '#forge:essences/manipulation',
-                D: 'twilightforest:torchberries'
-            },
-            id: `${id_prefix}moonworm_queen`
-        },
-        {
             output: 'twilightforest:transformation_powder',
             pattern: ['AAA', 'ABA', 'ACA'],
             key: {

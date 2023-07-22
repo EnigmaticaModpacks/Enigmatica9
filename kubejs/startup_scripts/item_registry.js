@@ -18,7 +18,7 @@ StartupEvents.registry('item', (event) => {
         'crude_iron_ingot',
         'red_nether_brick',
         'kaolin_clay',
-        'calcined_kaolin_pearls',
+        'calcined_kaolin_pearl',
         'kaolin_powder',
         'mystery_mash',
         'energetic_transference_matrix',
@@ -41,7 +41,10 @@ StartupEvents.registry('item', (event) => {
         'mastery_token_air',
         'mastery_token_earth',
         'mastery_token_fire',
-        'mastery_token_water'
+        'mastery_token_water',
+        'primordial_seed',
+        'withered_soul',
+        'genius_loci'
     ];
 
     const ritualDummies = [
@@ -62,6 +65,9 @@ StartupEvents.registry('item', (event) => {
         'ritual_summon_drygmy_from_shards',
         'ritual_summon_whirlisprig',
         'ritual_summon_whirlisprig_from_shards',
+        'ritual_summon_firenando',
+        'ritual_summon_siren',
+        'ritual_summon_siren_from_shards',
         'ritual_summon_crow',
         'ritual_summon_allay',
         'ritual_summon_bound_blaze',
@@ -82,7 +88,11 @@ StartupEvents.registry('item', (event) => {
         'ritual_craft_electric_motor',
         'ritual_craft_component_electronic',
         'ritual_craft_jet_boots_upgrade_3',
-        'ritual_of_enduring_flight'
+        'ritual_of_enduring_flight',
+        'ritual_craft_sps_port',
+        'ritual_craft_energizing_orb',
+        'ritual_craft_tree_of_life_trophy',
+        'ritual_craft_market'
     ];
 
     const reusableItemTextures = [

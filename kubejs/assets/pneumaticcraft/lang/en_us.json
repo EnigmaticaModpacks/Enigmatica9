@@ -36,5 +36,9 @@
 	"item.pneumaticcraft.jumping_upgrade_3": "Jumping Upgrade: Tier III",
 	"item.pneumaticcraft.jumping_upgrade_4": "Jumping Upgrade: Tier IV",
 	"item.pneumaticcraft.printed_circuit_board": "Finished PCB",
-	"item.pneumaticcraft.unassembled_netherite_drill_bit": "Unassembled Netherite Drill Bit"
+	"item.pneumaticcraft.unassembled_netherite_drill_bit": "Unassembled Netherite Drill Bit",
+	"pneumaticcraft.gui.jei.description.createaddition_liquid_blaze_burner.smouldering": "Liquid - Smouldering",
+	"pneumaticcraft.gui.jei.description.createaddition_liquid_blaze_burner.fading": "Liquid - Fading",
+	"pneumaticcraft.gui.jei.description.createaddition_liquid_blaze_burner.kindled": "Liquid - Kindled",
+	"pneumaticcraft.gui.jei.description.createaddition_liquid_blaze_burner.seething": "Liquid - Seething"
 }

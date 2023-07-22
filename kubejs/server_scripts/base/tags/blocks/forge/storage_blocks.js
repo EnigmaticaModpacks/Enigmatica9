@@ -22,6 +22,7 @@ ServerEvents.tags('block', (event) => {
         'thermal:sadiroot_block',
         'thermal:radish_block',
         'thermal:corn_block',
+        'thermal:tea_block',
         'farmersdelight:cabbage_crate',
 
         'quark:glowberry_sack',
@@ -80,6 +81,7 @@ ServerEvents.tags('block', (event) => {
     event.get(`forge:storage_blocks/sadiroot`).add(['thermal:sadiroot_block']);
     event.get(`forge:storage_blocks/radish`).add(['thermal:radish_block']);
     event.get(`forge:storage_blocks/corn`).add(['thermal:corn_block']);
+    event.get(`forge:storage_blocks/tea`).add(['thermal:tea_block']);
     event.get(`forge:storage_blocks/cabbage`).add(['farmersdelight:cabbage_crate']);
 
     event.get(`forge:storage_blocks/glowberry`).add(['quark:glowberry_sack']);

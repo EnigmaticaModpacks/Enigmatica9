@@ -11,7 +11,9 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'create:pressing';
-        recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
+        recipe.ingredients = recipe.inputs.map((input) =>
+            input.startsWith('#') ? { tag: input.slice(1) } : { item: input }
+        );
         recipe.results = recipe.outputs.map((output) => Item.of(output).toJson());
         event.custom(recipe).id(recipe.id);
     });

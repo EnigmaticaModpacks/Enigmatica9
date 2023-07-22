@@ -28,18 +28,6 @@ ServerEvents.recipes((event) => {
             input: { tag: 'forge:essences/manipulation' },
             start_item: { item: 'naturesaura:calling_spirit' },
             id: `naturesaura:offering/clock_hand`
-        },
-        {
-            output: { item: 'emendatusenigmatica:tainted_gold_ingot', count: 2 },
-            input: { tag: 'forge:ingots/netherite' },
-            start_item: { item: 'kubejs:spirit_of_devotion' },
-            id: `${id_prefix}tainted_gold_ingot`
-        },
-        {
-            output: { item: 'emendatusenigmatica:tainted_gold_block', count: 2 },
-            input: { tag: 'forge:storage_blocks/netherite' },
-            start_item: { item: 'kubejs:spirit_of_devotion' },
-            id: `${id_prefix}tainted_gold_block`
         }
     ];
 

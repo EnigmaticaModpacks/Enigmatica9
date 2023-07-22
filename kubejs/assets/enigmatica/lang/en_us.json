@@ -4,6 +4,12 @@
     "block.minecraft.stonecutter": "Stonecutter",
     "container.stonecutter": "Stonecutter",
     "entity.minecraft.villager.beekeeper": "Beekeeper",
+
+    "miniboss.enigmatica.witch_solitary_witch": "Solitary Witch",
+    "miniboss.enigmatica.wither_skeleton_withered_knight": "Withered Knight",
+    "miniboss.enigmatica.stray_hoarfrost_knight": "Hoarfrost Knight",
+    "miniboss.enigmatica.skeleton_forsaken_knight": "Forsaken Knight",
+
     "advancements.enigmatica.husbandry.tame_all_animals.title": "Zoology",
     "advancements.enigmatica.husbandry.tame_all_animals.description": "Tame every animal there is to tame!",
 

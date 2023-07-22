@@ -6,6 +6,17 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
+            output: 'minecraft:piston',
+            pattern: [' A ', 'BCB', ' D '],
+            key: {
+                A: '#forge:treated_wood_slab',
+                B: '#forge:dusts/redstone',
+                C: 'minecraft:andesite',
+                D: 'create:piston_extension_pole'
+            },
+            id: `minecraft:piston`
+        },
+        {
             output: 'minecraft:cauldron',
             pattern: ['A A', 'A A', 'AAA'],
             key: {
@@ -129,11 +140,12 @@ ServerEvents.recipes((event) => {
             id: 'minecraft:stonecutter'
         },
         {
-            output: 'minecraft:conduit',
-            pattern: ['AAA', 'ABA', 'AAA'],
+            output: '3x minecraft:conduit',
+            pattern: [' A ', 'BBB', ' C '],
             key: {
-                A: 'minecraft:nautilus_shell',
-                B: 'quark:rainbow_rune'
+                A: '#forge:essences/air',
+                B: 'minecraft:nautilus_shell',
+                C: '#forge:essences/water'
             },
             id: 'minecraft:conduit'
         },
@@ -154,6 +166,15 @@ ServerEvents.recipes((event) => {
                 B: '#forge:ingots/infused_iron'
             },
             id: 'minecraft:shears'
+        },
+        {
+            output: '4x minecraft:dripstone_block',
+            pattern: ['AB', 'BA'],
+            key: {
+                A: 'minecraft:clay',
+                B: 'minecraft:tuff'
+            },
+            id: `${id_prefix}dripstone_block`
         }
     ];
 

@@ -28,11 +28,13 @@ ServerEvents.recipes((event) => {
             { id: 'naturesaura:calling_spirit', output: 'naturesaura:calling_spirit' },
             { id: 'naturesaura:depth_ingot_creation', output: 'naturesaura:depth_ingot' },
             { id: 'naturesaura:projectile_generator', output: 'naturesaura:projectile_generator' },
-            { id: 'naturesaura:firework_generator', output: 'naturesaura:firework_generator' }
+            { id: 'naturesaura:firework_generator', output: 'naturesaura:firework_generator' },
+            { id: 'naturesaura:gold_powder', output: 'naturesaura:gold_powder' }
         ],
         altar: [
             { id: 'naturesaura:altar/infused_stone', output: 'naturesaura:infused_stone' },
-            { id: 'naturesaura:altar/tainted_gold', output: 'naturesaura:tainted_gold' }
+            { id: 'naturesaura:altar/tainted_gold', output: 'naturesaura:tainted_gold' },
+            { id: 'naturesaura:altar/gold_powder', output: 'naturesaura:gold_powder' }
         ],
         tree_ritual: [
             {

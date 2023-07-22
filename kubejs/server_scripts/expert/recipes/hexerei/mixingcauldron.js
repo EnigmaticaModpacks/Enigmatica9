@@ -433,7 +433,7 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:reinforced_pressure_tube',
                 'ars_nouveau:glyph_wind_shear',
                 'pneumaticcraft:reinforced_pressure_tube',
-                'ars_elemental:lesser_air_focus',
+                'ars_elemental:air_focus',
                 'pneumaticcraft:reinforced_pressure_tube',
                 'ars_nouveau:glyph_wind_shear',
                 'pneumaticcraft:reinforced_pressure_tube'
@@ -518,7 +518,7 @@ ServerEvents.recipes((event) => {
                 'pneumaticcraft:reinforced_pressure_tube',
                 'ars_nouveau:glyph_amplify',
                 'pneumaticcraft:reinforced_pressure_tube',
-                'ars_elemental:lesser_air_focus',
+                'ars_elemental:air_focus',
                 'pneumaticcraft:reinforced_pressure_tube',
                 'ars_nouveau:glyph_amplify',
                 'pneumaticcraft:reinforced_pressure_tube'
@@ -739,13 +739,13 @@ ServerEvents.recipes((event) => {
             output: '4x kubejs:iridescent_arcanite_crystal',
             inputs: [
                 'kubejs:bright_arcanite_crystal',
-                '#forge:dusts/brass',
-                '#forge:dusts/brass',
-                '#forge:dusts/brass',
+                '#forge:ingots/energized_steel',
+                '#forge:ingots/energized_steel',
+                '#forge:ingots/energized_steel',
                 '#forge:gems/nitro',
-                '#forge:dusts/brass',
-                '#forge:dusts/brass',
-                '#forge:dusts/brass'
+                '#forge:ingots/energized_steel',
+                '#forge:ingots/energized_steel',
+                '#forge:ingots/energized_steel'
             ],
             liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:shock_potion' } },
             liquidOutput: {

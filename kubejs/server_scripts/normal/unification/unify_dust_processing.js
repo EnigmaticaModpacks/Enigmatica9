@@ -220,7 +220,7 @@ function recipetypes_crushing(event, material, exceptions, item, tag) {
         event
             .custom({
                 type: 'occultism:crushing',
-                ingredient: Ingredient.of(recipe.input).toJson(),
+                ingredient: recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input },
                 result: Item.of(recipe.outputs.primary.item, recipe.outputs.primary.count).toJson(),
                 crushing_time: recipe.duration,
                 ignore_crushing_multiplier: recipe.ignore_occultism_multiplier
@@ -232,7 +232,9 @@ function recipetypes_crushing(event, material, exceptions, item, tag) {
         event
             .custom({
                 type: 'mekanism:crushing',
-                input: { ingredient: Ingredient.of(recipe.input).toJson() },
+                input: {
+                    ingredient: recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input }
+                },
                 output: Item.of(recipe.outputs.primary.item, recipe.outputs.primary.count).toJson()
             })
             .id(`${id_prefix}mekanism_crushing/${recipe.id_suffix}`);
@@ -243,7 +245,7 @@ function recipetypes_crushing(event, material, exceptions, item, tag) {
             .custom({
                 type: 'immersiveengineering:crusher',
                 energy: recipe.energy,
-                input: Ingredient.of(recipe.input).toJson(),
+                input: recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input },
                 result: { base_ingredient: { item: recipe.outputs.primary.item }, count: recipe.outputs.primary.count },
                 secondaries: []
             })
@@ -254,7 +256,7 @@ function recipetypes_crushing(event, material, exceptions, item, tag) {
         event
             .custom({
                 type: 'ars_nouveau:crush',
-                input: Ingredient.of(recipe.input).toJson(),
+                input: recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input },
                 output: [recipe.outputs.primary]
             })
             .id(`${id_prefix}ars_nouveau_crushing/${recipe.id_suffix}`);
@@ -264,7 +266,7 @@ function recipetypes_crushing(event, material, exceptions, item, tag) {
         event
             .custom({
                 type: 'create:milling',
-                ingredients: [Ingredient.of(recipe.input).toJson()],
+                ingredients: [recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input }],
                 results: [recipe.outputs.primary],
                 processingTime: 50
             })
@@ -276,7 +278,7 @@ function recipetypes_crushing(event, material, exceptions, item, tag) {
         event
             .custom({
                 type: 'thermal:pulverizer',
-                ingredient: Ingredient.of(recipe.input).toJson(),
+                ingredient: recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input },
                 results: [
                     {
                         item: recipe.outputs.primary.item,

@@ -317,10 +317,10 @@ ServerEvents.recipes((event) => {
                 '#forge:storage_blocks/soul_steel',
                 'spirit:soul_slate',
                 'spirit:soul_slate',
-                '#forge:gears/brass',
-                '#forge:gears/brass',
-                '#forge:gears/brass',
-                '#forge:gears/brass'
+                '#forge:storage_blocks/energized_steel',
+                '#forge:storage_blocks/energized_steel',
+                '#forge:storage_blocks/energized_steel',
+                '#forge:storage_blocks/energized_steel'
             ],
             time: 120,
             sapling: 'ars_nouveau:purple_archwood_sapling',
@@ -390,6 +390,126 @@ ServerEvents.recipes((event) => {
             time: 40,
             sapling: 'ars_nouveau:purple_archwood_sapling',
             id: `${id_prefix}storage_stabilizer_tier4`
+        },
+
+        {
+            output: 'ars_elemental:fire_focus',
+            ingredients: [
+                '#forge:essences/fire',
+                'ae2:charged_certus_quartz_crystal',
+                '#forge:wires/electrum',
+                '#forge:wires/electrum',
+
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust'
+            ],
+            time: 40,
+            sapling: 'ars_nouveau:red_archwood_sapling',
+            id: `${id_prefix}fire_focus`
+        },
+        {
+            output: 'ars_elemental:water_focus',
+            ingredients: [
+                '#forge:essences/water',
+                'ae2:charged_certus_quartz_crystal',
+                '#forge:wires/electrum',
+                '#forge:wires/electrum',
+
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust'
+            ],
+            time: 40,
+            sapling: 'ars_nouveau:blue_archwood_sapling',
+            id: `${id_prefix}water_focus`
+        },
+        {
+            output: 'ars_elemental:air_focus',
+            ingredients: [
+                '#forge:essences/air',
+                'ae2:charged_certus_quartz_crystal',
+                '#forge:wires/electrum',
+                '#forge:wires/electrum',
+
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust'
+            ],
+            time: 40,
+            sapling: 'ars_elemental:yellow_archwood_sapling',
+            id: `${id_prefix}air_focus`
+        },
+        {
+            output: 'ars_elemental:earth_focus',
+            ingredients: [
+                '#forge:essences/earth',
+                'ae2:charged_certus_quartz_crystal',
+                '#forge:wires/electrum',
+                '#forge:wires/electrum',
+
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust'
+            ],
+            time: 40,
+            sapling: 'ars_nouveau:green_archwood_sapling',
+            id: `${id_prefix}earth_focus`
+        },
+        {
+            output: 'ars_elemental:necrotic_focus',
+            ingredients: [
+                '#forge:essences/anima',
+                'ae2:charged_certus_quartz_crystal',
+                '#forge:wires/electrum',
+                '#forge:wires/electrum',
+
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust'
+            ],
+            time: 40,
+            sapling: 'byg:withering_oak_sapling',
+            id: `${id_prefix}necrotic_focus`
+        },
+        {
+            output: 'ars_nouveau:summon_focus',
+            ingredients: [
+                '#forge:essences/conjuration',
+                'ae2:charged_certus_quartz_crystal',
+                '#forge:wires/electrum',
+                '#forge:wires/electrum',
+
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust'
+            ],
+            time: 40,
+            sapling: 'ars_nouveau:purple_archwood_sapling',
+            id: `${id_prefix}summon_focus`
+        },
+        {
+            output: 'ars_nouveau:shapers_focus',
+            ingredients: [
+                '#forge:essences/manipulation',
+                'ae2:charged_certus_quartz_crystal',
+                '#forge:wires/electrum',
+                '#forge:wires/electrum',
+
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust',
+                '#forge:dusts/moon_dust'
+            ],
+            time: 40,
+            sapling: 'hexerei:mahogany_sapling',
+            id: `${id_prefix}shapers_focus`
         }
 
         /*
@@ -412,7 +532,9 @@ ServerEvents.recipes((event) => {
     ];
     recipes.forEach((recipe) => {
         recipe.type = 'naturesaura:tree_ritual';
-        recipe.ingredients = recipe.ingredients.map((input) => Ingredient.of(input).toJson());
+        recipe.ingredients = recipe.ingredients.map((input) =>
+            input.startsWith('#') ? { tag: input.slice(1) } : { item: input }
+        );
         recipe.sapling = Item.of(recipe.sapling).toJson();
         recipe.output = Item.of(recipe.output).toJson();
         recipe.time = recipe.time * time_multiplier;

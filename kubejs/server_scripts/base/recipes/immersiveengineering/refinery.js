@@ -18,7 +18,9 @@ ServerEvents.recipes((event) => {
         recipe.type = 'immersiveengineering:refinery';
         recipe.input0 = recipe.inputs[0];
         recipe.input1 = recipe.inputs[1];
-        recipe.catalyst = Ingredient.of(recipe.catalyst).toJson();
+        recipe.catalyst = recipe.catalyst.startsWith('#')
+            ? { tag: recipe.catalyst.slice(1) }
+            : { item: recipe.catalyst };
 
         event.custom(recipe).id(recipe.id);
     });

@@ -50,7 +50,7 @@ ServerEvents.recipes((event) => {
     recipes.forEach((recipe) => {
         recipe.type = 'occultism:miner';
         recipe.ingredient = recipe.ingredient == null ? { tag: 'occultism:miners/ores' } : recipe.ingredient;
-        recipe.result = Ingredient.of(recipe.output).toJson();
+        recipe.result = recipe.output.startsWith('#') ? { tag: recipe.output.slice(1) } : { item: recipe.output };
         event.custom(recipe).id(recipe.id);
     });
 });

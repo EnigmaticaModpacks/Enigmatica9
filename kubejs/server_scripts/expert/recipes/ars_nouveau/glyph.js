@@ -58,14 +58,61 @@ ServerEvents.recipes((event) => {
             count: 1,
             exp: 160,
             id: 'ars_nouveau:glyph_lightning'
+        },
+        {
+            output: 'ars_scalaes:glyph_shrink',
+            inputItems: [
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { tag: 'forge:essences/abjuration' } },
+                { item: { tag: 'forge:nuggets/lead' } },
+                { item: { item: 'supplementaries:antique_ink' } }
+            ],
+            count: 1,
+            exp: 160,
+            id: 'ars_scalaes:glyph_shrink'
+        },
+        {
+            output: 'ars_nouveau:glyph_fell',
+            inputItems: [
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { item: 'twilightforest:steeleaf_axe' } },
+                { item: { item: 'supplementaries:antique_ink' } }
+            ],
+            count: 1,
+            exp: 27,
+            id: 'ars_nouveau:glyph_fell'
+        },
+        {
+            output: 'ars_nouveau:glyph_harvest',
+            inputItems: [
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { item: 'twilightforest:steeleaf_hoe' } },
+                { item: { item: 'supplementaries:antique_ink' } }
+            ],
+            count: 1,
+            exp: 27,
+            id: 'ars_nouveau:glyph_harvest'
+        },
+        {
+            output: 'ars_nouveau:glyph_cut',
+            inputItems: [
+                { item: { tag: 'forge:essences/manipulation' } },
+                { item: { item: 'minecraft:shears' } },
+                { item: { item: 'twilightforest:steeleaf_sword' } },
+                { item: { item: 'supplementaries:antique_ink' } }
+            ],
+            count: 1,
+            exp: 27,
+            id: 'ars_nouveau:glyph_cut'
         }
     ];
 
     // Add Antique Ink to every glyph
     event.forEachRecipe({ type: 'ars_nouveau:glyph' }, (r) => {
+        let found = recipes.some((recipe) => recipe.id === r.getId());
         let recipe = JSON.parse(r.json);
         recipe.inputItems.push({ item: { item: 'supplementaries:antique_ink' } });
-        event.custom(recipe).id(r.getId());
+        if (!found) event.custom(recipe).id(r.getId());
     });
 
     recipes.forEach((recipe) => {

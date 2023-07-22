@@ -7,9 +7,9 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             pedestalItems: [
-                { item: { item: 'kubejs:spirit_of_devotion' } },
-                { item: { item: 'kubejs:spirit_of_devotion' } },
-                { item: { item: 'kubejs:spirit_of_devotion' } }
+                { item: { item: 'quark:rainbow_rune' } },
+                { item: { item: 'quark:rainbow_rune' } },
+                { item: { item: 'quark:rainbow_rune' } }
             ],
             sourceCost: 2500,
             tier: 1,
@@ -17,9 +17,9 @@ ServerEvents.recipes((event) => {
         },
         {
             pedestalItems: [
-                { item: { tag: 'forge:gems/spirited' } },
-                { item: { tag: 'forge:gems/spirited' } },
-                { item: { tag: 'forge:gems/spirited' } }
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { item: 'kubejs:spirit_of_devotion' } }
             ],
             sourceCost: 5000,
             tier: 2,

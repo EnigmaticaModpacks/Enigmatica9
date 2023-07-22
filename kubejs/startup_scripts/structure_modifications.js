@@ -14,6 +14,16 @@ const structures = [
         mod: 'immersiveengineering',
         type: 'multiblocks',
         name: 'assembler',
+        index: 0,
+        block: {
+            normal: 'immersiveengineering:steel_scaffolding_standard',
+            expert: 'pneumaticcraft:compressed_brick_tile'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
+        name: 'assembler',
         index: 4,
         block: {
             normal: 'immersiveengineering:slab_sheetmetal_iron',
@@ -28,6 +38,16 @@ const structures = [
         block: {
             normal: 'immersiveengineering:sheetmetal_iron',
             expert: 'immersiveengineering:sheetmetal_colored_black'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
+        name: 'bottling_machine',
+        index: 1,
+        block: {
+            normal: 'immersiveengineering:steel_scaffolding_standard',
+            expert: 'pneumaticcraft:compressed_brick_tile'
         }
     },
     {
@@ -48,6 +68,16 @@ const structures = [
         block: {
             normal: 'immersiveengineering:sheetmetal_iron',
             expert: 'immersiveengineering:sheetmetal_colored_black'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
+        name: 'mixer',
+        index: 0,
+        block: {
+            normal: 'immersiveengineering:steel_scaffolding_standard',
+            expert: 'pneumaticcraft:compressed_brick_tile'
         }
     },
     {
@@ -78,6 +108,16 @@ const structures = [
         block: {
             normal: 'immersiveengineering:heavy_engineering',
             expert: 'immersiveengineering:light_engineering'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
+        name: 'sawmill',
+        index: 0,
+        block: {
+            normal: 'immersiveengineering:steel_scaffolding_standard',
+            expert: 'pneumaticcraft:compressed_brick_tile'
         }
     },
     {
@@ -260,6 +300,16 @@ const structures = [
         block: {
             normal: 'immersiveengineering:heavy_engineering',
             expert: 'immersiveengineering:light_engineering'
+        }
+    },
+    {
+        mod: 'immersiveengineering',
+        type: 'multiblocks',
+        name: 'metal_press',
+        index: 1,
+        block: {
+            normal: 'immersiveengineering:steel_scaffolding_standard',
+            expert: 'pneumaticcraft:compressed_brick_tile'
         }
     },
     {

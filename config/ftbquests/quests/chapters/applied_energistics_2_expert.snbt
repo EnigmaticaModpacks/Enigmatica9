@@ -693,6 +693,8 @@
 				"Two such structures are required for the multiblock to function, and a pair of Quantum Entangled Singularities must be placed into each end. The remote side will also need to be provided with power to jumpstart it."
 				""
 				"Once built, the two sides of the network are seen as the same. Be sure to chunk load both sides, however."
+				""
+				"{\"text\":\"AE2 Wiki: Quantum Bridge\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/quantum-bridge\"}}"
 			]
 			icon: "ae2:quantum_entangled_singularity"
 			id: "03662FB8C114E255"

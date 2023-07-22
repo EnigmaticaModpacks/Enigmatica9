@@ -26,12 +26,12 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}treated_wood_horizontal`
         },
         {
-            item_output: { item: 'kubejs:calcined_kaolin_pearls' },
+            item_output: { item: 'kubejs:calcined_kaolin_pearl' },
             item_input: [{ item: 'kubejs:kaolin_clay' }],
             exothermic: false,
             temperature: { max_temp: 1123, min_temp: 923 },
             speed: 2.0,
-            id: `${id_prefix}calcined_kaolin_pearls`
+            id: `${id_prefix}calcined_kaolin_pearl`
         },
         {
             item_output: { item: 'emendatusenigmatica:aluminum_dirty_dust' },
@@ -71,6 +71,7 @@ ServerEvents.recipes((event) => {
             fluid_input: { type: 'pneumaticcraft:fluid', amount: 4000, tag: 'forge:source' },
             fluid_output: { amount: 4000, fluid: 'industrialforegoing:biofuel' },
             item_input: [{ item: 'kubejs:saturated_magebloom_filter' }],
+            item_output: { item: 'immersiveengineering:stick_treated', count: 3 },
             exothermic: false,
             temperature: { min_temp: 1273 },
             pressure: 7.0,

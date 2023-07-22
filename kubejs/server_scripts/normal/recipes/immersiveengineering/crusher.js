@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'immersiveengineering:crusher';
-        recipe.input = Ingredient.of(recipe.input).toJson();
+        recipe.input = recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input };
         recipe.result = Item.of(recipe.output).toJson();
         event.custom(recipe).id(recipe.id);
     });

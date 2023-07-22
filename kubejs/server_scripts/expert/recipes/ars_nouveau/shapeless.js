@@ -56,6 +56,11 @@ ServerEvents.recipes((event) => {
                 '#forge:dusts/moon_dust'
             ],
             id: 'ars_nouveau:ritual_flight'
+        },
+        {
+            output: '2x ars_nouveau:end_fiber',
+            inputs: ['ars_nouveau:magebloom_fiber', 'ars_nouveau:magebloom_fiber', '#forge:dusts/end_stone'],
+            id: 'ars_nouveau:end_fiber'
         }
     ];
 

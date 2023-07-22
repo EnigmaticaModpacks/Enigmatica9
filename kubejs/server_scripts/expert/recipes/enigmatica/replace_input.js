@@ -179,7 +179,7 @@ ServerEvents.recipes((event) => {
         {
             filter: { output: 'apotheosis:simple_reforging_table' },
             to_replace: '#forge:ingots/iron',
-            replace_with: '#forge:ingots/steel'
+            replace_with: '#forge:ingots/brass'
         },
         {
             filter: { mod: 'simplytools' },

@@ -957,19 +957,18 @@
 					type: "item"
 				}
 				{
-					count: 122L
+					count: 123L
 					id: "00000000000007B3"
-					item: "mekanismgenerators:reactor_glass"
+					item: "mekanism:structural_glass"
 					type: "item"
 				}
 				{
-					count: 4L
+					count: 3L
 					id: "00000000000007B4"
 					item: "mekanism:sps_port"
 					type: "item"
 				}
 				{
-					count: 2L
 					id: "00000000000007B5"
 					item: "mekanism:supercharged_coil"
 					type: "item"

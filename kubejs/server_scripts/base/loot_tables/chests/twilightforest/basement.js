@@ -18,6 +18,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('hexerei:sage_seed', 1, [2, 5]);
             pool.addItem('minecraft:arrow', 1, [1, 12]);
             pool.addItem('twilightforest:firefly', 1, [1, 12]);
+            pool.addItem('minecraft:flint_and_steel', 1, 1);
         });
 
         table.addPool((pool) => {

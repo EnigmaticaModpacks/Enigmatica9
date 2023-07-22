@@ -5,10 +5,10 @@ ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:expert/powah/energizing/';
     const recipes = [
         {
-            output: '3x powah:steel_energized',
+            output: '3x emendatusenigmatica:brass_ingot',
             inputs: ['#forge:dusts/aluminum', '#forge:dusts/aluminum', '#forge:dusts/copper', '#forge:essences/earth'],
             energy: '100000',
-            id: `${id_prefix}steel_energized`
+            id: `${id_prefix}brass_ingot`
         },
         {
             output: '2x powah:crystal_niotic',

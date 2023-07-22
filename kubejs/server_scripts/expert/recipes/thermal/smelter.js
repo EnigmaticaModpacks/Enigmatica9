@@ -264,6 +264,176 @@ ServerEvents.recipes((event) => {
             result: [{ item: `create:crushing_wheel`, count: 2 }],
             energy: 16000,
             id: `${id_prefix}crushing_wheel`
+        },
+        {
+            result: [{ item: 'pneumaticcraft:volume_upgrade', count: 1 }],
+            ingredients: [
+                { item: 'pneumaticcraft:upgrade_matrix' },
+                { item: 'pneumaticcraft:pressure_chamber_wall' },
+                { tag: 'forge:essences/air', count: 2 }
+            ],
+            energy: 8000,
+            id: `${id_prefix}volume_upgrade`
+        },
+        {
+            result: [{ item: 'pneumaticcraft:range_upgrade', count: 1 }],
+            ingredients: [
+                { item: 'pneumaticcraft:upgrade_matrix' },
+                { tag: 'forge:gems/source' },
+                { tag: 'forge:essences/manipulation', count: 2 }
+            ],
+            energy: 8000,
+            id: `${id_prefix}range_upgrade`
+        },
+        {
+            result: [{ item: 'pneumaticcraft:security_upgrade', count: 1 }],
+            ingredients: [
+                { item: 'pneumaticcraft:upgrade_matrix' },
+                { item: 'pneumaticcraft:pressure_gauge' },
+                { tag: 'forge:essences/abjuration', count: 2 }
+            ],
+            energy: 8000,
+            id: `${id_prefix}security_upgrade`
+        },
+        {
+            result: [{ item: 'pneumaticcraft:speed_upgrade', count: 1 }],
+            ingredients: [
+                { item: 'pneumaticcraft:upgrade_matrix' },
+                { tag: 'forge:gems/fluix' },
+                { tag: 'forge:essences/water', count: 2 }
+            ],
+            energy: 8000,
+            id: `${id_prefix}speed_upgrade`
+        },
+        {
+            result: [{ item: 'pneumaticcraft:item_life_upgrade', count: 1 }],
+            ingredients: [
+                { item: 'pneumaticcraft:upgrade_matrix' },
+                { item: 'ars_nouveau:mendosteen_pod' },
+                { tag: 'forge:essences/abjuration', count: 2 }
+            ],
+            energy: 8000,
+            id: `${id_prefix}item_life_upgrade`
+        },
+        {
+            result: [{ item: 'pneumaticcraft:entity_tracker_upgrade', count: 1 }],
+            ingredients: [
+                { item: 'pneumaticcraft:upgrade_matrix' },
+                { item: 'ae2:charged_certus_quartz_crystal' },
+                { tag: 'forge:essences/air', count: 2 }
+            ],
+            energy: 8000,
+            id: `${id_prefix}entity_tracker_upgrade`
+        },
+        {
+            result: [{ item: 'pneumaticcraft:block_tracker_upgrade', count: 1 }],
+            ingredients: [
+                { item: 'pneumaticcraft:upgrade_matrix' },
+                { item: 'ae2:charged_certus_quartz_crystal' },
+                { tag: 'forge:essences/earth', count: 2 }
+            ],
+            energy: 8000,
+            id: `${id_prefix}block_tracker_upgrade`
+        },
+        {
+            result: [{ item: 'pneumaticcraft:dispenser_upgrade', count: 1 }],
+            ingredients: [
+                { item: 'pneumaticcraft:upgrade_matrix' },
+                { item: 'ae2:certus_quartz_crystal' },
+                { tag: 'forge:essences/manipulation', count: 2 }
+            ],
+            energy: 8000,
+            id: `${id_prefix}dispenser_upgrade`
+        },
+        {
+            result: [{ item: 'pneumaticcraft:magnet_upgrade', count: 1 }],
+            ingredients: [
+                { item: 'pneumaticcraft:upgrade_matrix' },
+                { item: 'minecraft:lodestone' },
+                { tag: 'forge:essences/manipulation', count: 2 }
+            ],
+            energy: 8000,
+            id: `${id_prefix}magnet_upgrade`
+        },
+        {
+            result: [{ item: 'pneumaticcraft:minigun_upgrade', count: 1 }],
+            ingredients: [
+                { item: 'pneumaticcraft:upgrade_matrix' },
+                { item: 'pneumaticcraft:minigun' },
+                { tag: 'forge:essences/fire', count: 2 }
+            ],
+            energy: 8000,
+            id: `${id_prefix}minigun_upgrade`
+        },
+        {
+            result: [{ item: 'pneumaticcraft:inventory_upgrade', count: 4 }],
+            ingredients: [
+                { item: 'pneumaticcraft:upgrade_matrix' },
+                { item: 'thermal:satchel' },
+                { tag: 'forge:essences/abjuration', count: 2 }
+            ],
+            energy: 8000,
+            id: `${id_prefix}inventory_upgrade`
+        },
+        {
+            result: [{ item: 'pneumaticcraft:standby_upgrade', count: 1 }],
+            ingredients: [
+                { item: 'pneumaticcraft:upgrade_matrix' },
+                { tag: 'comforts:sleeping_bags' },
+                { tag: 'forge:essences/abjuration', count: 2 }
+            ],
+            energy: 8000,
+            id: `${id_prefix}standby_upgrade`
+        },
+        {
+            result: [{ item: 'pneumaticcraft:charging_upgrade', count: 1 }],
+            ingredients: [
+                { item: 'pneumaticcraft:upgrade_matrix' },
+                { item: 'pneumaticcraft:charging_module' },
+                { tag: 'forge:essences/air', count: 2 }
+            ],
+            energy: 8000,
+            id: `${id_prefix}charging_upgrade`
+        },
+        {
+            result: [{ item: 'pneumaticcraft:stomp_upgrade', count: 1 }],
+            ingredients: [
+                { item: 'pneumaticcraft:upgrade_matrix' },
+                { tag: 'forge:storage_blocks/lead' },
+                { tag: 'forge:essences/earth', count: 2 }
+            ],
+            energy: 8000,
+            id: `${id_prefix}stomp_upgrade`
+        },
+        {
+            result: [{ item: 'pneumaticcraft:flippers_upgrade', count: 1 }],
+            ingredients: [
+                { item: 'pneumaticcraft:upgrade_matrix' },
+                { item: 'thermal:diving_boots' },
+                { tag: 'forge:essences/water', count: 2 }
+            ],
+            energy: 8000,
+            id: `${id_prefix}flippers_upgrade`
+        },
+        {
+            result: [{ item: 'pneumaticcraft:scuba_upgrade', count: 1 }],
+            ingredients: [
+                { item: 'pneumaticcraft:upgrade_matrix' },
+                { item: 'thermal:diving_helmet' },
+                { tag: 'forge:essences/water', count: 2 }
+            ],
+            energy: 8000,
+            id: `${id_prefix}scuba_upgrade`
+        },
+        {
+            result: [{ item: 'pneumaticcraft:coordinate_tracker_upgrade', count: 1 }],
+            ingredients: [
+                { item: 'pneumaticcraft:upgrade_matrix' },
+                { item: 'ars_nouveau:ritual_scrying' },
+                { tag: 'forge:essences/manipulation', count: 2 }
+            ],
+            energy: 8000,
+            id: `${id_prefix}coordinate_tracker_upgrade`
         }
     ];
 

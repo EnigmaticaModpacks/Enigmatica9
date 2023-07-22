@@ -40,12 +40,13 @@ jei.base.items.disabled = [
     /emendatusenigmatica:.*_cluster_shard\b/,
 
     /pendorite/,
-    /emeraldite/,
     /ametrine/,
 
     /theoneprobe/,
 
     /create:crushed_raw_.*/,
+
+    'byg:emeraldite_shards',
 
     'createaddition:copper_spool',
     'createaddition:spool',
@@ -261,6 +262,11 @@ jei.expert.items.disabled = [
     'ae2:engineering_processor_press',
     'ae2:calculation_processor_press',
 
+    'ars_elemental:lesser_fire_focus',
+    'ars_elemental:lesser_water_focus',
+    'ars_elemental:lesser_air_focus',
+    'ars_elemental:lesser_earth_focus',
+
     'ars_nouveau:agronomic_sourcelink',
     'ars_nouveau:mycelial_sourcelink',
     'ars_nouveau:vitalic_sourcelink',
@@ -276,12 +282,24 @@ jei.expert.items.disabled = [
     'create:precision_mechanism',
     'create:electron_tube',
     'create:mechanical_crafter',
+    'create:experience_nugget',
+    'create:andesite_alloy_block',
 
     'createaddition:alternator',
     'createaddition:modular_accumulator',
     'createaddition:capacitor',
     'createaddition:portable_energy_interface',
     'createaddition:digital_adapter',
+
+    'emendatusenigmatica:refined_glowstone_nugget',
+    'emendatusenigmatica:refined_glowstone_ingot',
+    'emendatusenigmatica:refined_glowstone_block',
+    'emendatusenigmatica:refined_obsidian_dust',
+    'emendatusenigmatica:refined_obsidian_nugget',
+    'emendatusenigmatica:refined_obsidian_ingot',
+    'emendatusenigmatica:refined_obsidian_block',
+    'emendatusenigmatica:andesite_block',
+    'emendatusenigmatica:andesite_ingot',
 
     'immersiveengineering:capacitor_hv',
     'immersiveengineering:capacitor_lv',
@@ -380,6 +398,9 @@ jei.expert.items.disabled = [
     /mekanism:.*_control_circuit/,
     /mekanism:hazmat/,
     /mekanism:scuba/,
+    'mekanism:pellet_plutonium',
+    'mekanism:alloy_atomic',
+    'mekanism:alloy_infused',
     'mekanism:upgrade_stone_generator',
     'mekanism:upgrade_filter',
     'mekanism:logistical_sorter',
@@ -449,7 +470,6 @@ jei.expert.items.disabled = [
     'mekanism:module_radiation_shielding_unit',
     'mekanism:module_geiger_unit',
     'mekanism:module_dosimeter_unit',
-    'mekanism:module_inhalation_purification_unit',
     'mekanism:electrolytic_core',
     'mekanism:pigment_extractor',
     'mekanism:pigment_mixer',
@@ -593,13 +613,61 @@ jei.expert.items.disabled = [
     'rftoolsbase:information_screen',
     'rftoolsbase:crafting_card',
 
+    'sophisticatedbackpacks:advanced_feeding_upgrade',
+    'sophisticatedbackpacks:feeding_upgrade',
+    'sophisticatedbackpacks:advanced_pump_upgrade',
+    'sophisticatedbackpacks:pump_upgrade',
+    'sophisticatedbackpacks:xp_pump_upgrade',
+    'sophisticatedbackpacks:tank_upgrade',
+    'sophisticatedbackpacks:advanced_tool_swapper_upgrade',
+    'sophisticatedbackpacks:tool_swapper_upgrade',
+    'sophisticatedbackpacks:auto_blasting_upgrade',
+    'sophisticatedbackpacks:blasting_upgrade',
+    'sophisticatedbackpacks:auto_smelting_upgrade',
+    'sophisticatedbackpacks:smelting_upgrade',
+    'sophisticatedbackpacks:auto_smoking_upgrade',
+    'sophisticatedbackpacks:smoking_upgrade',
     'sophisticatedbackpacks:battery_upgrade',
-    'sophisticatedstorage:gold_to_netherite_tier_upgrade',
-    'sophisticatedstorage:iron_to_netherite_tier_upgrade',
-    'sophisticatedstorage:iron_to_diamond_tier_upgrade',
-    'sophisticatedstorage:basic_to_netherite_tier_upgrade',
-    'sophisticatedstorage:basic_to_diamond_tier_upgrade',
+
+    'sophisticatedstorage:advanced_feeding_upgrade',
+    'sophisticatedstorage:feeding_upgrade',
+    'sophisticatedstorage:advanced_pump_upgrade',
+    'sophisticatedstorage:pump_upgrade',
+    'sophisticatedstorage:xp_pump_upgrade',
+    'sophisticatedstorage:auto_blasting_upgrade',
+    'sophisticatedstorage:blasting_upgrade',
+    'sophisticatedstorage:auto_smelting_upgrade',
+    'sophisticatedstorage:smelting_upgrade',
+    'sophisticatedstorage:auto_smoking_upgrade',
+    'sophisticatedstorage:smoking_upgrade',
+    'sophisticatedstorage:crafting_upgrade',
+    'sophisticatedstorage:limited_barrel_1',
+    'sophisticatedstorage:limited_barrel_2',
+    'sophisticatedstorage:limited_barrel_3',
+    'sophisticatedstorage:limited_barrel_4',
+    'sophisticatedstorage:limited_diamond_barrel_1',
+    'sophisticatedstorage:limited_diamond_barrel_2',
+    'sophisticatedstorage:limited_diamond_barrel_3',
+    'sophisticatedstorage:limited_diamond_barrel_4',
+    'sophisticatedstorage:limited_gold_barrel_1',
+    'sophisticatedstorage:limited_gold_barrel_2',
+    'sophisticatedstorage:limited_gold_barrel_3',
+    'sophisticatedstorage:limited_gold_barrel_4',
+    'sophisticatedstorage:limited_iron_barrel_1',
+    'sophisticatedstorage:limited_iron_barrel_2',
+    'sophisticatedstorage:limited_iron_barrel_3',
+    'sophisticatedstorage:limited_iron_barrel_4',
+    'sophisticatedstorage:limited_netherite_barrel_1',
+    'sophisticatedstorage:limited_netherite_barrel_2',
+    'sophisticatedstorage:limited_netherite_barrel_3',
+    'sophisticatedstorage:limited_netherite_barrel_4',
+
     'sophisticatedstorage:basic_to_gold_tier_upgrade',
+    'sophisticatedstorage:basic_to_diamond_tier_upgrade',
+    'sophisticatedstorage:basic_to_netherite_tier_upgrade',
+    'sophisticatedstorage:iron_to_diamond_tier_upgrade',
+    'sophisticatedstorage:iron_to_netherite_tier_upgrade',
+    'sophisticatedstorage:gold_to_netherite_tier_upgrade',
 
     'superiorshields:copper_shield',
     'superiorshields:diamond_shield',
@@ -685,6 +753,7 @@ jei.expert.recipes.hidden = [
             'naturesaura:depth_ingot_creation',
             'naturesaura:projectile_generator',
             'naturesaura:firework_generator',
+            'naturesaura:gold_powder',
             'ars_nouveau:imbuement_chamber',
             'ars_nouveau:mycelial_sourcelink',
             'ars_nouveau:vitalic_sourcelink',
@@ -698,7 +767,11 @@ jei.expert.recipes.hidden = [
     },
     {
         category: 'naturesaura:altar',
-        recipes_by_id: ['naturesaura:altar/infused_stone', 'naturesaura:altar/tainted_gold']
+        recipes_by_id: [
+            'naturesaura:altar/infused_stone',
+            'naturesaura:altar/tainted_gold',
+            'naturesaura:altar/gold_powder'
+        ]
     },
     {
         category: 'naturesaura:tree_ritual',
@@ -749,7 +822,13 @@ jei.expert.recipes.hidden = [
     },
     {
         category: 'ars_nouveau:imbuement',
-        recipes_by_id: ['ars_nouveau:imbuement_lapis']
+        recipes_by_id: [
+            'ars_nouveau:imbuement_lapis',
+            'ars_elemental:imbuement_lesser_fire_focus',
+            'ars_elemental:imbuement_lesser_water_focus',
+            'ars_elemental:imbuement_lesser_earth_focus',
+            'ars_elemental:imbuement_lesser_air_focus'
+        ]
     },
     {
         category: 'ars_nouveau:enchanting_apparatus',
@@ -766,7 +845,14 @@ jei.expert.recipes.hidden = [
             'ars_nouveau:alchemists_crown',
             'ars_nouveau:dominion_wand',
             'ars_nouveau:storage_lectern',
-            'ars_elemental:everfull_urn'
+            'ars_elemental:everfull_urn',
+            'ars_elemental:fire_focus',
+            'ars_elemental:water_focus',
+            'ars_elemental:earth_focus',
+            'ars_elemental:air_focus',
+            'ars_elemental:necrotic_focus',
+            'ars_nouveau:summon_focus',
+            'ars_nouveau:shapers_focus'
         ]
     }
 ];
