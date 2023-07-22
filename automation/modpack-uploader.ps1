@@ -25,14 +25,21 @@ function Switch-DefaultModeTo {
         [Parameter(Position = 0)]
         [string]$mode
     )
-    $defaultModeFilePath = "config/configswapper.json"
 
-    # Force the mode.json to be in expert mode for publishing
+    $defaultModeFilePath = "$INSTANCE_ROOT/config/configswapper.json"
+
+    # # Force the mode.json to be in the mode we're publishing
     $defaultModeJson = Get-Content -Raw -Path $defaultModeFilePath | ConvertFrom-Json
     if ($defaultModeJson.defaultmode -ne $mode) {
         $defaultModeJson.defaultmode = $mode
         $defaultModeJson | ConvertTo-Json | Set-Content $defaultModeFilePath
     }
+
+    # Copy over Emendatus Enigmatica files to ensure they're present on first launch
+    $configswapperEmendatusEnigmaticaFolder = "$INSTANCE_ROOT/config/configswapper/$mode/config/emendatusenigmatica"
+    $emendatusEnigmaticaConfigFolder = "$INSTANCE_ROOT/config"
+
+    Copy-Item -Path $configswapperEmendatusEnigmaticaFolder -Destination $emendatusEnigmaticaConfigFolder -Force -Recurse
 }
 
 function Get-GitHubRelease {
