@@ -1,8 +1,14 @@
 ### Enigmatica 9 v1.9.0
 
-🚀 Forge-1.19.2-43.2.13 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.8.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.8.0.md)
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.9.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.9.0.md)
 
 ### 🎁 New Mods Added
+
+-   [ConnectedTexturesMod](https://www.curseforge.com/minecraft/mc-mods/ctm) (by [tterrag1098](https://www.curseforge.com/members/tterrag1098/projects))
+-   [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat) (by [FTB](https://www.curseforge.com/members/FTB/projects))
+-   [Resourceful Lib](https://www.curseforge.com/minecraft/mc-mods/resourceful-lib) (by [ThatGravyBoat](https://www.curseforge.com/members/ThatGravyBoat/projects))
+-   [Simple Discord RPC [Forge/Fabric/Quilt]](https://www.curseforge.com/minecraft/mc-mods/simple-discord-rpc) (by [hypherionsa](https://www.curseforge.com/members/hypherionsa/projects))
+-   [Too Fast](https://www.curseforge.com/minecraft/mc-mods/too-fast) (by [Noobanidus](https://www.curseforge.com/members/Noobanidus/projects))
 
 ### 🌟 Improvements
 
@@ -36,6 +42,11 @@
 -   Enchanters Shield now accepts any source gem. [\#522](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/522) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Occultism Machine Operator quest is now completable. [\#523](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/523) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Drygmies can no longer loot Redcap goblins due to an interaction with Apotheosis. [\#526](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/526) ([MuteTiefling](https://github.com/MuteTiefling))
+
+### Removed Mods
+
+-   [PerViamInvenire](https://www.curseforge.com/minecraft/mc-mods/perviaminvenire) (by [OrionOnline](https://www.curseforge.com/members/OrionOnline/projects))
+-   [Simple Discord Rich Presence (Forge / Fabric)](https://www.curseforge.com/minecraft/mc-mods/simple-discord-rich-presence) (by [Sunekaer](https://www.curseforge.com/members/Sunekaer/projects))
 
 ---
 

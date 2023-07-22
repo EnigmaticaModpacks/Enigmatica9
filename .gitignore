@@ -42,6 +42,8 @@ screenshots/
 !packmenu/*.zip
 !server_files/**
 !server_files/server-guide.txt
+!server_files_expert/**
+!server_files_expert/server-guide.txt
 .curseclient
 .github_changelog_generator
 .ReAuth.cfg
@@ -83,7 +85,6 @@ remove-client-mods.bat
 remove-client-mods.ps1
 secrets.ps1
 server-install.sh
-server-setup-config.yaml
 server.properties
 servers.dat
 servers.dat_old
@@ -91,8 +92,6 @@ settings.cfg
 soundsMuffled.dat
 start-automated-server.bat
 start-automated-server.sh
-start-server.bat
-start-server.sh
 stop-java-detection.txt
 TrashSlotSaveState.json
 TwitchExportBuilder.exe
@@ -125,12 +124,14 @@ config/darkmodeeverywhere-client.toml
 config/darkmodeeverywhereshaders.json
 config/eidolon-client.toml
 config/emojiful-client.toml
+config/enigmaticgraves-common.toml
 config/entity_culling-client.toml
 config/explorerscompass-client.toml
 config/extremesoundmuffler-client.toml
 config/farmersdelight-client.toml
 config/findme-client.toml
 config/framedblocks-client.toml
+config/ftbbackups2.json
 config/ftbchunks-client.toml
 config/gravestone-client.toml
 config/immersiveengineering-client.toml
