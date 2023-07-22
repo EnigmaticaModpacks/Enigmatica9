@@ -18,6 +18,7 @@
 -   Add many items to Mekanism's Painting system [\#494](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/494) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Apotheosis bosses largely reverted to new defaults. Remaining bosses brought more in line with the new balancing. [\#495](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/495) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Apotheosis gems that were previously modified have been rebalanced to closer match the new defaults. [\#496](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/496) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Source Gem Blocks may now be stonecut between types. [\#519](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/519) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
@@ -32,6 +33,8 @@
 -   Expert Armor Sets no longer affect Normal mode. [\#505](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/505) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Inhalation Purification no longer removes certain effects that aren't meant to be removed. [\#505](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/505) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix IE Mineral Deposits. [\#506](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/506) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Enchanters Shield now accepts any source gem. [\#522](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/522) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Occultism Machine Operator quest is now completable. [\#523](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/523) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
