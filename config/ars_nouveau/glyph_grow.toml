@@ -6,7 +6,7 @@
 	augment_limits = []
 	#Cost
 	#Range: > -2147483648
-	cost = 10
+	cost = 70
 	#The maximum number of times this glyph may appear in a single spell
 	#Range: > 1
 	per_spell_limit = 2147483647
@@ -14,7 +14,7 @@
 	starter = false
 	#The tier of the glyph
 	#Range: 1 ~ 99
-	glyph_tier = 1
+	glyph_tier = 2
 	#Is Enabled?
 	enabled = true
 
