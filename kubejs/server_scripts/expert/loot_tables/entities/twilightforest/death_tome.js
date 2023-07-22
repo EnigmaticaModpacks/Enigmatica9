@@ -36,6 +36,7 @@ ServerEvents.entityLootTables((event) => {
             pool.addItem('ars_nouveau:glyph_interact', 2);
             pool.addItem('ars_nouveau:glyph_launch', 2);
             pool.addItem('ars_nouveau:glyph_leap', 2);
+            pool.addItem('ars_nouveau:glyph_light', 2);
             pool.addItem('ars_nouveau:glyph_phantom_block', 2);
             pool.addItem('ars_nouveau:glyph_pickup', 2);
             pool.addItem('ars_nouveau:glyph_place_block', 2);
