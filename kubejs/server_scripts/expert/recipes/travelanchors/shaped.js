@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
             output: 'travelanchors:travel_staff',
             pattern: [' BC', ' A ', 'A  '],
             key: {
-                A: '#forge:rods/aluminum',
+                A: '#forge:rods/lead',
                 B: 'ars_nouveau:ritual_warping',
                 C: '#forge:gems/emerald'
             },
