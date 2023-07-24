@@ -167,7 +167,7 @@ ServerEvents.recipes((event) => {
             block_in: 'ae2:quartz_block',
             post: [
                 { type: 'prevent_default' },
-                { type: 'place', block: 'ae2:damaged_budding_quartz' },
+                { type: 'place', block: 'ae2:flawless_budding_quartz' },
                 { type: 'damage_item', damage: 200 },
                 { type: 'add_item_cooldown', s: 2 },
                 {
@@ -176,14 +176,14 @@ ServerEvents.recipes((event) => {
                     hide: true
                 }
             ],
-            id: `${id_prefix}infused_iron_pickaxe_conversions/damaged_budding_quartz`
+            id: `${id_prefix}infused_iron_pickaxe_conversions/flawless_budding_quartz_from_quartz_block`
         },
         {
             item_in: { item: 'naturesaura:infused_iron_pickaxe' },
             block_in: 'ae2:damaged_budding_quartz',
             post: [
                 { type: 'prevent_default' },
-                { type: 'place', block: 'ae2:chipped_budding_quartz' },
+                { type: 'place', block: 'ae2:flawless_budding_quartz' },
                 { type: 'damage_item', damage: 200 },
                 { type: 'add_item_cooldown', s: 2 },
                 {
@@ -192,14 +192,14 @@ ServerEvents.recipes((event) => {
                     hide: true
                 }
             ],
-            id: `${id_prefix}infused_iron_pickaxe_conversions/chipped_budding_quartz`
+            id: `${id_prefix}infused_iron_pickaxe_conversions/flawless_budding_quartz_from_damaged_budding_quartz`
         },
         {
             item_in: { item: 'naturesaura:infused_iron_pickaxe' },
             block_in: 'ae2:chipped_budding_quartz',
             post: [
                 { type: 'prevent_default' },
-                { type: 'place', block: 'ae2:flawed_budding_quartz' },
+                { type: 'place', block: 'ae2:flawless_budding_quartz' },
                 { type: 'damage_item', damage: 200 },
                 { type: 'add_item_cooldown', s: 2 },
                 {
@@ -208,7 +208,7 @@ ServerEvents.recipes((event) => {
                     hide: true
                 }
             ],
-            id: `${id_prefix}infused_iron_pickaxe_conversions/flawed_budding_quartz`
+            id: `${id_prefix}infused_iron_pickaxe_conversions/flawless_budding_quartz_from_chipped_budding_quartz`
         },
         {
             item_in: { item: 'naturesaura:infused_iron_pickaxe' },
@@ -224,7 +224,7 @@ ServerEvents.recipes((event) => {
                     hide: true
                 }
             ],
-            id: `${id_prefix}infused_iron_pickaxe_conversions/flawless_budding_quartz`
+            id: `${id_prefix}infused_iron_pickaxe_conversions/flawless_budding_quartz_from_flawed_budding_quartz`
         },
         {
             item_in: { item: 'naturesaura:infused_iron_pickaxe' },
