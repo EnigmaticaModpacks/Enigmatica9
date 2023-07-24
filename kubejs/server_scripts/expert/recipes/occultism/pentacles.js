@@ -66,11 +66,11 @@ ServerEvents.highPriorityData((event) => {
                     '___C_WGC___',
                     '__P_WG__P__',
                     '_P_WG____P_',
-                    '___WG_WWW__',
+                    'C__WG_WWW_C',
                     'G__WPWPGGW_',
                     'WG__W0W__GW',
                     '_WGGPWPW__G',
-                    '__WWW_GW___',
+                    'C_WWW_GW__C',
                     '_P____GW_P_',
                     '__P__GW_P__',
                     '___CGW_C___'
