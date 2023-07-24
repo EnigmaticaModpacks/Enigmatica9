@@ -27,7 +27,7 @@ ServerEvents.genericLootTables((event) => {
             pool.rolls = [1, 2];
             pool.addItem('minecraft:cobweb', 75, [1, 6]);
             pool.addItem('minecraft:apple', 75, [1, 6]);
-            pool.addItem('minecraft:shears', 75, 1);
+            pool.addItem(Item.of('minecraft:shears').enchant('naturesaura:aura_mending', 1), 75, 1);
             pool.addItem('minecraft:bow', 75, 1);
             pool.addItem('minecraft:crossbow', 75, 1);
             pool.addItem('minecraft:golden_apple', 25, 1);

@@ -159,7 +159,7 @@ ServerEvents.recipes((event) => {
             id: 'minecraft:shield'
         },
         {
-            output: 'minecraft:shears',
+            output: Item.of('minecraft:shears').enchant('naturesaura:aura_mending', 1),
             pattern: ['AB', 'BA'],
             key: {
                 A: '#forge:rods/ancient',
