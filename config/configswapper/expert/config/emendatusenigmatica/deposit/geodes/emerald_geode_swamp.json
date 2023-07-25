@@ -11,24 +11,24 @@
     "registryName": "emerald_geode_swamp",
     "config": {
         "outerShellBlocks": [
-            {"block": "create:cut_dripstone", "weight": 85},
-            {"block": "minecraft:dripstone_block", "weight": 15},
-            {"block": "minecraft:obsidian", "weight": 100}
+            { "block": "create:cut_dripstone", "weight": 85 },
+            { "block": "minecraft:dripstone_block", "weight": 15 },
+            { "block": "minecraft:obsidian", "weight": 100 }
         ],
         "innerShellBlocks": [
-            {"block": "minecraft:dripstone_block", "weight": 70},
-            {"block": "create:cut_dripstone", "weight": 15},
-            {"block": "emendatusenigmatica:lapis_dripstone_ore", "weight": 15}
+            { "block": "minecraft:dripstone_block", "weight": 70 },
+            { "block": "create:cut_dripstone", "weight": 15 },
+            { "block": "emendatusenigmatica:lapis_dripstone_ore", "weight": 15 }
         ],
         "innerBlocks": [
-            {"block": "minecraft:dripstone_block", "weight": 70},
-            {"block": "emendatusenigmatica:lapis_dripstone_ore","weight": 20},
-            {"block": "emendatusenigmatica:emerald_dripstone_ore", "weight": 10}
+            { "block": "minecraft:dripstone_block", "weight": 70 },
+            { "block": "emendatusenigmatica:lapis_dripstone_ore", "weight": 20 },
+            { "block": "emendatusenigmatica:emerald_dripstone_ore", "weight": 10 }
         ],
         "fillBlocks": [
-            {"block": "minecraft:dripstone_block", "weight": 60},
-            {"block": "emendatusenigmatica:emerald_dripstone_ore", "weight": 25},
-            {"block": "emendatusenigmatica:diamond_dripstone_ore", "weight": 15}
+            { "block": "minecraft:dripstone_block", "weight": 60 },
+            { "block": "emendatusenigmatica:emerald_dripstone_ore", "weight": 25 },
+            { "block": "emendatusenigmatica:diamond_dripstone_ore", "weight": 15 }
         ],
         "clusters": [],
         "chance": 20,

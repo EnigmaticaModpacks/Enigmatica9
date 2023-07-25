@@ -5,6 +5,8 @@
 ### 🌟 Improvements
 
 -   Certus Quartz Blocks may now be converted straight to Flawless with the Nature's Aura pick. [\#531](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/531) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Crystal Cluster blocks may now be converted to Budding via Right Click Interaction. [\#534](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/534) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Cooldown for Right Click Interactions has been reduced. [\#534](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/534) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 

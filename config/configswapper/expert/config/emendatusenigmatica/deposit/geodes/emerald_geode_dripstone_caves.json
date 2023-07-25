@@ -1,35 +1,33 @@
 {
     "type": "emendatusenigmatica:geode_deposit",
     "dimension": "minecraft:overworld",
-    "biomes": [
-        "minecraft:dripstone_caves"
-    ],
+    "biomes": ["minecraft:dripstone_caves"],
     "registryName": "emerald_geode_caves",
     "config": {
         "outerShellBlocks": [
-            {"block": "create:cut_dripstone", "weight": 85},
-            {"block": "minecraft:dripstone_block", "weight": 15},
-            {"block": "minecraft:obsidian", "weight": 100}
+            { "block": "create:cut_dripstone", "weight": 85 },
+            { "block": "minecraft:dripstone_block", "weight": 15 },
+            { "block": "minecraft:obsidian", "weight": 100 }
         ],
         "innerShellBlocks": [
-            {"block": "minecraft:dripstone_block", "weight": 65},
-            {"block": "create:cut_dripstone", "weight": 15},
-            {"block": "emendatusenigmatica:lapis_dripstone_ore", "weight": 20}
+            { "block": "minecraft:dripstone_block", "weight": 65 },
+            { "block": "create:cut_dripstone", "weight": 15 },
+            { "block": "emendatusenigmatica:lapis_dripstone_ore", "weight": 20 }
         ],
         "innerBlocks": [
-            {"block": "minecraft:dripstone_block", "weight": 70},
-            {"block": "emendatusenigmatica:lapis_dripstone_ore","weight": 15},
-            {"block": "emendatusenigmatica:diamond_dripstone_ore", "weight": 15}
+            { "block": "minecraft:dripstone_block", "weight": 70 },
+            { "block": "emendatusenigmatica:lapis_dripstone_ore", "weight": 15 },
+            { "block": "emendatusenigmatica:diamond_dripstone_ore", "weight": 15 }
         ],
         "fillBlocks": [
-            {"block": "minecraft:dripstone_block", "weight": 55},
-            {"block": "emendatusenigmatica:emerald_dripstone_ore", "weight": 15},
-            {"block": "emendatusenigmatica:diamond_dripstone_ore", "weight": 30}
+            { "block": "minecraft:dripstone_block", "weight": 55 },
+            { "block": "emendatusenigmatica:emerald_dripstone_ore", "weight": 15 },
+            { "block": "emendatusenigmatica:diamond_dripstone_ore", "weight": 30 }
         ],
         "clusters": [],
         "chance": 20,
         "rarity": "rare",
-        "crackChance": 0.20,
+        "crackChance": 0.2,
         "minYLevel": -60,
         "maxYLevel": 70,
         "generateSamples": false,
