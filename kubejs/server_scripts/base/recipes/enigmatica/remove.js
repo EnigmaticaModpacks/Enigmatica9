@@ -81,6 +81,10 @@ ServerEvents.recipes((event) => {
 
         { id: /emendatusenigmatica:gear\/from_ingot_press/ },
 
+        { id: 'functionalstorage:oak_drawer_alternate_x1' },
+        { id: 'functionalstorage:oak_drawer_alternate_x2' },
+        { id: 'functionalstorage:oak_drawer_alternate_x4' },
+
         { id: 'hexerei:black_dye_from_pestle_and_mortar' },
         { id: 'hexerei:broom_netherite_tip_from_mixing_cauldron' },
 
