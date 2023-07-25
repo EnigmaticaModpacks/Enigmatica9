@@ -4,8 +4,6 @@ LootJS.modifiers((event) => {
     }
 
     event
-        .addLootTableModifier(/.*/)
-        .matchLoot('minecraft:shears')
-        .addLoot('minecraft:shears')
-        .addNBT({ Enchantments: [{ id: 'naturesaura:aura_mending', lvl: 1 }] });
+        .addLootTypeModifier(LootType.CHEST)
+        .modifyLoot('minecraft:shears', (itemStack) => Item.of(itemStack).enchant('naturesaura:aura_mending', 1));
 });
