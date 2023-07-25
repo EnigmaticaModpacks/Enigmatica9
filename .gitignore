@@ -172,6 +172,7 @@ config/supplementaries-client.toml
 config/tconstruct-client.toml
 config/theoneprobe-client.toml
 config/thermal-client.toml
+config/toolbelt-client.toml
 config/travel_anchors-client.toml
 config/twilightforest-client.toml
 config/upgrade_aquatic-client.toml
