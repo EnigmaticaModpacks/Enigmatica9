@@ -5,23 +5,20 @@
     "registryName": "fluorite_geode",
     "config": {
         "outerShellBlocks": [
-            {"block": "create:cut_asurine", "weight": 95},
-            {"block": "create:asurine", "weight": 5}
+            { "block": "create:cut_asurine", "weight": 95 },
+            { "block": "create:asurine", "weight": 5 }
         ],
         "innerShellBlocks": [
-            {"block": "create:asurine", "weight": 45},
-            {"block": "emendatusenigmatica:apatite_asurine_ore", "weight": 30},
-            {"block": "emendatusenigmatica:niter_asurine_ore", "weight": 25}
+            { "block": "create:asurine", "weight": 45 },
+            { "block": "emendatusenigmatica:apatite_asurine_ore", "weight": 30 },
+            { "block": "emendatusenigmatica:niter_asurine_ore", "weight": 25 }
         ],
         "innerBlocks": [
-            {"block": "emendatusenigmatica:fluorite_cluster_shard_block", "weight": 60},
-            {"block": "emendatusenigmatica:budding_fluorite", "weight": 40}
+            { "block": "emendatusenigmatica:fluorite_cluster_shard_block", "weight": 60 },
+            { "block": "emendatusenigmatica:budding_fluorite", "weight": 40 }
         ],
-        "clusters": [
-            "emendatusenigmatica:small_fluorite_bud",
-            "emendatusenigmatica:medium_fluorite_bud"
-        ],
-        "fillBlocks": [{"block": "minecraft:air", "weight": 10}],
+        "clusters": ["emendatusenigmatica:small_fluorite_bud", "emendatusenigmatica:medium_fluorite_bud"],
+        "fillBlocks": [{ "block": "minecraft:air", "weight": 10 }],
         "chance": 30,
         "rarity": "rare",
         "crackChance": 0.15,

@@ -16,20 +16,18 @@
     ],
     "registryName": "ocean_geode",
     "config": {
-        "outerShellBlocks": [
-            {"block": "quark:shale", "weight": 100}
-        ],
+        "outerShellBlocks": [{ "block": "quark:shale", "weight": 100 }],
         "innerShellBlocks": [
-            {"block": "quark:shale", "weight": 70},
-            {"block": "minecraft:prismarine", "weight": 15},
-            {"block": "emendatusenigmatica:gold_shale_ore", "weight": 15}
+            { "block": "quark:shale", "weight": 70 },
+            { "block": "minecraft:prismarine", "weight": 15 },
+            { "block": "emendatusenigmatica:gold_shale_ore", "weight": 15 }
         ],
         "innerBlocks": [
-            {"block": "minecraft:prismarine", "weight": 65},
-            {"block": "minecraft:prismarine_bricks", "weight": 25},
-            {"block": "minecraft:sea_lantern", "weight": 10}
+            { "block": "minecraft:prismarine", "weight": 65 },
+            { "block": "minecraft:prismarine_bricks", "weight": 25 },
+            { "block": "minecraft:sea_lantern", "weight": 10 }
         ],
-        "fillBlocks": [{"block": "minecraft:water", "weight": 10}],
+        "fillBlocks": [{ "block": "minecraft:water", "weight": 10 }],
         "clusters": [],
         "chance": 30,
         "rarity": "rare",
