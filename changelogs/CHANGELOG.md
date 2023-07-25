@@ -10,7 +10,7 @@
 
 ### 🐛 Fixed Bugs
 
--   Removed faulty drawer recipes [\#534](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/534) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Removed faulty drawer recipes [\#536](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/536) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### Removed Mods
 
