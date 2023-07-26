@@ -15,6 +15,24 @@ ServerEvents.recipes((event) => {
             result: [{ item: 'minecraft:melon_slice', count: 8 }],
             tool: { tag: 'forge:tools/knives' },
             id: `farmersdelight:cutting/melon`
+        },
+        {
+            ingredients: [{ item: 'byg:therium_crystal_block' }],
+            result: [{ item: 'byg:therium_crystal_shard', count: 4 }],
+            tool: {
+                type: 'farmersdelight:tool_action',
+                action: 'pickaxe_dig'
+            },
+            id: `${id_prefix}therium_crystal_shard`
+        },
+        {
+            ingredients: [{ item: 'byg:subzero_crystal_block' }],
+            result: [{ item: 'byg:subzero_crystal_shard', count: 4 }],
+            tool: {
+                type: 'farmersdelight:tool_action',
+                action: 'pickaxe_dig'
+            },
+            id: `${id_prefix}subzero_crystal_shard`
         }
     ];
 
