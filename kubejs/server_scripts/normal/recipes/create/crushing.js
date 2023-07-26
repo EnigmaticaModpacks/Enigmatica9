@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
 
     let recipes = [
         {
-            ingredients: [Ingredient.of(`#forge:ores/netherite`, 1)],
+            ingredients: [{ tag: `forge:ores/netherite`, count: 1 }],
             processingTime: 480,
             results: [
                 { item: 'mekanism:dirty_netherite_scrap' },
@@ -19,7 +19,6 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'create:crushing';
-        recipe.ingredients.map((ingredient) => ingredient.toJson());
         event.custom(recipe).id(recipe.id);
     });
 });
