@@ -82,7 +82,7 @@ ServerEvents.recipes((event) => {
             id: `powah:crafting/energy_cell_basic`
         },
         {
-            output: Item.of('powah:capacitor_basic_large', 2),
+            output: '2x powah:capacitor_basic_large',
             pattern: [' AB', 'ACA', 'BA '],
             key: {
                 A: '#forge:plates/invar',
@@ -92,7 +92,7 @@ ServerEvents.recipes((event) => {
             id: `powah:crafting/capacitor_basic_large`
         },
         {
-            output: Item.of('powah:energy_cable_basic', 12),
+            output: '12x powah:energy_cable_basic',
             pattern: ['AAA', 'BCB', 'AAA'],
             key: {
                 A: 'powah:dielectric_rod_horizontal',
@@ -152,6 +152,101 @@ ServerEvents.recipes((event) => {
                 C: 'powah:dielectric_casing'
             },
             id: `powah:crafting/reactor_basic`
+        },
+        {
+            output: '4x powah:capacitor_hardened',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'powah:dielectric_paste',
+                B: '#forge:ingots/energized_steel',
+                C: 'powah:capacitor_basic_large'
+            },
+            id: `powah:crafting/capacitor_hardened`
+        },
+        {
+            output: '4x powah:capacitor_blazing',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'powah:dielectric_paste',
+                B: '#forge:gems/blazing',
+                C: 'powah:capacitor_basic_large'
+            },
+            id: `powah:crafting/capacitor_blazing`
+        },
+        {
+            output: '4x powah:capacitor_niotic',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'powah:dielectric_paste',
+                B: '#forge:gems/niotic',
+                C: 'powah:capacitor_basic_large'
+            },
+            id: `powah:crafting/capacitor_niotic`
+        },
+        {
+            output: '4x powah:capacitor_spirited',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'powah:dielectric_paste',
+                B: '#forge:gems/spirited',
+                C: 'powah:capacitor_basic_large'
+            },
+            id: `powah:crafting/capacitor_spirited`
+        },
+        {
+            output: '4x powah:capacitor_nitro',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'powah:dielectric_paste',
+                B: '#forge:gems/nitro',
+                C: 'powah:capacitor_basic_large'
+            },
+            id: `powah:crafting/capacitor_nitro`
+        },
+        {
+            output: '8x powah:energy_cable_hardened',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'powah:energy_cable_basic',
+                B: 'powah:capacitor_hardened'
+            },
+            id: `${id_prefix}energy_cable_hardened`
+        },
+        {
+            output: '8x powah:energy_cable_blazing',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'powah:energy_cable_basic',
+                B: 'powah:capacitor_blazing'
+            },
+            id: `${id_prefix}energy_cable_blazing`
+        },
+        {
+            output: '8x powah:energy_cable_niotic',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'powah:energy_cable_basic',
+                B: 'powah:capacitor_niotic'
+            },
+            id: `${id_prefix}energy_cable_niotic`
+        },
+        {
+            output: '8x powah:energy_cable_spirited',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'powah:energy_cable_basic',
+                B: 'powah:capacitor_spirited'
+            },
+            id: `${id_prefix}energy_cable_spirited`
+        },
+        {
+            output: '8x powah:energy_cable_nitro',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'powah:energy_cable_basic',
+                B: 'powah:capacitor_nitro'
+            },
+            id: `${id_prefix}energy_cable_nitro`
         }
     ];
 
