@@ -35,6 +35,15 @@ ServerEvents.recipes((event) => {
                 A: '#forge:storage_blocks/therium'
             },
             id: 'byg:chiseled_therium'
+        },
+        {
+            output: '8x byg:chain_plating',
+            pattern: ['ABA', 'B B', 'ABA'],
+            key: {
+                A: '#forge:nuggets/iron',
+                B: '#forge:ingots/iron'
+            },
+            id: 'byg:chain_plating'
         }
     ];
 

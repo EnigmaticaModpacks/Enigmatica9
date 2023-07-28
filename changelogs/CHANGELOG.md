@@ -8,6 +8,9 @@
 -   Crystal Cluster blocks may now be converted to Budding via Right Click Interaction. [\#534](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/534) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Cooldown for Right Click Interactions has been reduced. [\#534](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/534) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Allow Therium and Subzero blocks to be broken down into the crystals. [\#538](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/538) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Shub Niggurath may now be summoned in the Twilight Forest. [\#548](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/548) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Whirlisprigs now love Fireflies and Cicadas to help give a boost to their environment. [\#548](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/548) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Chainmail is now cheaper to craft. [\#548](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/548) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
