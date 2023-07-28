@@ -18,6 +18,69 @@ ServerEvents.recipes((event) => {
             ],
             sourceCost: 9000,
             id: 'ars_nouveau:reactive_4'
+        },
+        {
+            enchantment: 'ars_nouveau:mana_regen',
+            level: 4,
+            pedestalItems: [
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { tag: 'forge:essences/abjuration' } },
+                { item: { tag: 'forge:essences/abjuration' } },
+                { item: { tag: 'forge:essences/abjuration' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/lapis' } }
+            ],
+            sourceCost: 9000,
+            id: 'ars_nouveau:mana_regen_4'
+        },
+        {
+            enchantment: 'ars_nouveau:mana_regen',
+            level: 5,
+            pedestalItems: [
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { tag: 'forge:essences/abjuration' } },
+                { item: { tag: 'forge:essences/abjuration' } },
+                { item: { tag: 'forge:essences/abjuration' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/lapis' } }
+            ],
+            sourceCost: 9000,
+            id: 'ars_nouveau:mana_regen_5'
+        },
+        {
+            enchantment: 'ars_nouveau:mana_regen',
+            level: 6,
+            pedestalItems: [
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { tag: 'forge:essences/abjuration' } },
+                { item: { tag: 'forge:essences/abjuration' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/lapis' } }
+            ],
+            sourceCost: 9000,
+            id: 'ars_nouveau:mana_regen_6'
+        },
+        {
+            enchantment: 'ars_nouveau:mana_regen',
+            level: 7,
+            pedestalItems: [
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { tag: 'forge:essences/abjuration' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/lapis' } }
+            ],
+            sourceCost: 9000,
+            id: 'ars_nouveau:mana_regen_7'
         }
     ];
 
