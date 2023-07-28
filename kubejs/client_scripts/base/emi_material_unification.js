@@ -97,6 +97,7 @@ ClientEvents.highPriorityAssets((event) => {
         filters: [
             `/immersiveengineering:(stick|dust|plate|ingot|nugget|raw|raw_block|storage|ore|deepslate_ore)_${regex_materials}/`,
             `/emendatusenigmatica:(iron|gold|copper|diamond|emerald|netherite|raw|)_(gold|copper|iron|ingot|nugget|block)/`,
+            `/emendatusenigmatica:${regex_materials}_air/`,
             `/create:(crushed_raw|andesite_alloy|golden_sheet|raw_zinc|deepslate_ore)/`,
             `/mekanism:(clump|dirty_dust|crystal|shard|sawdust|${regex_materials})/`,
             `/mekanism:(dust|ingot|nugget|raw|block_raw|block)_${regex_materials}/`,
@@ -126,11 +127,6 @@ ClientEvents.highPriorityAssets((event) => {
             `/thermal:raw/`,
             `/pendorite/`,
             `/ametrine/`
-
-
-
-
-            // Create, Natures Aura
         ],
         disable: true
     };

@@ -111,12 +111,18 @@
         "bamboo",
         "sugar_cane"
     ],
-    "priorityOverrides": {},
+    "priorityOverrides": {
+        "forge:ores/gold": "emendatusenigmatica",
+        "forge:ores/iron": "emendatusenigmatica",
+        "forge:ores/copper": "emendatusenigmatica",
+        "forge:ores/diamond": "emendatusenigmatica",
+        "forge:ores/emerald": "emendatusenigmatica"
+    },
     "tagOwnerships": {
-        "forge:gems/coal_coke": ["forge:coal_coke"],
+        "forge:storage_blocks/sky": ["forge:storage_blocks/skies"],
         "forge:dusts/wood": ["forge:sawdust"],
         "forge:dusts/niter": ["forge:dusts/saltpeter"],
-        "forge:storage_blocks/sky": ["forge:storage_blocks/skies"]
+        "forge:gems/coal_coke": ["forge:coal_coke"]
     },
     "ignoredTags": [],
     "ignoredItems": [],
