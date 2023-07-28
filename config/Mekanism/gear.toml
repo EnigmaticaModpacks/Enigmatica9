@@ -326,7 +326,7 @@
 		#Range: -4.0 ~ 100.0
 		attackSpeed = -2.4
 		#Maximum distance a player can teleport with the Meka-Tool.
-		#Range: 2 ~ 1024
+		#Range: 3 ~ 1024
 		maxTeleportReach = 100
 		#Base bonus damage applied by the Meka-Tool without using any energy.
 		#Range: 0 ~ 100000

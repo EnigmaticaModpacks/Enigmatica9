@@ -255,7 +255,7 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
+			x: 2.5d
 			y: -6.0d
 		}
 		{
@@ -919,6 +919,8 @@
 				"A Warp Scroll may be bound to a location via Right-Click and then used again later to return the player to that exact spot. The Scroll is consumed on use, however."
 				""
 				"Alternatively, a portal may be built using any type of Sourcestone in a rectangular shape.  Place a filled Source Jar nearby and toss a bound Warp Scroll through the frame to ignite it, linking it to the coordinates from the scroll. Items, mobs, even spells may pass through these portals, though they are incapable of crossing between dimensions. "
+				""
+				"Ghostweave, Mirrorweave, and Falseweave may all be used for portal frames as well, allowing for endless customization!"
 			]
 			hide_dependency_lines: true
 			id: "524A6B28242AA5B8"
@@ -1033,7 +1035,7 @@
 				type: "item"
 			}]
 			title: "Warp Portals"
-			x: 2.5d
+			x: 1.5d
 			y: -6.0d
 		}
 		{
@@ -2310,6 +2312,36 @@
 			}]
 			x: -2.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["524A6B28242AA5B8"]
+			description: [
+				"Much like standard Warp Scrolls, Stabilized Warp Scrolls may be used to great portals. They offer two advantages, however. "
+				""
+				"First, the scroll may be used to bind to coordinates in other dimensions, allowing cross-dimensional transportation."
+				""
+				"Second, it may be used on a block at any time to generate a temporary portal to the bound coordinates. This does not consume the scroll."
+			]
+			id: "613C01C04BF4A979"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "1F5953E382A8C9C2"
+				player_command: false
+				title: "Rare Ars Nouveau Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "5633FB2A086B9E68"
+				item: {
+					Count: 1b
+					id: "ars_nouveau:stable_warp_scroll"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.0d
 		}
 	]
 	title: "Ars Nouveau"

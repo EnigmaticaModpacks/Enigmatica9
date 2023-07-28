@@ -70,7 +70,7 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'create:sequenced_assembly';
-        recipe.ingredient = Ingredient.of(recipe.input).toJson();
+        recipe.ingredient = recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input };
         recipe.transitionalItem = Item.of(recipe.transitionalItem).toJson();
         event.custom(recipe).id(recipe.id);
     });

@@ -5,24 +5,21 @@
     "registryName": "sulfur_geode_water",
     "config": {
         "outerShellBlocks": [
-            {"block": "create:cut_ochrum", "weight": 95},
-            {"block": "create:ochrum", "weight": 5}
+            { "block": "create:cut_ochrum", "weight": 95 },
+            { "block": "create:ochrum", "weight": 5 }
         ],
         "innerShellBlocks": [
-            {"block": "create:ochrum", "weight": 40},
-            {"block": "emendatusenigmatica:uranium_ochrum_ore", "weight": 30},
-            {"block": "emendatusenigmatica:niter_ochrum_ore", "weight": 20},
-            {"block": "emendatusenigmatica:lead_ochrum_ore", "weight": 10}
+            { "block": "create:ochrum", "weight": 40 },
+            { "block": "emendatusenigmatica:gold_ochrum_ore", "weight": 30 },
+            { "block": "emendatusenigmatica:niter_ochrum_ore", "weight": 20 },
+            { "block": "emendatusenigmatica:silver_ochrum_ore", "weight": 10 }
         ],
         "innerBlocks": [
-            {"block": "emendatusenigmatica:sulfur_cluster_shard_block", "weight": 75},
-            {"block": "emendatusenigmatica:budding_sulfur", "weight": 25}
+            { "block": "emendatusenigmatica:sulfur_cluster_shard_block", "weight": 75 },
+            { "block": "emendatusenigmatica:budding_sulfur", "weight": 25 }
         ],
-        "clusters": [
-            "emendatusenigmatica:small_sulfur_bud",
-            "emendatusenigmatica:medium_sulfur_bud"
-        ],
-        "fillBlocks": [{"block": "minecraft:water", "weight": 10}],
+        "clusters": ["emendatusenigmatica:small_sulfur_bud", "emendatusenigmatica:medium_sulfur_bud"],
+        "fillBlocks": [{ "block": "minecraft:water", "weight": 10 }],
         "chance": 10,
         "rarity": "rare",
         "crackChance": 0,

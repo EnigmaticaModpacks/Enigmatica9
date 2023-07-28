@@ -271,8 +271,17 @@
 			icon: "kubejs:energetic_transference_matrix"
 			id: "21C352EEFEB25365"
 			rewards: [{
-				id: "114DDA59B0F39B36"
-				item: "immersiveengineering:rs_engineering"
+				id: "6AF890724D4023A1"
+				item: {
+					Count: 1b
+					id: "thermal:upgrade_augment_2"
+					tag: {
+						AugmentData: {
+							BaseMod: 4
+							Type: "Upgrade"
+						}
+					}
+				}
 				type: "item"
 			}]
 			subtitle: "Interdimensional Outsourcing"
@@ -361,7 +370,7 @@
 				""
 				"Earn the boon of the Queen by completing the tasks they require, or by returning to them that which is rightfully theirs."
 				""
-				"================================="
+				"=================================="
 				""
 				"Essence of the Bees is a very rare reward, indeed, so do not squander it!"
 				"Use it to first craft the Gloaming Catalyst before consuming it to receive the rest of the permanent rewards it grants. "
@@ -879,6 +888,72 @@
 			title: "Quantum Network Bridge"
 			x: 6.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["49159D9F94B7006C"]
+			description: ["Machines feeling a bit slow? Just make room for some more Spirits in there with Tier Installers. Give them some help as well by installing Energy and Speed upgrades. "]
+			icon: "mekanism:basic_tier_installer"
+			id: "0945523A7F5C5494"
+			rewards: [{
+				count: 2
+				id: "138C7D0E7C94DA26"
+				item: "mekanism:advanced_tier_installer"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "274A3556346681CA"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:basic_tier_installer"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_tier_installer"
+								}
+								{
+									Count: 1b
+									id: "mekanism:elite_tier_installer"
+								}
+								{
+									Count: 1b
+									id: "mekanism:ultimate_tier_installer"
+								}
+							]
+						}
+					}
+					title: "Tier Installers"
+					type: "item"
+				}
+				{
+					id: "13E55AEB17889CB5"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:upgrade_energy"
+								}
+								{
+									Count: 1b
+									id: "mekanism:upgrade_speed"
+								}
+							]
+						}
+					}
+					title: "Upgrades"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 2.5d
 		}
 	]
 	title: "Chapter Two"

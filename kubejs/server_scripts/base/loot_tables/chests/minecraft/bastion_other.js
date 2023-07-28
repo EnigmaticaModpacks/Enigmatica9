@@ -28,5 +28,10 @@ ServerEvents.chestLootTables((event) => {
                 1
             );
         });
+
+        table.addPool((pool) => {
+            pool.rolls = 1.0;
+            pool.addEntry({ type: 'loot_table', weight: 1, name: 'enigmatica:ars_nouveau_glyph_cache/tier_2' });
+        });
     });
 });

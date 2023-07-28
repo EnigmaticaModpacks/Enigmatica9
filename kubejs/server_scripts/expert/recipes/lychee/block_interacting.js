@@ -455,7 +455,7 @@ ServerEvents.recipes((event) => {
         }
 
         recipes.push({
-            item_in: Ingredient.of(conversion.item).toJson(),
+            item_in: conversion.item.startsWith('#') ? { tag: conversion.item.slice(1) } : { item: conversion.item },
             block_in: { blocks: blocks },
             post: post,
             id: `${id_prefix}convert_to_${conversion.block.replace(':', '_')}`

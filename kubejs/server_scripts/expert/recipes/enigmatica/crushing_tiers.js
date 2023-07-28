@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
         {
             outputs: { primary: 'occultism:crushed_end_stone' },
             input: 'minecraft:end_stone',
-            crushing_tier: 3,
+            crushing_tier: 2,
             id_suffix: 'crushed_end_stone_from_end_stone'
         },
         {
@@ -84,11 +84,11 @@ ServerEvents.recipes((event) => {
                 .custom({
                     type: 'hexerei:pestle_and_mortar',
                     ingredients: [
-                        Ingredient.of(recipe.input).toJson(),
-                        Ingredient.of(recipe.input).toJson(),
-                        Ingredient.of(recipe.input).toJson(),
-                        Ingredient.of(recipe.input).toJson(),
-                        Ingredient.of(recipe.input).toJson()
+                        recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input },
+                        recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input },
+                        recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input },
+                        recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input },
+                        recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input }
                     ],
                     output: { item: recipe.outputs.primary, count: count },
                     grindingTime: duration * 5
@@ -125,7 +125,7 @@ ServerEvents.recipes((event) => {
             event
                 .custom({
                     type: 'ars_nouveau:crush',
-                    input: Ingredient.of(recipe.input).toJson(),
+                    input: recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input },
                     output: outputs
                 })
                 .id(`${id_prefix}ars_nouveau_crushing/${recipe.id_suffix}`);
@@ -134,7 +134,9 @@ ServerEvents.recipes((event) => {
             event
                 .custom({
                     type: 'create:milling',
-                    ingredients: [Ingredient.of(recipe.input).toJson()],
+                    ingredients: [
+                        recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input }
+                    ],
                     results: outputs,
                     processingTime: duration
                 })
@@ -170,7 +172,9 @@ ServerEvents.recipes((event) => {
             event
                 .custom({
                     type: 'create:crushing',
-                    ingredients: [Ingredient.of(recipe.input).toJson()],
+                    ingredients: [
+                        recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input }
+                    ],
                     results: outputs,
                     processingTime: duration
                 })
@@ -204,7 +208,7 @@ ServerEvents.recipes((event) => {
                 .custom({
                     type: 'immersiveengineering:crusher',
                     energy: energy,
-                    input: Ingredient.of(recipe.input).toJson(),
+                    input: recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input },
                     result: {
                         base_ingredient: { item: recipe.outputs.primary },
                         count: 1
@@ -241,7 +245,7 @@ ServerEvents.recipes((event) => {
             event
                 .custom({
                     type: 'thermal:pulverizer',
-                    ingredient: Ingredient.of(recipe.input).toJson(),
+                    ingredient: recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input },
                     energy: energy,
                     result: outputs,
                     experience: experience

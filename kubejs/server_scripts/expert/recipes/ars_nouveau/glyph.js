@@ -104,14 +104,32 @@ ServerEvents.recipes((event) => {
             count: 1,
             exp: 27,
             id: 'ars_nouveau:glyph_cut'
+        },
+        {
+            output: 'ars_elemental:glyph_phantom_grasp',
+            inputItems: [
+                {
+                    item: [
+                        { item: 'twilightforest:phantom_helmet' },
+                        { item: 'twilightforest:phantom_chestplate' },
+                        { item: 'twilightforest:knight_phantom_trophy' }
+                    ]
+                },
+                { item: { item: 'ars_elemental:anima_essence' } },
+                { item: { item: 'supplementaries:antique_ink' } }
+            ],
+            count: 1,
+            exp: 55,
+            id: 'ars_elemental:glyph_phantom_grasp'
         }
     ];
 
     // Add Antique Ink to every glyph
     event.forEachRecipe({ type: 'ars_nouveau:glyph' }, (r) => {
+        let found = recipes.some((recipe) => recipe.id === r.getId());
         let recipe = JSON.parse(r.json);
         recipe.inputItems.push({ item: { item: 'supplementaries:antique_ink' } });
-        event.custom(recipe).id(r.getId());
+        if (!found) event.custom(recipe).id(r.getId());
     });
 
     recipes.forEach((recipe) => {

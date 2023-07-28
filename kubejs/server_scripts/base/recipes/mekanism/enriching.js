@@ -41,7 +41,9 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'mekanism:enriching';
-        recipe.input = { ingredient: Ingredient.of(recipe.input).toJson() };
+        recipe.input = {
+            ingredient: recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input }
+        };
         recipe.output = Item.of(recipe.output).toJson();
         event.custom(recipe).id(recipe.id);
     });

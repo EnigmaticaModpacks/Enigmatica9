@@ -6,10 +6,10 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            output: 'sophisticatedbackpacks:upgrade_base',
+            output: '5x sophisticatedbackpacks:upgrade_base',
             pattern: ['ABA', 'BAB', 'ABA'],
             key: {
-                A: '#forge:treated_wood_slab',
+                A: 'ars_nouveau:archwood_slab',
                 B: '#forge:nuggets/electrum'
             },
             id: 'sophisticatedbackpacks:upgrade_base'
@@ -49,6 +49,17 @@ ServerEvents.recipes((event) => {
                 B: 'sophisticatedbackpacks:stack_upgrade_tier_3'
             },
             id: 'sophisticatedbackpacks:stack_upgrade_tier_4'
+        },
+        {
+            output: 'sophisticatedbackpacks:crafting_upgrade',
+            pattern: [' A ', 'BCB', ' D '],
+            key: {
+                A: 'minecraft:crafting_table',
+                B: '#forge:ingots/lead',
+                C: 'sophisticatedbackpacks:upgrade_base',
+                D: '#forge:essences/manipulation'
+            },
+            id: 'sophisticatedbackpacks:crafting_upgrade'
         }
     ];
 

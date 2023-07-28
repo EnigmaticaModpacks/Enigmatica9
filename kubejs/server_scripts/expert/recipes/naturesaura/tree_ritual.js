@@ -532,7 +532,9 @@ ServerEvents.recipes((event) => {
     ];
     recipes.forEach((recipe) => {
         recipe.type = 'naturesaura:tree_ritual';
-        recipe.ingredients = recipe.ingredients.map((input) => Ingredient.of(input).toJson());
+        recipe.ingredients = recipe.ingredients.map((input) =>
+            input.startsWith('#') ? { tag: input.slice(1) } : { item: input }
+        );
         recipe.sapling = Item.of(recipe.sapling).toJson();
         recipe.output = Item.of(recipe.output).toJson();
         recipe.time = recipe.time * time_multiplier;

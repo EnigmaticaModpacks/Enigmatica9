@@ -56,6 +56,16 @@ ServerEvents.recipes((event) => {
                 '#forge:dusts/moon_dust'
             ],
             id: 'ars_nouveau:ritual_flight'
+        },
+        {
+            output: '2x ars_nouveau:end_fiber',
+            inputs: ['ars_nouveau:magebloom_fiber', 'ars_nouveau:magebloom_fiber', '#forge:dusts/end_stone'],
+            id: 'ars_nouveau:end_fiber'
+        },
+        {
+            output: 'ars_nouveau:relay_splitter',
+            inputs: ['ars_nouveau:relay', 'ae2:charged_certus_quartz_crystal', 'ae2:charged_certus_quartz_crystal'],
+            id: `${id_prefix}relay_splitter`
         }
     ];
 

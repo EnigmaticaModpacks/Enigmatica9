@@ -1,0 +1,73 @@
+{
+    "config": {
+        "block_provider": {
+            "entries": [
+                {
+                    "data": {
+                        "Name": "byg:ether_stone"
+                    },
+                    "weight": 25
+                },
+                {
+                    "data": {
+                        "Name": "emendatusenigmatica:budding_dimensional"
+                    },
+                    "weight": 1
+                },
+                {
+                    "data": {
+                        "Name": "emendatusenigmatica:dimensional_cluster_shard_block"
+                    },
+                    "weight": 4
+                }
+            ],
+            "type": "minecraft:weighted_state_provider"
+        },
+        "island_features": [
+            {
+                "feature": "byg:island_ametrine_clusters",
+                "placement": [
+                    {
+                        "heightmap": "MOTION_BLOCKING",
+                        "type": "minecraft:heightmap"
+                    }
+                ]
+            },
+            {
+                "feature": "byg:island_sculk_plants",
+                "placement": [
+                    {
+                        "heightmap": "MOTION_BLOCKING",
+                        "type": "minecraft:heightmap"
+                    }
+                ]
+            }
+        ],
+        "max_radius": 17,
+        "min_radius": 13,
+        "top_block_provider": {
+            "entries": [
+                {
+                    "data": {
+                        "Name": "byg:vermilion_sculk"
+                    },
+                    "weight": 25
+                },
+                {
+                    "data": {
+                        "Name": "emendatusenigmatica:budding_dimensional"
+                    },
+                    "weight": 1
+                },
+                {
+                    "data": {
+                        "Name": "emendatusenigmatica:dimensional_cluster_shard_block"
+                    },
+                    "weight": 4
+                }
+            ],
+            "type": "minecraft:weighted_state_provider"
+        }
+    },
+    "type": "byg:hollow_floating_island"
+}

@@ -16,7 +16,7 @@ const structures = [
         name: 'assembler',
         index: 0,
         block: {
-            normal: 'immersiveengineering:immersiveengineering:steel_scaffolding_standard',
+            normal: 'immersiveengineering:steel_scaffolding_standard',
             expert: 'pneumaticcraft:compressed_brick_tile'
         }
     },
@@ -46,7 +46,7 @@ const structures = [
         name: 'bottling_machine',
         index: 1,
         block: {
-            normal: 'immersiveengineering:immersiveengineering:steel_scaffolding_standard',
+            normal: 'immersiveengineering:steel_scaffolding_standard',
             expert: 'pneumaticcraft:compressed_brick_tile'
         }
     },
@@ -76,7 +76,7 @@ const structures = [
         name: 'mixer',
         index: 0,
         block: {
-            normal: 'immersiveengineering:immersiveengineering:steel_scaffolding_standard',
+            normal: 'immersiveengineering:steel_scaffolding_standard',
             expert: 'pneumaticcraft:compressed_brick_tile'
         }
     },
@@ -116,7 +116,7 @@ const structures = [
         name: 'sawmill',
         index: 0,
         block: {
-            normal: 'immersiveengineering:immersiveengineering:steel_scaffolding_standard',
+            normal: 'immersiveengineering:steel_scaffolding_standard',
             expert: 'pneumaticcraft:compressed_brick_tile'
         }
     },
@@ -308,7 +308,7 @@ const structures = [
         name: 'metal_press',
         index: 1,
         block: {
-            normal: 'immersiveengineering:immersiveengineering:steel_scaffolding_standard',
+            normal: 'immersiveengineering:steel_scaffolding_standard',
             expert: 'pneumaticcraft:compressed_brick_tile'
         }
     },

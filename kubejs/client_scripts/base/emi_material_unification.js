@@ -127,14 +127,10 @@ ClientEvents.highPriorityAssets((event) => {
             `/thermal:raw/`,
             `/pendorite/`,
             `/ametrine/`
-
-
-
-
-            // Create, Natures Aura
         ],
         disable: true
     };
 
     JsonIO.write(`kubejs/assets/emi/index/stacks/emi_unify_materials.json`, payload);
 });
+

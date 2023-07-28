@@ -40,7 +40,7 @@ ServerEvents.recipes((event) => {
     recipes.forEach((recipe) => {
         recipe.type = 'occultism:crushing';
 
-        recipe.ingredient = Ingredient.of(recipe.input).toJson();
+        recipe.ingredient = recipe.input.startsWith('#') ? { tag: recipe.input.slice(1) } : { item: recipe.input };
         recipe.result = Item.of(recipe.output).toJson();
         // Never multiply expert recipes
         recipe.ignore_crushing_multiplier = true;

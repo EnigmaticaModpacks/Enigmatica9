@@ -71,12 +71,6 @@ ServerEvents.highPriorityData((event) => {
                         target_advancement: 'the_bumblezone:the_bumblezone/the_queens_desire/otherworldly_mites'
                     }
                 },
-                target_advancement_done_9: {
-                    trigger: 'the_bumblezone:target_advancement_done',
-                    conditions: {
-                        target_advancement: 'the_bumblezone:the_bumblezone/the_queens_desire/peak_inefficiency'
-                    }
-                },
                 target_advancement_done_10: {
                     trigger: 'the_bumblezone:target_advancement_done',
                     conditions: {
@@ -128,7 +122,6 @@ ServerEvents.highPriorityData((event) => {
                 ['target_advancement_done_5'],
                 ['target_advancement_done_7'],
                 ['target_advancement_done_8'],
-                ['target_advancement_done_9'],
                 ['target_advancement_done_10'],
                 ['target_advancement_done_11'],
                 ['target_advancement_done_12'],

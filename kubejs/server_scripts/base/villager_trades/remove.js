@@ -7,12 +7,6 @@ MoreJSEvents.villagerTrades((event) => {
             levels: ['all'],
             vanilla: true,
             modded: true
-        },
-        {
-            professions: ['immersiveengineering:machinist'],
-            levels: [1, 2],
-            vanilla: true,
-            modded: true
         }
     ];
 

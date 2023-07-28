@@ -35,7 +35,8 @@ ServerEvents.recipes((event) => {
             { id: 'ars_elemental:air_focus', output: 'ars_elemental:air_focus' },
             { id: 'ars_elemental:necrotic_focus', output: 'ars_elemental:necrotic_focus' },
             { id: 'ars_nouveau:summon_focus', output: 'ars_nouveau:summon_focus' },
-            { id: 'ars_nouveau:shapers_focus', output: 'ars_nouveau:shapers_focus' }
+            { id: 'ars_nouveau:shapers_focus', output: 'ars_nouveau:shapers_focus' },
+            { id: 'ars_nouveau:relay_splitter', output: 'ars_nouveau:relay_splitter' }
         ],
         imbuement: [
             { id: 'ars_nouveau:imbuement_lapis', output: 'emendatusenigmatica:source_gem' },

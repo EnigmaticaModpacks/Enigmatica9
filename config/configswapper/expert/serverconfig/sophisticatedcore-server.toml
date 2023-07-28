@@ -160,14 +160,15 @@
 
 		"sophisticatedstorage:basic_tier_upgrade|true",
 		"sophisticatedstorage:basic_to_iron_tier_upgrade|true",
+		"sophisticatedstorage:iron_to_gold_tier_upgrade|true",
+		"sophisticatedstorage:gold_to_diamond_tier_upgrade|true",
+		"sophisticatedstorage:diamond_to_netherite_tier_upgrade|true",
+
 		"sophisticatedstorage:basic_to_gold_tier_upgrade|false",
 		"sophisticatedstorage:basic_to_diamond_tier_upgrade|false",
 		"sophisticatedstorage:basic_to_netherite_tier_upgrade|false",
-		"sophisticatedstorage:iron_to_gold_tier_upgrade|true",
 		"sophisticatedstorage:iron_to_diamond_tier_upgrade|false",
 		"sophisticatedstorage:iron_to_netherite_tier_upgrade|false",
-		"sophisticatedstorage:gold_to_diamond_tier_upgrade|true",
-		"sophisticatedstorage:gold_to_netherite_tier_upgrade|false",
-		"sophisticatedstorage:diamond_to_netherite_tier_upgrade|true"
+		"sophisticatedstorage:gold_to_netherite_tier_upgrade|true",
 	]
 

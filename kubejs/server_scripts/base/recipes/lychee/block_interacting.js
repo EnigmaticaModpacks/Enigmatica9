@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_cobblestone' },
                 { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'farmersdelight:rich_soil_farmland' },
                 { type: 'damage_item', damage: 25 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.grass.place block @p ~ ~ ~',
@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:moss_block' },
                 { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
@@ -57,7 +57,7 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'twilightforest:liveroot_block' },
                 { type: 'damage_item', damage: 125 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.grass.place block @p ~ ~ ~',
@@ -73,7 +73,7 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_stone_bricks' },
                 { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
@@ -89,7 +89,7 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_stone_brick_wall' },
                 { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
@@ -105,7 +105,7 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_stone_brick_stairs' },
                 { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
@@ -121,7 +121,7 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_cobblestone_stairs' },
                 { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
@@ -137,7 +137,7 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_cobblestone_slab' },
                 { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
@@ -153,7 +153,7 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:mossy_cobblestone_wall' },
                 { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
@@ -167,48 +167,48 @@ ServerEvents.recipes((event) => {
             block_in: 'ae2:quartz_block',
             post: [
                 { type: 'prevent_default' },
-                { type: 'place', block: 'ae2:damaged_budding_quartz' },
+                { type: 'place', block: 'ae2:flawless_budding_quartz' },
                 { type: 'damage_item', damage: 200 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
                     hide: true
                 }
             ],
-            id: `${id_prefix}infused_iron_pickaxe_conversions/damaged_budding_quartz`
+            id: `${id_prefix}infused_iron_pickaxe_conversions/flawless_budding_quartz_from_quartz_block`
         },
         {
             item_in: { item: 'naturesaura:infused_iron_pickaxe' },
             block_in: 'ae2:damaged_budding_quartz',
             post: [
                 { type: 'prevent_default' },
-                { type: 'place', block: 'ae2:chipped_budding_quartz' },
+                { type: 'place', block: 'ae2:flawless_budding_quartz' },
                 { type: 'damage_item', damage: 200 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
                     hide: true
                 }
             ],
-            id: `${id_prefix}infused_iron_pickaxe_conversions/chipped_budding_quartz`
+            id: `${id_prefix}infused_iron_pickaxe_conversions/flawless_budding_quartz_from_damaged_budding_quartz`
         },
         {
             item_in: { item: 'naturesaura:infused_iron_pickaxe' },
             block_in: 'ae2:chipped_budding_quartz',
             post: [
                 { type: 'prevent_default' },
-                { type: 'place', block: 'ae2:flawed_budding_quartz' },
+                { type: 'place', block: 'ae2:flawless_budding_quartz' },
                 { type: 'damage_item', damage: 200 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
                     hide: true
                 }
             ],
-            id: `${id_prefix}infused_iron_pickaxe_conversions/flawed_budding_quartz`
+            id: `${id_prefix}infused_iron_pickaxe_conversions/flawless_budding_quartz_from_chipped_budding_quartz`
         },
         {
             item_in: { item: 'naturesaura:infused_iron_pickaxe' },
@@ -217,14 +217,14 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'ae2:flawless_budding_quartz' },
                 { type: 'damage_item', damage: 200 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
                     hide: true
                 }
             ],
-            id: `${id_prefix}infused_iron_pickaxe_conversions/flawless_budding_quartz`
+            id: `${id_prefix}infused_iron_pickaxe_conversions/flawless_budding_quartz_from_flawed_budding_quartz`
         },
         {
             item_in: { item: 'naturesaura:infused_iron_pickaxe' },
@@ -233,7 +233,7 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'byg:budding_therium_crystal' },
                 { type: 'damage_item', damage: 200 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
@@ -249,7 +249,7 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'byg:budding_subzero_crystal' },
                 { type: 'damage_item', damage: 200 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
@@ -265,7 +265,7 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'minecraft:budding_amethyst' },
                 { type: 'damage_item', damage: 200 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
@@ -281,7 +281,7 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'emendatusenigmatica:budding_sulfur' },
                 { type: 'damage_item', damage: 200 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
@@ -290,6 +290,23 @@ ServerEvents.recipes((event) => {
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/budding_sulfur`
         },
+        ,
+        {
+            item_in: { item: 'naturesaura:infused_iron_pickaxe' },
+            block_in: 'emendatusenigmatica:sulfur_cluster_shard_block',
+            post: [
+                { type: 'prevent_default' },
+                { type: 'place', block: 'emendatusenigmatica:budding_sulfur' },
+                { type: 'damage_item', damage: 100 },
+                { type: 'add_item_cooldown', s: 0.5 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
+                    hide: true
+                }
+            ],
+            id: `${id_prefix}infused_iron_pickaxe_conversions/budding_sulfur_from_cluster`
+        },
         {
             item_in: { item: 'naturesaura:infused_iron_pickaxe' },
             block_in: 'emendatusenigmatica:dimensional_block',
@@ -297,7 +314,7 @@ ServerEvents.recipes((event) => {
                 { type: 'prevent_default' },
                 { type: 'place', block: 'emendatusenigmatica:budding_dimensional' },
                 { type: 'damage_item', damage: 200 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
@@ -308,12 +325,28 @@ ServerEvents.recipes((event) => {
         },
         {
             item_in: { item: 'naturesaura:infused_iron_pickaxe' },
+            block_in: 'emendatusenigmatica:dimensional_cluster_shard_block',
+            post: [
+                { type: 'prevent_default' },
+                { type: 'place', block: 'emendatusenigmatica:budding_dimensional' },
+                { type: 'damage_item', damage: 100 },
+                { type: 'add_item_cooldown', s: 0.5 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
+                    hide: true
+                }
+            ],
+            id: `${id_prefix}infused_iron_pickaxe_conversions/budding_dimensional_from_cluster`
+        },
+        {
+            item_in: { item: 'naturesaura:infused_iron_pickaxe' },
             block_in: 'emendatusenigmatica:fluorite_block',
             post: [
                 { type: 'prevent_default' },
                 { type: 'place', block: 'emendatusenigmatica:budding_fluorite' },
                 { type: 'damage_item', damage: 200 },
-                { type: 'add_item_cooldown', s: 2 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
@@ -321,6 +354,22 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/budding_fluorite`
+        },
+        {
+            item_in: { item: 'naturesaura:infused_iron_pickaxe' },
+            block_in: 'emendatusenigmatica:fluorite_cluster_shard_block',
+            post: [
+                { type: 'prevent_default' },
+                { type: 'place', block: 'emendatusenigmatica:budding_fluorite' },
+                { type: 'damage_item', damage: 100 },
+                { type: 'add_item_cooldown', s: 0.5 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.large_amethyst_bud.place block @p ~ ~ ~',
+                    hide: true
+                }
+            ],
+            id: `${id_prefix}infused_iron_pickaxe_conversions/budding_fluorite_from_cluster`
         },
         {
             hide_in_viewer: true,
@@ -359,7 +408,7 @@ ServerEvents.recipes((event) => {
                     contextual: { type: 'direction', direction: 'down' }
                 },
                 { type: 'damage_item', damage: 1 },
-                { type: 'add_item_cooldown', s: 1 },
+                { type: 'add_item_cooldown', s: 0.5 },
                 {
                     type: 'execute',
                     command: 'playsound minecraft:block.pumpkin.carve block @p ~ ~ ~',

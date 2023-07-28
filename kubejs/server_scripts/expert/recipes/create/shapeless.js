@@ -24,6 +24,11 @@ ServerEvents.recipes((event) => {
             output: 'create:rose_quartz_lamp',
             inputs: ['create:polished_rose_quartz', '#forge:dusts/glowstone', '#forge:wires/lead'],
             id: `create:crafting/kinetics/rose_quartz_lamp`
+        },
+        {
+            output: '9x ars_nouveau:greater_experience_gem',
+            inputs: ['create:experience_block'],
+            id: `create:crafting/materials/experience_nugget_from_block`
         }
     ];
 

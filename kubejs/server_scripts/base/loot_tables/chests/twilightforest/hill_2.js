@@ -35,6 +35,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('twilightforest:peacock_feather_fan', 25, 1);
             pool.addItem('twilightforest:charm_of_life_1', 25, 1);
             pool.addItem('twilightforest:music_disc_wayfarer', 25, 1);
+            pool.addItem('sophisticatedbackpacks:stack_upgrade_tier_1', 25, 1);
         });
     });
 });

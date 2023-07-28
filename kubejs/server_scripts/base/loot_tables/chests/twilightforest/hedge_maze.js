@@ -27,7 +27,7 @@ ServerEvents.genericLootTables((event) => {
             pool.rolls = [1, 2];
             pool.addItem('minecraft:cobweb', 75, [1, 6]);
             pool.addItem('minecraft:apple', 75, [1, 6]);
-            pool.addItem('minecraft:shears', 75, 1);
+            pool.addItem(Item.of('minecraft:shears').enchant('naturesaura:aura_mending', 1), 75, 1);
             pool.addItem('minecraft:bow', 75, 1);
             pool.addItem('minecraft:crossbow', 75, 1);
             pool.addItem('minecraft:golden_apple', 25, 1);
@@ -42,6 +42,15 @@ ServerEvents.genericLootTables((event) => {
             pool.rolls = [1, 1];
             pool.randomChance(0.3);
             pool.addItem(Item.of('sophisticatedbackpacks:iron_backpack'), 1, 1);
+        });
+
+        table.addPool((pool) => {
+            pool.rolls = [1, 2];
+            pool.randomChance(0.5);
+            pool.addItem('thermal:upgrade_augment_1', 2, 1);
+            pool.addItem('thermal:machine_speed_augment', 1, [1, 3]);
+            pool.addItem('functionalstorage:copper_upgrade', 3, [1, 3]);
+            pool.addItem('sophisticatedstorage:stack_upgrade_tier_2', 3, [1, 3]);
         });
     });
 });

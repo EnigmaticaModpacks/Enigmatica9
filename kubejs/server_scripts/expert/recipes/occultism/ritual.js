@@ -211,6 +211,41 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_summon_whirlisprig_from_shards`
         },
         {
+            output: 'ars_elemental:siren_charm',
+            activation_item: '#forge:essences/conjuration',
+            inputs: ['hexerei:mindful_trance_blend', 'thermal:aquachow', 'thermal:junk_net', 'thermal:aquachow'],
+            ritual_dummy: 'kubejs:ritual_summon_siren',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_siren`
+        },
+        {
+            output: 'ars_elemental:siren_charm',
+            activation_item: '#forge:essences/conjuration',
+            inputs: ['ars_elemental:siren_shards'],
+            ritual_dummy: 'kubejs:ritual_summon_siren_from_shards',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_siren_from_shards`
+        },
+        {
+            output: 'ars_elemental:firenando_charm',
+            activation_item: '#forge:essences/conjuration',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'twilightforest:fiery_blood',
+                'twilightforest:fiery_sword',
+                'twilightforest:fiery_blood'
+            ],
+            ritual_dummy: 'kubejs:ritual_summon_firenando',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_firenando`
+        },
+        {
             output: Item.of('hexerei:willow_broom', {
                 Inventory: {
                     Items: [
@@ -671,10 +706,10 @@ ServerEvents.recipes((event) => {
                 'naturesaura:gold_leaf',
                 'naturesaura:gold_leaf',
                 'naturesaura:gold_leaf',
-                '#minecraft:logs',
-                '#minecraft:logs',
-                '#minecraft:logs',
-                '#minecraft:logs'
+                'quark:stick_block',
+                'quark:stick_block',
+                'quark:stick_block',
+                'quark:stick_block'
             ],
             duration: 10,
             id: `occultism:ritual/familiar_beaver`
@@ -1342,6 +1377,31 @@ ServerEvents.recipes((event) => {
             duration: 60,
             id: `${id_prefix}ritual_craft_tree_of_life_trophy`
         },
+        {
+            output: 'farmingforblockheads:market',
+            activation_item: '#forge:essences/conjuration',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+
+                'ars_elemental:yellow_archwood',
+                'ars_nouveau:green_archwood_wood',
+                'ars_nouveau:blue_archwood_wood',
+                'ars_nouveau:red_archwood_wood',
+
+                'ars_elemental:yellow_archwood',
+                'ars_nouveau:green_archwood_wood',
+                'ars_nouveau:blue_archwood_wood',
+                'ars_nouveau:red_archwood_wood'
+            ],
+            ritual_dummy: 'kubejs:ritual_craft_market',
+            ritual_type: 'occultism:craft',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_craft_market`
+        },
 
         /*
         Custom Summons
@@ -1485,7 +1545,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'kubejs:teleport_nether',
-            activation_item: '#forge:nether_stars',
+            activation_item: 'kubejs:withered_soul',
             inputs: [
                 '#forge:ingots/tainted_gold',
                 'naturesaura:gold_leaf',
@@ -1764,6 +1824,15 @@ ServerEvents.recipes((event) => {
         {
             type: 'blitz',
             inputs: ['#forge:essences/conjuration', '#forge:essences/air', '#forge:essences/air', '#forge:essences/air']
+        },
+        {
+            type: 'swarm',
+            inputs: [
+                '#forge:essences/conjuration',
+                'minecraft:stone_bricks',
+                'minecraft:end_stone_bricks',
+                'twilightforest:towerwood'
+            ]
         }
     ];
 
@@ -1840,15 +1909,20 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'occultism:ritual';
+        recipe.activation_item = recipe.activation_item.startsWith('#')
+            ? { tag: recipe.activation_item.slice(1) }
+            : { item: recipe.activation_item };
 
-        recipe.activation_item = Ingredient.of(recipe.activation_item).toJson();
-        if (recipe.item_to_use) {
-            recipe.item_to_use = Ingredient.of(recipe.item_to_use).toJson();
-        }
+        if (recipe.item_to_use)
+            recipe.item_to_use = recipe.item_to_use.startsWith('#')
+                ? { tag: recipe.item_to_use.slice(1) }
+                : { item: recipe.item_to_use };
+
         recipe.ritual_dummy = Item.of(recipe.ritual_dummy).toJson();
-        recipe.ingredients = recipe.inputs.map((input) => Ingredient.of(input).toJson());
+        recipe.ingredients = recipe.inputs.map((input) =>
+            input.startsWith('#') ? { tag: input.slice(1) } : { item: input }
+        );
         recipe.result = Item.of(recipe.output).toJson();
-
         event.custom(recipe).id(recipe.id);
     });
 });

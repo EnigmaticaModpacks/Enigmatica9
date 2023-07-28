@@ -40,7 +40,7 @@ var wood_variants_constructor = [
     'byg:sythian',
     'byg:bulbis',
     'byg:embur',
-    'byg:withering_oak',
+    // 'byg:withering_oak',
     'byg:fungal_imparius',
     'hexerei:mahogany',
     'hexerei:willow',

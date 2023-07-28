@@ -140,11 +140,12 @@ ServerEvents.recipes((event) => {
             id: 'minecraft:stonecutter'
         },
         {
-            output: 'minecraft:conduit',
-            pattern: ['AAA', 'ABA', 'AAA'],
+            output: '3x minecraft:conduit',
+            pattern: [' A ', 'BBB', ' C '],
             key: {
-                A: 'minecraft:nautilus_shell',
-                B: 'quark:rainbow_rune'
+                A: '#forge:essences/air',
+                B: 'minecraft:nautilus_shell',
+                C: '#forge:essences/water'
             },
             id: 'minecraft:conduit'
         },
@@ -158,13 +159,22 @@ ServerEvents.recipes((event) => {
             id: 'minecraft:shield'
         },
         {
-            output: 'minecraft:shears',
+            output: Item.of('minecraft:shears').enchant('naturesaura:aura_mending', 1),
             pattern: ['AB', 'BA'],
             key: {
                 A: '#forge:rods/ancient',
                 B: '#forge:ingots/infused_iron'
             },
             id: 'minecraft:shears'
+        },
+        {
+            output: '4x minecraft:dripstone_block',
+            pattern: ['AB', 'BA'],
+            key: {
+                A: 'minecraft:clay',
+                B: 'minecraft:tuff'
+            },
+            id: `${id_prefix}dripstone_block`
         }
     ];
 

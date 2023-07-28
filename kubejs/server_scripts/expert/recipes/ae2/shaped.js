@@ -141,17 +141,6 @@ ServerEvents.recipes((event) => {
             id: `ae2:network/parts/tunnels_me`
         },
         {
-            output: 'ae2:me_p2p_tunnel',
-            pattern: [' BA', 'CDA', ' BA'],
-            key: {
-                A: '#forge:gems/fluix',
-                B: '#forge:ingots/compressed_iron',
-                C: '#forge:essences/water',
-                D: 'occultism:wormhole_frame'
-            },
-            id: `ae2:network/parts/tunnels_me`
-        },
-        {
             output: '6x ae2:quartz_fixture',
             pattern: [' B ', 'AAA', ' B '],
             key: {

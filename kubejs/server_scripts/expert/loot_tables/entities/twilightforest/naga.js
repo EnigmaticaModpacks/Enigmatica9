@@ -11,6 +11,17 @@ ServerEvents.genericLootTables((event) => {
         table.addPool((pool) => {
             pool.rolls = [1, 1];
             pool.addItem(
+                Item.of('twilightforest:ironwood_hoe')
+                    .enchant('minecraft:unbreaking', 5)
+                    .enchant('apotheosis:natures_blessing', 3),
+                1,
+                1
+            );
+        });
+
+        table.addPool((pool) => {
+            pool.rolls = [1, 1];
+            pool.addItem(
                 Item.of('minecraft:bundle', {
                     Items: [
                         { id: 'quark:blue_blossom_sapling', Count: 1 },
@@ -20,8 +31,8 @@ ServerEvents.genericLootTables((event) => {
                         { id: 'quark:yellow_blossom_sapling', Count: 1 },
                         { id: 'quark:red_blossom_sapling', Count: 1 },
 
-                        { id: 'hexerei:willow_sapling', Count: 1 },
-                        { id: 'hexerei:mahogany_sapling', Count: 1 },
+                        { id: 'hexerei:willow_sapling', Count: 2 },
+                        { id: 'hexerei:mahogany_sapling', Count: 2 },
 
                         { id: 'hexerei:mandrake_flower', Count: 3 },
                         { id: 'hexerei:yellow_dock_bush', Count: 3 },
