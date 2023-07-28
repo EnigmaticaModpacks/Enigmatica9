@@ -23,6 +23,7 @@
 				"● $containers/gas"
 				"● $containers/liquid"
 			]
+			hide: true
 			icon: "minecraft:chest"
 			id: "49596454693937AC"
 			rewards: [{

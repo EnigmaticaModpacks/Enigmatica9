@@ -19,6 +19,7 @@
 
 -   Removed faulty drawer recipes [\#536](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/536) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix broken ore processing recipes [\#540](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/540) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Hide visible Expert Storage quest. [\#548](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/548) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### Removed Mods
 
