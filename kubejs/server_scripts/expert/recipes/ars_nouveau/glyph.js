@@ -104,6 +104,23 @@ ServerEvents.recipes((event) => {
             count: 1,
             exp: 27,
             id: 'ars_nouveau:glyph_cut'
+        },
+        {
+            output: 'ars_elemental:glyph_phantom_grasp',
+            inputItems: [
+                {
+                    item: [
+                        { item: 'twilightforest:phantom_helmet' },
+                        { item: 'twilightforest:phantom_chestplate' },
+                        { item: 'twilightforest:knight_phantom_trophy' }
+                    ]
+                },
+                { item: { item: 'ars_elemental:anima_essence' } },
+                { item: { item: 'supplementaries:antique_ink' } }
+            ],
+            count: 1,
+            exp: 55,
+            id: 'ars_elemental:glyph_phantom_grasp'
         }
     ];
 

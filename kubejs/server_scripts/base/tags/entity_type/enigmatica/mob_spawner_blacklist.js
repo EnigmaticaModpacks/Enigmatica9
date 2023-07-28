@@ -16,6 +16,7 @@ ServerEvents.tags('entity_type', (event) => {
             'twilightforest:alpha_yeti',
             'twilightforest:snow_queen',
             'twilightforest:quest_ram',
+            'twilightforest:redcap',
             'minecraft:wither',
             'minecraft:ender_dragon',
             'quark:stoneling'

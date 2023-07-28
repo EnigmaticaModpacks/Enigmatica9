@@ -448,8 +448,6 @@
 			description: [
 				"A powerful tool that allows copying large areas and rebuilding them instantly elsewhere, making short work of repeating large sections of a build, such as a repeating wall pattern, or sprucing up an area with a few different prefab homes."
 				""
-				"It’s possible to import and export patterns for the Copy/Paste gadget as well, and Enigmatica 6 comes with a variety of patterns that include many multiblocks from mods like Immersive Engineering and Astral Sorcery, to make working with those mods easier. Full instructions and templates can be located in your instance folder under “building_gadgets_patterns”."
-				""
 				"Sneak Right Click on a block to set the block it’ll build with. Use the Building Gadgets Settings Menu key [default: g] to access advanced features. "
 			]
 			hide_dependency_lines: true

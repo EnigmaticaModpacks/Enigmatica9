@@ -1649,6 +1649,10 @@
 				"Restoring the Tree of Life to its full glory will be no easy task. Use the knowledge obtained thus far to grow the Primordial Seed. With time and sacrifice, it will grow stronger. "
 				""
 				"Choose a ritual site with plenty of room to give the tree the space it needs to take root. Performing this ritual will grow the tree immediately, centered upon the ritual pentacle. "
+				""
+				"================================="
+				""
+				"Note: The Tree of Life will be facing North with a small entrance going down into the pentacle chamber. This rotation cannot be changed. "
 			]
 			icon: "kubejs:tree_of_life_1"
 			id: "33BCDA0A76E2523C"

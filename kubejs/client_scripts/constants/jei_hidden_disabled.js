@@ -852,7 +852,8 @@ jei.expert.recipes.hidden = [
             'ars_elemental:air_focus',
             'ars_elemental:necrotic_focus',
             'ars_nouveau:summon_focus',
-            'ars_nouveau:shapers_focus'
+            'ars_nouveau:shapers_focus',
+            'ars_nouveau:relay_splitter'
         ]
     }
 ];
