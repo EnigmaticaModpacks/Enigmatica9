@@ -25,14 +25,21 @@ function Switch-DefaultModeTo {
         [Parameter(Position = 0)]
         [string]$mode
     )
-    $defaultModeFilePath = "config/configswapper.json"
 
-    # Force the mode.json to be in expert mode for publishing
+    $defaultModeFilePath = "$INSTANCE_ROOT/config/configswapper.json"
+
+    # # Force the mode.json to be in the mode we're publishing
     $defaultModeJson = Get-Content -Raw -Path $defaultModeFilePath | ConvertFrom-Json
     if ($defaultModeJson.defaultmode -ne $mode) {
         $defaultModeJson.defaultmode = $mode
         $defaultModeJson | ConvertTo-Json | Set-Content $defaultModeFilePath
     }
+
+    # Copy over Emendatus Enigmatica files to ensure they're present on first launch
+    $configswapperEmendatusEnigmaticaFolder = "$INSTANCE_ROOT/config/configswapper/$mode/config/emendatusenigmatica"
+    $emendatusEnigmaticaConfigFolder = "$INSTANCE_ROOT/config"
+
+    Copy-Item -Path $configswapperEmendatusEnigmaticaFolder -Destination $emendatusEnigmaticaConfigFolder -Force -Recurse
 }
 
 function Get-GitHubRelease {
@@ -86,10 +93,23 @@ function Test-ForDependencies {
 }
 
 function Update-BetterCompatibilityCheckerVersion {
+    param(
+        [Parameter(Position = 0)]
+        [string]$mode
+    )
+
     $configPath = "$INSTANCE_ROOT/config/bcc-common.toml"
+
+    $modpackName = "Enigmatica 9"
+    if ($mode -eq "expert") {
+        $modpackName = "Enigmatica 9 Expert"
+    }
 
     # Replace anything that matches semver of the type 1.0.0 with $MODPACK_VERSION
     $contents = [System.IO.File]::ReadAllText($configPath) -replace "\d\.\d\.\d", $MODPACK_VERSION
+    $contents = $contents -replace "modpackName.*", "modpackName = `"$modpackName`""
+    $contents = $contents -replace "modpackProjectID.*", "modpackProjectID = $CURSEFORGE_PROJECT_ID"
+
     [System.IO.File]::WriteAllText($configPath, $contents)
     
 }
@@ -437,7 +457,6 @@ switch ($mode) {
     "default" {
         . "$PSScriptRoot/$secretsFile"
         Validate-SecretsFile
-        Update-BetterCompatibilityCheckerVersion
 
         if ($uploadExpertMode) {
             $CURSEFORGE_PROJECT_ID = 882461
@@ -452,9 +471,11 @@ switch ($mode) {
             $SERVER_FILE_DISPLAY_NAME = "Enigmatica 9 Expert Server $MODPACK_VERSION"
 
             Switch-DefaultModeTo -mode "expert"
+            Update-BetterCompatibilityCheckerVersion -mode "expert"
         }
         else {
             Switch-DefaultModeTo -mode "normal"
+            Update-BetterCompatibilityCheckerVersion -mode "normal"
         }
 
         New-ClientFiles

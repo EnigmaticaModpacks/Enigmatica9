@@ -14,22 +14,22 @@
     "registryName": "redstone_geode",
     "config": {
         "outerShellBlocks": [
-            {"block": "create:cut_crimsite", "weight": 95},
-            {"block": "create:crimsite", "weight": 5}
+            { "block": "create:cut_crimsite", "weight": 95 },
+            { "block": "create:crimsite", "weight": 5 }
         ],
         "innerShellBlocks": [
-            {"block": "create:crimsite", "weight": 70},
-            {"block": "create:cut_crimsite", "weight": 5},
-            {"block": "emendatusenigmatica:copper_crimsite_ore", "weight": 25}
+            { "block": "create:crimsite", "weight": 70 },
+            { "block": "create:cut_crimsite", "weight": 5 },
+            { "block": "emendatusenigmatica:copper_crimsite_ore", "weight": 25 }
         ],
         "innerBlocks": [
-            {"block": "create:crimsite", "weight": 30},
-            {"block": "emendatusenigmatica:copper_crimsite_ore", "weight": 45},
-            {"block": "emendatusenigmatica:redstone_crimsite_ore", "weight": 25}
+            { "block": "create:crimsite", "weight": 30 },
+            { "block": "emendatusenigmatica:copper_crimsite_ore", "weight": 45 },
+            { "block": "emendatusenigmatica:redstone_crimsite_ore", "weight": 25 }
         ],
         "fillBlocks": [
-            {"block": "emendatusenigmatica:redstone_crimsite_ore", "weight": 85},
-            {"block": "emendatusenigmatica:copper_crimsite_ore", "weight": 15}
+            { "block": "emendatusenigmatica:redstone_crimsite_ore", "weight": 85 },
+            { "block": "emendatusenigmatica:copper_crimsite_ore", "weight": 15 }
         ],
         "clusters": [],
         "chance": 30,
@@ -38,9 +38,7 @@
         "minYLevel": -40,
         "maxYLevel": 40,
         "generateSamples": true,
-        "sampleBlocks": [
-            { "material": "redstone", "weight": 10, "strata": "create_crimsite"}
-        ],
+        "sampleBlocks": [{ "material": "redstone", "weight": 10, "strata": "create_crimsite" }],
         "fillerTypes": [
             "minecraft_deepslate",
             "minecraft_tuff",

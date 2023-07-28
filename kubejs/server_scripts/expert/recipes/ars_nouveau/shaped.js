@@ -156,6 +156,27 @@ ServerEvents.recipes((event) => {
                 B: 'ars_nouveau:spell_prism'
             },
             id: `ars_nouveau:void_prism`
+        },
+        {
+            output: 'ars_nouveau:relay',
+            pattern: ['A A', 'BCB', 'A A'],
+            key: {
+                A: '#forge:nuggets/gold',
+                B: '#forge:ingots/gold',
+                C: '#forge:storage_blocks/source'
+            },
+            id: `ars_nouveau:relay`
+        },
+        {
+            output: 'ars_nouveau:relay_splitter',
+            pattern: ['ADA', 'BCB', 'ADA'],
+            key: {
+                A: '#forge:nuggets/gold',
+                B: '#forge:ingots/gold',
+                C: '#forge:storage_blocks/source',
+                D: 'ae2:charged_certus_quartz_crystal'
+            },
+            id: `${id_prefix}relay_splitter`
         }
     ];
 

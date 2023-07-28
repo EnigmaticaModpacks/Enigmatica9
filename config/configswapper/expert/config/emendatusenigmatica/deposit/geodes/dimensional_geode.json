@@ -5,23 +5,20 @@
     "registryName": "dimensional_geode",
     "config": {
         "outerShellBlocks": [
-            {"block": "create:cut_asurine", "weight": 95},
-            {"block": "create:asurine", "weight": 5}
+            { "block": "create:cut_asurine", "weight": 95 },
+            { "block": "create:asurine", "weight": 5 }
         ],
         "innerShellBlocks": [
-            {"block": "create:asurine", "weight": 65},
-            {"block": "emendatusenigmatica:lapis_asurine_ore", "weight": 25},
-            {"block": "emendatusenigmatica:diamond_asurine_ore", "weight": 25}
+            { "block": "create:asurine", "weight": 65 },
+            { "block": "emendatusenigmatica:lapis_asurine_ore", "weight": 25 },
+            { "block": "emendatusenigmatica:diamond_asurine_ore", "weight": 25 }
         ],
         "innerBlocks": [
-            {"block": "emendatusenigmatica:dimensional_cluster_shard_block", "weight": 60},
-            {"block": "emendatusenigmatica:budding_dimensional", "weight": 40}
+            { "block": "emendatusenigmatica:dimensional_cluster_shard_block", "weight": 60 },
+            { "block": "emendatusenigmatica:budding_dimensional", "weight": 40 }
         ],
-        "clusters": [
-            "emendatusenigmatica:small_dimensional_bud",
-            "emendatusenigmatica:medium_dimensional_bud"
-        ],
-        "fillBlocks": [{"block": "minecraft:air", "weight": 10}],
+        "clusters": ["emendatusenigmatica:small_dimensional_bud", "emendatusenigmatica:medium_dimensional_bud"],
+        "fillBlocks": [{ "block": "minecraft:air", "weight": 10 }],
         "chance": 20,
         "rarity": "rare",
         "crackChance": 0.25,
