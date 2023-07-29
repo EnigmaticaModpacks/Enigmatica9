@@ -4,6 +4,7 @@ ServerEvents.recipes((event) => {
     }
 
     const recipes = [
+        { id: /powah:crafting\/cable_(hardened|blazing|niotic|spirited|nitro)$/ },
         // Emendatus Enigmatica Related Stuff for Normal Mode
         // Ore Processing Rework Related stuff
 
