@@ -6,10 +6,10 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            ingredient: { fluid: 'industrialforegoing:latex', amount: 1000, count: 2.0 },
+            ingredient: { fluid: 'industrialforegoing:latex', amount: 1000 },
             result: [
                 { fluid: 'minecraft:water', amount: 100 },
-                { item: 'thermal:rubber', chance: 1.0 }
+                { item: 'thermal:rubber', chance: 2.0 }
             ],
             energy: 6000,
             id: `${id_prefix}rubber`

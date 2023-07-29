@@ -85,6 +85,7 @@ ServerEvents.recipes((event) => {
             item_input: [{ item: 'quark:blue_rune' }],
             pressure: 2.0,
             air_use_multiplier: 1.0,
+            temperature: { min_temp: 813 },
             speed: 2.0,
             id: `pneumaticcraft:thermo_plant/upgrade_matrix`
         },
@@ -135,13 +136,40 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}dielectric_paste`
         },
         {
-            fluid_output: { amount: 100, fluid: 'minecraft:water' },
-            item_output: { item: 'thermal:rubber' },
-            fluid_input: { type: 'pneumaticcraft:fluid', amount: 1000, tag: 'forge:latex' },
+            fluid_output: { amount: 50, fluid: 'industrialforegoing:latex' },
+            item_input: [{ item: 'minecraft:dandelion' }, { item: 'minecraft:vine' }],
             exothermic: false,
-            temperature: { max_temp: 320, min_temp: 310 },
+            pressure: 2.0,
+            speed: 2.0,
+            id: `${id_prefix}latex`
+        },
+        {
+            fluid_output: { amount: 50, fluid: 'minecraft:water' },
+            item_output: { item: 'thermal:rubber' },
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 500, tag: 'forge:latex' },
+            exothermic: false,
+            temperature: { max_temp: 423, min_temp: 310 },
             speed: 2.0,
             id: `${id_prefix}rubber`
+        },
+        {
+            fluid_output: { amount: 250, fluid: 'mekanism:sulfur_dioxide' },
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 250, fluid: 'minecraft:water' },
+            item_input: [{ tag: 'forge:essences/fire' }],
+            exothermic: false,
+            temperature: { max_temp: 423, min_temp: 310 },
+            pressure: 2.0,
+            speed: 2.0,
+            id: `${id_prefix}sulfur_dioxide`
+        },
+        {
+            item_output: { item: 'thermal:cured_rubber' },
+            item_input: [{ item: 'thermal:rubber' }],
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 5, fluid: 'mekanism:sulfur_dioxide' },
+            exothermic: false,
+            temperature: { max_temp: 423, min_temp: 310 },
+            speed: 2.0,
+            id: `${id_prefix}cured_rubber`
         }
     ];
 
