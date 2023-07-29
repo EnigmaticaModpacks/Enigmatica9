@@ -506,7 +506,7 @@ ServerEvents.recipes((event) => {
         {
             results: [{ item: 'starbunclemania:star_battery', count: 1 }],
             inputs: [
-                { type: 'pneumaticcraft:stacked_item', item: 'powah:capacitor_basic_large', count: 32 },
+                { type: 'pneumaticcraft:stacked_item', item: 'powah:capacitor_basic_large', count: 16 },
                 { item: 'hexerei:small_satchel' }
             ],
             pressure: 2.0,
@@ -515,7 +515,7 @@ ServerEvents.recipes((event) => {
         {
             results: [{ item: 'starbunclemania:star_battery', count: 1 }],
             inputs: [
-                { type: 'pneumaticcraft:stacked_item', item: 'powah:capacitor_niotic', count: 8 },
+                { type: 'pneumaticcraft:stacked_item', item: 'powah:capacitor_niotic', count: 4 },
                 { item: 'hexerei:small_satchel' }
             ],
             pressure: 2.0,
@@ -524,14 +524,14 @@ ServerEvents.recipes((event) => {
         {
             results: [{ item: 'starbunclemania:star_battery', count: 1 }],
             inputs: [
-                { type: 'pneumaticcraft:stacked_item', item: 'powah:capacitor_spirited', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', item: 'powah:capacitor_spirited', count: 1 },
                 { item: 'hexerei:small_satchel' }
             ],
             pressure: 2.0,
             id: `${id_prefix}star_battery_spirited`
         },
         {
-            results: [{ item: 'starbunclemania:star_battery', count: 2 }],
+            results: [{ item: 'starbunclemania:star_battery', count: 4 }],
             inputs: [{ item: 'powah:capacitor_nitro' }, { item: 'hexerei:small_satchel' }],
             pressure: 2.0,
             id: `${id_prefix}star_battery_nitro`
