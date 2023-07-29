@@ -133,6 +133,15 @@ ServerEvents.recipes((event) => {
             speed: 4.0,
             temperature: { min_temp: 813 },
             id: `${id_prefix}dielectric_paste`
+        },
+        {
+            fluid_output: { amount: 100, fluid: 'minecraft:water' },
+            item_output: { item: 'thermal:rubber' },
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 1000, tag: 'forge:latex' },
+            exothermic: false,
+            temperature: { max_temp: 320, min_temp: 310 },
+            speed: 2.0,
+            id: `${id_prefix}rubber`
         }
     ];
 

@@ -33,8 +33,11 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}iron_dust_from_sulfuric_acid`
         },
         {
-            results: [{ amount: 100, fluid: 'minecraft:water' }, { item: 'thermal:rubber' }],
-            ingredients: [{ amount: 900, fluidTag: 'forge:latex' }],
+            results: [
+                { amount: 100, fluid: 'minecraft:water' },
+                { item: 'thermal:rubber', count: 2 }
+            ],
+            ingredients: [{ amount: 1000, fluidTag: 'forge:latex' }],
             heatRequirement: 'heated',
             id: `${id_prefix}rubber`
         },
