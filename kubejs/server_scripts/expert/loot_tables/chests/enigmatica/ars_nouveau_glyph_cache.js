@@ -58,6 +58,9 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('ars_elemental:glyph_not_aerial_filter', 1, 1);
             pool.addItem('ars_elemental:glyph_not_insect_filter', 1, 1);
             pool.addItem('ars_elemental:glyph_not_aquatic_filter', 1, 1);
+            pool.addItem('ars_scalaes:glyph_shrink', 1, 1);
+            pool.addItem('ars_scalaes:glyph_expand', 1, 1);
+            pool.addItem('ars_scalaes:glyph_resize', 1, 1);
         });
     });
 
@@ -68,7 +71,6 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('ars_nouveau:glyph_infuse', 1, 1);
             pool.addItem('starbunclemania:glyph_pickup_fluid', 1, 1);
             pool.addItem('starbunclemania:glyph_place_fluid', 1, 1);
-            pool.addItem('ars_scalaes:glyph_resize', 1, 1);
             pool.addItem('toomanyglyphs:glyph_filter_is_mature', 1, 1);
             pool.addItem('toomanyglyphs:glyph_chaining', 1, 1);
             pool.addItem('toomanyglyphs:glyph_filter_is_baby', 1, 1);
@@ -103,8 +105,6 @@ ServerEvents.genericLootTables((event) => {
         table.addPool((pool) => {
             pool.rolls = 1.0;
 
-            pool.addItem('ars_scalaes:glyph_shrink', 1, 1);
-            pool.addItem('ars_scalaes:glyph_expand', 1, 1);
             pool.addItem('ars_nouveau:glyph_linger', 1, 1);
             pool.addItem('ars_nouveau:glyph_summon_vex', 1, 1);
             pool.addItem('ars_nouveau:glyph_wall', 1, 1);
