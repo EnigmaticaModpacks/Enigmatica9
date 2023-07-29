@@ -364,7 +364,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     if (crushed_ore_itemStack && raw_ingredient) {
         recipe = {
             type: 'create:crushing',
-            ingredients: [{ tag: `forge:ores/${material}`, count: 1 }],
+            ingredients: [{ tag: `forge:raw_materials/${material}`, count: 1 }],
             processingTime: properties[material].oreProcessing.create.processingTime,
             results: [Item.of(crushed_ore_itemStack).toJson()],
             id: `${id_prefix}create/crushing_wheels/raw_${material}`
@@ -473,7 +473,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     if (raw_ingredient && ingot_itemStack) {
         recipe = {
             type: 'thermal:smelter',
-            ingredients: [{ tag: `forge:ores/${material}`, count: 1 }],
+            ingredients: [{ tag: `forge:raw_materials/${material}`, count: 1 }],
             result: [{ item: ingot_itemStack.getId(), chance: 1.25 }],
             energy: 10000,
             id: `${id_prefix}thermal/smelter/raw_${material}`
@@ -491,7 +491,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
         recipes.push({
             type: 'mekanism:dissolution',
             gasInput: { amount: 1, gas: 'mekanism:sulfuric_acid' },
-            itemInput: { amount: 1, ingredient: { tag: `forge:ores/${material}`, count: 1 } },
+            itemInput: { amount: 1, ingredient: { tag: `forge:raw_materials/${material}`, count: 1 } },
             output: {
                 amount: 1000,
                 chemicalType: 'slurry',
@@ -520,7 +520,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
             recipes.push({
                 type: 'mekanism:injecting',
                 chemicalInput: { amount: 1, gas: 'mekanism:hydrogen_chloride' },
-                itemInput: { ingredient: { tag: `forge:ores/${material}`, count: 1 } },
+                itemInput: { ingredient: { tag: `forge:raw_materials/${material}`, count: 1 } },
                 output: Item.of(shard_itemStack, 4).toJson(),
                 id: `${id_prefix}mekanism/chemical_injecting/raw_${material}`
             });
@@ -542,7 +542,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
             recipes.push({
                 type: 'mekanism:purifying',
                 chemicalInput: { amount: 1, gas: 'mekanism:oxygen' },
-                itemInput: { ingredient: { tag: `forge:ores/${material}`, count: 1 } },
+                itemInput: { ingredient: { tag: `forge:raw_materials/${material}`, count: 1 } },
                 output: Item.of(clump_itemStack, 3).toJson(),
                 id: `${id_prefix}mekanism/purifying/raw_${material}`
             });
@@ -563,7 +563,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
         if (raw_ingredient) {
             recipes.push({
                 type: 'mekanism:enriching',
-                input: { ingredient: { tag: `forge:ores/${material}`, count: 1 } },
+                input: { ingredient: { tag: `forge:raw_materials/${material}`, count: 1 } },
                 output: Item.of(dust_itemStack, 2).toJson(),
                 id: `${id_prefix}mekanism/enriching/raw_${material}`
             });
@@ -585,7 +585,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
         recipe = {
             type: 'immersiveengineering:crusher',
             energy: 50000,
-            input: { tag: `forge:ores/${material}`, count: 1 },
+            input: { tag: `forge:raw_materials/${material}`, count: 1 },
             result: { base_ingredient: { item: dust_itemStack.getId() }, count: 2 },
             secondaries: [
                 {
@@ -634,7 +634,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
             type: 'immersiveengineering:arc_furnace',
             additives: [],
             energy: 51200,
-            input: { tag: `forge:ores/${material}`, count: 1 },
+            input: { tag: `forge:raw_materials/${material}`, count: 1 },
             results: [{ base_ingredient: { item: ingot_itemStack.getId() }, count: 3 }],
             secondaries: [
                 {
@@ -688,7 +688,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     if (raw_ingredient && dust_itemStack) {
         recipe = {
             type: 'ars_nouveau:crush',
-            input: { tag: `forge:ores/${material}`, count: 1 },
+            input: { tag: `forge:raw_materials/${material}`, count: 1 },
             output: [
                 {
                     chance: 1,
