@@ -506,7 +506,7 @@ ServerEvents.recipes((event) => {
         {
             results: [{ item: 'starbunclemania:star_battery', count: 1 }],
             inputs: [
-                { type: 'pneumaticcraft:stacked_item', item: 'powah:capacitor_basic_large', count: 64 },
+                { type: 'pneumaticcraft:stacked_item', item: 'powah:capacitor_basic_large', count: 32 },
                 { item: 'hexerei:small_satchel' }
             ],
             pressure: 2.0,
@@ -515,7 +515,7 @@ ServerEvents.recipes((event) => {
         {
             results: [{ item: 'starbunclemania:star_battery', count: 1 }],
             inputs: [
-                { type: 'pneumaticcraft:stacked_item', item: 'powah:capacitor_niotic', count: 16 },
+                { type: 'pneumaticcraft:stacked_item', item: 'powah:capacitor_niotic', count: 8 },
                 { item: 'hexerei:small_satchel' }
             ],
             pressure: 2.0,
@@ -524,24 +524,21 @@ ServerEvents.recipes((event) => {
         {
             results: [{ item: 'starbunclemania:star_battery', count: 1 }],
             inputs: [
-                { type: 'pneumaticcraft:stacked_item', item: 'powah:capacitor_spirited', count: 4 },
+                { type: 'pneumaticcraft:stacked_item', item: 'powah:capacitor_spirited', count: 2 },
                 { item: 'hexerei:small_satchel' }
             ],
             pressure: 2.0,
             id: `${id_prefix}star_battery_spirited`
         },
         {
-            results: [{ item: 'starbunclemania:star_battery', count: 1 }],
+            results: [{ item: 'starbunclemania:star_battery', count: 2 }],
             inputs: [{ item: 'powah:capacitor_nitro' }, { item: 'hexerei:small_satchel' }],
             pressure: 2.0,
             id: `${id_prefix}star_battery_nitro`
         },
         {
             results: [{ item: 'starbunclemania:star_bucket', count: 1 }],
-            inputs: [
-                { type: 'pneumaticcraft:stacked_item', item: 'thermal:fluid_cell_frame', count: 8 },
-                { item: 'hexerei:small_satchel' }
-            ],
+            inputs: [{ item: 'thermal:fluid_cell_frame' }, { item: 'hexerei:small_satchel' }],
             pressure: 2.0,
             id: `${id_prefix}star_bucket`
         },

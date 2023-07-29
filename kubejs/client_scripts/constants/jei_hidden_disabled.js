@@ -252,8 +252,9 @@ jei.normal.gases.hidden = [];
 
 // Expert
 jei.expert.items.disabled = [
-    /computercraft/,
-    /rftoolsbuilder/,
+    /computercraft:/,
+    /rftoolsbuilder:/,
+    /shrink:/,
 
     'ae2:charger',
     'ae2:vibration_chamber',
