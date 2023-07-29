@@ -487,7 +487,6 @@
 			]
 			subtitle: "Thermo-new-what-now?"
 			tasks: [{
-				count: 4L
 				id: "28A39770D414504E"
 				item: "pneumaticcraft:thermopneumatic_processing_plant"
 				type: "item"
