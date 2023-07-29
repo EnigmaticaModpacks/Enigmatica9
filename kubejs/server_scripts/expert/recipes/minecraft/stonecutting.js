@@ -21,6 +21,11 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}brass_bars`
         },
         {
+            output: '4x create:andesite_bars',
+            input: 'pneumaticcraft:compressed_stone',
+            id: `${id_prefix}andesite_bars`
+        },
+        {
             output: '4x create:copycat_panel',
             input: '#forge:ingots/ironwood',
             id: `${id_prefix}copycat_panel`
