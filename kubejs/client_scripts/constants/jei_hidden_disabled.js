@@ -596,6 +596,7 @@ jei.expert.items.disabled = [
     'pneumaticcraft:capacitor',
     'pneumaticcraft:transistor',
     'pneumaticcraft:drone_interface',
+    'pneumaticcraft:etching_acid_bucket',
 
     /powah:(thermo_generator|solar_panel|furnator|magmator|reactor|energy|battery|ender)/,
     /powah:(energizing_rod_|player_transmitter_|capacitor_)(blazing|hardened)/,
@@ -722,7 +723,7 @@ jei.expert.items.disabled = [
     'xnet:antenna_base'
 ];
 jei.expert.items.hidden = [];
-jei.expert.fluids.hidden = [];
+jei.expert.fluids.hidden = ['pneumaticcraft:etching_acid'];
 jei.expert.gases.hidden = [];
 jei.expert.categories.hidden = [];
 jei.expert.recipes.hidden = [

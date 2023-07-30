@@ -413,6 +413,7 @@ ServerEvents.recipes((event) => {
         { id: 'pneumaticcraft:pressure_chamber/empty_pcb' },
         { id: 'pneumaticcraft:pressure_chamber/transistor' },
         { id: 'pneumaticcraft:pressure_chamber/capacitor' },
+        { id: 'pneumaticcraft:pressure_chamber/etching_acid' },
         { id: 'pneumaticcraft:thermo_plant/reinforced_pressure_tube' },
         { id: 'pneumaticcraft:assembly/unassembled_pcb' },
         { id: 'pneumaticcraft:assembly/red_dye' },
