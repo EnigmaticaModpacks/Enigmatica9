@@ -65,6 +65,10 @@ ServerEvents.entityLootTables((event) => {
             pool.addItem('toomanyglyphs:glyph_lay_on_hands', 2);
             pool.addItem('toomanyglyphs:glyph_ray', 2);
             pool.addItem('toomanyglyphs:glyph_reverse_direction', 2);
+
+            pool.addItem('ars_scalaes:glyph_shrink', 2);
+            pool.addItem('ars_scalaes:glyph_expand', 2);
+            pool.addItem('ars_scalaes:glyph_resize', 2);
         });
     });
 });

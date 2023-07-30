@@ -34,6 +34,16 @@ ServerEvents.recipes((event) => {
                 id: `${id_prefix}${metal}_rod`
             });
         }
+
+        if (metal_properties[metal].wire) {
+            recipes.push({
+                output: `4x immersiveengineering:wire_${metal}`,
+                mold: 'immersiveengineering:mold_wire',
+                input: `#forge:ingots/${metal}`,
+                energy: 2400,
+                id: `${id_prefix}${metal}_wire`
+            });
+        }
     });
 
     recipes.forEach((recipe) => {

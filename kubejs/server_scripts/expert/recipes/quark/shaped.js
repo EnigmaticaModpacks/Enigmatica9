@@ -23,6 +23,15 @@ ServerEvents.recipes((event) => {
                 C: '#forge:ingots/bronze'
             },
             id: 'quark:tools/crafting/abacus'
+        },
+        {
+            output: '5x quark:framed_glass',
+            pattern: ['ABA', 'BAB', 'ABA'],
+            key: {
+                A: 'minecraft:glass',
+                B: '#forge:wires/lead'
+            },
+            id: 'quark:building/crafting/framed_glass'
         }
     ];
 

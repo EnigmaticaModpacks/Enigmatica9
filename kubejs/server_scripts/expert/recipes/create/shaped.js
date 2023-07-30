@@ -508,6 +508,26 @@ ServerEvents.recipes((event) => {
                 A: 'ars_nouveau:greater_experience_gem'
             },
             id: `create:crafting/materials/experience_block`
+        },
+        {
+            output: '2x create:redstone_link',
+            pattern: ['AB', 'CC'],
+            key: {
+                A: 'littlelogistics:transmitter_component',
+                B: 'littlelogistics:receiver_component',
+                C: '#forge:plates/electrum'
+            },
+            id: `create:crafting/logistics/redstone_link`
+        },
+        {
+            output: 'create:display_link',
+            pattern: ['AB', 'CC'],
+            key: {
+                A: 'littlelogistics:transmitter_component',
+                B: 'immersiveengineering:light_bulb',
+                C: '#forge:treated_wood_slab'
+            },
+            id: `create:crafting/logistics/display_link`
         }
     ];
 
