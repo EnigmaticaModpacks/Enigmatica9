@@ -1021,7 +1021,7 @@ ServerEvents.recipes((event) => {
             liquidOutput: { fluid: 'minecraft:lava' },
             fluidLevelsConsumed: 100,
             heatRequirement: 'heated',
-            id: `${id_prefix}brimstone`
+            id: `${id_prefix}netherrack`
         }
     ];
 
