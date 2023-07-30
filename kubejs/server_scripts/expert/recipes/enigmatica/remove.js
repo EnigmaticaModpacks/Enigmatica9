@@ -84,6 +84,8 @@ ServerEvents.recipes((event) => {
 
         { id: /buildinggadgets:gadget_/ },
 
+        { id: 'byg:brim_powder_from_stonecutter' },
+
         { id: 'constructionwand:stone_wand' },
         { id: 'constructionwand:iron_wand' },
 
@@ -140,6 +142,7 @@ ServerEvents.recipes((event) => {
 
         { id: /hexerei:.*_broom_from_mixing_cauldron/ },
         { id: /hexerei:.*_brush_from_mixing_cauldron/ },
+        { id: /hexerei:.*woodcutter/ },
         { id: 'hexerei:pestle_and_mortar_from_mixing_cauldron' },
         { id: 'hexerei:crystal_ball_from_mixing_cauldron' },
         { id: 'hexerei:warhammer_from_mixing_cauldron' },
