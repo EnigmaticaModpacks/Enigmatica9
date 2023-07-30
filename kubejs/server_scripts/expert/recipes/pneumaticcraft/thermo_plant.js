@@ -148,16 +148,16 @@ ServerEvents.recipes((event) => {
             item_output: { item: 'thermal:rubber' },
             fluid_input: { type: 'pneumaticcraft:fluid', amount: 500, tag: 'forge:latex' },
             exothermic: false,
-            temperature: { max_temp: 423, min_temp: 310 },
+            temperature: { max_temp: 423, min_temp: 373 },
             speed: 2.0,
             id: `${id_prefix}rubber`
         },
         {
-            fluid_output: { amount: 250, fluid: 'mekanism:sulfur_dioxide' },
-            fluid_input: { type: 'pneumaticcraft:fluid', amount: 250, fluid: 'minecraft:water' },
+            fluid_output: { amount: 1000, fluid: 'mekanism:sulfur_dioxide' },
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 1000, fluid: 'minecraft:water' },
             item_input: [{ tag: 'forge:essences/fire' }],
             exothermic: false,
-            temperature: { max_temp: 423, min_temp: 310 },
+            temperature: { max_temp: 423, min_temp: 373 },
             pressure: 2.0,
             speed: 2.0,
             id: `${id_prefix}sulfur_dioxide`
@@ -167,7 +167,7 @@ ServerEvents.recipes((event) => {
             item_input: [{ item: 'thermal:rubber' }],
             fluid_input: { type: 'pneumaticcraft:fluid', amount: 5, fluid: 'mekanism:sulfur_dioxide' },
             exothermic: false,
-            temperature: { max_temp: 423, min_temp: 310 },
+            temperature: { max_temp: 423, min_temp: 373 },
             speed: 2.0,
             id: `${id_prefix}cured_rubber`
         }
