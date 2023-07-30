@@ -986,6 +986,42 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 1000,
             heatRequirement: 'heated',
             id: `${id_prefix}soap`
+        },
+        {
+            output: `6x byg:brimstone`,
+            inputs: [
+                '#forge:dusts/sulfur',
+                'minecraft:netherrack',
+                'minecraft:netherrack',
+                'minecraft:netherrack',
+                '#forge:dusts/sulfur',
+                'minecraft:netherrack',
+                'minecraft:netherrack',
+                'minecraft:netherrack'
+            ],
+            liquid: { fluid: 'minecraft:lava' },
+            liquidOutput: { fluid: 'minecraft:lava' },
+            fluidLevelsConsumed: 100,
+            heatRequirement: 'heated',
+            id: `${id_prefix}brimstone`
+        },
+        {
+            output: `4x minecraft:netherrack`,
+            inputs: [
+                '#forge:cobblestone',
+                'create:cinder_flour',
+                '#forge:cobblestone',
+                'create:cinder_flour',
+                '#forge:cobblestone',
+                'create:cinder_flour',
+                '#forge:cobblestone',
+                'create:cinder_flour'
+            ],
+            liquid: { fluid: 'minecraft:lava' },
+            liquidOutput: { fluid: 'minecraft:lava' },
+            fluidLevelsConsumed: 100,
+            heatRequirement: 'heated',
+            id: `${id_prefix}netherrack`
         }
     ];
 

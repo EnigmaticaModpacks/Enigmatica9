@@ -28,6 +28,12 @@ ServerEvents.recipes((event) => {
             input: `#mekanism:clumps/nickel`,
             crushing_tier: metal_properties.nickel.crushing_tier,
             id_suffix: `nickel_dirty_dust_from_clumps`
+        },
+        {
+            outputs: { primary: 'byg:brim_powder' },
+            input: `byg:brimstone`,
+            crushing_tier: 1,
+            id_suffix: `brim_powder`
         }
     ];
 
