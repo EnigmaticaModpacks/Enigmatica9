@@ -21,6 +21,7 @@
 -   Removed faulty drawer recipes [\#536](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/536) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix broken ore processing recipes [\#552](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/552) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Hide visible Expert Storage quest. [\#548](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/548) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Slag glass is now made from slag gravel to avoid issues with Create smelting. [\#553](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/553) ([MuteTiefling](https://
 
 ### Removed Mods
 
