@@ -48,6 +48,12 @@ ServerEvents.recipes((event) => {
             output: 'minecraft:purple_stained_glass',
             xp: 0.5,
             id: `byg:purple_glass_from_sand`
+        },
+        {
+            input: 'immersiveengineering:slag_gravel',
+            output: 'immersiveengineering:slag_glass',
+            xp: 0.5,
+            id: `${id_prefix}slag_glass`
         }
     ];
 

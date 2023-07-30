@@ -1,12 +1,6 @@
 ServerEvents.recipes((event) => {
     const id_prefix = 'enigmatica:base/createaddition/rolling/';
-    const recipes = [
-        {
-            output: '2x immersiveengineering:wire_copper',
-            input: '#forge:plates/copper',
-            id: `${id_prefix}copper_wire`
-        }
-    ];
+    const recipes = [];
 
     Object.keys(metal_properties).forEach((metal) => {
         if (metal_properties[metal].rod) {
@@ -14,6 +8,14 @@ ServerEvents.recipes((event) => {
                 output: `2x emendatusenigmatica:${metal}_rod`,
                 input: `#forge:ingots/${metal}`,
                 id: `${id_prefix}${metal}_rod`
+            });
+        }
+
+        if (metal_properties[metal].wire) {
+            recipes.push({
+                output: '2x immersiveengineering:wire_lead',
+                input: `forge:rods/${metal}`,
+                id: `${id_prefix}lead_wire`
             });
         }
     });

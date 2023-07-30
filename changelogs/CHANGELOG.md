@@ -14,6 +14,7 @@
 -   Powah Capacitors are now cheaper to craft. [\#548](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/548) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Powah Energy Cables are cheaper to upgrade. [\#548](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/548) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Spawner Rifts will now spawn Wilden as part of the waves. [\#548](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/548) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Create Rolling now uses rods to make wires. [\#548](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/548) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
