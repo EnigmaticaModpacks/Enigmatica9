@@ -13,9 +13,9 @@ ServerEvents.recipes((event) => {
 
         if (metal_properties[metal].wire) {
             recipes.push({
-                output: '2x immersiveengineering:wire_lead',
-                input: `forge:rods/${metal}`,
-                id: `${id_prefix}lead_wire`
+                output: `2x immersiveengineering:wire_${metal}`,
+                input: `#forge:rods/${metal}`,
+                id: `${id_prefix}${metal}_wire`
             });
         }
     });
