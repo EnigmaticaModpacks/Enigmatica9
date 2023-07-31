@@ -214,7 +214,7 @@
 	#Set to false to disable the popup message telling you that you can config quark in the q menu
 	"Enable Onboarding" = true
 	#Quark replaces the Piston logic to allow for its piston features to work. If you're having troubles, try turning this off.
-	"Use Piston Logic Replacement" = true
+	"Use Piston Logic Replacement" = false
 	"Disable Q Menu Effects" = false
 	#Set to true if you need to find the class name for a screen that's causing problems
 	"Print Screen Classnames" = false
