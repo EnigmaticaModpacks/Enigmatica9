@@ -19,9 +19,9 @@ ServerEvents.genericLootTables((event) => {
         });
 
         table.addPool((pool) => {
-            pool.rolls = [3, 5];
-            pool.addItem('immersiveengineering:casull', 1, [56, 64]);
-            pool.addItem('immersiveengineering:armor_piercing', 1, [56, 64]);
+            pool.rolls = 1.0;
+            pool.addItem('immersiveengineering:casull', 1, [16, 24]);
+            pool.addItem('immersiveengineering:armor_piercing', 1, [16, 24]);
         });
 
         table.addPool((pool) => {
@@ -40,9 +40,9 @@ ServerEvents.genericLootTables((event) => {
         });
 
         table.addPool((pool) => {
-            pool.rolls = [3, 5];
-            pool.addItem('immersiveengineering:wolfpack', 1, [56, 64]);
-            pool.addItem('immersiveengineering:homing', 1, [56, 64]);
+            pool.rolls = 1.0;
+            pool.addItem('immersiveengineering:wolfpack', 1, [16, 24]);
+            pool.addItem('immersiveengineering:homing', 1, [16, 24]);
         });
 
         table.addPool((pool) => {

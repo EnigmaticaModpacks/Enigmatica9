@@ -4,7 +4,7 @@ ServerEvents.genericLootTables((event) => {
     }
     event.addGeneric('enigmatica:loot_boxes/create/rare', (table) => {
         table.addPool((pool) => {
-            pool.rolls = 2.0;
+            pool.rolls = 1.0;
             pool.addItem('create:super_glue', 1, 1);
             pool.addItem('create:powered_toggle_latch', 3, 1);
             pool.addItem('create:powered_latch', 3, 1);
@@ -22,13 +22,12 @@ ServerEvents.genericLootTables((event) => {
 
     event.addGeneric('enigmatica:loot_boxes/create/epic', (table) => {
         table.addPool((pool) => {
-            pool.rolls = 2.0;
+            pool.rolls = 1.0;
             pool.addItem('create:builders_tea', 1, 8);
             pool.addItem('create:pulse_repeater', 1, 1);
             pool.addItem('create:redstone_contact', 1, 1);
             pool.addItem('create:pulse_extender', 1, 1);
             pool.addItem('create:redstone_link', 1, 1);
-            pool.addItem('create:copper_casing', 1, 4);
             pool.addItem('create:brass_casing', 1, 4);
             pool.addItem('create:brown_toolbox', 1, 1);
             pool.addItem('create:crafting_blueprint', 1, 1);
@@ -46,6 +45,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('create:mechanical_arm', 1, 1);
             pool.addItem('create:rotation_speed_controller', 1, 1);
             pool.addItem('create:blaze_cake', 1, 8);
+            pool.addItem('create:copper_casing', 1, 4);
         });
 
         table.addPool((pool) => {

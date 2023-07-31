@@ -6,6 +6,7 @@ ServerEvents.genericLootTables((event) => {
         table.addPool((pool) => {
             pool.rolls = 2.0;
             pool.addItem('occultism:otherworld_log', 1, [8, 32]);
+            pool.addItem('occultism:sacrificial_bowl', 1, [2, 4]);
             pool.addItem('occultism:soul_gem', 1, [2, 4]);
             pool.addItem('minecraft:candle', 1, [4, 8]);
             pool.addItem('occultism:book_of_binding_foliot', 1, [1, 2]);

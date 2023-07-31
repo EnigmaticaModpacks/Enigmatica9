@@ -21,7 +21,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "7FB5DB1D16235D02"
-				item: "minecraft:redstone"
+				item: "kubejs:crude_iron_ingot"
 				title: "Material Processing"
 				type: "item"
 			}]
@@ -744,6 +744,22 @@
 			hide: true
 			icon: "mekanism:teleportation_core"
 			id: "2F22D2DB89CB9225"
+			rewards: [{
+				id: "18CA99642BE84CA5"
+				item: {
+					Count: 1b
+					id: "mekanism:configurator"
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "60000"
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				icon: "minecraft:raw_copper"
@@ -755,7 +771,7 @@
 						value: "forge:raw_materials"
 					}
 				}
-				title: "Any Raw Materials"
+				title: "Mekanism"
 				type: "item"
 			}]
 			title: "Mekanism"

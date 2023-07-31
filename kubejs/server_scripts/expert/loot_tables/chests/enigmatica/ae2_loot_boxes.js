@@ -23,6 +23,8 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('sophisticatedstorage:stack_upgrade_tier_2', 1, 1);
             pool.addItem('sophisticatedstorage:basic_to_iron_tier_upgrade', 2, 1);
             pool.addItem('sophisticatedstorage:iron_to_gold_tier_upgrade', 1, 1);
+            pool.addItem('functionalstorage:copper_upgrade', 1, 1);
+            pool.addItem('functionalstorage:gold_upgrade', 1, 1);
         });
 
         table.addPool((pool) => {
@@ -38,11 +40,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('ae2:fluix_covered_cable', 1, [5, 10]);
             pool.addItem('ae2:fluix_covered_dense_cable', 1, [5, 10]);
             pool.addItem('ae2:speed_card', 1, [1, 2]);
-            pool.addItem('ars_nouveau:amethyst_golem_charm', 1, 1);
             pool.addItem('ae2:interface', 1, 1);
-            pool.addItem('ae2:logic_processor', 1, [1, 3]);
-            pool.addItem('ae2:calculation_processor', 1, [1, 3]);
-            pool.addItem('ae2:engineering_processor', 1, [1, 3]);
         });
 
         table.addPool((pool) => {
