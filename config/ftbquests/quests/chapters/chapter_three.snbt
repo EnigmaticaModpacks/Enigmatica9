@@ -624,6 +624,7 @@
 				""
 				"From the Sea, Abyssal Seawater."
 			]
+			hide: true
 			icon: "industrialforegoing:ore_laser_base"
 			id: "17F735810850C368"
 			rewards: [
