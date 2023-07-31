@@ -333,10 +333,10 @@ ServerEvents.recipes((event) => {
                 'kubejs:dimensional_storage_crystal',
                 'ae2:fluix_pearl',
                 'ae2:fluix_pearl',
-                '#forge:ingots/signalum',
-                '#forge:ingots/signalum',
-                '#forge:ingots/signalum',
-                '#forge:ingots/signalum'
+                '#forge:ingots/bronze',
+                '#forge:ingots/bronze',
+                '#forge:ingots/bronze',
+                '#forge:ingots/bronze'
             ],
             time: 40,
             sapling: 'ars_nouveau:purple_archwood_sapling',
@@ -365,10 +365,10 @@ ServerEvents.recipes((event) => {
                 'ae2:spatial_cell_component_16',
                 'ae2:singularity',
                 'ae2:singularity',
-                '#forge:ingots/lumium',
-                '#forge:ingots/lumium',
-                '#forge:ingots/lumium',
-                '#forge:ingots/lumium'
+                '#forge:ingots/brass',
+                '#forge:ingots/brass',
+                '#forge:ingots/brass',
+                '#forge:ingots/brass'
             ],
             time: 40,
             sapling: 'ars_nouveau:purple_archwood_sapling',
@@ -381,11 +381,10 @@ ServerEvents.recipes((event) => {
                 'ae2:spatial_cell_component_128',
                 'ae2:singularity',
                 'ae2:singularity',
-
-                '#forge:ingots/soul_steel',
-                '#forge:ingots/soul_steel',
-                '#forge:ingots/soul_steel',
-                '#forge:ingots/soul_steel'
+                '#forge:ingots/osmium',
+                '#forge:ingots/osmium',
+                '#forge:ingots/osmium',
+                '#forge:ingots/osmium'
             ],
             time: 40,
             sapling: 'ars_nouveau:purple_archwood_sapling',

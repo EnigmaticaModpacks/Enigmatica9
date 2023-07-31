@@ -13,8 +13,6 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('naturesaura:spawn_lamp', 1, 1);
             pool.addItem('naturesaura:furnace_heater', 1, 2);
 
-            pool.addItem('minecraft:activator_rail', 1, [4, 8]);
-            pool.addItem('minecraft:rail', 1, [8, 16]);
             pool.addItem('naturesaura:mover_cart', 1, 1);
             pool.addItem('naturesaura:field_creator', 1, 2);
 
@@ -31,6 +29,8 @@ ServerEvents.genericLootTables((event) => {
         table.addPool((pool) => {
             pool.rolls = 2.0;
             pool.addItem('naturesaura:birth_spirit', 1, [4, 8]);
+            pool.addItem('minecraft:activator_rail', 1, [4, 8]);
+            pool.addItem('minecraft:rail', 1, [8, 16]);
             pool.addItem(Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:nether"}'), 1, 8);
             pool.addItem(Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'), 1, 8);
         });

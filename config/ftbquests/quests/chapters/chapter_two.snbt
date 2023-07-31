@@ -95,14 +95,32 @@
 			}
 			id: "0B7E9625225C8413"
 			min_width: 250
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "1CFE0B1B74ED4CFA"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "1CFE0B1B74ED4CFA"
+					player_command: false
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/medium"
+					icon: "kubejs:aura_leaf"
+					id: "5E8E3F027035E9FE"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "57F9A2443CFDEB47"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -130,6 +148,24 @@
 			dependencies: ["0B7E9625225C8413"]
 			description: ["The Wilden Tribute, found in the aftermath of the fight with the Wilden Chimera, is a mark held by those who have reached the pinnacle of magical ability. "]
 			id: "10238EBB9B55F67B"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/medium"
+					icon: "kubejs:aura_leaf"
+					id: "76820982E510BCA2"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "2D791DABDEA4EA64"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "1DDBFACA2CC5B913"
@@ -177,11 +213,19 @@
 			hide: true
 			icon: "powah:energizing_orb"
 			id: "60324503ED7AC4C1"
-			rewards: [{
-				id: "4FE88FB703488A37"
-				item: "energymeter:meter"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "4FE88FB703488A37"
+					item: "energymeter:meter"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1173DB9473878230"
+					item: "powah:energizing_rod_basic"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -207,12 +251,30 @@
 			]
 			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "2BA70920EA1ED0A8"
-			rewards: [{
-				count: 8
-				id: "123F692F841A813C"
-				item: "powah:crystal_blazing"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "123F692F841A813C"
+					item: "powah:crystal_blazing"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/medium"
+					icon: "kubejs:aura_leaf"
+					id: "3C777078A0ABDADD"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "5FF682FA29937DF5"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			tasks: [
 				{
 					id: "79ABD0D7EFB8D300"
@@ -270,20 +332,21 @@
 			]
 			icon: "kubejs:energetic_transference_matrix"
 			id: "21C352EEFEB25365"
-			rewards: [{
-				id: "6AF890724D4023A1"
-				item: {
-					Count: 1b
-					id: "thermal:upgrade_augment_2"
-					tag: {
-						AugmentData: {
-							BaseMod: 4
-							Type: "Upgrade"
-						}
-					}
+			rewards: [
+				{
+					id: "5C549F9BD46501E4"
+					item: "powah:player_transmitter_basic"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "363F6A8483473ED2"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			subtitle: "Interdimensional Outsourcing"
 			tasks: [
 				{
@@ -308,14 +371,32 @@
 				"With the inclusion of elemental fire, Crude Iron may be tempered into steel, while the inclusion of elemental air will purify the metal down into malleable Iron. "
 			]
 			id: "49159D9F94B7006C"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "79ACAFF79994FD61"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "79ACAFF79994FD61"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/medium"
+					icon: "kubejs:aura_leaf"
+					id: "3ED608B899030ACB"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "14F0F25098896414"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			tasks: [{
 				id: "7667047356862670"
 				item: "mekanism:metallurgic_infuser"
@@ -377,12 +458,22 @@
 			]
 			icon: "the_bumblezone:essence_of_the_bees"
 			id: "55C6945D58D77AB6"
-			rewards: [{
-				count: 8
-				id: "5D5766AB445B727E"
-				item: "the_bumblezone:royal_jelly_bottle"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "5D5766AB445B727E"
+					item: "the_bumblezone:royal_jelly_bottle"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "21E8E534E6A7EBA6"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -542,16 +633,26 @@
 			hide_dependency_lines: true
 			icon: "kubejs:tree_of_life_2"
 			id: "2759988A5B69A455"
-			rewards: [{
-				count: 2
-				id: "0606173E7BE74E39"
-				item: {
-					Count: 1b
-					id: "ars_nouveau:stable_warp_scroll"
-					tag: { }
+			rewards: [
+				{
+					count: 2
+					id: "0606173E7BE74E39"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:stable_warp_scroll"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "14AC976E409BBD66"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -613,14 +714,24 @@
 			hide_dependency_lines: true
 			icon: "ae2:controller"
 			id: "330C200F0F0243FC"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "72393E06B7289A9F"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "72393E06B7289A9F"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "5C8EE393AD050F66"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -653,12 +764,9 @@
 			icon: "createaddition:electric_motor"
 			id: "1FDD6F9166A33F8D"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "1510DA7F74A2CBA0"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
+				id: "340D5E7099030199"
+				item: "kubejs:bright_arcanite_crystal"
+				type: "item"
 			}]
 			tasks: [
 				{

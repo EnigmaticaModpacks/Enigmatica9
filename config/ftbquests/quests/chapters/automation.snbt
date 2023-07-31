@@ -1486,12 +1486,10 @@
 			id: "1B0B9D271A013CB1"
 			min_width: 300
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
-				icon: "kubejs:rare_lootbox"
-				id: "6FB0C0E66B7494DA"
-				player_command: false
-				title: "Rare PNC:R Loot Box"
-				type: "command"
+				count: 2
+				id: "580C270FD6B9EF4B"
+				item: "pneumaticcraft:module_expansion_card"
+				type: "item"
 			}]
 			subtitle: "Redstone Evolution"
 			tasks: [{

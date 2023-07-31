@@ -5,7 +5,6 @@ ServerEvents.genericLootTables((event) => {
     event.addGeneric('enigmatica:loot_boxes/industrial_foregoing/rare', (table) => {
         table.addPool((pool) => {
             pool.rolls = 2.0;
-            pool.addItem('industrialforegoing:machine_frame_simple', 10, 1);
             pool.addItem('industrialforegoing:item_transporter_type', 10, 2);
             pool.addItem('industrialforegoing:fluid_transporter_type', 10, 2);
             pool.addItem('thermal:rubber', 10, [8, 16]);

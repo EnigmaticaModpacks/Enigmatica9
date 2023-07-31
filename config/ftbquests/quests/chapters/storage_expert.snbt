@@ -106,12 +106,9 @@
 			icon: "naturesaura:range_visualizer"
 			id: "0C77E760CE4035D5"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				icon: "kubejs:farmers_delight"
-				id: "1148A7A53BEC2519"
-				player_command: false
-				title: "Farmer's Delight"
-				type: "command"
+				id: "76070AB169277DF7"
+				type: "xp"
+				xp: 100
 			}]
 			tasks: [{
 				id: "29A24395B22DE4C7"
@@ -132,12 +129,9 @@
 			icon: "create:brass_hand"
 			id: "4EE6A26305CC5B61"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				icon: "kubejs:farmers_delight"
-				id: "150F9A4BD235547C"
-				player_command: false
-				title: "Farmer's Delight"
-				type: "command"
+				id: "72D2A7223BAD7F22"
+				type: "xp"
+				xp: 100
 			}]
 			tasks: [{
 				id: "28EE47300CAC20CF"

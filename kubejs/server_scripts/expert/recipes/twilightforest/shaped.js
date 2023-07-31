@@ -54,6 +54,17 @@ ServerEvents.recipes((event) => {
                 C: 'thermal:satchel'
             },
             id: `${id_prefix}transformation_powder`
+        },
+        {
+            output: Item.of('twilightforest:steeleaf_axe')
+                .enchant('minecraft:efficiency', 2)
+                .enchant('apotheosis:chainsaw', 1),
+            pattern: ['AA', 'AB', ' B'],
+            key: {
+                A: '#forge:ingots/steeleaf',
+                B: '#forge:rods/wooden'
+            },
+            id: `twilightforest:equipment/steeleaf_axe`
         }
     ];
 
