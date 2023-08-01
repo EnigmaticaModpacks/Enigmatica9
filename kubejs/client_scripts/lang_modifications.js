@@ -244,6 +244,13 @@ const entries = {
             }
         },
         {
+            key: 'block.create.andesite_scaffolding',
+            value: {
+                normal: 'Andesite Scaffolding',
+                expert: 'Compressed Stone Scaffolding'
+            }
+        },
+        {
             key: 'block.create.brass_door',
             value: {
                 normal: 'Brass Door',

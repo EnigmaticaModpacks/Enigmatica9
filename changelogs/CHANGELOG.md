@@ -8,11 +8,21 @@
 -   Crystal Cluster blocks may now be converted to Budding via Right Click Interaction. [\#534](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/534) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Cooldown for Right Click Interactions has been reduced. [\#534](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/534) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Allow Therium and Subzero blocks to be broken down into the crystals. [\#538](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/538) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Shub Niggurath may now be summoned in the Twilight Forest. [\#548](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/548) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Whirlisprigs now love Fireflies and Cicadas to help give a boost to their environment. [\#548](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/548) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Chainmail is now cheaper to craft. [\#548](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/548) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Powah Capacitors are now cheaper to craft. [\#548](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/548) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Powah Energy Cables are cheaper to upgrade. [\#548](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/548) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Spawner Rifts will now spawn Wilden as part of the waves. [\#548](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/548) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Create Rolling now uses rods to make wires. Wires made from ingots in other machines now produce more to compensate. [\#553](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/553) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Onions may be purchased from the Market [\#564](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/564) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
 -   Removed faulty drawer recipes [\#536](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/536) ([MuteTiefling](https://github.com/MuteTiefling))
--   Fix broken ore processing recipes [\#540](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/540) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix broken ore processing recipes [\#552](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/552) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Hide visible Expert Storage quest. [\#548](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/548) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Slag glass is now made from slag gravel to avoid issues with Create smelting. [\#553](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/553) ([MuteTiefling](https://
 
 ### Removed Mods
 

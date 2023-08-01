@@ -90,7 +90,7 @@ ServerEvents.recipes((event) => {
             output: 'sophisticatedstorage:stack_upgrade_tier_2',
             pattern: ['AAA', 'BCB', 'AAA'],
             key: {
-                A: ['#forge:plates/iron', '#forge:plates/tin'],
+                A: '#forge:plates/tin',
                 B: 'ars_nouveau:repository',
                 C: 'sophisticatedstorage:stack_upgrade_tier_1'
             },

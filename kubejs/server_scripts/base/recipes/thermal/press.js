@@ -82,7 +82,7 @@ ServerEvents.recipes((event) => {
 
         if (metal_properties[metal].wire) {
             recipes.push({
-                result: [{ item: `immersiveengineering:wire_${metal}`, count: 2 }],
+                result: [{ item: `immersiveengineering:wire_${metal}`, count: 4 }],
                 ingredient: [{ tag: `forge:ingots/${metal}` }, { item: 'immersiveengineering:mold_wire' }],
                 energy: 2400,
                 id: `${id_prefix}wire_${metal}`

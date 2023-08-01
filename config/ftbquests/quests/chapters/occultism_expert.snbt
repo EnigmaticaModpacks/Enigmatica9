@@ -26,14 +26,16 @@
 			icon: "occultism:dictionary_of_spirits"
 			id: "53F52A1385C25A50"
 			rewards: [{
-				id: "675C6EFCBFB072DD"
-				type: "xp"
-				xp: 100
+				count: 4
+				id: "48F36BF208EEBF46"
+				item: "minecraft:fire_charge"
+				type: "item"
 			}]
 			shape: "gear"
 			tasks: [{
 				id: "3EE2A2A44A030705"
 				item: "occultism:datura_seeds"
+				title: "Occultism"
 				type: "item"
 			}]
 			title: "Occultism"

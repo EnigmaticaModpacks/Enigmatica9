@@ -13,6 +13,7 @@ ServerEvents.recipes((event) => {
         { mod: 'densetrees' },
 
         { type: 'immersiveengineering:mineral_mix' },
+        { type: 'createaddition:rolling' },
 
         { output: /pendorite/ },
         { output: /emeraldite/ },
@@ -58,24 +59,19 @@ ServerEvents.recipes((event) => {
 
         { id: /createaddition:mixing\/biomass/ },
         { id: /createaddition:crafting\/.*spool/ },
-        { id: /createaddition:rolling\/.*_ingot/ },
         { id: 'createaddition:crafting/barbed_wire' },
         { id: 'createaddition:crafting/redstone_relay' },
         { id: 'createaddition:crafting/connector' },
+        { id: 'createaddition:crafting/accumulator_conversion' },
         { id: 'createaddition:compacting/seed_oil' },
         { id: 'createaddition:mixing/bioethanol' },
         { id: 'createaddition:mechanical_crafting/accumulator' },
         { id: 'createaddition:mechanical_crafting/tesla_coil' },
         { id: 'createaddition:mechanical_crafting/electric_motor' },
         { id: 'createaddition:mechanical_crafting/alternator' },
-        { id: 'createaddition:rolling/copper_plate' },
-        { id: 'createaddition:rolling/iron_plate' },
         { id: 'createaddition:metalpress/wire_iron' },
-        { id: 'createaddition:rolling/gold_plate' },
         { id: 'createaddition:metalpress/wire_gold' },
-        { id: 'createaddition:rolling/straw' },
         { id: 'createaddition:compat/ae2/charged_certus_quartz' },
-        { id: 'createaddition:crafting/accumulator_conversion' },
         { id: 'createaddition:compat/immersiveengineering/crushing/coal_coke' },
         { id: 'createaddition:compat/immersiveengineering/crushing/coke_block' },
 
@@ -93,7 +89,7 @@ ServerEvents.recipes((event) => {
         { id: 'industrialforegoing:stonework_generate/andesite' },
         { id: 'industrialforegoing:laser_drill_ore/ores/cinnabar' },
 
-        { id: /immersiveengineering:metalpress\/(gear|rod|plate)_/ },
+        { id: /immersiveengineering:metalpress\/(gear|rod|plate|wire)_/ },
         { id: 'immersiveengineering:crafting/coal_coke_to_coke' },
         { id: 'immersiveengineering:refinery/biodiesel' },
         { id: 'immersiveengineering:crusher/slag' },
@@ -101,6 +97,7 @@ ServerEvents.recipes((event) => {
         { id: 'immersiveengineering:crusher/sandstone' },
         { id: 'immersiveengineering:crusher/bone_meal' },
         { id: 'immersiveengineering:crusher/red_sandstone' },
+        { id: 'immersiveengineering:smelting/slag_glass' },
 
         { id: /mekanism:enriching\/dye/ },
         { id: /mekanism:compat\/byg\/dye/ },

@@ -53,9 +53,7 @@
 				""
 				"Be warned, Aura is a limited resource which must be managed and replenished lest the natural order be disturbed. Draining too much can cause dire consequences."
 				""
-				"These quests will guide you through the mod, but be sure to refer back to the manual regularly for extra information. Chapters will unlock as you complete these quests and their associated achievements. "
-				""
-				"~MuteTiefling"
+				"These quests will guide you through the mod, but be sure to refer back to the manual regularly for extra information. Chapters will unlock as you complete these quests and their associated achievements."
 			]
 			hide: true
 			icon: "naturesaura:aura_bloom"
@@ -82,7 +80,7 @@
 						value: "minecraft:saplings"
 					}
 				}
-				title: "Any Sapling"
+				title: "Nature's Aura"
 				type: "item"
 			}]
 			title: "Nature's Aura"

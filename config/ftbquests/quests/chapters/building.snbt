@@ -13,23 +13,19 @@
 				"Welcome to the Building Chapter"
 				""
 				"This section contains a list of building/decoration based mods, and a handful of tools to help you get the job done, and set you on your way to becoming a seasoned builder."
-				""
-				"~Ridanisaurus Rid \\& MuteTiefling"
 			]
 			icon: "minecraft:scaffolding"
 			id: "058D3BEB64C74E27"
 			optional: true
 			rewards: [
 				{
-					count: 4
-					id: "6BCFA4922355B43F"
-					item: "create:builders_tea"
-					random_bonus: 4
+					id: "3C390EFCC5489351"
+					item: "minecraft:stonecutter"
 					type: "item"
 				}
 				{
-					id: "3C390EFCC5489351"
-					item: "minecraft:stonecutter"
+					id: "4E93367F3DC60C27"
+					item: "hexerei:mahogany_woodcutter"
 					type: "item"
 				}
 			]
@@ -619,21 +615,21 @@
 		{
 			dependencies: ["5411C8D2344CC2F1"]
 			description: [
-				"With a hefty crafting recipe, the Wand of Symmetry does not disappoint those that loves a little symmetry in their life."
+				"The Wand of Symmetry does not disappoint those who love a little symmetry in their life."
 				""
-				"This tool allows you to place a symmetry plane which perfectly mirrors your block placement."
+				"This tool will automatically place blocks in mirrored positions around a center point, making large projects a breeze."
 				""
-				"To start, Right Click a block on the ground to place your place. Once placed, you can Sneak Right Click to open the configuration GUI where you can select the plane type, and the mirroring axis."
+				"To start, Right Click a block on the ground to select the center point. Once selected, Sneak Right Click to open the configuration GUI to choose the plane type and the mirroring axis."
 			]
 			hide_dependency_lines: true
 			icon: "create:wand_of_symmetry"
 			id: "147B701C5BCF2424"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/create/legendary"
-				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
 				id: "01870BF5EE173AB5"
 				player_command: false
-				title: "Legendary Create Loot Box"
+				title: "Rare Create Loot Box"
 				type: "command"
 			}]
 			subtitle: "Lay your weary OCD to rest"
@@ -667,14 +663,8 @@
 			}
 			id: "73696B8EC7BB92C7"
 			rewards: [{
-				id: "1EA35555757745CC"
-				item: {
-					Count: 1b
-					id: "quark:trowel"
-					tag: {
-						Damage: 0
-					}
-				}
+				id: "2577A6FCCC09B07B"
+				item: "quark:abacus"
 				type: "item"
 			}]
 			shape: "square"

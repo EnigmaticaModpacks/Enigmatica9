@@ -256,7 +256,7 @@
 			}]
 			title: "Making Connections"
 			x: 0.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["64845BD36C494E85"]
@@ -297,8 +297,8 @@
 				title: "Covered Cables"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 1.0d
+			x: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5F3E20C3B3A32ACF"]
@@ -884,8 +884,8 @@
 				title: "Smart Cables"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 1.0d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["78F157F1561D932F"]
@@ -971,16 +971,10 @@
 			}]
 			shape: "gear"
 			tasks: [{
-				icon: "minecraft:raw_copper"
+				icon: "ae2:certus_quartz_crystal"
 				id: "04533E87C2D77F38"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:raw_materials"
-					}
-				}
-				title: "Any Raw Materials"
+				item: "ae2:certus_quartz_crystal"
+				title: "Applied Energistics 2"
 				type: "item"
 			}]
 			title: "Applied Energistics 2"

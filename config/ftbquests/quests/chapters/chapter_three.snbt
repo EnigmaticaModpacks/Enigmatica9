@@ -15,14 +15,24 @@
 			]
 			description: ["After some experimentation with the Echo Shards, it appears they may be further refined into a substance known as Pandemonium; the purest form of chaos with powerful creational capabilities. "]
 			id: "73B4078AB841567A"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "73146FCB5DE34BD0"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "73146FCB5DE34BD0"
+					player_command: false
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "4A56772129E93DBD"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			tasks: [{
 				id: "5534AEDEA476B323"
 				item: "mekanism:pellet_polonium"
@@ -67,14 +77,24 @@
 				"Normally exceptionally rare, the ancients of this land appear to have been harvesting it for unknown ends. "
 			]
 			id: "714A42E9CE3C32EA"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "435BC41E9248DDA9"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "435BC41E9248DDA9"
+					player_command: false
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "5767B842D947186A"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			tasks: [{
 				id: "318FFB5EA1AB4BCF"
 				item: "minecraft:echo_shard"
@@ -215,6 +235,14 @@
 			]
 			icon: "kubejs:tree_of_life_3"
 			id: "0672B242C31F4A11"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+				icon: "kubejs:aura_leaf"
+				id: "626DB2BAB756CD14"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -275,6 +303,14 @@
 			hide_dependency_lines: true
 			icon: "kubejs:tree_of_life_4"
 			id: "3DD1F3E561B3D06A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+				icon: "kubejs:aura_leaf"
+				id: "0139AC85B01E713C"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -297,19 +333,29 @@
 			description: ["Reach deep to the vivifying waters..."]
 			hide: true
 			id: "522FAC34F1EC78A6"
-			rewards: [{
-				id: "177458D9F208E475"
-				item: {
-					Count: 1b
-					id: "trofers:large_pillar"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "trofers:mastery_token_water"
+			rewards: [
+				{
+					id: "177458D9F208E475"
+					item: {
+						Count: 1b
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:mastery_token_water"
+							}
 						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "6E801CF58CCC17F1"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "6F37D1F612338755"
@@ -324,19 +370,29 @@
 			description: ["Rock to dust, dust to loam..."]
 			hide: true
 			id: "7F47E4A0E4F840B0"
-			rewards: [{
-				id: "1E7213CB27EC8097"
-				item: {
-					Count: 1b
-					id: "trofers:large_pillar"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "trofers:mastery_token_earth"
+			rewards: [
+				{
+					id: "1E7213CB27EC8097"
+					item: {
+						Count: 1b
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:mastery_token_earth"
+							}
 						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "79B5374F289BE361"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "1B2410E6942EED4C"
@@ -351,19 +407,29 @@
 			description: ["Grow tall, stretch to the sun's kiss..."]
 			hide: true
 			id: "78FA52767FE8D732"
-			rewards: [{
-				id: "707B97D92EFFEEBA"
-				item: {
-					Count: 1b
-					id: "trofers:large_pillar"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "trofers:mastery_token_fire"
+			rewards: [
+				{
+					id: "707B97D92EFFEEBA"
+					item: {
+						Count: 1b
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:mastery_token_fire"
+							}
 						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "6EC8C22079A42D8F"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "676C8DC7B592B237"
@@ -378,19 +444,29 @@
 			description: ["Lean into the wind's gentle embrace..."]
 			hide: true
 			id: "75A2DCF61048E5CE"
-			rewards: [{
-				id: "18DD56C12CED5345"
-				item: {
-					Count: 1b
-					id: "trofers:large_pillar"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "trofers:mastery_token_air"
+			rewards: [
+				{
+					id: "18DD56C12CED5345"
+					item: {
+						Count: 1b
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:mastery_token_air"
+							}
 						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "24D145AA7990A26D"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "29AACF719FD3F34E"
@@ -426,6 +502,14 @@
 			hide: true
 			hide_dependency_lines: true
 			id: "27AB2CF4AC1A051E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+				icon: "kubejs:aura_leaf"
+				id: "0FC494420DB000EC"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "1052BA22E449570E"
@@ -546,14 +630,24 @@
 			}
 			id: "4F90F6437D6CF7EC"
 			min_width: 250
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "75A68FA15696B77F"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "75A68FA15696B77F"
+					player_command: false
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "1D4D0A4842116B56"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -624,6 +718,7 @@
 				""
 				"From the Sea, Abyssal Seawater."
 			]
+			hide: true
 			icon: "industrialforegoing:ore_laser_base"
 			id: "17F735810850C368"
 			rewards: [
@@ -740,6 +835,14 @@
 				"The resulting Brine may then be cooked down to obtain Lithium and Iesnium, while the saturated filters may be processed to obtain Abyssaline, a potent form of Source useful in operating tools such as the Artificer’s Mining Drill and Buzzsaw."
 			]
 			id: "6E239ECBE33DFA36"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+				icon: "kubejs:aura_leaf"
+				id: "109F6B48B5CA4221"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
 			tasks: [{
 				id: "2879671AF2B13169"
 				item: "kubejs:saturated_magebloom_filter"
@@ -779,6 +882,14 @@
 			hide: true
 			hide_dependency_lines: true
 			id: "26A44571C5C0F6B4"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+				icon: "kubejs:aura_leaf"
+				id: "0874E8DB1A76AE45"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
 			shape: "heart"
 			tasks: [{
 				id: "29BB4A53F41C33F7"
@@ -800,6 +911,14 @@
 			dependencies: ["77E8DD38A379F9C7"]
 			description: ["Fire and Water both possess the cleansing power to remove the taint from Netherite, restoring it to its former glory. Choose one and develop an enchanting setup capable of performing the ritual. "]
 			id: "2D08D3CC44A509B9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+				icon: "kubejs:aura_leaf"
+				id: "76472EABA8CA9BC3"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
 			tasks: [{
 				icon: "apotheosis:heart_seashelf"
 				id: "2465E0454B8C2FD0"
@@ -848,6 +967,14 @@
 			]
 			icon: "apotheosis:soul_touched_sculkshelf"
 			id: "4410E58ED333FBCB"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+				icon: "kubejs:aura_leaf"
+				id: "4014F4C50BC08A30"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
 			tasks: [
 				{
 					icon: "apotheosis:soul_touched_sculkshelf"

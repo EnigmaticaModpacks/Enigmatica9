@@ -1,0 +1,37 @@
+
+#General settings
+[general]
+	#Is Enabled?
+	enabled = true
+	#Cost
+	#Range: > -2147483648
+	cost = 100
+	#Is Starter Glyph?
+	starter = false
+	#The maximum number of times this glyph may appear in a single spell
+	#Range: > 1
+	per_spell_limit = 2147483647
+	#The tier of the glyph
+	#Range: 1 ~ 99
+	glyph_tier = 2
+	#Limits the number of times a given augment may be applied to a given effect
+	#Example entry: "glyph_amplify=5"
+	augment_limits = []
+	#Enable a timer on the resize effects. Target will return to original size when potion effect is removed.
+	limitedSizeTime = true
+	#Potion duration, in seconds
+	#Range: > 0
+	potion_time = 120
+	#Extend time duration, in seconds
+	#Range: > 0
+	extend_time = 60
+	#Define the minimum size that can be reached.
+	#Range: 0.01 ~ 1.0
+	min_scaling = 0.5
+	#Define the maximum size that can be reached.
+	#Range: 1.1 ~ 30.0
+	max_scaling = 7.0
+	#Define the factor of the amplification -> size conversion. The value is doubled for shrinking.
+	#Range: 1.0 ~ 10.0
+	scaling_factor = 5.0
+

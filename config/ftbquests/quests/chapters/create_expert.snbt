@@ -31,12 +31,13 @@
 			}]
 			shape: "gear"
 			tasks: [{
+				icon: "create:large_cogwheel"
 				id: "77654BA6263D7365"
 				item: {
 					Count: 1b
 					id: "itemfilters:tag"
 					tag: {
-						value: "forge:stone"
+						value: "forge:raw_materials"
 					}
 				}
 				title: "Create"
@@ -1057,7 +1058,11 @@
 				"Fluid Tanks are a thematic multi-block tank for all your fluid storing needs. "
 				""
 				"While they can't be interacted with by the player directly, needing pipes to insert and extract fluids, they merge with adjacent tanks to form large multi-blocks for bulk storage."
-				"They can have a 1x1, 2x2, or 3x3 base and extend as high as you like. "
+				"They can have a 1x1, 2x2, or 3x3 base and may be extended vertically. "
+				""
+				"================================="
+				""
+				"Note, the storage capacity of Fluid Tanks has been increased substantially in Enigmatica 9. "
 			]
 			hide_dependency_lines: true
 			id: "1BDD98EC01F427FE"
@@ -1797,6 +1802,10 @@
 				"Like the shipping crates they replicate, Item Vaults can hold an enormous number of items per block. They don’t allow manual interaction, however, so items must be inserted or extracted via automation."
 				""
 				"Vaults may be combined to form a multi-block storage container. The base must remain square and can be expanded up to 3x3, while the length can be up to 3x the diameter for a maximum size of 3x3x9. "
+				""
+				"================================="
+				""
+				"Note, the storage capacity of Vaults has been increased substantially in Enigmatica 9. "
 			]
 			hide_dependency_lines: true
 			id: "2B2831B7CA29DFE7"

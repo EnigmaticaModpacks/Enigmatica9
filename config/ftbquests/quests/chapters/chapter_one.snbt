@@ -67,16 +67,16 @@
 				""
 				"Locate and kill the Naga. "
 				""
-				"It should be located somewhere nearby in a large stone courtyard. Though quick, Naga are not known for their intelligence and in their blind rage, they are easily dodged. Keep some distance and aim for the head."
+				"It should be located somewhere nearby in a large stone courtyard. Though quick, Naga are not known for their intelligence and in their blind rage they are easily dodged. Keep some distance and aim for the head."
 			]
 			hide: true
 			id: "73CDA6ED2393DE42"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				icon: "kubejs:farmers_delight"
-				id: "3526846CB76A8242"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+				icon: "kubejs:aura_leaf"
+				id: "74F868CAED853121"
 				player_command: false
-				title: "Farmer's Delight"
+				title: "Aura Infusion"
 				type: "command"
 			}]
 			shape: "hexagon"
@@ -133,11 +133,11 @@
 			hide_dependency_lines: true
 			id: "69D302194D4262C6"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "55D3BB51B2164167"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+				icon: "kubejs:aura_leaf"
+				id: "4C4DBF8114CB2E51"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "Aura Infusion"
 				type: "command"
 			}]
 			tasks: [
@@ -164,11 +164,11 @@
 			]
 			id: "7224985826C6E047"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "5AD0129D68FCCE54"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+				icon: "kubejs:aura_leaf"
+				id: "0BF68F0E91094483"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "Aura Infusion"
 				type: "command"
 			}]
 			tasks: [{
@@ -203,18 +203,28 @@
 			]
 			id: "66A59B3CD77FB54A"
 			min_width: 300
-			rewards: [{
-				count: 3
-				id: "7BE2B86F33268C1A"
-				item: {
-					Count: 1b
-					id: "minecraft:potion"
-					tag: {
-						Potion: "apotheosis:knowledge"
+			rewards: [
+				{
+					count: 3
+					id: "7BE2B86F33268C1A"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "apotheosis:knowledge"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "39B68CC0E19837B6"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			tasks: [{
 				id: "3E9ED412320D7C44"
 				item: {
@@ -460,12 +470,10 @@
 			icon: "pneumaticcraft:flux_compressor"
 			id: "0DB07D1C824BFEA8"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				icon: "kubejs:sorcerers_delight"
-				id: "57ADEBF0E1DBCB92"
-				player_command: false
-				title: "Sorcerer's Delight"
-				type: "command"
+				count: 4
+				id: "7C2B69BE8651EC03"
+				item: "pneumaticcraft:volume_upgrade"
+				type: "item"
 			}]
 			tasks: [
 				{
@@ -504,12 +512,10 @@
 			icon: "pneumaticcraft:pressure_chamber_interface"
 			id: "75C38D71F1A04EB4"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				icon: "kubejs:sorcerers_delight"
-				id: "06361DBAF7993B53"
-				player_command: false
-				title: "Sorcerer's Delight"
-				type: "command"
+				count: 4
+				id: "0B334D75FD80C81D"
+				item: "pneumaticcraft:speed_upgrade"
+				type: "item"
 			}]
 			tasks: [
 				{
@@ -539,14 +545,24 @@
 			]
 			id: "3B372F597A05E777"
 			min_width: 300
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				icon: "kubejs:sorcerers_delight"
-				id: "63EC6BE1C18F9E9A"
-				player_command: false
-				title: "Sorcerer's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "63EC6BE1C18F9E9A"
+					player_command: false
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/medium"
+					icon: "kubejs:aura_leaf"
+					id: "38C17BE6339B21BC"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			tasks: [{
 				id: "77D74CEE62130A5B"
 				item: "enigmaticunity:dim_source_generator"
@@ -784,6 +800,14 @@
 					item: "createaddition:straw"
 					type: "item"
 				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "6BEDB6EB5F5DD15C"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
 			]
 			tasks: [
 				{
@@ -899,14 +923,24 @@
 			]
 			hide_dependency_lines: true
 			id: "1C6BF5FE58C49456"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "368322B66A743C01"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "368322B66A743C01"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "43B5455E97D1AB02"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "6AB326583DEF4915"
@@ -929,14 +963,24 @@
 			]
 			hide_dependency_lines: true
 			id: "605D0EC9ABE8595E"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "51CCBDE9F54731C8"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "51CCBDE9F54731C8"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "35079413F0D062FB"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "2C9FC97C9F2B625B"
@@ -961,14 +1005,24 @@
 			]
 			hide_dependency_lines: true
 			id: "272C349F5CF92FA0"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "3C9CCE31C80E1348"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "3C9CCE31C80E1348"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "11B3DE3B0795BA69"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "1FB74CF06AD39276"
@@ -987,14 +1041,24 @@
 			]
 			hide_dependency_lines: true
 			id: "30DB748747B58442"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "61B34E18FBDA8BE6"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "61B34E18FBDA8BE6"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "06804245F30E2149"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "477CD97ADFBFC51B"
@@ -1067,14 +1131,24 @@
 			]
 			hide_dependency_lines: true
 			id: "7A3B33287BFF4CB1"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "07DDF6CFF702FA3E"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "07DDF6CFF702FA3E"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "1411C2FA9E44E9AE"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "700787ED503D9218"
@@ -1143,14 +1217,24 @@
 			hide_dependency_lines: true
 			icon: "ars_nouveau:conjuration_essence"
 			id: "087CFEB4B77FAE9B"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "75C613BBF99219CD"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "75C613BBF99219CD"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "5B324D5035FAA45D"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "5A391AC753037129"
@@ -1343,12 +1427,22 @@
 			hide_dependency_lines: true
 			icon: "ars_nouveau:bookwyrm_charm"
 			id: "585E9984E9D6D09C"
-			rewards: [{
-				count: 8
-				id: "0DD0D672A19E586E"
-				item: "ars_nouveau:repository"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "0DD0D672A19E586E"
+					item: "ars_nouveau:repository"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "11AB85F4A8D711C2"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -1379,12 +1473,22 @@
 			hide_dependency_lines: true
 			icon: "ars_nouveau:wixie_charm"
 			id: "60ECF7DD8B262631"
-			rewards: [{
-				count: 8
-				id: "7FD354CD076A2619"
-				item: "ars_nouveau:abjuration_essence"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "7FD354CD076A2619"
+					item: "ars_nouveau:abjuration_essence"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "5D0ACAACAA68E0CD"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -1427,6 +1531,14 @@
 					id: "75BF9711B018CC11"
 					item: "starbunclemania:direction_scroll"
 					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "11443A06230EBBDC"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
 				}
 			]
 			shape: "hexagon"
@@ -1490,20 +1602,30 @@
 			}
 			id: "72B2DCE0BDCE548F"
 			min_width: 300
-			rewards: [{
-				id: "32CA91154A0B0B68"
-				item: {
-					Count: 1b
-					ForgeCaps: {
-						Parent: {
-							hasFamiliar: 0b
+			rewards: [
+				{
+					id: "32CA91154A0B0B68"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								hasFamiliar: 0b
+							}
 						}
+						id: "occultism:familiar_ring"
+						tag: { }
 					}
-					id: "occultism:familiar_ring"
-					tag: { }
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "5961092F4097FD3E"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				advancement: "occultism:occultism/familiar/root"
@@ -1524,11 +1646,21 @@
 			]
 			hide_dependency_lines: true
 			id: "5A9F370B2DA197C9"
-			rewards: [{
-				id: "01A0DA4C928250F9"
-				item: "minecraft:budding_amethyst"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "01A0DA4C928250F9"
+					item: "minecraft:budding_amethyst"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "56ACF42C5D91BAF5"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "14E135F0E762732D"
@@ -1559,15 +1691,25 @@
 				}
 			}
 			id: "7DC3B92B7722D2EB"
-			rewards: [{
-				id: "24BD267ED65B77CB"
-				item: {
-					Count: 1b
-					id: "hexerei:crow_flute"
-					tag: { }
+			rewards: [
+				{
+					id: "24BD267ED65B77CB"
+					item: {
+						Count: 1b
+						id: "hexerei:crow_flute"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "5177B763DE66FC8D"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -1604,14 +1746,24 @@
 			]
 			hide_dependency_lines: true
 			id: "511EF28B97B74DA9"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "0BD0FAEB5CF42323"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "0BD0FAEB5CF42323"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "4F929950817CCC3E"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "6D5F8903CDAEFA40"
@@ -1656,6 +1808,14 @@
 			]
 			icon: "kubejs:tree_of_life_1"
 			id: "33BCDA0A76E2523C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+				icon: "kubejs:aura_leaf"
+				id: "389C33B783F1A41E"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -1699,14 +1859,21 @@
 			description: ["Made from considerably tougher materials than a simple Mortar, the Millstone can tougher ores and may even occasionally recover some secondary materials from the ore.  "]
 			hide_dependency_lines: true
 			id: "347A644441BCF449"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				icon: "kubejs:sorcerers_delight"
-				id: "651C07D976AD902F"
-				player_command: false
-				title: "Sorcerer's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "651C07D976AD902F"
+					player_command: false
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					id: "0E1F9854A317EE27"
+					item: "createaddition:straw"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0F473BC094DDA58D"
 				item: "create:millstone"
@@ -1731,12 +1898,19 @@
 			icon: "naturesaura:potion_generator"
 			id: "16E90BC107468EC2"
 			min_width: 300
-			rewards: [{
-				count: 8
-				id: "4AD02A30701D4394"
-				item: "minecraft:dragon_breath"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "4AD02A30701D4394"
+					item: "minecraft:dragon_breath"
+					type: "item"
+				}
+				{
+					id: "56A596BFA05198BA"
+					item: "naturesaura:mover_cart"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "150E44FC952BB995"
@@ -1938,17 +2112,27 @@
 			hide_dependency_lines: true
 			icon: "ars_nouveau:potion_melder"
 			id: "4682D4537535937C"
-			rewards: [{
-				id: "2301E26C33533490"
-				item: {
-					Count: 1b
-					id: "ars_nouveau:potion_flask"
-					tag: {
-						Damage: 8
+			rewards: [
+				{
+					id: "2301E26C33533490"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:potion_flask"
+						tag: {
+							Damage: 8
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "2136A5B6580847A6"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -1984,6 +2168,14 @@
 				}
 			}
 			id: "7AD5D1665CA3DF4F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+				icon: "kubejs:aura_leaf"
+				id: "44AF536691C6AFC3"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "512F931B7ED46E5C"
@@ -2191,14 +2383,24 @@
 				"Obtain Wool of each color and provide it to the Ram. "
 			]
 			id: "032D29DD7D946EDB"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				icon: "kubejs:sorcerers_delight"
-				id: "69D3102DD62060D9"
-				player_command: false
-				title: "Sorcerer's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "69D3102DD62060D9"
+					player_command: false
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "0BE9EBECF0414FE5"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "45865EFBDFC3E239"
@@ -2218,14 +2420,24 @@
 			]
 			hide: true
 			id: "1DC39E690B6178EF"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				icon: "kubejs:sorcerers_delight"
-				id: "67BBB8A5B92C7AE7"
-				player_command: false
-				title: "Sorcerer's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "67BBB8A5B92C7AE7"
+					player_command: false
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "6A9DEFBAF39BE8C7"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			shape: "heart"
 			tasks: [{
 				id: "644F047CE0367F5A"

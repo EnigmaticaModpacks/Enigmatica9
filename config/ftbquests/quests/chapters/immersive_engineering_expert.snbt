@@ -19,16 +19,7 @@
 			icon: "immersiveengineering:manual"
 			id: "24EB456683513CA7"
 			rewards: [{
-				count: 3
-				id: "37149643F21C4665"
-				item: "minecraft:raw_copper"
-				random_bonus: 5
-				title: "Copper Chunk"
-				type: "item"
-			}]
-			shape: "gear"
-			tasks: [{
-				id: "064FC2BF0229F351"
+				id: "68535F8D076AD10B"
 				item: {
 					Count: 1b
 					id: "immersiveengineering:hammer"
@@ -36,6 +27,20 @@
 						Damage: 0
 					}
 				}
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				icon: "immersiveengineering:electron_tube"
+				id: "064FC2BF0229F351"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials"
+					}
+				}
+				title: "Immersive Engineering"
 				type: "item"
 			}]
 			title: "Immersive Engineering"

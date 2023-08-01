@@ -11,8 +11,14 @@ ServerEvents.recipes((event) => {
             id: `create:crafting/kinetics/sequenced_gearshift`
         },
         {
-            output: 'create:adjustable_chain_gearshift',
-            inputs: ['create:encased_chain_drive', 'immersiveengineering:component_electronic'],
+            output: '4x create:adjustable_chain_gearshift',
+            inputs: [
+                'create:encased_chain_drive',
+                'create:encased_chain_drive',
+                'create:encased_chain_drive',
+                'create:encased_chain_drive',
+                'immersiveengineering:component_electronic'
+            ],
             id: `create:crafting/kinetics/adjustable_chain_gearshift`
         },
         {

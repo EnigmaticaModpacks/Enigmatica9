@@ -246,11 +246,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}depth_ingot`
         },
         {
-            ingredients: [
-                { item: 'thermal:rubber', count: 4 },
-                { tag: 'forge:essences/fire' },
-                { tag: 'forge:essences/water' }
-            ],
+            ingredients: [{ item: 'thermal:rubber', count: 4 }, { tag: 'forge:essences/fire' }],
             result: [{ item: `thermal:cured_rubber`, count: 4 }],
             energy: 1000,
             id: `${id_prefix}cured_rubber`

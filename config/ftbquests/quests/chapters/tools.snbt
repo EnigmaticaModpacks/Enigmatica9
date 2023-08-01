@@ -97,12 +97,9 @@
 					type: "item"
 				}
 				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-					icon: "kubejs:scavengers_delight"
-					id: "0000000000000A52"
-					player_command: false
-					title: "Scavenger's Delight"
-					type: "command"
+					id: "564EC50A5BEAF802"
+					item: "mininggadgets:upgrade_void_junk"
+					type: "item"
 				}
 			]
 			subtitle: "Frickin' Laser Beams"
@@ -182,11 +179,11 @@
 			hide_dependency_lines: true
 			id: "7AE1180EFAF22376"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
 				id: "4FDD99B9F9F65B1D"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "Sorcerer's Delight"
 				type: "command"
 			}]
 			subtitle: "Just to Spend it With You..."
@@ -327,12 +324,10 @@
 			}
 			id: "22C47015134927C0"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "103EB2CE0DC06A32"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
+				count: 4
+				id: "03E918A75D517C3C"
+				item: "pneumaticcraft:volume_upgrade"
+				type: "item"
 			}]
 			tasks: [
 				{
@@ -475,7 +470,7 @@
 		{
 			dependencies: ["358FAB3D482C463A"]
 			description: [
-				"Included with the Novice’s Spellbook is the Glyph of Break, which is used for any sort of block breaking. "
+				"Included with the Novice’s Spellbook is the Glyph of Break, which is used for any sort of block breaking."
 				""
 				"Available at Tier 2, the Glyph of Fell acts on Trees, Mushrooms, Cactus, or any other vegetation, cutting them down in one swift action. "
 				""
@@ -823,12 +818,18 @@
 			}
 			id: "0F002D99C31CFE24"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "7FEA0293136D2491"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
+				id: "1150B0F8C7A7A449"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "simplytools:power_of_the_depth"
+							lvl: 3s
+						}]
+					}
+				}
+				type: "item"
 			}]
 			shape: "circle"
 			tasks: [{
@@ -1165,30 +1166,20 @@
 			hide_dependency_lines: true
 			id: "2C96F74E20442E7A"
 			min_width: 300
-			rewards: [
-				{
-					id: "7F9E5B553D8A3A92"
-					item: {
-						Count: 1b
-						id: "minecraft:enchanted_book"
-						tag: {
-							StoredEnchantments: [{
-								id: "superiorshields:quickened"
-								lvl: 3s
-							}]
-						}
+			rewards: [{
+				id: "7F9E5B553D8A3A92"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "superiorshields:quickened"
+							lvl: 3s
+						}]
 					}
-					type: "item"
 				}
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-					icon: "kubejs:scavengers_delight"
-					id: "58C2D15E139FF54E"
-					player_command: false
-					title: "Scavenger's Delight"
-					type: "command"
-				}
-			]
+				type: "item"
+			}]
 			tasks: [{
 				icon: {
 					Count: 1b

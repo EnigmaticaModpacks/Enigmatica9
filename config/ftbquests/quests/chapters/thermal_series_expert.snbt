@@ -14,26 +14,14 @@
 				"The Thermal Series is a suite of mods that has been a staple of Modded Minecraft for years. Time has brought many changes to it, but it's kept its overall theme of slightly magical tech throughout. "
 				""
 				"The Thermalpedia goes into greater detail on many of the tools and machines in the Thermal Series. Refer to it often to learn more. "
-				""
-				"~MuteTiefling"
 			]
 			hide: true
 			id: "7CF7DC42CB9FA741"
-			rewards: [
-				{
-					count: 4
-					id: "11FC27D1FB008F0E"
-					item: "minecraft:raw_iron"
-					random_bonus: 8
-					title: "Iron Chunk"
-					type: "item"
-				}
-				{
-					id: "650ECE8106A678F2"
-					item: "thermal:wrench"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "650ECE8106A678F2"
+				item: "thermal:wrench"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				icon: {
@@ -48,10 +36,10 @@
 					Count: 1b
 					id: "itemfilters:tag"
 					tag: {
-						value: "forge:tools"
+						value: "forge:raw_materials"
 					}
 				}
-				title: "Any Tool"
+				title: "Thermal Series"
 				type: "item"
 			}]
 			title: "Thermal Series"

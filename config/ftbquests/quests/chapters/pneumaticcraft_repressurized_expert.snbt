@@ -14,8 +14,6 @@
 				"PneumaticCraft: Repressurized is all about logistics, automation, and generally blowing things up for profit. Mastering pressurized air and heat will be the beginning of your journey. "
 				""
 				"These quests will guide you through the mod, but be sure to refer back to the manual regularly for extra information. Chapters will unlock as you complete these quests and their associated achievements. "
-				""
-				"~MuteTiefling"
 			]
 			hide: true
 			icon: "pneumaticcraft:ingot_iron_compressed"
@@ -40,7 +38,7 @@
 					Count: 1b
 					id: "itemfilters:tag"
 					tag: {
-						value: "forge:tools"
+						value: "forge:raw_materials"
 					}
 				}
 				title: "PneumaticCraft: Repressurized"
@@ -69,24 +67,14 @@
 			icon: "pneumaticcraft:pressure_chamber_wall"
 			id: "2BCEA81413D908E4"
 			min_width: 400
-			rewards: [
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
-					icon: "kubejs:rare_lootbox"
-					id: "7364D55166238332"
-					player_command: false
-					title: "Rare PNC:R Loot Box"
-					type: "command"
-				}
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-					icon: "kubejs:scavengers_delight"
-					id: "54CE724936B37534"
-					player_command: false
-					title: "Scavenger's Delight"
-					type: "command"
-				}
-			]
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "7364D55166238332"
+				player_command: false
+				title: "Rare PNC:R Loot Box"
+				type: "command"
+			}]
 			tasks: [
 				{
 					count: 23L
@@ -247,9 +235,9 @@
 			id: "52165EC21DD8ABFB"
 			min_width: 250
 			rewards: [{
+				count: 3
 				id: "4CF7E22863B404CF"
 				item: "pneumaticcraft:heat_sink"
-				random_bonus: 7
 				title: "Heat Sink"
 				type: "item"
 			}]
@@ -400,9 +388,9 @@
 			icon: "pneumaticcraft:gas_lift"
 			id: "4BE812408CBFB588"
 			rewards: [{
-				id: "47CBFFB4C27B18A9"
-				item: "pneumaticcraft:seismic_sensor"
-				title: "Seismic Sensor"
+				count: 4
+				id: "012A65117575B993"
+				item: "pneumaticcraft:volume_upgrade"
 				type: "item"
 			}]
 			subtitle: "Hands Off!"
@@ -487,7 +475,6 @@
 			]
 			subtitle: "Thermo-new-what-now?"
 			tasks: [{
-				count: 4L
 				id: "28A39770D414504E"
 				item: "pneumaticcraft:thermopneumatic_processing_plant"
 				type: "item"
@@ -1152,12 +1139,20 @@
 			]
 			id: "19F79435C6D185E3"
 			min_width: 300
-			rewards: [{
-				id: "46B99CC6A928D067"
-				item: "pneumaticcraft:memory_stick"
-				title: "Memory Stick"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "46B99CC6A928D067"
+					item: "pneumaticcraft:memory_stick"
+					title: "Memory Stick"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7D37487ECAD39A8D"
+					item: "pneumaticcraft:volume_upgrade"
+					type: "item"
+				}
+			]
 			subtitle: "Full Reverse!"
 			tasks: [{
 				id: "543D0169C84EBE30"
@@ -1271,6 +1266,18 @@
 			]
 			icon: "pneumaticcraft:heat_sink"
 			id: "3EFFC773FB6104ED"
+			rewards: [
+				{
+					id: "7DD78B29101BCA5B"
+					item: "pneumaticcraft:module_expansion_card"
+					type: "item"
+				}
+				{
+					id: "1D728890056FF024"
+					item: "pneumaticcraft:regulator_tube_module"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "2F3872182DE0552B"
@@ -1417,22 +1424,11 @@
 			]
 			hide_dependency_lines: true
 			id: "4DB935C9023BE022"
-			rewards: [
-				{
-					id: "66EDA689BD443386"
-					item: "pneumaticcraft:drill_bit_compressed_iron"
-					title: "Compressed Iron Drill Bit"
-					type: "item"
-				}
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-					icon: "kubejs:scavengers_delight"
-					id: "3585331031C74F01"
-					player_command: false
-					title: "Scavenger's Delight"
-					type: "command"
-				}
-			]
+			rewards: [{
+				id: "717B60C4CC221693"
+				item: "pneumaticcraft:magnet_upgrade"
+				type: "item"
+			}]
 			subtitle: "Swiss-Army… Hammer"
 			tasks: [{
 				id: "215DF4ECB6072D79"
