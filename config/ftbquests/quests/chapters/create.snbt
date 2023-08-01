@@ -1050,7 +1050,7 @@
 				"Fluid Tanks are a thematic multi-block tank for all your fluid storing needs. "
 				""
 				"While they can't be interacted with by the player directly, needing pipes to insert and extract fluids, they merge with adjacent tanks to form large multi-blocks for bulk storage."
-				"They can have a 1x1, 2x2, or 3x3 base and extend as high as you like. "
+				"They can have a 1x1, 2x2, or 3x3 base and may be extended vertically. "
 			]
 			hide_dependency_lines: true
 			id: "0000000000000D17"
