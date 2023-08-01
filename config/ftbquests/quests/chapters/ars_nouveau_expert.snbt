@@ -339,7 +339,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["4838BDF5F871F986"]
+			dependencies: ["302C5405A92ABA2B"]
 			description: [
 				"Source permeates all things. Left to its own, it spreads and infuses but rarely collects. Binding it in jars is an excellent way of storing source for later use, but moving it from place to place can be a touchy subject."
 				""
@@ -1205,7 +1205,7 @@
 		}
 		{
 			dependencies: ["7EE4A2E96D7FAD4E"]
-			description: ["With their deep link to Source, Bookwyrms make excellent allies, lending their strength each of their partner’s spell casts. "]
+			description: ["With their deep link to Source, Bookwyrms make excellent allies, lending their strength to each of their partner’s spell casts. "]
 			id: "6739C16B7A5ADE24"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"

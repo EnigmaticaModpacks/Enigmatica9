@@ -1220,7 +1220,7 @@
 		}
 		{
 			dependencies: ["33F9C7DCBA952F1E"]
-			description: ["With their deep link to Source, Bookwyrms make excellent allies, lending their strength each of their partner’s spell casts. "]
+			description: ["With their deep link to Source, Bookwyrms make excellent allies, lending their strength to each of their partner’s spell casts. "]
 			id: "699DD621303B1301"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"

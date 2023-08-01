@@ -16,6 +16,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('toomanyglyphs:glyph_filter_monster', 1, 1);
             pool.addItem('toomanyglyphs:glyph_filter_item', 1, 1);
             pool.addItem('toomanyglyphs:glyph_reverse_direction', 1, 1);
+            pool.addItem('ars_nouveau:glyph_self', 1, 1);
             pool.addItem('ars_nouveau:glyph_grow', 1, 1);
             pool.addItem('ars_nouveau:glyph_dispel', 1, 1);
             pool.addItem('ars_nouveau:glyph_craft', 1, 1);
