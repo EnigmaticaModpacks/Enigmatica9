@@ -30,6 +30,7 @@
 				id: "7D0D0C5E4E8FF86D"
 				observe_type: 0
 				timer: 0L
+				title: "Gloaming Catalyst"
 				to_observe: "kubejs:gloaming_catalyst"
 				type: "observation"
 			}]
@@ -109,14 +110,6 @@
 					type: "command"
 				}
 				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/medium"
-					icon: "kubejs:aura_leaf"
-					id: "5E8E3F027035E9FE"
-					player_command: false
-					title: "Aura Infusion"
-					type: "command"
-				}
-				{
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 					icon: "kubejs:aura_leaf"
 					id: "57F9A2443CFDEB47"
@@ -152,24 +145,14 @@
 			dependencies: ["0B7E9625225C8413"]
 			description: ["The Wilden Tribute, found in the aftermath of the fight with the Wilden Chimera, is a mark held by those who have reached the pinnacle of magical ability. "]
 			id: "10238EBB9B55F67B"
-			rewards: [
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/medium"
-					icon: "kubejs:aura_leaf"
-					id: "76820982E510BCA2"
-					player_command: false
-					title: "Aura Infusion"
-					type: "command"
-				}
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
-					icon: "kubejs:aura_leaf"
-					id: "2D791DABDEA4EA64"
-					player_command: false
-					title: "Aura Infusion"
-					type: "command"
-				}
-			]
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+				icon: "kubejs:aura_leaf"
+				id: "2D791DABDEA4EA64"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "1DDBFACA2CC5B913"
@@ -263,14 +246,6 @@
 					type: "item"
 				}
 				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/medium"
-					icon: "kubejs:aura_leaf"
-					id: "3C777078A0ABDADD"
-					player_command: false
-					title: "Aura Infusion"
-					type: "command"
-				}
-				{
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 					icon: "kubejs:aura_leaf"
 					id: "5FF682FA29937DF5"
@@ -309,12 +284,9 @@
 			icon: "immersiveengineering:light_engineering"
 			id: "2C43443DCFFF65F4"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "04BACC81CA01141B"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
+				id: "4124CD879D379691"
+				item: "immersiveengineering:fluid_pump"
+				type: "item"
 			}]
 			tasks: [{
 				id: "05A605FCDAEBD972"
@@ -382,14 +354,6 @@
 					id: "79ACAFF79994FD61"
 					player_command: false
 					title: "Alchemist's Delight"
-					type: "command"
-				}
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/medium"
-					icon: "kubejs:aura_leaf"
-					id: "3ED608B899030ACB"
-					player_command: false
-					title: "Aura Infusion"
 					type: "command"
 				}
 				{
@@ -715,6 +679,7 @@
 		}
 		{
 			dependencies: ["60324503ED7AC4C1"]
+			description: ["The beating heart of a magical energy network, the elementals bound into the ME Controller direct the flow of magical energies between the various components of the network, enabling a witch to perform the most wonderous of feats imaginable. "]
 			hide_dependency_lines: true
 			icon: "ae2:controller"
 			id: "330C200F0F0243FC"
@@ -895,14 +860,6 @@
 			dependencies: ["1D0AA79380E87E57"]
 			description: ["Runic Manifolds serve to stabilize a greater dimensional pocket, allowing more spirits to work concurrently on the required task, while requiring less physical space for the apparatus itself. Fancy!"]
 			id: "7563E41DBF4FD286"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "1B24E64E968AA545"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
-			}]
 			tasks: [{
 				id: "6D78A382292EF627"
 				item: "industrialforegoing:machine_frame_simple"
