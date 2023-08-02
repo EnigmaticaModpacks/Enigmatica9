@@ -3,8 +3,8 @@ ClientEvents.highPriorityAssets((event) => {
     if (global.isNormalMode == false) {
         return;
     }
-    const payload = { filters: [], disable: true };
     const modes = ['base', 'normal'];
+    const payload = { filters: [], disable: true };
 
     modes.forEach((mode) => {
         jei[mode].fluids.hidden.forEach((stack) => {
@@ -12,5 +12,5 @@ ClientEvents.highPriorityAssets((event) => {
         });
     });
 
-    JsonIO.write(`kubejs/assets/emi/index/stacks/emi_hide_fluids.json`, payload);
+    JsonIO.write(`kubejs/assets/emi/index/stacks/emi_hidden_fluids.json`, payload);
 });
