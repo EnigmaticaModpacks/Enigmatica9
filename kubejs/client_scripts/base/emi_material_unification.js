@@ -90,9 +90,29 @@ ClientEvents.highPriorityAssets((event) => {
         'wood',
         'zinc'
     ];
-
+    const thermal = [
+        'onion',
+        'deepslate',
+        'lead',
+        'niter',
+        'flax',
+        'hops',
+        'nickel',
+        'raw',
+        'rice',
+        'ruby',
+        'sapphire',
+        'sawdust',
+        'silver',
+        'sulfur',
+        'tin',
+        'tomato',
+        'apatite',
+        'bitumen',
+        'cinnabar'
+    ];
     const regex_materials = `(${materials.join('|')})`;
-
+    const regex_thermal = `(${thermal.join('|')})`;
     const payload = {
         filters: [
             `/immersiveengineering:(stick|dust|plate|ingot|nugget|raw|raw_block|storage|ore|deepslate_ore)_${regex_materials}/`,
@@ -101,7 +121,7 @@ ClientEvents.highPriorityAssets((event) => {
             `/create:(crushed_raw|andesite_alloy|golden_sheet|raw_zinc|deepslate_ore)/`,
             `/mekanism:(clump|dirty_dust|crystal|shard|sawdust|${regex_materials})/`,
             `/mekanism:(dust|ingot|nugget|raw|block_raw|block)_${regex_materials}/`,
-            `/thermal:${regex_materials}_(dust|ingot|nugget|plate|gear|block)/`,
+            `/thermal:${regex_materials}_(dust|ingot|nugget|plate|gear|block|seeds)/`,
             `/createaddition:${regex_materials}_(ingot|nugget|sheet|rod)/`,
             `/occultism:${regex_materials}_(dust|ingot|nugget|block|ore)/`,
             `/occultism:ritual_dummy/craft_(miner|dimensional_mineshaft)/`,
@@ -114,19 +134,22 @@ ClientEvents.highPriorityAssets((event) => {
             `/minecraft:deepslate_${regex_materials}/`,
             `/immersiveengineering:(coke|slag)/`,
             `/minecraft:${regex_materials}_ore/`,
-            `/naturesaura:${regex_materials}/`,
+            `/naturesaura:(sky|infused|tainted)/`,
             `/emendatusenigmatica:andesite/`,
-            `/thermal:${regex_materials}/`,
+            `/thermal:${regex_thermal}/`,
             `sushigocrafting:rice_seeds`,
             `/ars_nouveau:source_gem/`,
             'twilightforest:carminite',
             `quark:charcoal_block`,
             `sushigocrafting:rice`,
-            `thermal:sawdust`,
             `ae2:ender_dust`,
-            `/thermal:raw/`,
             `/pendorite/`,
             `/ametrine/`
+
+
+
+
+            // Create, Natures Aura
         ],
         disable: true
     };
