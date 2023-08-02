@@ -725,7 +725,31 @@ jei.expert.items.disabled = [
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = ['pneumaticcraft:etching_acid'];
 jei.expert.gases.hidden = [];
-jei.expert.categories.hidden = ['industrialforegoing:ore_washer'];
+jei.expert.categories.hidden = [
+    'mekanism:boiler_casing',
+    'mekanism:gas_conversion',
+    'mekanism:thermal_evaporation_controller',
+    'occultism:miner',
+    'powah:coolant',
+    'powah:heat_source',
+    'powah:magmatic',
+    'powah:solid_coolant',
+    'immersiveengineering:cloche',
+    'industrialforegoing:bioreactor',
+    'industrialforegoing:fermenter',
+    'industrialforegoing:fluid_extractor',
+    'industrialforegoing:ore_sieve',
+    'industrialforegoing:ore_washer',
+    /industrialforegoing:mycelial/,
+    'thermal:compression_fuel',
+    'thermal:gourmand_fuel',
+    'thermal:insolator',
+    'thermal:insolator_catalyst',
+    'thermal:lapidary_fuel',
+    'thermal:magmatic_fuel',
+    'thermal:numismatic_fuel',
+    'thermal:stirling_fuel'
+];
 jei.expert.recipes.hidden = [
     {
         category: 'minecraft:crafting',

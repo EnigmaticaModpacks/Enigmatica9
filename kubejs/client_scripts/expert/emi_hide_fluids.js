@@ -8,7 +8,7 @@ ClientEvents.highPriorityAssets((event) => {
 
     modes.forEach((mode) => {
         jei[mode].fluids.hidden.forEach((stack) => {
-            payload.filters.push(`${stack}`);
+            payload.filters.push(stack.toString());
         });
     });
 

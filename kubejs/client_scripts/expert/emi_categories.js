@@ -8,7 +8,7 @@ ClientEvents.highPriorityAssets((event) => {
 
     modes.forEach((mode) => {
         jei[mode].categories.hidden.forEach((category) => {
-            payload.filters.push({ category: category });
+            payload.filters.push({ category: category.toString() });
         });
     });
     JsonIO.write(`kubejs/assets/emi/recipe/filters/emi_hidden_categories.json`, payload);

@@ -4,7 +4,70 @@
 			"category": "twilightforest:uncrafting"
 		},
 		{
+			"category": "mekanism:boiler_casing"
+		},
+		{
+			"category": "mekanism:gas_conversion"
+		},
+		{
+			"category": "mekanism:thermal_evaporation_controller"
+		},
+		{
+			"category": "occultism:miner"
+		},
+		{
+			"category": "powah:coolant"
+		},
+		{
+			"category": "powah:heat_source"
+		},
+		{
+			"category": "powah:magmatic"
+		},
+		{
+			"category": "powah:solid_coolant"
+		},
+		{
+			"category": "immersiveengineering:cloche"
+		},
+		{
+			"category": "industrialforegoing:bioreactor"
+		},
+		{
+			"category": "industrialforegoing:fermenter"
+		},
+		{
+			"category": "industrialforegoing:fluid_extractor"
+		},
+		{
 			"category": "industrialforegoing:ore_washer"
+		},
+		{
+			"category": "/industrialforegoing:mycelial/"
+		},
+		{
+			"category": "thermal:compression_fuel"
+		},
+		{
+			"category": "thermal:gourmand_fuel"
+		},
+		{
+			"category": "thermal:insolator"
+		},
+		{
+			"category": "thermal:insolator_catalyst"
+		},
+		{
+			"category": "thermal:lapidary_fuel"
+		},
+		{
+			"category": "thermal:magmatic_fuel"
+		},
+		{
+			"category": "thermal:numismatic_fuel"
+		},
+		{
+			"category": "thermal:stirling_fuel"
 		}
 	]
 }
