@@ -2,6 +2,9 @@
 	"filters": [
 		{
 			"category": "twilightforest:uncrafting"
+		},
+		{
+			"category": "industrialforegoing:ore_washer"
 		}
 	]
 }

@@ -725,7 +725,7 @@ jei.expert.items.disabled = [
 jei.expert.items.hidden = [];
 jei.expert.fluids.hidden = ['pneumaticcraft:etching_acid'];
 jei.expert.gases.hidden = [];
-jei.expert.categories.hidden = [];
+jei.expert.categories.hidden = ['industrialforegoing:ore_washer'];
 jei.expert.recipes.hidden = [
     {
         category: 'minecraft:crafting',
