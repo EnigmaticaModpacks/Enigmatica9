@@ -90,63 +90,45 @@ ClientEvents.highPriorityAssets((event) => {
         'wood',
         'zinc'
     ];
-    const thermal = [
-        'onion',
-        'deepslate',
-        'lead',
-        'niter',
-        'flax',
-        'hops',
-        'nickel',
-        'raw',
-        'rice',
-        'ruby',
-        'sapphire',
-        'sawdust',
-        'silver',
-        'sulfur',
-        'tin',
-        'tomato',
-        'apatite',
-        'bitumen',
-        'cinnabar'
-    ];
+
     const regex_materials = `(${materials.join('|')})`;
-    const regex_thermal = `(${thermal.join('|')})`;
     const payload = {
         filters: [
-            `/immersiveengineering:(stick|dust|plate|ingot|nugget|raw|raw_block|storage|ore|deepslate_ore)_${regex_materials}/`,
-            `/emendatusenigmatica:(iron|gold|copper|diamond|emerald|netherite|raw|)_(gold|copper|iron|ingot|nugget|block)/`,
-            `/emendatusenigmatica:${regex_materials}_air/`,
-            `/create:(crushed_raw|andesite_alloy|golden_sheet|raw_zinc|deepslate_ore)/`,
-            `/mekanism:(clump|dirty_dust|crystal|shard|sawdust|${regex_materials})/`,
-            `/mekanism:(dust|ingot|nugget|raw|block_raw|block)_${regex_materials}/`,
-            `/thermal:${regex_materials}_(dust|ingot|nugget|plate|gear|block|seeds)/`,
-            `/createaddition:${regex_materials}_(ingot|nugget|sheet|rod)/`,
-            `/occultism:${regex_materials}_(dust|ingot|nugget|block|ore)/`,
-            `/occultism:ritual_dummy/craft_(miner|dimensional_mineshaft)/`,
-            `/create:${regex_materials}_(ingot|nugget|sheet|block|ore)/`,
-            `/occultism:(infused|spirit_attuned|butcher|block|raw)/`,
-            `/createaddition:${regex_materials}_(wire|grit)/`,
-            `/farmersdelight:(beetroot|carrot|potato)_crate/`,
-            `/industrialforegoing:(diamond|gold|iron)_gear/`,
-            `/powah:(uraninite_ore|deepslate_uraninite)/`,
-            `/minecraft:deepslate_${regex_materials}/`,
-            `/immersiveengineering:(coke|slag)/`,
-            `/minecraft:${regex_materials}_ore/`,
-            `/naturesaura:(sky|infused|tainted)/`,
-            `/emendatusenigmatica:andesite/`,
-            `/thermal:${regex_thermal}/`,
-            `sushigocrafting:rice_seeds`,
-            `/ars_nouveau:source_gem/`,
-            'twilightforest:carminite',
-            `quark:charcoal_block`,
-            `sushigocrafting:rice`,
             `ae2:ender_dust`,
-            `/pendorite/`,
-            `/ametrine/`
+            `ars_nouveau:source_gem`,
 
-            // Create, Natures Aura
+            `/create:(crushed_raw|andesite_alloy|golden_sheet|raw_zinc|deepslate_ore)/`,
+            `/create:${regex_materials}_(ingot|nugget|sheet|block|ore)/`,
+            `/createaddition:${regex_materials}_(ingot|nugget|sheet|rod)/`,
+
+            `/emendatusenigmatica:(iron|gold|copper|diamond|emerald|netherite|raw)_(gold|copper|iron|ingot|nugget|block)/`,
+            `/emendatusenigmatica:${regex_materials}_air/`,
+            `/emendatusenigmatica:andesite/`,
+
+            `/immersiveengineering:(stick|dust|plate|ingot|nugget|raw|raw_block|storage|ore|deepslate_ore)_${regex_materials}/`,
+            `/immersiveengineering:(coke|slag)/`,
+
+            `/industrialforegoing:.*_gear/`,
+
+            `/mekanism:(clump|dirty_dust|crystal|shard)_${regex_materials}/`,
+            `/mekanism:(dust|ingot|nugget|raw|block_raw|block)_${regex_materials}/`,
+            `/mekanism:.*_ore/`,
+            `mekanism:sawdust`,
+
+            `/minecraft:deepslate_${regex_materials}/`,
+            `/minecraft:${regex_materials}_ore/`,
+
+            `/naturesaura:(sky|infused|tainted)/`,
+
+            `/occultism:${regex_materials}_(dust|ingot|nugget|block|ore)/`,
+            `/occultism:raw_${regex_materials}/`,
+
+            `quark:charcoal_block`,
+
+            `/thermal:${regex_materials}_(dust|ingot|nugget|plate|gear|block|seeds)/`,
+            `/thermal:raw_${regex_materials}/`,
+
+            'twilightforest:carminite'
         ],
         disable: true
     };

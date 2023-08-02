@@ -3,12 +3,12 @@ ClientEvents.highPriorityAssets((event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const payload = { removed: [] };
+    const payload = { filters: [], disable: true };
     const modes = ['base', 'expert'];
 
     modes.forEach((mode) => {
         jei[mode].fluids.hidden.forEach((stack) => {
-            payload.removed.push(`fluid:${stack}`);
+            payload.filters.push(`${stack}`);
         });
     });
 
