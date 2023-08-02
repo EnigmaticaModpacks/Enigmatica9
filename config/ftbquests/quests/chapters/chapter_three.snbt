@@ -77,30 +77,20 @@
 				"Normally exceptionally rare, the ancients of this land appear to have been harvesting it for unknown ends. "
 			]
 			id: "714A42E9CE3C32EA"
-			rewards: [
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-					icon: "kubejs:scavengers_delight"
-					id: "435BC41E9248DDA9"
-					player_command: false
-					title: "Scavenger's Delight"
-					type: "command"
-				}
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
-					icon: "kubejs:aura_leaf"
-					id: "5767B842D947186A"
-					player_command: false
-					title: "Aura Infusion"
-					type: "command"
-				}
-			]
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "435BC41E9248DDA9"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			tasks: [{
 				id: "318FFB5EA1AB4BCF"
 				item: "minecraft:echo_shard"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -1.0d
 			y: -3.0d
 		}
 		{
@@ -155,12 +145,10 @@
 			description: ["With Aetherium secured, a special chamber must be crafted to contain the reaction; letting this loose could devastate the land for millennia to come…"]
 			id: "7674A0390C41044C"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "1EE9E2B3957D2441"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
+				count: 32
+				id: "5C5FB30225345929"
+				item: "ae2:matter_ball"
+				type: "item"
 			}]
 			tasks: [{
 				id: "2D0E28E7D7C3B594"
@@ -481,12 +469,10 @@
 			description: ["With greater knowledge of spatial dimensions, the Afrit is capable of carving out an even greater internal volume for use by the spirits running this apparatus, allowing them to perform more complex tasks. "]
 			id: "7633AE65F02DCD1A"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "0EC0BB5CC7C8D37A"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
+				count: 2
+				id: "762EB64C87604948"
+				item: "pneumaticcraft:printed_circuit_board"
+				type: "item"
 			}]
 			tasks: [{
 				id: "03F8D1746B3320C2"
@@ -551,7 +537,7 @@
 			description: [
 				"With some research, it appears the Cult of the Ur-Ghast were preparing to summon a great evil into the land. To what purpose is still unclear. "
 				""
-				"Just the same, this debris will need to be purified before being put to use, the processes for which is not for the feint of heart. "
+				"Just the same, this debris will need to be purified before being put to use."
 			]
 			id: "77E8DD38A379F9C7"
 			rewards: [{
@@ -574,22 +560,30 @@
 		}
 		{
 			dependencies: ["2D08D3CC44A509B9"]
-			description: [
-				"Bait. "
-				""
-				"They were making bait. "
-				""
-				"Celestial Gold, blessed by the gods themselves, would ring out across the dimensions like a clear bell on a calm day. They’d never resist the chance to corrupt something so sacred. "
-			]
+			description: ["Celestial Gold, blessed by the gods themselves, would ring out across the dimensions like a clear bell on a calm day. The perfect bait for summoning a great corruption into the land. "]
 			id: "39B2F84EBDC27AA3"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "1E6AE784E9612FE8"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
+			rewards: [
+				{
+					id: "615C469EB4C34B41"
+					item: {
+						Count: 1b
+						id: "apotheosis:potion_charm"
+						tag: {
+							Damage: 0
+							Potion: "minecraft:strong_regeneration"
+						}
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "617415D046BDABDF"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
 			tasks: [{
 				icon: "emendatusenigmatica:tainted_gold_ingot"
 				id: "4241691B8FE4293D"
@@ -630,24 +624,14 @@
 			}
 			id: "4F90F6437D6CF7EC"
 			min_width: 250
-			rewards: [
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-					icon: "kubejs:scavengers_delight"
-					id: "75A68FA15696B77F"
-					player_command: false
-					title: "Scavenger's Delight"
-					type: "command"
-				}
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
-					icon: "kubejs:aura_leaf"
-					id: "1D4D0A4842116B56"
-					player_command: false
-					title: "Aura Infusion"
-					type: "command"
-				}
-			]
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+				icon: "kubejs:aura_leaf"
+				id: "1D4D0A4842116B56"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -668,7 +652,7 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
+			x: 1.0d
 			y: -3.0d
 		}
 		{
@@ -912,12 +896,10 @@
 			description: ["Fire and Water both possess the cleansing power to remove the taint from Netherite, restoring it to its former glory. Choose one and develop an enchanting setup capable of performing the ritual. "]
 			id: "2D08D3CC44A509B9"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
-				icon: "kubejs:aura_leaf"
-				id: "76472EABA8CA9BC3"
-				player_command: false
-				title: "Aura Infusion"
-				type: "command"
+				exclude_from_claim_all: true
+				id: "0D45425B5E80F556"
+				table_id: 8580198091964468709L
+				type: "choice"
 			}]
 			tasks: [{
 				icon: "apotheosis:heart_seashelf"

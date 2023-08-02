@@ -4,10 +4,12 @@ ServerEvents.highPriorityData((event) => {
 
     let recipes = [
         {
+            id: 'spawner_rift',
             size: 'small',
             color: '#0b9e32',
             leash_range: 256,
             allow_discarding: true,
+            remove_mobs_on_failure: false,
             rewards: [
                 {
                     type: 'stack',
@@ -146,10 +148,10 @@ ServerEvents.highPriorityData((event) => {
                     max_wave_time: 2400,
                     setup_time: 50
                 }
-            ],
-            id: 'spawner_rift'
+            ]
         },
         {
+            id: 'wither_council_gate',
             size: 'large',
             color: '#b30f04',
             leash_range: 256,
@@ -247,10 +249,10 @@ ServerEvents.highPriorityData((event) => {
                     max_wave_time: 1500,
                     setup_time: 50
                 }
-            ],
-            id: 'wither_council_gate'
+            ]
         },
         {
+            id: 'wilden_grove_gate',
             size: 'large',
             color: '#a005fa',
             leash_range: 256,
@@ -359,10 +361,10 @@ ServerEvents.highPriorityData((event) => {
                     max_wave_time: 2400,
                     setup_time: 50
                 }
-            ],
-            id: 'wilden_grove_gate'
+            ]
         },
         {
+            id: 'wild_hunt_gate',
             size: 'large',
             color: '#554a57',
             leash_range: 256,
@@ -463,10 +465,10 @@ ServerEvents.highPriorityData((event) => {
                     max_wave_time: 2400,
                     setup_time: 50
                 }
-            ],
-            id: 'wild_hunt_gate'
+            ]
         },
         {
+            id: 'possessed_skeleton_gate',
             size: 'large',
             color: '#D3D3D3',
             leash_range: 256,
@@ -567,8 +569,7 @@ ServerEvents.highPriorityData((event) => {
                     max_wave_time: 2400,
                     setup_time: 50
                 }
-            ],
-            id: 'possessed_skeleton_gate'
+            ]
         }
     ];
 

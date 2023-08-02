@@ -17,12 +17,10 @@
 			]
 			id: "4C676E7D2BA75DE4"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "34E9AE2633A6559C"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
+				count: 2
+				id: "0F52F5957E3F3790"
+				item: "rftoolsbase:infused_diamond"
+				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [{
@@ -100,24 +98,14 @@
 			}
 			id: "0B7E9625225C8413"
 			min_width: 250
-			rewards: [
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-					icon: "kubejs:scavengers_delight"
-					id: "1CFE0B1B74ED4CFA"
-					player_command: false
-					title: "Scavenger's Delight"
-					type: "command"
-				}
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
-					icon: "kubejs:aura_leaf"
-					id: "57F9A2443CFDEB47"
-					player_command: false
-					title: "Aura Infusion"
-					type: "command"
-				}
-			]
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+				icon: "kubejs:aura_leaf"
+				id: "57F9A2443CFDEB47"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -143,7 +131,7 @@
 		}
 		{
 			dependencies: ["0B7E9625225C8413"]
-			description: ["The Wilden Tribute, found in the aftermath of the fight with the Wilden Chimera, is a mark held by those who have reached the pinnacle of magical ability. "]
+			description: ["The Wilden Tribute, found in the aftermath of the fight with the Wilden Grove, is a mark held by those who have reached the pinnacle of magical ability. "]
 			id: "10238EBB9B55F67B"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
@@ -171,12 +159,9 @@
 			]
 			id: "6044FE23384692A5"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-				icon: "kubejs:alchemists_delight"
-				id: "11C12981BC558B2F"
-				player_command: false
-				title: "Alchemist's Delight"
-				type: "command"
+				id: "7D7743EF1763E052"
+				item: "create:rotation_speed_controller"
+				type: "item"
 			}]
 			tasks: [{
 				id: "0B70A4972A7F691F"
@@ -238,22 +223,12 @@
 			]
 			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "2BA70920EA1ED0A8"
-			rewards: [
-				{
-					count: 8
-					id: "123F692F841A813C"
-					item: "powah:crystal_blazing"
-					type: "item"
-				}
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
-					icon: "kubejs:aura_leaf"
-					id: "5FF682FA29937DF5"
-					player_command: false
-					title: "Aura Infusion"
-					type: "command"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "123F692F841A813C"
+				item: "powah:crystal_blazing"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "79ABD0D7EFB8D300"
@@ -349,20 +324,16 @@
 			id: "49159D9F94B7006C"
 			rewards: [
 				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
-					icon: "kubejs:alchemists_delight"
-					id: "79ACAFF79994FD61"
-					player_command: false
-					title: "Alchemist's Delight"
-					type: "command"
+					count: 8
+					id: "37CB2B7EFAFD94D1"
+					item: "emendatusenigmatica:enriched_fire_essence"
+					type: "item"
 				}
 				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
-					icon: "kubejs:aura_leaf"
-					id: "14F0F25098896414"
-					player_command: false
-					title: "Aura Infusion"
-					type: "command"
+					count: 8
+					id: "1D69775E794A868E"
+					item: "emendatusenigmatica:enriched_air_essence"
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -439,6 +410,14 @@
 					id: "21E8E534E6A7EBA6"
 					player_command: false
 					title: "Aura Infusion"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run summon the_bumblezone:beehemoth ~ ~2 ~"
+					icon: "the_bumblezone:bee_queen_spawn_egg"
+					id: "1F7EF0E9FB5A71ED"
+					player_command: false
+					title: "The Queen's Guard"
 					type: "command"
 				}
 			]
@@ -860,6 +839,11 @@
 			dependencies: ["1D0AA79380E87E57"]
 			description: ["Runic Manifolds serve to stabilize a greater dimensional pocket, allowing more spirits to work concurrently on the required task, while requiring less physical space for the apparatus itself. Fancy!"]
 			id: "7563E41DBF4FD286"
+			rewards: [{
+				id: "616836DA3BC9596E"
+				item: "kubejs:bright_arcanite_crystal"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6D78A382292EF627"
 				item: "industrialforegoing:machine_frame_simple"

@@ -1,0 +1,10 @@
+{
+	id: "7712FCB46E06CDE5"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 2, item: "apotheosis:infused_hellshelf" }
+		{ count: 2, item: "apotheosis:infused_seashelf" }
+	]
+	title: "Infused Shelf"
+}
