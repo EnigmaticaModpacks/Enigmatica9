@@ -12,8 +12,7 @@
 		"createaddition:seed_oil",
 		"createaddition:bioethanol",
 		"create:honey",
-		"cofh_core:honey",
-		"pneumaticcraft:etching_acid"
+		"cofh_core:honey"
 	],
 	"disable": true
 }
