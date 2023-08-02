@@ -884,6 +884,18 @@ ServerEvents.recipes((event) => {
             keepNbtOfReagent: true,
             sourceCost: 0,
             id: `${id_prefix}diamond_excavator`
+        },
+        {
+            output: 'ars_nouveau:thread_life_drain',
+            inputs: [
+                'ars_nouveau:mendosteen_pod',
+                '#forge:essences/anima',
+                '#forge:essences/abjuration',
+                '#forge:essences/abjuration'
+            ],
+            reagents: ['ars_nouveau:blank_thread'],
+            sourceCost: 0,
+            id: 'ars_nouveau:thread_life_drain'
         }
     ];
 

@@ -512,6 +512,14 @@ ServerEvents.recipes((event) => {
                 C: '#forge:plates/brass'
             },
             id: 'immersiveengineering:crafting/blastbrick_reinforced'
+        },
+        {
+            output: '4x immersiveengineering:sheetmetal_colored_white',
+            pattern: [' A ', 'A A', ' A '],
+            key: {
+                A: '#forge:plates/tin'
+            },
+            id: `${id_prefix}sheetmetal_colored_white_vertical`
         }
     ];
 

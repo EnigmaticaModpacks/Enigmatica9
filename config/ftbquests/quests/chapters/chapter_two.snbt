@@ -26,10 +26,14 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "47352920219144B1"
-				item: "kubejs:gloaming_catalyst"
-				type: "item"
+				icon: "kubejs:gloaming_catalyst"
+				id: "7D0D0C5E4E8FF86D"
+				observe_type: 0
+				timer: 0L
+				to_observe: "kubejs:gloaming_catalyst"
+				type: "observation"
 			}]
+			title: "Gloaming Catalyst"
 			x: 1.0d
 			y: 3.5d
 		}

@@ -16,6 +16,16 @@ ServerEvents.recipes((event) => {
                 E: '#forge:essences/water'
             },
             id: 'farmersdelight:cooking_pot'
+        },
+        {
+            output: 'farmersdelight:stove',
+            pattern: ['AAA', 'BCB', 'BBB'],
+            key: {
+                A: 'ars_nouveau:sourcestone',
+                B: 'minecraft:bricks',
+                C: '#forge:essences/fire'
+            },
+            id: 'farmersdelight:stove'
         }
     ];
 

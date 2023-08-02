@@ -443,7 +443,7 @@ ItemEvents.tooltip((event) => {
         },
         {
             items: ['kubejs:aura_leaf'],
-            text: [Text.of('Generate a quantity of Aura at the ritual site').gold()]
+            text: [Text.of('Generate a quantity of Aura nearby').gold()]
         },
         {
             items: [
