@@ -134,7 +134,7 @@ ClientEvents.highPriorityAssets((event) => {
             `/minecraft:deepslate_${regex_materials}/`,
             `/immersiveengineering:(coke|slag)/`,
             `/minecraft:${regex_materials}_ore/`,
-            `/naturesaura:${regex_materials}/`,
+            `/naturesaura:(sky|infused|tainted)/`,
             `/emendatusenigmatica:andesite/`,
             `/thermal:${regex_thermal}/`,
             `sushigocrafting:rice_seeds`,
