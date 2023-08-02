@@ -138,7 +138,7 @@
 			]
 			title: "Supercritical Phase Shifter"
 			x: -2.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["10C86AC59F9FA412"]
@@ -156,7 +156,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 0.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["7674A0390C41044C"]
@@ -180,12 +180,15 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 0.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["04B0F0BE6E54D620"]
 			description: [
-				"This metal hums with potential and seems uniquely attuned to the shadow people known as Endermen. Undoubtedly, it will help anchor a teleportation ritual to wherever they call home. "
+				"Travel to the home of the Endermen is risky in and of itself, and tales tell of many a practitioner who attempted the journey never to return. "
+				""
+				"By all accounts, bringing some means of flying will be critical to successfully navigating this land. "
+				""
 				""
 				"================================="
 				""
@@ -193,6 +196,14 @@
 			]
 			icon: "minecraft:chorus_fruit"
 			id: "0EBE44D4C30C0E51"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+				icon: "kubejs:aura_leaf"
+				id: "0505511F544D9B32"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -210,7 +221,7 @@
 				}
 			]
 			x: 1.0d
-			y: 0.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["73B4078AB841567A"]
@@ -247,42 +258,40 @@
 			]
 			title: "Tree of Life"
 			x: 0.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["0EBE44D4C30C0E51"]
 			description: [
 				"True dragons passed from our world ages ago. Finding one here in this realm is quite a surprise, though certainly welcome. The magic and knowledge it bears will be vital in the final restoration of the Tree. "
 				""
-				"It seems a shame to cage such a majestic creature…"
+				"It does seem a shame to cage such a majestic creature…"
+				""
+				"Shame or not, it must be done. No sentient creature of this power would allow itself to be contained through lesser means. "
+				""
+				"By enchanting the dragon into a lens, we’ll be able to safely extract what we need to fully restore the Tree of Life. "
 			]
-			icon: "emendatusenigmatica:enderium_ingot"
+			icon: "minecraft:dragon_head"
 			id: "2C30585E7A2D5EB3"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "44489DB5A4DA190A"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+				icon: "kubejs:aura_leaf"
+				id: "27C72A314A0835DD"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "Aura Infusion"
 				type: "command"
 			}]
-			tasks: [
-				{
-					id: "2314F1FE7822D002"
-					item: "emendatusenigmatica:enderium_ingot"
-					type: "item"
-				}
-				{
-					id: "39F08E9BA05341F4"
-					item: "powah:lens_of_ender"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "114FEEA47DDAD763"
+				item: "powah:lens_of_ender"
+				type: "item"
+			}]
+			title: "Ender Dragon"
 			x: 2.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["2C30585E7A2D5EB3"]
+			dependencies: ["4A5EF56081E8EE6E"]
 			description: [
 				"With the final Shard obtained, the Tree of Life will finally be restored to its full glory. "
 				""
@@ -351,7 +360,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["27AB2CF4AC1A051E"]
@@ -388,7 +397,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["27AB2CF4AC1A051E"]
@@ -425,7 +434,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["27AB2CF4AC1A051E"]
@@ -462,7 +471,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["606F79DAEB15E85B"]
@@ -504,7 +513,7 @@
 			}]
 			title: "Final Rites"
 			x: 0.0d
-			y: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["356B7D1DFF632DBD"]
@@ -889,7 +898,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["77E8DD38A379F9C7"]
@@ -988,6 +997,27 @@
 			]
 			x: -0.5d
 			y: -4.5d
+		}
+		{
+			dependencies: ["2C30585E7A2D5EB3"]
+			description: ["The ancient wisdom of the Ender Dragon, artfully distilled into a powerful material known as Enderium. "]
+			hide_dependency_lines: true
+			id: "4A5EF56081E8EE6E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+				icon: "kubejs:aura_leaf"
+				id: "6C551A3BE7841241"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
+			tasks: [{
+				id: "1C9A57120CE19688"
+				item: "emendatusenigmatica:enderium_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
 		}
 	]
 	title: "Chapter Three"
