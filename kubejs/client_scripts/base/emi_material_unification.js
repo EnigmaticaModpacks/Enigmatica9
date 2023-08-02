@@ -146,9 +146,6 @@ ClientEvents.highPriorityAssets((event) => {
             `/pendorite/`,
             `/ametrine/`
 
-
-
-
             // Create, Natures Aura
         ],
         disable: true
