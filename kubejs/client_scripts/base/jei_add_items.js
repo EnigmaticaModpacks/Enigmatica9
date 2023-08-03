@@ -1,5 +1,1 @@
-JEIEvents.addItems((event) => {
-    added_items.forEach((item) => {
-        event.add(item);
-    });
-});
+// TODO: Remove next breaking update
