@@ -49,14 +49,11 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'naturesaura:generator_limit_remover',
-            pattern: ['ABA', 'DCE', 'AFA'],
+            pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: 'naturesaura:infused_stone',
-                B: 'kubejs:mote_of_wisdom',
-                C: '#forge:gems/infused_diamond',
-                D: 'kubejs:mote_of_enduring',
-                E: 'kubejs:mote_of_rebirth',
-                F: 'kubejs:mote_of_renewal'
+                B: 'quark:lime_rune',
+                C: 'kubejs:spirit_of_devotion'
             },
             id: `naturesaura:generator_limit_remover`
         },
