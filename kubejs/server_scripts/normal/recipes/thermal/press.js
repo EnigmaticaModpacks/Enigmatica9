@@ -70,15 +70,6 @@ ServerEvents.recipes((event) => {
             ingredients: [{ tag: 'forge:storage_blocks/iron' }, { item: 'ae2:silicon_press' }],
             energy: 4000,
             id: `${id_prefix}silicon_press`
-        },
-        {
-            result: [{ item: `pneumaticcraft:compressed_iron_gear` }],
-            ingredients: [
-                { tag: `forge:ingots/compressed_iron`, count: 4 },
-                { item: 'immersiveengineering:mold_gear' }
-            ],
-            energy: 2400,
-            id: `${id_prefix}compressed_iron_gear`
         }
     ];
 

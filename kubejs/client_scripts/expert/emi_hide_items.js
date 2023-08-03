@@ -3,18 +3,16 @@ ClientEvents.highPriorityAssets((event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const payload = { filters: [] };
     const modes = ['base', 'expert'];
+    const payload = { hidden: { filters: [] }, disabled: { filters: [], disable: true } };
 
-    modes.forEach((mode) => {
-        jei[mode].items.hidden.forEach((stack) => {
-            payload.filters.push(stack.toString());
+    Object.keys(payload).forEach((type) => {
+        modes.forEach((mode) => {
+            jei[mode].items[type].forEach((stack) => {
+                payload[type].filters.push(stack.toString());
+            });
         });
 
-        jei[mode].items.disabled.forEach((stack) => {
-            payload.filters.push(stack.toString());
-        });
+        JsonIO.write(`kubejs/assets/emi/index/stacks/emi_${type}_items.json`, payload[type]);
     });
-
-    JsonIO.write(`kubejs/assets/emi/index/stacks/emi_hide_items.json`, payload);
 });

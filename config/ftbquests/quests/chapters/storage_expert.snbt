@@ -1201,15 +1201,17 @@
 			dependencies: ["2A0CD26353B9E8C2"]
 			dependency_requirement: "one_completed"
 			description: [
-				"The Sophisticated Storage Controller acts as a central hub for automation. Any linked drawers are accessible through it by things such as pipes, hoppers, or an ME Storage Bus."
+				"The Sophisticated Storage Controller acts as a central hub for automation. Any linked containers are accessible through it by things such as pipes, hoppers, or an ME Storage Bus."
 				""
-				"Connections are wireless but linking a block to the controller requires two things. "
+				"To connect a Sophisticated Storage container to the Controller, simply place it down next to the Controller. More containers may be added, so long as everything is touching. Chaining in this way works out to 12 blocks from the Controller.  "
 				""
-				"First, place a Storage Link against the block in question, one per storage. "
+				"Otherwise, remote containers may be linked with the help of a Storage Link. This will work in much the same way as a Controller in that a single Link can be used to connect a chained series of containers.  "
+				""
+				"First, place a Storage Link against the block in question. "
 				""
 				"Next, Sneak + Right Click the Controller with a Storage Tool to select it."
 				""
-				"Finally, Right Click one or more Storage Links to create the connection. Each successful link will render a line between the Controller and the Storage Link. "
+				"Finally, Right Click one or more Storage Links to create the connection. Each successful link will render a line between the Controller and the Storage Link."
 			]
 			id: "0777EE2C3BDB1F2D"
 			min_width: 300

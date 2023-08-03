@@ -1,0 +1,118 @@
+{
+	"filters": [
+		{
+			"category": "twilightforest:uncrafting"
+		},
+		{
+			"category": "mekanism:boiler_casing"
+		},
+		{
+			"category": "mekanism:gas_conversion"
+		},
+		{
+			"category": "mekanism:thermal_evaporation_controller"
+		},
+		{
+			"category": "occultism:miner"
+		},
+		{
+			"category": "powah:coolant"
+		},
+		{
+			"category": "powah:heat_source"
+		},
+		{
+			"category": "powah:magmatic"
+		},
+		{
+			"category": "powah:solid_coolant"
+		},
+		{
+			"category": "immersiveengineering:cloche"
+		},
+		{
+			"category": "industrialforegoing:bioreactor"
+		},
+		{
+			"category": "industrialforegoing:fermenter"
+		},
+		{
+			"category": "industrialforegoing:fluid_extractor"
+		},
+		{
+			"category": "industrialforegoing:ore_sieve"
+		},
+		{
+			"category": "industrialforegoing:ore_washer"
+		},
+		{
+			"category": "industrialforegoing:mycelial_crimed"
+		},
+		{
+			"category": "industrialforegoing:mycelial_culinary"
+		},
+		{
+			"category": "industrialforegoing:mycelial_death"
+		},
+		{
+			"category": "industrialforegoing:mycelial_disenchantment"
+		},
+		{
+			"category": "industrialforegoing:mycelial_ender"
+		},
+		{
+			"category": "industrialforegoing:mycelial_explosive"
+		},
+		{
+			"category": "industrialforegoing:mycelial_frosty"
+		},
+		{
+			"category": "industrialforegoing:mycelial_furnace"
+		},
+		{
+			"category": "industrialforegoing:mycelial_halitosis"
+		},
+		{
+			"category": "industrialforegoing:mycelial_magma"
+		},
+		{
+			"category": "industrialforegoing:mycelial_meatallurgic"
+		},
+		{
+			"category": "industrialforegoing:mycelial_netherstar"
+		},
+		{
+			"category": "industrialforegoing:mycelial_pink"
+		},
+		{
+			"category": "industrialforegoing:mycelial_potion"
+		},
+		{
+			"category": "industrialforegoing:mycelial_slimey"
+		},
+		{
+			"category": "thermal:compression_fuel"
+		},
+		{
+			"category": "thermal:gourmand_fuel"
+		},
+		{
+			"category": "thermal:insolator"
+		},
+		{
+			"category": "thermal:insolator_catalyst"
+		},
+		{
+			"category": "thermal:lapidary_fuel"
+		},
+		{
+			"category": "thermal:magmatic_fuel"
+		},
+		{
+			"category": "thermal:numismatic_fuel"
+		},
+		{
+			"category": "thermal:stirling_fuel"
+		}
+	]
+}

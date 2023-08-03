@@ -1091,7 +1091,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: '4x ae2:controller',
-            activation_item: 'pneumaticcraft:logistics_core',
+            activation_item: 'create:content_observer',
             inputs: [
                 'naturesaura:infused_stone',
                 'naturesaura:infused_stone',
@@ -1150,9 +1150,9 @@ ServerEvents.recipes((event) => {
             activation_item: 'create:brass_casing',
             inputs: [
                 'create:shaft',
-                'powah:capacitor_basic_large',
+                'powah:capacitor_niotic',
                 'create:shaft',
-                'powah:capacitor_basic_large',
+                'powah:capacitor_niotic',
                 'immersiveengineering:coil_mv',
                 'immersiveengineering:coil_mv',
                 'immersiveengineering:coil_mv',

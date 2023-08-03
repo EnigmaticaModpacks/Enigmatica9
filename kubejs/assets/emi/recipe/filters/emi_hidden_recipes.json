@@ -335,6 +335,9 @@
 		},
 		{
 			"id": "jei:/ars_nouveau/shapers_focus"
+		},
+		{
+			"id": "jei:/ars_nouveau/relay_splitter"
 		}
 	]
 }

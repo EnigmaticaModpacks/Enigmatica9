@@ -68,6 +68,8 @@
 				"Locate and kill the Naga. "
 				""
 				"It should be located somewhere nearby in a large stone courtyard. Though quick, Naga are not known for their intelligence and in their blind rage they are easily dodged. Keep some distance and aim for the head."
+				""
+				"Once the deed is done, a chest will appear in the center of the arena. Be sure to grab the contents."
 			]
 			hide: true
 			id: "73CDA6ED2393DE42"
@@ -2507,6 +2509,100 @@
 			title: "Summon Mite Swarms"
 			x: -8.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["729E9D41A28D0E4D"]
+			description: [
+				"With heightened spell casting ability comes the ability to improve some automation through Spell Turrets.  "
+				""
+				"As a practical example, the following spell form will allow a turret to pull a standard potion from an adjacent Potion Jar, convert it to Lingering and throw it where the projectile lands."
+				""
+				"&5Projectile&r > &aInfuse&r > &6Extend Time&r"
+				""
+				"These lingering potions will work exactly as their crafted variety for the purpose of running a Lingering Absorber without the need to craft beyond the base potion. "
+			]
+			hide_dependency_lines: true
+			id: "7619B458914F41FF"
+			rewards: [{
+				id: "58831BD248E42B45"
+				item: {
+					Count: 1b
+					id: "ars_nouveau:spell_parchment"
+					tag: {
+						"ars_nouveau:caster": {
+							current_slot: 0
+							flavor: ""
+							hidden_recipe: ""
+							is_hidden: 0b
+							spell_count: 1
+							spells: {
+								spell0: {
+									name: "Lingering Potions"
+									recipe: {
+										part0: "ars_nouveau:glyph_projectile"
+										part1: "ars_nouveau:glyph_infuse"
+										part2: "ars_nouveau:glyph_extend_time"
+										size: 3
+									}
+									sound: {
+										pitch: 0.01f
+										soundTag: {
+											id: "ars_nouveau:tempestry_family"
+										}
+										volume: 0.4f
+									}
+									spellColor: {
+										b: 255
+										g: 71
+										r: 1
+										type: "ars_nouveau:rainbow"
+									}
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "3716441EC6ACD043"
+				item: "ars_nouveau:basic_spell_turret"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["729E9D41A28D0E4D"]
+			description: ["An empowered ritual that grants an hour of flight to up to five entities. Useful for exploration far from home. Be sure to bring the materials to re-cast it if necessary. "]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:ritual_flight"
+			id: "6952D7AD61181E37"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "64D8345AD1B57F8B"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "5623626CB05FAC41"
+					item: "ars_nouveau:ritual_flight"
+					type: "item"
+				}
+				{
+					id: "39C158A69FF4C6FE"
+					item: "kubejs:ritual_of_enduring_flight"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 2.5d
 		}
 	]
 	title: "Chapter One"

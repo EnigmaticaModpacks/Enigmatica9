@@ -1,0 +1,19 @@
+{
+	"filters": [
+		"thermal:latex",
+		"thermal:creosote",
+		"thermal:heavy_oil",
+		"thermal:light_oil",
+		"thermal:crude_oil",
+		"thermal:refined_fuel",
+		"immersiveengineering:plantoil",
+		"immersiveengineering:ethanol",
+		"immersiveengineering:biodiesel",
+		"createaddition:seed_oil",
+		"createaddition:bioethanol",
+		"create:honey",
+		"cofh_core:honey",
+		"pneumaticcraft:etching_acid"
+	],
+	"disable": true
+}

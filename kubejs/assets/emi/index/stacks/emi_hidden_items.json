@@ -1,0 +1,29 @@
+{
+	"filters": [
+		"create:honey_bucket",
+		"/densetrees/",
+		"/emendatusenigmatica:bitumen_.*_ore/",
+		"emendatusenigmatica:bitumen_ore",
+		"/hexerei:.*selenite/",
+		"hexerei:creative_waxing_kit",
+		"/kubejs:.*indicator/",
+		"/kubejs:.*delight/",
+		"/kubejs:.*lootbox/",
+		"naturesaura:multiblock_maker",
+		"/occultism:.*debug/",
+		"occultism:lighted_air",
+		"/powah:.*uraninite_ore.*/",
+		"sophisticatedstorage:debug_tool",
+		"/twilightforest:.*boss_spawner/",
+		"/nomadictents:.*_shamiyana_wall/",
+		"/nomadictents:.*_tepee_wall/",
+		"/nomadictents:.*_shovel/",
+		"/nomadictents:.*_crossbeams/",
+		"nomadictents:indlu_wall",
+		"nomadictents:bedouin_roof",
+		"nomadictents:bedouin_wall",
+		"nomadictents:yurt_roof",
+		"nomadictents:yurt_wall",
+		"nomadictents:rigid_dirt"
+	]
+}

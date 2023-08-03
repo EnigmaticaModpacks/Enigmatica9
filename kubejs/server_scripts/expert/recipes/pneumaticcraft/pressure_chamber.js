@@ -543,12 +543,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}star_bucket`
         },
         {
-            results: [{ item: 'kubejs:mote_of_enduring', count: 3 }],
-            inputs: [Item.of('minecraft:lingering_potion', '{Potion:"quark:strong_resilience"}').weakNBT().toJson()],
-            pressure: 4.9,
-            id: `${id_prefix}mote_of_enduring`
-        },
-        {
             results: [{ item: 'kubejs:shard_of_renewal', count: 1 }],
             inputs: [
                 { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_renewal', count: 64 },

@@ -269,6 +269,7 @@ ServerEvents.recipes((event) => {
         { id: 'mekanism:reaction/substrate/water_hydrogen' },
         { id: 'mekanism:reaction/substrate/water_ethene' },
         { id: 'mekanism:reaction/substrate/ethene_oxygen' },
+        { id: `mekanism:metallurgic_infusing/alloy/reinforced` },
         { id: 'mekanism:nucleosynthesizing/heart_of_the_sea' },
         { id: 'mekanism:nucleosynthesizing/chorus_flower' },
         { id: 'mekanism:nucleosynthesizing/dragon_egg' },

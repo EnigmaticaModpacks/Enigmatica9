@@ -3,14 +3,14 @@ ClientEvents.highPriorityAssets((event) => {
     if (global.isNormalMode == false) {
         return;
     }
-    const payload = { removed: [] };
     const modes = ['base', 'normal'];
+    const payload = { filters: [], disable: true };
 
     modes.forEach((mode) => {
         jei[mode].fluids.hidden.forEach((stack) => {
-            payload.removed.push(`fluid:${stack}`);
+            payload.filters.push(stack.toString());
         });
     });
 
-    JsonIO.write(`kubejs/assets/emi/index/stacks/emi_hide_fluids.json`, payload);
+    JsonIO.write(`kubejs/assets/emi/index/stacks/emi_hidden_fluids.json`, payload);
 });

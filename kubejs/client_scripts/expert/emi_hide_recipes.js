@@ -3,8 +3,8 @@ ClientEvents.highPriorityAssets((event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const payload = { filters: [] };
     const modes = ['base', 'expert'];
+    const payload = { filters: [] };
 
     modes.forEach((mode) => {
         jei[mode].recipes.hidden.forEach((recipe) => {
@@ -17,5 +17,5 @@ ClientEvents.highPriorityAssets((event) => {
         });
     });
 
-    JsonIO.write(`kubejs/assets/emi/recipe/filters/emi_hide_recipes.json`, payload);
+    JsonIO.write(`kubejs/assets/emi/recipe/filters/emi_hidden_recipes.json`, payload);
 });

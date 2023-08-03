@@ -26,6 +26,9 @@
     "emi:world_interaction": {
         "order": -600
     },
+    "create:draining": {
+        "order": 800
+    },
     "emi:fuel": {
         "order": 900
     },
