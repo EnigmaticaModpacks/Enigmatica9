@@ -40,6 +40,9 @@
 			"category": "industrialforegoing:fluid_extractor"
 		},
 		{
+			"category": "industrialforegoing:ore_sieve"
+		},
+		{
 			"category": "industrialforegoing:ore_washer"
 		},
 		{
