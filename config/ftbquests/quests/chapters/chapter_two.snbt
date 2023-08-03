@@ -69,8 +69,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: -1.0d
+			x: 2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["55C6945D58D77AB6"]
@@ -212,7 +212,7 @@
 				}
 			]
 			x: 2.5d
-			y: -2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6044FE23384692A5"]
@@ -530,7 +530,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["31E4C2A162D7497C"]
@@ -661,7 +661,7 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["60324503ED7AC4C1"]
+			dependencies: ["00B21E64DEFACB40"]
 			description: ["The beating heart of a magical energy network, the elementals bound into the ME Controller direct the flow of magical energies between the various components of the network, enabling a witch to perform the most wonderous of feats imaginable. "]
 			icon: "ae2:controller"
 			id: "330C200F0F0243FC"
@@ -683,7 +683,6 @@
 					type: "command"
 				}
 			]
-			shape: "hexagon"
 			tasks: [
 				{
 					id: "3B6B2B365CAD16C1"
@@ -741,8 +740,8 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: -1.0d
+			x: 1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1D0AA79380E87E57"]
