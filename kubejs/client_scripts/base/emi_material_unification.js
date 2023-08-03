@@ -127,6 +127,7 @@ ClientEvents.highPriorityAssets((event) => {
 
             `/thermal:${regex_materials}_(dust|ingot|nugget|plate|gear|block|seeds)/`,
             `/thermal:raw_${regex_materials}/`,
+            'thermal:bitumen',
 
             'twilightforest:carminite'
         ],

@@ -526,11 +526,11 @@ ServerEvents.recipes((event) => {
         {
             output: 'mekanism:metallurgic_infuser',
             inputs: [
-                '#forge:gems/infused_diamond',
+                'kubejs:spirit_of_devotion',
                 '#forge:plates/obsidian',
                 'ae2:quartz_glass',
                 '#forge:plates/obsidian',
-                '#forge:gems/infused_diamond',
+                'kubejs:spirit_of_devotion',
                 '#forge:plates/obsidian',
                 'ae2:quartz_glass',
                 '#forge:plates/obsidian'

@@ -4,16 +4,7 @@ ServerEvents.recipes((event) => {
     }
     const id_prefix = 'enigmatica:normal/immersiveengineering/metal_press/';
 
-    const recipes = [
-        {
-            output: `pneumaticcraft:compressed_iron_gear`,
-            mold: 'immersiveengineering:mold_gear',
-            input: `#forge:ingots/compressed_iron`,
-            count: 4,
-            energy: 2400,
-            id: `${id_prefix}compressed_iron_gear`
-        }
-    ];
+    const recipes = [];
 
     Object.keys(gem_properties).forEach((gem) => {
         if (gem_properties[gem].gear) {

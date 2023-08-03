@@ -34,7 +34,7 @@
 			}]
 			title: "Gloaming Catalyst"
 			x: 1.0d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["00B21E64DEFACB40"]
@@ -69,8 +69,8 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: -0.5d
+			x: 1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["55C6945D58D77AB6"]
@@ -127,7 +127,7 @@
 				}
 			]
 			x: 0.0d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0B7E9625225C8413"]
@@ -147,8 +147,8 @@
 				item: "ars_elemental:mark_of_mastery"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 4.5d
+			x: 0.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["21C352EEFEB25365"]
@@ -168,8 +168,8 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.5d
+			x: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["33BCDA0A76E2523C"]
@@ -211,7 +211,7 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
+			x: 2.5d
 			y: -2.5d
 		}
 		{
@@ -242,8 +242,8 @@
 				}
 			]
 			title: "Improved Blast Furnace"
-			x: 3.5d
-			y: 1.0d
+			x: 4.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["21C352EEFEB25365"]
@@ -269,17 +269,19 @@
 				type: "item"
 			}]
 			title: "Light Machinery"
-			x: 4.5d
-			y: 0.5d
+			x: 5.0d
+			y: 3.5d
 		}
 		{
-			dependencies: ["00B21E64DEFACB40"]
+			dependencies: ["1034686D695A8A6D"]
 			description: [
 				"There exists a certain imbalance in magical energies in the realms. While some, like this world, are positively overflowing with magical potential, others have a notable lack. "
 				""
 				"With the Tree of Life partially restored, it is safe to resume the ancient bargain struck with the spirits of the Otherworld, trading Source for their labor. "
 				""
-				"The Energetic Transference Matrix serves as the bridge to facilitate this exchange. When properly integrated into an arcane apparatus, materials and Source may be funneled in and the Spirits will do the rest, returning the desired outcome. "
+				"The Energetic Transference Matrix serves as the bridge to facilitate this exchange. When properly integrated into an arcane apparatus, materials and Source may be funneled through to the Otherworld. In exchange, the spirits residing there will transform the materials and return them, keeping the Source as payment. "
+				""
+				"Quite the fair trade. "
 			]
 			icon: "kubejs:energetic_transference_matrix"
 			id: "21C352EEFEB25365"
@@ -311,11 +313,14 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: 0.0d
+			x: 4.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["2BA70920EA1ED0A8"]
+			dependencies: [
+				"2BA70920EA1ED0A8"
+				"4C676E7D2BA75DE4"
+			]
 			description: [
 				"A specialized apparatus for magically infusing materials with various substances, the Metallurgic Infuser is critical in the process of purifying elemental iron. "
 				""
@@ -341,8 +346,8 @@
 				item: "mekanism:metallurgic_infuser"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 2.0d
+			x: 2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4CC418E7200DF351"]
@@ -380,7 +385,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.0d
 			y: 1.0d
 		}
 		{
@@ -449,8 +454,8 @@
 					type: "item"
 				}
 			]
-			x: 0.5d
-			y: 2.5d
+			x: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2153EBB1D50F0039"]
@@ -504,7 +509,7 @@
 					type: "item"
 				}
 			]
-			x: 0.5d
+			x: 1.0d
 			y: 0.0d
 		}
 		{
@@ -524,8 +529,8 @@
 				item: "emendatusenigmatica:brass_ingot"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -1.0d
+			x: 2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["31E4C2A162D7497C"]
@@ -544,7 +549,6 @@
 				""
 				"In order to travel to the Bumblezone, a Teleporter must be placed directly beneath a Beehive and then an Ender Pearl thrown at the Beehive."
 			]
-			hide_dependency_lines: true
 			icon: "minecraft:beehive"
 			id: "2153EBB1D50F0039"
 			min_width: 300
@@ -567,8 +571,8 @@
 				}
 			]
 			title: "Telling of the Bees"
-			x: 1.0d
-			y: -1.0d
+			x: 2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["4C676E7D2BA75DE4"]
@@ -615,8 +619,8 @@
 				}
 			]
 			title: "Tree of Life"
-			x: 3.5d
-			y: 4.5d
+			x: 2.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["2759988A5B69A455"]
@@ -653,13 +657,12 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: 5.5d
+			x: 2.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["60324503ED7AC4C1"]
 			description: ["The beating heart of a magical energy network, the elementals bound into the ME Controller direct the flow of magical energies between the various components of the network, enabling a witch to perform the most wonderous of feats imaginable. "]
-			hide_dependency_lines: true
 			icon: "ae2:controller"
 			id: "330C200F0F0243FC"
 			rewards: [
@@ -703,8 +706,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: -1.0d
+			x: 3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["00B21E64DEFACB40"]
@@ -738,102 +741,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["60324503ED7AC4C1"]
-			description: ["An empowered ritual that grants an hour of flight to up to five entities. Useful for exploration far from home. Be sure to bring the materials to re-cast it if necessary. "]
-			hide_dependency_lines: true
-			icon: "ars_nouveau:ritual_flight"
-			id: "6952D7AD61181E37"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-				icon: "kubejs:sorcerers_delight"
-				id: "64D8345AD1B57F8B"
-				player_command: false
-				title: "Sorcerer's Delight"
-				type: "command"
-			}]
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "5623626CB05FAC41"
-					item: "ars_nouveau:ritual_flight"
-					type: "item"
-				}
-				{
-					id: "39C158A69FF4C6FE"
-					item: "kubejs:ritual_of_enduring_flight"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 6.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["31E4C2A162D7497C"]
-			description: [
-				"With heightened spell casting ability comes the ability to improve some automation through Spell Turrets.  "
-				""
-				"As a practical example, the following spell form will allow a turret to pull a standard potion from an adjacent Potion Jar, convert it to Lingering and throw it where the projectile lands."
-				""
-				"&5Projectile&r > &aInfuse&r > &6Extend Time&r"
-				""
-				"These lingering potions will work exactly as their crafted variety for the purpose of running a Lingering Absorber without the need to craft beyond the base potion. "
-			]
-			hide_dependency_lines: true
-			id: "7619B458914F41FF"
-			rewards: [{
-				id: "58831BD248E42B45"
-				item: {
-					Count: 1b
-					id: "ars_nouveau:spell_parchment"
-					tag: {
-						"ars_nouveau:caster": {
-							current_slot: 0
-							flavor: ""
-							hidden_recipe: ""
-							is_hidden: 0b
-							spell_count: 1
-							spells: {
-								spell0: {
-									name: "Lingering Potions"
-									recipe: {
-										part0: "ars_nouveau:glyph_projectile"
-										part1: "ars_nouveau:glyph_infuse"
-										part2: "ars_nouveau:glyph_extend_time"
-										size: 3
-									}
-									sound: {
-										pitch: 0.01f
-										soundTag: {
-											id: "ars_nouveau:tempestry_family"
-										}
-										volume: 0.4f
-									}
-									spellColor: {
-										b: 255
-										g: 71
-										r: 1
-										type: "ars_nouveau:rainbow"
-									}
-								}
-							}
-						}
-					}
-				}
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "3716441EC6ACD043"
-				item: "ars_nouveau:timer_spell_turret"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 2.0d
+			x: 3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["1D0AA79380E87E57"]
@@ -849,8 +758,8 @@
 				item: "industrialforegoing:machine_frame_simple"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 3.5d
+			x: 1.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["1D0AA79380E87E57"]
@@ -877,8 +786,8 @@
 				type: "item"
 			}]
 			title: "Heavy Machinery"
-			x: 4.5d
-			y: 3.5d
+			x: 3.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["49159D9F94B7006C"]
@@ -904,15 +813,15 @@
 				item: "pneumaticcraft:ingot_iron_compressed"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 3.0d
+			x: 2.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["330C200F0F0243FC"]
+			dependencies: ["1034686D695A8A6D"]
 			description: [
 				"Having friends on the Other Side is proving quite advantageous, as it seems that distances mean little to them in their realm. "
 				""
-				"A Quantum Network Bridge exploits this feature of their realm quite handily, making it possible to transport items, fluids, gasses, even power over incredibly long distances and between realms. "
+				"A Quantum Network Bridge exploits this feature quite handily, making it possible to transport items, fluids, gasses, even power over incredibly long distances and between realms. "
 				""
 				"Refer to the quest in the Applied Energistics 2 chapter for more information on constructing this multiblock."
 			]
@@ -923,7 +832,6 @@
 				item: "ae2:singularity"
 				type: "item"
 			}]
-			shape: "hexagon"
 			tasks: [
 				{
 					count: 16L
@@ -939,11 +847,11 @@
 				}
 			]
 			title: "Quantum Network Bridge"
-			x: 6.5d
-			y: 0.0d
+			x: 5.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["49159D9F94B7006C"]
+			dependencies: ["7563E41DBF4FD286"]
 			description: ["Machines feeling a bit slow? Just make room for some more Spirits in there with Tier Installers. Give them some help as well by installing Energy and Speed upgrades. "]
 			icon: "mekanism:basic_tier_installer"
 			id: "0945523A7F5C5494"
@@ -1005,8 +913,118 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 2.5d
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7001144C71F0E0BC"]
+			description: [
+				"Though somewhat onerous by hand, it appears to be possible to chip off small shards from the Dimensional Crystal Matrix. "
+				""
+				"Shoving large amounts of material into these crystals without any form of planar stabilization appears to have collapsed the pocket-realm, forming a singularity that appears capable of linking distant places through some other space. "
+				""
+				"================================="
+				""
+				"A 4K Storage Component will be sufficient for crafting Singularities. "
+			]
+			icon: "ae2:condenser"
+			id: "1034686D695A8A6D"
+			rewards: [{
+				id: "4AB0ED4E487C5632"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "20C82AF23D7B3FF1"
+					item: "ae2:condenser"
+					type: "item"
+				}
+				{
+					id: "34F15A06EC034615"
+					item: "ae2:cell_component_4k"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2D8D0D2EA0C2B717"]
+			description: [
+				"Though tenuous, the pocket realm contained within this Crystal Matrix should prove quite useful for storing materials. "
+				""
+				"But perhaps there’s more to be discovered here as well. Perhaps with a very sharp knife…"
+			]
+			id: "7001144C71F0E0BC"
+			rewards: [{
+				count: 6
+				id: "5BFE207A3A4BFFD4"
+				item: "kubejs:dimensional_storage_crystal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5A0EE27AC02790EC"
+				item: {
+					Count: 1b
+					id: "occultism:dimensional_matrix"
+					tag: {
+						spiritName: "Morjyrzur"
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7001144C71F0E0BC"]
+			description: [
+				"As suspected, with even a minimal amount of stabilization, the Matrix can store a wonderous quantity of items. "
+				""
+				"More experimentation with planar stabilizers is certainly warranted. "
+			]
+			id: "5D2DEF2DF3C21A09"
+			rewards: [{
+				id: "0BA1C1494478B440"
+				item: "occultism:storage_stabilizer_tier1"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0DFF4D850A8B2CF1"
+				item: "occultism:storage_controller"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2153EBB1D50F0039"]
+			description: [
+				"Light refracts strangely through these crystals... as if it has travelled a much greater distance. Perhaps there's some truth to those stories after all?"
+				""
+				"Indeed, these Glistering Honey Crystals display a very unusual topology after infusing them with Aura."
+				""
+				"================================="
+				""
+				"Dimensional Crystals may be converted into a Budding block and grown much like Amethyst, making it quite simple to obtain more. "
+			]
+			icon: "the_bumblezone:glistering_honey_crystal"
+			id: "2D8D0D2EA0C2B717"
+			tasks: [
+				{
+					id: "1E12D23625F0F61C"
+					item: "the_bumblezone:glistering_honey_crystal"
+					type: "item"
+				}
+				{
+					id: "49BFDDCD188AC1EC"
+					item: "rftoolsbase:dimensionalshard"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
 		}
 	]
 	title: "Chapter Two"

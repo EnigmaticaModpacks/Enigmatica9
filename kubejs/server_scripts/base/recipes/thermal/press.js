@@ -49,6 +49,15 @@ ServerEvents.recipes((event) => {
             ingredient: [{ item: 'sushigocrafting:dried_seaweed_block' }],
             energy: 2000,
             id: `${id_prefix}nori_sheets`
+        },
+        {
+            result: [{ item: `pneumaticcraft:compressed_iron_gear` }],
+            ingredients: [
+                { tag: `forge:ingots/compressed_iron`, count: 4 },
+                { item: 'immersiveengineering:mold_gear' }
+            ],
+            energy: 2400,
+            id: `${id_prefix}compressed_iron_gear`
         }
     ];
 

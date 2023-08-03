@@ -17,6 +17,12 @@ ServerEvents.recipes((event) => {
             result: { item: 'kubejs:mystery_mash', count: 2 },
             energy: 1280,
             id: `${id_prefix}blood_fluid`
+        },
+        {
+            input: [Item.of('minecraft:lingering_potion', '{Potion:"quark:strong_resilience"}').weakNBT().toJson()],
+            result: { item: 'kubejs:mote_of_enduring', count: 3 },
+            energy: 51200,
+            id: `${id_prefix}mote_of_enduring`
         }
     ];
 
