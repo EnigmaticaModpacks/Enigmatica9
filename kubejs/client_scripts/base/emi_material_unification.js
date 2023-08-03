@@ -118,7 +118,7 @@ ClientEvents.highPriorityAssets((event) => {
             `/minecraft:deepslate_${regex_materials}/`,
             `/minecraft:${regex_materials}_ore/`,
 
-            `/naturesaura:(sky|infused|tainted)/`,
+            `/naturesaura:(sky_ingot|infused_iron|tainted_gold)/`,
 
             `/occultism:${regex_materials}_(dust|ingot|nugget|block|ore)/`,
             `/occultism:raw_${regex_materials}/`,
