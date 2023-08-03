@@ -23,6 +23,7 @@
 		"quark:charcoal_block",
 		"/thermal:(aeternium|aluminum|amber|andesite|apatite|apple|aquite|bamboo|beetroot|bitumen|brass|bronze|carminite|carrot|charcoal|charoite|cinnabar|coal_coke|coal|cobalt|coke|constantan|copper|deepslate|diamond|dimensional|diopside|electrum|elementium|emerald|ender_pearl|enderium|falsite|flax|fluorite|gold|gunpowder|hop_graphite|hops|horizonite|iesnium|infused_iron|invar|iridium|iron|lapis|lead|lumium|nether_gold|nether_quartz|netherite|nickel|niter|obsidian|onion|osmium|peridot|platinum|potato|pyrope|quartz|raw_zinc|redstone|refined_glowstone|refined_obsidian|rice|rose_gold|ruby|saltpeter|sapphire|signalum|silver|sky|source|steel|sugar_cane|sulfur|tainted_gold|tin|tomato|uranium|ventium|wood|zinc)_(dust|ingot|nugget|plate|gear|block|seeds)/",
 		"/thermal:raw_(aeternium|aluminum|amber|andesite|apatite|apple|aquite|bamboo|beetroot|bitumen|brass|bronze|carminite|carrot|charcoal|charoite|cinnabar|coal_coke|coal|cobalt|coke|constantan|copper|deepslate|diamond|dimensional|diopside|electrum|elementium|emerald|ender_pearl|enderium|falsite|flax|fluorite|gold|gunpowder|hop_graphite|hops|horizonite|iesnium|infused_iron|invar|iridium|iron|lapis|lead|lumium|nether_gold|nether_quartz|netherite|nickel|niter|obsidian|onion|osmium|peridot|platinum|potato|pyrope|quartz|raw_zinc|redstone|refined_glowstone|refined_obsidian|rice|rose_gold|ruby|saltpeter|sapphire|signalum|silver|sky|source|steel|sugar_cane|sulfur|tainted_gold|tin|tomato|uranium|ventium|wood|zinc)/",
+		"thermal:bitumen",
 		"twilightforest:carminite"
 	],
 	"disable": true

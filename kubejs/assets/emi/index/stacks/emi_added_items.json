@@ -1,0 +1,76 @@
+{
+	"added": [
+		{
+			"stack": "item:immersiveengineering:alloy_smelter"
+		},
+		{
+			"stack": "item:immersiveengineering:arc_furnace"
+		},
+		{
+			"stack": "item:immersiveengineering:assembler"
+		},
+		{
+			"stack": "item:immersiveengineering:auto_workbench"
+		},
+		{
+			"stack": "item:immersiveengineering:blast_furnace"
+		},
+		{
+			"stack": "item:immersiveengineering:bottling_machine"
+		},
+		{
+			"stack": "item:immersiveengineering:coke_oven"
+		},
+		{
+			"stack": "item:immersiveengineering:crusher"
+		},
+		{
+			"stack": "item:immersiveengineering:diesel_generator"
+		},
+		{
+			"stack": "item:immersiveengineering:excavator"
+		},
+		{
+			"stack": "item:immersiveengineering:fermenter"
+		},
+		{
+			"stack": "item:immersiveengineering:advanced_blast_furnace"
+		},
+		{
+			"stack": "item:immersiveengineering:lightning_rod"
+		},
+		{
+			"stack": "item:immersiveengineering:metal_press"
+		},
+		{
+			"stack": "item:immersiveengineering:mixer"
+		},
+		{
+			"stack": "item:immersiveengineering:refinery"
+		},
+		{
+			"stack": "item:immersiveengineering:sawmill"
+		},
+		{
+			"stack": "item:immersiveengineering:silo"
+		},
+		{
+			"stack": "item:immersiveengineering:squeezer"
+		},
+		{
+			"stack": "item:immersiveengineering:tank"
+		},
+		{
+			"stack": "item:emendatusenigmatica:bitumen_sandstone_ore"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:reactive\",lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:reactive\",lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:reactive\",lvl:3s}]}"
+		}
+	]
+}

@@ -159,14 +159,6 @@ ServerEvents.recipes((event) => {
             ingredients: [{ tag: 'forge:essences/manipulation' }, { amount: 1000, fluidTag: 'forge:brine' }],
             heatRequirement: 'superheated',
             id: `${id_prefix}lithium_iesnium`
-        },
-        {
-            results: [{ item: 'kubejs:mote_of_rebirth', count: 3 }],
-            ingredients: [
-                Item.of('minecraft:lingering_potion', { Potion: 'minecraft:strong_regeneration' }).weakNBT().toJson()
-            ],
-            heatRequirement: 'superheated',
-            id: `${id_prefix}mote_of_rebirth`
         }
     ];
 

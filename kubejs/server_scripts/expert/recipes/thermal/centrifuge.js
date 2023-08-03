@@ -13,14 +13,6 @@ ServerEvents.recipes((event) => {
             ],
             energy: 8000,
             id: `${id_prefix}iesnium_lithium`
-        },
-        {
-            ingredient: Item.of('minecraft:lingering_potion', { Potion: 'apotheosis:strong_knowledge' })
-                .weakNBT()
-                .toJson(),
-            result: [{ item: 'kubejs:mote_of_wisdom', count: 3 }],
-            energy: 1000,
-            id: `${id_prefix}mote_of_wisdom`
         }
     ];
 

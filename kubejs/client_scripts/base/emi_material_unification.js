@@ -1,8 +1,5 @@
 ClientEvents.highPriorityAssets((event) => {
     // https://github.com/emilyploszaj/emi/wiki/Hiding-and-Adding-Index-Stacks
-    if (global.isExpertMode == false) {
-        return;
-    }
 
     const materials = [
         'aeternium',
