@@ -33,6 +33,15 @@ ServerEvents.recipes((event) => {
                 action: 'pickaxe_dig'
             },
             id: `${id_prefix}subzero_crystal_shard`
+        },
+        {
+            ingredients: [{ item: 'minecraft:dripstone_block' }],
+            result: [{ item: 'minecraft:pointed_dripstone', count: 4 }],
+            tool: {
+                type: 'farmersdelight:tool_action',
+                action: 'pickaxe_dig'
+            },
+            id: `${id_prefix}pointed_dripstone`
         }
     ];
 

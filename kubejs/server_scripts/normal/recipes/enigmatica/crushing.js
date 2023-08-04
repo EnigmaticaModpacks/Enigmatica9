@@ -30,6 +30,15 @@ ServerEvents.recipes((event) => {
             energy: 1000,
             ignore_occultism_multiplier: true,
             id_suffix: `subzero_dust_from_subzero`
+        },
+        {
+            outputs: { primary: { item: 'minecraft:pointed_dripstone', count: 4, chance: 1.0 } },
+            input: 'minecraft:dripstone_block',
+            experience: 0.2,
+            duration: 20,
+            energy: 1000,
+            ignore_occultism_multiplier: true,
+            id_suffix: `pointed_dripstone`
         }
     ];
 
