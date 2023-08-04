@@ -130,13 +130,23 @@ ServerEvents.recipes((event) => {
 
         outputs = dye_source.primary;
         // Mekanism Enriching
-        event
-            .custom({
-                type: 'mekanism:enriching',
-                input: { ingredient: input.startsWith('#') ? { tag: input.slice(1) } : { item: input } },
-                output: Item.of(outputs, count).toJson()
-            })
-            .id(`${id_prefix}mekanism_enriching/${id_suffix}`);
+        if (dye_source.mekanism_exception) {
+            event
+                .custom({
+                    type: 'mekanism:crushing',
+                    input: { ingredient: input.startsWith('#') ? { tag: input.slice(1) } : { item: input } },
+                    output: Item.of(outputs, count).toJson()
+                })
+                .id(`${id_prefix}mekanism_crushing/${id_suffix}`);
+        } else {
+            event
+                .custom({
+                    type: 'mekanism:enriching',
+                    input: { ingredient: input.startsWith('#') ? { tag: input.slice(1) } : { item: input } },
+                    output: Item.of(outputs, count).toJson()
+                })
+                .id(`${id_prefix}mekanism_enriching/${id_suffix}`);
+        }
 
         // Shapeless
         base_count = 1;
