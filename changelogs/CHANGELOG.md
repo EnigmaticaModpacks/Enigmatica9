@@ -16,6 +16,7 @@
 -   Spawner Rifts will now spawn Wilden as part of the waves. [\#548](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/548) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Create Rolling now uses rods to make wires. Wires made from ingots in other machines now produce more to compensate. [\#553](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/553) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Onions may be purchased from the Market [\#564](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/564) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Pointed Dripstone may be crafted through various means [\#572](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/572) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
