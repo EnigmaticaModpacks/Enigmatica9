@@ -76,6 +76,7 @@ ServerEvents.recipes((event) => {
         { id: 'createaddition:compat/immersiveengineering/crushing/coke_block' },
 
         { id: /emendatusenigmatica:gear\/from_ingot_press/ },
+        { id: /emendatusenigmatica:plate\/from_ingot_press/ },
 
         { id: 'functionalstorage:oak_drawer_alternate_x1' },
         { id: 'functionalstorage:oak_drawer_alternate_x2' },
@@ -153,6 +154,8 @@ ServerEvents.recipes((event) => {
 
         { id: /thermal:machines\/pulverizer\/pulverizer.*sandstone/ },
         { id: /thermal:machines\/press\/press.*ingot_to_gear/ },
+        { id: /thermal:machines\/press\/press.*ingot_to_plate/ },
+        { id: /thermal:compat\/immersiveengineering\/press.*_ingot_to_plate/ },
         { id: 'thermal:machines/centrifuge/centrifuge_allium' },
         { id: 'thermal:machines/centrifuge/centrifuge_azure_bluet' },
         { id: 'thermal:machines/centrifuge/centrifuge_blue_orchid' },

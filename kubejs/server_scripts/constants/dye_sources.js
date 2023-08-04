@@ -931,7 +931,8 @@ const dye_sources = [
         type: 'small',
         primary: 'minecraft:blue_dye',
         secondary: 'minecraft:blue_dye',
-        tertiary: 'minecraft:blue_dye'
+        tertiary: 'minecraft:blue_dye',
+        mekanism_exception: true
     }
 ];
 
