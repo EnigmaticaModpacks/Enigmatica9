@@ -1,0 +1,6 @@
+{
+    "showAllInLocalChat": {
+        "desc:": " By default vanilla only displays advancements in chat which get broadcasted to all online players.Enabling this setting shows all advancements earned in chat.Some of these may be lacking text when the advancement itself does not have any, e.g. Categories are advancements too. default: true",
+        "showAllInLocalChat": false
+    }
+}
