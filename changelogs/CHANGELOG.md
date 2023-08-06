@@ -4,7 +4,7 @@
 
 ### 🌟 Improvements
 
--   Many Creatures and Beasts mobs may now spawn in the Twilight Forest [\#572](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/572) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Many Creatures and Beasts mobs may now spawn in the Twilight Forest [\#578](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/578) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
