@@ -24,6 +24,28 @@ ServerEvents.recipes((event) => {
                 C: 'minecraft:conduit'
             },
             id: `apotheosis:heart_seashelf`
+        },
+        {
+            output: 'apotheosis:salvaging_table',
+            pattern: [' A ', 'BBB', 'CDC'],
+            key: {
+                A: 'apotheosis:gem_dust',
+                B: 'pneumaticcraft:compressed_stone',
+                C: 'minecraft:prismarine_bricks',
+                D: 'minecraft:smithing_table'
+            },
+            id: `apotheosis:salvaging_table`
+        },
+        {
+            output: 'apotheosis:gem_cutting_table',
+            pattern: [' A ', 'BBB', 'CDC'],
+            key: {
+                A: '#forge:essences/manipulation',
+                B: 'pneumaticcraft:compressed_stone',
+                C: '#forge:rods/ancient',
+                D: 'apotheosis:gem_dust'
+            },
+            id: `apotheosis:gem_cutting_table`
         }
     ];
 

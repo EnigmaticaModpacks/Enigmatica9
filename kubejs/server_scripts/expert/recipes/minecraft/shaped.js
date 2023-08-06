@@ -113,10 +113,12 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'minecraft:smithing_table',
-            pattern: ['AA', 'BB'],
+            pattern: [' A ', 'BBB', 'CDC'],
             key: {
-                A: '#forge:ingots/steel',
-                B: 'create:andesite_casing'
+                A: '#forge:gems/infused_diamond',
+                B: 'pneumaticcraft:compressed_stone',
+                C: '#forge:storage_blocks/fiery',
+                D: 'create:brass_casing'
             },
             id: 'minecraft:smithing_table'
         },
