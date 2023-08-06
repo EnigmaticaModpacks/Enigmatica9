@@ -1,6 +1,12 @@
 ### Enigmatica 9 v1.10.0
 
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.10.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.10.0.md)
+
 ### 🎁 New Mods Added
+
+-   [Cupboard](https://www.curseforge.com/minecraft/mc-mods/cupboard) (by [someaddon](https://www.curseforge.com/members/someaddon/projects))
+-   [EMI](https://www.curseforge.com/minecraft/mc-mods/emi) (by [EmilyPloszaj](https://www.curseforge.com/members/EmilyPloszaj/projects))
+-   [OAuth](https://www.curseforge.com/minecraft/mc-mods/oauth) (by [Sintinium](https://www.curseforge.com/members/Sintinium/projects))
 
 ### 🌟 Improvements
 
@@ -29,7 +35,13 @@
 
 ### Removed Mods
 
--   ***
+-   [ChoiceTheorem's Overhauled Village](https://www.curseforge.com/minecraft/mc-mods/choicetheorems-overhauled-village) (by [ChoiceTheorem](https://www.curseforge.com/members/ChoiceTheorem/projects))
+-   [Configured](https://www.curseforge.com/minecraft/mc-mods/configured) (by [MrCrayfish](https://www.curseforge.com/members/MrCrayfish/projects))
+-   [Create: Steam 'n' Rails](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails) (by [mattentosh](https://www.curseforge.com/members/mattentosh/projects))
+-   [Mod Name Tooltip](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip) (by [mezz](https://www.curseforge.com/members/mezz/projects))
+-   [When Dungeons Arise - Forge!](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise) (by [Aureljz](https://www.curseforge.com/members/Aureljz/projects))
+
+---
 
 ### Enigmatica 9 v1.9.0
 
