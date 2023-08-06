@@ -1,1 +1,3 @@
-// TODO: Remove next breaking update
+ServerEvents.loaded((event) => {
+    event.server.runCommandSilent('reload');
+});
