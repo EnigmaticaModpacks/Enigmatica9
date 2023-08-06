@@ -430,6 +430,16 @@ ServerEvents.recipes((event) => {
             ],
             energy: 8000,
             id: `${id_prefix}coordinate_tracker_upgrade`
+        },
+        {
+            result: [{ item: 'ae2:fluix_pearl', count: 4 }],
+            ingredients: [
+                { tag: 'forge:dusts/subzero' },
+                { tag: 'forge:dusts/fluix', count: 4 },
+                { tag: 'forge:essences/water' }
+            ],
+            energy: 2000,
+            id: `${id_prefix}fluix_pearl`
         }
     ];
 
