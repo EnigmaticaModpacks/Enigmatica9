@@ -41,11 +41,75 @@ WorldgenEvents.add((event) => {
                 'twilightforest:spooky_forest',
                 'twilightforest:swamp',
                 'twilightforest:mushroom_forest',
-                'twilightforest:dense_mushroom_forest',
-                'twilightforest:enchanted_forest'
+                'twilightforest:dense_mushroom_forest'
             ],
             minCount: 2,
             maxCount: 4,
+            weight: 5
+        },
+        {
+            category: 'creature',
+            entity: 'cnb:lizard',
+            biomes: [
+                'twilightforest:dense_forest',
+                'twilightforest:dense_mushroom_forest',
+                'twilightforest:firefly_forest',
+                'twilightforest:forest',
+                'twilightforest:mushroom_forest',
+                'twilightforest:enchanted_forest',
+                'twilightforest:dense_mushroom_forest',
+                'twilightforest:underground',
+                'twilightforest:swamp',
+                'twilightforest:fire_swamp',
+                'twilightforest:highlands'
+            ],
+            minCount: 1,
+            maxCount: 3,
+            weight: 5
+        },
+        {
+            category: 'creature',
+            entity: 'cnb:cindershell',
+            biomes: ['twilightforest:fire_swamp'],
+            minCount: 1,
+            maxCount: 1,
+            weight: 1
+        },
+        {
+            category: 'creature',
+            entity: 'cnb:minipad',
+            biomes: ['twilightforest:lake', 'twilightforest:stream', 'twilightforest:swamp'],
+            minCount: 1,
+            maxCount: 2,
+            weight: 5
+        },
+        {
+            category: 'creature',
+            entity: 'cnb:lilytad',
+            biomes: ['twilightforest:lake', 'twilightforest:stream', 'twilightforest:swamp'],
+            minCount: 3,
+            maxCount: 5,
+            weight: 5
+        },
+        {
+            category: 'creature',
+            entity: 'cnb:little_grebe',
+            biomes: [
+                'twilightforest:firefly_forest',
+                'twilightforest:lake',
+                'twilightforest:stream',
+                'twilightforest:swamp'
+            ],
+            minCount: 1,
+            maxCount: 2,
+            weight: 5
+        },
+        {
+            category: 'creature',
+            entity: 'cnb:yeti',
+            biomes: ['twilightforest:snowy_forest', 'twilightforest:glacier'],
+            minCount: 2,
+            maxCount: 3,
             weight: 5
         },
         {

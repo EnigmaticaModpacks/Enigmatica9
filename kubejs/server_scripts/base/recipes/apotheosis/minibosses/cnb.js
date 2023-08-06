@@ -10,25 +10,25 @@ enchantment_levels: [50, 30, 120, 40],
 ServerEvents.highPriorityData((event) => {
     const id_prefix = 'apotheosis:minibosses/cnb/';
     const recipes = [
-        {
-            id: 'sporeling',
-            name: null,
-            chance: 1.0,
-            weight: 85,
-            quality: 0,
-            entities: ['cnb:sporeling'],
-            dimensions: ['twilightforest:twilight_forest'],
-            valid_gear_sets: ['#miniboss/sporeling'],
-            dimensions: [],
-            affixed: false,
-            stats: {
-                enchant_chance: 0.0,
-                enchantment_levels: [12, 8, 20, 14],
-                effects: [],
-                attribute_modifiers: []
-            },
-            finalize: true
-        }
+        // {
+        //     id: 'sporeling',
+        //     name: null,
+        //     chance: 1.0,
+        //     weight: 85,
+        //     quality: 0,
+        //     entities: ['cnb:sporeling'],
+        //     dimensions: ['twilightforest:twilight_forest'],
+        //     valid_gear_sets: ['#miniboss/sporeling'],
+        //     dimensions: [],
+        //     affixed: false,
+        //     stats: {
+        //         enchant_chance: 0.0,
+        //         enchantment_levels: [12, 8, 20, 14],
+        //         effects: [],
+        //         attribute_modifiers: []
+        //     },
+        //     finalize: true
+        // }
     ];
 
     recipes.forEach((recipe) => {
