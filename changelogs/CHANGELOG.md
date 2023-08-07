@@ -1,4 +1,4 @@
-### Enigmatica 9 v1.11.0
+### Enigmatica 9 v1.10.1
 
 ### 🎁 New Mods Added
 
@@ -7,6 +7,8 @@
 -   Many Creatures and Beasts mobs may now spawn in the Twilight Forest [\#578](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/578) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
+
+-   Recipes using Andesite were incorrectly hidden. [\#580](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/580) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### Removed Mods
 
