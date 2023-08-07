@@ -1,6 +1,6 @@
 ### Enigmatica 9 v1.10.1
 
-### 🎁 New Mods Added
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.10.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.10.1.md)
 
 ### 🌟 Improvements
 
@@ -9,8 +9,6 @@
 ### 🐛 Fixed Bugs
 
 -   Recipes using Andesite were incorrectly hidden. [\#580](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/580) ([MuteTiefling](https://github.com/MuteTiefling))
-
-### Removed Mods
 
 ---
 
