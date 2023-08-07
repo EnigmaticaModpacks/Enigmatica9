@@ -106,7 +106,7 @@ function Update-BetterCompatibilityCheckerVersion {
     }
 
     # Replace anything that matches semver of the type 1.0.0 with $MODPACK_VERSION
-    $contents = [System.IO.File]::ReadAllText($configPath) -replace "\d\.\d\.\d", $MODPACK_VERSION
+    $contents = [System.IO.File]::ReadAllText($configPath) -replace "\d+\.\d+\.\d+", $MODPACK_VERSION
     $contents = $contents -replace "modpackName.*", "modpackName = `"$modpackName`""
     $contents = $contents -replace "modpackProjectID.*", "modpackProjectID = $CURSEFORGE_PROJECT_ID"
 
