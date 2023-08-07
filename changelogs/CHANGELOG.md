@@ -2,6 +2,8 @@
 
 ### 🌟 Improvements
 
+-   [Expert] Warp Relays are now cheaper. [\#583](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/583) ([MuteTiefling](https://github.com/MuteTiefling))
+
 ### 🐛 Fixed Bugs
 
 -   Re-allow Withers to be transported via Soul Gem following creation of a tag based blacklist in Occultism. [\#581](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/581) ([MuteTiefling](https://github.com/MuteTiefling))

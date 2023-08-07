@@ -896,6 +896,13 @@ ServerEvents.recipes((event) => {
             reagents: ['ars_nouveau:blank_thread'],
             sourceCost: 0,
             id: 'ars_nouveau:thread_life_drain'
+        },
+        {
+            output: 'ars_nouveau:relay_warp',
+            inputs: ['mekanism:teleportation_core', '#forge:ingots/lead', '#forge:ingots/lead'],
+            reagents: ['ars_nouveau:relay'],
+            sourceCost: 0,
+            id: 'ars_nouveau:relay_warp'
         }
     ];
 
