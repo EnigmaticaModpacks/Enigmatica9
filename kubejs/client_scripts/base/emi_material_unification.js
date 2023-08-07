@@ -101,7 +101,6 @@ ClientEvents.highPriorityAssets((event) => {
             `/emendatusenigmatica:(iron|gold|diamond|emerald|netherite|raw)_(gold|iron|ingot|nugget|block)/`,
             `/emendatusenigmatica:(copper|raw)_(copper|ingot|block)/`,
             `/emendatusenigmatica:${regex_materials}_air/`,
-            `/emendatusenigmatica:andesite/`,
 
             `/immersiveengineering:(stick|dust|plate|ingot|nugget|raw|raw_block|storage|ore|deepslate_ore)_${regex_materials}/`,
             `/immersiveengineering:(coke|slag)/`,
