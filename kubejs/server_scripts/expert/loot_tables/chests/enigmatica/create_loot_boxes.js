@@ -12,6 +12,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('create:analog_lever', 3, 1);
             pool.addItem('create:andesite_casing', 3, 8);
             pool.addItem('create:belt_connector', 3, 4);
+            pool.addItem('create:copper_casing', 1, 4);
         });
 
         table.addPool((pool) => {
@@ -28,7 +29,6 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('create:redstone_contact', 1, 1);
             pool.addItem('create:pulse_extender', 1, 1);
             pool.addItem('create:redstone_link', 1, 1);
-            pool.addItem('create:brass_casing', 1, 4);
             pool.addItem('create:brown_toolbox', 1, 1);
             pool.addItem('create:crafting_blueprint', 1, 1);
         });
@@ -45,7 +45,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('create:mechanical_arm', 1, 1);
             pool.addItem('create:rotation_speed_controller', 1, 1);
             pool.addItem('create:blaze_cake', 1, 8);
-            pool.addItem('create:copper_casing', 1, 4);
+            pool.addItem('create:brass_casing', 1, 4);
         });
 
         table.addPool((pool) => {
