@@ -5,7 +5,7 @@
 	Foxhound = true
 	Forgotten = true
 	Shiba = true
-	Wraith = false
+	Wraith = true
 	Toretoise = false
 
 	[mobs.toretoise]
