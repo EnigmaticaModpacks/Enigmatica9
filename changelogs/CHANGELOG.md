@@ -7,6 +7,7 @@
 ### 🐛 Fixed Bugs
 
 -   Re-allow Withers to be transported via Soul Gem following creation of a tag based blacklist in Occultism. [\#581](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/581) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix mistakenly hidden categories in Normal Mode [\#586](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/586) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
