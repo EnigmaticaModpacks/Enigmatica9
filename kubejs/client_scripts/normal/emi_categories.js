@@ -3,7 +3,7 @@ ClientEvents.highPriorityAssets((event) => {
     if (global.isNormalMode == false) {
         return;
     }
-    const modes = ['base', 'expert'];
+    const modes = ['base', 'normal'];
     const payload = { filters: [] };
 
     modes.forEach((mode) => {
