@@ -197,13 +197,23 @@
 			description: ["By automatically applying Fertilizer or Bone Meal, the Plant Fertilizer drastically speeds up crop growth in its working area. "]
 			hide_dependency_lines: true
 			id: "08142040D5D8815C"
-			rewards: [{
-				count: 16
-				id: "0C51BC0086C07E6B"
-				item: "industrialforegoing:fertilizer"
-				title: "Fertilizer"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "0C51BC0086C07E6B"
+					item: "industrialforegoing:fertilizer"
+					title: "Fertilizer"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "076765969F37C975"
+					player_command: false
+					title: "Rare Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
 			subtitle: "Second Chances"
 			tasks: [{
 				id: "5BC241B5CA44B54C"
@@ -307,6 +317,14 @@
 			]
 			hide_dependency_lines: true
 			id: "2E391C1331D1C854"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "6C27923990829FB4"
+				player_command: false
+				title: "Rare Industrial Foregoing Loot Box"
+				type: "command"
+			}]
 			subtitle: "A Blight Upon the Land"
 			tasks: [{
 				id: "02831806736BC87A"
@@ -414,11 +432,11 @@
 			hide_dependency_lines: true
 			id: "0D2046CE317CC921"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "182924E81754A51E"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "131B8F1A1F1FE1FC"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "Rare Industrial Foregoing Loot Box"
 				type: "command"
 			}]
 			subtitle: "What You Leave Behind"
@@ -436,11 +454,11 @@
 			hide_dependency_lines: true
 			id: "52764EBC333BE812"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "2F87A04ED5307AC5"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "58FC0103111007F7"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "Rare Industrial Foregoing Loot Box"
 				type: "command"
 			}]
 			subtitle: "A Matter of Perspective"
@@ -464,11 +482,11 @@
 			hide_dependency_lines: true
 			id: "3A75AA5CC54B57CF"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				icon: "kubejs:farmers_delight"
-				id: "53DA9652A8CE4752"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "0DB5BF86FD75C324"
 				player_command: false
-				title: "Farmer's Delight"
+				title: "Rare Industrial Foregoing Loot Box"
 				type: "command"
 			}]
 			subtitle: "Reaping the Rewards"
@@ -490,11 +508,11 @@
 			hide_dependency_lines: true
 			id: "1FBB65CA305699EA"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				icon: "kubejs:farmers_delight"
-				id: "76EC4C76221971EC"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "56424275050ABFF4"
 				player_command: false
-				title: "Farmer's Delight"
+				title: "Rare Industrial Foregoing Loot Box"
 				type: "command"
 			}]
 			subtitle: "Sow Many Plants, Sow Little Time"
@@ -518,11 +536,11 @@
 			hide_dependency_lines: true
 			id: "052EA866FC2E143E"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/epic"
-				icon: "kubejs:epic_lootbox"
-				id: "2DC8C6DE28A0C774"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "3463EB949B33CDA9"
 				player_command: false
-				title: "Epic Industrial Foregoing Loot Box"
+				title: "Rare Industrial Foregoing Loot Box"
 				type: "command"
 			}]
 			tasks: [{
@@ -539,11 +557,11 @@
 			hide_dependency_lines: true
 			id: "5E518FE797F99F6F"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
-				icon: "kubejs:farmers_delight"
-				id: "76B63E8457F43B5F"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "788C3E2A822F3CD0"
 				player_command: false
-				title: "Farmer's Delight"
+				title: "Rare Industrial Foregoing Loot Box"
 				type: "command"
 			}]
 			subtitle: "The Plot Thickens..."

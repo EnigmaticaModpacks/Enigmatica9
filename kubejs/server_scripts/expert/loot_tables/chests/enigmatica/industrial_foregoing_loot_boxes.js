@@ -5,11 +5,10 @@ ServerEvents.genericLootTables((event) => {
     event.addGeneric('enigmatica:loot_boxes/industrial_foregoing/rare', (table) => {
         table.addPool((pool) => {
             pool.rolls = 2.0;
-            pool.addItem('industrialforegoing:item_transporter_type', 10, 2);
-            pool.addItem('industrialforegoing:fluid_transporter_type', 10, 2);
-            pool.addItem('thermal:rubber', 10, [8, 16]);
-            pool.addItem('pneumaticcraft:plastic', 10, [8, 16]);
-            pool.addItem('industrialforegoing:laser_drill', 1, 1);
+            pool.addItem('industrialforegoing:item_transporter_type', 5, 2);
+            pool.addItem('industrialforegoing:fluid_transporter_type', 5, 2);
+            pool.addItem('thermal:rubber', 5, [8, 16]);
+            pool.addItem('pneumaticcraft:plastic', 5, [8, 16]);
             pool.addItem('industrialforegoing:mechanical_dirt', 1, [1, 3]);
         });
 
@@ -37,8 +36,9 @@ ServerEvents.genericLootTables((event) => {
     event.addGeneric('enigmatica:loot_boxes/industrial_foregoing/epic', (table) => {
         table.addPool((pool) => {
             pool.rolls = 2.0;
-            pool.addItem('occultism:soul_gem', 5, 1);
-            pool.addItem('industrialforegoing:machine_frame_advanced', 30, 1);
+            pool.addItem('occultism:soul_gem', 1, 1);
+            pool.addItem('industrialforegoing:machine_frame_simple', 1, 1);
+            pool.addItem('industrialforegoing:laser_drill', 1, 1);
             pool.addItem(
                 Item.of(
                     'pneumaticcraft:huge_tank',
