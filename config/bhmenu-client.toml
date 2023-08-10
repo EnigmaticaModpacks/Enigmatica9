@@ -8,7 +8,7 @@ partner_id = "2214"
 #Set this to false to disable pack config screen and enable user configs instead.
 #This should always be done by the pack author once they are done with configuring the pack.
 #To re-enable Pack Edit Mode, please edit the config file.
-pack_edit_mode = true
+pack_edit_mode = false
 
 [modules]
 
