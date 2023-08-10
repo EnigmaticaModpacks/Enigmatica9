@@ -17,7 +17,7 @@ METHOD_SHADER_DUMP = false
 
 ["Main Menu Button"]
 	#Enabled
-	SHOW = true
+	SHOW = false
 	#Pixels away from the left of the GUI in the x axis
 	#Range: > 0
 	MAIN_X = 4
