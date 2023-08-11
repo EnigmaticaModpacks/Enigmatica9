@@ -19,6 +19,32 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}carved_pumpkin`
+        },
+        {
+            type: 'lychee:dripstone_dripping',
+            ghost: true,
+            source_block: 'minecraft:mud',
+            target_block: 'minecraft:air',
+            post: [
+                {
+                    type: 'place',
+                    block: { blocks: ['minecraft:clay'] }
+                }
+            ],
+            id: `${id_prefix}clay`
+        },
+        {
+            type: 'lychee:dripstone_dripping',
+            ghost: true,
+            source_block: 'minecraft:lava',
+            target_block: 'minecraft:cauldron',
+            post: [
+                {
+                    type: 'place',
+                    block: { blocks: ['minecraft:lava'] }
+                }
+            ],
+            id: `${id_prefix}lava`
         }
     ];
 
