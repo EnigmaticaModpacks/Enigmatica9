@@ -54,6 +54,7 @@ ServerEvents.recipes((event) => {
         { id: 'create:compat/byg/crushing/lignite_ore' },
         { id: 'create:crushing/blaze_rod' },
         { id: 'create:milling/sandstone' },
+        { id: 'create:milling/dripstone_block' },
         { id: 'create:milling/bone' },
         { id: 'create:milling/andesite' },
 
