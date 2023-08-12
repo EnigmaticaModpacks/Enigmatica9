@@ -53,7 +53,7 @@ WorldgenEvents.add((event) => {
             biomes: ['twilightforest:spooky_forest', 'twilightforest:dark_forest', 'twilightforest:dark_forest_center'],
             minCount: 1,
             maxCount: 1,
-            weight: 1
+            weight: 5
         },
         {
             category: 'creature',
@@ -89,7 +89,7 @@ WorldgenEvents.add((event) => {
             biomes: ['twilightforest:lake', 'twilightforest:stream', 'twilightforest:swamp'],
             minCount: 1,
             maxCount: 2,
-            weight: 5
+            weight: 20
         },
         {
             category: 'creature',
@@ -97,7 +97,7 @@ WorldgenEvents.add((event) => {
             biomes: ['twilightforest:lake', 'twilightforest:stream', 'twilightforest:swamp'],
             minCount: 3,
             maxCount: 5,
-            weight: 5
+            weight: 20
         },
         {
             category: 'creature',
@@ -110,7 +110,7 @@ WorldgenEvents.add((event) => {
             ],
             minCount: 1,
             maxCount: 2,
-            weight: 5
+            weight: 10
         },
         {
             category: 'creature',
@@ -118,7 +118,7 @@ WorldgenEvents.add((event) => {
             biomes: ['twilightforest:snowy_forest', 'twilightforest:glacier'],
             minCount: 2,
             maxCount: 3,
-            weight: 5
+            weight: 10
         },
         {
             category: 'creature',

@@ -1,3 +1,16 @@
+### Enigmatica 9 v1.11.1
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.11.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.11.0.md)
+
+### 🌟 Improvements
+
+-   Pumpkin wardens may now spawn in the Dark Forest. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Several Creatures and Beasts mobs now have higher chances to spawn in the Twilight Forest. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
+
+### 🐛 Fixed Bugs
+
+---
+
 ### Enigmatica 9 v1.11.0
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.11.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.11.0.md)
