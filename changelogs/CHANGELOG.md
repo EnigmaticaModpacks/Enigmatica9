@@ -3,6 +3,8 @@
 ### 🌟 Improvements
 
 -   Dummy recipes added to show how to make clay and lava from Dripstone. [\#595](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/595) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Create machines may now run at 256 RPM. [\#603](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/603) ([MuteTiefling](https://github.com/MuteTiefling))
+-   IE machines now run faster and cost less power. [\#603](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/603) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 

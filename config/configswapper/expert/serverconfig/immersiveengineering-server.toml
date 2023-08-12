@@ -236,44 +236,44 @@
 	[machines.crusher]
 		#A modifier to apply to the energy costs of every crusher recipe
 		#Range: 0.001 ~ 1000.0
-		energyModifier = 1.0
+		energyModifier = 0.25
 		#A modifier to apply to the time of every crusher recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 0.25
 
 	[machines.squeezer]
 		#A modifier to apply to the energy costs of every squeezer recipe
 		#Range: 0.001 ~ 1000.0
-		energyModifier = 1.0
+		energyModifier = 0.25
 		#A modifier to apply to the time of every squeezer recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 0.25
 
 	[machines.fermenter]
 		#A modifier to apply to the energy costs of every fermenter recipe
 		#Range: 0.001 ~ 1000.0
-		energyModifier = 1.0
+		energyModifier = 0.25
 		#A modifier to apply to the time of every fermenter recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 0.25
 
 	[machines.refinery]
 		#A modifier to apply to the energy costs of every refinery recipe
 		#Range: 0.001 ~ 1000.0
-		energyModifier = 1.0
+		energyModifier = 0.25
 
 	[machines.auto_workbench]
 		#A modifier to apply to the energy costs of every auto workbench recipe
 		#Range: 0.001 ~ 1000.0
-		energyModifier = 1.0
+		energyModifier = 0.25
 		#A modifier to apply to the time of every auto workbench recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 0.25
 
 	[machines.bottling_machine]
 		#A modifier to apply to the energy costs of every bottling machine recipe
 		#Range: 0.001 ~ 1000.0
-		energyModifier = 1.0
+		energyModifier = 0.25
 		#A modifier to apply to the time of every bottling machine recipe
 		#Range: 0.001 ~ 1000.0
 		timeModifier = 0.25
@@ -281,7 +281,7 @@
 	[machines.mixer]
 		#A modifier to apply to the energy costs of every mixer recipe
 		#Range: 0.001 ~ 1000.0
-		energyModifier = 1.0
+		energyModifier = 0.25
 		#A modifier to apply to the time of every mixer recipe
 		#Range: 0.001 ~ 1000.0
 		timeModifier = 0.25
@@ -289,10 +289,10 @@
 	[machines.sawmill]
 		#A modifier to apply to the energy costs of every sawmill recipe
 		#Range: 0.001 ~ 1000.0
-		energyModifier = 1.0
+		energyModifier = 0.25
 		#A modifier to apply to the time of every sawmill recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 0.25
 
 	[machines.arc_furnace]
 		#A modifier to apply to the energy costs of every arc furnace recipe
