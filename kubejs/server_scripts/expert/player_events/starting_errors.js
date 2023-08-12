@@ -6,7 +6,7 @@ PlayerEvents.loggedIn((event) => {
     }
 
     const twilight_portal = Java.loadClass('twilightforest.block.TFPortalBlock');
-    const { player, level, server } = event;
+    const { player, server } = event;
 
     if (player.stages.has('starting_errors') && !player.stages.has('starting_errors_corrected')) {
         // Second load detected, Twilight should be available so send them there.
@@ -14,16 +14,16 @@ PlayerEvents.loggedIn((event) => {
         player.stages.add('starting_errors_corrected');
     }
 
-    if (!player.stages.has('starting_items') && !player.stages.has('starting_errors')) {
-        // First load detected, kick the player with a message to rejoin.
-        player.stages.add('starting_errors');
-
-        if (String(level.getDimension()) == 'minecraft:overworld') {
-            let username = player.getUsername();
-            let command = `/kick ${username} An issue was detected with your world start! Please join the world again to correct it.`;
+    if (!server.getLevel('twilightforest:twilight_forest')) {
+        // First load, error detected, kick the player with a message to rejoin.
+        if (!player.stages.has('starting_items') && !player.stages.has('starting_errors')) {
             console.log(
                 'Enigmatica: Issues were detected with the world start. Rejoining the world is required to fix it.'
             );
+            player.stages.add('starting_errors');
+
+            let username = player.getUsername();
+            let command = `/kick ${username} An issue was detected with your world start! Please join the world again to correct it.`;
             server.runCommandSilent(command);
         }
     }
