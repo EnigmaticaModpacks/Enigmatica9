@@ -116,22 +116,6 @@ WorldgenEvents.add((event) => {
             weight: 20
         },
         {
-            category: 'water_creature',
-            entity: 'minecraft:tropical_fish',
-            biomes: ['twilightforest:lake', 'twilightforest:stream'],
-            minCount: 1,
-            maxCount: 2,
-            weight: 1
-        },
-        {
-            category: 'water_creature',
-            entity: 'minecraft:salmon',
-            biomes: ['twilightforest:lake', 'twilightforest:stream'],
-            minCount: 1,
-            maxCount: 2,
-            weight: 1
-        },
-        {
             category: 'creature',
             entity: 'cnb:lilytad',
             biomes: ['twilightforest:lake', 'twilightforest:stream', 'twilightforest:swamp'],
