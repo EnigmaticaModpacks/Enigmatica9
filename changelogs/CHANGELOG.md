@@ -5,6 +5,10 @@
 ### 🌟 Improvements
 
 -   Pumpkin wardens may now spawn in the Dark Forest. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Foxes may now spawn in several Twilight Forest biomes. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Allays may now spawn in the Enchanted Forest biome. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Goats may now spawn in the Highlands biome. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Frogs may now spawn in Twilight Forest Swamps. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Several Creatures and Beasts mobs now have higher chances to spawn in the Twilight Forest. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Add mention in the first quest that Twilight Forest progression is disabled. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
 

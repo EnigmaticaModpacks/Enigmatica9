@@ -154,14 +154,6 @@ WorldgenEvents.add((event) => {
         },
         {
             category: 'creature',
-            entity: 'minecraft:polar_bear',
-            biomes: ['twilightforest:snowy_forest', 'twilightforest:glacier'],
-            minCount: 2,
-            maxCount: 3,
-            weight: 5
-        },
-        {
-            category: 'creature',
             entity: 'minecraft:turtle',
             biomes: '#minecraft:is_ocean',
             minCount: 1,
