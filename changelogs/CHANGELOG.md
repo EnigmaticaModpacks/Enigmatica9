@@ -1,5 +1,7 @@
 ### Enigmatica 9 v1.11.0
 
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.11.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.11.0.md)
+
 ### 🌟 Improvements
 
 -   Dummy recipes added to show how to make clay and lava from Dripstone. [\#595](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/595) ([MuteTiefling](https://github.com/MuteTiefling))
@@ -9,6 +11,7 @@
 ### 🐛 Fixed Bugs
 
 -   Fix recipe conflict with crushing dripstone. [\#595](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/595) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Added temporary workaround for players not spawning in the Twilight Forest when configuring world [\#598](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/598)
 
 ---
 
