@@ -50,7 +50,7 @@ WorldgenEvents.add((event) => {
         {
             category: 'creature',
             entity: 'byg:pumpkin_warden',
-            biomes: ['twilightforest:spooky_forest'],
+            biomes: ['twilightforest:spooky_forest', 'twilightforest:dark_forest', 'twilightforest:dark_forest_center'],
             minCount: 1,
             maxCount: 1,
             weight: 1
