@@ -28,11 +28,27 @@ WorldgenEvents.add((event) => {
         },
         {
             category: 'creature',
+            entity: 'minecraft:fox',
+            biomes: ['twilightforest:enchanted_forest', 'twilightforest:dense_forest', 'twilightforest:forest'],
+            minCount: 1,
+            maxCount: 2,
+            weight: 5
+        },
+        {
+            category: 'creature',
             entity: 'bookwyrms:book_wyrm',
             biomes: 'twilightforest:enchanted_forest',
             minCount: 1,
             maxCount: 2,
             weight: 10
+        },
+        {
+            category: 'creature',
+            entity: 'minecraft:allay',
+            biomes: 'twilightforest:enchanted_forest',
+            minCount: 1,
+            maxCount: 1,
+            weight: 1
         },
         {
             category: 'creature',
@@ -77,6 +93,14 @@ WorldgenEvents.add((event) => {
         },
         {
             category: 'creature',
+            entity: 'minecraft:goat',
+            biomes: ['twilightforest:highlands'],
+            minCount: 1,
+            maxCount: 3,
+            weight: 5
+        },
+        {
+            category: 'creature',
             entity: 'cnb:cindershell',
             biomes: ['twilightforest:fire_swamp'],
             minCount: 1,
@@ -90,6 +114,22 @@ WorldgenEvents.add((event) => {
             minCount: 1,
             maxCount: 2,
             weight: 20
+        },
+        {
+            category: 'water_creature',
+            entity: 'minecraft:tropical_fish',
+            biomes: ['twilightforest:lake', 'twilightforest:stream'],
+            minCount: 1,
+            maxCount: 2,
+            weight: 1
+        },
+        {
+            category: 'water_creature',
+            entity: 'minecraft:salmon',
+            biomes: ['twilightforest:lake', 'twilightforest:stream'],
+            minCount: 1,
+            maxCount: 2,
+            weight: 1
         },
         {
             category: 'creature',
@@ -122,6 +162,14 @@ WorldgenEvents.add((event) => {
             minCount: 2,
             maxCount: 3,
             weight: 10
+        },
+        {
+            category: 'creature',
+            entity: 'minecraft:polar_bear',
+            biomes: ['twilightforest:snowy_forest', 'twilightforest:glacier'],
+            minCount: 2,
+            maxCount: 3,
+            weight: 5
         },
         {
             category: 'creature',
