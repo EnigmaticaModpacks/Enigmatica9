@@ -93,7 +93,7 @@
 	#[in Revolutions per Minute]
 	#Maximum allowed rotation speed for any Kinetic Tile.
 	#Range: > 64
-	maxRotationSpeed = 128
+	maxRotationSpeed = 256
 	#.
 	#Select what mobs should ignore Deployers when attacked by them.
 	#Allowed Values: ALL, CREEPERS, NONE
@@ -259,24 +259,8 @@
 			#.
 			#[in Stress Units]
 			#Configure how much stress a source can accommodate for.
-			[kinetics.stressValues.v2.capacity]
-				blue_valve_handle = 8.0
-				copper_valve_handle = 8.0
-				pink_valve_handle = 8.0
-				black_valve_handle = 8.0
-				magenta_valve_handle = 8.0
-				white_valve_handle = 8.0
-				yellow_valve_handle = 8.0
-				brown_valve_handle = 8.0
-				cyan_valve_handle = 8.0
-				light_blue_valve_handle = 8.0
-				lime_valve_handle = 8.0
-				purple_valve_handle = 8.0
-				red_valve_handle = 8.0
-				gray_valve_handle = 8.0
-				orange_valve_handle = 8.0
-				light_gray_valve_handle = 8.0
-				green_valve_handle = 8.0
+			[kinetics.stressValues.v2.capacity]			
+				copper_valve_handle = 8.0		
 				hand_crank = 8.0
 				water_wheel = 16.0
 				windmill_bearing = 512.0
@@ -290,12 +274,12 @@
 			#[in Revolutions per Minute]
 			#Minimum speed of rotation to be considered 'medium'
 			#Range: 0.0 ~ 4096.0
-			mediumSpeed = 15.0
+			mediumSpeed = 30.0
 			#.
 			#[in Revolutions per Minute]
 			#Minimum speed of rotation to be considered 'fast'
 			#Range: 0.0 ~ 65535.0
-			fastSpeed = 50.0
+			fastSpeed = 100.0
 			#.
 			#[in Stress Units]
 			#Minimum stress impact to be considered 'medium'
@@ -355,8 +339,8 @@
 	#Allowed Values: ALLOW_ALL, DENY_ALL, ALLOW_BY_TAG, DENY_BY_TAG
 	bottomlessFluidMode = "ALLOW_BY_TAG"
 	#.
-	#Whether open-ended pipes and hose pulleys should be allowed to place fluid sources.
-	placeFluidSourceBlocks = true
+	#Whether open-ended pipes should be allowed to place fluid sources.
+	pipesPlaceFluidSourceBlocks = true
 
 #.
 #Tweaks for logistical components
@@ -430,8 +414,8 @@
 		schematicannonDelay = 10
 
 #.
-#Gadgets and other Shenanigans added by Create
-[curiosities]
+#Equipment and gadgets added by Create
+[equipment]
 	#.
 	#.
 	#The Maximum Distance to an active mirror for the symmetry wand to trigger.

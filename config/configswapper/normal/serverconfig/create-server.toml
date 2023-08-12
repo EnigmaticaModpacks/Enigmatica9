@@ -257,28 +257,12 @@
 			#[in Stress Units]
 			#Configure how much stress a source can accommodate for.
 			[kinetics.stressValues.v2.capacity]
-				blue_valve_handle = 8.0
 				copper_valve_handle = 8.0
-				pink_valve_handle = 8.0
 				hand_crank = 8.0
-				black_valve_handle = 8.0
-				magenta_valve_handle = 8.0
-				white_valve_handle = 8.0
-				yellow_valve_handle = 8.0
-				brown_valve_handle = 8.0
-				cyan_valve_handle = 8.0
+				water_wheel = 16.0
 				windmill_bearing = 512.0
-				light_blue_valve_handle = 8.0
-				lime_valve_handle = 8.0
-				purple_valve_handle = 8.0
-				red_valve_handle = 8.0
 				steam_engine = 1024.0
 				creative_motor = 16384.0
-				gray_valve_handle = 8.0
-				water_wheel = 16.0
-				orange_valve_handle = 8.0
-				light_gray_valve_handle = 8.0
-				green_valve_handle = 8.0
 
 		#.
 		#Configure speed/capacity levels for requirements and indicators.
@@ -352,8 +336,8 @@
 	#Allowed Values: ALLOW_ALL, DENY_ALL, ALLOW_BY_TAG, DENY_BY_TAG
 	bottomlessFluidMode = "ALLOW_BY_TAG"
 	#.
-	#Whether open-ended pipes and hose pulleys should be allowed to place fluid sources.
-	placeFluidSourceBlocks = true
+	#Whether open-ended pipes should be allowed to place fluid sources.
+	pipesPlaceFluidSourceBlocks = true
 
 #.
 #Tweaks for logistical components
@@ -427,8 +411,8 @@
 		schematicannonDelay = 10
 
 #.
-#Gadgets and other Shenanigans added by Create
-[curiosities]
+#Equipment and gadgets added by Create
+[equipment]
 	#.
 	#.
 	#The Maximum Distance to an active mirror for the symmetry wand to trigger.
