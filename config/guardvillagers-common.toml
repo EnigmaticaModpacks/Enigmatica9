@@ -10,8 +10,6 @@
 	"Have guards only follow the player if they have hero of the village?" = true
 	#Range: -500.0 ~ 900.0
 	"Guard speed" = 0.5
-	#This will make guards attempt to avoid friendly fire.
-	"Have guards attempt to avoid firing into other friendlies? (Experimental)" = false
 	#This is the range in which the guards will be aggroed to mobs that are attacking villagers. Higher values are more resource intensive, and setting this to zero will disable the goal.
 	#Range: -500.0 ~ 500.0
 	Range = 50.0
@@ -32,6 +30,8 @@
 	"Chance to drop equipment" = 100.0
 	#Range: -500.0 ~ 900.0
 	"Guard health" = 20.0
+	#This will make guards attempt to avoid friendly fire.
+	"Have guards attempt to avoid firing into other friendlies?" = true
 
 ["raids and illagers"]
 	#This makes Illagers run from polar bears, as anyone with common sense would.
@@ -44,10 +44,12 @@
 	"Have Illusioners in raids?" = false
 
 ["mob ai in general"]
-	#Guards will attack all hostiles with this option
+	#Guards will attack all hostiles with this option, when set to false guards will only attack zombies and illagers.
 	"Guards attack all mobs?" = false
-	#Guards won't attack mobs in this list if AttackAllMobs is enabled, for example, putting "minecraft:creeper" in this list will make guards ignore creepers.
+	#Guards won't attack mobs in this list at all, for example, putting "minecraft:creeper" in this list will make guards ignore creepers.
 	"Mob BlackList" = []
+	#Guards will additionally attack mobs ids put in this list, for example, putting "minecraft:cow" in this list will make guards attack cows.
+	"Mob WhiteList" = []
 
 ["villager stuff"]
 	#This makes villagers run from polar bears, as anyone with common sense would.

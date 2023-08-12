@@ -94,6 +94,8 @@
 	#Max range for Fluid Mk2
 	#Range: > 1
 	fluid2MaxRange = 24
+	#Dimension ID's which the Sender Mk3 cannot send to or from, and the Player Module cannot operate (both router dimension and player dimension are checked). This can be wildcarded, e.g. 'somemod:*' blacklists all dimensions added by the mod 'somemod'
+	dimensionBlacklist = []
 
 ["Energy Costs"]
 	#Energy cost (FE) to run one left-click (attack) operation for the Activator Module
