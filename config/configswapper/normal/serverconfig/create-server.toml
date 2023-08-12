@@ -75,22 +75,6 @@
 	crushingDamage = 4
 	#.
 	#[in Revolutions per Minute]
-	#Maximum allowed speed of a configurable motor.
-	#[@cui:RequiresReload:both]
-	#Range: > 64
-	maxMotorSpeed = 256
-	#.
-	#[in Revolutions per Minute]
-	#Added rotation speed by a water wheel when at least one flow is present.
-	#Range: > 1
-	waterWheelBaseSpeed = 4
-	#.
-	#[in Revolutions per Minute]
-	#Rotation speed gained by a water wheel for each side with running fluids. (halved if not against blades)
-	#Range: > 1
-	waterWheelFlowSpeed = 4
-	#.
-	#[in Revolutions per Minute]
 	#Maximum allowed rotation speed for any Kinetic Tile.
 	#Range: > 64
 	maxRotationSpeed = 256
@@ -143,10 +127,6 @@
 		#Rotation speed at which the maximum stats of fans are reached.
 		#Range: > 64
 		fanRotationArgmax = 256
-		#.
-		#Game ticks required for a Fan-based processing recipe to take effect.
-		#Range: > 0
-		inWorldProcessingTime = 150
 
 	#.
 	#Moving Contraptions
@@ -266,7 +246,7 @@
 
 		#.
 		#Configure speed/capacity levels for requirements and indicators.
-		[kinetics.stressValues.stats]
+		[kinetics.stats]
 			#.
 			#[in Revolutions per Minute]
 			#Minimum speed of rotation to be considered 'medium'
