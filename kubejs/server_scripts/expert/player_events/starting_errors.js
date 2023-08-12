@@ -3,8 +3,8 @@ PlayerEvents.loggedIn((event) => {
         return;
     }
 
-    const { player, level, server } = event;
     const twilight_portal = Java.loadClass('twilightforest.block.TFPortalBlock');
+    const { player, level, server } = event;
 
     if (player.stages.has('starting_errors') && !player.stages.has('starting_errors_corrected')) {
         // Second load detected, Twilight should be available so send them there.
@@ -17,9 +17,9 @@ PlayerEvents.loggedIn((event) => {
         player.stages.add('starting_errors');
 
         if (String(level.getDimension()) == 'minecraft:overworld') {
-            server.runCommandSilent(
-                `/kick ${player.getUsername()} An issue was detected with your world start! Please join the world again to correct it.`
-            );
+            let username = player.getUsername();
+            let command = `/kick ${username} An issue was detected with your world start! Please join the world again to correct it.`;
+            server.runCommandSilent(command);
         }
     }
 });
