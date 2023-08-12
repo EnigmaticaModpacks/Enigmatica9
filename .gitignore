@@ -120,7 +120,6 @@ config/craftingtweaks-client.toml
 config/create-client.toml
 config/cucumber-client.toml
 config/cyclopscore-client.toml
-config/darkmodeeverywhere-client.toml
 config/darkmodeeverywhereshaders.json
 config/eidolon-client.toml
 config/emojiful-client.toml

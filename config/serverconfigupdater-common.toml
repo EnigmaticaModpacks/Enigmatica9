@@ -6,7 +6,7 @@
 
 ["File Deleter"]
 	# This is intended for deleting files for pack updates. This is a last resort! Replace with empty files instead when possible. The file will be deleted every launch if it exists! Specify the path to the file. Comma Separated List. Example: scripts/badscript.zs
-	files = ["config/darkmodeeverywhere-client.toml"]
+	files = []
 	# By default Folders are only deleted if they are empty. Set to true to change that.
 	deleteFoldersWithContent = false
 

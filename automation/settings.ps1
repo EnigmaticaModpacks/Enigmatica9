@@ -173,7 +173,6 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"xnet-client.toml",
 	"defaultoptions/servers.dat",
 	"defaultoptions/extra",
-	"darkmodeeverywhere-client.toml",
 	"darkmodeeverywhereshaders.json",
 	"ae2/client.json",
 	"explorerscompass-client.toml",
