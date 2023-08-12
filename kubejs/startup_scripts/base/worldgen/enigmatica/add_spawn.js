@@ -101,13 +101,16 @@ WorldgenEvents.add((event) => {
         },
         {
             category: 'creature',
+            entity: 'minecraft:frog',
+            biomes: ['twilightforest:lake', 'twilightforest:stream', 'twilightforest:swamp'],
+            minCount: 3,
+            maxCount: 5,
+            weight: 10
+        },
+        {
+            category: 'creature',
             entity: 'cnb:little_grebe',
-            biomes: [
-                'twilightforest:firefly_forest',
-                'twilightforest:lake',
-                'twilightforest:stream',
-                'twilightforest:swamp'
-            ],
+            biomes: ['twilightforest:lake', 'twilightforest:stream', 'twilightforest:swamp'],
             minCount: 1,
             maxCount: 2,
             weight: 10
