@@ -1,5 +1,5 @@
-//priority: 900
-
+//priority: 1000
+// This must run before starting_items.js, so the initial starting_items tag isn't present, only existing ones
 PlayerEvents.loggedIn((event) => {
     if (global.isExpertMode == false) {
         return;

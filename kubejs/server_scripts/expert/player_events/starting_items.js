@@ -1,4 +1,4 @@
-//priority: 1000
+//priority: 900
 
 PlayerEvents.loggedIn((event) => {
     if (global.isExpertMode == false) {
