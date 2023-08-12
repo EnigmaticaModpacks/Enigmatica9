@@ -29,7 +29,12 @@ WorldgenEvents.add((event) => {
         {
             category: 'creature',
             entity: 'minecraft:fox',
-            biomes: ['twilightforest:enchanted_forest', 'twilightforest:dense_forest', 'twilightforest:forest'],
+            biomes: [
+                'twilightforest:enchanted_forest',
+                'twilightforest:dense_forest',
+                'twilightforest:forest',
+                'twilightforest:highlands'
+            ],
             minCount: 1,
             maxCount: 2,
             weight: 5
