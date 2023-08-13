@@ -14,7 +14,7 @@
 
 ### 🐛 Fixed Bugs
 
--   Quest text in the Equipment section changed to refer to EMI and updated to use EMI's tag search prefix. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Quest text in the Equipment and Storage sections changed to refer to EMI and updated to use EMI's tag search prefix. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
