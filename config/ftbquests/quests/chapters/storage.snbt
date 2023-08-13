@@ -13,15 +13,15 @@
 			description: [
 				"Finding a place to store stuff is always a bit complicated, and keeping organized can be quite a task at times. Thankfully, a few mods exist to assist in this endeavor. The following quests will help you discover these mods."
 				""
-				"Note: Most blocks that are useful as a storage block have been Tagged for search in JEI. Search for the following categories:"
+				"Note: Most blocks that are useful as a storage block have been Tagged for search in EMI. Search for the following categories:"
 				""
-				"● $containers"
-				"● $containers/basic"
-				"● $containers/bulk"
-				"● $containers/bag"
-				"● $containers/energy"
-				"● $containers/gas"
-				"● $containers/liquid"
+				"● #containers"
+				"● #containers/basic"
+				"● #containers/bulk"
+				"● #containers/bag"
+				"● #containers/energy"
+				"● #containers/gas"
+				"● #containers/liquid"
 			]
 			hide: true
 			icon: "minecraft:chest"
