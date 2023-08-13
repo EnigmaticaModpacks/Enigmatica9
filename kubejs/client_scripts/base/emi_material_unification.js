@@ -103,7 +103,9 @@ ClientEvents.highPriorityAssets((event) => {
             `/emendatusenigmatica:${regex_materials}_air/`,
 
             `/immersiveengineering:(stick|dust|plate|ingot|nugget|raw|raw_block|storage|ore|deepslate_ore)_${regex_materials}/`,
-            `/immersiveengineering:(coke|slag)/`,
+            'immersiveengineering:coke',
+            'immersiveengineering:coal_coke',
+            'immersiveengineering:slag',
 
             `/industrialforegoing:.*_gear/`,
 
@@ -130,6 +132,7 @@ ClientEvents.highPriorityAssets((event) => {
             `/thermal:${regex_materials}_(dust|ingot|nugget|plate|gear|block|seeds)/`,
             `/thermal:raw_${regex_materials}/`,
             'thermal:bitumen',
+            'thermal:coal_coke',
 
             'twilightforest:carminite'
         ],
