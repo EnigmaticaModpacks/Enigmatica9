@@ -9,6 +9,7 @@
 -   [Expert] Cactem and Pumpkin Wardens may now be summoned via a ritual.[\#612](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/612) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Sporelings, Cactem, and Pumpkin Wardens have had their loot tables enhanced.[\#612](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/612) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Twilight Forest chests may now be converted to regular vanilla chests.[\#612](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/612) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Normal] Add processing options for Bitumen.[\#612](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/612) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
