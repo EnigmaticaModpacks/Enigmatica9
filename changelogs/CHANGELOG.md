@@ -5,6 +5,7 @@
 ### 🌟 Improvements
 
 -   An entry for the Ars Nouveau Storage Lectern has been added to the Storage quests. [\#612](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/612) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Attempting to teleport to the bumblezone early will now prompt the plaer for the correct block under it. [\#612](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/612) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 

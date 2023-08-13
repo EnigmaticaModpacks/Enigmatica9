@@ -110,10 +110,10 @@
 			description: [
 				"The world of bees is vaster than one might imagine. "
 				""
-				"Place a Teleporter beneath a hive, then throw an Ender Pearl into the hive to see just what’s waiting on the other side."
+				"Place a Mekanism Teleporter beneath a hive, then throw an Ender Pearl into the hive to see just what’s waiting on the other side."
 			]
 			hide: true
-			icon: "the_bumblezone:beehive_beeswax"
+			icon: "the_bumblezone:bee_queen_spawn_egg"
 			id: "1A8E11E6902EF950"
 			rewards: [{
 				id: "64AB9C8C216812FC"
