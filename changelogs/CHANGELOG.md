@@ -1,3 +1,25 @@
+### Enigmatica 9 v1.11.1
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.11.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.11.0.md)
+
+### 🌟 Improvements
+
+-   Pumpkin wardens may now spawn in the Dark Forest. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Foxes may now spawn in several Twilight Forest biomes. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Allays may now spawn in the Enchanted Forest biome. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Goats may now spawn in the Highlands biome. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Frogs may now spawn in Twilight Forest Swamps. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Several Creatures and Beasts mobs now have higher chances to spawn in the Twilight Forest. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Add mention in the first quest that Twilight Forest progression is disabled. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Hide misleading info about quark ancient sapling. [\#608](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/608) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Increase drop rate of Hexerei saplings. [\#608](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/608) ([MuteTiefling](https://github.com/MuteTiefling))
+
+### 🐛 Fixed Bugs
+
+-   Quest text in the Equipment and Storage sections changed to refer to EMI and updated to use EMI's tag search prefix. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
+
+---
+
 ### Enigmatica 9 v1.11.0
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.11.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.11.0.md)
