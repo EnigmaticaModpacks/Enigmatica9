@@ -69,6 +69,7 @@ install:
             - 360673 # Custom Window Title
             - 401648 # BetterF3
             - 363363 # Extreme Sound Muffler
+            - 901997 # No More World Settings
 
     # The base path where the server should be installed to, ~ for current path
     baseInstallPath: ~
