@@ -229,7 +229,7 @@
 	#Set to false to disable Quark's item info when viweing recipe/uses for an item in JEI
 	"Enable Jei Item Info" = true
 	#For JEI info purposes, add any items here to specifically disable their JEI info from Quark. Note that Quark already only shows info that's relevant to which features are enabled
-	"Suppressed Info" = []
+	"Suppressed Info" = ["quark:ancient_sapling"]
 
 [automation]
 	Chute = false

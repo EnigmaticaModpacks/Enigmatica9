@@ -11,6 +11,8 @@
 -   Frogs may now spawn in Twilight Forest Swamps. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Several Creatures and Beasts mobs now have higher chances to spawn in the Twilight Forest. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Add mention in the first quest that Twilight Forest progression is disabled. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Hide misleading info about quark ancient sapling. [\#608](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/608) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Increase drop rate of Hexerei saplings. [\#608](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/608) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
