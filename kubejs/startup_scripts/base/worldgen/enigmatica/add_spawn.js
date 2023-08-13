@@ -28,11 +28,32 @@ WorldgenEvents.add((event) => {
         },
         {
             category: 'creature',
+            entity: 'minecraft:fox',
+            biomes: [
+                'twilightforest:enchanted_forest',
+                'twilightforest:dense_forest',
+                'twilightforest:forest',
+                'twilightforest:highlands'
+            ],
+            minCount: 1,
+            maxCount: 2,
+            weight: 5
+        },
+        {
+            category: 'creature',
             entity: 'bookwyrms:book_wyrm',
             biomes: 'twilightforest:enchanted_forest',
             minCount: 1,
             maxCount: 2,
             weight: 10
+        },
+        {
+            category: 'creature',
+            entity: 'minecraft:allay',
+            biomes: 'twilightforest:enchanted_forest',
+            minCount: 1,
+            maxCount: 1,
+            weight: 1
         },
         {
             category: 'creature',
@@ -50,10 +71,10 @@ WorldgenEvents.add((event) => {
         {
             category: 'creature',
             entity: 'byg:pumpkin_warden',
-            biomes: ['twilightforest:spooky_forest'],
+            biomes: ['twilightforest:spooky_forest', 'twilightforest:dark_forest', 'twilightforest:dark_forest_center'],
             minCount: 1,
             maxCount: 1,
-            weight: 1
+            weight: 5
         },
         {
             category: 'creature',
@@ -77,6 +98,14 @@ WorldgenEvents.add((event) => {
         },
         {
             category: 'creature',
+            entity: 'minecraft:goat',
+            biomes: ['twilightforest:highlands'],
+            minCount: 1,
+            maxCount: 3,
+            weight: 5
+        },
+        {
+            category: 'creature',
             entity: 'cnb:cindershell',
             biomes: ['twilightforest:fire_swamp'],
             minCount: 1,
@@ -89,7 +118,7 @@ WorldgenEvents.add((event) => {
             biomes: ['twilightforest:lake', 'twilightforest:stream', 'twilightforest:swamp'],
             minCount: 1,
             maxCount: 2,
-            weight: 5
+            weight: 20
         },
         {
             category: 'creature',
@@ -97,20 +126,23 @@ WorldgenEvents.add((event) => {
             biomes: ['twilightforest:lake', 'twilightforest:stream', 'twilightforest:swamp'],
             minCount: 3,
             maxCount: 5,
-            weight: 5
+            weight: 20
+        },
+        {
+            category: 'creature',
+            entity: 'minecraft:frog',
+            biomes: ['twilightforest:lake', 'twilightforest:stream', 'twilightforest:swamp'],
+            minCount: 3,
+            maxCount: 5,
+            weight: 10
         },
         {
             category: 'creature',
             entity: 'cnb:little_grebe',
-            biomes: [
-                'twilightforest:firefly_forest',
-                'twilightforest:lake',
-                'twilightforest:stream',
-                'twilightforest:swamp'
-            ],
+            biomes: ['twilightforest:lake', 'twilightforest:stream', 'twilightforest:swamp'],
             minCount: 1,
             maxCount: 2,
-            weight: 5
+            weight: 10
         },
         {
             category: 'creature',
@@ -118,7 +150,7 @@ WorldgenEvents.add((event) => {
             biomes: ['twilightforest:snowy_forest', 'twilightforest:glacier'],
             minCount: 2,
             maxCount: 3,
-            weight: 5
+            weight: 10
         },
         {
             category: 'creature',
