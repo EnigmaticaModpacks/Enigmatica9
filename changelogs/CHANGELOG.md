@@ -1,6 +1,10 @@
 ### Enigmatica 9 v1.11.1
 
-🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.11.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.11.0.md)
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.11.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.11.1.md)
+
+### 🎁 New Mods Added
+
+-   [No More World Settings](https://www.curseforge.com/minecraft/mc-mods/no-more-world-settings) (by [Darkere](https://www.curseforge.com/members/Darkere/projects))
 
 ### 🌟 Improvements
 
@@ -17,6 +21,7 @@
 ### 🐛 Fixed Bugs
 
 -   Quest text in the Equipment and Storage sections changed to refer to EMI and updated to use EMI's tag search prefix. [\#606](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/606) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Disabled More World Options button, because it caused twilight forest to be disabled on first world join when used.
 
 ---
 
