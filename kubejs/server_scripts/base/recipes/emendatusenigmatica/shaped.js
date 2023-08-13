@@ -25,6 +25,14 @@ ServerEvents.recipes((event) => {
                 A: 'emendatusenigmatica:sulfur_cluster'
             },
             id: `emendatusenigmatica:block/from_shard/sulfur`
+        },
+        {
+            output: 'emendatusenigmatica:coal_coke_block',
+            pattern: ['AAA', 'AAA', 'AAA'],
+            key: {
+                A: '#forge:gems/coal_coke'
+            },
+            id: `${id_prefix}coal_coke_block`
         }
     ];
 
