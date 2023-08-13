@@ -69,6 +69,8 @@ StartupEvents.registry('item', (event) => {
         'ritual_summon_siren',
         'ritual_summon_siren_from_shards',
         'ritual_summon_crow',
+        'ritual_summon_pumpkin_warden',
+        'ritual_summon_cactem',
         'ritual_summon_allay',
         'ritual_summon_bound_blaze',
         'ritual_summon_bound_blitz',

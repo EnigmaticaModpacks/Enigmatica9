@@ -818,6 +818,52 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ritual_summon_crow`
         },
         {
+            output: Item.of('byg:pumpkin_warden_spawn_egg', {
+                display: {
+                    Name: '{"translate":"item.kubejs.ritual_summon_pumpkin_warden"}',
+                    Lore: ['{"translate":"item.kubejs.ritual_summon_pumpkin_warden.tooltip"}']
+                }
+            }),
+            activation_item: '#forge:essences/conjuration',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'minecraft:pumpkin',
+                'twilightforest:liveroot'
+            ],
+            entity_to_summon: 'byg:pumpkin_warden',
+            ritual_dummy: 'kubejs:ritual_summon_pumpkin_warden',
+            ritual_type: 'occultism:summon_tamed',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_pumpkin_warden`
+        },
+        {
+            output: Item.of('cnb:cactem_spawn_egg', {
+                display: {
+                    Name: '{"translate":"item.kubejs.ritual_summon_cactem"}',
+                    Lore: ['{"translate":"item.kubejs.ritual_summon_cactem.tooltip"}']
+                }
+            }),
+            activation_item: '#forge:essences/conjuration',
+            inputs: [
+                'hexerei:mindful_trance_blend',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'minecraft:cactus',
+                'twilightforest:liveroot'
+            ],
+            entity_to_summon: 'cnb:cactem',
+            ritual_dummy: 'kubejs:ritual_summon_cactem',
+            ritual_type: 'occultism:summon_tamed',
+            pentacle_id: 'occultism:summon_familiar',
+            duration: 10,
+            id: `${id_prefix}ritual_summon_cactem`
+        },
+        {
             output: Item.of('minecraft:allay_spawn_egg', {
                 display: {
                     Name: '{"translate":"item.kubejs.ritual_summon_allay"}',
