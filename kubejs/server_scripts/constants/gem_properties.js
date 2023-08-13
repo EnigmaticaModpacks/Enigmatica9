@@ -420,6 +420,50 @@ const gem_properties = {
             }
         }
     },
+    bitumen: {
+        meltingPoint: 450,
+        crushing_tier: 1,
+        oreProcessing: {
+            output: {
+                type: 'gem',
+                substrate: 'minecraft:sand',
+                secondary: 'emendatusenigmatica:bitumen_gem'
+            },
+            create: {
+                primaryCount: 8,
+                secondaryCount: 4,
+                secondaryChance: 0.25,
+                processingTime: 300
+            },
+            thermal: {
+                primaryCount: 8,
+                secondaryCount: 4,
+                secondaryChance: 0.25
+            },
+            immersiveengineering: {
+                primaryCount: 8,
+                secondaryCount: 4,
+                secondaryChance: 0.25
+            },
+            ars_nouveau: {
+                primaryCount: 8,
+                secondaryCount: 4,
+                secondaryChance: 0.25
+            },
+            occultism: {
+                primaryCount: 10,
+                oreWeight: 1500
+            },
+            mekanism: {
+                enrichmentCount: 8,
+                purificationCount: 12,
+                purificationGas: {
+                    gas: 'mekanism:oxygen',
+                    amount: 1
+                }
+            }
+        }
+    },
     fluorite: {
         meltingPoint: 1418,
         crushing_tier: 2
@@ -582,37 +626,6 @@ const gem_properties = {
         //     },
         //     mekanism: {
         //         enrichmentCount: 4
-        //     }
-        // }
-    },
-    bitumen: {
-        meltingPoint: 115
-        // oreProcessing: {
-        //     output: {
-        //         type: 'gem',
-        //         substrate: 'minecraft:gravel',
-        //         secondary: 'emendatusenigmatica:sulfur_dust'
-        //     },
-        //     create: {
-        //         primaryCount: 2,
-        //         secondaryCount: 2,
-        //         secondaryChance: 0.5,
-        //         processingTime: 300
-        //     },
-        //     thermal: {
-        //         primaryCount: 2,
-        //         secondaryCount: 2,
-        //         secondaryChance: 0.5
-        //     },
-        //     immersiveengineering: {
-        //         primaryCount: 4
-        //     },
-        //     occultism: {
-        //         primaryCount: 4,
-        //         oreWeight:
-        //     },
-        //     mekanism: {
-        //         primaryCount: 4
         //     }
         // }
     },

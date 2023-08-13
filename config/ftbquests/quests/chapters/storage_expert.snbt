@@ -188,7 +188,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -3.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2A0CD26353B9E8C2"]
@@ -282,7 +282,7 @@
 			}]
 			title: "Functional Storage"
 			x: -0.5d
-			y: -4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5F17797B15355AE8"]
@@ -331,7 +331,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: -5.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5F17797B15355AE8"]
@@ -351,7 +351,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: -4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5F17797B15355AE8"]
@@ -371,7 +371,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -5.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["49596454693937AC"]
@@ -784,7 +784,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -5.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5F17797B15355AE8"]
@@ -845,7 +845,7 @@
 				}
 			]
 			x: -2.0d
-			y: -4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5F17797B15355AE8"]
@@ -885,7 +885,7 @@
 				}
 			]
 			x: -1.0d
-			y: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5F17797B15355AE8"]
@@ -920,7 +920,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5F17797B15355AE8"]
@@ -945,7 +945,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: -3.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["49596454693937AC"]
@@ -1420,6 +1420,31 @@
 			}]
 			x: -0.5d
 			y: -9.0d
+		}
+		{
+			dependencies: ["49596454693937AC"]
+			description: [
+				"Keeping things organized through the power of friendship!"
+				""
+				"Storage Lecterns act as the central access point for a storage system offered by Ars Nouveau. It connects multiple storage blocks together by way of Bookwyrms and offers some limited automation capabilities as well!"
+				""
+				"Read more about setting it up in the Ars Nouveau quest section. "
+			]
+			hide_dependency_lines: true
+			id: "673EBA3E6B2B8DA9"
+			rewards: [{
+				count: 9
+				id: "111AC8CA790A75D7"
+				item: "create:item_vault"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F71C97F96CA2540"
+				item: "ars_nouveau:storage_lectern"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -6.0d
 		}
 	]
 	title: "Storage"

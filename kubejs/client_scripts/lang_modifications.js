@@ -1315,8 +1315,18 @@ const entries = {
                 expert: `Compressed Stone Track Switch`
             }
         }
+    ],
+    the_bumblezone: [
+        {
+            key: 'system.the_bumblezone.require_hive_blocks_failed',
+            value: {
+                normal: 'Bumblezone teleport failed. Hive needs a required block below it.',
+                expert: 'Bumblezone teleport failed. Hive needs a Mekanism Teleporter below it.'
+            }
+        }
     ]
 };
+
 Object.keys(entries).forEach((mod) => {
     let lang_file = `kubejs/assets/${mod}/lang/en_us.json`;
     let lang_json = JsonIO.read(lang_file);

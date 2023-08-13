@@ -296,6 +296,20 @@
     "ritual.enigmatica.occultism/ritual/ritual_summon_crow.interrupted": "Ritual of Calling interrupted.",
     "ritual.enigmatica.occultism/ritual/ritual_summon_crow.conditions": "Not all requirements for this ritual are met.",
 
+    "item.kubejs.ritual_summon_pumpkin_warden": "Ritual: Summon Pumpkin Warden Familiar",
+    "item.kubejs.ritual_summon_pumpkin_warden.tooltip": "Summon a friendly Pumpkin Warden familiar.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_pumpkin_warden.started": "Ritual of Calling started.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_pumpkin_warden.finished": "Ritual of Calling completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_pumpkin_warden.interrupted": "Ritual of Calling interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_pumpkin_warden.conditions": "Not all requirements for this ritual are met.",
+
+    "item.kubejs.ritual_summon_cactem": "Ritual: Summon Cactem Familiar",
+    "item.kubejs.ritual_summon_cactem.tooltip": "Summon a friendly Cactem familiar.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_cactem.started": "Ritual of Calling started.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_cactem.finished": "Ritual of Calling completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_cactem.interrupted": "Ritual of Calling interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_cactem.conditions": "Not all requirements for this ritual are met.",
+
     "item.kubejs.ritual_summon_allay": "Ritual: Summon Allay",
     "item.kubejs.ritual_summon_allay.tooltip": "Summon a friendly Allay.",
     "ritual.enigmatica.occultism/ritual/ritual_summon_allay.started": "Ritual of Calling started.",
