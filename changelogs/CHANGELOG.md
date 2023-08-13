@@ -11,6 +11,7 @@
 
 -   Due to an attempted hostile takeover of the End, Pumpkin Wardens no longer spawn in the Dark Forest. [\#612](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/612) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Coke Bricks are no longer hidden in EMI. [\#612](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/612) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fixed typos in Getting Started quests. [\#612](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/612) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
