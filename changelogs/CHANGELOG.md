@@ -4,6 +4,8 @@
 
 ### 🌟 Improvements
 
+-   An entry for the Ars Nouveau Storage Lectern has been added to the Storage quests. [\#612](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/612) ([MuteTiefling](https://github.com/MuteTiefling))
+
 ### 🐛 Fixed Bugs
 
 -   Due to an attempted hostile takeover of the End, Pumpkin Wardens no longer spawn in the Dark Forest. [\#612](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/612) ([MuteTiefling](https://github.com/MuteTiefling))
