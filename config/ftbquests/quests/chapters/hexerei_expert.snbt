@@ -397,12 +397,22 @@
 						items: [
 							{
 								Count: 1b
+								id: "hexerei:witch_hazel_broom"
+								tag: { }
+							}
+							{
+								Count: 1b
 								id: "hexerei:mahogany_broom"
 								tag: { }
 							}
 							{
 								Count: 1b
 								id: "hexerei:willow_broom"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ars_scalaes:archwood_broom"
 								tag: { }
 							}
 						]
