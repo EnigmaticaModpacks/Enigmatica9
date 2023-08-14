@@ -81,6 +81,69 @@ ServerEvents.recipes((event) => {
             ],
             sourceCost: 9000,
             id: 'ars_nouveau:mana_regen_7'
+        },
+        {
+            enchantment: 'ars_nouveau:mana_boost',
+            level: 4,
+            pedestalItems: [
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { tag: 'forge:gems/diamond' } },
+                { item: { tag: 'forge:gems/diamond' } },
+                { item: { tag: 'forge:gems/diamond' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/lapis' } }
+            ],
+            sourceCost: 9000,
+            id: 'ars_nouveau:mana_boost_4'
+        },
+        {
+            enchantment: 'ars_nouveau:mana_boost',
+            level: 5,
+            pedestalItems: [
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { tag: 'forge:gems/diamond' } },
+                { item: { tag: 'forge:gems/diamond' } },
+                { item: { tag: 'forge:gems/diamond' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/lapis' } }
+            ],
+            sourceCost: 9000,
+            id: 'ars_nouveau:mana_boost_5'
+        },
+        {
+            enchantment: 'ars_nouveau:mana_boost',
+            level: 6,
+            pedestalItems: [
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { tag: 'forge:gems/diamond' } },
+                { item: { tag: 'forge:gems/diamond' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/lapis' } }
+            ],
+            sourceCost: 9000,
+            id: 'ars_nouveau:mana_boost_6'
+        },
+        {
+            enchantment: 'ars_nouveau:mana_boost',
+            level: 7,
+            pedestalItems: [
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { item: 'kubejs:spirit_of_devotion' } },
+                { item: { tag: 'forge:gems/diamond' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/source' } },
+                { item: { tag: 'forge:storage_blocks/lapis' } }
+            ],
+            sourceCost: 9000,
+            id: 'ars_nouveau:mana_boost_7'
         }
     ];
 
