@@ -71,6 +71,102 @@
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:reactive\",lvl:3s}]}"
+		},
+		{
+			"stack": "item:ars_nouveau:novice_boots{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:2}}",
+			"after": "item:ars_nouveau:novice_boots{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:apprentice_boots{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:2}}",
+			"after": "item:ars_nouveau:apprentice_boots{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:archmage_boots{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:2}}",
+			"after": "item:ars_nouveau:archmage_boots{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:novice_leggings{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:2}}",
+			"after": "item:ars_nouveau:novice_leggings{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:apprentice_leggings{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:2}}",
+			"after": "item:ars_nouveau:apprentice_leggings{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:archmage_leggings{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:2}}",
+			"after": "item:ars_nouveau:archmage_leggings{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:novice_robes{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:2}}",
+			"after": "item:ars_nouveau:novice_robes{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:apprentice_robes{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:2}}",
+			"after": "item:ars_nouveau:apprentice_robes{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:archmage_robes{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:2}}",
+			"after": "item:ars_nouveau:archmage_robes{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:novice_hood{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:2}}",
+			"after": "item:ars_nouveau:novice_hood{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:apprentice_hood{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:2}}",
+			"after": "item:ars_nouveau:apprentice_hood{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:archmage_hood{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:2}}",
+			"after": "item:ars_nouveau:archmage_hood{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:novice_boots{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:1}}",
+			"after": "item:ars_nouveau:novice_boots{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:apprentice_boots{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:1}}",
+			"after": "item:ars_nouveau:apprentice_boots{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:archmage_boots{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:1}}",
+			"after": "item:ars_nouveau:archmage_boots{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:novice_leggings{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:1}}",
+			"after": "item:ars_nouveau:novice_leggings{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:apprentice_leggings{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:1}}",
+			"after": "item:ars_nouveau:apprentice_leggings{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:archmage_leggings{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:1}}",
+			"after": "item:ars_nouveau:archmage_leggings{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:novice_robes{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:1}}",
+			"after": "item:ars_nouveau:novice_robes{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:apprentice_robes{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:1}}",
+			"after": "item:ars_nouveau:apprentice_robes{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:archmage_robes{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:1}}",
+			"after": "item:ars_nouveau:archmage_robes{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:novice_hood{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:1}}",
+			"after": "item:ars_nouveau:novice_hood{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:apprentice_hood{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:1}}",
+			"after": "item:ars_nouveau:apprentice_hood{Damage:0}"
+		},
+		{
+			"stack": "item:ars_nouveau:archmage_hood{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:1}}",
+			"after": "item:ars_nouveau:archmage_hood{Damage:0}"
 		}
 	]
 }
