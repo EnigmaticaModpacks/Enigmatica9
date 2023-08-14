@@ -349,6 +349,51 @@ ServerEvents.recipes((event) => {
             inputFluid: '{Amount:50,FluidName:"minecraft:water"}',
             processingTime: 40,
             id: `${id_prefix}slime_ball_from_spores`
+        },
+        {
+            output: '4x quark:dragon_scale',
+            inputs: [
+                'minecraft:obsidian',
+                'twilightforest:armor_shard',
+                'twilightforest:armor_shard',
+                'twilightforest:armor_shard',
+                'twilightforest:armor_shard'
+            ],
+            inputFluid: '{Amount:50,FluidName:"thermal:ender"}',
+            processingTime: 200,
+            id: `${id_prefix}dragon_scale`
+        },
+        {
+            output: 'minecraft:dragon_head',
+            inputs: [
+                'ars_nouveau:wilden_horn',
+                'minecraft:obsidian',
+                'ars_nouveau:wilden_horn',
+                'minecraft:chorus_flower',
+                'minecraft:chorus_flower',
+                '#forge:gems/dimensional',
+                '#forge:gems/dimensional',
+                '#forge:gems/dimensional'
+            ],
+            inputFluid: '{Amount:8000,FluidName:"thermal:ender"}',
+            processingTime: 1200,
+            id: `${id_prefix}dragon_head`
+        },
+        {
+            output: 'minecraft:dragon_egg',
+            inputs: [
+                'minecraft:obsidian',
+                'minecraft:obsidian',
+                'minecraft:obsidian',
+                'minecraft:obsidian',
+                'minecraft:obsidian',
+                'minecraft:obsidian',
+                '#forge:gems/infused_ender',
+                'minecraft:obsidian'
+            ],
+            inputFluid: '{Amount:1000,FluidName:"thermal:ender"}',
+            processingTime: 200,
+            id: `${id_prefix}dragon_egg`
         }
     ];
 

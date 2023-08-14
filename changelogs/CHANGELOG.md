@@ -13,6 +13,7 @@
 -   Hexerei quests now accept any broom.[\#619](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/619) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Ars Nouveau Armor tiers now show in EMI, allowing easier comparison of tiers. [\#621](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/621) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Mana Boost may now be upgraded up to VII in the Mana Enchanter to match Mana Regen. [\#621](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/621) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] End Game process for making Dragon parts has changed. [\#621](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/621) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 

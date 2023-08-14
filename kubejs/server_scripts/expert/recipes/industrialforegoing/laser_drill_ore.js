@@ -75,66 +75,6 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}soul_slate`
-        },
-        {
-            catalyst: { tag: 'industrialforegoing:laser_lens/ender' },
-            output: { item: 'quark:dragon_scale' },
-            pointer: 0,
-            rarity: [
-                {
-                    depth_max: 256,
-                    depth_min: -64,
-                    weight: 40,
-                    blacklist: {},
-                    whitelist: { type: 'minecraft:worldgen/biome', values: biomes.in_the_end }
-                }
-            ],
-            id: `${id_prefix}dragon_scale`
-        },
-        {
-            catalyst: { tag: 'industrialforegoing:laser_lens/ender' },
-            output: { item: 'minecraft:dragon_breath' },
-            pointer: 0,
-            rarity: [
-                {
-                    depth_max: 256,
-                    depth_min: -64,
-                    weight: 30,
-                    blacklist: {},
-                    whitelist: { type: 'minecraft:worldgen/biome', values: biomes.in_the_end }
-                }
-            ],
-            id: `${id_prefix}dragon_breath`
-        },
-        {
-            catalyst: { tag: 'industrialforegoing:laser_lens/ender' },
-            output: { item: 'minecraft:dragon_head' },
-            pointer: 0,
-            rarity: [
-                {
-                    depth_max: 256,
-                    depth_min: -64,
-                    weight: 20,
-                    blacklist: {},
-                    whitelist: { type: 'minecraft:worldgen/biome', values: biomes.in_the_end }
-                }
-            ],
-            id: `${id_prefix}dragon_head`
-        },
-        {
-            catalyst: { tag: 'industrialforegoing:laser_lens/ender' },
-            output: { item: 'minecraft:dragon_egg' },
-            pointer: 0,
-            rarity: [
-                {
-                    depth_max: 256,
-                    depth_min: -64,
-                    weight: 10,
-                    blacklist: {},
-                    whitelist: { type: 'minecraft:worldgen/biome', values: biomes.in_the_end }
-                }
-            ],
-            id: `${id_prefix}dragon_egg`
         }
     ];
 
