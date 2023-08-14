@@ -269,21 +269,21 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}raw_ironwood`
         },
         {
-            output: 'mekanism:sps_casing',
+            output: '2x mekanism:sps_casing',
             inputs: [
-                '#forge:wires/steel',
-                'powah:capacitor_nitro',
-                '#forge:wires/steel',
+                'immersiveengineering:coil_hv',
+                '#pneumaticcraft:plastic_sheets',
+                'immersiveengineering:coil_hv',
 
                 '#pneumaticcraft:plastic_sheets',
                 '#pneumaticcraft:plastic_sheets',
 
-                '#forge:wires/steel',
-                'powah:capacitor_nitro',
-                '#forge:wires/steel'
+                'immersiveengineering:coil_hv',
+                '#industrialforegoing:machine_frame/supreme',
+                'immersiveengineering:coil_hv'
             ],
-            inputFluid: '{Amount:1000,FluidName:"immersiveengineering:concrete"}',
-            processingTime: 800,
+            inputFluid: '{Amount:8000,FluidName:"immersiveengineering:concrete"}',
+            processingTime: 1600,
             id: `${id_prefix}sps_casing`
         },
         {
