@@ -1,5 +1,5 @@
 ServerEvents.blockLootTables((event) => {
-    event.addBlock(`quark:ancient_leaves`, (table) => {
+    event.addBlock(`hexerei:witch_hazel`, (table) => {
         table.addPool((pool) => {
             pool.rolls = 1.0;
             pool.bonusRolls = 0.0;
