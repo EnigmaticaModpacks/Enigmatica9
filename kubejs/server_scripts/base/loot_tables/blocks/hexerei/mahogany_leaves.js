@@ -1,7 +1,7 @@
 ServerEvents.blockLootTables((event) => {
     event.addBlock(`hexerei:mahogany_leaves`, (table) => {
         table.addPool((pool) => {
-            pool.rolls = 1.0;
+            pool.rolls = [1, 2];
             pool.bonusRolls = 0.0;
             pool.addEntry({
                 type: 'minecraft:alternatives',
