@@ -1,4 +1,16 @@
-### Enigmatica 9 v1.11.2
+### Enigmatica 9 v1.12.0
+
+### 🎁 New Mods Added
+
+### 🌟 Improvements
+
+### 🐛 Fixed Bugs
+
+-   Correct Reinforced Blast Bricks to use Iron instead of Steel. [\#612](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/612) ([MuteTiefling](https://github.com/MuteTiefling))
+
+---
+
+### Enigmatica 9 v1.12.0
 
 ### 🎁 New Mods Added
 
