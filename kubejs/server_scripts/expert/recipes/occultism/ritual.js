@@ -1352,7 +1352,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: Item.of('3x mekanism:sps_port'),
-            activation_item: '#industrialforegoing:machine_frame/supreme',
+            activation_item: 'ae2:spatial_io_port',
             inputs: [
                 'ae2:spatial_anchor',
                 'ae2:spatial_anchor',

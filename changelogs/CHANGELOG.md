@@ -15,6 +15,7 @@
 -   Mana Boost may now be upgraded up to VII in the Mana Enchanter to match Mana Regen. [\#621](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/621) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] End Game process for making Dragon parts has changed. [\#621](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/621) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] SPS sculk requirements reduced. [\#622](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/622) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] SPS ports and supercharged coils no longer need supreme machine frames as they're included in the SPS frame recipe. [\#623](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/623) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
