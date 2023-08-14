@@ -640,7 +640,7 @@ ServerEvents.recipes((event) => {
                 'powah:capacitor_nitro',
                 'quark:rainbow_rune',
                 'powah:capacitor_nitro',
-                '#industrialforegoing:machine_frame/supreme',
+                'ars_elemental:acceleration_prism_lens',
                 'powah:capacitor_nitro',
                 'quark:rainbow_rune',
                 'powah:capacitor_nitro'
