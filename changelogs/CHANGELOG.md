@@ -11,6 +11,7 @@
 -   Twilight Forest chests may now be converted to regular vanilla chests.[\#612](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/612) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Normal] Add processing options for Bitumen.[\#612](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/612) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Hexerei quests now accept any broom.[\#619](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/619) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Ars Nouveau Armor tiers now show in EMI, allowing easier comparison of tiers. [\#621](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/621) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
