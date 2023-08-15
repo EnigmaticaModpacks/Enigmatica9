@@ -280,6 +280,8 @@
 				"Though slow at first, the Imbuement Chamber will be of great assistance in restoring the Tree of Life. Not only for condensing Source Gems, which have many uses of their own, but in obtaining the Elemental Essences as well; mastering these essences will allow the tree to be regrown. "
 				""
 				"The focus items placed on pedestals nearby are never consumed and act merely as a key to determine the result."
+				""
+				"Source from a Jar is optional. The Imbuement Chamber will runn perfectly fine without it, though it will be slower."
 			]
 			id: "4830632A0E6E9651"
 			rewards: [
