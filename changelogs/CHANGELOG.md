@@ -4,6 +4,8 @@
 
 ### 🌟 Improvements
 
+-   Framed drawers now use Framed Blocks instead of iron nuggets. [\#626](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/626) ([MuteTiefling](https://github.com/MuteTiefling))
+
 ### 🐛 Fixed Bugs
 
 -   Correct Reinforced Blast Bricks to use Iron instead of Steel. [\#612](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/612) ([MuteTiefling](https://github.com/MuteTiefling))
