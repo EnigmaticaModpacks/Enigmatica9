@@ -5,6 +5,7 @@
 ### 🌟 Improvements
 
 -   Framed drawers now use Framed Blocks instead of iron nuggets. [\#626](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/626) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Goats and Cindershells will no longer spawn in the Twilight Forest due to them being cheeky and showing up where they shouldn't. [\#626](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/626) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
