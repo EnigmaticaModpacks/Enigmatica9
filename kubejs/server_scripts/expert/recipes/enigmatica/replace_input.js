@@ -245,6 +245,11 @@ ServerEvents.recipes((event) => {
             filter: { output: /hanging_sign/ },
             to_replace: 'minecraft:iron_nugget',
             replace_with: '#forge:nuggets/copper'
+        },
+        {
+            filter: { mod: 'functionalstorage' },
+            to_replace: 'minecraft:iron_nugget',
+            replace_with: 'framedblocks:framed_cube'
         }
     ];
 
