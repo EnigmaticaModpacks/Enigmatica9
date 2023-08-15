@@ -90,22 +90,6 @@ WorldgenEvents.add((event) => {
         },
         {
             category: 'creature',
-            entity: 'minecraft:goat',
-            biomes: ['twilightforest:highlands'],
-            minCount: 1,
-            maxCount: 3,
-            weight: 5
-        },
-        {
-            category: 'creature',
-            entity: 'cnb:cindershell',
-            biomes: ['twilightforest:fire_swamp'],
-            minCount: 1,
-            maxCount: 1,
-            weight: 1
-        },
-        {
-            category: 'creature',
             entity: 'cnb:minipad',
             biomes: ['twilightforest:lake', 'twilightforest:stream', 'twilightforest:swamp'],
             minCount: 1,
