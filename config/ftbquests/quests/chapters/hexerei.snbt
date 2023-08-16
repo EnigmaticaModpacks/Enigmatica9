@@ -703,7 +703,7 @@
 				""
 				"Of course, nowhere is it stated that the blood must be one’s own. Try dropping a villager in to see what happens. Better still, see if the process can be automated…"
 			]
-			icon: "hexerei:blood_sigil"
+			icon: "hexerei:blood_bottle"
 			id: "596DF36CE2F66524"
 			rewards: [
 				{
