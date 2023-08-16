@@ -257,7 +257,7 @@
 			description: [
 				"Looking for a place to store those ten thousand Iron Ingots? Look no further. Functional Drawers has drawers that hold a very large quantity of a given item. They offer a number of useful upgrades as well to assist in both Storage and Automation endeavors. "
 				""
-				"A Configuration Tool may be used to lock drawer, hide or show the stored item and quantity, or disable rendering for any installed upgrades. "
+				"A Configuration Tool may be used to lock a drawer, hide or show the stored item and quantity, or disable rendering for any installed upgrades. "
 				""
 				"● Toggle between modes by Sneak + Right Clicking in the air."
 				"● Right Click a drawer to change settings in chosen mode."

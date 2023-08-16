@@ -10,6 +10,8 @@
 ### 🐛 Fixed Bugs
 
 -   Correct Reinforced Blast Bricks to use Iron instead of Steel. [\#612](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/612) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fixed several quest typos. [\#632](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/632) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fixed missing glyph recycling recipes. [\#632](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/632) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 

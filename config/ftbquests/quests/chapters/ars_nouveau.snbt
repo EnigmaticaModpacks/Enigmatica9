@@ -2320,7 +2320,7 @@
 		{
 			dependencies: ["19C9AC76B4E2B19D"]
 			description: [
-				"Much like standard Warp Scrolls, Stabilized Warp Scrolls may be used to great portals. They offer two advantages, however. "
+				"Much like standard Warp Scrolls, Stabilized Warp Scrolls may be used to create portals. They offer two advantages, however. "
 				""
 				"First, the scroll may be used to bind to coordinates in other dimensions, allowing cross-dimensional transportation."
 				""

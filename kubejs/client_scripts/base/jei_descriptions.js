@@ -186,7 +186,7 @@ JEIEvents.information((event) => {
         },
         {
             items: ['starbunclemania:fluid_sourcelink'],
-            text: [`Valid Fluids:`, ` `, `Potions`, `Ether Gas`, `Liquefied Source`, `Bio Diesel`, `Sludge`]
+            text: [`Valid Fluids: Potions, Ether Gas, Liquefied Source, Bio Diesel, Sludge.`]
         },
         {
             items: ['ars_nouveau:mendosteen_pod'],
@@ -394,6 +394,10 @@ JEIEvents.information((event) => {
             text: [
                 `This string-like item can be placed on any side of a block. When held, it will glow and be visible through other blocks. Helpful for markers or finding your way back home.`
             ]
+        },
+        {
+            items: ['supplementaries:quiver'],
+            text: [`Pick up the Quiver and Right-Click it onto Arrows to load them.`]
         }
     ];
 

@@ -544,7 +544,7 @@
 				""
 				"The ancient practice of Dowsing has been used for everything from finding ground water and gems to gravesites and malign spirits. Hexerei’s Dowsing Rod is perfectly attuned to lead the bearer to nearby Swamps and Jungles, with the leaves changing from vibrant green when pointed the correct way, to dull brown when facing away from the target. "
 				""
-				"A Nature’s Compass is also a viable tool for locating Swamps. And for the less adventurous Witches, a stop a nearby Market Stall is likely sufficient. "
+				"A Nature’s Compass is also a viable tool for locating Swamps. And for the less adventurous Witches, a stop at a nearby Market Stall is likely sufficient. "
 			]
 			hide_dependency_lines: true
 			icon: "hexerei:herb_drying_rack_full"
@@ -703,7 +703,7 @@
 				""
 				"Of course, nowhere is it stated that the blood must be one’s own. Try dropping a villager in to see what happens. Better still, see if the process can be automated…"
 			]
-			icon: "hexerei:blood_sigil"
+			icon: "hexerei:blood_bottle"
 			id: "596DF36CE2F66524"
 			rewards: [
 				{
