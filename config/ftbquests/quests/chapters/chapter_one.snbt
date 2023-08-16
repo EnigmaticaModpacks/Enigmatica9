@@ -443,7 +443,7 @@
 					type: "observation"
 				}
 			]
-			x: -3.5d
+			x: -3.0d
 			y: -1.5d
 		}
 		{
@@ -539,18 +539,18 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["4B874AA448FF4C7A"]
+			dependencies: [
+				"4B874AA448FF4C7A"
+				"7B81F422E3A14DE2"
+			]
 			description: [
-				"The Cult of the Ur-Ghast, foolish as they were, were not far off in their research. Carminite has excellent arcane resonance, but the Redstone they coupled it with was too strong of a moderator. The resulting superradiant instability quickly became too much for their contraption to manage. "
+				"Enigmatic Unity’s Pulsating Crystals serve as the basis for generating most FE, though a few other methods are available. "
 				""
-				"Fusing it with Source Gems, on the other hand, appears to properly channel the arcane fields. These first attempts appear imperfect, however. The process needs refining. "
+				"They require a Source Jar nearby from which they’ll periodically draw a quantity of Source, converting it into FE. If there is any Aura present when this happens, a portion of Aura will also be consumed, generating far more FE in the process. "
 				""
-				"================================================"
-				""
-				"Enigmatic Unity’s Pulsating Crystals serve as the basis for generating most FE, though a few other methods are available. They require a Source Jar nearby from which they’ll periodically draw a quantity of Source, converting it into FE. If there is any Aura present when this happens, a portion of Aura will also be consumed, generating far more FE in the process. "
+				"Be mindful, as this can drain Aura to dangerously low levels!"
 			]
 			id: "3B372F597A05E777"
-			min_width: 300
 			rewards: [
 				{
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
@@ -1594,7 +1594,11 @@
 					}
 				}
 				id: "occultism:familiar_ring"
-				tag: { }
+				tag: {
+					familiar: {
+						hasFamiliar: 0b
+					}
+				}
 			}
 			id: "72B2DCE0BDCE548F"
 			min_width: 300
@@ -2597,6 +2601,45 @@
 			]
 			x: -1.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["1C6BF5FE58C49456"]
+			description: [
+				"The Cult of the Ur-Ghast, foolish as they were, were not far off in their research. Carminite has excellent arcane resonance, but the Redstone they coupled it with was too strong of a moderator. The resulting superradiant instability quickly became too much for their contraption to manage. "
+				""
+				"Fusing it with Source Gems, on the other hand, appears to properly channel the arcane fields. These first attempts appear imperfect, however. "
+				""
+				"The process needs refining. "
+				""
+				"================================="
+				""
+				"To perform Lightning Channeling recipes, a source of lightning is required. For our purposes, Lightning Charges are simple enough to obtain."
+				""
+				"Toss down the ingredients shown in EMI and then use the Lightning Charge on them. Be sure to pick up the results quickly before they burn! "
+			]
+			hide_dependency_lines: true
+			icon: "kubejs:dim_arcanite_crystal"
+			id: "7B81F422E3A14DE2"
+			rewards: [{
+				count: 4
+				id: "78903A53A1D3DCB6"
+				item: "kubejs:dim_arcanite_crystal"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4E14EF97F7450D8D"
+					item: "kubejs:dim_arcanite_crystal"
+					type: "item"
+				}
+				{
+					id: "687390DE5F3C74DF"
+					item: "thermal:lightning_charge"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -1.5d
 		}
 	]
 	title: "Chapter One"

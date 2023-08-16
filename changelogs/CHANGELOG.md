@@ -5,13 +5,16 @@
 ### 🌟 Improvements
 
 -   Framed drawers now use Framed Blocks instead of iron nuggets. [\#626](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/626) ([MuteTiefling](https://github.com/MuteTiefling))
--   Goats and Cindershells will no longer spawn in the Twilight Forest due to them being cheeky and showing up where they shouldn't. [\#626](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/626) ([MuteTiefling](https://github.com/MuteTiefling))
+-   More starbuncle equipment has been flagged with descriptions to aid in locating it in EMI. [\#634](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/634) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Starbuckets are now available significantly earlier. [\#634](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/634) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Quests now explain Lightning Channeling. [\#634](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/634) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
 -   Correct Reinforced Blast Bricks to use Iron instead of Steel. [\#612](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/612) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fixed several quest typos. [\#632](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/632) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fixed missing glyph recycling recipes. [\#632](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/632) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Goats and Cindershells will no longer spawn in the Twilight Forest due to them being cheeky and showing up where they shouldn't. [\#626](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/626) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
