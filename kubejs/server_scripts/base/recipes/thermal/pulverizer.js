@@ -61,6 +61,16 @@ ServerEvents.recipes((event) => {
             ],
             energy: 500,
             id: `${id_prefix}moss_paste`
+        },
+        {
+            ingredient: { tag: 'forge:crops/wheat' },
+            result: [
+                { item: 'create:wheat_flour', count: 1 },
+                { item: 'create:wheat_flour', count: 2, chance: 0.25 },
+                { item: 'minecraft:wheat_seeds', chance: 0.25 }
+            ],
+            energy: 500,
+            id: `${id_prefix}wheat_flour`
         }
     ];
 
