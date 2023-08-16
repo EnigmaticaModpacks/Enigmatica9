@@ -186,27 +186,7 @@ JEIEvents.information((event) => {
         },
         {
             items: ['starbunclemania:fluid_sourcelink'],
-            text: [`Valid Fluids:`]
-        },
-        {
-            items: ['starbunclemania:fluid_sourcelink'],
-            text: [`Potions`]
-        },
-        {
-            items: ['starbunclemania:fluid_sourcelink'],
-            text: [`Ether Gas`]
-        },
-        {
-            items: ['starbunclemania:fluid_sourcelink'],
-            text: [`Liquefied Source`]
-        },
-        {
-            items: ['starbunclemania:fluid_sourcelink'],
-            text: [`Bio Diesel`]
-        },
-        {
-            items: ['starbunclemania:fluid_sourcelink'],
-            text: [`Sludge`]
+            text: [`Valid Fluids: Potions, Ether Gas, Liquefied Source, Bio Diesel, Sludge.`]
         },
         {
             items: ['ars_nouveau:mendosteen_pod'],
