@@ -31,7 +31,8 @@
         "mekanism:clumps/{material}",
         "mekanism:dirty_dusts/{material}",
         "mekanism:shards/{material}",
-        "create:crushed_ores/{material}"
+        "create:crushed_ores/{material}",
+        "forge:dough/wheat"
     ],
     "materials": [
         "aeternium",
@@ -112,11 +113,11 @@
         "sugar_cane"
     ],
     "priorityOverrides": {
-        "forge:ores/gold": "emendatusenigmatica",
         "forge:ores/iron": "emendatusenigmatica",
+        "forge:ores/emerald": "emendatusenigmatica",
         "forge:ores/copper": "emendatusenigmatica",
         "forge:ores/diamond": "emendatusenigmatica",
-        "forge:ores/emerald": "emendatusenigmatica"
+        "forge:ores/gold": "emendatusenigmatica"
     },
     "tagOwnerships": {
         "forge:storage_blocks/sky": ["forge:storage_blocks/skies"],
@@ -124,6 +125,10 @@
         "forge:dusts/niter": ["forge:dusts/saltpeter"],
         "forge:gems/coal_coke": ["forge:coal_coke"]
     },
+    "itemTagInheritanceMode": "ALLOW",
+    "itemTagInheritance": {},
+    "blockTagInheritanceMode": "ALLOW",
+    "blockTagInheritance": {},
     "ignoredTags": [],
     "ignoredItems": [],
     "ignoredRecipeTypes": ["cucumber:shaped_tag"],

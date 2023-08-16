@@ -62,6 +62,16 @@ ServerEvents.recipes((event) => {
             output: [{ item: 'ae2:sky_dust', count: 1, chance: 1.0 }],
             input: 'ae2:sky_stone_block',
             id: `${id_prefix}sky_dust`
+        },
+
+        {
+            output: [
+                { item: 'create:wheat_flour', count: 1, chance: 1.0 },
+                { item: 'create:wheat_flour', count: 2, chance: 0.25 },
+                { item: 'minecraft:wheat_seeds', count: 1, chance: 0.25 }
+            ],
+            input: '#forge:crops/wheat',
+            id: `${id_prefix}wheat_flour`
         }
     ];
 

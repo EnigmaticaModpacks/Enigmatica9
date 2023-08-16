@@ -102,6 +102,8 @@ ClientEvents.highPriorityAssets((event) => {
             `/emendatusenigmatica:(copper|raw)_(copper|ingot|block)/`,
             `/emendatusenigmatica:${regex_materials}_air/`,
 
+            'farmersdelight:wheat_dough',
+
             `/immersiveengineering:(stick|dust|plate|ingot|nugget|raw|raw_block|storage|ore|deepslate_ore)_${regex_materials}/`,
             'immersiveengineering:coke',
             'immersiveengineering:coal_coke',
