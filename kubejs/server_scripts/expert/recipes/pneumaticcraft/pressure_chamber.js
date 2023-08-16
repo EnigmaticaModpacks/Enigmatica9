@@ -537,12 +537,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}star_battery_nitro`
         },
         {
-            results: [{ item: 'starbunclemania:star_bucket', count: 1 }],
-            inputs: [{ item: 'thermal:fluid_cell_frame' }, { item: 'hexerei:small_satchel' }],
-            pressure: 2.0,
-            id: `${id_prefix}star_bucket`
-        },
-        {
             results: [{ item: 'kubejs:shard_of_renewal', count: 1 }],
             inputs: [
                 { type: 'pneumaticcraft:stacked_item', item: 'kubejs:mote_of_renewal', count: 64 },

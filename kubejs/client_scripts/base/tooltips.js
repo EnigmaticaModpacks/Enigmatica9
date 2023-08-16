@@ -496,6 +496,25 @@ ItemEvents.tooltip((event) => {
             ]
         },
         {
+            items: [
+                'ars_nouveau:red_sbed',
+                'ars_nouveau:blue_sbed',
+                'ars_nouveau:green_sbed',
+                'ars_nouveau:yellow_sbed',
+                'ars_nouveau:purple_sbed',
+                'ars_nouveau:orange_sbed'
+            ],
+            text: [Text.of(`Starbuncle Equipment: Redstone Control`).green()]
+        },
+        {
+            items: ['starbunclemania:wyrm_degree'],
+            text: [Text.of(`Starbuncle Equipment: Item Transport Refinement`).green()]
+        },
+        {
+            items: ['starbunclemania:direction_scroll'],
+            text: [Text.of(`Starbuncle Equipment: Allows interacting from a specific direction`).green()]
+        },
+        {
             items: ['ars_nouveau:starbuncle_shades'],
             text: [Text.of(`Starbuncle Equipment: Lookin' cool and staying on task`).green()]
         },
