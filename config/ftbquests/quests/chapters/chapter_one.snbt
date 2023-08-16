@@ -1558,7 +1558,7 @@
 			dependencies: ["7CFD3DFD4C593EB5"]
 			dependency_requirement: "one_completed"
 			description: [
-				"Though not exhaustive, the list below highlights some of the benefits to be had by befriending the these Familiars. More than one may be called forth at a time. "
+				"Though not exhaustive, the list below highlights some of the benefits to be had by befriending these Familiars. More than one may be called forth at a time. "
 				""
 				"For full details on these and other Familiars, refer to the Dictionary of Spirits under Familiar Rituals."
 				""
@@ -1594,11 +1594,7 @@
 					}
 				}
 				id: "occultism:familiar_ring"
-				tag: {
-					familiar: {
-						hasFamiliar: 0b
-					}
-				}
+				tag: { }
 			}
 			id: "72B2DCE0BDCE548F"
 			min_width: 300
