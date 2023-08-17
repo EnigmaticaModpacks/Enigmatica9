@@ -538,14 +538,6 @@
 				""
 				"Ctrl Shift the wand in the air to access a menu with advanced options, or Ctrl Scroll Wheel to quickly toggle between building modes. "
 			]
-			icon: {
-				Count: 1b
-				id: "constructionwand:stone_wand"
-				tag: {
-					Damage: 0
-					wand_options: { }
-				}
-			}
 			id: "26B88D08862EA1AE"
 			rewards: [{
 				count: 16
@@ -559,15 +551,31 @@
 				id: "131EB02FBDE8DC98"
 				item: {
 					Count: 1b
-					id: "constructionwand:diamond_wand"
+					id: "itemfilters:or"
 					tag: {
-						Damage: 0
-						wand_options: { }
+						items: [
+							{
+								Count: 1b
+								id: "constructionwand:diamond_wand"
+								tag: {
+									Damage: 0
+									wand_options: { }
+								}
+							}
+							{
+								Count: 1b
+								id: "constructionwand:infinity_wand"
+								tag: {
+									wand_options: { }
+								}
+							}
+						]
 					}
 				}
+				title: "Construction Wands"
 				type: "item"
 			}]
-			title: "Construction Wand"
+			title: "Construction Wands"
 			x: -0.5d
 			y: 4.0d
 		}
