@@ -279,6 +279,24 @@ ServerEvents.recipes((event) => {
             ],
             id: `${id_prefix}lapis_ore`
         },
+        {
+            catalyst: { tag: 'industrialforegoing:laser_lens/brown' },
+            output: { item: 'minecraft:ancient_debris' },
+            pointer: 0,
+            rarity: [
+                {
+                    depth_max: 16,
+                    depth_min: 0,
+                    weight: 2,
+                    blacklist: {},
+                    whitelist: {
+                        type: 'minecraft:worldgen/biome',
+                        values: biomes.in_the_nether
+                    }
+                }
+            ],
+            id: `${id_prefix}ancient_debris`
+        },
         // MODDED
         {
             catalyst: { tag: 'industrialforegoing:laser_lens/black' },

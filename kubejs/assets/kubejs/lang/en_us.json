@@ -198,6 +198,13 @@
     "ritual.enigmatica.occultism/ritual/ritual_summon_starbuncle_from_shards.interrupted": "Ritual of Calling interrupted.",
     "ritual.enigmatica.occultism/ritual/ritual_summon_starbuncle_from_shards.conditions": "Not all requirements for this ritual are met.",
 
+    "item.kubejs.ritual_summon_drygmy": "Ritual: Summon Drygmy",
+    "item.kubejs.ritual_summon_drygmy.tooltip": "Summon a Drygmy",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_drygmy.started": "Ritual of Calling started.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_drygmy.finished": "Ritual of Calling completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_drygmy.interrupted": "Ritual of Calling interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_drygmy.conditions": "Not all requirements for this ritual are met.",
+
     "item.kubejs.ritual_summon_drygmy_from_shards": "Ritual: Summon Drygmy",
     "item.kubejs.ritual_summon_drygmy_from_shards.tooltip": "Summon a Drygmy",
     "ritual.enigmatica.occultism/ritual/ritual_summon_drygmy_from_shards.started": "Ritual of Calling started.",
@@ -205,12 +212,26 @@
     "ritual.enigmatica.occultism/ritual/ritual_summon_drygmy_from_shards.interrupted": "Ritual of Calling interrupted.",
     "ritual.enigmatica.occultism/ritual/ritual_summon_drygmy_from_shards.conditions": "Not all requirements for this ritual are met.",
 
+    "item.kubejs.ritual_summon_whirlisprig": "Ritual: Summon Whirlisprig",
+    "item.kubejs.ritual_summon_whirlisprig.tooltip": "Summon a Whirlisprig",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_whirlisprig.started": "Ritual of Calling started.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_whirlisprig.finished": "Ritual of Calling completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_whirlisprig.interrupted": "Ritual of Calling interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_whirlisprig.conditions": "Not all requirements for this ritual are met.",
+
     "item.kubejs.ritual_summon_whirlisprig_from_shards": "Ritual: Summon Whirlisprig",
     "item.kubejs.ritual_summon_whirlisprig_from_shards.tooltip": "Summon a Whirlisprig",
     "ritual.enigmatica.occultism/ritual/ritual_summon_whirlisprig_from_shards.started": "Ritual of Calling started.",
     "ritual.enigmatica.occultism/ritual/ritual_summon_whirlisprig_from_shards.finished": "Ritual of Calling completed.",
     "ritual.enigmatica.occultism/ritual/ritual_summon_whirlisprig_from_shards.interrupted": "Ritual of Calling interrupted.",
     "ritual.enigmatica.occultism/ritual/ritual_summon_whirlisprig_from_shards.conditions": "Not all requirements for this ritual are met.",
+
+    "item.kubejs.ritual_summon_siren": "Ritual: Summon Siren",
+    "item.kubejs.ritual_summon_siren.tooltip": "Summon a Siren",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_siren.started": "Ritual of Calling started.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_siren.finished": "Ritual of Calling completed.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_siren.interrupted": "Ritual of Calling interrupted.",
+    "ritual.enigmatica.occultism/ritual/ritual_summon_siren.conditions": "Not all requirements for this ritual are met.",
 
     "item.kubejs.ritual_summon_siren_from_shards": "Ritual: Summon Siren",
     "item.kubejs.ritual_summon_siren_from_shards.tooltip": "Summon a Siren",
