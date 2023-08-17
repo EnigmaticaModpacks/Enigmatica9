@@ -1856,7 +1856,7 @@
 		}
 		{
 			dependencies: ["79B755D0BDB6A8B7"]
-			description: ["Made from considerably tougher materials than a simple Mortar, the Millstone can tougher ores and may even occasionally recover some secondary materials from the ore.  "]
+			description: ["Made from considerably tougher materials than a simple Mortar, the Millstone can grind tougher ores and may even occasionally recover some secondary materials.  "]
 			hide_dependency_lines: true
 			id: "347A644441BCF449"
 			rewards: [
