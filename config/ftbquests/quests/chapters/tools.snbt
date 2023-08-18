@@ -1237,7 +1237,7 @@
 		}
 		{
 			dependencies: ["358FAB3D482C463A"]
-			description: ["Great for quickly dismantling leaves on tress, the humble Hoe is also a workhorse out in the fields, scything down grass in large swaths with ease. "]
+			description: ["Great for quickly dismantling leaves on trees, the humble Hoe is also a workhorse out in the fields, scything down grass in large swaths with ease. "]
 			id: "25531EAF260F3944"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
