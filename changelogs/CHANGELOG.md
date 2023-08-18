@@ -19,7 +19,7 @@
 -   [Normal] Add missing Ancient Debris to the IF Laser Drill [\#639](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/639) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fixed More quest typos [\#639](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/639) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fixed missing Compressed Stone Ladder recipe [\#644](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/644) ([MuteTiefling](https://github.com/MuteTiefling))
--   And even more quest typos [\#644](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/644) ([MuteTiefling](https://github.com/MuteTiefling))
+-   And even more quest typos and clarifications [\#644](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/644) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
