@@ -31,6 +31,11 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}andesite_scaffolding`
         },
         {
+            output: '2x create:andesite_ladder',
+            input: 'pneumaticcraft:compressed_stone',
+            id: `${id_prefix}andesite_ladder`
+        },
+        {
             output: '4x create:copycat_panel',
             input: '#forge:ingots/ironwood',
             id: `${id_prefix}copycat_panel`
