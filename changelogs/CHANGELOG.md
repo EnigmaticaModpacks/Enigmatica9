@@ -9,6 +9,8 @@
 -   [Expert] Starbuckets are now available significantly earlier. [\#634](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/634) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Quests now explain Lightning Channeling. [\#634](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/634) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Torchberries may now be placed on the bottom of dirt blocks to plant a new plant. [\#644](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/644) ([MuteTiefling](https://github.com/MuteTiefling))
+-   IE's Bottling Machine may now make honey bottles. [\#646](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/646) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Thermal's Hive Hopper now extracts Bumblezone Honey. [\#646](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/646) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
