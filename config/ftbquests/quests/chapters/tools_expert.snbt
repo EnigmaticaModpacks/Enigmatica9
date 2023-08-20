@@ -1181,7 +1181,7 @@
 		}
 		{
 			dependencies: ["4650EB4575965AAD"]
-			description: ["Great for quickly dismantling leaves on tress, the humble Hoe is also a workhorse out in the fields, scything down grass in large swaths with ease. "]
+			description: ["Great for quickly dismantling leaves on trees, the humble Hoe is also a workhorse out in the fields, scything down grass in large swaths with ease. "]
 			id: "04EC298DE2818F2A"
 			rewards: [{
 				count: 8

@@ -135,6 +135,10 @@ ClientEvents.highPriorityAssets((event) => {
             `/thermal:raw_${regex_materials}/`,
             'thermal:bitumen',
             'thermal:coal_coke',
+            'thermal:sulfur',
+            'thermal:niter',
+            'thermal:cinnabar',
+            'thermal:apatite',
 
             'twilightforest:carminite'
         ],

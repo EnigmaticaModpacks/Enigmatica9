@@ -925,7 +925,9 @@
 				""
 				"Obtaining Blitz Motes: "
 				""
-				"Seek out Spawners in the world and break them. They have a chance of causing a rupture in space, allowing creatures of all types to flow through, including Blitz and other elementals. Defeat them and close the rift to obtain Blitz Motes."
+				"Seek out Spawners in the world and break them. They have a chance of causing a rupture in space, allowing creatures of all types to flow through, including Blitz and other elementals."
+				""
+				"Defeat them to obtain Blitz Motes and close the rift if you can."
 			]
 			hide_dependency_lines: true
 			id: "1C6BF5FE58C49456"
@@ -965,7 +967,9 @@
 				""
 				"Obtaining Blizz Cubes: "
 				""
-				"Seek out Spawners in the world and break them. They have a chance of causing a rupture in space, allowing creatures of all types to flow through, including Basalz and other elementals. Defeat them and close the rift to obtain Basalz Shards."
+				"Seek out Spawners in the world and break them. They have a chance of causing a rupture in space, allowing creatures of all types to flow through, including Blizz and other elementals. "
+				""
+				"Defeat them to obtain Blizz Cubes and close the rift if you can."
 			]
 			hide_dependency_lines: true
 			id: "605D0EC9ABE8595E"
@@ -1007,7 +1011,9 @@
 				""
 				"Obtaining Basalz Shards: "
 				""
-				"Seek out Spawners in the world and break them. They have a chance of causing a rupture in space, allowing creatures of all types to flow through, including Basalz and other elementals. Defeat them and close the rift to obtain Basalz Shards."
+				"Seek out Spawners in the world and break them. They have a chance of causing a rupture in space, allowing creatures of all types to flow through, including Basalz and other elementals."
+				""
+				"Defeat them to obtain Basalz Shards and close the rift if you can."
 			]
 			hide_dependency_lines: true
 			id: "272C349F5CF92FA0"
@@ -1133,7 +1139,9 @@
 				""
 				"Obtaining Blaze Rods: "
 				""
-				"Seek out Spawners in the world and break them. They have a chance of causing a rupture in space, allowing creatures of all types to flow through, including Blaze and other elementals. Defeat them and close the rift to obtain Blaze Rods."
+				"Seek out Spawners in the world and break them. They have a chance of causing a rupture in space, allowing creatures of all types to flow through, including Blaze and other elementals. "
+				""
+				"Defeat them to obtain Blaze Rods and close the rift if you can."
 			]
 			hide_dependency_lines: true
 			id: "7A3B33287BFF4CB1"
