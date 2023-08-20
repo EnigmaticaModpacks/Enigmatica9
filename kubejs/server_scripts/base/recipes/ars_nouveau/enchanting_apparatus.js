@@ -8,6 +8,7 @@ ServerEvents.recipes((event) => {
             inputs: [
                 'immersiveengineering:armor_faraday_head',
                 'twilightforest:arctic_helmet',
+                'minecraft:leather_helmet',
                 'minecraft:chainmail_helmet',
                 'minecraft:golden_helmet',
                 'thermal:hazmat_helmet',
@@ -24,6 +25,7 @@ ServerEvents.recipes((event) => {
             inputs: [
                 'immersiveengineering:armor_faraday_chest',
                 'twilightforest:arctic_chestplate',
+                'minecraft:leather_chestplate',
                 'minecraft:chainmail_chestplate',
                 'minecraft:golden_chestplate',
                 'thermal:hazmat_chestplate',
@@ -40,6 +42,7 @@ ServerEvents.recipes((event) => {
             inputs: [
                 'immersiveengineering:armor_faraday_legs',
                 'twilightforest:arctic_leggings',
+                'minecraft:leather_leggings',
                 'minecraft:chainmail_leggings',
                 'minecraft:golden_leggings',
                 'thermal:hazmat_leggings',
@@ -54,6 +57,7 @@ ServerEvents.recipes((event) => {
             inputs: [
                 'immersiveengineering:armor_faraday_feet',
                 'twilightforest:arctic_boots',
+                'minecraft:leather_boots',
                 'minecraft:chainmail_boots',
                 'minecraft:golden_boots',
                 'thermal:hazmat_boots',
