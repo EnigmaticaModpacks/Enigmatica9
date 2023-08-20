@@ -8,6 +8,7 @@
 -   More starbuncle equipment has been flagged with descriptions to aid in locating it in EMI. [\#634](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/634) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Starbuckets are now available significantly earlier. [\#634](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/634) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Quests now explain Lightning Channeling. [\#634](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/634) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Torchberries may now be placed on the bottom of dirt blocks to plant a new plant. [\#644](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/644) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
