@@ -774,14 +774,14 @@ ServerEvents.recipes((event) => {
         {
             output: 'pneumaticcraft:spawner_core_shell',
             inputs: [
+                '#forge:gems/nitro',
+                'spirit:soul_glass',
+                '#forge:ingots/soul_steel',
                 'spirit:soul_glass',
                 '#forge:gems/nitro',
                 'spirit:soul_glass',
-                '#forge:gems/nitro',
-                'spirit:soul_glass',
-                '#forge:gems/nitro',
-                'spirit:soul_glass',
-                '#forge:gems/nitro'
+                '#forge:ingots/soul_steel',
+                'spirit:soul_glass'
             ],
             reagents: ['spirit:soul_crystal'],
             sourceCost: 1000,
