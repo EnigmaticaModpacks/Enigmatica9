@@ -119,6 +119,7 @@ ServerEvents.recipes((event) => {
 
         { id: /createaddition:pressing\/.*_ingot/ },
         { id: /createaddition:crafting\/capacitor/ },
+        { id: /createaddition:crafting\/large_connector/ },
         { id: 'createaddition:crafting/portable_energy_interface' },
         { id: 'createaddition:crafting/digital_adapter' },
         { id: 'createaddition:compat/immersiveengineering/crushing/steel_ingot' },

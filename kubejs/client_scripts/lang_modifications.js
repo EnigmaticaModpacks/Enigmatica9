@@ -1324,6 +1324,234 @@ const entries = {
                 expert: 'Bumblezone teleport failed. Hive needs a Mekanism Teleporter below it.'
             }
         }
+    ],
+    quark: [
+        {
+            key: 'block.quark.ancient_log',
+            value: {
+                normal: 'Ancient Log',
+                expert: 'Resplendent Elder Log'
+            }
+        },
+        {
+            key: 'block.quark.ancient_wood',
+            value: {
+                normal: 'Ancient Wood',
+                expert: 'Resplendent Elder Wood'
+            }
+        },
+        {
+            key: 'block.quark.stripped_ancient_log',
+            value: {
+                normal: 'Stripped Ancient Log',
+                expert: 'Stripped Resplendent Elder Log'
+            }
+        },
+        {
+            key: 'block.quark.stripped_ancient_wood',
+            value: {
+                normal: 'Stripped Ancient Wood',
+                expert: 'Stripped Resplendent Elder Wood'
+            }
+        },
+        {
+            key: 'block.quark.ancient_planks',
+            value: {
+                normal: 'Ancient Planks',
+                expert: 'Resplendent Elder Planks'
+            }
+        },
+        {
+            key: 'block.quark.ancient_planks_slab',
+            value: {
+                normal: 'Ancient Slab',
+                expert: 'Resplendent Elder Slab'
+            }
+        },
+        {
+            key: 'block.quark.ancient_planks_stairs',
+            value: {
+                normal: 'Ancient Stairs',
+                expert: 'Resplendent Elder Stairs'
+            }
+        },
+        {
+            key: 'block.quark.ancient_fence',
+            value: {
+                normal: 'Ancient Fence',
+                expert: 'Resplendent Elder Fence'
+            }
+        },
+        {
+            key: 'block.quark.ancient_fence_gate',
+            value: {
+                normal: 'Ancient Fence Gate',
+                expert: 'Resplendent Elder Fence Gate'
+            }
+        },
+        {
+            key: 'block.quark.ancient_door',
+            value: {
+                normal: 'Ancient Door',
+                expert: 'Resplendent Elder Door'
+            }
+        },
+        {
+            key: 'block.quark.ancient_trapdoor',
+            value: {
+                normal: 'Ancient Trapdoor',
+                expert: 'Resplendent Elder Trapdoor'
+            }
+        },
+        {
+            key: 'block.quark.ancient_button',
+            value: {
+                normal: 'Ancient Button',
+                expert: 'Resplendent Elder Button'
+            }
+        },
+        {
+            key: 'block.quark.ancient_pressure_plate',
+            value: {
+                normal: 'Ancient Pressure Plate',
+                expert: 'Resplendent Elder Pressure Plate'
+            }
+        },
+        {
+            key: 'block.quark.ancient_bookshelf',
+            value: {
+                normal: 'Ancient Bookshelf',
+                expert: 'Resplendent Elder Bookshelf'
+            }
+        },
+        {
+            key: 'block.quark.ancient_ladder',
+            value: {
+                normal: 'Ancient Ladder',
+                expert: 'Resplendent Elder Ladder'
+            }
+        },
+        {
+            key: 'block.quark.ancient_post',
+            value: {
+                normal: 'Ancient Post',
+                expert: 'Resplendent Elder Post'
+            }
+        },
+        {
+            key: 'block.quark.stripped_ancient_post',
+            value: {
+                normal: 'Stripped Ancient Post',
+                expert: 'Stripped Resplendent Elder Post'
+            }
+        },
+        {
+            key: 'block.quark.vertical_ancient_planks',
+            value: {
+                normal: 'Vertical Ancient Planks',
+                expert: 'Vertical Resplendent Elder Planks'
+            }
+        },
+        {
+            key: 'block.quark.hollow_ancient_log',
+            value: {
+                normal: 'Hollow Ancient Log',
+                expert: 'Hollow Resplendent Elder Log'
+            }
+        },
+        {
+            key: 'block.quark.ancient_sign',
+            value: {
+                normal: 'Ancient Sign',
+                expert: 'Resplendent Elder Sign'
+            }
+        },
+        {
+            key: 'item.quark.ancient_boat',
+            value: {
+                normal: 'Ancient Boat',
+                expert: 'Resplendent Elder Boat'
+            }
+        },
+        {
+            key: 'item.quark.ancient_chest_boat',
+            value: {
+                normal: 'Ancient Boat with Chest',
+                expert: 'Resplendent Elder Boat with Chest'
+            }
+        },
+        {
+            key: 'block.quark.ancient_leaves',
+            value: {
+                normal: 'Ancient Leaves',
+                expert: 'Resplendent Elder Leaves'
+            }
+        },
+        {
+            key: 'block.quark.ancient_sapling',
+            value: {
+                normal: 'Ancient Sapling',
+                expert: 'Resplendent Elder Sapling'
+            }
+        },
+        {
+            key: 'item.quark.ancient_fruit',
+            value: {
+                normal: 'Ancient Fruit',
+                expert: 'Resplendent Elderberries'
+            }
+        },
+        {
+            key: 'block.quark.ancient_planks_vertical_slab',
+            value: {
+                normal: 'Ancient Vertical Slab',
+                expert: 'Resplendent Elder Vertical Slab'
+            }
+        },
+        {
+            key: 'block.quark.ancient_chest',
+            value: {
+                normal: 'Ancient Chest',
+                expert: 'Resplendent Elder Chest'
+            }
+        },
+        {
+            key: 'block.quark.ancient_trapped_chest',
+            value: {
+                normal: 'Ancient Trapped Chest',
+                expert: 'Resplendent Elder Trapped Chest'
+            }
+        },
+        {
+            key: 'block.quark.ancient_leaf_carpet',
+            value: {
+                normal: 'Ancient Leaf Carpet',
+                expert: 'Resplendent Elder Leaf Carpet'
+            }
+        },
+        {
+            key: 'block.quark.ancient_hedge',
+            value: {
+                normal: 'Ancient Leaf Hedge',
+                expert: 'Resplendent Elder Leaf Hedge'
+            }
+        },
+        {
+            key: 'quark.jei.hint.ancient_fruit',
+            value: {
+                normal: `Falls from Ancient Trees when they're chopped down. Gives you a small amount of XP when eaten.`,
+                expert: `Falls from Resplendent Elder Trees when they're chopped down. Gives you a small amount of XP when eaten.`
+            }
+        }
+    ],
+    everycomp: [
+        {
+            key: 'wood_type.quark.ancient',
+            value: {
+                normal: 'Ancient',
+                expert: 'Resplendent Elder'
+            }
+        }
     ]
 };
 
