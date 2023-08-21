@@ -23,11 +23,10 @@
 -   [Normal] Add missing Ancient Debris to the IF Laser Drill [\#639](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/639) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fixed missing Compressed Stone Ladder recipe [\#644](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/644) ([MuteTiefling](https://github.com/MuteTiefling))
 -   And even more quest typos and clarifications [\#644](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/644) ([MuteTiefling](https://github.com/MuteTiefling))
--   Fixed typos in quests:
--   ● [\#632](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/632) ([MuteTiefling](https://github.com/MuteTiefling))
--   ● [\#639](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/639) ([MuteTiefling](https://github.com/MuteTiefling))
--   ● [\#652](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/652) ([MuteTiefling](https://github.com/MuteTiefling))
--   ● [\#653](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/653) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fixed typos in quests [\#632](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/632) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fixed typos in quests [\#639](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/639) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fixed typos in quests [\#652](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/652) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fixed typos in quests [\#653](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/653) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
