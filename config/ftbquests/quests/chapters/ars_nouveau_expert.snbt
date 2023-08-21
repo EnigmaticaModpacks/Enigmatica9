@@ -451,11 +451,11 @@
 		{
 			dependencies: ["607D671B8C399B83"]
 			description: [
-				"Sylphs are the care-takers of the forest, helping new growth to flourish. They will come with you willingly if you honor them by planting a tree in their stead. Once befriended, a Sylph will tend to a small area and gift you with their bounty. Plant down trees, crops, flowers, and other natural items and over time the Sylph will grow more of these and offer them to you."
+				"Whirlisprigs are the care-takers of the forest, helping new growth to flourish. They will come with you willingly if you honor them by planting a tree in their stead. Once befriended, a Sprig will tend to a small area and gift you with their bounty. Plant down trees, crops, flowers, and other natural items and over time the Sprig will grow more of these and offer them to you."
 				""
-				"Refer to the Worn Notebook for an in-depth guide on using Sylphs."
+				"Refer to the Worn Notebook for an in-depth guide on using Sprigs."
 				""
-				"The number of wild Sylphs has dwindled in recent times. If none can be found, consider summoning them with the Altar of Birthing."
+				"The number of wild Sprigs has dwindled in recent times. If none can be found, consider summoning them with the Altar of Birthing."
 			]
 			id: "6B1BDD9754A7FF5E"
 			rewards: [
