@@ -1330,217 +1330,217 @@ const entries = {
             key: 'block.quark.ancient_log',
             value: {
                 normal: 'Ancient Log',
-                expert: 'Golden Elder Log'
+                expert: 'Resplendent Elder Log'
             }
         },
         {
             key: 'block.quark.ancient_wood',
             value: {
                 normal: 'Ancient Wood',
-                expert: 'Golden Elder Wood'
+                expert: 'Resplendent Elder Wood'
             }
         },
         {
             key: 'block.quark.stripped_ancient_log',
             value: {
                 normal: 'Stripped Ancient Log',
-                expert: 'Stripped Golden Elder Log'
+                expert: 'Stripped Resplendent Elder Log'
             }
         },
         {
             key: 'block.quark.stripped_ancient_wood',
             value: {
                 normal: 'Stripped Ancient Wood',
-                expert: 'Stripped Golden Elder Wood'
+                expert: 'Stripped Resplendent Elder Wood'
             }
         },
         {
             key: 'block.quark.ancient_planks',
             value: {
                 normal: 'Ancient Planks',
-                expert: 'Golden Elder Planks'
+                expert: 'Resplendent Elder Planks'
             }
         },
         {
             key: 'block.quark.ancient_planks_slab',
             value: {
                 normal: 'Ancient Slab',
-                expert: 'Golden Elder Slab'
+                expert: 'Resplendent Elder Slab'
             }
         },
         {
             key: 'block.quark.ancient_planks_stairs',
             value: {
                 normal: 'Ancient Stairs',
-                expert: 'Golden Elder Stairs'
+                expert: 'Resplendent Elder Stairs'
             }
         },
         {
             key: 'block.quark.ancient_fence',
             value: {
                 normal: 'Ancient Fence',
-                expert: 'Golden Elder Fence'
+                expert: 'Resplendent Elder Fence'
             }
         },
         {
             key: 'block.quark.ancient_fence_gate',
             value: {
                 normal: 'Ancient Fence Gate',
-                expert: 'Golden Elder Fence Gate'
+                expert: 'Resplendent Elder Fence Gate'
             }
         },
         {
             key: 'block.quark.ancient_door',
             value: {
                 normal: 'Ancient Door',
-                expert: 'Golden Elder Door'
+                expert: 'Resplendent Elder Door'
             }
         },
         {
             key: 'block.quark.ancient_trapdoor',
             value: {
                 normal: 'Ancient Trapdoor',
-                expert: 'Golden Elder Trapdoor'
+                expert: 'Resplendent Elder Trapdoor'
             }
         },
         {
             key: 'block.quark.ancient_button',
             value: {
                 normal: 'Ancient Button',
-                expert: 'Golden Elder Button'
+                expert: 'Resplendent Elder Button'
             }
         },
         {
             key: 'block.quark.ancient_pressure_plate',
             value: {
                 normal: 'Ancient Pressure Plate',
-                expert: 'Golden Elder Pressure Plate'
+                expert: 'Resplendent Elder Pressure Plate'
             }
         },
         {
             key: 'block.quark.ancient_bookshelf',
             value: {
                 normal: 'Ancient Bookshelf',
-                expert: 'Golden Elder Bookshelf'
+                expert: 'Resplendent Elder Bookshelf'
             }
         },
         {
             key: 'block.quark.ancient_ladder',
             value: {
                 normal: 'Ancient Ladder',
-                expert: 'Golden Elder Ladder'
+                expert: 'Resplendent Elder Ladder'
             }
         },
         {
             key: 'block.quark.ancient_post',
             value: {
                 normal: 'Ancient Post',
-                expert: 'Golden Elder Post'
+                expert: 'Resplendent Elder Post'
             }
         },
         {
             key: 'block.quark.stripped_ancient_post',
             value: {
                 normal: 'Stripped Ancient Post',
-                expert: 'Stripped Golden Elder Post'
+                expert: 'Stripped Resplendent Elder Post'
             }
         },
         {
             key: 'block.quark.vertical_ancient_planks',
             value: {
                 normal: 'Vertical Ancient Planks',
-                expert: 'Vertical Golden Elder Planks'
+                expert: 'Vertical Resplendent Elder Planks'
             }
         },
         {
             key: 'block.quark.hollow_ancient_log',
             value: {
                 normal: 'Hollow Ancient Log',
-                expert: 'Hollow Golden Elder Log'
+                expert: 'Hollow Resplendent Elder Log'
             }
         },
         {
             key: 'block.quark.ancient_sign',
             value: {
                 normal: 'Ancient Sign',
-                expert: 'Golden Elder Sign'
+                expert: 'Resplendent Elder Sign'
             }
         },
         {
             key: 'item.quark.ancient_boat',
             value: {
                 normal: 'Ancient Boat',
-                expert: 'Golden Elder Boat'
+                expert: 'Resplendent Elder Boat'
             }
         },
         {
             key: 'item.quark.ancient_chest_boat',
             value: {
                 normal: 'Ancient Boat with Chest',
-                expert: 'Golden Elder Boat with Chest'
+                expert: 'Resplendent Elder Boat with Chest'
             }
         },
         {
             key: 'block.quark.ancient_leaves',
             value: {
                 normal: 'Ancient Leaves',
-                expert: 'Golden Elder Leaves'
+                expert: 'Resplendent Elder Leaves'
             }
         },
         {
             key: 'block.quark.ancient_sapling',
             value: {
                 normal: 'Ancient Sapling',
-                expert: 'Golden Elder Sapling'
+                expert: 'Resplendent Elder Sapling'
             }
         },
         {
             key: 'item.quark.ancient_fruit',
             value: {
                 normal: 'Ancient Fruit',
-                expert: 'Golden Elderberries'
+                expert: 'Resplendent Elderberries'
             }
         },
         {
             key: 'block.quark.ancient_planks_vertical_slab',
             value: {
                 normal: 'Ancient Vertical Slab',
-                expert: 'Golden Elder Vertical Slab'
+                expert: 'Resplendent Elder Vertical Slab'
             }
         },
         {
             key: 'block.quark.ancient_chest',
             value: {
                 normal: 'Ancient Chest',
-                expert: 'Golden Elder Chest'
+                expert: 'Resplendent Elder Chest'
             }
         },
         {
             key: 'block.quark.ancient_trapped_chest',
             value: {
                 normal: 'Ancient Trapped Chest',
-                expert: 'Golden Elder Trapped Chest'
+                expert: 'Resplendent Elder Trapped Chest'
             }
         },
         {
             key: 'block.quark.ancient_leaf_carpet',
             value: {
                 normal: 'Ancient Leaf Carpet',
-                expert: 'Golden Elder Leaf Carpet'
+                expert: 'Resplendent Elder Leaf Carpet'
             }
         },
         {
             key: 'block.quark.ancient_hedge',
             value: {
                 normal: 'Ancient Leaf Hedge',
-                expert: 'Golden Elder Leaf Hedge'
+                expert: 'Resplendent Elder Leaf Hedge'
             }
         },
         {
             key: 'quark.jei.hint.ancient_fruit',
             value: {
                 normal: `Falls from Ancient Trees when they're chopped down. Gives you a small amount of XP when eaten.`,
-                expert: `Falls from Golden Elder Trees when they're chopped down. Gives you a small amount of XP when eaten.`
+                expert: `Falls from Resplendent Elder Trees when they're chopped down. Gives you a small amount of XP when eaten.`
             }
         }
     ],
@@ -1549,7 +1549,7 @@ const entries = {
             key: 'wood_type.quark.ancient',
             value: {
                 normal: 'Ancient',
-                expert: 'Golden Elder'
+                expert: 'Resplendent Elder'
             }
         }
     ]

@@ -13,7 +13,7 @@
 -   Thermal's Hive Hopper now extracts Bumblezone Honey. [\#646](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/646) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Leather Armor may now be used to craft the Sorcerer's set from Ars Nouveau. [\#647](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/647) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Sculk requirements for end game have been reduced. [\#652](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/652) ([MuteTiefling](https://github.com/MuteTiefling))
--   [Expert] Quark's Ancient Sapling and related wood items have been renamed to Golden Elder Saplings to avoid confusion with Nature's Aura Ancient Saplings. [\#653](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/653) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Quark's Ancient Sapling and related wood items have been renamed to Resplendent Elder Saplings to avoid confusion with Nature's Aura Ancient Saplings. [\#653](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/653) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
