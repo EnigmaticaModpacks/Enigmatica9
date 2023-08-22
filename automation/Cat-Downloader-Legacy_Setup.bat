@@ -1,7 +1,7 @@
 @echo off
 
 REM You set your arguments here
-set arguments_setup=-SettingsPath:automation -LogsPath:automation\CDL-Logs -DefaultSettings:false -Mode:CF-Instance
+set arguments_setup=-SettingsPath:automation -LogsPath:automation\\CDL-Logs -DefaultSettings:false -Mode:CF-Instance
 set arguments_launch=-SettingsPath:automation
 
 cd ..

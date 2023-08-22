@@ -1,7 +1,7 @@
 #!/bin/sh
 
-ARGUMENTS_SETUP= "-SettingsPath:automation -LogsPath:automation\\CDL-Logs -DefaultSettings:false -Mode:CF-Instance"
-ARGUMENTS_LAUNCH= "-SettingsPath:automation"
+ARGUMENTS_SETUP="-SettingsPath:automation -LogsPath:automation\\\\CDL-Logs -DefaultSettings:false -Mode:CF-Instance"
+ARGUMENTS_LAUNCH="-SettingsPath:automation"
 
 cd ..
 echo "#!/bin/sh" > .git/hooks/post-merge
