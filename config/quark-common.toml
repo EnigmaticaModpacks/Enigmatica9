@@ -85,7 +85,9 @@
 
 	[mobs.crabs]
 		"Enable Brewing" = true
-		"Enable Resillience Effect" = true
+		#Whether Resilience should be required for 'How Did We Get Here?' and (if brewing is enabled) 'A Furious Cocktail'.
+		#Keep this on when brewing is disabled if your pack adds an alternative source for the effect.
+		"Resilience Required For All Effects" = true
 
 		[mobs.crabs.spawn_config]
 			#Allowed values: (0,)
@@ -183,7 +185,7 @@
 					"Is Blacklist" = false
 
 	[mobs.forgotten]
-		#1 in this many Skeletons that spawn under the threshold are replaced with Forgotten.
+		#This is the probability of a Skeleton that spawns under the height threshold being replaced with a Forgotten.
 		"Forgotten Spawn Rate" = 0.05
 		"Max Height For Spawn" = 0
 
@@ -307,6 +309,7 @@
 		"Enable Extra Loot Table" = true
 		#How many blocks to search vertically from a position before trying to place a block. Higher means you'll get more boxes in open spaces.
 		"Search Range" = 15
+		"Activation Range" = 2.5
 
 		[world.monster_box.dimensions]
 			Dimensions = ["minecraft:overworld"]
@@ -870,6 +873,7 @@
 		"Enable Armor Interaction" = true
 		"Enable Lava Interaction" = true
 		"Allow Opening Shulker Boxes" = true
+		"Allow Rotating Bundles" = true
 
 	[management.automatic_tool_restock]
 		#This feature disables itself if any of the following mods are loaded: 
@@ -936,6 +940,7 @@
 	"Gold Tools Have Fortune" = true
 	"Horses Swim" = true
 	"Better Elytra Rocket" = true
+	"Map Washing" = true
 
 	[tweaks.sign_editing]
 		"Requires Empty Hand" = false
@@ -947,6 +952,8 @@
 		"Pettable Denylist" = ["minecraft:ender_dragon", "minecraft:wither", "minecraft:armor_stand"]
 		#How many ticks it takes for a dog to want affection after being pet/tamed; leave -1 to disable
 		"Dogs Want Love" = -1
+		#Even if `petAllMobs` is not set, these mobs can be pet
+		"Pettable Allowlist" = []
 
 	[tweaks.no_durability_on_cosmetics]
 		#Allow applying cosmetic items such as color runes with no anvil durability usage? Cosmetic items are defined in the quark:cosmetic_anvil_items tag
@@ -957,8 +964,10 @@
 		"Harvest Level" = 2
 		#Allowed values: [0,)
 		"Fortune Level" = 2
-		"Display Fortune In Tooltip" = true
 		"Italic Tooltip" = true
+		"Display Baked Enchantments In Tooltip" = true
+		#Enchantments other than Gold's Fortune/Looting to bake into items. Format is "item+enchant@level", such as "minecraft:stick+sharpness@10".
+		"Baked Enchantments" = []
 
 	[tweaks.more_note_block_sounds]
 		"Enable Amethyst Sound" = true
@@ -1111,6 +1120,8 @@
 		#Which blocks should right click harvesting simulate a click on instead of breaking?
 		#This is for blocks like sweet berry bushes, which have right click harvesting built in.
 		"Right Clickable Blocks" = ["minecraft:sweet_berry_bush", "minecraft:cave_vines"]
+		#Should villagers use simple harvest instead of breaking crops?
+		"Villagers Use Simple Harvest" = true
 
 	[tweaks.compasses_work_everywhere]
 		"Enable Nether" = true
@@ -1125,6 +1136,12 @@
 	[tweaks.campfires_boost_elytra]
 		"Boost Strength" = 0.5
 		"Max Speed" = 1.0
+
+	[tweaks.hoe_harvesting]
+		#Allowed values: [1,5]
+		"Regular Hoe Radius" = 2
+		#Allowed values: [1,5]
+		"High Tier Hoe Radius" = 3
 
 [client]
 	"Greener Grass" = true
@@ -1390,6 +1407,8 @@
 		"Disable Piston Physics Exploits" = true
 		#Resets all villager discounts when zombified to prevent reducing prices to ridiculous levels
 		"Nerf Villager Discount" = true
+		#Fixes mushroom growth being able to replace blocks
+		"Disable Mushroom Block Removal" = true
 
 	[experimental.adjustable_chat]
 		"Horizontal Shift" = 0
@@ -1523,6 +1542,8 @@
 		"Add To Wandering Trader Forced" = true
 		#How many steps in the search should the Pathfinder's Quill do per tick? The higher this value, the faster it'll find a result, but the higher chance it'll lag the game while doing so
 		"Pathfinders Quill Speed" = 32
+		#Allows retrying after a pathfinder quill fails to find a biome nearby. Turn off if you think its op
+		"Allow Retrying" = true
 
 	[tools.color_runes]
 		"Jungle Temple Weight" = 8
@@ -1645,6 +1666,7 @@
 	Midori = true
 	"Framed Glass" = true
 	"Raw Metal Bricks" = false
+	"Rainbow Lamps" = true
 
 	[building.hollow_logs]
 		"Enable Auto Crawl" = true
@@ -1779,4 +1801,9 @@
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
 		"Change Names" = true
+
+	[building.rainbow_lamps]
+		"Light Level" = 15
+		#Whether Rainbow Lamps should be made from and themed on Corundum if that module is enabled.
+		"Use Corundum" = true
 

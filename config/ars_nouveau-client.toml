@@ -18,27 +18,27 @@
 	#Show the supporter message. This is set to false after the first time.
 	showSupporterMessage = true
 
-	#Overlay
-	[lights.overlays]
-		#X offset for the tooltip
-		#Range: > -2147483648
-		xTooltip = 20
-		#Y offset for the tooltip
-		#Range: > -2147483648
-		yTooltip = 0
-		#X offset for the Mana Bar
-		#Range: > -2147483648
-		xManaBar = 0
-		#Y offset for the Mana Bar
-		#Range: > -2147483648
-		yManaBar = 0
-		#If the Storage Lectern should show the recipe book icon
-		showRecipeBook = true
+#Overlay
+[overlays]
+	#X offset for the tooltip
+	#Range: > -2147483648
+	xTooltip = 20
+	#Y offset for the tooltip
+	#Range: > -2147483648
+	yTooltip = 0
+	#X offset for the Mana Bar
+	#Range: > -2147483648
+	xManaBar = 0
+	#Y offset for the Mana Bar
+	#Range: > -2147483648
+	yManaBar = 0
+	#If the Storage Lectern should show the recipe book icon
+	showRecipeBook = true
 
-		#Misc
-		[lights.overlays.misc]
-			#Use simplified renderer for Warp Portals
-			no_end_portal_render = false
-			#Disables the skyweave renderer. Disable if your sky is broken with shaders.
-			disable_skyweave = false
+#Misc
+[misc]
+	#Use simplified renderer for Warp Portals
+	no_end_portal_render = false
+	#Disables the skyweave renderer. Disable if your sky is broken with shaders.
+	disable_skyweave = false
 
