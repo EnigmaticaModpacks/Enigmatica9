@@ -33,6 +33,7 @@ screenshots/
 # Instance Sync and other jars
 **/*.jar
 !InstanceSync*.jar
+!Cat-Downloader-Legacy-*.jar
 **/*.jar.disabled
 **/*.jar.meta
 
