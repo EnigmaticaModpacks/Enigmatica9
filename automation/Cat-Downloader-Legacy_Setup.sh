@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ARGUMENTS_SETUP="-SettingsPath:automation -LogsPath:automation\\\\CDL-Logs -DefaultSettings:false -Mode:CF-Instance"
+ARGUMENTS_SETUP="-SettingsPath:automation -LogsPath:automation/CDL-Logs -DefaultSettings:false -Mode:CF-Instance"
 ARGUMENTS_LAUNCH="-SettingsPath:automation"
 
 cd ..
@@ -9,4 +9,8 @@ echo "java -jar automation/Cat-Downloader-Legacy.jar ${ARGUMENTS_LAUNCH}" >> .gi
 
 echo Git Hooks have been set up! Running Cat-Downloader-Legacy...
 
-java -jar automation/Cat-Downloader-Legacy.jar ${ARGUMENTS_SETUP}
+if [ -f "automation/Cat-Downloader-Legacy Settings.json5" ]; then  
+    java -jar automation/Cat-Downloader-Legacy.jar ${ARGUMENTS_LAUNCH}
+else  
+    java -jar automation/Cat-Downloader-Legacy.jar ${ARGUMENTS_SETUP}
+fi  

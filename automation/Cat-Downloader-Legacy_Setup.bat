@@ -1,7 +1,7 @@
 @echo off
 
 REM You set your arguments here
-set arguments_setup=-SettingsPath:automation -LogsPath:automation\\CDL-Logs -DefaultSettings:false -Mode:CF-Instance
+set arguments_setup=-SettingsPath:automation -LogsPath:automation/CDL-Logs -DefaultSettings:false -Mode:CF-Instance
 set arguments_launch=-SettingsPath:automation
 
 cd ..
@@ -11,6 +11,6 @@ echo java -jar automation/Cat-Downloader-Legacy.jar %arguments_launch% >> .git/h
 
 echo Git Hooks have been set up! Running Cat-Downloader-Legacy...
 
-java -jar automation/Cat-Downloader-Legacy.jar %arguments_setup%
+IF EXIST "automation/Cat-Downloader-Legacy Settings.json5" (java -jar automation/Cat-Downloader-Legacy.jar %arguments_launch%) ELSE (java -jar automation/Cat-Downloader-Legacy.jar %arguments_setup%)
 
 pause
