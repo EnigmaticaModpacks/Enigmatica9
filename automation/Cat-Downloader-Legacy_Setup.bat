@@ -11,6 +11,6 @@ echo java -jar automation/Cat-Downloader-Legacy.jar %arguments_launch% >> .git/h
 
 echo Git Hooks have been set up! Running Cat-Downloader-Legacy...
 
-IF EXIST "automation/Cat-Downloader-Legacy Settings.json5" (java -jar automation/Cat-Downloader-Legacy.jar %arguments_launch%) ELSE (java -jar automation/Cat-Downloader-Legacy.jar %arguments_setup%)
+IF EXIST "automation/Cat-Downloader-Legacy-Settings.json5" (java -jar automation/Cat-Downloader-Legacy.jar %arguments_launch%) ELSE (java -jar automation/Cat-Downloader-Legacy.jar %arguments_setup%)
 
 pause

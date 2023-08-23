@@ -10,7 +10,7 @@ chmod +x .git/hooks/post-merge
 
 echo Git Hooks have been set up! Running Cat-Downloader-Legacy...
 
-if [ -f "automation/Cat-Downloader-Legacy Settings.json5" ]; then  
+if [ -f "automation/Cat-Downloader-Legacy-Settings.json5" ]; then  
     java -jar automation/Cat-Downloader-Legacy.jar ${ARGUMENTS_LAUNCH}
 else  
     java -jar automation/Cat-Downloader-Legacy.jar ${ARGUMENTS_SETUP}
