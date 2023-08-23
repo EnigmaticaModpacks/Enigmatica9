@@ -486,7 +486,7 @@ ServerEvents.recipes((event) => {
                 fluid: 'hexerei:potion',
                 nbt: { Bottle: 'REGULAR', Potion: 'apotheosis:long_knowledge' }
             },
-            fluidLevelsConsumed: 2000,
+            fluidLevelsConsumed: 200,
             heatRequirement: 'heated',
             id: `${id_prefix}blank_thread`
         },
