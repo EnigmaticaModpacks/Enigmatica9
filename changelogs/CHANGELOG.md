@@ -15,6 +15,7 @@
 -   [Expert] Sculk requirements for end game have been reduced. [\#652](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/652) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Quark's Ancient Sapling and related wood items have been renamed to Resplendent Elder Saplings to avoid confusion with Nature's Aura Ancient Saplings. [\#653](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/653) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] AE2 Annihilation and Formation cores now use Wyrms to craft. Sorry Bailey! [\#660](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/660) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Threads now use 200 mb of potion instead of 2000. [\#660](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/660) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
