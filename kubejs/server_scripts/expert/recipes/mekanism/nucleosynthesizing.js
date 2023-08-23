@@ -57,9 +57,9 @@ ServerEvents.recipes((event) => {
         {
             output: Item.of(
                 'industrialforegoing:infinity_drill',
-                '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'
+                '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"ARTIFACT",Special:0b}'
             ).toJson(),
-            gasInput: { gas: 'mekanism:antimatter', amount: 100 },
+            gasInput: { gas: 'mekanism:antimatter', amount: 1000 },
             itemInput: { ingredient: { item: 'immersiveengineering:drillhead_steel' } },
             duration: 1200,
             id: `${id_prefix}infinity_drill`
@@ -67,9 +67,9 @@ ServerEvents.recipes((event) => {
         {
             output: Item.of(
                 'industrialforegoing:infinity_saw',
-                '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'
+                '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"ARTIFACT",Special:0b}'
             ).toJson(),
-            gasInput: { gas: 'mekanism:antimatter', amount: 100 },
+            gasInput: { gas: 'mekanism:antimatter', amount: 1000 },
             itemInput: { ingredient: { item: 'immersiveengineering:rockcutter' } },
             duration: 1200,
             id: `${id_prefix}infinity_saw`
@@ -77,9 +77,9 @@ ServerEvents.recipes((event) => {
         {
             output: Item.of(
                 'industrialforegoing:infinity_hammer',
-                '{Beheading:0,CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'
+                '{Beheading:0,CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"ARTIFACT",Special:0b}'
             ).toJson(),
-            gasInput: { gas: 'mekanism:antimatter', amount: 100 },
+            gasInput: { gas: 'mekanism:antimatter', amount: 1000 },
             itemInput: { ingredient: { item: 'hexerei:warhammer' } },
             duration: 1200,
             id: `${id_prefix}infinity_hammer`
@@ -87,9 +87,9 @@ ServerEvents.recipes((event) => {
         {
             output: Item.of(
                 'industrialforegoing:infinity_trident',
-                '{CanCharge:1b,Channeling:0b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"POOR",Special:0b}'
+                '{CanCharge:1b,Channeling:0b,Energy:9223372036854775807L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"ARTIFACT",Special:0b}'
             ).toJson(),
-            gasInput: { gas: 'mekanism:antimatter', amount: 100 },
+            gasInput: { gas: 'mekanism:antimatter', amount: 1000 },
             itemInput: { ingredient: { item: 'minecraft:trident' } },
             duration: 1200,
             id: `${id_prefix}infinity_trident`
@@ -97,9 +97,9 @@ ServerEvents.recipes((event) => {
         {
             output: Item.of(
                 'industrialforegoing:infinity_nuke',
-                '{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"POOR",Special:0b}'
+                '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"ARTIFACT",Special:0b}'
             ).toJson(),
-            gasInput: { gas: 'mekanism:antimatter', amount: 100 },
+            gasInput: { gas: 'mekanism:antimatter', amount: 1000 },
             itemInput: { ingredient: { item: 'thermal:earth_tnt' } },
             duration: 1200,
             id: `${id_prefix}infinity_nuke`
