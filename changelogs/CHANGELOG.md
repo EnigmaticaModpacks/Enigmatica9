@@ -16,6 +16,9 @@
 -   [Expert] Quark's Ancient Sapling and related wood items have been renamed to Resplendent Elder Saplings to avoid confusion with Nature's Aura Ancient Saplings. [\#653](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/653) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] AE2 Annihilation and Formation cores now use Wyrms to craft. Sorry Bailey! [\#660](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/660) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Threads now use 200 mb of potion instead of 2000. [\#660](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/660) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Infinity Tools are now crafted directly at Artifact tier. [\#661](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/661) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Cave Trolls have been buffed with regeneration and knockback effects. [\#661](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/661) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Minotaurs and Minoshrooms can now snare you, making them very dangerous in packs. [\#661](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/661) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
@@ -27,6 +30,7 @@
 -   Fixed missing Compressed Stone Ladder recipe [\#644](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/644) ([MuteTiefling](https://github.com/MuteTiefling))
 -   And even more quest typos and clarifications [\#644](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/644) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Remove Tablet of Summon Wilden from all loot tables [\#660](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/660) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fixed some bugged quest loot in the Nature's Aura chapter. [\#661](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/661) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fixed typos in quests [\#632](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/632) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fixed typos in quests [\#639](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/639) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fixed typos in quests [\#652](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/652) ([MuteTiefling](https://github.com/MuteTiefling))
