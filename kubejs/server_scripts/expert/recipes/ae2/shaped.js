@@ -48,23 +48,23 @@ ServerEvents.recipes((event) => {
             id: `ae2:network/blocks/interfaces_interface`
         },
         {
-            output: '3x ae2:annihilation_core',
+            output: '4x ae2:annihilation_core',
             pattern: [' B ', 'DCA', ' B '],
             key: {
-                A: '#forge:gems/subzero',
+                A: '#forge:dusts/subzero',
                 B: '#forge:dusts/fluix',
-                C: 'pneumaticcraft:logistics_core',
+                C: 'ars_nouveau:bookwyrm_charm',
                 D: 'quark:rainbow_rune'
             },
             id: `ae2:materials/annihilationcore`
         },
         {
-            output: '3x ae2:formation_core',
+            output: '4x ae2:formation_core',
             pattern: [' B ', 'ACD', ' B '],
             key: {
-                A: '#forge:gems/therium',
+                A: '#forge:dusts/therium',
                 B: '#forge:dusts/fluix',
-                C: 'pneumaticcraft:logistics_core',
+                C: 'ars_nouveau:bookwyrm_charm',
                 D: 'quark:rainbow_rune'
             },
             id: `ae2:materials/formationcore`
