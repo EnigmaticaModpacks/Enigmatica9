@@ -1108,11 +1108,11 @@
 			hide_dependency_lines: true
 			id: "712E3B21060DB19C"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/quest_blacksmiths_delight"
-				icon: "kubejs:blacksmiths_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+				icon: "kubejs:rare_lootbox"
 				id: "28CC27FC10BC0B9B"
 				player_command: false
-				title: "Blacksmith's Delight"
+				title: "Rare Nature's Aura Loot Box"
 				type: "command"
 			}]
 			tasks: [{

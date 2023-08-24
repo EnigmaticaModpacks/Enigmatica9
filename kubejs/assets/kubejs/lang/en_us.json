@@ -656,6 +656,8 @@
     "ritual.enigmatica.occultism/ritual/swarm_gate_large.interrupted": "Large Mite Swarm Gateway Interrupted",
     "ritual.enigmatica.occultism/ritual/swarm_gate_large.conditions": "Not all requirements for this ritual are met.",
 
+    "advancements.occultism.death_tome_gate_small.title": "Summon Death Tomes",
+    "advancements.occultism.death_tome_gate_small.description": "Summon Death Tomes",
     "gateways.death_tome_gate": "Death Tome Gate",
     "gateways.death_tome_gate_small": "Small Death Tome Gate",
     "gateways.death_tome_gate_large": "Large Death Tome Gate",
