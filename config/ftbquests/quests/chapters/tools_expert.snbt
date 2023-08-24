@@ -875,15 +875,30 @@
 						items: [
 							{
 								Count: 1b
-								id: "industrialforegoing:infinity_saw"
+								id: "industrialforegoing:infinity_nuke"
 								tag: {
 									CanCharge: 1b
-									Energy: 0L
+									Energy: 9223372036854775807L
 									Fluid: {
 										Amount: 0
 										FluidName: "biofuel"
 									}
-									Selected: "POOR"
+									Selected: "ARTIFACT"
+									Special: 0b
+								}
+							}
+							{
+								Count: 1b
+								id: "industrialforegoing:infinity_hammer"
+								tag: {
+									Beheading: 0
+									CanCharge: 1b
+									Energy: 9223372036854775807L
+									Fluid: {
+										Amount: 0
+										FluidName: "biofuel"
+									}
+									Selected: "ARTIFACT"
 									Special: 0b
 								}
 							}
@@ -892,12 +907,43 @@
 								id: "industrialforegoing:infinity_drill"
 								tag: {
 									CanCharge: 1b
-									Energy: 0L
+									Energy: 9223372036854775807L
 									Fluid: {
 										Amount: 0
 										FluidName: "biofuel"
 									}
-									Selected: "POOR"
+									Selected: "ARTIFACT"
+									Special: 0b
+								}
+							}
+							{
+								Count: 1b
+								id: "industrialforegoing:infinity_trident"
+								tag: {
+									CanCharge: 1b
+									Channeling: 0b
+									Energy: 9223372036854775807L
+									Fluid: {
+										Amount: 0
+										FluidName: "biofuel"
+									}
+									Loyalty: 0
+									Riptide: 0
+									Selected: "ARTIFACT"
+									Special: 0b
+								}
+							}
+							{
+								Count: 1b
+								id: "industrialforegoing:infinity_saw"
+								tag: {
+									CanCharge: 1b
+									Energy: 9223372036854775807L
+									Fluid: {
+										Amount: 0
+										FluidName: "biofuel"
+									}
+									Selected: "ARTIFACT"
 									Special: 0b
 								}
 							}

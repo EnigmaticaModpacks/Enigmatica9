@@ -507,7 +507,7 @@ const reactive = {
                         size: 8
                     },
                     sound: { pitch: 0.5, soundTag: { id: 'ars_nouveau:fire_family_2' }, volume: 1.0 },
-                    spellColor: { b: 1, g: 90, r: 255 }
+                    spellColor: { b: 1, g: 90, r: 255, type: 'ars_nouveau:constant' }
                 }
             }
         }
@@ -534,7 +534,7 @@ const reactive = {
                         size: 10
                     },
                     sound: { pitch: 0.5, soundTag: { id: 'ars_nouveau:fire_family_2' }, volume: 1.0 },
-                    spellColor: { b: 255, g: 25, r: 30 }
+                    spellColor: { b: 255, g: 25, r: 30, type: 'ars_nouveau:constant' }
                 }
             }
         }
@@ -557,7 +557,7 @@ const reactive = {
                         size: 6
                     },
                     sound: { pitch: 1.0, soundTag: { id: 'ars_nouveau:fire_family' }, volume: 1.0 },
-                    spellColor: { b: 255, g: 255, r: 25 }
+                    spellColor: { b: 255, g: 255, r: 25, type: 'ars_nouveau:constant' }
                 }
             }
         }
@@ -584,7 +584,7 @@ const reactive = {
                         size: 10
                     },
                     sound: { pitch: 0.6, soundTag: { id: 'ars_nouveau:gaia_family' }, volume: 1.0 },
-                    spellColor: { b: 25, g: 255, r: 25 }
+                    spellColor: { b: 25, g: 255, r: 25, type: 'ars_nouveau:constant' }
                 }
             }
         }
@@ -608,7 +608,7 @@ const reactive = {
                         size: 7
                     },
                     sound: { pitch: 1.0, soundTag: { id: 'ars_nouveau:fire_family' }, volume: 1.0 },
-                    spellColor: { b: 255, g: 25, r: 80 }
+                    spellColor: { b: 255, g: 25, r: 80, type: 'ars_nouveau:constant' }
                 }
             }
         }
@@ -628,7 +628,7 @@ const reactive = {
                         size: 3
                     },
                     sound: { pitch: 1.0, soundTag: { id: 'ars_nouveau:fire_family' }, volume: 1.0 },
-                    spellColor: { b: 25, g: 255, r: 25 }
+                    spellColor: { b: 25, g: 255, r: 25, type: 'ars_nouveau:constant' }
                 }
             }
         }
@@ -651,7 +651,7 @@ const reactive = {
                         size: 6
                     },
                     sound: { pitch: 0.4, soundTag: { id: 'ars_nouveau:tempestry_family' }, volume: 1.0 },
-                    spellColor: { b: 255, g: 25, r: 80 }
+                    spellColor: { b: 255, g: 25, r: 80, type: 'ars_nouveau:constant' }
                 }
             }
         }
@@ -673,7 +673,7 @@ const reactive = {
                         size: 5
                     },
                     sound: { pitch: 2.55, soundTag: { id: 'ars_nouveau:tempestry_family' }, volume: 1.0 },
-                    spellColor: { b: 255, g: 25, r: 80 }
+                    spellColor: { b: 255, g: 25, r: 80, type: 'ars_nouveau:constant' }
                 }
             }
         }
@@ -695,7 +695,7 @@ const reactive = {
                         size: 5
                     },
                     sound: { pitch: 0.01, soundTag: { id: 'ars_nouveau:tempestry_family' }, volume: 1.0 },
-                    spellColor: { b: 255, g: 25, r: 80 }
+                    spellColor: { b: 255, g: 25, r: 80, type: 'ars_nouveau:constant' }
                 }
             }
         }
@@ -715,7 +715,7 @@ const reactive = {
                         size: 3
                     },
                     sound: { pitch: 1.0, soundTag: { id: 'ars_nouveau:fire_family' }, volume: 1.0 },
-                    spellColor: { b: 1, g: 74, r: 150 }
+                    spellColor: { b: 1, g: 74, r: 150, type: 'ars_nouveau:constant' }
                 }
             }
         }
@@ -736,7 +736,7 @@ const reactive = {
                         size: 4
                     },
                     sound: { pitch: 1.67, soundTag: { id: 'ars_nouveau:tempestry_family' }, volume: 1.0 },
-                    spellColor: { b: 255, g: 255, r: 255 }
+                    spellColor: { b: 255, g: 255, r: 255, type: 'ars_nouveau:constant' }
                 }
             }
         }
@@ -759,7 +759,7 @@ const reactive = {
                         size: 6
                     },
                     sound: { pitch: 0.01, soundTag: { id: 'ars_nouveau:tempestry_family' }, volume: 1.0 },
-                    spellColor: { b: 255, g: 25, r: 30 }
+                    spellColor: { b: 255, g: 25, r: 30, type: 'ars_nouveau:constant' }
                 }
             }
         }
@@ -786,7 +786,30 @@ const reactive = {
                         size: 10
                     },
                     sound: { pitch: 1.67, soundTag: { id: 'ars_nouveau:tempestry_family' }, volume: 1.0 },
-                    spellColor: { b: 255, g: 255, r: 255 }
+                    spellColor: { b: 255, g: 255, r: 255, type: 'ars_nouveau:constant' }
+                }
+            }
+        }
+    },
+    ground_slam: {
+        'ars_nouveau:reactive_caster': {
+            current_slot: 0,
+            flavor: '',
+            spell_count: 1,
+            spells: {
+                spell0: {
+                    name: '',
+                    recipe: {
+                        part0: 'ars_nouveau:glyph_underfoot',
+                        part1: 'ars_nouveau:glyph_linger',
+                        part2: 'toomanyglyphs:glyph_filter_living_not_monster',
+                        part3: 'ars_nouveau:glyph_launch',
+                        part4: 'toomanyglyphs:glyph_amplify_two',
+                        part5: 'ars_nouveau:glyph_gust',
+                        size: 6
+                    },
+                    sound: { pitch: 1.0, soundTag: { id: 'ars_nouveau:gaia_family' }, volume: 1.0 },
+                    spellColor: { b: 255, g: 25, r: 80, type: 'ars_nouveau:constant' }
                 }
             }
         }

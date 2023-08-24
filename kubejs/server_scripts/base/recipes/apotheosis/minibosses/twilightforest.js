@@ -265,6 +265,156 @@ ServerEvents.highPriorityData((event) => {
                     }
                 ]
             }
+        },
+        {
+            id: 'troll',
+            name: null,
+            chance: 1.0,
+            weight: 100,
+            quality: 0,
+            entities: ['twilightforest:troll'],
+            valid_gear_sets: ['#miniboss/troll'],
+            dimensions: [],
+            affixed: false,
+            nbt: {},
+            stats: {
+                enchant_chance: 0.0,
+                enchantment_levels: [10, 10, 10, 10],
+                effects: [
+                    { effect: 'minecraft:strength', amplifier: 1, chance: 1.0 },
+                    { effect: 'minecraft:regeneration', amplifier: 2, chance: 1.0 }
+                ],
+                attribute_modifiers: [
+                    {
+                        attribute: 'minecraft:generic.max_health',
+                        operation: 'ADDITION',
+                        value: 40
+                    },
+                    {
+                        attribute: 'minecraft:generic.attack_knockback',
+                        operation: 'ADDITION',
+                        value: 1.5
+                    },
+                    {
+                        attribute: 'minecraft:generic.attack_damage',
+                        operation: 'MULTIPLY_BASE',
+                        value: { min: 0.35, steps: 35, step: 0.02 }
+                    },
+                    {
+                        attribute: 'minecraft:generic.knockback_resistance',
+                        operation: 'ADDITION',
+                        value: 0.5
+                    },
+                    {
+                        attribute: 'minecraft:generic.armor',
+                        operation: 'ADDITION',
+                        value: 4
+                    },
+                    {
+                        attribute: 'minecraft:generic.armor_toughness',
+                        operation: 'ADDITION',
+                        value: 2
+                    }
+                ]
+            }
+        },
+        {
+            id: 'minotaur',
+            name: null,
+            chance: 1.0,
+            weight: 100,
+            quality: 0,
+            entities: ['twilightforest:minotaur'],
+            valid_gear_sets: ['#miniboss/minotaur'],
+            dimensions: [],
+            affixed: false,
+            nbt: {},
+            stats: {
+                enchant_chance: 1.0,
+                enchantment_levels: [50, 50, 50, 50],
+                effects: [{ effect: 'minecraft:strength', amplifier: 1, chance: 1.0 }],
+                attribute_modifiers: [
+                    {
+                        attribute: 'minecraft:generic.max_health',
+                        operation: 'ADDITION',
+                        value: 20
+                    },
+                    {
+                        attribute: 'minecraft:generic.attack_knockback',
+                        operation: 'ADDITION',
+                        value: 1.5
+                    },
+                    {
+                        attribute: 'minecraft:generic.attack_damage',
+                        operation: 'MULTIPLY_BASE',
+                        value: { min: 0.35, steps: 35, step: 0.02 }
+                    },
+                    {
+                        attribute: 'minecraft:generic.knockback_resistance',
+                        operation: 'ADDITION',
+                        value: 0.5
+                    },
+                    {
+                        attribute: 'minecraft:generic.armor',
+                        operation: 'ADDITION',
+                        value: 6
+                    },
+                    {
+                        attribute: 'minecraft:generic.armor_toughness',
+                        operation: 'ADDITION',
+                        value: 4
+                    }
+                ]
+            }
+        },
+        {
+            id: 'minoshroom',
+            name: null,
+            chance: 1.0,
+            weight: 100,
+            quality: 0,
+            entities: ['twilightforest:minoshroom'],
+            valid_gear_sets: ['#miniboss/minoshroom'],
+            dimensions: [],
+            affixed: false,
+            nbt: {},
+            stats: {
+                enchant_chance: 1.0,
+                enchantment_levels: [50, 50, 50, 50],
+                effects: [{ effect: 'minecraft:strength', amplifier: 1, chance: 1.0 }],
+                attribute_modifiers: [
+                    {
+                        attribute: 'minecraft:generic.max_health',
+                        operation: 'ADDITION',
+                        value: 20
+                    },
+                    {
+                        attribute: 'minecraft:generic.attack_knockback',
+                        operation: 'ADDITION',
+                        value: 1.5
+                    },
+                    {
+                        attribute: 'minecraft:generic.attack_damage',
+                        operation: 'MULTIPLY_BASE',
+                        value: { min: 0.35, steps: 35, step: 0.02 }
+                    },
+                    {
+                        attribute: 'minecraft:generic.knockback_resistance',
+                        operation: 'ADDITION',
+                        value: 0.5
+                    },
+                    {
+                        attribute: 'minecraft:generic.armor',
+                        operation: 'ADDITION',
+                        value: 6
+                    },
+                    {
+                        attribute: 'minecraft:generic.armor_toughness',
+                        operation: 'ADDITION',
+                        value: 4
+                    }
+                ]
+            }
         }
     ];
 

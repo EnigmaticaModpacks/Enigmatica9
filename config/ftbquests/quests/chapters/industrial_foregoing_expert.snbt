@@ -159,7 +159,7 @@
 				""
 				"Sneak Right-Click to set its options. "
 				""
-				"Right-Click on a tank of Biofuel to fill it. "
+				"Right-Click on a tank of Abyssaline to fill it. "
 			]
 			hide_dependency_lines: true
 			id: "41E4A38DBA6DE6A7"
@@ -172,19 +172,19 @@
 				type: "command"
 			}]
 			tasks: [{
-				id: "03AF60226A59F3DE"
+				id: "0FA22DD447DAE6C6"
 				item: {
 					Count: 1b
 					id: "industrialforegoing:infinity_drill"
 					tag: {
-						CanCharge: 1
-						Energy: 0
+						CanCharge: 1b
+						Energy: 9223372036854775807L
 						Fluid: {
 							Amount: 0
 							FluidName: "biofuel"
 						}
-						Selected: "POOR"
-						Special: 0
+						Selected: "ARTIFACT"
+						Special: 0b
 					}
 				}
 				type: "item"
@@ -230,7 +230,7 @@
 				""
 				"Sneak Right-Click to set its options. "
 				""
-				"Right-Click on a tank of Biofuel to fill it. "
+				"Right-Click on a tank of Abyssaline to fill it. "
 			]
 			hide_dependency_lines: true
 			id: "63A495A27778E61B"
@@ -243,21 +243,21 @@
 				type: "command"
 			}]
 			tasks: [{
-				id: "4A927A428D655966"
+				id: "7BF1222DDFC15890"
 				item: {
 					Count: 1b
 					id: "industrialforegoing:infinity_trident"
 					tag: {
 						CanCharge: 1b
 						Channeling: 0b
-						Energy: 0L
+						Energy: 9223372036854775807L
 						Fluid: {
 							Amount: 0
 							FluidName: "biofuel"
 						}
 						Loyalty: 0
 						Riptide: 0
-						Selected: "POOR"
+						Selected: "ARTIFACT"
 						Special: 0b
 					}
 				}
@@ -269,11 +269,11 @@
 		{
 			dependencies: ["3A4F484FD23B29BA"]
 			description: [
-				"A heavy melee weapon that smashes anything in the area. It comes with a built in Beheading enchantment that may be toggled on and off. "
+				"The perfect tool for clearing vast tracts of land of any form of tree. This saw operates unlike most tools in that it works its way down from the top of the tree."
 				""
 				"Sneak Right-Click to set its options. "
 				""
-				"Right-Click on a tank of Biofuel to fill it. "
+				"Right-Click on a tank of Abyssaline to fill it."
 			]
 			hide_dependency_lines: true
 			id: "255410094C4D7875"
@@ -287,19 +287,19 @@
 			}]
 			subtitle: "I'm Still Worthy!"
 			tasks: [{
-				id: "5A75E1A302F15DE1"
+				id: "4B57CA7C3F20BDE7"
 				item: {
 					Count: 1b
 					id: "industrialforegoing:infinity_hammer"
 					tag: {
 						Beheading: 0
 						CanCharge: 1b
-						Energy: 0L
+						Energy: 9223372036854775807L
 						Fluid: {
 							Amount: 0
 							FluidName: "biofuel"
 						}
-						Selected: "POOR"
+						Selected: "ARTIFACT"
 						Special: 0b
 					}
 				}
@@ -609,6 +609,102 @@
 			title: "Laser Drilling"
 			x: 7.0d
 			y: -6.0d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"The ultimate weapon, capable of destroying anything and anyone in a vast area. "
+				""
+				"You’ve been warned. "
+				""
+				"Sneak Right-Click to set its options. "
+				""
+				"Right-Click on a tank of Abyssaline to fill it."
+				""
+				"================================="
+				""
+				"To detonate: "
+				""
+				"  1. Place it somewhere far from "
+				"     anything important."
+				""
+				"  2. Right-Click it to arm it. The casing "
+				"     will close. "
+				""
+				"  3. Light it with a Flint and Steel."
+				""
+				"  4. Run."
+			]
+			hide_dependency_lines: true
+			id: "18BB0AEB0616ED46"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "770DD847637FC248"
+				player_command: false
+				title: "Epic Industrial Foregoing Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0B8F6AF714283187"
+				item: {
+					Count: 1b
+					id: "industrialforegoing:infinity_nuke"
+					tag: {
+						CanCharge: 1b
+						Energy: 9223372036854775807L
+						Fluid: {
+							Amount: 0
+							FluidName: "biofuel"
+						}
+						Selected: "ARTIFACT"
+						Special: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"The perfect tool for clearing vast tracts of land of any form of tree. This saw operates unlike most tools in that it breaks blocks from the top of the tree down towards wherever it is being used. It clears wood and leaves in an area centered on where it is used, whether those trees are connected to the one being sawed or not."
+				""
+				"Sneak Right-Click to set its options. "
+				""
+				"Right-Click on a tank of Abyssaline to fill it."
+			]
+			hide_dependency_lines: true
+			id: "6D2D4406B69A437B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "5C632F4FB5098CA3"
+				player_command: false
+				title: "Epic Industrial Foregoing Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "126DC872A6482962"
+				item: {
+					Count: 1b
+					id: "industrialforegoing:infinity_saw"
+					tag: {
+						CanCharge: 1b
+						Energy: 9223372036854775807L
+						Fluid: {
+							Amount: 0
+							FluidName: "biofuel"
+						}
+						Selected: "ARTIFACT"
+						Special: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
 		}
 	]
 	title: "Industrial Foregoing"

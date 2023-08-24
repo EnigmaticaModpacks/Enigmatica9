@@ -1109,12 +1109,6 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					entity: "twilightforest:death_tome"
-					id: "0DBE4EB438DD3212"
-					type: "kill"
-					value: 5L
-				}
-				{
 					id: "3D0287DCD0BE94E2"
 					item: {
 						Count: 1b
@@ -1125,6 +1119,12 @@
 					}
 					optional_task: true
 					type: "item"
+				}
+				{
+					advancement: "occultism:occultism/undefined"
+					criterion: ""
+					id: "1397737665563059"
+					type: "advancement"
 				}
 			]
 			title: "Summon Death Tome"
