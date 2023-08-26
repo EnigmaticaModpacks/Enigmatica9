@@ -302,6 +302,71 @@ ServerEvents.highPriorityData((event) => {
                 }
             ],
             tags: ['miniboss/skeleton_sword']
+        },
+        {
+            name: 'skeleton_tempest_caller',
+            weight: 100,
+            quality: 2.5,
+            mainhands: [
+                {
+                    stack: { item: 'minecraft:bow', nbt: default_nbt },
+                    weight: 100,
+                    drop_chance: 0.085
+                }
+            ],
+            offhands: [
+                {
+                    stack: { item: 'minecraft:tipped_arrow', nbt: tipped_arrow_nbt.tempest, count: 5 },
+                    weight: 100,
+                    drop_chance: 1.0
+                }
+            ],
+            helmets: [
+                {
+                    stack: {
+                        item: 'minecraft:leather_helmet',
+                        nbt: leather_colors.tempest_blue
+                    },
+                    weight: 100,
+                    drop_chance: 0.085
+                }
+            ],
+            chestplates: [
+                {
+                    stack: {
+                        item: 'minecraft:leather_chestplate',
+                        nbt: Object.assign(
+                            reactive.orbit_lightning,
+                            enchant_glint.blank,
+                            enchantments.reactive_3,
+                            leather_colors.tempest_blue
+                        )
+                    },
+                    weight: 100,
+                    drop_chance: 0.0
+                }
+            ],
+            leggings: [
+                {
+                    stack: {
+                        item: 'minecraft:leather_leggings',
+                        nbt: leather_colors.tempest_blue
+                    },
+                    weight: 100,
+                    drop_chance: 0.085
+                }
+            ],
+            boots: [
+                {
+                    stack: {
+                        item: 'minecraft:leather_boots',
+                        nbt: leather_colors.tempest_blue
+                    },
+                    weight: 100,
+                    drop_chance: 0.085
+                }
+            ],
+            tags: ['miniboss/skeleton_tempest_caller']
         }
     ];
 

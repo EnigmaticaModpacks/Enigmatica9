@@ -24,6 +24,7 @@
 -   Spirit Fire now forms when Demon's Dream is burned by any fire, allowing it to be made with things like Ars Nouveau Ignite. [\#668](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/668) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Kelp and Seaweed may be purchased from the market.[\#668](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/668) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Sushi Go Crafting cooking devices are now accessible pre iron.[\#668](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/668) ([MuteTiefling](https://github.com/MuteTiefling))
+-   A new skeleton, Skeletal Tempest Caller has a chance to spawn.[\#668](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/668) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
