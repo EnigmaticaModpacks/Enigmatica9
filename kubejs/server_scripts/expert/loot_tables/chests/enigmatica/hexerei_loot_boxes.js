@@ -5,6 +5,17 @@ ServerEvents.genericLootTables((event) => {
     event.addGeneric('enigmatica:loot_boxes/hexerei/rare', (table) => {
         table.addPool((pool) => {
             pool.rolls = 2.0;
+
+            pool.addItem(Item.of('hexerei:mindful_trance_blend'), 3, [2, 4]);
+
+            pool.addItem(Item.of('hexerei:dried_sage'), 3, [2, 4]);
+            pool.addItem(Item.of('hexerei:dried_belladonna_flowers'), 3, [2, 4]);
+            pool.addItem(Item.of('hexerei:dried_mandrake_flowers'), 3, [2, 4]);
+            pool.addItem(Item.of('hexerei:dried_mugwort_flowers'), 3, [2, 4]);
+            pool.addItem(Item.of('hexerei:dried_mugwort_leaves'), 3, [2, 4]);
+            pool.addItem(Item.of('hexerei:dried_yellow_dock_flowers'), 3, [2, 4]);
+            pool.addItem(Item.of('hexerei:dried_yellow_dock_leaves'), 3, [2, 4]);
+
             pool.addItem(
                 Item.of(
                     'hexerei:candle',

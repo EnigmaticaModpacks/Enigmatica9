@@ -20,6 +20,7 @@
 -   Cave Trolls have been buffed with regeneration and knockback effects. [\#661](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/661) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Minotaurs and Minoshrooms can now snare you, making them very dangerous in packs. [\#661](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/661) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Death Tome quest now has an associated advancement to assist in triggering it from the ritual. [\#661](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/661) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Hexerei loot now has a bit more variety to it. [\#661](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/661) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
