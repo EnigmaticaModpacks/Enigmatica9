@@ -22,6 +22,7 @@
 -   [Expert] Death Tome quest now has an associated advancement to assist in triggering it from the ritual. [\#661](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/661) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Hexerei loot now has a bit more variety to it. [\#668](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/668) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Spirit Fire now forms when Demon's Dream is burned by any fire, allowing it to be made with things like Ars Nouveau Ignite. [\#668](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/668) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Kelp and Seaweed may be purchased from the market.[\#668](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/668) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 

@@ -897,7 +897,7 @@
 			description: [
 				"Luckily, despite decrepit the state of the spell book, the Crush glyphs appear whole and in a usable state. Many others are going to need repair, but this will serve for now."
 				""
-				"Though many glyphs may be found and used to repair the spell book, the Scribe’s Table may also be used to craft any glyph.  "
+				"Though many glyphs may be found and used to repair the spell book, the Scribe’s Table may also be used to craft any glyph. Finding proper spell ink, however, may prove more difficult as it must be specially prepared using a process that can take years."
 			]
 			id: "7507572BD048B6C9"
 			rewards: [{
