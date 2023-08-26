@@ -4,5 +4,5 @@
 	#Sorting module
 	sortingmodule = true
 	#Wheel move module
-	wheelmovemodule = true
+	wheelmovemodule = false
 
