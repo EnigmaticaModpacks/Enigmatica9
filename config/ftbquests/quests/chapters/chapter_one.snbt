@@ -893,7 +893,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["370C40BCC3A6A055"]
+			dependencies: ["28A304E0F1600640"]
 			description: [
 				"Luckily, despite decrepit the state of the spell book, the Crush glyphs appear whole and in a usable state. Many others are going to need repair, but this will serve for now."
 				""
