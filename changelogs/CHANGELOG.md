@@ -4,6 +4,7 @@
 
 ### 🌟 Improvements
 
+-   Backups: Changed default backup interval to be 1 hour, up from 30 minutes. This change only affects new worlds.
 -   Framed drawers now use Framed Blocks instead of iron nuggets. [\#626](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/626) ([MuteTiefling](https://github.com/MuteTiefling))
 -   More starbuncle equipment has been flagged with descriptions to aid in locating it in EMI. [\#634](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/634) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Starbuckets are now available significantly earlier. [\#634](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/634) ([MuteTiefling](https://github.com/MuteTiefling))

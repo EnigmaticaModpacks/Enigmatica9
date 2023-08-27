@@ -302,7 +302,10 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:machines/pulverizer/pulverizer_apatite' },
         { id: 'thermal:machines/pulverizer/pulverizer_cinnabar' },
         { id: 'thermal:machines/pulverizer/pulverizer_niter' },
-        { id: 'thermal:machines/pulverizer/pulverizer_sulfur' }
+        { id: 'thermal:machines/pulverizer/pulverizer_sulfur' },
+
+        // Fix for copper ingots not being possible to obtain from Compacting Drawers (https://github.com/EnigmaticaModpacks/Enigmatica9/issues/537)
+        { id: 'immersiveengineering:crafting/nugget_copper_to_copper_ingot' }
     ];
 
     colors.forEach((color) => {
