@@ -893,11 +893,11 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["370C40BCC3A6A055"]
+			dependencies: ["28A304E0F1600640"]
 			description: [
-				"Luckily, despite decrepit the state of the spell book, the Crush glyphs appear whole and in a usable state. Many others are going to need repair, but this will serve for now."
+				"Though many glyphs may be found and used to repair the spell book, the Scribe’s Table may also be used to craft any glyph. "
 				""
-				"Though many glyphs may be found and used to repair the spell book, the Scribe’s Table may also be used to craft any glyph.  "
+				"Finding proper spell ink, however, may prove more difficult as it must be specially prepared using a process that can take years."
 			]
 			id: "7507572BD048B6C9"
 			rewards: [{
@@ -1084,11 +1084,11 @@
 		{
 			dependencies: ["370C40BCC3A6A055"]
 			description: [
-				"Once repositories of ancient spell knowledge, these tomes have been animated into some twisted semblance of life. Some speculate that this enchantment was developed to protect the knowledge stored within the books, but it may just as well have been done to vex the librarians who housed them. "
+				"Luckily, despite decrepit the state of the spell book, the Crush glyphs appear whole and in a usable state. Many others are going to need repair, but this will serve for now."
 				""
-				"Despite their dangerous nature, it is still possible to extract useful glyphs from them. "
+				"Some speculate that the Death Tome enchantment was developed to protect the knowledge stored within ancient spell tomes, but it may just as well have been done to vex the librarians who housed them. Either way, it is still possible to extract useful glyphs from them, despite their dangerous nature. "
 				""
-				"Perform this ritual to summon more of these books. They’ll be an excellent way to supplement the missing glyphs in this newfound spell book."
+				"Perform this ritual to summon a murder of Death Tomes. They’ll be an excellent way to supplement the missing glyphs in this newfound spell book."
 			]
 			icon: {
 				Count: 1b

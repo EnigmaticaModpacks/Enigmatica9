@@ -29,7 +29,8 @@ const leather_colors = {
     void_purple: Object.assign({ display: { color: 2624321 } }, default_nbt),
     sapper_red: Object.assign({ display: { color: 10826026 } }, default_nbt),
     sapper_brown: Object.assign({ display: { color: 6968645 } }, default_nbt),
-    sapper_green: Object.assign({ display: { color: 5465909 } }, default_nbt)
+    sapper_green: Object.assign({ display: { color: 5465909 } }, default_nbt),
+    tempest_blue: Object.assign({ display: { color: 7588060 } }, default_nbt)
 };
 
 const enchantments = {};
@@ -433,7 +434,22 @@ const tipped_arrow_nbt = {
     harming_strong: { Potion: 'minecraft:strong_harming' },
     wither: { Potion: 'apotheosis:wither' },
     wither_long: { Potion: 'apotheosis:long_wither' },
-    wither_strong: { Potion: 'apotheosis:strong_wither' }
+    wither_strong: { Potion: 'apotheosis:strong_wither' },
+    tempest: {
+        CustomPotionEffects: [
+            {
+                Ambient: 0,
+                Amplifier: 0,
+                CurativeItems: [{ Count: 1, id: 'minecraft:milk_bucket' }],
+                Duration: 400,
+                Id: 101,
+                ShowIcon: 1,
+                ShowParticles: 1,
+                'forge:id': 'ars_elemental:static_charged'
+            }
+        ],
+        Potion: 'ars_nouveau:freezing_potion_strong'
+    }
 };
 
 const reactive = {

@@ -1,0 +1,5 @@
+{
+    "forge.nameTagDistance.desc": "How far away entity name tags will be displayed.",
+    "forge.stepHeight.desc": "How many blocks may be stepped up without jumping.",
+    "forge.swimSpeed.desc": "Movement speed multiplier while swimming."
+}

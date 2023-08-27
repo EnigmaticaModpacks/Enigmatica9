@@ -1,4 +1,9 @@
 {
 	"item.minecraft.dragon_breath": "Dragon's Breath",
-	"item.minecraft.shears": "Shears"
+	"item.minecraft.shears": "Shears",
+	"effect.minecraft.wither.desc": "Causes Wither damage over time.",
+	"effect.minecraft.absorption.desc": "Grants temporary hit points.",
+	"effect.minecraft.resistance.desc": "Reduces incoming damage.",
+	"generic.attack_range.desc": "How far away your attacks can hit.",
+	"generic.reachDistance.desc": "How far away you can interact with blocks."
 }

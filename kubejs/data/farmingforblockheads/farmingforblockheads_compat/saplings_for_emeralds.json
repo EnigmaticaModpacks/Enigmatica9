@@ -7,6 +7,7 @@
         "defaultCategory": "farmingforblockheads:saplings"
     },
     "customEntries": [
+        { "output": "minecraft:kelp" },
         { "output": "twilightforest:hollow_oak_sapling" },
         { "output": "twilightforest:darkwood_sapling" },
         { "output": "twilightforest:mangrove_sapling" },
@@ -62,6 +63,7 @@
         { "output": "hexerei:willow_sapling" },
         { "output": "hexerei:mahogany_sapling" },
         { "output": "hexerei:witch_hazel_sapling" },
-        { "output": "sushigocrafting:avocado_sapling" }
+        { "output": "sushigocrafting:avocado_sapling" },
+        { "output": "sushigocrafting:seaweed" }
     ]
 }

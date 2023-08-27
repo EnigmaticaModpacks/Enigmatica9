@@ -28,7 +28,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('create:pulse_repeater', 1, 1);
             pool.addItem('create:redstone_contact', 1, 1);
             pool.addItem('create:pulse_extender', 1, 1);
-            pool.addItem('create:redstone_link', 1, 1);
+            pool.addItem('create:redstone_link', 1, 2);
             pool.addItem('create:brown_toolbox', 1, 1);
             pool.addItem('create:crafting_blueprint', 1, 1);
         });

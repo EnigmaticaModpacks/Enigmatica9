@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    const id_prefix = 'enigmatica:base/lychee/block_interacting/';
+    const id_prefix = 'enigmatica:base/lychee/dripstone_dripping/';
 
     const recipes = [
         {
