@@ -29,6 +29,24 @@ ServerEvents.highPriorityData((event) => {
             }
         },
         {
+            id: 'skeleton_tempest_caller',
+            name: 'Skeletal Tempest Caller',
+            chance: 1.0,
+            weight: 5,
+            quality: 0,
+            entities: ['minecraft:skeleton'],
+            valid_gear_sets: ['#miniboss/skeleton_tempest_caller'],
+            dimensions: [],
+            affixed: true,
+            nbt: {},
+            stats: {
+                enchant_chance: 0.5,
+                enchantment_levels: [15, 15, 15, 15],
+                effects: [{ effect: 'minecraft:speed', amplifier: 1, chance: 1.0 }],
+                attribute_modifiers: []
+            }
+        },
+        {
             id: 'skeleton_bow',
             chance: 1.0,
             weight: 40,

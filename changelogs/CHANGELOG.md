@@ -4,6 +4,7 @@
 
 ### 🌟 Improvements
 
+-   Backups: Changed default backup interval to be 1 hour, up from 30 minutes. This change only affects new worlds.
 -   Framed drawers now use Framed Blocks instead of iron nuggets. [\#626](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/626) ([MuteTiefling](https://github.com/MuteTiefling))
 -   More starbuncle equipment has been flagged with descriptions to aid in locating it in EMI. [\#634](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/634) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Starbuckets are now available significantly earlier. [\#634](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/634) ([MuteTiefling](https://github.com/MuteTiefling))
@@ -20,6 +21,11 @@
 -   Cave Trolls have been buffed with regeneration and knockback effects. [\#661](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/661) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Minotaurs and Minoshrooms can now snare you, making them very dangerous in packs. [\#661](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/661) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Death Tome quest now has an associated advancement to assist in triggering it from the ritual. [\#661](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/661) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Hexerei loot now has a bit more variety to it. [\#668](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/668) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Spirit Fire now forms when Demon's Dream is burned by any fire, allowing it to be made with things like Ars Nouveau Ignite. [\#668](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/668) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Kelp and Seaweed may be purchased from the market.[\#668](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/668) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Sushi Go Crafting cooking devices are now accessible pre iron.[\#668](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/668) ([MuteTiefling](https://github.com/MuteTiefling))
+-   A new skeleton, Skeletal Tempest Caller has a chance to spawn.[\#668](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/668) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
