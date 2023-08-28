@@ -26,6 +26,12 @@
 -   Kelp and Seaweed may be purchased from the market.[\#668](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/668) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Sushi Go Crafting cooking devices are now accessible pre iron.[\#668](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/668) ([MuteTiefling](https://github.com/MuteTiefling))
 -   A new skeleton, Skeletal Tempest Caller has a chance to spawn.[\#668](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/668) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Water Essence may now be used to make Prismarine. [\#673](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/673) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Raw Ironwood may now be quadrupled by Water Essence in a Metallurgic Infuser. [\#673](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/673) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Sculk requirements for endgame are reduced further. [\#673](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/673) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Osmium may now be converted to Armor Shards. [\#673](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/673) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Hex glyph available earlier. [\#673](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/673) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Ars Elemental upgrades now require Spellbound Invar instead of Netherite. [\#673](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/673) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 

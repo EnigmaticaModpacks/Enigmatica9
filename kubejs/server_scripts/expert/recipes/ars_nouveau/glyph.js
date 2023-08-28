@@ -121,6 +121,21 @@ ServerEvents.recipes((event) => {
             count: 1,
             exp: 55,
             id: 'ars_elemental:glyph_phantom_grasp'
+        },
+        {
+            output: 'ars_nouveau:glyph_hex',
+            inputItems: [
+                { item: { item: 'ars_nouveau:abjuration_essence' } },
+                { item: { item: 'hexerei:belladonna_berries' } },
+                { item: { item: 'minecraft:blaze_rod' } },
+                { item: { item: 'minecraft:blaze_rod' } },
+                { item: { item: 'minecraft:blaze_rod' } },
+                { item: { item: 'ars_elemental:anima_essence' } },
+                { item: { item: 'supplementaries:antique_ink' } }
+            ],
+            count: 1,
+            exp: 160,
+            id: 'ars_nouveau:glyph_hex'
         }
     ];
 

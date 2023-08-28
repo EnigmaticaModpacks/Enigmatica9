@@ -7,8 +7,8 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             ingredients: [
-                { fluid: 'kubejs:elysium', amount: 50 },
-                { item: 'minecraft:sculk', count: 9 }
+                { fluid: 'kubejs:elysium', amount: 100 },
+                { item: 'minecraft:sculk', count: 3 }
             ],
             result: [{ item: 'minecraft:echo_shard' }],
             energy: 12000,
