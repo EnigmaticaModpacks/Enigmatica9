@@ -19,6 +19,14 @@ ServerEvents.recipes((event) => {
             lavaConsume: 0,
             waterConsume: 0,
             id: `${id_prefix}sourcestone`
+        },
+        {
+            output: { item: 'occultism:otherstone', count: 1 },
+            lavaNeed: 1000,
+            waterNeed: 1000,
+            lavaConsume: 0,
+            waterConsume: 0,
+            id: `${id_prefix}otherstone`
         }
     ];
 
