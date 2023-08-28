@@ -180,6 +180,7 @@ ServerEvents.recipes((event) => {
         { id: 'immersiveengineering:crafting/redstone_breaker' },
         { id: 'immersiveengineering:crafting/breaker_switch' },
         { id: 'immersiveengineering:crafting/cloche' },
+        { id: 'immersiveengineering:crafting/paper_from_sawdust' },
         { id: 'immersiveengineering:blueprint/electron_tube' },
         { id: 'immersiveengineering:blueprint/component_electronic' },
         { id: 'immersiveengineering:blueprint/light_bulb' },

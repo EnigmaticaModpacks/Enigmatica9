@@ -163,6 +163,12 @@
 	#
 	#Range: 0 ~ 1000000
 	musicDiscTimeLengthFlightOfTheBumblebee = 84
+	# 
+	#-----------------------------------------------------
+	#
+	# Whether Pile of Pollen should spread fire super quickly to burn away huge swathes of pollen.
+	#
+	pileOfPollenHyperFireSpread = false
 
 ["Bee Loot Injection Options"]
 	# 

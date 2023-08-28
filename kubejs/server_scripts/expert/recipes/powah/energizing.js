@@ -23,9 +23,9 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}crystal_spirited`
         },
         {
-            output: '2x powah:crystal_nitro',
+            output: '4x powah:crystal_nitro',
             inputs: ['#forge:pellets/polonium', 'quark:red_rune', '#forge:pellets/polonium'],
-            energy: '12800000',
+            energy: '25600000',
             id: `${id_prefix}crystal_nitro`
         },
         {

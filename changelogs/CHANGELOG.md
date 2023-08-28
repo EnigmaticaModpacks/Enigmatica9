@@ -1,6 +1,6 @@
 ### Enigmatica 9 v1.12.0
 
-### 🎁 New Mods Added
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.12.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.12.0.md)
 
 ### 🌟 Improvements
 
@@ -26,6 +26,12 @@
 -   Kelp and Seaweed may be purchased from the market.[\#668](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/668) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Sushi Go Crafting cooking devices are now accessible pre iron.[\#668](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/668) ([MuteTiefling](https://github.com/MuteTiefling))
 -   A new skeleton, Skeletal Tempest Caller has a chance to spawn.[\#668](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/668) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Water Essence may now be used to make Prismarine. [\#673](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/673) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Raw Ironwood may now be quadrupled by Water Essence in a Metallurgic Infuser. [\#673](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/673) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Sculk requirements for endgame are reduced further. [\#673](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/673) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Osmium may now be converted to Armor Shards. [\#673](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/673) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Hex glyph available earlier. [\#673](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/673) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Ars Elemental upgrades now require Spellbound Invar instead of Netherite. [\#673](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/673) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
@@ -38,6 +44,7 @@
 -   And even more quest typos and clarifications [\#644](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/644) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Remove Tablet of Summon Wilden from all loot tables [\#660](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/660) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fixed some bugged quest loot in the Nature's Aura chapter. [\#661](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/661) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Fixed localization for Withered Souls. [\#673](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/673) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fixed typos in quests [\#632](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/632) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fixed typos in quests [\#639](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/639) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fixed typos in quests [\#652](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/652) ([MuteTiefling](https://github.com/MuteTiefling))
@@ -45,7 +52,7 @@
 
 ---
 
-### Enigmatica 9 v1.12.0
+### Enigmatica 9 v1.11.2
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.11.2.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.11.2.md)
 

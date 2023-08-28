@@ -42,6 +42,30 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}osmium_dirty_dust`
         },
         {
+            output: { item: 'minecraft:prismarine_shard' },
+            itemInput: { ingredient: { item: 'ae2:certus_quartz_crystal' } },
+            chemicalInput: { infuse_type: 'emendatusenigmatica:water_essence', amount: 5 },
+            id: `${id_prefix}prismarine_shard`
+        },
+        {
+            output: { item: 'minecraft:prismarine_crystals' },
+            itemInput: { ingredient: { item: 'ae2:charged_certus_quartz_crystal' } },
+            chemicalInput: { infuse_type: 'emendatusenigmatica:water_essence', amount: 5 },
+            id: `${id_prefix}prismarine_crystals`
+        },
+        {
+            output: { item: 'twilightforest:ironwood_ingot', count: 4 },
+            itemInput: { ingredient: { tag: 'forge:ores/ironwood' } },
+            chemicalInput: { infuse_type: 'emendatusenigmatica:water_essence', amount: 10 },
+            id: `${id_prefix}ironwood_ingot`
+        },
+        {
+            output: { item: 'twilightforest:armor_shard' },
+            itemInput: { ingredient: { tag: 'forge:nuggets/osmium' } },
+            chemicalInput: { infuse_type: 'emendatusenigmatica:earth_essence', amount: 10 },
+            id: `${id_prefix}armor_shard`
+        },
+        {
             output: { item: 'emendatusenigmatica:nickel_dirty_dust', count: 2 },
             itemInput: { ingredient: { tag: 'mekanism:clumps/nickel' } },
             chemicalInput: { infuse_type: 'emendatusenigmatica:earth_essence', amount: 20 },
