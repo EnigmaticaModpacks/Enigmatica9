@@ -1,3 +1,13 @@
+### Enigmatica 9 v1.12.1
+
+### 🌟 Improvements
+
+### 🐛 Fixed Bugs
+
+-   Fixed a bunch of erroring KubeJS tag scripts. [\#674](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/674) ([MuteTiefling](https://github.com/MuteTiefling))
+
+---
+
 ### Enigmatica 9 v1.12.0
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.12.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.12.0.md)

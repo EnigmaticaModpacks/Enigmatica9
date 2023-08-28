@@ -2,8 +2,6 @@ ServerEvents.tags('item', (event) => {
     event
         .get('forge:tools')
         .add([
-            /_paxel/,
-            /_aiot/,
             'immersiveengineering:buzzsaw',
             'immersiveengineering:drill',
             'industrialforegoing:infinity_drill',
@@ -18,8 +16,6 @@ ServerEvents.tags('item', (event) => {
     event
         .get('forge:tools/multi_tools')
         .add([
-            /_paxel/,
-            /_aiot/,
             'immersiveengineering:buzzsaw',
             'immersiveengineering:drill',
             'industrialforegoing:infinity_drill',
@@ -34,8 +30,6 @@ ServerEvents.tags('item', (event) => {
     event
         .get('forge:multi_tools')
         .add([
-            /_paxel/,
-            /_aiot/,
             'immersiveengineering:buzzsaw',
             'immersiveengineering:drill',
             'industrialforegoing:infinity_drill',
