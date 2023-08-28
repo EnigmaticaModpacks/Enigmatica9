@@ -5,6 +5,7 @@
 ### 🐛 Fixed Bugs
 
 -   Fixed a bunch of erroring KubeJS tag scripts. [\#674](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/674) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fixed uncraftable range 3 upgrade for mining gadgets. [\#676](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/676) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
