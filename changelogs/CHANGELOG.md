@@ -38,6 +38,7 @@
 -   And even more quest typos and clarifications [\#644](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/644) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Remove Tablet of Summon Wilden from all loot tables [\#660](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/660) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fixed some bugged quest loot in the Nature's Aura chapter. [\#661](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/661) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Fixed localization for Withered Souls. [\#673](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/673) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fixed typos in quests [\#632](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/632) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fixed typos in quests [\#639](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/639) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fixed typos in quests [\#652](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/652) ([MuteTiefling](https://github.com/MuteTiefling))
