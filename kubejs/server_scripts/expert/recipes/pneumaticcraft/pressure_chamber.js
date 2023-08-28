@@ -382,7 +382,7 @@ ServerEvents.recipes((event) => {
         {
             results: [{ item: 'mininggadgets:upgrade_range_3' }],
             inputs: [
-                { item: 'mininggadgets:upgrade_range_3' },
+                { item: 'mininggadgets:upgrade_range_2' },
                 { item: 'powah:dielectric_paste' },
                 { item: 'ars_nouveau:glyph_accelerate' }
             ],
