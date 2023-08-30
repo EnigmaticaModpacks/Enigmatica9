@@ -5,7 +5,6 @@
     "disableDefaultOre": true,
     "processedTypes": [
       "ore",
-      "storage_block",
       "dust",
       "gear"
     ],

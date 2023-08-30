@@ -23,6 +23,7 @@ ClientEvents.highPriorityAssets((event) => {
             { stack: 'item:immersiveengineering:silo' },
             { stack: 'item:immersiveengineering:squeezer' },
             { stack: 'item:immersiveengineering:tank' },
+            { stack: 'item:occultism:iesnium_ore' },
             { stack: 'item:emendatusenigmatica:bitumen_sandstone_ore' },
             { stack: 'item:minecraft:enchanted_book{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:1s}]}' },
             { stack: 'item:minecraft:enchanted_book{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:2s}]}' },
