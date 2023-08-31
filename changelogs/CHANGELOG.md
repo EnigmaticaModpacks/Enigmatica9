@@ -1,5 +1,9 @@
 ### Enigmatica 9 v1.13.0
 
+### 🌟 Improvements
+
+-   Framed Storage controller recipe is now inline with the regular Storage controller. [\#679](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/679) ([MuteTiefling](https://github.com/MuteTiefling))
+
 ### 🐛 Fixed Bugs
 
 -   Correct Create quest that indicates wool can be used as sails. It cannot. [\#679](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/679) ([MuteTiefling](https://github.com/MuteTiefling))
