@@ -10,6 +10,12 @@ MoreJSEvents.villagerTrades((event) => {
             levels: ['all'],
             vanilla: true,
             modded: true
+        },
+        {
+            professions: ['ars_nouveau:shady_wizard'],
+            levels: [3],
+            vanilla: true,
+            modded: true
         }
     ];
 
