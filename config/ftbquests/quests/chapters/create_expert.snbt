@@ -105,7 +105,7 @@
 		{
 			dependencies: ["2C03271FD5A61ADC"]
 			description: [
-				"Perhaps the first multi part contraption to be made is the Windmill. This is a High SU generator capable of operating at high RPMs. Generating more SU and higher speed is merely a function of adding more Sails or Wool Blocks to the structure."
+				"Perhaps the first multi part contraption to be made is the Windmill. This is a High SU generator capable of operating at high RPMs. Generating more SU and higher speed is merely a function of adding more Sails to the structure."
 				""
 				"Where to begin? Place down the Windmill Bearing. The sticky looking green side is where the rest of the structure will be built. Power will come out the opposite end. Note that they may be built in any orientation."
 				""
