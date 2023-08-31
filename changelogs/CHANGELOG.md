@@ -1,3 +1,11 @@
+### Enigmatica 9 v1.13.0
+
+### 🐛 Fixed Bugs
+
+-   Correct Create quest that indicates wool can be used as sails. It cannot. [\#679](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/679) ([MuteTiefling](https://github.com/MuteTiefling))
+
+---
+
 ### Enigmatica 9 v1.12.1
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.12.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.12.1.md)
