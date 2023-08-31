@@ -857,12 +857,9 @@
 			icon: "functionalstorage:ender_drawer"
 			id: "336CA09DC12AF609"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "4FCB3B4BC7CD56C5"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
+				id: "46F48857D5259A31"
+				item: "functionalstorage:ender_drawer"
+				type: "item"
 			}]
 			subtitle: "Getting your drawers in a knot"
 			tasks: [
@@ -898,19 +895,19 @@
 			rewards: [
 				{
 					id: "655E10649ED99FC8"
-					item: "minecraft:iron_block"
+					item: "minecraft:gold_block"
 					type: "item"
 				}
 				{
 					count: 9
 					id: "4A0BD9AA9E20D8DD"
-					item: "minecraft:iron_ingot"
+					item: "minecraft:gold_ingot"
 					type: "item"
 				}
 				{
 					count: 9
 					id: "67D4277C9FB6FC32"
-					item: "minecraft:iron_nugget"
+					item: "minecraft:gold_nugget"
 					type: "item"
 				}
 			]
