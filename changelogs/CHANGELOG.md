@@ -9,6 +9,7 @@
 -   [Expert] Correct Create quest that indicates wool can be used as sails. It cannot. [\#679](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/679) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Shady Wizards no longer sell Wilden Tablets. [\#679](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/679) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Disabled Quark Hoe Harvesting to fix an issue it causes with Nature's Blessing. [\#679](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/679) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fixed unclear description text on Tallow. [\#679](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/679) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 

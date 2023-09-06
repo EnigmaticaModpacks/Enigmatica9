@@ -204,7 +204,7 @@
 				""
 				"The Ancient Sapling and Elder Sapling may also be obtained through this ritual, with both offering unique benefits."
 				""
-				"The wood of the Ancient Sapling concentrates magical energies into it, making it useful for certain devices. Meanwhile, the Golden Elder Sapling's fruit seems to carry the memories of those who've come before. "
+				"The wood of the Ancient tree concentrates magical energies into it, making it useful for certain devices. Meanwhile, the Resplendent Elder tree's fruit seems to carry the memories of those who've come before. "
 			]
 			id: "66A59B3CD77FB54A"
 			min_width: 300
@@ -2408,7 +2408,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "45865EFBDFC3E239"
-				item: "twilightforest:quest_ram_trophy"
+				item: "byg:therium_crystal_shard"
 				type: "item"
 			}]
 			title: "Questing Ram"
@@ -2522,6 +2522,8 @@
 				"&5Projectile&r > &aInfuse&r > &6Extend Time&r"
 				""
 				"These lingering potions will work exactly as their crafted variety for the purpose of running a Lingering Absorber without the need to craft beyond the base potion. "
+				""
+				"Using Melded Potions will provide a substantial boost as well!"
 			]
 			hide_dependency_lines: true
 			id: "7619B458914F41FF"
