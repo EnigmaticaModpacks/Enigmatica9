@@ -153,10 +153,6 @@ JEIEvents.information((event) => {
             text: ['Grows occasionally on Corundum Blocks when grown underground.']
         },
         {
-            items: ['occultism:tallow'],
-            text: [`The Butcher's Knife has been disabled. Craft tallow instead.`]
-        },
-        {
             items: ['hexerei:animal_fat'],
             text: [`Drops from most large animals.`]
         },
