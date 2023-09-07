@@ -3,6 +3,7 @@
 ### 🌟 Improvements
 
 -   [Expert] Framed Storage controller recipe is now inline with the regular Storage controller. [\#679](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/679) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Quests leading up to the various teleportation quests now grant the required advancement. These are also granted by simply holding the items for the quest, however, this ensures players in teams don't have to pass the item around just to gain the advancement. [\#683](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/683) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 

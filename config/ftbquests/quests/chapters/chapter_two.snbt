@@ -425,6 +425,12 @@
 					title: "The Queen's Guard"
 					type: "command"
 				}
+				{
+					advancement: "restrictedportals:overworld"
+					criterion: ""
+					id: "31B0F8BB850C792B"
+					type: "advancement"
+				}
 			]
 			shape: "hexagon"
 			tasks: [
@@ -552,11 +558,19 @@
 			icon: "minecraft:beehive"
 			id: "2153EBB1D50F0039"
 			min_width: 300
-			rewards: [{
-				id: "6363919C99636DBD"
-				item: "minecraft:ender_pearl"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6363919C99636DBD"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					advancement: "restrictedportals:bumblezone"
+					criterion: ""
+					id: "2E1997D119E6F3A3"
+					type: "advancement"
+				}
+			]
 			shape: "hexagon"
 			tasks: [
 				{

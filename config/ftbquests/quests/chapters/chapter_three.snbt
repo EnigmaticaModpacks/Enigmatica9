@@ -165,20 +165,36 @@
 				""
 				"Undoubtedly, it will help anchor a teleportation ritual to wherever they call home. "
 			]
+			icon: "powah:steel_energized"
 			id: "04B0F0BE6E54D620"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "691C3737512BE3BF"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "0D1ED0C7EDB28A00"
-				item: "powah:steel_energized"
-				type: "item"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "691C3737512BE3BF"
+					player_command: false
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					advancement: "restrictedportals:end"
+					criterion: ""
+					id: "4EEF35180F07D1C8"
+					type: "advancement"
+				}
+			]
+			tasks: [
+				{
+					id: "0D1ED0C7EDB28A00"
+					item: "powah:steel_energized"
+					type: "item"
+				}
+				{
+					id: "2DE3D3ADAD7B8032"
+					item: "rftoolsbase:infused_enderpearl"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: -0.5d
 		}
@@ -633,14 +649,22 @@
 			}
 			id: "4F90F6437D6CF7EC"
 			min_width: 250
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
-				icon: "kubejs:aura_leaf"
-				id: "1D4D0A4842116B56"
-				player_command: false
-				title: "Aura Infusion"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "1D4D0A4842116B56"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+				{
+					advancement: "restrictedportals:nether"
+					criterion: ""
+					id: "258686773ADAF792"
+					type: "advancement"
+				}
+			]
 			shape: "hexagon"
 			tasks: [
 				{
