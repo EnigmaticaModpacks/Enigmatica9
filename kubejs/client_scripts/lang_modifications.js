@@ -256,6 +256,13 @@ const entries = {
                 normal: 'Brass Door',
                 expert: 'Fancy Door'
             }
+        },
+        {
+            key: 'advancement.create.belt',
+            value: {
+                normal: 'Kelp Drive',
+                expert: 'Driven'
+            }
         }
     ],
     createaddition: [
