@@ -11,7 +11,7 @@
 	starbattery_ratio = 500000
 	#Transfer rate of the gas starbuncles
 	#Range: > 1
-	starballoon_ratio = 16000
+	starballoon_ratio = 250
 	#Threshold of the fluid starbuncles, lower this if you need them to check and fill more often.
 	#Range: > 1
 	starbucket_threshold = 250
