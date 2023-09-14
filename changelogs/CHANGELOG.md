@@ -1,3 +1,15 @@
+### Enigmatica 9 v1.14.0
+
+### 🎁 New Mods Added
+
+### 🌟 Improvements
+
+### 🐛 Fixed Bugs
+
+-   Elder Guardians no longer have a chance to drop Heart of the Sea [\#695](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/695) ([MuteTiefling](https://github.com/MuteTiefling))
+
+---
+
 ### Enigmatica 9 v1.13.0
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.13.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.13.0.md)
