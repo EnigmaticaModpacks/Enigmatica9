@@ -263,6 +263,34 @@ const entries = {
                 normal: 'Kelp Drive',
                 expert: 'Driven'
             }
+        },
+        {
+            key: 'advancement.create.brass_casing',
+            value: {
+                normal: 'The Brass Age',
+                expert: 'The Enchanted Age'
+            }
+        },
+        {
+            key: 'advancement.create.brass_casing.desc',
+            value: {
+                normal: 'Apply Brass Ingots to stripped wood, creating a casing for more sophisticated machines',
+                expert: 'Apply Orichalcum Ingots to treated wood, creating a casing for more sophisticated machines'
+            }
+        },
+        {
+            key: 'advancement.create.brass',
+            value: {
+                normal: 'Real Alloys',
+                expert: 'Enchanted Alloys'
+            }
+        },
+        {
+            key: 'advancement.create.brass.desc',
+            value: {
+                normal: 'Create Brass Ingots by alloying Copper and Zinc Ingots in your Blaze-heated Mechanical Mixer',
+                expert: 'Create Orichalcum Ingots'
+            }
         }
     ],
     createaddition: [

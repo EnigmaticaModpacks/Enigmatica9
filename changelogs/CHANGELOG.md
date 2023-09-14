@@ -5,6 +5,7 @@
 ### 🌟 Improvements
 
 -   Starbuncles using balloons will now transfer gas at a lower threshold, allowing them to transfer smaller amounts if necessary. [\#695](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/695) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Fix a few Create advancements to make more sense [\#695](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/695) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
