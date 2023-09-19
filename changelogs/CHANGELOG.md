@@ -7,10 +7,15 @@
 -   Starbuncles using balloons will now transfer gas at a lower threshold, allowing them to transfer smaller amounts if necessary. [\#695](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/695) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Fix a few Create advancements to make more sense [\#695](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/695) ([MuteTiefling](https://github.com/MuteTiefling))
 -   The Queen Bee will no longer ask for Golden Leaves [\#696](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/696) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Infused Ender Pearls now craft 4 at a time [\#703](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/703) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Occultism Wild Afrit now drops more Essence per kill [\#703](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/703) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Reduce the amount of Aetherium required to make Aetheric Brass and Infinity Tools [\#703](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/703) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] The Tree of Life now produces significantly more Aura each day [\#703](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/703) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
 -   Elder Guardians no longer have a chance to drop Heart of the Sea [\#695](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/695) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Fixed some lingering references to Compressed Iron [\#703](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/703) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 

@@ -63,7 +63,7 @@ ServerEvents.recipes((event) => {
                 // Release Aura once per day around noon
                 {
                     type: 'execute',
-                    command: `summon item ~ ~2 ~ {Item:{id:"kubejs:aura_leaf",Count:1b,tag:{aura_amount:40000,aura_max:1000000}}}`,
+                    command: `summon item ~ ~2 ~ {Item:{id:"kubejs:aura_leaf",Count:1b,tag:{aura_amount:128000,aura_max:1000000}}}`,
                     contextual: {
                         type: 'and',
                         contextual: [
@@ -78,7 +78,7 @@ ServerEvents.recipes((event) => {
                 },
                 {
                     type: 'execute',
-                    command: `summon item ~ ~2 ~ {Item:{id:"kubejs:aura_leaf",Count:1b,tag:{aura_amount:80000,aura_max:1500000}}}`,
+                    command: `summon item ~ ~2 ~ {Item:{id:"kubejs:aura_leaf",Count:1b,tag:{aura_amount:256000,aura_max:1500000}}}`,
                     contextual: {
                         type: 'and',
                         contextual: [
@@ -93,7 +93,7 @@ ServerEvents.recipes((event) => {
                 },
                 {
                     type: 'execute',
-                    command: `summon item ~ ~2 ~ {Item:{id:"kubejs:aura_leaf",Count:1b,tag:{aura_amount:120000,aura_max:2000000}}}`,
+                    command: `summon item ~ ~2 ~ {Item:{id:"kubejs:aura_leaf",Count:1b,tag:{aura_amount:512000,aura_max:2000000}}}`,
                     contextual: {
                         type: 'and',
                         contextual: [
@@ -108,7 +108,7 @@ ServerEvents.recipes((event) => {
                 },
                 {
                     type: 'execute',
-                    command: `summon item ~ ~2 ~ {Item:{id:"kubejs:aura_leaf",Count:1b,tag:{aura_amount:500000,aura_max:2500000}}}`,
+                    command: `summon item ~ ~2 ~ {Item:{id:"kubejs:aura_leaf",Count:1b,tag:{aura_amount:2048000,aura_max:4000000}}}`,
                     contextual: {
                         type: 'and',
                         contextual: [

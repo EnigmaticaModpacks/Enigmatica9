@@ -1,8 +1,8 @@
 ServerEvents.genericLootTables((event) => {
     event.addGeneric('occultism:entities/afrit_wild', (table) => {
         table.addPool((pool) => {
-            pool.rolls = 1.0;
-            pool.addItem('occultism:afrit_essence', 100, [1, 1]).addFunction({
+            pool.rolls = [2, 4];
+            pool.addItem('occultism:afrit_essence', 100, [1, 2]).addFunction({
                 function: 'looting_enchant',
                 count: { min: 0, max: 1 }
             });
