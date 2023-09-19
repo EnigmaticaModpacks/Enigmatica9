@@ -14,6 +14,7 @@
 ### 🐛 Fixed Bugs
 
 -   Elder Guardians no longer have a chance to drop Heart of the Sea [\#695](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/695) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Fixed some lingering references to Compressed Iron [\#703](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/703) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
