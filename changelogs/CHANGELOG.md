@@ -10,6 +10,7 @@
 -   [Expert] Infused Ender Pearls now craft 4 at a time [\#703](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/703) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Occultism Wild Afrit now drops more Essence per kill [\#703](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/703) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Reduce the amount of Aetherium required to make Aetheric Brass and Infinity Tools [\#703](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/703) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] The Tree of Life now produces significantly more Aura each day [\#703](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/703) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
