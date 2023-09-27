@@ -23,5 +23,6 @@
 	"item.create.brass_hand": "Brass Hand",
 	"block.create.andesite_bars": "Andesite Bars",
 	"block.create.brass_block": "Block of Brass",
-	"block.create.andesite_scaffolding": "Andesite Scaffolding"
+	"block.create.andesite_scaffolding": "Andesite Scaffolding",
+	"advancement.create.belt": "Kelp Drive"
 }
