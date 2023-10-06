@@ -1,3 +1,15 @@
+### Enigmatica 9 v1.15.0
+
+### 🎁 New Mods Added
+
+### 🌟 Improvements
+
+### 🐛 Fixed Bugs
+
+-   Soul Gems may no longer contain Ars Familiars [\#711](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/711) ([MuteTiefling](https://github.com/MuteTiefling))
+
+---
+
 ### Enigmatica 9 v1.14.0
 
 ### 🎁 New Mods Added
