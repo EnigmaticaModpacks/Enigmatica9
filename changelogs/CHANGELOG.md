@@ -7,6 +7,7 @@
 ### 🐛 Fixed Bugs
 
 -   Soul Gems may no longer contain Ars Familiars [\#711](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/711) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Add missing recipe for Portable Energy Interface [\#714](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/714) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
