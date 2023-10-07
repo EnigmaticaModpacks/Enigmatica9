@@ -1,16 +1,3 @@
-### Enigmatica 9 v1.15.0
-
-### 🎁 New Mods Added
-
-### 🌟 Improvements
-
-### 🐛 Fixed Bugs
-
--   Soul Gems may no longer contain Ars Familiars [\#711](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/711) ([MuteTiefling](https://github.com/MuteTiefling))
--   Add missing recipe for Portable Energy Interface [\#714](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/714) ([MuteTiefling](https://github.com/MuteTiefling))
-
----
-
 ### Enigmatica 9 v1.14.0
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.14.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.14.0.md)
@@ -33,6 +20,8 @@
 
 -   Elder Guardians no longer have a chance to drop Heart of the Sea [\#695](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/695) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Fixed some lingering references to Compressed Iron [\#703](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/703) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Soul Gems may no longer contain Ars Familiars [\#711](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/711) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Add missing recipe for Portable Energy Interface [\#714](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/714) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ---
 
