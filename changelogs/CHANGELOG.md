@@ -39,6 +39,9 @@
 -   [Expert] Fixed some lingering references to Compressed Iron [\#703](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/703) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Soul Gems may no longer contain Ars Familiars [\#711](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/711) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Add missing recipe for Portable Energy Interface [\#714](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/714) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Issues in chat from emojiful [\#625](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/625)
+-   Bugged enigmatic grave crashes the game [\#706](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/706)
+-   visual bug with EMI mod #648 [\#648](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/648)
 
 ---
 
