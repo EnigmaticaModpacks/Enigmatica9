@@ -26,4 +26,7 @@
 	#Set how much mana is depleted every time a damage is mitigated by the Mana Bubble.
 	#Range: > 0
 	absorption_cost = 350
+	#Prevents the given glyph from being used in the same spell as the given glyph
+	#Example entry: "glyph_burst"
+	invalid_combos = []
 

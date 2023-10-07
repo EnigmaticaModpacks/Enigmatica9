@@ -26,4 +26,7 @@
 	#Set the max hp limit for Charm, mobs with more max hp will be immune.
 	#Range: > 0
 	charm_hp_limit = 150
+	#Prevents the given glyph from being used in the same spell as the given glyph
+	#Example entry: "glyph_burst"
+	invalid_combos = []
 
