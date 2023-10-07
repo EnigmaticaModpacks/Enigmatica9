@@ -22,4 +22,10 @@
 	"Refined Storage" = true
 	#If TRUE, mod integration support for Tinker's Construct is enabled, if the mod is loaded.
 	"Tinker's Construct" = true
+	#If TRUE, mod integration support for Mekanism is enabled, if the mod is loaded.
+	Mekanism = true
+	#If TRUE, mod integration support for Mystical Agriculture is enabled, if the mod is loaded.
+	"Mystical Agriculture" = true
+	#If TRUE, mod integration support for Redstone Arsenal is enabled, if the mod is loaded.
+	"Redstone Arsenal" = true
 
