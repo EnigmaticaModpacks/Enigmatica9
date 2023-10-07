@@ -4,10 +4,17 @@
 
 ### 🎁 New Mods Added
 
+-   [Advanced Backups](https://www.curseforge.com/minecraft/mc-mods/advanced-backups) (by [HeatherWhite](https://www.curseforge.com/members/HeatherWhite/projects))
+-   [AECapFix](https://www.curseforge.com/minecraft/mc-mods/aecapfix) (by [ninety](https://www.curseforge.com/members/ninety/projects))
+
 ### Removed Mods
+
+-   [Emojiful](https://www.curseforge.com/minecraft/mc-mods/emojiful) (by [Buuz135](https://www.curseforge.com/members/Buuz135/projects))
+-   [FTB Backups 2](https://www.curseforge.com/minecraft/mc-mods/ftb-backups-2) (by [FTB](https://www.curseforge.com/members/FTB/projects))
 
 ### 🌟 Improvements
 
+-   Replaced FTB Backups with Advanced Backups, which uses less disk space for backups.
 -   Starbuncles using balloons will now transfer gas at a lower threshold, allowing them to transfer smaller amounts if necessary. [\#695](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/695) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Fix a few Create advancements to make more sense [\#695](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/695) ([MuteTiefling](https://github.com/MuteTiefling))
 -   The Queen Bee will no longer ask for Golden Leaves [\#696](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/696) ([MuteTiefling](https://github.com/MuteTiefling))
