@@ -35,7 +35,7 @@
 	#If the Storage Lectern should show the recipe book icon
 	showRecipeBook = true
 	#Inform the player of Dynamic lights once.
-	informLights = true
+	informLights = false
 
 #Misc
 [misc]
