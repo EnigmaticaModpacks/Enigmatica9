@@ -342,14 +342,14 @@ const entries = {
             key: 'gui.tooltip.block.pneumaticcraft.heat_pipe',
             value: {
                 normal: 'An insulated core of compressed iron which can transfer heat without losing any to adjacent air or fluid blocks. A more compact alternative to Compressed Iron Blocks. This block can be camouflaged with the Camouflage Applicator tool.',
-                expert: 'An insulated core of compressed iron which can transfer heat without losing any to adjacent air or fluid blocks. A more compact alternative to Spellbound Invar Blocks. This block can be camouflaged with the Camouflage Applicator tool.'
+                expert: 'An insulated core of constantan and fire essence which can transfer heat without losing any to adjacent air or fluid blocks. A more compact alternative to Spellbound Invar Blocks. This block can be camouflaged with the Camouflage Applicator tool.'
             }
         },
         {
             key: 'gui.tooltip.block.pneumaticcraft.pressure_chamber_valve',
             value: {
                 normal: 'This multi-block structure can be used as air storage. Its primary usage, however, is to compress various materials into other materials. Like Iron into Compressed Iron. Or Coal into Diamonds.',
-                expert: 'This multi-block structure can be used as air storage. Its primary usage, however, is to compress various materials into other materials. Like Invar into Spellbound Invar. Or Coal into Diamonds.'
+                expert: 'This multi-block structure can be used as air storage. Its primary usage, however, is to compress various materials into other materials. Like Coal into Diamonds.'
             }
         },
         {
@@ -560,6 +560,20 @@ const entries = {
             value: {
                 normal: 'Jumping Upgrade: Tier IV',
                 expert: 'Jumping Upgrade: Tier III'
+            }
+        },
+        {
+            key: 'pneumaticcraft.advancement.root',
+            value: {
+                normal: 'The First Explosion (of many?)',
+                expert: 'The First Implosion (of many?)'
+            }
+        },
+        {
+            key: 'pneumaticcraft.advancement.root.desc',
+            value: {
+                normal: 'Throw Iron on the ground and create an explosion close to it.',
+                expert: 'Crush Invar with magic!'
             }
         }
     ],

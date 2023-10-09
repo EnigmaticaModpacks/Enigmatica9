@@ -24,4 +24,7 @@
 	#Damage per block in the air
 	#Range: 0.0 ~ 1.7976931348623157E308
 	airDamage = 0.75
+	#Prevents the given glyph from being used in the same spell as the given glyph
+	#Example entry: "glyph_burst"
+	invalid_combos = []
 

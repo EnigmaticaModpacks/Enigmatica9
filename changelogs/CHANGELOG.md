@@ -1,16 +1,47 @@
-### Enigmatica 9 v1.14.0
+### Enigmatica 9 v1.15.0
 
 ### 🎁 New Mods Added
 
 ### 🌟 Improvements
 
+### 🐛 Fixed Bugs
+
+---
+
+### Enigmatica 9 v1.14.0
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.14.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.14.0.md)
+
+### 🎁 New Mods Added
+
+-   [Advanced Backups](https://www.curseforge.com/minecraft/mc-mods/advanced-backups) (by [HeatherWhite](https://www.curseforge.com/members/HeatherWhite/projects))
+-   [AECapFix](https://www.curseforge.com/minecraft/mc-mods/aecapfix) (by [ninety](https://www.curseforge.com/members/ninety/projects))
+
+### Removed Mods
+
+-   [Emojiful](https://www.curseforge.com/minecraft/mc-mods/emojiful) (by [Buuz135](https://www.curseforge.com/members/Buuz135/projects))
+-   [FTB Backups 2](https://www.curseforge.com/minecraft/mc-mods/ftb-backups-2) (by [FTB](https://www.curseforge.com/members/FTB/projects))
+
+### 🌟 Improvements
+
+-   Replaced FTB Backups with Advanced Backups, which uses less disk space for backups.
 -   Starbuncles using balloons will now transfer gas at a lower threshold, allowing them to transfer smaller amounts if necessary. [\#695](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/695) ([MuteTiefling](https://github.com/MuteTiefling))
 -   [Expert] Fix a few Create advancements to make more sense [\#695](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/695) ([MuteTiefling](https://github.com/MuteTiefling))
 -   The Queen Bee will no longer ask for Golden Leaves [\#696](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/696) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Infused Ender Pearls now craft 4 at a time [\#703](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/703) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Occultism Wild Afrit now drops more Essence per kill [\#703](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/703) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Reduce the amount of Aetherium required to make Aetheric Brass and Infinity Tools [\#703](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/703) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] The Tree of Life now produces significantly more Aura each day [\#703](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/703) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### 🐛 Fixed Bugs
 
 -   Elder Guardians no longer have a chance to drop Heart of the Sea [\#695](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/695) ([MuteTiefling](https://github.com/MuteTiefling))
+-   [Expert] Fixed some lingering references to Compressed Iron [\#703](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/703) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Soul Gems may no longer contain Ars Familiars [\#711](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/711) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Add missing recipe for Portable Energy Interface [\#714](https://github.com/EnigmaticaModpacks/Enigmatica9/pull/714) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Issues in chat from emojiful [\#625](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/625)
+-   Bugged enigmatic grave crashes the game [\#706](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/706)
+-   visual bug with EMI mod #648 [\#648](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/648)
 
 ---
 

@@ -23,4 +23,7 @@
 	#Base duration in ticks.
 	#Range: > 0
 	base_duration = 20
+	#Prevents the given glyph from being used in the same spell as the given glyph
+	#Example entry: "glyph_burst"
+	invalid_combos = []
 
