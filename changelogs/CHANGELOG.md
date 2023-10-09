@@ -1,10 +1,10 @@
-### Enigmatica 9 v1.15.0
+### Enigmatica 9 v1.14.1
 
-### 🎁 New Mods Added
-
-### 🌟 Improvements
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.14.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.14.1.md)
 
 ### 🐛 Fixed Bugs
+
+-   Fixed players timing out when joining a server [\#716](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/716)
 
 ---
 
