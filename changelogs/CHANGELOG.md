@@ -2,6 +2,10 @@
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.14.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.14.1.md)
 
+### 🎁 New Mods Added
+
+-   [Emojiful](https://www.curseforge.com/minecraft/mc-mods/emojiful) (by [Buuz135](https://www.curseforge.com/members/Buuz135/projects))
+
 ### 🐛 Fixed Bugs
 
 -   Fixed players timing out when joining a server [\#716](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/716)
