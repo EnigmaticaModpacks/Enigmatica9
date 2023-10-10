@@ -1,3 +1,17 @@
+### Enigmatica 9 v1.14.2
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.14.2.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.14.2.md)
+
+### Removed Mods
+
+-   [AECapFix](https://www.curseforge.com/minecraft/mc-mods/aecapfix) (by [ninety](https://www.curseforge.com/members/ninety/projects))
+
+### 🐛 Fixed Bugs
+
+-   Crash on world join [\#718](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/718)
+
+---
+
 ### Enigmatica 9 v1.14.1
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.14.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.14.1.md)
