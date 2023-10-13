@@ -1,3 +1,11 @@
+### Enigmatica 9 v1.15.0
+
+### 🐛 Fixed Bugs
+
+-   Fix broken Necrotic Focus recipe [\#721](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/721)
+
+---
+
 ### Enigmatica 9 v1.14.2
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.14.2.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.14.2.md)
