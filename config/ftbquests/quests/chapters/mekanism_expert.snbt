@@ -47,7 +47,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "03D6AC51756CA1AD"
-				player_command: false
 				title: "Rare Mekanism Loot Box"
 				type: "command"
 			}]
@@ -103,7 +102,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "131BF3970989B404"
-				player_command: false
 				title: "Rare Mekanism Loot Box"
 				type: "command"
 			}]
@@ -153,7 +151,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "1958B307B1019C34"
-				player_command: false
 				title: "Rare Mekanism Loot Box"
 				type: "command"
 			}]
@@ -185,7 +182,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
 				icon: "kubejs:legendary_lootbox"
 				id: "2A335028425C54BC"
-				player_command: false
 				title: "Legendary Mekanism Loot Box"
 				type: "command"
 			}]
@@ -232,7 +228,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
 				icon: "kubejs:legendary_lootbox"
 				id: "5A38C9C7570957F9"
-				player_command: false
 				title: "Legendary Mekanism Loot Box"
 				type: "command"
 			}]
@@ -261,7 +256,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "469F014669D8372A"
-				player_command: false
 				title: "Rare Mekanism Loot Box"
 				type: "command"
 			}]
@@ -290,7 +284,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "5D6190F7A86AA552"
-				player_command: false
 				title: "Rare Mekanism Loot Box"
 				type: "command"
 			}]
@@ -340,7 +333,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "418966840E6DECD6"
-				player_command: false
 				title: "Rare Mekanism Loot Box"
 				type: "command"
 			}]
@@ -394,7 +386,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "4E6A4987E188A34D"
-				player_command: false
 				title: "Rare Mekanism Loot Box"
 				type: "command"
 			}]
@@ -429,7 +420,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "3F9BD229E827C77F"
-					player_command: false
 					title: "Epic Mekanism Loot Box"
 					type: "command"
 				}
@@ -521,7 +511,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
 					icon: "kubejs:legendary_lootbox"
 					id: "3CB100DC1C534B42"
-					player_command: false
 					title: "Legendary Mekanism Loot Box"
 					type: "command"
 				}
@@ -529,7 +518,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
 					icon: "kubejs:legendary_lootbox"
 					id: "222D45DF4BF00BC2"
-					player_command: false
 					title: "Legendary Mekanism Loot Box"
 					type: "command"
 				}
@@ -537,7 +525,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
 					icon: "kubejs:legendary_lootbox"
 					id: "1B429878EA149C2F"
-					player_command: false
 					title: "Legendary Mekanism Loot Box"
 					type: "command"
 				}
@@ -545,7 +532,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
 					icon: "kubejs:legendary_lootbox"
 					id: "48E391547CA0B9FE"
-					player_command: false
 					title: "Legendary Mekanism Loot Box"
 					type: "command"
 				}
@@ -590,7 +576,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "3237A18C32BE6F14"
-				player_command: false
 				title: "Rare Mekanism Loot Box"
 				type: "command"
 			}]
@@ -610,7 +595,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "7F95A852BA445BB5"
-				player_command: false
 				title: "Rare Mekanism Loot Box"
 				type: "command"
 			}]
@@ -635,7 +619,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "65A247D76D57636D"
-				player_command: false
 				title: "Rare Mekanism Loot Box"
 				type: "command"
 			}]
@@ -669,7 +652,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "6D14EA132AC6D0B8"
-					player_command: false
 					title: "Epic Mekanism Loot Box"
 					type: "command"
 				}
@@ -717,7 +699,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
 				icon: "kubejs:legendary_lootbox"
 				id: "6646042C11EB98C5"
-				player_command: false
 				title: "Legendary Mekanism Loot Box"
 				type: "command"
 			}]

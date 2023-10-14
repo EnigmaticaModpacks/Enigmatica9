@@ -19,7 +19,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
 				icon: "kubejs:miners_delight"
 				id: "16C28EC18C21F2F9"
-				player_command: false
 				title: "Miner's Delight"
 				type: "command"
 			}]
@@ -45,7 +44,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "4D335664F4D4ED3D"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -106,7 +104,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "2688B8B2145804A6"
-				player_command: false
 				title: "Epic Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -130,7 +127,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "0F35EC2C40562447"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -158,7 +154,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "337B225FE339F43B"
-				player_command: false
 				title: "Epic Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -192,7 +187,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "573D3073F3908571"
-				player_command: false
 				title: "Epic Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -223,7 +217,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "0DD466F9E4C971CA"
-				player_command: false
 				title: "Epic Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -254,7 +247,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "01F67F64BFB7E5B9"
-				player_command: false
 				title: "Epic Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -283,7 +275,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "158A6753A48CF984"
-				player_command: false
 				title: "Rare Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -312,7 +303,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "34D5FB644519CBF0"
-				player_command: false
 				title: "Rare Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -347,7 +337,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "2A5FF8DDEF6001FE"
-				player_command: false
 				title: "Rare Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -383,7 +372,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "1F0EE9EF2D994337"
-				player_command: false
 				title: "Epic Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -409,7 +397,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "4B4A7A5379592E0F"
-				player_command: false
 				title: "Rare Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -450,7 +437,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "712F6C181EE8F2A6"
-				player_command: false
 				title: "Epic Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -538,7 +524,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "1CB7078D2013A45D"
-				player_command: false
 				title: "Epic Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -589,7 +574,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "37DEEE5854DDC9C3"
-				player_command: false
 				title: "Epic Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -658,7 +642,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "2FD4EE828E4E5D5A"
-				player_command: false
 				title: "Epic Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -693,7 +676,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "744F2422F54D69DA"
-				player_command: false
 				title: "Epic Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -720,7 +702,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "72F01E6C29DAF100"
-				player_command: false
 				title: "Rare Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -748,7 +729,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "3246307964E6DCA5"
-				player_command: false
 				title: "Rare Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -777,7 +757,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "6578D4689D6017B3"
-				player_command: false
 				title: "Epic Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -817,7 +796,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "03BA42DAD3DB4772"
-				player_command: false
 				title: "Rare Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -859,7 +837,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "60910F5984D9A60E"
-				player_command: false
 				title: "Epic Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -887,7 +864,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "5BDD792D8C64CDF3"
-				player_command: false
 				title: "Rare Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -915,7 +891,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
 				icon: "kubejs:miners_delight"
 				id: "2F0C078854BD0C27"
-				player_command: false
 				title: "Miner's Delight"
 				type: "command"
 			}]
@@ -939,7 +914,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "33D8C58732E28B40"
-				player_command: false
 				title: "Rare Applied Energistics Loot Box"
 				type: "command"
 			}]
@@ -984,7 +958,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "7E47FD3643956FCE"
-				player_command: false
 				title: "Epic Applied Energistics Loot Box"
 				type: "command"
 			}]

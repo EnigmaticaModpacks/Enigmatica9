@@ -105,7 +105,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "36808DD105A48BCC"
-					player_command: false
 					title: "Rare Nature's Aura Loot Box"
 					type: "command"
 				}
@@ -147,7 +146,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "1B3CC9578B9BF05D"
-					player_command: false
 					title: "Rare Nature's Aura Loot Box"
 					type: "command"
 				}
@@ -155,7 +153,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 					icon: "kubejs:farmers_delight"
 					id: "4D3CDE28F69D202C"
-					player_command: false
 					title: "Farmer's Delight"
 					type: "command"
 				}
@@ -192,7 +189,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "366B1FFE22EBE4E5"
-				player_command: false
 				title: "Rare Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -223,7 +219,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "097F8CAD66BB44FC"
-				player_command: false
 				title: "Rare Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -292,7 +287,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "5C2B4E261DE782E4"
-					player_command: false
 					title: "Rare Nature's Aura Loot Box"
 					type: "command"
 				}
@@ -327,7 +321,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "7B473B34257E6C77"
-				player_command: false
 				title: "Epic Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -376,7 +369,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "7459B50D34DCEBD6"
-				player_command: false
 				title: "Epic Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -398,7 +390,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "3CFF3CA727552A59"
-				player_command: false
 				title: "Rare Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -426,7 +417,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "1E7F02A4791EFC1D"
-				player_command: false
 				title: "Rare Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -452,7 +442,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "11F0298FC3689734"
-				player_command: false
 				title: "Rare Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -475,7 +464,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "49064FB70F4C89F2"
-				player_command: false
 				title: "Epic Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -502,7 +490,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "4E8906F53D1A0AB0"
-				player_command: false
 				title: "Epic Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -529,7 +516,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "30A356076A18628A"
-				player_command: false
 				title: "Epic Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -571,7 +557,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "1979E756D0AF7475"
-					player_command: false
 					title: "Rare Nature's Aura Loot Box"
 					type: "command"
 				}
@@ -683,7 +668,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "230DB717CFF25F0B"
-				player_command: false
 				title: "Rare Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -711,7 +695,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "563C2C460079661B"
-				player_command: false
 				title: "Rare Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -773,7 +756,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "023260B9B7374F59"
-				player_command: false
 				title: "Rare Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -807,7 +789,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "470293D0FB403EA6"
-					player_command: false
 					title: "Rare Nature's Aura Loot Box"
 					type: "command"
 				}
@@ -835,7 +816,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "139066FD1275A723"
-				player_command: false
 				title: "Rare Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -877,7 +857,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "1E29E1E01DA699F1"
-					player_command: false
 					title: "Epic Nature's Aura Loot Box"
 					type: "command"
 				}
@@ -942,7 +921,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "7A33E6109905AF66"
-				player_command: false
 				title: "Epic Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -972,7 +950,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "455236A2B705B554"
-				player_command: false
 				title: "Rare Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -1020,7 +997,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "4429099A540470BF"
-				player_command: false
 				title: "Rare Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -1045,7 +1021,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "20B45C4EAD3FE4CA"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -1070,7 +1045,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "691D2626544B7801"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -1090,7 +1064,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				icon: "kubejs:farmers_delight"
 				id: "7212F8AC7AC84191"
-				player_command: false
 				title: "Farmer's Delight"
 				type: "command"
 			}]
@@ -1111,7 +1084,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "28CC27FC10BC0B9B"
-				player_command: false
 				title: "Rare Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -1132,7 +1104,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 				icon: "kubejs:alchemists_delight"
 				id: "1B9403D8A20F2898"
-				player_command: false
 				title: "Alchemist's Delight"
 				type: "command"
 			}]
@@ -1175,7 +1146,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "44955606B0E1C7B5"
-				player_command: false
 				title: "Rare Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -1305,7 +1275,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "2927D64D54B5FDD6"
-				player_command: false
 				title: "Epic Nature's Aura Loot Box"
 				type: "command"
 			}]
@@ -1413,7 +1382,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "38D4D46D3976D5D6"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -1462,7 +1430,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				icon: "kubejs:farmers_delight"
 				id: "0CC83443C0E4A90D"
-				player_command: false
 				title: "Farmer's Delight"
 				type: "command"
 			}]
@@ -1520,7 +1487,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "7FE6DA1A9A33BC3F"
-				player_command: false
 				title: "Epic Nature's Aura Loot Box"
 				type: "command"
 			}]
