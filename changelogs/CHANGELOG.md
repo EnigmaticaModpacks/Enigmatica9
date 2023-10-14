@@ -3,6 +3,7 @@
 ### 🐛 Fixed Bugs
 
 -   Fix broken Necrotic Focus recipe [\#721](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/721)
+-   Fixed an erroneouos reference to Blitz that should be Blizz [\#724](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/724)
 
 ---
 
