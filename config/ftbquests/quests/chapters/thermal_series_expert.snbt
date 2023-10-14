@@ -60,7 +60,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "6A5A5500DDD853A4"
-					player_command: false
 					title: "Rare Thermal Series Loot Box"
 					type: "command"
 				}
@@ -97,7 +96,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "3E31589A406DBA63"
-				player_command: false
 				title: "Epic Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -123,7 +121,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "517403840766CE9B"
-				player_command: false
 				title: "Rare Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -145,7 +142,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "5BBE973CF92A9780"
-				player_command: false
 				title: "Epic Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -168,7 +164,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "467638FBBBBA1129"
-					player_command: false
 					title: "Rare Thermal Series Loot Box"
 					type: "command"
 				}
@@ -176,7 +171,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "239A690985090125"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -205,7 +199,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "193EDF78A3E04D53"
-					player_command: false
 					title: "Epic Thermal Series Loot Box"
 					type: "command"
 				}
@@ -232,7 +225,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "4210E54DDC394058"
-				player_command: false
 				title: "Rare Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -254,7 +246,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "23ABDE84C87F5211"
-				player_command: false
 				title: "Epic Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -275,7 +266,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "14971E1A5495EB6B"
-				player_command: false
 				title: "Epic Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -296,7 +286,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "51BC909489C10C92"
-				player_command: false
 				title: "Epic Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -317,7 +306,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "578306D91A22C541"
-				player_command: false
 				title: "Epic Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -353,7 +341,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "43F101BC77A8673B"
-				player_command: false
 				title: "Epic Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -398,7 +385,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "2A324B87D3B4F56D"
-					player_command: false
 					title: "Rare Thermal Series Loot Box"
 					type: "command"
 				}
@@ -406,7 +392,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "100656C2D1AFB4A9"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -457,7 +442,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "01AC3F6CE73D538E"
-				player_command: false
 				title: "Rare Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -504,7 +488,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "221872CEB5FA2D12"
-				player_command: false
 				title: "Rare Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -563,7 +546,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "2C91810C41B2D338"
-					player_command: false
 					title: "Rare Thermal Series Loot Box"
 					type: "command"
 				}
@@ -571,7 +553,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "4144491203F58E75"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -597,7 +578,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "29D6B666AEAC5267"
-					player_command: false
 					title: "Rare Thermal Series Loot Box"
 					type: "command"
 				}
@@ -605,7 +585,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "590E5DE244DFC01D"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -632,7 +611,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "778AEA217C7C8A2C"
-					player_command: false
 					title: "Rare Thermal Series Loot Box"
 					type: "command"
 				}
@@ -640,7 +618,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "1B476CCA9B8E06EB"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -667,7 +644,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "0774B29E91A76C00"
-				player_command: false
 				title: "Rare Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -690,7 +666,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "4AA02718DC4D5540"
-					player_command: false
 					title: "Rare Thermal Series Loot Box"
 					type: "command"
 				}
@@ -698,7 +673,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "4EE5F9B2065D91C7"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -725,7 +699,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "5AB560A303B8E2C9"
-				player_command: false
 				title: "Rare Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -757,7 +730,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "1C185A11F23DF778"
-					player_command: false
 					title: "Epic Thermal Series Loot Box"
 					type: "command"
 				}
@@ -765,7 +737,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "5CC3E27F1EC7040C"
-					player_command: false
 					title: "Alchemist's Delight"
 					type: "command"
 				}
@@ -799,7 +770,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "4BAEBA54F4FE9A0E"
-				player_command: false
 				title: "Rare Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -831,7 +801,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "2FC0A699D3902DD1"
-				player_command: false
 				title: "Rare Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -866,7 +835,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "7591C5EA445D189B"
-					player_command: false
 					title: "Epic Thermal Series Loot Box"
 					type: "command"
 				}
@@ -874,7 +842,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "0D033F01D1648B58"
-					player_command: false
 					title: "Alchemist's Delight"
 					type: "command"
 				}
@@ -920,7 +887,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 					icon: "kubejs:farmers_delight"
 					id: "095F545D37921A44"
-					player_command: false
 					title: "Farmer's Delight"
 					type: "command"
 				}
@@ -954,7 +920,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "6FAAE1D7A1B0EF62"
-					player_command: false
 					title: "Rare Thermal Series Loot Box"
 					type: "command"
 				}
@@ -962,7 +927,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 					icon: "kubejs:farmers_delight"
 					id: "3590AC607FB5E76A"
-					player_command: false
 					title: "Farmer's Delight"
 					type: "command"
 				}
@@ -1001,7 +965,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "67C2F821185E408C"
-					player_command: false
 					title: "Rare Thermal Series Loot Box"
 					type: "command"
 				}
@@ -1036,7 +999,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "7FD1EB8CA612CC76"
-					player_command: false
 					title: "Rare Thermal Series Loot Box"
 					type: "command"
 				}
@@ -1069,7 +1031,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "368ACCCF678EEB95"
-				player_command: false
 				title: "Rare Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -1095,7 +1056,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "1A82EF559B0FEEC6"
-				player_command: false
 				title: "Epic Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -1117,7 +1077,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "4AFCDF29F832CA61"
-				player_command: false
 				title: "Rare Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -1143,7 +1102,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "2BDFD25054F99E1D"
-					player_command: false
 					title: "Epic Thermal Series Loot Box"
 					type: "command"
 				}
@@ -1172,7 +1130,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				icon: "kubejs:farmers_delight"
 				id: "55810C2ED14BD748"
-				player_command: false
 				title: "Farmer's Delight"
 				type: "command"
 			}]
@@ -1210,7 +1167,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "1EC0922E897E05ED"
-				player_command: false
 				title: "Epic Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -1282,7 +1238,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "62823A34E4BDAC3E"
-				player_command: false
 				title: "Epic Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -1354,7 +1309,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "1C648F07E6E0123D"
-				player_command: false
 				title: "Epic Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -1377,7 +1331,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "1BA84461BB55E265"
-					player_command: false
 					title: "Epic Thermal Series Loot Box"
 					type: "command"
 				}
@@ -1385,7 +1338,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "0B75D7FF01D5F371"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -1408,7 +1360,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				icon: "kubejs:farmers_delight"
 				id: "663D39875F054628"
-				player_command: false
 				title: "Farmer's Delight"
 				type: "command"
 			}]
@@ -1449,7 +1400,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "75FB2CB390074E86"
-				player_command: false
 				title: "Epic Thermal Series Loot Box"
 				type: "command"
 			}]
@@ -1514,7 +1464,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
 				icon: "kubejs:miners_delight"
 				id: "3C93FC3B56BDC758"
-				player_command: false
 				title: "Miner's Delight"
 				type: "command"
 			}]
@@ -1558,7 +1507,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "537C61EA3760C79B"
-					player_command: false
 					title: "Epic Thermal Series Loot Box"
 					type: "command"
 				}
@@ -1566,7 +1514,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "76EBD00E27FA6F5B"
-					player_command: false
 					title: "Alchemist's Delight"
 					type: "command"
 				}

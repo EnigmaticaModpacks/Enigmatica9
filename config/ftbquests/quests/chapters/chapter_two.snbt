@@ -46,7 +46,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "4C9ACBB578AFC307"
-					player_command: false
 					title: "Alchemist's Delight"
 					type: "command"
 				}
@@ -102,7 +101,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 				icon: "kubejs:aura_leaf"
 				id: "57F9A2443CFDEB47"
-				player_command: false
 				title: "Aura Infusion"
 				type: "command"
 			}]
@@ -137,7 +135,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 				icon: "kubejs:aura_leaf"
 				id: "2D791DABDEA4EA64"
-				player_command: false
 				title: "Aura Infusion"
 				type: "command"
 			}]
@@ -295,7 +292,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 					icon: "kubejs:aura_leaf"
 					id: "363F6A8483473ED2"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -413,7 +409,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 					icon: "kubejs:aura_leaf"
 					id: "21E8E534E6A7EBA6"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -421,7 +416,6 @@
 					command: "/execute at @p run summon the_bumblezone:beehemoth ~ ~2 ~"
 					icon: "the_bumblezone:bee_queen_spawn_egg"
 					id: "1F7EF0E9FB5A71ED"
-					player_command: false
 					title: "The Queen's Guard"
 					type: "command"
 				}
@@ -526,7 +520,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "23B342C9B1B2B79C"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -613,7 +606,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 					icon: "kubejs:aura_leaf"
 					id: "14AC976E409BBD66"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -651,7 +643,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "4F02BC40CABDEFBD"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -684,7 +675,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "72393E06B7289A9F"
-					player_command: false
 					title: "Alchemist's Delight"
 					type: "command"
 				}
@@ -692,7 +682,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 					icon: "kubejs:aura_leaf"
 					id: "5C8EE393AD050F66"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -789,7 +778,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 				icon: "kubejs:alchemists_delight"
 				id: "42238537475907E4"
-				player_command: false
 				title: "Alchemist's Delight"
 				type: "command"
 			}]
