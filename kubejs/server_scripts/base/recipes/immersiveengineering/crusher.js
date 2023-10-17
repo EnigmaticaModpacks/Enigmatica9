@@ -55,7 +55,7 @@ ServerEvents.recipes((event) => {
                 { output: { item: 'create:wheat_flour', count: 2 }, chance: 0.25 },
                 { output: { item: 'minecraft:wheat_seeds', count: 1 }, chance: 0.25 }
             ],
-            input: 'minecraft:obsidian',
+            input: 'minecraft:wheat',
             energy: 500,
             id: `${id_prefix}wheat_flour`
         }
