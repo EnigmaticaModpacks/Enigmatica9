@@ -718,10 +718,31 @@ ServerEvents.recipes((event) => {
             output: '4x kubejs:bright_arcanite_crystal',
             inputs: [
                 'kubejs:dim_arcanite_crystal',
-                '#forge:dusts/sylvanite',
-                '#forge:dusts/sylvanite',
-                '#forge:dusts/sylvanite',
+                '#forge:dusts/dimensional',
+                '#forge:dusts/dimensional',
+                '#forge:dusts/dimensional',
                 'kubejs:dim_arcanite_crystal',
+                '#forge:dusts/dimensional',
+                '#forge:dusts/dimensional',
+                '#forge:dusts/dimensional'
+            ],
+            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:shock_potion' } },
+            liquidOutput: {
+                fluid: 'hexerei:potion',
+                nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:shock_potion' }
+            },
+            fluidLevelsConsumed: 1000,
+            heatRequirement: 'heated',
+            id: `${id_prefix}bright_arcanite_crystal`
+        },
+        {
+            output: '4x kubejs:iridescent_arcanite_crystal',
+            inputs: [
+                'kubejs:bright_arcanite_crystal',
+                '#forge:dusts/sylvanite',
+                '#forge:dusts/sylvanite',
+                '#forge:dusts/sylvanite',
+                'kubejs:bright_arcanite_crystal',
                 '#forge:dusts/sylvanite',
                 '#forge:dusts/sylvanite',
                 '#forge:dusts/sylvanite'
@@ -731,28 +752,7 @@ ServerEvents.recipes((event) => {
                 fluid: 'hexerei:potion',
                 nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:shock_potion' }
             },
-            fluidLevelsConsumed: 2000,
-            heatRequirement: 'heated',
-            id: `${id_prefix}bright_arcanite_crystal`
-        },
-        {
-            output: '4x kubejs:iridescent_arcanite_crystal',
-            inputs: [
-                'kubejs:bright_arcanite_crystal',
-                '#forge:ingots/energized_steel',
-                '#forge:ingots/energized_steel',
-                '#forge:ingots/energized_steel',
-                '#forge:gems/nitro',
-                '#forge:ingots/energized_steel',
-                '#forge:ingots/energized_steel',
-                '#forge:ingots/energized_steel'
-            ],
-            liquid: { fluid: 'hexerei:potion', nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:shock_potion' } },
-            liquidOutput: {
-                fluid: 'hexerei:potion',
-                nbt: { Bottle: 'REGULAR', Potion: 'ars_elemental:shock_potion' }
-            },
-            fluidLevelsConsumed: 2000,
+            fluidLevelsConsumed: 1000,
             heatRequirement: 'heated',
             id: `${id_prefix}iridescent_arcanite_crystal`
         },

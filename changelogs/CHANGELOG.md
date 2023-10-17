@@ -1,10 +1,15 @@
 ### Enigmatica 9 v1.15.0
 
+### 🌟 Improvements
+
+-   Bright and Iridescent Arcanite Crystals may now be crafted earlier [\#732](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/732)
+
 ### 🐛 Fixed Bugs
 
 -   Fix broken Necrotic Focus recipe [\#721](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/721)
 -   Fixed an erroneouos reference to Blitz that should be Blizz [\#724](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/724)
 -   Removed AE2 Meteorites properly this time [\#725](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/725)
+-   Wheat now crushes properly in the IE crusher [\#732](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/732)
 
 ---
 
