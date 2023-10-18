@@ -46,7 +46,7 @@ function Merge-DevelopIntoMasterPrompt {
 }
 
 Validate-SecretsFile
-Close-FixedIssues
 Merge-DevelopIntoMasterPrompt
+Close-FixedIssues
 
 # just closes all `Status: Fixed In Next Release` issues
