@@ -1,5 +1,14 @@
 ### Enigmatica 9 v1.15.0
 
+### 🎁 New Mods Added
+
+-   [AECapFix](https://www.curseforge.com/minecraft/mc-mods/aecapfix) (by [ninety](https://www.curseforge.com/members/ninety/projects))
+
+### Removed
+
+-   [Inventory Sorter](https://www.curseforge.com/minecraft/mc-mods/inventory-sorter) (by [cpw](https://www.curseforge.com/members/cpw/projects))
+    -   We recommend you use Quark inventory sorting instead, it can be bound to middleclick as well.
+
 ### 🌟 Improvements
 
 -   Bright and Iridescent Arcanite Crystals may now be crafted earlier [\#732](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/732)
