@@ -24,6 +24,17 @@ ServerEvents.recipes((event) => {
                 C: '#forge:gems/source'
             },
             id: 'ars_elemental:caster_bag'
+        },
+        {
+            output: 'ars_elemental:spell_mirror',
+            pattern: [' A ', 'BCB', 'DA '],
+            key: {
+                A: '#forge:ingots/gold',
+                B: '#forge:wires/electrum',
+                C: '#forge:gems/source',
+                D: '#forge:essences/air'
+            },
+            id: `${id_prefix}spell_mirror`
         }
     ];
 

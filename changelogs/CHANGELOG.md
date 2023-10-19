@@ -1,3 +1,11 @@
+### Enigmatica 9 v1.16.0
+
+### 🌟 Improvements
+
+-   Moved Spell Sensors and Spell Mirrors to early game [\#735](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/735)
+-   Added compat for Thermal's Rubberwood [\#735](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/735)
+-   Disabled Thermal's Energy Cart [\#735](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/735)
+
 ### Enigmatica 9 v1.15.0
 
 ### 🎁 New Mods Added

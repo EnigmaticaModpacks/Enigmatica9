@@ -7,6 +7,12 @@ ServerEvents.recipes((event) => {
             leaves: 'minecraft:jungle_leaves',
             result: { fluid: 'industrialforegoing:latex', amount: 25 },
             id: 'thermal:devices/tree_extractor/tree_extractor_jungle'
+        },
+        {
+            trunk: 'thermal:rubberwood_log',
+            leaves: 'thermal:rubberwood_leaves',
+            result: { fluid: 'industrialforegoing:latex', amount: 75 },
+            id: 'thermal:devices/tree_extractor/tree_extractor_rubberwood'
         }
     ];
 

@@ -712,6 +712,7 @@ jei.expert.items.disabled = [
     'thermal:energy_limiter_attachment',
     'thermal:energy_duct',
     'thermal:machine_insolator',
+    'thermal:energy_minecart',
 
     'twilightforest:candelabra',
     'twilightforest:keepsake_casket',
