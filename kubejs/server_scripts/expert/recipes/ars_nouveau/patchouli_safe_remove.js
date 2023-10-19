@@ -37,7 +37,8 @@ ServerEvents.recipes((event) => {
             { id: 'ars_nouveau:summon_focus', output: 'ars_nouveau:summon_focus' },
             { id: 'ars_nouveau:shapers_focus', output: 'ars_nouveau:shapers_focus' },
             { id: 'ars_nouveau:relay_splitter', output: 'ars_nouveau:relay_splitter' },
-            { id: 'ars_nouveau:spell_sensor', output: 'ars_nouveau:spell_sensor' }
+            { id: 'ars_nouveau:spell_sensor', output: 'ars_nouveau:spell_sensor' },
+            { id: 'ars_elemental:spell_mirror', output: 'ars_elemental:spell_mirror' }
         ],
         imbuement: [
             { id: 'ars_nouveau:imbuement_lapis', output: 'emendatusenigmatica:source_gem' },
