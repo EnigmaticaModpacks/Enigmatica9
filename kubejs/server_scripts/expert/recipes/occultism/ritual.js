@@ -1413,7 +1413,7 @@ ServerEvents.recipes((event) => {
             activation_item: 'ars_nouveau:ritual_restoration',
             inputs: [
                 'kubejs:heart_of_the_tempest',
-                'minecraft:heart_of_the_sea',
+                'kubejs:heart_of_the_sea',
                 'kubejs:heart_of_the_mountain',
                 'kubejs:heart_of_the_inferno'
             ],

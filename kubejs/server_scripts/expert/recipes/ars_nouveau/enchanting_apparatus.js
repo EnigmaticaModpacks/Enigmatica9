@@ -680,7 +680,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}diamond_gear`
         },
         {
-            output: 'minecraft:heart_of_the_sea',
+            output: 'kubejs:heart_of_the_sea',
             inputs: [
                 'ars_elemental:water_focus',
                 'kubejs:shard_of_enduring',
