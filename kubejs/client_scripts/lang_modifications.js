@@ -1320,6 +1320,13 @@ const entries = {
                 normal: `Shears`,
                 expert: `Botanist's Shears`
             }
+        },
+        {
+            key: 'item.minecraft.heart_of_the_sea',
+            value: {
+                normal: `Heart of the Sea`,
+                expert: `Blue Pearl`
+            }
         }
     ],
     hexerei: [
