@@ -5,11 +5,11 @@
 -   [Expert] Moved Spell Sensors and Spell Mirrors to early game [\#735](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/735)
 -   Added compat for Thermal's Rubberwood [\#735](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/735)
 -   [Expert] Disabled Thermal's Energy Cart [\#735](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/735)
--   [Expert] Vanilla Heart of the Sea has been renamed to Blue Pearl. All crafts involving Heart of the Sea are changed to a new item. [\#735](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/735)
 
 ### 🐛 Fixed Bugs
 
 -   Fixed broken Lang entries for many KubeJS items [\#721](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/721)
+-   [Expert] - Because Heart of the Sea refuses to stop spawning where it shouldn't, the Vanilla item has been renamed to Blue Pearl. A new Heart of the Sea item has been created to replace it. [\#735](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/735)
 
 ### Enigmatica 9 v1.15.0
 
