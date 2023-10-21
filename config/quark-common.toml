@@ -1444,6 +1444,8 @@
 		"Show Hud" = true
 		"Enable Green Tint" = true
 		"Override Held Item Render" = true
+		"Hud Offset X" = 0
+		"Hud Offset Y" = 0
 
 		[experimental.variant_selector.variants]
 			#The list of all variant types available for players to use. Values are treated as suffixes to block IDs for scanning.
@@ -1459,6 +1461,10 @@
 			"Strip Candidates" = ["_planks", "_wool", "s"]
 			#Add manual variant overrides here, the format is 'type,block,output' (e.g. polish,minecraft:stone_bricks,minecraft:chiseled_stone_bricks). The type must be listed in Variant Types
 			"Manual Variants" = []
+			# A list of block IDs and mappings to be excluded from variant selection.
+			#To exclude a block from being turned into other blocks, just include the block ID (e.g. minecraft:cobblestone).
+			#To exclude a block from having other blocks turned into it, suffix it with = (e.g. =minecraft:cobblestone_stairs)
+			#To exclude a specific block->variant combination, put = between the two (e.g. minecraft:cobblestone=minecraft:cobblestone_stairs)
 			Blacklist = []
 
 	[experimental.climate_control_remover]
@@ -1599,7 +1605,7 @@
 		#<id>,<level>,<min_price>,<max_price>,<color>,<name>
 		#
 		#With the following descriptions:
-		# - <id> being the biome's ID NAME. You can find vanilla names here - https://minecraft.gamepedia.com/Biome#Biome_IDs
+		# - <id> being the biome's ID NAME. You can find vanilla names here - https://minecraft.wiki/w/Biome#Biome_IDs
 		# - <level> being the Cartographer villager level required for the map to be unlockable
 		# - <min_price> being the cheapest (in Emeralds) the map can be
 		# - <max_price> being the most expensive (in Emeralds) the map can be
