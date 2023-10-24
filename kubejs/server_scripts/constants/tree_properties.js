@@ -993,6 +993,18 @@ const tree_properties = {
                 sap: 'thermal:resin',
                 rate: { living: 50, dead: 6 }
             }
+        },
+        // Thermal Series
+        {
+            sapling: 'thermal:rubberwood_sapling',
+            stems: ['thermal:rubberwood_log'],
+            foliage: ['thermal:rubberwood_leaves'],
+            dimension: 'overworld',
+            substrate: 'dirt',
+            logProcessing: {
+                sap: 'industrialforegoing:latex',
+                rate: { living: 150, dead: 18 }
+            }
         }
     ],
     shrooms: [

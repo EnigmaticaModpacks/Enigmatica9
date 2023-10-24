@@ -256,6 +256,41 @@ const entries = {
                 normal: 'Brass Door',
                 expert: 'Fancy Door'
             }
+        },
+        {
+            key: 'advancement.create.belt',
+            value: {
+                normal: 'Kelp Drive',
+                expert: 'Driven'
+            }
+        },
+        {
+            key: 'advancement.create.brass_casing',
+            value: {
+                normal: 'The Brass Age',
+                expert: 'The Enchanted Age'
+            }
+        },
+        {
+            key: 'advancement.create.brass_casing.desc',
+            value: {
+                normal: 'Apply Brass Ingots to stripped wood, creating a casing for more sophisticated machines',
+                expert: 'Apply Orichalcum Ingots to treated wood, creating a casing for more sophisticated machines'
+            }
+        },
+        {
+            key: 'advancement.create.brass',
+            value: {
+                normal: 'Real Alloys',
+                expert: 'Enchanted Alloys'
+            }
+        },
+        {
+            key: 'advancement.create.brass.desc',
+            value: {
+                normal: 'Create Brass Ingots by alloying Copper and Zinc Ingots in your Blaze-heated Mechanical Mixer',
+                expert: 'Create Orichalcum Ingots'
+            }
         }
     ],
     createaddition: [
@@ -307,14 +342,14 @@ const entries = {
             key: 'gui.tooltip.block.pneumaticcraft.heat_pipe',
             value: {
                 normal: 'An insulated core of compressed iron which can transfer heat without losing any to adjacent air or fluid blocks. A more compact alternative to Compressed Iron Blocks. This block can be camouflaged with the Camouflage Applicator tool.',
-                expert: 'An insulated core of compressed iron which can transfer heat without losing any to adjacent air or fluid blocks. A more compact alternative to Spellbound Invar Blocks. This block can be camouflaged with the Camouflage Applicator tool.'
+                expert: 'An insulated core of constantan and fire essence which can transfer heat without losing any to adjacent air or fluid blocks. A more compact alternative to Spellbound Invar Blocks. This block can be camouflaged with the Camouflage Applicator tool.'
             }
         },
         {
             key: 'gui.tooltip.block.pneumaticcraft.pressure_chamber_valve',
             value: {
                 normal: 'This multi-block structure can be used as air storage. Its primary usage, however, is to compress various materials into other materials. Like Iron into Compressed Iron. Or Coal into Diamonds.',
-                expert: 'This multi-block structure can be used as air storage. Its primary usage, however, is to compress various materials into other materials. Like Invar into Spellbound Invar. Or Coal into Diamonds.'
+                expert: 'This multi-block structure can be used as air storage. Its primary usage, however, is to compress various materials into other materials. Like Coal into Diamonds.'
             }
         },
         {
@@ -525,6 +560,20 @@ const entries = {
             value: {
                 normal: 'Jumping Upgrade: Tier IV',
                 expert: 'Jumping Upgrade: Tier III'
+            }
+        },
+        {
+            key: 'pneumaticcraft.advancement.root',
+            value: {
+                normal: 'The First Explosion (of many?)',
+                expert: 'The First Implosion (of many?)'
+            }
+        },
+        {
+            key: 'pneumaticcraft.advancement.root.desc',
+            value: {
+                normal: 'Throw Iron on the ground and create an explosion close to it.',
+                expert: 'Crush Invar with magic!'
             }
         }
     ],
@@ -1270,6 +1319,13 @@ const entries = {
             value: {
                 normal: `Shears`,
                 expert: `Botanist's Shears`
+            }
+        },
+        {
+            key: 'item.minecraft.heart_of_the_sea',
+            value: {
+                normal: `Heart of the Sea`,
+                expert: `Blue Pearl`
             }
         }
     ],

@@ -109,6 +109,9 @@
 		[types.leaves_type.ars_elemental]
 			yellow_archwood = true
 
+		[types.leaves_type.thermal]
+			rubberwood = true
+
 	[types.wood_type]
 
 		[types.wood_type.ars_nouveau]
@@ -167,6 +170,9 @@
 			transformation = true
 			mining = true
 			sorting = true
+
+		[types.wood_type.thermal]
+			rubberwood = true
 
 	[types.cut_block_type]
 
@@ -509,6 +515,9 @@
 			permafrost_bricks = true
 			ancient_planks = true
 			bamboo_planks = true
+
+		[types.cut_block_type.thermal]
+			rubberwood = true
 
 [entries]
 

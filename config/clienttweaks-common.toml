@@ -32,6 +32,8 @@
 	paneBuildingSupport = true
 	#This option makes the recipe book not shift the inventory when opened. Works best with smaller GUI scales / bigger resolutions.
 	noRecipeBookShifting = false
+	#This prevents fireworks from being launched from your off hand if you are wearing an Elytra, unless you're flying.
+	noOffhandFireworksWithElytra = true
 
 [customization]
 	#Items that count as torches for the offhand-torch tweak options.
@@ -42,4 +44,6 @@
 	shieldWeapons = ["tetra:modular_sword"]
 	#Items that count as shields for the offhand-shield hiding tweak options.
 	shieldItems = ["basicshields:wooden_shield", "basicshields:golden_shield", "basicshields:diamond_shield", "basicshields:netherite_shield"]
+	#Items that count as fireworks for the offhand-firework tweak options.
+	fireworkItems = ["minecraft:firework_rocket"]
 

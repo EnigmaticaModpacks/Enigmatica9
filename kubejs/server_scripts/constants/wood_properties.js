@@ -57,6 +57,7 @@ var wood_variants_constructor = [
     'quark:azalea',
     'quark:blossom',
     'quark:ancient',
+    'thermal:rubberwood',
     'twilightforest:twilight_oak',
     'twilightforest:canopy',
     'twilightforest:mangrove',

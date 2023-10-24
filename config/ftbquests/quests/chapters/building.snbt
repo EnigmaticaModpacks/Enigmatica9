@@ -49,7 +49,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 				icon: "kubejs:alchemists_delight"
 				id: "73CEB3BC6963B644"
-				player_command: false
 				title: "Alchemist's Delight"
 				type: "command"
 			}]
@@ -83,7 +82,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "7E2D7FEE20672C9D"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -311,7 +309,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "31F796972A4B7369"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -600,7 +597,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/create/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "384957F4FCE7BC6A"
-				player_command: false
 				title: "Rare Create Loot Box"
 				type: "command"
 			}]
@@ -636,7 +632,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "01870BF5EE173AB5"
-				player_command: false
 				title: "Rare Create Loot Box"
 				type: "command"
 			}]
@@ -694,7 +689,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				icon: "kubejs:farmers_delight"
 				id: "0A09BABD778C97C2"
-				player_command: false
 				title: "Farmer's Delight"
 				type: "command"
 			}]
@@ -762,7 +756,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "5596D763FED920E0"
-				player_command: false
 				title: "Rare Create Loot Box"
 				type: "command"
 			}]

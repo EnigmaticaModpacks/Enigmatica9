@@ -56,6 +56,15 @@ ServerEvents.recipes((event) => {
                 C: 'functionalstorage:copper_upgrade'
             },
             id: 'functionalstorage:gold_upgrade'
+        },
+        {
+            output: 'functionalstorage:framed_storage_controller',
+            pattern: ['BBB', 'BAB', 'BBB'],
+            key: {
+                A: 'functionalstorage:storage_controller',
+                B: 'framedblocks:framed_cube'
+            },
+            id: 'functionalstorage:framed_storage_controller'
         }
     ];
 

@@ -900,7 +900,7 @@
 	"Sponge On Water Placement" = true
 	"Dragon Scales" = true
 	"Sign Editing" = true
-	"Hoe Harvesting" = true
+	"Hoe Harvesting" = false
 	"Reacharound Placing" = true
 	"Compasses Work Everywhere" = true
 	"More Note Block Sounds" = true

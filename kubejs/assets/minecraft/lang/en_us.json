@@ -5,5 +5,6 @@
 	"effect.minecraft.absorption.desc": "Grants temporary hit points.",
 	"effect.minecraft.resistance.desc": "Reduces incoming damage.",
 	"generic.attack_range.desc": "How far away your attacks can hit.",
-	"generic.reachDistance.desc": "How far away you can interact with blocks."
+	"generic.reachDistance.desc": "How far away you can interact with blocks.",
+	"item.minecraft.heart_of_the_sea": "Heart of the Sea"
 }

@@ -156,7 +156,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "43188DFF0C8F9DDC"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -182,7 +181,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "4FDD99B9F9F65B1D"
-				player_command: false
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
@@ -230,7 +228,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "64504DDDBC9AC25E"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -392,7 +389,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "3748DAA3600EA73A"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -449,7 +445,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "418FF73BC209465E"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -746,7 +741,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "39E9528BE6DAB579"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -900,7 +894,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "249BCC9ECEB1E87E"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -959,7 +952,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "49EF6BF284B65CD2"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -1062,7 +1054,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "451D4EF8E99423F4"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -1243,7 +1234,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "4734ACE72F894A6E"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]

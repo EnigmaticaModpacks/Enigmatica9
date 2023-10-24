@@ -40,5 +40,6 @@
 	"job.occultism.crush_tier2": "Crusher",
 	"job.occultism.crush_tier3": "Fast Crusher",
 	"job.occultism.crush_tier4": "Very Fast Crusher",
-	"jei.occultism.crushing.tier": "Min Crusher Tier: %d"
+	"jei.occultism.crushing.tier": "Min Crusher Tier: %d",
+	"jei.occultism.ingredient.tallow.description": ""
 }

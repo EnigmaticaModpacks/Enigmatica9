@@ -20,7 +20,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "73146FCB5DE34BD0"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -28,7 +27,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 					icon: "kubejs:aura_leaf"
 					id: "4A56772129E93DBD"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -57,7 +55,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "240F67E11441400B"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -81,7 +78,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "435BC41E9248DDA9"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -107,7 +103,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "19B4DB02EEC8719A"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -165,20 +160,35 @@
 				""
 				"Undoubtedly, it will help anchor a teleportation ritual to wherever they call home. "
 			]
+			icon: "powah:steel_energized"
 			id: "04B0F0BE6E54D620"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "691C3737512BE3BF"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "0D1ED0C7EDB28A00"
-				item: "powah:steel_energized"
-				type: "item"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "691C3737512BE3BF"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					advancement: "restrictedportals:end"
+					criterion: ""
+					id: "4EEF35180F07D1C8"
+					type: "advancement"
+				}
+			]
+			tasks: [
+				{
+					id: "0D1ED0C7EDB28A00"
+					item: "powah:steel_energized"
+					type: "item"
+				}
+				{
+					id: "2DE3D3ADAD7B8032"
+					item: "rftoolsbase:infused_enderpearl"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: -0.5d
 		}
@@ -200,7 +210,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 				icon: "kubejs:aura_leaf"
 				id: "0505511F544D9B32"
-				player_command: false
 				title: "Aura Infusion"
 				type: "command"
 			}]
@@ -238,7 +247,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 				icon: "kubejs:aura_leaf"
 				id: "626DB2BAB756CD14"
-				player_command: false
 				title: "Aura Infusion"
 				type: "command"
 			}]
@@ -277,7 +285,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 				icon: "kubejs:aura_leaf"
 				id: "27C72A314A0835DD"
-				player_command: false
 				title: "Aura Infusion"
 				type: "command"
 			}]
@@ -304,7 +311,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 				icon: "kubejs:aura_leaf"
 				id: "0139AC85B01E713C"
-				player_command: false
 				title: "Aura Infusion"
 				type: "command"
 			}]
@@ -348,7 +354,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 					icon: "kubejs:aura_leaf"
 					id: "6E801CF58CCC17F1"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -385,7 +390,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 					icon: "kubejs:aura_leaf"
 					id: "79B5374F289BE361"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -422,7 +426,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 					icon: "kubejs:aura_leaf"
 					id: "6EC8C22079A42D8F"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -459,7 +462,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 					icon: "kubejs:aura_leaf"
 					id: "24D145AA7990A26D"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -501,7 +503,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 				icon: "kubejs:aura_leaf"
 				id: "0FC494420DB000EC"
-				player_command: false
 				title: "Aura Infusion"
 				type: "command"
 			}]
@@ -525,7 +526,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "0015D006738A40B6"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -553,7 +553,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "2275D9F976F77BDF"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -588,7 +587,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 					icon: "kubejs:aura_leaf"
 					id: "617415D046BDABDF"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -633,14 +631,21 @@
 			}
 			id: "4F90F6437D6CF7EC"
 			min_width: 250
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
-				icon: "kubejs:aura_leaf"
-				id: "1D4D0A4842116B56"
-				player_command: false
-				title: "Aura Infusion"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "1D4D0A4842116B56"
+					title: "Aura Infusion"
+					type: "command"
+				}
+				{
+					advancement: "restrictedportals:nether"
+					criterion: ""
+					id: "258686773ADAF792"
+					type: "advancement"
+				}
+			]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -679,7 +684,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "48DA2969D0098400"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -777,11 +781,11 @@
 					id: "37C787A2F4CB8129"
 					item: {
 						Count: 1b
-						id: "thermal:blitz_spawn_egg"
+						id: "thermal:blizz_spawn_egg"
 						tag: {
 							display: {
-								Lore: ["{\"translate\":\"item.kubejs.ritual_summon_bound_blitz.tooltip\"}"]
-								Name: "{\"translate\":\"item.kubejs.ritual_summon_bound_blitz\"}"
+								Lore: ["{\"translate\":\"item.kubejs.ritual_summon_bound_blizz.tooltip\"}"]
+								Name: "{\"translate\":\"item.kubejs.ritual_summon_bound_blizz\"}"
 							}
 						}
 					}
@@ -808,7 +812,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "7A03B91B11415840"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -832,7 +835,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 				icon: "kubejs:aura_leaf"
 				id: "109F6B48B5CA4221"
-				player_command: false
 				title: "Aura Infusion"
 				type: "command"
 			}]
@@ -852,7 +854,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "43BF2A66732C89E4"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -879,7 +880,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 				icon: "kubejs:aura_leaf"
 				id: "0874E8DB1A76AE45"
-				player_command: false
 				title: "Aura Infusion"
 				type: "command"
 			}]
@@ -962,7 +962,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 				icon: "kubejs:aura_leaf"
 				id: "4014F4C50BC08A30"
-				player_command: false
 				title: "Aura Infusion"
 				type: "command"
 			}]
@@ -1007,7 +1006,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 				icon: "kubejs:aura_leaf"
 				id: "6C551A3BE7841241"
-				player_command: false
 				title: "Aura Infusion"
 				type: "command"
 			}]

@@ -231,6 +231,12 @@ jei.normal.items.hidden = [
     'kubejs:kaolin_clay',
     'kubejs:aura_leaf',
     'kubejs:spirit_of_devotion',
+    'kubejs:heart_of_the_mountain',
+    'kubejs:heart_of_the_inferno',
+    'kubejs:heart_of_the_tempest',
+    'kubejs:heart_of_the_sea',
+    'kubejs:primed_aetheric_heart',
+    'kubejs:primordial_seed',
 
     // Creative items:
     /mekanism:creative_/,
@@ -712,6 +718,7 @@ jei.expert.items.disabled = [
     'thermal:energy_limiter_attachment',
     'thermal:energy_duct',
     'thermal:machine_insolator',
+    'thermal:energy_minecart',
 
     'twilightforest:candelabra',
     'twilightforest:keepsake_casket',

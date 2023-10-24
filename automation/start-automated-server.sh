@@ -102,7 +102,7 @@ start_server() {
 	echo ""
 	echo "Starting server"
 	echo "INFO: Starting Server at " $(date -u +%Y-%m-%d_%H:%M:%S) >>serverstart.log 2>&1
-	java -Xmx${MAX_RAM} ${JAVA_ARGS} @user_jvm_args.txt @libraries/net/minecraftforge/forge/${MCVER}-${FORGEVER}/win_args.txt nogui %*
+	java -Xmx${MAX_RAM} ${JAVA_ARGS} @user_jvm_args.txt @libraries/net/minecraftforge/forge/${MCVER}-${FORGEVER}/unix_args.txt nogui %*
 }
 
 # routine for basic directory checks
@@ -139,11 +139,6 @@ check_dir(){
 check_binaries(){
 	if [ ! -f ${FORGE_JAR} ] ; then
 		echo "WARN: ${FORGE_JAR} not found"  >>serverstart.log 2>&1
-		echo "Required files not found, need to install Forge"
-		install_server
-	fi
-	if [ ! -f ./minecraft_server.${MCVER}.jar ] ; then
-		echo "WARN: minecraft_server.${MCVER}.jar not found" >>serverstart.log 2>&1
 		echo "Required files not found, need to install Forge"
 		install_server
 	fi
@@ -216,7 +211,6 @@ if [[ "$answer" =~ ^([yY][eE][sS]|[yY])+$ ]]; then
 fi
 
 check_dir
-check_connection
 check_binaries
 eula
 
@@ -254,7 +248,6 @@ while true ; do
 
 	#re-validate stuff each server restart
 	check_dir
-	check_connection
 	check_binaries
 	eula
 	echo "INFO: Server-auto-restart commencing"  >>serverstart.log 2>&1

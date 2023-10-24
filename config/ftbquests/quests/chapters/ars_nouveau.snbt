@@ -24,7 +24,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "03F44B1EF1267DE4"
-				player_command: false
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
@@ -94,7 +93,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "0F9F1DDF26525F9B"
-					player_command: false
 					title: "Rare Ars Nouveau Loot Box"
 					type: "command"
 				}
@@ -154,7 +152,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "00000000000005FB"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -253,7 +250,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "00000000000005FC"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -353,7 +349,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "00000000000005FE"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -374,7 +369,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "00000000000009EC"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -439,7 +433,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "0000000000000602"
-					player_command: false
 					title: "Rare Ars Nouveau Loot Box"
 					type: "command"
 				}
@@ -484,7 +477,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 					icon: "kubejs:farmers_delight"
 					id: "0000000000000CAD"
-					player_command: false
 					title: "Farmer's Delight"
 					type: "command"
 				}
@@ -552,7 +544,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "7C201B55C9F00AD3"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -589,7 +580,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "3B92D3705AEB3AA2"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -672,7 +662,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "13A4D5D0FB6AAF30"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -706,7 +695,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "185995ACE655011B"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -757,7 +745,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "0E0F5F21781358A3"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -789,7 +776,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "55CCE0392547A82F"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -816,7 +802,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "658E6A4D80FA8301"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -871,7 +856,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "37131D5E140365A2"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -1035,7 +1019,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "096125B9A6DA61DE"
-					player_command: false
 					title: "Rare Ars Nouveau Loot Box"
 					type: "command"
 				}
@@ -1043,7 +1026,6 @@
 					command: "/execute at @p run summon minecraft:chicken ~ ~2 ~"
 					icon: "minecraft:egg"
 					id: "6F26AB1474F756FC"
-					player_command: false
 					title: "Summon Chicken"
 					type: "command"
 				}
@@ -1070,7 +1052,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "4C18E35BD71FC9C6"
-				player_command: false
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
@@ -1102,7 +1083,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "32BD6621BA65DF4F"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -1143,7 +1123,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "3C644C0B2495BC36"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -1163,7 +1142,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
 				icon: "kubejs:miners_delight"
 				id: "5A6342EB078DF159"
-				player_command: false
 				title: "Miner's Delight"
 				type: "command"
 			}]
@@ -1184,7 +1162,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 				icon: "kubejs:alchemists_delight"
 				id: "5C7AAD35F5713448"
-				player_command: false
 				title: "Alchemist's Delight"
 				type: "command"
 			}]
@@ -1205,7 +1182,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "32B10294788455A9"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -1226,7 +1202,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "3F826BECBAC65089"
-				player_command: false
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
@@ -1247,7 +1222,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				icon: "kubejs:farmers_delight"
 				id: "5DD6D62E0C457716"
-				player_command: false
 				title: "Farmer's Delight"
 				type: "command"
 			}]
@@ -1275,7 +1249,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "6DB8DF770C37C6FF"
-				player_command: false
 				title: "Ars Nouveau Rare Loot Box"
 				type: "command"
 			}]
@@ -1392,7 +1365,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "4D5943A28084DA51"
-				player_command: false
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
@@ -1426,7 +1398,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "10635CFA99A607DE"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -1508,7 +1479,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 				icon: "kubejs:alchemists_delight"
 				id: "097A6D19CCF1D16F"
-				player_command: false
 				title: "Alchemist's Delight"
 				type: "command"
 			}]
@@ -1575,7 +1545,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "49268BE6F3E1218B"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -1596,7 +1565,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				icon: "kubejs:farmers_delight"
 				id: "708695DC518FA6AA"
-				player_command: false
 				title: "Farmer's Delight"
 				type: "command"
 			}]
@@ -1621,7 +1589,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "20587DF83A9CDEE2"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -1656,7 +1623,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "054C8C6E78EF9712"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -1818,7 +1784,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "597B10860B9F7082"
-				player_command: false
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
@@ -1878,7 +1843,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "5FBCFC8E2A3A9F7F"
-				player_command: false
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
@@ -1992,7 +1956,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 					icon: "kubejs:farmers_delight"
 					id: "554D391BC7B04832"
-					player_command: false
 					title: "Farmer's Delight"
 					type: "command"
 				}
@@ -2019,7 +1982,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "25797A58CD3FB9E7"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -2040,7 +2002,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "6AB5D94A72FBBE3B"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -2061,7 +2022,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "71EE3CB169F23535"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -2086,7 +2046,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "74DC74F14E5469F2"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -2106,7 +2065,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "7AC95168237AF555"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -2135,7 +2093,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "7CE9FDA5D58E4515"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -2243,7 +2200,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "2E298084349A0FDF"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -2273,7 +2229,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "6B0B1FC4330D47D7"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]
@@ -2331,7 +2286,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ars_nouveau/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "65B241E708BDD124"
-				player_command: false
 				title: "Rare Ars Nouveau Loot Box"
 				type: "command"
 			}]

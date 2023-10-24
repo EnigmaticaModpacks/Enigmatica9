@@ -57,7 +57,7 @@ ClientEvents.highPriorityAssets((event) => {
             path: 'minecraft:models/item/heart_of_the_sea',
             json_model: {
                 parent: 'minecraft:item/generated',
-                textures: { layer0: 'kubejs:item/heart_of_the_sea' }
+                textures: { layer0: 'kubejs:item/blue_pearl' }
             }
         },
         {

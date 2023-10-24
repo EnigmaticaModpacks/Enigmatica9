@@ -78,7 +78,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "0000000000000E22"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -126,7 +125,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
 				icon: "kubejs:miners_delight"
 				id: "0000000000000CFB"
-				player_command: false
 				title: "Miner's Delight"
 				type: "command"
 			}]
@@ -154,7 +152,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				icon: "kubejs:farmers_delight"
 				id: "0000000000000DFD"
-				player_command: false
 				title: "Farmer's Delight"
 				type: "command"
 			}]
@@ -228,7 +225,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 					icon: "kubejs:farmers_delight"
 					id: "0000000000000E21"
-					player_command: false
 					title: "Farmer's Delight"
 					type: "command"
 				}
@@ -263,7 +259,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "0000000000000E25"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -298,7 +293,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "0DA435A9800123EC"
-					player_command: false
 					title: "Occultism Epic Loot Chest"
 					type: "command"
 				}
@@ -306,7 +300,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "4FAC0A541EDA605E"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -340,7 +333,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "64B928DADA731482"
-					player_command: false
 					title: "Occultism Epic Loot Chest"
 					type: "command"
 				}
@@ -348,7 +340,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "2D08D8D8EDB7FCA5"
-					player_command: false
 					title: "Alchemist's Delight"
 					type: "command"
 				}
@@ -377,7 +368,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
 					icon: "kubejs:legendary_lootbox"
 					id: "0000000000000E53"
-					player_command: false
 					title: "Occultism Legendary Loot Box"
 					type: "command"
 				}
@@ -385,7 +375,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 					icon: "kubejs:sorcerers_delight"
 					id: "03B4E985392B7110"
-					player_command: false
 					title: "Sorcerer's Delight"
 					type: "command"
 				}
@@ -423,7 +412,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "0000000000000E6C"
-				player_command: false
 				title: "Occultism Epic Loot Box"
 				type: "command"
 			}]
@@ -459,7 +447,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "0E27087990A1AE2B"
-					player_command: false
 					title: "Occultism Epic Loot Chest"
 					type: "command"
 				}
@@ -481,7 +468,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
 				icon: "kubejs:legendary_lootbox"
 				id: "0000000000000E55"
-				player_command: false
 				title: "Occultism Legendary Loot Box"
 				type: "command"
 			}]
@@ -506,7 +492,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "0000000000000E5D"
-				player_command: false
 				title: "Occultism Epic Loot Box"
 				type: "command"
 			}]
@@ -536,7 +521,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "0000000000000E5B"
-					player_command: false
 					title: "Occultism Epic Loot Box"
 					type: "command"
 				}
@@ -578,7 +562,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "0000000000000E36"
-				player_command: false
 				title: "Occultism Epic Loot Chest"
 				type: "command"
 			}]
@@ -617,7 +600,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "120DF5E2156628C5"
-					player_command: false
 					title: "Occultism Epic Loot Chest"
 					type: "command"
 				}
@@ -625,7 +607,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "5B611AD85C18BD01"
-					player_command: false
 					title: "Alchemist's Delight"
 					type: "command"
 				}
@@ -655,7 +636,6 @@
 					command: "execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
 					icon: "kubejs:miners_delight"
 					id: "0000000000000E48"
-					player_command: false
 					title: "Miner's Delight"
 					type: "command"
 				}
@@ -663,7 +643,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "0000000000000E49"
-					player_command: false
 					title: "Occultism Epic Loot Box"
 					type: "command"
 				}
@@ -705,7 +684,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "0000000000000E67"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -739,7 +717,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "0000000000000E68"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -772,7 +749,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "0000000000000E37"
-					player_command: false
 					title: "Occultism Epic Loot Box"
 					type: "command"
 				}
@@ -810,7 +786,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
 					icon: "kubejs:miners_delight"
 					id: "0000000000000E4A"
-					player_command: false
 					title: "Miner's Delight"
 					type: "command"
 				}
@@ -818,7 +793,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
 					icon: "kubejs:miners_delight"
 					id: "0000000000000E69"
-					player_command: false
 					title: "Miner's Delight"
 					type: "command"
 				}
@@ -857,7 +831,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
 					icon: "kubejs:legendary_lootbox"
 					id: "0000000000000E4E"
-					player_command: false
 					title: "Occultism Legendary Loot Box"
 					type: "command"
 				}
@@ -865,7 +838,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
 					icon: "kubejs:miners_delight"
 					id: "0000000000000E6A"
-					player_command: false
 					title: "Miner's Delight"
 					type: "command"
 				}
@@ -901,7 +873,6 @@
 				command: "execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
 				icon: "kubejs:miners_delight"
 				id: "0000000000000E45"
-				player_command: false
 				title: "Miner's Delight"
 				type: "command"
 			}]
@@ -928,7 +899,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "69B546B3BFC6B80E"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -960,7 +930,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				icon: "kubejs:farmers_delight"
 				id: "0000000000000DFC"
-				player_command: false
 				title: "Farmer's Delight"
 				type: "command"
 			}]
@@ -995,7 +964,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "0000000000000E3D"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -1003,7 +971,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 					icon: "kubejs:farmers_delight"
 					id: "0000000000000E3E"
-					player_command: false
 					title: "Farmer's Delight"
 					type: "command"
 				}
@@ -1011,7 +978,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
 					icon: "kubejs:legendary_lootbox"
 					id: "3B0ABDBA2725BC6D"
-					player_command: false
 					title: "Occultism Legendary Loot Box"
 					type: "command"
 				}
@@ -1055,7 +1021,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "0000000000000E44"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -1102,7 +1067,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
 					icon: "kubejs:legendary_lootbox"
 					id: "0000000000000E50"
-					player_command: false
 					title: "Occultism Legendary Loot Box"
 					type: "command"
 				}
@@ -1110,7 +1074,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
 					icon: "kubejs:legendary_lootbox"
 					id: "0000000000000E51"
-					player_command: false
 					title: "Occultism Legendary Loot Box"
 					type: "command"
 				}
@@ -1143,7 +1106,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "0000000000000E6F"
-					player_command: false
 					title: "Occultism Epic Loot Box"
 					type: "command"
 				}
@@ -1151,7 +1113,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "0000000000000E70"
-					player_command: false
 					title: "Occultism Epic Loot Box"
 					type: "command"
 				}
@@ -1185,7 +1146,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "3F636CC422DFEEDA"
-					player_command: false
 					title: "Occultism Epic Loot Chest"
 					type: "command"
 				}
@@ -1193,7 +1153,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "6A3F63D2D3360EDE"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -1228,7 +1187,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "0000000000000E23"
-				player_command: false
 				title: "Occultism Epic Loot Box"
 				type: "command"
 			}]
@@ -1258,7 +1216,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "0000000000000E76"
-				player_command: false
 				title: "Occultism Epic Loot Chest"
 				type: "command"
 			}]
@@ -1287,7 +1244,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "132D5C23B97D5E1F"
-				player_command: false
 				title: "Occultism Epic Loot Box"
 				type: "command"
 			}]
@@ -1320,7 +1276,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
 					icon: "kubejs:legendary_lootbox"
 					id: "6CA0ED39817B0F4E"
-					player_command: false
 					title: "Occultism Legendary Loot Chest"
 					type: "command"
 				}
@@ -1328,7 +1283,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
 					icon: "kubejs:legendary_lootbox"
 					id: "55F8A50BA2FEEFF5"
-					player_command: false
 					title: "Occultism Legendary Loot Chest"
 					type: "command"
 				}
@@ -1360,7 +1314,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				icon: "kubejs:farmers_delight"
 				id: "63C1F20FAAC09395"
-				player_command: false
 				title: "Farmer's Delight"
 				type: "command"
 			}]
@@ -1415,7 +1368,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "541B0FFB87E21DA6"
-				player_command: false
 				title: "Occultism Epic Loot Chest"
 				type: "command"
 			}]
@@ -1439,7 +1391,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 				icon: "kubejs:alchemists_delight"
 				id: "664C3245FFD0C0A6"
-				player_command: false
 				title: "Alchemist's Delight"
 				type: "command"
 			}]
@@ -1464,7 +1415,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				icon: "kubejs:farmers_delight"
 				id: "52E295A408C0602E"
-				player_command: false
 				title: "Farmer's Delight"
 				type: "command"
 			}]
@@ -1494,7 +1444,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				icon: "kubejs:farmers_delight"
 				id: "4D224E3CA3AF70CA"
-				player_command: false
 				title: "Farmer's Delight"
 				type: "command"
 			}]
