@@ -5,9 +5,9 @@ ClientEvents.highPriorityAssets((event) => {
     added_items.base.forEach((item) => {
         if (item.nbt == null) item.nbt = '';
         if (item.after == null) {
-            payload.added.push({ stack: 'item:' + item.id + item.nbt})
+            payload.added.push({ stack: `item:${item.id}${item.nbt}`})
         } else {
-            payload.added.push({ stack: 'item:' + item.id + item.nbt, after: 'item:' + item.after})
+            payload.added.push({ stack: `item:${item.id}${item.nbt}`, after: `item:${item.after}`})
         }
     });
 
