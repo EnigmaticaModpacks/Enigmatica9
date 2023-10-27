@@ -217,6 +217,11 @@
 					type: "item"
 				}
 				{
+					id: "4C7C143A9FAD1DF6"
+					item: "naturesaura:eye"
+					type: "item"
+				}
+				{
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "39B68CC0E19837B6"
