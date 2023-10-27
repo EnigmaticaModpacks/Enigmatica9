@@ -1813,8 +1813,8 @@
 				item: "minecraft:quartz"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 2.0d
+			x: -6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["79B755D0BDB6A8B7"]
@@ -1840,8 +1840,8 @@
 				item: "create:millstone"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 1.0d
+			x: -5.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3A7AEB067C49F899"]
@@ -2456,7 +2456,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["729E9D41A28D0E4D"]
+			dependencies: ["16E90BC107468EC2"]
 			description: [
 				"With heightened spell casting ability comes the ability to improve some automation through Spell Turrets.  "
 				""
@@ -2511,14 +2511,13 @@
 				}
 				type: "item"
 			}]
-			shape: "hexagon"
 			tasks: [{
 				id: "3716441EC6ACD043"
 				item: "ars_nouveau:basic_spell_turret"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 2.5d
+			x: -5.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["729E9D41A28D0E4D"]
