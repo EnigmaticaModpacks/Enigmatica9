@@ -6,6 +6,10 @@
 -   Minor tweaks to quest dependencies to create a better flow [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
 -   Environmental Eye is now an early quest reward [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
 
+### 🐛 Fixed Bugs
+
+-   [Expert] Set Default Exit Dim for BumbleZone to Twilight Forest [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
+
 ---
 
 ### Enigmatica 9 v1.15.1
