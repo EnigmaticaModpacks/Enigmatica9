@@ -63,7 +63,6 @@ ServerEvents.recipes((event) => {
             input: 'ae2:sky_stone_block',
             id: `${id_prefix}sky_dust`
         },
-
         {
             output: [
                 { item: 'create:wheat_flour', count: 1, chance: 1.0 },
@@ -72,6 +71,11 @@ ServerEvents.recipes((event) => {
             ],
             input: '#forge:crops/wheat',
             id: `${id_prefix}wheat_flour`
+        },
+        {
+            output: [{ item: 'minecraft:glowstone_dust', count: 4, chance: 1.0 }],
+            input: '#forge:storage_blocks/glowstone',
+            id: `${id_prefix}glowstone`
         }
     ];
 

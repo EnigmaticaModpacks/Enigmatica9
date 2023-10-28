@@ -52,7 +52,7 @@
 				}
 			]
 			title: "Basic Metallurgy"
-			x: -0.5d
+			x: -2.5d
 			y: -7.5d
 		}
 		{
@@ -214,6 +214,11 @@
 							Potion: "apotheosis:knowledge"
 						}
 					}
+					type: "item"
+				}
+				{
+					id: "4C7C143A9FAD1DF6"
+					item: "naturesaura:eye"
 					type: "item"
 				}
 				{
@@ -522,8 +527,8 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
-			y: 1.0d
+			x: -3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -820,6 +825,7 @@
 				""
 				"Discover the rest of the process through JEI."
 			]
+			hide_dependency_lines: true
 			icon: "immersiveengineering:ingot_aluminum"
 			id: "345CBD118EAA0C09"
 			rewards: [{
@@ -847,8 +853,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: 2.0d
+			x: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["73CDA6ED2393DE42"]
@@ -1170,7 +1176,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["66585A158F41DE44"]
@@ -1261,16 +1267,40 @@
 		{
 			dependencies: ["79B755D0BDB6A8B7"]
 			description: [
-				"More finely crafted apparatus will need more delicately formed metals."
+				"More finely crafted devices will need more delicately processed materials than can easily be done by hand."
 				""
-				"These tough mechanical machines, the Mechanical Press and Rolling Mill, are up to the task of properly pounding out plates or forming wires and rods, respectively. "
+				"These tough mechanical devices are up to the task. "
+				""
+				"● Millstone - Capable of grinding "
+				"  materials much more finely than can "
+				"  be achieved by hand, the Millstone will "
+				"  occasionally produce secondary       "
+				"  materials that may be quite useful, "
+				"  such as Lead and Quartz."
+				""
+				"● Rolling Mill - Working from Ingots, the "
+				"  Rolling Mill can create the fine Rods "
+				"  and Wires required by many "
+				"  advanced devices. "
+				""
+				"● Mechanical Press - A device strong "
+				"  enough to flatten Ingots into Plates "
+				"  in only a few strokes. Well worth the "
+				"  effort of setting it up.  "
 			]
 			id: "44B02A5817C4144A"
-			rewards: [{
-				id: "0FC05A9E5B974922"
-				item: "ars_creo:starbuncle_wheel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0FC05A9E5B974922"
+					item: "ars_creo:starbuncle_wheel"
+					type: "item"
+				}
+				{
+					id: "36C648094A71AC39"
+					item: "createaddition:straw"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "7E269B72F57C62D3"
@@ -1280,6 +1310,11 @@
 				{
 					id: "1A61D7D0519A6615"
 					item: "createaddition:rolling_mill"
+					type: "item"
+				}
+				{
+					id: "00BD1D8A00CAB755"
+					item: "create:millstone"
 					type: "item"
 				}
 			]
@@ -1349,7 +1384,7 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
+			x: -2.5d
 			y: -6.5d
 		}
 		{
@@ -1384,7 +1419,7 @@
 				title: "Alloying"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.5d
 			y: -5.5d
 		}
 		{
@@ -1795,53 +1830,7 @@
 			]
 			title: "Tree of Life"
 			x: -3.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["347A644441BCF449"]
-			description: ["Often found clustered in with Tin ores, Quartz may be extracted occasionally when grinding the ore with better tools, such as the Mill. "]
-			id: "5B7806FED7D58329"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "2D22DA949427C0B4"
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "76702DE4AA5CCE26"
-				item: "minecraft:quartz"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["79B755D0BDB6A8B7"]
-			description: ["Made from considerably tougher materials than a simple Mortar, the Millstone can grind tougher ores and may even occasionally recover some secondary materials.  "]
-			hide_dependency_lines: true
-			id: "347A644441BCF449"
-			rewards: [
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-					icon: "kubejs:sorcerers_delight"
-					id: "651C07D976AD902F"
-					title: "Sorcerer's Delight"
-					type: "command"
-				}
-				{
-					id: "0E1F9854A317EE27"
-					item: "createaddition:straw"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "0F473BC094DDA58D"
-				item: "create:millstone"
-				type: "item"
-			}]
-			x: -5.5d
-			y: 1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3A7AEB067C49F899"]
@@ -2456,7 +2445,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["729E9D41A28D0E4D"]
+			dependencies: ["16E90BC107468EC2"]
 			description: [
 				"With heightened spell casting ability comes the ability to improve some automation through Spell Turrets.  "
 				""
@@ -2517,13 +2506,12 @@
 				item: "ars_nouveau:basic_spell_turret"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 2.5d
+			x: 2.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["729E9D41A28D0E4D"]
+			dependencies: ["345CBD118EAA0C09"]
 			description: ["An empowered ritual that grants an hour of flight to up to five entities. Useful for exploration far from home. Be sure to bring the materials to re-cast it if necessary. "]
-			hide_dependency_lines: true
 			icon: "ars_nouveau:ritual_flight"
 			id: "6952D7AD61181E37"
 			rewards: [{
@@ -2548,7 +2536,7 @@
 				}
 			]
 			x: -1.0d
-			y: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["1C6BF5FE58C49456"]

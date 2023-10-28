@@ -1,3 +1,17 @@
+### Enigmatica 9 v1.16.0
+
+### 🌟 Improvements
+
+-   Glowstone blocks may now be crushed by Ars Nouveau Crush Glyph [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
+-   Minor tweaks to quest dependencies to create a better flow [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
+-   Environmental Eye is now an early quest reward [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
+
+### 🐛 Fixed Bugs
+
+-   [Expert] Set Default Exit Dim for BumbleZone to Twilight Forest [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
+
+---
+
 ### Enigmatica 9 v1.15.1
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.15.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.15.1.md)
