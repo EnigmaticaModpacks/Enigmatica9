@@ -35,7 +35,7 @@
 	#If the Aura Imbalance effect of aura containers in players' inventories being filled if the Aura levels are high enough should occur
 	cacheRechargeEffect = true
 	#If the Aura Imbalance effect of explosions happening randomly if Aura levels are too low should occur
-	explosionEffect = true
+	explosionEffect = false
 	#If the Aura Imbalance effect of breathlessness if Aura levels are too low should occur
 	breathlessEffect = true
 	#If the Aura Imbalance effect of passive mobs being angered if Aura levels are too low should occur
