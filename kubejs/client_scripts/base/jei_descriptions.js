@@ -321,7 +321,7 @@ JEIEvents.information((event) => {
         {
             items: ['supplementaries:antique_ink'],
             text: [
-                `May be obtained through fishing, inside urns, or purchased from Cartographers.`,
+                `May be obtained very rarely through fishing, inside urns, or purchased from Cartographers.`,
                 ` `,
                 `For an easy supply, try an Aquatic Entangler with Junk Nets!`
             ]

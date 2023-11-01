@@ -71,7 +71,7 @@
 			description: [
 				"Refined from Sculk, this mineral is associated with primal chaos. "
 				""
-				"Normally exceptionally rare, the ancients of this land appear to have been harvesting it for unknown ends. "
+				"Normally exceptionally rare, the ancients of this land appear to have been harvesting it for unknown purposes. "
 			]
 			id: "714A42E9CE3C32EA"
 			rewards: [{
@@ -848,7 +848,11 @@
 		}
 		{
 			dependencies: ["17F735810850C368"]
-			description: ["A fine mineral said to be steeped with the souls of those interred in the earth. "]
+			description: [
+				"A fine mineral said to be steeped with the souls of those interred in the earth. "
+				""
+				"Though common in the Nether, Soul Powder is also abundant in some spooky places in the Twilight Forest."
+			]
 			id: "126F4E070F219A8B"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"

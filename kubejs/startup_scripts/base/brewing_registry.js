@@ -277,6 +277,11 @@ MoreJSEvents.registerPotionBrewing((event) => {
             reagent: 'minecraft:honeycomb',
             input: 'minecraft:awkward',
             output: 'minecraft:healing'
+        },
+        {
+            reagent: 'minecraft:glowstone_dust',
+            input: 'apotheosis:knowledge',
+            output: 'apotheosis:strong_knowledge'
         }
     ];
 

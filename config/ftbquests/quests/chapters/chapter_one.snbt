@@ -883,7 +883,9 @@
 			description: [
 				"Though many glyphs may be found and used to repair the spell book, the Scribe’s Table may also be used to craft any glyph. "
 				""
-				"Finding proper spell ink, however, may prove more difficult as it must be specially prepared using a process that can take years."
+				"Finding proper spell ink, however, may prove more difficult as it must be specially prepared using a process that can take years. "
+				""
+				"It was once heavily traded by the seafaring folk that specialized in its creation. Perhaps some could be retrieved with some good old-fashioned trawling. "
 			]
 			id: "7507572BD048B6C9"
 			rewards: [{
@@ -1158,6 +1160,10 @@
 				"With the elements mastered, only one task remains before the Tree of Life may be restored: Winter’s Reign must end. "
 				""
 				"Travel to the frigid glaciers and defeat the Snow Queen to obtain Subzero Crystals."
+				""
+				"================================="
+				""
+				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the Subzero Crystal and induce it to grow. "
 			]
 			hide_dependency_lines: true
 			id: "729E9D41A28D0E4D"
@@ -1472,7 +1478,7 @@
 				""
 				"To let the Wixie know what potions to brew, place some brewed potions on Arcane Pedestals or Platforms adjacent to her Cauldron. These can be obtained by brewing in the Mixing Cauldron and Right-Clicking it with Glass Bottles. "
 				""
-				"The entire chain must be present for her to do her job. So, to brew a Potion of Ancient Knowledge, she’ll need a pedestal with an Awkward Potion and another with a Potion of Ancient Knowledge. She’ll need a Potion Jar for each step as well. Multiple Wixies may work together as well, with each fulfilling the next step in the chain. "
+				"The entire chain must be present for her to do her job. So, to brew a Potion of Ancient Knowledge, she’ll need a pedestal with an Awkward Potion and another with a Potion of Ancient Knowledge. She’ll need a Potion Jar for each step as well. Multiple Wixies may work together, with each fulfilling the next step in the chain. "
 				""
 				"More information can be found in the Worn Notebook. "
 			]
@@ -1949,7 +1955,7 @@
 				""
 				"Begin by locating some Certus Quartz; the Wilden Grove will undoubtedly have left some behind in their ore mounds. "
 				""
-				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the quartz and induce it to grow. "
+				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the Certus Quartz and induce it to grow. "
 			]
 			hide_dependency_lines: true
 			id: "0BAE6EBFEA3026B9"
@@ -2210,8 +2216,8 @@
 				title: "Tipped Arrows"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -3.0d
+			x: 1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4682D4537535937C"]
@@ -2241,7 +2247,9 @@
 		{
 			dependencies: ["370C40BCC3A6A055"]
 			description: [
-				"Ordinarily Crush may only be used on blocks placed in the world. However, by augmenting it with Sensitive, it can target items dropped on the ground as well. "
+				"Ordinarily Crush may only be used on blocks placed in the world. For example, when creating Compressed Stone. "
+				""
+				"However, by augmenting it with Sensitive, it can target items dropped on the ground as well allowing it to function on Raw Ore as well."
 				""
 				"The following spell form will crush items on the ground: "
 				""
@@ -2321,6 +2329,8 @@
 				"================================="
 				""
 				"Obtain Wool of each color and provide it to the Ram. "
+				""
+				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the Therium and induce it to grow. "
 			]
 			id: "032D29DD7D946EDB"
 			rewards: [

@@ -1,5 +1,8 @@
 // priority: 100
 MoreJSEvents.registerPotionBrewing((event) => {
+    if (global.isExpertMode == false) {
+        return;
+    }
     // Documentation: https://github.com/AlmostReliable/morejs/wiki/Potion-Brewing
     /**
      * Removes all potions where an awkward potion is used as the base potion ingredient.
@@ -10,5 +13,5 @@ MoreJSEvents.registerPotionBrewing((event) => {
      */
     //event.removeByPotion("minecraft:awkward", null, null);
 
-    event.removeByPotion('apotheosis:knowledge', 'minecraft:experience_bottle', null);
+    event.removeByPotion(null, 'minecraft:nether_wart', null);
 });
