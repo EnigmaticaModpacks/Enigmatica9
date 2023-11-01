@@ -1474,7 +1474,7 @@
 				""
 				"To let the Wixie know what potions to brew, place some brewed potions on Arcane Pedestals or Platforms adjacent to her Cauldron. These can be obtained by brewing in the Mixing Cauldron and Right-Clicking it with Glass Bottles. "
 				""
-				"The entire chain must be present for her to do her job. So, to brew a Potion of Ancient Knowledge, she’ll need a pedestal with an Awkward Potion and another with a Potion of Ancient Knowledge. She’ll need a Potion Jar for each step as well. Multiple Wixies may work together as well, with each fulfilling the next step in the chain. "
+				"The entire chain must be present for her to do her job. So, to brew a Potion of Ancient Knowledge, she’ll need a pedestal with an Awkward Potion and another with a Potion of Ancient Knowledge. She’ll need a Potion Jar for each step as well. Multiple Wixies may work together, with each fulfilling the next step in the chain. "
 				""
 				"More information can be found in the Worn Notebook. "
 			]
@@ -2212,8 +2212,8 @@
 				title: "Tipped Arrows"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -3.0d
+			x: 1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4682D4537535937C"]
@@ -2243,7 +2243,9 @@
 		{
 			dependencies: ["370C40BCC3A6A055"]
 			description: [
-				"Ordinarily Crush may only be used on blocks placed in the world. For example, for creating Compressed Stone. However, by augmenting it with Sensitive, it can target items dropped on the ground as well allowing it to function on Raw Ore as well."
+				"Ordinarily Crush may only be used on blocks placed in the world. For example, when creating Compressed Stone. "
+				""
+				"However, by augmenting it with Sensitive, it can target items dropped on the ground as well allowing it to function on Raw Ore as well."
 				""
 				"The following spell form will crush items on the ground: "
 				""
