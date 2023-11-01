@@ -108,6 +108,7 @@ ServerEvents.recipes((event) => {
         {
             output: 'ars_elemental:glyph_phantom_grasp',
             inputItems: [
+                { item: { tag: 'forge:essences/anima' } },
                 {
                     item: [
                         { item: 'twilightforest:phantom_helmet' },
@@ -115,7 +116,6 @@ ServerEvents.recipes((event) => {
                         { item: 'twilightforest:knight_phantom_trophy' }
                     ]
                 },
-                { item: { item: 'ars_elemental:anima_essence' } },
                 { item: { item: 'supplementaries:antique_ink' } }
             ],
             count: 1,
@@ -125,17 +125,24 @@ ServerEvents.recipes((event) => {
         {
             output: 'ars_nouveau:glyph_hex',
             inputItems: [
-                { item: { item: 'ars_nouveau:abjuration_essence' } },
+                { item: { tag: 'forge:essences/anima' } },
                 { item: { item: 'hexerei:belladonna_berries' } },
-                { item: { item: 'minecraft:blaze_rod' } },
-                { item: { item: 'minecraft:blaze_rod' } },
-                { item: { item: 'minecraft:blaze_rod' } },
-                { item: { item: 'ars_elemental:anima_essence' } },
                 { item: { item: 'supplementaries:antique_ink' } }
             ],
             count: 1,
             exp: 160,
             id: 'ars_nouveau:glyph_hex'
+        },
+        {
+            output: 'ars_nouveau:glyph_break',
+            inputItems: [
+                { item: { item: 'immersiveengineering:drillhead_steel' } },
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { item: 'supplementaries:antique_ink' } }
+            ],
+            count: 1,
+            exp: 55,
+            id: 'ars_nouveau:glyph_break'
         }
     ];
 
