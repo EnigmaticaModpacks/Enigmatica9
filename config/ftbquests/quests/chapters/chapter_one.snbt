@@ -1160,6 +1160,10 @@
 				"With the elements mastered, only one task remains before the Tree of Life may be restored: Winter’s Reign must end. "
 				""
 				"Travel to the frigid glaciers and defeat the Snow Queen to obtain Subzero Crystals."
+				""
+				"================================="
+				""
+				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the Subzero Crystal and induce it to grow. "
 			]
 			hide_dependency_lines: true
 			id: "729E9D41A28D0E4D"
@@ -1951,7 +1955,7 @@
 				""
 				"Begin by locating some Certus Quartz; the Wilden Grove will undoubtedly have left some behind in their ore mounds. "
 				""
-				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the quartz and induce it to grow. "
+				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the Certus Quartz and induce it to grow. "
 			]
 			hide_dependency_lines: true
 			id: "0BAE6EBFEA3026B9"
@@ -2325,6 +2329,8 @@
 				"================================="
 				""
 				"Obtain Wool of each color and provide it to the Ram. "
+				""
+				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the Therium and induce it to grow. "
 			]
 			id: "032D29DD7D946EDB"
 			rewards: [
