@@ -6,11 +6,13 @@
 -   Minor tweaks to quest dependencies to create a better flow [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
 -   Environmental Eye is now an early quest reward [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
 -   Low Aura will no longer cause explosions [\#748](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/748)
+-   Upgrading Potions of Knowledge to the level two version now uses Glowstone Dust similar to all other potions [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
+-   [Expert] Awkward potions are no longer brewable with Netherwart to promote the use of the far easier to obtain Abjuration Essence [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
 
 ### 🐛 Fixed Bugs
 
 -   [Expert] Set Default Exit Dim for BumbleZone to Twilight Forest [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
--   XP Melting now requires Superheating in Create to avoid a conflict with potion brewing [\#748](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/748)
+-   XP Melting now requires Superheating in Create to avoid a conflict with potion brewing [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
 
 ---
 

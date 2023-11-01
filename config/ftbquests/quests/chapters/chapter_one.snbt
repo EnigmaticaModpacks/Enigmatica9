@@ -883,7 +883,9 @@
 			description: [
 				"Though many glyphs may be found and used to repair the spell book, the Scribe’s Table may also be used to craft any glyph. "
 				""
-				"Finding proper spell ink, however, may prove more difficult as it must be specially prepared using a process that can take years."
+				"Finding proper spell ink, however, may prove more difficult as it must be specially prepared using a process that can take years. "
+				""
+				"It was once heavily traded by the seafaring folk that specialized in its creation. Perhaps some could be retrieved with some good old-fashioned trawling. "
 			]
 			id: "7507572BD048B6C9"
 			rewards: [{
