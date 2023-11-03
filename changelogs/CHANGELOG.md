@@ -11,7 +11,7 @@
 -   [Expert] Nether Wart may now be used to make Ethanol more efficiently [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
 -   [Expert] The Break Glyph no longer requires Iron, making it accessible closer to when a Tier 2 book is available [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
 -   [Expert] Soul Powder quest has been updated to help clarify that it can be mined in the Twilight Forest too [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
--   [Expert] Skyseeker Shoes now grants a massive step height bonus [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
+-   [Expert] Skyseeker Shoes now grants a massive step height bonus [\#753](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/753)
 
 ### 🐛 Fixed Bugs
 
