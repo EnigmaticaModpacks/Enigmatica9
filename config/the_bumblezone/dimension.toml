@@ -92,3 +92,11 @@
 	#
 	defaultDimension = "minecraft:overworld"
 
+["The Bumblezone Welcome Options"]
+	# 
+	#-----------------------------------------------------
+	#
+	# Whether to show message saying to check out Bumblezone's advancements when you get enar beehive for first time.
+	#
+	enableInitialWelcomeMessage = true
+
