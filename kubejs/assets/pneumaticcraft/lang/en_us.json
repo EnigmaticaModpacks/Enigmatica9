@@ -40,5 +40,7 @@
 	"pneumaticcraft.gui.jei.description.createaddition_liquid_blaze_burner.smouldering": "Liquid - Smouldering",
 	"pneumaticcraft.gui.jei.description.createaddition_liquid_blaze_burner.fading": "Liquid - Fading",
 	"pneumaticcraft.gui.jei.description.createaddition_liquid_blaze_burner.kindled": "Liquid - Kindled",
-	"pneumaticcraft.gui.jei.description.createaddition_liquid_blaze_burner.seething": "Liquid - Seething"
+	"pneumaticcraft.gui.jei.description.createaddition_liquid_blaze_burner.seething": "Liquid - Seething",
+	"pneumaticcraft.advancement.root": "The First Explosion (of many?)",
+	"pneumaticcraft.advancement.root.desc": "Throw Iron on the ground and create an explosion close to it."
 }

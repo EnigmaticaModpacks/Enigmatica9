@@ -12,4 +12,6 @@ enableBulkDrop = true
 allowBulkTransferAllOnEmptySlot = false
 #Should holding shift and moving your mouse over items quick-transfer them without requiring each to be clicked?
 enableShiftDrag = true
+#Should shift-clicking outside of the screen drop all items of the same type at once?
+enableScreenBulkDrop = true
 

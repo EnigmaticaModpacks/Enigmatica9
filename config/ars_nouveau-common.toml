@@ -20,8 +20,6 @@
 	#Archwood forest spawn weight
 	#Range: > 0
 	archwoodForest = 2
-	#Inform the player of Dynamic lights once.
-	informLights = true
 	#Should the Wilden Chimera dive bomb destroy blocks?
 	destructiveDiveBomb = true
 	#How many inventories can lectern support per bookwyrm
@@ -49,6 +47,9 @@
 [item]
 	#Spawn Caster Tomes in Dungeon Loot?
 	spawnTomes = true
+	#How much mana the Ring of Jumping consumes per jump
+	#Range: 0 ~ 10000
+	jumpRingCost = 30
 
 #Debug
 [debug]

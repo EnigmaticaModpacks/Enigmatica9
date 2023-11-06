@@ -36,19 +36,19 @@ ServerEvents.recipes((event) => {
         {
             results: [{ fluid: 'sophisticatedcore:xp_still', amount: 60 }],
             ingredients: [{ item: 'create:experience_nugget' }],
-            heatRequirement: 'heated',
+            heatRequirement: 'superheated',
             id: `${id_prefix}experience_nugget_to_liquid`
         },
         {
             results: [{ fluid: 'sophisticatedcore:xp_still', amount: 60 }],
             ingredients: [{ item: 'ars_nouveau:experience_gem' }],
-            heatRequirement: 'heated',
+            heatRequirement: 'superheated',
             id: `${id_prefix}experience_gem_to_liquid`
         },
         {
             results: [{ fluid: 'sophisticatedcore:xp_still', amount: 240 }],
             ingredients: [{ item: 'ars_nouveau:greater_experience_gem' }],
-            heatRequirement: 'heated',
+            heatRequirement: 'superheated',
             id: `${id_prefix}greater_experience_gem_to_liquid`
         },
         {

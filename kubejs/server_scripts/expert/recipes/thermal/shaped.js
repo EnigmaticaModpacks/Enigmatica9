@@ -481,6 +481,18 @@ ServerEvents.recipes((event) => {
                 C: '#forge:nuggets/lead'
             },
             id: `${id_prefix}explosive_grenade`
+        },
+        {
+            output: 'thermal:device_xp_condenser',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: '#forge:nuggets/electrum',
+                B: '#forge:gears/silver',
+                C: 'thermal:xp_crystal',
+                D: 'ars_nouveau:blue_archwood_log',
+                E: 'thermal:redstone_servo'
+            },
+            id: 'thermal:device_xp_condenser'
         }
     ];
 

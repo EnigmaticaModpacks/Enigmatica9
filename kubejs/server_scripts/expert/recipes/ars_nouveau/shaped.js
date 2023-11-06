@@ -177,6 +177,16 @@ ServerEvents.recipes((event) => {
                 D: 'ae2:charged_certus_quartz_crystal'
             },
             id: `${id_prefix}relay_splitter`
+        },
+        {
+            output: 'ars_nouveau:spell_sensor',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:ingots/gold',
+                B: '#forge:planks/archwood',
+                C: 'glassential:glass_redstone'
+            },
+            id: `${id_prefix}spell_sensor`
         }
     ];
 

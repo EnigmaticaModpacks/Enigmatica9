@@ -6,11 +6,6 @@ ServerEvents.tags('item', (event) => {
             /sophisticatedstorage:.*barrel/,
             /cabinet/,
             /shulker_box/,
-            /rftoolsstorage:storage_module/,
-            /cfm:.*_cabinet/,
-            /cfm:.*_drawer/,
-            /cfm:.*_cooler/,
-            /cfm:.*_crate/,
             '#forge:chests',
             'farmersdelight:basket',
             'immersiveengineering:crate',
@@ -18,7 +13,6 @@ ServerEvents.tags('item', (event) => {
             'minecraft:barrel',
             'minecraft:dispenser',
             'minecraft:dropper'
-            // 'rftoolsstorage:modular_storage'
         ])
         .remove([
             'naturesaura:sky_chest',

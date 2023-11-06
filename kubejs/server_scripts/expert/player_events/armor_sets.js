@@ -31,6 +31,10 @@ const armor_sets = [
         effects: [{ potion: 'ars_nouveau:glide', amp: 0 }]
     },
     {
+        armor: [null, null, null, 'naturesaura:sky_shoes'],
+        effects: [{ potion: 'occultism:step_height', amp: 1 }]
+    },
+    {
         armor: [
             'naturesaura:depth_helmet',
             'naturesaura:depth_chest',

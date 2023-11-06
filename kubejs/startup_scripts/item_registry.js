@@ -130,5 +130,6 @@ StartupEvents.registry('item', (event) => {
         .texture(`kubejs:item/heart_of_the_mountain`)
         .rarity('uncommon');
     event.create('heart_of_the_tempest').group('KubeJS').texture(`kubejs:item/heart_of_the_tempest`).rarity('uncommon');
+    event.create('heart_of_the_sea').group('KubeJS').texture(`kubejs:item/heart_of_the_sea`).rarity('uncommon');
     event.create('primed_aetheric_heart').group('KubeJS').texture(`kubejs:item/primed_aetheric_heart`).rarity('rare');
 });

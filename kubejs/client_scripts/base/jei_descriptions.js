@@ -153,10 +153,6 @@ JEIEvents.information((event) => {
             text: ['Grows occasionally on Corundum Blocks when grown underground.']
         },
         {
-            items: ['occultism:tallow'],
-            text: [`The Butcher's Knife has been disabled. Craft tallow instead.`]
-        },
-        {
             items: ['hexerei:animal_fat'],
             text: [`Drops from most large animals.`]
         },
@@ -325,7 +321,7 @@ JEIEvents.information((event) => {
         {
             items: ['supplementaries:antique_ink'],
             text: [
-                `May be obtained through fishing, inside urns, or purchased from Cartographers.`,
+                `May be obtained very rarely through fishing, inside urns, or purchased from Cartographers.`,
                 ` `,
                 `For an easy supply, try an Aquatic Entangler with Junk Nets!`
             ]

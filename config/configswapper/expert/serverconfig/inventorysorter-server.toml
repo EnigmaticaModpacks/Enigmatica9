@@ -1,0 +1,8 @@
+
+#Inventory sorter blacklists
+[blacklists]
+	#Container blacklist
+	containerBlacklist = ["sophisticatedbackpacks:backpack", "ae2:item_terminal", "sophisticatedstorage:limited_barrel", "ae2:wirelesscraftingterm", "sophisticatedstorage:storage", "ae2:patternterm", "ae2:craftingterm", "ae2:wireless", "ae2:wirelessterm"]
+	#Slot type blacklist
+	slotBlacklist = ["net.p3pp3rf1y.sophisticatedcore.upgrades.FilterLogicContainer$FilterLogicSlot", "net.p3pp3rf1y.sophisticatedcore.common.gui.SlotSuppliedHandler", "net.p3pp3rf1y.sophisticatedcore.common.gui.FilterSlotItemHandler", "net.p3pp3rf1y.sophisticatedcore.common.gui.StorageInventorySlot", "net.p3pp3rf1y.sophisticatedcore.common.gui.StorageContainerMenuBase$StorageUpgradeSlot"]
+

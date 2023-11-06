@@ -25,7 +25,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				icon: "kubejs:farmers_delight"
 				id: "60A777DE4B85ED0F"
-				player_command: false
 				title: "Farmer's Delight"
 				type: "command"
 			}]
@@ -53,7 +52,7 @@
 				}
 			]
 			title: "Basic Metallurgy"
-			x: -0.5d
+			x: -2.5d
 			y: -7.5d
 		}
 		{
@@ -79,7 +78,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 				icon: "kubejs:aura_leaf"
 				id: "74F868CAED853121"
-				player_command: false
 				title: "Aura Infusion"
 				type: "command"
 			}]
@@ -111,7 +109,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 				icon: "kubejs:alchemists_delight"
 				id: "7447FA9138D4E94E"
-				player_command: false
 				title: "Alchemist's Delight"
 				type: "command"
 			}]
@@ -140,7 +137,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 				icon: "kubejs:aura_leaf"
 				id: "4C4DBF8114CB2E51"
-				player_command: false
 				title: "Aura Infusion"
 				type: "command"
 			}]
@@ -171,7 +167,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 				icon: "kubejs:aura_leaf"
 				id: "0BF68F0E91094483"
-				player_command: false
 				title: "Aura Infusion"
 				type: "command"
 			}]
@@ -204,7 +199,7 @@
 				""
 				"The Ancient Sapling and Elder Sapling may also be obtained through this ritual, with both offering unique benefits."
 				""
-				"The wood of the Ancient Sapling concentrates magical energies into it, making it useful for certain devices. Meanwhile, the Golden Elder Sapling's fruit seems to carry the memories of those who've come before. "
+				"The wood of the Ancient tree concentrates magical energies into it, making it useful for certain devices. Meanwhile, the Resplendent Elder tree's fruit seems to carry the memories of those who've come before. "
 			]
 			id: "66A59B3CD77FB54A"
 			min_width: 300
@@ -222,10 +217,14 @@
 					type: "item"
 				}
 				{
+					id: "4C7C143A9FAD1DF6"
+					item: "naturesaura:eye"
+					type: "item"
+				}
+				{
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "39B68CC0E19837B6"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -290,7 +289,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 					icon: "kubejs:sorcerers_delight"
 					id: "6F2498DE79248A40"
-					player_command: false
 					title: "Sorcerer's Delight"
 					type: "command"
 				}
@@ -370,7 +368,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "5414F5E5DBF5FCA4"
-					player_command: false
 					title: "Alchemist's Delight"
 					type: "command"
 				}
@@ -384,11 +381,6 @@
 				{
 					id: "01B64EB17008EF24"
 					item: "ars_nouveau:potion_jar"
-					type: "item"
-				}
-				{
-					id: "7E9ACE7C84B7A434"
-					item: "ars_nouveau:arcane_pedestal"
 					type: "item"
 				}
 			]
@@ -455,7 +447,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "0E5BD92301912FBE"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -536,8 +527,8 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
-			y: 1.0d
+			x: -3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -557,7 +548,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 					icon: "kubejs:sorcerers_delight"
 					id: "63EC6BE1C18F9E9A"
-					player_command: false
 					title: "Sorcerer's Delight"
 					type: "command"
 				}
@@ -565,7 +555,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/medium"
 					icon: "kubejs:aura_leaf"
 					id: "38C17BE6339B21BC"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -656,7 +645,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "5CD17C5FC1E99147"
-				player_command: false
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
@@ -798,7 +786,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 					icon: "kubejs:sorcerers_delight"
 					id: "29AD14E62D652876"
-					player_command: false
 					title: "Sorcerer's Delight"
 					type: "command"
 				}
@@ -811,7 +798,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 					icon: "kubejs:aura_leaf"
 					id: "6BEDB6EB5F5DD15C"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -839,6 +825,7 @@
 				""
 				"Discover the rest of the process through JEI."
 			]
+			hide_dependency_lines: true
 			icon: "immersiveengineering:ingot_aluminum"
 			id: "345CBD118EAA0C09"
 			rewards: [{
@@ -866,8 +853,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: 2.0d
+			x: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["73CDA6ED2393DE42"]
@@ -879,7 +866,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "181F9F12E4654AC3"
-				player_command: false
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
@@ -897,14 +883,15 @@
 			description: [
 				"Though many glyphs may be found and used to repair the spell book, the Scribe’s Table may also be used to craft any glyph. "
 				""
-				"Finding proper spell ink, however, may prove more difficult as it must be specially prepared using a process that can take years."
+				"Finding proper spell ink, however, may prove more difficult as it must be specially prepared using a process that can take years. "
+				""
+				"It was once heavily traded by the seafaring folk that specialized in its creation. Perhaps some could be retrieved with some good old-fashioned trawling. "
 			]
 			id: "7507572BD048B6C9"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "0CEB7353C721EF23"
-				player_command: false
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
@@ -937,7 +924,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "368322B66A743C01"
-					player_command: false
 					title: "Alchemist's Delight"
 					type: "command"
 				}
@@ -945,7 +931,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "43B5455E97D1AB02"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -979,7 +964,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "51CCBDE9F54731C8"
-					player_command: false
 					title: "Alchemist's Delight"
 					type: "command"
 				}
@@ -987,7 +971,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "35079413F0D062FB"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -1023,7 +1006,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "3C9CCE31C80E1348"
-					player_command: false
 					title: "Alchemist's Delight"
 					type: "command"
 				}
@@ -1031,7 +1013,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "11B3DE3B0795BA69"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -1059,7 +1040,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "61B34E18FBDA8BE6"
-					player_command: false
 					title: "Alchemist's Delight"
 					type: "command"
 				}
@@ -1067,7 +1047,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "06804245F30E2149"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -1102,7 +1081,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:ars_nouveau_glyph_cache/tier_1"
 				icon: "ars_nouveau:blank_glyph"
 				id: "4D3BD7740EAF736F"
-				player_command: false
 				title: "Random Tier 1 Glyph"
 				type: "command"
 			}]
@@ -1151,7 +1129,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "07DDF6CFF702FA3E"
-					player_command: false
 					title: "Alchemist's Delight"
 					type: "command"
 				}
@@ -1159,7 +1136,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "1411C2FA9E44E9AE"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -1184,6 +1160,10 @@
 				"With the elements mastered, only one task remains before the Tree of Life may be restored: Winter’s Reign must end. "
 				""
 				"Travel to the frigid glaciers and defeat the Snow Queen to obtain Subzero Crystals."
+				""
+				"================================="
+				""
+				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the Subzero Crystal and induce it to grow. "
 			]
 			hide_dependency_lines: true
 			id: "729E9D41A28D0E4D"
@@ -1191,7 +1171,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "624D22F8BB99AF09"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -1203,7 +1182,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["66585A158F41DE44"]
@@ -1237,7 +1216,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "75C613BBF99219CD"
-					player_command: false
 					title: "Alchemist's Delight"
 					type: "command"
 				}
@@ -1245,7 +1223,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "5B324D5035FAA45D"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -1280,7 +1257,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 				icon: "kubejs:alchemists_delight"
 				id: "5986A05AFF7B5081"
-				player_command: false
 				title: "Alchemist's Delight"
 				type: "command"
 			}]
@@ -1297,16 +1273,40 @@
 		{
 			dependencies: ["79B755D0BDB6A8B7"]
 			description: [
-				"More finely crafted apparatus will need more delicately formed metals."
+				"More finely crafted devices will need more delicately processed materials than can easily be done by hand."
 				""
-				"These tough mechanical machines, the Mechanical Press and Rolling Mill, are up to the task of properly pounding out plates or forming wires and rods, respectively. "
+				"These tough mechanical devices are up to the task. "
+				""
+				"● Millstone - Capable of grinding "
+				"  materials much more finely than can "
+				"  be achieved by hand, the Millstone will "
+				"  occasionally produce secondary       "
+				"  materials that may be quite useful, "
+				"  such as Lead and Quartz."
+				""
+				"● Rolling Mill - Working from Ingots, the "
+				"  Rolling Mill can create the fine Rods "
+				"  and Wires required by many "
+				"  advanced devices. "
+				""
+				"● Mechanical Press - A device strong "
+				"  enough to flatten Ingots into Plates "
+				"  in only a few strokes. Well worth the "
+				"  effort of setting it up.  "
 			]
 			id: "44B02A5817C4144A"
-			rewards: [{
-				id: "0FC05A9E5B974922"
-				item: "ars_creo:starbuncle_wheel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0FC05A9E5B974922"
+					item: "ars_creo:starbuncle_wheel"
+					type: "item"
+				}
+				{
+					id: "36C648094A71AC39"
+					item: "createaddition:straw"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "7E269B72F57C62D3"
@@ -1316,6 +1316,11 @@
 				{
 					id: "1A61D7D0519A6615"
 					item: "createaddition:rolling_mill"
+					type: "item"
+				}
+				{
+					id: "00BD1D8A00CAB755"
+					item: "create:millstone"
 					type: "item"
 				}
 			]
@@ -1385,7 +1390,7 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
+			x: -2.5d
 			y: -6.5d
 		}
 		{
@@ -1396,7 +1401,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "5C4A1E2E0AC85142"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -1421,7 +1425,7 @@
 				title: "Alloying"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.5d
 			y: -5.5d
 		}
 		{
@@ -1447,7 +1451,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 					icon: "kubejs:aura_leaf"
 					id: "11AB85F4A8D711C2"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -1475,7 +1478,7 @@
 				""
 				"To let the Wixie know what potions to brew, place some brewed potions on Arcane Pedestals or Platforms adjacent to her Cauldron. These can be obtained by brewing in the Mixing Cauldron and Right-Clicking it with Glass Bottles. "
 				""
-				"The entire chain must be present for her to do her job. So, to brew a Potion of Ancient Knowledge, she’ll need a pedestal with an Awkward Potion and another with a Potion of Ancient Knowledge. She’ll need a Potion Jar for each step as well. Multiple Wixies may work together as well, with each fulfilling the next step in the chain. "
+				"The entire chain must be present for her to do her job. So, to brew a Potion of Ancient Knowledge, she’ll need a pedestal with an Awkward Potion and another with a Potion of Ancient Knowledge. She’ll need a Potion Jar for each step as well. Multiple Wixies may work together, with each fulfilling the next step in the chain. "
 				""
 				"More information can be found in the Worn Notebook. "
 			]
@@ -1493,7 +1496,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 					icon: "kubejs:aura_leaf"
 					id: "5D0ACAACAA68E0CD"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -1545,7 +1547,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 					icon: "kubejs:aura_leaf"
 					id: "11443A06230EBBDC"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -1630,7 +1631,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 					icon: "kubejs:aura_leaf"
 					id: "5961092F4097FD3E"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -1665,7 +1665,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 					icon: "kubejs:aura_leaf"
 					id: "56ACF42C5D91BAF5"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -1714,7 +1713,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 					icon: "kubejs:aura_leaf"
 					id: "5177B763DE66FC8D"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -1760,7 +1758,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "0BD0FAEB5CF42323"
-					player_command: false
 					title: "Alchemist's Delight"
 					type: "command"
 				}
@@ -1768,7 +1765,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "4F929950817CCC3E"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -1821,7 +1817,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 				icon: "kubejs:aura_leaf"
 				id: "389C33B783F1A41E"
-				player_command: false
 				title: "Aura Infusion"
 				type: "command"
 			}]
@@ -1841,55 +1836,7 @@
 			]
 			title: "Tree of Life"
 			x: -3.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["347A644441BCF449"]
-			description: ["Often found clustered in with Tin ores, Quartz may be extracted occasionally when grinding the ore with better tools, such as the Mill. "]
-			id: "5B7806FED7D58329"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "2D22DA949427C0B4"
-				player_command: false
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "76702DE4AA5CCE26"
-				item: "minecraft:quartz"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["79B755D0BDB6A8B7"]
-			description: ["Made from considerably tougher materials than a simple Mortar, the Millstone can grind tougher ores and may even occasionally recover some secondary materials.  "]
-			hide_dependency_lines: true
-			id: "347A644441BCF449"
-			rewards: [
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-					icon: "kubejs:sorcerers_delight"
-					id: "651C07D976AD902F"
-					player_command: false
-					title: "Sorcerer's Delight"
-					type: "command"
-				}
-				{
-					id: "0E1F9854A317EE27"
-					item: "createaddition:straw"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "0F473BC094DDA58D"
-				item: "create:millstone"
-				type: "item"
-			}]
-			x: -5.5d
-			y: 1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3A7AEB067C49F899"]
@@ -1978,7 +1925,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "65C797E604B3DA0F"
-					player_command: false
 					title: "Alchemist's Delight"
 					type: "command"
 				}
@@ -2009,7 +1955,7 @@
 				""
 				"Begin by locating some Certus Quartz; the Wilden Grove will undoubtedly have left some behind in their ore mounds. "
 				""
-				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the quartz and induce it to grow. "
+				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the Certus Quartz and induce it to grow. "
 			]
 			hide_dependency_lines: true
 			id: "0BAE6EBFEA3026B9"
@@ -2018,7 +1964,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 				icon: "kubejs:alchemists_delight"
 				id: "5BAC9CC4EA1BAEEC"
-				player_command: false
 				title: "Alchemist's Delight"
 				type: "command"
 			}]
@@ -2092,7 +2037,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "46B73E0A24DE5D55"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -2137,7 +2081,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 					icon: "kubejs:aura_leaf"
 					id: "2136A5B6580847A6"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -2181,7 +2124,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 				icon: "kubejs:aura_leaf"
 				id: "44AF536691C6AFC3"
-				player_command: false
 				title: "Aura Infusion"
 				type: "command"
 			}]
@@ -2208,7 +2150,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "13E73AB24BADDF67"
-				player_command: false
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
@@ -2252,7 +2193,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "6D4844BFC44CD5D5"
-				player_command: false
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
@@ -2276,8 +2216,8 @@
 				title: "Tipped Arrows"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -3.0d
+			x: 1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4682D4537535937C"]
@@ -2292,7 +2232,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "5C504E7B50DF72CA"
-				player_command: false
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
@@ -2308,7 +2247,9 @@
 		{
 			dependencies: ["370C40BCC3A6A055"]
 			description: [
-				"Ordinarily Crush may only be used on blocks placed in the world. However, by augmenting it with Sensitive, it can target items dropped on the ground as well. "
+				"Ordinarily Crush may only be used on blocks placed in the world. For example, when creating Compressed Stone. "
+				""
+				"However, by augmenting it with Sensitive, it can target items dropped on the ground as well allowing it to function on Raw Ore as well."
 				""
 				"The following spell form will crush items on the ground: "
 				""
@@ -2320,7 +2261,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "53223E0F43F27F71"
-				player_command: false
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
@@ -2354,7 +2294,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
 				icon: "kubejs:miners_delight"
 				id: "0278C7667B0EC3FE"
-				player_command: false
 				title: "Miner's Delight"
 				type: "command"
 			}]
@@ -2390,6 +2329,8 @@
 				"================================="
 				""
 				"Obtain Wool of each color and provide it to the Ram. "
+				""
+				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the Therium and induce it to grow. "
 			]
 			id: "032D29DD7D946EDB"
 			rewards: [
@@ -2397,7 +2338,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 					icon: "kubejs:sorcerers_delight"
 					id: "69D3102DD62060D9"
-					player_command: false
 					title: "Sorcerer's Delight"
 					type: "command"
 				}
@@ -2405,7 +2345,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "0BE9EBECF0414FE5"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -2413,7 +2352,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "45865EFBDFC3E239"
-				item: "twilightforest:quest_ram_trophy"
+				item: "byg:therium_crystal_shard"
 				type: "item"
 			}]
 			title: "Questing Ram"
@@ -2434,7 +2373,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 					icon: "kubejs:sorcerers_delight"
 					id: "67BBB8A5B92C7AE7"
-					player_command: false
 					title: "Sorcerer's Delight"
 					type: "command"
 				}
@@ -2442,7 +2380,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "6A9DEFBAF39BE8C7"
-					player_command: false
 					title: "Aura Infusion"
 					type: "command"
 				}
@@ -2518,7 +2455,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["729E9D41A28D0E4D"]
+			dependencies: ["16E90BC107468EC2"]
 			description: [
 				"With heightened spell casting ability comes the ability to improve some automation through Spell Turrets.  "
 				""
@@ -2527,6 +2464,8 @@
 				"&5Projectile&r > &aInfuse&r > &6Extend Time&r"
 				""
 				"These lingering potions will work exactly as their crafted variety for the purpose of running a Lingering Absorber without the need to craft beyond the base potion. "
+				""
+				"Using Melded Potions will provide a substantial boost as well!"
 			]
 			hide_dependency_lines: true
 			id: "7619B458914F41FF"
@@ -2577,20 +2516,18 @@
 				item: "ars_nouveau:basic_spell_turret"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 2.5d
+			x: 2.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["729E9D41A28D0E4D"]
+			dependencies: ["345CBD118EAA0C09"]
 			description: ["An empowered ritual that grants an hour of flight to up to five entities. Useful for exploration far from home. Be sure to bring the materials to re-cast it if necessary. "]
-			hide_dependency_lines: true
 			icon: "ars_nouveau:ritual_flight"
 			id: "6952D7AD61181E37"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "64D8345AD1B57F8B"
-				player_command: false
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
@@ -2609,7 +2546,7 @@
 				}
 			]
 			x: -1.0d
-			y: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["1C6BF5FE58C49456"]

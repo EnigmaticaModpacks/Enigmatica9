@@ -473,7 +473,7 @@ ServerEvents.recipes((event) => {
                 '#forge:dusts/moon_dust'
             ],
             time: 40,
-            sapling: 'byg:withering_oak_sapling',
+            sapling: 'ars_nouveau:purple_archwood_sapling',
             id: `${id_prefix}necrotic_focus`
         },
         {

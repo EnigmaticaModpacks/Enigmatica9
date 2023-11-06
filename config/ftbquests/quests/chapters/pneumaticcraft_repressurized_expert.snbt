@@ -71,7 +71,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "7364D55166238332"
-				player_command: false
 				title: "Rare PNC:R Loot Box"
 				type: "command"
 			}]
@@ -165,7 +164,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "6E8BDFC4506F6E33"
-				player_command: false
 				title: "Rare PNC:R Loot Box"
 				type: "command"
 			}]
@@ -268,7 +266,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "29CC4AE5D8D278BA"
-				player_command: false
 				title: "Epic PNC:R Loot Box"
 				type: "command"
 			}]
@@ -309,7 +306,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "42EDFE52FEF7D948"
-				player_command: false
 				title: "Rare PNC:R Loot Box"
 				type: "command"
 			}]
@@ -424,7 +420,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "2120D4C24F7F303D"
-				player_command: false
 				title: "Rare PNC:R Loot Box"
 				type: "command"
 			}]
@@ -557,7 +552,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "620CA924053FE1B1"
-				player_command: false
 				title: "Rare PNC:R Loot Box"
 				type: "command"
 			}]
@@ -580,7 +574,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "3621E6BD54CDE738"
-					player_command: false
 					title: "Epic PNC:R Loot Box"
 					type: "command"
 				}
@@ -640,7 +633,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				icon: "kubejs:farmers_delight"
 				id: "4598DFE37D84B116"
-				player_command: false
 				title: "Farmer's Delight"
 				type: "command"
 			}]
@@ -692,7 +684,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "5D3612DC6DF205A4"
-				player_command: false
 				title: "Rare PNC:R Loot Box"
 				type: "command"
 			}]
@@ -728,7 +719,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
 				icon: "kubejs:legendary_lootbox"
 				id: "5600DC7079A960F8"
-				player_command: false
 				title: "Legendary PNC:R Loot Box"
 				type: "command"
 			}]
@@ -751,7 +741,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "312B40790B0E6AE3"
-					player_command: false
 					title: "Epic PNC:R Loot Box"
 					type: "command"
 				}
@@ -842,7 +831,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "09056410AC7B4F5E"
-				player_command: false
 				title: "Epic PNC:R Loot Box"
 				type: "command"
 			}]
@@ -863,7 +851,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "501A756DAB89889A"
-				player_command: false
 				title: "Rare PNC:R Loot Box"
 				type: "command"
 			}]
@@ -963,7 +950,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
 				icon: "kubejs:legendary_lootbox"
 				id: "05534AA4AD901FDD"
-				player_command: false
 				title: "Legendary PNC:R Loot Box"
 				type: "command"
 			}]
@@ -991,7 +977,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "71C74EE7350259ED"
-				player_command: false
 				title: "Epic PNC:R Loot Box"
 				type: "command"
 			}]
@@ -1025,7 +1010,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
 				icon: "kubejs:legendary_lootbox"
 				id: "33A65EE79C654898"
-				player_command: false
 				title: "Legendary PNC:R Loot Box"
 				type: "command"
 			}]
@@ -1114,7 +1098,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
 				icon: "kubejs:legendary_lootbox"
 				id: "14C53EBF59D4E97D"
-				player_command: false
 				title: "Legendary PNC:R Loot Box"
 				type: "command"
 			}]
@@ -1186,7 +1169,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
 				icon: "kubejs:legendary_lootbox"
 				id: "71E7B2F1A0C4BCF2"
-				player_command: false
 				title: "Legendary PNC:R Loot Box"
 				type: "command"
 			}]
@@ -1336,7 +1318,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "45F1066AD1B2C401"
-					player_command: false
 					title: "Epic PNC:R Loot Box"
 					type: "command"
 				}
@@ -1344,7 +1325,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "0C55EECDCDE4C01C"
-					player_command: false
 					title: "Epic PNC:R Loot Box"
 					type: "command"
 				}
@@ -1352,7 +1332,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "320E3090BF091078"
-					player_command: false
 					title: "Epic PNC:R Loot Box"
 					type: "command"
 				}
@@ -1360,7 +1339,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "0CE417ED326B8137"
-					player_command: false
 					title: "Epic PNC:R Loot Box"
 					type: "command"
 				}
@@ -1515,7 +1493,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "0AF178227D43E923"
-				player_command: false
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
@@ -1543,7 +1520,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "624B43310C57D3AF"
-				player_command: false
 				title: "Rare PNC:R Loot Box"
 				type: "command"
 			}]
@@ -1572,7 +1548,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "1C96B75BC65D3936"
-				player_command: false
 				title: "Epic PNC:R Loot Box"
 				type: "command"
 			}]
@@ -1607,7 +1582,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "03A761B743DDD4FD"
-				player_command: false
 				title: "Rare PNC:R Loot Box"
 				type: "command"
 			}]
@@ -1628,7 +1602,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
 				icon: "kubejs:rare_lootbox"
 				id: "15748F8C017B2B45"
-				player_command: false
 				title: "Rare PNC:R Loot Box"
 				type: "command"
 			}]
@@ -1655,7 +1628,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
 				icon: "kubejs:legendary_lootbox"
 				id: "3A10D0CC45A7D514"
-				player_command: false
 				title: "Legendary PNC:R Loot Box"
 				type: "command"
 			}]

@@ -61,13 +61,15 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}binding_card`
         },
         {
-            output: 'rftoolsbase:infused_enderpearl',
+            output: '4x rftoolsbase:infused_enderpearl',
             inputs: [
+                '#forge:storage_blocks/dimensional',
                 '#forge:storage_blocks/dimensional',
                 Item.of(
                     'pneumaticcraft:spawner_core',
                     '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:enderman":100}}'
                 ).weakNBT(),
+                '#forge:storage_blocks/dimensional',
                 '#forge:storage_blocks/dimensional'
             ],
             energy: '12000000',

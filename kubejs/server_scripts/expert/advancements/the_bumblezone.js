@@ -271,6 +271,29 @@ ServerEvents.highPriorityData((event) => {
             },
             criteria: { impossible: { trigger: 'minecraft:impossible' } },
             requirements: [['impossible']]
+        },
+        {
+            id: 'tools/honey_compass_recipe',
+            parent: 'the_bumblezone:the_bumblezone/combs_and_beeswax/honey_cocoon_silk_touch',
+            display: {
+                icon: { item: 'the_bumblezone:honey_compass' },
+                title: { translate: 'advancements.the_bumblezone.honey_compass_recipe.title' },
+                description: { translate: 'advancements.the_bumblezone.honey_compass_recipe.description' },
+                frame: 'task',
+                show_toast: true,
+                announce_to_chat: false,
+                hidden: false
+            },
+            rewards: { experience: 5 },
+            criteria: {
+                honey_compass: {
+                    trigger: 'minecraft:inventory_changed',
+                    conditions: {
+                        items: [{ items: ['the_bumblezone:honey_compass'] }]
+                    }
+                }
+            },
+            requirements: [['honey_compass']]
         }
     ];
 

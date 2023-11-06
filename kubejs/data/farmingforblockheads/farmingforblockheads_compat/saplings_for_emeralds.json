@@ -13,6 +13,7 @@
         { "output": "twilightforest:mangrove_sapling" },
         { "output": "twilightforest:canopy_sapling" },
         { "output": "twilightforest:twilight_oak_sapling" },
+        { "output": "thermal:rubberwood_sapling" },
         { "output": "byg:yellow_spruce_sapling" },
         { "output": "byg:yellow_birch_sapling" },
         { "output": "byg:red_spruce_sapling" },

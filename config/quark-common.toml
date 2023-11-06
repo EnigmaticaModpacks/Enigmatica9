@@ -325,12 +325,10 @@
 			"Horizontal Size" = 14
 			#Allowed values: [0,)
 			Rarity = 4
-			#Allowed values: [-64,320]
 			"Min Y Level" = 20
 			#Allowed values: [0,)
 			"Horizontal Variation" = 9
 			Enabled = true
-			#Allowed values: [-64,320]
 			"Max Y Level" = 80
 			#Allowed values: [0,)
 			"Vertical Size" = 14
@@ -356,12 +354,10 @@
 			"Horizontal Size" = 14
 			#Allowed values: [0,)
 			Rarity = 4
-			#Allowed values: [-64,320]
 			"Min Y Level" = 20
 			#Allowed values: [0,)
 			"Horizontal Variation" = 9
 			Enabled = true
-			#Allowed values: [-64,320]
 			"Max Y Level" = 80
 			#Allowed values: [0,)
 			"Vertical Size" = 14
@@ -388,12 +384,10 @@
 			#Allowed values: [0,)
 			Rarity = 100
 			"Generate In Air" = true
-			#Allowed values: [-64,320]
 			"Min Y Level" = 58
 			#Allowed values: [0,)
 			"Horizontal Variation" = 6
 			Enabled = true
-			#Allowed values: [-64,320]
 			"Max Y Level" = 62
 			#Allowed values: [0,)
 			"Vertical Size" = 40
@@ -419,12 +413,10 @@
 			"Horizontal Size" = 14
 			#Allowed values: [0,)
 			Rarity = 4
-			#Allowed values: [-64,320]
 			"Min Y Level" = 20
 			#Allowed values: [0,)
 			"Horizontal Variation" = 9
 			Enabled = true
-			#Allowed values: [-64,320]
 			"Max Y Level" = 80
 			#Allowed values: [0,)
 			"Vertical Size" = 14
@@ -450,12 +442,10 @@
 			"Horizontal Size" = 14
 			#Allowed values: [0,)
 			Rarity = 4
-			#Allowed values: [-64,320]
 			"Min Y Level" = 20
 			#Allowed values: [0,)
 			"Horizontal Variation" = 9
 			Enabled = true
-			#Allowed values: [-64,320]
 			"Max Y Level" = 80
 			#Allowed values: [0,)
 			"Vertical Size" = 14
@@ -783,11 +773,9 @@
 			"Horizontal Size" = 72
 			#Allowed values: [0,)
 			Rarity = 400
-			#Allowed values: [-64,320]
 			"Min Y Level" = -64
 			#Allowed values: [0,)
 			"Horizontal Variation" = 22
-			#Allowed values: [-64,320]
 			"Max Y Level" = 16
 			#Allowed values: [0,)
 			"Vertical Size" = 20
@@ -816,11 +804,9 @@
 			"Horizontal Size" = 100
 			#Allowed values: [0,)
 			Rarity = 2
-			#Allowed values: [-64,320]
 			"Min Y Level" = 105
 			#Allowed values: [0,)
 			"Horizontal Variation" = 10
-			#Allowed values: [-64,320]
 			"Max Y Level" = 140
 			#Allowed values: [0,)
 			"Vertical Size" = 30
@@ -904,7 +890,7 @@
 	"Sponge On Water Placement" = true
 	"Dragon Scales" = true
 	"Sign Editing" = true
-	"Hoe Harvesting" = true
+	"Hoe Harvesting" = false
 	"Reacharound Placing" = true
 	"Compasses Work Everywhere" = true
 	"More Note Block Sounds" = true
@@ -1143,6 +1129,13 @@
 		#Allowed values: [1,5]
 		"High Tier Hoe Radius" = 3
 
+	[tweaks.map_washing]
+		#This feature disables itself if any of the following mods are loaded: 
+		# - supplementaries
+		#This is done to prevent content overlap.
+		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
+		"Ignore Anti Overlap" = false
+
 [client]
 	"Greener Grass" = true
 	"Back Button Keybind" = true
@@ -1158,6 +1151,7 @@
 	"Long Range Pick Block" = true
 	"Chest Searching" = true
 	"Auto Walk Keybind" = true
+	"Buckets Show Inhabitants" = true
 
 	[client.uses_for_curses]
 		"Bind Armor Stands With Player Heads" = true
@@ -1243,6 +1237,16 @@
 	[client.auto_walk_keybind]
 		"Draw Hud" = true
 		"Hud Height" = 10
+
+	[client.camera]
+		#Date format that will be displayed in screenshots. Must be a valid one (i.e. MM/dd/yyyy)
+		"Date Format" = "MM/dd/yyyy"
+
+	[client.buckets_show_inhabitants]
+		"Show Axolotls" = true
+		"Show Crabs" = true
+		"Show Tropical Fish" = true
+		"Show Shiny Slime" = true
 
 [oddities]
 	Crate = true
@@ -1372,6 +1376,10 @@
 	#to the netherite_pickaxe.json item model, whose value will be the enchantment level.
 	"Enchantment Predicates" = false
 	"Enchantments Begone" = true
+	#Allows placing variant blocks automatically via a selector menu triggered from a keybind
+	"Variant Selector" = false
+	"Climate Control Remover" = false
+	"Villager Rerolling Rework" = false
 
 	[experimental.spawner_replacer]
 		#Mobs to be replaced with other mobs.
@@ -1409,6 +1417,11 @@
 		"Nerf Villager Discount" = true
 		#Fixes mushroom growth being able to replace blocks
 		"Disable Mushroom Block Removal" = true
+		#Makes tripwire hooks unable to be duplicated
+		"Disable Tripwire Hook Dupe" = true
+		#Makes Mending II still work even if mending is nerfed.
+		#If you want Mending II, disable the sanity check on Ancient Tomes and add minecraft:mending to the tomes.
+		"No Nerf for Mending II" = false
 
 	[experimental.adjustable_chat]
 		"Horizontal Shift" = 0
@@ -1419,6 +1432,79 @@
 		#Some useful shaders include 'desaturate', 'oversaturate', 'bumpy'
 		#Colorblind simulation shaders are available in the form of 'deuteranopia', 'protanopia', 'tritanopia', and 'achromatopsia'
 		Shader = "none"
+
+	[experimental.variant_selector]
+		#Set this to true to automatically convert any dropped variant items into their originals. Do this ONLY if you intend to take control of every recipe via a data pack or equivalent, as this will introduce dupes otherwise.
+		"Convert Variant Items" = false
+		#Enable the hammer, allowing variants to be swapped between eachother, including the original block. Do this ONLY under the same circumstances as Convert Variant Items.
+		"Enable Hammer" = false
+		"Show Tooltip" = true
+		"Align Hud To Hotbar" = false
+		"Show Simple Hud" = false
+		"Show Hud" = true
+		"Enable Green Tint" = true
+		"Override Held Item Render" = true
+		"Hud Offset X" = 0
+		"Hud Offset Y" = 0
+
+		[experimental.variant_selector.variants]
+			#The list of all variant types available for players to use. Values are treated as suffixes to block IDs for scanning.
+			#Prefix any variant type with ! to make it show up for Manual Variants but not be automatically scanned for. (e.g. '!polish')
+			"Variant Types" = ["slab", "stairs", "fence", "fence_gate", "vertical_slab"]
+			#By default, only a mod's namespace is scanned for variants for its items (e.g. if coolmod adds coolmod:fun_block, it'll search only for coolmod:fun_block_stairs).
+			# Mods in this list are also scanned for variants if none are found in itself (e.g. if quark is in the list and coolmod:fun_block_stairs doesn't exist, it'll try to look for quark:fun_block_stairs next)
+			"Tested Mods" = ["quark"]
+			"Print Variant Map To Log" = false
+			#Format is 'alias=original' in each value (e.g. 'wall=fence' means that a failed search for, minecraft:cobblestone_fence will try cobblestone_wall next)
+			Aliases = ["wall=fence", "carpet=slab"]
+			#Ends of block IDs to try and remove when looking for variants. (e.g. minecraft:oak_planks goes into minecraft:oak_stairs, so we have to include '_planks' in this list for it to find them or else it'll only look for minecraft:oak_planks_stairs)
+			"Strip Candidates" = ["_planks", "_wool", "s"]
+			#Add manual variant overrides here, the format is 'type,block,output' (e.g. polish,minecraft:stone_bricks,minecraft:chiseled_stone_bricks). The type must be listed in Variant Types
+			"Manual Variants" = []
+			# A list of block IDs and mappings to be excluded from variant selection.
+			#To exclude a block from being turned into other blocks, just include the block ID (e.g. minecraft:cobblestone).
+			#To exclude a block from having other blocks turned into it, suffix it with = (e.g. =minecraft:cobblestone_stairs)
+			#To exclude a specific block->variant combination, put = between the two (e.g. minecraft:cobblestone=minecraft:cobblestone_stairs)
+			Blacklist = []
+
+	[experimental.climate_control_remover]
+		#Disables the temperature comparison when choosing biomes to generate.
+		"Disable Temperature" = false
+		#Disables the humidity comparison when choosing biomes to generate.
+		"Disable Humidity" = false
+		#Disables the 'continentalness' comparison when choosing biomes to generate.
+		#WARNING: Enabling this will probably make oceans act a lot more like rivers.
+		"Disable Continentalness" = false
+		#Disables the 'erosion' comparison when choosing biomes to generate.
+		#WARNING: Enabling this will probably create very extreme height differences, and will make the End more chaotic.
+		"Disable Erosion" = false
+		#Disables the 'depth' comparison when choosing biomes to generate.
+		#WARNING: Enabling this will probably make cave biomes appear at unusual heights.
+		"Disable Depth" = false
+		#Disables the 'weirdness' comparison when choosing biomes to generate.
+		#WARNING: Enabling this will... well, probably make things weird.
+		"Disable Weirdness" = false
+		#Disables the 'offset' parameter when choosing biomes to generate.
+		#WARNING: Enabling this will make rarer nether biomes more common.
+		"Disable Offset" = false
+
+	[experimental.villager_rerolling_rework]
+		#If enabled, the first two trades a villager generates for a profession will always be the same for a given villager.
+		#This prevents repeatedly placing down a job site block to reroll the villager's trades.
+		"Seed Initial Villager Trades" = true
+		#Set to 0 to disable the chance to reroll trades when restocking.
+		#It's possible for a trade to not restock even when the chance is 1. This happens when the rerolled trade is one the villager already has.
+		#This chance only guarantees a reroll will be attempted.
+		#Allowed values: [0,1]
+		"Chance To Reroll When Restocking" = 0.25
+		#Set to 0 to disable the chance to reroll trades when restocking. Set to -1 to allow unlimited rerolling.
+		#Trades earlier in the list will restock first.
+		"Maximum Restocks Per Day" = 3
+		#If enabled, villagers will reroll when they restock, rather than when they begin work for the day.
+		#If disabled, players can prevent rerolling by ensuring the villager isn't out of stock on their last restock of the day.
+		"Reroll On Any Restock" = false
+		#If enabled, villagers will be able to reroll any trade that has been used AT ALL since the last restock.
+		"Reroll Even If Not Out Of Stock" = false
 
 [categories]
 	Building = true
@@ -1519,7 +1605,7 @@
 		#<id>,<level>,<min_price>,<max_price>,<color>,<name>
 		#
 		#With the following descriptions:
-		# - <id> being the biome's ID NAME. You can find vanilla names here - https://minecraft.gamepedia.com/Biome#Biome_IDs
+		# - <id> being the biome's ID NAME. You can find vanilla names here - https://minecraft.wiki/w/Biome#Biome_IDs
 		# - <level> being the Cartographer villager level required for the map to be unlockable
 		# - <min_price> being the cheapest (in Emeralds) the map can be
 		# - <max_price> being the most expensive (in Emeralds) the map can be
@@ -1689,6 +1775,8 @@
 		#The scale at which items render in the Glass Item Frame. To match the vanilla Item Frame size, set to 1.0
 		"Item Render Scale" = 1.5
 		"Glass Item Frames Update Maps" = true
+		#Set to true for faster map updates. Default is every 3s
+		"Glass Item Frames Update Maps Every Tick" = false
 
 	[building.vertical_slabs]
 		#Should Walls and Panes attempt to connect to the side of Vertical Slabs?
@@ -1764,7 +1852,7 @@
 		"Ignore Anti Overlap" = false
 		"Enable Reverting Wooden Chests" = true
 		"Replace Worldgen Chests" = false
-		#Chests to put in each structure. The format per entry is "structure=chest", where "structure" is a structure ID, and "chest" is a block ID, which must correspond to a standard chest block.
+		#Chests to put in structures. It's preferred to use worldgen tags for this. The format per entry is "structure=chest", where "structure" is a structure ID, and "chest" is a block ID, which must correspond to a standard chest block.
 		"Structure Chests" = ["minecraft:village_plains=quark:oak_chest", "minecraft:igloo=quark:spruce_chest", "minecraft:village_snowy=quark:spruce_chest", "minecraft:village_taiga=quark:spruce_chest", "minecraft:desert_pyramid=quark:birch_chest", "minecraft:jungle_pyramid=quark:jungle_chest", "minecraft:village_desert=quark:jungle_chest", "minecraft:village_savanna=quark:acacia_chest", "minecraft:mansion=quark:dark_oak_chest", "minecraft:pillager_outpost=quark:dark_oak_chest", "minecraft:ruined_portal=quark:crimson_chest", "minecraft:bastion_remnant=quark:crimson_chest", "minecraft:fortress=quark:nether_brick_chest", "minecraft:end_city=quark:purpur_chest"]
 
 	[building.gold_bars]

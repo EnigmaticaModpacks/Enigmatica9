@@ -24,7 +24,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 					icon: "kubejs:sorcerers_delight"
 					id: "7D5E908EC9DE9715"
-					player_command: false
 					title: "Sorcerer's Delight"
 					type: "command"
 				}
@@ -32,7 +31,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "4E5A44CFE98B911C"
-					player_command: false
 					title: "Epic Hexerei Loot Box"
 					type: "command"
 				}
@@ -93,7 +91,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "73C8B33466F4D4F5"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -101,7 +98,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "2C83DEA7BCE4D5F6"
-					player_command: false
 					title: "Rare Hexerei Loot Box"
 					type: "command"
 				}
@@ -127,7 +123,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				icon: "kubejs:farmers_delight"
 				id: "7268A0D63151C75C"
-				player_command: false
 				title: "Farmer's Delight"
 				type: "command"
 			}]
@@ -157,7 +152,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
 					icon: "kubejs:miners_delight"
 					id: "5F486CA7E6D10B56"
-					player_command: false
 					title: "Miner's Delight"
 					type: "command"
 				}
@@ -165,7 +159,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "7B89FA27DB1AF100"
-					player_command: false
 					title: "Epic Hexerei Loot Box"
 					type: "command"
 				}
@@ -210,7 +203,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "26053E7A8577AEDF"
-					player_command: false
 					title: "Rare Hexerei Loot Box"
 					type: "command"
 				}
@@ -240,7 +232,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "03BD72914A1D5B9D"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -248,7 +239,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "3DA1CA9DFD62B517"
-					player_command: false
 					title: "Epic Hexerei Loot Box"
 					type: "command"
 				}
@@ -290,7 +280,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "76F8AD34ED2A1D87"
-					player_command: false
 					title: "Alchemist's Delight"
 					type: "command"
 				}
@@ -298,7 +287,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "546A5956FC94CA6E"
-					player_command: false
 					title: "Epic Hexerei Loot Box"
 					type: "command"
 				}
@@ -327,7 +315,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "66955850C37FE65A"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -335,7 +322,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "2173E38F058618F7"
-					player_command: false
 					title: "Rare Hexerei Loot Box"
 					type: "command"
 				}
@@ -382,7 +368,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "046D627EA75B7F8F"
-					player_command: false
 					title: "Epic Hexerei Loot Box"
 					type: "command"
 				}
@@ -433,7 +418,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "2A1D5A2B94310D21"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -441,7 +425,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "2DF6CEBE0C4B3EEA"
-					player_command: false
 					title: "Epic Hexerei Loot Box"
 					type: "command"
 				}
@@ -484,7 +467,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 					icon: "kubejs:sorcerers_delight"
 					id: "5C04993CA46D530E"
-					player_command: false
 					title: "Sorcerer's Delight"
 					type: "command"
 				}
@@ -492,7 +474,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "2080E81678E500BF"
-					player_command: false
 					title: "Epic Hexerei Loot Box"
 					type: "command"
 				}
@@ -515,7 +496,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 					icon: "kubejs:sorcerers_delight"
 					id: "62A06F40EC110553"
-					player_command: false
 					title: "Sorcerer's Delight"
 					type: "command"
 				}
@@ -523,7 +503,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "5655A323A6A9076E"
-					player_command: false
 					title: "Epic Hexerei Loot Box"
 					type: "command"
 				}
@@ -555,7 +534,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 					icon: "kubejs:farmers_delight"
 					id: "7283CC64122E8015"
-					player_command: false
 					title: "Farmer's Delight"
 					type: "command"
 				}
@@ -563,7 +541,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "32F4AAD7197D4E70"
-					player_command: false
 					title: "Rare Hexerei Loot Box"
 					type: "command"
 				}
@@ -651,7 +628,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 					icon: "kubejs:sorcerers_delight"
 					id: "629C0100CFA99E07"
-					player_command: false
 					title: "Sorcerer's Delight"
 					type: "command"
 				}
@@ -659,7 +635,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "77AF61904F0FFD0D"
-					player_command: false
 					title: "Epic Hexerei Loot Box"
 					type: "command"
 				}
@@ -707,7 +682,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "09A30010B022472D"
-					player_command: false
 					title: "Alchemist's Delight"
 					type: "command"
 				}
@@ -715,7 +689,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "29255C286BC7A1AA"
-					player_command: false
 					title: "Epic Hexerei Loot Box"
 					type: "command"
 				}
@@ -773,7 +746,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "693F4BD1CEBBB904"
-					player_command: false
 					title: "Epic Hexerei Loot Box"
 					type: "command"
 				}
@@ -803,7 +775,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "55630D935774736C"
-					player_command: false
 					title: "Epic Hexerei Loot Box"
 					type: "command"
 				}
@@ -811,7 +782,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "6AC6C7A90D19B9E8"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -838,7 +808,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 					icon: "kubejs:scavengers_delight"
 					id: "3839C03CB49C1A83"
-					player_command: false
 					title: "Scavenger's Delight"
 					type: "command"
 				}
@@ -846,7 +815,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
 					icon: "kubejs:epic_lootbox"
 					id: "25E2D68E1252E742"
-					player_command: false
 					title: "Epic Hexerei Loot Box"
 					type: "command"
 				}

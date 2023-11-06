@@ -27,7 +27,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				icon: "kubejs:farmers_delight"
 				id: "0000000000000A93"
-				player_command: false
 				title: "Farmer's Delight"
 				type: "command"
 			}]
