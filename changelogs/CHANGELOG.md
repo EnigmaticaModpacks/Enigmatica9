@@ -12,6 +12,7 @@
 -   [Expert] The Break Glyph no longer requires Iron, making it accessible closer to when a Tier 2 book is available [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
 -   [Expert] Soul Powder quest has been updated to help clarify that it can be mined in the Twilight Forest too [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
 -   [Expert] Skyseeker Shoes now grants a massive step height bonus [\#753](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/753)
+-   [Expert] Stonecutter upgrades for Sophisticated Storage/Backpacks now require Knightmetal instead of Iron [\#756](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/756)
 
 ### 🐛 Fixed Bugs
 
