@@ -17,6 +17,7 @@
 
 -   [Expert] Set Default Exit Dim for BumbleZone to Twilight Forest [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
 -   XP Melting now requires Superheating in Create to avoid a conflict with potion brewing [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
+-   [Normal] Fix missing Pulverizer ore processing recipes [\#755](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/755)
 
 ---
 
