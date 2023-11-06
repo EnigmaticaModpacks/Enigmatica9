@@ -243,3 +243,26 @@
 		#
 		allowGoodallBottledBeesRevivingEmptyBroodBlock = true
 
+	["Mod Compatibility Options"."Tropicraft Options"]
+		# 
+		#-----------------------------------------------------
+		#
+		# Spawn Tropicraft's Tropibee in The Bumblezone and from Honey Brood Blocks alongside
+		# regular bees at a spawnrateOfTropicraftBeesMobs chance when spawning regular bees.
+		#
+		spawnTropicraftBeesMob = true
+		# 
+		#-----------------------------------------------------
+		#
+		# Chance of a Bee spawning from Honeycomb Brood Blocks in Bumblezone dimension being replaced by Tropicraft's Tropibee.
+		# 0 is no Tropicraft's mobs and 1 is max Tropicraft's mobs.
+		#
+		#Range: 0.0 ~ 1.0
+		spawnrateOfTropicraftBeesMobs = 0.05
+		# 
+		#-----------------------------------------------------
+		#
+		# Allow Honeycomb Brood blocks fed by Dispenser to be able to have chance of spawning Tropicraft's Tropibee.
+		#
+		allowTropicraftSpawnFromDispenserFedBroodBlock = true
+
