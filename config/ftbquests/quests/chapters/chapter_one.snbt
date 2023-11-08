@@ -2317,7 +2317,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["66A59B3CD77FB54A"]
@@ -2586,6 +2586,30 @@
 			]
 			x: -4.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["7CFD3DFD4C593EB5"]
+			description: [
+				"Build it and they’ll come, or so it was said. These tiny market stalls were once a common sight in places of business, trade, and agriculture and served as a way of making offerings to fae creatures that roam the lands. "
+				""
+				"With so few offerings happening these days, setting one out will surely attract some helpful company.  "
+			]
+			hide_dependency_lines: true
+			id: "37F045F66CCA1389"
+			rewards: [{
+				count: 7
+				id: "2C4B9277BDBFC583"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "2B53987B276A6521"
+				item: "farmingforblockheads:market"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
 		}
 	]
 	title: "Chapter One"

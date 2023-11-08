@@ -14,4 +14,5 @@ MoreJSEvents.registerPotionBrewing((event) => {
     //event.removeByPotion("minecraft:awkward", null, null);
 
     event.removeByPotion(null, 'minecraft:nether_wart', null);
+    event.removeByPotion(null, 'minecraft:shulker_shell', null);
 });
