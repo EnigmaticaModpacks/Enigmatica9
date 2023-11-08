@@ -41,12 +41,14 @@ ServerEvents.genericLootTables((event) => {
 
                         { id: 'hexerei:sage_seed', Count: 4 },
                         { id: 'immersiveengineering:seed', Count: 4 },
-                        { id: 'occultism:datura_seeds', Count: 4 },
 
+                        { id: 'occultism:datura_seeds', Count: 1 },
                         { id: 'minecraft:pumpkin_seeds', Count: 1 },
                         { id: 'minecraft:beetroot_seeds', Count: 1 },
                         { id: 'minecraft:wheat_seeds', Count: 1 },
                         { id: 'minecraft:melon_seeds', Count: 1 },
+                        { id: 'thermal:spinach_seeds', Count: 1 },
+                        { id: 'thermal:sadiroot_seeds', Count: 1 },
 
                         { id: 'ars_nouveau:frostaya_pod', Count: 3 },
                         { id: 'ars_nouveau:mendosteen_pod', Count: 3 },
