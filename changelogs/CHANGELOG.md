@@ -16,7 +16,7 @@
 -   [Expert] Resistance potions are now brewed exclusively with Spinach to avoid confusion in how to obtain them [\#758](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/758)
 -   [Expert] Stability potions are now brewed exclusively with Sadiroot to avoid confusion in how to obtain them [\#758](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/758)
 -   [Expert] New quest has been added to make a Market block, helping people discover they can buy seeds for plants they may wish to use for potions [\#758](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/758)
--   [Expert] The naga now drops spinach and sadiroot seeds as they're required for progression [\#758](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/758)
+-   [Expert] The naga now drops spinach and sadiroot seeds as they're required for progression. This is in addition to them being purchasble from the Market [\#758](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/758)
 
 ### 🐛 Fixed Bugs
 
