@@ -15,4 +15,5 @@ MoreJSEvents.registerPotionBrewing((event) => {
 
     event.removeByPotion(null, 'minecraft:nether_wart', null);
     event.removeByPotion(null, 'minecraft:shulker_shell', null);
+    event.removeByPotion(null, 'quark:crab_shell', null);
 });
