@@ -187,7 +187,7 @@
 				""
 				"It is useful for applications where small size is more important than speed. For instance, when making a fancy door to your base. "
 				""
-				"To get it going, simply allow water to flow past it. Max speed is achieved by having flowing water on five sides of it. "
+				"To get it going, simply allow water to flow past it."
 			]
 			id: "0000000000000CC2"
 			rewards: [{
