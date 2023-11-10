@@ -1810,6 +1810,8 @@
 				"================================="
 				""
 				"Note: The Tree of Life will be facing North with a small entrance going down into the pentacle chamber. This rotation cannot be changed. "
+				""
+				"This structure is 23x23 and extends both into the ground and sky. It will overwrite blocks near it when it grows. You've been warned."
 			]
 			icon: "kubejs:tree_of_life_1"
 			id: "33BCDA0A76E2523C"
