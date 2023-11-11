@@ -67,10 +67,11 @@ ServerEvents.recipes((event) => {
                     'pneumaticcraft:spawner_core',
                     '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:enderman":100}}'
                 ).weakNBT(),
+                '#forge:ingots/energized_steel',
                 '#forge:storage_blocks/dimensional',
                 '#forge:storage_blocks/dimensional',
                 '#forge:storage_blocks/dimensional',
-                '#forge:ingots/energized_steel'
+                '#forge:storage_blocks/dimensional'
             ],
             energy: '12000000',
             id: `${id_prefix}infused_enderpearl`
