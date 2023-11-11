@@ -44,10 +44,10 @@ ServerEvents.recipes((event) => {
         {
             output: '2x rftoolsbase:infused_diamond',
             inputs: [
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
                 '#forge:essences/water',
                 '#forge:essences/fire',
-                '#forge:gems/diamond',
-                '#forge:gems/diamond',
                 '#forge:essences/earth',
                 '#forge:essences/air'
             ],
@@ -63,14 +63,14 @@ ServerEvents.recipes((event) => {
         {
             output: '4x rftoolsbase:infused_enderpearl',
             inputs: [
-                '#forge:storage_blocks/dimensional',
-                '#forge:storage_blocks/dimensional',
                 Item.of(
                     'pneumaticcraft:spawner_core',
                     '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:enderman":100}}'
                 ).weakNBT(),
                 '#forge:storage_blocks/dimensional',
-                '#forge:storage_blocks/dimensional'
+                '#forge:storage_blocks/dimensional',
+                '#forge:storage_blocks/dimensional',
+                '#forge:ingots/energized_steel'
             ],
             energy: '12000000',
             id: `${id_prefix}infused_enderpearl`
