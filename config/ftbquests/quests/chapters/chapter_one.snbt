@@ -2466,6 +2466,13 @@
 				"These lingering potions will work exactly as their crafted variety for the purpose of running a Lingering Absorber without the need to craft beyond the base potion."
 			]
 			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "minecraft:lingering_potion"
+				tag: {
+					Potion: "minecraft:strong_leaping"
+				}
+			}
 			id: "7619B458914F41FF"
 			rewards: [{
 				id: "58831BD248E42B45"
@@ -2514,6 +2521,7 @@
 				item: "ars_nouveau:basic_spell_turret"
 				type: "item"
 			}]
+			title: "Lingering Absorber Automation"
 			x: 2.5d
 			y: -2.0d
 		}
