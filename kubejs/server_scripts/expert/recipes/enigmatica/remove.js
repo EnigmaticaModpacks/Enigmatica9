@@ -116,6 +116,7 @@ ServerEvents.recipes((event) => {
         { id: 'create:sequenced_assembly/track' },
         { id: 'create:sequenced_assembly/precision_mechanism' },
         { id: 'create:crafting/materials/electron_tube' },
+        { id: 'create:industrial_iron_block_from_ingots_iron_stonecutting' },
 
         { id: /createaddition:pressing\/.*_ingot/ },
         { id: /createaddition:crafting\/capacitor/ },
