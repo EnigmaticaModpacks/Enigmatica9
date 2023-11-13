@@ -25,6 +25,7 @@
 -   [Expert] Industrial Iron is renamed to Industrial Casing and had it's recipe changed to use sheetmetal [\#773](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/773)
 -   [Expert] Thermal's mushrooms are now faster to craft in the Ritual of the Forest [\#773](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/773)
 -   [Expert] Gloaming Catalyst now blends in a bit better with the other catalysts [\#774](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/774)
+-   [Expert] Spell Turret quest in Chapter 1 now named Lingering Absorber Automation to help with discoverability [\#775](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/775)
 
 ### 🐛 Fixed Bugs
 
