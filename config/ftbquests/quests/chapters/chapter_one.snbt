@@ -2463,9 +2463,7 @@
 				""
 				"&5Projectile&r > &aInfuse&r > &6Extend Time&r"
 				""
-				"These lingering potions will work exactly as their crafted variety for the purpose of running a Lingering Absorber without the need to craft beyond the base potion. "
-				""
-				"Using Melded Potions will provide a substantial boost as well!"
+				"These lingering potions will work exactly as their crafted variety for the purpose of running a Lingering Absorber without the need to craft beyond the base potion."
 			]
 			hide_dependency_lines: true
 			id: "7619B458914F41FF"

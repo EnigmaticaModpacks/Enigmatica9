@@ -20,6 +20,7 @@
 -   [Expert] The first Tree of Life quest now warns the player how large the structure is and that it will delete blocks in the area. [\#762](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/762)
 -   [Expert] Infused Ender Pearls now require Aetheric Brass to craft [\#763](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/763)
 -   [Expert] Quests added to draw attention to Modular Routers as a power transfer method [\#769](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/769)
+-   [Expert] Recipes changed for Envenom and Spike to make them craftable at a reasonable stage [\#771](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/771)
 
 ### 🐛 Fixed Bugs
 
@@ -28,6 +29,7 @@
 -   [Normal] Fix missing Pulverizer ore processing recipes [\#755](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/755)
 -   Clarify Create Waterwheel quest [\#761](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/761)
 -   [Expert] It should no longer be possible to go to the End using a vanilla portal [\#763](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/763)
+-   [Expert] Fix misleading spell turret quest [\#771](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/771)
 
 ---
 
