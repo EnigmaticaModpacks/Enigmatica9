@@ -24,10 +24,11 @@
 
 ### 🐛 Fixed Bugs
 
--   [Expert] Set Default Exit Dim for BumbleZone to Twilight Forest [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
 -   XP Melting now requires Superheating in Create to avoid a conflict with potion brewing [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
--   [Normal] Fix missing Pulverizer ore processing recipes [\#755](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/755)
 -   Clarify Create Waterwheel quest [\#761](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/761)
+-   [Normal] Remove unwanted thermal compat recipes [\#772](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/772)
+-   [Normal] Fix missing Pulverizer ore processing recipes [\#755](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/755)
+-   [Expert] Set Default Exit Dim for BumbleZone to Twilight Forest [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
 -   [Expert] It should no longer be possible to go to the End using a vanilla portal [\#763](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/763)
 -   [Expert] Fix misleading spell turret quest [\#771](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/771)
 
