@@ -7,6 +7,7 @@
 -   Environmental Eye is now an early quest reward [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
 -   Low Aura will no longer cause explosions [\#748](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/748)
 -   Upgrading Potions of Knowledge to the level two version now uses Glowstone Dust similar to all other potions [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
+-   Charcoal to Coal conversion with Natures Aura is now significantly faster [\#773](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/773)
 -   [Expert] Awkward potions are no longer brewable with Netherwart to promote the use of the far easier to obtain Abjuration Essence [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
 -   [Expert] Nether Wart may now be used to make Ethanol more efficiently [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
 -   [Expert] The Break Glyph no longer requires Iron, making it accessible closer to when a Tier 2 book is available [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
