@@ -264,7 +264,7 @@ ServerEvents.recipes((event) => {
                 'naturesaura:gold_leaf',
                 '#forge:essences/manipulation'
             ],
-            time: 120,
+            time: 40,
             sapling: 'quark:ancient_sapling',
             id: `${id_prefix}glowstone_mushroom_spores`
         },
@@ -278,7 +278,7 @@ ServerEvents.recipes((event) => {
                 'naturesaura:gold_leaf',
                 '#forge:essences/manipulation'
             ],
-            time: 120,
+            time: 40,
             sapling: 'quark:ancient_sapling',
             id: `${id_prefix}gunpowder_mushroom_spores`
         },
@@ -292,7 +292,7 @@ ServerEvents.recipes((event) => {
                 'naturesaura:gold_leaf',
                 '#forge:essences/manipulation'
             ],
-            time: 120,
+            time: 40,
             sapling: 'quark:ancient_sapling',
             id: `${id_prefix}slime_mushroom_spores`
         },
@@ -306,7 +306,7 @@ ServerEvents.recipes((event) => {
                 'naturesaura:gold_leaf',
                 '#forge:essences/manipulation'
             ],
-            time: 120,
+            time: 40,
             sapling: 'quark:ancient_sapling',
             id: `${id_prefix}redstone_mushroom_spores`
         },
@@ -322,7 +322,7 @@ ServerEvents.recipes((event) => {
                 '#forge:storage_blocks/energized_steel',
                 '#forge:storage_blocks/energized_steel'
             ],
-            time: 120,
+            time: 20,
             sapling: 'ars_nouveau:purple_archwood_sapling',
             id: `${id_prefix}primed_aetheric_heart`
         },
