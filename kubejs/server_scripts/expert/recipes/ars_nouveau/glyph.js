@@ -143,6 +143,30 @@ ServerEvents.recipes((event) => {
             count: 1,
             exp: 55,
             id: 'ars_nouveau:glyph_break'
+        },
+        {
+            output: 'ars_elemental:glyph_spike',
+            inputItems: [
+                { item: { item: 'minecraft:pointed_dripstone' } },
+                { item: { tag: 'forge:ingots/depths' } },
+                { item: { tag: 'forge:essences/earth' } },
+                { item: { item: 'supplementaries:antique_ink' } }
+            ],
+            count: 1,
+            exp: 55,
+            id: 'ars_elemental:glyph_spike'
+        },
+        {
+            output: 'ars_elemental:glyph_envenom',
+            inputItems: [
+                { item: { item: 'hexerei:belladonna_berries' } },
+                { item: { item: 'minecraft:fermented_spider_eye' } },
+                { item: { item: 'hexerei:dried_belladonna_flowers' } },
+                { item: { item: 'supplementaries:antique_ink' } }
+            ],
+            count: 1,
+            exp: 55,
+            id: 'ars_elemental:glyph_envenom'
         }
     ];
 
