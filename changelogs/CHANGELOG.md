@@ -21,7 +21,7 @@
 -   [Expert] Infused Ender Pearls now require Aetheric Brass to craft [\#763](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/763)
 -   [Expert] Quests added to draw attention to Modular Routers as a power transfer method [\#769](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/769)
 -   [Expert] Recipes changed for Envenom and Spike to make them craftable at a reasonable stage [\#771](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/771)
--   [Expert] Industrial Iron is renamed to Industrial Casing and had it's recipe changed to use sheetmetal [\#771](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/771)
+-   [Expert] Industrial Iron is renamed to Industrial Casing and had it's recipe changed to use sheetmetal [\#773](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/773)
 
 ### 🐛 Fixed Bugs
 
