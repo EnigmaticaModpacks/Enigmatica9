@@ -44,6 +44,11 @@ ServerEvents.recipes((event) => {
             output: '4x create:copycat_step',
             input: '#forge:ingots/ironwood',
             id: `${id_prefix}copycat_step`
+        },
+        {
+            output: '2x create:industrial_iron_block',
+            input: 'immersiveengineering:sheetmetal_colored_black',
+            id: `${id_prefix}industrial_iron_block`
         }
     ];
 

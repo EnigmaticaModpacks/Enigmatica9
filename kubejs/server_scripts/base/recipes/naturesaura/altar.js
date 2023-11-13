@@ -88,6 +88,22 @@ ServerEvents.recipes((event) => {
             aura: 45000,
             time: 300,
             id: `${id_prefix}birth_spirit`
+        },
+        {
+            output: 'minecraft:coal',
+            input: '#forge:gems/charcoal',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 15000,
+            time: 50,
+            id: `naturesaura:altar/coal`
+        },
+        {
+            output: 'minecraft:coal_block',
+            input: '#forge:storage_blocks/charcoal',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 15000 * 8,
+            time: 400,
+            id: `${id_prefix}coal_block`
         }
     ];
 
