@@ -24,6 +24,7 @@
 -   [Expert] Recipes changed for Envenom and Spike to make them craftable at a reasonable stage [\#771](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/771)
 -   [Expert] Industrial Iron is renamed to Industrial Casing and had it's recipe changed to use sheetmetal [\#773](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/773)
 -   [Expert] Thermal's mushrooms are now faster to craft in the Ritual of the Forest [\#773](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/773)
+-   [Expert] Gloaming Catalyst now blends in a bit better with the other catalysts [\#774](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/774)
 
 ### 🐛 Fixed Bugs
 
