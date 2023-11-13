@@ -29,6 +29,7 @@
 -   [Normal] Fix missing Pulverizer ore processing recipes [\#755](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/755)
 -   Clarify Create Waterwheel quest [\#761](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/761)
 -   [Expert] It should no longer be possible to go to the End using a vanilla portal [\#763](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/763)
+-   [Expert] Fix misleading spell turret quest [\#771](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/771)
 
 ---
 
