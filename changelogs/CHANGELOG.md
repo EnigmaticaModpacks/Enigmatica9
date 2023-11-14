@@ -2,6 +2,7 @@
 
 ### 🌟 Improvements
 
+-   Crushing Blizz Rods and Basalz Rods now gives Certus and Fluorite respectively [\#776](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/776)
 -   Glowstone blocks may now be crushed by Ars Nouveau Crush Glyph [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
 -   Minor tweaks to quest dependencies to create a better flow [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
 -   Environmental Eye is now an early quest reward [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
