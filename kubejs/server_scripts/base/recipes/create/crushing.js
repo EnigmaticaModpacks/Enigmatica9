@@ -16,7 +16,7 @@ ServerEvents.recipes((event) => {
             outputs: [
                 { item: 'thermal:blizz_powder', count: 3 },
                 { item: 'thermal:blizz_powder', count: 3, chance: 0.25 },
-                { item: 'minecraft:snowball', count: 1, chance: 0.25 }
+                { item: 'ae2:certus_quartz_crystal', count: 1, chance: 0.25 }
             ],
             inputs: ['#forge:rods/blizz'],
             processingTime: 60,
@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
             outputs: [
                 { item: 'thermal:basalz_powder', count: 3 },
                 { item: 'thermal:basalz_powder', count: 3, chance: 0.25 },
-                { item: 'thermal:slag', count: 1, chance: 0.5 }
+                { item: 'emendatusenigmatica:fluorite_gem', count: 1, chance: 0.5 }
             ],
             inputs: ['#forge:rods/basalz'],
             processingTime: 60,

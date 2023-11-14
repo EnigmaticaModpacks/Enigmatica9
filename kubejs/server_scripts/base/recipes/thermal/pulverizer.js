@@ -3,6 +3,42 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
+            ingredient: { tag: 'forge:rods/blaze' },
+            result: [
+                { item: 'minecraft:blaze_powder', chance: 3.0 },
+                { item: 'emendatusenigmatica:sulfur_gem', chance: 0.25 }
+            ],
+            energy: 4000,
+            id: `thermal:machines/pulverizer/pulverizer_blaze_rod`
+        },
+        {
+            ingredient: { tag: 'forge:rods/blizz' },
+            result: [
+                { item: 'thermal:blizz_powder', chance: 3.0 },
+                { item: 'ae2:certus_quartz_crystal', chance: 0.25 }
+            ],
+            energy: 4000,
+            id: `thermal:machines/pulverizer/pulverizer_blizz_rod`
+        },
+        {
+            ingredient: { tag: 'forge:rods/blitz' },
+            result: [
+                { item: 'thermal:blitz_powder', chance: 3.0 },
+                { item: 'emendatusenigmatica:niter_gem', chance: 0.25 }
+            ],
+            energy: 4000,
+            id: `thermal:machines/pulverizer/pulverizer_blitz_rod`
+        },
+        {
+            ingredient: { tag: 'forge:rods/basalz' },
+            result: [
+                { item: 'thermal:basalz_powder', chance: 3.0 },
+                { item: 'emendatusenigmatica:fluorite_gem', chance: 0.25 }
+            ],
+            energy: 4000,
+            id: `thermal:machines/pulverizer/pulverizer_basalz_rod`
+        },
+        {
             ingredient: { tag: 'minecraft:leaves' },
             result: [{ item: 'mekanism:bio_fuel', chance: 1.2 }],
             energy: 4000,
