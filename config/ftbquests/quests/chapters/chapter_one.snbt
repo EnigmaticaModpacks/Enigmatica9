@@ -1886,6 +1886,7 @@
 					type: "item"
 				}
 			]
+			title: "Aura Generation"
 			x: -6.0d
 			y: -1.0d
 		}

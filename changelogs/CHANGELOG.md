@@ -27,6 +27,8 @@
 -   [Expert] Thermal's mushrooms are now faster to craft in the Ritual of the Forest [\#773](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/773)
 -   [Expert] Gloaming Catalyst now blends in a bit better with the other catalysts [\#774](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/774)
 -   [Expert] Spell Turret quest in Chapter 1 now named Lingering Absorber Automation to help with discoverability [\#775](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/775)
+-   [Expert] End Crystals are now more expensive [\#778](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/778)
+-   [Expert] Spawner Core Shells are now less expensive, crafting in batches of four [\#778](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/778)
 
 ### 🐛 Fixed Bugs
 

@@ -177,6 +177,16 @@ ServerEvents.recipes((event) => {
                 B: 'minecraft:tuff'
             },
             id: `${id_prefix}dripstone_block`
+        },
+        {
+            output: '4x minecraft:end_crystal',
+            pattern: ['AAA', 'ABA', 'ACA'],
+            key: {
+                A: 'spirit:soul_glass',
+                B: '#forge:gems/infused_ender',
+                C: '#forge:gems/nitro'
+            },
+            id: `minecraft:end_crystal`
         }
     ];
 
