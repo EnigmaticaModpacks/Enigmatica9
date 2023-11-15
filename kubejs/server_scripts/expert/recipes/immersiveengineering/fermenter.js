@@ -6,9 +6,9 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            fluid: { amount: 60, fluid: 'pneumaticcraft:ethanol' },
+            fluid: { amount: 120, fluid: 'pneumaticcraft:ethanol' },
             input: [{ item: 'minecraft:nether_wart' }],
-            energy: 64,
+            energy: 400,
             id: `${id_prefix}ethanol_from_nether_wart`
         }
     ];
