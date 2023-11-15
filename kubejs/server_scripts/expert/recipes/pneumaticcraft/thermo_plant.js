@@ -172,7 +172,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}cured_rubber`
         },
         {
-            fluid_output: { amount: 60, fluid: 'pneumaticcraft:ethanol' },
+            fluid_output: { amount: 120, fluid: 'pneumaticcraft:ethanol' },
             fluid_input: { type: 'pneumaticcraft:fluid', amount: 10, tag: 'pneumaticcraft:yeast_culture' },
             item_input: [{ item: 'minecraft:nether_wart' }],
             exothermic: true,
