@@ -361,7 +361,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "6F37D1F612338755"
-				item: "minecraft:heart_of_the_sea"
+				item: "kubejs:heart_of_the_sea"
 				type: "item"
 			}]
 			x: -2.0d
