@@ -39,7 +39,7 @@
 -   [Expert] Set Default Exit Dim for BumbleZone to Twilight Forest [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
 -   [Expert] It should no longer be possible to go to the End using a vanilla portal. Existing portals are unaffected. [\#763](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/763)
 -   [Expert] Fix misleading spell turret quest [\#771](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/771)
--   [Expert] Fix Heart of the Sea quest [\#771](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/771)
+-   [Expert] Fix Heart of the Sea quest [\#781](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/781)
 
 ---
 
