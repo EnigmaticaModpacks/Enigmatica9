@@ -54,6 +54,7 @@ ServerEvents.entityLootTables((event) => {
             pool.addItem('ars_nouveau:glyph_summon_wolves', 1);
             pool.addItem('ars_nouveau:glyph_toss', 1);
             pool.addItem('ars_nouveau:glyph_underfoot', 1);
+            pool.addItem('ars_nouveau:glyph_randomize', 2);
 
             pool.addItem('toomanyglyphs:glyph_filter_animal', 1);
             pool.addItem('toomanyglyphs:glyph_filter_block', 1);
@@ -67,6 +68,10 @@ ServerEvents.entityLootTables((event) => {
             pool.addItem('toomanyglyphs:glyph_lay_on_hands', 1);
             pool.addItem('toomanyglyphs:glyph_ray', 1);
             pool.addItem('toomanyglyphs:glyph_reverse_direction', 1);
+
+            pool.addItem('ars_scalaes:glyph_shrink', 2);
+            pool.addItem('ars_scalaes:glyph_expand', 2);
+            pool.addItem('ars_scalaes:glyph_resize', 2);
         });
     });
 });
