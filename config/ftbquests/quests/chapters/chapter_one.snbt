@@ -682,8 +682,9 @@
 					type: "item"
 				}
 			]
+			title: "Learning to Fly"
 			x: 2.0d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7AD5D1665CA3DF4F"]
@@ -1076,11 +1077,9 @@
 			}
 			id: "28A304E0F1600640"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:ars_nouveau_glyph_cache/tier_1"
-				icon: "ars_nouveau:blank_glyph"
-				id: "4D3BD7740EAF736F"
-				title: "Random Tier 1 Glyph"
-				type: "command"
+				id: "5029C286520E55B1"
+				item: "ars_nouveau:glyph_sensitive"
+				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [
@@ -1266,7 +1265,7 @@
 			}]
 			title: "Familiar Friends"
 			x: 2.0d
-			y: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["79B755D0BDB6A8B7"]
@@ -1466,6 +1465,7 @@
 					type: "item"
 				}
 			]
+			title: "Keeping Organized with Bookwyrms"
 			x: 1.5d
 			y: 2.0d
 		}
@@ -1516,6 +1516,7 @@
 					type: "item"
 				}
 			]
+			title: "Autocrafting with Wixies"
 			x: 2.5d
 			y: 0.0d
 		}
@@ -1559,6 +1560,7 @@
 				}
 				type: "item"
 			}]
+			title: "Starbuncle Logistics"
 			x: 1.5d
 			y: 0.0d
 		}
@@ -1602,11 +1604,7 @@
 					}
 				}
 				id: "occultism:familiar_ring"
-				tag: {
-					familiar: {
-						hasFamiliar: 0b
-					}
-				}
+				tag: { }
 			}
 			id: "72B2DCE0BDCE548F"
 			min_width: 300
@@ -1640,7 +1638,7 @@
 				id: "44087E084C0010C4"
 				type: "advancement"
 			}]
-			title: "Familiars"
+			title: "Combat Assistance - Familiars"
 			x: 1.0d
 			y: 1.0d
 		}
@@ -1673,6 +1671,7 @@
 				item: "ars_nouveau:amethyst_golem_charm"
 				type: "item"
 			}]
+			title: "Budding Crystal Harvesting"
 			x: 2.5d
 			y: 2.0d
 		}
@@ -1681,7 +1680,7 @@
 			description: [
 				"Though the Wilden Grove were noted for the Ravens in their employ, there were more than a few who preferred to befriend the smaller, though equally intelligent, Crow."
 				""
-				"Summon a Crow and befriend it by feeding it Seed Mixture. These helpful critters can be equipped with a weapon and hat and will defend their friends to the death. "
+				"Perform this ritual to summon a tamed Crow. These helpful critters can be equipped with a weapon and hat and will defend their friends to the death. They're also exceptional helpers around crops, being able to harvest, replant, and gather many useful plants."
 				""
 				"Discover more about Crows in the Hexerei quest chapter. "
 			]
@@ -1739,6 +1738,7 @@
 					type: "item"
 				}
 			]
+			title: "Crow Assisted Crop Harvesting"
 			x: 3.0d
 			y: 1.0d
 		}
