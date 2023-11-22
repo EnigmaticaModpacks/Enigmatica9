@@ -30,7 +30,7 @@
 -   [Expert] Spell Turret quest in Chapter 1 now named Lingering Absorber Automation to help with discoverability [\#775](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/775)
 -   [Expert] End Crystals are now more expensive [\#778](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/778)
 -   [Expert] Spawner Core Shells are now less expensive, crafting in batches of four [\#778](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/778)
--   [Expert] Chapter 1 quest clarifications to help guide players to things like the Storage Lectern [\#778](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/778)
+-   [Expert] Chapter 1 quest clarifications to help guide players to things like the Storage Lectern [\#787](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/787)
 
 ### 🐛 Fixed Bugs
 
