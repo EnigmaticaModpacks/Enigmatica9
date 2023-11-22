@@ -31,6 +31,8 @@
 -   [Expert] End Crystals are now more expensive [\#778](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/778)
 -   [Expert] Spawner Core Shells are now less expensive, crafting in batches of four [\#778](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/778)
 -   [Expert] Chapter 1 quest clarifications to help guide players to things like the Storage Lectern [\#787](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/787)
+-   [Expert] Various Twilight boses now drop some essences to give the player a jump start before they get their production going [\#787](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/787)
+-   [Expert] Compressed Stone may now be found in the Troll vaults [\#787](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/787)
 
 ### 🐛 Fixed Bugs
 
