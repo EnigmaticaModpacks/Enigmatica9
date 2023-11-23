@@ -79,6 +79,12 @@ ServerEvents.recipes((event) => {
             outputs: ['8x minecraft:melon_slice'],
             processingTime: 30,
             id: `${id_prefix}melon_slice`
+        },
+        {
+            input: ['#forge:rods/all_metal'],
+            outputs: ['8x ae2:cable_anchor'],
+            processingTime: 30,
+            id: `${id_prefix}cable_anchor`
         }
     ];
 
