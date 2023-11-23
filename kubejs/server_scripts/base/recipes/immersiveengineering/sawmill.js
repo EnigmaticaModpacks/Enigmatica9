@@ -4,17 +4,24 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             energy: 512,
-            input: [Item.of('naturesaura:ancient_log')],
-            output: Item.of('naturesaura:ancient_planks', 6),
+            input: ['naturesaura:ancient_log'],
+            output: '6x naturesaura:ancient_planks',
             secondaries: [{ output: 'naturesaura:gold_powder', stripping: false }],
             id: `${id_prefix}ancient_planks_from_ancient_log`
         },
         {
             energy: 512,
-            input: [Item.of('naturesaura:ancient_bark')],
-            output: Item.of('naturesaura:ancient_planks', 6),
+            input: ['naturesaura:ancient_bark'],
+            output: '6x naturesaura:ancient_planks',
             secondaries: [{ output: 'naturesaura:gold_powder', stripping: false }],
             id: `${id_prefix}ancient_planks_from_ancient_bark`
+        },
+        {
+            energy: 512,
+            input: ['#forge:rods/all_metal'],
+            output: '8x ae2:cable_anchor',
+            secondaries: [],
+            id: `${id_prefix}cable_anchor`
         }
     ];
 
@@ -24,8 +31,8 @@ ServerEvents.recipes((event) => {
             input = material.log.block;
         recipes.push({
             energy: 512,
-            input: [Item.of(input)],
-            output: Item.of(output, 6),
+            input: [input],
+            output: `6x ${output}`,
             secondaries: [
                 { output: bark, stripping: true },
                 { output: sawdust, stripping: false }
@@ -38,8 +45,8 @@ ServerEvents.recipes((event) => {
         input = material.wood.block;
         recipes.push({
             energy: 512,
-            input: [Item.of(input)],
-            output: Item.of(output, 6),
+            input: [input],
+            output: `6x ${output}`,
             secondaries: [
                 { output: bark, stripping: true },
                 { output: sawdust, stripping: false }
@@ -51,8 +58,8 @@ ServerEvents.recipes((event) => {
 
     recipes.forEach((recipe) => {
         recipe.type = 'immersiveengineering:sawmill';
-        recipe.input = recipe.input.map((input) => input.toJson());
-        recipe.result = recipe.output.toJson();
+        recipe.input = recipe.input.map((input) => Ingredient.of(input).toJson());
+        recipe.result = Item.of(recipe.output).toJson();
         recipe.secondaries = recipe.secondaries.map((secondary) => ({
             output: { item: secondary.output },
             stripping: secondary.stripping
