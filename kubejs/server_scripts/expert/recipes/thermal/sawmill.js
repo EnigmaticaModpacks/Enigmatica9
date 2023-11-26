@@ -1,57 +1,19 @@
 ServerEvents.recipes((event) => {
-    const id_prefix = 'enigmatica:base/thermal/sawmill/';
+    if (global.isExpertMode == false) {
+        return;
+    }
+
+    const id_prefix = 'enigmatica:expert/thermal/sawmill/';
 
     const recipes = [
         {
-            ingredient: { item: 'minecraft:melon' },
+            ingredient: { item: 'occultism:dimensional_matrix' },
             result: [
-                { item: 'minecraft:melon_slice', count: 8 },
-                { item: 'minecraft:melon_seeds', chance: 0.25 }
+                { item: 'kubejs:dimensional_storage_crystal', count: 27 },
+                { item: 'ae2:certus_quartz_dust', chance: 1.0 }
             ],
-            energy: 800,
-            id: `${id_prefix}melon_slice`
-        },
-        {
-            ingredient: { item: 'thermal:frost_melon' },
-            result: [
-                { item: 'thermal:frost_melon_slice', count: 8 },
-                { item: 'thermal:frost_melon_seeds', chance: 0.25 }
-            ],
-            energy: 800,
-            id: `${id_prefix}frost_melon_slice`
-        },
-        {
-            ingredient: { item: 'naturesaura:ancient_log' },
-            result: [
-                { item: 'naturesaura:ancient_planks', count: 6 },
-                { item: 'naturesaura:gold_powder', chance: 1.1 }
-            ],
-            energy: 1000,
-            id: `${id_prefix}ancient_planks_from_ancient_log`
-        },
-        {
-            ingredient: { item: 'naturesaura:ancient_bark' },
-            result: [
-                { item: 'naturesaura:ancient_planks', count: 6 },
-                { item: 'naturesaura:gold_powder', chance: 1.1 }
-            ],
-            energy: 1000,
-            id: `${id_prefix}ancient_planks_from_ancient_bark`
-        },
-        {
-            ingredient: { tag: 'forge:rods/all_metal' },
-            result: [{ item: 'ae2:cable_anchor', count: 8 }],
-            energy: 1000,
-            id: `${id_prefix}cable_anchor`
-        },
-        {
-            ingredient: { tag: 'forge:bookshelves' },
-            result: [
-                { item: 'minecraft:book', count: 3 },
-                { item: sawdust, chance: 6 }
-            ],
-            energy: 1000,
-            id: `${id_prefix}book_from_bookshelves`
+            energy: 5000,
+            id: `${id_prefix}dimensional_storage_crystal`
         }
     ];
 

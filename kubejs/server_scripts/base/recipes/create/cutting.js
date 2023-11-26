@@ -4,13 +4,13 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             input: ['naturesaura:ancient_log'],
-            outputs: ['6x naturesaura:ancient_planks'],
+            outputs: ['6x naturesaura:ancient_planks', 'naturesaura:gold_powder'],
             processingTime: 50,
             id: `${id_prefix}ancient_planks_from_ancient_log`
         },
         {
             input: ['naturesaura:ancient_bark'],
-            outputs: ['6x naturesaura:ancient_planks'],
+            outputs: ['6x naturesaura:ancient_planks', 'naturesaura:gold_powder'],
             processingTime: 50,
             id: `${id_prefix}ancient_planks_from_ancient_bark`
         },
@@ -85,6 +85,12 @@ ServerEvents.recipes((event) => {
             outputs: ['8x ae2:cable_anchor'],
             processingTime: 30,
             id: `${id_prefix}cable_anchor`
+        },
+        {
+            input: ['#forge:bookshelves'],
+            outputs: ['3x minecraft:book', `6x ${sawdust}`],
+            processingTime: 30,
+            id: `${id_prefix}book_from_bookshelves`
         }
     ];
 
@@ -94,7 +100,7 @@ ServerEvents.recipes((event) => {
             output = material.log.stripped;
         recipes.push({
             input: [input],
-            outputs: [output],
+            outputs: [output, bark],
             processingTime: 50,
             id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
         });
@@ -104,7 +110,7 @@ ServerEvents.recipes((event) => {
         output = material.wood.stripped;
         recipes.push({
             input: [input],
-            outputs: [output],
+            outputs: [output, bark],
             processingTime: 50,
             id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
         });
@@ -114,7 +120,7 @@ ServerEvents.recipes((event) => {
         output = material.plank.block;
         recipes.push({
             input: [input],
-            outputs: [`6x ${output}`],
+            outputs: [`6x ${output}`, sawdust],
             processingTime: 50,
             id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
         });
@@ -122,7 +128,7 @@ ServerEvents.recipes((event) => {
         input = material.wood.stripped;
         recipes.push({
             input: [input],
-            outputs: [`6x ${output}`],
+            outputs: [`6x ${output}`, sawdust],
             processingTime: 50,
             id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
         });

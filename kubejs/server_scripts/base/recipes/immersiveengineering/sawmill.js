@@ -22,6 +22,17 @@ ServerEvents.recipes((event) => {
             output: '8x ae2:cable_anchor',
             secondaries: [],
             id: `${id_prefix}cable_anchor`
+        },
+        {
+            energy: 512,
+            input: ['#forge:bookshelves'],
+            output: `6x ${sawdust}`,
+            secondaries: [
+                { output: 'minecraft:book', stripping: false },
+                { output: 'minecraft:book', stripping: false },
+                { output: 'minecraft:book', stripping: false }
+            ],
+            id: `${id_prefix}book_from_bookshelves`
         }
     ];
 
