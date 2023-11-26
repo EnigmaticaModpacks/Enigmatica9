@@ -28,5 +28,6 @@
 	"advancement.create.brass_casing": "The Brass Age",
 	"advancement.create.brass_casing.desc": "Apply Brass Ingots to stripped wood, creating a casing for more sophisticated machines",
 	"advancement.create.brass": "Real Alloys",
-	"advancement.create.brass.desc": "Create Brass Ingots by alloying Copper and Zinc Ingots in your Blaze-heated Mechanical Mixer"
+	"advancement.create.brass.desc": "Create Brass Ingots by alloying Copper and Zinc Ingots in your Blaze-heated Mechanical Mixer",
+	"block.create.industrial_iron_block": "Block of Industrial Iron"
 }

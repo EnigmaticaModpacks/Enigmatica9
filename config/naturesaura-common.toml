@@ -29,7 +29,7 @@
 	#If the Aura Imbalance effect of grass growing on netherrack if the Aura levels are high enough should occur
 	netherGrassEffect = true
 	#If the Aura Imbalance effect of explosions happening randomly if Aura levels are too low should occur
-	explosionEffect = true
+	explosionEffect = false
 	#If the Aura Imbalance effect of nether blocks degrading in the area if the Aura levels are too low should occur
 	netherDecayEffect = true
 	#If Aura Blooms and Aura Cacti should generate in the level
