@@ -85,6 +85,12 @@ ServerEvents.recipes((event) => {
             outputs: ['8x ae2:cable_anchor'],
             processingTime: 30,
             id: `${id_prefix}cable_anchor`
+        },
+        {
+            input: ['#forge:bookshelves'],
+            outputs: ['3x minecraft:book'],
+            processingTime: 30,
+            id: `${id_prefix}book_from_bookshelves`
         }
     ];
 

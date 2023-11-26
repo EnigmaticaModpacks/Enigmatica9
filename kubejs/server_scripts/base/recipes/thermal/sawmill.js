@@ -43,6 +43,15 @@ ServerEvents.recipes((event) => {
             result: [{ item: 'ae2:cable_anchor', count: 8 }],
             energy: 1000,
             id: `${id_prefix}cable_anchor`
+        },
+        {
+            ingredient: { tag: 'forge:bookshelves' },
+            result: [
+                { item: 'minecraft:book', count: 3 },
+                { item: sawdust, chance: 1 }
+            ],
+            energy: 1000,
+            id: `${id_prefix}book_from_bookshelves`
         }
     ];
 
