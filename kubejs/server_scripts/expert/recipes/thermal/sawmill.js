@@ -17,59 +17,6 @@ ServerEvents.recipes((event) => {
         }
     ];
 
-    wood_properties.forEach((material) => {
-        // Log to Stripped
-        let input = material.log.block,
-            output = material.log.stripped;
-        recipes.push({
-            ingredient: { item: input },
-            result: [
-                { item: output, count: 1 },
-                { item: bark, chance: 1.25 }
-            ],
-            energy: 1000,
-            id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
-        });
-
-        // Wood to Stripped
-        input = material.wood.block;
-        output = material.wood.stripped;
-        recipes.push({
-            ingredient: { item: input },
-            result: [
-                { item: output, count: 1 },
-                { item: bark, chance: 1.25 }
-            ],
-            energy: 1000,
-            id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
-        });
-
-        // Stripped to Plank
-        input = material.log.stripped;
-        output = material.plank.block;
-        recipes.push({
-            ingredient: [{ item: input }],
-            result: [
-                { item: output, count: 6 },
-                { item: sawdust, chance: 0.5 }
-            ],
-            energy: 1000,
-            id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
-        });
-
-        input = material.wood.stripped;
-        output = material.plank.block;
-        recipes.push({
-            ingredient: [{ item: input }],
-            result: [
-                { item: output, count: 6 },
-                { item: sawdust, chance: 0.5 }
-            ],
-            energy: 1000,
-            id: `${id_prefix}${output.replace(':', '_')}_from_${input.replace(':', '_')}`
-        });
-    });
-
     recipes.forEach((recipe) => {
         recipe.type = 'thermal:sawmill';
         event.custom(recipe).id(recipe.id);
