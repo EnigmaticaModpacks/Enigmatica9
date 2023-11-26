@@ -26,8 +26,12 @@ ServerEvents.recipes((event) => {
         {
             energy: 512,
             input: ['#forge:bookshelves'],
-            output: '3x minecraft:book',
-            secondaries: [{ output: sawdust, stripping: false }],
+            output: `6x ${sawdust}`,
+            secondaries: [
+                { output: 'minecraft:book', stripping: false },
+                { output: 'minecraft:book', stripping: false },
+                { output: 'minecraft:book', stripping: false }
+            ],
             id: `${id_prefix}book_from_bookshelves`
         }
     ];

@@ -42,7 +42,7 @@ ServerEvents.recipes((event) => {
         {
             input: ['#forge:bookshelves'],
             output: '3x minecraft:book',
-            secondary: { output: sawdust, chance: 1.0 },
+            secondary: { output: sawdust, count: 6, chance: 1.0 },
             id: `${id_prefix}book_from_bookshelves`
         }
     ];
