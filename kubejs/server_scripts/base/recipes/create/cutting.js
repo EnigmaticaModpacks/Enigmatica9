@@ -88,7 +88,7 @@ ServerEvents.recipes((event) => {
         },
         {
             input: ['#forge:bookshelves'],
-            outputs: ['3x minecraft:book', '6x emendatusenigmatica:wood_dust'],
+            outputs: ['3x minecraft:book', `6x ${sawdust}`],
             processingTime: 30,
             id: `${id_prefix}book_from_bookshelves`
         }
