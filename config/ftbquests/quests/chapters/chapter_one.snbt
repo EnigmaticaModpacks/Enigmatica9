@@ -74,13 +74,21 @@
 			]
 			hide: true
 			id: "73CDA6ED2393DE42"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
-				icon: "kubejs:aura_leaf"
-				id: "74F868CAED853121"
-				title: "Aura Infusion"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "74F868CAED853121"
+					title: "Aura Infusion"
+					type: "command"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "07FEE1BA2045C7FC"
+					table_id: 3385184300630852421L
+					type: "choice"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Fear is the Mind-Killer"
 			tasks: [{
@@ -152,7 +160,7 @@
 					type: "item"
 				}
 			]
-			x: -4.5d
+			x: -5.0d
 			y: -6.5d
 		}
 		{
@@ -186,7 +194,7 @@
 		{
 			dependencies: [
 				"7224985826C6E047"
-				"73CDA6ED2393DE42"
+				"00FB8D9041ED6D73"
 			]
 			description: [
 				"With the seeds, herbs, and saplings found among the Naga’s remains, its time to take root, so to speak, and lay out a garden. "
@@ -1387,7 +1395,7 @@
 					type: "item"
 				}
 			]
-			x: -2.5d
+			x: -2.0d
 			y: -6.5d
 		}
 		{
@@ -1604,7 +1612,11 @@
 					}
 				}
 				id: "occultism:familiar_ring"
-				tag: { }
+				tag: {
+					familiar: {
+						hasFamiliar: 0b
+					}
+				}
 			}
 			id: "72B2DCE0BDCE548F"
 			min_width: 300
@@ -2717,6 +2729,61 @@
 			title: "Plastic"
 			x: -8.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["73CDA6ED2393DE42"]
+			description: [
+				"Life on the road has its ups and downs but a nice warm tent to call home can smooth over many of the rougher parts of such a life-style."
+				""
+				"================================="
+				""
+				"Nomadic Tents offer a portable home that can make a wonderful base of operations early on. Not only may the be moved with ease, but they may also be upgraded while retaining their contents. "
+				""
+				"Consider setting up a bed, basic storage, and some essential crafting stations inside!"
+				""
+				"● Right-Click and Hold the tent on the "
+				"  ground to place the frame."
+				""
+				"● Right-Click each frame with a mallet "
+				"  to form that section. "
+				""
+				"  A Golden Mallet will form the entire "
+				"  tent at once!"
+				""
+				"● Right-Click or walk into the door to "
+				"  enter and exit."
+				""
+				"● Right-Click the door from the outside "
+				"  to pack up the tent as an item."
+			]
+			id: "00FB8D9041ED6D73"
+			rewards: [{
+				id: "4C3A6668078E18B6"
+				item: {
+					Count: 1b
+					id: "nomadictents:mallet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "2CE21FBACA8A8DEA"
+				item: {
+					Count: 1b
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "^nomadictents:(tiny|small|medium|large|giant|mega)"
+					}
+				}
+				title: "Any Tent"
+				type: "item"
+			}]
+			title: "Nomadic Life"
+			x: -3.5d
+			y: -6.5d
 		}
 	]
 	title: "Chapter One"

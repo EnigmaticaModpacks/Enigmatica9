@@ -1,3 +1,11 @@
+### Enigmatica 9 v1.17.0
+
+### 🌟 Improvements
+
+-   [Expert] Early quests now grant a Large Nomadic Tent of one's choosing [\#794](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/794)
+
+---
+
 ### Enigmatica 9 v1.16.0
 
 ### 🌟 Improvements
