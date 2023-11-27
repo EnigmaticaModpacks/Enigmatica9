@@ -1460,7 +1460,7 @@
 						Count: 1b
 						id: "itemfilters:id_regex"
 						tag: {
-							value: "nomadictents:.*(yurt|tepee|bedouin|indlu|shamiyana)$"
+							value: "^nomadictents:(tiny|small|medium|large|giant|mega)"
 						}
 					}
 					title: "Nomadic Tents"
