@@ -4,6 +4,10 @@
 
 -   [Expert] Early quests now grant a Large Nomadic Tent of one's choosing [\#794](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/794)
 
+### 🐛 Fixed Bugs
+
+-   [Expert] Mysterious Cubes, should they spawn, will no longer drop Inscriber Presses [\#795](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/795)
+
 ---
 
 ### Enigmatica 9 v1.16.0
