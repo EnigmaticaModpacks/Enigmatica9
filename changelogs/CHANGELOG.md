@@ -6,7 +6,7 @@
 
 ### 🐛 Fixed Bugs
 
--   [Expert] Mysterious Cubes, should they spawn, will no longer drop Inscriber Presses [\#794](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/794)
+-   [Expert] Mysterious Cubes, should they spawn, will no longer drop Inscriber Presses [\#795](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/795)
 
 ---
 
