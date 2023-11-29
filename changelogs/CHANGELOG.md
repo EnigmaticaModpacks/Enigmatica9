@@ -3,6 +3,7 @@
 ### 🌟 Improvements
 
 -   [Expert] Early quests now grant a Large Nomadic Tent of one's choosing [\#794](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/794)
+-   [Expert] The Dictionary of Spirits now indicates that the Tree of Life is grown from Aviar's Circle [\#796](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/796)
 
 ### 🐛 Fixed Bugs
 
