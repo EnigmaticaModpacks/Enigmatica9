@@ -423,6 +423,8 @@
 		#Allowed Values: OFF, WITH_COMPASS, ALWAYS
 		death_marker = "WITH_COMPASS"
 		colored_map = true
+		#Select a random structure to look for instead of iterating through all of the ones in the tag returning the closest. Turning on will make ones that have diff structures (aka all different ruined portals) show up more. On could take much more time to compute
+		random_adventurer_maps_select_random_structure = true
 
 	[tweaks.ceiling_banners]
 		#Allow banners to be placed on ceilings
