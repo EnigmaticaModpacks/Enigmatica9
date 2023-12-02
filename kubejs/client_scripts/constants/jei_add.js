@@ -10,17 +10,12 @@
 
 // Base
 jei.base.items.added = [
-    { id: 'immersiveengineering:arc_furnace' },
     { id: 'immersiveengineering:assembler' },
-    { id: 'immersiveengineering:auto_workbench' },
     { id: 'immersiveengineering:bottling_machine' },
     { id: 'immersiveengineering:coke_oven' },
     { id: 'immersiveengineering:crusher' },
-    { id: 'immersiveengineering:diesel_generator' },
-    { id: 'immersiveengineering:excavator' },
     { id: 'immersiveengineering:fermenter' },
     { id: 'immersiveengineering:advanced_blast_furnace' },
-    { id: 'immersiveengineering:lightning_rod' },
     { id: 'immersiveengineering:metal_press' },
     { id: 'immersiveengineering:mixer' },
     { id: 'immersiveengineering:refinery' },
@@ -38,8 +33,11 @@ jei.base.items.added = [
 
 // Normal
 jei.normal.items.added = [
-    { id: 'immersiveengineering:alloy_smelter' },
-    { id: 'immersiveengineering:blast_furnace' }
+    { id: 'immersiveengineering:arc_furnace' },
+    { id: 'immersiveengineering:auto_workbench' },
+    { id: 'immersiveengineering:diesel_generator' },
+    { id: 'immersiveengineering:excavator' },
+    { id: 'immersiveengineering:lightning_rod' }
 ];
 
 // Expert
