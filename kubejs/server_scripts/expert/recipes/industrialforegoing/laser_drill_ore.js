@@ -16,11 +16,11 @@ ServerEvents.recipes((event) => {
                     blacklist: {},
                     whitelist: {
                         type: 'minecraft:worldgen/biome',
-                        values: biomes.in_the_nether.concat([
+                        values: [
                             'twilightforest:dark_forest',
                             'twilightforest:dark_forest_center',
                             'twilightforest:spooky_forest'
-                        ])
+                        ].concat(biomes.in_the_nether)
                     }
                 },
                 {
@@ -30,11 +30,11 @@ ServerEvents.recipes((event) => {
                     blacklist: {},
                     whitelist: {
                         type: 'minecraft:worldgen/biome',
-                        values: biomes.in_the_nether.concat([
+                        values: [
                             'twilightforest:dark_forest',
                             'twilightforest:dark_forest_center',
                             'twilightforest:spooky_forest'
-                        ])
+                        ].concat(biomes.in_the_nether)
                     }
                 }
             ],
@@ -52,11 +52,11 @@ ServerEvents.recipes((event) => {
                     blacklist: {},
                     whitelist: {
                         type: 'minecraft:worldgen/biome',
-                        values: biomes.in_the_nether.concat([
+                        values: [
                             'twilightforest:dark_forest',
                             'twilightforest:dark_forest_center',
                             'twilightforest:spooky_forest'
-                        ])
+                        ].concat(biomes.in_the_nether)
                     }
                 },
                 {
@@ -66,11 +66,11 @@ ServerEvents.recipes((event) => {
                     blacklist: {},
                     whitelist: {
                         type: 'minecraft:worldgen/biome',
-                        values: biomes.in_the_nether.concat([
+                        values: [
                             'twilightforest:dark_forest',
                             'twilightforest:dark_forest_center',
                             'twilightforest:spooky_forest'
-                        ])
+                        ].concat(biomes.in_the_nether)
                     }
                 }
             ],

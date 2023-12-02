@@ -19,8 +19,8 @@ ServerEvents.entityLootTables((event) => {
             pool.addItem('ars_elemental:glyph_not_insect_filter', 1);
             pool.addItem('ars_elemental:glyph_not_undead_filter', 1);
             pool.addItem('ars_elemental:glyph_undead_filter', 1);
-            pool.addItem('ars_elemental:glyph_summon_filter', 1, 1);
-            pool.addItem('ars_elemental:glyph_not_summon_filter', 1, 1);
+            pool.addItem('ars_elemental:glyph_summon_filter', 1);
+            pool.addItem('ars_elemental:glyph_not_summon_filter', 1);
 
             pool.addItem('ars_nouveau:glyph_amplify', 2);
             pool.addItem('ars_nouveau:glyph_self', 2);
@@ -47,7 +47,7 @@ ServerEvents.entityLootTables((event) => {
             pool.addItem('ars_nouveau:glyph_redstone_signal', 2);
             pool.addItem('ars_nouveau:glyph_rotate', 2);
             pool.addItem('ars_nouveau:glyph_rune', 2);
-            pool.addItem('ars_nouveau:glyph_sensitive', 2);
+            pool.addItem('ars_nouveau:glyph_sensitive', 4);
             pool.addItem('ars_nouveau:glyph_snare', 2);
             pool.addItem('ars_nouveau:glyph_summon_steed', 2);
             pool.addItem('ars_nouveau:glyph_summon_wolves', 2);
@@ -55,6 +55,7 @@ ServerEvents.entityLootTables((event) => {
             pool.addItem('ars_nouveau:glyph_underfoot', 2);
             pool.addItem('ars_nouveau:glyph_crush', 2);
             pool.addItem('ars_nouveau:glyph_aoe', 2);
+            pool.addItem('ars_nouveau:glyph_randomize', 2);
 
             pool.addItem('toomanyglyphs:glyph_filter_animal', 1);
             pool.addItem('toomanyglyphs:glyph_filter_block', 1);

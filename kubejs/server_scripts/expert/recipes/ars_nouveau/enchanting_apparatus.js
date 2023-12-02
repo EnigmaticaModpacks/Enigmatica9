@@ -772,7 +772,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}heart_of_the_tempest`
         },
         {
-            output: 'pneumaticcraft:spawner_core_shell',
+            output: '4x pneumaticcraft:spawner_core_shell',
             inputs: [
                 '#forge:gems/nitro',
                 'spirit:soul_glass',
@@ -784,7 +784,7 @@ ServerEvents.recipes((event) => {
                 'spirit:soul_glass'
             ],
             reagents: ['spirit:soul_crystal'],
-            sourceCost: 1000,
+            sourceCost: 5000,
             id: `${id_prefix}spawner_core_shell`
         },
         {

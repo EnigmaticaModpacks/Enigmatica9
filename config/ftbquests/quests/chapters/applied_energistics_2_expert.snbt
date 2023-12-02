@@ -932,7 +932,7 @@
 			description: [
 				"Applied Energistics takes storage and logistics to the next level. On its own, it is capable of automating many crafts while also providing deep storage solutions and capabilities to bridge many mods. "
 				""
-				"Getting started will require finding some Certus Quartz, and that’s going to take a little exploration. Get your boots and compass, it’s time to head out. "
+				"Getting started will require finding some Certus Quartz, and that’s going to take a little exploration. Get your boots, it’s time to head out. "
 				""
 				"{\"text\":\"AE2 Wiki\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/\"}}"
 			]

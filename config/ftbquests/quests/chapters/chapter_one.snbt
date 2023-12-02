@@ -52,7 +52,7 @@
 				}
 			]
 			title: "Basic Metallurgy"
-			x: -0.5d
+			x: -2.5d
 			y: -7.5d
 		}
 		{
@@ -74,13 +74,21 @@
 			]
 			hide: true
 			id: "73CDA6ED2393DE42"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
-				icon: "kubejs:aura_leaf"
-				id: "74F868CAED853121"
-				title: "Aura Infusion"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "74F868CAED853121"
+					title: "Aura Infusion"
+					type: "command"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "07FEE1BA2045C7FC"
+					table_id: 3385184300630852421L
+					type: "choice"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Fear is the Mind-Killer"
 			tasks: [{
@@ -152,7 +160,7 @@
 					type: "item"
 				}
 			]
-			x: -4.5d
+			x: -5.0d
 			y: -6.5d
 		}
 		{
@@ -186,7 +194,7 @@
 		{
 			dependencies: [
 				"7224985826C6E047"
-				"73CDA6ED2393DE42"
+				"00FB8D9041ED6D73"
 			]
 			description: [
 				"With the seeds, herbs, and saplings found among the Naga’s remains, its time to take root, so to speak, and lay out a garden. "
@@ -214,6 +222,11 @@
 							Potion: "apotheosis:knowledge"
 						}
 					}
+					type: "item"
+				}
+				{
+					id: "4C7C143A9FAD1DF6"
+					item: "naturesaura:eye"
 					type: "item"
 				}
 				{
@@ -522,8 +535,8 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
-			y: 1.0d
+			x: -3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -534,8 +547,6 @@
 				"Enigmatic Unity’s Pulsating Crystals serve as the basis for generating most FE, though a few other methods are available. "
 				""
 				"They require a Source Jar nearby from which they’ll periodically draw a quantity of Source, converting it into FE. If there is any Aura present when this happens, a portion of Aura will also be consumed, generating far more FE in the process. "
-				""
-				"Be mindful, as this can drain Aura to dangerously low levels!"
 			]
 			id: "3B372F597A05E777"
 			rewards: [
@@ -613,7 +624,7 @@
 				}
 			]
 			title: "Applied Energistics"
-			x: -9.0d
+			x: -9.5d
 			y: 3.0d
 		}
 		{
@@ -679,8 +690,9 @@
 					type: "item"
 				}
 			]
+			title: "Learning to Fly"
 			x: 2.0d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7AD5D1665CA3DF4F"]
@@ -820,6 +832,7 @@
 				""
 				"Discover the rest of the process through JEI."
 			]
+			hide_dependency_lines: true
 			icon: "immersiveengineering:ingot_aluminum"
 			id: "345CBD118EAA0C09"
 			rewards: [{
@@ -847,8 +860,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: 2.0d
+			x: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["73CDA6ED2393DE42"]
@@ -877,7 +890,9 @@
 			description: [
 				"Though many glyphs may be found and used to repair the spell book, the Scribe’s Table may also be used to craft any glyph. "
 				""
-				"Finding proper spell ink, however, may prove more difficult as it must be specially prepared using a process that can take years."
+				"Finding proper spell ink, however, may prove more difficult as it must be specially prepared using a process that can take years. "
+				""
+				"It was once heavily traded by the seafaring folk that specialized in its creation. Perhaps some could be retrieved with some good old-fashioned trawling. "
 			]
 			id: "7507572BD048B6C9"
 			rewards: [{
@@ -1070,11 +1085,9 @@
 			}
 			id: "28A304E0F1600640"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:ars_nouveau_glyph_cache/tier_1"
-				icon: "ars_nouveau:blank_glyph"
-				id: "4D3BD7740EAF736F"
-				title: "Random Tier 1 Glyph"
-				type: "command"
+				id: "5029C286520E55B1"
+				item: "ars_nouveau:glyph_sensitive"
+				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [
@@ -1152,6 +1165,10 @@
 				"With the elements mastered, only one task remains before the Tree of Life may be restored: Winter’s Reign must end. "
 				""
 				"Travel to the frigid glaciers and defeat the Snow Queen to obtain Subzero Crystals."
+				""
+				"================================="
+				""
+				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the Subzero Crystal and induce it to grow. "
 			]
 			hide_dependency_lines: true
 			id: "729E9D41A28D0E4D"
@@ -1170,7 +1187,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["66585A158F41DE44"]
@@ -1256,21 +1273,45 @@
 			}]
 			title: "Familiar Friends"
 			x: 2.0d
-			y: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["79B755D0BDB6A8B7"]
 			description: [
-				"More finely crafted apparatus will need more delicately formed metals."
+				"More finely crafted devices will need more delicately processed materials than can easily be done by hand."
 				""
-				"These tough mechanical machines, the Mechanical Press and Rolling Mill, are up to the task of properly pounding out plates or forming wires and rods, respectively. "
+				"These tough mechanical devices are up to the task. "
+				""
+				"● Millstone - Capable of grinding "
+				"  materials much more finely than can "
+				"  be achieved by hand, the Millstone will "
+				"  occasionally produce secondary       "
+				"  materials that may be quite useful, "
+				"  such as Lead and Quartz."
+				""
+				"● Rolling Mill - Working from Ingots, the "
+				"  Rolling Mill can create the fine Rods "
+				"  and Wires required by many "
+				"  advanced devices. "
+				""
+				"● Mechanical Press - A device strong "
+				"  enough to flatten Ingots into Plates "
+				"  in only a few strokes. Well worth the "
+				"  effort of setting it up.  "
 			]
 			id: "44B02A5817C4144A"
-			rewards: [{
-				id: "0FC05A9E5B974922"
-				item: "ars_creo:starbuncle_wheel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0FC05A9E5B974922"
+					item: "ars_creo:starbuncle_wheel"
+					type: "item"
+				}
+				{
+					id: "36C648094A71AC39"
+					item: "createaddition:straw"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "7E269B72F57C62D3"
@@ -1280,6 +1321,11 @@
 				{
 					id: "1A61D7D0519A6615"
 					item: "createaddition:rolling_mill"
+					type: "item"
+				}
+				{
+					id: "00BD1D8A00CAB755"
+					item: "create:millstone"
 					type: "item"
 				}
 			]
@@ -1349,7 +1395,7 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
+			x: -2.0d
 			y: -6.5d
 		}
 		{
@@ -1384,7 +1430,7 @@
 				title: "Alloying"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.5d
 			y: -5.5d
 		}
 		{
@@ -1427,6 +1473,7 @@
 					type: "item"
 				}
 			]
+			title: "Keeping Organized with Bookwyrms"
 			x: 1.5d
 			y: 2.0d
 		}
@@ -1437,7 +1484,7 @@
 				""
 				"To let the Wixie know what potions to brew, place some brewed potions on Arcane Pedestals or Platforms adjacent to her Cauldron. These can be obtained by brewing in the Mixing Cauldron and Right-Clicking it with Glass Bottles. "
 				""
-				"The entire chain must be present for her to do her job. So, to brew a Potion of Ancient Knowledge, she’ll need a pedestal with an Awkward Potion and another with a Potion of Ancient Knowledge. She’ll need a Potion Jar for each step as well. Multiple Wixies may work together as well, with each fulfilling the next step in the chain. "
+				"The entire chain must be present for her to do her job. So, to brew a Potion of Ancient Knowledge, she’ll need a pedestal with an Awkward Potion and another with a Potion of Ancient Knowledge. She’ll need a Potion Jar for each step as well. Multiple Wixies may work together, with each fulfilling the next step in the chain. "
 				""
 				"More information can be found in the Worn Notebook. "
 			]
@@ -1477,6 +1524,7 @@
 					type: "item"
 				}
 			]
+			title: "Autocrafting with Wixies"
 			x: 2.5d
 			y: 0.0d
 		}
@@ -1520,6 +1568,7 @@
 				}
 				type: "item"
 			}]
+			title: "Starbuncle Logistics"
 			x: 1.5d
 			y: 0.0d
 		}
@@ -1601,7 +1650,7 @@
 				id: "44087E084C0010C4"
 				type: "advancement"
 			}]
-			title: "Familiars"
+			title: "Combat Assistance - Familiars"
 			x: 1.0d
 			y: 1.0d
 		}
@@ -1634,6 +1683,7 @@
 				item: "ars_nouveau:amethyst_golem_charm"
 				type: "item"
 			}]
+			title: "Budding Crystal Harvesting"
 			x: 2.5d
 			y: 2.0d
 		}
@@ -1642,7 +1692,7 @@
 			description: [
 				"Though the Wilden Grove were noted for the Ravens in their employ, there were more than a few who preferred to befriend the smaller, though equally intelligent, Crow."
 				""
-				"Summon a Crow and befriend it by feeding it Seed Mixture. These helpful critters can be equipped with a weapon and hat and will defend their friends to the death. "
+				"Perform this ritual to summon a tamed Crow. These helpful critters can be equipped with a weapon and hat and will defend their friends to the death. They're also exceptional helpers around crops, being able to harvest, replant, and gather many useful plants."
 				""
 				"Discover more about Crows in the Hexerei quest chapter. "
 			]
@@ -1700,6 +1750,7 @@
 					type: "item"
 				}
 			]
+			title: "Crow Assisted Crop Harvesting"
 			x: 3.0d
 			y: 1.0d
 		}
@@ -1769,6 +1820,8 @@
 				"================================="
 				""
 				"Note: The Tree of Life will be facing North with a small entrance going down into the pentacle chamber. This rotation cannot be changed. "
+				""
+				"This structure is 23x23 and extends both into the ground and sky. It will overwrite blocks near it when it grows. You've been warned."
 			]
 			icon: "kubejs:tree_of_life_1"
 			id: "33BCDA0A76E2523C"
@@ -1795,53 +1848,7 @@
 			]
 			title: "Tree of Life"
 			x: -3.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["347A644441BCF449"]
-			description: ["Often found clustered in with Tin ores, Quartz may be extracted occasionally when grinding the ore with better tools, such as the Mill. "]
-			id: "5B7806FED7D58329"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "2D22DA949427C0B4"
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "76702DE4AA5CCE26"
-				item: "minecraft:quartz"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["79B755D0BDB6A8B7"]
-			description: ["Made from considerably tougher materials than a simple Mortar, the Millstone can grind tougher ores and may even occasionally recover some secondary materials.  "]
-			hide_dependency_lines: true
-			id: "347A644441BCF449"
-			rewards: [
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-					icon: "kubejs:sorcerers_delight"
-					id: "651C07D976AD902F"
-					title: "Sorcerer's Delight"
-					type: "command"
-				}
-				{
-					id: "0E1F9854A317EE27"
-					item: "createaddition:straw"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "0F473BC094DDA58D"
-				item: "create:millstone"
-				type: "item"
-			}]
-			x: -5.5d
-			y: 1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3A7AEB067C49F899"]
@@ -1891,6 +1898,7 @@
 					type: "item"
 				}
 			]
+			title: "Aura Generation"
 			x: -6.0d
 			y: -1.0d
 		}
@@ -1960,7 +1968,7 @@
 				""
 				"Begin by locating some Certus Quartz; the Wilden Grove will undoubtedly have left some behind in their ore mounds. "
 				""
-				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the quartz and induce it to grow. "
+				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the Certus Quartz and induce it to grow. "
 			]
 			hide_dependency_lines: true
 			id: "0BAE6EBFEA3026B9"
@@ -1979,7 +1987,7 @@
 				type: "item"
 			}]
 			title: "Certus Farming"
-			x: -9.5d
+			x: -10.0d
 			y: 2.0d
 		}
 		{
@@ -2221,8 +2229,8 @@
 				title: "Tipped Arrows"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -3.0d
+			x: 1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4682D4537535937C"]
@@ -2252,7 +2260,9 @@
 		{
 			dependencies: ["370C40BCC3A6A055"]
 			description: [
-				"Ordinarily Crush may only be used on blocks placed in the world. However, by augmenting it with Sensitive, it can target items dropped on the ground as well. "
+				"Ordinarily Crush may only be used on blocks placed in the world. For example, when creating Compressed Stone. "
+				""
+				"However, by augmenting it with Sensitive, it can target items dropped on the ground as well allowing it to function on Raw Ore as well."
 				""
 				"The following spell form will crush items on the ground: "
 				""
@@ -2320,7 +2330,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["66A59B3CD77FB54A"]
@@ -2332,6 +2342,8 @@
 				"================================="
 				""
 				"Obtain Wool of each color and provide it to the Ram. "
+				""
+				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the Therium and induce it to grow. "
 			]
 			id: "032D29DD7D946EDB"
 			rewards: [
@@ -2399,7 +2411,7 @@
 			description: [
 				"While the Dark Tower itself is largely infested with Towerwood Borers, it’s trivial to attract more of the critters. Getting rid of them, on the other hand, may prove a little more complicated. "
 				""
-				"They don’t come alone, however, so care should be taken!"
+				"They don’t come alone, so care should be taken!"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -2452,11 +2464,11 @@
 				}
 			]
 			title: "Summon Mite Swarms"
-			x: -8.5d
+			x: -9.0d
 			y: 2.0d
 		}
 		{
-			dependencies: ["729E9D41A28D0E4D"]
+			dependencies: ["16E90BC107468EC2"]
 			description: [
 				"With heightened spell casting ability comes the ability to improve some automation through Spell Turrets.  "
 				""
@@ -2464,11 +2476,16 @@
 				""
 				"&5Projectile&r > &aInfuse&r > &6Extend Time&r"
 				""
-				"These lingering potions will work exactly as their crafted variety for the purpose of running a Lingering Absorber without the need to craft beyond the base potion. "
-				""
-				"Using Melded Potions will provide a substantial boost as well!"
+				"These lingering potions will work exactly as their crafted variety for the purpose of running a Lingering Absorber without the need to craft beyond the base potion."
 			]
 			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "minecraft:lingering_potion"
+				tag: {
+					Potion: "minecraft:strong_leaping"
+				}
+			}
 			id: "7619B458914F41FF"
 			rewards: [{
 				id: "58831BD248E42B45"
@@ -2517,13 +2534,13 @@
 				item: "ars_nouveau:basic_spell_turret"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 2.5d
+			title: "Lingering Absorber Automation"
+			x: 2.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["729E9D41A28D0E4D"]
+			dependencies: ["345CBD118EAA0C09"]
 			description: ["An empowered ritual that grants an hour of flight to up to five entities. Useful for exploration far from home. Be sure to bring the materials to re-cast it if necessary. "]
-			hide_dependency_lines: true
 			icon: "ars_nouveau:ritual_flight"
 			id: "6952D7AD61181E37"
 			rewards: [{
@@ -2548,7 +2565,7 @@
 				}
 			]
 			x: -1.0d
-			y: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["1C6BF5FE58C49456"]
@@ -2588,6 +2605,185 @@
 			]
 			x: -4.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["7CFD3DFD4C593EB5"]
+			description: [
+				"Build it and they’ll come, or so it was said. These tiny market stalls were once a common sight in places of business, trade, and agriculture and served as a way of making offerings to fae creatures that roam the lands. "
+				""
+				"With so few offerings happening these days, setting one out will surely attract some helpful company.  "
+				""
+				"================================="
+				""
+				"The Market is in many cases the only source for seeds and saplings, and is therefore invaluable. Crafting one is highly recommended for obtaining missing plants one might need. "
+			]
+			hide_dependency_lines: true
+			id: "37F045F66CCA1389"
+			rewards: [{
+				count: 7
+				id: "2C4B9277BDBFC583"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "2B53987B276A6521"
+				item: "farmingforblockheads:market"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["517271C3858C43FE"]
+			description: [
+				"Routers are capable of some truly impressive tasks and are indispensable to a fledgling witch. However, their ability to transfer power is often overlooked. "
+				""
+				"A single router, for example, could receive power from Pulsating Crystals on all six sides, while wirelessly transmitting to up to 72 devices within a 48-block radius. "
+				""
+				"One can easily serve as a central power distribution for a moderate crafting area, keeping everything supplied with the magical energies they need to keep on ticking. "
+			]
+			icon: {
+				Count: 1b
+				id: "modularrouters:energy_distributor_module"
+				tag: {
+					modularrouters: {
+						Direction: "NONE"
+						ModuleFilter: { }
+					}
+				}
+			}
+			id: "6C9DDEF61EAD7D3E"
+			rewards: [{
+				count: 8
+				id: "7AD7EC515B2C999D"
+				item: "modularrouters:energy_upgrade"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "6CEC2425EC1A3984"
+					item: "modularrouters:modular_router"
+					type: "item"
+				}
+				{
+					id: "3BCA95773F8C5CAD"
+					item: {
+						Count: 1b
+						id: "modularrouters:energy_distributor_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Energy Transfer"
+			x: -8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["75C38D71F1A04EB4"]
+			description: [
+				"Through some alchemical manipulation and transmutational trickery, simple plants may be transformed into this impressive material. "
+				""
+				"Mastering its creation early on will prove advantageous."
+				""
+				"================================="
+				""
+				"Follow the recipes back from Liquid Plastic, keeping an eye on the PneumaticCraft machines, such as the Fluid Mixer and Thermopneumatic Processing Plant. "
+				""
+				"The process requires multiple steps but can easily be performed with a little witchy ingenuity. "
+			]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:plastic"
+			id: "517271C3858C43FE"
+			rewards: [{
+				count: 4
+				id: "1C6C3FA76D8A6461"
+				item: "pneumaticcraft:speed_upgrade"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "57052EFBDA7102DE"
+					item: "pneumaticcraft:thermopneumatic_processing_plant"
+					type: "item"
+				}
+				{
+					id: "6ADB1BA954E32542"
+					item: "pneumaticcraft:fluid_mixer"
+					type: "item"
+				}
+				{
+					id: "2F6A22E42013A16D"
+					item: "pneumaticcraft:plastic"
+					type: "item"
+				}
+			]
+			title: "Plastic"
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["73CDA6ED2393DE42"]
+			description: [
+				"Life on the road has its ups and downs but a nice warm tent to call home can smooth over many of the rougher parts of such a life-style."
+				""
+				"================================="
+				""
+				"Nomadic Tents offer a portable home that can make a wonderful base of operations early on. Not only may the be moved with ease, but they may also be upgraded while retaining their contents. "
+				""
+				"Consider setting up a bed, basic storage, and some essential crafting stations inside!"
+				""
+				"● Right-Click and Hold the tent on the "
+				"  ground to place the frame."
+				""
+				"● Right-Click each frame with a mallet "
+				"  to form that section. "
+				""
+				"  A Golden Mallet will form the entire "
+				"  tent at once!"
+				""
+				"● Right-Click or walk into the door to "
+				"  enter and exit."
+				""
+				"● Right-Click the door from the outside "
+				"  to pack up the tent as an item."
+			]
+			id: "00FB8D9041ED6D73"
+			rewards: [{
+				id: "4C3A6668078E18B6"
+				item: {
+					Count: 1b
+					id: "nomadictents:mallet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "2CE21FBACA8A8DEA"
+				item: {
+					Count: 1b
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "^nomadictents:(tiny|small|medium|large|giant|mega)"
+					}
+				}
+				title: "Any Tent"
+				type: "item"
+			}]
+			title: "Nomadic Life"
+			x: -3.5d
+			y: -6.5d
 		}
 	]
 	title: "Chapter One"

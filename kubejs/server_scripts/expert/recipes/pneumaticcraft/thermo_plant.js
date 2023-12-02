@@ -170,6 +170,15 @@ ServerEvents.recipes((event) => {
             temperature: { max_temp: 423, min_temp: 373 },
             speed: 2.0,
             id: `${id_prefix}cured_rubber`
+        },
+        {
+            fluid_output: { amount: 120, fluid: 'pneumaticcraft:ethanol' },
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 10, tag: 'pneumaticcraft:yeast_culture' },
+            item_input: [{ item: 'minecraft:nether_wart' }],
+            exothermic: true,
+            speed: 0.25,
+            temperature: { max_temp: 333, min_temp: 303 },
+            id: `${id_prefix}ethanol_from_nether_wart`
         }
     ];
 

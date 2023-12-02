@@ -90,6 +90,13 @@ const entries = {
     ],
     create: [
         {
+            key: 'block.create.industrial_iron_block',
+            value: {
+                normal: 'Block of Industrial Iron',
+                expert: 'Industrial Casing'
+            }
+        },
+        {
             key: 'block.create.brass_block',
             value: {
                 normal: 'Block of Brass',

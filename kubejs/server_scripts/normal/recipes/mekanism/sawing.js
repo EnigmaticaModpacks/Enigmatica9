@@ -33,6 +33,17 @@ ServerEvents.recipes((event) => {
             output: '6x naturesaura:ancient_planks',
             secondary: { output: 'naturesaura:gold_powder', chance: 1.0 },
             id: `${id_prefix}ancient_planks_from_ancient_log`
+        },
+        {
+            input: ['#forge:rods/all_metal'],
+            output: '8x ae2:cable_anchor',
+            id: `${id_prefix}cable_anchor`
+        },
+        {
+            input: ['#forge:bookshelves'],
+            output: '3x minecraft:book',
+            secondary: { output: sawdust, count: 6, chance: 1.0 },
+            id: `${id_prefix}book_from_bookshelves`
         }
     ];
 

@@ -383,6 +383,24 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}shears_conversions/crimson_aura_mushroom`
+        },
+        {
+            item_in: { item: 'minecraft:ender_eye' },
+            block_in: 'minecraft:end_portal_frame',
+            hide_in_viewer: true,
+            post: [
+                { type: 'prevent_default' },
+                {
+                    type: 'place',
+                    block: { blocks: ['supplementaries:end_stone_lamp'], state: { rune: 'e' } }
+                },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.end_portal_frame.fill block @p ~ ~ ~',
+                    hide: true
+                }
+            ],
+            id: `${id_prefix}end_portal_frame`
         }
     ];
 

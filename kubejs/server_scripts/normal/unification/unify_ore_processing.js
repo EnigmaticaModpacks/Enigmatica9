@@ -458,7 +458,7 @@ function metal_ore_processing(material, properties, event, id_prefix) {
     if (raw_ingredient && dust_itemStack) {
         recipe = {
             type: 'thermal:pulverizer',
-            ingredient: { tag: `forge:ores/${material}`, count: 1 },
+            ingredient: { tag: `forge:raw_materials/${material}`, count: 1 },
             result: [{ item: dust_itemStack.getId(), chance: 1.75 }],
             energy: 10000,
             id: `${id_prefix}thermal/pulverizer/raw_${material}`

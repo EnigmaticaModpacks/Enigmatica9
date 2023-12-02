@@ -29,6 +29,8 @@ ServerEvents.recipes((event) => {
         { id: /thermal:machines\/smelter\/smelter.*_raw/ },
         { id: /thermal:compat\/.*_ore/, type: 'thermal:smelter' },
         { id: /thermal:compat\/.*_raw_/, type: 'thermal:smelter' },
+        { id: /thermal:compat\/.*_raw_/, type: 'thermal:pulverizer' },
+        { id: /thermal:compat\/.*_raw_/, type: 'thermal:centrifuge' },
 
         { id: /occultism:crushing\/gold_dust/ }, // This is regex to also remove duplicates from raw ore
         { id: 'occultism:crushing/iesnium_dust' }, // There is a lot of different recipes with really similar ids (occultism:crushing/copper_dust_from_raw), so regex would delete all of those, what we don't want

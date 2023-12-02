@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
             input: ['occultism:dimensional_matrix'],
             output: '21x kubejs:dimensional_storage_crystal',
             secondaries: [{ output: 'ae2:certus_quartz_dust', stripping: false }],
-            id: `${id_prefix}oak_planks_from_oak_log`
+            id: `${id_prefix}dimensional_storage_crystal`
         },
         {
             energy: 500,

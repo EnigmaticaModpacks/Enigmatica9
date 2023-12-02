@@ -250,6 +250,11 @@ ServerEvents.recipes((event) => {
             filter: { mod: 'functionalstorage' },
             to_replace: 'minecraft:iron_nugget',
             replace_with: 'framedblocks:framed_cube'
+        },
+        {
+            filter: { output: /stonecutter_upgrade/ },
+            to_replace: 'minecraft:iron_ingot',
+            replace_with: '#forge:ingots/knightmetal'
         }
     ];
 

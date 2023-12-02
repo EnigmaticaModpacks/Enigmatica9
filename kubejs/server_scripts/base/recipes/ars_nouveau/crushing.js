@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
             output: [
                 { item: 'thermal:blizz_powder', count: 3, chance: 1.0 },
                 { item: 'thermal:blizz_powder', count: 3, chance: 0.25 },
-                { item: 'minecraft:snowball', count: 1, chance: 0.25 }
+                { item: 'ae2:certus_quartz_crystal', count: 1, chance: 0.25 }
             ],
             input: '#forge:rods/blizz',
             id: `${id_prefix}blizz_powder`
@@ -32,7 +32,7 @@ ServerEvents.recipes((event) => {
             output: [
                 { item: 'thermal:basalz_powder', count: 3, chance: 1.0 },
                 { item: 'thermal:basalz_powder', count: 3, chance: 0.25 },
-                { item: 'thermal:slag', count: 1, chance: 0.5 }
+                { item: 'emendatusenigmatica:fluorite_gem', count: 1, chance: 0.5 }
             ],
             input: '#forge:rods/basalz',
             id: `${id_prefix}basalz_powder`
@@ -63,7 +63,6 @@ ServerEvents.recipes((event) => {
             input: 'ae2:sky_stone_block',
             id: `${id_prefix}sky_dust`
         },
-
         {
             output: [
                 { item: 'create:wheat_flour', count: 1, chance: 1.0 },
@@ -72,6 +71,11 @@ ServerEvents.recipes((event) => {
             ],
             input: '#forge:crops/wheat',
             id: `${id_prefix}wheat_flour`
+        },
+        {
+            output: [{ item: 'minecraft:glowstone_dust', count: 4, chance: 1.0 }],
+            input: '#forge:storage_blocks/glowstone',
+            id: `${id_prefix}glowstone`
         }
     ];
 
