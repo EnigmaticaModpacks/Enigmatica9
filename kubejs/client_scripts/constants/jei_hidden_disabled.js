@@ -7,21 +7,21 @@ const disabled_item_tooltip = 'This item has been disabled.';
 
 const jei = {
     base: {
-        items: { hidden: [], disabled: [] },
+        items: { hidden: [], disabled: [], added: [] },
         fluids: { hidden: [] },
         gases: { hidden: [] },
         categories: { hidden: [] },
         recipes: { hidden: [] }
     },
     normal: {
-        items: { hidden: [], disabled: [] },
+        items: { hidden: [], disabled: [], added: []  },
         fluids: { hidden: [] },
         gases: { hidden: [] },
         categories: { hidden: [] },
         recipes: { hidden: [] }
     },
     expert: {
-        items: { hidden: [], disabled: [] },
+        items: { hidden: [], disabled: [], added: []  },
         fluids: { hidden: [] },
         gases: { hidden: [] },
         categories: { hidden: [] },

@@ -1,4 +1,4 @@
-//priority: 1000
+//priority: 999
 // EMI / JEI Added items constants.
 // Object format:
 // id: -> String ID of the item. REQUIRED
@@ -8,14 +8,8 @@
 // Example object
 // { id: 'minecraft:diamond', nbt: '{test:"This field is used by unkown mod lol"}', after: 'minecraft:stone{test2:"Another test nbt field!"}' }
 
-const added_items = {
-    base: [],
-    normal: [],
-    expert: []
-};
-
 // Base
-added_items.base = [
+jei.base.items.added = [
     { id: 'immersiveengineering:arc_furnace' },
     { id: 'immersiveengineering:assembler' },
     { id: 'immersiveengineering:auto_workbench' },
@@ -43,13 +37,13 @@ added_items.base = [
 ];
 
 // Normal
-added_items.normal = [
+jei.normal.items.added = [
     { id: 'immersiveengineering:alloy_smelter' },
     { id: 'immersiveengineering:blast_furnace' }
 ];
 
 // Expert
-added_items.expert = [];
+jei.expert.items.added = [];
 
 // Automated addition:
 const ars_nouveau = {
@@ -61,7 +55,7 @@ const ars_nouveau = {
 ars_nouveau.tiers.forEach((tier) => {
     ars_nouveau.types.forEach((type) => {
         ars_nouveau.sets.forEach((set) => {
-            added_items.base.push({
+            jei.base.items.added.push({
                 id: `ars_nouveau:${set}_${type}`,
                 nbt: `{Damage:0,an_stack_perks:{color:"",perks:[],tier:${tier}}}`,
                 after: `ars_nouveau:${set}_${type}{Damage:0}`

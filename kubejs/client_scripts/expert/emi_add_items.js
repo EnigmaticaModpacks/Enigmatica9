@@ -7,7 +7,7 @@ ClientEvents.highPriorityAssets((event) => {
     const payload = {added: [], priority: 100};
 
     modes.forEach(mode => {
-        added_items[mode].forEach((item) => {
+        jei[mode].items.added.forEach((item) => {
             if (item.nbt == null) item.nbt = '';
             if (item.after == null) {
                 payload.added.push({ stack: `item:${item.id}${item.nbt}`})

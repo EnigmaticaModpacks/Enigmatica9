@@ -1,5 +1,5 @@
 JEIEvents.addItems((event) => {
-    added_items.base.forEach((item) => {
+    jei.base.items.added.forEach((item) => {
         if (item.nbt == null) {
             event.add(Item.of(item.id));
         } else {
