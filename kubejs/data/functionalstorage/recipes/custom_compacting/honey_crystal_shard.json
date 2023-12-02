@@ -1,0 +1,11 @@
+{
+  "type": "functionalstorage:custom_compacting",
+  "higher_input": {
+    "count": 1,
+    "item": "the_bumblezone:glistering_honey_crystal"
+  },
+  "lower_input": {
+    "count": 4,
+    "item": "the_bumblezone:honey_crystal_shards"
+  }
+}

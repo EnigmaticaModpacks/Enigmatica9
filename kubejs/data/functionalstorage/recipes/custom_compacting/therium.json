@@ -1,0 +1,11 @@
+{
+  "type": "functionalstorage:custom_compacting",
+  "higher_input": {
+    "count": 1,
+    "item": "byg:therium_crystal_block"
+  },
+  "lower_input": {
+    "count": 4,
+    "item": "byg:therium_crystal_shard"
+  }
+}
