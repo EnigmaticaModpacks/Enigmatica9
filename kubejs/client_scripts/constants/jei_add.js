@@ -16,11 +16,9 @@ const added_items = {
 
 // Base
 added_items.base = [
-    { id: 'immersiveengineering:alloy_smelter' },
     { id: 'immersiveengineering:arc_furnace' },
     { id: 'immersiveengineering:assembler' },
     { id: 'immersiveengineering:auto_workbench' },
-    { id: 'immersiveengineering:blast_furnace' },
     { id: 'immersiveengineering:bottling_machine' },
     { id: 'immersiveengineering:coke_oven' },
     { id: 'immersiveengineering:crusher' },
@@ -36,21 +34,21 @@ added_items.base = [
     { id: 'immersiveengineering:silo' },
     { id: 'immersiveengineering:squeezer' },
     { id: 'immersiveengineering:tank' },
-    { id: 'occultism:iesnium_ore' },
-    { id: 'emendatusenigmatica:bitumen_sandstone_ore' },
-    { id: 'minecraft:enchanted_book', nbt: '{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:1s}]}' },
-    { id: 'minecraft:enchanted_book', nbt: '{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:2s}]}' },
-    { id: 'minecraft:enchanted_book', nbt: '{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:3s}]}' }
+    { id: 'emendatusenigmatica:bitumen_sandstone_ore', after: 'emendatusenigmatica:iron_ore' },
+    { id: 'emendatusenigmatica:quartz_netherrack_ore', after: 'emendatusenigmatica:bitumen_sandstone_ore' },
+    { id: 'occultism:iesnium_ore', after: 'emendatusenigmatica:quartz_netherrack_ore' },
+    { id: 'minecraft:enchanted_book', nbt: '{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:1s}]}', after: 'minecraft:enchanted_book{StoredEnchantments:[{id:"ars_nouveau:mana_boost",lvl:3s}]}' },
+    { id: 'minecraft:enchanted_book', nbt: '{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:2s}]}', after: 'minecraft:enchanted_book{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:1s}]}' },
+    { id: 'minecraft:enchanted_book', nbt: '{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:3s}]}', after: 'minecraft:enchanted_book{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:2s}]}' }
 ];
 
 // Normal
-// Dev Note: Scripts for Normal aren't created yet, as nothing is here!
-// If you want to add entries here, you need to copy `emi_add_items.js` and `jei_add_items.js` from base to normal mode, and change the array they work on!
-added_items.normal = [];
+added_items.normal = [
+    { id: 'immersiveengineering:alloy_smelter' },
+    { id: 'immersiveengineering:blast_furnace' }
+];
 
 // Expert
-// Dev Note: Scripts for Expert aren't created yet, as nothing is here!
-// If you want to add entries here, you need to copy `emi_add_items.js` and `jei_add_items.js` from base to expert mode, and change the array they work on!
 added_items.expert = [];
 
 // Automated addition:

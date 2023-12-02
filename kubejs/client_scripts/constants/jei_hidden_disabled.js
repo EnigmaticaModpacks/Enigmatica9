@@ -37,8 +37,6 @@ jei.base.items.disabled = [
     /mekanism.*fluorite_ore/,
     /rftoolsbase:dimensionalshard_/,
 
-    /emendatusenigmatica:.*_cluster_shard\b/,
-
     /pendorite/,
     /ametrine/,
 
@@ -65,6 +63,8 @@ jei.base.items.disabled = [
     'createaddition:biomass',
     'createaddition:bioethanol_bucket',
     'createaddition:seed_oil_bucket',
+
+    /emendatusenigmatica:.*_cluster_shard\b/,
 
     'engineersdecor:factory_dropper',
     'engineersdecor:factory_hopper',
@@ -130,7 +130,9 @@ jei.base.items.hidden = [
 
     /emendatusenigmatica:bitumen_.*_ore/,
     'emendatusenigmatica:bitumen_ore',
-
+    'emendatusenigmatica:quartz_netherrack_ore',
+    'emendatusenigmatica:quartz_ore',
+    
     /hexerei:.*selenite/,
     'hexerei:creative_waxing_kit',
 

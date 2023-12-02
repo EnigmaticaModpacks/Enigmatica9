@@ -4,6 +4,8 @@
 		"/densetrees/",
 		"/emendatusenigmatica:bitumen_.*_ore/",
 		"emendatusenigmatica:bitumen_ore",
+		"emendatusenigmatica:quartz_netherrack_ore",
+		"emendatusenigmatica:quartz_ore",
 		"/hexerei:.*selenite/",
 		"hexerei:creative_waxing_kit",
 		"/kubejs:.*indicator/",
