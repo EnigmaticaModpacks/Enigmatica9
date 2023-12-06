@@ -1,9 +1,6 @@
 {
 	"added": [
 		{
-			"stack": "item:immersiveengineering:alloy_smelter"
-		},
-		{
 			"stack": "item:immersiveengineering:arc_furnace"
 		},
 		{
@@ -11,9 +8,6 @@
 		},
 		{
 			"stack": "item:immersiveengineering:auto_workbench"
-		},
-		{
-			"stack": "item:immersiveengineering:blast_furnace"
 		},
 		{
 			"stack": "item:immersiveengineering:bottling_machine"
@@ -61,16 +55,28 @@
 			"stack": "item:immersiveengineering:tank"
 		},
 		{
-			"stack": "item:emendatusenigmatica:bitumen_sandstone_ore"
+			"stack": "item:emendatusenigmatica:bitumen_sandstone_ore",
+			"after": "item:emendatusenigmatica:iron_ore"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:reactive\",lvl:1s}]}"
+			"stack": "item:emendatusenigmatica:quartz_netherrack_ore",
+			"after": "item:emendatusenigmatica:bitumen_sandstone_ore"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:reactive\",lvl:2s}]}"
+			"stack": "item:occultism:iesnium_ore",
+			"after": "item:emendatusenigmatica:quartz_netherrack_ore"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:reactive\",lvl:3s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:reactive\",lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:mana_boost\",lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:reactive\",lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:reactive\",lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:reactive\",lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:reactive\",lvl:2s}]}"
 		},
 		{
 			"stack": "item:ars_nouveau:novice_boots{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:2}}",
@@ -167,6 +173,13 @@
 		{
 			"stack": "item:ars_nouveau:archmage_hood{Damage:0,an_stack_perks:{color:\"\",perks:[],tier:1}}",
 			"after": "item:ars_nouveau:archmage_hood{Damage:0}"
+		},
+		{
+			"stack": "item:immersiveengineering:alloy_smelter"
+		},
+		{
+			"stack": "item:immersiveengineering:blast_furnace"
 		}
-	]
+	],
+	"priority": 100
 }

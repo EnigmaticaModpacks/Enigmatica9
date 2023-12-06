@@ -1,5 +1,8 @@
 JEIEvents.addItems((event) => {
-    jei.base.items.added.forEach((item) => {
+    if (global.isExpertMode == false) {
+        return;
+    }
+    jei.expert.items.added.forEach((item) => {
         if (item.nbt == null) {
             event.add(Item.of(item.id));
         } else {

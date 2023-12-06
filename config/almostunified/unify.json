@@ -115,11 +115,15 @@
     "sugar_cane"
   ],
   "priorityOverrides": {
-    "forge:ores/iron": "emendatusenigmatica",
-    "forge:ores/emerald": "emendatusenigmatica",
     "forge:ores/copper": "emendatusenigmatica",
+    "forge:ores/iron": "emendatusenigmatica",
     "forge:ores/gold": "emendatusenigmatica",
-    "forge:ores/diamond": "emendatusenigmatica"
+    "forge:ores/diamond": "emendatusenigmatica",
+    "forge:ores/emerald": "emendatusenigmatica",
+    "forge:ores/redstone": "emendatusenigmatica",
+    "forge:ores/lapis": "emendatusenigmatica",
+    "forge:ores/coal": "emendatusenigmatica",
+    "forge:ores/quartz": "emendatusenigmatica"
   },
   "customTags": {},
   "tagOwnerships": {
