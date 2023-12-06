@@ -23,5 +23,15 @@ ServerEvents.genericLootTables((event) => {
             pool.rolls = [5, 15];
             pool.addItem('twilightforest:charm_of_life_2', 1, 1);
         });
+
+        table.addPool((pool) => {
+            pool.rolls = [10, 16];
+            pool.addItem(Item.of('ars_elementa:anima_essence'), 1, 1);
+        });
+
+        table.addPool((pool) => {
+            pool.rolls = [10, 16];
+            pool.addItem(Item.of('ars_nouveau:abjuration_essence'), 1, 1);
+        });
     });
 });

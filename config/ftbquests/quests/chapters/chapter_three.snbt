@@ -361,7 +361,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "6F37D1F612338755"
-				item: "minecraft:heart_of_the_sea"
+				item: "kubejs:heart_of_the_sea"
 				type: "item"
 			}]
 			x: -2.0d
@@ -851,7 +851,7 @@
 			description: [
 				"A fine mineral said to be steeped with the souls of those interred in the earth. "
 				""
-				"Though common in the Nether, Soul Powder is also abundant in some spooky places in the Twilight Forest."
+				"Though common in the Nether, Soul Powder is also abundant in some spooky places in the Twilight Forest such as the Dark Forest surrounding the Ur-Ghast Tower."
 			]
 			id: "126F4E070F219A8B"
 			rewards: [{

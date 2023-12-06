@@ -1,22 +1,70 @@
-### Enigmatica 9 v1.16.0
+### Enigmatica 9 v1.16.1
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.16.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.16.1.md)
 
 ### 🌟 Improvements
 
+-   [Expert] Early quests now grant a Large Nomadic Tent of one's choosing [\#794](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/794)
+-   [Expert] The Dictionary of Spirits now indicates that the Tree of Life is grown from Aviar's Circle [\#796](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/796)
+
+### 🐛 Fixed Bugs
+
+-   [Expert] Mysterious Cubes, should they spawn, will no longer drop Inscriber Presses [\#795](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/795)
+
+---
+
+### Enigmatica 9 v1.16.0
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.16.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.16.0.md)
+
+### 🌟 Improvements
+
+-   Crushing Blizz Rods and Basalz Rods now gives Certus and Fluorite respectively [\#776](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/776)
 -   Glowstone blocks may now be crushed by Ars Nouveau Crush Glyph [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
 -   Minor tweaks to quest dependencies to create a better flow [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
 -   Environmental Eye is now an early quest reward [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
 -   Low Aura will no longer cause explosions [\#748](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/748)
 -   Upgrading Potions of Knowledge to the level two version now uses Glowstone Dust similar to all other potions [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
+-   Charcoal to Coal conversion with Natures Aura is now significantly faster [\#773](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/773)
+-   Add Randomize Glyph to Death Tomes [\#785](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/785)
+-   Dissolution Chamber can now bottle any XP fluid [\#788](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/788)
+-   Cable Anchors may now be made in a sawmill at reduced material cost [\#789](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/789)
+-   Bookshelves may be processed in a saw mill to extract books [\#791](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/791)
 -   [Expert] Awkward potions are no longer brewable with Netherwart to promote the use of the far easier to obtain Abjuration Essence [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
 -   [Expert] Nether Wart may now be used to make Ethanol more efficiently [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
 -   [Expert] The Break Glyph no longer requires Iron, making it accessible closer to when a Tier 2 book is available [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
 -   [Expert] Soul Powder quest has been updated to help clarify that it can be mined in the Twilight Forest too [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
 -   [Expert] Skyseeker Shoes now grants a massive step height bonus [\#753](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/753)
+-   [Expert] Stonecutter upgrades for Sophisticated Storage/Backpacks now require Knightmetal instead of Iron [\#756](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/756)
+-   [Expert] Resistance potions are now brewed exclusively with Spinach to avoid confusion in how to obtain them [\#758](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/758)
+-   [Expert] Stability potions are now brewed exclusively with Sadiroot to avoid confusion in how to obtain them [\#758](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/758)
+-   [Expert] New quest has been added to make a Market block, helping people discover they can buy seeds for plants they may wish to use for potions [\#758](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/758)
+-   [Expert] The naga now drops spinach and sadiroot seeds as they're required for progression. This is in addition to them being purchasble from the Market [\#758](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/758)
+-   [Expert] The first Tree of Life quest now warns the player how large the structure is and that it will delete blocks in the area. [\#762](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/762)
+-   [Expert] Infused Ender Pearls now require Aetheric Brass to craft [\#763](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/763)
+-   [Expert] Quests added to draw attention to Modular Routers as a power transfer method [\#769](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/769)
+-   [Expert] Recipes changed for Envenom and Spike to make them craftable at a reasonable stage [\#771](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/771)
+-   [Expert] Industrial Iron is renamed to Industrial Casing and had it's recipe changed to use sheetmetal [\#773](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/773)
+-   [Expert] Thermal's mushrooms are now faster to craft in the Ritual of the Forest [\#773](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/773)
+-   [Expert] Gloaming Catalyst now blends in a bit better with the other catalysts [\#774](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/774)
+-   [Expert] Spell Turret quest in Chapter 1 now named Lingering Absorber Automation to help with discoverability [\#775](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/775)
+-   [Expert] End Crystals are now more expensive [\#778](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/778)
+-   [Expert] Spawner Core Shells are now less expensive, crafting in batches of four [\#778](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/778)
+-   [Expert] Chapter 1 quest clarifications to help guide players to things like the Storage Lectern [\#787](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/787)
+-   [Expert] Various Twilight bosses now drop some essences to give the player a jump start before they get their production going [\#787](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/787)
+-   [Expert] Compressed Stone may now be found in the Troll vaults [\#787](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/787)
+-   [Expert] Dimensional Storage Crystals may now be produced in a Thermal saw [\#791](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/791)
 
 ### 🐛 Fixed Bugs
 
--   [Expert] Set Default Exit Dim for BumbleZone to Twilight Forest [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
 -   XP Melting now requires Superheating in Create to avoid a conflict with potion brewing [\#751](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/751)
+-   Clarify Create Waterwheel quest [\#761](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/761)
+-   [Normal] Remove unwanted thermal compat recipes [\#772](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/772)
+-   [Normal] Fix missing Pulverizer ore processing recipes [\#755](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/755)
+-   [Expert] Set Default Exit Dim for BumbleZone to Twilight Forest [\#746](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/746)
+-   [Expert] It should no longer be possible to go to the End using a vanilla portal. Existing portals are unaffected. [\#763](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/763)
+-   [Expert] Fix misleading spell turret quest [\#771](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/771)
+-   [Expert] Fix Heart of the Sea quest [\#781](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/781)
 
 ---
 

@@ -110,6 +110,7 @@ ServerEvents.recipes((event) => {
         { id: /mekanism:crushing\/biofuel/ },
         { id: 'mekanism:processing/netherite/dust_to_ancient_debris' },
         { id: 'mekanism:processing/bronze/ingot/from_infusing' },
+        { id: 'mekanism:sawing/bookshelf' },
 
         { id: 'minecraft:bone_meal' },
         { id: 'minecraft:glass' },

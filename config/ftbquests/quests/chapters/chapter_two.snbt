@@ -165,8 +165,8 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 3.5d
+			x: 4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["33BCDA0A76E2523C"]
@@ -267,7 +267,7 @@
 			}]
 			title: "Light Machinery"
 			x: 5.0d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1034686D695A8A6D"]
@@ -310,7 +310,7 @@
 				}
 			]
 			x: 4.0d
-			y: 3.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -848,7 +848,7 @@
 				}
 			]
 			title: "Quantum Network Bridge"
-			x: 5.0d
+			x: 3.0d
 			y: 2.5d
 		}
 		{
@@ -947,8 +947,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: 2.0d
+			x: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2D8D0D2EA0C2B717"]

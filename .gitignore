@@ -264,3 +264,4 @@ config/emi.css
 automation/CDL-Logs/*.log
 automation/CDL-Logs/*.log.gz
 automation/Cat-Downloader-Legacy-Settings.json5
+emi.json
