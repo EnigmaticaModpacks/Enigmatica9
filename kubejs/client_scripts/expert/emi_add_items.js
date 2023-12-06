@@ -4,18 +4,18 @@ ClientEvents.highPriorityAssets((event) => {
         return;
     }
     const modes = ['base', 'expert'];
-    const payload = {added: [], priority: 100};
+    const payload = { added: [], priority: 100 };
 
-    modes.forEach(mode => {
+    modes.forEach((mode) => {
         jei[mode].items.added.forEach((item) => {
             if (item.nbt == null) item.nbt = '';
             if (item.after == null) {
-                payload.added.push({ stack: `item:${item.id}${item.nbt}`})
+                payload.added.push({ stack: `item:${item.id}${item.nbt}` });
             } else {
-                payload.added.push({ stack: `item:${item.id}${item.nbt}`, after: `item:${item.after}`})
+                payload.added.push({ stack: `item:${item.id}${item.nbt}`, after: `item:${item.after}` });
             }
         });
-    })
+    });
 
     JsonIO.write(`kubejs/assets/emi/index/stacks/emi_added_items.json`, payload);
 });

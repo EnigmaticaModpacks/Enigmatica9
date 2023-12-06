@@ -14,14 +14,14 @@ const jei = {
         recipes: { hidden: [] }
     },
     normal: {
-        items: { hidden: [], disabled: [], added: []  },
+        items: { hidden: [], disabled: [], added: [] },
         fluids: { hidden: [] },
         gases: { hidden: [] },
         categories: { hidden: [] },
         recipes: { hidden: [] }
     },
     expert: {
-        items: { hidden: [], disabled: [], added: []  },
+        items: { hidden: [], disabled: [], added: [] },
         fluids: { hidden: [] },
         gases: { hidden: [] },
         categories: { hidden: [] },
@@ -132,7 +132,7 @@ jei.base.items.hidden = [
     'emendatusenigmatica:bitumen_ore',
     'emendatusenigmatica:quartz_netherrack_ore',
     'emendatusenigmatica:quartz_ore',
-    
+
     /hexerei:.*selenite/,
     'hexerei:creative_waxing_kit',
 

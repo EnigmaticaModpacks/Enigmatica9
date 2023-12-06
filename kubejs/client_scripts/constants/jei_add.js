@@ -26,9 +26,21 @@ jei.base.items.added = [
     { id: 'emendatusenigmatica:bitumen_sandstone_ore', after: 'emendatusenigmatica:iron_ore' },
     { id: 'emendatusenigmatica:quartz_netherrack_ore', after: 'emendatusenigmatica:bitumen_sandstone_ore' },
     { id: 'occultism:iesnium_ore', after: 'emendatusenigmatica:quartz_netherrack_ore' },
-    { id: 'minecraft:enchanted_book', nbt: '{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:1s}]}', after: 'minecraft:enchanted_book{StoredEnchantments:[{id:"ars_nouveau:mana_boost",lvl:3s}]}' },
-    { id: 'minecraft:enchanted_book', nbt: '{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:2s}]}', after: 'minecraft:enchanted_book{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:1s}]}' },
-    { id: 'minecraft:enchanted_book', nbt: '{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:3s}]}', after: 'minecraft:enchanted_book{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:2s}]}' }
+    {
+        id: 'minecraft:enchanted_book',
+        nbt: '{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:1s}]}',
+        after: 'minecraft:enchanted_book{StoredEnchantments:[{id:"ars_nouveau:mana_boost",lvl:3s}]}'
+    },
+    {
+        id: 'minecraft:enchanted_book',
+        nbt: '{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:2s}]}',
+        after: 'minecraft:enchanted_book{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:1s}]}'
+    },
+    {
+        id: 'minecraft:enchanted_book',
+        nbt: '{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:3s}]}',
+        after: 'minecraft:enchanted_book{StoredEnchantments:[{id:"ars_nouveau:reactive",lvl:2s}]}'
+    }
 ];
 
 // Normal

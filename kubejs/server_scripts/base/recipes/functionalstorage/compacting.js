@@ -35,10 +35,9 @@ ServerEvents.recipes((event) => {
     ];
 
     recipes.forEach((recipe) => {
-
         recipe.type = 'functionalstorage:custom_compacting';
-        recipe.higher_input = Item.of(recipe.higher_input).toJson()
-        recipe.lower_input = Item.of(recipe.lower_input).toJson()
+        recipe.higher_input = Item.of(recipe.higher_input).toJson();
+        recipe.lower_input = Item.of(recipe.lower_input).toJson();
         event.custom(recipe).id(recipe.id);
     });
 });
