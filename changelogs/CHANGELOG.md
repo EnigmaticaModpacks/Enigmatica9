@@ -1,3 +1,11 @@
+### Enigmatica 9 v1.17.0
+
+### 🌟 Improvements
+
+-   Changes the Belt of Unstable Gifts to remove annoying vision changing buffs (Night Vision, Speed) while adding many other fun buffs. [\#803](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/803)
+
+---
+
 ### Enigmatica 9 v1.16.1
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.16.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.16.1.md)
