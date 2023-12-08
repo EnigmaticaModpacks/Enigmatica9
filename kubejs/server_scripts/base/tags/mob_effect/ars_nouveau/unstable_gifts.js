@@ -15,7 +15,6 @@ ServerEvents.tags('mob_effect', (event) => {
             'cofh_core:lightning_resistance',
             'cofh_core:magic_resistance',
             'cofh_core:slimed',
-            'cofh_core:true_invisibility',
             'farmersdelight:comfort',
             'farmersdelight:nourishment',
             'minecraft:absorption',
