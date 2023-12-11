@@ -1,0 +1,31 @@
+ServerEvents.tags('mob_effect', (event) => {
+    event
+        .get('ars_nouveau:unstable_gifts')
+        .removeAll()
+        .add([
+            'apotheosis:knowledge',
+            'apotheosis:vitality',
+            'ars_nouveau:mana_regen',
+            'ars_nouveau:recovery',
+            'ars_nouveau:shielding',
+            'ars_nouveau:spell_damage',
+            'cofh_core:clarity',
+            'cofh_core:cold_resistance',
+            'cofh_core:explosion_resistance',
+            'cofh_core:lightning_resistance',
+            'cofh_core:magic_resistance',
+            'cofh_core:slimed',
+            'farmersdelight:comfort',
+            'farmersdelight:nourishment',
+            'minecraft:absorption',
+            'minecraft:fire_resistance',
+            'minecraft:haste',
+            'minecraft:regeneration',
+            'minecraft:resistance',
+            'minecraft:saturation',
+            'minecraft:slow_falling',
+            'minecraft:strength',
+            'sushigocrafting:acquired_taste',
+            'sushigocrafting:small_bites'
+        ]);
+});
