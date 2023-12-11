@@ -2,7 +2,7 @@
 
 ### 🌟 Improvements
 
--   [Expert] The Snow Queen and Questing Ram now drop Budding versions of their crystal resource to nudge players towards growing more. [\#794](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/794)
+-   [Expert] The Snow Queen and Questing Ram now drop Budding versions of their crystal resource to nudge players towards growing more. [\#805](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/805)
 
 ### Enigmatica 9 v1.16.1
 
