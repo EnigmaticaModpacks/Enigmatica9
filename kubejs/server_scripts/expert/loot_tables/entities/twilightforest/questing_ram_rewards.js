@@ -14,7 +14,8 @@ ServerEvents.genericLootTables((event) => {
                 Item.of('minecraft:bundle', 1, {
                     Items: [
                         { id: 'twilightforest:quest_ram_trophy', Count: 1 },
-                        { id: 'byg:therium_crystal_block', Count: 16 },
+                        { id: 'byg:therium_crystal_shard', Count: 16 },
+                        { id: 'byg:budding_therium_crystal', Count: 1 },
                         { id: 'minecraft:sea_lantern', Count: 16 },
                         { id: 'twilightforest:steeleaf_block', Count: 16 }
                     ]
