@@ -801,7 +801,7 @@
 			description: [
 				"Upgrades to basic Shovels and Hammers, these tools mine a 3x3 area. "
 				""
-				"Apply Power of the Depth to them to the depth of mining. Each level of the enchant will cause the tool to mine another block deep."
+				"Apply Power of the Depth to them to increase the depth of mining. Each level of the enchant will cause the tool to mine another block deep."
 			]
 			icon: {
 				Count: 1b
