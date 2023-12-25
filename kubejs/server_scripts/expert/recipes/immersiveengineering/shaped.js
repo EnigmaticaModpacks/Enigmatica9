@@ -520,6 +520,15 @@ ServerEvents.recipes((event) => {
                 A: '#forge:plates/tin'
             },
             id: `${id_prefix}sheetmetal_colored_white_vertical`
+        },
+        {
+            output: 'immersiveengineering:conveyor_dropper',
+            pattern: ['A', 'B'],
+            key: {
+                A: 'immersiveengineering:conveyor_basic',
+                B: 'minecraft:hopper'
+            },
+            id: `${id_prefix}conveyor_dropper`
         }
     ];
 
