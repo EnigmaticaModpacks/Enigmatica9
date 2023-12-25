@@ -1,13 +1,7 @@
 {
 	"added": [
 		{
-			"stack": "item:immersiveengineering:arc_furnace"
-		},
-		{
 			"stack": "item:immersiveengineering:assembler"
-		},
-		{
-			"stack": "item:immersiveengineering:auto_workbench"
 		},
 		{
 			"stack": "item:immersiveengineering:bottling_machine"
@@ -19,19 +13,10 @@
 			"stack": "item:immersiveengineering:crusher"
 		},
 		{
-			"stack": "item:immersiveengineering:diesel_generator"
-		},
-		{
-			"stack": "item:immersiveengineering:excavator"
-		},
-		{
 			"stack": "item:immersiveengineering:fermenter"
 		},
 		{
 			"stack": "item:immersiveengineering:advanced_blast_furnace"
-		},
-		{
-			"stack": "item:immersiveengineering:lightning_rod"
 		},
 		{
 			"stack": "item:immersiveengineering:metal_press"
@@ -175,10 +160,19 @@
 			"after": "item:ars_nouveau:archmage_hood{Damage:0}"
 		},
 		{
-			"stack": "item:immersiveengineering:alloy_smelter"
+			"stack": "item:immersiveengineering:arc_furnace"
 		},
 		{
-			"stack": "item:immersiveengineering:blast_furnace"
+			"stack": "item:immersiveengineering:auto_workbench"
+		},
+		{
+			"stack": "item:immersiveengineering:diesel_generator"
+		},
+		{
+			"stack": "item:immersiveengineering:excavator"
+		},
+		{
+			"stack": "item:immersiveengineering:lightning_rod"
 		}
 	],
 	"priority": 100
