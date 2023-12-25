@@ -942,7 +942,7 @@ ServerEvents.recipes((event) => {
     recipes.forEach((recipe) => {
         recipe.type = 'ars_nouveau:enchanting_apparatus';
         recipe.output = Item.of(recipe.output).toJson();
-        recipe.pedestalItems = recipe.inputs.map((input) => ({ item: Ingredient.of(input).toJson() }));
+        recipe.pedestalItems = recipe.inputs.map((input) => (Ingredient.of(input).toJson()));
         recipe.reagent = recipe.reagents.map((reagent) => Ingredient.of(reagent).toJson());
 
         event.custom(recipe).id(recipe.id);
