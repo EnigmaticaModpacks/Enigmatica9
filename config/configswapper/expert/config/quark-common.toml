@@ -85,7 +85,9 @@
 
 	[mobs.crabs]
 		"Enable Brewing" = true
-		"Enable Resillience Effect" = true
+		#Whether Resilience should be required for 'How Did We Get Here?' and (if brewing is enabled) 'A Furious Cocktail'.
+		#Keep this on when brewing is disabled if your pack adds an alternative source for the effect.
+		"Resilience Required For All Effects" = true
 
 		[mobs.crabs.spawn_config]
 			#Allowed values: (0,)
@@ -956,8 +958,10 @@
 		"Harvest Level" = 2
 		#Allowed values: [0,)
 		"Fortune Level" = 2
-		"Display Fortune In Tooltip" = true
 		"Italic Tooltip" = true
+		"Display Baked Enchantments In Tooltip" = true
+		#Enchantments other than Gold's Fortune/Looting to bake into items. Format is "item+enchant@level", such as "minecraft:stick+sharpness@10".
+		"Baked Enchantments" = []
 
 	[tweaks.more_note_block_sounds]
 		"Enable Amethyst Sound" = true
