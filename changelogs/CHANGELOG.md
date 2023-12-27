@@ -6,6 +6,12 @@
 -   Changed the Belt of Unstable Gifts to remove annoying vision altering buffs (Night Vision, Speed) while adding many other fun buffs. [\#803](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/803)
 -   [Expert] The Snow Queen and Questing Ram now drop Budding versions of their crystal resource to nudge players towards growing more. [\#805](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/805)
 
+### 🐛 Fixed Bugs
+
+-   Remove conflicting Sulfur Enriching recipe[\#819](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/819)
+
+---
+
 ### Enigmatica 9 v1.16.1
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.16.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.16.1.md)
