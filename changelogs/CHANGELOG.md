@@ -2,6 +2,11 @@
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.17.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.17.0.md)
 
+### Removed Mods
+
+-   [Catalogue](https://www.curseforge.com/minecraft/mc-mods/catalogue) (by [MrCrayfish](https://www.curseforge.com/members/MrCrayfish/projects))
+    -   Due to a cross-mod compatibility issue that could cause issues with entities if the mod menu was accessed before joining a world [\#765](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/765)
+
 ### 🌟 Improvements
 
 -   [Expert] Changed the Dropping Conveyor Belt to be available earlier, by swapping the Iron Trapdoor for a Hopper. [\#809](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/809)
@@ -10,7 +15,13 @@
 
 ### 🐛 Fixed Bugs
 
--   Remove conflicting Sulfur Enriching recipe[\#819](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/819)
+-   Remove conflicting Sulfur Enriching recipe [\#819](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/819)
+-   Queen Bee Crash (Sticky Honey Redstone bounds crash) [\#798](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/798)
+-   Making an Enchanter's Crossbow wipes the crossbow's NBT data [\#820](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/820)
+-   Missing World Generation Info for certain ores / Ores not showing in JEI [\#677](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/677)
+-   Amethyst can get duped or reduced with compacting drawers [\#731](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/731)
+-   Found disabled items in create dungeon [\#744](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/744)
+-   Player and mobs invisible after creating a new world. [\#765](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/765)
 
 ---
 
