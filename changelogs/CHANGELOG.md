@@ -2,6 +2,11 @@
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.17.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.17.1.md)
 
+### Removed Mods
+
+-   [Emojiful](https://www.curseforge.com/minecraft/mc-mods/emojiful) (by [MrCrayfish](https://www.curseforge.com/members/Buuz135/projects))
+    -   Due to issues with Patchouli books
+
 ### 🐛 Fixed Bugs
 
 -   Restore missing dust crushing recipes [\#822](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/822)
