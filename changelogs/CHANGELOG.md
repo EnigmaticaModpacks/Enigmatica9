@@ -1,3 +1,13 @@
+### Enigmatica 9 v1.17.2
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.17.2.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.17.2.md)
+
+### 🐛 Fixed Bugs
+
+-   Crashing in the Ur-Ghast dungeon [\#824](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/824)
+
+---
+
 ### Enigmatica 9 v1.17.1
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.17.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.17.1.md)
