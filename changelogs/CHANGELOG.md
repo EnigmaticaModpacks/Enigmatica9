@@ -2,7 +2,7 @@
 
 ### 🐛 Fixed Bugs
 
--   Restore missing dust crushing recipes [\#819](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/819)
+-   Restore missing dust crushing recipes [\#822](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/822)
 
 ---
 
