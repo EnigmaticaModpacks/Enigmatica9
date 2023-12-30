@@ -3,6 +3,7 @@
 ### 🐛 Fixed Bugs
 
 -   Restore missing dust crushing recipes [\#822](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/822)
+-   Remove ore centrifuge recipes [\#823](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/823)
 
 ---
 

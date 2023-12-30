@@ -645,6 +645,7 @@ ServerEvents.recipes((event) => {
 
         { type: 'thermal:smelter' },
         { type: 'thermal:centrifuge', id: /centrifuge_.*_dust/ },
+        { type: 'thermal:centrifuge', id: /centrifuge_.*_crushed_raw/ },
         { type: 'thermal:pulverizer', id: /ingot_to_dust/ },
 
         { type: 'occultism:crushing', id: /dust/ },
