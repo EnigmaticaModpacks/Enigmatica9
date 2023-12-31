@@ -809,24 +809,9 @@
 				id: "38A42BC191855ECB"
 				item: {
 					Count: 1b
-					id: "itemfilters:or"
+					id: "itemfilters:id_regex"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "simplytools:diamond_hammer"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "simplytools:diamond_excavator"
-								tag: {
-									Damage: 0
-								}
-							}
-						]
+						value: "^simplytools:.*_(hammer|excavator)$"
 					}
 				}
 				title: "Excavators"
