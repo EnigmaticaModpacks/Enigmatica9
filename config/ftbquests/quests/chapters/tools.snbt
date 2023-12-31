@@ -827,27 +827,12 @@
 			}]
 			shape: "circle"
 			tasks: [{
-				id: "71303CACE8C59A83"
+				id: "7C89654304E16664"
 				item: {
 					Count: 1b
-					id: "itemfilters:or"
+					id: "itemfilters:id_regex"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "simplytools:diamond_hammer"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "simplytools:diamond_excavator"
-								tag: {
-									Damage: 0
-								}
-							}
-						]
+						value: "^simplytools:.*_(hammer|excavator)$"
 					}
 				}
 				title: "Excavators"

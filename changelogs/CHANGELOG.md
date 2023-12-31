@@ -1,3 +1,11 @@
+### Enigmatica 9 v1.18.0
+
+### 🌟 Improvements
+
+-   Excavator quest now accepts any tier of excavator/hammer [\#827](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/827)
+
+---
+
 ### Enigmatica 9 v1.17.2
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.17.2.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.17.2.md)
