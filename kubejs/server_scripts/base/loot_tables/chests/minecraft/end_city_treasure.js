@@ -1,10 +1,54 @@
 ServerEvents.chestLootTables((event) => {
-    event.modify(`minecraft:end_city_treasure`, (table) => {
+    event.addChest(`minecraft:end_city_treasure`, (table) => {
         table.addPool((pool) => {
-            pool.rolls = [1, 3];
+            pool.rolls = [2, 6];
             pool.randomChance(0.5);
-            pool.addItem('minecraft:raw_copper', 2, [6, 10]);
-            pool.addItem('emendatusenigmatica:raw_silver', 1, [6, 10]);
+            pool.addItem('minecraft:raw_copper', 5, [6, 10]);
+            pool.addItem('minecraft:raw_iron', 10, [4, 8]);
+            pool.addItem('minecraft:raw_gold', 15, [2, 7]);
+            pool.addItem('emendatusenigmatica:raw_silver', 5, [6, 10]);
+            pool.addItem('minecraft:diamond', 5, [2, 7]);
+            pool.addItem('minecraft:emerald', 2, [2, 6]);
+
+            pool.addItem('minecraft:iron_horse_armor', 1, 1);
+            pool.addItem('minecraft:golden_horse_armor', 1, 1);
+            pool.addItem('minecraft:diamond_horse_armor', 1, 1);
+
+            pool.addItem('minecraft:diamond_sword', 3, 1).addFunction({
+                function: 'minecraft:enchant_with_levels',
+                levels: { min: 29, max: 100 },
+                treasure: true
+            });
+            pool.addItem('minecraft:diamond_pickaxe', 3, 1).addFunction({
+                function: 'minecraft:enchant_with_levels',
+                levels: { min: 29, max: 100 },
+                treasure: true
+            });
+            pool.addItem('minecraft:diamond_shovel', 3, 1).addFunction({
+                function: 'minecraft:enchant_with_levels',
+                levels: { min: 29, max: 100 },
+                treasure: true
+            });
+            pool.addItem('minecraft:diamond_boots', 3, 1).addFunction({
+                function: 'minecraft:enchant_with_levels',
+                levels: { min: 29, max: 100 },
+                treasure: true
+            });
+            pool.addItem('minecraft:diamond_chestplate', 3, 1).addFunction({
+                function: 'minecraft:enchant_with_levels',
+                levels: { min: 29, max: 100 },
+                treasure: true
+            });
+            pool.addItem('minecraft:diamond_leggings', 3, 1).addFunction({
+                function: 'minecraft:enchant_with_levels',
+                levels: { min: 29, max: 100 },
+                treasure: true
+            });
+            pool.addItem('minecraft:diamond_helmet', 3, 1).addFunction({
+                function: 'minecraft:enchant_with_levels',
+                levels: { min: 29, max: 100 },
+                treasure: true
+            });
         });
 
         table.addPool((pool) => {
