@@ -1865,7 +1865,11 @@
 		}
 		{
 			dependencies: ["00000000000000CF"]
-			description: ["A very handy tube module to have, the Thermostat Module will read the temperature of the block it is facing, outputting a Redstone signal along the tube that may be used to control a Vortex tube. This allows for a very simple, and very compact way of meeting specific heat thresholds for crafting! "]
+			description: [
+				"A very handy tube module to have, the Thermostat Module will read the temperature of the block it is facing, outputting a Redstone signal along the tube that may be used to control a Vortex Tube or any other contraption.  "
+				""
+				"This allows for a very simple, and very compact way of meeting specific heat thresholds for crafting! "
+			]
 			id: "14C2B1C1BDC010FD"
 			rewards: [{
 				id: "755F1D78CFE7727F"
