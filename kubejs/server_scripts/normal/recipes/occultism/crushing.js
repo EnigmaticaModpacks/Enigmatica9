@@ -28,9 +28,30 @@ ServerEvents.recipes((event) => {
         {
             output: 'minecraft:netherite_scrap',
             input: '#forge:ores/netherite',
-            crushing_time: 90,
+            crushing_time: 200,
             ignore_occultism_multiplier: false,
             id: `${id_prefix}netherite_crushing`
+        },
+        {
+            output: '2x emendatusenigmatica:iron_dust',
+            input: '#forge:raw_materials/iron',
+            crushing_time: 200,
+            ignore_occultism_multiplier: false,
+            id: `${id_prefix}iron_dust`
+        },
+        {
+            output: '2x emendatusenigmatica:gold_dust',
+            input: '#forge:raw_materials/gold',
+            crushing_time: 200,
+            ignore_occultism_multiplier: false,
+            id: `${id_prefix}gold_dust`
+        },
+        {
+            output: '2x emendatusenigmatica:copper_dust',
+            input: '#forge:raw_materials/copper',
+            crushing_time: 200,
+            ignore_occultism_multiplier: false,
+            id: `${id_prefix}copper_dust`
         }
     ];
 

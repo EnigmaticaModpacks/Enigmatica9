@@ -4,6 +4,10 @@
 
 -   Excavator quest now accepts any tier of excavator/hammer [\#827](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/827)
 
+### 🐛 Fixed Bugs
+
+-   [Normal] Fix missing crushing recipes for Copper/Gold/Iron [\#830](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/830)
+
 ---
 
 ### Enigmatica 9 v1.17.2
