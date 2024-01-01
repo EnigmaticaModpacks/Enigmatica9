@@ -8,6 +8,10 @@
 -   [Expert] Lich should no longer spill loot on the ground outside the chest [\#829](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/829)
 -   Badlands Creepers now drop terracotta instead of gold nuggets [\#829](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/829)
 
+### 🐛 Fixed Bugs
+
+-   [Normal] Fix missing crushing recipes for Copper/Gold/Iron [\#830](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/830)
+
 ---
 
 ### Enigmatica 9 v1.17.2
