@@ -6,6 +6,7 @@
 -   End City Loot no longer has iron equipment, slightly buffing the odds of getting better loot [\#829](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/829)
 -   PNC's new Thermostat module is now slightly easier to craft and has been given a quest [\#829](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/829)
 -   [Expert] Lich should no longer spill loot on the ground outside the chest [\#829](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/829)
+-   Badlands Creepers now drop terracotta instead of gold nuggets [\#829](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/829)
 
 ---
 
