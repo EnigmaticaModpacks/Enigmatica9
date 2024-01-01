@@ -4,7 +4,7 @@
 
 -   Excavator quest now accepts any tier of excavator/hammer [\#827](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/827)
 -   End City Loot no longer has iron equipment, slightly buffing the odds of getting better loot [\#829](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/829)
--   PNC's new Thermostat module is now slightly easier to craft [\#829](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/829)
+-   PNC's new Thermostat module is now slightly easier to craft and has been given a quest [\#829](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/829)
 
 ---
 
