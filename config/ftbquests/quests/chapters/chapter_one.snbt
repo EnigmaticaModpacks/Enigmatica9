@@ -449,7 +449,15 @@
 		}
 		{
 			dependencies: ["4830632A0E6E9651"]
-			description: ["By balancing the outward force of Aura with the inward crushing of this spell, we’re able to reach a stable equilibrium that is strong and durable enough to assist in advanced metallurgy: Compressed Stone."]
+			description: [
+				"By balancing the outward force of Aura with the inward crushing of this spell, we’re able to reach a stable equilibrium that is strong and durable enough to assist in advanced metallurgy: Compressed Stone."
+				""
+				"The following spell form will crush blocks placed in the world: "
+				""
+				"&5Touch&r > &aCrush&r"
+				""
+				"Note: Sensitive is &nnot&r required for blocks."
+			]
 			id: "79B755D0BDB6A8B7"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
@@ -908,7 +916,7 @@
 				item: "ars_nouveau:scribes_table"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -8.5d
 			y: 0.5d
 		}
 		{
@@ -1111,7 +1119,7 @@
 				}
 			]
 			title: "Summon Death Tome"
-			x: -8.5d
+			x: -9.5d
 			y: 0.5d
 		}
 		{
