@@ -227,10 +227,10 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'thermal:junk_net',
-            pattern: ['ABA', 'B B', 'ABA'],
+            pattern: ['ABA', 'BBB', 'ABA'],
             key: {
                 A: '#forge:nuggets/lead',
-                B: 'thermal:beekeeper_fabric'
+                B: 'farmersdelight:safety_net'
             },
             id: 'thermal:junk_net'
         },

@@ -45,6 +45,60 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}lava`
+        },
+        {
+            ghost: true,
+            item_in: { tag: 'farmersdelight:straw_harvesters' },
+            type: 'lychee:block_clicking',
+            block_in: { blocks: ['minecraft:grass', 'minecraft:tall_grass'] },
+            post: [
+                {
+                    type: 'drop_item',
+                    contextual: [{ type: 'chance', chance: 0.2 }],
+                    item: 'farmersdelight:straw'
+                }
+            ],
+            id: `${id_prefix}straw_from_grass`
+        },
+        {
+            ghost: true,
+            item_in: { tag: 'farmersdelight:straw_harvesters' },
+            type: 'lychee:block_clicking',
+            block_in: { blocks: ['farmersdelight:sandy_shrub'] },
+            post: [
+                {
+                    type: 'drop_item',
+                    contextual: [{ type: 'chance', chance: 0.3 }],
+                    item: 'farmersdelight:straw'
+                }
+            ],
+            id: `${id_prefix}straw_from_sandy_shrub`
+        },
+        {
+            ghost: true,
+            item_in: { tag: 'farmersdelight:straw_harvesters' },
+            type: 'lychee:block_clicking',
+            block_in: { blocks: ['minecraft:wheat'], state: { age: '7' } },
+            post: [
+                {
+                    type: 'drop_item',
+                    item: 'farmersdelight:straw'
+                }
+            ],
+            id: `${id_prefix}straw_from_wheat`
+        },
+        {
+            ghost: true,
+            item_in: { tag: 'farmersdelight:straw_harvesters' },
+            type: 'lychee:block_clicking',
+            block_in: { blocks: ['farmersdelight:rice_panicles'], state: { age: '3' } },
+            post: [
+                {
+                    type: 'drop_item',
+                    item: 'farmersdelight:straw'
+                }
+            ],
+            id: `${id_prefix}straw_from_rice_panicles`
         }
     ];
 
