@@ -163,21 +163,6 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}wixie_cauldron`
-        },
-        {
-            ghost: true,
-            type: 'lychee:block_interacting',
-            item_in: { item: 'ars_nouveau:bookwyrm_charm' },
-            block_in: 'minecraft:lectern',
-            post: [
-                {
-                    type: 'place',
-                    block: {
-                        blocks: ['ars_nouveau:storage_lectern']
-                    }
-                }
-            ],
-            id: `${id_prefix}storage_lectern`
         }
     ];
 
