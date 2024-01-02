@@ -99,6 +99,85 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}straw_from_rice_panicles`
+        },
+        {
+            ghost: true,
+            type: 'lychee:block_interacting',
+            item_in: { item: 'ars_nouveau:drygmy_charm' },
+            block_in: 'minecraft:mossy_cobblestone',
+            post: [
+                {
+                    type: 'place',
+                    block: {
+                        blocks: ['ars_nouveau:drygmy_stone'],
+                        state: { converted: 'true' }
+                    }
+                }
+            ],
+            id: `${id_prefix}drygmy_stone`
+        },
+        {
+            ghost: true,
+            type: 'lychee:block_interacting',
+            item_in: { item: 'ars_nouveau:whirlisprig_charm' },
+            block_in: { tag: 'minecraft:flowers' },
+            post: [
+                {
+                    type: 'place',
+                    block: {
+                        blocks: ['ars_nouveau:whirlisprig_flower'],
+                        state: { converted: 'true' }
+                    }
+                }
+            ],
+            id: `${id_prefix}whirlisprig_flower`
+        },
+        {
+            ghost: true,
+            type: 'lychee:block_interacting',
+            item_in: { item: 'ars_elemental:siren_charm' },
+            block_in: 'minecraft:prismarine',
+            post: [
+                {
+                    type: 'place',
+                    block: {
+                        blocks: ['ars_elemental:mermaid_rock'],
+                        state: { converted: 'true' }
+                    }
+                }
+            ],
+            id: `${id_prefix}siren_stone`
+        },
+        {
+            ghost: true,
+            type: 'lychee:block_interacting',
+            item_in: { item: 'ars_nouveau:wixie_charm' },
+            block_in: 'minecraft:cauldron',
+            post: [
+                {
+                    type: 'place',
+                    block: {
+                        blocks: ['ars_nouveau:wixie_cauldron'],
+                        state: { converted: 'true' }
+                    }
+                }
+            ],
+            id: `${id_prefix}wixie_cauldron`
+        },
+        {
+            ghost: true,
+            type: 'lychee:block_interacting',
+            item_in: { item: 'ars_nouveau:bookwyrm_charm' },
+            block_in: 'minecraft:lectern',
+            post: [
+                {
+                    type: 'place',
+                    block: {
+                        blocks: ['ars_nouveau:storage_lectern']
+                    }
+                }
+            ],
+            id: `${id_prefix}storage_lectern`
         }
     ];
 

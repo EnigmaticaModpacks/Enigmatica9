@@ -177,7 +177,7 @@ jei.base.fluids.hidden = [
     'create:honey',
     'cofh_core:honey'
 ];
-jei.base.categories.hidden = ['twilightforest:uncrafting', 'emi_loot:chest_loot'];
+jei.base.categories.hidden = ['twilightforest:uncrafting', 'emi_loot:chest_loot', 'emi_loot:block_drops'];
 jei.base.recipes.hidden = [
     {
         category: 'minecraft:crafting',
