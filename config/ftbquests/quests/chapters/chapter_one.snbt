@@ -633,7 +633,7 @@
 				}
 			]
 			title: "Applied Energistics"
-			x: -9.5d
+			x: -10.0d
 			y: 3.5d
 		}
 		{
@@ -2626,7 +2626,7 @@
 				}
 			]
 			title: "Energy Transfer"
-			x: -8.5d
+			x: -8.0d
 			y: 3.5d
 		}
 		{
@@ -2739,6 +2739,13 @@
 			]
 			icon: "supplementaries:antique_ink"
 			id: "7D67B1A9AC1F4445"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "3647C7DB6CC3E944"
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
