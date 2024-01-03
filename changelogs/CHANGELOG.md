@@ -9,6 +9,8 @@
 -   PNC's new Thermostat module is now slightly easier to craft and has been given a quest [\#829](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/829)
 -   [Expert] Lich should no longer spill loot on the ground outside the chest [\#829](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/829)
 -   Badlands Creepers now drop terracotta instead of gold nuggets [\#829](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/829)
+-   [Expert] Quests have been clarified to help with Lead/Sensitive/Glyph/Antique Ink progression [\#832](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/832)
+-   A number of in world conversions now have Lychee dummy recipes to highlight them, such as getting Straw from Grass or making Wixie Cauldrons [\#832](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/832)
 
 ### 🐛 Fixed Bugs
 

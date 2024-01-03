@@ -957,11 +957,6 @@
 			min_width: 300
 			rewards: [
 				{
-					id: "33D323C619C928A1"
-					item: "thermal:junk_net"
-					type: "item"
-				}
-				{
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/thermal_series/rare"
 					icon: "kubejs:rare_lootbox"
 					id: "67C2F821185E408C"

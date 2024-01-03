@@ -410,6 +410,7 @@
 				item: "twilightforest:ironwood_ingot"
 				type: "item"
 			}]
+			title: "Ironwood"
 			x: -2.5d
 			y: -2.5d
 		}
@@ -449,7 +450,15 @@
 		}
 		{
 			dependencies: ["4830632A0E6E9651"]
-			description: ["By balancing the outward force of Aura with the inward crushing of this spell, we’re able to reach a stable equilibrium that is strong and durable enough to assist in advanced metallurgy: Compressed Stone."]
+			description: [
+				"By balancing the outward force of Aura with the inward crushing of this spell, we’re able to reach a stable equilibrium that is strong and durable enough to assist in advanced metallurgy: Compressed Stone."
+				""
+				"The following spell form will crush blocks placed in the world: "
+				""
+				"&5Touch&r > &aCrush&r"
+				""
+				"Note: Sensitive is &nnot&r required for crushing blocks."
+			]
 			id: "79B755D0BDB6A8B7"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
@@ -624,8 +633,8 @@
 				}
 			]
 			title: "Applied Energistics"
-			x: -9.5d
-			y: 3.0d
+			x: -10.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7CFD3DFD4C593EB5"]
@@ -865,7 +874,7 @@
 		}
 		{
 			dependencies: ["73CDA6ED2393DE42"]
-			description: ["Perhaps paying a visit to the local mage tower will turn up more information, or at least more useful tools to assist in restoring the Tree of Life?"]
+			description: ["Perhaps paying a visit to the local mage tower will turn up more information, or at least more useful tools, to assist in restoring the Tree of Life?"]
 			hide_dependency_lines: true
 			icon: "ars_nouveau:novice_spell_book"
 			id: "370C40BCC3A6A055"
@@ -886,14 +895,8 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["28A304E0F1600640"]
-			description: [
-				"Though many glyphs may be found and used to repair the spell book, the Scribe’s Table may also be used to craft any glyph. "
-				""
-				"Finding proper spell ink, however, may prove more difficult as it must be specially prepared using a process that can take years. "
-				""
-				"It was once heavily traded by the seafaring folk that specialized in its creation. Perhaps some could be retrieved with some good old-fashioned trawling. "
-			]
+			dependencies: ["7D67B1A9AC1F4445"]
+			description: ["With a steady supply of Antique Ink secured, glyphs may finally be crafted. Of course, using higher tier glyphs will still require further repair of the Spell Book. "]
 			id: "7507572BD048B6C9"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
@@ -908,8 +911,8 @@
 				item: "ars_nouveau:scribes_table"
 				type: "item"
 			}]
-			x: -9.5d
-			y: 0.5d
+			x: -8.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["11AB47232D9F5D6D"]
@@ -1076,6 +1079,7 @@
 				""
 				"Perform this ritual to summon a murder of Death Tomes. They’ll be an excellent way to supplement the missing glyphs in this newfound spell book."
 			]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1b
 				id: "gateways:gate_pearl"
@@ -1111,8 +1115,8 @@
 				}
 			]
 			title: "Summon Death Tome"
-			x: -8.5d
-			y: 0.5d
+			x: -10.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["11AB47232D9F5D6D"]
@@ -1987,8 +1991,8 @@
 				type: "item"
 			}]
 			title: "Certus Farming"
-			x: -10.0d
-			y: 2.0d
+			x: -9.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["11AB47232D9F5D6D"]
@@ -2059,8 +2063,8 @@
 				item: "ars_nouveau:glyph_dispel"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -0.5d
+			x: -9.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7AD5D1665CA3DF4F"]
@@ -2291,8 +2295,8 @@
 					type: "item"
 				}
 			]
-			x: -8.0d
-			y: -0.5d
+			x: -8.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["345CBD118EAA0C09"]
@@ -2405,67 +2409,6 @@
 			}]
 			x: -3.5d
 			y: -3.0d
-		}
-		{
-			dependencies: ["3B372F597A05E777"]
-			description: [
-				"While the Dark Tower itself is largely infested with Towerwood Borers, it’s trivial to attract more of the critters. Getting rid of them, on the other hand, may prove a little more complicated. "
-				""
-				"They don’t come alone, so care should be taken!"
-			]
-			hide_dependency_lines: true
-			icon: {
-				Count: 1b
-				id: "gateways:gate_pearl"
-				tag: {
-					gateway: "gateways:swarm_gate_large"
-				}
-			}
-			id: "5D1FCC45134CB879"
-			rewards: [{
-				count: 4
-				id: "291E911003FDDDA7"
-				item: "emendatusenigmatica:carminite_gem"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [
-				{
-					entity: "minecraft:endermite"
-					icon: "minecraft:spawner"
-					id: "534A73E9BF329237"
-					type: "kill"
-					value: 5L
-				}
-				{
-					entity: "twilightforest:towerwood_borer"
-					id: "2E7B9A411B813DED"
-					type: "kill"
-					value: 5L
-				}
-				{
-					entity: "minecraft:silverfish"
-					icon: "minecraft:spawner"
-					id: "1567106A573CDBAD"
-					type: "kill"
-					value: 5L
-				}
-				{
-					id: "7849128B7816AA53"
-					item: {
-						Count: 1b
-						id: "gateways:gate_pearl"
-						tag: {
-							gateway: "gateways:swarm_gate_small"
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "Summon Mite Swarms"
-			x: -9.0d
-			y: 2.0d
 		}
 		{
 			dependencies: ["16E90BC107468EC2"]
@@ -2683,8 +2626,8 @@
 				}
 			]
 			title: "Energy Transfer"
-			x: -8.5d
-			y: 3.0d
+			x: -8.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["75C38D71F1A04EB4"]
@@ -2727,8 +2670,8 @@
 				}
 			]
 			title: "Plastic"
-			x: -8.0d
-			y: 2.0d
+			x: -8.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["73CDA6ED2393DE42"]
@@ -2784,6 +2727,46 @@
 			title: "Nomadic Life"
 			x: -3.5d
 			y: -6.5d
+		}
+		{
+			dependencies: ["28A304E0F1600640"]
+			description: [
+				"Though many glyphs may be found and used to repair the spell book, they may also be crafted with appropriate materials. "
+				""
+				"Finding proper spell ink, however, may prove rather difficult as it must be specially prepared using a process that can take years. "
+				""
+				"It was once heavily traded by the seafaring folk that specialized in its creation. Perhaps some could be retrieved with some good old-fashioned trawling. "
+			]
+			icon: "supplementaries:antique_ink"
+			id: "7D67B1A9AC1F4445"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "3647C7DB6CC3E944"
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1FF77511CCF22E34"
+					item: "thermal:device_fisher"
+					type: "item"
+				}
+				{
+					id: "479957F36710ECBC"
+					item: "thermal:junk_net"
+					type: "item"
+				}
+				{
+					id: "4AC9100D64D9A852"
+					item: "supplementaries:antique_ink"
+					type: "item"
+				}
+			]
+			title: "Antique Ink"
+			x: -9.0d
+			y: 1.5d
 		}
 	]
 	title: "Chapter One"
