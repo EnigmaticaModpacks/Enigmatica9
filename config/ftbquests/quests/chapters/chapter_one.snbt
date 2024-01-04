@@ -1882,25 +1882,11 @@
 					type: "item"
 				}
 			]
-			tasks: [
-				{
-					id: "150E44FC952BB995"
-					item: "naturesaura:potion_generator"
-					type: "item"
-				}
-				{
-					count: 28L
-					id: "741C6A98C22B5E2B"
-					item: "minecraft:nether_bricks"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "2E87B053B4E0E3E2"
-					item: "minecraft:red_nether_bricks"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "150E44FC952BB995"
+				item: "naturesaura:potion_generator"
+				type: "item"
+			}]
 			title: "Aura Generation"
 			x: -5.5d
 			y: -2.5d
@@ -2416,7 +2402,7 @@
 			description: [
 				"With heightened spell casting ability comes the ability to improve some automation through Spell Turrets.  "
 				""
-				"As a practical example, the following spell form will allow a turret to pull a standard potion from an adjacent Potion Jar, convert it to Lingering and throw it where the projectile lands."
+				"As a practical example, the following spell form will allow a Spell Turret to pull a standard potion from an adjacent Potion Jar, convert it to Lingering and throw it where the projectile lands."
 				""
 				"&5Projectile&r > &aInfuse&r > &6Extend Time&r"
 				""
