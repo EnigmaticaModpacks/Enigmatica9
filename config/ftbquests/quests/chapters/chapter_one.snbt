@@ -1855,7 +1855,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["3A7AEB067C49F899"]
+			dependencies: ["11AB47232D9F5D6D"]
 			description: [
 				"Much like the Alchemical Sourcelink can distill the magical essences in Potions down into Source, the Lingering Absorber is a structure that helps re-direct those energies back into the environment as Aura. "
 				""
@@ -1903,8 +1903,8 @@
 				}
 			]
 			title: "Aura Generation"
-			x: -6.0d
-			y: -1.0d
+			x: -5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4B874AA448FF4C7A"]
@@ -2007,6 +2007,7 @@
 				""
 				"The bees themselves may be summoned with the Altar of Birthing, just bring some tasty flowers for them!"
 			]
+			hide_dependency_lines: true
 			icon: "naturesaura:animal_spawner"
 			id: "3A7AEB067C49F899"
 			rewards: [{
@@ -2014,6 +2015,7 @@
 				item: "thermal:device_hive_extractor"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "096F98097551C561"
@@ -2037,8 +2039,8 @@
 					type: "item"
 				}
 			]
-			x: -5.5d
-			y: -2.5d
+			x: 2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["370C40BCC3A6A055"]
@@ -2421,7 +2423,6 @@
 				""
 				"These lingering potions will work exactly as their crafted variety for the purpose of running a Lingering Absorber without the need to craft beyond the base potion."
 			]
-			hide_dependency_lines: true
 			icon: {
 				Count: 1b
 				id: "minecraft:lingering_potion"
@@ -2471,15 +2472,14 @@
 				}
 				type: "item"
 			}]
-			shape: "hexagon"
 			tasks: [{
 				id: "3716441EC6ACD043"
 				item: "ars_nouveau:basic_spell_turret"
 				type: "item"
 			}]
 			title: "Lingering Absorber Automation"
-			x: 2.5d
-			y: -2.0d
+			x: -6.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["345CBD118EAA0C09"]
