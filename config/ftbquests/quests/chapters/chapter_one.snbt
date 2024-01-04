@@ -1872,14 +1872,13 @@
 			min_width: 300
 			rewards: [
 				{
-					count: 8
-					id: "4AD02A30701D4394"
-					item: "minecraft:dragon_breath"
+					id: "56A596BFA05198BA"
+					item: "naturesaura:mover_cart"
 					type: "item"
 				}
 				{
-					id: "56A596BFA05198BA"
-					item: "naturesaura:mover_cart"
+					id: "7A958A675ABC4536"
+					item: "naturesaura:generator_limit_remover"
 					type: "item"
 				}
 			]
