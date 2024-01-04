@@ -11,6 +11,8 @@
 -   Badlands Creepers now drop terracotta instead of gold nuggets [\#829](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/829)
 -   [Expert] Quests have been clarified to help with Lead/Sensitive/Glyph/Antique Ink progression [\#832](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/832)
 -   A number of in world conversions now have Lychee dummy recipes to highlight them, such as getting Straw from Grass or making Wixie Cauldrons [\#832](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/832)
+-   [Expert] Renamed Andesite Doors to Compressed Stone Doors [\#837](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/837)
+-   New quests added for Mechanical Roller and Elevator Pulley [\#837](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/837)
 
 ### 🐛 Fixed Bugs
 

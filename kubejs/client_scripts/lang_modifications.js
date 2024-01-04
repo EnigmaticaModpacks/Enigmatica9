@@ -265,6 +265,13 @@ const entries = {
             }
         },
         {
+            key: 'block.create.andesite_door',
+            value: {
+                normal: 'Andesite Door',
+                expert: 'Compressed Stone Door'
+            }
+        },
+        {
             key: 'advancement.create.belt',
             value: {
                 normal: 'Kelp Drive',
