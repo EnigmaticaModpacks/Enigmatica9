@@ -1211,7 +1211,7 @@
 				title: "Mechanical Piston"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.5d
 			y: 11.0d
 		}
 		{
@@ -1240,7 +1240,7 @@
 				item: "create:cart_assembler"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 8.5d
 			y: 11.0d
 		}
 		{
@@ -1264,7 +1264,7 @@
 				item: "create:mechanical_bearing"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.5d
 			y: 11.0d
 		}
 		{
@@ -1274,6 +1274,7 @@
 				"4405D0E5F291C3E2"
 				"28371C67E6DC0C84"
 				"1C3D0868BEFA2BD6"
+				"2B24B41DC7D98AB3"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -1334,7 +1335,7 @@
 				item: "create:mechanical_harvester"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 5.0d
 			y: 13.0d
 		}
 		{
@@ -1354,7 +1355,7 @@
 				item: "create:mechanical_drill"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 8.0d
 			y: 13.0d
 		}
 		{
@@ -1378,7 +1379,7 @@
 				item: "create:mechanical_plough"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 6.0d
 			y: 13.0d
 		}
 		{
@@ -1404,7 +1405,7 @@
 				item: "create:mechanical_saw"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 7.0d
 			y: 13.0d
 		}
 		{
@@ -1468,7 +1469,7 @@
 				item: "create:rope_pulley"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 7.5d
 			y: 11.0d
 		}
 		{
@@ -1713,7 +1714,7 @@
 				}
 			]
 			title: "Trains"
-			x: 7.0d
+			x: 6.5d
 			y: 11.0d
 		}
 		{
@@ -1876,6 +1877,56 @@
 			}]
 			x: 12.5d
 			y: 4.5d
+		}
+		{
+			dependencies: ["5F310E6373C3A6FF"]
+			description: ["A more advanced form of the Rope Pulley which allows for intelligent floor control as an elevator. The elevator may be called from any floor and can be sent to any floor without stopping between.  "]
+			id: "2B24B41DC7D98AB3"
+			rewards: [{
+				count: 4
+				id: "1DC8693F1DD9D253"
+				item: "create:elevator_contact"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0FBEAD88E3AC8A30"
+					item: "create:elevator_pulley"
+					type: "item"
+				}
+				{
+					id: "2384EBE536BD066D"
+					item: "create:contraption_controls"
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["299048747CDB2516"]
+			description: [
+				"Placed in front of a rail-based contraption, Mechanical Rollers may be used to flatten terrain or fill gaps below the contraption.  "
+				""
+				" "
+				""
+				"This can be put to great use with a contraption that is designed to lay down track over a great distance.  "
+			]
+			id: "20DF6273B489AD08"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "3871F5B98963BA94"
+				title: "Epic Create Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "79BCD94D6A6CA7E3"
+				item: "create:mechanical_roller"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 13.0d
 		}
 	]
 	title: "Create"
