@@ -14,6 +14,7 @@
 -   [Expert] Renamed Andesite Doors to Compressed Stone Doors [\#837](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/837)
 -   New quests added for Mechanical Roller and Elevator Pulley [\#837](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/837)
 -   [Expert] Gauge Dropper is no longer gated behind Osmium [\#838](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/838)
+-   [Expert] Reduce cost of Hexerei Reading Glasses [\#842](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/842)
 
 ### 🐛 Fixed Bugs
 
