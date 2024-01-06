@@ -1022,6 +1022,24 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 100,
             heatRequirement: 'heated',
             id: `${id_prefix}netherrack`
+        },
+        {
+            output: `hexerei:reading_glasses`,
+            inputs: [
+                '#forge:ingots/tin',
+                '#forge:glass_panes/colorless',
+                '#forge:ingots/tin',
+                '#forge:ingots/tin',
+                '#forge:gems/amethyst',
+                '#forge:ingots/tin',
+                '#forge:ingots/tin',
+                '#forge:glass_panes/colorless'
+            ],
+            liquid: { fluid: 'minecraft:lava' },
+            liquidOutput: { fluid: 'minecraft:lava' },
+            fluidLevelsConsumed: 1000,
+            heatRequirement: 'heated',
+            id: `hexerei:reading_glasses_from_mixing_cauldron`
         }
     ];
 
