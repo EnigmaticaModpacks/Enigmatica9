@@ -20,6 +20,7 @@
 
 -   [Normal] Fix missing crushing recipes for Copper/Gold/Iron [\#830](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/830)
 -   [Expert] Fix issue causing Dream Stone to sometimes not drop [\#842](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/842)
+-   [Expert] Fix being unable to enter the Overworld through rituals. [\#840](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/840)
 
 ---
 
