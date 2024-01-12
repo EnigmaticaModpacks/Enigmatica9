@@ -5,10 +5,7 @@ EntityEvents.hurt((event) => {
     }
 
     let currentTime = level.getDayTime();
-    if (
-        entity.persistentData['lastVoidTime'] &&
-        entity.persistentData['lastVoidTime'] + 40 > currentTime
-    ) {
+    if (entity.persistentData['lastVoidTime'] && entity.persistentData['lastVoidTime'] + 40 > currentTime) {
         return;
     }
     entity.persistentData['lastVoidTime'] = currentTime;
