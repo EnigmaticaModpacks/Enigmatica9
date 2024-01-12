@@ -187,6 +187,16 @@ ServerEvents.recipes((event) => {
                 C: '#forge:gems/nitro'
             },
             id: `minecraft:end_crystal`
+        },
+        {
+            output: '2x minecraft:tripwire_hook',
+            pattern: ['A', 'B', 'C'],
+            key: {
+                A: '#forge:ingots/tin',
+                B: '#forge:rods/wooden',
+                C: '#minecraft:planks'
+            },
+            id: 'minecraft:tripwire_hook'
         }
     ];
 
