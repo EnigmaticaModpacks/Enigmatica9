@@ -43,7 +43,7 @@ EntityEvents.hurt((event) => {
         });
         server.runCommandSilent(`effect give ${username} minecraft:hunger 8 255 true`);
         // Add slow fall effect to save players from fall damage after teleportation.
-        server.runCommandSilent(`effect give ${username} minecraft:slow_falling 4 255 true`)
+        server.runCommandSilent(`effect give ${username} minecraft:slow_falling 4 255 true`);
         event.cancel();
     }
 });
