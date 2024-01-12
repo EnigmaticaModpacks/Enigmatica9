@@ -1,8 +1,11 @@
 EntityEvents.hurt((event) => {
     const { entity, source, level, server } = event;
-    if (!entity.isPlayer() || entity.isFake()) {
-        return;
-    }
+    if (!entity.isPlayer() || entity.isFake()) return;
+
+    let currentTime = level.getDayTime();
+    if (server.persistentData["lastVoidTime_" + entity.getUsername()] && server.persistentData["lastVoidTime_" + entity.getUsername()] + 40 > currentTime) return;
+    server.persistentData["lastVoidTime_" + entity.getUsername()] = currentTime;
+
     let player = entity;
     let currentDimension = String(level.getDimension());
     let watchDimensions = ['compact_world', 'nomadictents', 'the_end'];
