@@ -3,8 +3,12 @@ EntityEvents.hurt((event) => {
     if (!entity.isPlayer() || entity.isFake()) return;
 
     let currentTime = level.getDayTime();
-    if (server.persistentData["lastVoidTime_" + entity.getUsername()] && server.persistentData["lastVoidTime_" + entity.getUsername()] + 40 > currentTime) return;
-    server.persistentData["lastVoidTime_" + entity.getUsername()] = currentTime;
+    if (
+        server.persistentData['lastVoidTime_' + entity.getUsername()] &&
+        server.persistentData['lastVoidTime_' + entity.getUsername()] + 40 > currentTime
+    )
+        return;
+    server.persistentData['lastVoidTime_' + entity.getUsername()] = currentTime;
 
     let player = entity;
     let currentDimension = String(level.getDimension());
