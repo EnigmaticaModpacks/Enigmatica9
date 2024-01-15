@@ -101,8 +101,8 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}sylvanite`
         },
         {
-            fluid_input: { type: 'pneumaticcraft:fluid', amount: 10, tag: 'forge:ambrosia' },
-            fluid_output: { amount: 2, fluid: 'industrialforegoing:ether_gas' },
+            fluid_input: { type: 'pneumaticcraft:fluid', amount: 1000, tag: 'forge:ambrosia' },
+            fluid_output: { amount: 200, fluid: 'industrialforegoing:ether_gas' },
             exothermic: false,
             temperature: { min_temp: 1273 },
             pressure: 9.0,

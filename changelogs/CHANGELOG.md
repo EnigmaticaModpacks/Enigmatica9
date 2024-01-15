@@ -1,3 +1,9 @@
+### Enigmatica 9 v1.19.0
+
+### 🌟 Improvements
+
+-   Ether Gas is now produced faster [\#827](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/827)
+
 ### Enigmatica 9 v1.18.0
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.18.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.18.0.md)
