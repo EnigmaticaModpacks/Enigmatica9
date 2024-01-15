@@ -2,7 +2,7 @@
 
 ### 🌟 Improvements
 
--   Ether Gas is now produced faster [\#827](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/827)
+-   Ether Gas is now produced faster [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
 
 ### Enigmatica 9 v1.18.0
 
