@@ -19,11 +19,11 @@ ServerEvents.genericLootTables((event) => {
 
         table.addPool((pool) => {
             pool.rolls = [2, 4];
-            pool.addItem('minecraft:baked_potato', 1, [1, 8]);
             pool.addItem('quark:torch_arrow', 1, [2, 24]);
             pool.addItem('minecraft:gunpowder', 1, [1, 4]);
             pool.addItem('twilightforest:ore_magnet', 1, 1);
             pool.addItem('twilightforest:ironwood_ingot', 1, [3, 7]);
+            pool.addItem('ars_nouveau:sourcestone', 1, [1, 4]);
         });
 
         table.addPool((pool) => {

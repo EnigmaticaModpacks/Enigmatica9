@@ -22,8 +22,8 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('minecraft:torch', 1, [1, 12]);
             pool.addItem('quark:torch_arrow', 1, [1, 12]);
             pool.addItem('minecraft:gunpowder', 1, [1, 4]);
-            pool.addItem('minecraft:bread', 1, [1, 4]);
             pool.addItem('twilightforest:ore_magnet', 1, 1);
+            pool.addItem('ars_nouveau:sourcestone', 1, [1, 4]);
         });
 
         table.addPool((pool) => {
