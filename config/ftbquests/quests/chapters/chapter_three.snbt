@@ -594,13 +594,7 @@
 			tasks: [{
 				icon: "emendatusenigmatica:tainted_gold_ingot"
 				id: "4241691B8FE4293D"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/tainted_gold"
-					}
-				}
+				item: "emendatusenigmatica:tainted_gold_ingot"
 				title: "Celestial Gold"
 				type: "item"
 			}]
