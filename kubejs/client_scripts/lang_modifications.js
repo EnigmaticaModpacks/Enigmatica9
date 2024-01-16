@@ -1393,6 +1393,13 @@ const entries = {
                 normal: 'Bumblezone teleport failed. Hive needs a required block below it.',
                 expert: 'Bumblezone teleport failed. Hive needs a Mekanism Teleporter below it.'
             }
+        },
+        {
+            key: 'item.the_bumblezone.honey_compass_structure_failed',
+            value: {
+                normal: 'Honey Compass - Structure locating failed...',
+                expert: 'Honey Compass - Right click to search...'
+            }
         }
     ],
     quark: [

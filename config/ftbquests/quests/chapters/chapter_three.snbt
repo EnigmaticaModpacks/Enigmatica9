@@ -63,7 +63,7 @@
 				item: "minecraft:sculk"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.0d
 			y: -4.0d
 		}
 		{
@@ -604,8 +604,8 @@
 				title: "Celestial Gold"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -4.0d
+			x: 1.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["39B2F84EBDC27AA3"]
@@ -646,7 +646,6 @@
 					type: "advancement"
 				}
 			]
-			shape: "hexagon"
 			tasks: [
 				{
 					id: "0D29D697AA5F02F1"
@@ -666,8 +665,8 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
-			y: -3.0d
+			x: 2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4F90F6437D6CF7EC"]
@@ -687,7 +686,6 @@
 				title: "Scavenger's Delight"
 				type: "command"
 			}]
-			shape: "hexagon"
 			tasks: [
 				{
 					dimension: "minecraft:the_nether"
@@ -703,8 +701,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: -3.5d
+			x: 1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["356B7D1DFF632DBD"]
@@ -944,7 +942,7 @@
 				title: "Ritual of Cleansing"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 0.0d
 			y: -4.5d
 		}
 		{
@@ -993,12 +991,33 @@
 					type: "item"
 				}
 				{
-					id: "0CCA7157AB1E119F"
+					id: "2ACE6715AB99967A"
+					item: {
+						Count: 1b
+						id: "the_bumblezone:honey_compass"
+						tag: {
+							CompassType: "structure"
+							CustomDescription: "tooltip.the_bumblezone.honey_compass_ancient_city.description"
+							CustomName: "tooltip.the_bumblezone.honey_compass_ancient_city"
+							Locked: 1.0d
+							TargetDimension: "minecraft:overworld"
+							TargetPos: {
+								X: -960
+								Y: 0
+								Z: 992
+							}
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "7BB480DE9B7AA92F"
 					item: "kubejs:genius_loci"
 					type: "item"
 				}
 			]
-			x: -0.5d
+			x: -1.0d
 			y: -4.5d
 		}
 		{
