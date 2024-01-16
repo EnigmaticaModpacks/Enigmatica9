@@ -3,6 +3,8 @@
 ### 🌟 Improvements
 
 -   [Expert] Ether Gas is now produced faster [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
+-   [Expert] Reinforced Deepslate may now be requested from the Queen Bee [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
+-   [Expert] A new Honey Compass may be crafted that will point the way to an Ancient City to help with the random nature of their spawn [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
 
 ### Enigmatica 9 v1.18.0
 

@@ -75,6 +75,17 @@ ServerEvents.recipes((event) => {
             ],
             energy: '12000000',
             id: `${id_prefix}infused_enderpearl`
+        },
+        {
+            output: Item.of('the_bumblezone:honey_compass', {
+                CustomDescription: 'tooltip.the_bumblezone.honey_compass_ancient_city.description',
+                CustomName: 'tooltip.the_bumblezone.honey_compass_ancient_city',
+                Locked: 1,
+                TargetStructureTag: 'minecraft:ancient_city'
+            }),
+            inputs: ['the_bumblezone:honey_compass', 'minecraft:reinforced_deepslate'],
+            energy: '12000000',
+            id: `${id_prefix}honey_compass_ancient_city`
         }
     ];
 
