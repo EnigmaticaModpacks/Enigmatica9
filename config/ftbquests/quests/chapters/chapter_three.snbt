@@ -952,14 +952,17 @@
 				""
 				"It is said the Warden still wanders those ancient broken halls. Locate it and lay it to rest. "
 				""
-				"================================="
+				"================================================="
 				""
 				"Travel to a Deep Dark biome far underground in the Overworld and make enough noise to force the Warden out of hiding. "
 				""
-				"Slay it to obtain a Warden Tendril which may be transformed into Genius Loci, a powerful catalyst used in the creation of Elysium."
+				"Locating an Ancient City will be challenging without assistance, however. Perhaps seek the Queen Bee's aid to craft a special Honey Compass attuned to the Ancient City."
+				""
+				"Slay the Warden to obtain a Warden Tendril. This may be transformed into Genius Loci; a powerful catalyst used in the creation of Elysium."
 			]
 			icon: "apotheosis:soul_touched_sculkshelf"
 			id: "4410E58ED333FBCB"
+			min_width: 300
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 				icon: "kubejs:aura_leaf"
