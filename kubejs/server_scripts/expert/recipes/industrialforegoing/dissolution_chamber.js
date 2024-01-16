@@ -397,6 +397,84 @@ ServerEvents.recipes((event) => {
         }
     ];
 
+    let pnc_upgrades = [
+        {
+            output: 'pneumaticcraft:volume_upgrade',
+            inputs: ['pneumaticcraft:pressure_chamber_wall', '#forge:essences/air']
+        },
+        {
+            output: 'pneumaticcraft:range_upgrade',
+            inputs: ['#forge:gems/source', '#forge:essences/manipulation']
+        },
+        {
+            output: 'pneumaticcraft:security_upgrade',
+            inputs: ['pneumaticcraft:pressure_gauge', '#forge:essences/abjuration']
+        },
+        {
+            output: 'pneumaticcraft:speed_upgrade',
+            inputs: ['#forge:gems/fluix', '#forge:essences/water']
+        },
+        {
+            output: 'pneumaticcraft:item_life_upgrade',
+            inputs: ['ars_nouveau:mendosteen_pod', '#forge:essences/abjuration']
+        },
+        {
+            output: 'pneumaticcraft:entity_tracker_upgrade',
+            inputs: ['ars_nouveau:ritual_scrying', '#forge:essences/air']
+        },
+        {
+            output: 'pneumaticcraft:block_tracker_upgrade',
+            inputs: ['ars_nouveau:ritual_scrying', '#forge:essences/earth']
+        },
+        {
+            output: 'pneumaticcraft:dispenser_upgrade',
+            inputs: ['ae2:certus_quartz_crystal', '#forge:essences/manipulation']
+        },
+        {
+            output: 'pneumaticcraft:magnet_upgrade',
+            inputs: ['minecraft:lodestone', '#forge:essences/manipulation']
+        },
+        {
+            output: 'pneumaticcraft:minigun_upgrade',
+            inputs: ['pneumaticcraft:minigun', '#forge:essences/fire']
+        },
+        {
+            output: 'pneumaticcraft:inventory_upgrade',
+            inputs: ['thermal:satchel', '#forge:essences/abjuration']
+        },
+        {
+            output: 'pneumaticcraft:standby_upgrade',
+            inputs: ['#comforts:sleeping_bags', '#forge:essences/abjuration']
+        },
+        {
+            output: 'pneumaticcraft:charging_upgrade',
+            inputs: ['pneumaticcraft:charging_module', '#forge:essences/air']
+        },
+        {
+            output: 'pneumaticcraft:coordinate_tracker_upgrade',
+            inputs: ['ars_nouveau:ritual_scrying', '#forge:essences/manipulation']
+        }
+    ];
+
+    pnc_upgrades.forEach((upgrade) => {
+        recipes.push({
+            output: `2x ${upgrade.output}`,
+            inputs: [
+                upgrade.inputs[1],
+                upgrade.inputs[0],
+                upgrade.inputs[1],
+                'pneumaticcraft:upgrade_matrix',
+                'pneumaticcraft:upgrade_matrix',
+                upgrade.inputs[1],
+                upgrade.inputs[0],
+                upgrade.inputs[1]
+            ],
+            inputFluid: '{Amount:1000,FluidName:"minecraft:water"}',
+            processingTime: 40,
+            id: `${id_prefix}${upgrade.output.split(':')[1]}`
+        });
+    });
+
     recipes.forEach((recipe) => {
         recipe.type = 'industrialforegoing:dissolution_chamber';
         recipe.input = recipe.inputs.map((input) =>
