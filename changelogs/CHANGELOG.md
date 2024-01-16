@@ -10,6 +10,7 @@
 ### 🐛 Fixed Bugs
 
 -   Disable Charm of Keeping as it is already covered by Enigmatic Graves [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
+-   [Expert] Integral Components from quests now match the levels of crafted augments [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
 
 ---
 
