@@ -3,6 +3,13 @@ EntityEvents.hurt((event) => {
     if (!entity.isPlayer() || entity.isFake()) {
         return;
     }
+
+    let currentTime = level.getDayTime();
+    if (entity.persistentData['lastVoidTime'] && entity.persistentData['lastVoidTime'] + 40 > currentTime) {
+        return;
+    }
+    entity.persistentData['lastVoidTime'] = currentTime;
+
     let player = entity;
     let currentDimension = String(level.getDimension());
     let watchDimensions = ['compact_world', 'nomadictents', 'the_end'];
@@ -35,7 +42,8 @@ EntityEvents.hurt((event) => {
             server.runCommandSilent(`effect clear ${username} ${effect}`);
         });
         server.runCommandSilent(`effect give ${username} minecraft:hunger 8 255 true`);
-
+        // Add slow fall effect to save players from fall damage after teleportation.
+        server.runCommandSilent(`effect give ${username} minecraft:slow_falling 4 255 true`);
         event.cancel();
     }
 });

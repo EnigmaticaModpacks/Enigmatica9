@@ -18,6 +18,11 @@
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.18.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.18.0.md)
 
+### 🎁 New Mods Added
+
+-   [bad packets](https://www.curseforge.com/minecraft/mc-mods/badpackets) (by [badasintended](https://www.curseforge.com/members/badasintended/projects))
+-   [EMI Loot](https://www.curseforge.com/minecraft/mc-mods/emi-loot) (by [fzzyhmstrs](https://www.curseforge.com/members/fzzyhmstrs/projects))
+
 ### 🌟 Improvements
 
 -   Excavator quest now accepts any tier of excavator/hammer [\#827](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/827)
@@ -36,6 +41,7 @@
 
 -   [Normal] Fix missing crushing recipes for Copper/Gold/Iron [\#830](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/830)
 -   [Expert] Fix issue causing Dream Stone to sometimes not drop [\#842](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/842)
+-   [Expert] Fix being unable to enter the Overworld through rituals. [\#840](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/840)
 
 ---
 
