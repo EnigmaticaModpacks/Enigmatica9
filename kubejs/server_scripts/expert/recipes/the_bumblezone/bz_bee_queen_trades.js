@@ -166,6 +166,19 @@ ServerEvents.lowPriorityData((event) => {
             ]
         },
         {
+            id: 'dream_stone_trades',
+            wants: [{ id: 'kubejs:dimensional_storage_crystal', required: true }],
+            possible_rewards: [
+                {
+                    id: 'minecraft:reinforced_deepslate',
+                    count: 16,
+                    xp_reward: 2,
+                    weight: 100,
+                    required: true
+                }
+            ]
+        },
+        {
             id: 'calling_spirit_trades',
             wants: [{ id: 'kubejs:spirit_of_devotion', required: true }],
             possible_rewards: [
