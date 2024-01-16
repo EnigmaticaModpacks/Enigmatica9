@@ -6,7 +6,7 @@ ServerEvents.genericLootTables((event) => {
         table.addPool((pool) => {
             pool.rolls = 2.0;
             pool.addItem('thermal:obsidian_glass', 1, 4);
-            pool.addItem('thermal:upgrade_augment_2', 1, 1);
+            pool.addItem(Item.of('thermal:upgrade_augment_2', '{AugmentData:{BaseMod:4,Type:"Upgrade"}}'), 1, 1);
             pool.addItem('thermal:fluid_cell', 1, 1);
             pool.addItem('thermal:device_soil_infuser', 1, 1);
             pool.addItem('thermal:phytosoil', 1, 16);
@@ -32,7 +32,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('thermal:machine_speed_augment', 1, [1, 2]);
             pool.addItem('thermal:machine_efficiency_augment', 1, [1, 2]);
             pool.addItem('thermal:machine_output_augment', 1, [1, 2]);
-            pool.addItem('thermal:upgrade_augment_3', 1, 1);
+            pool.addItem(Item.of('thermal:upgrade_augment_2', '{AugmentData:{BaseMod:4,Type:"Upgrade"}}'), 1, 1);
         });
 
         table.addPool((pool) => {

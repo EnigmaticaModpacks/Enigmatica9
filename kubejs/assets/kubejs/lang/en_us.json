@@ -88,6 +88,9 @@
     "entity.minecraft.villager.byg.forager": "Forager",
     "tooltip.hexerei.sage_seeds": "May be purchased from the Market block.",
 
+    "tooltip.the_bumblezone.honey_compass_ancient_city": "Honey Compass - Ancient City",
+    "tooltip.the_bumblezone.honey_compass_ancient_city.description": "Right click the air in the Overworld to locate an Ancient City structure!",
+
     "ritual.occultism.sacrifice.ravens": "Raven",
     "ritual.occultism.sacrifice.fire_elementals": "Blaze",
     "ritual.occultism.sacrifice.air_elementals": "Blitz",

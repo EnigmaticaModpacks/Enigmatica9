@@ -19,6 +19,7 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('minecraft:arrow', 1, [1, 12]);
             pool.addItem('twilightforest:firefly', 1, [1, 12]);
             pool.addItem('minecraft:flint_and_steel', 1, 1);
+            pool.addItem('ars_nouveau:sourcestone', 1, [1, 4]);
         });
 
         table.addPool((pool) => {

@@ -14,10 +14,11 @@ ServerEvents.genericLootTables((event) => {
             pool.addItem('minecraft:flower_pot', 1, 1);
             pool.addItem('thermal:phytogro', 1, [1, 4]);
             pool.addItem('minecraft:flint_and_steel', 1, 1);
+            pool.addItem('ars_nouveau:sourcestone', 1, [1, 4]);
         });
 
         table.addPool((pool) => {
-            pool.rolls = 1.0;
+            pool.rolls = [1, 4];
             pool.addItem('minecraft:dandelion', 1, [1, 4]);
             pool.addItem('minecraft:poppy', 1, [1, 4]);
             pool.addItem('minecraft:blue_orchid', 1, [1, 4]);

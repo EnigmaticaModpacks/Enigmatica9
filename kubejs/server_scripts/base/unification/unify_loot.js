@@ -84,7 +84,12 @@ LootJS.modifiers((event) => {
         // Gems
         .modifyLoot(Ingredient.of('#forge:gems'), (itemStack) => unifyLoot('forge:gems', 'gem', itemStack))
         // Dusts
-        .modifyLoot(Ingredient.of('#forge:dusts'), (itemStack) => unifyLoot('forge:dusts', 'dust', itemStack));
+        .modifyLoot(Ingredient.of('#forge:dusts'), (itemStack) => unifyLoot('forge:dusts', 'dust', itemStack))
+
+        // Charms of Keeping
+        .replaceLoot('twilightforest:charm_of_keeping_1', 'twilightforest:charm_of_life_1')
+        .replaceLoot('twilightforest:charm_of_keeping_2', 'twilightforest:charm_of_life_2')
+        .replaceLoot('twilightforest:charm_of_keeping_3', 'twilightforest:charm_of_life_3');
 
     // Replace drops from mobs!
     event
