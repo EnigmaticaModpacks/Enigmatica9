@@ -1,7 +1,4 @@
 ServerEvents.entityLootTables((event) => {
-    if (global.isExpertMode == false) {
-        return;
-    }
     // Override Maze Slime Loot Table
     event.addEntity('twilightforest:maze_slime', (table) => {
         table.addPool((pool) => {

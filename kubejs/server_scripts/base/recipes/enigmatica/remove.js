@@ -213,6 +213,8 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:storage/sugar_cane_block' },
         { id: 'thermal:press_gear_die' },
 
+        { id: /twilightforest:charm_of_keeping/ },
+
         { type: 'create:cutting' },
 
         { type: 'createaddition:liquid_burning' },

@@ -105,6 +105,7 @@ jei.base.items.disabled = [
     'thermal:cinnabar_ore',
 
     'twilightforest:uncrafting_table',
+    /twilightforest:charm_of_keeping/,
 
     'occultism:butcher_knife',
 
