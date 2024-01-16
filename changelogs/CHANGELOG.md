@@ -6,6 +6,8 @@
 -   [Expert] Reinforced Deepslate may now be requested from the Queen Bee [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
 -   [Expert] A new Honey Compass may be crafted that will point the way to an Ancient City to help with the random nature of their spawn [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
 -   Sourcestone now has a chance to drop as loot in Hollow Hills and other Twilight Forest structures [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
+-   [Expert] Many PNC Upgrades are now available earlier in the game [\#851](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/851)
+-   [Expert] Alternate recipes for some Ars Charms, such as Wixies, have been added to the Aura Forge [\#851](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/851)
 
 ### 🐛 Fixed Bugs
 
