@@ -8,6 +8,7 @@
 -   Sourcestone now has a chance to drop as loot in Hollow Hills and other Twilight Forest structures [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
 -   [Expert] Many PNC Upgrades are now available earlier in the game [\#851](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/851)
 -   [Expert] Alternate recipes for some Ars Charms, such as Wixies, have been added to the Aura Forge [\#851](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/851)
+-   [Expert] Uncap the Aetheric Transmutation Chamber, allowing it to run much faster. [\#854](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/854)
 
 ### 🐛 Fixed Bugs
 

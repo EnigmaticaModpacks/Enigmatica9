@@ -54,7 +54,7 @@
 	#Energy per operation tick (Joules).
 	nutritionalLiquifier = "200"
 	#Energy per operation tick (Joules).
-	antiprotonicNucleosynthesizer = "100000"
+	antiprotonicNucleosynthesizer = "10000"
 	#Energy per operation tick (Joules).
 	pigmentExtractor = "200"
 	#Energy per operation tick (Joules).

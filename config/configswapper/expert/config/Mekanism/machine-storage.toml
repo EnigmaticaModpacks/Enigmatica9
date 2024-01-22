@@ -62,7 +62,7 @@
 	#Base energy storage (Joules).
 	nutritionalLiquifier = "40000"
 	#Base energy storage (Joules). Also defines max process rate.
-	antiprotonicNucleosynthesizer = "1000000"
+	antiprotonicNucleosynthesizer = "1000000000"
 	#Base energy storage (Joules).
 	pigmentExtractor = "40000"
 	#Base energy storage (Joules).
