@@ -10,6 +10,8 @@
 -   [Expert] Alternate recipes for some Ars Charms, such as Wixies, have been added to the Aura Forge [\#851](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/851)
 -   [Expert] Uncap the Aetheric Transmutation Chamber, allowing it to run much faster. [\#854](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/854)
 -   [Expert] Remove chance of failure when using lightning crafting to do final tier of ore processing [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
+-   Slight buff to all crystal cluster drop rates [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
+-   Slight buff to Charcoal > Coal conversion rate with Nature's Aura [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
 
 ### 🐛 Fixed Bugs
 

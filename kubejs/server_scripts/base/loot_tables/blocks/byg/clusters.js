@@ -3,7 +3,7 @@ ServerEvents.blockLootTables((event) => {
 
     // Clusters
     crystal_types.forEach((crystal_type) => {
-        event.addBlock(`emendatusenigmatica:${crystal_type}_cluster`, (table) => {
+        event.addBlock(`byg:${crystal_type}_crystal_cluster`, (table) => {
             table.addPool((pool) => {
                 pool.addEntry({
                     type: 'minecraft:alternatives',
@@ -27,9 +27,8 @@ ServerEvents.blockLootTables((event) => {
                                 { add: false, count: 4.0, function: 'minecraft:set_count' },
                                 {
                                     function: 'minecraft:apply_bonus',
-                                    formula: 'minecraft:uniform_bonus_count',
                                     enchantment: 'minecraft:fortune',
-                                    parameters: { bonusMultiplier: 1 }
+                                    formula: 'minecraft:ore_drops'
                                 },
                                 { function: 'minecraft:explosion_decay' }
                             ]

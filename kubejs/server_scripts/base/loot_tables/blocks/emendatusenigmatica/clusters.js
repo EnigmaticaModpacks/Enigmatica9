@@ -27,9 +27,8 @@ ServerEvents.blockLootTables((event) => {
                                 { add: false, count: 4.0, function: 'minecraft:set_count' },
                                 {
                                     function: 'minecraft:apply_bonus',
-                                    formula: 'minecraft:uniform_bonus_count',
                                     enchantment: 'minecraft:fortune',
-                                    parameters: { bonusMultiplier: 1 }
+                                    formula: 'minecraft:ore_drops'
                                 },
                                 { function: 'minecraft:explosion_decay' }
                             ]
