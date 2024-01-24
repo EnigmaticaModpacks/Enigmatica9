@@ -52,9 +52,11 @@ ServerEvents.recipes((event) => {
             let ingot = Item.of(AlmostUnified.getPreferredItemForTag(`forge:ingots/${metal}`)).getId();
             let plate = Item.of(AlmostUnified.getPreferredItemForTag(`forge:plates/${metal}`)).getId();
             let gear = Item.of(AlmostUnified.getPreferredItemForTag(`forge:gears/${metal}`)).getId();
-            if (ingot) input_types.push('ingots');
-            if (plate) input_types.push('plates');
-            if (gear) input_types.push('gears');
+            if (ingot !== air) input_types.push('ingots');
+            if (plate !== air) input_types.push('plates');
+            if (gear !== air) input_types.push('gears');
+
+            console.log(plate);
 
             recipes.push({
                 input_types: input_types,
