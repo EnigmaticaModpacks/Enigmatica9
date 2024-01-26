@@ -9,11 +9,16 @@
 -   [Expert] Many PNC Upgrades are now available earlier in the game [\#851](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/851)
 -   [Expert] Alternate recipes for some Ars Charms, such as Wixies, have been added to the Aura Forge [\#851](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/851)
 -   [Expert] Uncap the Aetheric Transmutation Chamber, allowing it to run much faster. [\#854](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/854)
+-   [Expert] Remove chance of failure when using lightning crafting to do final tier of ore processing [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
+-   Slight buff to all crystal cluster drop rates [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
+-   Slight buff to Charcoal > Coal conversion rate with Nature's Aura [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
 
 ### 🐛 Fixed Bugs
 
 -   Disable Charm of Keeping as it is already covered by Enigmatic Graves [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
 -   [Expert] Integral Components from quests now match the levels of crafted augments [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
+-   [Expert] Remove broken recipes for Iesnium Dust [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
+-   Remove unintended Osmium ore recipe from Pulverizer [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
 
 ---
 

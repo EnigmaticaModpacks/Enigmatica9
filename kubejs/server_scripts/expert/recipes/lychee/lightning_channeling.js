@@ -73,20 +73,7 @@ ServerEvents.recipes((event) => {
                 {
                     type: 'drop_item',
                     item: `emendatusenigmatica:${metal}_shard`,
-                    count: 1,
-                    contextual: { type: 'chance', chance: 0.33 }
-                },
-                {
-                    type: 'drop_item',
-                    item: `emendatusenigmatica:${metal}_shard`,
-                    count: 1,
-                    contextual: { type: 'chance', chance: 0.33 }
-                },
-                {
-                    type: 'drop_item',
-                    item: `emendatusenigmatica:${metal}_shard`,
-                    count: 1,
-                    contextual: { type: 'chance', chance: 0.33 }
+                    count: 1
                 }
             ],
             id: `${id_prefix}shard_${metal}`

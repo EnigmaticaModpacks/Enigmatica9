@@ -1,12 +1,13 @@
 ServerEvents.blockLootTables((event) => {
-    event.addBlock(`minecraft:amethyst_cluster`, (table) => {
+    // Clusters
+    event.addBlock(`ae2:quartz_cluster`, (table) => {
         table.addPool((pool) => {
             pool.addEntry({
                 type: 'minecraft:alternatives',
                 children: [
                     {
                         type: 'minecraft:item',
-                        name: `minecraft:amethyst_cluster`,
+                        name: `ae2:quartz_cluster`,
                         conditions: [
                             {
                                 condition: 'minecraft:match_tool',
@@ -18,7 +19,7 @@ ServerEvents.blockLootTables((event) => {
                     },
                     {
                         type: 'minecraft:item',
-                        name: 'minecraft:amethyst_shard',
+                        name: `ae2:certus_quartz_crystal`,
                         functions: [
                             { add: false, count: 4.0, function: 'minecraft:set_count' },
                             {
@@ -36,16 +37,15 @@ ServerEvents.blockLootTables((event) => {
 
     // Buds
     const bud_sizes = ['small', 'medium', 'large'];
-
     bud_sizes.forEach((size) => {
-        event.addBlock(`minecraft:${size}_amethyst_bud`, (table) => {
+        event.addBlock(`ae2:${size}_quartz_bud`, (table) => {
             table.addPool((pool) => {
                 pool.addEntry({
                     type: 'minecraft:alternatives',
                     children: [
                         {
                             type: 'minecraft:item',
-                            name: `minecraft:${size}_amethyst_bud`,
+                            name: `byg:${size}_quartz_bud`,
                             conditions: [
                                 {
                                     condition: 'minecraft:match_tool',
@@ -57,7 +57,7 @@ ServerEvents.blockLootTables((event) => {
                         },
                         {
                             type: 'minecraft:item',
-                            name: `kubejs:amethyst_dust`,
+                            name: `ae2:certus_quartz_dust`,
                             conditions: [{ condition: 'minecraft:survives_explosion' }]
                         }
                     ]
