@@ -272,6 +272,7 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:compat/create/pulverizer_create_crimsite' },
         { id: 'thermal:compat/create/pulverizer_create_asurine' },
         { id: 'thermal:machines/pulverizer/pulverizer_gilded_blackstone' },
+        { id: 'thermal:compat/mekanism/smelter_mek_osmium_ore' },
 
         // Ore Processing Related
 

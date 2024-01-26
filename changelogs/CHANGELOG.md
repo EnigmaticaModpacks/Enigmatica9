@@ -18,6 +18,7 @@
 -   Disable Charm of Keeping as it is already covered by Enigmatic Graves [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
 -   [Expert] Integral Components from quests now match the levels of crafted augments [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
 -   [Expert] Remove broken recipes for Iesnium Dust [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
+-   Remove unintended Osmium ore recipe from Pulverizer [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
 
 ---
 
