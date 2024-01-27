@@ -12,6 +12,9 @@
 -   [Expert] Remove chance of failure when using lightning crafting to do final tier of ore processing [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
 -   Slight buff to all crystal cluster drop rates [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
 -   Slight buff to Charcoal > Coal conversion rate with Nature's Aura [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
+-   [Expert] Golden Apples, Golden Carrots, and Glistering Melons all have a new recipe in Mekanism [\#857](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/857)
+-   Golden Apples, Golden Carrots, and Glistering Melons recipe in Nature's Aura has had the time/aura cost normalized across the board. Apples and carrots now craft significantly faster while melons will be a bit slower. [\#857](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/857)
+-   [Expert] Attempt to clarify EMI description for Ars Nouveau fruit [\#857](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/857)
 
 ### 🐛 Fixed Bugs
 
@@ -19,6 +22,7 @@
 -   [Expert] Integral Components from quests now match the levels of crafted augments [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
 -   [Expert] Remove broken recipes for Iesnium Dust [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
 -   Remove unintended Osmium ore recipe from Pulverizer [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
+-   [Expert] Fixed typo in Nomadic Tent quest [\#857](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/857)
 
 ---
 

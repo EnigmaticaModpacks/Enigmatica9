@@ -2682,7 +2682,8 @@
 				"  enter and exit."
 				""
 				"● Right-Click the door from the outside "
-				"  to pack up the tent as an item."
+				"  with a mallet to pack up the tent as "
+				"  an item."
 			]
 			id: "00FB8D9041ED6D73"
 			rewards: [{
