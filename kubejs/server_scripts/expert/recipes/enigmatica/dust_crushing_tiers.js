@@ -56,8 +56,6 @@ ServerEvents.recipes((event) => {
             if (plate !== air) input_types.push('plates');
             if (gear !== air) input_types.push('gears');
 
-            console.log(plate);
-
             recipes.push({
                 input_types: input_types,
                 material: metal,
