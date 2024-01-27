@@ -70,6 +70,46 @@ JEIEvents.information((event) => {
                 /ars_elemental:fire_(hat|robes|leggings|boots)/
             ],
             text: [`Grants Spell Damage when wearing a full set.`]
+        },
+        {
+            items: ['ars_nouveau:mendosteen_pod'],
+            text: [
+                `A magical fruit once cultivated by the druids of the Wilden Grove.`,
+                ` `,
+                `May be grown like Cocoa Beans on Flourishing Archwood Logs.`
+            ]
+        },
+        {
+            items: ['ars_nouveau:frostaya_pod'],
+            text: [
+                `A magical fruit once cultivated by the druids of the Wilden Grove.`,
+                ` `,
+                `May be grown like Cocoa Beans on Cascading Archwood Logs.`
+            ]
+        },
+        {
+            items: ['ars_nouveau:bombegranate_pod'],
+            text: [
+                `A magical fruit once cultivated by the druids of the Wilden Grove.`,
+                ` `,
+                `May be grown like Cocoa Beans on Blazing Archwood Logs.`
+            ]
+        },
+        {
+            items: ['ars_nouveau:bastion_pod'],
+            text: [
+                `A magical fruit once cultivated by the druids of the Wilden Grove.`,
+                ` `,
+                `May be grown like Cocoa Beans on Vexing Archwood Logs.`
+            ]
+        },
+        {
+            items: ['ars_elemental:flashpine_pod'],
+            text: [
+                `A magical fruit once cultivated by the druids of the Wilden Grove.`,
+                ` `,
+                `May be grown like Cocoa Beans on Flashing Archwood Logs.`
+            ]
         }
     ];
 
