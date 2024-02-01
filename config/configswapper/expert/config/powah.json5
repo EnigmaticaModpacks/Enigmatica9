@@ -313,9 +313,9 @@
                 hardened: 1,
                 blazing: 1,
                 basic: 4000,
-                niotic: 40000,
-                spirited: 160000,
-                nitro: 640000
+                niotic: 16000,
+                spirited: 64000,
+                nitro: 256000
             }
         },
         hoppers: {

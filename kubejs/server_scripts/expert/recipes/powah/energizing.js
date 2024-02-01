@@ -7,25 +7,25 @@ ServerEvents.recipes((event) => {
         {
             output: '3x emendatusenigmatica:brass_ingot',
             inputs: ['#forge:dusts/aluminum', '#forge:dusts/aluminum', '#forge:dusts/copper', '#forge:essences/earth'],
-            energy: '100000',
+            energy: '50000',
             id: `${id_prefix}brass_ingot`
         },
         {
             output: '2x powah:crystal_niotic',
             inputs: ['#forge:dusts/subzero', 'quark:cyan_rune', '#forge:dusts/subzero'],
-            energy: '50000',
+            energy: '250000',
             id: `${id_prefix}crystal_niotic`
         },
         {
             output: '2x powah:crystal_spirited',
             inputs: ['#forge:dusts/sylvanite', 'quark:lime_rune', '#forge:dusts/sylvanite'],
-            energy: '800000',
+            energy: '1000000',
             id: `${id_prefix}crystal_spirited`
         },
         {
             output: '4x powah:crystal_nitro',
             inputs: ['#forge:pellets/polonium', 'quark:red_rune', '#forge:pellets/polonium'],
-            energy: '25600000',
+            energy: '4000000',
             id: `${id_prefix}crystal_nitro`
         },
         {
@@ -51,13 +51,13 @@ ServerEvents.recipes((event) => {
                 '#forge:essences/earth',
                 '#forge:essences/air'
             ],
-            energy: '200000',
+            energy: '100000',
             id: `${id_prefix}infused_diamond`
         },
         {
             output: 'powah:binding_card',
             inputs: ['powah:blank_card', '#forge:gems/carminite'],
-            energy: '12000000',
+            energy: '16000000',
             id: `${id_prefix}binding_card`
         },
         {
@@ -73,7 +73,7 @@ ServerEvents.recipes((event) => {
                 '#forge:storage_blocks/dimensional',
                 '#forge:storage_blocks/dimensional'
             ],
-            energy: '12000000',
+            energy: '4000000',
             id: `${id_prefix}infused_enderpearl`
         },
         {
@@ -84,8 +84,26 @@ ServerEvents.recipes((event) => {
                 TargetStructureTag: 'minecraft:ancient_city'
             }),
             inputs: ['the_bumblezone:honey_compass', 'minecraft:reinforced_deepslate'],
-            energy: '12000000',
+            energy: '1000000',
             id: `${id_prefix}honey_compass_ancient_city`
+        },
+        {
+            output: 'powah:charged_snowball',
+            inputs: ['minecraft:snowball'],
+            energy: '5000',
+            id: `powah:energizing/charged_snowball`
+        },
+        {
+            output: 'powah:dry_ice',
+            inputs: ['minecraft:blue_ice'],
+            energy: '5000',
+            id: `powah:energizing/dry_ice`
+        },
+        {
+            output: 'ae2:charged_certus_quartz_crystal',
+            inputs: ['ae2:certus_quartz_crystal'],
+            energy: '5000',
+            id: `powah:energizing/compat/certus_quartz_to_charged_certus_quartz`
         }
     ];
 
