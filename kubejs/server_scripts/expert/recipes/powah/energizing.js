@@ -100,10 +100,52 @@ ServerEvents.recipes((event) => {
             id: `powah:energizing/dry_ice`
         },
         {
-            output: 'ae2:charged_certus_quartz_crystal',
+            output: '1x ae2:charged_certus_quartz_crystal',
             inputs: ['ae2:certus_quartz_crystal'],
-            energy: '5000',
+            energy: '500',
             id: `powah:energizing/compat/certus_quartz_to_charged_certus_quartz`
+        },
+        {
+            output: '4x ae2:charged_certus_quartz_crystal',
+            inputs: ['ae2:quartz_block'],
+            energy: '1500',
+            id: `${id_prefix}charged_certus_quartz_crystal`
+        },
+        {
+            output: '12x kubejs:kaolin_clay',
+            inputs: ['minecraft:clay', 'minecraft:clay', 'minecraft:clay'],
+            energy: '200',
+            id: `${id_prefix}kaolin_clay`
+        },
+        {
+            output: 'naturesaura:infused_stone',
+            inputs: ['minecraft:calcite'],
+            energy: '4000',
+            id: `${id_prefix}infused_stone`
+        },
+        {
+            output: 'emendatusenigmatica:source_gem',
+            inputs: ['#forge:gems/amethyst'],
+            energy: '500',
+            id: `${id_prefix}source_gem`
+        },
+        {
+            output: 'emendatusenigmatica:source_block',
+            inputs: ['#forge:storage_blocks/amethyst'],
+            energy: '15000',
+            id: `${id_prefix}source_block`
+        },
+        {
+            output: 'emendatusenigmatica:infused_iron_block',
+            inputs: ['#forge:storage_blocks/ironwood'],
+            energy: '4000000',
+            id: `${id_prefix}infused_iron_block`
+        },
+        {
+            output: 'emendatusenigmatica:infused_iron_ingot',
+            inputs: ['#forge:ingots/ironwood'],
+            energy: '50000',
+            id: `${id_prefix}infused_iron_ingot`
         }
     ];
 

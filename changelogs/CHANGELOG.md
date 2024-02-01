@@ -16,6 +16,7 @@
 -   Golden Apples, Golden Carrots, and Glistering Melons recipe in Nature's Aura has had the time/aura cost normalized across the board. Apples and carrots now craft significantly faster while melons will be a bit slower. [\#857](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/857)
 -   [Expert] Attempt to clarify EMI description for Ars Nouveau fruit [\#857](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/857)
 -   [Expert] Rebalance Powah energizing (Resonating Crystal Ball) rates to speed up the creation of end game materials [\#859](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/859)
+-   [Expert] Adds many alternative recipes to the Resonating Crystal to reduce reliance on Tesla Coils, such as Charged Certus and Kaolin Clay [\#859](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/859)
 
 ### 🐛 Fixed Bugs
 
