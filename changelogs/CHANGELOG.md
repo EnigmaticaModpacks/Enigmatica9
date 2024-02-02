@@ -26,6 +26,7 @@
 -   Remove unintended Osmium ore recipe from Pulverizer [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
 -   [Expert] Fixed typo in Nomadic Tent quest [\#857](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/857)
 -   Hidden quests should no longer show by default when opening the quest book [\#860](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/860)
+-   [Expert] Remove unintended electrum bar recipe [\#861](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/861)
 
 ---
 

@@ -126,6 +126,7 @@ ServerEvents.recipes((event) => {
         { id: 'createaddition:compat/immersiveengineering/crushing/steel_ingot' },
         { id: 'createaddition:compat/immersiveengineering/constantan' },
         { id: 'createaddition:compat/immersiveengineering/electrum' },
+        { id: 'createaddition:mixing/electrum' },
         { id: 'createaddition:crushing/diamond' },
 
         { id: /emendatusenigmatica:plate\/from_ingot/ },
