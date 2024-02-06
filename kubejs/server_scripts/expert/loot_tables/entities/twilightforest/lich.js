@@ -4,14 +4,14 @@ ServerEvents.genericLootTables((event) => {
     }
     event.modify('twilightforest:entities/lich', (table) => {
         table.addPool((pool) => {
-            pool.rolls = 1;
+            pool.rolls = 4;
             pool.addItem(
                 Item.of(
                     'ars_nouveau:novice_spell_book',
                     '{color:12,display:{Lore:[\'{"text":"Just what sort of leather is this, anyway?","color":"dark_red"}\'],Name:\'{"text":"Tattered Spell Book","color":"dark_purple"}\'}}'
                 ),
                 1,
-                [3, 5]
+                1
             );
         });
 

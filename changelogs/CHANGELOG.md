@@ -17,6 +17,7 @@
 -   [Expert] Attempt to clarify EMI description for Ars Nouveau fruit [\#857](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/857)
 -   [Expert] Rebalance Powah energizing (Resonating Crystal Ball) rates to speed up the creation of end game materials [\#859](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/859)
 -   [Expert] Adds many alternative recipes to the Resonating Crystal to reduce reliance on Tesla Coils, such as Charged Certus and Kaolin Clay [\#859](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/859)
+-   [Expert] Adds a Chapter 2 recipe for Novice Spellbooks to allow crafting more if desired. [\#863](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/863)
 
 ### 🐛 Fixed Bugs
 
@@ -27,6 +28,8 @@
 -   [Expert] Fixed typo in Nomadic Tent quest [\#857](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/857)
 -   Hidden quests should no longer show by default when opening the quest book [\#860](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/860)
 -   [Expert] Remove unintended electrum bar recipe [\#861](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/861)
+-   [Expert] Remove extra energizing rod recipes, leaving only the cheap intended ones [\#863](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/863)
+-   [Expert] Fix the Spellbook drop from the Lich to properly drop multiple. [\#863](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/863)
 
 ---
 
