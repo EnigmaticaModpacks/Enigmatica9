@@ -118,6 +118,14 @@ ServerEvents.recipes((event) => {
             aura: 90000,
             time: 300,
             id: `${id_prefix}ore_magnet`
+        },
+        {
+            output: 'ars_nouveau:novice_spell_book',
+            input: 'minecraft:writable_book',
+            catalyst: 'kubejs:gloaming_catalyst',
+            aura: 500000,
+            time: 1800,
+            id: `${id_prefix}novice_spell_book`
         }
     ];
 
