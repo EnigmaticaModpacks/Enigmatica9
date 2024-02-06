@@ -27,6 +27,7 @@
 -   [Expert] Fixed typo in Nomadic Tent quest [\#857](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/857)
 -   Hidden quests should no longer show by default when opening the quest book [\#860](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/860)
 -   [Expert] Remove unintended electrum bar recipe [\#861](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/861)
+-   [Expert]Remove extra energizing rod recipes, leaving only the cheap intended ones [\#863](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/863)
 
 ---
 
