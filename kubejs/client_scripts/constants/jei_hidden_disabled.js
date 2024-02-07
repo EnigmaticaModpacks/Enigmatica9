@@ -626,6 +626,9 @@ jei.expert.items.disabled = [
     'rftoolsbase:information_screen',
     'rftoolsbase:crafting_card',
 
+    'simplemagnets:basicmagnet',
+    'simplemagnets:advancedmagnet',
+
     'sophisticatedbackpacks:advanced_feeding_upgrade',
     'sophisticatedbackpacks:feeding_upgrade',
     'sophisticatedbackpacks:advanced_pump_upgrade',
