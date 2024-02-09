@@ -484,6 +484,9 @@ ServerEvents.recipes((event) => {
         { id: 'sophisticatedstorage:basic_to_diamond_tier_upgrade' },
         { id: 'sophisticatedstorage:basic_to_gold_tier_upgrade' },
 
+        { id: 'simplemagnets:basicmagnet' },
+        { id: 'simplemagnets:advancedmagnet' },
+
         { id: 'simplytools:diamond_hammer_head' },
         { id: 'simplytools:diamond_hammer' },
         { id: 'simplytools:diamond_excavator_head' },
