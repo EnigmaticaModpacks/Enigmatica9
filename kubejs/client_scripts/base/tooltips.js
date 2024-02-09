@@ -197,7 +197,11 @@ ItemEvents.tooltip((event) => {
             text: [Text.of(`Arcane Apparatus: Detects Aura Levels`).green()]
         },
         {
-            items: ['naturesaura:pickup_stopper'],
+            items: [
+                'naturesaura:pickup_stopper',
+                'simplemagnets:basic_demagnetization_coil',
+                'simplemagnets:advanced_demagnetization_coil'
+            ],
             text: [Text.of(`Arcane Apparatus: Anti-Magnet`).green()]
         },
         {
