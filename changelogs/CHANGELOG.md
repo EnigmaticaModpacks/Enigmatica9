@@ -18,6 +18,7 @@
 -   [Expert] Rebalance Powah energizing (Resonating Crystal Ball) rates to speed up the creation of end game materials [\#859](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/859)
 -   [Expert] Adds many alternative recipes to the Resonating Crystal to reduce reliance on Tesla Coils, such as Charged Certus and Kaolin Clay [\#859](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/859)
 -   [Expert] Adds a Chapter 2 recipe for Novice Spellbooks to allow crafting more if desired. [\#863](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/863)
+-   Blacklist Spellbooks from being inserted into Containment Jars. [\#869](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/869)
 
 ### 🐛 Fixed Bugs
 
