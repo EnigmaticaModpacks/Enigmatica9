@@ -45,7 +45,7 @@ ServerEvents.recipes((event) => {
             gasInput: { amount: 50, gas: 'mekanism:oxygen' },
             itemInput: { ingredient: { tag: 'mekanism:alloys/reinforced' } },
             energyRequired: 1995,
-            duration: 300,
+            duration: 30,
             id: `${id_prefix}enderium`
         }
     ];
