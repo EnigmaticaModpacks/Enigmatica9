@@ -1,5 +1,11 @@
 ### Enigmatica 9 v1.19.0
 
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.19.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.19.0.md)
+
+### 🎁 New Mods Added
+
+-   [Simple Magnets](https://www.curseforge.com/minecraft/mc-mods/simple-magnets) (by [SuperMartijn642](https://www.curseforge.com/members/SuperMartijn642/projects))
+
 ### 🌟 Improvements
 
 -   [Expert] Ether Gas is now produced faster [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
