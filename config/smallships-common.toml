@@ -1,37 +1,69 @@
 # This holds the schematic version for internal purposes. DO NOT TOUCH!
-schematicVersion = 2
+schematicVersion = 4
 
 # This category holds configs that define ship behaviour.
 [Ship]
 
 	#This category holds configs that define general ship behaviour.
 	[Ship.General]
+		#The cool-down for sails when increasing or decreasing sail state.
+		#Range: 0 ~ 1000
 		shipGeneralSailCooldown = 30
+		#The damage that is delivered to entities on collision with a cruising ship. Set 0 to disable feature.
+		#Range: 0.0 ~ 100.0
 		shipGeneralCollisionDamage = 7.5
+		#Should the ship item be dropped when the ship is fully damaged?
 		shipGeneralDoItemDrop = true
+		#Should entities be pushed on collision with a cruising ship?
+		shipGeneralCollisionKnockBack = true
 
-		#General speed modifier for ships.
+		#General speed modifiers for ships.
 		[Ship.General.Modifier]
 			#Maximum speed penalty for a filled container in percent.
+			#Range: -500.0 ~ 500.0
 			shipGeneralContainerModifier = 10.0
 			#Speed bonus for a paddle ship while paddling in percent.
+			#Range: -500.0 ~ 500.0
 			shipGeneralPaddlingModifier = 35.0
+			#Speed penalty per cannon in percent.
+			#Range: -500.0 ~ 500.0
+			shipGeneralCannonModifier = 2.5
+			#Maximum speed bonus and penalty depending on the ship biome type in percent.
+			#Range: 0.0 ~ 500.0
+			shipGeneralBiomeModifier = 20.0
+			#Damage reduction per shield in percent.
+			#Range: -500.0 ~ 500.0
+			shipGeneralShieldDamageReduction = 3.0
+			#Time in minutes in which sunken ships will despawn.
+			#Range: 0.0 ~ 600.0
+			shipGeneralDespawnTimeSunken = 15.0
+			#Entities in this list won't be able to mount a ship, for example: ["minecraft:creeper", "minecraft:sheep", ...]
+			mountBlackList = ["minecraft:ender_dragon", "minecraft:wither", "minecraft:wither", "minecraft:ghast", "minecraft:warden", "minecraft:ravager", "alexmobs:cachalot_whale"]
 
 		#This category holds configs that define behaviour of fleeing water animals.
 		[Ship.General."Fleeing Water Animals"]
+			#Range: 0.0 ~ 100.0
 			waterAnimalFleeRadius = 15.0
+			#Range: 0.0 ~ 100.0
 			waterAnimalFleeSpeed = 1.5
+			#Range: 0.0 ~ 100.0
 			waterAnimalFleeDistance = 10.0
 
 	[Ship.Cog]
 
 		#Default attributes for the Cog. Speed in km/h, Health in default mc health points
 		[Ship.Cog.Attributes]
+			#Range: 1.0 ~ 1.7976931348623157E308
 			shipAttributeCogMaxHealth = 300.0
+			#Range: 0.0 ~ 1.7976931348623157E308
 			shipAttributeCogMaxSpeed = 30.0
+			#Range: 0.0 ~ 1.7976931348623157E308
 			shipAttributeCogMaxReverseSpeed = 0.1
+			#Range: 0.0 ~ 1.7976931348623157E308
 			shipAttributeCogMaxRotationSpeed = 4.5
+			#Range: 0.0 ~ 1.7976931348623157E308
 			shipAttributeCogAcceleration = 0.015
+			#Range: 0.0 ~ 1.7976931348623157E308
 			shipAttributeCogRotationAcceleration = 0.7
 
 		#Default configs for the container of the Cog.
@@ -39,20 +71,27 @@ schematicVersion = 2
 			#Set container size for the Cog (value must be divisible by 9 and bigger than 0).
 			shipContainerCogContainerSize = 108
 
-		#Cog specific speed modifier.
+		#Cog specific speed modifiers.
 		[Ship.Cog.Modifier]
-			#-1 = none, 0 = cold, 1 = neutral or 2 = warm Biomes
-			shipModifierCogBiome = 0
+			#Specify biome type for the Cog. Can be NONE, COLD, NEUTRAL, or WARM
+			#Allowed Values: NONE, COLD, NEUTRAL, WARM
+			shipModifierCogBiome = "COLD"
 
 	[Ship.Brigg]
 
 		#Default attributes for the Brigg. Speed in km/h, Health in default mc health points
 		[Ship.Brigg.Attributes]
+			#Range: 0.0 ~ 1.7976931348623157E308
 			shipAttributeBriggMaxHealth = 450.0
+			#Range: 0.0 ~ 1.7976931348623157E308
 			shipAttributeBriggMaxSpeed = 35.0
+			#Range: 0.0 ~ 1.7976931348623157E308
 			shipAttributeBriggMaxReverseSpeed = 0.1
+			#Range: 0.0 ~ 1.7976931348623157E308
 			shipAttributeBriggMaxRotationSpeed = 4.0
+			#Range: 0.0 ~ 1.7976931348623157E308
 			shipAttributeBriggAcceleration = 0.015
+			#Range: 0.0 ~ 1.7976931348623157E308
 			shipAttributeBriggRotationAcceleration = 0.55
 
 		#Default configs for the container of the Brigg.
@@ -60,20 +99,27 @@ schematicVersion = 2
 			#Set container size for the Brigg (value must be divisible by 9 and bigger than 0).
 			shipContainerBriggContainerSize = 162
 
-		#Brigg specific speed modifier.
+		#Brigg specific speed modifiers.
 		[Ship.Brigg.Modifier]
-			#-1 = none, 0 = cold, 1 = neutral or 2 = warm Biomes
-			shipModifierBriggBiome = 0
+			#Specify biome type for the Brigg. Can be NONE, COLD, NEUTRAL, or WARM
+			#Allowed Values: NONE, COLD, NEUTRAL, WARM
+			shipModifierBriggBiome = "COLD"
 
 	[Ship.Galley]
 
 		#Default attributes for the Galley. Speed in km/h, Health in default mc health points
 		[Ship.Galley.Attributes]
+			#Range: 0.0 ~ 1.7976931348623157E308
 			shipAttributeGalleyMaxHealth = 200.0
+			#Range: 0.0 ~ 1.7976931348623157E308
 			shipAttributeGalleyMaxSpeed = 30.0
+			#Range: 0.0 ~ 1.7976931348623157E308
 			shipAttributeGalleyMaxReverseSpeed = 0.1
+			#Range: 0.0 ~ 1.7976931348623157E308
 			shipAttributeGalleyMaxRotationSpeed = 5.0
+			#Range: 0.0 ~ 1.7976931348623157E308
 			shipAttributeGalleyAcceleration = 0.015
+			#Range: 0.0 ~ 1.7976931348623157E308
 			shipAttributeGalleyRotationAcceleration = 1.0
 
 		#Default configs for the container of the Galley.
@@ -81,8 +127,37 @@ schematicVersion = 2
 			#Set container size for the Galley (value must be divisible by 9 and bigger than 0).
 			shipContainerGalleyContainerSize = 54
 
-		#Galley specific speed modifier.
+		#Galley specific speed modifiers.
 		[Ship.Galley.Modifier]
-			#-1 = none, 0 = cold, 1 = neutral or 2 = warm Biomes
-			shipModifierGalleyBiome = 2
+			#Specify biome type for the Galley. Can be NONE, COLD, NEUTRAL, or WARM
+			#Allowed Values: NONE, COLD, NEUTRAL, WARM
+			shipModifierGalleyBiome = "WARM"
+
+	[Ship.Drakkar]
+
+		#Default attributes for the Drakkar. Speed in km/h, Health in default mc health points
+		[Ship.Drakkar.Attributes]
+			#Range: 0.0 ~ 1.7976931348623157E308
+			shipAttributeDrakkarMaxHealth = 200.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			shipAttributeDrakkarMaxSpeed = 30.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			shipAttributeDrakkarMaxReverseSpeed = 0.1
+			#Range: 0.0 ~ 1.7976931348623157E308
+			shipAttributeDrakkarMaxRotationSpeed = 5.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			shipAttributeDrakkarAcceleration = 0.015
+			#Range: 0.0 ~ 1.7976931348623157E308
+			shipAttributeDrakkarRotationAcceleration = 1.0
+
+		#Default configs for the container of the Drakkar.
+		[Ship.Drakkar.Container]
+			#Set container size for the Drakkar (value must be divisible by 9 and bigger than 0).
+			shipContainerDrakkarContainerSize = 54
+
+		#Drakkar specific speed modifiers.
+		[Ship.Drakkar.Modifier]
+			#Specify biome type for the Drakkar. Can be NONE, COLD, NEUTRAL, or WARM
+			#Allowed Values: NONE, COLD, NEUTRAL, WARM
+			shipModifierDrakkarBiome = "COLD"
 

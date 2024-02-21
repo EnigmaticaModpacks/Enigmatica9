@@ -36,9 +36,6 @@ refresh_dimensions = []
 refresh_modids = []
 #determine whether or not loot generated is the same for all players using the provided seed, or randomised per player
 randomise_seed = true
-#the maximum age for containers; entries above this age will be discarded [default: 180 * 20, 3 minutes]
-#Range: > 0
-maximum_age = 3600
 #whether or not quark chests used in world generation for loot purposes should be replaced with Lootr chests
 convert_quark = true
 #how long (in ticks) a decaying loot containers should take to decay (default 5 minutes = 5 * 60 * 20)
@@ -74,4 +71,17 @@ refresh_value = 24000
 check_world_border = false
 #list of structures in which loot chests should automatically refresh (in the format of ["modid:structure_name", "othermodid:other_structure_name"])
 refresh_structures = []
+#the maximum age for containers; entries above this age will be discarded [default: 180 * 20, 3 minutes]
+#Range: > 0
+max_age = 6000
+#if true, no chests will be converted
+disable = false
+#list of dimensions by modid that loot chests should not be replaced in (default: blank, allowing all modids, format e.g., ["minecraft
+#othermod"])
+modid_dimension_blacklist = []
+#list of dimensions by modid that loot chest should be replaced in (default: blank, allowing all modids, format e.g., ["minecraft
+#othermod"])
+modid_dimension_whitelist = []
+#when true, custom inventories will act like trapped chests when opened
+trapped_custom = false
 

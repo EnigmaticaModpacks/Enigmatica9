@@ -3,6 +3,8 @@ schematicVersion = 1
 
 # This category holds configs that define ship behaviour.
 [Ship]
+	#Set the speed indication: 0 = km/h, 1 = m/s, 2 = knots, 3 = mph
+	shipModSpeedUnit = 0
 
 	#This category holds configs that define general ship behaviour.
 	[Ship.General]
@@ -17,8 +19,10 @@ schematicVersion = 1
 				#Generally enable the zooming feature.
 				shipGeneralCameraZoomEnable = true
 				#Set maximum distance of zoom (value must be smaller than or equal to 50.0).
+				#Range: 1.0 ~ 50.0
 				shipGeneralCameraZoomMax = 20.0
 				#Set minimum distance of zoom (value must be bigger than or equal to 1.0).
+				#Range: 1.0 ~ 50.0
 				shipGeneralCameraZoomMin = 5.0
 
 # This category holds configs that define general mod settings.
