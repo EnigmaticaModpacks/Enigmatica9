@@ -1,3 +1,4 @@
 {
-	"system.the_bumblezone.require_hive_blocks_failed": "Bumblezone teleport failed. Hive needs a required block below it."
+	"system.the_bumblezone.require_hive_blocks_failed": "Bumblezone teleport failed. Hive needs a required block below it.",
+	"item.the_bumblezone.honey_compass_structure_failed": "Honey Compass - Structure locating failed..."
 }
