@@ -162,6 +162,13 @@
 									Count: 1b
 									id: "create:sail_frame"
 								}
+								{
+									Count: 1b
+									id: "itemfilters:tag"
+									tag: {
+										value: "forge:wool"
+									}
+								}
 							]
 						}
 					}
