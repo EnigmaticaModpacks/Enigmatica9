@@ -1,3 +1,18 @@
+### Enigmatica 9 v1.19.1
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.19.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.19.1.md)
+
+### 🌟 Improvements
+
+-   Remove Entangled restrictions on AE2 [\#877](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/877)
+
+### 🐛 Fixed Bugs
+
+-   [Expert] Remove reference to wool in Create Windmill quest [\#874](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/874)
+-   Fix teleportation between dimensions not working
+
+---
+
 ### Enigmatica 9 v1.19.0
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.19.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.19.0.md)
