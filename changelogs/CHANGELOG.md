@@ -6,7 +6,8 @@
 
 ### 🐛 Fixed Bugs
 
--   [Expert] properly hide disabled limited barrels [\#878](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/878)
+-   [Expert] Properly hide disabled limited barrels [\#878](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/878)
+-   [Expert] Removed disabled tank from IE quest chapters [\#879](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/879)
 
 ---
 

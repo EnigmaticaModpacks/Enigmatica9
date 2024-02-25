@@ -716,7 +716,7 @@
 					id: "2ED8178439A16546"
 					item: {
 						Count: 1b
-						id: "mekanism:advanced_fluid_tank"
+						id: "mekanism:basic_fluid_tank"
 						tag: {
 							mekData: {
 								FluidTanks: [{
