@@ -87,12 +87,22 @@ ServerEvents.recipes((event) => {
             id: 'sophisticatedstorage:stack_upgrade_tier_1'
         },
         {
+            output: 'sophisticatedstorage:stack_upgrade_tier_1_plus',
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: '#forge:ingots/copper',
+                B: 'ars_nouveau:repository',
+                C: 'sophisticatedstorage:stack_upgrade_tier_1'
+            },
+            id: 'sophisticatedstorage:stack_upgrade_tier_1_plus'
+        },
+        {
             output: 'sophisticatedstorage:stack_upgrade_tier_2',
             pattern: ['AAA', 'BCB', 'AAA'],
             key: {
                 A: '#forge:plates/tin',
                 B: 'ars_nouveau:repository',
-                C: 'sophisticatedstorage:stack_upgrade_tier_1'
+                C: 'sophisticatedstorage:stack_upgrade_tier_1_plus'
             },
             id: 'sophisticatedstorage:stack_upgrade_tier_2'
         },

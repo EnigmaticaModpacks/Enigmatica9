@@ -497,6 +497,8 @@ ServerEvents.recipes((event) => {
         { id: 'sophisticatedstorage:storage_link_from_controller' },
         { id: 'sophisticatedstorage:gold_to_diamond_tier_upgrade' },
         { id: 'sophisticatedstorage:stack_upgrade_tier_4' },
+        { id: 'sophisticatedstorage:stack_upgrade_tier_1_plus' },
+        { id: 'sophisticatedstorage:stack_upgrade_tier_2_from_tier_1_plus' },
 
         { id: 'spirit:soul_engulfing/soul_powder' },
         { id: 'spirit:soul_engulfing/soul_powder_block' },
