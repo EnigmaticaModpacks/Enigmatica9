@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: '#forge:storage_blocks/aluminum',
-                B: 'sophisticatedbackpacks:upgrade_base'
+                B: 'sophisticatedbackpacks:stack_upgrade_starter_tier'
             },
             id: 'sophisticatedbackpacks:stack_upgrade_tier_1'
         },

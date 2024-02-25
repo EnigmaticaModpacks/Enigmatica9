@@ -476,14 +476,6 @@ ServerEvents.recipes((event) => {
         { id: 'rftoolsbase:infused_diamond' },
         { id: 'rftoolsbase:infused_enderpearl' },
 
-        { id: 'sophisticatedbackpacks:battery_upgrade' },
-        { id: 'sophisticatedstorage:gold_to_netherite_tier_upgrade' },
-        { id: 'sophisticatedstorage:iron_to_netherite_tier_upgrade' },
-        { id: 'sophisticatedstorage:iron_to_diamond_tier_upgrade' },
-        { id: 'sophisticatedstorage:basic_to_netherite_tier_upgrade' },
-        { id: 'sophisticatedstorage:basic_to_diamond_tier_upgrade' },
-        { id: 'sophisticatedstorage:basic_to_gold_tier_upgrade' },
-
         { id: 'simplemagnets:basicmagnet' },
         { id: 'simplemagnets:advancedmagnet' },
 
@@ -492,6 +484,9 @@ ServerEvents.recipes((event) => {
         { id: 'simplytools:diamond_excavator_head' },
         { id: 'simplytools:diamond_excavator' },
 
+        { id: 'sophisticatedbackpacks:battery_upgrade' },
+        { id: 'sophisticatedbackpacks:stack_upgrade_tier_1_from_starter' },
+
         { id: /sophisticatedstorage:limited_/ },
         { id: /sophisticatedstorage:tier_upgrade_/ },
         { id: 'sophisticatedstorage:storage_link_from_controller' },
@@ -499,6 +494,12 @@ ServerEvents.recipes((event) => {
         { id: 'sophisticatedstorage:stack_upgrade_tier_4' },
         { id: 'sophisticatedstorage:stack_upgrade_tier_1_plus' },
         { id: 'sophisticatedstorage:stack_upgrade_tier_2_from_tier_1_plus' },
+        { id: 'sophisticatedstorage:gold_to_netherite_tier_upgrade' },
+        { id: 'sophisticatedstorage:iron_to_netherite_tier_upgrade' },
+        { id: 'sophisticatedstorage:iron_to_diamond_tier_upgrade' },
+        { id: 'sophisticatedstorage:basic_to_netherite_tier_upgrade' },
+        { id: 'sophisticatedstorage:basic_to_diamond_tier_upgrade' },
+        { id: 'sophisticatedstorage:basic_to_gold_tier_upgrade' },
 
         { id: 'spirit:soul_engulfing/soul_powder' },
         { id: 'spirit:soul_engulfing/soul_powder_block' },
