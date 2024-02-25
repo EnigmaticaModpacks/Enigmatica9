@@ -2,9 +2,11 @@
 
 ### 🌟 Improvements
 
+-   [Expert] Adjust sophisticated storage stack upgrade recipes to account for new copper tier [\#878](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/878)
+
 ### 🐛 Fixed Bugs
 
--   [Expert] properly hide disabled limited barrels [\#874](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/874)
+-   [Expert] properly hide disabled limited barrels [\#878](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/878)
 
 ---
 
