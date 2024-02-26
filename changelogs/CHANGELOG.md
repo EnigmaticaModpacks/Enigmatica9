@@ -3,7 +3,7 @@
 ### 🌟 Improvements
 
 -   [Expert] Adjust sophisticated storage stack upgrade recipes to account for new copper tier [\#878](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/878)
--   [Expert] Market recipe now uses all 5 archwood saplings to help avoid confusion with the recipe [\#890](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/890)
+-   [Expert] Market recipe now uses all 5 archwood saplings to help avoid confusion with the recipe [\#881](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/881)
 
 ### 🐛 Fixed Bugs
 
