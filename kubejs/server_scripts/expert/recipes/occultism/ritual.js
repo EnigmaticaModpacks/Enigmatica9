@@ -1429,18 +1429,18 @@ ServerEvents.recipes((event) => {
             inputs: [
                 'hexerei:mindful_trance_blend',
                 'naturesaura:gold_leaf',
-                'naturesaura:gold_leaf',
+                'ars_nouveau:purple_archwood_sapling',
                 'naturesaura:gold_leaf',
 
-                'ars_elemental:yellow_archwood',
-                'ars_nouveau:green_archwood_wood',
-                'ars_nouveau:blue_archwood_wood',
-                'ars_nouveau:red_archwood_wood',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'ars_nouveau:blue_archwood_sapling',
+                'ars_elemental:yellow_archwood_sapling',
 
-                'ars_elemental:yellow_archwood',
-                'ars_nouveau:green_archwood_wood',
-                'ars_nouveau:blue_archwood_wood',
-                'ars_nouveau:red_archwood_wood'
+                'naturesaura:gold_leaf',
+                'ars_nouveau:green_archwood_sapling',
+                'ars_nouveau:red_archwood_sapling',
+                'naturesaura:gold_leaf'
             ],
             ritual_dummy: 'kubejs:ritual_craft_market',
             ritual_type: 'occultism:craft',
