@@ -998,15 +998,11 @@
 							CustomName: "tooltip.the_bumblezone.honey_compass_ancient_city"
 							Locked: 1.0d
 							TargetDimension: "minecraft:overworld"
-							TargetPos: {
-								X: -960
-								Y: 0
-								Z: 992
-							}
 						}
 					}
 					match_nbt: true
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "7BB480DE9B7AA92F"
