@@ -58,7 +58,7 @@ ServerEvents.recipes((event) => {
             .custom({
                 type: 'ars_nouveau:enchanting_apparatus',
                 output: { item: recipe.output },
-                pedestalItems: [{ item: { item: 'kubejs:altered_recipe_indicator' } }],
+                pedestalItems: [{ item: 'kubejs:altered_recipe_indicator' }],
                 reagent: [{ item: 'kubejs:altered_recipe_indicator' }],
                 sourceCost: 0
             })

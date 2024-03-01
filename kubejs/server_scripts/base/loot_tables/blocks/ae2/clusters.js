@@ -45,7 +45,7 @@ ServerEvents.blockLootTables((event) => {
                     children: [
                         {
                             type: 'minecraft:item',
-                            name: `byg:${size}_quartz_bud`,
+                            name: `ae2:${size}_quartz_bud`,
                             conditions: [
                                 {
                                     condition: 'minecraft:match_tool',
