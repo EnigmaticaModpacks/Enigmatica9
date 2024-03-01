@@ -4,6 +4,7 @@
 
 -   [Expert] Adjust sophisticated storage stack upgrade recipes to account for new copper tier [\#878](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/878)
 -   [Expert] Market recipe now uses all 5 archwood saplings to help avoid confusion with the recipe [\#881](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/881)
+-   [Expert] Reduce mining level of Redstone to make the early game a little less confusing [\#888](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/888)
 
 ### 🐛 Fixed Bugs
 
