@@ -2695,7 +2695,7 @@
 						Damage: 0
 						Enchantments: [{
 							id: "minecraft:unbreaking"
-							lvl: 5s
+							lvl: 3s
 						}]
 						display: {
 							Name: "{\"text\":\"Sturdy Tent Mallet\"}"
