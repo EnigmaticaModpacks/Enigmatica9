@@ -2693,6 +2693,18 @@
 					id: "nomadictents:mallet"
 					tag: {
 						Damage: 0
+						Enchantments: [{
+							id: "minecraft:unbreaking"
+							lvl: 5s
+						}]
+						display: {
+							Name: "{\"text\":\"Sturdy Tent Mallet\"}"
+						}
+						"quark:RuneAttached": 1b
+						"quark:RuneColor": {
+							Count: 1b
+							id: "quark:blank_rune"
+						}
 					}
 				}
 				type: "item"
