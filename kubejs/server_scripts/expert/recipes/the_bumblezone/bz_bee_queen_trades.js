@@ -166,7 +166,7 @@ ServerEvents.lowPriorityData((event) => {
             ]
         },
         {
-            id: 'dream_stone_trades',
+            id: 'dimensionsal_storage_trades',
             wants: [{ id: 'kubejs:dimensional_storage_crystal', required: true }],
             possible_rewards: [
                 {
