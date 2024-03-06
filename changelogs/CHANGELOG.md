@@ -12,6 +12,7 @@
 -   [Expert] Removed disabled tank from IE quest chapters [\#879](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/879)
 -   [Expert] Fix for the honey compass quest for the Ancient City not completing [\#884](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/884)
 -   [Expert] Remove erroneous reference to hoes being used to clear grass [\#888](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/888)
+-   [Expert] Restore missing Dreamstone trade with the Queen Bee [\#888](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/888)
 
 ---
 
