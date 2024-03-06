@@ -4,12 +4,15 @@
 
 -   [Expert] Adjust sophisticated storage stack upgrade recipes to account for new copper tier [\#878](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/878)
 -   [Expert] Market recipe now uses all 5 archwood saplings to help avoid confusion with the recipe [\#881](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/881)
+-   [Expert] Reduce mining level of Redstone to make the early game a little less confusing [\#888](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/888)
 
 ### 🐛 Fixed Bugs
 
 -   [Expert] Properly hide disabled limited barrels [\#878](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/878)
 -   [Expert] Removed disabled tank from IE quest chapters [\#879](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/879)
 -   [Expert] Fix for the honey compass quest for the Ancient City not completing [\#884](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/884)
+-   [Expert] Remove erroneous reference to hoes being used to clear grass [\#888](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/888)
+-   [Expert] Restore missing Dreamstone trade with the Queen Bee [\#888](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/888)
 
 ---
 
