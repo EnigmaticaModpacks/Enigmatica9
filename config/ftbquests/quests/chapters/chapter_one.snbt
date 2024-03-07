@@ -1653,7 +1653,7 @@
 				id: "3BFD0AAF1A00BC7C"
 				observe_type: 6
 				timer: 0L
-				title: "Observe Occultism Familiar"
+				title: "Observe an Occultism Familiar"
 				to_observe: "#occultism:familiars"
 				type: "observation"
 			}]
