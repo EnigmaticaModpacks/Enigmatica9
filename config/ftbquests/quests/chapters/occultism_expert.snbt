@@ -1029,10 +1029,13 @@
 				type: "command"
 			}]
 			tasks: [{
-				advancement: "occultism:occultism/familiar/root"
-				criterion: ""
-				id: "5F5C381C9D83480E"
-				type: "advancement"
+				icon: "occultism:ritual_dummy/custom_ritual"
+				id: "4FF02C15A8C5ABE6"
+				observe_type: 6
+				timer: 0L
+				title: "Observe an Occultism Familiar"
+				to_observe: "#occultism:familiars"
+				type: "observation"
 			}]
 			title: "Familiars"
 			x: 18.0d
