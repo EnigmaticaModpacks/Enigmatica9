@@ -1649,10 +1649,13 @@
 			]
 			shape: "hexagon"
 			tasks: [{
-				advancement: "occultism:occultism/familiar/root"
-				criterion: ""
-				id: "44087E084C0010C4"
-				type: "advancement"
+				icon: "occultism:ritual_dummy/custom_ritual"
+				id: "3BFD0AAF1A00BC7C"
+				observe_type: 6
+				timer: 0L
+				title: "Observe Occultism Familiar"
+				to_observe: "#occultism:familiars"
+				type: "observation"
 			}]
 			title: "Combat Assistance - Familiars"
 			x: 1.0d
