@@ -14,6 +14,7 @@
 -   [Expert] Remove erroneous reference to hoes being used to clear grass [\#888](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/888)
 -   [Expert] Restore missing Dreamstone trade with the Queen Bee [\#888](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/888)
 -   Occultism Familiars quest now relies on seeing a familiar instead of getting the advancement [\#892](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/892)
+-   Fix Certus Quartz not behaving with annihilation planes [\#887](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/887)
 
 ---
 
