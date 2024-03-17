@@ -486,6 +486,7 @@ ServerEvents.recipes((event) => {
 
         { id: 'sophisticatedbackpacks:battery_upgrade' },
         { id: 'sophisticatedbackpacks:stack_upgrade_tier_1_from_starter' },
+        { id: 'sophisticatedbackpacks:iron_backpack_from_copper' },
 
         { id: /sophisticatedstorage:limited_/ },
         { id: /sophisticatedstorage:tier_upgrade_/ },

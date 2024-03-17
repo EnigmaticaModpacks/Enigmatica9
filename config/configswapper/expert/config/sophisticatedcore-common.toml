@@ -4,7 +4,7 @@
 	#Disable / enable any items here (disables their recipes)
 	enabledItems = [
 		"sophisticatedbackpacks:anvil_upgrade|true",
-		"sophisticatedbackpacks:battery_upgrade|true",
+		"sophisticatedbackpacks:battery_upgrade|false",
 		"sophisticatedbackpacks:compacting_upgrade|true",
 		"sophisticatedbackpacks:advanced_compacting_upgrade|true",
 		"sophisticatedbackpacks:crafting_upgrade|true",
