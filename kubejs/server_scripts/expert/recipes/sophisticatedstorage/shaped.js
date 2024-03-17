@@ -50,7 +50,7 @@ ServerEvents.recipes((event) => {
             output: 'sophisticatedstorage:basic_to_copper_tier_upgrade',
             pattern: ['AAA', 'BCB', 'AAA'],
             key: {
-                A: '#forge:plates/copper',
+                A: '#forge:ingots/copper',
                 B: 'ars_nouveau:repository',
                 C: 'sophisticatedstorage:upgrade_base'
             },

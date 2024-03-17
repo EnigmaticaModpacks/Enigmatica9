@@ -16,6 +16,7 @@
 -   Occultism Familiars quest now relies on seeing a familiar instead of getting the advancement [\#892](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/892)
 -   Fix Certus Quartz not behaving with annihilation planes [\#887](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/887)
 -   Blacklisted the Quest Ram from Create Seats to avoid a dupe bug [\#896](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/896)
+-   [Expert] properly hide/disable unwanted sophisticated crafts [\#898](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/898)
 
 ---
 
