@@ -5,6 +5,8 @@
 -   [Expert] Adjust sophisticated storage stack upgrade recipes to account for new copper tier [\#878](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/878)
 -   [Expert] Market recipe now uses all 5 archwood saplings to help avoid confusion with the recipe [\#881](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/881)
 -   [Expert] Reduce mining level of Redstone to make the early game a little less confusing [\#888](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/888)
+-   [Expert] The Tree of Life no longer grows with Pedestals inside, which often mess up item placement. Existing ToLs will work with pedestals but newly built/upgraded ones will generate with Liveroot blocks in their place instead. [\#899](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/899)
+-   [Expert] Custom Pentacles will now display with the standard checkerboard floor instead of all black. [\#899](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/899)
 
 ### 🐛 Fixed Bugs
 
