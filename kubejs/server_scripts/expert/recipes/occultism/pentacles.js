@@ -173,7 +173,11 @@ ServerEvents.highPriorityData((event) => {
                 W: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_white' },
                 G: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_gold' },
                 P: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_purple' },
-                S: { type: 'modonomicon:block', block: 'supplementaries:pedestal' },
+                S: {
+                    type: 'modonomicon:tag',
+                    display: 'twilightforest:liveroot_block',
+                    tag: '#enigmatica:tree_of_life_pillar'
+                },
                 B: { type: 'modonomicon:block', block: 'occultism:sacrificial_bowl' },
                 A: { type: 'modonomicon:tag', tag: 'enigmatica:heartwoods/stage_1' }
             },
@@ -253,7 +257,11 @@ ServerEvents.highPriorityData((event) => {
                 W: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_white' },
                 G: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_gold' },
                 P: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_purple' },
-                S: { type: 'modonomicon:block', block: 'supplementaries:pedestal' },
+                S: {
+                    type: 'modonomicon:tag',
+                    display: 'twilightforest:liveroot_block',
+                    tag: '#enigmatica:tree_of_life_pillar'
+                },
                 B: { type: 'modonomicon:block', block: 'occultism:sacrificial_bowl' },
                 A: { type: 'modonomicon:tag', tag: 'enigmatica:heartwoods/stage_2' }
             },
@@ -333,7 +341,11 @@ ServerEvents.highPriorityData((event) => {
                 W: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_white' },
                 G: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_gold' },
                 P: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_purple' },
-                S: { type: 'modonomicon:block', block: 'supplementaries:pedestal' },
+                S: {
+                    type: 'modonomicon:tag',
+                    display: 'twilightforest:liveroot_block',
+                    tag: '#enigmatica:tree_of_life_pillar'
+                },
                 B: { type: 'modonomicon:block', block: 'occultism:sacrificial_bowl' },
                 A: { type: 'modonomicon:tag', tag: 'enigmatica:heartwoods/stage_3' }
             },
@@ -413,7 +425,11 @@ ServerEvents.highPriorityData((event) => {
                 W: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_white' },
                 G: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_gold' },
                 P: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_purple' },
-                S: { type: 'modonomicon:block', block: 'supplementaries:pedestal' },
+                S: {
+                    type: 'modonomicon:tag',
+                    display: 'twilightforest:liveroot_block',
+                    tag: '#enigmatica:tree_of_life_pillar'
+                },
                 B: { type: 'modonomicon:block', block: 'occultism:sacrificial_bowl' },
                 A: { type: 'modonomicon:tag', tag: 'enigmatica:heartwoods/stage_4' }
             },
@@ -488,10 +504,22 @@ ServerEvents.highPriorityData((event) => {
     pentacles.forEach((pentacle) => {
         pentacle.type = 'modonomicon:dense';
 
-        // Set background display. Same size as pentacle, every block is otherstone.
-        // 9 is used as the key in following Occultism's convention.
-        pentacle.pattern.push(pentacle.pattern[0].map((pattern) => pattern.replace(/./g, '9')));
-        pentacle.mapping['9'] = { type: 'modonomicon:display', display: 'occultism:otherstone' };
+        // Set background display. Same size as pentacle, blocks alternate between otherstone and andesite.
+        // * and + are used as the keys following Occultism's convention.
+        let ground = [];
+        let pattern = pentacle.pattern[0];
+
+        for (let i = 0; i < pattern.length; i++) {
+            let row = '';
+            for (let j = 0; j < pattern[i].length; j++) {
+                row += (i + j) % 2 == 0 ? '*' : '+';
+            }
+            ground.push(row);
+        }
+
+        pentacle.pattern.push(ground);
+        pentacle.mapping['*'] = { type: 'modonomicon:display', display: 'occultism:otherstone' };
+        pentacle.mapping['+'] = { type: 'modonomicon:display', display: 'minecraft:stone' };
 
         event.addJson(`occultism:modonomicon/multiblocks/${pentacle.name}.json`, pentacle);
 
@@ -503,3 +531,17 @@ ServerEvents.highPriorityData((event) => {
         );
     });
 });
+
+// JsonArray ground = new JsonArray();
+// for(int i = 0; i < pattern.size(); i++){
+//     var row = "";
+//     for(int j = 0; j < pattern.get(i).length(); j++){
+//         //create a checkerbord, alternatively adding "*" and "+" to the row
+//         if((i + j) % 2 == 0)
+//             row += "*";
+//         else
+//             row += "+";
+//     }
+//     ground.add(row);
+// }
+// outerPattern.add(ground);
