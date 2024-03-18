@@ -531,17 +531,3 @@ ServerEvents.highPriorityData((event) => {
         );
     });
 });
-
-// JsonArray ground = new JsonArray();
-// for(int i = 0; i < pattern.size(); i++){
-//     var row = "";
-//     for(int j = 0; j < pattern.get(i).length(); j++){
-//         //create a checkerbord, alternatively adding "*" and "+" to the row
-//         if((i + j) % 2 == 0)
-//             row += "*";
-//         else
-//             row += "+";
-//     }
-//     ground.add(row);
-// }
-// outerPattern.add(ground);
