@@ -8,6 +8,7 @@
 -   [Expert] The Tree of Life no longer grows with Pedestals inside, which often mess up item placement. Existing ToLs will work with pedestals but newly built/upgraded ones will generate with Liveroot blocks in their place instead. [\#899](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/899)
 -   [Expert] Custom Pentacles will now display with the standard checkerboard floor instead of all black. [\#899](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/899)
 -   [Expert] Gythia's and Birog's pentacles will now cycle through candles to show they'll accept any candle. [\#901](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/901)
+-   [Expert] Omni Hoppers can now be crafted earlier. [\#902](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/902)
 
 ### 🐛 Fixed Bugs
 
