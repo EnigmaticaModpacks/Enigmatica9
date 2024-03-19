@@ -1,5 +1,7 @@
 ### Enigmatica 9 v1.20.0
 
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.20.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.20.0.md)
+
 ### 🌟 Improvements
 
 -   [Expert] Adjust sophisticated storage stack upgrade recipes to account for new copper tier [\#878](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/878)
