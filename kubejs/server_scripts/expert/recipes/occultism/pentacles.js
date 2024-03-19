@@ -59,7 +59,7 @@ ServerEvents.highPriorityData((event) => {
                 P: { type: 'modonomicon:block', block: 'naturesaura:gold_powder' },
                 W: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_white' },
                 G: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_gold' },
-                C: { type: 'modonomicon:tag', display: 'occultism:candle_white', tag: '#minecraft:candles' }
+                C: { type: 'modonomicon:tag', tag: '#minecraft:candles' }
             },
             pattern: [
                 [
@@ -93,7 +93,7 @@ ServerEvents.highPriorityData((event) => {
                 0: { type: 'modonomicon:block', block: 'occultism:golden_sacrificial_bowl' },
                 P: { type: 'modonomicon:block', block: 'naturesaura:gold_powder' },
                 W: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_white' },
-                C: { type: 'modonomicon:tag', display: 'occultism:candle_white', tag: '#minecraft:candles' }
+                C: { type: 'modonomicon:tag', tag: '#minecraft:candles' }
             },
             pattern: [
                 [
