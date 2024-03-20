@@ -1,10 +1,14 @@
-### Enigmatica 9 v1.20.0
+### Enigmatica 9 v1.21.0
 
 ### 🌟 Improvements
 
 -   [Expert] Adjusted Integral Components recipes to make automating them somewhat easier [\#904](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/904)
 -   Add more fun uses for Ars charms [\#904](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/904)
 -   Cicadas, Fireflies, and Backpacks will no longer generate with Apotheosis Affixes [\#904](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/904)
+
+### 🐛 Fixed Bugs
+
+-   [Expert] Ars Nouveau quests no longer accept disabled source links [\#905](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/905)
 
 ### Enigmatica 9 v1.20.1
 

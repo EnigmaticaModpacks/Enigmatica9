@@ -127,23 +127,7 @@
 						items: [
 							{
 								Count: 1b
-								id: "ars_nouveau:agronomic_sourcelink"
-							}
-							{
-								Count: 1b
-								id: "ars_nouveau:volcanic_sourcelink"
-							}
-							{
-								Count: 1b
 								id: "ars_nouveau:alchemical_sourcelink"
-							}
-							{
-								Count: 1b
-								id: "ars_nouveau:vitalic_sourcelink"
-							}
-							{
-								Count: 1b
-								id: "ars_nouveau:mycelial_sourcelink"
 							}
 							{
 								Count: 1b
