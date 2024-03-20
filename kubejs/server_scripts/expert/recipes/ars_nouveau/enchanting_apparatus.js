@@ -393,50 +393,42 @@ ServerEvents.recipes((event) => {
         {
             output: 'thermal:upgrade_augment_1',
             inputs: [
+                '#industrialforegoing:machine_frame/simple',
                 'ae2:spatial_cell_component_2',
                 '#forge:gears/compressed_iron',
-                'immersiveengineering:component_electronic',
+                'immersiveengineering:electron_tube',
                 '#forge:gears/compressed_iron',
-                'ae2:spatial_cell_component_2',
-                '#forge:gears/compressed_iron',
-                'immersiveengineering:component_electronic',
-                '#forge:gears/compressed_iron'
+                'ae2:spatial_cell_component_2'
             ],
-            reagents: ['#industrialforegoing:machine_frame/simple'],
+            reagents: ['immersiveengineering:component_electronic'],
             sourceCost: 1000,
             id: `${id_prefix}upgrade_augment_1`
         },
         {
             output: Item.of('thermal:upgrade_augment_2', '{AugmentData:{BaseMod:4,Type:"Upgrade"}}'),
             inputs: [
-                'thermal:upgrade_augment_1',
+                '#industrialforegoing:machine_frame/advanced',
                 'ae2:spatial_cell_component_2',
                 '#forge:gears/diamond',
                 'pneumaticcraft:printed_circuit_board',
                 '#forge:gears/diamond',
-                'ae2:spatial_cell_component_2',
-                '#forge:gears/diamond',
-                'pneumaticcraft:printed_circuit_board',
-                '#forge:gears/diamond'
+                'ae2:spatial_cell_component_2'
             ],
-            reagents: ['#industrialforegoing:machine_frame/advanced'],
+            reagents: ['thermal:upgrade_augment_1'],
             sourceCost: 5000,
             id: `${id_prefix}upgrade_augment_2`
         },
         {
             output: Item.of('thermal:upgrade_augment_3', '{AugmentData:{BaseMod:8,Type:"Upgrade"}}'),
             inputs: [
-                'thermal:upgrade_augment_2',
+                '#industrialforegoing:machine_frame/supreme',
                 'ae2:spatial_cell_component_2',
                 '#forge:gears/netherite',
                 'pneumaticcraft:printed_circuit_board',
                 '#forge:gears/netherite',
-                'ae2:spatial_cell_component_2',
-                '#forge:gears/netherite',
-                'pneumaticcraft:printed_circuit_board',
-                '#forge:gears/netherite'
+                'ae2:spatial_cell_component_2'
             ],
-            reagents: ['#industrialforegoing:machine_frame/supreme'],
+            reagents: ['thermal:upgrade_augment_2'],
             sourceCost: 10000,
             id: `${id_prefix}upgrade_augment_3`
         },
