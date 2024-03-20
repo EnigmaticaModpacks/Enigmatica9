@@ -1,3 +1,9 @@
+### Enigmatica 9 v1.20.0
+
+### 🌟 Improvements
+
+-   [Expert] Adjusted Integral Components recipes to make automating them somewhat easier [\#905](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/905)
+
 ### Enigmatica 9 v1.20.1
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.20.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.20.1.md)
