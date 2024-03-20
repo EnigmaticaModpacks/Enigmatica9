@@ -3,6 +3,7 @@
 ### 🌟 Improvements
 
 -   [Expert] Adjusted Integral Components recipes to make automating them somewhat easier [\#904](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/904)
+-   Add more fun uses for Ars charms [\#904](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/904)
 
 ### Enigmatica 9 v1.20.1
 
