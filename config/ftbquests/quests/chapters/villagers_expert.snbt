@@ -293,7 +293,7 @@
 		}
 		{
 			dependencies: ["7A341C5D96C4A809"]
-			description: ["Pressure Mechanics sell a wide variety of Pneumatic devices, specialized ammo for Miniguns, and even circuit boards. "]
+			description: ["Magitek Researchers trade in a wide variety of magitek devices, such as Logistics Cores, Fluix Crystals, and Energy Cells."]
 			id: "18A0D921EEF7FE7F"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
@@ -307,7 +307,7 @@
 				item: "pneumaticcraft:charging_station"
 				type: "item"
 			}]
-			title: "Pressure Mechanic"
+			title: "Magitek Researcher"
 			x: -2.5d
 			y: 0.5d
 		}
