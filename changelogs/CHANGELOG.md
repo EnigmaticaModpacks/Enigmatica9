@@ -6,6 +6,7 @@
 -   Add more fun uses for Ars charms [\#904](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/904)
 -   Cicadas, Fireflies, and Backpacks will no longer generate with Apotheosis Affixes [\#904](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/904)
 -   Adds several community suggested Caster Tomes to loot! [\#906](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/906)
+-   [Expert] Teleportation rituals now inform the player why they failed if executed in the wrong dimension [\#912](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/912)
 
 ### 🐛 Fixed Bugs
 
