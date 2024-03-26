@@ -10,6 +10,7 @@
 ### 🐛 Fixed Bugs
 
 -   [Expert] Ars Nouveau quests no longer accept disabled source links [\#905](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/905)
+-   Correct quest description for bookwyrm familiars [\#912](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/912)
 
 ### Enigmatica 9 v1.20.1
 
