@@ -82,7 +82,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: '3x kubejs:mote_of_renewal',
-            input: Item.of('minecraft:lingering_potion', { Potion: 'ars_nouveau:recovery_potion_strong' }).weakNBT(),
+            input: Item.of('minecraft:potion', { Potion: 'ars_nouveau:recovery_potion_strong' }).weakNBT(),
             catalyst: 'naturesaura:crushing_catalyst',
             aura: 3000,
             time: 10,

@@ -115,9 +115,7 @@ ServerEvents.recipes((event) => {
             output: { item: 'kubejs:mote_of_wisdom', count: 3 },
             gasInput: { gas: 'mekanism:antimatter', amount: 10 },
             itemInput: {
-                ingredient: Item.of('minecraft:lingering_potion', { Potion: 'apotheosis:strong_knowledge' })
-                    .weakNBT()
-                    .toJson()
+                ingredient: Item.of('minecraft:potion', { Potion: 'apotheosis:strong_knowledge' }).weakNBT().toJson()
             },
             duration: 100,
             id: `${id_prefix}mote_of_wisdom`

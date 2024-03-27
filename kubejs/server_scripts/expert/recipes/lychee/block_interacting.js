@@ -404,6 +404,24 @@ ServerEvents.recipes((event) => {
         }
     ];
 
+    // Prevent upgrading basic tanks to higher tiers as they're meant to be disabled
+    const mek_tiers = ['basic', 'advanced', 'elite', 'ultimate'];
+    const mek_tanks = ['fluid', 'chemical'];
+    mek_tanks.forEach((tank) => {
+        mek_tiers.forEach((tier, index) => {
+            if (tier !== 'basic') {
+                let lower_tier = mek_tiers[index - 1];
+                recipes.push({
+                    item_in: { item: `mekanism:${tier}_tier_installer` },
+                    block_in: `mekanism:${lower_tier}_${tank}_tank`,
+                    hide_in_viewer: true,
+                    post: [{ type: 'prevent_default' }],
+                    id: `${id_prefix}prevent_${lower_tier}_${tank}_tank_upgrade`
+                });
+            }
+        });
+    });
+
     const ae2_conversions = [
         { item: `ars_nouveau:wixie_charm`, block: `ae2:crafting_accelerator` },
         { item: `ae2:storage_monitor`, block: `ae2:crafting_monitor` },
