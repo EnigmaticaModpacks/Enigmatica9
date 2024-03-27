@@ -7,6 +7,7 @@
 -   Cicadas, Fireflies, and Backpacks will no longer generate with Apotheosis Affixes [\#904](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/904)
 -   Adds several community suggested Caster Tomes to loot! [\#906](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/906)
 -   [Expert] Teleportation rituals now inform the player why they failed if executed in the wrong dimension [\#912](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/912)
+-   [Expert] Motes now require regular potions instead of lingering potions [\#912](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/912)
 
 ### 🐛 Fixed Bugs
 
