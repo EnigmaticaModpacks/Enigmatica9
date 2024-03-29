@@ -8,6 +8,7 @@
 -   Adds several community suggested Caster Tomes to loot! [\#906](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/906)
 -   [Expert] Teleportation rituals now inform the player why they failed if executed in the wrong dimension [\#912](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/912)
 -   [Expert] Motes now require regular potions instead of lingering potions [\#912](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/912)
+-   [Expert] Wind Shear glyph now uses Skyseeker's Blade instead of Iron Swords [\#917](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/917)
 
 ### 🐛 Fixed Bugs
 
@@ -16,6 +17,7 @@
 -   Fixed an issue with Gateways crashing the game if used in a Compact Machine [\#912](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/912)
 -   [Expert] Mekanism tanks may no longer be upgraded in world [\#912](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/912)
 -   Fix missing stripped log/wood tags [\#915](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/915)
+-   [Expert] Occultism quests no longer require otherworld ash [\#917](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/917)
 
 ### Enigmatica 9 v1.20.1
 
