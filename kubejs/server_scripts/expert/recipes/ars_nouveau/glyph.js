@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
         {
             output: 'toomanyglyphs:glyph_chaining',
             inputItems: [
-                { item: { item: 'ars_nouveau:manipulation_essence' } },
+                { item: { tag: 'forge:essences/manipulation' } },
                 { item: { item: 'minecraft:chain' } },
                 { item: { item: 'minecraft:chain' } },
                 { item: { item: 'minecraft:chain' } },
@@ -38,7 +38,7 @@ ServerEvents.recipes((event) => {
                 { item: { item: 'quark:rainbow_rune' } },
                 { item: { item: 'minecraft:prismarine_shard' } },
                 { item: { item: 'ars_nouveau:bastion_pod' } },
-                { item: { item: 'ars_nouveau:water_essence' } },
+                { item: { tag: 'forge:essences/water' } },
                 { item: { item: 'supplementaries:antique_ink' } }
             ],
             count: 1,
@@ -167,6 +167,19 @@ ServerEvents.recipes((event) => {
             count: 1,
             exp: 55,
             id: 'ars_elemental:glyph_envenom'
+        },
+        {
+            output: 'ars_nouveau:glyph_wind_shear',
+            inputItems: [
+                { item: { tag: 'forge:essences/air' } },
+                { item: { item: 'naturesaura:sky_sword' } },
+                { item: { item: 'naturesaura:sky_sword' } },
+                { item: { item: 'naturesaura:sky_sword' } },
+                { item: { item: 'supplementaries:antique_ink' } }
+            ],
+            count: 1,
+            exp: 55,
+            id: 'ars_nouveau:glyph_wind_shear'
         }
     ];
 
