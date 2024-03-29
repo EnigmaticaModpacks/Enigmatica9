@@ -167,6 +167,19 @@ ServerEvents.recipes((event) => {
             count: 1,
             exp: 55,
             id: 'ars_elemental:glyph_envenom'
+        },
+        {
+            output: 'ars_nouveau:glyph_wind_shear',
+            inputItems: [
+                { item: { tag: 'forge:essences/air' } },
+                { item: { item: 'naturesaura:sky_sword' } },
+                { item: { item: 'naturesaura:sky_sword' } },
+                { item: { item: 'naturesaura:sky_sword' } },
+                { item: { item: 'supplementaries:antique_ink' } }
+            ],
+            count: 1,
+            exp: 55,
+            id: 'ars_nouveau:glyph_wind_shear'
         }
     ];
 
