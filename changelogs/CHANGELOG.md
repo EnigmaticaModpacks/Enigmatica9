@@ -12,6 +12,7 @@
 -   [Expert] Skyseeker's Boots no longer provide step up [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
 -   Hexerei drying rack quests now accept any drying rack [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
 -   [Expert] Ars Nouveau threads that require a familiar shard now also accept the corresponding charm [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
+-   [Expert] Adjust ratio of dimension shards to metal crystals [\#922](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/922)
 
 ### 🐛 Fixed Bugs
 
