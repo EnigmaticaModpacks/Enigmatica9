@@ -21,6 +21,7 @@
 -   [Expert] Mekanism tanks may no longer be upgraded in world [\#912](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/912)
 -   Fix missing stripped log/wood tags [\#915](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/915)
 -   [Expert] Occultism quests no longer require otherworld ash [\#917](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/917)
+-   [Expert] Fix broken Parrot Familiar summon [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
 
 ### Enigmatica 9 v1.20.1
 

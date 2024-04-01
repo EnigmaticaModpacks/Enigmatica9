@@ -642,11 +642,10 @@ ServerEvents.recipes((event) => {
                     Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_parrot.tooltip"}']
                 }
             }),
-            ritual_type: 'occultism:summon_with_chance_of_chicken_tamed',
             activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'minecraft:parrot',
-            ritual_type: 'occultism:familiar',
+            ritual_type: 'occultism:summon_tamed',
             ritual_dummy: 'occultism:ritual_dummy/familiar_parrot',
             inputs: [
                 'hexerei:mindful_trance_blend',
