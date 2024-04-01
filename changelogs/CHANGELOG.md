@@ -22,6 +22,7 @@
 -   Fix missing stripped log/wood tags [\#915](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/915)
 -   [Expert] Occultism quests no longer require otherworld ash [\#917](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/917)
 -   [Expert] Fix broken Parrot Familiar summon [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
+-   Add default tool for Enigmatic Unity and Energy Meters [\#921](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/921)
 
 ### Enigmatica 9 v1.20.1
 
