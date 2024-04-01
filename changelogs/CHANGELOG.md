@@ -9,6 +9,9 @@
 -   [Expert] Teleportation rituals now inform the player why they failed if executed in the wrong dimension [\#912](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/912)
 -   [Expert] Motes now require regular potions instead of lingering potions [\#912](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/912)
 -   [Expert] Wind Shear glyph now uses Skyseeker's Blade instead of Iron Swords [\#917](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/917)
+-   [Expert] Skyseeker's Boots no longer provide step up [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
+-   Hexerei drying rack quests now accept any drying rack [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
+-   [Expert] Ars Nouveau threads that require a familiar shard now also accept the corresponding charm [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
 
 ### 🐛 Fixed Bugs
 
@@ -18,6 +21,7 @@
 -   [Expert] Mekanism tanks may no longer be upgraded in world [\#912](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/912)
 -   Fix missing stripped log/wood tags [\#915](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/915)
 -   [Expert] Occultism quests no longer require otherworld ash [\#917](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/917)
+-   [Expert] Fix broken Parrot Familiar summon [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
 
 ### Enigmatica 9 v1.20.1
 

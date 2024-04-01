@@ -180,6 +180,18 @@ ServerEvents.recipes((event) => {
             count: 1,
             exp: 55,
             id: 'ars_nouveau:glyph_wind_shear'
+        },
+        {
+            output: 'ars_nouveau:glyph_sense_magic',
+            inputItems: [
+                { item: { tag: 'forge:essences/abjuration' } },
+                { item: { item: 'ars_nouveau:dowsing_rod' } },
+                { item: { item: 'ars_nouveau:starbuncle_charm' } },
+                { item: { item: 'supplementaries:antique_ink' } }
+            ],
+            count: 1,
+            exp: 55,
+            id: 'ars_nouveau:glyph_sense_magic'
         }
     ];
 
