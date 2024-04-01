@@ -209,8 +209,33 @@
 			]
 			subtitle: "High and Dry"
 			tasks: [{
+				icon: "hexerei:herb_drying_rack"
 				id: "1BA14B4A6E3CE766"
-				item: "hexerei:herb_drying_rack"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "hexerei:herb_drying_rack"
+							}
+							{
+								Count: 1b
+								id: "hexerei:mahogany_drying_rack"
+							}
+							{
+								Count: 1b
+								id: "hexerei:willow_drying_rack"
+							}
+							{
+								Count: 1b
+								id: "hexerei:witch_hazel_drying_rack"
+							}
+						]
+					}
+				}
+				title: "Drying Rack"
 				type: "item"
 			}]
 			x: 8.0d
