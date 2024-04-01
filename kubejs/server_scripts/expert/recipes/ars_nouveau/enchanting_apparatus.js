@@ -895,6 +895,64 @@ ServerEvents.recipes((event) => {
             reagents: ['ars_nouveau:relay'],
             sourceCost: 0,
             id: 'ars_nouveau:relay_warp'
+        },
+        {
+            output: 'ars_nouveau:thread_starbuncle',
+            inputs: [
+                Ingredient.of(['ars_nouveau:starbuncle_shards', 'ars_nouveau:starbuncle_charm']),
+                Ingredient.of(['ars_nouveau:starbuncle_shards', 'ars_nouveau:starbuncle_charm']),
+                Ingredient.of(['ars_nouveau:starbuncle_shards', 'ars_nouveau:starbuncle_charm']),
+                'minecraft:sugar',
+                'minecraft:sugar',
+                'minecraft:sugar',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation'
+            ],
+            reagents: ['ars_nouveau:blank_thread'],
+            sourceCost: 0,
+            id: 'ars_nouveau:thread_starbuncle'
+        },
+        {
+            output: 'ars_nouveau:thread_whirlisprig',
+            inputs: [
+                Ingredient.of(['ars_nouveau:whirlisprig_shards', 'ars_nouveau:whirlisprig_charm']),
+                Ingredient.of(['ars_nouveau:whirlisprig_shards', 'ars_nouveau:whirlisprig_charm']),
+                Ingredient.of(['ars_nouveau:whirlisprig_shards', 'ars_nouveau:whirlisprig_charm']),
+                '#forge:essences/earth',
+                '#forge:essences/earth',
+                'minecraft:golden_apple'
+            ],
+            reagents: ['ars_nouveau:blank_thread'],
+            sourceCost: 0,
+            id: 'ars_nouveau:thread_whirlisprig'
+        },
+        {
+            output: 'ars_nouveau:thread_wixie',
+            inputs: [
+                Ingredient.of(['ars_nouveau:wixie_shards', 'ars_nouveau:wixie_charm']),
+                Ingredient.of(['ars_nouveau:wixie_shards', 'ars_nouveau:wixie_charm']),
+                Ingredient.of(['ars_nouveau:wixie_shards', 'ars_nouveau:wixie_charm']),
+                '#forge:essences/abjuration',
+                '#forge:essences/abjuration',
+                '#forge:rods/blaze'
+            ],
+            reagents: ['ars_nouveau:blank_thread'],
+            sourceCost: 0,
+            id: 'ars_nouveau:thread_wixie'
+        },
+        {
+            output: 'ars_nouveau:thread_drygmy',
+            inputs: [
+                Ingredient.of(['ars_nouveau:drygmy_shard', 'ars_nouveau:drygmy_charm']),
+                Ingredient.of(['ars_nouveau:drygmy_shard', 'ars_nouveau:drygmy_charm']),
+                Ingredient.of(['ars_nouveau:drygmy_shard', 'ars_nouveau:drygmy_charm']),
+                '#forge:essences/earth',
+                '#forge:essences/earth',
+                Ingredient.of(['minecraft:rabbit_foot', 'apotheosis:lucky_foot'])
+            ],
+            reagents: ['ars_nouveau:blank_thread'],
+            sourceCost: 0,
+            id: 'ars_nouveau:thread_drygmy'
         }
     ];
 

@@ -11,6 +11,7 @@
 -   [Expert] Wind Shear glyph now uses Skyseeker's Blade instead of Iron Swords [\#917](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/917)
 -   [Expert] Skyseeker's Boots no longer provide step up [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
 -   Hexerei drying rack quests now accept any drying rack [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
+-   [Expert] Ars Nouveau threads that require a familiar shard now also accept the corresponding charm [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
 
 ### 🐛 Fixed Bugs
 
