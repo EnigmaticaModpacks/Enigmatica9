@@ -13,6 +13,7 @@
 -   Hexerei drying rack quests now accept any drying rack [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
 -   [Expert] Ars Nouveau threads that require a familiar shard now also accept the corresponding charm [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
 -   [Expert] Adjust ratio of dimension shards to metal crystals [\#922](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/922)
+-   Clarify Create quests for straws [\#923](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/923)
 
 ### 🐛 Fixed Bugs
 
