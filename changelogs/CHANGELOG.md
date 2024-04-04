@@ -15,6 +15,7 @@
 -   [Expert] Adjust ratio of dimension shards to metal crystals [\#922](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/922)
 -   Clarify Create quests for straws [\#923](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/923)
 -   Tablet of Awakening quest no longer requires an Amethyst Golem Charm [\#926](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/926)
+-   [Expert] Mekanism Teleporter Frames now craft in batches of 9 [\#926](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/926)
 
 ### 🐛 Fixed Bugs
 
