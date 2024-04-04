@@ -1767,18 +1767,11 @@
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
-			tasks: [
-				{
-					id: "2AB5E8ADCF71D9C9"
-					item: "ars_nouveau:ritual_awakening"
-					type: "item"
-				}
-				{
-					id: "7B469A83BA2B79F1"
-					item: "ars_nouveau:amethyst_golem_charm"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2AB5E8ADCF71D9C9"
+				item: "ars_nouveau:ritual_awakening"
+				type: "item"
+			}]
 			x: 2.0d
 			y: 3.0d
 		}

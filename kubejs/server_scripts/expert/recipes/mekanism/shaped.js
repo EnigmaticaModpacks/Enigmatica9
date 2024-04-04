@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            output: '8x mekanism:teleporter_frame',
+            output: '9x mekanism:teleporter_frame',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: 'ars_nouveau:sourcestone',
