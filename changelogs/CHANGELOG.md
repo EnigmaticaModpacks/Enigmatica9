@@ -14,7 +14,7 @@
 -   [Expert] Ars Nouveau threads that require a familiar shard now also accept the corresponding charm [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
 -   [Expert] Adjust ratio of dimension shards to metal crystals [\#922](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/922)
 -   Clarify Create quests for straws [\#923](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/923)
--   Tablet of Awakening quest no longer requires an Amethyst Golem Charm [\#924](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/924)
+-   Tablet of Awakening quest no longer requires an Amethyst Golem Charm [\#926](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/926)
 
 ### 🐛 Fixed Bugs
 
