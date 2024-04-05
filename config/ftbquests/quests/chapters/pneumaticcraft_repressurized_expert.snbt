@@ -992,7 +992,7 @@
 		{
 			dependencies: ["3BDD27D9FDC82E36"]
 			description: [
-				"The Assembly Table provides a simpler way of making circuit boards and provides access to other advanced recipes."
+				"The Assembly Table is a multiblock machine capable of more advanced crafting."
 				""
 				"Each piece has limitations on where it can be placed. Refer to the PNC:R manual for the exact placement rules."
 				""
@@ -1004,7 +1004,7 @@
 				"Note: The Drill \\& Laser program allows the Assembly Table to craft recipes that require only a drill or laser. In most cases there’s no reason to use the individual programs."
 			]
 			hide_dependency_lines: true
-			icon: "pneumaticcraft:assembly_platform"
+			icon: "pneumaticcraft:assembly_program_drill_laser"
 			id: "2C9A30956A2044A0"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
