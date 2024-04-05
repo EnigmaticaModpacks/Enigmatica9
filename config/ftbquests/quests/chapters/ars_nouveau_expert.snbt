@@ -385,7 +385,7 @@
 				item: "ars_nouveau:bookwyrm_charm"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -6.5d
 			y: 0.0d
 		}
 		{
@@ -422,7 +422,7 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.5d
 			y: -0.5d
 		}
 		{
@@ -560,7 +560,7 @@
 				item: "ars_nouveau:wixie_charm"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -7.5d
 			y: -0.5d
 		}
 		{
@@ -1140,7 +1140,7 @@
 				item: "ars_nouveau:familiar_wixie"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.5d
 			y: 0.0d
 		}
 		{
@@ -1180,7 +1180,7 @@
 				item: "ars_nouveau:familiar_bookwyrm"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: -0.5d
 		}
 		{
@@ -1200,7 +1200,7 @@
 				item: "ars_nouveau:familiar_whirlisprig"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: -0.5d
 		}
 		{
@@ -1923,6 +1923,7 @@
 				""
 				"Need them to access a specific side? Use a Direction Scroll to set their preferred side. These are set by looking in the desired direction and Sneak + Right-Clicking them. Then use the scroll on the Starbuncle."
 			]
+			icon: "ars_nouveau:starbuncle_shards"
 			id: "77B0AD19B44B8660"
 			rewards: [
 				{
@@ -1940,7 +1941,11 @@
 			]
 			tasks: [{
 				id: "067A9588CB5F4392"
-				item: "ars_nouveau:starbuncle_shards"
+				item: {
+					Count: 1b
+					id: "ars_nouveau:starbuncle_charm"
+					tag: { }
+				}
 				type: "item"
 			}]
 			title: "Starbuncle Logistics"
@@ -2273,6 +2278,48 @@
 			}]
 			x: 0.5d
 			y: -5.0d
+		}
+		{
+			dependencies: ["7EE4A2E96D7FAD4E"]
+			description: ["With their deep connection with the earth, Amethyst Golems make powerful familiars who strengthen one's ties to the ground. "]
+			id: "6855F03D47EB60BF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "2525AF4E715F5B80"
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			subtitle: "Don't Be Shy, Be a Little Boulder!"
+			tasks: [{
+				id: "221D873BF588392A"
+				item: "ars_nouveau:familiar_amethyst_golem"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["607D671B8C399B83"]
+			description: [
+				"These steadfast little creatures have an insatiable desire for crystals of all kinds. Give an Amethyst golem a budding crystal and it will not only speed its growth, but also cut you in on the harvest. "
+				""
+				"Amethyst Golems will work with any Budding Crystal block in the pack. However, their ability to transform blocks into budding blocks is limited to Amethyst.  "
+			]
+			id: "72149B36922D1870"
+			rewards: [{
+				id: "5A3FE066ADE46466"
+				item: "chimes:amethyst_chimes"
+				type: "item"
+			}]
+			subtitle: "It's Geo Time!"
+			tasks: [{
+				id: "0B31BFC45A326502"
+				item: "ars_nouveau:amethyst_golem_charm"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
 		}
 	]
 	title: "Ars Nouveau"
