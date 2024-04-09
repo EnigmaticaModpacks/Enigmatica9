@@ -8,4 +8,6 @@ ServerEvents.tags('block', (event) => {
         event.add('ars_nouveau:harvest/foliage', shroom.foliage);
         event.add('ars_nouveau:harvest/stems', shroom.stems);
     });
+
+    event.add('ars_nouveau:harvest/fellable', ['twilightforest:root', 'twilightforest:liveroot_block']);
 });
