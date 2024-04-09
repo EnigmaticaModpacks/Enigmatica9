@@ -18,6 +18,8 @@
 -   [Expert] Mekanism Teleporter Frames now craft in batches of 9 [\#926](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/926)
 -   Added entries for Amethyst Golems in Ars Nouveau's quests [\#928](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/928)
 -   Ars Nouveau's Fell spell will now harvest roots/liveroots from Twilight trees [\#939](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/939)
+-   Add crystallizer recipes for Fluix, Certus, and Amethyst Dust [\#939](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/939)
+-   [Expert] fire resist potions may now be crafted from wasabi [\#939](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/939)
 
 ### 🐛 Fixed Bugs
 
@@ -31,7 +33,6 @@
 -   Add default tool for Enigmatic Unity and Energy Meters [\#921](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/921)
 -   Clarified Assembly Table quests [\#932](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/932)
 -   Remove duplicate saplings from Market [\#939](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/939)
--   Add crystallizer recipes for Fluix, Certus, and Amethyst Dust [\#939](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/939)
 
 ### Enigmatica 9 v1.20.1
 
