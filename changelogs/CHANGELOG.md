@@ -31,6 +31,7 @@
 -   Add default tool for Enigmatic Unity and Energy Meters [\#921](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/921)
 -   Clarified Assembly Table quests [\#932](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/932)
 -   Remove duplicate saplings from Market [\#939](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/939)
+-   Add crystallizer recipes for Fluix, Certus, and Amethyst Dust [\#939](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/939)
 
 ### Enigmatica 9 v1.20.1
 
