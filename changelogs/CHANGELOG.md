@@ -17,6 +17,7 @@
 -   Tablet of Awakening quest no longer requires an Amethyst Golem Charm [\#926](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/926)
 -   [Expert] Mekanism Teleporter Frames now craft in batches of 9 [\#926](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/926)
 -   Added entries for Amethyst Golems in Ars Nouveau's quests [\#928](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/928)
+-   Ars Nouveau's Fell spell will now harvest roots/liveroots from Twilight trees [\#928](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/928)
 
 ### 🐛 Fixed Bugs
 
