@@ -46,7 +46,7 @@ install:
 
     # Link to where the file where the modpack can be distributed
     # This supports loading from local files as well for most pack types if there is file://{PathToFile} in the beginning
-    modpackUrl: https://media.forgecdn.net/files/5195/854/Enigmatica9Expert-1.20.1.zip
+    modpackUrl: https://media.forgecdn.net/files/5252/22/Enigmatica9Expert-1.21.0.zip
 
     # This is used to specify in which format the modpack is distributed, the server launcher has to handle each individually if their format differs
     # current supported formats:
