@@ -1,5 +1,7 @@
 ### Enigmatica 9 v1.21.0
 
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.20.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.20.1.md)
+
 ### 🌟 Improvements
 
 -   [Expert] Adjusted Integral Components recipes to make automating them somewhat easier [\#904](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/904)
@@ -33,6 +35,8 @@
 -   Add default tool for Enigmatic Unity and Energy Meters [\#921](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/921)
 -   Clarified Assembly Table quests [\#932](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/932)
 -   Remove duplicate saplings from Market [\#939](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/939)
+
+---
 
 ### Enigmatica 9 v1.20.1
 
