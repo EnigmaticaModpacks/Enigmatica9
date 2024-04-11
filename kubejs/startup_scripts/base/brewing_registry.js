@@ -287,6 +287,31 @@ MoreJSEvents.registerPotionBrewing((event) => {
             reagent: 'minecraft:glowstone_dust',
             input: 'apotheosis:knowledge',
             output: 'apotheosis:strong_knowledge'
+        },
+        {
+            reagent: 'hexerei:broom_brush',
+            input: 'minecraft:awkward',
+            output: 'kubejs:flight'
+        },
+        {
+            reagent: 'minecraft:redstone',
+            input: 'kubejs:flight',
+            output: 'kubejs:long_flight'
+        },
+        {
+            reagent: 'rftoolsbase:dimensionalshard',
+            input: 'minecraft:invisibility',
+            output: 'kubejs:true_invisibility'
+        },
+        {
+            reagent: 'rftoolsbase:dimensionalshard',
+            input: 'kubejs:long_invisibility',
+            output: 'kubejs:long_true_invisibility'
+        },
+        {
+            reagent: 'minecraft:redstone',
+            input: 'kubejs:true_invisibility',
+            output: 'kubejs:long_true_invisibility'
         }
     ];
 

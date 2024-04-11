@@ -75,6 +75,20 @@
     "item.kubejs.subzero_dust": "Subzero Dust",
     "item.kubejs.therium_dust": "Therium Dust",
 
+    "item.minecraft.potion.effect.flight": "Potion of Flight",
+    "item.minecraft.potion.effect.long_flight": "Potion of Flight",
+    "item.minecraft.splash_potion.effect.flight": "Splash Potion of Flight",
+    "item.minecraft.splash_potion.effect.long_flight": "Splash Potion of Flight",
+    "item.minecraft.lingering_potion.effect.flight": "Lingering Potion of Flight",
+    "item.minecraft.lingering_potion.effect.long_flight": "Lingering Potion of Flight",
+
+    "item.minecraft.potion.effect.true_invisibility": "Potion of True Invisibility",
+    "item.minecraft.potion.effect.long_true_invisibility": "Potion of True Invisibility",
+    "item.minecraft.splash_potion.effect.true_invisibility": "Splash Potion of True Invisibility",
+    "item.minecraft.splash_potion.effect.long_true_invisibility": "Splash Potion of True Invisibility",
+    "item.minecraft.lingering_potion.effect.true_invisibility": "Lingering Potion of True Invisibility",
+    "item.minecraft.lingering_potion.effect.long_true_invisibility": "Lingering Potion of True Invisibility",
+
     "block.kubejs.gloaming_catalyst": "Gloaming Catalyst",
     "block.kubejs.heartwood_stage_4_inactive": "Heartwood Stage 4: Inactive",
     "block.kubejs.heartwood_stage_4": "Heartwood Stage 4",
