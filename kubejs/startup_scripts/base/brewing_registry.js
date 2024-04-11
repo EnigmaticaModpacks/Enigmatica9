@@ -312,6 +312,11 @@ MoreJSEvents.registerPotionBrewing((event) => {
             reagent: 'minecraft:redstone',
             input: 'kubejs:true_invisibility',
             output: 'kubejs:long_true_invisibility'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'minecraft:strong_strength',
+            output: 'kubejs:greater_strength'
         }
     ];
 

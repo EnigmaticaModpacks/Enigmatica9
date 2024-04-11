@@ -89,6 +89,10 @@
     "item.minecraft.lingering_potion.effect.true_invisibility": "Lingering Potion of True Invisibility",
     "item.minecraft.lingering_potion.effect.long_true_invisibility": "Lingering Potion of True Invisibility",
 
+    "item.minecraft.potion.effect.greater_strength": "Potion of Strength",
+    "item.minecraft.splash_potion.effect.greater_strength": "Splash Potion of Strength",
+    "item.minecraft.lingering_potion.effect.greater_strength": "Lingering Potion of Strength",
+
     "block.kubejs.gloaming_catalyst": "Gloaming Catalyst",
     "block.kubejs.heartwood_stage_4_inactive": "Heartwood Stage 4: Inactive",
     "block.kubejs.heartwood_stage_4": "Heartwood Stage 4",
