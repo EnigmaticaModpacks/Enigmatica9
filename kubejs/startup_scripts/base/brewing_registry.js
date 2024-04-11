@@ -299,13 +299,13 @@ MoreJSEvents.registerPotionBrewing((event) => {
             output: 'kubejs:long_flight'
         },
         {
-            reagent: 'rftoolsbase:dimensionalshard',
+            reagent: 'ae2:certus_quartz_dust',
             input: 'minecraft:invisibility',
             output: 'kubejs:true_invisibility'
         },
         {
-            reagent: 'rftoolsbase:dimensionalshard',
-            input: 'kubejs:long_invisibility',
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'minecraft:long_invisibility',
             output: 'kubejs:long_true_invisibility'
         },
         {

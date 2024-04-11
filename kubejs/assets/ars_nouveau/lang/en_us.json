@@ -1,7 +1,7 @@
 {
 	"ars_nouveau.tooltip.magebloom": "Grown from Magebloom Seeds.",
-	"tooltip.ars_nouveau.wilden_tribute": "Obtained by defeating the Wilden Chimera. See Grove of the Wilden Gate Pearl.",
-	"tooltip.magebloom": "Crafted in the Mixing Cauldron",
+	"tooltip.ars_nouveau.wilden_tribute": "Obtained by defeating the Wilden Chimera. See Ritual of Summon Wilden.",
+	"tooltip.magebloom": "Crafted using the Enchanting Apparatus",
 	"effect.ars_nouveau.shielding.desc": "Reduces incoming damage.",
 	"effect.ars_nouveau.freezing.desc": "Gradually slows and freezes.",
 	"effect.ars_nouveau.blasting.desc": "Causes an explosion when the effect wears off.",
