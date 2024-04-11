@@ -20,6 +20,46 @@ StartupEvents.registry('potion', (event) => {
         {
             potion: 'minecraft:strength',
             types: [{ name: 'greater', duration: 90, amplifier: 3 }]
+        },
+        {
+            potion: 'minecraft:jump_boost',
+            types: [{ name: 'greater', duration: 90, amplifier: 3 }]
+        },
+        {
+            potion: 'minecraft:speed',
+            types: [{ name: 'greater', duration: 90, amplifier: 3 }]
+        },
+        {
+            potion: 'minecraft:instant_damage',
+            types: [{ name: 'greater', duration: 0, amplifier: 3 }]
+        },
+        {
+            potion: 'minecraft:regeneration',
+            types: [{ name: 'greater', duration: 22, amplifier: 3 }]
+        },
+        {
+            potion: 'minecraft:haste',
+            types: [{ name: 'greater', duration: 90, amplifier: 3 }]
+        },
+        {
+            potion: 'apotheosis:knowledge',
+            types: [{ name: 'greater', duration: 60, amplifier: 3 }]
+        },
+        {
+            potion: 'ars_nouveau:mana_regen',
+            types: [{ name: 'greater', duration: 180, amplifier: 3 }]
+        },
+        {
+            potion: 'ars_nouveau:spell_damage',
+            types: [{ name: 'greater', duration: 180, amplifier: 3 }]
+        },
+        {
+            potion: 'ars_nouveau:shielding',
+            types: [{ name: 'greater', duration: 180, amplifier: 3 }]
+        },
+        {
+            potion: 'ars_nouveau:recovery',
+            types: [{ name: 'greater', duration: 180, amplifier: 3 }]
         }
     ];
 

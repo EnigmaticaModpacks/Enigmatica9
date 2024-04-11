@@ -317,6 +317,56 @@ MoreJSEvents.registerPotionBrewing((event) => {
             reagent: 'ae2:certus_quartz_dust',
             input: 'minecraft:strong_strength',
             output: 'kubejs:greater_strength'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'minecraft:strong_leaping',
+            output: 'kubejs:greater_jump_boost'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'minecraft:strong_swiftness',
+            output: 'kubejs:greater_speed'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'minecraft:strong_harming',
+            output: 'kubejs:greater_instant_damage'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'minecraft:strong_regeneration',
+            output: 'kubejs:greater_regeneration'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'apotheosis:strong_haste',
+            output: 'kubejs:greater_haste'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'apotheosis:strong_knowledge',
+            output: 'kubejs:greater_knowledge'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'ars_nouveau:mana_regen_potion_strong',
+            output: 'kubejs:greater_mana_regen'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'ars_nouveau:spell_damage_potion_strong',
+            output: 'kubejs:greater_spell_damage'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'ars_nouveau:shielding_potion_strong',
+            output: 'kubejs:greater_shielding'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'ars_nouveau:recovery_potion_strong',
+            output: 'kubejs:greater_recovery'
         }
     ];
 
