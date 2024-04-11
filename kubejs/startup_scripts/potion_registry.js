@@ -60,6 +60,24 @@ StartupEvents.registry('potion', (event) => {
         {
             potion: 'ars_nouveau:recovery',
             types: [{ name: 'greater', duration: 180, amplifier: 3 }]
+        },
+        {
+            potion: 'cofh_core:sundered',
+            types: [
+                { name: 'base', duration: 180, amplifier: 0 },
+                { name: 'long', duration: 480, amplifier: 0 },
+                { name: 'strong', duration: 90, amplifier: 1 },
+                { name: 'greater', duration: 90, amplifier: 3 }
+            ]
+        },
+        {
+            potion: 'occultism:double_jump',
+            types: [
+                { name: 'base', duration: 180, amplifier: 0 },
+                { name: 'long', duration: 480, amplifier: 0 },
+                { name: 'strong', duration: 90, amplifier: 1 },
+                { name: 'greater', duration: 90, amplifier: 3 }
+            ]
         }
     ];
 

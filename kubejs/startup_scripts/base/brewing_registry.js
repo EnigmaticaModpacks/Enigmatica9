@@ -367,6 +367,46 @@ MoreJSEvents.registerPotionBrewing((event) => {
             reagent: 'ae2:certus_quartz_dust',
             input: 'ars_nouveau:recovery_potion_strong',
             output: 'kubejs:greater_recovery'
+        },
+        {
+            reagent: 'minecraft:warped_fungus',
+            input: 'minecraft:awkward',
+            output: 'kubejs:sundered'
+        },
+        {
+            reagent: 'minecraft:redstone',
+            input: 'kubejs:sundered',
+            output: 'kubejs:long_sundered'
+        },
+        {
+            reagent: 'minecraft:glowstone_dust',
+            input: 'kubejs:sundered',
+            output: 'kubejs:strong_sundered'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'kubejs:strong_sundered',
+            output: 'kubejs:greater_sundered'
+        },
+        {
+            reagent: 'hexerei:dried_yellow_dock_leaves',
+            input: 'minecraft:awkward',
+            output: 'kubejs:double_jump'
+        },
+        {
+            reagent: 'minecraft:redstone',
+            input: 'kubejs:double_jump',
+            output: 'kubejs:long_double_jump'
+        },
+        {
+            reagent: 'minecraft:glowstone_dust',
+            input: 'kubejs:double_jump',
+            output: 'kubejs:strong_double_jump'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'kubejs:strong_double_jump',
+            output: 'kubejs:greater_double_jump'
         }
     ];
 
