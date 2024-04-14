@@ -1629,6 +1629,22 @@ const entries = {
                 expert: 'Resplendent Elder'
             }
         }
+    ],
+    compressedcreativity: [
+        {
+            key: 'compressedcreativity.ponder.compressed_air_engine.text_1',
+            value: {
+                normal: `Compressed Air Engine uses pressurized air to create rotational force`,
+                expert: `Zephyr Engine uses pressurized air to create rotational force`
+            }
+        },
+        {
+            key: 'block.compressedcreativity.compressed_air_engine',
+            value: {
+                normal: `Compressed Air Engine`,
+                expert: `Zephyr Engine`
+            }
+        }
     ]
 };
 
