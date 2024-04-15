@@ -58,6 +58,35 @@ ServerEvents.recipes((event) => {
                 B: '#forge:nuggets/lead'
             },
             id: `supplementaries:candle_holders/candle_holder`
+        },
+        {
+            output: 'supplementaries:goblet',
+            pattern: ['A A', 'ABA', ' A '],
+            key: {
+                A: '#forge:nuggets/tin',
+                B: '#forge:ingots/tin'
+            },
+            id: 'supplementaries:goblet'
+        },
+        {
+            output: 'supplementaries:cage',
+            pattern: ['AAA', 'B B', 'CCC'],
+            key: {
+                A: 'pneumaticcraft:compressed_stone_slab',
+                B: 'create:andesite_bars',
+                C: '#minecraft:wooden_slabs'
+            },
+            id: 'supplementaries:cage'
+        },
+        {
+            output: 'supplementaries:wind_vane',
+            pattern: [' A ', 'ABA', ' C '],
+            key: {
+                A: '#forge:ingots/tin',
+                B: '#forge:rods/tin',
+                C: '#forge:dusts/redstone'
+            },
+            id: 'supplementaries:wind_vane'
         }
     ];
 

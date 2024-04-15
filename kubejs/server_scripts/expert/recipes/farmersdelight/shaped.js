@@ -26,6 +26,15 @@ ServerEvents.recipes((event) => {
                 C: '#forge:essences/fire'
             },
             id: 'farmersdelight:stove'
+        },
+        {
+            output: 'farmersdelight:skillet',
+            pattern: [' AA', ' AA', 'B  '],
+            key: {
+                A: '#forge:ingots/copper',
+                B: 'minecraft:brick'
+            },
+            id: 'farmersdelight:skillet'
         }
     ];
 

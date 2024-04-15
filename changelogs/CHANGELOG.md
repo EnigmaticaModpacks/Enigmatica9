@@ -8,6 +8,7 @@
 
 -   [Expert] Massively buff Aura Infusion rewards [\#940](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/940)
 -   Add several new brewable potions, including higher tiers of some existing potions [\#943](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/943)
+-   [Expert] Remove dependencies on iron from a lot of decorative blocks [\#950](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/950)
 
 ### 🐛 Fixed Bugs
 

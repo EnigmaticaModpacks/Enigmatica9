@@ -511,6 +511,35 @@ ServerEvents.recipes((event) => {
                 B: '#forge:gears/bronze'
             },
             id: 'thermal:tools/wrench'
+        },
+        {
+            output: 'thermal:lock',
+            pattern: [' A ', 'ABA', 'AAA'],
+            key: {
+                A: '#forge:nuggets/aluminum',
+                B: '#forge:ingots/signalum'
+            },
+            id: 'thermal:tools/lock'
+        },
+        {
+            output: 'thermal:detonator',
+            pattern: [' A ', 'CBC', 'CCC'],
+            key: {
+                A: '#forge:ingots/silver',
+                B: '#forge:gears/signalum',
+                C: '#forge:ingots/lead'
+            },
+            id: 'thermal:tools/detonator'
+        },
+        {
+            output: '2x thermal:filter_attachment',
+            pattern: [' A ', 'BCB'],
+            key: {
+                A: '#forge:nuggets/silver',
+                B: '#forge:nuggets/tin',
+                C: 'pneumaticcraft:logistics_core'
+            },
+            id: 'thermal:filter_attachment_2'
         }
     ];
 
