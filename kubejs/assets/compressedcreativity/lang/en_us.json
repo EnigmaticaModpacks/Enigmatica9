@@ -1,4 +1,5 @@
 {
-	"compressedcreativity.ponder.compressed_air_engine.text_1": "Zephyr Engine uses pressurized air to create rotational force",
-	"block.compressedcreativity.compressed_air_engine": "Zephyr Engine"
+	"compressedcreativity.ponder.compressed_air_engine.text_1": "Compressed Air Engine uses pressurized air to create rotational force",
+	"block.compressedcreativity.compressed_air_engine": "Compressed Air Engine",
+	"block.compressedcreativity.industrial_air_blower": "Industrial Air Blower"
 }
