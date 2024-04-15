@@ -502,6 +502,15 @@ ServerEvents.recipes((event) => {
                 B: '#forge:plates/aluminum'
             },
             id: 'thermal:slot_seal'
+        },
+        {
+            output: 'thermal:wrench',
+            pattern: [' A ', ' BA', 'A  '],
+            key: {
+                A: '#forge:ingots/bronze',
+                B: '#forge:gears/bronze'
+            },
+            id: 'thermal:tools/wrench'
         }
     ];
 
