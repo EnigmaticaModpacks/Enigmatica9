@@ -47,7 +47,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'compressedcreativity:industrial_air_blower',
-            pattern: ['A', 'BC', ' A'],
+            pattern: [' A', 'BC', ' A'],
             key: {
                 A: '#forge:ingots/compressed_iron',
                 B: 'pneumaticcraft:reinforced_pressure_tube',
