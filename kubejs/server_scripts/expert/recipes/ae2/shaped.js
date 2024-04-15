@@ -491,6 +491,15 @@ ServerEvents.recipes((event) => {
                 C: 'naturesaura:infused_stone'
             },
             id: 'ae2:shaped/not_so_mysterious_cube'
+        },
+        {
+            output: 'ae2:charged_staff',
+            pattern: ['  A', ' B ', 'B  '],
+            key: {
+                A: 'quark:rainbow_rune',
+                B: '#forge:rods/brass'
+            },
+            id: 'ae2:tools/misctools_charged_staff'
         }
     ];
 

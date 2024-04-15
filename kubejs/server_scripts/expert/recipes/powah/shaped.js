@@ -34,6 +34,15 @@ ServerEvents.recipes((event) => {
                 D: 'ars_nouveau:arcane_core'
             },
             id: `${id_prefix}player_transmitter_basic`
+        },
+        {
+            output: 'powah:wrench',
+            pattern: [' A ', ' BA', 'A  '],
+            key: {
+                A: '#forge:ingots/bronze',
+                B: 'powah:capacitor_basic_large'
+            },
+            id: 'powah:crafting/wrench'
         }
     ];
 

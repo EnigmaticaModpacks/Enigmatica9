@@ -529,6 +529,34 @@ ServerEvents.recipes((event) => {
                 B: 'minecraft:hopper'
             },
             id: `${id_prefix}conveyor_dropper`
+        },
+        {
+            output: 'immersiveengineering:jerrycan',
+            pattern: [' AB', 'AA ', 'AA '],
+            key: {
+                A: '#pneumaticcraft:plastic_sheets',
+                B: 'createaddition:straw'
+            },
+            id: 'immersiveengineering:crafting/jerrycan'
+        },
+        {
+            output: 'immersiveengineering:metal_barrel',
+            pattern: ['AAA', 'B B', 'BBB'],
+            key: {
+                A: 'immersiveengineering:slab_sheetmetal_colored_white',
+                B: 'immersiveengineering:sheetmetal_colored_white'
+            },
+            id: 'immersiveengineering:crafting/metal_barrel'
+        },
+        {
+            output: '2x immersiveengineering:lantern',
+            pattern: [' A ', 'BCB', ' A '],
+            key: {
+                A: '#forge:plates/copper',
+                B: '#forge:glass_panes/colorless',
+                C: '#forge:dusts/glowstone'
+            },
+            id: 'immersiveengineering:crafting/lantern'
         }
     ];
 

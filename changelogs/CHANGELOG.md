@@ -2,12 +2,17 @@
 
 ### 🎁 New Mods Added
 
--   [Compressed Creativity](https://www.curseforge.com/minecraft/mc-mods/compressedcreativity) (by [SuperMartijn642](https://www.curseforge.com/members/lgmrszd/projects))
+-   [Compressed Creativity](https://www.curseforge.com/minecraft/mc-mods/compressedcreativity) (by [Lgmrszd](https://www.curseforge.com/members/lgmrszd/projects))
 
 ### 🌟 Improvements
 
 -   [Expert] Massively buff Aura Infusion rewards [\#940](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/940)
 -   Add several new brewable potions, including higher tiers of some existing potions [\#943](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/943)
+-   [Expert] Remove dependencies on iron from a lot of decorative blocks [\#950](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/950)
+
+### 🐛 Fixed Bugs
+
+-   [Expert] Add recipe for Ash Bricks [\#950](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/950)
 
 ### Enigmatica 9 v1.21.0
 
