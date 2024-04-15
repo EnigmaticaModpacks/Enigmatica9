@@ -1644,6 +1644,13 @@ const entries = {
                 normal: `Compressed Air Engine`,
                 expert: `Zephyr Engine`
             }
+        },
+        {
+            key: 'block.compressedcreativity.industrial_air_blower',
+            value: {
+                normal: `Industrial Air Blower`,
+                expert: `Spellbound Air Blower`
+            }
         }
     ]
 };
