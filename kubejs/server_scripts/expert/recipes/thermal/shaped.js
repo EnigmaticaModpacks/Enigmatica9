@@ -508,7 +508,7 @@ ServerEvents.recipes((event) => {
             pattern: [' A ', ' BA', 'A  '],
             key: {
                 A: '#forge:ingots/bronze',
-                B: '#forge:gears/bronze'
+                B: 'thermal:blue_rockwool'
             },
             id: 'thermal:tools/wrench'
         },

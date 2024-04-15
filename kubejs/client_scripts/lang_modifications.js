@@ -90,6 +90,20 @@ const entries = {
     ],
     create: [
         {
+            key: 'block.create.ornate_iron_window',
+            value: {
+                normal: 'Ornate Iron Window',
+                expert: 'Ornate Framed Window'
+            }
+        },
+        {
+            key: 'block.create.ornate_iron_window_pane',
+            value: {
+                normal: 'Ornate Iron Window Pane',
+                expert: 'Ornate Framed Window Pane'
+            }
+        },
+        {
             key: 'block.create.industrial_iron_block',
             value: {
                 normal: 'Block of Industrial Iron',
