@@ -1040,6 +1040,23 @@ ServerEvents.recipes((event) => {
             fluidLevelsConsumed: 1000,
             heatRequirement: 'heated',
             id: `hexerei:reading_glasses_from_mixing_cauldron`
+        },
+        {
+            output: 'hexerei:candelabra',
+            inputs: [
+                '#forge:nuggets/tin',
+                '#minecraft:candles',
+                '#minecraft:candles',
+                '#forge:nuggets/tin',
+                '#forge:nuggets/tin',
+                '#forge:nuggets/tin',
+                '#minecraft:candles',
+                '#minecraft:candles'
+            ],
+            liquid: { fluid: 'minecraft:water' },
+            liquidOutput: { fluid: 'minecraft:water' },
+            fluidLevelsConsumed: 1000,
+            id: 'hexerei:candelabra_from_mixing_cauldron'
         }
     ];
 

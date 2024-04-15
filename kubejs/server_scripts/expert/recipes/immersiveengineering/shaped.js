@@ -547,6 +547,16 @@ ServerEvents.recipes((event) => {
                 B: 'immersiveengineering:sheetmetal_colored_white'
             },
             id: 'immersiveengineering:crafting/metal_barrel'
+        },
+        {
+            output: '2x immersiveengineering:lantern',
+            pattern: [' A ', 'BCB', ' A '],
+            key: {
+                A: '#forge:plates/copper',
+                B: '#forge:glass_panes/colorless',
+                C: '#forge:dusts/glowstone'
+            },
+            id: 'immersiveengineering:crafting/lantern'
         }
     ];
 
