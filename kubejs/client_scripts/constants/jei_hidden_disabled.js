@@ -303,6 +303,13 @@ jei.expert.items.disabled = [
     'createaddition:portable_energy_interface',
     'createaddition:digital_adapter',
 
+    'compressedcreativity:compressed_iron_casing',
+    'compressedcreativity:brass_gilded_lapis_lazuli',
+    'compressedcreativity:brass_coated_upgrade_matrix',
+    'compressedcreativity:rotational_compressor',
+    'compressedcreativity:heater',
+    'compressedcreativity:mechanical_visor_upgrade',
+
     'emendatusenigmatica:refined_glowstone_nugget',
     'emendatusenigmatica:refined_glowstone_ingot',
     'emendatusenigmatica:refined_glowstone_block',

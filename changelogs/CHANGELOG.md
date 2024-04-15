@@ -1,5 +1,9 @@
 ### Enigmatica 9 v1.22.0
 
+### 🎁 New Mods Added
+
+-   [Compressed Creativity](https://www.curseforge.com/minecraft/mc-mods/compressedcreativity) (by [SuperMartijn642](https://www.curseforge.com/members/lgmrszd/projects))
+
 ### 🌟 Improvements
 
 -   [Expert] Massively buff Aura Infusion rewards [\#940](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/940)
