@@ -11,7 +11,7 @@
 
 ### 🐛 Fixed Bugs
 
--   [Expert] Add recipe for Ash Bricks [\#905](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/905)
+-   [Expert] Add recipe for Ash Bricks [\#950](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/950)
 
 ### Enigmatica 9 v1.21.0
 
