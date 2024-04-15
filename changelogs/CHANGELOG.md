@@ -2,7 +2,7 @@
 
 ### 🎁 New Mods Added
 
--   [Compressed Creativity](https://www.curseforge.com/minecraft/mc-mods/compressedcreativity) (by [SuperMartijn642](https://www.curseforge.com/members/lgmrszd/projects))
+-   [Compressed Creativity](https://www.curseforge.com/minecraft/mc-mods/compressedcreativity) (by [Lgmrszd](https://www.curseforge.com/members/lgmrszd/projects))
 
 ### 🌟 Improvements
 

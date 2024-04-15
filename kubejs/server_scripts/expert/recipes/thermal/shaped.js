@@ -493,6 +493,15 @@ ServerEvents.recipes((event) => {
                 E: 'thermal:redstone_servo'
             },
             id: 'thermal:device_xp_condenser'
+        },
+        {
+            output: 'thermal:slot_seal',
+            pattern: ['A A', ' B ', 'A A'],
+            key: {
+                A: '#forge:nuggets/aluminum',
+                B: '#forge:plates/aluminum'
+            },
+            id: 'thermal:slot_seal'
         }
     ];
 
