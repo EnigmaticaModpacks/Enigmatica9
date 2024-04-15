@@ -35,6 +35,11 @@ ServerEvents.recipes((event) => {
             output: '9x ars_nouveau:greater_experience_gem',
             inputs: ['create:experience_block'],
             id: `create:crafting/materials/experience_nugget_from_block`
+        },
+        {
+            output: 'create:ornate_iron_window',
+            inputs: ['quark:framed_glass'],
+            id: 'create:ornate_iron_window'
         }
     ];
 
