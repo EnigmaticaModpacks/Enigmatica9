@@ -129,6 +129,12 @@ ServerEvents.recipes((event) => {
         { id: 'createaddition:mixing/electrum' },
         { id: 'createaddition:crushing/diamond' },
 
+        { id: 'compressedcreativity:item_application/compressed_iron_casing_from_wood' },
+        { id: 'compressedcreativity:item_application/compressed_iron_casing_from_log' },
+        { id: 'compressedcreativity:mixing/brass_gilded_lapis_lazuli' },
+        { id: 'compressedcreativity:compacting/brass_coated_upgrade_matrix' },
+        { id: 'compressedcreativity:crafting/rotational_compressor' },
+
         { id: /emendatusenigmatica:plate\/from_ingot/ },
         { id: /emendatusenigmatica:rod\/from_ingot/ },
         { id: /emendatusenigmatica:gear\/from_ingot/ },
