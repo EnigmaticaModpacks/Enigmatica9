@@ -19,6 +19,7 @@ ServerEvents.recipes((event) => {
         { mod: 'rftoolsbuilder' },
         { mod: 'rftoolsbase' },
         { mod: 'shrink' },
+        { mod: 'charginggadgets' },
 
         { output: /pneumaticcraft:.*_upgrade/ },
         { output: /powah:player_transmitter.*/ },
