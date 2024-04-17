@@ -286,6 +286,8 @@ jei.expert.items.disabled = [
     'ars_nouveau:volcanic_sourcelink',
     'ars_nouveau:ritual_wilden_summon',
 
+    'charginggadgets:charging_station',
+
     'compactmachines:chunkloader_upgrade',
 
     'constructionwand:iron_wand',

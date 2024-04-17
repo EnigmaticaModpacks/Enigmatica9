@@ -13,6 +13,7 @@
 ### 🐛 Fixed Bugs
 
 -   [Expert] Add recipe for Ash Bricks [\#950](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/950)
+-   [Expert] Disable a coal gen that was missed [\#950](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/950)
 
 ### Enigmatica 9 v1.21.0
 
