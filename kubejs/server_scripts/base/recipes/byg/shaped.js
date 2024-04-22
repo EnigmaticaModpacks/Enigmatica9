@@ -49,6 +49,30 @@ ServerEvents.recipes((event) => {
         });
     });
 
+    const stone_conversions = [
+        'byg:rocky_stone',
+        'byg:dacite',
+        'byg:travertine',
+        'byg:soapstone',
+        'byg:scoria_stone',
+        'byg:red_rock'
+    ];
+
+    stone_conversions.forEach((stone, index) => {
+        let input = stone;
+        let output = index + 1 >= stone_conversions.length ? stone_conversions[0] : stone_conversions[index + 1];
+
+        recipes.push({
+            output: `8x ${output}`,
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: input,
+                B: '#forge:essences/manipulation'
+            },
+            id: `${id_prefix}${input.replace(':', '_')}_from_${output.replace(':', '_')}`
+        });
+    });
+
     recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });

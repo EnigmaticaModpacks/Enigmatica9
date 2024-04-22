@@ -11,6 +11,7 @@
 -   [Expert] Remove dependencies on iron from a lot of decorative blocks [\#950](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/950)
 -   Aura will no longer cause wild grass growth on byg grass blocks [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
 -   Added a bunch of conversion options for mossy variants [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
+-   Added crafting recipes for many stone variants [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
 
 ### 🐛 Fixed Bugs
 
