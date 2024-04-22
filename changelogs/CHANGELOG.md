@@ -15,6 +15,7 @@
 
 -   [Expert] Add recipe for Ash Bricks [\#950](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/950)
 -   [Expert] Disable a coal gen that was missed [\#952](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/952)
+-   [Expert] Fixed typo in Storage Actuator quest in chapter 2 [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
 
 ### Enigmatica 9 v1.21.0
 
