@@ -12,6 +12,7 @@
 -   Aura will no longer cause wild grass growth on byg grass blocks [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
 -   Added a bunch of conversion options for mossy variants [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
 -   Added crafting recipes for many stone variants [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
+-   [Expert] Motes now craft 1:1 with their potion to avoid leftovers [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
 
 ### 🐛 Fixed Bugs
 

@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
         },
         {
             input: [Item.of('minecraft:potion', '{Potion:"quark:strong_resilience"}').weakNBT().toJson()],
-            result: { item: 'kubejs:mote_of_enduring', count: 3 },
+            result: { item: 'kubejs:mote_of_enduring', count: 1 },
             energy: 51200,
             id: `${id_prefix}mote_of_enduring`
         }
