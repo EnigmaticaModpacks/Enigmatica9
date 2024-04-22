@@ -4,22 +4,6 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             item_in: { item: 'naturesaura:infused_iron_pickaxe' },
-            block_in: 'minecraft:cobblestone',
-            post: [
-                { type: 'prevent_default' },
-                { type: 'place', block: 'minecraft:mossy_cobblestone' },
-                { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 0.5 },
-                {
-                    type: 'execute',
-                    command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
-                    hide: true
-                }
-            ],
-            id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_cobblestone`
-        },
-        {
-            item_in: { item: 'naturesaura:infused_iron_pickaxe' },
             block_in: 'minecraft:farmland',
             post: [
                 { type: 'prevent_default' },
@@ -36,22 +20,6 @@ ServerEvents.recipes((event) => {
         },
         {
             item_in: { item: 'naturesaura:infused_iron_pickaxe' },
-            block_in: 'minecraft:stone',
-            post: [
-                { type: 'prevent_default' },
-                { type: 'place', block: 'minecraft:moss_block' },
-                { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 0.5 },
-                {
-                    type: 'execute',
-                    command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
-                    hide: true
-                }
-            ],
-            id: `${id_prefix}infused_iron_pickaxe_conversions/moss_block`
-        },
-        {
-            item_in: { item: 'naturesaura:infused_iron_pickaxe' },
             block_in: 'twilightforest:root',
             post: [
                 { type: 'prevent_default' },
@@ -65,102 +33,6 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}infused_iron_pickaxe_conversions/liveroot_block`
-        },
-        {
-            item_in: { item: 'naturesaura:infused_iron_pickaxe' },
-            block_in: 'minecraft:stone_bricks',
-            post: [
-                { type: 'prevent_default' },
-                { type: 'place', block: 'minecraft:mossy_stone_bricks' },
-                { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 0.5 },
-                {
-                    type: 'execute',
-                    command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
-                    hide: true
-                }
-            ],
-            id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_stone_bricks`
-        },
-        {
-            item_in: { item: 'naturesaura:infused_iron_pickaxe' },
-            block_in: 'minecraft:stone_brick_wall',
-            post: [
-                { type: 'prevent_default' },
-                { type: 'place', block: 'minecraft:mossy_stone_brick_wall' },
-                { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 0.5 },
-                {
-                    type: 'execute',
-                    command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
-                    hide: true
-                }
-            ],
-            id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_stone_brick_wall`
-        },
-        {
-            item_in: { item: 'naturesaura:infused_iron_pickaxe' },
-            block_in: 'minecraft:stone_brick_stairs',
-            post: [
-                { type: 'prevent_default' },
-                { type: 'place', block: 'minecraft:mossy_stone_brick_stairs' },
-                { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 0.5 },
-                {
-                    type: 'execute',
-                    command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
-                    hide: true
-                }
-            ],
-            id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_stone_brick_stairs`
-        },
-        {
-            item_in: { item: 'naturesaura:infused_iron_pickaxe' },
-            block_in: 'minecraft:cobblestone_stairs',
-            post: [
-                { type: 'prevent_default' },
-                { type: 'place', block: 'minecraft:mossy_cobblestone_stairs' },
-                { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 0.5 },
-                {
-                    type: 'execute',
-                    command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
-                    hide: true
-                }
-            ],
-            id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_cobblestone_stairs`
-        },
-        {
-            item_in: { item: 'naturesaura:infused_iron_pickaxe' },
-            block_in: 'minecraft:cobblestone_slab',
-            post: [
-                { type: 'prevent_default' },
-                { type: 'place', block: 'minecraft:mossy_cobblestone_slab' },
-                { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 0.5 },
-                {
-                    type: 'execute',
-                    command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
-                    hide: true
-                }
-            ],
-            id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_cobblestone_slab`
-        },
-        {
-            item_in: { item: 'naturesaura:infused_iron_pickaxe' },
-            block_in: 'minecraft:cobblestone_wall',
-            post: [
-                { type: 'prevent_default' },
-                { type: 'place', block: 'minecraft:mossy_cobblestone_wall' },
-                { type: 'damage_item', damage: 50 },
-                { type: 'add_item_cooldown', s: 0.5 },
-                {
-                    type: 'execute',
-                    command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
-                    hide: true
-                }
-            ],
-            id: `${id_prefix}infused_iron_pickaxe_conversions/mossy_cobblestone_wall`
         },
         {
             item_in: { item: 'naturesaura:infused_iron_pickaxe' },
@@ -452,6 +324,61 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}plant_torchberries`
         }
     ];
+
+    const mossy_conversions = [
+        { in: 'minecraft:cobblestone', out: 'minecraft:mossy_cobblestone' },
+        { in: 'minecraft:stone', out: 'minecraft:moss_block' },
+        { in: 'minecraft:stone_bricks', out: 'minecraft:mossy_stone_bricks' },
+        { in: 'minecraft:stone_brick_wall', out: 'minecraft:mossy_stone_brick_wall' },
+        { in: 'minecraft:stone_brick_stairs', out: 'minecraft:mossy_stone_brick_stairs' },
+        { in: 'minecraft:cobblestone_stairs', out: 'minecraft:mossy_cobblestone_stairs' },
+        { in: 'minecraft:cobblestone_slab', out: 'minecraft:mossy_cobblestone_slab' },
+        { in: 'minecraft:cobblestone_wall', out: 'minecraft:mossy_cobblestone_wall' },
+        { in: 'minecraft:stone_brick_slab', out: 'minecraft:mossy_stone_brick_slab' },
+        { in: 'byg:red_rock_bricks', out: 'byg:mossy_red_rock_bricks' },
+        { in: 'byg:red_rock_brick_stairs', out: 'byg:mossy_red_rock_brick_stairs' },
+        { in: 'byg:red_rock_brick_slab', out: 'byg:mossy_red_rock_brick_slab' },
+        { in: 'byg:red_rock_brick_wall', out: 'byg:mossy_red_rock_brick_wall' },
+        { in: 'byg:rocky_stone', out: 'byg:mossy_stone' },
+        { in: 'byg:rocky_stone_stairs', out: 'byg:mossy_stone_stairs' },
+        { in: 'byg:rocky_stone_slab', out: 'byg:mossy_stone_slab' },
+        { in: 'byg:rocky_stone_wall', out: 'byg:mossy_stone_wall' },
+        { in: 'twilightforest:etched_nagastone', out: 'twilightforest:mossy_etched_nagastone' },
+        { in: 'twilightforest:nagastone_pillar', out: 'twilightforest:mossy_nagastone_pillar' },
+        { in: 'twilightforest:nagastone_stairs_left', out: 'twilightforest:mossy_nagastone_stairs_left' },
+        { in: 'twilightforest:nagastone_stairs_right', out: 'twilightforest:mossy_nagastone_stairs_right' },
+        { in: 'twilightforest:mazestone_brick', out: 'twilightforest:mossy_mazestone' },
+        { in: 'twilightforest:underbrick', out: 'twilightforest:mossy_underbrick' },
+        { in: 'twilightforest:towerwood', out: 'twilightforest:mossy_towerwood' },
+        { in: 'twilightforest:castle_brick', out: 'twilightforest:mossy_castle_brick' },
+        { in: 'twilightforest:castle_brick_stairs', out: 'twilightforest:mossy_castle_brick_stairs' },
+        { in: 'quark:cobblestone_bricks', out: 'quark:mossy_cobblestone_bricks' },
+        { in: 'quark:cobblestone_bricks_slab', out: 'quark:mossy_cobblestone_bricks_slab' },
+        { in: 'quark:cobblestone_bricks_stairs', out: 'quark:mossy_cobblestone_bricks_stairs' },
+        { in: 'quark:cobblestone_bricks_wall', out: 'quark:mossy_cobblestone_bricks_wall' },
+        { in: 'quark:cobblestone_bricks_vertical_slab', out: 'quark:mossy_cobblestone_bricks_vertical_slab' },
+        { in: 'quark:stone_brick_vertical_slab', out: 'quark:mossy_stone_brick_vertical_slab' },
+        { in: 'quark:cobblestone_vertical_slab', out: 'quark:mossy_cobblestone_vertical_slab' }
+    ];
+
+    mossy_conversions.forEach((block) => {
+        recipes.push({
+            item_in: { item: 'naturesaura:infused_iron_pickaxe' },
+            block_in: block.in,
+            post: [
+                { type: 'prevent_default' },
+                { type: 'place', block: block.out },
+                { type: 'damage_item', damage: 50 },
+                { type: 'add_item_cooldown', s: 0.5 },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.stone.place block @p ~ ~ ~',
+                    hide: true
+                }
+            ],
+            id: `${id_prefix}infused_iron_pickaxe_conversions/${block.out.replace(':', '_')}`
+        });
+    });
 
     recipes.forEach((recipe) => {
         recipe.type = 'lychee:block_interacting';
