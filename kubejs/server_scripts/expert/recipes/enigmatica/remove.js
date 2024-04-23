@@ -19,6 +19,7 @@ ServerEvents.recipes((event) => {
         { mod: 'rftoolsbuilder' },
         { mod: 'rftoolsbase' },
         { mod: 'shrink' },
+        { mod: 'charginggadgets' },
 
         { output: /pneumaticcraft:.*_upgrade/ },
         { output: /powah:player_transmitter.*/ },
@@ -126,7 +127,14 @@ ServerEvents.recipes((event) => {
         { id: 'createaddition:compat/immersiveengineering/crushing/steel_ingot' },
         { id: 'createaddition:compat/immersiveengineering/constantan' },
         { id: 'createaddition:compat/immersiveengineering/electrum' },
+        { id: 'createaddition:mixing/electrum' },
         { id: 'createaddition:crushing/diamond' },
+
+        { id: 'compressedcreativity:item_application/compressed_iron_casing_from_wood' },
+        { id: 'compressedcreativity:item_application/compressed_iron_casing_from_log' },
+        { id: 'compressedcreativity:mixing/brass_gilded_lapis_lazuli' },
+        { id: 'compressedcreativity:compacting/brass_coated_upgrade_matrix' },
+        { id: 'compressedcreativity:crafting/rotational_compressor' },
 
         { id: /emendatusenigmatica:plate\/from_ingot/ },
         { id: /emendatusenigmatica:rod\/from_ingot/ },
@@ -452,7 +460,6 @@ ServerEvents.recipes((event) => {
         { id: 'powah:crafting/binding_card' },
         { id: 'powah:crafting/aerial_pearl' },
         { id: 'powah:crafting/energizing_orb' },
-        { id: 'powah:crafting/energizing_rod_basic' },
         { id: 'powah:energizing/ender_core' },
         { id: 'powah:energizing/blazing_crystal' },
         { id: 'powah:energizing/spirited_crystal' },
@@ -464,6 +471,7 @@ ServerEvents.recipes((event) => {
             id: /powah:crafting\/(thermo_generator|solar_panel|furnator|magmator|reactor|energy|cable|battery|ender)/
         },
         { id: /powah:crafting\/(energizing_rod_|player_transmitter_|capacitor_)(blazing|hardened)/ },
+        { id: /powah:crafting\/energizing_rod_(basic|spirited|nitro)/ },
 
         { id: /quark:.*rainbow_rune/ },
         { id: 'quark:building/smelting/moss_paste' },
@@ -475,24 +483,31 @@ ServerEvents.recipes((event) => {
         { id: 'rftoolsbase:infused_diamond' },
         { id: 'rftoolsbase:infused_enderpearl' },
 
-        { id: 'sophisticatedbackpacks:battery_upgrade' },
-        { id: 'sophisticatedstorage:gold_to_netherite_tier_upgrade' },
-        { id: 'sophisticatedstorage:iron_to_netherite_tier_upgrade' },
-        { id: 'sophisticatedstorage:iron_to_diamond_tier_upgrade' },
-        { id: 'sophisticatedstorage:basic_to_netherite_tier_upgrade' },
-        { id: 'sophisticatedstorage:basic_to_diamond_tier_upgrade' },
-        { id: 'sophisticatedstorage:basic_to_gold_tier_upgrade' },
+        { id: 'simplemagnets:basicmagnet' },
+        { id: 'simplemagnets:advancedmagnet' },
 
         { id: 'simplytools:diamond_hammer_head' },
         { id: 'simplytools:diamond_hammer' },
         { id: 'simplytools:diamond_excavator_head' },
         { id: 'simplytools:diamond_excavator' },
 
+        { id: 'sophisticatedbackpacks:battery_upgrade' },
+        { id: 'sophisticatedbackpacks:stack_upgrade_tier_1_from_starter' },
+        { id: 'sophisticatedbackpacks:iron_backpack_from_copper' },
+
         { id: /sophisticatedstorage:limited_/ },
         { id: /sophisticatedstorage:tier_upgrade_/ },
         { id: 'sophisticatedstorage:storage_link_from_controller' },
         { id: 'sophisticatedstorage:gold_to_diamond_tier_upgrade' },
         { id: 'sophisticatedstorage:stack_upgrade_tier_4' },
+        { id: 'sophisticatedstorage:stack_upgrade_tier_1_plus' },
+        { id: 'sophisticatedstorage:stack_upgrade_tier_2_from_tier_1_plus' },
+        { id: 'sophisticatedstorage:gold_to_netherite_tier_upgrade' },
+        { id: 'sophisticatedstorage:iron_to_netherite_tier_upgrade' },
+        { id: 'sophisticatedstorage:iron_to_diamond_tier_upgrade' },
+        { id: 'sophisticatedstorage:basic_to_netherite_tier_upgrade' },
+        { id: 'sophisticatedstorage:basic_to_diamond_tier_upgrade' },
+        { id: 'sophisticatedstorage:basic_to_gold_tier_upgrade' },
 
         { id: 'spirit:soul_engulfing/soul_powder' },
         { id: 'spirit:soul_engulfing/soul_powder_block' },
@@ -645,6 +660,7 @@ ServerEvents.recipes((event) => {
 
         { type: 'thermal:smelter' },
         { type: 'thermal:centrifuge', id: /centrifuge_.*_dust/ },
+        { type: 'thermal:centrifuge', id: /centrifuge_.*_crushed_raw/ },
         { type: 'thermal:pulverizer', id: /ingot_to_dust/ },
 
         { type: 'occultism:crushing', id: /dust/ },

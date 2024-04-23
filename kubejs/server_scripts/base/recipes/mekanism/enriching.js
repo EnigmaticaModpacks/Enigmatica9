@@ -28,11 +28,6 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}apatite_gem_from_dust`
         },
         {
-            input: '#forge:dusts/sulfur',
-            output: 'emendatusenigmatica:sulfur_gem',
-            id: `${id_prefix}sulfur_gem_from_dust`
-        },
-        {
             input: '#forge:dusts/cinnabar',
             output: 'emendatusenigmatica:cinnabar_gem',
             id: `${id_prefix}cinnabar_gem_from_dust`

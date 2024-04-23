@@ -12,7 +12,7 @@
 	#-----------------------------------------------------
 	#
 	# How rare Spider Infested Bee Dungeons are. Higher numbers means more rare.
-	# Default rate is 8. Setting to 1001 will disable Bee Dungeons.
+	# Default rate is 5. Setting to 1001 will disable Bee Dungeons.
 	#
 	#Range: 1 ~ 1001
 	spiderInfestedBeeDungeonRarity = 8

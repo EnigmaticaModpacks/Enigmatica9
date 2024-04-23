@@ -1240,7 +1240,7 @@
 				title: "Mechanical Piston"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.5d
 			y: 11.0d
 		}
 		{
@@ -1269,7 +1269,7 @@
 				item: "create:cart_assembler"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 8.5d
 			y: 11.0d
 		}
 		{
@@ -1293,7 +1293,7 @@
 				item: "create:mechanical_bearing"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.5d
 			y: 11.0d
 		}
 		{
@@ -1303,6 +1303,7 @@
 				"0000000000000D31"
 				"0000000000000D45"
 				"62D9A1A16024C3CD"
+				"573DDDE5ABD70C21"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -1363,7 +1364,7 @@
 				item: "create:mechanical_harvester"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 5.0d
 			y: 13.0d
 		}
 		{
@@ -1383,7 +1384,7 @@
 				item: "create:mechanical_drill"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 8.0d
 			y: 13.0d
 		}
 		{
@@ -1407,7 +1408,7 @@
 				item: "create:mechanical_plough"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 6.0d
 			y: 13.0d
 		}
 		{
@@ -1433,7 +1434,7 @@
 				item: "create:mechanical_saw"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 7.0d
 			y: 13.0d
 		}
 		{
@@ -1502,7 +1503,7 @@
 				item: "create:rope_pulley"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 7.5d
 			y: 11.0d
 		}
 		{
@@ -1747,7 +1748,7 @@
 				}
 			]
 			title: "Trains"
-			x: 7.0d
+			x: 6.5d
 			y: 11.0d
 		}
 		{
@@ -1839,7 +1840,7 @@
 			description: [
 				"Who knew a Blaze could get thirsty? They’re certainly not interested in Water, but other combustible fluids seem to hit the spot just fine. "
 				""
-				"Giving the Blaze a Straw allows them to accept liquid fuels instead. These will never burn as hot as a Blaze Cake, but they can make an excellent alternative to Coal for regular heating operations."
+				"Giving the Blaze a Straw allows them to accept liquid fuels instead. Check the uses on the Straw or Blaze Burner to see what fuels are valid."
 			]
 			id: "37476D4C70355E26"
 			rewards: [{
@@ -1939,6 +1940,56 @@
 			]
 			x: 1.5d
 			y: 7.0d
+		}
+		{
+			dependencies: ["0000000000000D33"]
+			description: [
+				"Placed in front of a rail-based contraption, Mechanical Rollers may be used to flatten terrain or fill gaps below the contraption.  "
+				""
+				" "
+				""
+				"This can be put to great use with a contraption that is designed to lay down track over a great distance.  "
+			]
+			id: "6E45E116BED181D2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "4B9B8B214639B964"
+				title: "Epic Create Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "608E399C89740766"
+				item: "create:mechanical_roller"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["0000000000000D2B"]
+			description: ["A more advanced form of the Rope Pulley which allows for intelligent floor control as an elevator. The elevator may be called from any floor and can be sent to any floor without stopping between.  "]
+			id: "573DDDE5ABD70C21"
+			rewards: [{
+				count: 4
+				id: "2438C69AE1D01ED7"
+				item: "create:elevator_contact"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3993263B6EDEA388"
+					item: "create:elevator_pulley"
+					type: "item"
+				}
+				{
+					id: "2E2793EF913F925F"
+					item: "create:contraption_controls"
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 11.0d
 		}
 	]
 	title: "Create"

@@ -162,7 +162,7 @@ EntityEvents.spawned((event) => {
                     let area = getSelectorArea(abs.x, abs.y, abs.z, 10);
 
                     // Warn player this cannot be perfomed in this dimension.
-                    command = `/execute in ${ritual_dimension} run title @p[${area}] subtitle {"text":"Destination Unreachable","color":"#D3D3D3"}`;
+                    command = `/execute in ${ritual_dimension} run title @p[${area}] subtitle {"text":"Destination Unreachable: ${ritual_effect.teleport.notification}","color":"#D3D3D3"}`;
                     schedule.server.runCommandSilent(command);
 
                     command = `/execute in ${ritual_dimension} run title @p[${area}] title {"text":"Teleportation Ritual","underlined":true,"color":"#EF0AEF"}`;

@@ -138,8 +138,8 @@
 					type: "item"
 				}
 			]
-			x: -8.0d
-			y: -10.0d
+			x: -8.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["000000000000045C"]
@@ -355,7 +355,7 @@
 				}
 			]
 			x: -8.0d
-			y: -9.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["358FAB3D482C463A"]
@@ -421,7 +421,7 @@
 				}
 			]
 			x: -9.5d
-			y: -7.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["358FAB3D482C463A"]
@@ -435,7 +435,7 @@
 			}]
 			title: "Chainsaw"
 			x: -8.5d
-			y: -8.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["358FAB3D482C463A"]
@@ -459,7 +459,7 @@
 				}
 				type: "item"
 			}]
-			x: -11.5d
+			x: -10.5d
 			y: -11.0d
 		}
 		{
@@ -794,7 +794,7 @@
 			]
 			title: "Spells"
 			x: -10.5d
-			y: -7.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["358FAB3D482C463A"]
@@ -827,33 +827,18 @@
 			}]
 			shape: "circle"
 			tasks: [{
-				id: "71303CACE8C59A83"
+				id: "7C89654304E16664"
 				item: {
 					Count: 1b
-					id: "itemfilters:or"
+					id: "itemfilters:id_regex"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "simplytools:diamond_hammer"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "simplytools:diamond_excavator"
-								tag: {
-									Damage: 0
-								}
-							}
-						]
+						value: "^simplytools:.*_(hammer|excavator)$"
 					}
 				}
 				title: "Excavators"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -9.5d
 			y: -11.0d
 		}
 		{
@@ -927,8 +912,8 @@
 					type: "item"
 				}
 			]
-			x: -12.0d
-			y: -10.0d
+			x: -11.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["358FAB3D482C463A"]
@@ -997,7 +982,7 @@
 				type: "item"
 			}]
 			x: -11.5d
-			y: -8.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["358FAB3D482C463A"]
@@ -1130,7 +1115,7 @@
 				}
 			]
 			x: -12.0d
-			y: -9.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["000000000000045C"]
@@ -1225,31 +1210,6 @@
 			}]
 			x: -10.0d
 			y: -13.0d
-		}
-		{
-			dependencies: ["358FAB3D482C463A"]
-			description: ["Great for quickly dismantling leaves on trees, the humble Hoe is also a workhorse out in the fields, scything down grass in large swaths with ease. "]
-			id: "25531EAF260F3944"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "4734ACE72F894A6E"
-				title: "Scavenger's Delight"
-				type: "command"
-			}]
-			tasks: [{
-				id: "03615540784DE72D"
-				item: {
-					Count: 1b
-					id: "minecraft:wooden_hoe"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -10.0d
-			y: -11.5d
 		}
 	]
 	title: "Equipment"

@@ -64,6 +64,16 @@ ServerEvents.recipes((event) => {
                 B: 'framedblocks:framed_cube'
             },
             id: `${id_prefix}framed_fancy_rail_from_osmium`
+        },
+        {
+            output: 'framedblocks:framed_key',
+            pattern: ['AAB', 'CC '],
+            key: {
+                A: '#forge:rods/wooden',
+                B: 'framedblocks:framed_cube',
+                C: '#forge:nuggets/bronze'
+            },
+            id: 'framedblocks:framed_key'
         }
     ];
 

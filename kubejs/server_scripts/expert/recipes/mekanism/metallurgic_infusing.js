@@ -112,6 +112,24 @@ ServerEvents.recipes((event) => {
             itemInput: { ingredient: { item: 'quark:dragon_scale' } },
             chemicalInput: { infuse_type: 'mekanism:diamond', amount: 20 },
             id: `${id_prefix}alloy_reinforced`
+        },
+        {
+            output: { item: 'minecraft:golden_apple' },
+            itemInput: { ingredient: { item: 'create:honeyed_apple' } },
+            chemicalInput: { infuse_type: 'mekanism:gold', amount: 20 },
+            id: `${id_prefix}golden_apple`
+        },
+        {
+            output: { item: 'minecraft:golden_carrot' },
+            itemInput: { ingredient: { item: 'minecraft:carrot' } },
+            chemicalInput: { infuse_type: 'mekanism:gold', amount: 20 },
+            id: `${id_prefix}golden_carrot`
+        },
+        {
+            output: { item: 'minecraft:glistering_melon_slice' },
+            itemInput: { ingredient: { item: 'minecraft:melon_slice' } },
+            chemicalInput: { infuse_type: 'mekanism:gold', amount: 20 },
+            id: `${id_prefix}glistering_melon_slice`
         }
     ];
 

@@ -378,7 +378,7 @@
 				item: "ars_nouveau:bookwyrm_charm"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -6.5d
 			y: 0.0d
 		}
 		{
@@ -415,7 +415,7 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.5d
 			y: -0.5d
 		}
 		{
@@ -560,7 +560,7 @@
 					type: "item"
 				}
 			]
-			x: -7.0d
+			x: -7.5d
 			y: -0.5d
 		}
 		{
@@ -1171,7 +1171,7 @@
 				item: "ars_nouveau:familiar_wixie"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.5d
 			y: 0.0d
 		}
 		{
@@ -1196,7 +1196,7 @@
 		}
 		{
 			dependencies: ["33F9C7DCBA952F1E"]
-			description: ["With their deep link to Source, Bookwyrms make excellent allies, lending their strength to each of their partner’s spell casts. "]
+			description: ["With their deep link to Source, Bookwyrms make excellent allies, collecting anything they find laying around and bringing it to you. "]
 			id: "699DD621303B1301"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
@@ -1211,7 +1211,7 @@
 				item: "ars_nouveau:familiar_bookwyrm"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: -0.5d
 		}
 		{
@@ -1231,7 +1231,7 @@
 				item: "ars_nouveau:familiar_whirlisprig"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: -0.5d
 		}
 		{
@@ -1787,18 +1787,11 @@
 				title: "Sorcerer's Delight"
 				type: "command"
 			}]
-			tasks: [
-				{
-					id: "0E7FDC5948AB7296"
-					item: "ars_nouveau:ritual_awakening"
-					type: "item"
-				}
-				{
-					id: "68A25EFE4671BDAC"
-					item: "ars_nouveau:amethyst_golem_charm"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0E7FDC5948AB7296"
+				item: "ars_nouveau:ritual_awakening"
+				type: "item"
+			}]
 			x: 2.5d
 			y: 3.0d
 		}
@@ -1950,6 +1943,7 @@
 				""
 				"Need them to access a specific side? Use a Direction Scroll to set their preferred side. These are set by looking in the desired direction and Sneak + Right-Clicking them. Then use the scroll on the Starbuncle."
 			]
+			icon: "ars_nouveau:starbuncle_shards"
 			id: "355D6EAEA6130932"
 			rewards: [
 				{
@@ -1967,7 +1961,11 @@
 			]
 			tasks: [{
 				id: "01C1E69E6C4CCEB7"
-				item: "ars_nouveau:starbuncle_shards"
+				item: {
+					Count: 1b
+					id: "ars_nouveau:starbuncle_charm"
+					tag: { }
+				}
 				type: "item"
 			}]
 			title: "Starbuncle Logistics"
@@ -2300,6 +2298,48 @@
 			}]
 			x: 0.5d
 			y: -5.0d
+		}
+		{
+			dependencies: ["33F9C7DCBA952F1E"]
+			description: ["With their deep connection with the earth, Amethyst Golems make powerful familiars who strengthen one's ties to the ground. "]
+			id: "0C5EBDAAB1D22839"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "253EEBCD3C0EBE2C"
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			subtitle: "Don't Be Shy, Be a Little Boulder!"
+			tasks: [{
+				id: "00184C48F93739DB"
+				item: "ars_nouveau:familiar_amethyst_golem"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00000000000009ED"]
+			description: [
+				"These steadfast little creatures have an insatiable desire for crystals of all kinds. Give an Amethyst golem a budding crystal and it will not only speed its growth, but also cut you in on the harvest.  "
+				""
+				"Amethyst Golems will work with any Budding Crystal block in the pack. However, their ability to transform blocks into budding blocks is limited to Amethyst.  "
+			]
+			id: "648E7D7013E1D487"
+			rewards: [{
+				id: "43AFFE8A65B64DB3"
+				item: "chimes:amethyst_chimes"
+				type: "item"
+			}]
+			subtitle: "It's Geo Time!"
+			tasks: [{
+				id: "3E56ECA8F0D20395"
+				item: "ars_nouveau:amethyst_golem_charm"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
 		}
 	]
 	title: "Ars Nouveau"

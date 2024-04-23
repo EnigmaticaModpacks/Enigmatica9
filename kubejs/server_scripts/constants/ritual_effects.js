@@ -39,6 +39,8 @@ const ritual_effects = {
             arrival: 'minecraft:overworld',
             // Only allow departure from these dimensions
             departure: ['twilightforest:twilight_forest'],
+            // Message to display on failure
+            notification: 'Must depart from the Twilight Forest',
             // How random the teleport destination is
             uncertainty: 5000,
             // Maximum number of entities to affect
@@ -69,6 +71,8 @@ const ritual_effects = {
             arrival: 'minecraft:the_nether',
             // Only allow departure from these dimensions
             departure: ['twilightforest:twilight_forest'],
+            // Message to display on failure
+            notification: 'Must depart from the Twilight Forest',
             // How random the teleport destination is
             uncertainty: 5000,
             // Maximum number of entities to affect
@@ -99,6 +103,8 @@ const ritual_effects = {
             arrival: 'minecraft:the_end',
             // Only allow departure from these dimensions
             departure: ['twilightforest:twilight_forest'],
+            // Message to display on failure
+            notification: 'Must depart from the Twilight Forest',
             // How random the teleport destination is
             uncertainty: 10000,
             // Maximum number of entities to affect

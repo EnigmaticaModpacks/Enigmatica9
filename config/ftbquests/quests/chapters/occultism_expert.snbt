@@ -143,8 +143,6 @@
 				"Communication and Trade with the Otherworld are feasible and safe for the acolyte, though some specialized materials will be required to begin. "
 				""
 				"Purified Ink is the only known substance suitable for transcribing the names of Spirits for use in ritual magic. Anything else has a strange tendency to fade, as if it would rather not be involved. "
-				""
-				"Burnt Otherstone and Otherworld Ashes may be combined and purified to form a specialized form of chalk suitable for drawing the ritual circles used in rituals. "
 			]
 			hide_dependency_lines: true
 			id: "5779806AB9F94AC5"
@@ -173,11 +171,6 @@
 				{
 					id: "68921B19CAED8BD1"
 					item: "occultism:purified_ink"
-					type: "item"
-				}
-				{
-					id: "72C9477A65D081AC"
-					item: "occultism:otherworld_ashes"
 					type: "item"
 				}
 				{
@@ -1029,10 +1022,13 @@
 				type: "command"
 			}]
 			tasks: [{
-				advancement: "occultism:occultism/familiar/root"
-				criterion: ""
-				id: "5F5C381C9D83480E"
-				type: "advancement"
+				icon: "occultism:ritual_dummy/custom_ritual"
+				id: "4FF02C15A8C5ABE6"
+				observe_type: 6
+				timer: 0L
+				title: "Observe an Occultism Familiar"
+				to_observe: "#occultism:familiars"
+				type: "observation"
 			}]
 			title: "Familiars"
 			x: 18.0d

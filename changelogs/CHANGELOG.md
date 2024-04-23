@@ -1,10 +1,239 @@
+### Enigmatica 9 v1.22.0
+
+### 🎁 New Mods Added
+
+-   [Compressed Creativity](https://www.curseforge.com/minecraft/mc-mods/compressedcreativity) (by [Lgmrszd](https://www.curseforge.com/members/lgmrszd/projects))
+
+### 🌟 Improvements
+
+-   [Expert] Massively buff Aura Infusion rewards [\#940](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/940)
+-   Add several new brewable potions, including higher tiers of some existing potions [\#943](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/943)
+-   [Expert] Remove dependencies on iron from a lot of decorative blocks [\#950](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/950)
+
+### 🐛 Fixed Bugs
+
+-   [Expert] Add recipe for Ash Bricks [\#950](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/950)
+-   [Expert] Disable a coal gen that was missed [\#952](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/952)
+
+### Enigmatica 9 v1.21.0
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.20.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.20.1.md)
+
+### 🌟 Improvements
+
+-   [Expert] Adjusted Integral Components recipes to make automating them somewhat easier [\#904](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/904)
+-   Add more fun uses for Ars charms [\#904](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/904)
+-   Cicadas, Fireflies, and Backpacks will no longer generate with Apotheosis Affixes [\#904](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/904)
+-   Adds several community suggested Caster Tomes to loot! [\#906](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/906)
+-   [Expert] Teleportation rituals now inform the player why they failed if executed in the wrong dimension [\#912](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/912)
+-   [Expert] Motes now require regular potions instead of lingering potions [\#912](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/912)
+-   [Expert] Wind Shear glyph now uses Skyseeker's Blade instead of Iron Swords [\#917](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/917)
+-   [Expert] Skyseeker's Boots no longer provide step up [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
+-   Hexerei drying rack quests now accept any drying rack [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
+-   [Expert] Ars Nouveau threads that require a familiar shard now also accept the corresponding charm [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
+-   [Expert] Adjust ratio of dimension shards to metal crystals [\#922](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/922)
+-   Clarify Create quests for straws [\#923](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/923)
+-   Tablet of Awakening quest no longer requires an Amethyst Golem Charm [\#926](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/926)
+-   [Expert] Mekanism Teleporter Frames now craft in batches of 9 [\#926](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/926)
+-   Added entries for Amethyst Golems in Ars Nouveau's quests [\#928](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/928)
+-   Ars Nouveau's Fell spell will now harvest roots/liveroots from Twilight trees [\#939](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/939)
+-   Add crystallizer recipes for Fluix, Certus, and Amethyst Dust [\#939](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/939)
+-   Fire resist potions may now be crafted from wasabi [\#939](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/939)
+
+### 🐛 Fixed Bugs
+
+-   [Expert] Ars Nouveau quests no longer accept disabled source links [\#905](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/905)
+-   Correct quest description for bookwyrm familiars [\#912](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/912)
+-   Fixed an issue with Gateways crashing the game if used in a Compact Machine [\#912](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/912)
+-   [Expert] Mekanism tanks may no longer be upgraded in world [\#912](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/912)
+-   Fix missing stripped log/wood tags [\#915](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/915)
+-   [Expert] Occultism quests no longer require otherworld ash [\#917](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/917)
+-   [Expert] Fix broken Parrot Familiar summon [\#920](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/920)
+-   Add default tool for Enigmatic Unity and Energy Meters [\#921](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/921)
+-   Clarified Assembly Table quests [\#932](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/932)
+-   Remove duplicate saplings from Market [\#939](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/939)
+
+---
+
+### Enigmatica 9 v1.20.1
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.20.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.20.1.md)
+
+### 🐛 Fixed Bugs
+
+-   Downgraded the Rhino mod to fix an issue with teleportation
+
+---
+
+### Enigmatica 9 v1.20.0
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.20.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.20.0.md)
+
+### 🌟 Improvements
+
+-   [Expert] Adjust sophisticated storage stack upgrade recipes to account for new copper tier [\#878](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/878)
+-   [Expert] Market recipe now uses all 5 archwood saplings to help avoid confusion with the recipe [\#881](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/881)
+-   [Expert] Reduce mining level of Redstone to make the early game a little less confusing [\#888](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/888)
+-   [Expert] The Tree of Life no longer grows with Pedestals inside, which often mess up item placement. Existing ToLs will work with pedestals but newly built/upgraded ones will generate with Liveroot blocks in their place instead. [\#899](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/899)
+-   [Expert] Custom Pentacles will now display with the standard checkerboard floor instead of all black. [\#899](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/899)
+-   [Expert] Gythia's and Birog's pentacles will now cycle through candles to show they'll accept any candle. [\#901](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/901)
+-   [Expert] Omni Hoppers can now be crafted earlier. [\#902](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/902)
+
+### 🐛 Fixed Bugs
+
+-   [Expert] Properly hide disabled limited barrels [\#878](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/878)
+-   [Expert] Removed disabled tank from IE quest chapters [\#879](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/879)
+-   [Expert] Fix for the honey compass quest for the Ancient City not completing [\#884](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/884)
+-   [Expert] Remove erroneous reference to hoes being used to clear grass [\#888](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/888)
+-   [Expert] Restore missing Dreamstone trade with the Queen Bee [\#888](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/888)
+-   Occultism Familiars quest now relies on seeing a familiar instead of getting the advancement [\#892](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/892)
+-   Fix Certus Quartz not behaving with annihilation planes [\#887](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/887)
+-   Blacklisted the Quest Ram from Create Seats to avoid a dupe bug [\#896](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/896)
+-   [Expert] Properly hide/disable unwanted sophisticated crafts [\#898](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/898)
+
+---
+
+### Enigmatica 9 v1.19.1
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.19.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.19.1.md)
+
+### 🌟 Improvements
+
+-   Remove Entangled restrictions on AE2 [\#877](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/877)
+
+### 🐛 Fixed Bugs
+
+-   [Expert] Remove reference to wool in Create Windmill quest [\#874](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/874)
+-   Fix teleportation between dimensions not working
+
+---
+
+### Enigmatica 9 v1.19.0
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.19.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.19.0.md)
+
+### 🎁 New Mods Added
+
+-   [Simple Magnets](https://www.curseforge.com/minecraft/mc-mods/simple-magnets) (by [SuperMartijn642](https://www.curseforge.com/members/SuperMartijn642/projects))
+
+### 🌟 Improvements
+
+-   [Expert] Ether Gas is now produced faster [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
+-   [Expert] Reinforced Deepslate may now be requested from the Queen Bee [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
+-   [Expert] A new Honey Compass may be crafted that will point the way to an Ancient City to help with the random nature of their spawn [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
+-   Sourcestone now has a chance to drop as loot in Hollow Hills and other Twilight Forest structures [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
+-   [Expert] Many PNC Upgrades are now available earlier in the game [\#851](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/851)
+-   [Expert] Alternate recipes for some Ars Charms, such as Wixies, have been added to the Aura Forge [\#851](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/851)
+-   [Expert] Uncap the Aetheric Transmutation Chamber, allowing it to run much faster. [\#854](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/854)
+-   [Expert] Remove chance of failure when using lightning crafting to do final tier of ore processing [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
+-   Slight buff to all crystal cluster drop rates [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
+-   Slight buff to Charcoal > Coal conversion rate with Nature's Aura [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
+-   [Expert] Golden Apples, Golden Carrots, and Glistering Melons all have a new recipe in Mekanism [\#857](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/857)
+-   Golden Apples, Golden Carrots, and Glistering Melons recipe in Nature's Aura has had the time/aura cost normalized across the board. Apples and carrots now craft significantly faster while melons will be a bit slower. [\#857](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/857)
+-   [Expert] Attempt to clarify EMI description for Ars Nouveau fruit [\#857](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/857)
+-   [Expert] Rebalance Powah energizing (Resonating Crystal Ball) rates to speed up the creation of end game materials [\#859](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/859)
+-   [Expert] Adds many alternative recipes to the Resonating Crystal to reduce reliance on Tesla Coils, such as Charged Certus and Kaolin Clay [\#859](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/859)
+-   [Expert] Adds a Chapter 2 recipe for Novice Spellbooks to allow crafting more if desired. [\#863](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/863)
+-   Blacklist Spellbooks from being inserted into Containment Jars. [\#869](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/869)
+-   [Expert] Reduced processing time for Enderium [\#872](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/872)
+
+### 🐛 Fixed Bugs
+
+-   Disable Charm of Keeping as it is already covered by Enigmatic Graves [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
+-   [Expert] Integral Components from quests now match the levels of crafted augments [\#850](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/850)
+-   [Expert] Remove broken recipes for Iesnium Dust [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
+-   Remove unintended Osmium ore recipe from Pulverizer [\#855](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/855)
+-   [Expert] Fixed typo in Nomadic Tent quest [\#857](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/857)
+-   Hidden quests should no longer show by default when opening the quest book [\#860](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/860)
+-   [Expert] Remove unintended electrum bar recipe [\#861](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/861)
+-   [Expert] Remove extra energizing rod recipes, leaving only the cheap intended ones [\#863](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/863)
+-   [Expert] Fix the Spellbook drop from the Lich to properly drop multiple. [\#863](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/863)
+
+---
+
+### Enigmatica 9 v1.18.0
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.18.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.18.0.md)
+
+### 🎁 New Mods Added
+
+-   [bad packets](https://www.curseforge.com/minecraft/mc-mods/badpackets) (by [badasintended](https://www.curseforge.com/members/badasintended/projects))
+-   [EMI Loot](https://www.curseforge.com/minecraft/mc-mods/emi-loot) (by [fzzyhmstrs](https://www.curseforge.com/members/fzzyhmstrs/projects))
+
+### 🌟 Improvements
+
+-   Excavator quest now accepts any tier of excavator/hammer [\#827](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/827)
+-   End City Loot no longer has iron equipment, slightly buffing the odds of getting better loot [\#829](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/829)
+-   PNC's new Thermostat module is now slightly easier to craft and has been given a quest [\#829](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/829)
+-   [Expert] Lich should no longer spill loot on the ground outside the chest [\#829](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/829)
+-   Badlands Creepers now drop terracotta instead of gold nuggets [\#829](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/829)
+-   [Expert] Quests have been clarified to help with Lead/Sensitive/Glyph/Antique Ink progression [\#832](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/832)
+-   A number of in world conversions now have Lychee dummy recipes to highlight them, such as getting Straw from Grass or making Wixie Cauldrons [\#832](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/832)
+-   [Expert] Renamed Andesite Doors to Compressed Stone Doors [\#837](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/837)
+-   New quests added for Mechanical Roller and Elevator Pulley [\#837](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/837)
+-   [Expert] Gauge Dropper is no longer gated behind Osmium [\#838](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/838)
+-   [Expert] Reduce cost of Hexerei Reading Glasses [\#842](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/842)
+
+### 🐛 Fixed Bugs
+
+-   [Normal] Fix missing crushing recipes for Copper/Gold/Iron [\#830](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/830)
+-   [Expert] Fix issue causing Dream Stone to sometimes not drop [\#842](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/842)
+-   [Expert] Fix being unable to enter the Overworld through rituals. [\#840](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/840)
+
+---
+
+### Enigmatica 9 v1.17.2
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.17.2.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.17.2.md)
+
+### 🐛 Fixed Bugs
+
+-   Crashing in the Ur-Ghast dungeon [\#824](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/824)
+
+---
+
+### Enigmatica 9 v1.17.1
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.17.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.17.1.md)
+
+### Removed Mods
+
+-   [Emojiful](https://www.curseforge.com/minecraft/mc-mods/emojiful) (by [MrCrayfish](https://www.curseforge.com/members/Buuz135/projects))
+    -   Due to issues with Patchouli books
+
+### 🐛 Fixed Bugs
+
+-   Restore missing dust crushing recipes [\#822](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/822)
+-   Remove ore centrifuge recipes [\#823](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/823)
+
+---
+
 ### Enigmatica 9 v1.17.0
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.17.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.17.0.md)
+
+### Removed Mods
+
+-   [Catalogue](https://www.curseforge.com/minecraft/mc-mods/catalogue) (by [MrCrayfish](https://www.curseforge.com/members/MrCrayfish/projects))
+    -   Due to a cross-mod compatibility issue that could cause issues with entities if the mod menu was accessed before joining a world [\#765](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/765)
 
 ### 🌟 Improvements
 
 -   [Expert] Changed the Dropping Conveyor Belt to be available earlier, by swapping the Iron Trapdoor for a Hopper. [\#809](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/809)
 -   Changed the Belt of Unstable Gifts to remove annoying vision altering buffs (Night Vision, Speed) while adding many other fun buffs. [\#803](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/803)
 -   [Expert] The Snow Queen and Questing Ram now drop Budding versions of their crystal resource to nudge players towards growing more. [\#805](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/805)
+
+### 🐛 Fixed Bugs
+
+-   Remove conflicting Sulfur Enriching recipe [\#819](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/819)
+-   Queen Bee Crash (Sticky Honey Redstone bounds crash) [\#798](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/798)
+-   Making an Enchanter's Crossbow wipes the crossbow's NBT data [\#820](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/820)
+-   Missing World Generation Info for certain ores / Ores not showing in JEI [\#677](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/677)
+-   Amethyst can get duped or reduced with compacting drawers [\#731](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/731)
+-   Found disabled items in create dungeon [\#744](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/744)
+-   Player and mobs invisible after creating a new world. [\#765](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/765)
+
+---
 
 ### Enigmatica 9 v1.16.1
 

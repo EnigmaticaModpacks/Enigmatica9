@@ -62,24 +62,24 @@ ServerEvents.recipes((event) => {
             output: 'minecraft:golden_apple',
             input: 'create:honeyed_apple',
             catalyst: 'naturesaura:conversion_catalyst',
-            aura: 60000,
-            time: 200,
+            aura: 18000,
+            time: 60,
             id: `${id_prefix}golden_apple`
         },
         {
             output: 'minecraft:golden_carrot',
             input: 'minecraft:carrot',
             catalyst: 'naturesaura:conversion_catalyst',
-            aura: 30000,
-            time: 100,
+            aura: 18000,
+            time: 60,
             id: `${id_prefix}golden_carrot`
         },
         {
             output: 'minecraft:glistering_melon_slice',
             input: 'minecraft:melon_slice',
             catalyst: 'naturesaura:conversion_catalyst',
-            aura: 6000,
-            time: 20,
+            aura: 18000,
+            time: 60,
             id: `${id_prefix}glistering_melon_slice`
         },
         {
@@ -93,16 +93,16 @@ ServerEvents.recipes((event) => {
             output: 'minecraft:coal',
             input: '#forge:gems/charcoal',
             catalyst: 'naturesaura:conversion_catalyst',
-            aura: 15000,
-            time: 50,
+            aura: 6000,
+            time: 20,
             id: `naturesaura:altar/coal`
         },
         {
             output: 'minecraft:coal_block',
             input: '#forge:storage_blocks/charcoal',
             catalyst: 'naturesaura:conversion_catalyst',
-            aura: 15000 * 8,
-            time: 400,
+            aura: 6000 * 8,
+            time: 20 * 8,
             id: `${id_prefix}coal_block`
         }
     ];

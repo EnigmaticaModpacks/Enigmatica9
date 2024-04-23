@@ -642,11 +642,10 @@ ServerEvents.recipes((event) => {
                     Lore: ['{"translate":"item.occultism.ritual_dummy.familiar_parrot.tooltip"}']
                 }
             }),
-            ritual_type: 'occultism:summon_with_chance_of_chicken_tamed',
             activation_item: '#forge:essences/conjuration',
             pentacle_id: 'occultism:summon_familiar',
             entity_to_summon: 'minecraft:parrot',
-            ritual_type: 'occultism:familiar',
+            ritual_type: 'occultism:summon_tamed',
             ritual_dummy: 'occultism:ritual_dummy/familiar_parrot',
             inputs: [
                 'hexerei:mindful_trance_blend',
@@ -1429,18 +1428,18 @@ ServerEvents.recipes((event) => {
             inputs: [
                 'hexerei:mindful_trance_blend',
                 'naturesaura:gold_leaf',
-                'naturesaura:gold_leaf',
+                'ars_nouveau:purple_archwood_sapling',
                 'naturesaura:gold_leaf',
 
-                'ars_elemental:yellow_archwood',
-                'ars_nouveau:green_archwood_wood',
-                'ars_nouveau:blue_archwood_wood',
-                'ars_nouveau:red_archwood_wood',
+                'naturesaura:gold_leaf',
+                'naturesaura:gold_leaf',
+                'ars_nouveau:blue_archwood_sapling',
+                'ars_elemental:yellow_archwood_sapling',
 
-                'ars_elemental:yellow_archwood',
-                'ars_nouveau:green_archwood_wood',
-                'ars_nouveau:blue_archwood_wood',
-                'ars_nouveau:red_archwood_wood'
+                'naturesaura:gold_leaf',
+                'ars_nouveau:green_archwood_sapling',
+                'ars_nouveau:red_archwood_sapling',
+                'naturesaura:gold_leaf'
             ],
             ritual_dummy: 'kubejs:ritual_craft_market',
             ritual_type: 'occultism:craft',

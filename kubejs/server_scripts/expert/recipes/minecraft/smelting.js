@@ -15,6 +15,12 @@ ServerEvents.recipes((event) => {
             output: 'minecraft:nether_brick',
             xp: 0.5,
             id: `${id_prefix}nether_brick`
+        },
+        {
+            input: 'supplementaries:ash',
+            output: 'supplementaries:ash_brick',
+            xp: 0.5,
+            id: `${id_prefix}ash_brick`
         }
     ];
 

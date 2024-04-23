@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
-            output: '8x mekanism:teleporter_frame',
+            output: '9x mekanism:teleporter_frame',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: 'ars_nouveau:sourcestone',
@@ -447,6 +447,15 @@ ServerEvents.recipes((event) => {
                 B: 'create:fluid_valve'
             },
             id: 'mekanism:dynamic_valve'
+        },
+        {
+            output: 'mekanism:gauge_dropper',
+            pattern: ['A', 'B'],
+            key: {
+                A: 'thermal:cured_rubber',
+                B: 'minecraft:glass_bottle'
+            },
+            id: 'mekanism:gauge_dropper'
         }
     ];
 

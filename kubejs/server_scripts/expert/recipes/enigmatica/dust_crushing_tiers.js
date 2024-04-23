@@ -49,9 +49,12 @@ ServerEvents.recipes((event) => {
     metals.forEach((metal) => {
         if (metal_properties[metal].crushing_tier && Item.exists(`emendatusenigmatica:${metal}_dust`)) {
             let input_types = [];
-            if (Item.exists(`emendatusenigmatica:${metal}_ingot`)) input_types.push('ingots');
-            if (Item.exists(`emendatusenigmatica:${metal}_plate`)) input_types.push('plates');
-            if (Item.exists(`emendatusenigmatica:${metal}_gear`)) input_types.push('gears');
+            let ingot = Item.of(AlmostUnified.getPreferredItemForTag(`forge:ingots/${metal}`)).getId();
+            let plate = Item.of(AlmostUnified.getPreferredItemForTag(`forge:plates/${metal}`)).getId();
+            let gear = Item.of(AlmostUnified.getPreferredItemForTag(`forge:gears/${metal}`)).getId();
+            if (ingot !== air) input_types.push('ingots');
+            if (plate !== air) input_types.push('plates');
+            if (gear !== air) input_types.push('gears');
 
             recipes.push({
                 input_types: input_types,

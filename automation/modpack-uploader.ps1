@@ -146,7 +146,8 @@ function New-ClientFiles {
         Remove-BlacklistedFiles
 
         # Zipping up the newly created overrides folder and $manifest
-        7z a $clientZip ($overridesFolder, $manifest) -r -sdel
+        7z a $clientZip $manifest -sdel
+        7z a $clientZip $overridesFolder -r -sdel
 
         Remove-Item $manifest -Force -Recurse -ErrorAction SilentlyContinue
         Write-Host "Client files $clientZip created!" -ForegroundColor Green

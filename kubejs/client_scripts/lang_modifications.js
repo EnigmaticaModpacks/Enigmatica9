@@ -90,6 +90,20 @@ const entries = {
     ],
     create: [
         {
+            key: 'block.create.ornate_iron_window',
+            value: {
+                normal: 'Ornate Iron Window',
+                expert: 'Ornate Framed Window'
+            }
+        },
+        {
+            key: 'block.create.ornate_iron_window_pane',
+            value: {
+                normal: 'Ornate Iron Window Pane',
+                expert: 'Ornate Framed Window Pane'
+            }
+        },
+        {
             key: 'block.create.industrial_iron_block',
             value: {
                 normal: 'Block of Industrial Iron',
@@ -262,6 +276,13 @@ const entries = {
             value: {
                 normal: 'Brass Door',
                 expert: 'Fancy Door'
+            }
+        },
+        {
+            key: 'block.create.andesite_door',
+            value: {
+                normal: 'Andesite Door',
+                expert: 'Compressed Stone Door'
             }
         },
         {
@@ -1386,6 +1407,13 @@ const entries = {
                 normal: 'Bumblezone teleport failed. Hive needs a required block below it.',
                 expert: 'Bumblezone teleport failed. Hive needs a Mekanism Teleporter below it.'
             }
+        },
+        {
+            key: 'item.the_bumblezone.honey_compass_structure_failed',
+            value: {
+                normal: 'Honey Compass - Structure locating failed...',
+                expert: 'Honey Compass - Right click to search...'
+            }
         }
     ],
     quark: [
@@ -1613,6 +1641,29 @@ const entries = {
             value: {
                 normal: 'Ancient',
                 expert: 'Resplendent Elder'
+            }
+        }
+    ],
+    compressedcreativity: [
+        {
+            key: 'compressedcreativity.ponder.compressed_air_engine.text_1',
+            value: {
+                normal: `Compressed Air Engine uses pressurized air to create rotational force`,
+                expert: `Zephyr Engine uses pressurized air to create rotational force`
+            }
+        },
+        {
+            key: 'block.compressedcreativity.compressed_air_engine',
+            value: {
+                normal: `Compressed Air Engine`,
+                expert: `Zephyr Engine`
+            }
+        },
+        {
+            key: 'block.compressedcreativity.industrial_air_blower',
+            value: {
+                normal: `Industrial Air Blower`,
+                expert: `Spellbound Air Blower`
             }
         }
     ]

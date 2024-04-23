@@ -393,50 +393,42 @@ ServerEvents.recipes((event) => {
         {
             output: 'thermal:upgrade_augment_1',
             inputs: [
+                '#industrialforegoing:machine_frame/simple',
                 'ae2:spatial_cell_component_2',
                 '#forge:gears/compressed_iron',
-                'immersiveengineering:component_electronic',
+                'immersiveengineering:electron_tube',
                 '#forge:gears/compressed_iron',
-                'ae2:spatial_cell_component_2',
-                '#forge:gears/compressed_iron',
-                'immersiveengineering:component_electronic',
-                '#forge:gears/compressed_iron'
+                'ae2:spatial_cell_component_2'
             ],
-            reagents: ['#industrialforegoing:machine_frame/simple'],
+            reagents: ['immersiveengineering:component_electronic'],
             sourceCost: 1000,
             id: `${id_prefix}upgrade_augment_1`
         },
         {
             output: Item.of('thermal:upgrade_augment_2', '{AugmentData:{BaseMod:4,Type:"Upgrade"}}'),
             inputs: [
-                'thermal:upgrade_augment_1',
+                '#industrialforegoing:machine_frame/advanced',
                 'ae2:spatial_cell_component_2',
                 '#forge:gears/diamond',
                 'pneumaticcraft:printed_circuit_board',
                 '#forge:gears/diamond',
-                'ae2:spatial_cell_component_2',
-                '#forge:gears/diamond',
-                'pneumaticcraft:printed_circuit_board',
-                '#forge:gears/diamond'
+                'ae2:spatial_cell_component_2'
             ],
-            reagents: ['#industrialforegoing:machine_frame/advanced'],
+            reagents: ['thermal:upgrade_augment_1'],
             sourceCost: 5000,
             id: `${id_prefix}upgrade_augment_2`
         },
         {
             output: Item.of('thermal:upgrade_augment_3', '{AugmentData:{BaseMod:8,Type:"Upgrade"}}'),
             inputs: [
-                'thermal:upgrade_augment_2',
+                '#industrialforegoing:machine_frame/supreme',
                 'ae2:spatial_cell_component_2',
                 '#forge:gears/netherite',
                 'pneumaticcraft:printed_circuit_board',
                 '#forge:gears/netherite',
-                'ae2:spatial_cell_component_2',
-                '#forge:gears/netherite',
-                'pneumaticcraft:printed_circuit_board',
-                '#forge:gears/netherite'
+                'ae2:spatial_cell_component_2'
             ],
-            reagents: ['#industrialforegoing:machine_frame/supreme'],
+            reagents: ['thermal:upgrade_augment_2'],
             sourceCost: 10000,
             id: `${id_prefix}upgrade_augment_3`
         },
@@ -903,6 +895,64 @@ ServerEvents.recipes((event) => {
             reagents: ['ars_nouveau:relay'],
             sourceCost: 0,
             id: 'ars_nouveau:relay_warp'
+        },
+        {
+            output: 'ars_nouveau:thread_starbuncle',
+            inputs: [
+                Ingredient.of(['ars_nouveau:starbuncle_shards', 'ars_nouveau:starbuncle_charm']),
+                Ingredient.of(['ars_nouveau:starbuncle_shards', 'ars_nouveau:starbuncle_charm']),
+                Ingredient.of(['ars_nouveau:starbuncle_shards', 'ars_nouveau:starbuncle_charm']),
+                'minecraft:sugar',
+                'minecraft:sugar',
+                'minecraft:sugar',
+                '#forge:essences/manipulation',
+                '#forge:essences/manipulation'
+            ],
+            reagents: ['ars_nouveau:blank_thread'],
+            sourceCost: 0,
+            id: 'ars_nouveau:thread_starbuncle'
+        },
+        {
+            output: 'ars_nouveau:thread_whirlisprig',
+            inputs: [
+                Ingredient.of(['ars_nouveau:whirlisprig_shards', 'ars_nouveau:whirlisprig_charm']),
+                Ingredient.of(['ars_nouveau:whirlisprig_shards', 'ars_nouveau:whirlisprig_charm']),
+                Ingredient.of(['ars_nouveau:whirlisprig_shards', 'ars_nouveau:whirlisprig_charm']),
+                '#forge:essences/earth',
+                '#forge:essences/earth',
+                'minecraft:golden_apple'
+            ],
+            reagents: ['ars_nouveau:blank_thread'],
+            sourceCost: 0,
+            id: 'ars_nouveau:thread_whirlisprig'
+        },
+        {
+            output: 'ars_nouveau:thread_wixie',
+            inputs: [
+                Ingredient.of(['ars_nouveau:wixie_shards', 'ars_nouveau:wixie_charm']),
+                Ingredient.of(['ars_nouveau:wixie_shards', 'ars_nouveau:wixie_charm']),
+                Ingredient.of(['ars_nouveau:wixie_shards', 'ars_nouveau:wixie_charm']),
+                '#forge:essences/abjuration',
+                '#forge:essences/abjuration',
+                '#forge:rods/blaze'
+            ],
+            reagents: ['ars_nouveau:blank_thread'],
+            sourceCost: 0,
+            id: 'ars_nouveau:thread_wixie'
+        },
+        {
+            output: 'ars_nouveau:thread_drygmy',
+            inputs: [
+                Ingredient.of(['ars_nouveau:drygmy_shard', 'ars_nouveau:drygmy_charm']),
+                Ingredient.of(['ars_nouveau:drygmy_shard', 'ars_nouveau:drygmy_charm']),
+                Ingredient.of(['ars_nouveau:drygmy_shard', 'ars_nouveau:drygmy_charm']),
+                '#forge:essences/earth',
+                '#forge:essences/earth',
+                Ingredient.of(['minecraft:rabbit_foot', 'apotheosis:lucky_foot'])
+            ],
+            reagents: ['ars_nouveau:blank_thread'],
+            sourceCost: 0,
+            id: 'ars_nouveau:thread_drygmy'
         }
     ];
 
@@ -942,7 +992,7 @@ ServerEvents.recipes((event) => {
     recipes.forEach((recipe) => {
         recipe.type = 'ars_nouveau:enchanting_apparatus';
         recipe.output = Item.of(recipe.output).toJson();
-        recipe.pedestalItems = recipe.inputs.map((input) => ({ item: Ingredient.of(input).toJson() }));
+        recipe.pedestalItems = recipe.inputs.map((input) => Ingredient.of(input).toJson());
         recipe.reagent = recipe.reagents.map((reagent) => Ingredient.of(reagent).toJson());
 
         event.custom(recipe).id(recipe.id);

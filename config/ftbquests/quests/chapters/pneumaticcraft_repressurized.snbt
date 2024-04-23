@@ -178,6 +178,18 @@
 									Count: 1b
 									id: "pneumaticcraft:flux_compressor"
 								}
+								{
+									Count: 1b
+									id: "compressedcreativity:rotational_compressor"
+								}
+								{
+									Count: 1b
+									id: "pneumaticcraft:solar_compressor"
+								}
+								{
+									Count: 1b
+									id: "pneumaticcraft:manual_compressor"
+								}
 							]
 						}
 					}
@@ -1095,7 +1107,7 @@
 		{
 			dependencies: ["00000000000000BD"]
 			description: [
-				"The Assembly Table provides a simpler way of making circuit boards and provides access to other advanced recipes."
+				"The Assembly Table is a multiblock machine capable of more advanced crafting."
 				""
 				"Each piece has limitations on where it can be placed. Refer to the PNC:R manual for the exact placement rules."
 				""
@@ -1107,7 +1119,7 @@
 				"Note: The Drill \\& Laser program allows the Assembly Table to craft recipes that require only a drill or laser. In most cases there’s no reason to use the individual programs."
 			]
 			hide_dependency_lines: true
-			icon: "pneumaticcraft:assembly_platform"
+			icon: "pneumaticcraft:assembly_program_drill_laser"
 			id: "0000000000000155"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
@@ -1862,6 +1874,97 @@
 			title: "Filters"
 			x: -17.5d
 			y: -7.5d
+		}
+		{
+			dependencies: ["00000000000000CF"]
+			description: [
+				"A very handy tube module to have, the Thermostat Module will read the temperature of the block it is facing, outputting a Redstone signal along the tube that may be used to control a Vortex Tube or any other contraption.  "
+				""
+				"This allows for a very simple, and very compact way of meeting specific heat thresholds for crafting! "
+			]
+			id: "14C2B1C1BDC010FD"
+			rewards: [{
+				id: "755F1D78CFE7727F"
+				item: "pneumaticcraft:module_expansion_card"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C8DFDECFC19748B"
+				item: "pneumaticcraft:thermostat_module"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["00000000000000BD"]
+			description: ["An air powered device that mimics Create’s Encased Fan, the Air Blower uses a small amount of Air to process recipes twice as fast as the Encased Fan, making it a very handy upgrade when speed is of the utmost importance. "]
+			hide_dependency_lines: true
+			id: "430F556BBB73C48E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "203CDB671AE5CC48"
+				title: "Rare PNC:R Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "51CB04BFD07F2376"
+				item: "compressedcreativity:air_blower"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["430F556BBB73C48E"]
+			description: [
+				"The Industrial Air Blower takes the Air Blower to the next level, processing four times faster than the base Encased Fan. It uses special meshes and PNC’s Heat mechanics to replace the Water, Lava, Soul Fire, or Fire used by the Encased Fan. "
+				""
+				"Meshes are installed by Right-Clicking them on the front of the Blower, while Heat should be supplied to the body of the Blower. "
+				""
+				"For Splashing recipes, it will use a Water Soaked Mesh. Ambient temperatures should normally suffice for this to work. Too cold and the Mesh may freeze. Too hot and it will be converted back into the Woven Mesh it was made from. "
+				""
+				"For Smoking recipes, no mesh is required, however the Blower will need to be heated to around 110C. With a Dense Mesh installed, however, it only needs to be heated to about 55C. "
+				""
+				"For Blasting recipes, the temperature needs to reach approximately 330C, however just like with Smoking, this temperature requirement can be significantly lowered by installing a Dense Mesh. This allows it to begin Blasting at only 110C. "
+				""
+				"Finally, Haunting Recipes require a Haunted Mesh and a temperature of approximately 110C. "
+			]
+			id: "6F7FA8B5A4169D0E"
+			min_width: 300
+			rewards: [{
+				id: "62BF1B53D9D0EE67"
+				item: "compressedcreativity:mesh_dense"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1E33CF4CC2B72C6E"
+				item: "compressedcreativity:industrial_air_blower"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["00000000000000BD"]
+			description: ["The Compressed Air Engine is a compact means of converting Compressed Air into Rotational Force. These Engines may be chained together, thereby adding their effects together to reach higher Stress capacities. "]
+			hide_dependency_lines: true
+			id: "4494DD48D9A6BDB9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "537604E058923FA4"
+				title: "Rare PNC:R Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0EFB3B31070E3DB3"
+				item: "compressedcreativity:compressed_air_engine"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -7.0d
 		}
 	]
 	title: "PneumaticCraft: Repressurized"

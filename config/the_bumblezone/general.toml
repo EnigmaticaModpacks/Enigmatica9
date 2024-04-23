@@ -198,3 +198,19 @@
 	# Whether Bee Stingers can be used to make Potions of Long Poison
 	beeStingerBrewingRecipe = true
 
+["Enchantments Options"]
+	# 
+	#-----------------------------------------------------
+	#
+	# Maximum level that Neurotoxin enchantment can be. Will not retroactively fixed existing enchanted items.
+	#
+	#Range: 1 ~ 255
+	neurotoxinMaxLevel = 2
+	# 
+	#-----------------------------------------------------
+	#
+	# Sets maximum tick duration the Paralyzed effect can be on an entity. Actions that reapply Paralyzed can still reset the timer and keep entity stunned.
+	#
+	#Range: 1 ~ 1000000
+	paralyzedMaxTickDuration = 600
+

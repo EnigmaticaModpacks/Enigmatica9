@@ -213,6 +213,8 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:storage/sugar_cane_block' },
         { id: 'thermal:press_gear_die' },
 
+        { id: /twilightforest:charm_of_keeping/ },
+
         { type: 'create:cutting' },
 
         { type: 'createaddition:liquid_burning' },
@@ -270,6 +272,7 @@ ServerEvents.recipes((event) => {
         { id: 'thermal:compat/create/pulverizer_create_crimsite' },
         { id: 'thermal:compat/create/pulverizer_create_asurine' },
         { id: 'thermal:machines/pulverizer/pulverizer_gilded_blackstone' },
+        { id: 'thermal:compat/mekanism/smelter_mek_osmium_ore' },
 
         // Ore Processing Related
 

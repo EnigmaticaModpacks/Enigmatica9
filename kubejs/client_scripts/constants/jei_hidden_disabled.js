@@ -105,6 +105,7 @@ jei.base.items.disabled = [
     'thermal:cinnabar_ore',
 
     'twilightforest:uncrafting_table',
+    /twilightforest:charm_of_keeping/,
 
     'occultism:butcher_knife',
 
@@ -177,7 +178,7 @@ jei.base.fluids.hidden = [
     'create:honey',
     'cofh_core:honey'
 ];
-jei.base.categories.hidden = ['twilightforest:uncrafting'];
+jei.base.categories.hidden = ['twilightforest:uncrafting', 'emi_loot:chest_loot', 'emi_loot:block_drops'];
 jei.base.recipes.hidden = [
     {
         category: 'minecraft:crafting',
@@ -285,6 +286,8 @@ jei.expert.items.disabled = [
     'ars_nouveau:volcanic_sourcelink',
     'ars_nouveau:ritual_wilden_summon',
 
+    'charginggadgets:charging_station',
+
     'compactmachines:chunkloader_upgrade',
 
     'constructionwand:iron_wand',
@@ -301,6 +304,13 @@ jei.expert.items.disabled = [
     'createaddition:capacitor',
     'createaddition:portable_energy_interface',
     'createaddition:digital_adapter',
+
+    'compressedcreativity:compressed_iron_casing',
+    'compressedcreativity:brass_gilded_lapis_lazuli',
+    'compressedcreativity:brass_coated_upgrade_matrix',
+    'compressedcreativity:rotational_compressor',
+    'compressedcreativity:heater',
+    'compressedcreativity:mechanical_visor_upgrade',
 
     'emendatusenigmatica:refined_glowstone_nugget',
     'emendatusenigmatica:refined_glowstone_ingot',
@@ -625,6 +635,9 @@ jei.expert.items.disabled = [
     'rftoolsbase:information_screen',
     'rftoolsbase:crafting_card',
 
+    'simplemagnets:basicmagnet',
+    'simplemagnets:advancedmagnet',
+
     'sophisticatedbackpacks:advanced_feeding_upgrade',
     'sophisticatedbackpacks:feeding_upgrade',
     'sophisticatedbackpacks:advanced_pump_upgrade',
@@ -661,6 +674,10 @@ jei.expert.items.disabled = [
     'sophisticatedstorage:limited_diamond_barrel_2',
     'sophisticatedstorage:limited_diamond_barrel_3',
     'sophisticatedstorage:limited_diamond_barrel_4',
+    'sophisticatedstorage:limited_copper_barrel_1',
+    'sophisticatedstorage:limited_copper_barrel_2',
+    'sophisticatedstorage:limited_copper_barrel_3',
+    'sophisticatedstorage:limited_copper_barrel_4',
     'sophisticatedstorage:limited_gold_barrel_1',
     'sophisticatedstorage:limited_gold_barrel_2',
     'sophisticatedstorage:limited_gold_barrel_3',

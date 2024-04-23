@@ -82,7 +82,7 @@ ServerEvents.recipes((event) => {
         },
         {
             output: '3x kubejs:mote_of_renewal',
-            input: Item.of('minecraft:lingering_potion', { Potion: 'ars_nouveau:recovery_potion_strong' }).weakNBT(),
+            input: Item.of('minecraft:potion', { Potion: 'ars_nouveau:recovery_potion_strong' }).weakNBT(),
             catalyst: 'naturesaura:crushing_catalyst',
             aura: 3000,
             time: 10,
@@ -118,6 +118,14 @@ ServerEvents.recipes((event) => {
             aura: 90000,
             time: 300,
             id: `${id_prefix}ore_magnet`
+        },
+        {
+            output: 'ars_nouveau:novice_spell_book',
+            input: 'minecraft:writable_book',
+            catalyst: 'kubejs:gloaming_catalyst',
+            aura: 500000,
+            time: 1800,
+            id: `${id_prefix}novice_spell_book`
         }
     ];
 

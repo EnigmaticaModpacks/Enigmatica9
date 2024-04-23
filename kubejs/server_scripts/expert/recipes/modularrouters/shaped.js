@@ -193,6 +193,17 @@ ServerEvents.recipes((event) => {
                 C: '#forge:gems/fluix'
             },
             id: 'modularrouters:fluid_upgrade'
+        },
+        {
+            output: 'modularrouters:bulk_item_filter',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:gems/certus_quartz',
+                B: '#forge:glass/colorless',
+                C: 'modularrouters:blank_module',
+                D: '#forge:essences/manipulation'
+            },
+            id: 'modularrouters:bulk_item_filter'
         }
     ];
 

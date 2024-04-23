@@ -5,7 +5,7 @@
 	group: ""
 	icon: "minecraft:nether_star"
 	id: "0000000000000044"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{

@@ -9,7 +9,7 @@ ServerEvents.highPriorityData((event) => {
             type: 'BOW',
             min_rarity: 'uncommon',
             max_rarity: 'epic',
-            dimensions: ['twilightforest:twilight_forest']
+            dimensions: ['twilightforest:twilight_forest', 'compactmachines:compact_world']
         },
         {
             weight: 50,
@@ -18,7 +18,7 @@ ServerEvents.highPriorityData((event) => {
             type: 'BOW',
             min_rarity: 'uncommon',
             max_rarity: 'epic',
-            dimensions: ['twilightforest:twilight_forest']
+            dimensions: ['twilightforest:twilight_forest', 'compactmachines:compact_world']
         },
         {
             weight: 50,
@@ -27,7 +27,7 @@ ServerEvents.highPriorityData((event) => {
             type: 'BOW',
             min_rarity: 'uncommon',
             max_rarity: 'epic',
-            dimensions: ['twilightforest:twilight_forest']
+            dimensions: ['twilightforest:twilight_forest', 'compactmachines:compact_world']
         },
         {
             weight: 50,
@@ -36,7 +36,7 @@ ServerEvents.highPriorityData((event) => {
             type: 'BOW',
             min_rarity: 'uncommon',
             max_rarity: 'epic',
-            dimensions: ['twilightforest:twilight_forest']
+            dimensions: ['twilightforest:twilight_forest', 'compactmachines:compact_world']
         },
         {
             weight: 50,
@@ -45,7 +45,7 @@ ServerEvents.highPriorityData((event) => {
             type: 'SHIELD',
             min_rarity: 'uncommon',
             max_rarity: 'epic',
-            dimensions: ['twilightforest:twilight_forest']
+            dimensions: ['twilightforest:twilight_forest', 'compactmachines:compact_world']
         },
         {
             weight: 50,
@@ -54,7 +54,7 @@ ServerEvents.highPriorityData((event) => {
             type: 'TRIDENT',
             min_rarity: 'uncommon',
             max_rarity: 'epic',
-            dimensions: ['twilightforest:twilight_forest']
+            dimensions: ['twilightforest:twilight_forest', 'compactmachines:compact_world']
         }
     ];
     const equip_sets = [
@@ -72,7 +72,7 @@ ServerEvents.highPriorityData((event) => {
             attributes: {
                 weight: 100,
                 quality: 1,
-                dimensions: ['twilightforest:twilight_forest'],
+                dimensions: ['twilightforest:twilight_forest', 'compactmachines:compact_world'],
                 min_rarity: 'uncommon',
                 max_rarity: 'epic'
             }
@@ -91,7 +91,7 @@ ServerEvents.highPriorityData((event) => {
             attributes: {
                 weight: 85,
                 quality: 3,
-                dimensions: ['twilightforest:twilight_forest'],
+                dimensions: ['twilightforest:twilight_forest', 'compactmachines:compact_world'],
                 min_rarity: 'uncommon',
                 max_rarity: 'epic'
             }
@@ -109,7 +109,7 @@ ServerEvents.highPriorityData((event) => {
             attributes: {
                 weight: 65,
                 quality: 5,
-                dimensions: ['twilightforest:twilight_forest'],
+                dimensions: ['twilightforest:twilight_forest', 'compactmachines:compact_world'],
                 min_rarity: 'uncommon',
                 max_rarity: 'epic'
             }
@@ -126,7 +126,7 @@ ServerEvents.highPriorityData((event) => {
             attributes: {
                 weight: 65,
                 quality: 5,
-                dimensions: ['twilightforest:twilight_forest'],
+                dimensions: ['twilightforest:twilight_forest', 'compactmachines:compact_world'],
                 min_rarity: 'uncommon',
                 max_rarity: 'epic'
             }
