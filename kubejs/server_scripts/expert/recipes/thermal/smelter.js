@@ -292,6 +292,16 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}scuba_upgrade`
         },
         {
+            result: [{ item: 'compressedcreativity:mechanical_visor_upgrade', count: 1 }],
+            ingredients: [
+                { item: 'pneumaticcraft:upgrade_matrix' },
+                { item: 'create:goggles' },
+                { tag: 'forge:essences/manipulation', count: 2 }
+            ],
+            energy: 8000,
+            id: `${id_prefix}mechanical_visor_upgrade`
+        },
+        {
             result: [{ item: 'ae2:fluix_pearl', count: 4 }],
             ingredients: [
                 { tag: 'forge:dusts/subzero' },

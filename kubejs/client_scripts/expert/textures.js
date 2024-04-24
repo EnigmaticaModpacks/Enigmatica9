@@ -70,6 +70,16 @@ ClientEvents.highPriorityAssets((event) => {
             }
         },
         {
+            path: 'compressedcreativity:models/item/mechanical_visor_upgrade',
+            json_model: {
+                parent: 'item/generated',
+                textures : {
+                  "layer0" : "pneumaticcraft:item/upgrades/upgrade_layer0",
+                  "layer1" : "compressedcreativity:item/mechanical_visor_upgrade"
+                }
+            }
+        },
+        {
             path: 'occultism:models/block/sacrificial_bowl',
             json_model: {
                 credit: 'Made with Blockbench',
