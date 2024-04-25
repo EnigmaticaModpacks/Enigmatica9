@@ -30,5 +30,7 @@
 	"advancement.create.brass": "Real Alloys",
 	"advancement.create.brass.desc": "Create Brass Ingots by alloying Copper and Zinc Ingots in your Blaze-heated Mechanical Mixer",
 	"block.create.industrial_iron_block": "Block of Industrial Iron",
-	"block.create.andesite_door": "Andesite Door"
+	"block.create.andesite_door": "Andesite Door",
+	"block.create.ornate_iron_window": "Ornate Iron Window",
+	"block.create.ornate_iron_window_pane": "Ornate Iron Window Pane"
 }
