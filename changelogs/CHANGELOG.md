@@ -9,11 +9,18 @@
 -   [Expert] Massively buff Aura Infusion rewards [\#940](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/940)
 -   Add several new brewable potions, including higher tiers of some existing potions [\#943](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/943)
 -   [Expert] Remove dependencies on iron from a lot of decorative blocks [\#950](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/950)
+-   Aura will no longer cause wild grass growth on byg grass blocks [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
+-   Added a bunch of conversion options for mossy variants [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
+-   Added crafting recipes for many stone variants [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
+-   [Expert] Motes now craft 1:1 with their potion to avoid leftovers [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
+-   [Expert] Several Iron using recipes have been tweaked to adjust their gating [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
 
 ### 🐛 Fixed Bugs
 
 -   [Expert] Add recipe for Ash Bricks [\#950](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/950)
 -   [Expert] Disable a coal gen that was missed [\#952](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/952)
+-   [Expert] Fixed typo in Storage Actuator quest in chapter 2 [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
+-   Removed reference to step height bonus on Skyseeker's armor [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
 
 ### Enigmatica 9 v1.21.0
 

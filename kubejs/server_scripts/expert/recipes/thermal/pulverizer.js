@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
     const recipes = [
         {
             ingredient: Item.of('minecraft:potion', { Potion: 'minecraft:strong_regeneration' }).weakNBT().toJson(),
-            result: [{ item: 'kubejs:mote_of_rebirth', count: 3 }],
+            result: [{ item: 'kubejs:mote_of_rebirth', count: 1 }],
             energy: 51200,
             id: `${id_prefix}mote_of_rebirth`
         }

@@ -557,6 +557,15 @@ ServerEvents.recipes((event) => {
                 C: '#forge:dusts/glowstone'
             },
             id: 'immersiveengineering:crafting/lantern'
+        },
+        {
+            output: '8x immersiveengineering:connector_structural',
+            pattern: ['ABA', 'A A'],
+            key: {
+                A: '#forge:plates',
+                B: '#forge:rods/all_metal'
+            },
+            id: 'immersiveengineering:crafting/connector_structural'
         }
     ];
 

@@ -81,7 +81,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}soul_crystal`
         },
         {
-            output: '3x kubejs:mote_of_renewal',
+            output: 'kubejs:mote_of_renewal',
             input: Item.of('minecraft:potion', { Potion: 'ars_nouveau:recovery_potion_strong' }).weakNBT(),
             catalyst: 'naturesaura:crushing_catalyst',
             aura: 3000,
