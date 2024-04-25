@@ -1859,6 +1859,22 @@ const entries = {
                 expert: `Reinforced Floor Grating`
             }
         }
+    ],
+    v_slab_compat: [
+        {
+            key: 'block.v_slab_compat.immersiveengineering.steel_scaffolding_standard_vertical_slab',
+            value: {
+                normal: `Steel Scaffolding Standard Vertical Slab`,
+                expert: `Reinforced Scaffolding Standard Vertical Slab`
+            }
+        },
+        {
+            key: 'block.v_slab_compat.immersiveengineering.steel_scaffolding_grate_top_vertical_slab',
+            value: {
+                normal: `Steel Scaffolding Grate Top Vertical Slab`,
+                expert: `Reinforced Scaffolding Grate Top Vertical Slab`
+            }
+        }
     ]
 };
 
