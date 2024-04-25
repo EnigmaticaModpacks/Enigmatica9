@@ -1373,6 +1373,92 @@ const entries = {
                 normal: `Iron Plate`,
                 expert: `Heavy Plate`
             }
+        },
+        {
+            key: 'item.manyideas_core.saw_iron',
+            value: {
+                normal: `Iron Saw`,
+                expert: `Tough Saw`
+            }
+        },
+        {
+            key: 'block.manyideas_core.table_saw_iron',
+            value: {
+                normal: `Iron Table Saw`,
+                expert: `Tough Table Saw`
+            }
+        }
+    ],
+    manyideas_doors: [
+        {
+            key: 'block.manyideas_doors.door_iron_fantasy',
+            value: {
+                normal: `Iron Fantasy Door`,
+                expert: `Reinforced Fantasy Door`
+            }
+        },
+        {
+            key: 'block.manyideas_doors.door_iron_glass',
+            value: {
+                normal: `Iron Glass Door`,
+                expert: `Reinforced Glass Door`
+            }
+        },
+        {
+            key: 'block.manyideas_doors.door_iron_laboratory',
+            value: {
+                normal: `Iron Laboratory Door`,
+                expert: `Reinforced Laboratory Door`
+            }
+        },
+        {
+            key: 'block.manyideas_doors.door_iron_rusted',
+            value: {
+                normal: `Iron Rusted Door`,
+                expert: `Reinforced Rusted Door`
+            }
+        },
+        {
+            key: 'block.manyideas_doors.door_iron_safe',
+            value: {
+                normal: `Iron Safe Door`,
+                expert: `Reinforced Safe Door`
+            }
+        },
+        {
+            key: 'block.manyideas_doors.door_iron_ship',
+            value: {
+                normal: `Iron Ship Door`,
+                expert: `Reinforced Ship Door`
+            }
+        },
+        {
+            key: 'block.manyideas_doors.door_iron_space',
+            value: {
+                normal: `Iron Space Door`,
+                expert: `Reinforced Space Door`
+            }
+        },
+        {
+            key: 'block.manyideas_doors.door_iron_stone_brick',
+            value: {
+                normal: `Iron Stone Brick Door`,
+                expert: `Reinforced Stone Brick Door`
+            }
+        },
+        {
+            key: 'block.manyideas_doors.door_iron_bookshelf',
+            value: {
+                normal: `Iron Bookshelf Door`,
+                expert: `Reinforced Bookshelf Door`
+            }
+        },
+        {
+            key: 'block.manyideas_doors.door_iron_dwarf',
+            value: {
+                normal: `Iron Dwarf Door`,
+                expert: `Reinforced Dwarf Door`
+            }
         }
     ],
     apotheosis: [
@@ -1664,6 +1750,113 @@ const entries = {
             value: {
                 normal: `Industrial Air Blower`,
                 expert: `Spellbound Air Blower`
+            }
+        }
+    ],
+    engineersdecor: [
+        {
+            key: 'block.engineersdecor.iron_bulb_light',
+            value: {
+                normal: `Iron Bulb Light`,
+                expert: `Caged Bulb Light`
+            }
+        },
+        {
+            key: 'block.engineersdecor.thin_steel_pole',
+            value: {
+                normal: `Straight Thin Steel Pole`,
+                expert: `Straight Thin Reinforced Pole`
+            }
+        },
+        {
+            key: 'block.engineersdecor.thick_steel_pole',
+            value: {
+                normal: `Straight Thick Steel Pole`,
+                expert: `Straight Thick Reinforced Pole`
+            }
+        },
+        {
+            key: 'block.engineersdecor.thin_steel_pole_head',
+            value: {
+                normal: `Straight Thin Steel Pole Head/Foot`,
+                expert: `Straight Thin Reinforced Pole Head/Foot`
+            }
+        },
+        {
+            key: 'block.engineersdecor.thick_steel_pole_head',
+            value: {
+                normal: `Straight Thick Steel Pole Head/Foot`,
+                expert: `Straight Thick Reinforced Pole Head/Foot`
+            }
+        },
+        {
+            key: 'block.engineersdecor.steel_double_t_support',
+            value: {
+                normal: `Steel Double T Support`,
+                expert: `Reinforced Double T Support`
+            }
+        },
+        {
+            key: 'block.engineersdecor.steel_mesh_fence',
+            value: {
+                normal: `Steel Mesh Fence`,
+                expert: `Reinforced Mesh Fence`
+            }
+        },
+        {
+            key: 'block.engineersdecor.steel_mesh_fence_gate',
+            value: {
+                normal: `Steel Mesh Fence Gate`,
+                expert: `Reinforced Mesh Fence Gate`
+            }
+        },
+        {
+            key: 'block.engineersdecor.steel_catwalk',
+            value: {
+                normal: `Steel Catwalk`,
+                expert: `Reinforced Catwalk`
+            }
+        },
+        {
+            key: 'block.engineersdecor.steel_catwalk_ta',
+            value: {
+                normal: `Raised Steel Catwalk`,
+                expert: `Raised Reinforced Catwalk`
+            }
+        },
+        {
+            key: 'block.engineersdecor.steel_catwalk_stairs',
+            value: {
+                normal: `Steel Catwalk Stairs`,
+                expert: `Reinforced Catwalk Stairs`
+            }
+        },
+        {
+            key: 'block.engineersdecor.steel_railing',
+            value: {
+                normal: `Steel Railing`,
+                expert: `Reinforced Railing`
+            }
+        },
+        {
+            key: 'block.engineersdecor.steel_table',
+            value: {
+                normal: `Steel Table`,
+                expert: `Reinforced Table`
+            }
+        },
+        {
+            key: 'block.engineersdecor.steel_framed_window',
+            value: {
+                normal: `Steel Framed Window`,
+                expert: `Reinforced Framed Window`
+            }
+        },
+        {
+            key: 'block.engineersdecor.steel_floor_grating',
+            value: {
+                normal: `Steel Floor Grating`,
+                expert: `Reinforced Floor Grating`
             }
         }
     ]

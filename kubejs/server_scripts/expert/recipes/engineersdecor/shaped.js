@@ -21,6 +21,15 @@ ServerEvents.recipes((event) => {
                 B: '#forge:plates/aluminum'
             },
             id: 'engineersdecor:independent/metal_sliding_door_recipe'
+        },
+        {
+            output: 'engineersdecor:iron_hatch',
+            pattern: ['AAA', 'ABA'],
+            key: {
+                A: 'engineersdecor:metal_bar',
+                B: '#minecraft:trapdoors'
+            },
+            id: 'engineersdecor:independent/iron_hatch_recipe'
         }
     ];
 
