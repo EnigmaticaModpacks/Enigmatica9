@@ -23,6 +23,7 @@
 -   Removed reference to step height bonus on Skyseeker's armor [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
 -   Immersive Engineering Sawdust flooring changed to no longer conflict with thermal [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
 -   Crafting tables may now be converted to variants with the stonecutter. Variant shaped crafting recipes are removed. [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
+-   Remove conflicting furnace recipe. Furnaces are now only crafted with cobblestone [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
 
 ### Enigmatica 9 v1.21.0
 

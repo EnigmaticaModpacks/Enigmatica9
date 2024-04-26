@@ -146,6 +146,7 @@ ServerEvents.recipes((event) => {
         { id: 'powah:crafting/capacitor_basic_tiny' },
 
         { id: 'quark:tweaks/smelting/bone_meal_utility' },
+        { id: 'quark:building/crafting/furnaces/cobblestone_furnace' },
 
         { id: 'rftoolsbase:dimensionalshard' },
 
