@@ -59,7 +59,8 @@ ServerEvents.recipes((event) => {
         `#forge:storage_blocks/carrot`,
         `#forge:storage_blocks/apple`,
         `#forge:storage_blocks/bamboo`,
-        `#forge:storage_blocks/sugar_cane`
+        `#forge:storage_blocks/sugar_cane`,
+        `#forge:workbench`
     ];
 
     conversionTypes.forEach((tag) => {

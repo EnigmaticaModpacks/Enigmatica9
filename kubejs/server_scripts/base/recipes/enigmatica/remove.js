@@ -49,6 +49,7 @@ ServerEvents.recipes((event) => {
         { id: 'byg:jacaranda_boookshelf' },
         { id: 'byg:rainbow_eucalpytus_trapdoor' },
         { id: 'byg:rainbow_eucalpytus_door' },
+        { id: /byg:.*crafting_table/ },
 
         { id: 'create:compat/ae2/mixing/fluix_crystal' },
         { id: 'create:compat/byg/crushing/lignite_ore' },
