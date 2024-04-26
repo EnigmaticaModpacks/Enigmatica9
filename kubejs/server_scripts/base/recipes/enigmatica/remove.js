@@ -43,12 +43,15 @@ ServerEvents.recipes((event) => {
 
         { id: /ars_nouveau:.*_dye/ },
 
+        { id: /ars_scalaes:.*sourcestone.*(slab|stair)$/ },
+
         { id: 'byg:dye_from_warped_cactus' },
         { id: 'byg:dye_from_oddity_cactus' },
         { id: 'byg:byg_chest' },
         { id: 'byg:jacaranda_boookshelf' },
         { id: 'byg:rainbow_eucalpytus_trapdoor' },
         { id: 'byg:rainbow_eucalpytus_door' },
+        { id: /byg:.*crafting_table/ },
 
         { id: 'create:compat/ae2/mixing/fluix_crystal' },
         { id: 'create:compat/byg/crushing/lignite_ore' },
@@ -57,15 +60,18 @@ ServerEvents.recipes((event) => {
         { id: 'create:milling/dripstone_block' },
         { id: 'create:milling/bone' },
         { id: 'create:milling/andesite' },
+        { id: 'create:crafting/materials/andesite_alloy_block' },
 
         { id: /createaddition:mixing\/biomass/ },
         { id: /createaddition:crafting\/.*spool/ },
         { id: 'createaddition:crafting/barbed_wire' },
         { id: 'createaddition:crafting/redstone_relay' },
+        { id: 'createaddition:crafting/electrum_ingot' },
         { id: 'createaddition:crafting/connector' },
         { id: 'createaddition:crafting/accumulator_conversion' },
         { id: 'createaddition:compacting/seed_oil' },
         { id: 'createaddition:mixing/bioethanol' },
+        { id: 'createaddition:mixing/electrum' },
         { id: 'createaddition:mechanical_crafting/accumulator' },
         { id: 'createaddition:mechanical_crafting/tesla_coil' },
         { id: 'createaddition:mechanical_crafting/electric_motor' },
@@ -145,6 +151,8 @@ ServerEvents.recipes((event) => {
         { id: 'powah:crafting/capacitor_basic_tiny' },
 
         { id: 'quark:tweaks/smelting/bone_meal_utility' },
+        { id: 'quark:building/crafting/furnaces/cobblestone_furnace' },
+        { id: 'quark:building/crafting/chests/mixed_chest' },
 
         { id: 'rftoolsbase:dimensionalshard' },
 

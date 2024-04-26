@@ -14,6 +14,7 @@
 -   Added crafting recipes for many stone variants [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
 -   [Expert] Motes now craft 1:1 with their potion to avoid leftovers [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
 -   [Expert] Several Iron using recipes have been tweaked to adjust their gating [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
+-   [Expert] Add a recipe for the new chunkloader upgrade for PNC drones [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
 
 ### 🐛 Fixed Bugs
 
@@ -21,6 +22,10 @@
 -   [Expert] Disable a coal gen that was missed [\#952](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/952)
 -   [Expert] Fixed typo in Storage Actuator quest in chapter 2 [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
 -   Removed reference to step height bonus on Skyseeker's armor [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
+-   Immersive Engineering Sawdust flooring changed to no longer conflict with thermal [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
+-   Crafting tables may now be converted to variants with the stonecutter. Variant shaped crafting recipes are removed. [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
+-   Remove conflicting furnace recipe. Furnaces are now only crafted with cobblestone [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
+-   Remove conflicting chest recipe. Vanilla chest may be crafted by converting any other chest. [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
 
 ### Enigmatica 9 v1.21.0
 

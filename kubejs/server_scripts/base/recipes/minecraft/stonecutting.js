@@ -26,6 +26,16 @@ ServerEvents.recipes((event) => {
             output: 'ars_nouveau:source_gem_block',
             input: 'emendatusenigmatica:source_block',
             id: `${id_prefix}emendatusenigmatica_to_ars_nouveau_source_gem_block`
+        },
+        {
+            output: 'ars_nouveau:sourcestone_stairs',
+            input: 'ars_nouveau:sourcestone',
+            id: `${id_prefix}sourcestone_to_ars_nouveau_sourcestone_stairs`
+        },
+        {
+            output: '2x ars_nouveau:sourcestone_slab',
+            input: 'ars_nouveau:sourcestone',
+            id: `${id_prefix}sourcestone_to_ars_nouveau_sourcestone_slab`
         }
     ];
 
@@ -59,7 +69,8 @@ ServerEvents.recipes((event) => {
         `#forge:storage_blocks/carrot`,
         `#forge:storage_blocks/apple`,
         `#forge:storage_blocks/bamboo`,
-        `#forge:storage_blocks/sugar_cane`
+        `#forge:storage_blocks/sugar_cane`,
+        `#forge:workbench`
     ];
 
     conversionTypes.forEach((tag) => {

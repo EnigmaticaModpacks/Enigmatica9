@@ -12,12 +12,12 @@ ServerEvents.recipes((event) => {
         },
         {
             output: 'ae2:crafting_terminal',
-            inputs: ['#forge:workbenches', 'ae2:terminal'],
+            inputs: ['#forge:workbench', 'ae2:terminal'],
             id: `ae2:network/parts/terminals_crafting`
         },
         {
             output: 'ae2:crafting_terminal',
-            inputs: ['pneumaticcraft:logistics_core', '#ae2:illuminated_panel', '#forge:workbenches'],
+            inputs: ['pneumaticcraft:logistics_core', '#ae2:illuminated_panel', '#forge:workbench'],
             id: `${id_prefix}crafting_terminal`
         },
         {
