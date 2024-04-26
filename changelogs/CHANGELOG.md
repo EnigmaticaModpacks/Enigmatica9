@@ -24,6 +24,7 @@
 -   Immersive Engineering Sawdust flooring changed to no longer conflict with thermal [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
 -   Crafting tables may now be converted to variants with the stonecutter. Variant shaped crafting recipes are removed. [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
 -   Remove conflicting furnace recipe. Furnaces are now only crafted with cobblestone [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
+-   Remove conflicting chest recipe. Vanilla chest may be crafted by converting any other chest. [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
 
 ### Enigmatica 9 v1.21.0
 

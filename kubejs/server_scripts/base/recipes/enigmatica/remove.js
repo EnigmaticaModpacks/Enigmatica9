@@ -147,6 +147,7 @@ ServerEvents.recipes((event) => {
 
         { id: 'quark:tweaks/smelting/bone_meal_utility' },
         { id: 'quark:building/crafting/furnaces/cobblestone_furnace' },
+        { id: 'quark:building/crafting/chests/mixed_chest' },
 
         { id: 'rftoolsbase:dimensionalshard' },
 
