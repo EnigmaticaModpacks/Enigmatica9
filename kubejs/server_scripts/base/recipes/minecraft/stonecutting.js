@@ -26,6 +26,16 @@ ServerEvents.recipes((event) => {
             output: 'ars_nouveau:source_gem_block',
             input: 'emendatusenigmatica:source_block',
             id: `${id_prefix}emendatusenigmatica_to_ars_nouveau_source_gem_block`
+        },
+        {
+            output: 'ars_nouveau:sourcestone_stairs',
+            input: 'ars_nouveau:sourcestone',
+            id: `${id_prefix}sourcestone_to_ars_nouveau_sourcestone_stairs`
+        },
+        {
+            output: '2x ars_nouveau:sourcestone_slab',
+            input: 'ars_nouveau:sourcestone',
+            id: `${id_prefix}sourcestone_to_ars_nouveau_sourcestone_slab`
         }
     ];
 
