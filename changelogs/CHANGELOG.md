@@ -14,6 +14,7 @@
 -   Added crafting recipes for many stone variants [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
 -   [Expert] Motes now craft 1:1 with their potion to avoid leftovers [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
 -   [Expert] Several Iron using recipes have been tweaked to adjust their gating [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
+-   Crafting tables may now be converted to variants with the stonecutter. Variant shaped crafting recipes are removed. [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
 
 ### 🐛 Fixed Bugs
 
