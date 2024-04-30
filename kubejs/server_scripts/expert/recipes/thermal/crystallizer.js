@@ -22,9 +22,9 @@ ServerEvents.recipes((event) => {
         recipes.push({
             ingredients: [
                 { fluid: 'kubejs:lacunar_acid', amount: 20 },
-                { tag: `mekanism:shards/${metal}`, count: 1 }
+                { tag: `mekanism:shards/${metal}`, count: 9 }
             ],
-            result: [{ item: `emendatusenigmatica:${metal}_crystal`, count: 3 }],
+            result: [{ item: `emendatusenigmatica:${metal}_crystal`, count: 27 }],
             energy: 4000,
             id: `${id_prefix}${metal}_crystal`
         });
