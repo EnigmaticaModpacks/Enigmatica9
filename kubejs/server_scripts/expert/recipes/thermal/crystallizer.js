@@ -21,11 +21,10 @@ ServerEvents.recipes((event) => {
     metal_shards.forEach((metal) => {
         recipes.push({
             ingredients: [
-                { fluid: 'hexerei:quicksilver_fluid', amount: 90 },
-                { tag: `mekanism:shards/${metal}`, count: 9 },
-                { tag: `forge:dusts/dimensional` }
+                { fluid: 'kubejs:lacunae', amount: 20 },
+                { tag: `mekanism:shards/${metal}`, count: 1 }
             ],
-            result: [{ item: `emendatusenigmatica:${metal}_crystal`, count: 27 }],
+            result: [{ item: `emendatusenigmatica:${metal}_crystal`, count: 3 }],
             energy: 4000,
             id: `${id_prefix}${metal}_crystal`
         });
