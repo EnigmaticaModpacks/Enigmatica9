@@ -15,6 +15,7 @@
 -   [Expert] Motes now craft 1:1 with their potion to avoid leftovers [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
 -   [Expert] Several Iron using recipes have been tweaked to adjust their gating [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
 -   [Expert] Add a recipe for the new chunkloader upgrade for PNC drones [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
+-   [Expert] Processing Metal Shards now has an extra step involving the creation and use of Lacunar Acid [\#968](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/968)
 
 ### 🐛 Fixed Bugs
 
