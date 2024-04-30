@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
     metal_shards.forEach((metal) => {
         recipes.push({
             ingredients: [
-                { fluid: 'kubejs:lacunae', amount: 20 },
+                { fluid: 'kubejs:lacunar_acid', amount: 20 },
                 { tag: `mekanism:shards/${metal}`, count: 1 }
             ],
             result: [{ item: `emendatusenigmatica:${metal}_crystal`, count: 3 }],

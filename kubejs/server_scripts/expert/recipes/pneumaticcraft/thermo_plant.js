@@ -181,14 +181,14 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}ethanol_from_nether_wart`
         },
         {
-            fluid_output: { amount: 300, fluid: 'kubejs:lacunae' },
+            fluid_output: { amount: 300, fluid: 'kubejs:lacunar_acid' },
             fluid_input: { type: 'pneumaticcraft:fluid', amount: 100, tag: 'forge:quicksilver' },
             item_input: [{ tag: 'forge:dusts/dimensional' }],
             exothermic: true,
             temperature: { max_temp: 73 },
             pressure: 9.0,
             speed: 4.0,
-            id: `${id_prefix}lacunae`
+            id: `${id_prefix}lacunar_acid`
         }
     ];
 

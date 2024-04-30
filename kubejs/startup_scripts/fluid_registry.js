@@ -39,10 +39,9 @@ StartupEvents.registry('fluid', (event) => {
         },
         {
             type: 'thin',
-            id: 'lacunae',
-            // color: 0x7ddff5,
+            id: 'lacunar_acid',
             color: 0x9f7df5,
-            display: 'Lacunae'
+            display: 'Lacunar Acid'
         }
     ];
 
