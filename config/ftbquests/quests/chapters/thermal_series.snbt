@@ -649,11 +649,7 @@
 		}
 		{
 			dependencies: ["4630066EE7196046"]
-			description: [
-				"Expandable, upgradable, portable. Perfect for a quick charge just about anywhere."
-				""
-				"Thermal Series offers no form of power cable currently. While piping Flux Capacitors or Flux Cells around certainly works, consider using some Universal Cables from Mekanism instead. "
-			]
+			description: ["Expandable, upgradable, portable. Perfect for a quick charge just about anywhere."]
 			hide_dependency_lines: true
 			id: "0000000000000F85"
 			rewards: [
@@ -673,9 +669,9 @@
 					type: "item"
 				}
 				{
-					count: 8
+					count: 16
 					id: "7A2EEDADE9E418F2"
-					item: "mekanism:basic_universal_cable"
+					item: "thermal:energy_duct"
 					type: "item"
 				}
 				{

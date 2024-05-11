@@ -28,9 +28,9 @@ ServerEvents.highPriorityData((event) => {
                     enchantment_levels: [36, 30, 100, 85],
                     effects: [
                         { effect: 'minecraft:fire_resistance', chance: 1 },
-                        { effect: 'ars_nouveau:shielding', amplifier: { min: 2, max: 3 }, chance: 1 },
-                        { effect: 'ars_nouveau:spell_damage', amplifier: { min: 2, max: 7 }, chance: 1 },
-                        { effect: 'ars_nouveau:mana_regen', amplifier: { min: 2, max: 7 }, chance: 1 }
+                        { effect: 'ars_nouveau:shielding', amplifier: { min: 2, step: 1, steps: 3 }, chance: 1 },
+                        { effect: 'ars_nouveau:spell_damage', amplifier: { min: 2, step: 1, steps: 7 }, chance: 1 },
+                        { effect: 'ars_nouveau:mana_regen', amplifier: { min: 2, step: 1, steps: 7 }, chance: 1 }
                     ],
                     attribute_modifiers: [
                         {

@@ -16,6 +16,7 @@
 -   [Expert] Several Iron using recipes have been tweaked to adjust their gating [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
 -   [Expert] Add a recipe for the new chunkloader upgrade for PNC drones [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
 -   [Expert] Processing Metal Shards now has an extra step involving the creation and use of Lacunar Acid [\#968](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/968)
+-   Add Aloe to the Market [\#972](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/972)
 
 ### 🐛 Fixed Bugs
 
@@ -27,6 +28,8 @@
 -   Crafting tables may now be converted to variants with the stonecutter. Variant shaped crafting recipes are removed. [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
 -   Remove conflicting furnace recipe. Furnaces are now only crafted with cobblestone [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
 -   Remove conflicting chest recipe. Vanilla chest may be crafted by converting any other chest. [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
+-   [Normal] Correct Thermal's quests regarding Fluxducts [\#972](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/972)
+-   Fixed missing Apotheosis bosses [\#972](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/972)
 
 ### Enigmatica 9 v1.21.0
 
