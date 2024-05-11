@@ -29,6 +29,7 @@
 -   Remove conflicting furnace recipe. Furnaces are now only crafted with cobblestone [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
 -   Remove conflicting chest recipe. Vanilla chest may be crafted by converting any other chest. [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
 -   [Normal] Correct Thermal's quests regarding Fluxducts [\#972](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/972)
+-   Fixed missing Apotheosis bosses [\#972](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/972)
 
 ### Enigmatica 9 v1.21.0
 
