@@ -35,6 +35,15 @@ ServerEvents.recipes((event) => {
                 B: '#forge:ingots/iron'
             },
             id: 'byg:chain_plating'
+        },
+        {
+            output: '4x byg:ether_soil',
+            pattern: ['AB', 'BA'],
+            key: {
+                A: 'byg:lush_dirt',
+                B: 'byg:ether_stone'
+            },
+            id: `${id_prefix}ether_soil`
         }
     ];
 
@@ -62,7 +71,8 @@ ServerEvents.recipes((event) => {
             ]
         },
         { blocks: ['minecraft:end_stone', 'byg:bulbis_phycelium', 'byg:ivis_phylium', 'byg:imparius_phylium'] },
-        { blocks: ['byg:ether_soil', 'byg:ether_phylium'] }
+        { blocks: ['byg:ether_soil', 'byg:ether_phylium'] },
+        { blocks: ['minecraft:dirt', 'byg:lush_dirt'] }
     ];
 
     block_conversions.forEach((block_conversion) => {

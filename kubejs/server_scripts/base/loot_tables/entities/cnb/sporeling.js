@@ -15,6 +15,10 @@ ServerEvents.genericLootTables((event) => {
                 term: { condition: 'minecraft:location_check', predicate: { dimension: 'minecraft:the_nether' } }
             });
             pool.addCondition({
+                condition: 'minecraft:inverted',
+                term: { condition: 'minecraft:location_check', predicate: { dimension: 'minecraft:the_end' } }
+            });
+            pool.addCondition({
                 chance: 0.25,
                 condition: 'minecraft:random_chance_with_looting',
                 looting_multiplier: 0.01
