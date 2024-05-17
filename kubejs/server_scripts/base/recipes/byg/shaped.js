@@ -49,27 +49,37 @@ ServerEvents.recipes((event) => {
         });
     });
 
-    const stone_conversions = [
-        'byg:rocky_stone',
-        'byg:dacite',
-        'byg:travertine',
-        'byg:soapstone',
-        'byg:scoria_stone',
-        'byg:red_rock'
+    const block_conversions = [
+        {
+            blocks: [
+                'byg:rocky_stone',
+                'byg:dacite',
+                'byg:travertine',
+                'byg:soapstone',
+                'byg:scoria_stone',
+                'byg:red_rock',
+                'byg:ether_stone'
+            ]
+        },
+        { blocks: ['minecraft:end_stone', 'byg:bulbis_phycelium', 'byg:ivis_phylium', 'byg:imparius_phylium'] },
+        { blocks: ['byg:ether_soil', 'byg:ether_phylium'] }
     ];
 
-    stone_conversions.forEach((stone, index) => {
-        let input = stone;
-        let output = index + 1 >= stone_conversions.length ? stone_conversions[0] : stone_conversions[index + 1];
+    block_conversions.forEach((block_conversion) => {
+        let blocks = block_conversion.blocks;
+        blocks.forEach((block, index) => {
+            let input = block;
+            let output = index + 1 >= blocks.length ? blocks[0] : blocks[index + 1];
 
-        recipes.push({
-            output: `8x ${output}`,
-            pattern: ['AAA', 'ABA', 'AAA'],
-            key: {
-                A: input,
-                B: '#forge:essences/manipulation'
-            },
-            id: `${id_prefix}${input.replace(':', '_')}_from_${output.replace(':', '_')}`
+            recipes.push({
+                output: `8x ${output}`,
+                pattern: ['AAA', 'ABA', 'AAA'],
+                key: {
+                    A: input,
+                    B: '#forge:essences/manipulation'
+                },
+                id: `${id_prefix}${input.replace(':', '_')}_from_${output.replace(':', '_')}`
+            });
         });
     });
 
