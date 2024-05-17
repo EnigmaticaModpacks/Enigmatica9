@@ -1,0 +1,29 @@
+{
+    "modId": "farmingforblockheads",
+    "group": {
+        "name": "Generic Mushrooms",
+        "enabledByDefault": true,
+        "defaultPayment": { "item": "minecraft:emerald" },
+        "defaultCategory": "farmingforblockheads:saplings"
+    },
+    "customEntries": [
+        { "output": "byg:purple_bulbis_oddity" },
+        { "output": "byg:bulbis_oddity" },
+        { "output": "byg:fungal_imparius" },
+        { "output": "byg:imparius_mushroom" },
+        { "output": "byg:sythian_fungus" },
+        { "output": "byg:shulkren_fungus" },
+        { "output": "byg:death_cap" },
+        { "output": "byg:soul_shroom" },
+        { "output": "byg:embur_wart" },
+        { "output": "byg:green_mushroom" },
+        { "output": "byg:weeping_milkcap" },
+        { "output": "byg:wood_blewit" },
+        { "output": "minecraft:brown_mushroom" },
+        { "output": "minecraft:red_mushroom" },
+        { "output": "minecraft:crimson_fungus" },
+        { "output": "minecraft:warped_fungus" },
+        { "output": "quark:glow_shroom" },
+        { "output": "twilightforest:mushgloom" }
+    ]
+}

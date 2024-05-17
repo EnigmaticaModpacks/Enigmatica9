@@ -35,6 +35,24 @@ ServerEvents.recipes((event) => {
                 B: '#forge:ingots/iron'
             },
             id: 'byg:chain_plating'
+        },
+        {
+            output: '4x byg:ether_soil',
+            pattern: ['AB', 'BA'],
+            key: {
+                A: 'byg:lush_dirt',
+                B: 'byg:ether_stone'
+            },
+            id: `${id_prefix}ether_soil`
+        },
+        {
+            output: '4x byg:end_sand',
+            pattern: ['AB', 'BA'],
+            key: {
+                A: 'occultism:crushed_end_stone',
+                B: '#forge:sand/colorless'
+            },
+            id: `${id_prefix}end_sand`
         }
     ];
 
@@ -49,27 +67,46 @@ ServerEvents.recipes((event) => {
         });
     });
 
-    const stone_conversions = [
-        'byg:rocky_stone',
-        'byg:dacite',
-        'byg:travertine',
-        'byg:soapstone',
-        'byg:scoria_stone',
-        'byg:red_rock'
+    const block_conversions = [
+        {
+            blocks: [
+                'byg:rocky_stone',
+                'byg:dacite',
+                'byg:travertine',
+                'byg:soapstone',
+                'byg:scoria_stone',
+                'byg:red_rock',
+                'byg:ether_stone'
+            ]
+        },
+        {
+            blocks: [
+                'byg:end_sand',
+                'byg:bulbis_phycelium',
+                'byg:ivis_phylium',
+                'byg:imparius_phylium',
+                'byg:shulkren_phylium'
+            ]
+        },
+        { blocks: ['byg:ether_soil', 'byg:ether_phylium'] },
+        { blocks: ['minecraft:dirt', 'byg:lush_dirt'] }
     ];
 
-    stone_conversions.forEach((stone, index) => {
-        let input = stone;
-        let output = index + 1 >= stone_conversions.length ? stone_conversions[0] : stone_conversions[index + 1];
+    block_conversions.forEach((block_conversion) => {
+        let blocks = block_conversion.blocks;
+        blocks.forEach((block, index) => {
+            let input = block;
+            let output = index + 1 >= blocks.length ? blocks[0] : blocks[index + 1];
 
-        recipes.push({
-            output: `8x ${output}`,
-            pattern: ['AAA', 'ABA', 'AAA'],
-            key: {
-                A: input,
-                B: '#forge:essences/manipulation'
-            },
-            id: `${id_prefix}${input.replace(':', '_')}_from_${output.replace(':', '_')}`
+            recipes.push({
+                output: `8x ${output}`,
+                pattern: ['AAA', 'ABA', 'AAA'],
+                key: {
+                    A: input,
+                    B: '#forge:essences/manipulation'
+                },
+                id: `${id_prefix}${input.replace(':', '_')}_from_${output.replace(':', '_')}`
+            });
         });
     });
 
