@@ -40,5 +40,24 @@ ServerEvents.genericLootTables((event) => {
                 looting_multiplier: 0.01
             });
         });
+
+        table.addPool((pool) => {
+            pool.rolls = 1.0;
+            pool.addItem('byg:imparius_mushroom', 1, [1, 3]);
+            pool.addItem('byg:shulkren_fungus', 1, [1, 3]);
+            pool.addItem('byg:purple_bulbis_oddity', 1, [1, 3]);
+            pool.addItem('byg:bulbis_oddity', 1, [1, 3]);
+            pool.addItem('byg:fungal_imparius', 1, [1, 3]);
+
+            pool.addCondition({
+                condition: 'minecraft:location_check',
+                predicate: { dimension: 'minecraft:the_end' }
+            });
+            pool.addCondition({
+                chance: 0.25,
+                condition: 'minecraft:random_chance_with_looting',
+                looting_multiplier: 0.01
+            });
+        });
     });
 });
