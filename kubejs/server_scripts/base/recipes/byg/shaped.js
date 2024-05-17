@@ -44,6 +44,15 @@ ServerEvents.recipes((event) => {
                 B: 'byg:ether_stone'
             },
             id: `${id_prefix}ether_soil`
+        },
+        {
+            output: '4x byg:end_sand',
+            pattern: ['AB', 'BA'],
+            key: {
+                A: 'occultism:crushed_end_stone',
+                B: '#forge:sand/colorless'
+            },
+            id: `${id_prefix}end_sand`
         }
     ];
 
@@ -70,7 +79,15 @@ ServerEvents.recipes((event) => {
                 'byg:ether_stone'
             ]
         },
-        { blocks: ['minecraft:end_stone', 'byg:bulbis_phycelium', 'byg:ivis_phylium', 'byg:imparius_phylium'] },
+        {
+            blocks: [
+                'byg:end_sand',
+                'byg:bulbis_phycelium',
+                'byg:ivis_phylium',
+                'byg:imparius_phylium',
+                'byg:shulkren_phylium'
+            ]
+        },
         { blocks: ['byg:ether_soil', 'byg:ether_phylium'] },
         { blocks: ['minecraft:dirt', 'byg:lush_dirt'] }
     ];
