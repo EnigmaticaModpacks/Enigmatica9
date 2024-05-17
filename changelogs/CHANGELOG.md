@@ -17,6 +17,9 @@
 -   [Expert] Add a recipe for the new chunkloader upgrade for PNC drones [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
 -   [Expert] Processing Metal Shards now has an extra step involving the creation and use of Lacunar Acid [\#968](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/968)
 -   Add Aloe to the Market [\#972](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/972)
+-   Add many shrooms to the Market [\#975](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/975)
+-   Add methods of obtaining various BYG soils for planting [\#975](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/975)
+-   Sporelings in the End may now drop end shrooms [\#975](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/975)
 
 ### 🐛 Fixed Bugs
 
@@ -30,6 +33,7 @@
 -   Remove conflicting chest recipe. Vanilla chest may be crafted by converting any other chest. [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
 -   [Normal] Correct Thermal's quests regarding Fluxducts [\#972](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/972)
 -   Fixed missing Apotheosis bosses [\#972](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/972)
+-   Removed duplicate Cabbage seeds in the Market [\#975](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/975)
 
 ### Enigmatica 9 v1.21.0
 
