@@ -169,6 +169,12 @@
 	# Whether Pile of Pollen should spread fire super quickly to burn away huge swathes of pollen.
 	#
 	pileOfPollenHyperFireSpread = false
+	# 
+	#-----------------------------------------------------
+	#
+	# Allow Bee Queen to respawn in Throne Pillar when located with fresh Throne Honey Compass.
+	#
+	beeQueenRespawning = true
 
 ["Bee Loot Injection Options"]
 	# 

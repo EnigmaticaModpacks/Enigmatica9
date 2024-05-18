@@ -1709,6 +1709,77 @@
 			x: -10.5d
 			y: -12.0d
 		}
+		{
+			dependencies: ["6C1F18A8BD2AF6CF"]
+			description: [
+				"The Spellbound Air Blower takes the Air Blower to the next level, processing four times faster than the base Encased Fan. It uses special meshes and PNC’s Heat mechanics to replace the Water, Lava, Soul Fire, or Fire used by the Encased Fan. "
+				""
+				"Meshes are installed by Right-Clicking them on the front of the Blower, while Heat should be supplied to the body of the Blower. "
+				""
+				"For Splashing recipes, it will use a Water Soaked Mesh. Ambient temperatures should normally suffice for this to work. Too cold and the Mesh may freeze. Too hot and it will be converted back into the Woven Mesh it was made from. "
+				""
+				"For Smoking recipes, no mesh is required, however the Blower will need to be heated to around 110C. With a Dense Mesh installed, however, it only needs to be heated to about 55C. "
+				""
+				"For Blasting recipes, the temperature needs to reach approximately 330C, however just like with Smoking, this temperature requirement can be significantly lowered by installing a Dense Mesh. This allows it to begin Blasting at only 110C. "
+				""
+				"Finally, Haunting Recipes require a Haunted Mesh and a temperature of approximately 110C. "
+			]
+			id: "6BD73A0A40A22B92"
+			min_width: 300
+			rewards: [{
+				id: "1DA734BB4AA7029C"
+				item: "compressedcreativity:mesh_dense"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70C2E8C62171FF4B"
+				item: "compressedcreativity:industrial_air_blower"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3BDD27D9FDC82E36"]
+			description: ["An air powered device that mimics Create’s Encased Fan, the Air Blower uses a small amount of Air to process recipes twice as fast as the Encased Fan, making it a very handy upgrade when speed is of the utmost importance. "]
+			hide_dependency_lines: true
+			id: "6C1F18A8BD2AF6CF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "5B619EDC810C432B"
+				title: "Rare PNC:R Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "60A5458BE637B6AB"
+				item: "compressedcreativity:air_blower"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3BDD27D9FDC82E36"]
+			dependency_requirement: "all_started"
+			description: ["The Zephyr Engine is a compact means of converting Compressed Air into Rotational Force. These Engines may be chained together, thereby adding their effects together to reach higher Stress capacities. "]
+			hide_dependency_lines: true
+			id: "6C3F0BEBC4650B5D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "28DF7399F734FE9E"
+				title: "Rare PNC:R Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2A7CA436DF22BFE9"
+				item: "compressedcreativity:compressed_air_engine"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -6.5d
+		}
 	]
 	title: "PneumaticCraft: Repressurized"
 }

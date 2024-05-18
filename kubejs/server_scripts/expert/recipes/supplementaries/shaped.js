@@ -58,6 +58,86 @@ ServerEvents.recipes((event) => {
                 B: '#forge:nuggets/lead'
             },
             id: `supplementaries:candle_holders/candle_holder`
+        },
+        {
+            output: 'supplementaries:goblet',
+            pattern: ['A A', 'ABA', ' A '],
+            key: {
+                A: '#forge:nuggets/tin',
+                B: '#forge:ingots/tin'
+            },
+            id: 'supplementaries:goblet'
+        },
+        {
+            output: 'supplementaries:cage',
+            pattern: ['AAA', 'B B', 'CCC'],
+            key: {
+                A: 'pneumaticcraft:compressed_stone_slab',
+                B: 'create:andesite_bars',
+                C: '#minecraft:wooden_slabs'
+            },
+            id: 'supplementaries:cage'
+        },
+        {
+            output: 'supplementaries:wind_vane',
+            pattern: [' A ', 'ABA', ' C '],
+            key: {
+                A: '#forge:ingots/tin',
+                B: '#forge:rods/tin',
+                C: '#forge:dusts/redstone'
+            },
+            id: 'supplementaries:wind_vane'
+        },
+        {
+            output: 'supplementaries:bubble_blower',
+            pattern: [' AA', ' AA', 'B  '],
+            key: {
+                A: '#forge:nuggets/tin',
+                B: '#forge:rods/tin'
+            },
+            id: 'supplementaries:bubble_blower'
+        },
+        {
+            output: 'supplementaries:lock_block',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'pneumaticcraft:compressed_brick_tile',
+                B: '#minecraft:planks',
+                C: '#forge:dusts/redstone'
+            },
+            id: 'supplementaries:lock_block'
+        },
+        {
+            output: 'supplementaries:spring_launcher',
+            pattern: ['ABA', 'ACA', 'ADA'],
+            key: {
+                A: 'pneumaticcraft:compressed_brick_tile',
+                B: 'minecraft:slime_block',
+                C: 'minecraft:sticky_piston',
+                D: '#forge:gunpowder'
+            },
+            id: 'supplementaries:spring_launcher'
+        },
+        {
+            output: 'supplementaries:pulley_block',
+            pattern: ['ABA', 'ACA', 'ABA'],
+            key: {
+                A: '#minecraft:planks',
+                B: '#minecraft:wooden_slabs',
+                C: 'create:shaft'
+            },
+            id: 'supplementaries:pulley'
+        },
+        {
+            output: 'supplementaries:relayer',
+            pattern: ['AAB', 'CCD', 'AAB'],
+            key: {
+                A: '#forge:cobblestone',
+                B: 'minecraft:smooth_stone',
+                C: '#forge:dusts/redstone',
+                D: '#forge:ingots/copper'
+            },
+            id: 'supplementaries:relayer'
         }
     ];
 

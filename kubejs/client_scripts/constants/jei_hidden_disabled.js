@@ -286,6 +286,8 @@ jei.expert.items.disabled = [
     'ars_nouveau:volcanic_sourcelink',
     'ars_nouveau:ritual_wilden_summon',
 
+    'charginggadgets:charging_station',
+
     'compactmachines:chunkloader_upgrade',
 
     'constructionwand:iron_wand',
@@ -302,6 +304,12 @@ jei.expert.items.disabled = [
     'createaddition:capacitor',
     'createaddition:portable_energy_interface',
     'createaddition:digital_adapter',
+
+    'compressedcreativity:compressed_iron_casing',
+    'compressedcreativity:brass_gilded_lapis_lazuli',
+    'compressedcreativity:brass_coated_upgrade_matrix',
+    'compressedcreativity:rotational_compressor',
+    'compressedcreativity:heater',
 
     'emendatusenigmatica:refined_glowstone_nugget',
     'emendatusenigmatica:refined_glowstone_ingot',

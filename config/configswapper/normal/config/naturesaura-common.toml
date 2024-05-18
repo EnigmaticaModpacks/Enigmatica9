@@ -16,6 +16,8 @@
 	additionalProjectiles = []
 	#The amount of blocks that can be between two Aura Field Creators for them to be connectable and work together
 	fieldCreatorRange = 24
+	#Blocks that are exept from being fertilized by the plant boost effect. Each entry needs to be formatted as modid:block, and entries follow standard TOML array formatting (https://toml.io/en/v1.0.0#array).
+	plantBoostExceptions = ["byg:lush_grass_block", "byg:overgrown_dacite", "byg:overgrown_stone", "byg:overgrown_netherrack"]
 	#The Aura to RF ratio used by the RF converter, read as aura*ratio = rf
 	auraToRFRatio = 0.05
 	#The maximum amount of animals that can be around the powder of fertility before it stops working

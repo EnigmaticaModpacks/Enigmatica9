@@ -667,7 +667,7 @@
 		}
 		{
 			dependencies: ["00B21E64DEFACB40"]
-			description: ["The beating heart of a magical energy network, the elementals bound into the ME Controller direct the flow of magical energies between the various components of the network, enabling a witch to perform the most wonderous of feats imaginable. "]
+			description: ["The beating heart of a magical energy network, the elementals bound into the ME Controller direct the flow of magical energies between the various components of the network, enabling a witch to perform the most wondrous of feats imaginable. "]
 			icon: "ae2:controller"
 			id: "330C200F0F0243FC"
 			rewards: [
@@ -981,7 +981,7 @@
 		{
 			dependencies: ["7001144C71F0E0BC"]
 			description: [
-				"As suspected, with even a minimal amount of stabilization, the Matrix can store a wonderous quantity of items. "
+				"As suspected, with even a minimal amount of stabilization, the Matrix can store a wondrous quantity of items. "
 				""
 				"More experimentation with planar stabilizers is certainly warranted. "
 			]

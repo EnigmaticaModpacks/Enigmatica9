@@ -187,6 +187,16 @@ ServerEvents.recipes((event) => {
                 C: 'glassential:glass_redstone'
             },
             id: `${id_prefix}spell_sensor`
+        },
+        {
+            output: 'ars_nouveau:dull_trinket',
+            pattern: ['AA ', 'AB ', '  C'],
+            key: {
+                A: '#forge:string',
+                B: '#forge:gears/compressed_iron',
+                C: '#forge:gems/source'
+            },
+            id: 'ars_nouveau:dull_trinket'
         }
     ];
 

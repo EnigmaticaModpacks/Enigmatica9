@@ -493,6 +493,53 @@ ServerEvents.recipes((event) => {
                 E: 'thermal:redstone_servo'
             },
             id: 'thermal:device_xp_condenser'
+        },
+        {
+            output: 'thermal:slot_seal',
+            pattern: ['A A', ' B ', 'A A'],
+            key: {
+                A: '#forge:nuggets/aluminum',
+                B: '#forge:plates/aluminum'
+            },
+            id: 'thermal:slot_seal'
+        },
+        {
+            output: 'thermal:wrench',
+            pattern: [' A ', ' BA', 'A  '],
+            key: {
+                A: '#forge:ingots/bronze',
+                B: 'thermal:blue_rockwool'
+            },
+            id: 'thermal:tools/wrench'
+        },
+        {
+            output: 'thermal:lock',
+            pattern: [' A ', 'ABA', 'AAA'],
+            key: {
+                A: '#forge:nuggets/aluminum',
+                B: '#forge:ingots/signalum'
+            },
+            id: 'thermal:tools/lock'
+        },
+        {
+            output: 'thermal:detonator',
+            pattern: [' A ', 'CBC', 'CCC'],
+            key: {
+                A: '#forge:ingots/silver',
+                B: '#forge:gears/signalum',
+                C: '#forge:ingots/lead'
+            },
+            id: 'thermal:tools/detonator'
+        },
+        {
+            output: '2x thermal:filter_attachment',
+            pattern: [' A ', 'BCB'],
+            key: {
+                A: '#forge:nuggets/silver',
+                B: '#forge:nuggets/tin',
+                C: 'pneumaticcraft:logistics_core'
+            },
+            id: 'thermal:filter_attachment_2'
         }
     ];
 

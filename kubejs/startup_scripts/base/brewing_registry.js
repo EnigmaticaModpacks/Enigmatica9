@@ -287,6 +287,126 @@ MoreJSEvents.registerPotionBrewing((event) => {
             reagent: 'minecraft:glowstone_dust',
             input: 'apotheosis:knowledge',
             output: 'apotheosis:strong_knowledge'
+        },
+        {
+            reagent: 'hexerei:broom_brush',
+            input: 'minecraft:awkward',
+            output: 'kubejs:flight'
+        },
+        {
+            reagent: 'minecraft:redstone',
+            input: 'kubejs:flight',
+            output: 'kubejs:long_flight'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'minecraft:invisibility',
+            output: 'kubejs:true_invisibility'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'minecraft:long_invisibility',
+            output: 'kubejs:long_true_invisibility'
+        },
+        {
+            reagent: 'minecraft:redstone',
+            input: 'kubejs:true_invisibility',
+            output: 'kubejs:long_true_invisibility'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'minecraft:strong_strength',
+            output: 'kubejs:greater_strength'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'minecraft:strong_leaping',
+            output: 'kubejs:greater_jump_boost'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'minecraft:strong_swiftness',
+            output: 'kubejs:greater_speed'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'minecraft:strong_harming',
+            output: 'kubejs:greater_instant_damage'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'minecraft:strong_regeneration',
+            output: 'kubejs:greater_regeneration'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'apotheosis:strong_haste',
+            output: 'kubejs:greater_haste'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'apotheosis:strong_knowledge',
+            output: 'kubejs:greater_knowledge'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'ars_nouveau:mana_regen_potion_strong',
+            output: 'kubejs:greater_mana_regen'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'ars_nouveau:spell_damage_potion_strong',
+            output: 'kubejs:greater_spell_damage'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'ars_nouveau:shielding_potion_strong',
+            output: 'kubejs:greater_shielding'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'ars_nouveau:recovery_potion_strong',
+            output: 'kubejs:greater_recovery'
+        },
+        {
+            reagent: 'minecraft:warped_fungus',
+            input: 'minecraft:awkward',
+            output: 'kubejs:sundered'
+        },
+        {
+            reagent: 'minecraft:redstone',
+            input: 'kubejs:sundered',
+            output: 'kubejs:long_sundered'
+        },
+        {
+            reagent: 'minecraft:glowstone_dust',
+            input: 'kubejs:sundered',
+            output: 'kubejs:strong_sundered'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'kubejs:strong_sundered',
+            output: 'kubejs:greater_sundered'
+        },
+        {
+            reagent: 'hexerei:dried_yellow_dock_leaves',
+            input: 'minecraft:awkward',
+            output: 'kubejs:double_jump'
+        },
+        {
+            reagent: 'minecraft:redstone',
+            input: 'kubejs:double_jump',
+            output: 'kubejs:long_double_jump'
+        },
+        {
+            reagent: 'minecraft:glowstone_dust',
+            input: 'kubejs:double_jump',
+            output: 'kubejs:strong_double_jump'
+        },
+        {
+            reagent: 'ae2:certus_quartz_dust',
+            input: 'kubejs:strong_double_jump',
+            output: 'kubejs:greater_double_jump'
         }
     ];
 

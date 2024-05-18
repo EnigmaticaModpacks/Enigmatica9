@@ -28,6 +28,11 @@ ServerEvents.recipes((event) => {
             replace_with: '#pneumaticcraft:compressed_stone'
         },
         {
+            filter: { mod: 'compressedcreativity' },
+            to_replace: 'create:andesite_alloy',
+            replace_with: '#pneumaticcraft:compressed_stone'
+        },
+        {
             filter: { mod: 'createaddition' },
             to_replace: 'create:andesite_alloy',
             replace_with: '#pneumaticcraft:compressed_stone'

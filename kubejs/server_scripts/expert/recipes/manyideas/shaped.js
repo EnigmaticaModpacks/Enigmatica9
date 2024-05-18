@@ -22,6 +22,25 @@ ServerEvents.recipes((event) => {
                 C: 'ae2:fluix_pearl'
             },
             id: `manyideas_core:block/end_block___crafting`
+        },
+        {
+            output: 'manyideas_core:dye_crafting_table',
+            pattern: [' A ', 'BBB', 'C C'],
+            key: {
+                A: 'hexerei:pestle_and_mortar',
+                B: '#minecraft:wooden_slabs',
+                C: '#forge:rods/wooden'
+            },
+            id: `manyideas_core:block/dye_crafting_table___crafting`
+        },
+        {
+            output: 'manyideas_doors:big_door_factory',
+            pattern: ['AA', 'BB', 'BB'],
+            key: {
+                A: 'engineersdecor:iron_hatch',
+                B: 'manyideas_core:plate_iron'
+            },
+            id: `manyideas_doors:big_doors/metal/big_door_factory___crafting`
         }
     ];
 

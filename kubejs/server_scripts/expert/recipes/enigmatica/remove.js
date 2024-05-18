@@ -19,6 +19,7 @@ ServerEvents.recipes((event) => {
         { mod: 'rftoolsbuilder' },
         { mod: 'rftoolsbase' },
         { mod: 'shrink' },
+        { mod: 'charginggadgets' },
 
         { output: /pneumaticcraft:.*_upgrade/ },
         { output: /powah:player_transmitter.*/ },
@@ -128,6 +129,13 @@ ServerEvents.recipes((event) => {
         { id: 'createaddition:compat/immersiveengineering/electrum' },
         { id: 'createaddition:mixing/electrum' },
         { id: 'createaddition:crushing/diamond' },
+
+        { id: 'compressedcreativity:item_application/compressed_iron_casing_from_wood' },
+        { id: 'compressedcreativity:item_application/compressed_iron_casing_from_log' },
+        { id: 'compressedcreativity:mixing/brass_gilded_lapis_lazuli' },
+        { id: 'compressedcreativity:compacting/brass_coated_upgrade_matrix' },
+        { id: 'compressedcreativity:crafting/rotational_compressor' },
+        { id: 'compressedcreativity:crafting/mechanical_visor_upgrade' },
 
         { id: /emendatusenigmatica:plate\/from_ingot/ },
         { id: /emendatusenigmatica:rod\/from_ingot/ },

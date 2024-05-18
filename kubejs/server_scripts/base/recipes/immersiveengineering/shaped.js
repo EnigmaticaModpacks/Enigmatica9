@@ -9,6 +9,14 @@ ServerEvents.recipes((event) => {
                 A: '#forge:treated_wood'
             },
             id: `${id_prefix}stick_treated`
+        },
+        {
+            output: '6x immersiveengineering:sawdust',
+            pattern: ['AAA', 'AAA'],
+            key: {
+                A: '#forge:sawdust'
+            },
+            id: `immersiveengineering:crafting/sawdust`
         }
     ];
 

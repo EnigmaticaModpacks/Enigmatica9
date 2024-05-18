@@ -1,3 +1,40 @@
+### Enigmatica 9 v1.22.0
+
+### 🎁 New Mods Added
+
+-   [Compressed Creativity](https://www.curseforge.com/minecraft/mc-mods/compressedcreativity) (by [Lgmrszd](https://www.curseforge.com/members/lgmrszd/projects))
+
+### 🌟 Improvements
+
+-   [Expert] Massively buff Aura Infusion rewards [\#940](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/940)
+-   Add several new brewable potions, including higher tiers of some existing potions [\#943](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/943)
+-   [Expert] Remove dependencies on iron from a lot of decorative blocks [\#950](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/950)
+-   Aura will no longer cause wild grass growth on byg grass blocks [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
+-   Added a bunch of conversion options for mossy variants [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
+-   Added crafting recipes for many stone variants [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
+-   [Expert] Motes now craft 1:1 with their potion to avoid leftovers [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
+-   [Expert] Several Iron using recipes have been tweaked to adjust their gating [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
+-   [Expert] Add a recipe for the new chunkloader upgrade for PNC drones [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
+-   [Expert] Processing Metal Shards now has an extra step involving the creation and use of Lacunar Acid [\#968](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/968)
+-   Add Aloe to the Market [\#972](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/972)
+-   Add many shrooms to the Market [\#975](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/975)
+-   Add methods of obtaining various BYG soils for planting [\#975](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/975)
+-   Sporelings in the End may now drop end shrooms [\#975](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/975)
+
+### 🐛 Fixed Bugs
+
+-   [Expert] Add recipe for Ash Bricks [\#950](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/950)
+-   [Expert] Disable a coal gen that was missed [\#952](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/952)
+-   [Expert] Fixed typo in Storage Actuator quest in chapter 2 [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
+-   Removed reference to step height bonus on Skyseeker's armor [\#961](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/961)
+-   Immersive Engineering Sawdust flooring changed to no longer conflict with thermal [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
+-   Crafting tables may now be converted to variants with the stonecutter. Variant shaped crafting recipes are removed. [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
+-   Remove conflicting furnace recipe. Furnaces are now only crafted with cobblestone [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
+-   Remove conflicting chest recipe. Vanilla chest may be crafted by converting any other chest. [\#966](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/966)
+-   [Normal] Correct Thermal's quests regarding Fluxducts [\#972](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/972)
+-   Fixed missing Apotheosis bosses [\#972](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/972)
+-   Removed duplicate Cabbage seeds in the Market [\#975](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/975)
+
 ### Enigmatica 9 v1.21.0
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.20.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.20.1.md)
