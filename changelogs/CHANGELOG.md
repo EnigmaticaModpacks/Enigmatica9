@@ -1,5 +1,7 @@
 ### Enigmatica 9 v1.22.0
 
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.22.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.22.0.md)
+
 ### 🎁 New Mods Added
 
 -   [Compressed Creativity](https://www.curseforge.com/minecraft/mc-mods/compressedcreativity) (by [Lgmrszd](https://www.curseforge.com/members/lgmrszd/projects))
@@ -37,7 +39,7 @@
 
 ### Enigmatica 9 v1.21.0
 
-🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.20.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.20.1.md)
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.21.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.21.0.md)
 
 ### 🌟 Improvements
 
