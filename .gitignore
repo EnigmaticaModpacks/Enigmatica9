@@ -261,3 +261,4 @@ config/terraforged/performance_internal.conf
 config/sidebar_buttons.json
 config/emi.css
 emi.json
+config/compressedcreativity-client.toml
