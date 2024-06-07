@@ -1,5 +1,6 @@
 ### Enigmatica 9 v1.23.0
 
+
 ### 🌟 Improvements
 
 -   [Expert] Add recipes to transmute common materials from Twilight Forest into SushiGo materials, so sushi is more accessible. [\#979](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/979)
