@@ -229,7 +229,6 @@
 					type: "item"
 				}
 				{
-					auto: "enabled"
 					count: 4
 					id: "55893B8A47AC8275"
 					item: "emendatusenigmatica:steel_plate"
