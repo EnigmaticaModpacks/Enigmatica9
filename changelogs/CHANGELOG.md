@@ -5,6 +5,10 @@
 -   [Expert] New Tree of Life structure, courtesy of Gefailter [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
 -   Steel Plates are no longer auto rewarded [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
 
+### 🐛 Fixed Bugs
+
+-   [Expert] Corrected some English translations [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
+
 ---
 
 ### Enigmatica 9 v1.22.1
