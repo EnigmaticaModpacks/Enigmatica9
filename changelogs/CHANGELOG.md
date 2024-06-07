@@ -1,3 +1,12 @@
+### Enigmatica 9 v1.23.0
+
+### 🌟 Improvements
+
+-   [Expert] New Tree of Life structure, courtesy of Gefailter [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
+-   Steel Plates are no longer auto rewarded [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
+
+---
+
 ### Enigmatica 9 v1.22.1
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.22.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.22.1.md)
