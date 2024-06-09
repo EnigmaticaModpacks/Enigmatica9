@@ -354,6 +354,10 @@ JEIEvents.information((event) => {
         {
             items: ['supplementaries:quiver'],
             text: [`Pick up the Quiver and Right-Click it onto Arrows to load them.`]
+        },
+        {
+            items: ['twilightforest:magic_beans'],
+            text: [`Found within obsidian vaults deep in Cave Troll caves.`]
         }
     ];
 
