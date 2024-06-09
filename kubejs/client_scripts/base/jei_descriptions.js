@@ -354,6 +354,10 @@ JEIEvents.information((event) => {
         {
             items: ['supplementaries:quiver'],
             text: [`Pick up the Quiver and Right-Click it onto Arrows to load them.`]
+        },
+        {
+            items: ['twilightforest:magic_beans'],
+            text: [`Found within obsidian vaults deep in Cave Troll caves.`]
         }
     ];
 
@@ -363,20 +367,6 @@ JEIEvents.information((event) => {
             event.addItem(item, description.text);
         });
     });
-
-    // generatableCobblestone.forEach((cobblestone) => {
-    //     event.addItem(
-    //         cobblestone,
-    //         'Can be generated in a Vanilla Cobblestone Generator. The block below where the Cobblestone generates needs to be a Block of Iron.'
-    //     );
-    // });
-
-    // generatableStone.forEach((stone) => {
-    //     event.addItem(
-    //         stone,
-    //         'Can be generated in a Vanilla Stone Generator. The block below where the Stone generates needs to be a Block of Diamond.'
-    //     );
-    // });
 
     jei.base.items.disabled.forEach((item) => {
         if (item !== air) {

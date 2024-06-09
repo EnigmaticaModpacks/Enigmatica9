@@ -1751,6 +1751,34 @@ const entries = {
                 normal: `Industrial Air Blower`,
                 expert: `Spellbound Air Blower`
             }
+        },
+        {
+            key: 'compressedcreativity.recipe.blasting.industrial_air_blower',
+            value: {
+                normal: `Industrial Air Blower behind Lava`,
+                expert: `Spellbound Air Blower behind Lava`
+            }
+        },
+        {
+            key: 'compressedcreativity.recipe.haunting.industrial_air_blower',
+            value: {
+                normal: `Industrial Air Blower behind Soul Fire`,
+                expert: `Spellbound Air Blower behind Soul Fire`
+            }
+        },
+        {
+            key: 'compressedcreativity.recipe.smoking.industrial_air_blower',
+            value: {
+                normal: `Industrial Air Blower behind Fire`,
+                expert: `Spellbound Air Blower behind Fire`
+            }
+        },
+        {
+            key: 'compressedcreativity.recipe.washing.industrial_air_blower',
+            value: {
+                normal: `Industrial Air Blower behind Flowing Water`,
+                expert: `Spellbound Air Blower behind Flowing Water`
+            }
         }
     ],
     engineersdecor: [

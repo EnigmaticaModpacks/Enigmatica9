@@ -1,10 +1,18 @@
 ### Enigmatica 9 v1.23.0
 
-### 🎁 New Mods Added
-
 ### 🌟 Improvements
 
 -   [Expert] Add recipes to transmute common materials from Twilight Forest into SushiGo materials, so sushi is more accessible. [\#979](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/979)
+-   [Expert] New Tree of Life structure, courtesy of Gefailter [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
+-   [Expert] Cave Trolls no longer drop Magic Beans. They're only found in the Obsidian Vaults now. [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
+-   Steel Plates are no longer auto rewarded [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
+
+### 🐛 Fixed Bugs
+
+-   [Expert] Corrected some English translations [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
+-   Ancient Slabs/Stairs are now properly tagged [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
+
+---
 
 ### Enigmatica 9 v1.22.1
 
