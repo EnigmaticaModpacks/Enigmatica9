@@ -368,20 +368,6 @@ JEIEvents.information((event) => {
         });
     });
 
-    // generatableCobblestone.forEach((cobblestone) => {
-    //     event.addItem(
-    //         cobblestone,
-    //         'Can be generated in a Vanilla Cobblestone Generator. The block below where the Cobblestone generates needs to be a Block of Iron.'
-    //     );
-    // });
-
-    // generatableStone.forEach((stone) => {
-    //     event.addItem(
-    //         stone,
-    //         'Can be generated in a Vanilla Stone Generator. The block below where the Stone generates needs to be a Block of Diamond.'
-    //     );
-    // });
-
     jei.base.items.disabled.forEach((item) => {
         if (item !== air) {
             // console.log(`Disabled: ${item}`);
