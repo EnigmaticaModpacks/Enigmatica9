@@ -3,7 +3,7 @@
 ### 🌟 Improvements
 
 -   [Expert] Add recipes to transmute common materials from Twilight Forest into SushiGo materials, so sushi is more accessible. [\#979](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/979)
--   [Expert] New Tree of Life structure, courtesy of Gefailter [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
+-   [Expert] New Tree of Life structure, courtesy of Gefailter (credit: [gefailter ](https://github.com/gefailter)) [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
 -   [Expert] Cave Trolls no longer drop Magic Beans. They're only found in the Obsidian Vaults now. [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
 -   Steel Plates are no longer auto rewarded [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
 
