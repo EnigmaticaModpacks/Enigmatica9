@@ -500,6 +500,29 @@ ServerEvents.recipes((event) => {
                 B: '#forge:rods/brass'
             },
             id: 'ae2:tools/misctools_charged_staff'
+        },
+        {
+            output: 'ae2:color_applicator',
+            pattern: [' AB', ' CA', 'D  '],
+            key: {
+                A: '#forge:rods/tin',
+                B: 'ae2:formation_core',
+                C: 'ae2:cell_component_4k',
+                D: 'ae2:energy_cell'
+            },
+            id: 'ae2:tools/network_color_applicator'
+        },
+        {
+            output: 'ae2:matter_cannon',
+            pattern: ['AAB', 'CD ', 'E  '],
+            key: {
+                A: 'pneumaticcraft:cannon_barrel',
+                B: 'ae2:formation_core',
+                C: 'ae2:cell_component_4k',
+                D: 'ae2:energy_cell',
+                E: '#forge:wooden_grip'
+            },
+            id: 'ae2:tools/matter_cannon'
         }
     ];
 

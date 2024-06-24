@@ -953,6 +953,20 @@ ServerEvents.recipes((event) => {
             reagents: ['ars_nouveau:blank_thread'],
             sourceCost: 0,
             id: 'ars_nouveau:thread_drygmy'
+        },
+        {
+            output: 'ars_elemental:base_bangle',
+            inputs: [
+                '#forge:gems/source',
+                '#forge:ingots/electrum',
+                '#forge:ingots/electrum',
+                '#forge:ingots/electrum',
+                '#forge:ingots/electrum',
+                '#forge:ingots/electrum'
+            ],
+            reagents: ['ars_nouveau:ring_of_potential'],
+            sourceCost: 0,
+            id: 'ars_elemental:base_bangle'
         }
     ];
 

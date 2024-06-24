@@ -315,40 +315,42 @@ EntityEvents.spawned((event) => {
 
         // Remove Previous Tree of Life Handling
         if (ritual_effect.structure && ritual_effect.structure.remove) {
-            let structure = NBTIO.read(ritual_effect.structure.remove);
-            let start_delay = ritual_effect.structure.start_delay;
-            let delay;
-            let cur = {
-                x: Math.floor(abs.x + ritual_effect.offset.x - Math.floor(structure.size[0] / 2)),
-                y: Math.floor(abs.y + ritual_effect.offset.y),
-                z: Math.floor(abs.z + ritual_effect.offset.z - Math.floor(structure.size[2] / 2))
-            };
-
-            structure.blocks.forEach((block) => {
-                let palette = structure.palette[block.state];
-
-                let coord = {
-                    x: Math.floor(cur.x + block.pos[0]),
-                    y: Math.floor(cur.y + block.pos[1]),
-                    z: Math.floor(cur.z + block.pos[2])
+            ritual_effect.structure.remove.forEach((structure) => {
+                structure = NBTIO.read(structure);
+                let start_delay = ritual_effect.structure.start_delay;
+                let delay;
+                let cur = {
+                    x: Math.floor(abs.x + ritual_effect.offset.x - Math.floor(structure.size[0] / 2)),
+                    y: Math.floor(abs.y + ritual_effect.offset.y),
+                    z: Math.floor(abs.z + ritual_effect.offset.z - Math.floor(structure.size[2] / 2))
                 };
 
-                // Remove any blocks that can't exist without something under them first to avoid them getting duplicated
-                delay = start_delay;
-                event.server.scheduleInTicks(delay, (schedule) => {
-                    if (
-                        ritual_effect.structure.soft_blocks &&
-                        ritual_effect.structure.soft_blocks.includes(palette.Name)
-                    ) {
+                structure.blocks.forEach((block) => {
+                    let palette = structure.palette[block.state];
+
+                    let coord = {
+                        x: Math.floor(cur.x + block.pos[0]),
+                        y: Math.floor(cur.y + block.pos[1]),
+                        z: Math.floor(cur.z + block.pos[2])
+                    };
+
+                    // Remove any blocks that can't exist without something under them first to avoid them getting duplicated
+                    delay = start_delay;
+                    event.server.scheduleInTicks(delay, (schedule) => {
+                        if (
+                            ritual_effect.structure.soft_blocks &&
+                            ritual_effect.structure.soft_blocks.includes(palette.Name)
+                        ) {
+                            command = `/execute in ${ritual_dimension} run fill ${coord.x} ${coord.y} ${coord.z} ${coord.x} ${coord.y} ${coord.z} air replace ${palette.Name}`;
+                            schedule.server.runCommandSilent(command);
+                        }
+                    });
+
+                    delay = start_delay + 0.5 * block.pos[1];
+                    event.server.scheduleInTicks(delay, (schedule) => {
                         command = `/execute in ${ritual_dimension} run fill ${coord.x} ${coord.y} ${coord.z} ${coord.x} ${coord.y} ${coord.z} air replace ${palette.Name}`;
                         schedule.server.runCommandSilent(command);
-                    }
-                });
-
-                delay = start_delay + 0.5 * block.pos[1];
-                event.server.scheduleInTicks(delay, (schedule) => {
-                    command = `/execute in ${ritual_dimension} run fill ${coord.x} ${coord.y} ${coord.z} ${coord.x} ${coord.y} ${coord.z} air replace ${palette.Name}`;
-                    schedule.server.runCommandSilent(command);
+                    });
                 });
             });
         }

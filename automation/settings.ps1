@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica9"
 $CLIENT_NAME = "Enigmatica9"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "1.21.0"
+$MODPACK_VERSION = "1.22.1"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "1.20.1"
+$LAST_MODPACK_VERSION = "1.22.0"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -177,7 +177,9 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"ae2/client.json",
 	"explorerscompass-client.toml",
 	"theoneprobe-client.toml",
-	"sidebar_buttons.json"
+	"sidebar_buttons.json",
+	"compressedcreativity-client.toml",
+	"AdvancedBackups-client.properties"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "resourcepacks")

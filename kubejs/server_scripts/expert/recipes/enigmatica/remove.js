@@ -135,6 +135,7 @@ ServerEvents.recipes((event) => {
         { id: 'compressedcreativity:mixing/brass_gilded_lapis_lazuli' },
         { id: 'compressedcreativity:compacting/brass_coated_upgrade_matrix' },
         { id: 'compressedcreativity:crafting/rotational_compressor' },
+        { id: 'compressedcreativity:crafting/mechanical_visor_upgrade' },
 
         { id: /emendatusenigmatica:plate\/from_ingot/ },
         { id: /emendatusenigmatica:rod\/from_ingot/ },

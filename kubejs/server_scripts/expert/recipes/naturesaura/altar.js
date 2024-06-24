@@ -81,7 +81,7 @@ ServerEvents.recipes((event) => {
             id: `${id_prefix}soul_crystal`
         },
         {
-            output: '3x kubejs:mote_of_renewal',
+            output: 'kubejs:mote_of_renewal',
             input: Item.of('minecraft:potion', { Potion: 'ars_nouveau:recovery_potion_strong' }).weakNBT(),
             catalyst: 'naturesaura:crushing_catalyst',
             aura: 3000,
@@ -126,6 +126,38 @@ ServerEvents.recipes((event) => {
             aura: 500000,
             time: 1800,
             id: `${id_prefix}novice_spell_book`
+        },
+        {
+            output: Item.of('sushigocrafting:tobiko', '{Amount:100}'),
+            input: 'minecraft:sweet_berries',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 300,
+            time: 10,
+            id: `${id_prefix}tobiko`
+        },
+        {
+            output: 'sushigocrafting:raw_tuna',
+            input: 'minecraft:salmon',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 300,
+            time: 10,
+            id: `${id_prefix}raw_tuna`
+        },
+        {
+            output: Item.of('sushigocrafting:shrimp', '{Amount:100}'),
+            input: 'twilightforest:cicada',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 300,
+            time: 10,
+            id: `${id_prefix}shrimp_from_cicada`
+        },
+        {
+            output: Item.of('sushigocrafting:shrimp', '{Amount:100}'),
+            input: 'twilightforest:firefly',
+            catalyst: 'naturesaura:conversion_catalyst',
+            aura: 300,
+            time: 10,
+            id: `${id_prefix}shrimp_from_firefly`
         }
     ];
 

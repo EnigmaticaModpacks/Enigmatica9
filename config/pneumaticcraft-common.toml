@@ -225,6 +225,9 @@
 	pneumatic_pump_efficiency = 80
 	#ID's of dimensions in which the Aerial Interface is not allowed to operate. You can use wildcarded dimensions here, e.g. 'somemod:*'.
 	aerial_interface_dimension_blacklist = []
+	#Minimum pressure required for the Pressurized Spawner to run
+	#Range: 1.0 ~ 20.0
+	pressurized_spawner_min_pressure = 10.0
 
 [General]
 	#Enable mod dungeon loot generation

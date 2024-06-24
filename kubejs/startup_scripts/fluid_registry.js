@@ -36,6 +36,12 @@ StartupEvents.registry('fluid', (event) => {
             id: 'elysium',
             color: 0x02523f,
             display: 'Elysium'
+        },
+        {
+            type: 'thin',
+            id: 'lacunar_acid',
+            color: 0x9f7df5,
+            display: 'Lacunar Acid'
         }
     ];
 
