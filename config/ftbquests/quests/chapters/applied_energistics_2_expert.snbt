@@ -676,7 +676,7 @@
 				""
 				"Once built, the two sides of the network are seen as the same. Be sure to chunk load both sides, however."
 				""
-				"{\"text\":\"AE2 Wiki: Quantum Bridge\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/quantum-bridge\"}}"
+				"{\"text\":\"AE2 Wiki: Quantum Bridge\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://guide.appliedenergistics.org/1.19.2/features/me-network/quantum-bridge\"}}"
 			]
 			icon: "ae2:quantum_entangled_singularity"
 			id: "03662FB8C114E255"
