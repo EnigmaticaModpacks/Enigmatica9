@@ -22,6 +22,39 @@ ServerEvents.recipes((event) => {
                 }
             ],
             id: `${id_prefix}sky_dust_silver_osmium_clump`
+        },
+        {
+            results: [
+                { item: `create:track`, count: 64 },
+            ],
+            input: 'minecraft:smooth_stone_slab',
+            transitionalItem: 'minecraft:smooth_stone_slab',
+            loops: 1,
+            sequence: [
+                {
+                    type: 'create:deploying',
+                    ingredients: [
+                        { item: 'minecraft:smooth_stone_slab' },
+                        Ingredient.of(['emendatusenigmatica:bronze_rod', '#forge:rods/osmium', '#forge:rods/iron']).toJson()
+                    ],
+                    results: [{ item: 'minecraft:smooth_stone_slab' }]
+                },
+                {
+                    type: 'create:deploying',
+                    ingredients: [
+                        { item: 'minecraft:smooth_stone_slab' },
+                        Ingredient.of(['emendatusenigmatica:bronze_rod', '#forge:rods/osmium', '#forge:rods/iron']).toJson()
+                    ],
+                    results: [{ item: 'minecraft:smooth_stone_slab' }]
+                },
+                {
+                    type: 'create:pressing',
+                    ingredients: [{ item: 'minecraft:smooth_stone_slab' }],
+                    results: [{ item: 'minecraft:smooth_stone_slab' }],
+                    processingTime: 50
+                },
+            ],
+            id: `${id_prefix}track_sequential`
         }
     ];
 
