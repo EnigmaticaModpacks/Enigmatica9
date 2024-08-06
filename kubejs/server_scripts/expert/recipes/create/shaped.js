@@ -316,12 +316,12 @@ ServerEvents.recipes((event) => {
             id: `create:crafting/kinetics/rotation_speed_controller`
         },
         {
-            output: 'create:controls',
+            output: '2x create:controls',
             pattern: ['A', 'B', 'C'],
             key: {
-                A: 'immersiveengineering:component_electronic',
+                A: 'create:analog_lever',
                 B: 'create:railway_casing',
-                C: '#forge:gears/lumium'
+                C: 'immersiveengineering:component_electronic'
             },
             id: `create:crafting/kinetics/controls`
         },
@@ -353,34 +353,14 @@ ServerEvents.recipes((event) => {
             id: `create:crafting/kinetics/nixie_tube`
         },
         {
-            output: '32x create:track',
+            output: '64x create:track',
             pattern: ['ABA', 'ACA', 'ABA'],
             key: {
-                A: '#forge:rods/iron',
+                A: Ingredient.of(['emendatusenigmatica:bronze_rod', '#forge:rods/osmium', '#forge:rods/iron']),
                 B: 'minecraft:smooth_stone_slab',
                 C: '#forge:gravel'
             },
-            id: `${id_prefix}track_from_iron`
-        },
-        {
-            output: '48x create:track',
-            pattern: ['ABA', 'ACA', 'ABA'],
-            key: {
-                A: '#forge:rods/osmium',
-                B: 'minecraft:smooth_stone_slab',
-                C: '#forge:gravel'
-            },
-            id: `${id_prefix}track_from_osmium`
-        },
-        {
-            output: '16x create:track',
-            pattern: ['ABA', 'ACA', 'ABA'],
-            key: {
-                A: '#forge:rods/bronze',
-                B: 'minecraft:smooth_stone_slab',
-                C: '#forge:gravel'
-            },
-            id: `${id_prefix}track_from_bronze`
+            id: `${id_prefix}track_from_rods`
         },
         {
             output: 'create:smart_fluid_pipe',
