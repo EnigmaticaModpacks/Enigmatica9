@@ -1103,7 +1103,7 @@
 		}
 		{
 			dependencies: ["2A0CD26353B9E8C2"]
-			description: ["Add some extra features to your storage, like the ability to craft or use a stonecutter without leaving the interface. "]
+			description: ["Add some extra features to your storage, like the ability to use a stonecutter without leaving the interface. "]
 			id: "7D8D1C51AED92742"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
@@ -1114,23 +1114,7 @@
 			}]
 			tasks: [{
 				id: "538B1DB69502E750"
-				item: {
-					Count: 1b
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "sophisticatedstorage:crafting_upgrade"
-							}
-							{
-								Count: 1b
-								id: "sophisticatedstorage:stonecutter_upgrade"
-							}
-						]
-					}
-				}
-				title: "Functional Upgrades"
+				item: "sophisticatedstorage:stonecutter_upgrade"
 				type: "item"
 			}]
 			x: -5.0d
