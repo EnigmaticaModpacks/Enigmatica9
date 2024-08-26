@@ -25,6 +25,7 @@ ServerEvents.entityLootTables((event) => {
             pool.addItem('ars_elemental:glyph_not_insect_filter', 1);
             pool.addItem('ars_elemental:glyph_not_undead_filter', 1);
             pool.addItem('ars_elemental:glyph_undead_filter', 1);
+            pool.addItem('ars_elemental:glyph_spark', 2);
 
             pool.addItem('ars_nouveau:glyph_amplify', 1);
             pool.addItem('ars_nouveau:glyph_bounce', 1);

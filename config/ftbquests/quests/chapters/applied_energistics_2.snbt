@@ -180,7 +180,7 @@
 				""
 				"While the math behind what a Byte is, exactly, can be a little complicated, know that Storage Cells will hold more total if they are limited to a single type than if they’re allowed to store multiple types."
 				""
-				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
+				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://guide.appliedenergistics.org/1.19.2/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
 			]
 			id: "211D0FAA0B023EF0"
 			rewards: [{
@@ -210,7 +210,7 @@
 				""
 				"While the math behind what a Byte is, exactly, can be a little complicated, know that Storage Cells will hold more total if they are limited to a single type than if they’re allowed to store multiple types."
 				""
-				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
+				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://guide.appliedenergistics.org/1.19.2/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
 			]
 			id: "6B9F725AE5A94531"
 			rewards: [{
@@ -240,7 +240,7 @@
 				""
 				"While the math behind what a Byte is, exactly, can be a little complicated, know that Storage Cells will hold more total if they are limited to a single type than if they’re allowed to store multiple types."
 				""
-				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
+				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://guide.appliedenergistics.org/1.19.2/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
 			]
 			id: "22AB44AE329F9EA8"
 			rewards: [{
@@ -454,7 +454,7 @@
 			description: [
 				"P2P or Point to Point, is a concept of using a single channel to transmit up to 32. Setting up a P2P connection can certainly be daunting for players who are new to AE2, but the basics are fairly accessible."
 				""
-				"{\"text\":\"AE2 Wiki: P2P Tunnels\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/misc/p2p-tunnel\"}} "
+				"{\"text\":\"AE2 Wiki: P2P Tunnels\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://guide.appliedenergistics.org/1.19.2/features/me-network/misc/p2p-tunnel\"}} "
 				""
 				"Refer to the following pages for an example on setting this up. "
 				""
@@ -1012,7 +1012,7 @@
 				""
 				"Getting started will require finding some Certus Quartz, and that’s going to take a little exploration. Get your boots and compass, it’s time to head out. "
 				""
-				"{\"text\":\"AE2 Wiki\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/\"}}"
+				"{\"text\":\"AE2 Wiki\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://guide.appliedenergistics.org/1.19.2/\"}}"
 			]
 			hide: true
 			icon: "ae2:singularity"
