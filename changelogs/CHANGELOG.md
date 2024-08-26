@@ -12,7 +12,7 @@
 -   [Expert] Corrected some English translations [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
 -   Ancient Slabs/Stairs are now properly tagged [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
 -   Fixed link to quantum bridge in ae2 quests [\#991](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/991)
--   [Expert] Removed uncraftable item from storage quests [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
+-   [Expert] Removed uncraftable item from storage quests [\#1004](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1004)
 
 ---
 
