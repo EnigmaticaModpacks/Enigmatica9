@@ -6,6 +6,7 @@
 -   [Expert] New Tree of Life structure, courtesy of Gefailter (credit: [gefailter ](https://github.com/gefailter)) [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
 -   [Expert] Cave Trolls no longer drop Magic Beans. They're only found in the Obsidian Vaults now. [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
 -   Steel Plates are no longer auto rewarded [\#981](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/981)
+-   [Expert] Golden Mallet is now unbreakable. [\#1006](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1006)
 
 ### 🐛 Fixed Bugs
 

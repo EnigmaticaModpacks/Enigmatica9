@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
             id: 'naturesaura:altar/infused_iron_block'
         },
         {
-            output: 'nomadictents:golden_mallet',
+            output: Item.of('nomadictents:golden_mallet', { Damage: 0, Unbreakable: 1 }),
             input: 'nomadictents:mallet',
             aura: 500000,
             time: 1800,
