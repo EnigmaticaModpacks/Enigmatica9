@@ -1,6 +1,16 @@
+### Enigmatica 9 v1.23.2
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.23.2.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.23.2.md)
+
+### 🐛 Fixed Bugs
+
+-   Fixed the Tree of Life stage 1 pentacle being incorrect [\#1009](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1009) 
+
+---
+
 ### Enigmatica 9 v1.23.1
 
-🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.23.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.23.0.md)
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.23.1.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.23.1.md)
 
 ### 🐛 Fixed Bugs
 
