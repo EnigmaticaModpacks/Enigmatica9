@@ -9,6 +9,7 @@
 
 -   [Expert] Adjust power input rate of Eldritch Engine to smooth out usage when powered by a Router [\#1021](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1021)
 -   [Expert] Remove reference to area mining on the mining laser in Expert Quests since that upgrade is disabled. [\#1021](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1021)
+-   [Expert] Fix issue with IE crusher giving wrong outputs for Lapis. [\#1022](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1022)
 
 ---
 

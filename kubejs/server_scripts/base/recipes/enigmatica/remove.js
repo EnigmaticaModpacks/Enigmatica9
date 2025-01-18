@@ -103,6 +103,7 @@ ServerEvents.recipes((event) => {
         { id: 'immersiveengineering:crusher/slag' },
         { id: 'immersiveengineering:crusher/blaze_powder' },
         { id: 'immersiveengineering:crusher/sandstone' },
+        { id: 'immersiveengineering:crusher/blue_dye' },
         { id: 'immersiveengineering:crusher/bone_meal' },
         { id: 'immersiveengineering:crusher/red_sandstone' },
         { id: 'immersiveengineering:smelting/slag_glass' },
