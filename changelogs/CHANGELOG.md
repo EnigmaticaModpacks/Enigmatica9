@@ -18,7 +18,7 @@
 
 ### 🐛 Fixed Bugs
 
--   Fixed the Tree of Life stage 1 pentacle being incorrect [\#1009](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1009) 
+-   Fixed the Tree of Life stage 1 pentacle being incorrect [\#1009](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1009)
 
 ---
 
