@@ -231,7 +231,6 @@
 					type: "item"
 				}
 				{
-					count: 20L
 					id: "4DD75E6EBA654D12"
 					item: {
 						Count: 1b
@@ -240,23 +239,20 @@
 							value: "minecraft:planks"
 						}
 					}
-					title: "Any #minecraft:planks"
+					title: "Any Planks"
 					type: "item"
 				}
 				{
-					count: 16L
 					id: "3EA6FF0E4235DB44"
 					item: "minecraft:stone_bricks"
 					type: "item"
 				}
 				{
-					count: 8L
 					id: "12D60736A8AF5AAB"
 					item: "naturesaura:gold_brick"
 					type: "item"
 				}
 				{
-					count: 4L
 					id: "03E99236300A5FFD"
 					item: "minecraft:chiseled_stone_bricks"
 					type: "item"
