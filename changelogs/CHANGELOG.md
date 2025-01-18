@@ -1,3 +1,17 @@
+### Enigmatica 9 v1.24.0
+
+### 🌟 Improvements
+
+-   [Expert] Adjust Lingering Absorber quest to add the blocks needed for the multiblock. [\#1021](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1021)
+-   [Expert] Mention the Player Interface in the quest for the Mining Laser as a means of powering it. [\#1021](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1021)
+
+### 🐛 Fixed Bugs
+
+-   [Expert] Adjust power input rate of Eldritch Engine to smooth out usage when powered by a Router [\#1021](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1021)
+-   [Expert] Remove reference to area mining on the mining laser in Expert Quests since that upgrade is disabled. [\#1021](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1021)
+
+---
+
 ### Enigmatica 9 v1.23.0
 
 ### 🌟 Improvements
