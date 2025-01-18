@@ -1,4 +1,4 @@
-## Enigmatica9 - 1.23.2
+## Enigmatica9 - 1.23.1
 
   * [AdvancedBackups-forge-1.19.2-3.6.3.jar](https://www.curseforge.com/minecraft/mc-mods/advanced-backups/files/5648132) (by [HeatherWhite](https://www.curseforge.com/members/HeatherWhite/projects))
   * [aecapfix-0.9.jar](https://www.curseforge.com/minecraft/mc-mods/aecapfix/files/5418994) (by [ninety](https://www.curseforge.com/members/ninety/projects))
@@ -78,7 +78,7 @@
   * [enigmaticgraves-1.19.2-1.7.10.jar](https://www.curseforge.com/minecraft/mc-mods/enigmatic-graves/files/4732816) (by [Quarris](https://www.curseforge.com/members/Quarris/projects))
   * [enigmaticunity-1.5.jar](https://www.curseforge.com/minecraft/mc-mods/enigmatic-unity/files/4742890) (by [Darkere](https://www.curseforge.com/members/Darkere/projects))
   * [entangled-1.3.19-forge-mc1.19.2.jar](https://www.curseforge.com/minecraft/mc-mods/entangled/files/5656191) (by [SuperMartijn642](https://www.curseforge.com/members/SuperMartijn642/projects))
-  * [everycomp-1.19.2-2.5.27.jar](https://www.curseforge.com/minecraft/mc-mods/every-compat/files/5718222) (by [MehVahdJukaar](https://www.curseforge.com/members/MehVahdJukaar/projects))
+  * [everycomp-1.19.2-2.5.26.jar](https://www.curseforge.com/minecraft/mc-mods/every-compat/files/5583319) (by [MehVahdJukaar](https://www.curseforge.com/members/MehVahdJukaar/projects))
   * [extremesoundmuffler-3.39-forge-1.19.2.jar](https://www.curseforge.com/minecraft/mc-mods/extreme-sound-muffler/files/4821189) (by [LeoBeliik](https://www.curseforge.com/members/LeoBeliik/projects))
   * [FarmersDelight-1.19.2-1.2.4.jar](https://www.curseforge.com/minecraft/mc-mods/farmers-delight/files/5051241) (by [vectorwing](https://www.curseforge.com/members/vectorwing/projects))
   * [farmingforblockheads-forge-1.19.2-11.3.5.jar](https://www.curseforge.com/minecraft/mc-mods/farming-for-blockheads/files/4749429) (by [BlayTheNinth](https://www.curseforge.com/members/BlayTheNinth/projects))
@@ -218,7 +218,7 @@
   * [trofers-1.19.2-3.2.0.jar](https://www.curseforge.com/minecraft/mc-mods/trofers/files/4485498) (by [ochotonida](https://www.curseforge.com/members/ochotonida/projects))
   * [v_slab_compat-1.19.2-1.9.jar](https://www.curseforge.com/minecraft/mc-mods/vertical-slabs-compat/files/4808086) (by [MehVahdJukaar](https://www.curseforge.com/members/MehVahdJukaar/projects))
   * [wits-1.1.0+1.19.2-forge.jar](https://www.curseforge.com/minecraft/mc-mods/wits/files/4789312) (by [telepathicgrunt](https://www.curseforge.com/members/telepathicgrunt/projects))
-  * [xnet-1.19-5.2.6.jar](https://www.curseforge.com/minecraft/mc-mods/xnet/files/5712545) (by [McJty](https://www.curseforge.com/members/McJty/projects))
+  * [xnet-1.19-5.2.5.jar](https://www.curseforge.com/minecraft/mc-mods/xnet/files/5703060) (by [McJty](https://www.curseforge.com/members/McJty/projects))
   * [xnetgases-1.19.2-4.1.6.jar](https://www.curseforge.com/minecraft/mc-mods/xnet-gases/files/5661659) (by [Terrails](https://www.curseforge.com/members/Terrails/projects))
   * [yeetusexperimentus-1.0.1-build.2+mc1.19.1.jar](https://www.curseforge.com/minecraft/mc-mods/yeetusexperimentus/files/3909789) (by [Sunekaer](https://www.curseforge.com/members/Sunekaer/projects))
   * [YungsApi-1.19.2-Forge-3.8.10.jar](https://www.curseforge.com/minecraft/mc-mods/yungs-api/files/4876062) (by [YUNGNICKYOUNG](https://www.curseforge.com/members/YUNGNICKYOUNG/projects))
