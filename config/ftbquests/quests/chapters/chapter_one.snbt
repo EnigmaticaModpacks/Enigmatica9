@@ -1885,11 +1885,23 @@
 					type: "item"
 				}
 			]
-			tasks: [{
-				id: "150E44FC952BB995"
-				item: "naturesaura:potion_generator"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "150E44FC952BB995"
+					item: "naturesaura:potion_generator"
+					type: "item"
+				}
+				{
+					id: "0998AFFA192AA8CF"
+					item: "minecraft:red_nether_bricks"
+					type: "item"
+				}
+				{
+					id: "0E64F133545A5820"
+					item: "minecraft:nether_bricks"
+					type: "item"
+				}
+			]
 			title: "Aura Generation"
 			x: -5.5d
 			y: -2.5d
