@@ -738,7 +738,7 @@
 		{
 			dependencies: ["780BADC429826D36"]
 			description: [
-				"Useful for both Crafting and other Automation pursuits, the Deployer will find it’s way into many creations."
+				"Useful for both Crafting and other Automation pursuits, the Deployer will find its way into many creations."
 				""
 				"An item may be inserted into the Deployer by Belt, Funnel, Hopper, or most any other item transport method. When powered, it will continuously attempt to Right-Click the held item on any entity in front of it, be it item or mob. "
 				""
