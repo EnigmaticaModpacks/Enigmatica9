@@ -1,10 +1,27 @@
+### Enigmatica 9 v1.24.0
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.24.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.24.0.md)
+
+### 🌟 Improvements
+
+-   [Expert] Adjust Lingering Absorber quest to add the blocks needed for the multiblock. [\#1021](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1021)
+-   [Expert] Mention the Player Interface in the quest for the Mining Laser as a means of powering it. [\#1021](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1021)
+
+### 🐛 Fixed Bugs
+
+-   [Expert] Adjust power input rate of Eldritch Engine to smooth out usage when powered by a Router [\#1021](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1021)
+-   [Expert] Remove reference to area mining on the mining laser in Expert Quests since that upgrade is disabled. [\#1021](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1021)
+-   Fix issue with IE crusher giving wrong outputs for Lapis. [\#1022](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1022)
+
+---
+
 ### Enigmatica 9 v1.23.2
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.23.2.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.23.2.md)
 
 ### 🐛 Fixed Bugs
 
--   Fixed the Tree of Life stage 1 pentacle being incorrect [\#1009](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1009) 
+-   Fixed the Tree of Life stage 1 pentacle being incorrect [\#1009](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1009)
 
 ---
 

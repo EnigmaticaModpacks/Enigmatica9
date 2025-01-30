@@ -13,6 +13,16 @@ ServerEvents.recipes((event) => {
 
     const recipes = [
         {
+            filter: { output: 'cable_facades:facade_wrench' },
+            to_replace: '#forge:ingots/iron',
+            replace_with: '#forge:ingots/tin'
+        },
+        {
+            filter: { output: 'cable_facades:facade_wrench' },
+            to_replace: '#forge:nuggets/iron',
+            replace_with: '#forge:nuggets/tin'
+        },
+        {
             filter: { output: 'minecraft:hopper' },
             to_replace: '#forge:ingots/iron',
             replace_with: '#forge:ingots/tin'
