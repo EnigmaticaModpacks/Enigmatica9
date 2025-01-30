@@ -2,16 +2,25 @@
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.24.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.24.0.md)
 
+### 🎁 New Mods Added
+
+-   [Cable Facades](https://www.curseforge.com/minecraft/mc-mods/cable-facades) (by [thepigcat76](https://www.curseforge.com/members/thepigcat76/projects))
+
 ### 🌟 Improvements
 
 -   [Expert] Adjust Lingering Absorber quest to add the blocks needed for the multiblock. [\#1021](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1021)
 -   [Expert] Mention the Player Interface in the quest for the Mining Laser as a means of powering it. [\#1021](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1021)
+-   Add required blocks to "Aura Generation" quest in Chapter 1. [\#1020](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1020)
 
 ### 🐛 Fixed Bugs
 
 -   [Expert] Adjust power input rate of Eldritch Engine to smooth out usage when powered by a Router [\#1021](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1021)
 -   [Expert] Remove reference to area mining on the mining laser in Expert Quests since that upgrade is disabled. [\#1021](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1021)
 -   Fix issue with IE crusher giving wrong outputs for Lapis. [\#1022](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1022)
+-   Crash when trying to extract an Apotheosis gem using Vial of Arcane Extraction [\#1012](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1012)
+-   Typo E9E "Summon Death Tome" [\#1024](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1024)
+-   Typo E9E "Deployer" [\#1025](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1025)
+-   Typo E9E "Quark" [[\#1026]](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1026)
 
 ---
 
