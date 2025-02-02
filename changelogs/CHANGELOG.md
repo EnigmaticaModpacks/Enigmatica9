@@ -4,6 +4,8 @@
 
 ### 🎁 New Mods Added
 
+- [Structure Layout Optimizer](https://www.curseforge.com/minecraft/mc-mods/structure-layout-optimizer) (by [telepathicgrunt](https://www.curseforge.com/members/telepathicgrunt/projects))
+
 ---
 
 ### Enigmatica 9 v1.24.0
