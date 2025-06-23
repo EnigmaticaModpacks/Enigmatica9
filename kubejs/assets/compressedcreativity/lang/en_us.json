@@ -1,5 +1,9 @@
 {
 	"compressedcreativity.ponder.compressed_air_engine.text_1": "Compressed Air Engine uses pressurized air to create rotational force",
 	"block.compressedcreativity.compressed_air_engine": "Compressed Air Engine",
-	"block.compressedcreativity.industrial_air_blower": "Industrial Air Blower"
+	"block.compressedcreativity.industrial_air_blower": "Industrial Air Blower",
+	"compressedcreativity.recipe.blasting.industrial_air_blower": "Industrial Air Blower behind Lava",
+	"compressedcreativity.recipe.haunting.industrial_air_blower": "Industrial Air Blower behind Soul Fire",
+	"compressedcreativity.recipe.smoking.industrial_air_blower": "Industrial Air Blower behind Fire",
+	"compressedcreativity.recipe.washing.industrial_air_blower": "Industrial Air Blower behind Flowing Water"
 }

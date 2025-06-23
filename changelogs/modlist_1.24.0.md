@@ -1,6 +1,6 @@
-## Enigmatica9 - 1.25.0
+## Enigmatica9 - 1.24.0
 
-  * [AdvancedBackups-forge-1.19.2-3.7.1.jar](https://www.curseforge.com/minecraft/mc-mods/advanced-backups/files/6148216) (by [HeatherWhite](https://www.curseforge.com/members/HeatherWhite/projects))
+  * [AdvancedBackups-forge-1.19.2-3.7.jar](https://www.curseforge.com/minecraft/mc-mods/advanced-backups/files/6137399) (by [HeatherWhite](https://www.curseforge.com/members/HeatherWhite/projects))
   * [aecapfix-0.9.jar](https://www.curseforge.com/minecraft/mc-mods/aecapfix/files/5418994) (by [ninety](https://www.curseforge.com/members/ninety/projects))
   * [AEInfinityBooster-1.19.2-1.2.0+11.jar](https://www.curseforge.com/minecraft/mc-mods/aeinfinitybooster/files/3940200) (by [hexeptiondev](https://www.curseforge.com/members/hexeptiondev/projects))
   * [AI-Improvements-1.19.2-0.5.2.jar](https://www.curseforge.com/minecraft/mc-mods/ai-improvements/files/4019127) (by [QueenOfMissiles](https://www.curseforge.com/members/QueenOfMissiles/projects))
@@ -25,7 +25,7 @@
   * [bookwyrms-1.19.2-1.1.1.jar](https://www.curseforge.com/minecraft/mc-mods/book-wyrms/files/4645724) (by [Lykrast](https://www.curseforge.com/members/Lykrast/projects))
   * [Bookshelf-Forge-1.19.2-16.3.20.jar](https://www.curseforge.com/minecraft/mc-mods/bookshelf/files/4556697) (by [DarkhaxDev](https://www.curseforge.com/members/DarkhaxDev/projects))
   * [buildinggadgets-3.16.3-build.26+mc1.19.2.jar](https://www.curseforge.com/minecraft/mc-mods/building-gadgets/files/5358157) (by [Direwolf20](https://www.curseforge.com/members/Direwolf20/projects))
-  * [cable_facades-1.19.2-Forge-1.2.2.jar](https://www.curseforge.com/minecraft/mc-mods/cable-facades/files/6145092) (by [thepigcat76](https://www.curseforge.com/members/thepigcat76/projects))
+  * [cable_facades-1.19.2-Forge-1.2.1.jar](https://www.curseforge.com/minecraft/mc-mods/cable-facades/files/6124800) (by [thepigcat76](https://www.curseforge.com/members/thepigcat76/projects))
   * [caelus-forge-1.19.2-3.0.0.6.jar](https://www.curseforge.com/minecraft/mc-mods/caelus/files/3929284) (by [TheIllusiveC4](https://www.curseforge.com/members/TheIllusiveC4/projects))
   * [cc-tweaked-1.19.2-1.101.4.jar](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked/files/5005332) (by [SquidDev](https://www.curseforge.com/members/SquidDev/projects))
   * [charginggadgets-1.9.0.jar](https://www.curseforge.com/minecraft/mc-mods/charging-gadgets/files/3955867) (by [Direwolf20](https://www.curseforge.com/members/Direwolf20/projects))
@@ -47,7 +47,7 @@
   * [CorgiLib-forge-1.19.2-1.0.0.34.jar](https://www.curseforge.com/minecraft/mc-mods/corgilib/files/4554111) (by [Corgi_Taco](https://www.curseforge.com/members/Corgi_Taco/projects))
   * [CosmeticArmorReworked-1.19.2-v1a.jar](https://www.curseforge.com/minecraft/mc-mods/cosmetic-armor-reworked/files/4016732) (by [LainMI](https://www.curseforge.com/members/LainMI/projects))
   * [crashutilities-6.2.jar](https://www.curseforge.com/minecraft/mc-mods/crash-utilities/files/4406293) (by [Darkere](https://www.curseforge.com/members/Darkere/projects))
-  * [CraterLib-Forge-1.19.2-2.1.3.jar](https://www.curseforge.com/minecraft/mc-mods/craterlib/files/6149974) (by [HypherionSA](https://www.curseforge.com/members/HypherionSA/projects))
+  * [CraterLib-Forge-1.19.2-2.1.2.jar](https://www.curseforge.com/minecraft/mc-mods/craterlib/files/5958832) (by [HypherionSA](https://www.curseforge.com/members/HypherionSA/projects))
   * [create-1.19.2-0.5.1.i.jar](https://www.curseforge.com/minecraft/mc-mods/create/files/5797604) (by [simibubi](https://www.curseforge.com/members/simibubi/projects))
   * [createaddition-1.19.2-1.2.3.jar](https://www.curseforge.com/minecraft/mc-mods/createaddition/files/5099757) (by [MRHminer](https://www.curseforge.com/members/MRHminer/projects))
   * [CNB-1.19-1.5.4.jar](https://www.curseforge.com/minecraft/mc-mods/creatures-and-beasts/files/4556106) (by [joosh_7889](https://www.curseforge.com/members/joosh_7889/projects))
@@ -189,7 +189,6 @@
   * [spark-1.10.37-forge.jar](https://www.curseforge.com/minecraft/mc-mods/spark/files/4505309) (by [Iucko](https://www.curseforge.com/members/Iucko/projects))
   * [spirit-forge-1.19.2-2.2.7.jar](https://www.curseforge.com/minecraft/mc-mods/spirit/files/5057018) (by [terrariumearth](https://www.curseforge.com/members/terrariumearth/projects))
   * [starbunclemania-1.19.2-1.0.11.jar](https://www.curseforge.com/minecraft/mc-mods/starbunclemania/files/5002230) (by [Alexth99](https://www.curseforge.com/members/Alexth99/projects))
-  * [structure_layout_optimizer-forge-1.0.10.jar](https://www.curseforge.com/minecraft/mc-mods/structure-layout-optimizer/files/6125401) (by [telepathicgrunt](https://www.curseforge.com/members/telepathicgrunt/projects))
   * [superiorshields-1.19.2-3.0.2-all.jar](https://www.curseforge.com/minecraft/mc-mods/superior-shields/files/4644481) (by [EpicSquid315](https://www.curseforge.com/members/EpicSquid315/projects))
   * [supermartijn642configlib-1.1.8-forge-mc1.19.jar](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib/files/4715406) (by [SuperMartijn642](https://www.curseforge.com/members/SuperMartijn642/projects))
   * [supermartijn642corelib-1.1.18-forge-mc1.19.2.jar](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib/files/6034711) (by [SuperMartijn642](https://www.curseforge.com/members/SuperMartijn642/projects))

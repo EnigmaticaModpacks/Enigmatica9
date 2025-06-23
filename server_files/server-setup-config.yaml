@@ -48,6 +48,7 @@ install:
     # This supports loading from local files as well for most pack types if there is file://{PathToFile} in the beginning
     modpackUrl: https://edge.forgecdn.net/files/5356/765/Enigmatica9-1.22.1.zip
 
+
     # This is used to specify in which format the modpack is distributed, the server launcher has to handle each individually if their format differs
     # current supported formats:
     # - curseforge or curse

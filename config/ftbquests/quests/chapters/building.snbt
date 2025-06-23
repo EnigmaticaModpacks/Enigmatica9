@@ -653,7 +653,7 @@
 				""
 				"- Trowel: This tool allows the randomization of block placement. It selects block(s) for your hotbar when used."
 				""
-				"For more information on what else does Quark has to offer you as a builder, visit their official website."
+				"For more information on what else Quark has to offer you as a builder, visit their official website."
 				""
 				"{\"text\":\"Quark Wiki\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://quarkmod.net/#features\"}}"
 			]

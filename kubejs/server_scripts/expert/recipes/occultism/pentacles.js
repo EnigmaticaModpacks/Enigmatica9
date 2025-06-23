@@ -175,7 +175,7 @@ ServerEvents.highPriorityData((event) => {
                 P: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_purple' },
                 S: {
                     type: 'modonomicon:tag',
-                    display: 'twilightforest:liveroot_block',
+                    display: 'quark:carved_mud_bricks',
                     tag: '#enigmatica:tree_of_life_pillar'
                 },
                 B: { type: 'modonomicon:block', block: 'occultism:sacrificial_bowl' },
@@ -259,7 +259,7 @@ ServerEvents.highPriorityData((event) => {
                 P: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_purple' },
                 S: {
                     type: 'modonomicon:tag',
-                    display: 'twilightforest:liveroot_block',
+                    display: 'quark:carved_mud_bricks',
                     tag: '#enigmatica:tree_of_life_pillar'
                 },
                 B: { type: 'modonomicon:block', block: 'occultism:sacrificial_bowl' },
@@ -343,7 +343,7 @@ ServerEvents.highPriorityData((event) => {
                 P: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_purple' },
                 S: {
                     type: 'modonomicon:tag',
-                    display: 'twilightforest:liveroot_block',
+                    display: 'quark:carved_mud_bricks',
                     tag: '#enigmatica:tree_of_life_pillar'
                 },
                 B: { type: 'modonomicon:block', block: 'occultism:sacrificial_bowl' },
@@ -427,7 +427,7 @@ ServerEvents.highPriorityData((event) => {
                 P: { type: 'modonomicon:block', block: 'occultism:chalk_glyph_purple' },
                 S: {
                     type: 'modonomicon:tag',
-                    display: 'twilightforest:liveroot_block',
+                    display: 'quark:carved_mud_bricks',
                     tag: '#enigmatica:tree_of_life_pillar'
                 },
                 B: { type: 'modonomicon:block', block: 'occultism:sacrificial_bowl' },

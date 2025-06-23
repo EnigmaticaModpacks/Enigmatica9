@@ -1073,7 +1073,7 @@
 		{
 			dependencies: ["370C40BCC3A6A055"]
 			description: [
-				"Luckily, despite the decrepit the state of the spell book, the Crush glyphs appear whole and in a usable state. Many others are going to need repair, but this will serve for now."
+				"Luckily, despite the decrepit state of the spell book, the Crush glyphs appear whole and in a usable state. Many others are going to need repair, but this will serve for now."
 				""
 				"Some speculate that the Death Tome enchantment was developed to protect the knowledge stored within ancient spell tomes, but it may just as well have been done to vex the librarians who housed them. Either way, it is still possible to extract useful glyphs from them, despite their dangerous nature. "
 				""
@@ -1885,11 +1885,23 @@
 					type: "item"
 				}
 			]
-			tasks: [{
-				id: "150E44FC952BB995"
-				item: "naturesaura:potion_generator"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "150E44FC952BB995"
+					item: "naturesaura:potion_generator"
+					type: "item"
+				}
+				{
+					id: "0998AFFA192AA8CF"
+					item: "minecraft:red_nether_bricks"
+					type: "item"
+				}
+				{
+					id: "0E64F133545A5820"
+					item: "minecraft:nether_bricks"
+					type: "item"
+				}
+			]
 			title: "Aura Generation"
 			x: -5.5d
 			y: -2.5d
@@ -2690,24 +2702,13 @@
 			]
 			id: "00FB8D9041ED6D73"
 			rewards: [{
-				id: "4C3A6668078E18B6"
+				id: "767B408789000894"
 				item: {
 					Count: 1b
-					id: "nomadictents:mallet"
+					id: "nomadictents:golden_mallet"
 					tag: {
 						Damage: 0
-						Enchantments: [{
-							id: "minecraft:unbreaking"
-							lvl: 3s
-						}]
-						display: {
-							Name: "{\"text\":\"Sturdy Tent Mallet\"}"
-						}
-						"quark:RuneAttached": 1b
-						"quark:RuneColor": {
-							Count: 1b
-							id: "quark:blank_rune"
-						}
+						Unbreakable: 1.0d
 					}
 				}
 				type: "item"
