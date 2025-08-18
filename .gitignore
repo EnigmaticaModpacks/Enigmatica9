@@ -263,3 +263,5 @@ config/emi.css
 emi.json
 config/compressedcreativity-client.toml
 config/AdvancedBackups-client.properties
+
+config/crash_assistant/lang
