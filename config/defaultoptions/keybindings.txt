@@ -32,7 +32,7 @@ key_key.hotbar.6:key.keyboard.6:NONE
 key_key.hotbar.7:key.keyboard.7:NONE
 key_key.hotbar.8:key.keyboard.8:NONE
 key_key.hotbar.9:key.keyboard.9:NONE
-key_key.hexerei.broomDescend:key.keyboard.left.shift:NONE
+key_key.hexerei.broomDescend:key.keyboard.left.control:NONE
 key_key.hexerei.book_hovering_uses:key.keyboard.u:NONE
 key_key.hexerei.book_hovering_recipe:key.keyboard.r:NONE
 key_key.hexerei.glasses_zoom:key.keyboard.z:NONE
