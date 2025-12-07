@@ -13,4 +13,6 @@
 	useCombinedDepthStencilAttachment = false
 	#When enabled, Forge will convert discovered 'Open to LAN' IPv6 addresses to their more compact, compressed representation
 	compressLanIPv6Addresses = true
+	#When enabled, Forge will allow mipmaps to be lowered in real-time. This is the default behavior in vanilla. Use this if you experience issues with resource packs that use textures lower than 8x8.
+	allowMipmapLowering = false
 
