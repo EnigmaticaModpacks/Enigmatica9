@@ -2,7 +2,9 @@
 
 🚀 Forge-1.19.2-43.4.16 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.26.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.26.0.md)
 
-✨ Mod updates ✨
+### 🐛 Fixed Bugs
+
+-   Default Key Bind for Hexrei Broom's Descend does not Work [\#1035](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1035)
 
 ---
 
