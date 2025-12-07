@@ -1,10 +1,18 @@
+### Enigmatica 9 v1.26.0
+
+🚀 Forge-1.19.2-43.4.16 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.26.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.26.0.md)
+
+✨ Mod updates ✨
+
+---
+
 ### Enigmatica 9 v1.25.0
 
 🚀 Forge-1.19.2-43.4.16 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.25.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.25.0.md)
 
 ### 🎁 New Mods Added
 
-- [Structure Layout Optimizer](https://www.curseforge.com/minecraft/mc-mods/structure-layout-optimizer) (by [telepathicgrunt](https://www.curseforge.com/members/telepathicgrunt/projects))
+-   [Structure Layout Optimizer](https://www.curseforge.com/minecraft/mc-mods/structure-layout-optimizer) (by [telepathicgrunt](https://www.curseforge.com/members/telepathicgrunt/projects))
 
 ---
 
