@@ -1,4 +1,4 @@
-param(
+﻿param(
     [Parameter(Position = 0)]
     [string]$mode = "default",
     [Parameter(Position = 1)]
@@ -259,22 +259,23 @@ function Push-ClientFiles {
             Remove-BlacklistedFiles
         }
 
-        # This ugly json seems to be a necessity, 
-        # I have yet to get @{} and ConvertTo-Json to work with the CurseForge Upload API
-        $CLIENT_METADATA = 
-        "{
-            changelog: `'$CLIENT_CHANGELOG`',
-            changelogType: `'$CLIENT_CHANGELOG_TYPE`',
-            displayName: `'$CLIENT_FILE_DISPLAY_NAME`',
-            gameVersions: [$GAME_VERSIONS],
-            releaseType: `'$CLIENT_RELEASE_TYPE`'
-        }"
+        $metadataObj = [ordered]@{
+            changelog     = $CLIENT_CHANGELOG -replace '\r\n|\r|\n', ' ' -replace '\s{2,}', ' '
+            changelogType = $CLIENT_CHANGELOG_TYPE
+            displayName   = $CLIENT_FILE_DISPLAY_NAME
+            gameVersions  = @($GAME_VERSIONS | ForEach-Object { [int]$_ })
+            releaseType   = $CLIENT_RELEASE_TYPE
+        }
+        $CLIENT_METADATA = ConvertTo-SafeJson ($metadataObj | ConvertTo-Json -Compress)
+
+        $metadataTempFile = ([System.IO.Path]::GetTempFileName() + ".json").Replace('\', '/')
+        [System.IO.File]::WriteAllText($metadataTempFile, $CLIENT_METADATA, (New-Object System.Text.UTF8Encoding $false))
 
         Write-Host
         Write-Host "Client Metadata:" -ForegroundColor Cyan
         Write-Host
         Write-Host $CLIENT_METADATA -ForegroundColor Blue
-        
+
         Write-Host
         Write-Host "Uploading client files to https://minecraft.curseforge.com/api/projects/$CURSEFORGE_PROJECT_ID/upload-file" -ForegroundColor Green
         Write-Host
@@ -283,10 +284,12 @@ function Push-ClientFiles {
             --url "https://minecraft.curseforge.com/api/projects/$CURSEFORGE_PROJECT_ID/upload-file" `
             --user "$CURSEFORGE_USER`:$CURSEFORGE_TOKEN" `
             -H "Accept: application/json" `
-            -H X-Api-Token:$CURSEFORGE_TOKEN `
-            -F metadata=$CLIENT_METADATA `
-            -F file=@"$CLIENT_ZIP_NAME.zip" `
+            -H "X-Api-Token:$CURSEFORGE_TOKEN" `
+            -F "metadata=<$metadataTempFile;type=application/json" `
+            -F "file=@$CLIENT_ZIP_NAME.zip" `
             --progress-bar | ConvertFrom-Json
+
+        Remove-Item $metadataTempFile -ErrorAction SilentlyContinue
         $clientFileReturnId = $response.id
 
         if (-not $response.id) {
@@ -484,27 +487,32 @@ function Push-ServerFiles {
     if ($ENABLE_SERVER_FILE_MODULE -and $ENABLE_MODPACK_UPLOADER_MODULE) {
         $serverFilePath = "$SERVER_ZIP_NAME.zip"
 
-        $SERVER_METADATA = 
-        "{
-        'changelog': `'$SERVER_CHANGELOG`',
-        'changelogType': `'$SERVER_CHANGELOG_TYPE`',
-        'displayName': `'$SERVER_FILE_DISPLAY_NAME`',
-        'parentFileId': $clientFileReturnId,
-        'releaseType': `'$SERVER_RELEASE_TYPE`'
-        }"
+        $serverMetadataObj = [ordered]@{
+            changelog     = $SERVER_CHANGELOG -replace '\r\n|\r|\n', ' ' -replace '\s{2,}', ' '
+            changelogType = $SERVER_CHANGELOG_TYPE
+            displayName   = $SERVER_FILE_DISPLAY_NAME
+            parentFileId  = [int]$clientFileReturnId
+            releaseType   = $SERVER_RELEASE_TYPE
+        }
+        $SERVER_METADATA = ConvertTo-SafeJson ($serverMetadataObj | ConvertTo-Json -Compress)
 
-        Write-Host 
+        $serverMetadataTempFile = ([System.IO.Path]::GetTempFileName() + ".json").Replace('\', '/')
+        [System.IO.File]::WriteAllText($serverMetadataTempFile, $SERVER_METADATA, (New-Object System.Text.UTF8Encoding $false))
+
+        Write-Host
         Write-Host "Uploading server files..." -ForegroundColor Cyan
-        Write-Host 
+        Write-Host
 
         $serverFileResponse = & $curl `
             --url "https://minecraft.curseforge.com/api/projects/$CURSEFORGE_PROJECT_ID/upload-file" `
             --user "$CURSEFORGE_USER`:$CURSEFORGE_TOKEN" `
             -H "Accept: application/json" `
-            -H X-Api-Token:$CURSEFORGE_TOKEN `
-            -F metadata=$SERVER_METADATA `
-            -F file=@$serverFilePath `
+            -H "X-Api-Token:$CURSEFORGE_TOKEN" `
+            -F "metadata=<$serverMetadataTempFile;type=application/json" `
+            -F "file=@$serverFilePath" `
             --progress-bar | ConvertFrom-Json
+
+        Remove-Item $serverMetadataTempFile -ErrorAction SilentlyContinue
 
         if ($serverFileResponse.errorCode) {
             throw "Failed to upload server files: $serverFileResponse"
@@ -564,6 +572,19 @@ function Remove-LeadingZero {
         [string]$text
     )
     return [int]$text
+}
+
+function ConvertTo-SafeJson {
+    param([string]$json)
+    # PowerShell 5.1's ConvertTo-Json embeds raw UTF-16 surrogate pairs for emoji/supplementary
+    # characters instead of \uXXXX escape sequences, producing invalid UTF-8 when written to disk.
+    # Replace each surrogate pair with a proper \uHigh\uLow JSON escape.
+    return [regex]::Replace($json, '[\uD800-\uDBFF][\uDC00-\uDFFF]', {
+        param($m)
+        $high = [int][char]$m.Value[0]
+        $low  = [int][char]$m.Value[1]
+        '\u{0:X4}\u{1:X4}' -f $high, $low
+    })
 }
 
 # Script execution starts here
