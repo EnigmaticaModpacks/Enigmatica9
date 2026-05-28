@@ -51,15 +51,15 @@ $CLIENT_CHANGELOG = @"
        alt="Enigmatica9" style="width:80%;margin-bottom:16px;" />
 
   <p style="font-size:15px;margin:8px 0;">
-    <a href="https://github.com/EnigmaticaModpacks/Enigmatica9/blob/main/changelogs/changelog_mods_$MODPACK_VERSION.md" target="_blank" style="color:#a8d8d0;text-decoration:none;">🔧 Mod Updates</a>
+    <a href="https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_$MODPACK_VERSION.md" target="_blank" style="color:#a8d8d0;text-decoration:none;">🔧 Mod Updates</a>
     <span style="color:#ccc;">&nbsp;|&nbsp;</span>
-    <a href="https://github.com/EnigmaticaModpacks/Enigmatica9/blob/main/changelogs/modlist_$MODPACK_VERSION.md" target="_blank" style="color:#a8d8d0;text-decoration:none;">📋 Modlist</a>
+    <a href="https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_$MODPACK_VERSION.md" target="_blank" style="color:#a8d8d0;text-decoration:none;">📋 Modlist</a>
     <span style="color:#ccc;">&nbsp;|&nbsp;</span>
     <a href="https://www.bisecthosting.com/enigmatica" target="_blank" style="color:#a8d8d0;text-decoration:none;">🖥️ Get a Server</a>
   </p>
 
   <p style="font-size:12px;margin:4px 0;">
-    <a href="https://github.com/EnigmaticaModpacks/Enigmatica9/blob/main/CHANGELOG.md" target="_blank" style="color:#bbb;text-decoration:none;">See the full changelog on GitHub</a>
+    <a href="https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/CHANGELOG.md" target="_blank" style="color:#bbb;text-decoration:none;">See the full changelog on GitHub</a>
   </p>
 </div>
 "@
