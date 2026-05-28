@@ -1,3 +1,13 @@
+### Enigmatica 9 v1.27.0
+
+🚀 Forge-1.19.2-43.4.16 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.27.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.27.0.md)
+
+### 🐛 Fixed Bugs
+
+-   Looking up items with NBT in EMI displays incorrectly [\#1040](https://github.com/EnigmaticaModpacks/Enigmatica9/issues/1040)
+
+---
+
 ### Enigmatica 9 v1.26.0
 
 🚀 Forge-1.19.2-43.4.16 | [📜 Mod Updates](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/changelog_mods_1.26.0.md) | [📋 Modlist](https://github.com/EnigmaticaModpacks/Enigmatica9/blob/master/changelogs/modlist_1.26.0.md)
